@@ -3,14 +3,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-06-15 11:35-0300\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-11-02 17:04-0300\n"
 "PO-Revision-Date: 2019-07-07 07:22+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -27,10 +27,12 @@ msgstr "FreeBSD y las unidades de estado sólido (SSD)"
 #. (itstool) path: affiliation/address
 #: article.translate.xml:44
 #, no-wrap
-msgid "\n"
+msgid ""
+"\n"
 "\t    <email>john@kozubik.com</email>\n"
 "\t  "
-msgstr "\n"
+msgstr ""
+"\n"
 "\t    <email>john@kozubik.com</email>\n"
 "\t  "
 
@@ -115,11 +117,11 @@ msgstr ""
 #. (itstool) path: important/para
 #: article.translate.xml:94
 msgid ""
-"THIS DOCUMENTATION IS PROVIDED BY THE FREEBSD DOCUMENTATION PROJECT \"AS "
-"IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, "
-"THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR "
-"PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE FREEBSD DOCUMENTATION PROJECT "
-"BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR "
+"THIS DOCUMENTATION IS PROVIDED BY THE FREEBSD DOCUMENTATION PROJECT \"AS IS"
+"\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE "
+"IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE "
+"ARE DISCLAIMED. IN NO EVENT SHALL THE FREEBSD DOCUMENTATION PROJECT BE "
+"LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR "
 "CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF "
 "SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS "
 "INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN "
@@ -127,11 +129,11 @@ msgid ""
 "ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF "
 "THE POSSIBILITY OF SUCH DAMAGE."
 msgstr ""
-"THIS DOCUMENTATION IS PROVIDED BY THE FREEBSD DOCUMENTATION PROJECT \"AS "
-"IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, "
-"THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR "
-"PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE FREEBSD DOCUMENTATION PROJECT "
-"BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR "
+"THIS DOCUMENTATION IS PROVIDED BY THE FREEBSD DOCUMENTATION PROJECT \"AS IS"
+"\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE "
+"IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE "
+"ARE DISCLAIMED. IN NO EVENT SHALL THE FREEBSD DOCUMENTATION PROJECT BE "
+"LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR "
 "CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF "
 "SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS "
 "INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN "
@@ -143,8 +145,8 @@ msgstr ""
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:110 article.translate.xml:112
 msgid ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/solid-state/article.xml 44923 2014-"
-"05-23 17:36:54Z bcr $"
+"$FreeBSD: head/en_US.ISO8859-1/articles/solid-state/article.xml 44923 "
+"2014-05-23 17:36:54Z bcr $"
 msgstr "$FreeBSD$"
 
 #. (itstool) path: abstract/para
@@ -315,13 +317,11 @@ msgstr ""
 #, no-wrap
 msgid ""
 "options         MFS             # Memory Filesystem\n"
-"options         MD_ROOT         # md device usable as a potential root "
-"device\n"
+"options         MD_ROOT         # md device usable as a potential root device\n"
 "pseudo-device   md              # memory disk"
 msgstr ""
 "options         MFS             # sistema de archivos de memoria\n"
-"options         MD_ROOT         # el dispositivo md puede ser usado "
-"potencialmente como dispositivo root\n"
+"options         MD_ROOT         # el dispositivo md puede ser usado potencialmente como dispositivo root\n"
 "pseudo-device   md              # disco de memoria"
 
 #. (itstool) path: sect1/title
@@ -409,12 +409,10 @@ msgstr ""
 #: article.translate.xml:239
 #, no-wrap
 msgid ""
-"# Device                Mountpoint      FStype  Options         Dump    "
-"Pass#\n"
+"# Device                Mountpoint      FStype  Options         Dump    Pass#\n"
 "/dev/ad0s1a             /               ufs     ro              1       1"
 msgstr ""
-"# Device                Mountpoint      FStype  Options         Dump    "
-"Pass#\n"
+"# Device                Mountpoint      FStype  Options         Dump    Pass#\n"
 "/dev/ad0s1a             /               ufs     ro              1       1"
 
 #. (itstool) path: sect1/para
@@ -454,12 +452,8 @@ msgstr ""
 #. (itstool) path: sect1/screen
 #: article.translate.xml:258
 #, no-wrap
-msgid ""
-"<prompt>#</prompt> <userinput>/sbin/mount -uw <replaceable>partition</"
-"replaceable></userinput>"
-msgstr ""
-"<prompt>#</prompt> <userinput>/sbin/mount -uw <replaceable>partition</"
-"replaceable></userinput>"
+msgid "<prompt>#</prompt> <userinput>/sbin/mount -uw <replaceable>partition</replaceable></userinput>"
+msgstr "<prompt>#</prompt> <userinput>/sbin/mount -uw <replaceable>partition</replaceable></userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:260
@@ -469,12 +463,8 @@ msgstr "y se puede cambiar de nuevo a solo lectura con el comando:"
 #. (itstool) path: sect1/screen
 #: article.translate.xml:263
 #, no-wrap
-msgid ""
-"<prompt>#</prompt> <userinput>/sbin/mount -ur <replaceable>partition</"
-"replaceable></userinput>"
-msgstr ""
-"<prompt>#</prompt> <userinput>/sbin/mount -ur <replaceable>partition</"
-"replaceable></userinput>"
+msgid "<prompt>#</prompt> <userinput>/sbin/mount -ur <replaceable>partition</replaceable></userinput>"
+msgstr "<prompt>#</prompt> <userinput>/sbin/mount -ur <replaceable>partition</replaceable></userinput>"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:267
@@ -656,7 +646,6 @@ msgstr "<prompt>#</prompt> <userinput>mount /dev/ad0a /flash</userinput>"
 msgid ""
 "Bring this machine up on the network so we may transfer our tar file and "
 "explode it onto our flash media filesystem. One example of how to do this is:"
-""
 msgstr ""
 "Coloque esta máquina en la red para poder transferir nuestro archivo tar y "
 "extraerlo en nuestro sistema de archivos del medio flash. Un ejemplo de cómo "
@@ -666,12 +655,10 @@ msgstr ""
 #: article.translate.xml:358
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>ifconfig xl0 192.168.0.10 netmask 255.255.255."
-"0</userinput>\n"
+"<prompt>#</prompt> <userinput>ifconfig xl0 192.168.0.10 netmask 255.255.255.0</userinput>\n"
 "<prompt>#</prompt> <userinput>route add default 192.168.0.1</userinput>"
 msgstr ""
-"<prompt>#</prompt> <userinput>ifconfig xl0 192.168.0.10 netmask 255.255.255."
-"0</userinput>\n"
+"<prompt>#</prompt> <userinput>ifconfig xl0 192.168.0.10 netmask 255.255.255.0</userinput>\n"
 "<prompt>#</prompt> <userinput>route add default 192.168.0.1</userinput>"
 
 #. (itstool) path: step/para
@@ -698,12 +685,8 @@ msgstr ""
 #. (itstool) path: step/screen
 #: article.translate.xml:373
 #, no-wrap
-msgid ""
-"<prompt>ftp&gt;</prompt> <userinput>get tarfile.tar \"| tar xvf -\"</"
-"userinput>"
-msgstr ""
-"<prompt>ftp&gt;</prompt> <userinput>get tarfile.tar \"| tar xvf -\"</"
-"userinput>"
+msgid "<prompt>ftp&gt;</prompt> <userinput>get tarfile.tar \"| tar xvf -\"</userinput>"
+msgstr "<prompt>ftp&gt;</prompt> <userinput>get tarfile.tar \"| tar xvf -\"</userinput>"
 
 #. (itstool) path: step/para
 #: article.translate.xml:375
@@ -714,12 +697,8 @@ msgstr ""
 #. (itstool) path: step/screen
 #: article.translate.xml:378
 #, no-wrap
-msgid ""
-"<prompt>ftp&gt;</prompt> <userinput>get tarfile.tar \"| zcat | tar xvf -\"</"
-"userinput>"
-msgstr ""
-"<prompt>ftp&gt;</prompt> <userinput>get tarfile.tar \"| zcat | tar xvf -\"</"
-"userinput>"
+msgid "<prompt>ftp&gt;</prompt> <userinput>get tarfile.tar \"| zcat | tar xvf -\"</userinput>"
+msgstr "<prompt>ftp&gt;</prompt> <userinput>get tarfile.tar \"| zcat | tar xvf -\"</userinput>"
 
 #. (itstool) path: step/para
 #: article.translate.xml:380
@@ -853,12 +832,10 @@ msgstr ""
 #: article.translate.xml:448
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>touch /var/log/security /var/log/maillog /var/"
-"log/cron /var/log/messages</userinput>\n"
+"<prompt>#</prompt> <userinput>touch /var/log/security /var/log/maillog /var/log/cron /var/log/messages</userinput>\n"
 "<prompt>#</prompt> <userinput>chmod 0644 /var/log/*</userinput>"
 msgstr ""
-"<prompt>#</prompt> <userinput>touch /var/log/security /var/log/maillog /var/"
-"log/cron /var/log/messages</userinput>\n"
+"<prompt>#</prompt> <userinput>touch /var/log/security /var/log/maillog /var/log/cron /var/log/messages</userinput>\n"
 "<prompt>#</prompt> <userinput>chmod 0644 /var/log/*</userinput>"
 
 #. (itstool) path: sect2/title
@@ -872,8 +849,8 @@ msgid ""
 "Before discussing the changes necessary to successfully use the ports tree, "
 "a reminder is necessary regarding the read-only nature of your filesystems "
 "on the flash media. Since they are read-only, you will need to temporarily "
-"mount them read-write using the mount syntax shown in <xref linkend=\"ro-"
-"fs\"/>. You should always remount those filesystems read-only when you are "
+"mount them read-write using the mount syntax shown in <xref linkend=\"ro-fs"
+"\"/>. You should always remount those filesystems read-only when you are "
 "done with any maintenance - unnecessary writes to the flash media could "
 "considerably shorten its lifespan."
 msgstr ""
@@ -920,7 +897,6 @@ msgstr ""
 "Primero, cree el directorio para la base de datos de los paquetes. "
 "Normalmente se encuentra en <filename>/var/db/pkg</filename>, pero no "
 "podemos colocarlo allí ya que desaparecerá cada vez que se inicie el sistema."
-""
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:479
@@ -1027,12 +1003,10 @@ msgstr ""
 #, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>chmod 0774 /var/log/apache</userinput>\n"
-"<prompt>#</prompt> <userinput>chown nobody:nobody /var/log/apache</"
-"userinput>"
+"<prompt>#</prompt> <userinput>chown nobody:nobody /var/log/apache</userinput>"
 msgstr ""
 "<prompt>#</prompt> <userinput>chmod 0774 /var/log/apache</userinput>\n"
-"<prompt>#</prompt> <userinput>chown nobody:nobody /var/log/apache</"
-"userinput>"
+"<prompt>#</prompt> <userinput>chown nobody:nobody /var/log/apache</userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:532
@@ -1047,12 +1021,8 @@ msgstr ""
 #: article.translate.xml:536
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>rm -rf <replaceable>apache_log_dir</"
-"replaceable></userinput>\n"
-"<prompt>#</prompt> <userinput>ln -s /var/log/apache "
-"<replaceable>apache_log_dir</replaceable></userinput>"
+"<prompt>#</prompt> <userinput>rm -rf <replaceable>apache_log_dir</replaceable></userinput>\n"
+"<prompt>#</prompt> <userinput>ln -s /var/log/apache <replaceable>apache_log_dir</replaceable></userinput>"
 msgstr ""
-"<prompt>#</prompt> <userinput>rm -rf <replaceable>apache_log_dir</"
-"replaceable></userinput>\n"
-"<prompt>#</prompt> <userinput>ln -s /var/log/apache "
-"<replaceable>apache_log_dir</replaceable></userinput>"
+"<prompt>#</prompt> <userinput>rm -rf <replaceable>apache_log_dir</replaceable></userinput>\n"
+"<prompt>#</prompt> <userinput>ln -s /var/log/apache <replaceable>apache_log_dir</replaceable></userinput>"
