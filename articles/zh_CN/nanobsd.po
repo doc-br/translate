@@ -2,14 +2,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-06-15 11:35-0300\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-11-02 17:04-0300\n"
 "PO-Revision-Date: 2019-07-18 11:41+0000\n"
 "Last-Translator: Hongyou Bai <bhy1924@gmail.com>\n"
 "Language-Team: Chinese (Simplified)\n"
 "Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Plural-Forms: nplurals=1; plural=0\n"
 
@@ -52,8 +52,9 @@ msgid ""
 "designations have been followed by the <quote>™</quote> or the <quote>®</"
 "quote> symbol."
 msgstr ""
-"许多制造商和经销商使用一些称为商标的图案或文字设计来彰显自己的产品。 本文档中出现的， 为 FreeBSD Project 所知晓的商标，后面将以 "
-"<quote>™</quote> 或 <quote>®</quote> 符号来标注。"
+"许多制造商和经销商使用一些称为商标的图案或文字设计来彰显自己的产品。 本文档中"
+"出现的， 为 FreeBSD Project 所知晓的商标，后面将以 <quote>™</quote> 或 "
+"<quote>®</quote> 符号来标注。"
 
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
@@ -73,8 +74,9 @@ msgid ""
 "embedded applications, suitable for use on a Compact Flash card (or other "
 "mass storage medium)."
 msgstr ""
-"这篇文档提供了关于 <application>NanoBSD</application> 工具的介绍信息， 这一工具可以用来创建用于嵌入式应用的 "
-"FreeBSD 系统映像， 以适应存放到袖珍闪存 (Compact Flash) 卡 (或其它大容量存储介质) 上的需要。"
+"这篇文档提供了关于 <application>NanoBSD</application> 工具的介绍信息， 这一工"
+"具可以用来创建用于嵌入式应用的 FreeBSD 系统映像， 以适应存放到袖珍闪存 "
+"(Compact Flash) 卡 (或其它大容量存储介质) 上的需要。"
 
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:42
@@ -90,8 +92,8 @@ msgid ""
 "(or other mass storage medium)."
 msgstr ""
 "<application>NanoBSD</application> 是 Poul-Henning Kamp <email>phk@FreeBSD."
-"org</email> 目前正在开发的一项工具。 它可以用来创建用于嵌入式应用的 FreeBSD 系统映像， 以便配合袖珍闪存 (Compact "
-"Flash) 卡 (或其他大容量存储介质) 使用。"
+"org</email> 目前正在开发的一项工具。 它可以用来创建用于嵌入式应用的 FreeBSD "
+"系统映像， 以便配合袖珍闪存 (Compact Flash) 卡 (或其他大容量存储介质) 使用。"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:49
@@ -103,9 +105,10 @@ msgid ""
 "appliance is plugged into an existing network and can begin working (almost) "
 "immediately."
 msgstr ""
-"这一工具也可以用来构建定制的安装映像， 以简化通常称为 <quote>计算设备 (computer appliances)</quote> "
-"的系统的安装和维护工作。 计算设备通常在产品中将捆绑硬件和软件， 或者换言之， 所有的应用程序都是预先装好的。 这些设备可以直接插到暨存的网络中， 并 "
-"(几乎是) 立即投入使用。"
+"这一工具也可以用来构建定制的安装映像， 以简化通常称为 <quote>计算设备 "
+"(computer appliances)</quote> 的系统的安装和维护工作。 计算设备通常在产品中将"
+"捆绑硬件和软件， 或者换言之， 所有的应用程序都是预先装好的。 这些设备可以直接"
+"插到暨存的网络中， 并 (几乎是) 立即投入使用。"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:57
@@ -119,8 +122,9 @@ msgid ""
 "installed and used in a <application>NanoBSD</application> image, the same "
 "way as in FreeBSD."
 msgstr ""
-"可以和 FreeBSD 一样使用 Ports 和预编译包── 所有的应用程序都可以在 <application>NanoBSD</"
-"application> 映像中直接使用， 而方式与 FreeBSD 完全一样。"
+"可以和 FreeBSD 一样使用 Ports 和预编译包── 所有的应用程序都可以在 "
+"<application>NanoBSD</application> 映像中直接使用， 而方式与 FreeBSD 完全一"
+"样。"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:69
@@ -130,8 +134,9 @@ msgid ""
 "unless the specific feature or features were explicitly removed from the "
 "<application>NanoBSD</application> image when it was created."
 msgstr ""
-"不减少功能 ── 能够使用 FreeBSD 做的任何工作， 都可以在 <application>NanoBSD</application> 中使用， "
-"除非您在创建 <application>NanoBSD</application> 映像时， 明确地删去它们。"
+"不减少功能 ── 能够使用 FreeBSD 做的任何工作， 都可以在 <application>NanoBSD</"
+"application> 中使用， 除非您在创建 <application>NanoBSD</application> 映像"
+"时， 明确地删去它们。"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:78
@@ -141,9 +146,9 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> after a non-graceful "
 "shutdown of the system."
 msgstr ""
-"所有对象在运行时均是只读的 ── 可以安全地拔掉电源插销。 在系统非正常关闭之后， 无需运行 "
-"<citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></"
-"citerefentry>。"
+"所有对象在运行时均是只读的 ── 可以安全地拔掉电源插销。 在系统非正常关闭之"
+"后， 无需运行 <citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>。"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:85
@@ -151,7 +156,9 @@ msgid ""
 "Easy to build and customize — Making use of just one shell script and one "
 "configuration file it is possible to build reduced and customized images "
 "satisfying any arbitrary set of requirements."
-msgstr "便于联编和定制 ── 只需使用一个 shell 脚本和一个配置文件， 您可以很容易地裁减和定制适于任意需求的映像。"
+msgstr ""
+"便于联编和定制 ── 只需使用一个 shell 脚本和一个配置文件， 您可以很容易地裁减"
+"和定制适于任意需求的映像。"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:94
@@ -170,8 +177,8 @@ msgid ""
 "<application>NanoBSD</application>. The mass storage medium is divided into "
 "three parts by default:"
 msgstr ""
-"一旦将映像存入介质， 就可以用它来引导 <application>NanoBSD</application> 了。 默认情况下， "
-"大容量存储器会划分为三个区："
+"一旦将映像存入介质， 就可以用它来引导 <application>NanoBSD</application> "
+"了。 默认情况下， 大容量存储器会划分为三个区："
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:105
@@ -185,7 +192,9 @@ msgstr "两个映像区： <literal>code#1</literal> 和 <literal>code#2</litera
 msgid ""
 "The configuration file partition, which can be mounted under the <filename>/"
 "cfg</filename> directory at run time."
-msgstr "一个配置文件区， 运行环境中， 可以将其挂接到 <filename>/cfg</filename> 目录下。"
+msgstr ""
+"一个配置文件区， 运行环境中， 可以将其挂接到 <filename>/cfg</filename> 目录"
+"下。"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:116
@@ -213,9 +222,10 @@ msgid ""
 "filename> back to the <filename>/cfg</filename> directory if changes are "
 "expected to persist after the system restarts."
 msgstr ""
-"配置文件分区保存在 <filename>/cfg</filename> 目录。 它包含了用于 <filename>/etc</filename> "
-"目录的文件， 在启动之后暂时以只读方式挂接。 因此， 在需要从 <filename>/etc</filename> 向 <filename>/cfg</"
-"filename> 目录复制所进行的、 希望在重启时保持不变的配置时， 需要进行一些额外的操作。"
+"配置文件分区保存在 <filename>/cfg</filename> 目录。 它包含了用于 <filename>/"
+"etc</filename> 目录的文件， 在启动之后暂时以只读方式挂接。 因此， 在需要从 "
+"<filename>/etc</filename> 向 <filename>/cfg</filename> 目录复制所进行的、 希"
+"望在重启时保持不变的配置时， 需要进行一些额外的操作。"
 
 #. (itstool) path: example/title
 #: article.translate.xml:132
@@ -243,7 +253,9 @@ msgstr ""
 msgid ""
 "The partition containing <filename>/cfg</filename> should be mounted only at "
 "boot time and while overriding the configuration files."
-msgstr "只有在系统启动过程中， 以及需要修改配置文件的场合， 才需要挂接包含 <filename>/cfg</filename> 的那个分区。"
+msgstr ""
+"只有在系统启动过程中， 以及需要修改配置文件的场合， 才需要挂接包含 "
+"<filename>/cfg</filename> 的那个分区。"
 
 #. (itstool) path: note/para
 #: article.translate.xml:148
@@ -254,8 +266,9 @@ msgid ""
 "the partition (like when the filesystem syncer flushes data to the system "
 "disks)."
 msgstr ""
-"在任何时候都保持挂接 <filename>/cfg</filename> 不是一个好主意， 特别是当您把 <application>NanoBSD</"
-"application> 放在不适合进行大量写操作的分区时 (由于文件系统的同步进程会定期向系统盘写一些数据)。"
+"在任何时候都保持挂接 <filename>/cfg</filename> 不是一个好主意， 特别是当您把 "
+"<application>NanoBSD</application> 放在不适合进行大量写操作的分区时 (由于文件"
+"系统的同步进程会定期向系统盘写一些数据)。"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:158
@@ -272,9 +285,10 @@ msgid ""
 "medium using the <citerefentry><refentrytitle>dd</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> utility."
 msgstr ""
-"<application>NanoBSD</application> 映像是通过使用非常简单的 <filename>nanobsd.sh</"
-"filename> shell 脚本来构建的， 这个脚本可以在 <filename><replaceable>/usr</replaceable>/"
-"src/tools/tools/nanobsd</filename> 目录中找到。 这个脚本建立的映像文件， 可以用 "
+"<application>NanoBSD</application> 映像是通过使用非常简单的 "
+"<filename>nanobsd.sh</filename> shell 脚本来构建的， 这个脚本可以在 "
+"<filename><replaceable>/usr</replaceable>/src/tools/tools/nanobsd</filename> "
+"目录中找到。 这个脚本建立的映像文件， 可以用 "
 "<citerefentry><refentrytitle>dd</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> 工具复制到存储介质上。"
 
@@ -289,23 +303,15 @@ msgstr "构建 <application>NanoBSD</application> 映像所需的命令是："
 #: article.translate.xml:170
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>cd /usr/src/tools/tools/nanobsd</userinput> "
-"<co xml:id=\"nbsd-cd\"/>\n"
-"<prompt>#</prompt> <userinput>sh nanobsd.sh</userinput> <co xml:id=\"nbsd-"
-"sh\"/>\n"
-"<prompt>#</prompt> <userinput>cd /usr/obj/nanobsd.full</userinput> <co xml:"
-"id=\"nbsd-cd2\"/>\n"
-"<prompt>#</prompt> <userinput>dd if=_.disk.full of=/dev/da0 bs=64k</"
-"userinput> <co xml:id=\"nbsd-dd\"/>"
+"<prompt>#</prompt> <userinput>cd /usr/src/tools/tools/nanobsd</userinput> <co xml:id=\"nbsd-cd\"/>\n"
+"<prompt>#</prompt> <userinput>sh nanobsd.sh</userinput> <co xml:id=\"nbsd-sh\"/>\n"
+"<prompt>#</prompt> <userinput>cd /usr/obj/nanobsd.full</userinput> <co xml:id=\"nbsd-cd2\"/>\n"
+"<prompt>#</prompt> <userinput>dd if=_.disk.full of=/dev/da0 bs=64k</userinput> <co xml:id=\"nbsd-dd\"/>"
 msgstr ""
-"<prompt>#</prompt> <userinput>cd /usr/src/tools/tools/nanobsd</userinput> "
-"<co xml:id=\"nbsd-cd\"/>\n"
-"<prompt>#</prompt> <userinput>sh nanobsd.sh</userinput> <co xml:id=\"nbsd-"
-"sh\"/>\n"
-"<prompt>#</prompt> <userinput>cd /usr/obj/nanobsd.full</userinput> <co xml:"
-"id=\"nbsd-cd2\"/>\n"
-"<prompt>#</prompt> <userinput>dd if=_.disk.full of=/dev/da0 bs=64k</"
-"userinput> <co xml:id=\"nbsd-dd\"/>"
+"<prompt>#</prompt> <userinput>cd /usr/src/tools/tools/nanobsd</userinput> <co xml:id=\"nbsd-cd\"/>\n"
+"<prompt>#</prompt> <userinput>sh nanobsd.sh</userinput> <co xml:id=\"nbsd-sh\"/>\n"
+"<prompt>#</prompt> <userinput>cd /usr/obj/nanobsd.full</userinput> <co xml:id=\"nbsd-cd2\"/>\n"
+"<prompt>#</prompt> <userinput>dd if=_.disk.full of=/dev/da0 bs=64k</userinput> <co xml:id=\"nbsd-dd\"/>"
 
 #. (itstool) path: callout/para
 #: article.translate.xml:177
@@ -323,7 +329,6 @@ msgstr "开始构建过程。"
 #: article.translate.xml:187
 msgid ""
 "Change the current directory to the place where the built images are located."
-""
 msgstr "进入构建好的映像文件所在的目录。"
 
 #. (itstool) path: callout/para
@@ -343,8 +348,9 @@ msgid ""
 "<application>NanoBSD</application>. This is also where you will be spending "
 "most of the time when developing with <application>NanoBSD</application>."
 msgstr ""
-"这可能是 <application>NanoBSD</application> 最为重要， 同时也是您最感兴趣的功能。 同时， 您在开发 "
-"<application>NanoBSD</application> 应用时， 这也是相当耗时的过程。"
+"这可能是 <application>NanoBSD</application> 最为重要， 同时也是您最感兴趣的功"
+"能。 同时， 您在开发 <application>NanoBSD</application> 应用时， 这也是相当耗"
+"时的过程。"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:206
@@ -353,15 +359,14 @@ msgid ""
 "filename> to read its configuration from <filename>myconf.nano</filename> "
 "located in the current directory:"
 msgstr ""
-"执行下面的命令将使 <filename>nanobsd.sh</filename> 从当前目录中的 <filename>myconf.nano</"
-"filename> 文件读取配置："
+"执行下面的命令将使 <filename>nanobsd.sh</filename> 从当前目录中的 "
+"<filename>myconf.nano</filename> 文件读取配置："
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:211
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>sh nanobsd.sh -c myconf.nano</userinput>"
-msgstr ""
-"<prompt>#</prompt> <userinput>sh nanobsd.sh -c myconf.nano</userinput>"
+msgstr "<prompt>#</prompt> <userinput>sh nanobsd.sh -c myconf.nano</userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:213
@@ -407,10 +412,11 @@ msgid ""
 "to trim down FreeBSD even more, until it will consists of just the kernel "
 "and two or three files in the userland."
 msgstr ""
-"通过对配置进行设置， 可以配置用以传递给 <application>NanoBSD</application> 构建过程中 <_:buildtarget-"
-"1/> 和 <_:buildtarget-2/> 阶段的联编和安装选项， 以及 <application>NanoBSD</application> "
-"的主构建过程中的选项。 通过使用这些选项可以削减系统的尺寸， 使之能够放入 64MB 的存储。 您还可以进一步通过这些选项来削减 FreeBSD， "
-"直到它只包含内核以及两三个用户环境文件为止。"
+"通过对配置进行设置， 可以配置用以传递给 <application>NanoBSD</application> 构"
+"建过程中 <_:buildtarget-1/> 和 <_:buildtarget-2/> 阶段的联编和安装选项， 以"
+"及 <application>NanoBSD</application> 的主构建过程中的选项。 通过使用这些选项"
+"可以削减系统的尺寸， 使之能够放入 64MB 的存储。 您还可以进一步通过这些选项来"
+"削减 FreeBSD， 直到它只包含内核以及两三个用户环境文件为止。"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:240
@@ -424,7 +430,8 @@ msgstr "配置文件中包含用以代替默认值的配置选项。 最重要�
 msgid ""
 "<literal>NANO_NAME</literal> — Name of build (used to construct the workdir "
 "names)."
-msgstr "<literal>NANO_NAME</literal> ── 本次构建的名称 (用于创建工作目录的名字)。"
+msgstr ""
+"<literal>NANO_NAME</literal> ── 本次构建的名称 (用于创建工作目录的名字)。"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:251
@@ -445,14 +452,18 @@ msgstr "<literal>NANO_KERNEL</literal> ── 用以联编内核的配置文件�
 msgid ""
 "<literal>CONF_BUILD</literal> — Options passed to the <_:buildtarget-1/> "
 "stage of the build."
-msgstr "<literal>CONF_BUILD</literal> ── 用于传递给 <_:buildtarget-1/> 构建阶段的选项。"
+msgstr ""
+"<literal>CONF_BUILD</literal> ── 用于传递给 <_:buildtarget-1/> 构建阶段的选"
+"项。"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:267
 msgid ""
 "<literal>CONF_INSTALL</literal> — Options passed to the <_:buildtarget-1/> "
 "stage of the build."
-msgstr "<literal>CONF_INSTALL</literal> ── 用于传递给 <_:buildtarget-1/> 构建阶段的选项。"
+msgstr ""
+"<literal>CONF_INSTALL</literal> ── 用于传递给 <_:buildtarget-1/> 构建阶段的选"
+"项。"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:273
@@ -460,8 +471,8 @@ msgid ""
 "<literal>CONF_WORLD</literal> — Options passed to both the <_:buildtarget-1/"
 "> and the <_:buildtarget-2/> stage of the build."
 msgstr ""
-"<literal>CONF_WORLD</literal> ── 用以传递给 <_:buildtarget-1/> 和 <_:buildtarget-2/"
-"> 这两个构建阶段的选项。"
+"<literal>CONF_WORLD</literal> ── 用以传递给 <_:buildtarget-1/> 和 <_:"
+"buildtarget-2/> 这两个构建阶段的选项。"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:280
@@ -469,8 +480,8 @@ msgid ""
 "<literal>FlashDevice</literal> — Defines what type of media to use. Check "
 "<filename>FlashDevice.sub</filename> for more details."
 msgstr ""
-"<literal>FlashDevice</literal> ── 定义所用的介质类型。 要了解进一步的细节， 请参考 "
-"<filename>FlashDevice.sub</filename> 文件。"
+"<literal>FlashDevice</literal> ── 定义所用的介质类型。 要了解进一步的细节， "
+"请参考 <filename>FlashDevice.sub</filename> 文件。"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:289
@@ -484,8 +495,8 @@ msgid ""
 "functions in the configuration file. The following example illustrates the "
 "basic model of custom functions:"
 msgstr ""
-"通过在配置文件中使用 shell 函数可以进一步微调 <application>NanoBSD</application>。 "
-"下面的例子展示了定制函数的基本模式："
+"通过在配置文件中使用 shell 函数可以进一步微调 <application>NanoBSD</"
+"application>。 下面的例子展示了定制函数的基本模式："
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:296
@@ -509,7 +520,9 @@ msgid ""
 "A more useful example of a customization function is the following, which "
 "changes the default size of the <filename>/etc</filename> directory from 5MB "
 "to 30MB:"
-msgstr "下面是一个更贴近实际的例子， 它将默认的 <filename>/etc</filename> 目录尺寸， 从 5MB 调整为 30MB："
+msgstr ""
+"下面是一个更贴近实际的例子， 它将默认的 <filename>/etc</filename> 目录尺寸， "
+"从 5MB 调整为 30MB："
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:306
@@ -543,18 +556,18 @@ msgid ""
 msgstr ""
 "<literal>cust_comconsole</literal> ── 在 VGA 设备上禁止 "
 "<citerefentry><refentrytitle>getty</refentrytitle><manvolnum>8</manvolnum></"
-"citerefentry> (<filename>/dev/ttyv*</filename> 设备节点) 并启用串口 COM1 作为系统控制台。"
+"citerefentry> (<filename>/dev/ttyv*</filename> 设备节点) 并启用串口 COM1 作为"
+"系统控制台。"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:325
 msgid ""
-"<literal>cust_allow_ssh_root</literal> — Allow <systemitem class="
-"\"username\">root</systemitem> to login via "
-"<citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum></"
-"citerefentry>."
+"<literal>cust_allow_ssh_root</literal> — Allow <systemitem class=\"username"
+"\">root</systemitem> to login via <citerefentry><refentrytitle>sshd</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 msgstr ""
-"<literal>cust_allow_ssh_root</literal> ── 允许 <systemitem class="
-"\"username\">root</systemitem> 通过 <citerefentry><refentrytitle>sshd</"
+"<literal>cust_allow_ssh_root</literal> ── 允许 <systemitem class=\"username"
+"\">root</systemitem> 通过 <citerefentry><refentrytitle>sshd</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> 登录。"
 
 #. (itstool) path: listitem/para
@@ -579,8 +592,9 @@ msgid ""
 "custom function. The following function will install all the packages "
 "located in <filename>/usr/src/tools/tools/nanobsd/packages</filename>:"
 msgstr ""
-"通过增加自定义的函数， 可以在 <application>NanoBSD</application> 增加预编译的软件包。 下面的函数会添加位于 "
-"<filename>/usr/src/tools/tools/nanobsd/packages</filename> 的全部预编译软件包："
+"通过增加自定义的函数， 可以在 <application>NanoBSD</application> 增加预编译的"
+"软件包。 下面的函数会添加位于 <filename>/usr/src/tools/tools/nanobsd/"
+"packages</filename> 的全部预编译软件包："
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:349
@@ -614,7 +628,8 @@ msgstr "配置文件举例"
 msgid ""
 "A complete example of a configuration file for building a custom "
 "<application>NanoBSD</application> image can be:"
-msgstr "下面是一个用于构建定制的 <application>NanoBSD</application> 映像的完整例子："
+msgstr ""
+"下面是一个用于构建定制的 <application>NanoBSD</application> 映像的完整例子："
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:366
@@ -662,8 +677,7 @@ msgid ""
 "\n"
 "cust_nobeastie() (\n"
 "\ttouch ${NANO_WORLDDIR}/boot/loader.conf\n"
-"\techo \"beastie_disable=\\\"YES\\\"\" &gt;&gt; ${NANO_WORLDDIR}/boot/loader."
-"conf\n"
+"\techo \"beastie_disable=\\\"YES\\\"\" &gt;&gt; ${NANO_WORLDDIR}/boot/loader.conf\n"
 ")\n"
 "\n"
 "customize_cmd cust_comconsole\n"
@@ -713,8 +727,7 @@ msgstr ""
 "\n"
 "cust_nobeastie() (\n"
 "\ttouch ${NANO_WORLDDIR}/boot/loader.conf\n"
-"\techo \"beastie_disable=\\\"YES\\\"\" &gt;&gt; ${NANO_WORLDDIR}/boot/loader."
-"conf\n"
+"\techo \"beastie_disable=\\\"YES\\\"\" &gt;&gt; ${NANO_WORLDDIR}/boot/loader.conf\n"
 ")\n"
 "\n"
 "customize_cmd cust_comconsole\n"
@@ -744,7 +757,9 @@ msgstr "和之前一样构建新的 <application>NanoBSD</application> 映像文
 msgid ""
 "Upload the new image into an unused partition of a running "
 "<application>NanoBSD</application> appliance."
-msgstr "将新的映像放入正运行的 <application>NanoBSD</application> 设备中的一个未用的分区。"
+msgstr ""
+"将新的映像放入正运行的 <application>NanoBSD</application> 设备中的一个未用的"
+"分区。"
 
 #. (itstool) path: step/para
 #: article.translate.xml:435
@@ -755,9 +770,10 @@ msgid ""
 "disk), the <filename>_.disk.image</filename> image is installed (which "
 "contains an image of a single system partition)."
 msgstr ""
-"与之前最初安装 <application>NanoBSD</application> 的步骤相比， 这一步骤最重要的区别在于这次不应使用 "
-"<filename>_.disk.full</filename> 文件 (它包含整个盘的映像)， 而应安装 <filename>_.disk."
-"image</filename> 映像 (这个文件中， 只包含一个系统分区)。"
+"与之前最初安装 <application>NanoBSD</application> 的步骤相比， 这一步骤最重要"
+"的区别在于这次不应使用 <filename>_.disk.full</filename> 文件 (它包含整个盘的"
+"映像)， 而应安装 <filename>_.disk.image</filename> 映像 (这个文件中， 只包含"
+"一个系统分区)。"
 
 #. (itstool) path: step/para
 #: article.translate.xml:445
@@ -776,8 +792,9 @@ msgid ""
 "contains the old, working image), to restore system functionality as fast as "
 "possible. Fix any problems of the new build, and repeat the process."
 msgstr ""
-"如果发生了任何问题， 则可以从先前的分区启动 (其中包含了旧的、 可用的映像)， 来尽可能快地恢复系统功能。 接下来可以修正新联编的版本中存在的问题， "
-"并重复前述步骤。"
+"如果发生了任何问题， 则可以从先前的分区启动 (其中包含了旧的、 可用的映像)， "
+"来尽可能快地恢复系统功能。 接下来可以修正新联编的版本中存在的问题， 并重复前"
+"述步骤。"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:461
@@ -788,9 +805,10 @@ msgid ""
 "filename> directory, depending from which partition is running the current "
 "system."
 msgstr ""
-"要在正在运行的 <application>NanoBSD</application> 系统中安装新的映像， 可以使用位于 <filename>/"
-"root</filename> 目录的 <filename>updatep1</filename> 或 <filename>updatep2</"
-"filename> 脚本， 具体使用哪一个脚本， 取决于正在运行的系统位于那个分区。"
+"要在正在运行的 <application>NanoBSD</application> 系统中安装新的映像， 可以使"
+"用位于 <filename>/root</filename> 目录的 <filename>updatep1</filename> 或 "
+"<filename>updatep2</filename> 脚本， 具体使用哪一个脚本， 取决于正在运行的系"
+"统位于那个分区。"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:468
@@ -799,8 +817,8 @@ msgid ""
 "<application>NanoBSD</application> image and what type of transfer is "
 "preferred, it is possible to examine one of these three ways:"
 msgstr ""
-"随时提供新 <application>NanoBSD</application> 映像所提供的服务， 以及采用的传输方法的不同， "
-"您可以参考并使用下列三种方式之一："
+"随时提供新 <application>NanoBSD</application> 映像所提供的服务， 以及采用的传"
+"输方法的不同， 您可以参考并使用下列三种方式之一："
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:474
@@ -808,8 +826,8 @@ msgid ""
 "Using <citerefentry><refentrytitle>ftp</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>"
 msgstr ""
-"使用 <citerefentry><refentrytitle>ftp</refentrytitle><manvolnum>1</manvolnum></"
-"citerefentry>"
+"使用 <citerefentry><refentrytitle>ftp</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:476
@@ -832,8 +850,8 @@ msgid ""
 "Using <citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>"
 msgstr ""
-"使用 <citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum></"
-"citerefentry>"
+"使用 <citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:486
@@ -843,12 +861,8 @@ msgstr "如果更倾向于安全传输， 应参考下面的例子："
 #. (itstool) path: sect3/screen
 #: article.translate.xml:489
 #, no-wrap
-msgid ""
-"<prompt>#</prompt> <userinput>ssh myhost cat _.disk.image.gz | zcat | sh "
-"updatep1</userinput>"
-msgstr ""
-"<prompt>#</prompt> <userinput>ssh myhost cat _.disk.image.gz | zcat | sh "
-"updatep1</userinput>"
+msgid "<prompt>#</prompt> <userinput>ssh myhost cat _.disk.image.gz | zcat | sh updatep1</userinput>"
+msgstr "<prompt>#</prompt> <userinput>ssh myhost cat _.disk.image.gz | zcat | sh updatep1</userinput>"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:493
@@ -856,8 +870,8 @@ msgid ""
 "Using <citerefentry><refentrytitle>nc</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>"
 msgstr ""
-"使用 <citerefentry><refentrytitle>nc</refentrytitle><manvolnum>1</manvolnum></"
-"citerefentry>"
+"使用 <citerefentry><refentrytitle>nc</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:495
@@ -867,47 +881,44 @@ msgid ""
 "citerefentry> or <citerefentry><refentrytitle>sshd</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> service:"
 msgstr ""
-"如果远程主机既不提供 <citerefentry><refentrytitle>ftp</refentrytitle><manvolnum>1</"
-"manvolnum></citerefentry> 服务， 也不提供 <citerefentry><refentrytitle>sshd</"
-"refentrytitle><manvolnum>8</manvolnum></citerefentry> 服务："
+"如果远程主机既不提供 <citerefentry><refentrytitle>ftp</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> 服务， 也不提供 "
+"<citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> 服务："
 
 #. (itstool) path: step/para
 #: article.translate.xml:500
 msgid ""
 "At first, open a TCP listener on host serving the image and make it send the "
 "image to client:"
-msgstr "开始时， 在提供映像的主机上开启 TCP 监听， 并令其将映像文件发给客户机："
+msgstr ""
+"开始时， 在提供映像的主机上开启 TCP 监听， 并令其将映像文件发给客户机："
 
 #. (itstool) path: step/screen
 #: article.translate.xml:503
 #, no-wrap
-msgid ""
-"myhost<prompt>#</prompt> <userinput>nc -l <replaceable>2222</replaceable> "
-"&lt; _.disk.image</userinput>"
-msgstr ""
-"myhost<prompt>#</prompt> <userinput>nc -l <replaceable>2222</replaceable> "
-"&lt; _.disk.image</userinput>"
+msgid "myhost<prompt>#</prompt> <userinput>nc -l <replaceable>2222</replaceable> &lt; _.disk.image</userinput>"
+msgstr "myhost<prompt>#</prompt> <userinput>nc -l <replaceable>2222</replaceable> &lt; _.disk.image</userinput>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:506
 msgid ""
 "Make sure that the used port is not blocked to receive incoming connections "
 "from <application>NanoBSD</application> host by firewall."
-msgstr "请确认您所使用的端口没有通过防火墙阻止来自 <application>NanoBSD</application> 客户机的联接请求。"
+msgstr ""
+"请确认您所使用的端口没有通过防火墙阻止来自 <application>NanoBSD</"
+"application> 客户机的联接请求。"
 
 #. (itstool) path: step/para
 #: article.translate.xml:514
 msgid ""
 "Connect to the host serving new image and execute <filename>updatep1</"
 "filename> script:"
-msgstr "连接到提供新映像服务的主机， 并执行 <filename>updatep1</filename> 脚本："
+msgstr ""
+"连接到提供新映像服务的主机， 并执行 <filename>updatep1</filename> 脚本："
 
 #. (itstool) path: step/screen
 #: article.translate.xml:517
 #, no-wrap
-msgid ""
-"<prompt>#</prompt> <userinput>nc myhost <replaceable>2222</replaceable> | sh "
-"updatep1</userinput>"
-msgstr ""
-"<prompt>#</prompt> <userinput>nc myhost <replaceable>2222</replaceable> | sh "
-"updatep1</userinput>"
+msgid "<prompt>#</prompt> <userinput>nc myhost <replaceable>2222</replaceable> | sh updatep1</userinput>"
+msgstr "<prompt>#</prompt> <userinput>nc myhost <replaceable>2222</replaceable> | sh updatep1</userinput>"

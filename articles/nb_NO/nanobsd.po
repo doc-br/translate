@@ -2,14 +2,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-06-15 11:35-0300\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-11-02 17:04-0300\n"
 "PO-Revision-Date: 2019-10-14 06:38+0000\n"
 "Last-Translator: Lars Skogstad <n3c@n3c.no>\n"
 "Language-Team: Norwegian Bokmål (Norway)\n"
 "Language: nb_NO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -197,7 +197,6 @@ msgid ""
 "literal>."
 msgstr ""
 "To bilde partisjoner: <literal>code#1</literal> og <literal>code#2</literal>."
-""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:110
@@ -320,23 +319,15 @@ msgstr ""
 #: article.translate.xml:170
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>cd /usr/src/tools/tools/nanobsd</userinput> "
-"<co xml:id=\"nbsd-cd\"/>\n"
-"<prompt>#</prompt> <userinput>sh nanobsd.sh</userinput> <co xml:id=\"nbsd-"
-"sh\"/>\n"
-"<prompt>#</prompt> <userinput>cd /usr/obj/nanobsd.full</userinput> <co xml:"
-"id=\"nbsd-cd2\"/>\n"
-"<prompt>#</prompt> <userinput>dd if=_.disk.full of=/dev/da0 bs=64k</"
-"userinput> <co xml:id=\"nbsd-dd\"/>"
+"<prompt>#</prompt> <userinput>cd /usr/src/tools/tools/nanobsd</userinput> <co xml:id=\"nbsd-cd\"/>\n"
+"<prompt>#</prompt> <userinput>sh nanobsd.sh</userinput> <co xml:id=\"nbsd-sh\"/>\n"
+"<prompt>#</prompt> <userinput>cd /usr/obj/nanobsd.full</userinput> <co xml:id=\"nbsd-cd2\"/>\n"
+"<prompt>#</prompt> <userinput>dd if=_.disk.full of=/dev/da0 bs=64k</userinput> <co xml:id=\"nbsd-dd\"/>"
 msgstr ""
-"<prompt>#</prompt> <userinput>cd /usr/src/tools/tools/nanobsd</userinput> "
-"<co xml:id=\"nbsd-cd\"/>\n"
-"<prompt>#</prompt> <userinput>sh nanobsd.sh</userinput> <co xml:id=\"nbsd-"
-"sh\"/>\n"
-"<prompt>#</prompt> <userinput>cd /usr/obj/nanobsd.full</userinput> <co xml:"
-"id=\"nbsd-cd2\"/>\n"
-"<prompt>#</prompt> <userinput>dd if=_.disk.full of=/dev/da0 bs=64k</"
-"userinput> <co xml:id=\"nbsd-dd\"/>"
+"<prompt>#</prompt> <userinput>cd /usr/src/tools/tools/nanobsd</userinput> <co xml:id=\"nbsd-cd\"/>\n"
+"<prompt>#</prompt> <userinput>sh nanobsd.sh</userinput> <co xml:id=\"nbsd-sh\"/>\n"
+"<prompt>#</prompt> <userinput>cd /usr/obj/nanobsd.full</userinput> <co xml:id=\"nbsd-cd2\"/>\n"
+"<prompt>#</prompt> <userinput>dd if=_.disk.full of=/dev/da0 bs=64k</userinput> <co xml:id=\"nbsd-dd\"/>"
 
 #. (itstool) path: callout/para
 #: article.translate.xml:177
@@ -356,7 +347,6 @@ msgstr "Start byggeprosessen"
 #: article.translate.xml:187
 msgid ""
 "Change the current directory to the place where the built images are located."
-""
 msgstr ""
 "Endre gjeldende katalog til stedet der de innebygde bildene befinner seg."
 
@@ -396,8 +386,7 @@ msgstr ""
 #: article.translate.xml:211
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>sh nanobsd.sh -c myconf.nano</userinput>"
-msgstr ""
-"<prompt>#</prompt> <userinput>sh nanobsd.sh -c myconf.nano</userinput>"
+msgstr "<prompt>#</prompt> <userinput>sh nanobsd.sh -c myconf.nano</userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:213
@@ -494,8 +483,8 @@ msgid ""
 "<literal>CONF_BUILD</literal> — Options passed to the <_:buildtarget-1/> "
 "stage of the build."
 msgstr ""
-"<literal>CONF_BUILD</literal> — Alternativer som er gitt til <_:buildtarget-"
-"1/> stadiet av bygget."
+"<literal>CONF_BUILD</literal> — Alternativer som er gitt til <_:"
+"buildtarget-1/> stadiet av bygget."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:267
@@ -588,7 +577,6 @@ msgid ""
 "There are a few default pre-defined customization functions ready for use:"
 msgstr ""
 "Det er noen få forhåndsdefinerte tilpasningsfunksjoner som er klare til bruk:"
-""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:317
@@ -606,10 +594,9 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: article.translate.xml:325
 msgid ""
-"<literal>cust_allow_ssh_root</literal> — Allow <systemitem class="
-"\"username\">root</systemitem> to login via "
-"<citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum></"
-"citerefentry>."
+"<literal>cust_allow_ssh_root</literal> — Allow <systemitem class=\"username"
+"\">root</systemitem> to login via <citerefentry><refentrytitle>sshd</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 msgstr ""
 "<literal>cust_allow_ssh_root</literal> — Tillater <systemitem class="
 "\"username\">root</systemitem> til å logge inn via "
@@ -725,8 +712,7 @@ msgid ""
 "\n"
 "cust_nobeastie() (\n"
 "\ttouch ${NANO_WORLDDIR}/boot/loader.conf\n"
-"\techo \"beastie_disable=\\\"YES\\\"\" &gt;&gt; ${NANO_WORLDDIR}/boot/loader."
-"conf\n"
+"\techo \"beastie_disable=\\\"YES\\\"\" &gt;&gt; ${NANO_WORLDDIR}/boot/loader.conf\n"
 ")\n"
 "\n"
 "customize_cmd cust_comconsole\n"
@@ -776,8 +762,7 @@ msgstr ""
 "\n"
 "cust_nobeastie() (\n"
 "\ttouch ${NANO_WORLDDIR}/boot/loader.conf\n"
-"\techo \"beastie_disable=\\\"YES\\\"\" &gt;&gt; ${NANO_WORLDDIR}/boot/loader."
-"conf\n"
+"\techo \"beastie_disable=\\\"YES\\\"\" &gt;&gt; ${NANO_WORLDDIR}/boot/loader.conf\n"
 ")\n"
 "\n"
 "customize_cmd cust_comconsole\n"
@@ -889,8 +874,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: article.translate.xml:476
 msgid "If the transfer speed is in first place, use this example:"
-msgstr ""
-"Hvis overføringshastigheten er i utgangspunktet, bruk dette eksemplet:"
+msgstr "Hvis overføringshastigheten er i utgangspunktet, bruk dette eksemplet:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:479
@@ -921,12 +905,8 @@ msgstr ""
 #. (itstool) path: sect3/screen
 #: article.translate.xml:489
 #, no-wrap
-msgid ""
-"<prompt>#</prompt> <userinput>ssh myhost cat _.disk.image.gz | zcat | sh "
-"updatep1</userinput>"
-msgstr ""
-"<prompt>#</prompt> <userinput>ssh myhost cat _.disk.image.gz | zcat | sh "
-"updatep1</userinput>"
+msgid "<prompt>#</prompt> <userinput>ssh myhost cat _.disk.image.gz | zcat | sh updatep1</userinput>"
+msgstr "<prompt>#</prompt> <userinput>ssh myhost cat _.disk.image.gz | zcat | sh updatep1</userinput>"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:493
@@ -962,12 +942,8 @@ msgstr ""
 #. (itstool) path: step/screen
 #: article.translate.xml:503
 #, no-wrap
-msgid ""
-"myhost<prompt>#</prompt> <userinput>nc -l <replaceable>2222</replaceable> "
-"&lt; _.disk.image</userinput>"
-msgstr ""
-"myhost<prompt>#</prompt> <userinput>nc -l <replaceable>2222</replaceable> "
-"&lt; _.disk.image</userinput>"
+msgid "myhost<prompt>#</prompt> <userinput>nc -l <replaceable>2222</replaceable> &lt; _.disk.image</userinput>"
+msgstr "myhost<prompt>#</prompt> <userinput>nc -l <replaceable>2222</replaceable> &lt; _.disk.image</userinput>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:506
@@ -991,9 +967,5 @@ msgstr ""
 #. (itstool) path: step/screen
 #: article.translate.xml:517
 #, no-wrap
-msgid ""
-"<prompt>#</prompt> <userinput>nc myhost <replaceable>2222</replaceable> | sh "
-"updatep1</userinput>"
-msgstr ""
-"<prompt>#</prompt> <userinput>nc myhost <replaceable>2222</replaceable> | sh "
-"updatep1</userinput>"
+msgid "<prompt>#</prompt> <userinput>nc myhost <replaceable>2222</replaceable> | sh updatep1</userinput>"
+msgstr "<prompt>#</prompt> <userinput>nc myhost <replaceable>2222</replaceable> | sh updatep1</userinput>"
