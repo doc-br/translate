@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-06-15 11:32-0300\n"
+"POT-Creation-Date: 2019-11-02 17:04-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12613,7 +12613,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:9170 book.translate.xml:15396
+#: book.translate.xml:9170 book.translate.xml:14564
 msgid "Copyright © 2000-2001 G. Adam Stanislav. All rights reserved."
 msgstr ""
 
@@ -13547,12 +13547,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: book.translate.xml:9779
+#: book.translate.xml:9780
 msgid "Assembling the Code"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:9781
+#: book.translate.xml:9782
 msgid ""
 "Type the code (except the line numbers) in an editor, and save it in a file "
 "named <filename>hello.asm</filename>. You need <application>nasm</"
@@ -13560,17 +13560,17 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/title
-#: book.translate.xml:9785
+#: book.translate.xml:9787
 msgid "Installing <application>nasm</application>"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:9787
+#: book.translate.xml:9789
 msgid "If you do not have <application>nasm</application>, type:"
 msgstr ""
 
 #. (itstool) path: sect3/screen
-#: book.translate.xml:9790
+#: book.translate.xml:9792
 #, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>su</userinput>\n"
@@ -13582,7 +13582,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:9797
+#: book.translate.xml:9799
 msgid ""
 "You may type <userinput>make install clean</userinput> instead of just "
 "<userinput>make install</userinput> if you do not want to keep "
@@ -13590,14 +13590,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:9803
+#: book.translate.xml:9804
 msgid ""
 "Either way, FreeBSD will automatically download <application>nasm</"
 "application> from the Internet, compile it, and install it on your system."
 msgstr ""
 
 #. (itstool) path: note/para
-#: book.translate.xml:9810
+#: book.translate.xml:9809
 msgid ""
 "If your system is not FreeBSD, you need to get <application>nasm</"
 "application> from its <link xlink:href=\"https://sourceforge.net/projects/"
@@ -13605,12 +13605,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:9818
+#: book.translate.xml:9815
 msgid "Now you can assemble, link, and run the code:"
 msgstr ""
 
 #. (itstool) path: sect3/screen
-#: book.translate.xml:9822
+#: book.translate.xml:9817
 #, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>nasm -f elf hello.asm</userinput>\n"
@@ -13621,12 +13621,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: book.translate.xml:9835
+#: book.translate.xml:9827
 msgid "Writing <trademark class=\"registered\">UNIX</trademark> Filters"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:9837
+#: book.translate.xml:9829
 msgid ""
 "A common type of <trademark class=\"registered\">UNIX</trademark> "
 "application is a filter—a program that reads data from the <filename>stdin</"
@@ -13635,7 +13635,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:9843
+#: book.translate.xml:9834
 msgid ""
 "In this chapter, we shall develop a simple filter, and learn how to read "
 "from <filename>stdin</filename> and write to <filename>stdout</filename>. "
@@ -13644,10 +13644,9 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/programlisting
-#: book.translate.xml:9851
+#: book.translate.xml:9840
 #, no-wrap
 msgid ""
-"\n"
 "%include\t'system.inc'\n"
 "\n"
 "section\t.data\n"
@@ -13686,11 +13685,11 @@ msgid ""
 "\n"
 ".done:\n"
 "\tpush\tdword 0\n"
-"\tsys.exit\n"
+"\tsys.exit"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:9892
+#: book.translate.xml:9880
 msgid ""
 "In the data section we create an array called <varname>hex</varname>. It "
 "contains the 16 hexadecimal digits in ascending order. The array is followed "
@@ -13701,14 +13700,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:9903
+#: book.translate.xml:9889
 msgid ""
 "The code section consists of four parts: Reading the byte, converting it to "
 "a hexadecimal number, writing the result, and eventually exiting the program."
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:9909
+#: book.translate.xml:9893
 msgid ""
 "To read the byte, we ask the system to read one byte from <filename>stdin</"
 "filename>, and store it in the first byte of the <varname>buffer</varname>. "
@@ -13721,14 +13720,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: note/para
-#: book.translate.xml:9921
+#: book.translate.xml:9904
 msgid ""
 "For simplicity sake, we are ignoring the possibility of an error condition "
 "at this time."
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:9927
+#: book.translate.xml:9908
 msgid ""
 "The hexadecimal conversion reads the byte from the <varname>buffer</varname> "
 "into <varname role=\"register\">EAX</varname>, or actually just <varname "
@@ -13740,7 +13739,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:9938
+#: book.translate.xml:9916
 msgid ""
 "Next, we ask the system to write the three bytes of the buffer, i.e., the "
 "two hexadecimal digits and the blank space, to <filename>stdout</filename>. "
@@ -13748,7 +13747,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:9946
+#: book.translate.xml:9921
 msgid ""
 "Once there is no more input left, we ask the system to exit our program, "
 "returning a zero, which is the traditional value meaning the program was "
@@ -13756,7 +13755,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:9953
+#: book.translate.xml:9925
 msgid ""
 "Go ahead, and save the code in a file named <filename>hex.asm</filename>, "
 "then type the following (the <userinput>^D</userinput> means press the "
@@ -13765,7 +13764,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/screen
-#: book.translate.xml:9960
+#: book.translate.xml:9931
 #, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>nasm -f elf hex.asm</userinput>\n"
@@ -13777,7 +13776,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: note/para
-#: book.translate.xml:9968
+#: book.translate.xml:9939
 msgid ""
 "If you are migrating to <trademark class=\"registered\">UNIX</trademark> "
 "from <acronym><trademark class=\"registered\">MS-DOS</trademark></acronym>, "
@@ -13788,7 +13787,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:9977
+#: book.translate.xml:9947
 msgid ""
 "Can we improve this? Well, for one, it is a bit confusing because once we "
 "have converted a line of text, our input no longer starts at the beginning "
@@ -13797,10 +13796,9 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/programlisting
-#: book.translate.xml:9984
+#: book.translate.xml:9953
 #, no-wrap
 msgid ""
-"\n"
 "%include\t'system.inc'\n"
 "\n"
 "section\t.data\n"
@@ -13848,11 +13846,11 @@ msgid ""
 "\n"
 ".done:\n"
 "\tpush\tdword 0\n"
-"\tsys.exit\n"
+"\tsys.exit"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10034
+#: book.translate.xml:10002
 msgid ""
 "We have stored the space in the <varname role=\"register\">CL</varname> "
 "register. We can do this safely because, unlike <trademark class=\"registered"
@@ -13862,7 +13860,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10041
+#: book.translate.xml:10007
 msgid ""
 "That means we only need to set <varname role=\"register\">CL</varname> once. "
 "We have, therefore, added a new label <varname>.loop</varname> and jump to "
@@ -13872,14 +13870,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10049
+#: book.translate.xml:10014
 msgid ""
 "Once you have changed <filename>hex.asm</filename> to reflect these changes, "
 "type:"
 msgstr ""
 
 #. (itstool) path: sect1/screen
-#: book.translate.xml:10054 book.translate.xml:10342
+#: book.translate.xml:10017 book.translate.xml:10285
 #, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>nasm -f elf hex.asm</userinput>\n"
@@ -13893,7 +13891,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10063
+#: book.translate.xml:10026
 msgid ""
 "That looks better. But this code is quite inefficient! We are making a "
 "system call for every single byte twice (once to read it, another time to "
@@ -13901,12 +13899,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: book.translate.xml:10072
+#: book.translate.xml:10032
 msgid "Buffered Input and Output"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10074
+#: book.translate.xml:10034
 msgid ""
 "We can improve the efficiency of our code by buffering our input and output. "
 "We create an input buffer and read a whole sequence of bytes at one time. "
@@ -13914,7 +13912,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10081
+#: book.translate.xml:10039
 msgid ""
 "We also create an output buffer. We store our output in it until it is full. "
 "At that time we ask the kernel to write the contents of the buffer to "
@@ -13922,7 +13920,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10087
+#: book.translate.xml:10044
 msgid ""
 "The program ends when there is no more input. But we still need to ask the "
 "kernel to write the contents of our output buffer to <filename>stdout</"
@@ -13932,10 +13930,9 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/programlisting
-#: book.translate.xml:10096
+#: book.translate.xml:10051
 #, no-wrap
 msgid ""
-"\n"
 "%include\t'system.inc'\n"
 "\n"
 "%define\tBUFSIZE\t2048\n"
@@ -14028,11 +14025,11 @@ msgid ""
 "\tadd\tesp, byte 12\n"
 "\tsub\teax, eax\n"
 "\tsub\tecx, ecx\t; buffer is empty now\n"
-"\tret\n"
+"\tret"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10191
+#: book.translate.xml:10145
 msgid ""
 "We now have a third section in the source code, named <varname>.bss</"
 "varname>. This section is not included in our executable file, and, "
@@ -14042,7 +14039,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10200
+#: book.translate.xml:10152
 msgid ""
 "We take advantage of the fact that the system does not modify the registers: "
 "We use registers for what, otherwise, would have to be global variables "
@@ -14054,7 +14051,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10209
+#: book.translate.xml:10161
 msgid ""
 "We use <varname role=\"register\">EDI</varname> and <varname role=\"register"
 "\">ESI</varname> as pointers to the next byte to be read from or written to. "
@@ -14064,12 +14061,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10217
+#: book.translate.xml:10167
 msgid "Let us see how it works now:"
 msgstr ""
 
 #. (itstool) path: sect1/screen
-#: book.translate.xml:10221
+#: book.translate.xml:10169
 #, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>nasm -f elf hex.asm</userinput>\n"
@@ -14083,7 +14080,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10230
+#: book.translate.xml:10178
 msgid ""
 "Not what you expected? The program did not print the output until we pressed "
 "<userinput>^D</userinput>. That is easy to fix by inserting three lines of "
@@ -14093,10 +14090,9 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/programlisting
-#: book.translate.xml:10239
+#: book.translate.xml:10186
 #, no-wrap
 msgid ""
-"\n"
 "%include\t'system.inc'\n"
 "\n"
 "%define\tBUFSIZE\t2048\n"
@@ -14192,21 +14188,21 @@ msgid ""
 "\tadd\tesp, byte 12\n"
 "\tsub\teax, eax\n"
 "\tsub\tecx, ecx\t; buffer is empty now\n"
-"\tret\n"
+"\tret"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10338
+#: book.translate.xml:10283
 msgid "Now, let us see how it works:"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10351
+#: book.translate.xml:10294
 msgid "Not bad for a 644-byte executable, is it!"
 msgstr ""
 
 #. (itstool) path: note/para
-#: book.translate.xml:10356
+#: book.translate.xml:10297
 msgid ""
 "This approach to buffered input/output still contains a hidden danger. I "
 "will discuss—and fix—it later, when I talk about the <link linkend=\"x86-"
@@ -14214,12 +14210,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: book.translate.xml:10365
+#: book.translate.xml:10304
 msgid "How to Unread a Character"
 msgstr ""
 
 #. (itstool) path: warning/para
-#: book.translate.xml:10367
+#: book.translate.xml:10307
 msgid ""
 "This may be a somewhat advanced topic, mostly of interest to programmers "
 "familiar with the theory of compilers. If you wish, you may <link linkend="
@@ -14228,7 +14224,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:10374
+#: book.translate.xml:10313
 msgid ""
 "While our sample program does not require it, more sophisticated filters "
 "often need to look ahead. In other words, they may need to see what the next "
@@ -14238,7 +14234,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:10382
+#: book.translate.xml:10320
 msgid ""
 "For example, you may be parsing the input stream for a textual string (e.g., "
 "when implementing a language compiler): If a character is followed by "
@@ -14248,14 +14244,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:10391
+#: book.translate.xml:10327
 msgid ""
 "This presents an interesting problem: How to return the next character back "
 "to the input stream, so it can be read again later?"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:10397
+#: book.translate.xml:10331
 msgid ""
 "One possible solution is to store it in a character variable, then set a "
 "flag. We can modify <function>getchar</function> to check the flag, and if "
@@ -14264,7 +14260,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:10405
+#: book.translate.xml:10338
 msgid ""
 "The C language has an <function>ungetc()</function> function, just for that "
 "purpose. Is there a quick way to implement it in our code? I would like you "
@@ -14274,14 +14270,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:10414
+#: book.translate.xml:10346
 msgid ""
 "The key to returning a character back to the stream is in how we are getting "
 "the characters to start with:"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:10419
+#: book.translate.xml:10349
 msgid ""
 "First we check if the buffer is empty by testing the value of <varname role="
 "\"register\">EBX</varname>. If it is zero, we call the <function>read</"
@@ -14289,7 +14285,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:10425
+#: book.translate.xml:10354
 msgid ""
 "If we do have a character available, we use <function role=\"opcode\">lodsb</"
 "function>, then decrease the value of <varname role=\"register\">EBX</"
@@ -14298,16 +14294,15 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
-#: book.translate.xml:10431
+#: book.translate.xml:10358
 #, no-wrap
 msgid ""
-"\n"
-"\tmov\tal, [esi]\n"
-"\tinc\tesi\n"
+"mov\tal, [esi]\n"
+"\tinc\tesi"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:10436
+#: book.translate.xml:10361
 msgid ""
 "The byte we have fetched remains in the buffer until the next time "
 "<function>read</function> is called. We do not know when that happens, but "
@@ -14318,18 +14313,17 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
-#: book.translate.xml:10445
+#: book.translate.xml:10369
 #, no-wrap
 msgid ""
-"\n"
 "ungetc:\n"
 "\tdec\tesi\n"
 "\tinc\tebx\n"
-"\tret\n"
+"\tret"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:10452
+#: book.translate.xml:10374
 msgid ""
 "But, be careful! We are perfectly safe doing this if our look-ahead is at "
 "most one character at a time. If we are examining more than one upcoming "
@@ -14339,7 +14333,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:10460
+#: book.translate.xml:10381
 msgid ""
 "Because as long as <function>getchar</function> does not have to call "
 "<function>read</function>, all of the pre-read bytes are still in the "
@@ -14349,7 +14343,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:10468
+#: book.translate.xml:10389
 msgid ""
 "We can always rely on <function>ungetc</function> working properly on the "
 "last character we have read with <function>getchar</function>, but not on "
@@ -14357,21 +14351,21 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:10474
+#: book.translate.xml:10394
 msgid ""
 "If your program reads more than one byte ahead, you have at least two "
 "choices:"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:10479
+#: book.translate.xml:10397
 msgid ""
 "If possible, modify the program so it only reads one byte ahead. This is the "
 "simplest solution."
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:10484
+#: book.translate.xml:10400
 msgid ""
 "If that option is not available, first of all determine the maximum number "
 "of characters your program needs to return to the input stream at one time. "
@@ -14382,37 +14376,35 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
-#: book.translate.xml:10494
+#: book.translate.xml:10409
 #, no-wrap
 msgid ""
-"\n"
 "section\t.bss\n"
 "\tresb\t16\t; or whatever the value you came up with\n"
 "ibuffer\tresb\tBUFSIZE\n"
-"obuffer\tresb\tBUFSIZE\n"
+"obuffer\tresb\tBUFSIZE"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:10501
+#: book.translate.xml:10414
 msgid ""
 "You also need to modify your <function>ungetc</function> to pass the value "
 "of the byte to unget in <varname role=\"register\">AL</varname>:"
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
-#: book.translate.xml:10506
+#: book.translate.xml:10417
 #, no-wrap
 msgid ""
-"\n"
 "ungetc:\n"
 "\tdec\tesi\n"
 "\tinc\tebx\n"
 "\tmov\t[esi], al\n"
-"\tret\n"
+"\tret"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:10514
+#: book.translate.xml:10423
 msgid ""
 "With this modification, you can call <function>ungetc</function> up to 17 "
 "times in a row safely (the first call will still be within the buffer, the "
@@ -14420,12 +14412,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: book.translate.xml:10525
+#: book.translate.xml:10432
 msgid "Command Line Arguments"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10527
+#: book.translate.xml:10434
 msgid ""
 "Our <application>hex</application> program will be more useful if it can "
 "read the names of an input and output file from its command line, i.e., if "
@@ -14433,7 +14425,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10534
+#: book.translate.xml:10439
 msgid ""
 "Before a <trademark class=\"registered\">UNIX</trademark> system starts a "
 "program, it <function role=\"opcode\">push</function>es some data on the "
@@ -14444,7 +14436,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10542
+#: book.translate.xml:10445
 msgid ""
 "The value at the top of the stack contains the number of command line "
 "arguments. It is traditionally called <varname>argc</varname>, for "
@@ -14452,7 +14444,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10548
+#: book.translate.xml:10449
 msgid ""
 "Command line arguments follow next, all <varname>argc</varname> of them. "
 "These are typically referred to as <varname>argv</varname>, for \"argument "
@@ -14464,7 +14456,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10559
+#: book.translate.xml:10459
 msgid ""
 "The <varname>argv</varname> list is followed by a NULL pointer, which is "
 "simply a <constant>0</constant>. There is more, but this is enough for our "
@@ -14472,7 +14464,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: note/para
-#: book.translate.xml:10566
+#: book.translate.xml:10464
 msgid ""
 "If you have come from the <acronym><trademark class=\"registered\">MS-DOS</"
 "trademark></acronym> programming environment, the main difference is that "
@@ -14481,7 +14473,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10574
+#: book.translate.xml:10471
 msgid ""
 "Armed with this knowledge, we are almost ready for the next version of "
 "<filename>hex.asm</filename>. First, however, we need to add a few lines to "
@@ -14489,49 +14481,46 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10580
+#: book.translate.xml:10476
 msgid ""
 "First, we need to add two new entries to our list of system call numbers:"
 msgstr ""
 
 #. (itstool) path: sect1/programlisting
-#: book.translate.xml:10585
+#: book.translate.xml:10479
 #, no-wrap
 msgid ""
-"\n"
 "%define\tSYS_open\t5\n"
-"%define\tSYS_close\t6\n"
+"%define\tSYS_close\t6"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10590
+#: book.translate.xml:10482
 msgid "Then we add two new macros at the end of the file:"
 msgstr ""
 
 #. (itstool) path: sect1/programlisting
-#: book.translate.xml:10594
+#: book.translate.xml:10484
 #, no-wrap
 msgid ""
-"\n"
 "%macro\tsys.open\t0\n"
 "\tsystem\tSYS_open\n"
 "%endmacro\n"
 "\n"
 "%macro\tsys.close\t0\n"
 "\tsystem\tSYS_close\n"
-"%endmacro\n"
+"%endmacro"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10604
+#: book.translate.xml:10492
 msgid "Here, then, is our modified source code:"
 msgstr ""
 
 #. (itstool) path: sect1/programlisting
-#: book.translate.xml:10608
+#: book.translate.xml:10494
 #, no-wrap
 msgid ""
-"\n"
 "%include\t'system.inc'\n"
 "\n"
 "%define\tBUFSIZE\t2048\n"
@@ -14673,11 +14662,11 @@ msgid ""
 "\tadd\tesp, byte 12\n"
 "\tsub\teax, eax\n"
 "\tsub\tecx, ecx\t; buffer is empty now\n"
-"\tret\n"
+"\tret"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10753
+#: book.translate.xml:10637
 msgid ""
 "In our <varname>.data</varname> section we now have two new variables, "
 "<varname>fd.in</varname> and <varname>fd.out</varname>. We store the input "
@@ -14685,7 +14674,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10759
+#: book.translate.xml:10642
 msgid ""
 "In the <varname>.text</varname> section we have replaced the references to "
 "<varname>stdin</varname> and <varname>stdout</varname> with <varname>[fd."
@@ -14693,7 +14682,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10765
+#: book.translate.xml:10647
 msgid ""
 "The <varname>.text</varname> section now starts with a simple error handler, "
 "which does nothing but exit the program with a return value of <constant>1</"
@@ -14702,7 +14691,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10773
+#: book.translate.xml:10653
 msgid ""
 "Naturally, the program execution still begins at <varname>_start</varname>. "
 "First, we remove <varname>argc</varname> and <varname>argv[0]</varname> from "
@@ -14710,7 +14699,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10779
+#: book.translate.xml:10659
 msgid ""
 "We pop <varname>argv[1]</varname> to <varname role=\"register\">ECX</"
 "varname>. This register is particularly suited for pointers, as we can "
@@ -14723,7 +14712,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10790
+#: book.translate.xml:10669
 msgid ""
 "If all went well, we now check for the second argument. If it is there, we "
 "open the output file. Otherwise, we send the output to <varname>stdout</"
@@ -14732,7 +14721,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10798
+#: book.translate.xml:10675
 msgid ""
 "The rest of the code is the same as before, except we close the input and "
 "output files before exiting, and, as mentioned, we use <varname>[fd.in]</"
@@ -14740,38 +14729,38 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10804
+#: book.translate.xml:10680
 msgid "Our executable is now a whopping 768 bytes long."
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10808
+#: book.translate.xml:10682
 msgid ""
 "Can we still improve it? Of course! Every program can be improved. Here are "
 "a few ideas of what we could do:"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:10815
+#: book.translate.xml:10687
 msgid "Have our error handler print a message to <varname>stderr</varname>."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:10822
+#: book.translate.xml:10692
 msgid ""
 "Add error handlers to the <function>read</function> and <function>write</"
 "function> functions."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:10829
+#: book.translate.xml:10697
 msgid ""
 "Close <varname>stdin</varname> when we open an input file, <varname>stdout</"
 "varname> when we open an output file."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:10836
+#: book.translate.xml:10703
 msgid ""
 "Add command line switches, such as <parameter>-i</parameter> and <parameter>-"
 "o</parameter>, so we can list the input and output files in any order, or "
@@ -14779,24 +14768,24 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:10845
+#: book.translate.xml:10711
 msgid "Print a usage message if command line arguments are incorrect."
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10851
+#: book.translate.xml:10717
 msgid ""
 "I shall leave these enhancements as an exercise to the reader: You already "
 "know everything you need to know to implement them."
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: book.translate.xml:10859
+#: book.translate.xml:10723
 msgid "<trademark class=\"registered\">UNIX</trademark> Environment"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:10861
+#: book.translate.xml:10725
 msgid ""
 "An important <trademark class=\"registered\">UNIX</trademark> concept is the "
 "environment, which is defined by <emphasis>environment variables</emphasis>. "
@@ -14805,12 +14794,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: book.translate.xml:10869
+#: book.translate.xml:10732
 msgid "How to Find Environment Variables"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:10871
+#: book.translate.xml:10734
 msgid ""
 "I said earlier that when a program starts executing, the stack contains "
 "<varname>argc</varname> followed by the NULL-terminated <varname>argv</"
@@ -14821,7 +14810,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:10881
+#: book.translate.xml:10743
 msgid ""
 "The structure of <varname>env</varname> is the same as that of "
 "<varname>argv</varname>, a list of memory addresses followed by a NULL "
@@ -14830,7 +14819,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:10889
+#: book.translate.xml:10749
 msgid ""
 "The variables usually come in the <varname>name=value</varname> format, but "
 "sometimes the <varname>=value</varname> part may be missing. We need to "
@@ -14838,12 +14827,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: book.translate.xml:10898
+#: book.translate.xml:10756
 msgid "webvars"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:10900
+#: book.translate.xml:10758
 msgid ""
 "I could just show you some code that prints the environment the same way the "
 "<trademark class=\"registered\">UNIX</trademark> <application>env</"
@@ -14852,12 +14841,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/title
-#: book.translate.xml:10908
-msgid "CGI: A Quick Overview"
+#: book.translate.xml:10765
+msgid "CGI: a Quick Overview"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:10910
+#: book.translate.xml:10767
 msgid ""
 "I have a <link xlink:href=\"http://www.whizkidtech.redprince.net/cgi-bin/"
 "tutorial\">detailed <acronym>CGI</acronym> tutorial</link> on my web site, "
@@ -14865,35 +14854,35 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:10919
+#: book.translate.xml:10774
 msgid ""
 "The web server communicates with the <acronym>CGI</acronym> program by "
 "setting <emphasis>environment variables</emphasis>."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:10926
+#: book.translate.xml:10780
 msgid ""
 "The <acronym>CGI</acronym> program sends its output to <filename>stdout</"
 "filename>. The web server reads it from there."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:10934
+#: book.translate.xml:10786
 msgid ""
 "It must start with an <acronym>HTTP</acronym> header followed by two blank "
 "lines."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:10941
+#: book.translate.xml:10791
 msgid ""
 "It then prints the <acronym>HTML</acronym> code, or whatever other type of "
 "data it is producing."
 msgstr ""
 
 #. (itstool) path: note/para
-#: book.translate.xml:10949
+#: book.translate.xml:10797
 msgid ""
 "While certain <emphasis>environment variables</emphasis> use standard names, "
 "others vary, depending on the web server. That makes <application>webvars</"
@@ -14901,12 +14890,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/title
-#: book.translate.xml:10960
+#: book.translate.xml:10806
 msgid "The Code"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:10962
+#: book.translate.xml:10808
 msgid ""
 "Our <application>webvars</application> program, then, must send out the "
 "<acronym>HTTP</acronym> header followed by some <acronym>HTML</acronym> mark-"
@@ -14915,16 +14904,15 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:10971
+#: book.translate.xml:10815
 msgid ""
 "The code follows. I placed comments and explanations right inside the code:"
 msgstr ""
 
 #. (itstool) path: sect3/programlisting
-#: book.translate.xml:10976
+#: book.translate.xml:10818
 #, no-wrap
 msgid ""
-"\n"
 ";;;;;;; webvars.asm ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\n"
 ";\n"
 "; Copyright (c) 2000 G. Adam Stanislav\n"
@@ -15105,23 +15093,23 @@ msgid ""
 "\n"
 "\t; Return success\n"
 "\tpush\tdword 0\n"
-"\tsys.exit\n"
+"\tsys.exit"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:11160
+#: book.translate.xml:11000
 msgid ""
 "This code produces a 1,396-byte executable. Most of it is data, i.e., the "
 "<acronym>HTML</acronym> mark-up we need to send out."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:11165
+#: book.translate.xml:11004
 msgid "Assemble and link it as usual:"
 msgstr ""
 
 #. (itstool) path: sect3/screen
-#: book.translate.xml:11169
+#: book.translate.xml:11006
 #, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>nasm -f elf webvars.asm</userinput>\n"
@@ -15129,7 +15117,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:11172
+#: book.translate.xml:11009
 msgid ""
 "To use it, you need to upload <filename>webvars</filename> to your web "
 "server. Depending on how your web server is set up, you may have to store it "
@@ -15138,7 +15126,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:11179
+#: book.translate.xml:11015
 msgid ""
 "Then you need to use your browser to view its output. To see its output on "
 "my web server, please go to <link xlink:href=\"http://www.int80h.org/webvars/"
@@ -15151,12 +15139,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: book.translate.xml:11197
+#: book.translate.xml:11026
 msgid "Working with Files"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:11199
+#: book.translate.xml:11028
 msgid ""
 "We have already done some basic file work: We know how to open and close "
 "them, how to read and write them using buffers. But <trademark class="
@@ -15166,7 +15154,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:11207
+#: book.translate.xml:11034
 msgid ""
 "Indeed, let us start at the end, that is, with the file conversion utility. "
 "It always makes programming easier when we know from the start what the end "
@@ -15174,7 +15162,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:11214
+#: book.translate.xml:11039
 msgid ""
 "One of the first programs I wrote for <trademark class=\"registered\">UNIX</"
 "trademark> was <link xlink:href=\"ftp://ftp.int80h.org/unix/tuc/"
@@ -15189,7 +15177,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:11225
+#: book.translate.xml:11047
 msgid ""
 "I have used <application>tuc</application> extensively, but always only to "
 "convert from some other <acronym>OS</acronym> to <trademark class="
@@ -15199,7 +15187,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/screen
-#: book.translate.xml:11234
+#: book.translate.xml:11054
 #, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>tuc <replaceable>myfile tempfile</replaceable></userinput>\n"
@@ -15207,20 +15195,20 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:11237
+#: book.translate.xml:11057
 msgid ""
 "It would be nice to have a <application>ftuc</application>, i.e., "
 "<emphasis>fast tuc</emphasis>, and use it like this:"
 msgstr ""
 
 #. (itstool) path: sect1/screen
-#: book.translate.xml:11242
+#: book.translate.xml:11061
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>ftuc <replaceable>myfile</replaceable></userinput>"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:11244
+#: book.translate.xml:11063
 msgid ""
 "In this chapter, then, we will write <application>ftuc</application> in "
 "assembly language (the original <application>tuc</application> is in C), and "
@@ -15228,14 +15216,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:11252
+#: book.translate.xml:11068
 msgid ""
 "At first sight, such a file conversion is very simple: All you have to do is "
 "strip the carriage returns, right?"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:11258
+#: book.translate.xml:11071
 msgid ""
 "If you answered yes, think again: That approach will work most of the time "
 "(at least with <acronym>MS DOS</acronym> text files), but will fail "
@@ -15243,7 +15231,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:11264
+#: book.translate.xml:11075
 msgid ""
 "The problem is that not all non <trademark class=\"registered\">UNIX</"
 "trademark> text files end their line with the carriage return / line feed "
@@ -15253,46 +15241,46 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:11272
+#: book.translate.xml:11081
 msgid ""
 "A text file converter, then, must be able to handle any possible line "
 "endings:"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:11279
+#: book.translate.xml:11086
 msgid "carriage return / line feed"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:11285
+#: book.translate.xml:11090
 msgid "carriage return"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:11291
+#: book.translate.xml:11094
 msgid "line feed / carriage return"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:11297
+#: book.translate.xml:11098
 msgid "line feed"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:11303
+#: book.translate.xml:11102
 msgid ""
 "It should also handle files that use some kind of a combination of the above "
 "(e.g., carriage return followed by several line feeds)."
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: book.translate.xml:11310
+#: book.translate.xml:11107
 msgid "Finite State Machine"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11312
+#: book.translate.xml:11109
 msgid ""
 "The problem is easily solved by the use of a technique called "
 "<emphasis>finite state machine</emphasis>, originally developed by the "
@@ -15309,7 +15297,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11330
+#: book.translate.xml:11125
 msgid ""
 "Because of that, all software is essentially a sequence of state "
 "instructions for the microprocessor. Nevertheless, the concept of "
@@ -15318,58 +15306,58 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11336
+#: book.translate.xml:11130
 msgid ""
-"Our text file converter can be designed as a <emphasis>finite state machine</"
+"Our text file converter can be designer as a <emphasis>finite state machine</"
 "emphasis> with three possible states. We could call them states 0-2, but it "
 "will make our life easier if we give them symbolic names:"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:11344
-msgid "<symbol>ordinary </symbol>"
+#: book.translate.xml:11137
+msgid "<symbol>ordinary</symbol>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:11350
-msgid "<symbol>cr </symbol>"
+#: book.translate.xml:11141
+msgid "<symbol>cr</symbol>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:11356
-msgid "<symbol>lf </symbol>"
+#: book.translate.xml:11145
+msgid "<symbol>lf</symbol>"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11362
+#: book.translate.xml:11149
 msgid ""
 "Our program will start in the <symbol>ordinary</symbol> state. During this "
 "state, the program action depends on its input as follows:"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:11370
+#: book.translate.xml:11155
 msgid ""
 "If the input is anything other than a carriage return or line feed, the "
 "input is simply passed on to the output. The state remains unchanged."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:11378
+#: book.translate.xml:11161
 msgid ""
 "If the input is a carriage return, the state is changed to <symbol>cr</"
 "symbol>. The input is then discarded, i.e., no output is made."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:11386
+#: book.translate.xml:11167
 msgid ""
 "If the input is a line feed, the state is changed to <symbol>lf</symbol>. "
 "The input is then discarded."
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11393
+#: book.translate.xml:11172
 msgid ""
 "Whenever we are in the <symbol>cr</symbol> state, it is because the last "
 "input was a carriage return, which was unprocessed. What our software does "
@@ -15377,7 +15365,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:11402
+#: book.translate.xml:11179
 msgid ""
 "If the input is anything other than a carriage return or line feed, output a "
 "line feed, then output the input, then change the state to <symbol>ordinary</"
@@ -15385,7 +15373,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:11410
+#: book.translate.xml:11185
 msgid ""
 "If the input is a carriage return, we have received two (or more) carriage "
 "returns in a row. We discard the input, we output a line feed, and leave the "
@@ -15393,7 +15381,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:11418
+#: book.translate.xml:11192
 msgid ""
 "If the input is a line feed, we output the line feed and change the state to "
 "<symbol>ordinary</symbol>. Note that this is not the same as the first case "
@@ -15402,7 +15390,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11428
+#: book.translate.xml:11200
 msgid ""
 "Finally, we are in the <symbol>lf</symbol> state after we have received a "
 "line feed that was not preceded by a carriage return. This will happen when "
@@ -15414,7 +15402,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:11441
+#: book.translate.xml:11211
 msgid ""
 "If the input is anything other than a carriage return or line feed, we "
 "output a line feed, then output the input, then change the state to "
@@ -15423,26 +15411,26 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:11451
+#: book.translate.xml:11220
 msgid ""
 "If the input is a carriage return, we discard the input, we output a line "
 "feed, then change the state to <symbol>ordinary</symbol>."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:11458
+#: book.translate.xml:11226
 msgid ""
 "If the input is a line feed, we output the line feed, and leave the state "
 "unchanged."
 msgstr ""
 
 #. (itstool) path: sect3/title
-#: book.translate.xml:11466
+#: book.translate.xml:11232
 msgid "The Final State"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:11468
+#: book.translate.xml:11234
 msgid ""
 "The above <emphasis>finite state machine</emphasis> works for the entire "
 "file, but leaves the possibility that the final line end will be ignored. "
@@ -15453,7 +15441,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:11477
+#: book.translate.xml:11242
 msgid ""
 "This problem is easily fixed by checking the state after the entire file was "
 "processed. If the state is not <symbol>ordinary</symbol>, we simply need to "
@@ -15461,7 +15449,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: note/para
-#: book.translate.xml:11485
+#: book.translate.xml:11248
 msgid ""
 "Now that we have expressed our algorithm as a <emphasis>finite state "
 "machine</emphasis>, we could easily design a dedicated digital electronic "
@@ -15470,12 +15458,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/title
-#: book.translate.xml:11497
+#: book.translate.xml:11258
 msgid "The Output Counter"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:11499
+#: book.translate.xml:11260
 msgid ""
 "Because our file conversion program may be combining two characters into "
 "one, we need to use an output counter. We initialize it to <constant>0</"
@@ -15485,12 +15473,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: book.translate.xml:11513
+#: book.translate.xml:11270
 msgid "Implementing FSM in Software"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11515
+#: book.translate.xml:11272
 msgid ""
 "The hardest part of working with a <emphasis>finite state machine</emphasis> "
 "is analyzing the problem and expressing it as a <emphasis>finite state "
@@ -15498,7 +15486,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11522
+#: book.translate.xml:11277
 msgid ""
 "In a high-level language, such as C, there are several main approaches. One "
 "is to use a <function role=\"statement\">switch</function> statement which "
@@ -15506,11 +15494,10 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
-#: book.translate.xml:11528
+#: book.translate.xml:11281
 #, no-wrap
 msgid ""
-"\n"
-"\tswitch (state) {\n"
+"switch (state) {\n"
 "\tdefault:\n"
 "\tcase REGULAR:\n"
 "\t\tregular(inputchar);\n"
@@ -15521,41 +15508,37 @@ msgid ""
 "\tcase LF:\n"
 "\t\tlf(inputchar);\n"
 "\t\tbreak;\n"
-"\t}\n"
+"\t}"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11543
+#: book.translate.xml:11294
 msgid ""
 "Another approach is by using an array of function pointers, something like "
 "this:"
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
-#: book.translate.xml:11548
+#: book.translate.xml:11297
 #, no-wrap
-msgid ""
-"\n"
-"\t(output[state])(inputchar);\n"
+msgid "(output[state])(inputchar);"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11552
+#: book.translate.xml:11299
 msgid ""
 "Yet another is to have <varname>state</varname> be a function pointer, set "
 "to point at the appropriate function:"
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
-#: book.translate.xml:11557
+#: book.translate.xml:11303
 #, no-wrap
-msgid ""
-"\n"
-"\t(*state)(inputchar);\n"
+msgid "(*state)(inputchar);"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11560
+#: book.translate.xml:11305
 msgid ""
 "This is the approach we will use in our program because it is very easy to "
 "do in assembly language, and very fast, too. We will simply keep the address "
@@ -15564,15 +15547,13 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
-#: book.translate.xml:11563
+#: book.translate.xml:11311
 #, no-wrap
-msgid ""
-"\n"
-"\tcall\tebx\n"
+msgid "call\tebx"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11567
+#: book.translate.xml:11313
 msgid ""
 "This is possibly faster than hardcoding the address in the code because the "
 "microprocessor does not have to fetch the address from the memory—it is "
@@ -15582,12 +15563,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: book.translate.xml:11578
+#: book.translate.xml:11322
 msgid "Memory Mapped Files"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11580
+#: book.translate.xml:11324
 msgid ""
 "Because our program works on a single file, we cannot use the approach that "
 "worked for us before, i.e., to read from an input file and to write to an "
@@ -15595,7 +15576,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11586
+#: book.translate.xml:11328
 msgid ""
 "<trademark class=\"registered\">UNIX</trademark> allows us to map a file, or "
 "a section of a file, into memory. To do that, we first need to open the file "
@@ -15613,7 +15594,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11602
+#: book.translate.xml:11340
 msgid ""
 "The 32-bit Intel microprocessors can access up to four gigabytes of memory – "
 "physical or virtual. The FreeBSD system allows us to use up to a half of it "
@@ -15621,7 +15602,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11608
+#: book.translate.xml:11345
 msgid ""
 "For simplicity sake, in this tutorial we will only convert files that can be "
 "mapped into the memory in their entirety. There are probably not too many "
@@ -15631,7 +15612,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11617
+#: book.translate.xml:11352
 msgid ""
 "If you examine your copy of <filename>syscalls.master</filename>, you will "
 "find two separate syscalls named <function role=\"syscall\">mmap</function>. "
@@ -15647,23 +15628,22 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11629
+#: book.translate.xml:11364
 msgid ""
-"The <filename>syscalls.master</filename> file lists the <acronym><trademark "
-"class=\"registered\">POSIX</trademark></acronym> version like this:"
+"The <filename>syscalls.master</filename> lists the <acronym><trademark class="
+"\"registered\">POSIX</trademark></acronym> version like this:"
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
-#: book.translate.xml:11634
+#: book.translate.xml:11367
 #, no-wrap
 msgid ""
-"\n"
 "197\tSTD\tBSD\t{ caddr_t mmap(caddr_t addr, size_t len, int prot, \\\n"
-"\t\t\t    int flags, int fd, long pad, off_t pos); }\n"
+"\t\t\t    int flags, int fd, long pad, off_t pos); }"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11639
+#: book.translate.xml:11370
 msgid ""
 "This differs slightly from what <citerefentry><refentrytitle>mmap</"
 "refentrytitle><manvolnum>2</manvolnum></citerefentry> says. That is because "
@@ -15672,7 +15652,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11647
+#: book.translate.xml:11376
 msgid ""
 "The difference is in the <varname>long pad</varname> argument, which is not "
 "present in the C version. However, the FreeBSD syscalls add a 32-bit pad "
@@ -15681,14 +15661,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11650
+#: book.translate.xml:11381
 msgid ""
 "When we are finished working with a memory-mapped file, we unmap it with the "
 "<function role=\"syscall\">munmap</function> syscall:"
 msgstr ""
 
 #. (itstool) path: tip/para
-#: book.translate.xml:11656
+#: book.translate.xml:11385
 msgid ""
 "For an in-depth treatment of <function role=\"syscall\">mmap</function>, see "
 "W. Richard Stevens' <link xlink:href=\"http://www.int80h.org/cgi-bin/isbn?"
@@ -15696,12 +15676,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: book.translate.xml:11667
+#: book.translate.xml:11392
 msgid "Determining File Size"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11669
+#: book.translate.xml:11394
 msgid ""
 "Because we need to tell <function role=\"syscall\">mmap</function> how many "
 "bytes of the file to map into the memory, and because we want to map the "
@@ -15709,7 +15689,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11675
+#: book.translate.xml:11398
 msgid ""
 "We can use the <function role=\"syscall\">fstat</function> syscall to get "
 "all the information about an open file that the system can give us. That "
@@ -15717,7 +15697,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11681
+#: book.translate.xml:11402
 msgid ""
 "Again, <filename>syscalls.master</filename> lists two versions of <function "
 "role=\"syscall\">fstat</function>, a traditional one (syscall 62), and a "
@@ -15727,15 +15707,13 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
-#: book.translate.xml:11689
+#: book.translate.xml:11408
 #, no-wrap
-msgid ""
-"\n"
-"189\tSTD\tPOSIX\t{ int fstat(int fd, struct stat *sb); }\n"
+msgid "189\tSTD\tPOSIX\t{ int fstat(int fd, struct stat *sb); }"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11693
+#: book.translate.xml:11410
 msgid ""
 "This is a very straightforward call: We pass to it the address of a <varname "
 "remap=\"structname\">stat</varname> structure and the descriptor of an open "
@@ -15744,7 +15722,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11700
+#: book.translate.xml:11415
 msgid ""
 "I do, however, have to say that I tried to declare the <varname remap="
 "\"structname\">stat</varname> structure in the <varname>.bss</varname> "
@@ -15754,12 +15732,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: book.translate.xml:11712
+#: book.translate.xml:11424
 msgid "Changing the File Size"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11714
+#: book.translate.xml:11426
 msgid ""
 "Because our program may combine carriage return / line feed sequences into "
 "straight line feeds, our output may be smaller than our input. However, "
@@ -15768,7 +15746,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11722
+#: book.translate.xml:11432
 msgid ""
 "The <function role=\"syscall\">ftruncate</function> system call allows us to "
 "do just that. Despite its somewhat misleading name, the <function role="
@@ -15777,7 +15755,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11729
+#: book.translate.xml:11438
 msgid ""
 "And yes, we will find two versions of <function role=\"syscall\">ftruncate</"
 "function> in <filename>syscalls.master</filename>, an older one (130), and a "
@@ -15785,25 +15763,23 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
-#: book.translate.xml:11736
+#: book.translate.xml:11442
 #, no-wrap
-msgid ""
-"\n"
-"201\tSTD\tBSD\t{ int ftruncate(int fd, int pad, off_t length); }\n"
+msgid "201\tSTD\tBSD\t{ int ftruncate(int fd, int pad, off_t length); }"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11740
+#: book.translate.xml:11444
 msgid "Please note that this one contains a <varname>int pad</varname> again."
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: book.translate.xml:11747
+#: book.translate.xml:11449
 msgid "ftuc"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11749
+#: book.translate.xml:11451
 msgid ""
 "We now know everything we need to write <application>ftuc</application>. We "
 "start by adding some new lines in <filename>system.inc</filename>. First, we "
@@ -15812,10 +15788,9 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
-#: book.translate.xml:11756
+#: book.translate.xml:11457
 #, no-wrap
 msgid ""
-"\n"
 ";;;;;;; open flags\n"
 "%define\tO_RDONLY\t0\n"
 "%define\tO_WRONLY\t1\n"
@@ -15852,35 +15827,33 @@ msgid ""
 "st_gen\t\tresd\t1\t; = 72\n"
 "st_lspare\tresd\t1\t; = 76\n"
 "st_qspare\tresd\t4\t; = 80\n"
-"endstruc\n"
+"endstruc"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11796
+#: book.translate.xml:11495
 msgid "We define the new syscalls:"
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
-#: book.translate.xml:11800
+#: book.translate.xml:11497
 #, no-wrap
 msgid ""
-"\n"
 "%define\tSYS_mmap\t197\n"
 "%define\tSYS_munmap\t73\n"
 "%define\tSYS_fstat\t189\n"
-"%define\tSYS_ftruncate\t201\n"
+"%define\tSYS_ftruncate\t201"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11807
+#: book.translate.xml:11502
 msgid "We add the macros for their use:"
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
-#: book.translate.xml:11811
+#: book.translate.xml:11504
 #, no-wrap
 msgid ""
-"\n"
 "%macro\tsys.mmap\t0\n"
 "\tsystem\tSYS_mmap\n"
 "%endmacro\n"
@@ -15895,19 +15868,18 @@ msgid ""
 "\n"
 "%macro\tsys.fstat\t0\n"
 "\tsystem\tSYS_fstat\n"
-"%endmacro\n"
+"%endmacro"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:11829
+#: book.translate.xml:11520
 msgid "And here is our code:"
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
-#: book.translate.xml:11833
+#: book.translate.xml:11522
 #, no-wrap
 msgid ""
-"\n"
 ";;;;;;; Fast Text-to-Unix Conversion (ftuc.asm) ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\n"
 ";;\n"
 ";; Started:\t21-Dec-2000\n"
@@ -16143,11 +16115,11 @@ msgid ""
 ".lf:\n"
 "\tstosb\n"
 "\tinc\tedx\n"
-"\tret\n"
+"\tret"
 msgstr ""
 
 #. (itstool) path: warning/para
-#: book.translate.xml:12072
+#: book.translate.xml:11760
 msgid ""
 "Do not use this program on files stored on a disk formatted by "
 "<acronym><trademark class=\"registered\">MS-DOS</trademark></acronym> or "
@@ -16159,19 +16131,19 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: book.translate.xml:12087
+#: book.translate.xml:11773
 msgid "One-Pointed Mind"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:12089
+#: book.translate.xml:11775
 msgid ""
 "As a student of Zen, I like the idea of a one-pointed mind: Do one thing at "
 "a time, and do it well."
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:12094
+#: book.translate.xml:11778
 msgid ""
 "This, indeed, is very much how <trademark class=\"registered\">UNIX</"
 "trademark> works as well. While a typical <trademark class=\"registered"
@@ -16182,7 +16154,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:12102
+#: book.translate.xml:11783
 msgid ""
 "The typical <trademark class=\"registered\">UNIX</trademark> user then "
 "essentially assembles his own applications by writing a shell script which "
@@ -16191,7 +16163,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:12109
+#: book.translate.xml:11788
 msgid ""
 "When writing your own <trademark class=\"registered\">UNIX</trademark> "
 "software, it is generally a good idea to see what parts of the problem you "
@@ -16201,19 +16173,19 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: book.translate.xml:12117
+#: book.translate.xml:11795
 msgid "CSV"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12119
+#: book.translate.xml:11797
 msgid ""
 "I will illustrate this principle with a specific real-life example I was "
 "faced with recently:"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12124
+#: book.translate.xml:11800
 msgid ""
 "I needed to extract the 11th field of each record from a database I "
 "downloaded from a web site. The database was a <acronym>CSV</acronym> file, "
@@ -16223,7 +16195,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12133
+#: book.translate.xml:11807
 msgid ""
 "The first line of the file contains the list of various fields separated by "
 "commas. The rest of the file contains the data listed line by line, with "
@@ -16231,7 +16203,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12139
+#: book.translate.xml:11812
 msgid ""
 "I tried <application>awk</application>, using the comma as a separator. But "
 "because several lines contained a quoted comma, <application>awk</"
@@ -16239,7 +16211,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12146
+#: book.translate.xml:11817
 msgid ""
 "Therefore, I needed to write my own software to extract the 11th field from "
 "the <acronym>CSV</acronym> file. However, going with the <trademark class="
@@ -16248,22 +16220,22 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:12155
+#: book.translate.xml:11824
 msgid "Remove the first line from the file;"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:12161
+#: book.translate.xml:11828
 msgid "Change all unquoted commas to a different character;"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:12167
+#: book.translate.xml:11833
 msgid "Remove all quotation marks."
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12173
+#: book.translate.xml:11837
 msgid ""
 "Strictly speaking, I could use <application>sed</application> to remove the "
 "first line from the file, but doing so in my own program was very easy, so I "
@@ -16271,7 +16243,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12180
+#: book.translate.xml:11842
 msgid ""
 "At any rate, writing a program like this took me about 20 minutes. Writing a "
 "program that extracts the 11th field from the <acronym>CSV</acronym> file "
@@ -16280,45 +16252,45 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12188
+#: book.translate.xml:11848
 msgid ""
 "This time I decided to let it do a little more work than a typical tutorial "
 "program would:"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:12195
+#: book.translate.xml:11853
 msgid "It parses its command line for options;"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:12201
+#: book.translate.xml:11857
 msgid "It displays proper usage if it finds wrong arguments;"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:12207
+#: book.translate.xml:11862
 msgid "It produces meaningful error messages."
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12213
+#: book.translate.xml:11866
 msgid "Here is its usage message:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
-#: book.translate.xml:12217
+#: book.translate.xml:11868
 #, no-wrap
 msgid "Usage: csv [-t&lt;delim&gt;] [-c&lt;comma&gt;] [-p] [-o &lt;outfile&gt;] [-i &lt;infile&gt;]"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12219
+#: book.translate.xml:11870
 msgid "All parameters are optional, and can appear in any order."
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12223
+#: book.translate.xml:11873
 msgid ""
 "The <parameter>-t</parameter> parameter declares what to replace the commas "
 "with. The <constant>tab</constant> is the default here. For example, "
@@ -16326,7 +16298,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12230
+#: book.translate.xml:11878
 msgid ""
 "I did not need the <parameter>-c</parameter> option, but it may come in "
 "handy in the future. It lets me declare that I want a character other than a "
@@ -16336,7 +16308,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12239
+#: book.translate.xml:11885
 msgid ""
 "The <parameter>-p</parameter> option preserves the first line, i.e., it does "
 "not delete it. By default, we delete the first line because in a "
@@ -16344,7 +16316,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12246
+#: book.translate.xml:11890
 msgid ""
 "The <parameter>-i</parameter> and <parameter>-o</parameter> options let me "
 "specify the input and the output files. Defaults are <filename>stdin</"
@@ -16353,7 +16325,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12253
+#: book.translate.xml:11896
 msgid ""
 "I made sure that both <parameter>-i filename</parameter> and <parameter>-"
 "ifilename</parameter> are accepted. I also made sure that only one input and "
@@ -16361,18 +16333,18 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12260
+#: book.translate.xml:11901
 msgid "To get the 11th field of each record, I can now do:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
-#: book.translate.xml:12264
+#: book.translate.xml:11903
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>csv '-t;' <replaceable>data.csv</replaceable> | awk '-F;' '{print $11}'</userinput>"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12266
+#: book.translate.xml:11905
 msgid ""
 "The code stores the options (except for the file descriptors) in <varname "
 "role=\"register\">EDX</varname>: The comma in <varname role=\"register\">DH</"
@@ -16383,15 +16355,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12275
+#: book.translate.xml:11913
 msgid "Here is the code:"
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
-#: book.translate.xml:12279
+#: book.translate.xml:11915
 #, no-wrap
 msgid ""
-"\n"
 ";;;;;;; csv.asm ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\n"
 ";\n"
 "; Convert a comma-separated file to a something-else separated file.\n"
@@ -16662,11 +16633,11 @@ msgid ""
 "\tsub\teax, eax\n"
 "\tsub\tecx, ecx\t; buffer is empty now\n"
 ".ret:\n"
-"\tret\n"
+"\tret"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12553
+#: book.translate.xml:12187
 msgid ""
 "Much of it is taken from <filename>hex.asm</filename> above. But there is "
 "one important difference: I no longer call <function>write</function> "
@@ -16675,7 +16646,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12560
+#: book.translate.xml:12192
 msgid ""
 "I have found a better solution for the interactive problem since I first "
 "started writing this chapter. I wanted to make sure each line is printed out "
@@ -16684,7 +16655,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12568
+#: book.translate.xml:12198
 msgid ""
 "The new solution I use now is to call <function>write</function> every time "
 "I find the input buffer empty. That way, when running in the interactive "
@@ -16694,12 +16665,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/title
-#: book.translate.xml:12577
+#: book.translate.xml:12206
 msgid "The Dark Side of Buffering"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:12578
+#: book.translate.xml:12208
 msgid ""
 "This change prevents a mysterious lockup in a very specific case. I refer to "
 "it as the <emphasis>dark side of buffering</emphasis>, mostly because it "
@@ -16707,7 +16678,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:12586
+#: book.translate.xml:12213
 msgid ""
 "It is unlikely to happen with a program like the <application>csv</"
 "application> above, so let us consider yet another filter: In this case we "
@@ -16718,7 +16689,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:12596
+#: book.translate.xml:12221
 msgid ""
 "Such a filter would be very simple to write. Most of it would look just like "
 "all the other filters we have written so far, so I am only going to show you "
@@ -16726,26 +16697,25 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/programlisting
-#: book.translate.xml:12603
+#: book.translate.xml:12226
 #, no-wrap
 msgid ""
-"\n"
 ".loop:\n"
 "\tcall\tgetchar\n"
 "\tnot\tal\t\t; Create a negative\n"
 "\tcall\tputchar\n"
-"\tjmp\tshort .loop\n"
+"\tjmp\tshort .loop"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:12610
+#: book.translate.xml:12232
 msgid ""
 "Because this filter works with raw data, it is unlikely to be used "
 "interactively."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:12615
+#: book.translate.xml:12235
 msgid ""
 "But it could be called by image manipulation software. And, unless it calls "
 "<function>write</function> before each call to <function>read</function>, "
@@ -16753,65 +16723,65 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:12621
+#: book.translate.xml:12240
 msgid "Here is what might happen:"
 msgstr ""
 
 #. (itstool) path: step/para
-#: book.translate.xml:12625
+#: book.translate.xml:12244
 msgid ""
 "The image editor will load our filter using the C function "
 "<function>popen()</function>."
 msgstr ""
 
 #. (itstool) path: step/para
-#: book.translate.xml:12630
+#: book.translate.xml:12249
 msgid "It will read the first row of pixels from a bitmap or pixmap."
 msgstr ""
 
 #. (itstool) path: step/para
-#: book.translate.xml:12635
+#: book.translate.xml:12254
 msgid ""
 "It will write the first row of pixels to the <emphasis>pipe</emphasis> "
 "leading to the <varname>fd.in</varname> of our filter."
 msgstr ""
 
 #. (itstool) path: step/para
-#: book.translate.xml:12641
+#: book.translate.xml:12260
 msgid ""
 "Our filter will read each pixel from its input, turn it to a negative, and "
 "write it to its output buffer."
 msgstr ""
 
 #. (itstool) path: step/para
-#: book.translate.xml:12647
+#: book.translate.xml:12266
 msgid ""
 "Our filter will call <function>getchar</function> to fetch the next pixel."
 msgstr ""
 
 #. (itstool) path: step/para
-#: book.translate.xml:12652
+#: book.translate.xml:12271
 msgid ""
 "<function>getchar</function> will find an empty input buffer, so it will "
 "call <function>read</function>."
 msgstr ""
 
 #. (itstool) path: step/para
-#: book.translate.xml:12658
+#: book.translate.xml:12277
 msgid ""
 "<function>read</function> will call the <function role=\"syscall\">SYS_read</"
 "function> system call."
 msgstr ""
 
 #. (itstool) path: step/para
-#: book.translate.xml:12663
+#: book.translate.xml:12282
 msgid ""
 "The <emphasis>kernel</emphasis> will suspend our filter until the image "
 "editor sends more data to the pipe."
 msgstr ""
 
 #. (itstool) path: step/para
-#: book.translate.xml:12669
+#: book.translate.xml:12288
 msgid ""
 "The image editor will read from the other pipe, connected to the <varname>fd."
 "out</varname> of our filter so it can set the first row of the output image "
@@ -16819,14 +16789,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: step/para
-#: book.translate.xml:12677
+#: book.translate.xml:12296
 msgid ""
 "The <emphasis>kernel</emphasis> suspends the image editor until it receives "
 "some output from our filter, so it can pass it on to the image editor."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:12685
+#: book.translate.xml:12302
 msgid ""
 "At this point our filter waits for the image editor to send it more data to "
 "process, while the image editor is waiting for our filter to send it the "
@@ -16835,7 +16805,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:12694
+#: book.translate.xml:12308
 msgid ""
 "The filter and the image editor will continue waiting for each other forever "
 "(or, at least, until they are killed). Our software has just entered a <link "
@@ -16843,7 +16813,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:12702
+#: book.translate.xml:12313
 msgid ""
 "This problem does not exist if our filter flushes its output buffer "
 "<emphasis>before</emphasis> asking the <emphasis>kernel</emphasis> for more "
@@ -16851,12 +16821,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: book.translate.xml:12715
+#: book.translate.xml:12321
 msgid "Using the <acronym>FPU</acronym>"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:12716
+#: book.translate.xml:12323
 msgid ""
 "Strangely enough, most of assembly language literature does not even mention "
 "the existence of the <acronym>FPU</acronym>, or <emphasis>floating point "
@@ -16864,7 +16834,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:12723
+#: book.translate.xml:12328
 msgid ""
 "Yet, never does assembly language shine more than when we create highly "
 "optimized <acronym>FPU</acronym> code by doing things that can be done "
@@ -16872,12 +16842,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: book.translate.xml:12728
+#: book.translate.xml:12334
 msgid "Organization of the <acronym>FPU</acronym>"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12729
+#: book.translate.xml:12336
 msgid ""
 "The <acronym>FPU</acronym> consists of 8 80–bit floating–point registers. "
 "These are organized in a stack fashion—you can <function>push</function> a "
@@ -16886,7 +16856,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12737
+#: book.translate.xml:12343
 msgid ""
 "That said, the assembly language op codes are not <function role=\"opcode"
 "\">push</function> and <function role=\"opcode\">pop</function> because "
@@ -16894,7 +16864,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12741
+#: book.translate.xml:12347
 msgid ""
 "You can <function>push</function> a value on <acronym>TOS</acronym> by using "
 "<function role=\"opcode\">fld</function>, <function role=\"opcode\">fild</"
@@ -16904,7 +16874,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12750
+#: book.translate.xml:12354
 msgid ""
 "Similarly, you can <function>pop</function> a value by using <function role="
 "\"opcode\">fst</function>, <function role=\"opcode\">fstp</function>, "
@@ -16916,7 +16886,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12762
+#: book.translate.xml:12361
 msgid ""
 "We can transfer the data between the <acronym>TOS</acronym> and the computer "
 "memory either as a 32–bit, 64–bit, or 80–bit <emphasis>real</emphasis>, a 16–"
@@ -16925,7 +16895,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12770
+#: book.translate.xml:12368
 msgid ""
 "The 80–bit <emphasis>packed decimal</emphasis> is a special case of "
 "<emphasis>binary coded decimal</emphasis> which is very convenient when "
@@ -16935,7 +16905,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12780
+#: book.translate.xml:12375
 msgid ""
 "No matter how we represent data in the memory, the <acronym>FPU</acronym> "
 "always stores it in the 80–bit <emphasis>real</emphasis> format in its "
@@ -16943,7 +16913,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12786
+#: book.translate.xml:12379
 msgid ""
 "Its internal precision is at least 19 decimal digits, so even if we choose "
 "to display results as <acronym>ASCII</acronym> in the full 18–digit "
@@ -16951,7 +16921,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12794
+#: book.translate.xml:12384
 msgid ""
 "We can perform mathematical operations on the <acronym>TOS</acronym>: We can "
 "calculate its <emphasis>sine</emphasis>, we can <emphasis>scale</emphasis> "
@@ -16960,7 +16930,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12803
+#: book.translate.xml:12392
 msgid ""
 "We can also <emphasis>multiply</emphasis> or <emphasis>divide</emphasis> it "
 "by, <emphasis>add</emphasis> it to, or <emphasis>subtract</emphasis> it "
@@ -16968,7 +16938,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12811
+#: book.translate.xml:12397
 msgid ""
 "The official Intel op code for the <acronym>TOS</acronym> is <varname role="
 "\"register\">st</varname>, and for the <emphasis>registers</emphasis> "
@@ -16978,7 +16948,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12820
+#: book.translate.xml:12402
 msgid ""
 "For whatever reasons, the original author of <application>nasm</application> "
 "has decided to use different op codes, namely <varname role=\"register"
@@ -16989,12 +16959,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/title
-#: book.translate.xml:12831
+#: book.translate.xml:12410
 msgid "The Packed Decimal Format"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:12832
+#: book.translate.xml:12412
 msgid ""
 "The <emphasis>packed decimal</emphasis> format uses 10 bytes (80 bits) of "
 "memory to represent 18 digits. The number represented there is always an "
@@ -17002,14 +16972,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: tip/para
-#: book.translate.xml:12841
+#: book.translate.xml:12418
 msgid ""
 "You can use it to get decimal places by multiplying the <acronym>TOS</"
 "acronym> by a power of 10 first."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:12848
+#: book.translate.xml:12423
 msgid ""
 "The highest bit of the highest byte (byte 9) is the <emphasis>sign bit</"
 "emphasis>: If it is set, the number is <emphasis>negative</emphasis>, "
@@ -17018,13 +16988,13 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:12856
+#: book.translate.xml:12429
 msgid ""
 "The remaining 9 bytes store the 18 digits of the number: 2 digits per byte."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:12860
+#: book.translate.xml:12432
 msgid ""
 "The <emphasis>more significant digit</emphasis> is stored in the high "
 "<emphasis>nibble</emphasis> (4 bits), the <emphasis>less significant digit</"
@@ -17032,47 +17002,43 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:12867
+#: book.translate.xml:12437
 msgid ""
 "That said, you might think that <constant>-1234567</constant> would be "
 "stored in the memory like this (using hexadecimal notation):"
 msgstr ""
 
 #. (itstool) path: sect3/programlisting
-#: book.translate.xml:12873
+#: book.translate.xml:12441
 #, no-wrap
-msgid ""
-"\n"
-"80 00 00 00 00 00 01 23 45 67\n"
+msgid "80 00 00 00 00 00 01 23 45 67"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:12876
+#: book.translate.xml:12443
 msgid ""
 "Alas it is not! As with everything else of Intel make, even the "
 "<emphasis>packed decimal</emphasis> is <emphasis>little–endian</emphasis>."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:12881
+#: book.translate.xml:12447
 msgid "That means our <constant>-1234567</constant> is stored like this:"
 msgstr ""
 
 #. (itstool) path: sect3/programlisting
-#: book.translate.xml:12886
+#: book.translate.xml:12450
 #, no-wrap
-msgid ""
-"\n"
-"67 45 23 01 00 00 00 00 00 80\n"
+msgid "67 45 23 01 00 00 00 00 00 80"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:12889
+#: book.translate.xml:12452
 msgid "Remember that, or you will be pulling your hair out in desperation!"
 msgstr ""
 
 #. (itstool) path: note/para
-#: book.translate.xml:12895
+#: book.translate.xml:12456
 msgid ""
 "The book to read—if you can find it—is Richard Startz' <link xlink:href="
 "\"http://www.amazon.com/exec/obidos/ASIN/013246604X/whizkidtechnomag"
@@ -17085,19 +17051,19 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: book.translate.xml:12914
+#: book.translate.xml:12471
 msgid "Excursion to Pinhole Photography"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12915
+#: book.translate.xml:12473
 msgid ""
 "To write meaningful software, we must not only understand our programming "
 "tools, but also the field we are creating software for."
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:12921
+#: book.translate.xml:12477
 msgid ""
 "Our next filter will help us whenever we want to build a <emphasis>pinhole "
 "camera</emphasis>, so, we need some background in <emphasis>pinhole "
@@ -17105,19 +17071,19 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/title
-#: book.translate.xml:12929
+#: book.translate.xml:12483
 msgid "The Camera"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:12930
+#: book.translate.xml:12485
 msgid ""
 "The easiest way to describe any camera ever built is as some empty space "
 "enclosed in some lightproof material, with a small hole in the enclosure."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:12937
+#: book.translate.xml:12489
 msgid ""
 "The enclosure is usually sturdy (e.g., a box), though sometimes it is "
 "flexible (the bellows). It is quite dark inside the camera. However, the "
@@ -17127,26 +17093,26 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:12948
+#: book.translate.xml:12497
 msgid ""
 "If some light sensitive material (such as film) is placed inside the camera, "
 "it can capture the image."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:12953
+#: book.translate.xml:12500
 msgid ""
 "The hole often contains a <emphasis>lens</emphasis>, or a lens assembly, "
 "often called the <emphasis>objective</emphasis>."
 msgstr ""
 
 #. (itstool) path: sect3/title
-#: book.translate.xml:12961
+#: book.translate.xml:12506
 msgid "The Pinhole"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:12962
+#: book.translate.xml:12508
 msgid ""
 "But, strictly speaking, the lens is not necessary: The original cameras did "
 "not use a lens but a <emphasis>pinhole</emphasis>. Even today, "
@@ -17155,7 +17121,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:12970
+#: book.translate.xml:12515
 msgid ""
 "The image produced by the <emphasis>pinhole</emphasis> is all equally sharp. "
 "Or <emphasis>blurred</emphasis>. There is an ideal size for a pinhole: If it "
@@ -17163,12 +17129,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/title
-#: book.translate.xml:12980
+#: book.translate.xml:12522
 msgid "Focal Length"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:12981
+#: book.translate.xml:12524
 msgid ""
 "This ideal pinhole diameter is a function of the square root of "
 "<emphasis>focal length</emphasis>, which is the distance of the pinhole from "
@@ -17176,15 +17142,13 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/programlisting
-#: book.translate.xml:12988
+#: book.translate.xml:12528
 #, no-wrap
-msgid ""
-"\n"
-"\tD = PC * sqrt(FL)\n"
+msgid "D = PC * sqrt(FL)"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:12991
+#: book.translate.xml:12530
 msgid ""
 "In here, <varname>D</varname> is the ideal diameter of the pinhole, "
 "<varname>FL</varname> is the focal length, and <constant>PC</constant> is a "
@@ -17196,40 +17160,38 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/title
-#: book.translate.xml:13010
+#: book.translate.xml:12543
 msgid "The F–Number"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13011
+#: book.translate.xml:12545
 msgid ""
 "The f–number is a very useful measure of how much light reaches the film. A "
 "light meter can determine that, for example, to expose a film of specific "
-"sensitivity with f5.6 may require the exposure to last 1/1000 sec."
+"sensitivity with f5.6 mkay require the exposure to last 1/1000 sec."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13019
+#: book.translate.xml:12551
 msgid ""
 "It does not matter whether it is a 35–mm camera, or a 6x9cm camera, etc. As "
 "long as we know the f–number, we can determine the proper exposure."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13026
+#: book.translate.xml:12556
 msgid "The f–number is easy to calculate:"
 msgstr ""
 
 #. (itstool) path: sect3/programlisting
-#: book.translate.xml:13030
+#: book.translate.xml:12558
 #, no-wrap
-msgid ""
-"\n"
-"\tF = FL / D\n"
+msgid "F = FL / D"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13033
+#: book.translate.xml:12560
 msgid ""
 "In other words, the f–number equals the focal length divided by the diameter "
 "of the pinhole. It also means a higher f–number either implies a smaller "
@@ -17238,7 +17200,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13042
+#: book.translate.xml:12567
 msgid ""
 "Furthermore, while pinhole diameter and focal distance are one–dimensional "
 "measurements, both, the film and the pinhole, are two–dimensional. That "
@@ -17248,34 +17210,32 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/programlisting
-#: book.translate.xml:13051
+#: book.translate.xml:12574
 #, no-wrap
-msgid ""
-"\n"
-"\tt * (B / A)²\n"
+msgid "t * (B / A)²"
 msgstr ""
 
 #. (itstool) path: sect3/title
-#: book.translate.xml:13057
+#: book.translate.xml:12578
 msgid "Normalized F–Number"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13058
+#: book.translate.xml:12580
 msgid ""
 "While many modern cameras can change the diameter of their pinhole, and thus "
 "their f–number, quite smoothly and gradually, such was not always the case."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13064
+#: book.translate.xml:12585
 msgid ""
 "To allow for different f–numbers, cameras typically contained a metal plate "
 "with several holes of different sizes drilled to them."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13070
+#: book.translate.xml:12589
 msgid ""
 "Their sizes were chosen according to the above formula in such a way that "
 "the resultant f–number was one of standard f–numbers used on all cameras "
@@ -17284,21 +17244,21 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13079
+#: book.translate.xml:12596
 msgid ""
 "A more recently made camera may offer f–numbers of 2.8, 4, 5.6, 8, 11, 16, "
 "22, and 32 (as well as others). These numbers were not chosen arbitrarily: "
 "They all are powers of the square root of 2, though they may be rounded "
-"somewhat."
+"somewha."
 msgstr ""
 
 #. (itstool) path: sect3/title
-#: book.translate.xml:13091
+#: book.translate.xml:12604
 msgid "The F–Stop"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13092
+#: book.translate.xml:12606
 msgid ""
 "A typical camera is designed in such a way that setting any of the "
 "normalized f–numbers changes the feel of the dial. It will naturally "
@@ -17307,7 +17267,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13099
+#: book.translate.xml:12613
 msgid ""
 "Since the f–numbers at each stop are powers of the square root of 2, moving "
 "the dial by 1 stop will double the amount of light required for proper "
@@ -17316,23 +17276,23 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: book.translate.xml:13114
+#: book.translate.xml:12623
 msgid "Designing the Pinhole Software"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:13115
+#: book.translate.xml:12625
 msgid ""
 "We are now ready to decide what exactly we want our pinhole software to do."
 msgstr ""
 
 #. (itstool) path: sect3/title
-#: book.translate.xml:13121
+#: book.translate.xml:12629
 msgid "Processing Program Input"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13122
+#: book.translate.xml:12631
 msgid ""
 "Since its main purpose is to help us design a working pinhole camera, we "
 "will use the <emphasis>focal length</emphasis> as the input to the program. "
@@ -17342,7 +17302,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13132
+#: book.translate.xml:12639
 msgid ""
 "Most of the programs we have written so far worked with individual "
 "characters, or bytes, as their input: The <application>hex</application> "
@@ -17352,21 +17312,21 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13141
+#: book.translate.xml:12647
 msgid ""
 "One program, <application>ftuc</application> used the state machine to "
 "consider at most two input bytes at a time."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13146
+#: book.translate.xml:12651
 msgid ""
 "But our <application>pinhole</application> program cannot just work with "
 "individual characters, it has to deal with larger syntactic units."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13152
+#: book.translate.xml:12655
 msgid ""
 "For example, if we want the program to calculate the pinhole diameter (and "
 "other values we will discuss later) at the focal lengths of <constant>100 "
@@ -17375,13 +17335,13 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/screen
-#: book.translate.xml:13159
+#: book.translate.xml:12662
 #, no-wrap
 msgid "<userinput>100, 150, 210</userinput>"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13160
+#: book.translate.xml:12664
 msgid ""
 "Our program needs to consider more than a single byte of input at a time. "
 "When it sees the first <constant>1</constant>, it must understand it is "
@@ -17391,7 +17351,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13169
+#: book.translate.xml:12672
 msgid ""
 "When it encounters the first comma, it must know it is no longer receiving "
 "the digits of the first number. It must be able to convert the digits of the "
@@ -17402,7 +17362,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13179
+#: book.translate.xml:12681
 msgid ""
 "We need to decide what delimiters to accept: Do the input numbers have to be "
 "separated by a comma? If so, how do we treat two numbers separated by "
@@ -17410,7 +17370,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13185
+#: book.translate.xml:12686
 msgid ""
 "Personally, I like to keep it simple. Something either is a number, so I "
 "process it. Or it is not a number, so I discard it. I do not like the "
@@ -17419,25 +17379,27 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13193
+#: book.translate.xml:12693
 msgid ""
 "Plus, it allows me to break up the monotony of computing and type in a query "
 "instead of just a number:"
 msgstr ""
 
 #. (itstool) path: sect3/screen
-#: book.translate.xml:13198
+#: book.translate.xml:12697
 #, no-wrap
-msgid "<userinput>What is the best pinhole diameter for the focal length of 150?</userinput>"
+msgid ""
+"<userinput>What is the best pinhole diameter for the\n"
+"\t    focal length of 150?</userinput>"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13199
+#: book.translate.xml:12700
 msgid "There is no reason for the computer to spit out a number of complaints:"
 msgstr ""
 
 #. (itstool) path: sect3/screen
-#: book.translate.xml:13204
+#: book.translate.xml:12703
 #, no-wrap
 msgid ""
 "Syntax error: What\n"
@@ -17447,12 +17409,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13208
+#: book.translate.xml:12708
 msgid "Et cetera, et cetera, et cetera."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13211
+#: book.translate.xml:12710
 msgid ""
 "Secondly, I like the <constant>#</constant> character to denote the start of "
 "a comment which extends to the end of the line. This does not take too much "
@@ -17461,7 +17423,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13219
+#: book.translate.xml:12716
 msgid ""
 "In our case, we also need to decide what units the input should come in: We "
 "choose <emphasis>millimeters</emphasis> because that is how most "
@@ -17469,7 +17431,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13226
+#: book.translate.xml:12721
 msgid ""
 "Finally, we need to decide whether to allow the use of the decimal point (in "
 "which case we must also consider the fact that much of the world uses a "
@@ -17477,7 +17439,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13232
+#: book.translate.xml:12726
 msgid ""
 "In our case allowing for the decimal point/comma would offer a false sense "
 "of precision: There is little if any noticeable difference between the focus "
@@ -17488,12 +17450,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/title
-#: book.translate.xml:13247
+#: book.translate.xml:12738
 msgid "Offering Options"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13248
+#: book.translate.xml:12740
 msgid ""
 "The most important thing we need to know when building a pinhole camera is "
 "the diameter of the pinhole. Since we want to shoot sharp images, we will "
@@ -17503,7 +17465,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13257
+#: book.translate.xml:12748
 msgid ""
 "It is traditional in <trademark class=\"registered\">UNIX</trademark> "
 "programming to have two main ways of choosing program parameters, plus to "
@@ -17511,12 +17473,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13263
+#: book.translate.xml:12753
 msgid "Why have two ways of choosing?"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13266
+#: book.translate.xml:12755
 msgid ""
 "One is to allow a (relatively) <emphasis>permanent</emphasis> choice that "
 "applies automatically each time the software is run without us having to "
@@ -17524,7 +17486,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13273
+#: book.translate.xml:12761
 msgid ""
 "The permanent choices may be stored in a configuration file, typically found "
 "in the user's home directory. The file usually has the same name as the "
@@ -17535,7 +17497,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13284
+#: book.translate.xml:12771
 msgid ""
 "The configuration file is used mostly by programs that have many "
 "configurable parameters. Those that have only one (or a few) often use a "
@@ -17545,7 +17507,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13294
+#: book.translate.xml:12779
 msgid ""
 "Usually, a program uses one or the other of the above methods. Otherwise, if "
 "a configuration file said one thing, but an environment variable another, "
@@ -17553,7 +17515,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13302
+#: book.translate.xml:12784
 msgid ""
 "Because we only need to choose <emphasis>one</emphasis> such parameter, we "
 "will go with the second method and search the environment for a variable "
@@ -17561,7 +17523,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13308
+#: book.translate.xml:12789
 msgid ""
 "The other way allows us to make <emphasis>ad hoc</emphasis> decisions: "
 "<emphasis>\"Though I usually want you to use 0.039, this time I want 0.03872."
@@ -17570,12 +17532,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13316
+#: book.translate.xml:12795
 msgid "This type of choice is usually done with command line parameters."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13321
+#: book.translate.xml:12798
 msgid ""
 "Finally, a program <emphasis>always</emphasis> needs a <emphasis>default</"
 "emphasis>. The user may not make any choices. Perhaps he does not know what "
@@ -17585,14 +17547,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13333
+#: book.translate.xml:12806
 msgid ""
 "Given this system, the program may find conflicting options, and handle them "
 "this way:"
 msgstr ""
 
 #. (itstool) path: step/para
-#: book.translate.xml:13338
+#: book.translate.xml:12811
 msgid ""
 "If it finds an <emphasis>ad hoc</emphasis> choice (e.g., command line "
 "parameter), it should accept that choice. It must ignore any permanent "
@@ -17600,26 +17562,26 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: step/para
-#: book.translate.xml:13345
+#: book.translate.xml:12818
 msgid ""
 "<emphasis>Otherwise</emphasis>, if it finds a permanent option (e.g., an "
 "environment variable), it should accept it, and ignore the default."
 msgstr ""
 
 #. (itstool) path: step/para
-#: book.translate.xml:13351
+#: book.translate.xml:12824
 msgid "<emphasis>Otherwise</emphasis>, it should use the default."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13357
+#: book.translate.xml:12829
 msgid ""
 "We also need to decide what <emphasis>format</emphasis> our <constant>PC</"
 "constant> option should have."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13362
+#: book.translate.xml:12833
 msgid ""
 "At first site, it seems obvious to use the <varname>PINHOLE=0.04</varname> "
 "format for the environment variable, and <parameter>-p0.04</parameter> for "
@@ -17627,7 +17589,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13369
+#: book.translate.xml:12838
 msgid ""
 "Allowing that is actually a security risk. The <constant>PC</constant> "
 "constant is a very small number. Naturally, we will test our software using "
@@ -17636,14 +17598,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13378
+#: book.translate.xml:12844
 msgid ""
 "It may crash the program because we have not designed it to handle huge "
 "numbers."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13383
+#: book.translate.xml:12847
 msgid ""
 "Or, we may spend more time on the program so it can handle huge numbers. We "
 "might do that if we were writing commercial software for computer illiterate "
@@ -17651,14 +17613,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13390
+#: book.translate.xml:12852
 msgid ""
 "Or, we might say, <emphasis>\"Tough! The user should know better.\"\"</"
 "emphasis>"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13395
+#: book.translate.xml:12855
 msgid ""
 "Or, we just may make it impossible for the user to enter a huge number. This "
 "is the approach we will take: We will use an <emphasis>implied 0.</emphasis> "
@@ -17666,7 +17628,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13402
+#: book.translate.xml:12860
 msgid ""
 "In other words, if the user wants <constant>0.04</constant>, we will expect "
 "him to type <parameter>-p04</parameter>, or set <varname>PINHOLE=04</"
@@ -17676,7 +17638,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13411
+#: book.translate.xml:12868
 msgid ""
 "Secondly, many users will just want to go with either Bender's constant or "
 "Connors' constant. To make it easier on them, we will interpret <parameter>-"
@@ -17685,19 +17647,19 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/title
-#: book.translate.xml:13422
+#: book.translate.xml:12877
 msgid "The Output"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13423
+#: book.translate.xml:12879
 msgid ""
 "We need to decide what we want our software to send to the output, and in "
 "what format."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13428
+#: book.translate.xml:12882
 msgid ""
 "Since our input allows for an unspecified number of focal length entries, it "
 "makes sense to use a traditional database–style output of showing the result "
@@ -17706,7 +17668,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13438
+#: book.translate.xml:12889
 msgid ""
 "Optionally, we should also allow the user to specify the use of the "
 "<acronym>CSV</acronym> format we have studied earlier. In this case, we will "
@@ -17716,7 +17678,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13447
+#: book.translate.xml:12897
 msgid ""
 "We need a command line option for the <acronym>CSV</acronym> format. We "
 "cannot use <parameter>-c</parameter> because that already means "
@@ -17728,7 +17690,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13459
+#: book.translate.xml:12909
 msgid ""
 "We will start each line of the output with the focal length. This may sound "
 "repetitious at first, especially in the interactive mode: The user types in "
@@ -17736,7 +17698,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13466
+#: book.translate.xml:12914
 msgid ""
 "But the user can type several focal lengths on one line. The input can also "
 "come in from a file or from the output of another program. In that case the "
@@ -17744,69 +17706,69 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13473
+#: book.translate.xml:12919
 msgid ""
 "By the same token, the output can go to a file which we will want to examine "
 "later, or it could go to the printer, or become the input of another program."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13480
+#: book.translate.xml:12923
 msgid ""
 "So, it makes perfect sense to start each line with the focal length as "
 "entered by the user."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13485
+#: book.translate.xml:12926
 msgid ""
 "No, wait! Not as entered by the user. What if the user types in something "
 "like this:"
 msgstr ""
 
 #. (itstool) path: sect3/screen
-#: book.translate.xml:13489
+#: book.translate.xml:12929
 #, no-wrap
 msgid "<userinput>00000000150</userinput>"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13490
+#: book.translate.xml:12931
 msgid "Clearly, we need to strip those leading zeros."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13493
+#: book.translate.xml:12933
 msgid ""
 "So, we might consider reading the user input as is, converting it to binary "
 "inside the <acronym>FPU</acronym>, and printing it out from there."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13499 book.translate.xml:13921
+#: book.translate.xml:12937 book.translate.xml:13265
 msgid "But..."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13502
+#: book.translate.xml:12939
 msgid "What if the user types something like this:"
 msgstr ""
 
 #. (itstool) path: sect3/screen
-#: book.translate.xml:13506
+#: book.translate.xml:12941
 #, no-wrap
 msgid "<userinput>17459765723452353453534535353530530534563507309676764423</userinput>"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13507
+#: book.translate.xml:12943
 msgid ""
 "Ha! The packed decimal <acronym>FPU</acronym> format lets us input 18–digit "
 "numbers. But the user has entered more than 18 digits. How do we handle that?"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13514
+#: book.translate.xml:12948
 msgid ""
 "Well, we <emphasis>could</emphasis> modify our code to read the first 18 "
 "digits, enter it to the <acronym>FPU</acronym>, then read more, multiply "
@@ -17815,7 +17777,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13522
+#: book.translate.xml:12955
 msgid ""
 "Yes, we could do that. But in <emphasis>this</emphasis> program it would be "
 "ridiculous (in a different one it may be just the thing to do): Even the "
@@ -17824,7 +17786,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13530
+#: book.translate.xml:12962
 msgid ""
 "So, if the user enters such a huge number, he is either bored, or testing "
 "us, or trying to break into the system, or playing games—doing anything but "
@@ -17832,23 +17794,23 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13537
+#: book.translate.xml:12967
 msgid "What will we do?"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13540
+#: book.translate.xml:12969
 msgid "We will slap him in the face, in a manner of speaking:"
 msgstr ""
 
 #. (itstool) path: sect3/screen
-#: book.translate.xml:13543
+#: book.translate.xml:12972
 #, no-wrap
 msgid "17459765723452353453534535353530530534563507309676764423\t???\t???\t???\t???\t???"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13544
+#: book.translate.xml:12974
 msgid ""
 "To achieve that, we will simply ignore any leading zeros. Once we find a non–"
 "zero digit, we will initialize a counter to <constant>0</constant> and start "
@@ -17856,45 +17818,45 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: step/para
-#: book.translate.xml:13551
+#: book.translate.xml:12981
 msgid "Send the digit to the output."
 msgstr ""
 
 #. (itstool) path: step/para
-#: book.translate.xml:13555
+#: book.translate.xml:12985
 msgid ""
 "Append the digit to a buffer we will use later to produce the packed decimal "
 "we can send to the <acronym>FPU</acronym>."
 msgstr ""
 
 #. (itstool) path: step/para
-#: book.translate.xml:13561
+#: book.translate.xml:12991
 msgid "Increase the counter."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13566
+#: book.translate.xml:12995
 msgid ""
 "Now, while we are taking these three steps, we also need to watch out for "
 "one of two conditions:"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:13573
+#: book.translate.xml:13000
 msgid ""
 "If the counter grows above 18, we stop appending to the buffer. We continue "
 "reading the digits and sending them to the output."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:13582
+#: book.translate.xml:13006
 msgid ""
 "If, or rather <emphasis>when</emphasis>, the next input character is not a "
 "digit, we are done inputting for now."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:13589
+#: book.translate.xml:13010
 msgid ""
 "Incidentally, we can simply discard the non–digit, unless it is a "
 "<constant>#</constant>, which we must return to the input stream. It starts "
@@ -17903,14 +17865,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13601
+#: book.translate.xml:13019
 msgid ""
 "That still leaves one possibility uncovered: If all the user enters is a "
 "zero (or several zeros), we will never find a non–zero to display."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13608
+#: book.translate.xml:13023
 msgid ""
 "We can determine this has happened whenever our counter stays at "
 "<constant>0</constant>. In that case we need to send <constant>0</constant> "
@@ -17918,13 +17880,13 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/screen
-#: book.translate.xml:13616
+#: book.translate.xml:13028
 #, no-wrap
 msgid "0\t???\t???\t???\t???\t???"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13617
+#: book.translate.xml:13030
 msgid ""
 "Once we have displayed the focal length and determined it is valid (greater "
 "than <constant>0</constant> but not exceeding 18 digits), we can calculate "
@@ -17932,7 +17894,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13625
+#: book.translate.xml:13035
 msgid ""
 "It is not by coincidence that <emphasis>pinhole</emphasis> contains the word "
 "<emphasis>pin</emphasis>. Indeed, many a pinhole literally is a "
@@ -17941,7 +17903,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13633
+#: book.translate.xml:13041
 msgid ""
 "That is because a typical pinhole is very small. Our formula gets the result "
 "in millimeters. We will multiply it by <constant>1000</constant>, so we can "
@@ -17949,14 +17911,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13640
+#: book.translate.xml:13046
 msgid ""
 "At this point we have yet another trap to face: <emphasis>Too much precision."
 "</emphasis>"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13645
+#: book.translate.xml:13049
 msgid ""
 "Yes, the <acronym>FPU</acronym> was designed for high precision mathematics. "
 "But we are not dealing with high precision mathematics. We are dealing with "
@@ -17964,7 +17926,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13653
+#: book.translate.xml:13054
 msgid ""
 "Suppose we want to convert a truck into a pinhole camera (we would not be "
 "the first ones to do that!). Suppose its box is <constant>12</constant> "
@@ -17976,7 +17938,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13665
+#: book.translate.xml:13064
 msgid ""
 "Put either way, the result is absurdly precise. Our truck is not "
 "<emphasis>exactly</emphasis> <constant>12000</constant> millimeters long. We "
@@ -17986,14 +17948,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: note/para
-#: book.translate.xml:13676
+#: book.translate.xml:13074
 msgid ""
 "I \"only\" used ten digits in the above example. Imagine the absurdity of "
 "going for all 18!"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13682
+#: book.translate.xml:13078
 msgid ""
 "We need to limit the number of significant digits of our result. One way of "
 "doing it is by using an integer representing microns. So, our truck would "
@@ -18003,7 +17965,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13691
+#: book.translate.xml:13087
 msgid ""
 "Additionally, we can decide that no matter how big a result we get, we only "
 "want to display four significant digits (or any other number of them, of "
@@ -18013,45 +17975,45 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13701
+#: book.translate.xml:13094
 msgid ""
 "We, therefore, must devise an algorithm to reduce the number of significant "
 "digits."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13706
+#: book.translate.xml:13097
 msgid ""
 "Here is mine (I think it is awkward—if you know a better one, "
 "<emphasis>please</emphasis>, let me know):"
 msgstr ""
 
 #. (itstool) path: step/para
-#: book.translate.xml:13711
+#: book.translate.xml:13103
 msgid "Initialize a counter to <constant>0</constant>."
 msgstr ""
 
 #. (itstool) path: step/para
-#: book.translate.xml:13715
+#: book.translate.xml:13108
 msgid ""
 "While the number is greater than or equal to <constant>10000</constant>, "
 "divide it by <constant>10</constant> and increase the counter."
 msgstr ""
 
 #. (itstool) path: step/para
-#: book.translate.xml:13721
+#: book.translate.xml:13115
 msgid "Output the result."
 msgstr ""
 
 #. (itstool) path: step/para
-#: book.translate.xml:13724
+#: book.translate.xml:13119
 msgid ""
 "While the counter is greater than <constant>0</constant>, output "
 "<constant>0</constant> and decrease the counter."
 msgstr ""
 
 #. (itstool) path: note/para
-#: book.translate.xml:13731
+#: book.translate.xml:13126
 msgid ""
 "The <constant>10000</constant> is only good if you want <emphasis>four</"
 "emphasis> significant digits. For any other number of significant digits, "
@@ -18060,14 +18022,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13740
+#: book.translate.xml:13133
 msgid ""
 "We will, then, output the pinhole diameter in microns, rounded off to four "
 "significant digits."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13746
+#: book.translate.xml:13136
 msgid ""
 "At this point, we know the <emphasis>focal length</emphasis> and the "
 "<emphasis>pinhole diameter</emphasis>. That means we have enough information "
@@ -18075,7 +18037,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13754
+#: book.translate.xml:13142
 msgid ""
 "We will display the f–number, rounded to four significant digits. Chances "
 "are the f–number will tell us very little. To make it more meaningful, we "
@@ -18084,7 +18046,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13764
+#: book.translate.xml:13149
 msgid ""
 "We do that by multiplying the actual f–number by itself, which, of course, "
 "will give us its <function>square</function>. We will then calculate its "
@@ -18098,18 +18060,17 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13782
+#: book.translate.xml:13163
 msgid ""
 "If all that sounds overwhelming—or too much work, perhaps—it may become much "
 "clearer if you see the code. It takes 9 op codes altogether:"
 msgstr ""
 
 #. (itstool) path: sect3/programlisting
-#: book.translate.xml:13788
+#: book.translate.xml:13167
 #, no-wrap
 msgid ""
-"\n"
-"\tfmul\tst0, st0\n"
+"fmul\tst0, st0\n"
 "\tfld1\n"
 "\tfld\tst1\n"
 "\tfyl2x\n"
@@ -18117,11 +18078,11 @@ msgid ""
 "\tfld1\n"
 "\tfscale\n"
 "\tfsqrt\n"
-"\tfstp\tst1\n"
+"\tfstp\tst1"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13799
+#: book.translate.xml:13177
 msgid ""
 "The first line, <function role=\"opcode\">fmul st0, st0</function>, squares "
 "the contents of the <acronym>TOS</acronym> (top of the stack, same as "
@@ -18132,7 +18093,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13807
+#: book.translate.xml:13185
 msgid ""
 "The next line, <function role=\"opcode\">fld st1</function>, pushes the "
 "square back to the <acronym>TOS</acronym>. At this point the square is both "
@@ -18143,7 +18104,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13817
+#: book.translate.xml:13193
 msgid ""
 "Next, <function role=\"opcode\">fyl2x</function> calculates base–2 logarithm "
 "of <varname role=\"register\">st</varname> multiplied by <varname role="
@@ -18152,7 +18113,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13822
+#: book.translate.xml:13198
 msgid ""
 "At this point, <varname role=\"register\">st</varname> contains the "
 "logarithm we have just calculated, <varname role=\"register\">st(1)</"
@@ -18160,7 +18121,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13829
+#: book.translate.xml:13202
 msgid ""
 "<function role=\"opcode\">frndint</function> rounds the <acronym>TOS</"
 "acronym> to the nearest integer. <function role=\"opcode\">fld1</function> "
@@ -18171,14 +18132,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13838
+#: book.translate.xml:13209
 msgid ""
 "Finally, <function role=\"opcode\">fsqrt</function> calculates the square "
 "root of the result, i.e., the nearest normalized f–number."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13844
+#: book.translate.xml:13213
 msgid ""
 "We now have the nearest normalized f–number on the <acronym>TOS</acronym>, "
 "the base–2 logarithm rounded to the nearest integer in <varname role="
@@ -18188,7 +18149,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13854
+#: book.translate.xml:13220
 msgid ""
 "But we do not need the contents of <varname role=\"register\">st(1)</"
 "varname> anymore. The last line, <function role=\"opcode\">fstp st1</"
@@ -18203,7 +18164,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13870
+#: book.translate.xml:13231
 msgid ""
 "At this point, we are ready to output the normalized f–number. Because it is "
 "normalized, we will not round it off to four significant digits, but will "
@@ -18211,7 +18172,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13878
+#: book.translate.xml:13236
 msgid ""
 "The normalized f-number is useful as long as it is reasonably small and can "
 "be found on our light meter. Otherwise we need a different method of "
@@ -18219,14 +18180,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13886
+#: book.translate.xml:13241
 msgid ""
 "Earlier we have figured out the formula of calculating proper exposure at an "
 "arbitrary f–number from that measured at a different f–number."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13893
+#: book.translate.xml:13245
 msgid ""
 "Every light meter I have ever seen can determine proper exposure at f5.6. We "
 "will, therefore, calculate an <emphasis>\"f5.6 multiplier,\"</emphasis> i."
@@ -18235,7 +18196,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13902
+#: book.translate.xml:13252
 msgid ""
 "From the above formula we know this factor can be calculated by dividing our "
 "f–number (the actual one, not the normalized one) by <constant>5.6</"
@@ -18243,21 +18204,21 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13909
+#: book.translate.xml:13257
 msgid ""
 "Mathematically, dividing the square of our f–number by the square of "
 "<constant>5.6</constant> will give us the same result."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13915
+#: book.translate.xml:13261
 msgid ""
 "Computationally, we do not want to square two numbers when we can only "
 "square one. So, the first solution seems better at first."
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13924
+#: book.translate.xml:13267
 msgid ""
 "<constant>5.6</constant> is a <emphasis>constant</emphasis>. We do not have "
 "to have our <acronym>FPU</acronym> waste precious cycles. We can just tell "
@@ -18267,12 +18228,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13935
+#: book.translate.xml:13276
 msgid "But, they are not!"
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13938
+#: book.translate.xml:13278
 msgid ""
 "Having studied the principles of photography above, we remember that the "
 "<constant>5.6</constant> is actually square root of 2 raised to the fifth "
@@ -18281,7 +18242,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13947
+#: book.translate.xml:13285
 msgid ""
 "Not only is <constant>32</constant> an integer, it is a power of 2. We do "
 "not need to divide the square of the f–number by <constant>32</constant>. We "
@@ -18293,7 +18254,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13960
+#: book.translate.xml:13294
 msgid ""
 "So, now it has become clear why we have saved the square of the f–number on "
 "the top of the <acronym>FPU</acronym> stack. The calculation of the f5.6 "
@@ -18302,7 +18263,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13970
+#: book.translate.xml:13301
 msgid ""
 "There is one more useful number we can calculate: The number of stops our f–"
 "number is from f5.6. This may help us if our f–number is just outside the "
@@ -18311,7 +18272,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13979
+#: book.translate.xml:13307
 msgid ""
 "Say, our f–number is 5 stops from f5.6, and the light meter says we should "
 "use 1/1000 sec. Then we can set our shutter speed to 1/1000 first, then move "
@@ -18319,7 +18280,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect3/para
-#: book.translate.xml:13987
+#: book.translate.xml:13312
 msgid ""
 "This calculation is quite easy as well. All we have to do is to calculate "
 "the base-2 logarithm of the f5.6 multiplier we had just calculated (though "
@@ -18330,19 +18291,19 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: book.translate.xml:14004
+#: book.translate.xml:13324
 msgid "FPU Optimizations"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:14005
+#: book.translate.xml:13326
 msgid ""
 "In assembly language we can optimize the <acronym>FPU</acronym> code in ways "
 "impossible in high languages, including C."
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:14011
+#: book.translate.xml:13330
 msgid ""
 "Whenever a C function needs to calculate a floating–point value, it loads "
 "all necessary variables and constants into <acronym>FPU</acronym> registers. "
@@ -18351,7 +18312,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:14021
+#: book.translate.xml:13337
 msgid ""
 "It \"returns\" the value by leaving the result on the <acronym>TOS</"
 "acronym>. However, before it returns, it cleans up. Any variables and "
@@ -18360,14 +18321,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:14029
+#: book.translate.xml:13343
 msgid ""
 "It cannot do what we just did above: We calculated the square of the f–"
 "number and kept it on the stack for later use by another function."
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:14035
+#: book.translate.xml:13347
 msgid ""
 "We <emphasis>knew</emphasis> we would need that value later on. We also knew "
 "we had enough room on the stack (which only has room for 8 numbers) to store "
@@ -18375,21 +18336,21 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:14042
+#: book.translate.xml:13352
 msgid ""
 "A C compiler has no way of knowing that a value it has on the stack will be "
 "required again in the very near future."
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:14048
+#: book.translate.xml:13356
 msgid ""
 "Of course, the C programmer may know it. But the only recourse he has is to "
 "store the value in a memory variable."
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:14054
+#: book.translate.xml:13360
 msgid ""
 "That means, for one, the value will be changed from the 80-bit precision "
 "used internally by the <acronym>FPU</acronym> to a C <emphasis>double</"
@@ -18397,7 +18358,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:14062
+#: book.translate.xml:13366
 msgid ""
 "That also means that the value must be moved from the <acronym>TOS</acronym> "
 "into the memory, and then back again. Alas, of all <acronym>FPU</acronym> "
@@ -18405,7 +18366,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:14070
+#: book.translate.xml:13371
 msgid ""
 "So, whenever programming the <acronym>FPU</acronym> in assembly language, "
 "look for the ways of keeping intermediate results on the <acronym>FPU</"
@@ -18413,14 +18374,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:14077
+#: book.translate.xml:13375
 msgid ""
 "We can take that idea even further! In our program we are using a "
 "<emphasis>constant</emphasis> (the one we named <constant>PC</constant>)."
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:14083
+#: book.translate.xml:13379
 msgid ""
 "It does not matter how many pinhole diameters we are calculating: 1, 10, 20, "
 "1000, we are always using the same constant. Therefore, we can optimize our "
@@ -18428,7 +18389,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:14091
+#: book.translate.xml:13384
 msgid ""
 "Early on in our program, we are calculating the value of the above constant. "
 "We need to divide our input by <constant>10</constant> for every digit in "
@@ -18436,7 +18397,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:14098
+#: book.translate.xml:13389
 msgid ""
 "It is much faster to multiply than to divide. So, at the start of our "
 "program, we divide <constant>10</constant> into <constant>1</constant> to "
@@ -18446,7 +18407,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:14107
+#: book.translate.xml:13397
 msgid ""
 "By the way, we do not input <constant>0.1</constant> directly, even though "
 "we could. We have a reason for that: While <constant>0.1</constant> can be "
@@ -18456,7 +18417,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:14116
+#: book.translate.xml:13405
 msgid ""
 "We are using other constants: We multiply the pinhole diameter by "
 "<constant>1000</constant> to convert it from millimeters to microns. We "
@@ -18467,7 +18428,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:14127
+#: book.translate.xml:13415
 msgid ""
 "Last but not least, we keep <constant>-5</constant> on the stack. We need it "
 "to scale the square of the f–number, instead of dividing it by <constant>32</"
@@ -18479,34 +18440,33 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:14138
+#: book.translate.xml:13426
 msgid ""
 "It is common to create certain constants from scratch instead of loading "
 "them from the memory. That is what we are doing with <constant>-5</constant>:"
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
-#: book.translate.xml:14144
+#: book.translate.xml:13430
 #, no-wrap
 msgid ""
-"\n"
 "\tfld1\t\t\t; TOS =  1\n"
 "\tfadd\tst0, st0\t; TOS =  2\n"
 "\tfadd\tst0, st0\t; TOS =  4\n"
 "\tfld1\t\t\t; TOS =  1\n"
 "\tfaddp\tst1, st0\t; TOS =  5\n"
-"\tfchs\t\t\t; TOS = -5\n"
+"\tfchs\t\t\t; TOS = -5"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:14152
+#: book.translate.xml:13437
 msgid ""
 "We can generalize all these optimizations into one rule: <emphasis>Keep "
 "repeat values on the stack!</emphasis>"
 msgstr ""
 
 #. (itstool) path: tip/para
-#: book.translate.xml:14158
+#: book.translate.xml:13441
 msgid ""
 "<emphasis><trademark class=\"registered\">PostScript</trademark></emphasis> "
 "is a stack–oriented programming language. There are many more books "
@@ -18517,15 +18477,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: book.translate.xml:14170
+#: book.translate.xml:13451
 msgid "<application>pinhole</application>—The Code"
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
-#: book.translate.xml:14171
+#: book.translate.xml:13453
 #, no-wrap
 msgid ""
-"\n"
 ";;;;;;; pinhole.asm ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;\n"
 ";\n"
 "; Find various parameters of a pinhole camera construction and use\n"
@@ -19222,18 +19181,18 @@ msgid ""
 "\tjne\t.zeros\n"
 "\n"
 ".ret:\n"
-"\tret\n"
+"\tret"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:14870
+#: book.translate.xml:14151
 msgid ""
 "The code follows the same format as all the other filters we have seen "
 "before, with one subtle exception:"
 msgstr ""
 
 #. (itstool) path: blockquote/para
-#: book.translate.xml:14877
+#: book.translate.xml:14155
 msgid ""
 "We are no longer assuming that the end of input implies the end of things to "
 "do, something we took for granted in the <emphasis>character–oriented</"
@@ -19241,24 +19200,24 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: blockquote/para
-#: book.translate.xml:14884
+#: book.translate.xml:14160
 msgid ""
 "This filter does not process characters. It processes a <emphasis>language</"
 "emphasis> (albeit a very simple one, consisting only of numbers)."
 msgstr ""
 
 #. (itstool) path: blockquote/para
-#: book.translate.xml:14891
+#: book.translate.xml:14164
 msgid "When we have no more input, it can mean one of two things:"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:14896
+#: book.translate.xml:14169
 msgid "We are done and can quit. This is the same as before."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:14903
+#: book.translate.xml:14174
 msgid ""
 "The last character we have read was a digit. We have stored it at the end of "
 "our <acronym>ASCII</acronym>–to–float conversion buffer. We now need to "
@@ -19267,7 +19226,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: blockquote/para
-#: book.translate.xml:14915
+#: book.translate.xml:14183
 msgid ""
 "For that reason, we have modified our <function>getchar</function> and our "
 "<function>read</function> routines to return with the <varname role="
@@ -19278,7 +19237,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: blockquote/para
-#: book.translate.xml:14924
+#: book.translate.xml:14192
 msgid ""
 "Of course, we are still using assembly language magic to do that! Take a "
 "good look at <function>getchar</function>. It <emphasis>always</emphasis> "
@@ -19287,14 +19246,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: blockquote/para
-#: book.translate.xml:14931
+#: book.translate.xml:14197
 msgid ""
 "Yet, our main code relies on the <varname role=\"register\">carry flag</"
 "varname> to tell it when to quit—and it works."
 msgstr ""
 
 #. (itstool) path: blockquote/para
-#: book.translate.xml:14936
+#: book.translate.xml:14200
 msgid ""
 "The magic is in <function>read</function>. Whenever it receives more input "
 "from the system, it just returns to <function>getchar</function>, which "
@@ -19303,7 +19262,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: blockquote/para
-#: book.translate.xml:14945
+#: book.translate.xml:14205
 msgid ""
 "But when <function>read</function> receives no more input from the system, "
 "it does <emphasis>not</emphasis> return to <function>getchar</function> at "
@@ -19314,7 +19273,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: blockquote/para
-#: book.translate.xml:14955
+#: book.translate.xml:14213
 msgid ""
 "So, where does it return to? Whenever a program uses the <function role="
 "\"opcode\">call</function> op code, the microprocessor <function role="
@@ -19327,7 +19286,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: blockquote/para
-#: book.translate.xml:14968
+#: book.translate.xml:14223
 msgid ""
 "But since we added <constant>4</constant> to <varname role=\"register\">ESP</"
 "varname> (which is the stack pointer register), we have effectively given "
@@ -19337,7 +19296,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: blockquote/para
-#: book.translate.xml:14978
+#: book.translate.xml:14229
 msgid ""
 "And since <function>getchar</function> never <function role=\"opcode\">push</"
 "function>ed anything before <function role=\"opcode\">call</function>ing "
@@ -19350,7 +19309,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:14992
+#: book.translate.xml:14237
 msgid ""
 "Other than that, the <function>bcdload</function> routine is caught up in "
 "the middle of a Lilliputian conflict between the Big–Endians and the Little–"
@@ -19358,7 +19317,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:14999
+#: book.translate.xml:14241
 msgid ""
 "It is converting the text representation of a number into that number: The "
 "text is stored in the big–endian order, but the <emphasis>packed decimal</"
@@ -19366,7 +19325,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15006
+#: book.translate.xml:14246
 msgid ""
 "To solve the conflict, we use the <function>std</function> op code early on. "
 "We cancel it with <function>cld</function> later on: It is quite important "
@@ -19376,14 +19335,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15015
+#: book.translate.xml:14253
 msgid ""
-"Everything else in this code should be quite clear, providing you have read "
+"Everything else in this code should be quit eclear, providing you have read "
 "the entire chapter that precedes it."
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15021
+#: book.translate.xml:14257
 msgid ""
 "It is a classical example of the adage that programming requires a lot of "
 "thought and only a little coding. Once we have thought through every tiny "
@@ -19391,12 +19350,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: book.translate.xml:15031
+#: book.translate.xml:14264
 msgid "Using <application>pinhole</application>"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15032
+#: book.translate.xml:14266
 msgid ""
 "Because we have decided to make the program <emphasis>ignore</emphasis> any "
 "input except for numbers (and even those inside a comment), we can actually "
@@ -19405,14 +19364,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15040
+#: book.translate.xml:14273
 msgid ""
 "In my humble opinion, forming a textual query, instead of having to follow a "
 "very strict syntax, makes software much more user friendly."
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15046
+#: book.translate.xml:14277
 msgid ""
 "Suppose we want to build a pinhole camera to use the 4x5 inch film. The "
 "standard focal length for that film is about 150mm. We want to "
@@ -19424,12 +19383,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15058
+#: book.translate.xml:14286
 msgid "Our session might look like this:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
-#: book.translate.xml:15061
+#: book.translate.xml:14288
 #, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>pinhole\n"
@@ -19451,7 +19410,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15077
+#: book.translate.xml:14305
 msgid ""
 "We have found that while for the focal length of 150, our pinhole diameter "
 "should be 490 microns, or 0.49 mm, if we go with the almost identical focal "
@@ -19460,12 +19419,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: book.translate.xml:15089
+#: book.translate.xml:14313
 msgid "Scripting"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15090
+#: book.translate.xml:14315
 msgid ""
 "Because we have chosen the <constant>#</constant> character to denote the "
 "start of a comment, we can treat our <application>pinhole</application> "
@@ -19473,41 +19432,37 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15097
+#: book.translate.xml:14320
 msgid ""
 "You have probably seen <application>shell</application> <emphasis>scripts</"
 "emphasis> that start with:"
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
-#: book.translate.xml:15101
+#: book.translate.xml:14323
 #, no-wrap
-msgid ""
-"\n"
-"#! /bin/sh\n"
+msgid "#! /bin/sh"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15104
+#: book.translate.xml:14325
 msgid "...or..."
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
-#: book.translate.xml:15107
+#: book.translate.xml:14327
 #, no-wrap
-msgid ""
-"\n"
-"#!/bin/sh\n"
+msgid "#!/bin/sh"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15109
+#: book.translate.xml:14329
 msgid ""
 "...because the blank space after the <function>#!</function> is optional."
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15114
+#: book.translate.xml:14332
 msgid ""
 "Whenever <trademark class=\"registered\">UNIX</trademark> is asked to run an "
 "executable file which starts with the <function>#!</function>, it assumes "
@@ -19516,7 +19471,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15122
+#: book.translate.xml:14338
 msgid ""
 "Suppose now that we have installed <application>pinhole</application> in "
 "<application>/usr/local/bin/</application>, we can now write a script to "
@@ -19525,15 +19480,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15129
+#: book.translate.xml:14344
 msgid "The script might look something like this:"
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
-#: book.translate.xml:15132
+#: book.translate.xml:14346
 #, no-wrap
 msgid ""
-"\n"
 "#! /usr/local/bin/pinhole -b -i\n"
 "# Find the best pinhole diameter\n"
 "# for the 120 film\n"
@@ -19545,24 +19499,24 @@ msgid ""
 "30, 40, 50, 60, 70\n"
 "\n"
 "### Telephoto\n"
-"100, 120, 140\n"
+"100, 120, 140"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15146
+#: book.translate.xml:14359
 msgid ""
 "Because 120 is a medium size film, we may name this file "
 "<application>medium</application>."
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15151
+#: book.translate.xml:14362
 msgid ""
 "We can set its permissions to execute, and run it as if it were a program:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
-#: book.translate.xml:15156
+#: book.translate.xml:14365
 #, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>chmod 755 medium</userinput>\n"
@@ -19570,25 +19524,25 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15158
+#: book.translate.xml:14368
 msgid ""
 "<trademark class=\"registered\">UNIX</trademark> will interpret that last "
 "command as:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
-#: book.translate.xml:15161
+#: book.translate.xml:14370
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>/usr/local/bin/pinhole -b -i ./medium</userinput>"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15162
+#: book.translate.xml:14372
 msgid "It will run that command and display:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
-#: book.translate.xml:15166
+#: book.translate.xml:14374
 #, no-wrap
 msgid ""
 "80\t358\t224\t256\t1562\t11\n"
@@ -19603,29 +19557,29 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15175
+#: book.translate.xml:14384
 msgid "Now, let us enter:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
-#: book.translate.xml:15179
+#: book.translate.xml:14386
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>./medium -c</userinput>"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15180
+#: book.translate.xml:14388
 msgid "<trademark class=\"registered\">UNIX</trademark> will treat that as:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
-#: book.translate.xml:15183
+#: book.translate.xml:14390
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>/usr/local/bin/pinhole -b -i ./medium -c</userinput>"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15184
+#: book.translate.xml:14392
 msgid ""
 "That gives it two conflicting options: <parameter>-b</parameter> and "
 "<parameter>-c</parameter> (Use Bender's constant and use Connors' constant). "
@@ -19634,7 +19588,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/screen
-#: book.translate.xml:15194
+#: book.translate.xml:14399
 #, no-wrap
 msgid ""
 "80\t331\t242\t256\t1826\t11\n"
@@ -19649,14 +19603,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15203
+#: book.translate.xml:14409
 msgid ""
 "We decide we want to go with Bender's constant after all. We want to save "
 "its values as a comma–separated file:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
-#: book.translate.xml:15209
+#: book.translate.xml:14413
 #, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>./medium -b -e &gt; bender</userinput>\n"
@@ -19675,12 +19629,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: book.translate.xml:15227
+#: book.translate.xml:14430
 msgid "Caveats"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:15229
+#: book.translate.xml:14432
 msgid ""
 "Assembly language programmers who \"grew up\" under <acronym><trademark "
 "class=\"registered\">MS-DOS</trademark></acronym> and <trademark class="
@@ -19692,7 +19646,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:15238
+#: book.translate.xml:14439
 msgid ""
 "The reason? Both the <acronym>PC BIOS</acronym> and <acronym><trademark "
 "class=\"registered\">MS-DOS</trademark></acronym> are notoriously slow when "
@@ -19700,7 +19654,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:15244
+#: book.translate.xml:14443
 msgid ""
 "You may be tempted to continue similar practices in the <trademark class="
 "\"registered\">UNIX</trademark> environment. For example, I have seen a web "
@@ -19709,19 +19663,19 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:15250
+#: book.translate.xml:14448
 msgid ""
 "That is generally a <emphasis>very bad idea</emphasis> in <trademark class="
 "\"registered\">UNIX</trademark> environment! Let me explain why."
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: book.translate.xml:15256
+#: book.translate.xml:14452
 msgid "<trademark class=\"registered\">UNIX</trademark> Is Protected"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15258
+#: book.translate.xml:14454
 msgid ""
 "For one thing, it may simply not be possible. <trademark class=\"registered"
 "\">UNIX</trademark> runs in protected mode. Only the kernel and device "
@@ -19734,12 +19688,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: book.translate.xml:15271
+#: book.translate.xml:14465
 msgid "<trademark class=\"registered\">UNIX</trademark> Is an Abstraction"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15273
+#: book.translate.xml:14467
 msgid ""
 "But there is a much more important reason not to try accessing the hardware "
 "directly (unless, of course, you are writing a device driver), even on the "
@@ -19748,14 +19702,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15280
+#: book.translate.xml:14472
 msgid ""
-"<emphasis><trademark class=\"registered\">UNIX</trademark> is an "
-"abstraction! </emphasis>"
+"<emphasis><trademark class=\"registered\">UNIX</trademark> is an abstraction!"
+"</emphasis>"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15284
+#: book.translate.xml:14474
 msgid ""
 "There is a major difference in the philosophy of design between "
 "<acronym><trademark class=\"registered\">MS-DOS</trademark></acronym> and "
@@ -19767,7 +19721,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15294
+#: book.translate.xml:14483
 msgid ""
 "This is NEVER guaranteed under <trademark class=\"registered\">UNIX</"
 "trademark>. It is quite common for a <trademark class=\"registered\">UNIX</"
@@ -19775,13 +19729,13 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/screen
-#: book.translate.xml:15299
+#: book.translate.xml:14487
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>program1 | program2 | program3 &gt; file1</userinput>"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15301
+#: book.translate.xml:14489
 msgid ""
 "If you have written <application>program2</application>, your input does not "
 "come from the keyboard but from the output of <application>program1</"
@@ -19791,7 +19745,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15310
+#: book.translate.xml:14496
 msgid ""
 "But there is more! Even if you made sure that your input comes from, and "
 "your output goes to, the terminal, there is no guarantee the terminal is a "
@@ -19801,7 +19755,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15319
+#: book.translate.xml:14503
 msgid ""
 "Now you may be shaking your head: My software is in <acronym>PC</acronym> "
 "assembly language, how can it run on a <trademark class=\"registered"
@@ -19811,7 +19765,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15327
+#: book.translate.xml:14509
 msgid ""
 "Under <trademark class=\"registered\">UNIX</trademark>, the terminal does "
 "not have to be directly attached to the computer that runs your software, it "
@@ -19825,7 +19779,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15339
+#: book.translate.xml:14520
 msgid ""
 "Same holds true about any other hardware: A file you are reading may be on a "
 "disk you have no direct access to. A camera you are reading images from may "
@@ -19833,7 +19787,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: book.translate.xml:15346
+#: book.translate.xml:14525
 msgid ""
 "That is why under <trademark class=\"registered\">UNIX</trademark> you must "
 "never make any assumptions about where your data is coming from and going "
@@ -19841,7 +19795,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: note/para
-#: book.translate.xml:15353
+#: book.translate.xml:14531
 msgid ""
 "These are caveats, not absolute rules. Exceptions are possible. For example, "
 "if a text editor has determined it is running on a local machine, it may "
@@ -19855,12 +19809,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: book.translate.xml:15372
+#: book.translate.xml:14546
 msgid "Acknowledgements"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:15374
+#: book.translate.xml:14548
 msgid ""
 "This tutorial would never have been possible without the help of many "
 "experienced FreeBSD programmers from the <link xlink:href=\"http://lists."
@@ -19872,183 +19826,183 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:15383
+#: book.translate.xml:14555
 msgid ""
-"Thomas M. Sommers opened the door for me. His <link xlink:href=\"https://web."
-"archive.org/web/20090914064615/http://www.codebreakers-journal.com/content/"
-"view/262/27\">How do I write \"Hello, world\" in FreeBSD assembler?</link> "
-"web page was my first encounter with an example of assembly language "
+"Thomas M. Sommers opened the door for me . His <link xlink:href=\"https://"
+"web.archive.org/web/20090914064615/http://www.codebreakers-journal.com/"
+"content/view/262/27\">How do I write \"Hello, world\" in FreeBSD assembler?</"
+"link> web page was my first encounter with an example of assembly language "
 "programming under FreeBSD."
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: book.translate.xml:15390
+#: book.translate.xml:14560
 msgid ""
 "Jake Burkholder has kept the door open by willingly answering all of my "
 "questions and supplying me with example assembly language source code."
 msgstr ""
 
 #. (itstool) path: part/title
-#: book.translate.xml:15409
+#: book.translate.xml:14573
 msgid "Appendices"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
-#: book.translate.xml:15415
+#: book.translate.xml:14579
 msgid ""
 "<personname><firstname>Dave</firstname><othername role=\"MI\">A</"
 "othername><surname>Patterson</surname></personname>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
-#: book.translate.xml:15416
+#: book.translate.xml:14580
 msgid ""
 "<personname><firstname>John</firstname><othername role=\"MI\">L</"
 "othername><surname>Hennessy</surname></personname>"
 msgstr ""
 
 #. (itstool) path: biblioentry/copyright
-#: book.translate.xml:15418
+#: book.translate.xml:14582
 msgid "<year>1998</year><holder>Morgan Kaufmann Publishers, Inc.</holder>"
 msgstr ""
 
 #. (itstool) path: biblioentry/biblioid
-#: book.translate.xml:15420
+#: book.translate.xml:14584
 msgid "1-55860-428-6"
 msgstr ""
 
 #. (itstool) path: publisher/publishername
-#: book.translate.xml:15422
+#: book.translate.xml:14586
 msgid "Morgan Kaufmann Publishers, Inc."
 msgstr ""
 
 #. (itstool) path: biblioentry/citetitle
-#: book.translate.xml:15424
+#: book.translate.xml:14588
 msgid "Computer Organization and Design"
 msgstr ""
 
 #. (itstool) path: biblioentry/subtitle
-#: book.translate.xml:15425
+#: book.translate.xml:14589
 msgid "The Hardware / Software Interface"
 msgstr ""
 
 #. (itstool) path: biblioentry/pagenums
-#: book.translate.xml:15426 book.translate.xml:15440 book.translate.xml:15454
+#: book.translate.xml:14590 book.translate.xml:14604 book.translate.xml:14618
 msgid "1-2"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
-#: book.translate.xml:15431
+#: book.translate.xml:14595
 msgid ""
 "<personname><firstname>W.</firstname><othername role=\"Middle\">Richard</"
 "othername><surname>Stevens</surname></personname>"
 msgstr ""
 
 #. (itstool) path: biblioentry/copyright
-#: book.translate.xml:15433
+#: book.translate.xml:14597
 msgid "<year>1993</year><holder>Addison Wesley Longman, Inc.</holder>"
 msgstr ""
 
 #. (itstool) path: biblioentry/biblioid
-#: book.translate.xml:15435
+#: book.translate.xml:14599
 msgid "0-201-56317-7"
 msgstr ""
 
 #. (itstool) path: publisher/publishername
-#: book.translate.xml:15437
+#: book.translate.xml:14601
 msgid "Addison Wesley Longman, Inc."
 msgstr ""
 
 #. (itstool) path: biblioentry/citetitle
-#: book.translate.xml:15439
+#: book.translate.xml:14603
 msgid "Advanced Programming in the Unix Environment"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
-#: book.translate.xml:15445
+#: book.translate.xml:14609
 msgid ""
 "<personname><firstname>Marshall</firstname><othername role=\"Middle\">Kirk</"
 "othername><surname>McKusick</surname></personname>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
-#: book.translate.xml:15446
+#: book.translate.xml:14610
 msgid ""
 "<personname><firstname>George</firstname><surname>Neville-Neil</surname></"
 "personname>"
 msgstr ""
 
 #. (itstool) path: biblioentry/copyright
-#: book.translate.xml:15448
+#: book.translate.xml:14612
 msgid "<year>2004</year><holder>Addison-Wesley</holder>"
 msgstr ""
 
 #. (itstool) path: biblioentry/biblioid
-#: book.translate.xml:15449
+#: book.translate.xml:14613
 msgid "0-201-70245-2"
 msgstr ""
 
 #. (itstool) path: publisher/publishername
-#: book.translate.xml:15451
+#: book.translate.xml:14615
 msgid "Addison-Wesley"
 msgstr ""
 
 #. (itstool) path: biblioentry/citetitle
-#: book.translate.xml:15453
+#: book.translate.xml:14617
 msgid "The Design and Implementation of the FreeBSD Operating System"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
-#: book.translate.xml:15459
+#: book.translate.xml:14623
 msgid ""
 "<personname><firstname>Aleph</firstname><surname>One</surname></personname>"
 msgstr ""
 
 #. (itstool) path: biblioentry/citetitle
-#: book.translate.xml:15461
+#: book.translate.xml:14625
 msgid "Phrack 49; \"Smashing the Stack for Fun and Profit\""
 msgstr ""
 
 #. (itstool) path: authorgroup/author
-#: book.translate.xml:15466
+#: book.translate.xml:14630
 msgid ""
 "<personname><firstname>Chrispin</firstname><surname>Cowan</surname></"
 "personname>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
-#: book.translate.xml:15467
+#: book.translate.xml:14631
 msgid ""
 "<personname><firstname>Calton</firstname><surname>Pu</surname></personname>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
-#: book.translate.xml:15468
+#: book.translate.xml:14632
 msgid ""
 "<personname><firstname>Dave</firstname><surname>Maier</surname></personname>"
 msgstr ""
 
 #. (itstool) path: biblioentry/citetitle
-#: book.translate.xml:15470
+#: book.translate.xml:14634
 msgid ""
 "StackGuard; Automatic Adaptive Detection and Prevention of Buffer-Overflow "
 "Attacks"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
-#: book.translate.xml:15476
+#: book.translate.xml:14640
 msgid ""
 "<personname><firstname>Todd</firstname><surname>Miller</surname></personname>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
-#: book.translate.xml:15477
+#: book.translate.xml:14641
 msgid ""
 "<personname><firstname>Theo</firstname><surname>de Raadt</surname></"
 "personname>"
 msgstr ""
 
 #. (itstool) path: biblioentry/citetitle
-#: book.translate.xml:15479
+#: book.translate.xml:14643
 msgid "strlcpy and strlcat -- consistent, safe string copy and concatenation."
 msgstr ""
