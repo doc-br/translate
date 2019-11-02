@@ -2,14 +2,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-06-15 11:35-0300\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-11-02 17:04-0300\n"
 "PO-Revision-Date: 2019-07-14 08:00+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -169,7 +169,6 @@ msgid ""
 "How to reserve space for journaling during a new installation of FreeBSD."
 msgstr ""
 "Cómo reservar espacio para el journaling en una instalación nueva de FreeBSD."
-""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:79
@@ -239,7 +238,6 @@ msgstr ""
 "en producción, antes de hacerlo, debe realizar una <emphasis>backup</"
 "emphasis> de todos los datos que sean importantes. Estar jugando con discos "
 "y particiones a bajo nivel puede provocar errores fatales y pérdida de datos."
-""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:124
@@ -726,9 +724,10 @@ msgid ""
 "unmount the partitions that will be journaled, in our example <filename>/"
 "usr</filename> and <filename>/var</filename>:"
 msgstr ""
-"Pulse la tecla <keycap>Enter</keycap> para acceder a la shell predeterminada."
-" Tendremos que desmontar las particiones que vayan a tener journaling, en "
-"nuestro ejemplo, <filename>/usr</filename> y <filename>/var</filename>:"
+"Pulse la tecla <keycap>Enter</keycap> para acceder a la shell "
+"predeterminada. Tendremos que desmontar las particiones que vayan a tener "
+"journaling, en nuestro ejemplo, <filename>/usr</filename> y <filename>/var</"
+"filename>:"
 
 #. (itstool) path: sect2/screen
 #. (itstool) path: answer/screen
@@ -758,8 +757,8 @@ msgid ""
 "journaled to <filename>ad0s1h</filename>. The following commands are "
 "required:"
 msgstr ""
-"Ahora, use sus notas para determinar qué partición se usará con cada journal."
-" En nuestro ejemplo, <filename>/usr</filename> es <filename>ad0s1f</"
+"Ahora, use sus notas para determinar qué partición se usará con cada "
+"journal. En nuestro ejemplo, <filename>/usr</filename> es <filename>ad0s1f</"
 "filename> y su journal será <filename>ad0s1g</filename>, mientras que "
 "<filename>/var</filename> es <filename>ad0s1d</filename> y su journal será "
 "<filename>ad0s1h</filename>. Ejecute los siguientes comandos:"
@@ -802,10 +801,8 @@ msgstr ""
 #. (itstool) path: note/screen
 #: article.translate.xml:388
 #, no-wrap
-msgid ""
-"<prompt>#</prompt> <userinput>gjournal label -f ad0s1d ad0s1h</userinput>"
-msgstr ""
-"<prompt>#</prompt> <userinput>gjournal label -f ad0s1d ad0s1h</userinput>"
+msgid "<prompt>#</prompt> <userinput>gjournal label -f ad0s1d ad0s1h</userinput>"
+msgstr "<prompt>#</prompt> <userinput>gjournal label -f ad0s1d ad0s1h</userinput>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:390
@@ -835,26 +832,22 @@ msgstr ""
 #: article.translate.xml:400
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>tunefs -J enable -n disable ad0s1d.journal</"
-"userinput>\n"
+"<prompt>#</prompt> <userinput>tunefs -J enable -n disable ad0s1d.journal</userinput>\n"
 "\n"
 "tunefs: gjournal set\n"
 "tunefs: soft updates cleared\n"
 "\n"
-"<prompt>#</prompt> <userinput>tunefs -J enable -n disable ad0s1f.journal</"
-"userinput>\n"
+"<prompt>#</prompt> <userinput>tunefs -J enable -n disable ad0s1f.journal</userinput>\n"
 "\n"
 "tunefs: gjournal set\n"
 "tunefs: soft updates cleared"
 msgstr ""
-"<prompt>#</prompt> <userinput>tunefs -J enable -n disable ad0s1d.journal</"
-"userinput>\n"
+"<prompt>#</prompt> <userinput>tunefs -J enable -n disable ad0s1d.journal</userinput>\n"
 "\n"
 "tunefs: gjournal set\n"
 "tunefs: soft updates cleared\n"
 "\n"
-"<prompt>#</prompt> <userinput>tunefs -J enable -n disable ad0s1f.journal</"
-"userinput>\n"
+"<prompt>#</prompt> <userinput>tunefs -J enable -n disable ad0s1f.journal</userinput>\n"
 "\n"
 "tunefs: gjournal set\n"
 "tunefs: soft updates cleared"
@@ -873,15 +866,11 @@ msgstr ""
 #: article.translate.xml:414
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>mount -o async /dev/ad0s1d.journal /var</"
-"userinput>\n"
-"<prompt>#</prompt> <userinput>mount -o async /dev/ad0s1f.journal /usr</"
-"userinput>"
+"<prompt>#</prompt> <userinput>mount -o async /dev/ad0s1d.journal /var</userinput>\n"
+"<prompt>#</prompt> <userinput>mount -o async /dev/ad0s1f.journal /usr</userinput>"
 msgstr ""
-"<prompt>#</prompt> <userinput>mount -o async /dev/ad0s1d.journal /var</"
-"userinput>\n"
-"<prompt>#</prompt> <userinput>mount -o async /dev/ad0s1f.journal /usr</"
-"userinput>"
+"<prompt>#</prompt> <userinput>mount -o async /dev/ad0s1d.journal /var</userinput>\n"
+"<prompt>#</prompt> <userinput>mount -o async /dev/ad0s1f.journal /usr</userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:417
@@ -1057,8 +1046,7 @@ msgstr ""
 #: article.translate.xml:484
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>newfs -J /dev/ad1s1d.journal</userinput>"
-msgstr ""
-"<prompt>#</prompt> <userinput>newfs -J /dev/ad1s1d.journal</userinput>"
+msgstr "<prompt>#</prompt> <userinput>newfs -J /dev/ad1s1d.journal</userinput>"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:488
@@ -1093,12 +1081,12 @@ msgstr ""
 #: article.translate.xml:499
 msgid ""
 "Rebuild and reinstall your kernel following the relevant <link xlink:href="
-"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/kernelconfig."
-"html\">instructions in the FreeBSD Handbook.</link>"
+"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/kernelconfig.html"
+"\">instructions in the FreeBSD Handbook.</link>"
 msgstr ""
 "Recompile y vuelva a instalar su kernel siguiendo las <link xlink:href="
-"\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/books/handbook/kernelconfig."
-"html\">instrucciones del Handbook de FreeBSD</link>."
+"\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/books/handbook/kernelconfig.html"
+"\">instrucciones del Handbook de FreeBSD</link>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:503
@@ -1140,14 +1128,13 @@ msgid ""
 "load, and not the size of the data provider. If your disk activity is high, "
 "you need a larger partition for the journal. See the note in the <link "
 "linkend=\"understanding-journaling\">Understanding Journaling</link> section."
-""
 msgstr ""
 "Es probable que el journaling se llene antes de tener la oportunidad de "
 "grabarse (flushed)  el disco. Tenga en cuenta que el tamaño del journal "
 "depende del uso, no del tamaño del provider de datos. Si la actividad del "
 "disco es alta, necesita una partición más grande para el journal. Consulte "
-"la nota en la sección <link linkend=\"understanding-"
-"journaling\">comprendiendo el journaling</link>."
+"la nota en la sección <link linkend=\"understanding-journaling"
+"\">comprendiendo el journaling</link>."
 
 #. (itstool) path: question/para
 #: article.translate.xml:533
@@ -1232,7 +1219,6 @@ msgstr ""
 "<filename>/etc/fstab</filename>. Probablemente encontrará una entrada que "
 "está mal escrita o directamente no está. En este caso, monte todas las "
 "particiones restantes a mano y continúe con el arranque en modo multiusuario."
-""
 
 #. (itstool) path: question/para
 #: article.translate.xml:573
@@ -1426,24 +1412,25 @@ msgid ""
 "<email>pjd@FreeBSD.org</email>."
 msgstr ""
 "Este post en <link xlink:href=\"https://lists.freebsd.org/pipermail/freebsd-"
-"current/2006-June/064043.html\">This post</link> in <link xlink:href=\"http:/"
-"/lists.FreeBSD.org/mailman/listinfo/freebsd-current\">freebsd-current</link> "
-"por el desarrollador de <citerefentry><refentrytitle>gjournal</"
-"refentrytitle><manvolnum>8</manvolnum></citerefentry>, Paweł Jakub Dawidek "
-"<email>pjd@FreeBSD.org</email>."
+"current/2006-June/064043.html\">This post</link> in <link xlink:href="
+"\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-current\">freebsd-"
+"current</link> por el desarrollador de "
+"<citerefentry><refentrytitle>gjournal</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>, Paweł Jakub Dawidek <email>pjd@FreeBSD.org</"
+"email>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:658
 msgid ""
-"<link xlink:href=\"https://lists.freebsd.org/pipermail/freebsd-questions/"
-"2008-April/173501.html\">This post</link> in <link xlink:href=\"http://lists."
-"FreeBSD.org/mailman/listinfo/freebsd-questions\">freebsd-questions</link> by "
-"Ivan Voras <email>ivoras@FreeBSD.org</email>."
+"<link xlink:href=\"https://lists.freebsd.org/pipermail/freebsd-"
+"questions/2008-April/173501.html\">This post</link> in <link xlink:href="
+"\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-questions\">freebsd-"
+"questions</link> by Ivan Voras <email>ivoras@FreeBSD.org</email>."
 msgstr ""
-"<link xlink:href=\"https://lists.freebsd.org/pipermail/freebsd-questions/"
-"2008-April/173501.html\">Este post</link> en <link xlink:href=\"http://lists."
-"FreeBSD.org/mailman/listinfo/freebsd-questions\">freebsd-questions</link> de "
-"Ivan voras <email>ivoras@FreeBSD.org</email>."
+"<link xlink:href=\"https://lists.freebsd.org/pipermail/freebsd-"
+"questions/2008-April/173501.html\">Este post</link> en <link xlink:href="
+"\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-questions\">freebsd-"
+"questions</link> de Ivan voras <email>ivoras@FreeBSD.org</email>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:663
