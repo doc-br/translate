@@ -3,14 +3,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-06-15 11:35-0300\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-11-02 17:04-0300\n"
 "PO-Revision-Date: 2019-07-07 07:21+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -48,8 +48,8 @@ msgstr "<year>2008</year> <holder>The FreeBSD Documentation Project</holder>"
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:15 article.translate.xml:17
 msgid ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/linux-users/article.xml 52142 2018-"
-"08-16 16:43:18Z bcr $"
+"$FreeBSD: head/en_US.ISO8859-1/articles/linux-users/article.xml 52142 "
+"2018-08-16 16:43:18Z bcr $"
 msgstr "$FreeBSD$"
 
 #. (itstool) path: legalnotice/para
@@ -205,14 +205,14 @@ msgstr ""
 msgid ""
 "After installing another shell, use <citerefentry><refentrytitle>chsh</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> to change a user's "
-"default shell. It is recommended that the <systemitem class="
-"\"username\">root</systemitem> user's default shell remain unchanged since "
-"shells which are not included in the base distribution are installed to "
-"<filename>/usr/local/bin</filename>. In the event of a problem, the file "
-"system where <filename>/usr/local/bin</filename> is located may not be "
-"mounted. In this case, <systemitem class=\"username\">root</systemitem> "
-"would not have access to its default shell, preventing <systemitem class="
-"\"username\">root</systemitem> from logging in and fixing the problem."
+"default shell. It is recommended that the <systemitem class=\"username"
+"\">root</systemitem> user's default shell remain unchanged since shells "
+"which are not included in the base distribution are installed to <filename>/"
+"usr/local/bin</filename>. In the event of a problem, the file system where "
+"<filename>/usr/local/bin</filename> is located may not be mounted. In this "
+"case, <systemitem class=\"username\">root</systemitem> would not have access "
+"to its default shell, preventing <systemitem class=\"username\">root</"
+"systemitem> from logging in and fixing the problem."
 msgstr ""
 "Después de instalar otra shell, use <citerefentry><refentrytitle>chsh</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> para cambiar la shell "
@@ -304,8 +304,8 @@ msgid ""
 "href=\"https://www.freebsd.org/ports/master-index.html\">here</link>."
 msgstr ""
 "Una lista completa de todos los ports y paquetes disponibles se puede "
-"encontrar <link xlink:href=\"https://www.freebsd.org/ports/master-index."
-"html\">aquí</link>."
+"encontrar <link xlink:href=\"https://www.freebsd.org/ports/master-index.html"
+"\">aquí</link>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:140
@@ -330,12 +330,8 @@ msgstr ""
 #. (itstool) path: sect2/screen
 #: article.translate.xml:150
 #, no-wrap
-msgid ""
-"<prompt>#</prompt> <userinput>pkg install <replaceable>apache24</"
-"replaceable></userinput>"
-msgstr ""
-"<prompt>#</prompt> <userinput>pkg install <replaceable>apache24</"
-"replaceable></userinput>"
+msgid "<prompt>#</prompt> <userinput>pkg install <replaceable>apache24</replaceable></userinput>"
+msgstr "<prompt>#</prompt> <userinput>pkg install <replaceable>apache24</replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:152
@@ -343,7 +339,6 @@ msgid ""
 "For more information on packages refer to section 5.4 of the FreeBSD "
 "Handbook: <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
 "handbook/pkgng-intro.html\">Using pkgng for Binary Package Management</link>."
-""
 msgstr ""
 "Para obtener más información sobre los paquetes, consulte la sección 5.4 del "
 "Manual de FreeBSD: <link xlink:href=\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/"
@@ -421,12 +416,10 @@ msgstr ""
 #, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/www/apache24</userinput>\n"
-"<prompt>#</prompt> <userinput>make WITH_LDAP=\"YES\" install clean</"
-"userinput>"
+"<prompt>#</prompt> <userinput>make WITH_LDAP=\"YES\" install clean</userinput>"
 msgstr ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/www/apache24</userinput>\n"
-"<prompt>#</prompt> <userinput>make WITH_LDAP=\"YES\" install clean</"
-"userinput>"
+"<prompt>#</prompt> <userinput>make WITH_LDAP=\"YES\" install clean</userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:189
@@ -507,14 +500,14 @@ msgstr ""
 #: article.translate.xml:221
 msgid ""
 "Since FreeBSD is developed as a complete operating system, user-installed "
-"applications are not considered to be part of the <quote>base</quote> system."
-" User-installed applications are generally installed using <link xlink:href="
-"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/ports-using."
-"html\">Packages or Ports</link>. In order to keep them separate from the "
-"base system, user-installed applications are installed under <filename>/usr/"
-"local/</filename>. Therefore, user-installed binaries reside in <filename>/"
-"usr/local/bin/</filename>, configuration files are in <filename>/usr/local/"
-"etc/</filename>, and so on."
+"applications are not considered to be part of the <quote>base</quote> "
+"system. User-installed applications are generally installed using <link "
+"xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/ports-"
+"using.html\">Packages or Ports</link>. In order to keep them separate from "
+"the base system, user-installed applications are installed under <filename>/"
+"usr/local/</filename>. Therefore, user-installed binaries reside in "
+"<filename>/usr/local/bin/</filename>, configuration files are in <filename>/"
+"usr/local/etc/</filename>, and so on."
 msgstr ""
 "Dado que FreeBSD se desarrolla como un sistema operativo completo, las "
 "aplicaciones instaladas por el usuario no se consideran parte del sistema "
@@ -593,15 +586,11 @@ msgstr ""
 #: article.translate.xml:258
 #, no-wrap
 msgid ""
-"<prompt>#</prompt> <userinput>service <replaceable>sshd</replaceable> start</"
-"userinput>\n"
-"<prompt>#</prompt> <userinput>service <replaceable>apache24</replaceable> "
-"start</userinput>"
+"<prompt>#</prompt> <userinput>service <replaceable>sshd</replaceable> start</userinput>\n"
+"<prompt>#</prompt> <userinput>service <replaceable>apache24</replaceable> start</userinput>"
 msgstr ""
-"<prompt>#</prompt> <userinput>service <replaceable>sshd</replaceable> start</"
-"userinput>\n"
-"<prompt>#</prompt> <userinput>service <replaceable>apache24</replaceable> "
-"start</userinput>"
+"<prompt>#</prompt> <userinput>service <replaceable>sshd</replaceable> start</userinput>\n"
+"<prompt>#</prompt> <userinput>service <replaceable>apache24</replaceable> start</userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:261
@@ -615,12 +604,8 @@ msgstr ""
 #. (itstool) path: sect1/screen
 #: article.translate.xml:264
 #, no-wrap
-msgid ""
-"<prompt>#</prompt> <userinput>service <replaceable>sshd</replaceable> "
-"onestart</userinput>"
-msgstr ""
-"<prompt>#</prompt> <userinput>service <replaceable>sshd</replaceable> "
-"onestart</userinput>"
+msgid "<prompt>#</prompt> <userinput>service <replaceable>sshd</replaceable> onestart</userinput>"
+msgstr "<prompt>#</prompt> <userinput>service <replaceable>sshd</replaceable> onestart</userinput>"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:268
@@ -720,9 +705,11 @@ msgstr ""
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:305
 #, no-wrap
-msgid "hostname=\"server1.example.com\"\n"
+msgid ""
+"hostname=\"server1.example.com\"\n"
 "ifconfig_em0=\"DHCP\""
-msgstr "hostname=\"server1.example.com\"\n"
+msgstr ""
+"hostname=\"server1.example.com\"\n"
 "ifconfig_em0=\"DHCP\""
 
 #. (itstool) path: sect1/title
@@ -1174,8 +1161,8 @@ msgstr "Conclusión"
 #: article.translate.xml:505
 msgid ""
 "This document has provided an overview of FreeBSD. Refer to the <link xlink:"
-"href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/index."
-"html\">FreeBSD Handbook</link> for more in-depth coverage of these topics as "
+"href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/index.html"
+"\">FreeBSD Handbook</link> for more in-depth coverage of these topics as "
 "well as the many topics not covered by this document."
 msgstr ""
 "Este documento ha proporcionado una visión general de FreeBSD. Consulte el "
