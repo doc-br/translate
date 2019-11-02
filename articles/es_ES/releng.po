@@ -2,14 +2,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-06-15 11:35-0300\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-11-02 17:04-0300\n"
 "PO-Revision-Date: 2019-06-22 08:52+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 4.6.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
@@ -43,9 +43,9 @@ msgid ""
 "first official release of FreeBSD that I played a significant part in."
 msgstr ""
 "He estado colaborando con el desarrollo de productos basados en FreeBSD "
-"desde 1997 en Walnut Creek CDROM, BSDi, y actualmente en Wind River Systems. "
-" FreeBSD 4.4 ha sido la primera release en la que he tenido el placer de "
-"participar."
+"desde 1997 en Walnut Creek CDROM, BSDi, y actualmente en Wind River "
+"Systems.  FreeBSD 4.4 ha sido la primera release en la que he tenido el "
+"placer de participar."
 
 #. (itstool) path: affiliation/address
 #: article.translate.xml:27
@@ -53,14 +53,12 @@ msgstr ""
 msgid ""
 "\n"
 "\t    <email>murray@FreeBSD.org</email>\n"
-"\t    <otheraddr xlink:href=\"https://people.FreeBSD.org/~murray/\">https://"
-"people.FreeBSD.org/~murray/</otheraddr>\n"
+"\t    <otheraddr xlink:href=\"https://people.FreeBSD.org/~murray/\">https://people.FreeBSD.org/~murray/</otheraddr>\n"
 "\t  "
 msgstr ""
 "\n"
 "\t    <email>murray@FreeBSD.org</email>\n"
-"\t    <otheraddr xlink:href=\"https://people.FreeBSD.org/~murray/\">https://"
-"people.FreeBSD.org/~murray/</otheraddr>\n"
+"\t    <otheraddr xlink:href=\"https://people.FreeBSD.org/~murray/\">https://people.FreeBSD.org/~murray/</otheraddr>\n"
 "\t  "
 
 #. (itstool) path: authorgroup/author
@@ -229,8 +227,8 @@ msgid ""
 "The term <emphasis>stable</emphasis> in the name of the branch refers to the "
 "presumed Application Binary Interface stability, which is promised by the "
 "project. This means that a user application compiled on an older version of "
-"the system from the same branch works on a newer system from the same branch."
-" The ABI stability has improved greatly from the compared to previous "
+"the system from the same branch works on a newer system from the same "
+"branch. The ABI stability has improved greatly from the compared to previous "
 "releases. In most cases, binaries from the older <emphasis>STABLE</emphasis> "
 "systems run unmodified on newer systems, including <emphasis>HEAD</"
 "emphasis>, assuming that the system management interfaces are not used."
@@ -286,8 +284,8 @@ msgid ""
 "Bug reports and feature requests are continuously submitted by users "
 "throughout the release cycle. Problems reports are entered into our "
 "<application>Bugzilla</application> database through the web interface "
-"provided at <uri xlink:href=\"https://www.freebsd.org/support/bugreports."
-"html\">https://www.freebsd.org/support/bugreports.html</uri>."
+"provided at <uri xlink:href=\"https://www.freebsd.org/support/bugreports.html"
+"\">https://www.freebsd.org/support/bugreports.html</uri>."
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -440,7 +438,6 @@ msgid ""
 "freeze on the STABLE branch is lifted and release branch enters a "
 "<quote>hard code freeze</quote> where it becomes much harder to justify new "
 "changes to the system unless a serious bug-fix or security issue is involved."
-""
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -494,9 +491,7 @@ msgstr ""
 #. (itstool) path: sect3/screen
 #: article.translate.xml:350
 #, no-wrap
-msgid ""
-"<prompt>#</prompt> <userinput>svn cp $FSVN/stable/9@REVISION $FSVN/releng/9."
-"2</userinput>"
+msgid "<prompt>#</prompt> <userinput>svn cp $FSVN/stable/9@REVISION $FSVN/releng/9.2</userinput>"
 msgstr ""
 
 #. (itstool) path: sect3/para
@@ -729,8 +724,7 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:492
-msgid ""
-"<filename>src/release/doc/share/examples/Makefile.relnotesng</filename>"
+msgid "<filename>src/release/doc/share/examples/Makefile.relnotesng</filename>"
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -775,15 +769,14 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:526
-msgid ""
-"<filename>src/release/doc/en_US.ISO8859-1/errata/article.xml</filename>"
+msgid "<filename>src/release/doc/en_US.ISO8859-1/errata/article.xml</filename>"
 msgstr ""
 
 #. (itstool) path: footnote/simpara
 #: article.translate.xml:534
 msgid ""
-"FreeBSD Ports Collection <uri xlink:href=\"https://www.FreeBSD.org/"
-"ports\">https://www.FreeBSD.org/ports</uri>"
+"FreeBSD Ports Collection <uri xlink:href=\"https://www.FreeBSD.org/ports"
+"\">https://www.FreeBSD.org/ports</uri>"
 msgstr ""
 
 #. (itstool) path: sect3/para
@@ -855,9 +848,7 @@ msgstr ""
 #. (itstool) path: sect3/screen
 #: article.translate.xml:583
 #, no-wrap
-msgid ""
-"<prompt>#</prompt> <userinput>svn cp $FSVN/releng/9.2 $FSVN/release/9.2.0</"
-"userinput>"
+msgid "<prompt>#</prompt> <userinput>svn cp $FSVN/releng/9.2 $FSVN/release/9.2.0</userinput>"
 msgstr ""
 
 #. (itstool) path: sect3/para
@@ -896,15 +887,16 @@ msgid ""
 "loaded when <citerefentry><refentrytitle>mdconfig</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> is executed during the "
 "boot media creation phase. All of the tools necessary to build a release are "
-"available from the Subversion repository in <filename>src/release</filename>."
-" These tools aim to provide a consistent way to build FreeBSD releases. A "
-"complete release can actually be built with only a single command, including "
-"the creation of <acronym>ISO</acronym> images suitable for burning to CDROM "
-"or DVD, and an FTP install directory. <citerefentry><refentrytitle>release</"
-"refentrytitle><manvolnum>7</manvolnum></citerefentry> fully documents the "
-"<command>src/release/generate-release.sh</command> script which is used to "
-"build a release. <command>generate-release.sh</command> is a wrapper around "
-"the Makefile target: <command>make release</command>."
+"available from the Subversion repository in <filename>src/release</"
+"filename>. These tools aim to provide a consistent way to build FreeBSD "
+"releases. A complete release can actually be built with only a single "
+"command, including the creation of <acronym>ISO</acronym> images suitable "
+"for burning to CDROM or DVD, and an FTP install directory. "
+"<citerefentry><refentrytitle>release</refentrytitle><manvolnum>7</"
+"manvolnum></citerefentry> fully documents the <command>src/release/generate-"
+"release.sh</command> script which is used to build a release. "
+"<command>generate-release.sh</command> is a wrapper around the Makefile "
+"target: <command>make release</command>."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -926,8 +918,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/src/release</userinput>\n"
-"<prompt>#</prompt> <userinput>sh generate-release.sh release/9.2.0 /local3/"
-"release</userinput>"
+"<prompt>#</prompt> <userinput>sh generate-release.sh release/9.2.0 /local3/release</userinput>"
 msgstr ""
 
 #. (itstool) path: sect2/para
@@ -1074,16 +1065,15 @@ msgid ""
 "file that provides meta-data for the disc so that "
 "<citerefentry><refentrytitle>bsdinstall</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> can validate and use the contents, and a "
-"<filename>filename.txt</filename> file that provides a manifest for the disc."
-" This <emphasis>manifest</emphasis> can be created with a simple command:"
+"<filename>filename.txt</filename> file that provides a manifest for the "
+"disc. This <emphasis>manifest</emphasis> can be created with a simple "
+"command:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:751
 #, no-wrap
-msgid ""
-"/stage/cdrom<prompt>#</prompt> <userinput>find . -type f | sed -e 's/^\\.\\//"
-"/' | sort &gt; filename.txt</userinput>"
+msgid "/stage/cdrom<prompt>#</prompt> <userinput>find . -type f | sed -e 's/^\\.\\///' | sort &gt; filename.txt</userinput>"
 msgstr ""
 
 #. (itstool) path: sect2/para
@@ -1194,7 +1184,6 @@ msgstr ""
 #: article.translate.xml:834
 msgid ""
 "The installable FTP directory as output from <command>make release</command>."
-""
 msgstr ""
 
 #. (itstool) path: varlistentry/term
@@ -1447,9 +1436,9 @@ msgstr ""
 #. (itstool) path: footnote/simpara
 #: article.translate.xml:1046
 msgid ""
-"John Baldwin's FreeBSD Release Engineering Proposal <uri xlink:href=\"https:/"
-"/people.FreeBSD.org/~jhb/docs/releng.txt\">https://people.FreeBSD.org/~jhb/"
-"docs/releng.txt</uri>"
+"John Baldwin's FreeBSD Release Engineering Proposal <uri xlink:href="
+"\"https://people.FreeBSD.org/~jhb/docs/releng.txt\">https://people.FreeBSD."
+"org/~jhb/docs/releng.txt</uri>"
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -1469,6 +1458,6 @@ msgid ""
 "org</email>, and others who worked on the release engineering tools in the "
 "very early days of FreeBSD. This article was influenced by release "
 "engineering documents from the CSRG <_:footnote-1/> , the NetBSD Project, <_:"
-"footnote-2/> , and John Baldwin's proposed release engineering process notes."
-" <_:footnote-3/>"
+"footnote-2/> , and John Baldwin's proposed release engineering process "
+"notes. <_:footnote-3/>"
 msgstr ""
