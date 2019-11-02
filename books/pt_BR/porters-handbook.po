@@ -6,15 +6,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-11-02 17:05-0300\n"
-"PO-Revision-Date: 2019-06-15 09:45+0000\n"
+"PO-Revision-Date: 2019-11-02 22:39+0000\n"
 "Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
-"Language-Team: \n"
+"Language-Team: Portuguese (Brazil) <https://weblate.eastus.cloudapp.azure."
+"com/projects/freebsd-doc/boooks_porters-handbook/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 4.6.2\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -1885,29 +1886,16 @@ msgstr ""
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:1047
-#, fuzzy, no-wrap
-#| msgid ""
-#| "USES=\t\ticonv\n"
-#| "\n"
-#| "post-patch:\n"
-#| "\t@${REINPLACE_CMD} -e 's/-liconv/${ICONV_LIB}/' ${WRKSRC}/Makefile"
+#, no-wrap
 msgid ""
 "post-patch:\n"
 "\t@${REINPLACE_CMD} -e 's|/usr/local|${PREFIX}|g' ${WRKSRC}/Makefile"
 msgstr ""
-"USES=\t\ticonv\n"
-"\n"
 "post-patch:\n"
-"\t@${REINPLACE_CMD} -e 's/-liconv/${ICONV_LIB}/' ${WRKSRC}/Makefile"
+"\t@${REINPLACE_CMD} -e 's|/usr/local|${PREFIX}|g' ${WRKSRC}/Makefile"
 
 #. (itstool) path: important/para
 #: book.translate.xml:1051
-#, fuzzy
-#| msgid ""
-#| "From time to time, using <citerefentry><refentrytitle>sed</"
-#| "refentrytitle><manvolnum>1</manvolnum></citerefentry> for patching is not "
-#| "enough. When using <citerefentry><refentrytitle>perl</"
-#| "refentrytitle><manvolnum>1</manvolnum></citerefentry> is easier, use:"
 msgid ""
 "Only use <citerefentry><refentrytitle>sed</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> to replace variable content. You must use patch "
@@ -1915,11 +1903,10 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> to replace static "
 "content."
 msgstr ""
-"De tempos em tempos, o uso do <citerefentry><refentrytitle>sed</"
-"refentrytitle><manvolnum>1</manvolnum></citerefentry> para patches se torna "
-"insuficiente. Quando usar <citerefentry><refentrytitle>perl</"
-"refentrytitle><manvolnum>1</manvolnum></citerefentry> fica mais facil, para "
-"isso utilize:"
+"Use o <citerefentry><refentrytitle>sed</refentrytitle><manvolnum>1</manvolnum"
+"></citerefentry> apenas para substituir conteúdo de variáveis. Você deve "
+"usar arquivos patch em vez do <citerefentry><refentrytitle>sed</refentrytitle"
+"><manvolnum>1</manvolnum></citerefentry> para substituir conteúdo estático."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1056
@@ -9331,6 +9318,10 @@ msgid ""
 "to fix those categories of problems on any port. These fixes do not need "
 "approval from the maintainer."
 msgstr ""
+"Alguns tipos de correções tem <quote>aprovação implícita</quote> da Equipe "
+"de Gerenciamento do Ports <email>portmgr@FreeBSD.org</email>, permitindo que "
+"qualquer committer conserte essas categorias de problemas em qualquer port. "
+"Essas correções não precisam da aprovação do mantenedor."
 
 #. (itstool) path: note/para
 #: book.translate.xml:5206
@@ -11499,6 +11490,13 @@ msgid ""
 "dependency set. The goal is not to include every dependency possible. Only "
 "include those that will benefit most people."
 msgstr ""
+"Quando o software possui dependências extras que fornecem recursos extras, "
+"as dependências básicas listadas em "
+"<varname><replaceable>*</replaceable>_DEPENDS</varname> devem incluir as "
+"dependências extras que beneficiariam a maioria dos usuários. As "
+"dependências básicas nunca devem ser um conjunto de dependências "
+"<quote>mínima</quote>. O objetivo não é incluir todas as dependências "
+"possíveis. Inclua apenas aquelas que beneficiarão a maioria das pessoas."
 
 #. (itstool) path: sect2/title
 #. (itstool) path: listitem/para
@@ -13452,11 +13450,7 @@ msgstr ""
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:7661
-#, fuzzy, no-wrap
-#| msgid ""
-#| "OPTIONS_DEFINE=\tOPT1\n"
-#| "OPT1_USE=\tmysql=yes xorg=x11,xextproto,xext,xrandr\n"
-#| "OPT1_USE_OFF=\topenssl=yes"
+#, no-wrap
 msgid ""
 "OPTIONS_DEFINE=\tOPT1\n"
 "OPT1_USES=\txorg\n"
@@ -13464,23 +13458,13 @@ msgid ""
 "OPT1_USE_OFF=\topenssl=yes"
 msgstr ""
 "OPTIONS_DEFINE=\tOPT1\n"
+"OPT1_USES=\txorg\n"
 "OPT1_USE=\tmysql=yes xorg=x11,xextproto,xext,xrandr\n"
 "OPT1_USE_OFF=\topenssl=yes"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:7668
-#, fuzzy, no-wrap
-#| msgid ""
-#| "OPTIONS_DEFINE=\tOPT1\n"
-#| "\n"
-#| ".include &lt;bsd.port.options.mk&gt;\n"
-#| "\n"
-#| ".if ${PORT_OPTIONS:MOPT1}\n"
-#| "USE_MYSQL=\tyes\n"
-#| "USE_XORG=\tx11 xextproto xext xrandr\n"
-#| ".else\n"
-#| "USE_OPENSSL=\tyes\n"
-#| ".endif"
+#, no-wrap
 msgid ""
 "OPTIONS_DEFINE=\tOPT1\n"
 "\n"
@@ -13500,6 +13484,7 @@ msgstr ""
 "\n"
 ".if ${PORT_OPTIONS:MOPT1}\n"
 "USE_MYSQL=\tyes\n"
+"USES+=\t\txorg\n"
 "USE_XORG=\tx11 xextproto xext xrandr\n"
 ".else\n"
 "USE_OPENSSL=\tyes\n"
@@ -14349,14 +14334,7 @@ msgstr ""
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:8122
-#, fuzzy, no-wrap
-#| msgid ""
-#| "OPTIONS_DEFINE=\tX11 GNOME\n"
-#| "OPTIONS_DEFAULT=\tX11\n"
-#| "\n"
-#| "X11_USE=\txorg=xi,xextproto\n"
-#| "GNOME_USE=\tgnome=gtk30\n"
-#| "GNOME_IMPLIES=\tX11"
+#, no-wrap
 msgid ""
 "OPTIONS_DEFINE=\tX11 GNOME\n"
 "OPTIONS_DEFAULT=\tX11\n"
@@ -14369,6 +14347,7 @@ msgstr ""
 "OPTIONS_DEFINE=\tX11 GNOME\n"
 "OPTIONS_DEFAULT=\tX11\n"
 "\n"
+"X11_USES=\txorg\n"
 "X11_USE=\txorg=xi,xextproto\n"
 "GNOME_USE=\tgnome=gtk30\n"
 "GNOME_IMPLIES=\tX11"
@@ -15184,18 +15163,7 @@ msgstr ""
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:8702
-#, fuzzy, no-wrap
-#| msgid ""
-#| "OPTIONS_DEFINE=\tOPT1\n"
-#| "\n"
-#| "post-patch:\n"
-#| "\t@${REINPLACE_CMD} -e 's/echo/true/' ${WRKSRC}/Makefile\n"
-#| "\n"
-#| "post-patch-OPT1-on:\n"
-#| "\t@${REINPLACE_CMD} -e '/opt1/d' ${WRKSRC}/Makefile\n"
-#| "\n"
-#| "post-patch-OPT1-off:\n"
-#| "\t@${REINPLACE_CMD} -e '/opt1/s|/usr/bin/|${LOCALBASE}/bin/|' ${WRKSRC}/Makefile"
+#, no-wrap
 msgid ""
 "OPTIONS_DEFINE=\tOPT1\n"
 "\n"
@@ -15207,30 +15175,16 @@ msgid ""
 msgstr ""
 "OPTIONS_DEFINE=\tOPT1\n"
 "\n"
-"post-patch:\n"
-"\t@${REINPLACE_CMD} -e 's/echo/true/' ${WRKSRC}/Makefile\n"
-"\n"
 "post-patch-OPT1-on:\n"
-"\t@${REINPLACE_CMD} -e '/opt1/d' ${WRKSRC}/Makefile\n"
+"\t@${REINPLACE_CMD} -e '/opt1/s|/usr/bin/|${EXAMPLESDIR}/|' ${WRKSRC}/"
+"Makefile\n"
 "\n"
 "post-patch-OPT1-off:\n"
-"\t@${REINPLACE_CMD} -e '/opt1/s|/usr/bin/|${LOCALBASE}/bin/|' ${WRKSRC}/Makefile"
+"\t@${REINPLACE_CMD} -e '/opt1/s|/usr/bin/|${PREFIX}/bin/|' ${WRKSRC}/Makefile"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:8712
-#, fuzzy, no-wrap
-#| msgid ""
-#| "OPTIONS_DEFINE=\tOPT1\n"
-#| "\n"
-#| ".include &lt;bsd.port.options.mk&gt;\n"
-#| "\n"
-#| "post-patch:\n"
-#| "\t@${REINPLACE_CMD} -e 's/echo/true/' ${WRKSRC}/Makefile\n"
-#| ".if ${PORT_OPTIONS:MOPT1}\n"
-#| "\t@${REINPLACE_CMD} -e '/opt1/d' ${WRKSRC}/Makefile\n"
-#| ".else\n"
-#| "\t@${REINPLACE_CMD} -e '/opt1/s|/usr/bin/|${LOCALBASE}/bin/|' ${WRKSRC}/Makefile\n"
-#| ".endif"
+#, no-wrap
 msgid ""
 "OPTIONS_DEFINE=\tOPT1\n"
 "\n"
@@ -15248,11 +15202,12 @@ msgstr ""
 ".include &lt;bsd.port.options.mk&gt;\n"
 "\n"
 "post-patch:\n"
-"\t@${REINPLACE_CMD} -e 's/echo/true/' ${WRKSRC}/Makefile\n"
 ".if ${PORT_OPTIONS:MOPT1}\n"
-"\t@${REINPLACE_CMD} -e '/opt1/d' ${WRKSRC}/Makefile\n"
+"\t@${REINPLACE_CMD} -e '/opt1/s|/usr/bin/|${EXAMPLESDIR}/|' ${WRKSRC}/"
+"Makefile\n"
 ".else\n"
-"\t@${REINPLACE_CMD} -e '/opt1/s|/usr/bin/|${LOCALBASE}/bin/|' ${WRKSRC}/Makefile\n"
+"\t@${REINPLACE_CMD} -e '/opt1/s|/usr/bin/|${PREFIX}/bin/|' ${WRKSRC}/"
+"Makefile\n"
 ".endif"
 
 #. (itstool) path: sect1/title
@@ -17852,16 +17807,12 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:10112
-#, fuzzy
-#| msgid ""
-#| "Port specific <application>CMake</application> flags to be passed to the "
-#| "<command>cmake</command> binary."
 msgid ""
 "Building <application>Rust</application> Applications with <command>cargo</"
 "command>"
 msgstr ""
-"Flags do <application>CMake</application> especificas para o port a serem "
-"passadas para o binário do <command>cmake</command>."
+"Compilando Aplicações <application>Rust</application> com "
+"<command>cargo</command>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10115
@@ -18425,6 +18376,9 @@ msgid ""
 "<application>Poudriere</application>, remember to run <command>make clean</"
 "command> before any testing."
 msgstr ""
+"Se você não estiver testando seu port em um ambiente limpo, como com o "
+"<application>Poudriere</application>, lembre-se de executar <command>make "
+"clean</command> antes de qualquer teste."
 
 #. (itstool) path: example/title
 #: book.translate.xml:10409
@@ -18583,10 +18537,8 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:10501
-#, fuzzy
-#| msgid "Using <application>Lua</application>"
 msgid "Building <application>Go</application> Applications"
-msgstr "Usando <application>Lua</application>"
+msgstr "Compilando Aplicações <application>Go</application>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10504
@@ -18595,45 +18547,29 @@ msgid ""
 "literal>. Refer to <xref linkend=\"uses-go\"/> for a list of variables that "
 "can be set to control the build process."
 msgstr ""
+"Para ports que usam <application>Go</application>, defina "
+"<literal>USES=go</literal>. Consulte <xref linkend=\"uses-go\"/> para obter "
+"a lista de variáveis que podem ser configuradas para controlar o processo de "
+"compilação."
 
 #. (itstool) path: example/title
 #: book.translate.xml:10509
-#, fuzzy
-#| msgid "Creating a Port for a Simple Rust Application"
 msgid "Creating a Port for a Go Modules Based Application"
-msgstr "Criando um Port para uma Aplicação Simples em Rust"
+msgstr "Criando um Port para uma Aplicação Baseada em Módulos Go"
 
 #. (itstool) path: example/para
 #: book.translate.xml:10512
-#, fuzzy
-#| msgid ""
-#| "Creating a Cargo based port is a three stage process. First we need to "
-#| "provide a ports template that fetches the application distribution file:"
 msgid ""
 "Creating a Go based port is a five stage process. First we need to provide a "
 "ports template that fetches the application distribution file:"
 msgstr ""
-"Criar um port baseado em cargo é um processo de três estágios. Primeiro, "
-"precisamos fornecer um modelo de port que busque o arquivo de distribuição "
-"do aplicativo:"
+"Criar um port baseado em Go é um processo de cinco estágios. Primeiro, "
+"precisamos fornecer um modelo de port que baixa o arquivo de distribuição do "
+"aplicativo:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:10516
-#, fuzzy, no-wrap
-#| msgid ""
-#| "PORTNAME=\ttokei\n"
-#| "DISTVERSIONPREFIX=\tv\n"
-#| "DISTVERSION=\t7.0.2\n"
-#| "CATEGORIES=\tdevel\n"
-#| "\n"
-#| "MAINTAINER=\ttobik@FreeBSD.org\n"
-#| "COMMENT=\tDisplay statistics about your code\n"
-#| "\n"
-#| "USES=\t\tcargo\n"
-#| "USE_GITHUB=\tyes\n"
-#| "GH_ACCOUNT=\tAaronepower\n"
-#| "\n"
-#| ".include &lt;bsd.port.mk&gt;"
+#, no-wrap
 msgid ""
 "PORTNAME=\tghq\n"
 "DISTVERSIONPREFIX=\tv\n"
@@ -18649,29 +18585,23 @@ msgid ""
 "\n"
 ".include &lt;bsd.port.mk&gt;"
 msgstr ""
-"PORTNAME=\ttokei\n"
+"PORTNAME=\tghq\n"
 "DISTVERSIONPREFIX=\tv\n"
-"DISTVERSION=\t7.0.2\n"
+"DISTVERSION=\t0.12.5\n"
 "CATEGORIES=\tdevel\n"
 "\n"
 "MAINTAINER=\ttobik@FreeBSD.org\n"
-"COMMENT=\tDisplay statistics about your code\n"
+"COMMENT=\tRemote repository management made easy\n"
 "\n"
-"USES=\t\tcargo\n"
+"USES=\t\tgo:modules\n"
 "USE_GITHUB=\tyes\n"
-"GH_ACCOUNT=\tAaronepower\n"
+"GH_ACCOUNT=\tmotemen\n"
 "\n"
 ".include &lt;bsd.port.mk&gt;"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:10533
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<prompt>%</prompt> <userinput>make makesum</userinput>\n"
-#| "=&gt; Aaronepower-tokei-v7.0.2_GH0.tar.gz doesn't seem to exist in /usr/ports/distfiles/.\n"
-#| "=&gt; Attempting to fetch https://codeload.github.com/Aaronepower/tokei/tar.gz/v7.0.2?dummy=/Aaronepower-tokei-v7.0.2_GH0.tar.gz\n"
-#| "fetch: https://codeload.github.com/Aaronepower/tokei/tar.gz/v7.0.2?dummy=/Aaronepower-tokei-v7.0.2_GH0.tar.gz: size of remote file is not known\n"
-#| "Aaronepower-tokei-v7.0.2_GH0.tar.gz                     45 kB  239 kBps 00m00s"
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>make makesum</userinput>\n"
 "===&gt;  License MIT accepted by the user\n"
@@ -18681,24 +18611,26 @@ msgid ""
 "motemen-ghq-v0.12.5_GH0.tar.gz                          32 kB  177 kBps    00s"
 msgstr ""
 "<prompt>%</prompt> <userinput>make makesum</userinput>\n"
-"=&gt; Aaronepower-tokei-v7.0.2_GH0.tar.gz doesn't seem to exist in /usr/ports/distfiles/.\n"
-"=&gt; Attempting to fetch https://codeload.github.com/Aaronepower/tokei/tar.gz/v7.0.2?dummy=/Aaronepower-tokei-v7.0.2_GH0.tar.gz\n"
-"fetch: https://codeload.github.com/Aaronepower/tokei/tar.gz/v7.0.2?dummy=/Aaronepower-tokei-v7.0.2_GH0.tar.gz: size of remote file is not known\n"
-"Aaronepower-tokei-v7.0.2_GH0.tar.gz                     45 kB  239 kBps 00m00s"
+"===&gt;  License MIT accepted by the user\n"
+"=&gt; motemen-ghq-v0.12.5_GH0.tar.gz doesn't seem to exist in /usr/ports/"
+"distfiles/.\n"
+"=&gt; Attempting to fetch https://codeload.github.com/motemen/ghq/tar.gz/"
+"v0.12.5?dummy=/motemen-ghq-v0.12.5_GH0.tar.gz\n"
+"fetch: https://codeload.github.com/motemen/ghq/tar.gz/v0.12.5?dummy=/motemen-"
+"ghq-v0.12.5_GH0.tar.gz: size of remote file is not known\n"
+"motemen-ghq-v0.12.5_GH0.tar.gz                          32 kB  177 kBps    "
+"00s"
 
 #. (itstool) path: example/para
 #: book.translate.xml:10540
-#, fuzzy
-#| msgid ""
-#| "Now the distribution file is ready to use and we can go ahead and extract "
-#| "crate dependencies from the bundled <filename>Cargo.lock</filename>:"
 msgid ""
 "Now the distribution file is ready to use and we can extract the required Go "
 "module dependencies. This step requires having <package role=\"port\">ports-"
 "mgmt/modules2tuple</package> installed:"
 msgstr ""
-"Agora o arquivo de distribuição está pronto para uso e podemos ir em frente "
-"e extrair as dependências crate do pacote <filename>Cargo.lock</filename>: "
+"Agora o arquivo de distribuição está pronto para uso e podemos extrair as "
+"dependências necessárias de módulos Go. Esta etapa requer a instalação do <"
+"package role=\"port\">ports-mgmt/modules2tuple</package>:"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:10546
@@ -18716,6 +18648,21 @@ msgid ""
 "\t\tmotemen:go-colorine:45d19169413a:motemen_go_colorine/vendor/github.com/motemen/go-colorine \\\n"
 "\t\turfave:cli:v1.20.0:urfave_cli/vendor/github.com/urfave/cli"
 msgstr ""
+"<prompt>%</prompt> <userinput>make gomod-vendor</userinput>\n"
+"[...]\n"
+"GH_TUPLE=\t\\\n"
+"\t\tSongmu:gitconfig:v0.0.2:songmu_gitconfig/vendor/github.com/Songmu/"
+"gitconfig \\\n"
+"\t\tdaviddengcn:go-colortext:186a3d44e920:daviddengcn_go_colortext/vendor/"
+"github.com/daviddengcn/go-colortext \\\n"
+"\t\tgo-yaml:yaml:v2.2.2:go_yaml_yaml/vendor/gopkg.in/yaml.v2 \\\n"
+"\t\tgolang:net:3ec191127204:golang_net/vendor/golang.org/x/net \\\n"
+"\t\tgolang:sync:112230192c58:golang_sync/vendor/golang.org/x/sync \\\n"
+"\t\tgolang:xerrors:3ee3066db522:golang_xerrors/vendor/golang.org/x/xerrors \\"
+"\n"
+"\t\tmotemen:go-colorine:45d19169413a:motemen_go_colorine/vendor/github.com/"
+"motemen/go-colorine \\\n"
+"\t\turfave:cli:v1.20.0:urfave_cli/vendor/github.com/urfave/cli"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:10561
@@ -18743,19 +18690,40 @@ msgid ""
 "\n"
 ".include &lt;bsd.port.mk&gt;"
 msgstr ""
+"PORTNAME=\tghq\n"
+"DISTVERSIONPREFIX=\tv\n"
+"DISTVERSION=\t0.12.5\n"
+"CATEGORIES=\tdevel\n"
+"\n"
+"MAINTAINER=\ttobik@FreeBSD.org\n"
+"COMMENT=\tRemote repository management made easy\n"
+"\n"
+"USES=\t\tgo:modules\n"
+"USE_GITHUB=\tyes\n"
+"GH_ACCOUNT=\tmotemen\n"
+"GH_TUPLE=\tSongmu:gitconfig:v0.0.2:songmu_gitconfig/vendor/github.com/Songmu/"
+"gitconfig \\\n"
+"\t\tdaviddengcn:go-colortext:186a3d44e920:daviddengcn_go_colortext/vendor/"
+"github.com/daviddengcn/go-colortext \\\n"
+"\t\tgo-yaml:yaml:v2.2.2:go_yaml_yaml/vendor/gopkg.in/yaml.v2 \\\n"
+"\t\tgolang:net:3ec191127204:golang_net/vendor/golang.org/x/net \\\n"
+"\t\tgolang:sync:112230192c58:golang_sync/vendor/golang.org/x/sync \\\n"
+"\t\tgolang:xerrors:3ee3066db522:golang_xerrors/vendor/golang.org/x/xerrors \\"
+"\n"
+"\t\tmotemen:go-colorine:45d19169413a:motemen_go_colorine/vendor/github.com/"
+"motemen/go-colorine \\\n"
+"\t\turfave:cli:v1.20.0:urfave_cli/vendor/github.com/urfave/cli\n"
+"\n"
+".include &lt;bsd.port.mk&gt;"
 
 #. (itstool) path: example/para
 #: book.translate.xml:10583
-#, fuzzy
-#| msgid ""
-#| "<filename>distinfo</filename> needs to be regenerated to contain all the "
-#| "crate distribution files:"
 msgid ""
 "<filename>distinfo</filename> needs to be regenerated to contain all the "
 "distribution files:"
 msgstr ""
-"O <filename>distinfo</filename> precisa ser regenerado para conter todos os "
-"arquivos de distribuição dos crates:"
+"O <filename>distinfo</filename> precisa ser gerado novamente para conter "
+"todos os arquivos de distribuição:"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:10586
@@ -18772,11 +18740,31 @@ msgid ""
 "daviddengcn-go-colortext-186a3d44e920_GH0.tar.        4534  B 1098 kBps    00s\n"
 "[...]"
 msgstr ""
+"<prompt>%</prompt> <userinput>make makesum</userinput>\n"
+"=&gt; Songmu-gitconfig-v0.0.2_GH0.tar.gz doesn't seem to exist in /usr/ports/"
+"distfiles/.\n"
+"=&gt; Attempting to fetch https://codeload.github.com/Songmu/gitconfig/tar."
+"gz/v0.0.2?dummy=/Songmu-gitconfig-v0.0.2_GH0.tar.gz\n"
+"fetch: https://codeload.github.com/Songmu/gitconfig/tar.gz/v0.0.2?dummy"
+"=/Songmu-gitconfig-v0.0.2_GH0.tar.gz: size of remote file is not known\n"
+"Songmu-gitconfig-v0.0.2_GH0.tar.gz                    5662  B  936 kBps    "
+"00s\n"
+"=&gt; daviddengcn-go-colortext-186a3d44e920_GH0.tar.gz doesn't seem to exist "
+"in /usr/ports/distfiles/.\n"
+"=&gt; Attempting to fetch https://codeload.github.com/daviddengcn/"
+"go-colortext/tar.gz/186a3d44e920?dummy=/daviddengcn-go-colortext-"
+"186a3d44e920_GH0.tar.gz\n"
+"fetch: https://codeload.github.com/daviddengcn/go-colortext/tar.gz/"
+"186a3d44e920?dummy=/daviddengcn-go-colortext-186a3d44e920_GH0.tar.gz: size "
+"of remote file is not known\n"
+"daviddengcn-go-colortext-186a3d44e920_GH0.tar.        4534  B 1098 kBps    "
+"00s\n"
+"[...]"
 
 #. (itstool) path: example/title
 #: book.translate.xml:10607
 msgid "Setting Output Binary Name or Installation Path"
-msgstr ""
+msgstr "Definindo o Nome do Binário ou o Caminho da Instalação"
 
 #. (itstool) path: example/para
 #: book.translate.xml:10609
@@ -18785,38 +18773,40 @@ msgid ""
 "a path other than the default <literal>${PREFIX}/bin</literal>. This can be "
 "done by using <varname>GO_TARGET</varname> tuple syntax, for example:"
 msgstr ""
+"Alguns ports precisam instalar o binário resultante com um nome diferente ou "
+"em um caminho diferente do padrão <literal>${PREFIX}/bin</literal>. Isso "
+"pode ser feito usando a sintaxe de tupla <varname>GO_TARGET</varname>, por "
+"exemplo:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:10614
 #, no-wrap
 msgid "GO_TARGET=  ./cmd/ipfs:ipfs-go"
-msgstr ""
+msgstr "GO_TARGET=  ./cmd/ipfs:ipfs-go"
 
 #. (itstool) path: example/para
 #: book.translate.xml:10616
-#, fuzzy
-#| msgid ""
-#| "<literal>FSF</literal> <literal>OSI</literal> <literal>COPYFREE</literal>"
 msgid ""
 "will install <literal>ipfs</literal> binary as <literal>${PREFIX}/bin/ipfs-"
 "go</literal> and"
 msgstr ""
-"<literal>FSF</literal> <literal>OSI</literal> <literal>COPYFREE</literal>"
+"irá instalar o binário <literal>ipfs</literal> como <literal>${PREFIX}/bin/"
+"ipfs-go</literal> e"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:10618
 #, no-wrap
 msgid "GO_TARGET=  ./dnscrypt-proxy:${PREFIX}/sbin/dnscrypt-proxy"
-msgstr ""
+msgstr "GO_TARGET=  ./dnscrypt-proxy:${PREFIX}/sbin/dnscrypt-proxy"
 
 #. (itstool) path: example/para
 #: book.translate.xml:10620
-#, fuzzy
-#| msgid "<literal>dist-mirror</literal> <literal>dist-sell</literal>"
 msgid ""
 "will install <literal>dnscrypt-proxy</literal> to <literal>${PREFIX}/sbin</"
 "literal>."
-msgstr "<literal>dist-mirror</literal> <literal>dist-sell</literal>"
+msgstr ""
+"irá instalar <literal>dnscrypt-proxy</literal> em "
+"<literal>${PREFIX}/sbin</literal>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:10627
@@ -19451,13 +19441,6 @@ msgstr "Componentes X.Org"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10947
-#, fuzzy
-#| msgid ""
-#| "The X11 implementation available in The Ports Collection is X.Org. If the "
-#| "application depends on X components, set <varname>USE_XORG</varname> to "
-#| "the list of required components. A full list can be found in <xref "
-#| "linkend=\"using-x11-components\"/>. An always up-to-date list can be "
-#| "found in <filename>/usr/ports/Mk/bsd.xorg.mk</filename>."
 msgid ""
 "The X11 implementation available in The Ports Collection is X.Org. If the "
 "application depends on X components, add <varname>USES= xorg</varname> and "
@@ -19465,10 +19448,9 @@ msgid ""
 "list can be found in <xref linkend=\"uses-xorg\"/>."
 msgstr ""
 "A implementação do X11 disponível na Coleção de Ports é o X.Org. Se o "
-"aplicativo depender de componentes X, defina <varname>USE_XORG</varname> na "
-"lista de componentes necessários. Uma lista completa pode ser encontrada em "
-"<xref linkend=\"using-x11-components\"/>. Uma lista sempre atualizada pode "
-"ser encontrada em <filename>/usr/ports/Mk/bsd.xorg.mk</filename>."
+"aplicativo depender de componentes X, adicione <varname>USES= xorg</varname> "
+"e defina <varname>USE_XORG</varname> na lista de componentes necessários. "
+"Uma lista completa pode ser encontrada em <xref linkend=\"uses-xorg\"/>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10954
@@ -19494,17 +19476,13 @@ msgstr "Exemplo <varname>USE_XORG</varname>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:10965
-#, fuzzy, no-wrap
-#| msgid ""
-#| "USES=\t\tgl\n"
-#| "USE_GL=\t\tglu\n"
-#| "USE_XORG=\txrender xft xkbfile xt xaw"
+#, no-wrap
 msgid ""
 "USES=\t\tgl xorg\n"
 "USE_GL=\t\tglu\n"
 "USE_XORG=\txrender xft xkbfile xt xaw"
 msgstr ""
-"USES=\t\tgl\n"
+"USES=\t\tgl xorg\n"
 "USE_GL=\t\tglu\n"
 "USE_XORG=\txrender xft xkbfile xt xaw"
 
@@ -19544,16 +19522,14 @@ msgstr "Usando Variáveis ​​Relacionadas ao X11"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:10993
-#, fuzzy, no-wrap
-#| msgid ""
-#| "# Use some X11 libraries\n"
-#| "USE_XORG=\tx11 xpm"
+#, no-wrap
 msgid ""
 "# Use some X11 libraries\n"
 "USES=\t\txorg\n"
 "USE_XORG=\tx11 xpm"
 msgstr ""
 "# Use some X11 libraries\n"
+"USES=\t\txorg\n"
 "USE_XORG=\tx11 xpm"
 
 #. (itstool) path: sect2/title
@@ -19978,16 +19954,6 @@ msgstr "<varname>INSTALLS_ICONS</varname>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11236
-#, fuzzy
-#| msgid ""
-#| "<application>GTK+</application> ports which install "
-#| "<application>Freedesktop</application>-style icons to <filename>"
-#| "${LOCALBASE}/share/icons</filename> should use this macro to ensure that "
-#| "the icons are cached and will display correctly. The cache file is named "
-#| "<filename>icon-theme.cache</filename>. Do not include that file in "
-#| "<filename>pkg-plist</filename>. This macro handles that automatically. "
-#| "This macro is not needed for <application>Qt</application>, which use a "
-#| "internal method."
 msgid ""
 "<application>GTK+</application> ports which install "
 "<application>Freedesktop</application>-style icons to <filename>${LOCALBASE}/"
@@ -20001,10 +19967,10 @@ msgstr ""
 "<application>Freedesktop</application> em <filename>${LOCALBASE}/share/"
 "icons</filename> deve usar essa macro para garantir que os ícones sejam "
 "armazenados em cache e exibidos corretamente. O arquivo de cache é nomeado "
-"<filename>icon-theme.cache</filename>. Não inclua esse arquivo em "
-"<filename>pkg-plist</filename>. Essa macro manipula isso automaticamente. "
-"Esta macro não é necessária para <application>Qt</application>, que usam um "
-"método interno."
+"<filename>icon-theme.cache</filename>. Não inclua esse arquivo em <filename"
+">pkg-plist</filename>. Essa macro manipula isso automaticamente. Esta macro "
+"não é necessária para <application>Qt</application>, que usam um método "
+"interno."
 
 #. (itstool) path: varlistentry/term
 #. (itstool) id: book.translate.xml#gnome-glibschema
@@ -20025,15 +19991,6 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11258
-#, fuzzy
-#| msgid ""
-#| "The glib schema files are written in <acronym>XML</acronym> and end with "
-#| "the <filename>gschema.xml</filename> extension. They are installed in the "
-#| "<filename>share/glib-2.0/schemas/</filename> directory. These schema "
-#| "files contain all application config values with there default settings. "
-#| "The actual database used by the applications is built by "
-#| "<application>glib-compile-schema</application>, which is run by the "
-#| "<varname>GLIB_SCHEMAS</varname> macro."
 msgid ""
 "The glib schema files are written in <acronym>XML</acronym> and end with the "
 "<filename>gschema.xml</filename> extension. They are installed in the "
@@ -20049,7 +20006,7 @@ msgstr ""
 "arquivos de esquema contêm todos os valores de configuração do aplicativo "
 "com as configurações padrão. O banco de dados real usado pelos aplicativos é "
 "construído por <application>glib-compile-schema</application>, que é "
-"executado pela macro <varname>GLIB_SCHEMAS</varname>. "
+"executado pela macro <varname>GLIB_SCHEMAS</varname>."
 
 #. (itstool) path: listitem/programlisting
 #: book.translate.xml:11269
@@ -20086,14 +20043,6 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11289
-#, fuzzy
-#| msgid ""
-#| "GConf is the <acronym>XML</acronym>-based database that virtually all "
-#| "GNOME applications use for storing their settings. These files are "
-#| "installed into the <filename>etc/gconf/schemas</filename> directory. This "
-#| "database is defined by installed schema files that are used to generate "
-#| "<filename>%gconf.xml</filename> key files. For each schema file installed "
-#| "by the port, there be an entry in the <filename>Makefile</filename>:"
 msgid ""
 "GConf is the <acronym>XML</acronym>-based database that virtually all GNOME "
 "applications use for storing their settings. These files are installed into "
@@ -20106,9 +20055,9 @@ msgstr ""
 "praticamente todos os aplicativos GNOME usam para armazenar suas "
 "configurações. Esses arquivos são instalados no banco de dados no diretório "
 "<filename>etc/gconf/schemas</filename>. Esse banco de dados é definido pelos "
-"arquivos de esquema instalados que são usados ​​para gerar os arquivos chave "
+"arquivos de esquema instalados que são usados para gerar os arquivos chave "
 "<filename>%gconf.xml</filename>. Para cada arquivo de esquema instalado pelo "
-"port, existe uma entrada no <filename>Makefile</filename>: "
+"port, deve existir uma entrada no <filename>Makefile</filename>:"
 
 #. (itstool) path: listitem/programlisting
 #: book.translate.xml:11299
@@ -21534,13 +21483,10 @@ msgstr "Usando o Qt"
 
 #. (itstool) path: note/para
 #: book.translate.xml:11967
-#, fuzzy
-#| msgid ""
-#| "For the complete list of values, please see <xref linkend=\"uses\"/>."
 msgid ""
 "For ports that are part of Qt itself, see <xref linkend=\"uses-qt-dist\"/>."
 msgstr ""
-"Para a lista completa de valores, por favor veja o <xref linkend=\"uses\"/>."
+"Para ports que fazem parte do Qt, veja <xref linkend=\"uses-qt-dist\"/>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11971
@@ -28233,38 +28179,28 @@ msgstr ""
 
 #. (itstool) path: example/title
 #: book.translate.xml:15875
-#, fuzzy
-#| msgid "Using Xfce's Own GTK3 Widgets"
 msgid "Using Xfce's Own GTK2 Widgets"
-msgstr "Usando os Próprios Widgets GTK3 do Xfce"
+msgstr "Usando os Próprios Widgets GTK2 do Xfce"
 
 #. (itstool) path: example/para
 #: book.translate.xml:15877
-#, fuzzy
-#| msgid ""
-#| "In this example, the ported application uses the <application>GTK3</"
-#| "application>-specific widgets <package role=\"port\">x11/libxfce4menu</"
-#| "package> and <package role=\"port\">x11/xfce4-conf</package>."
 msgid ""
 "In this example, the ported application uses the <application>GTK2</"
 "application>-specific widgets <package role=\"port\">x11/libxfce4menu</"
 "package> and <package role=\"port\">x11/xfce4-conf</package>."
 msgstr ""
 "Neste exemplo, o aplicativo portado usa os widgets específicos do "
-"<application>GTK3</application>, o <package role=\"port\">x11/libxfce4menu</"
-"package> e o <package role=\"port\">x11/xfce4-conf</package>."
+"<application>GTK2</application>, o <package role=\"port\">x11/"
+"libxfce4menu</package> e o <package role=\"port\">x11/xfce4-conf</package>."
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:15880
-#, fuzzy, no-wrap
-#| msgid ""
-#| "USES=\t\txfce:gtk3\n"
-#| "USE_XFCE=\tlibmenu xfconf"
+#, no-wrap
 msgid ""
 "USES=\t\txfce:gtk2\n"
 "USE_XFCE=\tlibmenu xfconf"
 msgstr ""
-"USES=\t\txfce:gtk3\n"
+"USES=\t\txfce:gtk2\n"
 "USE_XFCE=\tlibmenu xfconf"
 
 #. (itstool) path: tip/para
@@ -30381,18 +30317,6 @@ msgstr "Lista de Pacotes Estática versus Dinâmica"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:17029
-#, fuzzy
-#| msgid ""
-#| "A <emphasis>static package list</emphasis> is a package list which is "
-#| "available in the Ports Collection either as <filename>pkg-plist</"
-#| "filename> (with or without variable substitution), or embedded into the "
-#| "<filename>Makefile</filename> via <varname>PLIST_FILES</varname> and "
-#| "<varname>PLIST_DIRS</varname>. Even if the contents are auto-generated by "
-#| "a tool or a target in the Makefile <emphasis>before</emphasis> the "
-#| "inclusion into the Ports Collection by a committer (for example, using "
-#| "<command>make makeplist&gt;</command>), this is still considered a static "
-#| "list, since it is possible to examine it without having to download or "
-#| "compile the distfile."
 msgid ""
 "A <emphasis>static package list</emphasis> is a package list which is "
 "available in the Ports Collection either as <filename>pkg-plist</filename> "
@@ -30405,15 +30329,15 @@ msgid ""
 "possible to examine it without having to download or compile the distfile."
 msgstr ""
 "Uma <emphasis>lista de pacotes estáticos</emphasis> é uma lista de pacotes "
-"que está disponível na Coleção de Ports ou como <filename>pkg-plist</"
-"filename> (com ou sem substituição de variável), ou embutido no "
+"que está disponível na Coleção de Ports ou como <filename>pkg-"
+"plist</filename> (com ou sem substituição de variável), ou embutido no "
 "<filename>Makefile</filename> através do <varname>PLIST_FILES</varname> e do "
 "<varname>PLIST_DIRS</varname>. Mesmo se o conteúdo for gerado "
-"automaticamente por uma ferramenta ou um taget no Makefile <emphasis>antes</"
-"emphasis> da inclusão na Coleção de Ports por um committer (por exemplo, "
-"usando <command>make makeplist&gt;</command>), isso ainda é considerado uma "
-"lista estática, já que é possível examiná-la sem ter que baixar ou compilar "
-"o distfile."
+"automaticamente por uma ferramenta ou um taget no Makefile "
+"<emphasis>antes</emphasis> da inclusão na Coleção de Ports por um committer ("
+"por exemplo, usando <command>make makeplist</command>), isso ainda é "
+"considerado uma lista estática, já que é possível examiná-la sem ter que "
+"baixar ou compilar o distfile."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:17043
@@ -31838,12 +31762,6 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:17875
-#, fuzzy
-#| msgid ""
-#| "The order into which the ports framework, and pkg, will sort versions is "
-#| "checked using the <literal>-t</literal> argument of "
-#| "<citerefentry><refentrytitle>pkg-version</refentrytitle><manvolnum>8</"
-#| "manvolnum></citerefentry>:"
 msgid ""
 "Do not surround the messages with either whitespace or lines of symbols "
 "(like <literal>----------</literal>, <literal>**********</literal>, or "
@@ -31851,10 +31769,10 @@ msgid ""
 "<citerefentry><refentrytitle>pkg</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>."
 msgstr ""
-"A ordem na qual o framework do ports e o pkg ordenará as versões, é "
-"verificada usando o argumento <literal>-t</literal> do "
-"<citerefentry><refentrytitle>pkg-version</refentrytitle><manvolnum>8</"
-"manvolnum></citerefentry>:"
+"Não coloque as mensagens entre espaços em branco ou linhas de símbolos (como "
+"<literal>----------</literal>, <literal>**********</literal>, ou "
+"<literal>==========</literal>). Deixe a formatação com o <citerefentry><refen"
+"trytitle>pkg</refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:17883
@@ -32045,10 +31963,8 @@ msgstr ""
 
 #. (itstool) path: example/title
 #: book.translate.xml:18026
-#, fuzzy
-#| msgid "<acronym>UCL</acronym>"
 msgid "<acronym>UCL</acronym> Short Strings"
-msgstr "<acronym>UCL</acronym>"
+msgstr "Strings Curtas <acronym>UCL</acronym>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:18028
@@ -32056,15 +31972,12 @@ msgid ""
 "The message is delimited by double quotes <literal>\"</literal>, this is "
 "used for simple single line strings:"
 msgstr ""
+"A mensagem é delimitada por aspas duplas <literal>\"</literal>, isto é "
+"utilizado em strings simples de linha única:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:18032
-#, fuzzy, no-wrap
-#| msgid ""
-#| "[\n"
-#| "{ message: \"Always displayed\"\n"
-#| "}\n"
-#| "]"
+#, no-wrap
 msgid ""
 "[\n"
 "{\n"
@@ -32073,16 +31986,15 @@ msgid ""
 "]"
 msgstr ""
 "[\n"
-"{ message: \"Always displayed\"\n"
+"{\n"
+"  message: \"Simple message\"\n"
 "}\n"
 "]"
 
 #. (itstool) path: example/title
 #: book.translate.xml:18040
-#, fuzzy
-#| msgid "<acronym>UCL</acronym>"
 msgid "<acronym>UCL</acronym> Multiline Strings"
-msgstr "<acronym>UCL</acronym>"
+msgstr "Strings de Múltiplas Linhas <acronym>UCL</acronym>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:18042
@@ -32094,17 +32006,17 @@ msgid ""
 "delimiter string on a line of its own without any whitespace. The message "
 "from <xref linkend=\"porting-message-ucl-short-ex\"/> can be written as:"
 msgstr ""
+"Strings de múltiplas linhas utiliza o padrão here de documento de notação. O "
+"delimitador de múltiplas linhas  <emphasis>deve</emphasis> iniciar logo após "
+"os símbolos <literal>&lt;&lt;</literal> sem espaço em branco, e ele "
+"<emphasis>deve</emphasis> ser apenas em letras maiúsculas. Para finalizar "
+"uma sequência de múltiplas linhas, adicione o delimitador em uma linha "
+"única, sem nenhum espaço em branco. A mensagem de <xref linkend=\"porting-"
+"message-ucl-short-ex\"/> pode ser escrita como:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:18051
-#, fuzzy, no-wrap
-#| msgid ""
-#| "[\n"
-#| "{ message: &lt;&lt;EOM\n"
-#| "Always displayed\n"
-#| "EOM\n"
-#| "}\n"
-#| "]"
+#, no-wrap
 msgid ""
 "[\n"
 "{\n"
@@ -32115,8 +32027,9 @@ msgid ""
 "]"
 msgstr ""
 "[\n"
-"{ message: &lt;&lt;EOM\n"
-"Always displayed\n"
+"{\n"
+"  message: &lt;&lt;EOM\n"
+"Simple message\n"
 "EOM\n"
 "}\n"
 "]"
@@ -32193,15 +32106,7 @@ msgstr ""
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:18091
-#, fuzzy, no-wrap
-#| msgid ""
-#| "[\n"
-#| "{\n"
-#| "  message: \"package being removed.\"\n"
-#| "  type: remove\n"
-#| "}\n"
-#| "{ message: \"package being installed.\", type: install }\n"
-#| "]"
+#, no-wrap
 msgid ""
 "[\n"
 "{\n"
@@ -32213,10 +32118,10 @@ msgid ""
 msgstr ""
 "[\n"
 "{\n"
-"  message: \"package being removed.\"\n"
 "  type: remove\n"
+"  message: \"package being removed.\"\n"
 "}\n"
-"{ message: \"package being installed.\", type: install }\n"
+"{ type: install, message: \"package being installed.\"}\n"
 "]"
 
 #. (itstool) path: example/title
@@ -32235,30 +32140,7 @@ msgstr ""
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:18106
-#, fuzzy, no-wrap
-#| msgid ""
-#| "[\n"
-#| "{\n"
-#| "  message: \"Package is being upgraded.\"\n"
-#| "  type: upgrade\n"
-#| "}\n"
-#| "{\n"
-#| "  message: \"Upgrading from before 1.0 need to do this.\"\n"
-#| "  maximum_version: \"1.0\"\n"
-#| "  type: upgrade\n"
-#| "}\n"
-#| "{\n"
-#| "  message: \"Upgrading from after 1.0 should do that.\"\n"
-#| "  minimum_version: \"1.0\"\n"
-#| "  type: upgrade\n"
-#| "}\n"
-#| "{\n"
-#| "  message: \"Upgrading from &gt; 1.0 and &lt; 3.0 remove that file.\"\n"
-#| "  maximum_version: \"3.0\"\n"
-#| "  minimum_version: \"1.0\"\n"
-#| "  type: upgrade\n"
-#| "}\n"
-#| "]"
+#, no-wrap
 msgid ""
 "[\n"
 "{\n"
@@ -32285,24 +32167,24 @@ msgid ""
 msgstr ""
 "[\n"
 "{\n"
+"  type: upgrade\n"
 "  message: \"Package is being upgraded.\"\n"
-"  type: upgrade\n"
 "}\n"
 "{\n"
-"  message: \"Upgrading from before 1.0 need to do this.\"\n"
+"  type: upgrade\n"
 "  maximum_version: \"1.0\"\n"
-"  type: upgrade\n"
+"  message: \"Upgrading from before 1.0 need to do this.\"\n"
 "}\n"
 "{\n"
-"  message: \"Upgrading from after 1.0 should do that.\"\n"
+"  type: upgrade\n"
 "  minimum_version: \"1.0\"\n"
-"  type: upgrade\n"
+"  message: \"Upgrading from after 1.0 should do that.\"\n"
 "}\n"
 "{\n"
-"  message: \"Upgrading from &gt; 1.0 and &lt; 3.0 remove that file.\"\n"
+"  type: upgrade\n"
 "  maximum_version: \"3.0\"\n"
 "  minimum_version: \"1.0\"\n"
-"  type: upgrade\n"
+"  message: \"Upgrading from &gt; 1.0 and &lt; 3.0 remove that file.\"\n"
 "}\n"
 "]"
 
@@ -36794,7 +36676,7 @@ msgstr "Considerações Arquitetônicas"
 #. (itstool) path: sect2/title
 #: book.translate.xml:20583
 msgid "General Notes on Architectures"
-msgstr ""
+msgstr "Notas Gerais sobre Arquiteturas"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:20585
@@ -36803,19 +36685,20 @@ msgid ""
 "x86-based ones. Some ports have constraints which are particular to one or "
 "more of these architectures."
 msgstr ""
+"O FreeBSD roda em muito mais arquiteturas de processador do que apenas as "
+"conhecidas baseadas em x86. Alguns ports possuem restrições específicas para "
+"uma ou mais dessas arquiteturas."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:20590
-#, fuzzy
-#| msgid "The list of supported interpreters."
 msgid "For the list of supported architectures, run:"
-msgstr "A lista de interpretadores suportados."
+msgstr "Para a lista de arquiteturas suportadas, execute:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:20592
 #, no-wrap
 msgid "cd ${SRCDIR}; make targets"
-msgstr ""
+msgstr "cd ${SRCDIR}; make targets"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:20594
@@ -36825,6 +36708,11 @@ msgid ""
 "literal> is set based on the value of <literal>TARGET_ARCH</literal>. Port "
 "<filename>Makefile</filename>s should test the value of this Makevar."
 msgstr ""
+"Os valores são mostrados no formato "
+"<literal>TARGET</literal>/<literal>TARGET_ARCH</literal>. O makevar "
+"<literal>ARCH</literal> somente leitura do ports é configurado com base no "
+"valor de <literal>TARGET_ARCH</literal>. Os <filename>Makefile</filename>s "
+"dos Ports devem testar o valor deste Makevar."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:20603
@@ -36904,10 +36792,8 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:20653
-#, fuzzy
-#| msgid "Special Considerations"
 msgid "Cluster-Specific Considerations"
-msgstr "Considerações Especiais"
+msgstr "Considerações Específicas do Cluster"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:20657
@@ -36917,6 +36803,10 @@ msgid ""
 "This should be avoided: either list it under an off-by-default option, or "
 "delete it entirely."
 msgstr ""
+"Alguns ports tentam se ajustar à máquina exata em que estão sendo "
+"compilados, definindo <literal>-march=native</literal> para o compilador. "
+"Isso deve ser evitado: liste-o em uma opção desativada por padrão ou exclua-"
+"o completamente."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:20663
@@ -36924,6 +36814,8 @@ msgid ""
 "Otherwise, the default package produced by the build cluster might not run "
 "on every single machine of that <varname>ARCH</varname>."
 msgstr ""
+"Caso contrário, o pacote padrão produzido pelo cluster de compilação pode "
+"não rodar em todas as máquinas desse <varname>ARCH</varname>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:20672
@@ -37593,16 +37485,12 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: book.translate.xml:20999
-#, fuzzy
-#| msgid ""
-#| "The sections and variables described here are mandatory in a ordinary "
-#| "port. In a slave port, many sections variables and can be skipped."
 msgid ""
 "The sections and variables described here are mandatory in a ordinary port. "
 "In a slave port, many sections and variables can be skipped."
 msgstr ""
-"As seções e variáveis ​​descritas aqui são obrigatórias em um port comum. Em "
-"um port slave, muitas seções ​​e variáveis podem ser ignoradas."
+"As seções e variáveis descritas aqui são obrigatórias em um port comum. Em "
+"um port slave, muitas seções e variáveis podem ser ignoradas."
 
 #. (itstool) path: important/para
 #: book.translate.xml:21005
@@ -38713,12 +38601,6 @@ msgstr "Uma introdução ao <varname>USES</varname>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:21647
-#, fuzzy
-#| msgid ""
-#| "<varname>USES</varname> macros make it easy to declare requirements and "
-#| "settings for a port. They can add dependencies, change building behavior, "
-#| "add metadata to packages, and so on, all by selecting simple, preset "
-#| "values.."
 msgid ""
 "<varname>USES</varname> macros make it easy to declare requirements and "
 "settings for a port. They can add dependencies, change building behavior, "
@@ -38760,10 +38642,9 @@ msgstr "Adicionando um Argumento"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:21668
-#, fuzzy, no-wrap
-#| msgid "USES=\tlua"
+#, no-wrap
 msgid "USES=\ttar:xz"
-msgstr "USES=\tlua"
+msgstr "USES=\ttar:xz"
 
 #. (itstool) path: example/title
 #: book.translate.xml:21672
@@ -40052,16 +39933,12 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:22734
-#, fuzzy
-#| msgid ""
-#| "Possible arguments: (none), <literal>insource</literal>, "
-#| "<literal>noninja</literal>, <literal>run</literal>"
 msgid ""
 "Possible arguments: (none), <literal>modules</literal>, <literal>no_targets</"
 "literal>, <literal>run</literal>"
 msgstr ""
-"Argumentos possíveis: (none), <literal>env</literal>, <literal>notall</"
-"literal>, <literal>noman</literal>"
+"Argumentos possíveis: (none), <literal>modules</literal>, "
+"<literal>no_targets</literal>, <literal>run</literal>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:22737
