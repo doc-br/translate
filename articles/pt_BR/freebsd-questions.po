@@ -2,54 +2,52 @@
 # $FreeBSD: head/pt_BR.ISO8859-1/articles/freebsd-questions/pt_BR.po 52675 2018-12-12 12:43:18Z ebrandi $
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2019. #zanata
 # Edson Brandi <ebrandi@FreeBSD.org>, 2019. #zanata
+# Edson Brandi <ebrandi@freebsd.org>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-11-02 17:04-0300\n"
-"PO-Revision-Date: 2019-06-15 06:31+0000\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2019-11-03 00:45+0000\n"
+"Last-Translator: Edson Brandi <ebrandi@freebsd.org>\n"
+"Language-Team: Portuguese (Brazil) <https://weblate.eastus.cloudapp.azure."
+"com/projects/freebsd-doc/articles_freebsd-questions/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 4.6.2\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Edson Brandi, ebrandi@FreeBSD.org, 2018"
+msgstr "translator-credits"
 
 #. (itstool) path: info/title
 #: article.translate.xml:5
-#, fuzzy
-#| msgid "How to get best results from the FreeBSD-questions mailing list"
 msgid "How to get Best Results from the FreeBSD-questions Mailing List"
 msgstr "Como obter os melhores resultados da lista de email FreeBSD-questions"
 
 #. (itstool) path: affiliation/address
 #: article.translate.xml:14
-#, fuzzy, no-wrap
-#| msgid "<email>grog@FreeBSD.org</email>"
+#, no-wrap
 msgid ""
 "\n"
 "\t  <email>grog@FreeBSD.org</email>\n"
 "\t"
-msgstr "<email>grog@FreeBSD.org</email>"
+msgstr ""
+"\n"
+"\t  <email>grog@FreeBSD.org</email>\n"
+"\t"
 
 #. (itstool) path: info/author
 #: article.translate.xml:8
-#, fuzzy
-#| msgid ""
-#| "<personname><firstname>Greg</firstname><surname>Lehey</surname></"
-#| "personname><affiliation> <_:address-1/> </affiliation>"
 msgid ""
 "<personname> <firstname>Greg</firstname> <surname>Lehey</surname> </"
 "personname> <affiliation> <_:address-1/> </affiliation>"
 msgstr ""
-"<personname><firstname>Greg</firstname><surname>Lehey</surname></"
-"personname><affiliation> <_:address-1/> </affiliation>"
+"<personname> <firstname>Greg</firstname> <surname>Lehey</surname> "
+"</personname> <affiliation> <_:address-1/> </affiliation>"
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:21
@@ -102,10 +100,6 @@ msgstr ""
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:41 article.translate.xml:43
-#, fuzzy
-#| msgid ""
-#| "$FreeBSD: head/en_US.ISO8859-1/articles/freebsd-questions/article.xml "
-#| "52192 2018-08-30 10:31:43Z ebrandi $"
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/freebsd-questions/article.xml 53380 "
 "2019-09-06 13:58:37Z bcr $"
@@ -216,10 +210,8 @@ msgstr ""
 #. (itstool) path: sect1/title
 #. (itstool) id: article.translate.xml#subscribe
 #: article.translate.xml:97
-#, fuzzy
-#| msgid "How to subscribe to FreeBSD-questions"
 msgid "How to Subscribe to FreeBSD-questions"
-msgstr "Como se inscrever na FreeBSD-questions"
+msgstr "Como se Inscrever na FreeBSD-questions"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:100
@@ -279,8 +271,6 @@ msgstr ""
 #. (itstool) path: sect1/title
 #. (itstool) id: article.translate.xml#unsubscribe
 #: article.translate.xml:128
-#, fuzzy
-#| msgid "How to unsubscribe from FreeBSD-questions"
 msgid "How to Unsubscribe from FreeBSD-questions"
 msgstr "Como sair da lista FreeBSD-questions"
 
@@ -298,41 +288,7 @@ msgstr ""
 
 #. (itstool) path: sect1/literallayout
 #: article.translate.xml:136
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Welcome to the freebsd-questions@freebsd.org mailing list!\n"
-#| "\n"
-#| "To post to this list, send your email to:\n"
-#| "\n"
-#| "  freebsd-questions@freebsd.org\n"
-#| "\n"
-#| "General information about the mailing list is at:\n"
-#| "\n"
-#| "  https://lists.freebsd.org/mailman/listinfo/freebsd-questions\n"
-#| "\n"
-#| "If you ever want to unsubscribe or change your options (e.g., switch to\n"
-#| "or from digest mode, change your password, etc.), visit your\n"
-#| "subscription page at:\n"
-#| "\n"
-#| "https://lists.freebsd.org/mailman/options/freebsd-questions/grog%40lemsi.de\n"
-#| "\n"
-#| "You can also make such adjustments via email by sending a message to:\n"
-#| "\n"
-#| "  freebsd-questions-request@freebsd.org\n"
-#| "\n"
-#| "with the word `help' in the subject or body (don't include the\n"
-#| "quotes), and you will get back a message with instructions.\n"
-#| "\n"
-#| "You must know your password to change your options (including changing\n"
-#| "the password, itself) or to unsubscribe.  It is:\n"
-#| "\n"
-#| "  12345\n"
-#| "\n"
-#| "Normally, Mailman will remind you of your freebsd.org mailing list\n"
-#| "passwords once every month, although you can disable this if you\n"
-#| "prefer.  This reminder will also include instructions on how to\n"
-#| "unsubscribe or change your account options.  There is also a button on\n"
-#| "your options page that will email your current password to you."
+#, no-wrap
 msgid ""
 "Welcome to the\n"
 "      freebsd-questions@freebsd.org mailing list!\n"
@@ -379,8 +335,10 @@ msgstr ""
 "\n"
 "  https://lists.freebsd.org/mailman/listinfo/freebsd-questions\n"
 "\n"
-"Se você eventualmente desejar sair da lista ou alterar suas opções (ex. mudar\n"
-"para o modo resumo diário ou para sair dele, mudar senha, etc.) visite sua página de\n"
+"Se você eventualmente desejar sair da lista ou alterar suas opções (ex. "
+"mudar\n"
+"para o modo resumo diário ou para sair dele, mudar senha, etc.) visite sua "
+"página de\n"
 "inscrição em:\n"
 "\n"
 "https://lists.freebsd.org/mailman/options/freebsd-questions/grog%40lemsi.de\n"
@@ -426,12 +384,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:180
-#, fuzzy
-#| msgid ""
-#| "If you have done this, and you still can not figure out what is going on, "
-#| "send a message to <email>freebsd-questions-request@FreeBSD.org</email>, "
-#| "and they will sort things out for you. <emphasis>Do not</emphasis> send a "
-#| "message to FreeBSD-questions: they can not help you."
 msgid ""
 "If you have done this, and you still cannot figure out what is going on, "
 "send a message to <email>freebsd-questions-request@FreeBSD.org</email>, and "
@@ -439,9 +391,9 @@ msgid ""
 "message to FreeBSD-questions: they cannot help you."
 msgstr ""
 "Se você já fez isso, e ainda não conseguiu entender o que está havendo, "
-"mande uma mensagem para <email>freebsd-questions-request@FreeBSD.org</"
-"email>, e eles irão resolver as coisas para você. <emphasis>Não envie</"
-"emphasis> uma mensagem para a FreeBSD-questions: eles não podem ajudá-lo."
+"mande uma mensagem para <email>freebsd-questions-request@FreeBSD.org</email>"
+", e eles irão resolver as coisas para você. <emphasis>Não envie</emphasis> "
+"uma mensagem para a FreeBSD-questions: eles não podem ajudá-lo."
 
 #. (itstool) path: sect1/title
 #. (itstool) id: article.translate.xml#askwho
@@ -531,10 +483,8 @@ msgstr ""
 #. (itstool) path: sect1/title
 #. (itstool) id: article.translate.xml#before
 #: article.translate.xml:235
-#, fuzzy
-#| msgid "Before submitting a question"
 msgid "Before Submitting a Question"
-msgstr "Antes de enviar uma pergunta"
+msgstr "Antes de Enviar uma Pergunta"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:237
@@ -616,10 +566,8 @@ msgstr ""
 #. (itstool) path: sect1/title
 #. (itstool) id: article.translate.xml#submit
 #: article.translate.xml:279
-#, fuzzy
-#| msgid "How to submit a question"
 msgid "How to Submit a Question"
-msgstr "Como enviar uma pergunta"
+msgstr "Como Enviar uma Pergunta"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:281
@@ -991,10 +939,8 @@ msgstr ""
 #. (itstool) path: sect1/title
 #. (itstool) id: article.translate.xml#followup
 #: article.translate.xml:491
-#, fuzzy
-#| msgid "How to follow up to a question"
 msgid "How to Follow up to a Question"
-msgstr "Como acompanhar uma pergunta"
+msgstr "Como Acompanhar uma Pergunta"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:493
@@ -1043,10 +989,8 @@ msgstr ""
 #. (itstool) path: sect1/title
 #. (itstool) id: article.translate.xml#answer
 #: article.translate.xml:522
-#, fuzzy
-#| msgid "How to answer a question"
 msgid "How to Answer a Question"
-msgstr "Como responder uma pergunta"
+msgstr "Como Responder uma Pergunta"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:524
@@ -1166,14 +1110,6 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:597
-#, fuzzy
-#| msgid ""
-#| "Use some technique to identify which text came from the original message, "
-#| "and which text you add. I personally find that prepending "
-#| "<quote><literal>&gt; </literal></quote> to the original message works "
-#| "best. Leaving white space after the <quote><literal>&gt; </literal></"
-#| "quote> and leave empty lines between your text and the original text both "
-#| "make the result more readable."
 msgid ""
 "Use some technique to identify which text came from the original message, "
 "and which text you add. I personally find that prepending "
@@ -1185,9 +1121,9 @@ msgstr ""
 "Use alguma técnica para identificar qual texto veio da mensagem original e "
 "qual texto você adicionou. Eu pessoalmente acho que a adição do "
 "<quote><literal>&gt;</literal></quote> no inicio da mensagem original "
-"funciona bem. Deixando espaço em branco após o <quote><literal>&gt;</"
-"literal></quote> e deixar linhas vazias entre o seu texto e o texto "
-"original, ambos tornam o resultado mais legível."
+"funciona bem. Deixando espaço em branco após o "
+"<quote><literal>&gt;</literal></quote> e deixar linhas vazias entre o seu "
+"texto e o texto original, ambos tornam o resultado mais legível."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:607
@@ -1213,14 +1149,6 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:621
-#, fuzzy
-#| msgid ""
-#| "If the submitter did not abide by format conventions (lines too long, "
-#| "inappropriate subject line), <emphasis>please</emphasis> fix it. In the "
-#| "case of an incorrect subject line (such as <quote>HELP!!??</quote>), "
-#| "change the subject line to (say) <quote>Re: Difficulties with sync PPP "
-#| "(was: HELP!!??)</quote>. That way other people trying to follow the "
-#| "thread will have less difficulty following it."
 msgid ""
 "If the submitter did not abide by format conventions (lines too long, "
 "inappropriate subject line) <emphasis>please</emphasis> fix it. In the case "
