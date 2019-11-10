@@ -1,4 +1,5 @@
-[![Build Status - Cirrus](https://api.cirrus-ci.com/github/doc-br/zanata.svg)](https://cirrus-ci.com/github/doc-br/zanata/master)
+[![Build Status - Cirrus](https://api.cirrus-ci.com/github/doc-br/translate.svg)](https://cirrus-ci.com/github/doc-br/translate/master)
+[![Translation status](https://weblate.eastus.cloudapp.azure.com/widgets/freebsd-doc/pt_BR/svg-badge.svg)](https://weblate.eastus.cloudapp.azure.com/engage/freebsd-doc/pt_BR/?utm_source=widget)
 
 # Lista de Artigos e Livros para Tradução
 
@@ -52,10 +53,10 @@ Os esforços de tradução no momento estão voltados ao Handbook.
 - [ ] developers-handbook
 - [x] faq
 - [x] fdp-primer
-- [ ] handbook - [Página de status das traduções e revisão](https://github.com/doc-br/zanata/blob/master/README-pt_BR-handbook.md)
+- [x] handbook - [Página de status das traduções e revisão](https://github.com/doc-br/translate/blob/master/README-pt_BR-handbook.md)
 - [ ] ~~pmake~~ - Removido do índice de livros do FreeBSD em [r52714](https://svnweb.freebsd.org/doc/head/en_US.ISO8859-1/books/Makefile?revision=52714&view=markup).
 - [x] porters-handbook
 
-Se for traduzir por outro aplicativo que não seja o Zanata, utilize sempre os
+Se for traduzir por outro aplicativo que não seja o Weblate, utilize sempre os
 arquivos `.po`, ignore os arquivos `.pot` pois estes são apenas templates.
 

@@ -1,3 +1,4 @@
+[![Translation status](https://weblate.eastus.cloudapp.azure.com/widgets/freebsd-doc/pt_BR/boooks_handbook/svg-badge.svg)](https://weblate.eastus.cloudapp.azure.com/engage/freebsd-doc/pt_BR/?utm_source=widget)
 
 # Books - Handbook
 
