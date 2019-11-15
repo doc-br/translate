@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-11-02 17:04-0300\n"
-"PO-Revision-Date: 2019-11-04 00:20+0000\n"
+"PO-Revision-Date: 2019-11-15 19:45+0000\n"
 "Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.eastus.cloudapp.azure."
 "com/projects/freebsd-doc/boooks_faq/pt_BR/>\n"
@@ -40,15 +40,6 @@ msgstr "<orgname>Projeto de Documentação do FreeBSD</orgname>"
 
 #. (itstool) path: info/copyright
 #: book.translate.xml:24
-#, fuzzy
-#| msgid ""
-#| "<year>1995</year> <year>1996</year> <year>1997</year> <year>1998</year> "
-#| "<year>1999</year> <year>2000</year> <year>2001</year> <year>2002</year> "
-#| "<year>2003</year> <year>2004</year> <year>2005</year> <year>2006</year> "
-#| "<year>2007</year> <year>2008</year> <year>2009</year> <year>2010</year> "
-#| "<year>2011</year> <year>2012</year> <year>2013</year> <year>2014</year> "
-#| "<year>2015</year> <year>2016</year> <year>2017</year> <year>2018</year> "
-#| "<holder>The FreeBSD Documentation Project</holder>"
 msgid ""
 "<year>1995</year> <year>1996</year> <year>1997</year> <year>1998</year> "
 "<year>1999</year> <year>2000</year> <year>2001</year> <year>2002</year> "
@@ -251,16 +242,12 @@ msgstr ""
 
 #. (itstool) path: info/releaseinfo
 #: book.translate.xml:142
-#, fuzzy
-#| msgid ""
-#| "$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 52666 2018-12-11 "
-#| "18:49:03Z gjb $"
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 53475 2019-10-08 14:04:46Z "
 "rcyu $"
 msgstr ""
-"$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 52666 2018-12-11 18:49:03Z "
-"gjb $"
+"$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 53475 2019-10-08 14:04:46Z "
+"rcyu $"
 
 #. (itstool) path: abstract/para
 #: book.translate.xml:145
@@ -691,14 +678,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:403
-#, fuzzy
-#| msgid ""
-#| "Version <link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/"
-#| "i386/i386/12.0-RELEASE/\">12.0</link> is the latest release from the "
-#| "<emphasis>12-STABLE</emphasis> branch; it was released in December 2018. "
-#| "Version <link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/"
-#| "i386/10.4-RELEASE/\">10.4</link> is the latest release from the "
-#| "<emphasis>11-STABLE</emphasis> branch; it was released in October 2017."
 msgid ""
 "Version <link xlink:href=\"https://download.FreeBSD.org/ftp/releases/amd64/"
 "amd64/12.0-RELEASE/\">12.0</link> is the latest release from the "
@@ -707,12 +686,12 @@ msgid ""
 "amd64/11.3-RELEASE/\">11.3</link> is the latest release from the "
 "<emphasis>11-STABLE</emphasis> branch; it was released in July 2019."
 msgstr ""
-"A versão <link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/i386/"
-"i386/12.0-RELEASE/\">12.0</link> é a última release da branch <emphasis>12-"
-"STABLE</emphasis>; ela foi lançada em Dezembro de 2018. A versão <link xlink:"
-"href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/i386/11.2-RELEASE/\">11.2</"
-"link> é a release mais recente da branch <emphasis>11-STABLE</emphasis>; e "
-"foi lançada em outubro de 2017."
+"A versão <link xlink:href=\"https://download.FreeBSD.org/ftp/releases/amd64/"
+"amd64/12.0-RELEASE/\">12.0</link> é a última release da branch "
+"<emphasis>12-STABLE</emphasis>; ela foi lançada em Dezembro de 2018. A "
+"versão <link xlink:href=\"https://download.FreeBSD.org/ftp/releases/amd64/"
+"amd64/11.3-RELEASE/\">11.3</link> é a release mais recente da branch "
+"<emphasis>11-STABLE</emphasis>; e foi lançada em Julho de 2019."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:409
@@ -826,7 +805,7 @@ msgid ""
 msgstr ""
 "Para preservar um ponto de referência fixo para o código em questão, apenas "
 "no caso de quebrarmos algo de forma muito seria depois. (Embora o Subversion "
-"normalmente previna que uma coisa horrível como esta ocorra)."
+"normalmente previna que uma coisa horrível como esta ocorra.)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:472
@@ -1038,35 +1017,25 @@ msgstr "Onde posso obter o FreeBSD?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:590
-#, fuzzy
-#| msgid ""
-#| "Every significant release of FreeBSD is available via anonymous FTP from "
-#| "the <link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/\">FreeBSD FTP "
-#| "site</link>:"
 msgid ""
 "Every significant release of FreeBSD is available via anonymous FTP from the "
 "<link xlink:href=\"https://download.FreeBSD.org/ftp/releases/\">FreeBSD FTP "
 "site</link>:"
 msgstr ""
-"Todas releases importantes do FreeBSD estão disponíveis via FTP anônimo no "
-"<link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/\">site FTP do FreeBSD</"
-"link>:"
+"Todas releases importantes do FreeBSD estão disponíveis via FTP anônimo no <"
+"link xlink:href=\"https://download.FreeBSD.org/ftp/releases/\">site FTP do "
+"FreeBSD</link>:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:596
-#, fuzzy
-#| msgid ""
-#| "The latest <emphasis>12-STABLE</emphasis> release, 12.0-RELEASE can be "
-#| "found in the <link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/"
-#| "releases/i386/i386/12.0-RELEASE/\">12.0-RELEASE directory</link>."
 msgid ""
 "The latest <emphasis>12-STABLE</emphasis> release, 12.0-RELEASE can be found "
 "in the <link xlink:href=\"https://download.FreeBSD.org/ftp/releases/amd64/"
 "amd64/12.0-RELEASE/\">12.0-RELEASE directory</link>."
 msgstr ""
 "O último release da série <emphasis>12-STABLE</emphasis>, o 12.0-RELEASE, "
-"pode ser encontrado no <link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/"
-"releases/i386/i386/12.0-RELEASE/\">diretório 12.0-RELEASE</link>."
+"pode ser encontrado no <link xlink:href=\"https://download.FreeBSD.org/ftp/"
+"releases/amd64/amd64/12.0-RELEASE/\">diretório 12.0-RELEASE</link>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:602
@@ -1083,19 +1052,14 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:609
-#, fuzzy
-#| msgid ""
-#| "The latest <emphasis>11-STABLE</emphasis> release, 10.4-RELEASE can be "
-#| "found in the <link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/"
-#| "releases/i386/10.4-RELEASE/\">10.4-RELEASE directory</link>."
 msgid ""
 "The latest <emphasis>11-STABLE</emphasis> release, 11.3-RELEASE can be found "
 "in the <link xlink:href=\"https://download.FreeBSD.org/ftp/releases/amd64/"
 "amd64/11.3-RELEASE/\">11.3-RELEASE directory</link>."
 msgstr ""
-"O último release da série <emphasis>11-STABLE</emphasis>, o 11.2-RELEASE, "
-"pode ser encontrado no <link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/"
-"releases/i386/11.2-RELEASE/\">diretório 11.2-RELEASE</link>."
+"O último release da série <emphasis>11-STABLE</emphasis>, o 11.3-RELEASE, "
+"pode ser encontrado no <link xlink:href=\"https://download.FreeBSD.org/ftp/"
+"releases/amd64/amd64/11.3-RELEASE/\">diretório 11.3-RELEASE</link>."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:615
@@ -1442,7 +1406,7 @@ msgstr ""
 "O formato do documento. Produzimos a documentação em vários formatos de "
 "saída diferentes. Cada formato tem suas próprias vantagens e desvantagens. "
 "Alguns formatos são mais adequados para leitura on-line, enquanto outros "
-"estão formatados para serem,esteticamente agradáveis ​​quando impressos em "
+"estão formatados para serem esteticamente agradáveis quando impressos em "
 "papel. A disponibilização da documentação em diversos formatos garante que "
 "os nossos leitores possam ler as partes nas quais estão interessados, seja "
 "em seu monitor ou em papel após imprimi-los documentos. Os formatos "
@@ -2351,17 +2315,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1413
-#, fuzzy
-#| msgid ""
-#| "This is discussed continually on the FreeBSD mailing lists but is to be "
-#| "expected since hardware changes so quickly. Read through the "
-#| "Hardware Notes for FreeBSD <link xlink:href=\"https://www.FreeBSD.org/"
-#| "releases/12.0R/hardware.html\">12.0</link> or <link xlink:href=\"https://"
-#| "www.FreeBSD.org/releases/10.4R/hardware.html\">10.4</link> and search the "
-#| "mailing list <link xlink:href=\"https://www.FreeBSD.org/search/"
-#| "#mailinglists\">archives</link> before asking about the latest and "
-#| "greatest hardware. Chances are a discussion about that type of hardware "
-#| "took place just last week."
 msgid ""
 "This is discussed continually on the FreeBSD mailing lists but is to be "
 "expected since hardware changes so quickly. Read through the Hardware Notes "
@@ -2374,13 +2327,13 @@ msgid ""
 msgstr ""
 "Isso é discutido continuamente nas listas de discussão do FreeBSD, mas isto "
 "é de se esperar, já que o hardware muda tão rapidamente. Leia as Notas de "
-"Hardware do FreeBSD <link xlink:href=\"https://www.FreeBSD.org/"
-"releases/12.0R/hardware.html\">12.0</link> ou <link xlink:href=\"https://www."
-"FreeBSD.org/releases/11.2R/hardware.html\">11.2</link> e pesquise os <link "
-"xlink:href=\"https://www.FreeBSD.org/search/#mailinglists\">arquivos</link> "
-"da lista de discussão antes de perguntar sobre o hardware mais recente e "
-"melhor. As chances são de que uma discussão sobre esse tipo de hardware "
-"tenha acontecido na semana passada."
+"Hardware do FreeBSD <link xlink:href=\"https://www.FreeBSD.org/releases/12."
+"0R/hardware.html\">12.0</link> ou <link xlink:href=\"https://www.FreeBSD.org/"
+"releases/11.2R/hardware.html\">11.2</link> e pesquise os <link xlink:href=\""
+"https://www.FreeBSD.org/search/#mailinglists\">arquivos</link> da lista de "
+"discussão antes de perguntar sobre o hardware mais recente e melhor. As "
+"chances são de que uma discussão sobre esse tipo de hardware tenha "
+"acontecido na semana passada."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1423
@@ -2449,7 +2402,7 @@ msgid ""
 "usable physical memory in this configuration."
 msgstr ""
 "O espaço total de endereços nas máquinas <trademark>i386</trademark> é de 32 "
-"bits, o que significa que no máximo 4 GB de memória são endereçáveis ​​(podem "
+"bits, o que significa que no máximo 4 GB de memória são endereçáveis (podem "
 "ser acessados). Além disso, alguns endereços nesse intervalo são reservados "
 "por hardware para diferentes finalidades, por exemplo, para usar e controlar "
 "dispositivos PCI, para acessar a memória de vídeo e assim por diante. "
@@ -2475,18 +2428,18 @@ msgid ""
 "compiled into the kernel."
 msgstr ""
 "Para acessar mais de 3,2 GB a 3,7 GB de memória instalada (ou seja, até 4 "
-"GB, mas também mais de 4 GB), um ajuste especial chamado <acronym>PAE</"
-"acronym> deve ser usado. PAE significa Physical Address Extension e é uma "
-"maneira das CPUs x86 de 32 bits endereçarem mais de 4 GB de memória. Ele "
-"remapeia a memória que de outra forma seria sobreposta pelas reservas de "
-"endereço para dispositivos de hardware acima do intervalo de 4 GB e a usa "
-"como memória física adicional (veja <citerefentry><refentrytitle>pae</"
-"refentrytitle><manvolnum>4</manvolnum></citerefentry>). Usar o PAE tem "
+"GB, mas também mais de 4 GB), um ajuste especial chamado "
+"<acronym>PAE</acronym> deve ser usado. PAE significa Physical Address "
+"Extension e é uma maneira das CPUs x86 de 32 bits endereçarem mais de 4 GB "
+"de memória. Ele remapeia a memória que de outra forma seria sobreposta pelas "
+"reservas de endereço para dispositivos de hardware acima do intervalo de 4 "
+"GB e a usa como memória física adicional (veja <citerefentry><refentrytitle>p"
+"ae</refentrytitle><manvolnum>4</manvolnum></citerefentry>). Usar o PAE tem "
 "alguns inconvenientes; este modo de acesso à memória é um pouco mais lento "
-"que o modo normal (sem PAE) e módulos carregáveis ​​(veja "
-"<citerefentry><refentrytitle>kld</refentrytitle><manvolnum>4</manvolnum> </"
-"citerefentry>) não são suportados. Isso significa que todos os drivers devem "
-"ser compilados estaticamente no kernel."
+"que o modo normal (sem PAE) e módulos carregáveis (veja "
+"<citerefentry><refentrytitle>kld</refentrytitle><manvolnum>4</manvolnum> "
+"</citerefentry>) não são suportados. Isso significa que todos os drivers "
+"devem ser compilados estaticamente no kernel."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1485
@@ -2504,7 +2457,7 @@ msgstr ""
 "especial de configuração do kernel, chamado <filename>PAE</filename>, que já "
 "está configurado para compilar um kernel seguro. Observe que algumas "
 "entradas neste arquivo de configuração do kernel são muito conservadoras e "
-"alguns drivers marcados como não prontos para serem usados ​​com o PAE na "
+"alguns drivers marcados como não prontos para serem usados com o PAE na "
 "verdade são possíveis de serem utilizados. Uma regra básica é que, se o "
 "driver for utilizável em arquiteturas de 64 bits (como o AMD64), ele também "
 "poderá ser usado com o PAE. Ao criar um arquivo de configuração de kernel "
@@ -2667,12 +2620,6 @@ msgstr "Quais controladores SCSI ou SAS são suportados?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1604
-#, fuzzy
-#| msgid ""
-#| "See the complete list in the Hardware Notes for FreeBSD <link xlink:href="
-#| "\"https://www.FreeBSD.org/releases/12.0R/hardware.html\">12.0</link> or "
-#| "<link xlink:href=\"https://www.FreeBSD.org/releases/10.4R/hardware.html"
-#| "\">10.4</link>."
 msgid ""
 "See the complete list in the Hardware Notes for FreeBSD <link xlink:href="
 "\"https://www.FreeBSD.org/releases/12.0R/hardware.html\">12.0</link> or "
@@ -2680,9 +2627,9 @@ msgid ""
 "\">11.2</link>."
 msgstr ""
 "Veja a lista completa nas Notas de Hardware para o FreeBSD <link xlink:href="
-"\"https://www.FreeBSD.org/releases/12.0R/hardware.html\">12.0</link> ou "
-"<link xlink:href=\"https://www.FreeBSD.org/releases/11.2R/hardware.html"
-"\">11.2</link>."
+"\"https://www.FreeBSD.org/releases/12.0R/hardware.html\">12.0</link> ou <"
+"link xlink:href=\"https://www.FreeBSD.org/releases/11.2R/hardware.html\""
+">11.2</link>."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1612
@@ -3129,7 +3076,7 @@ msgid ""
 "this is happening at seemingly random intervals, start investigating the "
 "cause."
 msgstr ""
-"Os erros de sinal 11 são causados ​​quando um processo tentou acessar a "
+"Os erros de sinal 11 são causados quando um processo tentou acessar a "
 "memória à qual o sistema operacional não concedeu acesso. Se algo assim está "
 "acontecendo em intervalos aparentemente aleatórios, comece a investigar a "
 "causa."
@@ -4741,7 +4688,7 @@ msgstr ""
 #. (itstool) path: step/para
 #: book.translate.xml:2791
 msgid "<command>newfs</command> the new partition."
-msgstr "Execute o <command>newfs</command> na nova partição"
+msgstr "Execute o <command>newfs</command> na nova partição."
 
 #. (itstool) path: step/para
 #: book.translate.xml:2795
@@ -5956,7 +5903,7 @@ msgid ""
 msgstr ""
 "Em sistemas que utilizam o ZFS com um dataset customizado, por exemplo com a "
 "funcionalidade de deduplicação ativada, o espaço pode não ficar disponível "
-"imediatamente."
+"imediatamente"
 
 #. (itstool) path: question/para
 #: book.translate.xml:3504
@@ -6979,7 +6926,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:4097
 msgid "<literal>Active</literal>: pages recently statistically used."
-msgstr "<literal>Active</literal>: são páginas usadas recentemente "
+msgstr "<literal>Active</literal>: são páginas usadas recentemente."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4102
