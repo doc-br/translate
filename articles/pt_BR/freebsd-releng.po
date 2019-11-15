@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-11-02 17:04-0300\n"
-"PO-Revision-Date: 2019-11-04 00:20+0000\n"
+"PO-Revision-Date: 2019-11-15 19:45+0000\n"
 "Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.eastus.cloudapp.azure."
 "com/projects/freebsd-doc/articles_freebsd-releng/pt_BR/>\n"
@@ -41,12 +41,6 @@ msgstr "<email>gjb@FreeBSD.org</email>"
 
 #. (itstool) path: authorgroup/author
 #: article.translate.xml:29
-#, fuzzy
-#| msgid ""
-#| "<personname> <firstname>Glen</firstname> <surname>Barber</surname> </"
-#| "personname> <affiliation> <orgname class=\"nonprofit\"> <link xlink:href="
-#| "\"https://www.freebsdfoundation.org\">The FreeBSD Foundation</link></"
-#| "orgname> <_:address-1/> </affiliation>"
 msgid ""
 "<personname> <firstname>Glen</firstname> <surname>Barber</surname> </"
 "personname> <affiliation> <orgname class=\"nonprofit\"> <link xlink:href="
@@ -55,10 +49,12 @@ msgid ""
 "www.netgate.com\">Rubicon Communications, LLC (Netgate)</link></orgname> <_:"
 "address-1/> </affiliation>"
 msgstr ""
-"<personname> <firstname>Glen</firstname> <surname>Barber</surname> </"
-"personname> <affiliation> <orgname class=\"nonprofit\"> <link xlink:href="
-"\"https://www.freebsdfoundation.org\">The FreeBSD Foundation</link></"
-"orgname> <_:address-1/> </affiliation>"
+"<personname> <firstname>Glen</firstname> <surname>Barber</surname> "
+"</personname> <affiliation> <orgname class=\"nonprofit\"> <link xlink:href=\""
+"https://www.freebsdfoundation.org\">The FreeBSD Foundation</link></orgname> "
+"</affiliation> <affiliation> <orgname> <link xlink:href=\""
+"https://www.netgate.com\">Rubicon Communications, LLC "
+"(Netgate)</link></orgname> <_:address-1/> </affiliation>"
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:47
@@ -93,16 +89,12 @@ msgstr ""
 
 #. (itstool) path: info/pubdate
 #: article.translate.xml:61
-#, fuzzy
-#| msgid ""
-#| "$FreeBSD: head/en_US.ISO8859-1/articles/freebsd-releng/article.xml 52377 "
-#| "2018-10-18 16:11:27Z gjb $"
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/freebsd-releng/article.xml 53242 "
 "2019-07-09 23:59:30Z jhb $"
 msgstr ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/freebsd-releng/article.xml 52377 "
-"2018-10-18 16:11:27Z gjb $"
+"$FreeBSD: head/en_US.ISO8859-1/articles/freebsd-releng/article.xml 53242 "
+"2019-07-09 23:59:30Z jhb $"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:64
@@ -1306,16 +1298,12 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:768
-#, fuzzy
-#| msgid ""
-#| "<filename>stable/<replaceable>12</replaceable>/sys/arm/conf/std.arm*</"
-#| "filename>"
 msgid ""
 "<filename>stable/<replaceable>12</replaceable>/share/mk/src.opts.mk</"
 "filename>"
 msgstr ""
-"<filename>stable/<replaceable>12</replaceable>/sys/arm/conf/std.arm*</"
-"filename>"
+"<filename>stable/<replaceable>12</replaceable>/share/mk/"
+"src.opts.mk</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:769
@@ -1324,6 +1312,9 @@ msgid ""
 "<literal>__DEFAULT_NO_OPTIONS</literal> to <literal>__DEFAULT_YES_OPTIONS</"
 "literal>"
 msgstr ""
+"Mova <varname>REPRODUCIBLE_BUILD</varname> de "
+"<literal>__DEFAULT_NO_OPTIONS</literal> para "
+"<literal>__DEFAULT_YES_OPTIONS</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:775
@@ -1542,10 +1533,8 @@ msgstr "Atualize o <varname>OS_VERSION</varname>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:930
-#, fuzzy
-#| msgid "<filename>head/Makefile.libcompat</filename>"
 msgid "<filename>Makefile.libcompat</filename>"
-msgstr "<filename>head/Makefile.libcompat</filename>"
+msgstr "<filename>Makefile.libcompat</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:935
@@ -1850,9 +1839,9 @@ msgid ""
 "This section describes the build scripts used by FreeBSD Release Engineering "
 "Team to produce development snapshots and releases."
 msgstr ""
-"Esta seção descreve os scripts de build usados ​​pela Equipe de Engenharia de "
+"Esta seção descreve os scripts de build usados pela Equipe de Engenharia de "
 "Release do FreeBSD para produzir snapshots da versão em desenvolvimento e "
-"das releases"
+"das releases."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1104
@@ -1891,9 +1880,9 @@ msgstr ""
 "Antes do FreeBSD 9.2-RELEASE, foi introduzido o <filename>src/release/"
 "release.sh</filename>, que baseado fortemente em <filename>src/release/"
 "generate-release.sh</filename> incluía suporte para especificar arquivos de "
-"configuração para substituir várias opções e variáveis ​​de ambiente. O "
-"suporte para arquivos de configuração forneceu suporte para cross building "
-"(compilação para mais de uma arquitetura) de uma release para cada "
+"configuração para substituir várias opções e variáveis de ambiente. O "
+"suporte para arquivos de configuração forneceu suporte para cross building ("
+"compilação para mais de uma arquitetura) de uma release para cada "
 "arquitetura, especificando um arquivo de configuração separado para cada "
 "chamada."
 
@@ -1997,11 +1986,11 @@ msgid ""
 "replaceable>/</literal> development snapshots."
 msgstr ""
 "O script wrapper é chamado de <filename>thermite.sh</filename>, o qual está "
-"disponível no repositório Subversion do FreeBSD em <literal>svn://svn."
-"freebsd.org/base/user/gjb/thermite/</literal> , além dos arquivos de "
-"configuração usados ​​para construir os snapshots de desenvolvimento "
-"<literal>head/</literal> e <literal>stable/<replaceable>12</replaceable>/</"
-"literal>."
+"disponível no repositório Subversion do FreeBSD em "
+"<literal>svn://svn.freebsd.org/base/user/gjb/thermite/</literal> , além dos "
+"arquivos de configuração usados para construir os snapshots de "
+"desenvolvimento <literal>head/</literal> e <literal>stable/"
+"<replaceable>12</replaceable>/</literal>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1170
@@ -2024,7 +2013,7 @@ msgstr ""
 "Cada arquitetura e kernel individual tem seu próprio arquivo de configuração "
 "usado pelo <filename>release.sh</filename>. Cada branch tem sua própria "
 "configuração <filename>defaults-X.conf</filename> que contém entradas comuns "
-"em cada arquitetura, onde substituições ou variáveis ​​especiais são definidas "
+"em cada arquitetura, onde substituições ou variáveis especiais são definidas "
 "e/ou substituídas nos arquivos por compilação."
 
 #. (itstool) path: sect3/para
@@ -2039,12 +2028,12 @@ msgid ""
 "respective branch."
 msgstr ""
 "O esquema de nomenclatura do arquivo de configuração por compilação está na "
-"forma de <filename>${revision}-${TARGET_ARCH}-${KERNCONF}-${type}.conf</"
-"filename>, em que as variáveis ​​em maiúsculas são equivalentes a que "
-"<citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></"
-"citerefentry> usa no sistema de compilação e as variáveis ​​minúsculas são "
-"definidas nos arquivos de configuração, mapeando para a versão principal da "
-"respectiva branch."
+"forma de "
+"<filename>${revision}-${TARGET_ARCH}-${KERNCONF}-${type}.conf</filename>, em "
+"que as variáveis em maiúsculas são equivalentes a que <citerefentry><refentry"
+"title>make</refentrytitle><manvolnum>1</manvolnum></citerefentry> usa no "
+"sistema de compilação e as variáveis minúsculas são definidas nos arquivos "
+"de configuração, mapeando para a versão principal da respectiva branch."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1187
@@ -2165,7 +2154,7 @@ msgid ""
 msgstr ""
 "Existe um dataset (conjunto de dados) separado para as imagens finais de "
 "compilação, <filename class=\"directory\">/snap/ftp</filename>. Este "
-"diretório contém diretórios de snapshots e releases. Eles são usados ​​apenas "
+"diretório contém diretórios de snapshots e releases. Eles são usados apenas "
 "se a variável <literal>EVERYTHINGISFINE</literal> estiver definida em "
 "<filename>main.conf</filename>."
 
@@ -2662,6 +2651,12 @@ msgid ""
 "<literal>Impact</literal>, and if applicable, <literal>Workaround</literal> "
 "sections."
 msgstr ""
+"Para solicitar uma Errata após a conclusão de um ciclo de lançamento, o "
+"desenvolvedor deve preencher o <link xlink:href=\"https://www.freebsd.org/"
+"security/errata-template.txt\">Template de Errata</link>>, em particular as "
+"seções <literal>Background</literal>, <literal>Problem Description</literal>"
+", <literal>Impact</literal> e, se aplicável, as seções "
+"<literal>Workaround</literal>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1491
@@ -2670,6 +2665,9 @@ msgid ""
 "a patch against the <literal>releng/</literal> branch or a list of revisions "
 "from the <literal>stable/</literal> branch."
 msgstr ""
+"O modelo de Errata preenchido deve ser enviado por e-mail juntamente com um "
+"patch na branch <literal>releng/</literal> ou uma lista de revisões da "
+"branch <literal>stable/</literal>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1496
@@ -2681,6 +2679,12 @@ msgid ""
 "\"releng-wrapup-handoff\"/>, Errata Notice requests should be sent to the "
 "FreeBSD Security Team."
 msgstr ""
+"Para pedidos de Errata imediatamente após o lançamento, o pedido deve ser "
+"enviado por e-mail à Equipe de Engenharia de Releases do FreeBSD e à Equipe "
+"de Segurança do FreeBSD. Depois que a branch <literal>releng/</literal> foi "
+"entregue à equipe de Segurança do FreeBSD, conforme descrito em <xref linkend"
+"=\"releng-wrapup-handoff\"/>, as solicitações de Errata devem ser enviadas à "
+"equipe de Segurança do FreeBSD."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1504
