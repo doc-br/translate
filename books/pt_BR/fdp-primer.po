@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-11-16 15:18-0300\n"
-"PO-Revision-Date: 2019-11-04 00:20+0000\n"
+"PO-Revision-Date: 2019-11-16 19:02+0000\n"
 "Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.eastus.cloudapp.azure."
 "com/projects/freebsd-doc/boooks_fdp-primer/pt_BR/>\n"
@@ -287,7 +287,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:236
 msgid "User and group names."
-msgstr "Nome de usuário e de grupos de usuários"
+msgstr "Nome de usuário e de grupos de usuários."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:237
@@ -298,7 +298,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:242
 msgid "Emphasis."
-msgstr "Ênfase"
+msgstr "Ênfase."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:243
@@ -322,7 +322,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:257
 msgid "Environment variables."
-msgstr "Variáveis de ambiente"
+msgstr "Variáveis de ambiente."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:258
@@ -515,7 +515,7 @@ msgstr ""
 "<application>Subversion</application>. Este meta-port instala todo software "
 "necessário para editar e compilar a documentação do FreeBSD. O pacote "
 "<application>Subversion</application> é necessário para obter uma cópia de "
-"trabalho da documentação e para gerar patches. "
+"trabalho da documentação e para gerar patches."
 
 #. (itstool) path: step/screen
 #: book.translate.xml:409
@@ -602,7 +602,7 @@ msgstr ""
 #. (itstool) path: step/para
 #: book.translate.xml:460
 msgid "After editing, check for problems by running:"
-msgstr "Após alteração, cheque por eventuais problemas rodando"
+msgstr "Após alteração, cheque por eventuais problemas rodando:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:462
@@ -710,7 +710,7 @@ msgid ""
 "resource and reference for FreeBSD users."
 msgstr ""
 "<emphasis>Handbook</emphasis>: O handbook almeja ser um compreensivo recurso "
-"de referência online para os usuários do FreeBSD"
+"de referência online para os usuários do FreeBSD."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:524
@@ -2433,7 +2433,7 @@ msgid ""
 "the end of their application."
 msgstr ""
 "Os dois <literal>.endif</literal>s fecham as duas condicionais anteriores, "
-"marcando o fim da sua aplicação"
+"marcando o fim da sua aplicação."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1578
@@ -2763,19 +2763,14 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:1792
-#, fuzzy
-#| msgid "<varname>DESTDIR</varname>"
 msgid "<varname>DOCDIR</varname>"
-msgstr "<varname>DESTDIR</varname>"
+msgstr "<varname>DOCDIR</varname>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1795
-#, fuzzy
-#| msgid ""
-#| "DESTDIR specifies the path where the web site files are to be installed."
 msgid "DOCDIR specifies the path where the web site files are to be installed."
 msgstr ""
-"DESTDIR especifica o caminho onde os arquivos do web site devem ser "
+"DOCDIR especifica o caminho onde os arquivos do web site devem ser "
 "instalados."
 
 #. (itstool) path: listitem/para
@@ -2986,16 +2981,14 @@ msgstr ""
 
 #. (itstool) path: example/screen
 #: book.translate.xml:1903
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<prompt>%</prompt> <userinput>cd ~/doc/en_US.ISO8859-1/htdocs/</userinput>\n"
-#| "<prompt>%</prompt> <userinput>env DESTDIR=/tmp/www make ENGLISH_ONLY=yes WEB_ONLY=yes all install</userinput>"
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>cd ~/doc/en_US.ISO8859-1/htdocs/</userinput>\n"
 "<prompt>%</prompt> <userinput>env DOCDIR=/tmp/www make ENGLISH_ONLY=yes WEB_ONLY=yes all install</userinput>"
 msgstr ""
 "<prompt>%</prompt> <userinput>cd ~/doc/en_US.ISO8859-1/htdocs/</userinput>\n"
-"<prompt>%</prompt> <userinput>env DESTDIR=/tmp/www make ENGLISH_ONLY=yes WEB_ONLY=yes all install</userinput>"
+"<prompt>%</prompt> <userinput>env DOCDIR=/tmp/www make ENGLISH_ONLY=yes "
+"WEB_ONLY=yes all install</userinput>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:1906
@@ -3923,7 +3916,7 @@ msgstr ""
 #: book.translate.xml:2374 book.translate.xml:2769 book.translate.xml:2905
 #: book.translate.xml:3092 book.translate.xml:3385
 msgid "To Do…"
-msgstr "Para Fazer..."
+msgstr "Para Fazer…"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2376
@@ -7324,8 +7317,8 @@ msgid ""
 "Entities are defined for all the <link xlink:href=\"@@URL_RELPREFIX@@/doc/"
 "en_US.ISO8859-1/articles/\">FreeBSD articles</link>."
 msgstr ""
-"As entidades são definidas para todos os <link xlink:href="
-"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/\">artigos do FreeBSD</link>"
+"As entidades são definidas para todos os <link xlink:href=\""
+"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/\">artigos do FreeBSD</link>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4320
@@ -7589,7 +7582,7 @@ msgstr ""
 "conter marcação estrutural, esse elemento pode conter elementos que incluem "
 "informações adicionais sobre o livro. Isso é uma meta-informação, usada para "
 "fins de referência ou conteúdo adicional usado para produzir um título de "
-"página"
+"página."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4456 book.translate.xml:4511
@@ -8065,7 +8058,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:4726
 msgid "<tag>para</tag> Example"
-msgstr "Exemplo de um <tag>para</tag> "
+msgstr "Exemplo de um <tag>para</tag>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:4730
@@ -15800,8 +15793,8 @@ msgid ""
 "Manual page references (the second example uses <tag>citerefentry</tag> with "
 "the <literal>&amp;man.csh.1;</literal> entity):."
 msgstr ""
-"Referências de páginas de manual (o segundo exemplo usa <tag>citerefentry</"
-"tag> com a entidade <literal>&amp;man.csh.1;</literal>):"
+"Referências de páginas de manual (o segundo exemplo usa "
+"<tag>citerefentry</tag> com a entidade <literal>&amp;man.csh.1;</literal>):."
 
 #. (itstool) path: informalexample/para
 #: book.translate.xml:9178
