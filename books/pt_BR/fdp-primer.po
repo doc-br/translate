@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-11-02 17:04-0300\n"
+"POT-Creation-Date: 2019-11-16 15:18-0300\n"
 "PO-Revision-Date: 2019-11-04 00:20+0000\n"
 "Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.eastus.cloudapp.azure."
@@ -2763,13 +2763,17 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:1792
-msgid "<varname>DESTDIR</varname>"
+#, fuzzy
+#| msgid "<varname>DESTDIR</varname>"
+msgid "<varname>DOCDIR</varname>"
 msgstr "<varname>DESTDIR</varname>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1795
-msgid ""
-"DESTDIR specifies the path where the web site files are to be installed."
+#, fuzzy
+#| msgid ""
+#| "DESTDIR specifies the path where the web site files are to be installed."
+msgid "DOCDIR specifies the path where the web site files are to be installed."
 msgstr ""
 "DESTDIR especifica o caminho onde os arquivos do web site devem ser "
 "instalados."
@@ -2982,10 +2986,13 @@ msgstr ""
 
 #. (itstool) path: example/screen
 #: book.translate.xml:1903
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "<prompt>%</prompt> <userinput>cd ~/doc/en_US.ISO8859-1/htdocs/</userinput>\n"
+#| "<prompt>%</prompt> <userinput>env DESTDIR=/tmp/www make ENGLISH_ONLY=yes WEB_ONLY=yes all install</userinput>"
 msgid ""
 "<prompt>%</prompt> <userinput>cd ~/doc/en_US.ISO8859-1/htdocs/</userinput>\n"
-"<prompt>%</prompt> <userinput>env DESTDIR=/tmp/www make ENGLISH_ONLY=yes WEB_ONLY=yes all install</userinput>"
+"<prompt>%</prompt> <userinput>env DOCDIR=/tmp/www make ENGLISH_ONLY=yes WEB_ONLY=yes all install</userinput>"
 msgstr ""
 "<prompt>%</prompt> <userinput>cd ~/doc/en_US.ISO8859-1/htdocs/</userinput>\n"
 "<prompt>%</prompt> <userinput>env DESTDIR=/tmp/www make ENGLISH_ONLY=yes WEB_ONLY=yes all install</userinput>"
