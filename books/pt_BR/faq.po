@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-12-01 16:21-0300\n"
-"PO-Revision-Date: 2019-11-16 19:02+0000\n"
+"PO-Revision-Date: 2019-12-01 20:06+0000\n"
 "Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.eastus.cloudapp.azure."
 "com/projects/freebsd-doc/boooks_faq/pt_BR/>\n"
@@ -242,16 +242,12 @@ msgstr ""
 
 #. (itstool) path: info/releaseinfo
 #: book.translate.xml:142
-#, fuzzy
-#| msgid ""
-#| "$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 53561 2019-11-07 "
-#| "10:43:06Z rcyu $"
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 53641 2019-11-26 17:47:06Z "
 "emaste $"
 msgstr ""
-"$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 53561 2019-11-07 10:43:06Z "
-"rcyu $"
+"$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 53641 2019-11-26 17:47:06Z "
+"emaste $"
 
 #. (itstool) path: abstract/para
 #: book.translate.xml:145
@@ -666,13 +662,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:392
-#, fuzzy
-#| msgid ""
-#| "Up until the release of 9.0, the 11.<replaceable>X</replaceable> series "
-#| "was the one known as <emphasis>-STABLE</emphasis>. However, as of 13."
-#| "<replaceable>X</replaceable>, the 11.<replaceable>X</replaceable> branch "
-#| "will be designated for an <quote>extended support</quote> status and "
-#| "receive only fixes for major problems, such as security-related fixes."
 msgid ""
 "Up until the release of 12.0, the 11.<replaceable>X</replaceable> series was "
 "the one known as <emphasis>-STABLE</emphasis>. However, as of 13."
@@ -680,11 +669,11 @@ msgid ""
 "will be designated for an <quote>extended support</quote> status and receive "
 "only fixes for major problems, such as security-related fixes."
 msgstr ""
-"Até o lançamento da versão 9.0, a série 11.<replaceable>X</replaceable> era "
-"a conhecida como <emphasis>-STABLE</emphasis>. No entanto, a partir da 13."
-"<replaceable>X</replaceable>, a branch 11.<replaceable>X</replaceable> será "
-"designada para um status de <quote>suporte estendido</quote> e passará a "
-"receber apenas correções para problemas maiores, como as correções "
+"Até o lançamento da versão 12.0, a série 11.<replaceable>X</replaceable> era "
+"a conhecida como <emphasis>-STABLE</emphasis>. No entanto, a partir da "
+"13.<replaceable>X</replaceable>, a branch 11.<replaceable>X</replaceable> "
+"será designada para um status de <quote>suporte estendido</quote> e passará "
+"a receber apenas correções para problemas maiores, como as correções "
 "relacionadas à segurança."
 
 #. (itstool) path: answer/para
@@ -766,29 +755,6 @@ msgstr "Qual é o conceito do <emphasis>FreeBSD-STABLE</emphasis>?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:447
-#, fuzzy
-#| msgid ""
-#| "Back when FreeBSD 2.0.5 was released, FreeBSD development branched in "
-#| "two. One branch was named <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US."
-#| "ISO8859-1/books/handbook/current-stable.html#stable\">-STABLE</link>, one "
-#| "<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
-#| "current-stable.html#current\">-CURRENT</link>. <emphasis>FreeBSD-STABLE</"
-#| "emphasis> is the development branch from which major releases are made. "
-#| "Changes go into this branch at a slower pace and with the general "
-#| "assumption that they have first been tested in FreeBSD-CURRENT. However, "
-#| "at any given time, the sources for FreeBSD-STABLE may or may not be "
-#| "suitable for general use, as it may uncover bugs and corner cases that "
-#| "were not yet found in FreeBSD-CURRENT. Users who do not have the "
-#| "resources to perform testing should instead run the most recent release "
-#| "of FreeBSD. <emphasis>FreeBSD-CURRENT</emphasis>, on the other hand, has "
-#| "been one unbroken line since 2.0 was released, leading towards 12.0-"
-#| "RELEASE and beyond. For more detailed information on branches see "
-#| "<quote><link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/"
-#| "releng/release-proc.html#rel-branch\">FreeBSD Release Engineering: "
-#| "Creating the Release Branch</link></quote>, the status of the branches "
-#| "and the upcoming release schedule can be found on the <link xlink:href="
-#| "\"https://www.FreeBSD.org/releng\">Release Engineering Information</link> "
-#| "page."
 msgid ""
 "<emphasis>FreeBSD-STABLE</emphasis> is the development branch from which "
 "major releases are made. Changes go into this branch at a slower pace and "
@@ -800,28 +766,16 @@ msgid ""
 "FreeBSD. <emphasis>FreeBSD-CURRENT</emphasis>, on the other hand, has been "
 "one unbroken line since 2.0 was released."
 msgstr ""
-"De volta quando o FreeBSD 2.0.5 foi lançado, o desenvolvimento do FreeBSD se "
-"ramificou em dois. Um ramo (branch) foi nomeado <link xlink:href="
-"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/current-stable."
-"html#stable\">-STABLE</link>, e o outro <link xlink:href=\"@@URL_RELPREFIX@@/"
-"doc/en_US.ISO8859-1/books/handbook/current-stable.html#current\">-CURRENT</"
-"link>. O <emphasis>FreeBSD-STABLE</emphasis> é o branch de desenvolvimento a "
-"partir do qual os releases principais são feitos. Mudanças entram nesta "
-"branch em um ritmo mais lento e com a suposição geral de que eles foram "
-"testados primeiro no FreeBSD-CURRENT. No entanto, a qualquer momento, o "
-"código fonte para o FreeBSD-STABLE pode ou não ser adequado para uso geral, "
-"devido a descoberta de bugs e/ou outros casos específicos que ainda não "
-"foram encontrados no FreeBSD-CURRENT. Usuários que não possuem recursos para "
-"realizar testes devem, ao invés disso, executar a release mais recente do "
+"O <emphasis>FreeBSD-STABLE</emphasis> é o branch de desenvolvimento a partir "
+"do qual os releases principais são feitos. Mudanças entram nesta branch em "
+"um ritmo mais lento e com a suposição geral de que eles foram testados "
+"primeiro no FreeBSD-CURRENT. No entanto, a qualquer momento, o código fonte "
+"para o FreeBSD-STABLE pode ou não ser adequado para uso geral, devido a "
+"descoberta de bugs e/ou outros casos específicos que ainda não foram "
+"encontrados no FreeBSD-CURRENT. Usuários que não possuem recursos para "
+"realizar testes devem, ao invés dessa, executar a release mais recente do "
 "FreeBSD. O <emphasis>FreeBSD-CURRENT</emphasis>, por outro lado, tem sido "
-"uma linha ininterrupta desde que o 2.0 foi lançado, levando em direção ao "
-"12.0-RELEASE e além. Para obter informações mais detalhadas sobre as "
-"branchs, consulte <quote><link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US."
-"ISO8859-1/articles/releng/release-proc.html#rel-branch\">Engenharia de "
-"Releases do FreeBSD: Criando uma Release Branch</link></quote>, o status dos "
-"branches e o cronograma para releases futuros podem ser encontrados na "
-"página de informações da <link xlink:href=\"https://www.FreeBSD.org/releng"
-"\">Engenharia de Release</link>."
+"uma linha ininterrupta desde que o 2.0 foi lançado."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:461
@@ -833,6 +787,12 @@ msgid ""
 "can be found on the <link xlink:href=\"https://www.FreeBSD.org/releng"
 "\">Release Engineering Information</link> page."
 msgstr ""
+"Para obter informações mais detalhadas sobre as branches, consulte <quote><"
+"link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/releng/"
+"release-proc.html#rel-branch\">Engenharia de Releases do FreeBSD: Criando "
+"uma Release Branch</link></quote>, o status dos branches e o cronograma para "
+"releases futuros podem ser encontrados na página <link xlink:href=\""
+"https://www.FreeBSD.org/releng\">Release Engineering Information</link>."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:468
@@ -905,10 +865,8 @@ msgstr ""
 
 #. (itstool) path: question/para
 #: book.translate.xml:508
-#, fuzzy
-#| msgid "When are FreeBSD releases made?"
 msgid "When are FreeBSD snapshots made?"
-msgstr "Quando são realizados os lançamentos de novas versões do FreeBSD?"
+msgstr "Quando são feitos os snapshots do FreeBSD?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:512
@@ -1142,25 +1100,14 @@ msgstr "Quais os livros existentes sobre o FreeBSD?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:650
-#, fuzzy
-#| msgid ""
-#| "The project produces a wide range of documentation, available online from "
-#| "this link: <uri xlink:href=\"https://www.FreeBSD.org/docs.html\">https://"
-#| "www.FreeBSD.org/docs.html</uri>. In addition, the <link xlink:href="
-#| "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/bibliography.html"
-#| "\">the bibliography in the Handbook</link> reference other recommended "
-#| "books."
 msgid ""
 "The project produces a wide range of documentation, available online from "
 "this link: <uri xlink:href=\"https://www.FreeBSD.org/docs.html\">https://www."
 "FreeBSD.org/docs.html</uri>."
 msgstr ""
 "O projeto produz uma ampla gama de documentação, disponível on-line a partir "
-"deste link: <uri xlink:href=\"https://www.FreeBSD.org/docs.html\">https://"
-"www.FreeBSD.org/docs.html</uri>. Além disso, a <link xlink:href="
-"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/bibliography.html"
-"\">referência bibliográfica no Handbook</link> referencia outros livros "
-"recomendados."
+"deste link: <uri xlink:href=\"https://www.FreeBSD.org/docs.html\""
+">https://www.FreeBSD.org/docs.html</uri>."
 
 #. (itstool) path: question/para
 #: book.translate.xml:664
@@ -2037,16 +1984,12 @@ msgstr ""
 
 #. (itstool) path: question/para
 #: book.translate.xml:1232
-#, fuzzy
-#| msgid ""
-#| "Can <trademark class=\"registered\">Windows</trademark> co-exist with "
-#| "FreeBSD?"
 msgid ""
 "Can <trademark class=\"registered\">Windows</trademark> co-exist with "
 "FreeBSD? (x86-specific)"
 msgstr ""
 "O <trademark class=\"registered\">Windows</trademark> pode coexistir com o "
-"FreeBSD?"
+"FreeBSD? (x86-specific)"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1236
@@ -2066,15 +2009,12 @@ msgstr ""
 
 #. (itstool) path: question/para
 #: book.translate.xml:1246
-#, fuzzy
-#| msgid ""
-#| "Another operating system destroyed my Boot Manager. How do I get it back?"
 msgid ""
 "Another operating system destroyed my Boot Manager. How do I get it back? "
 "(x86-specific)"
 msgstr ""
-"Outro sistema operacional destruiu meu gerenciador de inicialização. Como "
-"faço para recuperá-lo?"
+"Outro sistema operacional destruiu meu Gerenciador de Inicialização. Como "
+"faço para recuperá-lo? (x86-specific)"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1251
@@ -2370,10 +2310,8 @@ msgstr ""
 
 #. (itstool) path: question/para
 #: book.translate.xml:1420
-#, fuzzy
-#| msgid "What are the limits for FFS file systems?"
 msgid "What are the limits for memory?"
-msgstr "Quais são os limites para sistemas de arquivos FFS?"
+msgstr "Quais são os limites para a memória?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1424
@@ -2606,14 +2544,12 @@ msgstr "no <filename>/etc/rc.conf</filename>"
 #. (itstool) path: sect1/title
 #: book.translate.xml:1565
 msgid "Peripherals"
-msgstr ""
+msgstr "Periféricos"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1570
-#, fuzzy
-#| msgid "What kind of hard drives does FreeBSD support?"
 msgid "What kind of peripherals does FreeBSD support?"
-msgstr "Que tipo de disco o FreeBSD suporta?"
+msgstr "Que tipo de periféricos o FreeBSD suporta?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1574
@@ -3845,16 +3781,13 @@ msgstr "Onde estão todas as aplicações de usuário?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2262
-#, fuzzy
-#| msgid ""
-#| "Yes. Refer to <link xlink:href=\"@@URL_RELPREFIX@@/java/index.html"
-#| "\">https://www.FreeBSD.org/java/</link> for more information."
 msgid ""
 "Refer to <link xlink:href=\"@@URL_RELPREFIX@@/ports/index.html\">the ports "
 "page</link> for info on software packages ported to FreeBSD."
 msgstr ""
-"Sim. Consulte a página web <link xlink:href=\"@@URL_RELPREFIX@@/java/index."
-"html\">https://www.FreeBSD.org/java/</link> para mais informações."
+"Consulte <link xlink:href=\"@@URL_RELPREFIX@@/ports/index.html\">a página "
+"dos ports</link> para informações sobre pacotes de software portados para o "
+"FreeBSD."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2266
@@ -9079,18 +9012,12 @@ msgstr "Comunicações Seriais"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:5264
-#, fuzzy
-#| msgid ""
-#| "This section answers common questions about serial communications with "
-#| "FreeBSD. PPP is covered in the <link linkend=\"networking\">Networking</"
-#| "link> section."
 msgid ""
 "This section answers common questions about serial communications with "
 "FreeBSD."
 msgstr ""
 "Esta seção responde a perguntas comuns sobre comunicação serial com o "
-"FreeBSD. O PPP é abordado na seção <link linkend=\"networking\">Networking</"
-"link>."
+"FreeBSD."
 
 #. (itstool) path: question/para
 #: book.translate.xml:5270
@@ -9175,10 +9102,8 @@ msgstr ""
 
 #. (itstool) path: question/para
 #: book.translate.xml:5322
-#, fuzzy
-#| msgid "How do I access the serial ports on FreeBSD?"
 msgid "How do I access the serial ports on FreeBSD? (x86-specific)"
-msgstr "Como eu acesso as portas seriais no FreeBSD?"
+msgstr "Como eu acesso as portas seriais no FreeBSD? (x86-specific)"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5326
@@ -10525,22 +10450,16 @@ msgstr "O que são Snapshots e Releases?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6098
-#, fuzzy
-#| msgid ""
-#| "There are currently 2 active/semi-active branches in the FreeBSD <link "
-#| "xlink:href=\"http://svnweb.FreeBSD.org/base/\">Subversion Repository</"
-#| "link>. (Earlier branches are only changed very rarely, which is why there "
-#| "are only 2 active branches of development):"
 msgid ""
 "There are currently 3 active/semi-active branches in the FreeBSD <link xlink:"
 "href=\"http://svnweb.FreeBSD.org/base/\">Subversion Repository</link>. "
 "(Earlier branches are only changed very rarely, which is why there are only "
 "3 active branches of development):"
 msgstr ""
-"Atualmente existem 2 branchs ativas/semi-ativas no <link xlink:href=\"http://"
-"svnweb.FreeBSD.org/base/\">Repositório de Subversion</link> do FreeBSD. (Os "
-"branchs anteriores são alterados apenas muito raramente, e é por isso que "
-"existem apenas 2 ramificações ativas de desenvolvimento):"
+"Atualmente existem 3 branches ativas/semi-ativas no <link xlink:href=\""
+"http://svnweb.FreeBSD.org/base/\">Repositório Subversion</link> do FreeBSD. ("
+"Os branches anteriores são alterados muito raramente, e é por isso que "
+"existem apenas 3 branches ativas de desenvolvimento):"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6106
@@ -10554,16 +10473,12 @@ msgstr "<symbol>stable/12/</symbol> AKA <emphasis>12-STABLE</emphasis>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6116
-#, fuzzy
-#| msgid ""
-#| "<symbol>head/</symbol> AKA <emphasis>-CURRENT</emphasis> AKA <emphasis>12-"
-#| "CURRENT</emphasis>"
 msgid ""
 "<symbol>head/</symbol> AKA <emphasis>-CURRENT</emphasis> AKA <emphasis>13-"
 "CURRENT</emphasis>"
 msgstr ""
-"<symbol>head/</symbol> AKA <emphasis>-CURRENT</emphasis> AKA <emphasis>12-"
-"CURRENT</emphasis>"
+"<symbol>head/</symbol> AKA <emphasis>-CURRENT</emphasis> AKA "
+"<emphasis>13-CURRENT</emphasis>"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6122
