@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-11-02 17:04-0300\n"
+"POT-Creation-Date: 2019-12-09 20:45-0300\n"
 "PO-Revision-Date: 2019-11-09 09:08+0000\n"
 "Last-Translator: Edson Brandi <ebrandi@freebsd.org>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.eastus.cloudapp.azure."
@@ -135,9 +135,13 @@ msgstr ""
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:54 article.translate.xml:56
+#, fuzzy
+#| msgid ""
+#| "$FreeBSD: head/en_US.ISO8859-1/articles/linux-emulation/article.xml 51904 "
+#| "2018-06-23 14:55:54Z bcr $"
 msgid ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/linux-emulation/article.xml 51904 "
-"2018-06-23 14:55:54Z bcr $"
+"$FreeBSD: head/en_US.ISO8859-1/articles/linux-emulation/article.xml 53664 "
+"2019-12-07 16:24:22Z carlavilla $"
 msgstr ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/linux-emulation/article.xml 51904 "
 "2018-06-23 14:55:54Z bcr $"
@@ -375,14 +379,14 @@ msgstr ""
 "A API comum do <trademark class=\"registered\">UNIX</trademark> define uma "
 "syscall como uma forma de emitir comandos de um processo do espaço do "
 "usuário para o kernel. A implementação mais comum é usando uma instrução de "
-"interrupção ou especializada (pense em instruções "
-"<literal>SYSENTER</literal>/<literal>SYSCALL</literal> para ia32). Syscalls "
-"são definidos por um número. Por exemplo, no FreeBSD, a syscall número 85 é "
-"a syscall <citerefentry><refentrytitle>swapon</refentrytitle><manvolnum>2</ma"
-"nvolnum></citerefentry> e a syscall número 132 é a syscall <citerefentry><ref"
-"entrytitle>mkfifo</refentrytitle><manvolnum>2</manvolnum></citerefentry>. "
-"Algumas syscalls precisam de parâmetros, que são passados do espaço do "
-"usuário para o espaço do kernel de várias maneiras (dependente da "
+"interrupção ou especializada (pense em instruções <literal>SYSENTER</"
+"literal>/<literal>SYSCALL</literal> para ia32). Syscalls são definidos por "
+"um número. Por exemplo, no FreeBSD, a syscall número 85 é a syscall "
+"<citerefentry><refentrytitle>swapon</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> e a syscall número 132 é a syscall "
+"<citerefentry><refentrytitle>mkfifo</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry>. Algumas syscalls precisam de parâmetros, que são passados do "
+"espaço do usuário para o espaço do kernel de várias maneiras (dependente da "
 "implementação). Syscalls são síncronas."
 
 #. (itstool) path: sect3/para
@@ -636,9 +640,9 @@ msgid ""
 "trademark> layer and various FreeBSD-on-FreeBSD layers. Others are not "
 "supposed to work properly nor be usable these days."
 msgstr ""
-"Emulações ativamente desenvolvidas são a camada <trademark class=\""
-"registered\">Linux</trademark> e várias camadas FreeBSD-on-FreeBSD. Outros "
-"não devem funcionar corretamente nem ser utilizáveis nos dias de hoje."
+"Emulações ativamente desenvolvidas são a camada <trademark class=\"registered"
+"\">Linux</trademark> e várias camadas FreeBSD-on-FreeBSD. Outros não devem "
+"funcionar corretamente nem ser utilizáveis nos dias de hoje."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:314
@@ -704,8 +708,8 @@ msgid ""
 "literal> with register <varname>%eax</varname> set to a desired syscall "
 "number with arguments passed on the stack."
 msgstr ""
-"Syscalls no FreeBSD são emitidos executando a interrupção <literal> 0x80 "
-"</literal> com o registrador <varname>%eax</varname> definido para um número "
+"Syscalls no FreeBSD são emitidos executando a interrupção <literal> 0x80 </"
+"literal> com o registrador <varname>%eax</varname> definido para um número "
 "de syscall desejado com argumentos passados na pilha."
 
 #. (itstool) path: sect4/para
@@ -732,20 +736,21 @@ msgstr ""
 "Quando um processo emite uma interrupção <literal>0x80</literal>, a syscall "
 "manipuladora de trap <literal>int0x80</literal> é proclamada (definida em "
 "<filename>sys/i386/i386/exception.s</filename>), que prepara argumentos (ou "
-"seja, copia-os para a pilha) para uma chamada para uma função C <citerefentry"
-"><refentrytitle>syscall</refentrytitle><manvolnum>2</manvolnum></citerefentry"
-"> (definida em <filename>sys/i386/i386/trap.c</filename>), que processa o "
-"trapframe passado. O processamento consiste em preparar a syscall ("
-"dependendo da entrada <literal>sysvec</literal>), determinando se a syscall "
-"é de 32 ou 64 bits (muda o tamanho dos parâmetros), então os parâmetros são "
-"copiados, incluindo a syscall. Em seguida, a função syscall real é executada "
-"com o processamento do código de retorno (casos especiais para erros "
-"<literal>ERESTART</literal> e <literal>EJUSTRETURN</literal>). Finalmente, "
-"um <literal>userret()</literal> é agendado, trocando o processo de volta ao "
-"ritmo do usuário. Os parâmetros para a syscall manipuladora atual são "
-"passados na forma de argumentos <literal>struct thread *td </literal>, "
-"<literal>struct syscall args*</literal> onde o segundo parâmetro é um "
-"ponteiro para o copiado na estrutura de parâmetros."
+"seja, copia-os para a pilha) para uma chamada para uma função C "
+"<citerefentry><refentrytitle>syscall</refentrytitle><manvolnum>2</"
+"manvolnum></citerefentry> (definida em <filename>sys/i386/i386/trap.c</"
+"filename>), que processa o trapframe passado. O processamento consiste em "
+"preparar a syscall (dependendo da entrada <literal>sysvec</literal>), "
+"determinando se a syscall é de 32 ou 64 bits (muda o tamanho dos "
+"parâmetros), então os parâmetros são copiados, incluindo a syscall. Em "
+"seguida, a função syscall real é executada com o processamento do código de "
+"retorno (casos especiais para erros <literal>ERESTART</literal> e "
+"<literal>EJUSTRETURN</literal>). Finalmente, um <literal>userret()</literal> "
+"é agendado, trocando o processo de volta ao ritmo do usuário. Os parâmetros "
+"para a syscall manipuladora atual são passados na forma de argumentos "
+"<literal>struct thread *td </literal>, <literal>struct syscall args*</"
+"literal> onde o segundo parâmetro é um ponteiro para o copiado na estrutura "
+"de parâmetros."
 
 #. (itstool) path: sect4/title
 #. (itstool) path: sect2/title
@@ -1700,13 +1705,13 @@ msgstr ""
 "executam aritmética simples em operandos de memória de maneira atômica com "
 "relação a eventos externos (interrupções, preempção, etc.). Operações "
 "atômicas podem garantir atomicidade apenas em pequenos tipos de dados (na "
-"ordem de magnitude do tipo de dados C da arquitetura "
-"<literal>.long.</literal>), portanto raramente devem ser usados diretamente "
-"no código de nível final, se não apenas para operações muito simples (como "
-"configuração de flags em um bitmap, por exemplo). De fato, é bastante "
-"simples e comum escrever uma semântica errada baseada apenas em operações "
-"atômicas (geralmente referidas como lock-less). O kernel do FreeBSD oferece "
-"uma maneira de realizar operações atômicas em conjunto com uma barreira de "
+"ordem de magnitude do tipo de dados C da arquitetura <literal>.long.</"
+"literal>), portanto raramente devem ser usados diretamente no código de "
+"nível final, se não apenas para operações muito simples (como configuração "
+"de flags em um bitmap, por exemplo). De fato, é bastante simples e comum "
+"escrever uma semântica errada baseada apenas em operações atômicas "
+"(geralmente referidas como lock-less). O kernel do FreeBSD oferece uma "
+"maneira de realizar operações atômicas em conjunto com uma barreira de "
 "memória. As barreiras de memória garantirão que uma operação atômica "
 "ocorrerá seguindo alguma ordem especificas em relação a outros acessos à "
 "memória. Por exemplo, se precisarmos que uma operação atômica aconteça logo "
@@ -1714,13 +1719,13 @@ msgstr ""
 "reordenando atividades de buffers) forem concluídas, precisamos usar "
 "explicitamente uma barreira de memória em conjunto com essa operação "
 "atômica. Portanto, é simples entender por que as barreiras de memória "
-"desempenham um papel fundamental na construção de bloqueios de alto nível ("
-"assim como referências, exclusões mútuas, etc.). Para uma explicação "
-"detalhada sobre operações atômicas, consulte <citerefentry><refentrytitle>ato"
-"mic</refentrytitle><manvolnum>9</manvolnum></citerefentry>. É muito, no "
-"entanto, notar que as operações atômicas (e as barreiras de memória também) "
-"devem, idealmente, ser usadas apenas para construir bloqueios front-ending ("
-"como mutexes)."
+"desempenham um papel fundamental na construção de bloqueios de alto nível "
+"(assim como referências, exclusões mútuas, etc.). Para uma explicação "
+"detalhada sobre operações atômicas, consulte "
+"<citerefentry><refentrytitle>atomic</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry>. É muito, no entanto, notar que as operações atômicas (e as "
+"barreiras de memória também) devem, idealmente, ser usadas apenas para "
+"construir bloqueios front-ending (como mutexes)."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:900
@@ -1815,8 +1820,8 @@ msgstr ""
 "adquiridas. Por essa e outras razões (como falta de suporte à propagação de "
 "prioridade, falta de esquemas de balanceamento de carga entre CPUs, etc.), "
 "os spin locks têm a finalidade de proteger endereçamentos muito pequenos de "
-"código ou, idealmente, não serem usados se não solicitados explicitamente ( "
-"explicado posteriormente)."
+"código ou, idealmente, não serem usados se não solicitados explicitamente "
+"( explicado posteriormente)."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:959
@@ -2032,8 +2037,8 @@ msgstr ""
 "Geralmente, eles devem ser usados apenas em um contexto específico e, mesmo "
 "que possam substituir bloqueios, eles devem ser evitados porque eles não "
 "permitem o diagnóstico de problemas simples com ferramentas de depuração de "
-"bloqueio (como <citerefentry><refentrytitle>witness</refentrytitle><manvolnum"
-">4</manvolnum></citerefentry>)."
+"bloqueio (como <citerefentry><refentrytitle>witness</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry>)."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1064
@@ -2983,8 +2988,8 @@ msgstr ""
 msgid ""
 "<trademark class=\"registered\">Linux</trademark> emulation layer -MI part"
 msgstr ""
-"Parte da amada de emulação -MI do <trademark class=\"registered\">Linux "
-"</trademark>"
+"Parte da amada de emulação -MI do <trademark class=\"registered\">Linux </"
+"trademark>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1545
@@ -3117,18 +3122,19 @@ msgstr ""
 "A camada de emulação do <trademark class=\"registered\">Linux</trademark> no "
 "FreeBSD suporta a configuração de tempo de execução da versão emulada. Isso "
 "é feito via <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</"
-"manvolnum></citerefentry>, a saber <literal>compat.linux.osrelease</literal>"
-". A configuração dessa <citerefentry><refentrytitle>sysctl</refentrytitle><ma"
-"nvolnum>8</manvolnum></citerefentry> afeta o comportamento de tempo de "
-"execução da camada de emulação. Quando definido como 2.6.x, ele configura o "
-"valor de <literal>linux_use_linux26</literal> enquanto a configuração para "
-"algo mais o mantém não definido. Essa variável (mais variáveis por prisão do "
-"mesmo tipo) determina se a infraestrutura 2.6 (principalmente o PID) é usada "
-"no código ou não. A configuração da versão é feita em todo o sistema e isso "
-"afeta todos os processos <trademark class=\"registered\">Linux</trademark>. "
-"A <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum>"
-"</citerefentry> não deve ser alterada ao executar qualquer binário do <"
-"trademark class=\"registered\">Linux</trademark>, pois pode causar danos ."
+"manvolnum></citerefentry>, a saber <literal>compat.linux.osrelease</"
+"literal>. A configuração dessa <citerefentry><refentrytitle>sysctl</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> afeta o comportamento "
+"de tempo de execução da camada de emulação. Quando definido como 2.6.x, ele "
+"configura o valor de <literal>linux_use_linux26</literal> enquanto a "
+"configuração para algo mais o mantém não definido. Essa variável (mais "
+"variáveis por prisão do mesmo tipo) determina se a infraestrutura 2.6 "
+"(principalmente o PID) é usada no código ou não. A configuração da versão é "
+"feita em todo o sistema e isso afeta todos os processos <trademark class="
+"\"registered\">Linux</trademark>. A <citerefentry><refentrytitle>sysctl</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> não deve ser alterada "
+"ao executar qualquer binário do <trademark class=\"registered\">Linux</"
+"trademark>, pois pode causar danos ."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1611
@@ -3864,8 +3870,8 @@ msgid ""
 "user), this is in-kernel stuff but it shows clearly how important the "
 "performance of synchronization primitives is."
 msgstr ""
-"Threads precisam de algum tipo de sincronização e <trademark class=\""
-"registered\">POSIX</trademark> fornece alguns deles: mutexes para exclusão "
+"Threads precisam de algum tipo de sincronização e <trademark class="
+"\"registered\">POSIX</trademark> fornece alguns deles: mutexes para exclusão "
 "mútua, bloqueios de leitura/gravação para exclusão mútua com relação de "
 "polarização de leituras e gravações e variáveis de condição para sinalizar "
 "um mudança de status. É interessante observar que a API de thread <trademark "
@@ -4704,17 +4710,28 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:2455
+#, fuzzy
+#| msgid ""
+#| "We are able to run the most used applications like <package>www/linux-"
+#| "firefox</package>, <package>www/linux-opera</package>, <package>net-im/"
+#| "skype</package> and some games from the Ports Collection. Some of the "
+#| "programs exhibit bad behavior under 2.6 emulation but this is currently "
+#| "under investigation and hopefully will be fixed soon. The only big "
+#| "application that is known not to work is the <trademark class=\"registered"
+#| "\">Linux</trademark> <trademark>Java</trademark> Development Kit and this "
+#| "is because of the requirement of <function>epoll</function> facility "
+#| "which is not directly related to the <trademark class=\"registered"
+#| "\">Linux</trademark> kernel 2.6."
 msgid ""
 "We are able to run the most used applications like <package>www/linux-"
-"firefox</package>, <package>www/linux-opera</package>, <package>net-im/"
-"skype</package> and some games from the Ports Collection. Some of the "
-"programs exhibit bad behavior under 2.6 emulation but this is currently "
-"under investigation and hopefully will be fixed soon. The only big "
-"application that is known not to work is the <trademark class=\"registered"
-"\">Linux</trademark> <trademark>Java</trademark> Development Kit and this is "
-"because of the requirement of <function>epoll</function> facility which is "
-"not directly related to the <trademark class=\"registered\">Linux</"
-"trademark> kernel 2.6."
+"firefox</package>, <package>net-im/skype</package> and some games from the "
+"Ports Collection. Some of the programs exhibit bad behavior under 2.6 "
+"emulation but this is currently under investigation and hopefully will be "
+"fixed soon. The only big application that is known not to work is the "
+"<trademark class=\"registered\">Linux</trademark> <trademark>Java</"
+"trademark> Development Kit and this is because of the requirement of "
+"<function>epoll</function> facility which is not directly related to the "
+"<trademark class=\"registered\">Linux</trademark> kernel 2.6."
 msgstr ""
 "Nós podemos rodar os aplicativos mais usados como o <package>www/linux-"
 "firefox</package>, <package>www/linux-opera</package>, <package>net-im/"
@@ -4728,7 +4745,7 @@ msgstr ""
 "2.6."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:2467
+#: article.translate.xml:2466
 msgid ""
 "We hope to enable 2.6.16 emulation by default some time after FreeBSD 7.0 is "
 "released at least to expose the 2.6 emulation parts for some wider testing. "
@@ -4741,12 +4758,12 @@ msgstr ""
 "linux_base, que é o plano final."
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:2475
+#: article.translate.xml:2474
 msgid "Future work"
 msgstr "Trabalho futuro"
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:2477
+#: article.translate.xml:2476
 msgid ""
 "Future work should focus on fixing the remaining issues with futexes, "
 "implement the rest of the *at family of syscalls, fix the signal delivery "
@@ -4759,7 +4776,7 @@ msgstr ""
 "function> e <function>inotify</function>."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:2483
+#: article.translate.xml:2482
 msgid ""
 "We hope to be able to run the most important programs flawlessly soon, so we "
 "will be able to switch to the 2.6 emulation by default and make the "
@@ -4772,7 +4789,7 @@ msgstr ""
 "Core 4 não é mais suportado."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:2489
+#: article.translate.xml:2488
 msgid ""
 "The other possible goal is to share our code with NetBSD and DragonflyBSD. "
 "NetBSD has some support for 2.6 emulation but its far from finished and not "
@@ -4785,7 +4802,7 @@ msgstr ""
 "algum interesse em portar as melhorias do 2.6."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:2495
+#: article.translate.xml:2494
 msgid ""
 "Generally, as <trademark class=\"registered\">Linux</trademark> develops we "
 "would like to keep up with their development, implementing newly added "
@@ -4802,62 +4819,62 @@ msgstr ""
 "também podem ser feitos, um lock mais refinado e outros."
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:2505
+#: article.translate.xml:2504
 msgid "Team"
 msgstr "Equipe"
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:2507
+#: article.translate.xml:2506
 msgid "I cooperated on this project with (in alphabetical order):"
 msgstr "Eu colaborei neste projeto com (em ordem alfabética):"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:2512
+#: article.translate.xml:2511
 msgid "John Baldwin <email>jhb@FreeBSD.org</email>"
 msgstr "John Baldwin <email>jhb@FreeBSD.org</email>"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:2515
+#: article.translate.xml:2514
 msgid "Konstantin Belousov <email>kib@FreeBSD.org</email>"
 msgstr "Konstantin Belousov <email>kib@FreeBSD.org</email>"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:2518
+#: article.translate.xml:2517
 msgid "Emmanuel Dreyfus"
 msgstr "Emmanuel Dreyfus"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:2521
+#: article.translate.xml:2520
 msgid "Scot Hetzel"
 msgstr "Scot Hetzel"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:2524
+#: article.translate.xml:2523
 msgid "Jung-uk Kim <email>jkim@FreeBSD.org</email>"
 msgstr "Jung-uk Kim <email>jkim@FreeBSD.org</email>"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:2527
+#: article.translate.xml:2526
 msgid "Alexander Leidinger <email>netchild@FreeBSD.org</email>"
 msgstr "Alexander Leidinger <email>netchild@FreeBSD.org</email>"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:2530
+#: article.translate.xml:2529
 msgid "Suleiman Souhlal <email>ssouhlal@FreeBSD.org</email>"
 msgstr "Suleiman Souhlal <email>ssouhlal@FreeBSD.org</email>"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:2533
+#: article.translate.xml:2532
 msgid "Li Xiao"
 msgstr "Li Xiao"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:2536
+#: article.translate.xml:2535
 msgid "David Xu <email>davidxu@FreeBSD.org</email>"
 msgstr "David Xu <email>davidxu@FreeBSD.org</email>"
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:2540
+#: article.translate.xml:2539
 msgid ""
 "I would like to thank all those people for their advice, code reviews and "
 "general support."
@@ -4866,12 +4883,12 @@ msgstr ""
 "código e apoio geral."
 
 #. (itstool) path: sect1/title
-#: article.translate.xml:2546
+#: article.translate.xml:2545
 msgid "Literatures"
 msgstr "Literaturas"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:2550
+#: article.translate.xml:2549
 msgid ""
 "Marshall Kirk McKusick - George V. Nevile-Neil. Design and Implementation of "
 "the FreeBSD operating system. Addison-Wesley, 2005."
@@ -4880,12 +4897,12 @@ msgstr ""
 "the FreeBSD operating system. Addison-Wesley, 2005."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:2555
+#: article.translate.xml:2554
 msgid "<uri xlink:href=\"https://tldp.org\">https://tldp.org</uri>"
 msgstr "<uri xlink:href=\"https://tldp.org\">https://tldp.org</uri>"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:2558
+#: article.translate.xml:2557
 msgid "<uri xlink:href=\"https://www.kernel.org\">https://www.kernel.org</uri>"
 msgstr ""
 "<uri xlink:href=\"https://www.kernel.org\">https://www.kernel.org</uri>"
