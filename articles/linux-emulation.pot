@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-12-01 16:20-0300\n"
+"POT-Creation-Date: 2019-12-09 20:45-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,8 +103,8 @@ msgstr ""
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:54 article.translate.xml:56
 msgid ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/linux-emulation/article.xml 51904 "
-"2018-06-23 14:55:54Z bcr $"
+"$FreeBSD: head/en_US.ISO8859-1/articles/linux-emulation/article.xml 53664 "
+"2019-12-07 16:24:22Z carlavilla $"
 msgstr ""
 
 #. (itstool) path: abstract/para
@@ -3233,19 +3233,18 @@ msgstr ""
 #: article.translate.xml:2455
 msgid ""
 "We are able to run the most used applications like <package>www/linux-"
-"firefox</package>, <package>www/linux-opera</package>, <package>net-im/"
-"skype</package> and some games from the Ports Collection. Some of the "
-"programs exhibit bad behavior under 2.6 emulation but this is currently "
-"under investigation and hopefully will be fixed soon. The only big "
-"application that is known not to work is the <trademark class=\"registered"
-"\">Linux</trademark> <trademark>Java</trademark> Development Kit and this is "
-"because of the requirement of <function>epoll</function> facility which is "
-"not directly related to the <trademark class=\"registered\">Linux</"
-"trademark> kernel 2.6."
+"firefox</package>, <package>net-im/skype</package> and some games from the "
+"Ports Collection. Some of the programs exhibit bad behavior under 2.6 "
+"emulation but this is currently under investigation and hopefully will be "
+"fixed soon. The only big application that is known not to work is the "
+"<trademark class=\"registered\">Linux</trademark> <trademark>Java</"
+"trademark> Development Kit and this is because of the requirement of "
+"<function>epoll</function> facility which is not directly related to the "
+"<trademark class=\"registered\">Linux</trademark> kernel 2.6."
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:2467
+#: article.translate.xml:2466
 msgid ""
 "We hope to enable 2.6.16 emulation by default some time after FreeBSD 7.0 is "
 "released at least to expose the 2.6 emulation parts for some wider testing. "
@@ -3254,12 +3253,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:2475
+#: article.translate.xml:2474
 msgid "Future work"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:2477
+#: article.translate.xml:2476
 msgid ""
 "Future work should focus on fixing the remaining issues with futexes, "
 "implement the rest of the *at family of syscalls, fix the signal delivery "
@@ -3268,7 +3267,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:2483
+#: article.translate.xml:2482
 msgid ""
 "We hope to be able to run the most important programs flawlessly soon, so we "
 "will be able to switch to the 2.6 emulation by default and make the "
@@ -3277,7 +3276,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:2489
+#: article.translate.xml:2488
 msgid ""
 "The other possible goal is to share our code with NetBSD and DragonflyBSD. "
 "NetBSD has some support for 2.6 emulation but its far from finished and not "
@@ -3286,7 +3285,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:2495
+#: article.translate.xml:2494
 msgid ""
 "Generally, as <trademark class=\"registered\">Linux</trademark> develops we "
 "would like to keep up with their development, implementing newly added "
@@ -3297,85 +3296,85 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:2505
+#: article.translate.xml:2504
 msgid "Team"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:2507
+#: article.translate.xml:2506
 msgid "I cooperated on this project with (in alphabetical order):"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:2512
+#: article.translate.xml:2511
 msgid "John Baldwin <email>jhb@FreeBSD.org</email>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:2515
+#: article.translate.xml:2514
 msgid "Konstantin Belousov <email>kib@FreeBSD.org</email>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:2518
+#: article.translate.xml:2517
 msgid "Emmanuel Dreyfus"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:2521
+#: article.translate.xml:2520
 msgid "Scot Hetzel"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:2524
+#: article.translate.xml:2523
 msgid "Jung-uk Kim <email>jkim@FreeBSD.org</email>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:2527
+#: article.translate.xml:2526
 msgid "Alexander Leidinger <email>netchild@FreeBSD.org</email>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:2530
+#: article.translate.xml:2529
 msgid "Suleiman Souhlal <email>ssouhlal@FreeBSD.org</email>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:2533
+#: article.translate.xml:2532
 msgid "Li Xiao"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:2536
+#: article.translate.xml:2535
 msgid "David Xu <email>davidxu@FreeBSD.org</email>"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:2540
+#: article.translate.xml:2539
 msgid ""
 "I would like to thank all those people for their advice, code reviews and "
 "general support."
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: article.translate.xml:2546
+#: article.translate.xml:2545
 msgid "Literatures"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:2550
+#: article.translate.xml:2549
 msgid ""
 "Marshall Kirk McKusick - George V. Nevile-Neil. Design and Implementation of "
 "the FreeBSD operating system. Addison-Wesley, 2005."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:2555
+#: article.translate.xml:2554
 msgid "<uri xlink:href=\"https://tldp.org\">https://tldp.org</uri>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:2558
+#: article.translate.xml:2557
 msgid "<uri xlink:href=\"https://www.kernel.org\">https://www.kernel.org</uri>"
 msgstr ""
