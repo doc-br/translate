@@ -1,46 +1,57 @@
 # FreeBSD$
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2019.
+# mkufner <MichaelKufner@t-online.de>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-12-09 20:45-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2019-12-30 22:21+0000\n"
+"Last-Translator: mkufner <MichaelKufner@t-online.de>\n"
+"Language-Team: German <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/articles_bsdl-gpl/de_DE/>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr ""
+msgstr "Übersetzerverzeichnis"
 
 #. (itstool) path: info/title
 #: article.translate.xml:5
 msgid "Why you should use a BSD style license for your Open Source Project"
 msgstr ""
+"Warum Sie eine BSD-artige Lizenz für Ihr Open-Source-Projekt verwenden "
+"sollten"
 
 #. (itstool) path: affiliation/address
 #: article.translate.xml:9
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<email>brucem@alumni.cse.ucsc.edu</email>\n"
 "          "
 msgstr ""
+"<email>brucem@alumni.cse.ucsc.edu</email>\n"
+"          "
 
 #. (itstool) path: authorgroup/author
 #: article.translate.xml:8
+#, fuzzy
 msgid ""
 "<personname><firstname>Bruce</firstname><surname>Montague</surname></"
 "personname><affiliation> <_:address-1/> </affiliation>"
 msgstr ""
+"<personname><firstname>Bruce</firstname><surname>Montague</surname></personna"
+"me><affiliation> <_:address-1/> </affiliation>"
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:15
 msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
-msgstr ""
+msgstr "FreeBSD ist ein eingetragenes Markenzeichen der FreeBSD Foundation."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:17
@@ -49,6 +60,9 @@ msgid ""
 "and Xeon are trademarks or registered trademarks of Intel Corporation or its "
 "subsidiaries in the United States and other countries."
 msgstr ""
+"Intel, Celeron, Centrino, Core, EtherExpress, i386, i486, Itanium, Pentium "
+"und Xeon sind Marken oder eingetragene Marken der Intel Corporation oder "
+"ihrer Tochtergesellschaften in den Vereinigten Staaten und anderen Ländern."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:21
@@ -59,19 +73,27 @@ msgid ""
 "designations have been followed by the <quote>™</quote> or the <quote>®</"
 "quote> symbol."
 msgstr ""
+"Viele der von Herstellern und Verkäufern zur Unterscheidung ihrer Produkte "
+"verwendeten Bezeichnungen werden als Marken geltend gemacht. Dort, wo in "
+"diesem Dokument solche Bezeichnungen erscheinen und dem FreeBSD Project der "
+"Markenanspruch bekannt war, wurden die Bezeichnungen mit dem Symbol "
+"<quote>™</quote> oder dem Symbol <quote>®</quote> versehen."
 
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:29 article.translate.xml:31
+#, fuzzy
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/bsdl-gpl/article.xml 43184 "
 "2013-11-13 07:52:45Z hrs $"
 msgstr ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/bsdl-gpl/article.xml 43184 2013-11-"
+"13 07:52:45Z hrs $"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:35
 msgid "Introduction"
-msgstr ""
+msgstr "Einleitung"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:37
@@ -81,11 +103,16 @@ msgid ""
 "GPL. It can also be read as a BSD versus GPL Open Source License "
 "introduction and summary."
 msgstr ""
+"Dieses Dokument plädiert dafür, eine BSD-artige Lizenz für Software und "
+"Daten zu verwenden. BSD-artige Lizenzen sollten insbesondere an Stelle der "
+"GPL verwendet werden. Dieses Dokument versteht sich auch als Einführung und "
+"Zusammenfassung der Debatte über das Für und Wider zwischen den Open-Source-"
+"Lizenzen BSD und GPL."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:44
 msgid "Very Brief Open Source History"
-msgstr ""
+msgstr "Kurzer Überblick über die Open-Source-Geschichte"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:46
@@ -100,6 +127,15 @@ msgid ""
 "software cost and made more programs available made the hardware companies "
 "more competitive."
 msgstr ""
+"Lange bevor der Begriff <quote>Open Source</quote> verwendet wurde, "
+"entwickelten Programmierer in lockeren Gemeinschaften Software und tauschten "
+"diese untereinander aus. Seit Anfang der 1950er Jahre entwickelten "
+"Organisationen wie <link xlink:href=\"http://www.share.org\">SHARE</link> "
+"und <link xlink:href=\"http://www.decus.org\">DECUS</link> einen Großteil "
+"der Software, die Computerhersteller mit ihrer Hardware anboten. In dieser "
+"Zeit konzentrierten sich Computerfirmen auf das Hardwaregeschäft. Alles, was "
+"die Kosten für Software reduzierte und gleichzeitig das Angebot an "
+"Programmen erhöhte, machte die Hardware-Firmen wettbewerbsfähiger."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:56
@@ -112,6 +148,15 @@ msgid ""
 "lifetime of the product. ADR thus retained ownership and could control "
 "resale and reuse."
 msgstr ""
+"Dieses Geschäftsmodell änderte sich in den 1960er Jahren. 1965 entwickelte "
+"ADR die erste Software, die unabhängig von einem Hardware-Anbieter "
+"lizenziert wurde. ADR konkurrierte mit einem kostenlosen IBM-Paket, das "
+"ursprünglich von IBM-Kunden entwickelt worden war. ADR ließ sich 1968 ihre "
+"Software patentieren. Um die unerlaubte Weitergabe ihres Programms zu "
+"unterbinden, boten sie es Im Rahmen eines Geräteleasings an. Die Zahlungen "
+"wurden dabei über die gesamte Lebensdauer des Produkts verteilt. Auf diese "
+"Weise schützte ADR ihr Eigentum und kontrollierte sowohl den Weiterverkauf "
+"als auch die Wiederverwendung der Software."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:65
@@ -121,6 +166,10 @@ msgid ""
 "unbundled its software; that is, software became independent products "
 "separate from hardware."
 msgstr ""
+"1969 beschuldigte das US-Justizministerium IBM der Zerstörung von "
+"Unternehmen durch Bündelung kostenloser Software mit IBM-Hardware. Daraufhin "
+"entbündelte IBM ihre Software: Software war nun ein von der Hardware "
+"unabhängiges Produkt."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:71
@@ -131,11 +180,17 @@ msgid ""
 "is now standard throughout the computer industry, wherein ownership is never "
 "transferred to the customer."
 msgstr ""
+"Im Jahr 1968 verhalf das Unternehmen Informatics mit dem ersten kommerziell "
+"erfolgreichen Programm dem gewerblichen Vertrieb von Software zum Durchbruch "
+"und etablierte sich als Softwareunternehmen mit sehr hohen Renditen. "
+"Informatics führte das Konzept der unbefristeten Lizenz ein, das heute in "
+"der gesamten Computerindustrie Standard ist, wobei das Eigentum an der "
+"Software niemals auf den Kunden übertragen wird."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:80
 msgid "Unix from a BSD Licensing Perspective"
-msgstr ""
+msgstr "Unix aus der Sicht der BSD-Lizenzen"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:82
@@ -145,6 +200,10 @@ msgid ""
 "sell a product into the software market. It was, however, able to provide it "
 "to academic institutions for the price of media."
 msgstr ""
+"Das ursprüngliche Unix gehörte AT&amp;T, einem staatlich regulierten "
+"Monopol, das schließlich vor dem Kartellgerichtshof landete. Es gab keinen "
+"legalen Zugang zum Softwaremarkt. Allerdings konnten man akademischen "
+"Einrichtungen Software zum Preis der Datenträger anbieten."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:88
