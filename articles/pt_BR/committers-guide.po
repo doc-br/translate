@@ -2,14 +2,14 @@
 # $FreeBSD: head/pt_BR.ISO8859-1/articles/committers-guide/pt_BR.po 52949 2019-04-21 10:21:52Z ebrandi $
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2019. #zanata
 # Edson Brandi <ebrandi@FreeBSD.org>, 2019. #zanata
-# Edson Brandi <ebrandi@freebsd.org>, 2019.
+# Edson Brandi <ebrandi@freebsd.org>, 2019, 2020.
 # Franciosi <andre@franciosi.org>, 2019.
 # Silvio Ap Da Silva <contato@kanazuchi.com>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-12-01 16:19-0300\n"
-"PO-Revision-Date: 2019-12-18 14:46+0000\n"
+"PO-Revision-Date: 2020-01-01 13:21+0000\n"
 "Last-Translator: Edson Brandi <ebrandi@freebsd.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate-dev.freebsd.org/"
 "projects/freebsd-doc/articles_committers-guide/pt_BR/>\n"
@@ -7453,6 +7453,18 @@ msgid ""
 "an ABI may be defined by specifications such as the layout of C++ exception "
 "objects or calling conventions for C functions."
 msgstr ""
+"O suporte para uma plataforma de hardware consiste em dois componentes: "
+"suporte ao kernel e interfaces binárias de aplicativos (ABIs) do usuário. O "
+"suporte do kernel à plataforma inclui os itens necessários para executar um "
+"kernel do FreeBSD em uma plataforma de hardware, como gerenciamento de "
+"memória virtual dependente de máquina e drivers de dispositivo. Uma ABI "
+"especifica uma interface para os processos do usuário interagirem com o "
+"kernel do FreeBSD e as bibliotecas do sistema base. Uma ABI inclui "
+"interfaces de chamada do sistema, o layout e a semântica de estruturas de "
+"dados públicos e o layout e a semântica de argumentos transmitidos às sub-"
+"rotinas. Alguns componentes de uma ABI podem ser definidos por "
+"especificações tais como o layout dos objetos de exceção C ++ ou as "
+"convenções de chamada para funções C."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:3998
@@ -7462,6 +7474,10 @@ msgid ""
 "data structures and the layout and semantics of arguments to public "
 "functions within the kernel itself."
 msgstr ""
+"Um kernel do FreeBSD também usa uma ABI (às vezes chamada de Interface "
+"Binária do Kernel (KBI)) que inclui a semântica e layouts de estruturas de "
+"dados públicos e o layout e semântica de argumentos para funções públicas "
+"dentro do próprio kernel."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4004
@@ -7473,6 +7489,13 @@ msgid ""
 "generally shares certain properties with the kernel ABI such as the C "
 "calling convention, sizes of basic types, etc."
 msgstr ""
+"Um kernel do FreeBSD pode suportar múltiplas ABIs de usuário. Por exemplo, o "
+"kernel amd64 do FreeBSD suporta as ABIs de usuário do FreeBSD amd64 e i386, "
+"bem como as ABIs de usuário do Linux x86_64 e i386. Um kernel do FreeBSD "
+"deve suportar uma ABI <quote>nativa</quote> como a ABI padrão. A  "
+"<quote>ABI</quote> nativa geralmente compartilha certas propriedades com a "
+"ABI do kernel, como a convenção de chamada C, tamanhos dos tipos básicos, "
+"etc."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4012
@@ -7480,6 +7503,9 @@ msgid ""
 "Tiers are defined for both kernels and userland ABIs. In the common case, a "
 "platform's kernel and FreeBSD ABIs are assigned to the same tier."
 msgstr ""
+"Os Tiers  são definidos tanto para os kernels quanto para as ABIs do "
+"usuário. Normalmente, o kernel de uma plataforma e as ABIs do FreeBSD são "
+"atribuídas à mesma Tier."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:4018
@@ -7488,11 +7514,6 @@ msgstr "Tier 1: Arquiteturas Completamente Suportadas"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4020
-#, fuzzy
-#| msgid ""
-#| "Tier 1 architectures are expected to be Production Quality with respects "
-#| "to all aspects of the FreeBSD operating system, including installation "
-#| "and development environments."
 msgid ""
 "Tier 1 platforms are the most mature FreeBSD platforms. They are supported "
 "by the security officer, release engineering, and port management teams. "
@@ -7500,9 +7521,11 @@ msgid ""
 "all aspects of the FreeBSD operating system, including installation and "
 "development environments."
 msgstr ""
-"Espera-se que as arquiteturas de Tier 1 estejam com Qualidade de Produção em "
-"relação a todos os aspectos do sistema operacional FreeBSD, incluindo "
-"ambientes de instalação e desenvolvimento."
+"As plataformas Tier 1 são as plataformas mais maduras do FreeBSD. Elas são "
+"suportadas pelas equipes de segurança, engenharia de release e gerenciamento "
+"de ports. Espera-se que as arquiteturas Tier 1 estejam com Qualidade de "
+"Produção em relação a todos os aspectos do sistema operacional FreeBSD, "
+"incluindo ambientes de instalação e desenvolvimento."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4027
@@ -7510,6 +7533,8 @@ msgid ""
 "The FreeBSD Project provides the following guarantees to consumers of Tier 1 "
 "platforms:"
 msgstr ""
+"O Projeto FreeBSD fornece as seguintes garantias aos consumidores das "
+"plataformas de Tier 1:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4032
@@ -7517,6 +7542,8 @@ msgid ""
 "Official FreeBSD release images will be provided by the release engineering "
 "team."
 msgstr ""
+"Imagens oficiais de Release do FreeBSD serão fornecidas pela equipe de "
+"engenharia de release."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4036
@@ -7524,6 +7551,8 @@ msgid ""
 "Binary updates and source patches for Security Advisories and Errata Notices "
 "will be provided for supported releases."
 msgstr ""
+"Serão fornecidas atualizações binárias e patches no formato de código fonte "
+"para os Avisos de Segurança e Avisos de Erro das versões suportadas."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4041
@@ -7531,6 +7560,8 @@ msgid ""
 "Source patches for Security Advisories will be provided for supported "
 "branches."
 msgstr ""
+"Serão fornecidos patches de código fonte para os avisos de segurança das "
+"branches suportadas."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4045
@@ -7538,6 +7569,8 @@ msgid ""
 "Binary updates and source patches for cross-platform Security Advisories "
 "will typically be provided at the time of the announcement."
 msgstr ""
+"Atualizações binárias e patches de código fonte geralmente são fornecidos "
+"para os avisos de segurança multiplataforma no momento do anúncio."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4050
@@ -7548,6 +7581,12 @@ msgid ""
 "default install. If compatibility shims are not provided for an ABI change, "
 "the lack of shims will be clearly documented in the release notes."
 msgstr ""
+"As alterações nas ABIs do usuário geralmente incluirão bibliotecas de "
+"compatibilidade para garantir a operação correta dos binários compilados a "
+"partir de qualquer branch estável de uma plataforma Tier 1. Estas "
+"bibliotecas podem não ser ativadas na instalação padrão. Se as bibliotecas "
+"de compatibilidade não forem fornecidas para uma alteração de ABI, a falta "
+"da mesma estará claramente documentada nas notas de versão."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4059
@@ -7557,6 +7596,10 @@ msgid ""
 "oldest supported release on the branch. Note that not all parts of the "
 "kernel ABI are protected."
 msgstr ""
+"Alterações em certas partes da ABI do kernel incluirão bibliotecas de "
+"compatibilidade para garantir a operação correta dos módulos do kernel "
+"compilados contra a versão suportada mais antiga da branch. Observe que nem "
+"todas as partes da ABI do kernel estão protegidas."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4066
@@ -7565,6 +7608,9 @@ msgid ""
 "ports team. For embedded architectures, these packages may be cross-built "
 "from a different architecture."
 msgstr ""
+"Pacotes binários oficiais para softwares de terceiros serão fornecidos pela "
+"equipe de ports. Para arquiteturas embarcadas, esses pacotes podem ser "
+"compilados de forma cruzada a partir de uma arquitetura diferente."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4072
@@ -7572,6 +7618,8 @@ msgid ""
 "Most relevant ports should either build or have the appropriate filters to "
 "prevent inappropriate ones from building."
 msgstr ""
+"Os ports mais relevantes devem ou compilar ou ter filtros apropriados para "
+"prevenir a compilação dos inadequados."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4077
@@ -7579,6 +7627,8 @@ msgid ""
 "New features which are not inherently platform-specific will be fully "
 "functional on all Tier 1 architectures."
 msgstr ""
+"Novos recursos que não são inerentemente específicos da plataforma serão "
+"totalmente funcionais em todas as arquiteturas de Tier 1."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4082
@@ -7587,6 +7637,10 @@ msgid ""
 "stable branches may be removed in newer major versions. Such removals will "
 "be clearly documented in the release notes."
 msgstr ""
+"Os recursos e bibliotecas de compatibilidade usados pelos binários "
+"compilados a partir das branchs estáveis mais antigas podem ser removidos "
+"nas versões principais mais recentes. Essas remoções serão claramente "
+"documentadas nas notas de versão."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4088
@@ -7594,11 +7648,13 @@ msgid ""
 "Tier 1 platforms should be fully documented. Basic operations will be "
 "documented in the FreeBSD Handbook."
 msgstr ""
+"As plataformas Tier 1 devem ser totalmente documentadas. As operações "
+"básicas serão documentadas no Handbook do FreeBSD."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4092
 msgid "Tier 1 platforms will be included in the source tree."
-msgstr ""
+msgstr "As plataformas de Tier 1 serão incluídas na árvore de código fonte."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4096
@@ -7607,6 +7663,10 @@ msgid ""
 "an external toolchain. If an external toolchain is required, official binary "
 "packages for an external toolchain will be provided."
 msgstr ""
+"As plataformas de Tier 1 devem ser auto-hospedadas ou por meio de um "
+"toolchain disponível na árvore de código fonte ou por meio de um toolchain "
+"externo. Se um toolchain externo for necessário, serão fornecidos pacotes "
+"binários oficiais para o toolchain externo."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4103
@@ -7614,6 +7674,8 @@ msgid ""
 "To maintain maturity of Tier 1 platforms, the FreeBSD Project will maintain "
 "the following resources to support development:"
 msgstr ""
+"Para manter a maturidade das plataformas de Tier 1, o Projeto FreeBSD "
+"manterá os seguintes recursos para apoiar o desenvolvimento:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4109
@@ -7623,6 +7685,10 @@ msgid ""
 "substitute an emulator available in the FreeBSD.org cluster for actual "
 "hardware."
 msgstr ""
+"Suporte à automação do processo de compilação e de testes no cluster "
+"FreeBSD.org ou em algum outro local facilmente disponível para todos os "
+"desenvolvedores. Plataformas embarcadas podem substituir um emulador "
+"disponível no cluster FreeBSD.org por hardware real."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4116 article.translate.xml:4215
@@ -7630,6 +7696,8 @@ msgid ""
 "Inclusion in the <userinput>make universe</userinput> and <userinput>make "
 "tinderbox</userinput> targets."
 msgstr ""
+"A inclusão nos targets do <userinput>make universe</userinput> e <userinput>"
+"make tinderbox</userinput>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4120
@@ -7699,13 +7767,6 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4168
-#, fuzzy
-#| msgid ""
-#| "Tier 2 architectures are usually systems targeted at Tier 1 support, but "
-#| "that are still under development. Architectures reaching end of life may "
-#| "also be moved from Tier 1 status to Tier 2 status as the availability of "
-#| "resources to continue to maintain the system in a Production Quality "
-#| "state diminishes. Well supported niche architectures may also be Tier 2."
 msgid ""
 "Tier 2 platforms may be Tier 1 platform candidates that are still under "
 "active development. Architectures reaching end of life may also be moved "
@@ -7713,12 +7774,12 @@ msgid ""
 "continue to maintain the system in a Production Quality state diminishes. "
 "Well-supported niche architectures may also be Tier 2."
 msgstr ""
-"As arquiteturas de Tier 2 geralmente são sistemas destinados ao suporte Tier "
-"1, mas que ainda estão em desenvolvimento. As arquiteturas que atingem o fim "
-"da vida útil também podem ser movidas do status de Tier 1 para o status de "
-"Tier 2 à medida que a disponibilidade de recursos para continuar a manter o "
-"sistema em um estado de Qualidade de Produção diminui. Arquiteturas de nicho "
-"bem suportadas também podem ser de Tier 2."
+"As plataformas Tier 2 podem ser candidatas à plataforma Tier 1 que ainda "
+"estão em desenvolvimento ativo. As arquiteturas que atingem o fim da vida "
+"útil também podem ser movidas do status de Tier 1 para o status de Tier 2 à "
+"medida que a disponibilidade de recursos para continuar a manter o sistema "
+"em um estado de Qualidade de Produção diminui. Arquiteturas de nicho bem "
+"suportadas também podem ser de Tier 2."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4175
@@ -7862,12 +7923,6 @@ msgstr "Política para Alteração do Tier de uma Arquitetura"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4284
-#, fuzzy
-#| msgid ""
-#| "Systems may only be moved from one tier to another by approval of the "
-#| "FreeBSD Core Team, which shall make that decision in collaboration with "
-#| "the Security Officer, Release Engineering, and toolchain maintenance "
-#| "teams."
 msgid ""
 "Systems may only be moved from one tier to another by approval of the "
 "FreeBSD Core Team, which shall make that decision in collaboration with the "
@@ -7875,10 +7930,11 @@ msgid ""
 "platform to be promoted to a higher tier, any missing support guarantees "
 "must be satisfied before the promotion is completed."
 msgstr ""
-"Os sistemas só podem ser movidos de uma camada para outra por meio da "
-"aprovação do Core Team do FreeBSD, que deve tomar essa decisão em "
-"colaboração com as equipes de segurança, engenharia de release e manutenção "
-"do toolchain."
+"Os sistemas só podem ser movidos de um Tier para outro por meio da aprovação "
+"do Core Team do FreeBSD, que deve tomar essa decisão em colaboração com as "
+"equipes de segurança, engenharia de release e  gerenciamento dos ports. Para "
+"que uma plataforma seja promovida para um Tier superior, todas as garantias "
+"de suporte ausentes devem ser atendidas antes que a promoção seja concluída."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:4294
