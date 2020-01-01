@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-12-01 16:19-0300\n"
-"PO-Revision-Date: 2020-01-01 13:21+0000\n"
+"PO-Revision-Date: 2020-01-01 14:06+0000\n"
 "Last-Translator: Edson Brandi <ebrandi@freebsd.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate-dev.freebsd.org/"
 "projects/freebsd-doc/articles_committers-guide/pt_BR/>\n"
@@ -7705,6 +7705,8 @@ msgid ""
 "Dedicated hardware in one of the FreeBSD clusters for package building "
 "(either natively or via qemu-user)."
 msgstr ""
+"Hardware dedicado em um dos clusters do FreeBSD para compilação de pacotes ("
+"nativamente ou via qemu-user)."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4126
@@ -7712,6 +7714,8 @@ msgid ""
 "Collectively, developers are required to provide the following to maintain "
 "the Tier 1 status of a platform:"
 msgstr ""
+"Coletivamente, os desenvolvedores devem fornecer o seguinte para manter o "
+"status de Tier 1 de uma plataforma:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4131
@@ -7719,6 +7723,8 @@ msgid ""
 "Changes to the source tree should not knowingly break the build of a Tier 1 "
 "platform."
 msgstr ""
+"Alterações na árvore de código fonte não devem quebrar conscientemente a "
+"compilação de uma plataforma de Tier 1."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4135
@@ -7726,6 +7732,8 @@ msgid ""
 "Tier 1 architectures must have a mature, healthy ecosystem of users and "
 "active developers."
 msgstr ""
+"As arquiteturas de Tier 1 devem ter um ecossistema maduro e saudável de "
+"usuários e desenvolvedores ativos."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4139
@@ -7735,6 +7743,11 @@ msgid ""
 "systems are commonly available for the platform in question, or it can mean "
 "cross-builds hosted on some other Tier 1 architecture."
 msgstr ""
+"Os desenvolvedores devem ser capazes de compilar pacotes em sistemas Tier 1 "
+"não-embarcados comumente disponíveis. Isso pode significar compilações "
+"nativas se sistemas não-embarcados estiverem normalmente disponíveis para a "
+"plataforma em questão, ou significar compilações cruzadas hospedadas em "
+"alguma outra arquitetura de Tier 1."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4147
@@ -7743,6 +7756,10 @@ msgid ""
 "compatibility for existing binaries should be provided via use of symbol "
 "versioning or shared library version bumps."
 msgstr ""
+"As alterações não podem quebrar a ABI do usuário. Se for necessária uma "
+"alteração da ABI, a compatibilidade da ABI com os binários existentes deve "
+"ser provida através do versionamento de símbolos ou do versionamento de "
+"bibliotecas compartilhadas."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4153
@@ -7751,6 +7768,10 @@ msgid ""
 "kernel ABI. If a kernel ABI change is required, the change should be "
 "modified to preserve functionality of existing kernel modules."
 msgstr ""
+"Alterações mescladas em branchs estáveis não podem quebrar as partes "
+"protegidas da ABI do kernel. Se for necessária uma alteração da ABI do "
+"kernel, ela deverá ser modificada para preservar a funcionalidade dos "
+"módulos existentes do kernel."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:4162
@@ -7764,6 +7785,9 @@ msgid ""
 "not supported by the security officer, release engineering, and port "
 "management teams."
 msgstr ""
+"As plataformas de Tier 2 são funcionais, mas são plataformas FreeBSD menos "
+"maduras. Elas não são suportadas pelas equipes de segurança, engenharia de "
+"release e gerenciamento de ports."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4168
@@ -7787,6 +7811,8 @@ msgid ""
 "The FreeBSD Project provides the following guarantees to consumers of Tier 2 "
 "platforms:"
 msgstr ""
+"O Projeto FreeBSD fornece as seguintes garantias aos consumidores das "
+"plataformas de Tier 2:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4180
@@ -7796,6 +7822,10 @@ msgid ""
 "includes support for basic packages such as ports-mgmt/pkg, but there is no "
 "guarantee that arbitrary ports will be buildable or functional."
 msgstr ""
+"A infraestrutura de ports deve incluir suporte básico para as arquiteturas "
+"de Tier 2 suficiente para suportar a compilação de ports e pacotes. Isso "
+"inclui suporte para pacotes básicos, tais como o ports-mgmt/pkg, mas não há "
+"garantia de que ports arbitrários serão compiláveis ou funcionais."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4188
@@ -7803,11 +7833,13 @@ msgid ""
 "New features which are not inherently platform-specific should be feasible "
 "on all Tier 2 architectures if not implemented."
 msgstr ""
+"Novos recursos que não são inerentemente específicos da plataforma devem ser "
+"viáveis em todas as arquiteturas de Tier 2 se não implementados."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4193
 msgid "Tier 2 platforms will be included in the source tree."
-msgstr ""
+msgstr "As plataformas de Tier 2 serão incluídas na árvore de código fonte."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4197
@@ -7816,6 +7848,10 @@ msgid ""
 "an external toolchain. If an external toolchain is required, official binary "
 "packages for an external toolchain will be provided."
 msgstr ""
+"As plataformas de Tier 2 devem ser auto-hospedadas ou por meio de um "
+"toolchain disponível na árvore de código fonte ou por meio de um toolchain "
+"externo. Se um toolchain externo for necessário, serão fornecidos pacotes "
+"binários oficiais para o toolchain externo."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4203
@@ -7823,6 +7859,8 @@ msgid ""
 "Tier 2 platforms should provide functional kernels and userlands even if an "
 "official release distribution is not provided."
 msgstr ""
+"As plataformas de Tier 2 devem fornecer kernels e espaço de usuário "
+"funcionais, mesmo que uma release oficial não seja provida."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4209
@@ -7830,6 +7868,8 @@ msgid ""
 "To maintain maturity of Tier 2 platforms, the FreeBSD Project will maintain "
 "the following resources to support development:"
 msgstr ""
+"Para manter a maturidade das plataformas de Tier 2, o Projeto FreeBSD "
+"manterá os seguintes recursos para apoiar o desenvolvimento:"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4220
@@ -7837,6 +7877,8 @@ msgid ""
 "Collectively, developers are required to provide the following to maintain "
 "the Tier 2 status of a platform:"
 msgstr ""
+"Coletivamente, os desenvolvedores devem fornecer o seguinte para manter o "
+"status de Tier 2 de uma plataforma:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4225
@@ -7844,12 +7886,16 @@ msgid ""
 "Changes to the source tree should not knowingly break the build of a Tier 2 "
 "platform."
 msgstr ""
+"Alterações na árvore de código fonte não devem quebrar conscientemente a "
+"compilação de uma plataforma de Tier 2."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4229
 msgid ""
 "Tier 2 architectures must have an active ecosystem of users and developers."
 msgstr ""
+"As arquiteturas de Tier 2 devem ter um ecossistema ativo de usuários e "
+"desenvolvedores."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4233
@@ -7858,6 +7904,9 @@ msgid ""
 "broken gratuitously. Significant userland ABI changes should be restricted "
 "to major versions."
 msgstr ""
+"Embora sejam permitidas alterações que quebrem a ABI do usuário, a ABI não "
+"deve ser quebrada gratuitamente. Alterações significativas da ABI do usuário "
+"devem ser restritas às versões principais."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4239
@@ -7865,6 +7914,8 @@ msgid ""
 "New features that are not yet implemented on Tier 2 architectures should "
 "provide a means of disabling them on those architectures."
 msgstr ""
+"Novos recursos que ainda não foram implementados nas arquiteturas de Tier 2 "
+"devem fornecer um meio de desativá-los nessas arquiteturas."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:4247
@@ -7878,6 +7929,9 @@ msgid ""
 "<emphasis>not</emphasis> supported by the security officer, release "
 "engineering, and port management teams."
 msgstr ""
+"As plataformas de Tier 3 têm pelo menos suporte parcial ao FreeBSD. Elas "
+"<emphasis>não</emphasis> são suportadas pelas equipes de segurança, "
+"engenharia de release e de gerenciamento de ports."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4254
@@ -7887,6 +7941,11 @@ msgid ""
 "unlikely to see broad future use. Initial support for Tier 3 platforms may "
 "exist in a separate repository rather than the main source repository."
 msgstr ""
+"As plataformas de Tier 3 são arquiteturas nos estágios iniciais de "
+"desenvolvimento, para plataformas de hardware não convencionais, ou que são "
+"considerados sistemas legados improváveis de serem amplamente utilizados no "
+"futuro. O suporte inicial para plataformas de Tier 3 pode existir em um "
+"repositório separado em vez do repositório de código fonte principal."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4261
@@ -7896,6 +7955,10 @@ msgid ""
 "platforms may not always be buildable, nor are any kernel or userland ABIs "
 "considered stable."
 msgstr ""
+"O Projeto FreeBSD não oferece garantias aos consumidores das plataformas de "
+"Tier 3 e não está comprometido em manter recursos para apoiar o seu "
+"desenvolvimento. As plataformas de Tier 3 nem sempre podem ser compiláveis, "
+"nem quaisquer ABIs do kernel ou de usuário são consideradas estáveis."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:4269
@@ -7915,6 +7978,11 @@ msgid ""
 "source and ports trees. Note that ports support should remain as long as the "
 "platform is supported in a branch supported by ports."
 msgstr ""
+"Todos os sistemas não classificados de outra forma são sistemas de Tier 4. "
+"Quando uma plataforma faz a transição para o Tier 4, todo o suporte para a "
+"plataforma é removido das árvores de código fonte e de ports. Observe que o "
+"suporte aos ports deve ser mantido enquanto a plataforma for suportada em "
+"uma branch suportada pelo  ports."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:4282
