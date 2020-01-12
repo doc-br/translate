@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-12-09 20:45-0300\n"
+"POT-Creation-Date: 2020-01-12 18:36-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,8 +66,8 @@ msgstr ""
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:30 article.translate.xml:32
 msgid ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/filtering-bridges/article.xml 44681 "
-"2014-04-28 20:19:20Z wblock $"
+"$FreeBSD: head/en_US.ISO8859-1/articles/filtering-bridges/article.xml 53717 "
+"2019-12-29 14:13:50Z carlavilla $"
 msgstr ""
 
 #. (itstool) path: abstract/para
@@ -342,16 +342,8 @@ msgid ""
 "one will enable the bridge."
 msgstr ""
 
-#. (itstool) path: note/para
-#: article.translate.xml:216
-msgid ""
-"If you have FreeBSD 5.1-RELEASE or previous the sysctl variables are spelled "
-"differently. See <citerefentry><refentrytitle>bridge</"
-"refentrytitle><manvolnum>4</manvolnum></citerefentry> for details."
-msgstr ""
-
 #. (itstool) path: sect1/para
-#: article.translate.xml:220
+#: article.translate.xml:215
 msgid ""
 "At this point you should be able to insert the machine between two sets of "
 "hosts without compromising any communication abilities between them. If so, "
@@ -362,12 +354,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: article.translate.xml:229
+#: article.translate.xml:224
 msgid "Configuring The Firewall"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:231
+#: article.translate.xml:226
 msgid ""
 "Now it is time to create your own file with custom firewall rules, in order "
 "to secure the inside network. There will be some complication in doing this "
@@ -388,7 +380,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:247
+#: article.translate.xml:242
 msgid ""
 "New in FreeBSD 4.0, is the concept of stateful filtering. This is a big "
 "improvement for <acronym>UDP</acronym> traffic, which typically is a request "
@@ -405,7 +397,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:261
+#: article.translate.xml:256
 msgid ""
 "Let's look at an example setup. Note first that at the top of <filename>/etc/"
 "rc.firewall</filename> there are already standard rules for the loopback "
@@ -417,20 +409,20 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/programlisting
-#: article.translate.xml:270
+#: article.translate.xml:265
 #, no-wrap
 msgid "firewall_type=\"/etc/rc.firewall.local\""
 msgstr ""
 
 #. (itstool) path: important/para
-#: article.translate.xml:273
+#: article.translate.xml:268
 msgid ""
 "You have to specify the <emphasis>full</emphasis> path, otherwise it will "
 "not be loaded with the risk to remain isolated from the network."
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:278
+#: article.translate.xml:273
 msgid ""
 "For our example imagine to have the <filename>fxp0</filename> interface "
 "connected towards the outside (Internet) and the <filename>xl0</filename> "
@@ -441,7 +433,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/programlisting
-#: article.translate.xml:285
+#: article.translate.xml:280
 #, no-wrap
 msgid ""
 "# Things that we have kept state on before get to go through in a hurry\n"
@@ -493,7 +485,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:332
+#: article.translate.xml:327
 msgid ""
 "Those of you who have set up firewalls before may notice some things "
 "missing. In particular, there are no anti-spoofing rules, in fact we did "
@@ -501,13 +493,13 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/programlisting
-#: article.translate.xml:336
+#: article.translate.xml:331
 #, no-wrap
 msgid "add deny all from 1.2.3.4/8 to any in via fxp0"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:338
+#: article.translate.xml:333
 msgid ""
 "That is, drop packets that are coming in from the outside claiming to be "
 "from our network. This is something that you would commonly do to be sure "
@@ -520,7 +512,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:347
+#: article.translate.xml:342
 msgid ""
 "The last rule seems to be an exact duplicate of the default rule, that is, "
 "do not let anything pass that is not specifically allowed. But there is a "
@@ -528,7 +520,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:351
+#: article.translate.xml:346
 msgid ""
 "There are two rules for passing <acronym>SMTP</acronym> and <acronym>DNS</"
 "acronym> traffic towards the mail server and the name server, if you have "
@@ -544,7 +536,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:362
+#: article.translate.xml:357
 msgid ""
 "People that are used to setting up firewalls are probably also used to "
 "either having a <option>reset</option> or a <option>forward</option> rule "
@@ -557,7 +549,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:372
+#: article.translate.xml:367
 msgid ""
 "The only other thing that is a little weird that you may have noticed is "
 "that there is a rule to let the bridge machine speak, and another for "
@@ -572,12 +564,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: article.translate.xml:386
+#: article.translate.xml:381
 msgid "Contributors"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:388
+#: article.translate.xml:383
 msgid ""
 "Many parts of this article have been taken, updated and adapted from an old "
 "text about bridging, edited by Nick Sayer. A pair of inspirations are due to "
@@ -585,7 +577,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:392
+#: article.translate.xml:387
 msgid ""
 "A big thanks to Luigi Rizzo for the implementation of the bridge code in "
 "FreeBSD and for the time he has dedicated to me answering all of my related "
@@ -593,7 +585,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:396
+#: article.translate.xml:391
 msgid ""
 "A thanks goes out also to Tom Rhodes who looked over my job of translation "
 "from Italian (the original language of this article) into English."

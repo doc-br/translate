@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-12-09 20:45-0300\n"
+"POT-Creation-Date: 2020-01-12 18:36-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -5033,16 +5033,15 @@ msgstr ""
 #, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>cd head/contrib/<replaceable>foo</replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>svn merge --record-only <replaceable>svn_base</replaceable>/vendor/<replaceable>foo</replaceable>/dist@<replaceable>12345678</replaceable> .</userinput>\n"
+"<prompt>%</prompt> <userinput>svn merge --record-only ^/vendor/<replaceable>foo</replaceable>/dist@<replaceable>12345678</replaceable> .</userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 msgstr ""
 
 #. (itstool) path: step/para
 #: book.translate.xml:3699
 msgid ""
-"where <replaceable>svn_base</replaceable> is the base directory of your "
-"<acronym>SVN</acronym> repository, e.g., <literal>svn+ssh://svn.FreeBSD.org/"
-"base</literal>."
+"With some shells, the <literal>^</literal> in the above command may need to "
+"be escaped with a backslash."
 msgstr ""
 
 #. (itstool) path: step/title
@@ -5177,7 +5176,7 @@ msgstr ""
 #. (itstool) path: step/screen
 #: book.translate.xml:3791
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn copy <replaceable>svn_base</replaceable>/vendor/<replaceable>foo</replaceable>/dist <replaceable>svn_base</replaceable>/vendor/<replaceable>foo</replaceable>/<replaceable>9.9</replaceable></userinput>"
+msgid "<prompt>%</prompt> <userinput>svn copy ^/vendor/<replaceable>foo</replaceable>/dist <replaceable>svn_base</replaceable>/vendor/<replaceable>foo</replaceable>/<replaceable>9.9</replaceable></userinput>"
 msgstr ""
 
 #. (itstool) path: step/para
@@ -5213,7 +5212,7 @@ msgstr ""
 msgid ""
 "<prompt>%</prompt> <userinput>cd head/contrib/<replaceable>foo</replaceable></userinput>\n"
 "<prompt>%</prompt> <userinput>svn update</userinput>\n"
-"<prompt>%</prompt> <userinput>svn merge --accept=postpone <replaceable>svn_base</replaceable>/vendor/<replaceable>foo</replaceable>/dist</userinput>"
+"<prompt>%</prompt> <userinput>svn merge --accept=postpone ^/vendor/<replaceable>foo</replaceable>/dist</userinput>"
 msgstr ""
 
 #. (itstool) path: step/para
@@ -5228,7 +5227,7 @@ msgstr ""
 #. (itstool) path: step/screen
 #: book.translate.xml:3823
 #, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn diff --no-diff-deleted --old=<replaceable>svn_base</replaceable>/vendor/<replaceable>foo</replaceable>/dist --new=.</userinput>"
+msgid "<prompt>%</prompt> <userinput>svn diff --no-diff-deleted --old=^/vendor/<replaceable>foo</replaceable>/dist --new=.</userinput>"
 msgstr ""
 
 #. (itstool) path: step/para
