@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-11-02 17:04-0300\n"
+"POT-Creation-Date: 2020-01-12 18:36-0300\n"
 "PO-Revision-Date: 2019-11-04 00:20+0000\n"
 "Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.eastus.cloudapp.azure."
@@ -7493,10 +7493,14 @@ msgstr ""
 
 #. (itstool) path: step/screen
 #: book.translate.xml:3695
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "<prompt>%</prompt> <userinput>cd head/contrib/<replaceable>foo</replaceable></userinput>\n"
+#| "<prompt>%</prompt> <userinput>svn merge --record-only <replaceable>svn_base</replaceable>/vendor/<replaceable>foo</replaceable>/dist@<replaceable>12345678</replaceable> .</userinput>\n"
+#| "<prompt>%</prompt> <userinput>svn commit</userinput>"
 msgid ""
 "<prompt>%</prompt> <userinput>cd head/contrib/<replaceable>foo</replaceable></userinput>\n"
-"<prompt>%</prompt> <userinput>svn merge --record-only <replaceable>svn_base</replaceable>/vendor/<replaceable>foo</replaceable>/dist@<replaceable>12345678</replaceable> .</userinput>\n"
+"<prompt>%</prompt> <userinput>svn merge --record-only ^/vendor/<replaceable>foo</replaceable>/dist@<replaceable>12345678</replaceable> .</userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 msgstr ""
 "<prompt>%</prompt> <userinput>cd head/contrib/<replaceable>foo</replaceable></userinput>\n"
@@ -7505,15 +7509,10 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: book.translate.xml:3699
-#, fuzzy
 msgid ""
-"where <replaceable>svn_base</replaceable> is the base directory of your "
-"<acronym>SVN</acronym> repository, e.g., <literal>svn+ssh://svn.FreeBSD.org/"
-"base</literal>."
+"With some shells, the <literal>^</literal> in the above command may need to "
+"be escaped with a backslash."
 msgstr ""
-"Onde <replaceable> svn_base </replaceable> é o diretório base do seu "
-"repositório <acronym>SVN</acronym> , por exemplo <literal> svn + ssh: //svn."
-"FreeBSD.org/base </literal> "
 
 #. (itstool) path: step/title
 #: book.translate.xml:3705
@@ -7700,8 +7699,9 @@ msgstr ""
 
 #. (itstool) path: step/screen
 #: book.translate.xml:3791
-#, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn copy <replaceable>svn_base</replaceable>/vendor/<replaceable>foo</replaceable>/dist <replaceable>svn_base</replaceable>/vendor/<replaceable>foo</replaceable>/<replaceable>9.9</replaceable></userinput>"
+#, fuzzy, no-wrap
+#| msgid "<prompt>%</prompt> <userinput>svn copy <replaceable>svn_base</replaceable>/vendor/<replaceable>foo</replaceable>/dist <replaceable>svn_base</replaceable>/vendor/<replaceable>foo</replaceable>/<replaceable>9.9</replaceable></userinput>"
+msgid "<prompt>%</prompt> <userinput>svn copy ^/vendor/<replaceable>foo</replaceable>/dist <replaceable>svn_base</replaceable>/vendor/<replaceable>foo</replaceable>/<replaceable>9.9</replaceable></userinput>"
 msgstr "<prompt>%</prompt> <userinput>svn copy <replaceable>svn_base</replaceable>/vendor/<replaceable>foo</replaceable>/dist <replaceable>svn_base</replaceable>/vendor/<replaceable>foo</replaceable>/<replaceable>9.9</replaceable></userinput>"
 
 #. (itstool) path: step/para
@@ -7745,11 +7745,15 @@ msgstr ""
 
 #. (itstool) path: step/screen
 #: book.translate.xml:3813
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "<prompt>%</prompt> <userinput>cd head/contrib/<replaceable>foo</replaceable></userinput>\n"
+#| "<prompt>%</prompt> <userinput>svn update</userinput>\n"
+#| "<prompt>%</prompt> <userinput>svn merge --accept=postpone <replaceable>svn_base</replaceable>/vendor/<replaceable>foo</replaceable>/dist</userinput>"
 msgid ""
 "<prompt>%</prompt> <userinput>cd head/contrib/<replaceable>foo</replaceable></userinput>\n"
 "<prompt>%</prompt> <userinput>svn update</userinput>\n"
-"<prompt>%</prompt> <userinput>svn merge --accept=postpone <replaceable>svn_base</replaceable>/vendor/<replaceable>foo</replaceable>/dist</userinput>"
+"<prompt>%</prompt> <userinput>svn merge --accept=postpone ^/vendor/<replaceable>foo</replaceable>/dist</userinput>"
 msgstr ""
 "<prompt>%</prompt> <userinput>cd head/contrib/<replaceable>foo</replaceable></userinput>\n"
 "<prompt>%</prompt> <userinput>svn update</userinput>\n"
@@ -7771,8 +7775,9 @@ msgstr ""
 
 #. (itstool) path: step/screen
 #: book.translate.xml:3823
-#, no-wrap
-msgid "<prompt>%</prompt> <userinput>svn diff --no-diff-deleted --old=<replaceable>svn_base</replaceable>/vendor/<replaceable>foo</replaceable>/dist --new=.</userinput>"
+#, fuzzy, no-wrap
+#| msgid "<prompt>%</prompt> <userinput>svn diff --no-diff-deleted --old=<replaceable>svn_base</replaceable>/vendor/<replaceable>foo</replaceable>/dist --new=.</userinput>"
+msgid "<prompt>%</prompt> <userinput>svn diff --no-diff-deleted --old=^/vendor/<replaceable>foo</replaceable>/dist --new=.</userinput>"
 msgstr "<prompt>%</prompt> <userinput>svn diff --no-diff-deleted --old=<replaceable>svn_base</replaceable>/vendor/<replaceable>foo</replaceable>/dist --new=.</userinput>"
 
 #. (itstool) path: step/para
@@ -32947,3 +32952,13 @@ msgstr ""
 msgid "strlcpy and strlcat -- consistent, safe string copy and concatenation."
 msgstr ""
 "strlcpy and strlcat - cópia e concatenação de strings seguras e consistentes."
+
+#, fuzzy
+#~ msgid ""
+#~ "where <replaceable>svn_base</replaceable> is the base directory of your "
+#~ "<acronym>SVN</acronym> repository, e.g., <literal>svn+ssh://svn.FreeBSD."
+#~ "org/base</literal>."
+#~ msgstr ""
+#~ "Onde <replaceable> svn_base </replaceable> é o diretório base do seu "
+#~ "repositório <acronym>SVN</acronym> , por exemplo <literal> svn + ssh: //"
+#~ "svn.FreeBSD.org/base </literal> "
