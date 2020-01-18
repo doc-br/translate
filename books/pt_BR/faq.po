@@ -1,21 +1,21 @@
 # $FreeBSD: head/pt_BR.ISO8859-1/books/faq/pt_BR.po 52950 2019-04-21 12:56:21Z ebrandi $
-# Danilo G. Baio <dbaio@FreeBSD.org>, 2019. #zanata
+# Danilo G. Baio <dbaio@FreeBSD.org>, 2019. #zanata, 2020.
 # Edson Brandi <ebrandi@FreeBSD.org>, 2019. #zanata
 # Edson Brandi <ebrandi@freebsd.org>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-01-12 18:36-0300\n"
-"PO-Revision-Date: 2019-12-10 00:07+0000\n"
+"PO-Revision-Date: 2020-01-18 18:37+0000\n"
 "Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
-"Language-Team: Portuguese (Brazil) <https://translate.fugbr.org/projects/"
-"freebsd-doc/boooks_faq/pt_BR/>\n"
+"Language-Team: Portuguese (Brazil) <https://translate-dev.freebsd.org/"
+"projects/freebsd-doc/boooks_faq/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 3.10.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -40,15 +40,6 @@ msgstr "<orgname>Projeto de Documentação do FreeBSD</orgname>"
 
 #. (itstool) path: info/copyright
 #: book.translate.xml:24
-#, fuzzy
-#| msgid ""
-#| "<year>1995</year> <year>1996</year> <year>1997</year> <year>1998</year> "
-#| "<year>1999</year> <year>2000</year> <year>2001</year> <year>2002</year> "
-#| "<year>2003</year> <year>2004</year> <year>2005</year> <year>2006</year> "
-#| "<year>2007</year> <year>2008</year> <year>2009</year> <year>2010</year> "
-#| "<year>2011</year> <year>2012</year> <year>2013</year> <year>2014</year> "
-#| "<year>2015</year> <year>2016</year> <year>2017</year> <year>2018</year> "
-#| "<year>2019</year> <holder>The FreeBSD Documentation Project</holder>"
 msgid ""
 "<year>1995</year> <year>1996</year> <year>1997</year> <year>1998</year> "
 "<year>1999</year> <year>2000</year> <year>2001</year> <year>2002</year> "
@@ -65,7 +56,8 @@ msgstr ""
 "<year>2007</year> <year>2008</year> <year>2009</year> <year>2010</year> "
 "<year>2011</year> <year>2012</year> <year>2013</year> <year>2014</year> "
 "<year>2015</year> <year>2016</year> <year>2017</year> <year>2018</year> "
-"<year>2019</year> <holder>Projeto de Documentação do FreeBSD</holder>"
+"<year>2019</year> <year>2020</year> <holder>Projeto de Documentação do "
+"FreeBSD</holder>"
 
 #. (itstool) path: legalnotice/title
 #: book.translate.xml:57
@@ -252,16 +244,12 @@ msgstr ""
 
 #. (itstool) path: info/releaseinfo
 #: book.translate.xml:143
-#, fuzzy
-#| msgid ""
-#| "$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 53671 2019-12-09 "
-#| "20:18:23Z carlavilla $"
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 53758 2020-01-05 08:36:43Z "
 "eadler $"
 msgstr ""
-"$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 53671 2019-12-09 20:18:23Z "
-"carlavilla $"
+"$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 53758 2020-01-05 08:36:43Z "
+"eadler $"
 
 #. (itstool) path: abstract/para
 #: book.translate.xml:146
@@ -2290,17 +2278,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1405
-#, fuzzy
-#| msgid ""
-#| "This is discussed continually on the FreeBSD mailing lists but is to be "
-#| "expected since hardware changes so quickly. Read through the "
-#| "Hardware Notes for FreeBSD <link xlink:href=\"https://www.FreeBSD.org/"
-#| "releases/12.1R/hardware.html\">12.1</link> or <link xlink:href=\"https://"
-#| "www.FreeBSD.org/releases/11.2R/hardware.html\">11.2</link> and search the "
-#| "mailing list <link xlink:href=\"https://www.FreeBSD.org/search/"
-#| "#mailinglists\">archives</link> before asking about the latest and "
-#| "greatest hardware. Chances are a discussion about that type of hardware "
-#| "took place just last week."
 msgid ""
 "This is discussed continually on the FreeBSD mailing lists but is to be "
 "expected since hardware changes so quickly. Read through the Hardware Notes "
@@ -2313,13 +2290,13 @@ msgid ""
 msgstr ""
 "Isso é discutido continuamente nas listas de discussão do FreeBSD, mas isto "
 "é de se esperar, já que o hardware muda tão rapidamente. Leia as Notas de "
-"Hardware do FreeBSD <link xlink:href=\"https://www.FreeBSD.org/"
-"releases/12.1R/hardware.html\">12.1</link> ou <link xlink:href=\"https://www."
-"FreeBSD.org/releases/11.2R/hardware.html\">11.2</link> e pesquise os <link "
-"xlink:href=\"https://www.FreeBSD.org/search/#mailinglists\">arquivos</link> "
-"da lista de discussão antes de perguntar sobre o hardware mais recente e "
-"melhor. As chances são de que uma discussão sobre esse tipo de hardware "
-"tenha acontecido na semana passada."
+"Hardware do FreeBSD <link xlink:href=\"https://www.FreeBSD.org/releases/12."
+"1R/hardware.html\">12.1</link> ou <link xlink:href=\"https://www.FreeBSD.org/"
+"releases/11.3R/hardware.html\">11.3</link> e pesquise os <link xlink:href=\""
+"https://www.FreeBSD.org/search/#mailinglists\">arquivos</link> da lista de "
+"discussão antes de perguntar sobre o hardware mais recente e melhor. As "
+"chances são de que uma discussão sobre esse tipo de hardware tenha "
+"acontecido na semana passada."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1415
@@ -2582,12 +2559,6 @@ msgstr "Que tipo de periféricos o FreeBSD suporta?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1577
-#, fuzzy
-#| msgid ""
-#| "See the complete list in the Hardware Notes for FreeBSD <link xlink:href="
-#| "\"https://www.FreeBSD.org/releases/12.1R/hardware.html\">12.1</link> or "
-#| "<link xlink:href=\"https://www.FreeBSD.org/releases/11.2R/hardware.html"
-#| "\">11.2</link>."
 msgid ""
 "See the complete list in the Hardware Notes for FreeBSD <link xlink:href="
 "\"https://www.FreeBSD.org/releases/12.1R/hardware.html\">12.1</link> or "
@@ -2595,9 +2566,9 @@ msgid ""
 "\">11.3</link>."
 msgstr ""
 "Veja a lista completa nas Notas de Hardware para o FreeBSD <link xlink:href="
-"\"https://www.FreeBSD.org/releases/12.1R/hardware.html\">12.1</link> ou "
-"<link xlink:href=\"https://www.FreeBSD.org/releases/11.2R/hardware.html"
-"\">11.2</link>."
+"\"https://www.FreeBSD.org/releases/12.1R/hardware.html\">12.1</link> ou <"
+"link xlink:href=\"https://www.FreeBSD.org/releases/11.3R/hardware.html\""
+">11.3</link>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1586
@@ -2777,14 +2748,9 @@ msgstr ""
 
 #. (itstool) path: answer/programlisting
 #: book.translate.xml:1686
-#, fuzzy, no-wrap
-#| msgid ""
-#| "bind ^? ed-delete-next-char # for console\n"
-#| "bind ^[[3~ ed-delete-next-char # for xterm"
+#, no-wrap
 msgid "bind ^[[3~ ed-delete-next-char # for xterm"
-msgstr ""
-"bind ^? ed-delete-next-char # para o console\n"
-"bind ^[[3~ ed-delete-next-char # para o xterm"
+msgstr "bind ^[[3~ ed-delete-next-char # para o xterm"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1688
@@ -2799,14 +2765,9 @@ msgstr ""
 
 #. (itstool) path: answer/programlisting
 #: book.translate.xml:1692
-#, fuzzy, no-wrap
-#| msgid ""
-#| "bindkey ^? delete-char # for console\n"
-#| "bindkey ^[[3~ delete-char # for xterm"
+#, no-wrap
 msgid "bindkey ^[[3~ delete-char # for xterm"
-msgstr ""
-"bindkey ^? delete-char # para o console\n"
-"bindkey ^[[3~ delete-char # para o xterm"
+msgstr "bindkey ^[[3~ delete-char # para o xterm"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1700
@@ -5597,13 +5558,6 @@ msgstr "Preciso de um SSD para o ZIL?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:3303
-#, fuzzy
-#| msgid ""
-#| "By default, ZFS stores the ZIL in the pool with all the data. If an "
-#| "application has a heavy write load, storing the ZIL in a separate device "
-#| "that has very fast synchronous, sequential write performance can improve "
-#| "overall system. For other workloads, a SSD is unlikely to make much of an "
-#| "improvement."
 msgid ""
 "By default, ZFS stores the ZIL in the pool with all the data. If an "
 "application has a heavy write load, storing the ZIL in a separate device "
