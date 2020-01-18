@@ -1,22 +1,22 @@
 # $FreeBSD$
 # $FreeBSD: head/pt_BR.ISO8859-1/books/porters-handbook/pt_BR.po 52951 2019-04-21 13:08:01Z ebrandi $
-# Danilo G. Baio <dbaio@FreeBSD.org>, 2019. #zanata
+# Danilo G. Baio <dbaio@FreeBSD.org>, 2019. #zanata, 2020.
 # Edson Brandi <ebrandi@FreeBSD.org>, 2019. #zanata
 # Edson Brandi <ebrandi@freebsd.org>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-01-12 18:37-0300\n"
-"PO-Revision-Date: 2019-12-10 00:07+0000\n"
+"PO-Revision-Date: 2020-01-18 19:36+0000\n"
 "Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
-"Language-Team: Portuguese (Brazil) <https://translate.fugbr.org/projects/"
-"freebsd-doc/boooks_porters-handbook/pt_BR/>\n"
+"Language-Team: Portuguese (Brazil) <https://translate-dev.freebsd.org/"
+"projects/freebsd-doc/boooks_porters-handbook/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 3.10.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -43,28 +43,15 @@ msgstr "<orgname>Projeto de Documentação do FreeBSD</orgname>"
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: book.translate.xml:47 book.translate.xml:135
-#, fuzzy
-#| msgid ""
-#| "$FreeBSD: head/en_US.ISO8859-1/books/porters-handbook/book.xml 52824 "
-#| "2019-02-18 03:30:09Z linimon $"
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/books/porters-handbook/book.xml 53742 "
 "2020-01-03 04:51:06Z linimon $"
 msgstr ""
-"$FreeBSD: head/en_US.ISO8859-1/books/porters-handbook/book.xml 52824 "
-"2019-02-18 03:30:09Z linimon $"
+"$FreeBSD: head/en_US.ISO8859-1/books/porters-handbook/book.xml 53742 2020-01-"
+"03 04:51:06Z linimon $"
 
 #. (itstool) path: info/copyright
 #: book.translate.xml:49
-#, fuzzy
-#| msgid ""
-#| "<year>2000</year> <year>2001</year> <year>2002</year> <year>2003</year> "
-#| "<year>2004</year> <year>2005</year> <year>2006</year> <year>2007</year> "
-#| "<year>2008</year> <year>2009</year> <year>2010</year> <year>2011</year> "
-#| "<year>2012</year> <year>2013</year> <year>2014</year> <year>2015</year> "
-#| "<year>2016</year> <year>2017</year> <year>2018</year> <year>2019</year> "
-#| "<holder role=\"mailto:doc@FreeBSD.org\">The FreeBSD Documentation "
-#| "Project</holder>"
 msgid ""
 "<year>2000</year> <year>2001</year> <year>2002</year> <year>2003</year> "
 "<year>2004</year> <year>2005</year> <year>2006</year> <year>2007</year> "
@@ -79,8 +66,8 @@ msgstr ""
 "<year>2008</year> <year>2009</year> <year>2010</year> <year>2011</year> "
 "<year>2012</year> <year>2013</year> <year>2014</year> <year>2015</year> "
 "<year>2016</year> <year>2017</year> <year>2018</year> <year>2019</year> "
-"<holder role=\"mailto:doc@FreeBSD.org\">Projeto de Documentação do FreeBSD</"
-"holder>"
+"<year>2020</year> <holder role=\"mailto:doc@FreeBSD.org\">Projeto de "
+"Documentação do FreeBSD</holder>"
 
 #. (itstool) path: legalnotice/title
 #: book.translate.xml:77
@@ -44983,17 +44970,12 @@ msgstr "2 de setembro de 2019"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25743
-#, fuzzy
-#| msgid ""
-#| "5.2-CURRENT after the removal of the "
-#| "<citerefentry><refentrytitle>getvfsent</refentrytitle><manvolnum>3</"
-#| "manvolnum></citerefentry> API"
 msgid ""
 "13.0-CURRENT after removal of <citerefentry><refentrytitle>gets</"
 "refentrytitle><manvolnum>3</manvolnum></citerefentry>."
 msgstr ""
-"5.2-CURRENT after the removal of the <citerefentry><refentrytitle>getvfsent</"
-"refentrytitle><manvolnum>3</manvolnum></citerefentry> API"
+"13.0-CURRENT after removal of <citerefentry><refentrytitle>gets</refentrytitl"
+"e><manvolnum>3</manvolnum></citerefentry>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25747
@@ -45167,19 +45149,14 @@ msgstr "17 de outubro de 2019"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25805
-#, fuzzy
-#| msgid ""
-#| "13.0-CURRENT after addition of is_random_seeded(9) to "
-#| "<citerefentry><refentrytitle>random</refentrytitle><manvolnum>4</"
-#| "manvolnum></citerefentry>."
 msgid ""
 "13.0-CURRENT after splitting out a more generic debugnet(4) from "
 "<citerefentry><refentrytitle>netdump</refentrytitle><manvolnum>4</"
 "manvolnum></citerefentry>."
 msgstr ""
-"13.0-CURRENT after addition of is_random_seeded(9) to "
-"<citerefentry><refentrytitle>random</refentrytitle><manvolnum>4</manvolnum></"
-"citerefentry>."
+"13.0-CURRENT after splitting out a more generic debugnet(4) from <citerefentr"
+"y><refentrytitle>netdump</refentrytitle><manvolnum>4</manvolnum></citerefentr"
+"y>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25810
@@ -45212,10 +45189,8 @@ msgstr "<revnumber>353700</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25822
-#, fuzzy
-#| msgid "13.0-CURRENT after implementing NetGDB(4)."
 msgid "13.0-CURRENT after implementing NetGDB."
-msgstr "13.0-CURRENT after implementing NetGDB(4)."
+msgstr "13.0-CURRENT after implementing NetGDB."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25826
@@ -45441,10 +45416,8 @@ msgstr "1300064"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25908 book.translate.xml:27017
-#, fuzzy
-#| msgid "<revnumber>355568</revnumber>"
 msgid "<revnumber>355658</revnumber>"
-msgstr "<revnumber>355568</revnumber>"
+msgstr "<revnumber>355658</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25909
@@ -45464,339 +45437,253 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25915
-#, fuzzy
-#| msgid "1300006"
 msgid "1300065"
-msgstr "1300006"
+msgstr "1300065"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25916
-#, fuzzy
-#| msgid "<revnumber>50563</revnumber>"
 msgid "<revnumber>355643</revnumber>"
-msgstr "<revnumber>50563</revnumber>"
+msgstr "<revnumber>355643</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25917 book.translate.xml:25925
-#, fuzzy
-#| msgid "December 2, 2019"
 msgid "December 12, 2019"
-msgstr "2 de dezembro de 2019"
+msgstr "12 de dezembro de 2019"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25918
-#, fuzzy
-#| msgid "13.0-CURRENT after additions to LinuxKPI's rcu list."
 msgid ""
 "13.0-CURRENT after adding sigsetop extensions commonly found in musl libc "
 "and glibc."
-msgstr "13.0-CURRENT after additions to LinuxKPI's rcu list."
+msgstr ""
+"13.0-CURRENT after adding sigsetop extensions commonly found in musl libc "
+"and glibc."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25923
-#, fuzzy
-#| msgid "1300006"
 msgid "1300066"
-msgstr "1300006"
+msgstr "1300066"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25924
-#, fuzzy
-#| msgid "<revnumber>355309</revnumber>"
 msgid "<revnumber>355679</revnumber>"
-msgstr "<revnumber>355309</revnumber>"
+msgstr "<revnumber>355679</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25926
-#, fuzzy
-#| msgid "12.0-CURRENT after changing the interface between the NFS modules."
 msgid ""
 "13.0-CURRENT after changing the internal interface between the NFS modules "
 "as part of the introduction of NFS 4.2."
-msgstr "12.0-CURRENT after changing the interface between the NFS modules."
+msgstr ""
+"13.0-CURRENT after changing the internal interface between the NFS modules "
+"as part of the introduction of NFS 4.2."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25932
-#, fuzzy
-#| msgid "1300006"
 msgid "1300067"
-msgstr "1300006"
+msgstr "1300067"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25933
-#, fuzzy
-#| msgid "<revnumber>339732</revnumber>"
 msgid "<revnumber>355732</revnumber>"
-msgstr "<revnumber>339732</revnumber>"
+msgstr "<revnumber>355732</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25934
-#, fuzzy
-#| msgid "December 13, 2014"
 msgid "December 13, 2019"
-msgstr "13 de dezembro de 2014"
+msgstr "13 de dezembro de 2019"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25935
-#, fuzzy
-#| msgid ""
-#| "8.0-CURRENT after the introduction of the <function>lockmgr_rw</function> "
-#| "and <function>lockmgr_args_rw</function> functions."
 msgid ""
 "13.0-CURRENT after removing the deprecated <function>callout_handle_init</"
 "function>, <function>timeout</function>, and <function>untimeout</function> "
 "functions."
 msgstr ""
-"8.0-CURRENT after the introduction of the <function>lockmgr_rw</function> "
-"and <function>lockmgr_args_rw</function> functions."
+"13.0-CURRENT after removing the deprecated "
+"<function>callout_handle_init</function>, <function>timeout</function>, and "
+"<function>untimeout</function> functions."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25942
-#, fuzzy
-#| msgid "1300006"
 msgid "1300068"
-msgstr "1300006"
+msgstr "1300068"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25943
-#, fuzzy
-#| msgid "<revnumber>355568</revnumber>"
 msgid "<revnumber>355828</revnumber>"
-msgstr "<revnumber>355568</revnumber>"
+msgstr "<revnumber>355828</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25944
-#, fuzzy
-#| msgid "December 16, 2016"
 msgid "December 16, 2019"
-msgstr "16 de dezembro de 2016"
+msgstr "16 de dezembro de 2019"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25945
-#, fuzzy
-#| msgid ""
-#| "13.0-CURRENT after changing the size of <literal>struct linux_cdev</"
-#| "literal> on 32-bit platforms."
 msgid ""
 "13.0-CURRENT after doubling the value of <literal>ARG_MAX</literal>, for 64 "
 "bit platforms."
 msgstr ""
-"13.0-CURRENT depois de mudar o tamanho do <literal>struct linux_cdev</"
-"literal> nas plataformas de 32-bits."
+"13.0-CURRENT after doubling the value of <literal>ARG_MAX</literal>, for 64 "
+"bit platforms."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25951
-#, fuzzy
-#| msgid "1300006"
 msgid "1300069"
-msgstr "1300006"
+msgstr "1300069"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25952
-#, fuzzy
-#| msgid "<revnumber>351701</revnumber>"
 msgid "<revnumber>356051</revnumber>"
-msgstr "<revnumber>351701</revnumber>"
+msgstr "<revnumber>356051</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25953
-#, fuzzy
-#| msgid "December 2, 2019"
 msgid "December 24, 2019"
-msgstr "2 de dezembro de 2019"
+msgstr "24 de dezembro de 2019"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25954
-#, fuzzy
-#| msgid "8.0-CURRENT after the addition of makefs."
 msgid "13.0-CURRENT after the addition of busdma templates."
-msgstr "8.0-CURRENT after the addition of makefs."
+msgstr "13.0-CURRENT after the addition of busdma templates."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25959
-#, fuzzy
-#| msgid "1300007"
 msgid "1300070"
-msgstr "1300007"
+msgstr "1300070"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25960
-#, fuzzy
-#| msgid "<revnumber>46113</revnumber>"
 msgid "<revnumber>356113</revnumber>"
-msgstr "<revnumber>46113</revnumber>"
+msgstr "<revnumber>356113</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25961 book.translate.xml:25969
-#, fuzzy
-#| msgid "December 2, 2019"
 msgid "December 27, 2019"
-msgstr "2 de dezembro de 2019"
+msgstr "27 de dezembro de 2019"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25962
-#, fuzzy
-#| msgid ""
-#| "12.0-CURRENT after starting to lay down the foundation for 11ac support."
 msgid ""
 "13.0-CURRENT after eliminating the last MI difference in AT_* definitions "
 "(for powerpc)."
 msgstr ""
-"12.0-CURRENT after starting to lay down the foundation for 11ac support."
+"13.0-CURRENT after eliminating the last MI difference in AT_* definitions ("
+"for powerpc)."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25967
-#, fuzzy
-#| msgid "1300007"
 msgid "1300071"
-msgstr "1300007"
+msgstr "1300071"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25968
-#, fuzzy
-#| msgid "<revnumber>36735</revnumber>"
 msgid "<revnumber>356135</revnumber>"
-msgstr "<revnumber>36735</revnumber>"
+msgstr "<revnumber>356135</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25970
 msgid ""
 "13.0-CURRENT after making USB statistics be per-device instead of per bus."
 msgstr ""
+"13.0-CURRENT after making USB statistics be per-device instead of per bus."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25975
-#, fuzzy
-#| msgid "1300007"
 msgid "1300072"
-msgstr "1300007"
+msgstr "1300072"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25976
-#, fuzzy
-#| msgid "<revnumber>353685</revnumber>"
 msgid "<revnumber>356185</revnumber>"
-msgstr "<revnumber>353685</revnumber>"
+msgstr "<revnumber>356185</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25977
-#, fuzzy
-#| msgid "December 2, 2019"
 msgid "December 29, 2019"
-msgstr "2 de dezembro de 2019"
+msgstr "29 de dezembro de 2019"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25978
-#, fuzzy
-#| msgid "13.0-CURRENT after removal of gets(3)."
 msgid "13.0-CURRENT after removal of GEOM_SCHED class and gsched tool."
-msgstr "13.0-CURRENT after removal of gets(3)."
+msgstr "13.0-CURRENT after removal of GEOM_SCHED class and gsched tool."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25983
-#, fuzzy
-#| msgid "1300007"
 msgid "1300073"
-msgstr "1300007"
+msgstr "1300073"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25984
-#, fuzzy
-#| msgid "<revnumber>36283</revnumber>"
 msgid "<revnumber>356263</revnumber>"
-msgstr "<revnumber>36283</revnumber>"
+msgstr "<revnumber>356263</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25985 book.translate.xml:27043
-#, fuzzy
-#| msgid "January 2, 2012"
 msgid "January 2, 2020"
-msgstr "2 de janeiro de 2012"
+msgstr "2 de janeiro de 2020"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25986
-#, fuzzy
-#| msgid "12.0-CURRENT after removing the drm drivers."
 msgid "13.0-CURRENT after removing arm/arm as a valid target."
-msgstr "12.0-CURRENT after removing the drm drivers."
+msgstr "13.0-CURRENT after removing arm/arm as a valid target."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25991
-#, fuzzy
-#| msgid "1300007"
 msgid "1300074"
-msgstr "1300007"
+msgstr "1300074"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25992
-#, fuzzy
-#| msgid "<revnumber>350437</revnumber>"
 msgid "<revnumber>356337</revnumber>"
-msgstr "<revnumber>350437</revnumber>"
+msgstr "<revnumber>356337</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25993
-#, fuzzy
-#| msgid "January 13, 2010"
 msgid "January 3, 2020"
-msgstr "13 de janeiro de 2010"
+msgstr "3 de janeiro de 2020"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25994
-#, fuzzy
-#| msgid "11.0-CURRENT after removing brk and sbrk from arm64."
 msgid "13.0-CURRENT after removing flags argument from VOP_UNLOCK."
-msgstr "11.0-CURRENT after removing brk and sbrk from arm64."
+msgstr "13.0-CURRENT after removing flags argument from VOP_UNLOCK."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:25999
-#, fuzzy
-#| msgid "1300007"
 msgid "1300075"
-msgstr "1300007"
+msgstr "1300075"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26000
-#, fuzzy
-#| msgid "<revnumber>51649</revnumber>"
 msgid "<revnumber>356409</revnumber>"
-msgstr "<revnumber>51649</revnumber>"
+msgstr "<revnumber>356409</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26001 book.translate.xml:27051 book.translate.xml:28597
 #: book.translate.xml:29783
-#, fuzzy
-#| msgid "January 6, 2012"
 msgid "January 6, 2020"
-msgstr "6 de janeiro de 2012"
+msgstr "6 de janeiro de 2020"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26002
-#, fuzzy
-#| msgid "11.0-CURRENT after using uintmax_t for rman ranges."
 msgid "13.0-CURRENT after adding own counter for cancelled USB transfers."
-msgstr "11.0-CURRENT after using uintmax_t for rman ranges."
+msgstr "13.0-CURRENT after adding own counter for cancelled USB transfers."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26007
-#, fuzzy
-#| msgid "1300007"
 msgid "1300076"
-msgstr "1300007"
+msgstr "1300076"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26008
-#, fuzzy
-#| msgid "<revnumber>351701</revnumber>"
 msgid "<revnumber>356511</revnumber>"
-msgstr "<revnumber>351701</revnumber>"
+msgstr "<revnumber>356511</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26009
-#, fuzzy
-#| msgid "January 8, 2006"
 msgid "January 8, 2020"
-msgstr "8 de janeiro de 2006"
+msgstr "8 de janeiro de 2020"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26010
@@ -45804,6 +45691,8 @@ msgid ""
 "13.0-CURRENT after pushing vnop implementation into the fileop layer in "
 "posix_fallocate."
 msgstr ""
+"13.0-CURRENT after pushing vnop implementation into the fileop layer in "
+"posix_fallocate."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:26019
@@ -47975,17 +47864,13 @@ msgstr "15 de fevereiro de 2019"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26835
-#, fuzzy
-#| msgid ""
-#| "9-STABLE after merge of the <citerefentry><refentrytitle>vt</"
-#| "refentrytitle><manvolnum>4</manvolnum></citerefentry> driver."
 msgid ""
 "12-STABLE after merge of fixing <citerefentry><refentrytitle>renameat</"
 "refentrytitle><manvolnum>2</manvolnum></citerefentry> for CAPABILITIES "
 "kernels."
 msgstr ""
-"9-STABLE after merge of the <citerefentry><refentrytitle>vt</"
-"refentrytitle><manvolnum>4</manvolnum></citerefentry> driver."
+"12-STABLE after merge of fixing <citerefentry><refentrytitle>renameat</refent"
+"rytitle><manvolnum>2</manvolnum></citerefentry> for CAPABILITIES kernels."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26840
@@ -48052,155 +47937,116 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26865
-#, fuzzy
-#| msgid "1200500"
 msgid "1200507"
-msgstr "1200500"
+msgstr "1200507"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26866
-#, fuzzy
-#| msgid "<revnumber>346358</revnumber>"
 msgid "<revnumber>346337</revnumber>"
-msgstr "<revnumber>346358</revnumber>"
+msgstr "<revnumber>346337</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26867
-#, fuzzy
-#| msgid "April 16, 2019"
 msgid "April 17, 2019"
-msgstr "16 de abril de 2019"
+msgstr "17 de abril de 2019"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26868
-#, fuzzy
-#| msgid ""
-#| "8.3-STABLE after MFC of two USB fixes (rev <revnumber>246616</revnumber> "
-#| "and <revnumber>246759</revnumber>)."
 msgid ""
 "12-STABLE after MFC of iflib changes in <revnumber>345303</revnumber>, "
 "<revnumber>345658,</revnumber> and partially of <revnumber>345305</"
 "revnumber>."
 msgstr ""
-"8.3-STABLE after MFC of two USB fixes (rev <revnumber>246616</revnumber> and "
-"<revnumber>246759</revnumber>)."
+"12-STABLE after MFC of iflib changes in <revnumber>345303</revnumber>, "
+"<revnumber>345658,</revnumber> and partially of "
+"<revnumber>345305</revnumber>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26875
-#, fuzzy
-#| msgid "1200500"
 msgid "1200508"
-msgstr "1200500"
+msgstr "1200508"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26876 book.translate.xml:28518
-#, fuzzy
-#| msgid "<revnumber>347984</revnumber>"
 msgid "<revnumber>346784</revnumber>"
-msgstr "<revnumber>347984</revnumber>"
+msgstr "<revnumber>346784</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26877 book.translate.xml:28519
-#, fuzzy
-#| msgid "April 24, 2019"
 msgid "April 27, 2019"
-msgstr "24 de abril de 2019"
+msgstr "27 de abril de 2019"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26878
 msgid "12-STABLE after ether_gen_addr availability."
-msgstr ""
+msgstr "12-STABLE after ether_gen_addr availability."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26882
-#, fuzzy
-#| msgid "1200500"
 msgid "1200509"
-msgstr "1200500"
+msgstr "1200509"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26883
-#, fuzzy
-#| msgid "<revnumber>344779</revnumber>"
 msgid "<revnumber>347790</revnumber>"
-msgstr "<revnumber>344779</revnumber>"
+msgstr "<revnumber>347790</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26884 book.translate.xml:28535
-#, fuzzy
-#| msgid "May 6, 2019"
 msgid "May 16, 2019"
-msgstr "6 de maio de 2019"
+msgstr "16 de maio de 2019"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26885
-#, fuzzy
-#| msgid ""
-#| "13.0-CURRENT after bumping the Mellanox driver version numbers "
-#| "(<citerefentry><refentrytitle>mlx4en</refentrytitle><manvolnum>4</"
-#| "manvolnum></citerefentry>; <citerefentry><refentrytitle>mlx5en</"
-#| "refentrytitle><manvolnum>4</manvolnum></citerefentry>)."
 msgid ""
 "12-STABLE after bumping the Mellanox driver version numbers "
 "(<citerefentry><refentrytitle>mlx4en</refentrytitle><manvolnum>4</"
 "manvolnum></citerefentry>; <citerefentry><refentrytitle>mlx5en</"
 "refentrytitle><manvolnum>4</manvolnum></citerefentry>)."
 msgstr ""
-"13.0-CURRENT after bumping the Mellanox driver version numbers "
-"(<citerefentry><refentrytitle>mlx4en</refentrytitle><manvolnum>4</"
-"manvolnum></citerefentry>; <citerefentry><refentrytitle>mlx5en</"
-"refentrytitle><manvolnum>4</manvolnum></citerefentry>)."
+"12-STABLE after bumping the Mellanox driver version numbers (<citerefentry><r"
+"efentrytitle>mlx4en</refentrytitle><manvolnum>4</manvolnum></citerefentry>; <"
+"citerefentry><refentrytitle>mlx5en</refentrytitle><manvolnum>4</manvolnum></c"
+"iterefentry>)."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26890
-#, fuzzy
-#| msgid "1200517"
 msgid "1200510"
-msgstr "1200517"
+msgstr "1200510"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26891
-#, fuzzy
-#| msgid "<revnumber>341836</revnumber>"
 msgid "<revnumber>348036</revnumber>"
-msgstr "<revnumber>341836</revnumber>"
+msgstr "<revnumber>348036</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26892
-#, fuzzy
-#| msgid "May 21, 2013"
 msgid "May 21, 2019"
-msgstr "21 de maio de 2013"
+msgstr "21 de maio de 2019"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26893
-#, fuzzy
-#| msgid "10-STABLE after libmd changes (rev <revnumber>314143</revnumber>)."
 msgid ""
 "12-STABLE after change to struct in linuxkpi from <revnumber>348035</"
 "revnumber>."
-msgstr "10-STABLE after libmd changes (rev <revnumber>314143</revnumber>)."
+msgstr ""
+"12-STABLE after change to struct in linuxkpi from "
+"<revnumber>348035</revnumber>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26898
-#, fuzzy
-#| msgid "1200517"
 msgid "1200511"
-msgstr "1200517"
+msgstr "1200511"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26899
-#, fuzzy
-#| msgid "<revnumber>343213</revnumber>"
 msgid "<revnumber>348243</revnumber>"
-msgstr "<revnumber>343213</revnumber>"
+msgstr "<revnumber>348243</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26900 book.translate.xml:26909
-#, fuzzy
-#| msgid "May 4, 2019"
 msgid "May 24, 2019"
-msgstr "4 de maio de 2019"
+msgstr "24 de maio de 2019"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26901
@@ -48208,56 +48054,41 @@ msgid ""
 "12-STABLE after MFC of <revnumber>347843</revnumber>: adding group_leader "
 "member to struct task_struct to the LinuxKPI."
 msgstr ""
+"12-STABLE after MFC of <revnumber>347843</revnumber>: adding group_leader "
+"member to struct task_struct to the LinuxKPI."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26907
-#, fuzzy
-#| msgid "1200517"
 msgid "1200512"
-msgstr "1200517"
+msgstr "1200512"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26908
-#, fuzzy
-#| msgid "<revnumber>34445</revnumber>"
 msgid "<revnumber>348245</revnumber>"
-msgstr "<revnumber>34445</revnumber>"
+msgstr "<revnumber>348245</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26910
-#, fuzzy
-#| msgid "13.0-CURRENT after adding context member to ww_mutex in LinuxKPI."
 msgid "12-STABLE after adding context member to ww_mutex in LinuxKPI."
-msgstr "13.0-CURRENT after adding context member to ww_mutex in LinuxKPI."
+msgstr "12-STABLE after adding context member to ww_mutex in LinuxKPI."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26915
-#, fuzzy
-#| msgid "1200517"
 msgid "1200513"
-msgstr "1200517"
+msgstr "1200513"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26916
-#, fuzzy
-#| msgid "<revnumber>320763</revnumber>"
 msgid "<revnumber>349763</revnumber>"
-msgstr "<revnumber>320763</revnumber>"
+msgstr "<revnumber>349763</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26917
-#, fuzzy
-#| msgid "July 5, 2018"
 msgid "July 5, 2019"
-msgstr "5 de julho de 2018"
+msgstr "5 de julho de 2019"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26918
-#, fuzzy
-#| msgid ""
-#| "12.0-CURRENT after <citerefentry><refentrytitle>net80211</"
-#| "refentrytitle><manvolnum>4</manvolnum></citerefentry> changes (rev "
-#| "<revnumber>306590</revnumber>, <revnumber>306591</revnumber>)."
 msgid ""
 "12-STABLE after MFC of <citerefentry><refentrytitle>epoch</"
 "refentrytitle><manvolnum>9</manvolnum></citerefentry> changes: "
@@ -48265,58 +48096,46 @@ msgid ""
 "<revnumber>340415</revnumber>, <revnumber>340417</revnumber>, "
 "<revnumber>340419</revnumber>, <revnumber>340420</revnumber>."
 msgstr ""
-"12.0-CURRENT after <citerefentry><refentrytitle>net80211</"
-"refentrytitle><manvolnum>4</manvolnum></citerefentry> changes (rev "
-"<revnumber>306590</revnumber>, <revnumber>306591</revnumber>)."
+"12-STABLE after MFC of <citerefentry><refentrytitle>epoch</refentrytitle><man"
+"volnum>9</manvolnum></citerefentry> changes: <revnumber>349763</revnumber>, "
+"<revnumber>340404</revnumber>, <revnumber>340415</revnumber>, "
+"<revnumber>340417</revnumber>, <revnumber>340419</revnumber>, "
+"<revnumber>340420</revnumber>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26928
-#, fuzzy
-#| msgid "1200517"
 msgid "1200514"
-msgstr "1200517"
+msgstr "1200514"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26929
-#, fuzzy
-#| msgid "<revnumber>325003</revnumber>"
 msgid "<revnumber>350083</revnumber>"
-msgstr "<revnumber>325003</revnumber>"
+msgstr "<revnumber>350083</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26930
-#, fuzzy
-#| msgid "July 13, 2019"
 msgid "July 17, 2019"
-msgstr "13 de julho de 2019"
+msgstr "17 de julho de 2019"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26931
-#, fuzzy
-#| msgid "13.0-CURRENT after additions to LinuxKPI's rcu list."
 msgid "12-STABLE after additions to LinuxKPI's rcu list."
-msgstr "13.0-CURRENT after additions to LinuxKPI's rcu list."
+msgstr "12-STABLE after additions to LinuxKPI's rcu list."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26936
-#, fuzzy
-#| msgid "1200517"
 msgid "1200515"
-msgstr "1200517"
+msgstr "1200515"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26937
-#, fuzzy
-#| msgid "<revnumber>350307</revnumber>"
 msgid "<revnumber>350877</revnumber>"
-msgstr "<revnumber>350307</revnumber>"
+msgstr "<revnumber>350877</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26938
-#, fuzzy
-#| msgid "August 16, 2019"
 msgid "August 11, 2019"
-msgstr "16 de agosto de 2019"
+msgstr "11 de agosto de 2019"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26939
@@ -48326,36 +48145,34 @@ msgid ""
 "<revnumber>349972</revnumber> (add arm_sync_icache() and "
 "arm_drain_writebuf() sysarch syscall wrappers)."
 msgstr ""
+"12-STABLE after MFC of <revnumber>349891</revnumber> (reorganize the SRCS "
+"lists as one file per line, and then alphabetize them) and "
+"<revnumber>349972</revnumber> (add arm_sync_icache() and arm_drain_writebuf()"
+" sysarch syscall wrappers)."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26947
-#, fuzzy
-#| msgid "1200517"
 msgid "1200516"
-msgstr "1200517"
+msgstr "1200516"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26948
-#, fuzzy
-#| msgid "<revnumber>352076</revnumber>"
 msgid "<revnumber>351276</revnumber>"
-msgstr "<revnumber>352076</revnumber>"
+msgstr "<revnumber>351276</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26949
-#, fuzzy
-#| msgid "August 25, 2019"
 msgid "August 20, 2019"
-msgstr "25 de agosto de 2019"
+msgstr "20 de agosto de 2019"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26950
-#, fuzzy
-#| msgid "10-STABLE after MFC of rev <revnumber>278964</revnumber>."
 msgid ""
 "12-STABLE after MFC of various changes to iflib <revnumber>351276</"
 "revnumber>."
-msgstr "10-STABLE after MFC of rev <revnumber>278964</revnumber>."
+msgstr ""
+"12-STABLE after MFC of various changes to iflib "
+"<revnumber>351276</revnumber>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26955
@@ -48388,10 +48205,8 @@ msgstr "<revnumber>352114</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26965
-#, fuzzy
-#| msgid "September 10, 2011"
 msgid "September 10, 2019"
-msgstr "10 de setembro de 2011"
+msgstr "10 de setembro de 2019"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26966
@@ -48400,31 +48215,23 @@ msgstr "12-STABLE after additional updates to LinuxKPI's sysfs."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26970
-#, fuzzy
-#| msgid "1200517"
 msgid "1200519"
-msgstr "1200517"
+msgstr "1200519"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26971
-#, fuzzy
-#| msgid "<revnumber>352110</revnumber>"
 msgid "<revnumber>352351</revnumber>"
-msgstr "<revnumber>352110</revnumber>"
+msgstr "<revnumber>352351</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26972
-#, fuzzy
-#| msgid "September 15, 2016"
 msgid "September 15, 2019"
-msgstr "15 de setembro de 2016"
+msgstr "15 de setembro de 2019"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26973
-#, fuzzy
-#| msgid "4.6-STABLE after MFC of `sed -i'."
 msgid "12-STABLE after MFC of the new fusefs driver."
-msgstr "4.6-STABLE after MFC of `sed -i'."
+msgstr "12-STABLE after MFC of the new fusefs driver."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26977
@@ -48483,227 +48290,163 @@ msgstr "12-STABLE after fixing a potential OOB read security issue in libc++."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27000
-#, fuzzy
-#| msgid "1201500"
 msgid "1201502"
-msgstr "1201500"
+msgstr "1201502"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27001
-#, fuzzy
-#| msgid "<revnumber>46113</revnumber>"
 msgid "<revnumber>354613</revnumber>"
-msgstr "<revnumber>46113</revnumber>"
+msgstr "<revnumber>354613</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27002 book.translate.xml:28566 book.translate.xml:28574
 #: book.translate.xml:28581
-#, fuzzy
-#| msgid "November 11, 2010"
 msgid "November 11, 2019"
-msgstr "11 de novembro de 2010"
+msgstr "11 de novembro de 2019"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27003
-#, fuzzy
-#| msgid ""
-#| "13.0-CURRENT after enabling device class group attributes in the LinuxKPI."
 msgid "12-STABLE after enabling device class group attributes in the LinuxKPI."
-msgstr ""
-"13.0-CURRENT after enabling device class group attributes in the LinuxKPI."
+msgstr "12-STABLE after enabling device class group attributes in the LinuxKPI."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27008
-#, fuzzy
-#| msgid "1201500"
 msgid "1201503"
-msgstr "1201500"
+msgstr "1201503"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27009
-#, fuzzy
-#| msgid "<revnumber>354922</revnumber>"
 msgid "<revnumber>354928</revnumber>"
-msgstr "<revnumber>354922</revnumber>"
+msgstr "<revnumber>354928</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27011
-#, fuzzy
-#| msgid ""
-#| "13.0-CURRENT after adding support for AT_EXECPATH to elf_aux_info(3)."
 msgid "12-STABLE after adding support for AT_EXECPATH to elf_aux_info(3)."
-msgstr "13.0-CURRENT after adding support for AT_EXECPATH to elf_aux_info(3)."
+msgstr "12-STABLE after adding support for AT_EXECPATH to elf_aux_info(3)."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27016
-#, fuzzy
-#| msgid "1201500"
 msgid "1201504"
-msgstr "1201500"
+msgstr "1201504"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27019
-#, fuzzy
-#| msgid ""
-#| "13.0-CURRENT after correcting the C++ version check for declaring "
-#| "<citerefentry><refentrytitle>timespec_get</refentrytitle><manvolnum>3</"
-#| "manvolnum></citerefentry>."
 msgid ""
 "12-STABLE after correcting the C++ version check for declaring "
 "<citerefentry><refentrytitle>timespec_get</refentrytitle><manvolnum>3</"
 "manvolnum></citerefentry>."
 msgstr ""
-"13.0-CURRENT after correcting the C++ version check for declaring "
-"<citerefentry><refentrytitle>timespec_get</refentrytitle><manvolnum>3</"
-"manvolnum></citerefentry>."
+"12-STABLE after correcting the C++ version check for declaring <citerefentry>"
+"<refentrytitle>timespec_get</refentrytitle><manvolnum>3</manvolnum></citerefe"
+"ntry>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27024
-#, fuzzy
-#| msgid "1201500"
 msgid "1201505"
-msgstr "1201500"
+msgstr "1201505"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27025 book.translate.xml:28588
-#, fuzzy
-#| msgid "<revnumber>355309</revnumber>"
 msgid "<revnumber>355899</revnumber>"
-msgstr "<revnumber>355309</revnumber>"
+msgstr "<revnumber>355899</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27026 book.translate.xml:28589
-#, fuzzy
-#| msgid "December 9, 2019"
 msgid "December 19, 2019"
-msgstr "9 de dezembro de 2019"
+msgstr "19 de dezembro de 2019"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27027
-#, fuzzy
-#| msgid "10-STABLE after adding C++14 sized deallocation functions to libc++."
 msgid ""
 "12-STABLE after adding sigsetop extensions commonly found in musl libc and "
 "glibc."
-msgstr "10-STABLE after adding C++14 sized deallocation functions to libc++."
+msgstr ""
+"12-STABLE after adding sigsetop extensions commonly found in musl libc and "
+"glibc."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27032
-#, fuzzy
-#| msgid "1201500"
 msgid "1201506"
-msgstr "1201500"
+msgstr "1201506"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27033
-#, fuzzy
-#| msgid "<revnumber>355568</revnumber>"
 msgid "<revnumber>355968</revnumber>"
-msgstr "<revnumber>355568</revnumber>"
+msgstr "<revnumber>355968</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27034
-#, fuzzy
-#| msgid "December 2, 2019"
 msgid "December 21, 2019"
-msgstr "2 de dezembro de 2019"
+msgstr "21 de dezembro de 2019"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27035
-#, fuzzy
-#| msgid ""
-#| "13.0-CURRENT after changing the size of <literal>struct linux_cdev</"
-#| "literal> on 32-bit platforms."
 msgid ""
 "12-STABLE after doubling the value of <literal>ARG_MAX</literal>, for 64 bit "
 "platforms."
 msgstr ""
-"13.0-CURRENT depois de mudar o tamanho do <literal>struct linux_cdev</"
-"literal> nas plataformas de 32-bits."
+"12-STABLE after doubling the value of <literal>ARG_MAX</literal>, for 64 bit "
+"platforms."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27041
-#, fuzzy
-#| msgid "1201500"
 msgid "1201507"
-msgstr "1201500"
+msgstr "1201507"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27042
-#, fuzzy
-#| msgid "<revnumber>323706</revnumber>"
 msgid "<revnumber>356306</revnumber>"
-msgstr "<revnumber>323706</revnumber>"
+msgstr "<revnumber>356306</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27044
-#, fuzzy
-#| msgid ""
-#| "13.0-CURRENT after adding functions to "
-#| "<citerefentry><refentrytitle>bitstring</refentrytitle><manvolnum>3</"
-#| "manvolnum></citerefentry> to find contiguous sequences of set or unset "
-#| "bits."
 msgid ""
 "12-STABLE after adding functions to <citerefentry><refentrytitle>bitstring</"
 "refentrytitle><manvolnum>3</manvolnum></citerefentry> to find contiguous "
 "sequences of set or unset bits."
 msgstr ""
-"13.0-CURRENT after adding functions to "
-"<citerefentry><refentrytitle>bitstring</refentrytitle><manvolnum>3</"
-"manvolnum></citerefentry> to find contiguous sequences of set or unset bits."
+"12-STABLE after adding functions to <citerefentry><refentrytitle>bitstring</r"
+"efentrytitle><manvolnum>3</manvolnum></citerefentry> to find contiguous "
+"sequences of set or unset bits."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27049
-#, fuzzy
-#| msgid "1201500"
 msgid "1201508"
-msgstr "1201500"
+msgstr "1201508"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27050
-#, fuzzy
-#| msgid "<revnumber>354694</revnumber>"
 msgid "<revnumber>356394</revnumber>"
-msgstr "<revnumber>354694</revnumber>"
+msgstr "<revnumber>356394</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27052
 msgid "12-STABLE after making USB statistics be per-device instead of per bus."
-msgstr ""
+msgstr "12-STABLE after making USB statistics be per-device instead of per bus."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27057
-#, fuzzy
-#| msgid "1201500"
 msgid "1201509"
-msgstr "1201500"
+msgstr "1201509"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27058
-#, fuzzy
-#| msgid "<revnumber>354460</revnumber>"
 msgid "<revnumber>356460</revnumber>"
-msgstr "<revnumber>354460</revnumber>"
+msgstr "<revnumber>356460</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27059
-#, fuzzy
-#| msgid "January 7, 2010"
 msgid "January 7, 2020"
-msgstr "7 de janeiro de 2010"
+msgstr "7 de janeiro de 2020"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27060
-#, fuzzy
-#| msgid ""
-#| "13.0-CURRENT after updating llvm, clang, compiler-rt, libc++, libunwind, "
-#| "lld, lldb and openmp to 9.0.0 final release r372316."
 msgid ""
 "12-STABLE after updating llvm, clang, compiler-rt, libc++, libunwind, lld, "
 "lldb and openmp to 9.0.0 final release r372316."
 msgstr ""
-"13.0-CURRENT after updating llvm, clang, compiler-rt, libc++, libunwind, "
-"lld, lldb and openmp to 9.0.0 final release r372316."
+"12-STABLE after updating llvm, clang, compiler-rt, libc++, libunwind, lld, "
+"lldb and openmp to 9.0.0 final release r372316."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:27070
@@ -52484,75 +52227,56 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:28517
-#, fuzzy
-#| msgid "1102500"
 msgid "1102508"
-msgstr "1102500"
+msgstr "1102508"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:28520
 msgid "11-STABLE after ether_gen_addr availability."
-msgstr ""
+msgstr "11-STABLE after ether_gen_addr availability."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:28524
-#, fuzzy
-#| msgid "1102500"
 msgid "1102509"
-msgstr "1102500"
+msgstr "1102509"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:28525
-#, fuzzy
-#| msgid "<revnumber>347192</revnumber>"
 msgid "<revnumber>347212</revnumber>"
-msgstr "<revnumber>347192</revnumber>"
+msgstr "<revnumber>347212</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:28527
-#, fuzzy
-#| msgid ""
-#| "8.3-STABLE after MFC of two USB fixes (rev <revnumber>246616</revnumber> "
-#| "and <revnumber>246759</revnumber>)."
 msgid ""
 "11-STABLE after MFC of <revnumber>345303</revnumber>, <revnumber>345658,</"
 "revnumber> and partially of <revnumber>345305</revnumber>."
 msgstr ""
-"8.3-STABLE after MFC of two USB fixes (rev <revnumber>246616</revnumber> and "
-"<revnumber>246759</revnumber>)."
+"11-STABLE after MFC of <revnumber>345303</revnumber>, "
+"<revnumber>345658,</revnumber> and partially of "
+"<revnumber>345305</revnumber>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:28533
-#, fuzzy
-#| msgid "1102500"
 msgid "1102510"
-msgstr "1102500"
+msgstr "1102510"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:28534
-#, fuzzy
-#| msgid "<revnumber>37803</revnumber>"
 msgid "<revnumber>347883</revnumber>"
-msgstr "<revnumber>37803</revnumber>"
+msgstr "<revnumber>347883</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:28536
-#, fuzzy
-#| msgid ""
-#| "13.0-CURRENT after bumping the Mellanox driver version numbers "
-#| "(<citerefentry><refentrytitle>mlx4en</refentrytitle><manvolnum>4</"
-#| "manvolnum></citerefentry>; <citerefentry><refentrytitle>mlx5en</"
-#| "refentrytitle><manvolnum>4</manvolnum></citerefentry>)."
 msgid ""
 "11-STABLE after bumping the Mellanox driver version numbers "
 "(<citerefentry><refentrytitle>mlx4en</refentrytitle><manvolnum>4</"
 "manvolnum></citerefentry>; <citerefentry><refentrytitle>mlx5en</"
 "refentrytitle><manvolnum>4</manvolnum></citerefentry>)."
 msgstr ""
-"13.0-CURRENT after bumping the Mellanox driver version numbers "
-"(<citerefentry><refentrytitle>mlx4en</refentrytitle><manvolnum>4</"
-"manvolnum></citerefentry>; <citerefentry><refentrytitle>mlx5en</"
-"refentrytitle><manvolnum>4</manvolnum></citerefentry>)."
+"11-STABLE after bumping the Mellanox driver version numbers (<citerefentry><r"
+"efentrytitle>mlx4en</refentrytitle><manvolnum>4</manvolnum></citerefentry>; <"
+"citerefentry><refentrytitle>mlx5en</refentrytitle><manvolnum>4</manvolnum></c"
+"iterefentry>)."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:28541
@@ -52603,109 +52327,81 @@ msgstr "11-STABLE after fixing a potential OOB read security issue in libc++."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:28564
-#, fuzzy
-#| msgid "1103500"
 msgid "1103502"
-msgstr "1103500"
+msgstr "1103502"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:28565
-#, fuzzy
-#| msgid "<revnumber>354694</revnumber>"
 msgid "<revnumber>354614</revnumber>"
-msgstr "<revnumber>354694</revnumber>"
+msgstr "<revnumber>354614</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:28567
-#, fuzzy
-#| msgid ""
-#| "12-STABLE after adding sysfs create/remove functions that handles "
-#| "multiple files in one call to the LinuxKPI."
 msgid ""
 "11-STABLE after adding sysfs create/remove functions that handles multiple "
 "files in one call to the LinuxKPI."
 msgstr ""
-"12-STABLE after adding sysfs create/remove functions that handles multiple "
+"11-STABLE after adding sysfs create/remove functions that handles multiple "
 "files in one call to the LinuxKPI."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:28572
-#, fuzzy
-#| msgid "1103500"
 msgid "1103503"
-msgstr "1103500"
+msgstr "1103503"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:28573
-#, fuzzy
-#| msgid "<revnumber>354335</revnumber>"
 msgid "<revnumber>354615</revnumber>"
-msgstr "<revnumber>354335</revnumber>"
+msgstr "<revnumber>354615</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:28575
-#, fuzzy
-#| msgid "13.0-CURRENT after LinuxKPI sysfs improvements."
 msgid "11-STABLE after LinuxKPI sysfs improvements."
-msgstr "13.0-CURRENT after LinuxKPI sysfs improvements."
+msgstr "11-STABLE after LinuxKPI sysfs improvements."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:28579
-#, fuzzy
-#| msgid "1103500"
 msgid "1103504"
-msgstr "1103500"
+msgstr "1103504"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:28580
-#, fuzzy
-#| msgid "<revnumber>346168</revnumber>"
 msgid "<revnumber>354616</revnumber>"
-msgstr "<revnumber>346168</revnumber>"
+msgstr "<revnumber>354616</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:28582
-#, fuzzy
-#| msgid ""
-#| "13.0-CURRENT after enabling device class group attributes in the LinuxKPI."
 msgid "11-STABLE after enabling device class group attributes in the LinuxKPI."
-msgstr ""
-"13.0-CURRENT after enabling device class group attributes in the LinuxKPI."
+msgstr "11-STABLE after enabling device class group attributes in the LinuxKPI."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:28587
-#, fuzzy
-#| msgid "1103500"
 msgid "1103505"
-msgstr "1103500"
+msgstr "1103505"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:28590
-#, fuzzy
-#| msgid "10-STABLE after adding C++14 sized deallocation functions to libc++."
 msgid ""
 "11-STABLE after adding sigsetop extensions commonly found in musl libc and "
 "glibc."
-msgstr "10-STABLE after adding C++14 sized deallocation functions to libc++."
+msgstr ""
+"11-STABLE after adding sigsetop extensions commonly found in musl libc and "
+"glibc."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:28595
-#, fuzzy
-#| msgid "1103500"
 msgid "1103506"
-msgstr "1103500"
+msgstr "1103506"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:28596
-#, fuzzy
-#| msgid "<revnumber>63095</revnumber>"
 msgid "<revnumber>356395</revnumber>"
-msgstr "<revnumber>63095</revnumber>"
+msgstr "<revnumber>356395</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:28598
 msgid "11-STABLE after making USB statistics be per-device instead of per bus."
-msgstr ""
+msgstr "11-STABLE after making USB statistics be per-device instead of per bus."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:28607
@@ -55657,22 +55353,18 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:29781
-#, fuzzy
-#| msgid "1004500"
 msgid "1004502"
-msgstr "1004500"
+msgstr "1004502"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:29782
-#, fuzzy
-#| msgid "<revnumber>345196</revnumber>"
 msgid "<revnumber>356396</revnumber>"
-msgstr "<revnumber>345196</revnumber>"
+msgstr "<revnumber>356396</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:29784
 msgid "10-STABLE after making USB statistics be per-device instead of per bus."
-msgstr ""
+msgstr "10-STABLE after making USB statistics be per-device instead of per bus."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:29793
@@ -62693,10 +62385,8 @@ msgstr "<revnumber>193638</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:32537
-#, fuzzy
-#| msgid "June 06, 2009"
 msgid "June 6, 2009"
-msgstr "06 de junho de 2009"
+msgstr "6 de junho de 2009"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:32538
