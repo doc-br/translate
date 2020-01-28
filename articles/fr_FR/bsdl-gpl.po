@@ -1,16 +1,20 @@
 # FreeBSD$
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2020.
+# Vincent DEFERT <20.100@defert.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-01-12 18:35-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-01-28 18:57+0000\n"
+"Last-Translator: Vincent DEFERT <20.100@defert.com>\n"
+"Language-Team: French <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/articles_bsdl-gpl/fr_FR/>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.10.3\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -21,6 +25,8 @@ msgstr ""
 #: article.translate.xml:5
 msgid "Why you should use a BSD style license for your Open Source Project"
 msgstr ""
+"Pourquoi vous devriez utiliser une licence de type BSD pour votre projet "
+"Open Source"
 
 #. (itstool) path: affiliation/address
 #: article.translate.xml:9
@@ -40,7 +46,7 @@ msgstr ""
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:15
 msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
-msgstr ""
+msgstr "FreeBSD est une marque déposée de la FreeBSD Foundation."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:17
@@ -49,6 +55,9 @@ msgid ""
 "and Xeon are trademarks or registered trademarks of Intel Corporation or its "
 "subsidiaries in the United States and other countries."
 msgstr ""
+"Intel, Celeron, Centrino, Core, EtherExpress, i386, i486, Itanium, Pentium "
+"et Xeon sont des marques déposées de Intel Corporation ou ses filiales aux "
+"États-Unis et dans d'autres pays."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:21
@@ -59,6 +68,11 @@ msgid ""
 "designations have been followed by the <quote>™</quote> or the <quote>®</"
 "quote> symbol."
 msgstr ""
+"Beaucoup d'appellations utilisées par les industriels et revendeurs pour "
+"démarquer leurs produits sont déclarées comme marques déposées. Lorsque ces "
+"appellations apparaissent dans ce document et que le projet FreeBSD a "
+"connaissance de leur statut de marque déposée, ces appellations sont suivies "
+"du symbole  <quote>™</quote> ou <quote>®</quote>."
 
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
@@ -71,7 +85,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:35
 msgid "Introduction"
-msgstr ""
+msgstr "Présentation"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:37
@@ -81,11 +95,15 @@ msgid ""
 "GPL. It can also be read as a BSD versus GPL Open Source License "
 "introduction and summary."
 msgstr ""
+"Ce document plaide pour l'utilisation d'une licence de type BSD pour le "
+"logiciel et les données ; il recommande expressément d'utiliser une licence "
+"de type BSD au lieu de la GPL. Il peut aussi être lu comme une introduction "
+"et un résumé des différences entre les licences OpenSource BSD et GPL."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:44
 msgid "Very Brief Open Source History"
-msgstr ""
+msgstr "Très brève histoire de l'Open Source"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:46
@@ -100,6 +118,16 @@ msgid ""
 "software cost and made more programs available made the hardware companies "
 "more competitive."
 msgstr ""
+"Longtemps avant que le terme <quote>Open Source</quote> soit utilisé, les "
+"logiciels étaient développés par des programmeurs associés de manière "
+"informelle et pouvaient être diffusés librement. A partir du début des "
+"années 50, des organisations comme <link xlink:href=\"http://www.share.org\""
+">SHARE</link> et <link xlink:href=\"http://www.decus.org\">DECUS</link> "
+"développaient la plupart des logiciels que les constructeurs de matériel "
+"informatique fournissaient avec leurs offres de matériel. A cette époque, "
+"les entreprises du secteur informatique vendaient du matériel ; tout ce qui "
+"pouvait réduire les coûts du logiciel et augmenter l'offre de programmes "
+"disponibles rendait les constructeurs de matériel plus compétitifs."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:56
@@ -112,6 +140,13 @@ msgid ""
 "lifetime of the product. ADR thus retained ownership and could control "
 "resale and reuse."
 msgstr ""
+"Ce modèle a changé au cours des années 60. En a965, ADR a développé le "
+"premier progiciel indépendant d'un constructeur de matériel. ADR était en "
+"compétition avec un produit gratuit d'IBM originellement développé par ses "
+"clients. ADR a breveté son logiciel en 1968. Pour arrêter le partage de leur "
+"programme, il l'ont fourni dans le cadre d'une location de matériel dans "
+"laquelle le paiement était étalé sur toute la vie du produit. ADR conservait "
+"ainsi la propriété du logiciel et contrôlait sa revente et sa réutilisation."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:65
@@ -121,6 +156,11 @@ msgid ""
 "unbundled its software; that is, software became independent products "
 "separate from hardware."
 msgstr ""
+"En 1969, le ministère américain de la justice a poursuivi IBM pour "
+"destruction d'entreprises du fait de la fourniture de logiciels gratuits "
+"avec son matériel. Suite à ce procès, IBM a cessé de fournir des logiciels "
+"avec son matériel ; autrement dit, les logiciels sont devenus des produits "
+"indépendants, distincts du matériel."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:71
@@ -131,6 +171,11 @@ msgid ""
 "is now standard throughout the computer industry, wherein ownership is never "
 "transferred to the customer."
 msgstr ""
+"En 1968, Informatics a présenté la première \"killer-app\" commerciale et a "
+"rapidement établi le concept de progiciel, d'éditeur de logiciels et de "
+"retour sur investissement très important. Informatics a développé la licence "
+"perpétuelle qui est maintenant la norme dans l'industrie informatique et "
+"dans laquelle la propriété n'est jamais transférée au client."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:80
