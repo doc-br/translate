@@ -1,12 +1,13 @@
 # $FreeBSD$
 # Hongyou Bai <bhy1924@gmail.com>, 2019. #zanata, 2020.
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2020.
+# wenheping <wen@freebsd.org>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-11-02 17:04-0300\n"
-"PO-Revision-Date: 2020-01-28 21:35+0000\n"
-"Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
+"PO-Revision-Date: 2020-01-29 16:31+0000\n"
+"Last-Translator: wenheping <wen@freebsd.org>\n"
 "Language-Team: Chinese (Simplified) <https://translate-dev.freebsd.org/"
 "projects/freebsd-doc/boooks_arch-handbook/zh_CN/>\n"
 "Language: zh_CN\n"
@@ -523,7 +524,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:451
-#, fuzzy
 msgid ""
 "The very last thing in the <acronym>POST</acronym> is the <literal>INT 0x19</"
 "literal> instruction. The <literal>INT 0x19</literal> handler reads 512 "
@@ -537,7 +537,7 @@ msgid ""
 "<acronym>MBR</acronym>, or Master Boot Record. The remaining sectors on the "
 "first track are never used."
 msgstr ""
-"POST的最后一步是执行<literal>INT 0x19</literal>指令。 "
+"<acronym>POST</acronym>的最后一步是执行<literal>INT 0x19</literal>指令。 "
 "这个指令从引导设备第一个扇区读取512字节，装入地址<literal>0x7c00</literal>。 "
 "<emphasis>第一个扇区</emphasis>的说法最早起源于硬盘的结构，硬盘面被分为若干圆柱形轨道。给轨道编号，同时又将轨道分为 "
 "一定数目(通常是64)的扇形。0号轨道是硬盘的最外圈，1号扇区， 第一个扇区(轨道、柱面都从0开始编号，而扇区从1开始编号) "
@@ -23867,7 +23867,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:20108
 msgid "<emphasis>tag_action</emphasis> - the kind of tag to use:"
-msgstr "<emphasis>tag_action</emphasis> - 使用的标签的种类有： "
+msgstr "<emphasis>tag_action</emphasis> - 使用的标签的种类有："
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:20113
