@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-12-09 20:45-0300\n"
-"PO-Revision-Date: 2020-01-23 13:15+0000\n"
+"PO-Revision-Date: 2020-01-29 16:31+0000\n"
 "Last-Translator: mkufner <MichaelKufner@t-online.de>\n"
 "Language-Team: German <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_bsdl-gpl/de_DE/>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.10.1\n"
+"X-Generator: Weblate 3.10.3\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -467,6 +467,9 @@ msgid ""
 "simply aggregating software together, as when multiple programs are put on "
 "one disk, does not count as including GPLed programs in non-GPLed programs."
 msgstr ""
+"Das einfache Zusammenfügen von Software, wie z.B. das Speichern mehrerer "
+"Programme auf einer Festplatte, zählt nicht als Einbinden von GPL-"
+"lizenzierten Programmen in nicht GPL-lizenzierte Programme."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:212
@@ -474,6 +477,9 @@ msgid ""
 "output of a program does not count as a derivative work. This enables the "
 "gcc compiler to be used in commercial environments without legal problems."
 msgstr ""
+"Die Ausgabe eines Programms zählt nicht als abgeleitetes Werk. Dadurch kann "
+"der gcc-Compiler in kommerziellen Umgebungen ohne rechtliche Probleme "
+"eingesetzt werden."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:216
@@ -484,6 +490,12 @@ msgid ""
 "distribute binary drivers, but often has the disadvantage that they will "
 "only work for particular versions of the Linux kernel."
 msgstr ""
+"Da der Linux-Kernel unter der GPL steht, muss jeder Code, der statisch mit "
+"dem Linux-Kernel verlinkt ist, unter die GPL gestellt werden. Diese "
+"Anforderung kann durch dynamisches Verlinken von ladbaren Kernelmodulen "
+"umgangen werden. Das ermöglicht es Unternehmen, binäre Treiber zu verteilen, "
+"hat aber oft den Nachteil, dass diese nur für bestimmte Versionen des Linux-"
+"Kernels funktionieren."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:224
@@ -492,11 +504,15 @@ msgid ""
 "legalities of the GPL are being ignored in regard to Linux and related "
 "software. The long-term ramifications of this are unclear."
 msgstr ""
+"Zum Teil aufgrund ihrer Komplexität werden heute in vielen Teilen der Welt "
+"die rechtlichen Grundlagen der GPL im Hinblick auf Linux und damit "
+"zusammenhängende Software ignoriert. Die langfristigen Auswirkungen dieser "
+"Entwicklung sind unklar."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:232
 msgid "The origins of Linux and the LGPL"
-msgstr ""
+msgstr "Die Ursprünge von Linux und der LGPL"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:234
@@ -506,6 +522,10 @@ msgid ""
 "the associated GNU tools for the existence of Linux. He put the Linux kernel "
 "under the GPL."
 msgstr ""
+"Während die kommerziellen Unix-Kriege tobten, wurde der Linux-Kernel als "
+"Unix-Klon für PCs entwickelt. Linus Torvalds begründet die Existenz von "
+"Linux mit der Existenz des GNU C-Compilers und der dazugehörigen GNU-Tools. "
+"Torvalds stellte den Linux-Kernel unter die GPL."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:239
@@ -522,6 +542,18 @@ msgid ""
 "have to release the source to code which has been dynamically linked to an "
 "LGPLed library."
 msgstr ""
+"Beachten Sie dabei Folgendes: Die GPL verlangt, dass jeder statisch "
+"verlinkte Code, der unter der GPL steht, auch unter die GPL gestellt wird. "
+"Der Quellcode für diesen Code muss daher dem Benutzer des Programms zur "
+"Verfügung gestellt werden. Dynamisches Linken gilt jedoch nicht als Verstoß "
+"gegen die GPL. Es entstand ein enormer Druck, proprietäre Anwendungen für "
+"Linux bereitzustellen. Solche Anwendungen verlinken häufig auf "
+"Systembibliotheken. Dies führte zu einer modifizierten Version der GPL mit "
+"dem Namen <link xlink:href=\"http://www.opensource.org/licenses/lgpl-license."
+"php\">LGPL</link> (\"Library\", inzwischen in \"Lesser\", GPL, umbenannt). "
+"Die LGPL erlaubt es, proprietären Code mit der GNU C-Bibliothek, glibc, zu "
+"verlinken. Sie müssen den Quellcode nicht für Code freigeben, der dynamisch "
+"auf eine LGPL-Bibliothek verlinkt."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:252
@@ -531,11 +563,16 @@ msgid ""
 "the source must be released. Both the GPL and LGPL require any modifications "
 "to the code directly under the license to be released."
 msgstr ""
+"Wenn man eine Anwendung statisch mit der glibc linkt, was häufig in "
+"eingebetteten Systemen erforderlich ist, kann die Anwendung nicht proprietär "
+"sein, d.h. der Quelltext muss freigegeben werden. Sowohl die GPL als auch "
+"die LGPL verlangen, dass alle Änderungen am Code direkt unter der "
+"entsprechenden Lizenz veröffentlicht werden."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:261
 msgid "Open Source licenses and the Orphaning Problem"
-msgstr ""
+msgstr "Open-Source-Lizenzen und das Problem der Verwaisung"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:263
@@ -548,6 +585,15 @@ msgid ""
 "guarantee that their software will remain available, as current market "
 "conditions and strategies can change rapidly."
 msgstr ""
+"Eines der größten Probleme bei proprietärer Software wird als "
+"<quote>Verwaisung</quote> bezeichnet. Es tritt auf, wenn ein einzelner "
+"geschäftlicher Misserfolg oder eine Änderung der Produktstrategie zu einer "
+"Art Schneeballeffekt führt: Abhängige Systeme und Unternehmen scheitern dann "
+"aus Gründen, auf die sie keinen Einfluss haben. Jahrzehntelange Erfahrung "
+"hat gezeigt, dass die momentane Größe oder der Erfolg eines "
+"Softwareanbieters keine Garantie dafür ist, dass seine Software weiterhin "
+"verfügbar bleibt, da sich die aktuellen Marktbedingungen und Strategien "
+"schnell ändern können."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:272
@@ -555,6 +601,8 @@ msgid ""
 "The GPL attempts to prevent orphaning by severing the link to proprietary "
 "intellectual property."
 msgstr ""
+"Die GPL will die Verwaisung verhindern, indem sie die Bindung an geistiges "
+"Eigentum aufhebt."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:275
@@ -569,11 +617,20 @@ msgid ""
 "mentally in the zone is much more important than simple physical "
 "availability of the source code."
 msgstr ""
+"Eine BSD-Lizenz gibt einem kleinen Unternehmen das Äquivalent einer Software-"
+"in-Escrow-Lizenz ohne rechtliche Komplikationen oder Kosten. Wenn ein BSD-"
+"lizenziertes Programm verwaist, kann eine Firma das Programm, auf das sie "
+"angewiesen ist, einfach proprietär übernehmen. Eine noch bessere Situation "
+"entsteht, wenn eine BSD-Codebasis von einem kleinen informellen Konsortium "
+"unterhalten wird, da der Entwicklungsprozess nicht vom Überleben einer "
+"einzelnen Firma oder Produktlinie abhängt. Die Überlebensfähigkeit eines "
+"Entwicklerteams, das völlig in seiner Arbeit aufgeht, ist wesentlich "
+"wichtiger als die bloße Verfügbarkeit des Quellcodes."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:289
 msgid "What a license cannot do"
-msgstr ""
+msgstr "Was eine Lizenz nicht leisten kann"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:291
@@ -583,6 +640,10 @@ msgid ""
 "presumption in the BSD community is that such an attempt simply causes the "
 "source to fork."
 msgstr ""
+"Keine Lizenz kann die künftige Verfügbarkeit einer Software garantieren. "
+"Obwohl ein Rechteinhaber gewöhnlich jederzeit die Verwertungsbedingungen "
+"ändern kann, wird in der BSD-Gemeinschaft davon ausgegangen, dass ein "
+"solcher Versuch lediglich zu einem Fork des Quellcodes führt."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:297
@@ -595,6 +656,13 @@ msgid ""
 "distribution is an open question; there is also some confusion regarding "
 "whether the software was really under the GPL."
 msgstr ""
+"Die GPL verbietet es ausdrücklich, die Lizenz zu widerrufen. Es ist jedoch "
+"vorgekommen, dass eine Firma (Mattel) ein GPL-Rechte (cphack) erwarb, die "
+"komplette Lizenz widerrief, vor Gericht ging und sich durchsetzte [2]. Das "
+"heißt, sie widerriefen rechtlich die gesamte Verbreitung und alle auf Basis "
+"der GPL abgeleiteten Werke. Offen ist die Frage, ob dies bei einer größeren "
+"und weiter verstreuten Verbreitung geschehen könnte. Es besteht auch eine "
+"gewisse Verwirrung darüber, ob die Software wirklich unter der GPL stand."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:307
