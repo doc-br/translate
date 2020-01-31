@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-01-12 18:35-0300\n"
-"PO-Revision-Date: 2020-01-31 12:24+0000\n"
+"PO-Revision-Date: 2020-01-31 17:49+0000\n"
 "Last-Translator: Lorenzo Salvadore <salvadore@freebsd.org>\n"
 "Language-Team: Italian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_bsdl-gpl/it_IT/>\n"
@@ -72,6 +72,11 @@ msgid ""
 "designations have been followed by the <quote>™</quote> or the <quote>®</"
 "quote> symbol."
 msgstr ""
+"Molte denominazioni usate dai produttori e dai rivenditori per distinguere i "
+"loro prodotti sono rivendicati come marchi. Laddove queste denominazioni "
+"appaiono in questo documento e il FreeBSD Project è al corrente della "
+"rivendicazione del marchio, le denominazioni sono state fatte seguire dai "
+"simboli <quote>™</quote> o da <quote>®</quote>."
 
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
@@ -94,11 +99,15 @@ msgid ""
 "GPL. It can also be read as a BSD versus GPL Open Source License "
 "introduction and summary."
 msgstr ""
+"Questo documento perora l'uso di una licenza in stile BSD per programmi e "
+"dati; specificatamente raccomanda l'uso di una licenza in stile BSD al posto "
+"della GPL. Esso può anche essere letto come un'introduzione e un riassunto "
+"comparativo per le licenze Open Source BSD e GPL."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:44
 msgid "Very Brief Open Source History"
-msgstr ""
+msgstr "Storia molto breve dell'Open Source"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:46
@@ -113,6 +122,16 @@ msgid ""
 "software cost and made more programs available made the hardware companies "
 "more competitive."
 msgstr ""
+"Molto prima che il termine <quote>Open Source</quote> fosse usato, esisteva "
+"del software che veniva sviluppato da vaghe associazioni di programmatori e "
+"che veniva liberamente scambiato. A cominciare dai primi anni Cinquanta, "
+"organizzazioni quali <link xlink:href=\"http://www.share.org\">SHARE</link> "
+"e <link xlink:href=\"http://www.decus.org\">DECUS</link> sviluppavano molto "
+"del software che le compagnie di hardware informatico vendevano incluso "
+"nelle loro offerte di hardware. A quel tempo le compagnie informatiche "
+"vendevano hardware; qualsiasi cosa che riducesse il costo del software e "
+"rendesse disponibile un maggior numero di programmi rendeva le compagnie di "
+"hardware più competitive."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:56
@@ -125,6 +144,14 @@ msgid ""
 "lifetime of the product. ADR thus retained ownership and could control "
 "resale and reuse."
 msgstr ""
+"Questo modello cambiò negli anni Sessanta. Nel 1965 ADR sviluppò il primo "
+"prodotto con licenza software indipendente dall'hardware della compagnia. "
+"ADR competeva contro un pachetto gratuito dell'IBM originalmente sviluppato "
+"dai clienti di IBM. ADR brevettò il proprio software nel 1968. Per "
+"interrompere la condivisione del suo programma, lo distribuì a condizione di "
+"noleggio di materiale il cui pagamento si estendeva per tutta la durata di "
+"vita del prodotto. ADR  ne mantenne così la proprietà e poteva controllarne "
+"la rivendita e il riuso."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:65
@@ -134,6 +161,10 @@ msgid ""
 "unbundled its software; that is, software became independent products "
 "separate from hardware."
 msgstr ""
+"Nel 1965 il Dipartimento di Giustizia degli Stati Uniti accusò IBM di "
+"rovinare aziende offrendo software gratuito incluso nel prezzo di hardware "
+"IBM. In seguito al processo, IBM escluse il suo software; cioè, i programmi "
+"divennero prodotti separati dall'hardware."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:71
@@ -144,11 +175,16 @@ msgid ""
 "is now standard throughout the computer industry, wherein ownership is never "
 "transferred to the customer."
 msgstr ""
+"Nel 1968 Informatics introducce la prima applicazione di successo e "
+"rapidamente stabilì i concetti di prodotto software e compagnia software, "
+"nonché alti tassi di ricavo. Informatics sviluppò la licenza perpetua che è "
+"ora uno standard nell'industria informatica e che prevede che la proprietà "
+"non venga mai trasferita al cliente."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:80
 msgid "Unix from a BSD Licensing Perspective"
-msgstr ""
+msgstr "Unix dal punto di vista delle licenze BSD"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:82
@@ -158,6 +194,10 @@ msgid ""
 "sell a product into the software market. It was, however, able to provide it "
 "to academic institutions for the price of media."
 msgstr ""
+"AT&amp;T, prorietario dell'implementazione originale di Unix, era un "
+"monopolio pubblicamente regolato e legato da una causa antitrust; non poteva "
+"vendere legalmente prodotti nel mercato del software. Poteva, tuttavia, "
+"distribuire software ad istituzioni accademice al prezzo del supporto."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:88
@@ -171,6 +211,16 @@ msgid ""
 "proclaimed, <quote>software comes from heaven when you have good hardware</"
 "quote>."
 msgstr ""
+"Le università adottarono rapidamente Unix dopo che una conferenza sui "
+"sistemi operativi ne pubblicizzò la disponibilità. Fu estremamente utile il "
+"fatto che Unix girasse su PDP-11, un computer 16-bit molto economico, e "
+"fosse codificato in un linguaggio di alto livello che era dimostrabilmente "
+"buono per la programmazione di sistemi. Il DEC PDP-11 aveva, in effetti, "
+"un'interfaccia hardware aperta progettata per rendere facile per i propri "
+"clienti la scrittura dei propri sistemi operativi, un'operazione allora "
+"comune. Come il fondatore di DEC Ken Olsen proclamò con una celebre "
+"dichiarazione <quote>il software viene dal cielo quando hai un buon "
+"hardware</quote>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:98
@@ -184,6 +234,15 @@ msgid ""
 "became known as <quote>the BSD license</quote>. A customer purchased Unix "
 "from AT&amp;T and then ordered a BSD tape from UCB."
 msgstr ""
+"L'autore di Unix Ken Thompson tornò alla sua alma mater, l'Università di "
+"Berkeley in California (UCB), nel 1975 ed insegnò il kernel riga per riga. "
+"Questo risultò infine in un sistema in evoluzione noto come BSD (Berkeley "
+"Standard Distribution). L'UCB convertì Unix a 32-bit, aggiunse la memoria "
+"virtuale e implementò la versione dello stack TCP/IP sul quale "
+"sostanzialmente fu costruito Internet. L'UCB rese BSD disponibile al costo "
+"del supporto, sotto quella che divenne nota come la <quote>licenza "
+"BSD</quote>. Un cliente comprava Unix da AT&amp;T e quindi ordinava un "
+"nastro BSD dall'UCB."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:108
@@ -193,6 +252,11 @@ msgid ""
 "embarked on an aggressive licensing effort and most commercial Unixes of the "
 "day became ATT-derived."
 msgstr ""
+"A metà degli anni Ottanta una causa antitrust del governo contro AT&amp;T si "
+"concluse con la divisione della compagnia in diverse società. AT&amp;T "
+"possedeva ancora Unix ed era ora autorizzata a venderlo. AT&amp;T intraprese "
+"un sforzo di licenziamento aggressivo a la maggior parte degli Unix "
+"commerciali di allora divennero derivati di AT&amp;T."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:113
