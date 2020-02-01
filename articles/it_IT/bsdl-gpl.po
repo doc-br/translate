@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-01-12 18:35-0300\n"
-"PO-Revision-Date: 2020-01-31 18:28+0000\n"
-"Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
+"PO-Revision-Date: 2020-02-02 18:58+0000\n"
+"Last-Translator: Lorenzo Salvadore <salvadore@freebsd.org>\n"
 "Language-Team: Italian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_bsdl-gpl/it_IT/>\n"
 "Language: it_IT\n"
@@ -101,7 +101,7 @@ msgid ""
 "GPL. It can also be read as a BSD versus GPL Open Source License "
 "introduction and summary."
 msgstr ""
-"Questo documento perora l'uso di una licenza in stile BSD per programmi e "
+"Questo documento promuove l'uso di una licenza in stile BSD per programmi e "
 "dati; specificatamente raccomanda l'uso di una licenza in stile BSD al posto "
 "della GPL. Esso può anche essere letto come un'introduzione e un riassunto "
 "comparativo per le licenze Open Source BSD e GPL."
@@ -147,13 +147,13 @@ msgid ""
 "resale and reuse."
 msgstr ""
 "Questo modello cambiò negli anni Sessanta. Nel 1965 ADR sviluppò il primo "
-"prodotto con licenza software indipendente dall'hardware della compagnia. "
-"ADR competeva contro un pachetto gratuito dell'IBM originalmente sviluppato "
-"dai clienti di IBM. ADR brevettò il proprio software nel 1968. Per "
-"interrompere la condivisione del suo programma, lo distribuì a condizione di "
-"noleggio di materiale il cui pagamento si estendeva per tutta la durata di "
-"vita del prodotto. ADR  ne mantenne così la proprietà e poteva controllarne "
-"la rivendita e il riuso."
+"prodotto con licenza software indipendente dall'hardware dell'azienda. ADR "
+"competeva contro un pachetto gratuito dell'IBM originalmente sviluppato dai "
+"clienti di IBM. ADR brevettò il proprio software nel 1968. Per interrompere "
+"la condivisione del suo programma, lo distribuì a condizione di noleggio di "
+"materiale il cui pagamento si estendeva per tutta la durata di vita del "
+"prodotto. ADR ne mantenne così la proprietà e poteva controllarne la "
+"rivendita e il riuso."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:65
@@ -178,7 +178,7 @@ msgid ""
 "transferred to the customer."
 msgstr ""
 "Nel 1968 Informatics introducce la prima applicazione di successo e "
-"rapidamente stabilì i concetti di prodotto software e compagnia software, "
+"rapidamente stabilì i concetti di prodotto software e azienda software, "
 "nonché alti tassi di ricavo. Informatics sviluppò la licenza perpetua che è "
 "ora uno standard nell'industria informatica e che prevede che la proprietà "
 "non venga mai trasferita al cliente."
@@ -255,7 +255,7 @@ msgid ""
 "day became ATT-derived."
 msgstr ""
 "A metà degli anni Ottanta una causa antitrust del governo contro AT&amp;T si "
-"concluse con la divisione della compagnia in diverse società. AT&amp;T "
+"concluse con la divisione dell'azienda in diverse società. AT&amp;T "
 "possedeva ancora Unix ed era ora autorizzata a venderlo. AT&amp;T intraprese "
 "un sforzo di licenziamento aggressivo a la maggior parte degli Unix "
 "commerciali di allora divennero derivati di AT&amp;T."
@@ -324,6 +324,15 @@ msgid ""
 "included in proprietary products without any restrictions on the "
 "availability of your code or your future behavior."
 msgstr ""
+"La cosiddetta <link xlink:href=\"http://www.opensource.org/licenses/bsd-"
+"license.php\">nuova licenza BSD</link> applicata a FreeBSD negli ultimi anni "
+"è di fatto una dichiarazione per la quale si può qualsiasi cosa col "
+"programma o il suo sorgente, ma non si riceve nessuna garanzia e nessuno "
+"degli autori ha nessuna responsabilità (sostanzialmente, non è possibile "
+"querelare nessuno). Questa nuova licenza BSD è intesa per incoraggiare la "
+"commercializzazione di prodotti. Qualsiasi codice BSD può essere venduto o "
+"incluso in prodotti proprietari senza restrizioni sulla disponibilità del "
+"codice o su comportamenti futuri."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:147
@@ -331,11 +340,14 @@ msgid ""
 "Do not confuse the new BSD license with <quote>public domain</quote>. While "
 "an item in the public domain is also free for all to use, it has no owner."
 msgstr ""
+"Non si confondano la nuova licenza BSD con il <quote>dominio pubblico</quote>"
+". Sebben anche un oggetto in dominio pubblico sia libero di essere usato da "
+"chiunque, esso non ha proprietario."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:154
 msgid "The origins of the GPL"
-msgstr ""
+msgstr "Le origini della GPL"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:156
@@ -344,6 +356,9 @@ msgid ""
 "1990s, the GPL, another development with important licensing considerations, "
 "reached fruition."
 msgstr ""
+"Mentre il futuro di Unix era stato percepito così farraginoso nei tardi anni "
+"Ottanta e nei primi anni Novanta, la GPL, un altro sviluppo con importanti "
+"considerazioni in materia di licenza, giunse a compimento."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:160
@@ -361,6 +376,19 @@ msgid ""
 "system, including all associated software, that would not be subject to "
 "proprietary licensing. This system was called GNU, for \"GNU is Not Unix\"."
 msgstr ""
+"Richard Stallman, il programmatore di Emacs, era un membro del personale del "
+"MIT quando il suo laboratorio cambiò i propri sistemi da proprietari a "
+"casalinghi. Stallman si innervorsì quando scoprì di non poter apportare "
+"legalmente piccoli miglioramenti al sistema. (Molti dei collaboratori di "
+"Stallman se ne erano andati per formare due compagnie basate su software "
+"sviluppato al MIT e licenziato dal MIT; pare che ci sia stato disaccordo "
+"sull'accesso al codice sorgente di questo software). Stallman ideò "
+"un'alternativa alla licenza software commerciale e la chiamò GPL, o \"Gnu "
+"Publi License\". Creò anche una fondazione senza scopo di lucro, la <link "
+"xlink:href=\"http://www.fsf.org\">Free Software Foundation</link> (FSF), che "
+"intendeva sviluppare un intero sistema operativo, software associato "
+"incluso, che non sarebbe stato oggetto di licenza proprietaria. Il sistema "
+"fu chiamato GNU, stante per \"GNU non è Unix\"."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:175
@@ -372,6 +400,13 @@ msgid ""
 "to GPL code was required to be under the GPL. The GPL was intended to keep "
 "software from becoming proprietary. As the last paragraph of the GPL states:"
 msgstr ""
+"La GPL fu progettata per essere l'antitesi della licenza proprietaria "
+"standard. A questo fine, si richiese che ogni modifica che fosse apportata "
+"ad un programma GPL fosse restituita alla comunità GPL (richiedendo che il "
+"sorgente del programma fosse reso disponibile all'utente) e che ogni "
+"programma che usasse o collegasse codice GPL venisse sottoposto alla GPL. La "
+"GPL intendeva impedire che il software diventasse proprietario. All'ultimo "
+"paragrafo la GPL dichiara:"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:184
@@ -379,6 +414,8 @@ msgid ""
 "<quote>This General Public License does not permit incorporating your "
 "program into proprietary programs.</quote>[1]"
 msgstr ""
+"<quote>Questa Licenza Pubblica Generale non permette di incorporare il tuo "
+"programma in programmi proprietari.</quote>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:188
@@ -387,6 +424,9 @@ msgid ""
 "\">GPL</link> is a complex license so here are some rules of thumb when "
 "using the GPL:"
 msgstr ""
+"La <link xlink:href=\"http://www.opensource.org/licenses/gpl-license.php\""
+">GPL</link> è una licenza complessa quindi ecco alcune regole pratiche sul "
+"suo utilizzo:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:194
@@ -394,6 +434,9 @@ msgid ""
 "you can charge as much as you want for distributing, supporting, or "
 "documenting the software, but you cannot sell the software itself."
 msgstr ""
+"è possibile fissare qualsivoglia prezzo per la distribuzione, il supporto o "
+"la documentazione del software, ma non è possibile la vendita del software "
+"stesso."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:198
@@ -402,6 +445,10 @@ msgid ""
 "compile, the program must be under the GPL. Linking statically to a GPL "
 "library requires a program to be under the GPL."
 msgstr ""
+"la regola pratica stabilisce che se è necessario codice GPL per la "
+"compilazione di un programma, il programma deve essere sottoposto alla GPL. "
+"Il link statico ad una libreria GPL implica che il programma sia sottoposto "
+"alla GPL."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:203
@@ -409,6 +456,9 @@ msgid ""
 "the GPL requires that any patents associated with GPLed software must be "
 "licensed for everyone's free use."
 msgstr ""
+"la GPL richiede che qualsiasi brevetto associato a software GPL debba essere "
+"sottoposto ad una licenza che ne garantisca il libero uso da parte di "
+"chiunque."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:207
@@ -416,6 +466,9 @@ msgid ""
 "simply aggregating software together, as when multiple programs are put on "
 "one disk, does not count as including GPLed programs in non-GPLed programs."
 msgstr ""
+"la semplice aggregazione di software, come il porre programmi diversi su uno "
+"stesso disco, non conta quale inclusione di programmi GPL in programmi non "
+"GPL."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:212
@@ -423,6 +476,9 @@ msgid ""
 "output of a program does not count as a derivative work. This enables the "
 "gcc compiler to be used in commercial environments without legal problems."
 msgstr ""
+"l'output di un programma non conta quale lavoro derivato. Questo consente al "
+"compilatore gcc di essere usato in ambienti commerciali senza problemi "
+"legali."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:216
@@ -433,6 +489,12 @@ msgid ""
 "distribute binary drivers, but often has the disadvantage that they will "
 "only work for particular versions of the Linux kernel."
 msgstr ""
+"siccome il kernel Linux è sottoposto alla GPL, ogni codice collegato "
+"staticamente col kernel Linux deve essere sottoposto alla GPL. Questo "
+"requisito può essere aggirato collegando dinamicamente moduli del kernel. "
+"Questo permette alle compagnie di distribuire driver binari, ma spesso con "
+"lo svantaggio che essi funzioneranno solo per versioni particolari del "
+"kernel Linux."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:224
@@ -441,11 +503,15 @@ msgid ""
 "legalities of the GPL are being ignored in regard to Linux and related "
 "software. The long-term ramifications of this are unclear."
 msgstr ""
+"A causa della sua complessità, in molte parti del mondo oggigiorno gli "
+"aspetti legali della GPL vengono ignorati per quanto riguarda Linux e "
+"software relativo. Le conseguenze a lungo termine di questo approccio non "
+"sono chiare."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:232
 msgid "The origins of Linux and the LGPL"
-msgstr ""
+msgstr "Le origini di Linux e della LGPL"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:234
@@ -455,6 +521,10 @@ msgid ""
 "the associated GNU tools for the existence of Linux. He put the Linux kernel "
 "under the GPL."
 msgstr ""
+"Mentre imperversavano le guerre tra gli Unix commerciali, il kernel Linux "
+"veniva sviluppato come un clone di PC Unix. Linus Torvalds riconosce "
+"l'importanza del compilatore GNU C e degli strumenti GNU associati per "
+"l'esistenza di Linux. Egli sottopone il kernel Linux alla GPL."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:239
@@ -471,6 +541,18 @@ msgid ""
 "have to release the source to code which has been dynamically linked to an "
 "LGPLed library."
 msgstr ""
+"Si ricordi che la GPL impone che ogni cosa collegata staticamente ad un "
+"qualsiasi codice sottoposto alla GPL debba essere sottoposta anch'essa alla "
+"GPL. Il sorgente per questa cosa deve dunque essere reso disponibile "
+"all'utente del programma. Il link dinamico, tuttavia, non è considerato una "
+"violazione della GPL. La pressione per inserire applicazioni proprietarie in "
+"Linux divenne schiacciante. Tali applicazioni devono spesso effettuare link "
+"con librerie di sistema. Ciò portò ad una versione modificata della GPL "
+"chiamata <link xlink:href=\"http://www.opensource.org/licenses/lgpl-license."
+"php\">LGPL</link> (\"Library\", da allora rinominata \"Lesser\", GPL). La "
+"LGPL consente al codice proprietario di effettuare link alla libreria C di "
+"GNU, glibc. Non è necessario rilasciare il codice sorgente che è stato "
+"collegato dinamicamente ad una libreria sottoposta alla LGPL."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:252
@@ -480,11 +562,16 @@ msgid ""
 "the source must be released. Both the GPL and LGPL require any modifications "
 "to the code directly under the license to be released."
 msgstr ""
+"Se si collega staticamente un'applicazione con glibc, come è spesso "
+"necessario in sistemi integrati, non è possibile mantere la propria "
+"applicazione proprietaria, vale a dire, il sorgete deve essere rilasciato. "
+"Sia la GPL che la LGPL impongono che ogni modifica al codice direttamente "
+"sottoposto alla licenza venga rilasciata."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:261
 msgid "Open Source licenses and the Orphaning Problem"
-msgstr ""
+msgstr "Licenze Open Source e il problema dell'Orphaning"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:263
@@ -497,6 +584,14 @@ msgid ""
 "guarantee that their software will remain available, as current market "
 "conditions and strategies can change rapidly."
 msgstr ""
+"Uno dei gravi problemi associati al software proprietario è noto come "
+"<quote>orphaning</quote>. Esso si presenta quando un'impresa fallisce o un "
+"cambiamento nella strategia dei prodotti causa il fallimento di una vasta "
+"piramide di sistemi dipendenti e di compagnie per ragioni al di là del loro "
+"controllo. Decadi di esperienza hanno dimostrato che la dimensione o il "
+"successo momentanei di un distributore di software non garantisce che il "
+"loro software rimanga disponibile, dato che le condizioni correnti del "
+"mercato e le strategie possono cambiare rapidamente."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:272
@@ -504,6 +599,8 @@ msgid ""
 "The GPL attempts to prevent orphaning by severing the link to proprietary "
 "intellectual property."
 msgstr ""
+"La GPL tenta di impedire l'orphaning spezzando il legame con la proprietà "
+"intellettuale proprietaria."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:275
@@ -518,11 +615,20 @@ msgid ""
 "mentally in the zone is much more important than simple physical "
 "availability of the source code."
 msgstr ""
+"Una licenza BSD consegna all'azienda il software in una specia di acconto di "
+"garanzia senza complicazioni o costi legali. Se un programma sottoposto a "
+"licenza BSD diventa orfano, una compagnia può semplicemente subentare, in "
+"maniera proprietaria, nel mantenimento del programma da cui dipende. Una "
+"situazione anche migliore si presenta quando codice BSD viene mantenuto da "
+"un piccolo consorzio informale, siccome il processo di sviluppo non dipende "
+"dalla sopravvivenza di una singola compagnia o di linea di prodotti. La "
+"sopravvivenza di una squadra di sviluppo mentalmente concentrata è molto più "
+"importante della semplice disponibilità fisica del codice sorgente."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:289
 msgid "What a license cannot do"
-msgstr ""
+msgstr "Ciò che una licenza non può fare"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:291
@@ -532,6 +638,10 @@ msgid ""
 "presumption in the BSD community is that such an attempt simply causes the "
 "source to fork."
 msgstr ""
+"Nessuna licenza può garantire la futura disponibilità del software. Benché "
+"il detentore di copyright possa tradizionalmente cambiare i termini del "
+"copyright stesso in qualsiasi momento, si presuppone nella comunità BSD che "
+"tale tentativo causi semplicemente il fork del sorgente."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:297
@@ -544,6 +654,13 @@ msgid ""
 "distribution is an open question; there is also some confusion regarding "
 "whether the software was really under the GPL."
 msgstr ""
+"La GPL vieta esplicitamente la revoca della licenza. È accaduto, tuttavia, "
+"che un'azienda (Mattel) abbia comprato un copyright GPL (cphack), revocato "
+"l'intero copyright e vinto in tribunale [2]. Cioè, essa ha legalmente "
+"revocato l'intera distribuzione e tutti i lavori derivati basati su quel "
+"copyright. Se ciò possa accadere con una distribuzione più ampia e sparsa è "
+"una questione aperta; c'è anche qualche confusione riguardo al fatto se il "
+"software fosse veramente sottoposto alla GPL."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:307
@@ -558,11 +675,21 @@ msgid ""
 "producing a better version of the code and doing it faster than the original "
 "owners.\" [3]"
 msgstr ""
+"In un altro esempio, Red Hat comprò Cygnus, un'azienda di ingegneria che era "
+"subentrata nello sviluppo degli strumenti del compilatore della FSF. Cygnus "
+"era autorizzata a svolgere questa operazione perché aveva sviluppato un "
+"modello commerciale che prevedeva la vendita di supporto al software GNU. "
+"Questo le permise di assumere una cinquantina di ingegneri e guidare la "
+"direzione dei programmi contribuendo alla maggior parte delle modifiche. "
+"Come dichiara Donald Rosenberg \"progetti che usano licenze quali la GPL... "
+"vivono sotto la costante minaccia di vedersi soffiar via il progetto da "
+"qualcuno che produce una versione migliore del codice e lo fa più veloce dei "
+"proprietari originali.\" [3]"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:321
 msgid "GPL Advantages and Disadvantages"
-msgstr ""
+msgstr "Vantaggi e svantaggi della GPL"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:323
@@ -573,6 +700,11 @@ msgid ""
 "overhead, with minimal expectations that others will use the resulting "
 "compiler."
 msgstr ""
+"Una ragione comune per l'uso della GPL è la modifica o l'estensione del "
+"compilatore gcc. Ciò è particolarmente conveniente quando si lavora con "
+"processori molto particolari in ambienti in cui è probabile che tutti i "
+"costi del software siano considerati spese generali, con minime aspettative "
+"riguardo all'uso da parte di altri del compilatore risultante."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:329
@@ -583,6 +715,11 @@ msgid ""
 "providing various forms of technical support, including documentation, for "
 "the GPLed intellectual property world."
 msgstr ""
+"La GPL è vantaggiosa per piccole aziende che vendono CD in un ambiente dove "
+"\"compra basso, vendi alto\" può ancora consegnare all'utente finale un "
+"prodotto molto economico. Essa è vantaggiosa anche per le aziende che "
+"contano di sopravvivere fornendo varie forme di supporto tecnico, "
+"documentazione inclusa, per il mondo della proprietà intellettuale GPL."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:336
@@ -592,6 +729,11 @@ msgid ""
 "the GPL is well suited for use as a marketing weapon, potentially reducing "
 "overall economic benefit and contributing to monopolistic behavior."
 msgstr ""
+"Un uso meno pubblicizzato e imprevisto della GPL consiste nell'essere molto "
+"favorevole a grandi aziende che vogliono tagliar fuori aziende del software. "
+"In altre parole, la GPL è adatta per essere utilizzata come un'arma di "
+"mercato, potenzialmente riducendo il beneficio economico globale e "
+"contribuendo ad un comportamento monopolistico."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:342
@@ -602,6 +744,12 @@ msgid ""
 "research results, or the difficulty a student will have in joining a company "
 "on the assumption that a promising research project will be commercialized."
 msgstr ""
+"La GPL può costituire un vero problema per coloro che vogliono "
+"commercializzare software e trarne profitto. Per esempio, la GPL accrese la "
+"difficoltà di uno studente laureato di fondare un'azienda per "
+"commercializzare i risultati delle sue ricerche e accrese altresì la "
+"difficoltà di uno studente di entrare in un'azienda a condizione che un suo "
+"progetto di ricerca promettente venga commercializzato."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:349
@@ -614,6 +762,14 @@ msgid ""
 "engineers proprietary products. (This does not apply to Linux applications "
 "because they do not statically link, rather they use a trap-based API.)"
 msgstr ""
+"Per coloro che devono lavorare con implementazioni collegate staticamente di "
+"diversi standard software, la GPL è spesso una licenza infelice, perché "
+"preclude l'uso di implementazioni proprietarie degli standard. Così la GPL "
+"riduce il numero di programmi che possono essere costruiti usando uno "
+"standard GPL. La GPL intenzionalmente non fornisce un meccanismo per "
+"sviluppare uno standard sul quale si possano sviluppare prodotti "
+"proprietari. (Ciò non si applica alle applicazioni Linux perché non si "
+"collegano staticamente al kernel, bensì usano un'API trap-based.)"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:359
@@ -627,6 +783,15 @@ msgid ""
 "are definitely considered potential problems by many embedded systems "
 "companies."
 msgstr ""
+"La GPL cerca di portare i programmatori a contribuire ad una suite di "
+"programmi in evoluzione, quindi di competere nella distribuzione e nel "
+"supporto di questa suite. Questa situazione è irrealistica per molti "
+"standard di sistema di base richiesti,, che potrebbero essere applicati in "
+"ambienti ampiamente variabili richiedenti personalizzazioni commerciali o "
+"integrazioni con standard legacy sottoposti a licenze già esistenti (non GPL)"
+". Sistemi in tempo reale sono spesso collegati staticamente, quindi la GPL e "
+"la LGPL sono decisamente considerate potenziali problemi da molte aziende di "
+"sistemi integrati."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:369
@@ -636,6 +801,10 @@ msgid ""
 "developers, at an unknown cost to those who would benefit from wider "
 "distribution."
 msgstr ""
+"La GPL è un tentativo di mantenere gli sforzi, senza riguardo per la "
+"domanda, ai livelli della ricerca e dello sviluppo. Questo massimizza i "
+"benefici per i ricercatori e gli sviluppatori, ad un costo ignoto per coloro "
+"che guadagnerebbero da una distribuzione più ampia."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:374
@@ -645,11 +814,16 @@ msgid ""
 "traditional technology transfer pipeline and it is usually difficult enough "
 "under the best of circumstances; the GPL was intended to make it impossible."
 msgstr ""
+"La GPL è stata progettata per impedire che i risultati di ricerca "
+"diventassero prodotti proprietari. Si suppone spesso che questo passo sia "
+"l'ultimo nel processo tradizionale di trasferimento tecnologico ed è "
+"solitamente abbastanza difficile nelle migliori delle circostanze; la GPL lo "
+"rende intenzionalmente impossibile."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:383
 msgid "BSD Advantages"
-msgstr ""
+msgstr "Vantaggi di BSD"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:385
@@ -657,16 +831,18 @@ msgid ""
 "A BSD style license is a good choice for long duration research or other "
 "projects that need a development environment that:"
 msgstr ""
+"Una licenza in stile BSD è una buona scelta per ricerche di lunga durata o "
+"altri progetti che necessitano di un ambiente di sviluppo tale che:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:391
 msgid "has near zero cost"
-msgstr ""
+msgstr "abbia costi quasi nulli"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:392
 msgid "will evolve over a long period of time"
-msgstr ""
+msgstr "evolva in un lungo periodo di tempo"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:394
@@ -674,6 +850,8 @@ msgid ""
 "permits anyone to retain the option of commercializing final results with "
 "minimal legal issues."
 msgstr ""
+"permetta a chiunque di mantenere la possibilità di commercializzare i "
+"risultati finali con problemi legali minimi."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:399
@@ -681,6 +859,8 @@ msgid ""
 "This final consideration may often be the dominant one, as it was when the "
 "Apache project decided upon its license:"
 msgstr ""
+"Quest'ultima considerazione può essere spesso quella dominante, come fu il "
+"caso quando il progetto Apache decise la sua licenza:"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:402
@@ -696,6 +876,18 @@ msgid ""
 "participants realize greater value by contributing their code to the "
 "project, even code that would have had value if kept proprietary.</quote>"
 msgstr ""
+"<quote>Questo tipo di licenza è ideale per promuovere l'uso di un codice di "
+"riferimento che implementi un protocollo per un servizio comune. Questa è "
+"un'altra ragione per cui l'abbiamo scelto per il gruppo Apache - molti di "
+"noi volevano vedere HTTP sopravvivere e diventare un vero standard comune e "
+"non si sarebbero preoccupati minimamente se Microsoft o Netscape avessero "
+"scelto di incorporare il nostro motore HTTP o qualsiasi altra componente del "
+"nostro codice nei loro prodotti, se fosse stato ulteriormente utile allo "
+"scopo di mantenere HTTP comune... Tutto ciò significa che, strategicamente "
+"parlando, il progetto necessita di mantenere slancio sufficiente e che i "
+"partecipanti realizzano valore maggiore condividendo il loro codice col "
+"progetto, anche quel codice che avrebbe avuto valore se mantenuto "
+"proprietario.</quote>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:415
@@ -710,6 +902,16 @@ msgid ""
 "potentially \"burying\" or orphaning the software. If you want to force your "
 "competitors to help you, the GPL is attractive."
 msgstr ""
+"I programmatori tendono a trovare la licenza BSD vantaggiosa per il fatto "
+"che tiene i problemi legali fuori dai piedi e lascia loro fare ciò che "
+"vogliono con il codice. Al contrario, coloro che contano principalmente di "
+"utilizzare un sistema piuttosto che di programmarlo, o contano che altri "
+"facciano evolvere il codice, o coloro che non contano di vivere del loro "
+"lavoro associato al sistema (quali gli impiegati di governi), trovano la GPL "
+"vantaggiosa, perché fa sì che il codice sviluppato da altri sia loro "
+"restituito e impedisce il loro datore di lavoro di mantenere il copyright e "
+"così potenzialmente di \"seppellire\" il software o di renderlo orfano. Se "
+"si desidera costringere i concorrenti ad aiutare, la GPL è vantaggiosa."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:427
@@ -727,6 +929,19 @@ msgid ""
 "they will be. A BSD license is essentially a minimally complicated license "
 "that enables such behavior."
 msgstr ""
+"Una licenza BSD non è semplicemente un regalo. La domanda <quote>perché "
+"dovremmo aiutare i nostri concorrenti o lasciarli rubare il nostro "
+"lavoro?</quote> sorge spesso riguardo ad una licenza BSD. Secondo la licenza "
+"BSD, se un'azienda è venuta a dominare una nicchia di mercato che altri "
+"consideravano strategica, le altre aziende possono, con uno sforzo minimo, "
+"formare un mini-consorzio mirato a riequilibrare le parti contribuendo ad "
+"una variante BSD competitiva che aumenta la concorrenza di mercato e "
+"l'equità. Ciò permette ad ogni azienda di ritenere che sarà in grado di "
+"trarre profitto da un qualche vantaggio che è capace di fornire, nonché di "
+"contribuire alla flessibilità e all'efficienza economica. Più rapidamente e "
+"facilmente i membri cooperanti sono in grado di attuare ciò, più successo "
+"conseguiranno. Una licenza BSD è essenzialmente un licenza complicata il "
+"minimo che consente tale comportamento."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:442
