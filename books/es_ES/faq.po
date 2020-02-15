@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-01-12 18:36-0300\n"
+"POT-Creation-Date: 2020-02-15 15:52-0300\n"
 "PO-Revision-Date: 2019-08-25 09:23+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: \n"
@@ -256,8 +256,8 @@ msgstr ""
 #| "$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 52666 2018-12-11 "
 #| "18:49:03Z gjb $"
 msgid ""
-"$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 53758 2020-01-05 08:36:43Z "
-"eadler $"
+"$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 53876 2020-02-06 22:04:15Z "
+"carlavilla $"
 msgstr "$FreeBSD$"
 
 #. (itstool) path: abstract/para
@@ -1761,10 +1761,16 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1027
+#, fuzzy
+#| msgid ""
+#| "Channel <literal>#FreeBSD</literal> on <link xlink:href=\"http://www."
+#| "rusnet.org.ru/\">RUSNET</link> is a Russian language channel dedicated to "
+#| "helping FreeBSD users. This is also good place for non-technical "
+#| "discussions."
 msgid ""
 "Channel <literal>#FreeBSD</literal> on <link xlink:href=\"http://www.rusnet."
 "org.ru/\">RUSNET</link> is a Russian language channel dedicated to helping "
-"FreeBSD users. This is also good place for non-technical discussions."
+"FreeBSD users. This is also a good place for non-technical discussions."
 msgstr ""
 "El canal <literal>#FreeBSD</literal> en <link xlink:href=\"http://www.rusnet."
 "org.ru/\">RUSNET</link> es un canal en ruso dedicado a ayudar usuarios de "
@@ -1772,11 +1778,17 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1034
+#, fuzzy
+#| msgid ""
+#| "Channel <literal>#bsdchat</literal> on <link xlink:href=\"http://freenode."
+#| "net/\">Freenode</link> is a Traditional Chinese (UTF-8 encoding) language "
+#| "channel dedicated to helping FreeBSD users. This is also good place for "
+#| "non-technical discussions."
 msgid ""
 "Channel <literal>#bsdchat</literal> on <link xlink:href=\"http://freenode."
 "net/\">Freenode</link> is a Traditional Chinese (UTF-8 encoding) language "
-"channel dedicated to helping FreeBSD users. This is also good place for non-"
-"technical discussions."
+"channel dedicated to helping FreeBSD users. This is also a good place for "
+"non-technical discussions."
 msgstr ""
 "El canal <literal>#bsdchat</literal> en <link xlink:href=\"http://freenode."
 "net/\">Freenode</link> es un canal en chino tradicional (codificación UTF-8) "
@@ -2406,12 +2418,19 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1415
+#, fuzzy
+#| msgid ""
+#| "Before purchasing a laptop, check the archives for <link xlink:href="
+#| "\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-mobile\">FreeBSD "
+#| "laptop computer mailing list</link> and <link xlink:href=\"http://lists."
+#| "FreeBSD.org/mailman/listinfo/freebsd-questions\">FreeBSD general "
+#| "questions mailing list</link>, or possibly a specific mailing list for a "
+#| "particular hardware type."
 msgid ""
 "Before purchasing a laptop, check the archives for <link xlink:href=\"http://"
-"lists.FreeBSD.org/mailman/listinfo/freebsd-mobile\">FreeBSD laptop computer "
-"mailing list</link> and <link xlink:href=\"http://lists.FreeBSD.org/mailman/"
-"listinfo/freebsd-questions\">FreeBSD general questions mailing list</link>, "
-"or possibly a specific mailing list for a particular hardware type."
+"lists.FreeBSD.org/mailman/listinfo/freebsd-questions\">FreeBSD general "
+"questions mailing list</link>, or possibly a specific mailing list for a "
+"particular hardware type."
 msgstr ""
 "Antes de comprarse una laptop, verifique los archivos de la <link xlink:href="
 "\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-mobile\">lista de corroe "
@@ -2694,8 +2713,16 @@ msgstr "¿Es posible usar un ratón por fuera del sistema X Window?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1596
+#, fuzzy
+#| msgid ""
+#| "The default console driver, <citerefentry><refentrytitle>syscons</"
+#| "refentrytitle><manvolnum>4</manvolnum></citerefentry>, provides the "
+#| "ability to use a mouse pointer in text consoles to cut &amp; paste text. "
+#| "Run the mouse daemon, <citerefentry><refentrytitle>moused</"
+#| "refentrytitle><manvolnum>8</manvolnum></citerefentry>, and turn on the "
+#| "mouse pointer in the virtual console:"
 msgid ""
-"The default console driver, <citerefentry><refentrytitle>syscons</"
+"The default console driver, <citerefentry><refentrytitle>vt</"
 "refentrytitle><manvolnum>4</manvolnum></citerefentry>, provides the ability "
 "to use a mouse pointer in text consoles to cut &amp; paste text. Run the "
 "mouse daemon, <citerefentry><refentrytitle>moused</"
@@ -3903,10 +3930,16 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2265
+#, fuzzy
+#| msgid ""
+#| "Most ports should work on all supported versions of FreeBSD. Those that "
+#| "do not are specifically marked as such. Each time a FreeBSD release is "
+#| "made, a snapshot of the ports tree at the time of release in also "
+#| "included in the <filename>ports/</filename> directory."
 msgid ""
 "Most ports should work on all supported versions of FreeBSD. Those that do "
 "not are specifically marked as such. Each time a FreeBSD release is made, a "
-"snapshot of the ports tree at the time of release in also included in the "
+"snapshot of the ports tree at the time of release is also included in the "
 "<filename>ports/</filename> directory."
 msgstr ""
 "La mayoría de los ports deberían funcionar en todas las version soportadas "
@@ -4921,7 +4954,7 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #. (itstool) path: chapter/title
-#: book.translate.xml:2849 book.translate.xml:3260
+#: book.translate.xml:2849 book.translate.xml:3259
 msgid "ZFS"
 msgstr "ZFS"
 
@@ -5056,10 +5089,15 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2931
+#, fuzzy
+#| msgid ""
+#| "Install LILO at the start of the <trademark class=\"registered\">Linux</"
+#| "trademark> boot partition instead of in the Master Boot Record. You can "
+#| "then boot LILO from <application>BootEasy</application>."
 msgid ""
 "Install LILO at the start of the <trademark class=\"registered\">Linux</"
-"trademark> boot partition instead of in the Master Boot Record. You can then "
-"boot LILO from <application>BootEasy</application>."
+"trademark> boot partition instead of in the Master Boot Record. Then boot "
+"LILO from <application>BootEasy</application>."
 msgstr ""
 "Instale LILO al inicio de la partición de arranque de <trademark class="
 "\"registered\">Linux</trademark> en lugar de en el Registro de Arranque "
@@ -5067,7 +5105,7 @@ msgstr ""
 "application>."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:2936
+#: book.translate.xml:2935
 msgid ""
 "This is recommended when running <trademark class=\"registered\">Windows</"
 "trademark> and <trademark class=\"registered\">Linux</trademark> as it makes "
@@ -5081,7 +5119,7 @@ msgstr ""
 "trademark> es reinstalado."
 
 #. (itstool) path: question/para
-#: book.translate.xml:2944
+#: book.translate.xml:2943
 msgid ""
 "How do I change the boot prompt from <literal>???</literal> to something "
 "more meaningful?"
@@ -5090,7 +5128,7 @@ msgstr ""
 "tenga más sentido?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:2950
+#: book.translate.xml:2949
 msgid ""
 "This cannot be accomplished with the standard boot manager without rewriting "
 "it. There are a number of other boot managers in the <filename>sysutils</"
@@ -5101,24 +5139,24 @@ msgstr ""
 "<filename>sysutils</filename> de la colección de ports."
 
 #. (itstool) path: question/para
-#: book.translate.xml:2959
+#: book.translate.xml:2958
 msgid "How do I use a new removable drive?"
 msgstr "¿Como utilizo un nuevo disco removible?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:2963
+#: book.translate.xml:2962
 msgid "If the drive already has a file system on it, use a command like this:"
 msgstr ""
 "Si el disco ya tiene un sistema de archivos en el, use un comando como este:"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:2966
+#: book.translate.xml:2965
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>mount -t msdosfs /dev/da0s1 /mnt</userinput>"
 msgstr "<prompt>#</prompt> <userinput>mount -t msdosfs /dev/da0s1 /mnt</userinput>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:2968
+#: book.translate.xml:2967
 msgid ""
 "If the drive will only be used with FreeBSD systems, partition it with "
 "<acronym>UFS</acronym> or <acronym>ZFS</acronym>. This will provide long "
@@ -5133,7 +5171,7 @@ msgstr ""
 "como msdosfs, es preferible."
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:2975
+#: book.translate.xml:2974
 #, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>dd if=/dev/zero of=/dev/da0 count=2</userinput>\n"
@@ -5145,29 +5183,29 @@ msgstr ""
 "<prompt>#</prompt> <userinput>gpart add -t freebsd-ufs /dev/da0</userinput>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:2979
+#: book.translate.xml:2978
 msgid "Finally, create a new file system:"
 msgstr "Finalmente, cree un nuevo sistema de archivos:"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:2981
+#: book.translate.xml:2980
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>newfs /dev/da0p1</userinput>"
 msgstr "<prompt>#</prompt> <userinput>newfs /dev/da0p1</userinput>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:2983
+#: book.translate.xml:2982
 msgid "and mount it:"
 msgstr "y móntelo:"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:2985
+#: book.translate.xml:2984
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>mount /dev/da0s1 /mnt</userinput>"
 msgstr "<prompt>#</prompt> <userinput>mount /dev/da0s1 /mnt</userinput>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:2987
+#: book.translate.xml:2986
 msgid ""
 "It is a good idea to add a line to <filename>/etc/fstab</filename> (see "
 "<citerefentry><refentrytitle>fstab</refentrytitle><manvolnum>5</manvolnum></"
@@ -5180,13 +5218,13 @@ msgstr ""
 "command> en el futuro:"
 
 #. (itstool) path: answer/programlisting
-#: book.translate.xml:2992
+#: book.translate.xml:2991
 #, no-wrap
 msgid "/dev/da0p1 /mnt ufs rw,noauto 0 0"
 msgstr "/dev/da0p1 /mnt ufs rw,noauto 0 0"
 
 #. (itstool) path: question/para
-#: book.translate.xml:2998
+#: book.translate.xml:2997
 msgid ""
 "Why do I get <errorname>Incorrect super block</errorname> when mounting a CD?"
 msgstr ""
@@ -5194,7 +5232,7 @@ msgstr ""
 "CD?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3003
+#: book.translate.xml:3002
 msgid ""
 "The type of device to mount must be specified. This is described in the "
 "Handbook section on <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/"
@@ -5206,7 +5244,7 @@ msgstr ""
 "datos</link>."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3011
+#: book.translate.xml:3010
 msgid ""
 "Why do I get <errorname>Device not configured</errorname> when mounting a CD?"
 msgstr ""
@@ -5214,7 +5252,7 @@ msgstr ""
 "CD?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3016
+#: book.translate.xml:3015
 msgid ""
 "This generally means that there is no CD in the drive, or the drive is not "
 "visible on the bus. Refer to the <link xlink:href=\"@@URL_RELPREFIX@@/doc/"
@@ -5228,7 +5266,7 @@ msgstr ""
 "detallada de este problema."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3026
+#: book.translate.xml:3025
 msgid ""
 "Why do all non-English characters in filenames show up as <quote>?</quote> "
 "on my CDs when mounted in FreeBSD?"
@@ -5237,7 +5275,7 @@ msgstr ""
 "muestran como  <quote>?</quote> en mis CDs cuando los monto en FreeBSD?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3031
+#: book.translate.xml:3030
 msgid ""
 "The CD probably uses the <quote>Joliet</quote> extension for storing "
 "information about files and directories. This is discussed in the Handbook "
@@ -5250,7 +5288,7 @@ msgstr ""
 "handbook/creating-cds.html#mounting-cd\">Usando CDs de datos</link>."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3041
+#: book.translate.xml:3040
 msgid ""
 "A CD burned under FreeBSD cannot be read under any other operating system. "
 "Why?"
@@ -5259,7 +5297,7 @@ msgstr ""
 "operativo. ¿Porque?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3046
+#: book.translate.xml:3045
 msgid ""
 "This means a raw file was burned to the CD, rather than creating an ISO 9660 "
 "file system. Take a look at the Handbook section on <link xlink:href="
@@ -5273,12 +5311,12 @@ msgstr ""
 "link>."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3055
+#: book.translate.xml:3054
 msgid "How can I create an image of a data CD?"
 msgstr "¿Como puedo crear una imagen de un CD de datos?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3059
+#: book.translate.xml:3058
 msgid ""
 "This is discussed in the Handbook section on <link xlink:href="
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/creating-cds."
@@ -5296,12 +5334,12 @@ msgstr ""
 "almacenamiento en el manual."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3069
+#: book.translate.xml:3068
 msgid "Why can I not <command>mount</command> an audio CD?"
 msgstr "¿Porque no puedo hacer <command>mount</command> a un CD de audio?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3074
+#: book.translate.xml:3073
 #, fuzzy
 msgid ""
 "Trying to mount an audio CD will produce an error like <errorname>cd9660: /"
@@ -5318,12 +5356,12 @@ msgstr ""
 "package>."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3086
+#: book.translate.xml:3085
 msgid "How do I <command>mount</command> a multi-session CD?"
 msgstr "¿Como hago <command>mount</command> a un CD multi-sesión?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3091
+#: book.translate.xml:3090
 msgid ""
 "By default, <citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> will attempt to mount the last data track "
@@ -5339,7 +5377,7 @@ msgstr ""
 "específicos."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3101
+#: book.translate.xml:3100
 msgid ""
 "How do I let ordinary users mount CD-ROMs, DVDs, USB drives, and other "
 "removable media?"
@@ -5348,7 +5386,7 @@ msgstr ""
 "dispositivos USB, y otros medios removibles?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3106
+#: book.translate.xml:3105
 msgid ""
 "As <systemitem class=\"username\">root</systemitem> set the sysctl variable "
 "<varname>vfs.usermount</varname> to <literal>1</literal>."
@@ -5357,13 +5395,13 @@ msgstr ""
 "sysctl <varname>vfs.usermount</varname> a <literal>1</literal>."
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:3110
+#: book.translate.xml:3109
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>sysctl vfs.usermount=1</userinput>"
 msgstr "<prompt>#</prompt> <userinput>sysctl vfs.usermount=1</userinput>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3112
+#: book.translate.xml:3111
 msgid ""
 "To make this persist across reboots, add the line <literal>vfs.usermount=1</"
 "literal> to <filename>/etc/sysctl.conf</filename> so that it is reset at "
@@ -5374,7 +5412,7 @@ msgstr ""
 "vuelva a ajustar al inicio del sistema."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3117
+#: book.translate.xml:3116
 msgid ""
 "Users can only mount devices they have read permissions to. To allow users "
 "to mount a device permissions must be set in <filename>/etc/devfs.conf</"
@@ -5385,14 +5423,14 @@ msgstr ""
 "establecerse en <filename>/etc/devfs.conf</filename>."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3122
+#: book.translate.xml:3121
 msgid "For example, to allow users to mount the first USB drive add:"
 msgstr ""
 "Por ejemplo, para permitir a los usuarios montar el primer dispositivo de "
 "USB añada:"
 
 #. (itstool) path: answer/programlisting
-#: book.translate.xml:3125
+#: book.translate.xml:3124
 #, no-wrap
 msgid ""
 "# Allow all users to mount a USB drive.\n"
@@ -5404,7 +5442,7 @@ msgstr ""
 "\t    perm      /dev/da0       0666"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3129
+#: book.translate.xml:3128
 msgid ""
 "All users can now mount devices they could read onto a directory that they "
 "own:"
@@ -5413,7 +5451,7 @@ msgstr ""
 "directorio propio:"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:3132
+#: book.translate.xml:3131
 #, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>mkdir ~/my-mount-point</userinput>\n"
@@ -5423,18 +5461,18 @@ msgstr ""
 "<prompt>%</prompt> <userinput>mount -t msdosfs /dev/da0 ~/my-mount-point</userinput>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3135
+#: book.translate.xml:3134
 msgid "Unmounting the device is simple:"
 msgstr "Desmontar el dispositivo es fácil:"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:3137
+#: book.translate.xml:3136
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>umount ~/my-mount-point</userinput>"
 msgstr "<prompt>%</prompt> <userinput>umount ~/my-mount-point</userinput>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3139
+#: book.translate.xml:3138
 msgid ""
 "Enabling <varname>vfs.usermount</varname>, however, has negative security "
 "implications. A better way to access <trademark class=\"registered\">MS-DOS</"
@@ -5447,7 +5485,7 @@ msgstr ""
 "<package>emulators/mtools</package> en la colección de ports."
 
 #. (itstool) path: note/para
-#: book.translate.xml:3146
+#: book.translate.xml:3145
 msgid ""
 "The device name used in the previous examples must be changed according to "
 "the configuration."
@@ -5456,7 +5494,7 @@ msgstr ""
 "de acuerdo a la configuración."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3154
+#: book.translate.xml:3153
 msgid ""
 "The <command>du</command> and <command>df</command> commands show different "
 "amounts of disk space available. What is going on?"
@@ -5465,7 +5503,7 @@ msgstr ""
 "diferentes cantidades de espacio en disco disponible. ¿Qué esta pasando?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3160
+#: book.translate.xml:3159
 msgid ""
 "This is due to how these commands actually work. <command>du</command> goes "
 "through the directory tree, measures how large each file is, and presents "
@@ -5481,7 +5519,7 @@ msgstr ""
 "<command>df</command> pero no a <command>du</command>."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3169
+#: book.translate.xml:3168
 msgid ""
 "When a program is using a file, and the file is deleted, the file is not "
 "really removed from the file system until the program stops using it. The "
@@ -5512,7 +5550,7 @@ msgstr ""
 "<command>df</command> estarán de acuerdo."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3189
+#: book.translate.xml:3188
 msgid ""
 "This situation is common on web servers. Many people set up a FreeBSD web "
 "server and forget to rotate the log files. The access log fills up "
@@ -5533,7 +5571,7 @@ msgstr ""
 "manvolnum></citerefentry>."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3198
+#: book.translate.xml:3197
 msgid ""
 "Note that Soft Updates can delay the freeing of disk space and it can take "
 "up to 30 seconds for the change to be visible."
@@ -5542,12 +5580,12 @@ msgstr ""
 "que puede tomar hasta 30 segundos para que el cambio sea visible."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3206
+#: book.translate.xml:3205
 msgid "How can I add more swap space?"
 msgstr "¿Como agrego más espacio swap?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3210
+#: book.translate.xml:3209
 msgid ""
 "This section <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
 "handbook/adding-swap-space.html\">of the Handbook</link> describes how to do "
@@ -5557,7 +5595,7 @@ msgstr ""
 "handbook/adding-swap-space.html\">del manual</link> describe como hacer esto."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3217
+#: book.translate.xml:3216
 msgid ""
 "Why does FreeBSD see my disk as smaller than the manufacturer says it is?"
 msgstr ""
@@ -5565,7 +5603,7 @@ msgstr ""
 "que es?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3222
+#: book.translate.xml:3221
 msgid ""
 "Disk manufacturers calculate gigabytes as a billion bytes each, whereas "
 "FreeBSD calculates them as 1,073,741,824 bytes each. This explains why, for "
@@ -5578,7 +5616,7 @@ msgstr ""
 "reportan un disco que se supone que tenga 80 GB como si tuviera 76,319 MB."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3229
+#: book.translate.xml:3228
 msgid ""
 "Also note that FreeBSD will (by default) <link linkend=\"disk-more-than-full"
 "\">reserve</link> 8% of the disk space."
@@ -5587,12 +5625,12 @@ msgstr ""
 "\">reserva</link> 8% de espacio del disco."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3236
+#: book.translate.xml:3235
 msgid "How is it possible for a partition to be more than 100% full?"
 msgstr "¿Como es posible para una partición estar más del 100% llena?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3241
+#: book.translate.xml:3240
 msgid ""
 "A portion of each UFS partition (8%, by default) is reserved for use by the "
 "operating system and the <systemitem class=\"username\">root</systemitem> "
@@ -5614,7 +5652,7 @@ msgstr ""
 "un factor del 8%."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3251
+#: book.translate.xml:3250
 msgid ""
 "For more details, look up <option>-m</option> in "
 "<citerefentry><refentrytitle>tunefs</refentrytitle><manvolnum>8</manvolnum></"
@@ -5625,12 +5663,12 @@ msgstr ""
 "citerefentry>."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3265
+#: book.translate.xml:3264
 msgid "What is the minimum amount of RAM one should have to run ZFS?"
 msgstr "¿Cuál es la cantidad mínima de RAM necesaria para correr ZFS?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3270
+#: book.translate.xml:3269
 msgid ""
 "A minimum of 4GB of RAM is required for comfortable usage, but individual "
 "workloads can vary widely."
@@ -5639,12 +5677,12 @@ msgstr ""
 "trabajo individual puede variar ampliamente."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3277
+#: book.translate.xml:3276
 msgid "What is the ZIL and when does it get used?"
 msgstr "¿Qué es el ZIL y cuando se usa?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3281
+#: book.translate.xml:3280
 msgid ""
 "The <acronym>ZIL</acronym> (<acronym>ZFS</acronym> intent log) is a write "
 "log used to implement posix write commitment semantics across crashes. "
@@ -5671,12 +5709,12 @@ msgstr ""
 "encontrada y los datos faltantes se combinan desde el ZIL."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3299
+#: book.translate.xml:3298
 msgid "Do I need a SSD for ZIL?"
 msgstr "¿Necesito un SSD para el ZIL?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3303
+#: book.translate.xml:3302
 #, fuzzy
 #| msgid ""
 #| "By default, ZFS stores the ZIL in the pool with all the data. If an "
@@ -5698,12 +5736,12 @@ msgstr ""
 "cargas, es poco probable que un SSD represente una gran mejora."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3314
+#: book.translate.xml:3313
 msgid "What is the L2ARC?"
 msgstr "¿Qué es el L2ARC?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3318
+#: book.translate.xml:3317
 msgid ""
 "The <acronym>L2ARC</acronym> is a read cache stored on a fast device such as "
 "an <acronym>SSD</acronym>. This cache is not persistent across reboots. Note "
@@ -5716,7 +5754,7 @@ msgstr ""
 "cache  y el L2ARC solo es necesitado si hay RAM insuficiente."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3324
+#: book.translate.xml:3323
 msgid ""
 "L2ARC needs space in the ARC to index it. So, perversely, a working set that "
 "fits perfectly in the ARC will not fit perfectly any more if a L2ARC is used "
@@ -5730,17 +5768,17 @@ msgstr ""
 "más lento que la memoria RAM."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3335
+#: book.translate.xml:3334
 msgid "Is enabling deduplication advisable?"
 msgstr "¿Es aconsejable habilitar deduplicación?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3339
+#: book.translate.xml:3338
 msgid "Generally speaking, no."
 msgstr "Generalmente hablando, no."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3341
+#: book.translate.xml:3340
 msgid ""
 "Deduplication takes up a significant amount of RAM and may slow down read "
 "and write disk access times. Unless one is storing data that is very heavily "
@@ -5760,7 +5798,7 @@ msgstr ""
 "deduplicados se repliquen hasta que estos vuelvan a ser modificados."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3352
+#: book.translate.xml:3351
 msgid ""
 "Deduplication can also lead to some unexpected situations. In particular, "
 "deleting files may become much slower."
@@ -5769,14 +5807,14 @@ msgstr ""
 "borrar archivos puede volverse mucho más lento."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3360
+#: book.translate.xml:3359
 msgid "I cannot delete or create files on my ZFS pool. How can I fix this?"
 msgstr ""
 "No puedo borrar ni crear archivos en mi pool de ZFS. ¿Como puedo arreglar "
 "esto?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3365
+#: book.translate.xml:3364
 msgid ""
 "This could happen because the pool is 100% full. ZFS requires space on the "
 "disk to write transaction metadata. To restore the pool to a usable state, "
@@ -5787,13 +5825,13 @@ msgstr ""
 "a un estado usable, trunque el archivo a borrar:"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:3370
+#: book.translate.xml:3369
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>truncate -s 0 unimportant-file</userinput>"
 msgstr "<prompt>%</prompt> <userinput>truncate -s 0 archivo-sin-importancia</userinput>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3372
+#: book.translate.xml:3371
 msgid ""
 "File truncation works because a new transaction is not started, new spare "
 "blocks are created instead."
@@ -5802,7 +5840,7 @@ msgstr ""
 "transacción, en su lugar se crean nuevos bloques de repuesto."
 
 #. (itstool) path: note/para
-#: book.translate.xml:3376
+#: book.translate.xml:3375
 msgid ""
 "On systems with additional ZFS dataset tuning, such as deduplication, the "
 "space may not be immediately available"
@@ -5811,12 +5849,12 @@ msgstr ""
 "deduplicación, el espacio puede no estar inmediatamente disponible."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3385
+#: book.translate.xml:3384
 msgid "Does ZFS support TRIM for Solid State Drives?"
 msgstr "¿Soporta ZFS TRIM para discos de estado sólido?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3389
+#: book.translate.xml:3388
 msgid ""
 "ZFS TRIM support was added to FreeBSD 10-CURRENT with revision "
 "r<revnumber>240868</revnumber>. ZFS TRIM support was added to all FreeBSD-"
@@ -5829,7 +5867,7 @@ msgstr ""
 "r<revnumber>251419</revnumber>, respectivamente."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3395
+#: book.translate.xml:3394
 msgid ""
 "ZFS TRIM is enabled by default, and can be turned off by adding this line to "
 "<filename>/etc/sysctl.conf</filename>:"
@@ -5838,13 +5876,13 @@ msgstr ""
 "esta línea a <filename>/etc/sysctl.conf</filename>:"
 
 #. (itstool) path: answer/programlisting
-#: book.translate.xml:3399
+#: book.translate.xml:3398
 #, fuzzy, no-wrap
 msgid "vfs.zfs.trim.enabled=0"
 msgstr "vfs.zfs.trim_disable=1"
 
 #. (itstool) path: note/para
-#: book.translate.xml:3402
+#: book.translate.xml:3401
 msgid ""
 "ZFS TRIM may not work with all configurations, such as a ZFS filesystem on a "
 "GELI-backed device."
@@ -5853,18 +5891,18 @@ msgstr ""
 "sistema de archivos ZFS en un dispositivo respaldado con GELI."
 
 #. (itstool) path: chapter/title
-#: book.translate.xml:3411
+#: book.translate.xml:3410
 msgid "System Administration"
 msgstr "Administración del sistema"
 
 #. (itstool) path: question/para
-#: book.translate.xml:3416
+#: book.translate.xml:3415
 msgid "Where are the system start-up configuration files?"
 msgstr ""
 "¿Cuáles son los archivos de configuración para el arranque del sistema?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3421
+#: book.translate.xml:3420
 msgid ""
 "The primary configuration file is <filename>/etc/defaults/rc.conf</filename> "
 "which is described in <citerefentry><refentrytitle>rc.conf</"
@@ -5888,7 +5926,7 @@ msgstr ""
 "cámbiela allí."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3432
+#: book.translate.xml:3431
 msgid ""
 "For example, if to start <citerefentry><refentrytitle>named</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>, the included DNS "
@@ -5899,13 +5937,13 @@ msgstr ""
 "incluido"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:3435
+#: book.translate.xml:3434
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>echo 'named_enable=\"YES\"' &gt;&gt; /etc/rc.conf</userinput>"
 msgstr "<prompt>#</prompt> <userinput>echo 'named_enable=\"YES\"' &gt;&gt; /etc/rc.conf</userinput>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3437
+#: book.translate.xml:3436
 msgid ""
 "To start up local services, place shell scripts in the <filename>/usr/local/"
 "etc/rc.d</filename> directory. These shell scripts should be set executable, "
@@ -5917,12 +5955,12 @@ msgstr ""
 "literal>."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3446
+#: book.translate.xml:3445
 msgid "How do I add a user easily?"
 msgstr "¿Como agrego fácilmente un usuario?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3450
+#: book.translate.xml:3449
 msgid ""
 "Use the <citerefentry><refentrytitle>adduser</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> command, or the <citerefentry><refentrytitle>pw</"
@@ -5935,7 +5973,7 @@ msgstr ""
 "citerefentry> para situaciones más complicadas."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3453
+#: book.translate.xml:3452
 msgid ""
 "To remove the user, use the <citerefentry><refentrytitle>rmuser</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> command or, if "
@@ -5948,7 +5986,7 @@ msgstr ""
 "citerefentry>."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3460
+#: book.translate.xml:3459
 msgid ""
 "Why do I keep getting messages like <errorname>root: not found</errorname> "
 "after editing <filename>/etc/crontab</filename>?"
@@ -5957,7 +5995,7 @@ msgstr ""
 "found</errorname> luego de editar <filename>/etc/crontab</filename>?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3466
+#: book.translate.xml:3465
 msgid ""
 "This is normally caused by editing the system crontab. This is not the "
 "correct way to do things as the system crontab has a different format to the "
@@ -5977,18 +6015,18 @@ msgstr ""
 "error."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3475
+#: book.translate.xml:3474
 msgid "To delete the extra, incorrect crontab:"
 msgstr "Para borrar el contrab extra e incorrecto:"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:3477
+#: book.translate.xml:3476
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>crontab -r</userinput>"
 msgstr "<prompt>#</prompt> <userinput>crontab -r</userinput>"
 
 #. (itstool) path: question/para
-#: book.translate.xml:3483
+#: book.translate.xml:3482
 msgid ""
 "Why do I get the error, <errorname>you are not in the correct group to su "
 "root</errorname> when I try to <command>su</command> to <systemitem class="
@@ -5999,7 +6037,7 @@ msgstr ""
 "class=\"username\">root</systemitem>?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3489
+#: book.translate.xml:3488
 msgid ""
 "This is a security feature. In order to <command>su</command> to <systemitem "
 "class=\"username\">root</systemitem>, or any other account with superuser "
@@ -6018,7 +6056,7 @@ msgstr ""
 "systemitem> podría ganar acceso de superusuario al sistema."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3499
+#: book.translate.xml:3498
 msgid ""
 "To allow someone to <command>su</command> to <systemitem class=\"username"
 "\">root</systemitem>, put them in the <systemitem class=\"groupname\">wheel</"
@@ -6029,13 +6067,13 @@ msgstr ""
 "\"groupname\">wheel</systemitem> usando <command>pw</command>:"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:3504
+#: book.translate.xml:3503
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>pw groupmod wheel -m lisa</userinput>"
 msgstr "<prompt>#</prompt> <userinput>pw groupmod wheel -m lisa</userinput>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3506
+#: book.translate.xml:3505
 msgid ""
 "The above example will add user <systemitem class=\"username\">lisa</"
 "systemitem> to the group <systemitem class=\"groupname\">wheel</systemitem>."
@@ -6044,7 +6082,7 @@ msgstr ""
 "systemitem> al grupo <systemitem class=\"groupname\">wheel</systemitem>."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3513
+#: book.translate.xml:3512
 msgid ""
 "I made a mistake in <filename>rc.conf</filename>, or another startup file, "
 "and now I cannot edit it because the file system is read-only. What should I "
@@ -6055,7 +6093,7 @@ msgstr ""
 "¿Qué debo hacer?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3519
+#: book.translate.xml:3518
 msgid ""
 "Restart the system using <userinput>boot -s</userinput> at the loader prompt "
 "to enter single-user mode. When prompted for a shell pathname, press "
@@ -6081,7 +6119,7 @@ msgstr ""
 "citerefentry>."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3532
+#: book.translate.xml:3531
 #, fuzzy
 msgid ""
 "In order to use a full screen editor such as "
@@ -6102,7 +6140,7 @@ msgstr ""
 "manvolnum></citerefentry>."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3538
+#: book.translate.xml:3537
 msgid ""
 "After performing these steps, edit <filename>/etc/rc.conf</filename> to fix "
 "the syntax error. The error message displayed immediately after the kernel "
@@ -6115,12 +6153,12 @@ msgstr ""
 "que número de línea en el archivo tiene el problema."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3549
+#: book.translate.xml:3548
 msgid "Why am I having trouble setting up my printer?"
 msgstr "¿Por qué tengo problemas para configurar mi impresora?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3553
+#: book.translate.xml:3552
 msgid ""
 "See the <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
 "handbook/printing.html\">Handbook entry on printing</link> for "
@@ -6131,12 +6169,12 @@ msgstr ""
 "consejos sobre como solucionar el problema."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3561
+#: book.translate.xml:3560
 msgid "How can I correct the keyboard mappings for my system?"
 msgstr "¿Como puedo corregir los mapeos del teclado para mi sistema?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3566
+#: book.translate.xml:3565
 msgid ""
 "Refer to the Handbook section on <link xlink:href=\"@@URL_RELPREFIX@@/doc/"
 "en_US.ISO8859-1/books/handbook/using-localization.html\">using localization</"
@@ -6151,12 +6189,12 @@ msgstr ""
 "html#setting-console\">configuración de la consola</link>."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3574
+#: book.translate.xml:3573
 msgid "Why can I not get user quotas to work properly?"
 msgstr "¿Por qué no consigo que las quotas de usuario funcionen adecuadamente?"
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:3580
+#: book.translate.xml:3579
 msgid ""
 "It is possible that the kernel is not configured to use quotas. In this "
 "case, add the following line to the kernel configuration file and recompile "
@@ -6167,13 +6205,13 @@ msgstr ""
 "el kernel:"
 
 #. (itstool) path: listitem/programlisting
-#: book.translate.xml:3585
+#: book.translate.xml:3584
 #, no-wrap
 msgid "options QUOTA"
 msgstr "options QUOTA"
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:3587
+#: book.translate.xml:3586
 msgid ""
 "Refer to the <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
 "handbook/quotas.html\">Handbook entry on quotas</link> for full details."
@@ -6183,12 +6221,12 @@ msgstr ""
 "detalles."
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:3592
+#: book.translate.xml:3591
 msgid "Do not turn on quotas on <filename>/</filename>."
 msgstr "No ponga quotas sobre <filename>/</filename>."
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:3597
+#: book.translate.xml:3596
 msgid ""
 "Put the quota file on the file system that the quotas are to be enforced on:"
 msgstr ""
@@ -6196,47 +6234,47 @@ msgstr ""
 "las quotas:"
 
 #. (itstool) path: row/entry
-#: book.translate.xml:3604
+#: book.translate.xml:3603
 msgid "File System"
 msgstr "Sistema de archivos"
 
 #. (itstool) path: row/entry
-#: book.translate.xml:3606
+#: book.translate.xml:3605
 msgid "Quota file"
 msgstr "Archivo de quota"
 
 #. (itstool) path: row/entry
-#: book.translate.xml:3612
+#: book.translate.xml:3611
 msgid "<filename>/usr</filename>"
 msgstr "<filename>/usr</filename>"
 
 #. (itstool) path: row/entry
-#: book.translate.xml:3614
+#: book.translate.xml:3613
 msgid "<filename>/usr/admin/quotas</filename>"
 msgstr "<filename>/usr/admin/quotas</filename>"
 
 #. (itstool) path: row/entry
-#: book.translate.xml:3618
+#: book.translate.xml:3617
 msgid "<filename>/home</filename>"
 msgstr "<filename>/home</filename>"
 
 #. (itstool) path: row/entry
-#: book.translate.xml:3620
+#: book.translate.xml:3619
 msgid "<filename>/home/admin/quotas</filename>"
 msgstr "<filename>/home/admin/quotas</filename>"
 
 #. (itstool) path: row/entry
-#: book.translate.xml:3624 book.translate.xml:3626
+#: book.translate.xml:3623 book.translate.xml:3625
 msgid "…"
 msgstr "..."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3638
+#: book.translate.xml:3637
 msgid "Does FreeBSD support System V IPC primitives?"
 msgstr "¿Soporta FreeBSD primitivas IPC de SystemV?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3642
+#: book.translate.xml:3641
 msgid ""
 "Yes, FreeBSD supports System V-style IPC, including shared memory, messages "
 "and semaphores, in the <filename>GENERIC</filename> kernel. With a custom "
@@ -6253,7 +6291,7 @@ msgstr ""
 "agregando las siguientes líneas al archivo de configuración del kernel:"
 
 #. (itstool) path: answer/programlisting
-#: book.translate.xml:3652
+#: book.translate.xml:3651
 #, no-wrap
 msgid ""
 "options    SYSVSHM          # enable shared memory\n"
@@ -6265,12 +6303,12 @@ msgstr ""
 "options    SYSVMSG          # enable for messaging"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3656
+#: book.translate.xml:3655
 msgid "Recompile and install the kernel."
 msgstr "Recompile e instale el kernel."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3662
+#: book.translate.xml:3661
 msgid ""
 "What other mail-server software can I use instead of <application>Sendmail</"
 "application>?"
@@ -6279,7 +6317,7 @@ msgstr ""
 "<application>Sendmail</application>?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3667
+#: book.translate.xml:3666
 msgid ""
 "The <link xlink:href=\"http://www.sendmail.org/\"><application>Sendmail</"
 "application></link> server is the default mail-server software for FreeBSD, "
@@ -6297,7 +6335,7 @@ msgstr ""
 "discusiones sobre las ventajas y desventajas de los MTAs disponibles."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3681
+#: book.translate.xml:3680
 msgid ""
 "I have forgotten the <systemitem class=\"username\">root</systemitem> "
 "password! What do I do?"
@@ -6306,7 +6344,7 @@ msgstr ""
 "systemitem>! ¿Qué hago?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3686
+#: book.translate.xml:3685
 msgid ""
 "Do not panic! Restart the system, type <userinput>boot -s</userinput> at the "
 "<literal>Boot:</literal> prompt to enter single-user mode. At the question "
@@ -6331,7 +6369,7 @@ msgstr ""
 "arranque."
 
 #. (itstool) path: note/para
-#: book.translate.xml:3699
+#: book.translate.xml:3698
 msgid ""
 "If you are still prompted to give the <systemitem class=\"username\">root</"
 "systemitem> password when entering the single-user mode, it means that the "
@@ -6356,7 +6394,7 @@ msgstr ""
 "mnt</command> para un sistema en <replaceable>ada0p1</replaceable>."
 
 #. (itstool) path: note/para
-#: book.translate.xml:3716
+#: book.translate.xml:3715
 msgid ""
 "If the root partition cannot be mounted from single-user mode, it is "
 "possible that the partitions are encrypted and it is impossible to mount "
@@ -6372,7 +6410,7 @@ msgstr ""
 "FreeBSD."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3727
+#: book.translate.xml:3726
 msgid ""
 "How do I keep <keycombo action=\"simul\"><keycap>Control</"
 "keycap><keycap>Alt</keycap><keycap>Delete</keycap></keycombo> from rebooting "
@@ -6383,54 +6421,33 @@ msgstr ""
 "sistema?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3732
+#: book.translate.xml:3731
+#, fuzzy
+#| msgid ""
+#| "To remove the user, use the <citerefentry><refentrytitle>rmuser</"
+#| "refentrytitle><manvolnum>8</manvolnum></citerefentry> command or, if "
+#| "necessary, <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</"
+#| "manvolnum></citerefentry>."
 msgid ""
-"When using <citerefentry><refentrytitle>syscons</refentrytitle><manvolnum>4</"
-"manvolnum></citerefentry>, the default console driver, build and install a "
-"new kernel with this line in the configuration file:"
+"When using <citerefentry><refentrytitle>vt</refentrytitle><manvolnum>4</"
+"manvolnum></citerefentry>, the default console driver, this can be done by "
+"setting the following <citerefentry><refentrytitle>sysctl</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>:"
 msgstr ""
-"Cuando use <citerefentry><refentrytitle>syscons</refentrytitle><manvolnum>4</"
-"manvolnum></citerefentry>, el controlador por defecto dela consola, compile "
-"e instale un nuevo kernel con esta línea en el archivo de configuración:"
-
-#. (itstool) path: answer/programlisting
-#: book.translate.xml:3736
-#, no-wrap
-msgid "options SC_DISABLE_REBOOT"
-msgstr "options SC_DISABLE_REBOOT"
-
-#. (itstool) path: answer/para
-#: book.translate.xml:3738
-msgid ""
-"This can also be done by setting the following "
-"<citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></"
-"citerefentry> which does not require a reboot or kernel recompile:"
-msgstr ""
-"Esto también puede hacerse ajustando el siguiente "
-"<citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></"
-"citerefentry> que no requiere un reinicio o una recompilación de kernel:"
+"Para remover el usuario, use el comando <citerefentry><refentrytitle>rmuser</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>o, si es necesario, "
+"<citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>."
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:3742
-#, no-wrap
-msgid "<prompt>#</prompt> <userinput>sysctl hw.syscons.kbd_reboot=0</userinput>"
+#: book.translate.xml:3735
+#, fuzzy, no-wrap
+#| msgid "<prompt>#</prompt> <userinput>sysctl hw.syscons.kbd_reboot=0</userinput>"
+msgid "<prompt>#</prompt> <userinput>sysctl kern.vt.kbd_reboot=0</userinput>"
 msgstr "<prompt>#</prompt> <userinput>sysctl hw.syscons.kbd_reboot=0</userinput>"
 
-#. (itstool) path: note/para
-#: book.translate.xml:3745
-msgid ""
-"The above two methods are exclusive: The "
-"<citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></"
-"citerefentry> does not exist if the kernel is compiled with "
-"<literal>SC_DISABLE_REBOOT</literal>."
-msgstr ""
-"Los dos métodos anteriores son exclusivos: el "
-"<citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></"
-"citerefentry> no existe si el kernel se compila con "
-"<literal>SC_DISABLE_REBOOT</literal>."
-
 #. (itstool) path: question/para
-#: book.translate.xml:3754
+#: book.translate.xml:3741
 msgid ""
 "How do I reformat DOS text files to <trademark class=\"registered\">UNIX</"
 "trademark> ones?"
@@ -6439,7 +6456,7 @@ msgstr ""
 "\"registered\">UNIX</trademark>?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3759
+#: book.translate.xml:3746
 msgid ""
 "Use this <citerefentry><refentrytitle>perl</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> command:"
@@ -6448,13 +6465,13 @@ msgstr ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>:"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:3761
+#: book.translate.xml:3748
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>perl -i.bak -npe 's/\\r\\n/\\n/g' file(s)</userinput>"
 msgstr "<prompt>%</prompt> <userinput>perl -i.bak -npe 's/\\r\\n/\\n/g' file(s)</userinput>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3763
+#: book.translate.xml:3750
 msgid ""
 "where <replaceable>file(s)</replaceable> is one or more files to process. "
 "The modification is done in-place, with the original file stored with a "
@@ -6465,7 +6482,7 @@ msgstr ""
 "extensión <filename>.bak</filename>."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3768
+#: book.translate.xml:3755
 msgid ""
 "Alternatively, use <citerefentry><refentrytitle>tr</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>:"
@@ -6474,13 +6491,13 @@ msgstr ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>:"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:3770
+#: book.translate.xml:3757
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>tr -d '\\r' &lt; dos-text-file &gt; unix-file</userinput>"
 msgstr "<prompt>%</prompt> <userinput>tr -d '\\r' &lt; dos-text-file &gt; unix-file</userinput>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3772
+#: book.translate.xml:3759
 msgid ""
 "<replaceable>dos-text-file</replaceable> is the file containing DOS text "
 "while <replaceable>unix-file</replaceable> will contain the converted "
@@ -6492,7 +6509,7 @@ msgstr ""
 "command>."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3778
+#: book.translate.xml:3765
 msgid ""
 "Yet another way to reformat DOS text files is to use the <package>converters/"
 "dosunix</package> port from the Ports Collection. Consult its documentation "
@@ -6503,7 +6520,7 @@ msgstr ""
 "documentación para más detalles."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3787
+#: book.translate.xml:3774
 msgid ""
 "How do I re-read <filename>/etc/rc.conf</filename> and re-start <filename>/"
 "etc/rc</filename> without a reboot?"
@@ -6512,12 +6529,12 @@ msgstr ""
 "filename> sin reiniciar?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3793
+#: book.translate.xml:3780
 msgid "Go into single-user mode and then back to multi-user mode:"
 msgstr "Vaya al modo de un solo usuario y luego vuelva al modo multiusuario:"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:3796
+#: book.translate.xml:3783
 #, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>shutdown now</userinput>\n"
@@ -6529,7 +6546,7 @@ msgstr ""
 "<prompt>#</prompt> <userinput>exit</userinput>"
 
 #. (itstool) path: question/para
-#: book.translate.xml:3804
+#: book.translate.xml:3791
 msgid ""
 "I tried to update my system to the latest <emphasis>-STABLE</emphasis>, but "
 "got <emphasis>-BETA<replaceable>x</replaceable></emphasis>, <emphasis>-RC</"
@@ -6540,7 +6557,7 @@ msgstr ""
 "RC</emphasis> o <emphasis>-PRERELEASE</emphasis>! ¿Qué esta pasando?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3813
+#: book.translate.xml:3800
 msgid ""
 "Short answer: it is just a name. <emphasis>RC</emphasis> stands for "
 "<quote>Release Candidate</quote>. It signifies that a release is imminent. "
@@ -6557,7 +6574,7 @@ msgstr ""
 "manera que <emphasis>-PRERELEASE</emphasis>.)"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3822
+#: book.translate.xml:3809
 msgid ""
 "Long answer: FreeBSD derives its releases from one of two places. Major, dot-"
 "zero, releases, such as 9.0-RELEASE are branched from the head of the "
@@ -6579,7 +6596,7 @@ msgstr ""
 "(típicamente solo avisos de seguridad)."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3833
+#: book.translate.xml:3820
 msgid ""
 "When a release is about to be made, the branch from which it will be derived "
 "from has to undergo a certain process. Part of this process is a code "
@@ -6609,7 +6626,7 @@ msgstr ""
 "hecho, la rama sera renombrada a 6.3-STABLE."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3850
+#: book.translate.xml:3837
 msgid ""
 "For more information on version numbers and the various Subversion branches, "
 "refer to the <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/"
@@ -6621,7 +6638,7 @@ msgstr ""
 "link>."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3858
+#: book.translate.xml:3845
 msgid ""
 "I tried to install a new kernel, and the "
 "<citerefentry><refentrytitle>chflags</refentrytitle><manvolnum>1</"
@@ -6632,7 +6649,7 @@ msgstr ""
 "manvolnum></citerefentry> fallaron. ¿Como soluciono esto?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3863
+#: book.translate.xml:3850
 msgid ""
 "Short answer: the security level is greater than 0. Reboot directly to "
 "single-user mode to install the kernel."
@@ -6641,7 +6658,7 @@ msgstr ""
 "al modo de un solo usuario para instalar el kernel."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3867
+#: book.translate.xml:3854
 msgid ""
 "Long answer: FreeBSD disallows changing system flags at security levels "
 "greater than 0. To check the current security level:"
@@ -6651,13 +6668,13 @@ msgstr ""
 "seguridad:"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:3871 book.translate.xml:3900
+#: book.translate.xml:3858 book.translate.xml:3887
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>sysctl kern.securelevel</userinput>"
 msgstr "<prompt>#</prompt> <userinput>sysctl kern.securelevel</userinput>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3873
+#: book.translate.xml:3860
 msgid ""
 "The security level cannot be lowered in multi-user mode, so boot to single-"
 "user mode to install the kernel, or change the security level in <filename>/"
@@ -6680,7 +6697,7 @@ msgstr ""
 "información acerca de <filename>rc.conf</filename>."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3887
+#: book.translate.xml:3874
 msgid ""
 "I cannot change the time on my system by more than one second! How do I get "
 "around this?"
@@ -6689,7 +6706,7 @@ msgstr ""
 "soluciono esto?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3892
+#: book.translate.xml:3879
 msgid ""
 "Short answer: the system is at a security level greater than 1. Reboot "
 "directly to single-user mode to change the date."
@@ -6698,7 +6715,7 @@ msgstr ""
 "Reinicie directamente a modo de un solo usuario para cambiar la fecha."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3896
+#: book.translate.xml:3883
 msgid ""
 "Long answer: FreeBSD disallows changing the time by more that one second at "
 "security levels greater than 1. To check the security level:"
@@ -6707,7 +6724,7 @@ msgstr ""
 "a niveles de seguridad mayores que 1. Para verificar el nivel de seguridad:"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3902
+#: book.translate.xml:3889
 msgid ""
 "The security level cannot be lowered in multi-user mode. Either boot to "
 "single-user mode to change the date or change the security level in "
@@ -6730,12 +6747,12 @@ msgstr ""
 "filename>."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3916
+#: book.translate.xml:3903
 msgid "Why is <command>rpc.statd</command> using 256 MB of memory?"
 msgstr "¿Por que <command>rpc.statd</command> esta usando 256 MB de memoria?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3921
+#: book.translate.xml:3908
 msgid ""
 "No, there is no memory leak, and it is not using 256 MB of memory. For "
 "convenience, <command>rpc.statd</command> maps an obscene amount of memory "
@@ -6754,7 +6771,7 @@ msgstr ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3928
+#: book.translate.xml:3915
 #, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>rpc.statd</refentrytitle><manvolnum>8</"
@@ -6778,13 +6795,13 @@ msgstr ""
 "espacio de direcciones en IA32, o exactamente 256 MB."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3941
+#: book.translate.xml:3928
 msgid "Why can I not unset the <literal>schg</literal> file flag?"
 msgstr ""
 "¿Por qué no puedo borrar la bandera de archivo <literal>schg</literal>?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3946
+#: book.translate.xml:3933
 #, fuzzy
 msgid ""
 "The system is running at securelevel greater than 0. Lower the securelevel "
@@ -6800,12 +6817,12 @@ msgstr ""
 "manvolnum></citerefentry>."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3956
+#: book.translate.xml:3943
 msgid "What is <literal>vnlru</literal>?"
 msgstr "¿Qué es <literal>vnlru</literal>?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:3960
+#: book.translate.xml:3947
 msgid ""
 "<literal>vnlru</literal> flushes and frees vnodes when the system hits the "
 "<varname>kern.maxvnodes</varname> limit. This kernel thread sits mostly "
@@ -6818,7 +6835,7 @@ msgstr ""
 "usuarios están accediendo a miles de archivos pequeños."
 
 #. (itstool) path: question/para
-#: book.translate.xml:3970
+#: book.translate.xml:3957
 msgid ""
 "What do the various memory states displayed by <command>top</command> mean?"
 msgstr ""
@@ -6826,18 +6843,18 @@ msgstr ""
 "command>?"
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:3978
+#: book.translate.xml:3965
 msgid "<literal>Active</literal>: pages recently statistically used."
 msgstr "<literal>Active</literal>: páginas recientes estadísticamente usadas."
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:3983
+#: book.translate.xml:3970
 msgid "<literal>Inactive</literal>: pages recently statistically unused."
 msgstr ""
 "<literal>Inactive</literal>: páginas recientes estadísticamente sin uso."
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:3988
+#: book.translate.xml:3975
 msgid ""
 "<literal>Cache</literal>: (most often) pages that have percolated from "
 "inactive to a status where they maintain their data, but can often be "
@@ -6857,7 +6874,7 @@ msgstr ""
 "algoritmo del mantenedor del sistema de VM."
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:4001
+#: book.translate.xml:3988
 msgid ""
 "<literal>Free</literal>: pages without data content, and can be immediately "
 "used in certain circumstances where cache pages might be ineligible. Free "
@@ -6869,7 +6886,7 @@ msgstr ""
 "de proceso o interrupción."
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:4009
+#: book.translate.xml:3996
 msgid ""
 "<literal>Wired</literal>: pages that are fixed into memory, usually for "
 "kernel purposes, but also sometimes for special use in processes."
@@ -6879,7 +6896,7 @@ msgstr ""
 "procesos."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4015
+#: book.translate.xml:4002
 msgid ""
 "Pages are most often written to disk (sort of a VM sync) when they are in "
 "the inactive state, but active pages can also be synced. This depends upon "
@@ -6910,7 +6927,7 @@ msgstr ""
 "adecuadamente para estar disponibles al nivel de interrupción."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4032
+#: book.translate.xml:4019
 msgid ""
 "There are some other flags (e.g., busy flag or busy count) that might modify "
 "some of the described rules."
@@ -6919,12 +6936,12 @@ msgstr ""
 "busy count) que pueden modificar algunas de las reglas descritas."
 
 #. (itstool) path: question/para
-#: book.translate.xml:4040
+#: book.translate.xml:4027
 msgid "How much free memory is available?"
 msgstr "¿Cuánta memoria libre esta disponible?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4045
+#: book.translate.xml:4032
 msgid ""
 "There are a couple of kinds of <quote>free memory</quote>. One kind is the "
 "amount of memory immediately available without paging anything else out. "
@@ -6949,12 +6966,12 @@ msgstr ""
 "de paginación bajo, para evitar que se agote el espacio de intercambio."
 
 #. (itstool) path: question/para
-#: book.translate.xml:4063
+#: book.translate.xml:4050
 msgid "What is <filename>/var/empty</filename>?"
 msgstr "¿Qué es <filename>/var/empty</filename>?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4067
+#: book.translate.xml:4054
 msgid ""
 "<filename>/var/empty</filename> is a directory that the "
 "<citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum></"
@@ -6971,7 +6988,7 @@ msgstr ""
 "habilitada. Este directorio no debería ser borrado."
 
 #. (itstool) path: question/para
-#: book.translate.xml:4078
+#: book.translate.xml:4065
 msgid ""
 "I just changed <filename>/etc/newsyslog.conf</filename>. How can I check if "
 "it does what I expect?"
@@ -6980,7 +6997,7 @@ msgstr ""
 "verificar si hace lo que yo espero?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4084
+#: book.translate.xml:4071
 msgid ""
 "To see what <citerefentry><refentrytitle>newsyslog</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> will do, use the "
@@ -6990,18 +7007,18 @@ msgstr ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>, use lo siguiente:"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:4087
+#: book.translate.xml:4074
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>newsyslog -nrvv</userinput>"
 msgstr "<prompt>%</prompt> <userinput>newsyslog -nrvv</userinput>"
 
 #. (itstool) path: question/para
-#: book.translate.xml:4093
+#: book.translate.xml:4080
 msgid "My time is wrong, how can I change the timezone?"
 msgstr "¿Mi hora esta mal, como puedo cambiar la zona del tiempo?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4098
+#: book.translate.xml:4085
 msgid ""
 "Use <citerefentry><refentrytitle>tzsetup</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>."
@@ -7010,17 +7027,17 @@ msgstr ""
 "manvolnum></citerefentry>."
 
 #. (itstool) path: chapter/title
-#: book.translate.xml:4105
+#: book.translate.xml:4092
 msgid "The X Window System and Virtual Consoles"
 msgstr "El sistema X Window y las consolas virtuales"
 
 #. (itstool) path: question/para
-#: book.translate.xml:4110
+#: book.translate.xml:4097
 msgid "What is the X Window System?"
 msgstr "¿Qué es el sistema X Window?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4114
+#: book.translate.xml:4101
 msgid ""
 "The X Window System (commonly <literal>X11</literal>) is the most widely "
 "available windowing system capable of running on <trademark class="
@@ -7042,7 +7059,7 @@ msgstr ""
 "a <literal>X11</literal>."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4124
+#: book.translate.xml:4111
 msgid ""
 "Many implementations are available for different architectures and operating "
 "systems. An implementation of the server-side code is properly known as an "
@@ -7053,17 +7070,17 @@ msgstr ""
 "conocida propiamente como un <literal>servidor X</literal>."
 
 #. (itstool) path: question/para
-#: book.translate.xml:4133
+#: book.translate.xml:4120
 msgid "I want to run Xorg, how do I go about it?"
 msgstr "¿Quiero correr Xorg, como hago esto?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4137
+#: book.translate.xml:4124
 msgid "To install Xorg do one of the following:"
 msgstr "Para instalar Xorg siga uno de los siguientes pasos:"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4139
+#: book.translate.xml:4126
 msgid ""
 "Use the <package>x11/xorg</package> meta-port, which builds and installs "
 "every Xorg component."
@@ -7072,7 +7089,7 @@ msgstr ""
 "los componentes de Xorg."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4143
+#: book.translate.xml:4130
 msgid ""
 "Use <package>x11/xorg-minimal</package>, which builds and installs only the "
 "necessary Xorg components."
@@ -7081,18 +7098,18 @@ msgstr ""
 "componentes de Xorg necesarios."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4146
+#: book.translate.xml:4133
 msgid "Install Xorg from FreeBSD packages:"
 msgstr "Instale Xorg desde los paquetes de FreeBSD:"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:4148
+#: book.translate.xml:4135
 #, no-wrap
 msgid "<userinput><prompt>#</prompt> pkg install xorg</userinput>"
 msgstr "<userinput><prompt>#</prompt> pkg install xorg</userinput>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4150
+#: book.translate.xml:4137
 msgid ""
 "After the installation of Xorg, follow the instructions from the <link xlink:"
 "href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/x-config.html"
@@ -7103,7 +7120,7 @@ msgstr ""
 "html\">Configuración de X11</link> del manual de FreeBSD."
 
 #. (itstool) path: question/para
-#: book.translate.xml:4159
+#: book.translate.xml:4146
 msgid ""
 "I <emphasis>tried</emphasis> to run X, but I get a <errorname>No devices "
 "detected.</errorname> error when I type <command>startx</command>. What do I "
@@ -7114,7 +7131,7 @@ msgstr ""
 "command>. ¿Qué hago ahora?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4165
+#: book.translate.xml:4152
 msgid ""
 "The system is probably running at a raised <literal>securelevel</literal>. "
 "It is not possible to start X at a raised <literal>securelevel</literal> "
@@ -7132,7 +7149,7 @@ msgstr ""
 "citerefentry>."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4171
+#: book.translate.xml:4158
 msgid ""
 "There are two solutions to the problem: set the <literal>securelevel</"
 "literal> back down to zero or run <citerefentry vendor="
@@ -7147,7 +7164,7 @@ msgstr ""
 "literal> sea elevado."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4177
+#: book.translate.xml:4164
 msgid ""
 "See <xref linkend=\"xdm-boot\"/> for more information about running "
 "<citerefentry vendor=\"xfree86\"><refentrytitle>xdm</"
@@ -7158,17 +7175,34 @@ msgstr ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> en tiempo de arranque."
 
 #. (itstool) path: question/para
-#: book.translate.xml:4184
+#: book.translate.xml:4171
 msgid "Why does my mouse not work with X?"
 msgstr "¿Por qué mi mouse no funciona con X?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4188
+#: book.translate.xml:4175
+#, fuzzy
+#| msgid ""
+#| "When using <citerefentry><refentrytitle>syscons</"
+#| "refentrytitle><manvolnum>4</manvolnum></citerefentry>, the default "
+#| "console driver, FreeBSD can be configured to support a mouse pointer on "
+#| "each virtual screen. To avoid conflicting with X, "
+#| "<citerefentry><refentrytitle>syscons</refentrytitle><manvolnum>4</"
+#| "manvolnum></citerefentry> supports a virtual device called <filename>/dev/"
+#| "sysmouse</filename>. All mouse events received from the real mouse device "
+#| "are written to the <citerefentry><refentrytitle>sysmouse</"
+#| "refentrytitle><manvolnum>4</manvolnum></citerefentry> device via "
+#| "<citerefentry><refentrytitle>moused</refentrytitle><manvolnum>8</"
+#| "manvolnum></citerefentry>. To use the mouse on one or more virtual "
+#| "consoles, <emphasis>and</emphasis> use X, see <xref linkend=\"moused\" "
+#| "remap=\"another section\"/> and set up "
+#| "<citerefentry><refentrytitle>moused</refentrytitle><manvolnum>8</"
+#| "manvolnum></citerefentry>."
 msgid ""
-"When using <citerefentry><refentrytitle>syscons</refentrytitle><manvolnum>4</"
+"When using <citerefentry><refentrytitle>vt</refentrytitle><manvolnum>4</"
 "manvolnum></citerefentry>, the default console driver, FreeBSD can be "
 "configured to support a mouse pointer on each virtual screen. To avoid "
-"conflicting with X, <citerefentry><refentrytitle>syscons</"
+"conflicting with X, <citerefentry><refentrytitle>vt</"
 "refentrytitle><manvolnum>4</manvolnum></citerefentry> supports a virtual "
 "device called <filename>/dev/sysmouse</filename>. All mouse events received "
 "from the real mouse device are written to the "
@@ -7197,7 +7231,7 @@ msgstr ""
 "manvolnum></citerefentry>."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4199
+#: book.translate.xml:4186
 msgid ""
 "Then edit <filename>/etc/X11/xorg.conf</filename> and make sure the "
 "following lines exist:"
@@ -7206,7 +7240,7 @@ msgstr ""
 "siguientes líneas existan:"
 
 #. (itstool) path: answer/programlisting
-#: book.translate.xml:4202
+#: book.translate.xml:4189
 #, no-wrap
 msgid ""
 "Section \"InputDevice\"\n"
@@ -7220,7 +7254,7 @@ msgstr ""
 "....."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4207
+#: book.translate.xml:4194
 msgid ""
 "Starting with Xorg version 7.4, the <literal>InputDevice</literal> sections "
 "in <filename>xorg.conf</filename> are ignored in favor of autodetected "
@@ -7234,13 +7268,13 @@ msgstr ""
 "<literal>ServerFlags</literal>:"
 
 #. (itstool) path: answer/programlisting
-#: book.translate.xml:4214
+#: book.translate.xml:4201
 #, no-wrap
 msgid "Option \"AutoAddDevices\" \"false\""
 msgstr "Option \"AutoAddDevices\" \"false\""
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4216
+#: book.translate.xml:4203
 msgid ""
 "Some people prefer to use <filename>/dev/mouse</filename> under X. To make "
 "this work, <filename>/dev/mouse</filename> should be linked to <filename>/"
@@ -7259,13 +7293,13 @@ msgstr ""
 "refentrytitle><manvolnum>5</manvolnum></citerefentry>):"
 
 #. (itstool) path: answer/programlisting
-#: book.translate.xml:4224
+#: book.translate.xml:4211
 #, no-wrap
 msgid "link    sysmouse    mouse"
 msgstr "link    sysmouse    mouse"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4226
+#: book.translate.xml:4213
 msgid ""
 "This link can be created by restarting <citerefentry vendor=\"current"
 "\"><refentrytitle>devfs</refentrytitle><manvolnum>5</manvolnum></"
@@ -7278,18 +7312,18 @@ msgstr ""
 "\">root</systemitem>):"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:4229
+#: book.translate.xml:4216
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>service devfs restart</userinput>"
 msgstr "<prompt>#</prompt> <userinput>service devfs restart</userinput>"
 
 #. (itstool) path: question/para
-#: book.translate.xml:4235
+#: book.translate.xml:4222
 msgid "My mouse has a fancy wheel. Can I use it in X?"
 msgstr "Mi mouse tiene una flamante rueda. ¿Puedo usarla en X?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4239
+#: book.translate.xml:4226
 msgid ""
 "Yes, if X is configured for a 5 button mouse. To do this, add the lines "
 "<literal>Buttons 5</literal> and <literal>ZAxisMapping 4 5</literal> to the "
@@ -7302,7 +7336,7 @@ msgstr ""
 "conf</filename>, como se ve en este ejemplo:"
 
 #. (itstool) path: answer/programlisting
-#: book.translate.xml:4246
+#: book.translate.xml:4233
 #, no-wrap
 msgid ""
 "Section \"InputDevice\"\n"
@@ -7324,7 +7358,7 @@ msgstr ""
 "EndSection"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4255
+#: book.translate.xml:4242
 #, fuzzy
 msgid ""
 "The mouse can be enabled in <application>Emacs</application>by adding these "
@@ -7334,7 +7368,7 @@ msgstr ""
 "siguientes líneas a <filename>~/.emacs</filename>:"
 
 #. (itstool) path: answer/programlisting
-#: book.translate.xml:4259
+#: book.translate.xml:4246
 #, no-wrap
 msgid ""
 ";; wheel mouse\n"
@@ -7346,17 +7380,17 @@ msgstr ""
 "(global-set-key [mouse-5] 'scroll-up)"
 
 #. (itstool) path: question/para
-#: book.translate.xml:4267
+#: book.translate.xml:4254
 msgid "My laptop has a Synaptics touchpad. Can I use it in X?"
 msgstr "Mi laptop tiene un touchpad Synaptics. ¿Puedo usarlo en X?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4272
+#: book.translate.xml:4259
 msgid "Yes, after configuring a few things to make it work."
 msgstr "Si, luego de configurar un par de cosas para hacerlo funcionar."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4275
+#: book.translate.xml:4262
 msgid ""
 "In order to use the Xorg synaptics driver, first remove "
 "<literal>moused_enable</literal> from <filename>rc.conf</filename>."
@@ -7365,7 +7399,7 @@ msgstr ""
 "<literal>moused_enable</literal> de <filename>rc.conf</filename>."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4279
+#: book.translate.xml:4266
 msgid ""
 "To enable synaptics, add the following line to <filename>/boot/loader.conf</"
 "filename>:"
@@ -7374,18 +7408,18 @@ msgstr ""
 "loader.conf</filename>:"
 
 #. (itstool) path: answer/programlisting
-#: book.translate.xml:4282
+#: book.translate.xml:4269
 #, no-wrap
 msgid "hw.psm.synaptics_support=\"1\""
 msgstr "hw.psm.synaptics_support=\"1\""
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4284
+#: book.translate.xml:4271
 msgid "Add the following to <filename>/etc/X11/xorg.conf</filename>:"
 msgstr "Agregue lo siguiente a <filename>/etc/X11/xorg.conf</filename>:"
 
 #. (itstool) path: answer/programlisting
-#: book.translate.xml:4287
+#: book.translate.xml:4274
 #, no-wrap
 msgid ""
 "Section \"InputDevice\"\n"
@@ -7403,7 +7437,7 @@ msgstr ""
 "EndSection"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4294
+#: book.translate.xml:4281
 msgid ""
 "And be sure to add the following into the <quote>ServerLayout</quote> "
 "section:"
@@ -7412,18 +7446,18 @@ msgstr ""
 "quote>:"
 
 #. (itstool) path: answer/programlisting
-#: book.translate.xml:4297
+#: book.translate.xml:4284
 #, no-wrap
 msgid "InputDevice    \"Touchpad0\" \"SendCoreEvents\""
 msgstr "InputDevice    \"Touchpad0\" \"SendCoreEvents\""
 
 #. (itstool) path: question/para
-#: book.translate.xml:4303
+#: book.translate.xml:4290
 msgid "How do I use remote X displays?"
 msgstr "¿Como use pantallas X remotas?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4307
+#: book.translate.xml:4294
 msgid ""
 "For security reasons, the default setting is to not allow a machine to "
 "remotely open a window."
@@ -7432,7 +7466,7 @@ msgstr ""
 "maquina abra una ventana directamente."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4310
+#: book.translate.xml:4297
 msgid ""
 "To enable this feature, start <application>X</application> with the optional "
 "<option>-listen_tcp</option> argument:"
@@ -7441,18 +7475,18 @@ msgstr ""
 "el argumento opcional <option>-listen_tcp</option>:"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:4314
+#: book.translate.xml:4301
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>startx -listen_tcp</userinput>"
 msgstr "<prompt>%</prompt> <userinput>startx -listen_tcp</userinput>"
 
 #. (itstool) path: question/para
-#: book.translate.xml:4320
+#: book.translate.xml:4307
 msgid "What is a virtual console and how do I make more?"
 msgstr "¿Qué es una consola virtual y como hago más?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4325
+#: book.translate.xml:4312
 msgid ""
 "Virtual consoles provide several simultaneous sessions on the same machine "
 "without doing anything complicated like setting up a network or running X."
@@ -7461,7 +7495,7 @@ msgstr ""
 "máquina sin hacer nada complicado como configurar una red o correr X."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4330
+#: book.translate.xml:4317
 msgid ""
 "When the system starts, it will display a login prompt on the monitor after "
 "displaying all the boot messages. Type in your login name and password to "
@@ -7472,7 +7506,7 @@ msgstr ""
 "usuario y contraseña para comenzar a trabajar en la primera consola virtual."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4336
+#: book.translate.xml:4323
 msgid ""
 "To start another session, perhaps to look at documentation for a program or "
 "to read mail while waiting for an FTP transfer to finish, hold down "
@@ -7489,7 +7523,7 @@ msgstr ""
 "keycap><keycap>F1</keycap></keycombo>."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4346
+#: book.translate.xml:4333
 msgid ""
 "The default FreeBSD installation has eight virtual consoles enabled. "
 "<keycombo action=\"simul\"><keycap>Alt</keycap><keycap>F1</keycap></"
@@ -7506,7 +7540,7 @@ msgstr ""
 "cambiando entre estas consolas virtuales."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4353
+#: book.translate.xml:4340
 msgid ""
 "To enable more of virtual consoles, edit <filename>/etc/ttys</filename> (see "
 "<citerefentry><refentrytitle>ttys</refentrytitle><manvolnum>5</manvolnum></"
@@ -7521,7 +7555,7 @@ msgstr ""
 "<quote>terminales virtuales</quote>:"
 
 #. (itstool) path: answer/programlisting
-#: book.translate.xml:4359
+#: book.translate.xml:4346
 #, no-wrap
 msgid ""
 "# Edit the existing entry for ttyv8 in /etc/ttys and change\n"
@@ -7539,7 +7573,7 @@ msgstr ""
 "ttyvb   \"/usr/libexec/getty Pc\"         xterm  on secure"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4366
+#: book.translate.xml:4353
 msgid ""
 "The more virtual terminals, the more resources that are used. This can be "
 "problematic on systems with 8 MB RAM or less. Consider changing "
@@ -7550,7 +7584,7 @@ msgstr ""
 "<literal>secure</literal> a <literal>insecure</literal>."
 
 #. (itstool) path: important/para
-#: book.translate.xml:4373
+#: book.translate.xml:4360
 msgid ""
 "In order to run an X server, at least one virtual terminal must be left to "
 "<literal>off</literal> for it to use. This means that only eleven of the Alt-"
@@ -7563,7 +7597,7 @@ msgstr ""
 "que una queda para el servidor X."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4380
+#: book.translate.xml:4367
 msgid ""
 "For example, to run X and eleven virtual consoles, the setting for virtual "
 "terminal 12 should be:"
@@ -7572,23 +7606,23 @@ msgstr ""
 "la terminal 12 debería ser:"
 
 #. (itstool) path: answer/programlisting
-#: book.translate.xml:4383
+#: book.translate.xml:4370
 #, no-wrap
 msgid "ttyvb   \"/usr/libexec/getty Pc\"         xterm  off secure"
 msgstr "ttyvb   \"/usr/libexec/getty Pc\"         xterm  off secure"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4385
+#: book.translate.xml:4372
 msgid "The easiest way to activate the virtual consoles is to reboot."
 msgstr "La manera más fácil de activar las consolas virtuales es reiniciar."
 
 #. (itstool) path: question/para
-#: book.translate.xml:4392
+#: book.translate.xml:4379
 msgid "How do I access the virtual consoles from X?"
 msgstr "¿Como accedo a las consolas virtuales desde X? "
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4396
+#: book.translate.xml:4383
 msgid ""
 "Use <keycombo action=\"simul\"><keycap>Ctrl</keycap><keycap>Alt</"
 "keycap><keycap>F<replaceable>n</replaceable></keycap></keycombo> to switch "
@@ -7603,7 +7637,7 @@ msgstr ""
 "para volver a la primera consola virtual."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4400
+#: book.translate.xml:4387
 msgid ""
 "Once at a text console, use <keycombo action=\"simul\"><keycap>Alt</"
 "keycap><keycap>F<replaceable>n</replaceable></keycap></keycombo> to move "
@@ -7614,7 +7648,7 @@ msgstr ""
 "keycombo> para moverse entre ellas."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4404
+#: book.translate.xml:4391
 msgid ""
 "To return to the X session, switch to the virtual console running X. If X "
 "was started from the command line using <command>startx</command>, the X "
@@ -7631,12 +7665,12 @@ msgstr ""
 "\"><keycap>Alt</keycap><keycap>F9</keycap></keycombo>."
 
 #. (itstool) path: question/para
-#: book.translate.xml:4416
+#: book.translate.xml:4403
 msgid "How do I start <application>XDM</application> on boot?"
 msgstr "¿Como arranco <application>XDM</application> al iniciar?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4421
+#: book.translate.xml:4408
 msgid ""
 "There are two schools of thought on how to start <citerefentry vendor="
 "\"xfree86\"><refentrytitle>xdm</refentrytitle><manvolnum>1</manvolnum></"
@@ -7665,7 +7699,7 @@ msgstr ""
 "inicio gráfico."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4433
+#: book.translate.xml:4420
 msgid ""
 "The <citerefentry><refentrytitle>ttys</refentrytitle><manvolnum>5</"
 "manvolnum></citerefentry> method has the advantage of documenting which vty "
@@ -7686,7 +7720,7 @@ msgstr ""
 "arrancando el servidor X."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4440
+#: book.translate.xml:4427
 msgid ""
 "If loaded from <citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>, <command>xdm</command> should be started without "
@@ -7707,7 +7741,7 @@ msgstr ""
 "<command>xdm</command>."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4449
+#: book.translate.xml:4436
 msgid ""
 "When starting <command>xdm</command> from <filename>/etc/ttys</filename>, "
 "there still is a chance of conflict between <command>xdm</command> and "
@@ -7722,13 +7756,13 @@ msgstr ""
 "literal> en <filename>/usr/local/lib/X11/xdm/Xservers</filename>:"
 
 #. (itstool) path: answer/programlisting
-#: book.translate.xml:4456
+#: book.translate.xml:4443
 #, no-wrap
 msgid ":0 local /usr/local/bin/X vt4"
 msgstr ":0 local /usr/local/bin/X vt4"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4458
+#: book.translate.xml:4445
 msgid ""
 "The above example will direct the X server to run in <filename>/dev/ttyv3</"
 "filename>. Note the number is offset by one. The X server counts the vty "
@@ -7739,7 +7773,7 @@ msgstr ""
 "la vty desde uno, mientras que el kernel de FreeBSD numera la vty desde cero."
 
 #. (itstool) path: question/para
-#: book.translate.xml:4467
+#: book.translate.xml:4454
 msgid ""
 "Why do I get <errorname>Couldn't open console</errorname> when I run "
 "<command>xconsole</command>?"
@@ -7748,7 +7782,7 @@ msgstr ""
 "<command>xconsole</command>?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4473
+#: book.translate.xml:4460
 msgid ""
 "When <application>X</application> is started with <command>startx</command>, "
 "the permissions on <filename>/dev/console</filename> will <emphasis>not</"
@@ -7761,7 +7795,7 @@ msgstr ""
 "<command>xconsole</command> no funcionen."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4480
+#: book.translate.xml:4467
 msgid ""
 "This is because of the way console permissions are set by default. On a "
 "multi-user system, one does not necessarily want just any user to be able to "
@@ -7778,7 +7812,7 @@ msgstr ""
 "manvolnum></citerefentry> existe para resolver tales problemas."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4487
+#: book.translate.xml:4474
 msgid ""
 "In a nutshell, make sure an uncommented line of the form is in <filename>/"
 "etc/fbtab</filename> (see <citerefentry><refentrytitle>fbtab</"
@@ -7790,13 +7824,13 @@ msgstr ""
 "citerefentry>):"
 
 #. (itstool) path: answer/programlisting
-#: book.translate.xml:4491
+#: book.translate.xml:4478
 #, no-wrap
 msgid "/dev/ttyv0 0600 /dev/console"
 msgstr "/dev/ttyv0 0600 /dev/console"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4493
+#: book.translate.xml:4480
 msgid ""
 "It will ensure that whomever logs in on <filename>/dev/ttyv0</filename> will "
 "own the console."
@@ -7805,12 +7839,12 @@ msgstr ""
 "filename> sea el dueño de la consola."
 
 #. (itstool) path: question/para
-#: book.translate.xml:4501
+#: book.translate.xml:4488
 msgid "Why does my PS/2 mouse misbehave under X?"
 msgstr "¿Por qué mi mouse PS/2 se comporta mal bajo X?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4505
+#: book.translate.xml:4492
 msgid ""
 "The mouse and the mouse driver may have become out of synchronization. In "
 "rare cases, the driver may also erroneously report synchronization errors:"
@@ -7820,13 +7854,13 @@ msgstr ""
 "sincronización:"
 
 #. (itstool) path: answer/programlisting
-#: book.translate.xml:4509
+#: book.translate.xml:4496
 #, no-wrap
 msgid "psmintr: out of sync (xxxx != yyyy)"
 msgstr "psmintr: out of sync (xxxx != yyyy)"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4511
+#: book.translate.xml:4498
 msgid ""
 "If this happens, disable the synchronization check code by setting the "
 "driver flags for the PS/2 mouse driver to <literal>0x100</literal>. This can "
@@ -7840,12 +7874,12 @@ msgstr ""
 "filename> y reiniciando."
 
 #. (itstool) path: question/para
-#: book.translate.xml:4522
+#: book.translate.xml:4509
 msgid "How do I reverse the mouse buttons?"
 msgstr "¿Como revierto los botones del mouse?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4526
+#: book.translate.xml:4513
 msgid ""
 "Type <command>xmodmap -e \"pointer = 3 2 1\"</command>. Add this command to "
 "<filename>~/.xinitrc</filename> or <filename>~/.xsession</filename> to make "
@@ -7856,12 +7890,12 @@ msgstr ""
 "para hacer que esto pase de manera automática."
 
 #. (itstool) path: question/para
-#: book.translate.xml:4536
+#: book.translate.xml:4523
 msgid "How do I install a splash screen and where do I find them?"
 msgstr "¿Como instalo una splash screen y donde puedo encontrarlas?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4541
+#: book.translate.xml:4528
 #, fuzzy
 msgid ""
 "The detailed answer for this question can be found in the <link xlink:href="
@@ -7874,12 +7908,12 @@ msgstr ""
 "manual de FreeBSD."
 
 #. (itstool) path: question/para
-#: book.translate.xml:4550
+#: book.translate.xml:4537
 msgid "Can I use the <keycap>Windows</keycap> keys on my keyboard in X?"
 msgstr "¿Puedo usar las teclas <keycap>Windows</keycap> en mi teclado en X?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4555
+#: book.translate.xml:4542
 msgid ""
 "Yes. Use <citerefentry vendor=\"xfree86\"><refentrytitle>xmodmap</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> to define which "
@@ -7890,7 +7924,7 @@ msgstr ""
 "funciones deben realizar las teclas."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4558
+#: book.translate.xml:4545
 msgid ""
 "Assuming all Windows keyboards are standard, the keycodes for these three "
 "keys are the following:"
@@ -7899,7 +7933,7 @@ msgstr ""
 "teclas para estas tres teclas son los siguientes:"
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:4564
+#: book.translate.xml:4551
 msgid ""
 "<keycode>115</keycode> — <keycap>Windows</keycap> key, between the left-hand "
 "<keycap>Ctrl</keycap> and <keycap>Alt</keycap> keys"
@@ -7908,7 +7942,7 @@ msgstr ""
 "teclas <keycap>Ctrl</keycap> izquierdo y <keycap>Alt</keycap>"
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:4571
+#: book.translate.xml:4558
 msgid ""
 "<keycode>116</keycode> — <keycap>Windows</keycap> key, to the right of "
 "<keycap>AltGr</keycap>"
@@ -7917,7 +7951,7 @@ msgstr ""
 "<keycap>AltGr</keycap>"
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:4577
+#: book.translate.xml:4564
 msgid ""
 "<keycode>117</keycode> — <keycap>Menu</keycap>, to the left of the right-"
 "hand <keycap>Ctrl</keycap>"
@@ -7926,20 +7960,20 @@ msgstr ""
 "<keycap>Ctrl</keycap> derecha"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4583
+#: book.translate.xml:4570
 msgid "To have the left <keycap>Windows</keycap> key print a comma, try this."
 msgstr ""
 "Para hacer que la tecla <keycap>Windows</keycap>izquierda imprima una coma, "
 "intente esto."
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:4586
+#: book.translate.xml:4573
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>xmodmap -e \"keycode 115 = comma\"</userinput>"
 msgstr "<prompt>#</prompt> <userinput>xmodmap -e \"keycode 115 = comma\"</userinput>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4588
+#: book.translate.xml:4575
 msgid ""
 "To have the <keycap>Windows</keycap> key-mappings enabled automatically "
 "every time X is started, either put the <command>xmodmap</command> commands "
@@ -7955,13 +7989,13 @@ msgstr ""
 "añada la siguiente línea a <filename>~/.xinitrc</filename>:"
 
 #. (itstool) path: answer/programlisting
-#: book.translate.xml:4597
+#: book.translate.xml:4584
 #, no-wrap
 msgid "xmodmap $HOME/.xmodmaprc"
 msgstr "xmodmap $HOME/.xmodmaprc"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4599
+#: book.translate.xml:4586
 msgid ""
 "For example, to map the 3 keys to be <keycap>F13</keycap>, <keycap>F14</"
 "keycap>, and <keycap>F15</keycap>, respectively. This would make it easy to "
@@ -7973,13 +8007,13 @@ msgstr ""
 "del gestor de ventanas."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4605
+#: book.translate.xml:4592
 msgid "To do this, put the following in <filename>~/.xmodmaprc</filename>."
 msgstr ""
 "Para hacer esto, coloque lo siguiente en <filename>~/.xmodmaprc</filename>."
 
 #. (itstool) path: answer/programlisting
-#: book.translate.xml:4608
+#: book.translate.xml:4595
 #, no-wrap
 msgid ""
 "keycode 115 = F13\n"
@@ -7991,7 +8025,7 @@ msgstr ""
 "keycode 117 = F15"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4612
+#: book.translate.xml:4599
 msgid ""
 "For the <package>x11-wm/fvwm2</package> desktop manager, one could map the "
 "keys so that <keycap>F13</keycap> iconifies or de-iconifies the window the "
@@ -8009,7 +8043,7 @@ msgstr ""
 "cual es útil cuando no hay ninguna parte del escritorio visible."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4623
+#: book.translate.xml:4610
 msgid ""
 "The following entries in <filename>~/.fvwmrc</filename> implement the "
 "aforementioned setup:"
@@ -8018,7 +8052,7 @@ msgstr ""
 "configuración mencionada:"
 
 #. (itstool) path: answer/programlisting
-#: book.translate.xml:4627
+#: book.translate.xml:4614
 #, no-wrap
 msgid ""
 "Key F13        FTIWS    A        Iconify\n"
@@ -8030,7 +8064,7 @@ msgstr ""
 "Key F15        A        A        Menu Workplace Nop"
 
 #. (itstool) path: question/para
-#: book.translate.xml:4635
+#: book.translate.xml:4622
 msgid ""
 "How can I get 3D hardware acceleration for <trademark class=\"registered"
 "\">OpenGL</trademark>?"
@@ -8039,7 +8073,7 @@ msgstr ""
 "\"registered\">OpenGL</trademark>?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4640
+#: book.translate.xml:4627
 msgid ""
 "The availability of 3D acceleration depends on the version of Xorg and the "
 "type of video chip. For an nVidia chip, use the binary drivers provided for "
@@ -8050,7 +8084,7 @@ msgstr ""
 "provistos por FreeBSD instalando uno de los siguientes ports:"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4646
+#: book.translate.xml:4633
 msgid ""
 "The latest versions of nVidia cards are supported by the <package>x11/nvidia-"
 "driver</package> port."
@@ -8059,7 +8093,7 @@ msgstr ""
 "<package>x11/nvidia-driver</package>."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4650
+#: book.translate.xml:4637
 msgid ""
 "Older drivers are available as <package>x11/nvidia-driver-<replaceable>###</"
 "replaceable></package>"
@@ -8068,7 +8102,7 @@ msgstr ""
 "driver-<replaceable>###</replaceable></package>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4653
+#: book.translate.xml:4640
 msgid ""
 "nVidia provides detailed information on which card is supported by which "
 "driver on their web site: <uri xlink:href=\"http://www.nvidia.com/object/"
@@ -8079,7 +8113,7 @@ msgstr ""
 "object/IO_32667.html\">http://www.nvidia.com/object/IO_32667.html</uri>."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4656
+#: book.translate.xml:4643
 #, fuzzy
 msgid ""
 "For Matrox G200/G400, check the <package>x11-drivers/xf86-video-mga</"
@@ -8088,7 +8122,7 @@ msgstr ""
 "Para Matrox G200/G400, vea el port <package>x11-servers/mga_hal</package>."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4660
+#: book.translate.xml:4647
 msgid ""
 "For ATI Rage 128 and Radeon see <citerefentry vendor=\"xorg"
 "\"><refentrytitle>ati</refentrytitle><manvolnum>4</manvolnum></"
@@ -8105,19 +8139,19 @@ msgstr ""
 "citerefentry>."
 
 #. (itstool) path: chapter/title
-#: book.translate.xml:4668
+#: book.translate.xml:4655
 msgid "Networking"
 msgstr "Redes"
 
 #. (itstool) path: question/para
-#: book.translate.xml:4673
+#: book.translate.xml:4660
 msgid "Where can I get information on <quote>diskless booting</quote>?"
 msgstr ""
 "¿Donde puedo obtener información acerca del <quote>arranque sin disco "
 "rígido</quote>?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4678
+#: book.translate.xml:4665
 msgid ""
 "<quote>Diskless booting</quote> means that the FreeBSD box is booted over a "
 "network, and reads the necessary files from a server instead of its hard "
@@ -8132,12 +8166,12 @@ msgstr ""
 "\">la entrada del manual acerca del arranque sin disco rígido</link>."
 
 #. (itstool) path: question/para
-#: book.translate.xml:4688
+#: book.translate.xml:4675
 msgid "Can a FreeBSD box be used as a dedicated network router?"
 msgstr "¿Puede una instalación de FreeBSD usarse como un router dedicado?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4693
+#: book.translate.xml:4680
 msgid ""
 "Yes. Refer to the Handbook entry on <link xlink:href=\"@@URL_RELPREFIX@@/doc/"
 "en_US.ISO8859-1/books/handbook/advanced-networking.html\">advanced "
@@ -8152,12 +8186,12 @@ msgstr ""
 "\">routing y gateways</link>."
 
 #. (itstool) path: question/para
-#: book.translate.xml:4701
+#: book.translate.xml:4688
 msgid "Does FreeBSD support NAT or Masquerading?"
 msgstr "¿FreeBSD soporta NAT o Masquerading?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4705
+#: book.translate.xml:4692
 msgid ""
 "Yes. For instructions on how to use NAT over a PPP connection, see the <link "
 "xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/userppp."
@@ -8174,12 +8208,12 @@ msgstr ""
 "html#network-natd\">natd</link> en el manual."
 
 #. (itstool) path: question/para
-#: book.translate.xml:4716
+#: book.translate.xml:4703
 msgid "How can I set up Ethernet aliases?"
 msgstr "¿Como configuro aliases de Ethernet?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4720
+#: book.translate.xml:4707
 msgid ""
 "If the alias is on the same subnet as an address already configured on the "
 "interface, add <literal>netmask 0xffffffff</literal> to this command:"
@@ -8188,25 +8222,25 @@ msgstr ""
 "interfaz, agregue <literal>netmask 0xffffffff</literal> a este comando:"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:4725
+#: book.translate.xml:4712
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>ifconfig <replaceable>ed0</replaceable> alias <replaceable>192.0.2.2 </replaceable>netmask 0xffffffff</userinput>"
 msgstr "<prompt>#</prompt> <userinput>ifconfig <replaceable>ed0</replaceable> alias <replaceable>192.0.2.2 </replaceable>netmask 0xffffffff</userinput>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4727
+#: book.translate.xml:4714
 msgid "Otherwise, specify the network address and netmask as usual:"
 msgstr ""
 "De otro modo, especifique la dirección de red y netmask de la manera usual:"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:4730
+#: book.translate.xml:4717
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>ifconfig <replaceable>ed0</replaceable> alias <replaceable>172.16.141.5</replaceable> netmask 0xffffff00</userinput>"
 msgstr "<prompt>#</prompt> <userinput>ifconfig <replaceable>ed0</replaceable> alias <replaceable>172.16.141.5</replaceable> netmask 0xffffff00</userinput>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4732
+#: book.translate.xml:4719
 msgid ""
 "More information can be found in the FreeBSD <link xlink:href="
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/configtuning-virtual-"
@@ -8217,7 +8251,7 @@ msgstr ""
 "hosts.html\">Handbook</link> de FreeBSD."
 
 #. (itstool) path: question/para
-#: book.translate.xml:4738
+#: book.translate.xml:4725
 msgid ""
 "Why can I not NFS-mount from a <trademark class=\"registered\">Linux</"
 "trademark> box?"
@@ -8226,7 +8260,7 @@ msgstr ""
 "class=\"registered\">Linux</trademark>?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4742
+#: book.translate.xml:4729
 msgid ""
 "Some versions of the <trademark class=\"registered\">Linux</trademark> NFS "
 "code only accept mount requests from a privileged port; try to issue the "
@@ -8237,13 +8271,13 @@ msgstr ""
 "intente con el siguiente comando:"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:4746
+#: book.translate.xml:4733
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>mount -o -P linuxbox:/blah /mnt</userinput>"
 msgstr "<prompt>#</prompt> <userinput>mount -o -P linuxbox:/blah /mnt</userinput>"
 
 #. (itstool) path: question/para
-#: book.translate.xml:4752
+#: book.translate.xml:4739
 msgid ""
 "Why does <command>mountd</command> keep telling me it <errorname>can't "
 "change attributes</errorname> and that I have a <errorname>bad exports list</"
@@ -8255,7 +8289,7 @@ msgstr ""
 "servidor NFS de FreeBSD?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4759
+#: book.translate.xml:4746
 msgid ""
 "The most frequent problem is not understanding the correct format of "
 "<filename>/etc/exports</filename>. Review "
@@ -8275,12 +8309,12 @@ msgstr ""
 "nfs.html#configuring-nfs\">configurar NFS</link>."
 
 #. (itstool) path: question/para
-#: book.translate.xml:4769
+#: book.translate.xml:4756
 msgid "How do I enable IP multicast support?"
 msgstr "¿Como habilito soporte para IP multicast?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4773
+#: book.translate.xml:4760
 msgid ""
 "Install the <package>net/mrouted</package> package or port and add "
 "<literal>mrouted_enable=\"YES\"</literal> to <filename>/etc/rc.conf</"
@@ -8291,12 +8325,12 @@ msgstr ""
 "filename> inicie este servicio en tiempo de arranque."
 
 #. (itstool) path: question/para
-#: book.translate.xml:4783
+#: book.translate.xml:4770
 msgid "Why do I have to use the FQDN for hosts on my site?"
 msgstr "¿Porque tengo que usar FQDN para hosts en mi sitio?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4788
+#: book.translate.xml:4775
 msgid ""
 "See the answer in the FreeBSD <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US."
 "ISO8859-1/books/handbook/mail-trouble.html\">Handbook</link>."
@@ -8305,7 +8339,7 @@ msgstr ""
 "ISO8859-1/books/handbook/mail-trouble.html\">manual</link> de FreeBSD."
 
 #. (itstool) path: question/para
-#: book.translate.xml:4794
+#: book.translate.xml:4781
 msgid ""
 "Why do I get an error, <errorname>Permission denied</errorname>, for all "
 "networking operations?"
@@ -8314,7 +8348,7 @@ msgstr ""
 "todas las operaciones de red?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4800
+#: book.translate.xml:4787
 msgid ""
 "If the kernel is compiled with the <literal>IPFIREWALL</literal> option, be "
 "aware that the default policy is to deny all packets that are not explicitly "
@@ -8325,7 +8359,7 @@ msgstr ""
 "no estén explícitamente permitidos."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4805
+#: book.translate.xml:4792
 msgid ""
 "If the firewall is unintentionally misconfigured, restore network "
 "operability by typing the following as <systemitem class=\"username\">root</"
@@ -8336,13 +8370,13 @@ msgstr ""
 "systemitem>:"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:4809
+#: book.translate.xml:4796
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>ipfw add 65534 allow all from any to any</userinput>"
 msgstr "<prompt>#</prompt> <userinput>ipfw add 65534 allow all from any to any</userinput>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4811
+#: book.translate.xml:4798
 msgid ""
 "Consider setting <literal>firewall_type=\"open\"</literal> in <filename>/etc/"
 "rc.conf</filename>."
@@ -8351,7 +8385,7 @@ msgstr ""
 "etc/rc.conf</filename>."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4815
+#: book.translate.xml:4802
 msgid ""
 "For further information on configuring this firewall, see the <link xlink:"
 "href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/firewalls-ipfw."
@@ -8362,7 +8396,7 @@ msgstr ""
 "html\">capítulo del manual</link>."
 
 #. (itstool) path: question/para
-#: book.translate.xml:4823
+#: book.translate.xml:4810
 msgid ""
 "Why is my <command>ipfw</command> <quote>fwd</quote> rule to redirect a "
 "service to another machine not working?"
@@ -8371,7 +8405,7 @@ msgstr ""
 "redirigir un servicio a otra maquina no funciona?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4829
+#: book.translate.xml:4816
 msgid ""
 "Possibly because network address translation (NAT) is needed instead of just "
 "forwarding packets. A <quote>fwd</quote> rule only forwards packets, it does "
@@ -8383,13 +8417,13 @@ msgstr ""
 "Considere esta regla:"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:4835
+#: book.translate.xml:4822
 #, no-wrap
 msgid "01000 fwd <replaceable>10.0.0.1</replaceable> from any to <replaceable>foo 21</replaceable>"
 msgstr "01000 fwd <replaceable>10.0.0.1</replaceable> from any to <replaceable>foo 21</replaceable>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4837
+#: book.translate.xml:4824
 msgid ""
 "When a packet with a destination address of <replaceable>foo</replaceable> "
 "arrives at the machine with this rule, the packet is forwarded to "
@@ -8412,7 +8446,7 @@ msgstr ""
 "comportamiento es una característica y no un error."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4851
+#: book.translate.xml:4838
 msgid ""
 "See the <link linkend=\"service-redirect\"><acronym>FAQ</acronym> about "
 "redirecting services</link>, the <citerefentry><refentrytitle>natd</"
@@ -8429,12 +8463,12 @@ msgstr ""
 "hacer esto."
 
 #. (itstool) path: question/para
-#: book.translate.xml:4860
+#: book.translate.xml:4847
 msgid "How can I redirect service requests from one machine to another?"
 msgstr "¿Como puedo redirigir pedidos de servicio de una máquina a otra?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4865
+#: book.translate.xml:4852
 msgid ""
 "FTP and other service requests can be redirected with the <package>sysutils/"
 "socket</package> package or port. Replace the entry for the service in "
@@ -8448,13 +8482,13 @@ msgstr ""
 "<application>ftpd</application>:"
 
 #. (itstool) path: answer/programlisting
-#: book.translate.xml:4872
+#: book.translate.xml:4859
 #, no-wrap
 msgid "ftp stream tcp nowait nobody /usr/local/bin/socket socket <replaceable>ftp.example.com</replaceable> <replaceable>ftp</replaceable>"
 msgstr "ftp stream tcp nowait nobody /usr/local/bin/socket socket <replaceable>ftp.example.com</replaceable> <replaceable>ftp</replaceable>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4874
+#: book.translate.xml:4861
 msgid ""
 "where <replaceable>ftp.example.com</replaceable> and <replaceable>ftp</"
 "replaceable> are the host and port to redirect to, respectively."
@@ -8463,12 +8497,12 @@ msgstr ""
 "replaceable> son el host y el puerto a los que redirigirse, respectivamente."
 
 #. (itstool) path: question/para
-#: book.translate.xml:4882
+#: book.translate.xml:4869
 msgid "Where can I get a bandwidth management tool?"
 msgstr "¿Dónde puedo obtener una herramienta de manejo de ancho de banda?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4886
+#: book.translate.xml:4873
 msgid ""
 "There are three bandwidth management tools available for FreeBSD. "
 "<citerefentry><refentrytitle>dummynet</refentrytitle><manvolnum>4</"
@@ -8491,13 +8525,13 @@ msgstr ""
 "\">Emerging Technologies</link> es un producto comercial."
 
 #. (itstool) path: question/para
-#: book.translate.xml:4897
+#: book.translate.xml:4884
 msgid "Why do I get <errorname>/dev/bpf0: device not configured</errorname>?"
 msgstr ""
 "¿Por qué obtengo <errorname>/dev/bpf0: device not configured</errorname>?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4902
+#: book.translate.xml:4889
 msgid ""
 "The running application requires the Berkeley Packet Filter "
 "(<citerefentry><refentrytitle>bpf</refentrytitle><manvolnum>4</manvolnum></"
@@ -8511,13 +8545,13 @@ msgstr ""
 "kernel:"
 
 #. (itstool) path: answer/programlisting
-#: book.translate.xml:4907
+#: book.translate.xml:4894
 #, no-wrap
 msgid "device bpf        # Berkeley Packet Filter"
 msgstr "device bpf        # Berkeley Packet Filter"
 
 #. (itstool) path: question/para
-#: book.translate.xml:4913
+#: book.translate.xml:4900
 msgid ""
 "How do I mount a disk from a <trademark class=\"registered\">Windows</"
 "trademark> machine that is on my network, like smbmount in <trademark class="
@@ -8528,7 +8562,7 @@ msgstr ""
 "en <trademark class=\"registered\">Linux</trademark>?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4918
+#: book.translate.xml:4905
 msgid ""
 "Use the <application>SMBFS</application> toolset. It includes a set of "
 "kernel modifications and a set of userland programs. The programs and "
@@ -8542,7 +8576,7 @@ msgstr ""
 "manvolnum></citerefentry> en el sistema base."
 
 #. (itstool) path: question/para
-#: book.translate.xml:4928
+#: book.translate.xml:4915
 msgid ""
 "What are these messages about: <errorname>Limiting icmp/open port/closed "
 "port response</errorname> in my log files?"
@@ -8551,7 +8585,7 @@ msgstr ""
 "port response</errorname> en mis archivos de log?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4934
+#: book.translate.xml:4921
 msgid ""
 "This kernel message indicates that some activity is provoking it to send a "
 "large amount of ICMP or TCP reset (RST) responses. ICMP responses are often "
@@ -8568,7 +8602,7 @@ msgstr ""
 "este tipo de actividades puede causar los siguientes mensajes:"
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:4945
+#: book.translate.xml:4932
 msgid ""
 "Brute-force denial of service (DoS) attacks (as opposed to single-packet "
 "attacks which exploit a specific vulnerability)."
@@ -8577,7 +8611,7 @@ msgstr ""
 "ataques de un solo paquete que explotan una vulnerabilidad específica)."
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:4951
+#: book.translate.xml:4938
 msgid ""
 "Port scans which attempt to connect to a large number of ports (as opposed "
 "to only trying a few well-known ports)."
@@ -8586,7 +8620,7 @@ msgstr ""
 "lugar de solo intentar con un par de puertos bien conocidos)."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4957
+#: book.translate.xml:4944
 msgid ""
 "The first number in the message indicates how many packets the kernel would "
 "have sent if the limit was not in place, and the second indicates the limit. "
@@ -8599,13 +8633,13 @@ msgstr ""
 "ejemplo ajusta el límite a <literal>300</literal> paquetes por segundo:"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:4965
+#: book.translate.xml:4952
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>sysctl net.inet.icmp.icmplim=300</userinput>"
 msgstr "<prompt>#</prompt> <userinput>sysctl net.inet.icmp.icmplim=300</userinput>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4967
+#: book.translate.xml:4954
 msgid ""
 "To disable these messages without disabling response limiting, use "
 "<varname>net.inet.icmp.icmplim_output</varname> to disable the output:"
@@ -8615,13 +8649,13 @@ msgstr ""
 "deshabilitar la salida:"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:4973
+#: book.translate.xml:4960
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>sysctl net.inet.icmp.icmplim_output=0</userinput>"
 msgstr "<prompt>#</prompt> <userinput>sysctl net.inet.icmp.icmplim_output=0</userinput>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4975
+#: book.translate.xml:4962
 msgid ""
 "Finally, to disable response limiting completely, set <varname>net.inet.icmp."
 "icmplim</varname> to <literal>0</literal>. Disabling response limiting is "
@@ -8633,7 +8667,7 @@ msgstr ""
 "listadas anteriormente."
 
 #. (itstool) path: question/para
-#: book.translate.xml:4984
+#: book.translate.xml:4971
 msgid ""
 "What are these <errorname>arp: unknown hardware address format</errorname> "
 "error messages?"
@@ -8642,7 +8676,7 @@ msgstr ""
 "address format</errorname>?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:4989
+#: book.translate.xml:4976
 msgid ""
 "This means that some device on the local Ethernet is using a MAC address in "
 "a format that FreeBSD does not recognize. This is probably caused by someone "
@@ -8657,7 +8691,7 @@ msgstr ""
 "No es dañino, y no debería afectar el rendimiento del sistema en FreeBSD."
 
 #. (itstool) path: question/para
-#: book.translate.xml:5001
+#: book.translate.xml:4988
 msgid ""
 "Why do I keep seeing messages like: <errorname>192.168.0.10 is on fxp1 but "
 "got reply from 00:15:17:67:cf:82 on rl0</errorname>, and how do I disable it?"
@@ -8667,7 +8701,7 @@ msgstr ""
 "deshabilito?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5008
+#: book.translate.xml:4995
 msgid ""
 "Because a packet is coming from outside the network unexpectedly. To disable "
 "them, set <varname>net.link.ether.inet.log_arp_wrong_iface</varname> to "
@@ -8678,12 +8712,12 @@ msgstr ""
 "varname> a <literal>0</literal>."
 
 #. (itstool) path: question/para
-#: book.translate.xml:5017
+#: book.translate.xml:5004
 msgid "How do I compile an IPv6 only kernel?"
 msgstr ""
 
 #. (itstool) path: para/screen
-#: book.translate.xml:5023
+#: book.translate.xml:5010
 #, no-wrap
 msgid ""
 "include GENERIC\n"
@@ -8694,28 +8728,28 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5021
+#: book.translate.xml:5008
 msgid "Configure your kernel with these settings: <_:screen-1/>"
 msgstr ""
 
 #. (itstool) path: chapter/title
-#: book.translate.xml:5034
+#: book.translate.xml:5021
 msgid "Security"
 msgstr "Seguridad"
 
 #. (itstool) path: question/para
-#: book.translate.xml:5039
+#: book.translate.xml:5026
 msgid "What is a sandbox?"
 msgstr "¿Qué es un sandbox?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5042
+#: book.translate.xml:5029
 msgid "<quote>Sandbox</quote> is a security term. It can mean two things:"
 msgstr ""
 "<quote>Sandbox</quote>es un término de seguridad. Puede significar dos cosas:"
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:5047
+#: book.translate.xml:5034
 msgid ""
 "A process which is placed inside a set of virtual walls that are designed to "
 "prevent someone who breaks into the process from being able to break into "
@@ -8726,7 +8760,7 @@ msgstr ""
 "pueda explotar el ecosistema mayor."
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:5052
+#: book.translate.xml:5039
 #, fuzzy
 msgid ""
 "The process is only able to run inside the walls. Since nothing the process "
@@ -8740,7 +8774,7 @@ msgstr ""
 "cosas acerca de su seguridad."
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:5059
+#: book.translate.xml:5046
 msgid ""
 "The walls might be a user ID, for example. This is the definition used in "
 "the <citerefentry><refentrytitle>security</refentrytitle><manvolnum>7</"
@@ -8754,7 +8788,7 @@ msgstr ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:5063
+#: book.translate.xml:5050
 msgid ""
 "Take the <literal>ntalk</literal> service, for example (see "
 "<citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></"
@@ -8776,7 +8810,7 @@ msgstr ""
 "usuario."
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:5074
+#: book.translate.xml:5061
 msgid ""
 "A process which is placed inside a simulation of the machine. It means that "
 "someone who is able to break into the process may believe that he can break "
@@ -8789,7 +8823,7 @@ msgstr ""
 "de esa máquina sin modificar ningún dato real."
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:5081
+#: book.translate.xml:5068
 msgid ""
 "The most common way to accomplish this is to build a simulated environment "
 "in a subdirectory and then run the processes in that directory chrooted so "
@@ -8802,7 +8836,7 @@ msgstr ""
 "directorio, en lugar de la verdadera <filename>/</filename> del sistema."
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:5088
+#: book.translate.xml:5075
 msgid ""
 "Another common use is to mount an underlying file system read-only and then "
 "create a file system layer on top of it that gives a process a seemingly "
@@ -8818,7 +8852,7 @@ msgstr ""
 "no."
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:5096
+#: book.translate.xml:5083
 msgid ""
 "An attempt is made to make this sort of sandbox so transparent that the user "
 "(or hacker) does not realize that he is sitting in it."
@@ -8827,7 +8861,7 @@ msgstr ""
 "usuario (o el hacker) no se de cuenta de que esta usándola."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5102
+#: book.translate.xml:5089
 msgid ""
 "<trademark class=\"registered\">UNIX</trademark> implements two core "
 "sandboxes. One is at the process level, and one is at the userid level."
@@ -8836,7 +8870,7 @@ msgstr ""
 "principales. Uno es a nivel proceso, el otro es a nivel userid."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5105
+#: book.translate.xml:5092
 msgid ""
 "Every <trademark class=\"registered\">UNIX</trademark> process is completely "
 "firewalled off from every other <trademark class=\"registered\">UNIX</"
@@ -8848,7 +8882,7 @@ msgstr ""
 "de otro."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5109
+#: book.translate.xml:5096
 msgid ""
 "A <trademark class=\"registered\">UNIX</trademark> process is owned by a "
 "particular userid. If the user ID is not the <systemitem class=\"username"
@@ -8863,12 +8897,12 @@ msgstr ""
 "datos del disco."
 
 #. (itstool) path: question/para
-#: book.translate.xml:5119
+#: book.translate.xml:5106
 msgid "What is securelevel?"
 msgstr "¿Qué es securelevel?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5123
+#: book.translate.xml:5110
 msgid ""
 "<literal>securelevel</literal> is a security mechanism implemented in the "
 "kernel. When the securelevel is positive, the kernel restricts certain "
@@ -8883,7 +8917,7 @@ msgstr ""
 "habilidad de:"
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:5132
+#: book.translate.xml:5119
 msgid ""
 "Unset certain file flags, such as <literal>schg</literal> (the system "
 "immutable flag)."
@@ -8892,7 +8926,7 @@ msgstr ""
 "system immutable flag)."
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:5138
+#: book.translate.xml:5125
 msgid ""
 "Write to kernel memory via <filename>/dev/mem</filename> and <filename>/dev/"
 "kmem</filename>."
@@ -8901,28 +8935,28 @@ msgstr ""
 "<filename>/dev/kmem</filename>."
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:5144
+#: book.translate.xml:5131
 msgid "Load kernel modules."
 msgstr "Cargar modulos de kernel."
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:5148
+#: book.translate.xml:5135
 msgid "Alter firewall rules."
 msgstr "Alterar reglas del firewall."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5152
+#: book.translate.xml:5139
 msgid "To check the status of the securelevel on a running system:"
 msgstr "Para verificar el estado del securelevel en un sistema corriendo:"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:5155
+#: book.translate.xml:5142
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>sysctl -n kern.securelevel</userinput>"
 msgstr "<prompt>#</prompt> <userinput>sysctl -n kern.securelevel</userinput>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5157
+#: book.translate.xml:5144
 msgid ""
 "The output contains the current value of the securelevel. If it is greater "
 "than 0, at least some of the securelevel's protections are enabled."
@@ -8931,7 +8965,7 @@ msgstr ""
 "menos algunas de las protecciones de securelevel están habilitadas."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5162
+#: book.translate.xml:5149
 msgid ""
 "The securelevel of a running system cannot be lowered as this would defeat "
 "its purpose. If a task requires that the securelevel be non-positive, change "
@@ -8946,7 +8980,7 @@ msgstr ""
 "filename> y reinicie."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5169
+#: book.translate.xml:5156
 msgid ""
 "For more information on securelevel and the specific things all the levels "
 "do, consult <citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</"
@@ -8957,7 +8991,7 @@ msgstr ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 
 #. (itstool) path: warning/para
-#: book.translate.xml:5173
+#: book.translate.xml:5160
 msgid ""
 "Securelevel is not a silver bullet; it has many known deficiencies. More "
 "often than not, it provides a false sense of security."
@@ -8966,7 +9000,7 @@ msgstr ""
 "Muchas veces provee un falso sentido de seguridad."
 
 #. (itstool) path: warning/para
-#: book.translate.xml:5177
+#: book.translate.xml:5164
 msgid ""
 "One of its biggest problems is that in order for it to be at all effective, "
 "all files used in the boot process up until the securelevel is set must be "
@@ -8992,7 +9026,7 @@ msgstr ""
 "usuario, para modificar un archivo de configuración."
 
 #. (itstool) path: warning/para
-#: book.translate.xml:5192
+#: book.translate.xml:5179
 msgid ""
 "This point and others are often discussed on the mailing lists, particularly "
 "the <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-"
@@ -9008,7 +9042,7 @@ msgstr ""
 "granularidad más fina."
 
 #. (itstool) path: question/para
-#: book.translate.xml:5203
+#: book.translate.xml:5190
 msgid ""
 "What is this UID 0 <systemitem class=\"username\">toor</systemitem> account? "
 "Have I been compromised?"
@@ -9017,7 +9051,7 @@ msgstr ""
 "0 ? ¿He sido comprometido?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5208
+#: book.translate.xml:5195
 msgid ""
 "Do not worry. <systemitem class=\"username\">toor</systemitem> is an "
 "<quote>alternative</quote> superuser account, where toor is root spelled "
@@ -9049,7 +9083,7 @@ msgstr ""
 "la ruta de un shell."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5225
+#: book.translate.xml:5212
 msgid ""
 "Some people use <systemitem class=\"username\">toor</systemitem> for day-to-"
 "day <systemitem class=\"username\">root</systemitem> tasks with a non-"
@@ -9071,12 +9105,12 @@ msgstr ""
 "\"username\">toor</systemitem> antes de usarlo para autenticarse."
 
 #. (itstool) path: chapter/title
-#: book.translate.xml:5239
+#: book.translate.xml:5226
 msgid "Serial Communications"
 msgstr "Comunicaciones en serie"
 
 #. (itstool) path: chapter/para
-#: book.translate.xml:5241
+#: book.translate.xml:5228
 #, fuzzy
 #| msgid ""
 #| "This section answers common questions about serial communications with "
@@ -9091,12 +9125,12 @@ msgstr ""
 "\">Redes</link>."
 
 #. (itstool) path: question/para
-#: book.translate.xml:5247
+#: book.translate.xml:5234
 msgid "How do I get the boot: prompt to show on the serial console?"
 msgstr "¿Como hago que boot: prompt se muestre en la consola de serie?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5252
+#: book.translate.xml:5239
 msgid ""
 "See <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
 "serialconsole-setup.html\">this section of the Handbook</link>."
@@ -9105,14 +9139,14 @@ msgstr ""
 "serialconsole-setup.html\">esta sección del manual</link>."
 
 #. (itstool) path: question/para
-#: book.translate.xml:5259
+#: book.translate.xml:5246
 msgid "How do I tell if FreeBSD found my serial ports or modem cards?"
 msgstr ""
 "¿Cómo puedo saber si FreeBSD encontró mis puertos en serie o tarjetas de "
 "modem?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5264
+#: book.translate.xml:5251
 msgid ""
 "As the FreeBSD kernel boots, it will probe for the serial ports for which "
 "the kernel is configured. Either watch the boot messages closely or run this "
@@ -9123,7 +9157,7 @@ msgstr ""
 "o corra este comando luego de que el sistema haya arrancado:"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:5270
+#: book.translate.xml:5257
 #, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>grep -E '^(sio|uart)[0-9]' &lt; /var/run/dmesg.boot</userinput>\n"
@@ -9139,7 +9173,7 @@ msgstr ""
 "sio1: type 16550A"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5276
+#: book.translate.xml:5263
 msgid ""
 "This example shows two serial ports. The first is on IRQ4, port address "
 "<literal>0x3f8</literal>, and has a 16550A-type UART chip. The second uses "
@@ -9155,7 +9189,7 @@ msgstr ""
 "siempre tienen un modem adjuntado al puerto."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5286
+#: book.translate.xml:5273
 msgid ""
 "The <filename>GENERIC</filename> kernel includes support for two serial "
 "ports using the same IRQ and port address settings in the above example. If "
@@ -9172,14 +9206,14 @@ msgstr ""
 "\">compilar un kernel</link> para más detalles."
 
 #. (itstool) path: question/para
-#: book.translate.xml:5299
+#: book.translate.xml:5286
 #, fuzzy
 #| msgid "How do I access the serial ports on FreeBSD?"
 msgid "How do I access the serial ports on FreeBSD? (x86-specific)"
 msgstr "¿Como accedo a los puertos en serie en FreeBSD?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5303
+#: book.translate.xml:5290
 msgid ""
 "The third serial port, <filename>sio2</filename>, or <filename>COM3</"
 "filename>, is on <filename>/dev/cuad2</filename> for dial-out devices, and "
@@ -9193,7 +9227,7 @@ msgstr ""
 "dispositivos?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5310
+#: book.translate.xml:5297
 msgid ""
 "When opening <filename>/dev/ttydX</filename> in blocking mode, a process "
 "will wait for the corresponding <filename>cuadX</filename> device to become "
@@ -9219,12 +9253,12 @@ msgstr ""
 "modem y el sistema se ocupara de todos los conflictos."
 
 #. (itstool) path: question/para
-#: book.translate.xml:5330
+#: book.translate.xml:5317
 msgid "How do I enable support for a multi-port serial card?"
 msgstr "¿Como habilito el soporte para una tarjeta en serie multipuertos?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5335
+#: book.translate.xml:5322
 msgid ""
 "The section on kernel configuration provides information about configuring "
 "the kernel. For a multi-port serial card, place an "
@@ -9248,13 +9282,13 @@ msgstr ""
 "opción en el archivo de configuración del kernel:"
 
 #. (itstool) path: answer/programlisting
-#: book.translate.xml:5345
+#: book.translate.xml:5332
 #, no-wrap
 msgid "options COM_MULTIPORT"
 msgstr "options COM_MULTIPORT"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5347
+#: book.translate.xml:5334
 msgid ""
 "The following <filename>/boot/device.hints</filename> example is for an AST "
 "4-port serial card on IRQ 12:"
@@ -9263,7 +9297,7 @@ msgstr ""
 "tarjeta en serie AST de 4 puertos en IRQ 12:"
 
 #. (itstool) path: answer/programlisting
-#: book.translate.xml:5351
+#: book.translate.xml:5338
 #, no-wrap
 msgid ""
 "hint.sio.4.at=\"isa\"\n"
@@ -9295,7 +9329,7 @@ msgstr ""
 "hint.sio.7.irq=\"12\""
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5365
+#: book.translate.xml:5352
 msgid ""
 "The flags indicate that the master port has minor number <literal>7</"
 "literal> (<literal>0x700</literal>), and all the ports share an IRQ "
@@ -9306,12 +9340,12 @@ msgstr ""
 "comparten un IRQ (<literal>0x001</literal>)."
 
 #. (itstool) path: question/para
-#: book.translate.xml:5374
+#: book.translate.xml:5361
 msgid "Can I set the default serial parameters for a port?"
 msgstr "¿Puedo ajustar los parámetros en serie por defecto para un port?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5379
+#: book.translate.xml:5366
 msgid ""
 "See the <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
 "handbook/serial.html#serial-hw-config\">Serial Communications</link> section "
@@ -9322,13 +9356,13 @@ msgstr ""
 "link>en el manual de FreeBSD."
 
 #. (itstool) path: question/para
-#: book.translate.xml:5387
+#: book.translate.xml:5374
 msgid "Why can I not run <command>tip</command> or <command>cu</command>?"
 msgstr ""
 "¿Por qué no puedo correr <command>tip</command> o <command>cu</command>?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5392
+#: book.translate.xml:5379
 msgid ""
 "The built-in <citerefentry><refentrytitle>tip</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> and <citerefentry><refentrytitle>cu</"
@@ -9351,7 +9385,7 @@ msgstr ""
 "<systemitem class=\"groupname\">dialer</systemitem>."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5401
+#: book.translate.xml:5388
 msgid ""
 "Alternatively, everyone can be configured to run "
 "<citerefentry><refentrytitle>tip</refentrytitle><manvolnum>1</manvolnum></"
@@ -9364,7 +9398,7 @@ msgstr ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> escribiendo:"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:5404
+#: book.translate.xml:5391
 #, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>chmod 4511 /usr/bin/cu</userinput>\n"
@@ -9374,12 +9408,12 @@ msgstr ""
 "<prompt>#</prompt> <userinput>chmod 4511 /usr/bin/tip</userinput>"
 
 #. (itstool) path: chapter/title
-#: book.translate.xml:5412
+#: book.translate.xml:5399
 msgid "Miscellaneous Questions"
 msgstr "Preguntas varias"
 
 #. (itstool) path: question/para
-#: book.translate.xml:5417
+#: book.translate.xml:5404
 msgid ""
 "FreeBSD uses a lot of swap space even when the computer has free memory "
 "left. Why?"
@@ -9388,7 +9422,7 @@ msgstr ""
 "memoria libre. ¿Por qué?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5422
+#: book.translate.xml:5409
 msgid ""
 "FreeBSD will proactively move entirely idle, unused pages of main memory "
 "into swap in order to make more main memory available for active use. This "
@@ -9400,7 +9434,7 @@ msgstr ""
 "memoria extra como cache."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5428
+#: book.translate.xml:5415
 msgid ""
 "Note that while FreeBSD is proactive in this regard, it does not arbitrarily "
 "decide to swap pages when the system is truly idle. Thus, the system will "
@@ -9412,7 +9446,7 @@ msgstr ""
 "luego de dejarlo ocioso por una noche."
 
 #. (itstool) path: question/para
-#: book.translate.xml:5438
+#: book.translate.xml:5425
 msgid ""
 "Why does <command>top</command> show very little free memory even when I "
 "have very few programs running?"
@@ -9421,7 +9455,7 @@ msgstr ""
 "cuando tengo pocos programas corriendo?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5443
+#: book.translate.xml:5430
 #, fuzzy
 msgid ""
 "The simple answer is that free memory is wasted memory. Any memory that "
@@ -9450,13 +9484,13 @@ msgstr ""
 "que no sea <emphasis>muy</emphasis> bajo."
 
 #. (itstool) path: question/para
-#: book.translate.xml:5460
+#: book.translate.xml:5447
 msgid ""
 "Why will <command>chmod</command> not change the permissions on symlinks?"
 msgstr "¿Por qué <command>chmod</command> no cambia los permisos en symlinks?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5465
+#: book.translate.xml:5452
 msgid ""
 "Symlinks do not have permissions, and by default, "
 "<citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></"
@@ -9471,20 +9505,20 @@ msgstr ""
 "symlink llamado <filename>bar</filename>, este comando siempre tendrá éxito."
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:5472
+#: book.translate.xml:5459
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>chmod g-w bar</userinput>"
 msgstr "<prompt>%</prompt> <userinput>chmod g-w bar</userinput>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5474
+#: book.translate.xml:5461
 msgid ""
 "However, the permissions on <filename>bar</filename> will not have changed."
 msgstr ""
 "Sin embargo, los permisos en <filename>bar</filename> no habrán cambiado."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5477
+#: book.translate.xml:5464
 msgid ""
 "When changing modes of the file hierarchies rooted in the files instead of "
 "the files themselves, use either <option>-H</option> or <option>-L</option> "
@@ -9501,7 +9535,7 @@ msgstr ""
 "refentrytitle><manvolnum>7</manvolnum></citerefentry> para más información."
 
 #. (itstool) path: warning/para
-#: book.translate.xml:5485
+#: book.translate.xml:5472
 msgid ""
 "<option>-R</option> does a <emphasis>recursive</emphasis> "
 "<citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></"
@@ -9530,13 +9564,13 @@ msgstr ""
 "algo como:"
 
 #. (itstool) path: warning/screen
-#: book.translate.xml:5498
+#: book.translate.xml:5485
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>chmod 555 foo/</userinput>"
 msgstr "<prompt>%</prompt> <userinput>chmod 555 foo/</userinput>"
 
 #. (itstool) path: warning/para
-#: book.translate.xml:5500
+#: book.translate.xml:5487
 msgid ""
 "With the trailing slash, <citerefentry><refentrytitle>chmod</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> will follow the "
@@ -9549,12 +9583,12 @@ msgstr ""
 "<filename>bar</filename>."
 
 #. (itstool) path: question/para
-#: book.translate.xml:5510
+#: book.translate.xml:5497
 msgid "Can I run DOS binaries under FreeBSD?"
 msgstr "¿Puedo correr binarios de DOS bajo FreeBSD?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5514
+#: book.translate.xml:5501
 msgid ""
 "Yes. A DOS emulation program, <package>emulators/doscmd</package>, is "
 "available in the FreeBSD Ports Collection."
@@ -9563,7 +9597,7 @@ msgstr ""
 "esta disponible en la colección de ports de FreeBSD."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5518
+#: book.translate.xml:5505
 msgid ""
 "If <application>doscmd</application> will not suffice, <package>emulators/"
 "pcemu</package> emulates an 8088 and enough BIOS services to run many DOS "
@@ -9574,7 +9608,7 @@ msgstr ""
 "muchas aplicaciones de DOS en modo texto. Requiere el sistema X Window."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5524
+#: book.translate.xml:5511
 msgid ""
 "The Ports Collection also has <package>emulators/dosbox</package>. The main "
 "focus of this application is emulating old DOS games using the local file "
@@ -9585,14 +9619,14 @@ msgstr ""
 "sistema de archivos local para los archivos."
 
 #. (itstool) path: question/para
-#: book.translate.xml:5533
+#: book.translate.xml:5520
 msgid ""
 "What do I need to do to translate a FreeBSD document into my native language?"
 msgstr ""
 "¿Qué necesito para traducir un documento de FreeBSD a mi lenguaje nativo?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5538
+#: book.translate.xml:5525
 msgid ""
 "See the <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/fdp-"
 "primer/translations.html\">Translation <acronym>FAQ</acronym></link> in the "
@@ -9603,7 +9637,7 @@ msgstr ""
 "la documentación en el Primer de documentación FreeBSD. "
 
 #. (itstool) path: question/para
-#: book.translate.xml:5546
+#: book.translate.xml:5533
 msgid ""
 "Why does my email to any address at <systemitem class=\"fqdomainname"
 "\">FreeBSD.org</systemitem> bounce?"
@@ -9612,7 +9646,7 @@ msgstr ""
 "\"fqdomainname\">FreeBSD.org</systemitem> rebota?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5551
+#: book.translate.xml:5538
 msgid ""
 "The <systemitem class=\"fqdomainname\">FreeBSD.org</systemitem> mail system "
 "implements some <application>Postfix</application> checks on incoming mail "
@@ -9626,7 +9660,7 @@ msgstr ""
 "Algunos de los requisitos específicos son:"
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:5559
+#: book.translate.xml:5546
 msgid ""
 "The IP address of the SMTP client must \"reverse-resolve\" to a forward "
 "confirmed hostname."
@@ -9635,7 +9669,7 @@ msgstr ""
 "nombre de host confirmado hacia adelante."
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:5565
+#: book.translate.xml:5552
 msgid ""
 "The fully-qualified hostname given in the SMTP conversation (either HELO or "
 "EHLO) must resolve to the IP address of the client."
@@ -9644,12 +9678,12 @@ msgstr ""
 "resolverse a la dirección IP del cliente."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5571
+#: book.translate.xml:5558
 msgid "Other advice to help mail reach its destination include:"
 msgstr "Otros consejos para ayudar a que el correo llegue incluyen:"
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:5576
+#: book.translate.xml:5563
 msgid ""
 "Mail should be sent in plain text, and messages sent to mailing lists should "
 "generally be no more than 200KB in length."
@@ -9658,7 +9692,7 @@ msgstr ""
 "listas de correo no deberían ser más largos que 200KB."
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:5582
+#: book.translate.xml:5569
 msgid ""
 "Avoid excessive cross posting. Choose <emphasis>one</emphasis> mailing list "
 "which seems most relevant and send it there."
@@ -9667,7 +9701,7 @@ msgstr ""
 "correo que parezca relevante y envíelo allí."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5588
+#: book.translate.xml:5575
 msgid ""
 "If you still have trouble with email infrastructure at <systemitem class="
 "\"fqdomainname\">FreeBSD.org</systemitem>, send a note with the details to "
@@ -9683,12 +9717,12 @@ msgstr ""
 "temporal o el offset desde UTC.)"
 
 #. (itstool) path: question/para
-#: book.translate.xml:5601
+#: book.translate.xml:5588
 msgid "Where can I find a free FreeBSD account?"
 msgstr "¿Dónde puedo encontrar una cuenta gratis de FreeBSD?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5605
+#: book.translate.xml:5592
 msgid ""
 "While FreeBSD does not provide open access to any of their servers, others "
 "do provide open access <trademark class=\"registered\">UNIX</trademark> "
@@ -9700,7 +9734,7 @@ msgstr ""
 "limitados."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5610
+#: book.translate.xml:5597
 msgid ""
 "<link xlink:href=\"http://www.arbornet.org/\">Arbornet, Inc</link>, also "
 "known as <emphasis>M-Net</emphasis>, has been providing open access to "
@@ -9727,12 +9761,12 @@ msgstr ""
 "emphasis> también provee un sistema de bulletin board y un chat interactivo."
 
 #. (itstool) path: question/para
-#: book.translate.xml:5628
+#: book.translate.xml:5615
 msgid "What is the cute little red guy's name?"
 msgstr "¿Cuál es el nombre del apuesto muchacho de rojo?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5632
+#: book.translate.xml:5619
 msgid ""
 "He does not have one, and is just called <quote>the BSD daemon</quote>. If "
 "you insist upon using a name, call him <quote>beastie</quote>. Note that "
@@ -9743,7 +9777,7 @@ msgstr ""
 "que <quote>beastie</quote> se pronuncia <quote>BSD</quote>."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5638
+#: book.translate.xml:5625
 msgid ""
 "More about the BSD daemon is available on his <link xlink:href=\"http://www."
 "mckusick.com/beastie/index.html\">home page</link>."
@@ -9752,12 +9786,12 @@ msgstr ""
 "href=\"http://www.mckusick.com/beastie/index.html\">pagina web</link>."
 
 #. (itstool) path: question/para
-#: book.translate.xml:5645
+#: book.translate.xml:5632
 msgid "Can I use the BSD daemon image?"
 msgstr "¿Puedo usar la imagen del demonio de BSD?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5649
+#: book.translate.xml:5636
 msgid ""
 "Perhaps. The BSD daemon is copyrighted by Marshall Kirk McKusick. Check his "
 "<link xlink:href=\"http://www.mckusick.com/beastie/mainpage/copyright.html"
@@ -9770,7 +9804,7 @@ msgstr ""
 "del demonio de BSD</link> para términos de uso detallados."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5654
+#: book.translate.xml:5641
 msgid ""
 "In summary, the image can be used in a tasteful manner, for personal use, so "
 "long as appropriate credit is given. Before using the logo commercially, "
@@ -9784,12 +9818,12 @@ msgstr ""
 "para obtener permiso."
 
 #. (itstool) path: question/para
-#: book.translate.xml:5665
+#: book.translate.xml:5652
 msgid "Do you have any BSD daemon images I could use?"
 msgstr "¿Tienen imágenes del demonio de BSD que pueda usar?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5669
+#: book.translate.xml:5656
 msgid ""
 "Xfig and eps drawings are available under <filename>/usr/share/examples/"
 "BSD_daemon/</filename>."
@@ -9798,7 +9832,7 @@ msgstr ""
 "BSD_daemon/</filename>."
 
 #. (itstool) path: question/para
-#: book.translate.xml:5676
+#: book.translate.xml:5663
 msgid ""
 "I have seen an acronym or other term on the mailing lists and I do not "
 "understand what it means. Where should I look?"
@@ -9807,7 +9841,7 @@ msgstr ""
 "que significa. ¿Dónde tendría que buscar?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5682
+#: book.translate.xml:5669
 msgid ""
 "Refer to the <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
 "handbook/freebsd-glossary.html\">FreeBSD Glossary</link>."
@@ -9816,13 +9850,13 @@ msgstr ""
 "handbook/freebsd-glossary.html\">glosario de FreeBSD</link>."
 
 #. (itstool) path: question/para
-#: book.translate.xml:5689
+#: book.translate.xml:5676
 msgid "Why should I care what color the bikeshed is?"
 msgstr ""
 "¿Por qué debería preocuparme de que color es el cobertizo para bicicletas?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5693
+#: book.translate.xml:5680
 msgid ""
 "The really, really short answer is that you should not. The somewhat longer "
 "answer is that just because you are capable of building a bikeshed does not "
@@ -9842,7 +9876,7 @@ msgstr ""
 "la complejidad del cambio."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5704
+#: book.translate.xml:5691
 msgid ""
 "The longer and more complete answer is that after a very long argument about "
 "whether <citerefentry><refentrytitle>sleep</refentrytitle><manvolnum>1</"
@@ -9862,7 +9896,7 @@ msgstr ""
 "apropiadas de ese mensaje son citadas más abajo."
 
 #. (itstool) path: blockquote/attribution
-#: book.translate.xml:5713
+#: book.translate.xml:5700
 msgid ""
 "Poul-Henning Kamp <email>phk@FreeBSD.org</email> on <link xlink:href="
 "\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-hackers\">freebsd-"
@@ -9873,7 +9907,7 @@ msgstr ""
 "hackers</link>, October 2, 1999"
 
 #. (itstool) path: blockquote/para
-#: book.translate.xml:5716
+#: book.translate.xml:5703
 msgid ""
 "<quote>What is it about this bike shed?</quote> Some of you have asked me."
 msgstr ""
@@ -9881,7 +9915,7 @@ msgstr ""
 "preguntado algunos."
 
 #. (itstool) path: blockquote/para
-#: book.translate.xml:5719
+#: book.translate.xml:5706
 msgid ""
 "It is a long story, or rather it is an old story, but it is quite short "
 "actually. C. Northcote Parkinson wrote a book in the early 1960s, called "
@@ -9894,12 +9928,12 @@ msgstr ""
 "revelaciones acerca de la dinámica del management."
 
 #. (itstool) path: blockquote/para
-#: book.translate.xml:5725
+#: book.translate.xml:5712
 msgid "<emphasis>[snip a bit of commentary on the book]</emphasis>"
 msgstr "<emphasis>[suprimidos varios comentarios acerca del libro]</emphasis>"
 
 #. (itstool) path: blockquote/para
-#: book.translate.xml:5728
+#: book.translate.xml:5715
 msgid ""
 "In the specific example involving the bike shed, the other vital component "
 "is an atomic power-plant, I guess that illustrates the age of the book."
@@ -9909,7 +9943,7 @@ msgstr ""
 "la edad del libro."
 
 #. (itstool) path: blockquote/para
-#: book.translate.xml:5732
+#: book.translate.xml:5719
 msgid ""
 "Parkinson shows how you can go into the board of directors and get approval "
 "for building a multi-million or even billion dollar atomic power plant, but "
@@ -9922,7 +9956,7 @@ msgstr ""
 "encontraras atrapado en un sinfín de discusiones."
 
 #. (itstool) path: blockquote/para
-#: book.translate.xml:5738
+#: book.translate.xml:5725
 msgid ""
 "Parkinson explains that this is because an atomic plant is so vast, so "
 "expensive and so complicated that people cannot grasp it, and rather than "
@@ -9939,7 +9973,7 @@ msgstr ""
 "sus libros."
 
 #. (itstool) path: blockquote/para
-#: book.translate.xml:5747
+#: book.translate.xml:5734
 msgid ""
 "A bike shed on the other hand. Anyone can build one of those over a weekend, "
 "and still have time to watch the game on TV. So no matter how well prepared, "
@@ -9955,7 +9989,7 @@ msgstr ""
 "emphasis>."
 
 #. (itstool) path: blockquote/para
-#: book.translate.xml:5755
+#: book.translate.xml:5742
 msgid ""
 "In Denmark we call it <quote>setting your fingerprint</quote>. It is about "
 "personal pride and prestige, it is about being able to point somewhere and "
@@ -9968,17 +10002,17 @@ msgstr ""
 "decir <quote>¡Ahi! <emphasis>Yo</emphasis> hice eso.</quote>"
 
 #. (itstool) path: chapter/title
-#: book.translate.xml:5769
+#: book.translate.xml:5756
 msgid "The FreeBSD Funnies"
 msgstr "Cosas divertidas de FreeBSD"
 
 #. (itstool) path: question/para
-#: book.translate.xml:5774
+#: book.translate.xml:5761
 msgid "How cool is FreeBSD?"
 msgstr "¿Qué tan frío es FreeBSD?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5778
+#: book.translate.xml:5765
 msgid ""
 "Q. Has anyone done any temperature testing while running FreeBSD? I know "
 "<trademark class=\"registered\">Linux</trademark> runs cooler than DOS, but "
@@ -9989,7 +10023,7 @@ msgstr ""
 "pero jamás vi alguna mención a FreeBSD. Parece que sobrecalienta bastante."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5783
+#: book.translate.xml:5770
 msgid ""
 "A. No, but we have done numerous taste tests on blindfolded volunteers who "
 "have also had 250 micrograms of LSD-25 administered beforehand. 35% of the "
@@ -10014,7 +10048,7 @@ msgstr ""
 "¡Es un negocio divertido el nuestro!"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5796
+#: book.translate.xml:5783
 msgid ""
 "Seriously, FreeBSD uses the <acronym>HLT</acronym> (halt) instruction when "
 "the system is idle thus lowering its energy consumption and therefore the "
@@ -10029,12 +10063,12 @@ msgstr ""
 "también puede poner la CPU en modo de bajo consumo."
 
 #. (itstool) path: question/para
-#: book.translate.xml:5807
+#: book.translate.xml:5794
 msgid "Who is scratching in my memory banks??"
 msgstr "¿Quién esta borrando mis bancos de memoria?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5811
+#: book.translate.xml:5798
 msgid ""
 "Q. Is there anything <quote>odd</quote> that FreeBSD does when compiling the "
 "kernel which would cause the memory to make a scratchy sound? When compiling "
@@ -10049,7 +10083,7 @@ msgstr ""
 "memoria."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5818
+#: book.translate.xml:5805
 msgid ""
 "A. Yes! You will see frequent references to <quote>daemons</quote> in the "
 "BSD documentation, and what most people do not know is that this refers to "
@@ -10066,7 +10100,7 @@ msgstr ""
 "con varias tareas administrativas del sistema."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5827
+#: book.translate.xml:5814
 msgid ""
 "If the noise gets to you, a good <command>fdisk /mbr</command> from DOS will "
 "get rid of them, but do not be surprised if they react adversely and try to "
@@ -10090,22 +10124,22 @@ msgstr ""
 "sonidos de rasguños, verdad?"
 
 #. (itstool) path: question/para
-#: book.translate.xml:5844
+#: book.translate.xml:5831
 msgid "How many FreeBSD hackers does it take to change a lightbulb?"
 msgstr "¿Cuántos hackers de FreeBSD se necesitan para cambiar un foco de luz?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5849
+#: book.translate.xml:5836
 msgid "One thousand, one hundred and sixty-nine:"
 msgstr "Mil ciento sesenta y nueve."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5851
+#: book.translate.xml:5838
 msgid "Twenty-three to complain to -CURRENT about the lights being out;"
 msgstr "Veintitrés para quejarse en -CURRENT que las luces están apagadas;"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5854
+#: book.translate.xml:5841
 msgid ""
 "Four to claim that it is a configuration problem, and that such matters "
 "really belong on -questions;"
@@ -10114,7 +10148,7 @@ msgstr ""
 "cuestiones pertenecen a -questions;"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5857
+#: book.translate.xml:5844
 msgid ""
 "Three to submit PRs about it, one of which is misfiled under doc and "
 "consists only of <quote>it's dark</quote>;"
@@ -10123,7 +10157,7 @@ msgstr ""
 "erróneamente bajo doc y consiste solo de <quote>esta oscuro</quote>;"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5861
+#: book.translate.xml:5848
 msgid ""
 "One to commit an untested lightbulb which breaks buildworld, then back it "
 "out five minutes later;"
@@ -10132,19 +10166,19 @@ msgstr ""
 "revertirlo cinco minutos después;"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5864
+#: book.translate.xml:5851
 msgid ""
 "Eight to flame the PR originators for not including patches in their PRs;"
 msgstr ""
 "Ocho para agredir a los que envíaron el PR por no incluir parches en sus PRs;"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5867
+#: book.translate.xml:5854
 msgid "Five to complain about buildworld being broken;"
 msgstr "Cinco para quejarse de que buildworld esta roto;"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5869
+#: book.translate.xml:5856
 msgid ""
 "Thirty-one to answer that it works for them, and they must have updated at a "
 "bad time;"
@@ -10153,12 +10187,12 @@ msgstr ""
 "actualizado en un mal momento;"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5872
+#: book.translate.xml:5859
 msgid "One to post a patch for a new lightbulb to -hackers;"
 msgstr "Uno para postear un parche para un nuevo foco de luz a -hackers;"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5875
+#: book.translate.xml:5862
 msgid ""
 "One to complain that he had patches for this three years ago, but when he "
 "sent them to -CURRENT they were just ignored, and he has had bad experiences "
@@ -10169,7 +10203,7 @@ msgstr ""
 "sistema de PR; además, el nuevo foco de luz propuesto no es reflexivo."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5881
+#: book.translate.xml:5868
 msgid ""
 "Thirty-seven to scream that lightbulbs do not belong in the base system, "
 "that committers have no right to do things like this without consulting the "
@@ -10180,12 +10214,12 @@ msgstr ""
 "con la comunidad, y ¡¿QUE ESTA HACIENDO CORE ACERCA DE ESTO?!"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5886
+#: book.translate.xml:5873
 msgid "Two hundred to complain about the color of the bicycle shed;"
 msgstr "Doscientos para quejarse del color del cobertizo de bicicletas."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5889
+#: book.translate.xml:5876
 msgid ""
 "Three to point out that the patch breaks <citerefentry><refentrytitle>style</"
 "refentrytitle><manvolnum>9</manvolnum></citerefentry>;"
@@ -10195,14 +10229,14 @@ msgstr ""
 "citerefentry>;"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5892
+#: book.translate.xml:5879
 msgid "Seventeen to complain that the proposed new lightbulb is under GPL;"
 msgstr ""
 "Diecisiete para quejarse de que el nuevo foco de luz propuesto esta bajo la "
 "GPL;"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5895
+#: book.translate.xml:5882
 msgid ""
 "Five hundred and eighty-six to engage in a flame war about the comparative "
 "advantages of the GPL, the BSD license, the MIT license, the NPL, and the "
@@ -10213,12 +10247,12 @@ msgstr ""
 "higiene personal de fundadores no especificados de la FSF;"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5900
+#: book.translate.xml:5887
 msgid "Seven to move various portions of the thread to -chat and -advocacy;"
 msgstr "Siete para mover varias partes del thread a -chat y -advocacy;"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5903
+#: book.translate.xml:5890
 msgid ""
 "One to commit the suggested lightbulb, even though it shines dimmer than the "
 "old one;"
@@ -10227,7 +10261,7 @@ msgstr ""
 "tenue que el viejo;"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5906
+#: book.translate.xml:5893
 msgid ""
 "Two to back it out with a furious flame of a commit message, arguing that "
 "FreeBSD is better off in the dark than with a dim lightbulb;"
@@ -10237,7 +10271,7 @@ msgstr ""
 "oscuro;"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5910
+#: book.translate.xml:5897
 msgid ""
 "Forty-six to argue vociferously about the backing out of the dim lightbulb "
 "and demanding a statement from -core;"
@@ -10246,7 +10280,7 @@ msgstr ""
 "foco de luz tenue y demandando una declaración por parte de -core;"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5914
+#: book.translate.xml:5901
 msgid ""
 "Eleven to request a smaller lightbulb so it will fit their Tamagotchi if we "
 "ever decide to port FreeBSD to that platform;"
@@ -10255,7 +10289,7 @@ msgstr ""
 "Tamagotchi si deciden hacer un port de FreeBSD para esa plataforma;"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5918
+#: book.translate.xml:5905
 msgid ""
 "Seventy-three to complain about the SNR on -hackers and -chat and "
 "unsubscribe in protest;"
@@ -10264,7 +10298,7 @@ msgstr ""
 "subscripción como protesta;"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5921
+#: book.translate.xml:5908
 msgid ""
 "Thirteen to post <quote>unsubscribe</quote>, <quote>How do I unsubscribe?</"
 "quote>, or <quote>Please remove me from the list</quote>, followed by the "
@@ -10275,7 +10309,7 @@ msgstr ""
 "quote>, seguidos del pie usual;"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5926
+#: book.translate.xml:5913
 msgid ""
 "One to commit a working lightbulb while everybody is too busy flaming "
 "everybody else to notice;"
@@ -10284,7 +10318,7 @@ msgstr ""
 "mundo esta demasiado ocupado agrediendo a todos los demás como para notarlo;"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5929
+#: book.translate.xml:5916
 msgid ""
 "Thirty-one to point out that the new lightbulb would shine 0.364% brighter "
 "if compiled with TenDRA (although it will have to be reshaped into a cube), "
@@ -10295,19 +10329,19 @@ msgstr ""
 "forma cúbica), y que FreeBSD debería cambiar a TenDRA en lugar de usar GCC;"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5934
+#: book.translate.xml:5921
 msgid "One to complain that the new lightbulb lacks fairings;"
 msgstr "Uno para quejarse de que el nuevo foco de luz no tiene carenados;"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5937
+#: book.translate.xml:5924
 msgid "Nine (including the PR originators) to ask <quote>what is MFC?</quote>;"
 msgstr ""
 "Nuevo (incluyendo los que crearon el PR) para preguntar <quote>¿Qué es MFC?</"
 "quote>;"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5940
+#: book.translate.xml:5927
 msgid ""
 "Fifty-seven to complain about the lights being out two weeks after the bulb "
 "has been changed."
@@ -10316,17 +10350,17 @@ msgstr ""
 "por dos semanas luego de que se cambio el foco."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5943
+#: book.translate.xml:5930
 msgid "<emphasis>Nik Clayton <email>nik@FreeBSD.org</email> adds:</emphasis>"
 msgstr "<emphasis>Nik Clayton <email>nik@FreeBSD.org</email> añade:</emphasis>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5945
+#: book.translate.xml:5932
 msgid "<emphasis>I was laughing quite hard at this.</emphasis>"
 msgstr "<emphasis>Me estaba riendo bastante con esto.</emphasis>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5948
+#: book.translate.xml:5935
 msgid ""
 "<emphasis>And then I thought, <quote>Hang on, shouldn't there be '1 to "
 "document it.' in that list somewhere?</quote></emphasis>"
@@ -10335,12 +10369,12 @@ msgstr ""
 "documentarlo.' en algún lugar de esa lista?</quote></emphasis>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5952
+#: book.translate.xml:5939
 msgid "<emphasis>And then I was enlightened :-)</emphasis>"
 msgstr "<emphasis>Y luego me ilumine :-)</emphasis>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5955
+#: book.translate.xml:5942
 msgid ""
 "<emphasis>Thomas Abthorpe <email>tabthorpe@FreeBSD.org</email></emphasis> "
 "says: <quote>None, <emphasis>real</emphasis> FreeBSD hackers are not afraid "
@@ -10351,12 +10385,12 @@ msgstr ""
 "no tienen miedo a la oscuridad!</quote>"
 
 #. (itstool) path: question/para
-#: book.translate.xml:5963
+#: book.translate.xml:5950
 msgid "Where does data written to <filename>/dev/null</filename> go?"
 msgstr "¿Donde van los datos escritos a <filename>/dev/null</filename>?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5968
+#: book.translate.xml:5955
 msgid ""
 "It goes into a special data sink in the CPU where it is converted to heat "
 "which is vented through the heatsink / fan assembly. This is why CPU cooling "
@@ -10391,12 +10425,12 @@ msgstr ""
 "sobrepasa estará bien."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5988
+#: book.translate.xml:5975
 msgid "<emphasis>Paul Robinson adds:</emphasis>"
 msgstr "<emphasis>Paul Robinson añade:</emphasis>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:5990
+#: book.translate.xml:5977
 msgid ""
 "There are other methods. As every good sysadmin knows, it is part of "
 "standard practice to send data to the screen of interesting variety to keep "
@@ -10420,7 +10454,7 @@ msgstr ""
 "constante — por esto es que existen los salvapantallas."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:6004
+#: book.translate.xml:5991
 msgid ""
 "To take your suggestions further, you could just throw the random data to "
 "console, thereby letting the pixies consume it. This causes no heat to be "
@@ -10434,7 +10468,7 @@ msgstr ""
 "desorganizadas en su pantalla."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:6011
+#: book.translate.xml:5998
 msgid ""
 "Incidentally, as an ex-admin of a large ISP who experienced many problems "
 "attempting to maintain a stable temperature in a server room, I would "
@@ -10449,14 +10483,14 @@ msgstr ""
 "paquetes y el ruteo también les molesta."
 
 #. (itstool) path: question/para
-#: book.translate.xml:6022
+#: book.translate.xml:6009
 msgid "My colleague sits at the computer too much, how can I prank her?"
 msgstr ""
 "Mi colega esta demasiado tiempo sentada en la computadora. ¿Como puedo "
 "hacerle una broma?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:6027
+#: book.translate.xml:6014
 msgid ""
 "Install <package role=\"port\">games/sl</package> and wait for her to "
 "mistype <userinput>sl</userinput> for <command>ls</command>."
@@ -10466,17 +10500,17 @@ msgstr ""
 "command>."
 
 #. (itstool) path: chapter/title
-#: book.translate.xml:6036
+#: book.translate.xml:6023
 msgid "Advanced Topics"
 msgstr "Temas avanzados"
 
 #. (itstool) path: question/para
-#: book.translate.xml:6041
+#: book.translate.xml:6028
 msgid "How can I learn more about FreeBSD's internals?"
 msgstr "¿Como puedo aprender más acerca del funcionamiento interno de FreeBSD?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:6045
+#: book.translate.xml:6032
 msgid ""
 "See the <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/arch-"
 "handbook\">FreeBSD Architecture Handbook</link>."
@@ -10485,7 +10519,7 @@ msgstr ""
 "handbook\">Manual de arquitectura de FreeBSD</link>."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:6048
+#: book.translate.xml:6035
 msgid ""
 "Additionally, much general <trademark class=\"registered\">UNIX</trademark> "
 "knowledge is directly applicable to FreeBSD."
@@ -10494,13 +10528,13 @@ msgstr ""
 "\"registered\">UNIX</trademark>es directamente aplicable a FreeBSD."
 
 #. (itstool) path: question/para
-#: book.translate.xml:6055
+#: book.translate.xml:6042
 #, fuzzy
 msgid "How can I contribute to FreeBSD? What can I do to help?"
 msgstr "¿Cómo puedo contribuir a FreeBSD?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:6060
+#: book.translate.xml:6047
 #, fuzzy
 msgid ""
 "We accept all types of contributions: documentation, code, and even art. See "
@@ -10514,17 +10548,17 @@ msgstr ""
 "bienvenida!"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:6065
+#: book.translate.xml:6052
 msgid "And thanks for the thought!"
 msgstr "¡Y gracias por haberlo pensado!"
 
 #. (itstool) path: question/para
-#: book.translate.xml:6071
+#: book.translate.xml:6058
 msgid "What are snapshots and releases?"
 msgstr "¿Qué son snapshots y lanzamientos?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:6075
+#: book.translate.xml:6062
 #, fuzzy
 msgid ""
 "There are currently 3 active/semi-active branches in the FreeBSD <link xlink:"
@@ -10538,19 +10572,19 @@ msgstr ""
 "de desarrollo activas):"
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:6083
+#: book.translate.xml:6070
 #, fuzzy
 msgid "<symbol>stable/11/</symbol> AKA <emphasis>11-STABLE</emphasis>"
 msgstr "<symbol>stable/10/</symbol> alias <emphasis>10-STABLE</emphasis>"
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:6088
+#: book.translate.xml:6075
 #, fuzzy
 msgid "<symbol>stable/12/</symbol> AKA <emphasis>12-STABLE</emphasis>"
 msgstr "<symbol>stable/10/</symbol> alias <emphasis>10-STABLE</emphasis>"
 
 #. (itstool) path: listitem/para
-#: book.translate.xml:6093
+#: book.translate.xml:6080
 #, fuzzy
 msgid ""
 "<symbol>head/</symbol> AKA <emphasis>-CURRENT</emphasis> AKA <emphasis>13-"
@@ -10560,7 +10594,7 @@ msgstr ""
 "<emphasis>11-CURRENT</emphasis>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:6099
+#: book.translate.xml:6086
 msgid ""
 "<literal>HEAD</literal> is not an actual branch tag. It is a symbolic "
 "constant for the current, non-branched development stream known as "
@@ -10571,7 +10605,7 @@ msgstr ""
 "<emphasis>-CURRENT</emphasis>."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:6105
+#: book.translate.xml:6092
 #, fuzzy
 msgid ""
 "Right now, <emphasis>-CURRENT</emphasis> is the 13.<replaceable>X</"
@@ -10588,19 +10622,19 @@ msgstr ""
 "symbol>, se ramifico de <emphasis>-CURRENT</emphasis> en Septiembre del 2011."
 
 #. (itstool) path: question/para
-#: book.translate.xml:6116
+#: book.translate.xml:6103
 msgid "How can I make the most of the data I see when my kernel panics?"
 msgstr ""
 "¿Como puedo aprovechar al máximo los datos que veo cuando mi kernel tiene un "
 "pánico?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:6121
+#: book.translate.xml:6108
 msgid "Here is typical kernel panic:"
 msgstr "Este es un típico pánico de kernel:"
 
 #. (itstool) path: answer/programlisting
-#: book.translate.xml:6123
+#: book.translate.xml:6110
 #, no-wrap
 msgid ""
 "Fatal trap 12: page fault while in kernel mode\n"
@@ -10632,7 +10666,7 @@ msgstr ""
 "panic: page fault"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:6137
+#: book.translate.xml:6124
 msgid ""
 "This message is not enough. While the instruction pointer value is "
 "important, it is also configuration dependent as it varies depending on the "
@@ -10649,12 +10683,12 @@ msgstr ""
 "el fallo."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:6146
+#: book.translate.xml:6133
 msgid "To proceed:"
 msgstr "Para proceder:"
 
 #. (itstool) path: step/para
-#: book.translate.xml:6150
+#: book.translate.xml:6137
 msgid ""
 "Write down the instruction pointer value. Note that the <literal>0x8:</"
 "literal> part at the beginning is not significant in this case: it is the "
@@ -10665,18 +10699,18 @@ msgstr ""
 "<literal>0xf0xxxxxx</literal> la que nos interesa."
 
 #. (itstool) path: step/para
-#: book.translate.xml:6158
+#: book.translate.xml:6145
 msgid "When the system reboots, do the following:"
 msgstr "Cuando el sistema reinicie, haga lo siguiente:"
 
 #. (itstool) path: step/screen
-#: book.translate.xml:6160
+#: book.translate.xml:6147
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>nm -n kernel.that.caused.the.panic | grep f0xxxxxx</userinput>"
 msgstr "<prompt>%</prompt> <userinput>nm -n kernel.que.causo.el.panico | grep f0xxxxxx</userinput>"
 
 #. (itstool) path: step/para
-#: book.translate.xml:6162
+#: book.translate.xml:6149
 msgid ""
 "where <literal>f0xxxxxx</literal> is the instruction pointer value. The odds "
 "are you will not get an exact match since the symbols in the kernel symbol "
@@ -10694,13 +10728,13 @@ msgstr ""
 "inténtelo nuevamente:"
 
 #. (itstool) path: step/screen
-#: book.translate.xml:6171
+#: book.translate.xml:6158
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>nm -n kernel.that.caused.the.panic | grep f0xxxxx</userinput>"
 msgstr "<prompt>%</prompt> <userinput>nm -n kernel.que.causo.el.panico | grep f0xxxxx</userinput>"
 
 #. (itstool) path: step/para
-#: book.translate.xml:6173
+#: book.translate.xml:6160
 msgid ""
 "If that does not yield any results, chop off another digit. Repeat until "
 "there is some sort of output. The result will be a possible list of "
@@ -10713,7 +10747,7 @@ msgstr ""
 "punto de fallo, pero es mejor que nada."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:6182
+#: book.translate.xml:6169
 msgid ""
 "However, the best way to track down the cause of a panic is by capturing a "
 "crash dump, then using <citerefentry><refentrytitle>kgdb</"
@@ -10726,12 +10760,12 @@ msgstr ""
 "seguimiento de pila sobre el volcado de fallos."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:6187
+#: book.translate.xml:6174
 msgid "In any case, the method is this:"
 msgstr "En cualquier caso, el método es este:"
 
 #. (itstool) path: step/para
-#: book.translate.xml:6191
+#: book.translate.xml:6178
 msgid ""
 "Make sure that the following line is included in the kernel configuration "
 "file:"
@@ -10740,35 +10774,35 @@ msgstr ""
 "configuración del kernel:"
 
 #. (itstool) path: step/programlisting
-#: book.translate.xml:6194
+#: book.translate.xml:6181
 #, no-wrap
 msgid "makeoptions     DEBUG=-g          # Build kernel with gdb(1) debug symbols"
 msgstr "makeoptions     DEBUG=-g          # Build kernel with gdb(1) debug symbols"
 
 #. (itstool) path: step/para
-#: book.translate.xml:6198
+#: book.translate.xml:6185
 msgid "Change to the <filename>/usr/src</filename> directory:"
 msgstr "Cambie el directorio a  <filename>/usr/src</filename>:"
 
 #. (itstool) path: step/screen
-#: book.translate.xml:6201
+#: book.translate.xml:6188
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>cd /usr/src</userinput>"
 msgstr "<prompt>#</prompt> <userinput>cd /usr/src</userinput>"
 
 #. (itstool) path: step/para
-#: book.translate.xml:6205
+#: book.translate.xml:6192
 msgid "Compile the kernel:"
 msgstr "Compile el kernel:"
 
 #. (itstool) path: step/screen
-#: book.translate.xml:6207
+#: book.translate.xml:6194
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>make buildkernel KERNCONF=<replaceable>MYKERNEL</replaceable></userinput>"
 msgstr "<prompt>#</prompt> <userinput>make buildkernel KERNCONF=<replaceable>MYKERNEL</replaceable></userinput>"
 
 #. (itstool) path: step/para
-#: book.translate.xml:6211
+#: book.translate.xml:6198
 msgid ""
 "Wait for <citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> to finish compiling."
@@ -10777,18 +10811,18 @@ msgstr ""
 "manvolnum></citerefentry> termine de compilar."
 
 #. (itstool) path: step/screen
-#: book.translate.xml:6215
+#: book.translate.xml:6202
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>make installkernel KERNCONF=MYKERNEL</userinput>"
 msgstr "<prompt>#</prompt> <userinput>make installkernel KERNCONF=MYKERNEL</userinput>"
 
 #. (itstool) path: step/para
-#: book.translate.xml:6219
+#: book.translate.xml:6206
 msgid "Reboot."
 msgstr "Reinicie."
 
 #. (itstool) path: note/para
-#: book.translate.xml:6224
+#: book.translate.xml:6211
 msgid ""
 "If <varname>KERNCONF</varname> is not included, the <filename>GENERIC</"
 "filename> kernel will instead be built and installed."
@@ -10797,7 +10831,7 @@ msgstr ""
 "<filename>GENERIC</filename> sera compilado e instalado en su lugar."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:6229
+#: book.translate.xml:6216
 msgid ""
 "The <citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> process will have built two kernels. <filename>/"
@@ -10818,7 +10852,7 @@ msgstr ""
 "manvolnum></citerefentry>."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:6238
+#: book.translate.xml:6225
 msgid ""
 "To capture a crash dump, edit <filename>/etc/rc.conf</filename> and set "
 "<literal>dumpdev</literal> to point to either the swap partition or "
@@ -10852,7 +10886,7 @@ msgstr ""
 "colocaran en volcado de fallos en <filename>/var/crash</filename>."
 
 #. (itstool) path: note/para
-#: book.translate.xml:6251
+#: book.translate.xml:6238
 msgid ""
 "FreeBSD crash dumps are usually the same size as physical RAM. Therefore, "
 "make sure there is enough space in <filename>/var/crash</filename> to hold "
@@ -10876,14 +10910,14 @@ msgstr ""
 "de modo que el tamaño del volcado de fallos sea de 128 MB en lugar de 1 GB."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:6266
+#: book.translate.xml:6253
 msgid "Once the crash dump has been recovered , get a stack trace as follows:"
 msgstr ""
 "Una vez que se haya recuperado el volcado de fallos, obtenga un seguimiento "
 "de pila de esta manera:"
 
 #. (itstool) path: answer/screen
-#: book.translate.xml:6269
+#: book.translate.xml:6256
 #, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>kgdb /usr/obj/usr/src/sys/MYKERNEL/kernel.debug /var/crash/vmcore.0</userinput>\n"
@@ -10893,7 +10927,7 @@ msgstr ""
 "<prompt>(kgdb)</prompt> <userinput>backtrace</userinput>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:6272
+#: book.translate.xml:6259
 msgid ""
 "Note that there may be several screens worth of information. Ideally, use "
 "<citerefentry><refentrytitle>script</refentrytitle><manvolnum>1</manvolnum></"
@@ -10917,7 +10951,7 @@ msgstr ""
 "el estado del sistema en el momento del fallo."
 
 #. (itstool) path: tip/para
-#: book.translate.xml:6284
+#: book.translate.xml:6271
 msgid ""
 "If a second computer is available, <citerefentry><refentrytitle>kgdb</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> can be configured to "
@@ -10931,7 +10965,7 @@ msgstr ""
 "kernel."
 
 #. (itstool) path: note/para
-#: book.translate.xml:6291
+#: book.translate.xml:6278
 msgid ""
 "If <literal>DDB</literal> is enabled and the kernel drops into the debugger, "
 "a panic and a crash dump can be forced by typing <literal>panic</literal> at "
@@ -10946,7 +10980,7 @@ msgstr ""
 "<literal>continue</literal> y finalizara el volcado de fallos."
 
 #. (itstool) path: question/para
-#: book.translate.xml:6305
+#: book.translate.xml:6292
 msgid ""
 "Why has <function>dlsym()</function> stopped working for ELF executables?"
 msgstr ""
@@ -10954,7 +10988,7 @@ msgstr ""
 "ejecutables ELF?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:6310
+#: book.translate.xml:6297
 msgid ""
 "The ELF toolchain does not, by default, make the symbols defined in an "
 "executable visible to the dynamic linker. Consequently <function>dlsym()</"
@@ -10967,7 +11001,7 @@ msgstr ""
 "<function>dlopen(NULL, flags)</function> y no podrá encontrar tales símbolos."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:6317
+#: book.translate.xml:6304
 msgid ""
 "To search, using <function>dlsym()</function>, for symbols present in the "
 "main executable of a process, link the executable using the <option>--export-"
@@ -10981,14 +11015,14 @@ msgstr ""
 "citerefentry>)."
 
 #. (itstool) path: question/para
-#: book.translate.xml:6327
+#: book.translate.xml:6314
 msgid "How can I increase or reduce the kernel address space on i386?"
 msgstr ""
 "¿Como puedo incrementar o reducir el espacio de direcciones del kernel en "
 "i386?"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:6332
+#: book.translate.xml:6319
 msgid ""
 "By default, the kernel address space is 1 GB (2 GB for PAE) for i386. When "
 "running a network-intensive server or using ZFS, this will probably not be "
@@ -10999,7 +11033,7 @@ msgstr ""
 "ZFS, esto probablemente no sea suficiente."
 
 #. (itstool) path: answer/para
-#: book.translate.xml:6338
+#: book.translate.xml:6325
 msgid ""
 "Add the following line to the kernel configuration file to increase "
 "available space and rebuild the kernel:"
@@ -11008,13 +11042,13 @@ msgstr ""
 "incrementar el espacio disponible y recompile el kernel:"
 
 #. (itstool) path: answer/programlisting
-#: book.translate.xml:6342
+#: book.translate.xml:6329
 #, no-wrap
 msgid "options KVA_PAGES=<replaceable>N</replaceable>"
 msgstr "options KVA_PAGES=<replaceable>N</replaceable>"
 
 #. (itstool) path: answer/para
-#: book.translate.xml:6344
+#: book.translate.xml:6331
 msgid ""
 "To find the correct value of <replaceable>N</replaceable>, divide the "
 "desired address space size (in megabytes) by four. (For example, it is "
@@ -11025,12 +11059,12 @@ msgstr ""
 "ejemplo, <literal>512</literal> para 2 GB.)"
 
 #. (itstool) path: chapter/title
-#: book.translate.xml:6354
+#: book.translate.xml:6341
 msgid "Acknowledgments"
 msgstr "Reconocimientos"
 
 #. (itstool) path: chapter/para
-#: book.translate.xml:6356
+#: book.translate.xml:6343
 msgid ""
 "This innocent little Frequently Asked Questions document has been written, "
 "rewritten, edited, folded, spindled, mutilated, eviscerated, contemplated, "
@@ -11045,7 +11079,7 @@ msgstr ""
 "miles. Repetidamente."
 
 #. (itstool) path: chapter/para
-#: book.translate.xml:6363
+#: book.translate.xml:6350
 msgid ""
 "We wish to thank every one of the people responsible, and we encourage you "
 "to <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/"
@@ -11056,6 +11090,42 @@ msgstr ""
 "a que <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/"
 "contributing/article.html\">se les una</link> para hacer este  <acronym>FAQ</"
 "acronym> aún mejor."
+
+#~ msgid ""
+#~ "When using <citerefentry><refentrytitle>syscons</"
+#~ "refentrytitle><manvolnum>4</manvolnum></citerefentry>, the default "
+#~ "console driver, build and install a new kernel with this line in the "
+#~ "configuration file:"
+#~ msgstr ""
+#~ "Cuando use <citerefentry><refentrytitle>syscons</"
+#~ "refentrytitle><manvolnum>4</manvolnum></citerefentry>, el controlador por "
+#~ "defecto dela consola, compile e instale un nuevo kernel con esta línea en "
+#~ "el archivo de configuración:"
+
+#~ msgid "options SC_DISABLE_REBOOT"
+#~ msgstr "options SC_DISABLE_REBOOT"
+
+#~ msgid ""
+#~ "This can also be done by setting the following "
+#~ "<citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</"
+#~ "manvolnum></citerefentry> which does not require a reboot or kernel "
+#~ "recompile:"
+#~ msgstr ""
+#~ "Esto también puede hacerse ajustando el siguiente "
+#~ "<citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</"
+#~ "manvolnum></citerefentry> que no requiere un reinicio o una recompilación "
+#~ "de kernel:"
+
+#~ msgid ""
+#~ "The above two methods are exclusive: The "
+#~ "<citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</"
+#~ "manvolnum></citerefentry> does not exist if the kernel is compiled with "
+#~ "<literal>SC_DISABLE_REBOOT</literal>."
+#~ msgstr ""
+#~ "Los dos métodos anteriores son exclusivos: el "
+#~ "<citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</"
+#~ "manvolnum></citerefentry> no existe si el kernel se compila con "
+#~ "<literal>SC_DISABLE_REBOOT</literal>."
 
 #~ msgid ""
 #~ "For more information, see <link xlink:href=\"http://www.ibb.net/~anne/"
@@ -11083,8 +11153,12 @@ msgstr ""
 #~ "application> haya sido instalada con propiedad, los archivos MIDI pueden "
 #~ "convertirse a archivos WAV con el siguiente comando:"
 
-#~ msgid "<prompt>%</prompt> <userinput>timidity -Ow -s 44100 -o /tmp/juke/01.wav 01.mid</userinput>"
-#~ msgstr "<prompt>%</prompt> <userinput>timidity -Ow -s 44100 -o /tmp/juke/01.wav 01.mid</userinput>"
+#~ msgid ""
+#~ "<prompt>%</prompt> <userinput>timidity -Ow -s 44100 -o /tmp/juke/01.wav "
+#~ "01.mid</userinput>"
+#~ msgstr ""
+#~ "<prompt>%</prompt> <userinput>timidity -Ow -s 44100 -o /tmp/juke/01.wav "
+#~ "01.mid</userinput>"
 
 #~ msgid ""
 #~ "The WAV files can then be converted to other formats or burned onto audio "
