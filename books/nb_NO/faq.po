@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-02-15 15:52-0300\n"
-"PO-Revision-Date: 2020-03-04 19:29+0000\n"
+"PO-Revision-Date: 2020-03-04 21:15+0000\n"
 "Last-Translator: Lars Skogstad <n3c@n3c.no>\n"
 "Language-Team: Norwegian Bokmål <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_faq/nb_NO/>\n"
@@ -4798,21 +4798,24 @@ msgid ""
 "manvolnum></citerefentry> does not work in live mode (-L) on a filesystem, "
 "with Journaled Soft Updates (<acronym>SU+J</acronym>)."
 msgstr ""
+"Til slutt fungerer <citerefentry><refentrytitle>dump</refentrytitle><manvolnu"
+"m>8</manvolnum></citerefentry>ikke i live-modus (-L) på et filsystem, med "
+"Journaled Soft Updates (<acronym> SU + J </acronym>)."
 
 #. (itstool) path: question/para
 #: book.translate.xml:2799
 msgid "Can I mount other foreign file systems under FreeBSD?"
-msgstr ""
+msgstr "Kan jeg montere andre typer ukjente filsystemer under FreeBSD?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2804
 msgid "FreeBSD supports a variety of other file systems."
-msgstr ""
+msgstr "FreeBSD støtter en rekke andre filsystemer."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:2808
 msgid "UFS"
-msgstr ""
+msgstr "UFS"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2811
@@ -4822,11 +4825,15 @@ msgid ""
 "depending on the details of the disk partitioning for the operating system "
 "in question."
 msgstr ""
+"UFS CD-ROM-er kan monteres direkte på FreeBSD. Montering av diskpartisjoner "
+"fra Digital UNIX og andre systemer som støtter UFS, kan være mer komplisert, "
+"avhengig av detaljene i diskpartisjoneringen for det aktuelle "
+"operativsystemet."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:2820
 msgid "ext2/ext3"
-msgstr ""
+msgstr "ext2/ext3"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2823
@@ -4835,11 +4842,14 @@ msgid ""
 "partitions. See <citerefentry><refentrytitle>ext2fs</"
 "refentrytitle><manvolnum>5</manvolnum></citerefentry> for more information."
 msgstr ""
+"FreeBSD støtter <literal>ext2fs</literal> og <literal>ext3fs</literal> "
+"partisjoner. Se <citerefentry><refentrytitle>ext2fs</refentrytitle><manvolnum"
+">5</manvolnum></citerefentry> for mer informasjon."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:2830
 msgid "NTFS"
-msgstr ""
+msgstr "NTFS"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2833
@@ -4849,11 +4859,15 @@ msgid ""
 "tuxera.com/community/ntfs-3g-manual/\"><application>ntfs-3g</application></"
 "link>."
 msgstr ""
+"FUSE basert NTFS support er tilgjengelig som en port (<package>sysutils/"
+"fusefs-ntfs</package>). For mer informasjon se <link xlink:href=\""
+"http://www.tuxera.com/community/ntfs-3g-manual/\"><application>ntfs-"
+"3g</application></link>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:2840
 msgid "FAT"
-msgstr ""
+msgstr "FAT"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2843
@@ -4862,12 +4876,17 @@ msgid ""
 "<citerefentry><refentrytitle>mount_msdosfs</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>."
 msgstr ""
+"FreeBSD inkluderer en FAT-driver for å lese-skrive. For mer informasjon, se <"
+"citerefentry><refentrytitle>mount_msdosfs</refentrytitle><manvolnum>8</manvol"
+"num></citerefentry>."
 
 #. (itstool) path: varlistentry/term
 #. (itstool) path: chapter/title
 #: book.translate.xml:2849 book.translate.xml:3259
 msgid "ZFS"
 msgstr ""
+"(itstool) path: varlistentry/term\n"
+"(itstool) path: chapter/title"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2852
@@ -4877,6 +4896,10 @@ msgid ""
 "memory. For more information, see <citerefentry><refentrytitle>zfs</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 msgstr ""
+"FreeBSD inkluderer en port av <trademark> Sun </trademark> sin ZFS-driver. "
+"Den nåværende anbefalingen er å bruke den bare på amd64-plattformer med "
+"tilstrekkelig minne. For mer informasjon, se <citerefentry><refentrytitle>zfs"
+"</refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2860
@@ -4885,11 +4908,14 @@ msgid ""
 "FreeBSD Ports Collection provides several FUSE applications to support many "
 "other file systems."
 msgstr ""
+"FreeBSD inkluderer Network File System <acronym> NFS </acronym> og FreeBSD "
+"Ports Collection gir flere FUSE-applikasjoner som støtter mange andre "
+"filsystemer."
 
 #. (itstool) path: question/para
 #: book.translate.xml:2869
 msgid "How do I mount a secondary DOS partition?"
-msgstr ""
+msgstr "Hvordan monterer jeg en sekundær DOS-partisjon?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2873
@@ -4899,17 +4925,23 @@ msgid ""
 "partition on the second SCSI drive, there will be a device file for "
 "<quote>slice 5</quote> in <filename>/dev</filename>. To mount it:"
 msgstr ""
+"De sekundære DOS-partisjonene blir funnet etter <emphasis>alle </emphasis> "
+"de viktigste partisjonene. For eksempel, hvis <literal>E</literal> er den "
+"andre DOS-partisjonen på den andre SCSI-stasjonen, vil det være en enhetsfil "
+"for <quote> skive 5 </quote> i <filename>/dev</filename>. Slik monterer du "
+"den:"
 
 #. (itstool) path: answer/screen
 #: book.translate.xml:2880
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>mount -t msdosfs /dev/da1s5 /dos/e</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>mount -t msdosfs /dev/da1s5 /dos/e</userinput>"
 
 #. (itstool) path: question/para
 #: book.translate.xml:2886
 msgid "Is there a cryptographic file system for FreeBSD?"
-msgstr ""
+msgstr "Er det et kryptografisk filsystem for FreeBSD?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2890
@@ -4920,6 +4952,11 @@ msgid ""
 "href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/disks-encrypting."
 "html\">Encrypting Disk Partitions</link> section of the FreeBSD Handbook."
 msgstr ""
+"Ja, <citerefentry><refentrytitle>gbde</refentrytitle><manvolnum>8</manvolnum>"
+"</citerefentry> og <citerefentry><refentrytitle>geli</refentrytitle><manvolnu"
+"m>8</manvolnum></citerefentry>. Se under <link xlink:href=\""
+"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/disks-encrypting.html\">"
+"Encrypting Disk Partitions</link> seksjonen i FreeBSD Håndboka."
 
 #. (itstool) path: question/para
 #: book.translate.xml:2899
@@ -4927,6 +4964,8 @@ msgid ""
 "How do I boot FreeBSD and <trademark class=\"registered\">Linux</trademark> "
 "using <application>GRUB</application>?"
 msgstr ""
+"Hvordan booter jeg FreeBSD og <trademark class=\"registered\""
+">Linux</trademark> ved å bruke <application>GRUB</application>?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2904
@@ -4936,6 +4975,10 @@ msgid ""
 "conf</filename>, depending upon which is used by the <trademark class="
 "\"registered\">Linux</trademark> distribution."
 msgstr ""
+"For å boote FreeBSD med <application>GRUB</application>, legg til følgende "
+"til <filename>/boot/grub/menu.lst</filename> eller <filename>/boot/grub/"
+"grub.conf</filename>, avhengig av hvilken som brukes av <trademark class=\""
+"registrert\"> Linux </trademark> distribusjon."
 
 #. (itstool) path: answer/programlisting
 #: book.translate.xml:2910
@@ -4945,6 +4988,9 @@ msgid ""
 "\troot <replaceable>(hd0,a)</replaceable>\n"
 "\tkernel /boot/loader"
 msgstr ""
+"title FreeBSD 9.1\n"
+"\troot <replaceable>(hd0,a)</replaceable>\n"
+"\tkernel /boot/loader"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2914
@@ -4955,6 +5001,11 @@ msgid ""
 "omitted, <application>GRUB</application> searches the first slice which has "
 "the <literal>a</literal> partition."
 msgstr ""
+"Hvor <replaceable> hd0, peker a </replaceable> på rotpartisjonen på den "
+"første disken. For å spesifisere skivenummeret, bruk noe som dette "
+"<replaceable> (hd0,2, a) </replaceable>. Hvis skivenummeret er utelatt, "
+"søker <application> GRUB </application> som standard den første skiven som "
+"har <literal>a</literal>-partisjonen."
 
 #. (itstool) path: question/para
 #: book.translate.xml:2926
@@ -4962,6 +5013,8 @@ msgid ""
 "How do I boot FreeBSD and <trademark class=\"registered\">Linux</trademark> "
 "using <application>BootEasy?</application>"
 msgstr ""
+"Hvordan booter jeg FreeBSD og <trademark class=\"registered\""
+">Linux</trademark> med <application>BootEasy?</application>"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2931
@@ -4970,6 +5023,9 @@ msgid ""
 "trademark> boot partition instead of in the Master Boot Record. Then boot "
 "LILO from <application>BootEasy</application>."
 msgstr ""
+"Installer LILO i begynnelsen av <trademark class=\"registrert\""
+">Linux</trademark>startpartisjon i stedet for i Master Boot Record. Start "
+"deretter LILO fra <application>BootEasy</application>."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2935
@@ -4979,6 +5035,11 @@ msgid ""
 "it simpler to get <trademark class=\"registered\">Linux</trademark> booting "
 "again if <trademark class=\"registered\">Windows</trademark> is reinstalled."
 msgstr ""
+"Dette anbefales når du kjører <trademark class=\"registered\""
+">Windows</trademark> og <trademark clas =\"registrert\">Linux</trademark> "
+"ettersom det gjør det enklere å få <trademark class=\"registered\">Linux</ "
+"trademark> starte opp igjen hvis <trademark class=\"registered\"> Windows "
+"</trademark> er installert på nytt."
 
 #. (itstool) path: question/para
 #: book.translate.xml:2943
@@ -4986,6 +5047,8 @@ msgid ""
 "How do I change the boot prompt from <literal>???</literal> to something "
 "more meaningful?"
 msgstr ""
+"Hvordan endrer jeg startledeteksten fra <literal>???</literal> til noe mer "
+"meningsfylt?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2949
@@ -4994,22 +5057,27 @@ msgid ""
 "it. There are a number of other boot managers in the <filename>sysutils</"
 "filename> category of the Ports Collection."
 msgstr ""
+"Dette kan ikke oppnås med standard boot manager uten å skrive den om. Det er "
+"en rekke andre oppstartsadministratorer i kategorien "
+"<filename>sysutils</filename> i Port Kolleksjonen."
 
 #. (itstool) path: question/para
 #: book.translate.xml:2958
 msgid "How do I use a new removable drive?"
-msgstr ""
+msgstr "Hvordan bruker jeg en ny flyttbar stasjon?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2962
 msgid "If the drive already has a file system on it, use a command like this:"
 msgstr ""
+"Hvis stasjonen allerede har et filsystem på seg, bruk en kommando som denne:"
 
 #. (itstool) path: answer/screen
 #: book.translate.xml:2965
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>mount -t msdosfs /dev/da0s1 /mnt</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>mount -t msdosfs /dev/da0s1 /mnt</userinput>"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2967
@@ -5020,6 +5088,11 @@ msgid ""
 "will be used by other operating systems, a more portable choice, such as "
 "msdosfs, is better."
 msgstr ""
+"Hvis stasjonen bare skal brukes med FreeBSD-systemer, må du partisjonere den "
+"med <acronym>UFS</acronym> eller <acronym>ZFS</acronym>. Dette vil gi lang "
+"filstøtte, forbedring i ytelse og stabilitet. Hvis stasjonen vil bli brukt "
+"av andre operativsystemer, er et mer bærbart valg, for eksempel msdosfs, "
+"bedre."
 
 #. (itstool) path: answer/screen
 #: book.translate.xml:2974
@@ -5029,28 +5102,32 @@ msgid ""
 "<prompt>#</prompt> <userinput>gpart create -s GPT /dev/da0</userinput>\n"
 "<prompt>#</prompt> <userinput>gpart add -t freebsd-ufs /dev/da0</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>dd if=/dev/zero of=/dev/da0 count=2</userinput>"
+"\n"
+"<prompt>#</prompt> <userinput>gpart create -s GPT /dev/da0</userinput>\n"
+"<prompt>#</prompt> <userinput>gpart add -t freebsd-ufs /dev/da0</userinput>"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2978
 msgid "Finally, create a new file system:"
-msgstr ""
+msgstr "Til slutt lager du et nytt filsystem:"
 
 #. (itstool) path: answer/screen
 #: book.translate.xml:2980
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>newfs /dev/da0p1</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>newfs /dev/da0p1</userinput>"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2982
 msgid "and mount it:"
-msgstr ""
+msgstr "og monter den:"
 
 #. (itstool) path: answer/screen
 #: book.translate.xml:2984
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>mount /dev/da0s1 /mnt</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>mount /dev/da0s1 /mnt</userinput>"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2986
@@ -5060,18 +5137,24 @@ msgid ""
 "citerefentry>) so you can just type <command>mount /mnt</command> in the "
 "future:"
 msgstr ""
+"Det er lurt å legge til en linje til <filename>/etc/fstab</filename> (se <cit"
+"erefentry><refentrytitle>fstab</refentrytitle><manvolnum>5</manvolnum></citer"
+"efentry>) slik at du kan bare skriv <command>mount /mnt</command> i "
+"fremtiden:"
 
 #. (itstool) path: answer/programlisting
 #: book.translate.xml:2991
 #, no-wrap
 msgid "/dev/da0p1 /mnt ufs rw,noauto 0 0"
-msgstr ""
+msgstr "/dev/da0p1 /mnt ufs rw,noauto 0 0"
 
 #. (itstool) path: question/para
 #: book.translate.xml:2997
 msgid ""
 "Why do I get <errorname>Incorrect super block</errorname> when mounting a CD?"
 msgstr ""
+"Hvorfor får jeg <errorname>Incorrect super block</errorname> når jeg "
+"monterer en CD?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:3002
@@ -5080,12 +5163,17 @@ msgid ""
 "Handbook section on <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/"
 "books/handbook/creating-cds.html#mounting-cd\">Using Data CDs</link>."
 msgstr ""
+"ype enhet som skal monteres, må spesifiseres. Dette er beskrevet i seksjonen "
+"Håndbok på <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
+"handbook/creating-cds.html#mounting-cd\">Using Data CDs</link>."
 
 #. (itstool) path: question/para
 #: book.translate.xml:3010
 msgid ""
 "Why do I get <errorname>Device not configured</errorname> when mounting a CD?"
 msgstr ""
+"Hvorfor får jeg <errorname>Enheten ikke konfigurert</errorname> når jeg "
+"monterer en CD?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:3015
@@ -5095,6 +5183,11 @@ msgid ""
 "en_US.ISO8859-1/books/handbook/creating-cds.html#mounting-cd\">Using Data "
 "CDs</link> section of the Handbook for a detailed discussion of this issue."
 msgstr ""
+"Dette betyr generelt at det ikke er noen CD i stasjonen, eller at stasjonen "
+"ikke er synlig i busen. Se <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US."
+"ISO8859-1/books/handbook/creating-cds.html#mounting-cd\">Using Data "
+"CDs</link> seksjonen av Håndboka for en mer detaljert diskusjon rundt dette "
+"problemet."
 
 #. (itstool) path: question/para
 #: book.translate.xml:3025
@@ -5102,6 +5195,8 @@ msgid ""
 "Why do all non-English characters in filenames show up as <quote>?</quote> "
 "on my CDs when mounted in FreeBSD?"
 msgstr ""
+"Hvorfor vises alle ikke-engelske tegn i filnavn som <quote>?</quote> på CD-"
+"ene mine når de er montert i FreeBSD?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:3030
@@ -5111,6 +5206,10 @@ msgid ""
 "section on <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
 "handbook/creating-cds.html#mounting-cd\">Using Data CD-ROMs</link>."
 msgstr ""
+"CDen bruker sannsynligvis utvidelsen <quote> Joliet </quote> for lagring av "
+"informasjon om filer og kataloger. Dette diskuteres i håndbok-delen <link "
+"xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/creating-"
+"cds.html#mounting-cd\">Using Data CD-ROMs</link>."
 
 #. (itstool) path: question/para
 #: book.translate.xml:3040
@@ -5118,6 +5217,8 @@ msgid ""
 "A CD burned under FreeBSD cannot be read under any other operating system. "
 "Why?"
 msgstr ""
+"En CD brent under FreeBSD kan ikke leses under noe annet operativsystem. "
+"Hvorfor?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:3045
@@ -5127,14 +5228,19 @@ msgid ""
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/creating-cds."
 "html#mounting-cd\">Using Data <acronym>CD</acronym>s</link>."
 msgstr ""
+"Dette betyr at en rå fil ble brent til CD-en, i stedet for å opprette et ISO "
+"9660-filsystem. Ta en titt i Håndboka under seksjon <link xlink:href=\""
+"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/creating-cds.html"
+"#mounting-cd\">Using Data <acronym>CD</acronym>s</link>."
 
 #. (itstool) path: question/para
 #: book.translate.xml:3054
 msgid "How can I create an image of a data CD?"
-msgstr ""
+msgstr "Hvordan kan jeg lage et bilde av en data-CD?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:3058
+#, fuzzy
 msgid ""
 "This is discussed in the Handbook section on <link xlink:href="
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/creating-cds."
@@ -5143,11 +5249,17 @@ msgid ""
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/creating-cds.html"
 "\">Creating CDs Section</link> in the Storage chapter in the Handbook."
 msgstr ""
+"Dette er diskutert i håndboka seksjon <link xlink: href = \"@@ URL_RELPREFIX "
+"@@ / doc / no.ISO8859-1 / books / handbook / create-cds.html # mkisofs\">"
+"Skrive data til et <acronym>ISO</acronym> Filsystem </link>. Hvis du vil ha "
+"mer informasjon om hvordan du jobber med CD-ROM-er, kan du se <link "
+"xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/creating-"
+"cds.html\">Creating CDs Section</link> in Storage chapter i Håndboka."
 
 #. (itstool) path: question/para
 #: book.translate.xml:3068
 msgid "Why can I not <command>mount</command> an audio CD?"
-msgstr ""
+msgstr "Hvorfor kan jeg ikke <command>mount</command> en audio CD?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:3073
@@ -5158,6 +5270,11 @@ msgid ""
 "they just have data. Instead, use a program that reads audio CDs, such as "
 "the <package>audio/xmcd</package> package or port."
 msgstr ""
+"Å prøve å montere en lyd-CD vil produsere en feil som <errorname>cd9660:/dev/"
+"cd0: Invalid argument</errorname>. Dette fordi <command>mount</command> bare "
+"fungerer på filsystemer. Lyd-CD-er har ikke filsystemer; de har bare data. I "
+"stedet bruker du et program som leser lyd-CDer, for eksempel pakken <package>"
+"lyd/xmcd</package>."
 
 #. (itstool) path: question/para
 #: book.translate.xml:3085
