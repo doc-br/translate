@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-03-14 14:17-0300\n"
-"PO-Revision-Date: 2020-02-15 20:26+0000\n"
+"PO-Revision-Date: 2020-03-14 20:09+0000\n"
 "Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate-dev.freebsd.org/"
 "projects/freebsd-doc/boooks_porters-handbook/pt_BR/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.10.3\n"
+"X-Generator: Weblate 3.11.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -39970,25 +39970,11 @@ msgstr ""
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:22790
-#, fuzzy
-#| msgid "do-install"
 msgid "do-{build,install,test}"
-msgstr "do-install"
+msgstr "do-{build,install,test}"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:22781
-#, fuzzy
-#| msgid ""
-#| "Sets default values and targets used to build <application>Go</"
-#| "application> software. A build dependency on the Go compiler port "
-#| "selected via <varname>GO_PORT</varname> is added. By default the build is "
-#| "performed in GOPATH mode. If Go software uses modules, the modules-aware "
-#| "mode can be switched on with <literal>modules</literal> argument. "
-#| "<literal>no_targets</literal> will setup build environment like "
-#| "<varname>GO_ENV</varname>, <varname>GO_BUILDFLAGS</varname> but skip "
-#| "creating <_:buildtarget-1/>, <_:buildtarget-2/> and <_:buildtarget-3/> "
-#| "targets. <literal>run</literal> will also add a run dependency on what is "
-#| "in <varname>GO_PORT</varname>."
 msgid ""
 "Sets default values and targets used to build <application>Go</application> "
 "software. A build dependency on the Go compiler port selected via "
@@ -40007,9 +39993,9 @@ msgstr ""
 "módulos, o modo de reconhecimento de módulos pode ser ativado com o "
 "argumento <literal>modules</literal>. <literal>no_targets</literal> irá "
 "configurar o ambiente de compilação com <varname>GO_ENV</varname>, "
-"<varname>GO_BUILDFLAGS</varname> mas irá pular os targets <_:buildtarget-1/"
-">, <_:buildtarget-2/> e <_:buildtarget-3/>. <literal>run</literal> também "
-"adicionará uma dependência de tempo de execução do que estiver em "
+"<varname>GO_BUILDFLAGS</varname> mas irá pular os targets <_:buildtarget-1/> "
+"e <_:buildtarget-2/>. <literal>run</literal> também adicionará uma "
+"dependência de tempo de execução do que estiver em "
 "<varname>GO_PORT</varname>."
 
 #. (itstool) path: sect1/para
@@ -40059,10 +40045,8 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:22826
-#, fuzzy
-#| msgid "<varname>TEST_TARGET</varname>"
 msgid "<varname>GO_TESTTARGET</varname>"
-msgstr "<varname>TEST_TARGET</varname>"
+msgstr "<varname>GO_TESTTARGET</varname>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:22829
@@ -40070,6 +40054,8 @@ msgid ""
 "The packages to test. The default value is <literal>./...</literal> (the "
 "current package and all subpackages)."
 msgstr ""
+"Os pacotes para testar. O valor padrão é <literal>./...</literal> (o pacote "
+"atual e todos os subpacotes)."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:22836
@@ -40106,30 +40092,22 @@ msgstr "<varname>GO_BUILDFLAGS</varname>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:22859
-#, fuzzy
-#| msgid ""
-#| "Additional build arguments to be passed to <command>go install</command>."
 msgid "Additional build arguments to be passed to <command>go build</command>."
 msgstr ""
-"Argumentos de compilação adicionais para passar para o <command>go install</"
-"command>."
+"Argumentos de compilação adicionais para passar para o <command>go "
+"build</command>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:22865
-#, fuzzy
-#| msgid "<varname>CGO_CFLAGS</varname>"
 msgid "<varname>GO_TESTFLAGS</varname>"
-msgstr "<varname>CGO_CFLAGS</varname>"
+msgstr "<varname>GO_TESTFLAGS</varname>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:22868
-#, fuzzy
-#| msgid ""
-#| "Additional build arguments to be passed to <command>go install</command>."
 msgid "Additional build arguments to be passed to <command>go test</command>."
 msgstr ""
-"Argumentos de compilação adicionais para passar para o <command>go install</"
-"command>."
+"Argumentos de compilação adicionais para passar para o <command>go "
+"test</command>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:22874
@@ -45852,209 +45830,149 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26091
-#, fuzzy
-#| msgid "1300007"
 msgid "1300078"
-msgstr "1300007"
+msgstr "1300078"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26092
-#, fuzzy
-#| msgid "<revnumber>354820</revnumber>"
 msgid "<revnumber>358020</revnumber>"
-msgstr "<revnumber>354820</revnumber>"
+msgstr "<revnumber>358020</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26093
-#, fuzzy
-#| msgid "February 2, 2020"
 msgid "February 17, 2020"
-msgstr "2 de fevereiro de 2020"
+msgstr "17 de fevereiro de 2020"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26094
-#, fuzzy
-#| msgid ""
-#| "13.0-CURRENT after changing the size of <literal>struct linux_cdev</"
-#| "literal> on 32-bit platforms."
 msgid ""
 "13.0-CURRENT after changing <literal>struct vnet</literal> and the VNET "
 "magic cookie."
 msgstr ""
-"13.0-CURRENT depois de mudar o tamanho do <literal>struct linux_cdev</"
-"literal> nas plataformas de 32-bits."
+"13.0-CURRENT after changing <literal>struct vnet</literal> and the VNET "
+"magic cookie."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26100
-#, fuzzy
-#| msgid "1300007"
 msgid "1300079"
-msgstr "1300007"
+msgstr "1300079"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26101
-#, fuzzy
-#| msgid "<revnumber>53164</revnumber>"
 msgid "<revnumber>358164</revnumber>"
-msgstr "<revnumber>53164</revnumber>"
+msgstr "<revnumber>358164</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26102 book.translate.xml:26110
-#, fuzzy
-#| msgid "February 2, 2020"
 msgid "February 20, 2020"
-msgstr "2 de fevereiro de 2020"
+msgstr "20 de fevereiro de 2020"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26103
-#, fuzzy
-#| msgid "5.0-CURRENT after Perl upgrade to 5.6.0"
 msgid "13.0-CURRENT after upgrading ncurses to 6.2.x"
-msgstr "5.0-CURRENT after Perl upgrade to 5.6.0"
+msgstr "13.0-CURRENT after upgrading ncurses to 6.2.x"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26108
-#, fuzzy
-#| msgid "1300008"
 msgid "1300080"
-msgstr "1300008"
+msgstr "1300080"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26109
-#, fuzzy
-#| msgid "<revnumber>338172</revnumber>"
 msgid "<revnumber>358172</revnumber>"
-msgstr "<revnumber>338172</revnumber>"
+msgstr "<revnumber>358172</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26111
-#, fuzzy
-#| msgid "13.0-CURRENT after adding sysctlbyname system call"
 msgid "13.0-CURRENT after adding realpathat syscall to VFS."
-msgstr "13.0-CURRENT after adding sysctlbyname system call"
+msgstr "13.0-CURRENT after adding realpathat syscall to VFS."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26116
-#, fuzzy
-#| msgid "1300008"
 msgid "1300081"
-msgstr "1300008"
+msgstr "1300081"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26117
-#, fuzzy
-#| msgid "<revnumber>355828</revnumber>"
 msgid "<revnumber>358218</revnumber>"
-msgstr "<revnumber>355828</revnumber>"
+msgstr "<revnumber>358218</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26118
-#, fuzzy
-#| msgid "February 2, 2020"
 msgid "February 21, 2020"
-msgstr "2 de fevereiro de 2020"
+msgstr "21 de fevereiro de 2020"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26119
-#, fuzzy
-#| msgid "11.0-CURRENT after iconv changes."
 msgid "13.0-CURRENT after after recent linuxkpi changes."
-msgstr "11.0-CURRENT after iconv changes."
+msgstr "13.0-CURRENT after after recent linuxkpi changes."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26124
-#, fuzzy
-#| msgid "1300008"
 msgid "1300082"
-msgstr "1300008"
+msgstr "1300082"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26125
-#, fuzzy
-#| msgid "<revnumber>354977</revnumber>"
 msgid "<revnumber>358497</revnumber>"
-msgstr "<revnumber>354977</revnumber>"
+msgstr "<revnumber>358497</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26126
-#, fuzzy
-#| msgid "March 1, 2008"
 msgid "March 1, 2020"
-msgstr "1 de março de 2008"
+msgstr "1 de março de 2020"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26127
-#, fuzzy
-#| msgid ""
-#| "13.0-CURRENT after removal of <citerefentry><refentrytitle>gets</"
-#| "refentrytitle><manvolnum>3</manvolnum></citerefentry>."
 msgid ""
 "13.0-CURRENT after removal of <citerefentry><refentrytitle>bktr</"
 "refentrytitle><manvolnum>4</manvolnum></citerefentry>."
 msgstr ""
-"13.0-CURRENT after removal of <citerefentry><refentrytitle>gets</"
-"refentrytitle><manvolnum>3</manvolnum></citerefentry>."
+"13.0-CURRENT after removal of <citerefentry><refentrytitle>bktr</refentrytitl"
+"e><manvolnum>4</manvolnum></citerefentry>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26131
-#, fuzzy
-#| msgid "1300008"
 msgid "1300083"
-msgstr "1300008"
+msgstr "1300083"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26132
-#, fuzzy
-#| msgid "<revnumber>353274</revnumber>"
 msgid "<revnumber>358834</revnumber>"
-msgstr "<revnumber>353274</revnumber>"
+msgstr "<revnumber>358834</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26133 book.translate.xml:26140
-#, fuzzy
-#| msgid "March 10, 2004"
 msgid "March 10, 2020"
-msgstr "10 de março de 2004"
+msgstr "10 de março de 2020"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26134
-#, fuzzy
-#| msgid ""
-#| "13.0-CURRENT after removal of <citerefentry><refentrytitle>gets</"
-#| "refentrytitle><manvolnum>3</manvolnum></citerefentry>."
 msgid ""
 "13.0-CURRENT after removal of <citerefentry><refentrytitle>amd</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>, r358821."
 msgstr ""
-"13.0-CURRENT after removal of <citerefentry><refentrytitle>gets</"
-"refentrytitle><manvolnum>3</manvolnum></citerefentry>."
+"13.0-CURRENT after removal of <citerefentry><refentrytitle>amd</refentrytitle"
+"><manvolnum>8</manvolnum></citerefentry>, r358821."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26138
-#, fuzzy
-#| msgid "1300008"
 msgid "1300084"
-msgstr "1300008"
+msgstr "1300084"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26139
-#, fuzzy
-#| msgid "<revnumber>25851</revnumber>"
 msgid "<revnumber>358851</revnumber>"
-msgstr "<revnumber>25851</revnumber>"
+msgstr "<revnumber>358851</revnumber>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:26141
-#, fuzzy
-#| msgid ""
-#| "13.0-CURRENT after updating llvm, clang, compiler-rt, libc++, libunwind, "
-#| "lld, lldb and openmp to 9.0.0 final release r372316."
 msgid ""
 "13.0-CURRENT after updating llvm, clang, compiler-rt, libc++, libunwind, "
 "lld, lldb and openmp to 10.0.0-rc3 c290cb61fdc."
 msgstr ""
 "13.0-CURRENT after updating llvm, clang, compiler-rt, libc++, libunwind, "
-"lld, lldb and openmp to 9.0.0 final release r372316."
+"lld, lldb and openmp to 10.0.0-rc3 c290cb61fdc."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:26150
