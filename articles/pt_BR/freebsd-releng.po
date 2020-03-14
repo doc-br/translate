@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-11-16 15:18-0300\n"
+"POT-Creation-Date: 2020-03-14 14:16-0300\n"
 "PO-Revision-Date: 2019-11-16 19:02+0000\n"
 "Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.eastus.cloudapp.azure."
@@ -1053,8 +1053,8 @@ msgid ""
 "The relevant release-related documents exist in the <filename class="
 "\"directory\">doc</filename> repository for FreeBSD 12.x and later."
 msgstr ""
-"Os documentos relevantes relacionados à release existem no repositório <"
-"filename class=\"directory\">doc</filename> para FreeBSD 12.x e posterior."
+"Os documentos relevantes relacionados à release existem no repositório "
+"<filename class=\"directory\">doc</filename> para FreeBSD 12.x e posterior."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:656
@@ -2237,11 +2237,16 @@ msgstr ""
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:1293
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "<prompt>#</prompt> <userinput>cd /releng/scripts-snapshot/scripts</userinput>\n"
+#| "<prompt>#</prompt> <userinput>./setrev.sh -b <literal>stable/<replaceable>12</replaceable>/</literal></userinput>\n"
+#| "<prompt>#</prompt> <userinput>./zfs-setup.sh -c ./builds-<replaceable>12</replaceable>.conf</userinput>\n"
+#| "<prompt>#</prompt> <userinput>./thermite.sh -c ./builds-<replaceable>12</replaceable>.conf</userinput>"
 msgid ""
 "<prompt>#</prompt> <userinput>cd /releng/scripts-snapshot/scripts</userinput>\n"
 "<prompt>#</prompt> <userinput>./setrev.sh -b <literal>stable/<replaceable>12</replaceable>/</literal></userinput>\n"
-"<prompt>#</prompt> <userinput>./zfs-setup.sh -c ./builds-<replaceable>12</replaceable>.conf</userinput>\n"
+"<prompt>#</prompt> <userinput>./zfs-cleanup.sh -c ./builds-<replaceable>12</replaceable>.conf</userinput>\n"
 "<prompt>#</prompt> <userinput>./thermite.sh -c ./builds-<replaceable>12</replaceable>.conf</userinput>"
 msgstr ""
 "<prompt>#</prompt> <userinput>cd /releng/scripts-snapshot/scripts</userinput>\n"
