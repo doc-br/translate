@@ -2,19 +2,21 @@
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2019. #zanata
 # Edson Brandi <ebrandi@FreeBSD.org>, 2019. #zanata
 # Sergio Carlavilla <carlavilla@mailbox.org>, 2019. #zanata
+# juanda-097 <juanda097@protonmail.ch>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-03-14 14:16-0300\n"
-"PO-Revision-Date: 2019-08-25 09:23+0000\n"
-"Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2020-03-20 10:07+0000\n"
+"Last-Translator: juanda-097 <juanda097@protonmail.ch>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/boooks_faq/es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 4.6.2\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.11.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -64,7 +66,8 @@ msgstr ""
 "<year>2007</year> <year>2008</year> <year>2009</year> <year>2010</year> "
 "<year>2011</year> <year>2012</year> <year>2013</year> <year>2014</year> "
 "<year>2015</year> <year>2016</year> <year>2017</year> <year>2018</year> "
-"<holder>The FreeBSD Documentation Project</holder>"
+"<year>2019</year> <year>2020</year> <holder>The FreeBSD Documentation "
+"Project</holder>"
 
 #. (itstool) path: legalnotice/title
 #: book.translate.xml:57
@@ -258,7 +261,9 @@ msgstr ""
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 53946 2020-03-02 14:38:30Z "
 "carlavilla $"
-msgstr "$FreeBSD$"
+msgstr ""
+"$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 53946 2020-03-02 14:38:30Z "
+"carlavilla $"
 
 #. (itstool) path: abstract/para
 #: book.translate.xml:146
@@ -687,13 +692,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:395
-#, fuzzy
-#| msgid ""
-#| "Up until the release of 9.0, the 11.<replaceable>X</replaceable> series "
-#| "was the one known as <emphasis>-STABLE</emphasis>. However, as of 13."
-#| "<replaceable>X</replaceable>, the 11.<replaceable>X</replaceable> branch "
-#| "will be designated for an <quote>extended support</quote> status and "
-#| "receive only fixes for major problems, such as security-related fixes."
 msgid ""
 "Up until the release of 12.0, the 11.<replaceable>X</replaceable> series was "
 "the one known as <emphasis>-STABLE</emphasis>. However, as of 13."
@@ -701,12 +699,12 @@ msgid ""
 "will be designated for an <quote>extended support</quote> status and receive "
 "only fixes for major problems, such as security-related fixes."
 msgstr ""
-"Hasta la release de la versión 9.0, la serie 11.<replaceable>X</replaceable> "
-"era conocida como <emphasis>-STABLE</emphasis>. Sin embargo, a partir de la "
-"versión 13.<replaceable>X</replaceable>, la rama 11.<replaceable>X</"
-"replaceable> será designada para un estado de <quote>extended support</"
-"quote> y recibirá solo correciones para problemas importantes, por ejemplo, "
-"los relacionados con la seguridad."
+"Hasta la release de la versión 12.0, la serie 11.<replaceable>X</replaceable>"
+" era conocida como <emphasis>-STABLE</emphasis>. Sin embargo, a partir de la "
+"versión 13.<replaceable>X</replaceable>, la rama "
+"11.<replaceable>X</replaceable> será designada para un estado de <quote>"
+"extended support</quote> y recibirá solo correciones para problemas "
+"importantes, por ejemplo, los relacionados con la seguridad."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:406
@@ -821,27 +819,16 @@ msgid ""
 "FreeBSD. <emphasis>FreeBSD-CURRENT</emphasis>, on the other hand, has been "
 "one unbroken line since 2.0 was released."
 msgstr ""
-"Cuando se lanzó FreeBSD 2.0.5, el desarrollo de FreeBSD se dividió en dos. "
-"Una rama se llamó <link xlink:href=\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/"
-"books/handbook/current-stable.html#stable\">-STABLE</link> y la otra <link "
-"xlink:href=\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/books/handbook/current-"
-"stable.html#current\">-CURRENT</link>. <emphasis>FreeBSD-STABLE</emphasis> "
-"es la rama de desarrollo a partir de la cual se realizan las principales "
-"versiones. Los cambios se introducen en esta rama a un ritmo más lento y con "
-"la suposición general de que primero se probaron en FreeBSD-CURRENT. Sin "
-"embargo, en cualquier momento, es posible que el código fuente de FreeBSD-"
-"STABLE pueda ser o no adecuado para el uso general, ya que se pueden "
-"descubrir errores y corner cases que aún no fueron encontrados en FreeBSD-"
-"CURRENT. Los usuarios que no tengan los recursos para realizar pruebas deben "
-"ejecutar la versión más reciente de FreeBSD. <emphasis>FreeBSD-CURRENT</"
-"emphasis>, por otro lado, ha sido una línea ininterrumpida de desarrollo "
-"desde que se lanzó la versión 2.0, hasta la versión 12.0-RELEASE y "
-"siguientes. Para obtener una información más detallada sobre las ramas, "
-"consulte <quote><link xlink:href=\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/"
-"articles/releng/release-proc.html#rel-branch\">FreeBSD Release Engineering: "
-"Creating the Release Branch</link></quote>, el estado de las ramas y el "
-"calendario de lanzamiento se puede encontrar en la página <link xlink:href="
-"\"https://www.FreeBSD.org/releng\">Release Engineering Information</link>."
+"<emphasis>FreeBSD-STABLE</emphasis> es la rama de desarrollo a partir de la "
+"cual se realizan las principales versiones. Los cambios se introducen en "
+"esta rama a un ritmo más lento y con la suposición general de que primero se "
+"probaron en FreeBSD-CURRENT. Sin embargo, en cualquier momento, es posible "
+"que el código fuente de FreeBSD-STABLE pueda ser o no adecuado para el uso "
+"general, ya que se pueden descubrir errores y corner cases que aún no fueron "
+"encontrados en FreeBSD-CURRENT. Los usuarios que no tengan los recursos para "
+"realizar pruebas deben ejecutar la versión más reciente de FreeBSD. <emphasis"
+">FreeBSD-CURRENT</emphasis>, por otro lado, ha sido una línea ininterrumpida "
+"de desarrollo desde que se lanzó la versión 2.0."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:464
