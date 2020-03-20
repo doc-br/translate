@@ -1,17 +1,19 @@
 # Sergio Carlavilla <carlavilla@mailbox.org>, 2019. #zanata
+# juanda-097 <juanda097@protonmail.ch>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-11-02 17:04-0300\n"
-"PO-Revision-Date: 2019-06-22 08:52+0000\n"
-"Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
-"Language-Team: Spanish (Spain)\n"
+"PO-Revision-Date: 2020-03-20 10:07+0000\n"
+"Last-Translator: juanda-097 <juanda097@protonmail.ch>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/articles_releng/es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 4.6.2\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.11.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -303,12 +305,12 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: article.translate.xml:182
 msgid "What This Article Describes"
-msgstr ""
+msgstr "Lo que describe este artículo"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:184
 msgid "The following sections of this article describe:"
-msgstr ""
+msgstr "Las siguientes secciones de este artículo describen:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:191
@@ -320,7 +322,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: article.translate.xml:200
 msgid "The actual build process."
-msgstr ""
+msgstr "El proceso de construcción actual."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:208
@@ -331,11 +333,13 @@ msgstr ""
 #: article.translate.xml:217
 msgid "Some of the lessons learned through the release of FreeBSD 4.4."
 msgstr ""
+"Algunas de las lecciones aprendidas a través del lanzamiento de la versión "
+"FreeBSD 4.4."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:226
 msgid "Future directions of development."
-msgstr ""
+msgstr "Las futuras direcciones de desarrollo."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:235
@@ -353,6 +357,14 @@ msgid ""
 "code freeze. During this time, many developers perform what have become "
 "known as <quote>MFC sweeps</quote>."
 msgstr ""
+"Los nuevos lanzamientos de FreeBSD son liberados de la rama -STABLE en "
+"intervalos de aproximadamente cuatro meses. El proceso de liberación de "
+"FreeBSD comienza a acelerarse 70-80 días antes de la fecha prevista de "
+"liberación cuando el ingeniero de liberación envía un correo electrónico a "
+"las listas de correo de desarrollo para recordar a los desarrolladores que "
+"sólo tienen 15 días para integrar los nuevos cambios antes de que el código "
+"se congele. Durante este tiempo, muchos desarrolladores realizan lo que se "
+"conoce como <quote>barridos MFC</quote>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:246
@@ -367,6 +379,16 @@ msgid ""
 "operating system). Minimal MFC period is 3 days, which is typically used "
 "only for trivial or critical bugfixes."
 msgstr ""
+"<acronym>MFC</acronym> significa <quote>Merge From CURRENT</quote> y "
+"describe el proceso de fusión de un cambio probado de nuestra rama de "
+"desarrollo actual a nuestra rama estable. La política del proyecto requiere "
+"que cualquier cambio se aplique primero al tronco, y se fusione a las ramas -"
+"STABLE después de que los usuarios de -CURRENT hayan realizado suficientes "
+"pruebas externas (se espera que los desarrolladores prueben ampliamente el "
+"cambio antes de comprometerse con -CURRENT, pero es imposible que una "
+"persona ejerza todos los usos del sistema operativo de propósito general). "
+"El período mínimo de MFC es de 3 días, que normalmente se utiliza sólo para "
+"correcciones de errores triviales o críticos."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:259
