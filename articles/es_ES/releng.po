@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-11-02 17:04-0300\n"
-"PO-Revision-Date: 2020-03-20 10:07+0000\n"
+"PO-Revision-Date: 2020-03-25 17:19+0000\n"
 "Last-Translator: juanda-097 <juanda097@protonmail.ch>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_releng/es/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11.2\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -209,6 +209,14 @@ msgid ""
 "emphasis> of our Subversion tree, known as <quote>FreeBSD-CURRENT</quote> or "
 "<quote>-CURRENT</quote> for short."
 msgstr ""
+"El rápido ritmo de desarrollo de <systemitem>FreeBSD</systemitem> hace que "
+"la principal rama de desarrollo sea inadecuada para el uso diario del "
+"público en general. En particular, se requieren esfuerzos de estabilización "
+"para pulir el sistema de desarrollo en una versión de calidad de producción. "
+"Para resolver este conflicto, el desarrollo continúa en varias vías "
+"paralelas. La principal rama de desarrollo es la <emphasis>HEAD</emphasis> o "
+"<emphasis>tronco</emphasis> de nuestro árbol de Subversión, conocido como "
+"<quote>FreeBSD-CURRENT</quote> o <quote>-CURRENT</quote> para abreviar."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:117
@@ -222,6 +230,15 @@ msgid ""
 "different pace, and with the general assumption that they have first gone "
 "into FreeBSD-CURRENT and have been thoroughly tested by our user community."
 msgstr ""
+"Se mantiene un conjunto de ramas más estables, conocidas como <quote>FreeBSD-"
+"STABLE</quote> o <quote>-STABLE</quote> para abreviar. Todas las ramas viven "
+"en un repositorio maestro de Subversion mantenido por el Proyecto FreeBSD. "
+"FreeBSD-CURRENT es el <quote>punto de inflexión</quote> del desarrollo de "
+"FreeBSD donde todos los nuevos cambios entran primero en el sistema. FreeBSD-"
+"STABLE es la rama de desarrollo a partir de la cual se hacen las principales "
+"versiones. Los cambios entran en esta rama a un ritmo diferente, y con la "
+"suposición general de que primero han entrado en FreeBSD-CURRENT y han sido "
+"probados a fondo por nuestra comunidad de usuarios."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:128
@@ -235,6 +252,16 @@ msgid ""
 "systems run unmodified on newer systems, including <emphasis>HEAD</"
 "emphasis>, assuming that the system management interfaces are not used."
 msgstr ""
+"El término <emphasis>estable</emphasis> en el nombre de la rama se refiere a "
+"la presunta estabilidad de la interfaz binaria de la aplicación, que se "
+"garantiza en el proyecto. Esto significa que una aplicación de usuario "
+"compilada en una versión antigua del sistema de la misma rama funciona en un "
+"sistema más nuevo de la misma rama. La estabilidad de la ABI ha mejorado "
+"mucho en comparación con las versiones anteriores. En la mayoría de los "
+"casos, los binarios de los sistemas <emphasis>STABLE</emphasis> más antiguos "
+"funcionan sin modificaciones en los sistemas más nuevos, incluido "
+"<emphasis>HEAD</emphasis>, suponiendo que no se utilizan las interfaces de "
+"gestión del sistema."
 
 #. (itstool) path: quote/buildtarget
 #: article.translate.xml:147
@@ -270,6 +297,12 @@ msgid ""
 "virtual machine images can be downloaded from <systemitem>ftp://ftp.FreeBSD."
 "org/pub/FreeBSD/snapshots/VM-IMAGES/</systemitem>."
 msgstr ""
+"Además de las instantáneas ISO de instalación, también se proporcionan "
+"imágenes semanales de máquinas virtuales para su uso con "
+"<application>VirtualBox</application>, <application>qemu</application> u "
+"otro software de emulación popular. Las imágenes de la máquina virtual "
+"pueden ser descargadas desde <systemitem>ftp://ftp.FreeBSD.org/pub/FreeBSD/"
+"snapshots/VM-IMAGES/</systemitem>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:161
@@ -696,84 +729,88 @@ msgstr ""
 msgid ""
 "<filename>doc/en_US.ISO8859-1/books/handbook/mirrors/chapter.xml</filename>"
 msgstr ""
+"<filename>doc/en_US.ISO8859-1/books/handbook/mirrors/chapter.xml</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:456
 msgid ""
 "<filename>doc/en_US.ISO8859-1/books/porters-handbook/book.xml</filename>"
 msgstr ""
+"<filename>doc/en_US.ISO8859-1/books/porters-handbook/book.xml</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:460
 msgid "<filename>doc/en_US.ISO8859-1/htdocs/cgi/ports.cgi</filename>"
-msgstr ""
+msgstr "<filename>doc/en_US.ISO8859-1/htdocs/cgi/ports.cgi</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:464
 msgid "<filename>ports/Tools/scripts/release/config</filename>"
-msgstr ""
+msgstr "<filename>ports/Tools/scripts/release/config</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:468
 msgid "<filename>doc/share/xml/freebsd.ent</filename>"
-msgstr ""
+msgstr "<filename>doc/share/xml/freebsd.ent</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:472
 msgid "<filename>src/Makefile.inc1</filename>"
-msgstr ""
+msgstr "<filename>src/Makefile.inc1</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:476
 msgid "<filename>src/UPDATING</filename>"
-msgstr ""
+msgstr "<filename>src/UPDATING</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:480
 msgid "<filename>src/gnu/usr.bin/groff/tmac/mdoc.local</filename>"
-msgstr ""
+msgstr "<filename>src/gnu/usr.bin/groff/tmac/mdoc.local</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:484
 msgid "<filename>src/release/Makefile</filename>"
-msgstr ""
+msgstr "<filename>src/release/Makefile</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:488
 msgid ""
 "<filename>src/release/doc/en_US.ISO8859-1/share/xml/release.dsl</filename>"
 msgstr ""
+"<filename>src/release/doc/en_US.ISO8859-1/share/xml/release.dsl</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:492
 msgid "<filename>src/release/doc/share/examples/Makefile.relnotesng</filename>"
-msgstr ""
+msgstr "<filename>src/release/doc/share/examples/Makefile.relnotesng</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:496
 msgid "<filename>src/release/doc/share/xml/release.ent</filename>"
-msgstr ""
+msgstr "<filename>src/release/doc/share/xml/release.ent</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:500
 msgid "<filename>src/sys/conf/newvers.sh</filename>"
-msgstr ""
+msgstr "<filename>src/sys/conf/newvers.sh</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:504
 msgid "<filename>src/sys/sys/param.h</filename>"
-msgstr ""
+msgstr "<filename>src/sys/sys/param.h</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:508
 msgid "<filename>src/usr.sbin/pkg_install/add/main.c</filename>"
-msgstr ""
+msgstr "<filename>src/usr.sbin/pkg_install/add/main.c</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:512
 msgid ""
 "<filename>doc/en_US.ISO8859-1/htdocs/search/opensearch/man.xml</filename>"
 msgstr ""
+"<filename>doc/en_US.ISO8859-1/htdocs/search/opensearch/man.xml</filename>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:516
@@ -788,11 +825,12 @@ msgstr ""
 msgid ""
 "<filename>src/release/doc/en_US.ISO8859-1/relnotes/common/new.xml</filename>"
 msgstr ""
+"<filename>src/release/doc/en_US.ISO8859-1/relnotes/common/new.xml</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:526
 msgid "<filename>src/release/doc/en_US.ISO8859-1/errata/article.xml</filename>"
-msgstr ""
+msgstr "<filename>src/release/doc/en_US.ISO8859-1/errata/article.xml</filename>"
 
 #. (itstool) path: footnote/simpara
 #: article.translate.xml:534
@@ -824,26 +862,28 @@ msgid ""
 "<filename>share/images/articles/releng/branches-releng<replaceable>X</"
 "replaceable>.pic</filename>"
 msgstr ""
+"<filename>share/images/articles/releng/branches-"
+"releng<replaceable>X</replaceable>.pic</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:551
 msgid "<filename>head/share/xml/release.ent</filename>"
-msgstr ""
+msgstr "<filename>head/share/xml/release.ent</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:555
 msgid "<filename>en_US.ISO8859-1/htdocs/releases/*</filename>"
-msgstr ""
+msgstr "<filename>en_US.ISO8859-1/htdocs/releases/*</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:559
 msgid "<filename>en_US.ISO8859-1/htdocs/releng/index.xml</filename>"
-msgstr ""
+msgstr "<filename>en_US.ISO8859-1/htdocs/releng/index.xml</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:563
 msgid "<filename>share/xml/news.xml</filename>"
-msgstr ""
+msgstr "<filename>share/xml/news.xml</filename>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:567
@@ -853,7 +893,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: article.translate.xml:572
 msgid "<filename>src/share/misc/bsd-family-tree</filename>"
-msgstr ""
+msgstr "<filename>src/share/misc/bsd-family-tree</filename>"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:578
@@ -872,6 +912,8 @@ msgstr ""
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>svn cp $FSVN/releng/9.2 $FSVN/release/9.2.0</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>svn cp $FSVN/releng/9.2 $FSVN/release/"
+"9.2.0</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:585
@@ -942,6 +984,9 @@ msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/src/release</userinput>\n"
 "<prompt>#</prompt> <userinput>sh generate-release.sh release/9.2.0 /local3/release</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/src/release</userinput>\n"
+"<prompt>#</prompt> <userinput>sh generate-release.sh release/9.2.0 /local3/"
+"release</userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:635
@@ -1097,6 +1142,8 @@ msgstr ""
 #, no-wrap
 msgid "/stage/cdrom<prompt>#</prompt> <userinput>find . -type f | sed -e 's/^\\.\\///' | sort &gt; filename.txt</userinput>"
 msgstr ""
+"/stage/cdrom<prompt>#</prompt> <userinput>find . -type f | sed -e 's/^\\.\\"
+"///' | sort &gt; filename.txt</userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:753
@@ -1201,6 +1248,9 @@ msgid ""
 "<filename>/pub/FreeBSD/releases/<replaceable>arch</replaceable>/"
 "<replaceable>X.Y</replaceable>-RELEASE/</filename>"
 msgstr ""
+"<filename>/pub/FreeBSD/releases/"
+"<replaceable>arch</replaceable>/<replaceable>X.Y</replaceable>-RELEASE/"
+"</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:834
@@ -1214,6 +1264,9 @@ msgid ""
 "<filename>/pub/FreeBSD/ports/<replaceable>arch</replaceable>/packages-"
 "<replaceable>X.Y</replaceable>-release/</filename>"
 msgstr ""
+"<filename>/pub/FreeBSD/ports/"
+"<replaceable>arch</replaceable>/packages-<replaceable>X.Y</replaceable>"
+"-release/</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:842
@@ -1226,6 +1279,9 @@ msgid ""
 "<filename>/pub/FreeBSD/releases/<replaceable>arch</replaceable>/"
 "<replaceable>X.Y</replaceable>-RELEASE/tools</filename>"
 msgstr ""
+"<filename>/pub/FreeBSD/releases/"
+"<replaceable>arch</replaceable>/<replaceable>X.Y</replaceable>-RELEASE/"
+"tools</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:850
@@ -1238,6 +1294,9 @@ msgid ""
 "<filename>/pub/FreeBSD/releases/<replaceable>arch</replaceable>/"
 "<replaceable>X.Y</replaceable>-RELEASE/packages</filename>"
 msgstr ""
+"<filename>/pub/FreeBSD/releases/"
+"<replaceable>arch</replaceable>/<replaceable>X.Y</replaceable>-RELEASE/"
+"packages</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:858
@@ -1253,6 +1312,9 @@ msgid ""
 "<replaceable>X.Y</replaceable>/<replaceable>X.Y</replaceable>-RELEASE-"
 "<replaceable>arch</replaceable>-*.iso</filename>"
 msgstr ""
+"<filename>/pub/FreeBSD/releases/<replaceable>arch</replaceable>/ISO-IMAGES/<r"
+"eplaceable>X.Y</replaceable>/<replaceable>X.Y</replaceable>-RELEASE-<replacea"
+"ble>arch</replaceable>-*.iso</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:866
@@ -1338,6 +1400,9 @@ msgid ""
 "network-pxe-nfs.html\">@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
 "network-pxe-nfs.html</uri>"
 msgstr ""
+"<uri xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
+"network-pxe-nfs.html\">@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
+"network-pxe-nfs.html</uri>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:929
