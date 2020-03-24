@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-11-02 17:04-0300\n"
-"PO-Revision-Date: 2020-03-20 10:06+0000\n"
+"PO-Revision-Date: 2020-03-25 17:19+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@FreeBSD.org>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_fonts/es/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11.2\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -195,7 +195,7 @@ msgid ""
 "<filename>.pfa</filename> is the <emphasis>A</emphasis>scii form and "
 "<filename>.pfb</filename> the <emphasis>B</emphasis>inary form."
 msgstr ""
-"<trademark class=\"registered\">PostScript</trademark> fuentes tipo 1. "
+"Tipos Tipo 1 <trademark class=\"registered\">PostScript</trademark> . "
 "<filename>.pfa</filename> es el formato <emphasis>A</emphasis>scii y el "
 "<filename>.pfb</filename> es el formato <emphasis>B</emphasis>inario."
 
@@ -207,7 +207,7 @@ msgstr "<filename>.afm</filename>"
 #. (itstool) path: listitem/para
 #: article.translate.xml:125
 msgid "The font metrics associated with a type 1 font."
-msgstr "Font metrics asociada con la fuente tipo 1."
+msgstr "Métricas del tipo asociadas al tipo Tipo 1."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:130
@@ -217,7 +217,7 @@ msgstr "<filename>.pfm</filename>"
 #. (itstool) path: listitem/para
 #: article.translate.xml:133
 msgid "The printer font metrics associated with a type 1 font."
-msgstr "Printer font metrics asociada con la fuente tipo 1."
+msgstr "Métricas de impresión del tipo asociadas al tipo Tipo 1."
 
 #. (itstool) path: varlistentry/term
 #. (itstool) path: listitem/para
@@ -228,7 +228,7 @@ msgstr "<filename>.ttf</filename>"
 #. (itstool) path: listitem/para
 #: article.translate.xml:142
 msgid "A <trademark class=\"registered\">TrueType</trademark> font"
-msgstr "Fuente <trademark class=\"registered\">TrueType</trademark>"
+msgstr "Tipo <trademark class=\"registered\">TrueType</trademark>"
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:147
@@ -238,7 +238,7 @@ msgstr "<filename>.fot</filename>"
 #. (itstool) path: listitem/para
 #: article.translate.xml:150
 msgid "An indirect reference to a TrueType font (not an actual font)"
-msgstr "Una referencia indirecta a una fuente TrueType (no es una fuente real)"
+msgstr "Una referencia indirecta a un tipo TrueType (no es un tipo real)"
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:156
@@ -248,7 +248,7 @@ msgstr "<filename>.fon</filename>, <filename>.fnt</filename>"
 #. (itstool) path: listitem/para
 #: article.translate.xml:162
 msgid "Bitmapped screen fonts"
-msgstr "Fuentes de pantalla de mapa de bits"
+msgstr "Tipos de pantalla de mapa de bits"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:167
@@ -259,17 +259,17 @@ msgid ""
 "file. The <filename>.fon</filename> font files are also used by Windows. I "
 "know of no way to use this font format with FreeBSD."
 msgstr ""
-"El archivo <filename>.fot</filename> es utilizado por <trademark class="
-"\"registered\">Windows</trademark> como una especie de enlace simbólico al "
-"archivo de fuente <trademark class=\"registered\">TrueType</trademark> "
-"(<filename>.ttf</filename>). Los archivos de fuente <filename>.fon</"
-"filename> también son utilizados por Windows. No conozco ninguna forma de "
-"usar este formato de fuente en FreeBSD."
+"El archivo <filename>.fot</filename> se usan en <trademark class=\""
+"registered\">Windows</trademark> como una especie de enlace simbólico al "
+"archivo de tipo <trademark class=\"registered\">TrueType</trademark> "
+"(<filename>.ttf</filename>). Los archivos de tipo <filename>.fon</filename> "
+"también se usan en Windows. No conozco ninguna manera de usar este formato "
+"de tipo en FreeBSD."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:175
 msgid "What Font Formats Can I Use?"
-msgstr "¿Qué formatos de fuente puedo usar?"
+msgstr "¿Qué formatos de tipo puedo usar?"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:177
@@ -279,10 +279,10 @@ msgid ""
 "make use of the font files. Here is a small cross reference of application/"
 "driver to the font type suffixes:"
 msgstr ""
-"Qué fuente es útil depende de la aplicación que se esté utilizando. FreeBSD, "
-"por si mismo, no utiliza fuentes. Las aplicaciones y/o los controladores "
-"pueden utilizar archivos de fuentes. Aquí tiene una pequeña referencia "
-"cruzada de la aplicación/controlador para los sufijos del tipo de fuentes:"
+"Qué tipo se puede usar depende de la aplicación. FreeBSD por sí mismo no "
+"utiliza tipos. Las aplicaciones y/o los controladores pueden utilizar "
+"archivos de tipo. A continuación se muestra una pequeña referencia cruzada "
+"de la aplicación/controlador para los sufijos de tipo:"
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:185
