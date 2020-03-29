@@ -1,19 +1,21 @@
 # $FreeBSD$
 # Edson Brandi <ebrandi@FreeBSD.org>, 2019. #zanata
 # Sergio Carlavilla <carlavilla@mailbox.org>, 2019. #zanata
+# Juan David Jaramillo Ortiz <juanda097@protonmail.ch>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-03-14 14:16-0300\n"
-"PO-Revision-Date: 2019-06-17 09:46+0000\n"
-"Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2020-03-29 16:54+0000\n"
+"Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/articles_bsdl-gpl/es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 4.6.2\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -82,14 +84,12 @@ msgstr ""
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:29 article.translate.xml:31
-#, fuzzy
-#| msgid ""
-#| "$FreeBSD: head/en_US.ISO8859-1/articles/bsdl-gpl/article.xml 43184 "
-#| "2013-11-13 07:52:45Z hrs $"
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/bsdl-gpl/article.xml 53942 "
 "2020-03-01 12:23:40Z carlavilla $"
-msgstr "$FreeBSD$"
+msgstr ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/bsdl-gpl/article.xml 53942 2020-03-"
+"01 12:23:40Z carlavilla $"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:35
@@ -263,23 +263,14 @@ msgid ""
 "it. AT&amp;T embarked on an aggressive licensing effort and most commercial "
 "Unixes of the day became AT&amp;T-derived."
 msgstr ""
-"A mitad de los 80, un caso gubernamental antimonopolio contra ATT terminó "
-"con su desintegración. ATT todavía era dueña de Unix y podía venderlo. ATT "
-"se embarcó en un esfuerzo agresivo de licenciamiento y la mayoría de los "
-"sistemas Unix comerciales de la época llegaron a ser derivados de los de ATT."
+"A mitad de los 80, un caso gubernamental antimonopolio contra AT&amp;T "
+"terminó con su desintegración. AT&amp;T todavía era dueña de Unix y podía "
+"venderlo. AT&amp;T se embarcó en un esfuerzo agresivo de licenciamiento y la "
+"mayoría de los sistemas Unix comerciales de la época llegaron a ser "
+"derivados de los de AT&amp;T."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:113
-#, fuzzy
-#| msgid ""
-#| "In the early 1990's ATT sued UCB over license violations related to BSD. "
-#| "UCB discovered that ATT had incorporated, without acknowledgment or "
-#| "payment, many improvements due to BSD into ATT's products, and a lengthy "
-#| "court case, primarily between ATT and UCB, ensued. During this period "
-#| "some UCB programmers embarked on a project to rewrite any ATT code "
-#| "associated with BSD. This project resulted in a system called BSD 4.4-"
-#| "lite (lite because it was not a complete system; it lacked 6 key ATT "
-#| "files)."
 msgid ""
 "In the early 1990's AT&amp;T sued UCB over license violations related to "
 "BSD. UCB discovered that AT&amp;T had incorporated, without acknowledgment "
@@ -290,14 +281,15 @@ msgid ""
 "lite (lite because it was not a complete system; it lacked 6 key AT&amp;T "
 "files)."
 msgstr ""
-"Al principio de los 90 ATT demandó a UCB por violaciones de la licencia "
-"relacionada con BSD. La UCB descubrió que ATT había incorporado, sin "
-"conocimiento ni retribución, muchas mejoras de BSD en los productos de ATT, "
-"y tuvo lugar un largo proceso judicial, principalmente entre ATT y la UCB. "
-"Durante este periodo algunos de los programadores de la UCB se embarcaron en "
-"un proyecto para reescribir cualquier código de ATT asociado con BSD. Este "
-"proyecto resultó en un sistema llamado BSD 4.4-lite (\"lite\" o ligero, "
-"porque no era un sistema completo; carecía de 6 archivos clave de ATT)."
+"Al principio de los 90 AT&amp;T demandó a UCB por violaciones de la licencia "
+"relacionada con BSD. La UCB descubrió que AT&amp;T había incorporado, sin "
+"conocimiento ni retribución, muchas mejoras de BSD en los productos de "
+"AT&amp;T, y tuvo lugar un largo proceso judicial, principalmente entre "
+"AT&amp;T y la UCB. Durante este periodo algunos de los programadores de la "
+"UCB se embarcaron en un proyecto para reescribir cualquier código de AT&amp;"
+"T asociado con BSD. Este proyecto resultó en un sistema llamado BSD 4.4-lite "
+"(\"lite\" o ligero, porque no era un sistema completo; carecía de 6 archivos "
+"clave de AT&amp;T)."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:122
@@ -317,19 +309,14 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:129
-#, fuzzy
-#| msgid ""
-#| "In the mid 1990s, Novell purchased ATT's Unix rights and a (then secret) "
-#| "agreement was reached to terminate the lawsuit. UCB soon terminated its "
-#| "support for BSD."
 msgid ""
 "In the mid 1990s, Novell purchased AT&amp;T's Unix rights and a (then "
 "secret) agreement was reached to terminate the lawsuit. UCB soon terminated "
 "its support for BSD."
 msgstr ""
-"A mitad de los 90, Novell adquirió a ATT los derechos de Unix y se alcanzó "
-"un acuerdo (por entonces secreto) para terminar el litigio. UCB pronto puso "
-"fin a su soporte a BSD."
+"A mitad de los 90, Novell adquirió a AT&amp;T los derechos de Unix y se "
+"alcanzó un acuerdo (por entonces secreto) para terminar el litigio. UCB "
+"pronto puso fin a su soporte a BSD."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:135
@@ -1217,7 +1204,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:555
 msgid "Bibliographical References"
-msgstr ""
+msgstr "Referencias bibliográficas"
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:557
