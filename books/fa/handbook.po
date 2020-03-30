@@ -4,13 +4,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-03-14 14:17-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-03-31 02:30+0000\n"
+"Last-Translator: Javad Kouhi <javad.kouhi@gmail.com>\n"
+"Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/boooks_handbook/fa/>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -20,12 +23,12 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:687
 msgid "FreeBSD Handbook"
-msgstr ""
+msgstr "کتاب راهنمای FreeBSD"
 
 #. (itstool) path: info/author
 #: book.translate.xml:689
 msgid "<orgname>The FreeBSD Documentation Project</orgname>"
-msgstr ""
+msgstr "<orgname>پروژه مستندات FreeBSD</orgname>"
 
 #. (itstool) path: info/copyright
 #: book.translate.xml:697
@@ -43,7 +46,7 @@ msgstr ""
 #. (itstool) path: legalnotice/title
 #: book.translate.xml:729
 msgid "Copyright"
-msgstr ""
+msgstr "کپی‌رایت"
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:731
@@ -52,6 +55,9 @@ msgid ""
 "HTML, PDF, PostScript, RTF and so forth) with or without modification, are "
 "permitted provided that the following conditions are met:"
 msgstr ""
+"بازتوزیع و استفاده در قالب سورس (XML DocBook) و قال «کامپایل‌شده» (XML، "
+"HTML،PDF، PostScript، RTF و غیره) با یا بدون تغییر، مجاز است مشروط بر آنکه "
+"این شرایط برآورده شوند:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:738
@@ -60,6 +66,9 @@ msgid ""
 "notice, this list of conditions and the following disclaimer as the first "
 "lines of this file unmodified."
 msgstr ""
+"بازتوزیع‌های سورس کد «XML DocBook» باید اعلان کپی‌رایت بالا، این لیست از "
+"شرایط و گواهی رفع ادعایی که در زیر آمده را بدون تغییر، در اولین خطوط از فایل "
+"نگه داشته باشند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:744
@@ -89,12 +98,12 @@ msgstr ""
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:770
 msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
-msgstr ""
+msgstr "FreeBSD یک نشان تجاری ثبت‌شده برای بنیاد FreeBSD است."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:772
 msgid "3Com and HomeConnect are registered trademarks of 3Com Corporation."
-msgstr ""
+msgstr "3Com و HomeConnect نشان‌های تجاری ثبت‌شده برای 3Com Corporation هستند."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:774
@@ -278,6 +287,12 @@ msgid ""
 "\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc\">FreeBSD "
 "documentation project mailing list</link>."
 msgstr ""
+"به FreeBSD خوش آمدید! این کتاب راهنما نصب و استفادهٔ روزمره از <emphasis>"
+"FreeBSD 12.1-RELEASE</emphasis> و <emphasis>FreeBSD 11.3-RELEASE</emphasis> "
+"را پوشش می‌دهد. این کتاب نتیجهٔ تلاش مداوم افراد بسیاری است. برخی از بخش‌های "
+"آن ممکن است کهنه باشند. کسانی که علاقه‌مند با بروزرسانی و گسترش این سند "
+"هستند می‌تواند ایمیلی به <link xlink:href=\"http://lists.FreeBSD.org/mailman/"
+"listinfo/freebsd-doc\">لیست پستی پروژه مستندات FreeBSD</link> ارسال کنند."
 
 #. (itstool) path: abstract/para
 #: book.translate.xml:865
@@ -294,6 +309,16 @@ msgid ""
 "on the <link xlink:href=\"@@URL_RELPREFIX@@/search/index.html\">search page</"
 "link>."
 msgstr ""
+"آخرین نسخه از این کتاب در <link xlink:href=\"https://www.FreeBSD.org/\">سایت "
+"FreeBSD</link> در دسترس است. نسخه‌های قدیمی را می‌توان از <uri xlink:href=\""
+"https://docs.FreeBSD.org/doc/\">https://docs.FreeBSD.org/doc/</uri> دریافت "
+"کرد. این کتاب را می‌توان در قالب‌های متنوع و حالت‌های مختلف فشرده‌سازی‌شده "
+"از <link xlink:href=\"https://download.freebsd.org/ftp/doc/\"> اف‌تی‌پی سرور "
+"FreeBSD</link> یا از <link linkend=\"mirrors-ftp\">سرورهای آینه‌ای</link> "
+"متعدد دریافت کرد. نسخه‌های چاپ‌شده را می‌توان از <link xlink:href=\""
+"https://www.freebsdmall.com/\">FreeBSD Mall</link> خریداری کرد. از طریق <"
+"link xlink:href=\"@@URL_RELPREFIX@@/search/index.html\">صفحهٔ جستجو</link> "
+"می‌توان بر روی این کتاب راهنما و دیگر مستندات عمل جستجو را انجام داد."
 
 #. (itstool) path: preface/title
 #: book.translate.xml:886
