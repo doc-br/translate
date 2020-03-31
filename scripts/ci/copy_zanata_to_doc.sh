@@ -20,13 +20,13 @@ else
 	ZANATA_LANG="pt_BR"
 fi
 
-for article in $(find "$1/articles/$ZANATA_LANG" -name "*.po" ); do
+for article in $(find "$1/articles/$ZANATA_LANG/" -name "*.po" ); do
 	fullname=$(basename "$article")
 	filename="${fullname%%.*}"
 	cp -vf "$article" "${2}/articles/${filename}/${ZANATA_LANG}.po"
 done
 
-for book in $(find "$1/books/$ZANATA_LANG" -name "*.po" ); do
+for book in $(find "$1/books/$ZANATA_LANG/" -name "*.po" ); do
 	fullname=$(basename "$book")
 	filename="${fullname%%.*}"
 	cp -vf "$book" "${2}/books/${filename}/${ZANATA_LANG}.po"
