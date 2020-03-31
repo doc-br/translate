@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-11-02 17:04-0300\n"
-"PO-Revision-Date: 2020-03-31 15:27+0000\n"
+"PO-Revision-Date: 2020-03-31 15:33+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@FreeBSD.org>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_fonts/es/>\n"
@@ -746,7 +746,7 @@ msgid ""
 "Usually omitted, but this will indicate that the font contains decorative "
 "capital letters."
 msgstr ""
-"Generalmente se omite, pero esto indicará que la fuente contiene mayúsculas "
+"Generalmente se omite, pero esto indicará que el tipo contiene mayúsculas "
 "decorativas."
 
 #. (itstool) path: varlistentry/term
@@ -782,13 +782,13 @@ msgid ""
 "the font."
 msgstr ""
 "Todos estos nombres son arbitrarios, pero uno debe tratar de ser compatible "
-"con las convenciones existentes. El nombre hace referencia a la fuente con "
+"con las convenciones existentes. El nombre hace referencia al tipo con "
 "posibles comodines del programa <application>X11</application>, por lo que "
 "el nombre elegido debe tener algún sentido. Simplemente puede comenzar a "
-"usar <_:informalexample-1/> como nombre, y luego usar <citerefentry vendor="
-"\"xfree86\"><refentrytitle>xfontsel</refentrytitle><manvolnum>1</manvolnum></"
-"citerefentry> para examinarla y ajustar el nombre en función de la "
-"apariencia de la fuente."
+"usar <_:informalexample-1/> como nombre, y luego usar <citerefentry vendor=\""
+"xfree86\"><refentrytitle>xfontsel</refentrytitle><manvolnum>1</manvolnum></ci"
+"terefentry> para examinarla y ajustar el nombre en función de la apariencia "
+"del tipo."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:483
@@ -853,7 +853,7 @@ msgstr ""
 "<lineannotation>Indique a X11 que las cosas han cambiado</lineannotation>\n"
 "<prompt>%</prompt> <userinput>xset fp rehash</userinput>\n"
 "\n"
-"<lineannotation>Examine la fuente nueva</lineannotation>\n"
+"<lineannotation>Examine el nuevo tipo</lineannotation>\n"
 "<prompt>%</prompt> <userinput>xfontsel -pattern -type1-*</userinput>"
 
 #. (itstool) path: sect1/para
@@ -1406,7 +1406,11 @@ msgstr "Cree el archivo <filename>.afm</filename> escribiendo:"
 #: article.translate.xml:787
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>gs -dNODISPLAY -q -- ttf2pf.ps <replaceable>TTF_name</replaceable> <replaceable>PS_font_name</replaceable> <replaceable>AFM_name</replaceable></userinput>"
-msgstr "<prompt>%</prompt> <userinput>gs -dNODISPLAY -q -- ttf2pf.ps <replaceable>nombre_TTF</replaceable> <replaceable>nombre_fuente_PS</replaceable> <replaceable>nombre_AFM</replaceable></userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>gs -dNODISPLAY -q -- ttf2pf.ps "
+"<replaceable>nombre_TTF</replaceable> "
+"<replaceable>nombre_tipo_PS</replaceable> "
+"<replaceable>nombre_AFM</replaceable></userinput>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:789
@@ -1515,7 +1519,9 @@ msgstr ""
 #: article.translate.xml:838
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>afmtodit -d DESC -e text.enc file.afm generate/textmap <replaceable>PS_font_name</replaceable></userinput>"
-msgstr "<prompt>%</prompt> <userinput>afmtodit -d DESC -e text.enc file.afm generate/textmap <replaceable>nombre_fuente_PS</replaceable></userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>afmtodit -d DESC -e text.enc file.afm generate/"
+"textmap <replaceable>nombre_tipo_PS</replaceable></userinput>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:840
