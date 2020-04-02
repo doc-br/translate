@@ -3,12 +3,13 @@
 # Edson Brandi <ebrandi@FreeBSD.org>, 2019. #zanata
 # Sergio Carlavilla <carlavilla@mailbox.org>, 2019. #zanata
 # juanda-097 <juanda097@protonmail.ch>, 2020.
+# Juan David Jaramillo Ortiz <juanda097@protonmail.ch>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-03-14 14:16-0300\n"
-"PO-Revision-Date: 2020-03-20 10:07+0000\n"
-"Last-Translator: juanda-097 <juanda097@protonmail.ch>\n"
+"PO-Revision-Date: 2020-04-03 16:49+0000\n"
+"Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_faq/es/>\n"
 "Language: es_ES\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11.2\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -254,10 +255,6 @@ msgstr ""
 
 #. (itstool) path: info/releaseinfo
 #: book.translate.xml:143
-#, fuzzy
-#| msgid ""
-#| "$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 52666 2018-12-11 "
-#| "18:49:03Z gjb $"
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 53946 2020-03-02 14:38:30Z "
 "carlavilla $"
@@ -785,29 +782,6 @@ msgstr "¿Cual es el concepto de <emphasis>FreeBSD-STABLE</emphasis>?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:450
-#, fuzzy
-#| msgid ""
-#| "Back when FreeBSD 2.0.5 was released, FreeBSD development branched in "
-#| "two. One branch was named <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US."
-#| "ISO8859-1/books/handbook/current-stable.html#stable\">-STABLE</link>, one "
-#| "<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
-#| "current-stable.html#current\">-CURRENT</link>. <emphasis>FreeBSD-STABLE</"
-#| "emphasis> is the development branch from which major releases are made. "
-#| "Changes go into this branch at a slower pace and with the general "
-#| "assumption that they have first been tested in FreeBSD-CURRENT. However, "
-#| "at any given time, the sources for FreeBSD-STABLE may or may not be "
-#| "suitable for general use, as it may uncover bugs and corner cases that "
-#| "were not yet found in FreeBSD-CURRENT. Users who do not have the "
-#| "resources to perform testing should instead run the most recent release "
-#| "of FreeBSD. <emphasis>FreeBSD-CURRENT</emphasis>, on the other hand, has "
-#| "been one unbroken line since 2.0 was released, leading towards 12.0-"
-#| "RELEASE and beyond. For more detailed information on branches see "
-#| "<quote><link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/"
-#| "releng/release-proc.html#rel-branch\">FreeBSD Release Engineering: "
-#| "Creating the Release Branch</link></quote>, the status of the branches "
-#| "and the upcoming release schedule can be found on the <link xlink:href="
-#| "\"https://www.FreeBSD.org/releng\">Release Engineering Information</link> "
-#| "page."
 msgid ""
 "<emphasis>FreeBSD-STABLE</emphasis> is the development branch from which "
 "major releases are made. Changes go into this branch at a slower pace and "
@@ -1047,19 +1021,14 @@ msgstr "¿Donde puedo obtener FreeBSD?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:590
-#, fuzzy
-#| msgid ""
-#| "Every significant release of FreeBSD is available via anonymous FTP from "
-#| "the <link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/\">FreeBSD FTP "
-#| "site</link>:"
 msgid ""
 "Every significant release of FreeBSD is available via anonymous FTP from the "
 "<link xlink:href=\"https://download.FreeBSD.org/ftp/releases/\">FreeBSD FTP "
 "site</link>:"
 msgstr ""
 "Cada lanzamiento importante de FreeBSD está disponible a través del FTP "
-"anónimo desde el <link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/"
-"\">sitio FTP de FreeBSD</link>:"
+"anónimo desde el  <link xlink:href=\"https://download.FreeBSD.org/ftp/"
+"releases/\">sitio FTP de FreeBSD</link>:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:596
