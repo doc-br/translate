@@ -1,11 +1,12 @@
 # Sergio Carlavilla <carlavilla@mailbox.org>, 2019. #zanata
 # juanda-097 <juanda097@protonmail.ch>, 2020.
+# Juan David Jaramillo Ortiz <juanda097@protonmail.ch>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-11-02 17:04-0300\n"
-"PO-Revision-Date: 2020-03-25 17:19+0000\n"
-"Last-Translator: juanda-097 <juanda097@protonmail.ch>\n"
+"PO-Revision-Date: 2020-04-04 18:56+0000\n"
+"Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_releng/es/>\n"
 "Language: es_ES\n"
@@ -334,6 +335,14 @@ msgid ""
 "keep systems on the <emphasis>releng/<replaceable>X</replaceable>."
 "<replaceable>Y</replaceable></emphasis> branches updated."
 msgstr ""
+"Para atender a nuestros usuarios más conservadores, se introdujeron ramas de "
+"liberación individuales con FreeBSD 4.3. Estas ramas de liberación se crean "
+"poco antes de que se haga una liberación final. Después de que la versión "
+"sale, sólo los arreglos de seguridad más críticos y las adiciones se "
+"fusionan en la rama de la versión. Además de las actualizaciones de las "
+"fuentes a través de Subversion, hay disponibles parches binarios para "
+"mantener actualizados los sistemas en las ramas <emphasis>releng/"
+"<replaceable>X</replaceable>.<replaceable>Y</replaceable></emphasis>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:182
@@ -351,6 +360,8 @@ msgid ""
 "The different phases of the release engineering process leading up to the "
 "actual system build."
 msgstr ""
+"Las diferentes fases del proceso de ingeniería de liberación que conducen a "
+"la construcción del sistema real."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:200
@@ -360,7 +371,7 @@ msgstr "El proceso de construcción actual."
 #. (itstool) path: listitem/para
 #: article.translate.xml:208
 msgid "How the base release may be extended by third parties."
-msgstr ""
+msgstr "Cómo la liberación de la base puede ser prorrogada por terceros."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:217
@@ -377,7 +388,7 @@ msgstr "Las futuras direcciones de desarrollo."
 #. (itstool) path: sect1/title
 #: article.translate.xml:235
 msgid "Release Process"
-msgstr ""
+msgstr "Proceso de liberación"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:237
@@ -426,7 +437,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: article.translate.xml:259
 msgid "Code Review"
-msgstr ""
+msgstr "Revisión del código"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:261
@@ -437,31 +448,39 @@ msgid ""
 "email>. The approval process is technically enforced by a pre-commit hook. "
 "The kinds of changes that are allowed during this period include:"
 msgstr ""
+"Sesenta días antes de la liberación anticipada, el repositorio de fuentes "
+"entra en un <quote>congelamiento de código</quote>. Durante este tiempo, "
+"todas las confirmaciones de la rama -STABLE deben ser aprobadas por el "
+"Equipo de Ingeniería de Liberación <email>re@FreeBSD.org</email>. El proceso "
+"de aprobación es técnicamente reforzado por un gancho de pre-commit. Los "
+"tipos de cambios que se permiten durante este período incluyen:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:270
 msgid "Bug fixes."
-msgstr ""
+msgstr "Arreglos de errores."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:274
 msgid "Documentation updates."
-msgstr ""
+msgstr "Actualizaciones de la documentación."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:278
 msgid "Security-related fixes of any kind."
-msgstr ""
+msgstr "Arreglos de seguridad de cualquier tipo."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:282
 msgid "Minor changes to device drivers, such as adding new Device IDs."
 msgstr ""
+"Cambios menores en los controladores de los dispositivos, como la adición de "
+"nuevas identificaciones de dispositivos."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:287
 msgid "Driver updates from the vendors."
-msgstr ""
+msgstr "Actualizaciones de los controladores de los fabricantes."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:291
@@ -469,6 +488,8 @@ msgid ""
 "Any additional change that the release engineering team feels is justified, "
 "given the potential risk."
 msgstr ""
+"Cualquier cambio adicional que el equipo de ingeniería de lanzamiento "
+"considere justificado, dado el riesgo potencial."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:297
@@ -507,6 +528,9 @@ msgid ""
 "all major issues have been resolved, the final release <quote>polishing</"
 "quote> can begin."
 msgstr ""
+"Cuando varias imágenes BETA han sido puestas a disposición para ser probadas "
+"ampliamente y todos los problemas importantes han sido resueltos, el "
+"<quote>pulido</quote> de la versión final puede comenzar."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:328
@@ -1511,6 +1535,9 @@ msgid ""
 "href=\"http://docs.FreeBSD.org/44doc/papers/releng.html\"> <emphasis>The "
 "Release Engineering of 4.3BSD</emphasis></link>"
 msgstr ""
+"Marshall Kirk McKusick, Michael J. Karels, y Keith Bostic: <link xlink:href="
+"\"http://docs.FreeBSD.org/44doc/papers/releng.html\"> <emphasis>The Release "
+"Engineering of 4.3BSD</emphasis></link>"
 
 #. (itstool) path: footnote/simpara
 #: article.translate.xml:1040
