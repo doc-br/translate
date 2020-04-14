@@ -1,17 +1,19 @@
 # Sergio Carlavilla <carlavilla@mailbox.org>, 2019. #zanata
+# Juan David Jaramillo Ortiz <juanda097@protonmail.ch>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-03-14 14:16-0300\n"
-"PO-Revision-Date: 2019-09-08 11:00+0000\n"
-"Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
-"Language-Team: Spanish (Spain)\n"
+"PO-Revision-Date: 2020-04-14 22:54+0000\n"
+"Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/articles_freebsd-releng/es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 4.6.2\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -31,12 +33,6 @@ msgstr "<email>gjb@FreeBSD.org</email>"
 
 #. (itstool) path: authorgroup/author
 #: article.translate.xml:29
-#, fuzzy
-#| msgid ""
-#| "<personname> <firstname>Glen</firstname> <surname>Barber</surname> </"
-#| "personname> <affiliation> <orgname class=\"nonprofit\"> <link xlink:href="
-#| "\"https://www.freebsdfoundation.org\">The FreeBSD Foundation</link></"
-#| "orgname> <_:address-1/> </affiliation>"
 msgid ""
 "<personname> <firstname>Glen</firstname> <surname>Barber</surname> </"
 "personname> <affiliation> <orgname class=\"nonprofit\"> <link xlink:href="
@@ -45,10 +41,12 @@ msgid ""
 "www.netgate.com\">Rubicon Communications, LLC (Netgate)</link></orgname> <_:"
 "address-1/> </affiliation>"
 msgstr ""
-"<personname> <firstname>Glen</firstname> <surname>Barber</surname> </"
-"personname> <affiliation> <orgname class=\"nonprofit\"> <link xlink:href="
-"\"https://www.freebsdfoundation.org\">The FreeBSD Foundation</link></"
-"orgname> <_:address-1/> </affiliation>"
+"<personname> <firstname>Glen</firstname> <surname>Barber</surname> "
+"</personname> <affiliation> <orgname class=\"nonprofit\"> <link xlink:href=\""
+"https://www.freebsdfoundation.org\">The FreeBSD Foundation</link></orgname> "
+"</affiliation> <affiliation> <orgname> <link xlink:href=\""
+"https://www.netgate.com\">Rubicon Communications, LLC "
+"(Netgate)</link></orgname> <_:address-1/> </affiliation>"
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:47
@@ -83,14 +81,12 @@ msgstr ""
 
 #. (itstool) path: info/pubdate
 #: article.translate.xml:61
-#, fuzzy
-#| msgid ""
-#| "$FreeBSD: head/en_US.ISO8859-1/articles/freebsd-releng/article.xml 52377 "
-#| "2018-10-18 16:11:27Z gjb $"
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/freebsd-releng/article.xml 53242 "
 "2019-07-09 23:59:30Z jhb $"
-msgstr "$FreeBSD$"
+msgstr ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/freebsd-releng/article.xml 53242 "
+"2019-07-09 23:59:30Z jhb $"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:64
@@ -984,36 +980,26 @@ msgstr "Añada una entrada anunciando la <literal>BETA</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:613
-#, fuzzy
-#| msgid ""
-#| "<filename>en_US.ISO8859-1/htdocs/releases/12.0R/schedule.xml</filename>"
 msgid ""
 "<filename>en_US.ISO8859-1/htdocs/security/advisory-template.txt</filename>"
 msgstr ""
-"<filename>en_US.ISO8859-1/htdocs/releases/12.0R/schedule.xml</filename>"
+"<filename>en_US.ISO8859-1/htdocs/security/advisory-template.txt</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:614 article.translate.xml:621
-#, fuzzy
-#| msgid ""
-#| "Ports Changes During <literal>BETA</literal>, <literal>RC</literal>, and "
-#| "the Final <literal>RELEASE</literal>"
 msgid ""
 "Add the new <literal>BETA</literal>, <literal>RC</literal>, or final "
 "<literal>RELEASE</literal> to the template"
 msgstr ""
-"Cambios en los ports durante las fases <literal>BETA</literal>, <literal>RC</"
-"literal> y la <literal>RELEASE</literal> final"
+"Añade la nueva <literal>BETA</literal>, <literal>RC</literal>, o "
+"<literal>RELEASE</literal> final a la plantilla"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:620
-#, fuzzy
-#| msgid ""
-#| "<filename>en_US.ISO8859-1/htdocs/releases/12.0R/schedule.xml</filename>"
 msgid ""
 "<filename>en_US.ISO8859-1/htdocs/security/errata-template.txt</filename>"
 msgstr ""
-"<filename>en_US.ISO8859-1/htdocs/releases/12.0R/schedule.xml</filename>"
+"<filename>en_US.ISO8859-1/htdocs/security/errata-template.txt</filename>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:629
@@ -1051,19 +1037,14 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:643
-#, fuzzy
-#| msgid ""
-#| "The <literal>fbsd:nokeywords</literal> must be set to <literal>on</"
-#| "literal> on the newly-added files before the pre-commit hooks will allow "
-#| "them to be added to the repository."
 msgid ""
 "The <literal>fbsd:nokeywords</literal> property must be set to <literal>on</"
 "literal> on the newly-added files before the pre-commit hooks will allow "
 "them to be added to the repository."
 msgstr ""
-"<literal>fbsd:nokeywords</literal> debe tener el valor <literal>on</literal> "
-"en los archivos recién añadidos antes de que los pre-commit hooks permitan "
-"añadirlos al repositorio."
+"La función <literal>fbsd:nokeywords</literal> debe tener el valor "
+"<literal>on</literal> en los archivos recién añadidos antes de que los pre-"
+"commit hooks permitan añadirlos al repositorio."
 
 #. (itstool) path: note/para
 #: article.translate.xml:649
@@ -1071,6 +1052,9 @@ msgid ""
 "The relevant release-related documents exist in the <filename class="
 "\"directory\">doc</filename> repository for FreeBSD 12.x and later."
 msgstr ""
+"Los documentos relevantes relacionados con la liberación existen en el "
+"repositorio <filename class=\"directory\">doc</filename> para FreeBSD 12.x y "
+"posteriores."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:656
@@ -1356,8 +1340,8 @@ msgid ""
 "<filename>stable/<replaceable>12</replaceable>/share/mk/src.opts.mk</"
 "filename>"
 msgstr ""
-"<filename>stable/<replaceable>12</replaceable>/sys/arm/conf/std.arm*</"
-"filename>"
+"<filename>stable/<replaceable>12</replaceable>/share/mk/"
+"src.opts.mk</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:789
@@ -1587,7 +1571,7 @@ msgstr "Actualice <varname>OS_VERSION</varname>"
 #, fuzzy
 #| msgid "<filename>head/Makefile.libcompat</filename>"
 msgid "<filename>Makefile.libcompat</filename>"
-msgstr "<filename>head/Makefile.libcompat</filename>"
+msgstr "<filename>Makefile.libcompat</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:955
