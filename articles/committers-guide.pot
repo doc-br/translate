@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-03-14 14:16-0300\n"
+"POT-Creation-Date: 2020-04-18 15:00-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,8 +88,8 @@ msgstr ""
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:66 article.translate.xml:68
 msgid ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml 53619 "
-"2019-11-21 17:38:49Z jhb $"
+"$FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml 54028 "
+"2020-03-31 22:44:55Z brooks $"
 msgstr ""
 
 #. (itstool) path: abstract/para
@@ -371,7 +371,7 @@ msgid ""
 "What keysize do you want? (2048) <userinput>2048</userinput>  <co xml:id=\"co-pgp-bits\"/>\n"
 "Requested keysize is 2048 bits\n"
 "Please specify how long the key should be valid.\n"
-"         0 = key does not expire\n"
+"\t 0 = key does not expire\n"
 "      &lt;n&gt;  = key expires in n days\n"
 "      &lt;n&gt;w = key expires in n weeks\n"
 "      &lt;n&gt;m = key expires in n months\n"
@@ -934,14 +934,14 @@ msgstr ""
 #: article.translate.xml:676
 msgid ""
 "<emphasis>/books/</emphasis> contains the source code for the different "
-"books, such as the FreeBSD Handbook."
+"books, such as the FreeBSD Handbook."
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:682
 msgid ""
-"<emphasis>/htdocs/</emphasis> contains the source code for the "
-"FreeBSD website."
+"<emphasis>/htdocs/</emphasis> contains the source code for the FreeBSD "
+"website."
 msgstr ""
 
 #. (itstool) path: sect3/title
@@ -6600,7 +6600,7 @@ msgid ""
 "--- 2015Q1/security/rubygem-sshkit/Makefile     (revision 380443)\n"
 "+++ 2015Q1/security/rubygem-sshkit/Makefile     (working copy)\n"
 "@@ -2,7 +2,7 @@\n"
-" # $FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml 53619 2019-11-21 17:38:49Z jhb $\n"
+" # $FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml 54028 2020-03-31 22:44:55Z brooks $\n"
 "\n"
 " PORTNAME=      sshkit\n"
 "-PORTVERSION=   1.6.1\n"
@@ -7061,7 +7061,7 @@ msgstr ""
 #. (itstool) path: step/para
 #: article.translate.xml:5326
 msgid ""
-"Ports Management Team <email>portmgr@FreeBSD.org</email> will replies with a "
+"Ports Management Team <email>portmgr@FreeBSD.org</email> will reply with a "
 "possible fallout."
 msgstr ""
 
@@ -7147,9 +7147,9 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: article.translate.xml:5415
 msgid ""
-"As of December 12, 2012, Google Analytics was enabled on the FreeBSD Project "
+"As of December 12, 2012, Google Analytics was enabled on the FreeBSD Project "
 "website to collect anonymized usage statistics regarding usage of the site. "
-"The information collected is valuable to the FreeBSD Documentation Project, "
+"The information collected is valuable to the FreeBSD Documentation Project, "
 "to identify various problems on the FreeBSD website."
 msgstr ""
 
@@ -7161,8 +7161,8 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: article.translate.xml:5424
 msgid ""
-"The FreeBSD Project takes visitor privacy very seriously. As such, the "
-"FreeBSD Project website honors the <quote>Do Not Track</quote> header "
+"The FreeBSD Project takes visitor privacy very seriously. As such, the "
+"FreeBSD Project website honors the <quote>Do Not Track</quote> header "
 "<emphasis>before</emphasis> fetching the tracking code from Google. For more "
 "information, please see the <link xlink:href=\"https://www.FreeBSD.org/"
 "privacy.html\">FreeBSD Privacy Policy</link>."
@@ -7205,7 +7205,7 @@ msgstr ""
 #: article.translate.xml:5452
 msgid ""
 "Any request for Google Analytics data without a clear, reasonable reason "
-"beneficial to the FreeBSD Project will be rejected."
+"beneficial to the FreeBSD Project will be rejected."
 msgstr ""
 
 #. (itstool) path: sect2/title

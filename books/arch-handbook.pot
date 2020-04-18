@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-03-14 14:16-0300\n"
+"POT-Creation-Date: 2020-04-18 15:01-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -387,8 +387,8 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:426
 msgid ""
-"The value of <literal>0xfffffff0</literal> is slightly less than 4 GB, so "
-"unless the machine has 4 GB of physical memory, it cannot point to a valid "
+"The value of <literal>0xfffffff0</literal> is slightly less than 4 GB, so "
+"unless the machine has 4 GB of physical memory, it cannot point to a valid "
 "memory address. The computer's hardware translates this address so that it "
 "points to a <acronym>BIOS</acronym> memory block."
 msgstr ""
@@ -923,8 +923,8 @@ msgid ""
 "Here, particularly, we are requesting the number of clock ticks since last "
 "midnight; this value is computed by the <acronym>BIOS</acronym> through the "
 "<acronym>RTC</acronym> (Real Time Clock). This clock can be programmed to "
-"work at frequencies ranging from 2 Hz to 8192 Hz. The <acronym>BIOS</"
-"acronym> sets it to 18.2 Hz at startup. When the request is satisfied, a 32-"
+"work at frequencies ranging from 2 Hz to 8192 Hz. The <acronym>BIOS</"
+"acronym> sets it to 18.2 Hz at startup. When the request is satisfied, a 32-"
 "bit result is returned by the <acronym>BIOS</acronym> in registers <literal>"
 "%cx</literal> and <literal>%dx</literal> (lower bytes in <literal>%dx</"
 "literal>). This result (the <literal>%dx</literal> part) is copied to "
@@ -14105,7 +14105,7 @@ msgstr ""
 
 #. (itstool) path: example/title
 #: book.translate.xml:16259
-msgid "Example of a Sample Echo Pseudo-Device Driver for FreeBSD 10.X - 12.X"
+msgid "Example of a Sample Echo Pseudo-Device Driver for FreeBSD 10.X - 12.X"
 msgstr ""
 
 #. (itstool) path: example/programlisting

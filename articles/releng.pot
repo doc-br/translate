@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-03-14 14:16-0300\n"
+"POT-Creation-Date: 2020-04-18 15:01-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgstr ""
 #: article.translate.xml:20
 msgid ""
 "I've been involved in the development of FreeBSD based products since 1997 "
-"at Walnut Creek CDROM, BSDi, and now Wind River Systems. FreeBSD 4.4 was the "
+"at Walnut Creek CDROM, BSDi, and now Wind River Systems. FreeBSD 4.4 was the "
 "first official release of FreeBSD that I played a significant part in."
 msgstr ""
 
@@ -251,7 +251,7 @@ msgstr ""
 #: article.translate.xml:171
 msgid ""
 "To service our most conservative users, individual release branches were "
-"introduced with FreeBSD 4.3. These release branches are created shortly "
+"introduced with FreeBSD 4.3. These release branches are created shortly "
 "before a final release is made. After the release goes out, only the most "
 "critical security fixes and additions are merged onto the release branch. In "
 "addition to source updates via Subversion, binary patchkits are available to "
@@ -288,7 +288,7 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:217
-msgid "Some of the lessons learned through the release of FreeBSD 4.4."
+msgid "Some of the lessons learned through the release of FreeBSD 4.4."
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -504,7 +504,7 @@ msgstr ""
 #: article.translate.xml:372
 msgid ""
 "<imageobject> <imagedata fileref=\"branches-releng3\" align=\"center\"/> </"
-"imageobject> <textobject> <phrase>FreeBSD 3.x STABLE Branch</phrase> </"
+"imageobject> <textobject> <phrase>FreeBSD 3.x STABLE Branch</phrase> </"
 "textobject>"
 msgstr ""
 
@@ -522,7 +522,7 @@ msgstr ""
 #: article.translate.xml:382
 msgid ""
 "<imageobject> <imagedata fileref=\"branches-releng4\" align=\"center\"/> </"
-"imageobject> <textobject> <phrase>FreeBSD 4.x STABLE Branch</phrase> </"
+"imageobject> <textobject> <phrase>FreeBSD 4.x STABLE Branch</phrase> </"
 "textobject>"
 msgstr ""
 
@@ -540,7 +540,7 @@ msgstr ""
 #: article.translate.xml:392
 msgid ""
 "<imageobject> <imagedata fileref=\"branches-releng5\" align=\"center\"/> </"
-"imageobject> <textobject> <phrase>FreeBSD 5.x STABLE Branch</phrase> </"
+"imageobject> <textobject> <phrase>FreeBSD 5.x STABLE Branch</phrase> </"
 "textobject>"
 msgstr ""
 
@@ -558,7 +558,7 @@ msgstr ""
 #: article.translate.xml:402
 msgid ""
 "<imageobject> <imagedata fileref=\"branches-releng6\" align=\"center\"/> </"
-"imageobject> <textobject> <phrase>FreeBSD 6.x STABLE Branch</phrase> </"
+"imageobject> <textobject> <phrase>FreeBSD 6.x STABLE Branch</phrase> </"
 "textobject>"
 msgstr ""
 
@@ -576,7 +576,7 @@ msgstr ""
 #: article.translate.xml:412
 msgid ""
 "<imageobject> <imagedata fileref=\"branches-releng7\" align=\"center\"/> </"
-"imageobject> <textobject> <phrase>FreeBSD 7.x STABLE Branch</phrase> </"
+"imageobject> <textobject> <phrase>FreeBSD 7.x STABLE Branch</phrase> </"
 "textobject>"
 msgstr ""
 
@@ -594,7 +594,7 @@ msgstr ""
 #: article.translate.xml:422
 msgid ""
 "<imageobject> <imagedata fileref=\"branches-releng8\" align=\"center\"/> </"
-"imageobject> <textobject> <phrase>FreeBSD 8.x STABLE Branch</phrase> </"
+"imageobject> <textobject> <phrase>FreeBSD 8.x STABLE Branch</phrase> </"
 "textobject>"
 msgstr ""
 
@@ -612,7 +612,7 @@ msgstr ""
 #: article.translate.xml:432
 msgid ""
 "<imageobject> <imagedata fileref=\"branches-releng9\" align=\"center\"/> </"
-"imageobject> <textobject> <phrase>FreeBSD 9.x STABLE Branch</phrase> </"
+"imageobject> <textobject> <phrase>FreeBSD 9.x STABLE Branch</phrase> </"
 "textobject>"
 msgstr ""
 
@@ -1016,7 +1016,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: article.translate.xml:738
 msgid ""
-"Starting with FreeBSD 4.4, the FreeBSD Project decided to release all four "
+"Starting with FreeBSD 4.4, the FreeBSD Project decided to release all four "
 "ISO images that were previously sold on the <emphasis>BSDi/Wind River "
 "Systems/FreeBSD Mall</emphasis> <quote>official</quote> CDROM distributions. "
 "Each of the four discs must contain a <filename>README.TXT</filename> file "
@@ -1289,7 +1289,7 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:943
-msgid "Lessons Learned from FreeBSD 4.4"
+msgid "Lessons Learned from FreeBSD 4.4"
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -1336,7 +1336,7 @@ msgstr ""
 msgid ""
 "<emphasis>Parallelism</emphasis> - Certain portions of the release build are "
 "actually <quote>embarrassingly parallel</quote>. Most of the tasks are very "
-"I/O intensive, so having multiple high-speed disk drives is actually more "
+"I/O intensive, so having multiple high-speed disk drives is actually more "
 "important than using multiple processors in speeding up the <command>make "
 "release</command> process. If multiple disks are used for different "
 "hierarchies in the <citerefentry><refentrytitle>chroot</"
@@ -1404,7 +1404,7 @@ msgstr ""
 #: article.translate.xml:1018
 msgid ""
 "I would like to thank Jordan Hubbard for giving me the opportunity to take "
-"on some of the release engineering responsibilities for FreeBSD 4.4 and also "
+"on some of the release engineering responsibilities for FreeBSD 4.4 and also "
 "for all of his work throughout the years making FreeBSD what it is today. Of "
 "course the release would not have been possible without all of the release-"
 "related work done by Satoshi Asami <email>asami@FreeBSD.org</email>, Steve "
@@ -1412,7 +1412,7 @@ msgid ""
 "org</email>, Nik Clayton <email>nik@FreeBSD.org</email>, David O'Brien "
 "<email>obrien@FreeBSD.org</email>, Kris Kennaway <email>kris@FreeBSD.org</"
 "email>, John Baldwin <email>jhb@FreeBSD.org</email> and the rest of the "
-"FreeBSD development community. I would also like to thank Rodney Grimes "
+"FreeBSD development community. I would also like to thank Rodney W. Grimes "
 "<email>rgrimes@FreeBSD.org</email>, Poul-Henning Kamp <email>phk@FreeBSD."
 "org</email>, and others who worked on the release engineering tools in the "
 "very early days of FreeBSD. This article was influenced by release "
