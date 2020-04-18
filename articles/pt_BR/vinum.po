@@ -1,22 +1,22 @@
 # $FreeBSD$
 # $FreeBSD: head/pt_BR.ISO8859-1/articles/vinum/pt_BR.po 52259 2018-09-15 14:15:22Z ebrandi $
-# Danilo G. Baio <dbaio@FreeBSD.org>, 2019. #zanata
+# Danilo G. Baio <dbaio@FreeBSD.org>, 2019. #zanata, 2020.
 # Edson Brandi <ebrandi@FreeBSD.org>, 2019. #zanata
 # Edson Brandi <ebrandi@freebsd.org>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-18 15:01-0300\n"
-"PO-Revision-Date: 2019-11-15 19:45+0000\n"
+"PO-Revision-Date: 2020-04-18 19:38+0000\n"
 "Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
-"Language-Team: Portuguese (Brazil) <https://weblate.eastus.cloudapp.azure."
-"com/projects/freebsd-doc/articles_vinum/pt_BR/>\n"
+"Language-Team: Portuguese (Brazil) <https://translate-dev.freebsd.org/"
+"projects/freebsd-doc/articles_vinum/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -98,21 +98,6 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:58
-#, fuzzy
-#| msgid ""
-#| "Starting with FreeBSD 5, <filename>vinum</filename> has been rewritten in "
-#| "order to fit into the <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US."
-#| "ISO8859-1/books/handbook/geom.html\">GEOM architecture</link>, while "
-#| "retaining the original ideas, terminology, and on-disk metadata. This "
-#| "rewrite is called <emphasis>gvinum</emphasis> (for <emphasis> GEOM vinum</"
-#| "emphasis>). While this chapter uses the term <filename>vinum</filename>, "
-#| "any command invocations should be performed with <command>gvinum</"
-#| "command>. The name of the kernel module has changed from the original "
-#| "<filename>vinum.ko</filename> to <filename>geom_vinum.ko</filename>, and "
-#| "all device nodes reside under <filename class=\"directory\">/dev/gvinum</"
-#| "filename> instead of <filename class=\"directory\">/dev/vinum</filename>. "
-#| "As of FreeBSD 6, the original <filename>vinum</filename> implementation "
-#| "is no longer available in the code base."
 msgid ""
 "Starting with FreeBSD 5, <filename>vinum</filename> has been rewritten in "
 "order to fit into the <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US."
@@ -136,8 +121,8 @@ msgstr ""
 "este capítulo usa o termo <filename>vinum</filename>, qualquer invocação de "
 "comandos deve ser executada com o <command>gvinum</command>. O nome do "
 "módulo do kernel mudou do original <filename>vinum.ko</filename> para "
-"<filename>geom_vinum.ko</filename>, e todos os device nodes residem em "
-"<filename class=\"directory\">/dev/gvinum</filename> em vez de <filename "
+"<filename>geom_vinum.ko</filename>, e todos os device nodes residem em <"
+"filename class=\"directory\">/dev/gvinum</filename> em vez de <filename "
 "class=\"directory\">/dev/vinum</filename>. A partir do FreeBSD 6, a "
 "implementação original do <filename>vinum</filename> não está mais "
 "disponível no código base."
@@ -149,12 +134,6 @@ msgstr "Gargalos de Acesso"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:78
-#, fuzzy
-#| msgid ""
-#| "Modern systems frequently need to access data in a highly concurrent "
-#| "manner. For example, large FTP or HTTP servers can maintain thousands of "
-#| "concurrent sessions and have multiple 100 Mbit/s connections to the "
-#| "outside world, well beyond the sustained transfer rate of most disks."
 msgid ""
 "Modern systems frequently need to access data in a highly concurrent manner. "
 "For example, large FTP or HTTP servers can maintain thousands of concurrent "
@@ -169,15 +148,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:84
-#, fuzzy
-#| msgid ""
-#| "Current disk drives can transfer data sequentially at up to 70 MB/s, but "
-#| "this value is of little importance in an environment where many "
-#| "independent processes access a drive, and where they may achieve only a "
-#| "fraction of these values. In such cases, it is more interesting to view "
-#| "the problem from the viewpoint of the disk subsystem. The important "
-#| "parameter is the load that a transfer places on the subsystem, or the "
-#| "time for which a transfer occupies the drives involved in the transfer."
 msgid ""
 "Current disk drives can transfer data sequentially at up to 70 MB/s, but "
 "this value is of little importance in an environment where many independent "
@@ -210,15 +180,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:100
-#, fuzzy
-#| msgid ""
-#| "<anchor xml:id=\"vinum-latency\"/> Consider a typical transfer of about "
-#| "10 kB: the current generation of high-performance disks can position the "
-#| "heads in an average of 3.5 ms. The fastest drives spin at 15,000 rpm, so "
-#| "the average rotational latency (half a revolution) is 2 ms. At 70 MB/s, "
-#| "the transfer itself takes about 150 μs, almost nothing compared to the "
-#| "positioning time. In such a case, the effective transfer rate drops to a "
-#| "little over 1 MB/s and is clearly highly dependent on the transfer size."
 msgid ""
 "<anchor xml:id=\"vinum-latency\"/> Consider a typical transfer of about 10 "
 "kB: the current generation of high-performance disks can position the heads "
@@ -708,15 +669,6 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:382
-#, fuzzy
-#| msgid ""
-#| "A <emphasis>striped plex</emphasis> stripes the data across each subdisk. "
-#| "The subdisks must all be the same size and there must be at least two "
-#| "subdisks in order to distinguish it from a concatenated plex. The "
-#| "greatest advantage of striped plexes is that they reduce hot spots. By "
-#| "choosing an optimum sized stripe, about 256 kB, the load can be evened "
-#| "out on the component drives. Extending a plex by adding new subdisks is "
-#| "so complicated that <filename>vinum</filename> does not implement it."
 msgid ""
 "A <emphasis>striped plex</emphasis> stripes the data across each subdisk. "
 "The subdisks must all be the same size and there must be at least two "
@@ -1156,10 +1108,6 @@ msgstr "external ref='vinum-mirrored-vol' md5='__ failed__'"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:613
-#, fuzzy
-#| msgid ""
-#| "In this example, each plex contains the full 512 MB of address space. As "
-#| "in the previous example, each plex contains only a single subdisk."
 msgid ""
 "In this example, each plex contains the full 512 MB of address space. As in "
 "the previous example, each plex contains only a single subdisk."
