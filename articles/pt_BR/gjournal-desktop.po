@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-11-02 17:04-0300\n"
+"POT-Creation-Date: 2020-04-18 15:00-0300\n"
 "PO-Revision-Date: 2019-11-09 09:08+0000\n"
 "Last-Translator: Edson Brandi <ebrandi@freebsd.org>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.eastus.cloudapp.azure."
@@ -86,6 +86,19 @@ msgstr ""
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:32
+#, fuzzy
+#| msgid ""
+#| "A journaling file system uses a log to record all transactions that take "
+#| "place in the file system, and preserves its integrity in the event of a "
+#| "system crash or power failure. Although it is still possible to lose "
+#| "unsaved changes to files, journaling almost completely eliminates the "
+#| "possibility of file system corruption caused by an unclean shutdown. It "
+#| "also shortens to a minimum the time required for after-failure file "
+#| "system checking. Although the UFS file system employed by FreeBSD does "
+#| "not implement journaling itself, the new journal class of the GEOM "
+#| "framework in FreeBSD 7.<replaceable>X</replaceable> can be used to "
+#| "provide file system independent journaling. This article explains how to "
+#| "implement UFS journaling on a typical desktop PC scenario."
 msgid ""
 "A journaling file system uses a log to record all transactions that take "
 "place in the file system, and preserves its integrity in the event of a "
@@ -94,7 +107,7 @@ msgid ""
 "file system corruption caused by an unclean shutdown. It also shortens to a "
 "minimum the time required for after-failure file system checking. Although "
 "the UFS file system employed by FreeBSD does not implement journaling "
-"itself, the new journal class of the GEOM framework in FreeBSD 7."
+"itself, the new journal class of the GEOM framework in FreeBSD 7."
 "<replaceable>X</replaceable> can be used to provide file system independent "
 "journaling. This article explains how to implement UFS journaling on a "
 "typical desktop PC scenario."
@@ -254,12 +267,19 @@ msgstr "Compreendendo o journaling no FreeBSD"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:126
+#, fuzzy
+#| msgid ""
+#| "The journaling provided by GEOM in FreeBSD 7.<replaceable>X</replaceable> "
+#| "is not file system specific (unlike for example the ext3 file system in "
+#| "<trademark class=\"registered\">Linux</trademark>) but is functioning at "
+#| "the block level. Though this means it can be applied to different file "
+#| "systems, for FreeBSD 7.0-RELEASE, it can only be used on UFS2."
 msgid ""
-"The journaling provided by GEOM in FreeBSD 7.<replaceable>X</replaceable> is "
+"The journaling provided by GEOM in FreeBSD 7.<replaceable>X</replaceable> is "
 "not file system specific (unlike for example the ext3 file system in "
 "<trademark class=\"registered\">Linux</trademark>) but is functioning at the "
 "block level. Though this means it can be applied to different file systems, "
-"for FreeBSD 7.0-RELEASE, it can only be used on UFS2."
+"for FreeBSD 7.0-RELEASE, it can only be used on UFS2."
 msgstr ""
 "O journaling fornecido pelo GEOM no FreeBSD 7.<replaceable>X</replaceable> "
 "não é específico do sistema de arquivos (diferentemente do sistema de "
@@ -345,10 +365,19 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:172
+#, fuzzy
+#| msgid ""
+#| "The amount of disk space you need to reserve for the journal provider "
+#| "depends on the usage load of the file system and not on the size of the "
+#| "data provider. For example on a typical office desktop, a 1 GB journal "
+#| "provider for the <filename>/usr</filename> file system will suffice, "
+#| "while a machine that deals with heavy disk I/O (i.e. video editing) may "
+#| "need more. A kernel panic will occur if the journal space is exhausted "
+#| "before it has a chance to be committed."
 msgid ""
 "The amount of disk space you need to reserve for the journal provider "
 "depends on the usage load of the file system and not on the size of the data "
-"provider. For example on a typical office desktop, a 1 GB journal provider "
+"provider. For example on a typical office desktop, a 1 GB journal provider "
 "for the <filename>/usr</filename> file system will suffice, while a machine "
 "that deals with heavy disk I/O (i.e. video editing) may need more. A kernel "
 "panic will occur if the journal space is exhausted before it has a chance to "
@@ -364,13 +393,22 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:182
+#, fuzzy
+#| msgid ""
+#| "The journal sizes suggested here, are highly unlikely to cause problems "
+#| "in typical desktop use (such as web browsing, word processing and "
+#| "playback of media files). If your workload includes intense disk "
+#| "activity, use the following rule for maximum reliability: Your RAM size "
+#| "should fit in 30% of the journal provider's space. For example, if your "
+#| "system has 1 GB RAM, create an approximately 3.3 GB journal provider. "
+#| "(Multiply your RAM size with 3.3 to obtain the size of the journal)."
 msgid ""
 "The journal sizes suggested here, are highly unlikely to cause problems in "
 "typical desktop use (such as web browsing, word processing and playback of "
 "media files). If your workload includes intense disk activity, use the "
 "following rule for maximum reliability: Your RAM size should fit in 30% of "
-"the journal provider's space. For example, if your system has 1 GB RAM, "
-"create an approximately 3.3 GB journal provider. (Multiply your RAM size "
+"the journal provider's space. For example, if your system has 1 GB RAM, "
+"create an approximately 3.3 GB journal provider. (Multiply your RAM size "
 "with 3.3 to obtain the size of the journal)."
 msgstr ""
 "É improvável que os tamanhos de journal sugeridos aqui causem problemas no "
@@ -440,8 +478,13 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:217
+#, fuzzy
+#| msgid ""
+#| "In our example, an 80 GB disk is used. The following screenshot shows the "
+#| "default partitions created by <application>Disklabel</application> during "
+#| "installation:"
 msgid ""
-"In our example, an 80 GB disk is used. The following screenshot shows the "
+"In our example, an 80 GB disk is used. The following screenshot shows the "
 "default partitions created by <application>Disklabel</application> during "
 "installation:"
 msgstr ""
@@ -474,11 +517,20 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:233
+#, fuzzy
+#| msgid ""
+#| "Now, move the highlight to the disk name at the top of the screen and "
+#| "press <keycap>C</keycap> to create a new partition for <filename>/usr</"
+#| "filename>. This new partition should be smaller by 1 GB (if you intend to "
+#| "journal <filename>/usr</filename> only), or 2 GB (if you intend to "
+#| "journal both <filename>/usr</filename> and <filename>/var</filename>). "
+#| "From the pop-up that appears, opt to create a file system, and type "
+#| "<filename>/usr</filename> as the mount point."
 msgid ""
 "Now, move the highlight to the disk name at the top of the screen and press "
 "<keycap>C</keycap> to create a new partition for <filename>/usr</filename>. "
-"This new partition should be smaller by 1 GB (if you intend to journal "
-"<filename>/usr</filename> only), or 2 GB (if you intend to journal both "
+"This new partition should be smaller by 1 GB (if you intend to journal "
+"<filename>/usr</filename> only), or 2 GB (if you intend to journal both "
 "<filename>/usr</filename> and <filename>/var</filename>). From the pop-up "
 "that appears, opt to create a file system, and type <filename>/usr</"
 "filename> as the mount point."
@@ -1004,8 +1056,16 @@ msgstr "<prompt>#</prompt> <userinput>gjournal label ad1s1d</userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:469
+#, fuzzy
+#| msgid ""
+#| "The journal size will be 1 GB by default. You may adjust it by using the "
+#| "<option>-s</option> option. The value can be given in bytes, or appended "
+#| "by <literal>K</literal>, <literal>M</literal> or <literal>G</literal> to "
+#| "denote Kilobytes, Megabytes or Gigabytes respectively. Note that "
+#| "<command>gjournal</command> will not allow you to create unsuitably small "
+#| "journal sizes."
 msgid ""
-"The journal size will be 1 GB by default. You may adjust it by using the "
+"The journal size will be 1 GB by default. You may adjust it by using the "
 "<option>-s</option> option. The value can be given in bytes, or appended by "
 "<literal>K</literal>, <literal>M</literal> or <literal>G</literal> to denote "
 "Kilobytes, Megabytes or Gigabytes respectively. Note that <command>gjournal</"
@@ -1020,8 +1080,12 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:476
+#, fuzzy
+#| msgid ""
+#| "For example, to create a 2 GB journal, you could use the following "
+#| "command:"
 msgid ""
-"For example, to create a 2 GB journal, you could use the following command:"
+"For example, to create a 2 GB journal, you could use the following command:"
 msgstr ""
 "Por exemplo, para criar um journal de 2 GB, você poderia usar o seguinte "
 "comando:"
@@ -1078,13 +1142,18 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:499
+#, fuzzy
+#| msgid ""
+#| "Rebuild and reinstall your kernel following the relevant <link xlink:href="
+#| "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/kernelconfig.html"
+#| "\">instructions in the FreeBSD Handbook.</link>"
 msgid ""
 "Rebuild and reinstall your kernel following the relevant <link xlink:href="
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/kernelconfig.html"
-"\">instructions in the FreeBSD Handbook.</link>"
+"\">instructions in the FreeBSD Handbook.</link>"
 msgstr ""
-"Recompile e reinstale seu kernel seguindo as instruções <link xlink:href=\""
-"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/kernelconfig.html\"> "
+"Recompile e reinstale seu kernel seguindo as instruções <link xlink:href="
+"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/kernelconfig.html\"> "
 "relevantes no Handbook do FreeBSD.</link>"
 
 #. (itstool) path: sect2/para
@@ -1389,10 +1458,15 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:648
+#, fuzzy
+#| msgid ""
+#| "A <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
+#| "geom-gjournal.html\">new section on journaling</link> is now part of the "
+#| "FreeBSD Handbook."
 msgid ""
 "A <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
 "geom-gjournal.html\">new section on journaling</link> is now part of the "
-"FreeBSD Handbook."
+"FreeBSD Handbook."
 msgstr ""
 "Uma <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
 "geom-gjournal.html\">nova seção sobre journaling</link> agora faz parte do "
