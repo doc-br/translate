@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-11-02 17:04-0300\n"
+"POT-Creation-Date: 2020-04-18 15:01-0300\n"
 "PO-Revision-Date: 2019-11-04 00:20+0000\n"
 "Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.eastus.cloudapp.azure."
@@ -144,10 +144,16 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:56
+#, fuzzy
+#| msgid ""
+#| "This document assumes that FreeBSD is already installed. Refer to the "
+#| "<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
+#| "bsdinstall.html\"> Installing FreeBSD</link> chapter of the "
+#| "FreeBSD Handbook for help with the installation process."
 msgid ""
 "This document assumes that FreeBSD is already installed. Refer to the <link "
 "xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/bsdinstall."
-"html\"> Installing FreeBSD</link> chapter of the FreeBSD Handbook for help "
+"html\"> Installing FreeBSD</link> chapter of the FreeBSD Handbook for help "
 "with the installation process."
 msgstr ""
 "Este documento assume que o FreeBSD já está instalado. Acesse o link do "
@@ -322,10 +328,17 @@ msgstr "Pacotes"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:142
+#, fuzzy
+#| msgid ""
+#| "Packages are pre-compiled applications, the FreeBSD equivalents of "
+#| "<filename>.deb</filename> files on Debian/Ubuntu based systems and "
+#| "<filename>.rpm</filename> files on Red Hat/Fedora based systems. Packages "
+#| "are installed using <command>pkg</command>. For example, the following "
+#| "command installs <application>Apache 2.4</application>:"
 msgid ""
 "Packages are pre-compiled applications, the FreeBSD equivalents of "
 "<filename>.deb</filename> files on Debian/Ubuntu based systems and "
-"<filename>.rpm</filename> files on Red Hat/Fedora based systems. Packages "
+"<filename>.rpm</filename> files on Red Hat/Fedora based systems. Packages "
 "are installed using <command>pkg</command>. For example, the following "
 "command installs <application>Apache 2.4</application>:"
 msgstr ""
@@ -626,13 +639,22 @@ msgstr "Configuração de Rede"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:270
+#, fuzzy
+#| msgid ""
+#| "Instead of a generic <emphasis>ethX</emphasis> identifier that <trademark "
+#| "class=\"registered\">Linux</trademark> uses to identify a network "
+#| "interface, FreeBSD uses the driver name followed by a number. The "
+#| "following output from <citerefentry><refentrytitle>ifconfig</"
+#| "refentrytitle><manvolnum>8</manvolnum></citerefentry> shows two "
+#| "<trademark class=\"registered\">Intel</trademark> Pro 1000 network "
+#| "interfaces (<filename>em0</filename> and <filename>em1</filename>):"
 msgid ""
 "Instead of a generic <emphasis>ethX</emphasis> identifier that <trademark "
 "class=\"registered\">Linux</trademark> uses to identify a network interface, "
 "FreeBSD uses the driver name followed by a number. The following output from "
 "<citerefentry><refentrytitle>ifconfig</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> shows two <trademark class=\"registered\">Intel</"
-"trademark> Pro 1000 network interfaces (<filename>em0</filename> and "
+"trademark> Pro 1000 network interfaces (<filename>em0</filename> and "
 "<filename>em1</filename>):"
 msgstr ""
 "Diferente da identificação genérica <emphasis>ethX</emphasis> usada pelo "
@@ -1040,8 +1062,11 @@ msgstr "Alguns comandos comuns e equivalentes são os seguintes:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:439
+#, fuzzy
+#| msgid ""
+#| "<trademark class=\"registered\">Linux</trademark> command (Red Hat/Debian)"
 msgid ""
-"<trademark class=\"registered\">Linux</trademark> command (Red Hat/Debian)"
+"<trademark class=\"registered\">Linux</trademark> command (Red Hat/Debian)"
 msgstr ""
 "Comandos do <trademark class=\"registered\">Linux</trademark> (Red Hat/"
 "Debian)"
@@ -1177,10 +1202,16 @@ msgstr "Conclusão"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:505
+#, fuzzy
+#| msgid ""
+#| "This document has provided an overview of FreeBSD. Refer to the <link "
+#| "xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/index."
+#| "html\">FreeBSD Handbook</link> for more in-depth coverage of these topics "
+#| "as well as the many topics not covered by this document."
 msgid ""
 "This document has provided an overview of FreeBSD. Refer to the <link xlink:"
 "href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/index.html"
-"\">FreeBSD Handbook</link> for more in-depth coverage of these topics as "
+"\">FreeBSD Handbook</link> for more in-depth coverage of these topics as "
 "well as the many topics not covered by this document."
 msgstr ""
 "EEste documento forneceu uma visão geral do FreeBSD. Veja o <link xlink:href="
