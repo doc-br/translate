@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-11-02 17:04-0300\n"
+"POT-Creation-Date: 2020-04-18 15:01-0300\n"
 "PO-Revision-Date: 2019-11-04 00:20+0000\n"
 "Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.eastus.cloudapp.azure."
@@ -3569,10 +3569,17 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: article.translate.xml:2143
+#, fuzzy
+#| msgid ""
+#| "Next, appropriate entries in <filename>/dev</filename> for the devices "
+#| "must be made using the <filename>/dev/MAKEDEV</filename> script. This "
+#| "step can be omitted if you are running FreeBSD 5.X with a kernel that has "
+#| "<citerefentry vendor=\"current\"><refentrytitle>devfs</"
+#| "refentrytitle><manvolnum>5</manvolnum></citerefentry> support compiled in."
 msgid ""
 "Next, appropriate entries in <filename>/dev</filename> for the devices must "
 "be made using the <filename>/dev/MAKEDEV</filename> script. This step can be "
-"omitted if you are running FreeBSD 5.X with a kernel that has <citerefentry "
+"omitted if you are running FreeBSD 5.X with a kernel that has <citerefentry "
 "vendor=\"current\"><refentrytitle>devfs</refentrytitle><manvolnum>5</"
 "manvolnum></citerefentry> support compiled in."
 msgstr ""
@@ -3934,8 +3941,13 @@ msgstr "Recompile e instale o novo kernel."
 
 #. (itstool) path: footnote/para
 #: article.translate.xml:2325
+#, fuzzy
+#| msgid ""
+#| "You can omit this part if you are running FreeBSD 5.X with <citerefentry "
+#| "vendor=\"current\"><refentrytitle>devfs</refentrytitle><manvolnum>5</"
+#| "manvolnum></citerefentry>."
 msgid ""
-"You can omit this part if you are running FreeBSD 5.X with <citerefentry "
+"You can omit this part if you are running FreeBSD 5.X with <citerefentry "
 "vendor=\"current\"><refentrytitle>devfs</refentrytitle><manvolnum>5</"
 "manvolnum></citerefentry>."
 msgstr ""
@@ -4139,10 +4151,15 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:2414
+#, fuzzy
+#| msgid ""
+#| "The following step, is not necessary if you are using <citerefentry "
+#| "vendor=\"current\"><refentrytitle>devfs</refentrytitle><manvolnum>5</"
+#| "manvolnum></citerefentry> in FreeBSD 5.<replaceable>X</replaceable>."
 msgid ""
 "The following step, is not necessary if you are using <citerefentry vendor="
 "\"current\"><refentrytitle>devfs</refentrytitle><manvolnum>5</manvolnum></"
-"citerefentry> in FreeBSD 5.<replaceable>X</replaceable>."
+"citerefentry> in FreeBSD 5.<replaceable>X</replaceable>."
 msgstr ""
 "A etapa seguinte, não é necessária se você estiver usando o <citerefentry "
 "vendor=\"current\"><refentrytitle>devfs</refentrytitle><manvolnum>5</"
