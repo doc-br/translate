@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-03-14 14:16-0300\n"
-"PO-Revision-Date: 2020-04-24 19:57+0000\n"
+"PO-Revision-Date: 2020-04-26 21:18+0000\n"
 "Last-Translator: mkufner <MichaelKufner@t-online.de>\n"
 "Language-Team: German <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_bsdl-gpl/de_DE/>\n"
@@ -74,7 +74,7 @@ msgid ""
 msgstr ""
 "Viele der von Herstellern und Verkäufern zur Unterscheidung ihrer Produkte "
 "verwendeten Bezeichnungen werden als Marken geltend gemacht. Dort, wo in "
-"diesem Dokument solche Bezeichnungen erscheinen und dem FreeBSD Project der "
+"diesem Dokument solche Bezeichnungen erscheinen und dem FreeBSD-Projekt der "
 "Markenanspruch bekannt war, wurden die Bezeichnungen mit dem Symbol "
 "<quote>™</quote> oder dem Symbol <quote>®</quote> versehen."
 
@@ -718,6 +718,13 @@ msgid ""
 "providing various forms of technical support, including documentation, for "
 "the GPLed intellectual property world."
 msgstr ""
+"Die GPL ist außerdem für kleine Unternehmen attraktiv, die CDs in einem "
+"Umfeld verkaufen, in dem der Endnutzer trotz der \"Buy low, Sell high\"-"
+"Methode dennoch ein sehr preiswertes Produkt erhält. Die GPL ist auch für "
+"Unternehmen attraktiv, deren Geschäftsmodell auf Dienstleistungen wie "
+"technischen Support und dem Bereitstellen von Dokumentation basiert. Auf "
+"diese Weise wollen sie mit GPL-Software in einer Welt des geistigen "
+"Eigentums überleben."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:336
@@ -727,6 +734,11 @@ msgid ""
 "the GPL is well suited for use as a marketing weapon, potentially reducing "
 "overall economic benefit and contributing to monopolistic behavior."
 msgstr ""
+"Weniger bekannt ist ein ursprünglich nicht von der GPL vorgesehener "
+"Einsatzzweck: Großkonzerne können damit die Preise von Softwarefirmen "
+"drücken. Mit anderen Worten: Die GPL eignet sich gut als "
+"Marketinginstrument, verringert potenziell den gesamtwirtschaftlichen Nutzen "
+"und fördert monopolistisches Verhalten."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:342
@@ -737,6 +749,12 @@ msgid ""
 "research results, or the difficulty a student will have in joining a company "
 "on the assumption that a promising research project will be commercialized."
 msgstr ""
+"Die GPL kann für alle ein echtes Problem darstellen, die Software "
+"kommerziell vermarkten und Gewinne erwirtschaften wollen. So verkompliziert "
+"die GPL beispielsweise die Situation eines Doktoranden, der direkt ein "
+"Unternehmen gründen will, um seine Forschungsergebnisse zu verwerten. Ebenso "
+"ist es für einen Studenten schwierig, bei einem Unternehmen zu arbeiten, "
+"wenn ein vielversprechendes Forschungsprojekt vermarktet werden soll."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:349
@@ -749,6 +767,14 @@ msgid ""
 "engineers proprietary products. (This does not apply to Linux applications "
 "because they do not statically link, rather they use a trap-based API.)"
 msgstr ""
+"Die GPL ist für alle eine schlechte Lizenz, die mit statisch gelinkten "
+"Implementierungen mehrerer Softwarestandards arbeiten müssen, da sie "
+"proprietäre Implementierungen dieser Standards ausschließt. Sie minimiert "
+"somit die Anzahl der Programme, die mit einem GPL-lizenzierten Standard "
+"entwickelt werden können. Die GPL war ursprünglich nicht dazu gedacht, einen "
+"Mechanismus zu schaffen, auf dessen Grundlage proprietäre Produkte "
+"entwickelt werden. (Dies gilt nicht für Linux-Anwendungen, weil diese nicht "
+"statisch, sondern dynamisch linken.)"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:359
@@ -762,6 +788,15 @@ msgid ""
 "are definitely considered potential problems by many embedded systems "
 "companies."
 msgstr ""
+"Die GPL möchte Programmierer dazu bringen, an Programmen mitzuwirken, die "
+"sich stetig weiterentwickeln, um dann bei der Distribution und Unterstützung "
+"dieser Programme zu konkurrieren. Diese Vorgehensweise erscheint "
+"unrealistisch bei zahlreichen notwendigen Standards für Kernsysteme. Diese "
+"können in sehr unterschiedlichen Umgebungen eingesetzt werden, die eine "
+"kommerzielle Anpassung oder Integration mit Legacy-Standards unter "
+"bestehenden (nicht unter der GPL stehenden) Lizenzen erfordern. "
+"Echtzeitsysteme sind oft statisch gelinkt. Aus diesem Grund sehen viele "
+"Hersteller eingebetteter Systeme die GPL und LGPL zweifellos problematisch."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:369
@@ -771,6 +806,10 @@ msgid ""
 "developers, at an unknown cost to those who would benefit from wider "
 "distribution."
 msgstr ""
+"Die GPL kümmert sich nicht um den realen Bedarf, sondern richtet alle "
+"Anstrengungen auf das Forschungs- und Entwicklungsstadium. Das maximiert den "
+"Nutzen für Forscher und Entwickler, verursacht jedoch unbekannte Kosten für "
+"alle, die von einer größeren Verbreitung profitieren würden."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:374
@@ -780,11 +819,16 @@ msgid ""
 "traditional technology transfer pipeline and it is usually difficult enough "
 "under the best of circumstances; the GPL was intended to make it impossible."
 msgstr ""
+"Die GPL wurde konzipiert, um zu verhindern, dass aus Forschungsergebnissen "
+"proprietäre Produkte entstehen. Dieser Schritt gilt meist als der letzte "
+"Schritt in der traditionellen Technologietransfer-Pipeline. Selbst bei "
+"besten Voraussetzungen ist er schwierig genug – die GPL wollte  unmöglich "
+"machen."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:383
 msgid "BSD Advantages"
-msgstr ""
+msgstr "Vorteile von BSD"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:385
@@ -792,16 +836,19 @@ msgid ""
 "A BSD style license is a good choice for long duration research or other "
 "projects that need a development environment that:"
 msgstr ""
+"Eine BSD-artige Lizenz ist eine gute Wahl für langfristige "
+"Forschungsprojekte oder Projekte, die eine solche Entwicklungsumgebung mit "
+"folgenden Eigenschaften benötigen:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:391
 msgid "has near zero cost"
-msgstr ""
+msgstr "nahezu null Kosten"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:392
 msgid "will evolve over a long period of time"
-msgstr ""
+msgstr "langfristiger Entwicklungshorizont"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:394
@@ -809,6 +856,8 @@ msgid ""
 "permits anyone to retain the option of commercializing final results with "
 "minimal legal issues."
 msgstr ""
+"gewährt jedermann die Möglichkeit, die endgültigen Resultate mit minimalem "
+"rechtlichen Aufwand zu vermarkten."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:399
@@ -816,6 +865,8 @@ msgid ""
 "This final consideration may often be the dominant one, as it was when the "
 "Apache project decided upon its license:"
 msgstr ""
+"Oft mag folgende Überlegung ausschlaggebend sein, so wie damals, als das "
+"Apache-Projekt über seine Lizenz entschied:"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:402
