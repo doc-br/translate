@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-18 15:01-0300\n"
-"PO-Revision-Date: 2020-04-11 15:17+0000\n"
+"PO-Revision-Date: 2020-04-29 11:29+0000\n"
 "Last-Translator: Hongyou Bai <bhy1924@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate-dev.freebsd.org/"
 "projects/freebsd-doc/boooks_arch-handbook/zh_CN/>\n"
@@ -530,7 +530,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:451
-#, fuzzy
 msgid ""
 "The very last thing in the <acronym>POST</acronym> is the <literal>INT 0x19</"
 "literal> instruction. The <literal>INT 0x19</literal> handler reads 512 "
@@ -544,13 +543,12 @@ msgid ""
 "<acronym>MBR</acronym>, or Master Boot Record. The remaining sectors on the "
 "first track are never used."
 msgstr ""
-"<acronym>POST</acronym>的最后一步是执行<literal>INT 0x19</literal>指令。 这个"
-"指令从引导设备第一个扇区读取512字节，装入地址<literal>0x7c00</literal>。 "
-"<emphasis>第一个扇区</emphasis>的说法最早起源于硬盘的结构，硬盘面被分为若干圆"
-"柱形轨道。给轨道编号，同时又将轨道分为 一定数目(通常是64)的扇形。0号轨道是硬"
-"盘的最外圈，1号扇区， 第一个扇区(轨道、柱面都从0开始编号，而扇区从1开始编号) "
-"有着特殊的作用，它又被称为主引导记录(Master Boot Record, <acronym>MBR</"
-"acronym>)。 第一轨剩余的扇区常常不使用<_:footnote-1/>。"
+"<acronym>POST</acronym>的最后一步是执行<literal>INT 0x19</literal>指令。 "
+"这个指令从引导设备第一个扇区读取512字节，装入地址<literal>0x7c00</literal>。 "
+"<emphasis>第一个扇区</emphasis>的说法最早起源于硬盘的结构，硬盘面被分为若干圆柱形轨道。给轨道编号，同时又将轨道分为 "
+"一定数目(通常是64)的扇形。0号轨道是硬盘的最外圈，1号扇区， 第一个扇区(轨道、柱面都从0开始编号，而扇区从1开始编号) "
+"有着特殊的作用，它又被称为主引导记录(Master Boot Record, <acronym>MBR</acronym>)。 "
+"第一轨剩余的扇区常常不使用。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:466
@@ -659,9 +657,8 @@ msgid ""
 "sectors of the partition. The partition table ends with the special "
 "signature <literal>0xaa55</literal>."
 msgstr ""
-"一个分区记录描述符包含某一分区在硬盘上的确切位置信息。 LBA和CHS两种描述符指示"
-"相同的信息，但是指示方式有所不同：LBA (逻辑块寻址，Logical Block Addressing)"
-"指示分区的起始扇区和分区长度， 而CHS(柱面 磁头 扇区)指示首扇区和末扇区"
+"一个分区记录描述符包含某一分区在硬盘上的确切位置信息。 LBA和CHS两种描述符指示相同的信息，但是指示方式有所不同：LBA (逻辑块寻址，"
+"Logical Block Addressing)指示分区的起始扇区和分区长度， 而CHS(柱面 磁头 扇区)指示首扇区和末扇区。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:547
@@ -4030,9 +4027,8 @@ msgid ""
 "name is displayed in KTR trace messages and witness errors and warnings and "
 "is used to distinguish mutexes in the witness code."
 msgstr ""
-"由函数<function>mtx_init</function>指派的mutex的名字。 这个名字显示在KTR跟踪"
-"消息和witness出错与警告信息里。 这个名字还用于区分标识在witness代码中的各个"
-"mutex"
+"由函数<function>mtx_init</function>指派的mutex的名字。 这个名字显示在KTR跟踪消息和witness出错与警告信息里。 "
+"这个名字还用于区分标识在witness代码中的各个mutex。"
 
 #. (itstool) path: varlistentry/term
 #. (itstool) path: row/entry
@@ -7306,7 +7302,7 @@ msgstr "策略模块的入口函数 API"
 msgid ""
 "Entry points implementations (policy life cycle, object life cycle/label "
 "management, access control checks)."
-msgstr "入口函数的实现（包括策略生命周期管理、标记管理和访问控制检查三部分）"
+msgstr "入口函数的实现（包括策略生命周期管理、标记管理和访问控制检查三部分）。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4528
@@ -19377,8 +19373,8 @@ msgid ""
 "function> is used to identify the handler when passed to "
 "<function>teardown()</function>"
 msgstr ""
-"<emphasis>cookie[p]</emphasis> - 从<function>setup()</function>接收的值，当传"
-"递给<function>teardown()</function>时用于标识处理程序。"
+"<emphasis>cookie[p]</emphasis> - 从<function>setup()</function>接收的值，当传递给<funct"
+"ion>teardown()</function>时用于标识处理程序"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:17188
@@ -19629,8 +19625,8 @@ msgid ""
 "used to allocate the memory. The exact meaning varies depending on the "
 "planned future use:"
 msgstr ""
-"<emphasis>lowaddr, highaddr</emphasis> - 名字稍微有些误导。这些值用于限制可用"
-"于内存分配的物理地址的允许范围。其确切含义根据以后不同的使用而有所不同。"
+"<emphasis>lowaddr, highaddr</emphasis> - "
+"名字稍微有些误导。这些值用于限制可用于内存分配的物理地址的允许范围。其确切含义根据以后不同的使用而有所不同："
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:17341
@@ -26890,11 +26886,9 @@ msgid ""
 "however to read it together with the relevant 2.0 specifications and other "
 "developer resources:"
 msgstr ""
-"为USB子系统以及连接到它的设备开发驱动程序受已开发或将要开发的 规范的支持。这"
-"些规范可以从USB主页公开获得。苹果(Apple)通过使得 通用类驱动程序可从其操作系统"
-"MacOS中获得，而且不鼓励为每种新设备 使用单独的驱动程序来强烈推行基于标准的驱"
-"动程序。本章试图整理基本 信息以便对FreeBSD/NetBSD中USB栈的当前实现有个基本的"
-"了解。然而， 建议将下面参考中提及的相关规范与本章同时阅读。"
+"为USB子系统以及连接到它的设备开发驱动程序受已开发或将要开发的 规范的支持。这些规范可以从USB主页公开获得。苹果(Apple)通过使得 "
+"通用类驱动程序可从其操作系统MacOS中获得，而且不鼓励为每种新设备 使用单独的驱动程序来强烈推行基于标准的驱动程序。本章试图整理基本 信息以便对"
+"FreeBSD/NetBSD中USB栈的当前实现有个基本的了解。然而， 建议将下面参考中提及的相关规范与本章同时阅读："
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:21816
