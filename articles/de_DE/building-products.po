@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2019-12-09 20:45-0300\n"
-"PO-Revision-Date: 2020-04-29 22:20+0000\n"
+"PO-Revision-Date: 2020-05-03 14:48+0000\n"
 "Last-Translator: mkufner <MichaelKufner@t-online.de>\n"
 "Language-Team: German <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_building-products/de_DE/>\n"
@@ -24,13 +24,13 @@ msgstr "Michael Kufner, MichaelKufner@t-online.de, 2020"
 #. (itstool) path: info/title
 #: article.translate.xml:4
 msgid "Building Products with FreeBSD"
-msgstr ""
+msgstr "Produkte mit FreeBSD entwickeln"
 
 #. (itstool) path: affiliation/address
 #: article.translate.xml:9
 #, no-wrap
 msgid "<email>jkoshy@FreeBSD.org</email>"
-msgstr ""
+msgstr "<email>jkoshy@FreeBSD.org</email>"
 
 #. (itstool) path: authorgroup/author
 #: article.translate.xml:7
@@ -39,6 +39,9 @@ msgid ""
 "personname><affiliation> <orgname>The FreeBSD Project</orgname> <_:address-1/"
 "> </affiliation>"
 msgstr ""
+"<personname><firstname>Joseph</firstname><surname>Koshy</surname></personname"
+"><affiliation> <orgname>The FreeBSD Project</orgname> <_:address-1/> "
+"</affiliation>"
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:14
@@ -67,11 +70,13 @@ msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/building-products/article.xml 51348 "
 "2017-12-30 22:56:56Z eadler $"
 msgstr ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/building-products/article.xml 51348 "
+"2017-12-30 22:56:56Z eadler $"
 
 #. (itstool) path: abstract/title
 #: article.translate.xml:29
 msgid "Abstract"
-msgstr ""
+msgstr "Zusammenfassung"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:31
@@ -83,6 +88,13 @@ msgid ""
 "Collaborating with the FreeBSD project can help organizations reduce their "
 "time to market, reduce engineering costs and improve their product quality."
 msgstr ""
+"Das FreeBSD Project ist ein weltweites, von Freiwilligen getragenes und "
+"kollaboratives Projekt, das ein portables und qualitativ hochwertiges "
+"Betriebssystem entwickelt. Das FreeBSD-Projekt verteilt den Quellcode seines "
+"Produkts unter einer liberalen Lizenz, um die Verbreitung seines Codes zu "
+"fördern. Durch eine Zusammenarbeit mit dem FreeBSD-Projekt können "
+"Unternehmen die Zeit bis zur Markteinführung verkürzen, die "
+"Entwicklungskosten senken und die Qualität ihrer Produkte verbessern."
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:40
@@ -93,6 +105,12 @@ msgid ""
 "suggesting a few <quote>best practices</quote> for organizations "
 "collaborating with the FreeBSD project."
 msgstr ""
+"Dieser Artikel untersucht die Probleme bei der Verwendung von FreeBSD-Code "
+"in Geräten und Softwareprodukten. Er beleuchtet die Eigenschaften von "
+"FreeBSD, die es zu einer hervorragenden Grundlage für die Produktentwicklung "
+"machen. Der Artikel schließt mit einigen Vorschlägen über <quote>Best "
+"Practices</quote> für Unternehmen, die mit dem FreeBSD-Projekt "
+"zusammenarbeiten."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:50
@@ -109,6 +127,12 @@ msgid ""
 "devices, to personal computers. Portions of FreeBSD have also been used in "
 "commercial shrink-wrapped software (see <xref linkend=\"freebsd-intro\"/>)."
 msgstr ""
+"FreeBSD ist heute als leistungsstarkes Serverbetriebssystem bekannt. Es "
+"läuft weltweit auf Millionen von Webservern und Internet-Hosts. FreeBSD-Code "
+"ist auch ein integraler Bestandteil vieler Produkte, von Geräten wie "
+"Netzwerkroutern, Firewalls und Speichergeräten bis hin zu PCs. Teile von "
+"FreeBSD wurden auch in handelsüblicher Standardsoftware eingesetzt (siehe <"
+"xref linkend=\"freebsd-intro\"/>)."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:61
@@ -117,6 +141,10 @@ msgid ""
 "\">FreeBSD project</link> as a software engineering resource—as a collection "
 "of building blocks and processes which you can use to build products."
 msgstr ""
+"Dieser Artikel betrachtet das <link xlink:href=\"@@URL_RELPREFIX"
+"@@@/\">FreeBSD-Projekt</link> als eine Ressource für die "
+"Softwareentwicklung, d. h. als eine Sammlung von Bausteinen und Prozessen, "
+"die man zum Bauen und Entwickeln von Produkten verwenden kann."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:65
@@ -127,11 +155,16 @@ msgid ""
 "this article we discuss effective means of collaboration with the project "
 "and the pitfalls that need to be avoided while doing so."
 msgstr ""
+"Zwar steht der FreeBSD-Quelltext der Allgemeinheit frei zur Verfügung, aber "
+"damit Unternehmen die Vorteile der Arbeit des Projekts voll ausschöpfen "
+"können, ist <emphasis>Zusammenarbeit</emphasis> erforderlich. Die folgenden "
+"Abschnitte dieses Artikels erörtern wirksame Arten der Zusammenarbeit mit "
+"dem Projekt und die Fallstricke, die es dabei zu vermeiden gilt."
 
 #. (itstool) path: formalpara/title
 #: article.translate.xml:73
 msgid "Caveat Reader"
-msgstr ""
+msgstr "Hinweis für die Leser und Leserinnen"
 
 #. (itstool) path: formalpara/para
 #: article.translate.xml:74
@@ -143,17 +176,24 @@ msgid ""
 "time, and that the information in this article should therefore be taken as "
 "indicative rather than normative."
 msgstr ""
+"Der Autor vertritt die Auffassung, dass die in diesem Artikel genannten "
+"Eigenschaften des FreeBSD-Projekts grundsätzlich der Wahrheit entsprachen, "
+"als der Artikel konzipiert und geschrieben wurde (2005). Der Leser sollte "
+"jedoch bedenken, dass sich die Verfahren und Prozesse von Open-Source-"
+"Communitys im Laufe der Zeit ändern können und dass die Informationen in "
+"diesem Artikel daher eher als Anhaltspunkte statt als in Stein gemeißelt "
+"verstanden werden sollten."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:84
 msgid "Target Audience"
-msgstr ""
+msgstr "Zielpublikum"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:85
 msgid ""
 "This document would be of interest to the following broad groups of people:"
-msgstr ""
+msgstr "Dieses Dokument richtet sich an folgende Personengruppen:"
 
 #. (itstool) path: listitem/simpara
 #: article.translate.xml:89
@@ -162,6 +202,9 @@ msgid ""
 "product quality, reduce their time to market and lower engineering costs in "
 "the long term."
 msgstr ""
+"Entscheidern im produzierenden Gewerbe, die nach Möglichkeiten suchen, die "
+"Qualität ihrer Produkte zu verbessern, die Zeit bis zur Markteinführung zu "
+"verkürzen und die Entwicklungskosten langfristig zu senken."
 
 #. (itstool) path: listitem/simpara
 #: article.translate.xml:95
@@ -169,6 +212,8 @@ msgid ""
 "Technology consultants looking for best-practices in leveraging <quote>open-"
 "source</quote>."
 msgstr ""
+"IT-Berater, die nach Best-Practice-Beispielen beim Einsatz von <quote>Open-"
+"Source</quote> suchen."
 
 #. (itstool) path: listitem/simpara
 #: article.translate.xml:99
@@ -176,6 +221,8 @@ msgid ""
 "Industry observers interested in understanding the dynamics of open-source "
 "projects."
 msgstr ""
+"Branchenbeobachter, die daran interessiert sind, die Dynamik von Open-Source-"
+"Projekten zu verstehen."
 
 #. (itstool) path: listitem/simpara
 #: article.translate.xml:103
