@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-18 15:02-0300\n"
-"PO-Revision-Date: 2020-05-04 17:15+0000\n"
+"PO-Revision-Date: 2020-05-04 19:29+0000\n"
 "Last-Translator: Somayeh Karami <somayeh@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/fa/>\n"
@@ -1196,6 +1196,9 @@ msgid ""
 "environment variables, names of ports, hostnames, user names, group names, "
 "device names, variables, and code fragments."
 msgstr ""
+"قلم <literal>تک‌فاصله</literal> برای این موارد استفاده می‌شود: پیغام‌های "
+"خطار، دستورها، متغیرهای محیطی، نام‌های درگاه‌ها، نامِ‌های میزبان، شناسه‌های "
+"کاربری، نام‌های گروه، نام‌های دستگاه‌ها، متغیرها و تکه‌کدها."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:1533
@@ -1212,7 +1215,7 @@ msgstr ""
 #. (itstool) id: book.translate.xml#preface-conv-commands
 #: book.translate.xml:1543
 msgid "User Input"
-msgstr ""
+msgstr "ورودی‌های کاربر"
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1546
@@ -1221,6 +1224,9 @@ msgid ""
 "combinations that are meant to be typed simultaneously are shown with "
 "`<literal>+</literal>' between the keys, such as:"
 msgstr ""
+"کلیدها به صورت <keycap>پررنگ</keycap>نمایش داده می‌شوند تا از بقیه‌ی متن "
+"متمایز شوند. ترکیب‌های کلیدهایی که باید هم‌زمان فشرده شوند با نشانه‌ی "
+"<literal>+</literal>بینِ کلیدها مشخص می‌شوند، مانند:"
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1551
@@ -1228,6 +1234,8 @@ msgid ""
 "<keycombo action=\"simul\"> <keycap>Ctrl</keycap> <keycap>Alt</keycap> "
 "<keycap>Del</keycap></keycombo>"
 msgstr ""
+"<keycombo action=\"simul\"> <keycap>Ctrl</keycap> <keycap>Alt</keycap> "
+"<keycap>Del</keycap></keycombo>"
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1557
@@ -1235,6 +1243,8 @@ msgid ""
 "Meaning the user should type the <keycap>Ctrl</keycap>, <keycap>Alt</"
 "keycap>, and <keycap>Del</keycap> keys at the same time."
 msgstr ""
+"خطِ بالا بدین معنا است که کاربر باید این کلیدها را هم‌زمان فشار "
+"دهد:<keycap>Ctrl</keycap>, <keycap>Alt</keycap>, <keycap>Del</keycap>."
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1561
@@ -1242,6 +1252,8 @@ msgid ""
 "Keys that are meant to be typed in sequence will be separated with commas, "
 "for example:"
 msgstr ""
+"کلیدهایی که باید به دنبال هم فشرده شوند با ویرگول از هم جدا می‌شوند، برای "
+"مثال:"
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1564
@@ -1250,6 +1262,9 @@ msgid ""
 "keycombo>, <keycombo action=\"simul\"> <keycap>Ctrl</keycap> <keycap>S</"
 "keycap></keycombo>"
 msgstr ""
+"<keycombo action=\"simul\"> <keycap>Ctrl</keycap> <keycap>X</keycap> "
+"</keycombo>, <keycombo action=\"simul\"> <keycap>Ctrl</keycap> "
+"<keycap>S</keycap></keycombo>"
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1573
@@ -1258,12 +1273,15 @@ msgid ""
 "<keycap>X</keycap> keys simultaneously and then to type the <keycap>Ctrl</"
 "keycap> and <keycap>S</keycap> keys simultaneously."
 msgstr ""
+"این خط بدین معنا است که کاربر باید این کلیدها را هم‌زمان فشار دهد: "
+"<keycap>Ctrl</keycap> و<keycap>X</keycap> و پس از آن باید این کلید‌ها را هم "
+"هم‌زمان فشار دهد:<keycap>Ctrl</keycap>و<keycap>S</keycap>."
 
 #. (itstool) path: preface/bridgehead
 #. (itstool) id: book.translate.xml#preface-conv-examples
 #: book.translate.xml:1579
 msgid "Examples"
-msgstr ""
+msgstr "مثال‌ها"
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1581
@@ -1274,12 +1292,20 @@ msgid ""
 "in a modern <trademark class=\"registered\">Microsoft</trademark> <trademark "
 "class=\"registered\">Windows</trademark> environment."
 msgstr ""
+"مثال‌هایی که با <filename>C:\\&gt;</filename> شروع می‌شوند یک دستور <"
+"trademark class=\"registered\">MS-DOS</trademark>را مشخص می‌کنند. این "
+"دستورها را می‌تواند از پنجره‌ی <quote>خطِ فرمان</quote> یک سیستم عامل<"
+"trademark class=\"registered\">Microsoft</trademark><trademark class=\""
+"registered\">Windows</trademark>امروزی اجرا کرد، مگر این‌که درباره‌ی دستور "
+"چیز دیگری قید شده باشد."
 
 #. (itstool) path: preface/screen
 #: book.translate.xml:1587
 #, no-wrap
 msgid "<prompt>E:\\&gt;</prompt> <userinput>tools\\fdimage floppies\\kern.flp A:</userinput>"
 msgstr ""
+"<prompt>E:\\&gt;</prompt> <userinput>tools\\fdimage floppies\\kern.flp "
+"A:</userinput>"
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1589
