@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-18 15:02-0300\n"
-"PO-Revision-Date: 2020-05-04 23:21+0000\n"
+"PO-Revision-Date: 2020-05-05 09:28+0000\n"
 "Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/fa/>\n"
@@ -802,18 +802,18 @@ msgid ""
 "Communication</emphasis>, covers networking and server topics. The fifth "
 "section contains appendices of reference information."
 msgstr ""
-"این کتاب به پنج بخش متمایز از نظر منطقی تقسیم می‌شود. بخش "
-"نخست،<emphasis>آغاز</emphasis> به نصب و استفاده‌ی پایه از FreeBSD پرداخته. "
-"انتظار می‌رود خواننده این فصل‌ها را پشت سر هم بخواند، احتمالا بخش‌هایی را که "
-"درباره‌ی موضوعات آشنا هستند، رد کند. بخش دوم،<emphasis>وظایفِ "
-"متداول</emphasis>، به برخی ویژگی‌های FreeBSD که خیلی استفاده دارند پرداخته. "
-"می‌توان این بخش و تمامیِ بخش‌های پس از آن را بدون ترتیب خواند. هر فصل با "
-"چکیده‌ای موجز آغاز می‌شود که شرح می‌دهد این فصل چه چیزهایی را پوشش می‌دهد و "
-"انتظار می‌رود خواننده چه چیزهایی را از پیش بداند. هدف این است که خواننده‌ی "
-"معمولی بتواند بگردد تا فصل دلخواهش را پیدا کند. بخش سوم،<emphasis>مدیریت "
-"سیستم</emphasis>، عناوین مدیریتی را پوشش می‌دهد. بخش چهارم،<emphasis>"
-"ارتباطات شبکه</emphasis>، موضوعات شبکه‌ای و کارگذاری را پوشش می‌دهد. بخش "
-"پنچم شامل ضمیمه‌های اطلاعاتِ مرجع است."
+"این کتاب به پنج بخش متمایز از نظر منطقی تقسیم می‌شود. بخش نخست،<emphasis>"
+"شروع به کار</emphasis> به نصب و استفاده‌ی پایه از FreeBSD پرداخته. انتظار می‌"
+"رود خواننده این فصل‌ها را پشت سر هم بخواند، احتمالا بخش‌هایی را که درباره‌ی "
+"موضوعات آشنا هستند، رد کند. بخش دوم،<emphasis>وظایفِ متداول</emphasis>، به "
+"برخی ویژگی‌های FreeBSD که خیلی استفاده دارند پرداخته. می‌توان این بخش و "
+"تمامیِ بخش‌های پس از آن را بدون ترتیب خواند. هر فصل با چکیده‌ای موجز آغاز می‌"
+"شود که شرح می‌دهد این فصل چه چیزهایی را پوشش می‌دهد و انتظار می‌رود خواننده "
+"چه چیزهایی را از پیش بداند. هدف این است که خواننده‌ی معمولی بتواند بگردد تا "
+"فصل دلخواهش را پیدا کند. بخش سوم،<emphasis>مدیریت سیستم</emphasis>، عناوین "
+"مدیریتی را پوشش می‌دهد. بخش چهارم،<emphasis>ارتباطات شبکه</emphasis>، "
+"موضوعات شبکه‌ای و کارگذاری را پوشش می‌دهد. بخش پنچم شامل ضمیمه‌های اطلاعاتِ "
+"مرجع است."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1161
@@ -1329,7 +1329,7 @@ msgstr ""
 #: book.translate.xml:1595
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>dd if=kern.flp of=/dev/fd0</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>dd if=kern.flp of=/dev/fd0</userinput>"
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1597
@@ -1338,18 +1338,21 @@ msgid ""
 "invoked from a normal user account. Unless otherwise noted, C-shell syntax "
 "is used for setting environment variables and other shell commands."
 msgstr ""
+"مثال‌هایی که با <prompt>%</prompt> می‌شوند، دستوری را نشان می‌دهند که باید "
+"توسط کاربری عادی اجرا شود. قواعد نحوی C-shell برای تنظیم متغیرهای محیطی و "
+"دیگر دستورات پوسته استفاده شده است، مگر خلاف آن ذکر شود."
 
 #. (itstool) path: preface/screen
 #: book.translate.xml:1602
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>top</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>top</userinput>"
 
 #. (itstool) path: preface/bridgehead
 #. (itstool) id: book.translate.xml#preface-acknowledgements
 #: book.translate.xml:1604
 msgid "Acknowledgments"
-msgstr ""
+msgstr "سپاسگزاری"
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1606
@@ -1358,6 +1361,9 @@ msgid ""
 "around the world. Whether they sent in fixes for typos, or submitted "
 "complete chapters, all the contributions have been useful."
 msgstr ""
+"کتابی که شما در دست دارید نشان دهنده کوشش صدها نفر در سراسر دنیا است. تمامی "
+"کمک‌ها مفید بوده‌اند، چه آنانی که اغلاط نوشتاری را اصلاح کرده‌اند، چه آنانی "
+"که بخش‌های کامل را ثبت و ارسال کرده‌اند."
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1611
@@ -1376,11 +1382,22 @@ msgid ""
 "several contributors to improve the Handbook in preparation for the third "
 "printed edition."
 msgstr ""
+"چندین شرکت با پرداخت هزینه به نویسندگانی برای فعالیت تمام‌وقت، پرداخت هزینه "
+"برای انتشار، و غیره، توسعه این دبیزه را حمایت کردند. به ویژه، BSDi (متعاقبا "
+"توسط <link xlink:href=\"http://www.windriver.com\">Wind River Systems</link> "
+"خریداری شد) که به اعضای پروژه مستندات FreeBSD برای ارتقای این کتاب به صورت "
+"تمام‌وقت اجرت پرداخت کرد که منجر به انتشار اولین ویراست چاپی در مارس ۲۰۰۰ شد "
+"(ISBN 1-57176-241-8). سپس شرکت Wind River Systems به بسیاری از نویسندگان "
+"دیگر دستمزد داد تا به بهبود زیربنای خروجی چاپ کمک کنند و چند فصل دیگر نیز به "
+"متن کتاب اضافه کنند. این کار به انتشار ویراست مطبوع دوم در نوامبر سال ۲۰۰۱ "
+"انجامید (ISBN 1-57176-303-1). در سال ۲۰۰۳-۲۰۰۴، <link xlink:href=\""
+"http://www.freebsdmall.com\">FreeBSD Mall, Inc</link>، به تعدادی مشارکت "
+"کننده برای ارتقای کتاب راهنما برای ویراست چاپی سوم دستمزد داد."
 
 #. (itstool) path: part/title
 #: book.translate.xml:1630
 msgid "Getting Started"
-msgstr ""
+msgstr "شروع به کار"
 
 #. (itstool) path: partintro/para
 #: book.translate.xml:1633
@@ -1388,16 +1405,18 @@ msgid ""
 "This part of the handbook is for users and administrators who are new to "
 "FreeBSD. These chapters:"
 msgstr ""
+"این بخش از کتاب راهنما برای کاربران و مدیرسیستم‌های تازه وارد به FreeBSD "
+"است. این فصل‌ها:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1638
 msgid "Introduce FreeBSD."
-msgstr ""
+msgstr "FreeBSD را معرفی می‌کنند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1642
 msgid "Guide readers through the installation process."
-msgstr ""
+msgstr "خوانندگان را در فرایند نصب راهنمایی می‌کنند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1646
@@ -1405,6 +1424,7 @@ msgid ""
 "Teach <trademark class=\"registered\">UNIX</trademark> basics and "
 "fundamentals."
 msgstr ""
+"اصول پایه <trademark class=\"registered\">UNIX</trademark> را آموزش می‌دهند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1650
@@ -1412,6 +1432,8 @@ msgid ""
 "Show how to install the wealth of third party applications available for "
 "FreeBSD."
 msgstr ""
+"نحوه نصب بسیاری از نرم‌افزار کاربردی‌های شخص ثالثِ موجود برای FreeBSD را "
+"نشان می‌دهند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1655
@@ -1420,6 +1442,9 @@ msgid ""
 "system, and detail how to configure a desktop environment that makes users "
 "more productive."
 msgstr ""
+"سامانه پنجره‌سازی <trademark class=\"registered\">UNIX</trademark>، X را "
+"معرفی می‌کنند، و بتفصیل نحوه پیکربندی محیط رومیزی را برای کارآمدسازی بیشتر "
+"کاربران شرح می‌دهد."
 
 #. (itstool) path: partintro/para
 #: book.translate.xml:1661
@@ -1427,13 +1452,15 @@ msgid ""
 "The number of forward references in the text have been kept to a minimum so "
 "that this section can be read from front to back with minimal page flipping."
 msgstr ""
+"تعداد مراجع پیشِ رو در متن به حداقل حفظ شده است تا بتوان این بخش را با کم‌"
+"ترین ورق‌زدن از ابتدا تا انتها خواند."
 
 #. (itstool) path: info/title
 #. (itstool) path: sect1/title
 #. (itstool) path: sect2/title
 #: book.translate.xml:1675 book.translate.xml:23955 book.translate.xml:65535
 msgid "Introduction"
-msgstr ""
+msgstr "مقدمه"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:1678 book.translate.xml:2798
@@ -1442,6 +1469,9 @@ msgid ""
 "personname> <contrib>Restructured, reorganized, and parts rewritten by </"
 "contrib>"
 msgstr ""
+"<personname> <firstname>Jim</firstname> <surname>Mock</surname> </personname>"
+" <contrib>نوسازی شده، دوباره سازماندهی شده، و بخش‌های دوباره نوشته شده "
+"توسط</contrib>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1690 book.translate.xml:2853 book.translate.xml:5738
@@ -1455,7 +1485,7 @@ msgstr ""
 #: book.translate.xml:49386 book.translate.xml:51054 book.translate.xml:52967
 #: book.translate.xml:57649 book.translate.xml:61837
 msgid "Synopsis"
-msgstr ""
+msgstr "چکیده"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1692
