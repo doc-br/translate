@@ -1,12 +1,13 @@
 # FreeBSD$
 # Javad Kouhi <javad.kouhi@gmail.com>, 2020.
 # Faraz Vahedi <kfv@irbug.org>, 2020.
+# Parsa Samet <qps@irbug.org>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-03-14 14:16-0300\n"
-"PO-Revision-Date: 2020-04-24 14:46+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"PO-Revision-Date: 2020-05-09 12:58+0000\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_ipsec-must/fa/>\n"
 "Language: fa\n"
@@ -142,7 +143,7 @@ msgstr ""
 msgid ""
 "Raw, uncompressed data is typically redundant, i.e., has sub-maximal entropy."
 msgstr ""
-"داده‌های خام و فشرده‌نشده عموما افزونگی دارند. به عبارت دیگر، آنتروپی فرو-"
+"داده‌های خام و فشرده‌ نشده عموما افزونگی دارند. به عبارت دیگر، آنتروپی فرو-"
 "بیشینه دارند."
 
 #. (itstool) path: sect1/para
@@ -158,7 +159,7 @@ msgstr ""
 "را اندازه‌گیری کنید. آنگاه می‌توانستید تفاوت بین داده‌های رمزنگاری‌شده و "
 "رمزنگاری‌نشده را ببینید. این گفته حتی وقتی که مقداری از داده‌ها در <quote>"
 "حالت رمزنگاری</quote> عملا رمزنگاری‌نشده باشند هم درست است. مثلا اگر قرار "
-"باشد بسته قابل مسیریابی باشد، آنگاه بیرونی‌ترین هدر IP نباید رمزنگاری‌شده "
+"باشد بسته قابل مسیریابی باشد، آنگاه بیرونی‌ترین سرایند IP نباید رمزنگاری‌شده "
 "باشد."
 
 #. (itstool) path: sect2/title
@@ -183,7 +184,7 @@ msgstr ""
 "<acronym>MUST</acronym></link>) یولی مائورر می‌تواند آنتروپی یک نمونه را به "
 "سرعت اندازه‌گیری کند. این ابزار از یک الگوریتم شبه-فشرده‌سازی استفاده می‌"
 "کند. کد گونه‌ای از این ابزار که قادر است به طور پیاپی (تقریبا یک چارک "
-"مگابایت) قطعات یک فایل را اندازه‌گیری کند، <link linkend=\"code\"> در زیر "
+"مگابایت) قطعات یک پرونده را اندازه‌گیری کند، <link linkend=\"code\"> در زیر "
 "آورده شده است</link>."
 
 #. (itstool) path: sect2/title
@@ -203,7 +204,7 @@ msgstr ""
 "ما همچنین به روشی نیاز داریم تا بتوانیم داده‌های خام شبکه را ضبط کنیم. "
 "برنامه‌ای به نام <citerefentry><refentrytitle>tcpdump</refentrytitle><manvoln"
 "um>1</manvolnum></citerefentry> اجازه انجام چنین کاری را به ما می‌دهد. برای "
-"استفاده از آن نیاز است تا در <link linkend=\"kernel\">فایل پیکربندی "
+"استفاده از آن نیاز است تا در <link linkend=\"kernel\">پرونده پیکربندی "
 "هسته</link> <emphasis>Berkeley Packet Filter</emphasis> را فعال کرده باشید."
 
 #. (itstool) path: sect2/para
@@ -241,7 +242,8 @@ msgstr "آزمایش از این قرار است:"
 #. (itstool) path: step/para
 #: article.translate.xml:114
 msgid "Open a window to an IPsec host and another window to an insecure host."
-msgstr "یک پنجره به هاست IPsec و پنجره‌ای دیگر به هاستی ناامن باز کنید."
+msgstr ""
+"یک پنجره به یک میزبانِ IPsec و پنجره‌ای دیگر به یک میزبان ناامن باز کنید."
 
 #. (itstool) path: step/para
 #: article.translate.xml:119
@@ -272,10 +274,10 @@ msgid ""
 "the secure connection has 93% (6.7) of the expected value (7.18), and the "
 "<quote>normal</quote> connection has 29% (2.1) of the expected value."
 msgstr ""
-"حالا <link linkend=\"code\">MUST</link> را روی بسته‌های ضبط شده اجرا کنید. "
-"باید چیزی مثل خروجی زیر را ببینید. نکته مهم این است که کانکشن امن ۹۳٪ (۶٫۷) "
-"مقدار مورد انتظار (۷٫۱۸) را دارد و کانکشن <quote>عادی</quote> تنها ۲۰٪ (۲٫۱) "
-"مقدار مورد انتظار را دارد."
+"حال <link linkend=\"code\">MUST</link> را روی بسته‌های ضبط شده اجرا کنید. "
+"باید چیزی شبیه خروجی زیر را ببینید. نکته مهم این است که اتصال امن ۹۳٪ (۶.۷) "
+"از مقدار مورد انتظار (۷.۱۸) را دارد، و اتصال <quote>عادی</quote> تنها ۲۹٪ "
+"(۲.۱) از مقدار مورد انتظار را دارد."
 
 #. (itstool) path: step/screen
 #: article.translate.xml:138
@@ -332,11 +334,11 @@ msgstr ""
 "این آزمایش نشان می‌دهد که IPsec ظاهرا دارد داده‌ها را <emphasis>به طور "
 "یکنواخت</emphasis> <emphasis>توزیع می‌کند</emphasis>، همانطور که از یک "
 "رمزنگاری انتظار می‌رود. با این حال، آزمایشی که در اینجا شرح آن رفت "
-"<emphasis>نمی‌تواند</emphasis> هیچگونه نقص احتمالی در سیستم را تشخیص دهد (که "
-"برای هیچکدام از آنها هیچ نشانه‌ای ندارم). این نقوص می‌توانند چیزهایی مثل "
-"تولید کلید ضعیف یا تبادل نادرست کلیدها، در معرض نمایش بودن کلیدها یا داده‌ها "
-"برای بقیه، استفاده از الگوریتم ضعیف، تخریب هسته از درون و غیره باشند. کدمنبع "
-"را بخوانید و با آن آشنا شوید."
+"<emphasis>نمی‌تواند</emphasis> هیچگونه نقص احتمالی را در سامانه تشخیص دهد ("
+"که برای هیچکدام از آنها هیچ نشانه‌ای ندارم). این نقص‌ها می‌توانند چیزهایی "
+"مثل تولید کلید ضعیف یا تبادل نادرست کلیدها، در معرض نمایش بودن کلیدها یا "
+"داده‌ها برای بقیه، استفاده از الگوریتم ضعیف، تخریب هسته از درون و غیره "
+"باشند. کدمنبع را بخوانید و با آن آشنا شوید."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:171
@@ -353,11 +355,11 @@ msgid ""
 "only a specified file or message. IPsec encrypts everything between two "
 "hosts."
 msgstr ""
-"افزونه‌های امنیتی پروتکل اینترنت برای IPv4؛ که در IPv6 الزامی است، پروتکلیست "
-"برای مذاکره کردن روش‌های رمزنگاری و احراز هویت در لایه IP (هاست به هاست). "
-"SSL تنها یک سوکت را ایمن می‌کند؛ <application>SSH</application> تنها یک "
-"لاگین را ایمن می‌کند؛ <application>PGP</application> تنها یک فایل یا پیغام "
-"را ایمن می‌کند. ولی IPsec همه چیز بین دو هاست را ایمن می‌کند."
+"افزونه‌های امنیتی قرارداد اینترنت برای IPv4؛ که در IPv6 الزامی است، قراردادی "
+"است برای مذاکره کردن روش‌های رمزنگاری و احراز هویت در لایه IP (میزبان به "
+"میزبان). SSL تنها یک سوکت را ایمن می‌کند؛ <application>SSH</application> "
+"تنها یک ورود را ایمن می‌کند؛ <application>PGP</application> تنها یک پرونده "
+"یا پیغام را ایمن می‌کند. ولی IPsec همه چیز را بین دو میزبان ایمن می‌کند."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:182
