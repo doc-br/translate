@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-18 15:00-0300\n"
-"PO-Revision-Date: 2020-05-17 18:01+0000\n"
+"PO-Revision-Date: 2020-05-18 22:21+0000\n"
 "Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_freebsd-releng/es/>\n"
@@ -33,14 +33,6 @@ msgstr "<email>gjb@FreeBSD.org</email>"
 
 #. (itstool) path: authorgroup/author
 #: article.translate.xml:29
-#, fuzzy
-#| msgid ""
-#| "<personname> <firstname>Glen</firstname> <surname>Barber</surname> </"
-#| "personname> <affiliation> <orgname class=\"nonprofit\"> <link xlink:href="
-#| "\"https://www.freebsdfoundation.org\">The FreeBSD Foundation</link></"
-#| "orgname> </affiliation> <affiliation> <orgname> <link xlink:href="
-#| "\"https://www.netgate.com\">Rubicon Communications, LLC (Netgate)</link></"
-#| "orgname> <_:address-1/> </affiliation>"
 msgid ""
 "<personname> <firstname>Glen</firstname> <surname>Barber</surname> </"
 "personname> <affiliation> <orgname class=\"nonprofit\"> <link xlink:href="
@@ -49,12 +41,12 @@ msgid ""
 "www.netgate.com\">Rubicon Communications, LLC (Netgate)</link></orgname> <_:"
 "address-1/> </affiliation>"
 msgstr ""
-"<personname> <firstname>Glen</firstname> <surname>Barber</surname> </"
-"personname> <affiliation> <orgname class=\"nonprofit\"> <link xlink:href="
-"\"https://www.freebsdfoundation.org\">The FreeBSD Foundation</link></"
-"orgname> </affiliation> <affiliation> <orgname> <link xlink:href=\"https://"
-"www.netgate.com\">Rubicon Communications, LLC (Netgate)</link></orgname> <_:"
-"address-1/> </affiliation>"
+"<personname> <firstname>Glen</firstname> <surname>Barber</surname> "
+"</personname> <affiliation> <orgname class=\"nonprofit\"> <link xlink:href=\""
+"https://www.freebsdfoundation.org\">The FreeBSD Foundation</link></orgname> "
+"</affiliation> <affiliation> <orgname> <link xlink:href=\""
+"https://www.netgate.com\">Rubicon Communications, LLC "
+"(Netgate)</link></orgname> <_:address-1/> </affiliation>"
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:47
@@ -1354,6 +1346,9 @@ msgid ""
 "<literal>__DEFAULT_NO_OPTIONS</literal> to <literal>__DEFAULT_YES_OPTIONS</"
 "literal>"
 msgstr ""
+"Mueva <varname>REPRODUCIBLE_BUILD</varname> desde "
+"<literal>__DEFAULT_NO_OPTIONS</literal> a "
+"<literal>__DEFAULT_YES_OPTIONS</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:796
@@ -1362,6 +1357,10 @@ msgid ""
 "literal> to <literal>__DEFAULT_NO_OPTIONS</literal> (FreeBSD 13.x and later "
 "only)"
 msgstr ""
+"Mueva <varname>LLVM_ASSERTIONS</varname> desde "
+"<literal>__DEFAULT_YES_OPTIONS</literal> a "
+"<literal>__DEFAULT_NO_OPTIONS</literal> (FreeBSD 13.x y posteriores "
+"solamente)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:803
