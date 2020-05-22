@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-18 15:01-0300\n"
-"PO-Revision-Date: 2020-05-02 04:13+0000\n"
+"PO-Revision-Date: 2020-05-23 00:22+0000\n"
 "Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
-"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/freebsd-"
-"doc/boooks_faq/es/>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/boooks_faq/es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.0.4\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -497,19 +497,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:287
-#, fuzzy
-#| msgid ""
-#| "Users migrating to FreeBSD from another <trademark class=\"registered"
-#| "\">UNIX</trademark>-like environment will find FreeBSD to be similar. "
-#| "<trademark class=\"registered\">Windows</trademark> and <trademark class="
-#| "\"registered\">Mac OS</trademark> users may be interested in instead "
-#| "using <link xlink:href=\"https://www.trueos.org\">TrueOS</link>, a "
-#| "FreeBSD-based desktop distribution. Non-<trademark class=\"registered"
-#| "\">UNIX</trademark> users should expect to invest some additional time "
-#| "learning the <trademark class=\"registered\">UNIX</trademark> way of "
-#| "doing things. This <acronym>FAQ</acronym> and the <link xlink:href="
-#| "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/index.html"
-#| "\">FreeBSD Handbook</link> are excellent places to start."
 msgid ""
 "Users migrating to FreeBSD from another <trademark class=\"registered"
 "\">UNIX</trademark>-like environment will find FreeBSD to be similar. "
@@ -527,15 +514,17 @@ msgid ""
 msgstr ""
 "Los usuarios que migran a FreeBSD desde un entorno similar a <trademark "
 "class=\"registered\">UNIX</trademark> encontrarán que FreeBSD es similar. "
-"Los usuarios de <trademark class=\"registered\">Windows</trademark> y "
-"<trademark class=\"registered\">Mac OS</trademark> pueden estar interesados "
-"en usar <link xlink:href=\"https://www.trueos.org\">TrueOS</link>, una "
-"distribución de escritorio basada en FreeBSD. Los usuarios que no pertenecen "
-"a entornos <trademark class=\"registered\">UNIX</trademark> deberían "
-"invertir más tiempo en aprender la forma <trademark class=\"registered"
-"\">UNIX</trademark>  de hacer las cosas. Este <acronym>FAQ</acronym> y el "
-"<link xlink:href=\"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/books/handbook/"
-"index.html\">Handbook de FreeBSD</link> son excelentes lugares para empezar."
+"Los usuarios de <trademark class=\"registered\">Windows</trademark> y <"
+"trademark class=\"registered\">Mac OS</trademark> pueden estar interesados "
+"en usar <link xlink:href=\"https://furybsd.org/\">FuryBSD</link>, <link "
+"xlink:href=\"https://ghostbsd.org/\">GhostBSD</link> o <link xlink:href=\""
+"https://www.midnightbsd.org/\">MidnightBSD</link>, unas distribuciónes de "
+"escritorio basada en FreeBSD. Los usuarios que no pertenecen a entornos <"
+"trademark class=\"registered\">UNIX</trademark> deberían invertir más tiempo "
+"en aprender la forma <trademark class=\"registered\">UNIX</trademark>  de "
+"hacer las cosas. Este <acronym>FAQ</acronym> y el <link xlink:href=\""
+"@@URL_RELPREFIX@@/doc/es_ES.ISO8859-1/books/handbook/index.html\">Handbook "
+"de FreeBSD</link> son excelentes lugares para empezar."
 
 #. (itstool) path: question/para
 #: book.translate.xml:303
@@ -805,17 +794,16 @@ msgid ""
 "can be found on the <link xlink:href=\"https://www.FreeBSD.org/releng"
 "\">Release Engineering Information</link> page."
 msgstr ""
+"Para información más detallada sobre las ramas vea <quote><link xlink:href=\""
+"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/releng/release-proc.html#rel-"
+"branch\">Ingeniería de Liberación de FreeBSD: La creación de la rama de "
+"liberación</link></quote>, el estado de las ramas y el próximo programa de "
+"liberación se pueden encontrar en la página de <link xlink:href=\""
+"https://www.FreeBSD.org/releng\">información de ingeniería de "
+"liberación</link>."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:471
-#, fuzzy
-#| msgid ""
-#| "Version <link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/"
-#| "i386/i386/12.0-RELEASE/\">12.0</link> is the latest release from the "
-#| "<emphasis>12-STABLE</emphasis> branch; it was released in December 2018. "
-#| "Version <link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/"
-#| "i386/10.4-RELEASE/\">10.4</link> is the latest release from the "
-#| "<emphasis>11-STABLE</emphasis> branch; it was released in October 2017."
 msgid ""
 "Version <link xlink:href=\"https://download.FreeBSD.org/ftp/releases/amd64/"
 "amd64/12.1-RELEASE/\">12.1</link> is the latest release from the "
@@ -824,12 +812,12 @@ msgid ""
 "amd64/11.3-RELEASE/\">11.3</link> is the latest release from the "
 "<emphasis>11-STABLE</emphasis> branch; it was released in July 2019."
 msgstr ""
-"La versión <link xlink:href=\"https://download.freebsd.org/ftp/releases/"
-"amd64/amd64/12.0-RELEASE/\">12.0</link> es la última versión de la rama "
-"<emphasis>12-STABLE</emphasis>; la release se produjo en diciembre de 2018. "
-"La versión <link xlink:href=\"https://download.freebsd.org/ftp/releases/"
-"amd64/amd64/11.2-RELEASE/\">11.2</link> es la última versión de la rama "
-"<emphasis>11-STABLE</emphasis>; la release se produjo en junio de 2018."
+"La versión <link xlink:href=\"https://download.FreeBSD.org/ftp/releases/"
+"amd64/amd64/12.1-RELEASE/\">12.1</link></link> es la última versión de la "
+"rama <emphasis>12-STABLE</emphasis>; la release se produjo en Noviembre de "
+"2019. La versión <link xlink:href=\"https://download.FreeBSD.org/ftp/"
+"releases/amd64/amd64/11.3-RELEASE/\">11.3</link> es la última versión de la "
+"rama <emphasis>11-STABLE</emphasis>; fue liberado en julio de 2019."
 
 #. (itstool) path: question/para
 #: book.translate.xml:482
@@ -884,10 +872,8 @@ msgstr ""
 
 #. (itstool) path: question/para
 #: book.translate.xml:511
-#, fuzzy
-#| msgid "When are FreeBSD releases made?"
 msgid "When are FreeBSD snapshots made?"
-msgstr "¿Cuando se hacen los lanzamientos de FreeBSD?"
+msgstr "¿Cuando se hacen los snapshots de FreeBSD?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:515
@@ -1023,19 +1009,14 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:596
-#, fuzzy
-#| msgid ""
-#| "The latest <emphasis>12-STABLE</emphasis> release, 12.0-RELEASE can be "
-#| "found in the <link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/"
-#| "releases/i386/i386/12.0-RELEASE/\">12.0-RELEASE directory</link>."
 msgid ""
 "The latest <emphasis>12-STABLE</emphasis> release, 12.1-RELEASE can be found "
 "in the <link xlink:href=\"https://download.FreeBSD.org/ftp/releases/amd64/"
 "amd64/12.1-RELEASE/\">12.1-RELEASE directory</link>."
 msgstr ""
-"La última versión <emphasis>12-STABLE</emphasis>, 12.0-RELEASE se puede "
-"encontrar en el <link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/"
-"releases/i386/i386/12.0-RELEASE/\">directorio 12.0-RELEASE</link>."
+"La última versión <emphasis>12-STABLE</emphasis>, 12.1-RELEASE se puede "
+"encontrar en el <link xlink:href=\"https://download.FreeBSD.org/ftp/releases/"
+"amd64/amd64/12.1-RELEASE/\">directorio 12.1-RELEASE</link>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:602
@@ -1052,19 +1033,14 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:609
-#, fuzzy
-#| msgid ""
-#| "The latest <emphasis>11-STABLE</emphasis> release, 10.4-RELEASE can be "
-#| "found in the <link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/"
-#| "releases/i386/10.4-RELEASE/\">10.4-RELEASE directory</link>."
 msgid ""
 "The latest <emphasis>11-STABLE</emphasis> release, 11.3-RELEASE can be found "
 "in the <link xlink:href=\"https://download.FreeBSD.org/ftp/releases/amd64/"
 "amd64/11.3-RELEASE/\">11.3-RELEASE directory</link>."
 msgstr ""
-"La última versión <emphasis>11-STABLE</emphasis>, 10.4-RELEASE se puede "
-"encontrar en el <link xlink:href=\"ftp://ftp.FreeBSD.org/pub/FreeBSD/"
-"releases/i386/10.4-RELEASE/\">directorio 10.4-RELEASE</link>."
+"La última versión <emphasis>11-STABLE</emphasis>, 11.4-RELEASE se puede "
+"encontrar en el <link xlink:href=\"https://download.FreeBSD.org/ftp/releases/"
+"amd64/amd64/11.3-RELEASE/\">directorio 11.3-RELEASE</link>."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:615
@@ -1130,25 +1106,14 @@ msgstr "¿Qué buenos libros hay acerca de FreeBSD?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:653
-#, fuzzy
-#| msgid ""
-#| "The project produces a wide range of documentation, available online from "
-#| "this link: <uri xlink:href=\"https://www.FreeBSD.org/docs.html\">https://"
-#| "www.FreeBSD.org/docs.html</uri>. In addition, the <link xlink:href="
-#| "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/bibliography.html"
-#| "\">the bibliography in the Handbook</link> reference other recommended "
-#| "books."
 msgid ""
 "The project produces a wide range of documentation, available online from "
 "this link: <uri xlink:href=\"https://www.FreeBSD.org/docs.html\">https://www."
 "FreeBSD.org/docs.html</uri>."
 msgstr ""
 "El proyecto produce una amplia gama de documentación, disponible en línea "
-"desde este enlace: <uri xlink:href=\"https://www.FreeBSD.org/docs.html"
-"\">https://www.FreeBSD.org/docs.html</uri>. Además, <link xlink:href="
-"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/bibliography.html"
-"\">la bibliografía en el Manual</link> hace referencia a otros libros "
-"recomendados."
+"desde este enlace: <uri xlink:href=\"https://www.FreeBSD.org/docs.html\""
+">https://www.FreeBSD.org/docs.html</uri>."
 
 #. (itstool) path: question/para
 #: book.translate.xml:667
@@ -1708,29 +1673,18 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1027
-#, fuzzy
-#| msgid ""
-#| "Channel <literal>#FreeBSD</literal> on <link xlink:href=\"http://www."
-#| "rusnet.org.ru/\">RUSNET</link> is a Russian language channel dedicated to "
-#| "helping FreeBSD users. This is also good place for non-technical "
-#| "discussions."
 msgid ""
 "Channel <literal>#FreeBSD</literal> on <link xlink:href=\"http://www.rusnet."
 "org.ru/\">RUSNET</link> is a Russian language channel dedicated to helping "
 "FreeBSD users. This is also a good place for non-technical discussions."
 msgstr ""
-"El canal <literal>#FreeBSD</literal> en <link xlink:href=\"http://www.rusnet."
-"org.ru/\">RUSNET</link> es un canal en ruso dedicado a ayudar usuarios de "
-"FreeBSD. También es un buen lugar para discusiones no técnicas."
+"El canal <literal>#FreeBSD</literal> en <link xlink:href=\""
+"http://www.rusnet.org.ru/\">RUSNET</link> es un canal en ruso dedicado a "
+"ayudar usuarios de FreeBSD. Este es también un buen lugar para discusiones "
+"no técnicas."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1034
-#, fuzzy
-#| msgid ""
-#| "Channel <literal>#bsdchat</literal> on <link xlink:href=\"http://freenode."
-#| "net/\">Freenode</link> is a Traditional Chinese (UTF-8 encoding) language "
-#| "channel dedicated to helping FreeBSD users. This is also good place for "
-#| "non-technical discussions."
 msgid ""
 "Channel <literal>#bsdchat</literal> on <link xlink:href=\"http://freenode."
 "net/\">Freenode</link> is a Traditional Chinese (UTF-8 encoding) language "
@@ -1798,20 +1752,14 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1075
-#, fuzzy
-#| msgid ""
-#| "BSD Certification Group, Inc. provides system administration "
-#| "certifications for DragonFly BSD, FreeBSD, NetBSD, and OpenBSD. Refer to "
-#| "<link xlink:href=\"http://www.BSDCertification.org\">their site</link> "
-#| "for more information."
 msgid ""
 "BSD Certification Group, Inc. provides system administration certifications "
 "for DragonFly BSD, FreeBSD, NetBSD, and OpenBSD. Refer to <link xlink:href="
 "\"http://www.BSDCertification.org\">their site</link> for more information."
 msgstr ""
 "BSD Certification Group, Inc. PROVEE certificaciones de administración de "
-"sistemas para DragonFly BSD, FreeBSD, NetBSD, y OpenBSD. Vea <link xlink:"
-"href=\"http://www.BSDCertification.org\">su sitio</link> para más "
+"sistemas para DragonFly BSD, FreeBSD, NetBSD, y OpenBSD. Vea <link "
+"xlink:href=\"http://www.BSDCertification.org\">su sitio</link> para más "
 "información."
 
 #. (itstool) path: answer/para
@@ -2044,16 +1992,12 @@ msgstr ""
 
 #. (itstool) path: question/para
 #: book.translate.xml:1235
-#, fuzzy
-#| msgid ""
-#| "Can <trademark class=\"registered\">Windows</trademark> co-exist with "
-#| "FreeBSD?"
 msgid ""
 "Can <trademark class=\"registered\">Windows</trademark> co-exist with "
 "FreeBSD? (x86-specific)"
 msgstr ""
 "¿Puede  <trademark class=\"registered\">Windows</trademark> coexistir con "
-"FreeBSD?"
+"FreeBSD? (x86-específico)"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1239
@@ -2073,14 +2017,12 @@ msgstr ""
 
 #. (itstool) path: question/para
 #: book.translate.xml:1249
-#, fuzzy
-#| msgid ""
-#| "Another operating system destroyed my Boot Manager. How do I get it back?"
 msgid ""
 "Another operating system destroyed my Boot Manager. How do I get it back? "
 "(x86-specific)"
 msgstr ""
-"Otro sistema operativo destruyo mi Gestor de Arranque. ¿Como lo recupero?"
+"Otro sistema operativo destruyo mi Gestor de Arranque. ¿Como lo recupero? "
+"(x86-específico)"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1254
@@ -2218,18 +2160,6 @@ msgstr "¿Cuáles son los límites para los sistemas de archivos FFS?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1333
-#, fuzzy
-#| msgid ""
-#| "For FFS file systems, the largest file system is practically limited by "
-#| "the amount of memory required to <citerefentry><refentrytitle>fsck</"
-#| "refentrytitle><manvolnum>8</manvolnum></citerefentry> the file system. "
-#| "<citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</"
-#| "manvolnum></citerefentry> requires one bit per fragment, which with the "
-#| "default fragment size of 4 KB equates to 32 MB of memory per TB of disk. "
-#| "This does mean that on architectures which limit userland processes to "
-#| "2 GB (e.g., <trademark>i386</trademark>), the maximum "
-#| "<citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</"
-#| "manvolnum></citerefentry>'able filesystem is ~60 TB."
 msgid ""
 "For FFS file systems, the largest file system is practically limited by the "
 "amount of memory required to <citerefentry><refentrytitle>fsck</"
@@ -2243,45 +2173,32 @@ msgid ""
 "TB."
 msgstr ""
 "Para sistemas de archivos FFS, el sistema de archivo mas extenso esta "
-"limitado en la práctica por la cantidad de memoria requeridad para correr "
-"<citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></"
-"citerefentry> en el sistema de archivos. <citerefentry><refentrytitle>fsck</"
-"refentrytitle><manvolnum>8</manvolnum></citerefentry> requiere un bit por "
+"limitado en la práctica por la cantidad de memoria requeridad para correr <ci"
+"terefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></citer"
+"efentry> en el sistema de archivos. <citerefentry><refentrytitle>fsck</refent"
+"rytitle><manvolnum>8</manvolnum></citerefentry> requiere un bit por "
 "fragmento, lo  cual, con el tamaño de fragmentos por defecto de 4 KB es "
 "igual a 32 MB de memoria por cada TB de disco. Esto significa que en "
 "arquitecturas que limiten los procesos en espacio de usuario a 2 GB (e.j., "
-"<trademark>i386</trademark>), el máximo sistema de archivos "
-"<citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></"
-"citerefentry>'able es de ~60 TB."
+"<trademark>i386</trademark>), el máximo sistema de archivos <citerefentry><re"
+"fentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></citerefentry>'able "
+"es de ~60 TB."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1342
-#, fuzzy
-#| msgid ""
-#| "If there was not a <citerefentry><refentrytitle>fsck</"
-#| "refentrytitle><manvolnum>8</manvolnum></citerefentry> memory limit the "
-#| "maximum filesystem size would be 2 ^ 64 (blocks) * 32 KB =&gt; 16 Exa * "
-#| "32 KB =&gt; 512 ZettaBytes."
 msgid ""
 "If there was not a <citerefentry><refentrytitle>fsck</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> memory limit the "
 "maximum filesystem size would be 2 ^ 64 (blocks) * 32 KB =&gt; 16 Exa * 32 "
 "KB =&gt; 512 ZettaBytes."
 msgstr ""
-"Si no hubiera un límite de memoria de <citerefentry><refentrytitle>fsck</"
-"refentrytitle><manvolnum>8</manvolnum></citerefentry> en máximo tamaño de "
+"Si no hubiera un límite de memoria de <citerefentry><refentrytitle>fsck</refe"
+"ntrytitle><manvolnum>8</manvolnum></citerefentry> en máximo tamaño de "
 "archivo sería de 2^64 (bloques) * 32 KB =&gt; 16 Exa * 32 KB =&gt; 512 "
 "ZettaBytes."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1347
-#, fuzzy
-#| msgid ""
-#| "The maximum size of a single FFS file is approximately 2 PB with the "
-#| "default block size of 32 KB. Each 32 KB block can point to 4096 blocks. "
-#| "With triple indirect blocks, the calculation is 32 KB * 12 + 32 KB * 4096 "
-#| "+ 32 KB * 4096^2 + 32 KB * 4096^3. Increasing the block size to 64 KB "
-#| "will increase the max file size by a factor of 16."
 msgid ""
 "The maximum size of a single FFS file is approximately 2 PB with the default "
 "block size of 32 KB. Each 32 KB block can point to 4096 blocks. With triple "
@@ -2363,17 +2280,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1405
-#, fuzzy
-#| msgid ""
-#| "This is discussed continually on the FreeBSD mailing lists but is to be "
-#| "expected since hardware changes so quickly. Read through the "
-#| "Hardware Notes for FreeBSD <link xlink:href=\"https://www.FreeBSD.org/"
-#| "releases/12.0R/hardware.html\">12.0</link> or <link xlink:href=\"https://"
-#| "www.FreeBSD.org/releases/10.4R/hardware.html\">10.4</link> and search the "
-#| "mailing list <link xlink:href=\"https://www.FreeBSD.org/search/"
-#| "#mailinglists\">archives</link> before asking about the latest and "
-#| "greatest hardware. Chances are a discussion about that type of hardware "
-#| "took place just last week."
 msgid ""
 "This is discussed continually on the FreeBSD mailing lists but is to be "
 "expected since hardware changes so quickly. Read through the Hardware Notes "
@@ -2386,9 +2292,9 @@ msgid ""
 msgstr ""
 "Esto se discute continuamente en las listas de correo de FreeBSD, pero es de "
 "esperar, dado que el hardware cambia con rapidez. Lea las notas del hardware "
-"de FreeBSD <link xlink:href=\"https://www.FreeBSD.org/releases/12.0R/"
-"hardware.html\">12.0</link>  o <link xlink:href=\"https://www.FreeBSD.org/"
-"releases/10.4R/hardware.html\">10.4</link> y busque en los <link xlink:href="
+"de FreeBSD <link xlink:href=\"https://www.FreeBSD.org/releases/12.1R/"
+"hardware.html\">12.1</link>  o <link xlink:href=\"https://www.FreeBSD.org/"
+"releases/11.3R/hardware.html\">11.3</link> y busque en los <link xlink:href="
 "\"https://www.FreeBSD.org/search/#mailinglists\">archivos </link>de las "
 "listas de correo antes de preguntar acerca del último y mejor hardware. Es "
 "posible que una discusión sobre este tipo de hardware tuviera lugar la "
@@ -2396,45 +2302,24 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1415
-#, fuzzy
-#| msgid ""
-#| "Before purchasing a laptop, check the archives for <link xlink:href="
-#| "\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-mobile\">FreeBSD "
-#| "laptop computer mailing list</link> and <link xlink:href=\"http://lists."
-#| "FreeBSD.org/mailman/listinfo/freebsd-questions\">FreeBSD general "
-#| "questions mailing list</link>, or possibly a specific mailing list for a "
-#| "particular hardware type."
 msgid ""
 "Before purchasing a laptop, check the archives for <link xlink:href=\"http://"
 "lists.FreeBSD.org/mailman/listinfo/freebsd-questions\">FreeBSD general "
 "questions mailing list</link>, or possibly a specific mailing list for a "
 "particular hardware type."
 msgstr ""
-"Antes de comprarse una laptop, verifique los archivos de la <link xlink:href="
-"\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-mobile\">lista de corroe "
-"de laptops de FreeBSD</link> y <link xlink:href=\"http://lists.FreeBSD.org/"
-"mailman/listinfo/freebsd-questions\">lista de correo de preguntas generales "
-"de FreeBSD</link>, o posiblemente una lista de correo específica para un "
-"tipo de hardware en particular."
+"Antes de comprar un PC portátil, compruebe los archivos de <link xlink:href="
+"\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-questions\">la lista de "
+"correo de preguntas generales sobre FreeBSD</link>, o posiblemente una lista "
+"de correo específica para un tipo de hardware en particular."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1423
-#, fuzzy
-#| msgid "What are the limits for FFS file systems?"
 msgid "What are the limits for memory?"
-msgstr "¿Cuáles son los límites para los sistemas de archivos FFS?"
+msgstr "¿Cuáles son los límites de la memoria?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1427
-#, fuzzy
-#| msgid ""
-#| "FreeBSD as an operating system generally supports as much physical memory "
-#| "(RAM) as the platform it is running on does. Keep in mind that different "
-#| "platforms have different limits for memory; for example <trademark>i386</"
-#| "trademark> without <acronym>PAE</acronym> supports at most 4 GB of memory "
-#| "(and usually less than that because of PCI address space) and "
-#| "<trademark>i386</trademark> with PAE supports at most 64 GB memory. As of "
-#| "FreeBSD 10, AMD64 platforms support up to 4 TB of physical memory."
 msgid ""
 "FreeBSD as an operating system generally supports as much physical memory "
 "(RAM) as the platform it is running on does. Keep in mind that different "
@@ -2455,10 +2340,6 @@ msgstr ""
 
 #. (itstool) path: question/para
 #: book.translate.xml:1442
-#, fuzzy
-#| msgid ""
-#| "Why does FreeBSD report less than 4 GB memory when installed on an "
-#| "<trademark>i386</trademark> machine?"
 msgid ""
 "Why does FreeBSD report less than 4 GB memory when installed on an "
 "<trademark>i386</trademark> machine?"
@@ -2500,20 +2381,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1459
-#, fuzzy
-#| msgid ""
-#| "To access more than 3.2 GB to 3.7 GB of installed memory (meaning up to "
-#| "4 GB but also more than 4 GB), a special tweak called <acronym>PAE</"
-#| "acronym> must be used. PAE stands for Physical Address Extension and is a "
-#| "way for 32-bit x86 CPUs to address more than 4 GB of memory. It remaps "
-#| "the memory that would otherwise be overlaid by address reservations for "
-#| "hardware devices above the 4 GB range and uses it as additional physical "
-#| "memory (see <citerefentry><refentrytitle>pae</refentrytitle><manvolnum>4</"
-#| "manvolnum></citerefentry>). Using PAE has some drawbacks; this mode of "
-#| "memory access is a little bit slower than the normal (without PAE) mode "
-#| "and loadable modules (see <citerefentry><refentrytitle>kld</"
-#| "refentrytitle><manvolnum>4</manvolnum></citerefentry>) are not supported. "
-#| "This means all drivers must be compiled into the kernel."
 msgid ""
 "To access more than 3.2 GB to 3.7 GB of installed memory (meaning up to 4 GB "
 "but also more than 4 GB), a special tweak called <acronym>PAE</acronym> must "
@@ -2529,19 +2396,19 @@ msgid ""
 "compiled into the kernel."
 msgstr ""
 "Para acceder a más de 3.2 GB a 3.7 GB de memoria instalada (es decir, hasta "
-"4 GB o incluso mas que 4 GB), un ajuste especial llamado <acronym>PAE</"
-"acronym> debe ser usado. PAE significa Physical Address Extension (Extensión "
-"de Memoria Física) y es una manera para que las CPUs x86 de 32 bits puedan "
-"direccionar más de 4 GB de memoria. Remapea la memoria que de otra manera "
-"sería sobreescrita por reservaciones de memoria por parte del hardware para "
-"dispositivos de hardware por encima del rango de  4 GB y lo usa como memoria "
-"física adicional (vea <citerefentry><refentrytitle>pae</"
-"refentrytitle><manvolnum>4</manvolnum></citerefentry>). Usar PAE tiene "
+"4 GB o incluso mas que 4 GB), un ajuste especial llamado "
+"<acronym>PAE</acronym> debe ser usado. PAE significa Physical Address "
+"Extension (Extensión de Memoria Física) y es una manera para que las CPUs "
+"x86 de 32 bits puedan direccionar más de 4 GB de memoria. Remapea la memoria "
+"que de otra manera sería sobreescrita por reservaciones de memoria por parte "
+"del hardware para dispositivos de hardware por encima del rango de  4 GB y "
+"lo usa como memoria física adicional (vea <citerefentry><refentrytitle>pae</r"
+"efentrytitle><manvolnum>4</manvolnum></citerefentry>). Usar PAE tiene "
 "algunas desventajas; este modo de acceso de memoria es un poco mas lento que "
-"el modo normal (sin PAE) y los modulos cargables (vea "
-"<citerefentry><refentrytitle>kld</refentrytitle><manvolnum>4</manvolnum></"
-"citerefentry>) no estan soportados. Esto significa que todos los "
-"controladores deben ser compilados en el kernel."
+"el modo normal (sin PAE) y los modulos cargables (vea <citerefentry><refentry"
+"title>kld</refentrytitle><manvolnum>4</manvolnum></citerefentry>) no estan "
+"soportados. Esto significa que todos los controladores deben ser compilados "
+"en el kernel."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1474
@@ -2573,14 +2440,6 @@ msgstr "options       PAE"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1489
-#, fuzzy
-#| msgid ""
-#| "PAE is not much used nowadays because most new x86 hardware also supports "
-#| "running in 64-bit mode, known as AMD64 or <trademark class=\"registered"
-#| "\">Intel</trademark> 64. It has a much larger address space and does not "
-#| "need such tweaks. FreeBSD supports AMD64 and it is recommended that this "
-#| "version of FreeBSD be used instead of the <trademark>i386</trademark> "
-#| "version if 4 GB or more memory is required."
 msgid ""
 "PAE is not much used nowadays because most new x86 hardware also supports "
 "running in 64-bit mode, known as AMD64 or <trademark class=\"registered"
@@ -2624,14 +2483,13 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1519
-#, fuzzy
 msgid ""
 "A complete list of supported architectures can be found on the <link xlink:"
 "href=\"https://www.FreeBSD.org/platforms/\">platforms page.</link>"
 msgstr ""
-"Una lista completa de arquitecturas soportadas puede encontrarse en la <link "
-"xlink:href=\"http://www.FreeBSD.org/platforms/\">página de plataformas.</"
-"link>"
+"Una lista completa de las arquitecturas soportadas se puede encontrar en la <"
+"link xlink:href=\"https://www.FreeBSD.org/platforms/\">página de "
+"plataformas.</link>"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1527
@@ -2701,18 +2559,15 @@ msgstr "a <filename>/etc/rc.conf</filename>"
 #. (itstool) path: sect1/title
 #: book.translate.xml:1568
 msgid "Peripherals"
-msgstr ""
+msgstr "Periféricos"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1573
-#, fuzzy
-#| msgid "What kind of hard drives does FreeBSD support?"
 msgid "What kind of peripherals does FreeBSD support?"
-msgstr "¿Qué tipo de discos duros soporta FreeBSD?"
+msgstr "¿Qué tipo de periféricos soporta FreeBSD?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1577
-#, fuzzy
 msgid ""
 "See the complete list in the Hardware Notes for FreeBSD <link xlink:href="
 "\"https://www.FreeBSD.org/releases/12.1R/hardware.html\">12.1</link> or "
@@ -2720,8 +2575,8 @@ msgid ""
 "\">11.3</link>."
 msgstr ""
 "Vea la lista completa en las Notas de hardware para FreeBSD <link xlink:href="
-"\"http://www.FreeBSD.org/releases/10.2R/hardware.html\"> 10.2 </link> o "
-"<link xlink:href=\"http://www.FreeBSD.org/releases/9.3R/hardware.html\"> 9.3 "
+"\"http://www.FreeBSD.org/releases/12.1R/hardware.html\"> 12.1</link> o <link "
+"xlink:href=\"http://www.FreeBSD.org/releases/11.3R/hardware.html\"> 11.3 "
 "</link> ."
 
 #. (itstool) path: sect1/title
@@ -2736,14 +2591,6 @@ msgstr "¿Es posible usar un ratón por fuera del sistema X Window?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1596
-#, fuzzy
-#| msgid ""
-#| "The default console driver, <citerefentry><refentrytitle>syscons</"
-#| "refentrytitle><manvolnum>4</manvolnum></citerefentry>, provides the "
-#| "ability to use a mouse pointer in text consoles to cut &amp; paste text. "
-#| "Run the mouse daemon, <citerefentry><refentrytitle>moused</"
-#| "refentrytitle><manvolnum>8</manvolnum></citerefentry>, and turn on the "
-#| "mouse pointer in the virtual console:"
 msgid ""
 "The default console driver, <citerefentry><refentrytitle>vt</"
 "refentrytitle><manvolnum>4</manvolnum></citerefentry>, provides the ability "
@@ -2752,12 +2599,12 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>, and turn on the mouse "
 "pointer in the virtual console:"
 msgstr ""
-"El controlador de consola por defecto, <citerefentry><refentrytitle>syscons</"
-"refentrytitle><manvolnum>4</manvolnum></citerefentry>, provee la habilidad "
-"de usar un puntero del ratón en consolas de texto para copiar &amp; pegar "
-"texto. Corra el demonio del ratón, <citerefentry><refentrytitle>moused</"
-"refentrytitle><manvolnum>8</manvolnum></citerefentry>, e inicie el puntero "
-"del ratón en la consola virtual:"
+"El controlador de consola por defecto, <citerefentry><refentrytitle>vt</refen"
+"trytitle><manvolnum>4</manvolnum></citerefentry>, provee la habilidad de "
+"usar un puntero del ratón en consolas de texto para copiar &amp; pegar "
+"texto. Corra el demonio del ratón, <citerefentry><refentrytitle>moused</refen"
+"trytitle><manvolnum>8</manvolnum></citerefentry>, e inicie el puntero del "
+"ratón en la consola virtual:"
 
 #. (itstool) path: answer/screen
 #: book.translate.xml:1602
@@ -2909,14 +2756,9 @@ msgstr ""
 
 #. (itstool) path: answer/programlisting
 #: book.translate.xml:1686
-#, fuzzy, no-wrap
-#| msgid ""
-#| "bind ^? ed-delete-next-char # for console\n"
-#| "bind ^[[3~ ed-delete-next-char # for xterm"
+#, no-wrap
 msgid "bind ^[[3~ ed-delete-next-char # for xterm"
-msgstr ""
-"bind ^? ed-delete-next-char # for console\n"
-"bind ^[[3~ ed-delete-next-char # for xterm"
+msgstr "bind ^[[3~ ed-delete-next-char # for xterm"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1688
@@ -2931,14 +2773,9 @@ msgstr ""
 
 #. (itstool) path: answer/programlisting
 #: book.translate.xml:1692
-#, fuzzy, no-wrap
-#| msgid ""
-#| "bindkey ^? delete-char # for console\n"
-#| "bindkey ^[[3~ delete-char # for xterm"
+#, no-wrap
 msgid "bindkey ^[[3~ delete-char # for xterm"
-msgstr ""
-"bindkey ^? delete-char # for console\n"
-"bindkey ^[[3~ delete-char # for xterm"
+msgstr "bindkey ^[[3~ delete-char # for xterm"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1700
@@ -3013,12 +2850,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1748
-#, fuzzy
-#| msgid ""
-#| "The convention for most PC hardware is to use the memory area between "
-#| "3.5 GB and 4 GB for a special purpose (usually for PCI). This address "
-#| "space is used to access PCI hardware. As a result real, physical memory "
-#| "cannot be accessed by that address space."
 msgid ""
 "The convention for most PC hardware is to use the memory area between 3.5 GB "
 "and 4 GB for a special purpose (usually for PCI). This address space is used "
@@ -3026,18 +2857,13 @@ msgid ""
 "by that address space."
 msgstr ""
 "La convención para la mayoría del hardware de PC hardware es usar el área de "
-"memoria entre 3.5 GB y 4 GB para un propósito especial (usualmente para "
-"PCI). Este espacio de direcciones se usa para acceder a hardware PCI. Como "
+"memoria entre 3.5 GB y 4 GB para un propósito especial (usualmente para PCI)"
+". Este espacio de direcciones se usa para acceder a hardware PCI. Como "
 "resultado, la memoria real (física) no puede ser accedida en ese espacio de "
 "direcciones."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1754
-#, fuzzy
-#| msgid ""
-#| "What happens to the memory that should appear in that location is "
-#| "hardware dependent. Unfortunately, some hardware does nothing and the "
-#| "ability to use that last 500 MB of RAM is entirely lost."
 msgid ""
 "What happens to the memory that should appear in that location is hardware "
 "dependent. Unfortunately, some hardware does nothing and the ability to use "
@@ -3060,12 +2886,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1764
-#, fuzzy
-#| msgid ""
-#| "On a 32-bit version of FreeBSD, the memory appears lost, since it will be "
-#| "remapped above 4 GB, which a 32-bit kernel is unable to access. In this "
-#| "case, the solution is to build a PAE enabled kernel. See the entry on "
-#| "memory limits for more information."
 msgid ""
 "On a 32-bit version of FreeBSD, the memory appears lost, since it will be "
 "remapped above 4 GB, which a 32-bit kernel is unable to access. In this "
@@ -3259,14 +3079,6 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1881
-#, fuzzy
-#| msgid ""
-#| "Unclean or insufficient power to the motherboard. Remove any unused I/O "
-#| "boards, hard disks, or CD-ROMs, or disconnect the power cable from them, "
-#| "to see if the power supply can manage a smaller load. Or try another "
-#| "power supply, preferably one with a little more power. For instance, if "
-#| "the current power supply is rated at 250 Watts, try one rated at "
-#| "300 Watts."
 msgid ""
 "Unclean or insufficient power to the motherboard. Remove any unused I/O "
 "boards, hard disks, or CD-ROMs, or disconnect the power cable from them, to "
@@ -3278,8 +3090,8 @@ msgstr ""
 "discos rígidos, o CD-ROMs sin usar, o desconecte el cable de encendido de "
 "ellos, para ver si el suministro eléctrico puede manejar una carga más "
 "pequeña. O intente otro suministro eléctrico, preferentemente uno con más "
-"poder. Por ejemplo, si el suministro actual esta registrado a 250 Watts, "
-"intente con uno registrado a 300 Watts."
+"poder. Por ejemplo, si el suministro actual esta registrado a 250 vatios, "
+"intente con uno registrado a 300 vatios."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1893
@@ -3748,7 +3560,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2139
-#, fuzzy
 msgid ""
 "This means that a process is trying to page memory from disk, and the page "
 "attempt has hung trying to access the disk for more than 20 seconds. It "
@@ -3757,13 +3568,13 @@ msgid ""
 "will appear in <filename>/var/log/messages</filename> and in the output of "
 "<command>dmesg</command>. Otherwise, check the cables and connections."
 msgstr ""
-"Esto significa que un proceso esta intentando paginar memoria al disco, y el "
-"intento de paginación se colgó intentando acceder al disco por más de 20 "
-"segundos. Puede estar causado por bloques defectuosos en el disco rígido, "
-"cableado del disco, cables, o cualquier otro tipo de hardware de E/S "
-"relacionado. Si el disco en si mismo esta defectuoso, los errores de disco "
-"aparecerán en <filename>/var/log/messages</filename> y en la salida de "
-"<command>dmesg</command>. En otro caso, verifique los cables y las "
+"Esto significa que un proceso está tratando de paginar la memoria del disco, "
+"y el intento de paginación se ha colgado tratando de acceder al disco "
+"durante más de 20 segundos. Puede ser causado por bloques defectuosos en la "
+"unidad de disco, cableado del disco, cables o cualquier otro hardware "
+"relacionado con la E/S del disco. Si la unidad en sí es mala, aparecerán "
+"errores de disco en <filename>/var/log/messages</filename> y en la salida de "
+"<command>dmesg</command>. De lo contrario, compruebe los cables y las "
 "conexiones."
 
 #. (itstool) path: question/para
@@ -3941,14 +3752,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2239
-#, fuzzy
-#| msgid ""
-#| "This error does not mean that the <citerefentry><refentrytitle>touch</"
-#| "refentrytitle><manvolnum>1</manvolnum></citerefentry> utility is missing. "
-#| "The error is instead probably due to the dates of the files being set "
-#| "sometime in the future. If the CMOS clock is set to local time, run "
-#| "<command>adjkerntz -i</command> to adjust the kernel clock when booting "
-#| "into single-user mode."
 msgid ""
 "This error does not mean that the <citerefentry><refentrytitle>touch</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> utility is missing. "
@@ -3957,8 +3760,8 @@ msgid ""
 "<command>adjkerntz -i</command> to adjust the kernel clock when booting into "
 "single-user mode."
 msgstr ""
-"Este error no significa que la utilidad <citerefentry><refentrytitle>touch</"
-"refentrytitle><manvolnum>1</manvolnum></citerefentry> este faltante. En su "
+"Este error no significa que la utilidad <citerefentry><refentrytitle>touch</r"
+"efentrytitle><manvolnum>1</manvolnum></citerefentry> este faltante. En su "
 "lugar el error probablemente se debe a que las fechas de los archivos están "
 "ajustadas a una fecha futura. Si el reloj CMOS esta ajustado a tiempo local, "
 "corra <command>adjkerntz -i</command> para ajustar el reloj del kernel al "
@@ -3976,33 +3779,27 @@ msgstr "¿Cuáles son las aplicaciones de usuario?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2261
-#, fuzzy
 msgid ""
 "Refer to <link xlink:href=\"@@URL_RELPREFIX@@/ports/index.html\">the ports "
 "page</link> for info on software packages ported to FreeBSD."
 msgstr ""
-"Si. Vea <link xlink:href=\"@@URL_RELPREFIX@@/java/index.html\">http://www."
-"FreeBSD.org/java/</link> para más información."
+"Consulte la <link xlink:href=\"@@URL_RELPREFIX@@/ports/index.html\">página "
+"de ports</link> para obtener información sobre los paquetes de software "
+"portados a FreeBSD."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2265
-#, fuzzy
-#| msgid ""
-#| "Most ports should work on all supported versions of FreeBSD. Those that "
-#| "do not are specifically marked as such. Each time a FreeBSD release is "
-#| "made, a snapshot of the ports tree at the time of release in also "
-#| "included in the <filename>ports/</filename> directory."
 msgid ""
 "Most ports should work on all supported versions of FreeBSD. Those that do "
 "not are specifically marked as such. Each time a FreeBSD release is made, a "
 "snapshot of the ports tree at the time of release is also included in the "
 "<filename>ports/</filename> directory."
 msgstr ""
-"La mayoría de los ports deberían funcionar en todas las version soportadas "
-"de FreeBSD. Los que no lo hacen están marcados específicamente de esta "
-"manera. Cada vez que se realiza una versión de FreeBSD, se hace un snapshot "
-"del árbol de ports al momento de la versión que se incluye en el directorio "
-"<filename>ports/</filename>."
+"La mayoría de los puertos deberían funcionar en todas las versiones "
+"soportadas de FreeBSD. Las que no lo hacen están específicamente marcadas "
+"como tales. Cada vez que se hace una versión de FreeBSD se incluye también "
+"en el directorio de <filename>ports</filename> una instantánea del árbol de "
+"ports en el momento de la liberación."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2271
@@ -4018,14 +3815,13 @@ msgstr ""
 
 #. (itstool) path: question/para
 #: book.translate.xml:2279
-#, fuzzy
 msgid "How do I download the Ports tree? Should I be using Subversion?"
-msgstr "¿Como descargo el árbol de Ports? ¿Debería usar SVN?"
+msgstr "¿Como descargo el árbol de Ports? ¿Debería estar usando Subversion?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2284
 msgid "Any of the methods listed here work:"
-msgstr "Cualquiera de los métodos listados aquí funciona:"
+msgstr "Cualquiera de los métodos listados aquí funcionan:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2288
