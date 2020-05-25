@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-18 15:02-0300\n"
-"PO-Revision-Date: 2020-05-25 19:31+0000\n"
+"PO-Revision-Date: 2020-05-26 03:51+0000\n"
 "Last-Translator: mltmngz <meltem_nigiz@hotmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
@@ -32781,14 +32781,17 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25075
+#, fuzzy
 msgid ""
 "With the following lines being included in the <systemitem class="
 "\"fqdomainname\">example.org</systemitem> zone file:"
 msgstr ""
+"<systemitem class=\"fqdomainname\">example.org</systemitem> bölge dosyasına "
+"aşağıdaki satırlar eklenir:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:25079
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "_kerberos._udp      IN  SRV     01 00 88 <replaceable>kerberos.example.org</replaceable>.\n"
 "_kerberos._tcp      IN  SRV     01 00 88 <replaceable>kerberos.example.org</replaceable>.\n"
@@ -32796,9 +32799,19 @@ msgid ""
 "_kerberos-adm._tcp  IN  SRV     01 00 749 <replaceable>kerberos.example.org</replaceable>.\n"
 "_kerberos           IN  TXT     <replaceable>EXAMPLE.ORG</replaceable>"
 msgstr ""
+"_kerberos._udp      IN  SRV     01 00 88 "
+"<replaceable>kerberos.example.org</replaceable>.\n"
+"_kerberos._tcp      IN  SRV     01 00 88 "
+"<replaceable>kerberos.example.org</replaceable>.\n"
+"_kpasswd._udp       IN  SRV     01 00 464 "
+"<replaceable>kerberos.example.org</replaceable>.\n"
+"_kerberos-adm._tcp  IN  SRV     01 00 749 "
+"<replaceable>kerberos.example.org</replaceable>.\n"
+"_kerberos           IN  TXT     <replaceable>EXAMPLE.ORG</replaceable>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:25086
+#, fuzzy
 msgid ""
 "In order for clients to be able to find the <application>Kerberos</"
 "application> services, they <emphasis>must</emphasis> have either a fully "
@@ -32806,9 +32819,15 @@ msgid ""
 "<filename>/etc/krb5.conf</filename> <emphasis>and</emphasis> a properly "
 "configured <acronym>DNS</acronym> server."
 msgstr ""
+"İstemcilerin <application>Kerberos</application> hizmetlerini bulabilmesi "
+"için, uygun bir şekilde ayarlanmış <acronym>DNS</acronym> sunucusu, tamamen "
+"ayarlanmış ayarlanmış <filename>/etc/krb5.conf</filename> veya minimal "
+"ayarlanmış <filename>/etc/krb5.conf</filename><emphasis>'a "
+"<emphasis>mecburen</emphasis> sahip olmaları gerekmektedir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25095
+#, fuzzy
 msgid ""
 "Next, create the <application>Kerberos</application> database which contains "
 "the keys of all principals (users and hosts) encrypted with a master "
@@ -32817,18 +32836,30 @@ msgid ""
 "45-character random password for this purpose. To create the master key, run "
 "<command>kstash</command> and enter a password:"
 msgstr ""
+"Sonra, yönetici parolasıyla şifrelenmiş ilke anahtarlarını (kullanıcıları ve "
+"sunucuların) içeren <application>Kerberos</application> veri tabanını "
+"oluşturun. <filename>/var/heimdal/m-key</filename>'de saklanan bu şifreyi "
+"hatırlamaya gerek yoktur. Bunun için 45 karakterlik rastgele bir şifre "
+"kullanmak mantıklı olacaktır. Yönetici şifresi oluşturmak için "
+"<command>kstash</command>'i çalıştırın ve bir şifre girin:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:25104
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>kstash</userinput>\n"
 "Master key: <userinput><replaceable>xxxxxxxxxxxxxxxxxxxxxxx</replaceable></userinput>\n"
 "Verifying password - Master key: <userinput><replaceable>xxxxxxxxxxxxxxxxxxxxxxx</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>kstash</userinput>\n"
+"Yönetici anahtarı: "
+"<userinput><replaceable>xxxxxxxxxxxxxxxxxxxxxxx</replaceable></userinput>\n"
+"Yönetici anahtar şifresini Tekrar Yazın: "
+"<userinput><replaceable>xxxxxxxxxxxxxxxxxxxxxxx</replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25108
+#, fuzzy
 msgid ""
 "Once the master key has been created, the database should be initialized. "
 "The <application>Kerberos</application> administrative tool "
@@ -32841,28 +32872,47 @@ msgid ""
 "<command>kadmin</command> prompt, use <command>init</command> to create the "
 "realm's initial database:"
 msgstr ""
+"Yönetici şifresi oluşturulduğunda, veri tabanı başlatılmalıdır. "
+"<application>Kerberos</application>'un yönetimsel aracı olan <citerefentry><r"
+"efentrytitle>kadmin</refentrytitle><manvolnum>8</manvolnum></citerefentry>, "
+"ağ hizmeti kullanılmadan <command>kadmin -l</command> olarak doğrudan veri "
+"tabanı üzerinde çalışan bir modda ADM'de kullanılabilir. Veri tabanı "
+"oluşturulmadan ona bağlanmayı denemek tavuk mu yumurtadan yumurta mı "
+"tavuktan çıkar problemini çözmeyi denemektir. <command>kadmin</command> "
+"komut isteminde, yetki alanının veri tabanını oluşturmak için "
+"<command>init</command>'i kullanın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:25119
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>kadmin -l</userinput>\n"
 "kadmin&gt; <userinput>init <replaceable>EXAMPLE.ORG</replaceable></userinput>\n"
 "Realm max ticket life [unlimited]:"
 msgstr ""
+"<prompt>#</prompt> <userinput>kadmin -l</userinput>\n"
+"kadmin&gt; <userinput>init <replaceable>EXAMPLE.ORG</replaceable></userinput>"
+"\n"
+"Yetki alanı maksimum kullanım süresi [unlimited]:"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25123
+#, fuzzy
 msgid ""
 "Lastly, while still in <command>kadmin</command>, create the first principal "
 "using <command>add</command>. Stick to the default options for the principal "
 "for now, as these can be changed later with <command>modify</command>. Type "
 "<literal>?</literal> at the prompt to see the available options."
 msgstr ""
+"Son olarak, <command>kadmin</command>'deyken, <command>add</command>'i "
+"kullanarak ilk ilkeyi oluşturun. Şimdilik ilkeler için varsayılan "
+"seçeneklere bağlı kalın, bunlar <command>modify</command> ile daha "
+"sonrasında değiştirilebilir. Kullanılabilir komutları görüntülemek için "
+"komut sisteminde <literal>?</literal> yazınız."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:25130
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "kadmin&gt; <userinput>add <replaceable>tillman</replaceable></userinput>\n"
 "Max ticket life [unlimited]:\n"
@@ -32871,9 +32921,17 @@ msgid ""
 "Password: <userinput><replaceable>xxxxxxxx</replaceable></userinput>\n"
 "Verifying password - Password: <userinput><replaceable>xxxxxxxx</replaceable></userinput>"
 msgstr ""
+"kadmin&gt; <userinput>add <replaceable>tillman</replaceable></userinput>\n"
+"Maksimum bilet kullanım süresi [unlimited]:\n"
+"Maksimum uzatılabilir kullanım süresi [unlimited]:\n"
+"Özellikler []:\n"
+"Şifre: <userinput><replaceable>xxxxxxxx</replaceable></userinput>\n"
+"Şifrenizi Tekrar Yazın: "
+"<userinput><replaceable>xxxxxxxx</replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25137
+#, fuzzy
 msgid ""
 "Next, start the <acronym>KDC</acronym> services by running <command>service "
 "kdc start</command> and <command>service kadmind start</command>. While "
@@ -32881,25 +32939,37 @@ msgid ""
 "possible to confirm that the <acronym>KDC</acronym> is functioning by "
 "obtaining a ticket for the principal that was just created:"
 msgstr ""
+"Sonrasında, <acronym>ADM</acronym> hizmetlerini çalıştırılıma işlemi "
+"başlatıldığında <command>ADM sunucusu başlar</command> ve <command>kadmind "
+"sunucusu başlar</command>. Bu noktada herhangi bir kerberize edilmiş arka "
+"planda çalışan uygulamalar olmayacağından, yeni oluşturulan ilke için bir "
+"bilet oluşturularak <acronym>ADM</acronym>'nin çalıştığını onaylamak "
+"mümkündür:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:25145
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>kinit <replaceable>tillman</replaceable></userinput>\n"
 "tillman@EXAMPLE.ORG's Password:"
 msgstr ""
+"<prompt>%</prompt> <userinput>kinit "
+"<replaceable>tillman</replaceable></userinput>\n"
+"tillman@EXAMPLE.ORG'un Şifresi:"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25148
+#, fuzzy
 msgid ""
 "Confirm that a ticket was successfully obtained using <command>klist</"
 "command>:"
 msgstr ""
+"<command>klist</command> kullanarak biletin başarıyla temin edildiğini "
+"doğrulayın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:25151
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>klist</userinput>\n"
 "Credentials cache: FILE:/tmp/krb5cc_1001\n"
@@ -32908,30 +32978,40 @@ msgid ""
 "  Issued                Expires               Principal\n"
 "Aug 27 15:37:58 2013  Aug 28 01:37:58 2013  krbtgt/EXAMPLE.ORG@EXAMPLE.ORG"
 msgstr ""
+"<prompt>%</prompt> <userinput>klist</userinput>\n"
+"Kimlik bilgileri önbelleği: FILE:/tmp/krb5cc_1001\n"
+"\tYönetici: tillman@EXAMPLE.ORG\n"
+"\n"
+"  Veriliş tarihi                Son Kullanım Tarihi                Yönetici\n"
+"Aug 27 15:37:58 2013  Aug 28 01:37:58 2013  krbtgt/EXAMPLE.ORG@EXAMPLE.ORG"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25158
+#, fuzzy
 msgid "The temporary ticket can be destroyed when the test is finished:"
-msgstr ""
+msgstr "Test bittiğinde geçici bilet silinebilir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:25161
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>kdestroy</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>kdestroy</userinput>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:25165
+#, fuzzy
 msgid "Configuring a Server to Use <application>Kerberos</application>"
-msgstr ""
+msgstr "<application>Kerberos</application> Kullanarak Sunucu Ayarlamak"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:25168
+#, fuzzy
 msgid "<primary>Kerberos5</primary> <secondary>enabling services</secondary>"
-msgstr ""
+msgstr "<primary>Kerberos5</primary> <secondary>hizmet sağlanıyor</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25173
+#, fuzzy
 msgid ""
 "The first step in configuring a server to use <application>Kerberos</"
 "application> authentication is to ensure that it has the correct "
@@ -32939,9 +33019,15 @@ msgid ""
 "<acronym>KDC</acronym> can be used as-is, or it can be regenerated on the "
 "new system."
 msgstr ""
+"Bir sunucuyu <application>Kerberos</application> kimlik doğrulamasını "
+"kullanacak şekilde düzenlemenin ilk adımı, sunucunun <filename>/etc/"
+"krb5.conf</filename> dosyasında doğru bir şekilde yapılandırmaya sahip "
+"olmasını sağlamaktır. <acronym>ADM</acronym>'nin sürümü olduğu gibi "
+"kullanılabilir veya yeni bir sistem üzerinde tekrar oluşturulabilir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25180
+#, fuzzy
 msgid ""
 "Next, create <filename>/etc/krb5.keytab</filename> on the server. This is "
 "the main part of <quote>Kerberizing</quote> a service — it corresponds to "
@@ -32962,9 +33048,30 @@ msgid ""
 "convenient, because the entry for the host principal in the <acronym>KDC</"
 "acronym> database is also created using <command>kadmin</command>."
 msgstr ""
+"Sonra, server üzerinde <filename>/etc/krb5.keytab</filename> oluşturun. Bu "
+"bir hizmeti <quote>Kerberizing</quote> (hizmet ve <acronym>ADM</acronym> "
+"arasında paylaşılan bir parola oluşturmasına karşılık) etmenin temel "
+"kuraldır. Parola, anahtar tablosu içinde saklanan bir kriptografik "
+"anahtardır. Anahtar tablosu <quote>keytab</quote> sunucunun ana bilgisayar "
+"anahtarını içermektedir; bu, kendisinin ve <acronym>ADM</acronym>'nin "
+"birbirlerinin şifresini doğrulamasını sağlar. Anahtar, güvenli bir şekilde "
+"ana bilgisayara aktarılması gerekir şayet anahtar herkesin erişimine açık "
+"hale gelirse ana bilgisayarın güvenliği çökebilir. Genellikle "
+"<filename>keytab</filename>, bir yöneticinin güvenilir cihazında "
+"<command>kadmin</command> kullanılarak oluşturulur, sonra ana bilgisayara "
+"aktarılır, örneğin; <citerefentry><refentrytitle>scp</refentrytitle><manvolnu"
+"m>1</manvolnum></citerefentry> ile; güvenlik ilkesiyle birlikte tutmak "
+"gerekliyse ayrıca sunucu üzerinde doğrudan oluşturulabilir. Anahtar, diğer "
+"partiler(sunucuya kendini herhangi bir kullanıcı gibi tanıtabilirler) "
+"herhangi bir kullanıcının ana bilgisayarı tarafından biliniyorsa anahtarın, "
+"güvenli bir şekilde ana bilgisayara aktarılması çok önemlidir. Ana "
+"bilgisayarda direkt olarak <command>kadmin</command> kullanımı uygundur "
+"çünkü <acronym>ADM</acronym> veri tabanındaki ana bilgisayar yönetici girişi "
+"<command>kadmin</command> kullanılarak oluşturulur."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25203
+#, fuzzy
 msgid ""
 "Of course, <command>kadmin</command> is a kerberized service; a "
 "<application>Kerberos</application> ticket is needed to authenticate to the "
@@ -32982,9 +33089,25 @@ msgid ""
 "citerefentry>, and perform administration locally using <command>kadmin -l</"
 "command>."
 msgstr ""
+"<command>kadmin</command> elbette kerberize edilmiş bir hizmettir: ağ "
+"hizmetini yetkilendirmek için bir <application>Kerberos</application> bileti "
+"gereklidir ama bunu garanti etmek için <command>kadmin</command>'i "
+"çalıştıran kullanıcı aslında mevcut (ve oturum süresi sonlandırılmamış) yeni "
+"bir bilet almak için <command>kadmin</command>'i çalıştıracaktır. "
+"<command>kadmin</command> hizmetinde kimlik doğrulaması yapan "
+"<filename>kadmind.acl</filename> dosyasında belirtildiği gibi "
+"<command>kadmin</command> ara-biriminin kullanmasına izin verilmelidir. "
+"<command>info heimdal</command> üzerinde erişim kontrol listesinin "
+"tasarlanmasıyla ilgili detaylar için <quote>Uzaktan Yönetim</quote> adındaki "
+"başlığa bakın. Uzaktan <command>kadmin</acronym> kontrolü etkinleştirmek "
+"yerine yönetici yerel konsol veya <citerefentry><refentrytitle>ssh</refentryt"
+"itle><manvolnum>1</manvolnum></citerefentry> aracılığıyla ADM’ye güvenli bir "
+"şekilde bağlanabilir ve <command>kadmin –l</command>'i kullanarak yönetim "
+"işlemini yerine getirebilir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25220
+#, fuzzy
 msgid ""
 "After installing <filename>/etc/krb5.conf</filename>, use <command>add --"
 "random-key</command> in <command>kadmin</command>. This adds the server's "
@@ -32992,10 +33115,16 @@ msgid ""
 "principal key to a keytab. To generate the keytab, use <command>ext</"
 "command> to extract the server's host principal key to its own keytab:"
 msgstr ""
+"<filename>/etc/krb5.conf</filename> kurduktan sonra <command>kadmin</command>"
+"'de <command>add --random-key</command>'i kullanın. Bu ana bilgisayarların "
+"veri tabanına sunucu ilkesini ekler, ancak ana bilgisayar anahtarının bir "
+"kopyasını anahtar tablosundan (keytab) dışarı aktaramaz. Anahtar tablosu "
+"oluşturmak için, ana bilgisayarın sunucu ilkesi anahtarını kendi anahtar "
+"tablosuna aktarıp <command>ext</command>'ı kullanın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:25228
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>kadmin</userinput>\n"
 "kadmin&gt;<userinput> add --random-key host/myserver.example.org</userinput>\n"
@@ -33007,9 +33136,21 @@ msgid ""
 "kadmin&gt;<userinput> ext_keytab <replaceable>host/myserver.example.org</replaceable></userinput>\n"
 "kadmin&gt;<userinput> exit</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>kadmin</userinput>\n"
+"kadmin&gt;<userinput> add --random-key host/myserver.example.org</userinput>"
+"\n"
+"Maksimum bilet kullanım süresi [unlimited]:\n"
+"Maksimum uzatılabilir kullanım süresi [unlimited]:\n"
+"İlke son kullanım tarihi [never]:\n"
+"Şifre son kullanım tarihi [never]:\n"
+"Özellikler []:\n"
+"kadmin&gt;<userinput> ext_keytab <replaceable>host/"
+"myserver.example.org</replaceable></userinput>\n"
+"kadmin&gt;<userinput> exit</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25238
+#, fuzzy
 msgid ""
 "Note that <command>ext_keytab</command> stores the extracted key in "
 "<filename>/etc/krb5.keytab</filename> by default. This is good when being "
@@ -33017,27 +33158,43 @@ msgid ""
 "<replaceable>path/to/file</replaceable></command> argument should be used "
 "when the keytab is being extracted elsewhere:"
 msgstr ""
+"<command>/etc/krb5.keytab</command> içerisindeki dışarı aktarılmış anahtarı "
+"<filename>ext_keytab</filename>'da varsayılan olarak sakladığını dikkate "
+"alın. Kerberize edilmiş sunucuda çalıştırılırken bu iyidir, ama "
+"<command>--keytab<replaceable> başka bir yere çıkarılırken <replaceable>path/"
+"to/file</replaceable></command> argümanı kullanılmalıdır:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:25246
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>kadmin</userinput>\n"
 "kadmin&gt;<userinput> ext_keytab --keytab=/tmp/example.keytab <replaceable>host/myserver.example.org</replaceable></userinput>\n"
 "kadmin&gt;<userinput> exit</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>kadmin</userinput>\n"
+"kadmin&gt;<userinput> ext_keytab --keytab=/tmp/example.keytab <replaceable>"
+"host/myserver.example.org</replaceable></userinput>\n"
+"kadmin&gt;<userinput> exit</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25250
+#, fuzzy
 msgid ""
 "The keytab can then be securely copied to the server using "
 "<citerefentry><refentrytitle>scp</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> or a removable media. Be sure to specify a non-default keytab "
 "name to avoid inserting unneeded keys into the system's keytab."
 msgstr ""
+"Daha sonra keytab çıkarılabilir bir ortam kullanılarak veya <citerefentry><re"
+"fentrytitle>scp</refentrytitle><manvolnum>1</manvolnum></citerefentry> "
+"kullanılarak güvenli bir şekilde sunucuya kopyalanabilir. Sistemin anahtar "
+"tablosuna gereksiz anahtarlar eklemeyi önlemek için varsayılan olmayan bir "
+"anahtar tablosu adı belirttiğinizden emin olun."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25255
+#, fuzzy
 msgid ""
 "At this point, the server can read encrypted messages from the <acronym>KDC</"
 "acronym> using its shared key, stored in <filename>krb5.keytab</filename>. "
@@ -33048,42 +33205,63 @@ msgid ""
 "<acronym>GSS-API</acronym>. In <filename>/etc/ssh/sshd_config</filename>, "
 "add the line:"
 msgstr ""
+"Bu noktada, ana bilgisayar <filename>krb5.keytab</filename> içinde saklanan, "
+"<acronym>ADM</acronym>'nin paylaşım anahtarını kullanarak, "
+"<acronym>ADM</acronym>'den gelen şifrelenmiş mesajları okuyabilir. Artık, "
+"<application>Kerberos</application> kullanan hizmetlerin etkinleştirilmesi "
+"hazır durumdadır. Bu tür en yaygın hizmetlerden biri de <acronym>GSS-"
+"API</acronym> aracılığıyla Kerberos'u destekleyen, <citerefentry><refentrytit"
+"le>sshd</refentrytitle><manvolnum>8</manvolnum></citerefentry>'dir. "
+"<filename>/etc/ssh/sshd_config</filename> içine bu satırı ekleyin:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:25266
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "GSSAPIAuthentication yes"
-msgstr ""
+msgstr "GSSAPIAuthentication yes"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25268
+#, fuzzy
 msgid ""
 "After making this change, <citerefentry><refentrytitle>sshd</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> must be restarted for "
 "the new configuration to take effect: <command>service sshd restart</"
 "command>."
 msgstr ""
+"Bu değişikliği yaptıktan sonra, <citerefentry><refentrytitle>sshd</refentryti"
+"tle><manvolnum>8</manvolnum></citerefentry> yeni değişikliklerin aktif "
+"olabilmesi için tekrar başlatılması gerekir: <command>service sshd "
+"restart</command>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:25274
+#, fuzzy
 msgid "Configuring a Client to Use <application>Kerberos</application>"
 msgstr ""
+"İstemciyi <application>Kerberos</application> Kullanımı için Yapılandırma"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:25277
+#, fuzzy
 msgid "<primary>Kerberos5</primary> <secondary>configure clients</secondary>"
-msgstr ""
+msgstr "<primary>Kerberos5</primary> <secondary>configure clients</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25282
+#, fuzzy
 msgid ""
 "As it was for the server, the client requires configuration in <filename>/"
 "etc/krb5.conf</filename>. Copy the file in place (securely) or re-enter it "
 "as needed."
 msgstr ""
+"Ana bilgisayarda olduğu gibi, istemci de <filename>/etc/krb5.conf</filename> "
+"dosyasının yapılandırılması gerektirir. Dosyayı yerine kopyalayın (güvenli "
+"bir şekilde) veya gerektiği gibi yeniden kaydedin."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25286
+#, fuzzy
 msgid ""
 "Test the client by using <command>kinit</command>, <command>klist</command>, "
 "and <command>kdestroy</command> from the client to obtain, show, and then "
@@ -33097,17 +33275,34 @@ msgid ""
 "using <command>ssh -o GSSAPIAuthentication=yes <replaceable>hostname</"
 "replaceable></command>."
 msgstr ""
+"İstemciyi test etmek için <command>kinit</command>, <command>klist</command>"
+", istemciden ulaşmak, görüntülemek ve sonra var olan bir yönetici biletini "
+"silmek için <command>kdestroy</command>'u kullanın. Ayrıca, Kerberos "
+"uygulamaları <application>Kerberos</application>'un açık sunucularına "
+"bağlanabilmektedir. Eğer bu işe yaramıyorsa ama bir bilete ulaşılıyorsa, "
+"muhtemelen problem ana bilgisayar ile alakalı olup, <acronym>ADM</acronym> "
+"veya istemciden kaynaklı değildir. Kerberize edildiğinde, <citerefentry><refe"
+"ntrytitle>ssh</refentrytitle><manvolnum>1</manvolnum></citerefentry> <acronym"
+">GSS-API</acronym> varsayılan olarak devre dışıdır, bu yüzden test için "
+"<command>ssh -o "
+"GSSAPIAuthentication=yes<replaceable>hostname</replaceable></command>'i "
+"kullanın."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25300
+#, fuzzy
 msgid ""
 "When testing a Kerberized application, try using a packet sniffer such as "
 "<command>tcpdump</command> to confirm that no sensitive information is sent "
 "in the clear."
 msgstr ""
+"Kerberize edilmiş bir uygulamayı test ederken, hassas bilgilerin "
+"gönderilmediğine emin olmak için <command>tcpdump</command> gibi bir paket "
+"yoklayıcı kullanmayı deneyin."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25304
+#, fuzzy
 msgid ""
 "Various <application>Kerberos</application> client applications are "
 "available. With the advent of a bridge so that applications using "
@@ -33116,19 +33311,28 @@ msgid ""
 "<application>Kerberos</application> for authentication, from Jabber clients "
 "to <acronym>IMAP</acronym> clients."
 msgstr ""
+"Çeşitli <application>Kerberos</application> istemci uygulamaları mevcuttur. "
+"Bir köprünün ortaya çıkmasından dolayı uygulamalar kimlik denetimi "
+"<acronym>SASL</acronym> veya <acronym>GSS-API</acronym> yöntemini "
+"kullanabilir. İstemci uygulamalarının büyük sınıfların kimlik denetimi için "
+"Jabber’den istemcilerinden olan <acronym>IMAP</acronym> istemcileri "
+"<application>Kerberos</application>'u kullanabilir."
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:25312
+#, fuzzy
 msgid "<primary><filename>.k5login</filename></primary>"
-msgstr ""
+msgstr "<primary><filename>.k5login</filename></primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:25316
+#, fuzzy
 msgid "<primary><filename>.k5users</filename></primary>"
-msgstr ""
+msgstr "<primary><filename>.k5users</filename></primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25320
+#, fuzzy
 msgid ""
 "Users within a realm typically have their <application>Kerberos</"
 "application> principal mapped to a local user account. Occasionally, one "
@@ -33139,9 +33343,20 @@ msgid ""
 "\">webdevelopers</systemitem>. Other principals may also need access to that "
 "local account."
 msgstr ""
+"Sıradan bir yetki alanı içinde kullanıcılar, bir yerel kullanıcı hesabı "
+"aracılığıyla <application>Kerberos</application>'ını eşleştirilebilir. "
+"<application>Kerberos</application> ana haritasına sahip olabilir. Bir yetki "
+"alanı içindeki kullanıcılar genellikle <application>Kerberos</application> "
+"ilkesini yerel bir kullanıcı hesabıyla eşleştirir. Arada bir, "
+"<application>Kerberos</application> yöneticileriyle uyuşmayan birinin yerel "
+"kullanıcı hesabına erişim izni verilmesi gerekir. Örneğin, <systemitem class="
+"\"username\">tillman@EXAMPLE.ORG</systemitem>, <systemitem class=\"username\""
+">webdevelopers</systemitem> yerel kullanıcı hesabına erişim ihtiyacı "
+"duyabilir. Diğer yöneticiler de bu yerel hesaba erişim ihtiyacı duyabilirler."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25329
+#, fuzzy
 msgid ""
 "The <filename>.k5login</filename> and <filename>.k5users</filename> files, "
 "placed in a user's home directory, can be used to solve this problem. For "
@@ -33150,30 +33365,43 @@ msgid ""
 "both principals listed will have access to that account without requiring a "
 "shared password:"
 msgstr ""
+"Kullanıcının, ana dizininde yer alan <filename>.k5users</filename> ve "
+"<filename>.k5login</filename> dosyaları bu problemi çözebilir. Örneğin, "
+"aşağıdaki <filename>.k5login</filename> <systemitem class=\"username\""
+">webdevelopers</systemitem>'ın ana dizinine yerleştirilirse, iki yönetici de "
+"şifre paylaşımına ihtiyaç duymadan bu hesabın erişime sahip olacaktır:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:25337
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "tillman@example.org\n"
 "jdoe@example.org"
 msgstr ""
+"tillman@example.org\n"
+"jdoe@example.org"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25340
+#, fuzzy
 msgid ""
 "Refer to <citerefentry><refentrytitle>ksu</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> for more information about <filename>.k5users</"
 "filename>."
 msgstr ""
+"<filename>k5users</filename> hakkında daha fazla bilgi için <citerefentry><re"
+"fentrytitle>ksu</refentrytitle><manvolnum>1</manvolnum></citerefentry>'e "
+"bakın."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:25345
+#, fuzzy
 msgid "<acronym>MIT</acronym> Differences"
-msgstr ""
+msgstr "<acronym>MIT</acronym> Farklılıkları"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25347
+#, fuzzy
 msgid ""
 "The major difference between the <acronym>MIT</acronym> and Heimdal "
 "implementations is that <command>kadmin</command> has a different, but "
@@ -33182,9 +33410,16 @@ msgid ""
 "<command>kadmin</command> cannot be used to administer the <acronym>KDC</"
 "acronym> remotely, and vice versa."
 msgstr ""
+"<acronym>MIT</acronym> ve Heimdal uygulamaları arasındaki temel fark, "
+"<command>kadmin</command>'in farklı ama eşdeğer komut setine sahip olması ve "
+"farklı bir protokol kullanmasıdır. "
+"<acronym>ADM</acronym><acronym>MIT</acronym> olursa, "
+"<command>kadmin</command>'nin Heimdal versiyonu, <acronym>ADM</acronym>'yi "
+"uzaktan kontrolü için kullanılamaz ki bunun tam tersi de geçerlidir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25355
+#, fuzzy
 msgid ""
 "Client applications may also use slightly different command line options to "
 "accomplish the same tasks. Following the instructions at <link xlink:href="
@@ -33194,17 +33429,27 @@ msgid ""
 "system applications run instead of the <acronym>MIT</acronym> versions if "
 "<envar>PATH</envar> lists the system directories first."
 msgstr ""
+"İstemci uygulamaları, bir görevi tamamlamak için kısmen farklı komut satır "
+"seçenekleri kullanır. <link xlink:href=\"http://web.mit.edu/Kerberos/www/"
+"</link> adresindeki talimatlar önerilir. Yol sorunlarına dikkat edin: "
+"<acronym>MIT<acronym> bağlantı noktası varsayılan olarak <filename>/usr/"
+"local/<filename> içine kurulur ve <envar>PATH</envar> sistem dizinleri önce "
+"geliyorsa MIT versiyonu yerine FreeBSD'nin sistem uygulamalarını çalıştırır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25365
+#, fuzzy
 msgid ""
 "When using MIT Kerberos as a <acronym>KDC</acronym> on FreeBSD, the "
 "following edits should also be made to <filename>rc.conf</filename>:"
 msgstr ""
+"FreeBSD üzerinde MIT Kerberos, bir <acronym>ADM</acronym> olarak "
+"kullanıldığında, ayrıca <filename>rc.conf</filename>'de aşağıdaki "
+"düzenlemeler yapılmalıdır:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:25369
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "kerberos5_server=\"/usr/local/sbin/krb5kdc\"\n"
 "kadmind5_server=\"/usr/local/sbin/kadmind\"\n"
@@ -33212,37 +33457,58 @@ msgid ""
 "kerberos5_server_enable=\"YES\"\n"
 "kadmind5_server_enable=\"YES\""
 msgstr ""
+"kerberos5_server=\"/usr/local/sbin/krb5kdc\"\n"
+"kadmind5_server=\"/usr/local/sbin/kadmind\"\n"
+"kerberos5_server_flags=\"\"\n"
+"kerberos5_server_enable=\"YES\"\n"
+"kadmind5_server_enable=\"YES\""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:25377
+#, fuzzy
 msgid "<application>Kerberos</application> Tips, Tricks, and Troubleshooting"
 msgstr ""
+"<application>Kerberos</application> İpuçları, Püf Noktaları ve Sorun Giderme"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25380
+#, fuzzy
 msgid ""
 "When configuring and troubleshooting <application>Kerberos</application>, "
 "keep the following points in mind:"
 msgstr ""
+"<application>Kerberos</application> sorun giderme ve ayarlama yapılırken "
+"aşağıdaki durumları aklınızda tutunuz:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:25386
+#, fuzzy
 msgid ""
 "When using either Heimdal or <acronym>MIT</acronym> <application>Kerberos</"
 "application> from ports, ensure that the <envar>PATH</envar> lists the "
 "port's versions of the client applications before the system versions."
 msgstr ""
+"Erişim noktasında hem Heimdal hem de "
+"<acronym>MIT</acronym><application>Kerberos</application> kullanırken, "
+"<envar>PATH</envar>'ın sistem sürümlerinden önce bağlantı noktasının istemci "
+"uygulamalarının sürümlerini listelediğinden emin olun."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:25393
+#, fuzzy
 msgid ""
 "If all the computers in the realm do not have synchronized time settings, "
 "authentication may fail. <xref linkend=\"network-ntp\"/> describes how to "
 "synchronize clocks using <acronym>NTP</acronym>."
 msgstr ""
+"Yetki alanındaki tüm bilgisayarların zaman ayaları senkronize değilse kimlik "
+"yetkilendirmesi başarısız olabilir. <acronym>NTP</acronym> kullanarak zaman "
+"ayarlarının nasıl senkronize edilerek kullanıldığı <xref linkend=\"network-"
+"ntp\"/> bölümünde yer almaktadır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:25400
+#, fuzzy
 msgid ""
 "If the hostname is changed, the <systemitem class=\"username\">host/</"
 "systemitem> principal must be changed and the keytab updated. This also "
@@ -33250,9 +33516,15 @@ msgid ""
 "\">HTTP/</systemitem> principal used for Apache's <package>www/"
 "mod_auth_kerb</package>."
 msgstr ""
+"Ana bilgisayar adı değiştirildiği taktirde, <systemitem class=\"username\">"
+"host/</systemitem> ilkesi değiştirilmeli ve keytab güncellenmelidir. Bu "
+"ayrıca, Apache'nin <package>www/mod_auth_kerb</package> için kullanılan <"
+"systemitem class=\"username\">HTTP/</systemitem> ilkesi gibi özel bir keytab "
+"girişleri için de geçerlidir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:25407
+#, fuzzy
 msgid ""
 "All hosts in the realm must be both forward and reverse resolvable in "
 "<acronym>DNS</acronym> or, at a minimum, exist in <filename>/etc/hosts</"
@@ -33261,9 +33533,17 @@ msgid ""
 "<errorname>Kerberos5 refuses authentication because Read req failed: Key "
 "table entry not found</errorname>."
 msgstr ""
+"Yetki alanındaki tüm ana bilgisayarlar, <acronym>DNS</acronym>'de hem "
+"yönlendirilebilir hem de geri çözümlenebilir olmalı veya en azından, "
+"<filename>/etc/hosts</filename> konumunda bulunmalıdır. CNAME'ler "
+"çalışacaktır ama A ve PTR kayıtları doğru ve yerinde olmalıdır. Bu hata "
+"mesajı çözümlenemeyen sunucular için anlaşılması kolay değildir: <errorname>"
+"Kerberos5 yetkilendirmeyi reddetti çünkü okuma talebi başarısız oldu: "
+"Anahtar tablosu girdisi bulunamadı</errorname>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:25418
+#, fuzzy
 msgid ""
 "Some operating systems that act as clients to the <acronym>KDC</acronym> do "
 "not set the permissions for <command>ksu</command> to be setuid <systemitem "
@@ -33271,9 +33551,15 @@ msgid ""
 "does not work. This is a permissions problem, not a <acronym>KDC</acronym> "
 "error."
 msgstr ""
+"<acronym>ADM</acronym>'nin istemcisi gibi çalışan bazı işletim sistemleri, "
+"<command>ksu</command> için setuid (kullanıcı ID'sini düzenleme) <systemitem "
+"class=\"username\">root</systemitem> izinlerini ayarlamaz. Bunun anlamı, "
+"<command>ksu</command> çalışmayacak demektir. Bu bir <acronym>ADM</acronym> "
+"hatası değil, izin problemidir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:25427
+#, fuzzy
 msgid ""
 "With <acronym>MIT</acronym> <application>Kerberos</application>, to allow a "
 "principal to have a ticket life longer than the default lifetime of ten "
@@ -33284,9 +33570,19 @@ msgid ""
 "systemitem> principal. The principal can then use <command>kinit -l</"
 "command> to request a ticket with a longer lifetime."
 msgstr ""
+"<acronym>MIT</acronym><application>Kerberos</application> ile, bir "
+"yöneticinin varsayılan on saatlik bilet kullanım ömrünü uzatmasına izin "
+"vermesinde <citerefentry><refentrytitle>kadmin</refentrytitle><manvolnum>8</m"
+"anvolnum></citerefentry> komut isteminde, hem ilkenin hem de söz konusu <"
+"systemitem class=\"username\">krbtgt</systemitem> ilkesinin "
+"<literal>maxlife</literal> değerinin değiştirilmesinde "
+"<command>modify_principal</command>'ı kullanın. Yönetici daha sonrasında, "
+"biletin daha uzun ömürlü olmasını sağlamak için <command>kinit –l</command>"
+"'i kullanabilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:25441
+#, fuzzy
 msgid ""
 "When running a packet sniffer on the <acronym>KDC</acronym> to aid in "
 "troubleshooting while running <command>kinit</command> from a workstation, "
@@ -33306,18 +33602,42 @@ msgid ""
 "layer of encryption allows the <application>Kerberos</application> server to "
 "verify the authenticity of each <acronym>TGT</acronym>."
 msgstr ""
+"<acronym>ADM</acronym> üzerinde bir paket yoklayıcı çalıştığı sırada iş "
+"istasyonunda, <command>kinit</command> çalışırken, şifre girilmeden daha "
+"önce sorun gidermeye yardımcı olunması adına, hemen Tahsis Edilen Bilet "
+"(<acronym>TEB</acronym>) gönderilir. Bunu nedeni, "
+"<application>Kerberos</application> ana bilgisayarı bir "
+"<acronym>TEB</acronym>'i serbestçe herhangi yetkilendirilmemiş bir isteğe "
+"transfer edebilir olmasından kaynaklanır. Ancak her <acronym>TEB</acronym> "
+"kullanıcısının, kendi şifresinden türetilerek şifrelenmiştir. Kullanıcı "
+"kendi şifresini yazarken, <acronym>ADM</acronym>'ye gönderilmez, bunun "
+"yerine daha önce elde edilen <command>kinit</command>, <acronym>TEB</acronym>"
+"'in şifresini çözmek adına kullanılır. Şifre çözme sürecinin sonuçları, "
+"geçerli bir biletle geçerli bir zaman etiketi içindeyse, kullanıcı geçerli "
+"<application>Kerberos</application> kimliğine sahip demektir. Bu kimlikler, "
+"ileride <application>Kerberos</application> sunucusuyla güvenli bir şekilde "
+"iletişim kurmak için <application>Kerberos</application> sunucusunun kendi "
+"anahtarıyla şifrelenen gerçek <acronym>TEB</acronym>'i içerir. Bu ikinci "
+"şifreleme katmanı, <application>Kerberos</application> sunucusunun, her "
+"<acronym>TEB</acronym>'de gerçekliğinin doğrulanmasını sağlar."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:25468
+#, fuzzy
 msgid ""
 "Host principals can have a longer ticket lifetime. If the user principal has "
 "a lifetime of a week but the host being connected to has a lifetime of nine "
 "hours, the user cache will have an expired host principal and the ticket "
 "cache will not work as expected."
 msgstr ""
+"Sunucu ilkeleri daha fazla bilet kullanım süresine sahip olabilir. Kullanıcı "
+"ilkesinin bir haftalık ömrü varsa ama bağlanan sunucunun yalnızca dokuz "
+"saatlik bir ömrü varsa, kullanıcını önbelleğinin süresi bitmiş ve bilet "
+"önbelleği beklendiği üzere çalışmayacaktır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:25476
+#, fuzzy
 msgid ""
 "When setting up <filename>krb5.dict</filename> to prevent specific bad "
 "passwords from being used as described in "
@@ -33327,21 +33647,33 @@ msgid ""
 "dict</filename> is one string per line. Creating a symbolic link to "
 "<filename>/usr/share/dict/words</filename> might be useful."
 msgstr ""
+"<citerefentry><refentrytitle>kadmind</refentrytitle><manvolnum>8</manvolnum><"
+"/citerefentry> bölümünde açıklandığı gibi kötü parolaların kullanılmasını "
+"önlemek için <filename>krb5.dict</filename>'i kurarken, sadece kendilerine "
+"atanmış bir parola ilkesi olan bu ilkeler için geçerli olduğunu unutmayın. "
+"<filename>krb5.dict</filename> içinde kullanılan her satırda bir yazı olacak "
+"şekilde biçimlendirilmiştir. Sembolik bir link oluşturma işleminde "
+"<filename>/usr/share/dict/words</filename> kullanışlı olabilir."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:25490
+#, fuzzy
 msgid "Mitigating <application>Kerberos</application> Limitations"
-msgstr ""
+msgstr "<application>Kerberos</application> Sınırlamalarını Gevşetme"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:25493
+#, fuzzy
 msgid ""
 "<primary>Kerberos5</primary> <secondary>limitations and shortcomings</"
 "secondary>"
 msgstr ""
+"<primary>Kerberos5</primary> <secondary>sınırlamalar ve "
+"eksiklikler</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25498
+#, fuzzy
 msgid ""
 "Since <application>Kerberos</application> is an all or nothing approach, "
 "every service enabled on the network must either be modified to work with "
@@ -33351,9 +33683,19 @@ msgid ""
 "remote shells but the non-Kerberized <acronym>POP3</acronym> mail server "
 "sends passwords in plain text."
 msgstr ""
+"<application>Kerberos</application>'un ya hep ya hiç yaklaşımı olduğundan bu "
+"yana, ağ üzerinde aktifleştirilen her hizmet, "
+"<application>Kerberos</application> ile çalışması için ya değiştirilmek "
+"zorundadır ya da ağ saldırılarına karşı korunmalıdır. Bu, kullanıcı kimlik "
+"bilgilerinin çalınmasını ve yeniden kullanılmasının önüne geçmek içindir. "
+"<application>Kerberos</application>, tüm uzaktan kabuklarda aktif "
+"edildiğinde, ancak Kerberize edilmeden <acronym>POP-3</acronym> mail "
+"sunucusu, şifreyi düz metin şeklinde göndermesi buna bir örnek "
+"niteliğindedir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25508
+#, fuzzy
 msgid ""
 "The <acronym>KDC</acronym> is a single point of failure. By design, the "
 "<acronym>KDC</acronym> must be as secure as its master password database. "
@@ -33362,9 +33704,17 @@ msgid ""
 "<application>Kerberos</application> stores all passwords encrypted with the "
 "same master key which is stored as a file on the <acronym>KDC</acronym>."
 msgstr ""
+"<acronym>ADM</acronym> hatanın tek noktasıdır. Yapısı gereği "
+"<acronym>ADM</acronym>, ana şifre veri tabanı kadar güvenli olmak "
+"zorundadır. <acronym>ADM</acronym> üzerinde kesinlikle çalışan başka hiçbir "
+"hizmet olmamalı ve fiziksel olarak da güvenli olmalıdır. Tehlike çok "
+"büyüktür çünkü <application>Kerberos</application>, <acronym>ADM</acronym> "
+"üzerinde dosya olarak depolanan ana anahtar ile aynı bütün parolaları "
+"şifrelenmiş halde saklar."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25517
+#, fuzzy
 msgid ""
 "A compromised master key is not quite as bad as one might fear. The master "
 "key is only used to encrypt the <application>Kerberos</application> database "
@@ -33372,9 +33722,15 @@ msgid ""
 "<acronym>KDC</acronym> is secure, an attacker cannot do much with the master "
 "key."
 msgstr ""
+"Gizliliği kalmamış bir ana anahtar korkulduğu kadar kötü değildir. Ana "
+"anahtar sadece şifrelenmiş <application>Kerberos</application> veri "
+"tabanında kullanılır ve rastgele sayı üreteci için bir kaynaktır. "
+"<acronym>ADM</acronym>'ye erişim güvenli olduğu sürece bir saldırgan ana "
+"anahtarla pek fazla bir şey yapamaz."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25524
+#, fuzzy
 msgid ""
 "If the <acronym>KDC</acronym> is unavailable, network services are unusable "
 "as authentication cannot be performed. This can be alleviated with a single "
@@ -33382,9 +33738,15 @@ msgid ""
 "implementation of secondary or fall-back authentication using <acronym>PAM</"
 "acronym>."
 msgstr ""
+"<acronym>ADM</acronym> kullanılamıyorsa, kimlik doğrulaması yapılamadığından "
+"ağ hizmetleri kullanılamaz. Bu, tek bir ana <acronym>ADM</acronym> ve bir "
+"veya daha fazla ona bağlı istemcilerle ve <acronym>PAM</acronym> kullanarak "
+"ikincil veya kimlik doğrulamasına başvurularak dikkatli bir şekilde "
+"uygulanmasıyla hafifletilebilir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25531
+#, fuzzy
 msgid ""
 "<application>Kerberos</application> allows users, hosts and services to "
 "authenticate between themselves. It does not have a mechanism to "
@@ -33393,74 +33755,106 @@ msgid ""
 "names and passwords. File system integrity checking tools like "
 "<package>security/tripwire</package> can alleviate this."
 msgstr ""
+"<application>Kerberos</application> kullanıcılara, sunucuların ve "
+"servislerin arasındaki kimlik doğrulamasına izin verir. "
+"<acronym>ADM</acronym>'nin kullanıcılara, sunuculara veya servislere parola "
+"sorma gibi bir işlevi yoktur. Bu, trojen barındıran <command>kinit</command>"
+"'in tüm kullanıcı adlarını ve şifrelerini kaydedebileceği anlamına gelir. "
+"<package>security/tripwire</package> gibi dosya sistemi bütünlüğünü "
+"denetleyen araçlar, bunun kısmen önüne geçebilir."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:25542
+#, fuzzy
 msgid "Resources and Further Information"
-msgstr ""
+msgstr "Kaynaklar ve Ek Bilgiler"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:25544
+#, fuzzy
 msgid "<primary>Kerberos5</primary> <secondary>external resources</secondary>"
-msgstr ""
+msgstr "<primary>Kerberos5</primary> <secondary>dış kaynakları</secondary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:25551
+#, fuzzy
 msgid ""
 "<link xlink:href=\"http://www.faqs.org/faqs/Kerberos-faq/general/preamble."
 "html\"> The <application>Kerberos</application> FAQ</link>"
 msgstr ""
+"<link xlink:href=\"http://www.faqs.org/faqs/Kerberos-faq/general/preamble."
+"html\"> <application>Kerberos</application> Sıkça Sorulan Sorular</link>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:25557
+#, fuzzy
 msgid ""
 "<link xlink:href=\"http://web.mit.edu/Kerberos/www/dialogue.html\">Designing "
 "an Authentication System: a Dialog in Four Scenes</link>"
 msgstr ""
+"<link xlink:href=\"http://web.mit.edu/Kerberos/www/dialogue.html\"> "
+"Yetkilendirme Sistemi Tasarlama: Sahnede İletişim Kutusu Oluşturma</link>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:25563
+#, fuzzy
 msgid ""
 "<link xlink:href=\"https://www.ietf.org/rfc/rfc4120.txt\">RFC 4120, The "
 "<application>Kerberos</application> Network Authentication Service (V5)</"
 "link>"
 msgstr ""
+"<link xlink:href=\"https://www.ietf.org/rfc/rfc4120.txt\">RFC 4120, "
+"<application>Kerberos</application> Ağ Yetkilendirme Hizmeti (V5)</link>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:25569
+#, fuzzy
 msgid ""
 "<link xlink:href=\"http://web.mit.edu/Kerberos/www/\"><acronym>MIT</acronym> "
 "<application>Kerberos</application> home page</link>"
 msgstr ""
+"<link xlink:href=\"http://web.mit.edu/Kerberos/www/\"><acronym>MIT</acronym> "
+"<application>Kerberos</application> ana sayfası</link>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:25575
+#, fuzzy
 msgid ""
 "<link xlink:href=\"https://www.h5l.org/\">Heimdal <application>Kerberos</"
 "application> home page</link>"
 msgstr ""
+"<link xlink:href=\"https://www.h5l.org/\">Heimdal "
+"<application>Kerberos</application> ana sayfası</link>"
 
 #. (itstool) path: info/title
 #: book.translate.xml:25585
+#, fuzzy
 msgid "OpenSSL"
-msgstr ""
+msgstr "OpenSSL"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:25593
+#, fuzzy
 msgid "<primary>security</primary> <secondary>OpenSSL</secondary>"
-msgstr ""
+msgstr "<secondary>OpenSSL</secondary>'de <primary>güvenlik</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:25598
+#, fuzzy
 msgid ""
 "<application>OpenSSL</application> is an open source implementation of the "
 "<acronym>SSL</acronym> and <acronym>TLS</acronym> protocols. It provides an "
 "encryption transport layer on top of the normal communications layer, "
 "allowing it to be intertwined with many network applications and services."
 msgstr ""
+"<application>OpenSSL</application>, <acronym>SSL</acronym> ve "
+"<acronym>TLS</acronym> protokollerinin açık kaynak kodlu bir uygulamasıdır. "
+"Normal iletişim katmanının üzerinde bir şifre taşıma katmanı, birçok ağ "
+"uygulaması ve hizmetiyle iç içe geçmesini sağlar."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:25605
+#, fuzzy
 msgid ""
 "The version of <application>OpenSSL</application> included in FreeBSD "
 "supports the Secure Sockets Layer 3.0 (SSLv3) and Transport Layer Security "
@@ -33468,9 +33862,15 @@ msgid ""
 "used as a general cryptographic library. In FreeBSD 12.0-RELEASE and above, "
 "OpenSSL also supports Transport Layer Security 1.3 (TLSv1.3)."
 msgstr ""
+"FreeBSD'ye eklenen <application>OpenSSL</application> sürümü, Güvenli Soket "
+"Katmanı 3.0 (SSLv3) ve Aktarım Güvenliği Katmanı 1.0 / 1.1 / 1.2 (TLSv1 / "
+"TLSv1.1 / TLSv1.2) ağ güvenlik protokollerini destekler ve genel şifreleme "
+"kitaplığı gibi de kullanılabilir. OpenSSL ayrıca, FreeBSD 12.0-RELEASE'de ve "
+"üzeri sürümlerde, Aktarım Güvenliği Katmanı 1.3'ü (TLSv1.3) destekler."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:25613
+#, fuzzy
 msgid ""
 "<application>OpenSSL</application> is often used to encrypt authentication "
 "of mail clients and to secure web based transactions such as credit card "
@@ -33482,15 +33882,27 @@ msgid ""
 "application> from the <package>security/openssl</package> port, add the "
 "following to <filename>/etc/make.conf</filename>:"
 msgstr ""
+"<application>OpenSSL</application>, genellikle e-posta istemcilerinin kimlik "
+"doğrulamasını şifrelemek ve kredi kartı ödemeleri gibi web tabanlı "
+"işlemlerin güvenliğini sağlamak amacıyla kullanılır. <package>www/"
+"apache24</package> ve <package>databases/postgresql11-server</package> gibi "
+"bazı bağlantı noktaları, <application>OpenSSL</application> ile oluşturulan "
+"derleme seçeneğini de içinde barındırır. Bu seçenek seçildiği taktirde, "
+"erişim noktası <application>OpenSSL</application> kullanımıyla temel sistem "
+"üzerinden destek bağlantı noktaları ekleyecektir. Erişim noktasının, "
+"<package>security/openssl</package> bağlantı noktasından "
+"<application>OpenSSL</application>'e karşı derlenme işleminin sağlanması "
+"yerine, <filename>/etc/make.conf</filename> dosyasına aşağıdakileri ekleyin:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:25626
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "DEFAULT_VERSIONS+= ssl=openssl"
-msgstr ""
+msgstr "DEFAULT_VERSIONS+= ssl=openssl"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:25628
+#, fuzzy
 msgid ""
 "Another common use of <application>OpenSSL</application> is to provide "
 "certificates for use with software applications. Certificates can be used to "
@@ -33503,36 +33915,58 @@ msgid ""
 "can be self-signed. However, using an external authority will prevent "
 "warnings and can put users at ease."
 msgstr ""
+"<application>OpenSS</application>'in başka yaygın bir kullanımı da, yazılım "
+"uygulamalarıyla birlikte kullanımına sertifika sağlamasıdır. Sertifikalar, "
+"bireysel veya şirket kimlik bilgilerinin doğrulanmasında kullanılabilir. "
+"Sertifika, <link xlink:href=\"http://www.verisign.com</link> gibi harici "
+"<firstterm>Sertifika Yetkilisi</firstterm (<acronym>SY</acronym>) tarafından "
+"imzalanmamışsa, sertifikayı kullanan uygulama bir uyarı verecektir. İmzalı "
+"bir sertifikaya sahip olmak maliyetlidir ve imzalı bir sertifika kullanmak "
+"zorunlu değildir çünkü sertifikalar kendinden imzalı olabilirler. Ancak, "
+"harici bir otorite kullanmak hataları önler ve kullanıcıları rahatlatabilir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:25641
+#, fuzzy
 msgid ""
 "This section demonstrates how to create and use certificates on a FreeBSD "
 "system. Refer to <xref linkend=\"ldap-config\"/> for an example of how to "
 "create a <acronym>CA</acronym> for signing one's own certificates."
 msgstr ""
+"Bu bölüm, FreeBSD üzerinde nasıl sertifika oluşturabileceğini ve sertifikayı "
+"nasıl kullanacağını açıklamaktadır. Kendi sertifikalarını imzalamak için "
+"<acronym>SY</acronym>'nin nasıl oluşturulacağına dair örnek için <xref "
+"linkend=\"ldap-config\"/>'e bakın."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:25646
+#, fuzzy
 msgid ""
 "For more information about <acronym>SSL</acronym>, read the free <link xlink:"
 "href=\"https://www.feistyduck.com/books/openssl-cookbook/\">OpenSSL "
 "Cookbook</link>."
 msgstr ""
+"<acronym>SSL</acronym> hakkında daha fazla bilgi için, ücretsiz OpenSSL "
+"Cookbook <link xlink:href=\"https://www.feistyduck.com/books/"
+"openssl-cookbook/\">'u okuyun."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:25651
+#, fuzzy
 msgid "Generating Certificates"
-msgstr ""
+msgstr "Sertifika Oluşturma"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:25653
+#, fuzzy
 msgid ""
 "<primary>OpenSSL</primary> <secondary>certificate generation</secondary>"
 msgstr ""
+"<primary>OpenSSL</primary> <secondary>sertifika oluşturulumu</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25658
+#, fuzzy
 msgid ""
 "To generate a certificate that will be signed by an external <acronym>CA</"
 "acronym>, issue the following command and input the information requested at "
@@ -33543,10 +33977,18 @@ msgid ""
 "to the user, rendering the verification provided by the certificate as "
 "useless."
 msgstr ""
+"Harici bir <acronym>SY</acronym> tarafından imzalanan sertifika oluşturulumu "
+"için, \n"
+"aşağıdaki komutu girin ve bilgi istendiğinde istenen bilgilerin girdisini "
+"sağlayın. Bu girilen bilgiler sertifikaya yazılacaktır. <literal>Common "
+"Name</literal> istemcisinde sertifikayı kullanacak sistemin tam nitelikli "
+"adını girin. Bu isim sunucuyla eşleşmiyorsa, sertifika doğrulama uygulaması, "
+"kullanıcıya bir uyarı mesajı gösterecektir ki bu da sertifika tarafından "
+"sağlanan doğrulamayı işlevsiz hale getirir."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:25668
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>openssl req -new -nodes -out req.pem -keyout cert.key -sha256 -newkey rsa:2048</userinput>\n"
 "Generating a 2048 bit RSA private key\n"
@@ -33574,18 +34016,57 @@ msgid ""
 "A challenge password []:\n"
 "An optional company name []:<userinput><replaceable>Another Name</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>openssl req -new -nodes -out req.pem -keyout "
+"cert.key -sha256 -newkey rsa:2048</userinput>\n"
+"2048 bit RSA özel anahtarı oluşturuluyor\n"
+"..................+++\n"
+".............................................................+++\n"
+"'cert.key' 'e yeni kişisel anahtar yazılıyor\n"
+"-----\n"
+"Sertifika isteğinize dâhil edilecek bilgileri girmeniz istenecektir.\n"
+"Girmek üzere olduğunuz, Ayırt Edici Ad veya DN olarak adlandırılan şeydir.\n"
+"Çok az bilgi alanı var ama bazılarını boş bırakabilir\n"
+"Bazı alanlar için varsayılan bir değer olduğunda,\n"
+"'.' girersen, o alan boş bırakılacaktır.\n"
+"-----\n"
+"Ülke Adı (2 harfli kod) "
+"[AU]:<userinput><replaceable>US</replaceable></userinput>\n"
+"Eyalet veya İl Adı (tam ad) [Some-"
+"State]:<userinput><replaceable>PA</replaceable></userinput>\n"
+"Konum Adı (örn, Şehir) "
+"[]:<userinput><replaceable>Pittsburgh</replaceable></userinput>\n"
+"Kurum Adı (ör, Şirket) [Internet Widgits Pty Ltd]:<userinput><replaceable>My "
+"Company</replaceable></userinput>\n"
+"Kurum Birim Adı (ör, Bölüm) []:<userinput><replaceable>Systems "
+"Administrator</replaceable></userinput>\n"
+"Ortak Adı (ör, Adın) "
+"[]:<userinput><replaceable>localhost.example.org</replaceable></userinput>\n"
+"E-mail Adresi "
+"[]:<userinput><replaceable>trhodes@FreeBSD.org</replaceable></userinput>\n"
+"\n"
+"Lütfen sertifika isteğin ile birlikte\n"
+"gönderilecek aşağıdaki 'ekstra' özellikleri girin\n"
+"Zor bir şifre []:\n"
+"İsteğe bağlı bir şirket adı []:<userinput><replaceable>Another "
+"Name</replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25694
+#, fuzzy
 msgid ""
 "Other options, such as the expire time and alternate encryption algorithms, "
 "are available when creating a certificate. A complete list of options is "
 "described in <citerefentry><refentrytitle>openssl</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 msgstr ""
+"Sertifika oluşturulurken, geçerlilik süresi ve alternatif şifreleme "
+"algoritmaları gibi diğer seçenekler de bulunmaktadır. Bu seçeneklerin tam "
+"listesi <citerefentry><refentrytitle>openssl</refentrytitle><manvolnum>1</man"
+"volnum></citerefentry>'de açıklanmıştır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25699
+#, fuzzy
 msgid ""
 "This command will create two files in the current directory. The certificate "
 "request, <filename>req.pem</filename>, can be sent to a <acronym>CA</"
@@ -33595,18 +34076,29 @@ msgid ""
 "secure location. If this falls in the hands of others, it can be used to "
 "impersonate the user or the server."
 msgstr ""
+"Bu komut, geçerli dizinde iki dosya oluşturur. Sertifika talebi, "
+"<filename>eq.pem</filename>, girilen kimlik bilgilerini doğrulayacak, "
+"istekleri imzalayacak ve imzalanan sertifikayı tekrar geri gönderecek bir "
+"<acronym>SY</acronym>'ye gönderilebilir. Sertifikanın özel anahtarı olan "
+"ikinci dosya <filename>cert.key</filename>, güvenli bir yerde saklanmalıdır. "
+"Bu dosya başkalarının eline geçerse, kullanıcıyı veya sunucuyu taklit etmek "
+"için kullanılabilir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25710
+#, fuzzy
 msgid ""
 "Alternately, if a signature from a <acronym>CA</acronym> is not required, a "
 "self-signed certificate can be created. First, generate the <acronym>RSA</"
 "acronym> key:"
 msgstr ""
+"Alternatif olarak, <acronym>FY</acronym>'den imza gerekmediği taktirde, "
+"kendinden imzalı bir sertifika oluşturulabilir. Öncelikle, "
+"<acronym>RSA</acronym> anahtarını üretin:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:25714
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>openssl genrsa -rand -genkey -out cert.key 2048</userinput>\n"
 "0 semi-random bytes loaded\n"
@@ -33615,17 +34107,28 @@ msgid ""
 ".................................................................................................................+++\n"
 "e is 65537 (0x10001)"
 msgstr ""
+"<prompt>#</prompt> <userinput>openssl genrsa -rand -genkey -out cert.key "
+"2048</userinput>\n"
+"0 yarı-randomize baytlar yüklendi\n"
+"RSA özel anahtarı oluşturuluyor, 2048 bit uzunluğunda modül\n"
+".............................................+++\n"
+"............................................................................."
+"....................................+++\n"
+"e 65537 'dir (0x10001)"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25721
+#, fuzzy
 msgid ""
 "Use this key to create a self-signed certificate. Follow the usual prompts "
 "for creating a certificate:"
 msgstr ""
+"Kendinden imzalı bir sertifika oluşturmak için bu anahtarı kullanın. "
+"Sertifika oluşturmak için her zamanki komut istemleri takip edin:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:25724
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>openssl req -new -x509 -days 365 -key cert.key -out cert.crt -sha256</userinput>\n"
 "You are about to be asked to enter information that will be incorporated\n"
@@ -33643,9 +34146,32 @@ msgid ""
 "Common Name (e.g. server FQDN or YOUR name) []:<userinput><replaceable>localhost.example.org</replaceable></userinput>\n"
 "Email Address []:<userinput><replaceable>trhodes@FreeBSD.org</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>openssl req -new -x509 -days 365 -key cert.key "
+"-out cert.crt -sha256</userinput>\n"
+"Sertifika talebine dâhil edilecek bilgileri girmen istenecektir.\n"
+"Girmek üzere olduğun, Ayırt Edici Ad veya DN olarak adlandırılan şeydir.\n"
+"Çok az bilgi alanı mevcut ama bazılarını boş bırakabilirsin.\n"
+"Bazı alanlar için varsayılan bir değer olacaktır,\n"
+"'.' girersen, o alan boş bırakılacaktır.\n"
+"-----\n"
+"Ülke Adı (2 harfli kod) "
+"[AU]:<userinput><replaceable>US</replaceable></userinput>\n"
+"Eyalet veya İl Adı (tam ad) [Some-"
+"State]:<userinput><replaceable>PA</replaceable></userinput>\n"
+"Konum Adı (ör, Şehir) "
+"[]:<userinput><replaceable>Pittsburgh</replaceable></userinput>\n"
+"Kurum Adı (ör, Şirket) [Internet Widgits Pty Ltd]:<userinput><replaceable>My "
+"Company</replaceable></userinput>\n"
+"Kurum Birim Adı (ör, Bölüm) []:<userinput><replaceable>Systems "
+"Administrator</replaceable></userinput>\n"
+"Ortak Ad (ör, Adın) "
+"[]:<userinput><replaceable>localhost.example.org</replaceable></userinput>\n"
+"E-mail Adresi "
+"[]:<userinput><replaceable>trhodes@FreeBSD.org</replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25740
+#, fuzzy
 msgid ""
 "This will create two new files in the current directory: a private key file "
 "<filename>cert.key</filename>, and the certificate itself, <filename>cert."
@@ -33654,47 +34180,72 @@ msgid ""
 "\"username\">root</systemitem>. Permissions of <literal>0700</literal> are "
 "appropriate for these files and can be set using <command>chmod</command>."
 msgstr ""
+"Bu işlem, aktif dizinde iki yeni dosya oluşturacaktır: özel anahtar dosyası "
+"<filename>cert.key</filename>, ve sertifikanın kendisini "
+"<filename>cert.crt</filename>. Bunlar, sadece <systemitem class=\"username\""
+">root</systemitem> tarafından okunabilir olduğu taktirde, <filename>/etc/ssl/"
+"</filename> tercihen altına, dizine yerleştirilmelidir. "
+"<literal>0700</literal> izinleri bu dosyalar için uygundur ve "
+"<command>chmod</command> kullanırken ayarlanabilir."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:25751
+#, fuzzy
 msgid "Using Certificates"
-msgstr ""
+msgstr "Sertifikaları Kullanma"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25753
+#, fuzzy
 msgid ""
 "One use for a certificate is to encrypt connections to the "
 "<application>Sendmail</application> mail server in order to prevent the use "
 "of clear text authentication."
 msgstr ""
+"Tek kullanımlık sertifika, açık metin kimlik doğrulamasının kullanımını "
+"önlemek adına <application>Sendmail</application> e-posta sunucusuna yapılan "
+"bağlantıları şifrelemektir."
 
 #. (itstool) path: note/para
 #: book.translate.xml:25758
+#, fuzzy
 msgid ""
 "Some mail clients will display an error if the user has not installed a "
 "local copy of the certificate. Refer to the documentation included with the "
 "software for more information on certificate installation."
 msgstr ""
+"Kullanıcı sertifikanın yerel bir kopyasını kurmamışsa, bazı mail istemcileri "
+"hata gösterecektir. Sertifika yüklemesi hakkında daha fazla bilgi için "
+"yazılımla birlikte sunulan belgelere bakın."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25764
+#, fuzzy
 msgid ""
 "In FreeBSD 10.0-RELEASE and above, it is possible to create a self-signed "
 "certificate for <application>Sendmail</application> automatically. To enable "
 "this, add the following lines to <filename>/etc/rc.conf</filename>:"
 msgstr ""
+"FreeBSD'nin 10.0 ve üzeri sürümlerinde, <application>Sendmail</application> "
+"için kendiliğinden otomatik olarak imzalı sertifika oluşturması mümkündür. "
+"Bunu aktifleştirmek için aşağıdaki satırlara <filename>/etc/"
+"rc.conf</filename>'u ekleyin:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:25770
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "sendmail_enable=\"YES\"\n"
 "sendmail_cert_create=\"YES\"\n"
 "sendmail_cert_cn=\"<replaceable>localhost.example.org</replaceable>\""
 msgstr ""
+"sendmail_enable=\"YES\"\n"
+"sendmail_cert_create=\"YES\"\n"
+"sendmail_cert_cn=\"<replaceable>localhost.example.org</replaceable>\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25774
+#, fuzzy
 msgid ""
 "This will automatically create a self-signed certificate, <filename>/etc/"
 "mail/certs/host.cert</filename>, a signing key, <filename>/etc/mail/certs/"
@@ -33703,24 +34254,36 @@ msgid ""
 "<literal>Common Name</literal> specified in <option>sendmail_cert_cn</"
 "option>. After saving the edits, restart <application>Sendmail</application>:"
 msgstr ""
+"Bu işlem, kendiliğinden imzalı sertifika oluşturacaktır, <filename>/etc/mail/"
+"certs/host.cert</filename>, imza anahtarı, <filename>/etc/mail/certs/"
+"host.key</filename>, ve <acronym>FY</acronym> sertifikası, <filename>/etc/"
+"mail/certs/cacert.pem</filename>. Sertifika, "
+"<application>sendmail_cert_cn</application> içinde tanımlanmış <literal>"
+"Common Name</literal>'i kullanacaktır. düzeltmeler kaydedildikten sonra, "
+"<application>Sendmail</application>'i yeniden başlatın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:25783
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>service sendmail restart</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>service sendmail restart</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25785
+#, fuzzy
 msgid ""
 "If all went well, there will be no error messages in <filename>/var/log/"
 "maillog</filename>. For a simple test, connect to the mail server's "
 "listening port using <command>telnet</command>:"
 msgstr ""
+"Her şey yolunda giderse, <filename>/var/log/maillog</filename> içinde "
+"herhangi bir hata mesajı olmayacaktır. Basit bir test için, "
+"<command>telnet</command> kullanarak posta sunucusu dinleme erişim noktasına "
+"bağlanın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:25790
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>telnet <replaceable>example.com</replaceable> 25</userinput>\n"
 "Trying 192.0.34.166...\n"
@@ -33743,60 +34306,103 @@ msgid ""
 "221 2.0.0 example.com closing connection\n"
 "Connection closed by foreign host."
 msgstr ""
+"<prompt>#</prompt> <userinput>telnet <replaceable>example.com</replaceable> "
+"25</userinput>\n"
+"Deneniyor 192.0.34.166...\n"
+"example.com 'a bağlanıldı.\n"
+"Çıkış karakteri '^]' 'dir.\n"
+"220 example.com ESMTP Sendmail 8.14.7/8.14.7; Cuma, 18 Nisan 2014 11:50:32 -"
+"0400 (EDT)\n"
+"<userinput>ehlo <replaceable>example.com</replaceable></userinput>\n"
+"250-example.com Hello example.com [192.0.34.166], tanıştığımıza memnun "
+"oldum\n"
+"250-ENHANCEDSTATUSCODES\n"
+"250-PIPELINING\n"
+"250-8BITMIME\n"
+"250-SIZE\n"
+"250-DSN\n"
+"250-ETRN\n"
+"250-AUTH LOGIN PLAIN\n"
+"250-STARTTLS\n"
+"250-DELIVERBY\n"
+"250 HELP\n"
+"<userinput>quit</userinput>\n"
+"221 2.0.0 example.com bağlantısı kapatılıyor\n"
+"Bağlantı yabancı bir sunucu tarafından kapatıldı."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25811
+#, fuzzy
 msgid ""
 "If the <literal>STARTTLS</literal> line appears in the output, everything is "
 "working correctly."
 msgstr ""
+"Çıktıda <literal>STARTTLS</literal> satırı görüntülendiyse, her şey doğru "
+"bir şekilde çalışır."
 
 #. (itstool) path: info/title
 #: book.translate.xml:25818
+#, fuzzy
 msgid "<acronym>VPN</acronym> over <acronym>IPsec</acronym>"
-msgstr ""
+msgstr "<acronym>VPN</acronym> üzerinde <acronym>IPsec</acronym>"
 
 #. (itstool) path: affiliation/address
 #: book.translate.xml:25828
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "\n"
 "\t      <email>nik@FreeBSD.org</email>\n"
 "\t    "
 msgstr ""
+"\n"
+"\t      <email>nik@FreeBSD.org</email>\n"
+"\t    "
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:25822
+#, fuzzy
 msgid ""
 "<personname> <firstname>Nik</firstname> <surname>Clayton</surname> </"
 "personname> <affiliation> <_:address-1/> </affiliation> <contrib>Written by "
 "</contrib>"
 msgstr ""
+"<personname> <firstname>Nik</firstname> <surname>Clayton</surname> "
+"</personname> <affiliation> <_:address-1/> </affiliation> <contrib>"
+"tarafından yazılmıştır</contrib>"
 
 #. (itstool) path: affiliation/address
 #: book.translate.xml:25843
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "\n"
 "\t      <email>hmp@FreeBSD.org</email>\n"
 "\t    "
 msgstr ""
+"\n"
+"\t      <email>hmp@FreeBSD.org</email>\n"
+"\t    "
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:25837
+#, fuzzy
 msgid ""
 "<personname> <firstname>Hiten M.</firstname> <surname>Pandya</surname> </"
 "personname> <affiliation> <_:address-1/> </affiliation> <contrib>Written by "
 "</contrib>"
 msgstr ""
+"<personname> <firstname>Hiten M.</firstname> <surname>Pandya</surname> "
+"</personname> <affiliation> <_:address-1/> </affiliation> <contrib>"
+"tarafından yazılmıştır </contrib>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:25852
+#, fuzzy
 msgid "<primary><acronym>IPsec</acronym></primary>"
-msgstr ""
+msgstr "<primary><acronym>IPsec</acronym></primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:25856
+#, fuzzy
 msgid ""
 "Internet Protocol Security (<acronym>IPsec</acronym>) is a set of protocols "
 "which sit on top of the Internet Protocol (<acronym>IP</acronym>) layer. It "
@@ -33807,33 +34413,49 @@ msgid ""
 "implementation and supports both <acronym>IPv4</acronym> and <acronym>IPv6</"
 "acronym> sessions."
 msgstr ""
+"Internet Güvenlik Protokolü(<acronym>IPsec</acronym>), Internet Protokolü "
+"(<acronym>IP</acronym>) üzerinde bulunan bir protokoldür. İki veya daha "
+"fazla sunucunun, bir iletişim oturumunda her <acronym>IP</acronym> paketini "
+"doğrulayıp şifreleyerek güvenli bir şekilde iletişim kurmasını sağlar. "
+"FreeBSD <acronym>IPsec</acronym> ağ dizini, <link xlink:href=\""
+"http://www.kame.net/</link> uygulamasını baz alır ve her iki "
+"<acronym>IPv4</acronym> ve <acronym>IPv6</acronym> oturumlarını destekler."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:25866
+#, fuzzy
 msgid "<primary><acronym>IPsec</acronym></primary> <secondary>ESP</secondary>"
-msgstr ""
+msgstr "<primary><acronym>IPsec</acronym></primary> <secondary>ESP</secondary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:25871
+#, fuzzy
 msgid "<primary><acronym>IPsec</acronym></primary> <secondary>AH</secondary>"
-msgstr ""
+msgstr "<primary><acronym>IPsec</acronym></primary> <secondary>AH</secondary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:25876
+#, fuzzy
 msgid "<acronym>IPsec</acronym> is comprised of the following sub-protocols:"
-msgstr ""
+msgstr "<acronym>IPsec</acronym> aşağıdaki alt protokollerden oluşmaktadır:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:25881
+#, fuzzy
 msgid ""
 "<emphasis>Encapsulated Security Payload (<acronym>ESP</acronym>)</emphasis>: "
 "this protocol protects the <acronym>IP</acronym> packet data from third "
 "party interference by encrypting the contents using symmetric cryptography "
 "algorithms such as Blowfish and <acronym>3DES</acronym>."
 msgstr ""
+"<emphasis>Kapsüllenen Güvenlik Yükü(<acronym>KGY</acronym>)</emphasis>: Bu "
+"protokol <acronym>IP</acronym> paket verisini, üçüncü parti arabiriminden "
+"içeriklerini Simetrik kriptografi kullanaraktan, Blowfish ve "
+"<acronym>3DES</acronym> gibi algoritmalarla şifreler."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:25890
+#, fuzzy
 msgid ""
 "<emphasis>Authentication Header (<acronym>AH</acronym>)</emphasis>: this "
 "protocol protects the <acronym>IP</acronym> packet header from third party "
@@ -33842,35 +34464,52 @@ msgid ""
 "function. This is then followed by an additional header that contains the "
 "hash, to allow the information in the packet to be authenticated."
 msgstr ""
+"<emphasis>Kimlik Doğrulama Bağlantısı (<acronym>KDB</acronym>)</emphasis>: "
+"Bu protokol, <acronym>IP</acronym> paket başlığını diğer üçüncü parti "
+"arabiriminden ve programlama, kriptografik toplama sağlaması aracılığyla "
+"başkasının IP adresini kullanarak, tcp/ip paketleri oluşturmada ve güvenli "
+"karma işlevine sahip olan <acronym>IP</acronym> paket bağlantı alanlarından "
+"korur. Daha sonra, paketteki kimlik bilgilerinin doğrulanmasına izin vermek "
+"için karma verisini içeren ek bir bağlantı gelir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:25902
+#, fuzzy
 msgid ""
 "<emphasis>IP Payload Compression Protocol (<acronym>IPComp</acronym></"
 "emphasis>): this protocol tries to increase communication performance by "
 "compressing the <acronym>IP </acronym> payload in order to reduce the amount "
 "of data sent."
 msgstr ""
+"<emphasis>IP Yükü Sıkıştırma Protokolü (<acronym>IPYsp</acronym>)</emphasis>:"
+" Bu protokol, <acronym>IP</acronym> tarafından gönderilen verinin miktarını "
+"azaltmak yerine veriyi sıkıştırarak iletişim performansını arttırmayı dener."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:25910
+#, fuzzy
 msgid ""
 "These protocols can either be used together or separately, depending on the "
 "environment."
 msgstr ""
+"Bu protokoller hem beraber hem de ayrı ayı kullanılabilir. Bu ortama göre "
+"değişkenlik göstermektedir."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:25913
+#, fuzzy
 msgid "<primary><acronym>VPN</acronym></primary>"
-msgstr ""
+msgstr "<primary><acronym>VPN</acronym></primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:25917
+#, fuzzy
 msgid "<primary>virtual private network</primary> <see>VPN</see>"
-msgstr ""
+msgstr "<primary>özel sanal internet ağı</primary> <see>VPN</see>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:25922
+#, fuzzy
 msgid ""
 "<acronym>IPsec</acronym> supports two modes of operation. The first mode, "
 "<firstterm>Transport Mode</firstterm>, protects communications between two "
@@ -33880,64 +34519,94 @@ msgid ""
 "refentrytitle><manvolnum>4</manvolnum></citerefentry> for detailed "
 "information on the <acronym>IPsec</acronym> subsystem in FreeBSD."
 msgstr ""
+"<acronym>IPsec</acronym> iki çalışma modunu destekler. Birinci mod, "
+"<firstterm>Taşıyıcı Modu</firstterm>, iki sunucu arasındaki iletişimi "
+"korumaktadır. İkinci mod ise, <firstterm>Tünel modu</firstterm>' sanal "
+"tünellerin oluşturulmasında kullanır, genellikle Sanal Özel Ağlar "
+"(<acronym>VPN</acronym>(ler)) olarak bilinmektedir. FreeBSD'deki "
+"<acronym>IPsec</acronym> yardımcı sistemi hakkında ayrıntılı bilgi için <cite"
+"refentry><refentrytitle>ipsec</refentrytitle><manvolnum>4</manvolnum></citere"
+"fentry>'e bakınız."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:25931
+#, fuzzy
 msgid ""
 "<acronym>IPsec</acronym> support is enabled by default on FreeBSD 11 and "
 "later. For previous versions of FreeBSD, add these options to a custom "
 "kernel configuration file and rebuild the kernel using the instructions in "
 "<xref linkend=\"kernelconfig\"/>:"
 msgstr ""
+"<acronym>IPsec</acronym> desteği, varsayılan olarak FreeBSD'nin 11 ve daha "
+"sonraki sürümlerinde aktiftir. FreeBSD’nin daha önceki sürümleri için, \n"
+"bu seçenekleri çekirdek yapılandırma dosyasına ekleyin ve <xref linkend=\""
+"kernelconfig\"/> içindeki talimatları kullanarak çekirdeği yeniden oluşturun:"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:25936
+#, fuzzy
 msgid "<primary>kernel options</primary> <secondary>IPSEC</secondary>"
-msgstr ""
+msgstr "<primary>kernel options</primary> <secondary>IPSEC</secondary>"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:25941
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "options   IPSEC        #IP security\n"
 "device    crypto"
 msgstr ""
+"options   IPSEC        #IP security\n"
+"device    crypto"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:25944
+#, fuzzy
 msgid "<primary>kernel options</primary> <secondary>IPSEC_DEBUG</secondary>"
 msgstr ""
+"<primary>Çekirdek yapılandırma seçenekleri</primary> "
+"<secondary>IPSEC_DEBUG</secondary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:25949
+#, fuzzy
 msgid ""
 "If <acronym>IPsec</acronym> debugging support is desired, the following "
 "kernel option should also be added:"
 msgstr ""
+"<acronym>IPsec</acronym> hata ayıklama desteği gerekliyse, aşağıdaki "
+"çekirdek seçeneği de eklenmelidir:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:25952
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "options   IPSEC_DEBUG  #debug for IP security"
-msgstr ""
+msgstr "options   IPSEC_DEBUG  #IP güvenliği için hata ayıklama"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:25954
+#, fuzzy
 msgid ""
 "This rest of this chapter demonstrates the process of setting up an "
 "<acronym>IPsec</acronym> <acronym>VPN</acronym> between a home network and a "
 "corporate network. In the example scenario:"
 msgstr ""
+"Bu bölümün geri kalanında, bir ev ağıyla bir şirket ağı arasında "
+"<acronym>IPsec</acronym> <acronym>VPN</acronym> kurulum işlemi "
+"gösterilmektedir. Örnek senaryoda:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:25961
+#, fuzzy
 msgid ""
 "Both sites are connected to the Internet through a gateway that is running "
 "FreeBSD."
 msgstr ""
+"Her iki site de, FreeBSD'de çalıştırılan bir ağ geçidi ile internete "
+"bağlıdır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:25966
+#, fuzzy
 msgid ""
 "The gateway on each network has at least one external <acronym>IP</acronym> "
 "address. In this example, the corporate <acronym>LAN</acronym>'s external "
@@ -33946,9 +34615,16 @@ msgid ""
 "acronym> address is <systemitem class=\"ipaddress\">192.168.1.12</"
 "systemitem>."
 msgstr ""
+"Her ağdaki ağ geçidinde en az bir harici <acronym>IP</acronym> adresi "
+"vardır. Bu örnekte kurumsal <acronym>LAN</acronym>'ın harici "
+"<acronym>IP</acronym> adresi <systemitem class=\"ipaddress\""
+">172.16.5.4</systemitem> ve ev <acronym>LAN</acronym>'ın harici "
+"<acronym>IP</acronym> adresi <systemitem class=\"ipaddress\""
+">192.168.1.12</systemitem>'dir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:25975
+#, fuzzy
 msgid ""
 "The internal addresses of the two networks can be either public or private "
 "<acronym>IP</acronym> addresses. However, the address space must not "
@@ -33959,39 +34635,59 @@ msgid ""
 "internal <acronym>IP</acronym> address is <systemitem class=\"ipaddress"
 "\">10.0.0.5</systemitem>."
 msgstr ""
+"İki ağın dahili adresleri genel veya özel <acronym>IP</acronym> adresleri "
+"olabilir. Ancak iki adres alanı çakışmamalıdır. Örneğin her iki ağ <"
+"systemitem class=\"ipaddress\">192.168.1.x</systemitem> kullanamaz. Bu "
+"örnekte, kurumsal <acronym>LAN</acronym>'ın dahili <acronym>IP</acronym> "
+"adresi <systemitem class=\"ipaddress\">10.246.38.1</systemitem> ve ev "
+"<acronym>LAN</acronym>'ın harici <acronym>IP</acronym> adresi <systemitem "
+"class=\"ipaddress\">10.0.0.5</systemitem>'dir."
 
 #. (itstool) path: info/title
 #: book.translate.xml:25988
+#, fuzzy
 msgid "Configuring a <acronym>VPN</acronym> on FreeBSD"
-msgstr ""
+msgstr "FreeBSD üzerinde <acronym>VPN</acronym> Yapılandırması"
 
 #. (itstool) path: affiliation/address
 #: book.translate.xml:25997
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "\n"
 "\t\t<email>trhodes@FreeBSD.org</email>\n"
 "\t      "
 msgstr ""
+"\n"
+"\t\t<email>trhodes@FreeBSD.org</email>\n"
+"\t      "
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:25991
+#, fuzzy
 msgid ""
 "<personname> <firstname>Tom</firstname> <surname>Rhodes</surname> </"
 "personname> <affiliation> <_:address-1/> </affiliation> <contrib>Written by "
 "</contrib>"
 msgstr ""
+"<personname> <firstname>Tom</firstname> <surname>Rhodes</surname> "
+"</personname> <affiliation> <_:address-1/> </affiliation> <contrib>"
+"tarafından yazılmıştır</contrib>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26006
+#, fuzzy
 msgid ""
 "To begin, <package>security/ipsec-tools</package> must be installed from the "
 "Ports Collection. This software provides a number of applications which "
 "support the configuration."
 msgstr ""
+"Başlangıçta, Ports Collection'dan <package>security/ipsec-tools</package>‘un "
+"yüklenmesi gerekir. Bu yazılım yapılandırmayı destekleyen bir takım "
+"uygulamalar sunmaktadır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26010
+#, fuzzy
 msgid ""
 "The next requirement is to create two <citerefentry><refentrytitle>gif</"
 "refentrytitle><manvolnum>4</manvolnum></citerefentry> pseudo-devices which "
@@ -34001,59 +34697,87 @@ msgid ""
 "<replaceable>external</replaceable> with the real IP addresses of the "
 "internal and external interfaces of the two gateways:"
 msgstr ""
+"Bir sonraki gereksinim, paketleri tünellemek ve her iki ağın düzgün iletişim "
+"kurmasını sağlamak için kullanılacak iki <citerefentry><refentrytitle>gif</re"
+"fentrytitle><manvolnum>4</manvolnum></citerefentry> pseudo-cihazı "
+"oluşturmaktır. <systemitem class=\"username\">root</systemitem> olarak, "
+"<replaceable>internal</replaceable> ve <replaceable>external</replaceable> "
+"olanları iki ağ geçidinin dâhili ve harici arabirimlerinin gerçek IP "
+"adresleriyle değiştirerek aşağıdaki komutları çalıştırın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:26018
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>ifconfig gif0 create</userinput>\n"
 "<prompt>#</prompt> <userinput>ifconfig gif0 <replaceable>internal1 internal2</replaceable></userinput>\n"
 "<prompt>#</prompt> <userinput>ifconfig gif0 tunnel <replaceable>external1 external2</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>ifconfig gif0 create</userinput>\n"
+"<prompt>#</prompt> <userinput>ifconfig gif0 <replaceable>internal1 "
+"internal2</replaceable></userinput>\n"
+"<prompt>#</prompt> <userinput>ifconfig gif0 tunnel <replaceable>external1 "
+"external2</replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26022
+#, fuzzy
 msgid ""
 "Verify the setup on each gateway, using <command>ifconfig</command>. Here is "
 "the output from Gateway 1:"
 msgstr ""
+"<command>ifconfig</command> komutunu kullanarak her ağ geçidindeki kurulumu "
+"doğrulayın. Ağ Geçidi 1'in çıktısı aşağıdaki gibidir:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:26026
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "gif0: flags=8051 mtu 1280\n"
 "tunnel inet 172.16.5.4 --&gt; 192.168.1.12\n"
 "inet6 fe80::2e0:81ff:fe02:5881%gif0 prefixlen 64 scopeid 0x6\n"
 "inet 10.246.38.1 --&gt; 10.0.0.5 netmask 0xffffff00"
 msgstr ""
+"gif0: flags=8051 mtu 1280\n"
+"tunnel inet 172.16.5.4 --&gt; 192.168.1.12\n"
+"inet6 fe80::2e0:81ff:fe02:5881%gif0 prefixlen 64 scopeid 0x6\n"
+"inet 10.246.38.1 --&gt; 10.0.0.5 netmask 0xffffff00"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26031
+#, fuzzy
 msgid "Here is the output from Gateway 2:"
-msgstr ""
+msgstr "Ağ Geçidi 2 'nin çıktısı:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:26033
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "gif0: flags=8051 mtu 1280\n"
 "tunnel inet 192.168.1.12 --&gt; 172.16.5.4\n"
 "inet 10.0.0.5 --&gt; 10.246.38.1 netmask 0xffffff00\n"
 "inet6 fe80::250:bfff:fe3a:c1f%gif0 prefixlen 64 scopeid 0x4"
 msgstr ""
+"gif0: flags=8051 mtu 1280\n"
+"tunnel inet 192.168.1.12 --&gt; 172.16.5.4\n"
+"inet 10.0.0.5 --&gt; 10.246.38.1 netmask 0xffffff00\n"
+"inet6 fe80::250:bfff:fe3a:c1f%gif0 prefixlen 64 scopeid 0x4"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26038
+#, fuzzy
 msgid ""
 "Once complete, both internal <acronym>IP</acronym> addresses should be "
 "reachable using <citerefentry><refentrytitle>ping</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>:"
 msgstr ""
+"Bir kere tamamlandığında, her iki dahili <acronym>IP</acronym> adresine <cite"
+"refentry><refentrytitle>ping</refentrytitle><manvolnum>8</manvolnum></citeref"
+"entry> kullanılarak erişilebilmelidir:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:26041
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "priv-net# ping 10.0.0.5\n"
 "PING 10.0.0.5 (10.0.0.5): 56 data bytes\n"
@@ -34076,38 +34800,77 @@ msgid ""
 "5 packets transmitted, 5 packets received, 0% packet loss\n"
 "round-trip min/avg/max/stddev = 28.106/94.594/154.524/49.814 ms"
 msgstr ""
+"priv-net# ping 10.0.0.5\n"
+"PING 10.0.0.5 (10.0.0.5): 56 data bytes\n"
+"64 bytes from 10.0.0.5: icmp_seq=0 ttl=64 time=42.786 ms\n"
+"64 bytes from 10.0.0.5: icmp_seq=1 ttl=64 time=19.255 ms\n"
+"64 bytes from 10.0.0.5: icmp_seq=2 ttl=64 time=20.440 ms\n"
+"64 bytes from 10.0.0.5: icmp_seq=3 ttl=64 time=21.036 ms\n"
+"--- 10.0.0.5 ping statistics ---\n"
+"4 paket gönderildi, 4 paket alındı, 0% paket kaybı\n"
+"round-trip min/avg/max/stddev = 19.255/25.879/42.786/9.782 ms\n"
+"\n"
+"corp-net# ping 10.246.38.1\n"
+"PING 10.246.38.1 (10.246.38.1): 56 data bytes\n"
+"64 bytes from 10.246.38.1: icmp_seq=0 ttl=64 time=28.106 ms\n"
+"64 bytes from 10.246.38.1: icmp_seq=1 ttl=64 time=42.917 ms\n"
+"64 bytes from 10.246.38.1: icmp_seq=2 ttl=64 time=127.525 ms\n"
+"64 bytes from 10.246.38.1: icmp_seq=3 ttl=64 time=119.896 ms\n"
+"64 bytes from 10.246.38.1: icmp_seq=4 ttl=64 time=154.524 ms\n"
+"--- 10.246.38.1 ping istatistikleri---\n"
+"5 paket gönderildi, 5 paket alındı, 0% paket kaybı\n"
+"round-trip min/avg/max/stddev = 28.106/94.594/154.524/49.814 ms"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26062
+#, fuzzy
 msgid ""
 "As expected, both sides have the ability to send and receive <acronym>ICMP</"
 "acronym> packets from the privately configured addresses. Next, both "
 "gateways must be told how to route packets in order to correctly send "
 "traffic from either network. The following commands will achieve this goal:"
 msgstr ""
+"Beklendiği üzere, her iki kısımda gönderi ve alıcı yetilerine sahip, "
+"<acronym>ICMP</acronym> paketlerinden adresleri özel olarak doğrulanmıştır. "
+"sonrasında, her iki geçitlerinde, yönlendirme paketlerinin nasıl her iki "
+"internet ağındaki trafikten doğru biçimde gönderilmesi komutu söylenebilir. "
+"Aşağıdaki komutlar bu amaca ulaştıracak:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:26069
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "corp-net<prompt>#</prompt> <userinput>route add <replaceable>10.0.0.0 10.0.0.5 255.255.255.0</replaceable></userinput>\n"
 "corp-net<prompt>#</prompt> <userinput>route add net <replaceable>10.0.0.0: gateway 10.0.0.5</replaceable></userinput>\n"
 "priv-net<prompt>#</prompt> <userinput>route add <replaceable>10.246.38.0 10.246.38.1 255.255.255.0</replaceable></userinput>\n"
 "priv-net<prompt>#</prompt> <userinput>route add host <replaceable>10.246.38.0: gateway 10.246.38.1</replaceable></userinput>"
 msgstr ""
+"corp-net<prompt>#</prompt> <userinput>route add <replaceable>10.0.0.0 "
+"10.0.0.5 255.255.255.0</replaceable></userinput>\n"
+"corp-net<prompt>#</prompt> <userinput>route add net <replaceable>10.0.0.0: "
+"gateway 10.0.0.5</replaceable></userinput>\n"
+"priv-net<prompt>#</prompt> <userinput>route add <replaceable>10.246.38.0 "
+"10.246.38.1 255.255.255.0</replaceable></userinput>\n"
+"priv-net<prompt>#</prompt> <userinput>route add host "
+"<replaceable>10.246.38.0: gateway 10.246.38.1</replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26074
+#, fuzzy
 msgid ""
 "At this point, internal machines should be reachable from each gateway as "
 "well as from machines behind the gateways. Again, use "
 "<citerefentry><refentrytitle>ping</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> to confirm:"
 msgstr ""
+"Bu noktada, dahili cihazların, her bir ağ geçidinden aynı zamana cihazlardan "
+"ağ geçidinin arkasından erişilebilir olmalıdır. Yeniden, <citerefentry><refen"
+"trytitle>ping</refentrytitle><manvolnum>8</manvolnum></citerefentry>'i "
+"kullanarak onaylayın:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:26078
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "corp-net# ping 10.0.0.8\n"
 "PING 10.0.0.8 (10.0.0.8): 56 data bytes\n"
@@ -34131,9 +34894,31 @@ msgid ""
 "5 packets transmitted, 5 packets received, 0% packet loss\n"
 "round-trip min/avg/max/stddev = 21.145/31.721/53.491/12.179 ms"
 msgstr ""
+"corp-net# ping 10.0.0.8\n"
+"PING 10.0.0.8 (10.0.0.8): 56 data bytes\n"
+"64 bytes from 10.0.0.8: icmp_seq=0 ttl=63 time=92.391 ms\n"
+"64 bytes from 10.0.0.8: icmp_seq=1 ttl=63 time=21.870 ms\n"
+"64 bytes from 10.0.0.8: icmp_seq=2 ttl=63 time=198.022 ms\n"
+"64 bytes from 10.0.0.8: icmp_seq=3 ttl=63 time=22.241 ms\n"
+"64 bytes from 10.0.0.8: icmp_seq=4 ttl=63 time=174.705 ms\n"
+"--- 10.0.0.8 ping istatistikleri---\n"
+"5 paket gönderildi, 5 paket alındı, 0% paket kaybı\n"
+"round-trip min/avg/max/stddev = 21.870/101.846/198.022/74.001 ms\n"
+"\n"
+"priv-net# ping 10.246.38.107\n"
+"PING 10.246.38.1 (10.246.38.107): 56 data bytes\n"
+"64 bytes from 10.246.38.107: icmp_seq=0 ttl=64 time=53.491 ms\n"
+"64 bytes from 10.246.38.107: icmp_seq=1 ttl=64 time=23.395 ms\n"
+"64 bytes from 10.246.38.107: icmp_seq=2 ttl=64 time=23.865 ms\n"
+"64 bytes from 10.246.38.107: icmp_seq=3 ttl=64 time=21.145 ms\n"
+"64 bytes from 10.246.38.107: icmp_seq=4 ttl=64 time=36.708 ms\n"
+"--- 10.246.38.107 ping istatistikleri ---\n"
+"5 paket gönderildi, 5 paket alındı, 0% paket kaybı\n"
+"round-trip min/avg/max/stddev = 21.145/31.721/53.491/12.179 ms"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26100
+#, fuzzy
 msgid ""
 "Setting up the tunnels is the easy part. Configuring a secure link is a more "
 "in depth process. The following configuration uses pre-shared (<acronym>PSK</"
@@ -34141,10 +34926,16 @@ msgid ""
 "addresses, the <filename>/usr/local/etc/racoon/racoon.conf</filename> on "
 "both gateways will be identical and look similar to:"
 msgstr ""
+"Tünelleri kurmak en kolay bölümdür. Güvenli bir bağlantı oluşturmak daha "
+"yorucu bir süreçtir. Aşağıdaki ayarlar yarı paylaşımlı "
+"(<acronym>PSK</acronym>) <acronym>RSA</acronym> anahtarıdır. "
+"<acronym>IP</acronym> adresleri dışındakiler, her iki ağ geçidi üzerinde "
+"<filename>/usr/local/etc/racoon/racoon.conf</filename> özdeş olacak ve "
+"aşağıdakilere benzer şekilde görünecektir:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:26108
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "path    pre_shared_key  \"/usr/local/etc/racoon/psk.txt\"; #location of pre-shared key file\n"
 "log     debug;\t#log verbosity setting: set to 'notify' when testing and debugging is complete\n"
@@ -34204,33 +34995,106 @@ msgid ""
 "        compression_algorithm   deflate;\n"
 "}"
 msgstr ""
+"path    pre_shared_key  \"/usr/local/etc/racoon/psk.txt\"; #lönceden "
+"paylaşılan anahtar dosyasının konumu;\t#günlük tutma  ayarı: test ve hata "
+"ayıklama tamamlandığında 'bildir' olarak ayarla\n"
+"\n"
+"padding\t# değiştirilmeyecek seçenekler\n"
+"{\n"
+"        maximum_length  20;\n"
+"        randomize       off;\n"
+"        strict_check    off;\n"
+"        exclusive_tail  off;\n"
+"}\n"
+"\n"
+"timer\t# zamanlama seçenekleri. Gerektiği gibi değiştirin\n"
+"{\n"
+"        counter         5;\n"
+"        interval        20 sec;\n"
+"        persend         1;\n"
+"#       natt_keepalive  15 sec;\n"
+"        phase1          30 sec;\n"
+"        phase2          15 sec;\n"
+"}\n"
+"\n"
+"listen\t# racoon’un dinleyeceği adres [port]\n"
+"{\n"
+"        isakmp          172.16.5.4 [500];\n"
+"        isakmp_natt     172.16.5.4 [4500];\n"
+"}\n"
+"\n"
+"remote  192.168.1.12 [500]\n"
+"{\n"
+"        exchange_mode   main,aggressive;\n"
+"        doi             ipsec_doi;\n"
+"        situation       identity_only;\n"
+"        my_identifier   address 172.16.5.4;\n"
+"        peers_identifier        address 192.168.1.12;\n"
+"        lifetime        time 8 hour;\n"
+"        passive         off;\n"
+"        proposal_check  obey;\n"
+"#       nat_traversal   off;\n"
+"        generate_policy off;\n"
+"\n"
+"                        proposal {\n"
+"                                encryption_algorithm    blowfish;\n"
+"                                hash_algorithm          md5;\n"
+"                                authentication_method   pre_shared_key;\n"
+"                                lifetime time           30 sec;\n"
+"                                dh_group                1;\n"
+"                        }\n"
+"}\n"
+"\n"
+"sainfo  (address 10.246.38.0/24 any address 10.0.0.0/24 any)\t# address $"
+"network/$netmask $type address $network/$netmask $type ($type being any or "
+"esp)\n"
+"{\t\t\t\t\t\t\t\t# $network katıldığınız iki yerel ağ olmalıdır.\n"
+"        pfs_group       1;\n"
+"        lifetime        time    36000 sec;\n"
+"        encryption_algorithm    blowfish,3des;\n"
+"        authentication_algorithm        hmac_md5,hmac_sha1;\n"
+"        compression_algorithm   deflate;\n"
+"}"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26166
+#, fuzzy
 msgid ""
 "For descriptions of each available option, refer to the manual page for "
 "<filename>racoon.conf</filename>."
 msgstr ""
+"Mevcut kullanılabilir seçeneklerin açıklamaları için "
+"<filename>racoon.conf</filename> kılavuz sayfasına bakın."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26169
+#, fuzzy
 msgid ""
 "The Security Policy Database (<acronym>SPD</acronym>) needs to be configured "
 "so that FreeBSD and <application>racoon</application> are able to encrypt "
 "and decrypt network traffic between the hosts."
 msgstr ""
+"Güvenlik İlkesi Veri Tabanı'nın (<acronym>SPD</acronym>), FreeBSD ve "
+"<application>racoon</application>'un ana bilgisayarlar arasındaki ağ "
+"trafiğinde şifreleme oluşturabilmek ve şifresini çözebilmek için "
+"yapılandırılması gerekir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26174
+#, fuzzy
 msgid ""
 "This can be achieved with a shell script, similar to the following, on the "
 "corporate gateway. This file will be used during system initialization and "
 "should be saved as <filename>/usr/local/etc/racoon/setkey.conf</filename>."
 msgstr ""
+"Bu kurumsal ağ geçidine benzer bir kabuk komut bloğuyla "
+"gerçekleştirilebilir. Bu dosya sistem başlatılırken kullanılacaktır ve "
+"<filename>/usr/local/etc/racoon/setkey.conf</filename> olarak "
+"kaydedilmelidir."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:26179
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "flush;\n"
 "spdflush;\n"
@@ -34238,28 +35102,41 @@ msgid ""
 "spdadd 10.246.38.0/24 10.0.0.0/24 any -P out ipsec esp/tunnel/172.16.5.4-192.168.1.12/use;\n"
 "spdadd 10.0.0.0/24 10.246.38.0/24 any -P in ipsec esp/tunnel/192.168.1.12-172.16.5.4/use;"
 msgstr ""
+"flush;\n"
+"spdflush;\n"
+"# Ev ağı için\n"
+"spdadd 10.246.38.0/24 10.0.0.0/24 any -P out ipsec esp/tunnel/"
+"172.16.5.4-192.168.1.12/use;\n"
+"spdadd 10.0.0.0/24 10.246.38.0/24 any -P in ipsec esp/tunnel/"
+"192.168.1.12-172.16.5.4/use;"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26185
+#, fuzzy
 msgid ""
 "Once in place, <application>racoon</application> may be started on both "
 "gateways using the following command:"
 msgstr ""
+"Yerleştirildikten sonra, <application>racoon</application> aşağıdaki komutu "
+"kullanılarak iki ağ geçidi üzerinde aktif konuma getirilebilir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:26188
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>/usr/local/sbin/racoon -F -f /usr/local/etc/racoon/racoon.conf -l /var/log/racoon.log</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>/usr/local/sbin/racoon -F -f /usr/local/etc/"
+"racoon/racoon.conf -l /var/log/racoon.log</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26190
+#, fuzzy
 msgid "The output should be similar to the following:"
-msgstr ""
+msgstr "Çıktı aşağıdakine benzer şekilde olmalıdır:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:26192
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "corp-net# /usr/local/sbin/racoon -F -f /usr/local/etc/racoon/racoon.conf\n"
 "Foreground mode.\n"
@@ -34274,9 +35151,27 @@ msgid ""
 "2006-01-30 01:36:18: INFO: IPsec-SA established: ESP/Tunnel 192.168.1.12[0]-&gt;172.16.5.4[0] spi=124397467(0x76a279b)\n"
 "2006-01-30 01:36:18: INFO: IPsec-SA established: ESP/Tunnel 172.16.5.4[0]-&gt;192.168.1.12[0] spi=175852902(0xa7b4d66)"
 msgstr ""
+"corp-net# /usr/local/sbin/racoon -F -f /usr/local/etc/racoon/racoon.conf\n"
+"Ön plan modu.\n"
+"2006-01-30 01:35:47: BİLGİ: Kimlik Koruması modunu başlatın.\n"
+"2006-01-30 01:35:48: BİLGİ: alınan Vendor ID: KAME/racoon\n"
+"2006-01-30 01:35:55: BİLGİ: alınan Vendor ID: KAME/racoon\n"
+"2006-01-30 01:36:04: BİLGİ: ISAKMP-SA kurulan "
+"172.16.5.4[500]-192.168.1.12[500] spi:623b9b3bd2492452:7deab82d54ff704a\n"
+"2006-01-30 01:36:05: BİLGİ: başlatılan iki yeni dizin uzlaşımı: "
+"172.16.5.4[0]192.168.1.12[0]\n"
+"2006-01-30 01:36:09: BİLGİ: IPsec-SA kurulan: ESP/Tunnel "
+"172.16.5.4[0]-&gt;192.168.1.12[0] spi=47784998(0x2d92426)\n"
+"2006-01-30 01:36:13: BİLGİ: yanıtlanan iki yeni dizin uzlaşımı: "
+"172.16.5.4[0]192.168.1.12[0]\n"
+"2006-01-30 01:36:18: BİLGİ: IPsec-SA kurulan: ESP/Tunnel "
+"192.168.1.12[0]-&gt;172.16.5.4[0] spi=124397467(0x76a279b)\n"
+"2006-01-30 01:36:18: BİLGİ: IPsec-SA kurulan: ESP/Tunnel "
+"172.16.5.4[0]-&gt;192.168.1.12[0] spi=175852902(0xa7b4d66)"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26205
+#, fuzzy
 msgid ""
 "To ensure the tunnel is working properly, switch to another console and use "
 "<citerefentry><refentrytitle>tcpdump</refentrytitle><manvolnum>1</"
@@ -34284,31 +35179,48 @@ msgid ""
 "command. Replace <literal>em0</literal> with the network interface card as "
 "required:"
 msgstr ""
+"Tünelin doğru düzgün çalıştığına emin olmak için diğer bir konsola geçerek <c"
+"iterefentry><refentrytitle>tcpdump</refentrytitle><manvolnum>1</manvolnum></c"
+"iterefentry> komutunu kullanarak ağ trafiğini görüntüleyin. "
+"<literal>em0</literal>’ı ağ arabirim kartıyla gerektiği gibi değiştirin:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:26211
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>tcpdump -i em0 host <replaceable>172.16.5.4 and dst 192.168.1.12</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>tcpdump -i em0 host <replaceable>172.16.5.4 "
+"and dst 192.168.1.12</replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26213
+#, fuzzy
 msgid ""
 "Data similar to the following should appear on the console. If not, there is "
 "an issue and debugging the returned data will be required."
 msgstr ""
+"Konsolda aşağıdakine benzer veriler görünmelidir. Eğer böyle gözükmüyorsa, "
+"bir sorun var demektir ve döndürülen verilerdeki hatalarının ayıklanması "
+"gerekecektir."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:26217
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "01:47:32.021683 IP corporatenetwork.com &gt; 192.168.1.12.privatenetwork.com: ESP(spi=0x02acbf9f,seq=0xa)\n"
 "01:47:33.022442 IP corporatenetwork.com &gt; 192.168.1.12.privatenetwork.com: ESP(spi=0x02acbf9f,seq=0xb)\n"
 "01:47:34.024218 IP corporatenetwork.com &gt; 192.168.1.12.privatenetwork.com: ESP(spi=0x02acbf9f,seq=0xc)"
 msgstr ""
+"01:47:32.021683 IP corporatenetwork.com &gt; 192.168.1.12.privatenetwork.com:"
+" ESP(spi=0x02acbf9f,seq=0xa)\n"
+"01:47:33.022442 IP corporatenetwork.com &gt; 192.168.1.12.privatenetwork.com:"
+" ESP(spi=0x02acbf9f,seq=0xb)\n"
+"01:47:34.024218 IP corporatenetwork.com &gt; 192.168.1.12.privatenetwork.com:"
+" ESP(spi=0x02acbf9f,seq=0xc)"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26221
+#, fuzzy
 msgid ""
 "At this point, both networks should be available and seem to be part of the "
 "same network. Most likely both networks are protected by a firewall. To "
@@ -34317,36 +35229,54 @@ msgid ""
 "manvolnum></citerefentry> firewall, add the following lines to the firewall "
 "configuration file:"
 msgstr ""
+"Bu noktada, her iki ağ da kullanılabilir olmalı ve aynı ağın bir parçası "
+"gibi görünmelidir. Büyük olasılıkla her iki ağ da bir güvenlik duvarı ile "
+"korunmaktadır. Aralarında trafik akışına izin vermek için, geçiş paketlerine "
+"kuralların eklenmesi gerekmektedir. <citerefentry><refentrytitle>ipfw</refent"
+"rytitle><manvolnum>8</manvolnum></citerefentry> güvenlik duvarı için, "
+"güvenlik duvarı yapılandırma dosyasına aşağıdaki satırları ekleyin:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:26228
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "ipfw add 00201 allow log esp from any to any\n"
 "ipfw add 00202 allow log ah from any to any\n"
 "ipfw add 00203 allow log ipencap from any to any\n"
 "ipfw add 00204 allow log udp from any 500 to any"
 msgstr ""
+"ipfw add 00201 allow log esp from any to any\n"
+"ipfw add 00202 allow log ah from any to any\n"
+"ipfw add 00203 allow log ipencap from any to any\n"
+"ipfw add 00204 allow log udp from any 500 to any"
 
 #. (itstool) path: note/para
 #: book.translate.xml:26234
+#, fuzzy
 msgid ""
 "The rule numbers may need to be altered depending on the current host "
 "configuration."
 msgstr ""
+"Kural numaralarının mevcut ana bilgisayar yapılandırmasına bağlı olarak "
+"değiştirilmesi gerekebilir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26238
+#, fuzzy
 msgid ""
 "For users of <citerefentry><refentrytitle>pf</refentrytitle><manvolnum>4</"
 "manvolnum></citerefentry> or <citerefentry><refentrytitle>ipf</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>, the following rules "
 "should do the trick:"
 msgstr ""
+"<citerefentry><refentrytitle>pf</refentrytitle><manvolnum>4</manvolnum></cite"
+"refentry> veya <citerefentry><refentrytitle>ipf</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> kullanıcıları için, aşağıdaki kurallar püf "
+"noktalarıdır:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:26241
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "pass in quick proto esp from any to any\n"
 "pass in quick proto ah from any to any\n"
@@ -34359,46 +35289,71 @@ msgid ""
 "pass out quick proto udp from any port = 500 to any port = 500\n"
 "pass out quick on gif0 from any to any"
 msgstr ""
+"pass in quick proto esp from any to any\n"
+"pass in quick proto ah from any to any\n"
+"pass in quick proto ipencap from any to any\n"
+"pass in quick proto udp from any port = 500 to any port = 500\n"
+"pass in quick on gif0 from any to any\n"
+"pass out quick proto esp from any to any\n"
+"pass out quick proto ah from any to any\n"
+"pass out quick proto ipencap from any to any\n"
+"pass out quick proto udp from any port = 500 to any port = 500\n"
+"pass out quick on gif0 from any to any"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26252
+#, fuzzy
 msgid ""
 "Finally, to allow the machine to start support for the <acronym>VPN</"
 "acronym> during system initialization, add the following lines to <filename>/"
 "etc/rc.conf</filename>:"
 msgstr ""
+"Son olarak, cihazın sisteminin başlama esnasında <acronym>VPN</acronym> "
+"desteğini başlatmasına izin vermek için <filename>/etc/rc.conf</filename> "
+"dosyasına aşağıdaki satırları ekleyin:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:26256
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "ipsec_enable=\"YES\"\n"
 "ipsec_program=\"/usr/local/sbin/setkey\"\n"
 "ipsec_file=\"/usr/local/etc/racoon/setkey.conf\" # allows setting up spd policies on boot\n"
 "racoon_enable=\"yes\""
 msgstr ""
+"ipsec_enable=\"YES\"\n"
+"ipsec_program=\"/usr/local/sbin/setkey\"\n"
+"ipsec_file=\"/usr/local/etc/racoon/setkey.conf\" # önyüklemede spd ilkeleri "
+"oluşturmaya izin verir\n"
+"racoon_enable=\"yes\""
 
 #. (itstool) path: info/title
 #: book.translate.xml:26265
+#, fuzzy
 msgid "OpenSSH"
-msgstr ""
+msgstr "OpenSSH"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:26268
+#, fuzzy
 msgid ""
 "<personname><firstname>Chern</firstname><surname>Lee</surname></"
 "personname><contrib>Contributed by </contrib>"
 msgstr ""
+"<personname><firstname>Chern</firstname><surname>Lee</surname></personname><c"
+"ontrib>tarafından katkıda bulunulmuştur</contrib>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:26274
+#, fuzzy
 msgid "<primary>OpenSSH</primary>"
-msgstr ""
+msgstr "<primary>OpenSSH</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:26275
+#, fuzzy
 msgid "<primary>security</primary> <secondary>OpenSSH</secondary>"
-msgstr ""
+msgstr "<primary>günenlik</primary> <secondary>OpenSSH</secondary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:26280
