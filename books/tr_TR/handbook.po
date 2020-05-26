@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-18 15:02-0300\n"
-"PO-Revision-Date: 2020-05-26 17:13+0000\n"
+"PO-Revision-Date: 2020-05-26 19:21+0000\n"
 "Last-Translator: mltmngz <meltem_nigiz@hotmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
@@ -38275,19 +38275,23 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27704
+#, fuzzy
 msgid ""
 "Rule syntax is controlled through the use of a subject, subject-id, "
 "resource, and action, as seen in this example rule:"
 msgstr ""
+"Kural söz-dizimi, bu örnekte görüldüğü gibi; bir konu, konu kimliği, kaynak "
+"ve eylem kullanılarak kontrol edilir:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:27708
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "user:trhodes:maxproc:deny=10/user"
-msgstr ""
+msgstr "user:trhodes:maxproc:deny=10/user"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27710
+#, fuzzy
 msgid ""
 "In this rule, the subject is <literal>user</literal>, the subject-id is "
 "<literal>trhodes</literal>, the resource, <literal>maxproc</literal>, is the "
@@ -38299,9 +38303,18 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>, or sending a sigterm "
 "to the process."
 msgstr ""
+"Bu örnekte, <literal>user</literal> konusu olan, <literal>trhodes</literal> "
+"konu kimliği, <literal>maxproc</literal> işlemin maksimum sayısını ve "
+"herhangi bir yeni işlemin yapılmasını engelleyen <literal>deny</literal> "
+"hakkındadır. Bu, kullanıcı <literal>trhodes</literal>'in "
+"<literal>10</literal>'dan fazla işlem yapamayacağı anlamına gelmektedir. "
+"Diğer olası işlemler arasında konsolda oturum açmak, <citerefentry><refentryt"
+"itle>devd</refentrytitle><manvolnum>8</manvolnum></citerefentry>'e bildirim "
+"göndermek veya işleme sonlanmasını belirten bir sinyal göndermekte dâhildir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27721
+#, fuzzy
 msgid ""
 "Some care must be taken when adding rules. Since this user is constrained to "
 "<literal>10</literal> processes, this example will prevent the user from "
@@ -38309,93 +38322,128 @@ msgid ""
 "command> session. Once a resource limit has been hit, an error will be "
 "printed, as in this example:"
 msgstr ""
+"Kural eklerken dikkatli olunması gerekir. Bu örnekte kullanıcı "
+"<literal>10</literal> işlemle kısıtlandığından kullanıcının oturum açıp bir "
+"<command>screen</command> komutunu çalıştırdıktan sonra diğer işlemleri "
+"gerçekleştiremeyecektir. Bir kaynak sınırına ulaşıldığında, bu örnekte "
+"olduğu gibi bir hata yazdırılır:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:27728
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>man test</userinput>\n"
 "    /usr/bin/man: Cannot fork: Resource temporarily unavailable\n"
 "eval: Cannot fork: Resource temporarily unavailable"
 msgstr ""
+"<prompt>%</prompt> <userinput>man test</userinput>\n"
+"        /usr/bin/man: Cannot fork: Kaynak geçici olarak kullanılamaz\n"
+"eval: Cannot fork: Kaynak geçici olarak kullanılamaz"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27732
+#, fuzzy
 msgid ""
 "As another example, a jail can be prevented from exceeding a memory limit. "
 "This rule could be written as:"
 msgstr ""
+"Başka bir örnek olarak, bir hücrenin bellek sınırını aşması engellenebilir. "
+"Bu kural şu şekilde yazılabilir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:27735
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>rctl -a jail:httpd:memoryuse:deny=2G/jail</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>rctl -a jail:httpd:memoryuse:deny=2G/"
+"jail</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27737
+#, fuzzy
 msgid ""
 "Rules will persist across reboots if they have been added to <filename>/etc/"
 "rctl.conf</filename>. The format is a rule, without the preceding command. "
 "For example, the previous rule could be added as:"
 msgstr ""
+"Kurallar, <filename>/etc/rctl.conf</filename> dosyasına eklendiyse yeniden "
+"başlatılsa dahi, bu kural geçerli olacaktır. Gereken komutlar dışında format "
+"yapmak kuraldır. Örneğin, önceki kural şu şekilde eklenebilir:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:27742
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "# Block jail from using more than 2G memory:\n"
 "jail:httpd:memoryuse:deny=2G/jail"
 msgstr ""
+"# Hücrenin 2GB hafızadan fazla kullanımını engelle:\n"
+"jail:httpd:memoryuse:deny=2G/jail"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27745
+#, fuzzy
 msgid ""
 "To remove a rule, use <command>rctl</command> to remove it from the list:"
-msgstr ""
+msgstr "Kuralı listeden silmek için <command>rctl</command>'yi kullanın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:27748
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>rctl -r user:trhodes:maxproc:deny=10/user</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>rctl -r user:trhodes:maxproc:deny=10/"
+"user</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27750
+#, fuzzy
 msgid ""
 "A method for removing all rules is documented in "
 "<citerefentry><refentrytitle>rctl</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>. However, if removing all rules for a single user is required, "
 "this command may be issued:"
 msgstr ""
+"Tüm kuralları kaldırmak için bir yöntem <citerefentry><refentrytitle>rctl</re"
+"fentrytitle><manvolnum>8</manvolnum></citerefentry>'de belgelenmiştir. "
+"Ancak, tek bir kullanıcının tüm kurallarının kaldırılması gerekiyorsa, bu "
+"komut kullanılabilir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:27754
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>rctl -r user:trhodes</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>rctl -r user:trhodes</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27756
+#, fuzzy
 msgid ""
 "Many other resources exist which can be used to exert additional control "
 "over various <literal>subjects</literal>. See "
 "<citerefentry><refentrytitle>rctl</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> to learn about them."
 msgstr ""
+"Çeşitli <literal>subjects</literal> üzerinde fazladan kontrol için "
+"kullanılabilecek birçok kaynak bulunmaktadır. Bunun hakkında daha fazla "
+"bilgi edinmek için <citerefentry><refentrytitle>rctl</refentrytitle><manvolnu"
+"m>8</manvolnum></citerefentry>'e bakın."
 
 #. (itstool) path: info/title
 #: book.translate.xml:27764
+#, fuzzy
 msgid "Shared Administration with Sudo"
-msgstr ""
+msgstr "Sudo’yla Paylaşılan Yönetim"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:27772
+#, fuzzy
 msgid "<primary>Security</primary> <secondary>Sudo</secondary>"
-msgstr ""
+msgstr "<primary>Güvenlik</primary> <secondary>Sudo</secondary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27777
+#, fuzzy
 msgid ""
 "System administrators often need the ability to grant enhanced permissions "
 "to users so they may perform privileged tasks. The idea that team members "
@@ -38406,9 +38454,19 @@ msgid ""
 "superuser access. Thankfully, there is no reason to provide such access to "
 "end users because tools exist to manage this exact requirement."
 msgstr ""
+"Sistem yöneticileri, ayrıcalıklı görevleri yerine getirebilmek için "
+"kullanıcılara gelişmiş izinler vermeye ihtiyaç duyar. Takım üyelerine, "
+"belirli görevlerini yerine getirmesi için bir FreeBSD sistemine erişim "
+"sağlanması fikri, her yöneticiye özgü sorunları da beraberinde getirir. Bu "
+"takım üyelerinin yalnızca normal son kullanıcı düzeylerinin ötesinde bir "
+"erişim alt kümesine ihtiyaçları vardır; ancak, neredeyse her zaman yönetime, "
+"ana yönetici erişimi olmadan görevlerini yerine getiremediklerini söylerler. "
+"Neyse ki, son kullanıcılara böyle bir erişim vermek için hiçbir sebep yoktur "
+"çünkü bu ihtiyacı karşılayacak araçlar mevcuttur."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27788
+#, fuzzy
 msgid ""
 "Up to this point, the security chapter has covered permitting access to "
 "authorized users and attempting to prevent unauthorized access. Another "
@@ -38422,9 +38480,21 @@ msgid ""
 "was required. The most used application is currently <application>Sudo</"
 "application>."
 msgstr ""
+"Bu noktaya kadar, güvenlik bölümü yetkili kullanıcılara erişim izni vermeyi "
+"ve yetkisiz erişimi önlemeye çalışmayı kapsamaktaydı. Yetkili kullanıcılar "
+"sistem kaynaklarına eriştikten sonra başka bir sorun su yüzüne çıkar. Bazı "
+"durumlarda, bazı kullanıcıların uygulama başlatma komut bloklarına erişmesi "
+"gerekebilir veya bir yönetici ekibinin sistemi koruma altına alması gerekir. "
+"Alışılageldiği üzere standart kullanıcılar ve gruplar, dosya izinleri, hatta "
+"<citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></cite"
+"refentry> komutu, bu erişimi yönetebilir. Uygulamalar daha fazla erişim "
+"istediğinden, sistem kaynaklarını kullanmak için daha fazla kullanıcı "
+"gereksinimi duyulur ve bunun için daha iyi bir çözüm gerekir. Şu anda en çok "
+"kullanılan uygulama <application>Sudo</application>'dur."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27800
+#, fuzzy
 msgid ""
 "<application>Sudo</application> allows administrators to configure more "
 "rigid access to system commands and provide for some advanced logging "
@@ -38434,24 +38504,38 @@ msgid ""
 "citerefentry> utility. To use the <citerefentry><refentrytitle>pkg</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> tool:"
 msgstr ""
+"<application>Sudo</application>, yöneticilerin sistem komutlarına daha sabit "
+"erişimi yapılandırmalarına ve bazı ileri düzey günlük kayıt özelliklerini "
+"kullanmalarına olanak sağlar. Bir araç olarak, Ports Collection'dan <package "
+"role=\"port\">security/sudo</package> veya <citerefentry><refentrytitle>pkg</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> gibi yardımcı program "
+"kullanılarak edinilebilir. <citerefentry><refentrytitle>pkg</refentrytitle><m"
+"anvolnum>8</manvolnum></citerefentry> aracının kullanımı:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:27807
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install sudo</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg install sudo</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27809
+#, fuzzy
 msgid ""
 "After the installation is complete, the installed <command>visudo</command> "
 "will open the configuration file with a text editor. Using <command>visudo</"
 "command> is highly recommended as it comes with a built in syntax checker to "
 "verify there are no errors before the file is saved."
 msgstr ""
+"Yükleme tamamlandıktan sonra, yüklenen <command>visudo</command>, "
+"yapılandırma dosyasını bir metin düzenleyicisi aracılığıyla açacaktır. Dosya "
+"kaydedilmeden önce yerleşik bir söz-dizimi denetleyicisi yardımıyla hataya "
+"yer verilmediğini doğrulamak için <command>visudo</command> kullanılması "
+"önemle tavsiye edilir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27815
+#, fuzzy
 msgid ""
 "The configuration file is made up of several small sections which allow for "
 "extensive configuration. In the following example, web application "
@@ -38460,28 +38544,40 @@ msgid ""
 "permission to perform these tasks, add this line to the end of <filename>/"
 "usr/local/etc/sudoers</filename>:"
 msgstr ""
+"Yapılandırma dosyası, kapsamlı konfigürasyona izin veren birkaç küçük "
+"bölümden oluşur. Aşağıdaki örnekte, web uygulayıcısının user1'i, "
+"<replaceable>webservice</replaceable> olarak bilinen web uygulamasını "
+"başlatması, durdurması ve yeniden başlatılması gerekir. Kullanıcıya bu "
+"görevleri gerçekleştirme izni vermek için bu satırı <filename>/usr/local/etc/"
+"sudoers</filename>'un sonuna ekleyin:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:27824
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "user1   ALL=(ALL)       /usr/sbin/service webservice *"
-msgstr ""
+msgstr "user1   ALL=(ALL)       /usr/sbin/service webservice *"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27826
+#, fuzzy
 msgid ""
 "The user may now start <replaceable>webservice</replaceable> using this "
 "command:"
 msgstr ""
+"Kullanıcı şu komutu kullanarak <replaceable>webservice</replaceable>'i "
+"başlatabilir:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:27829
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>sudo /usr/sbin/service <replaceable>webservice</replaceable> start</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>sudo /usr/sbin/service "
+"<replaceable>webservice</replaceable> start</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27831
+#, fuzzy
 msgid ""
 "While this configuration allows a single user access to the "
 "<application>webservice</application> service; however, in most "
@@ -38490,50 +38586,72 @@ msgid ""
 "will create a web group, add a user to this group, and allow all members of "
 "the group to manage the service:"
 msgstr ""
+"Bu yapılandırma, tek bir kullanıcının <application>web hizmeti</application> "
+"hizmetine erişmesine izin verirken; ancak, çoğu kuruluş içerisinde de, bu "
+"hizmeti yönetmekten sorumlu bir web ekibi mevcuttur. Tek bir satır "
+"içerisinde tüm gruba erişim sağlanabilir. Bu adımlar bir web grubu "
+"oluşturmaktadır, bu gruba bir kullanıcı ekler ve grubun tüm üyelerinin bu "
+"hizmeti yönetmesine izin verir:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:27839
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pw groupadd -g 6001 -n webteam</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>pw groupadd -g 6001 -n webteam</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27841
+#, fuzzy
 msgid ""
 "Using the same <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> command, the user is added to the webteam group:"
 msgstr ""
+"Aynı <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum><"
+"/citerefentry> komutunu kullanarak, kullanıcı webteam grubuna eklenir:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:27844
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pw groupmod -m user1 -n webteam</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>pw groupmod -m user1 -n webteam</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27846
+#, fuzzy
 msgid ""
 "Finally, this line in <filename>/usr/local/etc/sudoers</filename> allows any "
 "member of the webteam group to manage <replaceable>webservice</replaceable>:"
 msgstr ""
+"Son olarak, <filename>/usr/local/etc/sudoers</filename> içinde yer alan bu "
+"satır, webteam grubunun herhangi bir üyesinin "
+"<replaceable>webservice</replaceable>'i yönetmesine izin verir:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:27851
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "%webteam   ALL=(ALL)       /usr/sbin/service webservice *"
-msgstr ""
+msgstr "%webteam   ALL=(ALL)       /usr/sbin/service webservice *"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27853
+#, fuzzy
 msgid ""
 "Unlike <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>, <application>Sudo</application> only requires the "
 "end user password. This adds an advantage where users will not need shared "
 "passwords, a finding in most security audits and just bad all the way around."
 msgstr ""
+"<citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></cite"
+"refentry>'in aksine, <application>Sudo</application> sadece son kullanıcı "
+"şifresine ihtiyaç duyar. Bu işlev, kullanıcıların şifre paylaşımına ihtiyaç "
+"duymadıkları zamanda, en çok güvenlik denetiminde bulunan ve sadece "
+"etrafındaki tüm kötü yazılımlara karşı avantajlı bir durum oluşturur."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27858
+#, fuzzy
 msgid ""
 "Users permitted to run applications with <application>Sudo</application> "
 "only enter their own passwords. This is more secure and gives better control "
@@ -38542,9 +38660,17 @@ msgid ""
 "systemitem> password is entered and the user acquires all <systemitem class="
 "\"username\">root</systemitem> permissions."
 msgstr ""
+"<application>Sudo</application> ile uygulama çalıştırmasına izin verilen "
+"kullanıcılar sadece kendi şifrelerini girebilirler. Bu daha güvenli "
+"olduğundan, <systemitem class=\"username\">root</systemitem> parolasının "
+"girilmiş olduğundan ve kullanıcının tüm <systemitem class=\"username\""
+">root</systemitem> izinlerine sahip olan bu <citerefentry><refentrytitle>su</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>'den daha iyi denetim "
+"sağladığından tercih edilmelidir."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:27867
+#, fuzzy
 msgid ""
 "Most organizations are moving or have moved toward a two factor "
 "authentication model. In these cases, the user may not have a password to "
@@ -38553,20 +38679,28 @@ msgid ""
 "will allow all members of the <replaceable>webteam</replaceable> group to "
 "manage the service without the password requirement:"
 msgstr ""
+"Çoğu kuruluş iki faktörlü kimlik doğrulama modeline geçmektedir. Bu gibi "
+"durumlarda kullanıcının gireceği bir parola olmayabilir. "
+"<application>Sudo</application>'nun <literal>NOPASSWD</literal> değişkeni "
+"bunu sağlamaktadır. Yukarıdaki yapılandırmaya eklenmesi, "
+"<replaceable>webteam</replaceable> grubunun tüm üyeleri hizmetin şifresine "
+"sahip olmadan hizmeti yönetebilir:"
 
 #. (itstool) path: tip/programlisting
 #: book.translate.xml:27875
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "%webteam   ALL=(ALL)       NOPASSWD: /usr/sbin/service webservice *"
-msgstr ""
+msgstr "%webteam   ALL=(ALL)       NOPASSWD: /usr/sbin/service webservice *"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:27879
+#, fuzzy
 msgid "Logging Output"
-msgstr ""
+msgstr "Kayıt Çıkışı"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27881
+#, fuzzy
 msgid ""
 "An advantage to implementing <application>Sudo</application> is the ability "
 "to enable session logging. Using the built in log mechanisms and the "
@@ -38577,15 +38711,25 @@ msgid ""
 "exist, consult the manual page for <application>sudoreplay</application> for "
 "additional information."
 msgstr ""
+"<application>Sudo</application> uygulamasının bir avantajı oturum günlüğünü "
+"etkinleştirebilmesidir. Dahili günlük kayıt mekanizmalarını ve dahil edilen, "
+"<application>sudoreplay</application> komutunu kullanarak, "
+"<application>Sudo</application> aracılığıyla başlatılan tüm komutlar daha "
+"sonra doğrulanmak üzere günlüğe kaydedilir. Bu özelliği etkinleştirmek için "
+"varsayılan bir günlük dizin girişi ekleyin. Bu örnekte bir kullanıcı "
+"değişkeni kullanılmaktadır. Diğer birkaç günlük dosya adı kuralı vardır, ek "
+"bilgi için <application>sudoreplay</application> ile ilgili el kitabına "
+"bakın."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:27893
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Defaults iolog_dir=/var/log/sudo-io/%{user}"
-msgstr ""
+msgstr "Varsayılanlar iolog_dir=/var/log/sudo-io/%{user}"
 
 #. (itstool) path: tip/para
 #: book.translate.xml:27896
+#, fuzzy
 msgid ""
 "This directory will be created automatically after the logging is "
 "configured. It is best to let the system create directory with default "
@@ -38594,52 +38738,77 @@ msgid ""
 "change this behavior, read and uncomment the logging options inside "
 "<filename>sudoers</filename>."
 msgstr ""
+"Günlüğe kaydetme yapılandırılma aşamasından sonra, bu dizin otomatik olarak "
+"oluşturulur. Sistemin güvenli olması için varsayılan izinlerin dizin "
+"oluşturmasına izin vermek en iyisidir. Buna ek olarak, bu giriş aynı zamanda "
+"<application>sudoreplay</application> komutunu kullanan yöneticileri kayıt "
+"altına alacaktır. Bu özelliği değiştirmek için, <filename>sudoers</filename> "
+"içindeki günlüğün kaydetme seçeneklerini okuyun ve açıklamasını kaldırın."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27905
+#, fuzzy
 msgid ""
 "Once this directive has been added to the <filename>sudoers</filename> file, "
 "any user configuration can be updated with the request to log access. In the "
 "example shown, the updated <replaceable>webteam</replaceable> entry would "
 "have the following additional changes:"
 msgstr ""
+"Bu yönerge, <filename>sudoers</filename> dosyasına eklendikten sonra, "
+"herhangi bir kullanıcı yapılandırmasında günlük erişim isteği "
+"güncellenebilir. Gösterilen örnekte, güncellenen "
+"<replaceable>webteam</replaceable> girdisine aşağıdaki ek değişikler "
+"uygulanacaktır:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:27911
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "%webteam ALL=(ALL) NOPASSWD: LOG_INPUT: LOG_OUTPUT: /usr/sbin/service webservice *"
 msgstr ""
+"%webteam ALL=(ALL) NOPASSWD: LOG_INPUT: LOG_OUTPUT: /usr/sbin/service "
+"webservice *"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27913
+#, fuzzy
 msgid ""
 "From this point on, all <replaceable>webteam</replaceable> members altering "
 "the status of the <replaceable>webservice</replaceable> application will be "
 "logged. The list of previous and current sessions can be displayed with:"
 msgstr ""
+"Bu aşamadan sonra, web hizmeti uygulamasının durumunu değiştiren tüm "
+"<replaceable>webteam</replaceable> üyelerinin durumu "
+"<replaceable>webservice</replaceable> günlüğüne kaydedilir. Önceki ve "
+"geçerli oturumların listesi aşağıdakilerle görüntülenebilir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:27919
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>sudoreplay -l</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>sudoreplay -l</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27921
+#, fuzzy
 msgid ""
 "In the output, to replay a specific session, search for the <literal>TSID=</"
 "literal> entry, and pass that to <application>sudoreplay</application> with "
 "no other options to replay the session at normal speed. For example:"
 msgstr ""
+"Çıktı içerisinde, belirli bir oturumu yeniden başlatmak için "
+"<literal>TSID=</literal> girdisini arayın ve oturumu normal hızda yeniden "
+"başlatmak için başka seçenek olmayacak şekilde "
+"<application>sudoreplay</application>'e yazın. Örneğin:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:27926
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>sudoreplay user1/00/00/02</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>sudoreplay user1/00/00/02</userinput>"
 
 #. (itstool) path: warning/para
 #: book.translate.xml:27929
+#, fuzzy
 msgid ""
 "While sessions are logged, any administrator is able to remove sessions and "
 "leave only a question of why they had done so. It is worthwhile to add a "
@@ -38647,13 +38816,21 @@ msgid ""
 "or similar software so that other administrators are alerted to manual "
 "alterations."
 msgstr ""
+"Oturumlar günlüğe kaydedilirken, herhangi bir yönetici oturumları silebilir "
+"ve yalnızca bunu neden yaptığını sorma imkanı sunulur. İzinsiz Giriş "
+"Algılama Sistemi (<acronym>IDS</acronym>) veya benzeri yazılımla günlük "
+"kontrol eklemesi yapmak faydalıdır, böylece diğer yöneticiler kullanıcı "
+"tarafından yapılan değişikliklere karşı uyarılır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27937
+#, fuzzy
 msgid ""
 "The <command>sudoreplay</command> is extremely extendable. Consult the "
 "documentation for more information."
 msgstr ""
+"<command>sudoreplay</command>, oldukça geniş ve uzatılabilir bir konudur. "
+"Daha fazla bilgi için belgelere bakın."
 
 #. (itstool) path: info/title
 #: book.translate.xml:27951
