@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-18 15:02-0300\n"
-"PO-Revision-Date: 2020-05-26 03:51+0000\n"
+"PO-Revision-Date: 2020-05-26 17:13+0000\n"
 "Last-Translator: mltmngz <meltem_nigiz@hotmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
@@ -35353,10 +35353,11 @@ msgstr "<primary>OpenSSH</primary>"
 #: book.translate.xml:26275
 #, fuzzy
 msgid "<primary>security</primary> <secondary>OpenSSH</secondary>"
-msgstr "<primary>günenlik</primary> <secondary>OpenSSH</secondary>"
+msgstr "<primary>güvenlik</primary> <secondary>OpenSSH</secondary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:26280
+#, fuzzy
 msgid ""
 "<application>OpenSSH</application> is a set of network connectivity tools "
 "used to provide secure access to remote machines. Additionally, <acronym>TCP/"
@@ -35365,17 +35366,29 @@ msgid ""
 "encrypts all traffic to effectively eliminate eavesdropping, connection "
 "hijacking, and other network-level attacks."
 msgstr ""
+"<application>OpenSSH</application>, uzaktaki cihazlara güvenli erişimin "
+"sağlanması adına kullanılan bir dizi ağ bağlantı aracıdır. Buna ek olarak, "
+"<acronym>TCP/IP</acronym> bağlantıları, <acronym>SSH</acronym> bağlantıları "
+"kanalıyla güvenle tünellenebilir ya da karşı tarafa aktarılabilir. "
+"<application>OpenSSH</application>, ele geçirilmiş bağlantıları, ağ "
+"düzeyindeki diğer saldırıları ve gizli dinlemeleri etkili bir şekilde "
+"ortadan kaldırarak, tüm akışı şifrelemektedir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:26289
+#, fuzzy
 msgid ""
 "<application>OpenSSH</application> is maintained by the OpenBSD project and "
 "is installed by default in FreeBSD. It is compatible with both <acronym>SSH</"
 "acronym> version 1 and 2 protocols."
 msgstr ""
+"<application>OpenSSH</application>, OpenBSD projesi tarafından korunur ve "
+"varsayılan olarak FreeBSD içine kurulur. Her iki <acronym>SSH</acronym> "
+"sürümünün 1. ve 2. protokolleri ile uyumludur."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:26294
+#, fuzzy
 msgid ""
 "When data is sent over the network in an unencrypted form, network sniffers "
 "anywhere in between the client and server can steal user/password "
@@ -35385,9 +35398,18 @@ msgid ""
 "application> is available from <link xlink:href=\"http://www.openssh.com/"
 "\">http://www.openssh.com/</link>."
 msgstr ""
+"Veri, şifrelenmemiş şekilde ağ üzerinden gönderildiği zaman, ağ yoklayıcısı "
+"neresi olursa olsun istemci ve sunucu arasındaki kullanıcı şifresi bilgisini "
+"veya oturum sırasında aktarılmakta olan verileri çalabilir. "
+"<application>OpenSSH</application>, çeşitli kimlik denetimi doğrulaması ve "
+"şifreleme yöntemleri aracılığıyla bu sıkıntının önlenmesi adına çeşitli "
+"yöntemleri sunar.<link xlink:href=\"http://www.openssh.com/\"</link> "
+"adresinden, <application>OpenSSH</application> hakkında daha fazla bilgiyi "
+"bulabilirsiniz."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:26302
+#, fuzzy
 msgid ""
 "This section provides an overview of the built-in client utilities to "
 "securely access other systems and securely transfer files from a FreeBSD "
@@ -35395,19 +35417,27 @@ msgid ""
 "on a FreeBSD system. More information is available in the man pages "
 "mentioned in this chapter."
 msgstr ""
+"Bu bölüm FreeBSD sisteminden güvenli dosya akışı ve yerleşik istemci, "
+"yardımcı programlar aracılığıyla güvenle diğer sistemlere erişilmesine genel "
+"bir bakış açısı sunmaktadır. Bu sonrasında FreeBSD sistemi üzerinde "
+"<acronym>SSH</acronym> sunucusunun nasıl yapılandırılacağını açıklar. Bu "
+"bölümde bahsedilen birçok bilgi kılavuz sayfalarında bulunmaktadır."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:26310
+#, fuzzy
 msgid "Using the SSH Client Utilities"
-msgstr ""
+msgstr "SSH İstemci Hizmet Programları Kullanımı"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:26312
+#, fuzzy
 msgid "<primary>OpenSSH</primary> <secondary>client</secondary>"
-msgstr ""
+msgstr "<primary>OpenSSH</primary> <secondary>istemci</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26317
+#, fuzzy
 msgid ""
 "To log into a <acronym>SSH</acronym> server, use <command>ssh</command> and "
 "specify a username that exists on that server and the <acronym>IP</acronym> "
@@ -35415,10 +35445,15 @@ msgid ""
 "has been made to the specified server, the user will be prompted to first "
 "verify the server's fingerprint:"
 msgstr ""
+"<acronym>SSH</acronym> sunucu girişinde, <command>ssh</command> ve söz "
+"konusu sunucu üzerinde bulunan kullanıcı adını ve sunucunun <acronym> IP "
+"</acronym> adresini ya da ana bilgisayar adını belirtin. söz konusu sunucuya "
+"ilk defa bağlantı kuruluyorsa, kullanıcının öncelikle sunucu üzerindeki "
+"parmak izini doğrulaması istenecektir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:26324
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>ssh <replaceable>user@example.com</replaceable></userinput>\n"
 "The authenticity of host 'example.com (10.0.0.1)' can't be established.\n"
@@ -35427,9 +35462,21 @@ msgid ""
 "Permanently added 'example.com' (ECDSA) to the list of known hosts.\n"
 "Password for user@example.com: <userinput><replaceable>user_password</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>ssh "
+"<replaceable>user@example.com</replaceable></userinput>\n"
+"'example.com (10.0.0.1)' sunucusunun doğruluğu saptanamıyor.\n"
+"ECDSA anahtar parmak izi 25:cc:73:b5:b3:96:75:3d:56:19:49:d2:5c:1f:91:3b "
+"'dir.\n"
+"Bağlantı kurmaya devam etmek istediğinize emin misiniz (yes/no) ? yes\n"
+"<userinput>yes</userinput>\n"
+"Kalıcı olarak 'example.com' (ECDSA) bilinen sunucuların listesine "
+"eklenmiştir.\n"
+"user@example.com için şifre: "
+"<userinput><replaceable>user_password</replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26331
+#, fuzzy
 msgid ""
 "<acronym>SSH</acronym> utilizes a key fingerprint system to verify the "
 "authenticity of the server when the client connects. When the user accepts "
@@ -35441,9 +35488,19 @@ msgid ""
 "user should first verify why the key has changed before continuing with the "
 "connection."
 msgstr ""
+"<acronym>SSH</acronym>, istemci bağlantı kurduğunda sunucunun doğruluğunu "
+"onaylamak için parmak izi sistem anahtarı kullanır. Kullanıcı ilk defa "
+"bağlandığı sırada <literal>yes</literal> yazarak parmak izi anahtarını kabul "
+"ettiği vakit, anahtarın bir kopyası kullanıcının <filename>ssh/"
+"known_hosts</filename> ana dizinine kaydedilir. İleri ki tarihli oturum açma "
+"işlemlerinde kaydedilen anahtara göre doğrulanır ve <command>ssh</command> "
+"sunucusunun anahtarı kaydedilen anahtarla eşleşmediği takdirde de bir uyarı "
+"görüntüler. Bu durum yaşanırsa, kullanıcı bağlantı işlemine devam etmeden "
+"önce anahtarın neden değiştiğini doğrulamalıdır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26343
+#, fuzzy
 msgid ""
 "By default, recent versions of <application>OpenSSH</application> only "
 "accept <acronym>SSH</acronym>v2 connections. By default, the client will use "
@@ -35453,21 +35510,33 @@ msgid ""
 "options are described in <citerefentry><refentrytitle>ssh</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 msgstr ""
+"Varsayılan olarak, <application>OpenSSH</application>'nin son sürümleri "
+"sadece <acronym>SSH</acronym>v2 bağlantılarını kabul eder. Varsayılan "
+"olarak, mümkünse 2.sürümü kullanır ve 2.sürümü sunucu desteklemediği "
+"takdirde eskide kalan 1.sürümü kullanır. <command>ssh</command>'i zorlamak "
+"için yalnızca belirtilen protokolü kullanarak <option>-1</option> veya "
+"<option>-2'yi ekleyin. Ek seçenekler <citerefentry><refentrytitle>ssh</refent"
+"rytitle><manvolnum>1</manvolnum></citerefentry>'de tanımlanmıştır."
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:26352
+#, fuzzy
 msgid "<primary>OpenSSH</primary> <secondary>secure copy</secondary>"
-msgstr ""
+msgstr "<primary>OpenSSH</primary> <secondary>güvenlik kopyası</secondary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:26356
+#, fuzzy
 msgid ""
 "<primary><citerefentry><refentrytitle>scp</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry></primary>"
 msgstr ""
+"<primary><citerefentry><refentrytitle>scp</refentrytitle><manvolnum>1</manvol"
+"num></citerefentry></primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26360
+#, fuzzy
 msgid ""
 "Use <citerefentry><refentrytitle>scp</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> to securely copy a file to or from a remote "
@@ -35475,10 +35544,15 @@ msgid ""
 "system to a file of the same name in the current directory of the local "
 "system:"
 msgstr ""
+"<citerefentry><refentrytitle>scp</refentrytitle><manvolnum>1</manvolnum></cit"
+"erefentry>'i, uzaktaki bir cihazdan veya bir dosyayı güvenle kopyalamada "
+"kullanın. Bu örnek, uzaktan kontrol sistemindeki "
+"<filename>COPYRIGHT</filename>'ı yerel sistemin geçerli dizininde yer alan "
+"aynı adlı bir dosyayı kopyalar:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:26366
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>scp <replaceable>user@example.com:/COPYRIGHT COPYRIGHT</replaceable></userinput>\n"
 "Password for user@example.com: <userinput><replaceable>*******</replaceable></userinput>\n"
@@ -35486,16 +35560,27 @@ msgid ""
 "00:00\n"
 "<prompt>#</prompt>"
 msgstr ""
+"<prompt>#</prompt> <userinput>scp <replaceable>user@example.com:/COPYRIGHT "
+"COPYRIGHT</replaceable></userinput>\n"
+"user@example.com için şifre: "
+"<userinput><replaceable>*******</replaceable></userinput>\n"
+"COPYRIGHT            100% |*****************************|  4735\n"
+"00:00\n"
+"<prompt>#</prompt>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26372
+#, fuzzy
 msgid ""
 "Since the fingerprint was already verified for this host, the server's key "
 "is automatically checked before prompting for the user's password."
 msgstr ""
+"Bu sunucuda halihazırda parmak izi doğrulandığından, kullanıcı şifresini "
+"girmeden önce ana bilgisayar, anahtarı otomatik olarak kontrol eder."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26376
+#, fuzzy
 msgid ""
 "The arguments passed to <command>scp</command> are similar to <command>cp</"
 "command>. The file or files to copy is the first argument and the "
@@ -35505,23 +35590,37 @@ msgid ""
 "recursively that <command>scp</command> uses <option>-r</option>, whereas "
 "<command>cp</command> uses <option>-R</option>."
 msgstr ""
+"<command>scp</command>'ye gönderilen parametreler <command>cp</command>'ye "
+"benzer. Kopya veya kopyalanacak dosyalar ilk parametredir ve kopyalanacak "
+"hedef de ikincisidir. Dosya ağ üzerinden alındığından dolayı, parametreler "
+"dosyası <option>user@host:&lt;<path_to_remote_file>&gt;</option> biçimini "
+"alır. Dizileri kopyalarken <command>scp</command>'nin <option>-r</option>, "
+"<command>cp</command>'ninde <option>-R</option> olarak kullanıldığını "
+"unutmayın."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26386
+#, fuzzy
 msgid ""
 "To open an interactive session for copying files, use <command>sftp</"
 "command>. Refer to <citerefentry><refentrytitle>sftp</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> for a list of "
 "available commands while in an <command>sftp</command> session."
 msgstr ""
+"Dosyaları kopyalamak için etkileşimli bir oturum açma işleminde "
+"<command>sftp</command> kullanın. <command>sftp</command> oturumdayken, "
+"bahsedilen <citerefentry><refentrytitle>sftp</refentrytitle><manvolnum>1</man"
+"volnum></citerefentry> için kullanılabilecek komut listesine bakın."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:26392
+#, fuzzy
 msgid "Key-based Authentication"
-msgstr ""
+msgstr "Anahtar Tabanlı Kimlik Doğrulaması"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:26394
+#, fuzzy
 msgid ""
 "Instead of using passwords, a client can be configured to connect to the "
 "remote machine using keys. To generate <acronym>RSA</acronym> authentication "
@@ -35529,10 +35628,16 @@ msgid ""
 "key pair, specify the type of key and follow the prompts. It is recommended "
 "to protect the keys with a memorable, but hard to guess passphrase."
 msgstr ""
+"Parola kullanmak yerine, bir istemci anahtarlar kullanarak uzak cihaza "
+"bağlanacak bir şekilde yapılandırılabilir. <acronym>RSA</acronym> Kimlik "
+"doğrulama anahtarları oluşturmak için <command>ssh-keygen</command> "
+"kullanın. Açık ve özel anahtar çifti oluşturmak için, anahtarın türünü "
+"belirtin ve komut istemlerini takip edin. Anahtarların hatırlanabilir ancak "
+"tahmin edilmesi zor bir parola ile korunması önerilir."
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:26403
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>ssh-keygen -t rsa</userinput>\n"
 "Generating public/private rsa key pair.\n"
@@ -35556,19 +35661,45 @@ msgid ""
 "|       =OE**.o..=|\n"
 "+----[SHA256]-----+"
 msgstr ""
+"<prompt>%</prompt> <userinput>ssh-keygen -t rsa</userinput>\n"
+"Genel/özel rsa anahtar çifti oluşturuluyor.\n"
+"Anahtarın kaydedileceği dosyayı girin (/home/user/.ssh/id_rsa):\n"
+"Parolayı girin (olmayan parola için boş duruyor): \n"
+"<co xml:id=\"co-ssh-keygen-passphrase1\"/>\n"
+"Aynı parolayı tekrar girin: \n"
+"<co xml:id=\"co-ssh-keygen-passphrase2\"/>\n"
+"Kimliğiniz /home/user/.ssh/id_rsa içine kaydedildi.\n"
+"Açık anahtarınız /home/user/.ssh/id_rsa.pub içine kaydedildi.\n"
+"Anahtarın parmak izi:\n"
+"SHA256:54Xm9Uvtv6H4NOo6yjP/YCfODryvUU7yWHzMqeXwhq8 user@host.example.com\n"
+"Anahtarın rastgele resmi:\n"
+"+---[RSA 2048]----+\n"
+"|                 |\n"
+"|                 |\n"
+"|                 |\n"
+"|        . o..    |\n"
+"|       .S*+*o    |\n"
+"|      . O=Oo . . |\n"
+"|       = Oo= oo..|\n"
+"|      .oB.* +.oo.|\n"
+"|       =OE**.o..=|\n"
+"+----[SHA256]-----+"
 
 #. (itstool) path: callout/para
 #: book.translate.xml:26427
+#, fuzzy
 msgid "Type a passphrase here. It can contain spaces and symbols."
-msgstr ""
+msgstr "Buraya parola dizini yazın. Boşluk ve sembol içerebilir."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:26432
+#, fuzzy
 msgid "Retype the passphrase to verify it."
-msgstr ""
+msgstr "Bunu doğrulamak için parola dizinini yeniden yazın."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:26437
+#, fuzzy
 msgid ""
 "The private key is stored in <filename>~/.ssh/id_rsa</filename> and the "
 "public key is stored in <filename>~/.ssh/id_rsa.pub</filename>. The "
@@ -35576,9 +35707,15 @@ msgid ""
 "authorized_keys</filename> on the remote machine for key-based "
 "authentication to work."
 msgstr ""
+"Özel anahtar <filename>~/.ssh/id_rsa</filename>, içinde genel anahtar da "
+"<filename>~/.ssh/id_rsa.pub</filename> şeklinde saklanır. Uzaktan kontrol "
+"edilen cihazda yer alan anahtar tabanlı kimlik doğrulamasının çalışması için "
+"<emphasis>Açık</emphasis> anahtar <filename>~/.ssh/authorized_keys</filename>"
+" olarak kopyalanmalıdır."
 
 #. (itstool) path: warning/para
 #: book.translate.xml:26448
+#, fuzzy
 msgid ""
 "Many users believe that keys are secure by design and will use a key without "
 "a passphrase. This is <emphasis>dangerous</emphasis> behavior. An "
@@ -35590,17 +35727,35 @@ msgid ""
 "literal> in front of the <literal>ssh-rsa</literal> prefix will only allow "
 "that specific user to log in from that <acronym>IP</acronym> address."
 msgstr ""
+"Kullanıcıların birçoğu anahtarların tasarımlara göre güvenle korunduklarına "
+"ve parola içermeyen bir anahtar kullanacaklarına inanır. Bu "
+"<emphasis>tehlikeli</emphasis> bir davranıştır. Yönetici, bir anahtar "
+"çiftinin özel anahtarı manuel olarak görüntüleyerek parola aracılığıyla "
+"korunduğuna inanır. Özel anahtar dosyası <literal>ENCRYPTED</literal> "
+"kelimesini içeriyorsa, anahtar sahibi parola kullanıyor anlamın gelir. Buna "
+"ek olarak, kullanıcıların ve daha iyi bir güvenliğin oluşturulması için, "
+"genel anahtar dosyasına <literal>from</literal> yerleştirilebilir. Örneğin, "
+"<literal>ssh-rsa</literal> öncekinin önüne from=\"192.168.10.5\" eklemek, "
+"sadece belirli kullanıcının <acronym>IP</acronym> adresinde oturum açmasına "
+"izin verir."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:26464
+#, fuzzy
 msgid ""
 "The options and files vary with different versions of <application>OpenSSH</"
 "application>. To avoid problems, consult <citerefentry><refentrytitle>ssh-"
 "keygen</refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 msgstr ""
+"Seçenekler ve dosyalar <application>OpenSSH</application>'in farklı "
+"sürümlerine göre değişir. Sorunlardan kaçınmak adına "
+"<citerefentry><refentrytitle>ssh-"
+"keygen</refentrytitle><manvolnum>1</manvolnum></citerefentry>'e müracaat "
+"edin."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:26468
+#, fuzzy
 msgid ""
 "If a passphrase is used, the user is prompted for the passphrase each time a "
 "connection is made to the server. To load <acronym>SSH</acronym> keys into "
@@ -35609,17 +35764,30 @@ msgid ""
 "manvolnum></citerefentry> and <citerefentry><refentrytitle>ssh-add</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 msgstr ""
+"Parola kullanıldıysa, kullanıcı sunucuya her bağlanışında parola girmesi "
+"istenir. <acronym>SSH</acronym> anahtarının belleğe yüklenmesi ve her "
+"seferinde de parola yazım zorunluluğuyla karşılaşılmasının ortadan "
+"kaldırması için <citerefentry><refentrytitle>ssh-"
+"agent</refentrytitle><manvolnum>1</manvolnum></citerefentry> ve "
+"<citerefentry><refentrytitle>ssh-"
+"add</refentrytitle><manvolnum>1</manvolnum></citerefentry>'i kullanın."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:26474
+#, fuzzy
 msgid ""
 "Authentication is handled by <command>ssh-agent</command>, using the private "
 "keys that are loaded into it. <command>ssh-agent</command> can be used to "
 "launch another application like a shell or a window manager."
 msgstr ""
+"<command>ssh-agent</command> tarafından yürütülen kimlik doğrulama işlemi, "
+"içerisine yüklenen özel anahtarları kullanır. <command>ssh-agent</command> "
+"kabuk veya pencere yöneticisi gibi başka bir uygulama başlatılmasında "
+"kullanılabilir."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:26480
+#, fuzzy
 msgid ""
 "To use <command>ssh-agent</command> in a shell, start it with a shell as an "
 "argument. Add the identity by running <command>ssh-add</command> and "
@@ -35627,10 +35795,15 @@ msgid ""
 "<command>ssh</command> to any host that has the corresponding public key "
 "installed. For example:"
 msgstr ""
+"Kabukta <command>ssh-agent</command> kullanmak için, bağımsız değişken "
+"olarak kabukla başlatın. Kimliği <command>ssh-add</command> dizinini "
+"çalıştırarak ekleyin ve özel anahtar için parola girin. Kullanıcı, daha "
+"sonrasında yüklenmiş ortak anahtar karşılığı olan herhangi bir sunucuya "
+"<command>ssh</command> uygulayabilecek. Örneğin:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:26488
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>ssh-agent <replaceable>csh</replaceable></userinput>\n"
 "<prompt>%</prompt> <userinput>ssh-add</userinput>\n"
@@ -35638,14 +35811,23 @@ msgid ""
 "Identity added: /usr/home/user/.ssh/id_rsa (/usr/home/user/.ssh/id_rsa)\n"
 "<prompt>%</prompt>"
 msgstr ""
+"<prompt>%</prompt> <userinput>ssh-agent "
+"<replaceable>csh</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>ssh-add</userinput>\n"
+"Anahtar '/usr/home/user/.ssh/id_rsa› için parola girin.:  \n"
+"<co xml:id=\"co-ssh-agent-passphrase\"/>\n"
+"Eklenen Kimlik: /usr/home/user/.ssh/id_rsa (/usr/home/user/.ssh/id_rsa)\n"
+"<prompt>%</prompt>"
 
 #. (itstool) path: callout/para
 #: book.translate.xml:26496
+#, fuzzy
 msgid "Enter the passphrase for the key."
-msgstr ""
+msgstr "Anahtar için parola girin."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:26500
+#, fuzzy
 msgid ""
 "To use <command>ssh-agent</command> in <application>Xorg</application>, add "
 "an entry for it in <filename>~/.xinitrc</filename>. This provides the "
@@ -35653,15 +35835,21 @@ msgid ""
 "<application>Xorg</application>. An example <filename>~/.xinitrc</filename> "
 "might look like this:"
 msgstr ""
+"<application>Xorg</application>'da <command>ssh-agent</command> kullanmak "
+"için <filename>~/.xinitrc</filename>'in içerisine girdi ekleyin. Bu, <command"
+">ssh-agent</command> hizmetlerini, <application>Xorg</application>'da "
+"başlatılan bütün programlarda sağlar. Örneğin, "
+"<filename>~/.xinitrc</filename> bunun gibi görünebilir:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:26507
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "exec ssh-agent <replaceable>startxfce4</replaceable>"
-msgstr ""
+msgstr "exec ssh-agent <replaceable>startxfce4</replaceable>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:26509
+#, fuzzy
 msgid ""
 "This launches <command>ssh-agent</command>, which in turn launches "
 "<application>XFCE</application>, every time <application>Xorg</application> "
@@ -35669,97 +35857,132 @@ msgid ""
 "changes can take effect, run <command>ssh-add</command> to load all of the "
 "<acronym>SSH</acronym> keys."
 msgstr ""
+"Bu, <application>Xorg</application> her başladığında, "
+"<application>XFCE</application>'yi başlatan,ssh-agent’i çalıştırır. Bir kez "
+"<application>Xorg</application> başlatıldığında değişikliklerin etkili "
+"olabilmesi için tüm <acronym>SSH</acronym> anahtarlarını yükleyerek <command"
+">ssh-add</command>'yi çalıştırır."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:26518
+#, fuzzy
 msgid "<acronym>SSH</acronym> Tunneling"
-msgstr ""
+msgstr "SSH Tünellemesi"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:26520
+#, fuzzy
 msgid "<primary>OpenSSH</primary> <secondary>tunneling</secondary>"
-msgstr ""
+msgstr "<primary>OpenSSH</primary> <secondary>tünelleme</secondary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:26525
+#, fuzzy
 msgid ""
 "<application>OpenSSH</application> has the ability to create a tunnel to "
 "encapsulate another protocol in an encrypted session."
 msgstr ""
+"<application>OpenSSH</application>, şifreli bir oturumda başka bir protokolü "
+"kapsüllemek için bir tünel oluşturma yetisine sahiptir."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:26529
+#, fuzzy
 msgid ""
 "The following command tells <command>ssh</command> to create a tunnel for "
 "<application>telnet</application>:"
 msgstr ""
+"Aşağıda yer alan komut, <command>ssh</command>'e "
+"<application>telnet</application> için tünel oluşturmasını izah eder:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:26533
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>ssh -2 -N -f -L <replaceable>5023:localhost:23 user@foo.example.com</replaceable></userinput>\n"
 "<prompt>%</prompt>"
 msgstr ""
+"<prompt>%</prompt> <userinput>ssh -2 -N -f -L <replaceable>5023:localhost:23 "
+"user@foo.example.com</replaceable></userinput>\n"
+"<prompt>%</prompt>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:26536
+#, fuzzy
 msgid "This example uses the following options:"
-msgstr ""
+msgstr "Bu örnek aşağıdaki seçenekleri kullanır:"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:26540
+#, fuzzy
 msgid "<option>-2</option>"
-msgstr ""
+msgstr "<option>-2</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:26543
+#, fuzzy
 msgid ""
 "Forces <command>ssh</command> to use version 2 to connect to the server."
 msgstr ""
+"<command>ssh</command>'yi sunucuya bağlanması için 2. sürümü kullanmaya "
+"zorlar."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:26549
+#, fuzzy
 msgid "<option>-N</option>"
-msgstr ""
+msgstr "<option>-N</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:26552
+#, fuzzy
 msgid ""
 "Indicates no command, or tunnel only. If omitted, <command>ssh</command> "
 "initiates a normal session."
 msgstr ""
+"Sadece komuta ya da tünellemenin bulunmadığını belirtir. Unutulursa, "
+"<command>ssh</command> normal oturumu başlatır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:26562
+#, fuzzy
 msgid "Forces <command>ssh</command> to run in the background."
-msgstr ""
+msgstr "<command>ssh</command>'yi arka planda çalıştırmaya zorlar."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:26568
+#, fuzzy
 msgid "<option>-L</option>"
-msgstr ""
+msgstr "<option>-L</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:26571
+#, fuzzy
 msgid ""
 "Indicates a local tunnel in <replaceable>localport:remotehost:remoteport</"
 "replaceable> format."
 msgstr ""
+"Yerel tünellemeyi <replaceable>localport:remotehost:remoteport</replaceable> "
+"biçimde gösterir."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:26578
+#, fuzzy
 msgid "<option>user@foo.example.com</option>"
-msgstr ""
+msgstr "<option>user@foo.example.com</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:26581
+#, fuzzy
 msgid ""
 "The login name to use on the specified remote <acronym>SSH</acronym> server."
 msgstr ""
+"Kullanıcı giriş adı, belirtilen uzaktan kontrollü <acronym>SSH</acronym> "
+"sunucusu üzerinde kullanılır."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:26587
+#, fuzzy
 msgid ""
 "An <acronym>SSH</acronym> tunnel works by creating a listen socket on "
 "<systemitem>localhost</systemitem> on the specified <literal>localport</"
@@ -35772,23 +35995,38 @@ msgid ""
 "<application>telnet</application> session through an <acronym>SSH</acronym> "
 "tunnel."
 msgstr ""
+"<acronym>SSH</acronym> tünellemesi, belirtilen "
+"<systemitem>localport</systemitem> üzerinde <literal>localhost</literal> "
+"üzerinde dinleme yuvası oluşturma tarihine göre çalışır. Bu, daha sonrasında "
+"da, belirtilen <literal>remotehost:remoteport</literal>'ya bağlanarak, "
+"<acronym>SSH</acronym> aracılığıyla <literal>localport</literal> üzerinden "
+"gelen herhangi bir bağlantıyı iletir. Örnekte, istemcideki "
+"<literal>5023</literal> bağlantı noktasının uzaktan kontrolü sağlanan "
+"<literal>23</literal> bağlantısına iletilir. Bağlantı noktası 23 "
+"<application>telnet</application> aracılığıyla kullanıldığından bu yana, bu "
+"işlem <acronym>SSH</acronym> tünelinde şifrelenmiş telnet oturumu oluşturur."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:26599
+#, fuzzy
 msgid ""
 "This method can be used to wrap any number of insecure <acronym>TCP</"
 "acronym> protocols such as <acronym>SMTP</acronym>, <acronym>POP3</acronym>, "
 "and <acronym>FTP</acronym>, as seen in the following examples."
 msgstr ""
+"Aşağıdaki örneklerde gösterildiği üzere, bu yöntem, <acronym>SMTP</acronym>, "
+"<acronym>POP3</acronym> ve <acronym>FTP</acronym> gibi, çok sayıda tehlikeli "
+"<acronym>TCP</acronym> protokollerini sarmak için kullanılabilir."
 
 #. (itstool) path: example/title
 #: book.translate.xml:26606
+#, fuzzy
 msgid "Create a Secure Tunnel for <acronym>SMTP</acronym>"
-msgstr ""
+msgstr "<acronym>SMTP</acronym> için Tünel Oluşturma"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:26609
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>ssh -2 -N -f -L <replaceable>5025:localhost:25 user@mailserver.example.com</replaceable></userinput>\n"
 "user@mailserver.example.com's password: <userinput>*****</userinput>\n"
@@ -35798,23 +36036,38 @@ msgid ""
 "Escape character is '^]'.\n"
 "220 mailserver.example.com ESMTP"
 msgstr ""
+"<prompt>%</prompt> <userinput>ssh -2 -N -f -L <replaceable>5025:localhost:25 "
+"user@mailserver.example.com</replaceable></userinput>\n"
+"user@mailserver.example.com'un şifresi: <userinput>*****</userinput>\n"
+"<prompt>%</prompt> <userinput>telnet localhost 5025</userinput>\n"
+"Deneniyor 127.0.0.1...\n"
+"localhost 'a bağlı.\n"
+"Kod dışı karakteri '^]' 'dir.\n"
+"220 mailserver.example.com ESMTP"
 
 #. (itstool) path: example/para
 #: book.translate.xml:26617
+#, fuzzy
 msgid ""
 "This can be used in conjunction with <command>ssh-keygen</command> and "
 "additional user accounts to create a more seamless <acronym>SSH</acronym> "
 "tunneling environment. Keys can be used in place of typing a password, and "
 "the tunnels can be run as a separate user."
 msgstr ""
+"Bu, daha kusursuz bir <acronym>SSH</acronym> tünel ortamı oluşturulmasına ek "
+"olarak kullanıcı hesapları ve <command>ssh-keygen</command> ile bağlantılı "
+"olarak kullanılabilir. Anahtarlar parola yazma alanında kullanılabilir ve "
+"tüneller ayrı kullanıcı gibi çalıştırılabilir."
 
 #. (itstool) path: example/title
 #: book.translate.xml:26626
+#, fuzzy
 msgid "Secure Access of a <acronym>POP3</acronym> Server"
-msgstr ""
+msgstr "<acronym>POP3</acronym> Sunucusuna Güvenli Erişim"
 
 #. (itstool) path: example/para
 #: book.translate.xml:26629
+#, fuzzy
 msgid ""
 "In this example, there is an <acronym>SSH</acronym> server that accepts "
 "connections from the outside. On the same network resides a mail server "
@@ -35822,154 +36075,223 @@ msgid ""
 "create an <acronym>SSH</acronym> connection to the <acronym>SSH</acronym> "
 "server and tunnel through to the mail server:"
 msgstr ""
+"Bu örnekte, dışarıdan bağlantıları kabul edilen <acronym>SSH</acronym> "
+"sunucusu bulunur. Aynı ağ örgüsünde, <acronym>POP3</acronym> sunucusunu "
+"çalıştıran e-posta sunucusu bulunur. E-postayı güvenli yöntem ile kontrol "
+"edin, <acronym>SSH</acronym> sunucusunda <acronym>SSH</acronym> bağlantısı "
+"oluşturun ve e-posta sunucusuna tünelleme yapın:"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:26637
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>ssh -2 -N -f -L <replaceable>2110:mail.example.com:110 user@ssh-server.example.com</replaceable></userinput>\n"
 "user@ssh-server.example.com's password: <userinput>******</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>ssh -2 -N -f -L "
+"<replaceable>2110:mail.example.com:110 user@ssh-"
+"server.example.com</replaceable></userinput>\n"
+"user@ssh-server.example.com 'un şifresi: <userinput>******</userinput>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:26640
+#, fuzzy
 msgid ""
 "Once the tunnel is up and running, point the email client to send "
 "<acronym>POP3</acronym> requests to <systemitem>localhost</systemitem> on "
 "port 2110. This connection will be forwarded securely across the tunnel to "
 "<systemitem>mail.example.com</systemitem>."
 msgstr ""
+"Tünel açık ve çalışıyorken, e-posta istemcisini işaret ederek, 2110 "
+"bağlantısı üzerinden <systemitem>localhost</systemitem>'a "
+"<acronym>POP3</acronym> isteği gönderin. Bu bağlantı, güvenli bir yöntemle "
+"tünel boyunca <systemitem>mail.example.com</systemitem> iletilecektir."
 
 #. (itstool) path: example/title
 #: book.translate.xml:26648
+#, fuzzy
 msgid "Bypassing a Firewall"
-msgstr ""
+msgstr "Güvenlik Duvarını Atlatma"
 
 #. (itstool) path: example/para
 #: book.translate.xml:26650
+#, fuzzy
 msgid ""
 "Some firewalls filter both incoming and outgoing connections. For example, a "
 "firewall might limit access from remote machines to ports 22 and 80 to only "
 "allow <acronym>SSH</acronym> and web surfing. This prevents access to any "
 "other service which uses a port other than 22 or 80."
 msgstr ""
+"Kimi güvenlik duvarları hem gelen hem de giden bağlantıları filtreler. "
+"Örneğin, güvenlik duvarı yalnızca <acronym>SSH</acronym> ve web aramalarına "
+"izin veren uzaktan kontrollü cihazlardan 22 ve 80 bağlantılarına yapılan "
+"erişimleri sınırlayabilir. Bu 22 ya da 80 bağlantıları haricinde kullanılan "
+"diğer hizmetlere erişimi engeller."
 
 #. (itstool) path: example/para
 #: book.translate.xml:26658
+#, fuzzy
 msgid ""
 "The solution is to create an <acronym>SSH</acronym> connection to a machine "
 "outside of the network's firewall and use it to tunnel to the desired "
 "service:"
 msgstr ""
+"Çözüm, ağın güvenlik duvarının dışındaki cihaza <acronym>SSH</acronym> "
+"bağlantısı kurulmasına ve ihtiyaç duyulan hizmete tünel açmada kullanılır:"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:26662
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>ssh -2 -N -f -L <replaceable>8888:music.example.com:8000 user@unfirewalled-system.example.org</replaceable></userinput>\n"
 "user@unfirewalled-system.example.org's password: <userinput>*******</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>ssh -2 -N -f -L "
+"<replaceable>8888:music.example.com:8000 user@unfirewalled-"
+"system.example.org</replaceable></userinput>\n"
+"user@unfirewalled-system.example.org 'un şifresi: "
+"<userinput>*******</userinput>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:26665
+#, fuzzy
 msgid ""
 "In this example, a streaming Ogg Vorbis client can now be pointed to "
 "<systemitem>localhost</systemitem> port 8888, which will be forwarded over "
 "to <systemitem>music.example.com</systemitem> on port 8000, successfully "
 "bypassing the firewall."
 msgstr ""
+"Bu örnekte, akışı sağlanan Ogg Vorbis istemcisinin artık "
+"<systemitem>localhost</systemitem> bağlantısı olan 8888’e yönlendirip, 8000 "
+"bağlantısı üzerine <systemitem>music.example.com</systemitem> olarak "
+"iletilerek, güvenlik duvarını başarılı bir şekilde aşar."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:26675
+#, fuzzy
 msgid "Enabling the SSH Server"
-msgstr ""
+msgstr "SSH Sunucusunu Etkinleştirme"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:26677
+#, fuzzy
 msgid "<primary>OpenSSH</primary> <secondary>enabling</secondary>"
-msgstr ""
+msgstr "<primary>OpenSSH</primary> <secondary>etkinleştirme</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26682
+#, fuzzy
 msgid ""
 "In addition to providing built-in <acronym>SSH</acronym> client utilities, a "
 "FreeBSD system can be configured as an <acronym>SSH</acronym> server, "
 "accepting connections from other <acronym>SSH</acronym> clients."
 msgstr ""
+"Yerleşik <acronym>SSH</acronym> istemcisi yardımcı birimlere ek olarak, "
+"FreeBSD sistemi <acronym>SSH</acronym> sunucusu gibi yapılandırılabilir, "
+"diğer <acronym>SSH</acronym> istemcilerinden kurulan bağlantıların kabul "
+"edilmesini sağlar."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26687
+#, fuzzy
 msgid ""
 "To see if <application>sshd</application> is operating, use the "
 "<citerefentry><refentrytitle>service</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> command:"
 msgstr ""
+"<application>sshd</application>'nin çalışıp çalışmadığını görmek için, <citer"
+"efentry><refentrytitle>service</refentrytitle><manvolnum>8</manvolnum></citer"
+"efentry> komutunu kullanın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:26690
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>service sshd status</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>service sshd status</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26692
+#, fuzzy
 msgid ""
 "If the service is not running, add the following line to <filename>/etc/rc."
 "conf</filename>."
 msgstr ""
+"Servis düzgün çalışmıyorsa, aşağıdaki satıra <filename>/etc/"
+"rc.conf</filename>'ı ekleyin."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:26695
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "sshd_enable=\"YES\""
-msgstr ""
+msgstr "sshd_enable=\"YES\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26697
+#, fuzzy
 msgid ""
 "This will start <application>sshd</application>, the daemon program for "
 "<application>OpenSSH</application>, the next time the system boots. To start "
 "it now:"
 msgstr ""
+"Bu, bir sonraki sistem önyüklemelerinde, <application>OpenSSH</application> "
+"için arka planda çalışan <application>sshd</application>'yi başlatacaktır. "
+"Bunu şimdi başlatmak için:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:26701
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>service sshd start</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>service sshd start</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26703
+#, fuzzy
 msgid ""
 "The first time <application>sshd</application> starts on a FreeBSD system, "
 "the system's host keys will be automatically created and the fingerprint "
 "will be displayed on the console. Provide users with the fingerprint so that "
 "they can verify it the first time they connect to the server."
 msgstr ""
+"İlk defasında <application>sshd</application>, FreeBSD sistemi üzerinden "
+"başlar, sistemin sunucu anahtarları otomatik olarak oluşturulur ve konsol "
+"üzerinden parmak izi görüntülenecektir. Kullanıcılara parmak izi "
+"doğrulamasıyla, böylece ilk kez sunucuya bağlandıklarında bunu "
+"doğrulayabilecekler."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26709
+#, fuzzy
 msgid ""
 "Refer to <citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> for the list of available options when starting "
 "<application>sshd</application> and a more complete discussion about "
 "authentication, the login process, and the various configuration files."
 msgstr ""
+"Oturum açma işlemi ve çeşitli yapılandırma dosyaları, "
+"<application>sshd</application> ve kimlik doğrulaması hakkında daha kapsamlı "
+"tartışma başlatmak için mevcut seçeneklerin listesi için <citerefentry><refen"
+"trytitle>sshd</refentrytitle><manvolnum>8</manvolnum></citerefentry> linkine "
+"bakınız."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26714
+#, fuzzy
 msgid ""
 "At this point, the <application>sshd</application> should be available to "
 "all users with a username and password on the system."
 msgstr ""
+"Bu durumda, <application>sshd</application> kullanıcı adıyla ve sistem "
+"üzerindeki şifreyle tüm kullanıcılar adına kullanılabilir olmalıdır."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:26720
+#, fuzzy
 msgid "SSH Server Security"
-msgstr ""
+msgstr "SSH Sunucu Güvenliği"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26722
+#, fuzzy
 msgid ""
 "While <application>sshd</application> is the most widely used remote "
 "administration facility for FreeBSD, brute force and drive by attacks are "
@@ -35977,9 +36299,15 @@ msgid ""
 "parameters are available to prevent the success of these attacks and will be "
 "described in this section."
 msgstr ""
+"<application>sshd</application>, FreeBSD'de de en yaygın biçimde kullanılan "
+"uzaktan kontrol yönetim türüdür. Kaba kuvvet, ataklar tarafından "
+"yönlendirilen korunmasız her sisteme ve halka açık ağlarda kullanılan bir "
+"yönetim türüdür. Bu bölümde de açıklanacak birçok ek parametre, bu "
+"saldırıların başarılı olmasını önlemek adına kullanılabilir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26729
+#, fuzzy
 msgid ""
 "It is a good idea to limit which users can log into the <acronym>SSH</"
 "acronym> server and from where using the <literal>AllowUsers</literal> "
@@ -35988,52 +36316,69 @@ msgid ""
 "to log in from <systemitem class=\"ipaddress\">192.168.1.32</systemitem>, "
 "add this line to <filename>/etc/ssh/sshd_config</filename>:"
 msgstr ""
+"Kullanıcıların hangi <acronym>SSH</acronym> sunucusu içerisinde oturum "
+"açabileceklerini ve <application>OpenSSH</application> sunucusu yapılandırma "
+"dosyasında yer alan <literal>AllowUsers</literal> anahtar sözcüğü "
+"kullanımıyla sınırlamak iyi bir fikirdir. Örneğin; <systemitem class=\""
+"username\">root</systemitem> sadece <systemitem class=\"ipaddress\""
+">192.168.1.32</systemitem> üzerinden oturum açmasına izin vermek için bu "
+"satır <filename>/etc/ssh/sshd_config</filename> dizine eklenir:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:26737
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "AllowUsers root@192.168.1.32"
-msgstr ""
+msgstr "AllowUsers root@192.168.1.32"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26739
+#, fuzzy
 msgid ""
 "To allow <systemitem class=\"username\">admin</systemitem> to log in from "
 "anywhere, list that user without specifying an <acronym>IP</acronym> address:"
 msgstr ""
+"<systemitem class=\"username\">admin</systemitem>'in herhangi bir yerde "
+"oturum açmasına izin verirken <acronym>IP</acronym> adresi belirtilmeden bu "
+"kullanıcıyı listeleyin:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:26743
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "AllowUsers admin"
-msgstr ""
+msgstr "AllowUsers admin"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26745
+#, fuzzy
 msgid "Multiple users should be listed on the same line, like so:"
-msgstr ""
+msgstr "Aynı satırda birden fazla olan kullanıcı şu şekilde listelenmelidir:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:26748
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "AllowUsers root@192.168.1.32 admin"
-msgstr ""
+msgstr "AllowUsers root@192.168.1.32 admin"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26750
+#, fuzzy
 msgid ""
 "After making changes to <filename>/etc/ssh/sshd_config</filename>, tell "
 "<application>sshd</application> to reload its configuration file by running:"
 msgstr ""
+"<filename>/etc/ssh/sshd_config</filename> üzerinde değişiklik yaptıktan "
+"sonra, <application>sshd</application>'ye yapılandırma dosyasına "
+"çalıştırarak yeniden yüklenmesini bildirin:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:26755
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>service sshd reload</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>service sshd reload</userinput>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:26758
+#, fuzzy
 msgid ""
 "When this keyword is used, it is important to list each user that needs to "
 "log into this machine. Any user that is not specified in that line will be "
@@ -36045,9 +36390,20 @@ msgid ""
 "refentrytitle><manvolnum>5</manvolnum></citerefentry> to verify the spelling "
 "and use of the available keywords."
 msgstr ""
+"Bu anahtar kelime kullanıldığı zaman, cihazda oturum açması gereken her "
+"kullanıcıyı listelemek önemlidir. Bu satır içerisinde belirtilmeyen tüm "
+"kullanıcılar kilitlenecektir. Ayrıca, <application>OpenSSH</application> "
+"sunucu yapılandırma dosyasında kullanılan anahtar kelimeler büyük-küçük "
+"harfe duyarlıdır. Anahtar kelime, büyük-küçük harflerde dahil olmak üzere, "
+"düzgün yazılmazsa, yok sayılacaktır. Bu dosyadaki değişiklikler her daim "
+"test edilip çalıştığından da emin olmak için, düzenlemeler beklendiği gibi "
+"çalışmalıdır. Kullanılabilir anahtar kelimelerin yazımını ve kullanımını "
+"doğrulamak için <citerefentry><refentrytitle>sshd_config</refentrytitle><manv"
+"olnum>5</manvolnum></citerefentry>'e bakın."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26770
+#, fuzzy
 msgid ""
 "In addition, users may be forced to use two factor authentication via the "
 "use of a public and private key. When required, the user may generate a key "
@@ -36058,15 +36414,24 @@ msgid ""
 "section. To force the users to use keys only, the following option may be "
 "configured:"
 msgstr ""
+"Ayrıca, kullanıcılar ortak ve özel anahtar kullanımıyla iki faktörlü kimlik "
+"doğrulaması kullanmaya zorlanabilir. Gerek duyulduğunda, kullanıcı "
+"<citerefentry><refentrytitle>ssh-"
+"keygen</refentrytitle><manvolnum>1</manvolnum></citerefentry> kullanarak "
+"anahtar çifti oluşturabilir ve yöneticiye ortak anahtarı gönderebilir. Bu "
+"anahtar dosyası, yukarıdaki istemci bölümünde açıklandığı üzere "
+"<filename>authorized_keys</filename>'e kaydedilir. Kullanıcıları sadece "
+"anahtarları kullanmaya zorlamak için aşağıdaki seçenek yapılandırılabilir:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:26779
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "AuthenticationMethods publickey"
-msgstr ""
+msgstr "AuthenticationMethods publickey"
 
 #. (itstool) path: tip/para
 #: book.translate.xml:26782
+#, fuzzy
 msgid ""
 "Do not confuse <filename>/etc/ssh/sshd_config</filename> with <filename>/etc/"
 "ssh/ssh_config</filename> (note the extra <literal>d</literal> in the first "
@@ -36075,27 +36440,39 @@ msgid ""
 "refentrytitle><manvolnum>5</manvolnum></citerefentry> for a listing of the "
 "available client settings."
 msgstr ""
+"<filename>/etc/ssh/sshd_config</filename> ile <filename>/etc/ssh/"
+"ssh_config</filename>'i karıştırmayın (ilk dosya ismindeki ekstra "
+"<literal>d</literal>'ye dikkat edin). İlk dosya sunucuyu ikinci dosya da "
+"istemciyi yapılandırır. Kullanılabilir istemci ayarlarının bir listesi <citer"
+"efentry><refentrytitle>ssh_config</refentrytitle><manvolnum>5</manvolnum></ci"
+"terefentry>'de bulunmaktadır."
 
 #. (itstool) path: info/title
 #: book.translate.xml:26794
+#, fuzzy
 msgid "Access Control Lists"
-msgstr ""
+msgstr "Erişim-Kontrol Listesi"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:26797 book.translate.xml:26942 book.translate.xml:27018
 #: book.translate.xml:27338 book.translate.xml:27413 book.translate.xml:27767
+#, fuzzy
 msgid ""
 "<personname><firstname>Tom</firstname><surname>Rhodes</surname></"
 "personname><contrib>Contributed by </contrib>"
 msgstr ""
+"<personname><firstname>Tom</firstname><surname>Rhodes</surname></personname><"
+"contrib>katkısıyla yazılmıştır</contrib>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:26802
+#, fuzzy
 msgid "<primary>ACL</primary>"
-msgstr ""
+msgstr "<primary>ACL</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:26806
+#, fuzzy
 msgid ""
 "Access Control Lists (<acronym>ACL</acronym>s) extend the standard "
 "<trademark class=\"registered\">UNIX</trademark> permission model in a "
@@ -36103,45 +36480,65 @@ msgid ""
 "permits an administrator to take advantage of a more fine-grained "
 "permissions model."
 msgstr ""
+"Erişim Kontrol Listeleri (<acronym>ACL</acronym>'ler), <trademark class=\""
+"registered\">POSIX</trademark> içerisindeki standart <trademark class=\""
+"registered\">UNIX</trademark> izin modelini genişletir. 1e uyumlu bir "
+"şekilde olmalıdır. Bu, yöneticinin ayrıntılı bir izin modelinden "
+"faydalanmasını sağlar."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:26811
+#, fuzzy
 msgid ""
 "The FreeBSD <filename>GENERIC</filename> kernel provides <acronym>ACL</"
 "acronym> support for <acronym>UFS</acronym> file systems. Users who prefer "
 "to compile a custom kernel must include the following option in their custom "
 "kernel configuration file:"
 msgstr ""
+"FreeBSD <filename>GENERIC</filename> çekirdeği, <acronym>ACL</acronym>, "
+"<acronym>UFS</acronym> için dosya sistemi sağlatımını temin eder. Özel "
+"çekirdek derlemesini tercih eden kullanıcıların, özel çekirdek yapılandırma "
+"dosyalarına aşağıdaki seçeneği eklemelidir:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:26817
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "options UFS_ACL"
-msgstr ""
+msgstr "options UFS_ACL"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:26819
+#, fuzzy
 msgid ""
 "If this option is not compiled in, a warning message will be displayed when "
 "attempting to mount a file system with <acronym>ACL</acronym> support. "
 "<acronym>ACL</acronym>s rely on extended attributes which are natively "
 "supported in <acronym>UFS2</acronym>."
 msgstr ""
+"Bu seçenek derlenmemişse, dosya sistemi kurmaya çalışırken "
+"<acronym>ACL</acronym> desteğiyle uyarı mesajı görüntülenecektir. "
+"<acronym>ACL</acronym>'ler, <acronym>UFS2</acronym>'de yerel olarak "
+"desteklenen genişletilmiş özelliklere güvenir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:26825
+#, fuzzy
 msgid ""
 "This chapter describes how to enable <acronym>ACL</acronym> support and "
 "provides some usage examples."
 msgstr ""
+"Bu bölüm, <acronym>ACL</acronym> desteğinin nasıl etkinleştirileceğini "
+"açıklar ve bazı kullanım örnekleri verilmektedir."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:26830
+#, fuzzy
 msgid "Enabling <acronym>ACL</acronym> Support"
-msgstr ""
+msgstr "<acronym>ACL</acronym> Desteğini Etkinleştirme"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26832
+#, fuzzy
 msgid ""
 "<acronym>ACL</acronym>s are enabled by the mount-time administrative flag, "
 "<option>acls</option>, which may be added to <filename>/etc/fstab</"
@@ -36151,9 +36548,18 @@ msgid ""
 "<acronym>ACL</acronym>s flag in the file system header. In general, it is "
 "preferred to use the superblock flag for several reasons:"
 msgstr ""
+"<acronym>ACL</acronym>'ler, yönetimsel oluşturma zamanı işaretçisi "
+"<option>acls</option> tarafından etkinleşerek <filename>/etc/fstab</filename>"
+" dosyasına eklenir. Oluşturma zamanı işaretçisi, dosya sistemi üst bilgi "
+"kısmında bulunan süper blok <acronym>ACL</acronym>'nin bayrağını "
+"değiştirmede <citerefentry><refentrytitle>tunefs</refentrytitle><manvolnum>8<"
+"/manvolnum></citerefentry> kullanılmasıyla otomatik olarak kalıcı şekilde "
+"ayarlanabilir. Genellikle, süper blok bayrağı birkaç neden için kullanılması "
+"tercih edilir:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:26842
+#, fuzzy
 msgid ""
 "The superblock flag cannot be changed by a remount using <option>mount -u</"
 "option> as it requires a complete <command>umount</command> and fresh "
@@ -36162,18 +36568,31 @@ msgid ""
 "acronym> support on a file system cannot be changed while the system is in "
 "use."
 msgstr ""
+"Süper blok bayrağı, <option>mount -u</option> kullanılarak tam bir "
+"<command>umount</command> ve yeni mount gerektirdiği için yeniden "
+"oluşturulamaz. Bu, <acronym>ACL</acronym>'ler ön yükleme sonrasında kök "
+"dosya sistemi üzerine etkinleştirilemeyeceği anlamına gelir. Bu ayrıca, "
+"sistem kullanım aşamasındayken dosya sistemindeki <acronym>ACL</acronym> "
+"desteğinin değiştirilemeyeceği anlamına da gelir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:26853
+#, fuzzy
 msgid ""
 "Setting the superblock flag causes the file system to always be mounted with "
 "<acronym>ACL</acronym>s enabled, even if there is not an <filename>fstab</"
 "filename> entry or if the devices re-order. This prevents accidental "
 "mounting of the file system without <acronym>ACL</acronym> support."
 msgstr ""
+"Süper blok bayrağının ayarlanması, <filename>fstab</filename> girişi olmasa "
+"ya da cihazlar yeniden sıralansa dahi dosya sisteminin her daim "
+"<acronym>ACL</acronym>'ler etkin konumdayken oluşturulmasına neden olur. Bu, "
+"<acronym>ACL</acronym> desteği olmadığında yanlışlıkla dosya sisteminin "
+"kurulumunu önler."
 
 #. (itstool) path: note/para
 #: book.translate.xml:26863
+#, fuzzy
 msgid ""
 "It is desirable to discourage accidental mounting without <acronym>ACL</"
 "acronym>s enabled because nasty things can happen if <acronym>ACL</acronym>s "
@@ -36185,17 +36604,30 @@ msgid ""
 "acronym>s to files that have since had their permissions changed, resulting "
 "in unpredictable behavior."
 msgstr ""
+"Yanlışlıkla <acronym>ACL</acronym>'ler etkinleştirilmeden oluşturulmasının "
+"engellenmesi arzu edilir çünkü <acronym>ACL</acronym>'ler etkinleştirilirse "
+"kötü şeyler olabilirdi, sonrasında da devre dışı bırakılıp ardından "
+"genişletilmiş özellikleri temizlemeden yeniden etkinleştirilirdi. "
+"Genellikle, dosya sisteminde <acronym>ACL</acronym>'ler etkinleştirildikten "
+"sonra, devre dışı bırakılmamalıdırlar, neticede ortaya çıkan dosya "
+"korumaları, sistem kullanıcıları tarafından yapılan tasarlamalarla uyumlu "
+"olmayabilir ve <acronym>ACL</acronym>'lerin yeniden etkinleştirilmeleri "
+"önceki <acronym>ACL</acronym>'leri izinleri değiştirilmiş dosyalara "
+"tekrardan ekleyebilir ve bu öngörülemeyen sonuçlar doğurabilir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26877
+#, fuzzy
 msgid ""
 "File systems with <acronym>ACL</acronym>s enabled will show a plus (<literal>"
 "+</literal>) sign in their permission settings:"
 msgstr ""
+"<acronym>ACL</acronym>'ler ile etkinleştirilen dosya sistemleri izin "
+"ayarlarında artı (<literal>+</literal>) işaretiyle gösterilir:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:26881
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "drwx------  2 robert  robert  512 Dec 27 11:54 private\n"
 "drwxrwx---+ 2 robert  robert  512 Dec 23 10:57 directory1\n"
@@ -36203,31 +36635,46 @@ msgid ""
 "drwxrwx---+ 2 robert  robert  512 Dec 27 11:57 directory3\n"
 "drwxr-xr-x  2 robert  robert  512 Nov 10 11:54 public_html"
 msgstr ""
+"drwx------  2 robert  robert  512 Aralık 27 11:54 private\n"
+"drwxrwx---+ 2 robert  robert  512 Aralık 23 10:57 directory1\n"
+"drwxrwx---+ 2 robert  robert  512 Aralık 22 10:20 directory2\n"
+"drwxrwx---+ 2 robert  robert  512 Aralık 27 11:57 directory3\n"
+"drwxr-xr-x  2 robert  robert  512 Kasım 10 11:54 public_html"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26887
+#, fuzzy
 msgid ""
 "In this example, <filename>directory1</filename>, <filename>directory2</"
 "filename>, and <filename>directory3</filename> are all taking advantage of "
 "<acronym>ACL</acronym>s, whereas <filename>public_html</filename> is not."
 msgstr ""
+"Bu örnekte, <filename>dizin1</filename>, <filename>dizin2</filename>, and "
+"<filename>dizin3</filename>, <acronym>ACL</acronym>'lerden yararlanırken "
+"<filename>public_html</filename> ise kullanılmaz."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:26895
+#, fuzzy
 msgid "Using <acronym>ACL</acronym>s"
-msgstr ""
+msgstr "<acronym>ACL</acronym>'lerin Kullanımı"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26897
+#, fuzzy
 msgid ""
 "File system <acronym>ACL</acronym>s can be viewed using <command>getfacl</"
 "command>. For instance, to view the <acronym>ACL</acronym> settings on "
 "<filename>test</filename>:"
 msgstr ""
+"<acronym>ACL</acronym>'nin dosya sistemi <command>getfacl</command> "
+"kullanılarak görüntülenebilir. Örnek vermek gerekirse, "
+"<filename>test</filename> üzerindeki <acronym>ACL</acronym>'nin ayarlarını "
+"görüntülemek için:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:26902
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>getfacl test</userinput>\n"
 "\t#file:test\n"
@@ -36237,9 +36684,17 @@ msgid ""
 "\tgroup::r--\n"
 "\tother::r--"
 msgstr ""
+"<prompt>%</prompt> <userinput>getfacl test</userinput>\n"
+"\t#file:test\n"
+"\t#owner:1001\n"
+"\t#group:1001\n"
+"\tuser::rw-\n"
+"\tgroup::r--\n"
+"\tother::r--"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26910
+#, fuzzy
 msgid ""
 "To change the <acronym>ACL</acronym> settings on this file, use "
 "<command>setfacl</command>. To remove all of the currently defined "
@@ -36247,65 +36702,95 @@ msgid ""
 "option>. However, the preferred method is to use <option>-b</option> as it "
 "leaves the basic fields required for <acronym>ACL</acronym>s to work."
 msgstr ""
+"Bu dosya üzerindeki <acronym>ACL</acronym> ayarlarını değiştirmek için "
+"setfacl kullanın. Hali hazırda tanımlanmış <acronym>ACL</acronym>'lerin "
+"tümünü bir dosyadan ya da dosya sisteminden kaldırılması için "
+"<option>–k</option>'yi kullan. Ancak tercih edilen yöntem "
+"<acronym>ACL</acronym>'lelerin çalışması için gereken temel alanları ayıran "
+"-<option>-b</option>'yi kullanmaktır."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:26917
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>setfacl -k test</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>setfacl -k test</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26919
+#, fuzzy
 msgid ""
 "To modify the default <acronym>ACL</acronym> entries, use <option>-m</"
 "option>:"
 msgstr ""
+"Varsayılan <acronym>ACL</acronym> girdilerinin değiştirilmesinde "
+"<option>-m</option> kullanın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:26922
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>setfacl -m u:trhodes:rwx,group:web:r--,o::--- test</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>setfacl -m u:trhodes:rwx,group:web:r--,o::--- "
+"test</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26924
+#, fuzzy
 msgid ""
 "In this example, there were no pre-defined entries, as they were removed by "
 "the previous command. This command restores the default options and assigns "
 "the options listed. If a user or group is added which does not exist on the "
 "system, an <errorname>Invalid argument</errorname> error will be displayed."
 msgstr ""
+"Bu örnekte, önceden tanımlanmış bütünlük girdisi olmadığından, önceki "
+"komutlar tarafından kaldırılmıştı. Bu komut, varsayılan seçenekleri geri "
+"yükler ve listelenen seçenekleri atamaktadır. Sistem üzerinde mevcut olmayan "
+"bir kullanıcı veya grup eklenirse, <errorname>geçersiz argüman</errorname> "
+"hatası görüntülenir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26931
+#, fuzzy
 msgid ""
 "Refer to <citerefentry><refentrytitle>getfacl</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> and <citerefentry><refentrytitle>setfacl</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> for more information "
 "about the options available for these commands."
 msgstr ""
+"Bu komutlar için mevcut seçenekler hakkında daha fazla bilgi için <citerefent"
+"ry><refentrytitle>getfacl</refentrytitle><manvolnum>1</manvolnum></citerefent"
+"ry> ve <citerefentry><refentrytitle>setfacl</refentrytitle><manvolnum>1</manv"
+"olnum></citerefentry>'e bakın."
 
 #. (itstool) path: info/title
 #: book.translate.xml:26939
+#, fuzzy
 msgid "Monitoring Third Party Security Issues"
-msgstr ""
+msgstr "Üçüncü Taraf Güvenlik Sorunlarının İzlenmesi"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:26947
+#, fuzzy
 msgid "<primary>pkg</primary>"
-msgstr ""
+msgstr "<primary>pkg</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:26951
+#, fuzzy
 msgid ""
 "In recent years, the security world has made many improvements to how "
 "vulnerability assessment is handled. The threat of system intrusion "
 "increases as third party utilities are installed and configured for "
 "virtually any operating system available today."
 msgstr ""
+"Son yıllarda, güvenlik dünyası, güvenlik açığı değerlendirmesinin nasıl ele "
+"alındığına dair birçok iyileştirme yaptı. Sisteme izinsiz giriş tehdidi "
+"üçüncü taraf yardımcı programlar bugünkü mevcut bütün işletim sistemlerine "
+"yüklenmiş ve yapılandırılmış olduğundan, gün be gün artmaktadır."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:26957
+#, fuzzy
 msgid ""
 "Vulnerability assessment is a key factor in security. While FreeBSD releases "
 "advisories for the base system, doing so for every third party utility is "
@@ -36314,25 +36799,41 @@ msgid ""
 "FreeBSD add on utility known as <application>pkg</application> includes "
 "options explicitly for this purpose."
 msgstr ""
+"Güvenlik açığı değerlendirmesi güvenlik için anahtar faktörü durumundadır. "
+"FreeBSD ana sistem için tavsiyeler yayınlarken, bunu her üçüncü parti "
+"programı yapmak, FreeBSD Projesinin kapasitesinin ötesindedir. Üçüncü taraf "
+"güvenlik açıklarının azaltılmasının bir yolu vardır ve yöneticilerini de "
+"bilinen güvenlik sorunları hakkında uyarır. <application>pkg</application> "
+"olarak bilinen bir FreeBSD eklenti yardımcı programı, bu amaç doğrultusunda "
+"açık seçenekler içermektedir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:26966
+#, fuzzy
 msgid ""
 "<application>pkg</application> polls a database for security issues. The "
 "database is updated and maintained by the FreeBSD Security Team and ports "
 "developers."
 msgstr ""
+"Lütfen <application>pkg</application> kurulumu için instructions kısmına "
+"bakın. Veritabanı, FreeBSD Güvenlik Ekibi ve port geliştiricileri tarafından "
+"güncellenir ve korunur."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:26970
+#, fuzzy
 msgid ""
 "Please refer to <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/"
 "books/handbook/pkgng-intro.html\">instructions</link> for installing "
 "<application>pkg</application>."
 msgstr ""
+"lütfen, <application>pkg</application> yüklemesi için, <link xlink:href=\""
+"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/pkgng-intro.html\""
+">instructions</link>'e bakın."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:26974
+#, fuzzy
 msgid ""
 "Installation provides <citerefentry><refentrytitle>periodic</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> configuration files "
@@ -36344,25 +36845,43 @@ msgid ""
 "security run emails, which are sent to <systemitem class=\"username\">root</"
 "systemitem>'s email account, are being read."
 msgstr ""
+"Kurulum, <application>pkg</application> denetimli veri tabanını korumak için "
+"<citerefentry><refentrytitle>periodic</refentrytitle><manvolnum>8</manvolnum>"
+"</citerefentry> yapılandırma dosyaları sağlar ve bunu güncel tutmak için de "
+"programlı bir yöntem sağlar. Bu işlev, <citerefentry><refentrytitle>periodic."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> içinde "
+"<literal>YES</literal> olarak "
+"<literal>daily_status_security_pkgaudit_enable</literal> ayarlanırsa "
+"etkinleştirilmiş olunur. <systemitem class=\"username\">root</systemitem>"
+"'ların e-posta hesabına gönderilmiş olması e-postaların günlük güvenlikle "
+"çalıştığına ve okunduğundan emin olun."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:26984
+#, fuzzy
 msgid ""
 "After installation, and to audit third party utilities as part of the Ports "
 "Collection at any time, an administrator may choose to update the database "
 "and view known vulnerabilities of installed packages by invoking:"
 msgstr ""
+"Kurulumun ardından, herhangi bir zaman içerisinde Ports Colection'ın bir "
+"parçası olarak üçüncü taraf yardımcı programları denetlemek adına, yönetici "
+"veri tabanını güncellemesini ve yüklenen paketlerin bilinen güvenlik "
+"açıklarının görüntülemesini seçebilir:"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:26991
+#, fuzzy
 msgid ""
 "<application>pkg</application> displays messages any published "
 "vulnerabilities in installed packages:"
 msgstr ""
+"<application>pkg</application>, yüklenmiş paketlerdeki yayınlanan güvenlik "
+"açıklarını görüntüler:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:26994
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Affected package: cups-base-1.1.22.0_1\n"
 "Type of problem: cups-base -- HPGL buffer overflow vulnerability.\n"
@@ -36372,35 +36891,55 @@ msgid ""
 "\n"
 "You are advised to update or deinstall the affected package(s) immediately."
 msgstr ""
+"Etkilenen paket: cups-base-1.1.22.0_1\n"
+"Sorun türü: cups-base -- HPGL buffer overflow vulnerability.\n"
+"Kaynak: &lt;https://www.FreeBSD.org/ports/portaudit/"
+"40a3bca2-6809-11d9-a9e7-0001020eed82.html&gt;\n"
+"\n"
+"Kurulan paketinizde 1 sorun bulundu.\n"
+"\n"
+"Etkilenen paket(leri) derhal kaldırmanız veya güncellemeniz önerilir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27002
+#, fuzzy
 msgid ""
 "By pointing a web browser to the displayed <acronym>URL</acronym>, an "
 "administrator may obtain more information about the vulnerability. This will "
 "include the versions affected, by FreeBSD port version, along with other web "
 "sites which may contain security advisories."
 msgstr ""
+"Yönetici, güvenlik açığı hakkında daha fazla bilgi edinmek için bir web "
+"tarayıcısını görüntülenen <acronym>URL</acronym>'ye yönlendirebilir. Bu, "
+"FreeBSD bağlantı noktası sürümünden etkilenen sürümleri ve güvenlik "
+"önerilerini içerebilecek diğer web sitelerini içerir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27008
+#, fuzzy
 msgid ""
 "<application>pkg</application> is a powerful utility and is extremely useful "
 "when coupled with <package>ports-mgmt/portmaster</package>."
 msgstr ""
+"<application>pkg</application> güçlü bir yardımcı programdır ve <package"
+">ports-mgmt/portmaster</package> ile birlikte kullanıldığında son derece "
+"kullanışlıdır."
 
 #. (itstool) path: info/title
 #: book.translate.xml:27015
+#, fuzzy
 msgid "FreeBSD Security Advisories"
-msgstr ""
+msgstr "FreeBSD Güvenlik Tavsiye Belgeleri"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:27023
+#, fuzzy
 msgid "<primary>FreeBSD Security Advisories</primary>"
-msgstr ""
+msgstr "<primary>FreeBSD Güvenlik Tavsiye Belgeleri</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27027
+#, fuzzy
 msgid ""
 "Like many producers of quality operating systems, the FreeBSD Project has a "
 "security team which is responsible for determining the End-of-Life "
@@ -36410,9 +36949,17 @@ msgid ""
 "the supported releases is available on the <link xlink:href="
 "\"@@URL_RELPREFIX@@/security\">FreeBSD security page</link>."
 msgstr ""
+"Diğer kaliteli işletim sistemi üreticileri gibi FreeBSD projesinin de bir "
+"güvenlik ekibi vardır. Bu güvenlik ekibi her FreeBSD sürümü için Kullanım "
+"Ömrü Sonu (<acronym>EoL</acronym>) tarihini belirlemekten ve henüz kullanım "
+"ömürlerini tamamlamamış desteklenen sürümler için güvenlik güncellemeleri "
+"yapmaktan sorumludur. FreeBSD güvenlik ekibi ve desteklenen sürümler "
+"hakkında daha fazla bilgiyi<link xlink:href=\"@@URL_RELPREFIX@@/security\"> "
+"FreeBSD güvenlik sayfası</link>’nda bulabilirsin."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27037
+#, fuzzy
 msgid ""
 "One task of the security team is to respond to reported security "
 "vulnerabilities in the FreeBSD operating system. Once a vulnerability is "
@@ -36427,25 +36974,41 @@ msgid ""
 "href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-announce\">freebsd-"
 "announce</link> mailing lists."
 msgstr ""
+"Güvenlik ekibinin bir görevi, FreeBSD işletim sistemindeki rapor edilen "
+"güvenlik açıklarını yanıtlamaktır. Bir güvenlik açığı onayladığında bu "
+"güvenlik açığını kapatmak için gerekli adımları tahkik eder ve kaynak kodunu "
+"düzelterek günceller. Sonra, bu <quote>Güvenlik Tavsiye Belgesi</quote> "
+"olarak detaylandırılarak yayınlanır. Güvenlik tavsiye belgeleri FreeBSD <"
+"link xlink:href=\"@@URL_RELPREFIX@@/security/advisories.html\">FreeBSD "
+"website</link> web sitesinde ve freebsd-güvenlik-bildirimleri <link "
+"xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-security-"
+"notifications\">freebsd-security-notifications</link>, freebsd-güvenlik <"
+"link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-"
+"security\">freebsd-security</link> ve listelenen maillemede <link xlink:href="
+"\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-security\">freebsd-"
+"security</link> freebsd-duyuru başlıkları altına yayınlanır."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27048
+#, fuzzy
 msgid "This section describes the format of a FreeBSD security advisory."
-msgstr ""
+msgstr "Bu bölüm FreeBSD güvenlik tavsiye belgelerinin biçimini anlatmaktadır."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:27052
+#, fuzzy
 msgid "Format of a Security Advisory"
-msgstr ""
+msgstr "Bir Güvenlik Tavsiye Belgesinin Biçimi"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27054
+#, fuzzy
 msgid "Here is an example of a FreeBSD security advisory:"
-msgstr ""
+msgstr "Burada, FreeBSD güvenlik tavsiye belgesinin bir örneği bulunmaktadır:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:27056
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "=============================================================================\n"
 "-----BEGIN PGP SIGNED MESSAGE-----\n"
@@ -36589,22 +37152,187 @@ msgid ""
 "=OQzQ\n"
 "-----END PGP SIGNATURE-----"
 msgstr ""
+"============================================================================="
+"\n"
+"-----PGP İmzalanmış Mesaj Başlangıcı-----\n"
+"Karma: SHA512\n"
+"\n"
+"============================================================================="
+"\n"
+"FreeBSD-SA-14:04.bind                                       Güvenlik "
+"Tavsiyesi\n"
+"                                                          The FreeBSD "
+"Projesi\n"
+"\n"
+"Başlık:          BIND güvenlik açığı-uzaktan hizmeti reddildi\n"
+"\n"
+"Kategori:       contrib\n"
+"Modül:         bind\n"
+"Duyuru Tarihi:      2014-01-14\n"
+"Raporlayan Kişi / Kurum:        ISC\n"
+"Etkilenenler:        FreeBSD 8.x and FreeBSD 9.x\n"
+"Düzeltilen:      2014-01-14 19:38:37 UTC (stable/9, 9.2-STABLE)\n"
+"                2014-01-14 19:42:28 UTC (releng/9.2, 9.2-RELEASE-p3)\n"
+"                2014-01-14 19:42:28 UTC (releng/9.1, 9.1-RELEASE-p10)\n"
+"                2014-01-14 19:38:37 UTC (stable/8, 8.4-STABLE)\n"
+"                2014-01-14 19:42:28 UTC (releng/8.4, 8.4-RELEASE-p7)\n"
+"                2014-01-14 19:42:28 UTC (releng/8.3, 8.3-RELEASE-p14)\n"
+"CVE Adı:       CVE-2014-0591\n"
+"\n"
+"FreeBSD Güvenlik Tavsiye Belgesinde yukarıdaki alanların açıklaması, "
+"güvenlik sınıfları ve takip eden bölümlere ilişkin genel bilgilendirme için "
+"&lt;URL:http://security.FreeBSD.org/&gt adresini ziyaret edin.;\n"
+"\n"
+"I.   Arkaplan\n"
+"\n"
+"BIND 9, Alan Adı Sistemi(DNS) protokolünün bir uygulamasıdır.\n"
+"Named(8), arka planda çalışan uygulama, bir Internet Etki Alan Adı "
+"Sunucusudur.\n"
+"\n"
+"II.  Sorun Açıklaması\n"
+"\n"
+"NSEC3 imzalı alanlar için sorguların işlenmesindeki bir hata nedeniyle, "
+"BIND, belirli özelliklere sahip sorguları işlerken c.c adında \"INSIST\" "
+"hatasıyla çökebilir. Bu sorun yalnızca en az bir NSEC3 imzalı alana sahip "
+"yetkili ad sunucularını etkiler. Yalnızca öz-yinelemeli sunucular risk "
+"altında değildir.\n"
+"\n"
+"III. Etki\n"
+"\n"
+"Özel hazırlanmış sorgu gönderebilen bir saldırgan, named(8)’in çökmesine yol "
+"açarak hizmet reddine sebebiyet verebilir.\n"
+"\n"
+"IV.  Geçici Çözüm\n"
+"\n"
+"Geçici çözüm yoktur, ancak named(8)’i kullanan en az bir NSCE3 imzalı alan "
+"kullanan yetkili bir DNS hizmetiyle çalışmayan sistemler tehlike altında "
+"değildir.\n"
+"\n"
+"V.   Çözüm\n"
+"\n"
+"Aşağıdakilerden birini yapınız:\n"
+"\n"
+"1) Korunmasız sisteminizde desteklenen FreeBSD'ye ya da düzeltme tarihinden "
+"sonraki tarihte yayınlanan/güvenlik sınıflarını güncelleyin.\n"
+"\n"
+"2) Güvenlik açığından etkilenen sisteminizi kaynak kodu düzeltme paketiyle "
+"güncelleştirmek için:\n"
+"\n"
+"Aşağıdaki yamaların, kullanılabilir FreeBSD sınıflarına uygulanabilir olduğu "
+"onaylanmıştır.\n"
+"\n"
+"a) Konuyla ilgili paketi aşağıdaki konumdan indirin ve PGP yardımcı "
+"programınızı kullanarak ayrılmış PGP imzasını doğrulayın.\n"
+"\n"
+"[FreeBSD 8.3, 8.4, 9.1, 9.2-RELEASE and 8.4-STABLE]\n"
+"# fetch http://security.FreeBSD.org/patches/SA-14:04/bind-release.patch\n"
+"# fetch http://security.FreeBSD.org/patches/SA-14:04/bind-release.patch.asc\n"
+"# gpg --verify bind-release.patch.asc\n"
+"\n"
+"[FreeBSD 9.2-STABLE]\n"
+"# fetch http://security.FreeBSD.org/patches/SA-14:04/bind-stable-9.patch\n"
+"# fetch http://security.FreeBSD.org/patches/SA-14:04/bind-stable-9.patch."
+"asc\n"
+"# gpg --verify bind-stable-9.patch.asc\n"
+"\n"
+"b) Aşağıdaki komutları root’ta çalıştırın:\n"
+"\n"
+"# cd /usr/src\n"
+"# patch &lt; /path/to/patch\n"
+"\n"
+"&lt;URL:https://www.FreeBSD.org/handbook/makeworld.html&gt 'u kullanarak "
+"işletim sisteminizi yeniden derleyin. \n"
+"\n"
+"Çalışan arka plan uygulamalarını veya sisteminizi tekrar başlatın:\n"
+"\n"
+"Systems running a RELEASE version of FreeBSD on the i386 or amd64\n"
+"platforms can be updated via the freebsd-update(8) utility:\n"
+"\n"
+"3) Güvenlik açığından etkilenen sisteminizi bir ikili kod sistem paketi "
+"üzerinden güncellemek için:\n"
+"\n"
+"i386 veya amd64 platformlarında FreeBSD'nin RELEASE sürümünde çalışan "
+"sistemler freebsd-update(8) yardımcı yazılım ile güncellenebilir:\n"
+"\n"
+"# freebsd-update fetch\n"
+"# freebsd-update install\n"
+"\n"
+"VI.  Düzeltme ayrıntıları\n"
+"\n"
+"Aşağıdaki liste revizyon numarasını ve etkilenen sınıfları içermektedir.\n"
+"\n"
+"Sınıf / paket                                                      Revizyon\n"
+"- -------------------------------------------------------------------------\n"
+"stable/8/                                                         r260646\n"
+"releng/8.3/                                                       r260647\n"
+"releng/8.4/                                                       r260647\n"
+"stable/9/                                                         r260646\n"
+"releng/9.1/                                                       r260647\n"
+"releng/9.2/                                                       r260647\n"
+"- -------------------------------------------------------------------------\n"
+"\n"
+"Bir özel revizyon tarafından hangi dosyanın düzenlendiğini görmek için "
+"aşağıdaki komutları çalıştırın. \n"
+"Subversion yüklü bir cihazda NNNNNN'nin revizyon numarası ile değiştirilmesi:"
+"\n"
+"\n"
+"# svn diff -cNNNNNN --summarize svn://svn.freebsd.org/base\n"
+"\n"
+"NNNNNN yerine revizyon numarası yazarak aşağıdaki URL’yi ziyaret ediniz:\n"
+"\n"
+"&lt;URL:https://svnweb.freebsd.org/base?view=revision&amp;revision=NNNNNN&gt;"
+"\n"
+"\n"
+"VII. Referenslar\n"
+"\n"
+"&lt;URL:https://kb.isc.org/article/AA-01078&gt;\n"
+"\n"
+"&lt;URL:http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0591&gt;\n"
+"\n"
+"Bu tavsiye belgesinin en son revizyonuna \n"
+"&lt;URL:http://security.FreeBSD.org/advisories/FreeBSD-SA-14:04.bind.asc&gt "
+"adresinden erişilebilir.;\n"
+"\n"
+"\n"
+"-----PGP İmza Başlangıcı-----\n"
+"\n"
+"iQIcBAEBCgAGBQJS1ZTYAAoJEO1n7NZdz2rnOvQP/2/68/s9Cu35PmqNtSZVVxVG\n"
+"ZSQP5EGWx/lramNf9566iKxOrLRMq/h3XWcC4goVd+gZFrvITJSVOWSa7ntDQ7TO\n"
+"XcinfRZ/iyiJbs/Rg2wLHc/t5oVSyeouyccqODYFbOwOlk35JjOTMUG1YcX+Zasg\n"
+"ax8RV+7Zt1QSBkMlOz/myBLXUjlTZ3Xg2FXVsfFQW5/g2CjuHpRSFx1bVNX6ysoG\n"
+"9DT58EQcYxIS8WfkHRbbXKh9I1nSfZ7/Hky/kTafRdRMrjAgbqFgHkYTYsBZeav5\n"
+"fYWKGQRJulYfeZQ90yMTvlpF42DjCC3uJYamJnwDIu8OhS1WRBI8fQfr9DRzmRua\n"
+"OK3BK9hUiScDZOJB6OqeVzUTfe7MAA4/UwrDtTYQ+PqAenv1PK8DZqwXyxA9ThHb\n"
+"zKO3OwuKOVHJnKvpOcr+eNwo7jbnHlis0oBksj/mrq2P9m2ueF9gzCiq5Ri5Syag\n"
+"Wssb1HUoMGwqU0roS8+pRpNC8YgsWpsttvUWSZ8u6Vj/FLeHpiV3mYXPVMaKRhVm\n"
+"067BA2uj4Th1JKtGleox+Em0R7OFbCc/9aWC67wiqI6KRyit9pYiF3npph+7D5Eq\n"
+"7zPsUdDd+qc+UTiLp3liCRp5w6484wWdhZO6wRtmUgxGjNkxFoNnX8CitzF8AaqO\n"
+"UWWemqWuz3lAZuORQ9KX\n"
+"=OQzQ\n"
+"\n"
+"-----PGP İmza Sonu-----"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27198
+#, fuzzy
 msgid "Every security advisory uses the following format:"
-msgstr ""
+msgstr "Her güvenlik tavsiye belgesi aşağıdaki düzeni kullanır:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27202
+#, fuzzy
 msgid ""
 "Each security advisory is signed by the <acronym>PGP</acronym> key of the "
 "Security Officer. The public key for the Security Officer can be verified at "
 "<xref linkend=\"pgpkeys\"/>."
 msgstr ""
+"Her güvenlik tavsiye belgesi, Güvenlik Görevlisinin <acronym>PGP</acronym> "
+"anahtarı tarafından imzalanır. Güvenlik Görevlisi için ortak anahtar olan <"
+"xref linkend=\"pgpkeys\"/> ile doğrulanabilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27209
+#, fuzzy
 msgid ""
 "The name of the security advisory always begins with <literal>FreeBSD-SA-</"
 "literal> (for FreeBSD Security Advisory), followed by the year in two digit "
@@ -36614,14 +37342,23 @@ msgid ""
 "is the fourth advisory for 2014 and it affects <application>BIND</"
 "application>."
 msgstr ""
+"Güvenlik tavsiyesinin başında her zaman <literal>FreeBSD-SA-</literal> ("
+"FreeBSD Güvenlik Tavsiye Belgeleri için), iki basamaklı yılın ardından o "
+"yıla ait (<literal>14.</literal>) tavsiye numarasının takip edilmesi ve o "
+"yıldaki uygulamaların (<literal>04</literal>) danışma numarası, etkilenen "
+"uygulamanın adı veya alt sürümleri (<literal>bind</literal>) yer alır. "
+"Burada gösterilen tavsiye belgesi 2014 yılındaki dördüncü tavsiye belgesi "
+"olan <application>BIND</application>'ı etkiler."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27221
+#, fuzzy
 msgid "The <literal>Topic</literal> field summarizes the vulnerability."
-msgstr ""
+msgstr "<literal>Topic</literal> alanı bu güvenlik açığını özetlemektedir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27226
+#, fuzzy
 msgid ""
 "The <literal>Category</literal> refers to the affected part of the system "
 "which may be one of <literal>core</literal>, <literal>contrib</literal>, or "
@@ -36632,41 +37369,65 @@ msgid ""
 "<literal>ports</literal> category indicates that the vulnerability affects "
 "software available through the Ports Collection."
 msgstr ""
+"<literal>Category</literal> sisteminin <literal>core</literal>, "
+"<literal>contrib</literal>, veya <literal>ports</literal> ögelerinden biri "
+"olabilecek etkilenen bölümleri temsil eder. <literal>core</literal> kategori "
+"ismi, güvenlik açığının FreeBSD işletim sisteminin temel bir bileşeninin "
+"etkilendiği anlamına gelir. <literal>contrib</literal> kategori ismi, "
+"güvenlik açığının FreeBSD’de var olan <application>BIND</application> gibi "
+"yazılımları etkilediği anlamına gelir. <literal>ports</literal> kategori "
+"adı, güvenlik açığının Erişim Noktalarının Birleşimi aracılığıyla "
+"kullanılabilen yazılımı etkilediğini belirtir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27241
+#, fuzzy
 msgid ""
 "The <literal>Module</literal> field refers to the component location. In "
 "this example, the <literal>bind</literal> module is affected; therefore, "
 "this vulnerability affects an application installed with the operating "
 "system."
 msgstr ""
+"<literal>Module</literal> alanı bileşen konumunu göstermektedir. Bu örnekte "
+"<literal>bind</literal> modülü etkilenmiştir; bu yüzden bu güvenlik açığı "
+"işletim sistemiyle birlikte yüklenmiş uygulamayı etkiler."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27249
+#, fuzzy
 msgid ""
 "The <literal>Announced</literal> field reflects the date the security "
 "advisory was published. This means that the security team has verified that "
 "the problem exists and that a patch has been committed to the FreeBSD source "
 "code repository."
 msgstr ""
+"<literal>Announced</literal> alanı güvenlik belgesinin yayınlanma tarihini "
+"ifade eder.Bu güvenlik ekibinin sorunun var olduğunu doğrulamış ve FreeBSD "
+"kaynak kodu deposunda bir düzeltme yaptığı anlamına gelmektedir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27257
+#, fuzzy
 msgid ""
 "The <literal>Credits</literal> field gives credit to the individual or "
 "organization who noticed the vulnerability and reported it."
 msgstr ""
+"<literal>Credits</literal> alanı, bu güvenlik açığını fark edip rapor eden "
+"bireysel kullanıcı veya kuruluşu göstermektedir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27263
+#, fuzzy
 msgid ""
 "The <literal>Affects</literal> field explains which releases of FreeBSD are "
 "affected by this vulnerability."
 msgstr ""
+"<literal>Affects</literal> alanı hangi FreeBSD sürümlerinin bu güvenlik "
+"açığından etkilendiğini açıklar."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27269
+#, fuzzy
 msgid ""
 "The <literal>Corrected</literal> field indicates the date, time, time "
 "offset, and releases that were corrected. The section in parentheses shows "
@@ -36677,86 +37438,128 @@ msgid ""
 "the sequence number of the patch, allowing users to track which patches have "
 "already been applied to the system."
 msgstr ""
+"<literal>Corrected</literal> alanı düzenlendiği tarih, zaman, zaman "
+"aralığını ve sürümleri içermektedir. Parantez içindeki bölüm, düzeltmenin "
+"birleştirildiği her sınıfı ve ilgili sınıfın sürüm numarasını gösterir. "
+"Sürüm kimliğinin kendisi sürüm numarasını ve gerekliyse yama kademesini "
+"barındırır. Yama kademesini <literal>p</literal> harfiyle ve yamanın sıra "
+"numarasını gösteren bir numarayla gösterilir. Bu kullanıcılara sisteme hangi "
+"paketlerin yüklü olduğunu takip etmelerini sağlar."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27283
+#, fuzzy
 msgid ""
 "The <literal>CVE Name</literal> field lists the advisory number, if one "
 "exists, in the public <link xlink:href=\"http://cve.mitre.org\">cve.mitre."
 "org</link> security vulnerabilities database."
 msgstr ""
+"<literal>CVE Name</literal> alanı, genel <link xlink:href=\""
+"http://cve.mitre.org</link> güvenlik açıkları veri tabanında, varsa bu "
+"güvenlik açığının öneri numarasını listeler."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27289
+#, fuzzy
 msgid ""
 "The <literal>Background</literal> field provides a description of the "
 "affected module."
 msgstr ""
+"<literal>Background</literal> alanı etkilenen modülün açıklamasını içerir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27294
+#, fuzzy
 msgid ""
 "The <literal>Problem Description</literal> field explains the vulnerability. "
 "This can include information about the flawed code and how the utility could "
 "be maliciously used."
 msgstr ""
+"<literal>Problem Description</literal> alanı güvenlik açığını tanımlar. Bu "
+"alan, hatalı kod ve yardımcı programın kötü amaçlı olarak nasıl "
+"kullanılabileceği hakkında bilgiler içerebilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27301
+#, fuzzy
 msgid ""
 "The <literal>Impact</literal> field describes what type of impact the "
 "problem could have on a system."
 msgstr ""
+"<literal>Impact</literal> alanı problemin sistem üzerinde ne tür etkileri "
+"olduğunu açıklar."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27306
+#, fuzzy
 msgid ""
 "The <literal>Workaround</literal> field indicates if a workaround is "
 "available to system administrators who cannot immediately patch the system ."
 msgstr ""
+"<literal>Workaround</literal> alanı, sistemlerine yamayı hemen indiremeyecek "
+"sistem yöneticilerine geçici bir çözüm olup olmadığını göstermektedir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27312
+#, fuzzy
 msgid ""
 "The <literal>Solution</literal> field provides the instructions for patching "
 "the affected system. This is a step by step tested and verified method for "
 "getting a system patched and working securely."
 msgstr ""
+"<literal>Solution</literal> alanı, etkilenmiş bir sisteme yamayı uygulamak "
+"için talimatları gösterir. Bu talimat, bir sisteme yamayı uygulamak ve "
+"güvenli bir şekilde çalışmasını sağlamak için adım adım test edilmiş ve "
+"onaylanmış bir yöntemdir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27319
+#, fuzzy
 msgid ""
 "The <literal>Correction Details</literal> field displays each affected "
 "Subversion branch with the revision number that contains the corrected code."
 msgstr ""
+"<literal>Correction Details</literal> alanı, etkilenmiş Subversion sınıfıyla "
+"onaylanmış kodu içeren revizyon numarasını gösterir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27325
+#, fuzzy
 msgid ""
 "The <literal>References</literal> field offers sources of additional "
 "information regarding the vulnerability."
 msgstr ""
+"<literal>References</literal> alanı güvenlik açığıyla ilgili ek bilgi içeren "
+"kaynakları önerir."
 
 #. (itstool) path: info/title
 #: book.translate.xml:27335
+#, fuzzy
 msgid "Process Accounting"
-msgstr ""
+msgstr "İşlem Kaydı ve Takibi"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:27343
+#, fuzzy
 msgid "<primary>Process Accounting</primary>"
-msgstr ""
+msgstr "<primary>İşlem Kaydı ve Takibi</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27347
+#, fuzzy
 msgid ""
 "Process accounting is a security method in which an administrator may keep "
 "track of system resources used and their allocation among users, provide for "
 "system monitoring, and minimally track a user's commands."
 msgstr ""
+"İşlem kaydı ve takibi, bir yöneticinin, kullanılan sistem kaynaklarını ve "
+"kullanıcılar arasında paylaştırıldığını, sistem izlemeyi mümkün kılabileceği "
+"ve bir kullanıcının komutlarını minimum düzeyde izleyebileceği bir güvenlik "
+"yöntemidir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27352
+#, fuzzy
 msgid ""
 "Process accounting has both positive and negative points. One of the "
 "positives is that an intrusion may be narrowed down to the point of entry. A "
@@ -36764,36 +37567,52 @@ msgid ""
 "space they may require. This section walks an administrator through the "
 "basics of process accounting."
 msgstr ""
+"İşlem kaydı ve takibinin hem pozitif hem de negatif yönleri vardır. Pozitif "
+"yönlerinden biri de bir izinsiz girişin giriş noktasına kadar "
+"kısıtlanabilir. Negatif olansa sistem günlüğü işlem kaydı ve takibi "
+"tarafından üretilmektedir bu yüzden diskte belli bir yer kaplarlar. Bu kısım "
+"yöneticiyi temel düzeyde işlem kaydı ve takibini nasıl yapabileceği "
+"konusunda yönlendirmektedir."
 
 #. (itstool) path: note/para
 #: book.translate.xml:27360
+#, fuzzy
 msgid ""
 "If more fine-grained accounting is needed, refer to <xref linkend=\"audit\"/"
 ">."
 msgstr ""
+"Daha ayrıntılı bir işlem kaydı ve takibi gerekliyse <xref linkend=\"audit\"/>"
+"'de bulabilirsin."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:27365
+#, fuzzy
 msgid "Enabling and Utilizing Process Accounting"
-msgstr ""
+msgstr "İşlem Kayıt ve Takibini Etkinleştirmek, Kullanmak"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27367
+#, fuzzy
 msgid ""
 "Before using process accounting, it must be enabled using the following "
 "commands:"
 msgstr ""
+"İşlem kaydını ve takibini kullanmadan önce, aşağıdaki komutlar kullanılarak "
+"etkinleştirilmesi gerekir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:27370
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>sysrc accounting_enable=yes</userinput>\n"
 "<prompt>#</prompt> <userinput>service accounting start</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>sysrc accounting_enable=yes</userinput>\n"
+"<prompt>#</prompt> <userinput>service accounting start</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27373
+#, fuzzy
 msgid ""
 "The accounting information is stored in files located in <filename>/var/"
 "account</filename>, which is automatically created, if necessary, the first "
@@ -36807,9 +37626,22 @@ msgid ""
 "<filename>/var/account</filename> directory to allow access only by "
 "<systemitem class=\"username\">root</systemitem>."
 msgstr ""
+"İlk kez kayıt ve takip servisi başlatılması gerektiğinde işlem kayıt ve "
+"takip bilgileri otomatik oluşturulan <filename>/var/account</filename> "
+"konumunda bulunan dosyaların içindeki dosyalarda saklanır. Bu dosyalar, "
+"kullanıcı tarafından kullanılan tüm komutları ve hassas bilgileri "
+"barındırmaktadır. Dosyalara yazma erişimi <systemitem class=\"username\""
+">root</systemitem> ile sınırlıdır ve okuma erişimi <systemitem class=\""
+"username\">root</systemitem> ve<systemitem class=\"groupname\""
+">wheel</systemitem> grubunun üyeleri ile sınırlıdır. <systemitem class=\""
+"groupname\">wheel</systemitem> üyelerinin dosyaları okumasını önlemek için "
+"<filename>/var/account</filename> dizininin modunu yalnızca <systemitem "
+"class=\"username\">root</systemitem> tarafından erişime izin verecek şekilde "
+"değiştirin."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27385
+#, fuzzy
 msgid ""
 "Once enabled, accounting will begin to track information such as "
 "<acronym>CPU</acronym> statistics and executed commands. All accounting logs "
@@ -36821,24 +37653,42 @@ msgid ""
 "<citerefentry><refentrytitle>sa</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> for the list of available options which control the output."
 msgstr ""
+"İşlem kaydı ve takibi aktif edildiğinde, <acronym>CPU</acronym> "
+"istatistikleri, derlenen komutları izlemeye başlayacaktır. Bütün işlem kayıt "
+"ve takibi sistem günlükleri, <command>sa</command> kullanılarak "
+"gözlemlenebilen fakat insan tarafından okunamayacak şekildedir. "
+"<command>sa</command> herhangi bir seçenek olmadan çıkartılırsa, kullanıcı "
+"başına arama sayısıyla ilgili bilgileri, bunun için dakika cinsinden geçen "
+"toplam süreyi, dakika cinsinden toplam <acronym>CPU</acronym> ve kullanıcı "
+"süresini ve ortalama <acronym>G/Ç</acronym> işlemi sayısı yazdırır. Bu "
+"çıktıyı kontrol edebilen kullanılabilir seçeneklerin listesi için <citerefent"
+"ry><refentrytitle>sa</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
+"'e bakın."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27396
+#, fuzzy
 msgid ""
 "To display the commands issued by users, use <command>lastcomm</command>. "
 "For example, this command prints out all usage of <command>ls</command> by "
 "<systemitem class=\"username\">trhodes</systemitem> on the <literal>ttyp1</"
 "literal> terminal:"
 msgstr ""
+"Kullanıcı tarafından girilen komutları görüntülemek için "
+"<command>lastcomm</command>'u kullanın. Örneğin, bu komut "
+"<literal>ttyp1</literal> terminali üzerinde, <systemitem class=\"username\""
+">trhodes</systemitem> tarafından <command>ls</command>'in tüm kullandığı "
+"komutları yazdırır:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:27401
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>lastcomm ls trhodes ttyp1</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>lastcomm ls trhodes ttyp1</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27403
+#, fuzzy
 msgid ""
 "Many other useful options exist and are explained in "
 "<citerefentry><refentrytitle>lastcomm</refentrytitle><manvolnum>1</"
@@ -36847,42 +37697,59 @@ msgid ""
 "<citerefentry><refentrytitle>sa</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>."
 msgstr ""
+"<citerefentry><refentrytitle>lastcomm</refentrytitle><manvolnum>1</manvolnum>"
+"</citerefentry>, <citerefentry><refentrytitle>acct</refentrytitle><manvolnum>"
+"5</manvolnum></citerefentry>, ve <citerefentry><refentrytitle>sa</refentrytit"
+"le><manvolnum>8</manvolnum></citerefentry>'de açıklanan bazı diğer "
+"kullanışlı seçenekler de bulunmaktadır."
 
 #. (itstool) path: info/title
 #: book.translate.xml:27410
+#, fuzzy
 msgid "Resource Limits"
-msgstr ""
+msgstr "Kaynak Sınırlandırıcıları"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:27418
+#, fuzzy
 msgid "<primary>Resource limits</primary>"
-msgstr ""
+msgstr "<primary>Kaynak Sınırlandırıcıları</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27422
+#, fuzzy
 msgid ""
 "FreeBSD provides several methods for an administrator to limit the amount of "
 "system resources an individual may use. Disk quotas limit the amount of disk "
 "space available to users. Quotas are discussed in <xref linkend=\"quotas\"/>."
 msgstr ""
+"FreeBSD, bir kullanıcının kullanabileceği sistem kaynaklarını "
+"sınırlandırabileceği çeşitli metotlar barındırmaktadır. Disk kotaları "
+"kullanıcılar için kullanılabilir disk alanını sınırlar. Kotalar, <xref "
+"linkend=\"quotas\"/>'de ele alınmıştır."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:27427
+#, fuzzy
 msgid "<primary>quotas</primary>"
-msgstr ""
+msgstr "<primary>Kotalar</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:27430
+#, fuzzy
 msgid "<primary>limiting users</primary> <secondary>quotas</secondary>"
 msgstr ""
+"<primary>kullanıcı sınırlamaları</primary> <secondary>kotalar</secondary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:27434 book.translate.xml:34282
+#, fuzzy
 msgid "<primary>disk quotas</primary>"
-msgstr ""
+msgstr "<primary>disk kotaları</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27438
+#, fuzzy
 msgid ""
 "Limits to other resources, such as <acronym>CPU</acronym> and memory, can be "
 "set using either a flat file or a command to configure a resource limits "
@@ -36893,44 +37760,66 @@ msgid ""
 "filename>, and rebuilding the password database. This can become time "
 "consuming, depending upon the number of users to configure."
 msgstr ""
+"<acronym>CPU</acronym> ve hafıza gibi diğer kaynaklarla ilgili "
+"sınırlandırmalar, kaynak sınırları veri tabanını yapılandırmak için düz bir "
+"kütük dosyası veya komut kullanılarak ayarlanabilir. Alışılagelmiş metot "
+"<filename>/etc/login.conf</filename>'i düzenleyerek giriş sınıflarını "
+"belirtmektedir. Bu metot hala desteklenmesine rağmen, kaynak veri tabanını "
+"tekrar oluşturmak, <filename>/etc/master.passwd</filename>'a gerekli "
+"değişikleri yapmak ve şifre veri tabanını tekrar oluşturmak için birkaç "
+"işlem adımı gerekmektedir. Bu, ayarlanması gereken kullanıcı sayısının "
+"miktarına bağlı olarak değişen bir zaman kaybıdır."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27450
+#, fuzzy
 msgid ""
 "<command>rctl</command> can be used to provide a more fine-grained method "
 "for controlling resource limits. This command supports more than user limits "
 "as it can also be used to set resource constraints on processes and jails."
 msgstr ""
+"<command>rctl</command>, kaynak limitlerini kontrol etmek için daha hassas "
+"bir metot ihtiyacını karşılamak için kullanılabilir. Bu komut, kullanıcı "
+"sınırlarından fazlasını desteklerken ayrıca işlemler ve hücre üzerinde "
+"kaynak kısıtlamalarının ayarlanmasında da kullanılabilir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27455
+#, fuzzy
 msgid ""
 "This section demonstrates both methods for controlling resources, beginning "
 "with the traditional method."
 msgstr ""
+"Bu bölüm, kaynakları kontrol etmek için geleneksel yöntemden başlayarak her "
+"iki yöntemi de göstermektedir."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:27459
+#, fuzzy
 msgid "Configuring Login Classes"
-msgstr ""
+msgstr "Giriş Sınıflarını Ayarlama"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:27461
+#, fuzzy
 msgid "<primary>limiting users</primary>"
-msgstr ""
+msgstr "<primary>kullanıcı sınırlamaları</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:27464
+#, fuzzy
 msgid "<primary>accounts</primary> <secondary>limiting</secondary>"
-msgstr ""
+msgstr "<primary>hesaplar</primary> <secondary>sınırlanıyor</secondary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:27468
+#, fuzzy
 msgid "<primary><filename>/etc/login.conf</filename></primary>"
-msgstr ""
+msgstr "<primary><filename>/etc/login.conf</filename></primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27472
+#, fuzzy
 msgid ""
 "In the traditional method, login classes and the resource limits to apply to "
 "a login class are defined in <filename>/etc/login.conf</filename>. Each user "
@@ -36942,25 +37831,39 @@ msgid ""
 "<replaceable>value</replaceable> is an arbitrary string which is processed "
 "accordingly depending on the <replaceable>name</replaceable>."
 msgstr ""
+"Geleneksel metotta, oturum açma sınıfları ve onlara uygulanacak kaynak "
+"sınırlandırmaları <filename>/etc/login.conf</filename> içinde "
+"tanımlanmıştır. Her hesap <literal>default</literal> varsayılan oturum açma "
+"sınıfında yer almalıdır. Her giriş sınıfının kendisiyle ilişkilendirilmiş "
+"bir dizi giriş özelliği vardır. Bir giriş özelliği bir <literal><replaceable>"
+"name</replaceable>=<replaceable>value</replaceable></literal> çiftidir. "
+"<replaceable>name</replaceable> iyi bilinen kimlik ve "
+"<replaceable>value</replaceable>'da ona bağlı olarak işlem gören keyfi bir "
+"karakter dizisidir."
 
 #. (itstool) path: note/para
 #: book.translate.xml:27486
+#, fuzzy
 msgid ""
 "Whenever <filename>/etc/login.conf</filename> is edited, the <filename>/etc/"
 "login.conf.db</filename> must be updated by executing the following command:"
 msgstr ""
+"<filename>/etc/login.conf</filename> her düzenlendiğinde, <filename>/etc/"
+"login.conf.db</filename> mutlaka aşağıdaki komut kullanımıyla tekrar "
+"derlenmelidir:"
 
 #. (itstool) path: note/screen
 #. (itstool) path: sect2/screen
 #. (itstool) path: sect3/screen
 #: book.translate.xml:27490 book.translate.xml:31024 book.translate.xml:43995
 #: book.translate.xml:55050
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>cap_mkdb /etc/login.conf</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>cap_mkdb /etc/login.conf</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27493
+#, fuzzy
 msgid ""
 "Resource limits differ from the default login capabilities in two ways. "
 "First, for every limit, there is a <firstterm>soft</firstterm> and "
@@ -36969,78 +37872,115 @@ msgid ""
 "limit may be lowered by the user, but can only be raised by the superuser. "
 "Second, most resource limits apply per process to a specific user."
 msgstr ""
+"Kaynak sınırlandırıcıları, varsayılan oturum açma özelliklerinden 2 farklı "
+"şekilde ayrılır. Birincisi, her sınırlandırma için <firstterm>alt</firstterm>"
+" ve <firstterm>üst</firstterm> sınırlar vardır. Alt sınır kullanıcı veya "
+"uygulama tarafından ayarlanabilir ancak sabit sınırdan daha yüksek bir "
+"değere ayarlanamayabilir. Üst sınır kullanıcı tarafından düşürülebilir ama "
+"sadece ana yönetici tarafından arttırılabilir. İkicisi, çoğu kaynak "
+"sınırlandırması her işlemi belirli bir kullanıcıya uygular."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27502
+#, fuzzy
 msgid ""
 "<xref linkend=\"resource-limits\"/> lists the most commonly used resource "
 "limits. All of the available resource limits and capabilities are described "
 "in detail in <citerefentry><refentrytitle>login.conf</"
 "refentrytitle><manvolnum>5</manvolnum></citerefentry>."
 msgstr ""
+"<xref linkend=\"resource-limits\"/>, sıkça kullanılan kaynak sınırlandırma "
+"listesidir. Tüm kullanılabilir kaynak sınırlandırmaları ve yetenekleri <citer"
+"efentry><refentrytitle>login.conf</refentrytitle><manvolnum>5</manvolnum></ci"
+"terefentry> içerisinde detaylandırılmıştır."
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:27507
+#, fuzzy
 msgid "<primary>limiting users</primary> <secondary>coredumpsize</secondary>"
 msgstr ""
+"<primary>Kullanıcı Sınırlandırmaları</primary> <secondary>Giriş "
+"Sınıfı</secondary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:27511
+#, fuzzy
 msgid "<primary>limiting users</primary> <secondary>cputime</secondary>"
 msgstr ""
+"<primary>Kullanıcı Sınırlandırılmaları</primary> "
+"<secondary>cputime</secondary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:27515
+#, fuzzy
 msgid "<primary>limiting users</primary> <secondary>filesize</secondary>"
 msgstr ""
+"<primary>Kullanıcı sınırlamaları</primary> <secondary>filesize</secondary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:27519
+#, fuzzy
 msgid "<primary>limiting users</primary> <secondary>maxproc</secondary>"
 msgstr ""
+"<primary>Kullanıcı sınırlamaları</primary> <secondary>maxproc</secondary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:27523
+#, fuzzy
 msgid "<primary>limiting users</primary> <secondary>memorylocked</secondary>"
 msgstr ""
+"<primary>kullanıcı sınırlamaları</primary> "
+"<secondary>memorylocked</secondary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:27527
+#, fuzzy
 msgid "<primary>limiting users</primary> <secondary>memoryuse</secondary>"
 msgstr ""
+"<primary>kullanıcı sınırlamaları</primary> <secondary>memoryuse</secondary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:27531
+#, fuzzy
 msgid "<primary>limiting users</primary> <secondary>openfiles</secondary>"
 msgstr ""
+"<primary>kullanıcı sınırlamaları</primary> <secondary>openfiles</secondary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:27535
+#, fuzzy
 msgid "<primary>limiting users</primary> <secondary>sbsize</secondary>"
 msgstr ""
+"<primary>kullanıcı sınırlamaları</primary> <secondary>sbsize</secondary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:27539
+#, fuzzy
 msgid "<primary>limiting users</primary> <secondary>stacksize</secondary>"
 msgstr ""
+"<primary>kullanıcı sınırlamaları</primary> <secondary>stacksize</secondary>"
 
 #. (itstool) path: table/title
 #: book.translate.xml:27545
+#, fuzzy
 msgid "Login Class Resource Limits"
-msgstr ""
+msgstr "Kaynak Sınırlandırıcıları Giriş Sınıfı"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27550
+#, fuzzy
 msgid "Resource Limit"
-msgstr ""
+msgstr "Kaynak Sınırlaması"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27557
+#, fuzzy
 msgid "coredumpsize"
-msgstr ""
+msgstr "coredumpsize"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27558
+#, fuzzy
 msgid ""
 "The limit on the size of a core file generated by a program is subordinate "
 "to other limits on disk usage, such as <literal>filesize</literal> or disk "
@@ -37049,14 +37989,23 @@ msgid ""
 "delete them, this setting may save them from running out of disk space "
 "should a large program crash."
 msgstr ""
+"Bir program tarafından oluşturulan çekirdek dosyanın boyutuna ilişkin sınır, "
+"<literal>filesize</literal> veya disk quotas gibi disk kullanımıyla ilgili "
+"diğer sınırlara tabidir. Bu sınır genellikle disk alanı kullanımını kontrol "
+"etmek için çok sıkı olmayan bir yöntem olarak kullanılır. Kullanıcılar "
+"çekirdek dosyalar oluşturmadıklarından ve genellikle silmediklerinden, bu "
+"ayar büyük bir program çökmesi durumunda disk alanınızın bitmesini "
+"önleyebilir."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27570
+#, fuzzy
 msgid "cputime"
-msgstr ""
+msgstr "cputime"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27571
+#, fuzzy
 msgid ""
 "The maximum amount of <acronym>CPU</acronym> time a user's process may "
 "consume. Offending processes will be killed by the kernel. This is a limit "
@@ -37064,27 +38013,39 @@ msgid ""
 "percentage of the <acronym>CPU</acronym> as displayed in some of the fields "
 "generated by <command>top</command> and <command>ps</command>."
 msgstr ""
+"Bir kullanıcı işleminin kullanabileceği maksimum <acronym>CPU</acronym> "
+"süresidir. Saldırgan eylemler çekirdek tarafından sonlandırılacaktır. Bu, "
+"<command>top</command> ve <command>ps</command> tarafından çalıştırılan bazı "
+"alanlarda görüntülenen <acronym>CPU</acronym> yüzdesi değil bir işleminin "
+"kullanabileceği <acronym>CPU</acronym> süresi için bir sınırdır."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27582
+#, fuzzy
 msgid "filesize"
-msgstr ""
+msgstr "filesize"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27583
+#, fuzzy
 msgid ""
 "The maximum size of a file the user may own. Unlike disk quotas (<xref "
 "linkend=\"quotas\"/>), this limit is enforced on individual files, not the "
 "set of all files a user owns."
 msgstr ""
+"Kullanıcının sahip olabileceği maksimum dosya boyutudur. Disk kotalarından "
+"farklı olarak (<xref linkend=\"quotas\"/>), bu sınır, kullanıcının sahip "
+"olduğu tüm dosyalar kümesinde değil, tek tek dosyalarda uygulanır."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27590
+#, fuzzy
 msgid "maxproc"
-msgstr ""
+msgstr "maxproc"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27591
+#, fuzzy
 msgid ""
 "The maximum number of foreground and background processes a user can run. "
 "This limit may not be larger than the system limit specified by "
@@ -37092,14 +38053,21 @@ msgid ""
 "user's productivity as some tasks, such as compiling a large program, start "
 "lots of processes."
 msgstr ""
+"Bir kullanıcının çalıştırabileceği maksimum ön plan ve arka plan işlemi "
+"sayısı. Bu sınır, <varname>kern.maxproc</varname> tarafından belirtilen "
+"sistem sınırından fazla olamaz. Kullanıcının büyük bir programı derleme gibi "
+"bazı görevler için çok sayıda işlem başlatması gerektiğinden bu sınırı çok "
+"küçük ayarlamak üretkenliği kısıtlayabilir."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27601
+#, fuzzy
 msgid "memorylocked"
-msgstr ""
+msgstr "memorylocked"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27602
+#, fuzzy
 msgid ""
 "The maximum amount of memory a process may request to be locked into main "
 "memory using <citerefentry><refentrytitle>mlock</refentrytitle><manvolnum>2</"
@@ -37108,89 +38076,133 @@ msgid ""
 "citerefentry>, lock into main memory so that if the system begins to swap, "
 "they do not contribute to disk thrashing."
 msgstr ""
+"Maksimum bellek miktarı, bir işlem için <citerefentry><refentrytitle>mlock</r"
+"efentrytitle><manvolnum>2</manvolnum></citerefentry> kullanarak, ana bellek "
+"miktarına tamamını kullanmayı talep edebilir. <citerefentry><refentrytitle>am"
+"d</refentrytitle><manvolnum>8</manvolnum></citerefentry> gibi sistem "
+"açısından kritik bazı programlar ana belleğin tamamını kullanmak ister, bu "
+"yüzden sistem veri getirip götürmeye başladığı zaman, diskin boşuna "
+"çalışmasının önüne geçilir."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27611
+#, fuzzy
 msgid "memoryuse"
-msgstr ""
+msgstr "memoryuse"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27612
+#, fuzzy
 msgid ""
 "The maximum amount of memory a process may consume at any given time. It "
 "includes both core memory and swap usage. This is not a catch-all limit for "
 "restricting memory consumption, but is a good start."
 msgstr ""
+"Bir işlemin herhangi bir zamanda tüketebileceği maksimum bellek miktarıdır. "
+"Hem çekirdek belleği hem de veri getirip götürme kullanım miktarını içerir. "
+"Bu, bellek tüketimini kısıtlamak için tüm bellek kullanım miktarının sınırı "
+"değil ancak iyi bir başlangıcıdır."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27620
+#, fuzzy
 msgid "openfiles"
-msgstr ""
+msgstr "openfiles"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27621
+#, fuzzy
 msgid ""
 "The maximum number of files a process may have open. In FreeBSD, files are "
 "used to represent sockets and <acronym>IPC</acronym> channels, so be careful "
 "not to set this too low. The system-wide limit for this is defined by "
 "<varname>kern.maxfiles</varname>."
 msgstr ""
+"Bir işlemin açmış olabileceği maksimum dosya sayısı olabilir. FreeBSD'de "
+"dosyalar soketleri ve <acronym>IPC</acronym> kanalları, temsilen "
+"kullanıldığından bunu çok düşük olacak biçimde ayarlamamaya dikkat edin. "
+"Bunun için sistemdeki sınırlar <varname>kern.maxfiles</varname> tarafından "
+"belirlenir."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27630
+#, fuzzy
 msgid "sbsize"
-msgstr ""
+msgstr "sbsize"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27631
+#, fuzzy
 msgid ""
 "The limit on the amount of network memory a user may consume. This can be "
 "generally used to limit network communications."
 msgstr ""
+"Kullanıcının kullanabileceği ağ belleği miktarın üzerinde sınırdır. Bu "
+"genellikle ağ iletişimini sınırlamak için kullanılabilir."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27637
+#, fuzzy
 msgid "stacksize"
-msgstr ""
+msgstr "stacksize"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27638
+#, fuzzy
 msgid ""
 "The maximum size of a process stack. This alone is not sufficient to limit "
 "the amount of memory a program may use, so it should be used in conjunction "
 "with other limits."
 msgstr ""
+"İşlem yığınının maksimum boyutudur. Bu tek başına bir programın "
+"kullanabileceği bellek miktarını sınırlamak için yeterli değildir, bu "
+"nedenle diğer sınırlarla birlikte kullanılmalıdır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27647
+#, fuzzy
 msgid "There are a few other things to remember when setting resource limits:"
 msgstr ""
+"Kaynak sınırlandırıcılarını kullanırken hatırlanması gereken bir kaç şey "
+"daha vardır:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27652
+#, fuzzy
 msgid ""
 "Processes started at system startup by <filename>/etc/rc</filename> are "
 "assigned to the <literal>daemon</literal> login class."
 msgstr ""
+"<filename>/etc/rc</filename> ile sistem başlangıcında başlatılan işlemler "
+"<literal>daemon</literal> oturum açma sınıfına atanır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27658
+#, fuzzy
 msgid ""
 "Although the default <filename>/etc/login.conf</filename> is a good source "
 "of reasonable values for most limits, they may not be appropriate for every "
 "system. Setting a limit too high may open the system up to abuse, while "
 "setting it too low may put a strain on productivity."
 msgstr ""
+"Varsayılan <filename>/etc/login.conf</filename>, çoğu sınırlandırıcılar için "
+"uygun değer kaynağı olsa da, her sistem için uygun olmayabilir. Çok yüksek "
+"bir limitin ayarlanması sistemi kötüye kullanıma yol açabilirken, çok düşük "
+"bir değere ayarlanması üretkenliği azaltabilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27667
+#, fuzzy
 msgid ""
 "<application>Xorg</application> takes a lot of resources and encourages "
 "users to run more programs simultaneously."
 msgstr ""
+"<application>Xorg</application> çok fazla kaynak kullanır ve kullanıcıları "
+"aynı anda daha fazla program çalıştırmasını desteklemektedir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27673
+#, fuzzy
 msgid ""
 "Many limits apply to individual processes, not the user as a whole. For "
 "example, setting <varname>openfiles</varname> to <literal>50</literal> means "
@@ -37199,9 +38211,17 @@ msgid ""
 "<literal>openfiles</literal> multiplied by the value of <literal>maxproc</"
 "literal>. This also applies to memory consumption."
 msgstr ""
+"Birçok sınır, kullanıcının bütün işlemleri değil, bireysel işlemler için "
+"geçerlidir. Örneğin, <varname>openfiles</varname>'ı <literal>50</literal> "
+"olarak ayarlanması, kullanıcının çalıştırdığı her işlemin en fazla "
+"<literal>50</literal> dosya açabileceği anlamına gelir. Bir kullanıcının "
+"açabileceği toplam dosya miktarı <literal>openfiles</literal>, değerinin "
+"<literal>maxproc</literal> ile çarpılmasıyla ortaya çıkan değerdir. Bu "
+"değer, bellek tüketimi için de geçerlidir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27684
+#, fuzzy
 msgid ""
 "For further information on resource limits and login classes and "
 "capabilities in general, refer to <citerefentry><refentrytitle>cap_mkdb</"
@@ -37210,26 +38230,38 @@ msgid ""
 "manvolnum></citerefentry>, and <citerefentry><refentrytitle>login.conf</"
 "refentrytitle><manvolnum>5</manvolnum></citerefentry>."
 msgstr ""
+"Kaynak sınırları ve giriş sınıfları ile genel olarak yetenekler hakkında "
+"daha fazla bilgi sahibi olmak için, <citerefentry><refentrytitle>cap_mkdb</re"
+"fentrytitle><manvolnum>1</manvolnum></citerefentry>, <citerefentry><refentryt"
+"itle>getrlimit</refentrytitle><manvolnum>2</manvolnum></citerefentry>, <citer"
+"efentry><refentrytitle>login.conf</refentrytitle><manvolnum>5</manvolnum></ci"
+"terefentry>’e bakın."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:27691
+#, fuzzy
 msgid "Enabling and Configuring Resource Limits"
-msgstr ""
+msgstr "Kaynak Sınırlandırıcılarını Ayarlamak ve Aktif Etmek"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27693
+#, fuzzy
 msgid ""
 "The <varname>kern.racct.enable</varname> tunable must be set to a non-zero "
 "value. Custom kernels require specific configuration:"
 msgstr ""
+"<varname>kern.racct.enable</varname> sıfır dışında bir değerde "
+"ayarlanmalıdır. Özel çekirdekler özel yapılandırmaya ihtiyaç duyar:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:27697
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "options         RACCT\n"
 "options         RCTL"
 msgstr ""
+"options         RACCT\n"
+"options         RCTL"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27700
