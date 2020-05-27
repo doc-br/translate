@@ -1,12 +1,13 @@
 # FreeBSD$
 # Doğan AHMETCİ <dogan.ahmetci@gmail.com>, 2020.
 # mltmngz <meltem_nigiz@hotmail.com>, 2020.
+# Alparslangurbuz <alparslangurbuz@hotmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-18 15:02-0300\n"
-"PO-Revision-Date: 2020-05-26 19:21+0000\n"
-"Last-Translator: mltmngz <meltem_nigiz@hotmail.com>\n"
+"PO-Revision-Date: 2020-05-27 17:39+0000\n"
+"Last-Translator: Alparslangurbuz <alparslangurbuz@hotmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -14064,11 +14065,13 @@ msgstr ""
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:10955
+#, fuzzy
 msgid "The X Window System"
-msgstr ""
+msgstr "X Pencere Sistemi"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10960
+#, fuzzy
 msgid ""
 "An installation of FreeBSD using <application>bsdinstall</application> does "
 "not automatically install a graphical user interface. This chapter describes "
@@ -14077,9 +14080,16 @@ msgid ""
 "then describes how to find and install a desktop environment or window "
 "manager."
 msgstr ""
+"FreeBSD'nin <application>bsdinstall</application> kullanılarak indirilmesi "
+"otomatik olarak bir grafik kullanıcı arayüzü indirmez. Bu bölüm açık kaynak "
+"X Pencere Sisteminin grafik bir çevre yaratmasını sağlayan <application> "
+"Xorg'un nasıl kurulup ve yapılandırılacağını açıklamaktadır. Daha sonra bir "
+"masaüstü ortamının ya da pencere yöneticisinin nasıl bulunup kurulacağını "
+"açıklar."
 
 #. (itstool) path: note/para
 #: book.translate.xml:10969
+#, fuzzy
 msgid ""
 "Users who prefer an installation method that automatically configures the "
 "<application>Xorg</application> should refer to <link xlink:href=\"https://"
@@ -14087,53 +14097,76 @@ msgid ""
 "\">GhostBSD</link> or <link xlink:href=\"https://www.midnightbsd.org"
 "\">MidnightBSD</link>."
 msgstr ""
+"<application>Xorg</application>'u otomatik olarak yapılandıran bir yükleme "
+"yöntemini tercih eden kullanıcılar<link xlink:href=\"https://www.furybsd."
+"org\">FuryBSD</link>, <link xlink:href=\"https://ghostbsd.org\""
+">GhostBSD</link> or <link xlink:href=\"https://www.midnightbsd.org\""
+">MidnightBSD</link>'a başvurmalıdırlar."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10976
+#, fuzzy
 msgid ""
 "For more information on the video hardware that <application>Xorg</"
 "application> supports, refer to the <link xlink:href=\"http://www.x.org/\">x."
 "org</link> website."
 msgstr ""
+"<application>Xorg</application>'un desteklediği video donanımı hakkında daha "
+"fazla bilgi için <link xlink:href=\"http://www.x.org/\">x.org</link> "
+"adresine bakın."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10983
+#, fuzzy
 msgid ""
 "The various components of the X Window System, and how they interoperate."
 msgstr ""
+"X Pencere Sisteminin çeşitli bileşenleri ve nasıl birlikte çalıştıkları."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10988
+#, fuzzy
 msgid "How to install and configure <application>Xorg</application>."
-msgstr ""
+msgstr "<application>Xorg</application> nasıl kurulur ve yapılandırılır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10993
+#, fuzzy
 msgid ""
 "How to install and configure several window managers and desktop "
 "environments."
 msgstr ""
+"Nasıl birkaç pencere yöneticisini ve masaüstü ortamını yükleme ve "
+"yapılandırma."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10998
+#, fuzzy
 msgid ""
 "How to use <trademark class=\"registered\">TrueType</trademark> fonts in "
 "<application>Xorg</application>."
 msgstr ""
+"<application>Xorg</application> da <trademark class=\"registered\""
+">TrueType</trademark> yazı tipi nasıl kullanılır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11003
+#, fuzzy
 msgid ""
 "How to set up your system for graphical logins (<application>XDM</"
 "application>)."
 msgstr ""
+"Sisteminizi grafik girişleri için ayarlama (<application>XDM</application>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11012
+#, fuzzy
 msgid ""
 "Know how to install additional third-party software as described in <xref "
 "linkend=\"ports\"/>."
 msgstr ""
+"<xref linkend=\"ports\"/> de anlatılan üçüncü- taraf yazılımlarının nasıl "
+"indirileceğini öğrenin."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:11019
