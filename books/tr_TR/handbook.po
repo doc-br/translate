@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-18 15:02-0300\n"
-"PO-Revision-Date: 2020-05-27 17:39+0000\n"
+"PO-Revision-Date: 2020-05-28 15:47+0000\n"
 "Last-Translator: Alparslangurbuz <alparslangurbuz@hotmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
@@ -14170,24 +14170,31 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:11019
+#, fuzzy
 msgid "Terminology"
-msgstr ""
+msgstr "Terminoloji"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:11021
+#, fuzzy
 msgid ""
 "While it is not necessary to understand all of the details of the various "
 "components in the X Window System and how they interact, some basic "
 "knowledge of these components can be useful."
 msgstr ""
+"X Pencere Sistemindeki çeşitli bileşenlerin bütün detaylarını ve nasıl "
+"etkileştiklerini anlamak gerekli olmasa da, bu bileşenler hakkındaki bazı "
+"temel bilgileri bilmek yararlı olabilir."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11028
+#, fuzzy
 msgid "X server"
-msgstr ""
+msgstr "X server"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11031
+#, fuzzy
 msgid ""
 "X was designed from the beginning to be network-centric, and adopts a "
 "<quote>client-server</quote> model. In this model, the <quote>X server</"
@@ -14200,14 +14207,26 @@ msgid ""
 "machine down the hall, and the <quote>X client</quote> to be the machine on "
 "their desk."
 msgstr ""
+"X, başından beri ağ- merkezli olacak şekilde ve <quote>istemci-sunucu</quote>"
+" modeli benimseyecek şekilde tasarlandı. Bu modelde <quote>X server</quote> "
+"klavye, monitör ve farenin bağlı olduğu bilgisayarda çalışır. Sunucunun "
+"sorumluluğu ekranı yönetme, klavyeden ve fareden giriş işleme, ve tablet ya "
+"da video projektör gibi diğer aygıtlardan giriş ya da çıkış işleme gibi "
+"görevleri içerir. \n"
+"Bu bazı insanların kafasını karıştırıyor, çünkü X terminoloji tam olarak "
+"bekledikleri şeye geri döndü. <quote>X server</quote>'ın ortamdaki büyük "
+"güçlü makine olmasını ve <quote>X istemci</quote> 'in masadaki makinenin "
+"olmasını bekliyorlar."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11048
+#, fuzzy
 msgid "X client"
-msgstr ""
+msgstr "X istemci"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11051
+#, fuzzy
 msgid ""
 "Each X application, such as <application>XTerm</application> or "
 "<application>Firefox</application>, is a <quote>client</quote>. A client "
@@ -14215,9 +14234,15 @@ msgid ""
 "coordinates</quote>, and the server sends back messages such as <quote>The "
 "user just clicked on the OK button</quote>."
 msgstr ""
+"<application>XTerm</application> yada <application>Firefox</application> "
+"gibi uygulamaların her biri birer <quote>istemci</quote>dir. Bir istemci "
+"server'a <quote>Lütfen bu koordinatlarda bir pencere çizin</quote> tarzı "
+"mesajlar gönderir ve server <quote>Kullanıcı Tamam butonuna tıkladı</quote> "
+"cevabını verir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11060
+#, fuzzy
 msgid ""
 "In a home or small office environment, the X server and the X clients "
 "commonly run on the same computer. It is also possible to run the X server "
@@ -14225,14 +14250,20 @@ msgid ""
 "system. In this scenario, the communication between the X client and server "
 "takes place over the network."
 msgstr ""
+"Ev yada küçük ofis ortamında X server ve X istemci çoğunlukla aynı "
+"bilgisayarda çalışır. Ayrıca X server'ı daha güçsüz bir bilgisayarda ve X "
+"uygulamalarını daha güçlü bir sistemde çalıştırmak mümkün. Bu senaryoda X "
+"istemcisi ve server arasındaki iletişim ağ üzerinde gerçekleşir."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11070
+#, fuzzy
 msgid "window manager"
-msgstr ""
+msgstr "pencere yöneticisi"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11073
+#, fuzzy
 msgid ""
 "X does not dictate what windows should look like on-screen, how to move them "
 "around with the mouse, which keystrokes should be used to move between "
@@ -14247,45 +14278,74 @@ msgid ""
 "are available in the <filename>x11-wm</filename> category of the Ports "
 "Collection."
 msgstr ""
+"X, pencerelerin ekranda nasıl görünmesi gerektiğini, fareyle nasıl hareket "
+"ettirileceğini, pencereler arasında hareket etmek için hangi tuşların "
+"kullanılması gerektiğini, her penceredeki başlık çubuklarının nasıl "
+"görünmesi gerektiğini, kapatma düğmelerine sahip olup olmadıklarını tarzı "
+"şeyleri dikte etmez. Bunun yerine X bu sorumluluğu ayrı bir pencere "
+"yöneticisi uygulamasına devreder. <link xlink:href=\"http://www.xwinman.org/"
+"\">dozens of window managers</link> mevcut. Her bir pencere yöneticisi "
+"farklı bir görünüm ve his sağlar: bazıları görsel masaüstleri destekler,  "
+"bazıları masaüstünü yönetmek için özelleştirilmiş tuş vuruşlarına izin "
+"verir, bazılarında  <quote>Başlat</quote> butonu vardır, ve bazıları da "
+"masaüstünün görünümünü ve hissiyatını değiştiren temalara sahiptir. Pencere "
+"yöneticileri  Port Collection kategorilerinden <filename>x11-wm</filename> "
+"içerisinde bulunur."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11089
+#, fuzzy
 msgid ""
 "Each window manager uses a different configuration mechanism. Some expect "
 "configuration file written by hand while others provide graphical tools for "
 "most configuration tasks."
 msgstr ""
+"Her pencere yöneticisi farklı bir yapılandırma mekanizması kullanır. "
+"Bazıları yapılandırma dosyasının elle yazılmasını beklerken, diğerleri çoğu "
+"yapılandırma görevi için grafik araçları sağlar."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11097
+#, fuzzy
 msgid "desktop environment"
-msgstr ""
+msgstr "masaüstü ortamı"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11100
+#, fuzzy
 msgid ""
 "<application>KDE</application> and <application>GNOME</application> are "
 "considered to be desktop environments as they include an entire suite of "
 "applications for performing common desktop tasks. These may include office "
 "suites, web browsers, and games."
 msgstr ""
+"<application>KDE</application> ve <application>GNOME</application> yaygın "
+"masaüstü görevlerini gerçekleştirmek için bir dizi uygulama içerdiklerinden "
+"masaüstü ortamları olarak kabul edilir. Bunlar ofis takımlarını, web "
+"tarayıcılarını ve oyunları içerebilir."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11109
+#, fuzzy
 msgid "focus policy"
-msgstr ""
+msgstr "odak politikası"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11112
+#, fuzzy
 msgid ""
 "The window manager is responsible for the mouse focus policy. This policy "
 "provides some means for choosing which window is actively receiving "
 "keystrokes and it should also visibly indicate which window is currently "
 "active."
 msgstr ""
+"Pencere yöneticisi fare odak politikasından sorumludur. Bu politika hangi "
+"pencerenin etkin olarak tuş vuruşlarını alacağını seçmek için bazı anlamlar "
+"sağlar ve ayrıca hangi pencerenin etkin olduğunu açıkça belirtmelidir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11118
+#, fuzzy
 msgid ""
 "One focus policy is called <quote>click-to-focus</quote>. In this model, a "
 "window becomes active upon receiving a mouse click. In the <quote>focus-"
@@ -14300,23 +14360,42 @@ msgid ""
 "in front of all other windows. All keystrokes will now be directed to this "
 "window, even if the cursor is moved to another window."
 msgstr ""
+"Odak politikamız <quote>odak-için-tıkla</quote>'dır. Bu modelde, bir pencere "
+"fare tıklaması aldığında etkin hale gelir. <quote>odak-takip-fare</quote> "
+"poltikasında, fare işaretçisinin altındaki pencere odaklıdır ve odak başka "
+"bir pencereye işaret edilerek değiştirilir. Fare dizin kökü pencerenin "
+"üzerinde ise pencere odaklanır. <quote>özensiz-odak</quote> modelinde fare "
+"eğer dizin kökü penceresi üzerinden hareket ettirilmiş ise en güncel "
+"kullanılmı pencere halen odaklıdır. Özensiz-odak ile odak geçerli pencereden "
+"çıkarken değiştirilmez odak yalnızca imleç yeni bir pencereye girdiğinde "
+"değiştirilir. <quote>odak-için-tıkla</quote> politikasında etkin pencere "
+"fare tıklaması ile seçilir. Pencere daha sonra yükseltirilebilir ve diğer "
+"tüm pencerelerin önünde görünebilir. İmleç başka bir pencereye taşınsa bile "
+"şimdi tüm tuş vuruşları bu pencereye yönlendirilecektir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11136
+#, fuzzy
 msgid ""
 "Different window managers support different focus models. All of them "
 "support click-to-focus, and the majority of them also support other "
 "policies. Consult the documentation for the window manager to determine "
 "which focus models are available."
 msgstr ""
+"Farklı pencere yöneticileri farklı odak modellerini destekler. Her biri odak-"
+"için-tıkla desteklidir, ve büyük bir çoğunluğu da ayrıca diğer politikaları "
+"da destekler. Hangi odaklama modellerinin mevcut olduğunu belirlemek için "
+"pencere yöneticisinin belgelerine bakın."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11145
+#, fuzzy
 msgid "widgets"
-msgstr ""
+msgstr "araçlar"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11148
+#, fuzzy
 msgid ""
 "Widget is a term for all of the items in the user interface that can be "
 "clicked or manipulated in some way. This includes buttons, check boxes, "
@@ -14327,61 +14406,88 @@ msgid ""
 "different look and feel, depending upon which widget toolkit was used to "
 "create the application."
 msgstr ""
+"Araç, kullanıcı arayüzünde ki tüm öğeler için bir şekilde tıklatılabilen "
+"veya ayarlanabilen bir terimdir. Bu düğmeler, onay kutuları, radyo "
+"düğmeleri, simgeler ve listeleri içerir. Bir araç kiti grafik uygulamalarını "
+"oluşturmak için kullanılan araçlardır. Bir kaç tane popüler araç kiti "
+"vardır, <application>KDE</application> tarafından kullanılan Qt, ve "
+"<application>GNOME</application> tarafından kullanılan GTK'yı içerir. Sonuç "
+"olarak, uygulama oluşturmak için hangi araç kitinin kullanıldığına bağlı "
+"olarak, uygulamaların farklı bir görünümü ve hissi olacaktır."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:11165
+#, fuzzy
 msgid "Installing <application>Xorg</application>"
-msgstr ""
+msgstr "<application>Xorg</application> indirmek"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:11167
+#, fuzzy
 msgid ""
 "On FreeBSD, <application>Xorg</application> can be installed as a package or "
 "port."
 msgstr ""
+"FreeBSD'de <application>Xorg</application> paket ve ya port olarak "
+"kurulabilir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:11170
+#, fuzzy
 msgid ""
 "The binary package can be installed quickly but with fewer options for "
 "customization:"
 msgstr ""
+"İkili paket hızlı bir şekilde kurulabilir, ancak daha az özelleştirme "
+"seçeneği ile:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:11173
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install xorg</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg install xorg</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:11175
+#, fuzzy
 msgid "To build and install from the Ports Collection:"
-msgstr ""
+msgstr "Ports Collection'dan kurmak ve indirmek için:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:11177
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/x11/xorg</userinput>\n"
 "<prompt>#</prompt> <userinput>make install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/x11/xorg</userinput>\n"
+"<prompt>#</prompt> <userinput>make install clean</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:11180
+#, fuzzy
 msgid ""
 "Either of these installations results in the complete <application>Xorg</"
 "application> system being installed. Binary packages are the best option for "
 "most users."
 msgstr ""
+"Bu kurulumlardan herhangi biri <application>Xorg</application> sisteminin "
+"tamamının kurulmasında etkili olur. İkili paketler çoğu kullanıcı için en "
+"iyi seçenektir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:11184
+#, fuzzy
 msgid ""
 "A smaller version of the X system suitable for experienced users is "
 "available in <package>x11/xorg-minimal</package>. Most of the documents, "
 "libraries, and applications will not be installed. Some applications require "
 "these additional components to function."
 msgstr ""
+"Deneyimli kullanıcılar için uygun olan X sisteminin daha küçük bir sürümü "
+"<package>x11/xorg-minimal</package> de mevcuttur. Belgelerin, kitaplıkların "
+"ve uygulamaların çoğu yüklenmeyecek. Bazı uygulamalar bu ek bileşenlerin "
+"çalışması için gereklidir."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:11192
