@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-18 15:00-0300\n"
-"PO-Revision-Date: 2020-05-18 10:17+0000\n"
+"PO-Revision-Date: 2020-05-29 20:12+0000\n"
 "Last-Translator: mkufner <MichaelKufner@t-online.de>\n"
 "Language-Team: German <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_building-products/de_DE/>\n"
@@ -526,6 +526,9 @@ msgid ""
 "As a way to support a Unix-like API in an otherwise proprietary OS, "
 "increasing its palatability for application developers."
 msgstr ""
+"Als Möglichkeit, eine unixoide API in einem ansonsten proprietären "
+"Betriebssystem zu unterstützen und damit die Benutzerfreundlichkeit für "
+"Anwendungsentwickler zu erhöhen."
 
 #. (itstool) path: listitem/simpara
 #: article.translate.xml:262
@@ -538,11 +541,20 @@ msgid ""
 "has effective vulnerability management and release engineering processes, "
 "the costs of keeping upto-date are kept low."
 msgstr ""
+"Hier werden Teile des FreeBSD-Kernels und der Anwendungsprogramme "
+"<quote>portiert</quote>, um neben anderen Tasks im proprietären "
+"Betriebssystem zu laufen. Die Verfügbarkeit einer stabilen und gut "
+"getesteten <trademark>Unix</trademark>-API-Implementierung kann den Aufwand "
+"für die Portierung verbreiteter Anwendungen auf das proprietäre "
+"Betriebssystem reduzieren. Da FreeBSD mit einer qualitativ hochwertigen "
+"Dokumentation seiner Interna ausgeliefert wird und über ein effektives "
+"Schwachstellen-Management und Release-Engineering-Prozesse verfügt, bleiben "
+"die Kosten zur Aufrechterhaltung der Aktualität gering."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:277
 msgid "Technologies"
-msgstr ""
+msgstr "Technologien"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:279
@@ -550,6 +562,8 @@ msgid ""
 "There are a large number of technologies supported by the FreeBSD project. A "
 "selection of these are listed below:"
 msgstr ""
+"Das FreeBSD-Projekt unterstützt eine Vielzahl von Technologien. Eine Auswahl "
+"ist im Folgenden aufgelistet:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:285
@@ -557,6 +571,8 @@ msgid ""
 "A complete system that can cross-host itself for <link xlink:href="
 "\"@@URL_RELPREFIX@@/platforms/\">many architectures:</link>"
 msgstr ""
+"Ein vollständiges System, das sich für <link xlink:href=\"@@URL_RELPREFIX@@@/"
+"platforms/\">viele Architekturen:</link> selbst cross-hosten kann."
 
 #. (itstool) path: listitem/simpara
 #: article.translate.xml:290
@@ -564,6 +580,9 @@ msgid ""
 "A modular symmetric multiprocessing capable kernel, with loadable kernel "
 "modules and a flexible and easy to use configuration system."
 msgstr ""
+"Ein modularer, symmetrischer, multiprozessorfähiger Kernel, mit nachladbaren "
+"Kernelmodulen und einem flexiblen und leicht zu bedienenden "
+"Konfigurationssystem."
 
 #. (itstool) path: listitem/simpara
 #: article.translate.xml:295
@@ -572,6 +591,9 @@ msgid ""
 "near machine speeds. Support for binary <trademark>Windows</trademark> "
 "(<acronym>NDIS</acronym>) network drivers."
 msgstr ""
+"Unterstützung für die Emulation von <trademark>Linux</trademark>- und SVR4-"
+"Binärdateien mit nahezu realer Geschwindigkeit. Unterstützung für binäre "
+"<trademark>Windows</trademark> (<acronym>NDIS</acronym>) Netzwerktreiber."
 
 #. (itstool) path: listitem/simpara
 #: article.translate.xml:302
@@ -580,6 +602,9 @@ msgid ""
 "thread support, in addition to a full <trademark>POSIX</trademark> like "
 "programming environment."
 msgstr ""
+"Bibliotheken für viele Programmieraufgaben: Archivierung, Unterstützung von "
+"FTP, HTTP und nebenläufiger Programmierung. All das auf Basis einer "
+"vollwertigen <trademark>POSIX</trademark>-konformen Plattform."
 
 #. (itstool) path: listitem/simpara
 #: article.translate.xml:308
