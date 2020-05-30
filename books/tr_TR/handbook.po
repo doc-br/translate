@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-18 15:02-0300\n"
-"PO-Revision-Date: 2020-05-29 20:12+0000\n"
+"PO-Revision-Date: 2020-05-30 20:46+0000\n"
 "Last-Translator: Alparslangurbuz <alparslangurbuz@hotmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
@@ -14668,6 +14668,7 @@ msgstr "Kernel Mod Ayarları (<acronym>KMS</acronym>)"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11279
+#, fuzzy
 msgid ""
 "When the computer switches from displaying the console to a higher screen "
 "resolution for X, it must set the video output <emphasis>mode</emphasis>. "
@@ -14680,58 +14681,87 @@ msgid ""
 "refentrytitle><manvolnum>4</manvolnum></citerefentry> console avoids this "
 "problem."
 msgstr ""
+"Bilgisayar X için konsolu görüntülemekten daha yüksek bir çözünürlüğe "
+"geçtiğinde, video çıkış <emphasis>mod</emphasis> 'nu ayarlamalı.  "
+"<acronym>Xorg</acronym>'un son sürümleri bu mod değişikliklerini daha etkin "
+"kılmak için çekirdek içi bir sistemi kullanıyor. FreeBSD'nin eski sürümleri "
+"<acronym>KMS</acronym> sisteminden habersiz olan <citerefentry><refentrytitle"
+">sc</refentrytitle><manvolnum>4</manvolnum></citerefentry> kullanıyor. Sonuç "
+"olarak X'i kapattıktan sonra hala çalışıyor olmasına rağmen sistem konsolu "
+"boştur. Daha yeni olan <citerefentry><refentrytitle>vt</refentrytitle><manvol"
+"num>4</manvolnum></citerefentry> konsolu bu problemi önler."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11290
+#, fuzzy
 msgid ""
 "Add this line to <filename>/boot/loader.conf</filename> to enable "
 "<citerefentry><refentrytitle>vt</refentrytitle><manvolnum>4</manvolnum></"
 "citerefentry>:"
 msgstr ""
+"<citerefentry><refentrytitle>vt</refentrytitle><manvolnum>4</manvolnum></cite"
+"refentry>'i etkileştirmek için bu satırı <filename>/boot/"
+"loader.conf</filename>'a ekleyin."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11293
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "kern.vty=vt"
-msgstr ""
+msgstr "kern.vty=vt"
 
 #. (itstool) path: sect2/title
 #. (itstool) path: sect1/title
 #: book.translate.xml:11297 book.translate.xml:21250 book.translate.xml:31763
+#, fuzzy
 msgid "Configuration Files"
-msgstr ""
+msgstr "Yapılandırma Dosyaları"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11299
+#, fuzzy
 msgid ""
 "Manual configuration is usually not necessary. Please do not manually create "
 "configuration files unless autoconfiguration does not work."
 msgstr ""
+"Manuel yapılandırma genellikle gerekli değildir. Otomatik yapılandırma "
+"çalışmadığı sürece lütfen yapılandırma dosyalarını manuel olarak "
+"oluşturmayın."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11306
+#, fuzzy
 msgid ""
 "<application>Xorg</application> looks in several directories for "
 "configuration files. <filename>/usr/local/etc/X11/</filename> is the "
 "recommended directory for these files on FreeBSD. Using this directory helps "
 "keep application files separate from operating system files."
 msgstr ""
+"<application>Xorg</application> yapılandırma dosyaları için çeşitli "
+"dizinlere bakar. <filename>/usr/local/etc/X11/</filename> FreeBSD'deki bu "
+"dosyalar için önerilen dizindir. Bu dizinin kullanılması, uygulama "
+"dosyalarının işletim sistemi dosyalarından ayrı tutulmasına yardımcı olur."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11313
+#, fuzzy
 msgid ""
 "Storing configuration files in the legacy <filename>/etc/X11/</filename> "
 "still works. However, this mixes application files with the base FreeBSD "
 "files and is not recommended."
 msgstr ""
+"Yapılandırma dosyalarını <filename>/etc/X11/</filename> da depolamak hala "
+"yarıyor. Ama bu uygulama dosyalarını temel FreeBSD dosyalarıyla karıştırır "
+"ve önerilmez."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:11320
+#, fuzzy
 msgid "Single or Multiple Files"
-msgstr ""
+msgstr "Tek veya Birden Çok Dosyalar"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11322
+#, fuzzy
 msgid ""
 "It is easier to use multiple files that each configure a specific setting "
 "than the traditional single <filename>xorg.conf</filename>. These files are "
@@ -14739,24 +14769,36 @@ msgid ""
 "configuration file directory. The full path is typically <filename>/usr/"
 "local/etc/X11/xorg.conf.d/</filename>."
 msgstr ""
+"Her biri belirli bir ayarı yapılandıran birden çok dosya kullanmak "
+"geleneksel tekli <filename>xorg.conf</filename>'dan daha kolaydır. Bu "
+"dosyalar ana yapılandırma dizinin alt dizini olan "
+"<filename>xorg.conf.d</filename>'de saklanır. Tümü genellikle <filename>/usr/"
+"local/etc/X11/xorg.conf.d/</filename>."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11330
+#, fuzzy
 msgid "Examples of these files are shown later in this section."
 msgstr ""
+"Bu dosyaların örnekleri bu bölümün ilerleyen kısımlarında gösterilmiştir."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11333
+#, fuzzy
 msgid ""
 "The traditional single <filename>xorg.conf</filename> still works, but is "
 "neither as clear nor as flexible as multiple files in the <filename>xorg."
 "conf.d/</filename> subdirectory."
 msgstr ""
+"Geleneksel tekli <filename>xorg.conf</filename> hala çalışıyor ama "
+"<filename>xorg.conf.d</filename> alt dizinindeki birden çok dosya kadar net "
+"veya esnek değildir."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11341
+#, fuzzy
 msgid "Video Cards"
-msgstr ""
+msgstr "Video Kartları"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11343
