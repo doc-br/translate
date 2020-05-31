@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-18 15:02-0300\n"
-"PO-Revision-Date: 2020-05-30 20:46+0000\n"
-"Last-Translator: sertacjr <barelyalive_1@hotmail.com>\n"
+"PO-Revision-Date: 2020-06-01 02:40+0000\n"
+"Last-Translator: Alparslangurbuz <alparslangurbuz@hotmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -14802,149 +14802,201 @@ msgstr "Video Kartları"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11343
+#, fuzzy
 msgid ""
 "Because of changes made in recent versions of FreeBSD, it is now possible to "
 "use graphics drivers provided by the Ports framework or as packages. As "
 "such, users can use one of the following drivers available from "
 "<package>graphics/drm-kmod</package>."
 msgstr ""
+"FreeBSD'nin son sürümlerinde yapılan değişiklikler sayesinde artık Ports "
+"çerçevesi tarafından sağlanan grafik sürücülerini kullanmak yada paket "
+"olarak kullanmak mümkün. Mesela, kullanıcılar <package>graphics/drm-"
+"kmod</package>'da bulunan aşağıdaki sürücülerden birini kullanabilirler."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11351
+#, fuzzy
 msgid "Intel KMS driver"
-msgstr ""
+msgstr "Intel KMS sürücüsü"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11352
+#, fuzzy
 msgid "Radeon KMS driver"
-msgstr ""
+msgstr "Radeon KMS sürücüsü"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11353
+#, fuzzy
 msgid "AMD KMS driver"
-msgstr ""
+msgstr "AMD KMS sürücüsü"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11356
+#, fuzzy
 msgid ""
 "2D and 3D acceleration is supported on most Intel KMS driver graphics cards "
 "provided by Intel."
 msgstr ""
+"2B ve 3B hızlandırma, Intel tarafından sağlanan çoğu Intel KMS sürücü grafik "
+"kartında desteklenir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11359
+#, fuzzy
 msgid "Driver name: <literal>i915kms</literal>"
-msgstr ""
+msgstr "Sürücü adı: <literal>i915kms</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11361
+#, fuzzy
 msgid ""
 "2D and 3D acceleration is supported on most older Radeon KMS driver graphics "
 "cards provided by AMD."
 msgstr ""
+"2D ve 3D hızlandırma, AMD tarafından sağlanan eski Radeon KMS sürücü grafik "
+"kartlarının çoğunda desteklenir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11364
+#, fuzzy
 msgid "Driver name: <literal>radeonkms</literal>"
-msgstr ""
+msgstr "Sürücü adı: <literal>radeonkms</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11366
+#, fuzzy
 msgid ""
 "2D and 3D acceleration is supported on most newer AMD KMS driver graphics "
 "cards provided by AMD."
 msgstr ""
+"2B ve 3B hızlandırma, AMD tarafından sağlanan en yeni AMD KMS sürücü grafik "
+"kartlarında desteklenir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11369
+#, fuzzy
 msgid "Driver name: <literal>amdgpu</literal>"
-msgstr ""
+msgstr "Sürücü adı: <literal>amdgpu</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11371
+#, fuzzy
 msgid ""
 "For reference, please see <link xlink:href=\"https://en.wikipedia.org/wiki/"
 "List_of_Intel_graphics_processing_units\"/> or <link xlink:href=\"https://en."
 "wikipedia.org/wiki/List_of_AMD_graphics_processing_units\"/> for a list of "
 "supported GPUs."
 msgstr ""
+"Referans olarak desteklenen GPUs listesi için bakınız: <link xlink:href=\""
+"https://en.wikipedia.org/wiki/List_of_Intel_graphics_processing_units\"/> or "
+"<link xlink:href=\"https://en.wikipedia.org/wiki/"
+"List_of_AMD_graphics_processing_units\"/>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11378
+#, fuzzy
 msgid "<trademark class=\"registered\">Intel</trademark>"
-msgstr ""
+msgstr "<trademark class=\"registered\">Intel</trademark>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11381
+#, fuzzy
 msgid ""
 "3D acceleration is supported on most <trademark class=\"registered\">Intel</"
 "trademark> graphics up to Ivy Bridge (HD Graphics 2500, 4000, and P4000), "
 "including Iron Lake (HD Graphics) and Sandy Bridge (HD Graphics 2000)."
 msgstr ""
+"3B hızlandırma çoğu <trademark class=\"registered\">Intel</trademark> "
+"grafiklerinde Ivy Bridge (HD Graphics 2500, 4000, and P4000), Lake (HD "
+"Graphics) and Sandy Bridge (HD Graphics 2000) dahil olmak üzere "
+"destekleniyor."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11386
+#, fuzzy
 msgid "Driver name: <literal>intel</literal>"
-msgstr ""
+msgstr "Sürücü adı: <literal>intel</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11388
+#, fuzzy
 msgid ""
 "For reference, see <link xlink:href=\"https://en.wikipedia.org/wiki/"
 "List_of_Intel_graphics_processing_units\"/>."
 msgstr ""
+"Referanslar için bakınız: <link xlink:href=\"https://en.wikipedia.org/wiki/"
+"List_of_Intel_graphics_processing_units\"/>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11393
+#, fuzzy
 msgid "<trademark class=\"registered\">AMD</trademark> Radeon"
-msgstr ""
+msgstr "<trademark class=\"registered\">AMD</trademark> Radeon"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11396
+#, fuzzy
 msgid ""
 "2D and 3D acceleration is supported on Radeon cards up to and including the "
 "HD6000 series."
 msgstr ""
+"2D ve 3D hızlandırma, HD6000 serisine kadar olan ve Rad6 kartlarda "
+"desteklenir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11399
+#, fuzzy
 msgid "Driver name: <literal>radeon</literal>"
-msgstr ""
+msgstr "Sürücü adı: <literal>radeon</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11401
+#, fuzzy
 msgid ""
 "For reference, see <link xlink:href=\"https://en.wikipedia.org/wiki/"
 "List_of_AMD_graphics_processing_units\"/>."
 msgstr ""
+"Referanslar için bakınız: <link xlink:href=\"https://en.wikipedia.org/wiki/"
+"List_of_AMD_graphics_processing_units\"/>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11406
+#, fuzzy
 msgid "NVIDIA"
-msgstr ""
+msgstr "NVIDIA"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11409
+#, fuzzy
 msgid ""
 "Several NVIDIA drivers are available in the <filename>x11</filename> "
 "category of the Ports Collection. Install the driver that matches the video "
 "card."
 msgstr ""
+"Ports Collection'ın <filename>x11</filename> kategorisinde çeşitli NVIDIA "
+"sürücüleri bulunmaktadır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11414
+#, fuzzy
 msgid ""
 "For reference, see <link xlink:href=\"https://en.wikipedia.org/wiki/"
 "List_of_Nvidia_graphics_processing_units\"/>."
 msgstr ""
+"Referanslar için bakınız: <link xlink:href=\"https://en.wikipedia.org/wiki/"
+"List_of_Nvidia_graphics_processing_units\"/>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11419
+#, fuzzy
 msgid "Hybrid Combination Graphics"
-msgstr ""
+msgstr "Hibrit Kombinasyon Grafikleri"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11422
+#, fuzzy
 msgid ""
 "Some notebook computers add additional graphics processing units to those "
 "built into the chipset or processor. <emphasis>Optimus</emphasis> combines "
@@ -14955,17 +15007,29 @@ msgid ""
 "an <trademark class=\"registered\">AMD</trademark> Radeon <acronym>GPU</"
 "acronym>."
 msgstr ""
+"Bazı dizüstü bilgisayarlar yonga setine veya işlemciye eklenmiş grafik işlem "
+"üniteleri ekler. <emphasis>Optimus</emphasis> <trademark class=\"registered\""
+">Intel</trademark> ve NVIDIA donanımlarını kombine eder. <emphasis>"
+"Switchable Graphics</emphasis> yada <emphasis>Hybrid Graphics</emphasis> <"
+"trademark class=\"registered\">Intel</trademark> yada <trademark class=\""
+"registered\">AMD</trademark> işlemcisinin ve <trademark class=\"registered\""
+">AMD</trademark> Radeon <acronym>GPU</acronym> tarafından kombine edilmiştir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11431
+#, fuzzy
 msgid ""
 "Implementations of these hybrid graphics systems vary, and "
 "<application>Xorg</application> on FreeBSD is not able to drive all versions "
 "of them."
 msgstr ""
+"Bu hibrit grafik sistemlerinin uygulamaları değişiklik gösterir, ve "
+"<application>Xorg</application> FreeBSD üzerinde bunların tüm sürümlerini "
+"kullanamaz."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11435
+#, fuzzy
 msgid ""
 "Some computers provide a <acronym>BIOS</acronym> option to disable one of "
 "the graphics adapters or select a <emphasis>discrete</emphasis> mode which "
@@ -14975,30 +15039,48 @@ msgid ""
 "can then be used with an <trademark class=\"registered\">Intel</trademark> "
 "driver."
 msgstr ""
+"Bazı bilgisayarlar, grafik bağdaştırıcılarından birini devre dışı bırakmak "
+"veya standart ekran kartı sürücülerinden biriyle kullanılabilen "
+"<emphasis>ayrı</emphasis> bir mod seçmek için bir <acronym>BIOS</acronym> "
+"seçeneği sunar. Mesela, bazen NVIDIA <acronym>GPU</acronym>'sunu Optimus "
+"siteminde devre dışı bırakmak mümkün. <trademark class=\"registered\""
+">Intel</trademark> videosu <trademark class=\"registered\">Intel</trademark> "
+"sürücüsü ile kullanılabilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11444
+#, fuzzy
 msgid ""
 "<acronym>BIOS</acronym> settings depend on the model of computer. In some "
 "situations, both <acronym>GPU</acronym>s can be left enabled, but creating a "
 "configuration file that only uses the main <acronym>GPU</acronym> in the "
 "<literal>Device</literal> section is enough to make such a system functional."
 msgstr ""
+"<acronym>BIOS</acronym> ayarları bilgisayarın modeline bağlıdır. Bazı "
+"durumlarda her iki <acronym>GPU</acronym> etkin bırakılabilr ama "
+"<literal>Aygıt</literal> bölmünde yer alan ana <acronym>GPU</acronym>'yu "
+"kullanan bir yapılandırma dosyası oluşturmak, böyle bir sistemi işlevsel "
+"hale getirmek için yeterlidir."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11455
+#, fuzzy
 msgid "Other Video Cards"
-msgstr ""
+msgstr "Diğer Video Kartları"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11458
+#, fuzzy
 msgid ""
 "Drivers for some less-common video cards can be found in the <filename>x11-"
 "drivers</filename> directory of the Ports Collection."
 msgstr ""
+"Bazı daha az yaygın ekran kartlarının sürücüleri, Ports Collection'ın "
+"<filename>x11-drivers</filename> dizininde bulunabilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11462
+#, fuzzy
 msgid ""
 "Cards that are not supported by a specific driver might still be usable with "
 "the <package>x11-drivers/xf86-video-vesa</package> driver. This driver is "
@@ -15007,42 +15089,60 @@ msgid ""
 "application> attempts to use this driver when a specific driver is not found "
 "for the video card."
 msgstr ""
+"Özel bir sürücü tarafından desteklenmeyen kartlar bir şekilde <package>"
+"x11-drivers/xf86-video-vesa</package> sürücüsü ile kullanılabilr. Bu sürücü "
+"<package>x11/xorg</package> tarafından indirilir. Ayrıca manuel olarak "
+"<package>x11-drivers/xf86-video-vesa</package> paketi olarakta "
+"indirilebilir. <application>Xorg</application> video kart için özel bir "
+"sürücü bulmadığında bu sürücüyü kullanamaya çalışır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11472
+#, fuzzy
 msgid ""
 "<package>x11-drivers/xf86-video-scfb</package> is a similar nonspecialized "
 "video driver that works on many <acronym>UEFI</acronym> and <trademark class="
 "\"registered\">ARM</trademark> computers."
 msgstr ""
+"<package>x11-drivers/xf86-video-scfb</package> sürücüsü bir çok "
+"<acronym>UEFI</acronym> and <trademark class=\"registered\">ARM</trademark> "
+"bilgisayarlarda çalışan özelleştirilmemiş benzer bir sürücüdür."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11479
+#, fuzzy
 msgid "Setting the Video Driver in a File"
-msgstr ""
+msgstr "Video Sürücüsünü Dosyada Ayarlama"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11482
+#, fuzzy
 msgid ""
 "To set the <trademark class=\"registered\">Intel</trademark> driver in a "
 "configuration file:"
 msgstr ""
+"<trademark class=\"registered\">Intel</trademark> sürücüsünü yapılandırma "
+"dosyasında ayarlamak için:"
 
 #. (itstool) path: example/title
 #: book.translate.xml:11486
+#, fuzzy
 msgid ""
 "Select <trademark class=\"registered\">Intel</trademark> Video Driver in a "
 "File"
 msgstr ""
+"Dosya içerisinde <trademark class=\"registered\">Intel</trademark> video "
+"sürücüsünü seçin"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11488
+#, fuzzy
 msgid "<filename>/usr/local/etc/X11/xorg.conf.d/driver-intel.conf</filename>"
-msgstr ""
+msgstr "<filename>/usr/local/etc/X11/xorg.conf.d/driver-intel.conf</filename>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:11490
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Section \"Device\"\n"
 "\tIdentifier \"Card0\"\n"
@@ -15050,92 +15150,127 @@ msgid ""
 "\t# BusID    \"PCI:1:0:0\"\n"
 "EndSection"
 msgstr ""
+"Section \"Device\"\n"
+"\tIdentifier \"Card0\"\n"
+"\tDriver     \"intel\"\n"
+"\t# BusID    \"PCI:1:0:0\"\n"
+"EndSection"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11496
+#, fuzzy
 msgid ""
 "If more than one video card is present, the <literal>BusID</literal> "
 "identifier can be uncommented and set to select the desired card. A list of "
 "video card bus <acronym>ID</acronym>s can be displayed with <command>pciconf "
 "-lv | grep -B3 display</command>."
 msgstr ""
+"Birden fazla ekran kartı varsa, <literal>BusID</literal> tanımlayıcısının "
+"açıklaması kaldırılır ve istenen kart olarak ayarlanır. Video kart "
+"<acronym>ID</acronym>lerinin bir listesi <command>pciconf -lv | grep -B3 "
+"display</command> ile görüntülenebilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11504
+#, fuzzy
 msgid "To set the Radeon driver in a configuration file:"
-msgstr ""
+msgstr "Radeon sürücüsünü bir yapılandırma dosyasında ayarlamak için:"
 
 #. (itstool) path: example/title
 #: book.translate.xml:11508
+#, fuzzy
 msgid "Select Radeon Video Driver in a File"
-msgstr ""
+msgstr "Bir Dosyada Radeon Video Sürücüsünü Seçin"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11510
+#, fuzzy
 msgid "<filename>/usr/local/etc/X11/xorg.conf.d/driver-radeon.conf</filename>"
-msgstr ""
+msgstr "<filename>/usr/local/etc/X11/xorg.conf.d/driver-radeon.conf</filename>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:11512
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Section \"Device\"\n"
 "\tIdentifier \"Card0\"\n"
 "\tDriver     \"radeon\"\n"
 "EndSection"
 msgstr ""
+"Section \"Device\"\n"
+"\tIdentifier \"Card0\"\n"
+"\tDriver     \"radeon\"\n"
+"EndSection"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11518
+#, fuzzy
 msgid "To set the <acronym>VESA</acronym> driver in a configuration file:"
 msgstr ""
+"<acronym>VESA</acronym> sürücüsünü bir yapılandırma dosyasında ayarlamak "
+"için:"
 
 #. (itstool) path: example/title
 #: book.translate.xml:11522
+#, fuzzy
 msgid "Select <acronym>VESA</acronym> Video Driver in a File"
-msgstr ""
+msgstr "Dosya içerisinde bir <acronym>VESA</acronym> Video Sürücüsünü seçin"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11525
+#, fuzzy
 msgid "<filename>/usr/local/etc/X11/xorg.conf.d/driver-vesa.conf</filename>"
-msgstr ""
+msgstr "<filename>/usr/local/etc/X11/xorg.conf.d/driver-vesa.conf</filename>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:11527
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Section \"Device\"\n"
 "\tIdentifier \"Card0\"\n"
 "\tDriver     \"vesa\"\n"
 "EndSection"
 msgstr ""
+"Section \"Device\"\n"
+"\tIdentifier \"Card0\"\n"
+"\tDriver     \"vesa\"\n"
+"EndSection"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11533
+#, fuzzy
 msgid ""
 "To set the <literal>scfb</literal> driver for use with a <acronym>UEFI</"
 "acronym> or <trademark class=\"registered\">ARM</trademark> computer:"
 msgstr ""
+"<literal>scfb</literal> sürücüsünü bir <acronym>UEFI</acronym> yada <"
+"trademark class=\"registered\">ARM</trademark> bilgisayarında kullanmak için:"
 
 #. (itstool) path: example/title
 #: book.translate.xml:11537
+#, fuzzy
 msgid "Select <literal>scfb</literal> Video Driver in a File"
-msgstr ""
+msgstr "Dosya içerisinde <literal>scfb</literal> Video Sürücüsü seçin"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11540
+#, fuzzy
 msgid "<filename>/usr/local/etc/X11/xorg.conf.d/driver-scfb.conf</filename>"
-msgstr ""
+msgstr "<filename>/usr/local/etc/X11/xorg.conf.d/driver-scfb.conf</filename>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:11542
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Section \"Device\"\n"
 "\tIdentifier \"Card0\"\n"
 "\tDriver     \"scfb\"\n"
 "EndSection"
 msgstr ""
+"Section \"Device\"\n"
+"\tIdentifier \"Card0\"\n"
+"\tDriver     \"scfb\"\n"
+"EndSection"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11553
