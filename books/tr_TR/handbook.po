@@ -4,12 +4,13 @@
 # Alparslangurbuz <alparslangurbuz@hotmail.com>, 2020.
 # sertacjr <barelyalive_1@hotmail.com>, 2020.
 # ibrahimkarapolat <kpibrahim79@gmail.com>, 2020.
+# onuraydin3 <crymzonx@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-18 15:02-0300\n"
 "PO-Revision-Date: 2020-06-01 02:40+0000\n"
-"Last-Translator: Alparslangurbuz <alparslangurbuz@hotmail.com>\n"
+"Last-Translator: onuraydin3 <crymzonx@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -70547,20 +70548,23 @@ msgstr ""
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:51044
+#, fuzzy
 msgid ""
 "<personname><firstname>Bill</firstname><surname>Lloyd</surname></"
 "personname><contrib>Original work by </contrib>"
-msgstr ""
+msgstr "Eser aslı: Bill Lloyd"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:51048
+#, fuzzy
 msgid ""
 "<personname><firstname>Jim</firstname><surname>Mock</surname></"
 "personname><contrib>Rewritten by </contrib>"
-msgstr ""
+msgstr "Jim Mock tarafından tekrar yazılmıştır"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:51058
+#, fuzzy
 msgid ""
 "<quote>Electronic Mail</quote>, better known as email, is one of the most "
 "widely used forms of communication today. This chapter provides a basic "
@@ -70568,90 +70572,123 @@ msgid ""
 "to sending and receiving email using FreeBSD. For more complete coverage of "
 "this subject, refer to the books listed in <xref linkend=\"bibliography\"/>."
 msgstr ""
+"E-posta olarak da bilinen <quote>Elektronik Posta</quote>, günümüzde en "
+"yaygın kullanılan iletişim şekillerinden biridir. Bu bölüm, FreeBSD "
+"kullanarak e-posta göndermek ve almanın yanı sıra, FreeBSD ile posta servisi "
+"yürütmek hakkında da bir giriş niteliğindedir. Bu konuyu daha kapsamlı "
+"incelemek için <xref linkend=\"kaynakça\"/>bölümüne göz atabilirsiniz."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51069
+#, fuzzy
 msgid ""
 "Which software components are involved in sending and receiving electronic "
 "mail."
 msgstr ""
+"Elektronik posta gönderme ve almada hangi yazılım bileşenleri bulunduğu."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51074
+#, fuzzy
 msgid ""
 "Where basic <application>Sendmail</application> configuration files are "
 "located in FreeBSD."
 msgstr ""
+"FreeBSD'deki temel <application>Sendmail</application> yapılandırma "
+"dosyaları nerede bulunduğu."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51079
+#, fuzzy
 msgid "The difference between remote and local mailboxes."
-msgstr ""
+msgstr "Uzak ve yerel posta kutuları arasındaki farkı."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51084
+#, fuzzy
 msgid "How to block spammers from illegally using a mail server as a relay."
 msgstr ""
+"Spam posta gönderen kişilerin, osta sunucularını yasadışı şekilde aktarıcı "
+"olarak kullanmasını engellemeyi."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51089
+#, fuzzy
 msgid ""
 "How to install and configure an alternate Mail Transfer Agent, replacing "
 "<application>Sendmail</application>."
 msgstr ""
+"<application>Sendmail</application> yerine alternatif bir Posta Aktarım "
+"Temsilcisi kurmayı."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51095
+#, fuzzy
 msgid "How to troubleshoot common mail server problems."
-msgstr ""
+msgstr "Sıkça karşılaşılan posta sunucusu sorunlarını gidermeyi."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51099
+#, fuzzy
 msgid "How to set up the system to send mail only."
-msgstr ""
+msgstr "Sadece posta göndermek için nasıl sistem kurulacağını."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51103
+#, fuzzy
 msgid "How to use mail with a dialup connection."
-msgstr ""
+msgstr "Çevirmeli bağlantı ile posta kullanmayı."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51107
+#, fuzzy
 msgid "How to configure SMTP authentication for added security."
-msgstr ""
+msgstr "Ek güvenlik için SMTP kimlik doğrulaması yapılandırmayı."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51112
+#, fuzzy
 msgid ""
 "How to install and use a Mail User Agent, such as <application>mutt</"
 "application>, to send and receive email."
 msgstr ""
+"E-posta göndermek ve almak için <application>mutt</application> gibi E-Posta "
+"programlarını kurmayı."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51118
+#, fuzzy
 msgid ""
 "How to download mail from a remote <acronym>POP</acronym> or <acronym>IMAP</"
 "acronym> server."
 msgstr ""
+"Uzak bir <acronym>POP</acronym> ya da <acronym>IMAP</acronym> sunucusundan "
+"posta indirmeyi."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51124
+#, fuzzy
 msgid "How to automatically apply filters and rules to incoming email."
-msgstr ""
+msgstr "Gelen postalara otomatik olarak filtre ve kurallar uygulamayı."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51133
+#, fuzzy
 msgid ""
 "Properly set up a network connection (<xref linkend=\"advanced-networking\"/"
 ">)."
 msgstr ""
+"Düzgün bir ağ bağlantısı kurmayı(<xref linkend=\"advanced-networking\"/>)."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51137
+#, fuzzy
 msgid ""
 "Properly set up the <acronym>DNS</acronym> information for a mail host "
 "(<xref linkend=\"network-servers\"/>)."
 msgstr ""
+"Bir ana makine için düzgün <acronym>DNS</acronym> kurmayı.(<xref linkend"
+"=\"network-servers\"/>)"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:51149
