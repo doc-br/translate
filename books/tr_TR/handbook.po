@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-18 15:02-0300\n"
-"PO-Revision-Date: 2020-06-01 08:37+0000\n"
-"Last-Translator: Alparslangurbuz <alparslangurbuz@hotmail.com>\n"
+"PO-Revision-Date: 2020-06-02 01:12+0000\n"
+"Last-Translator: ibrahimkarapolat <kpibrahim79@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -50614,6 +50614,7 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:35764
+#, fuzzy
 msgid ""
 "In FreeBSD, the <acronym>GEOM</acronym> framework permits access and control "
 "to classes, such as Master Boot Records and <acronym>BSD</acronym> labels, "
@@ -50622,6 +50623,12 @@ msgid ""
 "configurations, <acronym>GEOM</acronym> transparently provides access to the "
 "operating system and operating system utilities."
 msgstr ""
+"FreeBSD'de <acronym>GEOM</acronym> çerçevesi, Master Boot Records ve "
+"<acronym> BSD etiketleri</acronym> gibi türleri sağlayıcılar aracılığıyla "
+"veya <filename>dev'deki</filename> disk cihazları ile ulaşmanızı ve kontrol "
+"etmenize izin verir. <acronym>GEOM</acronym> Çeşitli <acronym>RAID "
+"konfigürasyonlarını destekleyerek şeffaf bir şekilde işletim sistemine ve "
+"işletim sistemi faydalarına erişimi sağlar."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:35772
@@ -50636,62 +50643,86 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:35784
+#, fuzzy
 msgid ""
 "What type of <acronym>RAID</acronym> support is available through "
 "<acronym>GEOM</acronym>."
 msgstr ""
+"<acronym>GEOM</acronym> aracılığıyla ne tür <acronym>RAID</acronym> desteği "
+"bulunur."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:35789
+#, fuzzy
 msgid ""
 "How to use the base utilities to configure, maintain, and manipulate the "
 "various <acronym>RAID</acronym> levels."
 msgstr ""
+"çeşitli <acronym>RAID</acronym> seviyelerini konfigüre etmek, bakımını "
+"yapmak ve manipüle etmek için temel faydalar nasıl kullanılır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:35795
+#, fuzzy
 msgid ""
 "How to mirror, stripe, encrypt, and remotely connect disk devices through "
 "<acronym>GEOM</acronym>."
 msgstr ""
+"<acronym>GEOM</acronym> aracılığıyla disk aygıtlarını yansıtma, şeritleme, "
+"şifreleme ve uzaktan bağlama nasıl yapılır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:35800
+#, fuzzy
 msgid ""
 "How to troubleshoot disks attached to the <acronym>GEOM</acronym> framework."
 msgstr ""
+"<acronym>GEOM</acronym> çerçevesine bağlı disklerdeki sorunlar nasıl "
+"giderilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:35809
+#, fuzzy
 msgid "Understand how FreeBSD treats disk devices (<xref linkend=\"disks\"/>)."
 msgstr ""
+"FreeBSD'nin disk cihazlarına nasıl davrandığını anlayın (<xref linkend=\""
+"disks\"/>)."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:35813
+#, fuzzy
 msgid ""
 "Know how to configure and install a new kernel (<xref linkend=\"kernelconfig"
 "\"/>)."
 msgstr ""
+"Yeni bir kernel'in nasıl yükleneceğini ve konfigüre edileceğini öğrenin(<"
+"xref linkend=\"kernelconfig\"/>)."
 
 #. (itstool) path: info/title
 #: book.translate.xml:35820
+#, fuzzy
 msgid "RAID0 - Striping"
-msgstr ""
+msgstr "RAID0- Striping"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:35831 book.translate.xml:36605 book.translate.xml:62430
+#, fuzzy
 msgid ""
 "<personname> <firstname>Murray</firstname> <surname>Stokely</surname> </"
 "personname>"
 msgstr ""
+"<personname> <firstname>Murray</firstname> <surname>Stokely</surname> "
+"</personname>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:35843
+#, fuzzy
 msgid "<primary>Striping</primary>"
-msgstr ""
+msgstr "<primary>Striping</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:35847
+#, fuzzy
 msgid ""
 "Striping combines several disk drives into a single volume. Striping can be "
 "performed through the use of hardware <acronym>RAID</acronym> controllers. "
@@ -50699,9 +50730,15 @@ msgid ""
 "disk striping, also known as <acronym>RAID0</acronym>, without the need for "
 "a <acronym>RAID</acronym> disk controller."
 msgstr ""
+"Bölümleme, birkaç diski tek bir birime dönüştürür. Bölümleme, "
+"<acronym>RAID</acronym> kontrolörleri aracılığıyla "
+"gerçekleştirilebilir.<acronym>GEOM</acronym> disk altsistemi dis bölümlemesi "
+"için yazılım desteği sağlar. Bu ayrıca <acronym>RAID0</acronym> a ihtiyaç "
+"duymayan disk kontrolörü olarak da bilinir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:35855
+#, fuzzy
 msgid ""
 "In <acronym>RAID0</acronym>, data is split into blocks that are written "
 "across all the drives in the array. As seen in the following illustration, "
@@ -50710,6 +50747,12 @@ msgid ""
 "disks in the array, offering superior <acronym>I/O</acronym> performance. "
 "This performance can be enhanced further by using multiple disk controllers."
 msgstr ""
+"<acronym>RAID0</acronym>' da veriler dizideki tüm sürücülere yazılan "
+"bloklara bölünür. Aşağıdaki şekilde görüldüğü gibi, bir diske 256k "
+"<acronym>RAID0</acronym> yazmak için sistemde beklemek yerine, aynı anda "
+"dizideki dört diskin her birine 64k yazabilir ve üstün <acronym>I/O</acronym>"
+" performans sunar. Bu performans, birden fazla disk denetleyicisi "
+"kullanılarak daha da artırılabilir."
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -50717,37 +50760,52 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:35866
+#, fuzzy
 msgctxt "_"
 msgid "external ref='geom/striping' md5='__failed__'"
-msgstr ""
+msgstr "harici referans= 'geom/bölümleme' md5=' '__başarısız__'"
 
 #. (itstool) path: sect1/mediaobject
 #: book.translate.xml:35864
+#, fuzzy
 msgid ""
 "<imageobject> <imagedata fileref=\"geom/striping\" align=\"center\"/> </"
 "imageobject> <textobject> <phrase>Disk Striping Illustration</phrase> </"
 "textobject>"
 msgstr ""
+"<imageobject> <imagedata fileref=\"geom/striping\" align=\"center\"/> "
+"</imageobject> <textobject> <phrase>Disk Bölümleme Şekli</phrase> "
+"</textobject>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:35874
+#, fuzzy
 msgid ""
 "Each disk in a <acronym>RAID0</acronym> stripe must be of the same size, "
 "since <acronym>I/O</acronym> requests are interleaved to read or write to "
 "multiple disks in parallel."
 msgstr ""
+"<acronym>RAID0</acronym> 'da şeritteki her disk aynı boyutta olmalıdır, "
+"çünkü <acronym>I/O</acronym> talepler paralel olarak birden çok diske okuma "
+"veya yazma için araya eklenir."
 
 #. (itstool) path: note/para
 #: book.translate.xml:35880
+#, fuzzy
 msgid ""
 "<acronym>RAID0</acronym> does <emphasis>not</emphasis> provide any "
 "redundancy. This means that if one disk in the array fails, all of the data "
 "on the disks is lost. If the data is important, implement a backup strategy "
 "that regularly saves backups to a remote system or device."
 msgstr ""
+"<acronym>RAID0</acronym> <emphasis></emphasis> herhangi bir fazlalık "
+"sağlamaz. Bu, dizideki bir disk arızalanırsa, disklerdeki tüm verilerin "
+"kaybedileceği anlamına gelir. Veriler önemliyse, yedekleri düzenli olarak "
+"uzaktaki bir sisteme veya cihaza kaydeden bir yedekleme stratejisi uygulayın."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:35887
+#, fuzzy
 msgid ""
 "The process for creating a software, <acronym>GEOM</acronym>-based "
 "<acronym>RAID0</acronym> on a FreeBSD system using commodity disks is as "
@@ -50756,62 +50814,86 @@ msgid ""
 "manvolnum></citerefentry> for more information on how to control an existing "
 "stripe."
 msgstr ""
+"Emtia disklerini kullanan bir FreeBSD sistemine <acronym>GEOM</acronym> "
+"dayanan <acronym>RAID0</acronym> bir yazılım oluşturma süreci aşağıdaki "
+"gibidir. Bölüm oluşturulduğunda, var olan bölümlerin nasıl kontrol edileceği "
+"hakkında daha fazla bilgi için <citerefentry><refentrytitle>gstripe'a "
+"</refentrytitle><manvolnum>8</manvolnum></citerefentry>başvurun."
 
 #. (itstool) path: procedure/title
 #: book.translate.xml:35894
+#, fuzzy
 msgid "Creating a Stripe of Unformatted <acronym>ATA</acronym> Disks"
-msgstr ""
+msgstr "Formatlanmamış <acronym>ATA</acronym> disklerin bölümlerini oluşturma"
 
 #. (itstool) path: step/para
 #: book.translate.xml:35898
+#, fuzzy
 msgid "Load the <filename>geom_stripe.ko</filename> module:"
-msgstr ""
+msgstr "<filename> geom_stripe.ko</filename> isimli modülü yükleyin:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:35901
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>kldload geom_stripe</userinput>"
-msgstr ""
+msgstr "<prompt>^#</prompt><userinput>kldload geom_stripe</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:35905
+#, fuzzy
 msgid ""
 "Ensure that a suitable mount point exists. If this volume will become a root "
 "partition, then temporarily use another mount point such as <filename>/mnt</"
 "filename>."
 msgstr ""
+"Uygun bir montaj noktasının olduğundan emin olun. Bu birim bir kök bölüm "
+"olacaksa, <filename>/mnt</filename> gibi geçici olarak başka bir bağlama "
+"noktası kullanın."
 
 #. (itstool) path: step/para
 #: book.translate.xml:35912
+#, fuzzy
 msgid ""
 "Determine the device names for the disks which will be striped, and create "
 "the new stripe device. For example, to stripe two unused and unpartitioned "
 "<acronym>ATA</acronym> disks with device names of <filename>/dev/ad2</"
 "filename> and <filename>/dev/ad3</filename>:"
 msgstr ""
+"Determine the device names for the disks which will be striped, and create "
+"the new stripe device. Örneğin, <filename>/dev/ad2</filename> ve <filename>/"
+"dev/ad3</filename> isminde kullanılmamış ve bölümlere "
+"ayrılmamış<acronym>ATA</acronym> iki disk cihazını bölümlemek için:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:35919
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>gstripe label -v st0 /dev/ad2 /dev/ad3</userinput>\n"
 "Metadata value stored on /dev/ad2.\n"
 "Metadata value stored on /dev/ad3.\n"
 "Done."
 msgstr ""
+"<prompt>#</prompt> <userinput>gstripe label -v st0 /dev/ad2 /dev/"
+"ad3</userinput>\n"
+"/dev/ad2.'da saklanan metadata değeri\n"
+"/dev/ad3' da saklanan metadata değeri\n"
+"bitti."
 
 #. (itstool) path: step/para
 #: book.translate.xml:35926
+#, fuzzy
 msgid ""
 "Write a standard label, also known as a partition table, on the new volume "
 "and install the default bootstrap code:"
 msgstr ""
+"Bölümleme tablosu olarak da bilinen standart bir etiketi yeni birime yazın "
+"ve varsayılan önyükleme kodunu yükleyin:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:35930
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>bsdlabel -wB /dev/stripe/st0</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>bsdlabel -wB /dev/bölüm/st0</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:35934
