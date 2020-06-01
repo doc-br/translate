@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-18 15:02-0300\n"
-"PO-Revision-Date: 2020-06-01 02:40+0000\n"
-"Last-Translator: onuraydin3 <crymzonx@gmail.com>\n"
+"PO-Revision-Date: 2020-06-01 08:37+0000\n"
+"Last-Translator: Alparslangurbuz <alparslangurbuz@hotmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -15275,11 +15275,13 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11553
+#, fuzzy
 msgid "Monitors"
-msgstr ""
+msgstr "Monitörler"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11555
+#, fuzzy
 msgid ""
 "Almost all monitors support the Extended Display Identification Data "
 "standard (<acronym>EDID</acronym>). <application>Xorg</application> uses "
@@ -15287,34 +15289,55 @@ msgid ""
 "supported resolutions and refresh rates. Then it selects the most "
 "appropriate combination of settings to use with that monitor."
 msgstr ""
+"Hemen hemen tüm monitörler Genişletilmiş Ekran Tanımlama Verileri "
+"standardını (<acronym>EDID</acronym>) destekler. "
+"<application>Xorg</application> monitörle iletişim kurmak ve desteklenen "
+"çözünürlükleri ve yenileme hızlarını algılamak için <acronym>EDID</acronym> "
+"kullanır. Ardından, bu monitörle kullanılacak en uygun ayar kombinasyonunu "
+"seçer."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11563
+#, fuzzy
 msgid ""
 "Other resolutions supported by the monitor can be chosen by setting the "
 "desired resolution in configuration files, or after the X server has been "
 "started with <citerefentry vendor=\"xfree86\"><refentrytitle>xrandr</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 msgstr ""
+"Monitör tarafından desteklenen diğer çözünürlükler, yapılandırma "
+"dosyalarında istenen çözünürlük ayarlanarak veya X sunucusu <citerefentry "
+"vendor=\"xfree86\""
+"><refentrytitle>xrandr</refentrytitle><manvolnum>1</manvolnum></citerefentry>"
+" ile başlatıldıktan sonra seçilebilir."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11570
+#, fuzzy
 msgid ""
 "Using <citerefentry vendor=\"xfree86\"><refentrytitle>xrandr</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>"
 msgstr ""
+"<citerefentry vendor=\"xfree86\""
+"><refentrytitle>xrandr</refentrytitle><manvolnum>1</manvolnum></citerefentry>"
+" kullanmak"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11573
+#, fuzzy
 msgid ""
 "Run <citerefentry vendor=\"xfree86\"><refentrytitle>xrandr</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> without any parameters "
 "to see a list of video outputs and detected monitor modes:"
 msgstr ""
+"Video çıkışlarının ve algılanan monitör modlarının listesini görmek için <"
+"citerefentry vendor=\"xfree86\""
+"><refentrytitle>xrandr</refentrytitle><manvolnum>1</manvolnum></citerefentry>"
+"'ı parametresiz çalıştırın:"
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:11576
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>xrandr</userinput>\n"
 "Screen 0: minimum 320 x 200, current 3000 x 1920, maximum 8192 x 8192\n"
@@ -15332,39 +15355,69 @@ msgid ""
 "DisplayPort-0 disconnected (normal left inverted right x axis y axis)\n"
 "HDMI-0 disconnected (normal left inverted right x axis y axis)"
 msgstr ""
+"<prompt>%</prompt> <userinput>xrandr</userinput>\n"
+"Screen 0: minimum 320 x 200, current 3000 x 1920, maximum 8192 x 8192\n"
+"DVI-0 connected primary 1920x1200+1080+0 (normal left inverted right x axis "
+"y axis) 495mm x 310mm\n"
+"   1920x1200     59.95*+\n"
+"   1600x1200     60.00\n"
+"   1280x1024     85.02    75.02    60.02\n"
+"   1280x960      60.00\n"
+"   1152x864      75.00\n"
+"   1024x768      85.00    75.08    70.07    60.00\n"
+"   832x624       74.55\n"
+"   800x600       75.00    60.32\n"
+"   640x480       75.00    60.00\n"
+"   720x400       70.08\n"
+"DisplayPort-0 disconnected (normal left inverted right x axis y axis)\n"
+"HDMI-0 disconnected (normal left inverted right x axis y axis)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11592
+#, fuzzy
 msgid ""
 "This shows that the <literal>DVI-0</literal> output is being used to display "
 "a screen resolution of 1920x1200 pixels at a refresh rate of about 60 Hz. "
 "Monitors are not attached to the <literal>DisplayPort-0</literal> and "
 "<literal>HDMI-0</literal> connectors."
 msgstr ""
+"Bu, <literal>DVI-0</literal> çıkışının 1920x1200 piksel ekran çözünürlüğünü "
+"yaklaşık 60 Hz yenileme hızında görüntülemek için kullanıldığını gösterir. "
+"Monitörler <literal>DisplayPort-0</literal> and <literal>HDMI-0</literal> "
+"bağlayıcılarına bağlı değildirler."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11599
+#, fuzzy
 msgid ""
 "Any of the other display modes can be selected with <citerefentry vendor="
 "\"xfree86\"><refentrytitle>xrandr</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>. For example, to switch to 1280x1024 at 60 Hz:"
 msgstr ""
+"Diğer ekran modlarından herhangi biri <citerefentry vendor=\"xfree86\""
+"><refentrytitle>xrandr</refentrytitle><manvolnum>1</manvolnum></citerefentry>"
+" ile seçilebilir. Örneğin, 60 Hz'de 1280x1024'e geçmek için:"
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:11603
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>xrandr --mode 1280x1024 --rate 60</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>xrandr --mode 1280x1024 --rate 60</userinput>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11605
+#, fuzzy
 msgid ""
 "A common task is using the external video output on a notebook computer for "
 "a video projector."
 msgstr ""
+"Ortak bir görev, video projektör için bir dizüstü bilgisayarda harici video "
+"çıkışını kullanmaktır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11608
+#, fuzzy
 msgid ""
 "The type and quantity of output connectors varies between devices, and the "
 "name given to each output varies from driver to driver. What one driver "
@@ -15373,10 +15426,17 @@ msgid ""
 "\"xfree86\"><refentrytitle>xrandr</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> to list all the available outputs:"
 msgstr ""
+"Çıkış bağlayıcılarının türü ve miktarı cihazlar arasında değişir ve her "
+"çıkışa verilen ad sürücüden sürücüye değişir Bir sürücü "
+"<literal>HDMI-1</literal> iken diğeri <literal>HDMI1</literal> olabilir. "
+"Dolayısıyla ilk adım mevcut tüm çıkışları listelemek için <citerefentry "
+"vendor=\"xfree86\""
+"><refentrytitle>xrandr</refentrytitle><manvolnum>1</manvolnum></citerefentry>"
+"'ı çalıştırmaktır:"
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:11616
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>xrandr</userinput>\n"
 "Screen 0: minimum 320 x 200, current 1366 x 768, maximum 8192 x 8192\n"
@@ -15397,17 +15457,41 @@ msgid ""
 "HDMI1 disconnected (normal left inverted right x axis y axis)\n"
 "DP1 disconnected (normal left inverted right x axis y axis)"
 msgstr ""
+"<prompt>%</prompt> <userinput>xrandr</userinput>\n"
+"Screen 0: minimum 320 x 200, current 1366 x 768, maximum 8192 x 8192\n"
+"LVDS1 connected 1366x768+0+0 (normal left inverted right x axis y axis) "
+"344mm x 193mm\n"
+"   1366x768      60.04*+\n"
+"   1024x768      60.00\n"
+"   800x600       60.32    56.25\n"
+"   640x480       59.94\n"
+"VGA1 connected (normal left inverted right x axis y axis)\n"
+"   1280x1024     60.02 +  75.02\n"
+"   1280x960      60.00\n"
+"   1152x864      75.00\n"
+"   1024x768      75.08    70.07    60.00\n"
+"   832x624       74.55\n"
+"   800x600       72.19    75.00    60.32    56.25\n"
+"   640x480       75.00    72.81    66.67    60.00\n"
+"   720x400       70.08\n"
+"HDMI1 disconnected (normal left inverted right x axis y axis)\n"
+"DP1 disconnected (normal left inverted right x axis y axis)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11635
+#, fuzzy
 msgid ""
 "Four outputs were found: the built-in panel <literal>LVDS1</literal>, and "
 "external <literal>VGA1</literal>, <literal>HDMI1</literal>, and "
 "<literal>DP1</literal> connectors."
 msgstr ""
+"Dört çıkış bulundu: yerleşik panel<literal>LVDS1</literal>, ve "
+"harici<literal>VGA1</literal>, <literal>HDMI1</literal>,ve "
+"<literal>DP1</literal> bağlayıcılar"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11640
+#, fuzzy
 msgid ""
 "The projector has been connected to the <literal>VGA1</literal> output. "
 "<citerefentry vendor=\"xfree86\"><refentrytitle>xrandr</"
@@ -15415,15 +15499,23 @@ msgid ""
 "that output to the native resolution of the projector and add the additional "
 "space to the right side of the desktop:"
 msgstr ""
+"Projectör <literal>VGA1</literal> çıkışına bağlanmıştır. <citerefentry "
+"vendor=\"xfree86\""
+"><refentrytitle>xrandr</refentrytitle><manvolnum>1</manvolnum></citerefentry>"
+" artık bu çıkışı projektörün doğal çözünürlüğüne ayarlamak ve masaüstünün "
+"sağ tarafına ek alan eklemek için kullanılır:"
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:11646
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>xrandr --output VGA1 --auto --right-of LVDS1</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>xrandr --output VGA1 --auto --right-of "
+"LVDS1</userinput>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11648
+#, fuzzy
 msgid ""
 "<literal>--auto</literal> chooses the resolution and refresh rate detected "
 "by <acronym>EDID</acronym>. If the resolution is not correctly detected, a "
@@ -15432,39 +15524,53 @@ msgid ""
 "used with a 1024x768 resolution, which is set with <literal>--mode 1024x768</"
 "literal>."
 msgstr ""
+"<literal>--auto</literal> <acronym>EDID</acronym> tarafından algılanan "
+"çözünürlük ve yenileme hızını seçer. Çözünürlük doğru algılanmazsa, "
+"<literal>--auto</literal> ifadesi yerine <literal>--mode</literal> ifadesi "
+"verilebilir. Mesela çoğu projectör <literal>--mode 1024x768</literal> ile "
+"ayarlanan 1024x768 çözünürlükte kullanılabilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11657
+#, fuzzy
 msgid ""
 "<citerefentry vendor=\"xfree86\"><refentrytitle>xrandr</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> is often run from "
 "<filename>.xinitrc</filename> to set the appropriate mode when X starts."
 msgstr ""
+"<citerefentry vendor=\"xfree86\"><refentrytitle>xrandr X açıldığında uygun "
+"modu ayarlamak için bazen <filename>.xinitrc</filename> tarafından "
+"başlatılır."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11664
+#, fuzzy
 msgid "Setting Monitor Resolution in a File"
-msgstr ""
+msgstr "Bir Dosyada Monitör Çözünürlüğünü Ayarlama"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11667
+#, fuzzy
 msgid "To set a screen resolution of 1024x768 in a configuration file:"
-msgstr ""
+msgstr "Bir yapılandırma dosyasında 1024x768 ekran çözünürlüğü ayarlamak için:"
 
 #. (itstool) path: example/title
 #: book.translate.xml:11671
+#, fuzzy
 msgid "Set Screen Resolution in a File"
-msgstr ""
+msgstr "Dosyada Ekran Çözünürlüğünü Ayarlama"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11673
+#, fuzzy
 msgid ""
 "<filename>/usr/local/etc/X11/xorg.conf.d/screen-resolution.conf</filename>"
 msgstr ""
+"<filename>/usr/local/etc/X11/xorg.conf.d/screen-resolution.conf</filename>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:11675
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Section \"Screen\"\n"
 "\tIdentifier \"Screen0\"\n"
@@ -15474,28 +15580,41 @@ msgid ""
 "\tEndSubSection\n"
 "EndSection"
 msgstr ""
+"Section \"Screen\"\n"
+"\tIdentifier \"Screen0\"\n"
+"\tDevice     \"Card0\"\n"
+"\tSubSection \"Display\"\n"
+"\tModes      \"1024x768\"\n"
+"\tEndSubSection\n"
+"EndSection"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11684
+#, fuzzy
 msgid ""
 "The few monitors that do not have <acronym>EDID</acronym> can be configured "
 "by setting <literal>HorizSync</literal> and <literal>VertRefresh</literal> "
 "to the range of frequencies supported by the monitor."
 msgstr ""
+"<acronym>EDID</acronym> olmayan bir kaç monitör <literal>HorizSync</literal> "
+"ve <literal>VertRefresh</literal> öğelerini monitör tarafından desteklenen "
+"frekans aralığına ayarlayarak yapılandırılabilir."
 
 #. (itstool) path: example/title
 #: book.translate.xml:11691
+#, fuzzy
 msgid "Manually Setting Monitor Frequencies"
-msgstr ""
+msgstr "Monitör Frekanslarını Manuel Olarak Ayarlama"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11693
+#, fuzzy
 msgid "<filename>/usr/local/etc/X11/xorg.conf.d/monitor0-freq.conf</filename>"
-msgstr ""
+msgstr "<filename>/usr/local/etc/X11/xorg.conf.d/monitor0-freq.conf</filename>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:11695
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Section \"Monitor\"\n"
 "\tIdentifier   \"Monitor0\"\n"
@@ -15503,6 +15622,11 @@ msgid ""
 "\tVertRefresh  50-76   # Hz\n"
 "EndSection"
 msgstr ""
+"Section \"Monitor\"\n"
+"\tIdentifier   \"Monitor0\"\n"
+"\tHorizSync    30-83   # kHz\n"
+"\tVertRefresh  50-76   # Hz\n"
+"EndSection"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11707
