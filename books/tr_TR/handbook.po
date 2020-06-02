@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-18 15:02-0300\n"
-"PO-Revision-Date: 2020-06-02 01:12+0000\n"
-"Last-Translator: ibrahimkarapolat <kpibrahim79@gmail.com>\n"
+"PO-Revision-Date: 2020-06-02 11:18+0000\n"
+"Last-Translator: Alparslangurbuz <alparslangurbuz@hotmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -15630,58 +15630,76 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11707
+#, fuzzy
 msgid "Input Devices"
-msgstr ""
+msgstr "Giriş cihazları"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:11710
+#, fuzzy
 msgid "Keyboards"
-msgstr ""
+msgstr "Klavyeler"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11714
+#, fuzzy
 msgid "Keyboard Layout"
-msgstr ""
+msgstr "Klavye düzeni"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11717
+#, fuzzy
 msgid ""
 "The standardized location of keys on a keyboard is called a "
 "<emphasis>layout</emphasis>. Layouts and other adjustable parameters are "
 "listed in <citerefentry vendor=\"xfree86\"><refentrytitle>xkeyboard-config</"
 "refentrytitle><manvolnum>7</manvolnum></citerefentry>."
 msgstr ""
+"Klavyedeki tuşların standartlaştırılmış konumuna <emphasis>düzen</emphasis> "
+"adı verilir. Düzenler ve diğer ayarlanabilir parametreler <citerefentry "
+"vendor=\"xfree86\"><refentrytitle>xkeyboard-"
+"config</refentrytitle><manvolnum>7</manvolnum></citerefentry>'de listelenir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11722
+#, fuzzy
 msgid ""
 "A United States layout is the default. To select an alternate layout, set "
 "the <literal>XkbLayout</literal> and <literal>XkbVariant</literal> options "
 "in an <literal>InputClass</literal>. This will be applied to all input "
 "devices that match the class."
 msgstr ""
+"Amerika Birleşik Devletleri düzeni varsayılan değerdir. Alternatif düzen "
+"seçmek için <literal>XkbLayout</literal> ve <literal>XkbVariant</literal> "
+"ayarlarını <literal>InputClass</literal> da ayarlayın. \n"
+"Bu, sınıfla eşleşen tüm giriş aygıtlarına uygulanır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11729
+#, fuzzy
 msgid ""
 "This example selects a French keyboard layout with the <literal>oss</"
 "literal> variant."
 msgstr ""
+"Bu örnek <literal>oss</literal> biçimiyle bir Fransızca klavye düzeni seçer."
 
 #. (itstool) path: example/title
 #: book.translate.xml:11733
+#, fuzzy
 msgid "Setting a Keyboard Layout"
-msgstr ""
+msgstr "Klavye Düzeni Ayarlama"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11735
+#, fuzzy
 msgid ""
 "<filename>/usr/local/etc/X11/xorg.conf.d/keyboard-fr-oss.conf</filename>"
 msgstr ""
+"<filename>/usr/local/etc/X11/xorg.conf.d/keyboard-fr-oss.conf</filename>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:11737
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Section\t\"InputClass\"\n"
 "\tIdentifier\t\"KeyboardDefaults\"\n"
@@ -15691,14 +15709,23 @@ msgid ""
 "\tOption\t\t\"XkbVariant\" \"oss\"\n"
 "EndSection"
 msgstr ""
+"Section\t\"InputClass\"\n"
+"\tIdentifier\t\"KeyboardDefaults\"\n"
+"\tDriver\t\t\"keyboard\"\n"
+"\tMatchIsKeyboard\t\"on\"\n"
+"\tOption\t\t\"XkbLayout\" \"fr\"\n"
+"\tOption\t\t\"XkbVariant\" \"oss\"\n"
+"EndSection"
 
 #. (itstool) path: example/title
 #: book.translate.xml:11747
+#, fuzzy
 msgid "Setting Multiple Keyboard Layouts"
-msgstr ""
+msgstr "Birden Çok Klavye Düzeni Ayarlama"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11749
+#, fuzzy
 msgid ""
 "Set United States, Spanish, and Ukrainian keyboard layouts. Cycle through "
 "these layouts by pressing <keycombo action=\"simul\"> <keycap>Alt</keycap> "
@@ -15706,16 +15733,23 @@ msgid ""
 "<package>x11/sbxkb</package> can be used for improved layout switching "
 "control and current layout indicators."
 msgstr ""
+"ABD, İspanyolca ve Ukraynaca klavye düzenlerini ayarlama. <keycombo action=\""
+"simul\"> <keycap>Alt</keycap> <keycap>Shift</keycap> </keycombo>. <package>"
+"x11/xxkb</package> or <package>x11/sbxkb</package>'e basarak Bu düzenler "
+"arasında geçiş yapmak gelişmiş düzen değiştirme kontrolü ve mevcut düzen "
+"göstergeleri için kullanılabilir."
 
 #. (itstool) path: example/para
 #: book.translate.xml:11760
+#, fuzzy
 msgid ""
 "<filename>/usr/local/etc/X11/xorg.conf.d/kbd-layout-multi.conf</filename>"
 msgstr ""
+"<filename>/usr/local/etc/X11/xorg.conf.d/kbd-layout-multi.conf</filename>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:11762
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Section\t\"InputClass\"\n"
 "\tIdentifier\t\"All Keyboards\"\n"
@@ -15723,34 +15757,47 @@ msgid ""
 "\tOption\t\t\"XkbLayout\" \"us, es, ua\"\n"
 "EndSection"
 msgstr ""
+"Section\t\"InputClass\"\n"
+"\tIdentifier\t\"All Keyboards\"\n"
+"\tMatchIsKeyboard\t\"yes\"\n"
+"\tOption\t\t\"XkbLayout\" \"us, es, ua\"\n"
+"EndSection"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11772
+#, fuzzy
 msgid "Closing <application>Xorg</application> From the Keyboard"
-msgstr ""
+msgstr "<application>Xorg</application>'u klavyeden kapatma"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11776
+#, fuzzy
 msgid ""
 "X can be closed with a combination of keys. By default, that key combination "
 "is not set because it conflicts with keyboard commands for some "
 "applications. Enabling this option requires changes to the keyboard "
 "<literal>InputDevice</literal> section:"
 msgstr ""
+"X bir tuş kombinasyonu ile kapatılabilir. Varsayılan olaraki bazı "
+"uygulamaların klavye komutları için çakıştığından o tuş kombinasyonu "
+"ayarlanmamıştır. Bu seçeneğin etkinleştirilmesi için "
+"<literal>InputDevice</literal> bölümünde değişiklik yapılması gerekir:"
 
 #. (itstool) path: example/title
 #: book.translate.xml:11784
+#, fuzzy
 msgid "Enabling Keyboard Exit from X"
-msgstr ""
+msgstr "X'ten Klavye Çıkışını Etkinleştirme"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11786
+#, fuzzy
 msgid "<filename>/usr/local/etc/X11/xorg.conf.d/keyboard-zap.conf</filename>"
-msgstr ""
+msgstr "<filename>/usr/local/etc/X11/xorg.conf.d/keyboard-zap.conf</filename>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:11788
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Section\t\"InputClass\"\n"
 "\tIdentifier\t\"KeyboardDefaults\"\n"
@@ -15759,108 +15806,153 @@ msgid ""
 "\tOption\t\t\"XkbOptions\" \"terminate:ctrl_alt_bksp\"\n"
 "EndSection"
 msgstr ""
+"Section\t\"InputClass\"\n"
+"\tIdentifier\t\"KeyboardDefaults\"\n"
+"\tDriver\t\t\"keyboard\"\n"
+"\tMatchIsKeyboard\t\"on\"\n"
+"\tOption\t\t\"XkbOptions\" \"terminate:ctrl_alt_bksp\"\n"
+"EndSection"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:11801
+#, fuzzy
 msgid "Mice and Pointing Devices"
-msgstr ""
+msgstr "Fareler ve İşaretleme Aygıtları"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11803
+#, fuzzy
 msgid ""
 "Many mouse parameters can be adjusted with configuration options. See "
 "<citerefentry vendor=\"xorg\"><refentrytitle>mousedrv</"
 "refentrytitle><manvolnum>4</manvolnum></citerefentry> for a full list."
 msgstr ""
+"Birçok fare parametresi yapılandırma seçenekleriyle ayarlanabilir. Tüm liste "
+"için bakınız: <citerefentry vendor=\"xorg\"><refentrytitle>mousedrv</refentry"
+"title><manvolnum>4</manvolnum></citerefentry>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11808
+#, fuzzy
 msgid "Mouse Buttons"
-msgstr ""
+msgstr "Fare Düğmeleri"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11811
+#, fuzzy
 msgid ""
 "The number of buttons on a mouse can be set in the mouse "
 "<literal>InputDevice</literal> section of <filename>xorg.conf</filename>. To "
 "set the number of buttons to 7:"
 msgstr ""
+"Bir faredeki düğme sayısı <filename>xorg.conf</filename>'un "
+"<literal>InputDevice</literal> bölümünde ayarlanabilir. Düğmelerin sayısını "
+"7 olarak ayarlamak için:"
 
 #. (itstool) path: example/title
 #: book.translate.xml:11817
+#, fuzzy
 msgid "Setting the Number of Mouse Buttons"
-msgstr ""
+msgstr "Fare Düğmesi Sayısını Ayarlama"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11819
+#, fuzzy
 msgid "<filename>/usr/local/etc/X11/xorg.conf.d/mouse0-buttons.conf</filename>"
-msgstr ""
+msgstr "<filename>/usr/local/etc/X11/xorg.conf.d/mouse0-buttons.conf</filename>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:11821
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Section \"InputDevice\"\n"
 "\tIdentifier  \"Mouse0\"\n"
 "\tOption      \"Buttons\" \"7\"\n"
 "EndSection"
 msgstr ""
+"Section \"InputDevice\"\n"
+"\tIdentifier  \"Mouse0\"\n"
+"\tOption      \"Buttons\" \"7\"\n"
+"EndSection"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11835
+#, fuzzy
 msgid ""
 "In some cases, <application>Xorg</application> autoconfiguration does not "
 "work with particular hardware, or a different configuration is desired. For "
 "these cases, a custom configuration file can be created."
 msgstr ""
+"Bazı durumlarda, <application>Xorg</application> otomatik yapılandırması "
+"belirli bir donanımla çalışmaz veya farklı bir yapılandırma istenir. Bu gibi "
+"durumlarda, özel bir yapılandırma dosyası oluşturulabilir."
 
 #. (itstool) path: warning/para
 #: book.translate.xml:11841
+#, fuzzy
 msgid ""
 "Do not create manual configuration files unless required. Unnecessary manual "
 "configuration can prevent proper operation."
 msgstr ""
+"Gerekmedikçe manuel yapılandırma dosyaları oluşturmayın. Gereksiz manuel "
+"yapılandırma düzgün çalışmayı engelleyebilir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11846
+#, fuzzy
 msgid ""
 "A configuration file can be generated by <application>Xorg</application> "
 "based on the detected hardware. This file is often a useful starting point "
 "for custom configurations."
 msgstr ""
+"Algılanan donanıma bağlı olarak <application>Xorg</application> tarafından "
+"bir yapılandırma dosyası oluşturulabilir. Bu dosya genellikle özel "
+"yapılandırmalar için kullanışlı bir başlangıç noktasıdır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11851
+#, fuzzy
 msgid "Generating an <filename>xorg.conf</filename>:"
-msgstr ""
+msgstr "Bir <filename>xorg.conf</filename> oluşturmak:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11853
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>Xorg -configure</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>Xorg -configure</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11855
+#, fuzzy
 msgid ""
 "The configuration file is saved to <filename>/root/xorg.conf.new</filename>. "
 "Make any changes desired, then test that file (using <option>-retro</option> "
 "so there is a visible background) with:"
 msgstr ""
+"Yapılandırma dosyası <filename>/root/xorg.conf.new</filename>'a kaydedildi. "
+"İstediğiniz değişiklikleri yapın, ardından bu dosyayı "
+"(<option>-retro</option> kullanarak görünür bir arka plan olacak şekilde) "
+"şununla test edin:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11860
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>Xorg -retro -config /root/xorg.conf.new</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>Xorg -retro -config /root/"
+"xorg.conf.new</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11862
+#, fuzzy
 msgid ""
 "After the new configuration has been adjusted and tested, it can be split "
 "into smaller files in the normal location, <filename>/usr/local/etc/X11/xorg."
 "conf.d/</filename>."
 msgstr ""
+"Yeni yapılandırma ayarlandıktan ve test edildikten sonra, normal konumdaki "
+"daha küçük dosyalara bölünebilir, <filename>/usr/local/etc/X11/xorg.conf.d/"
+"</filename>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:11880
