@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-18 15:02-0300\n"
 "PO-Revision-Date: 2020-06-03 17:04+0000\n"
-"Last-Translator: esradesteki <esradesteki20@gmail.com>\n"
+"Last-Translator: yami98 <yagmurkaya3625@hotmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -17948,6 +17948,7 @@ msgstr "Masaüstü Uygulamaları"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13191
+#, fuzzy
 msgid ""
 "While FreeBSD is popular as a server for its performance and stability, it "
 "is also suited for day-to-day use as a desktop. With over 24,000 "
@@ -17957,9 +17958,17 @@ msgid ""
 "web browsers, productivity software, document viewers, and financial "
 "software."
 msgstr ""
+"FreeBSD, performansı ve güvenirliği ile popüler bir sunucu olmakla birlikte, "
+"bir masaüstü olarak günlük kullanım için de uygundur. FreeBSD paketleri ve "
+"kapıları olmak üzere 24 binden fazla uygulaması ile geniş çeşitlilikte "
+"masaüstü uygulamaları çalıştırabilen kişiselleştirilmiş bir masaüstü "
+"oluşturmak kolaydır. Bu bölüm; ağ tarayıcıları, üretkenlik yazılımı, belge "
+"görüntüleyicileri ve finansal yazılım dahil olmak üzere birçok masaüstü "
+"uygulamasını nasıl kuracağınızı gösterir."
 
 #. (itstool) path: note/para
 #: book.translate.xml:13201
+#, fuzzy
 msgid ""
 "Users who prefer to install a pre-built desktop version of FreeBSD rather "
 "than configuring one from scratch should refer to <link xlink:href=\"https://"
@@ -17967,223 +17976,301 @@ msgid ""
 "\">GhostBSD</link> or <link xlink:href=\"https://www.midnightbsd.org"
 "\">MidnightBSD</link>."
 msgstr ""
+"En baştan yapılandırmak yerine FreeBSD'nin önceden hazırlanmış masaüstü "
+"sürümünü kurmayı tercih eden kullanıcılar takip eden bağlantılardan "
+"faydalanabilirler. <link xlink:href=\"https://www.furybsd.org\""
+">FuryBSD</link>, <link xlink:href=\"https://ghostbsd.org\">GhostBSD</link> "
+"veya <link xlink:href=\"https://www.midnightbsd.org\">MidnightBSD</link>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13208
+#, fuzzy
 msgid "Readers of this chapter should know how to:"
-msgstr ""
+msgstr "Bu bölümü okuyanlar şunları bilmelidir:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13212
+#, fuzzy
 msgid ""
 "Install additional software using packages or ports as described in <xref "
 "linkend=\"ports\"/>."
 msgstr ""
+"Paket ve kapıları kullanarak ek yazılım kurmak. <xref linkend=\"ports\"/> "
+"kısmında açıklanmıştır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13217
+#, fuzzy
 msgid "Install X and a window manager as described in <xref linkend=\"x11\"/>."
 msgstr ""
+"X'i ve bir pencere yöneticisini kurmak. <xref linkend=\"x11\"/> kısmında "
+"açıklanmıştır."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13222
+#, fuzzy
 msgid ""
 "For information on how to configure a multimedia environment, refer to <xref "
 "linkend=\"multimedia\"/>."
 msgstr ""
+"Bir çoklu ortam yapılandırmak için gerekli bilgi <xref linkend=\"multimedia\""
+"/> kısmındadır."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:13227
+#, fuzzy
 msgid "Browsers"
-msgstr ""
+msgstr "Tarayıcılar"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:13229
+#, fuzzy
 msgid "<primary>browsers</primary> <secondary>web</secondary>"
-msgstr ""
+msgstr "<primary>tarayıcılar</primary> <secondary>ağ</secondary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13234
+#, fuzzy
 msgid ""
 "FreeBSD does not come with a pre-installed web browser. Instead, the <link "
 "xlink:href=\"https://www.FreeBSD.org/ports/www.html\">www</link> category of "
 "the Ports Collection contains many browsers which can be installed as a "
 "package or compiled from the Ports Collection."
 msgstr ""
+"FreeBSD dahilinde önceden kurulmuş bir ağ tarayıcısı yoktur. Bunun yerine, "
+"Bağlantı Noktaları Koleksiyonu'ndaki <link xlink:href=\"https://www.FreeBSD."
+"org/ports/www.html\">www</link> kategorisi paket olarak veya Bağlantı "
+"Noktaları Koleksiyonu'ndan derlenmiş olarak kurulabilen birçok tarayıcıyı "
+"içerir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13240
+#, fuzzy
 msgid ""
 "The <application>KDE</application> and <application>GNOME</application> "
 "desktop environments include their own HTML browser. Refer to <xref linkend="
 "\"x11-wm\"/> for more information on how to set up these complete desktops."
 msgstr ""
+"<application>KDE</application> ve<application>GNOME</application> masaüstü "
+"ortamlarına kendi HTML tarayıcıları dahildir. Bu tamamlanmış masaüstü "
+"ortamlarını kurmak için daha fazla bilgi <xref linkend=\"x11-wm\"/> "
+"kısmındadır."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13246
+#, fuzzy
 msgid ""
 "Some lightweight browsers include <package>www/dillo2</package>, "
 "<package>www/links</package>, and <package>www/w3m</package>."
 msgstr ""
+"Bazı hafif tarayıcılara <package>www/dillo2</package>, <package>www/"
+"links</package>, ve <package>www/w3m</package> dahildir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13250
+#, fuzzy
 msgid ""
 "This section demonstrates how to install the following popular web browsers "
 "and indicates if the application is resource-heavy, takes time to compile "
 "from ports, or has any major dependencies."
 msgstr ""
+"Bu kısım, aşağıdaki popüler ağ tarayıcılarını nasıl kuracağınızı gösterir ve "
+"uygulamanın yoğun kaynaklı olup olmadığını, kapılardan derlenmesinin ne "
+"kadar vakit aldığını veya büyük bağımlılıklarının olup olmadığını belirtir."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13259 book.translate.xml:13422 book.translate.xml:13732
 #: book.translate.xml:13956
+#, fuzzy
 msgid "Application Name"
-msgstr ""
+msgstr "Uygulama Adı"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13260 book.translate.xml:13423 book.translate.xml:13733
 #: book.translate.xml:13957
+#, fuzzy
 msgid "Resources Needed"
-msgstr ""
+msgstr "Gerekli Kaynaklar"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13261 book.translate.xml:13424 book.translate.xml:13734
 #: book.translate.xml:13958
+#, fuzzy
 msgid "Installation from Ports"
-msgstr ""
+msgstr "Kapılardan Kurulum"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13262 book.translate.xml:17431 book.translate.xml:65535
+#, fuzzy
 msgid "Notes"
-msgstr ""
+msgstr "Notlar"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13268
+#, fuzzy
 msgid "<application>Firefox</application>"
-msgstr ""
+msgstr "<application>Firefox</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13269 book.translate.xml:13277 book.translate.xml:13285
+#, fuzzy
 msgid "medium"
-msgstr ""
+msgstr "orta"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13270 book.translate.xml:13278 book.translate.xml:13286
 #: book.translate.xml:13433 book.translate.xml:13448 book.translate.xml:13455
 #: book.translate.xml:13772 book.translate.xml:13967 book.translate.xml:13974
 #: book.translate.xml:13981
+#, fuzzy
 msgid "heavy"
-msgstr ""
+msgstr "yoğun"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13271
+#, fuzzy
 msgid ""
 "FreeBSD, <trademark class=\"registered\">Linux</trademark>, and localized "
 "versions are available"
 msgstr ""
+"FreeBSD, <trademark class=\"registered\">Linux</trademark>, ve "
+"yerelleştirilmiş sürümler mevcut"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13276
+#, fuzzy
 msgid "<application>Konqueror</application>"
-msgstr ""
+msgstr "<application>Konqueror</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13279
+#, fuzzy
 msgid "Requires <application>KDE</application> libraries"
-msgstr ""
+msgstr "<application>KDE</application> kitaplığı gerektirir"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13284
+#, fuzzy
 msgid "<application>Chromium</application>"
-msgstr ""
+msgstr "<application>Chromium</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13287
+#, fuzzy
 msgid "Requires <application>Gtk+</application>"
-msgstr ""
+msgstr "<application>Gtk+</application> gerektirir"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:13294
+#, fuzzy
 msgid "Firefox"
-msgstr ""
+msgstr "Firefox"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:13296
+#, fuzzy
 msgid "<primary><application>Firefox</application></primary>"
-msgstr ""
+msgstr "<primary><application>Firefox</application></primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13300
+#, fuzzy
 msgid ""
 "<application>Firefox</application> is an open source browser that features a "
 "standards-compliant HTML display engine, tabbed browsing, popup blocking, "
 "extensions, improved security, and more. <application>Firefox</application> "
 "is based on the <application>Mozilla</application> codebase."
 msgstr ""
+"<application>Firefox</application>, standartlara uyumlu bir HTML görüntüleme "
+"motoru, sekmeli göz atma, pop-up'ları engelleme, uzantılar, geliştirilmiş "
+"güvenlik ve daha fazlasını içeren bir açık kaynak kodlu tarayıcıdır. "
+"<application>Firefox</application>,<application>Mozilla</application> kod "
+"temeline dayanır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13307
+#, fuzzy
 msgid ""
 "To install the package of the latest release version of "
 "<application>Firefox</application>, type:"
 msgstr ""
+"<application>Firefox</application> uygulamasının piyasadaki son sürüm "
+"paketini kurmak için şunu yazın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13310
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install firefox</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg install firefox</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13312
+#, fuzzy
 msgid ""
 "To instead install <application>Firefox</application> Extended Support "
 "Release (ESR) version, use:"
 msgstr ""
+"Bunun yerine <application>Firefox</application> Genişletilmiş Destek "
+"Sürümü'nü (ESR) kurmak için şunu kullanın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13315
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install firefox-esr</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg install firefox-esr</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13317
+#, fuzzy
 msgid ""
 "The Ports Collection can instead be used to compile the desired version of "
 "<application>Firefox</application> from source code. This example builds "
 "<package>www/firefox</package>, where <literal>firefox</literal> can be "
 "replaced with the ESR or localized version to install."
 msgstr ""
+"Bunun yerine <application>Firefox</application>'un istenilen bir sürümünün "
+"kaynak kodundan derlenmesi için Bağlantı Noktaları Koleksiyonu "
+"kullanılabilir. Bu örnek, <package>www/firefox</package>'u oluşturur, "
+"kurulum için <literal>firefox</literal> ESR veya yerelleştirilmiş sürümle "
+"değiştirilebilir."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13324
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/www/firefox</userinput>\n"
 "<prompt>#</prompt> <userinput>make install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/www/firefox</userinput>\n"
+"<prompt>#</prompt> <userinput>make install clean</userinput>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:13329
+#, fuzzy
 msgid "Konqueror"
-msgstr ""
+msgstr "Konqueror"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:13331
+#, fuzzy
 msgid "<primary><application>Konqueror</application></primary>"
-msgstr ""
+msgstr "<primary><application>Konqueror</application></primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13335
+#, fuzzy
 msgid ""
 "<application>Konqueror</application> is more than a web browser as it is "
 "also a file manager and a multimedia viewer. It is included in the "
 "<package>x11/kde4-baseapps</package> package or port."
 msgstr ""
+"<application>Konqueror</application>, aynı zamanda bir dosya yöneticisi ve "
+"çoklu ortam görüntüleyici olduğundan bir ağ tarayıcısından fazlasıdır. "
+"<package>x11/kde4-baseapps</package> paket veya kapısı dahilindedir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13340
+#, fuzzy
 msgid ""
 "<application>Konqueror</application> supports WebKit as well as its own "
 "KHTML. WebKit is a rendering engine used by many modern browsers including "
@@ -18191,28 +18278,37 @@ msgid ""
 "FreeBSD, install the <package>www/kwebkitpart</package> package or port. "
 "This example installs the package:"
 msgstr ""
+"<application>Konqueror</application> kendi KHTML'sinin yanı sıra WebKit'i de "
+"destekler. WebKit, Chromium gibi pek çok yeni tarayıcı tarafından kullanılan "
+"bir yerleşim motorudur. FreeBSD'de WebKit'i "
+"<application>Konqueror</application> ile kullanmak için,<package>www/"
+"kwebkitpart</package> paket veya kapısını kurun. Şu örnek paketi kurar:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13347
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install kwebkitpart</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg install kwebkitpart</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13349
+#, fuzzy
 msgid "To install from the Ports Collection:"
-msgstr ""
+msgstr "Bağlantı Noktaları Koleksiyonu'ndan kurmak için:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13351
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/www/kwebkitpart</userinput>\n"
 "<prompt>#</prompt> <userinput>make install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/www/kwebkitpart</userinput>\n"
+"<prompt>#</prompt> <userinput>make install clean</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13354
+#, fuzzy
 msgid ""
 "To enable WebKit within <application>Konqueror</application>, click "
 "<quote>Settings</quote>, <quote>Configure Konqueror</quote>. In the "
@@ -18220,9 +18316,15 @@ msgid ""
 "<quote>Default web browser engine</quote> and change <quote>KHTML</quote> to "
 "<quote>WebKit</quote>."
 msgstr ""
+"WebKit'i <application>Konqueror</application> dahilinde devreye sokmak için, "
+"şuna tıklayın <quote>Settings</quote>, <quote>Configure Konqueror</quote>. "
+"<quote>General</quote> ayarlar sayfasında, <quote>Default web browser "
+"engine</quote>'in yanındaki açılır menüye tıklayın ve <quote>KHTML</quote>'i "
+"<quote>WebKit</quote> olarak değiştirin."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13362
+#, fuzzy
 msgid ""
 "<application>Konqueror</application> also supports <application><trademark "
 "class=\"registered\">Flash</trademark></application>. A <quote>How To</"
@@ -18231,19 +18333,29 @@ msgid ""
 "available at <uri xlink:href=\"http://freebsd.kde.org/howtos/konqueror-flash."
 "php\">http://freebsd.kde.org/howtos/konqueror-flash.php</uri>."
 msgstr ""
+"<application>Konqueror</application> aynı zamanda <application><trademark "
+"class=\"registered\">Flash</trademark></application>'ı da destekler. "
+"<application>Konqueror</application> üzerinde bir <application><trademark "
+"class=\"registered\">Flash</trademark></application> desteği almak için bir "
+"<quote>How To</quote> rehberi şurada mevcuttur: <urixlink:href=\""
+"http://freebsd.kde.org/howtos/konqueror-flash.php\">http://freebsd.kde.org/"
+"howtos/konqueror-flash.php</uri>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:13369
+#, fuzzy
 msgid "Chromium"
-msgstr ""
+msgstr "Chromium"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:13371
+#, fuzzy
 msgid "<primary><application>Chromium</application></primary>"
-msgstr ""
+msgstr "<primary><application>Chromium</application></primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13375
+#, fuzzy
 msgid ""
 "<application>Chromium</application> is an open source browser project that "
 "aims to build a safer, faster, and more stable web browsing experience. "
@@ -18251,49 +18363,68 @@ msgid ""
 "blocking, extensions, and much more. <application>Chromium</application> is "
 "the open source project upon which the Google Chrome web browser is based."
 msgstr ""
+"<application>Chromium</application> daha güvenli, daha hızlı ve daha sabit "
+"bir ağ tarama tecrübesi yaratmayı hedefleyen bir açık kaynak kodlu tarayıcı "
+"projesidir. <application>Chromium</application> sekmeli göz atma, pop-"
+"up'ları engelleme, uzantılar ve daha fazlasını sunar. "
+"<application>Chromium</application> Google Chrome ağ tarayıcısı için baz "
+"alınan açık kaynak kodlu projedir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13383
+#, fuzzy
 msgid ""
 "<application>Chromium</application> can be installed as a package by typing:"
 msgstr ""
+"<application>Chromium</application>'u paket olarak kurmak için şunu yazın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13386
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install chromium</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg install chromium</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13388
+#, fuzzy
 msgid ""
 "Alternatively, <application>Chromium</application> can be compiled from "
 "source using the Ports Collection:"
 msgstr ""
+"Bundan farklı olarak, <application>Chromium</application> Bağlantı Noktaları "
+"Koleksiyonu kullanılarak kaynaktan derlenebilir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13391
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/www/chromium</userinput>\n"
 "<prompt>#</prompt> <userinput>make install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/www/chromium</userinput>\n"
+"<prompt>#</prompt> <userinput>make install clean</userinput>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:13395
+#, fuzzy
 msgid ""
 "The executable for <application>Chromium</application> is <filename>/usr/"
 "local/bin/chrome</filename>, not <filename>/usr/local/bin/chromium</"
 "filename>."
 msgstr ""
+"<application>Chromium</application> için yürütülür dosya şudur: <filename>/"
+"usr/local/bin/chrome</filename>, <filename>/usr/local/bin/chromium</filename>"
+" değildir."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:13403
+#, fuzzy
 msgid "Productivity"
-msgstr ""
+msgstr "Verimlilik"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13405
+#, fuzzy
 msgid ""
 "When it comes to productivity, users often look for an office suite or an "
 "easy-to-use word processor. While some <link linkend=\"x11-wm\">desktop "
@@ -18302,6 +18433,13 @@ msgid ""
 "graphical word processors are available for FreeBSD, regardless of the "
 "installed window manager."
 msgstr ""
+"Söz konusu verimlilik olduğunda kullanıcılar sıklıkla bir ofis program "
+"paketi veya kullanılması kolay bir sözcük işlemcisi ararlar. Bazı <link "
+"linkend=\"x11-wm\"> masaüstü ortamları </link> "
+"(<application>KDE</application> gibi) bir ofis paketi sağlasalar da "
+"varsayılan bir verimlilik paketi yoktur. Kurulmuş olan pencere yöneticisi "
+"fark etmeksizin FreeBSD için pek çok ofis paketi ve grafik sözcük işlemcisi "
+"mevcuttur."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13413
