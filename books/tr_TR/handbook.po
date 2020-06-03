@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-18 15:02-0300\n"
-"PO-Revision-Date: 2020-06-03 17:04+0000\n"
-"Last-Translator: yami98 <yagmurkaya3625@hotmail.com>\n"
+"PO-Revision-Date: 2020-06-03 23:38+0000\n"
+"Last-Translator: esradesteki <esradesteki20@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -11469,11 +11469,11 @@ msgid ""
 "from the network."
 msgstr ""
 "FreeBSD, temel sistemin bir parçası olarak sistem gereçlerinin zengin "
-"koleksiyonu ile harmanlanmıştır. Ayrıca FreeBSD, üçüncü parti yazılımı "
-"kurmak için gerekli olan tamamlayıcı iki teknolojiyi de sağlar: kaynaktan "
-"kurulum için FreeBSD Portlar Koleksiyonu ve önceden oluşturulmuş ikililerden "
-"kurulum için paketler. Her iki yöntem de yazılımı yerel dağıtım ortamından "
-"ya da şebekeden kurmak için kullanılabilir."
+"koleksiyonu ile donanmıştır. Ayrıca FreeBSD, üçüncü parti yazılımı kurmak "
+"için gerekli olan tamamlayıcı iki teknolojiyi de sağlar: kaynaktan kurulum "
+"için FreeBSD Ports Collection ve önceden oluşturulmuş ikililerden kurulum "
+"için paketler. Her iki yöntem de yazılımı yerel dağıtım ortamından ya da "
+"şebekeden kurmak için kullanılabilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9150
@@ -11489,48 +11489,65 @@ msgstr "FreeBSD'ye port edilmiş üçüncü parti yazılımı nasıl bulunur."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9159
+#, fuzzy
 msgid "How to manage binary packages using <application>pkg</application>."
 msgstr ""
+"İkili paketler <application>pkg</application> kullanarak nasıl yönetilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9164
+#, fuzzy
 msgid ""
 "How to build third-party software from source using the Ports Collection."
 msgstr ""
+"Kaynaktan Ports Collection kullanarak üçüncü parti yazılımı nasıl "
+"oluşturulur."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9169
+#, fuzzy
 msgid ""
 "How to find the files installed with the application for post-installation "
 "configuration."
 msgstr ""
+"Kurulum sonrası konfigürasyonu için uygulamayla beraber yüklenmiş dosyalar "
+"nasıl bulunur."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9174
+#, fuzzy
 msgid "What to do if a software installation fails."
-msgstr ""
+msgstr "Yazılım kurulumu başarısız olduğunda ne yapılmalıdır."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:9180
+#, fuzzy
 msgid "Overview of Software Installation"
-msgstr ""
+msgstr "Yazılım Kurulumuna Genel Bakış"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9182
+#, fuzzy
 msgid ""
 "The typical steps for installing third-party software on a <trademark class="
 "\"registered\">UNIX</trademark> system include:"
 msgstr ""
+"Üçüncü parti yazılımını <trademark class=\"registered\">UNIX</trademark> "
+"sisteminde kurmak için gereken tipik adımlar şunlardır:"
 
 #. (itstool) path: step/para
 #: book.translate.xml:9187
+#, fuzzy
 msgid ""
 "Find and download the software, which might be distributed in source code "
 "format or as a binary."
 msgstr ""
+"Kaynak kodu biçiminde ya da bir ikili olarak dağıtılabilen yazılımı bulun ve "
+"indirin."
 
 #. (itstool) path: step/para
 #: book.translate.xml:9192
+#, fuzzy
 msgid ""
 "Unpack the software from its distribution format. This is typically a "
 "tarball compressed with a program such as "
@@ -11541,27 +11558,43 @@ msgid ""
 "citerefentry> or <citerefentry><refentrytitle>xz</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 msgstr ""
+"Yazılımı dağıtım formatından açın. Bu format genellikle <citerefentry><refent"
+"rytitle>compress</refentrytitle><manvolnum>1</manvolnum></citerefentry>, <cit"
+"erefentry><refentrytitle>gzip</refentrytitle><manvolnum>1</manvolnum></citere"
+"fentry>, <citerefentry><refentrytitle>bzip2</refentrytitle><manvolnum>1</manv"
+"olnum></citerefentry> ya da <citerefentry><refentrytitle>xz</refentrytitle><m"
+"anvolnum>1</manvolnum></citerefentry> gibi programlar ile sıkıştırılmış "
+"tarballdur."
 
 #. (itstool) path: step/para
 #: book.translate.xml:9199
+#, fuzzy
 msgid ""
 "Locate the documentation in <filename>INSTALL</filename>, <filename>README</"
 "filename> or some file in a <filename>doc/</filename> subdirectory and read "
 "up on how to install the software."
 msgstr ""
+"<filename>INSTALL</filename>, <filename>README</filename> altdizinindeki "
+"belgeyi ya da <filename>doc/</filename> altdizinindeki bazı dosyaları tespit "
+"edin ve yazılım kurulumu üzerine okuyup araştırın."
 
 #. (itstool) path: step/para
 #: book.translate.xml:9206
+#, fuzzy
 msgid ""
 "If the software was distributed in source format, compile it. This may "
 "involve editing a <filename>Makefile</filename> or running a "
 "<command>configure</command> script."
 msgstr ""
+"Yazılım kaynak biçimde dağıtılmışsa, derleyin. Bu, bir "
+"<filename>Makefile</filename> düzenlemeyi ya da <command>configure</command> "
+"komutunu çalıştırmayı içerebilir."
 
 #. (itstool) path: step/para
 #: book.translate.xml:9213
+#, fuzzy
 msgid "Test and install the software."
-msgstr ""
+msgstr "Yazılımı test edin ve kurun."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9217
