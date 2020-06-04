@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-18 15:02-0300\n"
 "PO-Revision-Date: 2020-06-05 07:23+0000\n"
-"Last-Translator: Alparslangurbuz <alparslangurbuz@hotmail.com>\n"
+"Last-Translator: yami98 <yagmurkaya3625@hotmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -18040,11 +18040,11 @@ msgid ""
 msgstr ""
 "FreeBSD, performansı ve güvenirliği ile popüler bir sunucu olmakla birlikte, "
 "bir masaüstü olarak günlük kullanım için de uygundur. FreeBSD paketleri ve "
-"kapıları olmak üzere 24 binden fazla uygulaması ile geniş çeşitlilikte "
-"masaüstü uygulamaları çalıştırabilen kişiselleştirilmiş bir masaüstü "
-"oluşturmak kolaydır. Bu bölüm; ağ tarayıcıları, üretkenlik yazılımı, belge "
-"görüntüleyicileri ve finansal yazılım dahil olmak üzere birçok masaüstü "
-"uygulamasını nasıl kuracağınızı gösterir."
+"bağlantı noktaları olmak üzere 24 binden fazla uygulaması ile geniş "
+"çeşitlilikte masaüstü uygulamaları çalıştırabilen kişiselleştirilmiş bir "
+"masaüstü oluşturmak kolaydır. Bu bölüm; ağ tarayıcıları, üretkenlik "
+"yazılımı, belge görüntüleyicileri ve finansal yazılım dahil olmak üzere "
+"birçok masaüstü uygulamasını nasıl kuracağınızı gösterir."
 
 #. (itstool) path: note/para
 #: book.translate.xml:13201
@@ -18075,8 +18075,8 @@ msgid ""
 "Install additional software using packages or ports as described in <xref "
 "linkend=\"ports\"/>."
 msgstr ""
-"Paket ve kapıları kullanarak ek yazılım kurmak. <xref linkend=\"ports\"/> "
-"kısmında açıklanmıştır."
+"Paketleri ve bağlantı noktalarını kullanarak ek yazılım kurmak. <xref "
+"linkend=\"ports\"/> kısmında açıklanmıştır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13217
@@ -18118,10 +18118,9 @@ msgid ""
 "package or compiled from the Ports Collection."
 msgstr ""
 "FreeBSD dahilinde önceden kurulmuş bir ağ tarayıcısı yoktur. Bunun yerine, "
-"Bağlantı Noktaları Koleksiyonu'ndaki <link xlink:href=\"https://www.FreeBSD."
-"org/ports/www.html\">www</link> kategorisi paket olarak veya Bağlantı "
-"Noktaları Koleksiyonu'ndan derlenmiş olarak kurulabilen birçok tarayıcıyı "
-"içerir."
+"Ports Collection'daki <link xlink:href=\"https://www.FreeBSD.org/ports/www."
+"html\">www</link> kategorisi paket olarak veya Ports Collection'dan "
+"derlenmiş olarak kurulabilen birçok tarayıcıyı içerir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13240
@@ -18155,8 +18154,9 @@ msgid ""
 "from ports, or has any major dependencies."
 msgstr ""
 "Bu kısım, aşağıdaki popüler ağ tarayıcılarını nasıl kuracağınızı gösterir ve "
-"uygulamanın yoğun kaynaklı olup olmadığını, kapılardan derlenmesinin ne "
-"kadar vakit aldığını veya büyük bağımlılıklarının olup olmadığını belirtir."
+"uygulamanın yoğun kaynaklı olup olmadığını, bağlantı noktalarından "
+"derlenmesinin ne kadar vakit aldığını veya büyük bağımlılıklarının olup "
+"olmadığını belirtir."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13259 book.translate.xml:13422 book.translate.xml:13732
@@ -18177,7 +18177,7 @@ msgstr "Gerekli Kaynaklar"
 #: book.translate.xml:13958
 #, fuzzy
 msgid "Installation from Ports"
-msgstr "Kapılardan Kurulum"
+msgstr "Bağlantı Noktalarından Kurulum"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13262 book.translate.xml:17431 book.translate.xml:65535
@@ -18309,9 +18309,9 @@ msgid ""
 "replaced with the ESR or localized version to install."
 msgstr ""
 "Bunun yerine <application>Firefox</application>'un istenilen bir sürümünün "
-"kaynak kodundan derlenmesi için Bağlantı Noktaları Koleksiyonu "
-"kullanılabilir. Bu örnek, <package>www/firefox</package>'u oluşturur, "
-"kurulum için <literal>firefox</literal> ESR veya yerelleştirilmiş sürümle "
+"kaynak kodundan derlenmesi için Ports Collection kullanılabilir. Bu örnek, "
+"<package>www/firefox</package>'u oluşturur, kurulum için "
+"<literal>firefox</literal> ESR veya yerelleştirilmiş sürümle "
 "değiştirilebilir."
 
 #. (itstool) path: sect2/screen
@@ -18346,7 +18346,8 @@ msgid ""
 msgstr ""
 "<application>Konqueror</application>, aynı zamanda bir dosya yöneticisi ve "
 "çoklu ortam görüntüleyici olduğundan bir ağ tarayıcısından fazlasıdır. "
-"<package>x11/kde4-baseapps</package> paket veya kapısı dahilindedir."
+"<package>x11/kde4-baseapps</package> paket veya bağlantı noktası "
+"dahilindedir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13340
@@ -18362,7 +18363,8 @@ msgstr ""
 "destekler. WebKit, Chromium gibi pek çok yeni tarayıcı tarafından kullanılan "
 "bir yerleşim motorudur. FreeBSD'de WebKit'i "
 "<application>Konqueror</application> ile kullanmak için,<package>www/"
-"kwebkitpart</package> paket veya kapısını kurun. Şu örnek paketi kurar:"
+"kwebkitpart</package> paket veya bağlantı noktasını kurun. Şu örnek paketi "
+"kurar:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13347
@@ -18374,7 +18376,7 @@ msgstr "<prompt>#</prompt> <userinput>pkg install kwebkitpart</userinput>"
 #: book.translate.xml:13349
 #, fuzzy
 msgid "To install from the Ports Collection:"
-msgstr "Bağlantı Noktaları Koleksiyonu'ndan kurmak için:"
+msgstr "Ports Collection'dan kurmak için:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13351
@@ -18471,8 +18473,8 @@ msgid ""
 "Alternatively, <application>Chromium</application> can be compiled from "
 "source using the Ports Collection:"
 msgstr ""
-"Bundan farklı olarak, <application>Chromium</application> Bağlantı Noktaları "
-"Koleksiyonu kullanılarak kaynaktan derlenebilir:"
+"Bundan farklı olarak, <application>Chromium</application> Ports Collection "
+"kullanılarak kaynaktan derlenebilir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13391
@@ -18523,21 +18525,28 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13413
+#, fuzzy
 msgid ""
 "This section demonstrates how to install the following popular productivity "
 "software and indicates if the application is resource-heavy, takes time to "
 "compile from ports, or has any major dependencies."
 msgstr ""
+"Bu kısım, aşağıdaki popüler verimlilik yazılımını nasıl kuracağınızı "
+"gösterir ve uygulamanın yoğun kaynaklı olup olmadığını, bağlantı "
+"noktalarından derlenmesinin ne kadar vakit aldığını veya büyük "
+"bağımlılıklarının olup olmadığını belirtir."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13425 book.translate.xml:13735 book.translate.xml:13959
+#, fuzzy
 msgid "Major Dependencies"
-msgstr ""
+msgstr "Büyük Bağımlılıklar"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13431
+#, fuzzy
 msgid "<application>Calligra</application>"
-msgstr ""
+msgstr "<application>Calligra</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13432 book.translate.xml:13439 book.translate.xml:13440
@@ -18546,88 +18555,111 @@ msgstr ""
 #: book.translate.xml:13757 book.translate.xml:13764 book.translate.xml:13765
 #: book.translate.xml:13771 book.translate.xml:13966 book.translate.xml:13973
 #: book.translate.xml:13980
+#, fuzzy
 msgid "light"
-msgstr ""
+msgstr "hafif"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13434 book.translate.xml:13773 book.translate.xml:13982
+#, fuzzy
 msgid "<application>KDE</application>"
-msgstr ""
+msgstr "<application>KDE</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13438
+#, fuzzy
 msgid "<application>AbiWord</application>"
-msgstr ""
+msgstr "<application>AbiWord</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13441 book.translate.xml:13758
+#, fuzzy
 msgid "<application>Gtk+</application> or <application>GNOME</application>"
-msgstr ""
+msgstr "<application>Gtk+</application> veya <application>GNOME</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13446
+#, fuzzy
 msgid "<application>The Gimp</application>"
-msgstr ""
+msgstr "<application>The Gimp</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13449 book.translate.xml:13766
+#, fuzzy
 msgid "<application>Gtk+</application>"
-msgstr ""
+msgstr "<application>Gtk+</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13453
+#, fuzzy
 msgid "<application>Apache OpenOffice</application>"
-msgstr ""
+msgstr "<application>Apache OpenOffice</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13456 book.translate.xml:13464
+#, fuzzy
 msgid "huge"
-msgstr ""
+msgstr "çok ağır"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13457
+#, fuzzy
 msgid ""
 "<application><trademark>JDK</trademark></application> and "
 "<application>Mozilla</application>"
 msgstr ""
+"<application><trademark>JDK</trademark></application> ve "
+"<application>Mozilla</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13462
+#, fuzzy
 msgid "<application>LibreOffice</application>"
-msgstr ""
+msgstr "<application>LibreOffice</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13463
+#, fuzzy
 msgid "somewhat heavy"
-msgstr ""
+msgstr "kısmen ağır"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13465
+#, fuzzy
 msgid ""
 "<application>Gtk+</application>, or <application>KDE</application>/ "
 "<application>GNOME</application>, or <application><trademark>JDK</"
 "trademark></application>"
 msgstr ""
+"<application>Gtk+</application>, veya <application>KDE</application>/ "
+"<application>GNOME</application>, veya "
+"<application><trademark>JDK</trademark></application>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:13475
+#, fuzzy
 msgid "Calligra"
-msgstr ""
+msgstr "Calligra"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:13477
+#, fuzzy
 msgid "<primary><application>Calligra</application></primary>"
-msgstr ""
+msgstr "<primary><application>Calligra</application></primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:13480
+#, fuzzy
 msgid ""
 "<primary>office suite</primary> <secondary><application>Calligra</"
 "application></secondary>"
 msgstr ""
+"<primary>office suite</primary> "
+"<secondary><application>Calligra</application></secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13485
+#, fuzzy
 msgid ""
 "The KDE desktop environment includes an office suite which can be installed "
 "separately from <application>KDE</application>. <application>Calligra</"
@@ -18637,98 +18669,130 @@ msgid ""
 "<application>Stage</application> manages slide presentations, and "
 "<application>Karbon</application> is used to draw graphical documents."
 msgstr ""
+"KDE masaüstü ortamında, <application>KDE</application>'den ayrı olarak "
+"kurulabilen bir ofis paketi mevcuttur. <application>Calligra</application> "
+"diğer ofis paketlerinde bulabileceğiniz standart bileşenleri içerir. "
+"<application>Words</application> sözcük işlemcisidir, "
+"<application>Sheets</application> bir tablolama programıdır, "
+"<application>Stage</application> slayt sunumlarınızı yönetir, ve "
+"<application>Karbon</application> ise grafik dosyaları çizmek için "
+"kullanılır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13496
+#, fuzzy
 msgid ""
 "In FreeBSD, <package>editors/calligra</package> can be installed as a "
 "package or a port. To install the package:"
 msgstr ""
+"FreeBSD'de <package>editors/calligra</package> bir paket veya bağlantı "
+"noktası olarak kurulabilir. Paketi kurmak için:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13500
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install calligra</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg install calligra</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13502
+#, fuzzy
 msgid "If the package is not available, use the Ports Collection instead:"
-msgstr ""
+msgstr "Paket mevcut değilse, yerine Ports Collection'ı kullanın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13505
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/editors/calligra</userinput>\n"
 "<prompt>#</prompt> <userinput>make install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/editors/calligra</userinput>\n"
+"<prompt>#</prompt> <userinput>make install clean</userinput>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:13510
+#, fuzzy
 msgid "AbiWord"
-msgstr ""
+msgstr "AbiWord"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:13512
+#, fuzzy
 msgid "<primary><application>AbiWord</application></primary>"
-msgstr ""
+msgstr "<primary><application>AbiWord</application></primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13516
+#, fuzzy
 msgid ""
 "<application>AbiWord</application> is a free word processing program similar "
 "in look and feel to <application><trademark class=\"registered\">Microsoft</"
 "trademark> Word</application>. It is fast, contains many features, and is "
 "user-friendly."
 msgstr ""
+"<application>AbiWord</application> bir ücretsiz sözcük işleme programıdır, "
+"görüntü ve his bakımından <application><trademark class=\"registered\""
+">Microsoft</trademark> Word</application> ile benzerdir. Hızlıdır, pek çok "
+"özelliğe sahiptir, ve kullanıcı dostudur."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13521
+#, fuzzy
 msgid ""
 "<application>AbiWord</application> can import or export many file formats, "
 "including some proprietary ones like <trademark class=\"registered"
 "\">Microsoft</trademark> <filename>.rtf</filename>."
 msgstr ""
+"<application>AbiWord</application> birçok dosya formatını içeri veya dışarı "
+"aktarabilir, buna <trademark class=\"registered\">Microsoft</trademark> "
+"<filename>.rtf</filename> gibi bazı özel olanlar da dahildir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13525
+#, fuzzy
 msgid "To install the <application>AbiWord</application> package:"
-msgstr ""
+msgstr "<application>AbiWord</application> paketini kurmak için:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13528
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install abiword</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg install abiword</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13530
+#, fuzzy
 msgid ""
 "If the package is not available, it can be compiled from the Ports "
 "Collection:"
-msgstr ""
+msgstr "Paket mevcut değilse, Ports Collection'dan derlenebilir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13533
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/editors/abiword</userinput>\n"
 "<prompt>#</prompt> <userinput>make install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/editors/abiword</userinput>\n"
+"<prompt>#</prompt> <userinput>make install clean</userinput>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:13538
+#, fuzzy
 msgid "The GIMP"
-msgstr ""
+msgstr "The GIMP"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:13540
+#, fuzzy
 msgid "<primary><application>The GIMP</application></primary>"
-msgstr ""
+msgstr "<primary><application>The GIMP</application></primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13544
+#, fuzzy
 msgid ""
 "For image authoring or picture retouching, <application>The GIMP</"
 "application> provides a sophisticated image manipulation program. It can be "
@@ -18737,59 +18801,80 @@ msgid ""
 "<application>The GIMP</application> can read and write a wide range of file "
 "formats and supports interfaces with scanners and tablets."
 msgstr ""
+"Görsel oluşturma veya resim rötuşları için, <application>The "
+"GIMP</application> size çok yönlü bir görsel işleme programı sağlar. Basit "
+"bir boyama programı veya kaliteli bir fotoğraf rötuş paketi olarak "
+"kullanılabilir. Çok sayıda eklentiyi destekler ve bir komut arayüzüne "
+"sahiptir. <application>The GIMP</application> geniş çeşitlilikte dosya "
+"formatlarını okuyup yazabilir, tarayıcılı ve tabletli arayüzleri destekler."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13553
+#, fuzzy
 msgid "To install the package:"
-msgstr ""
+msgstr "Paketi kurmak için:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13555
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install gimp</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg install gimp</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13557
+#, fuzzy
 msgid "Alternately, use the Ports Collection:"
-msgstr ""
+msgstr "Farklı bir seçenek olarak Ports Collection'ı kullanın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13559
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/graphics/gimp</userinput>\n"
 "<prompt>#</prompt> <userinput>make install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/graphics/gimp</userinput>\n"
+"<prompt>#</prompt> <userinput>make install clean</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13562
+#, fuzzy
 msgid ""
 "The graphics category (<link xlink:href=\"https://www.FreeBSD.org/ports/"
 "graphics.html\">freebsd.org/ports/graphics.html</link>) of the Ports "
 "Collection contains several <application>GIMP</application>-related plugins, "
 "help files, and user manuals."
 msgstr ""
+"Ports Collection'ın grafikler kategorisinde (<link xlink:href=\""
+"https://www.FreeBSD.org/ports/graphics.html\">freebsd.org/ports/"
+"graphics.html</link>) <application>GIMP</application> ile ilgili birçok "
+"eklenti, yardım dosyası, ve kullanım kılavuzu bulunur."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:13570
+#, fuzzy
 msgid "Apache OpenOffice"
-msgstr ""
+msgstr "Apache OpenOffice"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:13572
+#, fuzzy
 msgid "<primary> <application>Apache OpenOffice</application> </primary>"
-msgstr ""
+msgstr "<primary> <application>Apache OpenOffice</application> </primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:13577
+#, fuzzy
 msgid ""
 "<primary>office suite</primary> <secondary> <application>Apache OpenOffice</"
 "application> </secondary>"
 msgstr ""
+"<primary>office suite</primary> <secondary> <application>Apache "
+"OpenOffice</application> </secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13584
+#, fuzzy
 msgid ""
 "<application>Apache OpenOffice</application> is an open source office suite "
 "which is developed under the wing of the Apache Software Foundation's "
@@ -18800,9 +18885,18 @@ msgid ""
 "a number of different languages and internationalization has been extended "
 "to interfaces, spell checkers, and dictionaries."
 msgstr ""
+"<application>Apache OpenOffice</application>, Apache Software Foundation "
+"Incubator bünyesindeki bir açık kaynak kodlu ofis paketidir. Bir ofis "
+"verimlilik paketinde bulunan her uygulamayı içinde bulundurur: bir sözcük "
+"işlemcisi, tablolama programı, sunum yöneticisi ve çizim programı. Kullanıcı "
+"arayüzü diğer ofis paketlerine benzer, ve çeşitli yaygın dosya formatlarını "
+"içeri ve dışarı aktarabilir. Birçok farklı dil seçeneği mevcuttur ve "
+"uluslararasılaşması arayüzler, yazım denetimcileri ve sözlüklere kadar "
+"genişletilmiştir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13595
+#, fuzzy
 msgid ""
 "The word processor of <application>Apache OpenOffice</application> uses a "
 "native XML file format for increased portability and flexibility. The "
@@ -18816,33 +18910,52 @@ msgid ""
 "link>. For FreeBSD specific information refer to <link xlink:href=\"http://"
 "porting.openoffice.org/freebsd/\">porting.openoffice.org/freebsd/</link>."
 msgstr ""
+"<application>Apache OpenOffice</application>'in sözcük işlemcisi "
+"taşınabilirlik ve esnekliği artırmak için yerel bir XML dosya formatı "
+"kullanır. Tablolama programı, harici veritabanları ile arayüzlenebilen bir "
+"makro dil bulundurur. <application>Apache OpenOffice</application> stabildir "
+"ve orijinal olarak <trademark class=\"registered\">Windows</trademark>, "
+"<trademark>Solaris</trademark>, <trademark class=\"registered\""
+">Linux</trademark>, FreeBSD, ve <trademark class=\"registered\">Mac "
+"OS</trademark> X'de çalışır. <application>Apache OpenOffice</application> "
+"hakkında daha fazla bilgiye <link xlink:href=\"http://openoffice.org/\""
+">openoffice.org</link> bağlantısından ulaşabilirsiniz. FreeBSD'ye özel bilgi "
+"almak için: <link xlink:href=\"http://porting.openoffice.org/freebsd/\""
+">porting.openoffice.org/freebsd/</link>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13606
+#, fuzzy
 msgid "To install the <application>Apache OpenOffice</application> package:"
-msgstr ""
+msgstr "<application>Apache OpenOffice</application> paketini kurmak için:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13609
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install apache-openoffice</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg install apache-openoffice</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13611
+#, fuzzy
 msgid ""
 "Once the package is installed, type the following command to launch "
 "<application>Apache OpenOffice</application>:"
 msgstr ""
+"Paket kurulduğunda, <application>Apache OpenOffice</application>'i başlatmak "
+"için aşağıdaki komutu yazın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13614
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>openoffice-<replaceable>X.Y.Z</replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> "
+"<userinput>openoffice-<replaceable>X.Y.Z</replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13616
+#, fuzzy
 msgid ""
 "where <replaceable>X.Y.Z</replaceable> is the version number of the "
 "installed version of <application>Apache OpenOffice</application>. The first "
@@ -18850,61 +18963,89 @@ msgid ""
 "will be asked and a <filename>.openoffice.org</filename> folder will be "
 "created in the user's home directory."
 msgstr ""
+"<application>Apache OpenOffice</application>'in kurulmuş sürümünün sürüm "
+"numarasının <replaceable>X.Y.Z</replaceable> olduğu kısma yazın. "
+"<application>Apache OpenOffice</application> ilk başlatıldığında bazı "
+"sorular sorulacak ve kullanıcının başlangıç dizininde bir "
+"<filename>.openoffice.org</filename> dosyası oluşturulacak."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13624
+#, fuzzy
 msgid ""
 "If the desired <application>Apache OpenOffice</application> package is not "
 "available, compiling the port is still an option. However, this requires a "
 "lot of disk space and a fairly long time to compile:"
 msgstr ""
+"İstenilen <application>Apache OpenOffice</application> paketi mevcut "
+"değilse, bağlantı noktasını derlemek hala bir seçenektir. Fakat bu çok fazla "
+"disk alanı ve derlemek için oldukça zaman gerektirebilir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13629
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/editors/openoffice-4</userinput>\n"
 "<prompt>#</prompt> <userinput>make install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/editors/openoffice-4</userinput>"
+"\n"
+"<prompt>#</prompt> <userinput>make install clean</userinput>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:13633
+#, fuzzy
 msgid "To build a localized version, replace the previous command with:"
 msgstr ""
+"Yerelleştirilmiş bir sürüm oluşturmak için önceki komutun yerine şunu yazın:"
 
 #. (itstool) path: note/screen
 #: book.translate.xml:13636
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>make LOCALIZED_LANG=<replaceable>your_language</replaceable> install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>make "
+"LOCALIZED_LANG=<replaceable>sizin_diliniz</replaceable> install "
+"clean</userinput>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:13638
+#, fuzzy
 msgid ""
 "Replace <replaceable>your_language</replaceable> with the correct language "
 "ISO-code. A list of supported language codes is available in <filename>files/"
 "Makefile.localized</filename>, located in the port's directory."
 msgstr ""
+"<replaceable>sizin_diliniz</replaceable> kısmını doğru ISO dil kodu ile "
+"değiştirin. Desteklenen dil kodlarının bulunduğu liste bağlantı noktası "
+"dizininde yer alan <filename>files/Makefile.localized</filename> dosyasında "
+"mevcuttur."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:13648
+#, fuzzy
 msgid "LibreOffice"
-msgstr ""
+msgstr "LibreOffice"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:13650
+#, fuzzy
 msgid "<primary><application>LibreOffice</application></primary>"
-msgstr ""
+msgstr "<primary><application>LibreOffice</application></primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:13653
+#, fuzzy
 msgid ""
 "<primary>office suite</primary> <secondary><application>LibreOffice</"
 "application></secondary>"
 msgstr ""
+"<primary>office suite</primary> "
+"<secondary><application>LibreOffice</application></secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13658
+#, fuzzy
 msgid ""
 "<application>LibreOffice</application> is a free software office suite "
 "developed by <link xlink:href=\"http://www.documentfoundation.org/"
@@ -18917,9 +19058,20 @@ msgid ""
 "number of different languages and internationalization has been extended to "
 "interfaces, spell checkers, and dictionaries."
 msgstr ""
+"<application>LibreOffice</application>, <link xlink:href=\""
+"http://www.documentfoundation.org/\">documentfoundation.org</link> "
+"tarafından geliştirilmiş bir ücretsiz yazılım ofis paketidir. Başlıca ofis "
+"paketleriyle uyumludur ve çeşitli platformlarda mevcuttur. <application>"
+"Apache OpenOffice</application>'in yeniden markalaşmış koludur ve bir ofis "
+"verimlilik paketinde bulunan tüm uygulamalara sahiptir: sözcük işlemcisi, "
+"tablolama programı, sunum yöneticisi, çizim programı, veritabanı yönetim "
+"programı ve matematiksel formüller oluşturan bir araç. Birçok farklı dil "
+"seçeneği mevcuttur ve uluslararasılaşması arayüzler, yazım denetimcileri ve "
+"sözlüklere kadar genişletilmiştir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13671
+#, fuzzy
 msgid ""
 "The word processor of <application>LibreOffice</application> uses a native "
 "XML file format for increased portability and flexibility. The spreadsheet "
@@ -18931,22 +19083,35 @@ msgid ""
 "<application>LibreOffice</application> can be found at <link xlink:href="
 "\"http://www.libreoffice.org/\">libreoffice.org</link>."
 msgstr ""
+"<application>LibreOffice</application>'in sözcük işlemcisi taşınabilirlik ve "
+"esnekliği artırmak için yerel bir XML dosya formatı kullanır. Tablolama "
+"programı, harici veritabanları ile arayüzlenebilen bir makro dil bulundurur. "
+"<application>LibreOffice</application> stabildir ve orijinal olarak <"
+"trademark class=\"registered\">Windows</trademark>, <trademark class=\""
+"registered\">Linux</trademark>, FreeBSD, ve <trademark class=\"registered\">"
+"Mac OS</trademark> X'de çalışır. <application>LibreOffice</application> "
+"hakkında daha fazla bilgiye <link xlink:href=\"http://www.libreoffice.org/\""
+">libreoffice.org</link> bağlantısından ulaşabilirsiniz."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13681
+#, fuzzy
 msgid ""
 "To install the English version of the <application>LibreOffice</application> "
 "package:"
 msgstr ""
+"<application>LibreOffice</application> paketinin İngilizce sürümünü kurmak "
+"için:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13684
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install libreoffice</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg install libreoffice</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13686
+#, fuzzy
 msgid ""
 "The editors category (<link xlink:href=\"https://www.FreeBSD.org/ports/"
 "editors.html\">freebsd.org/ports/editors.html</link>) of the Ports "
@@ -18954,171 +19119,226 @@ msgid ""
 "application>. When installing a localized package, replace "
 "<literal>libreoffice</literal> with the name of the localized package."
 msgstr ""
+"Ports Collection'ın editör kategorisi (<link xlink:href=\""
+"https://www.FreeBSD.org/ports/editors.html\">freebsd.org/ports/"
+"editors.html</link>) <application>LibreOffice</application>'in pek çok "
+"farklı yerelleştirmesini içerir. Yerelleştirilmiş bir paket kurarken "
+"<literal>libreoffice</literal> yerine yerelleştirilmiş paketin ismini yazın."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13692
+#, fuzzy
 msgid ""
 "Once the package is installed, type the following command to run "
 "<application>LibreOffice</application>:"
 msgstr ""
+"Paket kurulduğunda <application>LibreOffice</application>'i çalıştırmak için "
+"aşağıdaki komutu yazın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13695
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>libreoffice</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>libreoffice</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13697
+#, fuzzy
 msgid ""
 "During the first launch, some questions will be asked and a <filename>."
 "libreoffice</filename> folder will be created in the user's home directory."
 msgstr ""
+"İlk başlatma sırasında bazı sorular sorulacak ve kullanıcı başlangıç "
+"dizininde bir <filename>.libreoffice</filename> dosyası oluşturulacaktır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13701
+#, fuzzy
 msgid ""
 "If the desired <application>LibreOffice</application> package is not "
 "available, compiling the port is still an option. However, this requires a "
 "lot of disk space and a fairly long time to compile. This example compiles "
 "the English version:"
 msgstr ""
+"İstenilen <application>LibreOffice</application> paketi mevcut değilse, "
+"bağlantı noktasını derlemek hala bir seçenektir. Fakat bu çok fazla disk "
+"alanı ve derlemek için oldukça zaman gerektirebilir. Bu örnek İngilizce "
+"sürümü derler:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13707
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/editors/libreoffice</userinput>\n"
 "<prompt>#</prompt> <userinput>make install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/editors/libreoffice</userinput>\n"
+"<prompt>#</prompt> <userinput>make install clean</userinput>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:13711
+#, fuzzy
 msgid ""
 "To build a localized version, <command>cd</command> into the port directory "
 "of the desired language. Supported languages can be found in the editors "
 "category (<link xlink:href=\"https://www.FreeBSD.org/ports/editors.html"
 "\">freebsd.org/ports/editors.html</link>) of the Ports Collection."
 msgstr ""
+"Yerelleştirilmiş bir sürüm oluşturmak için istenilen dilin bağlantı noktası "
+"dizinine <command>cd</command> komutu verin. Desteklenen dillere Ports "
+"Collection'ın editörler kategorisinden (<link xlink:href=\""
+"https://www.FreeBSD.org/ports/editors.html\">freebsd.org/ports/"
+"editors.html</link>) erişilebilir."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:13721
+#, fuzzy
 msgid "Document Viewers"
-msgstr ""
+msgstr "Belge Görüntüleyicileri"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13723
+#, fuzzy
 msgid ""
 "Some new document formats have gained popularity since the advent of "
 "<trademark class=\"registered\">UNIX</trademark> and the viewers they "
 "require may not be available in the base system. This section demonstrates "
 "how to install the following document viewers:"
 msgstr ""
+"<trademark class=\"registered\">UNIX</trademark>'in çıkışından beri bazı "
+"yeni belge formatları popülerlik kazandı ve bu formatlar için gerekli olan "
+"görüntüleyiciler sistem tabanında mevcut olmayabilir. Bu kısım aşağıdaki "
+"belge görüntüleyicileri nasıl kuracağınızı gösterir:"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13741
+#, fuzzy
 msgid "<application>Xpdf</application>"
-msgstr ""
+msgstr "<application>Xpdf</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13744
+#, fuzzy
 msgid "<application>FreeType</application>"
-msgstr ""
+msgstr "<application>FreeType</application>"
 
 #. (itstool) path: row/entry
 #. (itstool) path: sect2/title
 #: book.translate.xml:13748 book.translate.xml:13813
+#, fuzzy
 msgid "<application>gv</application>"
-msgstr ""
+msgstr "<application>gv</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13751
+#, fuzzy
 msgid "<application>Xaw3d</application>"
-msgstr ""
+msgstr "<application>Xaw3d</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13755
+#, fuzzy
 msgid "<application>Geeqie</application>"
-msgstr ""
+msgstr "<application>Geeqie</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13763
+#, fuzzy
 msgid "<application>ePDFView</application>"
-msgstr ""
+msgstr "<application>ePDFView</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13770
+#, fuzzy
 msgid "<application>Okular</application>"
-msgstr ""
+msgstr "<application>Okular</application>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:13780
+#, fuzzy
 msgid "Xpdf"
-msgstr ""
+msgstr "Xpdf"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:13782
+#, fuzzy
 msgid "<primary><application>Xpdf</application></primary>"
-msgstr ""
+msgstr "<primary><application>Xpdf</application></primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:13785 book.translate.xml:13818 book.translate.xml:13884
+#, fuzzy
 msgid "<primary>PDF</primary> <secondary>viewing</secondary>"
-msgstr ""
+msgstr "<primary>PDF</primary> <secondary>viewing</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13790
+#, fuzzy
 msgid ""
 "For users that prefer a small FreeBSD PDF viewer, <application>Xpdf</"
 "application> provides a light-weight and efficient viewer which requires few "
 "resources. It uses the standard X fonts and does not require any additional "
 "toolkits."
 msgstr ""
+"<application>Xpdf</application>, küçük bir FreeBSD PDF görüntüleyici tercih "
+"eden kullanıcılar için az kaynak gerektiren hafif ve etkili bir "
+"görüntüleyici hizmeti sunar. Standart X yazı tipini kullanır ve ilave araç "
+"takımı gerektirmez."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13796
+#, fuzzy
 msgid "To install the <application>Xpdf</application> package:"
-msgstr ""
+msgstr "<application>Xpdf</application> paketini kurmak için:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13799
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install xpdf</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg install xpdf</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13801 book.translate.xml:13871 book.translate.xml:14016
 #: book.translate.xml:14050 book.translate.xml:14083
+#, fuzzy
 msgid "If the package is not available, use the Ports Collection:"
-msgstr ""
+msgstr "Paket mevcut değilse, Ports Collection'ı kullanın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13804
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/graphics/xpdf</userinput>\n"
 "<prompt>#</prompt> <userinput>make install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/graphics/xpdf</userinput>\n"
+"<prompt>#</prompt> <userinput>make install clean</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13807
+#, fuzzy
 msgid ""
 "Once the installation is complete, launch <command>xpdf</command> and use "
 "the right mouse button to activate the menu."
 msgstr ""
+"Kurulum tamamlandığında <command>xpdf</command>'i başlatın ve menüyü "
+"etkinleştirmek için sağ tıklayın."
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:13815
+#, fuzzy
 msgid "<primary><application>gv</application></primary>"
-msgstr ""
+msgstr "<primary><application>gv</application></primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:13822
+#, fuzzy
 msgid "<primary>PostScript</primary> <secondary>viewing</secondary>"
-msgstr ""
+msgstr "<primary>PostScript</primary> <secondary>viewing</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13827
+#, fuzzy
 msgid ""
 "<application>gv</application> is a <trademark class=\"registered"
 "\">PostScript</trademark> and PDF viewer. It is based on "
@@ -19128,40 +19348,53 @@ msgid ""
 "size, scale, and anti-aliasing. Almost any operation can be performed with "
 "either the keyboard or the mouse."
 msgstr ""
+"<application>gv</application> bir <trademark class=\"registered\""
+">PostScript</trademark> ve PDF görüntüleyicisidir. "
+"<application>ghostview</application>'u temel alır, fakat "
+"<application>Xaw3d</application> widget araç takımını temel aldığı için "
+"görsel olarak daha hoştur. <application>gv</application> yön, sayfa boyutu, "
+"büyüklüğü ve kusur düzeltme gibi birçok ayarlanabilir özelliğe sahiptir. "
+"Neredeyse her işlem klavye veya fare ile yapılabilir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13836
+#, fuzzy
 msgid "To install <application>gv</application> as a package:"
-msgstr ""
+msgstr "<application>gv</application> paketini kurmak için:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13839
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install gv</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg install gv</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13841 book.translate.xml:13903 book.translate.xml:13933
+#, fuzzy
 msgid "If a package is unavailable, use the Ports Collection:"
-msgstr ""
+msgstr "Mevcut olmayan bir paket varsa, Ports Collection'ı kullanın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13844
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/print/gv</userinput>\n"
 "<prompt>#</prompt> <userinput>make install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/print/gv</userinput>\n"
+"<prompt>#</prompt> <userinput>make install clean</userinput>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:13849
+#, fuzzy
 msgid "Geeqie"
-msgstr ""
+msgstr "Geeqie"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:13851
+#, fuzzy
 msgid "<primary><application>Geeqie</application></primary>"
-msgstr ""
+msgstr "<primary><application>Geeqie</application></primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13855
