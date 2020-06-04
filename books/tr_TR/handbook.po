@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-18 15:02-0300\n"
-"PO-Revision-Date: 2020-06-03 23:38+0000\n"
-"Last-Translator: esradesteki <esradesteki20@gmail.com>\n"
+"PO-Revision-Date: 2020-06-05 07:23+0000\n"
+"Last-Translator: Alparslangurbuz <alparslangurbuz@hotmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -16003,16 +16003,19 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:11880
+#, fuzzy
 msgid "Using Fonts in <application>Xorg</application>"
-msgstr ""
+msgstr "<application>Xorg</application> da yazı tiplerini kullanma"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11883
+#, fuzzy
 msgid "Type1 Fonts"
-msgstr ""
+msgstr "Tip1 Yazı Tipi"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11885
+#, fuzzy
 msgid ""
 "The default fonts that ship with <application>Xorg</application> are less "
 "than ideal for typical desktop publishing applications. Large presentation "
@@ -16034,64 +16037,100 @@ msgid ""
 "refentrytitle><manvolnum>7</manvolnum></citerefentry> manual page or <xref "
 "linkend=\"truetype\"/>."
 msgstr ""
+"<application>Xorg</application> ile birlikte gelen varsayılan yazı tipleri, "
+"tipik masaüstü yayıncılık uygulamaları için ideal olandan daha azdır. Büyük "
+"sunum yazı tipleri tırtıklı ve profesyonelce görünmüyor ve küçük yazı "
+"tipleri neredeyse tamamen anlaşılmaz. Fakat <application>Xırg</application> "
+"ile kullanılabilen bir kaç ücretsiz, yüksek kalitede Tipt1 (<trademark class="
+"\"registered\">PostScript</trademark>) yazı tipleri mevcuttur. Örneğin URW "
+"yazı tipi koleksiyonu(<package>x11-fonts/urwfonts</package>), (<trademark "
+"class=\"registered\">Times Roman</trademark>, <trademark class=\"registered\""
+">Helvetica</trademark>, <trademark class=\"registered\">Palatino</trademark> "
+"gibi yüksek kalite standart tip1 yazı tiplerini içerir. Freefonts "
+"koleksiyonu (<package>x11-fonts/freefonts</package>) daha fazla yazı tipi "
+"içerir ancak bunların çoğu <application>Gimp</application> gibi grafik "
+"yazılımlarında kullanılmak üzere tasarlanmıştır ve ekran fontları olarak "
+"kullanılabilecek kadar yeterli değiller. Ayrıca, "
+"<application>Xorg</application> minimum çaba ile <trademark class=\""
+"registered\">TrueType</trademark> yazı tiplerini kullanacak şekilde "
+"yapılandırılabilir. Daha fazla detay için <citerefentry vendor=\"xfree86\""
+"><refentrytitle>X</refentrytitle><manvolnum>7</manvolnum></citerefentry> "
+"manuel sayfasına ya da<xref linkend=\"truetype\"/>'a bakınız."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11904
+#, fuzzy
 msgid ""
 "To install the above Type1 font collections from binary packages, run the "
 "following commands:"
 msgstr ""
+"Yukarıdaki Tip1 yazı tipi koleksiyonlarını ikili paketlerden yüklemek için "
+"aşağıdaki komutları çalıştırın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11907
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install urwfonts</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg install urwfonts</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11909
+#, fuzzy
 msgid ""
 "Alternatively, to build from the Ports Collection, run the following "
 "commands:"
 msgstr ""
+"Alternatif olarak, Ports Collection'dan bağlantı kurmak için aşağıdaki "
+"komutları çalıştırın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11912
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/x11-fonts/urwfonts</userinput>\n"
 "<prompt>#</prompt> <userinput>make install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/x11-fonts/urwfonts</userinput>\n"
+"<prompt>#</prompt> <userinput>make install clean</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11915
+#, fuzzy
 msgid ""
 "And likewise with the freefont or other collections. To have the X server "
 "detect these fonts, add an appropriate line to the X server configuration "
 "file (<filename>/etc/X11/xorg.conf</filename>), which reads:"
 msgstr ""
+"Ve aynı şekilde serbest yazı tipi veya diğer koleksiyonlarla. X sunucusunun "
+"bu yazı tiplerini algılamasını sağlamak için, X sunucusu yapılandırma "
+"dosyasına (<filename>/etc/X11/xorg.conf</filename>) uygun bir satır ekleyin:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11920
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "FontPath \"/usr/local/share/fonts/urwfonts/\""
-msgstr ""
+msgstr "FontPath \"/usr/local/share/fonts/urwfonts/\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11922
+#, fuzzy
 msgid "Alternatively, at the command line in the X session run:"
-msgstr ""
+msgstr "Alternatif olarak, X oturumundaki komut satırında çalıştırın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11925
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>xset fp+ /usr/local/share/fonts/urwfonts</userinput>\n"
 "<prompt>%</prompt> <userinput>xset fp rehash</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>xset fp+ /usr/local/share/fonts/"
+"urwfonts</userinput>\n"
+"<prompt>%</prompt> <userinput>xset fp rehash</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11928
+#, fuzzy
 msgid ""
 "This will work but will be lost when the X session is closed, unless it is "
 "added to the startup file (<filename>~/.xinitrc</filename> for a normal "
@@ -16100,11 +16139,19 @@ msgid ""
 "application>). A third way is to use the new <filename>/usr/local/etc/fonts/"
 "local.conf</filename> as demonstrated in <xref linkend=\"antialias\"/>."
 msgstr ""
+"Bu işe yarar ancak X oturumu kapatıldığında başlangıç dosyasına eklenmedikçe "
+"kaybolur (<filename>~/.xinitrc</filename> for a normal "
+"<command>startx</command>bölümü ya da <filename>~/.xsession</filename>, "
+"<application>XDM</application> gibi bir grafik giriş yöneticisi aracılığıyla "
+"giriş yaparken). Üçüncü yol ise <xref linkend=\"antialias\"/> bölümünde de "
+"gösterildiği gibi <filename>/usr/local/etc/fonts/local.conf</filename> "
+"dosyasını kullanmaktır."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11940
+#, fuzzy
 msgid "<trademark class=\"registered\">TrueType</trademark> Fonts"
-msgstr ""
+msgstr "<trademark class=\"registered\">TrueType</trademark> Yazı Tipleri"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:11942
