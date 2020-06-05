@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-04-18 15:02-0300\n"
-"PO-Revision-Date: 2020-06-05 07:23+0000\n"
-"Last-Translator: esradesteki <esradesteki20@gmail.com>\n"
+"PO-Revision-Date: 2020-06-05 11:20+0000\n"
+"Last-Translator: Alparslangurbuz <alparslangurbuz@hotmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -16170,16 +16170,19 @@ msgstr "<trademark class=\"registered\">TrueType</trademark> Yazı Tipleri"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:11942
+#, fuzzy
 msgid "<primary>TrueType Fonts</primary>"
-msgstr ""
+msgstr "<primary>TrueType Yazıtipi</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:11945
+#, fuzzy
 msgid "<primary>fonts</primary> <secondary>TrueType</secondary>"
-msgstr ""
+msgstr "<primary>yazıtipleri</primary> <secondary>TrueType</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11950
+#, fuzzy
 msgid ""
 "<application>Xorg</application> has built in support for rendering "
 "<trademark class=\"registered\">TrueType</trademark> fonts. There are two "
@@ -16189,15 +16192,23 @@ msgid ""
 "line to the <literal>\"Module\"</literal> section of <filename>/etc/X11/xorg."
 "conf</filename>."
 msgstr ""
+"<application>Xorg</application> <trademark class=\"registered\""
+">TrueType</trademark>yazı tiplerini oluşturmak için yerleşik destek sunar. "
+"Bu işlevi etkinleştirebilen iki farklı modül vardır. Bu örnekte freetype "
+"modülü kullanılır, çünkü diğer yazı tipi oluşturma arka uçlarıyla daha "
+"tutarlıdır. Freetype modülünü etkinleştirmek için <literal>\"Module\""
+"</literal> bölüm<filename>/etc/X11/xorg.conf</filename>aşağıdakileri "
+"eklemeniz yeterlidir."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11958
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Load  \"freetype\""
-msgstr ""
+msgstr "Load  \"freetype\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11960
+#, fuzzy
 msgid ""
 "Now make a directory for the <trademark class=\"registered\">TrueType</"
 "trademark> fonts (for example, <filename>/usr/local/share/fonts/TrueType</"
@@ -16214,50 +16225,79 @@ msgid ""
 "new files have been installed. <command>mkfontscale</command> can be "
 "installed as a package:"
 msgstr ""
+"Şimdi <trademark class=\"registered\">TrueType</trademark> yazı tipleri için "
+"bir dizin oluşturun (örneğin <filename>/usr/local/share/fonts/"
+"TrueType</filename>) ve tüm <trademark class=\"registered\""
+">TrueType</trademark> yazı tiplerini dizine kopyalayın.<trademark class=\""
+"registered\">TrueType</trademark> yazı tipinin doğrudan <trademark class=\""
+"registered\">Apple</trademark> <trademark class=\"registered\""
+">Mac</trademark>'den alınamayacığını unutmayın; "
+"<application>Xorg</application> tarafından kullanılmak üzere <trademark "
+"class=\"registered\">UNIX</trademark>/<trademark class=\"registered\">MS-"
+"DOS</trademark>/<trademark class=\"registered\">Windows</trademark> "
+"formatında olmalıdırlar. Dosyalar bu dizine kopyalandıktan sonra X font "
+"oluşturucusunun bu yeni dosyaların yüklendiğini bilmesi için bir "
+"<filename>fonts.dir</filename> oluşturmak için "
+"<application>mkfontscale</application> kullanın. "
+"<command>mkfontscale</command> paket olarak indirilebilir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11974
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install mkfontscale</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg install mkfontscale</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11976
+#, fuzzy
 msgid "Then create an index of X font files in a directory:"
-msgstr ""
+msgstr "Sonra bir dizinde X font dosyalarının bir dizinini oluşturun::"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11979
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/local/share/fonts/TrueType</userinput>\n"
 "<prompt>#</prompt> <userinput>mkfontscale</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/local/share/fonts/TrueType</userinput>"
+"\n"
+"<prompt>#</prompt> <userinput>mkfontscale</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11982
+#, fuzzy
 msgid ""
 "Now add the <trademark class=\"registered\">TrueType</trademark> directory "
 "to the font path. This is just the same as described in <xref linkend="
 "\"type1\"/>:"
 msgstr ""
+"Şimdi <trademark class=\"registered\">TrueType</trademark> dizinini yazı "
+"tipi yoluna ekleyin. <xref linkend=\"type1\"/> da belirtildiği gibidir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11985
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>xset fp+ /usr/local/share/fonts/TrueType</userinput>\n"
 "<prompt>%</prompt> <userinput>xset fp rehash</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>xset fp+ /usr/local/share/fonts/"
+"TrueType</userinput>\n"
+"<prompt>%</prompt> <userinput>xset fp rehash</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11988
+#, fuzzy
 msgid ""
 "or add a <literal>FontPath</literal> line to <filename>xorg.conf</filename>."
 msgstr ""
+"ya da <filename>xorg.conf</filename> 'a <literal>FontPath</literal> yolu "
+"ekleyin."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11991
+#, fuzzy
 msgid ""
 "Now <application>Gimp</application>, <application>Apache OpenOffice</"
 "application>, and all of the other X applications should now recognize the "
@@ -16266,24 +16306,35 @@ msgid ""
 "page) and extremely large fonts (within <application><trademark>StarOffice</"
 "trademark></application>) will look much better now."
 msgstr ""
+"Şimdi <application>Gimp</application>, <application>Apache "
+"OpenOffice</application>, ve diğer tüm X uygulamaları indirilen tüm <"
+"trademark class=\"registered\">TrueType</trademark> yazı tiplerini "
+"tanımalıdırlar. Son derece küçük fontlar (web sayfasındaki yüksek "
+"çözünürlüklü ekrandaki metinlerde olduğu gibi) ve son derece büyük fontlar "
+"(<application><trademark>StarOffice</trademark></application> içerisinde) "
+"daha iyi görünecek."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:12012
+#, fuzzy
 msgid "Anti-Aliased Fonts"
-msgstr ""
+msgstr "Kenar Yumuşatılmış Fontlar"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:12014
+#, fuzzy
 msgid "<primary>anti-aliased fonts</primary>"
-msgstr ""
+msgstr "<primary>kenar yumuşatılmış fontlar</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:12017
+#, fuzzy
 msgid "<primary>fonts</primary> <secondary>anti-aliased</secondary>"
-msgstr ""
+msgstr "<primary>fonts</primary> <secondary>anti-aliased</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12022
+#, fuzzy
 msgid ""
 "All fonts in <application>Xorg</application> that are found in <filename>/"
 "usr/local/share/fonts/</filename> and <filename>~/.fonts/</filename> are "
@@ -16292,6 +16343,12 @@ msgid ""
 "application>, <application>GNOME</application>, and <application>Firefox</"
 "application>."
 msgstr ""
+"<application>Xorg</application>' daki <filename>/usr/local/share/fonts/"
+"</filename> and <filename>~/.fonts/</filename> bulunan tüm yazı tipleri Xft "
+"kullanan uygulamalara kenar yumuşatma için otomatik olarak kullanılabilir. "
+"<application>KDE</application>, <application>GNOME</application>, ve "
+"<application>Firefox</application> dahil olmak üzere en yeni uygulamalar Xft "
+"uyumludur."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12031
