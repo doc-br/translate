@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-04-18 15:00-0300\n"
+"POT-Creation-Date: 2020-06-06 11:07-0300\n"
 "PO-Revision-Date: 2020-04-18 19:38+0000\n"
 "Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate-dev.freebsd.org/"
@@ -98,9 +98,13 @@ msgstr ""
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:33 article.translate.xml:35
+#, fuzzy
+#| msgid ""
+#| "$FreeBSD: head/en_US.ISO8859-1/articles/contributing/article.xml 52764 "
+#| "2019-01-13 11:00:21Z bcr $"
 msgid ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/contributing/article.xml 52764 "
-"2019-01-13 11:00:21Z bcr $"
+"$FreeBSD: head/en_US.ISO8859-1/articles/contributing/article.xml 54180 "
+"2020-05-24 21:19:34Z linimon $"
 msgstr ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/contributing/article.xml 52764 "
 "2019-01-13 11:00:21Z bcr $"
@@ -937,8 +941,16 @@ msgstr "Doando Dinheiro"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:455
+#, fuzzy
+#| msgid ""
+#| "The FreeBSD Foundation is a non-profit, tax-exempt foundation established "
+#| "to further the goals of the FreeBSD Project. As a 501(c)3 entity, the "
+#| "Foundation is generally exempt from US federal income tax as well as "
+#| "Colorado State income tax. Donations to a tax-exempt entity are often "
+#| "deductible from taxable federal income."
 msgid ""
-"The FreeBSD Foundation is a non-profit, tax-exempt foundation established to "
+"The <link xlink:href=\"https://www.freebsdfoundation.org\">FreeBSD "
+"Foundation</link> is a non-profit, tax-exempt foundation established to "
 "further the goals of the FreeBSD Project. As a 501(c)3 entity, the "
 "Foundation is generally exempt from US federal income tax as well as "
 "Colorado State income tax. Donations to a tax-exempt entity are often "
@@ -952,7 +964,7 @@ msgstr ""
 "federais."
 
 #. (itstool) path: para/address
-#: article.translate.xml:463
+#: article.translate.xml:465
 #, no-wrap
 msgid ""
 "\n"
@@ -972,20 +984,17 @@ msgstr ""
 "\t  "
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:462
+#: article.translate.xml:464
 msgid "Donations may be sent in check form to: <_:address-1/>"
 msgstr "As doações podem ser enviadas através de cheques para: <_:address-1/>"
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:471
+#: article.translate.xml:473
 msgid ""
-"The FreeBSD Foundation is now able to accept donations through the web with "
-"PayPal. To place a donation, please visit the Foundation <link xlink:href="
-"\"https://www.freebsdfoundation.org\">web site</link>."
+"The FreeBSD Foundation is also able to accept <link xlink:href=\"https://www."
+"freebsdfoundation.org/donate/\"> online donations</link> through various "
+"payment options."
 msgstr ""
-"A Fundação FreeBSD é agora capaz de receber doações através da web com o "
-"PayPal. Para fazer uma doação, por favor visite o <link xlink:href=\"https://"
-"www.freebsdfoundation.org\">website a Fundação</link>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:477
@@ -2325,3 +2334,12 @@ msgstr ""
 "A <link xlink:href=\"https://wiki.freebsd.org/IdeasPage\">Página de Idéias</"
 "link> contém várias coisas \"legais\" ou \"interessantes\" para se trabalhar "
 "no Projeto."
+
+#~ msgid ""
+#~ "The FreeBSD Foundation is now able to accept donations through the web "
+#~ "with PayPal. To place a donation, please visit the Foundation <link xlink:"
+#~ "href=\"https://www.freebsdfoundation.org\">web site</link>."
+#~ msgstr ""
+#~ "A Fundação FreeBSD é agora capaz de receber doações através da web com o "
+#~ "PayPal. Para fazer uma doação, por favor visite o <link xlink:href="
+#~ "\"https://www.freebsdfoundation.org\">website a Fundação</link>."
