@@ -12,10 +12,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-05 11:20+0000\n"
-"Last-Translator: Alparslangurbuz <alparslangurbuz@hotmail.com>\n"
-"Language-Team: Turkish <https://translate-dev.freebsd.org/projects/freebsd-"
-"doc/boooks_handbook/tr_TR/>\n"
+"PO-Revision-Date: 2020-06-07 01:00+0000\n"
+"Last-Translator: ibrahimkarapolat <kpibrahim79@gmail.com>\n"
+"Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -51417,6 +51417,7 @@ msgstr "<prompt>#</prompt> <userinput>bsdlabel -wB /dev/bölüm/st0</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:35970
+#, fuzzy
 msgid ""
 "This process should create two other devices in <filename>/dev/stripe</"
 "filename> in addition to <filename>st0</filename>. Those include "
@@ -51424,81 +51425,109 @@ msgid ""
 "<acronym>UFS</acronym> file system can be created on <filename>st0a</"
 "filename> using <command>newfs</command>:"
 msgstr ""
+"Bu işlem </filename>st0<filename>'a ek olarak <filename>/dev/"
+"stripe</filename> 'de iki farklı cihaz oluşturur. Bunlar "
+"<filename>st0a</filename> ve <filename>st0c</filename> içerir. Bu noktada, "
+"<filename>st0a</filename> using <command>newfs</command> kullanılarak "
+"<acronym>UFS</acronym> isimli dosya sistemi oluşturulabilir:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:35978
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>newfs -U /dev/stripe/st0a</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>newfs -U /dev/stripe/st0a</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:35980
+#, fuzzy
 msgid ""
 "Many numbers will glide across the screen, and after a few seconds, the "
 "process will be complete. The volume has been created and is ready to be "
 "mounted."
 msgstr ""
+"Birçok numara ekranda belirir ve birkaç saniye sonra işlem tamamlanır. Birim "
+"oluşturuldu ve montaja hazır."
 
 #. (itstool) path: step/para
 #: book.translate.xml:35986
+#, fuzzy
 msgid "To manually mount the created disk stripe:"
-msgstr ""
+msgstr "Kurulan disk bölümünü manuel olarak montajlamak için:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:35988
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>mount /dev/stripe/st0a /mnt</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>mount /dev/stripe/st0a /mnt</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:35992
+#, fuzzy
 msgid ""
 "To mount this striped file system automatically during the boot process, "
 "place the volume information in <filename>/etc/fstab</filename>. In this "
 "example, a permanent mount point, named <filename>stripe</filename>, is "
 "created:"
 msgstr ""
+"Boot işlemi esnasında, bölümlenen dosya sistemini otomatik olarak "
+"montajlamak için, birim bilgisini <filename>/etc/fstab</filename>'e "
+"yerleştirin. Bu örnekte named <filename>stripe</filename> isimli kalıcı bir "
+"montaj bulunur:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:35998
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>mkdir /stripe</userinput>\n"
 "<prompt>#</prompt> <userinput>echo \"/dev/stripe/st0a /stripe ufs rw 2 2\" \\</userinput>\n"
 "<userinput>&gt;&gt; /etc/fstab</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>mkdir /stripe</userinput>\n"
+"<prompt>#</prompt> <userinput>echo \"/dev/stripe/st0a /stripe ufs rw 2 2\" \\"
+"</userinput>\n"
+"<userinput>&gt;&gt; /etc/fstab</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:36004
+#, fuzzy
 msgid ""
 "The <filename>geom_stripe.ko</filename> module must also be automatically "
 "loaded during system initialization, by adding a line to <filename>/boot/"
 "loader.conf</filename>:"
 msgstr ""
+"<filename>geom_stripe.ko</filename> modülü <filename>/boot/"
+"loader.conf</filename> 'a bir satır eklenerek sistem başlatımında otomatik "
+"olarak yüklenmelidir:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:36009
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>sysrc -f /boot/loader.conf geom_stripe_load=YES</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>sysrc -f /boot/loader.conf "
+"geom_stripe_load=YES</userinput>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:36015
+#, fuzzy
 msgid "RAID1 - Mirroring"
-msgstr ""
+msgstr "RAID1 - Aynalama"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:36020
+#, fuzzy
 msgid "<primary>Disk Mirroring</primary>"
-msgstr ""
+msgstr "<primary>Disk aynalama</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:36023
+#, fuzzy
 msgid "<primary>RAID1</primary>"
-msgstr ""
+msgstr "<primary>RAID1</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:36027
+#, fuzzy
 msgid ""
 "<acronym>RAID1</acronym>, or <emphasis>mirroring</emphasis>, is the "
 "technique of writing the same data to more than one disk drive. Mirrors are "
@@ -51508,9 +51537,17 @@ msgid ""
 "still functioning. The computer keeps running, and the administrator has "
 "time to replace the failed drive without user interruption."
 msgstr ""
+"<acronym></acronym> veya <emphasis>aynalama</emphasis> bir aynı veriyi "
+"birden fazla disk sürücüsüne yazma tekniğidir. Aynalar genellikle sürücü "
+"arızası nedeniyle veri kaybına karşı koruma sağlamak için kullanılır. Bir "
+"aynadaki her sürücü, verilerin özdeş bir kopyasını içerir. Tek bir sürücü "
+"arızalandığında, ayna hala çalışmaya devam eden sürücülerden veri sağlayarak "
+"çalışmaya devam eder. Bilgisayar çalışmaya devam eder ve yöneticinin hatalı "
+"sürücüyü kullanım kesintisi olmadan değiştirme zamanı vardır."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:36037
+#, fuzzy
 msgid ""
 "Two common situations are illustrated in these examples. The first creates a "
 "mirror out of two new drives and uses it as a replacement for an existing "
@@ -51519,9 +51556,15 @@ msgid ""
 "mirror. While this procedure is slightly more complicated, it only requires "
 "one new drive."
 msgstr ""
+"Bu örneklerde iki yaygın durum gösterilmiştir. Birincisi iki yeni sürücüden "
+"bir ayna oluşturur ve bunu mevcut tek bir sürücünün yerine kullanır. İkinci "
+"örnek, tek bir yeni sürücüde bir ayna oluşturur, eski sürücünün verilerini "
+"ona kopyalar, ardından eski sürücüyü aynaya yerleştirir. Bu prosedür biraz "
+"daha karmaşık olmakla birlikte, sadece bir yeni sürücü gerektirir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:36045
+#, fuzzy
 msgid ""
 "Traditionally, the two drives in a mirror are identical in model and "
 "capacity, but <citerefentry><refentrytitle>gmirror</"
@@ -51531,16 +51574,27 @@ msgid ""
 "unused. Drives inserted into the mirror later must have at least as much "
 "capacity as the smallest drive already in the mirror."
 msgstr ""
+"Geleneksel olarak, bir aynadaki iki sürücü model ve kapasite bakımından "
+"aynıdır, ancak <citerefentry><refentrytitle>gmirror</refentrytitle><manvolnum"
+">8</manvolnum></citerefentry> bunu gerektirmez. Farklı sürücülerle "
+"oluşturulan aynalar, aynadaki en küçük sürücününkine eşit bir kapasiteye "
+"sahip olacaktır. Daha büyük sürücülerde fazladan alan kullanılmayacaktır. "
+"Daha sonra aynaya takılan sürücüler, aynada bulunan en küçük sürücü kadar en "
+"az kapasiteye sahip olmalıdır."
 
 #. (itstool) path: warning/para
 #: book.translate.xml:36054
+#, fuzzy
 msgid ""
 "The mirroring procedures shown here are non-destructive, but as with any "
 "major disk operation, make a full backup first."
 msgstr ""
+"Burada gösterilen yansıtma işlemleri tahribatsızdır, ancak herhangi bir "
+"büyük disk işleminde olduğu gibi, önce tam yedekleme yapın."
 
 #. (itstool) path: warning/para
 #: book.translate.xml:36060
+#, fuzzy
 msgid ""
 "While <citerefentry><refentrytitle>dump</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> is used in these procedures to copy file systems, "
@@ -51549,66 +51603,94 @@ msgid ""
 "citerefentry> for information on detecting and disabling soft updates "
 "journaling."
 msgstr ""
+"<citerefentry><refentrytitle>döküm</refentrytitle><manvolnum>8</manvolnum></c"
+"iterefentry> sistem dosyalarını kopyalamak için kullanıldığında, yazılım "
+"güncellemelerini kaydeden dosya sistemlerinde çalışmaz. Yazılım "
+"güncellemeleri kaydını tespit etme ve devre dışı bırakma hakkında bilgi için<"
+"citerefentry><refentrytitle>tunefs</refentrytitle><manvolnum>8</manvolnum></c"
+"iterefentry> bakınız."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:36067
+#, fuzzy
 msgid "Metadata Issues"
-msgstr ""
+msgstr "Üstveri sorunları"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36069
+#, fuzzy
 msgid ""
 "Many disk systems store metadata at the end of each disk. Old metadata "
 "should be erased before reusing the disk for a mirror. Most problems are "
 "caused by two particular types of leftover metadata: <acronym>GPT</acronym> "
 "partition tables and old metadata from a previous mirror."
 msgstr ""
+"Birçok disk sistemi meta verileri her diskin sonunda depolar. Bir ayna için "
+"diski yeniden kullanmadan önce eski üstveri silinmelidir. Çoğu sorun, iki "
+"farklı tipte üstveri artığı nedeniyle ortaya çıkar: <acronym>GPT</acronym>  "
+"bölme tabloları ve önceki aynadan kalan eski \n"
+"üstveri."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36075
+#, fuzzy
 msgid ""
 "<acronym>GPT</acronym> metadata can be erased with "
 "<citerefentry><refentrytitle>gpart</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>. This example erases both primary and backup <acronym>GPT</"
 "acronym> partition tables from disk <filename>ada8</filename>:"
 msgstr ""
+"<acronym>GPT</acronym> üstveri <citerefentry><refentrytitle>gpart</refentryti"
+"tle><manvolnum>8</manvolnum></citerefentry> ile silinebilir. Bu örnek hem "
+"ana hemde yedekleme <acronym>GPT</acronym> bölüm tablolarını diskten "
+"<filename>ada8</filename> siler:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:36080
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>gpart destroy -F ada8</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>gpart destroy -F ada8</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36082
+#, fuzzy
 msgid ""
 "A disk can be removed from an active mirror and the metadata erased in one "
 "step using <citerefentry><refentrytitle>gmirror</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>. Here, the example disk <filename>ada8</filename> "
 "is removed from the active mirror <filename>gm4</filename>:"
 msgstr ""
+"Bir disk etkin aynalamadan çıkarılabilir ve meta veriler<citerefentry><refent"
+"rytitle>gmirror</refentrytitle><manvolnum>8</manvolnum></citerefentry> "
+"kullanılarak tek adımda silinebilir. Burada örnek "
+"disk<filename>ada8</filename> <filename>gm4</filename> aktif aynasından "
+"çıkarılmıştır:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:36087
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>gmirror remove gm4 ada8</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>gmirror remove gm4 ada8</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36089
+#, fuzzy
 msgid ""
 "If the mirror is not running, but old mirror metadata is still on the disk, "
 "use <command>gmirror clear</command> to remove it:"
 msgstr ""
+"Aynalamasa çalışmıyorsa ancak eski aynalama üstverisi hala diskteyse "
+"kaldırmak için <command>gmirror clear</command> kullanın."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:36093
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>gmirror clear ada8</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>gmirror clear ada8</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36095
+#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>gmirror</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> stores one block of metadata at the end of the "
@@ -51619,56 +51701,81 @@ msgid ""
 "partitioning is used here because it only stores a partition table at the "
 "start of the disk and does not conflict with the mirror metadata."
 msgstr ""
+"<citerefentry><refentrytitle>gmirror</refentrytitle><manvolnum>8</manvolnum><"
+"/citerefentry> diskin sonunda bir üstveri saklar. Çünkü "
+"<acronym>GPT</acronym> bölüm taslakları ayrıca diskin sonunda üstveri "
+"saklar, tüm<acronym>GPT</acronym> disklerin <citerefentry><refentrytitle>gmir"
+"ror</refentrytitle><manvolnum>8</manvolnum></citerefentry> ile aynalanması "
+"önerilmez.<acronym>MBR</acronym> bölümleme burada kullanılır, çünkü bölüm "
+"diskini yalnızca diskin başında saklar ve aynalama üstverisiyle çakışmaz."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:36105
+#, fuzzy
 msgid "Creating a Mirror with Two New Disks"
-msgstr ""
+msgstr "İki yeni disk ile aynalama oluşturma"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36107
+#, fuzzy
 msgid ""
 "In this example, FreeBSD has already been installed on a single disk, "
 "<filename>ada0</filename>. Two new disks, <filename>ada1</filename> and "
 "<filename>ada2</filename>, have been connected to the system. A new mirror "
 "will be created on these two disks and used to replace the old single disk."
 msgstr ""
+"Bu örnekte FreeBSD zaten tek diske yüklüdür.<filename>ada0</filename>. İki "
+"yeni disk<filename>ada1</filename> ve <filename>ada2</filename> sisteme "
+"bağlanmıştır. Bu iki diskte yeni bir aynalama oluşturulacak ve eski tek "
+"diskin yerini alacak şekilde kullanılacak."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36114
+#, fuzzy
 msgid ""
 "The <filename>geom_mirror.ko</filename> kernel module must either be built "
 "into the kernel or loaded at boot- or run-time. Manually load the kernel "
 "module now:"
 msgstr ""
+"<filename>geom_mirror.ko</filename> kernel modülü kernel yerleştirilmeli "
+"veya boot veya çalışma zamanında yüklenmelidir. Çekirdek modülünü şimdi "
+"manuel olarakyükleyin:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:36118 book.translate.xml:36245
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>gmirror load</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>gmirror load</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36120
+#, fuzzy
 msgid "Create the mirror with the two new drives:"
-msgstr ""
+msgstr "İki yeni sürücü ile aynalama oluşturma:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:36122
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>gmirror label -v gm0 /dev/ada1 /dev/ada2</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>gmirror label -v gm0 /dev/ada1 /dev/"
+"ada2</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36124
+#, fuzzy
 msgid ""
 "<filename>gm0</filename> is a user-chosen device name assigned to the new "
 "mirror. After the mirror has been started, this device name appears in "
 "<filename>/dev/mirror/</filename>."
 msgstr ""
+"<filename>gm0</filename> yeni aynalamaya verilen ve kullanıcı tarafından "
+"seçilen cihaz ismidir. Aynalama başladıktan sonra cihaz ismi <filename>/dev/"
+"mirror/</filename>' de belirir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36129
+#, fuzzy
 msgid ""
 "<acronym>MBR</acronym> and <application>bsdlabel</application> partition "
 "tables can now be created on the mirror with "
@@ -51678,18 +51785,28 @@ msgid ""
 "<filename>/tmp</filename>, and <filename>/usr</filename>. A single "
 "<filename>/</filename> and a swap partition will also work."
 msgstr ""
+"<acronym>MBR</acronym> ve<application>bsdlabel</application> bölüm tabloları "
+"şu anda <citerefentry><refentrytitle>gpart</refentrytitle><manvolnum>8</manvo"
+"lnum></citerefentry> ile aynada oluşturulabilir. Bu örnek <filename></filenam"
+"e>,swap,<filename>/var</filename>,<filename>/tmp</filename>, "
+"ve<filename>/usr</filename> bölümleri için geleneksel bir sistem dizilimi "
+"kullanır. Tek <filename>/</filename>ve swap bölümleri de ayrıca çalışacaktır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36138
+#, fuzzy
 msgid ""
 "Partitions on the mirror do not have to be the same size as those on the "
 "existing disk, but they must be large enough to hold all the data already "
 "present on <filename>ada0</filename>."
 msgstr ""
+"Aynadaki bölümlerin mevcut diskteki bölümlerle aynı boyutta olması gerekmez, "
+"ancak <filename>ada0</filename> 'da mevcut olan tüm verileri tutacak kadar "
+"büyük olmalıdırlar."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:36143
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>gpart create -s MBR mirror/gm0</userinput>\n"
 "<prompt>#</prompt> <userinput>gpart add -t freebsd -a 4k mirror/gm0</userinput>\n"
@@ -51699,10 +51816,18 @@ msgid ""
 "        126  156301299                 1  freebsd  (74G)\n"
 "  156301425         61                    - free -  (30k)"
 msgstr ""
+"<prompt>#</prompt> <userinput>gpart create -s MBR mirror/gm0</userinput>\n"
+"<prompt>#</prompt> <userinput>gpart add -t freebsd -a 4k mirror/"
+"gm0</userinput>\n"
+"<prompt>#</prompt> <userinput>gpart show mirror/gm0</userinput>\n"
+"=&gt;       63  156301423  mirror/gm0  MBR  (74G)\n"
+"         63         63                    - free -  (31k)\n"
+"        126  156301299                 1  freebsd  (74G)\n"
+"  156301425         61                    - free -  (30k)"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:36151
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>gpart create -s BSD mirror/gm0s1</userinput>\n"
 "<prompt>#</prompt> <userinput>gpart add -t freebsd-ufs  -a 4k -s 2g mirror/gm0s1</userinput>\n"
@@ -51720,37 +51845,73 @@ msgid ""
 "   18874370  137426928                   6  freebsd-ufs  (65G)\n"
 "  156301298          1                      - free -  (512B)"
 msgstr ""
+"<prompt>#</prompt> <userinput>gpart create -s BSD mirror/gm0s1</userinput>\n"
+"<prompt>#</prompt> <userinput>gpart add -t freebsd-ufs  -a 4k -s 2g mirror/"
+"gm0s1</userinput>\n"
+"<prompt>#</prompt> <userinput>gpart add -t freebsd-swap -a 4k -s 4g mirror/"
+"gm0s1</userinput>\n"
+"<prompt>#</prompt> <userinput>gpart add -t freebsd-ufs  -a 4k -s 2g mirror/"
+"gm0s1</userinput>\n"
+"<prompt>#</prompt> <userinput>gpart add -t freebsd-ufs  -a 4k -s 1g mirror/"
+"gm0s1</userinput>\n"
+"<prompt>#</prompt> <userinput>gpart add -t freebsd-ufs  -a 4k       mirror/"
+"gm0s1</userinput>\n"
+"<prompt>#</prompt> <userinput>gpart show mirror/gm0s1</userinput>\n"
+"=&gt;        0  156301299  mirror/gm0s1  BSD  (74G)\n"
+"          0          2                      - free -  (1.0k)\n"
+"          2    4194304                   1  freebsd-ufs  (2.0G)\n"
+"    4194306    8388608                   2  freebsd-swap  (4.0G)\n"
+"   12582914    4194304                   4  freebsd-ufs  (2.0G)\n"
+"   16777218    2097152                   5  freebsd-ufs  (1.0G)\n"
+"   18874370  137426928                   6  freebsd-ufs  (65G)\n"
+"  156301298          1                      - free -  (512B)"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36167 book.translate.xml:36389
+#, fuzzy
 msgid ""
 "Make the mirror bootable by installing bootcode in the <acronym>MBR</"
 "acronym> and bsdlabel and setting the active slice:"
 msgstr ""
+"Önyükleme kodunu <acronym>MBR</acronym>'ye ve bsdlabel'a girerek ve aktif "
+"bölümü ayarlayarak aynayı önyüklenebilir hale getirin:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:36171 book.translate.xml:36393
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>gpart bootcode -b /boot/mbr mirror/gm0</userinput>\n"
 "<prompt>#</prompt> <userinput>gpart set -a active -i 1 mirror/gm0</userinput>\n"
 "<prompt>#</prompt> <userinput>gpart bootcode -b /boot/boot mirror/gm0s1</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>gpart bootcode -b /boot/mbr mirror/"
+"gm0</userinput>\n"
+"<prompt>#</prompt> <userinput>gpart set -a active -i 1 mirror/gm0</userinput>"
+"\n"
+"<prompt>#</prompt> <userinput>gpart bootcode -b /boot/boot mirror/"
+"gm0s1</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36175
+#, fuzzy
 msgid "Format the file systems on the new mirror, enabling soft-updates."
 msgstr ""
+"Yazılım güncellemelerini devreye alarak, yeni aynadaki dosya sistemlerini "
+"formatlayın."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:36178
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>newfs -U /dev/mirror/gm0s1a</userinput>\n"
 "<prompt>#</prompt> <userinput>newfs -U /dev/mirror/gm0s1d</userinput>\n"
 "<prompt>#</prompt> <userinput>newfs -U /dev/mirror/gm0s1e</userinput>\n"
 "<prompt>#</prompt> <userinput>newfs -U /dev/mirror/gm0s1f</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>newfs -U /dev/mirror/gm0s1a</userinput>\n"
+"<prompt>#</prompt> <userinput>newfs -U /dev/mirror/gm0s1d</userinput>\n"
+"<prompt>#</prompt> <userinput>newfs -U /dev/mirror/gm0s1e</userinput>\n"
+"<prompt>#</prompt> <userinput>newfs -U /dev/mirror/gm0s1f</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36183
