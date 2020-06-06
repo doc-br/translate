@@ -3,11 +3,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-04-18 15:00-0300\n"
+"POT-Creation-Date: 2020-06-06 11:07-0300\n"
 "PO-Revision-Date: 2020-05-22 14:29+0000\n"
 "Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
-"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
-"freebsd-doc/articles_freebsd-releng/es/>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/freebsd-"
+"doc/articles_freebsd-releng/es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -41,12 +41,12 @@ msgid ""
 "www.netgate.com\">Rubicon Communications, LLC (Netgate)</link></orgname> <_:"
 "address-1/> </affiliation>"
 msgstr ""
-"<personname> <firstname>Glen</firstname> <surname>Barber</surname> "
-"</personname> <affiliation> <orgname class=\"nonprofit\"> <link xlink:href=\""
-"https://www.freebsdfoundation.org\">The FreeBSD Foundation</link></orgname> "
-"</affiliation> <affiliation> <orgname> <link xlink:href=\""
-"https://www.netgate.com\">Rubicon Communications, LLC "
-"(Netgate)</link></orgname> <_:address-1/> </affiliation>"
+"<personname> <firstname>Glen</firstname> <surname>Barber</surname> </"
+"personname> <affiliation> <orgname class=\"nonprofit\"> <link xlink:href="
+"\"https://www.freebsdfoundation.org\">The FreeBSD Foundation</link></"
+"orgname> </affiliation> <affiliation> <orgname> <link xlink:href=\"https://"
+"www.netgate.com\">Rubicon Communications, LLC (Netgate)</link></orgname> <_:"
+"address-1/> </affiliation>"
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:47
@@ -965,8 +965,8 @@ msgid ""
 "Update <literal>% betarel.vers</literal> to <literal>BETA<replaceable>1</"
 "replaceable></literal>"
 msgstr ""
-"Actualice <literal>% betarel.vers</literal> a "
-"<literal>BETA<replaceable>1</replaceable></literal>"
+"Actualice <literal>% betarel.vers</literal> a <literal>BETA<replaceable>1</"
+"replaceable></literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:607
@@ -1336,8 +1336,8 @@ msgid ""
 "<filename>stable/<replaceable>12</replaceable>/share/mk/src.opts.mk</"
 "filename>"
 msgstr ""
-"<filename>stable/<replaceable>12</replaceable>/share/mk/"
-"src.opts.mk</filename>"
+"<filename>stable/<replaceable>12</replaceable>/share/mk/src.opts.mk</"
+"filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:789
@@ -1347,8 +1347,8 @@ msgid ""
 "literal>"
 msgstr ""
 "Mueva <varname>REPRODUCIBLE_BUILD</varname> desde "
-"<literal>__DEFAULT_NO_OPTIONS</literal> a "
-"<literal>__DEFAULT_YES_OPTIONS</literal>"
+"<literal>__DEFAULT_NO_OPTIONS</literal> a <literal>__DEFAULT_YES_OPTIONS</"
+"literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:796
@@ -1358,9 +1358,8 @@ msgid ""
 "only)"
 msgstr ""
 "Mueva <varname>LLVM_ASSERTIONS</varname> desde "
-"<literal>__DEFAULT_YES_OPTIONS</literal> a "
-"<literal>__DEFAULT_NO_OPTIONS</literal> (FreeBSD 13.x y posteriores "
-"solamente)"
+"<literal>__DEFAULT_YES_OPTIONS</literal> a <literal>__DEFAULT_NO_OPTIONS</"
+"literal> (FreeBSD 13.x y posteriores solamente)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:803
@@ -1507,7 +1506,7 @@ msgid "<filename>head/Makefile.libcompat</filename>"
 msgstr "<filename>head/Makefile.libcompat</filename>"
 
 #. (itstool) path: row/entry
-#: article.translate.xml:902 article.translate.xml:959
+#: article.translate.xml:902
 msgid "Update <literal>LILB32CPUFLAGS</literal>"
 msgstr "Actualice <literal>LILB32CPUFLAGS</literal>"
 
@@ -1581,6 +1580,13 @@ msgstr "Actualice <varname>OS_VERSION</varname>"
 #: article.translate.xml:958
 msgid "<filename>Makefile.libcompat</filename>"
 msgstr "<filename>Makefile.libcompat</filename>"
+
+#. (itstool) path: row/entry
+#: article.translate.xml:959
+#, fuzzy
+#| msgid "Update <literal>LILB32CPUFLAGS</literal>"
+msgid "Update <literal>LIB32CPUFLAGS</literal>"
+msgstr "Actualice <literal>LILB32CPUFLAGS</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:963
@@ -1911,8 +1917,7 @@ msgstr ""
 #: article.translate.xml:1155
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>/bin/sh /usr/src/release/release.sh</userinput>"
-msgstr ""
-"<prompt>#</prompt> <userinput>/bin/sh /usr/src/release/release.sh</userinput>"
+msgstr "<prompt>#</prompt> <userinput>/bin/sh /usr/src/release/release.sh</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1157
@@ -1947,9 +1952,7 @@ msgstr "Entonces invoca <filename>src/release/release.sh</filename> como::"
 #: article.translate.xml:1171
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>/bin/sh /usr/src/release/release.sh -c <replaceable>$HOME/release.conf</replaceable></userinput>"
-msgstr ""
-"<prompt>#</prompt> <userinput>/bin/sh /usr/src/release/release.sh -c "
-"<replaceable>$HOME/release.conf</replaceable></userinput>"
+msgstr "<prompt>#</prompt> <userinput>/bin/sh /usr/src/release/release.sh -c <replaceable>$HOME/release.conf</replaceable></userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1173
@@ -2051,10 +2054,10 @@ msgid ""
 "filename> -&gt; <filename>defaults-<replaceable>12</replaceable>.conf</"
 "filename> -&gt; <filename>main.conf</filename>"
 msgstr ""
-"<filename><replaceable>12</replaceable>-<replaceable>amd64</replaceable>-<rep"
-"laceable>GENERIC</replaceable>-<replaceable>snap</replaceable>.conf</filename"
-"> -&gt; <filename>defaults-<replaceable>12</replaceable>.conf</filename> "
-"-&gt; <filename>main.conf</filename>"
+"<filename><replaceable>12</replaceable>-<replaceable>amd64</replaceable>-"
+"<replaceable>GENERIC</replaceable>-<replaceable>snap</replaceable>.conf</"
+"filename> -&gt; <filename>defaults-<replaceable>12</replaceable>.conf</"
+"filename> -&gt; <filename>main.conf</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1241
