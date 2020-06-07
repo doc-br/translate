@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-07 17:36+0000\n"
+"PO-Revision-Date: 2020-06-07 20:27+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/fa/>\n"
@@ -465,8 +465,8 @@ msgid ""
 "<xref linkend=\"filesystems\"/> has been added with information about non-"
 "native file systems in FreeBSD, such as ZFS from <trademark>Sun</trademark>."
 msgstr ""
-"<xref linkend=\"filesystems\"/> در مورد سامانه پرونده‌های غیر بومی در FreeBSD "
-"مانند ZFS از <trademark>Sun</trademark> اضافه شده است."
+"<xref linkend=\"filesystems\"/> همراه اطلاعاتی پیرامون سامانه‌های پروندهٔ "
+"غیر بومی در FreeBSD، مانند ZFS از <trademark>Sun</trademark> اضافه شده است."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:935
@@ -532,9 +532,9 @@ msgid ""
 "virtual private networks (VPNs), file system access control lists (ACLs), "
 "and security advisories."
 msgstr ""
-"<xref linkend=\"security\"/> همراه اطلاعات جدیدی پیرامون شبکه خصوصی مجازی "
-"(VPNs)، فهرست کنترل دسترسیِ (ACLs) سامانه پرونده، و مشاوره‌های امنیتی بسط "
-"یافته است."
+"<xref linkend=\"security\"/> همراه اطلاعات جدیدی پیرامون شبکه‌های خصوصی "
+"مجازی (VPNs)، فهرست‌های نظارت دسترسیِ (ACLs) سامانهٔ پرونده، و مشاوره‌های "
+"امنیتی بسط یافته است."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:976
@@ -1089,8 +1089,8 @@ msgid ""
 "detailed information about the configuration of the different firewalls "
 "available for FreeBSD."
 msgstr ""
-"این بخش فلسفه‌ی پشت فایروال‌های مبتنی بر نرم‌افزار را شرح می‌دهد و اطلاعات دقیقی "
-"در مورد پیکربندی فایروال‌های مختلفِ موجود در FreeBSD ارائه می‌دهد."
+"این بخش فلسفه‌ی پشت سپرواره‌های مبتنی بر نرم‌افزار را شرح می‌دهد و اطلاعات "
+"دقیقی در مورد پیکربندی سپرواره‌های مختلفِ موجود در FreeBSD ارائه می‌دهد."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1454
@@ -1585,10 +1585,10 @@ msgid ""
 "for that purpose."
 msgstr ""
 "<emphasis>شبکه TCP/IP قوی</emphasis><_:indexterm-1/> - سامانه FreeBSD "
-"قراردادهای با استانداردِ صنعتی را با عملکرد و مقیاس پذیریِ روزافزون پیاده سازی "
-"می‌کند.این عامل موجب به کار آمدنِ آن در نقش‌های کارساز، مسیرگزینی/دیوار آتش شده "
-"است - و در واقع بسیاری از شرکت‌ها و فروشندگان بطور مشخص در همین راستا از آن "
-"بهره می‌برند."
+"قراردادهای با استانداردِ صنعتی را با عملکرد و مقیاس پذیریِ روزافزون پیاده "
+"سازی می‌کند.این عامل موجب به کار آمدنِ آن در نقش‌های کارساز، مسیرگزینی/"
+"سپرواره شده است - و در واقع بسیاری از شرکت‌ها و فروشندگان بطور مشخص در همین "
+"راستا از آن بهره می‌برند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1765
@@ -1773,7 +1773,7 @@ msgstr "مسیرگزینی قرارداد اینترنت نسخه ۴ و ۶"
 #. (itstool) path: chapter/indexterm
 #: book.translate.xml:1874 book.translate.xml:57685
 msgid "<primary>firewall</primary>"
-msgstr "<primary>دیواره آتش</primary>"
+msgstr "<primary>سپرواره</primary>"
 
 #. (itstool) path: para/indexterm
 #. (itstool) path: sect2/indexterm
@@ -1787,7 +1787,7 @@ msgid ""
 "Firewalls<_:indexterm-1/> and NAT<_:indexterm-2/> (<quote>IP masquerading</"
 "quote>) gateways"
 msgstr ""
-"دروازه‌های دیواره‌های آتش<_:indexterm-1/> و برگردان نشانی شبکه<_:indexterm-2/"
+"دروازه‌های سپرواره‌ها<_:indexterm-1/> و برگردان نشانی شبکه<_:indexterm-2/"
 ">(<quote>دگرنمایی IP</quote>)"
 
 #. (itstool) path: para/indexterm
@@ -1857,12 +1857,18 @@ msgstr "<primary>کارساز سامانه نام دامنه</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1931
+#, fuzzy
 msgid ""
 "<emphasis>Networking:</emphasis> Need a new router?<_:indexterm-1/> A name "
 "server (DNS)?<_:indexterm-2/> A firewall to keep people out of your internal "
 "network? FreeBSD can easily turn that unused PC sitting in the corner into "
 "an advanced router with sophisticated packet-filtering capabilities."
 msgstr ""
+"<emphasis>شبکه‌سازی:</emphasis> به یک مسیریاب<_:indexterm-1/> یا یک سامانهٔ "
+"نام دامنه (DNS) جدید نیاز دارید؟<_:indexterm-2/> یا به یک سپرواره به‌منظور "
+"نگاه‌داری دیگران به خارج از شبکه داخلی خود؟ FreeBSD به‌راحتی می‌تواند رایانه "
+"شخصی بدون استفادهٔ شما را به یک مسیریاب پیشرفته با قابلیت تصفیه بستهٔ سطح "
+"بالا تبدیل کند."
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:1945
@@ -1871,6 +1877,7 @@ msgstr "<primary>تعبیه شده</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1943
+#, fuzzy
 msgid ""
 "<emphasis>Embedded:</emphasis> FreeBSD makes an excellent platform to build "
 "embedded systems upon. <_:indexterm-1/> With support for the <trademark "
@@ -1882,6 +1889,15 @@ msgid ""
 "FreeBSD makes an excellent foundation for building embedded routers, "
 "firewalls, and other devices."
 msgstr ""
+"<emphasis>تعبیه شده:</emphasis> FreeBSD بستری عالی برای ساخت سامانه‌های "
+"تعبیه شده بر روی آن ایجاد می‌کند. <_:indexterm-1/> به‌همراه پشتیبانی برای "
+"بستر‌های <trademark class=\"registered\">ARM</trademark>، <trademark class=\""
+"registered\">MIPS</trademark> و <trademark class=\"registered\""
+">PowerPC</trademark>، توام با پشتهٔ شبکهٔ قدرتمند، امکانات پیشرو و <link "
+"xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/faq/"
+"introduction.html#bsd-license-restrictions\">پروانهٔ BSD</link> "
+"آسان‌گیرِ/آزادِ آن می‌تواند زیربنایی فوق‌العاده به‌منظور ساخت مسیریاب‌ها، "
+"سپرواره‌ها و بسیاری دستگاه‌های تعبیه شدهٔ دیگر ایجاد کند."
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:1958
