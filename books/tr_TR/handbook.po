@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-07 17:37+0000\n"
-"Last-Translator: yami98 <yagmurkaya3625@hotmail.com>\n"
+"PO-Revision-Date: 2020-06-08 08:55+0000\n"
+"Last-Translator: Alparslangurbuz <alparslangurbuz@hotmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -16331,6 +16331,7 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12033
+#, fuzzy
 msgid ""
 "To control which fonts are anti-aliased, or to configure anti-aliasing "
 "properties, create (or edit, if it already exists) the file <filename>/usr/"
@@ -16340,32 +16341,49 @@ msgid ""
 "\"xorg\"><refentrytitle>fonts-conf</refentrytitle><manvolnum>5</manvolnum></"
 "citerefentry>."
 msgstr ""
+"Hangi yazı tiplerinin kenar yumuşatılmasını denetlemek veya kenar yumuşatma "
+"özelliklerini yapılandırmak için <filename>/usr/local/etc/fonts/"
+"local.conf</filename> soyasını oluşturun( var ise düzenleyin). Xft yazı tipi "
+"sisteminin çeşitli gelişmiş özellikleri bu dosya kullanılarak ayarlanabilir; "
+"bu bölümde sadece bazı basit olasılıklar açıklanmaktadır. Daha fazla detay "
+"için: <citerefentry vendor=\"xorg\"><refentrytitle>fonts-"
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>."
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:12042
+#, fuzzy
 msgid "<primary>XML</primary>"
-msgstr ""
+msgstr "<primary>XML</primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12044
+#, fuzzy
 msgid ""
 "This file must be in XML format. Pay careful attention to case, and make "
 "sure all tags are properly closed. The file begins with the usual XML header "
 "followed by a DOCTYPE definition, and then the <literal>&lt;fontconfig&gt;</"
 "literal> tag:"
 msgstr ""
+"Bu dosya XML biçiminde olmalıdır. Duruma dikkat edin ve tüm etiketlerin "
+"düzgün bir şekilde kapatıldığından emin olun. Dosya, normal XML üstbilgisi "
+"ve ardından bir DOCTYPE tanımı ve ardından "
+"<literal>&lt;fontconfig&gt;</literal> etiketi ile başlar:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12050
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "&lt;?xml version=\"1.0\"?&gt;\n"
 "      &lt;!DOCTYPE fontconfig SYSTEM \"fonts.dtd\"&gt;\n"
 "      &lt;fontconfig&gt;"
 msgstr ""
+"&lt;?xml version=\"1.0\"?&gt;\n"
+"      &lt;!DOCTYPE fontconfig SYSTEM \"fonts.dtd\"&gt;\n"
+"      &lt;fontconfig&gt;"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12054
+#, fuzzy
 msgid ""
 "As previously stated, all fonts in <filename>/usr/local/share/fonts/</"
 "filename> as well as <filename>~/.fonts/</filename> are already made "
@@ -16373,38 +16391,52 @@ msgid ""
 "these two directory trees, add a line like this to <filename>/usr/local/etc/"
 "fonts/local.conf</filename>:"
 msgstr ""
+"Daha önce belirtildiği gibi <filename>/usr/local/share/fonts/</filename> "
+"tıpkı <filename>~/.fonts/</filename> gibi içindeki tüm fontlar zaten Xft "
+"uyumlu uygulamalara sunulmuştur. Bu iki dizin ağacının dışında başka bir "
+"dizin eklemek için <filename>/usr/local/etc/fonts/local.conf</filename> "
+"dosyasına böyle bir satır ekleyin:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12062
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "&lt;dir&gt;/path/to/my/fonts&lt;/dir&gt;"
-msgstr ""
+msgstr "&lt;dir&gt;/path/to/my/fonts&lt;/dir&gt;"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12064
+#, fuzzy
 msgid ""
 "After adding new fonts, and especially new font directories, rebuild the "
 "font caches:"
 msgstr ""
+"Yeni fontlar ve özellikle yeni font dizinleri ekledikten sonra font "
+"önbelleklerini yeniden oluşturun:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:12068
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>fc-cache -f</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>fc-cache -f</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12070
+#, fuzzy
 msgid ""
 "Anti-aliasing makes borders slightly fuzzy, which makes very small text more "
 "readable and removes <quote>staircases</quote> from large text, but can "
 "cause eyestrain if applied to normal text. To exclude font sizes smaller "
 "than 14 point from anti-aliasing, include these lines:"
 msgstr ""
+"Kenar yumuşatma kenarlıkları hafif bulanık yapar, bu da çok küçük metni daha "
+"okunabilir hale getirir ve büyük metinden <quote>merdivenler</quote>'i "
+"kaldırır, ancak normal metne uygulandığında göz yorgunluğuna neden olabilir. "
+"14 puntodan küçük yazı tipi kenar yumuşatmasını engellemek için şu satırları "
+"ekleyin:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12077
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "        &lt;match target=\"font\"&gt;\n"
 "\t    &lt;test name=\"size\" compare=\"less\"&gt;\n"
@@ -16423,24 +16455,46 @@ msgid ""
 "\t    &lt;/edit&gt;\n"
 "\t&lt;/match&gt;"
 msgstr ""
+"        &lt;match target=\"font\"&gt;\n"
+"\t    &lt;test name=\"size\" compare=\"less\"&gt;\n"
+"\t\t&lt;double&gt;14&lt;/double&gt;\n"
+"\t    &lt;/test&gt;\n"
+"\t    &lt;edit name=\"antialias\" mode=\"assign\"&gt;\n"
+"\t\t&lt;bool&gt;false&lt;/bool&gt;\n"
+"\t    &lt;/edit&gt;\n"
+"\t&lt;/match&gt;\n"
+"\t&lt;match target=\"font\"&gt;\n"
+"\t    &lt;test name=\"pixelsize\" compare=\"less\" qual=\"any\"&gt;\n"
+"\t\t&lt;double&gt;14&lt;/double&gt;\n"
+"\t    &lt;/test&gt;\n"
+"\t    &lt;edit mode=\"assign\" name=\"antialias\"&gt;\n"
+"\t\t&lt;bool&gt;false&lt;/bool&gt;\n"
+"\t    &lt;/edit&gt;\n"
+"\t&lt;/match&gt;"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:12094
+#, fuzzy
 msgid "<primary>fonts</primary> <secondary>spacing</secondary>"
-msgstr ""
+msgstr "<primary>fonts</primary> <secondary>spacing</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12099
+#, fuzzy
 msgid ""
 "Spacing for some monospaced fonts might also be inappropriate with anti-"
 "aliasing. This seems to be an issue with <application>KDE</application>, in "
 "particular. One possible fix is to force the spacing for such fonts to be "
 "100. Add these lines:"
 msgstr ""
+"Bazı aralıklı yazı tiplerinin boşlukları, kenar yumuşatma ile de uygun "
+"olmayabilir. Bu, özellikle <application>KDE</application> ile ilgili bir "
+"sorun gibi görünüyor. Olası bir düzeltme, bu tür fontların aralığını 100 "
+"olacak şekilde zorlamaktır. Bu satırları ekleyin:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12105
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "\t&lt;match target=\"pattern\" name=\"family\"&gt;\n"
 "\t   &lt;test qual=\"any\" name=\"family\"&gt;\n"
@@ -16459,17 +16513,36 @@ msgid ""
 "\t    &lt;/edit&gt;\n"
 "\t&lt;/match&gt;"
 msgstr ""
+"\t&lt;match target=\"pattern\" name=\"family\"&gt;\n"
+"\t   &lt;test qual=\"any\" name=\"family\"&gt;\n"
+"\t       &lt;string&gt;fixed&lt;/string&gt;\n"
+"\t   &lt;/test&gt;\n"
+"\t   &lt;edit name=\"family\" mode=\"assign\"&gt;\n"
+"\t       &lt;string&gt;mono&lt;/string&gt;\n"
+"\t   &lt;/edit&gt;\n"
+"\t&lt;/match&gt;\n"
+"\t&lt;match target=\"pattern\" name=\"family\"&gt;\n"
+"\t    &lt;test qual=\"any\" name=\"family\"&gt;\n"
+"\t\t&lt;string&gt;console&lt;/string&gt;\n"
+"\t    &lt;/test&gt;\n"
+"\t    &lt;edit name=\"family\" mode=\"assign\"&gt;\n"
+"\t\t&lt;string&gt;mono&lt;/string&gt;\n"
+"\t    &lt;/edit&gt;\n"
+"\t&lt;/match&gt;"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12122
+#, fuzzy
 msgid ""
 "(this aliases the other common names for fixed fonts as <literal>\"mono\"</"
 "literal>), and then add:"
 msgstr ""
+"(bu, sabit yazı tiplerinin diğer yaygın adlarını <literal>mono</literal> "
+"olarak diğer adlar olarak adlandırır) ve ardından şunu ekleyin:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12125
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "         &lt;match target=\"pattern\" name=\"family\"&gt;\n"
 "\t     &lt;test qual=\"any\" name=\"family\"&gt;\n"
@@ -16480,19 +16553,33 @@ msgid ""
 "\t     &lt;/edit&gt;\n"
 "\t &lt;/match&gt;      "
 msgstr ""
+"         &lt;match target=\"pattern\" name=\"family\"&gt;\n"
+"\t     &lt;test qual=\"any\" name=\"family\"&gt;\n"
+"\t\t &lt;string&gt;mono&lt;/string&gt;\n"
+"\t     &lt;/test&gt;\n"
+"\t     &lt;edit name=\"spacing\" mode=\"assign\"&gt;\n"
+"\t\t &lt;int&gt;100&lt;/int&gt;\n"
+"\t     &lt;/edit&gt;\n"
+"\t &lt;/match&gt;      "
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12134
+#, fuzzy
 msgid ""
 "Certain fonts, such as Helvetica, may have a problem when anti-aliased. "
 "Usually this manifests itself as a font that seems cut in half vertically. "
 "At worst, it may cause applications to crash. To avoid this, consider adding "
 "the following to <filename>local.conf</filename>:"
 msgstr ""
+"Helvetica gibi bazı yazı tiplerinin kenar yumuşatılması sırasında sorun "
+"olabilir. Genellikle bu, dikey olarak yarıya bölünmüş gibi görünen bir yazı "
+"tipi olarak kendini gösterir. En kötüsü, uygulamaların çökmesine neden "
+"olabilir. Bunu önlemek için <filename>local.conf</filename> dosyasına "
+"aşağıdakileri eklemeyi düşünün:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12140
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "         &lt;match target=\"pattern\" name=\"family\"&gt;\n"
 "\t     &lt;test qual=\"any\" name=\"family\"&gt;\n"
@@ -16503,35 +16590,54 @@ msgid ""
 "\t     &lt;/edit&gt;\n"
 "\t &lt;/match&gt;        "
 msgstr ""
+"         &lt;match target=\"pattern\" name=\"family\"&gt;\n"
+"\t     &lt;test qual=\"any\" name=\"family\"&gt;\n"
+"\t\t &lt;string&gt;Helvetica&lt;/string&gt;\n"
+"\t     &lt;/test&gt;\n"
+"\t     &lt;edit name=\"family\" mode=\"assign\"&gt;\n"
+"\t\t &lt;string&gt;sans-serif&lt;/string&gt;\n"
+"\t     &lt;/edit&gt;\n"
+"\t &lt;/match&gt;        "
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12149
+#, fuzzy
 msgid ""
 "After editing <filename>local.conf</filename>, make certain to end the file "
 "with the <literal>&lt;/fontconfig&gt;</literal> tag. Not doing this will "
 "cause changes to be ignored."
 msgstr ""
+"<filename>local.conf</filename> dosyasını düzenledikten sonra, dosyayı "
+"<literal>&lt;/fontconfig&gt;</literal> etiketi ile bitirdiğinizden emin "
+"olun. Bunu yapmamak değişikliklerin göz ardı edilmesine neden olur."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12154
+#, fuzzy
 msgid ""
 "Users can add personalized settings by creating their own <filename>~/."
 "config/fontconfig/fonts.conf</filename>. This file uses the same "
 "<acronym>XML</acronym> format described above."
 msgstr ""
+"Kullanıcılar kendi <filename>~/.config/fontconfig/fonts.conf</filename> "
+"dosyalarını oluşturarak kişiselleştirilmiş ayarlar ekleyebilirler. Bu dosya "
+"yukarıda açıklanan aynı <acronym>XML</acronym> biçimini kullanır."
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:12159
+#, fuzzy
 msgid "<primary>LCD screen</primary>"
-msgstr ""
+msgstr "<primary>LCD ekran</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:12160
+#, fuzzy
 msgid "<primary>Fonts</primary> <secondary>LCD screen</secondary>"
-msgstr ""
+msgstr "<primary>Fonts</primary> <secondary>LCD ekran</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12163
+#, fuzzy
 msgid ""
 "One last point: with an LCD screen, sub-pixel sampling may be desired. This "
 "basically treats the (horizontally separated) red, green and blue components "
@@ -16539,10 +16645,15 @@ msgid ""
 "dramatic. To enable this, add the line somewhere in <filename>local.conf</"
 "filename>:"
 msgstr ""
+"Son bir nokta: LCD ekran ile alt piksel örneklemesi istenebilir. Bu, yatay "
+"çözünürlüğü geliştirmek için temel olarak (yatay olarak ayrılmış) kırmızı, "
+"yeşil ve mavi bileşenleri ayrı ayrı ele alır; sonuçlar dramatik olabilir. "
+"Bunu etkinleştirmek için satırı <filename>local.conf</filename> içinde bir "
+"yere ekleyin:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12170
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "\t &lt;match target=\"font\"&gt;\n"
 "\t     &lt;test qual=\"all\" name=\"rgba\"&gt;\n"
@@ -16553,14 +16664,26 @@ msgid ""
 "\t     &lt;/edit&gt;\n"
 "\t &lt;/match&gt;"
 msgstr ""
+"\t &lt;match target=\"font\"&gt;\n"
+"\t     &lt;test qual=\"all\" name=\"rgba\"&gt;\n"
+"\t\t &lt;const&gt;unknown&lt;/const&gt;\n"
+"\t     &lt;/test&gt;\n"
+"\t     &lt;edit name=\"rgba\" mode=\"assign\"&gt;\n"
+"\t\t &lt;const&gt;rgb&lt;/const&gt;\n"
+"\t     &lt;/edit&gt;\n"
+"\t &lt;/match&gt;"
 
 #. (itstool) path: note/para
 #: book.translate.xml:12180
+#, fuzzy
 msgid ""
 "Depending on the sort of display, <literal>rgb</literal> may need to be "
 "changed to <literal>bgr</literal>, <literal>vrgb</literal> or <literal>vbgr</"
 "literal>: experiment and see which works best."
 msgstr ""
+"Ekranın türüne bağlı olarak, <literal>rgb</literal> <literal>bgr</literal>, "
+"<literal>vrgb</literal> yada <literal>vbgr</literal>'a dönüştürülebilir: "
+"hangisinin daha iyi çalıştığına bakın."
 
 #. (itstool) path: info/title
 #: book.translate.xml:12191
