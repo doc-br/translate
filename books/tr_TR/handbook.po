@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-06-14 02:30+0000\n"
-"Last-Translator: Mehmet Fatih Senel <mehmetfatihsenel@yahoo.com>\n"
+"Last-Translator: yami98 <yagmurkaya3625@hotmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -22548,66 +22548,90 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15792
+#, fuzzy
 msgid ""
 "The kernel is the core of the FreeBSD operating system. It is responsible "
 "for managing memory, enforcing security controls, networking, disk access, "
 "and much more. While much of FreeBSD is dynamically configurable, it is "
 "still occasionally necessary to configure and compile a custom kernel."
 msgstr ""
+"Kernel, FreeBSD işletim sistemi çekirdeğidir. Bellek yönetimi, güvenlik "
+"denetimi uygulama, ağ oluşturma, disk erişimi ve çok daha fazlasından "
+"sorumludur. FreeBSD'nin büyük bir kısmı dinamik olarak yapılandırılabilir "
+"olsa da, hala ara sıra yapılandırmak ve özel bir çekirdek derlemek gerekli "
+"olabilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15802
+#, fuzzy
 msgid "When to build a custom kernel."
-msgstr ""
+msgstr "Ne zaman bir özel çekirdek oluşturmanız gerekir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15806
+#, fuzzy
 msgid "How to take a hardware inventory."
-msgstr ""
+msgstr "Donanım envanteri nasıl toplanır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15810
+#, fuzzy
 msgid "How to customize a kernel configuration file."
-msgstr ""
+msgstr "Çekirdek yapılandırma dosyası nasıl özelleştirilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15814
+#, fuzzy
 msgid ""
 "How to use the kernel configuration file to create and build a new kernel."
 msgstr ""
+"Yeni bir çekirdek oluşturmak ve derlemek için çekirdek yapılandırma dosyası "
+"nasıl kullanılır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15819
+#, fuzzy
 msgid "How to install the new kernel."
-msgstr ""
+msgstr "Yeni çekirdek nasıl kurulur."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15823
+#, fuzzy
 msgid "How to troubleshoot if things go wrong."
-msgstr ""
+msgstr "Bir sorunla karşılaşılırsa nasıl sorun giderilir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15827
+#, fuzzy
 msgid ""
 "All of the commands listed in the examples in this chapter should be "
 "executed as <systemitem class=\"username\">root</systemitem>."
 msgstr ""
+"Bu bölümdeki örneklerde listelenmiş tüm komutlar <systemitem class=\""
+"username\">root</systemitem> olarak yürütülmelidir."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:15832
+#, fuzzy
 msgid "Why Build a Custom Kernel?"
-msgstr ""
+msgstr "Neden Özel Çekirdek Derlenir?"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15834
+#, fuzzy
 msgid ""
 "Traditionally, FreeBSD used a monolithic kernel. The kernel was one large "
 "program, supported a fixed list of devices, and in order to change the "
 "kernel's behavior, one had to compile and then reboot into a new kernel."
 msgstr ""
+"FreeBSD, önceden monolitik çekirdek kullanırdı. Çekirdek büyük bir "
+"programdı, değişmeyen bir liste cihazı desteklerdi ve çekirdeğin "
+"hareketlerini değişmek için yeni bir çekirdek derlemek ve sonra yeniden "
+"yüklemek gerekirdi."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15839
+#, fuzzy
 msgid ""
 "Today, most of the functionality in the FreeBSD kernel is contained in "
 "modules which can be dynamically loaded and unloaded from the kernel as "
@@ -22615,9 +22639,15 @@ msgid ""
 "hardware and for new functionality to be brought into the kernel. This is "
 "known as a modular kernel."
 msgstr ""
+"Günümüzde FreeBSD çekirdeğindeki işlevselliğin çoğu, gerekliliğe göre "
+"dinamik olarak yüklenebilen ve çekirdekten kaldırılabilen modüller "
+"dahilindedir. Bu durum, çalışan çekirdeğin yeni bir donanıma hemen adapte "
+"olmasını ve çekirdeğe yeni bir işlevsellik getirilmesini sağlar. Modüler "
+"(yüklenebilir) çekirdek olarak bilinir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15846
+#, fuzzy
 msgid ""
 "Occasionally, it is still necessary to perform static kernel configuration. "
 "Sometimes the needed functionality is so tied to the kernel that it can not "
@@ -22625,6 +22655,11 @@ msgid ""
 "and unloading of kernel modules and require that only needed functionality "
 "is statically compiled into the kernel."
 msgstr ""
+"Ara sıra statik çekirdek yapılandırması gerçekleştirmek hala gereklidir. "
+"Bazen gerekli işlevsellik çekirdeğe o kadar bağlıdır ki dinamik olarak "
+"yüklenebilir hale getirilemez. Bazı güvenlik ortamları çekirdek modüllerinin "
+"yüklenmesi ve kaldırılmasını engelleyebilir ve sadece gerekli statik "
+"işlevlerin çekirdeğe derlenmesini gerekli tutabilir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15853
