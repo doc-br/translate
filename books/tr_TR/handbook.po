@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-14 02:30+0000\n"
-"Last-Translator: yami98 <yagmurkaya3625@hotmail.com>\n"
+"PO-Revision-Date: 2020-06-14 10:46+0000\n"
+"Last-Translator: Mehmet Fatih Senel <mehmetfatihsenel@yahoo.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -66007,6 +66007,7 @@ msgstr "FreeBSD-STABLE'ı kullanma"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:45837
+#, fuzzy
 msgid ""
 "FreeBSD-STABLE is the development branch from which major releases are made. "
 "Changes go into this branch at a slower pace and with the general assumption "
@@ -66017,17 +66018,30 @@ msgid ""
 "Users who do not have the resources to perform testing should instead run "
 "the most recent release of FreeBSD."
 msgstr ""
+"FreeBSD-STABLE, büyük sürümlerin yapıldığı geliştirme dalıdır. Değişiklikler "
+"bu dalda daha yavaş bir tempoda ve ilk olarak FreeBSD-CURRENT'ta test "
+"edildiği varsayılarak yapılır. Bu da <emphasis>hala</emphasis> bir "
+"geliştirme dalıdır ve herhangi bir zaman içerisinde FreeBSD-STABLE "
+"kaynakları genel kullanım için uygun olabilir veya olmayabilir. Son "
+"kullanıcılar için bir kaynak değil, farklı bir mühendislik geliştirme "
+"yoludur. Deneme yapacak kaynaklara sahip olmayan kullanıcıların bunun yerine "
+"FreeBSD'nin en son sürümünü çalıştırmalıdır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:45848
+#, fuzzy
 msgid ""
 "Those interested in tracking or contributing to the FreeBSD development "
 "process, especially as it relates to the next release of FreeBSD, should "
 "consider following FreeBSD-STABLE."
 msgstr ""
+"FreeBSD geliştirme sürecini izlemek veya katkıda bulunmaya ilgisi olanlar, "
+"özellikle de FreeBSD'nin bir sonraki sürümü ile ilgili olarak FreeBSD-"
+"STABLE'ı takip etmeyi düşünmelidir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:45852
+#, fuzzy
 msgid ""
 "While the FreeBSD-STABLE branch should compile and run at all times, this "
 "cannot be guaranteed. Since more people run FreeBSD-STABLE than FreeBSD-"
@@ -66038,19 +66052,30 @@ msgid ""
 "FreeBSD-STABLE without thoroughly testing the code in a development or "
 "testing environment."
 msgstr ""
+"FreeBSD-STABLE dalı her zamanda derlenmeli ve çalıştırılsa da bunun garanti "
+"verilemez. FreeBSD-CURRENT'ten daha çok kişi FreeBSD-STABLE "
+"çalıştırdığından, FreeBSD-CURRENT içerisinde belirgin olmayan hataların ve "
+"köşede kalmış vakalarının bazen FreeBSD-STABLE'da bulunması kaçınılmazdır. "
+"Bu nedenle, FreeBSD-STABLE körü körüne izlenmemelidir. Kodu bir geliştirme "
+"veya test ortamında kapsamlı bir şekilde test etmeden önce üretim "
+"sunucularının FreeBSD-STABLE sürümüne <emphasis>güncellenmemesi</emphasis> "
+"özellikle önemlidir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:45862
+#, fuzzy
 msgid "To track FreeBSD-STABLE:"
-msgstr ""
+msgstr "FreeBSD-STABLE'ı izlemek için:"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:45864
+#, fuzzy
 msgid "<primary>-STABLE</primary> <secondary>using</secondary>"
-msgstr ""
+msgstr "<primary>-STABLE</primary> <secondary>using</secondary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:45870
+#, fuzzy
 msgid ""
 "Join the <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/"
 "freebsd-stable\">freebsd-stable</link> list in order to stay informed of "
@@ -66060,9 +66085,17 @@ msgid ""
 "giving the users a chance to respond if they have any issues to raise "
 "concerning the proposed change."
 msgstr ""
+"FreeBSD-STABLE'da görünebilecek yapı bağımlılıkları ya da özel dikkat "
+"isteyen diğer konular hakkında bilgi sahibi olmak için <link xlink:href=\""
+"http://lists.FreeBSD.org/mailman/listinfo/freebsd-stable\">freebsd-"
+"stable</link> listesine katılın. Geliştiriciler ayrıca, tartışmalı bir "
+"düzeltme ya da güncelleme düşünürken bu posta listesinde duyuru yapacak ve "
+"kullanıcılara önerilen değişiklikle ilgili herhangi bir sorun yaşamaları "
+"durumunda cevaplama şansı verecektir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:45879
+#, fuzzy
 msgid ""
 "Join the relevant <application>svn</application> list for the branch being "
 "tracked. For example, users tracking the 9-STABLE branch should join the "
@@ -66071,9 +66104,16 @@ msgid ""
 "entry for each change as it is made, along with any pertinent information on "
 "possible side effects."
 msgstr ""
+"İzlediğiniz dal ile ilgili <application>svn</application> listesine katılın. "
+"Örneğin, 9-STABLE dalını izleyen kullanıcılar <link xlink:href=\""
+"http://lists.FreeBSD.org/mailman/listinfo/svn-src-stable-9\">svn-src-"
+"stable-9</link> listesine katılmalıdır. Bu liste, olası yan etkiler ile "
+"ilgili her türlü bilginin yanı sıra, her türlü değişiklik için taahhüt "
+"günlüğü girdisini kaydeder."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:45887
+#, fuzzy
 msgid ""
 "To join these lists, go to <link xlink:href=\"http://lists.FreeBSD.org/"
 "mailman/listinfo\">http://lists.FreeBSD.org/mailman/listinfo</link>, click "
@@ -66081,9 +66121,16 @@ msgid ""
 "changes for the whole source tree, subscribe to <link xlink:href=\"http://"
 "lists.FreeBSD.org/mailman/listinfo/svn-src-all\">svn-src-all</link>."
 msgstr ""
+"Bu listelere katılım için <link xlink:href=\"http://lists.FreeBSD.org/"
+"mailman/listinfo\">http://lists.FreeBSD.org/mailman/listinfo</link> dresine "
+"gidin, abone olmak için listeye tıklayın ve talimatları izleyin. Kaynak "
+"ağacının bütün değişikliklerini izlemek için <link xlink:href=\""
+"http://lists.FreeBSD.org/mailman/listinfo/svn-src-all\">svn-src-all</link> "
+"öğesine abone olun."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:45894
+#, fuzzy
 msgid ""
 "To install a new FreeBSD-STABLE system, install the most recent FreeBSD-"
 "STABLE release from the <link linkend=\"mirrors\">FreeBSD mirror sites</"
@@ -66091,9 +66138,16 @@ msgid ""
 "xlink:href=\"@@URL_RELPREFIX@@/snapshots/\">www.freebsd.org/snapshots</link> "
 "for more information about snapshots."
 msgstr ""
+"Yeni bir FreeBSD-STABLE sistemi kurmak için <link linkend=\"mirrors\">"
+"FreeBSD mirror sites</link> sitelerinden en son FreeBSD-STABLE sürümünü "
+"yükleyin ya da FreeBSD-STABLE'dan oluşturulan aylık bir anlık görüntüyü "
+"kullanın. Anlık görüntülerin hakkında daha fazla bilgi için <link xlink:href="
+"\"@@URL_RELPREFIX@@/snapshots/\">www.freebsd.org/snapshots</link> adresine "
+"bakın."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:45899
+#, fuzzy
 msgid ""
 "To compile or upgrade to an existing FreeBSD system to FreeBSD-STABLE, use "
 "<link linkend=\"svn\">svn</link> <_:indexterm-1/> to check out the source "
@@ -66101,14 +66155,21 @@ msgid ""
 "are listed at <link xlink:href=\"@@URL_RELPREFIX@@/releng/\">www.freebsd.org/"
 "releng</link>."
 msgstr ""
+"Mevcut bir FreeBSD sistemini derlemek ya da FreeBSD-STABLE'a yükseltmek için "
+"<link linkend=\"svn\">svn</link> <_:indexterm-1/> kullanarak arzu ettiğiniz "
+"dalın kaynağına bakın. <literal>stable/9</literal> gibi dal isimleri <link "
+"xlink:href=\"@@URL_RELPREFIX@@/releng/\">www.freebsd.org/releng</link> "
+"adresinde listelenmiştir."
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:45910
+#, fuzzy
 msgid "<primary>-STABLE</primary> <secondary>compiling</secondary>"
-msgstr ""
+msgstr "<primary>-STABLE</primary> <secondary>compiling</secondary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:45909
+#, fuzzy
 msgid ""
 "Before compiling or upgrading to FreeBSD-STABLE <_:indexterm-1/>, read "
 "<filename>/usr/src/Makefile</filename> carefully and follow the instructions "
@@ -66118,15 +66179,24 @@ msgid ""
 "bootstrapping procedures that sometimes become necessary on the road to the "
 "next release."
 msgstr ""
+"FreeBSD-STABLE'a derlemeden ya da yükseltmeden önce, <_:indexterm-1/>, read "
+"<filename>/usr/src/Makefile</filename> dosyasını dikkatlice okuyun ve <xref "
+"linkend=\"makeworld\"/> bölümündeki talimatları takip edin. <link xlink:href="
+"\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-stable\">FreeBSD-STABLE "
+"mailing list</link> ve <filename>/usr/src/UPDATING</filename> ölümünü "
+"okuyarak bir sonraki sürüm için bazen gerekli olabilecek diğer önyükleme "
+"yordamlarını güncel tutun."
 
 #. (itstool) path: sect1/title
 #. (itstool) id: book.translate.xml#updating-src
 #: book.translate.xml:45924
+#, fuzzy
 msgid "Updating FreeBSD from Source"
-msgstr ""
+msgstr "FreeBSD'yi Kaynaktan Güncelleme"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:45926
+#, fuzzy
 msgid ""
 "Updating FreeBSD by compiling from source offers several advantages over "
 "binary updates. Code can be built with options to take advantage of specific "
@@ -66135,22 +66205,35 @@ msgid ""
 "takes longer to update a system than just installing binary updates, but "
 "allows complete customization to produce a tailored version of FreeBSD."
 msgstr ""
+"FreeBSD'yi kaynaktan derleyerek güncellemek ikili güncellemelere göre "
+"birtakım avantajlar sunar. Kod, belirli donanımlardan yararlanmak için "
+"seçeneklerl ie oluşturulabilir. Temel sistemin parçaları varsayılan olmayan "
+"ayarlar ile oluşturulabilir veya tamamen ihtiyaç duyulmadıkları veya "
+"istenmedikleri yerlerde bırakılabilir. Derleme işlemi bir sistemi "
+"güncellemenin sadece ikili güncelleştirmeleri yüklemekten daha uzun sürer, "
+"fakat FreeBSD'nin özel bir sürümünü üretmek için tam özelleştirmeye izin "
+"verir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:45938
+#, fuzzy
 msgid ""
 "This is a quick reference for the typical steps used to update FreeBSD by "
 "building from source. Later sections describe the process in more detail."
 msgstr ""
+"Burası kaynağından oluşturarak FreeBSD'yi güncellemek için kullanılan "
+"sıradan adımlar için hızlı bir referanstır. Daha sonraki bölümlerde süreç "
+"daha da ayrıntılı olarak açıklanmaktadır."
 
 #. (itstool) path: step/title
 #: book.translate.xml:45944
+#, fuzzy
 msgid "Update and Build"
-msgstr ""
+msgstr "Güncelle ve Oluştur"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:45946
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>svnlite update /usr/src</userinput>  <co xml:id=\"updating-src-qs-svnup\"/>\n"
 "<emphasis>check <filename>/usr/src/UPDATING</filename></emphasis>  <co xml:id=\"updating-src-qs-review-updating\"/>\n"
@@ -66163,174 +66246,250 @@ msgid ""
 "<prompt>#</prompt> <userinput>mergemaster -Ui</userinput>      <co xml:id=\"updating-src-qs-mergemaster\"/>\n"
 "<prompt>#</prompt> <userinput>shutdown -r now</userinput>      <co xml:id=\"updating-src-qs-shutdown\"/>"
 msgstr ""
+"<prompt>#</prompt> <userinput>svnlite update /usr/src</userinput>  <co xml:id"
+"=\"updating-src-qs-svnup\"/>\n"
+"<emphasis>check <filename>/usr/src/UPDATING</filename></emphasis>  <co xml:id"
+"=\"updating-src-qs-review-updating\"/>\n"
+"<prompt>#</prompt> <userinput>cd /usr/src</userinput>          <co xml:id"
+"=\"updating-src-qs-cd\"/>\n"
+"<prompt>#</prompt> <userinput>make -j<replaceable>4</replaceable> "
+"buildworld</userinput>  <co xml:id=\"updating-src-qs-buildworld\"/>\n"
+"<prompt>#</prompt> <userinput>make -j<replaceable>4</replaceable> "
+"kernel</userinput>      <co xml:id=\"updating-src-qs-kernel\"/>\n"
+"<prompt>#</prompt> <userinput>shutdown -r now</userinput>      <co xml:id"
+"=\"updating-src-qs-reboot\"/>\n"
+"<prompt>#</prompt> <userinput>cd /usr/src</userinput>          <co xml:id"
+"=\"updating-src-qs-cd2\"/>\n"
+"<prompt>#</prompt> <userinput>make installworld</userinput>    <co xml:id"
+"=\"updating-src-qs-installworld\"/>\n"
+"<prompt>#</prompt> <userinput>mergemaster -Ui</userinput>      <co xml:id"
+"=\"updating-src-qs-mergemaster\"/>\n"
+"<prompt>#</prompt> <userinput>shutdown -r now</userinput>      <co xml:id"
+"=\"updating-src-qs-shutdown\"/>"
 
 #. (itstool) path: callout/para
 #: book.translate.xml:45959
+#, fuzzy
 msgid ""
 "Get the latest version of the source. See <xref linkend=\"updating-src-"
 "obtaining-src\"/> for more information on obtaining and updating source."
 msgstr ""
+"Kaynağın son sürümünü edinin. Kaynağı edinme ve güncelleme hakkında daha "
+"fazla bilgi için bkz.<xref linkend=\"updating-src-obtaining-src\"/>"
 
 #. (itstool) path: callout/para
 #: book.translate.xml:45966
+#, fuzzy
 msgid ""
 "Check <filename>/usr/src/UPDATING</filename> for any manual steps required "
 "before or after building from source."
 msgstr ""
+"Kaynağından oluşturmadan önce veya sonra gereken tüm manuel adımlar için "
+"<filename>/usr/src/UPDATING</filename> kontrol edin."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:45972 book.translate.xml:45991
+#, fuzzy
 msgid "Go to the source directory."
-msgstr ""
+msgstr "Kaynak dizine gidin."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:45976
+#, fuzzy
 msgid "Compile the world, everything except the kernel."
-msgstr ""
+msgstr "Çekirdek hariç dünyayı, her şeyi derleyin."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:45981
+#, fuzzy
 msgid ""
 "Compile and install the kernel. This is equivalent to <command>make "
 "buildkernel installkernel</command>."
 msgstr ""
+"Çekirdeği derleyin ve yükleyin. Bu <command>make buildkernel "
+"installkernel</command> yapmakla aynı şeydir."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:45987
+#, fuzzy
 msgid "Reboot the system to the new kernel."
-msgstr ""
+msgstr "Sistemi yeni çekirdekle yeniden başlatın."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:45995
+#, fuzzy
 msgid "Install the world."
-msgstr ""
+msgstr "Dünyayı kurun."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:45999
+#, fuzzy
 msgid "Update and merge configuration files in <filename>/etc/</filename>."
 msgstr ""
+"<filename>/etc/</filename>içindeki yapılandırma dosyalarını güncelleyin ve "
+"birleştirin."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:46004
+#, fuzzy
 msgid "Restart the system to use the newly-built world and kernel."
 msgstr ""
+"Yeni oluşturulan dünya ve çekirdeği kullanmak için sistemi yeniden başlatın."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:46013
+#, fuzzy
 msgid "Preparing for a Source Update"
-msgstr ""
+msgstr "Kaynak Güncellemesine Hazırlanma"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:46015
+#, fuzzy
 msgid ""
 "Read <filename>/usr/src/UPDATING</filename>. Any manual steps that must be "
 "performed before or after an update are described in this file."
 msgstr ""
+"<filename>/usr/src/UPDATING</filename> bölümünü okuyun. Güncellemeden önce "
+"ya da sonra yapılması gereken tüm manuel adımlar bu dosyada açıklanmaktadır."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:46021
+#, fuzzy
 msgid "Updating the Source"
-msgstr ""
+msgstr "Kaynağı Güncelleme"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:46023
+#, fuzzy
 msgid ""
 "FreeBSD source code is located in <filename>/usr/src/</filename>. The "
 "preferred method of updating this source is through the "
 "<application>Subversion</application> version control system. Verify that "
 "the source code is under version control:"
 msgstr ""
+"FreeBSD kaynak kodu <filename>/usr/src/</filename> dizininde bulunur. Bu "
+"kaynağı güncellemek için tercih edilen yöntem "
+"<application>Subversion</application> sürümü kontrol sistemidir. Kaynak "
+"kodun sürüm kontrolünde olduğunu doğrulayın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:46029
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>svnlite info /usr/src</userinput>\n"
 "Path: /usr/src\n"
 "Working Copy Root Path: /usr/src\n"
 "..."
 msgstr ""
+"<prompt>#</prompt> <userinput>svnlite info /usr/src</userinput>\n"
+"Path: /usr/src\n"
+"Working Copy Root Path: /usr/src\n"
+"..."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:46034
+#, fuzzy
 msgid ""
 "This indicates that <filename>/usr/src/</filename> is under version control "
 "and can be updated with <citerefentry><refentrytitle>svnlite</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>:"
 msgstr ""
+"Bu <filename>/usr/src/</filename> sürümünün kontrolünde olduğunu ve <citerefe"
+"ntry><refentrytitle>svnlite</refentrytitle><manvolnum>1</manvolnum></citerefe"
+"ntry> ile güncellenebileceğini gösterir::"
 
 #. (itstool) path: sect2/screen
 #. (itstool) id: book.translate.xml#synching
 #: book.translate.xml:46038
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>svnlite update /usr/src</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>svnlite update /usr/src</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:46040
+#, fuzzy
 msgid ""
 "The update process can take some time if the directory has not been updated "
 "recently. After it finishes, the source code is up to date and the build "
 "process described in the next section can begin."
 msgstr ""
+"Dizin yakın zamanda güncellenmemiş ise güncelleme işlemi biraz zaman "
+"alabilir. Tamamlandıktan sonra, kaynak kodu güncellenir ve sonraki bölümde "
+"açıklanan derleme işlemi başlayabilir."
 
 #. (itstool) path: note/title
 #: book.translate.xml:46046
+#, fuzzy
 msgid "Obtaining the Source"
-msgstr ""
+msgstr "Kaynak Edinme"
 
 #. (itstool) path: note/para
 #: book.translate.xml:46048
+#, fuzzy
 msgid ""
 "If the output says <literal>'/usr/src' is not a working copy</literal>, the "
 "files there are missing or were installed with a different method. A new "
 "checkout of the source is required."
 msgstr ""
+"Çıktıda <literal>'/usr/src' çalışan bir kopya değil</literal> ise oradaki "
+"dosyalar eksik veya farklı bir yöntemle yüklenmiştir. Kaynak için yeni bir "
+"ödeme yapmanız gerekir."
 
 #. (itstool) path: table/title
 #: book.translate.xml:46054
+#, fuzzy
 msgid "FreeBSD Versions and Repository Paths"
-msgstr ""
+msgstr "FreeBSD Sürümleri ve Depo Yolları"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:46059
+#, fuzzy
 msgid "<command>uname -r</command> Output"
-msgstr ""
+msgstr "<command>uname -r</command> Çıktısı"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:46060
+#, fuzzy
 msgid "Repository Path"
-msgstr ""
+msgstr "Depo Yolu"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:46067
+#, fuzzy
 msgid "<literal><replaceable>X.Y</replaceable>-RELEASE</literal>"
-msgstr ""
+msgstr "<literal><replaceable>X.Y</replaceable>-RELEASE</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:46068
+#, fuzzy
 msgid "<literal>base/releng/</literal><replaceable>X.Y</replaceable>"
-msgstr ""
+msgstr "<literal>base/releng/</literal><replaceable>X.Y</replaceable>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:46069
+#, fuzzy
 msgid ""
 "The Release version plus only critical security and bug fix patches. This "
 "branch is recommended for most users."
 msgstr ""
+"Yayın sürümü artı yalnızca kritik güvenlik ve hata düzeltme yamaları. Bu dal "
+"çoğu kullanıcı için önerilir."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:46075
+#, fuzzy
 msgid "<literal><replaceable>X.Y</replaceable>-STABLE</literal>"
-msgstr ""
+msgstr "<literal><replaceable>X.Y</replaceable>-STABLE</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:46076
+#, fuzzy
 msgid "<literal>base/stable/</literal><replaceable>X</replaceable>"
-msgstr ""
+msgstr "<literal>base/stable/</literal><replaceable>X</replaceable>"
 
 #. (itstool) path: entry/para
 #: book.translate.xml:46078
+#, fuzzy
 msgid ""
 "The Release version plus all additional development on that branch. "
 "<emphasis>STABLE</emphasis> refers to the Applications Binary Interface "
@@ -66338,126 +66497,175 @@ msgid ""
 "versions still runs. For example, software compiled to run on FreeBSD 10.1 "
 "will still run on FreeBSD 10-STABLE compiled later."
 msgstr ""
+"Sürüm sürümü ile bu daldaki tüm ek geliştirmeler. <emphasis>STABLE</emphasis>"
+", Uygulamalar İkili Arabirimi'nin (<acronym>ABI</acronym>) değişmediğini "
+"belirtir, bu nedenle önceki sürümler için derlenen yazılımlar hala çalışır. "
+"Örneğin, FreeBSD 10.1 üzerinde çalışmak üzere derlenen yazılım, daha sonra "
+"derlenen FreeBSD 10-STABLE üzerinde çalışmaya devam edecektir."
 
 #. (itstool) path: entry/para
 #: book.translate.xml:46088
+#, fuzzy
 msgid ""
 "STABLE branches occasionally have bugs or incompatibilities which might "
 "affect users, although these are typically fixed quickly."
 msgstr ""
+"STABLE şubeleri bazen kullanıcıları etkileyebilecek hatalara ya da "
+"uyumsuzluklara sahiptir, ancak bunlar genellikle hızlı bir şekilde "
+"sabitlenir."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:46095
+#, fuzzy
 msgid "<literal><replaceable>X</replaceable>-CURRENT</literal>"
-msgstr ""
+msgstr "<literal><replaceable>X</replaceable>-CURRENT</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:46096
+#, fuzzy
 msgid "<literal>base/head/</literal>"
-msgstr ""
+msgstr "<literal>base/head/</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:46097
+#, fuzzy
 msgid ""
 "The latest unreleased development version of FreeBSD. The CURRENT branch can "
 "have major bugs or incompatibilities and is recommended only for advanced "
 "users."
 msgstr ""
+"STABLE şubeleri bazen kullanıcıları etkileyebilecek hatalara ya da "
+"uyumsuzluklara sahiptir, ancak bunlar genellikle hızlı bir şekilde "
+"sabitlenir."
 
 #. (itstool) path: note/para
 #: book.translate.xml:46106
+#, fuzzy
 msgid ""
 "Determine which version of FreeBSD is being used with "
 "<citerefentry><refentrytitle>uname</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>:"
 msgstr ""
+"<citerefentry><refentrytitle>uname</refentrytitle><manvolnum>1</manvolnum></c"
+"iterefentry> ile hangi FreeBSD sürümün kullanıldığını belirleyin:"
 
 #. (itstool) path: note/screen
 #: book.translate.xml:46109
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>uname -r</userinput>\n"
 "10.3-RELEASE"
 msgstr ""
+"<prompt>#</prompt> <userinput>uname -r</userinput>\n"
+"10.3-RELEASE"
 
 #. (itstool) path: note/para
 #: book.translate.xml:46112
+#, fuzzy
 msgid ""
 "Based on <xref linkend=\"updating-src-obtaining-src-repopath\"/>, the source "
 "used to update <literal>10.3-RELEASE</literal> has a repository path of "
 "<literal>base/releng/10.3</literal>. That path is used when checking out the "
 "source:"
 msgstr ""
+"<xref linkend=\"updating-src-obtaining-src-repopath\"/>'na dayanarak, "
+"<literal>10.3-RELEASE</literal>'i güncellemek için kullanılan kaynak, "
+"<literal>base/releng/10.3</literal> adında bir havuz yoluna sahiptir. Bu "
+"yol, kaynağı kontrol ederken kullanılır:"
 
 #. (itstool) path: note/screen
 #: book.translate.xml:46118
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>mv /usr/src /usr/src.bak</userinput>  <co xml:id=\"updating-src-obtaining-src-mv\"/>\n"
 "<prompt>#</prompt> <userinput>svnlite checkout https://svn.freebsd.org/base/<replaceable>releng/10.3</replaceable> /usr/src</userinput>  <co xml:id=\"updating-src-obtaining-src-checkout-cmd\"/>"
 msgstr ""
+"<prompt>#</prompt> <userinput>mv /usr/src /usr/src.bak</userinput>  <co "
+"xml:id=\"updating-src-obtaining-src-mv\"/>\n"
+"<prompt>#</prompt> <userinput>svnlite checkout https://svn.freebsd.org/base/"
+"<replaceable>releng/10.3</replaceable> /usr/src</userinput>  <co xml:id"
+"=\"updating-src-obtaining-src-checkout-cmd\"/>"
 
 #. (itstool) path: callout/para
 #: book.translate.xml:46123
+#, fuzzy
 msgid ""
 "Move the old directory out of the way. If there are no local modifications "
 "in this directory, it can be deleted."
 msgstr ""
+"Eski dizini yerinden çıkarın. Bu dizinde yerel değişiklik yoksa silinebilir."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:46129
+#, fuzzy
 msgid ""
 "The path from <xref linkend=\"updating-src-obtaining-src-repopath\"/> is "
 "added to the repository <acronym>URL</acronym>. The third parameter is the "
 "destination directory for the source code on the local system."
 msgstr ""
+"<xref linkend=\"updating-src-obtaining-src-repopath\"/> ndan alınan yol depo "
+"<acronym>URL</acronym>'sine eklenir."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:46140
+#, fuzzy
 msgid "Building from Source"
-msgstr ""
+msgstr "Kaynaktan Oluşturma"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:46142
+#, fuzzy
 msgid ""
 "The <emphasis>world</emphasis>, or all of the operating system except the "
 "kernel, is compiled. This is done first to provide up-to-date tools to build "
 "the kernel. Then the kernel itself is built:"
 msgstr ""
+"<emphasis>Dünya</emphasis> ya da çekirdek dışındaki tüm işletim sistemi "
+"derlenmiştir. Bu, ilk önce çekirdeği oluşturmak için güncel araçlar sağlamak "
+"için yapılır. Sonra çekirdeğin kendisi oluşturulur:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:46147
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/src</userinput>\n"
 "<prompt>#</prompt> <userinput>make buildworld</userinput>\n"
 "<prompt>#</prompt> <userinput>make buildkernel</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/src</userinput>\n"
+"<prompt>#</prompt> <userinput>make buildworld</userinput>\n"
+"<prompt>#</prompt> <userinput>make buildkernel</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:46151
+#, fuzzy
 msgid "The compiled code is written to <filename>/usr/obj</filename>."
-msgstr ""
+msgstr "Derlenen kod <filename>/usr/obj</filename> dizinine yazılır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:46154
+#, fuzzy
 msgid ""
 "These are the basic steps. Additional options to control the build are "
 "described below."
 msgstr ""
+"Bunlar temel adımlar. Kontrol etmek için ek seçenekler aşağıda açıklanmıştır."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:46158
+#, fuzzy
 msgid "Performing a Clean Build"
-msgstr ""
+msgstr "Temiz bir Yapı Oluşturma"
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:46165
+#, fuzzy
 msgid "cleanworld"
-msgstr ""
+msgstr "cleanworld"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:46160
+#, fuzzy
 msgid ""
 "Some versions of the FreeBSD build system leave previously-compiled code in "
 "the temporary object directory, <filename>/usr/obj</filename>. This can "
@@ -66465,20 +66673,27 @@ msgid ""
 "force a clean rebuild of everything, use <_:buildtarget-1/> before starting "
 "a build:"
 msgstr ""
+"FreeBSD derleme sistemi bazı sürümleri daha önce derlenmiş kodu geçici nesne "
+"dizininde <filename>/usr/obj</filename> bırakır. Bu değişmemiş kodu yeniden "
+"derlemekten kaçınarak daha sonra olan derlemeleri hızlandırabilir. Her şeyin "
+"temiz şekilde yeniden oluşturulmasını zorlamak için bir yapıya başlamadan "
+"önce <_:buildtarget-1/>  kullanın:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:46168
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>make cleanworld</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>make cleanworld</userinput>"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:46172
+#, fuzzy
 msgid "Setting the Number of Jobs"
-msgstr ""
+msgstr "İş Sayısını Belirleme"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:46174
+#, fuzzy
 msgid ""
 "Increasing the number of build jobs on multi-core processors can improve "
 "build speed. Determine the number of cores with <command>sysctl hw.ncpu</"
@@ -66488,56 +66703,77 @@ msgid ""
 "consider values between half and double the number of cores. The number of "
 "jobs is specified with <option>-j</option>."
 msgstr ""
+"Çok çekirdekli işlemcilerde yapı işi sayısı artırmak yapı hızını "
+"artırabilir. <command>sysctl hw.ncpu</command> ile çekirdek sayısını "
+"belirleyin. İşlemciler, FreeBSD'nin farklı sürümleriyle kullanılan derleme "
+"sistemleri gibi değişiklik gösterir, bu sebeple test, farklı sayıda işin "
+"derleme hızını nasıl etkilediğini anlatmak için tek kesin yöntemdir. Bir "
+"başlangıç noktası için çekirdek sayısının yarısı ile iki katı arasında olan "
+"değerleri göz önünde bulundurun. İş sayısı <option>-j</option> ile "
+"belirtilir."
 
 #. (itstool) path: example/title
 #: book.translate.xml:46185
+#, fuzzy
 msgid "Increasing the Number of Build Jobs"
-msgstr ""
+msgstr "Yapı İşlerinin Sayısının Artırılması"
 
 #. (itstool) path: example/para
 #: book.translate.xml:46187
+#, fuzzy
 msgid "Building the world and kernel with four jobs:"
-msgstr ""
+msgstr "Dört işle dünyayı ve çekirdeği inşa etmek:"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:46189
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>make -j4 buildworld buildkernel</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>make -j4 buildworld buildkernel</userinput>"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:46194
+#, fuzzy
 msgid "Building Only the Kernel"
-msgstr ""
+msgstr "Yalnızca Çekirdeği Oluşturma"
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:46198 book.translate.xml:46264
+#, fuzzy
 msgid "buildkernel"
-msgstr ""
+msgstr "buildkernel"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:46196
+#, fuzzy
 msgid ""
 "A <_:buildtarget-1/> must be completed if the source code has changed. After "
 "that, a <_:buildtarget-2/> to build a kernel can be run at any time. To "
 "build just the kernel:"
 msgstr ""
+"Kaynak kodu değişti ise bir <_:buildtarget-1/> tamamlanmalıdır. Bundan "
+"sonra, çekirdek oluşturmak için bir <_:buildtarget-2/> herhangi bir zamanda "
+"çalıştırılabilir. Sadece çekirdeği oluşturmak için:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:46201
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/src</userinput>\n"
 "<prompt>#</prompt> <userinput>make buildkernel</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/src</userinput>\n"
+"<prompt>#</prompt> <userinput>make buildkernel</userinput>"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:46206
+#, fuzzy
 msgid "Building a Custom Kernel"
-msgstr ""
+msgstr "Özel Çekirdek Oluşturma"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:46208
+#, fuzzy
 msgid ""
 "The standard FreeBSD kernel is based on a <emphasis>kernel config file</"
 "emphasis> called <filename>GENERIC</filename>. The <filename>GENERIC</"
@@ -66545,17 +66781,28 @@ msgid ""
 "options. Sometimes it is useful or necessary to build a custom kernel, "
 "adding or removing device drivers or options to fit a specific need."
 msgstr ""
+"Standart FreeBSD çekirdeği <filename>GENERIC</filename> adında bir <emphasis>"
+"çekirdek yapılandırma dosyası</emphasis>na dayanır. "
+"<filename>GENERIC</filename> çekirdeği, en çok ihtiyaç olunan aygıt "
+"sürücülerini ve seçeneklerini içerir. Bazen özel bir çekirdeğin "
+"oluşturulması aygıt sürücülerinin ya da belirli bir ihtiyaca uygun "
+"seçeneklerin eklenmesi veya kaldırılması için yararlı ve gereklidir."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:46217
+#, fuzzy
 msgid ""
 "For example, someone developing a small embedded computer with severely "
 "limited <acronym>RAM</acronym> could remove unneeded device drivers or "
 "options to make the kernel slightly smaller."
 msgstr ""
+"Örneğin, oldukça sınırlı <acronym>RAM</acronym>'e sahip küçük bir yerleşik "
+"bilgisayar geliştiren biri, çekirdek aygıt sürücülerini ya da çekirdeği "
+"biraz daha küçük yapmak için seçenekleri kaldırabilir."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:46222
+#, fuzzy
 msgid ""
 "Kernel config files are located in <filename>/usr/src/sys/<replaceable>arch</"
 "replaceable>/conf/</filename>, where <replaceable>arch</replaceable> is the "
@@ -66563,9 +66810,16 @@ msgid ""
 "<literal>amd64</literal>, giving a config file directory of <filename>/usr/"
 "src/sys/<replaceable>amd64</replaceable>/conf/</filename>."
 msgstr ""
+"Çekirdek yapılandırma dosyaları <filename>/usr/src/sys/"
+"<replaceable>arch</replaceable>/conf/</filename> dizininde bulunur; burada "
+"<replaceable>arch</replaceable>, <command>uname -m</command> dosyası "
+"çıktısıdır. Birçok bilgisayarda, yani <literal>amd64</literal> <filename>/"
+"usr/src/sys/<replaceable>amd64</replaceable>/conf/</filename> nin bir "
+"yapılandırma dosyası dizinini verir."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:46230
+#, fuzzy
 msgid ""
 "<filename>/usr/src</filename> can be deleted or recreated, so it is "
 "preferable to keep custom kernel config files in a separate directory, like "
@@ -66573,60 +66827,87 @@ msgid ""
 "<filename>conf</filename> directory. If that directory is deleted or "
 "overwritten, the kernel config can be re-linked into the new one."
 msgstr ""
+"<filename>/usr/src</filename> silinebilir ya da yeniden oluşturulabilir, bu "
+"nedenle özel çekirdek yapılandırma dosyalarının <filename>/root gibi ayrı "
+"bir dizinde tutulması tercih edilir. Çekirdeği yapılandırma dosyasını "
+"<filename>conf</filename> dizinine bağlayın. Bu dizin silinirse ya da "
+"üzerine yazılırsa, çekirdek yapılandırması yenisine yeniden bağlanabilir."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:46239
+#, fuzzy
 msgid ""
 "A custom config file can be created by copying the <filename>GENERIC</"
 "filename> config file. In this example, the new custom kernel is for a "
 "storage server, so is named <filename>STORAGESERVER</filename>:"
 msgstr ""
+"<filename>GENERIC</filename> yapılandırma dosyası kopyalanıp özel bir "
+"yapılandırma dosyası oluşturulabilir. Bu örnekteki yeni özel çekirdek bir "
+"depolama sunucusu içindir, <filename>STORAGESERVER</filename> olarak "
+"adlandırılır:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:46244
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cp /usr/src/sys/amd64/conf/GENERIC /root/STORAGESERVER</userinput>\n"
 "<prompt>#</prompt> <userinput>cd /usr/src/sys/amd64/conf</userinput>\n"
 "<prompt>#</prompt> <userinput>ln -s /root/STORAGESERVER .</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cp /usr/src/sys/amd64/conf/GENERIC /root/"
+"STORAGESERVER</userinput>\n"
+"<prompt>#</prompt> <userinput>cd /usr/src/sys/amd64/conf</userinput>\n"
+"<prompt>#</prompt> <userinput>ln -s /root/STORAGESERVER .</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:46248
+#, fuzzy
 msgid ""
 "<filename>/root/STORAGESERVER</filename> is then edited, adding or removing "
 "devices or options as shown in <citerefentry><refentrytitle>config</"
 "refentrytitle><manvolnum>5</manvolnum></citerefentry>."
 msgstr ""
+"<filename>root/STORAGESERVER</filename> daha sonra <citerefentry><refentrytit"
+"le>config</refentrytitle><manvolnum>5</manvolnum></citerefentry>'de "
+"gösterildiği gibi cihaz ya da seçenekler ekleyerek veya çıkararak düzenlenir."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:46252
+#, fuzzy
 msgid ""
 "The custom kernel is built by setting <varname>KERNCONF</varname> to the "
 "kernel config file on the command line:"
 msgstr ""
+"Özel çekirdek, <varname>KERNCONF</varname> komut satırındaki çekirdeği "
+"yapılandırma dosyasına ayarlanarak oluşturulur:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:46256
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>make buildkernel KERNCONF=STORAGESERVER</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>make buildkernel "
+"KERNCONF=STORAGESERVER</userinput>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:46261
+#, fuzzy
 msgid "Installing the Compiled Code"
-msgstr ""
+msgstr "Derlenmiş Kodun Kurulumu"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:46263
+#, fuzzy
 msgid ""
 "After the <_:buildtarget-1/> and <_:buildtarget-2/> steps have been "
 "completed, the new kernel and world are installed:"
 msgstr ""
+"<_:buildtarget-1/> ve <_:buildtarget-2/>adımları tamamlandıktan sonra, yeni "
+"çekirdek ve dünya kurulur:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:46267
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/src</userinput>\n"
 "<prompt>#</prompt> <userinput>make installkernel</userinput>\n"
@@ -66635,17 +66916,26 @@ msgid ""
 "<prompt>#</prompt> <userinput>make installworld</userinput>\n"
 "<prompt>#</prompt> <userinput>shutdown -r now</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/src</userinput>\n"
+"<prompt>#</prompt> <userinput>make installkernel</userinput>\n"
+"<prompt>#</prompt> <userinput>shutdown -r now</userinput>\n"
+"<prompt>#</prompt> <userinput>cd /usr/src</userinput>\n"
+"<prompt>#</prompt> <userinput>make installworld</userinput>\n"
+"<prompt>#</prompt> <userinput>shutdown -r now</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:46274
+#, fuzzy
 msgid ""
 "If a custom kernel was built, <varname>KERNCONF</varname> must also be set "
 "to use the new custom kernel:"
 msgstr ""
+"Özel bir çekirdek oluşturulmuş ise, <varname>KERNCONF</varname>'un yeni özel "
+"çekirdeği kullanacak şekilde ayarlanması gerekir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:46277
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/src</userinput>\n"
 "<prompt>#</prompt> <userinput>make installkernel KERNCONF=STORAGESERVER</userinput>\n"
@@ -66654,103 +66944,140 @@ msgid ""
 "<prompt>#</prompt> <userinput>make installworld</userinput>\n"
 "<prompt>#</prompt> <userinput>shutdown -r now</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/src</userinput>\n"
+"<prompt>#</prompt> <userinput>make installkernel "
+"KERNCONF=STORAGESERVER</userinput>\n"
+"<prompt>#</prompt> <userinput>shutdown -r now</userinput>\n"
+"<prompt>#</prompt> <userinput>cd /usr/src</userinput>\n"
+"<prompt>#</prompt> <userinput>make installworld</userinput>\n"
+"<prompt>#</prompt> <userinput>shutdown -r now</userinput>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:46286
+#, fuzzy
 msgid "Completing the Update"
-msgstr ""
+msgstr "Güncellemeyi Tamamlama"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:46288
+#, fuzzy
 msgid ""
 "A few final tasks complete the update. Any modified configuration files are "
 "merged with the new versions, outdated libraries are located and removed, "
 "then the system is restarted."
 msgstr ""
+"Bazı son görev güncellemeyi tamamlar. Değiştirilmiş yapılandırma dosyaları "
+"yeni sürümlerle birleştirilir, eski kitaplıklar bulunur ve kaldırılır, "
+"sonrasında sistem yeniden başlatılır."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:46294
+#, fuzzy
 msgid ""
 "Merging Configuration Files with <citerefentry><refentrytitle>mergemaster</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 msgstr ""
+"Yapılandırma Dosyalarını <citerefentry><refentrytitle>mergemaster</refentryti"
+"tle><manvolnum>8</manvolnum></citerefentry> ile birleştirme"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:46297
+#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>mergemaster</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> provides an easy way to merge changes that have "
 "been made to system configuration files with new versions of those files."
 msgstr ""
+"<citerefentry><refentrytitle>mergemaster</refentrytitle><manvolnum>8</manvoln"
+"um></citerefentry> sistem yapılandırma dosyalarında yapılan değişiklikleri "
+"bu dosyaların yeni sürümleri ile birleştirmek için kolay bir yol sağlar."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:46301
+#, fuzzy
 msgid ""
 "With <option>-Ui</option>, <citerefentry><refentrytitle>mergemaster</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> automatically updates "
 "files that have not been user-modified and installs new files that are not "
 "already present:"
 msgstr ""
+"<option>-Ui</option> ile, <citerefentry><refentrytitle>mergemaster</refentryt"
+"itle><manvolnum>8</manvolnum></citerefentry> kullanıcı tarafından "
+"değiştirilmemiş dosyaları otomatik olarak günceller ve mevcut olmayan yeni "
+"dosyalar yükler:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:46305
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>mergemaster -Ui</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>mergemaster -Ui</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:46307
+#, fuzzy
 msgid ""
 "If a file must be manually merged, an interactive display allows the user to "
 "choose which portions of the files are kept. See "
 "<citerefentry><refentrytitle>mergemaster</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> for more information."
 msgstr ""
+"Bir dosyanın manuel olarak birleştirilmesi gerekiyor ise, etkileşimli bir "
+"ekran kullanıcının dosyaların hangi bölümlerinin tutulacağını seçmesine "
+"fırsat tanır. Daha fazla bilgi için <citerefentry><refentrytitle>mergemaster<"
+"/refentrytitle><manvolnum>8</manvolnum></citerefentry> bölümüne bakın."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:46314
+#, fuzzy
 msgid "Checking for Outdated Files and Libraries"
-msgstr ""
+msgstr "Eski Dosyaları ve Kütüphaneleri Kontrol Etme"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:46316
+#, fuzzy
 msgid ""
 "Some obsolete files or directories can remain after an update. These files "
 "can be located:"
 msgstr ""
+"Bazı eski dosyalar ya da dizinler bir güncellemeden sonra kalabilir. Bu "
+"dosyalar bulunabilir:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:46319
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>make check-old</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>make check-old</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:46321
+#, fuzzy
 msgid "and deleted:"
-msgstr ""
+msgstr "ve silinebilir:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:46323
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>make delete-old</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>make delete-old</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:46325
+#, fuzzy
 msgid "Some obsolete libraries can also remain. These can be detected with:"
 msgstr ""
+"Bazı eski kütüphaneler de kalabilir. Bunlar aşağıdakilerle tespit edilebilir:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:46328
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>make check-old-libs</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>make check-old-libs</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:46330
+#, fuzzy
 msgid "and deleted with"
-msgstr ""
+msgstr "aşağıdakiyle de silinebilir"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:46332
@@ -66760,52 +67087,70 @@ msgstr ""
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:46334
+#, fuzzy
 msgid ""
 "Programs which were still using those old libraries will stop working when "
 "the library has been deleted. These programs must be rebuilt or replaced "
 "after deleting the old libraries."
 msgstr ""
+"Henüz bu eski kütüphaneleri kullanan programlar kütüphane silindiğinde "
+"çalışmayı durduracaktır. Bu programlar eski kütüphaneler silindikten sonra "
+"yeniden oluşturulmalı ya da değiştirilmelidir."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:46340
+#, fuzzy
 msgid ""
 "When all the old files or directories are known to be safe to delete, "
 "pressing <keycap>y</keycap> and <keycap>Enter</keycap> to delete each file "
 "can be avoided by setting <varname>BATCH_DELETE_OLD_FILES</varname> in the "
 "command. For example:"
 msgstr ""
+"Tüm eski dosyaların ya da dizinlerin silinmek için güvenli olduğu "
+"biliniyorsa, komutta <varname>BATCH_DELETE_OLD_FILES</varname> ayarlanarak "
+"her dosyayı silmek için <keycap>y</keycap> ve <keycap>Enter</keycap> tuşuna "
+"basmak önlenebilir. Örneğin:"
 
 #. (itstool) path: tip/screen
 #: book.translate.xml:46346
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>make BATCH_DELETE_OLD_FILES=yes delete-old-libs</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>make BATCH_DELETE_OLD_FILES=yes delete-old-"
+"libs</userinput>"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:46351
+#, fuzzy
 msgid "Restarting After the Update"
-msgstr ""
+msgstr "Güncellemeden Sonra Yeniden Başlatma"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:46353
+#, fuzzy
 msgid ""
 "The last step after updating is to restart the computer so all the changes "
 "take effect:"
 msgstr ""
+"Güncellemeden sonraki son adım, bütün değişikliklerin etkili olması için "
+"bilgisayarı yeniden başlatmaktır:"
 
 #. (itstool) path: info/title
 #: book.translate.xml:46363
+#, fuzzy
 msgid "Tracking for Multiple Machines"
-msgstr ""
+msgstr "Birden Fazla Makine İzleme"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:46376
+#, fuzzy
 msgid ""
 "<primary>NFS</primary> <secondary>installing multiple machines</secondary>"
-msgstr ""
+msgstr "<primary>NFS</primary> <secondary>birden fazla makine kurma</secondary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:46381
+#, fuzzy
 msgid ""
 "When multiple machines need to track the same source tree, it is a waste of "
 "disk space, network bandwidth, and <acronym>CPU</acronym> cycles to have "
@@ -66815,9 +67160,17 @@ msgid ""
 "doing so. For more information about using <acronym>NFS</acronym>, refer to "
 "<xref linkend=\"network-nfs\"/>."
 msgstr ""
+"Birden fazla makinenin aynı kaynak ağacını izlemesi gerektiği zaman, her "
+"sistemin kaynakları indirmesini ve her şeyi yeniden oluşturmasını sağlamak "
+"için disk alanı, ağ bant genişliği ve <acronym>CPU</acronym> döngüleri kaybı "
+"olur. Çözümü bir makinenin işin çoğunu yapmasını sağlarken, makinelerin geri "
+"kalanı <acronym>NFS</acronym> aracılığıyla çalışmasını sağlar. Bu bölüm bu "
+"yöntemi özetlemektedir. <acronym>NFS</acronym> kullanımı hakkında daha fazla "
+"bilgi bkz.<xref linkend=\"network-nfs\"/>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:46390
+#, fuzzy
 msgid ""
 "First, identify a set of machines which will run the same set of binaries, "
 "known as a <firstterm>build set</firstterm>. Each machine can have a custom "
@@ -66827,18 +67180,31 @@ msgid ""
 "spare <acronym>CPU</acronym> to run <command>make buildworld</command> and "
 "<command>make buildkernel</command>."
 msgstr ""
+"İlk olarak bir <firstterm>yapı kümesi</firstterm> olarak bilinen aynı ikili "
+"dosyalar çalıştıracak bir dizi makine tanımlayın. Her makinenin özel bir "
+"çekirdeği olabilir, fakat aynı kullanıcı ülkesi ikili dosyalarını "
+"çalıştıracaktır. Bu setten dünyanın ve çekirdeğin üzerine inşa edileceği "
+"<firstterm>yapı makinesi</firstterm> olacak bir makine seçin. İdeal olanı bu "
+"<command>make buildworld</command> ve <command>make buildkernel</command> "
+"için yeterli yedek <acronym>CPU</acronym>'ya sahip hızlı bir makinedir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:46400
+#, fuzzy
 msgid ""
 "Select a machine to be the <firstterm>test machine</firstterm>, which will "
 "test software updates before they are put into production. This "
 "<emphasis>must</emphasis> be a machine that can afford to be down for an "
 "extended period of time. It can be the build machine, but need not be."
 msgstr ""
+"<firstterm>Test makinesi</firstterm> olacak makineyi seçin, bu da yazılım "
+"güncellemelerini üretilmeden önce test eder. Bu, uzun süre çalışmayı "
+"kaldırabilecek bir makine olmak <emphasis>zorundadır</emphasis>. Bu yapı "
+"makinesi olabilir fakat gerek yoktur."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:46406
+#, fuzzy
 msgid ""
 "All the machines in this build set need to mount <filename>/usr/obj</"
 "filename> and <filename>/usr/src</filename> from the build machine via "
@@ -66846,9 +67212,15 @@ msgid ""
 "filename> should be on one build machine, and <acronym>NFS</acronym> mounted "
 "on the rest."
 msgstr ""
+"Bu yapı setindeki bütün makinelerin <acronym>NFS</acronym> yoluyla yapı "
+"makinesinden <filename>/usr/obj</filename> ve <filename>/usr/src</filename> "
+"bağlamaları gerekir. Birden fazla derleme kümesi için <filename>/usr/"
+"src</filename> bir derleme makinesinde olmalı ve geri kalanına <acronym>NFS "
+"</acronym> monte edilmelidir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:46412
+#, fuzzy
 msgid ""
 "Ensure that <filename>/etc/make.conf</filename> and <filename>/etc/src.conf</"
 "filename> on all the machines in the build set agree with the build machine. "
@@ -66861,9 +67233,21 @@ msgid ""
 "each machine in its <filename>/usr/src/sys/<replaceable>arch</replaceable>/"
 "conf</filename>."
 msgstr ""
+"Derleme kümesindeki bütün makinelerde <filename>/etc/make.conf</filename> ve "
+"<filename>/etc/src.conf</filename> öğelerinin derleme makinesi ile aynı "
+"olduğundan emin olun. Bu, yapı makinesinin yapı setindeki herhangi bir "
+"makinenin kuracağı temel sistemin tüm parçalarını inşa etmesi gerektiği "
+"anlamına gelir. Ayrıca, her derleme makinesinin çekirdek adı <filename>/etc/"
+"make.conf</filename> dosyasında <varname>KERNCONF</varname> ile ayarlanmış "
+"olmalıdır ve derleme makinesi önce kendi çekirdekini listeleyen "
+"<varname>KERNCONF</varname>'ta da hepsini listelemelidir. Derleme "
+"makinesinin <filename>/usr/src/sys/"
+"<replaceable>arch</replaceable>/conf</filename> içindeki her makine için "
+"çekirdek yapılandırma dosyaları olmalıdır."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:46424
+#, fuzzy
 msgid ""
 "On the build machine, build the kernel and world as described in <xref "
 "linkend=\"makeworld\"/>, but do not install anything on the build machine. "
@@ -66874,17 +67258,31 @@ msgid ""
 "<command>mergemaster</command> as usual. When done, reboot to return to "
 "normal multi-user operations."
 msgstr ""
+"Derleme makinesinde çekirdeği ve dünyayı <xref linkend=\"makeworld\"/> "
+"bölümünde açıklandığı gibi inşa edin fakat derleme makinesine hiçbir şey "
+"kurmayın. Bunun yerine, yerleşik çekirdeği test makinesine yükleyin. Test "
+"makinesinde <filename>/usr/src</filename> ve <filename>/usr/obj</filename> "
+"komutlarını <acronym>NFS</acronym> ile bağlayın. Ardından da yeni çekirdeği "
+"ve dünyayı yüklemek ve her zamanki gibi <command>mergemaster</command> "
+"çalıştırmak için tek kullanıcı moduna geçmek için şimdi <command>shutdown "
+"now</command>çalıştırın. Tamamlandığında da normal çok kullanıcılı işlemlere "
+"geri dönmek için yeniden başlatın."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:46435
+#, fuzzy
 msgid ""
 "After verifying that everything on the test machine is working properly, use "
 "the same procedure to install the new software on each of the other machines "
 "in the build set."
 msgstr ""
+"Test makinesindeki her şeyin düzgün çalıştığını doğruladıktan sonra yeni "
+"yazılımı derleme kümesindeki diğer makinelerin her birine yüklemek için de "
+"aynı yordamı kullanın."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:46439
+#, fuzzy
 msgid ""
 "The same methodology can be used for the ports tree. The first step is to "
 "share <filename>/usr/ports</filename> via <acronym>NFS</acronym> to all the "
@@ -66898,6 +67296,18 @@ msgid ""
 "set <varname>PACKAGES</varname> on the build system to a directory similar "
 "to <varname>DISTDIR</varname>."
 msgstr ""
+"Bağlantı noktaları ağacı için aynı metodoloji kullanılabilir. İlk adım "
+"<filename>/usr /ports</filename> <acronym>NFS</acronym> üzerinden yapı "
+"setindeki tüm makinelere paylaşmaktır. <filename>/etc/make.conf</filename> "
+"dosyasını distfiles paylaşacak şekilde yapılandırmak için "
+"<varname>DISTDIR</varname>'ı, hangi kullanıcı <systemitem class=\"username\""
+">kökü</systemitem> <acronym>NFS</acronym> bağlaması ile eşlenirse "
+"yazılabilir ortak bir paylaşılan dizine ayarlayın. Bağlantı noktaları yerel "
+"olarak oluşturulacak ise her makine <varname>WRKDIRPREFIX</varname>'i yerel "
+"bir yapı dizinine ayarlamalıdır. Alternatif olarak, derleme sistemi derleme "
+"setinde makinelere paketler oluşturulacak ve dağıtılacaksa derleme "
+"sistemindeki <varname>PACKAGES</varname> <varname>DISTDIR</varname>'a benzer "
+"bir dizine ayarlayın."
 
 #. (itstool) path: info/title
 #: book.translate.xml:46472
