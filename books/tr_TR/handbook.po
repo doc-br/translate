@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-14 14:17+0000\n"
-"Last-Translator: sertacjr <barelyalive_1@hotmail.com>\n"
+"PO-Revision-Date: 2020-06-15 02:16+0000\n"
+"Last-Translator: yami98 <yagmurkaya3625@hotmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -22663,6 +22663,7 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15853
+#, fuzzy
 msgid ""
 "Building a custom kernel is often a rite of passage for advanced BSD users. "
 "This process, while time consuming, can provide benefits to the FreeBSD "
@@ -22670,13 +22671,21 @@ msgid ""
 "wide range of hardware, a custom kernel can be stripped down to only provide "
 "support for that computer's hardware. This has a number of benefits, such as:"
 msgstr ""
+"Gelişmiş BSD kullanıcıları için özel çekirdek derlemek genellikle bir geçiş "
+"törenidir. Bu süreç zaman alsa da FreeBSD sistemine fayda sağlayabilir. "
+"Geniş yelpazeli donanımları destekleyen <filename>GENERIC</filename> "
+"çekirdekten farklı olarak bir özel çekirdek sadece bilgisayarın donanımına "
+"destek sağlayabilecek şekilde sadeleştirilebilir. Bunun faydaları şunlardır:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15863
+#, fuzzy
 msgid ""
 "Faster boot time. Since the kernel will only probe the hardware on the "
 "system, the time it takes the system to boot can decrease."
 msgstr ""
+"Daha hızlı yükleme. Çekirdek sadece sistemdeki donanımı araştırır, sistemin "
+"yüklenme zamanı kısalabilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15869
