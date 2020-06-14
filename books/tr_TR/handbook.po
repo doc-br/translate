@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-14 10:46+0000\n"
-"Last-Translator: Mehmet Fatih Senel <mehmetfatihsenel@yahoo.com>\n"
+"PO-Revision-Date: 2020-06-14 14:17+0000\n"
+"Last-Translator: sertacjr <barelyalive_1@hotmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -75549,8 +75549,8 @@ msgid ""
 "How to synchronize the time and date, and set up a time server using the "
 "Network Time Protocol (<acronym>NTP</acronym>)."
 msgstr ""
-"Ağ Saat Protokolü (<acronym>NTP</acronym>) kullanarak nasıl zaman sunucusu "
-"kurulacağı ve zaman ve gün senkronize edileceği."
+"Ağ Saat Protokolü (<acronym>NTP</acronym>) kullanarak nasıl zaman "
+"sunucusunun kurulacağı ile zaman ve gün senkronize edileceğini."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:53076
@@ -75560,32 +75560,38 @@ msgstr "<acronym>iSCSI</acronym>'nin nasıl kurulacağı."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:53080
+#, fuzzy
 msgid "This chapter assumes a basic knowledge of:"
-msgstr ""
+msgstr "Bu bölüm aşağıdaki temel bilgileri içerir:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:53084
+#, fuzzy
 msgid "<filename>/etc/rc</filename> scripts."
-msgstr ""
+msgstr "<filename>/etc/rc</filename> kodları."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:53088
+#, fuzzy
 msgid "Network terminology."
-msgstr ""
+msgstr "Ağ terminolojisi."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:53092
+#, fuzzy
 msgid ""
 "Installation of additional third-party software (<xref linkend=\"ports\"/>)."
-msgstr ""
+msgstr "Ek üçüncü parti yazılımlarının (<xref linkend=\"ports\"/>) kurulumu."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:53099
+#, fuzzy
 msgid "The <application>inetd</application> Super-Server"
-msgstr ""
+msgstr "<application>inetd</application> Hizmet Dağıtıcı"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:53120
+#, fuzzy
 msgid ""
 "The <citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> daemon is sometimes referred to as a Super-Server "
@@ -75598,6 +75604,12 @@ msgid ""
 "that are not heavily used can reduce system load, when compared to running "
 "each daemon individually in stand-alone mode."
 msgstr ""
+"<citerefentry><refentrytitle>inetd</refentrytitle><manvolnum></manvolnum></ci"
+"terefentry> Daemon, aynı anda birçok hizmet için bağlantı sağladığından "
+"dolayı bazen Süper Sunucu olarak adlandırılır. Birden fazla uygulama "
+"başlatmak yerine, sadece <application>inetd</application> hizmetini "
+"başlatmak yeterlidir.  <application>inetd</application> tarafından yönetilen "
+"hizmet için bağlantı alındığında,"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:53132
