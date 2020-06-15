@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-15 02:16+0000\n"
-"Last-Translator: yami98 <yagmurkaya3625@hotmail.com>\n"
+"PO-Revision-Date: 2020-06-15 23:09+0000\n"
+"Last-Translator: Alparslangurbuz <alparslangurbuz@hotmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -16742,34 +16742,46 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:12219
+#, fuzzy
 msgid "Configuring <application>XDM</application>"
-msgstr ""
+msgstr "<application>XDM</application> yapılandırma"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12221
+#, fuzzy
 msgid ""
 "To install <application>XDM</application>, use the <package>x11/xdm</"
 "package> package or port. Once installed, <application>XDM</application> can "
 "be configured to run when the machine boots up by editing this entry in "
 "<filename>/etc/ttys</filename>:"
 msgstr ""
+"<application>XDM</application>'yi kurmak için, <package>x11/xdm</package> "
+"paketini veya bağlantı noktasını kullanın. İndirildiğinde "
+"<application>XDM</application>, makine bu girişi <filename>/etc/"
+"ttys</filename> içinde düzenleyerek açıladığında yapılandırılabilir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:12227
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "ttyv8   \"/usr/local/bin/xdm -nodaemon\"  xterm   off secure"
-msgstr ""
+msgstr "ttyv8   \"/usr/local/bin/xdm -nodaemon\"  xterm   off secure"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12229
+#, fuzzy
 msgid ""
 "Change the <literal>off</literal> to <literal>on</literal> and save the "
 "edit. The <literal>ttyv8</literal> in this entry indicates that "
 "<application>XDM</application> will run on the ninth virtual terminal."
 msgstr ""
+"<literal>kapalı<literal> ayarını <literal>açık</literal> olarak değiştirin "
+"ve düzenlemeyi kaydedin. Bu girişteki <literal>ttyv8</literal>, "
+"<application>XDM</application>'nin dokuzuncu sanal terminalde çalışacağını "
+"gösterir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12234
+#, fuzzy
 msgid ""
 "The <application>XDM</application> configuration directory is located in "
 "<filename>/usr/local/etc/X11/xdm</filename>. This directory contains several "
@@ -16781,24 +16793,36 @@ msgid ""
 "\"xfree86\"><refentrytitle>xdm</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>."
 msgstr ""
+"<application>XDM</application> yapılandırma dizini <filename>/usr/local/etc/"
+"X11/xdm</filename> konumunda bulunur. Bu dizin, "
+"<application>XDM</application>'nin davranışını ve görünümünü değiştirmek "
+"için kullanılan birkaç dosyanın yanı sıra <application>XDM</application> "
+"çalışırken masaüstünü ayarlamak için kullanılan birkaç komut dosyası ve "
+"programı içerir. <xref linkend=\"xdm-config-files\"/> bu dosyaların her "
+"birinin fonksiyonlarını özetler. Bu dosyaların tam sözdizimi ve kullanımı, <"
+"citerefentry vendor=\"xfree86\">xdm<manvolnum>1</manvolnum> da açıklanmıştır."
 
 #. (itstool) path: table/title
 #: book.translate.xml:12244
+#, fuzzy
 msgid "XDM Configuration Files"
-msgstr ""
+msgstr "XDM Yapılandırma Dosyaları"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12249
+#, fuzzy
 msgid "File"
-msgstr ""
+msgstr "Dosya"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12256
+#, fuzzy
 msgid "<filename>Xaccess</filename>"
-msgstr ""
+msgstr "<filename>Xaccess</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12257
+#, fuzzy
 msgid ""
 "The protocol for connecting to <application>XDM</application> is called the "
 "X Display Manager Connection Protocol (<acronym>XDMCP</acronym>) This file "
@@ -16806,14 +16830,21 @@ msgid ""
 "connections from remote machines. By default, this file does not allow any "
 "remote clients to connect."
 msgstr ""
+"<application>XDM</application>'ye bağlanma protokolüne X Görüntü Yöneticisi "
+"Bağlantı Protokolü (<acronym>XDMCP</acronym>) denir.Bu dosya, uzak "
+"makinelerden <acronym>XDMCP</acronym> bağlantılarını kontrol etmek için bir "
+"istemci yetkilendirme kural kümesidir. Varsayılan olarak, bu dosya herhangi "
+"bir uzak istemcinin bağlanmasına izin vermez."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12267
+#, fuzzy
 msgid "<filename>Xresources</filename>"
-msgstr ""
+msgstr "<filename>Xresources</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12268
+#, fuzzy
 msgid ""
 "This file controls the look and feel of the <application>XDM</application> "
 "display chooser and login screens. The default configuration is a simple "
@@ -16822,39 +16853,57 @@ msgid ""
 "prompts below. The format of this file is identical to the app-defaults file "
 "described in the <application>Xorg</application> documentation."
 msgstr ""
+"Bu dosya, <application>XDM</application> ekran seçici ve giriş ekranlarının "
+"görünümünü ve izlenimini kontrol eder. Varsayılan yapılandırma, makinenin "
+"ana bilgisayar adının üstündeki büyük bir yazı tipinde görüntülenen basit "
+"bir dikdörtgen giriş penceresidir ve aşağıda <quote>giriş:</quote> ve "
+"<quote>şifre:</quote> istemleri bulunur. Bu dosyanın biçimi, "
+"<application>Xorg</application> belgelerinde açıklanan uygulama "
+"varsayılanları dosyasıyla aynıdır."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12281
+#, fuzzy
 msgid "<filename>Xservers</filename>"
-msgstr ""
+msgstr "<filename>Xservers</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12282
+#, fuzzy
 msgid ""
 "The list of local and remote displays the chooser should provide as login "
 "choices."
 msgstr ""
+"Seçicinin oturum açma seçenekleri olarak sağlaması gereken yerel ve uzak "
+"görüntüler listesi."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12287
+#, fuzzy
 msgid "<filename>Xsession</filename>"
-msgstr ""
+msgstr "<filename>Xsession</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12288
+#, fuzzy
 msgid ""
 "Default session script for logins which is run by <application>XDM</"
 "application> after a user has logged in. This points to a customized session "
 "script in <filename>~/.xsession</filename>."
 msgstr ""
+"Bir kullanıcı oturum açtıktan sonra xdm tarafından çalıştırılan girişler "
+"için varsayılan oturum betiği. Bu, <filename>~/.xsession</filename> "
+"içerisinde özelleştirilmiş bir oturum komut dosyasına işaret eder."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12295
+#, fuzzy
 msgid "<filename>Xsetup_</filename>*"
-msgstr ""
+msgstr "<filename>Xsetup_</filename>*"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12296
+#, fuzzy
 msgid ""
 "Script to automatically launch applications before displaying the chooser or "
 "login interfaces. There is a script for each display being used, named "
@@ -16862,75 +16911,106 @@ msgid ""
 "display number. Typically these scripts run one or two programs in the "
 "background such as <command>xconsole</command>."
 msgstr ""
+"Seçici veya giriş arayüzlerini görüntülemeden önce uygulamaları otomatik "
+"olarak başlatmak için komut dosyası. Kullanılan her ekran için <filename>"
+"Xsetup_ *</filename> adlı bir komut dosyası vardır, burada "
+"<literal>*</literal> yerel ekran numarasıdır. Genellikle bu komut dosyaları, "
+"<command>xconsole</command> gibi arka planda bir veya iki program çalıştırır."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12307
+#, fuzzy
 msgid "<filename>xdm-config</filename>"
-msgstr ""
+msgstr "<filename>xdm-config</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12308
+#, fuzzy
 msgid "Global configuration for all displays running on this machine."
-msgstr ""
+msgstr "Bu makinede çalışan tüm ekranlar için genel yapılandırma."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12313
+#, fuzzy
 msgid "<filename>xdm-errors</filename>"
-msgstr ""
+msgstr "<filename>xdm-errors</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12314
+#, fuzzy
 msgid ""
 "Contains errors generated by the server program. If a display that "
 "<application>XDM</application> is trying to start hangs, look at this file "
 "for error messages. These messages are also written to the user's "
 "<filename>~/.xsession-errors</filename> on a per-session basis."
 msgstr ""
+"Sunucu programı tarafından oluşturulan hataları içerir. "
+"<application>XDM</application>'nin başlatmaya çalıştığı bir ekran askıda "
+"kalıyorsa, hata iletileri için bu dosyaya bakın. Bu iletiler ayrıca "
+"kullanıcının <filename>~/.xsession-errors</filename> oturum başına yazılır."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12323
+#, fuzzy
 msgid "<filename>xdm-pid</filename>"
-msgstr ""
+msgstr "<filename>xdm-pid</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12324
+#, fuzzy
 msgid ""
 "The running process <acronym>ID</acronym> of <application>XDM</application>."
-msgstr ""
+msgstr "<application>XDM</application>'nin çalışan <acronym>ID</acronym>'si."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:12333
+#, fuzzy
 msgid "Configuring Remote Access"
-msgstr ""
+msgstr "Uzaktan Erişimi Yapılandırma"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12335
+#, fuzzy
 msgid ""
 "By default, only users on the same system can login using <application>XDM</"
 "application>. To enable users on other systems to connect to the display "
 "server, edit the access control rules and enable the connection listener."
 msgstr ""
+"Varsayılan olarak, yalnızca aynı sistemdeki kullanıcılar "
+"<application>XDM</application> kullanarak giriş yapabilir. Diğer "
+"sistemlerdeki kullanıcıların görüntüleme sunucusuna bağlanmasını sağlamak "
+"için erişim denetimi kurallarını düzenleyin ve Bağlantı dinleyicisini "
+"etkinleştirin."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12340
+#, fuzzy
 msgid ""
 "To configure <application>XDM</application> to listen for any remote "
 "connection, comment out the <literal>DisplayManager.requestPort</literal> "
 "line in <filename>/usr/local/etc/X11/xdm/xdm-config</filename> by putting a "
 "<literal>!</literal> in front of it:"
 msgstr ""
+"<application>XDM</application>'yi herhangi bir uzak bağlantıyı dinleyecek "
+"şekilde yapılandırmak için, <filename>/usr/local/etc/X11/xdm/xdm-"
+"config</filename> dosyası içerisine başına <literal>!</literal> koyarak "
+"<literal>DisplayManager.requestPort</literal> yazın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:12346
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "! SECURITY: do not listen for XDMCP or Chooser requests\n"
 "! Comment out this line if you want to manage X terminals with xdm\n"
 "DisplayManager.requestPort:     0"
 msgstr ""
+"! GÜVENLİK: XDMCP veya Seçici isteklerini dinlemeyin\n"
+"! X terminallerini yorumlamak istiyorsanız xdm\n"
+"DisplayManager.requestPort:     0"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12350
+#, fuzzy
 msgid ""
 "Save the edits and restart <application>XDM</application>. To restrict "
 "remote access, look at the example entries in <filename>/usr/local/etc/X11/"
@@ -16938,6 +17018,12 @@ msgid ""
 "\"xfree86\"><refentrytitle>xdm</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> for further information."
 msgstr ""
+"Düzenlemeleri kaydedin ve <application>XDM</application>'yi yeniden "
+"başlatın. Uzaktan erişimi kısıtlamak için, <filename>/usr/local/etc/X11/xdm/"
+"Xaccess</filename> dosyasındaki örneklere bakın ve daha fazla bilgi için <"
+"citerefentry vendor=\"xfree86\""
+"><refentrytitle>dm</refentrytitle><manvolnum>1</manvolnum></citerefentry>'a "
+"bakın."
 
 #. (itstool) path: info/title
 #: book.translate.xml:12359
