@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-16 10:59+0000\n"
-"Last-Translator: Alparslangurbuz <alparslangurbuz@hotmail.com>\n"
+"PO-Revision-Date: 2020-06-17 04:18+0000\n"
+"Last-Translator: ibrahimkarapolat <kpibrahim79@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -52363,6 +52363,7 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36183
+#, fuzzy
 msgid ""
 "File systems from the original <filename>ada0</filename> disk can now be "
 "copied onto the mirror with <citerefentry><refentrytitle>dump</"
@@ -52370,10 +52371,15 @@ msgid ""
 "<citerefentry><refentrytitle>restore</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>."
 msgstr ""
+"Dosya sistemleri kaynak <filename>ada0</filename> diskinden <citerefentry><re"
+"fentrytitle>döküm</refentrytitle><manvolnum>8</manvolnum></citerefentry> ve "
+"<citerefentry><refentrytitle>geri yükleme "
+"</refentrytitle><manvolnum>8</manvolnum></citerefentry>ile aynaya "
+"kopyalanabilir."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:36187
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>mount /dev/mirror/gm0s1a /mnt</userinput>\n"
 "<prompt>#</prompt> <userinput>dump -C16 -b64 -0aL -f - / | (cd /mnt &amp;&amp; restore -rf -)</userinput>\n"
@@ -52384,17 +52390,32 @@ msgid ""
 "<prompt>#</prompt> <userinput>dump -C16 -b64 -0aL -f - /tmp | (cd /mnt/tmp &amp;&amp; restore -rf -)</userinput>\n"
 "<prompt>#</prompt> <userinput>dump -C16 -b64 -0aL -f - /usr | (cd /mnt/usr &amp;&amp; restore -rf -)</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>mount /dev/mirror/gm0s1a /mnt</userinput>\n"
+"<prompt>#</prompt> <userinput>dump -C16 -b64 -0aL -f - / | (cd /mnt "
+"&amp;&amp; restore -rf -)</userinput>\n"
+"<prompt>#</prompt> <userinput>mount /dev/mirror/gm0s1d /mnt/var</userinput>\n"
+"<prompt>#</prompt> <userinput>mount /dev/mirror/gm0s1e /mnt/tmp</userinput>\n"
+"<prompt>#</prompt> <userinput>mount /dev/mirror/gm0s1f /mnt/usr</userinput>\n"
+"<prompt>#</prompt> <userinput>dump -C16 -b64 -0aL -f - /var | (cd /mnt/var "
+"&amp;&amp; restore -rf -)</userinput>\n"
+"<prompt>#</prompt> <userinput>dump -C16 -b64 -0aL -f - /tmp | (cd /mnt/tmp "
+"&amp;&amp; restore -rf -)</userinput>\n"
+"<prompt>#</prompt> <userinput>dump -C16 -b64 -0aL -f - /usr | (cd /mnt/usr "
+"&amp;&amp; restore -rf -)</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36196
+#, fuzzy
 msgid ""
 "Edit <filename>/mnt/etc/fstab</filename> to point to the new mirror file "
 "systems:"
 msgstr ""
+"yeni ayna doya sistemlerine işaret etmek için <filename>/mnt/etc/"
+"fstab</filename> düzenle:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:36199
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "# Device\t\tMountpoint\tFStype\tOptions\tDump\tPass#\n"
 "/dev/mirror/gm0s1a\t/\t\tufs\trw\t1\t1\n"
@@ -52403,50 +52424,72 @@ msgid ""
 "/dev/mirror/gm0s1e\t/tmp\t\tufs\trw\t2\t2\n"
 "/dev/mirror/gm0s1f\t/usr\t\tufs\trw\t2\t2"
 msgstr ""
+"# Device\t\tMountpoint\tFStype\tOptions\tDump\tPass#\n"
+"/dev/mirror/gm0s1a\t/\t\tufs\trw\t1\t1\n"
+"/dev/mirror/gm0s1b\tnone\t\tswap\tsw\t0\t0\n"
+"/dev/mirror/gm0s1d\t/var\t\tufs\trw\t2\t2\n"
+"/dev/mirror/gm0s1e\t/tmp\t\tufs\trw\t2\t2\n"
+"/dev/mirror/gm0s1f\t/usr\t\tufs\trw\t2\t2"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36206
+#, fuzzy
 msgid ""
 "If the <filename>geom_mirror.ko</filename> kernel module has not been built "
 "into the kernel, <filename>/mnt/boot/loader.conf</filename> is edited to "
 "load the module at boot:"
 msgstr ""
+"<filename>geom_mirror.ko</filename>kernel modülü kernele işlenmemişse "
+"<filename>/mnt/boot/loader.conf</filename> başlangıçta kernele işlenmesi "
+"için düzenlenir:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:36211 book.translate.xml:36420 book.translate.xml:36540
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "geom_mirror_load=\"YES\""
-msgstr ""
+msgstr "geom_mirror_load=\"EVET\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36213
+#, fuzzy
 msgid ""
 "Reboot the system to test the new mirror and verify that all data has been "
 "copied. The <acronym>BIOS</acronym> will see the mirror as two individual "
 "drives rather than a mirror. Because the drives are identical, it does not "
 "matter which is selected to boot."
 msgstr ""
+"Yeni aynayı test etmek ve tüm verilerin kopyalandığını doğrulamak için "
+"sistemi yeniden başlatın.<acronym>BIOS</acronym> aynayı ayna yerine iki ayrı "
+"sürücü olarak görecektir. Sürücüler aynı olduğundan, hangisinin önyükleme "
+"için seçildiği önemli değildir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36219
+#, fuzzy
 msgid ""
 "See <xref linkend=\"gmirror-troubleshooting\"/> if there are problems "
 "booting. Powering down and disconnecting the original <filename>ada0</"
 "filename> disk will allow it to be kept as an offline backup."
 msgstr ""
+"Başlatma sorunları olursa <xref linkend=\"gmirror-troubleshooting\"/> "
+"bakınız. Orijinal diskin kapatılması ve çıkarılması, "
+"<filename>ada0</filename> diskin çevrimdışı yedek olarak tutulmasını sağlar."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36224
+#, fuzzy
 msgid "In use, the mirror will behave just like the original single drive."
-msgstr ""
+msgstr "Kullanımda, ayna tıpkı orijinal tek sürücü gibi davranacaktır."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:36229
+#, fuzzy
 msgid "Creating a Mirror with an Existing Drive"
-msgstr ""
+msgstr "Mevcut Bir Sürücüyle Ayna Oluşturma"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36231
+#, fuzzy
 msgid ""
 "In this example, FreeBSD has already been installed on a single disk, "
 "<filename>ada0</filename>. A new disk, <filename>ada1</filename>, has been "
@@ -52457,27 +52500,42 @@ msgid ""
 "end of each disk, and the existing <filename>ada0</filename> has usually had "
 "all of its space already allocated."
 msgstr ""
+"Bu örnekte, FreeBSD zaten tek bir diske <filename>ada0</filename>yüklüdür. "
+"Yeni bir disk <filename>ada1</filename> sisteme bağlanmıştır. Yeni diskte "
+"tek diskli bir ayna oluşturulur, mevcut sistem üzerine kopyalanır ve daha "
+"sonra eski disk aynaya yerleştirilir. Bu biraz karmaşık prosedür gereklidir, "
+"çünkü <command>gmirror</command>her diskin sonuna 512 baytlık bir üstveri "
+"bloğu koyması gerekir ve var olan <filename>ada0</filename> ayrılan alanın "
+"tamamı zaten ayrılmış durumdadır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36242
+#, fuzzy
 msgid "Load the <filename>geom_mirror.ko</filename> kernel module:"
-msgstr ""
+msgstr "<filename>geom_mirror.ko</filename> kernel modüle yükle:"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36247
+#, fuzzy
 msgid ""
 "Check the media size of the original disk with <command>diskinfo</command>:"
 msgstr ""
+"<command>diskinfo</command> kullanarak kaynak dosyanın medya boyutunu "
+"kontrol et:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:36250
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>diskinfo -v ada0 | head -n3</userinput>\n"
 "/dev/ada0\n"
 "\t512             # sectorsize\n"
 "\t1000204821504   # mediasize in bytes (931G)"
 msgstr ""
+"<prompt>#</prompt> <userinput>diskinfo -v ada0 | head -n3</userinput>\n"
+"/dev/ada0\n"
+"\t512             # sectorsize\n"
+"\t1000204821504   # byte olarak medya boyutu (931G)"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36255
