@@ -9,12 +9,13 @@
 # esradesteki <esradesteki20@gmail.com>, 2020.
 # fazlidag <fazli_dag9696@outlook.com>, 2020.
 # Mehmet Fatih Senel <mehmetfatihsenel@yahoo.com>, 2020.
+# nurbanu  hasanoğlu <hasanoglunurbanu@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-17 18:33+0000\n"
-"Last-Translator: ibrahimkarapolat <kpibrahim79@gmail.com>\n"
+"PO-Revision-Date: 2020-06-18 04:17+0000\n"
+"Last-Translator: nurbanu  hasanoğlu <hasanoglunurbanu@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -71323,6 +71324,7 @@ msgstr ""
 
 #. (itstool) path: tip/para
 #: book.translate.xml:49331
+#, fuzzy
 msgid ""
 "While it is not required, it is possible to provide a <command>login</"
 "command> prompt over the serial line. To configure this, edit the entry for "
@@ -71330,40 +71332,60 @@ msgid ""
 "<xref linkend=\"term-config\"/>. If the speed of the serial port has been "
 "changed, change <literal>std.9600</literal> to match the new setting."
 msgstr ""
+"Gerekli olmasa da, seri hat üzerinden bir <command>login</command> (giriş) "
+"istemi sağlamak mümkündür. Bunu yapılandırmak için, <filename>/etc/"
+"ttys</filename>'deki seri port girişini, <xref linkend=\"term-config\"/> "
+"kısmındaki talimatları kullanarak yapılandırın. Eğer seri portun hızı "
+"değiştiyse, <literal>std.9600</literal>'ü yeni ayarlarla eşleşecek şekilde "
+"değiştirin."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:49342
+#, fuzzy
 msgid "Setting a Faster Serial Port Speed"
-msgstr ""
+msgstr "Daha Hızlı Bir Seri Port Hızı Ayarlama"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:49344
+#, fuzzy
 msgid ""
 "By default, the serial port settings are 9600 baud, 8 bits, no parity, and 1 "
 "stop bit. To change the default console speed, use one of the following "
 "options:"
 msgstr ""
+"Varsayılan olarak seri port ayarları 9600 baud, 8 bit, eşlik biti yok ve 1 "
+"durdurma bitidir. Varsayılan konsol hızını değiştirmek için aşağıdaki "
+"seçeneklerden birini kullanın:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49350
+#, fuzzy
 msgid ""
 "Edit <filename>/etc/make.conf</filename> and set "
 "<varname>BOOT_COMCONSOLE_SPEED</varname> to the new console speed. Then, "
 "recompile and install the boot blocks and the boot loader:"
 msgstr ""
+"<varname>BOOT_COMCONSOLE_SPEED</varname>'i yeni konsol hızına ayarlayarak "
+"<filename>/etc/make.conf</filename>'u düzenleyin. Sonra yeniden derleyin ve "
+"önyükleme bloklarını ve önyükleme yükleyicisini yükleyin:"
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:49355
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /sys/boot</userinput>\n"
 "<prompt>#</prompt> <userinput>make clean</userinput>\n"
 "<prompt>#</prompt> <userinput>make</userinput>\n"
 "<prompt>#</prompt> <userinput>make install</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /sys/boot</userinput>\n"
+"<prompt>#</prompt> <userinput>make clean</userinput>\n"
+"<prompt>#</prompt> <userinput>make</userinput>\n"
+"<prompt>#</prompt> <userinput>make install</userinput>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49360
+#, fuzzy
 msgid ""
 "If the serial console is configured in some other way than by booting with "
 "<option>-h</option>, or if the serial console used by the kernel is "
@@ -71371,45 +71393,63 @@ msgid ""
 "with the desired speed, to a custom kernel configuration file and compile a "
 "new kernel:"
 msgstr ""
+"Eğer konsol <option>-h</option> ile önyüklemeden başka bir yolla "
+"yapılandırılmışsa, ya da seri konsol önyükleme bloklarından farklı bir "
+"çekirdek tarafından kullanılmışsa, aşağıdaki seçeneği arzu edilen hızla "
+"birlikte isteğe göre uyarlanmış çekirdek yapılandırma dosyasına ekleyin ve "
+"yeni bir çekirdek derleyin:"
 
 #. (itstool) path: listitem/programlisting
 #: book.translate.xml:49367
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "options CONSPEED=<replaceable>19200</replaceable>"
-msgstr ""
+msgstr "seçenekler CONSPEED=<replaceable>19200</replaceable>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49371
+#, fuzzy
 msgid ""
 "Add the <option>-S<replaceable>19200</replaceable></option> boot option to "
 "<filename>/boot.config</filename>, replacing <replaceable>19200</"
 "replaceable> with the speed to use."
 msgstr ""
+"<option>-S<replaceable>19200</replaceable></option> önyükleme seçeneğini "
+"<filename>boot.config</filename> dosyasına ekleyin, "
+"<replaceable>19200</replaceable>'ü kullanım hızıyla değiştirin."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49379
+#, fuzzy
 msgid ""
 "Add the following options to <filename>/boot/loader.conf</filename>. Replace "
 "<replaceable>115200</replaceable> with the speed to use."
 msgstr ""
+"Aşağıdaki seçenekleri <filename>/boot/loader.conf</filename>'a ekleyin. "
+"<replaceable>115200</replaceable> ile kullanım hızınının yerini değiştirin."
 
 #. (itstool) path: listitem/programlisting
 #: book.translate.xml:49384
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "boot_multicons=\"YES\"\n"
 "boot_serial=\"YES\"\n"
 "comconsole_speed=\"<replaceable>115200</replaceable>\"\n"
 "console=\"comconsole,vidconsole\""
 msgstr ""
+"boot_multicons=\"EVET\"\n"
+"boot_serial=\"EVET\"\n"
+"comconsole_speed=\"<replaceable>115200</replaceable>\"\n"
+"console=\"comconsole,vidconsole\""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:49393
+#, fuzzy
 msgid "Entering the DDB Debugger from the Serial Line"
-msgstr ""
+msgstr "Seri Hattan DDB Hata Ayıklayıcısına Giriş"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:49395
+#, fuzzy
 msgid ""
 "To configure the ability to drop into the kernel debugger from the serial "
 "console, add the following options to a custom kernel configuration file and "
@@ -71421,6 +71461,15 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> for more information "
 "about the kernel debugger."
 msgstr ""
+"Seri konsoldan çekirdek hata ayıklayıcısına girme özelliğini yapılandırmak "
+"için aşağıdaki seçenekleri özelleşmiş çekirdek yapılandırma dosyasına "
+"ekleyin ve çekirdeği <xref linkend=\"kernelconfig\"/> bölümündeki "
+"talimatları kullanarak derleyin. Bunun uzaktan tanılama için kullanışlı "
+"olduğunu, ayrıca eğer seri portta yapay bir kırılma ortaya çıkarsa tehlikeli "
+"olduğunu not edin. <citerefentry><refentrytitle>ddb</refentrytitle><manvolnum"
+">4</manvolnum></citerefentry>ve<citerefentry><refentrytitle>ddb</refentrytitl"
+"e><manvolnum>8</manvolnum></citerefentry> çekirdek hata ayıklayıcısı "
+"hakkında daha fazla bilgi için referanstır."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:49404
