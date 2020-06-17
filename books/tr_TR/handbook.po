@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-17 06:13+0000\n"
+"PO-Revision-Date: 2020-06-17 15:55+0000\n"
 "Last-Translator: Alparslangurbuz <alparslangurbuz@hotmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
@@ -17305,31 +17305,44 @@ msgstr "<prompt>#</prompt> <userinput>pkg install x11/kde5</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12484
+#, fuzzy
 msgid ""
 "To instead build the <application>KDE</application> port, use the following "
 "command. Installing the port will provide a menu for selecting which "
 "components to install. <application>KDE</application> is a large application "
 "and will take some time to compile, even on a fast computer."
 msgstr ""
+"Bunun yerine <application>KDE</application> bağlantı noktasını oluşturmak "
+"için aşağıdaki komutu kullanın. Bağlantı noktasının indirilmesi, hangi "
+"bileşenlerin yükleneceğini seçmek için bir menü sağlayacaktır. "
+"<application>KDE</application> büyük bir uygulamadır ve hızlı bir "
+"bilgisayarda bile derlenmesi biraz zaman alacaktır."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:12490
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/x11/kde5</userinput>\n"
 "<prompt>#</prompt> <userinput>make install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/x11/kde5</userinput>\n"
+"<prompt>#</prompt> <userinput>make install clean</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12493
+#, fuzzy
 msgid ""
 "<application>KDE</application> requires <filename>/proc</filename> to be "
 "mounted. Add this line to <filename>/etc/fstab</filename> to mount this file "
 "system automatically during system startup:"
 msgstr ""
+"<application>KDE</application> <filename>/proc</filename> takılmasını "
+"gerektirir. Sistem başlatma sırasında bu dosya sistemini otomatik olarak "
+"bağlamak için bu satırı <filename>/etc/fstab</filename> dosyasına ekleyin:"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12500
+#, fuzzy
 msgid ""
 "<application>KDE</application> uses <application>D-Bus</application> and "
 "<application>HAL</application> for a message bus and hardware abstraction. "
@@ -17337,80 +17350,107 @@ msgid ""
 "<application>KDE</application>. Enable them in <filename>/etc/rc.conf</"
 "filename> so they will be started when the system boots:"
 msgstr ""
+"<application>KDE</application>, bir mesaj veriyolu ve donanım soyutlaması "
+"için <application>D-Bus</application> ve <application>HAL</application> "
+"kullanır. Bu uygulamalar otomatik olarak <application>KDE</application> "
+"yanında kurulur. <filename>/Etc/rc.conf</filename> dosyasında etkinleştirin, "
+"böylece sistem önyüklendiğinde başlatılabilirler:"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:12511
+#, fuzzy
 msgid "<primary>KDE</primary> <secondary>display manager</secondary>"
-msgstr ""
+msgstr "<primary>KDE</primary><secondary>gmrüntü yöneticisi</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12516
+#, fuzzy
 msgid ""
 "Since KDE Plasma 5, the KDE Display Manager, <application>KDM</application> "
 "is no longer developed. A possible replacement is <application>SDDM</"
 "application>. To install it, type:"
 msgstr ""
+"KDE Ekran Yöneticisi KDE Plazma 5'den bu yana <application>KDM</application> "
+"artık geliştirilmiyor. Olası bir değiştirme <application>SDDM</application>"
+"'dir. Yüklemek için şunu yazın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:12521
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install x11/sddm</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg install x11/sddm</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12523
+#, fuzzy
 msgid "Add this line to <filename>/etc/rc.conf</filename>:"
-msgstr ""
+msgstr "Bu satırı <filename>/etc/rc.conf</filename>'a ekleyin"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12526
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "sddm_enable=\"YES\""
-msgstr ""
+msgstr "sddm_enable=\"YES\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12528
+#, fuzzy
 msgid ""
 "A second method for launching <application>KDE Plasma</application> is to "
 "type <command>startx</command> from the command line. For this to work, the "
 "following line is needed in <filename>~/.xinitrc</filename>:"
 msgstr ""
+"<application>KDE Plazma</application> başlatmak için ikinci bir yöntem, "
+"komut satırından <command>startx</command> yazmaktır. Bunun çalışması için "
+"<filename>~/.xinitrc</filename> içinde aşağıdaki satıra ihtiyaç vardır:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12534
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "exec ck-launch-session startplasma-x11"
-msgstr ""
+msgstr "exec ck-launch-session startplasma-x11"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12536
+#, fuzzy
 msgid ""
 "A third method for starting <application>KDE Plasma</application> is through "
 "<application>XDM</application>. To do so, create an executable <filename>~/."
 "xsession</filename> as follows:"
 msgstr ""
+"<application>KDE Plazma</application>'yı başlatmak için üçüncü bir yöntem "
+"<application>XDM</application> üzerindendir. Bunu yapmak için, aşağıdaki "
+"gibi yürütülebilir bir <filename>~/.xsession</filename> oluşturun:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:12541
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>echo \"exec ck-launch-session startplasma-x11\" &gt; ~/.xsession</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>echo \"exec ck-launch-session startplasma-x11\""
+" &gt; ~/.xsession</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12543
+#, fuzzy
 msgid ""
 "Once <application>KDE Plasma</application> is started, refer to its built-in "
 "help system for more information on how to use its various menus and "
 "applications."
 msgstr ""
+"<application>KDE Plazma</application> başlatıldıktan sonra, çeşitli "
+"menülerinin ve uygulamalarının nasıl kullanılacağı hakkında daha fazla bilgi "
+"için yerleşik yardım sistemine bakın."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:12549
+#, fuzzy
 msgid "Xfce"
-msgstr ""
+msgstr "Xfce"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12551
+#, fuzzy
 msgid ""
 "<application>Xfce</application> is a desktop environment based on the GTK+ "
 "toolkit used by <application>GNOME</application>. However, it is more "
@@ -17422,48 +17462,68 @@ msgid ""
 "application> can be found at <link xlink:href=\"http://www.xfce.org/"
 "\">http://www.xfce.org</link>."
 msgstr ""
+"<application>Xfce</application>, <application>GNOME</application> tarafından "
+"kullanılan GTK + araç setini temel alan bir masaüstü ortamıdır. Bununla "
+"birlikte, daha hafiftir ve basit, verimli, kullanımı kolay bir masaüstü "
+"sunar. Tamamen yapılandırılabilir, menüler, uygulamalar ve uygulama "
+"başlatıcıları içeren bir ana panele sahiptir, bir dosya yöneticisi ve ses "
+"yöneticisi sağlar ve teması sağlanır. Hızlı, hafif ve verimli olduğu için "
+"bellek sınırlaması olan daha eski veya daha yavaş makineler için idealdir. "
+"Xfce hakkında daha fazla bilgiyi <link xlink:href=\"http://www.xfce.org/\""
+">http://www.xfce.org</link>. adresinde bulabilirsiniz."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12562
+#, fuzzy
 msgid "To install the <application>Xfce</application> package:"
-msgstr ""
+msgstr "<application>Xfce</application> paketini kurmak için:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:12565
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install xfce</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg install xfce</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12567
+#, fuzzy
 msgid "Alternatively, to build the port:"
-msgstr ""
+msgstr "Alternatif olarak, bağlantı noktasını oluşturmak için:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:12569
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/x11-wm/xfce4</userinput>\n"
 "<prompt>#</prompt> <userinput>make install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/x11-wm/xfce4</userinput>\n"
+"<prompt>#</prompt> <userinput>make install clean</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12572
+#, fuzzy
 msgid ""
 "<application>Xfce</application> uses <application>D-Bus</application> for a "
 "message bus. This application is automatically installed as dependency of "
 "<application>Xfce</application>. Enable it in <filename>/etc/rc.conf</"
 "filename> so it will be started when the system boots:"
 msgstr ""
+"<application>Xfce</application>, bir mesaj veriyolu için "
+"<application>D-Bus</application> kullanır. Bu uygulama otomatik olarak "
+"<application>Xfce</application> yanında yüklenir. <filename>/Etc/"
+"rc.conf</filename> dosyasında etkinleştirin, böylece sistem önyüklendiğinde "
+"başlayacaktır:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12579
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "dbus_enable=\"YES\""
-msgstr ""
+msgstr "dbus_enable=\"YES\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12581
+#, fuzzy
 msgid ""
 "Unlike <application>GNOME</application> or <application>KDE</application>, "
 "<application>Xfce</application> does not provide its own login manager. In "
@@ -17471,25 +17531,38 @@ msgid ""
 "typing <command>startx</command>, first create <filename>~/.xinitrc</"
 "filename> with this command:"
 msgstr ""
+"<application>GNOME</application> veya <application>KDE</application>'den "
+"farklı olarak, <application>Xfce</application> kendi giriş yöneticisini "
+"sağlamaz. <application>Xfce</application> komut satırından "
+"<command>startx</command> yazarak başlatmak için, önce bu komutla "
+"<filename>~/.xinitrc</filename> oluşturun:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:12589
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>echo \". /usr/local/etc/xdg/xfce4/xinitrc\" &gt; ~/.xinitrc</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>echo \". /usr/local/etc/xdg/xfce4/xinitrc\" "
+"&gt; ~/.xinitrc</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12591
+#, fuzzy
 msgid ""
 "An alternate method is to use <application>XDM</application>. To configure "
 "this method, create an executable <filename>~/.xsession</filename>:"
 msgstr ""
+"Alternatif bir yöntem <application>XDM</application> kullanmaktır. Bu "
+"yöntemi yapılandırmak için yürütülebilir bir <filename>~/.xsession</filename>"
+" oluşturun:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:12595
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>echo \". /usr/local/etc/xdg/xfce4/xinitrc\" &gt; ~/.xsession</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>echo \". /usr/local/etc/xdg/xfce4/xinitrc\" "
+"&gt; ~/.xsession</userinput>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:12600
