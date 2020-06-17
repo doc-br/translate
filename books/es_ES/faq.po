@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-07 06:12+0000\n"
+"PO-Revision-Date: 2020-06-18 04:17+0000\n"
 "Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_faq/es/>\n"
@@ -6745,18 +6745,6 @@ msgstr "¿Cuánta memoria libre esta disponible?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4022
-#, fuzzy
-#| msgid ""
-#| "There are a couple of kinds of <quote>free memory</quote>. One kind is "
-#| "the amount of memory immediately available without paging anything else "
-#| "out. That is approximately the size of cache queue + size of free queue "
-#| "(with a derating factor, depending upon system tuning). Another kind of "
-#| "<quote>free memory</quote> is the total amount of <acronym>VM</acronym> "
-#| "space. That can be complex, but is dependent upon the amount of swap "
-#| "space and memory. Other kinds of <quote>free memory</quote> descriptions "
-#| "are also possible, but it is relatively useless to define these, but "
-#| "rather it is important to make sure that the paging rate is kept low, and "
-#| "to avoid running out of swap space."
 msgid ""
 "There are a couple of kinds of <quote>free memory</quote>. The most common "
 "is the amount of memory immediately available without reclaiming memory "
@@ -6772,16 +6760,20 @@ msgid ""
 "define these, but rather it is important to make sure that the paging rate "
 "is kept low, and to avoid running out of swap space."
 msgstr ""
-"Hay varios tipos de <quote>memoria libre</quote>. Un tipo es la cantidad de "
-"memoria directamente disponible sin paginar nada a disco. Esto es "
-"aproximadamente el tamaño de una cola de cache + el tamaño de la cola libre  "
-"(con un factor de reducción de potencia, dependiendo de como se configure el "
-"sistema). Otro tipo de <quote>memoria libre</quote> es la cantidad total de "
-"espacio <acronym>VM</acronym>. Esto puede ser complejo, pero depende de la "
-"cantidad de espacio de intercambio y memoria. Otros tipos de descripciones "
-"de <quote>memoria libre</quote> también son posibles, pero es relativamente "
-"inútil definirlos, en su lugar es importante asegurarse de mantener el rango "
-"de paginación bajo, para evitar que se agote el espacio de intercambio."
+"Hay un par de tipos de <quote>memoria libre</quote>. La más común es la "
+"cantidad de memoria disponible inmediatamente sin recuperar la memoria ya en "
+"uso. Ese es el tamaño de la cola de páginas libres más algunas otras páginas "
+"reservadas. Esta cantidad es exportada por el sistema "
+"<literal>vm.stats.vm.v_free_count</literal> <citerefentry><refentrytitle>sysc"
+"tl</refentrytitle><manvolnum>8</manvolnum></citerefentry>, mostrado, por "
+"ejemplo, por <citerefentry><refentrytitle>top</refentrytitle><manvolnum>1</ma"
+"nvolnum></citerefentry>. Otro tipo de <quote>memoria libre</quote> es la "
+"cantidad total de memoria virtual disponible para los procesos del país "
+"usuario, que depende de la suma del espacio de intercambio y la memoria "
+"utilizable. También son posibles otros tipos de descripciones de <quote>"
+"memoria libre</quote>, pero es relativamente inútil definirlas, sino que es "
+"importante asegurarse de que la tasa de paginación se mantenga baja, y "
+"evitar quedarse sin espacio de intercambio."
 
 #. (itstool) path: question/para
 #: book.translate.xml:4042
@@ -6856,17 +6848,6 @@ msgstr "¿Qué es el sistema X Window?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4093
-#, fuzzy
-#| msgid ""
-#| "The X Window System (commonly <literal>X11</literal>) is the most widely "
-#| "available windowing system capable of running on <trademark class="
-#| "\"registered\">UNIX</trademark> or <trademark class=\"registered\">UNIX</"
-#| "trademark> like systems, including FreeBSD. <link xlink:href=\"http://www."
-#| "x.org/wiki/\">The X.Org Foundation</link> administers the <link xlink:"
-#| "href=\"http://en.wikipedia.org/wiki/X_Window_System_core_protocol\">X "
-#| "protocol standards</link>, with the current reference implementation, "
-#| "version 11 release 7.7, so references are often shortened to "
-#| "<literal>X11</literal>."
 msgid ""
 "The X Window System (commonly <literal>X11</literal>) is the most widely "
 "available windowing system capable of running on <trademark class="
@@ -6878,12 +6859,12 @@ msgid ""
 "release 7.7, so references are often shortened to <literal>X11</literal>."
 msgstr ""
 "El sistema X Window (comúnmente <literal>X11</literal>) es el sistema de "
-"ventanas más ampliamente disponible capaz de correr en <trademark class="
-"\"registered\">UNIX</trademark> o sistemas de tipo <trademark class="
-"\"registered\">UNIX</trademark>, incluyendo FreeBSD. <link xlink:href="
-"\"http://www.x.org/wiki/\">La X.Org Foundation</link> administra <link xlink:"
-"href=\"http://en.wikipedia.org/wiki/X_Window_System_core_protocol"
-"\">estándares de protocolo de X</link>, con la implementación de referencia "
+"ventanas más ampliamente disponible capaz de correr en <trademark class=\""
+"registered\">UNIX</trademark> o sistemas de tipo <trademark class=\""
+"registered\">UNIX</trademark>, incluyendo FreeBSD. <link xlink:href=\""
+"http://www.x.org/wiki/\">La X.Org Foundation</link> administra <link "
+"xlink:href=\"http://en.wikipedia.org/wiki/X_Window_System_core_protocol\">"
+"estándares de protocolo de X</link>, con la implementación de referencia "
 "actual, versión 11 release 7.7, de modo que las referencias suelen acortarse "
 "a <literal>X11</literal>."
 
@@ -7010,23 +6991,6 @@ msgstr "¿Por qué mi mouse no funciona con X?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4167
-#, fuzzy
-#| msgid ""
-#| "When using <citerefentry><refentrytitle>syscons</"
-#| "refentrytitle><manvolnum>4</manvolnum></citerefentry>, the default "
-#| "console driver, FreeBSD can be configured to support a mouse pointer on "
-#| "each virtual screen. To avoid conflicting with X, "
-#| "<citerefentry><refentrytitle>syscons</refentrytitle><manvolnum>4</"
-#| "manvolnum></citerefentry> supports a virtual device called <filename>/dev/"
-#| "sysmouse</filename>. All mouse events received from the real mouse device "
-#| "are written to the <citerefentry><refentrytitle>sysmouse</"
-#| "refentrytitle><manvolnum>4</manvolnum></citerefentry> device via "
-#| "<citerefentry><refentrytitle>moused</refentrytitle><manvolnum>8</"
-#| "manvolnum></citerefentry>. To use the mouse on one or more virtual "
-#| "consoles, <emphasis>and</emphasis> use X, see <xref linkend=\"moused\" "
-#| "remap=\"another section\"/> and set up "
-#| "<citerefentry><refentrytitle>moused</refentrytitle><manvolnum>8</"
-#| "manvolnum></citerefentry>."
 msgid ""
 "When using <citerefentry><refentrytitle>vt</refentrytitle><manvolnum>4</"
 "manvolnum></citerefentry>, the default console driver, FreeBSD can be "
@@ -7043,21 +7007,19 @@ msgid ""
 "<citerefentry><refentrytitle>moused</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>."
 msgstr ""
-"Al usar <citerefentry><refentrytitle>syscons</refentrytitle><manvolnum>4</"
-"manvolnum></citerefentry>, el controlador de consola por defecto, FreeBSD "
-"puede configurarse para soportar un puntero del mouse en cada pantalla "
-"virtual. Para evitar entrar en conflico con X, "
-"<citerefentry><refentrytitle>syscons</refentrytitle><manvolnum>4</"
-"manvolnum></citerefentry> soporta un dispositivo virtual llamado <filename>/"
-"dev/sysmouse</filename>.  Todos los eventos del mouse recibidos del "
-"dispositivo real del mouse se escriben al dispositivo "
-"<citerefentry><refentrytitle>sysmouse</refentrytitle><manvolnum>4</"
-"manvolnum></citerefentry> mediante <citerefentry><refentrytitle>moused</"
-"refentrytitle><manvolnum>8</manvolnum></citerefentry>. Para usar el mouse en "
-"una o más consolas virtuales, <emphasis>and</emphasis> use X,  vea <xref "
-"linkend=\"moused\" remap=\"another section\"/> y "
-"configure<citerefentry><refentrytitle>moused</refentrytitle><manvolnum>8</"
-"manvolnum></citerefentry>."
+"Al usar <citerefentry><refentrytitle>vt</refentrytitle><manvolnum>4</manvolnu"
+"m></citerefentry>, el controlador de consola por defecto, FreeBSD puede "
+"configurarse para soportar un puntero del mouse en cada pantalla virtual. "
+"Para evitar entrar en conflico con X, <citerefentry><refentrytitle>vt</refent"
+"rytitle><manvolnum>4</manvolnum></citerefentry> soporta un dispositivo "
+"virtual llamado <filename>/dev/sysmouse</filename>. Todos los eventos del "
+"mouse recibidos del dispositivo real del mouse se escriben al dispositivo <ci"
+"terefentry><refentrytitle>sysmouse</refentrytitle><manvolnum>4</manvolnum></c"
+"iterefentry> mediante <citerefentry><refentrytitle>moused</refentrytitle><man"
+"volnum>8</manvolnum></citerefentry>. Para usar el mouse en una o más "
+"consolas virtuales, <emphasis>and</emphasis> use X,  vea <xref linkend=\""
+"moused\" remap=\"another section\"/> y configure<citerefentry><refentrytitle>"
+"moused</refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4178
@@ -7188,7 +7150,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4234
-#, fuzzy
 msgid ""
 "The mouse can be enabled in <application>Emacs</application>by adding these "
 "lines to <filename>~/.emacs</filename>:"
@@ -7403,11 +7364,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4345
-#, fuzzy
-#| msgid ""
-#| "The more virtual terminals, the more resources that are used. This can be "
-#| "problematic on systems with 8 MB RAM or less. Consider changing "
-#| "<literal>secure</literal> to <literal>insecure</literal>."
 msgid ""
 "The more virtual terminals, the more resources that are used. This can be "
 "problematic on systems with 8 MB RAM or less. Consider changing "
@@ -7730,7 +7686,6 @@ msgstr "¿Como instalo una splash screen y donde puedo encontrarlas?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4520
-#, fuzzy
 msgid ""
 "The detailed answer for this question can be found in the <link xlink:href="
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/boot-splash.html"
@@ -7948,7 +7903,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4635
-#, fuzzy
 msgid ""
 "For Matrox G200/G400, check the <package>x11-drivers/xf86-video-mga</"
 "package> port."
@@ -7957,14 +7911,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4639
-#, fuzzy
-#| msgid ""
-#| "For ATI Rage 128 and Radeon see <citerefentry vendor=\"xorg"
-#| "\"><refentrytitle>ati</refentrytitle><manvolnum>4</manvolnum></"
-#| "citerefentry>, <citerefentry vendor=\"xorg\"><refentrytitle>r128</"
-#| "refentrytitle><manvolnum>4</manvolnum></citerefentry> and <citerefentry "
-#| "vendor=\"xorg\"><refentrytitle>radeon</refentrytitle><manvolnum>4</"
-#| "manvolnum></citerefentry>."
 msgid ""
 "For ATI Rage 128 and Radeon see <citerefentry vendor=\"xorg"
 "\"><refentrytitle>ati</refentrytitle><manvolnum>4</manvolnum></"
@@ -7973,12 +7919,12 @@ msgid ""
 "vendor=\"xorg\"><refentrytitle>radeon</refentrytitle><manvolnum>4</"
 "manvolnum></citerefentry>."
 msgstr ""
-"Para ATI Rage 128 y Radeon vea <citerefentry vendor=\"xorg"
-"\"><refentrytitle>ati</refentrytitle><manvolnum>4</manvolnum></"
-"citerefentry>, <citerefentry vendor=\"xorg\"><refentrytitle>r128</"
-"refentrytitle><manvolnum>4</manvolnum></citerefentry> y <citerefentry vendor="
-"\"xorg\"><refentrytitle>radeon</refentrytitle><manvolnum>4</manvolnum></"
-"citerefentry>."
+"Para ATI Rage 128 y Radeon vea <citerefentry vendor=\"xorg\""
+"><refentrytitle>ati</refentrytitle><manvolnum>4</manvolnum></citerefentry>, <"
+"citerefentry vendor=\"xorg\""
+"><refentrytitle>r128</refentrytitle><manvolnum>4</manvolnum></citerefentry> "
+"y <citerefentry vendor=\"xorg\"><refentrytitle>radeon</refentrytitle><manvoln"
+"um>4</manvolnum></citerefentry>."
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:4647
@@ -8556,7 +8502,7 @@ msgstr ""
 #. (itstool) path: question/para
 #: book.translate.xml:4996
 msgid "How do I compile an IPv6 only kernel?"
-msgstr ""
+msgstr "¿Cómo compilo un kernel exclusivamente IPv6?"
 
 #. (itstool) path: para/screen
 #: book.translate.xml:5002
@@ -8568,11 +8514,16 @@ msgid ""
 "nooptions INET\n"
 "nodevice gre"
 msgstr ""
+"include GENERIC\n"
+"ident GENERIC-IPV6ONLY\n"
+"makeoptions MKMODULESENV+=\"WITHOUT_INET_SUPPORT=\"\n"
+"nooptions INET\n"
+"nodevice gre"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5000
 msgid "Configure your kernel with these settings: <_:screen-1/>"
-msgstr ""
+msgstr "Configura tu kernel con estos ajustes: <_:screen-1/>"
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:5013
@@ -8603,7 +8554,6 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5031
-#, fuzzy
 msgid ""
 "The process is only able to run inside the walls. Since nothing the process "
 "does in regards to executing code is supposed to be able to breach the "
@@ -8631,16 +8581,6 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5042
-#, fuzzy
-#| msgid ""
-#| "Take the <literal>ntalk</literal> service, for example (see "
-#| "<citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</"
-#| "manvolnum></citerefentry>). This service used to run as user ID "
-#| "<systemitem class=\"username\">root</systemitem>. Now it runs as user ID "
-#| "<systemitem class=\"username\">tty</systemitem>. The <systemitem class="
-#| "\"username\">tty</systemitem> user is a sandbox designed to make it more "
-#| "difficult for someone who has successfully hacked into the system via "
-#| "<literal>ntalk</literal> from being able to hack beyond that user ID."
 msgid ""
 "Take the <literal>ntalk</literal> service, for example (see "
 "<citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></"
@@ -8651,13 +8591,13 @@ msgid ""
 "who has successfully hacked into the system via <literal>ntalk</literal> "
 "from being able to hack beyond that user ID."
 msgstr ""
-"Considere el servicio <literal>ntalk</literal>, por ejemplo (vea "
-"<citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></"
-"citerefentry>). Este servicio solía correr con ID de usuario <systemitem "
-"class=\"username\">root</systemitem>. Ahora corre con ID de usuario "
-"<systemitem class=\"username\">tty</systemitem>. El usuario <systemitem "
-"class=\"username\">tty</systemitem> es un sandbox designado para hacer más "
-"difícil para alguien que ya ha irrumpido en el sistema mediante "
+"Considere el servicio <literal>ntalk</literal>, por ejemplo (vea <citerefentr"
+"y><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
+"). Este servicio solía correr con ID de usuario <systemitem class=\""
+"username\">root</systemitem>. Ahora corre con ID de usuario <systemitem "
+"class=\"username\">tty</systemitem>. El usuario <systemitem class=\""
+"username\">tty</systemitem> es un sandbox designado para hacer más difícil "
+"para alguien que ya ha irrumpido en el sistema mediante "
 "<literal>ntalk</literal> pueda comprometer el sistema más allá de esa ID de "
 "usuario."
 
@@ -8735,13 +8675,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5088
-#, fuzzy
-#| msgid ""
-#| "A <trademark class=\"registered\">UNIX</trademark> process is owned by a "
-#| "particular userid. If the user ID is not the <systemitem class=\"username"
-#| "\">root</systemitem> user, it serves to firewall the process off from "
-#| "processes owned by other users. The user ID is also used to firewall off "
-#| "on-disk data."
 msgid ""
 "A <trademark class=\"registered\">UNIX</trademark> process is owned by a "
 "particular userid. If the user ID is not the <systemitem class=\"username"
@@ -8970,18 +8903,12 @@ msgstr "Comunicaciones en serie"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:5220
-#, fuzzy
-#| msgid ""
-#| "This section answers common questions about serial communications with "
-#| "FreeBSD. PPP is covered in the <link linkend=\"networking\">Networking</"
-#| "link> section."
 msgid ""
 "This section answers common questions about serial communications with "
 "FreeBSD."
 msgstr ""
 "Esta sección responde preguntas comunes acerca de comunicaciones en serie "
-"con FreeBSD. PPP esta cubierto en la sección de <link linkend=\"networking"
-"\">Redes</link>."
+"con FreeBSD."
 
 #. (itstool) path: question/para
 #: book.translate.xml:5226
@@ -9017,7 +8944,7 @@ msgstr ""
 
 #. (itstool) path: answer/screen
 #: book.translate.xml:5249
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>grep -E '^(sio|uart)[0-9]' &lt; /var/run/dmesg.boot</userinput>\n"
 "sio0: &lt;16550A-compatible COM port&gt; port 0x3f8-0x3ff irq 4 flags 0x10 on acpi0\n"
@@ -9025,8 +8952,10 @@ msgid ""
 "sio1: &lt;16550A-compatible COM port&gt; port 0x2f8-0x2ff irq 3 on acpi0\n"
 "sio1: type 16550A"
 msgstr ""
-"<prompt>%</prompt> <userinput>dmesg | grep -E \"^sio[0-9]\"</userinput>\n"
-"sio0: &lt;16550A-compatible COM port&gt; port 0x3f8-0x3ff irq 4 flags 0x10 on acpi0\n"
+"<prompt>%</prompt> <userinput>grep -E '^(sio|uart)[0-9]' &lt; /var/run/"
+"dmesg.boot</userinput>\n"
+"sio0: &lt;16550A-compatible COM port&gt; port 0x3f8-0x3ff irq 4 flags 0x10 "
+"on acpi0\n"
 "sio0: type 16550A\n"
 "sio1: &lt;16550A-compatible COM port&gt; port 0x2f8-0x2ff irq 3 on acpi0\n"
 "sio1: type 16550A"
@@ -9066,10 +8995,8 @@ msgstr ""
 
 #. (itstool) path: question/para
 #: book.translate.xml:5278
-#, fuzzy
-#| msgid "How do I access the serial ports on FreeBSD?"
 msgid "How do I access the serial ports on FreeBSD? (x86-specific)"
-msgstr "¿Como accedo a los puertos en serie en FreeBSD?"
+msgstr "¿Como accedo a los puertos en serie en FreeBSD? (x86-específico)"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5282
@@ -9148,10 +9075,6 @@ msgstr "options COM_MULTIPORT"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5326
-#, fuzzy
-#| msgid ""
-#| "The following <filename>/boot/device.hints</filename> example is for an "
-#| "AST 4-port serial card on IRQ 12:"
 msgid ""
 "The following <filename>/boot/device.hints</filename> example is for an AST "
 "4-port serial card on IRQ 12:"
@@ -9319,7 +9242,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:5422
-#, fuzzy
 msgid ""
 "The simple answer is that free memory is wasted memory. Any memory that "
 "programs do not actively allocate is used within the FreeBSD kernel as disk "
@@ -9333,17 +9255,17 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> is good, provided it "
 "is not <emphasis>very</emphasis> low."
 msgstr ""
-"La respuesta simple es que la memoria libre es memoria gastada. Cualquier "
-"memoria que los programas no alocan activamente es usada en el kernel de  "
-"FreeBSD como cache de disco. Los valores mostrados por "
-"<citerefentry><refentrytitle>top</refentrytitle><manvolnum>1</manvolnum></"
-"citerefentry> marcados como <literal>Inact</literal>, <literal>Cache</"
-"literal>, y <literal>Buf</literal> son datos en cache con diferentes niveles "
-"de envejecimiento. Estos datos en cache significan que el sistema no tiene "
-"que acceder a un disco lento nuevamente para datos que accedió "
-"recientemente, incrementando la performance general. En general, un valor "
-"bajo para <literal>Free</literal> en <citerefentry><refentrytitle>top</"
-"refentrytitle><manvolnum>1</manvolnum></citerefentry> es bueno, asumiendo "
+"La respuesta simple es que la memoria libre es memoria desperdiciada. "
+"Cualquier memoria que los programas no asignen activamente se utiliza dentro "
+"del kernel de FreeBSD como caché de disco. Los valores mostrados por <citeref"
+"entry><refentrytitle>top</refentrytitle><manvolnum>1</manvolnum></citerefentr"
+"y> etiquetados como <literal>Inact</literal> y <literal>Laundry</literal> "
+"son datos almacenados en caché a diferentes niveles de envejecimiento. Estos "
+"datos almacenados en caché significan que el sistema no tiene que volver a "
+"acceder a un disco lento para los datos a los que ha accedido recientemente, "
+"lo que aumenta el rendimiento general. En general, un valor bajo mostrado "
+"para la memoria <literal>libre</literal> en el <citerefentry><refentrytitle>t"
+"op</refentrytitle><manvolnum>1</manvolnum></citerefentry> es bueno, siempre "
 "que no sea <emphasis>muy</emphasis> bajo."
 
 #. (itstool) path: question/para
@@ -10392,23 +10314,22 @@ msgstr ""
 
 #. (itstool) path: question/para
 #: book.translate.xml:6034
-#, fuzzy
 msgid "How can I contribute to FreeBSD? What can I do to help?"
-msgstr "¿Cómo puedo contribuir a FreeBSD?"
+msgstr ""
+"¿Cómo puedo contribuir al proyecto FreeBSD? ¿Qué puedo hacer para ayudar?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6039
-#, fuzzy
 msgid ""
 "We accept all types of contributions: documentation, code, and even art. See "
 "the article on <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/"
 "articles/contributing/article.html\">Contributing to FreeBSD</link> for "
 "specific advice on how to do this."
 msgstr ""
-"Vea el artículo acerca de <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US."
+"Aceptamos todo tipo de contribuciones: documentación, código e incluso arte. "
+"Vea el artículo sobre <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US."
 "ISO8859-1/articles/contributing/article.html\">Contribuir a FreeBSD</link> "
-"para consejos específicos acerca de como hacer esto. ¡La ayuda es más que "
-"bienvenida!"
+"para obtener consejos específicos sobre cómo hacerlo."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6044
@@ -10422,39 +10343,35 @@ msgstr "¿Qué son snapshots y lanzamientos?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6054
-#, fuzzy
 msgid ""
 "There are currently 3 active/semi-active branches in the FreeBSD <link xlink:"
 "href=\"http://svnweb.FreeBSD.org/base/\">Subversion Repository</link>. "
 "(Earlier branches are only changed very rarely, which is why there are only "
 "3 active branches of development):"
 msgstr ""
-"Hay actualmente 3 ramas activas/semi activas en el <link xlink:href=\"http://"
-"svnweb.FreeBSD.org/base/\">repositorio Subversion</link> de FreeBSD. (Las "
-"ramas anteriores cambian muy raramente, que es por lo cual solo hay 3 ramas "
-"de desarrollo activas):"
+"Hay actualmente 3 ramas activas/semi activas en el <link xlink:href=\""
+"http://svnweb.FreeBSD.org/base/\">repositorio Subversion</link> de FreeBSD. ("
+"Las ramas anteriores cambian muy raramente, que es por lo cual solo hay 3 "
+"ramas de desarrollo activas):"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6062
-#, fuzzy
 msgid "<symbol>stable/11/</symbol> AKA <emphasis>11-STABLE</emphasis>"
-msgstr "<symbol>stable/10/</symbol> alias <emphasis>10-STABLE</emphasis>"
+msgstr "<symbol>stable/11/</symbol> AKA <emphasis>11-STABLE</emphasis>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6067
-#, fuzzy
 msgid "<symbol>stable/12/</symbol> AKA <emphasis>12-STABLE</emphasis>"
-msgstr "<symbol>stable/10/</symbol> alias <emphasis>10-STABLE</emphasis>"
+msgstr "<symbol>stable/12/</symbol> AKA <emphasis>12-STABLE</emphasis>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6072
-#, fuzzy
 msgid ""
 "<symbol>head/</symbol> AKA <emphasis>-CURRENT</emphasis> AKA <emphasis>13-"
 "CURRENT</emphasis>"
 msgstr ""
-"<symbol>head/</symbol> alias <emphasis>-CURRENT</emphasis> alias "
-"<emphasis>11-CURRENT</emphasis>"
+"<symbol>head/</symbol> AKA <emphasis>-CURRENT</emphasis> AKA "
+"<emphasis>13-CURRENT</emphasis>"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6078
@@ -10469,7 +10386,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6084
-#, fuzzy
 msgid ""
 "Right now, <emphasis>-CURRENT</emphasis> is the 13.<replaceable>X</"
 "replaceable> development stream; the <emphasis>12-STABLE</emphasis> branch, "
@@ -10478,11 +10394,12 @@ msgid ""
 "<symbol>stable/11/</symbol>, forked off from <emphasis>-CURRENT</emphasis> "
 "in October 2016."
 msgstr ""
-"En este momento, <emphasis>-CURRENT</emphasis> es el torrente de desarrollo "
-"11.<replaceable>X</replaceable>; la rama <emphasis>10-STABLE</emphasis>, "
-"<symbol>stable/10/</symbol>, se ramifico de <emphasis>-CURRENT</emphasis> en "
-"Enero del 2014 y la rama <emphasis>9-STABLE</emphasis>, <symbol>stable/9/</"
-"symbol>, se ramifico de <emphasis>-CURRENT</emphasis> en Septiembre del 2011."
+"En este momento, <emphasis>-CURRENT</emphasis> es la corriente de desarrollo "
+"13.<replaceable>X</replaceable>; la rama <emphasis>12-STABLE</emphasis>, "
+"<symbol>stable/12/</symbol>, bifurcada desde <emphasis>-CURRENT</emphasis> "
+"en diciembre de 2018 y la rama <emphasis>11-STABLE</emphasis>, <symbol>"
+"stable/11/</symbol>, bifurcada desde <emphasis>-CURRENT</emphasis> en "
+"octubre de 2016."
 
 #. (itstool) path: question/para
 #: book.translate.xml:6095
@@ -10750,18 +10667,6 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: book.translate.xml:6230
-#, fuzzy
-#| msgid ""
-#| "FreeBSD crash dumps are usually the same size as physical RAM. Therefore, "
-#| "make sure there is enough space in <filename>/var/crash</filename> to "
-#| "hold the dump. Alternatively, run <citerefentry><refentrytitle>savecore</"
-#| "refentrytitle><manvolnum>8</manvolnum></citerefentry> manually and have "
-#| "it recover the crash dump to another directory with more room. It is "
-#| "possible to limit the size of the crash dump by using <literal>options "
-#| "MAXMEM=N</literal> where <replaceable>N</replaceable> is the size of "
-#| "kernel's memory usage in KBs. For example, for 1 GB of RAM, limit the "
-#| "kernel's memory usage to 128 MB, so that the crash dump size will be "
-#| "128 MB instead of 1 GB."
 msgid ""
 "FreeBSD crash dumps are usually the same size as physical RAM. Therefore, "
 "make sure there is enough space in <filename>/var/crash</filename> to hold "
@@ -10776,10 +10681,10 @@ msgstr ""
 "Los volcados de fallos de FreeBSD suelen ser del mismo tamaño que la RAM "
 "física. Por consiguiente, asegúrese de que haya suficiente espacio en "
 "<filename>/var/crash</filename> para contener el volcado. Alternativamente, "
-"corra <citerefentry><refentrytitle>savecore</refentrytitle><manvolnum>8</"
-"manvolnum></citerefentry> manualmente y haga que recupere el volcado de "
-"fallos desde otro directorio con más espacio. Es posible limitar el tamaño "
-"del volcado de fallos usando <literal>options MAXMEM=N</literal> donde "
+"corra <citerefentry><refentrytitle>savecore</refentrytitle><manvolnum>8</manv"
+"olnum></citerefentry> manualmente y haga que recupere el volcado de fallos "
+"desde otro directorio con más espacio. Es posible limitar el tamaño del "
+"volcado de fallos usando <literal>options MAXMEM=N</literal> donde "
 "<replaceable>N</replaceable>es el tamaño del uso de memoria de kernel KBs. "
 "Por ejemplo, para 1 GB de RAM, limite el uso de memoria del kernel a 128 MB "
 "de modo que el tamaño del volcado de fallos sea de 128 MB en lugar de 1 GB."
@@ -10898,19 +10803,14 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6311
-#, fuzzy
-#| msgid ""
-#| "By default, the kernel address space is 1 GB (2 GB for PAE) for i386. "
-#| "When running a network-intensive server or using ZFS, this will probably "
-#| "not be enough."
 msgid ""
 "By default, the kernel address space is 1 GB (2 GB for PAE) for i386. When "
 "running a network-intensive server or using ZFS, this will probably not be "
 "enough."
 msgstr ""
-"Por defecto, el espacio de direcciones del kernel es de 1 GB (2 GB ppara "
-"PAE) para i386. Al correr un servidor que es intensivo sobre la red o usar "
-"ZFS, esto probablemente no sea suficiente."
+"Por defecto, el espacio de direcciones del kernel es de 1 GB (2 GB ppara PAE)"
+" para i386. Al correr un servidor que es intensivo sobre la red o usar ZFS, "
+"esto probablemente no sea suficiente."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6317
@@ -10929,11 +10829,6 @@ msgstr "options KVA_PAGES=<replaceable>N</replaceable>"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6323
-#, fuzzy
-#| msgid ""
-#| "To find the correct value of <replaceable>N</replaceable>, divide the "
-#| "desired address space size (in megabytes) by four. (For example, it is "
-#| "<literal>512</literal> for 2 GB.)"
 msgid ""
 "To find the correct value of <replaceable>N</replaceable>, divide the "
 "desired address space size (in megabytes) by four. (For example, it is "
