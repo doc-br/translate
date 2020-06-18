@@ -4,10 +4,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:07-0300\n"
-"PO-Revision-Date: 2020-05-22 14:29+0000\n"
+"PO-Revision-Date: 2020-06-18 04:17+0000\n"
 "Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
-"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/freebsd-"
-"doc/articles_freebsd-releng/es/>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/articles_freebsd-releng/es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1583,10 +1583,8 @@ msgstr "<filename>Makefile.libcompat</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:959
-#, fuzzy
-#| msgid "Update <literal>LILB32CPUFLAGS</literal>"
 msgid "Update <literal>LIB32CPUFLAGS</literal>"
-msgstr "Actualice <literal>LILB32CPUFLAGS</literal>"
+msgstr "Actualice <literal>LIB32CPUFLAGS</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:963
@@ -1835,6 +1833,10 @@ msgid ""
 "update <filename>head/en_US.ISO8859-1/books/porters-handbook/versions/"
 "chapter.xml</filename> in the Documentation Project repository."
 msgstr ""
+"Ahora que existen dos nuevos valores de la <varname>versión "
+"__FreeBSD_</varname>, también actualizamos <filename>head/es_US.ISO8859-1/"
+"books/porters-handbook/versions/chapter.xml</filename> en el repositorio del "
+"Proyecto de Documentación."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1099
@@ -1844,6 +1846,11 @@ msgid ""
 "(or commenting) the ^/<literal>stable/<replaceable>12</replaceable>/</"
 "literal> entry in <filename>svnadmin/conf/approvers</filename>."
 msgstr ""
+"Después de que la primera construcción de <literal>RC</literal> haya sido "
+"completada y probada, la rama <literal>stable/</literal> puede ser "
+"<quote>desactivado</quote> eliminando (o comentando) la entrada ^/<literal>"
+"stable/<replaceable>12</replaceable>/</literal> en <filename>svnadmin/conf/"
+"approvers</filename>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1105
@@ -1853,11 +1860,16 @@ msgid ""
 "literal> to the <literal>versions</literal> available in the drop-down menu "
 "shown in the bug tracker."
 msgstr ""
+"Después de la disponibilidad del primer <literal>RC</literal>, el Equipo de "
+"Bugmeister de FreeBSD debería ser enviado por correo electrónico para añadir "
+"el nuevo FreeBSD <literal>-RELEASE</literal> a las "
+"<literal>versiones</literal> disponibles en el menú desplegable que se "
+"muestra en el rastreador de errores."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:1120
 msgid "Building FreeBSD Installation Media"
-msgstr ""
+msgstr "Construir los medios de instalación de FreeBSD"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1122
@@ -1865,11 +1877,13 @@ msgid ""
 "This section describes the general procedures producing FreeBSD development "
 "snapshots and releases."
 msgstr ""
+"Esta sección describe los procedimientos generales que producen instantáneas "
+"y versiones del desarrollo de FreeBSD."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1126
 msgid "Release Build Scripts"
-msgstr ""
+msgstr "Liberar los Scripts de construcción"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1128
@@ -1877,11 +1891,14 @@ msgid ""
 "This section describes the build scripts used by FreeBSD Release Engineering "
 "Team to produce development snapshots and releases."
 msgstr ""
+"Esta sección describe los \"scripts\" de compilación utilizados por el "
+"Equipo de Ingeniería de Liberaciones de FreeBSD para producir instantáneas "
+"de desarrollo y liberaciones."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1132
 msgid "The <filename>release.sh</filename> Script"
-msgstr ""
+msgstr "El Script de <filename>release.sh</filename>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1134
