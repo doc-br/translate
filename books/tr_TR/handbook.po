@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-18 17:52+0000\n"
+"PO-Revision-Date: 2020-06-19 05:48+0000\n"
 "Last-Translator: esradesteki <esradesteki20@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
@@ -11659,6 +11659,7 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9244
+#, fuzzy
 msgid ""
 "A FreeBSD package contains pre-compiled copies of all the commands for an "
 "application, as well as any configuration files and documentation. A package "
@@ -11666,46 +11667,67 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> commands, such as "
 "<command>pkg install</command>."
 msgstr ""
+"FreeBSD paketi, bir uygulama için gerekli tüm komutların önceden derlenmiş "
+"kopyalarını, hatta kurulum dosyalarını ve belgelerini içerir. Bir paket, "
+"<command>pkg install</command> gibi, <citerefentry><refentrytitle>pkg</refent"
+"rytitle><manvolnum>8</manvolnum></citerefentry> komutlarıyla "
+"değiştirilebilir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9250
+#, fuzzy
 msgid ""
 "While the two technologies are similar, packages and ports each have their "
 "own strengths. Select the technology that meets your requirements for "
 "installing a particular application."
 msgstr ""
+"İki teknoloji de birbirine benzer olsa da, paket ve portların kendine özgü "
+"güçlü yanları vardır. Belirli bir uygulamayı kurmak için gereken nitelikleri "
+"karşılayan teknolojiyi seçin."
 
 #. (itstool) path: itemizedlist/title
 #: book.translate.xml:9256
+#, fuzzy
 msgid "Package Benefits"
-msgstr ""
+msgstr "Paket Avantajları"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9259
+#, fuzzy
 msgid ""
 "A compressed package tarball is typically smaller than the compressed "
 "tarball containing the source code for the application."
 msgstr ""
+"Sıkıştırılmış paket tarball'u genellikle, uygulama için gerekli kaynak "
+"kodunu içeren sıkıştırılmış tarball'dan daha küçüktür."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9265
+#, fuzzy
 msgid ""
 "Packages do not require compilation time. For large applications, such as "
 "<application>Mozilla</application>, <application>KDE</application>, or "
 "<application>GNOME</application>, this can be important on a slow system."
 msgstr ""
+"Paketler derleme süresi gerektirmez. <application>Mozilla</application>, "
+"<application>KDE</application> ya da <application>GNOME</application> gibi "
+"daha büyük uygulamalar için, yavaş bir sistemde bu önemli olabilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9273
+#, fuzzy
 msgid ""
 "Packages do not require any understanding of the process involved in "
 "compiling software on FreeBSD."
 msgstr ""
+"Paketler, FreeBSD'de yazılım derlemeyi kapsayan sürecin anlaşılmasını "
+"gerektirmez."
 
 #. (itstool) path: itemizedlist/title
 #: book.translate.xml:9279
+#, fuzzy
 msgid "Port Benefits"
-msgstr ""
+msgstr "Port Avantajları"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9282
