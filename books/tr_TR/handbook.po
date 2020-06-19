@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-19 05:48+0000\n"
-"Last-Translator: esradesteki <esradesteki20@gmail.com>\n"
+"PO-Revision-Date: 2020-06-20 06:08+0000\n"
+"Last-Translator: Alparslangurbuz <alparslangurbuz@hotmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -17621,59 +17621,78 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:12610
+#, fuzzy
 msgid "Setting up the FreeBSD nVidia Driver"
-msgstr ""
+msgstr "FreeBSD nVidia Sürücüsünün Ayarlanması"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12612
+#, fuzzy
 msgid ""
 "Desktop effects can cause quite a load on the graphics card. For an nVidia-"
 "based graphics card, the proprietary driver is required for good "
 "performance. Users of other graphics cards can skip this section and "
 "continue with the <filename>xorg.conf</filename> configuration."
 msgstr ""
+"Masaüstü efektleri grafik kartında oldukça fazla yüke neden olabilir. NVidia "
+"tabanlı bir grafik kartı için, iyi performans için tescilli sürücü "
+"gereklidir. Diğer grafik kartlarının kullanıcıları bu bölümü atlayabilir ve "
+"<filename>xorg.conf</filename> yapılandırmasına devam edebilir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12618
+#, fuzzy
 msgid ""
 "To determine which nVidia driver is needed see the <link xlink:href="
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/faq/x.html#idp59950544\">FAQ "
 "question on the subject</link>."
 msgstr ""
+"Hangi nVidia sürücüsünün gerekli olduğunu görmek için bakınız: <link "
+"xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/faq/x.html#"
+"idp59950544\">FAQ question on the subject</link>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12621
+#, fuzzy
 msgid ""
 "Having determined the correct driver to use for your card, installation is "
 "as simple as installing any other package."
 msgstr ""
+"Kartınız için kullanılacak doğru sürücüyü belirledikten sonra, kurulum başka "
+"herhangi bir paket yüklemek kadar basittir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12625
+#, fuzzy
 msgid "For example, to install the latest driver:"
-msgstr ""
+msgstr "Örneğin, en son sürücüyü yüklemek için:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:12627
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install x11/nvidia-driver</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg install x11/nvidia-driver</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12629
+#, fuzzy
 msgid ""
 "The driver will create a kernel module, which needs to be loaded at system "
 "startup. Add the following line to <filename>/boot/loader.conf</filename>:"
 msgstr ""
+"Sürücü, sistem başlangıcında yüklenmesi gereken bir çekirdek modülü "
+"oluşturur. Aşağıdaki satırı <filename>/boot/loader.conf</filename> dosyasına "
+"ekleyin:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12633
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "nvidia_load=\"YES\""
-msgstr ""
+msgstr "nvidia_load=\"YES\""
 
 #. (itstool) path: note/para
 #: book.translate.xml:12636
+#, fuzzy
 msgid ""
 "To immediately load the kernel module into the running kernel issue a "
 "command like <command>kldload nvidia</command>. However, it has been noted "
@@ -17681,79 +17700,102 @@ msgid ""
 "properly if the driver is not loaded at boot time. After editing <filename>/"
 "boot/loader.conf</filename>, a reboot is recommended."
 msgstr ""
+"Çekirdek modülünü çalışan çekirdeğe hemen yüklemek için, <command>kldload "
+"nvidia</command> gibi bir komut verin. Bununla birlikte, sürücü önyükleme "
+"zamanında yüklenmezse, bazı <application>Xorg</application> sürümlerinin "
+"düzgün çalışmadığı belirtilmiştir. <filename>/Boot/loader.conf</filename> "
+"dosyasını düzenledikten sonra, yeniden başlatma önerilir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12645
+#, fuzzy
 msgid ""
 "With the kernel module loaded, you normally only need to change a single "
 "line in <filename>xorg.conf</filename> to enable the proprietary driver:"
 msgstr ""
+"Çekirdek modülü yüklüyken, tescilli sürücüyü etkinleştirmek için normalde "
+"<filename>xorg.conf</filename> dosyasındaki tek bir satırı değiştirmeniz "
+"gerekir:"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12649
+#, fuzzy
 msgid "Find the following line in <filename>/etc/X11/xorg.conf</filename>:"
-msgstr ""
+msgstr "<filename>/Etc/X11/xorg.conf</filename> içinde aşağıdaki satırı bulun:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12652
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Driver      \"nv\""
-msgstr ""
+msgstr "Driver      \"nv\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12654
+#, fuzzy
 msgid "and change it to:"
-msgstr ""
+msgstr "ve şu şekilde değiştirin:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12656
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Driver      \"nvidia\""
-msgstr ""
+msgstr "Driver      \"nvidia\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12658
+#, fuzzy
 msgid ""
 "Start the GUI as usual, and you should be greeted by the nVidia splash. "
 "Everything should work as usual."
 msgstr ""
+"GUI'yi her zamanki gibi başlatın ve nVidia ile karşılaşmalısınız. Her şey "
+"normal bir şekilde çalışmalıdır."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:12663
+#, fuzzy
 msgid "Configuring xorg.conf for Desktop Effects"
-msgstr ""
+msgstr "Masaüstü Efektleri için xorg.conf'u Yapılandırma"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12665
+#, fuzzy
 msgid ""
 "To enable <application>Compiz Fusion</application>, <filename>/etc/X11/xorg."
 "conf</filename> needs to be modified:"
 msgstr ""
+"<application>Compiz Fusion</application>'ı etkinleştirmek için <filename>/"
+"etc/X11/xorg.conf</filename> dosyasının değiştirilmesi gerekir:"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12669
+#, fuzzy
 msgid "Add the following section to enable composite effects:"
-msgstr ""
+msgstr "Kompozit efektleri etkinleştirmek için aşağıdaki bölümü ekleyin:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12672
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Section \"Extensions\"\n"
 "    Option         \"Composite\" \"Enable\"\n"
 "EndSection"
 msgstr ""
+"Section \"Extensions\"\n"
+"    Option         \"Composite\" \"Enable\"\n"
+"EndSection"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12676
+#, fuzzy
 msgid ""
 "Locate the <quote>Screen</quote> section which should look similar to the "
 "one below:"
-msgstr ""
+msgstr "Aşağıdakine benzer olması gereken <quote>Screen</quote> bölümünü bulun:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12679
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Section \"Screen\"\n"
 "    Identifier     \"Screen0\"\n"
@@ -17761,49 +17803,70 @@ msgid ""
 "    Monitor        \"Monitor0\"\n"
 "    ..."
 msgstr ""
+"Section \"Screen\"\n"
+"    Identifier     \"Screen0\"\n"
+"    Device         \"Card0\"\n"
+"    Monitor        \"Monitor0\"\n"
+"    ..."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12685
+#, fuzzy
 msgid "and add the following two lines (after <quote>Monitor</quote> will do):"
 msgstr ""
+"ve aşağıdaki iki satırı ekleyin (<quote>Monitör</quote> yapıldıktan sonra):"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12688
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "DefaultDepth    24\n"
 "Option         \"AddARGBGLXVisuals\" \"True\""
 msgstr ""
+"DefaultDepth    24\n"
+"Option         \"AddARGBGLXVisuals\" \"True\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12691
+#, fuzzy
 msgid ""
 "Locate the <quote>Subsection</quote> that refers to the screen resolution "
 "that you wish to use. For example, if you wish to use 1280x1024, locate the "
 "section that follows. If the desired resolution does not appear in any "
 "subsection, you may add the relevant entry by hand:"
 msgstr ""
+"Kullanmak istediğiniz ekran çözünürlüğünü gösteren <quote>Alt Bölüm</quote>' "
+"ü bulun. Örneğin, 1280x1024 kullanmak istiyorsanız, aşağıdaki bölümü bulun. "
+"İstenen çözünürlük herhangi bir alt bölümde görünmüyorsa, ilgili girişi el "
+"ile ekleyebilirsiniz:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12697
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "SubSection     \"Display\"\n"
 "    Viewport    0 0\n"
 "    Modes      \"1280x1024\"\n"
 "EndSubSection"
 msgstr ""
+"SubSection     \"Display\"\n"
+"    Viewport    0 0\n"
+"    Modes      \"1280x1024\"\n"
+"EndSubSection"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12702
+#, fuzzy
 msgid ""
 "A color depth of 24 bits is needed for desktop composition, change the above "
 "subsection to:"
 msgstr ""
+"Masaüstü kompozisyonu için 24 bit renk derinliği gereklidir, yukarıdaki alt "
+"bölümü şu şekilde değiştirin:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12705
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "SubSection     \"Display\"\n"
 "    Viewport    0 0\n"
@@ -17811,44 +17874,64 @@ msgid ""
 "    Modes      \"1280x1024\"\n"
 "EndSubSection"
 msgstr ""
+"SubSection     \"Display\"\n"
+"    Viewport    0 0\n"
+"    Depth       24\n"
+"    Modes      \"1280x1024\"\n"
+"EndSubSection"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12711
+#, fuzzy
 msgid ""
 "Finally, confirm that the <quote>glx</quote> and <quote>extmod</quote> "
 "modules are loaded in the <quote>Module</quote> section:"
 msgstr ""
+"Son olarak, <quote>glx</quote> ve <quote>extmod</quote> modüllerinin "
+"<quote>Modül</quote> bölümüne yüklendiğini doğrulayın:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12715
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Section \"Module\"\n"
 "    Load           \"extmod\"\n"
 "    Load           \"glx\"\n"
 "    ..."
 msgstr ""
+"Section \"Module\"\n"
+"    Load           \"extmod\"\n"
+"    Load           \"glx\"\n"
+"    ..."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12720
+#, fuzzy
 msgid ""
 "The preceding can be done automatically with <package>x11/nvidia-xconfig</"
 "package> by running (as root):"
 msgstr ""
+"Yukarıdaki, <package>x11 / nvidia-xconfig</package>'i çalıştırılarak "
+"otomatik olarak yapılabilir(root olarak):"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:12724
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>nvidia-xconfig --add-argb-glx-visuals</userinput>\n"
 "<prompt>#</prompt> <userinput>nvidia-xconfig --composite</userinput>\n"
 "<prompt>#</prompt> <userinput>nvidia-xconfig --depth=24</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>nvidia-xconfig --add-argb-glx-"
+"visuals</userinput>\n"
+"<prompt>#</prompt> <userinput>nvidia-xconfig --composite</userinput>\n"
+"<prompt>#</prompt> <userinput>nvidia-xconfig --depth=24</userinput>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:12730
+#, fuzzy
 msgid "Installing and Configuring Compiz Fusion"
-msgstr ""
+msgstr "Compiz Fusion'ı Yükleme ve Yapılandırma"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12732
