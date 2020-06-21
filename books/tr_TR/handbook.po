@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-06-21 02:54+0000\n"
-"Last-Translator: firdevssevik <sevikfirdevs@gmail.com>\n"
+"Last-Translator: onuraydin3 <crymzonx@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -73913,20 +73913,28 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:51223
+#, fuzzy
 msgid ""
 "There are five major parts involved in an email exchange: the Mail User "
 "Agent (<acronym>MUA</acronym>), the Mail Transfer Agent (<acronym>MTA</"
 "acronym>), a mail host, a remote or local mailbox, and <acronym>DNS</"
 "acronym>. This section provides an overview of these components."
 msgstr ""
+"Eposta gönderimi ve alımında beş ana parça yer almaktadır. Bunlar: Posta "
+"Kullanıcı Birimi (<acronym>MUA</acronym>), Posta Aktarım Birimi "
+"(<acronym>MTA</acronym>) bir posta sunucusu, harici veya yerel bir posta "
+"kutusu ve <acronym>DNS</acronym>'tir. Bu kısım bahsedilen parçaların kısa "
+"tanımlarını içermektedir."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:51231
+#, fuzzy
 msgid "Mail User Agent (<acronym>MUA</acronym>)"
-msgstr ""
+msgstr "Posta Kullanıcı Birimi (<acronym>MUA</acronym>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51233
+#, fuzzy
 msgid ""
 "The Mail User Agent (<acronym>MUA</acronym>) is an application which is used "
 "to compose, send, and receive emails. This application can be a command line "
@@ -73941,14 +73949,27 @@ msgid ""
 "a <acronym>MUA</acronym> on FreeBSD can be found in <xref linkend=\"mail-"
 "agents\"/>."
 msgstr ""
+"Posta Kullanıcı Birimi (<acronym>MUA</acronym>) eposta derlemek, göndermek "
+"ve almak için kullanılan bir uygulamadır. Bu  \n"
+"uygulama var olan<command>mail</command> fonksiyonu gibi bir komut satırı "
+"programı ya da Ports Collection'dan <application>mutt</application>, "
+"<application>alpine</application> veya <application>elm</application> gibi "
+"bir üçüncü parti uygulaması olabilir. Ports Collection'da <application>Claws "
+"Mail</application>,  <application>Evolution</application> ve "
+"<application>Thunderbird</application> gibi düzinelerce görsel program "
+"mevcuttur. Bazı organizasyonlar tarayıcıdan erişilebilen bir posta programı "
+"sunar. Bir  <acronym>MUA </acronym> yüklemek ve kullanmak hakkında daha "
+"fazla bilgiyi <xref linkend=\"posta-birimleri\"/> bölümünde bulabilirsiniz."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:51253
+#, fuzzy
 msgid "Mail Transfer Agent (<acronym>MTA</acronym>)"
-msgstr ""
+msgstr "Posta Aktarım Birimi (<acronym>MTA</acronym>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51255
+#, fuzzy
 msgid ""
 "The Mail Transfer Agent (<acronym>MTA</acronym>) is responsible for "
 "receiving incoming mail and delivering outgoing mail. FreeBSD ships with "
@@ -73961,6 +73982,17 @@ msgid ""
 "post-installation message for FreeBSD-specific configuration details and the "
 "application's website for more general configuration instructions."
 msgstr ""
+"Posta Aktarım Birimi (<acronym>MTA</acronym>) gelen postaların ulaşmasından "
+"ve yollanacak postaların iletilmesinden sorumludur. FreeBSD varsayılan Posta "
+"Aktarım Birimi (<acronym>MTA</acronym>) olarak "
+"<application>Sendmail</application> ile gelir. Ancak "
+"<application>Exim</application>, <application>Postfix</application> ve "
+"<application>qmail</application> gibi farklı posta sunucu araçlarını da "
+"desteklemektedir. <application>Sendmail</application> yapılandırması <xref "
+"linkend=\"sendmail\"/> bölümünde açıklanmaktadır. Eğer Ports Collection "
+"kullanılarak başka bir <acronym>MTA</acronym> yüklendiyse FreeBSD'ye özgü "
+"yapılandırma ayarları için yükleme sonrası iletisine, daha genel "
+"yapılandırma talimatları için ise uygulamanın web sitesine göz atınız."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:51275
