@@ -10,12 +10,13 @@
 # fazlidag <fazli_dag9696@outlook.com>, 2020.
 # Mehmet Fatih Senel <mehmetfatihsenel@yahoo.com>, 2020.
 # nurbanu  hasanoğlu <hasanoglunurbanu@gmail.com>, 2020.
+# firdevssevik <sevikfirdevs@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-20 23:45+0000\n"
-"Last-Translator: Doğan AHMETCİ <dogan.ahmetci@gmail.com>\n"
+"PO-Revision-Date: 2020-06-21 02:54+0000\n"
+"Last-Translator: firdevssevik <sevikfirdevs@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -40504,23 +40505,29 @@ msgstr ""
 
 #. (itstool) path: info/title
 #: book.translate.xml:27964
+#, fuzzy
 msgid "Jails"
-msgstr ""
+msgstr "Hapisler"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:27967
+#, fuzzy
 msgid ""
 "<personname><firstname>Matteo</firstname><surname>Riondato</surname></"
 "personname><contrib>Contributed by </contrib>"
 msgstr ""
+"<personname><firstname>Riondato'nun</firstname><surname>Katkılarıyla</surname"
+"></personname><contrib>Matteo </contrib>"
 
 #. (itstool) path: chapter/indexterm
 #: book.translate.xml:27972
+#, fuzzy
 msgid "<primary>jails</primary>"
-msgstr ""
+msgstr "<primary>hapisler</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27977
+#, fuzzy
 msgid ""
 "Since system administration is a difficult task, many tools have been "
 "developed to make life easier for the administrator. These tools often "
@@ -40530,9 +40537,17 @@ msgid ""
 "and continue to be enhanced in their usefulness, performance, reliability, "
 "and security."
 msgstr ""
+"Sistem yönetimi zor bir görev olduğundan, hayatı, yöneticiye kolaylaştırmak "
+"için birçok araç geliştirilmiştir. Bu araçlar genellikle sistemlerin "
+"kurulum, yapılandırma ve bakım yöntemlerini geliştirir. Bir FreeBSD "
+"sisteminin güvenliğini artırmak için kullanılabilecek araçlardan biri "
+"<firstterm>hapislerdir</firstterm>. Hapisler FreeBSD 4.X'ten beri mevcuttur "
+"ve bunların kullanışlılığı, performansı, güvenilirliği ve güvenliği "
+"geliştirilmeye devam edilmektedir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27986
+#, fuzzy
 msgid ""
 "Jails build upon the <citerefentry><refentrytitle>chroot</"
 "refentrytitle><manvolnum>2</manvolnum></citerefentry> concept, which is used "
@@ -40546,9 +40561,21 @@ msgid ""
 "been found to escape from a chrooted environment, making it a less than "
 "ideal solution for securing services."
 msgstr ""
+"Hapisler, bir dizi işlemin kök dizinini değiştirmek için kullanılan "
+"<citerefentry><refentrytitle>chroot</refentrytitle><manvolnum> 2 "
+"</manvolnum></citerefentry> kavramı üzerine kurulur. Bu, sistemin geri "
+"kalanından ayrı olarak güvenli bir ortam yaratır. Chroot edilmiş ortamda "
+"oluşturulan işlemler, bunun dışındaki dosyalara veya kaynaklara erişemez. Bu "
+"nedenle, chroot edilmiş bir ortamda çalışan bir hizmetten ödün vermek "
+"saldırganın tüm sistemin güvenliğini aşmasına izin vermemelidir. Bununla "
+"birlikte, bir chroot'un bazı sınırlamaları vardır. Çok esneklik veya "
+"karmaşık, gelişmiş özellikler gerektirmeyen kolay görevler için uygundur. "
+"Zamanla, chroot edilmiş bir ortamdan kaçmanın birçok yolu bulunmuştur, bu da "
+"hizmetleri güvence altına almak için ideal bir çözüm değildir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27999
+#, fuzzy
 msgid ""
 "Jails improve on the concept of the traditional chroot environment in "
 "several ways. In a traditional chroot environment, processes are only "
@@ -40560,42 +40587,64 @@ msgid ""
 "are available for tuning the access of a jailed environment. Jails can be "
 "considered as a type of operating system-level virtualization."
 msgstr ""
+"Hapisler geleneksel chroot ortamı kavramını çeşitli şekillerde geliştirir. "
+"Geleneksel bir chroot ortamında işlemler yalnızca dosya sisteminin "
+"erişebildikleri kısmında sınırlıdır. Sistem kaynaklarının, sistem "
+"kullanıcılarının, çalışan işlemlerin ve ağ alt sisteminin geri kalanı, köklü "
+"işlemler ve ana sistem süreçleri tarafından paylaşılır. Hapisler, dosya "
+"sistemine, kullanıcı kümesine ve ağ alt sistemine erişimi sanallaştırarak bu "
+"modeli genişletir. Hapisteki bir ortama erişimin ayarlanması için daha "
+"hassas kontroller mevcuttur. Hapishaneler işletim sistemi düzeyinde bir "
+"sanallaştırma türü olarak düşünülebilir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:28011
+#, fuzzy
 msgid "A jail is characterized by four elements:"
-msgstr ""
+msgstr "Bir hapis dört unsurla karakterize edilir:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28015
+#, fuzzy
 msgid ""
 "A directory subtree: the starting point from which a jail is entered. Once "
 "inside the jail, a process is not permitted to escape outside of this "
 "subtree."
 msgstr ""
+"Bir dizin alt ağacı: hapsin girildiği başlangıç noktası. Hapse girdikten "
+"sonra bir işlemin bu alt ağacın dışına kaçmasına izin verilmez."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28021
+#, fuzzy
 msgid "A hostname: which will be used by the jail."
-msgstr ""
+msgstr "Bir ana makine adı: Bir hapis tarafından kullanılacaktır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28025
+#, fuzzy
 msgid ""
 "An <acronym>IP</acronym> address: which is assigned to the jail. The "
 "<acronym>IP</acronym> address of a jail is often an alias address for an "
 "existing network interface."
 msgstr ""
+"Bir <acronym>IP</acronym> adresi: Hapse atanır. Bir hapsin "
+"<acronym>IP</acronym> adresi genellikle mevcut bir ağ arayüzü için "
+"ilişkilendirilmiş bir diğer adrestir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28032
+#, fuzzy
 msgid ""
 "A command: the path name of an executable to run inside the jail. The path "
 "is relative to the root directory of the jail environment."
 msgstr ""
+"Bir komut: hapiste çalıştırılacak yürütülebilir bir dosyanın yol adı. Yol, "
+"hapis ortamının kök dizinine göredir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:28038
+#, fuzzy
 msgid ""
 "Jails have their own set of users and their own <systemitem class=\"username"
 "\">root</systemitem> account which are limited to the jail environment. The "
@@ -40603,33 +40652,45 @@ msgid ""
 "allowed to perform operations to the system outside of the associated jail "
 "environment."
 msgstr ""
+"Hapislerin kendi kullanıcı grupları ve hapis ortamıyla sınırlı kendi <"
+"systemitem class=\"username\">kök</systemitem> hesapları vardır. Bir hapsin <"
+"systemitem class=\"username\">kök</systemitem> hesabının, ilişkili hapis "
+"ortamı dışında sistem üzerinde işlem gerçekleştirmesine izin verilmez."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:28043
+#, fuzzy
 msgid ""
 "This chapter provides an overview of the terminology and commands for "
 "managing FreeBSD jails. Jails are a powerful tool for both system "
 "administrators, and advanced users."
 msgstr ""
+"Bu bölüm, FreeBSD hapislerinin yönetimi için terminolojiye ve komutlara "
+"genel bir bakış sunmaktadır. Hapisler hem sistem yöneticileri hem de ileri "
+"düzey kullanıcılar için güçlü bir araçtır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28051
+#, fuzzy
 msgid "What a jail is and what purpose it may serve in FreeBSD installations."
-msgstr ""
+msgstr "Bir hapis nedir ve FreeBSD kurulumlarında hangi amaca hizmet edebilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28056
+#, fuzzy
 msgid "How to build, start, and stop a jail."
-msgstr ""
+msgstr "Hapis nasıl kurulur, başlatılır ve durdurulur."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28060
+#, fuzzy
 msgid ""
 "The basics of jail administration, both from inside and outside the jail."
-msgstr ""
+msgstr "Hem hapis içinden hem de dışından hapis yönetiminin temelleri."
 
 #. (itstool) path: important/para
 #: book.translate.xml:28066
+#, fuzzy
 msgid ""
 "Jails are a powerful tool, but they are not a security panacea. While it is "
 "not possible for a jailed process to break out on its own, there are several "
@@ -40637,6 +40698,11 @@ msgid ""
 "privileged user inside the jail to obtain elevated privileges in the host "
 "environment."
 msgstr ""
+"Hapisler güçlü bir araçtır ancak her türlü riskten koruyacak bir güvenlik "
+"sağlamazlar. Hapsedilmiş bir işlemin kendi başına patlaması mümkün olmasa "
+"da, hapis dışındaki ayrıcalıksız bir kullanıcının, ana bilgisayar ortamında "
+"yükseltilmiş ayrıcalıklar elde etmek için hapishane içindeki ayrıcalıklı bir "
+"kullanıcıyla işbirliği yapmasının birkaç yolu vardır."
 
 #. (itstool) path: important/para
 #: book.translate.xml:28073
