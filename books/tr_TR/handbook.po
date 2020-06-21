@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-06-21 10:52+0000\n"
-"Last-Translator: onuraydin3 <crymzonx@gmail.com>\n"
+"Last-Translator: esradesteki <esradesteki20@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -11732,22 +11732,31 @@ msgstr "Port Avantajları"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9282
+#, fuzzy
 msgid ""
 "Packages are normally compiled with conservative options because they have "
 "to run on the maximum number of systems. By compiling from the port, one can "
 "change the compilation options."
 msgstr ""
+"Paketler genelde klasik seçeneklerle derlenir çünkü maksimum sayıda sistemde "
+"çalışmak zorundadır. Porttan derleyerek, derleme seçenekleri "
+"değiştirilebilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9289
+#, fuzzy
 msgid ""
 "Some applications have compile-time options relating to which features are "
 "installed. For example, <application>Apache</application> can be configured "
 "with a wide variety of different built-in options."
 msgstr ""
+"Bazı uygulamalarda hangi özelliklerin yüklendiği ile ilgili olarak derleme "
+"zamanı seçenekleri vardır. Örneğin, <application>Apache</application> "
+"çeşitli sayıda farklı yerleşik seçeneklerle yapılandırılabilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9294
+#, fuzzy
 msgid ""
 "In some cases, multiple packages will exist for the same application to "
 "specify certain settings. For example, <application>Ghostscript</"
@@ -11757,6 +11766,13 @@ msgid ""
 "rapidly becomes impossible if an application has more than one or two "
 "different compile-time options."
 msgstr ""
+"Bazı durumlarda, kimi ayarları belirlemek adına aynı uygulama için birden "
+"çok paket bulunabilir. Örneğin <application>Ghostscript</application>, "
+"<application>Xorg</application>'un kurulu olup olmamasına bağlı olarak, "
+"<filename>ghostscript</filename> paketi ve <filename>ghostscript-"
+"nox11</filename> paketi olarak mevcuttur. Çok sayıda paket oluşturmak, bir "
+"uygulama bir ya da ikiden fazla derleme zamanı seçeneğine sahipse hızla "
+"imkansız hale gelir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9306
