@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-21 15:02+0000\n"
+"PO-Revision-Date: 2020-06-21 20:51+0000\n"
 "Last-Translator: esradesteki <esradesteki20@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
@@ -11453,13 +11453,13 @@ msgstr "Uygulamaların Kurulumu: Paketler ve Portlar"
 #: book.translate.xml:9138
 #, fuzzy
 msgid "<primary>ports</primary>"
-msgstr "<primary>portlar</primary>"
+msgstr "<primary>ports</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:9139
 #, fuzzy
 msgid "<primary>packages</primary>"
-msgstr "<primary>paketler</primary>"
+msgstr "<primary>packages</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9140
@@ -11475,15 +11475,15 @@ msgstr ""
 "FreeBSD, temel sistemin bir parçası olarak sistem gereçlerinin zengin "
 "koleksiyonu ile donanmıştır. Ayrıca FreeBSD, üçüncü parti yazılımı kurmak "
 "için gerekli olan tamamlayıcı iki teknolojiyi de sağlar: kaynaktan kurulum "
-"için FreeBSD Ports Collection ve önceden oluşturulmuş ikililerden kurulum "
-"için paketler. Her iki yöntem de yazılımı yerel dağıtım ortamından ya da "
-"şebekeden kurmak için kullanılabilir."
+"için FreeBSD Ports Collection ve önceden oluşturulmuş ikili dosyalardan "
+"kurulum için paketler. Her iki yöntem de yazılımı yerel dağıtım ortamından "
+"ya da şebekeden kurmak için kullanılabilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9152
 #, fuzzy
 msgid "The difference between binary packages and ports."
-msgstr "İkili paketler ve portlar arasındaki fark."
+msgstr "Derlenmiş paketler ve portlar arasındaki fark."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9156
@@ -11496,7 +11496,7 @@ msgstr "FreeBSD'ye port edilmiş üçüncü parti yazılımı nasıl bulunur."
 #, fuzzy
 msgid "How to manage binary packages using <application>pkg</application>."
 msgstr ""
-"İkili paketler <application>pkg</application> kullanarak nasıl yönetilir."
+"Derlenmiş paketler <application>pkg</application> kullanarak nasıl yönetilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9166
@@ -11514,7 +11514,7 @@ msgid ""
 "How to find the files installed with the application for post-installation "
 "configuration."
 msgstr ""
-"Kurulum sonrası konfigürasyonu için uygulamayla beraber yüklenmiş dosyalar "
+"Kurulum sonrası yapılandırması için uygulamayla birlikte yüklenmiş dosyalar "
 "nasıl bulunur."
 
 #. (itstool) path: listitem/para
@@ -11537,7 +11537,7 @@ msgid ""
 "\"registered\">UNIX</trademark> system include:"
 msgstr ""
 "Üçüncü parti yazılımını <trademark class=\"registered\">UNIX</trademark> "
-"sisteminde kurmak için gereken tipik adımlar şunlardır:"
+"sisteminde kurmak için gereken belirli adımlar şunlardır:"
 
 #. (itstool) path: step/para
 #: book.translate.xml:9189
@@ -11546,7 +11546,7 @@ msgid ""
 "Find and download the software, which might be distributed in source code "
 "format or as a binary."
 msgstr ""
-"Kaynak kodu biçiminde ya da bir ikili olarak dağıtılabilen yazılımı bulun ve "
+"Kaynak kodu biçiminde ya da derlenmiş olarak dağıtılabilen yazılımı bulun ve "
 "indirin."
 
 #. (itstool) path: step/para
@@ -11562,14 +11562,13 @@ msgid ""
 "citerefentry> or <citerefentry><refentrytitle>xz</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 msgstr ""
-"Yazılımı dağıtım formatından açın. Bu format genellikle "
-"<citerefentry><refentrytitle>compress</refentrytitle><manvolnum>1</"
-"manvolnum></citerefentry>, <citerefentry><refentrytitle>gzip</"
-"refentrytitle><manvolnum>1</manvolnum></citerefentry>, "
-"<citerefentry><refentrytitle>bzip2</refentrytitle><manvolnum>1</manvolnum></"
-"citerefentry> ya da <citerefentry><refentrytitle>xz</"
-"refentrytitle><manvolnum>1</manvolnum></citerefentry> gibi programlar ile "
-"sıkıştırılmış tarballdur."
+"Yazılımı dağıtım biçiminden açın. Bu biçim genellikle <citerefentry><refentry"
+"title>compress</refentrytitle><manvolnum>1</manvolnum></citerefentry>, <citer"
+"efentry><refentrytitle>gzip</refentrytitle><manvolnum>1</manvolnum></citerefe"
+"ntry>, <citerefentry><refentrytitle>bzip2</refentrytitle><manvolnum>1</manvol"
+"num></citerefentry> ya da <citerefentry><refentrytitle>xz</refentrytitle><man"
+"volnum>1</manvolnum></citerefentry> gibi programlar ile sıkıştırılmış "
+"tarball'dur."
 
 #. (itstool) path: step/para
 #: book.translate.xml:9201
@@ -11591,9 +11590,9 @@ msgid ""
 "involve editing a <filename>Makefile</filename> or running a "
 "<command>configure</command> script."
 msgstr ""
-"Yazılım kaynak biçimde dağıtılmışsa, derleyin. Bu, bir <filename>Makefile</"
-"filename> düzenlemeyi ya da <command>configure</command> komutunu "
-"çalıştırmayı içerebilir."
+"Yazılım kaynak biçimde dağıtılmışsa, derleyin. Bu, bir "
+"<filename>Makefile</filename>'ı düzenlemeyi ya da "
+"<command>configure</command> komutunu çalıştırmayı içerebilir."
 
 #. (itstool) path: step/para
 #: book.translate.xml:9215
@@ -11721,7 +11720,7 @@ msgid ""
 "Packages do not require any understanding of the process involved in "
 "compiling software on FreeBSD."
 msgstr ""
-"Paketler, FreeBSD'de yazılım derlemeyi kapsayan sürecin anlaşılmasını "
+"Paketler, FreeBSD'de yazılım derlemeyi kapsayan işlemin anlaşılmasını "
 "gerektirmez."
 
 #. (itstool) path: itemizedlist/title
@@ -11782,9 +11781,9 @@ msgid ""
 "software must be distributed as source code which must be compiled by the "
 "end-user."
 msgstr ""
-"Bazı yazılımların lisanslama şartları ikili dağıtımları yasaklar. Bu gibi "
-"yazılımlar, son kullanıcı tarafından derlenmesi gereken kaynak kodu olarak "
-"dağıtılmak zorundadır."
+"Bazı yazılımların lisanslama şartları derlenmiş dağıtımları yasaklar. Bu "
+"gibi yazılımlar, son kullanıcı tarafından derlenmesi gereken kaynak kodu "
+"olarak dağıtılmak zorundadır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9312
@@ -11793,67 +11792,92 @@ msgid ""
 "Some people do not trust binary distributions or prefer to read through "
 "source code in order to look for potential problems."
 msgstr ""
-"Bazı kişiler, olası sorunları aramak için ikili dağıtımlara güvenmez ya da "
-"kaynak koddan okumayı tercih eder."
+"Bazı kişiler, olası sorunları aramak için derlenmiş dağıtımlara güvenmez ya "
+"da kaynak koddan okumayı tercih eder."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9318
+#, fuzzy
 msgid "Source code is needed in order to apply custom patches."
-msgstr ""
+msgstr "Özel yamaları uygulamak için kaynak kod gereklidir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9323
+#, fuzzy
 msgid ""
 "To keep track of updated ports, subscribe to the <link xlink:href=\"http://"
 "lists.FreeBSD.org/mailman/listinfo/freebsd-ports\">FreeBSD ports mailing "
 "list</link> and the <link xlink:href=\"http://lists.FreeBSD.org/mailman/"
 "listinfo/freebsd-ports-bugs\">FreeBSD ports bugs mailing list</link>."
 msgstr ""
+"Güncellenmiş portların takibi için, <link xlink:href=\"http://lists.FreeBSD."
+"org/mailman/listinfo/freebsd-ports\">FreeBSD ports mailing list</link> ve <"
+"link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports-"
+"bugs\">FreeBSD ports bugs mailing list</link>'e abone olun."
 
 #. (itstool) path: warning/para
 #: book.translate.xml:9327
+#, fuzzy
 msgid ""
 "Before installing any application, check <link xlink:href=\"https://vuxml."
 "freebsd.org/\"/> for security issues related to the application or type "
 "<command>pkg audit -F</command> to check all installed applications for "
 "known vulnerabilities."
 msgstr ""
+"Herhangi bir uygulamayı kurmadan önce, uygulamayla alakalı güvenlik "
+"sorunları için <link xlink:href=\"https://vuxml.freebsd.org/\"/>'ı inceleyin "
+"ya da bilinen açıklıklar için tüm kurulu uygulamaları incelemek adına "
+"command>pkg audit -F</command> yazın."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9333
+#, fuzzy
 msgid ""
 "The remainder of this chapter explains how to use packages and ports to "
 "install and manage third-party software on FreeBSD."
 msgstr ""
+"Bu bölümün geri kalanında paketler ve portların kurulumu ve FreeBSD'de "
+"üçüncü parti yazılımlarının nasıl yönetileceği açıklanmaktadır."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:9339
+#, fuzzy
 msgid "Finding Software"
-msgstr ""
+msgstr "Yazılımı Bulmak"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9341
+#, fuzzy
 msgid ""
 "FreeBSD's list of available applications is growing all the time. There are "
 "a number of ways to find software to install:"
 msgstr ""
+"FreeBSD'nin mevcut uygulamalar listesi sürekli artmaktadır. Kurulacak "
+"yazılımı bulmak için birkaç yol vardır:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9347
+#, fuzzy
 msgid ""
 "The FreeBSD web site maintains an up-to-date searchable list of all the "
 "available applications, at <link xlink:href=\"@@URL_RELPREFIX@@/ports/index."
 "html\">https://www.FreeBSD.org/ports/</link>. The ports can be searched by "
 "application name or by software category."
 msgstr ""
+"FreeBSD web sitesi, <link xlink:href=\"@@URL_RELPREFIX@@/ports/index.html\""
+">https://www.FreeBSD.org/ports/</link>'de tüm mevcut uygulamaların güncel "
+"aranabilir listesini sunar. Portlar, uygulama adıyla ya da yazılım "
+"kategorisiyle aranabilir."
 
 #. (itstool) path: listitem/indexterm
 #: book.translate.xml:9354
+#, fuzzy
 msgid "<primary>FreshPorts</primary>"
-msgstr ""
+msgstr "<primary>FreshPorts</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9356
+#, fuzzy
 msgid ""
 "Dan Langille maintains <link xlink:href=\"http://www.FreshPorts.org/"
 "\">FreshPorts.org</link> which provides a comprehensive search utility and "
@@ -11861,14 +11885,21 @@ msgid ""
 "users can create a customized watch list in order to receive an automated "
 "email when their watched ports are updated."
 msgstr ""
+"Dan Langille, kapsamlı arama yardımcı programını sunan ve ayrıca Ports "
+"Collection'daki uygulamalardaki değişiklikleri takip eden <link xlink:href=\""
+"http://www.FreshPorts.org/\">FreshPorts.org</link>'u yönetir. Kayıtlı "
+"kullanıcılar, izlenen portları güncellendiğinde otomatik bir e-posta almak "
+"için özel izleme listelerini oluşturabilirler."
 
 #. (itstool) path: listitem/indexterm
 #: book.translate.xml:9365
+#, fuzzy
 msgid "<primary>SourceForge</primary>"
-msgstr ""
+msgstr "<primary>SourceForge</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9367
+#, fuzzy
 msgid ""
 "If finding a particular application becomes challenging, try searching a "
 "site like <link xlink:href=\"http://www.sourceforge.net/\">SourceForge.net</"
@@ -11876,21 +11907,29 @@ msgid ""
 "check back at the <link xlink:href=\"@@URL_RELPREFIX@@/ports/index.html"
 "\">FreeBSD site</link> to see if the application has been ported."
 msgstr ""
+"Belirli bir uygulamayı bulmak zorlaşırsa, <link xlink:href=\""
+"http://www.sourceforge.net/\">SourceForge.net</link> ya da <link xlink:href="
+"\"http://www.github.com/\">GitHub.com</link> gibi bir siteyi aramayı "
+"deneyin, daha sonra uygulamanın port edilip edilmediğini görmek için <link "
+"xlink:href=\"@@URL_RELPREFIX@@/ports/index.html\">FreeBSD site</link>'de "
+"tekrar denetleyin."
 
 #. (itstool) path: listitem/indexterm
 #: book.translate.xml:9375
+#, fuzzy
 msgid "<primary>pkg</primary> <secondary>search</secondary>"
-msgstr ""
+msgstr "<primary>pkg</primary> <secondary>search</secondary>"
 
 #. (itstool) path: listitem/para
 #. (itstool) id: book.translate.xml#pkg-search
 #: book.translate.xml:9380
+#, fuzzy
 msgid "To search the binary package repository for an application:"
-msgstr ""
+msgstr "Derlenmiş paket havuzunda bir uygulama aramak için:"
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:9383
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>pkg search <replaceable>subversion</replaceable></userinput>\n"
 "git-subversion-<replaceable>1.9.2</replaceable>\n"
@@ -11905,6 +11944,19 @@ msgid ""
 "subversion16-<replaceable>1.6.23_4</replaceable>\n"
 "subversion17-<replaceable>1.7.16_2</replaceable>"
 msgstr ""
+"<prompt>#</prompt> <userinput>pkg search "
+"<replaceable>subversion</replaceable></userinput>\n"
+"git-subversion-<replaceable>1.9.2</replaceable>\n"
+"java-subversion-<replaceable>1.8.8_2</replaceable>\n"
+"p5-subversion-<replaceable>1.8.8_2</replaceable>\n"
+"py27-hgsubversion-<replaceable>1.6</replaceable>\n"
+"py27-subversion-<replaceable>1.8.8_2</replaceable>\n"
+"ruby-subversion-<replaceable>1.8.8_2</replaceable>\n"
+"subversion-<replaceable>1.8.8_2</replaceable>\n"
+"subversion-book-<replaceable>4515</replaceable>\n"
+"subversion-static-<replaceable>1.8.8_2</replaceable>\n"
+"subversion16-<replaceable>1.6.23_4</replaceable>\n"
+"subversion17-<replaceable>1.7.16_2</replaceable>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9396
