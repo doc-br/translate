@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-06-21 20:51+0000\n"
-"Last-Translator: esradesteki <esradesteki20@gmail.com>\n"
+"Last-Translator: nurbanu  hasanoğlu <hasanoglunurbanu@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -71788,8 +71788,8 @@ msgid ""
 "options BREAK_TO_DEBUGGER\n"
 "options DDB"
 msgstr ""
-"seçenekler BREAK_TO_DEBUGGER\n"
-"seçenekler DDB"
+"options BREAK_TO_DEBUGGER\n"
+"options DDB"
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:49429
@@ -72077,15 +72077,19 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:49623
+#, fuzzy
 msgid ""
 "In order to configure a <acronym>PPP</acronym> connection, first edit "
 "<filename>/etc/ppp/ppp.conf</filename> with the dial-in information for the "
 "<acronym>ISP</acronym>. This file is described as follows:"
 msgstr ""
+"Bir <acronym>PPP</acronym> bağlantısını yapılandırmak için, ilk olarak "
+"<filename>/etc/ppp/ppp.conf</filename> ile <acronym>ISP</acronym> için içeri "
+"giriş bilgilerini düzenleyin. Bu dosya aşağıdaki gibi tanımlanmıştır:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:49628
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "1     default:\n"
 "2       set log Phase Chat LCP IPCP CCP tun command\n"
@@ -72105,11 +72109,31 @@ msgid ""
 "16      set ifaddr <replaceable>x.x.x.x</replaceable>/0 <replaceable>y.y.y.y</replaceable>/0 255.255.255.255 0.0.0.0\n"
 "17      add default HISADDR"
 msgstr ""
+"1     default:\n"
+"2       set log Phase Chat LCP IPCP CCP tun command\n"
+"3       ident user-ppp VERSION\n"
+"4       set device /dev/cuau0\n"
+"5       set speed 115200\n"
+"6       set dial \"ABORT BUSY ABORT NO\\\\sCARRIER TIMEOUT 5 \\\n"
+"7                 \\\"\\\" AT OK-AT-OK ATE1Q0 OK \\\\dATDT\\\\T TIMEOUT 40 "
+"CONNECT\"\n"
+"8       set timeout 180\n"
+"9       enable dns\n"
+"10\n"
+"11    provider:\n"
+"12      set phone \"(123) 456 7890\"\n"
+"13      set authname foo\n"
+"14      set authkey bar\n"
+"15      set timeout 300\n"
+"16      set ifaddr <replaceable>x.x.x.x</replaceable>/0 "
+"<replaceable>y.y.y.y</replaceable>/0 255.255.255.255 0.0.0.0\n"
+"17      add default HISADDR"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:49648
+#, fuzzy
 msgid "Line 1:"
-msgstr ""
+msgstr "Satır 1:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49651
