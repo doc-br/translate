@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-21 20:51+0000\n"
-"Last-Translator: nurbanu  hasanoğlu <hasanoglunurbanu@gmail.com>\n"
+"PO-Revision-Date: 2020-06-21 23:16+0000\n"
+"Last-Translator: esradesteki <esradesteki20@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -11960,6 +11960,7 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9396
+#, fuzzy
 msgid ""
 "Package names include the version number and, in the case of ports based on "
 "python, the version number of the version of python the package was built "
@@ -11972,10 +11973,19 @@ msgid ""
 "<command>pkg search</command> with <option>-o</option> to list the origin of "
 "each package:"
 msgstr ""
+"Paket adları, sürüm numarasını ve, portların python tabanlı olması durumunda "
+"paketin kurulduğu python sürümünün sürüm numarasını içerir. Bazı portların "
+"ayrıca birçok sürümü mevcuttur. <application>Subversion</application> için, "
+"farklı derleme seçenekleri kadar, farklı sürümler de mevcuttur. Bu durumda "
+"<application>Subversion</application> istatistiksel bağlı sürümüdür. Hangi "
+"paketin kurulacağını belirlerken, uygulamayı port ağacındaki yol olan port "
+"kökeninden belirlemek en iyisi olacaktır. Her bir paketin kökenini "
+"listelemek için <command>pkg search</command>'ı <option>-o</option> ile "
+"yineleyin:"
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:9410
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>pkg search -o <replaceable>subversion</replaceable></userinput>\n"
 "devel/git-subversion\n"
@@ -11990,6 +12000,19 @@ msgid ""
 "devel/subversion-book\n"
 "devel/subversion-static"
 msgstr ""
+"<prompt>#</prompt> <userinput>pkg search -o "
+"<replaceable>subversion</replaceable></userinput>\n"
+"devel/git-subversion\n"
+"java/java-subversion\n"
+"devel/p5-subversion\n"
+"devel/py-hgsubversion\n"
+"devel/py-subversion\n"
+"devel/ruby-subversion\n"
+"devel/subversion16\n"
+"devel/subversion17\n"
+"devel/subversion\n"
+"devel/subversion-book\n"
+"devel/subversion-static"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9423
