@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-21 03:13+0000\n"
-"Last-Translator: firdevssevik <sevikfirdevs@gmail.com>\n"
+"PO-Revision-Date: 2020-06-21 10:52+0000\n"
+"Last-Translator: onuraydin3 <crymzonx@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -74001,11 +74001,13 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:51275
+#, fuzzy
 msgid "Mail Host and Mailboxes"
-msgstr ""
+msgstr "Posta Sunucusu ve Posta Kutuları"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51277
+#, fuzzy
 msgid ""
 "The mail host is a server that is responsible for delivering and receiving "
 "mail for a host or a network. The mail host collects all mail sent to the "
@@ -74017,6 +74019,15 @@ msgid ""
 "<acronym>POP</acronym> or <acronym>IMAP</acronym> server does not need to be "
 "installed."
 msgstr ""
+"Posta sunucusunun görevi bir sunucu ya da ağa posta iletmek ve buralardan "
+"posta almaktır. Posta sunucusu domaine gelen bütün postaları ya varsayılan "
+"olarak <filename>mbox</filename> içerisinde ya da yapılandırmaya göre "
+"alternatif Maildir formatında saklayabilir. Posta saklandığı zaman, yerel "
+"olarak bir <acronym>MUA</acronym> kullanılarak ya da <acronym>POP</acronym> "
+"veya <acronym>IMAP</acronym> gibi protokoller kullanılarak uzaktan erişilip "
+"okunabilir. Eğer posta yerel olarak okunabiliyorsa, bir "
+"<acronym>POP</acronym> veya <acronym>IMAP</acronym> sunucusunun yüklenmesine "
+"gerek yoktur."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51290
