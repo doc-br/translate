@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-21 10:52+0000\n"
-"Last-Translator: esradesteki <esradesteki20@gmail.com>\n"
+"PO-Revision-Date: 2020-06-21 15:02+0000\n"
+"Last-Translator: onuraydin3 <crymzonx@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -74047,6 +74047,7 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51290
+#, fuzzy
 msgid ""
 "To access mailboxes remotely, a <acronym>POP</acronym> or <acronym>IMAP</"
 "acronym> server is required as these protocols allow users to connect to "
@@ -74058,18 +74059,34 @@ msgid ""
 "downloading them. It can also perform tasks such as searching on the server "
 "in order to minimize data transfer between clients and servers."
 msgstr ""
+"Posta kutularına uzaktan erişmek için, bir <acronym>POP</acronym> veya "
+"<acronym>IMAP</acronym> sunucusu, bu protokollerin, kullanıcıların posta "
+"kutularına uzaktan erişmelerine olanak sağladığı için gereklidir. "
+"<acronym>IMAP</acronym>, <acronym>POP</acronym> daha fazla avantaj "
+"sunabilir. İndirildikten sonra mesajların kopyasını uzaktaki bir sunucuda "
+"depolamak ve eş zamanlı olarak güncellemek bu avantajlardan biridir. "
+"<acronym>IMAP</acronym> , kullanıcılara mesajların yapısını indirmeden görme "
+"olanağı sağladığı için düşük hızlı bağlantılar üzerinde kullanışlıdır. "
+"Ayrıca sunucu ve istemciler arasındaki veri aktarımını en aza indirmek için "
+"sunucu içinde arama yapmak gibi görevleri de gerçekleştirebilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51303
+#, fuzzy
 msgid ""
 "Several <acronym>POP</acronym> and <acronym>IMAP</acronym> servers are "
 "available in the Ports Collection. These include <package>mail/qpopper</"
 "package>, <package>mail/imap-uw</package>, <package>mail/courier-imap</"
 "package>, and <package>mail/dovecot2</package>."
 msgstr ""
+"Ports Collection kısmında <package>mail/qpopper</package>, <package>mail/"
+"imap-uw</package>, <package>mail/courier-imap</package> ve <package>mail/"
+"dovecot2</package> gibi bazı bazı <acronym>POP</acronym> ve "
+"<acronym>IMAP</acronym> sunucuları mevcuttur."
 
 #. (itstool) path: warning/para
 #: book.translate.xml:51312
+#, fuzzy
 msgid ""
 "It should be noted that both <acronym>POP</acronym> and <acronym>IMAP</"
 "acronym> transmit information, including username and password credentials, "
@@ -74079,15 +74096,24 @@ msgid ""
 "citerefentry> (<xref linkend=\"security-ssh-tunneling\"/>) or using "
 "<acronym>SSL</acronym> (<xref linkend=\"openssl\"/>)."
 msgstr ""
+"<acronym>POP</acronym> ve <acronym>IMAP</acronym>'ın kullanıcı adı ve şifre "
+"kimlik bilgileri de dahil olmak üzere bilgileri düz metin şeklinde aktardığı "
+"dikkate alınmalıdır. Bu protokoller üzerinden bilgi aktarımını güvence "
+"altına almak için, <citerefentry><refentrytitle>ssh</refentrytitle><manvolnum"
+">1</manvolnum></citerefentry><xref linkend=\"security-ssh-tunneling\"/> veya "
+"<acronym>SSL</acronym>(<xref linkend=\"openssl\"/>) kullanarak tünelleme "
+"yapmayı göz önünde bulundurabilirsiniz."
 
 #. (itstool) path: varlistentry/term
 #. (itstool) path: sect1/title
 #: book.translate.xml:51324 book.translate.xml:56011
+#, fuzzy
 msgid "Domain Name System (<acronym>DNS</acronym>)"
-msgstr ""
+msgstr "Domain Adı Sistemi(<acronym>DNS</acronym>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51326
+#, fuzzy
 msgid ""
 "The Domain Name System (<acronym>DNS</acronym>) and its daemon "
 "<command>named</command> play a large role in the delivery of email. In "
@@ -74096,9 +74122,16 @@ msgid ""
 "host will receive mail for the destination. This process also occurs when "
 "mail is sent from a remote host to the <acronym>MTA</acronym>."
 msgstr ""
+"Domain Adı Sistemi (<acronym>DNS</acronym>) ve onun aracı olan "
+"<command>named</command> posta iletiminde büyük bir rol oynar. Bir siteden "
+"diğerine posta göndermek için, <acronym>MTA</acronym> hangi ana bilgisayarın "
+"posta alacağını belirlemek üzere <acronym>DNS </acronym> içindeki uzak "
+"siteyi arar. Bu işlem ayrıca, posta uzak bir ana bilgisayardan "
+"<acronym>MTA</acronym>' ya gönderildiğinde de gerçekleşir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51335
+#, fuzzy
 msgid ""
 "In addition to mapping hostnames to <acronym>IP</acronym> addresses, "
 "<acronym>DNS</acronym> is responsible for storing information specific to "
@@ -74106,15 +74139,25 @@ msgid ""
 "<acronym>MX</acronym> record specifies which hosts will receive mail for a "
 "particular domain."
 msgstr ""
+"Ana bilgisayar adlarını <acronym>IP</acronym> adresleriyle eşleştirmenin "
+"yanı sıra <acronym>DNS</acronym>, Mail eXchanger <acronym>MX</acronym> "
+"olarak bilinen posta iletimine özgü bilgileri depolamaktan sorumludur. "
+"<acronym> MX</acronym> kaydı, hangi ana bilgisayarın hangi belirli bir "
+"domain için posta alacağını belirler."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51343
+#, fuzzy
 msgid ""
 "To view the <acronym>MX</acronym> records for a domain, specify the type of "
 "record. Refer to <citerefentry><refentrytitle>host</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>, for more details "
 "about this command:"
 msgstr ""
+"Bir domaine ait <acronym>MX</acronym> kayıtlarını görüntülemek için, kayıt "
+"tipini belirtin. Bu komut hakkında daha fazla bilgi için <citerefentry><refen"
+"trytitle>host</refentrytitle><manvolnum>1</manvolnum></citerefentry> "
+"bölümüne bakabilirsiniz."
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:51347
@@ -74126,10 +74169,13 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51350
+#, fuzzy
 msgid ""
 "Refer to <xref linkend=\"network-dns\"/> for more information about "
 "<acronym>DNS</acronym> and its configuration."
 msgstr ""
+"<acronym>DNS</acronym> ve yapılandırılması hakkında daha fazla bilgi için <"
+"xref linkend=\"network-dns\"/> bölümüne göz atın."
 
 #. (itstool) path: info/title
 #: book.translate.xml:51360
