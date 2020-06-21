@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-06-21 15:02+0000\n"
-"Last-Translator: onuraydin3 <crymzonx@gmail.com>\n"
+"Last-Translator: nurbanu  hasanoğlu <hasanoglunurbanu@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -71724,78 +71724,103 @@ msgstr ""
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:49404
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "options BREAK_TO_DEBUGGER\n"
 "options DDB"
 msgstr ""
+"seçenekler BREAK_TO_DEBUGGER\n"
+"seçenekler DDB"
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:49429
+#, fuzzy
 msgid "<acronym>PPP</acronym>"
-msgstr ""
+msgstr "<acronym>PPP</acronym>"
 
 #. (itstool) path: sect1/indexterm
 #. (itstool) id: book.translate.xml#ppp-ppp
 #: book.translate.xml:49434 book.translate.xml:49461
+#, fuzzy
 msgid "<primary><acronym>PPP</acronym></primary>"
-msgstr ""
+msgstr "<primary><acronym>PPP</acronym></primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:49438
+#, fuzzy
 msgid ""
 "FreeBSD supports the Point-to-Point (<acronym>PPP</acronym>) protocol which "
 "can be used to establish a network or Internet connection using a dial-up "
 "modem. This chapter describes how to configure modem-based communication "
 "services in FreeBSD."
 msgstr ""
+"FreeBSD Noktadan Noktaya Protokolünü (Point-toPoint <acronym>PPP</acronym>) "
+"destekler ki bu bir ağ veya internet bağlantısını çevirmeli modem kullanarak "
+"kurmak için kullanılabilir. Bu bölüm, modem tabanlı iletişim servislerinin "
+"FreeBSD içinde nasıl yapılandırılacağını tarif eder."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49447
+#, fuzzy
 msgid ""
 "How to configure, use, and troubleshoot a <acronym>PPP</acronym> connection."
 msgstr ""
+"Bir <acronym>PPP</acronym> bağlantısının nasıl yapılandırıldığını, "
+"kullanıldığını ve hatalardan ayıklandığını."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49451
+#, fuzzy
 msgid ""
 "How to set up <acronym>PPP</acronym> over Ethernet (<acronym>PPPoE</"
 "acronym>)."
 msgstr ""
+"Ethernet üzerinden nasıl <acronym>PPP</acronym> bağlantısı kurulduğunu "
+"(<acronym>PPPoE</acronym>)."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49455
+#, fuzzy
 msgid ""
 "How to set up <acronym>PPP</acronym> over <acronym>ATM</acronym> "
 "(<acronym>PPPoA</acronym>)."
 msgstr ""
+"<acronym>ATM</acronym> üzerinden nasıl <acronym>PPP</acronym> bağlantısı "
+"kurulduğunu (<acronym>PPPoA</acronym>)."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:49464 book.translate.xml:50725
+#, fuzzy
 msgid ""
 "<primary><acronym>PPP</acronym></primary> <secondary>over Ethernet</"
 "secondary>"
 msgstr ""
+"<secondary>Ethernet üzerinden</secondary> "
+"<primary><acronym>PPP</acronym></primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49473 book.translate.xml:61942
+#, fuzzy
 msgid "Be familiar with basic network terminology."
-msgstr ""
+msgstr "Temel ağ terminolojisine tanıdık olmak."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49476
+#, fuzzy
 msgid ""
 "Understand the basics and purpose of a dial-up connection and <acronym>PPP</"
 "acronym>."
-msgstr ""
+msgstr "Çevirmeli bağlantı ve <acronym>PPP</acronym>'nin temel amacını anlamak."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:49517
+#, fuzzy
 msgid "Configuring <acronym>PPP</acronym>"
-msgstr ""
+msgstr "<acronym>PPP</acronym> Yapılandırması"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:49519
+#, fuzzy
 msgid ""
 "FreeBSD provides built-in support for managing dial-up <acronym>PPP</"
 "acronym> connections using <citerefentry><refentrytitle>ppp</"
@@ -71806,60 +71831,89 @@ msgid ""
 "are provided. Finally, <command>ppp</command> is used to start and manage "
 "connections."
 msgstr ""
+"FreeBSD çevirmeli <acronym>PPP</acronym> bağlantı yöntemi için <citerefentry>"
+"<refentrytitle>ppp</refentrytitle><manvolnum>8</manvolnum></citerefentry> "
+"kullanarak yerleşik destek sağlar. Varsayılan FreeBSD çekirdeği "
+"<filename>tun</filename> için destek sağlar ki bu modem yazılımı ile "
+"etkileşime feçmek için kullanılır. Yapılandırma; en az bir yapılandırma "
+"dosyasının düzenlenmesi tarafından gerçekleştirilir ve yapılandırma "
+"dosyalarını içeren örnekler sağlanmıştır. Nihayetinde <command>ppp</command>"
+", bağlantıları başlatmak ve yönetmek için kullanılır."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:49528
+#, fuzzy
 msgid ""
 "In order to use a <acronym>PPP</acronym> connection, the following items are "
 "needed:"
 msgstr ""
+"Bu amaçla bir <acronym>PPP</acronym> bağlantısı kullanmak için aşağıdaki "
+"ögeler gerekmektedir:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49533
+#, fuzzy
 msgid ""
 "A dial-up account with an Internet Service Provider (<acronym>ISP</acronym>)."
 msgstr ""
+"Bir çevirmeli hesap ile bir İnternet Servis Sağlayıcısı (Internet Service "
+"Provider, <acronym>ISP</acronym>)."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49538
+#, fuzzy
 msgid "A dial-up modem."
-msgstr ""
+msgstr "Bir çevirmeli modem."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49542
+#, fuzzy
 msgid "The dial-up number for the <acronym>ISP</acronym>."
-msgstr ""
+msgstr "<acronym>ISP</acronym> için çevirmeli numara."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49547
+#, fuzzy
 msgid "The login name and password assigned by the <acronym>ISP</acronym>."
-msgstr ""
+msgstr "<acronym>ISP</acronym>'ye atanmış kullanıcı adı ve şifre."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49552
+#, fuzzy
 msgid ""
 "The <acronym>IP</acronym> address of one or more <acronym>DNS</acronym> "
 "servers. Normally, the <acronym>ISP</acronym> provides these addresses. If "
 "it did not, FreeBSD can be configured to use <acronym>DNS</acronym> "
 "negotiation."
 msgstr ""
+"Bir veya daha fazla <acronym>DNS</acronym> sunucusu için "
+"<acronym>IP</acronym> adresi. Normalde bu adresleri <acronym>ISP</acronym> "
+"sağlar. Eğer sağlamadıysa, FreeBSD <acronym>DNS</acronym>'yi atlatmak için "
+"yapılandırılabilir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:49560
+#, fuzzy
 msgid ""
 "If any of the required information is missing, contact the <acronym>ISP</"
 "acronym>."
 msgstr ""
+"Eğer gereken bilgilerden herhangi biri eksikse <acronym>ISP</acronym>'ye "
+"danışın."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:49563
+#, fuzzy
 msgid ""
 "The following information may be supplied by the <acronym>ISP</acronym>, but "
 "is not necessary:"
 msgstr ""
+"Aşağıdaki bilgiler <acronym>ISP</acronym> tarafından tedarik edilebilir ama "
+"zorunlu değildir:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49568
+#, fuzzy
 msgid ""
 "The <acronym>IP</acronym> address of the default gateway. If this "
 "information is unknown, the <acronym>ISP</acronym> will automatically "
@@ -71867,68 +71921,100 @@ msgid ""
 "<acronym>PPP</acronym> on FreeBSD, this address is referred to as "
 "<literal>HISADDR</literal>."
 msgstr ""
+"Varsayılan ağ geçidinin <acronym>IP</acronym> adresi. Eğer bu bilgi "
+"bilinmiyorsa, bağlantı kurulumu sırasında <acronym>ISP</acronym> doğru "
+"değeri sağlayacaktır. FreeBSD'de <acronym>PPP</acronym>'yi yapılandırırken "
+"bu adres <literal>HISADDR</literal> olarak adlandırılır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49577
+#, fuzzy
 msgid ""
 "The subnet mask. If the <acronym>ISP</acronym> has not provided one, "
 "<systemitem class=\"netmask\">255.255.255.255</systemitem> will be used in "
 "the <citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> configuration file."
 msgstr ""
+"Alt ağ maskesi. Eğer <acronym>ISP</acronym> bir tane sağlamadıysa; <"
+"systemitem class=\"netmask\">255.255.255.255</systemitem> <citerefentry><refe"
+"ntrytitle>ppp</refentrytitle><manvolnum>8</manvolnum></citerefentry> "
+"yapılandırma dosyasında kullanılacaktır."
 
 #. (itstool) path: listitem/indexterm
 #. (itstool) id: book.translate.xml#ppp-static-ip
 #: book.translate.xml:49583
+#, fuzzy
 msgid "<primary>static <acronym>IP</acronym> address</primary>"
-msgstr ""
+msgstr "<primary>sabit <acronym>IP</acronym> adresi</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49587
+#, fuzzy
 msgid ""
 "If the <acronym>ISP</acronym> has assigned a static <acronym>IP</acronym> "
 "address and hostname, it should be input into the configuration file. "
 "Otherwise, this information will be automatically provided during connection "
 "setup."
 msgstr ""
+"Eğer <acronym>ISP</acronym> sabit bir <acronym>IP</acronym> adresi ve ana "
+"bilgisayar adı atadıysa, yapılandırma dosyasına girilmelidir. Aksi takdirde, "
+"bu bilgi otomatik olarak bağlantı kurulumu sırasında tedarik edilecektir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:49595
+#, fuzzy
 msgid ""
 "The rest of this section demonstrates how to configure FreeBSD for common "
 "<acronym>PPP</acronym> connection scenarios. The required configuration file "
 "is <filename>/etc/ppp/ppp.conf</filename> and additional files and examples "
 "are available in <filename>/usr/share/examples/ppp/</filename>."
 msgstr ""
+"Bu bölümün geri kalanı FreeBSD için yaygın <acronym>PPP</acronym> bağlantı "
+"senaryolarının nasıl yapılandırıldığını açıklar. Gereken yapılandırma "
+"dosyası <filename>/etc/ppp/ppp.conf</filename>'dur, ilave dosyalar ve "
+"örnekler <filename>/usr/share/examples/ppp/</filename>'de mevcuttur."
 
 #. (itstool) path: note/para
 #: book.translate.xml:49603
+#, fuzzy
 msgid ""
 "Throughout this section, many of the file examples display line numbers. "
 "These line numbers have been added to make it easier to follow the "
 "discussion and are not meant to be placed in the actual file."
 msgstr ""
+"Bu bölüm boyunca çoğu dosya örnekleri, satır numaralarını gösteriyor. Bu "
+"satır numaraları tartışmayı takip etmeyi kolaylaştırmak için eklenmiştir ve "
+"asıl dosyaya eklenmemelidir."
 
 #. (itstool) path: note/para
 #: book.translate.xml:49608
+#, fuzzy
 msgid ""
 "When editing a configuration file, proper indentation is important. Lines "
 "that end in a <literal>:</literal> start in the first column (beginning of "
 "the line) while all other lines should be indented as shown using spaces or "
 "tabs."
 msgstr ""
+"Bir yapılandırma dosyasını düzenlerken düzgün girintileme yapmak önemlidir. "
+"<literal>:</literal> ile başlayan satırlar ilk sütunda (satır başı) "
+"başlarken, diğer tüm satırlar, boşluklar veya sekmeler kullanılarak "
+"gösterildiği gibi girintilenmelidir."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:49615 book.translate.xml:51976
+#, fuzzy
 msgid "Basic Configuration"
-msgstr ""
+msgstr "Temel Yapılandırma"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:49617
+#, fuzzy
 msgid ""
 "<primary>PPP</primary> <secondary>with static <acronym>IP</acronym> "
 "addresses</secondary>"
 msgstr ""
+"<secondary>sabit <acronym>IP</acronym> adresleri olan</secondary> "
+"<primary>PPP</primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:49623
