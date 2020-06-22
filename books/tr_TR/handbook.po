@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-06-22 21:51+0000\n"
-"Last-Translator: Alparslangurbuz <alparslangurbuz@hotmail.com>\n"
+"Last-Translator: onuraydin3 <crymzonx@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -74542,20 +74542,25 @@ msgstr ""
 
 #. (itstool) path: info/title
 #: book.translate.xml:51360
+#, fuzzy
 msgid "<application>Sendmail</application> Configuration Files"
-msgstr ""
+msgstr "<application>Sendmail</application> Yapılandırma Dosyaları"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:51364
+#, fuzzy
 msgid ""
 "<personname> <firstname>Christopher</firstname> <surname>Shumway</surname> </"
 "personname> <contrib>Contributed by </contrib>"
 msgstr ""
+"<personname><firstname>Christopher</firstname><surname>Shumway</surname></per"
+"sonname>'ın <contrib>katkılarıyla</contrib>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:51374
+#, fuzzy
 msgid "<primary><application>Sendmail</application></primary>"
-msgstr ""
+msgstr "<primary><application>Sendmail</application></primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:51378
@@ -74566,14 +74571,24 @@ msgid ""
 "<application>Sendmail</application> can also accept network connections and "
 "deliver mail to local mailboxes or to another program."
 msgstr ""
+"FreeBSD ile yüklenen varsayılan <acronym>MTA</acronym> "
+"<application>Sendmail</application> 'dir. <acronym>MUA</acronym> 'dan gelen "
+"gelen postaları kabul eder ve yapılandırılmasında belirtildiği şekilde uygun "
+"posta ana bilgisayarına gönderir. Ayrıca <application>Sendmail</application> "
+"ayrıca ağ bağlantılarını kabul edebilir ve yerel posta kutularına veya başka "
+"programlara posta gönderebilir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:51386
+#, fuzzy
 msgid ""
 "The configuration files for <application>Sendmail</application> are located "
 "in <filename>/etc/mail</filename>. This section describes these files in "
 "more detail."
 msgstr ""
+"<application>Sendmail</application> yapılandırma dosyaları <filename>/etc/"
+"mail</filename> konumundadır. Bu bölüm, bu dosyaları daha detaylı "
+"açıklamaktadır."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:51391
@@ -74617,6 +74632,7 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51417
+#, fuzzy
 msgid ""
 "This access database file defines which hosts or <acronym>IP</acronym> "
 "addresses have access to the local mail server and what kind of access they "
@@ -74632,14 +74648,33 @@ msgid ""
 "their messages held and will receive the specified text as the reason for "
 "the hold."
 msgstr ""
+"Bu access veritabanı dosyası, hangi ana bilgisayarın veya "
+"<acronym>IP</acronym> adresinin yerel posta sunucusuna erişimi olduğunu ve "
+"ne tür bir erişim olduğunu belirler. Varsayılan haliyle, yani "
+"<option>OK</option> olarak listesindeki ana bilgisayarlar, postanın son "
+"varış noktası yerel makine olduğu sürece bu ana bilgisayara posta "
+"gönderebilirler. <option>REJECT</option> listesinde olan ana bilgisayarların "
+"tüm posta bağlantıları reddedilir. <option>RELAY</option> listesinde olan "
+"ana bilgisayarlar bu posta sunucusunu kullanan herhangi bir noktaya posta "
+"gönderebilir. <option>ERROR</option> listesindeki ana bilgisayarların "
+"postaları, hata mesajı ile birlikte geri döner. Eğer bir ana bilgisayar "
+"<option>SKIP</option> listesinde ise, <application>Sendmail</application> bu "
+"girdinin araştırılmasını postayı kabul veya reddedilmesine gerek kalmadan "
+"iptal eder. <option>QUARANTINE</option> listesindeki ana bilgisayarların "
+"mesajları beklemeye alınır ve bekletilme sebebi mesaj metni olarak "
+"gönderilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51435
+#, fuzzy
 msgid ""
 "Examples of using these options for both <acronym>IPv4</acronym> and "
 "<acronym>IPv6</acronym> addresses can be found in the FreeBSD sample "
 "configuration, <filename>/etc/mail/access.sample</filename>:"
 msgstr ""
+"Bu seçenekleri hem <acronym>IPv4</acronym> hem de <acronym>IPv6</acronym> "
+"adresleri için kullanma örnekleri FreeBSD örnek yapılandırılması, <filename>/"
+"etc/mail/access.sample</filename>  adresinde bulunabilir:"
 
 #. (itstool) path: listitem/programlisting
 #: book.translate.xml:51440
@@ -74665,6 +74700,7 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51457
+#, fuzzy
 msgid ""
 "To configure the access database, use the format shown in the sample to make "
 "entries in <filename>/etc/mail/access</filename>, but do not put a comment "
@@ -74673,13 +74709,22 @@ msgid ""
 "match the left side of the table are affected by the action on the right "
 "side of the table."
 msgstr ""
+"Access veritabanını yapılandırmak için, örnekte gösterilen formatı "
+"kullanarak <filename>/etc/mail/access</filename> girdilieri oluşturun, ama "
+"girdilerin başına kare sembolünü (<literal>#</literal>) koymayın. Erişimi "
+"yapılandırılması gereken her ana bilgisayar veya ağ bağlantısı için bir "
+"girdi oluşturun. Tablonun sol tarafıyla eşleşen posta göndericileri sağ "
+"taraftaki işlemlerden etkileneceklerdir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51466
+#, fuzzy
 msgid ""
 "Whenever this file is updated, update its database and restart "
 "<application>Sendmail</application>:"
 msgstr ""
+"Bir dosya güncellendiğinde, veritabanını da güncelle ve "
+"<application>Sendmail</application> 'i yeniden başlat:"
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:51469
@@ -74696,11 +74741,14 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51477
+#, fuzzy
 msgid ""
 "This database file contains a list of virtual mailboxes that are expanded to "
 "users, files, programs, or other aliases. Here are a few entries to "
 "illustrate the file format:"
 msgstr ""
+"Bu veritabanı dosyası kullanıcılar, dosyalar, programlar veya diğer adlara "
+"kadar genişletilmiş sanal özel ağların bir listesini içerir:"
 
 #. (itstool) path: listitem/programlisting
 #: book.translate.xml:51482
