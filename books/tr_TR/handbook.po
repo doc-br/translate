@@ -17,8 +17,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-22 22:14+0000\n"
-"Last-Translator: firdevssevik <sevikfirdevs@gmail.com>\n"
+"PO-Revision-Date: 2020-06-23 09:17+0000\n"
+"Last-Translator: onuraydin3 <crymzonx@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -74926,6 +74926,7 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51487
+#, fuzzy
 msgid ""
 "The mailbox name on the left side of the colon is expanded to the target(s) "
 "on the right. The first entry expands the <systemitem class=\"username"
@@ -74945,13 +74946,34 @@ msgid ""
 "<citerefentry><refentrytitle>aliases</refentrytitle><manvolnum>5</"
 "manvolnum></citerefentry> for more information about the format of this file."
 msgstr ""
+"Kolonun sol tarafındaki posta kutusu ismi sağ taraftaki hedef(ler)e "
+"genişlerilir. İlk girdi <systemitem class=\"username\">root</systemitem> "
+"posta kutusunu <systemitem class=\"username\">localuser</systemitem> posta "
+"kutusuna genişletir ve sonrasında <filename>/etc/mail/aliases</filename> "
+"veritabanında aratılır. Eğer bir eşleşme bulunmazsa, mesaj olarak <"
+"systemitem class=\"username\">localuser</systemitem> 'e iletilir. İkinci "
+"girdi bir posta listesi göstermektedir. <systemitem class=\"username\">ftp-"
+"bugs</systemitem> 'a gelen postalar <systemitem class=\"username\""
+">joe</systemitem>, <systemitem class=\"username\">eric</systemitem> ve <"
+"systemitem class=\"username\">paul</systemitem> olmak üzere üç yerel posta "
+"kutusuna genişletilir. Uzaktan kontrollü bir posta kutusu "
+"<replaceable>user@example.com</replaceable> olarak belirtilebilir. Üçüncü "
+"girdi bir dosyaya nasıl posta yazılacağını, bu örnekte <filename>/dev/"
+"null</filename> Son girdi bir programa <trademark class=\"registered\""
+">UNIX</trademark> veri yolu kullanılarak nasıl posta gönderileceğini "
+"göstermektedir. Bu dosyanın formatı hakkında daha fazla bilgi için <citerefen"
+"try><refentrytitle>aliases</refentrytitle><manvolnum>5</manvolnum></citerefen"
+"try> bölümüne göz atınız."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51505
+#, fuzzy
 msgid ""
 "Whenever this file is updated, run <command>newaliases</command> to update "
 "and initialize the aliases database."
 msgstr ""
+"Bu dosya her güncellendiğinde, isimler veritabanını güncellemek ve başlatmak "
+"için <command>newaliases</command> komutunu çalıştır."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:51539
@@ -74960,6 +74982,7 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51541
+#, fuzzy
 msgid ""
 "This is the master configuration file for <application>Sendmail</"
 "application>. It controls the overall behavior of <application>Sendmail</"
@@ -74968,9 +74991,17 @@ msgid ""
 "configuration file is quite complex. Fortunately, this file rarely needs to "
 "be changed for standard mail servers."
 msgstr ""
+"Burası <application>Sendmail</application> uygulamasının ana yapılandırma "
+"dosyasıdır. Eposta adreslerini yeniden yazmaktan, uzaktan kontrollü posta "
+"sunucuları için red mesajı yazdırmaya kadar "
+"<application>Sendmail</application> uygulamasının her türlü genel "
+"davranışını kontrol eder. Bu yüzden, bu yapılandırma dosyası oldukça "
+"karmaşıktır. Neyse ki bu dosya standart posta sunucularında nadiren "
+"değiştirilmeye ihtiyaç duyar."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51550
+#, fuzzy
 msgid ""
 "The master <application>Sendmail</application> configuration file can be "
 "built from <citerefentry><refentrytitle>m4</refentrytitle><manvolnum>1</"
@@ -74978,13 +75009,22 @@ msgid ""
 "<application>Sendmail</application>. Refer to <filename>/usr/src/contrib/"
 "sendmail/cf/README</filename> for some of the details."
 msgstr ""
+"<application>Sendmail</application> ana yapılandırma dosyası "
+"<application>Sendmail</application> 'in özellikleri ve davranışlarını belirle"
+"yen<citerefentry><refentrytitle>m4</refentrytitle><manvolnum>1</manvolnum></c"
+"iterefentry> macrosundan yapılabilir. Detaylar için <filename>/usr/src/"
+"contrib/sendmail/cf/README</filename> adresine göz atabilirsiniz."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51557
+#, fuzzy
 msgid ""
 "Whenever changes to this file are made, <application>Sendmail</application> "
 "needs to be restarted for the changes to take effect."
 msgstr ""
+"Herhangi bir değişiklik yapıldığında, bu değişikliğin etki göstermesi için "
+"<application>Sendmail</application> uygulamasının yeniden başlatılması "
+"gerekir."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:51564
@@ -74993,21 +75033,32 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51566
+#, fuzzy
 msgid ""
 "This database file maps mail addresses for virtual domains and users to real "
 "mailboxes. These mailboxes can be local, remote, aliases defined in "
 "<filename>/etc/mail/aliases</filename>, or files. This allows multiple "
 "virtual domains to be hosted on one machine."
 msgstr ""
+"Bu veritabanı posta adreslerini sanal domainler ile ve kullanıcıları posta "
+"kutularıyla eşleştirir. Bu posta kutuları yerel, uzaktan kontrollü, "
+"<filename>/etc/mail/aliases</filename> bölümündeki isimler veya dosyalar "
+"olabilir. Bu da birden fazla sanal domainin bir ana bilgisayarda "
+"olabilmesine olanak sağlar."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51573
+#, fuzzy
 msgid ""
 "FreeBSD provides a sample configuration file in <filename>/etc/mail/"
 "virtusertable.sample</filename> to further demonstrate its format. The "
 "following example demonstrates how to create custom entries using that "
 "format:"
 msgstr ""
+"FreeBSD formatını daha iyi gösteribilmek için <filename>/etc/mail/"
+"virtusertable.sample</filename> konumunda örnek bir yapılandırma dosyası "
+"sunar. Aşağıdaki örnek bu formatı kullanarak kişisel girdiler oluşturmayı "
+"göstermektedir:"
 
 #. (itstool) path: listitem/programlisting
 #: book.translate.xml:51579
