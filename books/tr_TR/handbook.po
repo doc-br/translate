@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-06-22 21:51+0000\n"
-"Last-Translator: onuraydin3 <crymzonx@gmail.com>\n"
+"Last-Translator: firdevssevik <sevikfirdevs@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -41074,11 +41074,13 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:28143
+#, fuzzy
 msgid "Creating and Controlling Jails"
-msgstr ""
+msgstr "Hapis Oluşturma ve Kontrol Etme"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:28145
+#, fuzzy
 msgid ""
 "Some administrators divide jails into the following two types: "
 "<quote>complete</quote> jails, which resemble a real FreeBSD system, and "
@@ -41089,17 +41091,25 @@ msgid ""
 "userland: use prebuilt binaries (such as those supplied on an install media) "
 "or build from source."
 msgstr ""
+"Bazı yöneticiler hapisleri şu iki türe ayırır: gerçek bir FreeBSD sistemine "
+"b<quote>nzeyen <quote>tam</quote> hapisler ve muhtemelen ayrıcalıklarla "
+"çalışan bir uygulama veya hizmete ayrılmış <quote>hizmet</quote> hapisleri. "
+"Bu sadece kavramsal bir bölünmedir ve hapis oluşturma süreci bundan "
+"etkilenmez. Tam</quote> bir hapis oluştururken kullanıcı alanı kaynağı için "
+"iki seçenek vardır: Önceden oluşturulmuş derlenmiş dosyaları kullanın (bir "
+"yükleme ortamında sağlananlar gibi) veya kaynaktan oluşturun."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:28156
+#, fuzzy
 msgid "Installing a Jail"
-msgstr ""
+msgstr "Hapis Kurulumu"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:28159
 #, fuzzy
 msgid "To install a Jail from the Internet"
-msgstr "Ports Collection'dan kurmak için:"
+msgstr "İnternetten Hapis Kurma"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:28161
@@ -41111,113 +41121,145 @@ msgid ""
 "distributions will be installed into the destination directory, and some "
 "basic configuration of the jail:"
 msgstr ""
-"Oturum açma işlemi ve çeşitli yapılandırma dosyaları, <application>sshd</"
-"application> ve kimlik doğrulaması hakkında daha kapsamlı tartışma başlatmak "
-"için mevcut seçeneklerin listesi için <citerefentry><refentrytitle>sshd</"
-"refentrytitle><manvolnum>8</manvolnum></citerefentry> linkine bakınız."
+"<citerefentry><refentrytitle>Bsdinstall</refentrytitle><manvolnum>8</manvolnu"
+"m></citerefentry> aracı, bir hapis için gereken derlenmiş dosyaları almak ve "
+"yüklemek için kullanılabilir. Bu, hedef dizine dağıtılacak olan bir aynanın "
+"ve hapsin bazı temel yapılandırmasının seçilmesinden geçecektir:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:28167
 #, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>bsdinstall jail <replaceable>/here/is/the/jail</replaceable></userinput>"
-msgstr "<prompt>#</prompt> <userinput>pw lock<replaceable>toor</replaceable></userinput>"
+msgstr ""
+"<prompt>#</prompt> <userinput>bsdinstall jail <replaceable>/here/is/the/"
+"jail</replaceable></userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:28169
+#, fuzzy
 msgid ""
 "Once the command is complete, the next step is configuring the host to run "
 "the jail."
 msgstr ""
+"Komut tamamlandığında sonraki adım ana bilgisayarı, hapsi çalıştıracak "
+"şekilde yapılandırmadır."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:28174
+#, fuzzy
 msgid "To install a Jail from an ISO"
-msgstr ""
+msgstr "ISO'dan Hapis Kurma"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:28176
+#, fuzzy
 msgid ""
 "To install the userland from installation media, first create the root "
 "directory for the jail. This can be done by setting the <varname>DESTDIR</"
 "varname> variable to the proper location."
 msgstr ""
+"Kullanıcı alanını yükleme ortamından yüklemek için ilk olarak hapis için kök "
+"dizini oluşturun. Bu, <varname>DESTDIR</varname> değişkenini doğru konuma "
+"yerleştirerek yapılabilir."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:28181
+#, fuzzy
 msgid "Start a shell and define <varname>DESTDIR</varname>:"
-msgstr ""
+msgstr "Bir kabuk başlatın ve <varname>DESTDIR</varname>'ı tanımlayın:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:28183
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>sh</userinput>\n"
 "<prompt>#</prompt> <userinput>export DESTDIR=<replaceable>/here/is/the/jail</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>sh</userinput>\n"
+"<prompt>#</prompt> <userinput>export DESTDIR=<replaceable>/here/is/the/"
+"jail</replaceable></userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:28186
+#, fuzzy
 msgid ""
 "Mount the install media as covered in <citerefentry><refentrytitle>mdconfig</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> when using the install "
 "ISO:"
 msgstr ""
+"Kurulum ISO'yu kullanırken kurulum ortamını <citerefentry><refentrytitle>mdco"
+"nfig</refentrytitle><manvolnum>8</manvolnum></citerefentry>'de ele alındığı "
+"şekilde kurun:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:28189
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>mount -t cd9660 /dev/`mdconfig -f cdimage.iso` /mnt</userinput>\n"
 "<prompt>#</prompt> <userinput>cd /mnt/usr/freebsd-dist/</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>mount -t cd9660 /dev/`mdconfig -f cdimage.iso` "
+"/mnt</userinput>\n"
+"<prompt>#</prompt> <userinput>cd /mnt/usr/freebsd-dist/</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:28192
+#, fuzzy
 msgid ""
 "Extract the binaries from the tarballs on the install media into the "
 "declared destination. Minimally, only the base set needs to be extracted, "
 "but a complete install can be performed when preferred."
 msgstr ""
+"Derlenmiş dosyaları, kurulum ortamındaki tarball'lardan belirtilen hedefe "
+"çıkarın. Asgari olarak sadece temel setin çıkarılması gerekir ancak "
+"istenirse tam bir kurulum yapılabilir."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:28197
+#, fuzzy
 msgid "To install just the base system:"
-msgstr ""
+msgstr "Sadece Temel Sistemi Kurma:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:28199
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>tar -xf base.txz -C $DESTDIR</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>tar -xf base.txz -C $DESTDIR</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:28201
+#, fuzzy
 msgid "To install everything except the kernel:"
-msgstr ""
+msgstr "Çekirdek Dışındaki Her Şeyi Kurma:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:28203
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>for set in base ports; do tar -xf $set.txz -C $DESTDIR ; done</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>for set in base ports; do tar -xf $set.txz -C $"
+"DESTDIR ; done</userinput>"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:28207
 #, fuzzy
 msgid "To build and install a Jail from source"
-msgstr "Ports Collection'dan kurmak ve indirmek için:"
+msgstr "Kaynaktan bir Hapis oluşturma ve kurma"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:28209
+#, fuzzy
 msgid ""
 "The <citerefentry><refentrytitle>jail</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> manual page explains the procedure for building a "
 "jail:"
 msgstr ""
+"<citerefentry><refentrytitle>Hapis</refentrytitle><manvolnum>8</manvolnum></c"
+"iterefentry> el kitabında bir hapis oluşturma prosedürü açıklanmaktadır:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:28212
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>setenv D <replaceable>/here/is/the/jail</replaceable></userinput>\n"
 "<prompt>#</prompt> <userinput>mkdir -p $D</userinput>      <co xml:id=\"jailpath\"/>\n"
@@ -41227,9 +41269,23 @@ msgid ""
 "<prompt>#</prompt> <userinput>make distribution DESTDIR=$D</userinput>  <co xml:id=\"jaildistrib\"/>\n"
 "<prompt>#</prompt> <userinput>mount -t devfs devfs $D/dev</userinput>   <co xml:id=\"jaildevfs\"/>"
 msgstr ""
+"<prompt>#</prompt> <userinput>setenv D <replaceable>/here/is/the/"
+"jail</replaceable></userinput>\n"
+"<prompt>#</prompt> <userinput>mkdir -p $D</userinput>      <co xml:id=\""
+"jailpath\"/>\n"
+"<prompt>#</prompt> <userinput>cd /usr/src</userinput>\n"
+"<prompt>#</prompt> <userinput>make buildworld</userinput>  <co xml:id=\""
+"jailbuildworld\"/>\n"
+"<prompt>#</prompt> <userinput>make installworld DESTDIR=$D</userinput>  <co "
+"xml:id=\"jailinstallworld\"/>\n"
+"<prompt>#</prompt> <userinput>make distribution DESTDIR=$D</userinput>  <co "
+"xml:id=\"jaildistrib\"/>\n"
+"<prompt>#</prompt> <userinput>mount -t devfs devfs $D/dev</userinput>   <co "
+"xml:id=\"jaildevfs\"/>"
 
 #. (itstool) path: callout/para
 #: book.translate.xml:28222
+#, fuzzy
 msgid ""
 "Selecting a location for a jail is the best starting point. This is where "
 "the jail will physically reside within the file system of the jail's host. A "
@@ -41240,30 +41296,47 @@ msgid ""
 "essentially, a replication of every file present in a default installation "
 "of the FreeBSD base system."
 msgstr ""
+"Hapis için bir konum seçmek en iyi hareket noktasıdır. Bu, hapsin fiziksel "
+"olarak hapis ana bilgisayarının dosya sistemi bünyesinde kalacağı yerdir. "
+"İyi bir seçim <filename>/usr/jail/"
+"<replaceable>jailname</replaceable></filename> olabilir; burada "
+"<replaceable>jailname</replaceable>, hapsi tanımlayan ana bilgisayar adıdır. "
+"Genellikle <filename>/usr/</filename> hapis dosya sistemi için yeterli alana "
+"sahiptir. Bu da <quote>tam</quote> hapisler için esasen FreeBSD temel "
+"sisteminin varsayılan kurulumunda bulunan her dosyanın bir kopyasıdır."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:28235
+#, fuzzy
 msgid ""
 "If you have already rebuilt your userland using <command>make world</"
 "command> or <command>make buildworld</command>, you can skip this step and "
 "install your existing userland into the new jail."
 msgstr ""
+"Kullanıcı alanını <command>make world</command> veya "
+"<command>buildworld</command> kullanarak yeniden oluşturduysanız bu adımı "
+"atlayabilir ve mevcut kullanıcı alanınızı yeni hapse kurabilirsiniz."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:28242
+#, fuzzy
 msgid ""
 "This command will populate the directory subtree chosen as jail's physical "
 "location on the file system with the necessary binaries, libraries, manual "
 "pages and so on."
 msgstr ""
+"Bu komut, hapsin fiziksel konumu olarak seçilen dizin alt ağacını gerekli "
+"derlenmiş dosyalar, yordamlıklar, el kitapları vb. ile doldurur."
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:28249
+#, fuzzy
 msgid "distribution"
-msgstr ""
+msgstr "dağıtım"
 
 #. (itstool) path: callout/para
 #: book.translate.xml:28249
+#, fuzzy
 msgid ""
 "The <_:buildtarget-1/> target for <application>make</application> installs "
 "every needed configuration file. In simple words, it installs every "
@@ -41271,9 +41344,14 @@ msgid ""
 "etc</filename> directory of the jail environment: <filename>$D/etc/</"
 "filename>."
 msgstr ""
+"<application>Marka</application> <_:buildtarget-1/> hedefi gerekli her "
+"yapılandırma dosyasını yükler. Basit bir deyişle, <filename>/usr/src/etc/"
+"</filename>'nin yüklenebilir her dosyasını hapis ortamının "
+"<filename>/etc</filename> dizinine yükler: <filename>$D/etc/</filename>."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:28260
+#, fuzzy
 msgid ""
 "Mounting the <citerefentry><refentrytitle>devfs</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> file system inside a jail is not required. On the "
@@ -41287,12 +41365,24 @@ msgid ""
 "manvolnum></citerefentry> and <citerefentry><refentrytitle>devfs.conf</"
 "refentrytitle><manvolnum>5</manvolnum></citerefentry> manual pages."
 msgstr ""
+"<citerefentry><refentrytitle>devfs</refentrytitle><manvolnum>8</manvolnum></c"
+"iterefentry> dosya sistemini bir hapse kurmak gerekmez. Diğer yandan, "
+"herhangi bir uygulama veya hemen hemen her uygulama, verilen uygulamanın "
+"amacına bağlı olarak en az bir cihaza erişim gerektirir. Yanlış ayarlar bir "
+"saldırganın hapiste kötü şeyler yapmasına imkân tanıyacağı için hapis "
+"içinden cihazlara erişimi kontrol etmek çok önemlidir. <citerefentry><refentr"
+"ytitle>Devfs</refentrytitle><manvolnum>8</manvolnum></citerefentry> "
+"üzerindeki kontrol, "
+"<citerefentry><refentrytitle>devfs</refentrytitle><manvolnum> "
+"8</manvolnum></citerefentry> ve <citerefentry><refentrytitle>devfs.conf "
+"</refentrytitle><manvolnum>5</manvolnum></citerefentry> el kitaplarında "
+"açıklanan kural kümeleri aracılığıyla yönetilir."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:28275
 #, fuzzy
 msgid "Configuring the Host"
-msgstr "Yapılandırma Dosyaları"
+msgstr "Ana Bilgisayarı Yapılandırma"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:28277
