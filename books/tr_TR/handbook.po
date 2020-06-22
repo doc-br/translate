@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-22 05:08+0000\n"
-"Last-Translator: firdevssevik <sevikfirdevs@gmail.com>\n"
+"PO-Revision-Date: 2020-06-22 21:51+0000\n"
+"Last-Translator: Alparslangurbuz <alparslangurbuz@hotmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -18186,6 +18186,7 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:12797
+#, fuzzy
 msgid ""
 "If the mouse does not work, you will need to first configure it before "
 "proceeding. In recent <application>Xorg</application> versions, the "
@@ -18194,22 +18195,32 @@ msgid ""
 "behavior, add the following line to the <literal>ServerLayout</literal> or "
 "<literal>ServerFlags</literal> section of this file:"
 msgstr ""
+"Fare çalışmazsa, devam etmeden önce fareyi yapılandırmanız gerekir. Son "
+"<application>Xorg</application> sürümlerinde, <filename>xorg.conf</filename> "
+"dosyasındaki <literal>InputDevice</literal> bölümleri otomatik olarak "
+"algılanan aygıtlar lehine yok sayılır. Eski sürümü geri yüklemek için bu "
+"satırı <literal>ServerLayout</literal> veya <literal>ServerFlags</literal> "
+"bölümüne aşağıdaki satırı ekleyin:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:12806
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Option \"AutoAddDevices\" \"false\""
-msgstr ""
+msgstr "Option \"AutoAddDevices\" \"false\""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:12808
+#, fuzzy
 msgid ""
 "Input devices may then be configured as in previous versions, along with any "
 "other options needed (e.g., keyboard layout switching)."
 msgstr ""
+"Daha sonra giriş aygıtları, gerekli diğer seçeneklerle birlikte (ör. Klavye "
+"düzeni değiştirme) önceki sürümlerde olduğu gibi yapılandırılabilir."
 
 #. (itstool) path: note/para
 #: book.translate.xml:12813
+#, fuzzy
 msgid ""
 "As previously explained the <application>hald</application> daemon will, by "
 "default, automatically detect your keyboard. There are chances that your "
@@ -18221,9 +18232,20 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> utility or with a "
 "<application>hald</application>'s configuration rule."
 msgstr ""
+"Daha önce açıklandığı gibi, <application>hald</application> daemon "
+"varsayılan olarak klavyenizi otomatik olarak algılar. Klavye düzeninizin "
+"veya modelinizin doğru olmaması ihtimali vardır, "
+"<application>GNOME</application>, <application>KDE</application> veya "
+"<application>Xfce</application> gibi masaüstü ortamları klavyeyi "
+"yapılandırmak için araçlar sağlar. Ancak, klavye özelliklerini doğrudan <"
+"citerefentry vendor=\"xorg\"><refentrytitle>setxkbmap</refentrytitle><manvoln"
+"um></manvolnum>1</citerefentry> yardımcı programının yardımıyla veya bir "
+"<application>hald</application>'in yapılandırma kuralıyla ayarlamak "
+"mümkündür."
 
 #. (itstool) path: note/para
 #: book.translate.xml:12825
+#, fuzzy
 msgid ""
 "For example if, one wants to use a PC 102 keys keyboard coming with a french "
 "layout, we have to create a keyboard configuration file for "
@@ -18231,10 +18253,15 @@ msgid ""
 "and saved in the <filename>/usr/local/etc/hal/fdi/policy</filename> "
 "directory. This file should contain the following lines:"
 msgstr ""
+"Örneğin, birsi Fransız düzeniyle gelen bir PC 102 tuş klavyesi kullanmak "
+"istiyorsa, <application>hald</application> için "
+"<filename>x11-input.fdi</filename> adlı bir klavye yapılandırma dosyası "
+"oluşturmanız ve <filename>/usr/local/etc/hal/fdi/policy</filename> dizinine "
+"kaydedin. Bu dosya aşağıdaki satırları içermelidir:"
 
 #. (itstool) path: note/programlisting
 #: book.translate.xml:12833
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "&lt;?xml version=\"1.0\" encoding=\"iso-8859-1\"?&gt;\n"
 "&lt;deviceinfo version=\"0.2\"&gt;\n"
@@ -18246,48 +18273,74 @@ msgid ""
 "  &lt;/device&gt;\n"
 "&lt;/deviceinfo&gt;"
 msgstr ""
+"&lt;?xml version=\"1.0\" encoding=\"iso-8859-1\"?&gt;\n"
+"&lt;deviceinfo version=\"0.2\"&gt;\n"
+"  &lt;device&gt;\n"
+"    &lt;match key=\"info.capabilities\" contains=\"input.keyboard\"&gt;\n"
+"\t  &lt;merge key=\"input.x11_options.XkbModel\" type=\"string\""
+"&gt;pc102&lt;/merge&gt;\n"
+"\t  &lt;merge key=\"input.x11_options.XkbLayout\" type=\"string\""
+"&gt;fr&lt;/merge&gt;\n"
+"    &lt;/match&gt;\n"
+"  &lt;/device&gt;\n"
+"&lt;/deviceinfo&gt;"
 
 #. (itstool) path: note/para
 #: book.translate.xml:12843
+#, fuzzy
 msgid ""
 "If this file already exists, just copy and add to your file the lines "
 "regarding the keyboard configuration."
 msgstr ""
+"Bu dosya zaten varsa, klavye yapılandırmasıyla ilgili satırları kopyalayıp "
+"dosyanıza eklemeniz yeterlidir."
 
 #. (itstool) path: note/para
 #: book.translate.xml:12846
+#, fuzzy
 msgid ""
 "You will have to reboot your machine to force <application>hald</"
 "application> to read this file."
 msgstr ""
+"<application>hald</application>'ın bu dosyayı okumaya zorlamak için "
+"makinenizi yeniden başlatmanız gerekecek."
 
 #. (itstool) path: note/para
 #: book.translate.xml:12849
+#, fuzzy
 msgid ""
 "It is possible to do the same configuration from an X terminal or a script "
 "with this command line:"
 msgstr ""
+"Aynı yapılandırmayı bir X terminalinden veya bu komut satırıyla bir komut "
+"dosyasından yapmak mümkündür:"
 
 #. (itstool) path: note/screen
 #: book.translate.xml:12852
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>setxkbmap -model pc102 -layout fr</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>setxkbmap -model pc102 -layout fr</userinput>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:12854
+#, fuzzy
 msgid ""
 "<filename>/usr/local/share/X11/xkb/rules/base.lst</filename> lists the "
 "various keyboard, layouts and options available."
 msgstr ""
+"<filename>/usr/local/share/X11/xkb/rules/base.lst</filename> çeşitli klavye, "
+"düzen ve seçenekleri listeler."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:12859
+#, fuzzy
 msgid "<primary><application>Xorg</application> tuning</primary>"
-msgstr ""
+msgstr "<primary><application>Xorg</application>ayarlama</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:12862
+#, fuzzy
 msgid ""
 "The <filename>xorg.conf.new</filename> configuration file may now be tuned "
 "to taste. Open the file in a text editor such as <citerefentry vendor=\"ports"
@@ -18298,10 +18351,18 @@ msgid ""
 "frequencies, those settings can be added to <filename>xorg.conf.new</"
 "filename> under the <literal>\"Monitor\"</literal> section:"
 msgstr ""
+"<filename>Xorg.conf.new</filename> yapılandırma dosyası artık isteğinize "
+"göre ayarlanabilir. Dosyayı <citerefentry vendor=\"ports\""
+"><refentrytitle>emacs</refentrytitle><manvolnum>1</manvolnum></citerefentry> "
+"veya <citerefentry><refentrytitle>ee</refentrytitle><manvolnum>1</manvolnum><"
+"/citerefentry> gibi bir metin düzenleyicisinde açın. Monitör, senkronizasyon "
+"frekanslarının otomatik olarak algılanmasını desteklemeyen daha eski veya "
+"olağandışı bir modelse, bu ayarlar <literal>''Monitör\"</literal> bölümünde "
+"<filename>xorg.conf.new</filename> öğesine eklenebilir:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:12870
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Section \"Monitor\"\n"
 "\tIdentifier   \"Monitor0\"\n"
@@ -18311,18 +18372,31 @@ msgid ""
 "\tVertRefresh  48-120\n"
 "EndSection"
 msgstr ""
+"Section \"Monitor\"\n"
+"\tIdentifier   \"Monitor0\"\n"
+"\tVendorName   \"Monitor Vendor\"\n"
+"\tModelName    \"Monitor Model\"\n"
+"\tHorizSync    30-107\n"
+"\tVertRefresh  48-120\n"
+"EndSection"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:12878
+#, fuzzy
 msgid ""
 "Most monitors support sync frequency autodetection, making manual entry of "
 "these values unnecessary. For the few monitors that do not support "
 "autodetection, avoid potential damage by only entering values provided by "
 "the manufacturer."
 msgstr ""
+"Çoğu monitör, bu değerlerin manuel olarak girilmesini gereksiz kılan "
+"senkronizasyon frekansı otomatik algılamayı destekler. Otomatik algılamayı "
+"desteklemeyen birkaç monitör için, yalnızca üretici tarafından sağlanan "
+"değerleri girerek olası hasarlardan kaçının."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:12884
+#, fuzzy
 msgid ""
 "X allows DPMS (Energy Star) features to be used with capable monitors. The "
 "<citerefentry vendor=\"xfree86\"><refentrytitle>xset</"
@@ -18331,29 +18405,40 @@ msgid ""
 "enable DPMS features for your monitor, you must add the following line to "
 "the monitor section:"
 msgstr ""
+"X, DPMS (Energy Star) özelliklerinin kabiliyetli monitörlerle kullanılmasına "
+"izin verir. <citerefentry vendor=\"xfree86\""
+"><refentrytitle>Xset</refentrytitle><manvolnum>1</manvolnum></citerefentry> "
+"programı zaman aşımlarını kontrol eder ve bekleme, askıya alma veya kapatma "
+"modlarını zorlayabilir. Monitörünüz için DPMS özelliklerini etkinleştirmek "
+"istiyorsanız, monitör bölümüne aşağıdaki satırı eklemeniz gerekir:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:12890
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Option       \"DPMS\""
-msgstr ""
+msgstr "Option       \"DPMS\""
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:12892
+#, fuzzy
 msgid "<primary><filename>xorg.conf</filename></primary>"
-msgstr ""
+msgstr "<primary><filename>xorg.conf</filename></primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:12896
+#, fuzzy
 msgid ""
 "While the <filename>xorg.conf.new</filename> configuration file is still "
 "open in an editor, select the default resolution and color depth desired. "
 "This is defined in the <literal>\"Screen\"</literal> section:"
 msgstr ""
+"<filename>Xorg.conf.new</filename> yapılandırma dosyası hala bir "
+"düzenleyicide açıkken, istenen varsayılan çözünürlüğü ve renk derinliğini "
+"seçin. Bu <literal>\"Screen\"</literal> bölümünde tanımlanmıştır:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:12901
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Section \"Screen\"\n"
 "\tIdentifier \"Screen0\"\n"
@@ -18367,9 +18452,21 @@ msgid ""
 "\tEndSubSection\n"
 "EndSection"
 msgstr ""
+"Section \"Screen\"\n"
+"\tIdentifier \"Screen0\"\n"
+"\tDevice     \"Card0\"\n"
+"\tMonitor    \"Monitor0\"\n"
+"\tDefaultDepth 24\n"
+"\tSubSection \"Display\"\n"
+"\t\tViewport  0 0\n"
+"\t\tDepth     24\n"
+"\t\tModes     \"1024x768\"\n"
+"\tEndSubSection\n"
+"EndSection"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:12913
+#, fuzzy
 msgid ""
 "The <literal>DefaultDepth</literal> keyword describes the color depth to run "
 "at by default. This can be overridden with the <option>-depth</option> "
@@ -18381,16 +18478,30 @@ msgid ""
 "depth is twenty-four bits per pixel. At this color depth, the accepted "
 "resolution is 1024 by 768 pixels."
 msgstr ""
+"<literal>DefaultDepth</literal> anahtar sözcüğü, varsayılan olarak "
+"çalıştırılacak renk derinliğini açıklar. Bu, <citerefentry vendor=\"xorg\""
+"><refentrytitle>Xorg</refentrytitle><manvolnum>1</manvolnum></citerefentry> "
+"'a -depth komut satırı anahtarı ile geçersiz kılınabilir. "
+"<literal>Modes</literal> anahtar sözcüğü, belirtilen renk derinliği için "
+"çalıştırılacak çözünürlüğü açıklar. Hedef sistemin grafik donanımı "
+"tarafından tanımlandığı şekilde yalnızca VESA standart modlarının "
+"desteklendiğini unutmayın. Yukarıdaki örnekte, varsayılan renk derinliği "
+"piksel başına yirmi dört bittir. Bu renk derinliğinde kabul edilen "
+"çözünürlük 1024 x 768 pikseldir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:12924
+#, fuzzy
 msgid ""
 "Finally, write the configuration file and test it using the test mode given "
 "above."
 msgstr ""
+"Son olarak, yapılandırma dosyasını yazın ve yukarıda verilen test modunu "
+"kullanarak test edin."
 
 #. (itstool) path: note/para
 #: book.translate.xml:12928
+#, fuzzy
 msgid ""
 "One of the tools available to assist you during troubleshooting process are "
 "the <application>Xorg</application> log files, which contain information on "
@@ -18400,9 +18511,17 @@ msgid ""
 "from <filename>Xorg.0.log</filename> to <filename>Xorg.8.log</filename> and "
 "so forth."
 msgstr ""
+"Sorun giderme işlemi sırasında size yardımcı olacak araçlardan biri, "
+"<application>Xorg</application> sunucusunun bağlı olduğu her aygıt hakkında "
+"bilgi içeren <application>Xorg</application> günlük "
+"dosyalarıdır.<application> Xorg</application> günlük dosyası adları "
+"<filename>/var/log/Xorg.0.log</filename> biçimindedir. Günlüğün tam adı "
+"<filename>Xorg.0.log</filename> ile <filename>Xorg.8.log</filename> arasında "
+"değişebilir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:12940
+#, fuzzy
 msgid ""
 "If all is well, the configuration file needs to be installed in a common "
 "location where <citerefentry vendor=\"xorg\"><refentrytitle>Xorg</"
@@ -18410,15 +18529,22 @@ msgid ""
 "typically <filename>/etc/X11/xorg.conf</filename> or <filename>/usr/local/"
 "etc/X11/xorg.conf</filename>."
 msgstr ""
+"Her şey yolundaysa, yapılandırma dosyasının <citerefentry vendor=\"xorg\""
+"><refentrytitle>Xorg</refentrytitle><manvolnum>1</manvolnum></citerefentry>"
+"'un bulabileceği ortak bir yere kurulması gerekir. Bu genellikle <filename>/"
+"etc/X11/xorg.conf</filename> veya <filename>/usr/local/etc/X11/"
+"xorg.conf</filename> şeklindedir."
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:12945
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>cp xorg.conf.new /etc/X11/xorg.conf</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cp xorg.conf.new /etc/X11/xorg.conf</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:12947
+#, fuzzy
 msgid ""
 "The <application>Xorg</application> configuration process is now complete. "
 "<application>Xorg</application> may be now started with the <citerefentry "
@@ -18428,6 +18554,13 @@ msgid ""
 "\"xfree86\"><refentrytitle>xdm</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>."
 msgstr ""
+"<application>Xorg</application> yapılandırma işlemi tamamlandı. "
+"<application>Xorg</application> şimdi <citerefentry vendor=\"xfree86\""
+"><refentrytitle>startx</refentrytitle><manvolnum>1</manvolnum></citerefentry>"
+" yardımcı programıyla başlatılabilir. <application>Xorg</application> "
+"sunucusu <citerefentry vendor=\"xfree86\""
+"><refentrytitle>xdm</refentrytitle><manvolnum>1</manvolnum></citerefentry> "
+"kullanımı ile de başlatılabilir."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:12954
