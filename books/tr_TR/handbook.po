@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-21 23:16+0000\n"
-"Last-Translator: esradesteki <esradesteki20@gmail.com>\n"
+"PO-Revision-Date: 2020-06-22 04:29+0000\n"
+"Last-Translator: firdevssevik <sevikfirdevs@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -40818,69 +40818,97 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:28082
+#, fuzzy
 msgid "Terms Related to Jails"
-msgstr ""
+msgstr "Hapse İlişkin Terimler"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:28084
+#, fuzzy
 msgid ""
 "To facilitate better understanding of parts of the FreeBSD system related to "
 "jails, their internals and the way they interact with the rest of FreeBSD, "
 "the following terms are used further in this chapter:"
 msgstr ""
+"FreeBSD sisteminin hapisler, bunların iç kısımları ve FreeBSD'nin geri "
+"kalanıyla etkileşim biçimleriyle ilgili bölümlerinin daha iyi anlaşılmasını "
+"sağlamakiçin bu bölümün ilerleyen kısımlarında aşağıdaki terimler "
+"kullanılmaktadır:"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:28091
+#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> (command)"
 msgstr ""
+"<citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>(komut)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28093
+#, fuzzy
 msgid ""
 "Utility, which uses <citerefentry><refentrytitle>chroot</"
 "refentrytitle><manvolnum>2</manvolnum></citerefentry> FreeBSD system call to "
 "change the root directory of a process and all its descendants."
 msgstr ""
+"Bir işlemin kök dizinini ve onun tüm alt ögelerini değiştirmek için <citerefe"
+"ntry><refentrytitle>chroot</refentrytitle><manvolnum>2</manvolnum></citerefen"
+"try> FreeBSD sistem çağrısı kullanan bir yardımcı program."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:28100
+#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>2</manvolnum></"
 "citerefentry> (environment)"
 msgstr ""
+"<citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry>(ortam)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28102
+#, fuzzy
 msgid ""
 "The environment of processes running in a <quote>chroot</quote>. This "
 "includes resources such as the part of the file system which is visible, "
 "user and group IDs which are available, network interfaces and other IPC "
 "mechanisms, etc."
 msgstr ""
+"Bir <quote>chroot</quote>'ta çalışan işlemlerin ortamı. Bu, dosya sisteminin "
+"görünür olan kısmı, mevcut kullanıcı ve grup kimlikleri, ağ arayüzleri ve "
+"diğer IPC mekanizmaları gibi kaynakları içerir."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:28111
+#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>jail</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> (command)"
 msgstr ""
+"<citerefentry><refentrytitle>hapis</refentrytitle><manvolnum>8</manvolnum></c"
+"iterefentry>(komut)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28113
+#, fuzzy
 msgid ""
 "The system administration utility which allows launching of processes within "
 "a jail environment."
 msgstr ""
+"Bir hapis ortamında süreçlerin başlatılmasına izin veren sistem yönetimi "
+"yardımcı programı."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:28119
+#, fuzzy
 msgid "host (system, process, user, etc.)"
-msgstr ""
+msgstr "ana bilgisayar (sistemi, işlemi, kullanıcısı vb.)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28121
+#, fuzzy
 msgid ""
 "The controlling system of a jail environment. The host system has access to "
 "all the hardware resources available, and can control processes both outside "
@@ -40888,11 +40916,18 @@ msgid ""
 "host system from a jail is that the limitations which apply to superuser "
 "processes inside a jail are not enforced for processes of the host system."
 msgstr ""
+"Bir hapis ortamının kontrol sistemi. Ana bilgisayar sistemi, mevcut tüm "
+"donanım kaynaklarına erişebilir ve bir hapis ortamının hem içindeki hem de "
+"dışındaki işlemleri kontrol edebilir. Ana bilgisayar sisteminin hapisten "
+"önemli farklarından biri, bir hapisteki yetkili kullanıcı işlemleri için "
+"geçerli olan sınırlamaların ana bilgisayar sisteminin işlemleri için "
+"uygulanmamasıdır."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:28133
+#, fuzzy
 msgid "hosted (system, process, user, etc.)"
-msgstr ""
+msgstr "ana bilgisayardaki (sistem, işlem, kullanıcı vb.)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28135
