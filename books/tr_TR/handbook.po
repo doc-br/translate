@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-22 22:00+0000\n"
+"PO-Revision-Date: 2020-06-22 22:14+0000\n"
 "Last-Translator: firdevssevik <sevikfirdevs@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
@@ -41428,12 +41428,13 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: book.translate.xml:28296
+#, fuzzy
 msgid "Configure jail parameters in <filename>jail.conf</filename>:"
-msgstr ""
+msgstr "<filename>jail.conf</filename>'ta hapis parametrelerini yapılandırın:"
 
 #. (itstool) path: step/programlisting
 #: book.translate.xml:28298
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<replaceable>www</replaceable> {\n"
 "    host.hostname = <replaceable>www.example.org</replaceable>;           # Hostname\n"
@@ -41445,17 +41446,36 @@ msgid ""
 "    exec.stop = \"/bin/sh /etc/rc.shutdown\";    # Stop command\n"
 "}"
 msgstr ""
+"<replaceable>www</replaceable> {\n"
+"    host.hostname = <replaceable>www.example.org</replaceable>;           # "
+"Hostname\n"
+"    ip4.addr = <replaceable>192.168.0.10</replaceable>;                   # "
+"IP address of the jail\n"
+"    path =\"<replaceable>/usr/jail/www</replaceable>\";                     #"
+" Path to the jail\n"
+"    devfs_ruleset = \"<replaceable>www_ruleset</replaceable>\";             #"
+" devfs ruleset\n"
+"    mount.devfs;                               # Mount devfs inside the "
+"jail\n"
+"    exec.start = \"/bin/sh /etc/rc\";            # Start command\n"
+"    exec.stop = \"/bin/sh /etc/rc.shutdown\";    # Stop command\n"
+"}"
 
 #. (itstool) path: step/para
 #: book.translate.xml:28308
+#, fuzzy
 msgid "Configure jails to start at boot time in <filename>rc.conf</filename>:"
 msgstr ""
+"Hapisleri <filename>rc.conf</filename>'ta önyükleme zamanında başlayacak "
+"şekilde yapılandırın:"
 
 #. (itstool) path: step/programlisting
 #: book.translate.xml:28311
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "jail_enable=\"YES\"   # Set to NO to disable starting of any jails"
 msgstr ""
+"jail_enable=\"YES\"   # Herhangi bir hapsin başlatılmasını devre dışı "
+"bırakmak için NO olarak ayarlayın"
 
 #. (itstool) path: step/para
 #: book.translate.xml:28313
