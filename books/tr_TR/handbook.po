@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-06-23 09:17+0000\n"
-"Last-Translator: onuraydin3 <crymzonx@gmail.com>\n"
+"Last-Translator: firdevssevik <sevikfirdevs@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -41479,6 +41479,7 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: book.translate.xml:28313
+#, fuzzy
 msgid ""
 "The default startup of jails configured in <citerefentry><refentrytitle>jail."
 "conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>, will run the "
@@ -41487,33 +41488,52 @@ msgid ""
 "the jail should be changed, by setting the <varname>exec.start</varname> "
 "option appropriately."
 msgstr ""
+"<citerefentry><refentrytitle>jail.conf</refentrytitle><manvolnum>5</manvolnum"
+">'te yapılandırılan hapislerin varsayılan başlatılması, hapsin <filename>/"
+"etc/rc</filename> komut dosyasını çalıştırır, bu da hapsin tam bir sanal "
+"sistem olduğunu varsayar. Hizmet hapislerinde <varname>exec.start</varname> "
+"seçeneği uygun şekilde ayarlanarak hapsin varsayılan başlatma komutu "
+"değiştirilmelidir."
 
 #. (itstool) path: note/para
 #: book.translate.xml:28322
+#, fuzzy
 msgid ""
 "For a full list of available options, please see the "
 "<citerefentry><refentrytitle>jail.conf</refentrytitle><manvolnum>5</"
 "manvolnum></citerefentry> manual page."
 msgstr ""
+"Mevcut seçeneklerin tam listesi için lütfen <citerefentry><refentrytitle>jail"
+".conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> el kitabına "
+"bakın."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:28328
+#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>service</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> can be used to start or stop a jail by hand, if an "
 "entry for it exists in <filename>jail.conf</filename>:"
 msgstr ""
+"<citerefentry><refentrytitle>hizmet</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>, <filename>jail.conf</filename>'ta bunun için bir giriş "
+"mevcutsa el ile bir hapsi başlatmak veya durdurmak için kullanılabilir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:28332
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>service jail start <replaceable>www</replaceable></userinput>\n"
 "<prompt>#</prompt> <userinput>service jail stop <replaceable>www</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>service jail start "
+"<replaceable>www</replaceable></userinput>\n"
+"<prompt>#</prompt> <userinput>service jail stop "
+"<replaceable>www</replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:28335
+#, fuzzy
 msgid ""
 "Jails can be shut down with <citerefentry><refentrytitle>jexec</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>. Use "
@@ -41522,24 +41542,38 @@ msgid ""
 "<citerefentry><refentrytitle>jexec</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> to run the shutdown script in that jail."
 msgstr ""
+"Hapisler <citerefentry><refentrytitle>jexec</refentrytitle><manvolnum>8</manv"
+"olnum></citerefentry> ile kapatılabilir. Hapsin <varname>JID</varname>'sini "
+"tanımlamak için <citerefentry><refentrytitle>jls</refentrytitle><manvolnum>8<"
+"/manvolnum></citerefentry> kullanın, ardından o hapsin kapatma komut "
+"dosyasını çalıştırmak için <citerefentry><refentrytitle>jexec</refentrytitle>"
+"<manvolnum>8</manvolnum></citerefentry> kullanın."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:28339
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>jls</userinput>\n"
 "   JID  IP Address      Hostname                      Path\n"
 "     3  192.168.0.10    www                           /usr/jail/www\n"
 "<prompt>#</prompt> <userinput>jexec <replaceable>3</replaceable> /etc/rc.shutdown</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>jls</userinput>\n"
+"   JID  IP Address      Hostname                      Path\n"
+"     3  192.168.0.10    www                           /usr/jail/www\n"
+"<prompt>#</prompt> <userinput>jexec <replaceable>3</replaceable> /etc/"
+"rc.shutdown</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:28344
+#, fuzzy
 msgid ""
 "More information about this can be found in the "
 "<citerefentry><refentrytitle>jail</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> manual page."
 msgstr ""
+"Bununla ilgili daha fazla bilgi <citerefentry><refentrytitle>hapis</refentryt"
+"itle><manvolnum>8</manvolnum></citerefentry> el kitabında bulunabilir."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:28350
