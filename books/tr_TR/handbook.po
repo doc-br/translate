@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-06-23 17:45+0000\n"
-"Last-Translator: firdevssevik <sevikfirdevs@gmail.com>\n"
+"Last-Translator: Alparslangurbuz <alparslangurbuz@hotmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -18566,18 +18566,23 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:12954
+#, fuzzy
 msgid ""
 "Configuration with <trademark class=\"registered\">Intel</trademark> "
 "<literal>i810</literal> Graphics Chipsets"
 msgstr ""
+"<trademark class=\"registered\">Intel</trademark><literal>i810</literal> "
+"Grafik Yonga Kümeleriyle Yapılandırma"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:12957
+#, fuzzy
 msgid "<primary>Intel i810 graphic chipset</primary>"
-msgstr ""
+msgstr "<primary>Intel i810 grafik yonga seti</primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12961
+#, fuzzy
 msgid ""
 "Configuration with <trademark class=\"registered\">Intel</trademark> i810 "
 "integrated chipsets requires the <filename>agpgart</filename> AGP "
@@ -18585,9 +18590,15 @@ msgid ""
 "See the <citerefentry><refentrytitle>agp</refentrytitle><manvolnum>4</"
 "manvolnum></citerefentry> driver manual page for more information."
 msgstr ""
+"<trademark class=\"registered\">Intel</trademark> i810 tümleşik yonga "
+"setleri ile yapılandırma, <application>Xorg</application>'un kartı "
+"kullanması için <filename>agpgart</filename> AGP programlama arabirimini "
+"gerektirir. Daha fazla bilgi için <citerefentry><refentrytitle>agp</refentryt"
+"itle><manvolnum>4</manvolnum></citerefentry>sürücü el kitabı sayfasına bakın."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12967
+#, fuzzy
 msgid ""
 "This will allow configuration of the hardware as any other graphics board. "
 "Note on systems without the <citerefentry><refentrytitle>agp</"
@@ -18597,6 +18608,13 @@ msgid ""
 "driver has to be in the kernel at boot time through being compiled in or "
 "using <filename>/boot/loader.conf</filename>."
 msgstr ""
+"Bu, donanımın diğer grafik kartları gibi yapılandırılmasına izin verecektir. "
+"Çekirdeğinde derlenmiş <citerefentry><refentrytitle>agp</refentrytitle><manvo"
+"lnum>4</manvolnum></citerefentry> sürücüsü olmayan sistemlere, modülü <citere"
+"fentry><refentrytitle>kldload</refentrytitle><manvolnum>8</manvolnum></citere"
+"fentry> ile yüklemeye çalışmak çalışmaz. Bu sürücü <filename>/boot/"
+"loader.conf</filename>dosyasında derlenerek veya önyükleme sırasında "
+"çekirdeğin içinde olmalıdır."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:12976
