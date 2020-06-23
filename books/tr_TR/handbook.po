@@ -17,8 +17,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-23 09:17+0000\n"
-"Last-Translator: firdevssevik <sevikfirdevs@gmail.com>\n"
+"PO-Revision-Date: 2020-06-23 17:45+0000\n"
+"Last-Translator: nurbanu  hasanoğlu <hasanoglunurbanu@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -72525,150 +72525,202 @@ msgstr ""
 #: book.translate.xml:49648
 #, fuzzy
 msgid "Line 1:"
-msgstr "Satır 1:"
+msgstr "1. Satır:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49651
+#, fuzzy
 msgid ""
 "Identifies the <literal>default</literal> entry. Commands in this entry "
 "(lines 2 through 9) are executed automatically when <command>ppp</command> "
 "is run."
 msgstr ""
+"<literal>default</literal> girişi tanımlar. Bu girdideki komutlar (2'den 9'a "
+"kadar), <command>ppp</command> çalıştığında otomatik olarak çalışcaktır."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:49659
+#, fuzzy
 msgid "Line 2:"
-msgstr ""
+msgstr "2. Satır:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49662
+#, fuzzy
 msgid ""
 "Enables verbose logging parameters for testing the connection. Once the "
 "configuration is working satisfactorily, this line should be reduced to:"
 msgstr ""
+"Bağlantıyı test etmek için ayrıntılı kayıt parametrelerini etkinleştirir. "
+"Bir kez \tyapılandırma düzgün bir şekilde çalıştığında, bu satır buna "
+"indirgenmelidir:"
 
 #. (itstool) path: listitem/programlisting
 #: book.translate.xml:49667
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "set log phase tun"
-msgstr ""
+msgstr "set log phase tun"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:49673
+#, fuzzy
 msgid "Line 3:"
-msgstr ""
+msgstr "3. Satır:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49676
+#, fuzzy
 msgid ""
 "Displays the version of <citerefentry><refentrytitle>ppp</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> to the <acronym>PPP</"
 "acronym> software running on the other side of the connection."
 msgstr ""
+"Bağlantının diğer tarafında çalışan <acronym>PPP</acronym> yazılımının <citer"
+"efentry><refentrytitle>ppp</refentrytitle><manvolnum>8</manvolnum></citerefen"
+"try> versiyonunu görüntüler."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:49683
+#, fuzzy
 msgid "Line 4:"
-msgstr ""
+msgstr "4. Satır:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49686
+#, fuzzy
 msgid ""
 "Identifies the device to which the modem is connected, where <filename>COM1</"
 "filename> is <filename>/dev/cuau0</filename> and <filename>COM2</filename> "
 "is <filename>/dev/cuau1</filename>."
 msgstr ""
+"<filename>COM1</filename>'in <filename>/dev/cuau0</filename> ve "
+"<filename>COM2</filename>'nin <filename>/dev/cuau1</filename> olduğu modemin "
+"bağlı olduğu cihazı tanımlar."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:49695
+#, fuzzy
 msgid "Line 5:"
-msgstr ""
+msgstr "5. Satır:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49698
+#, fuzzy
 msgid ""
 "Sets the connection speed. If <literal>115200</literal> does not work on an "
 "older modem, try <literal>38400</literal> instead."
 msgstr ""
+"Bağlantı hızını kurar. Eğer <literal>115200</literal> eski bir modemde "
+"çalışmazsa, yerine <literal>38400</literal>'ü deneyin."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:49705
+#, fuzzy
 msgid "Lines 6 &amp; 7:"
-msgstr ""
+msgstr "6. &amp;  7. Satırlar:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49708
+#, fuzzy
 msgid ""
 "The dial string written as an expect-send syntax. Refer to "
 "<citerefentry><refentrytitle>chat</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> for more information."
 msgstr ""
+"Arama dizisi beklenen-gönderilen söz diziminde yazılmıştır. Daha fazla bilgi "
+"için <citerefentry><refentrytitle>chat</refentrytitle><manvolnum>8</manvolnum"
+"></citerefentry>'e göz atın."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49712
+#, fuzzy
 msgid ""
 "Note that this command continues onto the next line for readability. Any "
 "command in <filename>ppp.conf</filename> may do this if the last character "
 "on the line is <literal>\\</literal>."
 msgstr ""
+"Bu komutun okunabilirlik için sıradaki satıra kadar devam ettiğini "
+"unutmayın. <filename>ppp.conf</filename>'daki herhangi bir komut, eğer "
+"satırdaki son karakter <literal>\\</literal> ise bunu yapabilir."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:49721
+#, fuzzy
 msgid "Line 8:"
-msgstr ""
+msgstr "8. Satır:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49724
+#, fuzzy
 msgid "Sets the idle timeout for the link in seconds."
-msgstr ""
+msgstr "Bağlantının eylemsizlik zaman aşımını saniye cinsinden ayarlar."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:49730
+#, fuzzy
 msgid "Line 9:"
-msgstr ""
+msgstr "9. Satır:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49733
+#, fuzzy
 msgid ""
 "Instructs the peer to confirm the <acronym>DNS</acronym> settings. If the "
 "local network is running its own <acronym>DNS</acronym> server, this line "
 "should be commented out, by adding a <literal>#</literal> at the beginning "
 "of the line, or removed."
 msgstr ""
+"Eşe <acronym>DNS</acronym> ayarlarını onaylaması talimatını verir. Eğer "
+"yerel ağ kendi <acronym>DNS</acronym> sunucusunda çalışıyorsa, satır başına "
+"<literal>#</literal> eklenerek ya da silinerek bu satır devre dışı "
+"bırakılmalıdır."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:49743
+#, fuzzy
 msgid "Line 10:"
-msgstr ""
+msgstr "10. Satır:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49746
+#, fuzzy
 msgid ""
 "A blank line for readability. Blank lines are ignored by "
 "<citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>."
 msgstr ""
+"Okunabilirlik için boş bir satır. Boş satırlar <citerefentry><refentrytitle>p"
+"pp</refentrytitle><manvolnum>8</manvolnum></citerefentry> tarafından "
+"yoksayılır."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:49752
+#, fuzzy
 msgid "Line 11:"
-msgstr ""
+msgstr "11. Satır:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49755
+#, fuzzy
 msgid ""
 "Identifies an entry called <literal>provider</literal>. This could be "
 "changed to the name of the <acronym>ISP</acronym> so that <option>load "
 "<replaceable>ISP</replaceable></option> can be used to start the connection."
 msgstr ""
+"<literal>provider</literal> isimli bir girdi tanımlar. Bu "
+"<acronym>ISP</acronym>'nin adıyla değiştirilebilir böylece "
+"<option>load<replaceable>ISP</replaceable></option> bağlantıyı başlatmak "
+"için kullanılabilir."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:49765
+#, fuzzy
 msgid "Line 12:"
-msgstr ""
+msgstr "12. Satır:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49768
+#, fuzzy
 msgid ""
 "Use the phone number for the <acronym>ISP</acronym>. Multiple phone numbers "
 "may be specified using the colon (<literal>:</literal>) or pipe character "
@@ -72678,43 +72730,63 @@ msgid ""
 "enclose the entire set of phone numbers between quotation marks (<literal>"
 "\"</literal>) to prevent dialing failures."
 msgstr ""
+"<acronym>ISP</acronym> için telefon numarasını kullanın. Birden fazla "
+"telefon numarası belirtmek için iki nokta üst üste (<literal>:</literal>) "
+"veya düz çizgi (<literal>|</literal>) ayırıcı olarak kullanılabilir. Farklı "
+"numaralar arası geçiş yapmak için iki nokta üst üste kullanın. Her zaman ilk "
+"önce ilk numarayı aramayı deneyin ve ancak ilk numara çalışmazsa diğer "
+"numaraları kullanın. Arama hatalarını engellemek için her zaman telefon "
+"numaralarını tırnak işareti (<literal>\"</literal>) içine alın."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:49783
+#, fuzzy
 msgid "Lines 13 &amp; 14:"
-msgstr ""
+msgstr "13. &amp; 14. Satırlar:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49786
+#, fuzzy
 msgid "Use the user name and password for the <acronym>ISP</acronym>."
-msgstr ""
+msgstr "<acronym>ISP</acronym> için kullanıcı adını ve şifreyi kullanın."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:49792 book.translate.xml:50197
+#, fuzzy
 msgid "Line 15:"
-msgstr ""
+msgstr "15. Satır:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49795
+#, fuzzy
 msgid ""
 "Sets the default idle timeout in seconds for the connection. In this "
 "example, the connection will be closed automatically after 300 seconds of "
 "inactivity. To prevent a timeout, set this value to zero."
 msgstr ""
+"Varsayılan eylemsizlik zaman aşımını saniye cinsinden ayarlar. Bu örnekte, "
+"bağlantı \totomatik olarak 300 saniyelik durgunluk sonrasında kapanacaktır. "
+"Bir zaman aşımını \tengellemek için, bu değeri 0 yapın."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:49804
+#, fuzzy
 msgid "Line 16:"
-msgstr ""
+msgstr "16. Satır:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49806
+#, fuzzy
 msgid ""
 "Sets the interface addresses. The values used depend upon whether a static "
 "<acronym>IP</acronym> address has been obtained from the <acronym>ISP</"
 "acronym> or if it instead negotiates a dynamic <acronym>IP</acronym> address "
 "during connection."
 msgstr ""
+"Arayüz adreslerini ayarlar. Kullanılan değerler, <acronym>ISP</acronym>'den "
+"elde edilmiş sabit bir <acronym>IP</acronym> adresine veya bunun yerine "
+"bağlantı sırasında atlatılmış dinamik bir <acronym>IP</acronym> adresine "
+"dayanır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:49813
