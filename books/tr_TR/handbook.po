@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-06-23 17:45+0000\n"
-"Last-Translator: nurbanu  hasanoğlu <hasanoglunurbanu@gmail.com>\n"
+"Last-Translator: firdevssevik <sevikfirdevs@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -41577,39 +41577,53 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:28350
+#, fuzzy
 msgid "Fine Tuning and Administration"
-msgstr ""
+msgstr "İnce Ayar ve Yönetim"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:28352
+#, fuzzy
 msgid ""
 "There are several options which can be set for any jail, and various ways of "
 "combining a host FreeBSD system with jails, to produce higher level "
 "applications. This section presents:"
 msgstr ""
+"Herhangi bir hapis için belirlenebilecek farklı seçenekler ve daha üst düzey "
+"uygulamalar üretmek için bir ana bilgisayar FreeBSD sistemini hapislerle "
+"birleştirmenin çeşitli yolları vardır. Bu bölüm aşağıdakileri sunar:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28359
+#, fuzzy
 msgid ""
 "Some of the options available for tuning the behavior and security "
 "restrictions implemented by a jail installation."
 msgstr ""
+"Bir hapis kurulumunun gerçekleştirdiği davranış ve güvenlik kısıtlamalarını "
+"ayarlamak için mevcut seçeneklerden bazıları."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28365
+#, fuzzy
 msgid ""
 "Some of the high-level applications for jail management, which are available "
 "through the FreeBSD Ports Collection, and can be used to implement overall "
 "jail-based solutions."
 msgstr ""
+"FreeBSD Port Koleksiyonu aracılığıyla edinilebilen ve genel hapis tabanlı "
+"çözümleri uygulamak için kullanılabilen bazı üst düzey hapis yönetimi "
+"uygulamaları."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:28373
+#, fuzzy
 msgid "System Tools for Jail Tuning in FreeBSD"
-msgstr ""
+msgstr "FreeBSD'de Hapis Ayarı için Sistem Araçları"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:28375
+#, fuzzy
 msgid ""
 "Fine tuning of a jail's configuration is mostly done by setting "
 "<citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></"
@@ -41622,44 +41636,62 @@ msgid ""
 "citerefentry> and <citerefentry><refentrytitle>sysctl</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> manual pages."
 msgstr ""
+"Bir hapis yapılandırmasının ince ayarı çoğunlukla <citerefentry><refentrytitl"
+"e>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> değişkenleri "
+"ayarlanarak yapılır. İlgili tüm seçenekleri düzenlemek için temel olarak bir "
+"sysctl özel alt ağacı vardır: <varname>security.jail.*</varname>FreeBSD "
+"çekirdek seçenekleri hiyerarşisi. Aşağıda, varsayılan değerleriyle birlikte "
+"hapisle ilgili ana sysctls'in bir listesi bulunmaktadır. İsimler açıklayıcı "
+"olmalıdır ancak bunlar hakkında daha fazla bilgi için lütfen <citerefentry><r"
+"efentrytitle>hapis</refentrytitle><manvolnum>8</manvolnum></citerefentry> ve "
+"<citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> el kitaplarına bakın."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28387
+#, fuzzy
 msgid "<varname>security.jail.set_hostname_allowed: 1</varname>"
-msgstr ""
+msgstr "<varname>security.jail.set_hostname_allowed: 1</varname>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28392
+#, fuzzy
 msgid "<varname>security.jail.socket_unixiproute_only: 1</varname>"
-msgstr ""
+msgstr "<varname>security.jail.socket_unixiproute_only: 1</varname>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28397
+#, fuzzy
 msgid "<varname>security.jail.sysvipc_allowed: 0</varname>"
-msgstr ""
+msgstr "<varname>security.jail.sysvipc_allowed: 0</varname>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28402
+#, fuzzy
 msgid "<varname>security.jail.enforce_statfs: 2</varname>"
-msgstr ""
+msgstr "<varname>security.jail.enforce_statfs: 2</varname>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28407
+#, fuzzy
 msgid "<varname>security.jail.allow_raw_sockets: 0</varname>"
-msgstr ""
+msgstr "<varname>security.jail.allow_raw_sockets: 0</varname>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28412
+#, fuzzy
 msgid "<varname>security.jail.chflags_allowed: 0</varname>"
-msgstr ""
+msgstr "<varname>security.jail.chflags_allowed: 0</varname>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28417
+#, fuzzy
 msgid "<varname>security.jail.jailed: 0</varname>"
-msgstr ""
+msgstr "<varname>security.jail.jailed: 0</varname>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:28421
+#, fuzzy
 msgid ""
 "These variables can be used by the system administrator of the "
 "<emphasis>host system</emphasis> to add or remove some of the limitations "
@@ -41675,9 +41707,23 @@ msgid ""
 "in-kernel data, such as setting the <varname>securelevel</varname> of the "
 "kernel."
 msgstr ""
+"Bu değişkenler <emphasis>ana bilgisayar sistemi</emphasis>in sistem "
+"yöneticisi tarafından <systemitem class=\"username\">kök</systemitem> "
+"kullanıcıya varsayılan olarak getirilen bazı sınırlamaları eklemek veya "
+"kaldırmak için kullanılabilir. Kaldırılamayan bazı sınırlamalar olduğunu "
+"unutmayın. <systemitem class=\"username\">Kök</systemitem> kullanıcının bir "
+"<citerefentry>hapis<manvolnum>8</manvolnum> içerisinden dosya sistemlerini "
+"kurmasına veya kaldırmasına izin verilmez. Bir hapsin içindeki <systemitem "
+"class=\"username\">kök</systemitem>, "
+"<refentrytitle>devfs</refentrytitle><manvolnum>8</citerefentry> kural "
+"gruplarını yükleyemez veya kaldıramaz, güvenlik duvarı kurallarını "
+"ayarlayamaz veya çekirdeğin <varname>securelevel</varname>'ini ayarlamak "
+"gibi çekirdek içi verilerin değiştirilmesini gerektiren diğer birçok yönetim "
+"görevini gerçekleştiremez."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:28433
+#, fuzzy
 msgid ""
 "The base system of FreeBSD contains a basic set of tools for viewing "
 "information about the active jails, and attaching to a jail to run "
@@ -41687,16 +41733,28 @@ msgid ""
 "citerefentry> commands are part of the base FreeBSD system, and can be used "
 "to perform the following simple tasks:"
 msgstr ""
+"FreeBSD'nin temel sistemi, aktif hapisler hakkındaki bilgileri görüntülemek "
+"ve yönetimsel komutları çalıştırmak amacıyla bir hapse bağlamak için temel "
+"bir araç seti içerir. <citerefentry><refentrytitle>Jls</refentrytitle><manvol"
+"num>8</manvolnum></citerefentry> ve <citerefentry><refentrytitle>jexec</refen"
+"trytitle><manvolnum>8</manvolnum></citerefentry> komutları temel FreeBSD "
+"sisteminin bir parçasıdır ve aşağıdaki basit görevleri gerçekleştirmek için "
+"kullanılabilir:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28441
+#, fuzzy
 msgid ""
 "Print a list of active jails and their corresponding jail identifier "
 "(<acronym>JID</acronym>), <acronym>IP</acronym> address, hostname and path."
 msgstr ""
+"Aktif hapislerin bir listesini ve bunlara karşılık gelen hapis "
+"tanımlayıcısını (<acronym>JID</acronym>), <acronym>IP</acronym> adresini, "
+"ana bilgisayar adını ve yolunu yazdırın."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28447
+#, fuzzy
 msgid ""
 "Attach to a running jail, from its host system, and run a command inside the "
 "jail or perform administrative tasks inside the jail itself. This is "
@@ -41706,20 +41764,31 @@ msgid ""
 "citerefentry> utility can also be used to start a shell in a jail to do "
 "administration in it; for example:"
 msgstr ""
+"Ana bilgisayar sisteminden, çalışan bir hapsi ekleyin ve hapsin içinde bir "
+"komut çalıştırın veya hapsin kendi içindeki yönetim görevlerini "
+"gerçekleştirin. Bu, özellikle de <systemitem class=\"username\""
+">kök</systemitem> kullanıcı bir hapsi temiz bir şekilde kapatmak istediğinde "
+"yararlıdır. <citerefentry><refentrytitle>Jexec</refentrytitle><manvolnum>8</m"
+"anvolnum></citerefentry> yardımcı programı, bir hapiste yönetimi "
+"gerçekleştirmek amacıyla bir kabuk başlatmak için de kullanılabilir; örneğin:"
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:28455
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>jexec <replaceable>1</replaceable> tcsh</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>jexec <replaceable>1</replaceable> "
+"tcsh</userinput>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:28461
+#, fuzzy
 msgid "High-Level Administrative Tools in the FreeBSD Ports Collection"
-msgstr ""
+msgstr "FreeBSD Port Koleksiyonundaki Üst Düzey Yönetim Araçları"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:28464
+#, fuzzy
 msgid ""
 "Among the many third-party utilities for jail administration, one of the "
 "most complete and useful is <package>sysutils/ezjail</package>. It is a set "
@@ -41729,14 +41798,23 @@ msgid ""
 "handbook/jails-ezjail.html\">the handbook section on <application>ezjail</"
 "application></link> for more information."
 msgstr ""
+"Hapis yönetimi için birçok üçüncü taraf yardımcı program arasında en "
+"eksiksiz ve en kullanışlı olanlardan biri <package>sysutils/ezjail</package>"
+"'dir. Bu, <citerefentry><refentrytitle>hapis</refentrytitle><manvolnum>8</man"
+"volnum></citerefentry> yönetimine katkıda bulunan bir dizi komut dosyasıdır. "
+"Daha fazla bilgi için lütfen <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US."
+"ISO8859-1/books/handbook/jails-ezjail.html\">'in "
+"<application>ezjail</application></link>'daki el kitabı bölümüne bakınız."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:28474
+#, fuzzy
 msgid "Keeping Jails Patched and up to Date"
-msgstr ""
+msgstr "Hapisleri Yamalı ve Güncel Tutmak"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:28476
+#, fuzzy
 msgid ""
 "Jails should be kept up to date from the host operating system as attempting "
 "to patch userland from within the jail may likely fail as the default "
@@ -41748,14 +41826,28 @@ msgid ""
 "manvolnum></citerefentry> to maintain jails instead. Use <option>-b</option> "
 "to specify the path of the jail to be updated."
 msgstr ""
+"Hapisler, ana bilgisayar işletim sisteminden güncel tutulmalıdır çünkü bir "
+"hapsin bünyesinden kullanıcı alanını yamama girişimi, FreeBSD'deki "
+"varsayılan davranışın, bazı dosyaların değiştirilmesini engelleyen bir "
+"hapisteki <citerefentry><refentrytitle>chflags</refentrytitle><manvolnum>1</m"
+"anvolnum></citerefentry>'in kullanımına izin vermemesi gibi başarısız "
+"olabilir. Bu davranışı değiştirmek mümkündür ancak bunun yerine hapisleri "
+"korumak için <citerefentry><refentrytitle>freebsd-"
+"update</refentrytitle><manvolnum>8</manvolnum></citerefentry> kullanılması "
+"tavsiye edilir. Güncellenecek hapsin yolunu belirlemek için "
+"<option>-b</option> tuşunu kullanın."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:28485
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>freebsd-update -b <replaceable>/here/is/the/jail</replaceable> fetch</userinput>\n"
 "<prompt>#</prompt> <userinput>freebsd-update -b <replaceable>/here/is/the/jail</replaceable> install</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>freebsd-update -b <replaceable>/here/is/the/"
+"jail</replaceable> fetch</userinput>\n"
+"<prompt>#</prompt> <userinput>freebsd-update -b <replaceable>/here/is/the/"
+"jail</replaceable> install</userinput>"
 
 #. (itstool) path: info/title
 #: book.translate.xml:28492
