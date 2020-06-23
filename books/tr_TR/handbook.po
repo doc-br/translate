@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-06-23 17:45+0000\n"
-"Last-Translator: Alparslangurbuz <alparslangurbuz@hotmail.com>\n"
+"Last-Translator: onuraydin3 <crymzonx@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -75287,6 +75287,7 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51583
+#, fuzzy
 msgid ""
 "This file is processed in a first match order. When an email address matches "
 "the address on the left, it is mapped to the local mailbox listed on the "
@@ -75300,6 +75301,17 @@ msgid ""
 "is edited, update its database and restart <application>Sendmail</"
 "application>:"
 msgstr ""
+"Bu dosya eşleşme sırasına göre işlem görür. Bir e-posta adresi soldaki adres "
+"ile eşleştiğinde sağdaki yerel posta kutusuyla da eşleşir. Bu örnekteki ilk "
+"girdinin formatı belirli bir e-posta adresini bir yerel posta kutusuyla "
+"eşleştirilirken, ikinci girdinin formatı belirli bir e-posta adresini "
+"uzaktan kontrollü bir posta kutusuyla eşleştirir. Son olarak "
+"<literal>example.com</literal> da önceki girdilerden biri ile eşleşmemiş "
+"olan herhangi bir e-posta adresi sonuncuya katılır ve <literal>joe</literal> "
+"yerel posta kutusuna gönderilir. Özel girdileri oluştururken bu formatı "
+"kullanın ve onları <filename>/etc/mail/virtusertable</filename> 'e gönderin. "
+"Bu dosya her değiştiğinde, veritabanını güncelleyin ve "
+"<application>Sendmail</application> 'i yeniden başlatın:"
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:51598
@@ -75316,6 +75328,7 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51606
+#, fuzzy
 msgid ""
 "In a default FreeBSD installation, <application>Sendmail</application> is "
 "configured to only send mail from the host it is running on. For example, if "
@@ -75325,14 +75338,26 @@ msgid ""
 "will be sent from <literal>MAILER-DAEMON</literal> with a <errorname>5.7 "
 "Relaying Denied</errorname> message."
 msgstr ""
+"Varsayılan bir FreeBSD kurulumunda, <application>Sendmail</application> "
+"sadece çalıştığı ana bilgisayar tarafından posta göndermeye "
+"yapılandırılmıştır. Örneğin, bir <acronym>POP</acronym> sunucusu uygun ise, "
+"kullanıcılar postaları uzaktaki lokasyonlardan kontrol edebilirler ancak "
+"uzaktaki lokasyonlardan posta gönderemezler. Genellikle, göndermeye "
+"çalıştıktan sonra,<literal> MAILER-DAEMON</literal> tarafından gönderilen "
+"<errorname>5.7 Relaying Denied</errorname> e-posta mesajı ile karşılaşırlar."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51617
+#, fuzzy
 msgid ""
 "The most straightforward solution is to add the <acronym>ISP</acronym>'s "
 "<acronym>FQDN</acronym> to <filename>/etc/mail/relay-domains</filename>. If "
 "multiple addresses are needed, add them one per line:"
 msgstr ""
+"En basit çözüm <acronym>ISP</acronym> 'nin <acronym>FQDN</acronym> 'ini "
+"<filename>/etc/mail/relay-domains</filename> 'e eklemek olacaktır. Eğer "
+"birden fazla adrese ihtiyaç olursa, her satıra birer tane olacak şekilde "
+"ekleyin:"
 
 #. (itstool) path: listitem/programlisting
 #: book.translate.xml:51623
