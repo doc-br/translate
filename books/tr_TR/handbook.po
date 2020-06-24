@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-06-24 23:29+0000\n"
-"Last-Translator: onuraydin3 <crymzonx@gmail.com>\n"
+"Last-Translator: yunusesav <yunusesav@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -64383,10 +64383,10 @@ msgid ""
 "for Chinese, Japanese, and Korean:"
 msgstr ""
 "Aşağıda bir kullanıcının değişkenleri BIG-5 karakter kodlamasına ve "
-"Geleneksel Çince'ye göre ayarlanmış <filename>~/.login_conf</filename> 'unun "
-"bir örneği bulunmaktadır. Bazı uygulamalar Çince, Japonca ve Korece'nin "
-"yerel ayar değişkenlerine doğru şekilde uymadığı için daha fazla değişken "
-"gerekmektedir:"
+"Geleneksel Çince'ye göre belirlenmiş <filename>~/.login_conf</filename> "
+"'unun bir örneği bulunmaktadır. Bazı uygulamalar Çince, Japonca ve "
+"Korece'nin yerel ayar değişkenlerine doğru şekilde uymadığı için daha fazla "
+"değişken gerekmektedir:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:44007
@@ -64412,22 +64412,32 @@ msgstr ""
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:44015
+#, fuzzy
 msgid ""
 "Alternately, the superuser can configure all users of the system for "
 "localization. The following variables in <filename>/etc/login.conf</"
 "filename> are used to set the locale and <acronym>MIME</acronym> character "
 "set:"
 msgstr ""
+"Alternatif olarak yetkili kullanıcı sistemdeki tüm kullanıcıları "
+"yerelleştirme için yapılandırabilir. Aşağıdaki <filename>/etc/"
+"login.conf</filename> değişkenleri yerel ayar ve <acronym>MIME</acronym> "
+"karakter setini belirlemek için kullanılmıştır:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:44020
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<replaceable>language_name</replaceable>|<replaceable>Account Type Description</replaceable>:\\\n"
 "\t:charset=<replaceable>MIME_charset</replaceable>:\\\n"
 "\t:lang=<replaceable>locale_name</replaceable>:\\\n"
 "\t:tc=default:"
 msgstr ""
+"<replaceable>language_name</replaceable>|<replaceable>Account Type "
+"Description</replaceable>:\\\n"
+"\t:charset=<replaceable>MIME_charset</replaceable>:\\\n"
+"\t:lang=<replaceable>locale_name</replaceable>:\\\n"
+"\t:tc=default:"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:44025
