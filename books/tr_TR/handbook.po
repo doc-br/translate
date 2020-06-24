@@ -18,8 +18,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-24 23:29+0000\n"
-"Last-Translator: nurbanu  hasanoğlu <hasanoglunurbanu@gmail.com>\n"
+"PO-Revision-Date: 2020-06-25 01:11+0000\n"
+"Last-Translator: onuraydin3 <crymzonx@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -76321,6 +76321,7 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:51889
+#, fuzzy
 msgid ""
 "One way to do this is to get a full-time Internet server to provide "
 "secondary <acronym>MX</acronym> <_:indexterm-1/> services for the domain. In "
@@ -76329,6 +76330,12 @@ msgid ""
 "\">example.net</systemitem> to provide secondary <acronym>MX</acronym> "
 "services to the domain:"
 msgstr ""
+"Bunu yapmanın bir yolu, domaine ikincil <acronym>MX</acronym> <_:indexterm-1/"
+"> hizmeti sağlaması için tam zamanlı bir internet sunucusuna sahip olmaktır. "
+"Bu örnekte, domain <systemitem class=\"fqdomainname\""
+">example.com</systemitem> 'dur ve ISP, domaine ikincil <acronym>MX</acronym> "
+"hizmeti sağlamak için <systemitem class=\"fqdomainname\""
+">example.net</systemitem> şeklinde yapılandırılmıştır:"
 
 #. (itstool) path: answer/programlisting
 #: book.translate.xml:51900
@@ -76340,15 +76347,21 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:51903
+#, fuzzy
 msgid ""
 "Only one host should be specified as the final recipient. For "
 "<application>Sendmail</application>, add <literal>Cw example.com</literal> "
 "in <filename>/etc/mail/sendmail.cf</filename> on <systemitem class="
 "\"fqdomainname\">example.com</systemitem>."
 msgstr ""
+"Sadece bir ana bilgisayar son alıcı olarak belirtilmelidir. "
+"<application>Sendmail</application> için, <literal>Cw example.com</literal> "
+"'u, <systemitem class=\"fqdomainname\">example.com</systemitem> üzerinden, "
+"<filename>/etc/mail/sendmail.cf</filename> 'e ekleyin."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:51908
+#, fuzzy
 msgid ""
 "When the sending <acronym>MTA</acronym> attempts to deliver mail, it will "
 "try to connect to the system, <systemitem class=\"fqdomainname\">example."
@@ -76360,11 +76373,22 @@ msgid ""
 "to connect to the primary <acronym>MX</acronym> host, <systemitem class="
 "\"fqdomainname\">example.com</systemitem>."
 msgstr ""
+"Gönderici olan <acronym>MTA</acronym> posta iletmeye çalıştığında, PPP "
+"bağlantısı üzerinden, <systemitem class=\"fqdomainname\""
+">example.com</systemitem>'a bağlanmayı deneyecektir. Eğer varış yerin "
+"çevrimdışı ise, bu işlem zaman aşımına uğrayacaktır. <acronym>MTA</acronym> "
+"postayı otomatik olarak İnternet Hizmet Sağlayıcısındaki "
+"(<acronym>ISP</acronym>) ikincil <acronym>MX</acronym> ikincil site olan <"
+"systemitem class=\"fqdomainname\">example.net</systemitem> 'e gönderecektir. "
+"İkincil <acronym>MX</acronym> sitesi, devamlı olarak birincil "
+"<acronym>MX</acronym> ana bilgisayarı olan <systemitem class=\"fqdomainname\""
+">example.com</systemitem> 'a bağlanmayı deneyecektir."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:51920
+#, fuzzy
 msgid "Use something like this as a login script:"
-msgstr ""
+msgstr "Giriş komutu olarak bunun gibi bir şey kullanın:"
 
 #. (itstool) path: answer/programlisting
 #: book.translate.xml:51922
@@ -76378,12 +76402,18 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:51927
+#, fuzzy
 msgid ""
 "When creating a separate login script for users, instead use "
 "<command>sendmail -qRexample.com</command> in the script above. This will "
 "force all mail in the queue for <systemitem class=\"fqdomainname\">example."
 "com</systemitem> to be processed immediately."
 msgstr ""
+"Kullanıcılar için ayrı giriş komutları oluştururken, <command>sendmail "
+"-qRexample.com</command> komutunu yukarıdaki kod dizisinde "
+"kullanabilirsiniz. Bu eylem, tüm postaları en kısa sürede işlem görmeleri "
+"için <systemitem class=\"fqdomainname\">example.com</systemitem> sırasına "
+"sokacaktır."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:51934
