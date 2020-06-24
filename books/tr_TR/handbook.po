@@ -18,8 +18,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-24 15:56+0000\n"
-"Last-Translator: alirizaal <alirizaal@hotmail.com>\n"
+"PO-Revision-Date: 2020-06-24 17:01+0000\n"
+"Last-Translator: onuraydin3 <crymzonx@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -75814,6 +75814,7 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:51747
+#, fuzzy
 msgid ""
 "Some extra configuration is needed as <application>Sendmail</application> is "
 "so ubiquitous that some software assumes it is already installed and "
@@ -75821,6 +75822,12 @@ msgid ""
 "these values are set to <literal>NO</literal>. If this file does not exist, "
 "create it with these entries:"
 msgstr ""
+"<application>Sendmail</application> çok yaygın bir uygulama olduğu için, "
+"bazı yazılımlar onun hali hazırda yüklenmiş ve yapılandırılmış olduğunu "
+"varsayıyor olsa bile, bazı ekstra yapılandırma ayarları gerekli olabilir. "
+"<filename>/etc/periodic.conf</filename> dosyasını kontrol edin ve değerlerin "
+"<literal>NO</literal> olarak ayarlandığından emin olun. Eğer böyle bir dosya "
+"yok ise, şu girdiler ile oluşturun:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:51754
