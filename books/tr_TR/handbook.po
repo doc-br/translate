@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-24 00:00+0000\n"
+"PO-Revision-Date: 2020-06-24 15:56+0000\n"
 "Last-Translator: yunusesav <yunusesav@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
@@ -63977,35 +63977,44 @@ msgstr "Yerelleştirmeyi Kullanmak"
 #. (itstool) path: sect1/indexterm
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:43852 book.translate.xml:43969
+#, fuzzy
 msgid "<primary>locale</primary>"
-msgstr ""
+msgstr "<primary>locale</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:43854
+#, fuzzy
 msgid ""
 "Localization settings are based on three components: the language code, "
 "country code, and encoding. Locale names are constructed from these parts as "
 "follows:"
 msgstr ""
+"Yerelleştirme ayarları üç bileşene dayanır: dil kodu, ülke kodu ve karakter "
+"kodlaması . Yerel ayar adları bu parçalar ile şu şekilde inşa edilir:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:43858
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<replaceable>LanguageCode</replaceable>_<replaceable>CountryCode</replaceable>.<replaceable>Encoding</replaceable>"
 msgstr ""
+"<replaceable>LanguageCode</replaceable>_<replaceable>CountryCode</replaceable"
+">.<replaceable>Encoding</replaceable>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:43860
+#, fuzzy
 msgid "<primary>language codes</primary>"
-msgstr ""
+msgstr "<primary>language codes</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:43861
+#, fuzzy
 msgid "<primary>country codes</primary>"
-msgstr ""
+msgstr "<primary>country codes</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:43863
+#, fuzzy
 msgid ""
 "The <replaceable>LanguageCode</replaceable> and <replaceable>CountryCode</"
 "replaceable> are used to determine the country and the specific language "
@@ -64013,81 +64022,99 @@ msgid ""
 "<replaceable>LanguageCode</replaceable>_<replaceable>CountryCode</"
 "replaceable>:"
 msgstr ""
+"<replaceable>LanguageCode</replaceable> ve "
+"<replaceable>CountryCode</replaceable> ülkeyi ve özel dil varyasyonunu "
+"belirlemek için kullanılır. <xref linkend=\"locale-lang-country\"/> "
+"bölümünde bazı <replaceable>LanguageCode</replaceable>_<replaceable>CountryCo"
+"de</replaceable> örnekleri verilmiştir:"
 
 #. (itstool) path: table/title
 #: book.translate.xml:43869
+#, fuzzy
 msgid "Common Language and Country Codes"
-msgstr ""
+msgstr "Yaygın Dil ve Ülke Kodları"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:43874
+#, fuzzy
 msgid "LanguageCode_Country Code"
-msgstr ""
+msgstr "LanguageCode_Country Code"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:43881
+#, fuzzy
 msgid "en_US"
-msgstr ""
+msgstr "en_US"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:43882
+#, fuzzy
 msgid "English, United States"
-msgstr ""
+msgstr "İngilizce, Birleşik Devletler"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:43886
+#, fuzzy
 msgid "ru_RU"
-msgstr ""
+msgstr "ru_RU"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:43887
+#, fuzzy
 msgid "Russian, Russia"
-msgstr ""
+msgstr "Rusça, Rusya"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:43891
+#, fuzzy
 msgid "zh_TW"
-msgstr ""
+msgstr "zh_TW"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:43892
+#, fuzzy
 msgid "Traditional Chinese, Taiwan"
-msgstr ""
+msgstr "Geleneksel Çince, Tayvan"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:43898
+#, fuzzy
 msgid "A complete listing of available locales can be found by typing:"
-msgstr ""
+msgstr "Uygun yerel ayarların tam listesine şunu yazarak ulaşılabilir:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:43901
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>locale -a | more</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>locale -a | more</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:43903
+#, fuzzy
 msgid "To determine the current locale setting:"
-msgstr ""
+msgstr "Güncel yerel ayarı belirlemek için:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:43905
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>locale</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>locale</userinput>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:43907
+#, fuzzy
 msgid "<primary>encodings</primary>"
-msgstr ""
+msgstr "<primary>encodings</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:43908
+#, fuzzy
 msgid "<primary>ASCII</primary>"
-msgstr ""
+msgstr "<primary>ASCII</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:43910
+#, fuzzy
 msgid ""
 "Language specific character sets, such as ISO8859-1, ISO8859-15, KOI8-R, and "
 "CP437, are described in <citerefentry><refentrytitle>multibyte</"
@@ -64095,9 +64122,15 @@ msgid ""
 "character sets can be found at the <link xlink:href=\"http://www.iana.org/"
 "assignments/character-sets\">IANA Registry</link>."
 msgstr ""
+"ISO8859-1, ISO8859-15, KOI8-R, ve CP437 gibi dile özel karakter setleri <cite"
+"refentry><refentrytitle>multibyte</refentrytitle><manvolnum>3</manvolnum></ci"
+"terefentry> şeklinde tanımlanır. Aktif bir karakter setleri listesi <link "
+"xlink:href=\"http://www.iana.org/assignments/character-sets\">IANA "
+"Registry</link> ‘de bulunabilir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:43916
+#, fuzzy
 msgid ""
 "Some languages, such as Chinese or Japanese, cannot be represented using "
 "<acronym>ASCII</acronym> characters and require an extended language "
@@ -64108,126 +64141,182 @@ msgid ""
 "required to compile an application with wide or multibyte character support, "
 "or to configure it correctly."
 msgstr ""
+"Japonca veya Çince gibi bazı diller <acronym>ASCII</acronym> karakterler "
+"kullanılarak temsil edilemez ve geniş veya multibyte karakterler kullanan "
+"genişletilmiş bir <acronym>gerektirirler. Geniş veya multibyte kodlamaya "
+"örnek olarak EUC ve Big5 verilebilir. Yeni uygulamalar genelde bir sorun "
+"yaşamasa da daha eski uygulamalar bu kodlamaları kontrol karakterleri olarak "
+"algılayabilir. Uygulanmasına bağlı olarak kullanıcıların geniş veya "
+"multibyte karakter destekli bir uygulamayı derlemeleri veya doğru bir "
+"şekilde yapılandırmaları gerekebilir."
 
 #. (itstool) path: note/para
 #: book.translate.xml:43928
+#, fuzzy
 msgid "FreeBSD uses Xorg-compatible locale encodings."
-msgstr ""
+msgstr "FreeBSD Xorg-uyumlu yerel ayar kodlamalarını kullanır."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:43931
+#, fuzzy
 msgid ""
 "The rest of this section describes the various methods for configuring the "
 "locale on a FreeBSD system. The next section will discuss the considerations "
 "for finding and compiling applications with <acronym>i18n</acronym> support."
 msgstr ""
+"Bu bölümün geri kalanı FreeBSD sisteminde yerel ayarların "
+"yapılandırılmasında kullanılan çeşitli metotları tarif eder. Sonraki bölüm "
+"<acronym>i18n</acronym> destekli uygulamaları bulma ve derlemeyle alakalı "
+"dikkat edilecek hususları ele alır."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:43937
+#, fuzzy
 msgid "Setting Locale for Login Shell"
-msgstr ""
+msgstr "Oturum Açma Kabuğu İçin Yerel Ayarları Belirlemek"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43939
+#, fuzzy
 msgid ""
 "Locale settings are configured either in a user's <filename>~/.login_conf</"
 "filename> or in the startup file of the user's shell: <filename>~/.profile</"
 "filename>, <filename>~/.bashrc</filename>, or <filename>~/.cshrc</filename>."
 msgstr ""
+"Yerel ayarlar ya kullanıcının <filename>~/.login_conf</filename> ‘inde ya da "
+"kullanıcı kabuğunun başlatma dosyasında: <filename>~/.profile</filename>, "
+"<filename>~/.bashrc</filename>, veya <filename>~/.cshrc</filename> ‘de "
+"yapılandırılır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43946
+#, fuzzy
 msgid "Two environment variables should be set:"
-msgstr ""
+msgstr "İki ortam değişkeni belirlenmelidir:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:43951
+#, fuzzy
 msgid "<envar>LANG</envar>, which sets the locale<_:indexterm-1/>"
-msgstr ""
+msgstr "Yerel ayarı belirleyen <envar>LANG</envar> <_:indexterm-1/>"
 
 #. (itstool) path: listitem/indexterm
 #: book.translate.xml:43956
+#, fuzzy
 msgid "<primary>MIME</primary>"
-msgstr ""
+msgstr "<primary>MIME</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:43958
+#, fuzzy
 msgid ""
 "<envar>MM_CHARSET</envar>, which sets the <acronym>MIME</acronym> character "
 "set used by applications"
 msgstr ""
+"Uygulamalar tarafından kullanılan karakter seti <acronym>MIME</acronym> ’ı "
+"belirleyen <envar>MM_CHARSET</envar>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43964
+#, fuzzy
 msgid ""
 "In addition to the user's shell configuration, these variables should also "
 "be set for specific application configuration and <application>Xorg</"
 "application> configuration."
 msgstr ""
+"Kullanıcının kabuk yapılandırmasına ek olarak bu değişkenler özel uygulama "
+"ve <application>Xorg</application> yapılandırmaları için de belirlenmelidir."
 
 #. (itstool) path: sect2/indexterm
 #. (itstool) path: sect4/indexterm
 #: book.translate.xml:43970 book.translate.xml:44064
+#, fuzzy
 msgid "<primary>login class</primary>"
-msgstr ""
+msgstr "<primary>login class</primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43972
+#, fuzzy
 msgid ""
 "Two methods are available for making the needed variable assignments: the "
 "<link linkend=\"login-class\">login class</link> method, which is the "
 "recommended method, and the <link linkend=\"startup-file\">startup file</"
 "link> method. The next two sections demonstrate how to use both methods."
 msgstr ""
+"Gereken değişken atamalarını yapmak için iki metot bulunur: önerilen metot "
+"olan <link linkend=\"login-class\">login class</link> metodu ve <link linkend"
+"=\"startup-file\">startup file</link> metodu. Aşağıdaki iki bölüm bu iki "
+"metodun da nasıl kullanılacağını gösterir."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:43980
+#, fuzzy
 msgid "Login Classes Method"
-msgstr ""
+msgstr "Oturum Açma Sınıfları Metodu"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:43982
+#, fuzzy
 msgid ""
 "This first method is the recommended method as it assigns the required "
 "environment variables for locale name and <acronym>MIME</acronym> character "
 "sets for every possible shell. This setup can either be performed by each "
 "user or it can be configured for all users by the superuser."
 msgstr ""
+"Bu metot mümkün olan her kabuk için yerel ayar adı ve <acronym>MIME</acronym>"
+" karakter setlerine gereken ortam değişkenlerini ataması sebebiyle önerilen "
+"metottur. Bu kurulum her bir kullanıcı tarafından kullanılabilir veya tüm "
+"kullanıcılar için yetkili kullanıcı tarafından yapılandırılabilir."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:43989
+#, fuzzy
 msgid ""
 "This minimal example sets both variables for Latin-1 encoding in the "
 "<filename>.login_conf</filename> of an individual user's home directory:"
 msgstr ""
+"Bu minimal örnekte bireysel kullanıcının ev dizininin "
+"<filename>.login_conf</filename> 'unda iki değişken de Latin-1 karakter "
+"kodlaması olarak belirleniyor:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:43993
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "me:\\\n"
 "\t:charset=ISO-8859-1:\\\n"
 "\t:lang=de_DE.ISO8859-1:"
 msgstr ""
+"me:\\\n"
+"\t:charset=ISO-8859-1:\\\n"
+"\t:lang=de_DE.ISO8859-1:"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:43997
+#, fuzzy
 msgid ""
 "<primary>Traditional Chinese</primary> <secondary>BIG-5 encoding</secondary>"
 msgstr ""
+"<primary>Traditional Chinese</primary> <secondary>BIG-5 encoding</secondary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:44000
+#, fuzzy
 msgid ""
 "Here is an example of a user's <filename>~/.login_conf</filename> that sets "
 "the variables for Traditional Chinese in BIG-5 encoding. More variables are "
 "needed because some applications do not correctly respect locale variables "
 "for Chinese, Japanese, and Korean:"
 msgstr ""
+"Aşağıda bir kullanıcının değişkenleri BIG-5 karakter kodlamasına ve "
+"Geleneksel Çince'ye göre ayarlanmış <filename>~/.login_conf</filename> 'unun "
+"bir örneği bulunmaktadır. Bazı uygulamalar Çince, Japonca ve Korece'nin "
+"yerel ayar değişkenlerine doğru şekilde uymadığı için daha fazla değişken "
+"gerekmektedir:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:44007
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "#Users who do not wish to use monetary units or time formats\n"
 "#of Taiwan can manually change each variable\n"
@@ -64237,6 +64326,15 @@ msgid ""
 "\t:charset=big5:\\\n"
 "\t:xmodifiers=\"@im=gcin\": #Set gcin as the XIM Input Server"
 msgstr ""
+"#Users who do not wish to use monetary units or time formats\n"
+"#of Taiwan can manually change each variable\n"
+"me:\\\n"
+"\t:lang=zh_TW.Big5:\\\n"
+"\t:setenv=LC_ALL=zh_TW.Big5,LC_COLLATE=zh_TW.Big5,LC_CTYPE=zh_TW.Big5,LC_MESS"
+"AGES=zh_TW.Big5,LC_MONETARY=zh_TW.Big5,LC_NUMERIC=zh_TW.Big5,LC_TIME=zh_TW.Bi"
+"g5:\\\n"
+"\t:charset=big5:\\\n"
+"\t:xmodifiers=\"@im=gcin\": #Set gcin as the XIM Input Server"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:44015
