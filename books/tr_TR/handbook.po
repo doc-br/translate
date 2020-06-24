@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-06-24 15:56+0000\n"
-"Last-Translator: Alparslangurbuz <alparslangurbuz@hotmail.com>\n"
+"Last-Translator: onuraydin3 <crymzonx@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -75030,7 +75030,7 @@ msgid ""
 msgstr ""
 "Ports Collection kısmında <package>mail/qpopper</package>, <package>mail/"
 "imap-uw</package>, <package>mail/courier-imap</package> ve <package>mail/"
-"dovecot2</package> gibi bazı bazı <acronym>POP</acronym> ve "
+"dovecot2</package> gibi bazı <acronym>POP</acronym> ve "
 "<acronym>IMAP</acronym> sunucuları mevcuttur."
 
 #. (itstool) path: warning/para
@@ -75619,10 +75619,14 @@ msgstr ""
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:51657
+#, fuzzy
 msgid ""
 "<personname> <firstname>Gregory</firstname> <surname>Neil Shapiro</surname> "
 "</personname> <contrib>Information taken from emails written by </contrib>"
 msgstr ""
+"<personname> <firstname>Gregory</firstname> <surname>Neil Shapiro</surname> "
+"</personname> <contrib>'nun yazdığı e-postalardan alınan bilgilerle "
+"hazırlanmıştır.</contrib>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:51667
@@ -75631,6 +75635,7 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:51672
+#, fuzzy
 msgid ""
 "FreeBSD comes with <application>Sendmail</application> already installed as "
 "the <acronym>MTA</acronym> which is in charge of outgoing and incoming mail. "
@@ -75638,31 +75643,48 @@ msgid ""
 "acronym>. A wide choice of alternative <acronym>MTA</acronym>s is available "
 "from the <literal>mail</literal> category of the FreeBSD Ports Collection."
 msgstr ""
+"FreeBSD, giden ve gelen postalardan sorumlu <acronym>MTA</acronym> olarak "
+"<application>Sendmail</application> ile hali hazırda yüklü gelir. Fakat, "
+"sistem yöneticisi sistemin <acronym>MTA</acronym> 'sını değiştirebilir. "
+"Çeşitli alternatif <acronym>MTA</acronym> seçenekleri FreeBSD Ports "
+"Collection bölümünün <literal>mail</literal> kategorisinde mevcuttur."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:51680
+#, fuzzy
 msgid ""
 "Once a new <acronym>MTA</acronym> is installed, configure and test the new "
 "software before replacing <application>Sendmail</application>. Refer to the "
 "documentation of the new <acronym>MTA</acronym> for information on how to "
 "configure the software."
 msgstr ""
+"Yeni bir <acronym>MTA</acronym> yüklendiğinde onu "
+"<application>Sendmail</application> ile değiştirmeden önce, yeni yazılımı "
+"yapılandırın ve test edin. Yazılımı nasıl yapılandıracağınızı öğrenmek için "
+"yüklediğiniz yeni <acronym>MTA</acronym> 'nın dökümanlarına göz atın."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:51686
+#, fuzzy
 msgid ""
 "Once the new <acronym>MTA</acronym> is working, use the instructions in this "
 "section to disable <application>Sendmail</application> and configure FreeBSD "
 "to use the replacement <acronym>MTA</acronym>."
 msgstr ""
+"Yüklediğiniz yeni <acronym>MTA</acronym> çalıştığında, bu bölümdeki "
+"talimatları uygulayarak <application>Sendmail</application> 'i devre dışı "
+"bırakın ve FreeBSD'yi, yüklediğiniz yeni <acronym>MTA</acronym> 'yı "
+"kullanmak üzere yapılandırın."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:51692
+#, fuzzy
 msgid "Disable <application>Sendmail</application>"
-msgstr ""
+msgstr "<application>Sendmail</application> 'i Devre Dışı Bırakma"
 
 #. (itstool) path: warning/para
 #: book.translate.xml:51695
+#, fuzzy
 msgid ""
 "If <application>Sendmail</application>'s outgoing mail service is disabled, "
 "it is important that it is replaced with an alternative mail delivery "
@@ -75674,13 +75696,25 @@ msgid ""
 "to try to send email after they are disabled, mail could go into an inactive "
 "<application>Sendmail</application> queue and never be delivered."
 msgstr ""
+"Eğer <application>Sendmail</application> 'in giden posta hizmeti devre dışı "
+"bırakılmışsa, alternatif bir posta dağıtım sistemiyle değiştirilmiş olması "
+"önemlidir. Aksi takdirde <citerefentry><refentrytitle>periodic</refentrytitle"
+"><manvolnum>8</manvolnum></citerefentry> gibi sistem fonksiyonları sonuç "
+"mesajlarını e-posta ile göndermeyi başaramazlar. Sistemin çoğu parçası "
+"çalışan bir <acronym>MTA</acronym> 'ya ihtiyaç yudar. Eğer uygulamalar, "
+"devre dışı bırakılmış <application>Sendmail</application> 'in altyapısını "
+"kullanarak posta göndermeye çalışırsa, postalar aktif olmayan bir "
+"<application>Sendmail</application> sırasına düşer ve asla iletilmezler."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:51707
+#, fuzzy
 msgid ""
 "In order to completely disable <application>Sendmail</application>, add or "
 "edit the following lines in <filename>/etc/rc.conf</filename>:"
 msgstr ""
+"<application>Sendmail</application>'i tamamen devre dışı bırakmak için, "
+"aşağıdaki satırları <filename>/etc/rc.conf</filename> dosyasına ekleyin:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:51711
@@ -75694,10 +75728,14 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:51716
+#, fuzzy
 msgid ""
 "To only disable <application>Sendmail</application>'s incoming mail service, "
 "use only this entry in <filename>/etc/rc.conf</filename>:"
 msgstr ""
+"<application>Sendmail</application> 'in sadece gelen posta hizmetini devre "
+"dışı bırakmak için, sadece bu girdiyi <filename>/etc/rc.conf</filename> 'e "
+"ekleyin:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:51720
@@ -75707,19 +75745,25 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:51722
+#, fuzzy
 msgid ""
 "More information on <application>Sendmail</application>'s startup options is "
 "available in <citerefentry><refentrytitle>rc.sendmail</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 msgstr ""
+"<application>Sendmail</application> 'in başlatma seçenekleri ile ilgili daha "
+"fazla bilgiyi <citerefentry><refentrytitle>rc.sendmail</refentrytitle><manvol"
+"num>8</manvolnum></citerefentry> adresinde bulabilirsiniz."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:51727
+#, fuzzy
 msgid "Replace the Default <acronym>MTA</acronym>"
-msgstr ""
+msgstr "Varsayılan <acronym>MTA</acronym> 'yı Değiştirme"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:51729
+#, fuzzy
 msgid ""
 "When a new <acronym>MTA</acronym> is installed using the Ports Collection, "
 "its startup script is also installed and startup instructions are mentioned "
@@ -75728,6 +75772,12 @@ msgid ""
 "stops all of these services, then starts the <application>Postfix</"
 "application> service:"
 msgstr ""
+"Port Koleksiyonu kullanılarak yeni bir <acronym>MTA</acronym> yüklendiğinde, "
+"aynı zamanda başlangıç kod dizisi de yüklenmiş olur ve başlanıç talimatları "
+"paket program mesajında belirtilir. Yeni yükelenen <acronym>MTA</acronym> "
+"'yı başlatmadan önce, çalışmakta olan <application>Sendmail</application> "
+"işlemlerini durdurun. Bu örnek tüm bu hizmetleri durdurur. Bu örnek tüm bu "
+"hizmetleri durdurup, <application>Postfix</application> hizmetini başlatır:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:51737
@@ -75739,11 +75789,16 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:51740
+#, fuzzy
 msgid ""
 "To start the replacement <acronym>MTA</acronym> at system boot, add its "
 "configuration line to <filename>/etc/rc.conf</filename>. This entry enables "
 "the Postfix <acronym>MTA</acronym>:"
 msgstr ""
+"Yeni yüklenmiş <acronym>MTA </acronym> 'yı sistem önyüklemesinde çalıştırmak "
+"için, yapılandırma satırını <filename>/etc/rc.conf</filename> dosyasına "
+"ekleyin. Bu girdi Postfix adlı <acronym>MTA</acronym> programını devreye "
+"sokar:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:51745
