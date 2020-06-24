@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-24 17:01+0000\n"
+"PO-Revision-Date: 2020-06-24 23:29+0000\n"
 "Last-Translator: onuraydin3 <crymzonx@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
@@ -75841,6 +75841,7 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:51759
+#, fuzzy
 msgid ""
 "Some alternative <acronym>MTA</acronym>s provide their own compatible "
 "implementations of the <application>Sendmail</application> command-line "
@@ -75854,11 +75855,25 @@ msgid ""
 "<citerefentry><refentrytitle>mailwrapper</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>."
 msgstr ""
+"Bazı alternatif <acronym>MTA</acronym> lar "
+"<application>Sendmail</application> 'in yerine kullanılabilecek kendi "
+"oluşturdukları uyumlu <application>Sendmail</application> komut satırı "
+"arayüzü uygulamalarını sunarlar. Fakat bazı <acronym>MUA</acronym> 'lar "
+"sonradan yüklenen <acronym>MTA</acronym> altyapısı yerine standart "
+"<application>Sendmail</application> altyapısını yürütmeye çalışırlar. "
+"FreeBSD, gerekli <application>Sendmail</application> altyapılarını yeni "
+"altyapıların konumuna eşlemek için <filename>/etc/mail/mailer.conf</filename>"
+" kullanır. Bu eşleme hakkında daha fazla bilgiyi <citerefentry><refentrytitle"
+">mailwrapper</refentrytitle><manvolnum>8</manvolnum></citerefentry> "
+"bölümünde bulabilirsiniz."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:51772
+#, fuzzy
 msgid "The default <filename>/etc/mail/mailer.conf</filename> looks like this:"
 msgstr ""
+"Varsayılan haldeki <filename>/etc/mail/mailer.conf</filename> şu şekilde "
+"görünür:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:51775
@@ -75878,20 +75893,29 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:51786
+#, fuzzy
 msgid ""
 "When any of the commands listed on the left are run, the system actually "
 "executes the associated command shown on the right. This system makes it "
 "easy to change what binaries are executed when these default binaries are "
 "invoked."
 msgstr ""
+"Solda sıralanan komutlar çalıştırıldığında, sistem aslında sağ taraftaki "
+"ilişkili komutu yürütür. Bu sistem buradaki varsayılan altyapılar "
+"çalıştırıldığında hangi altyapıların yürütüleceğinin değiştirilmesini "
+"kolaylaştırır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:51791
+#, fuzzy
 msgid ""
 "Some <acronym>MTA</acronym>s, when installed using the Ports Collection, "
 "will prompt to update this file for the new binaries. For example, "
 "<application>Postfix</application> will update the file like this:"
 msgstr ""
+"Bazı <acronym>MTA</acronym>'lar, Port Koleksiyonu kullanılarak "
+"yüklendiğinde, bu dosyayı yeni altyapılar için güncellemek isteyecektikr. "
+"Örneğin, <application>Postfix</application> dosyayı şu şekilde günceller:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:51796
@@ -75908,12 +75932,17 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:51804
+#, fuzzy
 msgid ""
 "If the installation of the <acronym>MTA</acronym> does not automatically "
 "update <filename>/etc/mail/mailer.conf</filename>, edit this file in a text "
 "editor so that it points to the new binaries. This example points to the "
 "binaries installed by <package>mail/ssmtp</package>:"
 msgstr ""
+"Eğer <acronym>MTA</acronym>'nın kurulumu, <filename>/etc/mail/"
+"mailer.conf</filename> dosyasını otomatik olarak güncellemez ise, bu dosyayı "
+"yeni altyapıları gösterecek şekilde bir metin düzenleyicisinde düzeltin. Bu "
+"örnek <package>mail/ssmtp</package> ile kurulan altyapıları gösterir:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:51811
@@ -75929,11 +75958,16 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:51818
+#, fuzzy
 msgid ""
 "Once everything is configured, it is recommended to reboot the system. "
 "Rebooting provides the opportunity to ensure that the system is correctly "
 "configured to start the new <acronym>MTA</acronym> automatically on boot."
 msgstr ""
+"Her şey yapılandırıldığında, sistemi yeniden başlatmanız tavsiye edilir. "
+"Yeniden başlatmak, sistemin doğru yapılandırıldığından ve yeni "
+"<acronym>MTA</acronym> 'nın başlangıçta otomatik olarak açıldığından emin "
+"olmanızı sağlar."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:51828
@@ -75942,11 +75976,13 @@ msgstr ""
 
 #. (itstool) path: question/para
 #: book.translate.xml:51836
+#, fuzzy
 msgid "Why do I have to use the FQDN for hosts on my site?"
-msgstr ""
+msgstr "Neden sitemdeki ana bilgisayarlar için FQDN kullanmak zorundayım?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:51841
+#, fuzzy
 msgid ""
 "The host may actually be in a different domain. For example, in order for a "
 "host in <systemitem class=\"fqdomainname\">foo.bar.edu</systemitem> to reach "
@@ -75956,6 +75992,13 @@ msgid ""
 "\"fqdomainname\">mumble.bar.edu</systemitem>, instead of just "
 "<systemitem>mumble</systemitem>."
 msgstr ""
+"Ana bilgisayar farklı bir domainde olabilir. Örneğin, <systemitem class=\""
+"fqdomainname\">foo.bar.edu</systemitem> domainindeki bir ana bilgisayarın "
+"<systemitem>mumble</systemitem> adlı bir bir ana bilgisayara, <systemitem "
+"class=\"fqdomainname\">bar.edu</systemitem> domaininde ulaşması için, sadece "
+"<systemitem>mumble</systemitem> yerine, Tam Nitelikli Domain Adıyla "
+"<acronym>FQDN</acronym> , yani <systemitem class=\"fqdomainname\""
+">mumble.bar.edu</systemitem> şeklinde aratın."
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:51850
@@ -75964,6 +76007,7 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:51849
+#, fuzzy
 msgid ""
 "This is because the version of <application>BIND</application><_:indexterm-1/"
 "> which ships with FreeBSD no longer provides default abbreviations for non-"
@@ -75972,20 +76016,33 @@ msgid ""
 "\"fqdomainname\">mumble.foo.bar.edu</systemitem>, or it will be searched for "
 "in the root domain."
 msgstr ""
+"Bunun sebebi FreeBSD ile gelen <application>BIND</application><_:indexterm-1/"
+"> sürümünün, yerel domain haricinde, FQDN olmayan domainlere varsayılan "
+"kısaltmalar sağlamıyor olmasıdır. <systemitem>mumble</systemitem> gibi "
+"yetkisi olmayan bir ana bilgisayarı bulmak için, <systemitem class=\""
+"fqdomainname\">mumble.foo.bar.edu</systemitem> şeklinde veya kök domain "
+"içirisinde aratılabilir."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:51858
+#, fuzzy
 msgid ""
 "In older versions of <application>BIND</application>, the search continued "
 "across <systemitem class=\"fqdomainname\">mumble.bar.edu</systemitem>, and "
 "<systemitem class=\"fqdomainname\">mumble.edu</systemitem>. RFC 1535 details "
 "why this is considered bad practice or even a security hole."
 msgstr ""
+"<application>BIND</application> eski sürümlerinde, arama <systemitem class=\""
+"fqdomainname\">mumble.bar.edu</systemitem> ve <systemitem class=\""
+"fqdomainname\">mumble.edu</systemitem> arasında devam etti. RFC 1535 bunun "
+"neden kötü bir yöntem, hatta bir güvenlik açığı olduğunu detaylı şekilde "
+"açıklamaktadır."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:51864
+#, fuzzy
 msgid "As a good workaround, place the line:"
-msgstr ""
+msgstr "İyi bir çözüm için, şu satırı:"
 
 #. (itstool) path: answer/programlisting
 #: book.translate.xml:51866
@@ -75995,8 +76052,9 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:51868
+#, fuzzy
 msgid "instead of the previous:"
-msgstr ""
+msgstr "bir öncekinin yerine:"
 
 #. (itstool) path: answer/programlisting
 #: book.translate.xml:51870
@@ -76006,23 +76064,32 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:51872
+#, fuzzy
 msgid ""
 "into <filename>/etc/resolv.conf</filename>. However, make sure that the "
 "search order does not go beyond the <quote>boundary between local and public "
 "administration</quote>, as RFC 1535 calls it."
 msgstr ""
+"<filename>/etc/resolv.conf</filename> dosyasına yerleştirin. Ancak RFC "
+"1535te de belirtildiği gibi, aramanın <quote>yerel ve açık yönetimin "
+"sınırları</quote> dışına çıkmamasına dikkat edin."
 
 #. (itstool) path: question/para
 #: book.translate.xml:51881
+#, fuzzy
 msgid "How can I run a mail server on a dial-up PPP host?"
 msgstr ""
+"Çevirmeli PPP ana bilgisayarı üzerinde nasıl posta sunucusu çalıştırabilirim?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:51886
+#, fuzzy
 msgid ""
 "Connect to a FreeBSD mail gateway on the LAN. The PPP connection is non-"
 "dedicated."
 msgstr ""
+"LAN üzerinden ir FreeBSD ağ geçidine bağlanın. PPP bağlantısı atanmamış "
+"haldedir."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:51889
