@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-25 01:11+0000\n"
+"PO-Revision-Date: 2020-06-25 13:22+0000\n"
 "Last-Translator: onuraydin3 <crymzonx@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
@@ -76458,10 +76458,13 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:51972
+#, fuzzy
 msgid ""
 "This section covers more involved topics such as mail configuration and "
 "setting up mail for an entire domain."
 msgstr ""
+"Bu bölüm posta yapılandırması ve bir domainin tamamı için posta kurulumu "
+"gibi konuları içermektedir."
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:51978
@@ -76470,32 +76473,48 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:51983
+#, fuzzy
 msgid ""
 "Out of the box, one can send email to external hosts as long as <filename>/"
 "etc/resolv.conf</filename> is configured or the network has access to a "
 "configured <acronym>DNS</acronym> server. To have email delivered to the "
 "<acronym>MTA</acronym> on the FreeBSD host, do one of the following:"
 msgstr ""
+"Farklı olarak, bir kişi, <filename>/etc/resolv.conf</filename> "
+"yapılandırılmış veya ağ bağlantısının yapılandırılmış bir "
+"<acronym>DNS</acronym> sunucusuna erişimi var ise, harici ana bilgisayarlara "
+"posta gönderebilir. FreeBSD ana bilgisayarı üzerinden <acronym>MTA</acronym> "
+"' ya posta göndermek için aşağıdakileri uygulayın:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51991
+#, fuzzy
 msgid "Run a <acronym>DNS</acronym> server for the domain."
-msgstr ""
+msgstr "Domain için bir <acronym>DNS</acronym> sunucusu çalıştırın."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51996
+#, fuzzy
 msgid ""
 "Get mail delivered directly to the <acronym>FQDN</acronym> for the machine."
 msgstr ""
+"Postaları makine için, doğrudan <acronym>FQDN</acronym> 'a teslim ettirin."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:52002
+#, fuzzy
 msgid ""
 "In order to have mail delivered directly to a host, it must have a permanent "
 "static IP address, not a dynamic IP address. If the system is behind a "
 "firewall, it must be configured to allow SMTP traffic. To receive mail "
 "directly at a host, one of these two must be configured:"
 msgstr ""
+"Bir postanın doğrudan bir ana bilgisayara teslim edilebilmesi için, dinamik "
+"bir IP adresi değil, kalıcı statik bir IP adresine sahip olması gerekir. "
+"Eğer sistem bir güvenlik duvarı tarafından korunuyorsa, SMTP trafiğine izin "
+"verecek şekilde yapılandırılması gerekir. Bir ana bilgisayara doğrudan posta "
+"teslim edilmesi için, aşağıdakilerden bir tanesinin yapındırılmış olması "
+"gerekmektedir:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:52010
