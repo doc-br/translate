@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-27 14:00+0000\n"
+"PO-Revision-Date: 2020-06-27 16:49+0000\n"
 "Last-Translator: onuraydin3 <crymzonx@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
@@ -74971,7 +74971,7 @@ msgstr "Uzak ve yerel posta kutuları arasındaki farkı."
 #, fuzzy
 msgid "How to block spammers from illegally using a mail server as a relay."
 msgstr ""
-"Spam posta gönderen kişilerin, osta sunucularını yasadışı şekilde aktarıcı "
+"Spam posta gönderen kişilerin, posta sunucularını yasa dışı şekilde aktarıcı "
 "olarak kullanmasını engellemeyi."
 
 #. (itstool) path: listitem/para
@@ -75124,11 +75124,11 @@ msgid ""
 "acronym>), a mail host, a remote or local mailbox, and <acronym>DNS</"
 "acronym>. This section provides an overview of these components."
 msgstr ""
-"Eposta gönderimi ve alımında beş ana parça yer almaktadır. Bunlar: Posta "
-"Kullanıcı Birimi (<acronym>MUA</acronym>), Posta Aktarım Birimi "
-"(<acronym>MTA</acronym>) bir posta sunucusu, harici veya yerel bir posta "
-"kutusu ve <acronym>DNS</acronym>'tir. Bu kısım bahsedilen parçaların kısa "
-"tanımlarını içermektedir."
+"E-posta gönderimi ve alımında beş ana parça yer almaktadır. Bunlar: Posta "
+"Kullanıcı Birimi (Mail User Agent) (<acronym>MUA</acronym>), Posta Aktarım "
+"Birimi (Mail Transfer Agent)(<acronym>MTA</acronym>) bir posta sunucusu, "
+"harici veya yerel bir posta kutusu ve <acronym>DNS</acronym>'tir. Bu kısım "
+"bahsedilen parçaların kısa tanımlarını içermektedir."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:51231
@@ -75153,12 +75153,12 @@ msgid ""
 "a <acronym>MUA</acronym> on FreeBSD can be found in <xref linkend=\"mail-"
 "agents\"/>."
 msgstr ""
-"Posta Kullanıcı Birimi (<acronym>MUA</acronym>) eposta derlemek, göndermek "
+"Posta Kullanıcı Birimi (<acronym>MUA</acronym>) e-posta derlemek, göndermek "
 "ve almak için kullanılan bir uygulamadır. Bu  \n"
 "uygulama var olan<command>mail</command> fonksiyonu gibi bir komut satırı "
-"programı ya da Ports Collection'dan <application>mutt</application>, "
+"programı ya da Port Koleksiyonundan <application>mutt</application>, "
 "<application>alpine</application> veya <application>elm</application> gibi "
-"bir üçüncü parti uygulaması olabilir. Ports Collection'da <application>Claws "
+"bir üçüncü parti uygulaması olabilir. Port Koleksiyonunda <application>Claws "
 "Mail</application>,  <application>Evolution</application> ve "
 "<application>Thunderbird</application> gibi düzinelerce görsel program "
 "mevcuttur. Bazı organizasyonlar tarayıcıdan erişilebilen bir posta programı "
@@ -75193,7 +75193,7 @@ msgstr ""
 "<application>Exim</application>, <application>Postfix</application> ve "
 "<application>qmail</application> gibi farklı posta sunucu araçlarını da "
 "desteklemektedir. <application>Sendmail</application> yapılandırması <xref "
-"linkend=\"sendmail\"/> bölümünde açıklanmaktadır. Eğer Ports Collection "
+"linkend=\"sendmail\"/> bölümünde açıklanmaktadır. Eğer Port Koleksiyonu "
 "kullanılarak başka bir <acronym>MTA</acronym> yüklendiyse FreeBSD'ye özgü "
 "yapılandırma ayarları için yükleme sonrası iletisine, daha genel "
 "yapılandırma talimatları için ise uygulamanın web sitesine göz atınız."
@@ -75202,7 +75202,7 @@ msgstr ""
 #: book.translate.xml:51275
 #, fuzzy
 msgid "Mail Host and Mailboxes"
-msgstr "Posta Sunucusu ve Posta Kutuları"
+msgstr "Posta Ana Bilgisayarı ve Posta Kutuları"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51277
@@ -75224,9 +75224,8 @@ msgstr ""
 "alternatif Maildir formatında saklayabilir. Posta saklandığı zaman, yerel "
 "olarak bir <acronym>MUA</acronym> kullanılarak ya da <acronym>POP</acronym> "
 "veya <acronym>IMAP</acronym> gibi protokoller kullanılarak uzaktan erişilip "
-"okunabilir. Eğer posta yerel olarak okunabiliyorsa, bir "
-"<acronym>POP</acronym> veya <acronym>IMAP</acronym> sunucusunun yüklenmesine "
-"gerek yoktur."
+"okunabilir. Eğer posta yerel olarak okunuyorsa, bir <acronym>POP</acronym> "
+"veya <acronym>IMAP</acronym> sunucusunun yüklenmesine gerek yoktur."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51290
@@ -75292,7 +75291,7 @@ msgstr ""
 #: book.translate.xml:51324 book.translate.xml:56011
 #, fuzzy
 msgid "Domain Name System (<acronym>DNS</acronym>)"
-msgstr "Domain Adı Sistemi(<acronym>DNS</acronym>)"
+msgstr "Domain Adı Sistemi (<acronym>DNS</acronym>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:51326
@@ -75305,11 +75304,11 @@ msgid ""
 "host will receive mail for the destination. This process also occurs when "
 "mail is sent from a remote host to the <acronym>MTA</acronym>."
 msgstr ""
-"Domain Adı Sistemi (<acronym>DNS</acronym>) ve onun aracı olan "
-"<command>named</command> posta iletiminde büyük bir rol oynar. Bir siteden "
-"diğerine posta göndermek için, <acronym>MTA</acronym> hangi ana bilgisayarın "
-"posta alacağını belirlemek üzere <acronym>DNS </acronym> içindeki uzak "
-"siteyi arar. Bu işlem ayrıca, posta uzak bir ana bilgisayardan "
+"Domain Adı Sistemi (Domain Name System) (<acronym>DNS</acronym>) ve onun "
+"aracı olan <command>named</command> posta iletiminde büyük bir rol oynar. "
+"Bir siteden diğerine posta göndermek için, <acronym>MTA</acronym> hangi ana "
+"bilgisayarın posta alacağını belirlemek üzere <acronym>DNS </acronym> "
+"içindeki uzak siteyi arar. Bu işlem ayrıca, posta uzak bir ana bilgisayardan "
 "<acronym>MTA</acronym>' ya gönderildiğinde de gerçekleşir."
 
 #. (itstool) path: listitem/para
