@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-27 10:55+0000\n"
+"PO-Revision-Date: 2020-06-27 14:00+0000\n"
 "Last-Translator: onuraydin3 <crymzonx@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
@@ -76640,6 +76640,7 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:52064
+#, fuzzy
 msgid ""
 "<systemitem>freefall</systemitem> had many <acronym>MX</acronym> entries. "
 "The lowest <acronym>MX</acronym> number is the host that receives mail "
@@ -76647,30 +76648,47 @@ msgid ""
 "lower-numbered host will accept messages temporarily, and pass it along when "
 "a lower-numbered host becomes available."
 msgstr ""
+"<systemitem>freefall</systemitem>, çok fazla <acronym>MX</acronym> girdisine "
+"sahipti. En düşük <acronym>MX</acronym> numarası, eğer müsaitse, doğrudan "
+"postayı alan ana bilgisayarı gösterir. Eğer herhangi bir sebepten ötürü "
+"erişilebilir değilse, bir sonraki en düşük numaralı ana bilgisayar geçici "
+"olarak gelen mesajları kabul edecek ve daha düşük numaralı olan ana "
+"bilgisayar müsait olduğunda ona gönderecektir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:52072
+#, fuzzy
 msgid ""
 "Alternate <acronym>MX</acronym> sites should have separate Internet "
 "connections in order to be most useful. Your <acronym>ISP</acronym> can "
 "provide this service."
 msgstr ""
+"Alternatif <acronym>MX</acronym> sitelerinin, en verimli şekilde "
+"kullanılması için ayrı internet bağlantıları olması gerekir. "
+"<acronym>ISP</acronym> 'niz bu hizmeti size sunabilir."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:52078
+#, fuzzy
 msgid "Mail for a Domain"
-msgstr ""
+msgstr "Domain için Postalar"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:52080
+#, fuzzy
 msgid ""
 "When configuring a <acronym>MTA</acronym> for a network, any mail sent to "
 "hosts in its domain should be diverted to the <acronym>MTA</acronym> so that "
 "users can receive their mail on the master mail server."
 msgstr ""
+"Bir ağ bağlantısı için <acronym>MTA </acronym> yapılandırırken, bu "
+"domaindeki ana bilgisayarlara gönderilen herhangi bir postanın <acronym>MTA "
+"</acronym> 'ya yönlendirilmesi gerekir. Böylece kullanıcılar postalarını ana "
+"posta sunucusundan alabilirler."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:52086
+#, fuzzy
 msgid ""
 "To make life easiest, a user account with the same <emphasis>username</"
 "emphasis> should exist on both the <acronym>MTA</acronym> and the system "
@@ -76678,14 +76696,23 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> to create the user "
 "accounts."
 msgstr ""
+"Durumu daha da kolaylaştırmak için, aynı <emphasis>kullanıcıadı</emphasis> "
+"'na sahip bir hesabın, hem <acronym>MTA</acronym> 'da, hem de "
+"<acronym>MUA</acronym> 'lı bir sistemde bulunması gerekmektedir. kullanıcı "
+"hesapları oluşturmak için <citerefentry><refentrytitle>adduser</refentrytitle"
+"><manvolnum>8</manvolnum></citerefentry> bağlantısını kullanın."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:52092
+#, fuzzy
 msgid ""
 "The <acronym>MTA</acronym> must be the designated mail exchanger for each "
 "workstation on the network. This is done in the<acronym>DNS</acronym> "
 "configuration with an <acronym>MX</acronym> record:"
 msgstr ""
+"<acronym>MTA</acronym>, ağdaki her iş istasyonu için belirlenmiş posta "
+"değiştiricisi olmalıdır. Bu bir <acronym>MX</acronym> kaydının "
+"<acronym>DNS</acronym> yapılandırılmasıyla yapılır:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:52097
@@ -76697,22 +76724,32 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:52100
+#, fuzzy
 msgid ""
 "This will redirect mail for the workstation to the <acronym>MTA</acronym> no "
 "matter where the A record points. The mail is sent to the <acronym>MX</"
 "acronym> host."
 msgstr ""
+"Böylece, A kaydını nereyi gösterirse göstersin, iş istasyonuna gelen "
+"postalar <acronym>MTA</acronym> 'ya yönlendirilecektir. Posta "
+"<acronym>MX</acronym> ana bilgisayarına gönderilir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:52104
+#, fuzzy
 msgid ""
 "This must be configured on a <acronym>DNS</acronym> server. If the network "
 "does not run its own <acronym>DNS</acronym> server, talk to the "
 "<acronym>ISP</acronym> or <acronym>DNS</acronym> provider."
 msgstr ""
+"Bu bir <acronym>DNS</acronym> suncusu üzerinden yapılandırılmalıdır. Eğer ağ "
+"bağlantısı kendi <acronym>DNS</acronym> sunucsu üzerinden çalışmıyor ise, "
+"<acronym>ISP</acronym> veya <acronym>DNS</acronym> ile durum hakkında "
+"konuşun."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:52110
+#, fuzzy
 msgid ""
 "The following is an example of virtual email hosting. Consider a customer "
 "with the domain <systemitem class=\"fqdomainname\">customer1.org</"
@@ -76721,6 +76758,12 @@ msgid ""
 "\"fqdomainname\">mail.myhost.com</systemitem>. The <acronym>DNS</acronym> "
 "entry should look like this:"
 msgstr ""
+"Aşağıdaki, bir sanal e-posta ana bilgisayarı oluşturma örneğidir. <"
+"systemitem class=\"fqdomainname\">customer1.org</systemitem> domain adında "
+"bir müşteriyi düşünün, <systemitem class=\"fqdomainname\""
+">customer1.org</systemitem> adresine gitmesi gereken tüm postalar, <"
+"systemitem class=\"fqdomainname\">mail.myhost.com</systemitem> adresine "
+"gönderilmelidir. <acronym>DNS</acronym> girdileri şu şekilde gözükmelidir:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:52116
@@ -76730,6 +76773,7 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:52118
+#, fuzzy
 msgid ""
 "An <literal>A</literal>&gt; record is <emphasis>not</emphasis> needed for "
 "<systemitem class=\"fqdomainname\">customer1.org</systemitem> in order to "
@@ -76737,6 +76781,11 @@ msgid ""
 "against <systemitem class=\"fqdomainname\">customer1.org</systemitem> will "
 "not work unless an <literal>A</literal> record exists for it."
 msgstr ""
+"<systemitem class=\"fqdomainname\">customer1.org</systemitem> domaini için, "
+"o domaine ait e-postaları işlenmesi için bir <literal>A</literal>&gt; "
+"kaydına gerek yoktur. Ancak, bir <literal>A</literal> kaydı olmadığı sürece, "
+"<systemitem class=\"fqdomainname\">customer1.org</systemitem> domainine "
+"karşı <command>ping</command> çalıştırmak başarılı olmayacaktır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:52125
