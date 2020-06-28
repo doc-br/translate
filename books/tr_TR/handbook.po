@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-06-29 00:10+0000\n"
-"Last-Translator: yunusesav <yunusesav@gmail.com>\n"
+"Last-Translator: firdevssevik <sevikfirdevs@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -42060,7 +42060,7 @@ msgstr ""
 #: book.translate.xml:28564
 #, fuzzy
 msgid "Make it possible to run a customized FreeBSD branch."
-msgstr "Özelleştirilmiş bir FreeBSD dalı çalıştırmayı mümkün kılın."
+msgstr "Özelleştirilmiş bir FreeBSD şubesi çalıştırmayı mümkün kılın."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28568
@@ -42080,76 +42080,102 @@ msgstr "Mümkün olduğunca yerden ve inodelardan tasarruf edin."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:28577
+#, fuzzy
 msgid ""
 "This design relies on a single, read-only master template which is mounted "
 "into each jail and one read-write device per jail. A device can be a "
 "separate physical disc, a partition, or a vnode backed memory device. This "
 "example uses read-write <application>nullfs</application> mounts."
 msgstr ""
+"Bu tasarım, her bir hapse ve hapis başına bir okuma-yazma aygıtına monte "
+"edilen tek, salt okunur bir ana şablona dayanır. Aygıt ayrı bir fiziksel "
+"disk, bölüm veya vnode destekli bir bellek aygıtı olabilir. Bu örnek, okuma-"
+"yazma <application>nullfs</application> bağlarını kullanır."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:28583
+#, fuzzy
 msgid "The file system layout is as follows:"
-msgstr ""
+msgstr "Dosya sistemi düzeni aşağıdaki gibidir:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28587
+#, fuzzy
 msgid "The jails are based under the <filename>/home</filename> partition."
-msgstr ""
+msgstr "Hapisler <filename>/home</filename> bölümünün altında bulunur."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28592
+#, fuzzy
 msgid ""
 "Each jail will be mounted under the <filename>/home/j</filename> directory."
-msgstr ""
+msgstr "Her hapis <filename>/home/j</filename> dizininin altına monte edilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28597
+#, fuzzy
 msgid ""
 "The template for each jail and the read-only partition for all of the jails "
 "is <filename>/home/j/mroot</filename>."
 msgstr ""
+"Her hapis için şablon ve tüm hapisler için salt okunur bölüm <filename>/home "
+"/j/mroot</filename>'tur."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28603
+#, fuzzy
 msgid ""
 "A blank directory will be created for each jail under the <filename>/home/j</"
 "filename> directory."
 msgstr ""
+"<filename>/Home/j</filename> dizini altındaki her hapis için boş bir dizin "
+"oluşturulur."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28608
+#, fuzzy
 msgid ""
 "Each jail will have a <filename>/s</filename> directory that will be linked "
 "to the read-write portion of the system."
 msgstr ""
+"Her hapiste sistemin okuma-yazma kısmına bağlanacak bir "
+"<filename>/s</filename> dizini bulunur."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28614
+#, fuzzy
 msgid ""
 "Each jail will have its own read-write system that is based upon <filename>/"
 "home/j/skel</filename>."
 msgstr ""
+"Her hapsin <filename>/home/j/skel</filename> tabanlı kendi okuma-yazma "
+"sistemi olacaktır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28619
+#, fuzzy
 msgid ""
 "The read-write portion of each jail will be created in <filename>/home/js</"
 "filename>."
 msgstr ""
+"Her hapsin okuma-yazma kısmı <filename>/home/js</filename> dosyasında "
+"oluşturulacaktır."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:28627
+#, fuzzy
 msgid "Creating the Template"
-msgstr ""
+msgstr "Şablon Oluşturma"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:28629
+#, fuzzy
 msgid "This section describes the steps needed to create the master template."
-msgstr ""
+msgstr "Bu bölümde ana şablonu oluşturmak için gereken adımlar açıklanmaktadır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:28632
+#, fuzzy
 msgid ""
 "It is recommended to first update the host FreeBSD system to the latest -"
 "RELEASE branch using the instructions in <xref linkend=\"makeworld\"/>. "
@@ -42157,24 +42183,37 @@ msgid ""
 "package or port and <application>portsnap</application> will be used to "
 "download the FreeBSD Ports Collection."
 msgstr ""
+"İlk olarak, ana bilgisayar FreeBSD sisteminin en son -RELEASE şubesini <xref "
+"linkend=\"makeworld\"/>'daki talimatları kullanarak güncellemeniz önerilir. "
+"Ayrıca, bu şablon <package>sysutils/cpdup</package> paketini veya portunu "
+"kullanır ve portsnap, FreeBSD Port Koleksiyonunu indirmek için kullanılır."
 
 #. (itstool) path: step/para
 #: book.translate.xml:28640
+#, fuzzy
 msgid ""
 "First, create a directory structure for the read-only file system which will "
 "contain the FreeBSD binaries for the jails. Then, change directory to the "
 "FreeBSD source tree and install the read-only file system to the jail "
 "template:"
 msgstr ""
+"İlk olarak salt okunur dosya sistemi için hapislerin FreeBSD derlenmiş "
+"dosyalarını içeren bir dizin yapısı oluşturun. Ardından dizini FreeBSD "
+"kaynak ağacı olarak değiştirin ve salt okunur dosya sistemini hapis "
+"şablonuna yükleyin:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:28646
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>mkdir /home/j /home/j/mroot</userinput>\n"
 "<prompt>#</prompt> <userinput>cd /usr/src</userinput>\n"
 "<prompt>#</prompt> <userinput>make installworld DESTDIR=/home/j/mroot</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>mkdir /home/j /home/j/mroot</userinput>\n"
+"<prompt>#</prompt> <userinput>cd /usr/src</userinput>\n"
+"<prompt>#</prompt> <userinput>make installworld DESTDIR=/home/j/"
+"mroot</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:28652
