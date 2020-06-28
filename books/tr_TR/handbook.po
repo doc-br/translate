@@ -18,8 +18,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-27 19:31+0000\n"
-"Last-Translator: onuraydin3 <crymzonx@gmail.com>\n"
+"PO-Revision-Date: 2020-06-28 11:46+0000\n"
+"Last-Translator: firdevssevik <sevikfirdevs@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -41943,40 +41943,56 @@ msgstr ""
 
 #. (itstool) path: info/title
 #: book.translate.xml:28492
+#, fuzzy
 msgid "Updating Multiple Jails"
-msgstr ""
+msgstr "Birden Fazla Hapsi Güncelleme"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:28495 book.translate.xml:34813 book.translate.xml:35148
+#, fuzzy
 msgid ""
 "<personname> <firstname>Daniel</firstname> <surname>Gerzo</surname> </"
 "personname> <contrib>Contributed by </contrib>"
 msgstr ""
+"<personname><firstname>Gerzo'nun</firstname><surname>katkılarıyla</surname></"
+"personname><contrib>Daniel</contrib>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:28504
+#, fuzzy
 msgid ""
 "<personname> <firstname>Simon</firstname> <surname>L. B. Nielsen</surname> </"
 "personname> <contrib>Based upon an idea presented by </contrib>"
 msgstr ""
+"<personname><firstname>Simon</firstname><surname>L. B. "
+"Nielsen</surname></personname><contrib>tarafından sunulan bir fikre</contrib>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:28513
+#, fuzzy
 msgid ""
 "<personname> <firstname>Ken</firstname> <surname>Tom</surname> </personname> "
 "<contrib>And an article written by </contrib>"
 msgstr ""
+"<personname><firstname>bir "
+"makaleye</firstname><surname>dayanarak</surname></personname><contrib>ve Ken "
+"Tom tarafından yazılan</contrib>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:28523
+#, fuzzy
 msgid ""
 "The management of multiple jails can become problematic because every jail "
 "has to be rebuilt from scratch whenever it is upgraded. This can be time "
 "consuming and tedious if a lot of jails are created and manually updated."
 msgstr ""
+"Birden fazla hapsin yönetimi sorun yaratabilir çünkü her sınıf "
+"atladıklarında hapislerin tümü sıfırdan oluşturulmalıdır. Çok sayıda hapis "
+"oluşturulur ve manuel olarak güncellenirse bu zaman alıcı ve yorucu olabilir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:28528
+#, fuzzy
 msgid ""
 "This section demonstrates one method to resolve this issue by safely sharing "
 "as much as is possible between jails using read-only "
@@ -41986,54 +42002,81 @@ msgid ""
 "<acronym>DNS</acronym>, and <acronym>SMTP</acronym>, into individual jails. "
 "Additionally, it provides a simple way to add, remove, and upgrade jails."
 msgstr ""
+"Bu bölüm, güncellemenin daha kolay olması için salt okunur <citerefentry><ref"
+"entrytitle>mount_nullfs</refentrytitle><manvolnum>8</manvolnum></citerefentry"
+"> bağları kullanan hapisler arasında olabildiğince güvenli bir şekilde "
+"paylaşım yaparak bu sorunu çözmek için bir yöntem gösterir. Bu, "
+"<acronym></acronym>HTTP, <acronym></acronym>DNS ve <acronym>SMTP</acronym> "
+"gibi tek hizmetlerin ayrı ayrı hapislere yerleştirilmesini daha cazip hale "
+"getirir. Ayrıca, hapisleri eklemek, kaldırmak ve hapislere sınıf atlatmak "
+"için basit bir yol sağlar."
 
 #. (itstool) path: note/para
 #: book.translate.xml:28538
+#, fuzzy
 msgid ""
 "Simpler solutions exist, such as <application>ezjail</application>, which "
 "provides an easier method of administering FreeBSD jails but is less "
 "versatile than this setup. <application>ezjail</application> is covered in "
 "more detail in <xref linkend=\"jails-ezjail\"/>."
 msgstr ""
+"FreeBSD hapislerini yönetmek için daha kolay bir yöntem sağlayan ancak bu "
+"kurulumdan daha az yönlü olan <application>ezjail</application> gibi daha "
+"basit çözümler mevcuttur. <application>ezjail</application>, <xref linkend"
+"=\"jails-ezjail\"/>'te daha ayrıntılı olarak ele alınmıştır."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:28545
+#, fuzzy
 msgid "The goals of the setup described in this section are:"
-msgstr ""
+msgstr "Bu bölümde anlatılan kurulumun amaçları şunlardır:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28549
+#, fuzzy
 msgid ""
 "Create a simple and easy to understand jail structure that does not require "
 "running a full installworld on each and every jail."
 msgstr ""
+"Her bir hapiste tam bir kurulum dünyası gerektirmeyen basit ve anlaşılması "
+"kolay bir hapis yapısı oluşturun."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28555
+#, fuzzy
 msgid "Make it easy to add new jails or remove existing ones."
 msgstr ""
+"Yeni hapislerin eklenmesini veya mevcut hapislerin kaldırılmasını "
+"kolaylaştırın."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28560
+#, fuzzy
 msgid "Make it easy to update or upgrade existing jails."
 msgstr ""
+"Mevcut hapislerin güncellenmesini veya sınıf atlatılmasını kolaylaştırın."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28564
+#, fuzzy
 msgid "Make it possible to run a customized FreeBSD branch."
-msgstr ""
+msgstr "Özelleştirilmiş bir FreeBSD dalı çalıştırmayı mümkün kılın."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28568
+#, fuzzy
 msgid ""
 "Be paranoid about security, reducing as much as possible the possibility of "
 "compromise."
 msgstr ""
+"Uzlaşma olasılığını mümkün olduğunca azaltarak güvenlik konusunda tedbirli "
+"olun."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28573
+#, fuzzy
 msgid "Save space and inodes, as much as possible."
-msgstr ""
+msgstr "Mümkün olduğunca yerden ve inodelardan tasarruf edin."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:28577
