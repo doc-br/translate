@@ -18,8 +18,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-28 11:46+0000\n"
-"Last-Translator: firdevssevik <sevikfirdevs@gmail.com>\n"
+"PO-Revision-Date: 2020-06-29 00:10+0000\n"
+"Last-Translator: yunusesav <yunusesav@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -64484,135 +64484,187 @@ msgstr ""
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:44025
+#, fuzzy
 msgid "So, the previous Latin-1 example would look like this:"
-msgstr ""
+msgstr "Böylece yukarıdaki Latin-1 örneği şu şekilde görünür:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:44028
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "german|German Users Accounts:\\\n"
 "\t:charset=ISO-8859-1:\\\n"
 "\t:lang=de_DE.ISO8859-1:\\\n"
 "\t:tc=default:"
 msgstr ""
+"german|German Users Accounts:\\\n"
+"\t:charset=ISO-8859-1:\\\n"
+"\t:lang=de_DE.ISO8859-1:\\\n"
+"\t:tc=default:"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:44033
+#, fuzzy
 msgid ""
 "See <citerefentry><refentrytitle>login.conf</refentrytitle><manvolnum>5</"
 "manvolnum></citerefentry> for more details about these variables. Note that "
 "it already contains pre-defined <replaceable>russian</replaceable> class."
 msgstr ""
+"Bu değişkenlerle ilgili daha fazla ayrıntı için <citerefentry><refentrytitle>"
+"login.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 'a "
+"bakınız. Hali hazırda ön tanımlı <replaceable>russian</replaceable> "
+"sınıfının bulunduğu dikkate alınmalıdır."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:44037
+#, fuzzy
 msgid ""
 "Whenever <filename>/etc/login.conf</filename> is edited, remember to execute "
 "the following command to update the capability database:"
 msgstr ""
+"<filename>/etc/login.conf</filename> her düzenlendiğinde kapasite "
+"veritabanını güncellemek için şu komutu çalıştırmayı unutmayınız:"
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:44044
+#, fuzzy
 msgid "Utilities Which Change Login Classes"
-msgstr ""
+msgstr "Oturum Açma Sınıflarını Değiştiren Yardımcı Programlar"
 
 #. (itstool) path: sect4/indexterm
 #: book.translate.xml:44046
+#, fuzzy
 msgid "<primary><command>vipw</command></primary>"
-msgstr ""
+msgstr "<primary><command>vipw</command></primary>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:44050
+#, fuzzy
 msgid ""
 "In addition to manually editing <filename>/etc/login.conf</filename>, "
 "several utilities are available for setting the locale for newly created "
 "users."
 msgstr ""
+"<filename>/etc/login.conf</filename> 'u elle düzenlemeye ek olarak yeni "
+"oluşturulan kullanıcılar için yerel ayarları yapmaya yarayan çok sayıda "
+"yardımcı program mevcuttur."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:44055
+#, fuzzy
 msgid ""
 "When using <command>vipw</command> to add new users, specify the "
 "<replaceable>language</replaceable> to set the locale:"
 msgstr ""
+"<command>vipw</command> kullanarak yeni kullanıcı eklerken yerel ayarı "
+"yapmak için <replaceable>language</replaceable> 'ı belirtin:"
 
 #. (itstool) path: sect4/programlisting
 #: book.translate.xml:44059
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "user:password:1111:11:<replaceable>language</replaceable>:0:0:User Name:/home/user:/bin/sh"
 msgstr ""
+"user:password:1111:11:<replaceable>language</replaceable>:0:0:User Name:/"
+"home/user:/bin/sh"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:44066
+#, fuzzy
 msgid ""
 "When using <command>adduser</command> to add new users, the default language "
 "can be pre-configured for all new users or specified for an individual user."
 msgstr ""
+"<command>adduser</command> kullanarak yeni kullanıcı eklerken varsayılan dil "
+"tüm kullanıcılar için ön tanımlı olabilir veya bireysel kullanıcı için "
+"belirlenebilir."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:44070
+#, fuzzy
 msgid ""
 "If all new users use the same language, set "
 "<literal>defaultclass=<replaceable>language</replaceable></literal> in "
 "<filename>/etc/adduser.conf</filename>."
 msgstr ""
+"Tüm kullanıcılar aynı dili kullanıyorsa <filename>/etc/"
+"adduser.conf</filename> 'ta "
+"<literal>defaultclass=<replaceable>language</replaceable></literal> yapın."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:44074
+#, fuzzy
 msgid ""
 "To override this setting when creating a user, either input the required "
 "locale at this prompt:"
 msgstr ""
+"Kullanıcı oluştururken bu ayarı geçersiz kılmak için ya gerekli yerel ayarı "
+"bu komut istemine girin:"
 
 #. (itstool) path: sect4/screen
 #: book.translate.xml:44077
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>Enter login class: default []:</prompt>"
-msgstr ""
+msgstr "<prompt>Enter login class: default []:</prompt>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:44079
+#, fuzzy
 msgid "or specify the locale to set when invoking <command>adduser</command>:"
 msgstr ""
+"ya da <command>adduser</command> 'ı çalıştırırken yapılacak yerel ayarı "
+"belirtin:"
 
 #. (itstool) path: sect4/screen
 #: book.translate.xml:44082
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>adduser -class <replaceable>language</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>adduser -class "
+"<replaceable>language</replaceable></userinput>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:44088
+#, fuzzy
 msgid ""
 "If <command>pw</command> is used to add new users, specify the locale as "
 "follows:"
 msgstr ""
+"<command>pw</command> yeni kullanıcı eklemek için kullanıldıysa yerel ayarı "
+"şu şekilde belirtin:"
 
 #. (itstool) path: sect4/screen
 #: book.translate.xml:44091
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pw useradd <replaceable>user_name</replaceable> -L <replaceable>language</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>pw useradd <replaceable>user_name</replaceable>"
+" -L <replaceable>language</replaceable></userinput>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:44093
+#, fuzzy
 msgid ""
 "To change the login class of an existing user, <command>chpass</command> can "
 "be used. Invoke it as superuser and provide the username to edit as the "
 "argument."
 msgstr ""
+"Var olan bir kullanıcının oturum açma sınıfını değiştirmek için "
+"<command>chpass</command> kullanılabilir. Komutu yetkili kullanıcı olarak "
+"çalıştırın ve parametre olarak düzenlemek için kullanıcı adını verin."
 
 #. (itstool) path: sect4/screen
 #: book.translate.xml:44098
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>chpass <replaceable>user_name</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>chpass "
+"<replaceable>user_name</replaceable></userinput>"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:44103
+#, fuzzy
 msgid "Shell Startup File Method"
-msgstr ""
+msgstr "Kabuk Başlangıç Dosyası Metodu"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:44105
