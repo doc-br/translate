@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-29 13:34+0000\n"
+"PO-Revision-Date: 2020-06-29 17:51+0000\n"
 "Last-Translator: nurbanu  hasanoğlu <hasanoglunurbanu@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
@@ -74119,7 +74119,7 @@ msgid ""
 "password sequence does not occur it is necessary to authenticate users using "
 "either PAP or CHAP."
 msgstr ""
-"Varsayılan olarak <package>comms/mgetty+sendfax</package> bağlantı  noktası "
+"Varsayılan olarak <package>comms/mgetty+sendfax</package> bağlantı noktası "
 "<command>mgetty</command>'nin <acronym>PPP</acronym>'nin LCP aşamasını "
 "algılamasına izin veren <literal>AUTO_PPP</literal> ve otomatik olarak bir "
 "ppp kabuğundan çıkmasını sağlayan seçeneği aktif olarak gelir. Ancak, "
@@ -74128,102 +74128,141 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50414
+#, fuzzy
 msgid ""
 "This section assumes the user has successfully compiled, and installed the "
 "<package>comms/mgetty+sendfax</package> port on his system."
 msgstr ""
+"Bu bölüm, kullanıcıların başarıyla <package>comms/mgetty+sendfax</package> "
+"bağlantı noktasını derlediğini ve yüklediğini varsayar."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50419
+#, fuzzy
 msgid ""
 "Ensure that <filename>/usr/local/etc/mgetty+sendfax/login.config</filename> "
 "has the following:"
 msgstr ""
+"<filename>/usr/local/etc/mgetty+sendfax/login.config</filename>'in aşağıdaki "
+"satırı içerdiğinden emin olun:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:50423
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "/AutoPPP/ -     - /etc/ppp/ppp-pap-dialup"
-msgstr ""
+msgstr "/AutoPPP/ -     - /etc/ppp/ppp-pap-dialup"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50425
+#, fuzzy
 msgid ""
 "This tells <command>mgetty</command> to run <filename>ppp-pap-dialup</"
 "filename> for detected <acronym>PPP</acronym> connections."
 msgstr ""
+"Bu, <command>mgetty</command>'ye tespit edilen <acronym>PPP</acronym> "
+"bağlantıları için <filename>ppp-pap-dialup</filename>'ı çalıştırmasını "
+"söyler."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50429
+#, fuzzy
 msgid ""
 "Create an executable file called <filename>/etc/ppp/ppp-pap-dialup</"
 "filename> containing the following:"
 msgstr ""
+"Aşağıdaki satırları içeren <filename>/etc/ppp/ppp-pap-dialup</filename> adlı "
+"çalıştırılabilir bir dosya oluşturun."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:50433
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "#!/bin/sh\n"
 "exec /usr/sbin/ppp -direct pap$IDENT"
 msgstr ""
+"#!/bin/sh\n"
+"exec /usr/sbin/ppp -direct pap$IDENT"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50436
+#, fuzzy
 msgid ""
 "For each dial-up line enabled in <filename>/etc/ttys</filename>, create a "
 "corresponding entry in <filename>/etc/ppp/ppp.conf</filename>. This will "
 "happily co-exist with the definitions we created above."
 msgstr ""
+"<filename>/etc/ttys</filename>'de aktif olan her bir çevirmeli hat için, "
+"<filename>/etc/ppp/ppp.conf</filename>'da ona denk düşen bir girdi "
+"oluşturun. Bu, yukarıda oluşturduğumuz tanımlarla düzgün bir şekilde "
+"birlikte çalışacaktır."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:50442
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "pap:\n"
 "  enable pap\n"
 "  set ifaddr 203.14.100.1 203.14.100.20-203.14.100.40\n"
 "  enable proxy"
 msgstr ""
+"pap:\n"
+"  enable pap\n"
+"  set ifaddr 203.14.100.1 203.14.100.20-203.14.100.40\n"
+"  enable proxy"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50447
+#, fuzzy
 msgid ""
 "Each user logging in with this method will need to have a username/password "
 "in <filename>/etc/ppp/ppp.secret</filename>, or alternatively add the "
 "following option to authenticate users via PAP from <filename>/etc/passwd</"
 "filename>."
 msgstr ""
+"Bu yolla oturum açan her kullanıcı, <filename>/etc/ppp/ppp.secret</filename>’"
+"da bir kullanıcı adı/şifresi sahip olmasını gerektirecektir ya da alternatif "
+"olarak, aşağıdaki seçeneği <filename>/etc/passwd</filename>’daki PAP "
+"aracılığıyla kimlik doğrulamaya ekleyin."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:50454
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "enable passwdauth"
-msgstr ""
+msgstr "enable passwdauth"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50456
+#, fuzzy
 msgid ""
 "To assign some users a static <acronym>IP</acronym> number, specify the "
 "number as the third argument in <filename>/etc/ppp/ppp.secret</filename>. "
 "See <filename>/usr/share/examples/ppp/ppp.secret.sample</filename> for "
 "examples."
 msgstr ""
+"Bazı kullanıcılara sabit bir <acronym>IP</acronym> adresi atamak için, "
+"<filename>/etc/ppp/ppp.secret</filename>’daki üçüncü değişken gibi bir sayı "
+"belirleyin. Daha fazla örnek için <filename>/usr/share/examples/ppp/"
+"ppp.secret.sample</filename>’a bakın."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:50476
+#, fuzzy
 msgid "Troubleshooting <acronym>PPP</acronym> Connections"
-msgstr ""
+msgstr "<acronym>PPP</acronym> Bağlantılarında Sorun Giderme"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:50478
+#, fuzzy
 msgid ""
 "<primary><acronym>PPP</acronym></primary> <secondary>troubleshooting</"
 "secondary>"
 msgstr ""
+"<primary><acronym>PPP</acronym></primary> <secondary>sorun "
+"giderme</secondary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:50483
+#, fuzzy
 msgid ""
 "This section covers a few issues which may arise when using <acronym>PPP</"
 "acronym> over a modem connection. Some <acronym>ISP</acronym>s present the "
@@ -74232,42 +74271,58 @@ msgid ""
 "the login attempt will fail. The most common way to debug <command>ppp</"
 "command> connections is by connecting manually as described in this section."
 msgstr ""
+"Bu bölüm <acronym>PPP</acronym>'yi bir modem bağlantısı üzerinden "
+"kullanırken ortaya çıkabilecek bazı sorunları kapsar. Bazı "
+"<acronym>ISP</acronym>’lerde <literal>ssword</literal> komut istemi varken, "
+"diğerlerinde <literal>password</literal> komut istemi vardır. Eğer buna "
+"uygun olarak <command>ppp</command> komut dizisi yazılmamışsa, oturum açma "
+"girişimi başarısız olmaktır. <command>ppp</command>’den hata ayıklamak için "
+"en yaygın yol bu bölümde tarif edildiği gibi elle bağlanmaktır."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:50494
+#, fuzzy
 msgid "Check the Device Nodes"
-msgstr ""
+msgstr "Aygıt Düğümlerini Kontrol Edin"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50496
+#, fuzzy
 msgid ""
 "When using a custom kernel, make sure to include the following line in the "
 "kernel configuration file:"
 msgstr ""
+"İsteğe göre uyarlanmış bir çekirdek kullanırken, çekirdek yapılandırma "
+"dosyasına aşağıdaki satırın eklendiğinden emin olun:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:50499
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "device   uart"
-msgstr ""
+msgstr "device   uart"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50501
+#, fuzzy
 msgid ""
 "The <filename>uart</filename> device is already included in the "
 "<literal>GENERIC</literal> kernel, so no additional steps are necessary in "
 "this case. Just check the <command>dmesg</command> output for the modem "
 "device with:"
 msgstr ""
+"<filename>uart</filename> aygıtı zaten <literal>GENERIC</literal> "
+"çekirdeğine dahil edilmiştir bu yüzden ek adımlar bu durumda gerekli "
+"değildir. Sadece modemin <command>dmesg</command> çıkışını kontrol edin:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:50507
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>dmesg | grep uart</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>dmesg | grep uart</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50509
+#, fuzzy
 msgid ""
 "This should display some pertinent output about the <filename>uart</"
 "filename> devices. These are the COM ports we need. If the modem acts like a "
@@ -74276,14 +74331,23 @@ msgid ""
 "matching up, if the modem is on <filename>uart1</filename>, the modem device "
 "would be <filename>/dev/cuau1</filename>."
 msgstr ""
+"Bu, <filename>uart</filename> aygıtlarıyla ilgili çıktıları göstermelidir. "
+"Bunlar ihtiyacımız olan COM bağlantı noktalarıdır. Eğer modem standart bir "
+"seri bağlantı noktası gibi davranırsa, bu <filename>uart1</filename> ya da "
+"<filename>COM2</filename>’de listelenmelidir. Eğer öyleyse, çekirdeğin "
+"yeniden kurulumu gerekli değildir. Eşleştirirken, eğer modem "
+"<filename>uart1</filename> üzerindeyse, modem aygıtı <filename>/dev/"
+"cuau1</filename>’de olur."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:50520
+#, fuzzy
 msgid "Connecting Manually"
-msgstr ""
+msgstr "Elle Bağlanma"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50522
+#, fuzzy
 msgid ""
 "Connecting to the Internet by manually controlling <command>ppp</command> is "
 "quick, easy, and a great way to debug a connection or just get information "
@@ -74293,186 +74357,237 @@ msgid ""
 "emphasis> as the hostname of the machine running <application>PPP</"
 "application>. To start <command>ppp</command>:"
 msgstr ""
+"İnternete <command>ppp</command>’yi el ile kontrol ederek bağlanmak hızlı, "
+"kolay, ve bir bağlantıdan hata ayıklamak için ya da sadece "
+"<acronym>ISP</acronym>'nin <command>ppp</command> istemci bağlantılarına "
+"nasıl davrandığına dair bilgi toplamak için harika bir yoldur. Hadi "
+"<application>PPP</application>’yi komut satırından başlatalım. Tüm "
+"örneklerimizde <application>PPP</application>’yi çalıştıran makine için "
+"<emphasis>example</emphasis> ana bilgisayar adını kullanacağımızı not edin. "
+"<command>ppp</command>’yi başlatmak için:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:50534
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "ppp ON example&gt; <userinput>set device /dev/cuau1</userinput>"
-msgstr ""
+msgstr "ppp ON example&gt; <userinput>set device /dev/cuau1</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50536
+#, fuzzy
 msgid ""
 "This second command sets the modem device to <filename>cuau1</filename>."
-msgstr ""
+msgstr "Bu ikinci komut modem aygıtını <filename>/cuau1</filename>’e kurar."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:50539
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "ppp ON example&gt; <userinput>set speed 115200</userinput>"
-msgstr ""
+msgstr "ppp ON example&gt; <userinput>set speed 115200</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50541
+#, fuzzy
 msgid "This sets the connection speed to 115,200 <acronym>kbps</acronym>."
-msgstr ""
+msgstr "Bu, bağlantı hızını 115,200 <acronym>kbps</acronym>’ye ayarlar."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:50544
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "ppp ON example&gt; <userinput>enable dns</userinput>"
-msgstr ""
+msgstr "ppp ON example&gt; <userinput>enable dns</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50546
+#, fuzzy
 msgid ""
 "This tells <command>ppp</command> to configure the resolver and add the "
 "nameserver lines to <filename>/etc/resolv.conf</filename>. If <command>ppp</"
 "command> cannot determine the hostname, it can manually be set later."
 msgstr ""
+"Bu, <command>ppp</command>’ye çözücüyü yapılandırmasını ve ad sunucusu "
+"satırlarını <filename>/etc/resolv.conf</filename>’a eklemesi söyler. Eğer "
+"<command>ppp</command> ana bilgisayar adını saptayamazsa, bu daha sonra elle "
+"kurulabilir."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:50552
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "ppp ON example&gt; <userinput>term</userinput>"
-msgstr ""
+msgstr "ppp ON example&gt; <userinput>term</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50554
+#, fuzzy
 msgid ""
 "This switches to <quote>terminal</quote> mode in order to manually control "
 "the modem."
 msgstr ""
+"Bu, modemi elle kontrol etmek için <quote>terminal</quote> moduna geçirir."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:50557
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "deflink: Entering terminal mode on <filename class=\"devicefile\">/dev/cuau1</filename>\n"
 "type '~h' for help"
 msgstr ""
+"deflink: Entering terminal mode on <filename class=\"devicefile\">/dev/"
+"cuau1</filename>\n"
+"type '~h' for help"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:50560
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<userinput>at</userinput>\n"
 "OK\n"
 "<userinput>atdt<replaceable>123456789</replaceable></userinput>"
 msgstr ""
+"<userinput>at</userinput>\n"
+"OK\n"
+"<userinput>atdt<replaceable>123456789</replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50564
+#, fuzzy
 msgid ""
 "Use <command>at</command> to initialize the modem, then use <command>atdt</"
 "command> and the number for the <acronym>ISP</acronym> to begin the dial in "
 "process."
 msgstr ""
+"Modemi başlangıç durumuna getirmek için <command>at</command>'ı kullanın, "
+"daha sonra <command>atdt</command>’yi ve arama işlemini başlatmak için "
+"<acronym>ISP</acronym> ‘nin numarasını kullanın."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:50568
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "CONNECT"
-msgstr ""
+msgstr "CONNECT"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50570
+#, fuzzy
 msgid ""
 "Confirmation of the connection, if we are going to have any connection "
 "problems, unrelated to hardware, here is where we will attempt to resolve "
 "them."
 msgstr ""
+"Bağlantının teyiti için, eğer donanımla alakasız olarak herhangi bir "
+"bağlantı problemi yaşayacak olursak, onları çözmeye çalışacağımız yer burası."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:50574
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "ISP Login:<userinput>myusername</userinput>"
-msgstr ""
+msgstr "ISP Login:<userinput>myusername</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50576
+#, fuzzy
 msgid ""
 "At this prompt, return the prompt with the username that was provided by the "
 "<acronym>ISP</acronym>."
 msgstr ""
+"Bu komut, <acronym>ISP</acronym> tarafından sağlanan kullanıcı adını "
+"döndürür."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:50579
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "ISP Pass:<userinput>mypassword</userinput>"
-msgstr ""
+msgstr "ISP Pass:<userinput>mypassword</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50581
+#, fuzzy
 msgid ""
 "At this prompt, reply with the password that was provided by the "
 "<acronym>ISP</acronym>. Just like logging into FreeBSD, the password will "
 "not echo."
 msgstr ""
+"Bu komutda, <acronym>ISP</acronym> tarafından sağlanan şifreyle yanıtlayın. "
+"Tıpkı FreeBSD’ye giriş yapmak gibi, şifre yankılanmayacaktır."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:50585
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Shell or PPP:<userinput>ppp</userinput>"
-msgstr ""
+msgstr "Shell or PPP:<userinput>ppp</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50587
+#, fuzzy
 msgid ""
 "Depending on the <acronym>ISP</acronym>, this prompt might not appear. If it "
 "does, it is asking whether to use a shell on the provider or to start "
 "<command>ppp</command>. In this example, <command>ppp</command> was selected "
 "in order to establish an Internet connection."
 msgstr ""
+"<acronym>ISP</acronym>’ye bağlı olarak, bu komut belirmeyebilir. Eğer "
+"belirirse, sağlayıcıya bir kabuk mu kullanması gerektiğini ya da "
+"<command>ppp</command>’yi mi başlatması gerektiğini sorar. Bu örnekte, "
+"internet bağlantısı kurmak için <command>ppp</command> seçilmiştir."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:50594
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Ppp ON example&gt;"
-msgstr ""
+msgstr "Ppp ON example&gt;"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50596
+#, fuzzy
 msgid ""
 "Notice that in this example the first <option>p</option> has been "
 "capitalized. This shows that we have successfully connected to the "
 "<acronym>ISP</acronym>."
 msgstr ""
+"Bu örnekte ilk <option>p</option>'nin büyük harf olduğuna dikkat edin. Bu "
+"bize <acronym>ISP</acronym>’ye başarıyla bağladığımızı gösterir."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:50600
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "PPp ON example&gt;"
-msgstr ""
+msgstr "PPp ON example&gt;"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50602
+#, fuzzy
 msgid ""
 "We have successfully authenticated with our <acronym>ISP</acronym> and are "
 "waiting for the assigned <acronym>IP</acronym> address."
 msgstr ""
+"<acronym>ISP</acronym> ile başarılı bir şekilde kimlik doğrulaması yaptık ve "
+"atanmış <acronym>IP</acronym> adresi için bekliyoruz."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:50606
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "PPP ON example&gt;"
-msgstr ""
+msgstr "PPP ON example&gt;"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50608
+#, fuzzy
 msgid ""
 "We have made an agreement on an <acronym>IP</acronym> address and "
 "successfully completed our connection."
 msgstr ""
+"<acronym>IP</acronym> adresi üzerinde başarılı bir anlaşma yaptık ve "
+"bağlantıyı başarıyla tamamladık."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:50611
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "PPP ON example&gt;<userinput>add default HISADDR</userinput>"
-msgstr ""
+msgstr "PPP ON example&gt;<userinput>add default HISADDR</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50613
+#, fuzzy
 msgid ""
 "Here we add our default route, we need to do this before we can talk to the "
 "outside world as currently the only established connection is with the peer. "
@@ -74481,9 +74596,15 @@ msgid ""
 "before making the actual connection and it will negotiate a new route "
 "accordingly."
 msgstr ""
+"Burada varsayılan rotamızı ekliyoruz, şu anki tek bağlantımız eşle ve dış "
+"dünya ile konuşabilmek için bunu yapmamız gerekiyor. Eğer bu, mevcut rotalar "
+"nedeniyle başarısız olursa, <option>add</option>’ın önüne bir ünlem işareti "
+"<literal>!</literal> koyun. Alternatif olarak, gerçek bağlantıyı kurmadan "
+"önce bunu ayarlayın ve buna göre yeni bir rota üzerinde anlaşın."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50622
+#, fuzzy
 msgid ""
 "If everything went good we should now have an active connection to the "
 "Internet, which could be thrown into the background using <keycombo action="
@@ -74493,14 +74614,23 @@ msgid ""
 "Capital P's represent a connection to the <acronym>ISP</acronym> and "
 "lowercase p's show that the connection has been lost."
 msgstr ""
+"Eğer her şey iyi gittiyse şu anda aktif bir internet bağlantımız olmalı, "
+"eğer <command>PPP</command> <command>ppp</command>’ye dönerse, bağlantı "
+"kaybolur, bu <keycombo action=\"simul\"><keycap>CTRL</keycap> "
+"<keycap>z</keycap></keycombo> kullanılarak arka plana atılabilir. Bu bilmek "
+"için iyi bir şeydir çünkü bağlantı durumlarını gösterir. Büyük P’ler "
+"<acronym>ISP</acronym>’ye bir bağlantı olduğunu ve küçük p’ler de "
+"bağlantının koptuğunu gösterir."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:50634
+#, fuzzy
 msgid "Debugging"
-msgstr ""
+msgstr "Hata Ayıklama"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50636
+#, fuzzy
 msgid ""
 "If a connection cannot be established, turn hardware flow <acronym>CTS/RTS</"
 "acronym> to off using <option>set ctsrts off</option>. This is mainly the "
@@ -74514,61 +74644,97 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> for more information "
 "on this option and how it is used."
 msgstr ""
+"Eğer bir bağlantı belirlenemediyse, donanım akışı <acronym>CTS/RTS</acronym>’"
+"yi <option>set ctsrts off</option>’u kullanarak kapatın. Bu, "
+"<application>PPP</application> iletişim bağlantısına veri yazmaya "
+"çalışırken, asla gelmeyecek bir Clear To Send(<acronym>CTS</acronym>) "
+"sinyali bekleyen bazı <application>PPP</application> duyarlı terminal "
+"servislerine bağlanıldığında daha çok görülür. Bu seçeneği kullanırken, "
+"<option>set accmap</option>’i dahil edin çünkü donanıma bağlı olarak belirli "
+"karakterleri uçtan uca geçirirken olabilecek sorunları yenmek için gerekli "
+"olabilir, bunlar çoğu zaman XON/XOFF’dur. Bu seçenek ile ilgili daha fazla "
+"bilgi ve nasıl kullanıldığını öğrenmek için <citerefentry><refentrytitle>ppp<"
+"/refentrytitle><manvolnum>8</manvolnum></citerefentry>’e bakın."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50649
+#, fuzzy
 msgid ""
 "An older modem may need <option>set parity even</option>. Parity is set at "
 "none be default, but is used for error checking with a large increase in "
 "traffic, on older modems."
 msgstr ""
+"Eski bir modem <option>set parity even</option> seçeneğine ihtiyaç "
+"duyabilir. Eşlik, varsayılan olarak ‘hiç’ şeklinde tanımlanmıştır ama eski "
+"modemlerde, trafikte büyük bir artış olduğunda hata kontrolü için kullanılır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50654
+#, fuzzy
 msgid ""
 "<application>PPP</application> may not return to the command mode, which is "
 "usually a negotiation error where the <acronym>ISP</acronym> is waiting for "
 "negotiating to begin. At this point, using <command>~p</command> will force "
 "ppp to start sending the configuration information."
 msgstr ""
+"<application>PPP</application> komut moduna dönmeyebilir, ki bu çoğunlukla "
+"<acronym>ISP</acronym>’nin anlaşmanın başlaması için beklerken oluşan bir "
+"anlaşma hatasıdır. Bu noktada, <command>~p</command> kullanmak ppp’yi "
+"yapılandırma bilgilerini göndermeye başlaması için zorlayacaktır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50660
+#, fuzzy
 msgid ""
 "If a login prompt never appears, <acronym>PAP</acronym> or <acronym>CHAP</"
 "acronym> authentication is most likely required. To use <acronym>PAP</"
 "acronym> or <acronym>CHAP</acronym>, add the following options to "
 "<application>PPP</application> before going into terminal mode:"
 msgstr ""
+"Eğer bir girişi istemi görüntülenmezse, <acronym>PAP</acronym> ya da "
+"<acronym>CHAP</acronym> kimlik doğrulaması büyük olasılıkla gerekir. "
+"<acronym>PAP</acronym> ya da <acronym>CHAP</acronym>, terminal moduna "
+"girmeden önce aşağıdaki seçenekleri <application>PPP</application>’ye ekler:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:50667
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "ppp ON example&gt; <userinput>set authname <replaceable>myusername</replaceable></userinput>"
 msgstr ""
+"ppp ON example&gt; <userinput>set authname "
+"<replaceable>myusername</replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50669
+#, fuzzy
 msgid ""
 "Where <replaceable>myusername</replaceable> should be replaced with the "
 "username that was assigned by the <acronym>ISP</acronym>."
 msgstr ""
+"<replaceable>myusername</replaceable> <acronym>ISP</acronym> tarafından "
+"atanmış kullanıcı adı ile değiştirilmelidir."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:50673
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "ppp ON example&gt; <userinput>set authkey <replaceable>mypassword</replaceable></userinput>"
 msgstr ""
+"ppp ON example&gt; <userinput>set authkey "
+"<replaceable>mypassword</replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50675
+#, fuzzy
 msgid ""
 "Where <replaceable>mypassword</replaceable> should be replaced with the "
 "password that was assigned by the <acronym>ISP</acronym>."
 msgstr ""
+"<replaceable>mypassword</replaceable> <acronym>ISP</acronym> tarafından "
+"atanmış şifre ile değiştirilmelidir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50679
+#, fuzzy
 msgid ""
 "If a connection is established, but cannot seem to find any domain name, try "
 "to <citerefentry><refentrytitle>ping</refentrytitle><manvolnum>8</"
@@ -74579,61 +74745,88 @@ msgid ""
 "acronym> address, it is possible that a resolver address has not been added "
 "to <filename>/etc/resolv.conf</filename>. This file should look like:"
 msgstr ""
+"Eğer bir bağlantı kurulmuşsa ama hiç etki alanı adı bulamadıysa, bir "
+"<acronym>IP</acronym> adresi <citerefentry><refentrytitle>ping</refentrytitle"
+"><manvolnum>8</manvolnum></citerefentry> yapmayı deneyin. Eğer %100 paket "
+"kaybı varsa, büyük olasılıkla varsayılan bir rota atanmamış olabilir. "
+"Bağlantı sırasında <option>add default HISADDR</option>’yi iki kez kontrol "
+"edin. Eğer bir uzak <acronym>IP</acronym> bağlantısı kurulabilirse, "
+"<filename>/etc/resolv.conf</filename>’da bir çözümleyici adresinin "
+"bulunamamış olması mümkündür. Bu dosya şöyle görülmelidir:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:50690
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "domain <replaceable>example.com</replaceable>\n"
 "nameserver <replaceable>x.x.x.x</replaceable>\n"
 "nameserver <replaceable>y.y.y.y</replaceable>"
 msgstr ""
+"domain <replaceable>example.com</replaceable>\n"
+"nameserver <replaceable>x.x.x.x</replaceable>\n"
+"nameserver <replaceable>y.y.y.y</replaceable>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50694
+#, fuzzy
 msgid ""
 "Where <replaceable>x.x.x.x</replaceable> and <replaceable>y.y.y.y</"
 "replaceable> should be replaced with the <acronym>IP</acronym> address of "
 "the <acronym>ISP</acronym>'s DNS servers."
 msgstr ""
+"<replaceable>x.x.x.x</replaceable> ve <replaceable>y.y.y.y</replaceable> "
+"<acronym>ISP</acronym>’nin DNS sunucularının <acronym>IP</acronym> "
+"adresleriyle değiştirilmelidir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50699
+#, fuzzy
 msgid ""
 "To configure <citerefentry><refentrytitle>syslog</"
 "refentrytitle><manvolnum>3</manvolnum></citerefentry> to provide logging for "
 "the <application>PPP</application> connection, make sure this line exists in "
 "<filename>/etc/syslog.conf</filename>:"
 msgstr ""
+"<citerefentry><refentrytitle>syslog</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry>’ü <application>PPP</application> bağlantısı için günlük kayıt "
+"tutacak şekilde yapılandırmak için, <filename>/etc/syslog.conf</filename>’da "
+"aşağıdaki satırın olduğundan emin olun:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:50703
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "!ppp\n"
 "*.*     /var/log/ppp.log"
 msgstr ""
+"!ppp\n"
+"*.*     /var/log/ppp.log"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:50723
+#, fuzzy
 msgid "Using <acronym>PPP</acronym> over Ethernet (PPPoE)"
-msgstr ""
+msgstr "<acronym>PPP</acronym>’yi Ethernet Üzerinden Kullanmak (PPPoE)"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:50730
+#, fuzzy
 msgid ""
 "This section describes how to set up <acronym>PPP</acronym> over Ethernet "
 "(<acronym>PPPoE</acronym>)."
 msgstr ""
+"Bu bölüm, <acronym>PPP</acronym>’yi Ethernet üzerinden kurmayı "
+"(<acronym>PPPoE</acronym>) anlatır."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:50733
+#, fuzzy
 msgid "Here is an example of a working <filename>ppp.conf</filename>:"
-msgstr ""
+msgstr "İşte çalışan bir <filename>ppp.conf</filename> örneği:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:50736
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "default:\n"
 "  set log Phase tun command # you can add more detailed logging if you wish\n"
@@ -74647,56 +74840,87 @@ msgid ""
 "  set login\n"
 "  add default HISADDR"
 msgstr ""
+"default:\n"
+"  set log Phase tun command # you can add more detailed logging if you wish\n"
+"  set ifaddr 10.0.0.1/0 10.0.0.2/0\n"
+"\n"
+"name_of_service_provider:\n"
+"  set device PPPoE:<replaceable>xl1</replaceable> # replace xl1 with your "
+"Ethernet device\n"
+"  set authname YOURLOGINNAME\n"
+"  set authkey YOURPASSWORD\n"
+"  set dial\n"
+"  set login\n"
+"  add default HISADDR"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:50748
+#, fuzzy
 msgid "As <systemitem class=\"username\">root</systemitem>, run:"
 msgstr ""
+"<systemitem class=\"username\">root</systemitem> olarak, aşağıdaki komutu "
+"çalıştırın:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:50751
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>ppp -ddial name_of_service_provider</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>ppp -ddial name_of_service_provider</userinput>"
 
 #. (itstool) path: sect1/para
 #. (itstool) path: sect5/para
 #: book.translate.xml:50753 book.translate.xml:63558
+#, fuzzy
 msgid "Add the following to <filename>/etc/rc.conf</filename>:"
-msgstr ""
+msgstr "Aşağıdakileri <filename>/etc/rc.conf</filename>’a ekleyin:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:50756
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "ppp_enable=\"YES\"\n"
 "ppp_mode=\"ddial\"\n"
 "ppp_nat=\"YES\"\t# if you want to enable nat for your local network, otherwise NO\n"
 "ppp_profile=\"name_of_service_provider\""
 msgstr ""
+"ppp_enable=\"YES\"\n"
+"ppp_mode=\"ddial\"\n"
+"ppp_nat=\"YES\"\t# if you want to enable nat for your local network, "
+"otherwise NO\n"
+"ppp_profile=\"name_of_service_provider\""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:50762
+#, fuzzy
 msgid "Using a PPPoE Service Tag"
-msgstr ""
+msgstr "PPPoE Servis Etiketini Kullanma"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50764
+#, fuzzy
 msgid ""
 "Sometimes it will be necessary to use a service tag to establish the "
 "connection. Service tags are used to distinguish between different PPPoE "
 "servers attached to a given network."
 msgstr ""
+"Bazen bir bağlantı kurmak için servis etiketi kullanmak gerekir. Verilen ağa "
+"eklenmiş farklı PPPoE sunucuları arasında onları ayırt etmek için servis "
+"etiketi kullanılır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50769
+#, fuzzy
 msgid ""
 "Any required service tag information should be in the documentation provided "
 "by the <acronym>ISP</acronym>."
 msgstr ""
+"Gerekli her servis etiketi hakkında bilgi <acronym>ISP</acronym> tarafından "
+"sağlanan belgede bulunmalıdır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50772
+#, fuzzy
 msgid ""
 "As a last resort, one could try installing the <package>net/rr-pppoe</"
 "package> package or port. Bear in mind however, this may de-program your "
@@ -74705,9 +74929,17 @@ msgid ""
 "guimenu> menu from the program. The name of the profile should be listed "
 "there. It is usually <emphasis>ISP</emphasis>."
 msgstr ""
+"Son çare olarak, <package>net/rr-pppoe</package> paketini veya bağlantı "
+"noktasını kurmayı deneyebilirsiniz. Ancak bunun modeminizin yazılımını "
+"kaldırabileceğini ya da işe yaramaz kılabileceğini aklınızdan çıkarmayın. Bu "
+"yüzden yapmadan önce iki kez düşünün. Sadece, modem ile gönderilen yazılımı "
+"yükleyin. Sonra, programdan <guimenu>System</guimenu> menüsüne erişin. "
+"Profilin adı orada listelenmelidir. Bu genellikle "
+"<emphasis>ISP</emphasis>’dir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50781
+#, fuzzy
 msgid ""
 "The profile name (service tag) will be used in the PPPoE configuration entry "
 "in <filename>ppp.conf</filename> as the provider part for <command>set "
@@ -74715,110 +74947,155 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> for full details. It "
 "should look like this:"
 msgstr ""
+"Bu profil adı(servis etiketi) PPPoE yapılandırma girişinde "
+"<filename>ppp.conf</filename>’da <command>set device</command> kısmı için "
+"sağlayıcı olarak kullanılacaktır. Tüm detaylar için <citerefentry><refentryti"
+"tle>ppp</refentrytitle><manvolnum>8</manvolnum></citerefentry>’e bakın. Bu, "
+"şöyle görünmelidir:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:50787
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "set device PPPoE:<replaceable>xl1</replaceable>:<replaceable>ISP</replaceable>"
 msgstr ""
+"set device "
+"PPPoE:<replaceable>xl1</replaceable>:<replaceable>ISP</replaceable>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50789
+#, fuzzy
 msgid ""
 "Do not forget to change <replaceable>xl1</replaceable> to the proper device "
 "for the Ethernet card."
 msgstr ""
+"<replaceable>xl1</replaceable>’i ethernet kartı için uygun aygıtla "
+"değiştirmeyi unutmayın."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50792
+#, fuzzy
 msgid "Do not forget to change <replaceable>ISP</replaceable> to the profile."
-msgstr ""
+msgstr "<replaceable>ISP</replaceable>’yi profile değiştirmeyi unutmayın."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50795
+#, fuzzy
 msgid ""
 "For additional information, refer to <link xlink:href=\"http://renaud."
 "waldura.com/doc/freebsd/pppoe/\">Cheaper Broadband with FreeBSD on DSL</"
 "link> by Renaud Waldura."
 msgstr ""
+"Ek bilgi için, Renaud Waldura tarafından yazılmış <link xlink:href=\""
+"http://renaud.waldura.com/doc/freebsd/pppoe/\">Cheaper Broadband with "
+"FreeBSD on DSL</link> 'e bakın."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:50801
+#, fuzzy
 msgid ""
 "PPPoE with a <trademark class=\"registered\">3Com</trademark> <trademark "
 "class=\"registered\">HomeConnect</trademark> ADSL Modem Dual Link"
 msgstr ""
+"PPPoE ile <trademark class=\"registered\">3Com</trademark><trademark class=\""
+"registered\">HomeConnect</trademark> ADSL Modem Çift Bağlantısı"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50805
+#, fuzzy
 msgid ""
 "This modem does not follow the PPPoE specification defined in <link xlink:"
 "href=\"http://www.faqs.org/rfcs/rfc2516.html\">RFC 2516</link>."
 msgstr ""
+"Bu modem <link xlink:href=\"http://www.faqs.org/rfcs/rfc2516.html\">RFC "
+"2516</link> tarafından belirlenmiş PPPoE özelliklerine uymaz."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50809
+#, fuzzy
 msgid ""
 "In order to make FreeBSD capable of communicating with this device, a sysctl "
 "must be set. This can be done automatically at boot time by updating "
 "<filename>/etc/sysctl.conf</filename>:"
 msgstr ""
+"FreeBSD’yi bu aygıtla iletişime geçirebilmek amacıyla, bir sysctl kurulmak "
+"zorundadır. Bu, ön yükleme sırasında otomatik olarak <filename>/etc/"
+"sysctl.conf</filename> tarafından yapılabilir:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:50814
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "net.graph.nonstandard_pppoe=1"
-msgstr ""
+msgstr "net.graph.nonstandard_pppoe=1"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50816
+#, fuzzy
 msgid "or can be done immediately with the command:"
-msgstr ""
+msgstr "ya da aşağıdaki komutla hemen yapılabilir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:50818
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>sysctl net.graph.nonstandard_pppoe=1</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>sysctl "
+"net.graph.nonstandard_pppoe=1</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50820
+#, fuzzy
 msgid ""
 "Unfortunately, because this is a system-wide setting, it is not possible to "
 "talk to a normal PPPoE client or server and a <trademark class=\"registered"
 "\">3Com</trademark> <trademark class=\"registered\">HomeConnect</trademark> "
 "ADSL Modem at the same time."
 msgstr ""
+"Malesef, PPPoE istemcisi ya da sunucusu ve <trademark class=\"registered\""
+">3Com</trademark> <trademark class=\"registered\"> HomeConnect</trademark> "
+"ADSL Modemine aynı anda bağlanmak mümkün değildir çünkü bu sistem çapında "
+"bir ayardır."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:50828
+#, fuzzy
 msgid ""
 "Using <application>PPP</application> over <acronym>ATM</acronym> (PPPoA)"
 msgstr ""
+"<acronym>ATM</acronym> Üzerinden <application>PPP</application> Kullanmak "
+"(PPPoA)"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:50831
+#, fuzzy
 msgid ""
 "<primary><acronym>PPP</acronym></primary> <secondary>over <acronym>ATM</"
 "acronym></secondary>"
 msgstr ""
+"<primary><acronym>PPP</acronym></primary> <secondary>over "
+"<acronym>ATM</acronym></secondary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:50836
+#, fuzzy
 msgid "<primary>PPPoA</primary>"
-msgstr ""
+msgstr "<primary>PPPoA</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:50840
+#, fuzzy
 msgid ""
 "The following describes how to set up PPP over <acronym>ATM</acronym> "
 "(PPPoA). PPPoA is a popular choice among European DSL providers."
 msgstr ""
+"Aşağıdakiler <acronym>ATM</acronym> üzerinden PPP’nin (PPPoA) nasıl "
+"kurulacağını anlatır. PPPoA Avrupalı DSL sağlayıcıları arasında popüler bir "
+"tercihtir."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:50897
+#, fuzzy
 msgid "Using mpd"
-msgstr ""
+msgstr "mpd Kullanma"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50899
