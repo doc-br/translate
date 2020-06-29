@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-06-30 01:11+0000\n"
-"Last-Translator: yami98 <yagmurkaya3625@hotmail.com>\n"
+"Last-Translator: firdevssevik <sevikfirdevs@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -42548,58 +42548,79 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: book.translate.xml:28784
+#, fuzzy
 msgid ""
 "Create the required mount points for the read-only file system of each jail:"
 msgstr ""
+"Her bir hapsin salt okunur dosya sistemi için gerekli bağlama noktalarını "
+"oluşturun:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:28787
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>mkdir /home/j/ns /home/j/mail /home/j/www</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>mkdir /home/j/ns /home/j/mail /home/j/"
+"www</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:28791
+#, fuzzy
 msgid ""
 "Install the read-write template into each jail using <package>sysutils/"
 "cpdup</package>:"
 msgstr ""
+"<package>sysutils/cpdup</package>'ı kullanarak her bir hapse okuma-yazma "
+"şablonunu yükleyin:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:28798
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>mkdir /home/js</userinput>\n"
 "<prompt>#</prompt> <userinput>cpdup /home/j/skel /home/js/ns</userinput>\n"
 "<prompt>#</prompt> <userinput>cpdup /home/j/skel /home/js/mail</userinput>\n"
 "<prompt>#</prompt> <userinput>cpdup /home/j/skel /home/js/www</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>mkdir /home/js</userinput>\n"
+"<prompt>#</prompt> <userinput>cpdup /home/j/skel /home/js/ns</userinput>\n"
+"<prompt>#</prompt> <userinput>cpdup /home/j/skel /home/js/mail</userinput>\n"
+"<prompt>#</prompt> <userinput>cpdup /home/j/skel /home/js/www</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:28805
+#, fuzzy
 msgid ""
 "In this phase, the jails are built and prepared to run. First, mount the "
 "required file systems for each jail, and then start them:"
 msgstr ""
+"Bu aşamada hapisler inşa edilir ve çalıştırılmak için hazırlanır. İlk olarak "
+"her hapis için gerekli dosya sistemlerini kurun ve ardından başlatın:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:28809 book.translate.xml:28918
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>mount -a</userinput>\n"
 "<prompt>#</prompt> <userinput>service jail start</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>mount -a</userinput>\n"
+"<prompt>#</prompt> <userinput>service jail start</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:28814
+#, fuzzy
 msgid ""
 "The jails should be running now. To check if they have started correctly, "
 "use <command>jls</command>. Its output should be similar to the following:"
 msgstr ""
+"Hapisler şimdi çalışıyor olmalıdır. Doğru başlayıp başlamadıklarını kontrol "
+"etmek için <command>jls</command>'i kullanın. Çıkışı aşağıdakine benzer "
+"olmalıdır:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:28818
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>jls</userinput>\n"
 "   JID  IP Address      Hostname                      Path\n"
@@ -42607,9 +42628,15 @@ msgid ""
 "     2  192.168.3.18    mail.example.org              /home/j/mail\n"
 "     1  62.123.43.14    www.example.org               /home/j/www"
 msgstr ""
+"<prompt>#</prompt> <userinput>jls</userinput>\n"
+"   JID  IP Address      Hostname                      Path\n"
+"     3  192.168.3.17    ns.example.org                /home/j/ns\n"
+"     2  192.168.3.18    mail.example.org              /home/j/mail\n"
+"     1  62.123.43.14    www.example.org               /home/j/www"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:28824
+#, fuzzy
 msgid ""
 "At this point, it should be possible to log onto each jail, add new users, "
 "or configure daemons. The <literal>JID</literal> column indicates the jail "
@@ -42617,36 +42644,49 @@ msgid ""
 "perform administrative tasks in the jail whose <acronym>JID</acronym> is "
 "<literal>3</literal>:"
 msgstr ""
+"Bu noktada, her bir hapiste oturum açmak, yeni kullanıcılar eklemek veya "
+"arka plan programlarını (daemon'ları) yapılandırmak mümkün olmalıdır. "
+"<literal>JID</literal> sütunu çalışan her hapsin hapis kimlik numarasını "
+"gösterir. <acronym>JID</acronym>'i <literal>3</literal> olan hapiste yönetim "
+"görevleri gerçekleştirmek için aşağıdaki komutu kullanın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:28831
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>jexec 3 tcsh</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>jexec 3 tcsh</userinput>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:28835
+#, fuzzy
 msgid "Upgrading"
-msgstr ""
+msgstr "Sınıf Atlatma"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:28837
+#, fuzzy
 msgid ""
 "The design of this setup provides an easy way to upgrade existing jails "
 "while minimizing their downtime. Also, it provides a way to roll back to the "
 "older version should a problem occur."
 msgstr ""
+"Bu kurulumun tasarımı aksama sürelerini en aza indirirken mevcut hapislere "
+"sınıf atlatmak için kolay bir yol sağlar. Ayrıca, bir sorun oluştuğunda eski "
+"sürüme geri dönmenin bir yolunu sunar."
 
 #. (itstool) path: step/para
 #: book.translate.xml:28844
+#, fuzzy
 msgid ""
 "The first step is to upgrade the host system. Then, create a new temporary "
 "read-only template in <filename>/home/j/mroot2</filename>."
 msgstr ""
+"İlk adım ana bilgisayar sistemine sınıf atlatmaktır. Ardından, <filename>/"
+"home/j/mroot2</filename> içinde yeni bir geçici salt okunur şablon oluşturun."
 
 #. (itstool) path: step/screen
 #: book.translate.xml:28848
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>mkdir /home/j/mroot2</userinput>\n"
 "<prompt>#</prompt> <userinput>cd /usr/src</userinput>\n"
@@ -42655,35 +42695,49 @@ msgid ""
 "<prompt>#</prompt> <userinput>cpdup /usr/src usr/src</userinput>\n"
 "<prompt>#</prompt> <userinput>mkdir s</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>mkdir /home/j/mroot2</userinput>\n"
+"<prompt>#</prompt> <userinput>cd /usr/src</userinput>\n"
+"<prompt>#</prompt> <userinput>make installworld DESTDIR=/home/j/"
+"mroot2</userinput>\n"
+"<prompt>#</prompt> <userinput>cd /home/j/mroot2</userinput>\n"
+"<prompt>#</prompt> <userinput>cpdup /usr/src usr/src</userinput>\n"
+"<prompt>#</prompt> <userinput>mkdir s</userinput>"
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:28855 book.translate.xml:29066
+#, fuzzy
 msgid "installworld"
-msgstr ""
+msgstr "kurulum dünyası"
 
 #. (itstool) path: step/para
 #: book.translate.xml:28855
+#, fuzzy
 msgid ""
 "The <_:buildtarget-1/> creates a few unnecessary directories, which should "
 "be removed:"
 msgstr ""
+"<_:buildtarget-1/> kaldırılması gereken birkaç gereksiz dizin oluşturur:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:28859
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>chflags -R 0 var</userinput>\n"
 "<prompt>#</prompt> <userinput>rm -R etc var root usr/local tmp</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>chflags -R 0 var</userinput>\n"
+"<prompt>#</prompt> <userinput>rm -R etc var root usr/local tmp</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:28864
+#, fuzzy
 msgid "Recreate the read-write symlinks for the master file system:"
 msgstr ""
+"Ana dosya sistemi için okuma-yazma sembolik linkerini yeniden oluşturun:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:28867
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>ln -s s/etc etc</userinput>\n"
 "<prompt>#</prompt> <userinput>ln -s s/root root</userinput>\n"
@@ -42693,28 +42747,39 @@ msgid ""
 "<prompt>#</prompt> <userinput>ln -s s/tmp tmp</userinput>\n"
 "<prompt>#</prompt> <userinput>ln -s s/var var</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>ln -s s/etc etc</userinput>\n"
+"<prompt>#</prompt> <userinput>ln -s s/root root</userinput>\n"
+"<prompt>#</prompt> <userinput>ln -s s/home home</userinput>\n"
+"<prompt>#</prompt> <userinput>ln -s ../s/usr-local usr/local</userinput>\n"
+"<prompt>#</prompt> <userinput>ln -s ../s/usr-X11R6 usr/X11R6</userinput>\n"
+"<prompt>#</prompt> <userinput>ln -s s/tmp tmp</userinput>\n"
+"<prompt>#</prompt> <userinput>ln -s s/var var</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:28877
+#, fuzzy
 msgid "Next, stop the jails:"
-msgstr ""
+msgstr "Ardından hapisleri durdurun:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:28879
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>service jail stop</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>service jail stop</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:28883
+#, fuzzy
 msgid ""
 "Unmount the original file systems as the read-write systems are attached to "
 "the read-only system (<filename>/s</filename>):"
 msgstr ""
+"Okuma-yazma sistemleri salt okunur sisteme (<filename>/a</filename>) bağlı "
+"olduğu için orijinal dosya sistemlerini kaldırın:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:28890
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>umount /home/j/ns/s</userinput>\n"
 "<prompt>#</prompt> <userinput>umount /home/j/ns</userinput>\n"
@@ -42723,9 +42788,16 @@ msgid ""
 "<prompt>#</prompt> <userinput>umount /home/j/www/s</userinput>\n"
 "<prompt>#</prompt> <userinput>umount /home/j/www</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>umount /home/j/ns/s</userinput>\n"
+"<prompt>#</prompt> <userinput>umount /home/j/ns</userinput>\n"
+"<prompt>#</prompt> <userinput>umount /home/j/mail/s</userinput>\n"
+"<prompt>#</prompt> <userinput>umount /home/j/mail</userinput>\n"
+"<prompt>#</prompt> <userinput>umount /home/j/www/s</userinput>\n"
+"<prompt>#</prompt> <userinput>umount /home/j/www</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:28899
+#, fuzzy
 msgid ""
 "Move the old read-only file system and replace it with the new one. This "
 "will serve as a backup and archive of the old read-only file system should "
@@ -42733,39 +42805,59 @@ msgid ""
 "new read-only file system has been created. Move the original FreeBSD Ports "
 "Collection over to the new file system to save some space and inodes:"
 msgstr ""
+"Eski salt okunur dosya sistemini taşıyın ve yenisiyle değiştirin. Bu, bir "
+"şeyler ters gittiğinde eski salt okunur dosya sisteminin bir yedeği ve "
+"arşivi olarak işlev görür. Burada kullanılan adlandırma kuralı, yeni bir "
+"salt okunur dosya sisteminin oluşturulduğu zamana karşılık gelir. Biraz yer "
+"ve inode kazanmak için orijinal FreeBSD Port Koleksiyonunu yeni dosya "
+"sistemine taşıyın:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:28907
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /home/j</userinput>\n"
 "<prompt>#</prompt> <userinput>mv mroot mroot.20060601</userinput>\n"
 "<prompt>#</prompt> <userinput>mv mroot2 mroot</userinput>\n"
 "<prompt>#</prompt> <userinput>mv mroot.20060601/usr/ports mroot/usr</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /home/j</userinput>\n"
+"<prompt>#</prompt> <userinput>mv mroot mroot.20060601</userinput>\n"
+"<prompt>#</prompt> <userinput>mv mroot2 mroot</userinput>\n"
+"<prompt>#</prompt> <userinput>mv mroot.20060601/usr/ports mroot/"
+"usr</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:28914
+#, fuzzy
 msgid ""
 "At this point the new read-only template is ready, so the only remaining "
 "task is to remount the file systems and start the jails:"
 msgstr ""
+"Bu noktada yeni salt okunur şablon hazırdır, bu nedenle kalan tek görev "
+"dosya sistemlerini yeniden kurmak ve hapisleri başlatmaktır:"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:28923
+#, fuzzy
 msgid ""
 "Use <command>jls</command> to check if the jails started correctly. Run "
 "<command>mergemaster</command> in each jail to update the configuration "
 "files."
 msgstr ""
+"Hapislerin doğru başlayıp başlamadığını kontrol etmek için "
+"<command>jls</command>'yi kullanın. Yapılandırma dosyalarını güncellemek "
+"için her hapiste <command>mergemaster</command>'ı çalıştırın."
 
 #. (itstool) path: info/title
 #: book.translate.xml:28931
+#, fuzzy
 msgid "Managing Jails with <application>ezjail</application>"
-msgstr ""
+msgstr "<application>Ezjail</application> ile Hapisleri Yönetmek"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:28944
+#, fuzzy
 msgid ""
 "Creating and managing multiple jails can quickly become tedious and error-"
 "prone. Dirk Engling's <application>ezjail</application> automates and "
@@ -42777,6 +42869,15 @@ msgid ""
 "of disk space before applications are installed. Upgrading the copy of the "
 "userland in the basejail automatically upgrades all of the other jails."
 msgstr ""
+"Birden fazla hapis oluşturmak ve yönetmek hızla sıkıcı ve hataya açık hale "
+"gelebilir. Dirk Engling'in <application>ezjail</application>'i birçok hapis "
+"görevini otomatikleştirir ve büyük ölçüde basitleştirir. Şablon olarak bir "
+"<emphasis>basejail</emphasis> oluşturulur. Ek hapisler ek disk alanı "
+"kullanmadan pek çok basejail dizinlerini paylaşmak için <citerefentry><refent"
+"rytitle>mount_nullfs</refentrytitle><manvolnum>8</manvolnum></citerefentry> "
+"kullanır. Her ek hapis, uygulamalar yüklenmeden önce yalnızca birkaç "
+"megabayt disk alanı kaplar. Basejail'deki kullanıcı alanının kopyasını "
+"yükseltmek diğer tüm hapishaneler otomatik olarak yükseltir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:28955
