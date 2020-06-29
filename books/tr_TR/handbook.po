@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-06-29 13:34+0000\n"
-"Last-Translator: sevvaltuysuz <tuysuzsevvalrumeysa@gmail.com>\n"
+"Last-Translator: nurbanu  hasanoğlu <hasanoglunurbanu@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -74049,46 +74049,68 @@ msgstr "<primary>LCP</primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50383
+#, fuzzy
 msgid ""
 "<xref linkend=\"dialup\"/> provides a good description on enabling dial-up "
 "services using <citerefentry><refentrytitle>getty</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 msgstr ""
+"<xref linkend=\"dialup\"/> <citerefentry><refentrytitle>getty</refentrytitle>"
+"<manvolnum>8</manvolnum></citerefentry> kullanarak arama servislerinin "
+"aktifleştirilmesine ilişkin bir açıklama sağlar."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50386
+#, fuzzy
 msgid ""
 "An alternative to <command>getty</command> is <package>comms/mgetty+sendfax</"
 "package> port), a smarter version of <command>getty</command> designed with "
 "dial-up lines in mind."
 msgstr ""
+"<command>getty</command>'ye bir alternatif de, çevirmeli hatlar için "
+"tasarlanmış daha akıllı bir <command>getty</command> sürümü olan <package>"
+"comms/mgetty+sendfax</package> bağlantı noktasıdır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50391
+#, fuzzy
 msgid ""
 "The advantages of using <command>mgetty</command> is that it actively "
 "<emphasis>talks</emphasis> to modems, meaning if port is turned off in "
 "<filename>/etc/ttys</filename> then the modem will not answer the phone."
 msgstr ""
+"<command>mgetty</command> kullanmanın avantajı, aktif olarak modemlerle "
+"<emphasis>iletişime geçmesidir</emphasis>, yani eğer <filename>/etc/"
+"ttys</filename>'deki bağlantı noktası kapandıysa modemin telefonu "
+"cevaplamayacağıdır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50397
+#, fuzzy
 msgid ""
 "Later versions of <command>mgetty</command> (from 0.99beta onwards) also "
 "support the automatic detection of <acronym>PPP</acronym> streams, allowing "
 "clients scriptless access to the server."
 msgstr ""
+"<command>mgetty</command>'nin sonraki versiyonları (0.99beta ve sonrakiler) "
+"<acronym>PPP</acronym> akışlarını otomatik olarak tespit etmeyi destekler, "
+"böylece kod istemcilerin kod dizisi olmadan sunucuya erişmesine izin verir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50402
+#, fuzzy
 msgid ""
 "Refer to <link xlink:href=\"http://mgetty.greenie.net/doc/mgetty_toc.html"
 "\">http://mgetty.greenie.net/doc/mgetty_toc.html</link> for more information "
 "on <command>mgetty</command>."
 msgstr ""
+"<command>mgetty</command> üzerine daha fazla bilgi için <link xlink:href=\""
+"http://mgetty.greenie.net/doc/mgetty_toc.html\">http://mgetty.greenie.net/"
+"doc/mgetty_toc.html</link> adresine bakın."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50405
+#, fuzzy
 msgid ""
 "By default the <package>comms/mgetty+sendfax</package> port comes with the "
 "<literal>AUTO_PPP</literal> option enabled allowing <command>mgetty</"
@@ -74097,6 +74119,12 @@ msgid ""
 "password sequence does not occur it is necessary to authenticate users using "
 "either PAP or CHAP."
 msgstr ""
+"Varsayılan olarak <package>comms/mgetty+sendfax</package> bağlantı  noktası "
+"<command>mgetty</command>'nin <acronym>PPP</acronym>'nin LCP aşamasını "
+"algılamasına izin veren <literal>AUTO_PPP</literal> ve otomatik olarak bir "
+"ppp kabuğundan çıkmasını sağlayan seçeneği aktif olarak gelir. Ancak, "
+"varsayılan oturum açma/şifre sırası gerçekleşmediğinden dolayı kullanıcılar "
+"kimlik doğrulamalarını PAP veya CHAP kullanarak yapmak zorundadırlar."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50414
