@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-06-29 17:51+0000\n"
-"Last-Translator: onuraydin3 <crymzonx@gmail.com>\n"
+"Last-Translator: firdevssevik <sevikfirdevs@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -42271,29 +42271,40 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: book.translate.xml:28652
+#, fuzzy
 msgid ""
 "Next, prepare a FreeBSD Ports Collection for the jails as well as a FreeBSD "
 "source tree, which is required for <application>mergemaster</application>:"
 msgstr ""
+"Ardından <application>mergemaster</application> için gerekli olan bir "
+"FreeBSD source tree'nin yanı sıra hapisler için bir FreeBSD Port Koleksiyonu "
+"hazırlayın:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:28656
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /home/j/mroot</userinput>\n"
 "<prompt>#</prompt> <userinput>mkdir usr/ports</userinput>\n"
 "<prompt>#</prompt> <userinput>portsnap -p /home/j/mroot/usr/ports fetch extract</userinput>\n"
 "<prompt>#</prompt> <userinput>cpdup /usr/src /home/j/mroot/usr/src</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /home/j/mroot</userinput>\n"
+"<prompt>#</prompt> <userinput>mkdir usr/ports</userinput>\n"
+"<prompt>#</prompt> <userinput>portsnap -p /home/j/mroot/usr/ports fetch "
+"extract</userinput>\n"
+"<prompt>#</prompt> <userinput>cpdup /usr/src /home/j/mroot/usr/"
+"src</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:28663
+#, fuzzy
 msgid "Create a skeleton for the read-write portion of the system:"
-msgstr ""
+msgstr "Sistemin okuma-yazma kısmı için bir iskelet oluşturun:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:28666
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>mkdir /home/j/skel /home/j/skel/home /home/j/skel/usr-X11R6 /home/j/skel/distfiles</userinput>\n"
 "<prompt>#</prompt> <userinput>mv etc /home/j/skel</userinput>\n"
@@ -42302,36 +42313,59 @@ msgid ""
 "<prompt>#</prompt> <userinput>mv var /home/j/skel</userinput>\n"
 "<prompt>#</prompt> <userinput>mv root /home/j/skel</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>mkdir /home/j/skel /home/j/skel/home /home/j/"
+"skel/usr-X11R6 /home/j/skel/distfiles</userinput>\n"
+"<prompt>#</prompt> <userinput>mv etc /home/j/skel</userinput>\n"
+"<prompt>#</prompt> <userinput>mv usr/local /home/j/skel/usr-local</userinput>"
+"\n"
+"<prompt>#</prompt> <userinput>mv tmp /home/j/skel</userinput>\n"
+"<prompt>#</prompt> <userinput>mv var /home/j/skel</userinput>\n"
+"<prompt>#</prompt> <userinput>mv root /home/j/skel</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:28675
+#, fuzzy
 msgid ""
 "Use <application>mergemaster</application> to install missing configuration "
 "files. Then, remove the extra directories that <application>mergemaster</"
 "application> creates:"
 msgstr ""
+"Eksik yapılandırma dosyalarını yüklemek için "
+"<application>mergemaster</application> kullanın. Ardından "
+"<application>mergemaster</application>'ın oluşturduğu fazladan dizinleri "
+"kaldırın:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:28680
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>mergemaster -t /home/j/skel/var/tmp/temproot -D /home/j/skel -i</userinput>\n"
 "<prompt>#</prompt> <userinput>cd /home/j/skel</userinput>\n"
 "<prompt>#</prompt> <userinput>rm -R bin boot lib libexec mnt proc rescue sbin sys usr dev</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>mergemaster -t /home/j/skel/var/tmp/temproot -"
+"D /home/j/skel -i</userinput>\n"
+"<prompt>#</prompt> <userinput>cd /home/j/skel</userinput>\n"
+"<prompt>#</prompt> <userinput>rm -R bin boot lib libexec mnt proc rescue "
+"sbin sys usr dev</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:28686
+#, fuzzy
 msgid ""
 "Now, symlink the read-write file system to the read-only file system. Ensure "
 "that the symlinks are created in the correct <filename>s/</filename> "
 "locations as the creation of directories in the wrong locations will cause "
 "the installation to fail."
 msgstr ""
+"Şimdiyse okuma-yazma dosya sisteminin salt okunur dosya sistemine "
+"bağlanması. Yanlış konumlarda dizin oluşturulması kurulum işleminin "
+"başarısız olmasına neden olacağından sembolik linklerin doğru <filename>s/"
+"</filename> konumlarda oluşturulduğundan emin olun."
 
 #. (itstool) path: step/screen
 #: book.translate.xml:28692
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /home/j/mroot</userinput>\n"
 "<prompt>#</prompt> <userinput>mkdir s</userinput>\n"
@@ -42344,54 +42378,83 @@ msgid ""
 "<prompt>#</prompt> <userinput>ln -s s/tmp tmp</userinput>\n"
 "<prompt>#</prompt> <userinput>ln -s s/var var</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /home/j/mroot</userinput>\n"
+"<prompt>#</prompt> <userinput>mkdir s</userinput>\n"
+"<prompt>#</prompt> <userinput>ln -s s/etc etc</userinput>\n"
+"<prompt>#</prompt> <userinput>ln -s s/home home</userinput>\n"
+"<prompt>#</prompt> <userinput>ln -s s/root root</userinput>\n"
+"<prompt>#</prompt> <userinput>ln -s ../s/usr-local usr/local</userinput>\n"
+"<prompt>#</prompt> <userinput>ln -s ../s/usr-X11R6 usr/X11R6</userinput>\n"
+"<prompt>#</prompt> <userinput>ln -s ../../s/distfiles usr/ports/"
+"distfiles</userinput>\n"
+"<prompt>#</prompt> <userinput>ln -s s/tmp tmp</userinput>\n"
+"<prompt>#</prompt> <userinput>ln -s s/var var</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:28705
+#, fuzzy
 msgid ""
 "As a last step, create a generic <filename>/home/j/skel/etc/make.conf</"
 "filename> containing this line:"
 msgstr ""
+"Son adımdaysa bu satırı içeren genel bir <filename>/home/j/skel/etc/"
+"make.conf</filename> oluşturun:"
 
 #. (itstool) path: step/programlisting
 #: book.translate.xml:28709
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "WRKDIRPREFIX?=  /s/portbuild"
-msgstr ""
+msgstr "WRKDIRPREFIX?=  /s/portbuild"
 
 #. (itstool) path: step/para
 #: book.translate.xml:28711
+#, fuzzy
 msgid ""
 "This makes it possible to compile FreeBSD ports inside each jail. Remember "
 "that the ports directory is part of the read-only system. The custom path "
 "for <literal>WRKDIRPREFIX</literal> allows builds to be done in the read-"
 "write portion of every jail."
 msgstr ""
+"Bu, her bir hapiste FreeBSD portlarının derlenmesini mümkün kılar. Port "
+"dizininin salt okunur sistemin bir parçası olduğunu unutmayın. "
+"<literal>WRKDIRPREFIX</literal> için özel yol, yapıların her hapsin okuma-"
+"yazma bölümünde oluşturulmasına izin verir."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:28721
+#, fuzzy
 msgid "Creating Jails"
-msgstr ""
+msgstr "Hapis Oluşturma"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:28723
+#, fuzzy
 msgid ""
 "The jail template can now be used to setup and configure the jails in "
 "<filename>/etc/rc.conf</filename>. This example demonstrates the creation of "
 "3 jails: <literal>NS</literal>, <literal>MAIL</literal> and <literal>WWW</"
 "literal>."
 msgstr ""
+"Hapis şablonu artık <filename>/etc/rc.conf</filename>'daki hapisleri kurmak "
+"ve yapılandırmak için kullanılabilir. Bu örnek, üç hapsin oluşturulmasını "
+"göstermektedir: <literal>NS</literal>, <literal>MAIL</literal> ve "
+"<literal>WWW</literal>."
 
 #. (itstool) path: step/para
 #: book.translate.xml:28730
+#, fuzzy
 msgid ""
 "Add the following lines to <filename>/etc/fstab</filename>, so that the read-"
 "only template for the jails and the read-write space will be available in "
 "the respective jails:"
 msgstr ""
+"<filename>/etc/fstab</filename>'a aşağıdaki satırları ekleyin, böylece "
+"hapisler için salt okunur şablon ve okuma-yazma alanı ilgili hapislerde "
+"kullanılabilir:"
 
 #. (itstool) path: step/programlisting
 #: book.translate.xml:28735
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "/home/j/mroot   /home/j/ns     nullfs  ro  0   0\n"
 "/home/j/mroot   /home/j/mail   nullfs  ro  0   0\n"
@@ -42400,24 +42463,37 @@ msgid ""
 "/home/js/mail   /home/j/mail/s nullfs  rw  0   0\n"
 "/home/js/www    /home/j/www/s  nullfs  rw  0   0"
 msgstr ""
+"/home/j/mroot   /home/j/ns     nullfs  ro  0   0\n"
+"/home/j/mroot   /home/j/mail   nullfs  ro  0   0\n"
+"/home/j/mroot   /home/j/www    nullfs  ro  0   0\n"
+"/home/js/ns     /home/j/ns/s   nullfs  rw  0   0\n"
+"/home/js/mail   /home/j/mail/s nullfs  rw  0   0\n"
+"/home/js/www    /home/j/www/s  nullfs  rw  0   0"
 
 #. (itstool) path: step/para
 #: book.translate.xml:28742
+#, fuzzy
 msgid ""
 "To prevent <application>fsck</application> from checking "
 "<application>nullfs</application> mounts during boot and <application>dump</"
 "application> from backing up the read-only nullfs mounts of the jails, the "
 "last two columns are both set to <literal>0</literal>."
 msgstr ""
+"<application>fsck</application>'in önyükleme sırasında "
+"<application>nullfs</application> bağlarını denetlemesini önlemek ve "
+"hapislerin salt okunur nullfs bağlarını yedeklemesini "
+"<application>engellemek</application> için son iki sütunun her ikisi de "
+"<literal>0</literal>'a ayarlanır."
 
 #. (itstool) path: step/para
 #: book.translate.xml:28751
+#, fuzzy
 msgid "Configure the jails in <filename>/etc/rc.conf</filename>:"
-msgstr ""
+msgstr "<filename>/etc/rc.conf</filename>daki hapisleri yapılandırın:"
 
 #. (itstool) path: step/programlisting
 #: book.translate.xml:28754
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "jail_enable=\"YES\"\n"
 "jail_set_hostname_allow=\"NO\"\n"
@@ -42435,9 +42511,25 @@ msgid ""
 "jail_www_rootdir=\"/usr/home/j/www\"\n"
 "jail_www_devfs_enable=\"YES\""
 msgstr ""
+"jail_enable=\"YES\"\n"
+"jail_set_hostname_allow=\"NO\"\n"
+"jail_list=\"ns mail www\"\n"
+"jail_ns_hostname=\"ns.example.org\"\n"
+"jail_ns_ip=\"192.168.3.17\"\n"
+"jail_ns_rootdir=\"/usr/home/j/ns\"\n"
+"jail_ns_devfs_enable=\"YES\"\n"
+"jail_mail_hostname=\"mail.example.org\"\n"
+"jail_mail_ip=\"192.168.3.18\"\n"
+"jail_mail_rootdir=\"/usr/home/j/mail\"\n"
+"jail_mail_devfs_enable=\"YES\"\n"
+"jail_www_hostname=\"www.example.org\"\n"
+"jail_www_ip=\"62.123.43.14\"\n"
+"jail_www_rootdir=\"/usr/home/j/www\"\n"
+"jail_www_devfs_enable=\"YES\""
 
 #. (itstool) path: step/para
 #: book.translate.xml:28770
+#, fuzzy
 msgid ""
 "The <varname>jail_<replaceable>name</replaceable>_rootdir</varname> variable "
 "is set to <filename>/usr/home</filename> instead of <filename>/home</"
@@ -42447,6 +42539,13 @@ msgid ""
 "must <emphasis>not</emphasis> be set to a path which includes a symbolic "
 "link, otherwise the jails will refuse to start."
 msgstr ""
+"<varname>jail_<replaceable>name</replaceable>_rootdir</varname> değişkeni, "
+"<filename>/home</filename> yerine <filename>/usr /home</filename> olarak "
+"ayarlanır çünkü varsayılan FreeBSD kurulumundaki <filename>/home</filename>"
+"'un fiziksel yolu <filename>/usr/home</filename>'dur. "
+"<varname>jail_<replaceable>name</replaceable>_rootdir</varname> değişkeni "
+"sembolik bir link içeren bir yola ayarlan<emphasis>mama</emphasis>lıdır, "
+"aksi takdirde hapislerin başlaması reddedilir."
 
 #. (itstool) path: step/para
 #: book.translate.xml:28784
