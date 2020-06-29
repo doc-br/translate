@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-06-29 17:51+0000\n"
-"Last-Translator: nurbanu  hasanoğlu <hasanoglunurbanu@gmail.com>\n"
+"Last-Translator: yami98 <yagmurkaya3625@hotmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -23420,6 +23420,7 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15869
+#, fuzzy
 msgid ""
 "Lower memory usage. A custom kernel often uses less memory than the "
 "<filename>GENERIC</filename> kernel by omitting unused features and device "
@@ -23428,23 +23429,37 @@ msgid ""
 "applications. For this reason, a custom kernel is useful on a system with a "
 "small amount of RAM."
 msgstr ""
+"Daha düşük bellek kullanımı. Özel çekirdek, kullanılmayan özellik ve aygıt "
+"sürücülerini hariç tutarak genellikle <filename>GENERIC</filename> "
+"çekirdeğinden daha az bellek kullanır. Çekirdek kodu fiziksel bellekte "
+"yerleşik kaldığı ve belleğin uygulamalar tarafından kullanılmasını "
+"engellediği için bu önem taşır. Bu sebeple özel çekirdek, RAM boyutu küçük "
+"olan sistemler için kullanışlıdır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15880
+#, fuzzy
 msgid ""
 "Additional hardware support. A custom kernel can add support for devices "
 "which are not present in the <filename>GENERIC</filename> kernel."
 msgstr ""
+"İlave donanım desteği. Özel çekirdek <filename>GENERIC</filename> "
+"çekirdeğinde bulunmayan cihazlar için ilave destek sağlayabilir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15886
+#, fuzzy
 msgid ""
 "Before building a custom kernel, consider the reason for doing so. If there "
 "is a need for specific hardware support, it may already exist as a module."
 msgstr ""
+"Özel çekirdek oluşturmadan önce bunu yapmanızın sebebini düşünün. Belirli "
+"bir donanım desteğine ihtiyaç duyuyorsanız, bu zaten bir modül olarak "
+"bulunuyor olabilir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15890
+#, fuzzy
 msgid ""
 "Kernel modules exist in <filename>/boot/kernel</filename> and may be "
 "dynamically loaded into the running kernel using "
@@ -23454,38 +23469,58 @@ msgid ""
 "refentrytitle><manvolnum>4</manvolnum></citerefentry> wireless Ethernet "
 "driver has the following information in its manual page:"
 msgstr ""
+"Çekirdek modülleri <filename>/boot/kernel</filename> içinde bulunur ve <citer"
+"efentry><refentrytitle>kldload</refentrytitle><manvolnum>8</manvolnum></citer"
+"efentry> kullanarak çalışan çekirdeğe dinamik olarak yüklenebilir. Çoğu "
+"çekirdek sürücüsü yüklenebilir modüle ve kılavuza sahiptir. Örneğin, <citeref"
+"entry><refentrytitle>ath</refentrytitle><manvolnum>4</manvolnum></citerefentr"
+"y> kablosuz Ethernet sürücüsü kılavuzunda aşağıdaki bilgiyi içerir:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:15896
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Alternatively, to load the driver as a module at boot time, place the\n"
 "following line in <citerefentry><refentrytitle>loader.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>:\n"
 "\n"
 "    if_ath_load=\"YES\""
 msgstr ""
+"Alternatif olarak önyükleme zamanında sürücüyü bir modül olarak yüklemek "
+"için aşağıdaki satırı şuraya yapıştırın: <citerefentry><refentrytitle>loader."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>\n"
+"\n"
+"    if_ath_load=\"YES\""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15901
+#, fuzzy
 msgid ""
 "Adding <literal>if_ath_load=\"YES\"</literal> to <filename>/boot/loader."
 "conf</filename> will load this module dynamically at boot time."
 msgstr ""
+"<literal>if_ath_load=\"YES\"</literal> satırını <filename>/boot/"
+"loader.conf</filename> dosyasına eklemek, yükleme zamanında bu modülü "
+"dinamik olarak yükleyecektir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15905
+#, fuzzy
 msgid ""
 "In some cases, there is no associated module in <filename>/boot/kernel</"
 "filename>. This is mostly true for certain subsystems."
 msgstr ""
+"Bazı durumlarda, <filename>/boot/kernel</filename> dahilinde ilişkili modül "
+"bulunmaz. Bu durum belirli alt sistemlerde sık görülür."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:15922
+#, fuzzy
 msgid "Finding the System Hardware"
-msgstr ""
+msgstr "Sistem Donanımını Bulmak"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15924
+#, fuzzy
 msgid ""
 "Before editing the kernel configuration file, it is recommended to perform "
 "an inventory of the machine's hardware. On a dual-boot system, the inventory "
@@ -23493,18 +23528,29 @@ msgid ""
 "class=\"registered\">Microsoft</trademark>'s <application>Device Manager</"
 "application> contains information about installed devices."
 msgstr ""
+"Çekirdek yapılandırma dosyasını düzenlemeden önce makine donanımının "
+"envanterinin oluşturulması tavsiye edilir. Çift işletim sisteminde bu "
+"envanter diğer işletim sisteminden oluşturulabilir. Örneğin, <trademark "
+"class=\"registered\">Microsoft</trademark> <application>Device "
+"Manager</application> kurulmuş aygıtlar hakkında bilgi içerir."
 
 #. (itstool) path: note/para
 #: book.translate.xml:15932
+#, fuzzy
 msgid ""
 "Some versions of <trademark class=\"registered\">Microsoft</trademark> "
 "<trademark class=\"registered\">Windows</trademark> have a "
 "<application>System</application> icon which can be used to access "
 "<application>Device Manager</application>."
 msgstr ""
+"Bazı <trademark class=\"registered\">Microsoft</trademark> <trademark class="
+"\"registered\">Windows</trademark> sürümleri "
+"<application>System</application> simgesine sahiptir ve bu <application>"
+"Device Manager</application>'a erişmek için kullanılabilir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15937
+#, fuzzy
 msgid ""
 "If FreeBSD is the only installed operating system, use "
 "<citerefentry><refentrytitle>dmesg</refentrytitle><manvolnum>8</manvolnum></"
@@ -23514,6 +23560,13 @@ msgid ""
 "indicate that the <citerefentry><refentrytitle>psm</"
 "refentrytitle><manvolnum>4</manvolnum></citerefentry> driver found a mouse:"
 msgstr ""
+"FreeBSD kurulmuş olan tek işletim sistemi ise, yükleme sırasında bulunan ve "
+"listelenen donanımları belirlemek için <citerefentry><refentrytitle>dmesg</re"
+"fentrytitle><manvolnum>8</manvolnum></citerefentry> kullanın. FreeBSD'deki "
+"çoğu aygıt sürücüsü, sürücü tarafından desteklenen donanımların listelendiği "
+"bir el kitabına sahiptir. Örneğin, aşağıdaki satırlar <citerefentry><refentry"
+"title>psm</refentrytitle><manvolnum>4</manvolnum></citerefentry> sürücüsünün "
+"bir fare bulduğunu belirtir:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:15944
