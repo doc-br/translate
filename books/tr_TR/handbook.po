@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-06-30 16:13+0000\n"
-"Last-Translator: yami98 <yagmurkaya3625@hotmail.com>\n"
+"Last-Translator: firdevssevik <sevikfirdevs@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -43982,48 +43982,61 @@ msgstr ""
 
 #. (itstool) path: tip/para
 #: book.translate.xml:29341
+#, fuzzy
 msgid ""
 "After a major version update it is recommended by <package>sysutils/ezjail</"
 "package> to make sure your <command>pkg</command> is of the correct version. "
 "Therefore enter:"
 msgstr ""
+"Majör bir sürüm güncellemesinden sonra <command>pkg</command>'nizin doğru "
+"sürümde olduğundan emin olmak için <package>sysutils/ezjail</package> "
+"tarafından önerilir. Bu nedenle şunu girin:"
 
 #. (itstool) path: tip/screen
 #: book.translate.xml:29346
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg-static upgrade -f pkg</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg-static upgrade -f pkg</userinput>"
 
 #. (itstool) path: tip/para
 #: book.translate.xml:29348
+#, fuzzy
 msgid "to upgrade or downgrade to the appropriate version."
-msgstr ""
+msgstr "yükseltme veya uygun sürüme düşürme."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:29354
+#, fuzzy
 msgid "Updating Ports"
-msgstr ""
+msgstr "Bağlantı Noktalarını Güncelleme"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:29356
+#, fuzzy
 msgid ""
 "The ports tree in the basejail is shared by the other jails. Updating that "
 "copy of the ports tree gives the other jails the updated version also."
 msgstr ""
+"Basejail'deki bağlantı noktaları ağacı diğer hapisler tarafından paylaşılır. "
+"Bağlantı noktaları ağacının bu kopyasının güncellenmesi, diğer hapislere "
+"güncellenmiş sürümü de verir."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:29360
+#, fuzzy
 msgid ""
 "The basejail ports tree is updated with "
 "<citerefentry><refentrytitle>portsnap</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>:"
 msgstr ""
+"Basejail bağlantı noktaları ağacı <citerefentry><refentrytitle>portsnap</refe"
+"ntrytitle><manvolnum>8</manvolnum></citerefentry> ile güncellenir:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:29363
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>ezjail-admin update -P</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>ezjail-admin update -P</userinput>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:29368
