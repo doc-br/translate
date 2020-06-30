@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-07-01 12:55+0000\n"
-"Last-Translator: ibrahimkarapolat <kpibrahim79@gmail.com>\n"
+"Last-Translator: baransayan <baransayan@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -2740,19 +2740,24 @@ msgid ""
 "instructions."
 msgstr ""
 "Geneller olarak, bu bölümdeki yükleme yönergeleri <trademark>i386</trademark>"
-" ve <acronym>AMD64</acronym>  mimarilerine göre yazılmıştır. Uygun "
-"olduğunda, diğer platformlara özgü yönergeler listelenecektir. Burada "
-"gösterilen ve yükleyici arasında küçük farklılıklar olabilir, yani bu bölümü "
-"bire bir yönergedense genel kılavuz olarak kullanın."
+" ve <acronym>AMD64</acronym> mimarilerine göre yazılmıştır. Uygun olduğunda, "
+"diğer platformlara özgü yönergeler listelenecektir. Burada gösterilen ve "
+"yükleyici arasında küçük farklılıklar olabilir, yani bu bölümü bire bir "
+"yönergedense genel kılavuz olarak kullanın."
 
 #. (itstool) path: note/para
 #: book.translate.xml:2915
+#, fuzzy
 msgid ""
 "Users who prefer to install FreeBSD using a graphical installer may be "
 "interested in <link xlink:href=\"https://www.furybsd.org\">FuryBSD</link>, "
 "<link xlink:href=\"https://ghostbsd.org\">GhostBSD</link> or <link xlink:"
 "href=\"https://www.midnightbsd.org\">MidnightBSD</link>."
 msgstr ""
+"<link xlink:href=\"https://www.furybsd.org\">FuryBSD</link>, <link "
+"xlink:href=\"https://ghostbsd.org\">GhostBSD</link> ya da <link xlink:href=\""
+"https://www.midnightbsd.org\">MidnightBSD</link> FreeBSD'yi grafik yükleyici "
+"ile kurmayı tercih eden kullanıcıların ilgisini çekebilir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2922 book.translate.xml:5747 book.translate.xml:9148
@@ -2763,41 +2768,50 @@ msgstr ""
 #: book.translate.xml:44840 book.translate.xml:46517 book.translate.xml:46892
 #: book.translate.xml:47249 book.translate.xml:49443 book.translate.xml:51111
 #: book.translate.xml:57749 book.translate.xml:61887
+#, fuzzy
 msgid "After reading this chapter, you will know:"
-msgstr ""
+msgstr "Bu bölümü okuduktan sonra şunları bileceksiniz:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2926
+#, fuzzy
 msgid "The minimum hardware requirements and FreeBSD supported architectures."
-msgstr ""
+msgstr "FreeBSD destekli mimariler ve minimum donanım gereksinimi."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2931
+#, fuzzy
 msgid "How to create the FreeBSD installation media."
-msgstr ""
+msgstr "FreeBSD kurulum ortamınının nasıl oluşturulduğu."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2935
+#, fuzzy
 msgid "How to start <application>bsdinstall</application>."
-msgstr ""
+msgstr "<application>bsdinstall</application> 'un nasıl başlatıldığı."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2940
+#, fuzzy
 msgid ""
 "The questions <application>bsdinstall</application> will ask, what they "
 "mean, and how to answer them."
 msgstr ""
+"<application>bsdinstall</application> 'un soracağı sorular, ne anlama "
+"geldikleri, ve nasıl cevap verileceği."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2945
+#, fuzzy
 msgid "How to troubleshoot a failed installation."
-msgstr ""
+msgstr "Başarısız bir kurulum sorunu nasıl giderilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2949
+#, fuzzy
 msgid ""
 "How to access a live version of FreeBSD before committing to an installation."
-msgstr ""
+msgstr "Kuruluma kalkışmadan önce FreeBSD'nin live sürümüne nasıl erişilir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2954 book.translate.xml:11010 book.translate.xml:14168
@@ -2807,23 +2821,29 @@ msgstr ""
 #: book.translate.xml:43840 book.translate.xml:44871 book.translate.xml:46534
 #: book.translate.xml:47267 book.translate.xml:49469 book.translate.xml:51175
 #: book.translate.xml:57777 book.translate.xml:61933
+#, fuzzy
 msgid "Before reading this chapter, you should:"
-msgstr ""
+msgstr "Bu bölümü okumadan önce:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2958
+#, fuzzy
 msgid ""
 "Read the supported hardware list that shipped with the version of FreeBSD to "
 "be installed and verify that the system's hardware is supported."
 msgstr ""
+"FreeBSD'nin kurulacak sürümüyle birlikte gönderilmiş desteklenen donanım "
+"listesini okuyup, sistem donanımının desteklendiğini doğrulayın."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:2966
+#, fuzzy
 msgid "Minimum Hardware Requirements"
-msgstr ""
+msgstr "Minimum Donanım Gereksinimleri"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2968
+#, fuzzy
 msgid ""
 "The hardware requirements to install FreeBSD vary by architecture. Hardware "
 "architectures and devices supported by a FreeBSD release are listed on the "
@@ -2832,9 +2852,16 @@ msgid ""
 "\">FreeBSD download page</link> also has recommendations for choosing the "
 "correct image for different architectures."
 msgstr ""
+"FreeBSD'yi kurmak için donanım gereksinimleri mimariye göre değişmektedir. "
+"FreeBSD sürüme göre desteklenen cihazlar ve donanım mimarileri <link "
+"xlink:href=\"@@URL_RELPREFIX@@/releases/index.html\">FreeBSD Sürüm "
+"Bilgisi</link> sayfasında listelenmiştir. <link xlink:href=\""
+"@@URL_RELPREFIX@@/where.html\">FreeBSD indirme sayfası</link> farklı "
+"mimarilere doğru görüntüyü seçmek için öneriler barındırmaktadır."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2975
+#, fuzzy
 msgid ""
 "A FreeBSD installation requires a minimum of 96 MB of <acronym>RAM</acronym> "
 "and 1.5 GB of free hard drive space. However, such small amounts of memory "
@@ -2842,16 +2869,22 @@ msgid ""
 "embedded appliances. General-purpose desktop systems need more resources. "
 "2-4 GB RAM and at least 8 GB hard drive space is a good starting point."
 msgstr ""
+"FreeBSD kurlumu minimum 96 MB <acronym>RAM</acronym> ve 1.5 GB of boş sabit "
+"disk alanı gerektirmektedir. Ancak bunlar gibi küçük miktarda hafıza ve disk "
+"alanı sadece tümleşik gereçler gibi uygulamalar için uygundur. Genel amaçlı "
+"masaüstü sistemler daha fazla kaynağa ihtiyaç duyar. 2-4 GB RAM ve en az 8 "
+"GB sabit disk alanı iyi bir başlangıç noktasıdır."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2983
+#, fuzzy
 msgid "These are the processor requirements for each architecture:"
-msgstr ""
+msgstr "Her bir mimari için işlemci gereksinimleri:"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:2988
 msgid "amd64"
-msgstr ""
+msgstr "amd64"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2990
@@ -2861,6 +2894,10 @@ msgid ""
 "<acronym>Intel64</acronym>. Other manufacturers sometimes call it "
 "<acronym>x86-64</acronym>."
 msgstr ""
+"Bu en modern sistemlerde kullanılan, en yaygın masaüstü ve dizüstü "
+"bilgisayar işlemci tipidir. <trademark class=\"registered\""
+">Intel</trademark>bunu<acronym>Intel64</acronym> olarak adlandırıyor. Diğer "
+"üreticiler bazen <acronym>x86-64</acronym> olarak adlandırabiliyor."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2995
@@ -2871,16 +2908,23 @@ msgid ""
 "<trademark class=\"registered\">Intel</trademark> <trademark>Core</"
 "trademark> 2 and later processors."
 msgstr ""
+"Örnek olarak amd64 ile uyumlu işlemciler şunları içermektedir: <trademark>"
+"AMD Athlon</trademark>64, <trademark>AMD Opteron</trademark>, multi-core <"
+"trademark class=\"registered\">Intel</trademark> <trademark>Xeon</trademark>"
+", ve <trademark class=\"registered\">Intel</trademark> "
+"<trademark>Core</trademark> 2 ve sonraki işlemciler."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:3003
 msgid "i386"
-msgstr ""
+msgstr "i386"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3005
 msgid "Older desktops and laptops often use this 32-bit, x86 architecture."
 msgstr ""
+"Bu 32-bit, x86 mimariyi genellikle eski masaüstü ve dizüstü bilgisayarlar "
+"kullanır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3008
@@ -2889,6 +2933,9 @@ msgid ""
 "supported. All <trademark class=\"registered\">Intel</trademark> processors "
 "486 or higher are supported."
 msgstr ""
+"Neredeyse bütün, kayan nokta işlem birimli i386 uyumlu işlemciler "
+"desteklenmektedir. 486 ya da üstü bütün <trademark class=\"registered\""
+">Intel</trademark> işlemciler desteklenmektedir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3012
