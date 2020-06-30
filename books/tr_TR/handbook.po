@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-30 14:04+0000\n"
+"PO-Revision-Date: 2020-06-30 15:56+0000\n"
 "Last-Translator: ilaydaasal <ilaydaasal92@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
@@ -62350,6 +62350,7 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:42229
+#, fuzzy
 msgid ""
 "<application>Virtual PC</application> for <trademark class=\"registered"
 "\">Windows</trademark> is a <trademark class=\"registered\">Microsoft</"
@@ -62361,19 +62362,33 @@ msgid ""
 "\">Windows</trademark>, the user can configure a virtual machine and then "
 "install the desired guest operating system."
 msgstr ""
+"</application> for <trademark class=\"registered\">Windows</trademark> için "
+"<application>Sanal PC</application> ücretsiz olarak indirilebilen bir <"
+"trademark class=\"registered\">Microsoft</trademark> yazılım ürünüdür. <link "
+"xlink:href=\"http://www.microsoft.com/windows/downloads/virtualpc/sysreq."
+"mspx\">sistem gereksinimleri</link> için bu web sitesine bakınız. "
+"<application>Sanal PC</application>'nin <trademark class=\"registered\""
+">Microsoft</trademark> <trademark class=\"registered\">Windows</trademark>'a "
+"kurulumu gerçekleştikten sonra, kullanıcı bir sanal makine yapılandırabilir "
+"ve sonra istenilen konuk işletim sistemini yükleyebilir."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:42238
+#, fuzzy
 msgid "Installing FreeBSD on <application>Virtual PC</application>"
-msgstr ""
+msgstr "<application>Sanal PC</application>'ye FreeBSD Kurulumu"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42241
+#, fuzzy
 msgid ""
 "The first step in installing FreeBSD on <application>Virtual PC</"
 "application> is to create a new virtual machine for installing FreeBSD. "
 "Select <guimenuitem>Create a virtual machine</guimenuitem> when prompted:"
 msgstr ""
+"<application>Sanal PC</application>'ye FreeBSD kurulumunun ilk adımı, "
+"FreeBSD kurmak için yeni bir sanal makine oluşturmaktır. İstenildiğinde "
+"<guimenuitem> Sanal makine oluştur</guimenuitem> seçeneğini seçin:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -62381,9 +62396,10 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:42249
+#, fuzzy
 msgctxt "_"
 msgid "external ref='virtualization/virtualpc-freebsd1' md5='__failed__'"
-msgstr ""
+msgstr "external ref='virtualization/virtualpc-freebsd1' md5='__failed__'"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -62391,16 +62407,20 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:42255
+#, fuzzy
 msgctxt "_"
 msgid "external ref='virtualization/virtualpc-freebsd2' md5='__failed__'"
-msgstr ""
+msgstr "external ref='virtualization/virtualpc-freebsd2' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42259
+#, fuzzy
 msgid ""
 "Select <guimenuitem>Other</guimenuitem> as the <guimenuitem>Operating "
 "system</guimenuitem> when prompted:"
 msgstr ""
+"İstenildiğinde <guimenuitem>İşletim sistemi</guimenuitem> olarak "
+"<guimenuitem>Diğer</guimenuitem>'i seçin:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -62408,17 +62428,22 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:42265
+#, fuzzy
 msgctxt "_"
 msgid "external ref='virtualization/virtualpc-freebsd3' md5='__failed__'"
-msgstr ""
+msgstr "external ref='virtualization/virtualpc-freebsd3' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42269
+#, fuzzy
 msgid ""
 "Then, choose a reasonable amount of disk and memory depending on the plans "
 "for this virtual FreeBSD instance. 4GB of disk space and 512MB of RAM work "
 "well for most uses of FreeBSD under <application>Virtual PC</application>:"
 msgstr ""
+"Daha sonra, sanal FreeBSD örneği için planlara bağlı olarak makul miktarda "
+"disk ve hafıza seçin. <application>Sanal PC</application> altında çoğu "
+"FreeBSD kullanımı için 4GB disk alanı ve 512MB RAM yeterli şekilde çalışır:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -62426,9 +62451,10 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:42276
+#, fuzzy
 msgctxt "_"
 msgid "external ref='virtualization/virtualpc-freebsd4' md5='__failed__'"
-msgstr ""
+msgstr "external ref='virtualization/virtualpc-freebsd4' md5='__failed__'"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -62436,9 +62462,10 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:42282
+#, fuzzy
 msgctxt "_"
 msgid "external ref='virtualization/virtualpc-freebsd5' md5='__failed__'"
-msgstr ""
+msgstr "external ref='virtualization/virtualpc-freebsd5' md5='__failed__'"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -62446,16 +62473,20 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:42290
+#, fuzzy
 msgctxt "_"
 msgid "external ref='virtualization/virtualpc-freebsd6' md5='__failed__'"
-msgstr ""
+msgstr "external ref='virtualization/virtualpc-freebsd6' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42294
+#, fuzzy
 msgid ""
 "Select the FreeBSD virtual machine and click <guimenu>Settings</guimenu>, "
 "then set the type of networking and a network interface:"
 msgstr ""
+"FreeBSD sanal makineyi seçin ve <guimenu>Ayarlar</guimenu> seçeneğine "
+"tıklayın, daha sonra ağ türünü ve ağ arayüzünü seçin:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -62463,9 +62494,10 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:42300
+#, fuzzy
 msgctxt "_"
 msgid "external ref='virtualization/virtualpc-freebsd7' md5='__failed__'"
-msgstr ""
+msgstr "external ref='virtualization/virtualpc-freebsd7' md5='__failed__'"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -62473,12 +62505,14 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:42306
+#, fuzzy
 msgctxt "_"
 msgid "external ref='virtualization/virtualpc-freebsd8' md5='__failed__'"
-msgstr ""
+msgstr "external ref='virtualization/virtualpc-freebsd8' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42310
+#, fuzzy
 msgid ""
 "After the FreeBSD virtual machine has been created, FreeBSD can be installed "
 "on it. This is best done with an official FreeBSD <acronym>CD</acronym>/"
@@ -62494,6 +62528,20 @@ msgid ""
 "associated with an <acronym>ISO</acronym> file on disk or with the real "
 "<acronym>CD-ROM</acronym> drive."
 msgstr ""
+"FreeBSD sanal makinesi oluşturulduktan sonra, FreeBSD kurulumu yapılabilir. "
+"Bu en iyi şekilde resmi bir FreeBSD "
+"<acronym>CD</acronym>/<acronym>DVD</acronym>'si ile veya resmi bir "
+"<acronym>FTP</acronym> sitesinden indirilen bir <acronym>ISO</acronym> "
+"görüntüsü ile yapılır. Uygun <acronym>ISO</acronym> görüntüsünü yerel <"
+"trademark class=\"registered\">Windows</trademark> dosya sistemine "
+"kopyalayın veya <acronym>CD</acronym> sürücüsüne bir "
+"<acronym>CD</acronym>/<acronym>DVD</acronym> yerleştirin, daha sonra FreeBSD "
+"sanal makinesinin üzerine önyükleme için çift tıklayın. Daha sonra, "
+"<guimenu>CD</guimenu>'ye tıklayın ve <application>Sanal PC</application> "
+"penceresinden <guimenu> ISO Görüntüsü Aktar</guimenu>'ı seçin. Bu, <acronym"
+">CD-ROM</acronym> sürücüsünü sanal makinedeki <acronym>ISO</acronym> dosyası "
+"diski ile veya gerçek <acronym>CD-ROM</acronym> sürücüsü ile "
+"ilişkilendirmede kullanabilmek için bir pencere açacaktır."
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -62501,9 +62549,10 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:42328
+#, fuzzy
 msgctxt "_"
 msgid "external ref='virtualization/virtualpc-freebsd9' md5='__failed__'"
-msgstr ""
+msgstr "external ref='virtualization/virtualpc-freebsd9' md5='__failed__'"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -62511,12 +62560,14 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:42334
+#, fuzzy
 msgctxt "_"
 msgid "external ref='virtualization/virtualpc-freebsd10' md5='__failed__'"
-msgstr ""
+msgstr "external ref='virtualization/virtualpc-freebsd10' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42338
+#, fuzzy
 msgid ""
 "Once this association with the <acronym>CD-ROM</acronym> source has been "
 "made, reboot the FreeBSD virtual machine by clicking <guimenu>Action</"
@@ -62524,6 +62575,11 @@ msgid ""
 "will reboot with a special <acronym>BIOS</acronym> that first checks for a "
 "<acronym>CD-ROM</acronym>."
 msgstr ""
+"<acronym>CD-ROM</acronym> kaynağı ile bu ilişkilendirme yapıldıktan sonra, "
+"<guimenu>İşlem</guimenu> ve <guimenu>Reset</guimenu> simgelerine tıklayarak "
+"FreeBSD sanal makinesini yeniden başlatın. <application>Sanal "
+"PC</application> önce bir <acronym>CD-ROM</acronym> olup olmadığını kontrol "
+"eden özel bir <acronym>BIOS</acronym> ile yeniden başlatır."
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -62531,17 +62587,22 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:42348
+#, fuzzy
 msgctxt "_"
 msgid "external ref='virtualization/virtualpc-freebsd11' md5='__failed__'"
-msgstr ""
+msgstr "external ref='virtualization/virtualpc-freebsd11' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42352
+#, fuzzy
 msgid ""
 "In this case it will find the FreeBSD installation media and begin a normal "
 "FreeBSD installation. Continue with the installation, but do not attempt to "
 "configure <application>Xorg</application> at this time."
 msgstr ""
+"Bu durumda FreeBSD kurulum ortamını bulur ve normal bir FreeBSD kurulumuna "
+"başlar. Kurulumu gerçekleştirin, ama bu sefer <application>Xorg</application>"
+"'u yapılandırmayı denemeyin."
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -62549,17 +62610,22 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:42359
+#, fuzzy
 msgctxt "_"
 msgid "external ref='virtualization/virtualpc-freebsd12' md5='__failed__'"
-msgstr ""
+msgstr "external ref='virtualization/virtualpc-freebsd12' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42363
+#, fuzzy
 msgid ""
 "When the installation is finished, remember to eject the <acronym>CD</"
 "acronym>/<acronym>DVD</acronym> or release the <acronym>ISO</acronym> image. "
 "Finally, reboot into the newly installed FreeBSD virtual machine."
 msgstr ""
+"Kurulum tamamlandığında, <acronym>CD</acronym>/<acronym>DVD</acronym>'yi "
+"çıkartmayı veya <acronym>ISO</acronym> görüntüsünü sürümlemeyi unutmayın. "
+"Son olarak, yeni kurulmuş FreeBSD sanal makinesini yeniden başlatın."
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -62567,17 +62633,20 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:42370
+#, fuzzy
 msgctxt "_"
 msgid "external ref='virtualization/virtualpc-freebsd13' md5='__failed__'"
-msgstr ""
+msgstr "external ref='virtualization/virtualpc-freebsd13' md5='__failed__'"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:42376
+#, fuzzy
 msgid "Configuring FreeBSD on <application>Virtual PC</application>"
-msgstr ""
+msgstr "<application>Sanal PC</application> üzerinde FreeBSD'yi Yapılandırma"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42379
+#, fuzzy
 msgid ""
 "After FreeBSD has been successfully installed on <trademark class="
 "\"registered\">Microsoft</trademark> <trademark class=\"registered"
@@ -62585,26 +62654,42 @@ msgid ""
 "a number of configuration steps that can be taken to optimize the system for "
 "virtualized operation."
 msgstr ""
+"FreeBSD <application>Sanal PC</application> ile <trademark class=\""
+"registered\">Microsoft</trademark><trademark class=\"registered\""
+">Windows</trademark>'a başarıyla kurulduktan sonra, sanallaştırılmış işletim "
+"için sistemi optimize etmek üzere uygulanabilecek birkaç yapılandırma adımı "
+"vardır."
 
 #. (itstool) path: step/para
 #: book.translate.xml:42389
+#, fuzzy
 msgid ""
 "The most important step is to reduce the <option>kern.hz</option> tunable to "
 "reduce the CPU utilization of FreeBSD under the <application>Virtual PC</"
 "application> environment. This is accomplished by adding the following line "
 "to <filename>/boot/loader.conf</filename>:"
 msgstr ""
+"<application>Sanal PC</application> ortamı altında FreeBSD'nin CPU "
+"kullanımını azaltmak için en önemli adım ayarlanabilir "
+"<option>kern.hz</option>'i azaltmaktır. Bu, <filename>/boot/"
+"loader.conf</filename>'a aşağıdaki satırı ekleyerek gerçekleştirilir:"
 
 #. (itstool) path: step/para
 #: book.translate.xml:42398
+#, fuzzy
 msgid ""
 "Without this setting, an idle FreeBSD <application>Virtual PC</application> "
 "guest OS will use roughly 40% of the CPU of a single processor computer. "
 "After this change, the usage will be closer to 3%."
 msgstr ""
+"Bu ayar olmadan, eylemsiz bir FreeBSD <application>Sanal PC</application> "
+"konuk işletim sistemi, tek işlemcili bir bilgisayar CPU'sunun yaklaşık "
+"olarak %40'ını kullanacaktır. Bu değişiklikten sonra, kullanım %3'e yakın "
+"olacaktır."
 
 #. (itstool) path: step/para
 #: book.translate.xml:42408
+#, fuzzy
 msgid ""
 "All of the SCSI, FireWire, and USB device drivers can be removed from a "
 "custom kernel configuration file. <application>Virtual PC</application> "
@@ -62616,9 +62701,18 @@ msgid ""
 "refentrytitle><manvolnum>4</manvolnum></citerefentry> can be removed from "
 "the kernel."
 msgstr ""
+"Tüm SCSI, FireWire ve USB aygıtı sürücüleri özel çekirdek yapılandırma "
+"dosyası ile kaldırılabilir. <application>Sanal PC</application> <citerefentry"
+"><refentrytitle>de</refentrytitle><manvolnum>4</manvolnum></citerefentry> "
+"sürücüsü tarafından kullanılan bir sanal ağ bağdaştırıcısı sağlar, böylece <c"
+"iterefentry><refentrytitle>de</refentrytitle><manvolnum>4</manvolnum></citere"
+"fentry>> ve <citerefentry><refentrytitle>miibus</refentrytitle><manvolnum>4</"
+"manvolnum></citerefentry> hariç diğer tüm ağ aygıtları çekirdekten "
+"kaldırılabilir."
 
 #. (itstool) path: step/para
 #: book.translate.xml:42419
+#, fuzzy
 msgid ""
 "The most basic networking setup uses DHCP to connect the virtual machine to "
 "the same local area network as the <trademark class=\"registered"
@@ -62627,6 +62721,12 @@ msgid ""
 "literal> to <filename>/etc/rc.conf</filename>. More advanced networking "
 "setups are described in <xref linkend=\"advanced-networking\"/>."
 msgstr ""
+"En temel ağ kurulumu, sanal makineyi aynı yerel alan ağına ana bilgisayar <"
+"trademark class=\"registered\">Microsoft</trademark><trademark class=\""
+"registered\">Windows</trademark> olarak bağlamak için DHCP kullanır. "
+"Bu,<filename>/etc/rc.conf</filename>'a <literal>ifconfig_de0=\"DHCP\""
+"</literal>'yi ekleyerek gerçekleştirilebilir. Daha gelişmiş ağ kurulumları <"
+"xref linkend=\"advanced-networking\"/>'da açıklanmaktadır."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:42432
