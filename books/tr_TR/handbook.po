@@ -20,8 +20,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-30 15:56+0000\n"
-"Last-Translator: yami98 <yagmurkaya3625@hotmail.com>\n"
+"PO-Revision-Date: 2020-06-30 16:13+0000\n"
+"Last-Translator: esradesteki <esradesteki20@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -12408,6 +12408,7 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9573
+#, fuzzy
 msgid ""
 "When upgrading an existing system that originally used the older pkg_* "
 "tools, the database must be converted to the new format, so that the new "
@@ -12415,27 +12416,39 @@ msgid ""
 "application> has been installed, the package database must be converted from "
 "the traditional format to the new format by running this command:"
 msgstr ""
+"Başlangıçta daha eski pkg_* araçlarını kullanan mevcut bir sistemi "
+"güncellerken; veri tabanı, yeni araçların önceden yüklenmiş paketlerden "
+"haberdar olması için yeni bir biçime dönüştürülmelidir. "
+"<application>pkg</application> kurulur kurulmaz, paket veri tabanı aşağıdaki "
+"komutu çalıştırarak geleneksel biçiminden yeni biçimine dönüştürülmelidir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9581
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg2ng</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg2ng</userinput>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:9583
+#, fuzzy
 msgid ""
 "This step is not required for new installations that do not yet have any "
 "third-party software installed."
 msgstr ""
+"Bu adım, henüz herhangi bir üçüncü parti yazılımı yüklenmemiş olan yeni "
+"kurulumlar için gerekli değildir."
 
 #. (itstool) path: important/para
 #: book.translate.xml:9588
+#, fuzzy
 msgid ""
 "This step is not reversible. Once the package database has been converted to "
 "the <application>pkg</application> format, the traditional <literal>pkg_*</"
 "literal> tools should no longer be used."
 msgstr ""
+"Bu adım geri alınamaz. Paket veri tabanı <application>pkg</application> "
+"biçimine dönüştürüldüğünde, geleneksel <literal>pkg_*</literal> araçları "
+"artık kullanılmamalıdır."
 
 #. (itstool) path: note/para
 #: book.translate.xml:9595
