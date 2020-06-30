@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-07-01 12:55+0000\n"
-"Last-Translator: baransayan <baransayan@gmail.com>\n"
+"Last-Translator: nurbanu  hasanoğlu <hasanoglunurbanu@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -77842,15 +77842,21 @@ msgstr "mpd Kullanma"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50899
+#, fuzzy
 msgid ""
 "The <application>mpd</application> application can be used to connect to a "
 "variety of services, in particular PPTP services. It can be installed using "
 "the <package>net/mpd5</package> package or port. Many ADSL modems require "
 "that a PPTP tunnel is created between the modem and computer."
 msgstr ""
+"<application>mpd</application> uygulaması belirli PPTP servislerini çeşitli "
+"servislere bağlamak için kullanılabilir. mpd <package>net/mpd5</package> "
+"paketi ya da bağlantı noktası kullanılarak yüklenebilir. Pek çok ADSL modemi "
+"bilgisayar ile modem arasında bir PPTP geçidine ihtiyaç duyar."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50906
+#, fuzzy
 msgid ""
 "Once installed, configure <application>mpd</application> to suit the "
 "provider's settings. The port places a set of sample configuration files "
@@ -77861,17 +77867,28 @@ msgid ""
 "<application>mpd</application>. The configuration is spread over two files, "
 "first the <filename>mpd.conf</filename>:"
 msgstr ""
+"Yüklendikten sonra, <application>mpd</application>’yi sağlayıcı ayarlarına "
+"uyacak şekilde yapılandırın. Bağlantı noktası yerleri <filename>/usr/local/"
+"etc/mpd/</filename>’da düzgün bir şekilde belgelenmiş bir dizi yapılandırma "
+"dosyasıdır. <application>mpd</application>'yi yapılandırmak için HTML "
+"formatında tam bir rehber <filename>/usr/ports/share/doc/mpd/</filename>’da "
+"mevcuttur. İşte <application>mpd</application> ile ADSL servisine bağlanmak "
+"için örnek bir yapılandırma. Yapılandırma iki dosya üzerinden yayıldı, önce "
+"<filename>mpd.conf</filename>:"
 
 #. (itstool) path: note/para
 #: book.translate.xml:50918
+#, fuzzy
 msgid ""
 "This example <filename>mpd.conf</filename> only works with <application>mpd</"
 "application> 4.x."
 msgstr ""
+"Bu örnek <filename>mpd.conf</filename> sadece <application>mpd</application> "
+"4.x ile çalışır."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:50922
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "default:\n"
 "    load adsl\n"
@@ -77897,28 +77914,63 @@ msgid ""
 "\n"
 "    open"
 msgstr ""
+"default:\n"
+"    load adsl\n"
+"\n"
+"adsl:\n"
+"    new -i ng0 adsl adsl\n"
+"    set bundle authname <replaceable>username</replaceable> <co xml:id=\"co-"
+"mpd-ex-user\"/>\n"
+"    set bundle password <replaceable>password</replaceable> <co xml:id=\"co-"
+"mpd-ex-pass\"/>\n"
+"    set bundle disable multilink\n"
+"\n"
+"    set link no pap acfcomp protocomp\n"
+"    set link disable chap\n"
+"    set link accept chap\n"
+"    set link keep-alive 30 10\n"
+"\n"
+"    set ipcp no vjcomp\n"
+"    set ipcp ranges 0.0.0.0/0 0.0.0.0/0\n"
+"\n"
+"    set iface route default\n"
+"    set iface disable on-demand\n"
+"    set iface enable proxy-arp\n"
+"    set iface idle 0\n"
+"\n"
+"    open"
 
 #. (itstool) path: callout/para
 #: book.translate.xml:50948
+#, fuzzy
 msgid "The username used to authenticate with your <acronym>ISP</acronym>."
 msgstr ""
+"<acronym>ISP</acronym>’nizle kimlik doğrulaması yapmak için kullanılan "
+"kullanıcı adı."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:50952
+#, fuzzy
 msgid "The password used to authenticate with your <acronym>ISP</acronym>."
 msgstr ""
+"<acronym>ISP</acronym>’nizle kimlik doğrulaması yapmak için kullanılan şifre."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50957
+#, fuzzy
 msgid ""
 "Information about the link, or links, to establish is found in <filename>mpd."
 "links</filename>. An example <filename>mpd.links</filename> to accompany the "
 "above example is given beneath:"
 msgstr ""
+"Oluşturulacak bağlantı veya bağlantılar hakkında bilgi "
+"<filename>mpd.links</filename> dosyasında bulunur. Bir "
+"<filename>mpd.links</filename> yukarıdaki örneğe eşlik edecek şekilde "
+"aşağıda verilmiştir:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:50962
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "adsl:\n"
 "    set link type pptp\n"
@@ -77927,70 +77979,104 @@ msgid ""
 "    set pptp self <replaceable>10.0.0.1</replaceable> <co xml:id=\"co-mpd-ex-self\"/>\n"
 "    set pptp peer <replaceable>10.0.0.138</replaceable> <co xml:id=\"co-mpd-ex-peer\"/>"
 msgstr ""
+"adsl:\n"
+"    set link type pptp\n"
+"    set pptp mode active\n"
+"    set pptp enable originate outcall\n"
+"    set pptp self <replaceable>10.0.0.1</replaceable> <co xml:id=\"co-mpd-ex-"
+"self\"/>\n"
+"    set pptp peer <replaceable>10.0.0.138</replaceable> <co xml:id=\"co-mpd-"
+"ex-peer\"/>"
 
 #. (itstool) path: callout/para
 #: book.translate.xml:50971
+#, fuzzy
 msgid ""
 "The <acronym>IP</acronym> address of FreeBSD computer running "
 "<application>mpd</application>."
 msgstr ""
+"<application>mpd</application> çalıştıran FreeBSD bilgisayarın "
+"<acronym>IP</acronym> adresi."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:50975
+#, fuzzy
 msgid ""
 "The <acronym>IP</acronym> address of the ADSL modem. The Alcatel "
 "<trademark>SpeedTouch</trademark> Home defaults to <systemitem class="
 "\"ipaddress\">10.0.0.138</systemitem>."
 msgstr ""
+"ADSL modeminin <acronym>IP</acronym> adresi. Alcatel "
+"<trademark>SpeedTouch</trademark> Home’un varsayılanı <systemitem class=\""
+"ipaddress\">10.0.0.138</systemitem>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50980
+#, fuzzy
 msgid ""
 "It is possible to initialize the connection easily by issuing the following "
 "command as <systemitem class=\"username\">root</systemitem>:"
 msgstr ""
+"Aşağıdaki komutu <systemitem class=\"username\">root</systemitem> olarak "
+"çalıştırıldığında, bağlantıyı kolayca başlatmak mümkündür:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:50984
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>mpd -b <replaceable>adsl</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>mpd -b "
+"<replaceable>adsl</replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50986
+#, fuzzy
 msgid "To view the status of the connection:"
-msgstr ""
+msgstr "Bağlantının durumunu görmek için:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:50988
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>ifconfig <replaceable>ng0</replaceable></userinput>\n"
 "ng0: flags=88d1&lt;UP,POINTOPOINT,RUNNING,NOARP,SIMPLEX,MULTICAST&gt; mtu 1500\n"
 "     inet 216.136.204.117 --&gt; 204.152.186.171 netmask 0xffffffff"
 msgstr ""
+"<prompt>%</prompt> <userinput>ifconfig "
+"<replaceable>ng0</replaceable></userinput>\n"
+"ng0: flags=88d1&lt;UP,POINTOPOINT,RUNNING,NOARP,SIMPLEX,MULTICAST&gt; mtu "
+"1500\n"
+"     inet 216.136.204.117 --&gt; 204.152.186.171 netmask 0xffffffff"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50992
+#, fuzzy
 msgid ""
 "Using <application>mpd</application> is the recommended way to connect to an "
 "ADSL service with FreeBSD."
 msgstr ""
+"FreeBSD ile bir ADSL servisine bağlanırken önerilen yol "
+"<application>mpd</application> kullanmaktır."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:50997
+#, fuzzy
 msgid "Using pptpclient"
-msgstr ""
+msgstr "pptpclient Kullanma"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50999
+#, fuzzy
 msgid ""
 "It is also possible to use FreeBSD to connect to other PPPoA services using "
 "<package>net/pptpclient</package>."
 msgstr ""
+"Ayrıca FreeBSD kullanarak başka bir PPPoA servisine <package>net/"
+"ppptpclient</package> kullanarak bağlanmak mümkündür."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:51002
+#, fuzzy
 msgid ""
 "To use <package>net/pptpclient</package> to connect to a DSL service, "
 "install the port or package, then edit <filename>/etc/ppp/ppp.conf</"
@@ -77999,10 +78085,16 @@ msgid ""
 "consult <citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>."
 msgstr ""
+"<package>net/pptpclient</package> kullanarak bir DSL servisine bağlanmak "
+"için, bağlantı noktası ya da paketi yükleyin, sonra <filename>/etc/ppp/"
+"ppp.conf</filename>’u düzenleyin. <filename>ppp.conf</filename> dosyasının "
+"örnek bir bölümü aşağıda verilmiştir. <filename>ppp.conf</filename> "
+"seçenekleri hakkında daha fazla bilgi için <citerefentry><refentrytitle>ppp</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>’e bakın."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:51009
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "adsl:\n"
 " set log phase chat lcp ipcp ccp tun command\n"
@@ -78013,34 +78105,53 @@ msgid ""
 " set ifaddr 0 0\n"
 " add default HISADDR"
 msgstr ""
+"adsl:\n"
+" set log phase chat lcp ipcp ccp tun command\n"
+" set timeout 0\n"
+" enable dns\n"
+" set authname <replaceable>username</replaceable> <co xml:id=\"co-pptp-ex-"
+"user\"/>\n"
+" set authkey <replaceable>password</replaceable> <co xml:id=\"co-pptp-ex-"
+"pass\"/>\n"
+" set ifaddr 0 0\n"
+" add default HISADDR"
 
 #. (itstool) path: callout/para
 #: book.translate.xml:51020
+#, fuzzy
 msgid "The username for the DSL provider."
-msgstr ""
+msgstr "DSL sağlayıcısı için kullanıcı adı."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:51024
+#, fuzzy
 msgid "The password for your account."
-msgstr ""
+msgstr "Hesabınızın şifresi."
 
 #. (itstool) path: warning/para
 #: book.translate.xml:51029
+#, fuzzy
 msgid ""
 "Since the account's password is added to <filename>ppp.conf</filename>in "
 "plain text form, make sure nobody can read the contents of this file:"
 msgstr ""
+"Hesabınızın şifresi <filename>ppp.conf</filename>’a düz yazı şeklinde "
+"eklendiği için, bu dosyanın içeriğini kimsenin okuyamadığından emin olun:"
 
 #. (itstool) path: warning/screen
 #: book.translate.xml:51033
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>chown root:wheel /etc/ppp/ppp.conf</userinput>\n"
 "<prompt>#</prompt> <userinput>chmod 600 /etc/ppp/ppp.conf</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>chown root:wheel /etc/ppp/ppp.conf</userinput>"
+"\n"
+"<prompt>#</prompt> <userinput>chmod 600 /etc/ppp/ppp.conf</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:51038
+#, fuzzy
 msgid ""
 "This will open a tunnel for a <acronym>PPP</acronym> session to the DSL "
 "router. Ethernet DSL modems have a preconfigured LAN <acronym>IP</acronym> "
@@ -78049,22 +78160,35 @@ msgid ""
 "systemitem>. The router's documentation should list the address the device "
 "uses. To open the tunnel and start a <acronym>PPP</acronym> session:"
 msgstr ""
+"Bu, DSL yönlendiricisine <acronym>PPP</acronym> oturumu için bir geçit "
+"açacaktır. Ethernet DSL modemlerinin bağlanmak için önceden yapılandırılmış "
+"bir LAN <acronym>IP</acronym> adresi vardır. Bu durumda, Alcatel "
+"<trademark>SpeedTouch</trademark> Home’un bu adresi <systemitem class=\""
+"ipaddress\">10.0.0.138</systemitem>’dir. Yönlendiricinin belgesi aygıtın "
+"kullandığı adresi listelemelidir. Geçiti açmak için ve <acronym>PPP</acronym>"
+" oturumunu başlatmak için:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:51047
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pptp <replaceable>address</replaceable> <replaceable>adsl</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>pptp <replaceable>address</replaceable> "
+"<replaceable>adsl</replaceable></userinput>"
 
 #. (itstool) path: tip/para
 #: book.translate.xml:51050
+#, fuzzy
 msgid ""
 "If an ampersand (<quote>&amp;</quote>) is added to the end of this command, "
 "<application>pptp</application> will return the prompt."
 msgstr ""
+"Eğer bir ve işareti(<quote>&amp;</quote>) bu komudun sonuna eklendiyse, "
+"<application>pptp</application> komudu geri döndürecektir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:51056
+#, fuzzy
 msgid ""
 "A <filename>tun</filename> virtual tunnel device will be created for "
 "interaction between the <application>pptp</application> and "
@@ -78072,25 +78196,40 @@ msgid ""
 "the <application>pptp</application> process has confirmed a connection, "
 "examine the tunnel:"
 msgstr ""
+"Bir <filename>tun</filename> sanal geçit aygıtı "
+"<application>pptp</application> ve <application>ppp</application> işlemleri "
+"arasında etkileşim için oluşturulacaktır. Komut geri döndüğünde, ya da "
+"<application>pptp</application> işlemi bağlantıyı onayladığında, geçidi "
+"inceleyin:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:51064
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>ifconfig <replaceable>tun0</replaceable></userinput>\n"
 "tun0: flags=8051&lt;UP,POINTOPOINT,RUNNING,MULTICAST&gt; mtu 1500\n"
 "        inet 216.136.204.21 --&gt; 204.152.186.171 netmask 0xffffff00\n"
 "\tOpened by PID 918"
 msgstr ""
+"<prompt>%</prompt> <userinput>ifconfig "
+"<replaceable>tun0</replaceable></userinput>\n"
+"tun0: flags=8051&lt;UP,POINTOPOINT,RUNNING,MULTICAST&gt; mtu 1500\n"
+"        inet 216.136.204.21 --&gt; 204.152.186.171 netmask 0xffffff00\n"
+"\tOpened by PID 918"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:51069
+#, fuzzy
 msgid ""
 "If the connection fails, check the configuration of the router, which is "
 "usually accessible using a web browser. Also, examine the output of "
 "<command>pptp</command> and the contents of the log file, <filename>/var/log/"
 "ppp.log</filename> for clues."
 msgstr ""
+"Eğer bağlantı başarısız olursa, yönlendiricinin yapılandırıcısını kontrol "
+"edin, ki bu bir internet tarayıcısıyla erişilebilir. Ayrıca, ip uçları için "
+"<command>pptp</command> çıktısını ve <filename>/var/log/ppp.log</filename> "
+"kayıt dosyasının içeriğini inceleyin."
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:51090
