@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-07-01 12:55+0000\n"
-"Last-Translator: ElifAtalay94 <elifatalay94@icloud.com>\n"
+"Last-Translator: onuraydin3 <crymzonx@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -81051,19 +81051,25 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:52223
+#, fuzzy
 msgid "Using Mail with a Dialup Connection"
-msgstr ""
+msgstr "Çevirmeli Bağlantı ile Posta Kullanımı"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:52225
+#, fuzzy
 msgid ""
 "When using a static IP address, one should not need to adjust the default "
 "configuration. Set the hostname to the assigned Internet name and "
 "<application>Sendmail</application> will do the rest."
 msgstr ""
+"Statik bir IP adresi kullanırken, varsayılan yapılandırma ayarlanmamalıdır. "
+"Ana bilgisayar adını atanmış internet adına ayarlayın ve "
+"<application>Sendmail</application> gerisini halledecektir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:52230
+#, fuzzy
 msgid ""
 "When using a dynamically assigned IP address and a dialup PPP connection to "
 "the Internet, one usually has a mailbox on the <acronym>ISP</acronym>'s mail "
@@ -81074,9 +81080,18 @@ msgid ""
 "<acronym>ISP</acronym> has allowed <systemitem class=\"fqdomainname\">relay."
 "example.net</systemitem> as a mail relay."
 msgstr ""
+"Dinamik olarak atanmış bir IP adresi ve çevirmeli PPP internet bağlantısı "
+"kullanılırken, <acronym>ISP</acronym> 'nin posta sunucusunda genellikle bir "
+"posta kutusu bulunur. Bu örnekte, <acronym>ISP</acronym> 'nin domaini <"
+"systemitem class=\"fqdomainname\">example.net</systemitem> olup, kullanıcı "
+"adı <systemitem class=\"username\">user</systemitem>, ana bilgisayar adı <"
+"systemitem class=\"fqdomainname\">bsd.home</systemitem> 'dır ve "
+"<acronym>ISP</acronym> posta aktarıcısı olarak <systemitem class=\""
+"fqdomainname\">relay.example.net</systemitem> 'e izin vermektedir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:52239
+#, fuzzy
 msgid ""
 "In order to retrieve mail from the <acronym>ISP</acronym>'s mailbox, install "
 "a retrieval agent from the Ports Collection. <package>mail/fetchmail</"
@@ -81086,6 +81101,13 @@ msgid ""
 "Internet connection is established with the following entry in <filename>/"
 "etc/ppp/ppp.linkup</filename>:"
 msgstr ""
+"<acronym>ISP</acronym> 'nin posta kutusundaki bir postayı geri getirmek "
+"için, Port Koleksiyonunu kullanarak bir geri getirme birimi yükleyin. Bir "
+"çok protokolü desteklediği için <package>mail/fetchmail</package> iyi bir "
+"seçimdir. Genellikle <acronym>ISP</acronym>, <acronym>POP</acronym> "
+"sağlayacaktır. Kullanıcı <acronym>PPP</acronym> 'si kullanırken, internet "
+"bağlantısı aşağıdaki girdi ile <filename>/etc/ppp/ppp.linkup</filename> "
+"içerisine kurulduğunda, e-posta otomatik olarak alınabilir:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:52249
@@ -81097,6 +81119,7 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:52252
+#, fuzzy
 msgid ""
 "When using <application>Sendmail</application> to deliver mail to non-local "
 "accounts, configure <application>Sendmail</application> to process the mail "
@@ -81104,6 +81127,12 @@ msgid ""
 "this line after the above <command>fetchmail</command> entry in <filename>/"
 "etc/ppp/ppp.linkup</filename>:"
 msgstr ""
+"<application>Sendmail</application> 'i yerel olmayan hesaplara posta "
+"göndermek için kullanırken, <application>Sendmail</application> 'i posta "
+"sırasını işlemesi için internet bağlantısı kurulduktan sonra derhal "
+"yapılandırın. Bunu yapmak için, bu satırı yukarıdaki <filename>/etc/ppp/"
+"ppp.linkup</filename> içerisindeki <command>fetchmail</command> girdisine "
+"ekleyin:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:52259
@@ -81113,6 +81142,7 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:52261
+#, fuzzy
 msgid ""
 "In this example, there is an account for <systemitem class=\"username"
 "\">user</systemitem> on <systemitem class=\"fqdomainname\">bsd.home</"
@@ -81120,6 +81150,11 @@ msgid ""
 "systemitem> on <systemitem class=\"fqdomainname\">bsd.home</systemitem>, "
 "create a <filename>.fetchmailrc</filename> which contains this line:"
 msgstr ""
+"Bu örnekte, <systemitem class=\"fqdomainname\">bsd.home</systemitem> "
+"üzerinde bir <systemitem class=\"username\">user</systemitem> hesabı vardır. "
+"<systemitem class=\"fqdomainname\">bsd.home</systemitem> üzerindeki <"
+"systemitem class=\"username\">user</systemitem> ana dizinine, aşağıdaki "
+"satırı içeren bir <filename>.fetchmailrc</filename> oluşturun:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:52268
@@ -81129,14 +81164,18 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:52270
+#, fuzzy
 msgid ""
 "This file should not be readable by anyone except <systemitem class="
 "\"username\">user</systemitem> as it contains the password "
 "<literal>MySecret</literal>."
 msgstr ""
+"Bu dosya <literal>MySecret</literal> şifresi içerdiği için, <systemitem "
+"class=\"username\">user</systemitem> dışında kimse tarafından okunamamalıdır."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:52274
+#, fuzzy
 msgid ""
 "In order to send mail with the correct <literal>from:</literal> header, "
 "configure <application>Sendmail</application> to use <email>user@example."
@@ -81144,11 +81183,18 @@ msgid ""
 "send all mail via <systemitem class=\"fqdomainname\">relay.example.net</"
 "systemitem>, allowing quicker mail transmission."
 msgstr ""
+"Doğru <literal>from:</literal> üst bilgisi ile posta gönderebilmek için, "
+"<application>Sendmail</application> 'i, <email role=\"nolink\""
+">user@bsd.home</email> yerine, <email>user@example.net</email> 'i kullanması "
+"ve tüm postaları <systemitem class=\"fqdomainname\""
+">relay.example.net</systemitem> vasıtasıyla göndermesi için yapılandırmak, "
+"postaların daha hızlı aktarılmasını sağlayacaktır."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:52281
+#, fuzzy
 msgid "The following <filename>.mc</filename> should suffice:"
-msgstr ""
+msgstr "Aşağıdaki <filename>.mc</filename> yeterli olmalıdır:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:52284
@@ -81174,27 +81220,37 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:52301
+#, fuzzy
 msgid ""
 "Refer to the previous section for details of how to convert this file into "
 "the <filename>sendmail.cf</filename> format. Do not forget to restart "
 "<application>Sendmail</application> after updating <filename>sendmail.cf</"
 "filename>."
 msgstr ""
+"Bu dosyanın nasıl <filename>sendmail.cf</filename> formatına çevrilebileceği "
+"hakkında detaylı bilgi için önceki bölüme göz atın. "
+"<filename>sendmail.cf</filename> 'i güncelledikten sonra "
+"<application>Sendmail</application> 'i yeniden başlatmayı unutmayın."
 
 #. (itstool) path: info/title
 #: book.translate.xml:52309
+#, fuzzy
 msgid "SMTP Authentication"
-msgstr ""
+msgstr "SMTP Kimlik Doğrulaması"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:52312
+#, fuzzy
 msgid ""
 "<personname> <firstname>James</firstname> <surname>Gorham</surname> </"
 "personname> <contrib>Written by </contrib>"
 msgstr ""
+"<personname> <firstname>James</firstname> <surname>Gorham</surname> "
+"</personname> <contrib>tarafından yazılmıştır</contrib>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:52322
+#, fuzzy
 msgid ""
 "Configuring <acronym>SMTP</acronym> authentication on the <acronym>MTA</"
 "acronym> provides a number of benefits. <acronym>SMTP</acronym> "
@@ -81203,23 +81259,38 @@ msgid ""
 "the same <acronym>MTA</acronym> without the need to reconfigure their mail "
 "client's settings each time."
 msgstr ""
+"<acronym>MTA</acronym> 'da, <acronym>SMPTP</acronym> kimlik doğrulaması "
+"yapılandırmanın bir çok getirisi vardır. <acronym>SMTP</acronym> kimlik "
+"doğrulaması <application>Sendmail</application> 'e bir güvenlik katmanı "
+"ekler ve ana bilgisayar değiştiren mobil kullanıcılara her seferinde posta "
+"istemcilerini yeniden yapılandırmalarına gerek kalmadan, aynı "
+"<acronym>MTA</acronym> 'yı kullanabilme olanağı sağlar."
 
 #. (itstool) path: step/para
 #: book.translate.xml:52332
+#, fuzzy
 msgid ""
 "Install <package>security/cyrus-sasl2</package> from the Ports Collection. "
 "This port supports a number of compile-time options. For the SMTP "
 "authentication method demonstrated in this example, make sure that "
 "<option>LOGIN</option> is not disabled."
 msgstr ""
+"Port Koleksiyonundan <package>security/cyrus-sasl2</package> 'yi yükleyin. "
+"Bu port bir çok derleme süresi seçeneğini destekler. Bu örnekte gösterilen "
+"SMTP kimlik doğrulama yöntemi için, <option>LOGIN</option> seçeneğinin devre "
+"dışı bırakılmadığından emin olun."
 
 #. (itstool) path: step/para
 #: book.translate.xml:52341
+#, fuzzy
 msgid ""
 "After installing <package>security/cyrus-sasl2</package>, edit <filename>/"
 "usr/local/lib/sasl2/Sendmail.conf</filename>, or create it if it does not "
 "exist, and add the following line:"
 msgstr ""
+"<package>security/cyrus-sasl2</package> 'i yükledikten sonra, <filename>/usr/"
+"local/lib/sasl2/Sendmail.conf</filename> dosyasını güncelleyin, eğer yok ise "
+"oluşturun ve aşağıdaki satırı ekleyin:"
 
 #. (itstool) path: step/programlisting
 #: book.translate.xml:52347
@@ -81229,10 +81300,13 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: book.translate.xml:52351
+#, fuzzy
 msgid ""
 "Next, install <package>security/cyrus-sasl2-saslauthd</package> and add the "
 "following line to <filename>/etc/rc.conf</filename>:"
 msgstr ""
+"Sonrasında, <package>security/cyrus-sasl2-saslauthd</package> kurun ve "
+"aşağıdaki satırı <filename>/etc/rc.conf</filename> içerisine ekleyin:"
 
 #. (itstool) path: step/programlisting
 #: book.translate.xml:52356
@@ -81242,8 +81316,9 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: book.translate.xml:52358
+#, fuzzy
 msgid "Finally, start the saslauthd daemon:"
-msgstr ""
+msgstr "Son olarak, saslauthd programını başlatın:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:52360
@@ -81253,6 +81328,7 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: book.translate.xml:52362
+#, fuzzy
 msgid ""
 "This daemon serves as a broker for <application>Sendmail</application> to "
 "authenticate against the FreeBSD <citerefentry><refentrytitle>passwd</"
@@ -81261,6 +81337,12 @@ msgid ""
 "that needs to use <acronym>SMTP</acronym> authentication, and keeps the "
 "login and mail password the same."
 msgstr ""
+"Bu program <application>Sendmail</application> ile FreeBSD <citerefentry><ref"
+"entrytitle>passwd</refentrytitle><manvolnum>5</manvolnum></citerefentry> "
+"veritabanı arasında kimlik doğrulama bilgilerinin geçişini sağlayan bir "
+"altyapı görevi görür. Bu da SMTP kimlik doğrulaması kullanması gereken her "
+"kullanıcı için yeni bir kullanıcı adı ve parola oluşturma sorununu ortadan "
+"kaldırır ve oturum açma ve posta parolasını aynı tutar."
 
 #. (itstool) path: step/para
 #: book.translate.xml:52371
