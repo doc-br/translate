@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-07-01 12:55+0000\n"
-"Last-Translator: ilaydaasal <ilaydaasal92@gmail.com>\n"
+"Last-Translator: yami98 <yagmurkaya3625@hotmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -24142,6 +24142,7 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:16006
+#, fuzzy
 msgid ""
 "Once source is installed, review the contents of <filename>/usr/src/sys</"
 "filename>. This directory contains a number of subdirectories, including "
@@ -24153,9 +24154,19 @@ msgid ""
 "architecture has a <filename>conf</filename> subdirectory which contains the "
 "<filename>GENERIC</filename> kernel configuration file for that architecture."
 msgstr ""
+"Kaynak kurulduğunda <filename>/usr/src/sys</filename> içeriğini inceleyin. "
+"Bu dizin; <filename>amd64</filename>, <filename>i386</filename>, "
+"<filename>powerpc</filename>, ve <filename>sparc64</filename> desteklenen "
+"mimarilerini temsil edenler de dahil olmak üzere birkaç altdizini kapsar. "
+"Belirli bir mimari dizininin içindeki her şey sadece söz konusu mimariyle "
+"ilgilenir ve geri kalan kod, tüm platformlarda yaygın olarak makine "
+"bağımsızdır. Desteklenen her mimari, bahsedilen mimari için "
+"<filename>GENERIC</filename> çekirdek yapılandırma dosyası içeren bir "
+"<filename>conf</filename> altdizinine sahiptir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:16020
+#, fuzzy
 msgid ""
 "Do not make edits to <filename>GENERIC</filename>. Instead, copy the file to "
 "a different name and make edits to the copy. The convention is to use a name "
@@ -24165,14 +24176,25 @@ msgid ""
 "of the <filename>GENERIC</filename> configuration file for the "
 "<literal>amd64</literal> architecture:"
 msgstr ""
+"<filename>GENERIC</filename>'i düzenlemeyin. Bunun yerine dosyayı farklı bir "
+"isimle kopyalayın ve düzenlemelerinizi kopya dosyasına yapın. Kural, tamamen "
+"büyük harflerden oluşan bir isim kullanmaktır. Farklı donanımlı birden fazla "
+"FreeBSD bilgisayarlar için devamlılığı sürdürürken ana bilgisayar adının "
+"kullanılması tavsiye edilir. Bu örnek, <literal>amd64</literal> mimarisi "
+"için olan <filename>GENERIC</filename> yapılandırma dosyasından "
+"<filename>MYKERNEL</filename> adında bir kopya oluşturur:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:16029
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/src/sys/<replaceable>amd64</replaceable>/conf</userinput>\n"
 "<prompt>#</prompt> <userinput>cp GENERIC <replaceable>MYKERNEL</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/src/sys/"
+"<replaceable>amd64</replaceable>/conf</userinput>\n"
+"<prompt>#</prompt> <userinput>cp GENERIC "
+"<replaceable>MYKERNEL</replaceable></userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:16032
