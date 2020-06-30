@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-06-30 15:56+0000\n"
-"Last-Translator: firdevssevik <sevikfirdevs@gmail.com>\n"
+"Last-Translator: yami98 <yagmurkaya3625@hotmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -23638,9 +23638,9 @@ msgid ""
 "\n"
 "    if_ath_load=\"YES\""
 msgstr ""
-"Alternatif olarak önyükleme zamanında sürücüyü bir modül olarak yüklemek "
-"için aşağıdaki satırı şuraya yapıştırın: <citerefentry><refentrytitle>loader."
-"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>\n"
+"Alternatively, to load the driver as a module at boot time, place the\n"
+"following line in <citerefentry><refentrytitle>loader.conf</refentrytitle><ma"
+"nvolnum>5</manvolnum></citerefentry>:\n"
 "\n"
 "    if_ath_load=\"YES\""
 
@@ -23723,40 +23723,54 @@ msgstr ""
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:15944
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "psm0: &lt;PS/2 Mouse&gt; irq 12 on atkbdc0\n"
 "psm0: [GIANT-LOCKED]\n"
 "psm0: [ITHREAD]\n"
 "psm0: model Generic PS/2 mouse, device ID 0"
 msgstr ""
+"psm0: &lt;PS/2 Mouse&gt; irq 12 on atkbdc0\n"
+"psm0: [GIANT-LOCKED]\n"
+"psm0: [ITHREAD]\n"
+"psm0: model Generic PS/2 mouse, device ID 0"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15949
+#, fuzzy
 msgid ""
 "Since this hardware exists, this driver should not be removed from a custom "
 "kernel configuration file."
 msgstr ""
+"Bu donanım bulunduğundan, bu sürücü özel çekirdek yapılandırma dosyasından "
+"kaldırılmamalıdır."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15952
+#, fuzzy
 msgid ""
 "If the output of <command>dmesg</command> does not display the results of "
 "the boot probe output, instead read the contents of <filename>/var/run/dmesg."
 "boot</filename>."
 msgstr ""
+"<command>dmesg</command> komut çıktısı önyükleme çıktısını görüntülemezse, "
+"bunun yerine <filename>/var/run/dmesg.boot</filename> içeriğini okuyun."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15956
+#, fuzzy
 msgid ""
 "Another tool for finding hardware is <citerefentry><refentrytitle>pciconf</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>, which provides more "
 "verbose output. For example:"
 msgstr ""
+"Donanım bulmak için bir başka araç da daha ayrıntılı çıktı sağlayan <citerefe"
+"ntry><refentrytitle>pciconf</refentrytitle><manvolnum>8</manvolnum></citerefe"
+"ntry> Örneğin:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:15959
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>pciconf -lv</userinput>\n"
 "ath0@pci0:3:0:0:        class=0x020000 card=0x058a1014 chip=0x1014168c rev=0x01 hdr=0x00\n"
@@ -23765,45 +23779,69 @@ msgid ""
 "    class      = network\n"
 "    subclass   = ethernet"
 msgstr ""
+"<prompt>%</prompt> <userinput>pciconf -lv</userinput>\n"
+"ath0@pci0:3:0:0:        class=0x020000 card=0x058a1014 chip=0x1014168c rev="
+"0x01 hdr=0x00\n"
+"    vendor     = 'Atheros Communications Inc.'\n"
+"    device     = 'AR5212 Atheros AR5212 802.11abg wireless'\n"
+"    class      = network\n"
+"    subclass   = ethernet"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15966
+#, fuzzy
 msgid ""
 "This output shows that the <filename>ath</filename> driver located a "
 "wireless Ethernet device."
 msgstr ""
+"Bu çıktı <filename>ath</filename> sürücüsünün kablosuz bir Ethernet aygıtı "
+"tespit ettiğini gösterir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15969
+#, fuzzy
 msgid ""
 "The <option>-k</option> flag of <citerefentry><refentrytitle>man</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> can be used to provide "
 "useful information. For example, it can be used to display a list of manual "
 "pages which contain a particular device brand or name:"
 msgstr ""
+"<citerefentry><refentrytitle>man</refentrytitle><manvolnum>1</manvolnum></cit"
+"erefentry>'in <option>-k</option> işaretçisi kullanışlı bilgiler sağlamak "
+"için kullanılabilir. Örneğin, belirli bir aygıt markası veya ismini kapsayan "
+"bir el kitapları listesi görüntülemek için kullanılabilir:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:15974
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>man -k <replaceable>Atheros</replaceable></userinput>\n"
 "ath(4)                   - Atheros IEEE 802.11 wireless network driver\n"
 "ath_hal(4)               - Atheros Hardware Access Layer (HAL)"
 msgstr ""
+"<prompt>#</prompt> <userinput>man -k "
+"<replaceable>Atheros</replaceable></userinput>\n"
+"ath(4)                   - Atheros IEEE 802.11 wireless network driver\n"
+"ath_hal(4)               - Atheros Hardware Access Layer (HAL)"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15978
+#, fuzzy
 msgid ""
 "Once the hardware inventory list is created, refer to it to ensure that "
 "drivers for installed hardware are not removed as the custom kernel "
 "configuration is edited."
 msgstr ""
+"Donanım envanter listesi oluşturulduğunda, özel çekirdek yapılandırması "
+"düzenlenirken kurulmuş donanım sürücülerinin kaldırılmadığından emin olmak "
+"için envanteri inceleyin."
 
 #. (itstool) path: sect1/title
 #. (itstool) path: sect2/title
 #: book.translate.xml:15995 book.translate.xml:44958
+#, fuzzy
 msgid "The Configuration File"
-msgstr ""
+msgstr "Yapılandırma Dosyası"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15997
