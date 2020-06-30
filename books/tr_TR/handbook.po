@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-06-30 14:04+0000\n"
-"Last-Translator: baransayan <baransayan@gmail.com>\n"
+"Last-Translator: firdevssevik <sevikfirdevs@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -42924,65 +42924,88 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:28955
+#, fuzzy
 msgid ""
 "Additional benefits and features are described in detail on the "
 "<application>ezjail</application> web site, <link xlink:href=\"https://"
 "erdgeist.org/arts/software/ezjail/\"/>."
 msgstr ""
+"Ek avantajlar ve özellikler ayrıntılı olarak "
+"<application>ezjail</application> web sitesinde (<link xlink:href=\""
+"https://erdgeist.org/arts/software/ezjail/\"/>) açıklanmaktadır."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:28959
+#, fuzzy
 msgid "Installing <application>ezjail</application>"
-msgstr ""
+msgstr "<application>Ezjail</application>'i Kurmak"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:28961
+#, fuzzy
 msgid ""
 "Installing <application>ezjail</application> consists of adding a loopback "
 "interface for use in jails, installing the port or package, and enabling the "
 "service."
 msgstr ""
+"<application>Ezjail</application>'i kurmak, hapislerde kullanılmak üzere bir "
+"geri döngü arayüzü eklemek, bağlantı noktasını veya paketi kurmak ve hizmeti "
+"etkinleştirmekten oluşur."
 
 #. (itstool) path: step/para
 #: book.translate.xml:28967
+#, fuzzy
 msgid ""
 "To keep jail loopback traffic off the host's loopback network interface "
 "<literal>lo0</literal>, a second loopback interface is created by adding an "
 "entry to <filename>/etc/rc.conf</filename>:"
 msgstr ""
+"Hapis geri döngü trafiğini ana bilgisayarın geri döngü ağ arabirimi "
+"<literal>lo0</literal>'ın dışında tutmak için <filename>/etc/"
+"rc.conf</filename>'ya bir giriş ekleyerek ikinci bir geri döngü arayüzü "
+"oluşturulur:"
 
 #. (itstool) path: step/programlisting
 #. (itstool) path: example/programlisting
 #: book.translate.xml:28972 book.translate.xml:29473
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "cloned_interfaces=\"lo1\""
-msgstr ""
+msgstr "cloned_interfaces=\"lo1\""
 
 #. (itstool) path: step/para
 #: book.translate.xml:28974
+#, fuzzy
 msgid ""
 "The second loopback interface <literal>lo1</literal> will be created when "
 "the system starts. It can also be created manually without a restart:"
 msgstr ""
+"İkinci geri döngü arayüzü <literal>lo1</literal> sistem başlatıldığında "
+"oluşturulur. Yeniden başlatmadan manuel olarak da oluşturulabilir:"
 
 #. (itstool) path: step/screen
 #. (itstool) path: example/screen
 #: book.translate.xml:28978 book.translate.xml:29477
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>service netif cloneup</userinput>\n"
 "Created clone interfaces: lo1."
 msgstr ""
+"<prompt>#</prompt> <userinput>service netif cloneup</userinput>\n"
+"Created clone interfaces: lo1."
 
 #. (itstool) path: step/para
 #: book.translate.xml:28981
+#, fuzzy
 msgid ""
 "Jails can be allowed to use aliases of this secondary loopback interface "
 "without interfering with the host."
 msgstr ""
+"Hapislerin, ana bilgisayara müdahale etmeden bu ikincil geri döngü "
+"arayüzünün diğer adlarını kullanmasına izin verilebilir."
 
 #. (itstool) path: step/para
 #: book.translate.xml:28985
+#, fuzzy
 msgid ""
 "Inside a jail, access to the loopback address <systemitem class=\"ipaddress"
 "\">127.0.0.1</systemitem> is redirected to the first <acronym>IP</acronym> "
@@ -42991,64 +43014,87 @@ msgid ""
 "in the list of interfaces and <acronym>IP</acronym> addresses given when "
 "creating a new jail."
 msgstr ""
+"Bir hapsin içinde <systemitem class=\"ipaddress\">127.0.0.1</systemitem> "
+"geri döngü adresine erişim, hapse atanan ilk <acronym>IP</acronym> adresine "
+"yönlendirilir. Hapis geri döngüsünün yeni <literal>lo1</literal> arayüzüne "
+"karşılık gelmesi için yeni bir hapis oluşturulurken verilen arayüzler ve "
+"<acronym>IP</acronym> adresleri listesinde bu arayüz belirtilmelidir."
 
 #. (itstool) path: step/para
 #: book.translate.xml:28994
+#, fuzzy
 msgid ""
 "Give each jail a unique loopback address in the <systemitem class=\"ipaddress"
 "\">127.0.0.0</systemitem><systemitem class=\"netmask\">/8</systemitem> "
 "netblock."
 msgstr ""
+"Her hapse <systemitem class=\"ipaddress\">127.0.0.0</systemitem><systemitem "
+"class=\"netmask\">/8</systemitem> netblock içinde benzersiz bir geri döngü "
+"adresi verin."
 
 #. (itstool) path: step/para
 #: book.translate.xml:28999
+#, fuzzy
 msgid "Install <package role=\"port\">sysutils/ezjail</package>:"
-msgstr ""
+msgstr "<package role=\"port\">sysutils/ezjail</package>'u kurun:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:29002
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/sysutils/ezjail</userinput>\n"
 "<prompt>#</prompt> <userinput>make install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/sysutils/ezjail</userinput>\n"
+"<prompt>#</prompt> <userinput>make install clean</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:29007
+#, fuzzy
 msgid ""
 "Enable <application>ezjail</application> by adding this line to <filename>/"
 "etc/rc.conf</filename>:"
 msgstr ""
+"Bu satırı <filename>/etc/rc.conf</filename>'a ekleyerek "
+"<application>ezjail</application>'i etkinleştirin:"
 
 #. (itstool) path: step/programlisting
 #: book.translate.xml:29010
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "ezjail_enable=\"YES\""
-msgstr ""
+msgstr "ezjail_enable=\"YES\""
 
 #. (itstool) path: step/para
 #: book.translate.xml:29014
+#, fuzzy
 msgid ""
 "The service will automatically start on system boot. It can be started "
 "immediately for the current session:"
 msgstr ""
+"Hizmet otomatik olarak sistem önyüklemesinde başlayacaktır. Geçerli oturum "
+"için hemen başlatılabilir:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:29018
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>service ezjail start</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>service ezjail start</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:29026
+#, fuzzy
 msgid ""
 "With <application>ezjail</application> installed, the basejail directory "
 "structure can be created and populated. This step is only needed once on the "
 "jail host computer."
 msgstr ""
+"<application>Ezjail</application> kurulduğunda basejail dizin yapısı "
+"oluşturulabilir ve doldurulabilir. Bu adım, hapis ana bilgisayarında "
+"yalnızca bir kez gereklidir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:29031
+#, fuzzy
 msgid ""
 "In both of these examples, <option>-p</option> causes the ports tree to be "
 "retrieved with <citerefentry><refentrytitle>portsnap</"
@@ -43059,69 +43105,99 @@ msgid ""
 "explains in more detail: <link xlink:href=\"http://erdgeist.org/arts/"
 "software/ezjail/#FAQ\"/>."
 msgstr ""
+"Bu örneklerin her ikisinde de <option>-p</option>, bağlantı noktaları "
+"ağacının <citerefentry><refentrytitle>portsnap</refentrytitle><manvolnum>8</m"
+"anvolnum></citerefentry> ile basejail'e alınmasına neden olur. Bağlantı "
+"noktaları dizininin tek bir kopyası tüm hapisler tarafından paylaşılacaktır. "
+"Hapisler için bağlantı noktaları dizininin ayrı bir kopyasını kullanmak, "
+"bunları ana bilgisayardan izole eder. <application>Ezjail</application> "
+"<acronym>SSS</acronym> daha ayrıntılı olarak açıklamaktadır: <link "
+"xlink:href=\"http://erdgeist.org/arts/software/ezjail/#FAQ\"/>."
 
 #. (itstool) path: step/title
 #: book.translate.xml:29043
+#, fuzzy
 msgid "To Populate the Jail with FreeBSD-RELEASE"
-msgstr ""
+msgstr "Hapsi FreeBSD-RELEASE ile Doldurmak için"
 
 #. (itstool) path: step/para
 #: book.translate.xml:29045
+#, fuzzy
 msgid ""
 "For a basejail based on the FreeBSD RELEASE matching that of the host "
 "computer, use <command>install</command>. For example, on a host computer "
 "running FreeBSD 10-STABLE, the latest RELEASE version of FreeBSD -10 will be "
 "installed in the jail):"
 msgstr ""
+"Ana bilgisayardakiyle eşleşen FreeBSD RELEASE tabanlı bir basejail için "
+"<command>install</command> komutunu kullanın. Örneğin, FreeBSD 10-STABLE "
+"çalıştıran bir ana bilgisayarda, FreeBSD -10'un en son RELEASE sürümü hapse "
+"kurulur):"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:29052
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>ezjail-admin install -p</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>ezjail-admin install -p</userinput>"
 
 #. (itstool) path: step/title
 #: book.translate.xml:29056
+#, fuzzy
 msgid "To Populate the Jail with <command>installworld</command>"
-msgstr ""
+msgstr "Hapsi <command>installworld</command> ile Doldurmak için"
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:29060 book.translate.xml:46196 book.translate.xml:46263
+#, fuzzy
 msgid "buildworld"
-msgstr ""
+msgstr "buildworld"
 
 #. (itstool) path: step/para
 #: book.translate.xml:29059
+#, fuzzy
 msgid ""
 "The basejail can be installed from binaries created by <_:buildtarget-1/> on "
 "the host with <command>ezjail-admin update</command>."
 msgstr ""
+"Basejail, <command>ezjail-admin update</command> ile ana bilgisayarda <_:"
+"buildtarget-1/> tarafından oluşturulan derlenmiş dosyalardan kurulabilir."
 
 #. (itstool) path: step/para
 #: book.translate.xml:29064
+#, fuzzy
 msgid ""
 "In this example, FreeBSD 10-STABLE has been built from source. The jail "
 "directories are created. Then <_:buildtarget-1/> is executed, installing the "
 "host's <filename>/usr/obj</filename> into the basejail."
 msgstr ""
+"Bu örnekte, FreeBSD 10-STABLE kaynaktan oluşturulmuştur. Hapis dizinleri "
+"oluşturulur. Ardından, ana bilgisayarın <filename>/usr/obj</filename>'ını "
+"basejail'e kurarak yürütülür."
 
 #. (itstool) path: step/screen
 #: book.translate.xml:29071
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>ezjail-admin update -i -p</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>ezjail-admin update -i -p</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:29073
+#, fuzzy
 msgid ""
 "The host's <filename>/usr/src</filename> is used by default. A different "
 "source directory on the host can be specified with <option>-s</option> and a "
 "path, or set with <varname>ezjail_sourcetree</varname> in <filename>/usr/"
 "local/etc/ezjail.conf</filename>."
 msgstr ""
+"Ana bilgisayarın <filename>/usr/src</filename>'si varsayılan olarak "
+"kullanılır. Ana bilgisayardaki farklı bir kaynak dizin, <option>-s</option> "
+"ve bir yolla belirtilebilir veya <filename>/usr/local/etc/"
+"ezjail.conf</filename> dosyasında <varname>ezjail_sourcetree</varname> ile "
+"ayarlanabilir."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:29084
+#, fuzzy
 msgid ""
 "The basejail's ports tree is shared by other jails. However, downloaded "
 "distfiles are stored in the jail that downloaded them. By default, these "
@@ -43129,9 +43205,16 @@ msgid ""
 "jail. <filename>/var/ports</filename> inside each jail is also used as a "
 "work directory when building ports."
 msgstr ""
+"Basejail'in bağlantı noktaları ağacı diğer hapisler tarafından paylaşılır "
+"ancak indirilen dağıtım dosyaları onları indiren hapiste saklanır. "
+"Varsayılan olarak, bu dosyalar her bir hapiste <filename>/var/port/"
+"distfiles</filename> içinde saklanır. Her bir hapsin içindeki <filename>/var/"
+"ports</filename>, bağlantı noktaları oluşturulurken çalışma dizini (work "
+"directory) olarak da kullanılır."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:29093
+#, fuzzy
 msgid ""
 "The <acronym>FTP</acronym> protocol is used by default to download packages "
 "for the installation of the basejail. Firewall or proxy configurations can "
@@ -43141,52 +43224,75 @@ msgid ""
 "particular download mirror in <filename>/usr/local/etc/ezjail.conf</"
 "filename>:"
 msgstr ""
+"<acronym>FTP</acronym> protokolü, basejail'in kurulumunda paketleri indirmek "
+"için varsayılan olarak kullanılır. Güvenlik duvarı veya proxy "
+"yapılandırmaları <acronym>FTP</acronym> transferlerini engelleyebilir veya "
+"bunlara müdahale edebilir. <acronym>HTTP</acronym> protokolü farklı çalışır "
+"ve bu sorunları önler. <filename>/usr/local/etc/ezjail.conf</filename> "
+"içinde belirli bir indirme aynalaması için tam bir <acronym>URL</acronym> "
+"belirtilerek seçilebilir:"
 
 #. (itstool) path: tip/programlisting
 #: book.translate.xml:29102
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "ezjail_ftphost=http://<replaceable>ftp.FreeBSD.org</replaceable>"
-msgstr ""
+msgstr "ezjail_ftphost=http://<replaceable>ftp.FreeBSD.org</replaceable>"
 
 #. (itstool) path: tip/para
 #: book.translate.xml:29104
+#, fuzzy
 msgid "See <xref linkend=\"mirrors-ftp\"/> for a list of sites."
-msgstr ""
+msgstr "Sitelerin listesi için <xref linkend=\"mirrors-ftp\"/>'ya bakınız."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:29110
+#, fuzzy
 msgid "Creating and Starting a New Jail"
-msgstr ""
+msgstr "Yeni Bir Hapis Oluşturma ve Başlatma"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:29112
+#, fuzzy
 msgid ""
 "New jails are created with <command>ezjail-admin create</command>. In these "
 "examples, the <literal>lo1</literal> loopback interface is used as described "
 "above."
 msgstr ""
+"<command>ezjail-admin create</command> ile yeni hapisler oluşturulur. Bu "
+"örneklerde, <literal>lo1</literal> geri döngü arayüzü yukarıda açıklandığı "
+"gibi kullanılır."
 
 #. (itstool) path: procedure/title
 #: book.translate.xml:29118
+#, fuzzy
 msgid "Create and Start a New Jail"
-msgstr ""
+msgstr "Yeni Bir Hapis Oluştur ve Başlat"
 
 #. (itstool) path: step/para
 #: book.translate.xml:29121
+#, fuzzy
 msgid ""
 "Create the jail, specifying a name and the loopback and network interfaces "
 "to use, along with their <acronym>IP</acronym> addresses. In this example, "
 "the jail is named <literal>dnsjail</literal>."
 msgstr ""
+"<acronym>IP</acronym> adresleriyle birlikte bir ad ve kullanılacak geri "
+"döngü ve ağ arayüzlerini belirterek hapsi oluşturun. Bu örnekte, hapis "
+"<literal>dnsjail</literal> olarak adlandırılmıştır."
 
 #. (itstool) path: step/screen
 #: book.translate.xml:29126
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>ezjail-admin create <replaceable>dnsjail</replaceable> '<replaceable>lo1|127.0.1.1</replaceable>,<replaceable>em0</replaceable>|<replaceable>192.168.1.50</replaceable>'</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>ezjail-admin create "
+"<replaceable>dnsjail</replaceable> '<replaceable>lo1|127.0.1.1</replaceable>,"
+"<replaceable>em0</replaceable>|<replaceable>192.168.1.50</replaceable>'</user"
+"input>"
 
 #. (itstool) path: tip/para
 #: book.translate.xml:29129
+#, fuzzy
 msgid ""
 "Most network services run in jails without problems. A few network services, "
 "most notably <citerefentry><refentrytitle>ping</refentrytitle><manvolnum>8</"
@@ -43194,9 +43300,15 @@ msgid ""
 "jails, raw network sockets are disabled by default for security. Services "
 "that require them will not work."
 msgstr ""
+"Çoğu ağ hizmeti sorunsuz bir şekilde hapislerde çalışır. Birkaç ağ hizmeti, "
+"özellikle ping<citerefentry><refentrytitle></refentrytitle><manvolnum>8</manv"
+"olnum></citerefentry>, <emphasis>ham ağ soketleri</emphasis> kullanır. "
+"Hapislerde, ham ağ soketleri güvenlik için varsayılan olarak devre dışıdır. "
+"Onları gerektiren hizmetler çalışmaz."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:29136
+#, fuzzy
 msgid ""
 "Occasionally, a jail genuinely needs raw sockets. For example, network "
 "monitoring applications often use <citerefentry><refentrytitle>ping</"
@@ -43207,64 +43319,90 @@ msgid ""
 "local/etc/ezjail/<replaceable>jailname</replaceable></filename>. Modify the "
 "<literal>parameters</literal> entry:"
 msgstr ""
+"Bazen bir hapsin gerçekten ham soketlere ihtiyacı vardır. Örneğin, ağ izleme "
+"uygulamaları genellikle diğer bilgisayarların kullanılabilirliğini kontrol "
+"etmek için <citerefentry><refentrytitle>ping</refentrytitle><manvolnum>8</man"
+"volnum></citerefentry> kullanır. Bir hapiste ham ağ soketlerine gerçekten "
+"ihtiyaç duyulduğunda tek hapis için <application>ezjail</application> "
+"yapılandırma dosyasını düzenlereyek etkinleştirilebilirler, <filename>/usr/ "
+"local/etc/ezjail/<replaceable>jailname</replaceable></filename>. Parametre "
+"girişini değiştirin:"
 
 #. (itstool) path: tip/programlisting
 #: book.translate.xml:29147
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "export jail_<replaceable>jailname</replaceable>_parameters=\"allow.raw_sockets=1\""
 msgstr ""
+"export jail_<replaceable>jailname</replaceable>_parameters=\""
+"allow.raw_sockets=1\""
 
 #. (itstool) path: tip/para
 #: book.translate.xml:29149
+#, fuzzy
 msgid ""
 "Do not enable raw network sockets unless services in the jail actually "
 "require them."
 msgstr ""
+"Hapisteki hizmetler gerçekten gerektirmedikçe ham ağ soketlerini "
+"etkinleştirmeyin."
 
 #. (itstool) path: step/para
 #: book.translate.xml:29155
+#, fuzzy
 msgid "Start the jail:"
-msgstr ""
+msgstr "Hapsi başlatın:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:29157
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>ezjail-admin start <replaceable>dnsjail</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>ezjail-admin start "
+"<replaceable>dnsjail</replaceable></userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:29161
+#, fuzzy
 msgid "Use a console on the jail:"
-msgstr ""
+msgstr "Hapiste bir konsol kullanın:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:29163
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>ezjail-admin console <replaceable>dnsjail</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>ezjail-admin console "
+"<replaceable>dnsjail</replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:29167
+#, fuzzy
 msgid ""
 "The jail is operating and additional configuration can be completed. Typical "
 "settings added at this point include:"
 msgstr ""
+"Hapis çalışıyor ve ek yapılandırma tamamlanabilir. Bu noktada eklenen tipik "
+"ayarlar şunları içerir:"
 
 #. (itstool) path: step/title
 #: book.translate.xml:29173
+#, fuzzy
 msgid "Set the <systemitem class=\"username\">root</systemitem> Password"
-msgstr ""
+msgstr "<systemitem class=\"username\">root</systemitem> Şifresini Belirleyin"
 
 #. (itstool) path: step/para
 #: book.translate.xml:29177
+#, fuzzy
 msgid ""
 "Connect to the jail and set the <systemitem class=\"username\">root</"
 "systemitem> user's password:"
 msgstr ""
+"Hapse bağlanın ve <systemitem class=\"username\">root</systemitem>(kök) "
+"kullanıcının şifresini belirleyin:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:29181
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>ezjail-admin console <replaceable>dnsjail</replaceable></userinput>\n"
 "<prompt>#</prompt> <userinput>passwd</userinput>\n"
@@ -43272,14 +43410,22 @@ msgid ""
 "New Password:\n"
 "Retype New Password:"
 msgstr ""
+"<prompt>#</prompt> <userinput>ezjail-admin console "
+"<replaceable>dnsjail</replaceable></userinput>\n"
+"<prompt>#</prompt> <userinput>passwd</userinput>\n"
+"Changing local password for root\n"
+"New Password:\n"
+"Retype New Password:"
 
 #. (itstool) path: step/title
 #: book.translate.xml:29189
+#, fuzzy
 msgid "Time Zone Configuration"
-msgstr ""
+msgstr "Saat Dilimi Yapılandırması"
 
 #. (itstool) path: step/para
 #: book.translate.xml:29191
+#, fuzzy
 msgid ""
 "The jail's time zone can be set with <citerefentry><refentrytitle>tzsetup</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>. To avoid spurious "
@@ -43289,54 +43435,77 @@ msgid ""
 "update the computer's hardware clock with time zone changes, but jails are "
 "not allowed to access that hardware."
 msgstr ""
+"Hapsin saat dilimi <citerefentry><refentrytitle>tzsetup</refentrytitle><manvo"
+"lnum>8</manvolnum></citerefentry> ile ayarlanabilir. Sahte hata "
+"mesajlarından kaçınmak için <filename>/etc/crontab</filename> içindeki <citer"
+"efentry><refentrytitle>adjkerntz</refentrytitle><manvolnum>8</manvolnum></cit"
+"erefentry> girişi yorumlanabilir veya kaldırılabilir. Bu iş, bilgisayarın "
+"donanım saatini, saat dilimi değişiklikleri ile güncellemeye çalışır ancak "
+"hapislerin bu donanıma erişmesine izin verilmez."
 
 #. (itstool) path: step/title
 #: book.translate.xml:29200
+#, fuzzy
 msgid "<acronym>DNS</acronym> Servers"
-msgstr ""
+msgstr "<acronym>DNS</acronym>Sunucuları"
 
 #. (itstool) path: step/para
 #: book.translate.xml:29202
+#, fuzzy
 msgid ""
 "Enter domain name server lines in <filename>/etc/resolv.conf</filename> so "
 "<acronym>DNS</acronym> works in the jail."
 msgstr ""
+"<acronym>DNS</acronym>'nin hapiste çalışması için <filename>/etc/"
+"resolv.conf</filename>'ta alan adı sunucu satırlarını girin."
 
 #. (itstool) path: step/title
 #: book.translate.xml:29208
+#, fuzzy
 msgid "Edit <filename>/etc/hosts</filename>"
-msgstr ""
+msgstr "<filename>/etc/hosts</filename>'u Düzenleyin"
 
 #. (itstool) path: step/para
 #: book.translate.xml:29210
+#, fuzzy
 msgid ""
 "Change the address and add the jail name to the <literal>localhost</literal> "
 "entries in <filename>/etc/hosts</filename>."
 msgstr ""
+"Adresi değiştirin ve <filename>/etc/hosts</filename> içindeki "
+"<literal>localhost</literal> girişlerine hapis adını ekleyin."
 
 #. (itstool) path: step/title
 #: book.translate.xml:29216
+#, fuzzy
 msgid "Configure <filename>/etc/rc.conf</filename>"
-msgstr ""
+msgstr "<filename>/etc/rc.conf</filename>'u Yapılandırın"
 
 #. (itstool) path: step/para
 #: book.translate.xml:29218
+#, fuzzy
 msgid ""
 "Enter configuration settings in <filename>/etc/rc.conf</filename>. This is "
 "much like configuring a full computer. The host name and <acronym>IP</"
 "acronym> address are not set here. Those values are already provided by the "
 "jail configuration."
 msgstr ""
+"<filename>/etc/rc.conf</filename>'a yapılandırma ayarlarını girin. Bu tam "
+"bir bilgisayarı yapılandırmaya benzer. Ana bilgisayar adı ve "
+"<acronym>IP</acronym> adresi burada ayarlanmamıştır. Bu değerler hapis "
+"yapılandırması tarafından zaten sağlanmıştır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:29227
+#, fuzzy
 msgid ""
 "With the jail configured, the applications for which the jail was created "
 "can be installed."
-msgstr ""
+msgstr "Hapis yapılandırılınca hapsin oluşturulduğu uygulamalar yüklenebilir."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:29231
+#, fuzzy
 msgid ""
 "Some ports must be built with special options to be used in a jail. For "
 "example, both of the network monitoring plugin packages <package role=\"port"
@@ -43344,16 +43513,24 @@ msgid ""
 "monitoring-plugins</package> have a <literal>JAIL</literal> option which "
 "must be enabled for them to work correctly inside a jail."
 msgstr ""
+"Bazı bağlantı noktaları bir hapiste kullanılacak özel seçeneklerle "
+"oluşturulmalıdır. Örneğin, <package role=\"port\">net-mgmt/nagios-"
+"plugins</package> ve <package role=\"port\">net-mgmt/monitoring-"
+"plugins</package> ağ izleme eklentisi paketlerinin her ikisinin de bir hapis "
+"içinde düzgün çalışması için etkinleştirilmesi gereken bir "
+"<literal>JAIL</literal> seçeneği vardır."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:29242
+#, fuzzy
 msgid "Updating Jails"
-msgstr ""
+msgstr "Hapisleri Güncelleme"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:29245
+#, fuzzy
 msgid "Updating the Operating System"
-msgstr ""
+msgstr "İşletim Sistemini Güncelleme"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:29247
