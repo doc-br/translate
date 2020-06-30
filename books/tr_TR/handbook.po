@@ -16,12 +16,13 @@
 # alirizaal <alirizaal@hotmail.com>, 2020.
 # sevvaltuysuz <tuysuzsevvalrumeysa@gmail.com>, 2020.
 # baransayan <baransayan@gmail.com>, 2020.
+# ElifAtalay94 <elifatalay94@icloud.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-07-01 12:55+0000\n"
-"Last-Translator: nurbanu  hasanoğlu <hasanoglunurbanu@gmail.com>\n"
+"Last-Translator: ElifAtalay94 <elifatalay94@icloud.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -6626,115 +6627,146 @@ msgstr ""
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:5737
+#, fuzzy
 msgid "FreeBSD Basics"
-msgstr ""
+msgstr "FreeBSD Temel Öğeler"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5742
+#, fuzzy
 msgid ""
 "This chapter covers the basic commands and functionality of the FreeBSD "
 "operating system. Much of this material is relevant for any <trademark class="
 "\"registered\">UNIX</trademark>-like operating system. New FreeBSD users are "
 "encouraged to read through this chapter carefully."
 msgstr ""
+"Bu bölüm, FreeBSD işletim sisteminin temel komutlarını ve işlevselliğini "
+"kapsar. Bu maddelerin çoğu <trademark class=\"registered\">UNIX</trademark>"
+"benzeri işletim sistemiyle ilgilidir. Yeni FreeBSD kullanıcılarının bu "
+"bölümü dikkatlice okuması önerilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5751
+#, fuzzy
 msgid "How to use and configure virtual consoles."
-msgstr ""
+msgstr "Sanal konsollar nasıl kullanılır ve yapılandırılır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5755
+#, fuzzy
 msgid "How to create and manage users and groups on FreeBSD."
-msgstr ""
+msgstr "FreeBSD'de kullanıcılar ve gruplar nasıl oluşturulur ve yönetilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5760
+#, fuzzy
 msgid ""
 "How <trademark class=\"registered\">UNIX</trademark> file permissions and "
 "FreeBSD file flags work."
 msgstr ""
+"<trademark class=\"registered\">UNIX </trademark>dosya izinleri ve FreeBSD "
+"dosya işaretleri nasıl çalışır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5765
+#, fuzzy
 msgid "The default FreeBSD file system layout."
-msgstr ""
+msgstr "Varsayılan FreeBSD dosya sistemi düzeni."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5769
+#, fuzzy
 msgid "The FreeBSD disk organization."
-msgstr ""
+msgstr "FreeBSD disk organizasyonu."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5773
+#, fuzzy
 msgid "How to mount and unmount file systems."
-msgstr ""
+msgstr "Dosya sistemleri nasıl takılır ve çıkarılır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5777
+#, fuzzy
 msgid "What processes, daemons, and signals are."
-msgstr ""
+msgstr "Süreçler, hayalet programlar ve sinyaller nelerdir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5781
+#, fuzzy
 msgid "What a shell is, and how to change the default login environment."
-msgstr ""
+msgstr "Kabuk nedir ve varsayılan giriş ortamı nasıl değiştirilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5786
+#, fuzzy
 msgid "How to use basic text editors."
-msgstr ""
+msgstr "Temel metin editörlerini kullanma."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5790
+#, fuzzy
 msgid "What devices and device nodes are."
-msgstr ""
+msgstr "Aygıtlar ve aygıt düğümleri nelerdir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5794
+#, fuzzy
 msgid "How to read manual pages for more information."
-msgstr ""
+msgstr "Daha fazla bilgi için manuel sayfalar nasıl okunur."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:5800
+#, fuzzy
 msgid "Virtual Consoles and Terminals"
-msgstr ""
+msgstr "Sanal Konsollar ve Bağlantılar"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:5802
+#, fuzzy
 msgid "<primary>virtual consoles</primary>"
-msgstr ""
+msgstr "<primary>sanal konsollar</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:5805 book.translate.xml:47871
+#, fuzzy
 msgid "<primary>terminals</primary>"
-msgstr ""
+msgstr "<primary>bağlantılar</primary>"
 
 #. (itstool) path: sect1/indexterm
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:5808 book.translate.xml:23509
+#, fuzzy
 msgid "<primary>console</primary>"
-msgstr ""
+msgstr "<primary>konsol</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5812
+#, fuzzy
 msgid ""
 "Unless FreeBSD has been configured to automatically start a graphical "
 "environment during startup, the system will boot into a command line login "
 "prompt, as seen in this example:"
 msgstr ""
+"FreeBSD, başlatma sırasında bir grafik ortamını otomatik olarak başlatacak "
+"şekilde yapılandırılmadığı sürece, sistem bu örnekte görüldüğü gibi bir "
+"komut satırı oturum açma istemine önyüklenir:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:5817
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "FreeBSD/amd64 (pc3.example.org) (ttyv0)\n"
 "\n"
 "login:"
 msgstr ""
+"FreeBSD/amd64 (pc3.example.org) (ttyv0)\n"
+"\n"
+"giriş:"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5821
+#, fuzzy
 msgid ""
 "The first line contains some information about the system. The "
 "<literal>amd64</literal> indicates that the system in this example is "
@@ -6742,9 +6774,16 @@ msgid ""
 "org</systemitem>, and <filename>ttyv0</filename> indicates that this is the "
 "<quote>system console</quote>. The second line is the login prompt."
 msgstr ""
+"İlk satır sistem hakkında bazı bilgiler içerir. Bu örnekteki sistemin "
+"<literal>amd64</literal>FreeBSD'nin 64 bit sürümünü çalıştırdığını belirtir. "
+"Ana makine "
+"adı<systemitem>pc.3.example.org</systemitem>ve<filename>ttyv0</filename>"
+"sistem konsolu <quote>olduğunu belirtir</quote>. İkinci satır giriş "
+"sistemidir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5829
+#, fuzzy
 msgid ""
 "Since FreeBSD is a multiuser system, it needs some way to distinguish "
 "between different users. This is accomplished by requiring every user to log "
@@ -6752,9 +6791,15 @@ msgid ""
 "user has a unique name <quote>username</quote> and a personal "
 "<quote>password</quote>."
 msgstr ""
+"FreeBSD çok kullanıcılı bir sistem olduğundan, farklı kullanıcıları ayırt "
+"etmek için bir yol gerekir. Bu, her kullanıcının sistemdeki programlara "
+"erişmeden önce sistemde oturum açmasını zorunlu kılarak gerçekleştirilir.  "
+"Her kullanıcının <quote>benzersiz <quote>kullanıcı adı </quote> ve kişisel "
+"şifresi vardır</quote>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5836
+#, fuzzy
 msgid ""
 "To log into the system console, type the username that was configured during "
 "system installation, as described in <xref linkend=\"bsdinstall-addusers\"/"
@@ -6762,9 +6807,15 @@ msgid ""
 "the username and press <keycap>Enter</keycap>. The password is <emphasis>not "
 "echoed</emphasis> for security reasons."
 msgstr ""
+"Sistem konsolunda oturum açmak için sistem kurulumu sırasında tanımlandığı <"
+"xref linkend=\"bsdinstall-addusers\"/>gibi yapılandırılmış olan kullanıcı "
+"adını <keycap>yazın</keycap>. Ardından kullanıcı adıyla ilişkili şifreyi "
+"girin ve </keycap>girişe basın<keycap>. Şifre <emphasis> güvenlik "
+"nedenleriyle tekrar</emphasis> edilmemiştir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5844
+#, fuzzy
 msgid ""
 "Once the correct password is input, the message of the day (<acronym>MOTD</"
 "acronym>) will be displayed followed by a command prompt. Depending upon the "
@@ -6773,14 +6824,23 @@ msgid ""
 "character. The prompt indicates that the user is now logged into the FreeBSD "
 "system console and ready to try the available commands."
 msgstr ""
+"Doğru şifre girildikten sonra, günün mesajı (<acronym>MOTD</acronym>) ve "
+"ardından bir komut istemi görüntülenecektir. Kullanıcı oluşturulurken "
+"seçilen kabuğa bağlı olarak, bu bilgi istemi bir "
+"<literal>#</literal>,<literal>$</literal>, ya da <literal>%</literal>"
+"karakter olacaktır. Komut istemi, kullanıcının artık FreeBSD sistem "
+"konsolunda oturum açtığını ve kullanılabilir komutları denemeye hazır "
+"olduğunu gösterir."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:5854
+#, fuzzy
 msgid "Virtual Consoles"
-msgstr ""
+msgstr "Sanal Konsollar"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5856
+#, fuzzy
 msgid ""
 "While the system console can be used to interact with the system, a user "
 "working from the command line at the keyboard of a FreeBSD system will "
@@ -6789,9 +6849,16 @@ msgid ""
 "messages will appear over the command or file that the user is working on, "
 "making it difficult to concentrate on the work at hand."
 msgstr ""
+"Sistem konsolu sistemle etkileşim kurmak için kullanılabilirken, FreeBSD "
+"sisteminin klavyesindeki komut satırından çalışan bir kullanıcı genellikle "
+"sanal bir konsola oturum açacaktır. Bunun nedeni, sistem mesajlarının "
+"varsayılan olarak sistem konsolunda görüntülenecek şekilde yapılandırılmış "
+"olmasıdır. Bu mesajlar kullanıcının üzerinde çalıştığı komut veya dosya "
+"üzerinde görünerek eldeki işe konsantre olmayı zorlaştıracaktır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5865
+#, fuzzy
 msgid ""
 "By default, FreeBSD is configured to provide several virtual consoles for "
 "inputting commands. Each virtual console has its own login prompt and shell "
@@ -6799,9 +6866,15 @@ msgid ""
 "the command line equivalent of having several windows open at the same time "
 "in a graphical environment."
 msgstr ""
+"Varsayılan olarak, FreeBSD komutları girmek için birkaç sanal konsol "
+"sağlayacak şekilde yapılandırılmıştır. Her sanal konsolun kendi oturum açma "
+"istemi ve kabuğu vardır ve sanal konsollar arasında geçiş yapmak kolaydır. "
+"Bu aslında bir grafik ortamında aynı anda birden fazla pencerenin açık "
+"olduğu komut satırı eşdeğerini sağlar."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5872
+#, fuzzy
 msgid ""
 "The key combinations <keycombo><keycap>Alt</keycap><keycap>F1</keycap></"
 "keycombo> through <keycombo><keycap>Alt</keycap><keycap>F8</keycap></"
@@ -6816,9 +6889,20 @@ msgid ""
 "<keycap>Ctrl</keycap><keycap>Alt</keycap><keycap>F1</keycap> </keycombo> to "
 "return to a text-based virtual console."
 msgstr ""
+"Alt</keycap><keycap>F1 ile Alt</keycap><keycap> F8</keycap></keycombo> "
+"arasındaki tuş kombinasyonları<keycombo><keycap>, FreeBSD tarafından sanal "
+"konsollar arasında geçiş yapmak için ayrılmıştır. Sistem <keycombo>konsoluna "
+"geçmek için <keycap>Alt</keycap><keycap> F1'i</keycap></keycombo>, ikinci "
+"sanal konsola (<filename>ttyv0</filename>),<keycombo>erişmek için ilk sanal "
+"konsola <keycap>Alt</keycap><keycap> F3'e</keycap></keycombo> erişmek "
+"için<filename></filename> Alt F2'yi kullanın. Grafik konsolu olarak "
+"kullanıldığında<application>Xorg</application>, "
+"Alt</keycap><keycap>F1</keycap></keycombo> kombinasyon metin tabanlı bir "
+"sanal konsola dönmeye <keycombo><keycap>Ctrl</keycap><keycap>başlar."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5892
+#, fuzzy
 msgid ""
 "When switching from one console to the next, FreeBSD manages the screen "
 "output. The result is an illusion of having multiple virtual screens and "
@@ -6826,9 +6910,15 @@ msgid ""
 "that are launched in one virtual console do not stop running when the user "
 "switches to a different virtual console."
 msgstr ""
+"Bir konsoldan diğerine geçerken, FreeBSD ekran çıktısını yönetir. Sonuç, "
+"FreeBSD'nin çalışması için komut yazmak için kullanılabilecek birden fazla "
+"sanal ekran ve klavyeye sahip olmanın yanılsamasıdır. Bir sanal konsolda "
+"başlatılan programlar, kullanıcı farklı bir sanal konsola geçtiğinde "
+"çalışmayı durdurmaz."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5899
+#, fuzzy
 msgid ""
 "Refer to <citerefentry><refentrytitle>kbdcontrol</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>, "
@@ -6840,17 +6930,28 @@ msgid ""
 "refentrytitle><manvolnum>4</manvolnum></citerefentry> for a more technical "
 "description of the FreeBSD console and its keyboard drivers."
 msgstr ""
+"FreeBSD konsolunun ve klavye kullanıcılarının daha teknik bir tanımlama için "
+"<citerefentry><refentrytitle>kbdcontrol</refentrytitle><manvolnum>1</manvolnu"
+"m></citerefentry>, <citerefentry><refentrytitle>vidcontrol</refentrytitle><ma"
+"nvolnum>1</manvolnum></citerefentry>, <citerefentry><refentrytitle>atkbd</ref"
+"entrytitle><manvolnum>4</manvolnum></citerefentry>, <citerefentry><refentryti"
+"tle>syscons</refentrytitle><manvolnum>4</manvolnum></citerefentry>, and <cite"
+"refentry><refentrytitle>vt</refentrytitle><manvolnum>4</manvolnum></citerefen"
+"try> tercih edilir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5904
+#, fuzzy
 msgid ""
 "In FreeBSD, the number of available virtual consoles is configured in this "
 "section of <filename>/etc/ttys</filename>:"
 msgstr ""
+"FreeBSD'de, kullanılabilir sanal konsolların sayısı bu bölümde "
+"yapılandırılmıştır <filename>/etc/ttys</filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:5908
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "# name    getty                         type  status comments\n"
 "#\n"
@@ -6865,9 +6966,22 @@ msgid ""
 "ttyv7   \"/usr/libexec/getty Pc\"         xterm   on  secure\n"
 "ttyv8   \"/usr/X11R6/bin/xdm -nodaemon\"  xterm   off secure"
 msgstr ""
+"# name    getty                         durum çeşidi yorumları\n"
+"#\n"
+"ttyv0   \"/usr/libexec/getty Pc\"         xterm   güvenlik açık\n"
+"# Virtual terminals\n"
+"ttyv1   \"/usr/libexec/getty Pc\"         xterm   güvenlik açık\n"
+"ttyv2   \"/usr/libexec/getty Pc\"         xterm   güvenlik açık\n"
+"ttyv3   \"/usr/libexec/getty Pc\"         xterm   güvenlik açık\n"
+"ttyv4   \"/usr/libexec/getty Pc\"         xterm   güvenlik açık\n"
+"ttyv5   \"/usr/libexec/getty Pc\"         xterm   güvenlik açık\n"
+"ttyv6   \"/usr/libexec/getty Pc\"         xterm  güvenlik açık\n"
+"ttyv7   \"/usr/libexec/getty Pc\"         xterm   güvenlik açık\n"
+"ttyv8   \"/usr/X11R6/bin/xdm -nodaemon\"  xterm   güvenlik kapalı"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5922
+#, fuzzy
 msgid ""
 "To disable a virtual console, put a comment symbol (<literal>#</literal>) at "
 "the beginning of the line representing that virtual console. For example, to "
@@ -6880,23 +6994,38 @@ msgid ""
 "<application>Xorg</application> has been installed and configured as "
 "described in <xref linkend=\"x11\"/>."
 msgstr ""
+"Sanal bir konsolu devre dışı bırakmak için, sanal konsolu temsil eden "
+"satırın başına bir yorum sembolü <literal>#</literal>koyun. Örneğin, "
+"kullanılabilir sanal konsol sayısını sekizden dörde indirmek için, sanal "
+"konsolları temsil<filename>ttyv5</filename> eden son dört satırın önüne "
+"koyun <filename>ttyv8</filename>.<emphasis>Sistem konsolu</emphasis> "
+"satırına yorum yapmayın<filename>ttyv0</filename>. Son sanal konsolun <xref "
+"linkend=\"x11\"/> de açıklandığı gibi kurulmuş (<filename>ttyv8</filename>)"
+"ve yapılandırılmışsa grafik ortamına erişmek için "
+"<application>Xorg</application> kullanıldığını unutmayın."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5936
+#, fuzzy
 msgid ""
 "For a detailed description of every column in this file and the available "
 "options for the virtual consoles, refer to "
 "<citerefentry><refentrytitle>ttys</refentrytitle><manvolnum>5</manvolnum></"
 "citerefentry>."
 msgstr ""
+"Bu dosyadaki her sütunun ayrıntılı açıklaması ve sanal konsollar için "
+"kullanılabilir seçenekler için <citerefentry><refentrytitle>ttys</refentrytit"
+"le><manvolnum>5</manvolnum></citerefentry>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:5942
+#, fuzzy
 msgid "Single User Mode"
-msgstr ""
+msgstr "Tek Kullanıcı Modu"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5944
+#, fuzzy
 msgid ""
 "The FreeBSD boot menu provides an option labelled as <quote>Boot Single "
 "User</quote>. If this option is selected, the system will boot into a "
@@ -6911,17 +7040,32 @@ msgid ""
 "mode and determining who has physical access to the keyboard is something to "
 "consider when securing a FreeBSD system."
 msgstr ""
+"FreeBSD önyükleme menüsü </quote> Tek Kullanıcı Önyükleme <quote> olarak "
+"etiketlenmiş bir seçenek sunar. Bu seçenek belirlenirse, sistem <quote> tek "
+"kullanıcı modu </quote> olarak bilinen özel bir moda önyükleme yapar. Bu mod "
+"genellikle, önyükleme yapmayacak bir sistemi onarmak veya bilinmediğinde <"
+"systemitem class=\"username\">kök</systemitem> parolasını sıfırlamak için "
+"kullanılır. Tek kullanıcı modundayken, ağ iletişimi ve diğer sanal konsollar "
+"kullanılamaz. Ancak, sisteme tam <systemitem class=\"username\""
+">kök</systemitem> erişimi mevcuttur ve varsayılan olarak <systemitem class=\""
+"username\">kök</systemitem>şifresi gerekmez. Bu nedenlerden dolayı, bu moda "
+"önyükleme yapmak için klavyeye fiziksel erişim gerekir ve klavyeye fiziksel "
+"erişimi olanların belirlenmesi, FreeBSD sistemini güvence altına alırken "
+"dikkate alınması gereken bir şeydir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5960
+#, fuzzy
 msgid ""
 "The settings which control single user mode are found in this section of "
 "<filename>/etc/ttys</filename>:"
 msgstr ""
+"Tek kullanıcı modunu kontrol eden ayarlar <filename>/etc/ttys</filename> "
+"'nin bu bölümünde bulunur:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:5963
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "# name  getty                           type  status  comments\n"
 "#\n"
@@ -6929,9 +7073,16 @@ msgid ""
 "# when going to single-user mode.\n"
 "console none                            unknown  off  secure"
 msgstr ""
+"# name  getty                           type  status  comments\n"
+"#\n"
+"# Konsol \"güvensiz\" olarak işaretlenmişse, başlama kök parolasını "
+"soracaktır\n"
+"# tek kullanıcı moduna geçerken.\n"
+"konsol yok bilinmeyen güvenli değil"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5969
+#, fuzzy
 msgid ""
 "By default, the status is set to <literal>secure</literal>. This assumes "
 "that who has physical access to the keyboard is either not important or it "
@@ -6942,9 +7093,18 @@ msgid ""
 "<systemitem class=\"username\">root</systemitem> password when a user "
 "selects to boot into single user mode."
 msgstr ""
+"Varsayılan olarak, durum <literal> güvenli </literal> olarak ayarlanmıştır. "
+"Bu, klavye fiziksel erişimi olanların önemli olmadığını veya bir fiziksel "
+"güvenlik politikası tarafından kontrol edildiğini varsayar. Bu ayar <literal>"
+" güvensiz </literal>olarak değiştirilirse, ortamın kendisinin güvensiz "
+"olduğu varsayılır, çünkü herkes klavyeye erişebilir.  Bu satır <literal> "
+"güvensiz </literal>olarak değiştirildiğinde, kullanıcı tek kullanıcı moduna "
+"önyüklemeyi seçtiğinde FreeBSD <systemitem class=\"username\"> kök "
+"</systemitem> şifresini sorar."
 
 #. (itstool) path: note/para
 #: book.translate.xml:5981
+#, fuzzy
 msgid ""
 "<emphasis>Be careful when changing this setting to <literal>insecure</"
 "literal></emphasis>! If the <systemitem class=\"username\">root</systemitem> "
@@ -6952,43 +7112,60 @@ msgid ""
 "may be difficult for someone who is not familiar with the FreeBSD booting "
 "process."
 msgstr ""
+"<emphasis>Bu ayarı <literal>güvensiz</literal></emphasis> olarak "
+"değiştirirken dikkatli olun! Eğer <systemitem class=\"username\""
+">kök</systemitem> şifresi unutulursa, tek kullanıcı moduna önyükleme yine de "
+"mümkündür, ancak FreeBSD önyükleme işlemine aşina olmayan biri için zor "
+"olabilir."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:5991
+#, fuzzy
 msgid "Changing Console Video Modes"
-msgstr ""
+msgstr "Konsol Video Modları Değiştirme"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5993
+#, fuzzy
 msgid ""
 "The FreeBSD console default video mode may be adjusted to 1024x768, "
 "1280x1024, or any other size supported by the graphics chip and monitor. To "
 "use a different video mode load the <literal>VESA</literal> module:"
 msgstr ""
+"FreeBSD konsolu varsayılan video modu 1024x768, 1280x1024 veya grafik "
+"yongası ve monitör tarafından desteklenen herhangi bir boyuta ayarlanabilir. "
+"Farklı bir video modu kullanmak için <literal>VESA</literal> modülünü "
+"yükleyin:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:5998
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>kldload vesa</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>kldload vesa</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6000
+#, fuzzy
 msgid ""
 "To determine which video modes are supported by the hardware, use "
 "<citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>. To get a list of supported video modes issue the "
 "following:"
 msgstr ""
+"Donanım tarafından hangi video modlarının desteklendiğini belirlemek için <ci"
+"terefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</manvolnum><"
+"/citerefentry> kullanın. Desteklenen video modlarının bir listesini almak "
+"için aşağıdakileri sorun:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:6004
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>vidcontrol -i mode</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>vidcontrol -i mod</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6006
+#, fuzzy
 msgid ""
 "The output of this command lists the video modes that are supported by the "
 "hardware. To select a new video mode, specify the mode using "
@@ -6996,120 +7173,162 @@ msgid ""
 "manvolnum></citerefentry> as the <systemitem class=\"username\">root</"
 "systemitem> user:"
 msgstr ""
+"Bu komutun çıkışı, donanım tarafından desteklenen video modlarını listeler. "
+"Yeni bir video modu seçmek için, <systemitem class=\"username\"> kök "
+"</systemitem> kullanıcısı olarak <citerefentry><refentrytitle>vidcontrol</ref"
+"entrytitle><manvolnum>1</manvolnum></citerefentry> kullanarak modu belirtin :"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:6011
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>vidcontrol MODE_279</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>vidcontrol MOD_279</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6013
+#, fuzzy
 msgid ""
 "If the new video mode is acceptable, it can be permanently set on boot by "
 "adding it to <filename>/etc/rc.conf</filename>:"
 msgstr ""
+"Yeni video modu kabul edilebilirse, önyüklemede <filename>/etc/"
+"rc.conf</filename> klasörüne eklenerek kalıcı olarak ayarlanabilir:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:6017
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "allscreens_flags=\"MODE_279\""
-msgstr ""
+msgstr "allscreens_flags=\"MOD_279\""
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:6034
+#, fuzzy
 msgid "Users and Basic Account Management"
-msgstr ""
+msgstr "Kullanıcılar ve Temel Hesap Yönetimi"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6036
+#, fuzzy
 msgid ""
 "FreeBSD allows multiple users to use the computer at the same time. While "
 "only one user can sit in front of the screen and use the keyboard at any one "
 "time, any number of users can log in to the system through the network. To "
 "use the system, each user should have their own user account."
 msgstr ""
+"FreeBSD, birden çok kullanıcının bilgisayarı aynı anda kullanmasına izin "
+"verir. Ekranın önünde yalnızca bir kullanıcı oturabilir ve klavyeyi herhangi "
+"bir anda kullanabilirken, herhangi bir sayıda kullanıcı ağ üzerinden sisteme "
+"giriş yapabilir. Sistemi kullanmak için her kullanıcının kendi kullanıcı "
+"hesabı olmalıdır."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6042
+#, fuzzy
 msgid "This chapter describes:"
-msgstr ""
+msgstr "Bu bölüm tanımlamaktadır:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6046
+#, fuzzy
 msgid "The different types of user accounts on a FreeBSD system."
-msgstr ""
+msgstr "FreeBSD sistemindeki farklı kullanıcıların hesabı türleri."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6051
+#, fuzzy
 msgid "How to add, remove, and modify user accounts."
-msgstr ""
+msgstr "Kullanıcı hesapları nasıl eklenir, kaldırılır ve değiştirilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6055
+#, fuzzy
 msgid ""
 "How to set limits to control the resources that users and groups are allowed "
 "to access."
 msgstr ""
+"Kullanıcıların ve grupların erişmesine izin verilen kaynakları denetlemek "
+"için sınırlar nasıl ayarlanır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6061
+#, fuzzy
 msgid "How to create groups and add users as members of a group."
-msgstr ""
+msgstr "Grup oluşturma ve kullanıcıları bir grubun üyesi olarak ekleme."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:6067
+#, fuzzy
 msgid "Account Types"
-msgstr ""
+msgstr "Hesap Çeşitleri"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6069
+#, fuzzy
 msgid ""
 "Since all access to the FreeBSD system is achieved using accounts and all "
 "processes are run by users, user and account management is important."
 msgstr ""
+"FreeBSD sistemine tüm erişim hesaplar kullanılarak sağlandığından ve tüm "
+"işlemler kullanıcılar tarafından yürütüldüğünden, kullanıcı ve hesap "
+"yönetimi önemlidir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6073
+#, fuzzy
 msgid ""
 "There are three main types of accounts: system accounts, user accounts, and "
 "the superuser account."
 msgstr ""
+"Üç ana hesap türü vardır: sistem hesapları, kullanıcı hesapları ve "
+"ayrıcalıklı kullanıcı hesabı."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6077
+#, fuzzy
 msgid "System Accounts"
-msgstr ""
+msgstr "Sistem Hesapları"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6079
+#, fuzzy
 msgid "<primary>accounts</primary> <secondary>system</secondary>"
-msgstr ""
+msgstr "<primary>hesaplar</primary><secondary>sistem</secondary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6084
+#, fuzzy
 msgid ""
 "System accounts are used to run services such as DNS, mail, and web servers. "
 "The reason for this is security; if all services ran as the superuser, they "
 "could act without restriction."
 msgstr ""
+"Sistem hesapları, DNS, mail ve web sunucuları gibi hizmetleri çalıştırmak "
+"için kullanılır. Bunun nedeni güvenliktir; tüm hizmetler süper kullanıcı "
+"olarak çalıştırıldıysa kısıtlama olmadan hareket edebilirler."
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6089
+#, fuzzy
 msgid ""
 "<primary>accounts</primary> <secondary><systemitem class=\"username"
 "\">daemon</systemitem></secondary>"
 msgstr ""
+"<primary>hesaplar</primary><secondary><systemitem class=\"username\">hayalet "
+"program</systemitem></secondary>"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6093
+#, fuzzy
 msgid ""
 "<primary>accounts</primary> <secondary><systemitem class=\"username"
 "\">operator</systemitem></secondary>"
 msgstr ""
+"<primary>hesaplar</primary><secondary><systemitem class=\"username\""
+">operatör</systemitem></secondary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6098
+#, fuzzy
 msgid ""
 "Examples of system accounts are <systemitem class=\"username\">daemon</"
 "systemitem>, <systemitem class=\"username\">operator</systemitem>, "
@@ -7117,25 +7336,39 @@ msgid ""
 "\"username\">news</systemitem>, and <systemitem class=\"username\">www</"
 "systemitem>."
 msgstr ""
+"Sistem hesapları örnekleri <systemitem class=\"username\">arka plan "
+"programı</systemitem>,<systemitem class=\"username\">operatör</systemitem>,<"
+"systemitem class=\"username\">bağlamak</systemitem>,<systemitem class=\""
+"username\">yeniler</systemitem>, ve<systemitem class=\"username\""
+">www</systemitem>."
 
 #. (itstool) path: warning/para
 #: book.translate.xml:6106
+#, fuzzy
 msgid ""
 "Care must be taken when using the operator group, as unintended superuser-"
 "like access privileges may be granted, including but not limited to "
 "shutdown, reboot, and access to all items in <filename>/dev</filename> in "
 "the group."
 msgstr ""
+"Operatör grubu kullanılırken dikkatli olunmalıdır, zira gruptaki "
+"<filename>dev</filename> içindeki tüm öğelere kapatma, yeniden başlatma ve "
+"bunlarla sınırlı olmamak kaydıyla istenmeyen süper kullanıcı benzeri erişim "
+"ayrıcalıkları verilebilir."
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6113
+#, fuzzy
 msgid ""
 "<primary>accounts</primary> <secondary><systemitem class=\"username"
 "\">nobody</systemitem></secondary>"
 msgstr ""
+"<primary>hesaplar</primary><secondary><systemitem class=\"username\">hiç "
+"kimse</systemitem></secondary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6118
+#, fuzzy
 msgid ""
 "<systemitem class=\"username\">nobody</systemitem> is the generic "
 "unprivileged system account. However, the more services that use <systemitem "
@@ -7143,48 +7376,68 @@ msgid ""
 "user will become associated with, and hence the more privileged that user "
 "becomes."
 msgstr ""
+"<systemitem class=\"username\">hiç kimse</systemitem> kapsamlı ayrıcalıksız "
+"sistem hesabı değildir. Ancak, <systemitem class=\"username\"> hiç kimse "
+"</systemitem> daha fazla hizmet kullanan, kullanıcının ilişkilendireceği "
+"dosya ve işlemler ve dolayısıyla kullanıcı daha ayrıcalıklı olacaktır."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6127
+#, fuzzy
 msgid "User Accounts"
-msgstr ""
+msgstr "Kullanıcı Hesapları"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6129
+#, fuzzy
 msgid "<primary>accounts</primary> <secondary>user</secondary>"
-msgstr ""
+msgstr "<primary>hesaplar</primary><secondary>kullanıcı</secondary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6134
+#, fuzzy
 msgid ""
 "User accounts are assigned to real people and are used to log in and use the "
 "system. Every person accessing the system should have a unique user account. "
 "This allows the administrator to find out who is doing what and prevents "
 "users from clobbering the settings of other users."
 msgstr ""
+"Kullanıcı hesapları gerçek kişilere atanır ve sisteme giriş yapmak ve "
+"sistemi kullanmak için kullanılır. Sisteme erişen herkesin benzersiz bir "
+"kullanıcı hesabı olmalıdır. Bu, yöneticinin kimin ne yaptığını öğrenmesini "
+"sağlar ve kullanıcıların diğer kullanıcıların ayarlarını engellemesini önler."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6140
+#, fuzzy
 msgid ""
 "Each user can set up their own environment to accommodate their use of the "
 "system, by configuring their default shell, editor, key bindings, and "
 "language settings."
 msgstr ""
+"Her kullanıcı, varsayılan kabuk, düzenleyici, anahtar bağlamaları ve dil "
+"ayarlarını yapılandırarak sistemi kullanımlarına uygun kendi ortamlarını "
+"ayarlayabilir."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6145
+#, fuzzy
 msgid ""
 "Every user account on a FreeBSD system has certain information associated "
 "with it:"
 msgstr ""
+"FreeBSD sistemindeki her kullanıcı hesabının kendisiyle ilişkili belirli "
+"bilgileri vardır:"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:6150
+#, fuzzy
 msgid "User name"
-msgstr ""
+msgstr "Kullanıcı adı"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6153
+#, fuzzy
 msgid ""
 "The user name is typed at the <prompt>login:</prompt> prompt. Each user must "
 "have a unique user name. There are a number of rules for creating valid user "
@@ -7193,24 +7446,34 @@ msgid ""
 "use user names that consist of eight or fewer, all lower case characters in "
 "order to maintain backwards compatibility with applications."
 msgstr ""
+"Kullanıcı adı <prompt>giriş:</prompt>istemciye yazılır. Her kullanıcının "
+"benzersiz kullanıcı adı olmalıdır. Geçerli kullanıcı adları oluşturmak için <"
+"citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>5</manvolnum></c"
+"iterefentry> 'de belgelenen bir dizi kural vardır. Uygulamalarla geriye "
+"dönük uyumluluğu sağlamak için sekiz veya daha az karakterden oluşan, tümü "
+"küçük harflerden oluşan kullanıcı adlarının kullanılması önerilir."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:6165
+#, fuzzy
 msgid "Password"
-msgstr ""
+msgstr "Şifre"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6168
+#, fuzzy
 msgid "Each account has an associated password."
-msgstr ""
+msgstr "Her hesabın ilişkili bir şifresi vardır."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:6173
+#, fuzzy
 msgid "User ID (<acronym>UID</acronym>)"
-msgstr ""
+msgstr "Kullanıcı kimliği (<acronym>UID</acronym>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6176
+#, fuzzy
 msgid ""
 "The User ID (<acronym>UID</acronym>) is a number used to uniquely identify "
 "the user to the FreeBSD system. Commands that allow a user name to be "
@@ -7218,14 +7481,21 @@ msgid ""
 "recommended to use a UID less than 65535, since higher values may cause "
 "compatibility issues with some software."
 msgstr ""
+"Kullanıcı Kimliği (<acronym>UID</acronym>) kullanıcıyı FreeBSD sistemine "
+"benzersiz olarak tanımlamak için kullanılan bir sayıdır. Bir kullanıcı "
+"adının belirtilmesine izin veren komutlar önce <acronym>UID</acronym> 'a "
+"dönüştürür. 65535'ten daha düşük bir UID kullanılması önerilir, çünkü daha "
+"yüksek değerler bazı yazılımlarla uyumluluk sorunlarına neden olabilir."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:6187
+#, fuzzy
 msgid "Group ID (<acronym>GID</acronym>)"
-msgstr ""
+msgstr "Grup Kimliği (<acronym>GID</acronym>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6190
+#, fuzzy
 msgid ""
 "The Group ID (<acronym>GID</acronym>) is a number used to uniquely identify "
 "the primary group that the user belongs to. Groups are a mechanism for "
@@ -7235,40 +7505,60 @@ msgid ""
 "one group. It is recommended to use a GID of 65535 or lower as higher GIDs "
 "may break some software."
 msgstr ""
+"Grup Kimliği (<acronym>GID</acronym>), kullanıcının ait olduğu birincil "
+"grubu benzersiz bir şekilde tanımlamak için kullanılan bir sayıdır. Gruplar, "
+"kaynaklara erişimi <acronym>UID</acronym>yerine <acronym> GID </acronym> 'a "
+"göre kontrol etmek için bir mekanizmadır. Bu, bazı yapılandırma dosyalarının "
+"boyutunu önemli ölçüde azaltabilir ve kullanıcıların birden fazla grubun "
+"üyesi olmalarını sağlar. Daha yüksek GID'ler bazı yazılımları "
+"kırabileceğinden 65535 veya daha düşük bir GID kullanılması önerilir."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:6204
+#, fuzzy
 msgid "Login class"
-msgstr ""
+msgstr "Giriş Sınıfı"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6207
+#, fuzzy
 msgid ""
 "Login classes are an extension to the group mechanism that provide "
 "additional flexibility when tailoring the system to different users. Login "
 "classes are discussed further in <xref linkend=\"users-limiting\"/>."
 msgstr ""
+"Giriş sınıfları, sistemi farklı kullanıcılara uyarlarken ek esneklik "
+"sağlayan grup mekanizmasının bir uzantısıdır. Giriş sınıfları <xref linkend"
+"=\"users-limiting\"/> bölümünde daha ayrıntılı olarak ele alınmaktadır."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:6216
+#, fuzzy
 msgid "Password change time"
-msgstr ""
+msgstr "Şifre değiştirme süresi"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6219
+#, fuzzy
 msgid ""
 "By default, passwords do not expire. However, password expiration can be "
 "enabled on a per-user basis, forcing some or all users to change their "
 "passwords after a certain amount of time has elapsed."
 msgstr ""
+"Varsayılan olarak, parolaların süresi dolmaz. Ancak, parola kullanım süresi "
+"her kullanıcı için ayrı ayrı etkinleştirilebilir; bu, bazı veya tüm "
+"kullanıcıları belirli bir süre geçtikten sonra şifrelerini değiştirmeye "
+"zorlar."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:6228
+#, fuzzy
 msgid "Account expiration time"
-msgstr ""
+msgstr "Hesabın kullanım süresi"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6231
+#, fuzzy
 msgid ""
 "By default, FreeBSD does not expire accounts. When creating accounts that "
 "need a limited lifespan, such as student accounts in a school, specify the "
@@ -7277,28 +7567,41 @@ msgid ""
 "has elapsed, the account cannot be used to log in to the system, although "
 "the account's directories and files will remain."
 msgstr ""
+"Varsayılan olarak, FreeBSD'nin hesaplarının süresi dolmaz. Okuldaki öğrenci "
+"hesapları gibi sınırlı bir ömrü olan hesaplar oluştururken kullanarak "
+"hesabın son kullanma tarihini belirtin<citerefentry><refentrytitle>pw</refent"
+"rytitle><manvolnum>8</manvolnum></citerefentry>. Son kullanma süresi "
+"geçtikten sonra, hesabın dizinleri ve dosyaları kalacak olsa da hesap "
+"sisteme giriş yapmak için kullanılamaz."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:6242
+#, fuzzy
 msgid "User's full name"
-msgstr ""
+msgstr "Kullanıcının tam adı"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6245
+#, fuzzy
 msgid ""
 "The user name uniquely identifies the account to FreeBSD, but does not "
 "necessarily reflect the user's real name. Similar to a comment, this "
 "information can contain spaces, uppercase characters, and be more than 8 "
 "characters long."
 msgstr ""
+"Kullanıcı adı, hesabı FreeBSD olarak benzersiz bir şekilde tanımlar, ancak "
+"kullanıcının gerçek adını yansıtması gerekmez. Bir yoruma benzer şekilde, bu "
+"bilgiler boşluk, büyük harf ve 8 karakterden uzun olabilir."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:6254
+#, fuzzy
 msgid "Home directory"
-msgstr ""
+msgstr "Ana dizin"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6257
+#, fuzzy
 msgid ""
 "The home directory is the full path to a directory on the system. This is "
 "the user's starting directory when the user logs in. A common convention is "
@@ -7307,41 +7610,62 @@ msgid ""
 "username</replaceable></filename>. Each user stores their personal files and "
 "subdirectories in their own home directory."
 msgstr ""
+"Giriş dizini, sistemdeki bir dizinin tam yoludur. Bu, kullanıcı oturum "
+"açtığında kullanıcının başlangıç dizinidir. Genel bir kural, tüm kullanıcı "
+"ana sayfa dizinlerini <filename><replaceable>/ana/kullanıcı "
+"adı</replaceable></filename> veya <filename><replaceable>/usr/ana/kullanıcı "
+"adı</replaceable></filename> altına koymaktır. Her kullanıcı kişisel "
+"dosyalarını ve alt dizinlerini kendi giriş dizininde saklar."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:6268
+#, fuzzy
 msgid "User shell"
-msgstr ""
+msgstr "Kullanıcı kabuğu"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6271
+#, fuzzy
 msgid ""
 "The shell provides the user's default environment for interacting with the "
 "system. There are many different kinds of shells and experienced users will "
 "have their own preferences, which can be reflected in their account settings."
 msgstr ""
+"Kabuk, kullanıcının sistemle etkileşim için varsayılan ortamını sağlar. "
+"Birçok farklı kabuk türü vardır ve deneyimli kullanıcılar kendi hesap "
+"ayarlarına yansıtılabilecek kendi tercihlerine sahip olacaktır."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6282
+#, fuzzy
 msgid "The Superuser Account"
-msgstr ""
+msgstr "Yetkili kullanıcı Hesabı"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6284
+#, fuzzy
 msgid "<primary>accounts</primary> <secondary>superuser (root)</secondary>"
 msgstr ""
+"<primary>hesaplar</primary><secondary>yetkili kullanıcı (kök)</secondary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6289
+#, fuzzy
 msgid ""
 "The superuser account, usually called <systemitem class=\"username\">root</"
 "systemitem>, is used to manage the system with no limitations on privileges. "
 "For this reason, it should not be used for day-to-day tasks like sending and "
 "receiving mail, general exploration of the system, or programming."
 msgstr ""
+"Genellikle <systemitem class = \"username\"> kök</systemitem> olarak "
+"adlandırılan yetkili kullanıcı hesabı, sistemi ayrıcalıklarda sınırlama "
+"olmaksızın yönetmek için kullanılır. Bu nedenle, posta gönderme ve alma, "
+"sistemin genel keşfi veya programlama gibi günlük görevler için "
+"kullanılmamalıdır."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6296
+#, fuzzy
 msgid ""
 "The superuser, unlike other user accounts, can operate without limits, and "
 "misuse of the superuser account may result in spectacular disasters. User "
@@ -7349,23 +7673,38 @@ msgid ""
 "recommended to login as a user account and to only become the superuser when "
 "a command requires extra privilege."
 msgstr ""
+"Yetkili kullanıcı, diğer kullanıcı hesaplarının aksine, sınırsız çalışabilir "
+"ve yetkili kullanıcı hesabının kötüye kullanılması olağanüstü zararlara "
+"neden olabilir. Kullanıcı hesapları işletim sistemini yanlışlıkla yok "
+"edemez, bu nedenle bir kullanıcı hesabı olarak oturum açmanız ve yalnızca "
+"bir komutun ekstra ayrıcalık gerektirmesi durumunda süper kullanıcı olması "
+"önerilir."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6304
+#, fuzzy
 msgid ""
 "Always double and triple-check any commands issued as the superuser, since "
 "an extra space or missing character can mean irreparable data loss."
 msgstr ""
+"Ekstra boşluk veya eksik karakter onarılamaz veri kaybı anlamına "
+"gelebileceğinden, yetkili kullanıcı olarak verilen komutları her zaman iki "
+"kez ve üç kez kontrol edin."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6308
+#, fuzzy
 msgid ""
 "There are several ways to gain superuser privilege. While one can log in as "
 "<systemitem class=\"username\">root</systemitem>, this is highly discouraged."
 msgstr ""
+"Yetkili kullanıcı ayrıcalığı kazanmanın birkaç yolu vardır. <systemitem "
+"class=\"username\">kök</systemitem> olarak giriş yapılabilir, ancak bu "
+"kesinlikle önerilmez."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6313
+#, fuzzy
 msgid ""
 "Instead, use <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> to become the superuser. If <literal>-</literal> "
@@ -7375,24 +7714,38 @@ msgid ""
 "The user must also know the password for the <systemitem class=\"username"
 "\">root</systemitem> user account."
 msgstr ""
+"Bunun yerine, yetkili kullanıcı olmak için <citerefentry><refentrytitle>su</r"
+"efentrytitle><manvolnum>1</manvolnum></citerefentry> kullanın. Bu komutu "
+"çalıştırırken <literal></literal> belirtilirse, kullanıcı kök kullanıcının "
+"ortamını da devralır. Bu komutu çalıştıran kullanıcının <systemitem class=\""
+"groupname\">wheel</systemitem> grubunda olması gerekir, aksi takdirde komut "
+"başarısız olur. Kullanıcı ayrıca <systemitem class=\"username\""
+">kök</systemitem> kullanıcı hesabının parolasını da bilmelidir."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6323
+#, fuzzy
 msgid ""
 "In this example, the user only becomes superuser in order to run "
 "<command>make install</command> as this step requires superuser privilege. "
 "Once the command completes, the user types <command>exit</command> to leave "
 "the superuser account and return to the privilege of their user account."
 msgstr ""
+"Bu örnekte kullanıcı, yetkili kullanıcı ayrıcalığı gerektirdiğinden yalnızca "
+"<command>make install</command> komutunu çalıştırmak için süper kullanıcı "
+"olur. Komut tamamlandığında, kullanıcı yetkili kullanıcı hesabından ayrılmak "
+"ve kullanıcı hesabının ayrıcalığına dönmek için <command>çıkış</command> "
+"yazar."
 
 #. (itstool) path: example/title
 #: book.translate.xml:6331
+#, fuzzy
 msgid "Install a Program As the Superuser"
-msgstr ""
+msgstr "Yetkili kullanıcı Olarak Program Yükleme"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6333
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>configure</userinput>\n"
 "<prompt>%</prompt> <userinput>make</userinput>\n"
@@ -7402,9 +7755,17 @@ msgid ""
 "<prompt>#</prompt> <userinput>exit</userinput>\n"
 "<prompt>%</prompt>"
 msgstr ""
+"<prompt>%</prompt> <userinput>configure</userinput>\n"
+"<prompt>%</prompt> <userinput>make</userinput>\n"
+"<prompt>%</prompt> <userinput>su -</userinput>\n"
+"Şifre:\n"
+"<prompt>#</prompt> <userinput>make install</userinput>\n"
+"<prompt>#</prompt> <userinput>exit</userinput>\n"
+"<prompt>%</prompt>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6342
+#, fuzzy
 msgid ""
 "The built-in <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> framework works well for single systems or small "
@@ -7413,131 +7774,175 @@ msgid ""
 "activity logging and allows the administrator to configure which users can "
 "run which commands as the superuser."
 msgstr ""
+"Yerleşik <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvoln"
+"um></citerefentry>çerçevesi, tek bir sistem yöneticisi olan tek sistemler "
+"veya küçük ağlar için iyi çalışır. Alternatif olarak, <package>güvenlik/"
+"sudo</package> paketini veya bağlantı noktasını yüklemektir. Bu yazılım "
+"etkinlik günlüğü sağlar ve yöneticinin hangi kullanıcıların yetkili "
+"kullanıcı olarak hangi komutları çalıştırabileceğini yapılandırmasını sağlar."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:6353
+#, fuzzy
 msgid "Managing Accounts"
-msgstr ""
+msgstr "Hesapları Yönetmek"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:6355
+#, fuzzy
 msgid "<primary>accounts</primary> <secondary>modifying</secondary>"
-msgstr ""
+msgstr "<primary>hesaplar</primary><secondary>değiştirmek</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6360
+#, fuzzy
 msgid ""
 "FreeBSD provides a variety of different commands to manage user accounts. "
 "The most common commands are summarized in <xref linkend=\"users-modifying-"
 "utilities\"/>, followed by some examples of their usage. See the manual page "
 "for each utility for more details and usage examples."
 msgstr ""
+"FreeBSD, kullanıcı hesaplarını yönetmek için çeşitli farklı komutlar sağlar. "
+"En yaygın komutlar <xref linkend=\"users-modifying-utilities\"/> 'de, "
+"kullanımlarına ilişkin bazı örneklerde özetlenmiştir. Daha fazla ayrıntı ve "
+"kullanım örnekleri için her yardımcı programın kılavuz sayfasına bakın."
 
 #. (itstool) path: table/title
 #: book.translate.xml:6367
+#, fuzzy
 msgid "Utilities for Managing User Accounts"
-msgstr ""
+msgstr "Kullanıcı Hesaplarını Yönetmek için Yardımcı yazılım"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6375 book.translate.xml:58109 book.translate.xml:62145
+#, fuzzy
 msgid "Command"
-msgstr ""
+msgstr "Komut"
 
 #. (itstool) path: row/entry
 #. (itstool) path: sect2/title
 #: book.translate.xml:6376 book.translate.xml:17318 book.translate.xml:17472
+#, fuzzy
 msgid "Summary"
-msgstr ""
+msgstr "Özet"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6381
+#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>adduser</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>adduser</refentrytitle><manvolnum>8</manvolnum><"
+"/citerefentry>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6382
+#, fuzzy
 msgid "The recommended command-line application for adding new users."
-msgstr ""
+msgstr "Yeni kullanıcılar eklemek için önerilen komut satırı uygulaması."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6387
+#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>rmuser</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>rmuser</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6388
+#, fuzzy
 msgid "The recommended command-line application for removing users."
-msgstr ""
+msgstr "Kullanıcıları kaldırmak için önerilen komut satırı uygulaması."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6393
+#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>chpass</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>chpass</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6394
+#, fuzzy
 msgid "A flexible tool for changing user database information."
-msgstr ""
+msgstr "Kullanıcı veritabanı bilgilerini değiştirmek için esnek bir araç."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6399
+#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6400
+#, fuzzy
 msgid "The command-line tool to change user passwords."
-msgstr ""
+msgstr "Kullanıcı parolalarını değiştirmek için komut satırı aracı."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6405
+#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></cite"
+"refentry>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6406
+#, fuzzy
 msgid ""
 "A powerful and flexible tool for modifying all aspects of user accounts."
 msgstr ""
+"Kullanıcı hesaplarının tüm yönlerini değiştirmek için güçlü ve esnek bir "
+"araç."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6414
+#, fuzzy
 msgid "<command>adduser</command>"
-msgstr ""
+msgstr "<command>adduser</command>"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6416
+#, fuzzy
 msgid "<primary>accounts</primary> <secondary>adding</secondary>"
-msgstr ""
+msgstr "<primary>accounts</primary> <secondary>adding</secondary>"
 
 #. (itstool) path: sect3/indexterm
 #. (itstool) path: sect4/indexterm
 #: book.translate.xml:6420 book.translate.xml:44061
+#, fuzzy
 msgid "<primary><command>adduser</command></primary>"
-msgstr ""
+msgstr "<primary><command>adduser</command></primary>"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6423
+#, fuzzy
 msgid "<primary><filename>/usr/share/skel</filename></primary>"
-msgstr ""
+msgstr "<primary><filename>/usr/share/skel</filename></primary>"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6426
+#, fuzzy
 msgid "<primary>skeleton directory</primary>"
-msgstr ""
+msgstr "<primary>skeleton directory</primary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6430
+#, fuzzy
 msgid ""
 "The recommended program for adding new users is "
 "<citerefentry><refentrytitle>adduser</refentrytitle><manvolnum>8</"
@@ -7548,9 +7953,18 @@ msgid ""
 "filename>, and can optionally mail the new user a welcome message. This "
 "utility must be run as the superuser."
 msgstr ""
+"Yeni kullanıcı eklemek için önerilen program <citerefentry><refentrytitle>add"
+"user</refentrytitle><manvolnum>8</manvolnum></citerefentry>. Yeni kullanıcı "
+"eklendiğinde bu program otomatik olarak <filename>/etc/passwd</filename> ve "
+"<filename>/etc/group</filename> dosyalarını günceller. Ayrıca, yeni "
+"kullanıcı için bir giriş dizini oluşturur, <filename>/usr/share/"
+"skel</filename> adresinden varsayılan yapılandırma dosyalarına kopyalar ve "
+"isteğe bağlı olarak yeni kullanıcıya bir hoş geldiniz iletisi gönderebilir. "
+"Bu yardımcı program yetkili kullanıcı olarak çalıştırılmalıdır."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6440
+#, fuzzy
 msgid ""
 "The <citerefentry><refentrytitle>adduser</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> utility is interactive and walks through the steps "
@@ -7563,15 +7977,26 @@ msgid ""
 "citerefentry>. When finished, the utility will prompt to either create "
 "another user or to exit."
 msgstr ""
+"<citerefentry><refentrytitle>adduser</refentrytitle><manvolnum>8</manvolnum><"
+"/citerefentry> yardımcı programı etkileşimlidir ve yeni bir kullanıcı hesabı "
+"oluşturma adımlarını izler. <xref linkend=\"users-modifying-adduser\"/> "
+"altında görüldüğü gibi, gerekli bilgileri girin veya köşeli parantez içinde "
+"gösterilen varsayılan değeri kabul etmek için <keycap>Return</keycap> tuşuna "
+"basın. Bu örnekte, kullanıcı <systemitem class=\"groupname\""
+">wheel</systemitem> grubuna davet edildi ve <citerefentry><refentrytitle>su</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> ile süper kullanıcı "
+"olmalarına izin verdi. Tamamlandığında, yardımcı program başka bir kullanıcı "
+"oluşturmayı veya çıkmayı ister."
 
 #. (itstool) path: example/title
 #: book.translate.xml:6452
+#, fuzzy
 msgid "Adding a User on FreeBSD"
-msgstr ""
+msgstr "FreeBSD'ye Kullanıcı Eklemek"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6454
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>adduser</userinput>\n"
 "Username: <userinput>jru</userinput>\n"
@@ -7604,83 +8029,141 @@ msgid ""
 "Goodbye!\n"
 "<prompt>#</prompt>"
 msgstr ""
+"<prompt>#</prompt> <userinput>adduser</userinput>\n"
+"Username: <userinput>jru</userinput>\n"
+"Full name: <userinput>J. Random User</userinput>\n"
+"Uid (Leave empty for default):\n"
+"Login group [jru]:\n"
+"Login group is jru. Invite jru into other groups? []: "
+"<userinput>wheel</userinput>\n"
+"Login class [default]:\n"
+"Shell (sh csh tcsh zsh nologin) [sh]: <userinput>zsh</userinput>\n"
+"Home directory [/home/jru]:\n"
+"Home directory permissions (Leave empty for default):\n"
+"Use password-based authentication? [yes]:\n"
+"Use an empty password? (yes/no) [no]:\n"
+"Use a random password? (yes/no) [no]:\n"
+"Enter password:\n"
+"Enter password again:\n"
+"Lock out the account after creation? [no]:\n"
+"Username   : jru\n"
+"Password   : ****\n"
+"Full Name  : J. Random User\n"
+"Uid        : 1001\n"
+"Class      :\n"
+"Groups     : jru wheel\n"
+"Home       : /home/jru\n"
+"Shell      : /usr/local/bin/zsh\n"
+"Locked     : no\n"
+"OK? (yes/no): <userinput>yes</userinput>\n"
+"adduser: INFO: Successfully added (jru) to the user database.\n"
+"Add another user? (yes/no): <userinput>no</userinput>\n"
+"Goodbye!\n"
+"<prompt>#</prompt>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:6487
+#, fuzzy
 msgid ""
 "Since the password is not echoed when typed, be careful to not mistype the "
 "password when creating the user account."
 msgstr ""
+"Parola yazılırken tekrar edilmediğinden, kullanıcı hesabını oluştururken "
+"parolayı yanlış yazmamaya dikkat edin."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6494
+#, fuzzy
 msgid "<command>rmuser</command>"
-msgstr ""
+msgstr "<command>rmuser</command>"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6496
+#, fuzzy
 msgid "<primary><command>rmuser</command></primary>"
-msgstr ""
+msgstr "<primary><command>rmuser</command></primary>"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6499
+#, fuzzy
 msgid "<primary>accounts</primary> <secondary>removing</secondary>"
-msgstr ""
+msgstr "<primary>accounts</primary> <secondary>removing</secondary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6504
+#, fuzzy
 msgid ""
 "To completely remove a user from the system, run "
 "<citerefentry><refentrytitle>rmuser</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> as the superuser. This command performs the following steps:"
 msgstr ""
+"Bir kullanıcıyı sistemden tamamen kaldırmak için yetkili kullanıcı olarak  <c"
+"iterefentry><refentrytitle>rmuser</refentrytitle><manvolnum>8</manvolnum></ci"
+"terefentry> komutunu çalıştırın. Bu komut aşağıdaki adımları gerçekleştirir:"
 
 #. (itstool) path: step/para
 #: book.translate.xml:6510
+#, fuzzy
 msgid ""
 "Removes the user's <citerefentry><refentrytitle>crontab</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> entry, if one exists."
 msgstr ""
+"Kullanıcının <citerefentry><refentrytitle>crontab</refentrytitle><manvolnum>1"
+"</manvolnum></citerefentry> girişini kaldırır."
 
 #. (itstool) path: step/para
 #: book.translate.xml:6515
+#, fuzzy
 msgid ""
 "Removes any <citerefentry><refentrytitle>at</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> jobs belonging to the user."
 msgstr ""
+"Kullanıcıya ait <citerefentry><refentrytitle>at</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> işleri kaldırır."
 
 #. (itstool) path: step/para
 #: book.translate.xml:6520
+#, fuzzy
 msgid "Kills all processes owned by the user."
-msgstr ""
+msgstr "Kullanıcının sahip olduğu tüm işlemleri yok eder."
 
 #. (itstool) path: step/para
 #: book.translate.xml:6524
+#, fuzzy
 msgid "Removes the user from the system's local password file."
-msgstr ""
+msgstr "Kullanıcıyı sistemin yerel parola dosyasından kaldırır."
 
 #. (itstool) path: step/para
 #: book.translate.xml:6529
+#, fuzzy
 msgid ""
 "Optionally removes the user's home directory, if it is owned by the user."
 msgstr ""
+"İsteğe bağlı olarak, kullanıcıya aitse kullanıcının ana dizinini kaldırır."
 
 #. (itstool) path: step/para
 #: book.translate.xml:6534
+#, fuzzy
 msgid ""
 "Removes the incoming mail files belonging to the user from <filename>/var/"
 "mail</filename>."
 msgstr ""
+"Kullanıcıya ait gelen posta dosyalarını <filename>/var/mail</filename> "
+"klasöründen kaldırır."
 
 #. (itstool) path: step/para
 #: book.translate.xml:6539
+#, fuzzy
 msgid ""
 "Removes all files owned by the user from temporary file storage areas such "
 "as <filename>/tmp</filename>."
 msgstr ""
+"Kullanıcının sahip olduğu tüm dosyaları <filename>/tmp</filename> gibi "
+"geçici dosya depolama alanlarından kaldırır."
 
 #. (itstool) path: step/para
 #: book.translate.xml:6545
+#, fuzzy
 msgid ""
 "Finally, removes the username from all groups to which it belongs in "
 "<filename>/etc/group</filename>. If a group becomes empty and the group name "
@@ -7688,29 +8171,42 @@ msgid ""
 "user unique groups created by <citerefentry><refentrytitle>adduser</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 msgstr ""
+"Son olarak, kullanıcı adını <filename>/etc/group</filename> içine ait olduğu "
+"tüm gruplardan kaldırır. Bir grupta kullanıcı kalmazsa ve grup adı kullanıcı "
+"adıyla aynıysa, grup kaldırılır. Bu <citerefentry><refentrytitle>adduser</ref"
+"entrytitle><manvolnum>8</manvolnum></citerefentry> tarafından oluşturulan "
+"kullanıcı başına benzersiz grupları oluşturur."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6554
+#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>rmuser</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> cannot be used to remove superuser accounts since that is "
 "almost always an indication of massive destruction."
 msgstr ""
+"<citerefentry><refentrytitle>rmuser</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> yetkili kullanıcı hesaplarını kaldırmak için kullanılamaz, "
+"çünkü bu neredeyse her zaman büyük bir yıkımın göstergesidir."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6558
+#, fuzzy
 msgid ""
 "By default, an interactive mode is used, as shown in the following example."
 msgstr ""
+"Varsayılan olarak, aşağıdaki örnekte gösterildiği gibi etkileşimli bir mod "
+"kullanılır."
 
 #. (itstool) path: example/title
 #: book.translate.xml:6562
+#, fuzzy
 msgid "<command>rmuser</command> Interactive Account Removal"
-msgstr ""
+msgstr "<command>rmuser</command> Etkileşimli Hesap Çıkartma"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6565
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>rmuser jru</userinput>\n"
 "Matching password entry:\n"
@@ -7720,19 +8216,29 @@ msgid ""
 "Removing user (jru): mailspool home passwd.\n"
 "<prompt>#</prompt>"
 msgstr ""
+"<prompt>#</prompt> <userinput>rmuser jru</userinput>\n"
+"Matching password entry:\n"
+"jru:*:1001:1001::0:0:J. Random User:/home/jru:/usr/local/bin/zsh\n"
+"Is this the entry you wish to remove? <userinput>y</userinput>\n"
+"Remove user's home directory (/home/jru)? <userinput>y</userinput>\n"
+"Removing user (jru): mailspool home passwd.\n"
+"<prompt>#</prompt>"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6576
+#, fuzzy
 msgid "<command>chpass</command>"
-msgstr ""
+msgstr "<command>chpass</command>"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6578
+#, fuzzy
 msgid "<primary><command>chpass</command></primary>"
-msgstr ""
+msgstr "<primary><command>chpass</command></primary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6582
+#, fuzzy
 msgid ""
 "Any user can use <citerefentry><refentrytitle>chpass</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> to change their "
@@ -7740,25 +8246,40 @@ msgid ""
 "The superuser can use this utility to change additional account information "
 "for any user."
 msgstr ""
+"Herhangi bir kullanıcı, varsayılan kabuklarını ve kullanıcı hesaplarıyla "
+"ilişkili kişisel bilgilerini değiştirmek için <citerefentry><refentrytitle>ch"
+"pass</refentrytitle><manvolnum>1</manvolnum></citerefentry> kullanabilir. "
+"Yetkili kullanıcı bu yardımcı programı herhangi bir kullanıcının ek hesap "
+"bilgilerini değiştirmek için kullanabilir."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6587
+#, fuzzy
 msgid ""
 "When passed no options, aside from an optional username, "
 "<citerefentry><refentrytitle>chpass</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> displays an editor containing user information. When the user "
 "exits from the editor, the user database is updated with the new information."
 msgstr ""
+"Seçeneklerin hiçbiri iletilmediğinde, isteğe bağlı bir kullanıcı adının yanı "
+"sıra, <citerefentry><refentrytitle>chpass</refentrytitle><manvolnum>1</manvol"
+"num></citerefentry> kullanıcı bilgilerini içeren bir düzenleyici görüntüler. "
+"Kullanıcı editörden çıktığında, kullanıcı veritabanı yeni bilgilerle "
+"güncellenir."
 
 #. (itstool) path: note/para
 #: book.translate.xml:6593
+#, fuzzy
 msgid ""
 "This utility will prompt for the user's password when exiting the editor, "
 "unless the utility is run as the superuser."
 msgstr ""
+"Yardımcı program yetkili kullanıcı tarafından çalıştırılmadığı sürece, bu "
+"yardımcı program düzenleyiciden çıkarken kullanıcının parolasını soracaktır."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6598
+#, fuzzy
 msgid ""
 "In <xref linkend=\"users-modifying-chpass-su\"/>, the superuser has typed "
 "<command>chpass jru</command> and is now viewing the fields that can be "
@@ -7767,15 +8288,22 @@ msgid ""
 "available for editing. This is shown in <xref linkend=\"users-modifying-"
 "chpass-ru\"/>."
 msgstr ""
+"<xref linkend=\"users-modifying-chpass-su\"/> içinde, süper kullanıcı "
+"<command>chpass jru</command> yazmıştır ve şimdi bu kullanıcı için "
+"değiştirilebilecek alanları görüntülemektedir. Bunun yerine <systemitem "
+"class=\"username\">jru<command> bu komutu çalıştırırsa, yalnızca son altı "
+"alan görüntülenir ve düzenleme için kullanılabilir. Bu, <xref linkend"
+"=\"users-modifying-chpass-ru\"/> içinde gösterilir."
 
 #. (itstool) path: example/title
 #: book.translate.xml:6607
+#, fuzzy
 msgid "Using <command>chpass</command> as Superuser"
-msgstr ""
+msgstr "Using <command>chpass</command> Yetkili kullanıcı olarak"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6610
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "#Changing user database information for jru.\n"
 "Login: jru\n"
@@ -7793,15 +8321,31 @@ msgid ""
 "Home Phone:\n"
 "Other information:"
 msgstr ""
+"#Changing user database information for jru.\n"
+"Login: jru\n"
+"Password: *\n"
+"Uid [#]: 1001\n"
+"Gid [# or name]: 1001\n"
+"Change [month day year]:\n"
+"Expire [month day year]:\n"
+"Class:\n"
+"Home directory: /home/jru\n"
+"Shell: /usr/local/bin/zsh\n"
+"Full Name: J. Random User\n"
+"Office Location:\n"
+"Office Phone:\n"
+"Home Phone:\n"
+"Other information:"
 
 #. (itstool) path: example/title
 #: book.translate.xml:6628
+#, fuzzy
 msgid "Using <command>chpass</command> as Regular User"
-msgstr ""
+msgstr "Using <command>chpass</command> Düzenli Kullanıcı olarak"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6631
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "#Changing user database information for jru.\n"
 "Shell: /usr/local/bin/zsh\n"
@@ -7811,9 +8355,17 @@ msgid ""
 "Home Phone:\n"
 "Other information:"
 msgstr ""
+"#Changing user database information for jru.\n"
+"Shell: /usr/local/bin/zsh\n"
+"Full Name: J. Random User\n"
+"Office Location:\n"
+"Office Phone:\n"
+"Home Phone:\n"
+"Other information:"
 
 #. (itstool) path: note/para
 #: book.translate.xml:6641
+#, fuzzy
 msgid ""
 "The commands <citerefentry><refentrytitle>chfn</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> and <citerefentry><refentrytitle>chsh</"
@@ -7828,24 +8380,38 @@ msgid ""
 "the command is not necessary. How to configure NIS is covered in <xref "
 "linkend=\"network-servers\"/>."
 msgstr ""
+"Komutlar<citerefentry><refentrytitle>chfn</refentrytitle><manvolnum>1</manvol"
+"num></citerefentry>ve<citerefentry><refentrytitle>chsh</refentrytitle><manvol"
+"num>1</manvolnum></citerefentry>bağlantılı<citerefentry><refentrytitle>chpass"
+"</refentrytitle><manvolnum>1</manvolnum></citerefentry>olarak<citerefentry><r"
+"efentrytitle>ypchpass</refentrytitle><manvolnum>1</manvolnum></citerefentry><"
+"citerefentry><refentrytitle>ypchfn</refentrytitle><manvolnum>1</manvolnum></c"
+"iterefentry>ve<citerefentry><refentrytitle>ypchsh</refentrytitle><manvolnum>1"
+"</manvolnum></citerefentry>. <acronym>NIS</acronym> desteği otomatik "
+"olduğundan, komut gerekmeden önce <literal>yp</literal>belirtin. <xref "
+"linkend=\"network-servers\"/> içindeki NIS nasıl yapılandırılır."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6651
+#, fuzzy
 msgid "<command>passwd</command>"
-msgstr ""
+msgstr "<command>passwd</command>"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6653
+#, fuzzy
 msgid "<primary><command>passwd</command></primary>"
-msgstr ""
+msgstr "<primary><command>passwd</command></primary>"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6656
+#, fuzzy
 msgid "<primary>accounts</primary> <secondary>changing password</secondary>"
-msgstr ""
+msgstr "<primary>hesaplar</primary> <secondary>şifre değiştirme</secondary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6661
+#, fuzzy
 msgid ""
 "Any user can easily change their password using "
 "<citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></"
@@ -7853,15 +8419,21 @@ msgid ""
 "will prompt for the user's original password before a new password can be "
 "set:"
 msgstr ""
+"Herhangi bir kullanıcı şifresini <citerefentry><refentrytitle>passwd</refentr"
+"ytitle><manvolnum>1</manvolnum></citerefentry> kullanarak kolayca "
+"değiştirebilir. Yanlışlıkla veya yetkisiz değişiklikleri önlemek için, bu "
+"komut yeni bir parola ayarlanmadan önce kullanıcının orijinal parolasını "
+"soracaktır:"
 
 #. (itstool) path: example/title
 #: book.translate.xml:6667
+#, fuzzy
 msgid "Changing Your Password"
-msgstr ""
+msgstr "Şifrenizi Değiştirme"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6669
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>passwd</userinput>\n"
 "Changing local password for jru.\n"
@@ -7871,9 +8443,17 @@ msgid ""
 "passwd: updating the database...\n"
 "passwd: done"
 msgstr ""
+"<prompt>%</prompt> <userinput>passwd</userinput>\n"
+"Changing local password for jru.\n"
+"Old password:\n"
+"New password:\n"
+"Retype new password:\n"
+"passwd: updating the database...\n"
+"passwd: done"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6678
+#, fuzzy
 msgid ""
 "The superuser can change any user's password by specifying the username when "
 "running <citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</"
@@ -7881,15 +8461,22 @@ msgid ""
 "will not prompt for the user's current password. This allows the password to "
 "be changed when a user cannot remember the original password."
 msgstr ""
+"Yetkili kullanıcı <citerefentry><refentrytitle>passwd</refentrytitle><manvoln"
+"um>1</manvolnum></citerefentry> çalıştırırken kullanıcı adını belirterek "
+"herhangi bir kullanıcının şifresini değiştirebilir. Bu yardımcı program "
+"yetkili kullanıcı olarak çalıştırıldığında, kullanıcının geçerli şifresini "
+"sormaz. Bu, kullanıcı orijinal parolayı hatırlayamadığında parolanın "
+"değiştirilmesini sağlar."
 
 #. (itstool) path: example/title
 #: book.translate.xml:6686
+#, fuzzy
 msgid "Changing Another User's Password as the Superuser"
-msgstr ""
+msgstr "Başka Bir Kullanıcının Parolasını Yetkili Kullanıcı Olarak Değiştirme"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6689
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>passwd jru</userinput>\n"
 "Changing local password for jru.\n"
@@ -7898,9 +8485,16 @@ msgid ""
 "passwd: updating the database...\n"
 "passwd: done"
 msgstr ""
+"<prompt>#</prompt> <userinput>passwd jru</userinput>\n"
+"Changing local password for jru.\n"
+"New password:\n"
+"Retype new password:\n"
+"passwd: updating the database...\n"
+"passwd: done"
 
 #. (itstool) path: note/para
 #: book.translate.xml:6698
+#, fuzzy
 msgid ""
 "As with <citerefentry><refentrytitle>chpass</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>, <citerefentry><refentrytitle>yppasswd</"
@@ -7908,20 +8502,28 @@ msgid ""
 "<citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>, so <acronym>NIS</acronym> works with either command."
 msgstr ""
+"<citerefentry><refentrytitle>chpass</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry><citerefentry><refentrytitle>yppasswd</refentrytitle><manvolnum>"
+"1</manvolnum></citerefentry>ile <citerefentry><refentrytitle>passwd</refentry"
+"title><manvolnum>1</manvolnum></citerefentry>bağlantılı yani, "
+"<acronym>NIS</acronym> her iki komutla da çalışır."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6705
+#, fuzzy
 msgid "<command>pw</command>"
-msgstr ""
+msgstr "<command>pw</command>"
 
 #. (itstool) path: sect3/indexterm
 #. (itstool) path: sect4/indexterm
 #: book.translate.xml:6707 book.translate.xml:44084
+#, fuzzy
 msgid "<primary><command>pw</command></primary>"
-msgstr ""
+msgstr "<primary><command>pw</command></primary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6711
+#, fuzzy
 msgid ""
 "The <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> utility can create, remove, modify, and display users and "
@@ -7931,29 +8533,42 @@ msgid ""
 "suitable for use in shell scripts, but new users may find it more "
 "complicated than the other commands presented in this section."
 msgstr ""
+"<citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></cite"
+"refentry> yardımcı programı kullanıcılar ve gruplar oluşturabilir, "
+"kaldırabilir, değiştirebilir ve görüntüleyebilir. Sistem kullanıcısı ve grup "
+"dosyalarının kullanıcı arabirimi olarak işlev görür.<citerefentry><refentryti"
+"tle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry> kabuk komut "
+"dosyalarında kullanılmaya uygun hale getiren çok güçlü bir komut satırı "
+"seçenekleri kümesine sahiptir, ancak yeni kullanıcılar bu bölümde sunulan "
+"diğer komutlardan daha karmaşık bulabilir."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:6722
+#, fuzzy
 msgid "Managing Groups"
-msgstr ""
+msgstr "Grupları Yönetme"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:6724
+#, fuzzy
 msgid "<primary>groups</primary>"
-msgstr ""
+msgstr "<primary>groups</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:6727
+#, fuzzy
 msgid "<primary><filename>/etc/groups</filename></primary>"
-msgstr ""
+msgstr "<primary><filename>/etc/groups</filename></primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:6730
+#, fuzzy
 msgid "<primary>accounts</primary> <secondary>groups</secondary>"
-msgstr ""
+msgstr "<primary>accounts</primary> <secondary>groups</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6735
+#, fuzzy
 msgid ""
 "A group is a list of users. A group is identified by its group name and "
 "<acronym>GID</acronym>. In FreeBSD, the kernel uses the <acronym>UID</"
@@ -7961,9 +8576,16 @@ msgid ""
 "what the process is allowed to do. Most of the time, the <acronym>GID</"
 "acronym> of a user or process usually means the first group in the list."
 msgstr ""
+"Grup, kullanıcıların bir listesidir. Bir grup, grup adı ve "
+"<acronym>GID</acronym> ile tanımlanır. FreeBSD'de çekirdek, işlemin ne "
+"yapmasına izin verildiğini belirlemek için bir işlemin <acronym>UID</acronym>"
+" öğesini ve ait olduğu grupların listesini kullanır. Çoğu zaman, bir "
+"kullanıcının veya sürecin <acronym>GID</acronym> listesindeki ilk grup "
+"anlamına gelir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6742
+#, fuzzy
 msgid ""
 "The group name to <acronym>GID</acronym> mapping is listed in <filename>/etc/"
 "group</filename>. This is a plain text file with four colon-delimited "
@@ -7973,9 +8595,16 @@ msgid ""
 "refer to <citerefentry><refentrytitle>group</refentrytitle><manvolnum>5</"
 "manvolnum></citerefentry>."
 msgstr ""
+"<acronym>GID</acronym> eşlemesine grup adı <filename>/etc/group</filename> "
+"'de listelenir. Bu, dört kolonla ayrılmış alan içeren düz bir metin "
+"dosyasıdır. İlk alan grup adı, ikincisi şifreli parola, üçüncüsü "
+"<acronym>GID</acronym> ve dördüncüsü virgülle ayrılmış üye listesidir. "
+"Sözdiziminin daha eksiksiz bir açıklaması için <citerefentry><refentrytitle>g"
+"roup</refentrytitle><manvolnum>5</manvolnum></citerefentry> bölümüne bakın."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6750
+#, fuzzy
 msgid ""
 "The superuser can modify <filename>/etc/group</filename> using a text "
 "editor. Alternatively, <citerefentry><refentrytitle>pw</"
@@ -7983,25 +8612,38 @@ msgid ""
 "edit groups. For example, to add a group called <systemitem class=\"groupname"
 "\">teamtwo</systemitem> and then confirm that it exists:"
 msgstr ""
+"Süper kullanıcı, bir metin düzenleyicisi kullanarak <filename>/etc/"
+"group</filename> öğesini değiştirebilir. Alternatif olarak, grup eklemek ve "
+"düzenlemek için <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>kullanılabilir. Örneğin, <systemitem class=\""
+"groupname\">teamtwo</systemitem> adlı bir grup eklemek ve var olduğunu "
+"doğrulamak için:"
 
 #. (itstool) path: example/title
 #: book.translate.xml:6757
+#, fuzzy
 msgid ""
 "Adding a Group Using <citerefentry><refentrytitle>pw</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 msgstr ""
+"Kullanarak Grup Ekleme<citerefentry><refentrytitle>pw</refentrytitle><manvoln"
+"um>8</manvolnum></citerefentry>"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6759
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>pw groupadd teamtwo</userinput>\n"
 "<prompt>#</prompt> <userinput>pw groupshow teamtwo</userinput>\n"
 "teamtwo:*:1100:"
 msgstr ""
+"<prompt>#</prompt> <userinput>pw groupadd teamtwo</userinput>\n"
+"<prompt>#</prompt> <userinput>pw groupshow teamtwo</userinput>\n"
+"teamtwo:*:1100:"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6764
+#, fuzzy
 msgid ""
 "In this example, <literal>1100</literal> is the <acronym>GID</acronym> of "
 "<systemitem class=\"groupname\">teamtwo</systemitem>. Right now, <systemitem "
@@ -8009,25 +8651,37 @@ msgid ""
 "add <systemitem class=\"username\">jru</systemitem> as a member of "
 "<systemitem class=\"groupname\">teamtwo</systemitem>."
 msgstr ""
+"Bu örnek, <literal>1100</literal><acronym>GID</acronym><systemitem class=\""
+"groupname\">teamtwo</systemitem>'dir. Şimdi, <systemitem class=\"groupname\""
+">teamtwo</systemitem> üyesi yoktur. Bu komut <systemitem class=\"username\""
+">jru</systemitem>üye olarak <systemitem class=\"groupname\"><systemitem "
+"class=\"groupname\">teamtwo</systemitem> ekleyecektir."
 
 #. (itstool) path: example/title
 #: book.translate.xml:6773
+#, fuzzy
 msgid ""
 "Adding User Accounts to a New Group Using <citerefentry><refentrytitle>pw</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 msgstr ""
+"Yeni Gruba Kullanıcı Hesabı Eklemek<citerefentry><refentrytitle>pw</refentryt"
+"itle><manvolnum>8</manvolnum></citerefentry>"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6776
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>pw groupmod teamtwo -M jru</userinput>\n"
 "<prompt>#</prompt> <userinput>pw groupshow teamtwo</userinput>\n"
 "teamtwo:*:1100:jru"
 msgstr ""
+"<prompt>#</prompt> <userinput>pw groupmod teamtwo -M jru</userinput>\n"
+"<prompt>#</prompt> <userinput>pw groupshow teamtwo</userinput>\n"
+"teamtwo:*:1100:jru"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6781
+#, fuzzy
 msgid ""
 "The argument to <option>-M</option> is a comma-delimited list of users to be "
 "added to a new (empty) group or to replace the members of an existing group. "
@@ -8042,57 +8696,90 @@ msgid ""
 "to a group, it only manipulates <filename>/etc/group</filename> and does not "
 "attempt to read additional data from <filename>/etc/passwd</filename>."
 msgstr ""
+"<option>-M</option> argümanı, yeni (boş) bir gruba eklenecek veya mevcut bir "
+"grubun üyelerini değiştirecek virgülle ayrılmış bir kullanıcı listesidir. "
+"Kullanıcı için, bu grup üyeliği, parola dosyasında listelenen kullanıcının "
+"birincil grubundan farklıdır (ve ek olarak). Bu kullanıcının, "
+"<option>groupshow</option> ile <citerefentry><refentrytitle>pw</refentrytitle"
+"><manvolnum>8</manvolnum></citerefentry> kullanırken üye olarak "
+"görünmeyeceğini gösterir fakat <citerefentry><refentrytitle>id</refentrytitle"
+"><manvolnum>1</manvolnum></citerefentry> aracılığıyla sorgulanmış bilgi ya "
+"da benzer araç görülecektir. <citerefentry><refentrytitle>pw</refentrytitle><"
+"manvolnum>8</manvolnum></citerefentry> bir gruba kullanıcı eklemek için "
+"kullanıldığında, yalnızca <filename> / etc / group </filename> 'i manipüle "
+"eder ve <filename>/etc/group</filename> 'dan ek veri okuma girişiminde "
+"bulunmayın."
 
 #. (itstool) path: example/title
 #: book.translate.xml:6795
+#, fuzzy
 msgid ""
 "Adding a New Member to a Group Using <citerefentry><refentrytitle>pw</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 msgstr ""
+"Grup Kullanımına Yeni Üye Eklemek <citerefentry><refentrytitle>pw</refentryti"
+"tle><manvolnum>8</manvolnum></citerefentry>"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6797
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>pw groupmod teamtwo -m db</userinput>\n"
 "<prompt>#</prompt> <userinput>pw groupshow teamtwo</userinput>\n"
 "teamtwo:*:1100:jru,db"
 msgstr ""
+"<prompt>#</prompt> <userinput>pw groupmod teamtwo -m db</userinput>\n"
+"<prompt>#</prompt> <userinput>pw groupshow teamtwo</userinput>\n"
+"teamtwo:*:1100:jru,db"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6802
+#, fuzzy
 msgid ""
 "In this example, the argument to <option>-m</option> is a comma-delimited "
 "list of users who are to be added to the group. Unlike the previous example, "
 "these users are appended to the group and do not replace existing users in "
 "the group."
 msgstr ""
+"Bu örnekte, <option>-m</option> argümanı, gruba eklenecek kullanıcıların "
+"virgülle ayrılmış bir listesidir. Önceki örneğin aksine, bu kullanıcılar "
+"gruba eklenir ve gruptaki mevcut kullanıcıların yerini almaz."
 
 #. (itstool) path: example/title
 #: book.translate.xml:6809
+#, fuzzy
 msgid ""
 "Using <citerefentry><refentrytitle>id</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> to Determine Group Membership"
 msgstr ""
+"Kullanmak <citerefentry><refentrytitle>id</refentrytitle><manvolnum>1</manvol"
+"num></citerefentry> Grup Üyelerini Belirlemek"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6811
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>id jru</userinput>\n"
 "uid=1001(jru) gid=1001(jru) groups=1001(jru), 1100(teamtwo)"
 msgstr ""
+"<prompt>%</prompt> <userinput>id jru</userinput>\n"
+"uid=1001(jru) gid=1001(jru) groups=1001(jru), 1100(teamtwo)"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6815
+#, fuzzy
 msgid ""
 "In this example, <systemitem class=\"username\">jru</systemitem> is a member "
 "of the groups <systemitem class=\"groupname\">jru</systemitem> and "
 "<systemitem class=\"groupname\">teamtwo</systemitem>."
 msgstr ""
+"Bu örnekte, <systemitem class=\"username\">jru</systemitem> grup üyeleri<"
+"systemitem class=\"groupname\">jru</systemitem>ve<systemitem class=\""
+"groupname\">teamtwo</systemitem>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6820
+#, fuzzy
 msgid ""
 "For more information about this command and the format of <filename>/etc/"
 "group</filename>, refer to <citerefentry><refentrytitle>pw</"
@@ -8100,19 +8787,26 @@ msgid ""
 "<citerefentry><refentrytitle>group</refentrytitle><manvolnum>5</manvolnum></"
 "citerefentry>."
 msgstr ""
+"Bu komut ve <filename>/etc/group</filename> formatı hakkında daha fazla "
+"bilgi, <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum"
+"></citerefentry>ve<citerefentry><refentrytitle>grup</refentrytitle><manvolnum"
+">5</manvolnum></citerefentry> tercih eder."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:6827
+#, fuzzy
 msgid "Permissions"
-msgstr ""
+msgstr "Yetkiler"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:6829
+#, fuzzy
 msgid "<primary>UNIX</primary>"
-msgstr ""
+msgstr "<primary>UNIX</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6833
+#, fuzzy
 msgid ""
 "In FreeBSD, every file and directory has an associated set of permissions "
 "and several utilities are available for viewing and modifying these "
@@ -8121,17 +8815,28 @@ msgid ""
 "improperly access the files used by the operating system or owned by other "
 "users."
 msgstr ""
+"FreeBSD'de her dosya ve dizinde ilişkilendirilmiş bir izin kümesi vardır ve "
+"bu izinleri görüntülemek ve değiştirmek için çeşitli yardımcı programlar "
+"kullanılabilir. Kullanıcıların gereksinim duydukları dosyalara "
+"erişebildiğinden ve işletim sistemi tarafından kullanılan veya diğer "
+"kullanıcıların sahip olduğu dosyalara düzgün bir şekilde erişemediğinden "
+"emin olmak için izinlerin nasıl çalıştığını anlamak gerekir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6841
+#, fuzzy
 msgid ""
 "This section discusses the traditional <trademark class=\"registered\">UNIX</"
 "trademark> permissions used in FreeBSD. For finer grained file system access "
 "control, refer to <xref linkend=\"fs-acl\"/>."
 msgstr ""
+"Bu bölümde, FreeBSD'de kullanılan geleneksel <trademark class=\"registered\""
+">UNIX</trademark> izinleri açıklanmaktadır. Daha ince taneli dosya sistemi "
+"erişim kontrolü için, <xref linkend=\"fs-acl\"/>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6845
+#, fuzzy
 msgid ""
 "In <trademark class=\"registered\">UNIX</trademark>, basic permissions are "
 "assigned using three types of access: read, write, and execute. These access "
@@ -8145,99 +8850,130 @@ msgid ""
 "literal> has an on value of <literal>2</literal> and <literal>x</literal> "
 "has an on value of <literal>1</literal>."
 msgstr ""
+"<trademark class=\"registered\">UNIX</trademark> öğesinde, temel izinler üç "
+"tür erişim kullanılarak atanır: okuma, yazma ve yürütme. Bu erişim türleri, "
+"dosyanın sahibine, grubuna ve diğerlerine (diğer herkes) dosya erişimini "
+"belirlemek için kullanılır. Okuma, yazma ve yürütme izinleri "
+"<literal>r</literal>,<literal>w</literal>ve<literal>x</literal> harfleri "
+"olarak temsil edilebilir. Her izin açık veya kapalı olduğu için ikili "
+"sayılar olarak da temsil edilebilirler (<literal>0</literal>). Bir sayı "
+"olarak temsil edildiğinde, sıra her zaman <literal>rwx</literal> olarak "
+"okunur; burada <literal>4</literal>,<literal>w</literal> açık değeri "
+"<literal>2</literal> ve <literal>x</literal> açık değeri <literal>1</literal>"
+" değerine sahiptir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6860
+#, fuzzy
 msgid ""
 "Table 4.1 summarizes the possible numeric and alphabetic possibilities. When "
 "reading the <quote>Directory Listing</quote> column, a <literal>-</literal> "
 "is used to represent a permission that is set to off."
 msgstr ""
+"Tablo 4.1 olası sayısal ve alfabetik olasılıkları özetlemektedir. <quote>"
+"Dizin Listesi </quote> sütununu okurken, kapalı olarak ayarlanmış bir izni "
+"temsil etmek için bir <literal>-</literal> kullanılır."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:6865
+#, fuzzy
 msgid "<primary>permissions</primary>"
-msgstr ""
+msgstr "<primary>yetkiler</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:6868
+#, fuzzy
 msgid "<primary>file permissions</primary>"
-msgstr ""
+msgstr "<primary>dosya yetkileri</primary>"
 
 #. (itstool) path: table/title
 #: book.translate.xml:6873
+#, fuzzy
 msgid "<trademark class=\"registered\">UNIX</trademark> Permissions"
-msgstr ""
+msgstr "<trademark class=\"registered\">UNIX</trademark> Yetkiler"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6878
+#, fuzzy
 msgid "Value"
-msgstr ""
+msgstr "Değer"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6879
+#, fuzzy
 msgid "Permission"
-msgstr ""
+msgstr "Yetki"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6880
+#, fuzzy
 msgid "Directory Listing"
-msgstr ""
+msgstr "Dizin Listesi"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6886
+#, fuzzy
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6887
+#, fuzzy
 msgid "No read, no write, no execute"
-msgstr ""
+msgstr "Okumak yok, yazmak yok, uygulamak yok"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6888
+#, fuzzy
 msgid "<literal>---</literal>"
-msgstr ""
+msgstr "<literal>---</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6892 book.translate.xml:47569 book.translate.xml:47591
 #: book.translate.xml:47681
+#, fuzzy
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6893
+#, fuzzy
 msgid "No read, no write, execute"
-msgstr ""
+msgstr "Okumak yok, yazmak yok, uygulamak"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6894
+#, fuzzy
 msgid "<literal>--x</literal>"
-msgstr ""
+msgstr "<literal>--x</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6898 book.translate.xml:47461 book.translate.xml:47471
 #: book.translate.xml:47543 book.translate.xml:47553 book.translate.xml:47633
 #: book.translate.xml:47635
+#, fuzzy
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6899
+#, fuzzy
 msgid "No read, write, no execute"
-msgstr ""
+msgstr "Okumak yok, yazmak, uygulamak yok"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6900
+#, fuzzy
 msgid "<literal>-w-</literal>"
-msgstr ""
+msgstr "<literal>-w-</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6904 book.translate.xml:47463 book.translate.xml:47469
 #: book.translate.xml:47545 book.translate.xml:47551 book.translate.xml:47641
 #: book.translate.xml:47643
+#, fuzzy
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6905
