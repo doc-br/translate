@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-06-30 14:04+0000\n"
-"Last-Translator: onuraydin3 <crymzonx@gmail.com>\n"
+"Last-Translator: esradesteki <esradesteki20@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -11535,9 +11535,9 @@ msgstr ""
 "FreeBSD, temel sistemin bir parçası olarak sistem gereçlerinin zengin "
 "koleksiyonu ile donanmıştır. Ayrıca FreeBSD, üçüncü parti yazılımı kurmak "
 "için gerekli olan tamamlayıcı iki teknolojiyi de sağlar: kaynaktan kurulum "
-"için FreeBSD Ports Collection ve önceden oluşturulmuş ikili dosyalardan "
+"için FreeBSD Port Koleksiyonu, ve önceden oluşturulmuş ikili dosyalardan "
 "kurulum için paketler. Her iki yöntem de yazılımı yerel dağıtım ortamından "
-"ya da şebekeden kurmak için kullanılabilir."
+"ya da ağdan kurmak için kullanılabilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9152
@@ -11564,7 +11564,7 @@ msgstr ""
 msgid ""
 "How to build third-party software from source using the Ports Collection."
 msgstr ""
-"Kaynaktan Ports Collection kullanarak üçüncü parti yazılımı nasıl "
+"Kaynaktan Port Koleksiyonunu kullanarak üçüncü parti yazılımı nasıl "
 "oluşturulur."
 
 #. (itstool) path: listitem/para
@@ -11652,7 +11652,7 @@ msgid ""
 msgstr ""
 "Yazılım kaynak biçimde dağıtılmışsa, derleyin. Bu, bir "
 "<filename>Makefile</filename>'ı düzenlemeyi ya da "
-"<command>configure</command> komutunu çalıştırmayı içerebilir."
+"<command>configure</command> komut dosyasını çalıştırmayı içerebilir."
 
 #. (itstool) path: step/para
 #: book.translate.xml:9215
@@ -11670,7 +11670,7 @@ msgid ""
 "download, extract, patch, compile, and install the application."
 msgstr ""
 "Bir FreeBSD <emphasis>port</emphasis>u, kaynak koddan bir uygulamayı derleme "
-"sürecini otomatikleştirmek için tasarlanan dosyalar koleksiyonudur. Port "
+"işlemini otomatikleştirmek için tasarlanan dosyalar koleksiyonudur. Port "
 "içeren dosyalar, uygulamayı otomatik olarak indirmek, ayıklamak, yamalamak, "
 "derlemek ve kurmak için gerekli tüm bilgileri kapsar."
 
@@ -11681,8 +11681,8 @@ msgid ""
 "If the software has not already been adapted and tested on FreeBSD, the "
 "source code might need editing in order for it to install and run properly."
 msgstr ""
-"Eğer yazılım FreeBSD'ye uyarlanıp test edilmemişse kaynak kod, yazılımın "
-"doğru şekilde kurulumu ve çalıştırılması için düzenlenme gerektirebilir."
+"Eğer yazılım FreeBSD'ye uyarlanıp test edilmemişse kaynak kodun, yazılımın "
+"doğru şekilde kurulumu ve çalıştırılması için düzenlenmesi gerekebilir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9230
@@ -12076,6 +12076,7 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9423
+#, fuzzy
 msgid ""
 "Searching by shell globs, regular expressions, exact match, by description, "
 "or any other field in the repository database is also supported by "
@@ -12084,48 +12085,71 @@ msgid ""
 "<citerefentry><refentrytitle>pkg-search</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> for more details."
 msgstr ""
+"Kabuk globlardan, düzenli ifadelerden, tam eşleşmeden, tanımdan ya da havuz "
+"veri tabanındaki diğer herhangi bir alandan arama yapmak da <command>pkg "
+"search</command> tarafından desteklenmektedir. <package>ports-mgmt/"
+"pkg</package> ya da <package>ports-mgmt/pkg-devel</package>'ı kurduktan "
+"sonra, daha fazla bilgi için <citerefentry><refentrytitle>pkg-"
+"search</refentrytitle><manvolnum>8</manvolnum></citerefentry>'ı inceleyin."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9432
+#, fuzzy
 msgid ""
 "If the Ports Collection is already installed, there are several methods to "
 "query the local version of the ports tree. To find out which category a port "
 "is in, type <command>whereis <replaceable>file</replaceable></command>, "
 "where <replaceable>file</replaceable> is the program to be installed:"
 msgstr ""
+"Port Koleksiyonu önceden kurulmuşsa,  port ağacının yerel sürümünü "
+"sorgulamak için çeşitli yöntemler mevcuttur. Bir portun hangi kategoride "
+"olduğunu öğrenmek için "
+"<command>whereis<replaceable>file</replaceable></command> yazın "
+"-<replaceable>file</replaceable> yerine kurulacak program yazılır:"
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:9439
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>whereis lsof</userinput>\n"
 "lsof: /usr/ports/sysutils/lsof"
 msgstr ""
+"<prompt>#</prompt> <userinput>whereis lsof</userinput>\n"
+"lsof: /usr/ports/sysutils/lsof"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9442
+#, fuzzy
 msgid ""
 "Alternately, an <citerefentry><refentrytitle>echo</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> statement can be used:"
 msgstr ""
+"Alternatif olarak, <citerefentry><refentrytitle>echo</refentrytitle><manvolnu"
+"m>1</manvolnum></citerefentry> komutu kullanılabilir:"
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:9445
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>echo /usr/ports/*/*lsof*</userinput>\n"
 "/usr/ports/sysutils/lsof"
 msgstr ""
+"<prompt>#</prompt> <userinput>echo /usr/ports/*/*lsof*</userinput>\n"
+"/usr/ports/sysutils/lsof"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9448
+#, fuzzy
 msgid ""
 "Note that this will also return any matched files downloaded into the "
 "<filename>/usr/ports/distfiles</filename> directory."
 msgstr ""
+"Bunun, indirilmiş herhangi bir uyumlu dosyayı <filename>/usr/ports/"
+"distfiles</filename> dizinine geri yönlendireceğini de unutmayın."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9454
+#, fuzzy
 msgid ""
 "Another way to find software is by using the Ports Collection's built-in "
 "search mechanism. To use the search feature, <application>cd</application> "
@@ -12133,10 +12157,16 @@ msgid ""
 "name=program-name</command> where <replaceable>program-name</replaceable> is "
 "the name of the software. For example, to search for <command>lsof</command>:"
 msgstr ""
+"Yazılımı bulmanın bir başka yolu da Port Koleksiyonundaki yerleşik arama "
+"yöntemini kullanmaktır. Arama özelliğini kullanmak için, <filename>/usr/"
+"ports</filename>'a <application>cd</application> to komutunu girin, daha "
+"sonra <command>make search name=program-name</command> komutunu çalıştırın- "
+"<replaceable>program-name</replaceable> yerine yazılımın adı yazılır. "
+"Örneğin, <command>lsof</command> aratmak için:"
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:9463
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports</userinput>\n"
 "<prompt>#</prompt> <userinput>make search name=lsof</userinput>\n"
@@ -12148,9 +12178,19 @@ msgid ""
 "B-deps:\n"
 "R-deps: "
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports</userinput>\n"
+"<prompt>#</prompt> <userinput>make search name=lsof</userinput>\n"
+"Port:   lsof-4.88.d,8\n"
+"Path:   /usr/ports/sysutils/lsof\n"
+"Info:   Lists information about open files (similar to fstat(1))\n"
+"Maint:  ler@lerctr.org\n"
+"Index:  sysutils\n"
+"B-deps:\n"
+"R-deps: "
 
 #. (itstool) path: tip/para
 #: book.translate.xml:9474
+#, fuzzy
 msgid ""
 "The built-in search mechanism uses a file of index information. If a message "
 "indicates that the <filename>INDEX</filename> is required, run <command>make "
@@ -12158,21 +12198,29 @@ msgid ""
 "<filename>INDEX</filename> present, <command>make search</command> will be "
 "able to perform the requested search."
 msgstr ""
+"Yerleşik arama yöntemi, dizin bilgisinin dosyasını kullanır. Eğer bir mesaj "
+"<filename>INDEX</filename>'in gerekli olduğunu belirtiyorsa, mevcut dizin "
+"dosyasını indirmek için <command>make fetchindex</command> komutunu "
+"çalıştırın. <filename>INDEX</filename> mevcutken, <command>make "
+"search</command> istenilen aramayı gerçekleştirebilecektir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9483
+#, fuzzy
 msgid "The <quote>Path:</quote> line indicates where to find the port."
-msgstr ""
+msgstr "<quote>Path:</quote> satırı port'un nerede bulunabileceğini belirtir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9486
+#, fuzzy
 msgid ""
 "To receive less information, use the <command>quicksearch</command> feature:"
 msgstr ""
+"Daha az bilgi almak için, <command>quicksearch</command> özelliğini kullanın:"
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:9489
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports</userinput>\n"
 "<prompt>#</prompt> <userinput>make quicksearch name=lsof</userinput>\n"
@@ -12180,9 +12228,15 @@ msgid ""
 "Path:   /usr/ports/sysutils/lsof\n"
 "Info:   Lists information about open files (similar to fstat(1))"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports</userinput>\n"
+"<prompt>#</prompt> <userinput>make quicksearch name=lsof</userinput>\n"
+"Port:   lsof-4.88.d,8\n"
+"Path:   /usr/ports/sysutils/lsof\n"
+"Info:   Lists information about open files (similar to fstat(1))"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9495
+#, fuzzy
 msgid ""
 "For more in-depth searching, use <command>make search "
 "key=<replaceable>string</replaceable></command> or <command>make quicksearch "
@@ -12191,11 +12245,18 @@ msgid ""
 "descriptions, or dependencies in order to find ports which relate to a "
 "particular subject when the name of the program is unknown."
 msgstr ""
+"Daha detaylı arama için, <command>make search "
+"key=<replaceable>string</replaceable></command> ya da <command>make "
+"quicksearch key=<replaceable>string</replaceable></command> komutunu "
+"kullanın- <replaceable>string</replaceable> yerine aranacak metin yazılır. "
+"Metin, programın adı bilinmediğinde belirli bir konuyla ilişkilendirilen "
+"portları bulmak için yorumlarda, tanımlarda ya da bağımlılıklarda olabilir."
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:9506
+#, fuzzy
 msgid "search"
-msgstr ""
+msgstr "search"
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:9507
@@ -12204,16 +12265,21 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9506
+#, fuzzy
 msgid ""
 "When using <_:buildtarget-1/> or <_:buildtarget-2/>, the search string is "
 "case-insensitive. Searching for <quote>LSOF</quote> will yield the same "
 "results as searching for <quote>lsof</quote>."
 msgstr ""
+"<_:buildtarget-1/> ya da <_:buildtarget-2/> kullanırken, arama dizgesi büyük/"
+"küçük harflere duyarlı değildir. <quote>LSOF</quote> aramak, "
+"<quote>lsof</quote> aramakla aynı sonuçları verecektir."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:9516
+#, fuzzy
 msgid "Using <application>pkg</application> for Binary Package Management"
-msgstr ""
+msgstr "Derlenmiş Paket Yönetimi için <application>pkg</application> kullanma"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9519
