@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-06-30 14:04+0000\n"
-"Last-Translator: esradesteki <esradesteki20@gmail.com>\n"
+"Last-Translator: ilaydaasal <ilaydaasal92@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -61907,32 +61907,44 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:42015
+#, fuzzy
 msgid "Know how to <link linkend=\"bsdinstall\">install FreeBSD</link>."
 msgstr ""
+"FreeBSD'yi </link> nasıl <link linkend=\"bsdinstall\"> kuracağınızı öğrenin."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:42020
+#, fuzzy
 msgid ""
 "Know how to <link linkend=\"advanced-networking\">set up a network "
 "connection</link>."
 msgstr ""
+"Ağ bağlantısını </link> nasıl kuracağınızı <link linkend=\"advanced-"
+"networking\"> öğrenin."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:42025
+#, fuzzy
 msgid ""
 "Know how to <link linkend=\"ports\">install additional third-party software</"
 "link>."
 msgstr ""
+"Ek üçüncü-parti yazılımı </link> nasıl kuracağınızı <link linkend=\"ports\"> "
+"öğrenin."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:42032
+#, fuzzy
 msgid ""
 "FreeBSD as a Guest on <application>Parallels</application> for <trademark "
 "class=\"registered\">Mac OS</trademark> X"
 msgstr ""
+"<trademark class=\"registered\">Mac OS</trademark>X için "
+"<application>Parallels'de</application> konuk olarak FreeBSD"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:42035
+#, fuzzy
 msgid ""
 "<application>Parallels Desktop</application> for <trademark class="
 "\"registered\">Mac</trademark> is a commercial software product available "
@@ -61945,22 +61957,39 @@ msgid ""
 "configure a virtual machine and then install the desired guest operating "
 "system."
 msgstr ""
+"<trademark class=\"registered\">Mac</trademark> için <application>Parallels "
+"Desktop</application> <trademark class=\"registered\">Mac OS</trademark> "
+"10.4.6 veya daha yükseğini çalıştıran <trademark class=\"registered\""
+">Intel</trademark> tabanlı <trademark class=\"registered\">Apple</trademark><"
+"trademark class=\"registered\">Mac</trademark> bilgisayarlar için kullanılan "
+"bir ticari yazılım ürünüdür. <application>Parallels</application> <trademark "
+"class=\"registered\">Mac OS</trademark> X'e yüklendiğinde, kullanıcı sanal "
+"makineyi yapılandırmalı ve sonra istenilen konuk işletim sistemini "
+"kurmalıdır."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:42044
+#, fuzzy
 msgid ""
 "Installing FreeBSD on Parallels/<trademark class=\"registered\">Mac OS</"
 "trademark> X"
 msgstr ""
+"Parallels/<trademark class=\"registered\">Mac OS</trademark> X'e FreeBSD "
+"kurulumu"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42046
+#, fuzzy
 msgid ""
 "The first step in installing FreeBSD on <application>Parallels</application> "
 "is to create a new virtual machine for installing FreeBSD. Select "
 "<guimenuitem>FreeBSD</guimenuitem> as the <guimenu>Guest OS Type</guimenu> "
 "when prompted:"
 msgstr ""
+"<application>Parallels'e</application> FreeBSD kurulumunun ilk adımı FreeBSD "
+"kurulumu için yeni bir sanal makine oluşturmaktır. İstendiğinde <guimenu>"
+"Konuk İşletim Sistemi Türü</guimenu> olarak "
+"<guimenuitem>FreeBSD</guimenuitem> seçin:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -61968,17 +61997,22 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:42054
+#, fuzzy
 msgctxt "_"
 msgid "external ref='virtualization/parallels-freebsd1' md5='__failed__'"
-msgstr ""
+msgstr "external ref='virtualization/parallels-freebsd1' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42058
+#, fuzzy
 msgid ""
 "Choose a reasonable amount of disk and memory depending on the plans for "
 "this virtual FreeBSD instance. 4GB of disk space and 512MB of RAM work well "
 "for most uses of FreeBSD under <application>Parallels</application>:"
 msgstr ""
+"Bu sanal FreeBSD örneği için planlara bağlı olarak makul miktarda disk ve "
+"hafıza seçin. <application>Parallels</application> altında çoğu FreeBSD "
+"kullanımı için 4GB disk alanı ve 512MB RAM yeterli şekilde çalışır:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -61986,9 +62020,10 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:42065
+#, fuzzy
 msgctxt "_"
 msgid "external ref='virtualization/parallels-freebsd2' md5='__failed__'"
-msgstr ""
+msgstr "external ref='virtualization/parallels-freebsd2' md5='__failed__'"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -61996,9 +62031,10 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:42071
+#, fuzzy
 msgctxt "_"
 msgid "external ref='virtualization/parallels-freebsd3' md5='__failed__'"
-msgstr ""
+msgstr "external ref='virtualization/parallels-freebsd3' md5='__failed__'"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -62006,9 +62042,10 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:42077
+#, fuzzy
 msgctxt "_"
 msgid "external ref='virtualization/parallels-freebsd4' md5='__failed__'"
-msgstr ""
+msgstr "external ref='virtualization/parallels-freebsd4' md5='__failed__'"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -62016,14 +62053,16 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:42083
+#, fuzzy
 msgctxt "_"
 msgid "external ref='virtualization/parallels-freebsd5' md5='__failed__'"
-msgstr ""
+msgstr "external ref='virtualization/parallels-freebsd5' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42087
+#, fuzzy
 msgid "Select the type of networking and a network interface:"
-msgstr ""
+msgstr "Ağ oluşturma türünü ve ağ arayüzünü seçiniz:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -62031,9 +62070,10 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:42092
+#, fuzzy
 msgctxt "_"
 msgid "external ref='virtualization/parallels-freebsd6' md5='__failed__'"
-msgstr ""
+msgstr "external ref='virtualization/parallels-freebsd6' md5='__failed__'"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -62041,14 +62081,16 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:42098
+#, fuzzy
 msgctxt "_"
 msgid "external ref='virtualization/parallels-freebsd7' md5='__failed__'"
-msgstr ""
+msgstr "external ref='virtualization/parallels-freebsd7' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42102 book.translate.xml:42286
+#, fuzzy
 msgid "Save and finish the configuration:"
-msgstr ""
+msgstr "Yapılandırmayı kaydedin ve bitirin:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -62056,9 +62098,10 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:42106
+#, fuzzy
 msgctxt "_"
 msgid "external ref='virtualization/parallels-freebsd8' md5='__failed__'"
-msgstr ""
+msgstr "external ref='virtualization/parallels-freebsd8' md5='__failed__'"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -62066,12 +62109,14 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:42112
+#, fuzzy
 msgctxt "_"
 msgid "external ref='virtualization/parallels-freebsd9' md5='__failed__'"
-msgstr ""
+msgstr "external ref='virtualization/parallels-freebsd9' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42116
+#, fuzzy
 msgid ""
 "After the FreeBSD virtual machine has been created, FreeBSD can be installed "
 "on it. This is best done with an official FreeBSD <acronym>CD</acronym>/"
@@ -62087,6 +62132,19 @@ msgid ""
 "<acronym>ISO</acronym> file on disk or with the real <acronym>CD-ROM</"
 "acronym> drive."
 msgstr ""
+"FreeBSD sanal makinesi oluşturulduktan sonra, FreeBSD kurulumu yapılabilir. "
+"Bu en iyi şekilde resmi bir FreeBSD "
+"<acronym>CD</acronym>/<acronym>DVD</acronym>'si ile veya resmi bir "
+"<acronym>FTP</acronym> sitesinden indirilen bir <acronym>ISO</acronym> "
+"görüntüsü ile yapılır. Uygun <acronym>ISO</acronym> görüntüsünü yerel <"
+"trademark class=\"registered\">Mac</trademark> dosya sistemine kopyalayın "
+"veya <trademark class=\"registered\">Mac</trademark>'in <acronym>CD-"
+"ROM</acronym> sürücüsüne bir <acronym>CD</acronym>/<acronym>DVD</acronym> "
+"yerleştirin. FreeBSD <application>Parallels</application> penceresinin sağ "
+"alt köşesindeki disk simgesine tıklayın. Bu, <acronym>CD-ROM</acronym> "
+"sürücüsünü sanal makinedeki <acronym>ISO</acronym> dosyası diski ile veya "
+"gerçek <acronym>CD-ROM</acronym> sürücüsü ile ilişkilendirmede kullanabilmek "
+"için bir pencere açacaktır."
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -62094,12 +62152,14 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:42133
+#, fuzzy
 msgctxt "_"
 msgid "external ref='virtualization/parallels-freebsd11' md5='__failed__'"
-msgstr ""
+msgstr "external ref='virtualization/parallels-freebsd11' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42137
+#, fuzzy
 msgid ""
 "Once this association with the <acronym>CD-ROM</acronym> source has been "
 "made, reboot the FreeBSD virtual machine by clicking the reboot icon. "
@@ -62107,6 +62167,11 @@ msgid ""
 "<acronym>BIOS</acronym> that first checks if there is a <acronym>CD-ROM</"
 "acronym>."
 msgstr ""
+"<acronym>CD-ROM</acronym> kaynağı ile bu ilişkilendirme yapıldıktan sonra, "
+"yeniden başlatma simgesine tıklayarak FreeBSD sanal makinesini yeniden "
+"başlatın. <application>Parallels</application> önce bir <acronym>CD-"
+"ROM</acronym> olup olmadığını kontrol eden özel bir <acronym>BIOS</acronym> "
+"ile yeniden başlatır."
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -62114,17 +62179,22 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:42146
+#, fuzzy
 msgctxt "_"
 msgid "external ref='virtualization/parallels-freebsd10' md5='__failed__'"
-msgstr ""
+msgstr "external ref='virtualization/parallels-freebsd10' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42150
+#, fuzzy
 msgid ""
 "In this case it will find the FreeBSD installation media and begin a normal "
 "FreeBSD installation. Perform the installation, but do not attempt to "
 "configure <application>Xorg</application> at this time."
 msgstr ""
+"Bu durumda FreeBSD kurulum ortamını bulur ve normal bir FreeBSD kurulumuna "
+"başlar. Kurulumu gerçekleştirin, ama bu sefer <application>Xorg</application>"
+"'u yapılandırmayı denemeyin."
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -62132,16 +62202,19 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:42157
+#, fuzzy
 msgctxt "_"
 msgid "external ref='virtualization/parallels-freebsd12' md5='__failed__'"
-msgstr ""
+msgstr "external ref='virtualization/parallels-freebsd12' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42161
+#, fuzzy
 msgid ""
 "When the installation is finished, reboot into the newly installed FreeBSD "
 "virtual machine."
 msgstr ""
+"Kurulum bittiğinde, yeni yüklenmiş FreeBSD sanal makinesini yeniden başlatın."
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -62149,60 +62222,80 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:42166
+#, fuzzy
 msgctxt "_"
 msgid "external ref='virtualization/parallels-freebsd13' md5='__failed__'"
-msgstr ""
+msgstr "external ref='virtualization/parallels-freebsd13' md5='__failed__'"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:42172
+#, fuzzy
 msgid "Configuring FreeBSD on <application>Parallels</application>"
-msgstr ""
+msgstr "<application>Parallels</application> üzerinde FreeBSD'yi Yapılandırma"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42175
+#, fuzzy
 msgid ""
 "After FreeBSD has been successfully installed on <trademark class="
 "\"registered\">Mac OS</trademark> X with <application>Parallels</"
 "application>, there are a number of configuration steps that can be taken to "
 "optimize the system for virtualized operation."
 msgstr ""
+"FreeBSD <application>Parallels</application> ile <trademark class=\""
+"registered\">Mac OS</trademark> X'e başarıyla kurulduktan sonra, "
+"sanallaştırılmış işletim için sistemi optimize etmek üzere uygulanabilecek "
+"birkaç yapılandırma adımı vardır."
 
 #. (itstool) path: step/title
 #: book.translate.xml:42182 book.translate.xml:42387 book.translate.xml:42591
+#, fuzzy
 msgid "Set Boot Loader Variables"
-msgstr ""
+msgstr "Önyükleme Yükleyici Değişkenlerini Ayarlama"
 
 #. (itstool) path: step/para
 #: book.translate.xml:42184
+#, fuzzy
 msgid ""
 "The most important step is to reduce the <option>kern.hz</option> tunable to "
 "reduce the CPU utilization of FreeBSD under the <application>Parallels</"
 "application> environment. This is accomplished by adding the following line "
 "to <filename>/boot/loader.conf</filename>:"
 msgstr ""
+"<application>Parallels</application> ortamı altında FreeBSD'nin CPU "
+"kullanımını azaltmak için en önemli adım ayarlanabilir "
+"<option>kern.hz</option>'i azaltmaktır. Bu, <filename>/boot/"
+"loader.conf</filename>'a aşağıdaki satırı ekleyerek gerçekleştirilir:"
 
 #. (itstool) path: step/programlisting
 #: book.translate.xml:42191 book.translate.xml:42396 book.translate.xml:42600
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "kern.hz=100"
-msgstr ""
+msgstr "kern.hz=100"
 
 #. (itstool) path: step/para
 #: book.translate.xml:42193
+#, fuzzy
 msgid ""
 "Without this setting, an idle FreeBSD <application>Parallels</application> "
 "guest will use roughly 15% of the CPU of a single processor <trademark class="
 "\"registered\">iMac</trademark>. After this change the usage will be closer "
 "to 5%."
 msgstr ""
+"Bu ayar olmadan, eylemsiz bir FreeBSD <application>Parallels</application> "
+"konuğu, tek bir <trademark class=\"registered\">iMac</trademark> "
+"işlemcisinin CPU'sunun yaklaşık olarak %15'ini kullanacaktır. Bu "
+"değişiklikten sonra, kullanım %5'e yakın olacaktır."
 
 #. (itstool) path: step/title
 #: book.translate.xml:42200 book.translate.xml:42406 book.translate.xml:42609
+#, fuzzy
 msgid "Create a New Kernel Configuration File"
-msgstr ""
+msgstr "Yeni Çekirdek Yapılandırma Dosyası Oluşturma"
 
 #. (itstool) path: step/para
 #: book.translate.xml:42202
+#, fuzzy
 msgid ""
 "All of the SCSI, FireWire, and USB device drivers can be removed from a "
 "custom kernel configuration file. <application>Parallels</application> "
@@ -62214,14 +62307,24 @@ msgid ""
 "refentrytitle><manvolnum>4</manvolnum></citerefentry> can be removed from "
 "the kernel."
 msgstr ""
+"Tüm SCSI, FireWire ve USB aygıtı sürücüleri özel çekirdek yapılandırma "
+"dosyası ile kaldırılabilir. <application>Parallels</application> <citerefentr"
+"y><refentrytitle>ed</refentrytitle><manvolnum>4</manvolnum></citerefentry> "
+"sürücüsü tarafından kullanılan bir sanal ağ bağdaştırıcısı sağlar, böylece <c"
+"iterefentry><refentrytitle>ed</refentrytitle><manvolnum>4</manvolnum></citere"
+"fentry> ve <citerefentry><refentrytitle>miibus</refentrytitle><manvolnum>4</m"
+"anvolnum></citerefentry> hariç diğer tüm ağ aygıtları çekirdekten "
+"kaldırılabilir."
 
 #. (itstool) path: step/title
 #: book.translate.xml:42211 book.translate.xml:42417 book.translate.xml:42620
+#, fuzzy
 msgid "Configure Networking"
-msgstr ""
+msgstr "Yapılandırma Ağı"
 
 #. (itstool) path: step/para
 #: book.translate.xml:42213
+#, fuzzy
 msgid ""
 "The most basic networking setup uses DHCP to connect the virtual machine to "
 "the same local area network as the host <trademark class=\"registered\">Mac</"
@@ -62229,13 +62332,21 @@ msgid ""
 "\"</literal> to <filename>/etc/rc.conf</filename>. More advanced networking "
 "setups are described in <xref linkend=\"advanced-networking\"/>."
 msgstr ""
+"En temel ağ kurulumu, sanal makineyi aynı yerel alan ağına ana bilgisayar <"
+"trademark class=\"registered\">Mac</trademark> olarak bağlamak için DHCP "
+"kullanır. Bu, <filename>/etc/rc.conf</filename>'a <literal>ifconfig_ed0=\""
+"DHCP\"</literal>'yi ekleyerek gerçekleştirilebilir. Daha gelişmiş ağ "
+"kurulumları <xref linkend=\"advanced-networking\"/>'da açıklanmaktadır."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:42226
+#, fuzzy
 msgid ""
 "FreeBSD as a Guest on <application>Virtual PC</application> for <trademark "
 "class=\"registered\">Windows</trademark>"
 msgstr ""
+"<trademark class=\"registered\">Windows</trademark> için <application>Sanal "
+"PC</application>'de Konuk olarak FreeBSD"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:42229
