@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-06-30 14:04+0000\n"
-"Last-Translator: alirizaal <alirizaal@hotmail.com>\n"
+"Last-Translator: onuraydin3 <crymzonx@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -77747,40 +77747,55 @@ msgstr ""
 
 #. (itstool) path: info/title
 #: book.translate.xml:52146
+#, fuzzy
 msgid "Setting Up to Send Only"
-msgstr ""
+msgstr "Sadece Göndermeye Ayarlama"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:52149
+#, fuzzy
 msgid ""
 "<personname> <firstname>Bill</firstname> <surname>Moran</surname> </"
 "personname> <contrib>Contributed by </contrib>"
 msgstr ""
+"<personname> <firstname>Bill</firstname> <surname>Moran</surname> "
+"</personname> 'ın <contrib>Katkılarıyla</contrib>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:52159
+#, fuzzy
 msgid ""
 "There are many instances where one may only want to send mail through a "
 "relay. Some examples are:"
 msgstr ""
+"Birinin yalnızca bir aktarıcı yoluyla posta göndermek isteyeceği bir çok "
+"durum vardır. Bazı örnekleri:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:52164
+#, fuzzy
 msgid ""
 "The computer is a desktop machine that needs to use programs such as "
 "<citerefentry><refentrytitle>mail</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>, using the <acronym>ISP</acronym>'s mail relay."
 msgstr ""
+"Bilgisayar, <acronym>ISP</acronym> 'nin posta aktarıcısının,<citerefentry><re"
+"fentrytitle>mail</refentrytitle><manvolnum>1</manvolnum></citerefentry> gibi "
+"programlarını kullanması gereken bir masaüstü makine ise."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:52170
+#, fuzzy
 msgid ""
 "The computer is a server that does not handle mail locally, but needs to "
 "pass off all mail to a relay for processing."
 msgstr ""
+"Bilgisayar, postayı yerel olarak işlemeyip, tüm postaları işlenmesi için bir "
+"aktarıcıya yönlendiren bir sunucu ise."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:52176
+#, fuzzy
 msgid ""
 "While any <acronym>MTA</acronym> is capable of filling this particular "
 "niche, it can be difficult to properly configure a full-featured "
@@ -77788,20 +77803,31 @@ msgid ""
 "<application>Sendmail</application> and <application>Postfix</application> "
 "are overkill for this use."
 msgstr ""
+"Herhangi bir <acronym>MTA</acronym> bu boşluğu doldurabiliyor olsa bile, tam "
+"donanımlı bir <acronym>MTA</acronym> 'yı sadece posta gönderimi için düzgün "
+"bir şekilde yapılandırmak zor olabilir. <application>Sendmail</application> "
+"ve <application>Postfix</application> gibi programlar bu durumda gereğinden "
+"fazla kullanılmaktadır."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:52183
+#, fuzzy
 msgid ""
 "Additionally, a typical Internet access service agreement may forbid one "
 "from running a <quote>mail server</quote>."
 msgstr ""
+"Ek olarak, sıradan bir internet erişim hizmeti sözleşmesi, bir kişinin "
+"<quote>posta sunucusu</quote> çalıştırmasına izin vermeyebilir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:52186
+#, fuzzy
 msgid ""
 "The easiest way to fulfill those needs is to install the <package>mail/"
 "ssmtp</package> port:"
 msgstr ""
+"Bu ihtiyaçları karşılamanın en kolay yolu <package>mail/ssmtp</package> "
+"portunu kurmaktır:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:52189
@@ -77813,10 +77839,13 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:52192
+#, fuzzy
 msgid ""
 "Once installed, <package>mail/ssmtp</package> can be configured with "
 "<filename>/usr/local/etc/ssmtp/ssmtp.conf</filename>:"
 msgstr ""
+"<package>mail/ssmtp</package> 'i kurduktan sonra, onu <filename>/usr/local/"
+"etc/ssmtp/ssmtp.conf</filename> adresinden yapılandırabilirsiniz:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:52196
@@ -77830,6 +77859,7 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:52201
+#, fuzzy
 msgid ""
 "Use the real email address for <systemitem class=\"username\">root</"
 "systemitem>. Enter the <acronym>ISP</acronym>'s outgoing mail relay in place "
@@ -77837,31 +77867,49 @@ msgid ""
 "<acronym>ISP</acronym>s call this the <quote>outgoing mail server</quote> or "
 "<quote>SMTP server</quote>."
 msgstr ""
+"<systemitem class=\"username\">root</systemitem> için gerçek e-posta "
+"adresini kullanın. <acronym>ISP</acronym> 'nin giden posta aktarıcısını, <"
+"systemitem class=\"fqdomainname\">mail.example.com</systemitem> yerine "
+"girin. Bazı <acronym>ISP</acronym> 'ler bunu <quote>giden posta "
+"sunucusu</quote> veya <quote>SMPT sunucusu</quote> olarak adlandırır."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:52207
+#, fuzzy
 msgid ""
 "Make sure to disable <application>Sendmail</application>, including the "
 "outgoing mail service. See <xref linkend=\"mail-disable-sendmail\"/> for "
 "details."
 msgstr ""
+"<application>Sendmail</application> 'i, giden posta hizmeti de dahil olmak "
+"üzere devre dışı bıraktığınızdan emin olun. Ayrıntılar için <xref linkend"
+"=\"mail-disable-sendmail\"/> adresine göz atın."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:52210
+#, fuzzy
 msgid ""
 "<package>mail/ssmtp</package> has some other options available. Refer to the "
 "examples in <filename>/usr/local/etc/ssmtp</filename> or the manual page of "
 "<application>ssmtp</application> for more information."
 msgstr ""
+"<package>mail/ssmtp</package> 'in başka seçenekleri de mevcuttur. Daha fazla "
+"bilgi için <filename>/usr/local/etc/ssmtp</filename> 'deki örneklere veya "
+"<application>ssmtp</application> 'in el kitabına göz atabilirsiniz."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:52215
+#, fuzzy
 msgid ""
 "Setting up <application>ssmtp</application> in this manner allows any "
 "software on the computer that needs to send mail to function properly, while "
 "not violating the <acronym>ISP</acronym>'s usage policy or allowing the "
 "computer to be hijacked for spamming."
 msgstr ""
+"<application>ssmtp</application> 'yi bu şekilde kurmak, "
+"<acronym>ISP</acronym> kullanım koşullarını ihlal etmeden veya bilgisayarın "
+"spam için ele geçirilmesine müsade etmeden, bilgisayarda posta gönderecek "
+"olan yazılımların düzgün çalışmasını sağlar."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:52223
