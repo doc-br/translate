@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-06-30 15:56+0000\n"
-"Last-Translator: esradesteki <esradesteki20@gmail.com>\n"
+"Last-Translator: firdevssevik <sevikfirdevs@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -43645,40 +43645,50 @@ msgstr "İşletim Sistemini Güncelleme"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:29247
+#, fuzzy
 msgid ""
 "Because the basejail's copy of the userland is shared by the other jails, "
 "updating the basejail automatically updates all of the other jails. Either "
 "source or binary updates can be used."
 msgstr ""
+"Basejail'ın kullanıcı alanının kopyası diğer hapisler tarafından "
+"paylaşıldığı için basejail'in güncellenmesi diğer tüm hapishaneleri otomatik "
+"olarak günceller. Kaynak veya derlenmiş güncellemeler kullanılabilir."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:29252
+#, fuzzy
 msgid ""
 "To build the world from source on the host, then install it in the basejail, "
 "use:"
 msgstr ""
+"Dünyayı ana bilgisayardaki kaynaktan oluşturmak için onu basejail'e kurun ve "
+"şunu kullanın:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:29255
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>ezjail-admin update -b</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>ezjail-admin update -b</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:29257
+#, fuzzy
 msgid ""
 "If the world has already been compiled on the host, install it in the "
 "basejail with:"
 msgstr ""
+"Dünya ana bilgisayarda çoktan derlenmişse onu şu adla basejail'e yükleyin:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:29260
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>ezjail-admin update -i</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>ezjail-admin update -i</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:29262
+#, fuzzy
 msgid ""
 "Binary updates use <citerefentry><refentrytitle>freebsd-update</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>. These updates have "
@@ -43687,22 +43697,32 @@ msgid ""
 "directly. The most important one is that only -RELEASE versions of FreeBSD "
 "are available with this method."
 msgstr ""
+"Derlenmiş güncellemeler <citerefentry><refentrytitle>freebsd-"
+"update</refentrytitle><manvolnum>8</manvolnum></citerefentry> kullanır. Bu "
+"güncellemeler, <citerefentry><refentrytitle>freebsd-"
+"update</refentrytitle><manvolnum>8</manvolnum></citerefentry>'i doğrudan "
+"çalıştırılıyormuş gibi sınırlamalara sahiptir. En önemlisi FreeBSD'nin "
+"sadece -RELEASE sürümlerinin bu yöntemle kullanılabilmesidir."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:29268
+#, fuzzy
 msgid ""
 "Update the basejail to the latest patched release of the version of FreeBSD "
 "on the host. For example, updating from RELEASE-p1 to RELEASE-p2."
 msgstr ""
+"Basejail'i ana bilgisayardaki FreeBSD sürümünün en son yamalı sürümüne "
+"güncelleyin. Örneğin, RELEASE-p1'den RELEASE-p2'ye güncelleme."
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:29272
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>ezjail-admin update -u</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>ezjail-admin update -u</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:29274
+#, fuzzy
 msgid ""
 "To upgrade the basejail to a new version, first upgrade the host system as "
 "described in <xref linkend=\"freebsdupdate-upgrade\"/>. Once the host has "
@@ -43714,38 +43734,60 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> to determine the "
 "original version in the basejail:"
 msgstr ""
+"Basejail'i yeni bir sürüme yükseltmek için önce ana bilgisayar sistemini <"
+"xref linkend=\"freebsdupdate-upgrade\"/>'da açıklandığı gibi yükseltin. Ana "
+"bilgisayar yükseltilip yeniden başlatıldıktan sonra basejail "
+"yükseltilebilir. <citerefentry><refentrytitle>freebsd-"
+"update</refentrytitle><manvolnum>8</manvolnum></citerefentry>'in halihazırda "
+"basejail'de hangi sürümün yüklü olduğunu belirlemesinin bir yolu yoktur, bu "
+"nedenle orijinal sürüm belirtilmelidir. Basejail'deki orijinal sürümü "
+"belirlemek için <citerefentry><refentrytitle>file</refentrytitle><manvolnum>1"
+"</manvolnum></citerefentry>'i kullanın:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:29282
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>file /usr/jails/basejail/bin/sh</userinput>\n"
 "/usr/jails/basejail/bin/sh: ELF 64-bit LSB executable, x86-64, version 1 (FreeBSD), dynamically linked (uses shared libs), for FreeBSD 9.3, stripped"
 msgstr ""
+"<prompt>#</prompt> <userinput>file /usr/jails/basejail/bin/sh</userinput>\n"
+"/usr/jails/basejail/bin/sh: ELF 64-bit LSB executable, x86-64, version 1 "
+"(FreeBSD), dynamically linked (uses shared libs), for FreeBSD 9.3, stripped"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:29285
+#, fuzzy
 msgid ""
 "Now use this information to perform the upgrade from <literal>9.3-RELEASE</"
 "literal> to the current version of the host system:"
 msgstr ""
+"Şimdi <literal>9.3-RELEASE</literal>'den ana bilgisayar sisteminin geçerli "
+"sürümüne yükseltme yapmak için bu bilgileri kullanın:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:29289
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>ezjail-admin update -U -s <replaceable>9.3-RELEASE</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>ezjail-admin update -U -s "
+"<replaceable>9.3-RELEASE</replaceable></userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:29291
+#, fuzzy
 msgid ""
 "After updating the basejail, <citerefentry><refentrytitle>mergemaster</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> must be run to update "
 "each jail's configuration files."
 msgstr ""
+"Basejail'i güncelledikten sonra her hapsin yapılandırma dosyalarını "
+"güncellemek için <citerefentry><refentrytitle>mergemaster</refentrytitle><man"
+"volnum>8</manvolnum></citerefentry> çalıştırılmalıdır."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:29294
+#, fuzzy
 msgid ""
 "How to use <citerefentry><refentrytitle>mergemaster</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> depends on the purpose "
@@ -43754,90 +43796,131 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> should only be run "
 "from within that jail:"
 msgstr ""
+"<citerefentry><refentrytitle>Mergemaster</refentrytitle><manvolnum>8</manvoln"
+"um></citerefentry>'in nasıl kullanılacağı bir hapsin amacına ve "
+"güvenilirliğine bağlıdır. Bir hapsin hizmetlerine veya kullanıcılarına "
+"güvenilmiyorsa <citerefentry><refentrytitle>mergemaster</refentrytitle><manvo"
+"lnum>8</manvolnum></citerefentry> yalnızca bu hapisten çalıştırılmalıdır:"
 
 #. (itstool) path: example/title
 #: book.translate.xml:29300
+#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>mergemaster</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> on Untrusted Jail"
 msgstr ""
+"Güvenilmeyen Hapisteki <citerefentry><refentrytitle>mergemaster</refentrytitl"
+"e><manvolnum>8</manvolnum></citerefentry>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:29302
+#, fuzzy
 msgid ""
 "Delete the link from the jail's <filename>/usr/src</filename> into the "
 "basejail and create a new <filename>/usr/src</filename> in the jail as a "
 "mountpoint. Mount the host computer's <filename>/usr/src</filename> read-"
 "only on the jail's new <filename>/usr/src</filename> mountpoint:"
 msgstr ""
+"Bağlantıyı, hapsin <filename>/usr/src</filename>'sinden basejail'e silin ve "
+"hapiste mount noktası (mountpoint) olarak yeni bir <filename>/usr/"
+"src</filename> oluşturun. Ana bilgisayarın <filename>/usr/src</filename> "
+"salt okunurunu hapsin yeni <filename>/usr/src</filename> mount noktasına "
+"kurun:"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:29309
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>rm /usr/jails/<replaceable>jailname</replaceable>/usr/src</userinput>\n"
 "<prompt>#</prompt> <userinput>mkdir /usr/jails/<replaceable>jailname</replaceable>/usr/src</userinput>\n"
 "<prompt>#</prompt> <userinput>mount -t nullfs -o ro /usr/src /usr/jails/<replaceable>jailname</replaceable>/usr/src</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>rm /usr/jails/"
+"<replaceable>jailname</replaceable>/usr/src</userinput>\n"
+"<prompt>#</prompt> <userinput>mkdir /usr/jails/"
+"<replaceable>jailname</replaceable>/usr/src</userinput>\n"
+"<prompt>#</prompt> <userinput>mount -t nullfs -o ro /usr/src /usr/jails/"
+"<replaceable>jailname</replaceable>/usr/src</userinput>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:29313
+#, fuzzy
 msgid "Get a console in the jail:"
-msgstr ""
+msgstr "Hapiste bir konsol alın:"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:29315
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>ezjail-admin console <replaceable>jailname</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>ezjail-admin console "
+"<replaceable>jailname</replaceable></userinput>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:29317
+#, fuzzy
 msgid ""
 "Inside the jail, run <command>mergemaster</command>. Then exit the jail "
 "console:"
 msgstr ""
+"Hapsin içinde <command>mergemaster</command>'ı çalıştırın. Ardından hapis "
+"konsolundan çıkın:"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:29320
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/src</userinput>\n"
 "<prompt>#</prompt> <userinput>mergemaster -U</userinput>\n"
 "<prompt>#</prompt> <userinput>exit</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/src</userinput>\n"
+"<prompt>#</prompt> <userinput>mergemaster -U</userinput>\n"
+"<prompt>#</prompt> <userinput>exit</userinput>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:29324
+#, fuzzy
 msgid "Finally, unmount the jail's <filename>/usr/src</filename>:"
-msgstr ""
+msgstr "Son olarak hapsin <filename>/usr/src</filename>'sini kaldırın:"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:29327
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>umount /usr/jails/<replaceable>jailname</replaceable>/usr/src</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>umount /usr/jails/"
+"<replaceable>jailname</replaceable>/usr/src</userinput>"
 
 #. (itstool) path: example/title
 #: book.translate.xml:29332
+#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>mergemaster</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> on Trusted Jail"
 msgstr ""
+"Güvenilir Hapiste <citerefentry><refentrytitle>mergemaster</refentrytitle><ma"
+"nvolnum>8</manvolnum></citerefentry>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:29334
+#, fuzzy
 msgid ""
 "If the users and services in a jail are trusted, "
 "<citerefentry><refentrytitle>mergemaster</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> can be run from the host:"
 msgstr ""
+"Bir hapisteki kullanıcı ve hizmetlere güveniliyorsa ana bilgisayardan <citere"
+"fentry><refentrytitle>mergemaster</refentrytitle><manvolnum>8</manvolnum></ci"
+"terefentry> çalıştırılabilir:"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:29337
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>mergemaster -U -D /usr/jails/<replaceable>jailname</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>mergemaster -U -D /usr/jails/"
+"<replaceable>jailname</replaceable></userinput>"
 
 #. (itstool) path: tip/para
 #: book.translate.xml:29341
