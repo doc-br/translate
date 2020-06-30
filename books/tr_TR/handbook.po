@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-06-30 15:56+0000\n"
-"Last-Translator: ilaydaasal <ilaydaasal92@gmail.com>\n"
+"Last-Translator: esradesteki <esradesteki20@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -12260,8 +12260,9 @@ msgstr "search"
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:9507
+#, fuzzy
 msgid "quicksearch"
-msgstr ""
+msgstr "quicksearch"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9506
@@ -12283,91 +12284,127 @@ msgstr "Derlenmiş Paket Yönetimi için <application>pkg</application> kullanma
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9519
+#, fuzzy
 msgid ""
 "<application>pkg</application> is the next generation replacement for the "
 "traditional FreeBSD package management tools, offering many features that "
 "make dealing with binary packages faster and easier."
 msgstr ""
+"<application> pkg </application>, derlenmiş paketlerle daha hızlı ve daha "
+"kolay işlem yapılmasını sağlayan birçok özellik sunan, geleneksel FreeBSD "
+"paket yönetim araçlarının yerine geçen yeni nesil bir yardımcı programdır."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9524
+#, fuzzy
 msgid ""
 "For sites wishing to only use prebuilt binary packages from the FreeBSD "
 "mirrors, managing packages with <application>pkg</application> can be "
 "sufficient."
 msgstr ""
+"FreeBSD yansılarından sadece daha önce kurulmuş ikili paketleri kullanmayı "
+"amaçlayan siteler için, <application>pkg</application> ile paketleri "
+"yönetmek yeterli olacaktır."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9528
+#, fuzzy
 msgid ""
 "However, for those sites building from source or using their own "
 "repositories, a separate <link linkend=\"ports-upgrading-tools\">port "
 "management tool</link> will be needed."
 msgstr ""
+"Ancak, kaynaktan oluşturulan veya kendi depolarını kullanan siteler için "
+"ayrı bir <link linkend=\"ports-upgrading-tools\">port yönetim aracı</link> "
+"gerekecektir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9532
+#, fuzzy
 msgid ""
 "Since <application>pkg</application> only works with binary packages, it is "
 "not a replacement for such tools. Those tools can be used to install "
 "software from both binary packages and the Ports Collection, while "
 "<application>pkg</application> installs only binary packages."
 msgstr ""
+"<application>pkg</application> sadece derlenmiş paketlerle çalıştığından, bu "
+"gibi araçların yerine geçemez. <application>pkg</application> sadece "
+"derlenmiş paketleri kurarken, bu araçlar hem derlenmiş paketlerden hem de "
+"Port Koleksiyonundan yazılımı kurmak için kullanılabilir."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9541
+#, fuzzy
 msgid "Getting Started with <application>pkg</application>"
-msgstr ""
+msgstr "<application>pkg</application> ile Başlarken"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9544
+#, fuzzy
 msgid ""
 "FreeBSD includes a bootstrap utility which can be used to download and "
 "install <application>pkg</application> and its manual pages. This utility is "
 "designed to work with versions of FreeBSD starting with 10.<replaceable>X</"
 "replaceable>."
 msgstr ""
+"FreeBSD, <application>pkg</application> ve el kitabını indirmek ve kurmak "
+"için kullanılabilen önyükleme yardımcı programını içerir. Bu yardımcı "
+"program, 10.<replaceable>X</replaceable> ile başlayan FreeBSD sürümleri ile "
+"çalışmak üzere tasarlanmıştır."
 
 #. (itstool) path: note/para
 #: book.translate.xml:9551
+#, fuzzy
 msgid ""
 "Not all FreeBSD versions and architectures support this bootstrap process. "
 "The current list is at <link xlink:href=\"https://pkg.freebsd.org/\"/>. For "
 "other cases, <application>pkg</application> must instead be installed from "
 "the Ports Collection or as a binary package."
 msgstr ""
+"Tüm FreeBSD sürümleri ve mimarları bu önyükleme işlemini desteklememektedir. "
+"Mevcut liste <link xlink:href=\"https://pkg.freebsd.org/\"/>'de yer alır. "
+"Diğer durumlar için, <application>pkg</application> bunun yerine Port "
+"Koleksiyonundan ya da derlenmiş paket olarak kurulmak zorundadır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9560
+#, fuzzy
 msgid "To bootstrap the system, run:"
-msgstr ""
+msgstr "Sistemi önyüklemek için, aşağıdaki gibi çalıştırın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9562
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>/usr/sbin/pkg</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>/usr/sbin/pkg</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9564
+#, fuzzy
 msgid ""
 "You must have a working Internet connection for the bootstrap process to "
 "succeed."
 msgstr ""
+"Önyükleme işleminin başarılı olması için çalışır durumdaki İnternet "
+"bağlantısına sahip olmanız gerekmektedir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9567
+#, fuzzy
 msgid "Otherwise, to install the port, run:"
-msgstr ""
+msgstr "Aksi halde, portu kurmak için aşağıdaki şekilde çalıştırın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9569
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/ports-mgmt/pkg</userinput>\n"
 "<prompt>#</prompt> <userinput>make</userinput>\n"
 "<prompt>#</prompt> <userinput>make install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/ports-mgmt/pkg</userinput>\n"
+"<prompt>#</prompt> <userinput>make</userinput>\n"
+"<prompt>#</prompt> <userinput>make install clean</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9573
