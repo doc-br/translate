@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-07-01 12:55+0000\n"
-"Last-Translator: firdevssevik <sevikfirdevs@gmail.com>\n"
+"Last-Translator: esradesteki <esradesteki20@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -11985,7 +11985,7 @@ msgstr "<primary>pkg</primary> <secondary>search</secondary>"
 #: book.translate.xml:9380
 #, fuzzy
 msgid "To search the binary package repository for an application:"
-msgstr "Derlenmiş paket havuzunda bir uygulama aramak için:"
+msgstr "Derlenmiş paket deposunda bir uygulama aramak için:"
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:9383
@@ -12085,7 +12085,7 @@ msgid ""
 "<citerefentry><refentrytitle>pkg-search</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> for more details."
 msgstr ""
-"Kabuk globlardan, düzenli ifadelerden, tam eşleşmeden, tanımdan ya da havuz "
+"Kabuk globlardan, düzenli ifadelerden, tam eşleşmeden, tanımdan ya da depo "
 "veri tabanındaki diğer herhangi bir alandan arama yapmak da <command>pkg "
 "search</command> tarafından desteklenmektedir. <package>ports-mgmt/"
 "pkg</package> ya da <package>ports-mgmt/pkg-devel</package>'ı kurduktan "
@@ -12452,6 +12452,7 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: book.translate.xml:9595
+#, fuzzy
 msgid ""
 "The package database conversion may emit errors as the contents are "
 "converted to the new version. Generally, these errors can be safely ignored. "
@@ -12459,84 +12460,120 @@ msgid ""
 "after <command>pkg2ng</command> finishes. These applications must be "
 "manually reinstalled."
 msgstr ""
+"Paket veri tabanı dönüştürmesinde, içerikler yeni sürüme dönüştürüldüğünden "
+"hatalar ortaya çıkabilir. Genelde, bu hataları gözardı etmek güvenlidir. "
+"Ancak <command>pkg2ng</command> bittikten sonra, başarılı biçimde "
+"dönüştürülemeyen yazılımların listesi gösterilir. Bu uygulamalar manüel "
+"olarak yeniden kurulmalıdır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9603
+#, fuzzy
 msgid ""
 "To ensure that the Ports Collection registers new software with "
 "<application>pkg</application> instead of the traditional packages database, "
 "FreeBSD versions earlier than 10.<replaceable>X</replaceable> require this "
 "line in <filename>/etc/make.conf</filename>:"
 msgstr ""
+"Port Koleksiyonunun, yeni yazılımları geleneksel paketler veritabanı yerine "
+"<application>pkg</application> ile kaydettiğinden emin olmak için, "
+"10.<replaceable>X</replaceable>'den önceki FreeBSD sürümleri, bu satırı "
+"<filename>/etc/make.conf</filename> olarak ister:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:9609
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "WITH_PKGNG=\tyes"
-msgstr ""
+msgstr "WITH_PKGNG=\tyes"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9611
+#, fuzzy
 msgid ""
 "By default, <application>pkg</application> uses the binary packages from the "
 "FreeBSD package mirrors (the <emphasis>repository</emphasis>). For "
 "information about building a custom package repository, see <xref linkend="
 "\"ports-poudriere\"/>."
 msgstr ""
+"<application>pkg</application> varsayılan olarak, FreeBSD paket "
+"yansılarından derlenmiş paketleri (<emphasis>depo</emphasis>) kullanır. Özel "
+"paket deposu oluşturma konusunda bilgi almak için, <xref linkend=\"ports-"
+"poudriere\"/>'i inceleyin."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9618
+#, fuzzy
 msgid ""
 "Additional <application>pkg</application> configuration options are "
 "described in <citerefentry><refentrytitle>pkg.conf</"
 "refentrytitle><manvolnum>5</manvolnum></citerefentry>."
 msgstr ""
+"Ek <application>pkg</application> yapılandırma seçenekleri <citerefentry><ref"
+"entrytitle>pkg.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>"
+"'da açıklanmıştır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9621
+#, fuzzy
 msgid ""
 "Usage information for <application>pkg</application> is available in the "
 "<citerefentry><refentrytitle>pkg</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> manual page or by running <command>pkg</command> without "
 "additional arguments."
 msgstr ""
+"<application>pkg</application> için kullanım bilgisine <citerefentry><refentr"
+"ytitle>pkg</refentrytitle><manvolnum>8</manvolnum></citerefentry> el "
+"kitabında ya da ek parametreler olmadan <command>pkg</command> komutunu "
+"çalıştırarak ulaşılabilir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9625
+#, fuzzy
 msgid ""
 "Each <application>pkg</application> command argument is documented in a "
 "command-specific manual page. To read the manual page for <command>pkg "
 "install</command>, for example, run either of these commands:"
 msgstr ""
+"Her bir <application>pkg</application> komut değişkenleri, komuta özel el "
+"kitabında belgelenmiştir. <command>pkg install</command>'a dair el kitabını "
+"okumak için, örneğin, bu komutlardan birini çalıştırın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9630
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg help install</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg help install</userinput>"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9632
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>man pkg-install</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>man pkg-install</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9634
+#, fuzzy
 msgid ""
 "The rest of this section demonstrates common binary package management tasks "
 "which can be performed using <application>pkg</application>. Each "
 "demonstrated command provides many switches to customize its use. Refer to a "
 "command's help or man page for details and more examples."
 msgstr ""
+"Bu bölümün geri kalanında,<application>pkg</application> kullanılarak "
+"yürütülebilecek yaygın, derlenmiş paket yönetim görevleri açıklanmaktadır. "
+"Gösterilen her bir komut, kullanımını kişiselleştirmek için birçok anahtar "
+"sunar. Detaylar ve daha fazla örnek için komut yardımı ya da el kitabına "
+"başvurun."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9643
+#, fuzzy
 msgid "Quarterly and Latest Ports Branches"
-msgstr ""
+msgstr "Üç aylık ve En yeni Port Dalları"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9645
+#, fuzzy
 msgid ""
 "The <literal>Quarterly</literal> branch provides users with a more "
 "predictable and stable experience for port and package installation and "
@@ -12550,34 +12587,53 @@ msgid ""
 "And the <literal>Latest</literal> branch provides the latest versions of the "
 "packages to the users."
 msgstr ""
+"<literal>Quarterly</literal> bölümü, kullanıcılara port ve paket kurulumu ve "
+"yükseltmeleri için daha öngörülebilir ve güvenilir bir deneyim sunar. Bu, "
+"temelde sadece özellik dışı güncellemelere izin verilerek yapılır. Üç aylık "
+"bölümler; güvenlik düzeltmeleri (bunlar sürüm güncellemeleri veya "
+"commitlerin backportları olabilir), hata düzeltmeleri ve portların "
+"uyumluluğu veya çatı değişiklikleri almayı amaçlamaktadır. Üç aylık bölüm, "
+"her (yıllık) üç ayın başında Ocak, Nisan, Temmuz ve Ekim'de, HEAD'den "
+"kesilir. Bölümler, oluşturuldukları yıl(YYYY) ve üç aylık dilim(Q1-4)'e göre "
+"adlandırılırlar. Örneğin, Ocak 2016'da oluşturulmuş bir üç aylık bölüm "
+"2016Q1 olarak adlandırılır. Ayrıca, <literal>Latest</literal> bölümü "
+"kullanıcılara paketlerin en yeni sürümünü sunmaktadır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9659
+#, fuzzy
 msgid "To switch from quarterly to latest run the following commands:"
-msgstr ""
+msgstr "Üç aylıktan en yeniye geçmek için aşağıdaki komutları çalıştırın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9662
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>cp /etc/pkg/FreeBSD.conf /usr/local/etc/pkg/repos/FreeBSD.conf</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cp /etc/pkg/FreeBSD.conf /usr/local/etc/pkg/"
+"repos/FreeBSD.conf</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9664
+#, fuzzy
 msgid ""
 "Edit the file <filename>/usr/local/etc/pkg/repos/FreeBSD.conf</filename> and "
 "change the string <emphasis>quarterly</emphasis> to <emphasis>latest</"
 "emphasis> in the <literal>url:</literal> line."
 msgstr ""
+"<filename>/usr/local/etc/pkg/repos/FreeBSD.conf</filename> dosyayı "
+"düzenleyin ve <literal>url:</literal> satırında dizgeyi <emphasis>üç "
+"aylık</emphasis>'tan <emphasis>en yeni</emphasis>'ye değiştirin."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9670
+#, fuzzy
 msgid "The result should be similar to the following:"
-msgstr ""
+msgstr "Sonuç aşağıdakine benzer olmalıdır:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:9672
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "FreeBSD: {\n"
 "  url: \"pkg+http://pkg.FreeBSD.org/${ABI}/latest\",\n"
@@ -12587,78 +12643,109 @@ msgid ""
 "  enabled: yes\n"
 "}"
 msgstr ""
+"FreeBSD: {\n"
+"  url: \"pkg+http://pkg.FreeBSD.org/${ABI}/latest\",\n"
+"  mirror_type: \"srv\",\n"
+"  signature_type: \"fingerprints\",\n"
+"  fingerprints: \"/usr/share/keys/pkg\",\n"
+"  enabled: yes\n"
+"}"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9680
+#, fuzzy
 msgid ""
 "And finally run this command to update from the new (latest) repository "
 "metadata."
 msgstr ""
+"Ve son olarak, yeni (en son) depo meta verisinden güncelleme yapmak için bu "
+"komutu çalıştırın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9683
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg update -f</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg update -f</userinput>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9688
+#, fuzzy
 msgid "Obtaining Information About Installed Packages"
-msgstr ""
+msgstr "Kurulu Paketler Hakkında Bilgi Edinme"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9690
+#, fuzzy
 msgid ""
 "Information about the packages installed on a system can be viewed by "
 "running <command>pkg info</command> which, when run without any switches, "
 "will list the package version for either all installed packages or the "
 "specified package."
 msgstr ""
+"Bir sistemde kurulu paketler hakkında bilgi, herhangi bir anahtar olmadan "
+"çalıştırıldığında, kurulu tüm paketler ya da belirtilen paket için paket "
+"sürümünü listeleyecek olan <command>pkg info</command> komutu çalıştırılarak "
+"görüntülenebilir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9696
+#, fuzzy
 msgid ""
 "For example, to see which version of <application>pkg</application> is "
 "installed, run:"
 msgstr ""
+"Örneğin, <application>pkg</application>'nın hangi sürümünün kurulduğunu "
+"görmek için şunu çalıştırın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9699
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>pkg info pkg</userinput>\n"
 "pkg-1.1.4_1"
 msgstr ""
+"<prompt>#</prompt> <userinput>pkg info pkg</userinput>\n"
+"pkg-1.1.4_1"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9704
+#, fuzzy
 msgid "Installing and Removing Packages"
-msgstr ""
+msgstr "Paketlerin Kurulumu ve Kaldırılması"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9706
+#, fuzzy
 msgid ""
 "To install a binary package use the following command, where "
 "<replaceable>packagename</replaceable> is the name of the package to install:"
 msgstr ""
+"<replaceable>packagename</replaceable> yerine kurulacak paket adını yazarak, "
+"derlenmiş bir paketi kurmak için aşağıdaki komutu kullanın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9710
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install <replaceable>packagename</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>pkg install "
+"<replaceable>packagename</replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9712
+#, fuzzy
 msgid ""
 "This command uses repository data to determine which version of the software "
 "to install and if it has any uninstalled dependencies. For example, to "
 "install <application>curl</application>:"
 msgstr ""
+"Bu komut depo verisini, hangi yazılım sürümünün kurulacağını ve kurulmamış "
+"bağlılıklarının olup olmadığını belirlemek için kullanır. "
+"Örneğin,<application>curl</application> kurmak için:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9717
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>pkg install curl</userinput>\n"
 "Updating repository catalogue\n"
@@ -12682,34 +12769,68 @@ msgid ""
 "[2/2] Installing curl-7.31.0_1... done\n"
 "Cleaning up cache files...Done"
 msgstr ""
+"<prompt>#</prompt> <userinput>pkg install curl</userinput>\n"
+"Updating repository catalogue\n"
+"/usr/local/tmp/All/curl-7.31.0_1.txz          100% of 1181 kB 1380 kBps "
+"00m01s\n"
+"\n"
+"/usr/local/tmp/All/ca_root_nss-3.15.1_1.txz   100% of  288 kB 1700 kBps "
+"00m00s\n"
+"\n"
+"Updating repository catalogue\n"
+"The following 2 packages will be installed:\n"
+"\n"
+"        Installing ca_root_nss: 3.15.1_1\n"
+"        Installing curl: 7.31.0_1\n"
+"\n"
+"The installation will require 3 MB more space\n"
+"\n"
+"0 B to be downloaded\n"
+"\n"
+"Proceed with installing packages [y/N]: <userinput>y</userinput>\n"
+"Checking integrity... done\n"
+"[1/2] Installing ca_root_nss-3.15.1_1... done\n"
+"[2/2] Installing curl-7.31.0_1... done\n"
+"Cleaning up cache files...Done"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9739
+#, fuzzy
 msgid ""
 "The new package and any additional packages that were installed as "
 "dependencies can be seen in the installed packages list:"
 msgstr ""
+"Bağlılıklar olarak kurulmuş olan yeni paket ve herhangi bir ek paket, "
+"kurulmuş paketler listesinde görülebilir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9743
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>pkg info</userinput>\n"
 "ca_root_nss-3.15.1_1\tThe root certificate bundle from the Mozilla Project\n"
 "curl-7.31.0_1\tNon-interactive tool to get files from FTP, GOPHER, HTTP(S) servers\n"
 "pkg-1.1.4_6\tNew generation package manager"
 msgstr ""
+"<prompt>#</prompt> <userinput>pkg info</userinput>\n"
+"ca_root_nss-3.15.1_1\tThe root certificate bundle from the Mozilla Project\n"
+"curl-7.31.0_1\tNon-interactive tool to get files from FTP, GOPHER, HTTP(S) "
+"servers\n"
+"pkg-1.1.4_6\tNew generation package manager"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9748
+#, fuzzy
 msgid ""
 "Packages that are no longer needed can be removed with <command>pkg delete</"
 "command>. For example:"
 msgstr ""
+"Artık ihtiyaç duyulmayan paketler <command>pkg delete</command> ile "
+"kaldırılabilir. Örneğin:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9751
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>pkg delete curl</userinput>\n"
 "The following packages will be deleted:\n"
@@ -12721,67 +12842,93 @@ msgid ""
 "Proceed with deleting packages [y/N]: <userinput>y</userinput>\n"
 "[1/1] Deleting curl-7.31.0_1... done"
 msgstr ""
+"<prompt>#</prompt> <userinput>pkg delete curl</userinput>\n"
+"The following packages will be deleted:\n"
+"\n"
+"\tcurl-7.31.0_1\n"
+"\n"
+"The deletion will free 3 MB\n"
+"\n"
+"Proceed with deleting packages [y/N]: <userinput>y</userinput>\n"
+"[1/1] Deleting curl-7.31.0_1... done"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9763
+#, fuzzy
 msgid "Upgrading Installed Packages"
-msgstr ""
+msgstr "Kurulan Paketleri Yükseltme"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9765
+#, fuzzy
 msgid "Installed packages can be upgraded to their latest versions by running:"
 msgstr ""
+"Kurulan paketler en son sürümlerine şunu çalıştırarak yükseltilebilirler:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9768
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg upgrade</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg upgrade</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9770
+#, fuzzy
 msgid ""
 "This command will compare the installed versions with those available in the "
 "repository catalogue and upgrade them from the repository."
 msgstr ""
+"Bu komut, depo kataloğunda mevcut olan sürümler ile kurulmuş sürümleri "
+"karşılaştıracak ve onları depodan yükseltecektir."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9776
+#, fuzzy
 msgid "Auditing Installed Packages"
-msgstr ""
+msgstr "Kurulan Paketleri Denetleme"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9778
+#, fuzzy
 msgid ""
 "Software vulnerabilities are regularly discovered in third-party "
 "applications. To address this, <application>pkg</application> includes a "
 "built-in auditing mechanism. To determine if there are any known "
 "vulnerabilities for the software installed on the system, run:"
 msgstr ""
+"Yazılım açıklıklarına üçüncü parti uygulamalarında düzenli olarak "
+"karşılaşılır. Bunu ele almak için, <application>pkg</application> yerleşik "
+"bir denetleme yöntemini içerir. Sistemde kurulu yazılım için bilinen "
+"herhangi bir açıklığın olup olmadığını belirlemek için, şunu çalıştırın:"
 
 #. (itstool) path: sect2/screen
 #. (itstool) path: sect1/screen
 #: book.translate.xml:9785 book.translate.xml:27002
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg audit -F</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg audit -F</userinput>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9789
+#, fuzzy
 msgid "Automatically Removing Unused Packages"
-msgstr ""
+msgstr "Kullanılmayan Paketleri Otomatik olarak Kaldırma"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9791
+#, fuzzy
 msgid ""
 "Removing a package may leave behind dependencies which are no longer "
 "required. Unneeded packages that were installed as dependencies (leaf "
 "packages) can be automatically detected and removed using:"
 msgstr ""
+"Bir paketi kaldırmak geride, artık gerekmeyen bağımlılıkları bırakabilir. "
+"Bağımlılık olarak kurulan gereksiz paketler (alt düzey paketler) şunu "
+"kullanarak otomatik olarak tespit edilebilir ve kaldırılabilir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9796
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>pkg autoremove</userinput>\n"
 "Packages to be autoremoved:\n"
@@ -12792,27 +12939,45 @@ msgid ""
 "Proceed with autoremoval of packages [y/N]: <userinput>y</userinput>\n"
 "Deinstalling ca_root_nss-3.15.1_1... done"
 msgstr ""
+"<prompt>#</prompt> <userinput>pkg autoremove</userinput>\n"
+"Packages to be autoremoved:\n"
+"\tca_root_nss-3.15.1_1\n"
+"\n"
+"The autoremoval will free 723 kB\n"
+"\n"
+"Proceed with autoremoval of packages [y/N]: <userinput>y</userinput>\n"
+"Deinstalling ca_root_nss-3.15.1_1... done"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9805
+#, fuzzy
 msgid ""
 "Packages installed as dependencies are called <emphasis>automatic</emphasis> "
 "packages. Non-automatic packages, i.e the packages that were explicity "
 "installed not as a dependency to another package, can be listed using:"
 msgstr ""
+"Bağımlılık olarak kurulmuş paketler <emphasis>otomatik</emphasis> paketler "
+"olarak adlandırılır. Otomatik olmayan paketler, bkz. diğer bir pakete "
+"bağımlı olmayarak açıkça kurulmuş olan paketler, şunu kullanarak "
+"listelenebilir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9811
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>pkg prime-list</userinput>\n"
 "nginx\n"
 "openvpn\n"
 "sudo"
 msgstr ""
+"<prompt>#</prompt> <userinput>pkg prime-list</userinput>\n"
+"nginx\n"
+"openvpn\n"
+"sudo"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9816
+#, fuzzy
 msgid ""
 "<command>pkg prime-list</command> is an alias command declared in <filename>/"
 "usr/local/etc/pkg.conf</filename>. There are many others that can be used to "
@@ -12820,120 +12985,169 @@ msgid ""
 "prime-origins</command> can be used to get the origin port directory of the "
 "list mentioned above:"
 msgstr ""
+"<command>pkg prime-list</command>, <filename>/usr/local/etc/"
+"pkg.conf</filename>'de belirtilen takma ad(alias) komutudur. Sistemin paket "
+"veri tabanını sorgulamak için kullanılabilen diğer birçok komut mevcuttur. "
+"Örneğin, <command>pkg prime-origins</command> komutu, aşağıda bahsedilen "
+"listenin asıl port deposuna ulaşmak için kullanılabilir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9823
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>pkg prime-origins</userinput>\n"
 "www/nginx\n"
 "security/openvpn\n"
 "security/sudo"
 msgstr ""
+"<prompt>#</prompt> <userinput>pkg prime-origins</userinput>\n"
+"www/nginx\n"
+"security/openvpn\n"
+"security/sudo"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9828
+#, fuzzy
 msgid ""
 "This list can be used to rebuild all packages installed on a system using "
 "build tools such as <package> ports-mgmt/poudriere</package> or <package> "
 "ports-mgmt/synth</package>."
 msgstr ""
+"Bu liste, <package> ports-mgmt/poudriere</package> veya <package> ports-mgmt/"
+"synth</package> gibi yapım araçları kullanılarak sistemde kurulan tüm "
+"paketleri yeniden oluşturmak için kullanılabilir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9833
+#, fuzzy
 msgid "Marking an installed package as automatic can be done using:"
 msgstr ""
+"Kurulan paketi otomatik değil olarak işaretlemek şu kullanılarak "
+"gerçekleştirilebilir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9836
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg set -A 1 devel/cmake</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg set -A 1 devel/cmake</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9838
+#, fuzzy
 msgid ""
 "Once a package is a leaf package and is marked as automatic, it gets "
 "selected by <command>pkg autoremove</command>."
 msgstr ""
+"Bir paket alt düzey paket olduğunda ve otomatik olarak işaretlendiğinde, "
+"<command>pkg autoremove</command> tarafından seçilir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9842
+#, fuzzy
 msgid ""
 "Marking an installed package as <emphasis>not</emphasis> automatic can be "
 "done using:"
 msgstr ""
+"Kurulan paketi otomatik <emphasis>değil</emphasis> olarak işaretleme şu "
+"kullanılarak gerçekleştirilebilir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9845
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg set -A 0 devel/cmake</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg set -A 0 devel/cmake</userinput>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9850
+#, fuzzy
 msgid "Restoring the Package Database"
-msgstr ""
+msgstr "Paket Vertabanını Kurtarmak"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9852
+#, fuzzy
 msgid ""
 "Unlike the traditional package management system, <application>pkg</"
 "application> includes its own package database backup mechanism. This "
 "functionality is enabled by default."
 msgstr ""
+"Geleneksel paket yönetim sisteminin aksine, <application>pkg</application> "
+"kendi paket veritabanı yedekleme yöntemini içerir. Bu işlev, varsayılan "
+"olarak etkinleştirilmiştir."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:9858
+#, fuzzy
 msgid ""
 "To disable the periodic script from backing up the package database, set "
 "<literal>daily_backup_pkgdb_enable=\"NO\"</literal> in "
 "<citerefentry><refentrytitle>periodic.conf</refentrytitle><manvolnum>5</"
 "manvolnum></citerefentry>."
 msgstr ""
+"Periyodik komut dosyasını paket veri tabanından yedeklemeyi devre dışı "
+"bırakmak için, <citerefentry><refentrytitle>periodic.conf</refentrytitle><man"
+"volnum>5</manvolnum></citerefentry>'deki <literal>daily_backup_pkgdb_enable="
+"\"NO\"</literal>'i ayarlayın."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9864
+#, fuzzy
 msgid ""
 "To restore the contents of a previous package database backup, run the "
 "following command replacing <replaceable>/path/to/pkg.sql</replaceable> with "
 "the location of the backup:"
 msgstr ""
+"Önceki paket veritabanı yedeklemesinin içeriklerini geri yüklemek için, "
+"<replaceable>/path/to/pkg.sql</replaceable>'i yedekleme konumuyla "
+"değiştirerek aşağıdaki komutu çalıştırın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9869
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg backup -r <replaceable>/path/to/pkg.sql</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>pkg backup -r <replaceable>/path/to/"
+"pkg.sql</replaceable></userinput>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:9872
+#, fuzzy
 msgid ""
 "If restoring a backup taken by the periodic script, it must be decompressed "
 "prior to being restored."
 msgstr ""
+"Periyodik komut dosyası tarafından alınan yedekleme geri yükleniyorsa, geri "
+"yüklenmeden önce sıkıştırmayı açmak zorunludur."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9876
+#, fuzzy
 msgid ""
 "To run a manual backup of the <application>pkg</application> database, run "
 "the following command, replacing <replaceable>/path/to/pkg.sql</replaceable> "
 "with a suitable file name and location:"
 msgstr ""
+"<application>pkg</application> veri tabanının manüel yedeklemesini "
+"çalıştırmak için, <replaceable>/path/to/pkg.sql</replaceable>'ı uygun dosya "
+"adı ve konumu ile değiştirerek, aşağıdaki komutu çalıştırın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9881
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg backup -d <replaceable>/path/to/pkg.sql</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>pkg backup -d <replaceable>/path/to/"
+"pkg.sql</replaceable></userinput>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9885
+#, fuzzy
 msgid "Removing Stale Packages"
-msgstr ""
+msgstr "Eski Paketleri Kaldırma"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9887
+#, fuzzy
 msgid ""
 "By default, <application>pkg</application> stores binary packages in a cache "
 "directory defined by <envar>PKG_CACHEDIR</envar> in "
@@ -12942,31 +13156,41 @@ msgid ""
 "kept. Older versions of <application>pkg</application> kept all previous "
 "packages. To remove these outdated binary packages, run:"
 msgstr ""
+"<application>pkg</application> varsayılan olarak; derlenmiş paketleri, <citer"
+"efentry><refentrytitle>pkg.conf</refentrytitle><manvolnum>5</manvolnum></cite"
+"refentry>'deki <envar>PKG_CACHEDIR</envar> tarafından belirtilen önbellek "
+"deposunda saklar. Sadece en yeni kurulmuş olan paketlerin kopyaları muhafaza "
+"edilir. <application>pkg</application>'nın daha eski sürümleri önceki tüm "
+"paketleri saklamıştır. Bu derlenmiş eski paketleri kaldırmak için, şunu "
+"çalıştırın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9894
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg clean</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg clean</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9896
+#, fuzzy
 msgid "The entire cache may be cleared by running:"
-msgstr ""
+msgstr "Tüm önbellek şunu çalıştırarak temizlenebilir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9898
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg clean -a</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg clean -a</userinput>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9902
+#, fuzzy
 msgid "Modifying Package Metadata"
-msgstr ""
+msgstr "Paket Meta verisini Değiştirme"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9904
+#, fuzzy
 msgid ""
 "Software within the FreeBSD Ports Collection can undergo major version "
 "number changes. To address this, <application>pkg</application> has a built-"
@@ -12975,11 +13199,19 @@ msgid ""
 "that <package>lang/php5</package> can now represent version <literal>5.4</"
 "literal>."
 msgstr ""
+"FreeBSD Port Koleksiyonu içindeki yazılım, büyük sürüm numarası "
+"değişikliklerine uğrayabilir. Bunu ele almak amacıyla "
+"<application>pkg</application>, paket kaynaklarını güncellemek için yerleşik "
+"bir komuta sahiptir. Bu, örneğin, <package>lang/php5</package>'in bundan "
+"böyle <literal>5.4</literal> sürümünü temsil edebilmesi için; <package>lang/"
+"php5</package>, <package>lang/php53</package> olarak yeniden adlandırılırsa "
+"faydalı olabilir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9913
+#, fuzzy
 msgid "To change the package origin for the above example, run:"
-msgstr ""
+msgstr "Aşağıdaki örnek için paket kaynağını değiştirmek adına şunu çalıştırın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9916
@@ -12989,78 +13221,108 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9918
+#, fuzzy
 msgid ""
 "As another example, to update <package>lang/ruby18</package> to "
 "<package>lang/ruby19</package>, run:"
 msgstr ""
+"Bir başka örnek olarak, <package>lang/ruby18</package>'i <package>lang/"
+"ruby19</package>'a güncellemek için, şunu çalıştırın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9922
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg set -o lang/ruby18:lang/ruby19</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>pkg set -o lang/ruby18:lang/ruby19</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9924
+#, fuzzy
 msgid ""
 "As a final example, to change the origin of the <filename>libglut</filename> "
 "shared libraries from <package>graphics/libglut</package> to "
 "<package>graphics/freeglut</package>, run:"
 msgstr ""
+"Son bir örnek olarak, <filename>libglut</filename> paylaşımlı "
+"kütüphanelerinin kaynağını <package>graphics/libglut</package>'den <package>"
+"graphics/freeglut</package>'e değiştirmek için, şunu çalıştırın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9929
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg set -o graphics/libglut:graphics/freeglut</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>pkg set -o graphics/libglut:graphics/"
+"freeglut</userinput>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:9932
+#, fuzzy
 msgid ""
 "When changing package origins, it is important to reinstall packages that "
 "are dependent on the package with the modified origin. To force a "
 "reinstallation of dependent packages, run:"
 msgstr ""
+"Paket kaynaklarını değiştirirken, değiştirilmiş kaynaklı paketteki bağımlı "
+"olan paketleri yeniden kurmak önemlidir. Bağımlı paketlerin yeniden "
+"yüklenmesini zorlamak için şunu çalıştırın:"
 
 #. (itstool) path: note/screen
 #: book.translate.xml:9937
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install -Rf <replaceable>graphics/freeglut</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>pkg install -Rf <replaceable>graphics/"
+"freeglut</replaceable></userinput>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:9943
+#, fuzzy
 msgid "Using the Ports Collection"
-msgstr ""
+msgstr "Port Koleksiyonunu Kullanma"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9945
+#, fuzzy
 msgid ""
 "The Ports Collection is a set of <filename>Makefiles</filename>, patches, "
 "and description files. Each set of these files is used to compile and "
 "install an individual application on FreeBSD, and is called a "
 "<emphasis>port</emphasis>."
 msgstr ""
+"Ports Collection, bir grup <filename>Makefiles</filename>, yamalar ve tanım "
+"dosyalarıdır. Bu dosyaların her bir grubu, FreeBSD'de bireysel uygulamaları "
+"derlemek ve kurmak için kullanılır, ve bunlara <emphasis>port</emphasis> "
+"denir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9951
+#, fuzzy
 msgid ""
 "By default, the Ports Collection itself is stored as a subdirectory of "
 "<filename>/usr/ports</filename>."
 msgstr ""
+"Varsayılan olarak Port Koleksiyonun kendisi, <filename>/usr/ports</filename> "
+"alt dizini olarak saklanmaktadır."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9954
+#, fuzzy
 msgid ""
 "Before an application can be compiled using a port, the Ports Collection "
 "must first be installed. If it was not installed during the installation of "
 "FreeBSD, use one of the following methods to install it:"
 msgstr ""
+"Bir uygulamanın port kullanarak derlenebilmesinden önce, ilk olarak Port "
+"Koleksiyonu kurulmalıdır. Port Koleksiyonu, FreeBSD kurulumu süresinde "
+"yüklenmemişse, kurmak için aşağıdaki yöntemlerden birini kullanın:"
 
 #. (itstool) path: procedure/title
 #: book.translate.xml:9960
+#, fuzzy
 msgid "Portsnap Method"
-msgstr ""
+msgstr "Portsnap Yöntemi"
 
 #. (itstool) path: procedure/para
 #: book.translate.xml:9962
