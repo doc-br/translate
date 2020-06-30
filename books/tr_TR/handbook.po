@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-30 08:30+0000\n"
+"PO-Revision-Date: 2020-06-30 14:04+0000\n"
 "Last-Translator: baransayan <baransayan@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
@@ -2631,9 +2631,12 @@ msgid ""
 "There are several different ways of getting FreeBSD to run, depending on the "
 "environment. Those are:"
 msgstr ""
+"FreeBSD'yi, kullanılacağı ortama bağlı olarak çalıştırmanın birkaç farklı "
+"yolu vardır. Bunlar:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2864
+#, fuzzy
 msgid ""
 "Virtual Machine images, to download and import on a virtual environment of "
 "choice. These can be downloaded from the <link xlink:href=\"https://www."
@@ -2644,9 +2647,18 @@ msgid ""
 "(<quote>already installed</quote>) instances, ready to run and perform post-"
 "installation tasks."
 msgstr ""
+"Sanal ortam tercihinize indirmek ve içeri aktarmak için Sanal Makine "
+"görüntüsü. Bunlar <link xlink:href=\"https://www.freebsd.org/where.html\">"
+"Download FreeBSD</link> sayfasından indirilebilir. KVM  "
+"(<quote>qcow2</quote>), VMWare (<quote>vmdk</quote>), Hyper-V "
+"(<quote>vhd</quote>) ve evrensel olarak desteklenen ham aygıt görüntüleri "
+"için görüntüler vardır. Bunlar kurulum görüntüleri değil ama daha çok, "
+"çalıştırmaya ve yükleme sonrası görevlerini gerçekleştirmeye hazır önceden "
+"yapılandırılmış (<quote>kurulu</quote>) örneklerdir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2877
+#, fuzzy
 msgid ""
 "Virtual Machine images available at Amazon's <link xlink:href=\"https://aws."
 "amazon.com/marketplace/pp/B07L6QV354\">AWS Marketplace</link>, <link xlink:"
@@ -2659,9 +2671,21 @@ msgid ""
 "microsoft.com/en-us/azure/virtual-machines/linux/freebsd-intro-on-azure"
 "\">Azure Documentation</link>."
 msgstr ""
+"Sanal Makine görüntüleri, her birinin barındırma hizmetinde çalışacak "
+"şekilde Amazon’un <link xlink:href=\"https://aws.amazon.com/marketplace/pp/"
+"B07L6QV354\">AWS Marketplace</link> ‘inde, <link xlink:href=\""
+"https://azuremarketplace.microsoft.com/en-us/marketplace/"
+"apps?search=freebsd&amp;page=1\">Microsoft Azure Marketplace</link> ‘de ve <"
+"link xlink:href=\"https://console.cloud.google.com/marketplace/details/"
+"freebsd-cloud/freebsd-12\">Google Cloud Platform</link> ‘de bulunmaktadır. "
+"Azure üzerinde FreeBSD dağıtımı hakkında daha fazla bilgi edinmek için <link "
+"xlink:href=\"https://docs.microsoft.com/en-us/azure/virtual-machines/linux/"
+"freebsd-intro-on-azure\">Azure Belgeleri</link> üzerinden ilgili bölüme "
+"bakın."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2887
+#, fuzzy
 msgid ""
 "SD card images, for embedded systems such as Raspberry Pi or BeagleBone "
 "Black. These can be downloaded from the <link xlink:href=\"https://www."
@@ -2669,13 +2693,21 @@ msgid ""
 "uncompressed and written as a raw image to an SD card, from which the board "
 "will then boot."
 msgstr ""
+"Raspberry Pi ya da BeagleBone Black gibi tümleşik sistemler için SD kart "
+"görüntüleri. Bunlar <link xlink:href=\"https://www.freebsd.org/where.html\">"
+"Download FreeBSD</link> sayfasından indirilebilir. Bu dosyalar "
+"sıkıştırılmamış olmalı ve ham görüntü olarak daha sonra önyükleme yapılacağı "
+"SD karta yazılmalıdır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2896
+#, fuzzy
 msgid ""
 "Installation images, to install FreeBSD on a hard drive for the usual "
 "desktop, laptop, or server systems."
 msgstr ""
+"FreeBSD'yi masaüstü, dizüstü bilgisayar ya da sunucu sistemlerine yükleme "
+"için yükleme görüntüleri."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2902
@@ -2684,9 +2716,13 @@ msgid ""
 "install FreeBSD using the text-based installation program named "
 "<application>bsdinstall</application>."
 msgstr ""
+"Bu bölümün kalanı dödüncü durumu, FreeBSD'yi "
+"<application>bsdinstall</application> ismindeki metin tabanlı yükleme "
+"programı ile nasıl kurulduğunu açıklıyor."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2907
+#, fuzzy
 msgid ""
 "In general, the installation instructions in this chapter are written for "
 "the <trademark>i386</trademark> and <acronym>AMD64</acronym> architectures. "
@@ -2695,6 +2731,11 @@ msgid ""
 "so use this chapter as a general guide rather than as a set of literal "
 "instructions."
 msgstr ""
+"Geneller olarak, bu bölümdeki yükleme yönergeleri <trademark>i386</trademark>"
+" ve <acronym>AMD64</acronym>  mimarilerine göre yazılmıştır. Uygun "
+"olduğunda, diğer platformlara özgü yönergeler listelenecektir. Burada "
+"gösterilen ve yükleyici arasında küçük farklılıklar olabilir, yani bu bölümü "
+"bire bir yönergedense genel kılavuz olarak kullanın."
 
 #. (itstool) path: note/para
 #: book.translate.xml:2915
