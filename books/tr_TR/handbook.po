@@ -20,8 +20,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-06-30 16:13+0000\n"
-"Last-Translator: ilaydaasal <ilaydaasal92@gmail.com>\n"
+"PO-Revision-Date: 2020-07-01 12:55+0000\n"
+"Last-Translator: firdevssevik <sevikfirdevs@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -41219,8 +41219,8 @@ msgid ""
 "existing network interface."
 msgstr ""
 "Bir <acronym>IP</acronym> adresi: Hapse atanır. Bir hapsin "
-"<acronym>IP</acronym> adresi genellikle mevcut bir ağ arayüzü için "
-"ilişkilendirilmiş bir diğer adrestir."
+"<acronym>IP</acronym> adresi genellikle mevcut bir ağ arayüzü için öteki ad "
+"adresidir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28032
@@ -41468,7 +41468,7 @@ msgstr "Hapis Kurulumu"
 #: book.translate.xml:28159
 #, fuzzy
 msgid "To install a Jail from the Internet"
-msgstr "İnternetten Hapis Kurma"
+msgstr "İnternetten Hapis Kurmak için"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:28161
@@ -41482,8 +41482,8 @@ msgid ""
 msgstr ""
 "<citerefentry><refentrytitle>Bsdinstall</refentrytitle><manvolnum>8</manvolnu"
 "m></citerefentry> aracı, bir hapis için gereken derlenmiş dosyaları almak ve "
-"yüklemek için kullanılabilir. Bu, hedef dizine dağıtılacak olan bir aynanın "
-"ve hapsin bazı temel yapılandırmasının seçilmesinden geçecektir:"
+"yüklemek için kullanılabilir. Bu, hedef dizine dağıtılacak olan bir "
+"aynalamanın ve hapsin bazı temel yapılandırmasının seçilmesinden geçecektir:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:28167
@@ -41507,7 +41507,7 @@ msgstr ""
 #: book.translate.xml:28174
 #, fuzzy
 msgid "To install a Jail from an ISO"
-msgstr "ISO'dan Hapis Kurma"
+msgstr "ISO'dan Hapis Kurmak için"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:28176
@@ -41577,7 +41577,7 @@ msgstr ""
 #: book.translate.xml:28197
 #, fuzzy
 msgid "To install just the base system:"
-msgstr "Sadece Temel Sistemi Kurma:"
+msgstr "Sadece Temel Sistemi Kurmak için:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:28199
@@ -41589,7 +41589,7 @@ msgstr "<prompt>#</prompt> <userinput>tar -xf base.txz -C $DESTDIR</userinput>"
 #: book.translate.xml:28201
 #, fuzzy
 msgid "To install everything except the kernel:"
-msgstr "Çekirdek Dışındaki Her Şeyi Kurma:"
+msgstr "Çekirdek Hariç Her Şeyi Kurmak için:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:28203
@@ -41603,7 +41603,7 @@ msgstr ""
 #: book.translate.xml:28207
 #, fuzzy
 msgid "To build and install a Jail from source"
-msgstr "Kaynaktan bir Hapis oluşturma ve kurma"
+msgstr "Kaynaktan bir Hapis oluşturmak ve kurmak için"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:28209
@@ -42251,9 +42251,9 @@ msgid ""
 "has to be rebuilt from scratch whenever it is upgraded. This can be time "
 "consuming and tedious if a lot of jails are created and manually updated."
 msgstr ""
-"Birden fazla hapsin yönetimi sorun yaratabilir çünkü her sınıf "
-"atladıklarında hapislerin tümü sıfırdan oluşturulmalıdır. Çok sayıda hapis "
-"oluşturulur ve manuel olarak güncellenirse bu zaman alıcı ve yorucu olabilir."
+"Birden fazla hapsin yönetimi sorun yaratabilir çünkü her yükseltildiklerinde "
+"hapislerin tümü sıfırdan oluşturulmalıdır. Çok sayıda hapis oluşturulur ve "
+"manuel olarak güncellenirse bu zaman alıcı ve yorucu olabilir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:28528
@@ -42273,8 +42273,8 @@ msgstr ""
 "paylaşım yaparak bu sorunu çözmek için bir yöntem gösterir. Bu, "
 "<acronym></acronym>HTTP, <acronym></acronym>DNS ve <acronym>SMTP</acronym> "
 "gibi tek hizmetlerin ayrı ayrı hapislere yerleştirilmesini daha cazip hale "
-"getirir. Ayrıca, hapisleri eklemek, kaldırmak ve hapislere sınıf atlatmak "
-"için basit bir yol sağlar."
+"getirir. Ayrıca, hapisleri eklemek, kaldırmak ve hapisleri yükseltmek için "
+"basit bir yol sağlar."
 
 #. (itstool) path: note/para
 #: book.translate.xml:28538
@@ -42318,8 +42318,7 @@ msgstr ""
 #: book.translate.xml:28560
 #, fuzzy
 msgid "Make it easy to update or upgrade existing jails."
-msgstr ""
-"Mevcut hapislerin güncellenmesini veya sınıf atlatılmasını kolaylaştırın."
+msgstr "Mevcut hapislerin güncellenmesini veya yükseltilmesini kolaylaştırın."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:28564
@@ -42450,8 +42449,9 @@ msgid ""
 msgstr ""
 "İlk olarak, ana bilgisayar FreeBSD sisteminin en son -RELEASE şubesini <xref "
 "linkend=\"makeworld\"/>'daki talimatları kullanarak güncellemeniz önerilir. "
-"Ayrıca, bu şablon <package>sysutils/cpdup</package> paketini veya portunu "
-"kullanır ve portsnap, FreeBSD Port Koleksiyonunu indirmek için kullanılır."
+"Ayrıca, bu şablon <package>sysutils/cpdup</package> paketini veya bağlantı "
+"noktasını kullanır ve portsnap, FreeBSD Port Koleksiyonunu indirmek için "
+"kullanılır."
 
 #. (itstool) path: step/para
 #: book.translate.xml:28640
@@ -42626,10 +42626,10 @@ msgid ""
 "for <literal>WRKDIRPREFIX</literal> allows builds to be done in the read-"
 "write portion of every jail."
 msgstr ""
-"Bu, her bir hapiste FreeBSD portlarının derlenmesini mümkün kılar. Port "
-"dizininin salt okunur sistemin bir parçası olduğunu unutmayın. "
-"<literal>WRKDIRPREFIX</literal> için özel yol, yapıların her hapsin okuma-"
-"yazma bölümünde oluşturulmasına izin verir."
+"Bu, her bir hapiste FreeBSD bağlantı noktalarının derlenmesini mümkün kılar. "
+"Bağlantı noktaları dizininin salt okunur sistemin bir parçası olduğunu "
+"unutmayın. <literal>WRKDIRPREFIX</literal> için özel yol, yapıların her "
+"hapsin okuma-yazma bölümünde oluşturulmasına izin verir."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:28721
@@ -42872,7 +42872,7 @@ msgstr "<prompt>#</prompt> <userinput>jexec 3 tcsh</userinput>"
 #: book.translate.xml:28835
 #, fuzzy
 msgid "Upgrading"
-msgstr "Sınıf Atlatma"
+msgstr "Yükseltme"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:28837
@@ -42882,8 +42882,8 @@ msgid ""
 "while minimizing their downtime. Also, it provides a way to roll back to the "
 "older version should a problem occur."
 msgstr ""
-"Bu kurulumun tasarımı aksama sürelerini en aza indirirken mevcut hapislere "
-"sınıf atlatmak için kolay bir yol sağlar. Ayrıca, bir sorun oluştuğunda eski "
+"Bu kurulumun tasarımı aksama sürelerini en aza indirirken mevcut hapisleri "
+"yükseltmek için kolay bir yol sağlar. Ayrıca, bir sorun oluştuğunda eski "
 "sürüme geri dönmenin bir yolunu sunar."
 
 #. (itstool) path: step/para
@@ -42893,8 +42893,8 @@ msgid ""
 "The first step is to upgrade the host system. Then, create a new temporary "
 "read-only template in <filename>/home/j/mroot2</filename>."
 msgstr ""
-"İlk adım ana bilgisayar sistemine sınıf atlatmaktır. Ardından, <filename>/"
-"home/j/mroot2</filename> içinde yeni bir geçici salt okunur şablon oluşturun."
+"İlk adım ana bilgisayar sistemini yükseltmektir. Ardından, <filename>/home/j/"
+"mroot2</filename> içinde yeni bir geçici salt okunur şablon oluşturun."
 
 #. (itstool) path: step/screen
 #: book.translate.xml:28848
@@ -43084,10 +43084,10 @@ msgstr ""
 "Birden fazla hapis oluşturmak ve yönetmek hızla sıkıcı ve hataya açık hale "
 "gelebilir. Dirk Engling'in <application>ezjail</application>'i birçok hapis "
 "görevini otomatikleştirir ve büyük ölçüde basitleştirir. Şablon olarak bir "
-"<emphasis>basejail</emphasis> oluşturulur. Ek hapisler ek disk alanı "
-"kullanmadan pek çok basejail dizinlerini paylaşmak için <citerefentry><refent"
-"rytitle>mount_nullfs</refentrytitle><manvolnum>8</manvolnum></citerefentry> "
-"kullanır. Her ek hapis, uygulamalar yüklenmeden önce yalnızca birkaç "
+"<emphasis>basejail</emphasis> (temel hapis) oluşturulur. Ek hapisler ek disk "
+"alanı kullanmadan pek çok basejail dizinlerini paylaşmak için <citerefentry><"
+"refentrytitle>mount_nullfs</refentrytitle><manvolnum>8</manvolnum></citerefen"
+"try> kullanır. Her ek hapis, uygulamalar yüklenmeden önce yalnızca birkaç "
 "megabayt disk alanı kaplar. Basejail'deki kullanıcı alanının kopyasını "
 "yükseltmek diğer tüm hapishaneler otomatik olarak yükseltir."
 
@@ -43659,9 +43659,9 @@ msgid ""
 "acronym> address are not set here. Those values are already provided by the "
 "jail configuration."
 msgstr ""
-"<filename>/etc/rc.conf</filename>'a yapılandırma ayarlarını girin. Bu tam "
-"bir bilgisayarı yapılandırmaya benzer. Ana bilgisayar adı ve "
-"<acronym>IP</acronym> adresi burada ayarlanmamıştır. Bu değerler hapis "
+"<filename>/etc/rc.conf</filename>'a yapılandırma ayarlarını girin. Bu tüm "
+"bir bilgisayarı (a full computer) yapılandırmaya benzer. Ana bilgisayar adı "
+"ve <acronym>IP</acronym> adresi burada ayarlanmamıştır. Bu değerler hapis "
 "yapılandırması tarafından zaten sağlanmıştır."
 
 #. (itstool) path: sect2/para
@@ -44040,68 +44040,92 @@ msgstr "<prompt>#</prompt> <userinput>ezjail-admin update -P</userinput>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:29368
+#, fuzzy
 msgid "Controlling Jails"
-msgstr ""
+msgstr "Hapisleri Denetleme"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:29371
+#, fuzzy
 msgid "Stopping and Starting Jails"
-msgstr ""
+msgstr "Hapisleri Durdurma ve Başlatma"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:29373
+#, fuzzy
 msgid ""
 "<application>ezjail</application> automatically starts jails when the "
 "computer is started. Jails can be manually stopped and restarted with "
 "<command>stop</command> and <command>start</command>:"
 msgstr ""
+"<application>ezjail</application> bilgisayar başlatıldığında otomatik olarak "
+"hapisleri başlatır. Hapisler manuel olarak durdurulabilir ve "
+"<command>stop</command> ve <command>start</command> ile yeniden "
+"başlatılabilir:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:29378
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>ezjail-admin stop <replaceable>sambajail</replaceable></userinput>\n"
 "Stopping jails: sambajail."
 msgstr ""
+"<prompt>#</prompt> <userinput>ezjail-admin stop "
+"<replaceable>sambajail</replaceable></userinput>\n"
+"Stopping jails: sambajail."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:29381
+#, fuzzy
 msgid ""
 "By default, jails are started automatically when the host computer starts. "
 "Autostarting can be disabled with <command>config</command>:"
 msgstr ""
+"Varsayılan olarak ana bilgisayar başlatıldığında hapisler otomatik olarak "
+"başlatılır. Otomatik başlatma <command>config</command> ile devre dışı "
+"bırakılabilir:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:29385
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>ezjail-admin config -r norun <replaceable>seldomjail</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>ezjail-admin config -r norun "
+"<replaceable>seldomjail</replaceable></userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:29387
+#, fuzzy
 msgid ""
 "This takes effect the next time the host computer is started. A jail that is "
 "already running will not be stopped."
 msgstr ""
+"Bu, ana bilgisayarın bir sonraki başlatılışında geçerli olur. Halihazırda "
+"çalışan bir hapis durdurulmaz."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:29391
+#, fuzzy
 msgid "Enabling autostart is very similar:"
-msgstr ""
+msgstr "Otomatik başlatmayı etkinleştirmek çok benzerdir:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:29393
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>ezjail-admin config -r run <replaceable>oftenjail</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>ezjail-admin config -r run "
+"<replaceable>oftenjail</replaceable></userinput>"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:29397
+#, fuzzy
 msgid "Archiving and Restoring Jails"
-msgstr ""
+msgstr "Hapisleri Arşivleme ve Geri Yükleme"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:29399
+#, fuzzy
 msgid ""
 "Use <command>archive</command> to create a <filename>.tar.gz</filename> "
 "archive of a jail. The file name is composed from the name of the jail and "
@@ -44110,23 +44134,35 @@ msgid ""
 "directory can be chosen by setting <varname>ezjail_archivedir</varname> in "
 "the configuration file."
 msgstr ""
+"Bir hapsin <filename>.tar.gz</filename> arşivini oluşturmak için "
+"<command>archive</command> kullanın. Dosya adı, hapsin adından ve geçerli "
+"tarihten oluşur. Arşiv dosyaları arşiv dizinine <filename>/usr/jails/"
+"ezjail_archives</filename> yazılır. Yapılandırma dosyasında "
+"<varname>ezjail_archivedir</varname> ayarlanarak farklı bir arşiv dizini "
+"seçilebilir."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:29408
+#, fuzzy
 msgid ""
 "The archive file can be copied elsewhere as a backup, or an existing jail "
 "can be restored from it with <command>restore</command>. A new jail can be "
 "created from the archive, providing a convenient way to clone existing jails."
 msgstr ""
+"Arşiv dosyası başka bir yere yedek olarak kopyalanabilir veya mevcut bir "
+"hapis <command>restore</command> ile oradan geri yüklenebilir. Mevcut "
+"hapisleri klonlamak için uygun bir yol sağlayan arşivden yeni bir hapis "
+"oluşturulabilir."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:29414
+#, fuzzy
 msgid "Stop and archive a jail named <literal>wwwserver</literal>:"
-msgstr ""
+msgstr "<literal>wwwserver</literal> adlı bir hapsi durdurun ve arşivleyin:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:29417
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>ezjail-admin stop <replaceable>wwwserver</replaceable></userinput>\n"
 "Stopping jails: wwwserver.\n"
@@ -44134,99 +44170,140 @@ msgid ""
 "<prompt>#</prompt> <userinput>ls /usr/jails/ezjail-archives/</userinput>\n"
 "wwwserver-201407271153.13.tar.gz"
 msgstr ""
+"<prompt>#</prompt> <userinput>ezjail-admin stop "
+"<replaceable>wwwserver</replaceable></userinput>\n"
+"Stopping jails: wwwserver.\n"
+"<prompt>#</prompt> <userinput>ezjail-admin archive "
+"<replaceable>wwwserver</replaceable></userinput>\n"
+"<prompt>#</prompt> <userinput>ls /usr/jails/ezjail-archives/</userinput>\n"
+"wwwserver-201407271153.13.tar.gz"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:29423
+#, fuzzy
 msgid ""
 "Create a new jail named <literal>wwwserver-clone</literal> from the archive "
 "created in the previous step. Use the <filename>em1</filename> interface and "
 "assign a new <acronym>IP</acronym> address to avoid conflict with the "
 "original:"
 msgstr ""
+"Önceki adımda oluşturulan arşivden <literal>wwwserver-clone</literal> adlı "
+"yeni bir hapis oluşturun. Orijinaliyle çakışmasını önlemek için "
+"<filename>em1</filename> arayüzünü kullanın ve yeni bir <acronym>IP</acronym>"
+" adresi atayın:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:29429
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>ezjail-admin create -a /usr/jails/ezjail_archives/wwwserver-201407271153.13.tar.gz <replaceable>wwwserver-clone</replaceable> 'lo1|127.0.3.1,em1|192.168.1.51'</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>ezjail-admin create -a /usr/jails/"
+"ezjail_archives/wwwserver-201407271153.13.tar.gz <replaceable>wwwserver-"
+"clone</replaceable> 'lo1|127.0.3.1,em1|192.168.1.51'</userinput>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:29434
+#, fuzzy
 msgid "Full Example: <application>BIND</application> in a Jail"
-msgstr ""
+msgstr "Tam Örnek: Hapiste <application>BIND</application>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:29437
+#, fuzzy
 msgid ""
 "Putting the <application>BIND</application> <acronym>DNS</acronym> server in "
 "a jail improves security by isolating it. This example creates a simple "
 "caching-only name server."
 msgstr ""
+"<application>BIND</application><acronym> DNS</acronym> sunucusunu hapse "
+"koymak güvenliği izole ederek geliştirir. Bu örnek, basit bir yalnızca "
+"önbelleğe alma ad sunucusu oluşturur."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:29444
+#, fuzzy
 msgid "The jail will be called <literal>dns1</literal>."
-msgstr ""
+msgstr "Hapis <literal>dns1</literal> olarak adlandırılacaktır."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:29449
+#, fuzzy
 msgid ""
 "The jail will use <acronym>IP</acronym> address <literal>192.168.1.240</"
 "literal> on the host's <literal>re0</literal> interface."
 msgstr ""
+"Hapis, ana bilgisayarın <literal>re0</literal> arayüzünde "
+"<literal>192.168.1.240</literal> <acronym>IP</acronym> adresini kullanacak."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:29455
+#, fuzzy
 msgid ""
 "The upstream <acronym>ISP</acronym>'s DNS servers are at <literal>10.0.0.62</"
 "literal> and <literal>10.0.0.61</literal>."
 msgstr ""
+"Yukarı akım <acronym>ISP</acronym>'nin DNS sunucuları "
+"<literal>10.0.0.62</literal> ve <literal>10.0.0.61</literal>'dedir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:29461
+#, fuzzy
 msgid ""
 "The basejail has already been created and a ports tree installed as shown in "
 "<xref linkend=\"jails-ezjail-initialsetup\"/>."
 msgstr ""
+"Basejail zaten oluşturulmuştur ve <xref linkend=\"jails-ezjail-initialsetup\""
+"/>'da gösterildiği gibi bir bağlantı noktası ağacı kurulmuştur."
 
 #. (itstool) path: example/title
 #: book.translate.xml:29468
+#, fuzzy
 msgid "Running BIND in a Jail"
-msgstr ""
+msgstr "Bir Hapiste BIND Çalıştırma"
 
 #. (itstool) path: example/para
 #: book.translate.xml:29470
+#, fuzzy
 msgid ""
 "Create a cloned loopback interface by adding a line to <filename>/etc/rc."
 "conf</filename>:"
 msgstr ""
+"<filename>/etc/rc.conf</filename>'a bir satır ekleyerek klonlanmış bir geri "
+"döngü arayüzü oluşturun:"
 
 #. (itstool) path: example/para
 #: book.translate.xml:29475
+#, fuzzy
 msgid "Immediately create the new loopback interface:"
-msgstr ""
+msgstr "Hemen yeni geri döngü arayüzünü oluşturun:"
 
 #. (itstool) path: example/para
 #: book.translate.xml:29480
+#, fuzzy
 msgid "Create the jail:"
-msgstr ""
+msgstr "Hapsi oluşturun:"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:29482
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>ezjail-admin create dns1 'lo1|127.0.2.1,re0|192.168.1.240'</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>ezjail-admin create dns1 "
+"'lo1|127.0.2.1,re0|192.168.1.240'</userinput>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:29484
+#, fuzzy
 msgid ""
 "Start the jail, connect to a console running on it, and perform some basic "
 "configuration:"
 msgstr ""
+"Hapsi başlatın, üzerinde çalışan bir konsola bağlayın ve bazı temel "
+"yapılandırmaları gerçekleştirin:"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:29487
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>ezjail-admin start dns1</userinput>\n"
 "<prompt>#</prompt> <userinput>ezjail-admin console dns1</userinput>\n"
@@ -44238,54 +44315,84 @@ msgid ""
 "<prompt>#</prompt> <userinput>sed -i .bak -e '/adjkerntz/ s/^/#/' /etc/crontab</userinput>\n"
 "<prompt>#</prompt> <userinput>sed -i .bak -e 's/127.0.0.1/127.0.2.1/g; s/localhost.my.domain/dns1.my.domain dns1/' /etc/hosts</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>ezjail-admin start dns1</userinput>\n"
+"<prompt>#</prompt> <userinput>ezjail-admin console dns1</userinput>\n"
+"<prompt>#</prompt> <userinput>passwd</userinput>\n"
+"Changing local password for root\n"
+"New Password:\n"
+"Retype New Password:\n"
+"<prompt>#</prompt> <userinput>tzsetup</userinput>\n"
+"<prompt>#</prompt> <userinput>sed -i .bak -e '/adjkerntz/ s/^/#/' /etc/"
+"crontab</userinput>\n"
+"<prompt>#</prompt> <userinput>sed -i .bak -e 's/127.0.0.1/127.0.2.1/g; s/"
+"localhost.my.domain/dns1.my.domain dns1/' /etc/hosts</userinput>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:29497
+#, fuzzy
 msgid ""
 "Temporarily set the upstream <acronym>DNS</acronym> servers in <filename>/"
 "etc/resolv.conf</filename> so ports can be downloaded:"
 msgstr ""
+"Bağlantı noktalarının indirilebilmesi için yukarı akım <acronym>DNS</acronym>"
+" sunucularını geçici olarak <filename>/etc/resolv.conf </filename> dosyasına "
+"ayarlayın:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:29501
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "nameserver 10.0.0.62\n"
 "nameserver 10.0.0.61"
 msgstr ""
+"nameserver 10.0.0.62\n"
+"nameserver 10.0.0.61"
 
 #. (itstool) path: example/para
 #: book.translate.xml:29504
+#, fuzzy
 msgid ""
 "Still using the jail console, install <package role=\"port\">dns/bind99</"
 "package>."
 msgstr ""
+"Hâlâ hapis konsolunu kullanarak <package role=\"port\">dns/bind99</package>"
+"'u yükleyin."
 
 #. (itstool) path: example/screen
 #: book.translate.xml:29507
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>make -C /usr/ports/dns/bind99 install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>make -C /usr/ports/dns/bind99 install "
+"clean</userinput>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:29509
+#, fuzzy
 msgid ""
 "Configure the name server by editing <filename>/usr/local/etc/namedb/named."
 "conf</filename>."
 msgstr ""
+"<filename>/usr/local/etc/namedb/named.conf</filename>'u düzenleyerek ad "
+"sunucusunu yapılandırın."
 
 #. (itstool) path: example/para
 #: book.translate.xml:29512
+#, fuzzy
 msgid ""
 "Create an Access Control List (<acronym>ACL</acronym>) of addresses and "
 "networks that are permitted to send <acronym>DNS</acronym> queries to this "
 "name server. This section is added just before the <literal>options</"
 "literal> section already in the file:"
 msgstr ""
+"Bu ad sunucusuna <acronym>DNS</acronym> sorguları göndermesine izin verilen "
+"adreslerin ve ağların bir Erişim Denetim Listesi (<acronym>ACL: Access "
+"Control List</acronym>) oluşturun. Bu bölüm, dosyada bulunan "
+"<literal>seçenekler</literal> bölümünün hemen öncesine eklenir:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:29518
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "...\n"
 "// or cause huge amounts of useless Internet traffic.\n"
@@ -44299,32 +44406,51 @@ msgid ""
 "options {\n"
 "..."
 msgstr ""
+"...\n"
+"// or cause huge amounts of useless Internet traffic.\n"
+"\n"
+"acl \"trusted\" {\n"
+"\t192.168.1.0/24;\n"
+"\tlocalhost;\n"
+"\tlocalnets;\n"
+"};\n"
+"\n"
+"options {\n"
+"..."
 
 #. (itstool) path: example/para
 #: book.translate.xml:29530
+#, fuzzy
 msgid ""
 "Use the jail <acronym>IP</acronym> address in the <literal>listen-on</"
 "literal> setting to accept <acronym>DNS</acronym> queries from other "
 "computers on the network:"
 msgstr ""
+"Ağdaki diğer bilgisayarlardan <acronym>DNS</acronym> sorgularını kabul etmek "
+"için <literal>listen-on</literal> ayarındaki hapis <acronym>IP</acronym> "
+"adresini kullanın:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:29535
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "\tlisten-on\t{ 192.168.1.240; };"
-msgstr ""
+msgstr "\tlisten-on\t{ 192.168.1.240; };"
 
 #. (itstool) path: example/para
 #: book.translate.xml:29537
+#, fuzzy
 msgid ""
 "A simple caching-only <acronym>DNS</acronym> name server is created by "
 "changing the <literal>forwarders</literal> section. The original file "
 "contains:"
 msgstr ""
+"<literal>forwarders</literal> bölümü değiştirilerek basit bir yalnızca "
+"önbelleğe alma <acronym>DNS</acronym> ad sunucusu oluşturulur. Orijinal "
+"dosya şunları içerir:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:29541
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "/*\n"
 "\tforwarders {\n"
@@ -44332,9 +44458,15 @@ msgid ""
 "\t};\n"
 "*/"
 msgstr ""
+"/*\n"
+"\tforwarders {\n"
+"\t\t127.0.0.1;\n"
+"\t};\n"
+"*/"
 
 #. (itstool) path: example/para
 #: book.translate.xml:29547
+#, fuzzy
 msgid ""
 "Uncomment the section by removing the <literal>/*</literal> and <literal>*/</"
 "literal> lines. Enter the <acronym>IP</acronym> addresses of the upstream "
@@ -44342,10 +44474,15 @@ msgid ""
 "literal> section, add references to the <literal>trusted</literal> "
 "<acronym>ACL</acronym> defined earlier:"
 msgstr ""
+"<literal>/*</literal> ve <literal>*/</literal> satırlarını kaldırarak bölümü "
+"açın. Yukarı akım <acronym>DNS</acronym> sunucularının <acronym>IP</acronym> "
+"adreslerini girin. <literal>forwarders</literal> bölümünden hemen sonra, "
+"daha önce tanımlanan <literal>güvenilir</literal><acronym>ACL</acronym>'ye "
+"referanslar ekleyin:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:29555
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "\tforwarders {\n"
 "\t\t10.0.0.62;\n"
@@ -44356,87 +44493,120 @@ msgid ""
 "\tallow-recursion   { trusted; };\n"
 "\tallow-query-cache { trusted; };"
 msgstr ""
+"\tforwarders {\n"
+"\t\t10.0.0.62;\n"
+"\t\t10.0.0.61;\n"
+"\t};\n"
+"\n"
+"\tallow-query       { any; };\n"
+"\tallow-recursion   { trusted; };\n"
+"\tallow-query-cache { trusted; };"
 
 #. (itstool) path: example/para
 #: book.translate.xml:29564
+#, fuzzy
 msgid "Enable the service in <filename>/etc/rc.conf</filename>:"
-msgstr ""
+msgstr "<filename>/etc/rc.conf</filename>'taki hizmeti etkinleştirin:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:29567
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "named_enable=\"YES\""
-msgstr ""
+msgstr "named_enable=\"YES\""
 
 #. (itstool) path: example/para
 #: book.translate.xml:29569
+#, fuzzy
 msgid "Start and test the name server:"
-msgstr ""
+msgstr "Ad sunucusunu başlatın ve sınayın:"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:29571
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>service named start</userinput>\n"
 "wrote key file \"/usr/local/etc/namedb/rndc.key\"\n"
 "Starting named.\n"
 "<prompt>#</prompt> <userinput>/usr/local/bin/dig @192.168.1.240 freebsd.org</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>service named start</userinput>\n"
+"wrote key file \"/usr/local/etc/namedb/rndc.key\"\n"
+"Starting named.\n"
+"<prompt>#</prompt> <userinput>/usr/local/bin/dig @192.168.1.240 "
+"freebsd.org</userinput>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:29576
+#, fuzzy
 msgid "A response that includes"
-msgstr ""
+msgstr "Bir yanıt şunu içeriyorsa"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:29578
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ";; Got answer;"
-msgstr ""
+msgstr ";; Got answer;"
 
 #. (itstool) path: example/para
 #: book.translate.xml:29580
+#, fuzzy
 msgid ""
 "shows that the new <acronym>DNS</acronym> server is working. A long delay "
 "followed by a response including"
 msgstr ""
+"bu, yeni <acronym>DNS</acronym>sunucusunun çalıştığını gösterir. Uzun bir "
+"gecikme varsa ve ardından aşağıdakileri şunu içeren bir yanıt geliyorsa"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:29584
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ";; connection timed out; no servers could be reached"
-msgstr ""
+msgstr ";; connection timed out; no servers could be reached"
 
 #. (itstool) path: example/para
 #: book.translate.xml:29586
+#, fuzzy
 msgid ""
 "shows a problem. Check the configuration settings and make sure any local "
 "firewalls allow the new <acronym>DNS</acronym> access to the upstream "
 "<acronym>DNS</acronym> servers."
 msgstr ""
+"bu bir sorun olduğunu gösterir. Yapılandırma ayarlarını kontrol edin ve tüm "
+"yerel güvenlik duvarlarının yukarı akım <acronym>DNS</acronym> sunucularına, "
+"yeni <acronym>DNS</acronym> erişimine izin verdiğinden emin olun."
 
 #. (itstool) path: example/para
 #: book.translate.xml:29591
+#, fuzzy
 msgid ""
 "The new <acronym>DNS</acronym> server can use itself for local name "
 "resolution, just like other local computers. Set the address of the "
 "<acronym>DNS</acronym> server in the client computer's <filename>/etc/resolv."
 "conf</filename>:"
 msgstr ""
+"Yeni <acronym>DNS</acronym> sunucusu diğer yerel bilgisayarlar gibi yerel ad "
+"çözünürlüğü için de kendisini kullanabilir. <acronym>DNS</acronym> "
+"sunucusunun adresini istemci bilgisayarın <filename>/etc/"
+"resolv.conf</filename>'unda ayarlayın:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:29597
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "nameserver 192.168.1.240"
-msgstr ""
+msgstr "nameserver 192.168.1.240"
 
 #. (itstool) path: example/para
 #: book.translate.xml:29599
+#, fuzzy
 msgid ""
 "A local <acronym>DHCP</acronym> server can be configured to provide this "
 "address for a local <acronym>DNS</acronym> server, providing automatic "
 "configuration on <acronym>DHCP</acronym> clients."
 msgstr ""
+"Yerel bir <acronym>DHCP</acronym> sunucusu, yerel bir <acronym>DNS</acronym> "
+"sunucusu için bu adresi sağlayacak ve böylece <acronym>DHCP</acronym> "
+"istemcileri üzerinde otomatik yapılandırma sağlayacak şekilde "
+"yapılandırılabilir."
 
 #. (itstool) path: info/title
 #. (itstool) path: glossentry/glossterm
