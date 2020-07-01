@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-07-01 18:33+0000\n"
-"Last-Translator: onuraydin3 <crymzonx@gmail.com>\n"
+"Last-Translator: esradesteki <esradesteki20@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -14122,6 +14122,7 @@ msgstr "Portsnap Yöntemi"
 
 #. (itstool) path: procedure/para
 #: book.translate.xml:9962
+#, fuzzy
 msgid ""
 "The base system of FreeBSD includes <application>Portsnap</application>. "
 "This is a fast and user-friendly tool for retrieving the Ports Collection "
@@ -14129,69 +14130,92 @@ msgid ""
 "FreeBSD site, verifies the secure key, and downloads a new copy of the Ports "
 "Collection. The key is used to verify the integrity of all downloaded files."
 msgstr ""
+"FreeBSD temel sistemi <application>Portsnap</application>'i içerir. Bu, Port "
+"Koleksiyonunu geri getirmek için hızlı ve kullanıcı dostu bir araçtır ve "
+"çoğu kullanıcı için önerilen tercihtir. Bu yardımcı program FreeBSD sitesine "
+"bağlanır, güvenlik anahtarını doğrular ve Port Koleksiyonunun yeni bir "
+"kopyasını indirir. Anahtar, indirilen tüm dosyaların bütünlüğünü doğrulamak "
+"için kullanılır."
 
 #. (itstool) path: step/para
 #: book.translate.xml:9971
+#, fuzzy
 msgid ""
 "To download a compressed snapshot of the Ports Collection into <filename>/"
 "var/db/portsnap</filename>:"
 msgstr ""
+"Port Koleksiyonunun sıkıştırılmış bellek kopyasını <filename>/var/db/"
+"portsnap</filename>'e indirmek için:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:9975
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>portsnap fetch</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>portsnap fetch</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:9979
+#, fuzzy
 msgid ""
 "When running <application>Portsnap</application> for the first time, extract "
 "the snapshot into <filename>/usr/ports</filename>:"
 msgstr ""
+"<application>Portsnap</application>'i ilk kez çalıştırdığınızda, bellek "
+"kopyasını <filename>/usr/ports</filename>'a çıkarın:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:9983
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>portsnap extract</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>portsnap extract</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:9987
+#, fuzzy
 msgid ""
 "After the first use of <application>Portsnap</application> has been "
 "completed as shown above, <filename>/usr/ports</filename> can be updated as "
 "needed by running:"
 msgstr ""
+"<application>Portsnap</application>'in ilk kullanımının aşağıda gösterildiği "
+"şekilde tamamlanmasından sonra, <filename>/usr/ports</filename> gerektiği "
+"şekilde şu çalıştırılarak güncellenebilir:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:9992
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>portsnap fetch</userinput>\n"
 "<prompt>#</prompt> <userinput>portsnap update</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>portsnap fetch</userinput>\n"
+"<prompt>#</prompt> <userinput>portsnap update</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:9995
+#, fuzzy
 msgid ""
 "When using <literal>fetch</literal>, the <literal>extract</literal> or the "
 "<literal>update</literal> operation may be run consecutively, like so:"
 msgstr ""
+"<literal>fetch</literal> kullanırken, <literal>extract</literal> veya "
+"<literal>update</literal> işlemi art arda çalıştırılabilir, şöyle ki:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:9999
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>portsnap fetch update</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>portsnap fetch update</userinput>"
 
 #. (itstool) path: procedure/title
 #: book.translate.xml:10004
+#, fuzzy
 msgid "Subversion Method"
-msgstr ""
+msgstr "Subversion Yöntemi"
 
 #. (itstool) path: procedure/para
 #: book.translate.xml:10006
+#, fuzzy
 msgid ""
 "If more control over the ports tree is needed or if local changes need to be "
 "maintained, <application>Subversion</application> can be used to obtain the "
@@ -14200,67 +14224,90 @@ msgid ""
 "Primer</link> for a detailed description of <application>Subversion</"
 "application>."
 msgstr ""
+"Port ağacını daha fazla denetlemek gerekirse veya yerel değişikliklerin "
+"sürdürülmesi gerekiyorsa; Port Koleksiyonunu edinmek için "
+"<application>Subversion</application> kullanılabilir. "
+"<application>Subversion</application>'ın detaylı açıklaması için <link "
+"xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/committers-guide/"
+"subversion-primer.html\">the Subversion Primer</link>'a başvurun."
 
 #. (itstool) path: step/para
 #: book.translate.xml:10014
+#, fuzzy
 msgid ""
 "<application>Subversion</application> must be installed before it can be "
 "used to check out the ports tree. If a copy of the ports tree is already "
 "present, install <application>Subversion</application> like this:"
 msgstr ""
+"<application>Subversion</application>, port ağacını kontrol etmek için "
+"kullanılmadan önce kurulmalıdır. Port ağacının bir kopyası zaten varsa, "
+"<application>Subversion</application>'ı şu şekilde yükleyin:"
 
 #. (itstool) path: step/screen
 #. (itstool) path: sect2/screen
 #: book.translate.xml:10019 book.translate.xml:65535
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/devel/subversion</userinput>\n"
 "<prompt>#</prompt> <userinput>make install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/devel/subversion</userinput>\n"
+"<prompt>#</prompt> <userinput>make install clean</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:10022
+#, fuzzy
 msgid ""
 "If the ports tree is not available, or <application>pkg</application> is "
 "being used to manage packages, <application>Subversion</application> can be "
 "installed as a package:"
 msgstr ""
+"Port ağacı mevcut değilse veya paketleri yönetmek için "
+"<application>pkg</application> kullanılıyorsa, "
+"<application>Subversion</application> paket olarak kurulabilir:"
 
 #. (itstool) path: step/screen
 #. (itstool) path: sect2/screen
 #: book.translate.xml:10027 book.translate.xml:65535
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install subversion</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg install subversion</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:10032
+#, fuzzy
 msgid "Check out a copy of the ports tree:"
-msgstr ""
+msgstr "Port Ağacının bir kopyasını sınayın:"
 
 #. (itstool) path: step/screen
 #. (itstool) path: sect2/screen
 #: book.translate.xml:10034 book.translate.xml:65535
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>svn checkout https://svn.FreeBSD.org/ports/head /usr/ports</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>svn checkout https://svn.FreeBSD.org/ports/"
+"head /usr/ports</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:10038
+#, fuzzy
 msgid ""
 "As needed, update <filename>/usr/ports</filename> after the initial "
 "<application>Subversion</application> checkout:"
 msgstr ""
+"Gerektiğinde, ilk <application>Subversion</application> sınamasından sonra "
+"<filename>/usr/ports</filename>'u güncelleyin:"
 
 #. (itstool) path: step/screen
 #. (itstool) path: sect2/screen
 #: book.translate.xml:10042 book.translate.xml:65535
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>svn update /usr/ports</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>svn update /usr/ports</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10046
+#, fuzzy
 msgid ""
 "The Ports Collection contains directories for software categories. Inside "
 "each category are subdirectories for individual applications. Each "
@@ -14268,46 +14315,68 @@ msgid ""
 "compile and install that program, called a <emphasis>ports skeleton</"
 "emphasis>. Each port skeleton includes these files and directories:"
 msgstr ""
+"Port Koleksiyonu yazılım kategorileri için dizinler içerir. Her kategorinin "
+"içinde, bireysel uygulamalar için alt dizinler bulunur. Her uygulama alt "
+"dizini, FreeBSD'ye <emphasis>bağlantı noktaları iskeleti</emphasis> adı "
+"verilen programı nasıl derleyip kurulacağını bildiren bir dizi dosya içerir. "
+"Her port iskeleti şu dosyaları ve dizinleri içerir:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10056
+#, fuzzy
 msgid ""
 "<filename>Makefile</filename>: contains statements that specify how the "
 "application should be compiled and where its components should be installed."
 msgstr ""
+"<filename>Makefile</filename>: uygulamanın nasıl derlenmesi gerektiğini ve "
+"bileşenlerinin nereye kurulacağını belirten komutlar içerir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10062
+#, fuzzy
 msgid ""
 "<filename>distinfo</filename>: contains the names and checksums of the files "
 "that must be downloaded to build the port."
 msgstr ""
+"<filename>distinfo</filename>: port oluşturmak için indirilmesi gereken "
+"dosyaların adlarını ve sağlama toplamlarını içerir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10068
+#, fuzzy
 msgid ""
 "<filename>files/</filename>: this directory contains any patches needed for "
 "the program to compile and install on FreeBSD. This directory may also "
 "contain other files used to build the port."
 msgstr ""
+"<filename>files/</filename>: Bu dizin, FreeBSD'de derlenmesi ve yüklenmesi "
+"için programa gerekli olan yamaları içerir. Bu dizin, port oluşturmak için "
+"kullanılan başka dosyalar da içerebilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10075
+#, fuzzy
 msgid ""
 "<filename>pkg-descr</filename>: provides a more detailed description of the "
 "program."
 msgstr ""
+"<filename>pkg-descr</filename>: programın daha detaylı açıklamasını sunar."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10080
+#, fuzzy
 msgid ""
 "<filename>pkg-plist</filename>: a list of all the files that will be "
 "installed by the port. It also tells the ports system which files to remove "
 "upon deinstallation."
 msgstr ""
+"<filename>pkg-plist</filename>: port tarafından kurulacak olan tüm "
+"dosyaların listesi. Ayrıca port sistemine, kaldırıldıktan sonra hangi "
+"dosyaların silineceğini bildirir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10087
+#, fuzzy
 msgid ""
 "Some ports include <filename>pkg-message</filename> or other files to handle "
 "special situations. For more details on these files, and on ports in "
@@ -14315,28 +14384,40 @@ msgid ""
 "ISO8859-1/books/porters-handbook/index.html\">FreeBSD Porter's Handbook</"
 "link>."
 msgstr ""
+"Bazı portlar özel durumlarla başa çıkmak için <filename>pkg-"
+"message</filename> veya diğer dosyaları içerir. Bu dosyalar ve genel olarak "
+"portlar hakkında daha detaylı bilgi için, <link xlink:href=\""
+"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/porters-handbook/index.html\">"
+"FreeBSD Porter's Handbook</link>'e başvurun."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10092
+#, fuzzy
 msgid ""
 "The port does not include the actual source code, also known as a "
 "<filename>distfile</filename>. The extract portion of building a port will "
 "automatically save the downloaded source to <filename>/usr/ports/distfiles</"
 "filename>."
 msgstr ""
+"Port, <filename>distfile</filename> olarak da bilinen asıl kaynak kodunu "
+"içermez. Bir port oluşturmanın ayıklanan kısmı, indirilen kaynağı otomatik "
+"olarak <filename>/usr/ports/distfiles</filename> klasörüne kaydedecektir."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:10098
+#, fuzzy
 msgid "Installing Ports"
-msgstr ""
+msgstr "Portların Kurulumu"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:10100
+#, fuzzy
 msgid "<primary>ports</primary> <secondary>installing</secondary>"
-msgstr ""
+msgstr "<primary>ports</primary> <secondary>installing</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10105
+#, fuzzy
 msgid ""
 "This section provides basic instructions on using the Ports Collection to "
 "install or remove software. The detailed description of available "
@@ -14344,9 +14425,15 @@ msgid ""
 "<citerefentry><refentrytitle>ports</refentrytitle><manvolnum>7</manvolnum></"
 "citerefentry>."
 msgstr ""
+"Bu bölüm, yazılımı yüklemek veya kaldırmak için Port Koleksiyonunu kullanma "
+"konusunda temel talimatlar sunar. Mevcut <command>make</command> "
+"hedeflerinin ve ortam değişkenlerinin detaylı açıklaması <citerefentry><refen"
+"trytitle>ports</refentrytitle><manvolnum>7</manvolnum></citerefentry>'de "
+"bulunmaktadır."
 
 #. (itstool) path: warning/para
 #: book.translate.xml:10111
+#, fuzzy
 msgid ""
 "Before compiling any port, be sure to update the Ports Collection as "
 "described in the previous section. Since the installation of any third-party "
@@ -14360,25 +14447,45 @@ msgid ""
 "manvolnum></citerefentry> and <citerefentry><refentrytitle>periodic</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 msgstr ""
+"Herhangi bir portu derlemeden önce, Port Koleksiyonunu önceki bölümde "
+"açıklandığı gibi güncellediğinizden emin olun. Herhangi bir üçüncü taraf "
+"yazılımının yüklenmesi güvenlik açıkları oluşturabileceğinden, öncelikle "
+"portla ilgili bilinen güvenlik sorunları için <link xlink:href=\""
+"https://vuxml.freebsd.org/\"/> bölümünü kontrol etmeniz önerilir. Sırayla, "
+"yeni bir port kurmadan önce <command>pkg audit -F</command> komutunu "
+"çalıştırın. Bu komut, günlük güvenlik sistem denetimi sırasında, bir "
+"güvenlik denetimi ve açıklık veritabanının güncelleştirilmesini otomatik "
+"olarak gerçekleştirecek şekilde yapılandırılabilir. Daha fazla bilgi için, "
+"<citerefentry><refentrytitle>pkg-"
+"audit</refentrytitle><manvolnum>8</manvolnum></citerefentry> ve <citerefentry"
+"><refentrytitle>periodic</refentrytitle><manvolnum>8</manvolnum></citerefentr"
+"y>.'e başvurun."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10125
+#, fuzzy
 msgid ""
 "Using the Ports Collection assumes a working Internet connection. It also "
 "requires superuser privilege."
 msgstr ""
+"Port Koleksiyonunu kullanmak için, çalışır durumda bir İnternet bağlantısı "
+"olduğunu varsayılır. Aynı zamanda yetkili kullanıcı ayrıcalığı gerektirir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10128
+#, fuzzy
 msgid ""
 "To compile and install the port, change to the directory of the port to be "
 "installed, then type <command>make install</command> at the prompt. Messages "
 "will indicate the progress:"
 msgstr ""
+"Portu derlemek ve yüklemek için yüklenecek port dizinine gidin, ardından "
+"komut istemine <command>make install</command> yazın. Mesajlar ilerlemeyi "
+"gösterecektir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:10133
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/sysutils/lsof</userinput>\n"
 "<prompt>#</prompt> <userinput>make install</userinput>\n"
@@ -14413,17 +14520,56 @@ msgid ""
 "/usr/local/sbin/lsof\n"
 "<prompt>#</prompt>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/sysutils/lsof</userinput>\n"
+"<prompt>#</prompt> <userinput>make install</userinput>\n"
+"&gt;&gt; lsof_4.88D.freebsd.tar.gz doesn't seem to exist in /usr/ports/"
+"distfiles/.\n"
+"&gt;&gt; Attempting to fetch from ftp://lsof.itap.purdue.edu/pub/tools/unix/"
+"lsof/.\n"
+"===&gt;  Extracting for lsof-4.88\n"
+"...\n"
+"[extraction output snipped]\n"
+"...\n"
+"&gt;&gt; Checksum OK for lsof_4.88D.freebsd.tar.gz.\n"
+"===&gt;  Patching for lsof-4.88.d,8\n"
+"===&gt;  Applying FreeBSD patches for lsof-4.88.d,8\n"
+"===&gt;  Configuring for lsof-4.88.d,8\n"
+"...\n"
+"[configure output snipped]\n"
+"...\n"
+"===&gt;  Building for lsof-4.88.d,8\n"
+"...\n"
+"[compilation output snipped]\n"
+"...\n"
+"\n"
+"===&gt;  Installing for lsof-4.88.d,8\n"
+"...\n"
+"[installation output snipped]\n"
+"...\n"
+"===&gt;   Generating temporary packing list\n"
+"===&gt;   Compressing manual pages for lsof-4.88.d,8\n"
+"===&gt;   Registering installation for lsof-4.88.d,8\n"
+"===&gt;  SECURITY NOTE:\n"
+"      This port has installed the following binaries which execute with\n"
+"      increased privileges.\n"
+"/usr/local/sbin/lsof\n"
+"<prompt>#</prompt>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10166
+#, fuzzy
 msgid ""
 "Since <command>lsof</command> is a program that runs with increased "
 "privileges, a security warning is displayed as it is installed. Once the "
 "installation is complete, the prompt will be returned."
 msgstr ""
+"<command>lsof</command> artırılmış ayrıcalıklarla çalışan bir program "
+"olduğundan, yüklenirken bir güvenlik uyarısı görüntülenir. Kurulum "
+"tamamlandığında, komut istemi geri döndürülecektir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10171
+#, fuzzy
 msgid ""
 "Some shells keep a cache of the commands that are available in the "
 "directories listed in the <envar>PATH</envar> environment variable, to speed "
@@ -14433,39 +14579,59 @@ msgid ""
 "<command>hash -r</command> instead for the <command>sh</command> shell. "
 "Refer to the documentation for the shell for more information."
 msgstr ""
+"Bazı kabuklar, <envar>PATH</envar> ortam değişkeninde listelenen dizinlerde "
+"bulunan komutların önbelleğini saklar ve bu komutların çalıştırılabilir "
+"dosyası için arama işlemlerini hızlandırır. <command>tcsh</command> "
+"kabuğunun kullanıcıları, yeni yüklenen bir komutun tam yolunu belirtmeden "
+"kullanılabilmesi için <command>rehash</command> yazmalıdır. "
+"<command>sh</command> kabuğu yerine <command>hash -r</command> kullanın. "
+"Daha fazla bilgi için kabuk belgelerine başvurun."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10182
+#, fuzzy
 msgid ""
 "During installation, a working subdirectory is created which contains all "
 "the temporary files used during compilation. Removing this directory saves "
 "disk space and minimizes the chance of problems later when upgrading to the "
 "newer version of the port:"
 msgstr ""
+"Yükleme boyunca, derleme sırasında kullanılan tüm geçici dosyaları içeren "
+"çalışan bir alt dizin oluşturulur. Bu dizinin kaldırılması disk alanından "
+"tasarruf sağlar ve daha sonra portun daha yeni sürümüne yükseltme yaparken "
+"sorunla karşılaşma olasılığını en aza indirir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:10188
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>make clean</userinput>\n"
 "===&gt;  Cleaning for lsof-88.d,8\n"
 "<prompt>#</prompt>"
 msgstr ""
+"<prompt>#</prompt> <userinput>make clean</userinput>\n"
+"===&gt;  Cleaning for lsof-88.d,8\n"
+"<prompt>#</prompt>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:10193
+#, fuzzy
 msgid ""
 "To save this extra step, instead use <command>make install clean</command> "
 "when compiling the port."
 msgstr ""
+"Bu ek adımı kaydetmek için, portu derlerken bunun yerine <command>make "
+"install clean</command> komutunu kullanın."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:10198
+#, fuzzy
 msgid "Customizing Ports Installation"
-msgstr ""
+msgstr "Portların Kurulumunu Kişiselleştirme"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10200
+#, fuzzy
 msgid ""
 "Some ports provide build options which can be used to enable or disable "
 "application components, provide security options, or allow for other "
@@ -14478,19 +14644,33 @@ msgid ""
 "recursive</command> within the port skeleton. Then, run <command>make "
 "install [clean]</command> to compile and install the port."
 msgstr ""
+"Bazı portlar, uygulama bileşenlerini etkinleştirmek veya devre dışı "
+"bırakmak, güvenlik seçenekleri sağlamak veya diğer özelleştirmelere izin "
+"vermek için kullanılabilecek oluşturma seçenekleri sunar. Örnek olarak "
+"<package>www/firefox</package>, <package>security/gpgme</package> ve "
+"<package>mail/sylpheed-claws</package> verilebilir. Port, yapılandırılabilir "
+"seçeneklere sahip diğer portlara bağlıysa, varsayılan davranış kullanıcıyı "
+"bir menüden seçenekleri seçmeye yönlendirmek olduğundan kullanıcı etkileşimi "
+"için birkaç kez duraklayabilir. Bundan kaçınmak ve tüm yapılandırmayı tek "
+"seferde yapmak için, port iskeleti içinde <command>make config-"
+"recursive</command> komutunu çalıştırın. Daha sonra, portu derlemek ve "
+"yüklemek için <command>make install [clean]</command> komutunu çalıştırın."
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:10216
+#, fuzzy
 msgid "config-recursive"
-msgstr ""
+msgstr "config-recursive"
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:10218
+#, fuzzy
 msgid "all-depends-list"
-msgstr ""
+msgstr "all-depends-list"
 
 #. (itstool) path: tip/para
 #: book.translate.xml:10215
+#, fuzzy
 msgid ""
 "When using <_:buildtarget-1/>, the list of ports to configure are gathered "
 "by the <_:buildtarget-2/> target. It is recommended to run <command>make "
@@ -14498,6 +14678,11 @@ msgid ""
 "defined, and ports options screens no longer appear, to be certain that all "
 "dependency options have been configured."
 msgstr ""
+"<_:buildtarget-1/> kullanırken, yapılandırılacak portların listesi <_:"
+"buildtarget-2/> hedefi tarafından toplanır. Tüm bağımlılık seçeneklerinin "
+"yapılandırıldığından emin olmak için, bütün bağımlı port seçenekleri "
+"tanımlanana ve port seçenekleri ekranları görünmeyene kadar <command>make "
+"config-recursive</command> komutunun çalıştırılması önerilir."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10226
