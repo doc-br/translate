@@ -21,8 +21,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-07-01 18:33+0000\n"
-"Last-Translator: ElifAtalay94 <elifatalay94@icloud.com>\n"
+"PO-Revision-Date: 2020-07-02 11:09+0000\n"
+"Last-Translator: ilaydaasal <ilaydaasal92@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -67762,6 +67762,7 @@ msgstr "Bu komutlar daha detaylı olarak açıklanmıştır:"
 
 #. (itstool) path: callout/para
 #: book.translate.xml:43539
+#, fuzzy
 msgid ""
 "This defines what kind of virtualization to use. <literal>hvm</literal> "
 "refers to hardware-assisted virtualization or hardware virtual machine. "
@@ -67770,57 +67771,87 @@ msgid ""
 "hardware. <literal>generic</literal> is the default value and creates a PV "
 "domain."
 msgstr ""
+"Bu ne tarz bir sanallaştırma kullanılacağını tanımlar. <literal>hvm</literal>"
+", donanım destekli sanallaştırma veya donanım sanal makinesini ifade eder. "
+"Konuk işletim sistemleri, sanallaştırma uzantılarıyla CPU'larda "
+"değiştirilmemiş şekilde çalıştırılabilir, fiziksel donanımda çalıştığı "
+"şekilde neredeyse aynı performansı sağlar. <literal>generic</literal> "
+"varsayılan değerdir ve PV etki alanı oluşturur."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:43550
+#, fuzzy
 msgid ""
 "Name of this virtual machine to distinguish it from others running on the "
 "same Dom0. Required."
 msgstr ""
+"Bu sanal makinenin adı kendisini aynı Dom0'da çalışan diğer makinelerden "
+"ayırt etmek içindir. Gereklidir."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:43555
+#, fuzzy
 msgid ""
 "Quantity of RAM in megabytes to make available to the VM. This amount is "
 "subtracted from the hypervisor's total available memory, not the memory of "
 "the Dom0."
 msgstr ""
+"VM'de kullanıma sunmak için megabyte cinsinden RAM miktarı. Bu miktar "
+"Dom0'nun belleğinden değil, hipervizörün toplam kullanılabilir belleğinden "
+"çıkarılır."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:43561
+#, fuzzy
 msgid ""
 "Number of virtual CPUs available to the guest VM. For best performance, do "
 "not create guests with more virtual CPUs than the number of physical CPUs on "
 "the host."
 msgstr ""
+"Konuk VM için kullanılabilir sanal CPU sayısıdır. En iyi performans için, "
+"ana bilgisayardaki fiziksel CPU sayısından daha fazla sanal CPU'lara sahip "
+"konuk oluşturmayın."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:43567
+#, fuzzy
 msgid ""
 "Virtual network adapter. This is the bridge connected to the network "
 "interface of the host. The <literal>mac</literal> parameter is the MAC "
 "address set on the virtual network interface. This parameter is optional, if "
 "no MAC is provided <trademark>Xen</trademark> will generate a random one."
 msgstr ""
+"Sanal ağ bağdaştırıcısı. Bu, anabilgisayarın ağ arayüzüne bağlandığı "
+"köprüdür. <literal>mac</literal> parametresi sanal ağ arayüzünde ayarlanmış "
+"MAC adresidir. Bu parametre isteğe bağlıdır, eğer MAC sağlanmazsa "
+"<trademark>Xen</trademark> rastgele bir tane oluşturacaktır."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:43576
+#, fuzzy
 msgid ""
 "Full path to the disk, file, or ZFS volume of the disk storage for this VM. "
 "Options and multiple disk definitions are separated by commas."
 msgstr ""
+"Bu VM için disk belleğinin disk, dosya veya ZFS birimine giden "
+"yolu.Seçenekler ve çoklu disk tanımları virgüller aracılığıyla ayrılmıştır."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:43582
+#, fuzzy
 msgid ""
 "Defines the Boot medium from which the initial operating system is "
 "installed. In this example, it is the ISO imaged downloaded earlier. Consult "
 "the <trademark>Xen</trademark> documentation for other kinds of devices and "
 "options to set."
 msgstr ""
+"İlk işletim sisteminin kurulduğu Önyükleme ortamını tanımlar. Bu örnekte, "
+"daha önceden indirilmiş olan ISO görüntüsüdür. Ayarlanacak diğer seçenekler "
+"ve cihaz türleri için <trademark>Xen</trademark> belgelerine bakın."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:43590
+#, fuzzy
 msgid ""
 "Options controlling VNC connectivity to the serial console of the DomU. In "
 "order, these are: active VNC support, define IP address on which to listen, "
@@ -67828,22 +67859,32 @@ msgid ""
 "positioning of the mouse and other input methods. <literal>keymap</literal> "
 "defines which keymap to use, and is <literal>english</literal> by default."
 msgstr ""
+"DomU'nun seri konsoluna olan VNC bağlantısını kontrol eden seçenekler. "
+"Sırasıyla bunlar: etkin VNC desteği, dinlenilecek IP adresini tanımlama, "
+"seri konsol için aygıt düğümü ve farenin hassas konumlandırılması için girdi "
+"yöntemleri ve diğer girdi yöntemleri. <literal>keymap</literal> hangi "
+"tuşeşlemin kullanılacağını tanımlar ve varsayılan olarak "
+"<literal>english</literal>'dir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43600
+#, fuzzy
 msgid ""
 "After the file has been created with all the necessary options, the DomU is "
 "created by passing it to <command>xl create</command> as a parameter."
 msgstr ""
+"Gerekli tüm seçenekler ile dosya oluşturulduktan sonra, DomU <command>xl "
+"create</command>'a parametre olarak geçirilerek oluşturulur."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:43604
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>xl create freebsd.cfg</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>xl create freebsd.cfg</userinput>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:43607
+#, fuzzy
 msgid ""
 "Each time the Dom0 is restarted, the configuration file must be passed to "
 "<command>xl create</command> again to re-create the DomU. By default, only "
@@ -67854,26 +67895,43 @@ msgid ""
 "must be properly backed up and kept available to be able to re-create the "
 "guest VM when needed."
 msgstr ""
+"Dom0 her yeniden başlatıldığında, yapılandırma dosyası DomU'yu yeniden "
+"oluşturmak için <command>xl create</command>'e tekrar geçirilmelidir. "
+"Varsayılan olarak, sadece Dom0 yeniden başlatma sonrası oluşturulur, "
+"bireysel VM'ler için geçerli değildir. VM'ler sanal diske işletim sistemini "
+"depoladıkları şekilde kaldıkları yerden devam edebilirler. Sanal makine "
+"yapılandırması (örnek olarak, daha fazla bellek eklendiğinde) zamanla "
+"değişebilir. Sanal makine yapılandırma dosyaları düzgün bir şekilde "
+"yedeklenmeli ve gerektiği zaman konuk VM'i tekrar oluşturabilmek için "
+"kullanıma hazır halde tutulmalıdır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43619
+#, fuzzy
 msgid ""
 "The output of <command>xl list</command> confirms that the DomU has been "
 "created."
-msgstr ""
+msgstr "<command>xl list</command>'in çıktısı DomU'nun oluşturulduğunu onaylar."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:43622
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>xl list</userinput>\n"
 "Name                                        ID   Mem VCPUs      State   Time(s)\n"
 "Domain-0                                     0  8192     4     r-----  1653.4\n"
 "freebsd                                      1  1024     1     -b----   663.9"
 msgstr ""
+"<prompt>#</prompt> <userinput>xl list</userinput>\n"
+"Name                                        ID   Mem VCPUs      State   "
+"Time(s)\n"
+"Domain-0                                     0  8192     4     r-----  1653."
+"4\n"
+"freebsd                                      1  1024     1     -b----   663.9"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43627
+#, fuzzy
 msgid ""
 "To begin the installation of the base operating system, start the VNC "
 "client, directing it to the main network address of the host or to the IP "
@@ -67887,46 +67945,75 @@ msgid ""
 "passing either the name or the id as the parameter. Afterwards, recreate it "
 "using the modified <filename>freebsd.cfg</filename>."
 msgstr ""
+"Temel işletim sisteminin kurulumuna başlamak için, ana bilgisayarın ana ağ "
+"adresine veya <filename>freebsd.cfg</filename>'nin "
+"<literal>vnclisten</literal> satırına tanımlanan IP adresine yönlendirerek "
+"VNC istemcisini başlatın. İşletim sistemi kurulumu gerçekleştikten sonra, "
+"DomU'yu kapatın ve VNC görüntüleyicisinin bağlantısını kesin. "
+"<filename>freebsd.cfg</filename>'yi düzenleyin, <literal>cdrom</literal> "
+"tanımı ile satırı kaldırın veya satırın başına <literal>#</literal> "
+"karakteri ekleyerek kodu derleme dışı bırakın. Yeni yapılandırmayı yüklemek "
+"için, parametre olarak adı veya ID'yi geçirmek için gerekiyorsa eski DomU'yu "
+"<command>xl destroy</command> ile kaldırın. Daha sonra, değiştirilmiş "
+"<filename>freebsd.cfg</filename>'yi kullanarak yeniden oluşturun."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:43642
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>xl destroy freebsd</userinput>\n"
 "<prompt>#</prompt> <userinput>xl create freebsd.cfg</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>xl destroy freebsd</userinput>\n"
+"<prompt>#</prompt> <userinput>xl create freebsd.cfg</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43645
+#, fuzzy
 msgid ""
 "The machine can then be accessed again using the VNC viewer. This time, it "
 "will boot from the virtual disk where the operating system has been "
 "installed and can be used as a virtual machine."
 msgstr ""
+"Makineye tekrar VNC görüntüleyicisini kullanarak erişim sağlanabilir. Bu "
+"sefer, işletim sisteminin kurulduğu sanal diskten önyükleme yapar ve sanal "
+"makine olarak kullanılabilir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43654
+#, fuzzy
 msgid ""
 "This section contains basic information in order to help troubleshoot issues "
 "found when using FreeBSD as a <trademark>Xen</trademark> host or guest."
 msgstr ""
+"Bu bölüm FreeBSD'yi <trademark>Xen</trademark> anabilgisayarı veya konuğu "
+"olarak kullanırken sorun giderme problemlerine yardımcı olabilmek için temel "
+"bilgiler içerir."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:43659
+#, fuzzy
 msgid "Host Boot Troubleshooting"
-msgstr ""
+msgstr "Ana Bilgisayar Önyükleme Sorun Giderici"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:43661
+#, fuzzy
 msgid ""
 "Please note that the following troubleshooting tips are intended for "
 "<trademark>Xen</trademark> 4.11 or newer. If you are still using "
 "<trademark>Xen</trademark> 4.7 and having issues consider migrating to a "
 "newer version of <trademark>Xen</trademark>."
 msgstr ""
+"Aşağıdaki sorun giderme ipuçlarının <trademark>Xen</trademark>'in 4.11 veya "
+"daha yeni sürümleri için olduğunu dikkate alın. Eğer hala "
+"<trademark>Xen</trademark> 4.7 sürümünü kullanıyorsanız ve sorunlar "
+"yaşıyorsanız <trademark>Xen</trademark>'in daha yeni bir sürümüne geçiş "
+"yapmayı düşünün."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:43666
+#, fuzzy
 msgid ""
 "In order to troubleshoot host boot issues you will likely need a serial "
 "cable, or a debug USB cable. Verbose <trademark>Xen</trademark> boot output "
@@ -67934,23 +68021,35 @@ msgid ""
 "option found in <filename>loader.conf</filename>. A couple of relevant debug "
 "options are:"
 msgstr ""
+"Ana bilgisayar önyükleme sorunlarını gidermek için seri kabloya veya hata "
+"ayıklayıcı USB kabloya ihtiyacınız olacaktır. Ayrıntılı "
+"<trademark>Xen</trademark> önyükleme çıktısı <filename>loader.conf</filename>"
+"'da bulunan <literal>xen_cmdline</literal> seçeneğine seçenekler eklenerek "
+"elde edilebilir. Alakalı bazı ayrıntı seçenekleri aşağıdaki gibidir:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:43675
+#, fuzzy
 msgid ""
 "<literal>iommu=debug</literal>: can be used to print additional diagnostic "
 "information about the iommu."
 msgstr ""
+"<literal>iommu=debug</literal>: giriş/çıkış belleği yönetim birimi (iommu) "
+"hakkında ek diagnostik bilgileri yazdırmak için kullanılabilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:43680
+#, fuzzy
 msgid ""
 "<literal>dom0=verbose</literal>: can be used to print additional diagnostic "
 "information about the dom0 build process."
 msgstr ""
+"<literal>dom0=verbose</literal>: dom0 oluşturma işlemi hakkında ek "
+"diagnostik bilgileri yazdırmak için kullanılabilir."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:43685
+#, fuzzy
 msgid ""
 "<literal>sync_console</literal>: flag to force synchronous console output. "
 "Useful for debugging to avoid losing messages due to rate limiting. Never "
@@ -67958,42 +68057,64 @@ msgid ""
 "guests to perform DoS attacks against <trademark>Xen</trademark> using the "
 "console."
 msgstr ""
+"<literal>sync_console</literal>: zaman uyumlu konsol çıktısını zorlamak için "
+"işaretçi. Hız kısıtlayıcı sebebiyle mesajları kaybetmeyi önlemek için hata "
+"ayıklamada kullanışlıdır. Kötü amaçlı misafirlerin konsolu kullanarak "
+"<trademark>Xen</trademark>'e karşı DoS saldırıları yapmasına izin "
+"verebileceğinden bu seçeneği üretim ortamlarında asla kullanmayın."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:43694
+#, fuzzy
 msgid ""
 "FreeBSD should also be booted in verbose mode in order to identify any "
 "issues. To activate verbose booting, run this command:"
 msgstr ""
+"Herhangi bir sorunu tanımlayabilmek için FreeBSD'ye ayrıntılı modda "
+"önyükleme yapılmalıdır. Ayrıntılı önyüklemeyi etkinleştirmek için aşağıdaki "
+"komutu çalıştırın:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:43698
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>sysrc -f /boot/loader.conf boot_verbose=\"YES\"</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>sysrc -f /boot/loader.conf boot_verbose=\"YES\""
+"</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:43700
+#, fuzzy
 msgid ""
 "If none of these options help solving the problem, please send the serial "
 "boot log to <email>freebsd-xen@FreeBSD.org</email> and <email>xen-"
 "devel@lists.xenproject.org</email> for further analysis."
 msgstr ""
+"Eğer bu seçeneklerden hiçbiri sorunu çözmeye yardımcı olmuyorsa, lütfen seri "
+"önyükleme sistem günlüğünü <email>freebsd-xen@FreeBSD.org</email> adresine "
+"ve daha detaylı analiz için <email>xen-devel@lists.xenproject.org</email> "
+"adresine gönderin."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:43708
+#, fuzzy
 msgid "Guest Creation Troubleshooting"
-msgstr ""
+msgstr "Konuk Oluşturma Sorun Gidericisi"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:43710
+#, fuzzy
 msgid ""
 "Issues can also arise when creating guests, the following attempts to "
 "provide some help for those trying to diagnose guest creation issues."
 msgstr ""
+"Sorunlar konuk oluştururken de ortaya çıkabilir, aşağıdakiler konuk "
+"oluşturma sorunlarını tespit etmeye çalışanlara yardım sağlama amaçlı "
+"kullanılabilir."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:43714
+#, fuzzy
 msgid ""
 "The most common cause of guest creation failures is the <literal>xl</"
 "literal> command spitting some error and exiting with a return code "
@@ -68001,10 +68122,15 @@ msgid ""
 "issue, more verbose output can also be obtained from <literal>xl</literal> "
 "by using the <literal>v</literal> option repeatedly."
 msgstr ""
+"Konuk oluşturma hatalarının en ortak nedeni <literal>xl</literal> komutunun "
+"bazı hatalar vermesi ve 0'dan farklı bir dönüş koduyla çıkış yapmasıdır. "
+"Eğer sağlanan hata, sorunu tanımlamaya yardımcı olmaya yeterli değilse daha "
+"fazla ayrıntılı çıktı <literal>v</literal> seçeneğini tekrar tekrar "
+"kullanarak <literal>xl</literal>'den elde edilebilir."
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:43722
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>xl -vvv create freebsd.cfg</userinput>\n"
 "Parsing config from freebsd.cfg\n"
@@ -68020,9 +68146,31 @@ msgid ""
 "libxl: debug: libxl_dom.c:988:libxl__load_hvm_firmware_module: Loading BIOS: /usr/local/share/seabios/bios.bin\n"
 "..."
 msgstr ""
+"<prompt>#</prompt> <userinput>xl -vvv create freebsd.cfg</userinput>\n"
+"Parsing config from freebsd.cfg\n"
+"libxl: debug: libxl_create.c:1693:do_domain_create: Domain 0:ao 0x800d750a0: "
+"create: how=0x0 callback=0x0 poller=0x800d6f0f0\n"
+"libxl: debug: libxl_device.c:397:libxl__device_disk_set_backend: Disk vdev="
+"xvda spec.backend=unknown\n"
+"libxl: debug: libxl_device.c:432:libxl__device_disk_set_backend: Disk vdev="
+"xvda, using backend phy\n"
+"libxl: debug: libxl_create.c:1018:initiate_domain_create: Domain 1:running "
+"bootloader\n"
+"libxl: debug: libxl_bootloader.c:328:libxl__bootloader_run: Domain 1:not a "
+"PV/PVH domain, skipping bootloader\n"
+"libxl: debug: libxl_event.c:689:libxl__ev_xswatch_deregister: watch "
+"w=0x800d96b98: deregister unregistered\n"
+"domainbuilder: detail: xc_dom_allocate: cmdline=\"\", features=\"\"\n"
+"domainbuilder: detail: xc_dom_kernel_file: filename=\"/usr/local/lib/xen/"
+"boot/hvmloader\"\n"
+"domainbuilder: detail: xc_dom_malloc_filemap    : 326 kB\n"
+"libxl: debug: libxl_dom.c:988:libxl__load_hvm_firmware_module: Loading BIOS: "
+"/usr/local/share/seabios/bios.bin\n"
+"..."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:43736
+#, fuzzy
 msgid ""
 "If the verbose output does not help diagnose the issue there are also QEMU "
 "and <trademark>Xen</trademark> toolstack logs in <filename>/var/log/xen</"
@@ -68035,6 +68183,17 @@ msgid ""
 "possible to <email>freebsd-xen@FreeBSD.org</email> and <email>xen-"
 "devel@lists.xenproject.org</email> in order to get help."
 msgstr ""
+"Eğer ayrıntılı çıktı sorunu tanımlamaya yardımcı olmuyorsa, <filename>/var/"
+"log/xen</filename>'da ayrıca QEMU ve <trademark>Xen</trademark> toolstack "
+"sistem günlükleri bulunmaktadır. Etki alanı adının sistem günlüğü adına "
+"eklenmiş olduğunu dikkate alın, eğer etki alanı <literal>freebsd</literal> "
+"olarak adlandırıldıysa, bir <filename>/var/log/xen/xl-freebsd.log</filename> "
+"ve bir <filename>/var/log/xen/qemu-dm-freebsd.log</filename> dosyası "
+"bulmalısınız. İki sistem günlüğü de hata ayıklama için faydalı bilgi "
+"içerebilir. Eğer sorunu çözmeye bunların hiçbiri yardımcı olmuyorsa, yardım "
+"almak için lütfen yüzleştiğiniz sorunun tanımlamasını ve mümkün olduğu kadar "
+"bilgiyi <email>freebsd-xen@FreeBSD.org</email> ve <email>xen-"
+"devel@lists.xenproject.org</email> adreslerine gönderin."
 
 #. (itstool) path: info/title
 #: book.translate.xml:43763
