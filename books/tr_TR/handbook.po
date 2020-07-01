@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-07-02 11:09+0000\n"
-"Last-Translator: esradesteki <esradesteki20@gmail.com>\n"
+"Last-Translator: yunusesav <yunusesav@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -69436,6 +69436,7 @@ msgstr "Kabuk Başlangıç Dosyası Metodu"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:44105
+#, fuzzy
 msgid ""
 "This second method is not recommended as each shell that is used requires "
 "manual configuration, where each shell has a different configuration file "
@@ -69445,60 +69446,84 @@ msgid ""
 "also be added to <filename>/etc/profile</filename> or <filename>/usr/share/"
 "skel/dot.profile</filename> to set that shell for all users:"
 msgstr ""
+"Bu ikinci metot kullanılan her bir kabuk farklı bir yapılandırma dosyası ve "
+"söz dizimi ile elle yapılandırma gerektirdiğinden önerilmez.Örneğin "
+"<command>sh</command> kabuğu Almanca diline ayarlanmak isteniyorsa yalnızca "
+"o kullanıcıya kabuk ayarlamak için <filename>~/.profile</filename> 'a şu "
+"satırlar eklenebilir. Bu satırlar bu kabuk tüm kullanıcılar için ayarlanmak "
+"isteniyorsa <filename>/etc/profile</filename> 'e veya <filename>/usr/share/"
+"skel/dot.profile</filename> 'e eklenebilir:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:44116
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<envar>LANG</envar>=de_DE.ISO8859-1; export <envar>LANG</envar>\n"
 "<envar>MM_CHARSET</envar>=ISO-8859-1; export <envar>MM_CHARSET</envar>"
 msgstr ""
+"<envar>LANG</envar>=de_DE.ISO8859-1; export <envar>LANG</envar>\n"
+"<envar>MM_CHARSET</envar>=ISO-8859-1; export <envar>MM_CHARSET</envar>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:44119
+#, fuzzy
 msgid ""
 "However, the name of the configuration file and the syntax used differs for "
 "the <command>csh</command> shell. These are the equivalent settings for "
 "<filename>~/.csh.login</filename>, <filename>/etc/csh.login</filename>, or "
 "<filename>/usr/share/skel/dot.login</filename>:"
 msgstr ""
+"Fakat yapılandırma dosyasının adı ve kullanılan söz dizimi "
+"<command>csh</command> kabuğundan farklıdır. "
+"<filename>~/.csh.login</filename>, <filename>/etc/csh.login</filename>, veya "
+"<filename>/usr/share/skel/dot.login</filename> için eşdeğer ayarlar "
+"şunlardır:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:44126
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "setenv <envar>LANG</envar> de_DE.ISO8859-1\n"
 "setenv <envar>MM_CHARSET</envar> ISO-8859-1"
 msgstr ""
+"setenv <envar>LANG</envar> de_DE.ISO8859-1\n"
+"setenv <envar>MM_CHARSET</envar> ISO-8859-1"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:44129
+#, fuzzy
 msgid ""
 "To complicate matters, the syntax needed to configure <application>Xorg</"
 "application> in <filename>~/.xinitrc</filename> also depends upon the shell. "
 "The first example is for the <command>sh</command> shell and the second is "
 "for the <command>csh</command> shell:"
 msgstr ""
+"<filename>~/.xinitrc</filename> 'deki <application>Xorg</application> 'u "
+"yapılandırmak için gereken söz diziminin kabuğa bağlı olması konuyu daha da "
+"karmaşıklaştırır. İlk örnek <command>sh</command> kabuğu, ikinci örnek ise "
+"<command>csh</command> kabuğu içindir:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:44136
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<envar>LANG</envar>=de_DE.ISO8859-1; export <envar>LANG</envar>"
-msgstr ""
+msgstr "<envar>LANG</envar>=de_DE.ISO8859-1; export <envar>LANG</envar>"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:44138
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "setenv <envar>LANG</envar> de_DE.ISO8859-1"
-msgstr ""
+msgstr "setenv <envar>LANG</envar> de_DE.ISO8859-1"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:44143
+#, fuzzy
 msgid "Console Setup"
-msgstr ""
+msgstr "Konsol Kurulumu"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:44145
+#, fuzzy
 msgid ""
 "Several localized fonts are available for the console. To see a listing of "
 "available fonts, type <command>ls /usr/share/syscons/fonts</command>. To "
@@ -69506,41 +69531,57 @@ msgid ""
 "replaceable>, without the <filename>.fnt</filename> suffix, in <filename>/"
 "etc/rc.conf</filename>:"
 msgstr ""
+"Konsol için çok sayıda yerelleştirilmiş yazı tipi bulunur. Uygun yazı "
+"tiplerinin bir listesini görmek için <command>ls /usr/share/syscons/"
+"fonts</command> yazın. Konsol yazı tipini yapılandırmak için <filename>/etc/"
+"rc.conf</filename> 'da <filename>.fnt</filename> son eki olmadan "
+"<replaceable>font_name</replaceable> 'i belirtin:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:44153
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "font8x16=<replaceable>font_name</replaceable>\n"
 "font8x14=<replaceable>font_name</replaceable>\n"
 "font8x8=<replaceable>font_name</replaceable>"
 msgstr ""
+"font8x16=<replaceable>font_name</replaceable>\n"
+"font8x14=<replaceable>font_name</replaceable>\n"
+"font8x8=<replaceable>font_name</replaceable>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:44157
+#, fuzzy
 msgid "<primary>keymap</primary>"
-msgstr ""
+msgstr "<primary>keymap</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:44158
+#, fuzzy
 msgid "<primary>screenmap</primary>"
-msgstr ""
+msgstr "<primary>screenmap</primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:44159
+#, fuzzy
 msgid ""
 "The keymap and screenmap can be set by adding the following to <filename>/"
 "etc/rc.conf</filename>:"
 msgstr ""
+"Tuşeşlem ve screenmap şunu <filename>/etc/rc.conf</filename> 'a ekleyerek "
+"ayarlanabilir:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:44162
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "scrnmap=<replaceable>screenmap_name</replaceable>\n"
 "keymap=<replaceable>keymap_name</replaceable>\n"
 "keychange=\"<replaceable>fkey_number sequence</replaceable>\""
 msgstr ""
+"scrnmap=<replaceable>screenmap_name</replaceable>\n"
+"keymap=<replaceable>keymap_name</replaceable>\n"
+"keychange=\"<replaceable>fkey_number sequence</replaceable>\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:44166
