@@ -21,8 +21,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-07-01 12:55+0000\n"
-"Last-Translator: alirizaal <alirizaal@hotmail.com>\n"
+"PO-Revision-Date: 2020-07-01 18:33+0000\n"
+"Last-Translator: ilaydaasal <ilaydaasal92@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -66880,14 +66880,15 @@ msgstr ""
 "registered\">AMD</trademark> 64-Bit <link xlink:href=\""
 "https://wiki.xenproject.org/wiki/DomU\">DomU</link> ve <link xlink:href=\""
 "https://en.wikipedia.org/wiki/Amazon_Elastic_Compute_Cloud\">Amazon "
-"EC2</link> imtiyazsız etki alanı (sanal makine) desteğini içerir ve FreeBSD "
-"11.0'da Dom0 kontrol etki alanı (ana bilgisayar) desteğini içerir. Yarı "
-"sanallaştırılmış (PV) etki alanları için destek daha iyi performans sağlayan "
-"donanım sanallaştırılmış (HVM) etki alanlarının yararına FreeBSD 11'den "
-"kaldırılmıştır."
+"EC2</link> ayrıcalıksız etki alanı (sanal makine) desteğini içerir ve "
+"FreeBSD 11.0'da Dom0 kontrol etki alanı (ana bilgisayar) desteğini içerir. "
+"Yarı sanallaştırılmış (PV) etki alanları için destek daha iyi performans "
+"sağlayan donanım sanallaştırılmış (HVM) etki alanlarının yararına FreeBSD "
+"11'den kaldırılmıştır."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:43331
+#, fuzzy
 msgid ""
 "<trademark>Xen</trademark> is a bare-metal hypervisor, which means that it "
 "is the first program loaded after the BIOS. A special privileged guest "
@@ -66902,9 +66903,23 @@ msgid ""
 "compared to the service console of other hypervisor solutions, while the "
 "DomU is where individual guest VMs are run."
 msgstr ""
+"<trademark>Xen</trademark> bir bare-metal hipervizördür, bu da BIOS'dan "
+"sonra yüklenen ilk program olduğu anlamına gelir. Daha sonra, Domain-0 ("
+"kısaca <literal>Dom0</literal>) adı verilen özel ayrıcalıklı konuk "
+"başlatılır. Dom0 doğrudan alttaki fiziksel donanımlara erişim sağlamak için "
+"özel ayrıcalıklarını kullanarak yüksek performanslı çözüm haline getirir. Ağ "
+"bağdaştırıcısına ve disk kontrolcülerine doğrudan erişim sağlayabilir. "
+"<trademark>Xen</trademark> hipervizörünü kontrol etmek ve yönetmek için  "
+"<trademark>Xen</trademark> yönetim araçları ayrıca Vmleri oluşturmak, "
+"listelemek ve yok etmek için Dom0 tarafından kullanılır. Dom0, genellikle "
+"<literal>DomU</literal> olarak adlandırılan ayrıcalıksız etki alanları için "
+"sanal diskler ve ağ oluşumu sağlar. DomU bireysel konuk VM'lerinin çalıştığı "
+"yer iken, <trademark>Xen</trademark> Dom0 diğer hipervizör çözümleri servis "
+"konsolları ile kıyaslanabilir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:43357
+#, fuzzy
 msgid ""
 "<trademark>Xen</trademark> can migrate VMs between different <trademark>Xen</"
 "trademark> servers. When the two xen hosts share the same underlying "
@@ -66917,14 +66932,27 @@ msgid ""
 "Category:Overview\">Xen Wiki Overview page</link>. Note that not all "
 "features are supported on FreeBSD yet."
 msgstr ""
+"<trademark>Xen</trademark>, VM'leri farklı <trademark>Xen</trademark> "
+"sunucuları arasında taşıyabilir. İki xen ana bilgisayarı aynı temel "
+"depolamayı paylaştığı zaman, taşıma işlemi ilk önce VM'i kapamadan "
+"yapılabilir. Bunun yerine taşıma işlemi, DomU çalışırken ve yeniden "
+"başlatmaya veya aksama süresini planlamaya gerek kalmadan gerçekleştirilir. "
+"Bu, DomU tarafından sağlanan hizmetlerin hala sağlandığından emin olmak için "
+"bakım gerektiren durumlarda veya windows sürüm yükseltmelerinde yararlıdır. "
+"<trademark>Xen</trademark>'in daha fazla özelliklerini <link xlink:href=\""
+"https://wiki.xenproject.org/wiki/Category:Overview\">Xen Wiki Overview "
+"page</link> sayfasında listelenmiş olarak bulabilirsiniz. Tüm özelliklerin "
+"FreeBSD'de henüz desteklenmediğini dikkate alın."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:43369
+#, fuzzy
 msgid "Hardware Requirements for <trademark>Xen</trademark> Dom0"
-msgstr ""
+msgstr "<trademark>Xen</trademark> Dom0 için Donanım Gereksinimleri"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43371
+#, fuzzy
 msgid ""
 "To run the <trademark>Xen</trademark> hypervisor on a host, certain hardware "
 "functionality is required. Hardware virtualized domains require Extended "
@@ -66933,21 +66961,33 @@ msgid ""
 "(<link xlink:href=\"http://en.wikipedia.org/wiki/List_of_IOMMU-"
 "supporting_hardware\">IOMMU</link>) support in the host processor."
 msgstr ""
+"Ana bilgisayarda <trademark>Xen</trademark> hipervizörünü çalıştırmak için "
+"belli donanım işlevsellikleri gereklidir. Donanım sanallaştırılmış etki "
+"alanları, ana bilgisayar işlemcilerinde Genişletilmiş Sayfa Tabloları (<link "
+"xlink:href=\"http://en.wikipedia.org/wiki/Extended_Page_Table\">EPT</link>) "
+"ve Giriş/Çıkış Bellek Yönetimi Birimi (<link xlink:href=\""
+"http://en.wikipedia.org/wiki/List_of_IOMMU-supporting_hardware\""
+">IOMMU</link>) desteğini gerektirir."
 
 #. (itstool) path: note/para
 #: book.translate.xml:43378
+#, fuzzy
 msgid ""
 "In order to run a FreeBSD <trademark>Xen</trademark> Dom0 the box must be "
 "booted using legacy boot (BIOS)."
 msgstr ""
+"FreeBSD <trademark>Xen</trademark> Dom0 çalıştırmak için, kutunun eski "
+"önyükleme (BIOS) kullanılarak önyüklemesi yapılmalıdır."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:43385
+#, fuzzy
 msgid "<trademark>Xen</trademark> Dom0 Control Domain Setup"
-msgstr ""
+msgstr "<trademark>Xen</trademark> Dom0 Kontrol Etki Alanı Kurulumu"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43387
+#, fuzzy
 msgid ""
 "Users of FreeBSD 11 should install the <package>emulators/xen-kernel47</"
 "package> and <package>sysutils/xen-tools47</package> packages that are based "
@@ -66955,9 +66995,16 @@ msgid ""
 "4.11 provided by <package>emulators/xen-kernel411</package> and "
 "<package>sysutils/xen-tools411</package>, respectively."
 msgstr ""
+"FreeBSD 11 kullanıcıları Xen sürüm 4.7 tabanlı <package>emulators/xen-"
+"kernel47</package> ve <package>sysutils/xen-tools47</package> paket "
+"programları kurmalılardır. FreeBSD 12.0 veya daha yeni sürümde çalışan "
+"sistemler sırasıyla <package>emulators/xen-kernel411</package> ve <package>"
+"sysutils/xen-tools411</package>tarafından sağlanan Xen 4.11'i "
+"kullanabilirler."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43395
+#, fuzzy
 msgid ""
 "Configuration files must be edited to prepare the host for the Dom0 "
 "integration after the Xen packages are installed. An entry to <filename>/etc/"
@@ -66965,6 +67012,11 @@ msgid ""
 "allowed to be wired. Otherwise, DomU VMs with higher memory requirements "
 "will not run."
 msgstr ""
+"Yapılandırma dosyaları, Xen paket programları kurulduktan sonra ana "
+"bilgisayarı Dom0 tümleştirmesine hazırlamak için düzenlenmelidir. <filename>/"
+"etc/sysctl.conf</filename>'ye yapılan bir girdi, kaç sayfa belleğin "
+"kablolanmasına izin verildiğine dair sınırlamayı devre dışı bırakır. Aksi "
+"halde, Yüksek bellekli DomU Vm'lerinin gereksinimleri çalışmayacaktır."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:43402
@@ -66976,6 +67028,7 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43404
+#, fuzzy
 msgid ""
 "Another memory-related setting involves changing <filename>/etc/login.conf</"
 "filename>, setting the <literal>memorylocked</literal> option to "
@@ -66985,30 +67038,47 @@ msgid ""
 "command> to update the capability database. See <xref linkend=\"security-"
 "resourcelimits\"/> for details."
 msgstr ""
+"Belleğe bağlı başka bir ayar ise <literal>memorylocked</literal> seçeneğini "
+"<literal>unlimited</literal> olarak ayarlayarak, <filename>/etc/"
+"login.conf</filename>'i değiştirmeyi içerir. Aksi halde, DomU etki alanları "
+"oluşturmak <errorname>Bellek ayrılamıyor</errorname> hatalarıyla başarısız "
+"olur. <filename>/etc/login.conf</filename> değişikliğini yaptıktan sonra, "
+"kapasite veritabanını güncellemek için <command>cap_mkdb</command>'yi "
+"çalıştırın. Detaylar için <xref linkend=\"security-resourcelimits\"/> "
+"linkine bakın."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:43415
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>sed -i '' -e 's/memorylocked=64K/memorylocked=unlimited/' /etc/login.conf</userinput>\n"
 "<prompt>#</prompt> <userinput>cap_mkdb /etc/login.conf</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>sed -i '' -e 's/memorylocked=64K/memorylocked="
+"unlimited/' /etc/login.conf</userinput>\n"
+"<prompt>#</prompt> <userinput>cap_mkdb /etc/login.conf</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43418
+#, fuzzy
 msgid ""
 "Add an entry for the <trademark>Xen</trademark> console to <filename>/etc/"
 "ttys</filename>:"
 msgstr ""
+"<filename>/etc/ttys</filename>'a <trademark>Xen</trademark> konsolu için bir "
+"girdi ekleyin:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:43421
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>echo 'xc0     \"/usr/libexec/getty Pc\"         xterm   onifconsole  secure' &gt;&gt; /etc/ttys</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>echo 'xc0     \"/usr/libexec/getty Pc\""
+"         xterm   onifconsole  secure' &gt;&gt; /etc/ttys</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43423
+#, fuzzy
 msgid ""
 "Selecting a <trademark>Xen</trademark> kernel in <filename>/boot/loader."
 "conf</filename> activates the Dom0. <trademark>Xen</trademark> also requires "
@@ -67018,59 +67088,93 @@ msgid ""
 "CPUs are made available for the Dom0. The serial console is also activated "
 "and logging options are defined."
 msgstr ""
+"<filename>/boot/loader.conf</filename>'de bir <trademark>Xen</trademark> "
+"çekirdeği seçmek Dom0'yu aktifleştirir. <trademark>Xen</trademark>, diğer "
+"DomU etki alanları ve kendisi için ana bilgisayar makinelerinden CPU ve "
+"bellek gibi kaynaklara ihtiyaç duyar. CPU ve belleğin ne kadar olacağı "
+"bireysel gereksinimler ve donanım kapasitelerine bağlıdır. Bu örnekte, 8 GB "
+"bellek ve 4 sanal CPU Dom0 için kullanıma sunulmuştur. Seri konsol ayrıca "
+"aktif edilmiştir ve günlük dosya kaydetme seçenekleri tanımlanmıştır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43433
+#, fuzzy
 msgid "The following command is used for Xen 4.7 packages:"
-msgstr ""
+msgstr "Aşağıdaki komut Xen 4.7 paket programları için kullanılır:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:43435
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>sysrc -f /boot/loader.conf hw.pci.mcfg=0</userinput>\n"
 "<prompt>#</prompt> <userinput>sysrc -f /boot/loader.conf if_tap_load=\"YES\"</userinput>\n"
 "<prompt>#</prompt> <userinput>sysrc -f /boot/loader.conf xen_kernel=\"/boot/xen\"</userinput>\n"
 "<prompt>#</prompt> <userinput>sysrc -f /boot/loader.conf xen_cmdline=\"dom0_mem=<replaceable>8192M</replaceable> dom0_max_vcpus=<replaceable>4</replaceable> dom0pvh=1 console=com1,vga com1=115200,8n1 guest_loglvl=all loglvl=all\"</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>sysrc -f /boot/loader.conf "
+"hw.pci.mcfg=0</userinput>\n"
+"<prompt>#</prompt> <userinput>sysrc -f /boot/loader.conf if_tap_load=\"YES\""
+"</userinput>\n"
+"<prompt>#</prompt> <userinput>sysrc -f /boot/loader.conf xen_kernel=\"/boot/"
+"xen\"</userinput>\n"
+"<prompt>#</prompt> <userinput>sysrc -f /boot/loader.conf xen_cmdline=\""
+"dom0_mem=<replaceable>8192M</replaceable> "
+"dom0_max_vcpus=<replaceable>4</replaceable> dom0pvh=1 console=com1,vga com1="
+"115200,8n1 guest_loglvl=all loglvl=all\"</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43440
+#, fuzzy
 msgid ""
 "For Xen versions 4.11 and higher, the following command should be used "
 "instead:"
 msgstr ""
+"4.11 ve daha yüksek Xen sürümleri için, aşağıdaki komut kullanılmalıdır:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:43443
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>sysrc -f /boot/loader.conf if_tap_load=\"YES\"</userinput>\n"
 "<prompt>#</prompt> <userinput>sysrc -f /boot/loader.conf xen_kernel=\"/boot/xen\"</userinput>\n"
 "<prompt>#</prompt> <userinput>sysrc -f /boot/loader.conf xen_cmdline=\"dom0_mem=<replaceable>8192M</replaceable> dom0_max_vcpus=<replaceable>4</replaceable> dom0=pvh console=com1,vga com1=115200,8n1 guest_loglvl=all loglvl=all\"</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>sysrc -f /boot/loader.conf if_tap_load=\"YES\""
+"</userinput>\n"
+"<prompt>#</prompt> <userinput>sysrc -f /boot/loader.conf xen_kernel=\"/boot/"
+"xen\"</userinput>\n"
+"<prompt>#</prompt> <userinput>sysrc -f /boot/loader.conf xen_cmdline=\""
+"dom0_mem=<replaceable>8192M</replaceable> "
+"dom0_max_vcpus=<replaceable>4</replaceable> dom0=pvh console=com1,vga com1="
+"115200,8n1 guest_loglvl=all loglvl=all\"</userinput>"
 
 #. (itstool) path: tip/para
 #: book.translate.xml:43448
+#, fuzzy
 msgid ""
 "Log files that <trademark>Xen</trademark> creates for the DomU VMs are "
 "stored in <filename>/var/log/xen</filename>. Please be sure to check the "
 "contents of that directory if experiencing issues."
 msgstr ""
+"DomU VM'leri için <trademark>Xen</trademark>'in oluşturduğu sistem günlük "
+"dosyaları <filename>/var/log/xen</filename>'da depolanmaktadır. Eğer sorun "
+"yaşıyorsanız lütfen dizinin içeriğini kontrol ettiğinizden emin olun."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43454
+#, fuzzy
 msgid "Activate the xencommons service during system startup:"
-msgstr ""
+msgstr "Sistem başlangıcı sırasında xencommons servisini etkinleştirin:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:43457
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>sysrc xencommons_enable=yes</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>sysrc xencommons_enable=yes</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43459
+#, fuzzy
 msgid ""
 "These settings are enough to start a Dom0-enabled system. However, it lacks "
 "network functionality for the DomU machines. To fix that, define a bridged "
@@ -67078,48 +67182,73 @@ msgid ""
 "connect to the network. Replace <replaceable>em0</replaceable> with the host "
 "network interface name."
 msgstr ""
+"Bu ayarlar etkinleştirilmiş Dom0 sistemlerini başlatmaya yeterlidir. Yine "
+"de, DomU makineleri için ağ işlevselliği yetersizdir. Bunu düzeltmek için, "
+"DomU VM'lerinin ağa bağlanmak için kullanabileceği, sistemin ana NIC'i ile "
+"köprülü bir arayüz tanımlayın. Ana bilgisayar ağ arayüzü adını "
+"<replaceable>em0</replaceable> ile değiştirin."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:43467
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>sysrc cloned_interfaces=\"bridge0\"</userinput>\n"
 "<prompt>#</prompt> <userinput>sysrc ifconfig_bridge0=\"addm <replaceable>em0</replaceable> SYNCDHCP\"</userinput>\n"
 "<prompt>#</prompt> <userinput>sysrc ifconfig_<replaceable>em0</replaceable>=\"up\"</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>sysrc cloned_interfaces=\"bridge0\"</userinput>"
+"\n"
+"<prompt>#</prompt> <userinput>sysrc ifconfig_bridge0=\"addm "
+"<replaceable>em0</replaceable> SYNCDHCP\"</userinput>\n"
+"<prompt>#</prompt> <userinput>sysrc ifconfig_<replaceable>em0</replaceable>="
+"\"up\"</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43471
+#, fuzzy
 msgid ""
 "Restart the host to load the <trademark>Xen</trademark> kernel and start the "
 "Dom0."
 msgstr ""
+"Ana bilgisayarı <trademark>Xen</trademark> çekirdeği yüklemek için yeniden "
+"başlatın ve Dom0'yu çalıştırın."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:43474
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>reboot</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>reboot</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43476
+#, fuzzy
 msgid ""
 "After successfully booting the <trademark>Xen</trademark> kernel and logging "
 "into the system again, the <trademark>Xen</trademark> management tool "
 "<command>xl</command> is used to show information about the domains."
 msgstr ""
+"Önyüklemeyi <trademark>Xen</trademark> çekirdeğine başarıyla "
+"gerçekleştirdikten ve sistemde tekrar oturum açtıktan sonra, "
+"<trademark>Xen</trademark> yönetim aracı<command>xl</command> etki alanları "
+"hakkında bilgi göstermek için kullanılır."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:43481
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>xl list</userinput>\n"
 "Name                                        ID   Mem VCPUs      State   Time(s)\n"
 "Domain-0                                     0  8192     4     r-----     962.0"
 msgstr ""
+"<prompt>#</prompt> <userinput>xl list</userinput>\n"
+"Name                                        ID   Mem VCPUs      State   "
+"Time(s)\n"
+"Domain-0                                     0  8192     4     r-----     "
+"962.0"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43485
+#, fuzzy
 msgid ""
 "The output confirms that the Dom0 (called <literal>Domain-0</literal>) has "
 "the ID <literal>0</literal> and is running. It also has the memory and "
@@ -67128,14 +67257,22 @@ msgid ""
 "xenproject.org/help/documentation.html\"><trademark>Xen</trademark> "
 "Documentation</link>. DomU guest VMs can now be created."
 msgstr ""
+"Çıktı Dom0'nun (called <literal>Domain-0</literal>) ID <literal>0</literal>"
+"'ye sahip olduğunu ve çalıştığını onaylar. Daha önceden <filename>/boot/"
+"loader.conf</filename>'de tanımlandığı gibi bellek ve sanal CPU'lara da "
+"sahiptir. Daha fazla bilgiye <link xlink:href=\"https://www.xenproject.org/"
+"help/documentation.html\"><trademark>Xen</trademark> Documentation</link> "
+"linkinden ulaşabilirsiniz. DomU konuk VM'leri şimdi oluşturulabilir."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:43495
+#, fuzzy
 msgid "<trademark>Xen</trademark> DomU Guest VM Configuration"
-msgstr ""
+msgstr "<trademark>Xen</trademark> DomU Konuk VM Yapılandırması"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43497
+#, fuzzy
 msgid ""
 "Unprivileged domains consist of a configuration file and virtual or physical "
 "hard disks. Virtual disk storage for the DomU can be files created by "
@@ -67148,38 +67285,61 @@ msgid ""
 "citerefentry> and saved locally in a file called <filename>freebsd.iso</"
 "filename>."
 msgstr ""
+"Ayrıcalıksız etki alanları yapılandırma dosyaları ve sanal veya fiziksel "
+"hard diskler içerir. DomU için sanal disk depolaması <xref linkend=\"zfs-zfs-"
+"volume\"/> şeklinde ifade edilen ZFS birimleri veya <citerefentry><refentryti"
+"tle>truncate</refentrytitle><manvolnum>1</manvolnum></citerefentry> "
+"tarafından oluşturulan dosyalar olabilir. Bu örnekte, 20 GB birim "
+"kullanılmıştır. Bir VM, ZFS birimi, bir FreeBSD ISO görüntüsü, 1 GB RAM ve "
+"iki sanal CPU ile oluşturulur. ISO kurulum dosyası <citerefentry><refentrytit"
+"le>fetch</refentrytitle><manvolnum>1</manvolnum></citerefentry> ile alınır "
+"ve <filename>freebsd.iso</filename> adındaki dosyaya yerel olarak kaydedilir."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:43507
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>fetch <replaceable>ftp://ftp.freebsd.org/pub/FreeBSD/releases/ISO-IMAGES/<replaceable>12.0</replaceable>/FreeBSD-<replaceable>12.0</replaceable>-RELEASE-amd64-bootonly.iso</replaceable> -o <replaceable>freebsd.iso</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>fetch <replaceable>ftp://ftp.freebsd.org/pub/"
+"FreeBSD/releases/ISO-IMAGES/"
+"<replaceable>12.0</replaceable>/FreeBSD-<replaceable>12.0</replaceable"
+">-RELEASE-amd64-bootonly.iso</replaceable> -o "
+"<replaceable>freebsd.iso</replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43509
+#, fuzzy
 msgid ""
 "A ZFS volume of 20 GB called <filename>xendisk0</filename> is created to "
 "serve as the disk space for the VM."
 msgstr ""
+"<filename>xendisk0</filename> adındaki 20 GB ZFS birimi, VM için disk alanı "
+"olarak kullanılmak üzere oluşturulur."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:43513
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>zfs create -V20G -o volmode=dev zroot/xendisk0</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>zfs create -V20G -o volmode=dev zroot/"
+"xendisk0</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43515
+#, fuzzy
 msgid ""
 "The new DomU guest VM is defined in a file. Some specific definitions like "
 "name, keymap, and VNC connection details are also defined. The following "
 "<filename>freebsd.cfg</filename> contains a minimum DomU configuration for "
 "this example:"
 msgstr ""
+"Yeni DomU konuk VM'i bir dosyaya tanımlanır. Ad, tuşeşlem ve VNC bağlantı "
+"detayları gibi bazı belli tanımlar da belirtilir. Bu örnek için aşağıdaki "
+"<filename>freebsd.cfg</filename>, minimum DomU yapılandırması içerir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:43520
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cat freebsd.cfg</userinput>\n"
 "builder = \"hvm\" <co xml:id=\"co-xen-builder\"/>\n"
@@ -67196,11 +67356,27 @@ msgid ""
 "serial = \"pty\"\n"
 "usbdevice = \"tablet\""
 msgstr ""
+"<prompt>#</prompt> <userinput>cat freebsd.cfg</userinput>\n"
+"builder = \"hvm\" <co xml:id=\"co-xen-builder\"/>\n"
+"name = \"freebsd\" <co xml:id=\"co-xen-name\"/>\n"
+"memory = 1024 <co xml:id=\"co-xen-memory\"/>\n"
+"vcpus = 2 <co xml:id=\"co-xen-vcpus\"/>\n"
+"vif = [ 'mac=00:16:3E:74:34:32,bridge=bridge0' ] <co xml:id=\"co-xen-vif\"/>"
+"\n"
+"disk = [\n"
+"'/dev/zvol/tank/xendisk0,raw,hda,rw', <co xml:id=\"co-xen-disk\"/>\n"
+"'/root/freebsd.iso,raw,hdc:cdrom,r' <co xml:id=\"co-xen-cdrom\"/>\n"
+"  ]\n"
+"vnc = 1 <co xml:id=\"co-xen-vnc\"/>\n"
+"vnclisten = \"0.0.0.0\"\n"
+"serial = \"pty\"\n"
+"usbdevice = \"tablet\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43535
+#, fuzzy
 msgid "These lines are explained in more detail:"
-msgstr ""
+msgstr "Bu komutlar daha detaylı olarak açıklanmıştır:"
 
 #. (itstool) path: callout/para
 #: book.translate.xml:43539
