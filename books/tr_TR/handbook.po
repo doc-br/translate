@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-07-02 11:09+0000\n"
-"Last-Translator: ElifAtalay94 <elifatalay94@icloud.com>\n"
+"Last-Translator: esradesteki <esradesteki20@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -15278,6 +15278,7 @@ msgstr ""
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10226
+#, fuzzy
 msgid ""
 "There are several ways to revisit a port's build options menu in order to "
 "add, remove, or change these options after a port has been built. One method "
@@ -15289,9 +15290,19 @@ msgid ""
 "<citerefentry><refentrytitle>ports</refentrytitle><manvolnum>7</manvolnum></"
 "citerefentry>."
 msgstr ""
+"Port oluşturulduktan sonra bu seçenekleri eklemek, kaldırmak veya "
+"değiştirmek için port'un oluşturma seçenekleri menüsünü yeniden ziyaret "
+"etmenin birkaç yolu vardır. Bir yöntem, port içeren dizine "
+"<command>cd</command> etmek ve <command>make config</command> yazmaktır. "
+"Diğer bir seçenek, <command>make showconfig</command> kullanmaktır. Bir "
+"başka seçenek ise, seçilen tüm seçenekleri kaldıran ve en baştan başlamanızı "
+"sağlayan <command>make rmconfig</command> yürütmektir. Tüm bu seçenekler ve "
+"diğerleri, <citerefentry><refentrytitle>ports</refentrytitle><manvolnum>7</ma"
+"nvolnum></citerefentry>'de detaylı bir şekilde açıklanmıştır."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10238
+#, fuzzy
 msgid ""
 "The ports system uses <citerefentry><refentrytitle>fetch</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> to download the source "
@@ -15302,9 +15313,18 @@ msgid ""
 "<citerefentry><refentrytitle>fetch</refentrytitle><manvolnum>3</manvolnum></"
 "citerefentry> for the complete list of supported variables."
 msgstr ""
+"Port Sistemi, çeşitli ortam değişkenlerini destekleyen kaynak dosyalarını "
+"indirmek için <citerefentry><refentrytitle>fetch</refentrytitle><manvolnum>1<"
+"/manvolnum></citerefentry> kullanır. FreeBSD sistemi bir güvenlik duvarı "
+"veya FTP/HTTP vekil sunucusunun ardındaysa, <envar>FTP_PASSIVE_MODE</envar>, "
+"<envar>FTP_PROXY</envar>, ve <envar>FTP_PASSWORD</envar> değişkenlerinin "
+"ayarlanması gerekebilir. Desteklenen değişkenlerin tam listesini görmek için "
+"<citerefentry><refentrytitle>fetch</refentrytitle><manvolnum>3</manvolnum></c"
+"iterefentry>'a bakın."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10246
+#, fuzzy
 msgid ""
 "For users who cannot be connected to the Internet all the time, "
 "<command>make fetch</command> can be run within <filename>/usr/ports</"
@@ -15315,105 +15335,154 @@ msgid ""
 "another category. Instead, use <command>make fetch-recursive</command> to "
 "also fetch the distfiles for all the dependencies of a port."
 msgstr ""
+"Sürekli İnternet'e bağlı kalamayan kullanıcılar için; <command>make "
+"fetch</command> komutu, tüm dağıtım dosyalarını getirmek adına <filename>/"
+"usr/ports</filename> içinde veya <filename>/usr/ports/net</filename> gibi "
+"kategori içinde ya da belirli bir port iskeleti içinde çalıştırılabilir. Bir "
+"portun herhangi bir bağımlılığı olması halinde, bu komutu bir kategoride "
+"veya port iskeletinde çalıştırmanın, başka bir kategorideki portların "
+"dağıtım dosyalarını getir<emphasis>me</emphasis>yeceğini unutmayın. Bunun "
+"yerine, portun tüm bağımlılıklarına dair tüm dağıtım dosyalarını getirmek "
+"için <command>make fetch-recursive</command> kullanın."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10258
+#, fuzzy
 msgid ""
 "In rare cases, such as when an organization has a local distfiles "
 "repository, the <varname>MASTER_SITES</varname> variable can be used to "
 "override the download locations specified in the <filename>Makefile</"
 "filename>. When using, specify the alternate location:"
 msgstr ""
+"Bir kuruluşun yerel dağıtım dosyaları deposu olması gibi bazı nadir "
+"durumlarda, <filename>Makefile</filename>'deki belirtilen indirme "
+"konumlarını geçersiz kılmak için <varname>MASTER_SITES</varname> değişkeni "
+"kullanılabilir. Kullanırken alternatif konumu belirtin:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:10264
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/<replaceable>directory</replaceable></userinput>\n"
 "<prompt>#</prompt> <userinput>make MASTER_SITE_OVERRIDE= \\\n"
 "<replaceable>ftp://ftp.organization.org/pub/FreeBSD/ports/distfiles/</replaceable> fetch</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/"
+"<replaceable>directory</replaceable></userinput>\n"
+"<prompt>#</prompt> <userinput>make MASTER_SITE_OVERRIDE= \\\n"
+"<replaceable>ftp://ftp.organization.org/pub/FreeBSD/ports/distfiles/"
+"</replaceable> fetch</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10268
+#, fuzzy
 msgid ""
 "The <varname>WRKDIRPREFIX</varname> and <varname>PREFIX</varname> variables "
 "can override the default working and target directories. For example:"
 msgstr ""
+"<varname>WRKDIRPREFIX</varname> ve <varname>PREFIX</varname> değişkenleri, "
+"varsayılan çalışır ve hedef dizinlerini geçersiz kılabilir. Örneğin:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:10272
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>make WRKDIRPREFIX=/usr/home/example/ports install</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>make WRKDIRPREFIX=/usr/home/example/ports "
+"install</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10274
+#, fuzzy
 msgid ""
 "will compile the port in <filename>/usr/home/example/ports</filename> and "
 "install everything under <filename>/usr/local</filename>."
 msgstr ""
+"<filename>/usr/home/example/ports</filename>'daki portu derleyecek ve "
+"<filename>/usr/local</filename> altındaki her şeyi yükleyecektir."
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:10278
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>make PREFIX=/usr/home/example/local install</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>make PREFIX=/usr/home/example/local "
+"install</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10280
+#, fuzzy
 msgid ""
 "will compile the port in <filename>/usr/ports</filename> and install it in "
 "<filename>/usr/home/example/local</filename>. And:"
 msgstr ""
+"<filename>/usr/ports</filename>'daki portu derleyecek ve <filename>/usr/home/"
+"example/local</filename>'de kuracaktır. Ve:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:10284
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>make WRKDIRPREFIX=../ports PREFIX=../local install</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>make WRKDIRPREFIX=../ports PREFIX=../local "
+"install</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10286
+#, fuzzy
 msgid "will combine the two."
-msgstr ""
+msgstr "ikisini derleyecektir."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10288
+#, fuzzy
 msgid ""
 "These can also be set as environmental variables. Refer to the manual page "
 "for your shell for instructions on how to set an environmental variable."
 msgstr ""
+"Bunlar çevre değişkenleri olarak da ayarlanabilir. Çevre değişkenlerini "
+"nasıl ayarlanacağına ilişkin talimatlar için kabuğunuzun el kitabına "
+"başvurun."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:10295
+#, fuzzy
 msgid "Removing Installed Ports"
-msgstr ""
+msgstr "Kurulan Portları Kaldırma"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:10297
+#, fuzzy
 msgid "<primary>ports</primary> <secondary>removing</secondary>"
-msgstr ""
+msgstr "<primary>ports</primary> <secondary>removing</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10302
+#, fuzzy
 msgid ""
 "Installed ports can be uninstalled using <command>pkg delete</command>. "
 "Examples for using this command can be found in the "
 "<citerefentry><refentrytitle>pkg-delete</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> manual page."
 msgstr ""
+"Kurulan portlar, <command>pkg delete</command> kullanılarak kaldırılabilir. "
+"Bu komutu kullanma örnekleri <citerefentry><refentrytitle>pkg-"
+"delete</refentrytitle><manvolnum>8</manvolnum></citerefentry> el kitabında "
+"bulunabilir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10306
+#, fuzzy
 msgid ""
 "Alternately, <command>make deinstall</command> can be run in the port's "
 "directory:"
 msgstr ""
+"Alternatif olarak, port dizininde <command>make deinstall</command> "
+"çalıştırılabilir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:10309
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/sysutils/lsof</userinput>\n"
 "<prompt>#</prompt> <userinput>make deinstall</userinput>\n"
@@ -15426,36 +15495,58 @@ msgid ""
 "The deinstallation will free 229 kB\n"
 "[1/1] Deleting lsof-4.88.d,8... done"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/sysutils/lsof</userinput>\n"
+"<prompt>#</prompt> <userinput>make deinstall</userinput>\n"
+"===&gt;  Deinstalling for sysutils/lsof\n"
+"===&gt;   Deinstalling\n"
+"Deinstallation has been requested for the following 1 packages:\n"
+"\n"
+"\tlsof-4.88.d,8\n"
+"\n"
+"The deinstallation will free 229 kB\n"
+"[1/1] Deleting lsof-4.88.d,8... done"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10320
+#, fuzzy
 msgid ""
 "It is recommended to read the messages as the port is uninstalled. If the "
 "port has any applications that depend upon it, this information will be "
 "displayed but the uninstallation will proceed. In such cases, it may be "
 "better to reinstall the application in order to prevent broken dependencies."
 msgstr ""
+"Port kaldırılırken mesajların okunması önerilir. Portta kendisine bağlı "
+"uygulamalar varsa, bu bilgi görüntülenir ancak kaldırma işlemi devam eder. "
+"Bu gibi durumlarda, hatalı olan bağımlılıkları önlemek için uygulamayı "
+"yeniden yüklemek daha iyi olabilir."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:10329
+#, fuzzy
 msgid "Upgrading Ports"
-msgstr ""
+msgstr "Portları Yükseltme"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:10331
+#, fuzzy
 msgid "<primary>ports</primary> <secondary>upgrading</secondary>"
-msgstr ""
+msgstr "<primary>ports</primary> <secondary>upgrading</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10336
+#, fuzzy
 msgid ""
 "Over time, newer versions of software become available in the Ports "
 "Collection. This section describes how to determine which software can be "
 "upgraded and how to perform the upgrade."
 msgstr ""
+"Zamanla, Port Koleksiyonunda yeni yazılım sürümleri kullanıma sunulmuştur. "
+"Bu bölümde hangi yazılımın yükseltilebileceği ve yükseltmenin nasıl "
+"yapılacağı açıklanmaktadır."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10341
+#, fuzzy
 msgid ""
 "To determine if newer versions of installed ports are available, ensure that "
 "the latest version of the ports tree is installed, using the updating "
@@ -15465,28 +15556,38 @@ msgid ""
 "application>, the following command will list the installed ports which are "
 "out of date:"
 msgstr ""
+"Yüklü portların daha yeni sürümlerin mevcut olup olmadığını belirlemek için, "
+"<xref linkend=\"ports-using-portsnap-method\"/> veya <xref linkend=\"ports-"
+"using-subversion-method\"/>'da açıklanan güncelleme komutlarını kullanarak "
+"port ağacının en yeni sürümünün kurulduğundan emin olun. FreeBSD 10 ve "
+"sonrasında, veya sistem <application>pkg</application>'a dönüştürülmüşse, "
+"aşağıdaki komut güncel olmayan kurulu portları listeleyecektir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:10350
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg version -l \"&lt;\"</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg version -l \"&lt;\"</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10352
+#, fuzzy
 msgid ""
 "For FreeBSD 9.<replaceable>X</replaceable> and lower, the following command "
 "will list the installed ports that are out of date:"
 msgstr ""
+"FreeBSD 9.<replaceable>X</replaceable> ve altı için, aşağıdaki komut güncel "
+"olmayan kurulu portları listeleyecektir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:10356
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg_version -l \"&lt;\"</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg_version -l \"&lt;\"</userinput>"
 
 #. (itstool) path: important/para
 #: book.translate.xml:10359
+#, fuzzy
 msgid ""
 "Before attempting an upgrade, read <filename>/usr/ports/UPDATING</filename> "
 "from the top of the file to the date closest to the last time ports were "
@@ -15497,49 +15598,72 @@ msgid ""
 "note of any instructions which match any of the ports that need upgrading "
 "and follow these instructions when performing the upgrade."
 msgstr ""
+"Yükseltmeyi denemeden önce, dosyanın üst kısmından portların yükseltildiği "
+"veya sistemin yüklendiği en son tarihe kadarki <filename>/usr/ports/"
+"UPDATING</filename> bölümünü okuyun. Bu dosya; dosya biçimi değişiklikleri, "
+"yapılandırma dosyalarındaki yer değişiklikleri veya önceki sürümlerle "
+"uyumsuzluklar gibi, bir portu güncellerken kullanıcıların karşılaşabileceği "
+"ve gerçekleştirmesi gereken çeşitli sorunları ve ek adımları açıklar. "
+"Yükseltme gerektiren portlardan herhangi biriyle eşleşen talimatları not "
+"edin ve yükseltme işlemini gerçekleştirirken bu talimatları izleyin."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:10374
+#, fuzzy
 msgid "Tools to Upgrade and Manage Ports"
-msgstr ""
+msgstr "Portları Yükseltmek ve Yönetmek için Gerekli Araçlar"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:10376
+#, fuzzy
 msgid "<primary>ports</primary> <secondary>upgrading-tools</secondary>"
-msgstr ""
+msgstr "<primary>ports</primary> <secondary>upgrading-tools</secondary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10381
+#, fuzzy
 msgid ""
 "The Ports Collection contains several utilities to perform the actual "
 "upgrade. Each has its strengths and weaknesses."
 msgstr ""
+"Port Koleksiyonu, asıl yükseltmeyi gerçekleştirmek için birkaç yardımcı "
+"program içerir. Her birinin güçlü ve zayıf yanları vardır."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10385
+#, fuzzy
 msgid ""
 "Historically, most installations used either <application>Portmaster</"
 "application> or <application>Portupgrade</application>. <application>Synth</"
 "application> is a newer alternative."
 msgstr ""
+"Tarihsel olarak, çoğu kurulum <application>Portmaster</application> veya "
+"<application>Portupgrade</application>'ı "
+"kullanmıştır.<application>Synth</application> daha yeni bir alternatiftir."
 
 #. (itstool) path: note/para
 #: book.translate.xml:10392
+#, fuzzy
 msgid ""
 "The choice of which tool is best for a particular system is up to the system "
 "administrator. It is recommended practice to back up your data before using "
 "any of these tools."
 msgstr ""
+"Belirli bir sistem için hangi aracın en iyi olduğu seçimi, sistem "
+"yöneticisine bağlıdır. Bu araçlardan herhangi birini kullanmadan önce "
+"verilerinizi yedeklemeniz önerilir."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:10401
+#, fuzzy
 msgid "Upgrading Ports Using <application>Portmaster</application>"
-msgstr ""
+msgstr "<application>Portmaster</application> Kullanarak Port Yükseltme"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:10404
+#, fuzzy
 msgid "<primary>portmaster</primary>"
-msgstr ""
+msgstr "<primary>portmaster</primary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10408
