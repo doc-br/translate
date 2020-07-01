@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-07-01 18:33+0000\n"
-"Last-Translator: ilaydaasal <ilaydaasal92@gmail.com>\n"
+"Last-Translator: onuraydin3 <crymzonx@gmail.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -81529,15 +81529,19 @@ msgstr ""
 "Bu program <application>Sendmail</application> ile FreeBSD <citerefentry><ref"
 "entrytitle>passwd</refentrytitle><manvolnum>5</manvolnum></citerefentry> "
 "veritabanı arasında kimlik doğrulama bilgilerinin geçişini sağlayan bir "
-"altyapı görevi görür. Bu da SMTP kimlik doğrulaması kullanması gereken her "
-"kullanıcı için yeni bir kullanıcı adı ve parola oluşturma sorununu ortadan "
-"kaldırır ve oturum açma ve posta parolasını aynı tutar."
+"altyapı görevi görür. Bu da <acronym>SMTP</acronym> kimlik doğrulaması "
+"kullanması gereken her kullanıcı için yeni bir kullanıcı adı ve parola "
+"oluşturma sorununu ortadan kaldırır ve oturum açma ve posta parolasını aynı "
+"tutar."
 
 #. (itstool) path: step/para
 #: book.translate.xml:52371
+#, fuzzy
 msgid ""
 "Next, edit <filename>/etc/make.conf</filename> and add the following lines:"
 msgstr ""
+"Sonra, <filename>/etc/make.conf</filename> 'u değiştirin ve aşağıdaki "
+"satırları ekleyin:"
 
 #. (itstool) path: step/programlisting
 #: book.translate.xml:52374
@@ -81549,19 +81553,28 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: book.translate.xml:52377
+#, fuzzy
 msgid ""
 "These lines provide <application>Sendmail</application> the proper "
 "configuration options for linking to <package>cyrus-sasl2</package> at "
 "compile time. Make sure that <package>cyrus-sasl2</package> has been "
 "installed before recompiling <application>Sendmail</application>."
 msgstr ""
+"Bu satırlar <application>Sendmail</application> 'e, derleme süresinde "
+"<package>cyrus-sasl2</package> 'e bağlantı kurulması için doğru yapılandırma "
+"seçeneklerini sağlar. <application>Sendmail</application> 'i yeniden "
+"derlemeden önce, <package>cyrus-sasl2</package> 'nin kurulu olduğundan emin "
+"olun"
 
 #. (itstool) path: step/para
 #: book.translate.xml:52386
+#, fuzzy
 msgid ""
 "Recompile <application>Sendmail</application> by executing the following "
 "commands:"
 msgstr ""
+"Aşağıdaki komutları çalıştırarak <application>Sendmail</application> 'i "
+"yeniden derleyin:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:52389
@@ -81577,13 +81590,18 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: book.translate.xml:52396
+#, fuzzy
 msgid ""
 "This compile should not have any problems if <filename>/usr/src</filename> "
 "has not changed extensively and the shared libraries it needs are available."
 msgstr ""
+"<filename>/usr/src</filename> kapsamlı şekilde değişmediği sürece ve "
+"ihtiyacı olduğu paylaşımlı kütüphaneler mevcut ise, bu derlemede sorun "
+"yaşanmayacaktır."
 
 #. (itstool) path: step/para
 #: book.translate.xml:52402
+#, fuzzy
 msgid ""
 "After <application>Sendmail</application> has been compiled and reinstalled, "
 "edit <filename>/etc/mail/freebsd.mc</filename> or the local <filename>.mc</"
@@ -81592,6 +81610,12 @@ msgid ""
 "manvolnum></citerefentry> as the name of <filename>.mc</filename> for "
 "uniqueness. Add these lines:"
 msgstr ""
+"<application>Sendmail</application> tamamen derlenip yeniden kurulduktan "
+"sonra, <filename>/etc/mail/freebsd.mc</filename> 'yi veya yerel "
+"<filename>.mc</filename> 'yi değiştirin. Çoğu yönetici benzersiz olması için<"
+"citerefentry><refentrytitle>hostname</refentrytitle><manvolnum>1</manvolnum><"
+"/citerefentry> 'den gelen çıktıyı, <filename>.mc</filename> 'nin adı olarak "
+"kullanmayı tercih eder. Aşağıdaki satırları ekleyin:"
 
 #. (itstool) path: step/programlisting
 #: book.translate.xml:52410
@@ -81604,15 +81628,22 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: book.translate.xml:52414
+#, fuzzy
 msgid ""
 "These options configure the different methods available to "
 "<application>Sendmail</application> for authenticating users. To use a "
 "method other than <application>pwcheck</application>, refer to the "
 "<application>Sendmail</application> documentation."
 msgstr ""
+"Bu seçenekler, kullanıcıların kimlik bilgilerini doğrulamak için "
+"<application>Sendmail</application> tarafından kullanılabilen farklı "
+"yöntemleri yapılandırır. <application>pwcheck</application> dışında bir "
+"metod kullanmak için, <application>Sendmail</application> 'in çalışma "
+"kitabına göz atın."
 
 #. (itstool) path: step/para
 #: book.translate.xml:52422
+#, fuzzy
 msgid ""
 "Finally, run <citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> while in <filename>/etc/mail</filename>. That will "
@@ -81623,22 +81654,42 @@ msgid ""
 "restart <application>Sendmail</application>. For more information about this "
 "process, refer to <filename>/etc/mail/Makefile</filename>."
 msgstr ""
+"Son olarak, <filename>/etc/mail</filename> içerisindeyken <citerefentry><refe"
+"ntrytitle>make</refentrytitle><manvolnum>1</manvolnum></citerefentry> "
+"komutunu çalıştırın. Bu, yeni <filename>.mc</filename> dosyasını "
+"çalıştıracak ve adı <filename>freebsd.cf</filename> olan veya adını yerel "
+"<filename>.mc</filename> 'den alan bir <filename>.cf</filename> dosyası "
+"oluşturacaktır. Daha sonra, dosyayı <filename>sendmail.cf</filename> 'ye "
+"kopyalayacak olan, <command>make install restart</command> komutunu "
+"çalıştırın ve <application>Sendmail</application> 'i düzgünce yeniden "
+"başlatın. Bu işlem ile ilgili daha fazla bilgi için <filename>/etc/mail/"
+"Makefile</filename> adresine göz atın."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:52436
+#, fuzzy
 msgid ""
 "To test the configuration, use a <acronym>MUA</acronym> to send a test "
 "message. For further investigation, set the <option>LogLevel</option> of "
 "<application>Sendmail</application> to <literal>13</literal> and watch "
 "<filename>/var/log/maillog</filename> for any errors."
 msgstr ""
+"Yapılandırmayı test etmek için, <acronym>MUA</acronym> kullanarak bir test "
+"mesajı gönderin. Daha ayrıntılı incelemek için "
+"<application>Sendmail</application> 'in <option>LogLevel</option> 'ini "
+"<literal>13</literal> olarak ayarlayın ve çıkabilecek herhangi bir hata için "
+"<filename>/var/log/maillog</filename> 'i takip edin."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:52442
+#, fuzzy
 msgid ""
 "For more information, refer to <link xlink:href=\"http://www.sendmail.org/"
 "~ca/email/auth.html\"> <acronym>SMTP</acronym> authentication</link>."
 msgstr ""
+"Daha fazla bilgi için, <link xlink:href=\"http://www.sendmail.org/~ca/email/"
+"auth.html\"> <acronym>SMTP</acronym> authentication</link> adresini ziyaret "
+"edin."
 
 #. (itstool) path: info/title
 #: book.translate.xml:52448
