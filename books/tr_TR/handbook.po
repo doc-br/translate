@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
 "PO-Revision-Date: 2020-07-02 11:09+0000\n"
-"Last-Translator: ilaydaasal <ilaydaasal92@gmail.com>\n"
+"Last-Translator: ElifAtalay94 <elifatalay94@icloud.com>\n"
 "Language-Team: Turkish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -9774,6 +9774,7 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7266
+#, fuzzy
 msgid ""
 "The <literal>setgid</literal> permission performs the same function as the "
 "<literal>setuid</literal> permission; except that it alters the group "
@@ -9781,36 +9782,48 @@ msgid ""
 "be granted the permissions based on the group that owns the file, not the "
 "user who started the process."
 msgstr ""
+"<literal>setgid</literal> yetkisi, <literal>setuid</literal> izniyle aynı "
+"işlevi gerçekleştirir; ancak grup ayarlarını değiştirmesi dışında. Bir "
+"uygulama veya yardımcı program bu ayarla yürütüldüğünde, işleme, işlemi "
+"başlatan kullanıcıya değil, dosyanın sahibi olan gruba göre izin verilir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7273
+#, fuzzy
 msgid ""
 "To set the <literal>setgid</literal> permission on a file, provide "
 "<citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> with a leading two (2):"
 msgstr ""
+"Bir dosyada <literal>setgid</literal> iznini ayarlamak için, önde gelen iki "
+"(2) öğeye <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</man"
+"volnum></citerefentry> sağlayın:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:7276
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>chmod 2755 sgidexample.sh</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>chmod 2755 sgidexample.sh</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7278
+#, fuzzy
 msgid ""
 "In the following listing, notice that the <literal>s</literal> is now in the "
 "field designated for the group permission settings:"
 msgstr ""
+"Aşağıdaki listede, <literal>s</literal> 'ın şu an grup izin ayarları için "
+"belirlenmiş alanda olduğuna dikkat edin:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:7282
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "-rwxr-sr-x   1 trhodes  trhodes    44 Aug 31 01:49 sgidexample.sh"
-msgstr ""
+msgstr "-rwxr-sr-x   1 trhodes  trhodes    44 Aug 31 01:49 sgidexample.sh"
 
 #. (itstool) path: note/para
 #: book.translate.xml:7285
+#, fuzzy
 msgid ""
 "In these examples, even though the shell script in question is an executable "
 "file, it will not run with a different <acronym>EUID</acronym> or effective "
@@ -9818,18 +9831,29 @@ msgid ""
 "<citerefentry><refentrytitle>setuid</refentrytitle><manvolnum>2</manvolnum></"
 "citerefentry> system calls."
 msgstr ""
+"Bu örneklerde, söz konusu kabuk komut dosyası yürütülebilir bir dosya olsa "
+"da, farklı bir <acronym>EUID</acronym> veya etkili bir kullanıcı kimliğiyle "
+"çalışmaz. Bunun nedeni, kabuk komut dosyalarının <citerefentry><refentrytitle"
+">setuid</refentrytitle><manvolnum>2</manvolnum></citerefentry> sistem "
+"çağrılarına erişemeyebilmesidir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7292
+#, fuzzy
 msgid ""
 "The <literal>setuid</literal> and <literal>setgid</literal> permission bits "
 "may lower system security, by allowing for elevated permissions. The third "
 "special permission, the <literal>sticky bit</literal>, can strengthen the "
 "security of a system."
 msgstr ""
+"<literal>setuid</literal>ve<literal>setgid</literal> izin bitleri, "
+"yükseltilmiş izinlere izin vererek sistem güvenliğini düşürebilir. Üçüncü "
+"özel izin olan <literal> yapışkan bit </literal> bir sistemin güvenliğini "
+"güçlendirebilir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7298
+#, fuzzy
 msgid ""
 "When the <literal>sticky bit</literal> is set on a directory, it allows file "
 "deletion only by the file owner. This is useful to prevent file deletion in "
@@ -9837,44 +9861,54 @@ msgid ""
 "own the file. To utilize this permission, prefix the permission set with a "
 "one (1):"
 msgstr ""
+"Bir dizinde <literal> yapışkan bit </literal>ayarlandığında, yalnızca dosya "
+"sahibi tarafından dosya silinmesine izin verir. Bu, <filename>/tmp</filename>"
+" gibi genel dizinlerde dosyanın sahibi olmayan kullanıcılar tarafından dosya "
+"silinmesini önlemek için kullanışlıdır:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:7305
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>chmod 1777 /tmp</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>chmod 1777 /tmp</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7307
+#, fuzzy
 msgid ""
 "The <literal>sticky bit</literal> permission will display as a <literal>t</"
 "literal> at the very end of the permission set:"
 msgstr ""
+"<literal> yapışkan bit </literal> yetkisi, yetki kümesinin en sonunda "
+"<literal>t</literal> olarak görüntülenir:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:7311
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>ls -al / | grep tmp</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>ls -al / | grep tmp</userinput>"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:7313
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "drwxrwxrwt  10 root  wheel         512 Aug 31 01:49 tmp"
-msgstr ""
+msgstr "drwxrwxrwt  10 root  wheel         512 Aug 31 01:49 tmp"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:7319
+#, fuzzy
 msgid "Directory Structure"
-msgstr ""
+msgstr "Dizin Yapısı"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:7321
+#, fuzzy
 msgid "<primary>directory hierarchy</primary>"
-msgstr ""
+msgstr "<primary>directory hierarchy</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7325
+#, fuzzy
 msgid ""
 "The FreeBSD directory hierarchy is fundamental to obtaining an overall "
 "understanding of the system. The most important directory is root or, "
@@ -9884,9 +9918,16 @@ msgid ""
 "other file systems that are mounted during the transition to multi-user "
 "operation."
 msgstr ""
+"FreeBSD dizin hiyerarşisi, sistemin genel olarak anlaşılmasını sağlamak için "
+"esastır. En önemli dizin kök ya da <quote></quote> dizinidir. Bu dizin, "
+"önyükleme sırasında ilk bağlanan dizindir ve işletim sistemini çok "
+"kullanıcılı çalışmaya hazırlamak için gereken temel sistemi içerir. Kök "
+"dizin ayrıca çok kullanıcılı işleme geçiş sırasında bağlanan diğer dosya "
+"sistemleri için bağlama noktaları içerir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7334
+#, fuzzy
 msgid ""
 "A mount point is a directory where additional file systems can be grafted "
 "onto a parent file system (usually the root file system). This is further "
@@ -9901,206 +9942,286 @@ msgid ""
 "citerefentry> unless their entry includes <option>noauto</option>. Details "
 "can be found in <xref linkend=\"disks-fstab\"/>."
 msgstr ""
+"Bir bağlama noktası, ek dosya sistemlerinin bir üst dosya sistemine ("
+"genellikle kök dosya sistemi) aşılanabileceği bir dizindir. Bu ayrıca <xref "
+"linkend=\"disk-organization\"/> bölümünde açıklanmaktadır. Standart bağlama "
+"noktaları <filename>/usr</filename><filename>/var/</filename><filename>/tmp</"
+"filename><filename>/mnt</filename>ve<filename>/cdrom</filename>. Bu "
+"dizinlere genellikle <filename>/etc/fstab</filename> içindeki girişlere "
+"başvurulur. Bu dosya, çeşitli dosya sistemlerinin ve bağlama noktalarının "
+"bir tablosudur ve sistem tarafından okunur. <filename>/etc/fstab</filename> "
+"içindeki dosya sistemlerinin çoğu, önyükleme sırasında <citerefentry><refentr"
+"ytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry> komut "
+"dosyasından otomatik olarak bağlanır girişleri <option>noauto</option> "
+"içerir. Detayları <xref linkend=\"disks-fstab\"/> içinde bulabilirsiniz."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7349
+#, fuzzy
 msgid ""
 "A complete description of the file system hierarchy is available in "
 "<citerefentry><refentrytitle>hier</refentrytitle><manvolnum>7</manvolnum></"
 "citerefentry>. The following table provides a brief overview of the most "
 "common directories."
 msgstr ""
+"Dosya sistemi hiyerarşisinin tam açıklaması <citerefentry><refentrytitle>hier"
+"</refentrytitle><manvolnum>7</manvolnum></citerefentry>. Aşağıdaki tabloda, "
+"en yaygın dizinlere kısa bir genel bakış sunulmaktadır."
 
 #. (itstool) path: row/entry
 #. (itstool) path: sect3/title
 #: book.translate.xml:7358 book.translate.xml:11306
+#, fuzzy
 msgid "Directory"
-msgstr ""
+msgstr "Dizin"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7365
+#, fuzzy
 msgid "Root directory of the file system."
-msgstr ""
+msgstr "Dosya sisteminin kök dizini."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7369
+#, fuzzy
 msgid "<filename>/bin/</filename>"
-msgstr ""
+msgstr "<filename>/bin/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7370
+#, fuzzy
 msgid ""
 "User utilities fundamental to both single-user and multi-user environments."
 msgstr ""
+"Hem tek kullanıcılı hem de çoklu kullanıcılı ortamlar için temel olan "
+"kullanıcı yardımcı programları."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7375
+#, fuzzy
 msgid "<filename>/boot/</filename>"
-msgstr ""
+msgstr "<filename>/boot/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7376
+#, fuzzy
 msgid ""
 "Programs and configuration files used during operating system bootstrap."
 msgstr ""
+"İşletim sistemi önyükleme sırasında kullanılan programlar ve yapı bilgileri "
+"dosyaları."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7381
+#, fuzzy
 msgid "<filename>/boot/defaults/</filename>"
-msgstr ""
+msgstr "<filename>/boot/defaults/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7382
+#, fuzzy
 msgid ""
 "Default boot configuration files. Refer to "
 "<citerefentry><refentrytitle>loader.conf</refentrytitle><manvolnum>5</"
 "manvolnum></citerefentry> for details."
 msgstr ""
+"Varsayılan önyükleme yapılandırma dosyaları. Ayrıntılar için <citerefentry><r"
+"efentrytitle>loader.conf</refentrytitle><manvolnum>5</manvolnum></citerefentr"
+"y> bölümüne bakın."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7387
+#, fuzzy
 msgid "<filename>/dev/</filename>"
-msgstr ""
+msgstr "<filename>/dev/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7388
+#, fuzzy
 msgid ""
 "Device nodes. Refer to <citerefentry><refentrytitle>intro</"
 "refentrytitle><manvolnum>4</manvolnum></citerefentry> for details."
 msgstr ""
+"Aygıt düğümleri. Ayrıntılar için <citerefentry><refentrytitle>intro</refentry"
+"title><manvolnum>4</manvolnum></citerefentry> bölümüne bakın."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7393
+#, fuzzy
 msgid "<filename>/etc/</filename>"
-msgstr ""
+msgstr "<filename>/etc/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7394
+#, fuzzy
 msgid "System configuration files and scripts."
-msgstr ""
+msgstr "Sistem yapı bilgileri dosyaları ve komut dosyaları."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7398
+#, fuzzy
 msgid "<filename>/etc/defaults/</filename>"
-msgstr ""
+msgstr "<filename>/etc/defaults/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7399
+#, fuzzy
 msgid ""
 "Default system configuration files. Refer to "
 "<citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> for details."
 msgstr ""
+"Varsayılan sistem yapı bilgileri dosyaları. Ayrıntılar için <citerefentry><re"
+"fentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry> "
+"bölümüne bakın."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7404
+#, fuzzy
 msgid "<filename>/etc/mail/</filename>"
-msgstr ""
+msgstr "<filename>/etc/mail/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7405
+#, fuzzy
 msgid ""
 "Configuration files for mail transport agents such as "
 "<citerefentry><refentrytitle>sendmail</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>."
 msgstr ""
+"<citerefentry><refentrytitle>sendmail</refentrytitle><manvolnum>8</manvolnum>"
+"</citerefentry> gibi posta aktarım aracıları için yapı bilgileri dosyaları."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7410
+#, fuzzy
 msgid "<filename>/etc/periodic/</filename>"
-msgstr ""
+msgstr "<filename>/etc/periodic/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7411
+#, fuzzy
 msgid ""
 "Scripts that run daily, weekly, and monthly, via "
 "<citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>. Refer to <citerefentry><refentrytitle>periodic</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> for details."
 msgstr ""
+"<citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></ci"
+"terefentry> aracılığıyla günlük, haftalık ve aylık olarak çalıştırılan komut "
+"dosyaları. Ayrıntılar için <citerefentry><refentrytitle>periodic</refentrytit"
+"le><manvolnum>8</manvolnum></citerefentry> bölümüne bakın."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7417
+#, fuzzy
 msgid "<filename>/etc/ppp/</filename>"
-msgstr ""
+msgstr "<filename>/etc/ppp/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7418
+#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> configuration files."
 msgstr ""
+"<citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</manvolnum></cit"
+"erefentry> yapı bilgileri dosyaları."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7422
+#, fuzzy
 msgid "<filename>/mnt/</filename>"
-msgstr ""
+msgstr "<filename>/mnt/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7423
+#, fuzzy
 msgid ""
 "Empty directory commonly used by system administrators as a temporary mount "
 "point."
 msgstr ""
+"Geçici bir bağlama noktası olarak sistem yöneticileri tarafından yaygın "
+"olarak kullanılan boş dizin."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7428
+#, fuzzy
 msgid "<filename>/proc/</filename>"
-msgstr ""
+msgstr "<filename>/proc/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7429
+#, fuzzy
 msgid ""
 "Process file system. Refer to <citerefentry><refentrytitle>procfs</"
 "refentrytitle><manvolnum>5</manvolnum></citerefentry>, "
 "<citerefentry><refentrytitle>mount_procfs</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> for details."
 msgstr ""
+"İşlem dosya sistemi. Detaylar için <citerefentry><refentrytitle>procfs</refen"
+"trytitle><manvolnum>5</manvolnum></citerefentry>, <citerefentry><refentrytitl"
+"e>mount_procfs</refentrytitle><manvolnum>8</manvolnum></citerefentry> "
+"başvurun."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7434
+#, fuzzy
 msgid "<filename>/rescue/</filename>"
-msgstr ""
+msgstr "<filename>/rescue/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7435
+#, fuzzy
 msgid ""
 "Statically linked programs for emergency recovery as described in "
 "<citerefentry><refentrytitle>rescue</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>."
 msgstr ""
+"<citerefentry><refentrytitle>rescue</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> 'de açıklanan acil durum kurtarma için statik olarak "
+"bağlantılı programlar."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7440
+#, fuzzy
 msgid "<filename>/root/</filename>"
-msgstr ""
+msgstr "<filename>/root/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7441
+#, fuzzy
 msgid ""
 "Home directory for the <systemitem class=\"username\">root</systemitem> "
 "account."
 msgstr ""
+"<systemitem class=\"username\">kök</systemitem> hesabı için giriş dizini."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7447
+#, fuzzy
 msgid "<filename>/sbin/</filename>"
-msgstr ""
+msgstr "<filename>/sbin/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7448
+#, fuzzy
 msgid ""
 "System programs and administration utilities fundamental to both single-user "
 "and multi-user environments."
 msgstr ""
+"Hem tek kullanıcılı hem de çok kullanıcılı ortamlar için temel olan sistem "
+"programları ve yönetim yardımcı programları."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7454
+#, fuzzy
 msgid "<filename>/tmp/</filename>"
-msgstr ""
+msgstr "<filename>/tmp/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7455
+#, fuzzy
 msgid ""
 "Temporary files which are usually <emphasis>not</emphasis> preserved across "
 "a system reboot. A memory-based file system is often mounted at <filename>/"
@@ -10110,74 +10231,97 @@ msgid ""
 "filename>; refer to <citerefentry><refentrytitle>mdmfs</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> for details."
 msgstr ""
+"Sistem yeniden başlatıldığında genellikle <emphasis>not</emphasis> geçici "
+"dosyaları korunur. Bellek tabanlı bir dosya sistemi genellikle "
+"<filename>/tmp</filename>. Bu, ayrıntılar için <citerefentry><refentrytitle>r"
+"c.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> ya da "
+"<filename>/etc/fstab</filename> ile ilişkili değişkenleri kullanılarak "
+"otomatikleştirilebilir <citerefentry><refentrytitle>mdmfs</refentrytitle><man"
+"volnum>8</manvolnum></citerefentry>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7465
+#, fuzzy
 msgid "<filename>/usr/</filename>"
-msgstr ""
+msgstr "<filename>/usr/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7466
+#, fuzzy
 msgid "The majority of user utilities and applications."
-msgstr ""
+msgstr "Kullanıcı yardımcı programlarının ve uygulamalarının çoğu."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7471
+#, fuzzy
 msgid "<filename>/usr/bin/</filename>"
-msgstr ""
+msgstr "<filename>/usr/bin/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7472
+#, fuzzy
 msgid "Common utilities, programming tools, and applications."
-msgstr ""
+msgstr "Ortak yardımcı programlar, programlama araçları ve uygulamaları."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7477
+#, fuzzy
 msgid "<filename>/usr/include/</filename>"
-msgstr ""
+msgstr "<filename>/usr/include/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7478
+#, fuzzy
 msgid "Standard C include files."
-msgstr ""
+msgstr "Standart C dosyaları içerir."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7482
+#, fuzzy
 msgid "<filename>/usr/lib/</filename>"
-msgstr ""
+msgstr "<filename>/usr/lib/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7483
+#, fuzzy
 msgid "Archive libraries."
-msgstr ""
+msgstr "Arşiv kütüphaneleri."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7488
+#, fuzzy
 msgid "<filename>/usr/libdata/</filename>"
-msgstr ""
+msgstr "<filename>/usr/libdata/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7489
+#, fuzzy
 msgid "Miscellaneous utility data files."
-msgstr ""
+msgstr "Çeşitli yardımcı program veri dosyaları."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7493
+#, fuzzy
 msgid "<filename>/usr/libexec/</filename>"
-msgstr ""
+msgstr "<filename>/usr/libexec/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7494
+#, fuzzy
 msgid "System daemons and system utilities executed by other programs."
 msgstr ""
+"Sistem artalan programları ve diğer programlar tarafından yürütülen sistem "
+"yardımcı programları."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7499
+#, fuzzy
 msgid "<filename>/usr/local/</filename>"
-msgstr ""
+msgstr "<filename>/usr/local/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7500
+#, fuzzy
 msgid ""
 "Local executables and libraries. Also used as the default destination for "
 "the FreeBSD ports framework. Within <filename>/usr/local</filename>, the "
@@ -10188,66 +10332,90 @@ msgid ""
 "usr/local/share</filename>, and the ports documentation is in "
 "<filename>share/doc/<replaceable>port</replaceable></filename>."
 msgstr ""
+"Yerel yürütülebilir dosyalar ve kütüphaneler. FreeBSD bağlantı noktaları "
+"çerçevesi için varsayılan hedef olarak da kullanılır. <filename>/usr/"
+"local</filename> <citerefentry><refentrytitle>hier</refentrytitle><manvolnum>"
+"7</manvolnum></citerefentry> için <filename>/usr</filename> tarafından "
+"çizilen genel düzen kullanılmalıdır. İstisnalar, <filename>/usr/"
+"local</filename> yerine doğrudan <filename>/usr/local/share</filename> "
+"altında yer alan dizinidir ve bağlantı noktası belgeleri <filename>share/doc/"
+"<replaceable>port</replaceable></filename>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7513
+#, fuzzy
 msgid "<filename>/usr/obj/</filename>"
-msgstr ""
+msgstr "<filename>/usr/obj/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7514
+#, fuzzy
 msgid ""
 "Architecture-specific target tree produced by building the <filename>/usr/"
 "src</filename> tree."
 msgstr ""
+"<filename>/usr/src</filename> ağacı oluşturularak oluşturulan mimariye özgü "
+"hedef ağaç."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7520
+#, fuzzy
 msgid "<filename>/usr/ports/</filename>"
-msgstr ""
+msgstr "<filename>/usr/ports/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7521
+#, fuzzy
 msgid "The FreeBSD Ports Collection (optional)."
-msgstr ""
+msgstr "FreeBSD Bağlantı Noktaları (isteğe bağlı)."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7525
+#, fuzzy
 msgid "<filename>/usr/sbin/</filename>"
-msgstr ""
+msgstr "<filename>/usr/sbin/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7526
+#, fuzzy
 msgid "System daemons and system utilities executed by users."
 msgstr ""
+"Kullanıcılar tarafından yürütülen sistem artalan süreçleri ve sistem arka "
+"plan programları."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7531
+#, fuzzy
 msgid "<filename>/usr/share/</filename>"
-msgstr ""
+msgstr "<filename>/usr/share/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7532
+#, fuzzy
 msgid "Architecture-independent files."
-msgstr ""
+msgstr "Mimariden-bağımsız dosyalar."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7536
+#, fuzzy
 msgid "<filename>/usr/src/</filename>"
-msgstr ""
+msgstr "<filename>/usr/src/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7537
+#, fuzzy
 msgid "BSD and/or local source files."
-msgstr ""
+msgstr "BSD ve/veya yerel kaynak dosyaları."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7541
+#, fuzzy
 msgid "<filename>/var/</filename>"
-msgstr ""
+msgstr "<filename>/var/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7542
+#, fuzzy
 msgid ""
 "Multi-purpose log, temporary, transient, and spool files. A memory-based "
 "file system is sometimes mounted at <filename>/var</filename>. This can be "
@@ -10257,66 +10425,87 @@ msgid ""
 "filename>; refer to <citerefentry><refentrytitle>mdmfs</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> for details."
 msgstr ""
+"Çok amaçlı günlük, geçici, geçici ve biriktirme dosyaları. Bellek tabanlı "
+"bir dosya sistemi /var</filename> 'da bazen oluşturulur. Otomatikleştirilmiş "
+"kullanım varmfs-related variables in <citerefentry><refentrytitle>rc.conf</re"
+"fentrytitle><manvolnum>5</manvolnum></citerefentry> ya da girişle birlikte "
+"<filename>/etc/fstab</filename>; refer to <citerefentry><refentrytitle>mdmfs<"
+"/refentrytitle><manvolnum>8</manvolnum></citerefentry> detaylar için "
+"bakabilirsiniz."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7553
+#, fuzzy
 msgid "<filename>/var/log/</filename>"
-msgstr ""
+msgstr "<filename>/var/log/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7554
+#, fuzzy
 msgid "Miscellaneous system log files."
-msgstr ""
+msgstr "Çok yönlü sistem günlük dosyası."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7558
+#, fuzzy
 msgid "<filename>/var/mail/</filename>"
-msgstr ""
+msgstr "<filename>/var/mail/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7559
+#, fuzzy
 msgid "User mailbox files."
-msgstr ""
+msgstr "Kullanıcı posta kutusu dosyaları."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7563
+#, fuzzy
 msgid "<filename>/var/spool/</filename>"
-msgstr ""
+msgstr "<filename>/var/spool/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7564
+#, fuzzy
 msgid "Miscellaneous printer and mail system spooling directories."
-msgstr ""
+msgstr "Çok yönlü yazıcı ve posta sistem biriktirme dizinleri."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7569
+#, fuzzy
 msgid "<filename>/var/tmp/</filename>"
-msgstr ""
+msgstr "<filename>/var/tmp/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7570
+#, fuzzy
 msgid ""
 "Temporary files which are usually preserved across a system reboot, unless "
 "<filename>/var</filename> is a memory-based file system."
 msgstr ""
+"<filename>/var/</filename> bellek tabanlı bir dosya sistemi değilse, "
+"genellikle sistem yeniden başlatıldığında korunan geçici dosyalar."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7577
+#, fuzzy
 msgid "<filename>/var/yp/</filename>"
-msgstr ""
+msgstr "<filename>/var/yp/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7578
+#, fuzzy
 msgid "NIS maps."
-msgstr ""
+msgstr "NIS haritaları."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:7586
+#, fuzzy
 msgid "Disk Organization"
-msgstr ""
+msgstr "Disk Organizasyonu"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7588
+#, fuzzy
 msgid ""
 "The smallest unit of organization that FreeBSD uses to find files is the "
 "filename. Filenames are case-sensitive, which means that <filename>readme."
@@ -10324,18 +10513,28 @@ msgid ""
 "FreeBSD does not use the extension of a file to determine whether the file "
 "is a program, document, or some other form of data."
 msgstr ""
+"FreeBSD'nin dosyaları bulmak için kullandığı en küçük kuruluş birimi dosya "
+"adıdır. Dosya adları büyük / küçük harfe duyarlıdır; başka bir deyişle, "
+"<filename>readme.txt</filename>ve<filename>README.TXT</filename> iki ayrı "
+"dosyadır. FreeBSD, dosyanın bir program, belge veya başka bir veri biçimi "
+"olup olmadığını belirlemek için bir dosyanın uzantısını kullanmaz."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7595
+#, fuzzy
 msgid ""
 "Files are stored in directories. A directory may contain no files, or it may "
 "contain many hundreds of files. A directory can also contain other "
 "directories, allowing a hierarchy of directories within one another in order "
 "to organize data."
 msgstr ""
+"Dosyalar dizinlerde saklanır. Bir dizin hiçbir dosya veya yüzlerce dosya "
+"içerebilir. Bir dizin ayrıca, verileri düzenlemek için birbirlerinin "
+"içindeki dizin hiyerarşisine izin veren diğer dizinleri de içerebilir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7601
+#, fuzzy
 msgid ""
 "Files and directories are referenced by giving the file or directory name, "
 "followed by a forward slash, <literal>/</literal>, followed by any other "
@@ -10349,9 +10548,18 @@ msgid ""
 "the path. For example, one would not type <filename>c:\\foo\\bar\\readme."
 "txt</filename> on FreeBSD."
 msgstr ""
+"Dosya ve dizinlere dosya veya dizin adı, ardından eğik çizgi, "
+"<literal>/</literal> ve ardından gerekli diğer dizin adları verilerek "
+"başvuruda bulunulur. Örneğin,<filename>foo</</filename><filename> dosyasını, "
+"tam adı veya </filename> yolunu içeren bir </filename> bar <filename> dizini "
+"içeriyorsa / </filename>, dosyaya <filename> foo/bar/readme.txt "
+"</filename></filename>. Bunun, dosya ve dizin adlarını ayırmak için "
+"<literal></literal> kullanan <trademark class=\"registered\""
+">Windows</trademark> 'dan farklı olduğunu unutmayın."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7616
+#, fuzzy
 msgid ""
 "Directories and files are stored in a file system. Each file system contains "
 "exactly one directory at the very top level, called the <firstterm>root "
@@ -10362,9 +10570,18 @@ msgid ""
 "many disks are on the FreeBSD system, every directory appears to be part of "
 "the same disk."
 msgstr ""
+"Dizinler ve dosyalar bir dosya sisteminde saklanır. Her dosya sistemi, en "
+"üst düzeyde, söz konusu dosya sistemi için <firstterm> kök dizini "
+"</firstterm> adı verilen tam bir dizin içerir. Bu kök dizin başka dizinler "
+"içerebilir. Bir dosya sistemi <firstterm> kök dosya sistemi </firstterm> ya "
+"da <literal></literal> olarak adlandırılır. Diğer tüm dosya sistemleri kök "
+"dosya sistemi altında <firstterm>monte edilir </firstterm>. FreeBSD "
+"sisteminde kaç disk olursa olsun, her dizin aynı diskin bir parçası gibi "
+"görünür."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7627
+#, fuzzy
 msgid ""
 "Consider three file systems, called <literal>A</literal>, <literal>B</"
 "literal>, and <literal>C</literal>. Each file system has one root directory, "
@@ -10372,9 +10589,16 @@ msgid ""
 "<literal>A2</literal> (and likewise <literal>B1</literal>, <literal>B2</"
 "literal> and <literal>C1</literal>, <literal>C2</literal>)."
 msgstr ""
+"<literal>A</literal><literal>B</literal> ve <literal>C</literal> olarak "
+"bilinen üç dosya sistemini dikkate alın. İki diğer dizinleri içeren, her "
+"dosya sistemi bir dizin köküne sahiptir "
+"<literal>A1</literal><literal>A2</literal>(ve aynı şekilde "
+"<literal>B1</literal><literal>B2</literal> "
+"ve<literal>C1</literal><literal>C2</literal>) olarak adlandırılan."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7634
+#, fuzzy
 msgid ""
 "Call <literal>A</literal> the root file system. If "
 "<citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></"
@@ -10382,6 +10606,10 @@ msgid ""
 "two subdirectories, <literal>A1</literal> and <literal>A2</literal>. The "
 "directory tree looks like this:"
 msgstr ""
+"Kök dosya sistemi <literal>A</literal> olarak bilinir. Bu dizinin içeriğini "
+"görüntülemek için <citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1"
+"</manvolnum></citerefentry> kullanılırsa, iki alt dizin gösterilir, <literal>"
+"A1 </literal> ve <literal> A2 </literal>. Dizin ağacı şöyle görünür:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -10389,13 +10617,14 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:7642
+#, fuzzy
 msgctxt "_"
 msgid "external ref='basics/example-dir1' md5='__failed__'"
-msgstr ""
+msgstr "external ref='basics/example-dir1' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: book.translate.xml:7646
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 " /\n"
 " |\n"
@@ -10403,15 +10632,25 @@ msgid ""
 " |\n"
 " `--- A2"
 msgstr ""
+" /\n"
+" |\n"
+" +--- A1\n"
+" |\n"
+" `--- A2"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7654
+#, fuzzy
 msgid ""
 "A file system must be mounted on to a directory in another file system. When "
 "mounting file system <literal>B</literal> on to the directory <literal>A1</"
 "literal>, the root directory of <literal>B</literal> replaces <literal>A1</"
 "literal>, and the directories in <literal>B</literal> appear accordingly:"
 msgstr ""
+"Bir dosya sisteminin başka bir dosya sistemindeki bir dizine bağlanması "
+"gerekir. <literal>B</literal> dosya sistemini <literal>A1</literal> dizinine "
+"bağlarken, <literal>B</literal> kök dizini <literal>A1</literal> ve "
+"dizinlerin yerine geçer <literal>B</literal>'de buna göre görünür:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -10419,13 +10658,14 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:7663
+#, fuzzy
 msgctxt "_"
 msgid "external ref='basics/example-dir2' md5='__failed__'"
-msgstr ""
+msgstr "external ref='basics/example-dir2' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: book.translate.xml:7667
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 " /\n"
 " |\n"
@@ -10437,9 +10677,19 @@ msgid ""
 " |\n"
 " `--- A2"
 msgstr ""
+" /\n"
+" |\n"
+" +--- A1\n"
+" |     |\n"
+" |     +--- B1\n"
+" |     |\n"
+" |     `--- B2\n"
+" |\n"
+" `--- A2"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7679
+#, fuzzy
 msgid ""
 "Any files that are in the <literal>B1</literal> or <literal>B2</literal> "
 "directories can be reached with the path <filename>/A1/B1</filename> or "
@@ -10448,13 +10698,21 @@ msgid ""
 "<literal>B</literal> is <firstterm>unmounted</firstterm> from <literal>A</"
 "literal>."
 msgstr ""
+"<literal>B1</literal> veya <literal>B2</literal> dizinlerindeki dosyalara "
+"<filename>/A1/B1</filename> veya <filename> / A1 / B2</filename> ile "
+"gerektiği gibi </filename> ulaşabilinir. <filename>/A1</filename> içindeki "
+"dosyalar geçici olarak gizlendi. <literal>B</literal> ise "
+"<firstterm>unmounted</firstterm> dan <literal>A</literal> yeniden görünürler."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7688
+#, fuzzy
 msgid ""
 "If <literal>B</literal> had been mounted on <literal>A2</literal> then the "
 "diagram would look like this:"
 msgstr ""
+"<literal> B </literal> <literal> A2 </literal> üzerine oluşturulmuş olsaydı "
+"şema şöyle görünecektir:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -10462,13 +10720,14 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:7694
+#, fuzzy
 msgctxt "_"
 msgid "external ref='basics/example-dir3' md5='__failed__'"
-msgstr ""
+msgstr "external ref='basics/example-dir3' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: book.translate.xml:7698
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 " /\n"
 " |\n"
@@ -10480,22 +10739,38 @@ msgid ""
 "       |\n"
 "       `--- B2"
 msgstr ""
+" /\n"
+" |\n"
+" +--- A1\n"
+" |\n"
+" `--- A2\n"
+"       |\n"
+"       +--- B1\n"
+"       |\n"
+"       `--- B2"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7710
+#, fuzzy
 msgid ""
 "and the paths would be <filename>/A2/B1</filename> and <filename>/A2/B2</"
 "filename> respectively."
 msgstr ""
+"ve yollar sırasıyla <filename>/A2/B1 ve <filename>/A2/B2</filename> olur."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7715
+#, fuzzy
 msgid ""
 "File systems can be mounted on top of one another. Continuing the last "
 "example, the <literal>C</literal> file system could be mounted on top of the "
 "<literal>B1</literal> directory in the <literal>B</literal> file system, "
 "leading to this arrangement:"
 msgstr ""
+"Dosya sistemleri üst üste oluşturulabilir. Son örneğe devam ederseniz, "
+"<literal>B</literal> dosya sistemi <literal>C</literal> dosya sistemindeki "
+"<literal>B1</literal> dizininin üstüne monte edilebilir ve bu düzenlemeye "
+"yol açar:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -10503,13 +10778,14 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:7723
+#, fuzzy
 msgctxt "_"
 msgid "external ref='basics/example-dir4' md5='__failed__'"
-msgstr ""
+msgstr "external ref='basics/example-dir4' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: book.translate.xml:7727
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 " /\n"
 " |\n"
@@ -10525,13 +10801,29 @@ msgid ""
 "       |\n"
 "       `--- B2"
 msgstr ""
+" /\n"
+" |\n"
+" +--- A1\n"
+" |\n"
+" `--- A2\n"
+"       |\n"
+"       +--- B1\n"
+"       |     |\n"
+"       |     +--- C1\n"
+"       |     |\n"
+"       |     `--- C2\n"
+"       |\n"
+"       `--- B2"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7743
+#, fuzzy
 msgid ""
 "Or <literal>C</literal> could be mounted directly on to the <literal>A</"
 "literal> file system, under the <literal>A1</literal> directory:"
 msgstr ""
+"Ya da <literal>C</literal> direkt olarak <literal>A1</literal> 'da dizin "
+"altında <literal>A</literal> dosya sistemi oluşturulmuş olmalıdır."
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -10539,13 +10831,14 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:7749
+#, fuzzy
 msgctxt "_"
 msgid "external ref='basics/example-dir5' md5='__failed__'"
-msgstr ""
+msgstr "external ref='basics/example-dir5' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: book.translate.xml:7753
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 " /\n"
 " |\n"
@@ -10561,22 +10854,41 @@ msgid ""
 "       |\n"
 "       `--- B2"
 msgstr ""
+" /\n"
+" |\n"
+" +--- A1\n"
+" |     |\n"
+" |     +--- C1\n"
+" |     |\n"
+" |     `--- C2\n"
+" |\n"
+" `--- A2\n"
+"       |\n"
+"       +--- B1\n"
+"       |\n"
+"       `--- B2"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7769
+#, fuzzy
 msgid ""
 "It is entirely possible to have one large root file system, and not need to "
 "create any others. There are some drawbacks to this approach, and one "
 "advantage."
 msgstr ""
+"Bir büyük kök dosya sistemine sahip olmak tamamen mümkündür ve başka bir "
+"tane oluşturmanıza gerek yoktur. Bu yaklaşımın bazı dezavantajları ve bir "
+"avantajı vardır."
 
 #. (itstool) path: itemizedlist/title
 #: book.translate.xml:7774
+#, fuzzy
 msgid "Benefits of Multiple File Systems"
-msgstr ""
+msgstr "Çoklu Dosya Sistemlerinin Faydaları"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7777
+#, fuzzy
 msgid ""
 "Different file systems can have different <firstterm>mount options</"
 "firstterm>. For example, the root file system can be mounted read-only, "
@@ -10587,9 +10899,19 @@ msgid ""
 "firstterm>/<firstterm>guid</firstterm> bits on executables stored on the "
 "file system from taking effect, possibly improving security."
 msgstr ""
+"Farklı dosya sistemlerinin farklı <firstterm> bağlama seçenekleri "
+"</firstterm> olabilir. Örneğin, kök dosya sistemi salt okunur olarak monte "
+"edilebilir, bu da kullanıcıların kritik bir dosyayı yanlışlıkla silmesini "
+"veya düzenlemesini imkansız hale getirir. <filename>/home</filename> gibi "
+"kullanıcı tarafından yazılabilir dosya sistemlerinin diğer dosya "
+"sistemlerinden ayrılması </firstterm><firstterm>guid</firstterm>. Bu "
+"seçenek, dosya sisteminde depolanan yürütülebilir "
+"dosyalardaki<firstterm>suid</firstterm>/<firstterm>guid</firstterm> "
+"bitlerinin etkili olmasını ve muhtemelen güvenliği geliştirmesini önler."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7791
+#, fuzzy
 msgid ""
 "FreeBSD automatically optimizes the layout of files on a file system, "
 "depending on how the file system is being used. So a file system that "
@@ -10597,23 +10919,36 @@ msgid ""
 "optimization to one that contains fewer, larger files. By having one big "
 "file system this optimization breaks down."
 msgstr ""
+"FreeBSD, dosya sisteminin nasıl kullanıldığına bağlı olarak, dosya "
+"sistemindeki dosyaların düzenini otomatik olarak optimize eder. Bu nedenle, "
+"sık sık yazılan çok sayıda küçük dosya içeren bir dosya sistemi, daha az "
+"sayıda, daha büyük dosya içeren bir dosya sisteminden farklı bir "
+"optimizasyona sahip olacaktır. Bir büyük dosya sistemine sahip olarak bu "
+"optimizasyon bozulur."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7800
+#, fuzzy
 msgid ""
 "FreeBSD's file systems are robust if power is lost. However, a power loss at "
 "a critical point could still damage the structure of the file system. By "
 "splitting data over multiple file systems it is more likely that the system "
 "will still come up, making it easier to restore from backup as necessary."
 msgstr ""
+"FreeBSD'nin dosya sistemleri, güç kaybedilirse sağlamdır. Ancak, kritik bir "
+"noktadaki güç kaybı yine de dosya sisteminin yapısına zarar verebilir. "
+"Verileri birden çok dosya sistemine bölerek sistemin hala gelmesi daha "
+"olasıdır ve gerektiğinde yedeklemeden geri yüklemeyi kolaylaştırır."
 
 #. (itstool) path: itemizedlist/title
 #: book.translate.xml:7810
+#, fuzzy
 msgid "Benefit of a Single File System"
-msgstr ""
+msgstr "Tekli Dosya Sisteminin Faydaları"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7813
+#, fuzzy
 msgid ""
 "File systems are a fixed size. If you create a file system when you install "
 "FreeBSD and give it a specific size, you may later discover that you need to "
@@ -10621,18 +10956,28 @@ msgid ""
 "up, recreating the file system with the new size, and then restoring the "
 "backed up data."
 msgstr ""
+"Dosya sistemleri sabit bir boyuttadır. FreeBSD'yi yüklediğinizde ve belirli "
+"bir boyut verirken bir dosya sistemi oluşturursanız, daha sonra bölümü "
+"büyütmeniz gerektiğini keşfedebilirsiniz. Bu, yedeklenmeden, dosya sistemini "
+"yeni boyutla yeniden oluşturmadan ve sonra yedeklenen verileri geri "
+"yüklemeden kolayca gerçekleştirilemez."
 
 #. (itstool) path: important/para
 #: book.translate.xml:7821
+#, fuzzy
 msgid ""
 "FreeBSD features the <citerefentry><refentrytitle>growfs</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> command, which makes "
 "it possible to increase the size of file system on the fly, removing this "
 "limitation."
 msgstr ""
+"FreeBSD, bu sınırlamayı kaldırarak dosya sisteminin boyutunu artırmayı "
+"mümkün kılan <citerefentry><refentrytitle>growfs</refentrytitle><manvolnum>8<"
+"/manvolnum></citerefentry> komutuna sahiptir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7828
+#, fuzzy
 msgid ""
 "File systems are contained in partitions. This does not have the same "
 "meaning as the common usage of the term partition (for example, <trademark "
@@ -10643,9 +10988,18 @@ msgid ""
 "file systems are often described by either their typical mount point in the "
 "file system hierarchy, or the letter of the partition they are contained in."
 msgstr ""
+"Dosya sistemleri bölümlerde bulunur. FreeBSD'nin <trademark class=\""
+"registered\">UNIX</trademark> kalıtımından dolayı, bunun bölüm teriminin "
+"ortak kullanımı ile aynı anlamı yoktur (örneğin, <trademark class=\""
+"registered\">MS-DOS</trademark>partition). Her bölüm <literal>a</literal> "
+"arasındaki <literal>h</literal> bir harfle tanımlanır. Her bölüm yalnızca "
+"bir dosya sistemi içerebilir, yani dosya sistemleri genellikle dosya sistemi "
+"hiyerarşisindeki tipik bağlama noktaları veya içinde bulundukları bölümün "
+"harfiyle tanımlanır."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7838
+#, fuzzy
 msgid ""
 "FreeBSD also uses disk space for <firstterm>swap space</firstterm> to "
 "provide <firstterm>virtual memory</firstterm>. This allows your computer to "
@@ -10654,95 +11008,128 @@ msgid ""
 "used to the swap space, and moves it back in (moving something else out) "
 "when it needs it."
 msgstr ""
+"FreeBSD ayrıca <firstterm> sanal bellek </firstterm> sağlamak için "
+"<firstterm>takas alanı </firstterm> için disk alanı kullanır. Bu, "
+"bilgisayarınızın gerçekte olduğundan çok daha fazla belleğe sahip gibi "
+"davranmasını sağlar. FreeBSD'nin belleği dolduğunda, şu anda kullanılmayan "
+"verilerin bir kısmını takas alanına taşır ve ihtiyaç duyulduğunda onu geri "
+"taşır (başka bir şeyi dışarı taşır)."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7847
+#, fuzzy
 msgid "Some partitions have certain conventions associated with them."
-msgstr ""
+msgstr "Bazı bölümlerin kendileriyle ilişkili belirli kuralları vardır."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7857
+#, fuzzy
 msgid "Partition"
-msgstr ""
+msgstr "Bölüntü"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7858
+#, fuzzy
 msgid "Convention"
-msgstr ""
+msgstr "Sözleşme"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7864
+#, fuzzy
 msgid "<literal>a</literal>"
-msgstr ""
+msgstr "<literal>a</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7865
+#, fuzzy
 msgid "Normally contains the root file system."
-msgstr ""
+msgstr "Normalde kök dosya sistemini içerir."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7869
+#, fuzzy
 msgid "<literal>b</literal>"
-msgstr ""
+msgstr "<literal>b</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7870
+#, fuzzy
 msgid "Normally contains swap space."
-msgstr ""
+msgstr "Genellikle takas alanı içerir."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7874
+#, fuzzy
 msgid "<literal>c</literal>"
-msgstr ""
+msgstr "<literal>c</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7875
+#, fuzzy
 msgid ""
 "Normally the same size as the enclosing slice. This allows utilities that "
 "need to work on the entire slice, such as a bad block scanner, to work on "
 "the <literal>c</literal> partition. A file system would not normally be "
 "created on this partition."
 msgstr ""
+"Normalde, kapalı dilimle aynı boyutta. Bu, bozuk blok tarayıcı gibi tüm "
+"dilim üzerinde çalışması gereken yardımcı programların <literal>c</literal>"
+"bölümünde çalışmasını sağlar. Bu bölümde normalde bir dosya sistemi "
+"oluşturulmaz."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7883
+#, fuzzy
 msgid "<literal>d</literal>"
-msgstr ""
+msgstr "<literal>d</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7884
+#, fuzzy
 msgid ""
 "Partition <literal>d</literal> used to have a special meaning associated "
 "with it, although that is now gone and <literal>d</literal> may work as any "
 "normal partition."
 msgstr ""
+"<literal>d</literal> bölümünün kendisiyle ilişkilendirilmiş özel bir anlamı "
+"vardı, ancak şimdi gitti ve <literal>d</literal> herhangi bir normal bölüm "
+"olarak çalışabilir."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7893
+#, fuzzy
 msgid ""
 "Disks in FreeBSD are divided into slices, referred to in <trademark class="
 "\"registered\">Windows</trademark> as partitions, which are numbered from 1 "
 "to 4. These are then divided into partitions, which contain file systems, "
 "and are labeled using letters."
 msgstr ""
+"FreeBSD'deki diskler, 1'den 4'e kadar numaralandırılmış, bölümler olarak <"
+"trademark class=\"registered\">Windows</trademark> olarak adlandırılan "
+"dilimlere bölünür ve bunlar daha sonra dosya sistemlerini içeren ve etiketli "
+"bölümlere ayrılır harfler kullanarak."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:7898
+#, fuzzy
 msgid "<primary>slices</primary>"
-msgstr ""
+msgstr "<primary>slices</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:7901 book.translate.xml:32229 book.translate.xml:32325
+#, fuzzy
 msgid "<primary>partitions</primary>"
-msgstr ""
+msgstr "<primary>partitions</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:7904
+#, fuzzy
 msgid "<primary>dangerously dedicated</primary>"
-msgstr ""
+msgstr "<primary>dangerously dedicated</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7908
+#, fuzzy
 msgid ""
 "Slice numbers follow the device name, prefixed with an <literal>s</literal>, "
 "starting at 1. So <quote>da0<emphasis>s1</emphasis></quote> is the first "
@@ -10753,6 +11140,14 @@ msgid ""
 "the first SATA disk. These devices are used by file systems that expect to "
 "occupy a slice."
 msgstr ""
+"Dilim numaraları, 1'den başlayarak <literal> s </literal> ile başlayan aygıt "
+"adını izler. Yani <quote>da0<emphasis>s1</emphasis></quote> ilk SCSI "
+"sürücüsündeki ilk dilimdir. Bir diskte yalnızca dört fiziksel dilim "
+"olabilir, ancak uygun türde fiziksel dilimlerin içinde mantıksal dilimler "
+"olabilir. Bu genişletilmiş dilimler 5'ten başlayarak numaralandırılır, bu "
+"nedenle <SATA diskindeki ilk genişletilmiş dilim "
+"<quote>ada0<emphasis>s5</emphasis></quote>. Bu cihazlar, bir dilim işgal "
+"etmeyi bekleyen dosya sistemleri tarafından kullanılır."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7918
