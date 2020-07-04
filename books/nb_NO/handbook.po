@@ -4,13 +4,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-07-05 00:04+0000\n"
+"Last-Translator: Lars Skogstad <n3c@n3c.no>\n"
+"Language-Team: Norwegian Bokmål <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/boooks_handbook/nb_NO/>\n"
 "Language: nb_NO\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.0.4\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -20,12 +23,12 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:693
 msgid "FreeBSD Handbook"
-msgstr ""
+msgstr "FreeBSD Håndboken"
 
 #. (itstool) path: info/author
 #: book.translate.xml:695
 msgid "<orgname>The FreeBSD Documentation Project</orgname>"
-msgstr ""
+msgstr "<orgname>FreeBSD-dokumentasjonsprosjektet</orgname>"
 
 #. (itstool) path: info/copyright
 #: book.translate.xml:703
@@ -39,11 +42,19 @@ msgid ""
 "<year>2019</year> <year>2020</year> <holder>The FreeBSD Documentation "
 "Project</holder>"
 msgstr ""
+"<year>1995</year> <year>1996</year> <year>1997</year> <year>1998</year> "
+"<year>1999</year> <year>2000</year> <year>2001</year> <year>2002</year> "
+"<year>2003</year> <year>2004</year> <year>2005</year> <year>2006</year> "
+"<year>2007</year> <year>2008</year> <year>2009</year> <year>2010</year> "
+"<year>2011</year> <year>2012</year> <year>2013</year> <year>2014</year> "
+"<year>2015</year> <year>2016</year> <year>2017</year> <year>2018</year> "
+"<year>2019</year> <year>2020</year> <holder>FreeBSD-"
+"dokumentasjonsprosjektet</holder>"
 
 #. (itstool) path: legalnotice/title
 #: book.translate.xml:735
 msgid "Copyright"
-msgstr ""
+msgstr "Opphavsrett"
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:737
@@ -52,6 +63,9 @@ msgid ""
 "HTML, PDF, PostScript, RTF and so forth) with or without modification, are "
 "permitted provided that the following conditions are met:"
 msgstr ""
+"Omfordeling og bruk i kilde (XML DocBook) og 'kompilerte' skjemaer (XML, "
+"HTML, PDF, PostScript, RTF og så videre) med eller uten modifisering, er "
+"tillatt under forutsetning av at følgende vilkår er oppfylt:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:744
@@ -60,6 +74,9 @@ msgid ""
 "notice, this list of conditions and the following disclaimer as the first "
 "lines of this file unmodified."
 msgstr ""
+"Omfordelinger av kildekoden (XML DocBook) må beholde ovennevnte copyright-"
+"varsel, denne listen over betingelser og følgende ansvarsfraskrivelse som de "
+"første linjene i denne filen er uendret."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:750
@@ -69,6 +86,11 @@ msgid ""
 "notice, this list of conditions and the following disclaimer in the "
 "documentation and/or other materials provided with the distribution."
 msgstr ""
+"Omfordelinger i kompilert form (transformert til andre DTD-er, konvertert "
+"til PDF, PostScript, RTF og andre formater) må reprodusere ovennevnte "
+"copyright-varsel, denne listen over betingelser og følgende "
+"ansvarsfraskrivelse i dokumentasjonen og / eller annet materiale som følger "
+"med distribusjonen."
 
 #. (itstool) path: important/para
 #: book.translate.xml:759
@@ -85,31 +107,42 @@ msgid ""
 "ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF "
 "THE POSSIBILITY OF SUCH DAMAGE."
 msgstr ""
+"DENNE DOKUMENTASJONEN LEVERES AV FREEBSD-DOKUMENTASJONSPROSJEKTET \"SOM ER\" "
+"OG EVENTUELLT UTTRYKKTE ELLER IMPLISJONTE GARANTIER, INKLUDERT, MEN IKKE "
+"BEGRENSET TIL DE IMPLISJONTE GARANTIER FOR SALGBARHET OG EGNETHET FOR ET "
+"SÆRLIG FORMÅL ER FORBEVISET. IKKE ANSVARLIG SKAL FREEBSD-"
+"DOKUMENTASJONSPROSJEKTET ANSVARLES FOR NOEN DIREKTE, INDIREKTE, HENDELIGE, "
+"SPESIELLE, SÆRLIGE ELLER KONSEKVENSIELLE SKADER (INKLUDERENDE, MEN IKKE "
+"BEGRENSET TIL ANSKAFFELSE AV UNDERLAGSGODER ELLER TJENESTER;TAP AV BRUK, "
+"DATA ELLER; FORRETNINGSINTERRUPTJON) UANSETT, SOM ER FORÅRSAKET OG PÅ EN "
+"HVILKEN SOM HELST TEORI OM ANSVAR, OM KONTRAKT, STRENGT ANSVARLIGHET, ELLER "
+"SKADE (INKLUDERT NEGLIGENS ELLER ANNEN) OPPSTÅNGEN VEI UTEN BRUK AV DENNE "
+"DOKUMENTASJONEN, SOM HVIS UTSLAGT AV UTSETTELSE AV UTSETTELSE."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:776
 msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
-msgstr ""
+msgstr "FreeBSD er et registrert varemerke for FreeBSD Foundation."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:778
 msgid "3Com and HomeConnect are registered trademarks of 3Com Corporation."
-msgstr ""
+msgstr "3Com og HomeConnect er registrerte varemerker for 3Com Corporation."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:780
 msgid "3ware is a registered trademark of 3ware Inc."
-msgstr ""
+msgstr "3ware er et registrert varemerke for 3ware Inc."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:782
 msgid "ARM is a registered trademark of ARM Limited."
-msgstr ""
+msgstr "ARM er et registrert varemerke for ARM Limited."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:784
 msgid "Adaptec is a registered trademark of Adaptec, Inc."
-msgstr ""
+msgstr "Adaptec er et registrert varemerke for Adaptec, Inc."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:786
@@ -118,6 +151,9 @@ msgid ""
 "trademarks or trademarks of Adobe Systems Incorporated in the United States "
 "and/or other countries."
 msgstr ""
+"Adobe, Acrobat, Acrobat Reader, Flash og PostScript er enten registrerte "
+"varemerker eller varemerker for Adobe Systems Incorporated i USA og / eller "
+"andre land."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:790
@@ -126,11 +162,14 @@ msgid ""
 "Quicktime, and TrueType are trademarks of Apple Inc., registered in the U.S. "
 "and other countries."
 msgstr ""
+"Apple, AirPort, FireWire, iMac, iPhone, iPad, Mac, Macintosh, Mac OS, "
+"Quicktime og TrueType er varemerker for Apple Inc., registrert i USA og "
+"andre land."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:795
 msgid "Android is a trademark of Google Inc."
-msgstr ""
+msgstr "Android er et varemerke for Google Inc."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:797
@@ -139,6 +178,9 @@ msgid ""
 "trademarks or trademarks of Heidelberger Druckmaschinen AG in the U.S. and "
 "other countries."
 msgstr ""
+"Heidelberg, Helvetica, Palatino og Times Roman er enten registrerte "
+"varemerker eller varemerker for Heidelberger Druckmaschinen AG i USA og "
+"andre land."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:801
@@ -147,6 +189,9 @@ msgid ""
 "International Business Machines Corporation in the United States, other "
 "countries, or both."
 msgstr ""
+"IBM, AIX, OS / 2, PowerPC, PS / 2, S / 390 og ThinkPad er varemerker for "
+"International Business Machines Corporation i USA, andre land eller begge "
+"deler."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:805
@@ -154,6 +199,8 @@ msgid ""
 "IEEE, POSIX, and 802 are registered trademarks of Institute of Electrical "
 "and Electronics Engineers, Inc. in the United States."
 msgstr ""
+"IEEE, POSIX og 802 er registrerte varemerker for Institute of Electrical and "
+"Electronics Engineers, Inc. i USA."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:808
@@ -162,6 +209,9 @@ msgid ""
 "and Xeon are trademarks or registered trademarks of Intel Corporation or its "
 "subsidiaries in the United States and other countries."
 msgstr ""
+"Intel, Celeron, Centrino, Core, EtherExpress, i386, i486, Itanium, Pentium "
+"og Xeon er varemerker eller registrerte varemerker for Intel Corporation "
+"eller dets datterselskaper i USA og andre land."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:812
@@ -170,11 +220,14 @@ msgid ""
 "of Intuit Inc., or one of its subsidiaries, in the United States and other "
 "countries."
 msgstr ""
+"Intuit og Quicken er registrerte varemerker og / eller registrerte "
+"servicemerker for Intuit Inc., eller et av datterselskapene, i USA og andre "
+"land."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:815
 msgid "Linux is a registered trademark of Linus Torvalds."
-msgstr ""
+msgstr "Linux er et registrert varemerke for Linus Torvalds."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:817
@@ -182,6 +235,8 @@ msgid ""
 "LSI Logic, AcceleRAID, eXtremeRAID, MegaRAID and Mylex are trademarks or "
 "registered trademarks of LSI Logic Corp."
 msgstr ""
+"LSI Logic, AcceleRAID, eXtremeRAID, MegaRAID og Mylex er varemerker eller "
+"registrerte varemerker for LSI Logic Corp."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:820
@@ -190,6 +245,9 @@ msgid ""
 "NT are either registered trademarks or trademarks of Microsoft Corporation "
 "in the United States and/or other countries."
 msgstr ""
+"Microsoft, IntelliMouse, MS-DOS, Outlook, Windows, Windows Media og Windows "
+"NT er enten registrerte varemerker eller varemerker for Microsoft "
+"Corporation i USA og / eller andre land."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:824
@@ -198,11 +256,13 @@ msgid ""
 "Open Group are trademarks of The Open Group in the United States and other "
 "countries."
 msgstr ""
+"Motif, OSF / 1 og UNIX er registrerte varemerker og IT DialTone og Open "
+"Group er varemerker for The Open Group i USA og andre land."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:828
 msgid "Oracle is a registered trademark of Oracle Corporation."
-msgstr ""
+msgstr "Oracle er et registrert varemerke for Oracle Corporation."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:830
@@ -210,6 +270,8 @@ msgid ""
 "RealNetworks, RealPlayer, and RealAudio are the registered trademarks of "
 "RealNetworks, Inc."
 msgstr ""
+"RealNetworks, RealPlayer og RealAudio er de registrerte varemerkene til "
+"RealNetworks, Inc."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:833
@@ -217,6 +279,8 @@ msgid ""
 "Red Hat, RPM, are trademarks or registered trademarks of Red Hat, Inc. in "
 "the United States and other countries."
 msgstr ""
+"Red Hat, RPM, er varemerker eller registrerte varemerker for Red Hat, Inc. i "
+"USA og andre land."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:836
@@ -226,36 +290,39 @@ msgid ""
 "registered trademarks of Sun Microsystems, Inc. in the United States and "
 "other countries."
 msgstr ""
+"Sun, Sun Microsystems, Java, Java Virtual Machine, JDK, JRE, JSP, JVM, "
+"Netra, OpenJDK, Solaris, StarOffice, SunOS og VirtualBox er varemerker eller "
+"registrerte varemerker for Sun Microsystems, Inc. i USA og andre land."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:841
 msgid "MATLAB is a registered trademark of The MathWorks, Inc."
-msgstr ""
+msgstr "MATLAB er et registrert varemerke for The MathWorks, Inc."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:843
 msgid "SpeedTouch is a trademark of Thomson."
-msgstr ""
+msgstr "SpeedTouch er et varemerke for Thomson."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:845
 msgid "VMware is a trademark of VMware, Inc."
-msgstr ""
+msgstr "VMware er et varemerke for VMware, Inc."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:847
 msgid "Mathematica is a registered trademark of Wolfram Research, Inc."
-msgstr ""
+msgstr "Mathematica er et registrert varemerke for Wolfram Research, Inc."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:849
 msgid "XFree86 is a trademark of The XFree86 Project, Inc."
-msgstr ""
+msgstr "XFree86 er et varemerke for The XFree86 Project, Inc."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:851
 msgid "Ogg Vorbis and Xiph.Org are trademarks of Xiph.Org."
-msgstr ""
+msgstr "Ogg Vorbis og Xiph.Org er varemerker for Xiph.Org."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:853
@@ -266,6 +333,10 @@ msgid ""
 "designations have been followed by the <quote>™</quote> or the <quote>®</"
 "quote> symbol."
 msgstr ""
+"Mange av betegnelsene som brukes av produsenter og selgere for å skille "
+"produktene deres, hevdes som varemerker. Der de betegnelsene vises i dette "
+"dokumentet, og FreeBSD Project var klar over varemerkekravet, har "
+"betegnelsene blitt fulgt av <quote>™</quote> eller <quote>®</quote> symbolet."
 
 #. (itstool) path: abstract/para
 #: book.translate.xml:862
@@ -278,6 +349,13 @@ msgid ""
 "\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc\">FreeBSD "
 "documentation project mailing list</link>."
 msgstr ""
+"Velkommen til FreeBSD! Denne håndboken dekker installasjonen og den daglige "
+"bruken av <emphasis>FreeBSD 12.1-RELEASE</emphasis> og <emphasis>FreeBSD "
+"11.3-RELEASE</emphasis>. Denne boken er resultatet av pågående arbeid fra "
+"mange individer. Noen seksjoner kan være utdaterte. De som er interessert i "
+"å hjelpe til med å oppdatere og utvide dette dokumentet, bør sende e-post "
+"til <link xlink:href =\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-"
+"doc\">Mailingliste for FreeBSD dokumentasjon prosjekt</link>."
 
 #. (itstool) path: abstract/para
 #: book.translate.xml:871
@@ -294,17 +372,27 @@ msgid ""
 "on the <link xlink:href=\"@@URL_RELPREFIX@@/search/index.html\">search page</"
 "link>."
 msgstr ""
+"Den siste versjonen av denne boken er tilgjengelig fra <link xlink:href=\""
+"https://www.FreeBSD.org/\"> FreeBSD nettsted </link>. Tidligere versjoner "
+"kan fås fra <uri xlink:href=\"https://docs.FreeBSD.org/doc/\"> "
+"https://docs.FreeBSD.org/doc/ </uri>. Boken kan lastes ned i en rekke "
+"formater og komprimeringsalternativer fra <link xlink:href =\""
+"https://download.freebsd.org/ftp/doc/\">FreeBSD FTP-server</link> eller en "
+"av de mange <link linkend=\"mirrors-ftp\"> speilsider </link>. Trykte "
+"eksemplarer kan kjøpes på <link xlink: href = \"https://www.freebsdmall.com/"
+"\"> FreeBSD Mall </link>. Søk kan utføres i håndboken og andre dokumenter på "
+"<link xlink: href=\"@@URL_RELPREFIX @@/ search/index.html\">søkeside</link>."
 
 #. (itstool) path: preface/title
 #: book.translate.xml:892
 msgid "Preface"
-msgstr ""
+msgstr "Forord"
 
 #. (itstool) path: preface/bridgehead
 #. (itstool) id: book.translate.xml#preface-audience
 #: book.translate.xml:894
 msgid "Intended Audience"
-msgstr ""
+msgstr "Tiltenkt målgruppe"
 
 #. (itstool) path: preface/para
 #: book.translate.xml:897
@@ -316,6 +404,12 @@ msgid ""
 "desire to explore, and the ability to take on board new concepts as they are "
 "introduced."
 msgstr ""
+"FreeBSD-nykommeren vil finne at den første delen av denne boken guider "
+"brukeren gjennom FreeBSD-installasjonsprosessen og introduserer forsiktig "
+"konseptene og konvensjonene som understøtter <trademark class=\"registered\""
+">UNIX</trademark>. Å jobbe gjennom denne delen krever lite mer enn ønsket om "
+"å utforske, og muligheten til å ta med seg nye konsepter når de blir "
+"introdusert."
 
 #. (itstool) path: preface/para
 #: book.translate.xml:904
@@ -326,6 +420,10 @@ msgid ""
 "do some prior reading, and this is noted in the synopsis at the beginning of "
 "each chapter."
 msgstr ""
+"Når du har reist så langt, er den andre, langt større delen av håndboken en "
+"omfattende referanse til alle slags temaer av interesse for FreeBSD "
+"systemadministratorer. Noen av disse kapitlene kan anbefale deg å lese litt "
+"før, og dette er lagt merke til i synopsisen i begynnelsen av hvert kapittel."
 
 #. (itstool) path: preface/para
 #: book.translate.xml:911
@@ -333,12 +431,14 @@ msgid ""
 "For a list of additional sources of information, please see <xref linkend="
 "\"bibliography\"/>."
 msgstr ""
+"For en liste over ytterligere informasjonskilder, vennligst se <xref linkend="
+"\"bibliography\"/>."
 
 #. (itstool) path: preface/bridgehead
 #. (itstool) id: book.translate.xml#preface-changes-from3
 #: book.translate.xml:914
 msgid "Changes from the Third Edition"
-msgstr ""
+msgstr "Endringer fra tredje utgave"
 
 #. (itstool) path: preface/para
 #: book.translate.xml:917
