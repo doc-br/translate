@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-04-29 11:29+0000\n"
+"PO-Revision-Date: 2020-07-13 02:53+0000\n"
 "Last-Translator: Hongyou Bai <bhy1924@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate-dev.freebsd.org/"
 "projects/freebsd-doc/boooks_arch-handbook/zh_CN/>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.0.4\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -35,16 +35,12 @@ msgstr "<orgname>FreeBSD 文档计划</orgname>"
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: book.translate.xml:147 book.translate.xml:226
-#, fuzzy
-#| msgid ""
-#| "$FreeBSD: head/en_US.ISO8859-1/books/arch-handbook/book.xml 51016 "
-#| "2017-10-01 12:11:13Z wosch $"
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/books/arch-handbook/book.xml 53369 2019-09-05 "
 "15:28:22Z bcr $"
 msgstr ""
-"$FreeBSD: head/en_US.ISO8859-1/books/arch-handbook/book.xml 51016 2017-10-01 "
-"12:11:13Z wosch $"
+"$FreeBSD: head/en_US.ISO8859-1/books/arch-handbook/book.xml 53369 2019-09-05 "
+"15:28:22Z bcr $"
 
 #. (itstool) path: info/copyright
 #: book.translate.xml:149
@@ -329,6 +325,10 @@ msgid ""
 "sequence. The last stage, <filename>loader</filename>, is responsible for "
 "loading the FreeBSD kernel. Each stage is examined in the following sections."
 msgstr ""
+"理解此过程的关键在于这些阶段的复杂度逐级增加。这些阶段是<filename>boot1</filename>，<filename>boot2</filen"
+"ame> 和 <filename>loader</filename>（更多详情请参阅 <citerefentry><refentrytitle>boot<"
+"/refentrytitle><manvolnum>8</manvolnum></citerefentry>）。这些阶段在系统启动时按顺序执行。最后一步，"
+"<filename>loader</filename>，负责加载 FreeBSD 内核。以下章节将介绍各个阶段。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:344
@@ -481,20 +481,14 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:426
-#, fuzzy
-#| msgid ""
-#| "The value of <literal>0xfffffff0</literal> is slightly less than 4 GB, so "
-#| "unless the machine has 4 GB of physical memory, it cannot point to a "
-#| "valid memory address. The computer's hardware translates this address so "
-#| "that it points to a <acronym>BIOS</acronym> memory block."
 msgid ""
 "The value of <literal>0xfffffff0</literal> is slightly less than 4 GB, so "
 "unless the machine has 4 GB of physical memory, it cannot point to a valid "
 "memory address. The computer's hardware translates this address so that it "
 "points to a <acronym>BIOS</acronym> memory block."
 msgstr ""
-"值0xfffffff0略小于4G,因此计算机没有4G字节物理内存， 这就不会是一个有效的内存"
-"地址。计算机硬件将这个地址转指向BIOS存储块。"
+"值 <literal>0xfffffff0</literal> 略小于4G，因此计算机没有 4G 字节物理内存，这就不会是一个有效的内存地址。"
+"计算机硬件将这个地址转指向 <acronym>BIOS</acronym> 存储块。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:432
