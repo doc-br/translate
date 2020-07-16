@@ -4,23 +4,26 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:08-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-07-16 20:14+0000\n"
+"Last-Translator: Hongyou Bai <bhy1924@gmail.com>\n"
+"Language-Team: Chinese (Simplified) <https://translate-dev.freebsd.org/"
+"projects/freebsd-doc/articles_leap-seconds/zh_CN/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.1.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr ""
+msgstr "translator-credits"
 
 #. (itstool) path: info/title
 #: article.translate.xml:6
 msgid "FreeBSD Support for Leap Seconds"
-msgstr ""
+msgstr "FreeBSD 对闰秒的支持"
 
 #. (itstool) path: info/pubdate
 #: article.translate.xml:8
@@ -28,11 +31,13 @@ msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/leap-seconds/article.xml 51243 "
 "2017-11-30 14:49:53Z ygy $"
 msgstr ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/leap-seconds/article.xml 51243 "
+"2017-11-30 14:49:53Z ygy $"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:12
 msgid "Introduction"
-msgstr ""
+msgstr "介绍"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:14
@@ -41,7 +46,7 @@ msgid ""
 "specific times of year to UTC to synchronize atomic time scales with "
 "variations in the rotation of the Earth. This article describes how FreeBSD "
 "interacts with leap seconds."
-msgstr ""
+msgstr "<emphasis>闰秒</emphasis>是为了同步地球自转，而对原子钟标准时间所做的特定修正。本文描述了 FreeBSD 如何处理闰秒。"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:20
@@ -49,7 +54,7 @@ msgid ""
 "As of this writing, the next leap second will occur at 2015-Jun-30 23:59:60 "
 "UTC. This leap second will occur during a business day for North and South "
 "America and the Asia/Pacific region."
-msgstr ""
+msgstr "截至本文完稿时，下一个闰秒将会发生在2015年6月30日23:59:60 UTC。这个闰秒将会发生在南北美洲和亚太地区的一个工作日里。"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:25
@@ -58,6 +63,9 @@ msgid ""
 "\"><acronym>IERS</acronym></link> on <link xlink:href=\"http://datacenter."
 "iers.org/web/guest/bulletins/-/somos/5Rgv/product/16\">Bulletin C</link>."
 msgstr ""
+"闰秒是由 <link xlink:href=\"http://datacenter.iers.org/\""
+"><acronym>IERS</acronym></link> 在 <link xlink:href=\"http://datacenter.iers."
+"org/web/guest/bulletins/-/somos/5Rgv/product/16\">Bulletin C</link> 上宣布的。"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:29
@@ -67,11 +75,14 @@ msgid ""
 "<citerefentry><refentrytitle>time2posix</refentrytitle><manvolnum>3</"
 "manvolnum></citerefentry>."
 msgstr ""
+"<link xlink:href=\"https://tools.ietf.org/html/rfc7164#section-3\">RFC 7164</"
+"link> 描述了闰秒的标准行为。也可参见 <citerefentry><refentrytitle>time2posix</refentrytitle>"
+"<manvolnum>3</manvolnum></citerefentry> 。"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:34
 msgid "Default Leap Second Handling on FreeBSD"
-msgstr ""
+msgstr "FreeBSD 对闰秒的默认处理方式"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:36
@@ -86,6 +97,12 @@ msgid ""
 "automatically repeat the last second of the day. No other adjustments are "
 "necessary."
 msgstr ""
+"处理闰秒最简单的方法是使用 FreeBSD 预设的 <acronym>POSIX</acronym> 时间规则, 以及 <link xlink:href="
+"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/network-ntp.html\""
+"><acronym>NTP</acronym></link>。如果 "
+"<citerefentry><refentrytitle>ntpd</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> 正在运行，并且时间和正确处理闰秒的上游 <acronym>NTP</acronym> "
+"服务器同步，闰秒将使系统时间自动重复当天的最后一秒。不需要进行其它调整。"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:45
@@ -95,18 +112,21 @@ msgid ""
 "manvolnum></citerefentry> will step the time by one second after the errant "
 "upstream server has noticed and stepped itself."
 msgstr ""
+"如果上游的 <acronym>NTP</acronym> 服务器没有正确处理闰秒，<citerefentry><refentrytitle>ntpd</r"
+"efentrytitle><manvolnum>8</manvolnum></citerefentry> "
+"会在错误的上游服务器发现错误并修正后，跟着加上一秒。"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:50
 msgid ""
 "If <acronym>NTP</acronym> is not being used, manual adjustment of the system "
 "clock will be required after the leap second has passed."
-msgstr ""
+msgstr "如果未使用 <acronym>NTP</acronym>，将需要在闰秒过后手动调整系统时钟。"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:56
 msgid "Cautions"
-msgstr ""
+msgstr "注意"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:58
@@ -114,7 +134,7 @@ msgid ""
 "Leap seconds are inserted at the same instant all over the world: "
 "<acronym>UTC</acronym> midnight. In Japan that is mid-morning, in the "
 "Pacific mid-day, in the Americas late afternoon, and in Europe at night."
-msgstr ""
+msgstr "闰秒在全世界的同一瞬间插入：<acronym>UTC</acronym> 午夜。日本在上午，太平洋在正午，美洲在傍晚，而欧洲在晚上。"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:63
@@ -123,6 +143,8 @@ msgid ""
 "<acronym>NTP</acronym> service, will work as designed during this leap "
 "second, as it did during the previous ones."
 msgstr ""
+"我们相信并预期，如果提供了正确和稳定的 <acronym>NTP</acronym> 服务，FreeBSD "
+"会在闰秒时按设计运作，正如在之前遇到闰秒时一样。"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:68
@@ -132,6 +154,8 @@ msgid ""
 "are essentially a replay of the second before the leap second, and this is a "
 "surprise to most application programmers."
 msgstr ""
+"然而我们要警告，事实上没有应用程序会向内核询问关于闰秒的事。我们的经验是，闰秒正如设计的一样，本质上是闰秒前一秒的重播，这对大部分应用程序开发者来说是意想"
+"不到的事。"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:74
@@ -141,6 +165,8 @@ msgid ""
 "<acronym>NTP</acronym> service will not know anything about leap seconds at "
 "all."
 msgstr ""
+"其它操作系统和电脑可能会也可能不会像 FreeBSD 一样处理闰秒，没有正确和稳定 <acronym>NTP</acronym> "
+"服务的系统一点也不知道闰秒的发生。"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:79
@@ -148,18 +174,18 @@ msgid ""
 "It is not unheard of for computers to crash because of leap seconds, and "
 "experience has shown that a large fraction of all public <acronym>NTP</"
 "acronym> servers might handle and announce the leap second incorrectly."
-msgstr ""
+msgstr "电脑因为闰秒而崩溃并非闻所未闻，经验显示，大量的公共 <acronym>NTP</acronym> 服务器可能会错误处理和公告闰秒。"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:84
 msgid ""
 "Please try to make sure nothing horrible happens because of the leap second."
-msgstr ""
+msgstr "请试着确认不会因为闰秒而发生任何可怕的事情。"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:89
 msgid "Testing"
-msgstr ""
+msgstr "测试"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:91
@@ -169,12 +195,14 @@ msgid ""
 "leap second. Some major reference clock sources only announce leap seconds "
 "one hour ahead of the event. Query the <acronym>NTP</acronym> daemon:"
 msgstr ""
+"测试是否将使用闰秒是可行的。由于 <acronym>NTP</acronym> "
+"的性质，测试可能要运行到闰秒前24小时。有些主要的参考时钟来源只在闰秒事件前一小时公告。查询 <acronym>NTP</acronym> 守护进程："
 
 #. (itstool) path: sect1/screen
 #: article.translate.xml:97
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>ntpq -c 'rv 0 leap'</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>ntpq -c 'rv 0 leap'</userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:99
@@ -184,11 +212,13 @@ msgid ""
 "second, or after the leap second has passed, <literal>leap_none</literal> "
 "will be shown."
 msgstr ""
+"包含 <literal>leap_add_sec</literal> 的输出表明了对于闰秒的正确支持。<literal>leap_none</"
+"literal> 会在闰秒前24小时或闰秒过后显示。"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:106
 msgid "Conclusion"
-msgstr ""
+msgstr "结论"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:108
@@ -196,4 +226,4 @@ msgid ""
 "In practice, leap seconds are usually not a problem on FreeBSD. We hope that "
 "this overview helps clarify what to expect and how to make the leap second "
 "event proceed more smoothly."
-msgstr ""
+msgstr "在实践中，FreeBSD 中的闰秒通常不是个问题。我们希望这篇文章能解释清楚这方面可能出现的状况，以及如何使闰秒事件进行得更顺利。"
