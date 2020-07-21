@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-07-07 00:02+0000\n"
+"PO-Revision-Date: 2020-07-21 18:30+0000\n"
 "Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -13,12 +13,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.0.4\n"
+"X-Generator: Weblate 4.1.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr ""
+msgstr "فراز واحدی <kfv@irbug.org>، سال ۲۰۲۰"
 
 #. (itstool) path: info/title
 #: book.translate.xml:32
@@ -37,6 +37,8 @@ msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/books/developers-handbook/book.xml 51938 "
 "2018-06-30 10:45:14Z eadler $"
 msgstr ""
+"$FreeBSD: head/en_US.ISO8859-1/books/developers-handbook/book.xml 51938 "
+"2018-06-30 10:45:14Z eadler $"
 
 #. (itstool) path: info/copyright
 #: book.translate.xml:39
@@ -48,11 +50,17 @@ msgid ""
 "<year>2016</year> <year>2017</year> <year>2018</year> <holder>The FreeBSD "
 "Documentation Project</holder>"
 msgstr ""
+"<year>۲۰۰۰</year> <year>۲۰۰۱</year> <year>۲۰۰۲</year> <year>۲۰۰۳</year> "
+"<year>۲۰۰۴</year> <year>۲۰۰۵</year> <year>۲۰۰۶</year> <year>۲۰۰۷</year> "
+"<year>۲۰۰۸</year> <year>۲۰۰۹</year> <year>۲۰۱۰</year> <year>۲۰۱۱</year> "
+"<year>۲۰۱۲</year> <year>۲۰۱۳</year> <year>۲۰۱۴</year> <year>۲۰۱۵</year> "
+"<year>۲۰۱۶</year> <year>۲۰۱۷</year> <year>۲۰۱۸</year> <holder>پروژه مستندات "
+"FreeBSD</holder>"
 
 #. (itstool) path: legalnotice/title
 #: book.translate.xml:64
 msgid "Copyright"
-msgstr ""
+msgstr "حق نشر"
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:66
@@ -61,6 +69,9 @@ msgid ""
 "HTML, PDF, PostScript, RTF and so forth) with or without modification, are "
 "permitted provided that the following conditions are met:"
 msgstr ""
+"بازتوزیع و استفاده در منبع (XML DocBook) و قالب‌های 'کامپایل‌شده' (XML، "
+"HTML،PDF، PostScript، RTF و غیره) با یا بدون تغییر، مجاز است مشروط بر آنکه "
+"این شرایط برآورده شوند:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:73
@@ -69,6 +80,9 @@ msgid ""
 "notice, this list of conditions and the following disclaimer as the first "
 "lines of this file unmodified."
 msgstr ""
+"بازتوزیع‌های کد منبع (XML DocBook) باید اعلان حق نشر بالا، این فهرست از "
+"شرایط و بیانیه رفع مسئولیت پیشِ رو را بدون تغییر، به عنوان اولین خطوط از "
+"پرونده حفظ کنند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:79
@@ -78,6 +92,10 @@ msgid ""
 "notice, this list of conditions and the following disclaimer in the "
 "documentation and/or other materials provided with the distribution."
 msgstr ""
+"بازتوزیع‌ها در قالب کامپایل شده (مبدل به اعلامیه‌های نوع سند دیگر، مبدل به "
+"RTF ,Postscript ,PDF و دیگر قالب‌ها) باید اعلان حق نشر بالا، این فهرست از "
+"شرایط و بیانیه رفع مسئولیت پیشِ رو در مستندات و/یا دیگر محتواهای/مطالب ارائه "
+"شده همراه با این توزیع را بازتولید کنند."
 
 #. (itstool) path: important/para
 #: book.translate.xml:88
@@ -94,11 +112,20 @@ msgid ""
 "ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF "
 "THE POSSIBILITY OF SUCH DAMAGE."
 msgstr ""
+"این دبیزش توسط پروژه‌ مستندات FreeBSD \"همان‌طور که هست\" ارایه شده و هرگونه "
+"ضمانت‌نامه‌ اظهار شده یا ضمنی، شامل، اما نه محدود به، ضمانت‌نامه‌ی ضمنیِ "
+"بازاریابی و سازگاری به‌منظور هدفی مشخص رد می‌شوند. پروژه مستندات FreeBSD در "
+"هیچ شرایطی مسئولیت هرگونه خسارت مستقیم، غیرمستقیم، جنبی، ویژه، تنبیهی، یا "
+"تبعی (شامل، اما نه محدود به، تهیهٔ کالا‌ها یا خدمات جانشین؛ فقدان کاربرد، "
+"داده، یا سود؛ یا وقفه در کسب و کار) به هر نحو که موجب شده باشد و در هر "
+"مسئولیت قانونی، چه در قرارداد، مسئولیت سخت، یا شبه‌جرم (شامل غفلت یا غیر) به "
+"هر شکل با استفاده از از این مستندات برخاسته باشد، حتی اگر بر امکان چنین "
+"خسارتی آگاه‌سازی شده باشد را بر عهده نخواهد داشت."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:105
 msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
-msgstr ""
+msgstr "FreeBSD یک نشان تجاری ثبت شده متعلق به FreeBSD Foundation است."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:107
@@ -107,6 +134,9 @@ msgid ""
 "Quicktime, and TrueType are trademarks of Apple Inc., registered in the U.S. "
 "and other countries."
 msgstr ""
+"Apple، AirPort، FireWire، iMac، iPhone، iPad، Mac، Macintosh، Mac OS، "
+"Quicktime، و TrueType نشان‌های تجاری متعلق به شرکت Apple، ثبت شده در ایالات "
+"متحده و دیگر کشورها هستند."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:112
@@ -115,6 +145,8 @@ msgid ""
 "International Business Machines Corporation in the United States, other "
 "countries, or both."
 msgstr ""
+"IBM، AIX، OS/2، PowerPC، PS/2، S/390 و ThinkPad نشان‌های تجاری متعلق به شرکت "
+"ماشین‌های بین‌المللی کسب و کار در ایالات متحده، دیگر کشورها، یا هردو هستند."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:116
@@ -122,6 +154,8 @@ msgid ""
 "IEEE, POSIX, and 802 are registered trademarks of Institute of Electrical "
 "and Electronics Engineers, Inc. in the United States."
 msgstr ""
+"IEEE، POSIX و 802 نشان‌های تجاری ثبت شده متعلق به مؤسسه مهندسان برق و "
+"الکترونیک هستند."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:119
@@ -130,11 +164,14 @@ msgid ""
 "and Xeon are trademarks or registered trademarks of Intel Corporation or its "
 "subsidiaries in the United States and other countries."
 msgstr ""
+"Intel، Celeron، Centrino، Core، EtherExpress، i386، i486، Itanium، Pentium و "
+"Xeon نشان‌های تجاری یا نشان‌های تجاری ثبت شده متعلق به شرکت Intel و شرکت‌های "
+"تابعه آن در ایالات متحده و دیگر کشورها هستند."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:123
 msgid "Linux is a registered trademark of Linus Torvalds."
-msgstr ""
+msgstr "Linux یک نشان تجاری ثبت شده متعلق به لینوس توروالدز است."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:125
@@ -143,6 +180,9 @@ msgid ""
 "NT are either registered trademarks or trademarks of Microsoft Corporation "
 "in the United States and/or other countries."
 msgstr ""
+"Microsoft، IntelliMouse، MS-DOS، Outlook، Windows، Windows Media و Windows "
+"NT نشان‌های تجاری ثبت شده یا نشان‌های تجاری متعلق به شرکت Microsoft در "
+"ایالات متحده و دیگر کشورها هستند."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:129
@@ -151,6 +191,9 @@ msgid ""
 "Open Group are trademarks of The Open Group in the United States and other "
 "countries."
 msgstr ""
+"Motif، OSF/1 و UNIX نشان‌های تجاری ثبت شده و IT DialTone و The Open Group "
+"نشان‌های تجاری متعلق به کنسرسیوم The Open Group در ایالات متحده و دیگر "
+"کشورها هستند."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:133
@@ -160,6 +203,10 @@ msgid ""
 "registered trademarks of Sun Microsystems, Inc. in the United States and "
 "other countries."
 msgstr ""
+"Sun، Sun Microsystems، Java، Java Virtual Machine، JDK، JRE، JSP، JVM، Netra،"
+" OpenJDK، Solaris، StarOffice، SunOS و VirtualBox نشان‌های تجاری یا نشان‌های "
+"تجاری ثبت شده متعلق به شرکت Sun Microsystems در ایالات متحده و دیگر کشورها "
+"هستند."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:138
@@ -170,6 +217,10 @@ msgid ""
 "designations have been followed by the <quote>™</quote> or the <quote>®</"
 "quote> symbol."
 msgstr ""
+"بسیاری از عناوین مورد استفاده توسط تولیدکنندگان و فروشندگان برای مشخص کردن "
+"محصولاتشان به عنوان نشان‌های تجاری اظهار شده‌اند. در هر جای این سند که این "
+"عناوین ذکر شده باشند، در صورتی که پروژه FreeBSD از اظهارنامه آن نشان تجاری "
+"آگاه باشد، همراه عنوان علامت <quote>™</quote> یا <quote>®</quote> آمده است."
 
 #. (itstool) path: abstract/para
 #: book.translate.xml:149
@@ -181,6 +232,12 @@ msgid ""
 "\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc\">FreeBSD "
 "documentation project mailing list</link>."
 msgstr ""
+"به کتاب راهنمای توسعه‌دهندگان خوش آمدید. این راهنما یک <emphasis>کار در حال "
+"انجام</emphasis> و ماحصل تلاش افراد بسیاری است. بسیاری از بخش‌ها هنوز موجود "
+"نیستند و بسیاری از بخش‌های موجود هم نیازمند به روز رسانی هستند. اگر تمایل به "
+"کمک کردن در این پروژه دارید، نامه‌ای الکترونیک به <link xlink:href=\"http"
+"://lists.FreeBSD.org/mailman/listinfo/freebsd-doc\">فهرست پست‌سپاری پروژه "
+"مستندات FreeBSD</link> ارسال کنید."
 
 #. (itstool) path: abstract/para
 #: book.translate.xml:155
@@ -193,17 +250,23 @@ msgid ""
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/mirrors-ftp.html"
 "\">mirror sites</link>."
 msgstr ""
+"آخرین نسخه از این دبیزه همیشه در <link xlink:href=\"@@URL_RELPREFIX@@/index."
+"html\">وبسایت FreeBSD</link> در دسترس است. همچنین می‌توان این راهنما را در "
+"قالب‌ها و حالت‌های فشرده شده متنوع از <link xlink:href=\"https://download."
+"freebsd.org/ftp/doc/\"> FTP کارساز FreeBSD</link> یا از طریق یکی از چند "
+"<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
+"mirrors-ftp.html\">وبگاه آینه‌ای</link> دریافت کرد."
 
 #. (itstool) path: part/title
 #: book.translate.xml:165
 msgid "Basics"
-msgstr ""
+msgstr "اصول پایه"
 
 #. (itstool) path: info/title
 #. (itstool) path: sect1/title
 #: book.translate.xml:174 book.translate.xml:428
 msgid "Introduction"
-msgstr ""
+msgstr "مقدمه"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:176 book.translate.xml:2642
@@ -211,6 +274,8 @@ msgid ""
 "<personname><firstname>Murray</firstname><surname>Stokely</surname></"
 "personname><contrib>Contributed by </contrib>"
 msgstr ""
+"<personname><firstname>Murray</firstname><surname>Stokely</surname></"
+"personname><contrib>Contributed by </contrib>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:177
@@ -218,11 +283,13 @@ msgid ""
 "<personname><firstname>Jeroen</firstname><surname>Ruigrok van der Werven</"
 "surname></personname>"
 msgstr ""
+"<personname><firstname>Jeroen</firstname><surname>Ruigrok van der "
+"Werven</surname></personname>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:183
 msgid "Developing on FreeBSD"
-msgstr ""
+msgstr "توسعه بر روی FreeBSD"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:185
@@ -231,6 +298,9 @@ msgid ""
 "But where to start? What does FreeBSD provide? What can it do for me, as a "
 "programmer?"
 msgstr ""
+"خب، سرانجام اینجا هستیم. سامانه کامل نصب شده است و شما آماده شروع برنامه‌"
+"نویسی هستید. اما از کجا باید شروع کرد؟ FreeBSD چه چیزهایی ارائه می‌دهد؟ چه "
+"می‌تواند برای منِ برنامه‌نویس انجام دهد؟"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:189
