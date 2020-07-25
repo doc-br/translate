@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-07-25 19:18+0000\n"
+"PO-Revision-Date: 2020-07-26 12:30+0000\n"
 "Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -728,11 +728,14 @@ msgid ""
 "although it does assume a basic competence with using <trademark class="
 "\"registered\">UNIX</trademark> and a willingness to learn!"
 msgstr ""
+"بیشترِ این دبیزه هیچ یا اندک دانش برنامه‌نویسی نیاز دارد، اگرچه فرض بر "
+"توانایی استفادهٔ پایه از <trademark class=\"registered\">UNIX</trademark> و "
+"تمایل به یادگیری است!"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:457
 msgid "Introduction to Programming"
-msgstr ""
+msgstr "پیش‌درآمدی بر برنامه‌نویسی"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:459
@@ -747,11 +750,19 @@ msgid ""
 "understand in an unambiguous way, commands are usually written in one or "
 "other languages specially designed for the purpose."
 msgstr ""
+"برنامه مجموعه‌ای از دستورالعمل‌ها است که کارهای مخلفتی انجام می‌دهد؛ گاهی "
+"اجرای یک دستورالعمل وابسته به نتیجه دستورالعمل قبلی است. این بخش به بررسی "
+"اجمالی دو حالت عمده‌ای می‌پردازد که شما می‌توانید این دستورالعمل‌ها، یا به "
+"گفته‌ای مرسوم‌تر <quote>دستورات</quote> را تعریف کنید. یک روش از "
+"<firstterm>مفسر</firstterm> استفاده می‌کند و دیگری از <firstterm>همگردان</"
+"firstterm>. از آنجایی که درک صریح زبان انسان برای رایانه بسیار دشوار است، "
+"دستورات به طور معمول به زبان‌هایی که برای این نیاز طراحی شده‌اند نوشته "
+"می‌شوند."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:472
 msgid "Interpreters"
-msgstr ""
+msgstr "مفسرها"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:474
@@ -795,7 +806,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:507
 msgid "Interpreters Available with FreeBSD"
-msgstr ""
+msgstr "مفسرهای موجود در FreeBSD"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:509
@@ -804,6 +815,8 @@ msgid ""
 "Collection, with a brief discussion of some of the more popular interpreted "
 "languages."
 msgstr ""
+"در اینجا فهرستی از مفسرهای موجود در مجموعه پورت‌های FreeBSD همراه با بررسی "
+"اجمالی برخی از زبان‌های تفسیری مشهور آمده است."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:513
@@ -813,11 +826,14 @@ msgid ""
 "en_US.ISO8859-1/books/handbook/ports-using.html\">Ports section</link> of "
 "the handbook."
 msgstr ""
+"راهنمای دریافت و نصب برنامه‌های کاربردی از مجموعه پورت‌ها را می‌توان در "
+"<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
+"ports-using.html\">بخش پورت‌ها</link> از کتاب راهنما پیدا کرد."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:519
 msgid "<acronym>BASIC</acronym>"
-msgstr ""
+msgstr "<acronym>BASIC</acronym>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:522
@@ -840,7 +856,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:539
 msgid "Lisp"
-msgstr ""
+msgstr "Lisp"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:542
@@ -875,7 +891,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:569
 msgid "Perl"
-msgstr ""
+msgstr "Perl"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:572
@@ -883,6 +899,8 @@ msgid ""
 "Very popular with system administrators for writing scripts; also often used "
 "on World Wide Web servers for writing <acronym>CGI</acronym> scripts."
 msgstr ""
+"بسیار محبوب مدیران سامانه برای اجرانامه‌نویسی؛ و همچنین استفاده شده در تارِ "
+"جهان‌گستر برای نوشتن اجرانامه‌های <acronym>CGI</acronym>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:576
@@ -890,11 +908,13 @@ msgid ""
 "Perl is available in the Ports Collection as <package>lang/perl5.24</"
 "package> for all FreeBSD releases."
 msgstr ""
+"Perl در مجموعه پورت‌ها به عنوان <package>lang/perl5.24</package> برای تمامی "
+"نسخ FreeBSD موجود است."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:583
 msgid "Scheme"
-msgstr ""
+msgstr "Scheme"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:586
@@ -917,7 +937,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:603
 msgid "Icon"
-msgstr ""
+msgstr "Icon"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:606
@@ -930,7 +950,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:615
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:618
@@ -947,11 +967,13 @@ msgid ""
 "The latest version of Logo for FreeBSD is available from the Ports "
 "Collection in <package>lang/logo</package>."
 msgstr ""
+"آخرین نسخه Logo برای FreeBSD در <package>lang/logo</package> از مجموعه پورت‌"
+"ها موجود است."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:632
 msgid "Python"
-msgstr ""
+msgstr "Python"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:635
@@ -974,7 +996,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:651
 msgid "Ruby"
-msgstr ""
+msgstr "Ruby"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:654
@@ -995,7 +1017,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:666
 msgid "Tcl and Tk"
-msgstr ""
+msgstr "Tcl و Tk"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:669
@@ -1016,7 +1038,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:685
 msgid "Compilers"
-msgstr ""
+msgstr "همگردان‌ها"
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:693
