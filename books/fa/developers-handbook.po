@@ -4,10 +4,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-07-26 12:30+0000\n"
+"PO-Revision-Date: 2020-07-26 23:31+0000\n"
 "Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
-"Language-Team: Persian <https://translate-dev.freebsd.org/projects/freebsd-"
-"doc/boooks_developers-handbook/fa/>\n"
+"Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,27 +33,15 @@ msgstr "<orgname>پروژه مستندات FreeBSD</orgname>"
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: book.translate.xml:37 book.translate.xml:148
-#, fuzzy
-#| msgid ""
-#| "$FreeBSD: head/en_US.ISO8859-1/books/developers-handbook/book.xml 51938 "
-#| "2018-06-30 10:45:14Z eadler $"
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/books/developers-handbook/book.xml 54255 "
 "2020-06-15 08:13:08Z bcr $"
 msgstr ""
-"$FreeBSD: head/en_US.ISO8859-1/books/developers-handbook/book.xml 51938 "
-"2018-06-30 10:45:14Z eadler $"
+"$FreeBSD: head/en_US.ISO8859-1/books/developers-handbook/book.xml 54255 "
+"2020-06-15 08:13:08Z bcr $"
 
 #. (itstool) path: info/copyright
 #: book.translate.xml:39
-#, fuzzy
-#| msgid ""
-#| "<year>2000</year> <year>2001</year> <year>2002</year> <year>2003</year> "
-#| "<year>2004</year> <year>2005</year> <year>2006</year> <year>2007</year> "
-#| "<year>2008</year> <year>2009</year> <year>2010</year> <year>2011</year> "
-#| "<year>2012</year> <year>2013</year> <year>2014</year> <year>2015</year> "
-#| "<year>2016</year> <year>2017</year> <year>2018</year> <holder>The FreeBSD "
-#| "Documentation Project</holder>"
 msgid ""
 "<year>2000</year> <year>2001</year> <year>2002</year> <year>2003</year> "
 "<year>2004</year> <year>2005</year> <year>2006</year> <year>2007</year> "
@@ -66,8 +54,8 @@ msgstr ""
 "<year>۲۰۰۴</year> <year>۲۰۰۵</year> <year>۲۰۰۶</year> <year>۲۰۰۷</year> "
 "<year>۲۰۰۸</year> <year>۲۰۰۹</year> <year>۲۰۱۰</year> <year>۲۰۱۱</year> "
 "<year>۲۰۱۲</year> <year>۲۰۱۳</year> <year>۲۰۱۴</year> <year>۲۰۱۵</year> "
-"<year>۲۰۱۶</year> <year>۲۰۱۷</year> <year>۲۰۱۸</year> <holder>پروژه مستندات "
-"FreeBSD</holder>"
+"<year>۲۰۱۶</year> <year>۲۰۱۷</year> <year>۲۰۱۸</year> <year>۲۰۱۹</year> "
+"<year>۲۰۲۰</year> <holder>پروژه مستندات FreeBSD</holder>"
 
 #. (itstool) path: legalnotice/title
 #: book.translate.xml:66
@@ -131,8 +119,8 @@ msgstr ""
 "تبعی (شامل، اما نه محدود به، تهیهٔ کالا‌ها یا خدمات جانشین؛ فقدان کاربرد، "
 "داده، یا سود؛ یا وقفه در کسب و کار) به هر نحو که موجب شده باشد و در هر "
 "مسئولیت قانونی، چه در قرارداد، مسئولیت سخت، یا شبه‌جرم (شامل غفلت یا غیر) به "
-"هر شکل با استفاده از از این مستندات برخاسته باشد، حتی اگر بر امکان چنین "
-"خسارتی آگاه‌سازی شده باشد را بر عهده نخواهد داشت."
+"هر شکل با استفاده از این مستندات برخاسته باشد، حتی اگر بر امکان چنین خسارتی "
+"آگاه‌سازی شده باشد را بر عهده نخواهد داشت."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:107
@@ -287,7 +275,7 @@ msgid ""
 "personname><contrib>Contributed by </contrib>"
 msgstr ""
 "<personname><firstname>Murray</firstname><surname>Stokely</surname></"
-"personname><contrib>Contributed by </contrib>"
+"personname><contrib>نوشته شده توسط </contrib>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:179
@@ -471,8 +459,6 @@ msgstr "<filename>contrib/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:291
-#, fuzzy
-#| msgid "Source for files from contributed software."
 msgid "Source for files from contributed software"
 msgstr "منبع پرونده‌های نرم‌افزارهای اعطا شده"
 
@@ -658,7 +644,7 @@ msgid ""
 "personname> <contrib>Contributed by </contrib>"
 msgstr ""
 "<personname><firstname>James</firstname><surname>Raynard</surname></"
-"personname><contrib>نوشته شده توسط</contrib>"
+"personname><contrib>نوشته شده توسط </contrib>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:408
@@ -786,6 +772,11 @@ msgid ""
 "goes wrong, many interpreters will drop you into a debugger to help you "
 "track down the problem."
 msgstr ""
+"با یک مفسر، زبان مانند یک محیط می‌شود که شما در آن دستورات را وارد می‌کنید و "
+"محیط آن‌ها را برای شما اجرا می‌کند. برای برنامه‌های پیچیده‌تر، می‌توانید "
+"دستورات را یک پرونده بنویسید و از مفسر برای بارگیری آن پرونده و اجرای "
+"دستورات استفاده کنید. اگر خطایی رخ دهد، بسیاری از مفسرها به شما یک اشکال‌یاب "
+"برای وارسی مشکل می‌دهند."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:484
@@ -799,6 +790,14 @@ msgid ""
 "view, interpreters can use up a lot of memory, and generally do not generate "
 "code as efficiently as compilers."
 msgstr ""
+"مزیت این امر این است که شما نتیجه دستورات خود را فوراً مشاهده می‌کنید، و "
+"اشتباهات را به راحتی می‌توانید اصلاح کنید. بزرگترین نقطه ضعف زمانی مشهود است "
+"که شما می‌خواهید برنامه خود را با کسی به اشتراک بذارید. ایشان باید همان مفسر "
+"را داشته باشند، یا شما باید راهی برای تحویل آن داشته باشید، و ایشان بدانند "
+"که چگونه از آن استفاده کنند. همچنین ممکن است کاربران علاقه‌ای به هدایت شدن "
+"به یک اشکال‌یاب در صورت فشردن کلیدی اشتباه را نداشته باشند! از منظر عملکرد، "
+"مفسرها می‌توانند حافظه زیادی مصرف کنند، و به طور کلی کدی به کارآمدی همگردان‌"
+"ها تولید نمی‌کنند."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:495
@@ -814,6 +813,15 @@ msgid ""
 "to provide lots of small utility programs that could be linked together in "
 "shell scripts to perform useful tasks."
 msgstr ""
+"به نظر من، اگر تا به حال برنامه‌نویسی نکردید زبان‌های تفسیری بهترین راه برای "
+"شروع هستند. این نوع محیط معمولاً همراه زبان‌هایی چون List، Smalltalk، Perl و "
+"Basic یافت می‌شود. همچنین می‌توان استدلال کرد که پوستهٔ <trademark class="
+"\"registered\">UNIX</trademark> (<command>sh</command>, "
+"<command>csh</command>) خود یک مفسر است، و به راستی افراد بسیاری در پوسته "
+"<quote>اجرانامه‌هایی</quote> برای کمک در کارهای <quote>نگهداری</quote> ماشین "
+"خود می‌نویسند. در واقع، بخشی از فلسفه اصلی <trademark class=\"registered\""
+">UNIX</trademark> ارائه بسیاری ابزار کوچک بود که بتوانند با یکدیگر از طریق "
+"اجرانامه‌های پوسته برای انجام کارهای مفید وصل شوند."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:509
@@ -2455,10 +2463,8 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1713
-#, fuzzy
-#| msgid "Introduction to Programming"
 msgid "Introduction to Available Debuggers"
-msgstr "پیش‌درآمدی بر برنامه‌نویسی"
+msgstr "پیش‌درآمدی بر اشکال‌یاب‌ها"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1715
@@ -4850,6 +4856,8 @@ msgid ""
 "<personname><firstname>Gábor</firstname><surname>Kövesdán</surname></"
 "personname><contrib>Contributed by </contrib>"
 msgstr ""
+"<personname><firstname>Gábor</firstname><surname>Kövesdán</surname></"
+"personname><contrib>نوشته شده توسط </contrib>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3518
@@ -5243,6 +5251,8 @@ msgid ""
 "<personname> <firstname>Poul-Henning</firstname> <surname>Kamp</surname> </"
 "personname> <contrib>Contributed by </contrib>"
 msgstr ""
+"<personname> <firstname>Poul-Henning</firstname> <surname>Kamp</surname> </"
+"personname> <contrib>نوشته شده توسط </contrib>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:3786
@@ -5436,6 +5446,8 @@ msgid ""
 "<personname> <firstname>Dag-Erling</firstname> <surname>Smørgrav</surname> </"
 "personname> <contrib>Contributed by </contrib>"
 msgstr ""
+"<personname> <firstname>Dag-Erling</firstname> <surname>Smørgrav</surname> </"
+"personname> <contrib>نوشته شده توسط </contrib>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3953
@@ -5899,6 +5911,8 @@ msgid ""
 "<personname> <firstname>Satoshi</firstname> <surname>Asami</surname> </"
 "personname> <contrib>Contributed by </contrib>"
 msgstr ""
+"<personname> <firstname>Satoshi</firstname> <surname>Asami</surname> </"
+"personname> <contrib>نوشته شده توسط </contrib>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:4283
@@ -6645,6 +6659,8 @@ msgid ""
 "<personname> <firstname>G. Adam</firstname> <surname>Stanislav</surname> </"
 "personname> <contrib>Contributed by </contrib>"
 msgstr ""
+"<personname> <firstname>G. Adam</firstname> <surname>Stanislav</surname> </"
+"personname> <contrib>نوشته شده توسط </contrib>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:4887
@@ -9064,6 +9080,8 @@ msgid ""
 "<personname> <firstname>Yoshinobu</firstname> <surname>Inoue</surname> </"
 "personname> <contrib>Contributed by </contrib>"
 msgstr ""
+"<personname> <firstname>Yoshinobu</firstname> <surname>Inoue</surname> </"
+"personname> <contrib>نوشته شده توسط </contrib>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6628
@@ -11308,6 +11326,8 @@ msgid ""
 "<personname><firstname>Paul</firstname><surname>Richards</surname></"
 "personname><contrib>Contributed by </contrib>"
 msgstr ""
+"<personname><firstname>Paul</firstname><surname>Richards</surname></"
+"personname><contrib>نوشته شده توسط </contrib>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:8318
