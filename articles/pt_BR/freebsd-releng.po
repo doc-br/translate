@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:01-0300\n"
-"PO-Revision-Date: 2020-03-14 20:09+0000\n"
+"PO-Revision-Date: 2020-07-26 14:57+0000\n"
 "Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate-dev.freebsd.org/"
 "projects/freebsd-doc/articles_freebsd-releng/pt_BR/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.11.2\n"
+"X-Generator: Weblate 4.1.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -41,14 +41,6 @@ msgstr "<email>gjb@FreeBSD.org</email>"
 
 #. (itstool) path: authorgroup/author
 #: article.translate.xml:29
-#, fuzzy
-#| msgid ""
-#| "<personname> <firstname>Glen</firstname> <surname>Barber</surname> </"
-#| "personname> <affiliation> <orgname class=\"nonprofit\"> <link xlink:href="
-#| "\"https://www.freebsdfoundation.org\">The FreeBSD Foundation</link></"
-#| "orgname> </affiliation> <affiliation> <orgname> <link xlink:href="
-#| "\"https://www.netgate.com\">Rubicon Communications, LLC (Netgate)</link></"
-#| "orgname> <_:address-1/> </affiliation>"
 msgid ""
 "<personname> <firstname>Glen</firstname> <surname>Barber</surname> </"
 "personname> <affiliation> <orgname class=\"nonprofit\"> <link xlink:href="
@@ -59,10 +51,10 @@ msgid ""
 msgstr ""
 "<personname> <firstname>Glen</firstname> <surname>Barber</surname> </"
 "personname> <affiliation> <orgname class=\"nonprofit\"> <link xlink:href="
-"\"https://www.freebsdfoundation.org\">The FreeBSD Foundation</link></"
-"orgname> </affiliation> <affiliation> <orgname> <link xlink:href=\"https://"
-"www.netgate.com\">Rubicon Communications, LLC (Netgate)</link></orgname> <_:"
-"address-1/> </affiliation>"
+"\"https://www.freebsdfoundation.org\">The FreeBSD Foundation</link></"
+"orgname> </affiliation> <affiliation> <orgname> <link xlink:href=\"https"
+"://www.netgate.com\">Rubicon Communications, LLC (Netgate)</link></orgname> "
+"<_:address-1/> </affiliation>"
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:47
@@ -106,10 +98,6 @@ msgstr ""
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:64
-#, fuzzy
-#| msgid ""
-#| "This article describes the release engineering process of the "
-#| "FreeBSD Project."
 msgid ""
 "This article describes the release engineering process of the FreeBSD "
 "Project."
@@ -873,11 +861,6 @@ msgstr "Alterações na Página Web Antes do Início do Ciclo de Release"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:527
-#, fuzzy
-#| msgid ""
-#| "When the release cycle schedule is available, these files need to be "
-#| "updated to enable various different functionalities on the "
-#| "FreeBSD Project website:"
 msgid ""
 "When the release cycle schedule is available, these files need to be updated "
 "to enable various different functionalities on the FreeBSD Project website:"
@@ -920,15 +903,11 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:550
-#, fuzzy
-#| msgid ""
-#| "Change <literal>beta.upcoming</literal> from <literal>IGNORE</literal> to "
-#| "<literal>INCLUDE</literal>"
 msgid ""
 "Change <literal>% beta.upcoming</literal> from <literal>IGNORE</literal> to "
 "<literal>INCLUDE</literal>"
 msgstr ""
-"Altere <literal>beta.upcoming</literal> de <literal>IGNORE</literal> para "
+"Altere <literal>% beta.upcoming</literal> de <literal>IGNORE</literal> para "
 "<literal>INCLUDE</literal>"
 
 #. (itstool) path: row/entry
@@ -942,15 +921,11 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:564
-#, fuzzy
-#| msgid ""
-#| "Change <literal>beta.testing</literal> from <literal>IGNORE</literal> to "
-#| "<literal>INCLUDE</literal>"
 msgid ""
 "Change <literal>% beta.testing</literal> from <literal>IGNORE</literal> to "
 "<literal>INCLUDE</literal>"
 msgstr ""
-"Altere <literal>beta.testing</literal> de <literal>IGNORE</literal> para "
+"Altere <literal>% beta.testing</literal> de <literal>IGNORE</literal> para "
 "<literal>INCLUDE</literal>"
 
 #. (itstool) path: sect2/title
@@ -982,10 +957,6 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:595
-#, fuzzy
-#| msgid ""
-#| "Change <literal>% beta.local.where</literal> <literal>IGNORE</literal> to "
-#| "<literal>INCLUDE</literal>"
 msgid ""
 "Change <literal>% beta.local.where</literal> <literal>IGNORE</literal> to "
 "<literal>INCLUDE</literal>"
@@ -995,16 +966,12 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:602
-#, fuzzy
-#| msgid ""
-#| "Update <literal>% betarel.vers</literal> to <literal>BETA<replaceable>1</"
-#| "replaceable></literal>"
 msgid ""
 "Update <literal>% betarel.vers</literal> to <literal>BETA<replaceable>1</"
 "replaceable></literal>"
 msgstr ""
-"Atualize <literal>% betarel.vers</literal> para <literal>BETA<replaceable>1</"
-"replaceable></literal>"
+"Atualize <literal>% betarel.vers</literal> para "
+"<literal>BETA<replaceable>1</replaceable></literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:607
@@ -1084,10 +1051,6 @@ msgstr ""
 
 #. (itstool) path: note/para
 #: article.translate.xml:649
-#, fuzzy
-#| msgid ""
-#| "The relevant release-related documents exist in the <filename class="
-#| "\"directory\">doc</filename> repository for FreeBSD 12.x and later."
 msgid ""
 "The relevant release-related documents exist in the <filename class="
 "\"directory\">doc</filename> repository for FreeBSD 12.x and later."
@@ -1148,12 +1111,6 @@ msgstr "Compilações <quote><literal>ALPHA</literal></quote> do FreeBSD"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:689
-#, fuzzy
-#| msgid ""
-#| "Starting with the FreeBSD 10.0-RELEASE cycle, the notion of "
-#| "<quote><literal>ALPHA</literal></quote> builds was introduced. Unlike the "
-#| "<literal>BETA</literal> and <literal>RC</literal> builds, <literal>ALPHA</"
-#| "literal> builds are not included in the FreeBSD Release schedule."
 msgid ""
 "Starting with the FreeBSD 10.0-RELEASE cycle, the notion of "
 "<quote><literal>ALPHA</literal></quote> builds was introduced. Unlike the "
@@ -1394,18 +1351,14 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:796
-#, fuzzy
-#| msgid ""
-#| "Move <varname>REPRODUCIBLE_BUILD</varname> from "
-#| "<literal>__DEFAULT_NO_OPTIONS</literal> to "
-#| "<literal>__DEFAULT_YES_OPTIONS</literal>"
 msgid ""
 "Move <varname>LLVM_ASSERTIONS</varname> from <literal>__DEFAULT_YES_OPTIONS</"
 "literal> to <literal>__DEFAULT_NO_OPTIONS</literal> (FreeBSD 13.x and later "
 "only)"
 msgstr ""
-"Mova <varname>REPRODUCIBLE_BUILD</varname> de <literal>__DEFAULT_NO_OPTIONS</"
-"literal> para <literal>__DEFAULT_YES_OPTIONS</literal>"
+"Mova <varname>LLVM_ASSERTIONS</varname> de <literal>__DEFAULT_NO_OPTIONS</"
+"literal> para <literal>__DEFAULT_YES_OPTIONS</literal> (Apenas para FreeBSD "
+"13.x e posterior)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:803
@@ -1629,10 +1582,8 @@ msgstr "<filename>Makefile.libcompat</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:959
-#, fuzzy
-#| msgid "Update <literal>LILB32CPUFLAGS</literal>"
 msgid "Update <literal>LIB32CPUFLAGS</literal>"
-msgstr "Atualize o <literal>LILB32CPUFLAGS</literal>"
+msgstr "Atualize o <literal>LIB32CPUFLAGS</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:963
@@ -1641,11 +1592,6 @@ msgstr "<filename>gnu/usr.bin/groff/tmac/mdoc.local.in</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:964
-#, fuzzy
-#| msgid ""
-#| "Add a new <literal>.ds</literal> entry for the FreeBSD version, and "
-#| "update <varname>doc-default-operating-system</varname> (FreeBSD 11.x and "
-#| "earlier only)"
 msgid ""
 "Add a new <literal>.ds</literal> entry for the FreeBSD version, and update "
 "<varname>doc-default-operating-system</varname> (FreeBSD 11.x and earlier "
@@ -1953,15 +1899,6 @@ msgstr "O script <filename>release.sh</filename>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1134
-#, fuzzy
-#| msgid ""
-#| "Prior to FreeBSD 9.0-RELEASE, <filename>src/release/Makefile</filename> "
-#| "was updated to support <citerefentry><refentrytitle>bsdinstall</"
-#| "refentrytitle><manvolnum>8</manvolnum></citerefentry>, and the "
-#| "<filename>src/release/generate-release.sh</filename> script was "
-#| "introduced as a wrapper to automate invoking the "
-#| "<citerefentry><refentrytitle>release</refentrytitle><manvolnum>7</"
-#| "manvolnum></citerefentry> targets."
 msgid ""
 "Prior to FreeBSD 9.0-RELEASE, <filename>src/release/Makefile</filename> was "
 "updated to support <citerefentry><refentrytitle>bsdinstall</"
@@ -1971,24 +1908,14 @@ msgid ""
 "refentrytitle><manvolnum>7</manvolnum></citerefentry> targets."
 msgstr ""
 "Antes do FreeBSD 9.0-RELEASE, o <filename>src/release/Makefile</filename> "
-"era atualizado para suportar o <citerefentry><refentrytitle>bsdinstall</"
-"refentrytitle><manvolnum>8</manvolnum></citerefentry>, e o script "
-"<filename>src/release/generate-release.sh</filename> foi introduzido como um "
-"wrapper para automatizar a chamada dos targets "
-"<citerefentry><refentrytitle>release</refentrytitle><manvolnum>7</"
-"manvolnum></citerefentry>."
+"era atualizado para suportar o <citerefentry><refentrytitle>bsdinstall</refen"
+"trytitle><manvolnum>8</manvolnum></citerefentry>, e o script <filename>src/"
+"release/generate-release.sh</filename> foi introduzido como um wrapper para "
+"automatizar a chamada dos targets <citerefentry><refentrytitle>release</refen"
+"trytitle><manvolnum>7</manvolnum></citerefentry>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1141
-#, fuzzy
-#| msgid ""
-#| "Prior to FreeBSD 9.2-RELEASE, <filename>src/release/release.sh</filename> "
-#| "was introduced, which heavily based on <filename>src/release/generate-"
-#| "release.sh</filename> included support to specify configuration files to "
-#| "override various options and environment variables. Support for "
-#| "configuration files provided support for cross building each architecture "
-#| "for a release by specifying a separate configuration file for each "
-#| "invocation."
 msgid ""
 "Prior to FreeBSD 9.2-RELEASE, <filename>src/release/release.sh</filename> "
 "was introduced, which heavily based on <filename>src/release/generate-"
@@ -1998,12 +1925,12 @@ msgid ""
 "for a release by specifying a separate configuration file for each "
 "invocation."
 msgstr ""
-"Antes do FreeBSD 9.2-RELEASE, foi introduzido o <filename>src/release/"
-"release.sh</filename>, que baseado fortemente em <filename>src/release/"
-"generate-release.sh</filename> incluía suporte para especificar arquivos de "
+"Antes do FreeBSD 9.2-RELEASE, foi introduzido o <filename>src/release/release"
+".sh</filename>, que baseado fortemente em <filename>src/release/generate-"
+"release.sh</filename> incluía suporte para especificar arquivos de "
 "configuração para substituir várias opções e variáveis de ambiente. O "
-"suporte para arquivos de configuração forneceu suporte para cross building "
-"(compilação para mais de uma arquitetura) de uma release para cada "
+"suporte para arquivos de configuração forneceu suporte para cross building ("
+"compilação para mais de uma arquitetura) de uma release para cada "
 "arquitetura, especificando um arquivo de configuração separado para cada "
 "chamada."
 
@@ -2479,37 +2406,30 @@ msgstr ""
 #: article.translate.xml:1375
 msgid "In preparation for the release build, several files need to be updated:"
 msgstr ""
+"Na preparação para a compilação da release, vários arquivos precisam ser "
+"atualizados:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1390
-#, fuzzy
-#| msgid ""
-#| "Update the <varname>BRANCH</varname> value to reflect "
-#| "<literal>PRERELEASE</literal>"
 msgid ""
 "Update the <varname>BRANCH</varname> value to <literal>RELEASE</literal>"
 msgstr ""
-"Atualize o valor da <varname>BRANCH</varname> para refletir "
-"<literal>PRERELEASE</literal>"
+"Atualize o valor <varname>BRANCH</varname> para <literal>RELEASE</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1395
-#, fuzzy
-#| msgid "<filename>head/UPDATING</filename>"
 msgid "<filename>UPDATING</filename>"
-msgstr "<filename>head/UPDATING</filename>"
+msgstr "<filename>UPDATING</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1396
 msgid "Add the anticipated announcement date"
-msgstr ""
+msgstr "Adicione a data prevista do anúncio"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1400
-#, fuzzy
-#| msgid "<filename>lib/clang/llvm.build.mk</filename>"
 msgid "<filename>lib/csu/common/crtbrand.c</filename>"
-msgstr "<filename>lib/clang/llvm.build.mk</filename>"
+msgstr "<filename>lib/csu/common/crtbrand.c</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1401
@@ -2517,6 +2437,8 @@ msgid ""
 "Replace <literal>__FreeBSD_version</literal> with the value in <filename>sys/"
 "sys/param.h</filename>"
 msgstr ""
+"Altere <literal>__FreeBSD_version</literal> com o valor em <filename>sys/sys/"
+"param.h</filename>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1409
