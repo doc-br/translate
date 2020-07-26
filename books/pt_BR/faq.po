@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-04-18 19:38+0000\n"
+"PO-Revision-Date: 2020-07-26 13:36+0000\n"
 "Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate-dev.freebsd.org/"
 "projects/freebsd-doc/boooks_faq/pt_BR/>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.1.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -244,16 +244,12 @@ msgstr ""
 
 #. (itstool) path: info/releaseinfo
 #: book.translate.xml:143
-#, fuzzy
-#| msgid ""
-#| "$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 53988 2020-03-16 "
-#| "14:38:17Z bcr $"
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 54295 2020-06-25 18:58:26Z "
 "gjb $"
 msgstr ""
-"$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 53988 2020-03-16 14:38:17Z "
-"bcr $"
+"$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 54295 2020-06-25 18:58:26Z "
+"gjb $"
 
 #. (itstool) path: abstract/para
 #: book.translate.xml:146
@@ -6697,15 +6693,18 @@ msgid ""
 "be dirty, that is, whose contents needs to be paged out before they can be "
 "reused."
 msgstr ""
+"<literal>Laundry</literal>: páginas recentemente não utilizadas "
+"estatisticamente, mas conhecidas por estarem sujas, ou seja, cujo conteúdo "
+"precisa ser paginado antes que possa ser reutilizado."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3983
-#, fuzzy
-#| msgid "<literal>Active</literal>: pages recently statistically used."
 msgid ""
 "<literal>Free</literal>: pages without data content, which can be "
 "immediately reused."
-msgstr "<literal>Active</literal>: são páginas usadas recentemente."
+msgstr ""
+"<literal>Free</literal>: páginas sem conteúdo, que podem ser reutilizadas "
+"imediatamente."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3988
@@ -6719,20 +6718,6 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:3994
-#, fuzzy
-#| msgid ""
-#| "Pages are most often written to disk (sort of a VM sync) when they are in "
-#| "the inactive state, but active pages can also be synced. This depends "
-#| "upon the CPU tracking of the modified bit being available, and in certain "
-#| "situations there can be an advantage for a block of VM pages to be "
-#| "synced, whether they are active or inactive. In most common cases, it is "
-#| "best to think of the inactive queue to be a queue of relatively unused "
-#| "pages that might or might not be in the process of being written to disk. "
-#| "Cached pages are already synced, not mapped, but available for immediate "
-#| "process use with their old association or with a new association. Free "
-#| "pages are available at interrupt level, but cached or free pages can be "
-#| "used at process state for reuse. Cache pages are not adequately locked to "
-#| "be available at interrupt level."
 msgid ""
 "Pages are most often written to disk (sort of a VM sync) when they are in "
 "the laundry state, but active or inactive pages can also be synced. This "
@@ -6747,18 +6732,17 @@ msgid ""
 "processing."
 msgstr ""
 "As páginas geralmente são gravadas em disco (um tipo de sincronização de VM) "
-"quando elas estão no estado inativo, mas as páginas ativas também podem ser "
-"sincronizadas. Isso depende do rastreamento da CPU do bit modificado estar "
-"disponível e, em determinadas situações pode haver uma vantagem para um "
-"bloco de páginas da VM serem sincronizadas, estejam elas ativas ou inativas. "
-"Na maioria dos casos comuns, é melhor pensar na fila inativa como uma fila "
-"de páginas relativamente não usadas que podem ou não estar no processo de "
-"serem gravadas no disco. As páginas em cache já estão sincronizadas, não "
-"mapeadas, mas disponíveis para uso imediato do processo com sua associação "
-"antiga ou com uma nova associação. As páginas livres estão disponíveis no "
-"nível de interrupção, mas as páginas em cache ou livres podem ser usadas no "
-"estado do processo para reutilização. As páginas de cache não estão "
-"adequadamente bloqueadas para estarem disponíveis no nível de interrupção."
+"quando elas estão no estado laundry, mas as páginas ativas ou inativas "
+"também podem ser sincronizadas. Isso depende do rastreamento da CPU do bit "
+"modificado estar disponível e, em determinadas situações pode haver uma "
+"vantagem para um bloco de páginas da VM serem sincronizadas, "
+"independentemente da fila a que pertencem. Na maioria dos casos, é melhor "
+"pensar na fila laundry como uma fila de páginas relativamente não usadas que "
+"podem ou não estar no processo de serem gravadas no disco. A fila inativa "
+"contém uma mistura de páginas limpas e sujas; as páginas limpas próximas ao "
+"início da fila são recuperadas imediatamente para aliviar a falta de páginas "
+"livres e as páginas sujas são movidas para a fila laundry para processamento "
+"posterior."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4009
@@ -6776,18 +6760,6 @@ msgstr "Quanta memória livre está disponível?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4022
-#, fuzzy
-#| msgid ""
-#| "There are a couple of kinds of <quote>free memory</quote>. One kind is "
-#| "the amount of memory immediately available without paging anything else "
-#| "out. That is approximately the size of cache queue + size of free queue "
-#| "(with a derating factor, depending upon system tuning). Another kind of "
-#| "<quote>free memory</quote> is the total amount of <acronym>VM</acronym> "
-#| "space. That can be complex, but is dependent upon the amount of swap "
-#| "space and memory. Other kinds of <quote>free memory</quote> descriptions "
-#| "are also possible, but it is relatively useless to define these, but "
-#| "rather it is important to make sure that the paging rate is kept low, and "
-#| "to avoid running out of swap space."
 msgid ""
 "There are a couple of kinds of <quote>free memory</quote>. The most common "
 "is the amount of memory immediately available without reclaiming memory "
@@ -6803,16 +6775,20 @@ msgid ""
 "define these, but rather it is important to make sure that the paging rate "
 "is kept low, and to avoid running out of swap space."
 msgstr ""
-"Existem alguns tipos de <quote>memória livre</quote>. Um tipo é a quantidade "
-"de memória imediatamente disponível sem fazer a paginação de mais nada para "
-"a VM. Isso é aproximadamente o tamanho da fila de cache + tamanho da fila "
-"livre (com um fator de redução de capacidade, dependendo do ajuste do "
-"sistema). Outro tipo de <quote>memória livre</quote> é a quantidade total de "
-"espaço <acronym>VM</acronym>. Isto pode ser complexo, mas depende da "
-"quantidade de espaço de swap e memória. Outros tipos de descrições de "
-"<quote>memória livre</quote> também são possíveis, mas é relativamente "
-"inútil defini-los, mas por outro lado é importante certificar-se de que a "
-"taxa de paginação está mantida baixa para evitar a falta de espaço de swap."
+"Existem alguns tipos de <quote>memória livre</quote>. O mais comum é a "
+"quantidade de memória disponível imediatamente, sem recuperar a memória já "
+"em uso. Esse é o tamanho da fila de páginas livres mais algumas outras "
+"páginas reservadas. Esse valor é exportado pelo <literal>vm.stats.vm."
+"v_free_count</literal> "
+"<citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>, mostrado, por exemplo, pelo "
+"<citerefentry><refentrytitle>top</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>. Outro tipo de <quote>memória livre</quote> é a quantidade "
+"total de memória virtual disponível para os processos da área de usuário, "
+"que depende da soma do espaço de swap e da memória utilizável. Outros tipos "
+"de descrições de <quote>memória livre</quote> também são possíveis, mas é "
+"relativamente inútil defini-las, mas é importante garantir que a taxa de "
+"paginação seja mantida baixa e evitar ficar sem espaço de swap."
 
 #. (itstool) path: question/para
 #: book.translate.xml:4042
@@ -7191,16 +7167,12 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4234
-#, fuzzy
-#| msgid ""
-#| "The mouse can be enabled in <application>Emacs</application>by adding "
-#| "these lines to <filename>~/.emacs</filename>:"
 msgid ""
 "The mouse can be enabled in <application>Emacs</application> by adding these "
 "lines to <filename>~/.emacs</filename>:"
 msgstr ""
 "O mouse pode ser habilitado no <application>Emacs</application> adicionando "
-"estas linhas ao <filename> ~/.emacs</filename>:"
+"estas linhas ao <filename>~/.emacs</filename>:"
 
 #. (itstool) path: answer/programlisting
 #: book.translate.xml:4238
