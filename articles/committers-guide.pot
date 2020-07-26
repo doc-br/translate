@@ -1,8 +1,8 @@
-#$FreeBSD$
+# $FreeBSD$
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-06-06 11:07-0300\n"
+"POT-Creation-Date: 2020-07-26 09:01-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,8 +88,8 @@ msgstr ""
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:66 article.translate.xml:68
 msgid ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml 54028 "
-"2020-03-31 22:44:55Z brooks $"
+"$FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml 54315 "
+"2020-07-07 10:11:37Z brueffer $"
 msgstr ""
 
 #. (itstool) path: abstract/para
@@ -2717,7 +2717,7 @@ msgstr ""
 #: article.translate.xml:1837
 msgid ""
 "There is a serious disadvantage to this method: every time something is to "
-"be committed, a <command>svn relocate</command> to the master repository has "
+"be committed, a <command>svn relocate</command> to the main repository has "
 "to be done, remembering to <command>svn relocate</command> back to the "
 "mirror after the commit. Also, since <command>svn relocate</command> only "
 "works between repositories that have the same UUID, some hacking of the "
@@ -4413,7 +4413,7 @@ msgstr ""
 msgid ""
 "Open new bug. Choose <literal>Services</literal> as the Product, and "
 "<literal>Bug Tracker</literal> as the Component. In bug description list "
-"acounts you wish to be merged."
+"accounts you wish to be merged."
 msgstr ""
 
 #. (itstool) path: step/para
@@ -5201,7 +5201,7 @@ msgstr ""
 #: article.translate.xml:3726
 msgid ""
 "If a particular piece of software lacks a maintainer, you are encouraged to "
-"take up owership. If you are unsure of the current maintainership email "
+"take up ownership. If you are unsure of the current maintainership email "
 "<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-arch"
 "\">FreeBSD architecture and design mailing list</link> and ask."
 msgstr ""
@@ -6600,7 +6600,7 @@ msgid ""
 "--- 2015Q1/security/rubygem-sshkit/Makefile     (revision 380443)\n"
 "+++ 2015Q1/security/rubygem-sshkit/Makefile     (working copy)\n"
 "@@ -2,7 +2,7 @@\n"
-" # $FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml 54028 2020-03-31 22:44:55Z brooks $\n"
+" # $FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml 54315 2020-07-07 10:11:37Z brueffer $\n"
 "\n"
 " PORTNAME=      sshkit\n"
 "-PORTVERSION=   1.6.1\n"

@@ -1,8 +1,8 @@
-#$FreeBSD$
+# $FreeBSD$
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-06-06 11:07-0300\n"
+"POT-Creation-Date: 2020-07-26 09:01-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -685,6 +685,7 @@ msgstr ""
 #: article.translate.xml:535 article.translate.xml:587
 #: article.translate.xml:732 article.translate.xml:826
 #: article.translate.xml:935 article.translate.xml:1037
+#: article.translate.xml:1382
 msgid "File to Edit"
 msgstr ""
 
@@ -692,6 +693,7 @@ msgstr ""
 #: article.translate.xml:536 article.translate.xml:588
 #: article.translate.xml:733 article.translate.xml:827
 #: article.translate.xml:936 article.translate.xml:1038
+#: article.translate.xml:1383
 msgid "What to Change"
 msgstr ""
 
@@ -1228,7 +1230,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: row/entry
-#: article.translate.xml:942
+#: article.translate.xml:942 article.translate.xml:1389
 msgid "<filename>sys/conf/newvers.sh</filename>"
 msgstr ""
 
@@ -1854,6 +1856,39 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1375
+msgid "In preparation for the release build, several files need to be updated:"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:1390
+msgid ""
+"Update the <varname>BRANCH</varname> value to <literal>RELEASE</literal>"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:1395
+msgid "<filename>UPDATING</filename>"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:1396
+msgid "Add the anticipated announcement date"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:1400
+msgid "<filename>lib/csu/common/crtbrand.c</filename>"
+msgstr ""
+
+#. (itstool) path: row/entry
+#: article.translate.xml:1401
+msgid ""
+"Replace <literal>__FreeBSD_version</literal> with the value in <filename>sys/"
+"sys/param.h</filename>"
+msgstr ""
+
+#. (itstool) path: sect2/para
+#: article.translate.xml:1409
 msgid ""
 "After building the final <literal>RELEASE</literal>, the <literal>releng/"
 "<replaceable>12.0</replaceable>/</literal> branch is tagged as "
@@ -1865,7 +1900,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/screen
-#: article.translate.xml:1382
+#: article.translate.xml:1416
 #, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn cp ^/<literal>releng/<replaceable>12.0</replaceable>/</literal>@r<replaceable>306420</replaceable> <literal>release/<replaceable>12.0.0</replaceable>/</literal></userinput>\n"
@@ -1873,36 +1908,36 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: article.translate.xml:1394
+#: article.translate.xml:1428
 msgid "Publishing FreeBSD Installation Media to Project Mirrors"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:1396
+#: article.translate.xml:1430
 msgid ""
 "This section describes the procedure to publish FreeBSD development "
 "snapshots and releases to the Project mirrors."
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:1400
+#: article.translate.xml:1434
 msgid "Staging FreeBSD Installation Media Images"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1402
+#: article.translate.xml:1436
 msgid "Staging FreeBSD snapshots and releases is a two part process:"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:1407
+#: article.translate.xml:1441
 msgid ""
 "Creating the directory structure to match the hierarchy on <systemitem>ftp-"
 "master</systemitem>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:1410
+#: article.translate.xml:1444
 msgid ""
 "If <literal>EVERYTHINGISFINE</literal> is defined in the build configuration "
 "files, <filename>main.conf</filename> in the case of the build scripts "
@@ -1917,13 +1952,13 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: listitem/screen
-#: article.translate.xml:1419
+#: article.translate.xml:1453
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>make -C /usr/src/release -f Makefile.mirrors EVERYTHINGISFINE=1 ftp-stage</userinput>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:1421
+#: article.translate.xml:1455
 msgid ""
 "After each architecture is built, <filename>thermite.sh</filename> will "
 "<application>rsync</application> the <filename class=\"directory\">"
@@ -1935,7 +1970,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:1430
+#: article.translate.xml:1464
 msgid ""
 "Copying the files to a staging directory on <systemitem>ftp-master</"
 "systemitem> before moving the files into <filename class=\"directory\">pub/</"
@@ -1943,7 +1978,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:1435
+#: article.translate.xml:1469
 msgid ""
 "Once all builds have finished, <filename class=\"directory\">/snap/ftp/"
 "snapshots</filename>, or <filename class=\"directory\">/snap/ftp/releases</"
@@ -1954,7 +1989,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: note/para
-#: article.translate.xml:1444
+#: article.translate.xml:1478
 msgid ""
 "On <systemitem>ftp-master</systemitem> in the FreeBSD Project "
 "infrastructure, this step requires <literal>root</literal> level access, as "
@@ -1962,12 +1997,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:1454
+#: article.translate.xml:1488
 msgid "Publishing FreeBSD Installation Media"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1456
+#: article.translate.xml:1490
 msgid ""
 "Once the images are staged in <filename class=\"directory\">/archive/tmp/</"
 "filename>, they are ready to be made public by putting them in <filename "
@@ -1979,7 +2014,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: note/para
-#: article.translate.xml:1463
+#: article.translate.xml:1497
 msgid ""
 "In order for this to be effective, both <filename class=\"directory\">/"
 "archive/tmp</filename> and <filename class=\"directory\">/archive/pub</"
@@ -1987,7 +2022,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1467
+#: article.translate.xml:1501
 msgid ""
 "There is a caveat, however, where <application>rsync</application> must be "
 "used after <citerefentry><refentrytitle>pax</refentrytitle><manvolnum>1</"
@@ -1999,19 +2034,19 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: note/para
-#: article.translate.xml:1474
+#: article.translate.xml:1508
 msgid ""
 "As with the staging steps, this requires <literal>root</literal> level "
 "access, as this step must be executed as the <literal>archive</literal> user."
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1479
+#: article.translate.xml:1513
 msgid "As the <literal>archive</literal> user:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
-#: article.translate.xml:1481
+#: article.translate.xml:1515
 #, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>cd /archive/tmp/<replaceable>snapshots</replaceable></userinput>\n"
@@ -2020,29 +2055,29 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1485
+#: article.translate.xml:1519
 msgid ""
 "Replace <replaceable>snapshots</replaceable> with <replaceable>releases</"
 "replaceable> as appropriate."
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: article.translate.xml:1492
+#: article.translate.xml:1526
 msgid "Wrapping up the Release Cycle"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:1494
+#: article.translate.xml:1528
 msgid "This section describes general post-release tasks."
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:1497
+#: article.translate.xml:1531
 msgid "Post-Release Errata Notices"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1499
+#: article.translate.xml:1533
 msgid ""
 "As the release cycle approaches conclusion, it is common to have several "
 "<acronym>EN</acronym> (Errata Notice) candidates to address issues that were "
@@ -2053,14 +2088,14 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: note/para
-#: article.translate.xml:1508
+#: article.translate.xml:1542
 msgid ""
 "The actual process of issuing <acronym>EN</acronym>s is handled by the "
 "FreeBSD Security Team."
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1512
+#: article.translate.xml:1546
 msgid ""
 "To request an Errata Notice after a release cycle has completed, a developer "
 "should fill out the <link xlink:href=\"https://www.freebsd.org/security/"
@@ -2071,7 +2106,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1519
+#: article.translate.xml:1553
 msgid ""
 "The completed Errata Notice template should be emailed together with either "
 "a patch against the <literal>releng/</literal> branch or a list of revisions "
@@ -2079,7 +2114,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1524
+#: article.translate.xml:1558
 msgid ""
 "For Errata Notice requests immediately following the release, the request "
 "should be emailed to both the FreeBSD Release Engineering Team and the "
@@ -2090,12 +2125,12 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:1532
+#: article.translate.xml:1566
 msgid "Handoff to the FreeBSD Security Team"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1534
+#: article.translate.xml:1568
 msgid ""
 "Roughly two weeks following the release, the Release Engineer updates "
 "<filename>svnadmin/conf/approvers</filename> changing the approver column "
