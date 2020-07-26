@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-06-06 15:11+0000\n"
+"PO-Revision-Date: 2020-07-26 13:16+0000\n"
 "Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate-dev.freebsd.org/"
 "projects/freebsd-doc/boooks_fdp-primer/pt_BR/>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 4.0.4\n"
+"X-Generator: Weblate 4.1.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -36,14 +36,6 @@ msgstr "<orgname>Projeto de Documentação do FreeBSD</orgname>"
 
 #. (itstool) path: info/copyright
 #: book.translate.xml:70
-#, fuzzy
-#| msgid ""
-#| "<year>1998</year> <year>1999</year> <year>2000</year> <year>2001</year> "
-#| "<year>2002</year> <year>2003</year> <year>2004</year> <year>2005</year> "
-#| "<year>2006</year> <year>2007</year> <year>2008</year> <year>2009</year> "
-#| "<year>2010</year> <year>2011</year> <year>2012</year> <year>2013</year> "
-#| "<year>2014</year> <year>2015</year> <year>2016</year> <year>2017</year> "
-#| "<holder role=\"mailto:doceng@FreeBSD.org\">DocEng</holder>"
 msgid ""
 "<year>1998</year> <year>1999</year> <year>2000</year> <year>2001</year> "
 "<year>2002</year> <year>2003</year> <year>2004</year> <year>2005</year> "
@@ -58,7 +50,8 @@ msgstr ""
 "<year>2006</year> <year>2007</year> <year>2008</year> <year>2009</year> "
 "<year>2010</year> <year>2011</year> <year>2012</year> <year>2013</year> "
 "<year>2014</year> <year>2015</year> <year>2016</year> <year>2017</year> "
-"<holder role=\"mailto:doceng@FreeBSD.org\">DocEng</holder>"
+"<year>2018</year> <year>2019</year> <year>2020</year> <holder role=\"mailto"
+":doceng@FreeBSD.org\">DocEng</holder>"
 
 #. (itstool) path: legalnotice/title
 #: book.translate.xml:103
@@ -534,26 +527,20 @@ msgstr "<prompt>#</prompt> <userinput>pkg install docproj subversion</userinput>
 
 #. (itstool) path: step/para
 #: book.translate.xml:416
-#, fuzzy
-#| msgid ""
-#| "The DocBook <acronym>DTD</acronym> is available from the Ports Collection "
-#| "in the <package>textproc/docbook-xml</package> port. It is automatically "
-#| "installed as part of the <package>textproc/docproj</package> port."
 msgid ""
 "Optional: to generate PDF documentation, install the <package>textproc/fop</"
 "package> package as it is not installed by default by <package>textproc/"
 "docproj</package>."
 msgstr ""
-"O DocBook <acronym>DTD</acronym> está disponível na coleção Ports "
-"<package>textproc/docbook-xml</package>. Ele é instalado automaticamente "
-"como parte do port <package>textproc/docproj</package>."
+"Opcional: para gerar a documentação em PDF, instale o pacote <package>"
+"textproc/fop</package> pois ele não é instalado por padrão com o <package>"
+"textproc/docproj</package>."
 
 #. (itstool) path: step/screen
 #: book.translate.xml:421
-#, fuzzy, no-wrap
-#| msgid "<prompt>#</prompt> <userinput>pkg install subversion</userinput>"
+#, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install fop</userinput>"
-msgstr "<prompt>#</prompt> <userinput>pkg install subversion</userinput>"
+msgstr "<prompt>#</prompt> <userinput>pkg install fop</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:425
