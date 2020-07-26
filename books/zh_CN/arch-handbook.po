@@ -325,9 +325,10 @@ msgid ""
 "sequence. The last stage, <filename>loader</filename>, is responsible for "
 "loading the FreeBSD kernel. Each stage is examined in the following sections."
 msgstr ""
-"理解此过程的关键在于这些阶段的复杂度逐级增加。这些阶段是<filename>boot1</filename>，<filename>boot2</filen"
-"ame> 和 <filename>loader</filename>（更多详情请参阅 <citerefentry><refentrytitle>boot<"
-"/refentrytitle><manvolnum>8</manvolnum></citerefentry>）。这些阶段在系统启动时按顺序执行。最后一步，"
+"理解此过程的关键在于这些阶段的复杂度逐级增加。这些阶段是<filename>boot1</"
+"filename>，<filename>boot2</filename> 和 <filename>loader</filename>（更多详"
+"情请参阅 <citerefentry><refentrytitle>boot</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>）。这些阶段在系统启动时按顺序执行。最后一步，"
 "<filename>loader</filename>，负责加载 FreeBSD 内核。以下章节将介绍各个阶段。"
 
 #. (itstool) path: sect1/para
@@ -487,8 +488,9 @@ msgid ""
 "memory address. The computer's hardware translates this address so that it "
 "points to a <acronym>BIOS</acronym> memory block."
 msgstr ""
-"值 <literal>0xfffffff0</literal> 略小于4G，因此计算机没有 4G 字节物理内存，这就不会是一个有效的内存地址。"
-"计算机硬件将这个地址转指向 <acronym>BIOS</acronym> 存储块。"
+"值 <literal>0xfffffff0</literal> 略小于4G，因此计算机没有 4G 字节物理内存，这"
+"就不会是一个有效的内存地址。计算机硬件将这个地址转指向 <acronym>BIOS</"
+"acronym> 存储块。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:432
