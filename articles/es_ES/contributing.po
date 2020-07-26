@@ -4,11 +4,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-06-06 11:07-0300\n"
+"POT-Creation-Date: 2020-07-26 09:01-0300\n"
 "PO-Revision-Date: 2020-06-07 02:07+0000\n"
 "Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
-"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
-"freebsd-doc/articles_contributing/es/>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/freebsd-"
+"doc/articles_contributing/es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -97,9 +97,13 @@ msgstr ""
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:33 article.translate.xml:35
+#, fuzzy
+#| msgid ""
+#| "$FreeBSD: head/en_US.ISO8859-1/articles/contributing/article.xml 54180 "
+#| "2020-05-24 21:19:34Z linimon $"
 msgid ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/contributing/article.xml 54180 "
-"2020-05-24 21:19:34Z linimon $"
+"$FreeBSD: head/en_US.ISO8859-1/articles/contributing/article.xml 54220 "
+"2020-06-08 09:55:20Z salvadore $"
 msgstr ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/contributing/article.xml 54180 "
 "2020-05-24 21:19:34Z linimon $"
@@ -355,13 +359,13 @@ msgstr ""
 #: article.translate.xml:171
 msgid ""
 "Build the source tree (or just part of it) with extra warnings enabled and "
-"clean up the warnings."
+"clean up the warnings. A list of build warnings can also be found from our "
+"<link xlink:href=\"https://ci.freebsd.org\">CI</link> by selecting a build "
+"and checking \"LLVM/Clang Warnings\"."
 msgstr ""
-"Compile el árbol del código fuente (o solo una parte del mismo) con un nivel "
-"de depuración adicional habilitado y corrija los warnings."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:176
+#: article.translate.xml:179
 msgid ""
 "Fix warnings for ports which do deprecated things like using "
 "<function>gets()</function> or including <filename>malloc.h</filename>."
@@ -370,7 +374,7 @@ msgstr ""
 "<function>gets()</function> o que incluyan <filename>malloc.h</filename>."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:182
+#: article.translate.xml:185
 msgid ""
 "If you have contributed any ports and you had to make FreeBSD-specific "
 "changes, send your patches back to the original authors (this will make your "
@@ -381,7 +385,7 @@ msgstr ""
 "más fácil cuando lancen la próxima versión)."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:189
+#: article.translate.xml:192
 msgid ""
 "Get copies of formal standards like <trademark class=\"registered\">POSIX</"
 "trademark>. Compare FreeBSD's behavior to that required by the standard. If "
@@ -399,22 +403,22 @@ msgstr ""
 "su propuesta."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:200
+#: article.translate.xml:203
 msgid "Suggest further tasks for this list!"
 msgstr "¡Sugiera nuevas tareas para esta lista!"
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:206
+#: article.translate.xml:209
 msgid "Work through the PR Database"
 msgstr "Trabaje en la base de datos de PR"
 
 #. (itstool) path: sect2/indexterm
-#: article.translate.xml:208
+#: article.translate.xml:211
 msgid "<primary>problem reports database</primary>"
 msgstr "<primary>problem reports database</primary>"
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:212
+#: article.translate.xml:215
 msgid ""
 "The <link xlink:href=\"https://bugs.FreeBSD.org/search/\">FreeBSD PR list</"
 "link> shows all the current active problem reports and requests for "
@@ -436,7 +440,7 @@ msgstr ""
 "solución."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:223
+#: article.translate.xml:226
 msgid ""
 "Start with the PRs that have not been assigned to anyone else. If a PR is "
 "assigned to someone else, but it looks like something you can handle, email "
@@ -451,12 +455,12 @@ msgstr ""
 "que proponer."
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:232
+#: article.translate.xml:235
 msgid "Ongoing Ports Tasks"
 msgstr "Tareas en curso relacionadas con la colección de ports"
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:234
+#: article.translate.xml:237
 msgid ""
 "The Ports Collection is a perpetual work in progress. We want to provide our "
 "users with an easy to use, up to date, high quality repository of third "
@@ -469,7 +473,7 @@ msgstr ""
 "de su tiempo y esfuerzo para ayudarnos a lograr este objetivo."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:240
+#: article.translate.xml:243
 msgid ""
 "Anyone can get involved, and there are lots of different ways to do so. "
 "Contributing to ports is an excellent way to help <quote>give back</quote> "
@@ -483,7 +487,7 @@ msgstr ""
 "¡estaríamos encantados de que nos ayude!."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:246
+#: article.translate.xml:249
 msgid ""
 "There are a number of easy ways you can contribute to keeping the ports tree "
 "up to date and in good working order:"
@@ -492,7 +496,7 @@ msgstr ""
 "y en buen funcionamiento:"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:252
+#: article.translate.xml:255
 msgid ""
 "Find some cool or useful software and <link xlink:href=\"@@URL_RELPREFIX@@/"
 "doc/en_US.ISO8859-1/books/porters-handbook\">create a port</link> for it."
@@ -502,7 +506,7 @@ msgstr ""
 "port</link>."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:258
+#: article.translate.xml:261
 msgid ""
 "There are a large number of ports that have no maintainer. Become a "
 "maintainer and <link linkend=\"adopt-port\">adopt a port</link>."
@@ -511,7 +515,7 @@ msgstr ""
 "un maintainer y <link linkend=\"adopt-port\">adopte un port</link>."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:264
+#: article.translate.xml:267
 msgid ""
 "If you have created or adopted a port, be aware of <link linkend=\"maintain-"
 "port\">what you need to do as a maintainer</link>."
@@ -520,7 +524,7 @@ msgstr ""
 "port\">que debe hacer como maintainer</link>."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:270
+#: article.translate.xml:273
 msgid ""
 "When you are looking for a quick challenge you could <link linkend=\"fix-"
 "broken\">fix a bug or a broken port</link>."
@@ -529,12 +533,12 @@ msgstr ""
 "error o un port roto</link>."
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:278
+#: article.translate.xml:281
 msgid "Pick one of the items from the Ideas page"
 msgstr "Escoja uno de los elementos de la página de ideas"
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:280
+#: article.translate.xml:283
 msgid ""
 "The <link xlink:href=\"https://wiki.freebsd.org/IdeasPage\">FreeBSD list of "
 "projects and ideas for volunteers</link> is also available for people "
@@ -549,12 +553,12 @@ msgstr ""
 "programadores, así como información sobre cada proyecto."
 
 #. (itstool) path: sect1/title
-#: article.translate.xml:290
+#: article.translate.xml:293
 msgid "How to Contribute"
 msgstr "Cómo colaborar"
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:292
+#: article.translate.xml:295
 msgid ""
 "Contributions to the system generally fall into one or more of the following "
 "5 categories:"
@@ -563,12 +567,12 @@ msgstr ""
 "siguientes 5 categorías:"
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:296
+#: article.translate.xml:299
 msgid "Bug Reports and General Commentary"
 msgstr "Informes de errores y comentarios generales"
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:298
+#: article.translate.xml:301
 msgid ""
 "An idea or suggestion of <emphasis>general</emphasis> technical interest "
 "should be mailed to the <link xlink:href=\"http://lists.FreeBSD.org/mailman/"
@@ -593,7 +597,7 @@ msgstr ""
 "más información sobre esta y otras listas de correo."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:306
+#: article.translate.xml:309
 msgid ""
 "If you find a bug or are submitting a specific change, please report it "
 "using the <link xlink:href=\"https://bugs.FreeBSD.org/submit/\">bug "
@@ -622,7 +626,7 @@ msgstr ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>) antes de enviarlo."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:319
+#: article.translate.xml:322
 msgid ""
 "After filing a report, you should receive confirmation along with a tracking "
 "number. Keep this tracking number so that you can update us with details "
@@ -633,7 +637,7 @@ msgstr ""
 "pueda informarnos con nuevos detalles sobre el problema."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:323
+#: article.translate.xml:326
 msgid ""
 "See also <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/"
 "problem-reports/article.html\">this article</link> on how to write good "
@@ -644,17 +648,17 @@ msgstr ""
 "escribir buenos informes de problemas."
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:329
+#: article.translate.xml:332
 msgid "Changes to the Documentation"
 msgstr "Cambios en la documentación"
 
 #. (itstool) path: sect2/indexterm
-#: article.translate.xml:331
+#: article.translate.xml:334
 msgid "<primary>documentation submissions</primary>"
 msgstr "<primary>documentation submissions</primary>"
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:335
+#: article.translate.xml:338
 msgid ""
 "Changes to the documentation are overseen by the <link xlink:href=\"http://"
 "lists.FreeBSD.org/mailman/listinfo/freebsd-doc\">FreeBSD documentation "
@@ -674,17 +678,17 @@ msgstr ""
 "informe de errores."
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:345
+#: article.translate.xml:348
 msgid "Changes to Existing Source Code"
 msgstr "Cambios en el código fuente ya existente"
 
 #. (itstool) path: sect2/indexterm
-#: article.translate.xml:347
+#: article.translate.xml:350
 msgid "<primary>FreeBSD-CURRENT</primary>"
 msgstr "<primary>FreeBSD-CURRENT</primary>"
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:349
+#: article.translate.xml:352
 msgid ""
 "An addition or change to the existing source code is a somewhat trickier "
 "affair and depends a lot on how far out of date you are with the current "
@@ -705,7 +709,7 @@ msgstr ""
 "cómo obtener y usar FreeBSD-CURRENT."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:359
+#: article.translate.xml:362
 msgid ""
 "Working from older sources unfortunately means that your changes may "
 "sometimes be too obsolete or too divergent for easy re-integration into "
@@ -726,7 +730,7 @@ msgstr ""
 "estado actual del sistema."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:366
+#: article.translate.xml:369
 msgid ""
 "Assuming that you can manage to secure fairly up-to-date sources to base "
 "your changes on, the next step is to produce a set of diffs to send to the "
@@ -741,7 +745,7 @@ msgstr ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:371
+#: article.translate.xml:374
 msgid ""
 "The preferred <citerefentry><refentrytitle>diff</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> format for submitting patches is the unified "
@@ -752,29 +756,29 @@ msgstr ""
 "salida unificado generado por el comando <command>diff -u</command>."
 
 #. (itstool) path: sect2/indexterm
-#: article.translate.xml:375
+#: article.translate.xml:378
 msgid "<primary><command>diff</command></primary>"
 msgstr "<primary><command>diff</command></primary>"
 
 #. (itstool) path: sect2/screen
-#: article.translate.xml:379
+#: article.translate.xml:382
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>diff -u oldfile newfile</userinput>"
 msgstr "<prompt>%</prompt> <userinput>diff -u fichero-antiguo fichero-nuevo</userinput>"
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:381
+#: article.translate.xml:384
 msgid "or"
 msgstr "o"
 
 #. (itstool) path: sect2/screen
-#: article.translate.xml:383
+#: article.translate.xml:386
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>diff -u -r -N olddir newdir</userinput>"
 msgstr "<prompt>%</prompt> <userinput>diff -u -r -N directorio-antiguo directorio-nuevo</userinput>"
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:385
+#: article.translate.xml:388
 msgid ""
 "would generate a set of unified diffs for the given source file or directory "
 "hierarchy."
@@ -783,7 +787,7 @@ msgstr ""
 "la jerarquía de directorios."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:388
+#: article.translate.xml:391
 msgid ""
 "See <citerefentry><refentrytitle>diff</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> for more information."
@@ -793,7 +797,7 @@ msgstr ""
 "información."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:390
+#: article.translate.xml:393
 msgid ""
 "Once you have a set of diffs (which you may test with the "
 "<citerefentry><refentrytitle>patch</refentrytitle><manvolnum>1</manvolnum></"
@@ -819,7 +823,7 @@ msgstr ""
 "literal> en la sinopsis del informe."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:402
+#: article.translate.xml:405
 msgid ""
 "If you feel it appropriate (e.g. you have added, deleted, or renamed files), "
 "bundle your changes into a <command>tar</command> file. Archives created "
@@ -833,7 +837,7 @@ msgstr ""
 "citerefentry>."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:408
+#: article.translate.xml:411
 msgid ""
 "If your change is of a potentially sensitive nature, such as if you are "
 "unsure of copyright issues governing its further distribution then you "
@@ -853,7 +857,7 @@ msgstr ""
 "tanto, solo debe enviarles correos cuando realmente sea necesario."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:417
+#: article.translate.xml:420
 msgid ""
 "Please refer to <citerefentry><refentrytitle>intro</"
 "refentrytitle><manvolnum>9</manvolnum></citerefentry> and "
@@ -869,12 +873,12 @@ msgstr ""
 "enviar el código."
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:424
+#: article.translate.xml:427
 msgid "New Code or Major Value-Added Packages"
 msgstr "Código nuevo o paquetes de gran valor añadido"
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:426
+#: article.translate.xml:429
 msgid ""
 "In the case of a significant contribution of a large body work, or the "
 "addition of an important new feature to FreeBSD, it becomes almost always "
@@ -891,7 +895,7 @@ msgstr ""
 "para que alguien busque un sitio para alojar los cambios."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:434
+#: article.translate.xml:437
 msgid ""
 "When working with large amounts of code, the touchy subject of copyrights "
 "also invariably comes up. FreeBSD prefers free software licenses such as BSD "
@@ -907,12 +911,12 @@ msgstr ""
 "licencias del core team</link>."
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:443
+#: article.translate.xml:446
 msgid "Money or Hardware"
 msgstr "Dinero o hardware"
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:445
+#: article.translate.xml:448
 msgid ""
 "We are always very happy to accept donations to further the cause of the "
 "FreeBSD Project and, in a volunteer effort like ours, a little can go a long "
@@ -927,12 +931,12 @@ msgstr ""
 "generalmente no podemos permitirnos comprar estos artículos nosotros mismos."
 
 #. (itstool) path: sect3/title
-#: article.translate.xml:453
+#: article.translate.xml:456
 msgid "Donating Funds"
 msgstr "Donar dinero"
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:455
+#: article.translate.xml:458
 msgid ""
 "The <link xlink:href=\"https://www.freebsdfoundation.org\">FreeBSD "
 "Foundation</link> is a non-profit, tax-exempt foundation established to "
@@ -943,13 +947,13 @@ msgid ""
 msgstr ""
 "La <link xlink:href=\"https://www.freebsdfoundation.org\">FreeBSD "
 "Foundation</link> es una fundación sin ánimo de lucro, libre de impuestos, "
-"creada para impulsar los objetivos del proyecto FreeBSD. Como entidad 501(c)"
-"3, la FreeBSD Foundation está exenta del impuesto federal de la renta de los "
-"EEUU así como del Estado de Colorado. Las donaciones a una entidad exenta de "
-"impuestos suelen ser deducibles (en los EEUU)."
+"creada para impulsar los objetivos del proyecto FreeBSD. Como entidad "
+"501(c)3, la FreeBSD Foundation está exenta del impuesto federal de la renta "
+"de los EEUU así como del Estado de Colorado. Las donaciones a una entidad "
+"exenta de impuestos suelen ser deducibles (en los EEUU)."
 
 #. (itstool) path: para/address
-#: article.translate.xml:465
+#: article.translate.xml:468
 #, no-wrap
 msgid ""
 "\n"
@@ -969,23 +973,23 @@ msgstr ""
 "\t  "
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:464
+#: article.translate.xml:467
 msgid "Donations may be sent in check form to: <_:address-1/>"
 msgstr "Las donaciones pueden enviarse mediante cheque a: <_:address-1/>"
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:473
+#: article.translate.xml:476
 msgid ""
 "The FreeBSD Foundation is also able to accept <link xlink:href=\"https://www."
 "freebsdfoundation.org/donate/\"> online donations</link> through various "
 "payment options."
 msgstr ""
-"La Fundación FreeBSD también puede aceptar <link xlink:href=\""
-"https://www.freebsdfoundation.org/donate/\">donaciones en línea</link> a "
-"través de varias opciones de pago."
+"La Fundación FreeBSD también puede aceptar <link xlink:href=\"https://www."
+"freebsdfoundation.org/donate/\">donaciones en línea</link> a través de "
+"varias opciones de pago."
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:477
+#: article.translate.xml:480
 msgid ""
 "More information about the FreeBSD Foundation can be found in <link xlink:"
 "href=\"https://people.FreeBSD.org/~jdp/foundation/announcement.html\">The "
@@ -999,17 +1003,17 @@ msgstr ""
 "org</email>."
 
 #. (itstool) path: sect3/title
-#: article.translate.xml:485
+#: article.translate.xml:488
 msgid "Donating Hardware"
 msgstr "Donar hardware"
 
 #. (itstool) path: sect3/indexterm
-#: article.translate.xml:487
+#: article.translate.xml:490
 msgid "<primary>donations</primary>"
 msgstr "<primary>donations</primary>"
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:489
+#: article.translate.xml:492
 msgid ""
 "The FreeBSD Project happily accepts donations of hardware that it can find "
 "good use for. If you are interested in donating hardware, please contact the "
@@ -1022,22 +1026,22 @@ msgstr ""
 "Office</link>."
 
 #. (itstool) path: sect1/title
-#: article.translate.xml:499
+#: article.translate.xml:502
 msgid "Contributing to ports"
 msgstr "Contribuyendo a la colección de ports"
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:502
+#: article.translate.xml:505
 msgid "Adopting an unmaintained port"
 msgstr "Adoptar un port que no está mantenido"
 
 #. (itstool) path: sect3/title
-#: article.translate.xml:505
+#: article.translate.xml:508
 msgid "Choosing an unmaintained port"
 msgstr "Elegir un port que no esté mantenido"
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:507
+#: article.translate.xml:510
 msgid ""
 "Taking over maintainership of ports that are unmaintained is a great way to "
 "get involved. Unmaintained ports are only updated and fixed when somebody "
@@ -1051,7 +1055,7 @@ msgstr ""
 "idea empezar adoptando un port que use de forma regular."
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:514
+#: article.translate.xml:517
 msgid ""
 "Unmaintained ports have their <varname>MAINTAINER</varname> set to "
 "<literal>ports@FreeBSD.org</literal>. A list of unmaintained ports and their "
@@ -1067,7 +1071,7 @@ msgstr ""
 "Ports Monitoring System</link>."
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:521
+#: article.translate.xml:524
 msgid ""
 "Some ports affect a large number of others due to dependencies and slave "
 "port relationships. Generally, we want people to have some experience before "
@@ -1079,7 +1083,7 @@ msgstr ""
 "para mantener dichos ports."
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:526
+#: article.translate.xml:529
 msgid ""
 "You can find out whether or not a port has dependencies or slave ports by "
 "looking at a master index of ports called <filename>INDEX</filename>. (The "
@@ -1098,12 +1102,12 @@ msgstr ""
 "analizando el archivo <filename>Makefile</filename> de otros ports."
 
 #. (itstool) path: sect3/title
-#: article.translate.xml:538
+#: article.translate.xml:541
 msgid "How to adopt the port"
 msgstr "Cómo adoptar un port"
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:540
+#: article.translate.xml:543
 msgid ""
 "First make sure you understand your <link linkend=\"maintain-port"
 "\">responsibilities as a maintainer</link>. Also read the <link xlink:href="
@@ -1118,7 +1122,7 @@ msgstr ""
 "con más de lo que crea que puede manejar cómodamente.</emphasis>"
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:548
+#: article.translate.xml:551
 msgid ""
 "You may request maintainership of any unmaintained port as soon as you wish. "
 "Simply set <varname>MAINTAINER</varname> to your own email address and send "
@@ -1141,7 +1145,7 @@ msgstr ""
 "actualizando ports."
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:558
+#: article.translate.xml:561
 msgid ""
 "File your PR with category <literal>ports</literal> and class "
 "<literal>change-request</literal>. A committer will examine your PR, commit "
@@ -1154,12 +1158,12 @@ msgstr ""
 "puede llevar cierto tiempo (los committers también son voluntarios :)."
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:567
+#: article.translate.xml:570
 msgid "The challenge for port maintainers"
 msgstr "El desafío para los maintainers de un port"
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:569
+#: article.translate.xml:572
 msgid ""
 "This section will give you an idea of why ports need to be maintained and "
 "outline the responsibilities of a port maintainer."
@@ -1168,12 +1172,12 @@ msgstr ""
 "mantenerse y describirá las responsabilidades de un maintainer de port."
 
 #. (itstool) path: sect3/title
-#: article.translate.xml:574
+#: article.translate.xml:577
 msgid "Why ports require maintenance"
 msgstr "Por qué los ports requieren mantenimiento"
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:576
+#: article.translate.xml:579
 msgid ""
 "Creating a port is a once-off task. Ensuring that a port is up to date and "
 "continues to build and run requires an ongoing maintenance effort. "
@@ -1187,7 +1191,7 @@ msgstr ""
 "objetivos."
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:581
+#: article.translate.xml:584
 msgid ""
 "The foremost reason ports need maintenance is to bring the latest and "
 "greatest in third party software to the FreeBSD community. An additional "
@@ -1201,17 +1205,17 @@ msgstr ""
 "que este evoluciona."
 
 #. (itstool) path: sect3/para
-#: article.translate.xml:587
+#: article.translate.xml:590
 msgid "As a maintainer, you will need to manage the following challenges:"
 msgstr "Como maintainer deberá enfrentarse a los siguientes desafíos:"
 
 #. (itstool) path: formalpara/title
-#: article.translate.xml:593
+#: article.translate.xml:596
 msgid "New software versions and updates."
 msgstr "Nuevas versiones y actualizaciones de software."
 
 #. (itstool) path: formalpara/para
-#: article.translate.xml:595
+#: article.translate.xml:598
 msgid ""
 "New versions and updates of existing ported software become available all "
 "the time, and these need to be incorporated into the Ports Collection in "
@@ -1222,12 +1226,12 @@ msgstr ""
 "a la colección de ports para proporcionar un software actualizado."
 
 #. (itstool) path: formalpara/title
-#: article.translate.xml:604
+#: article.translate.xml:607
 msgid "Changes to dependencies."
 msgstr "Cambios en las dependencias."
 
 #. (itstool) path: formalpara/para
-#: article.translate.xml:606
+#: article.translate.xml:609
 msgid ""
 "If significant changes are made to the dependencies of your port, it may "
 "need to be updated so that it will continue to work correctly."
@@ -1236,12 +1240,12 @@ msgstr ""
 "posible que deba actualizarlas para que continúe funcionando correctamente."
 
 #. (itstool) path: formalpara/title
-#: article.translate.xml:614
+#: article.translate.xml:617
 msgid "Changes affecting dependent ports."
 msgstr "Cambios que afectan a los ports que dependen de los suyos."
 
 #. (itstool) path: formalpara/para
-#: article.translate.xml:616
+#: article.translate.xml:619
 msgid ""
 "If other ports depend on a port that you maintain, changes to your port may "
 "require coordination with other maintainers."
@@ -1250,12 +1254,12 @@ msgstr ""
 "pueden requerir que se coordine con otros maintainers."
 
 #. (itstool) path: formalpara/title
-#: article.translate.xml:624
+#: article.translate.xml:627
 msgid "Interaction with other users, maintainers and developers."
 msgstr "Interacción con otros usuarios, maintainers y desarrolladores."
 
 #. (itstool) path: formalpara/para
-#: article.translate.xml:627
+#: article.translate.xml:630
 msgid ""
 "Part of being a maintainer is taking on a support role. You are not expected "
 "to provide general support (but we welcome it if you choose to do so). What "
@@ -1268,12 +1272,12 @@ msgstr ""
 "problemas específicos de FreeBSD que estén relacionados con sus ports."
 
 #. (itstool) path: formalpara/title
-#: article.translate.xml:637
+#: article.translate.xml:640
 msgid "Bug hunting."
 msgstr "Caza de bugs."
 
 #. (itstool) path: formalpara/para
-#: article.translate.xml:639
+#: article.translate.xml:642
 msgid ""
 "A port may be affected by bugs which are specific to FreeBSD. You will need "
 "to investigate, find, and fix these bugs when they are reported. Thoroughly "
@@ -1286,12 +1290,12 @@ msgstr ""
 "potenciales problemas antes de añadirlo a la colección de ports."
 
 #. (itstool) path: formalpara/title
-#: article.translate.xml:649
+#: article.translate.xml:652
 msgid "Changes to ports infrastructure and policy."
 msgstr "Cambios en la infraestructura y política de ports."
 
 #. (itstool) path: formalpara/para
-#: article.translate.xml:651
+#: article.translate.xml:654
 msgid ""
 "Occasionally the systems that are used to build ports and packages are "
 "updated or a new recommendation affecting the infrastructure is made. You "
@@ -1304,12 +1308,12 @@ msgstr ""
 "se vean afectados y requieran de una actualización."
 
 #. (itstool) path: formalpara/title
-#: article.translate.xml:661
+#: article.translate.xml:664
 msgid "Changes to the base system."
 msgstr "Cambios en el sistema base."
 
 #. (itstool) path: formalpara/para
-#: article.translate.xml:663
+#: article.translate.xml:666
 msgid ""
 "FreeBSD is under constant development. Changes to software, libraries, the "
 "kernel or even policy changes can cause flow-on change requirements to ports."
@@ -1319,17 +1323,17 @@ msgstr ""
 "hacer necesarios ciertos de cambios en los ports."
 
 #. (itstool) path: sect3/title
-#: article.translate.xml:672
+#: article.translate.xml:675
 msgid "Maintainer responsibilities"
 msgstr "Responsabilidades del maintainer"
 
 #. (itstool) path: sect4/title
-#: article.translate.xml:675
+#: article.translate.xml:678
 msgid "Keep your ports up to date"
 msgstr "Mantenga sus ports actualizados"
 
 #. (itstool) path: sect4/para
-#: article.translate.xml:677
+#: article.translate.xml:680
 msgid ""
 "This section outlines the process to follow to keep your ports up to date."
 msgstr ""
@@ -1337,7 +1341,7 @@ msgstr ""
 "actualizados."
 
 #. (itstool) path: sect4/para
-#: article.translate.xml:680
+#: article.translate.xml:683
 msgid ""
 "This is an overview. More information about upgrading a port is available in "
 "the <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/porters-"
@@ -1348,12 +1352,12 @@ msgstr ""
 "porters-handbook\">Handbook del Porter</link>."
 
 #. (itstool) path: step/title
-#: article.translate.xml:687
+#: article.translate.xml:690
 msgid "Watch for updates"
 msgstr "Esté atento a las actualizaciones"
 
 #. (itstool) path: step/para
-#: article.translate.xml:689
+#: article.translate.xml:692
 msgid ""
 "Monitor the upstream vendor for new versions, updates and security fixes for "
 "the software. Announcement mailing lists or news web pages are useful for "
@@ -1370,7 +1374,7 @@ msgstr ""
 "enviándole una actualización."
 
 #. (itstool) path: step/para
-#: article.translate.xml:698
+#: article.translate.xml:701
 msgid ""
 "You may also receive automated email from the <literal>FreeBSD Ports Version "
 "Check</literal> informing you that a newer version of your port's distfile "
@@ -1384,12 +1388,12 @@ msgstr ""
 "el futuro)."
 
 #. (itstool) path: step/title
-#: article.translate.xml:707
+#: article.translate.xml:710
 msgid "Incorporate changes"
 msgstr "Incorporar cambios"
 
 #. (itstool) path: step/para
-#: article.translate.xml:709
+#: article.translate.xml:712
 msgid ""
 "When they become available, incorporate the changes into the port. You need "
 "to be able to generate a patch between the original port and your updated "
@@ -1400,17 +1404,17 @@ msgstr ""
 "actualizado."
 
 #. (itstool) path: step/title
-#: article.translate.xml:715
+#: article.translate.xml:718
 msgid "Review and test"
 msgstr "Revisar y probar"
 
 #. (itstool) path: step/para
-#: article.translate.xml:717
+#: article.translate.xml:720
 msgid "Thoroughly review and test your changes:"
 msgstr "Revise y pruebe a fondo sus cambios:"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:721
+#: article.translate.xml:724
 msgid ""
 "Build, install and test your port on as many platforms and architectures as "
 "you can. It is common for a port to work on one branch or platform and fail "
@@ -1421,7 +1425,7 @@ msgstr ""
 "otra."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:728
+#: article.translate.xml:731
 msgid ""
 "Make sure your port's dependencies are complete. The recommended way of "
 "doing this is by installing your own ports <application>tinderbox</"
@@ -1434,7 +1438,7 @@ msgstr ""
 "\"resources\">recursos</link>."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:736
+#: article.translate.xml:739
 msgid ""
 "Check that the packing list is up to date. This involves adding in any new "
 "files and directories and removing unused entries."
@@ -1444,7 +1448,7 @@ msgstr ""
 "utilizadas."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:742
+#: article.translate.xml:745
 msgid ""
 "Verify your port using <citerefentry vendor=\"ports"
 "\"><refentrytitle>portlint</refentrytitle><manvolnum>1</manvolnum></"
@@ -1458,7 +1462,7 @@ msgstr ""
 "<application>portlint</application>."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:749
+#: article.translate.xml:752
 msgid ""
 "Consider whether changes to your port might cause any other ports to break. "
 "If this is the case, coordinate the changes with the maintainers of those "
@@ -1481,12 +1485,12 @@ msgstr ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 
 #. (itstool) path: step/title
-#: article.translate.xml:765 article.translate.xml:915
+#: article.translate.xml:768 article.translate.xml:918
 msgid "Submit changes"
 msgstr "Enviar los cambios"
 
 #. (itstool) path: step/para
-#: article.translate.xml:767
+#: article.translate.xml:770
 msgid ""
 "Send your update by submitting a PR with an explanation of the changes and a "
 "patch containing the differences between the original port and the updated "
@@ -1502,7 +1506,7 @@ msgstr ""
 "correctamente."
 
 #. (itstool) path: note/para
-#: article.translate.xml:775
+#: article.translate.xml:778
 msgid ""
 "Please do not submit a <citerefentry><refentrytitle>shar</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> archive of the entire "
@@ -1524,12 +1528,12 @@ msgstr ""
 "información."
 
 #. (itstool) path: step/title
-#: article.translate.xml:785
+#: article.translate.xml:788
 msgid "Wait"
 msgstr "Esperar"
 
 #. (itstool) path: step/para
-#: article.translate.xml:787
+#: article.translate.xml:790
 msgid ""
 "At some stage a committer will deal with your PR. It may take minutes, or it "
 "may take weeks — so please be patient."
@@ -1538,12 +1542,12 @@ msgstr ""
 "entre unos minutos y varias semanas, así que tenga paciencia."
 
 #. (itstool) path: step/title
-#: article.translate.xml:793
+#: article.translate.xml:796
 msgid "Give feedback"
 msgstr "Proporcione feedback"
 
 #. (itstool) path: step/para
-#: article.translate.xml:795
+#: article.translate.xml:798
 msgid ""
 "If a committer finds a problem with your changes, they will most likely "
 "refer it back to you. A prompt response will help get your PR committed "
@@ -1556,12 +1560,12 @@ msgstr ""
 "acelerar la resolución de cualquier problema."
 
 #. (itstool) path: step/title
-#: article.translate.xml:803
+#: article.translate.xml:806
 msgid "And Finally"
 msgstr "Y para concluir"
 
 #. (itstool) path: step/para
-#: article.translate.xml:805
+#: article.translate.xml:808
 msgid ""
 "Your changes will be committed and your port will have been updated. The PR "
 "will then be closed by the committer. That's it!"
@@ -1570,12 +1574,12 @@ msgstr ""
 "se cerrará el PR. ¡Eso es todo!"
 
 #. (itstool) path: sect4/title
-#: article.translate.xml:813
+#: article.translate.xml:816
 msgid "Ensure your ports continue to build correctly"
 msgstr "Asegúrese de que sus ports continuan compilando correctamente."
 
 #. (itstool) path: sect4/para
-#: article.translate.xml:815
+#: article.translate.xml:818
 msgid ""
 "This section is about discovering and fixing problems that stop your ports "
 "from building correctly."
@@ -1584,7 +1588,7 @@ msgstr ""
 "sus ports se compilen correctamente."
 
 #. (itstool) path: sect4/para
-#: article.translate.xml:818
+#: article.translate.xml:821
 msgid ""
 "FreeBSD only guarantees that the Ports Collection works on the <literal>-"
 "STABLE</literal> branches. In theory, you should be able to get by with "
@@ -1597,7 +1601,7 @@ msgstr ""
 "cambien) pero si funciona también en las demás ramas es aun mejor."
 
 #. (itstool) path: sect4/para
-#: article.translate.xml:826
+#: article.translate.xml:829
 msgid ""
 "Since the majority of FreeBSD installations run on PC-compatible machines "
 "(what is termed the <literal>i386</literal> architecture), we expect you to "
@@ -1612,7 +1616,7 @@ msgstr ""
 "literal>. No dude en pedir ayuda si no dispone de una de estas máquinas."
 
 #. (itstool) path: note/para
-#: article.translate.xml:835
+#: article.translate.xml:838
 msgid ""
 "The usual failure modes for non-<literal>x86</literal> machines are that the "
 "original programmers assumed that, for instance, pointers are <literal>int</"
@@ -1630,7 +1634,7 @@ msgstr ""
 "posible que deba hacerlo usted mismo."
 
 #. (itstool) path: sect4/para
-#: article.translate.xml:846
+#: article.translate.xml:849
 msgid ""
 "These are the tasks you need to perform to ensure your port is able to be "
 "built:"
@@ -1639,12 +1643,12 @@ msgstr ""
 "compilarse:"
 
 #. (itstool) path: step/title
-#: article.translate.xml:851
+#: article.translate.xml:854
 msgid "Watch for build failures"
 msgstr "Esté atento a los fallos en la compilación"
 
 #. (itstool) path: step/para
-#: article.translate.xml:853
+#: article.translate.xml:856
 msgid ""
 "Check your mail for mail from <literal>pkg-fallout@FreeBSD.org</literal> and "
 "the <link xlink:href=\"http://portscout.FreeBSD.org\">distfiles scanner</"
@@ -1656,12 +1660,12 @@ msgstr ""
 "que no se está compilando está desactualizado."
 
 #. (itstool) path: step/title
-#: article.translate.xml:861 article.translate.xml:977
+#: article.translate.xml:864 article.translate.xml:980
 msgid "Collect information"
 msgstr "Recopile información"
 
 #. (itstool) path: step/para
-#: article.translate.xml:863
+#: article.translate.xml:866
 msgid ""
 "Once you are aware of a problem, collect information to help you fix it. "
 "Build errors reported by <literal>pkg-fallout</literal> are accompanied by "
@@ -1676,12 +1680,12 @@ msgstr ""
 "información que pueda ayudar a identificar el problema, como por ejemplo:"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:873
+#: article.translate.xml:876
 msgid "Build logs"
 msgstr "Logs de la compilación"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:877
+#: article.translate.xml:880
 msgid ""
 "The commands and options used to build the port (including options set in "
 "<filename>/etc/make.conf</filename>)"
@@ -1690,7 +1694,7 @@ msgstr ""
 "opciones establecidas en <filename>/etc/make.conf</filename>)"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:883
+#: article.translate.xml:886
 msgid ""
 "A list of packages installed on their system as shown by "
 "<citerefentry><refentrytitle>pkg-info</refentrytitle><manvolnum>8</"
@@ -1701,7 +1705,7 @@ msgstr ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:888
+#: article.translate.xml:891
 msgid ""
 "The version of FreeBSD they are running as shown by "
 "<citerefentry><refentrytitle>uname</refentrytitle><manvolnum>1</manvolnum></"
@@ -1712,24 +1716,24 @@ msgstr ""
 "citerefentry><command> -a</command>"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:893
+#: article.translate.xml:896
 msgid "When their ports collection was last updated"
 msgstr "Cuándo se actualizó por última vez su colección de ports"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:898
+#: article.translate.xml:901
 msgid "When their ports tree and <filename>INDEX</filename> was last updated"
 msgstr ""
 "Cuándo se actualizó por última vez su árbol de ports e <filename>INDEX</"
 "filename>"
 
 #. (itstool) path: step/title
-#: article.translate.xml:905
+#: article.translate.xml:908
 msgid "Investigate and find a solution"
 msgstr "Investigue y encuentre una solución"
 
 #. (itstool) path: step/para
-#: article.translate.xml:907
+#: article.translate.xml:910
 msgid ""
 "Unfortunately there is no straightforward process to follow to do this. "
 "Remember, though: if you are stuck, ask for help! The <link xlink:href="
@@ -1744,7 +1748,7 @@ msgstr ""
 "los desarrolladores originales del programa."
 
 #. (itstool) path: step/para
-#: article.translate.xml:917
+#: article.translate.xml:920
 msgid ""
 "Just as with updating a port, you should now incorporate changes, review and "
 "test, submit your changes in a PR, and provide feedback if required."
@@ -1754,12 +1758,12 @@ msgstr ""
 "feedback si es necesario."
 
 #. (itstool) path: step/title
-#: article.translate.xml:924
+#: article.translate.xml:927
 msgid "Send patches to upstream authors"
 msgstr "Enviar parches a los autores originales"
 
 #. (itstool) path: step/para
-#: article.translate.xml:926
+#: article.translate.xml:929
 msgid ""
 "In some cases, you will have to make patches to the port to make it run on "
 "FreeBSD. Some (but not all) upstream authors will accept such patches back "
@@ -1775,17 +1779,17 @@ msgstr ""
 "autores originales."
 
 #. (itstool) path: sect4/title
-#: article.translate.xml:940
+#: article.translate.xml:943
 msgid "Investigate bug reports and PRs related to your port"
 msgstr "Investigue los informes de errores y PRs relacionados con su port"
 
 #. (itstool) path: sect4/para
-#: article.translate.xml:943
+#: article.translate.xml:946
 msgid "This section is about discovering and fixing bugs."
 msgstr "Esta sección trata sobre encontrar y corregir errores."
 
 #. (itstool) path: sect4/para
-#: article.translate.xml:946
+#: article.translate.xml:949
 msgid ""
 "FreeBSD-specific bugs are generally caused by assumptions about the build "
 "and runtime environments that do not apply to FreeBSD. You are less likely "
@@ -1798,7 +1802,7 @@ msgstr ""
 "ser sutiles y difíciles de diagnosticar."
 
 #. (itstool) path: sect4/para
-#: article.translate.xml:952
+#: article.translate.xml:955
 msgid ""
 "These are the tasks you need to perform to ensure your port continues to "
 "work as intended:"
@@ -1807,12 +1811,12 @@ msgstr ""
 "funcionando según lo previsto:"
 
 #. (itstool) path: step/title
-#: article.translate.xml:957
+#: article.translate.xml:960
 msgid "Respond to bug reports"
 msgstr "Responda a los informes de errores"
 
 #. (itstool) path: step/para
-#: article.translate.xml:959
+#: article.translate.xml:962
 msgid ""
 "Bugs may be reported to you through email via the <link xlink:href=\"https://"
 "bugs.FreeBSD.org/search/\"> Problem Report database</link>. Bugs may also be "
@@ -1823,7 +1827,7 @@ msgstr ""
 "link>. Los usuarios también le pueden informar de los errores directamente."
 
 #. (itstool) path: step/para
-#: article.translate.xml:964
+#: article.translate.xml:967
 msgid ""
 "You should respond to PRs and other reports within 14 days, but please try "
 "not to take that long. Try to respond as soon as possible, even if it is "
@@ -1834,7 +1838,7 @@ msgstr ""
 "para decir que necesita más tiempo antes de empezar a trabajar en el PR."
 
 #. (itstool) path: step/para
-#: article.translate.xml:970
+#: article.translate.xml:973
 msgid ""
 "If you have not responded after 14 days, any committer may commit from a PR "
 "that you have not responded to via a <literal>maintainer-timeout</literal>."
@@ -1844,7 +1848,7 @@ msgstr ""
 "<literal>maintainer-timeout</literal>."
 
 #. (itstool) path: step/para
-#: article.translate.xml:979
+#: article.translate.xml:982
 msgid ""
 "If the person reporting the bug has not also provided a fix, you need to "
 "collect the information that will allow you to generate one."
@@ -1853,7 +1857,7 @@ msgstr ""
 "obligación recopilar la suficiente información para proporcionar una."
 
 #. (itstool) path: step/para
-#: article.translate.xml:983
+#: article.translate.xml:986
 msgid ""
 "If the bug is reproducible, you can collect most of the required information "
 "yourself. If not, ask the person who reported the bug to collect the "
@@ -1864,7 +1868,7 @@ msgstr ""
 "error que le proporcione la siguiente información:"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:990
+#: article.translate.xml:993
 msgid ""
 "A detailed description of their actions, expected program behavior and "
 "actual behavior"
@@ -1873,12 +1877,12 @@ msgstr ""
 "programa y comportamiento real."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:995
+#: article.translate.xml:998
 msgid "Copies of input data used to trigger the bug"
 msgstr "Una copia de los datos de entrada que producen el error"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:1000
+#: article.translate.xml:1003
 msgid ""
 "Information about their build and execution environment — for example, a "
 "list of installed packages and the output of "
@@ -1891,22 +1895,22 @@ msgstr ""
 "citerefentry>"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:1006
+#: article.translate.xml:1009
 msgid "Core dumps"
 msgstr "Core dumps"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:1010
+#: article.translate.xml:1013
 msgid "Stack traces"
 msgstr "Stack traces"
 
 #. (itstool) path: step/title
-#: article.translate.xml:1016
+#: article.translate.xml:1019
 msgid "Eliminate incorrect reports"
 msgstr "Eliminar informes incorrectos"
 
 #. (itstool) path: step/para
-#: article.translate.xml:1018
+#: article.translate.xml:1021
 msgid ""
 "Some bug reports may be incorrect. For example, the user may have simply "
 "misused the program; or their installed packages may be out of date and "
@@ -1924,12 +1928,12 @@ msgstr ""
 "de la próxima versión original."
 
 #. (itstool) path: step/title
-#: article.translate.xml:1029
+#: article.translate.xml:1032
 msgid "Find a solution"
 msgstr "Encontrar una solución"
 
 #. (itstool) path: step/para
-#: article.translate.xml:1031
+#: article.translate.xml:1034
 msgid ""
 "As with build errors, you will need to sort out a fix to the problem. Again, "
 "remember to ask if you are stuck!"
@@ -1939,12 +1943,12 @@ msgstr ""
 "puede (y debe) pedir ayuda."
 
 #. (itstool) path: step/title
-#: article.translate.xml:1037
+#: article.translate.xml:1040
 msgid "Submit or approve changes"
 msgstr "Enviar o aprobar cambios"
 
 #. (itstool) path: step/para
-#: article.translate.xml:1039
+#: article.translate.xml:1042
 msgid ""
 "Just as with updating a port, you should now incorporate changes, review and "
 "test, and submit your changes in a PR (or send a follow-up if a PR already "
@@ -1958,12 +1962,12 @@ msgstr ""
 "no los cambios."
 
 #. (itstool) path: sect4/title
-#: article.translate.xml:1050
+#: article.translate.xml:1053
 msgid "Providing support"
 msgstr "Proporcionar ayuda"
 
 #. (itstool) path: sect4/para
-#: article.translate.xml:1052
+#: article.translate.xml:1055
 msgid ""
 "Part of being a maintainer is providing support — not for the software in "
 "general — but for the port and any FreeBSD-specific quirks and problems. "
@@ -1977,7 +1981,7 @@ msgstr ""
 "específicos de FreeBSD."
 
 #. (itstool) path: sect4/para
-#: article.translate.xml:1059
+#: article.translate.xml:1062
 msgid ""
 "Occasionally you may have to invoke your skills in diplomacy, and kindly "
 "point users seeking general support to the appropriate resources. Less "
@@ -1995,7 +1999,7 @@ msgstr ""
 "(si ese es el caso, claro). Y sugiérale que pruebe FreeBSD."
 
 #. (itstool) path: sect4/para
-#: article.translate.xml:1068
+#: article.translate.xml:1071
 msgid ""
 "Sometimes users and developers will decide that you are a busy person whose "
 "time is valuable and do some of the work for you. For example, they might:"
@@ -2005,22 +2009,22 @@ msgstr ""
 "ejemplo, podrían:"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:1074
+#: article.translate.xml:1077
 msgid "submit a PR or send you patches to update your port,"
 msgstr "enviar un PR o enviarle parches para actualizar su port"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:1079
+#: article.translate.xml:1082
 msgid "investigate and perhaps provide a fix to a PR, or"
 msgstr "investigar y tal vez proporcionar una solución a un PR o"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:1084
+#: article.translate.xml:1087
 msgid "otherwise submit changes to your port."
 msgstr "incluso enviar cambios para su port."
 
 #. (itstool) path: sect4/para
-#: article.translate.xml:1088
+#: article.translate.xml:1091
 msgid ""
 "In these cases your main obligation is to respond in a timely manner. Again, "
 "the timeout for non-responsive maintainers is 14 days. After this period "
@@ -2036,7 +2040,7 @@ msgstr ""
 "con ellos lo antes posible."
 
 #. (itstool) path: sect4/para
-#: article.translate.xml:1096
+#: article.translate.xml:1099
 msgid ""
 "If you can make them feel that their contribution is appreciated (and it "
 "should be) you will have a better chance persuading them to do more things "
@@ -2046,12 +2050,12 @@ msgstr ""
 "debería ser) será posible que le ayuden en otras ocasiones más adelante :-)."
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:1105
+#: article.translate.xml:1108
 msgid "Finding and fixing a broken port"
 msgstr "Encontrar y arreglar un port roto"
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1107
+#: article.translate.xml:1110
 msgid ""
 "There are two really good places to find a port that needs some attention."
 msgstr ""
@@ -2059,7 +2063,7 @@ msgstr ""
 "atención."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1110
+#: article.translate.xml:1113
 msgid ""
 "You can use the <link xlink:href=\"https://bugs.freebsd.org/search\">web "
 "interface</link> to the Problem Report database to search through and view "
@@ -2076,7 +2080,7 @@ msgstr ""
 "bug</literal> es un buen lugar para empezar)."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1118
+#: article.translate.xml:1121
 msgid ""
 "The other place is the <link xlink:href=\"http://portsmon.FreeBSD.org/"
 "\">FreeBSD Ports Monitoring System</link>. In particular look for "
@@ -2093,7 +2097,7 @@ msgstr ""
 "saber si ya están trabajando en el problema."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1125
+#: article.translate.xml:1128
 msgid ""
 "Once you have found a bug or problem, collect information, investigate and "
 "fix! If there is an existing PR, follow up to that. Otherwise create a new "
@@ -2105,12 +2109,12 @@ msgstr ""
 "aceptados y se hará el commit."
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:1132
+#: article.translate.xml:1135
 msgid "When to call it quits"
 msgstr "Cuándo dejarlo"
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1134
+#: article.translate.xml:1137
 msgid ""
 "As your interests and commitments change, you may find that you no longer "
 "have time to continue some (or all) of your ports contributions. That is "
@@ -2129,7 +2133,7 @@ msgstr ""
 "abordadas en tiempo y forma."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1144
+#: article.translate.xml:1147
 msgid ""
 "In any case, the Ports Management Team (<literal>portmgr</literal>) reserves "
 "the right to reset your maintainership if you have not actively maintained "
@@ -2145,12 +2149,12 @@ msgstr ""
 "abordadas durante este periodo."
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:1153
+#: article.translate.xml:1156
 msgid "Resources for ports maintainers and contributors"
 msgstr "Recursos para maintainers y colaboradores de los ports"
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1155
+#: article.translate.xml:1158
 msgid ""
 "The <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/porters-"
 "handbook\">Porter's Handbook</link> is your hitchhiker's guide to the ports "
@@ -2161,7 +2165,7 @@ msgstr ""
 "sistema de ports. ¡Tengala a mano!"
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1159
+#: article.translate.xml:1162
 msgid ""
 "<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/problem-"
 "reports\">Writing FreeBSD Problem Reports</link> describes how to best "
@@ -2177,7 +2181,7 @@ msgstr ""
 "PRs."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1165
+#: article.translate.xml:1168
 msgid ""
 "The <link xlink:href=\"https://bugs.freebsd.org/bugzilla/query.cgi\"> "
 "Problem Report database</link>."
@@ -2186,7 +2190,7 @@ msgstr ""
 "datos de informes de problemas</link>."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1168
+#: article.translate.xml:1171
 msgid ""
 "The <link xlink:href=\"http://portsmon.FreeBSD.org/\">FreeBSD Ports "
 "Monitoring System</link> can show you cross-referenced information about "
@@ -2202,7 +2206,7 @@ msgstr ""
 "ports rotos y sin mantenimiento que deban ser reparados."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1175
+#: article.translate.xml:1178
 msgid ""
 "The <link xlink:href=\"http://portscout.FreeBSD.org\">FreeBSD Ports distfile "
 "scanner</link> can show you ports for which the distfiles are not fetchable. "
@@ -2216,7 +2220,7 @@ msgstr ""
 "<varname>MASTER_SITES</varname>."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1181
+#: article.translate.xml:1184
 msgid ""
 "<package>ports-mgmt/poudriere</package> is the most thorough way to test a "
 "port through the entire cycle of installation, packaging, and "
@@ -2230,7 +2234,7 @@ msgstr ""
 "link>."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1188
+#: article.translate.xml:1191
 msgid ""
 "<citerefentry vendor=\"ports\"><refentrytitle>portlint</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> is an application "
@@ -2253,7 +2257,7 @@ msgstr ""
 "pida consejo."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:1197
+#: article.translate.xml:1200
 msgid ""
 "The <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-"
 "ports\">FreeBSD ports mailing list</link> is for general ports-related "
@@ -2277,12 +2281,12 @@ msgstr ""
 "commit en el árbol del código fuente de los ports de la rama head/</link>."
 
 #. (itstool) path: sect1/title
-#: article.translate.xml:1206
+#: article.translate.xml:1209
 msgid "Getting Started in Other Areas"
 msgstr "Empezar en otras áreas"
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:1208
+#: article.translate.xml:1211
 msgid ""
 "Looking for something interesting to get started that is not mentioned "
 "elsewhere in this article? The FreeBSD Project has several Wiki pages "
@@ -2295,7 +2299,7 @@ msgstr ""
 "contribuir pueden obtener ideas sobre cómo empezar."
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:1213
+#: article.translate.xml:1216
 msgid ""
 "The <link xlink:href=\"https://wiki.freebsd.org/JuniorJobs\">Junior Jobs</"
 "link> page has a list of projects that might be of interest to people just "
@@ -2308,7 +2312,7 @@ msgstr ""
 "interesantes por primera vez."
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:1218
+#: article.translate.xml:1221
 msgid ""
 "The <link xlink:href=\"https://wiki.freebsd.org/IdeasPage\">Ideas Page</"
 "link> contains various \"nice to have\" or \"interesting\" things to work on "
@@ -2317,6 +2321,13 @@ msgstr ""
 "La <link xlink:href=\"https://wiki.freebsd.org/IdeasPage\">Ideas Page</link> "
 "contiene propuestas sobre cosas que \"sería bueno tener\" o son "
 "\"interesantes\" para trabajar en el proyecto."
+
+#~ msgid ""
+#~ "Build the source tree (or just part of it) with extra warnings enabled "
+#~ "and clean up the warnings."
+#~ msgstr ""
+#~ "Compile el árbol del código fuente (o solo una parte del mismo) con un "
+#~ "nivel de depuración adicional habilitado y corrija los warnings."
 
 #~ msgid ""
 #~ "The FreeBSD Foundation is now able to accept donations through the web "
