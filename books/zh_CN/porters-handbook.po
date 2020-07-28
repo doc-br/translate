@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:05-0300\n"
-"PO-Revision-Date: 2020-07-16 20:14+0000\n"
+"PO-Revision-Date: 2020-07-28 19:06+0000\n"
 "Last-Translator: Hongyou Bai <bhy1924@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate-dev.freebsd.org/"
 "projects/freebsd-doc/boooks_porters-handbook/zh_CN/>\n"
@@ -150,6 +150,8 @@ msgid ""
 "designations have been followed by the <quote>™</quote> or the <quote>®</"
 "quote> symbol."
 msgstr ""
+"制造商和销售商为区分其产品而使用的许多名称都被认作商标。如果这些标识出现在本文档中, 并且 FreeBSD 项目知道商标声明, 则在这些名称之后增加 "
+"<quote>™</quote> 或 <quote>®</quote> 标记。"
 
 #. (itstool) path: chapter/title
 #. (itstool) path: sect2/title
@@ -157,7 +159,7 @@ msgstr ""
 #: book.translate.xml:146 book.translate.xml:11340 book.translate.xml:15213
 #: book.translate.xml:15703 book.translate.xml:20262
 msgid "Introduction"
-msgstr ""
+msgstr "介绍"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:148
@@ -167,6 +169,8 @@ msgid ""
 "is primarily a volunteer effort. It is important to keep this in mind when "
 "reading this document."
 msgstr ""
+"几乎每个人都是通过 FreeBSD Ports Collection 在 FreeBSD 上面装应用程序 (“ports”)的。 "
+"就像FreeBSD的其它部分一样， 它主要来自于志愿者的努力。 所以在阅读这份文档的时候请务必记住这些。"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:153
@@ -174,16 +178,18 @@ msgid ""
 "In FreeBSD, anyone may submit a new port, or volunteer to maintain an "
 "existing unmaintained port. No special commit privilege is needed."
 msgstr ""
+"在 FreeBSD 的世界里， 任何人都能提交新的 port， 或志愿地维护一个已有的 port， 如果那个 port 没人维护的话 ── "
+"不需要任何特殊的权限来做这件事情。"
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:168
 msgid "Making a New Port"
-msgstr ""
+msgstr "制作新的 port"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:170
 msgid "Interested in making a new port, or upgrading existing ports? Great!"
-msgstr ""
+msgstr "那么，您有兴趣创建自己的 port 或升级现有的 port？太好了！"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:173
@@ -192,6 +198,8 @@ msgid ""
 "upgrade an existing port, read this, then read <xref linkend=\"port-upgrading"
 "\"/>."
 msgstr ""
+"下面的内容将会提供一些创建FreeBSD port的指导。 如果想升级一个现有的 port， 那么您应该在看完这些内容并阅读 <xref linkend"
+"=\"port-upgrading\"/>。"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:177
@@ -203,6 +211,11 @@ msgid ""
 "questions can be sent to the <link xlink:href=\"http://lists.FreeBSD.org/"
 "mailman/listinfo/freebsd-ports\">FreeBSD ports mailing list</link>."
 msgstr ""
+"因为这份文档不是十分详细， 您还应该再参考一下 <filename>/usr/ports/Mk/bsd.port.mk</filename>， 所有 "
+"port 的 <filename>Makefile</filename> 文件都会包含它。 即使不是每天都去摆弄 "
+"<filename>Makefile</filename>， 您也会从那个文件里面获得很多知识， 里面的注释非常详细。 "
+"还有要补充一下，如果您有其它的问题， 可以给<link xlink:href=\"http://lists.FreeBSD.org/mailman/"
+"listinfo/freebsd-ports\">FreeBSD ports 邮件列表</link> 这个 mailing list 发信。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:185
@@ -219,6 +232,14 @@ msgid ""
 "correct value by typing <command>:set tabstop=4</command> once the file has "
 "been loaded."
 msgstr ""
+"在这份文档里提到的大部分的变量 (<varname><replaceable>VAR</replaceable></varname>) 是不能修改的。 "
+"大多 (但不是全部) 都在 <filename>/usr/ports/Mk/bsd.port.mk</filename> 的开始部分进行了介绍； "
+"其它一些也应该可以在那里找到。 注意这些文件使用了非标准的制表符： <application>Emacs</application> 和 "
+"<application>Vim</application> 应该能在打开文件的时候自动识别它， 而 "
+"<citerefentry><refentrytitle>vi</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> 和 "
+"<citerefentry><refentrytitle>ex</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> 则需要在打开文件的时候通过 <command>:set tabstop=4</command> 来修正默认的设置。"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:199
@@ -227,11 +248,13 @@ msgid ""
 "href=\"https://wiki.freebsd.org/WantedPorts\">list of requested ports</link> "
 "and see if you can work on one (or more)."
 msgstr ""
+"想练练手吗？ 请参阅我们的 <link xlink:href=\"https://wiki.freebsd.org/WantedPorts\""
+">希望移植的软件列表</link> 来看看您是否有兴趣完成其中的任务。"
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:214
 msgid "Quick Porting"
-msgstr ""
+msgstr "快速 port"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:216
