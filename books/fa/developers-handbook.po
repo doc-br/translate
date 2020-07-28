@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-07-28 03:00+0000\n"
+"PO-Revision-Date: 2020-07-28 19:05+0000\n"
 "Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -1073,8 +1073,8 @@ msgid ""
 "complex programs."
 msgstr ""
 "Ruby یک زبان تفسیری و شی‌گرای خالص است. این زبان به دلیل سهولت و قابل فهم "
-"بودن نحو، انعطاف‌پذیری به‌هنگام نوشتن کد، و قابلیت در توسعهٔ راحت و نگهداری "
-"برنامه‌های بزرگ و پیچیده، بسیار مشهور شده است."
+"بودن قواعد نحوی، انعطاف‌پذیری به‌هنگام نوشتن کد، و قابلیت در توسعهٔ راحت و "
+"نگهداری برنامه‌های بزرگ و پیچیده، بسیار مشهور شده است."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:662
@@ -1117,7 +1117,7 @@ msgstr "همگردان‌ها"
 #. (itstool) path: footnote/para
 #: book.translate.xml:695
 msgid "If you run it in the shell, you may get a core dump."
-msgstr ""
+msgstr "اگر در پوسته اجرا کنید ممکن است که یک core dump بگیرید."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:689
@@ -1129,6 +1129,11 @@ msgid ""
 "shell command prompt or in a debugger to see if it works properly.<_:"
 "footnote-1/>"
 msgstr ""
+"همگردان‌ها نسبتاً متفاوت‌اند. اول از همه، شما کد را در یک فایل (یا چند فایل) "
+"توسط یک ویرایشگر می‌نویسید. سپس همگردان را اجرا می‌کنید تا ببینید برنامه شما "
+"را تأیید می‌کنند یا خیر. اگر همگردانی نکرد، دوباره به ویرایشگر خود برگردید؛ "
+"اگر همگردانی کرد و به شما یک برنامه داد، می‌توانید آن را یا در پوسته و یا در "
+"یک اشکال‌یاب اجرا کنید تا ببینید که درست کار می‌کند یا خیر.<_:footnote-1/>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:698
@@ -1144,6 +1149,15 @@ msgid ""
 "just give them a copy of the executable, assuming they have the same "
 "operating system as you."
 msgstr ""
+"بدیهی است که این به روشنی استفاده از یک مفسر نیست. با این حال به شما اجازهٔ "
+"انجام بسیاری از کارها را می‌دهد که با یک مفسر یا بسیار دشوار است و یا حتی "
+"غیر ممکن، مثل نوشتن کدی که از نزدیک با سیستم‌عامل تعامل داشته باشد - یا حتی "
+"نوشتن سیستم‌عامل خودتان! همچنین اگر شما نیاز به نوشتن کدی پربازده داشته "
+"باشید مفید است، چرا که همگردان در زمان مورد نیاز کد را بهینه می‌سازد، چیزی "
+"که در یک مفسر قابل پذیرش نخواهد بود. علاوه بر این، توزیع برنامهٔ نوشده شده "
+"برای یک همگردان معمولاً ساده‌تر از توزیع برنامهٔ نوشته شده برای یک مفسر است -"
+" تنها کافیست شما با این فرض که مخاطب شما سیستم مشابه شما را دارد، نسخه‌ای "
+"قابل اجرا به ایشان بدهید."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:711
@@ -1156,6 +1170,13 @@ msgid ""
 "application> for this purpose. Using <application>Emacs</application> as an "
 "IDE is discussed in <xref linkend=\"emacs\"/>."
 msgstr ""
+"از آنجا که چرخهٔ ویرایش-همگردانی-اجرا-اشکال‌یابی به‌هنگام استفاده از چند "
+"ابزار چرخه‌ای خسته کننده است، بسیاری از همگردان سازان تجاری، محیط‌های توسعهٔ "
+"یک‌پارچه (به‌اختصار <acronym>IDE</acronym>) را ارائه دادند. FreeBSD شامل IDE "
+"در ریشهٔ سامانه نیست، اما <package>devel/kdevelop</package> در مجموعه پورت‌"
+"ها موجود است و بسیاری هم از <application>Emacs</application> برای این منظور "
+"استفاده می‌کنند. استفاده از <application>Emacs</application> به‌منظور IDE در "
+"<xref linkend=\"emacs\"/> مطرح شده است."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:725
@@ -1173,6 +1194,12 @@ msgid ""
 "usually well covered in the documentation and on-line help for the "
 "interpreter."
 msgstr ""
+"این بخش همگردان‌های <application>gcc</application> و <application>clang</"
+"application> را برای C و C++ پوشش می‌دهد، چرا که همراه با ریشهٔ سامانه "
+"FreeBSD ارائه می‌شوند. از FreeBSD 10.X دستور <command>clang</command> به‌"
+"عنوان <command>cc</command> نصب شده است. جزئیات تولید یک برنامه بین مفسرهای "
+"مختلف بسیار متفاوت است، و معمولاً در مستندات و کمک‌های برخط آن مفسر به خوبی "
+"تشریح شده است."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:736
@@ -1181,6 +1208,9 @@ msgid ""
 "something that will (hopefully!) run on FreeBSD. This usually involves "
 "several steps, each of which is done by a separate program."
 msgstr ""
+"هنگامی که شاهکار خود را نوشتید، مرحله بعد تبدیل آن به چیزی است که "
+"(خوش‌بختانه!) بر روی FreeBSD اجرا خواهد شد. این معمولاً شامل چند مرحله است "
+"که هر یک توسط برنامه‌ای مجزا انجام می‌شود."
 
 #. (itstool) path: step/para
 #: book.translate.xml:743
@@ -1188,6 +1218,8 @@ msgid ""
 "Pre-process your source code to remove comments and do other tricks like "
 "expanding macros in C."
 msgstr ""
+"پیش‌پردازش کد شما برای حذف توضیحات و اعمال دیگر ترفندها برای گسترش ماکروهای "
+"موجود در C."
 
 #. (itstool) path: step/para
 #: book.translate.xml:748
@@ -1195,6 +1227,8 @@ msgid ""
 "Check the syntax of your code to see if you have obeyed the rules of the "
 "language. If you have not, it will complain!"
 msgstr ""
+"بررسی قواعد نحوی کد شما جهت حصول اطمینان از اینکه قوانین زبان را رعایت کرده "
+"باشید. اگر نکرده باشید، ایراد خواهد گرفت!"
 
 #. (itstool) path: step/para
 #: book.translate.xml:754
@@ -1202,6 +1236,8 @@ msgid ""
 "Convert the source code into assembly language—this is very close to machine "
 "code, but still understandable by humans. Allegedly."
 msgstr ""
+"تبدیل کد منبع شما به زبان همگذاری (assembly) - بسیار نزدیک به کد ماشین اما "
+"همچنان قابل فهم توسط انسان‌هاست."
 
 #. (itstool) path: step/para
 #: book.translate.xml:760
@@ -1209,6 +1245,8 @@ msgid ""
 "Convert the assembly language into machine code—yep, we are talking bits and "
 "bytes, ones and zeros here."
 msgstr ""
+"تبدیل زبان همگذاری به کد ماشین - بلی، اینجا در مورد بیت و بایت‌ها، و صفر و "
+"یک‌ها حرف می‌زنیم."
 
 #. (itstool) path: step/para
 #: book.translate.xml:766
@@ -1217,6 +1255,8 @@ msgid ""
 "consistent way. For example, if you have called a non-existent function, it "
 "will complain."
 msgstr ""
+"بررسی استفادهٔ سازگار شما از توابع و متغیرهای سراسری. به‌طور مثال، اگر تابع "
+"ناموجودی را صدا بزنید، ایراد خواهد گرفت."
 
 #. (itstool) path: step/para
 #: book.translate.xml:773
@@ -1224,6 +1264,8 @@ msgid ""
 "If you are trying to produce an executable from several source code files, "
 "work out how to fit them all together."
 msgstr ""
+"اگر تلاش به ارائه یک برنامه اجرایی از چندین پروندهٔ کد منبع داشته باشید، حل "
+"یکپارچه‌سازی و کنار هم قرار دادن آن‌ها."
 
 #. (itstool) path: step/para
 #: book.translate.xml:779
@@ -1231,11 +1273,13 @@ msgid ""
 "Work out how to produce something that the system's run-time loader will be "
 "able to load into memory and run."
 msgstr ""
+"حل مسیر تولید چیزی که بارکنِ زمان-اجرای سامانه بتواند آن را در حافظه بار و "
+"اجرا کند."
 
 #. (itstool) path: step/para
 #: book.translate.xml:785
 msgid "Finally, write the executable on the filesystem."
-msgstr ""
+msgstr "و سرانجام، نوشتن برنامه اجرایی بر روی سامانهٔ پرونده."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:789
@@ -1245,6 +1289,10 @@ msgid ""
 "Sometimes step 1 is referred to as <firstterm>pre-processing</firstterm> and "
 "steps 3-4 as <firstterm>assembling</firstterm>."
 msgstr ""
+"واژه <firstterm>همگردانی</firstterm> بیشتر برای اشاره به مراحل ۱ تا ۴ "
+"استفاده می‌شود - مراحل دیگر <firstterm>پیونددهی</firstterm> نامیده می‌شوند. "
+"گاهی اوقات مرحله ۱ به‌عنوان <firstterm>پیش‌پردازش</firstterm> و مراحل ۳-۴ به‌"
+"عنوان <firstterm>همگذاری</firstterm> نامیده می‌شوند."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:795
@@ -1253,12 +1301,15 @@ msgid ""
 "command> is a front end that manages calling all these programs with the "
 "right arguments for you; simply typing"
 msgstr ""
+"خوشبختانه، بیشتر این جزئیات از شما پنهان‌اند، چرا که دستور <command>cc</"
+"command> یک پایانهٔ جلویی است و صدا کردن تمام این برنامه‌ها با براهین درست "
+"را مدیریت می‌کند؛ به‌سادگی نوشتن"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:800
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>cc foobar.c</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>cc foobar.c</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:802
@@ -1266,12 +1317,15 @@ msgid ""
 "will cause <filename>foobar.c</filename> to be compiled by all the steps "
 "above. If you have more than one file to compile, just do something like"
 msgstr ""
+"سبب می‌شود که <filename>foobar.c</filename> با تمام مراحل فوق همگردانی شود. "
+"اگر بیشتر از یک پرونده برای همگردانی دارید، تنها کافیست چیزی بدین شکل انجام "
+"دهید"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:806
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>cc foo.c bar.c</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>cc foo.c bar.c</userinput>"
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:812
@@ -1279,6 +1333,8 @@ msgid ""
 "In case you did not know, a binary sort is an efficient way of sorting "
 "things into order and a bubble sort is not."
 msgstr ""
+"در صورتی که نمی‌دانستید، مرتب‌سازی دودویی یک روش پربازده برای مرتب‌سازی "
+"موارد در ترتیب مشخص است و مرتب‌سازی حبابی چنین نیست."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:808
@@ -1288,6 +1344,10 @@ msgid ""
 "into an infinite loop, or using a bubble sort when you meant to use a binary "
 "sort.<_:footnote-1/>"
 msgstr ""
+"ملاحظه بفرمایید که بررسی قواعدی نحوی فقط همین است - بررسی قواعد نحوی. خطاهای "
+"منطقی محتمل شما را، مانند قرار دادن برنامه در یک حلقه بی‌نهایت، یا استفاده "
+"از مرتب‌سازی حبابی زمانی که شما منظور شما مرتب‌سازی دودویی بوده، بررسی "
+"نمی‌کند.<_:footnote-1/>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:816
