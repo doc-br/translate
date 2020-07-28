@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-07-28 19:05+0000\n"
+"PO-Revision-Date: 2020-07-28 21:44+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -1357,16 +1357,19 @@ msgid ""
 "in the manual page. Here are a few of the most important ones, with examples "
 "of how to use them."
 msgstr ""
+"گزینه‌های بسیار فراوانی برای <command>cc</command> در اختیار است، که تمامشان "
+"در صفحهٔ راهنما قابل مشاهده هستند. در اینجا می‌توانید تعدادی از مهم‌ترین "
+"آنها را به‌همراه مثال‌هایی در نحوهٔ استفاده از آنها مشاهده نمایید."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:823
 msgid "<option>-o <replaceable>filename</replaceable></option>"
-msgstr ""
+msgstr "<option>-o <replaceable>filename</replaceable></option>"
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:830
 msgid "The reasons for this are buried in the mists of history."
-msgstr ""
+msgstr "دلایل این امر در هاله‌ای از ابهامات تاریخی مدفون شده است."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:828
@@ -1375,6 +1378,9 @@ msgid ""
 "command> will produce an executable called <filename>a.out</filename>.<_:"
 "footnote-1/>"
 msgstr ""
+"نام خروجی پرونده. اگر شما این گزینه را استفاده نکنید، <command>cc</command> "
+"یک برنامهٔ اجراپذیر به نام <filename>a.out</filename>.<_:footnote-1/> ایجاد "
+"خواهد کرد."
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:835
@@ -1383,25 +1389,33 @@ msgid ""
 "<prompt>%</prompt> <userinput>cc foobar.c</userinput>               <lineannotation>executable is a.out</lineannotation>\n"
 "<prompt>%</prompt> <userinput>cc -o foobar foobar.c</userinput>     <lineannotation>executable is foobar</lineannotation>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cc foobar.c</userinput>               "
+"<lineannotation>executable is a.out</lineannotation>\n"
+"<prompt>%</prompt> <userinput>cc -o foobar foobar.c</userinput>     "
+"<lineannotation>executable is foobar</lineannotation>"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:842
 msgid "<option>-c</option>"
-msgstr ""
+msgstr "<option>-c</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:845
+#, fuzzy
 msgid ""
 "Just compile the file, do not link it. Useful for toy programs where you "
 "just want to check the syntax, or if you are using a <filename>Makefile</"
 "filename>."
 msgstr ""
+"تنها پرونده را ترجمه کن، آن را پیوند نده. برای برنامه‌های تمرینی که در آن "
+"تنها می‌خواهید نحو را مورد بررسی قرار دهید، یا هنگامی‌که دارید از یک "
+"<filename>Makefile</filename> استفاده می‌کنید مناسب است."
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:850
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>cc -c foobar.c</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>cc -c foobar.c</userinput>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:853
