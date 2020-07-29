@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-07-29 15:58+0000\n"
+"PO-Revision-Date: 2020-07-29 16:45+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -1494,17 +1494,22 @@ msgid ""
 "You can add a number after the <option>-O</option> to specify a higher level "
 "of optimization, but this often exposes bugs in the compiler's optimizer."
 msgstr ""
+"یک نسخهٔ بهینه از برنامه بسازید. همگردان چندین ترفند هوشمند پیاده می‌کند تا "
+"سعی کند یک برنامهٔ اجراپذیر با سرعت اجرای بالاتر از حد معمول تولید کند. شما "
+"می‌توانید یک عدد بعد از <option>-O</option> اضافه کنید تا سطح بالاتری از "
+"بهینه‌سازی را تعیین کنید، اما این اغلب بهینه‌سازِ همگردان را در معرض اشکال "
+"قرار می‌دهد."
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:907
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>cc -O -o foobar foobar.c</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>cc -O -o foobar foobar.c</userinput>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:910
 msgid "This will produce an optimized version of <filename>foobar</filename>."
-msgstr ""
+msgstr "یک نسخهٔ بهینه‌شده از <filename>foobar</filename> ایجاد می‌کند."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:916
