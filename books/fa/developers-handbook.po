@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
 "PO-Revision-Date: 2020-07-29 15:58+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -541,7 +541,7 @@ msgstr "<filename>release/</filename>"
 #. (itstool) path: row/entry
 #: book.translate.xml:333
 msgid "Files required to produce a FreeBSD release"
-msgstr "پرونده‌های مورد نیاز برای تولید یک نسخه FreeBSD قابل انتشار"
+msgstr "پرونده‌های مورد نیاز برای تولید یک نسخهٔ FreeBSD قابل انتشار"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:338
@@ -1434,6 +1434,7 @@ msgstr "<option>-g</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:865
+#, fuzzy
 msgid ""
 "Create a debug version of the executable. This makes the compiler put "
 "information into the executable about which line of which source file "
@@ -1445,12 +1446,22 @@ msgid ""
 "<quote>release version</quote> without <option>-g</option> when you are "
 "satisfied it works properly."
 msgstr ""
+"نسخه‌ای اشکال‌زدا از برنامهٔ اجراپذیر ایجاد کنید. این گزینه سبب می‌شود "
+"همگردان اطلاعاتی را در مورد اینکه کدام خط از کدام پروندهٔ منبع با کدام "
+"فراخوان تابع تطابق دارد در برنامهٔ اجراپذیر قرار دهد. یک اشکال‌زدا می‌تواند "
+"این اطلاعات را برای نشان‌دادن کد منبع در هنگام ورود شما به برنامه استفاده "
+"کند، که این امر می‌تواند <emphasis>بسیار</emphasis> مفید باشد؛ ضعف آن در این "
+"است که این اطلاعات اضافی به میزان قابل توجهی باعث بزرگتر شدن برنامه می‌شوند. "
+"به‌طور معمول، شما زمانی از گزینهٔ <option>-g</option> برای همگردانی استفاده "
+"می‌کنید که در حال توسعهٔ یک برنامه هستید و از <option>-g</option> برای "
+"همگردانیِ <quote>نسخهٔ انتشار</quote> استفاده نمی‌کنید هنگامی‌که از کارکرد "
+"صحیح آن مطمئن هستید."
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:879
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>cc -g foobar.c</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>cc -g foobar.c</userinput>"
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:886
@@ -1460,16 +1471,20 @@ msgid ""
 "Producing a debug version called <filename>foobar</filename> is left as an "
 "exercise for the reader!"
 msgstr ""
+"توجه، ما از نشان <option>-o</option> برای تعیین نام برنامه استفاده نکردیم، "
+"در نتیجه برنامه‌ای اجراپذیر به نام <filename>a.out</filename> دریافت خواهیم "
+"کرد. ساخت نسخهٔ اشکال‌زدا تحت عنوان <filename>foobar</filename> به‌عنوان "
+"تمرین برای خواننده باقی مانده است!"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:882
 msgid "This will produce a debug version of the program. <_:footnote-1/>"
-msgstr ""
+msgstr "نسخه‌ای اشکال‌زدا از برنامه ایجاد می‌کند. <_:footnote-1/>"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:896
 msgid "<option>-O</option>"
-msgstr ""
+msgstr "<option>-O</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:899
