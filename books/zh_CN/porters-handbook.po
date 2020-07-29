@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:05-0300\n"
-"PO-Revision-Date: 2020-07-28 19:06+0000\n"
+"PO-Revision-Date: 2020-07-29 02:50+0000\n"
 "Last-Translator: Hongyou Bai <bhy1924@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate-dev.freebsd.org/"
 "projects/freebsd-doc/boooks_porters-handbook/zh_CN/>\n"
@@ -263,6 +263,8 @@ msgid ""
 "where this quick method is not adequate, the full <quote>Slow Porting</"
 "quote> process is described in <xref linkend=\"slow-porting\"/>."
 msgstr ""
+"本章介绍如何快速创建新的 port。对于部分应用来说制作 port 还需要其他步骤。完整的 port 步骤（<quote>Slow "
+"Porting</quote>）将在<xref linkend=\"slow-porting\"/>介绍。"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:221
@@ -270,6 +272,8 @@ msgid ""
 "First, get the original tarball and put it into <varname>DISTDIR</varname>, "
 "which defaults to <filename>/usr/ports/distfiles</filename>."
 msgstr ""
+"首先获取源码的打包文件，并将其放到 <varname>DISTDIR</varname>，默认路径是 <filename>/usr/ports/"
+"distfiles</filename>。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:226
@@ -279,6 +283,7 @@ msgid ""
 "FreeBSD system. If anything had to be changed, refer to <xref linkend=\"slow-"
 "porting\"/>."
 msgstr ""
+"以下步骤假定软件可以在 FreeBSD 下正常编译运行。如果出现其他状况，请参阅 <xref linkend=\"slow-porting\"/>。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:233
