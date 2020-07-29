@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-07-29 17:37+0000\n"
+"PO-Revision-Date: 2020-07-29 20:44+0000\n"
 "Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -1424,8 +1424,8 @@ msgid ""
 "object files into an executable."
 msgstr ""
 "یک <firstterm>پروندهٔ هدف</firstterm> (غیرقابل اجرا) به نام <filename>foobar."
-"o</filename> ایجاد می‌کند. این پرونده می‌تواند به‌همراه پرونده‌های هدف دیگر "
-"به یک برنامهٔ اجراپذیر پیوند داده شود."
+"o</filename> ایجاد کنید. این پرونده می‌تواند به‌همراه پرونده‌های هدف دیگر به "
+"یک برنامهٔ اجراپذیر پیوند داده شود."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:862
@@ -1448,13 +1448,13 @@ msgstr ""
 "نسخه‌ای اشکال‌زدا از برنامهٔ اجراپذیر ایجاد کنید. این گزینه سبب می‌شود "
 "همگردان اطلاعاتی را در مورد اینکه کدام خط از کدام پروندهٔ منبع با کدام "
 "فراخوان تابع تطابق دارد در برنامهٔ اجراپذیر قرار دهد. یک اشکال‌زدا می‌تواند "
-"این اطلاعات را برای نشان‌دادن کد منبع در هنگام ورود شما به برنامه استفاده "
-"کند، که این امر می‌تواند <emphasis>بسیار</emphasis> مفید باشد؛ ضعف آن در این "
-"است که این اطلاعات اضافی به میزان قابل توجهی باعث بزرگتر شدن برنامه می‌شوند. "
-"به‌طور معمول، شما زمانی از گزینهٔ <option/>-g<option> برای همگردانی استفاده "
-"می‌کنید که در حال توسعهٔ یک برنامه هستید و از <option/>-g<option> برای "
-"همگردانیِ <quote>نسخهٔ انتشار</quote> استفاده نمی‌کنید هنگامی‌که از کارکرد "
-"صحیح آن مطمئن هستید."
+"از اطلاعات برای نشان‌دادن کد منبع در هنگام ورود شما به برنامه استفاده کند، "
+"که این امر می‌تواند <emphasis>بسیار</emphasis> مفید باشد؛ ضعف آن در این است "
+"که این اطلاعات اضافی به میزان قابل توجهی باعث بزرگتر شدن برنامه می‌شوند. به‌"
+"طور معمول، شما زمانی از گزینهٔ <option>-g</option> برای همگردانی استفاده می‌"
+"کنید که در حال توسعهٔ یک برنامه هستید و برای همگردانیِ <quote>نسخهٔ انتشار</"
+"quote> هنگامی‌که از کارکرد صحیح آن مطمئن هستید دیگر از <option>-g</option> "
+"استفاده نمی‌کنید."
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:879
@@ -1518,11 +1518,15 @@ msgid ""
 "as the <acronym>ANSI</acronym> standard, though strictly speaking it is an "
 "<acronym>ISO</acronym> standard."
 msgstr ""
+"سه نشان پیش‌رو دستور <command>cc</command> را مجبور می‌کنند تا بررسی کند که "
+"کد شما مطابق با استاندارد بین‌المللی مربوطه همگردانی می‌شود، که معمولاً به "
+"عنوان استاندارد <acronym>ANSI</acronym> یاد می‌شوند، اگرچه به‌طور دقیق یک "
+"استاندارد <acronym>ISO</acronym> است."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:924
 msgid "<option>-Wall</option>"
-msgstr ""
+msgstr "<option>-Wall</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:927
@@ -1535,7 +1539,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:935
 msgid "<option>-ansi</option>"
-msgstr ""
+msgstr "<option>-ansi</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:938
@@ -1544,11 +1548,14 @@ msgid ""
 "provided by <command>cc</command>. Despite the name, it does not guarantee "
 "strictly that your code will comply to the standard."
 msgstr ""
+"اکثر و نه اما تمام امکانات غیر <acronym>ANSI</acronym> C ارائه شده توسط "
+"<command>cc</command> را خاموش کنید. فارق از نامش، به‌طور کامل تضمین نمی‌کند "
+"که کد شما مطابق استاندارد باشد."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:947
 msgid "<option>-pedantic</option>"
-msgstr ""
+msgstr "<option>-pedantic</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:950
@@ -1556,6 +1563,8 @@ msgid ""
 "Turn off <emphasis>all</emphasis> <command>cc</command>'s non-<acronym>ANSI</"
 "acronym> C features."
 msgstr ""
+"<emphasis>تمام</emphasis> امکانات دستور <command>cc</command> که پیرو "
+"<acronym>ANSI</acronym> نیستند را خاموش کنید."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:957
@@ -1566,6 +1575,12 @@ msgid ""
 "standard is to allow people to write code that will work with any compiler "
 "on any system. This is known as <firstterm>portable code</firstterm>."
 msgstr ""
+"بدون این نشان‌ها، دستور <command>cc</command> به شما اجازه می‌دهد تا از بعضی "
+"افزونه‌های غیر استانداردش هم استفاده کنید. برخی از آنها بسیار مفید هستند، "
+"اما با دیگر همگردان‌ها کار نخواهند کرد - در حقیقت، یکی از اهداف اساسی "
+"استاندارد این است که به افراد امکان نوشتن کدی را دهد که با هر همگردانی بر "
+"روی هر سامانه‌ای کار کند. این کد به عنوان <firstterm>کد انتقال‌پذیر</"
+"firstterm> شناخته می‌شود."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:965
