@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-07-29 08:59+0000\n"
+"PO-Revision-Date: 2020-07-29 11:41+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -114,7 +114,7 @@ msgid ""
 "THE POSSIBILITY OF SUCH DAMAGE."
 msgstr ""
 "این دبیزش توسط پروژه‌ مستندات FreeBSD \"همان‌طور که هست\" ارائه شده و هرگونه "
-"ضمانت‌نامه‌ اظهار شده یا ضمنی، شامل، اما نه محدود به، ضمانت‌نامه‌ی ضمنیِ "
+"ضمانت‌نامه‌ اظهار شده یا ضمنی، شامل، اما نه محدود به، ضمانت‌نامهٔ ضمنیِ "
 "بازاریابی و سازگاری به‌منظور هدفی مشخص رد می‌شوند. پروژه مستندات FreeBSD در "
 "هیچ شرایطی مسئولیت هرگونه خسارت مستقیم، غیرمستقیم، جنبی، ویژه، تنبیهی، یا "
 "تبعی (شامل، اما نه محدود به، تهیهٔ کالا‌ها یا خدمات جانشین؛ فقدان کاربرد، "
@@ -1401,14 +1401,13 @@ msgstr "<option>-c</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:845
-#, fuzzy
 msgid ""
 "Just compile the file, do not link it. Useful for toy programs where you "
 "just want to check the syntax, or if you are using a <filename>Makefile</"
 "filename>."
 msgstr ""
-"تنها پرونده را ترجمه کن، آن را پیوند نده. برای برنامه‌های تمرینی که در آن "
-"تنها می‌خواهید نحو را مورد بررسی قرار دهید، یا هنگامی‌که دارید از یک "
+"تنها پرونده را ترجمه کنید، آن را پیوند ندهید. برای برنامه‌های تمرینی که در "
+"آن تنها می‌خواهید نحو را مورد بررسی قرار دهید، یا هنگامی‌که دارید از یک "
 "<filename>Makefile</filename> استفاده می‌کنید مناسب است."
 
 #. (itstool) path: informalexample/screen
@@ -1424,6 +1423,9 @@ msgid ""
 "called <filename>foobar.o</filename>. This can be linked together with other "
 "object files into an executable."
 msgstr ""
+"این گزینه، یک <firstterm>object file</firstterm> (غیرقابل اجرا) به نام "
+"<filename>foobar.o</filename> را ایجاد می‌کند. این پرونده می‌تواند به‌همراه "
+"پرونده‌های هدف دیگر به یک برنامهٔ اجراپذیر پیوند داده شود."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:862
