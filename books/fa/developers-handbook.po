@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
 "PO-Revision-Date: 2020-07-30 14:55+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -1151,15 +1151,15 @@ msgid ""
 "just give them a copy of the executable, assuming they have the same "
 "operating system as you."
 msgstr ""
-"بدیهی است که این به روشنی استفاده از یک مفسر نیست. با این حال به شما اجازهٔ "
+"بدیهی است که این به روشنیِ استفاده از یک مفسر نیست. با این حال به شما اجازهٔ "
 "انجام بسیاری از کارها را می‌دهد که با یک مفسر یا بسیار دشوار است و یا حتی "
-"غیر ممکن، مثل نوشتن کدی که از نزدیک با سیستم‌عامل تعامل داشته باشد - یا حتی "
-"نوشتن سیستم‌عامل خودتان! همچنین اگر شما نیاز به نوشتن کدی پربازده داشته "
+"غیرممکن، مثل نوشتن کدی که از نزدیک با سامانهٔ عامل تعامل داشته باشد - یا حتی "
+"نوشتن سامانهٔ عامل خودتان! همچنین اگر شما نیاز به نوشتن کدی پربازده داشته "
 "باشید مفید است، چرا که همگردان در زمان مورد نیاز کد را بهینه می‌سازد، چیزی "
-"که در یک مفسر قابل پذیرش نخواهد بود. علاوه بر این، توزیع برنامهٔ نوشده شده "
-"برای یک همگردان معمولاً ساده‌تر از توزیع برنامهٔ نوشته شده برای یک مفسر است -"
-" تنها کافیست شما با این فرض که مخاطب شما سیستم مشابه شما را دارد، نسخه‌ای "
-"قابل اجرا به ایشان بدهید."
+"که در یک مفسر قابل‌پذیرش نخواهد بود. علاوه بر این، توزیع برنامهٔ نوشته شده "
+"برای یک همگردان معمولاً ساده‌تر از توزیع برنامهٔ نوشته شده برای یک مفسر است—"
+"تنها کافیست با این فرض که مخاطب شما سامانهٔ مشابه شما را دارد، نسخه‌ای "
+"اجراپذیر به ایشان بدهید."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:711
@@ -1257,8 +1257,9 @@ msgid ""
 "consistent way. For example, if you have called a non-existent function, it "
 "will complain."
 msgstr ""
-"بررسی استفادهٔ سازگار شما از توابع و متغیرهای سراسری. به‌طور مثال، اگر تابع "
-"ناموجودی را صدا بزنید، ایراد خواهد گرفت."
+"استفاده از توابع و متغیرهای سراسری را مورد بررسی قرار دهید تا مطمئن شوید "
+"سازگار با یکدیگر هستند. برای مثال، اگر تابع ناموجودی را صدا زده‌اید، ایراد "
+"خواهد گرفت."
 
 #. (itstool) path: step/para
 #: book.translate.xml:773
@@ -1267,7 +1268,7 @@ msgid ""
 "work out how to fit them all together."
 msgstr ""
 "اگر تلاش به ارائهٔ یک برنامهٔ اجراپذیر از چندین پروندهٔ کد منبع را دارید، "
-"راهی برای یکپارچه کردن آنها پیدا کنید."
+"راهی برای یکپارچه کردن آنها بیابید."
 
 #. (itstool) path: step/para
 #: book.translate.xml:779
@@ -1275,13 +1276,13 @@ msgid ""
 "Work out how to produce something that the system's run-time loader will be "
 "able to load into memory and run."
 msgstr ""
-"حل مسیر تولید چیزی که بارکنِ زمان-اجرای سامانه بتواند آن را در حافظه بار و "
-"اجرا کند."
+"راهی برای تولید چیزی که بارکنِ زمان اجرای سامانه بتواند آن را در حافظه بار و "
+"اجرا کند بیابید."
 
 #. (itstool) path: step/para
 #: book.translate.xml:785
 msgid "Finally, write the executable on the filesystem."
-msgstr "و سرانجام، نوشتن برنامه اجرایی بر روی سامانهٔ پرونده."
+msgstr "و سرانجام، برنامهٔ اجراپذیر را بر روی سامانهٔ پرونده بنویسید."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:789
@@ -1291,8 +1292,8 @@ msgid ""
 "Sometimes step 1 is referred to as <firstterm>pre-processing</firstterm> and "
 "steps 3-4 as <firstterm>assembling</firstterm>."
 msgstr ""
-"واژه <firstterm>همگردانی</firstterm> بیشتر برای اشاره به مراحل ۱ تا ۴ "
-"استفاده می‌شود - مراحل دیگر <firstterm>پیونددهی</firstterm> نامیده می‌شوند. "
+"واژهٔ <firstterm>همگردانی</firstterm> بیشتر برای اشاره به مراحل ۱ تا ۴ "
+"استفاده می‌شود—مراحل دیگر <firstterm>پیونددهی</firstterm> نامیده می‌شوند. "
 "گاهی اوقات مرحله ۱ به‌عنوان <firstterm>پیش‌پردازش</firstterm> و مراحل ۳-۴ به‌"
 "عنوان <firstterm>همگذاری</firstterm> نامیده می‌شوند."
 
