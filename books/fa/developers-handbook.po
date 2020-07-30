@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-07-30 17:19+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"PO-Revision-Date: 2020-07-30 22:24+0000\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -1837,7 +1837,7 @@ msgstr ""
 #. (itstool) path: answer/para
 #: book.translate.xml:1117
 msgid "After recompiling it as you did before, run it:"
-msgstr ""
+msgstr "پس از همگردانی مجدد آن همچون قبل‌تر که انجام دادید، آن را اجرا کنید:"
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:1121
@@ -1856,6 +1856,9 @@ msgid ""
 "emphasis> include <filename>math.h</filename> and remember to link in the "
 "math library."
 msgstr ""
+"اگر هرکدام از توابع ریاضیاتی را به‌کار می‌برید، <emphasis>همواره</emphasis> "
+"<filename>math.h</filename> را لحاظ کنید و به‌خاطر داشته باشید در کتابخانهٔ "
+"ریاضیات پیوند برقرار کنید."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1134
@@ -1863,6 +1866,8 @@ msgid ""
 "I compiled a file called <filename>foobar.c</filename> and I cannot find an "
 "executable called <filename>foobar</filename>. Where has it gone?"
 msgstr ""
+"من یک پرونده به نام <filename>foobar.c</filename> همگردان کرده‌ام و نمی‌"
+"توانم اجراپذیری به نام <filename>foobar</filename> پیدا کنم. کجا رفته است؟"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1141
@@ -1871,6 +1876,9 @@ msgid ""
 "filename> unless you tell it differently. Use the <option>-o "
 "<replaceable>filename</replaceable></option> option:"
 msgstr ""
+"به‌یاد داشته باشید، <command>cc</command> اجراپذیر را <filename>a.out</"
+"filename> می‌نامد، مگر آنکه شما طور دیگری امر کنید. از گزینهٔ <option>-o "
+"<replaceable>filename</replaceable></option> استفاده کنید:"
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:1148
@@ -1886,6 +1894,10 @@ msgid ""
 "command> at the command prompt it tells me there is no such file. Why can it "
 "not find it?"
 msgstr ""
+"بسیار خوب، من اجراپذیری به نام <filename>foobar</filename> دارم، می‌توانم آن "
+"را هنگامی‌که <command>ls</command> را اجرا می‌کنم ببینم، اما هنگامی‌که "
+"<command>foobar</command> را در خط فرمان وارد می‌کنم به من می‌گوید که چنین "
+"پرونده‌ای وجود ندارد. چرا نمی‌تواند آن را پیدا کند؟"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1164
