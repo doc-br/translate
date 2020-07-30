@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-07-30 14:55+0000\n"
+"PO-Revision-Date: 2020-07-30 16:23+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -1676,6 +1676,9 @@ msgid ""
 "If you are compiling C++ code, use <command>c++</command>. <command>c++</"
 "command> can also be invoked as <command>clang++</command> on FreeBSD."
 msgstr ""
+"اگر مشغول همگردانی کد ++C هستید، از <command>c++</command> استفاده کنید. "
+"<command>c++</command> همچنین می‌تواند به‌عنوان <command>clang++</command> "
+"در FreeBSD فراخوانده شود."
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:1015
@@ -1689,11 +1692,13 @@ msgid ""
 "This will both produce an executable <filename>foobar</filename> from the C+"
 "+ source file <filename>foobar.cc</filename>."
 msgstr ""
+"هردو باعث تولید اجراپذیرِ <filename>foobar</filename> از پروندهٔ منبع C++، "
+"<filename>foobar.cc</filename> می‌شوند."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1026
 msgid "Common <command>cc</command> Queries and Problems"
-msgstr ""
+msgstr "پرسش‌ها و چالش‌های رایجِ <command>cc</command>."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1031
@@ -1701,6 +1706,8 @@ msgid ""
 "I am trying to write a program which uses the <function>sin()</function> "
 "function and I get an error like this. What does it mean?"
 msgstr ""
+"من در تلاش برای نوشتن برنامه‌ای هستم که از تابع <function>sin()</function> "
+"استفاده می‌کند و پیغام خطایی مثل این دریافت می‌کنم. این به چه معناست؟"
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:1036
@@ -1715,6 +1722,9 @@ msgid ""
 "When using mathematical functions like <function>sin()</function>, you have "
 "to tell <command>cc</command> to link in the math library, like so:"
 msgstr ""
+"هنگامی‌که از توابع ریاضیاتی چون <function>sin()</function> استفاده می‌کنید، "
+"باید به <command>cc</command> بگویید تا کتابخانهٔ ریاضیات را پیوند دهد، بدین "
+"شکل:"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1054
@@ -1722,6 +1732,8 @@ msgid ""
 "All right, I wrote this simple program to practice using <option>-lm</"
 "option>. All it does is raise 2.1 to the power of 6."
 msgstr ""
+"بسیار خوب، من این برنامهٔ ساده را برای تمرین در استفاده از <option>-lm</"
+"option> نوشتم. تمام آنچه که انجام می‌دهد رساندن ۲٫۱ به توان ۶ است."
 
 #. (itstool) path: informalexample/programlisting
 #: book.translate.xml:1059
@@ -1751,7 +1763,7 @@ msgstr ""
 #. (itstool) path: question/para
 #: book.translate.xml:1070
 msgid "and I compiled it as:"
-msgstr ""
+msgstr "و آن را اینگونه همگردان کردم:"
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:1073
@@ -1762,7 +1774,7 @@ msgstr "<prompt>%</prompt> <userinput>cc temp.c -lm</userinput>"
 #. (itstool) path: question/para
 #: book.translate.xml:1076
 msgid "like you said I should, but I get this when I run it:"
-msgstr ""
+msgstr "همانطور که گفتید، اما این خروجی را هنگام اجرا دریافت می‌کنم:"
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:1080
