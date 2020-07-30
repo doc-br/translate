@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-07-29 20:44+0000\n"
-"Last-Translator: Parsa Samet <qps@irbug.org>\n"
+"PO-Revision-Date: 2020-07-30 14:55+0000\n"
+"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -1536,6 +1536,9 @@ msgid ""
 "are worthwhile. Despite the name, it will not enable all the warnings "
 "<command>cc</command> is capable of."
 msgstr ""
+"تمام هشدارهایی که نویسندگان <command>cc</command> به ارزشمند بودنشان باور "
+"دارند را فعال کنید. فارق از نامش، تمام هشدارهایی که <command>cc</command> "
+"قادر به نمایششان است را فعال نمی‌سازد."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:935
@@ -1590,12 +1593,17 @@ msgid ""
 "otherwise you may have to completely rewrite the program later to get it to "
 "work somewhere else—and who knows what you may be using in a few years time?"
 msgstr ""
+"به‌طور معمول، بهتر است کدتان را تا جای ممکن انتقال‌پذیر بسازید، در غیر این "
+"صورت ممکن است برای کار کردن آن در جای دیگر ناچار به بازنویسی کامل آن باشید - "
+"و چه کسی می‌داند که شما چه چیزی ممکن است طی چند سال آتی استفاده کنید؟"
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:971
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>cc -Wall -ansi -pedantic -o foobar foobar.c</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cc -Wall -ansi -pedantic -o foobar foobar."
+"c</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:974
@@ -1603,16 +1611,18 @@ msgid ""
 "This will produce an executable <filename>foobar</filename> after checking "
 "<filename>foobar.c</filename> for standard compliance."
 msgstr ""
+"این یک <filename>foobar</filename> اجراپذیر بعد از بررسی <filename>foobar.c</"
+"filename> برای رعایت استاندارد می‌سازد."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:980
 msgid "<option>-l<replaceable>library</replaceable></option>"
-msgstr ""
+msgstr "<option>-l<replaceable>library</replaceable></option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:983
 msgid "Specify a function library to be used at link time."
-msgstr ""
+msgstr "یک کتابخانهٔ توابع برای استفاده در زمان پیوند مشخص کنید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:986
@@ -1622,6 +1632,9 @@ msgid ""
 "in a separate library from the standard C one and you have to tell the "
 "compiler to add it."
 msgstr ""
+"معمول‌ترین مثال زمان همگردانی برنامه‌ای است که از برخی توابع ریاضیاتی در C "
+"استفاده می‌کند. برخلاف دیگر بسترها، آنها در کتابخانه‌ای جدا از استاندارد C "
+"هستند و شما باید به همگردان بگویید که اضافه‌اش کند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:992
@@ -1634,18 +1647,27 @@ msgid ""
 "option>. A common <quote>gotcha</quote> with the math library is that it has "
 "to be the last library on the command line."
 msgstr ""
+"قاعده این است که اگر کتابخانه‌ای "
+"<filename>lib<replaceable>something</replaceable>.a</filename> باشد، شما به "
+"<command>cc</command> برهان <option>-l<replaceable>something</replaceable></"
+"option> را می‌دهید. به‌طور مثال، کتابخانهٔ ریاضیات <filename>libm.a</"
+"filename> است، پس شما به <command>cc</command> برهان <option>-lm</option> را "
+"می‌دهید. یک <quote>نکته</quote> در مورد کتابخانهٔ ریاضیات این است که حتماً "
+"باید آخرین کتابخانهٔ ذکر شده در دستور باشد."
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:1004 book.translate.xml:1047
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>cc -o foobar foobar.c -lm</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>cc -o foobar foobar.c -lm</userinput>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1007
 msgid ""
 "This will link the math library functions into <filename>foobar</filename>."
 msgstr ""
+"این دستور کتابخانهٔ توابع ریاضیات را به <filename>foobar</filename> پیوند "
+"می‌دهد."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1010
@@ -1658,7 +1680,7 @@ msgstr ""
 #: book.translate.xml:1015
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>c++ -o foobar foobar.cc</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>c++ -o foobar foobar.cc</userinput>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1018
@@ -1684,6 +1706,7 @@ msgstr ""
 #, no-wrap
 msgid "/var/tmp/cc0143941.o: Undefined symbol `_sin' referenced from text segment"
 msgstr ""
+"/var/tmp/cc0143941.o: Undefined symbol `_sin' referenced from text segment"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1041
@@ -1713,6 +1736,16 @@ msgid ""
 "\treturn 0;\n"
 "}"
 msgstr ""
+"#include &lt;stdio.h&gt;\n"
+"\n"
+"int main() {\n"
+"\tfloat f;\n"
+"\n"
+"\tf = pow(2.1, 6);\n"
+"\tprintf(\"2.1 ^ 6 = %f\\n"
+"\", f);\n"
+"\treturn 0;\n"
+"}"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1070
@@ -1723,7 +1756,7 @@ msgstr ""
 #: book.translate.xml:1073
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>cc temp.c -lm</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>cc temp.c -lm</userinput>"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1076
@@ -1737,6 +1770,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>./a.out</userinput>\n"
 "2.1 ^ 6 = 1023.000000"
 msgstr ""
+"<prompt>%</prompt> <userinput>./a.out</userinput>\n"
+"2.1 ^ 6 = 1023.000000"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1084
@@ -1774,6 +1809,11 @@ msgid ""
 "int main() {\n"
 "..."
 msgstr ""
+"#include &lt;math.h&gt;\n"
+"#include &lt;stdio.h&gt;\n"
+"\n"
+"int main() {\n"
+"..."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1117
@@ -1787,6 +1827,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>./a.out</userinput>\n"
 "2.1 ^ 6 = 85.766121"
 msgstr ""
+"<prompt>%</prompt> <userinput>./a.out</userinput>\n"
+"2.1 ^ 6 = 85.766121"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1125
@@ -1815,7 +1857,7 @@ msgstr ""
 #: book.translate.xml:1148
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>cc -o foobar foobar.c</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>cc -o foobar foobar.c</userinput>"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1155
@@ -1856,7 +1898,7 @@ msgstr ""
 #: book.translate.xml:1187
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>./test</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>./test</userinput>"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1190
@@ -1925,6 +1967,8 @@ msgid ""
 "char *foo = NULL;\n"
 "strcpy(foo, \"bang!\");"
 msgstr ""
+"char *foo = NULL;\n"
+"strcpy(foo, \"bang!\");"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1250
@@ -1938,6 +1982,8 @@ msgid ""
 "char *foo;\n"
 "strcpy(foo, \"bang!\");"
 msgstr ""
+"char *foo;\n"
+"strcpy(foo, \"bang!\");"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1256
@@ -1961,6 +2007,8 @@ msgid ""
 "int bar[20];\n"
 "bar[27] = 6;"
 msgstr ""
+"int bar[20];\n"
+"bar[27] = 6;"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1274
@@ -1974,6 +2022,8 @@ msgid ""
 "char *foo = \"My string\";\n"
 "strcpy(foo, \"bang!\");"
 msgstr ""
+"char *foo = \"My string\";\n"
+"strcpy(foo, \"bang!\");"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1280
@@ -1997,6 +2047,8 @@ msgid ""
 "char bar[80];\n"
 "free(bar);"
 msgstr ""
+"char bar[80];\n"
+"free(bar);"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1293
@@ -2011,6 +2063,9 @@ msgid ""
 "free(foo);\n"
 "free(foo);"
 msgstr ""
+"char *foo = malloc(27);\n"
+"free(foo);\n"
+"free(foo);"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1301
