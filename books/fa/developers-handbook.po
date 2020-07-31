@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-07-31 08:37+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"PO-Revision-Date: 2020-07-31 16:29+0000\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -1920,8 +1920,8 @@ msgid ""
 "I called my executable <filename>test</filename>, but nothing happens when I "
 "run it. What is going on?"
 msgstr ""
-"من پروندهٔ اجرایی خود را <filename>test</filename> نامیدم، اما زمانی که "
-"اجرایش می‌کنم هیچ نمی‌شود. دلیل چه چیز است؟"
+"من پروندهٔ اجراپذیر خود را <filename>test</filename> نامیدم، اما زمانی که "
+"اجرایش می‌کنم هیچ نمی‌شود. جریان چیست؟"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1181
@@ -1944,7 +1944,7 @@ msgstr "<prompt>%</prompt> <userinput>./test</userinput>"
 #. (itstool) path: answer/para
 #: book.translate.xml:1190
 msgid "or choose a better name for your program!"
-msgstr "یا نام بهتری برای برنامه خود انتخاب کنید!"
+msgstr "یا نام بهتری برای برنامهٔ خود انتخاب کنید!"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1196
@@ -1953,8 +1953,8 @@ msgid ""
 "was an error and it said something about <errorname>core dumped</errorname>. "
 "What does that mean?"
 msgstr ""
-"من برنامهٔ خود را همگردانی کردم و در ابتدا به نظر درست اجرا شد، سپس خطایی "
-"چیری در مورد <errorname>core dumped</errorname> گفت. این به چه معناست؟"
+"من برنامهٔ خود را همگردانی کردم و در ابتدا به نظر درست اجرا شد، سپس خطایی در "
+"مورد <errorname>core dumped</errorname> گفت. این به چه معناست؟"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1203
@@ -1966,16 +1966,24 @@ msgid ""
 "file called <filename>core</filename>, which the programmer could then pore "
 "over to find out what went wrong."
 msgstr ""
+"نام <firstterm>core dump</firstterm> به روزهای آغازین <trademark class="
+"\"registered\">UNIX</trademark> برمی‌گردد، زمانی‌که ماشین‌ها از حافظهٔ اصلی "
+"برای ذخیره‌کردن داده‌ها استفاده می‌کردند. اساساً، اگر برنامه تحت شرایط به‌"
+"خصوصی از کار می‌ایستاد، سامانه محتوای حافظهٔ اصلی را داخل پرونده‌ای به نام "
+"<filename>core</filename> در دیسک می‌نوشت، که بعدتر برنامه‌نویس می‌توانست با "
+"مطالعهٔ دقیق آن بفهمد چه اشتباهی رخ داده است."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1215
 msgid "Fascinating stuff, but what I am supposed to do now?"
-msgstr ""
+msgstr "چه چیزهای جالبی، اما الان قرار است چه کنم؟"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1220
 msgid "Use a debugger to analyze the core (see <xref linkend=\"debugging\"/>)."
 msgstr ""
+"از یک اشکال‌زدا برای تحلیل هسته استفاده کنید (<xref linkend=\"اشکال‌زدایی\"/"
+"> را ببینید)."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1227
