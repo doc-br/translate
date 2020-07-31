@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-07-30 22:24+0000\n"
-"Last-Translator: Parsa Samet <qps@irbug.org>\n"
+"PO-Revision-Date: 2020-07-31 08:37+0000\n"
+"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -1908,6 +1908,11 @@ msgid ""
 "tell it to. Type <command>./foobar</command>, which means <quote>run the "
 "file called <filename>foobar</filename> in the current directory.</quote>"
 msgstr ""
+"برخلاف <trademark class=\"registered\">MS-DOS</trademark>، <trademark class="
+"\"registered\">UNIX</trademark> برای تشخیص اینکه شما چه پروندهٔ اجراپذیری را "
+"می‌خواهید اجرا کنید نگاهی به مسیر جاری نمی‌اندازد، مگر آنکه شما بگویید. "
+"بنویسید <command>./foobar</command>، که به معنی <quote>پرونده‌ای به نام "
+"<filename>foobar</filename> را در مسیر جاری اجرا کن</quote> است."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1175
@@ -1915,6 +1920,8 @@ msgid ""
 "I called my executable <filename>test</filename>, but nothing happens when I "
 "run it. What is going on?"
 msgstr ""
+"من پروندهٔ اجرایی خود را <filename>test</filename> نامیدم، اما زمانی که "
+"اجرایش می‌کنم هیچ نمی‌شود. دلیل چه چیز است؟"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1181
@@ -1924,6 +1931,9 @@ msgid ""
 "shell is picking that one up before it gets to checking the current "
 "directory. Either type:"
 msgstr ""
+"بیشتر سامانه‌های <trademark class=\"registered\">UNIX</trademark> برنامه‌ای "
+"به نام <command>test</command> در <filename>/usr/bin</filename> دارند و "
+"پوسته پیش از بررسی کردن مسیر جاری، آن را انتخاب می‌کند. یا بنویسید:"
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:1187
@@ -1934,7 +1944,7 @@ msgstr "<prompt>%</prompt> <userinput>./test</userinput>"
 #. (itstool) path: answer/para
 #: book.translate.xml:1190
 msgid "or choose a better name for your program!"
-msgstr ""
+msgstr "یا نام بهتری برای برنامه خود انتخاب کنید!"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1196
@@ -1943,6 +1953,8 @@ msgid ""
 "was an error and it said something about <errorname>core dumped</errorname>. "
 "What does that mean?"
 msgstr ""
+"من برنامهٔ خود را همگردانی کردم و در ابتدا به نظر درست اجرا شد، سپس خطایی "
+"چیری در مورد <errorname>core dumped</errorname> گفت. این به چه معناست؟"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1203
@@ -1984,12 +1996,12 @@ msgstr ""
 #. (itstool) path: answer/para
 #: book.translate.xml:1238
 msgid "Common causes for this are:"
-msgstr ""
+msgstr "علات مرسوم برای این بدین شرح هستند:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1242
 msgid "Trying to write to a <symbol>NULL</symbol> pointer, eg"
-msgstr ""
+msgstr "تلاش برای نوشتن در یک اشاره‌گر <symbol>NULL</symbol>، به‌طور مثال"
 
 #. (itstool) path: listitem/programlisting
 #: book.translate.xml:1245
@@ -2004,7 +2016,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:1250
 msgid "Using a pointer that has not been initialized, eg"
-msgstr ""
+msgstr "استفاده از اشاره‌گری که از پیش مقداردهی نشده است، به‌طور مثال"
 
 #. (itstool) path: listitem/programlisting
 #: book.translate.xml:1253
@@ -2025,6 +2037,11 @@ msgid ""
 "point somewhere inside your own program and corrupt one of your data "
 "structures, causing the program to fail mysteriously."
 msgstr ""
+"اشاره‌گر مقدار تصادفی‌ای خواهد داشت که، اگر شانس بیارید، به فضایی در حافظه "
+"اشاره خواهد کرد که قابل دسترس برنامهٔ شما نیست و هسته پیس از آنکه این بتواند "
+"ضرری وارد کند برنامهٔ شما را می‌کشد. اگر شانس نیارید، به جایی داخل برنامهٔ "
+"شما اشاره خواهد کرد و یکی از ساختار دادهٔ شما را تباه می‌سازد، که به‌طوری "
+"رمزآلور باعث شکست برنامه می‌شود."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1266
