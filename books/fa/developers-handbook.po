@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-07-31 16:29+0000\n"
-"Last-Translator: Parsa Samet <qps@irbug.org>\n"
+"PO-Revision-Date: 2020-07-31 22:50+0000\n"
+"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -1698,7 +1698,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:1026
 msgid "Common <command>cc</command> Queries and Problems"
-msgstr "پرسش‌ها و چالش‌های رایجِ <command>cc</command>."
+msgstr "پرسش‌ها و چالش‌های رایجِ <command>cc</command>"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1031
@@ -2054,7 +2054,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:1266
 msgid "Trying to access past the end of an array, eg"
-msgstr ""
+msgstr "تلاش برای دسترسی به خارج از آرایه، به‌طور مثال"
 
 #. (itstool) path: listitem/programlisting
 #: book.translate.xml:1269
@@ -2069,7 +2069,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:1274
 msgid "Trying to store something in read-only memory, eg"
-msgstr ""
+msgstr "تلاش برای ذخیرهٔ چیزی در حافظهٔ تنها-خواندنی، به‌طور مثال"
 
 #. (itstool) path: listitem/programlisting
 #: book.translate.xml:1277
@@ -2109,7 +2109,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:1293
 msgid "or"
-msgstr ""
+msgstr "یا"
 
 #. (itstool) path: listitem/programlisting
 #: book.translate.xml:1295
@@ -2160,24 +2160,26 @@ msgstr ""
 #. (itstool) path: answer/para
 #: book.translate.xml:1335
 msgid "Yes, just go to another console or xterm, do"
-msgstr ""
+msgstr "بله، به xterm یا پیشانه‌‌ای دیگر بروید، بزنید"
 
 #. (itstool) path: answer/screen
 #: book.translate.xml:1337
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>ps</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>ps</userinput>"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1339
 msgid "to find out the process ID of your program, and do"
-msgstr ""
+msgstr "تا شناسهٔ فرایند برنامهٔ خود را پیدا کنید، و بزنید"
 
 #. (itstool) path: answer/screen
 #: book.translate.xml:1342
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>kill -ABRT <replaceable>pid</replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>kill -ABRT "
+"<replaceable>pid</replaceable></userinput>"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1344
@@ -2215,12 +2217,12 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:1370
 msgid "Make"
-msgstr ""
+msgstr "Make"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1373
 msgid "What is <command>make</command>?"
-msgstr ""
+msgstr "<command>make</command> چیست؟"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1375
@@ -2233,7 +2235,7 @@ msgstr ""
 #: book.translate.xml:1378
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>cc file1.c file2.c</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>cc file1.c file2.c</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1380
@@ -2254,6 +2256,8 @@ msgstr ""
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>cc file1.o file2.o</userinput> … <userinput>file37.c</userinput> …"
 msgstr ""
+"<prompt>%</prompt> <userinput>cc file1.o file2.o</userinput> … "
+"<userinput>file37.c</userinput> …"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1390
