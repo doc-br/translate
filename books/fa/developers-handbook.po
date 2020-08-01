@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-01 19:37+0000\n"
-"Last-Translator: Parsa Samet <qps@irbug.org>\n"
+"PO-Revision-Date: 2020-08-01 23:00+0000\n"
+"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -2247,6 +2247,11 @@ msgid ""
 "See the manual page of <citerefentry><refentrytitle>gcore</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> for more information."
 msgstr ""
+"اگر می‌خواهید از بیرو برنامهٔ خود روگرفتی از حافظه بسازید، اما نمی‌خواهید که "
+"برنامه پایان یابد، می‌توانید از برنامهٔ <command>gcore</command> استفاده "
+"کنید. برای اطلاعات بیشتر به صفحهٔ راهنمای "
+"<citerefentry><refentrytitle>gcore</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> رجوع کنید."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1370
@@ -2307,6 +2312,9 @@ msgid ""
 "since the last time we compiled. This may speed up the compilation quite a "
 "bit, but does not solve the typing problem."
 msgstr ""
+"اگر از زمان آخرین همگردانی تنها پروندهٔ <filename>file37.c</filename> را "
+"تغییر داده باشیم، و نه هیچ پروندهٔ دیگری را. این ممکن است به همگردانی بسی "
+"سرعت ببخشید، اما مشکل نوشتن را حل نمی‌کند."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1395
@@ -2314,6 +2322,8 @@ msgid ""
 "Or we could write a shell script to solve the typing problem, but it would "
 "have to re-compile everything, making it very inefficient on a large project."
 msgstr ""
+"یا می‌توانیم اجرانامه‌ای در پوسته بنویسیم تا مشکل نوشتن را حل کند، اما همه "
+"چیز را مجدد همگردانی خواهد کرد و این در یک پروژه بزرگ بسیار ناکارآمد است."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1399
@@ -2322,6 +2332,9 @@ msgid ""
 "working in a team with other people who forget to tell us when they have "
 "changed one of their source files that we use?"
 msgstr ""
+"اگر صدها پروندهٔ منبع داشته باشیم که در موردش اشتباه کند چی؟ اگر در تیمی کار "
+"می‌کنیم که دیگر افراد فراموش می‌کنند زمانی که یکی از کد منبع‌هایی که ما "
+"استفاده می‌کنیم را تغییر دادند به ما اطلاع دهند چی؟"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1404
@@ -2371,7 +2384,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:1437
 msgid "Here is a very simple make file:"
-msgstr ""
+msgstr "این یک نمونهٔ خیلی ساده از پروندهٔ make:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:1439
@@ -2380,11 +2393,13 @@ msgid ""
 "foo: foo.c\n"
 "\tcc -o foo foo.c"
 msgstr ""
+"foo: foo.c\n"
+"\tcc -o foo foo.c"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1442
 msgid "It consists of two lines, a dependency line and a creation line."
-msgstr ""
+msgstr "این متشکل از دو سطر است، یک خط برای وابستگی و یک خط برای ایجاد."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1445
@@ -2439,6 +2454,11 @@ msgid ""
 "install:\n"
 "\tcp foo /home/me"
 msgstr ""
+"foo: foo.c\n"
+"\tcc -o foo foo.c\n"
+"\n"
+"install:\n"
+"\tcp foo /home/me"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1486
