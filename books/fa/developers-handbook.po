@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-01 15:46+0000\n"
+"PO-Revision-Date: 2020-08-01 19:37+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -777,7 +777,7 @@ msgid ""
 msgstr ""
 "با یک مفسر، زبان مانند یک محیط می‌شود که شما در آن دستورات را وارد می‌کنید و "
 "محیط آنها را برای شما اجرا می‌کند. برای برنامه‌های پیچیده‌تر، می‌توانید "
-"دستورات را یک پرونده بنویسید و از مفسر برای بارگیری آن پرونده و اجرای "
+"دستورات را داخل یک پرونده بنویسید و از مفسر برای بارگیری آن پرونده و اجرای "
 "دستورات استفاده کنید. اگر خطایی رخ دهد، بسیاری از مفسرها به شما یک اشکال‌زدا "
 "برای وارسی مشکل می‌دهند."
 
@@ -2178,6 +2178,9 @@ msgid ""
 "can make it happen when I want to. Can I do this, or do I have to wait until "
 "there is an error?"
 msgstr ""
+"به‌نظر می‌رسد این مسئلهٔ روگرفت حافظه کاربردی باشد، اگر بتوانم هر زمان که می‌"
+"خواهم آن را ایجاد کنم. آیا ممکن است، یا مجبور هستم تا هنگام وقوع خطا منتظر "
+"بمانم؟"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1335
@@ -2209,6 +2212,8 @@ msgid ""
 "where <parameter><replaceable>pid</replaceable></parameter> is the process "
 "ID you looked up."
 msgstr ""
+"که <parameter><replaceable>pid</replaceable></parameter> شناسهٔ فرآیندی است "
+"که به‌دنبالش بودید."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1348
@@ -2217,6 +2222,9 @@ msgid ""
 "instance. If your program happens to trap <symbol>SIGABRT</symbol>, there "
 "are several other signals which have a similar effect."
 msgstr ""
+"برای مثال، اگر برنامهٔ شما درون یک چرخهٔ نامتناهی گیر کرده باشد مفید است. "
+"اگر برنامهٔ شما <symbol>SIGABRT</symbol> را جلب می‌کند، سیگنال‌های دیگری "
+"هستند که تأثیر یکسان دارند."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1353
@@ -2226,6 +2234,10 @@ msgid ""
 "<citerefentry><refentrytitle>abort</refentrytitle><manvolnum>3</manvolnum></"
 "citerefentry> to learn more."
 msgstr ""
+"همچنین، شما می‌توانید با صدا زدن تابع <function>abort()</function> یک روگرفت "
+"حافظه را از داخل برنامهٔ خود بسازید. برای اطلاعات بیشتر، به صفحهٔ راهنمای "
+"<citerefentry><refentrytitle>abort</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry> مراجعه کنید."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1358
@@ -2252,6 +2264,8 @@ msgid ""
 "When you are working on a simple program with only one or two source files, "
 "typing in"
 msgstr ""
+"هنگامی‌که دارید بر روی یک برنامهٔ ساده با تنها یک یا دو پروندهٔ منبع کار "
+"می‌کنید، وارد کردنِ"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:1378
@@ -2265,6 +2279,8 @@ msgid ""
 "is not too bad, but it quickly becomes very tedious when there are several "
 "files—and it can take a while to compile, too."
 msgstr ""
+"خیلی بد نیست، اما زمانی‌که چندین پرونده وجود دارد به‌سرعت خسته‌کننده می‌شود—"
+"و همگردانی آن نیز می‌تواند مدتی به طول انجامد."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1384
@@ -2272,6 +2288,9 @@ msgid ""
 "One way to get around this is to use object files and only recompile the "
 "source file if the source code has changed. So we could have something like:"
 msgstr ""
+"یکی از راه‌های حصول آن، استفاده از پرونده‌های هدف است و تنها درصورتی‌که کد "
+"منبع تغییر کرده است پروندهٔ منبع را بازهمگردانی کنیم. پس ما می‌توانیم چیزی "
+"مانند این را داشته باشیم:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:1388
