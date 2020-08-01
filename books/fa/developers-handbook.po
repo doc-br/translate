@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-01 12:53+0000\n"
+"PO-Revision-Date: 2020-08-01 14:44+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -2075,7 +2075,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:1274
 msgid "Trying to store something in read-only memory, eg"
-msgstr "تلاش برای ذخیرهٔ چیزی در حافظهٔ تنها-خواندنی، به‌طور مثال"
+msgstr "تلاش برای ذخیرهٔ چیزی در حافظهٔ تنها خواندنی، به‌طور مثال"
 
 #. (itstool) path: listitem/programlisting
 #: book.translate.xml:1277
@@ -2094,6 +2094,9 @@ msgid ""
 "literals like <literal>\"My string\"</literal> into read-only areas of "
 "memory."
 msgstr ""
+"همگردان‌های <trademark class=\"registered\">UNIX</trademark> اغلب راستین‌"
+"نمادهای رشته‌ای چون <literal>\"My string\"</literal> را در قسمت‌های تنها "
+"خواندنی حافظه قرار می‌دهند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1286
@@ -2101,6 +2104,8 @@ msgid ""
 "Doing naughty things with <function>malloc()</function> and "
 "<function>free()</function>, eg"
 msgstr ""
+"شیطنت با <function>malloc()</function> و <function>free()</function>، به‌طور "
+"مثال"
 
 #. (itstool) path: listitem/programlisting
 #: book.translate.xml:1290
@@ -2137,6 +2142,10 @@ msgid ""
 "others, which is why programs that ran well on one system can crash when you "
 "try them on an another."
 msgstr ""
+"انجام هر یک از این اشتباهات همیشه منجر به خطا نمی‌شود، اما همواره روشی بد "
+"تلقی می‌شوند. برخی سامانه‌ها و همگردان‌ها تحمل‌پذیرتر از برخی دیگرند، از این "
+"رو برنامه‌هایی که بر روی یک سامانه به‌خوبی اجرا می‌شوند بر روی سامانه‌ای "
+"دیگر خراب می‌شوند."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1311
@@ -2146,6 +2155,10 @@ msgid ""
 "this means a hardware problem, but the computer still seems to be working. "
 "Is this true?"
 msgstr ""
+"گاهی زمانی‌که خطای روگرفت حافظه را دریافت می‌کنم می‌گوید <errorname>bus "
+"error</errorname>. در کتاب <trademark class=\"registered\">UNIX</trademark> "
+"من آمده است که این به معنای ایراد سخت‌افزاری است، اما رایانه به‌نظر هنوز کار "
+"می‌کند. آیا این درست است؟"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1319
