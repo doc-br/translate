@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
 "PO-Revision-Date: 2020-08-02 14:01+0000\n"
-"Last-Translator: Parsa Samet <qps@irbug.org>\n"
+"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -2558,6 +2558,10 @@ msgid ""
 "\n"
 "int main(...."
 msgstr ""
+"#include &lt;stdio.h&gt;\n"
+"#include \"foo.h\"\n"
+"\n"
+"int main(...."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1539
@@ -2571,7 +2575,7 @@ msgstr ""
 #: book.translate.xml:1543
 #, no-wrap
 msgid "foo: foo.c foo.h"
-msgstr ""
+msgstr "foo: foo.c foo.h"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1545
@@ -2588,7 +2592,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:1554
 msgid "If you add this to your Makefile:"
-msgstr ""
+msgstr "اگر این را به Makefile خود اضافه کنید:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:1556
@@ -2597,6 +2601,8 @@ msgid ""
 "depend:\n"
 "\tcc -E -MM *.c &gt; .depend"
 msgstr ""
+"depend:\n"
+"\tcc -E -MM *.c &gt; .depend"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1559
@@ -2605,12 +2611,15 @@ msgid ""
 "filename> will appear with a list of object-files, C-files and the include-"
 "files:"
 msgstr ""
+"و <userinput>make depend</userinput> را اجرا کنید، پروندهٔ <filename>."
+"depend</filename> به همراه فهرستی از پرونده‌های هدف، پرونده‌های C و پرونده‌"
+"های سرآیند پدیدار می‌شود:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:1563
 #, no-wrap
 msgid "foo.o: foo.c foo.h"
-msgstr ""
+msgstr "foo.o: foo.c foo.h"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1565
@@ -2619,6 +2628,9 @@ msgid ""
 "command> all files depending on <filename>foo.h</filename> will be "
 "recompiled."
 msgstr ""
+"اگر شما پروندهٔ <filename>foo.h</filename> را تغییر دهید، دفعه بعد که "
+"<command>make</command> را اجرا کنید، تمام پرونده‌های وابسته به <filename>foo"
+".h</filename> دوباره همگردانی می‌شوند."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1569
@@ -2626,11 +2638,13 @@ msgid ""
 "Do not forget to run <command>make depend</command> each time you add an "
 "include-file to one of your files."
 msgstr ""
+"فراموش نکنید هر بار که پروندهٔ سرآیندی به یکی از پرونده‌های خود اضافه می‌"
+"کنید دستور <command>make depend</command> را اجرا کنید."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1574
 msgid "FreeBSD Makefiles"
-msgstr ""
+msgstr "FreeBSD Makefiles"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1576
