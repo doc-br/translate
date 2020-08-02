@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-02 14:01+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"PO-Revision-Date: 2020-08-02 17:47+0000\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -2362,6 +2362,16 @@ msgid ""
 "<emphasis>how</emphasis> to re-compile the source file, making it a much "
 "more powerful tool."
 msgstr ""
+"این برنامه <command>make</command> نام دارد. پرونده‌ای به نام "
+"<firstterm>makefile</firstterm> را می‌خواند، که به آن می‌گوید چگونه پرونده‌"
+"های مختلف به یکدیگر وابسته‌اند، و تشخیص می‌دهد کدام پرونده‌ها نیاز به "
+"همگردانی مجدد دارند و کدام ندارند. برای مثال، یک دستور می‌تواند بگوید "
+"<quote>اگر <filename>fromboz.o</filename> قدیمی‌تر از <filename>fromboz.c</"
+"filename> است، این بدین معناست که شخصی باید <filename>fromboz.c</filename> "
+"را تغییر داده باشد، در نتیجه نیاز به همگردانی مجدد دارد.</quote> همچنین "
+"makefile شامل دستوراتی است که به make بگوید <emphasis>چگونه</emphasis> "
+"پروندهٔ منبع را همگردانی مجدد کند، که آن را تبدیل به ابزاری بسیار قدرتمند‌تر "
+"می‌کند."
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:1428
@@ -2369,6 +2379,9 @@ msgid ""
 "They do not use the <filename>MAKEFILE</filename> form as block capitals are "
 "often used for documentation files like <filename>README</filename>."
 msgstr ""
+"آنها از صورت <filename>MAKEFILE</filename> استفاده نمی‌کنند، زیرا حروف بزرگ "
+"معمولاً برای پرونده‌های مستندسازی چون <filename>README</filename> استفاده "
+"می‌شوند."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1422
@@ -2383,7 +2396,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:1435
 msgid "Example of Using <command>make</command>"
-msgstr ""
+msgstr "مثال برای استفاده از <command>make</command>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1437
@@ -2539,7 +2552,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:1527
 msgid "Make and include-files"
-msgstr ""
+msgstr "Make و پرونده‌های سرآیند"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1529
@@ -2548,6 +2561,9 @@ msgid ""
 "Some of these files are system-include files, some of them are from the "
 "project you are now working on:"
 msgstr ""
+"کد C معمولاً با فهرستی از پرونده‌های سرآیند شروع می‌شود، مانند stdio.h. برخی "
+"از این پرونده‌ها مختص خود سامانه هستند و برخی دیگر از پروژه‌ایست که اکنون بر "
+"روی آن کار می‌کنید:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:1534
@@ -2612,7 +2628,7 @@ msgid ""
 "files:"
 msgstr ""
 "و <userinput>make depend</userinput> را اجرا کنید، پروندهٔ <filename>."
-"depend</filename> به همراه فهرستی از پرونده‌های هدف، پرونده‌های C و پرونده‌"
+"depend</filename> به‌همراه فهرستی از پرونده‌های هدف، پرونده‌های C و پرونده‌"
 "های سرآیند پدیدار می‌شود:"
 
 #. (itstool) path: sect2/programlisting
@@ -2654,6 +2670,10 @@ msgid ""
 "very good example of this is the FreeBSD ports system. Here is the essential "
 "part of a typical ports <filename>Makefile</filename>:"
 msgstr ""
+"نوشتن Makefile ها می‌تواند نسبتاً کار پیچیده‌ای باشد. خوشبختانه، سامانه‌های "
+"مبتنی‌بر BSD همچون FreeBSD به‌همراه برخی از قدرت‌مندترین آنها و بخشی از خود "
+"سامانه می‌آیند. در اینجا بخش اساسی از <filename>Makefile</filename> یک پورت "
+"عادی آمده است:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:1583
