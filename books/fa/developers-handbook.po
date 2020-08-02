@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
 "PO-Revision-Date: 2020-08-02 17:47+0000\n"
-"Last-Translator: Parsa Samet <qps@irbug.org>\n"
+"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -2684,6 +2684,10 @@ msgid ""
 "\n"
 ".include &lt;bsd.port.mk&gt;"
 msgstr ""
+"MASTER_SITES=   ftp://freefall.cdrom.com/pub/FreeBSD/LOCAL_PORTS/\n"
+"DISTFILES=      scheme-microcode+dist-7.3-freebsd.tgz\n"
+"\n"
+".include &lt;bsd.port.mk&gt;"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1588
@@ -2691,6 +2695,8 @@ msgid ""
 "Now, if we go to the directory for this port and type <userinput>make</"
 "userinput>, the following happens:"
 msgstr ""
+"حال، اگر به مسیر این پورت برویم و بنویسیم <userinput>make</userinput>، چنین "
+"می‌شود:"
 
 #. (itstool) path: step/para
 #: book.translate.xml:1593
@@ -2781,7 +2787,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:1667
 msgid "More Advanced Uses of <command>make</command>"
-msgstr ""
+msgstr "کاربردهای حرفه‌ای‌تر <command>make</command>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1669
@@ -2806,12 +2812,12 @@ msgstr ""
 #: book.translate.xml:1682
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>zmore paper.ascii.gz</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>zmore paper.ascii.gz</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1684
 msgid "in that directory."
-msgstr ""
+msgstr "در آن مسیر."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1686
@@ -2835,7 +2841,7 @@ msgstr ""
 #: book.translate.xml:1699
 #, no-wrap
 msgid " * Make: (make).                 The GNU Make utility."
-msgstr ""
+msgstr " * Make: (make).                 The GNU Make utility."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1701
@@ -2848,7 +2854,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:1710
 msgid "Debugging"
-msgstr ""
+msgstr "اشکال‌یابی"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1713
