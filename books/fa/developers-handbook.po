@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-01 23:00+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"PO-Revision-Date: 2020-08-02 14:01+0000\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -2247,8 +2247,8 @@ msgid ""
 "See the manual page of <citerefentry><refentrytitle>gcore</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> for more information."
 msgstr ""
-"اگر می‌خواهید از بیرو برنامهٔ خود روگرفتی از حافظه بسازید، اما نمی‌خواهید که "
-"برنامه پایان یابد، می‌توانید از برنامهٔ <command>gcore</command> استفاده "
+"اگر می‌خواهید از بیرون برنامهٔ خود روگرفتی از حافظه بسازید، اما نمی‌خواهید "
+"که برنامه پایان یابد، می‌توانید از برنامهٔ <command>gcore</command> استفاده "
 "کنید. برای اطلاعات بیشتر به صفحهٔ راهنمای "
 "<citerefentry><refentrytitle>gcore</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> رجوع کنید."
@@ -2285,7 +2285,7 @@ msgid ""
 "files—and it can take a while to compile, too."
 msgstr ""
 "خیلی بد نیست، اما زمانی‌که چندین پرونده وجود دارد به‌سرعت خسته‌کننده می‌شود—"
-"و همگردانی آن نیز می‌تواند مدتی به طول انجامد."
+"و همگردانی آن نیز می‌تواند مدتی به‌طول انجامد."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1384
@@ -2314,7 +2314,7 @@ msgid ""
 msgstr ""
 "اگر از زمان آخرین همگردانی تنها پروندهٔ <filename>file37.c</filename> را "
 "تغییر داده باشیم، و نه هیچ پروندهٔ دیگری را. این ممکن است به همگردانی بسی "
-"سرعت ببخشید، اما مشکل نوشتن را حل نمی‌کند."
+"سرعت بخشد، اما مشکل نوشتن را حل نمی‌کند."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1395
@@ -2323,7 +2323,7 @@ msgid ""
 "have to re-compile everything, making it very inefficient on a large project."
 msgstr ""
 "یا می‌توانیم اجرانامه‌ای در پوسته بنویسیم تا مشکل نوشتن را حل کند، اما همه "
-"چیز را مجدد همگردانی خواهد کرد و این در یک پروژه بزرگ بسیار ناکارآمد است."
+"چیز را مجدد همگردانی خواهد کرد و این در یک پروژهٔ بزرگ بسیار ناکارآمد است."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1399
@@ -2332,9 +2332,9 @@ msgid ""
 "working in a team with other people who forget to tell us when they have "
 "changed one of their source files that we use?"
 msgstr ""
-"اگر صدها پروندهٔ منبع داشته باشیم که در موردش اشتباه کند چی؟ اگر در تیمی کار "
+"اگر صدها پروندهٔ منبع داشته باشیم که در موردش اشتباه کند چه؟ اگر در تیمی کار "
 "می‌کنیم که دیگر افراد فراموش می‌کنند زمانی که یکی از کد منبع‌هایی که ما "
-"استفاده می‌کنیم را تغییر دادند به ما اطلاع دهند چی؟"
+"استفاده می‌کنیم را تغییر دادند به ما اطلاع دهند چطور؟"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1404
@@ -2344,6 +2344,10 @@ msgid ""
 "file needs compiling. Now all we need now is a program that can understand "
 "these rules, as it is a bit too complicated for the shell."
 msgstr ""
+"شاید بتوانیم این دو راه‌حل رابا هم ترکیب کنیم و اجرانامه‌ای بنویسیم که شامل "
+"نوعی دستور جادویی باشد و زمانی را که یک پروندهٔ منبع نیاز به همگردانی دارد "
+"به ما بگوید. حال تمام آنچه که نیاز داریم برنامه‌ایست که بتواند این دستورات "
+"را بفهمد، از آنجا که فهم آن برای پوسته کمی پیچیده است."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1410
@@ -2443,6 +2447,8 @@ msgid ""
 "Another useful property of makefiles is that the targets do not have to be "
 "programs. For instance, we could have a make file that looks like this:"
 msgstr ""
+"یکی از ویژگی‌های کاربردی makefile ها این است که اهداف‌ لازم نیست برنامه "
+"باشند. برای مثال، make file ما می‌تواند بدین شکل باشد:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:1480
@@ -2464,17 +2470,21 @@ msgstr ""
 #: book.translate.xml:1486
 msgid "We can tell make which target we want to make by typing:"
 msgstr ""
+"می‌توانیم با وارد کردن عبارات زیر به make بگوییم قصد ساختن کدام هدف را داریم "
+":"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:1489
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>make <replaceable>target</replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>make "
+"<replaceable>target</replaceable></userinput>"
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:1494 book.translate.xml:1503 book.translate.xml:1506
 msgid "install"
-msgstr ""
+msgstr "install"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1491
@@ -2483,11 +2493,14 @@ msgid ""
 "others. For example, if we type <userinput>make foo</userinput> with the "
 "makefile above, make will ignore the <_:buildtarget-1/> target."
 msgstr ""
+"دستور <command>make</command> آنگاه فقط به آن هدف نگاه می‌کند و باقی را "
+"نادیده می‌گیرد. برای مثال، اگر <userinput>make foo</userinput> را با "
+"makefile بالا بنویسیم، make هدف <_:buildtarget-1/> را نادیده می‌گیرد."
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:1501
 msgid "foo"
-msgstr ""
+msgstr "foo"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1497
