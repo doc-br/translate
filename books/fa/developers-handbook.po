@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
 "PO-Revision-Date: 2020-08-02 20:42+0000\n"
-"Last-Translator: Parsa Samet <qps@irbug.org>\n"
+"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -2395,6 +2395,12 @@ msgid ""
 "<filename>Makefile</filename>, as this puts it near the top of a directory "
 "listing, where it can easily be seen.<_:footnote-1/>"
 msgstr ""
+"پرونده‌های Makefile به‌طور معمول در همان مسیر پرونده‌های مورد نظرشان نگه "
+"داشته می‌شنوند، و می‌توانند <filename>makefile</filename>، "
+"<filename>Makefile</filename> یا <filename>MAKEFILE</filename> نامیده شوند. "
+"بیشتر برنامه‌نویس‌ها نام <filename>Makefile</filename> را استفاده می‌کنند، "
+"زیرا این کار آن را در نزدیکی صدر فهرست مسیر قرار می‌دهد، جایی که به راحتی می‌"
+"تواند دیده شود.<_:footnote-1/>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1435
@@ -2434,6 +2440,15 @@ msgid ""
 "at the creation line to find out what to do. In other words, this is the "
 "rule for working out when <filename>foo.c</filename> needs to be re-compiled."
 msgstr ""
+"خط وابستگی در اینجا متشکل از نام برنامه (شناخته شده به‌عنوان "
+"<firstterm>target</firstterm>)، به همراه دونقطه، بعد فاصله خالی، و سپس نام "
+"پروندهٔ منبع است. زمانی که <command>make</command> این خط را می‌خواند، می‌"
+"بیند که آیا <filename>foo</filename> وجود دارد؛ اگر باشد، زمان آخرین تغییر "
+"<filename>foo</filename> و <filename>foo.c</filename> را مقایسه می‌کند. اگر "
+"<filename>foo</filename> وجود نداشته باشد، یا قدیمی‌تر از <filename>foo.c</"
+"filename> باشد، سپس به دنبال خط ایجاد می‌گردد تا ببیند چه باید انجام دهد. "
+"به‌گفته‌ای دیگر، این قاعده کار در زمانی است که <filename>foo.c</filename> "
+"نیاز به همگردانی مجدد دارد."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1458
@@ -2445,6 +2460,12 @@ msgid ""
 "executes this command to create it. In other words, this is the rule which "
 "tells make how to re-compile <filename>foo.c</filename>."
 msgstr ""
+"خط ایجاد با یک <token>tab</token> شروع می‌شود (کلید <keycap>tab</keycap> را "
+"فشار دهید) و سپس دستوری که اگر بنا به انجام دستی بود شما در خط فرمان برای "
+"ایجاد <filename>foo</filename> می‌نوشتید. اگر <filename>foo</filename> قدیمی "
+"باشد، یا موجود نباشد، <command>make</command> این دستور را برای ایجادش اجرا "
+"می‌کند. به‌گفته‌ای دیگر، این قاعده کاری است که به make می‌گوید چطور "
+"<filename>foo.c</filename> را همگردانی مجدد کند."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1467
@@ -2456,6 +2477,12 @@ msgid ""
 "it is possible to compile the entire operating system just by typing "
 "<userinput>make world</userinput> in the appropriate directory!"
 msgstr ""
+"در نتیجه، زمانی که می‌نویسید <userinput>make</userinput>، مطمئن می‌شود که "
+"<filename>foo</filename> با توجه به آخرین تغییرات شما در <filename>foo.c</"
+"filename> به روز است. این قاعده می‌تواند در خصوص <filename>Makefile</"
+"filename>هایی با صدها هدف نیز صدق کند - در حقیقت، روی FreeBSD، همگردانی کل "
+"سامانهٔ عامل تنها با نوشتن <userinput>make world</userinput> در مسیر مناسب "
+"متحقق است!"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1476
@@ -2527,6 +2554,11 @@ msgid ""
 "buildtarget-1/> target, re-compile <filename>foo</filename> if necessary, "
 "and then stop without going on to the <_:buildtarget-2/> target."
 msgstr ""
+"اگر ما <userinput>make</userinput> را به تنهایی بنویسیم، make همیشه به اولین "
+"هدف نگاه می‌کند و بعد بدون دیدن هیچکدام دیگر متوقف می‌شود. پس اگر اینجا می‌"
+"نوشتیم <userinput>make</userinput>، تنها به هدف <_:buildtarget-1/> می‌رفت، "
+"در صورت نیاز دوباره <filename>foo</filename> را همگردانی می‌کرد، و سپس بدون "
+"ادامه دادن به هدف <_:buildtarget-2/> پایان می‌گرفت."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1506
