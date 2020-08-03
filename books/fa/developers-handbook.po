@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-03 15:03+0000\n"
+"PO-Revision-Date: 2020-08-03 15:43+0000\n"
 "Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -2589,6 +2589,12 @@ msgid ""
 "command> is very useful here—it changes the date on a file without you "
 "having to edit it."
 msgstr ""
+"این موضوع کمی پیچیده است برای توضیح. اگر نمی‌دانید <command>make</command> "
+"چطور کار می‌کند، بهترین کار نوشتن برنامه ساده‌ای مانند <quote>hello world</"
+"quote> و یک پروندهٔ make شبیه به نمونهٔ بالا و آزمایش آن است. سپس به نوشتن "
+"چند پروندهٔ منبع پیش بروید، یا به فراخوانی از پرونده‌ٔ سرآیند در کد منبع. "
+"دستور <command>touch</command> اینجا بسیار مفید است - بدون نیاز به ویرایش "
+"تاریخ پرونده را تغییر می‌دهد."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1527
@@ -2648,6 +2654,13 @@ msgid ""
 "files and to produce a list of include-files and their dependencies: "
 "<option>-MM</option>."
 msgstr ""
+"لحظه‌ای که پروژهٔ شما در حال بزرگ‌تر شدن است و شما پرونده‌های سرآیند بیشتر و "
+"بیشتری را باید مدیریت کنید، پیگیری تمام پرونده‌های سرآیند و پرونده‌هایی که "
+"رو آنها تکیه می‌کنند بسیار دشوار می‌شود. اگر پروندهٔ سرآیندی را تغییر دهید و "
+"فراموش کنید که تمام پرونده‌های وابسته به آن را دوباره همگردانی کنید، نتیجه "
+"مخرب خواهد بود. <command>clang</command> امکانی برای بررسی پرونده‌های شما و "
+"تولید فهرستی از پرونده‌های سرآیند و وابستگی‌هایشان دارد: "
+"<option>-MM</option>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1554
@@ -2765,6 +2778,8 @@ msgid ""
 "known, good, copy of the source. This is to make sure that the source was "
 "not corrupted while in transit."
 msgstr ""
+"سرجمع منبع حساب شده است و با یک سرجمع شناخته شده و درست از همان منبع مقایسه "
+"می‌شود. این امر برای حصول اطمینان از سالم بودن منبع به‌هنگام انتقال است."
 
 #. (itstool) path: step/para
 #: book.translate.xml:1611
@@ -2772,6 +2787,8 @@ msgid ""
 "Any changes required to make the source work on FreeBSD are applied—this is "
 "known as <firstterm>patching</firstterm>."
 msgstr ""
+"هر تغییر ضرروی‌ای برای اطمینان از کارکرد منبع بر روی FreeBSD اعمال شده‌است - "
+"این به‌عنوان <firstterm>رفع اشکال</firstterm> شناخته می‌شود."
 
 #. (itstool) path: step/para
 #: book.translate.xml:1617
