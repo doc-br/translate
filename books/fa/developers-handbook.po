@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-03 16:50+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"PO-Revision-Date: 2020-08-04 16:57+0000\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -2829,12 +2829,12 @@ msgid ""
 "<database>package database</database>, so that the port can easily be "
 "uninstalled later if we change our mind about it."
 msgstr ""
-"ما اکنون نسخه‌ای از برنامه همگردانی شده داریم. اگر بخواهیم، می‌توانیم تست "
-"کنیم؛ هر زمان که در مورد برنامه احساس اطمینان کنیم، می‌توانیم بنویسیم "
-"<userinput>make install</userinput>. این باعث می‌شود که برنامه و تمام پرونده‌"
-"های حمایتی‌ای که نیازش دارد در مسیر درست کپی شوند؛ همچنین داده‌ای در "
+"ما اکنون نسخه‌ای همگردان‌شده از برنامه را در اختیار داریم. اگر بخواهیم، می‌"
+"توانیم تست کنیم؛ هر زمان که در مورد برنامه احساس اطمینان کنیم، می‌توانیم "
+"بنویسیم <userinput>make install</userinput>. این باعث می‌شود برنامه به‌همراه "
+"تمام پرونده‌های پشتیبانی موردنیازش در مسیر درست کپی شوند؛ همچنین داده‌ای در "
 "<database>package database</database> ثبت می‌شود، در نتیجه اگر زمانی تغییر "
-"نظر بدیم پورت به راحتی می‌تواند پاک شود."
+"نظر بدهیم، پورت به‌راحتی می‌تواند پاک شود."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1645
@@ -2855,6 +2855,13 @@ msgid ""
 "handling any errors that may occur) and anyone can get access to that just "
 "by putting a single line in their own make file!"
 msgstr ""
+"راز آن در آخرین خط نهفته است، آنجا که به <command>make</command> می‌گوید "
+"داخل makefile سامانه به نام <filename>bsd.port.mk</filename> را نگاه کن. "
+"غفلت از این خط آسان است، اما اینجا همان بخشی است که تمام مسائل هوشمندانه "
+"می‌آیند—کسی یک makefile نوشته است که به <command>make</command> می‌گوید تمام "
+"کارهای بالا را انجام دهد (افزون بر تعدادی کارهای دیگر، مانند رسیدگی به "
+"هرگونه خطای احتمالی) و هرکس می‌تواند تنها با اضافه کردن یک خط درون پروندهٔ "
+"make خود به آن دست‌یابد!"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1658
@@ -2864,6 +2871,10 @@ msgid ""
 "a bit of practice with makefiles, as they are very complicated (and if you "
 "do look at them, make sure you have a flask of strong coffee handy!)"
 msgstr ""
+"اگر می‌خواهید نگاهی به این پرونده‌های make در سامانه داشته باشید، آنها در "
+"<filename>/usr/share/mk</filename> هستند، اما احتمالاً بهتر است منتظر بمانید "
+"تا زمانی‌که اندکی تمرین با آنها داشته باشید، زیرا بسیار پیچیده‌اند (و اگر "
+"آنها را نگاه کردید، مطمئن شوید یک فلاسک قهوهٔ قوی دم دستتان باشد!)"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1667
@@ -2880,6 +2891,12 @@ msgid ""
 "hopefully this introduction will have given you a base from which you can do "
 "this."
 msgstr ""
+"<command>Make</command> ابزار بسیار قدرتمندی است، و می‌تواند کارهای بسیار "
+"بیشتری نسبت به آنچه در مثال بالا مشاهده کردید را انجام دهد. متأسفانه، نسخه‌"
+"های مختلفی از <command>make</command> وجود دارد، و آنها به‌شکل قابل‌توجهی "
+"متفاوت از یکدیگرند. بهترین روش برای یادگیری آنها مطالعهٔ مستندات است—"
+"خوشبختانه این پیش‌درآمد پایه‌ای برای شما فراهم کرده است که به‌کمک آن این امر "
+"میسر می‌شود."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1677
@@ -2888,6 +2905,9 @@ msgid ""
 "make</application>; there is a tutorial for it in <filename>/usr/share/doc/"
 "psd/12.make</filename>. To view it, do"
 msgstr ""
+"نسخه‌ای که به‌همراه FreeBSD می‌آید <application>Berkeley make</application> "
+"است؛ آموزه‌ای در مسیرِ <filename>/usr/share/doc/psd/12.make</filename> بدین "
+"منظور در دسترس است. برای مشاهدهٔ آن، وارد کنید"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:1682
@@ -2898,7 +2918,7 @@ msgstr "<prompt>%</prompt> <userinput>zmore paper.ascii.gz</userinput>"
 #. (itstool) path: sect2/para
 #: book.translate.xml:1684
 msgid "in that directory."
-msgstr "در آن مسیر."
+msgstr "در همان مسیر."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1686
@@ -2909,6 +2929,11 @@ msgid ""
 "automatically have been installed as <command>gmake</command>. It is also "
 "available as a port and package in its own right."
 msgstr ""
+"بسیاری از برنامه‌های موجود در پورت‌ها از <application>GNU make</application> "
+"استفاده می‌کنند، که شامل مجموعه‌ای بسیار خوب از صفحات <quote>اطلاعات</quote> "
+"هستند. اگر هرکدام از این پورت‌ها را نصب کرده باشید، <application>GNU make</"
+"application> به‌طور خودکار تحت عنوان <command>gmake</command> نصب خواهد شد. "
+"همچنین به‌عنوان پورت و بسته‌ای جدا در دسترس است."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1693
@@ -2917,6 +2942,9 @@ msgid ""
 "have to edit <filename>dir</filename> in the <filename>/usr/local/info</"
 "filename> directory to add an entry for it. This involves adding a line like"
 msgstr ""
+"برای آنکه صفحهٔ اطلاعاتِ <application>GNU make</application> را ببینید، لازم "
+"است <filename>dir</filename> در مسیر <filename>/usr/local/info</filename> را "
+"ویرایش کنید تا ورودی‌ای برای آن اضافه کنید. این شامل اضافه‌کردن خطی مانند"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:1699
@@ -2931,6 +2959,10 @@ msgid ""
 "userinput> and then select <guimenuitem>make</guimenuitem> from the menu (or "
 "in <application>Emacs</application>, do <userinput>C-h i</userinput>)."
 msgstr ""
+"به پرونده است. پس از انجام این کار، می‌توانید عبارت <userinput>info</"
+"userinput> را وارد کنید و سپس <guimenuitem>make</guimenuitem> را از فهرست "
+"انتخاب کنید (یا در محیطِ <application>Emacs</application>، بزنید "
+"<userinput>C-h i</userinput>)."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1710
@@ -2944,6 +2976,7 @@ msgstr "پیش‌درآمدی بر اشکال‌زدا‌های موجود"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1715
+#, fuzzy
 msgid ""
 "Using a debugger allows running the program under more controlled "
 "circumstances. Typically, it is possible to step through the program a line "
@@ -2954,6 +2987,14 @@ msgid ""
 "kernel, though that is a little trickier than the user applications we will "
 "be discussing in this section."
 msgstr ""
+"استفاده از اشکال‌زدا این امکان را فراهم می‌کند تا برنامه را تحت شرایط "
+"کنترل‌شده‌تری راه‌اندازی کنیم. به‌طور معمول، این امکان هست تا هربار، وارد یک "
+"خط از برنامه شد، ارزش متغیرها را وارسی کرد، آنها را تغییر داد، به اشکال‌زدا "
+"گفت تا کدام مرحله اجرا و سپس توقف کند، و به‌همین ترتیب. همچنین ممکن است یک "
+"برنامهٔ در حال اجرا را به آن منسوب کرد، یا یک پروندهٔ هسته‌ (حافظه) را جهت "
+"بررسی علل خراب‌شدن برنامه بارگیری کرد. حتی امکان اشکال‌زدایی هسته نیز هست، "
+"گرچه این کمی پیچیده‌تر از اشکال‌زدایی برنامه‌هایی است که ما قرار است در این "
+"بخش مطرح کنیم."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1726
@@ -2962,6 +3003,9 @@ msgid ""
 "does not cover specialized topics such as debugging the kernel. For more "
 "information about that, refer to <xref linkend=\"kerneldebug\"/>."
 msgstr ""
+"این بخش به‌عنوان پیش‌درآمدی سریع بر استفاده از اشکال‌زداها در نظر گرفته شده "
+"است و موضوعات تخصصی چون اشکال‌زداییِ هسته را پوشش نمی‌دهد. برای اطلاعات "
+"بیشتر در آن مورد، به <xref linkend=\"kerneldebug\"/> رجوع کنید."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1731
@@ -2973,6 +3017,12 @@ msgid ""
 "<userinput>help</userinput> command, as well as <link xlink:href=\"https://"
 "lldb.llvm.org/\">a web tutorial and documentation</link>."
 msgstr ""
+"اشکال‌زدای استانداردِ عرضه‌شده با FreeBSD نسخهٔ 12.1 <command>lldb</command> "
+"(<application>LLVM debugger</application>) نام دارد. نیاز به انجام کار خاصی "
+"به‌منظور استفاده از آن نیست، زیرا قسمتی از نصب استاندارد آن توزیع هست. دارای "
+"دستور کمک مناسبی است، قابل‌دسترس از طریق دستور <userinput>help</userinput>، "
+"و نیز <link xlink:href=\"https://lldb.llvm.org/\">آموزه و مستندات تحت "
+"وب</link>."
 
 #. (itstool) path: note/para
 #: book.translate.xml:1741
@@ -3009,28 +3059,30 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:1768
 msgid "Using lldb"
-msgstr ""
+msgstr "استفاده از lldb"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:1771
 msgid "Starting lldb"
-msgstr ""
+msgstr "راه‌اندازیِ lldb"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1773
 msgid "Start up lldb by typing"
-msgstr ""
+msgstr "lldb را با نوشتن عبارات زیر راه‌اندازی کنید"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:1775
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>lldb -- <replaceable>progname</replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>lldb -- "
+"<replaceable>progname</replaceable></userinput>"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:1779
 msgid "Running a Program with lldb"
-msgstr ""
+msgstr "اجرای برنامه با lldb"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1781
