@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-04 19:36+0000\n"
+"PO-Revision-Date: 2020-08-04 20:30+0000\n"
 "Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -3100,7 +3100,7 @@ msgstr ""
 #: book.translate.xml:1787
 #, no-wrap
 msgid "Breakpoint 1: where = temp`main, address = …"
-msgstr ""
+msgstr "Breakpoint 1: where = temp`main, address = …"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1789
@@ -3168,6 +3168,24 @@ msgid ""
 "\treturn anint;\n"
 "}"
 msgstr ""
+"#include &lt;stdio.h&gt;\n"
+"\n"
+"int bazz(int anint);\n"
+"\n"
+"main() {\n"
+"\tint i;\n"
+"\n"
+"\tprintf(\"This is my program\\n"
+"\");\n"
+"\tbazz(i);\n"
+"\treturn 0;\n"
+"}\n"
+"\n"
+"int bazz(int anint) {\n"
+"\tprintf(\"You gave me %d\\n"
+"\", anint);\n"
+"\treturn anint;\n"
+"}"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1839 book.translate.xml:2116
@@ -3191,6 +3209,10 @@ msgid ""
 "This is my program\n"
 "anint = -5360"
 msgstr ""
+"<prompt>%</prompt> <userinput>cc -g -o temp temp.c</userinput>\n"
+"<prompt>%</prompt> <userinput>./temp</userinput>\n"
+"This is my program\n"
+"anint = -5360"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1851
@@ -3244,6 +3266,62 @@ msgid ""
 "   16\t}\n"
 "(lldb)"
 msgstr ""
+"<prompt>%</prompt> <userinput>lldb -- temp</userinput>\n"
+"(lldb) target create \"temp\"\n"
+"Current executable set to 'temp' (x86_64).\n"
+"(lldb) <userinput>breakpoint set -n main</userinput>\t\t\t\t"
+"<lineannotation>Skip the set-up code</lineannotation>\n"
+"Breakpoint 1: where = temp`main + 15 at temp.c:8:2, address = "
+"0x00000000002012ef\t<lineannotation>lldb puts breakpoint at "
+"main()</lineannotation>\n"
+"(lldb) <userinput>process launch</userinput>\t\t\t\t\t<lineannotation>Run as "
+"far as main()</lineannotation>\n"
+"Process 9992 launching\n"
+"Process 9992 launched: '/home/pauamma/tmp/temp' (x86_64)\t"
+"<lineannotation>Program starts running</lineannotation>\n"
+"\n"
+"Process 9992 stopped\n"
+"* thread #1, name = 'temp', stop reason = breakpoint 1.1\t"
+"<lineannotation>lldb stops at main()</lineannotation>\n"
+"    frame #0: 0x00000000002012ef temp`main at temp.c:8:2\n"
+"   5\tmain() {\n"
+"   6\t\tint i;\n"
+"   7\n"
+"-&gt; 8\t\tprintf(\"This is my program\\n"
+"\");\t\t\t<lineannotation>Indicates the line where it "
+"stopped</lineannotation>\n"
+"   9\t\tbazz(i);\n"
+"   10\t\treturn 0;\n"
+"   11\t}\n"
+"(lldb) <userinput>thread step-over</userinput>\t\t\t<lineannotation>Go to "
+"next line</lineannotation>\n"
+"This is my program\t\t\t\t\t\t<lineannotation>Program prints "
+"out</lineannotation>\n"
+"Process 9992 stopped\n"
+"* thread #1, name = 'temp', stop reason = step over\n"
+"    frame #0: 0x0000000000201300 temp`main at temp.c:9:7\n"
+"   6\t\tint i;\n"
+"   7\n"
+"   8\t\tprintf(\"This is my program\\n"
+"\");\n"
+"-&gt; 9\t\tbazz(i);\n"
+"   10\t\treturn 0;\n"
+"   11\t}\n"
+"   12\n"
+"(lldb) <userinput>thread step-in</userinput>\t\t\t<lineannotation>step into "
+"bazz()</lineannotation>\n"
+"Process 9992 stopped\n"
+"* thread #1, name = 'temp', stop reason = step in\n"
+"    frame #0: 0x000000000020132b temp`bazz(anint=-5360) at temp.c:14:29\t"
+"<lineannotation>lldb displays stack frame</lineannotation>\n"
+"   11\t}\n"
+"   12\n"
+"   13\tint bazz(int anint) {\n"
+"-&gt; 14\t\tprintf(\"You gave me %d\\n"
+"\", anint);\n"
+"   15\t\treturn anint;\n"
+"   16\t}\n"
+"(lldb)"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1897
@@ -3252,6 +3330,9 @@ msgid ""
 "literal>? Was it not set to <literal>5</literal> in <function>main()</"
 "function>? Let us move up to <function>main()</function> and have a look."
 msgstr ""
+"Hang on a minute! How did <symbol>anint</symbol> get to be <literal>-5360</"
+"literal>? Was it not set to <literal>5</literal> in <function>main()</"
+"function>? Let us move up to <function>main()</function> and have a look."
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:1903
@@ -3269,6 +3350,22 @@ msgid ""
 "(lldb) <userinput>frame variable i</userinput>\t\t\t<lineannotation>Show us the value of i</lineannotation>\n"
 "(int) i = -5360\t\t\t\t\t\t\t<lineannotation>lldb displays -5360</lineannotation>"
 msgstr ""
+"(lldb) <userinput>up</userinput>\t\t<lineannotation>Move up call "
+"stack</lineannotation>\n"
+"frame #1: 0x000000000020130b temp`main at temp.c:9:2\t\t<lineannotation>lldb "
+"displays stack frame</lineannotation>\n"
+"   6\t\tint i;\n"
+"   7\n"
+"   8\t\tprintf(\"This is my program\\n"
+"\");\n"
+"-&gt; 9\t\tbazz(i);\n"
+"   10\t\treturn 0;\n"
+"   11\t}\n"
+"   12\n"
+"(lldb) <userinput>frame variable i</userinput>\t\t\t<lineannotation>Show us "
+"the value of i</lineannotation>\n"
+"(int) i = -5360\t\t\t\t\t\t\t<lineannotation>lldb displays "
+"-5360</lineannotation>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1915 book.translate.xml:2158
@@ -3289,6 +3386,14 @@ msgid ""
 "\tprintf(\"This is my program\\n\");\n"
 "<lineannotation>…</lineannotation>"
 msgstr ""
+"<lineannotation>…</lineannotation>\n"
+"main() {\n"
+"\tint i;\n"
+"\n"
+"\ti = 5;\n"
+"\tprintf(\"This is my program\\n"
+"\");\n"
+"<lineannotation>…</lineannotation>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1926
@@ -3351,6 +3456,15 @@ msgid ""
 "Core file '/home/pauamma/tmp/<filename><replaceable>progname</replaceable>.core</filename>' (x86_64) was loaded.\n"
 "(lldb)"
 msgstr ""
+"<prompt>%</prompt> <userinput>lldb -c "
+"<filename><replaceable>progname</replaceable>.core</filename> -- "
+"<filename><replaceable>progname</replaceable></filename></userinput>\n"
+"(lldb) target create \""
+"<filename><replaceable>progname</replaceable></filename>\" --core \""
+"<filename><replaceable>progname</replaceable></filename>.core\"\n"
+"Core file '/home/pauamma/tmp/<filename><replaceable>progname</replaceable>."
+"core</filename>' (x86_64) was loaded.\n"
+"(lldb)"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1972
@@ -3374,6 +3488,19 @@ msgid ""
 "    frame #2: 0x000000000020110f <filename><replaceable>progname</replaceable></filename>`_start(ap=&lt;unavailable&gt;, cleanup=&lt;unavailable&gt;) at crt1.c:76:7\n"
 "(lldb)"
 msgstr ""
+"(lldb) <userinput>thread backtrace all</userinput>\n"
+"* thread #1, name = '<filename><replaceable>progname</replaceable></"
+"filename>', stop reason = signal SIGSEGV\n"
+"  * frame #0: 0x0000000000201347 "
+"<filename><replaceable>progname</replaceable></filename>`bazz(anint=5) at "
+"temp2.c:17:10\n"
+"    frame #1: 0x0000000000201312 "
+"<filename><replaceable>progname</replaceable></filename>`main at temp2.c:10:"
+"2\n"
+"    frame #2: 0x000000000020110f <filename><replaceable>progname</replaceable"
+"></filename>`_start(ap=&lt;unavailable&gt;, cleanup=&lt;unavailable&gt;) at "
+"crt1.c:76:7\n"
+"(lldb)"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1989
@@ -3413,6 +3540,8 @@ msgstr ""
 #, no-wrap
 msgid "(lldb) <userinput>process attach -p <replaceable>pid</replaceable></userinput>"
 msgstr ""
+"(lldb) <userinput>process attach -p "
+"<replaceable>pid</replaceable></userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2016
@@ -3443,6 +3572,17 @@ msgid ""
 "} else {\t\t\t/* parent */\n"
 "\t<lineannotation>…</lineannotation>"
 msgstr ""
+"<lineannotation>…</lineannotation>\n"
+"if ((pid = fork()) &lt; 0)\t\t/* _Always_ check this */\n"
+"\terror();\n"
+"else if (pid == 0) {\t\t/* child */\n"
+"\tint PauseMode = 1;\n"
+"\n"
+"\twhile (PauseMode)\n"
+"\t\tsleep(10);\t/* Wait until someone attaches to us */\n"
+"\t<lineannotation>…</lineannotation>\n"
+"} else {\t\t\t/* parent */\n"
+"\t<lineannotation>…</lineannotation>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2036
@@ -3472,6 +3612,8 @@ msgstr ""
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>gdb <replaceable>progname</replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>gdb "
+"<replaceable>progname</replaceable></userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2053
@@ -3485,6 +3627,7 @@ msgstr ""
 #, no-wrap
 msgid "<userinput>M-x gdb RET <replaceable>progname</replaceable> RET</userinput>"
 msgstr ""
+"<userinput>M-x gdb RET <replaceable>progname</replaceable> RET</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2058
@@ -3511,7 +3654,7 @@ msgstr ""
 #: book.translate.xml:2074
 #, no-wrap
 msgid "… (no debugging symbols found) …"
-msgstr ""
+msgstr "… (no debugging symbols found) …"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2076
@@ -3557,6 +3700,10 @@ msgid ""
 "This is my program\n"
 "anint = 4231"
 msgstr ""
+"<prompt>%</prompt> <userinput>cc -g -o temp temp.c</userinput>\n"
+"<prompt>%</prompt> <userinput>./temp</userinput>\n"
+"This is my program\n"
+"anint = 4231"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2128
@@ -3584,6 +3731,33 @@ msgid ""
 "bazz (anint=4231) at temp.c:17\t\t\t<lineannotation>gdb displays stack frame</lineannotation>\n"
 "(gdb)"
 msgstr ""
+"<prompt>%</prompt> <userinput>gdb temp</userinput>\n"
+"GDB is free software and you are welcome to distribute copies of it\n"
+" under certain conditions; type \"show copying\" to see the conditions.\n"
+"There is absolutely no warranty for GDB; type \"show warranty\" for details."
+"\n"
+"GDB 4.13 (i386-unknown-freebsd), Copyright 1994 Free Software Foundation, "
+"Inc.\n"
+"(gdb) <userinput>break main</userinput>\t\t\t\t<lineannotation>Skip the set-"
+"up code</lineannotation>\n"
+"Breakpoint 1 at 0x160f: file temp.c, line 9.\t<lineannotation>gdb puts "
+"breakpoint at main()</lineannotation>\n"
+"(gdb) <userinput>run</userinput>\t\t\t\t\t<lineannotation>Run as far as "
+"main()</lineannotation>\n"
+"Starting program: /home/james/tmp/temp\t\t<lineannotation>Program starts "
+"running</lineannotation>\n"
+"\n"
+"Breakpoint 1, main () at temp.c:9\t\t<lineannotation>gdb stops at "
+"main()</lineannotation>\n"
+"(gdb) <userinput>n</userinput>\t\t\t\t\t\t<lineannotation>Go to next "
+"line</lineannotation>\n"
+"This is my program\t\t\t\t<lineannotation>Program prints out</lineannotation>"
+"\n"
+"(gdb) <userinput>s</userinput>\t\t\t\t\t\t<lineannotation>step into "
+"bazz()</lineannotation>\n"
+"bazz (anint=4231) at temp.c:17\t\t\t<lineannotation>gdb displays stack "
+"frame</lineannotation>\n"
+"(gdb)"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2148
@@ -3602,6 +3776,13 @@ msgid ""
 "(gdb) <userinput>p i</userinput>\t\t\t\t\t<lineannotation>Show us the value of i</lineannotation>\n"
 "$1 = 4231\t\t\t\t\t<lineannotation>gdb displays 4231</lineannotation>"
 msgstr ""
+"(gdb) <userinput>up</userinput>\t\t\t\t\t<lineannotation>Move up call "
+"stack</lineannotation>\n"
+"#1  0x1625 in main () at temp.c:11\t\t<lineannotation>gdb displays stack "
+"frame</lineannotation>\n"
+"(gdb) <userinput>p i</userinput>\t\t\t\t\t<lineannotation>Show us the value "
+"of i</lineannotation>\n"
+"$1 = 4231\t\t\t\t\t<lineannotation>gdb displays 4231</lineannotation>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2169
@@ -3641,6 +3822,7 @@ msgstr ""
 #, no-wrap
 msgid "(gdb) <userinput>core <replaceable>progname</replaceable>.core</userinput>"
 msgstr ""
+"(gdb) <userinput>core <replaceable>progname</replaceable>.core</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2207
@@ -3670,6 +3852,22 @@ msgid ""
 "#0  0x164a in bazz (anint=0x5) at temp.c:17\n"
 "(gdb)"
 msgstr ""
+"<prompt>%</prompt> <userinput>gdb "
+"<filename><replaceable>progname</replaceable></filename></userinput>\n"
+"GDB is free software and you are welcome to distribute copies of it\n"
+" under certain conditions; type \"show copying\" to see the conditions.\n"
+"There is absolutely no warranty for GDB; type \"show warranty\" for details."
+"\n"
+"GDB 4.13 (i386-unknown-freebsd), Copyright 1994 Free Software Foundation, "
+"Inc.\n"
+"(gdb) <userinput>core <filename><replaceable>progname</replaceable>."
+"core</filename></userinput>\n"
+"Core was generated by "
+"`<filename><replaceable>progname</replaceable></filename>'.\n"
+"Program terminated with signal 11, Segmentation fault.\n"
+"Cannot access memory at address 0x7020796d.\n"
+"#0  0x164a in bazz (anint=0x5) at temp.c:17\n"
+"(gdb)"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2224
@@ -3700,6 +3898,11 @@ msgid ""
 "#2  0x162c in main () at temp.c:11\n"
 "(gdb)"
 msgstr ""
+"(gdb) <userinput>bt</userinput>\n"
+"#0  0x164a in bazz (anint=0x5) at temp.c:17\n"
+"#1  0xefbfd888 in end ()\n"
+"#2  0x162c in main () at temp.c:11\n"
+"(gdb)"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2244
@@ -3735,7 +3938,7 @@ msgstr ""
 #: book.translate.xml:2263
 #, no-wrap
 msgid "(gdb) <userinput>attach <replaceable>pid</replaceable></userinput>"
-msgstr ""
+msgstr "(gdb) <userinput>attach <replaceable>pid</replaceable></userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2265
