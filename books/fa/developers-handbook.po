@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-04 20:30+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"PO-Revision-Date: 2020-08-05 20:43+0000\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -3038,6 +3038,7 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1748
+#, fuzzy
 msgid ""
 "The other debugger available with FreeBSD is called <command>gdb</command> "
 "(<application>GNU debugger</application>). Unlike lldb, it is not installed "
@@ -3048,6 +3049,14 @@ msgid ""
 "package> there as well. It has quite good on-line help, as well as a set of "
 "info pages."
 msgstr ""
+"اشکال‌زدای دیگری که در FreeBSD هست <command>gdb</command> (<application>GNU "
+"debugger</application>) نام دارد. برخلاف lldb، به‌طور پیش‌فرض در FreeBSD "
+"12.1 نصب نشده است؛ برای استفاده از آن، <package>devel/gdb</package> را از "
+"طریق پورت یا بسته‌ها <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US."
+"ISO8859-1/books/handbook/ports-using.html\">نصب کنید</link>. نسخهٔ از پیش "
+"نصب‌شدهٔ موجود در FreeBSD 11.3 قدیمی است؛ در عوض، <package>devel/gdb</"
+"package> را در آنجا نیز نصب کنید.در کنار مجموعه‌ای از صفحات اطلاعات، راهنمای "
+"برخطِ بسیار خوبی نیز دارد."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1758
@@ -3058,6 +3067,13 @@ msgid ""
 "command> as <command>lldb</command> is unsupported by <application>Emacs</"
 "application>. Otherwise, try both and see which one you prefer."
 msgstr ""
+"اینکه کدام یک را استفاده کنید تا حد زیادی به سلیقهٔ شما برمی‌گردد. اگر فقط "
+"با یکی از آنها آشنا هستید، از همان استفاده کنید. اشخاصی که با هردوی آنها "
+"آشنایی دارند یا هیچکدام را نمی‌شناسند اما می‌خواهند یک کدام را از داخل "
+"<application>Emacs</application> استفاده کنند لازم است از <command>gdb</"
+"command> استفاده کنند زیرا <command>lldb</command> توسط <application>Emacs</"
+"application> پشتیبانی نمی‌شود. در غیر این صورت، هر دو را استفاده کنید و "
+"ببینید کدام را ترجیح می‌دهید."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1768
@@ -3095,6 +3111,10 @@ msgid ""
 "name of the function currently running, instead of the source code. If it "
 "displays a line like:"
 msgstr ""
+"برنامه را با<option>-g</option> همگردان کنید تا بیشترین بهره را از استفادهٔ "
+"<command>lldb</command> ببرید. بدون آن نیز کار خواهد کرد، اما به‌جای کد منبع،"
+" تنها نام تابعِ در حال اجرا به شما نشان داده خواهد شد. اگر خطی مانند این را "
+"نمایش می‌دهد:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:1787
@@ -3109,6 +3129,9 @@ msgid ""
 "a breakpoint, this means that the program was not compiled with <option>-g</"
 "option>."
 msgstr ""
+"(بدون هیچ اشاره‌ای به نام پرونده و شماره خطِ کد منبع) هنگامی‌که نقطهٔ گسست "
+"را تعیین می‌کنیم، بدین معناست که برنامه بدون <option>-g</option> همگردان شده "
+"است."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:1794
@@ -3116,6 +3139,8 @@ msgid ""
 "Most <command>lldb</command> commands have shorter forms that can be used "
 "instead. The longer forms are used here for clarity."
 msgstr ""
+"بیشتر دستورات <command>lldb</command> صورت‌های کوتاه‌تری دارند که می‌توان در "
+"عوض آنها را به‌کار برد. صورت‌های بلندتر برای شفافیت در اینجا به‌کار رفته‌اند."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1799
@@ -3128,9 +3153,16 @@ msgid ""
 "code and then get stopped by the debugger when it calls <function>main()</"
 "function>."
 msgstr ""
+"در اعلانِ <command>lldb</command>، وارد کنید <userinput>breakpoint set -n "
+"main</userinput>. این به اشکال‌زدا می‌گوید که کد راه‌اندازیِ مقدماتیِ برنامهٔ"
+" در حال اجرا را نمایش ندهد و اجرا را در ابتدای کد برنامه متوقف سازد. حال "
+"بنویسید <userinput>process launch</userinput> تا برنامه را آغاز کنید— از "
+"ابتدای کدِ راه‌اندازی آغاز می‌کند و سپس زمانی‌که اشکال‌زدا <function>main()</"
+"function> را صدا می‌زند، متوقف می‌شود."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1809
+#, fuzzy
 msgid ""
 "To step through the program a line at a time, type <userinput>thread step-"
 "over</userinput>. When the program gets to a function call, step into it by "
@@ -3139,6 +3171,12 @@ msgid ""
 "<userinput>up</userinput> and <userinput>down</userinput> to take a quick "
 "look at the caller."
 msgstr ""
+"برای آنکه به‌ازای هر خط وارد برنامه شوید، وارد کنید <userinput>thread step-"
+"over</userinput>. هنگامی‌که برنامه به یک فراخوان تابع می‌رسد، "
+"<userinput>thread step-in</userinput> را وارد کنید تا وارد آن شوید. همین‌که "
+"داخل فراخوان تابع شدید، <userinput>thread step-out</userinput> را وارد کنید "
+"تا از آن خارج شوید یا از <userinput>up</userinput> و <userinput>down</"
+"userinput> استفاده کنید تا نگاهی سریع به فراخوان‌کننده داشته باشید."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1818
@@ -3146,6 +3184,8 @@ msgid ""
 "Here is a simple example of how to spot a mistake in a program with "
 "<command>lldb</command>. This is our program (with a deliberate mistake):"
 msgstr ""
+"در اینجا مثالی ساده از چگونگی تشخیص اشتباه در یک برنامه به‌وسیلهٔ "
+"<command>lldb</command> آمده است. این برنامهٔ ماست (با اشتباهی عمدی):"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:1822 book.translate.xml:2099
@@ -3194,11 +3234,14 @@ msgid ""
 "it to a function <function>bazz()</function> which prints out the number we "
 "gave it."
 msgstr ""
+"این برنامه مقدار <symbol>i</symbol> را <literal>5</literal> قرار می‌دهد و آن "
+"را به تابعِ <function>bazz()</function> می‌دهد که شماره‌ای که ما به آن داده‌"
+"ایم را چاپ می‌کند."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1844 book.translate.xml:2121
 msgid "Compiling and running the program displays"
-msgstr ""
+msgstr "همگردانی و اجرای برنامه نمایش می‌دهد"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:1846
@@ -3217,7 +3260,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:1851
 msgid "That is not what was expected! Time to see what is going on!"
-msgstr ""
+msgstr "این چیزی نیست که انتظار می‌رفت! وقت آن است تا ببینیم جریان چیست!"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:1854
@@ -3330,9 +3373,6 @@ msgid ""
 "literal>? Was it not set to <literal>5</literal> in <function>main()</"
 "function>? Let us move up to <function>main()</function> and have a look."
 msgstr ""
-"Hang on a minute! How did <symbol>anint</symbol> get to be <literal>-5360</"
-"literal>? Was it not set to <literal>5</literal> in <function>main()</"
-"function>? Let us move up to <function>main()</function> and have a look."
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:1903
