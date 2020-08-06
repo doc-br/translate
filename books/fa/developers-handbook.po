@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
 "PO-Revision-Date: 2020-08-06 17:37+0000\n"
-"Last-Translator: Parsa Samet <qps@irbug.org>\n"
+"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -3038,7 +3038,6 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1748
-#, fuzzy
 msgid ""
 "The other debugger available with FreeBSD is called <command>gdb</command> "
 "(<application>GNU debugger</application>). Unlike lldb, it is not installed "
@@ -3055,8 +3054,8 @@ msgstr ""
 "طریق پورت یا بسته‌ها <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US."
 "ISO8859-1/books/handbook/ports-using.html\">نصب کنید</link>. نسخهٔ از پیش "
 "نصب‌شدهٔ موجود در FreeBSD 11.3 قدیمی است؛ در عوض، <package>devel/gdb</"
-"package> را در آنجا نیز نصب کنید.در کنار مجموعه‌ای از صفحات اطلاعات، راهنمای "
-"برخطِ بسیار خوبی نیز دارد."
+"package> را در آنجا نیز نصب کنید. در کنار مجموعه‌ای از صفحات اطلاعات، "
+"راهنمای برخطِ بسیار خوبی نیز دارد."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1758
@@ -3162,7 +3161,6 @@ msgstr ""
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1809
-#, fuzzy
 msgid ""
 "To step through the program a line at a time, type <userinput>thread step-"
 "over</userinput>. When the program gets to a function call, step into it by "
@@ -3173,10 +3171,10 @@ msgid ""
 msgstr ""
 "برای آنکه به‌ازای هر خط وارد برنامه شوید، وارد کنید <userinput>thread step-"
 "over</userinput>. هنگامی‌که برنامه به یک فراخوان تابع می‌رسد، "
-"<userinput>thread step-in</userinput> را وارد کنید تا وارد آن شوید. همین‌که "
-"داخل فراخوان تابع شدید، <userinput>thread step-out</userinput> را وارد کنید "
+"<userinput>thread step-in</userinput> را وارد کنید تا وارد آن شوید. وقتی "
+"داخل فراخوان تابع بودید، <userinput>thread step-out</userinput> را وارد کنید "
 "تا از آن خارج شوید یا از <userinput>up</userinput> و <userinput>down</"
-"userinput> استفاده کنید تا نگاهی سریع به فراخوان‌کننده داشته باشید."
+"userinput> استفاده کنید تا نگاهی سریع به فراخوان داشته باشید."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1818
