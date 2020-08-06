@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-06 23:51+0000\n"
+"PO-Revision-Date: 2020-08-07 02:24+0000\n"
 "Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -3614,8 +3614,9 @@ msgid ""
 "To do that, start up another <command>lldb</command>, use <command>ps</"
 "command> to find the process ID for the child, and do"
 msgstr ""
-"برای انجام این کار، یک <command>lldb</command> اجرا کنید، از <command>ps</"
-"command> برای پیدا کردن نشانی فرآیند فرزند استفاده کنید، و بنویسید"
+"برای انجام این کار، یک <command>lldb</command> دیگر اجرا کنید، از "
+"<command>ps</command> برای پیدا کردن نشانی فرآیند فرزند استفاده کنید، و "
+"بنویسید"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:2014
@@ -3986,6 +3987,11 @@ msgid ""
 "that the program crashed due to trying to access an area in memory that was "
 "not available to it in a function called <function>bazz</function>."
 msgstr ""
+"در این مورد، برنامه <filename><replaceable>progname</replaceable></filename> "
+"نام داشت، پس پروندهٔ حافظه <filename><replaceable>progname</replaceable>."
+"core</filename> نام دارد. می‌توانیم ببینیم که برنامه به این خاطر شکست خورد "
+"که در تابعی به نام <function>bazz</function> تلاش به دسترسی به فضایی از "
+"حافظه داشت که برای آن قابل دسترس نبود."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2232
@@ -4023,7 +4029,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:2250
 msgid "Attaching to a Running Program with gdb"
-msgstr ""
+msgstr "پیوستن به برنامه‌ای در حال اجرا توسط gdb"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2252
@@ -4034,6 +4040,10 @@ msgid ""
 "program that forks and wanting to trace the child, but the debugger will "
 "only trace the parent."
 msgstr ""
+"یکی از امکانات مهم دیگر در مورد <command>gdb</command> این است که می‌تواند "
+"به برنامه‌ای از پیش در حال اجرا متصل شود. البته، این نیازمند دسترسی کافی "
+"برای انجام است. یک مشکل متداول ورود به برنامه‌ای است که از انشعاب استفاده می‌"
+"کند و فرزند را پیگیری می‌کند، اما اشکال‌زدا تنها فرآیند والد را دنبال می‌کند."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2259
@@ -4041,6 +4051,9 @@ msgid ""
 "To do that, start up another <command>gdb</command>, use <command>ps</"
 "command> to find the process ID for the child, and do"
 msgstr ""
+"برای انجام این کار، یک <command>gdb</command> دیگر اجرا کنید، از "
+"<command>ps</command> برای پیدا کردن نشانی فرآیند فرزند استفاده کنید، و "
+"بنویسید"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:2263
@@ -4051,7 +4064,7 @@ msgstr "(gdb) <userinput>attach <replaceable>pid</replaceable></userinput>"
 #. (itstool) path: sect3/para
 #: book.translate.xml:2265
 msgid "in <command>gdb</command>, and then debug as usual."
-msgstr ""
+msgstr "در <command>gdb</command>، و سپس به‌طور معمول اشکال‌زدایی کنید."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2284
@@ -4064,12 +4077,12 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:2292
 msgid "Using Emacs as a Development Environment"
-msgstr ""
+msgstr "استفاده از Emacs به‌عنوان یک محیط توسعه"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:2295
 msgid "Emacs"
-msgstr ""
+msgstr "Emacs"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2297
