@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-06 18:14+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"PO-Revision-Date: 2020-08-06 18:44+0000\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -3505,7 +3505,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:1965
 msgid "The debugger will display something like this:"
-msgstr ""
+msgstr "اشکال‌زدا چیزی مانند این را نشان می‌دهد:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:1967
@@ -3536,6 +3536,12 @@ msgid ""
 "<userinput>thread backtrace all</userinput>. This will also show how the "
 "function where the program dumped core was called."
 msgstr ""
+"در این مورد، برنامه <filename><replaceable>progname</replaceable></filename> "
+"نامیده شد، در نتیجه پروندهٔ حافظه "
+"<filename><replaceable>progname</replaceable>.core</filename> نامیده می‌شود. "
+"اشکال‌زدا علت یا جایی‌که برنامه در آن خراب شد را نشان نمی‌دهد. برای این "
+"منظور، از <userinput>thread backtrace all</userinput> استفاده کنید. این "
+"همچنین نشان می‌دهد چگونه تابعی که برنامه را روبرداری کرد فراخوانی شده است."
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:1982
@@ -3651,6 +3657,9 @@ msgid ""
 "symbol> to <literal>0</literal> with <userinput>expr PauseMode = 0</"
 "userinput> and wait for the <function>sleep()</function> call to return."
 msgstr ""
+"حال تمام آنچه که لازم است الصاقِ فرزند است، <symbol>PauseMode</symbol> را از "
+"طریق <userinput>expr PauseMode = 0</userinput> روی <literal>0</literal> قرار "
+"دهید و منتظر بازگشت فراخوان <function>sleep()</function> باشید."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:2044
