@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-06 17:37+0000\n"
+"PO-Revision-Date: 2020-08-06 18:14+0000\n"
 "Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -3446,6 +3446,9 @@ msgid ""
 "memory when the program ran, which in this case happened to be "
 "<literal>-5360</literal>."
 msgstr ""
+"اما خط <literal>i=5;</literal> را جا انداختیم. از آنجا که <symbol>i</symbol> "
+"را مقداردهی نکردیم، عددی احتمالی در آن فضا از حافظه را به‌هنگام اجرا به خود "
+"گرفت، که در این مورد <literal>-5360</literal> بود."
 
 #. (itstool) path: note/para
 #: book.translate.xml:1933
@@ -3458,11 +3461,18 @@ msgid ""
 "area where the program stores information about the arguments passed to "
 "functions and where to go when it returns from a function call.)"
 msgstr ""
+"دستور <command>lldb</command> چارچوب پشته را هر زمان که به داخل یا بیرون از "
+"یک تابع می‌رویم نمایش می‌دهد، حتی اگر داریم از <userinput>up</userinput> یا "
+"<userinput>down</userinput> برای حرکت پیرامون پشتهٔ فراخوان استفاده می‌کنیم. "
+"این نام تابع و مقدار براهین آن را نشان می‌دهد، که این امر به ما کمک می‌کند "
+"تا جایی که هستیم و اتفاقی که دارد می‌افتد را دنبال کنیم. (پشته یک فضای ذخیره‌"
+"سازی است که برنامه اطلاعات مربوط به براهین منتقل شده به توابع و جایی که بعد "
+"از اجرای یک تابع باید برود را ذخیره می‌کند.)"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:1947
 msgid "Examining a Core File with lldb"
-msgstr ""
+msgstr "بررسی یک پروندهٔ حافظه با lldb"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1949 book.translate.xml:2191
@@ -3475,6 +3485,13 @@ msgid ""
 "replaceable>.core</filename> instead of just <filename>core</filename>, to "
 "make it clearer which program a core file belongs to."
 msgstr ""
+"پروندهٔ حافظه در واقع یک پرونده است که هنگام خراب شدن، وضعیت کاملی از فرآیند "
+"را شامل می‌شود. در <quote>روزگاران خوش گذشته</quote>، برنامه‌نویسان مجبور "
+"بودند لیست‌های شانزده‌شانزدهی پرونده‌های حافظه را چاپ کنند و کد ماشین را به "
+"سختی اجرا کنند، اما امروزه زندگی کمی ساده‌تر است. در FreeBSD و دیگر سامانه‌"
+"های 4.4BSD، برای روشن‌سازی این موضوع که پروندهٔ حافظه برای کدام برنامه است، "
+"پروندهٔ حافظه <filename><replaceable>progname</replaceable>.core</filename> "
+"نامیده می‌شود و نه فقط <filename>core</filename>."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1959
