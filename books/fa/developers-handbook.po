@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-06 20:51+0000\n"
-"Last-Translator: Parsa Samet <qps@irbug.org>\n"
+"PO-Revision-Date: 2020-08-06 23:51+0000\n"
+"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -3760,6 +3760,7 @@ msgstr ""
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2079
+#, fuzzy
 msgid ""
 "At the <command>gdb</command> prompt, type <userinput>break main</"
 "userinput>. This will tell the debugger to skip the preliminary set-up code "
@@ -3768,6 +3769,12 @@ msgid ""
 "will start at the beginning of the set-up code and then get stopped by the "
 "debugger when it calls <function>main()</function>."
 msgstr ""
+"در پیام‌واره <command>gdb</command>، بنویسید <userinput>break main</"
+"userinput>. این به اشکال‌زدا می‌گوید که از کد راه‌اندازی مقدماتیِ برنامهٔ در "
+"حال اجرا جهش کند و از اجرای ابتدای کد برنامه بگذرد. اکنون بنویسید "
+"<userinput>run</userinput> تا برنامه اجرا شود - ای در ابتدای کد راه‌اندازی "
+"اجرا می‌شود و زمانی که <function>main()</function> فراخوانی شود به واسطه "
+"اشکال‌زدا متوقف می‌شود."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2088
@@ -3804,6 +3811,7 @@ msgstr ""
 #: book.translate.xml:2128
 msgid "That was not what we expected! Time to see what is going on!"
 msgstr ""
+"این چیزی نبود که ما انتظارش را داشتیم! زمان آن است که ببینیم داستان چیست!"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:2131
@@ -3903,7 +3911,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:2189
 msgid "Examining a Core File with gdb"
-msgstr ""
+msgstr "بررسی پروندهٔ حافظه توسط gdb"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2201
@@ -3911,6 +3919,9 @@ msgid ""
 "To examine a core file, start up <command>gdb</command> in the usual way. "
 "Instead of typing <command>break</command> or <command>run</command>, type"
 msgstr ""
+"برای بررسی یک پروندهٔ حافظه، <command>gdb</command> را به‌طور معمول اجرا "
+"کنید. به جای نوشتن <command>break</command>  یا <command>run</command>، "
+"بنویسید"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:2205
@@ -3925,11 +3936,13 @@ msgid ""
 "If the core file is not in the current directory, type <userinput>dir /path/"
 "to/core/file</userinput> first."
 msgstr ""
+"اگر پروندهٔ حافظه در مسیر جاری نیست، ابتدا بنویسید <userinput>dir /path/to/"
+"core/file</userinput>."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2210
 msgid "The debugger should display something like this:"
-msgstr ""
+msgstr "اشکال‌زدا باید چیزی شبیه به این نمایش دهد:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:2212
