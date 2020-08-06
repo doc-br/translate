@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-06 18:44+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"PO-Revision-Date: 2020-08-06 20:51+0000\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -3582,6 +3582,12 @@ msgid ""
 "says that in this case, <function>bazz()</function> was called from "
 "<function>main()</function>."
 msgstr ""
+"<literal>SIGSEGV</literal> حاکی از آن است که برنامه سعی بر دسترسی به حافظه "
+"(معمولاً اجرای کد یا خواندن/نوشتنِ داده) در مکانی که به آن تعلق ندارد را "
+"داشته است، اما هیچ جزئیاتی ارائه نمی‌دهد. بدین منظور، به کد منبع در خط ۱۰ از "
+"پروندهٔ temp2.c، در <function>bazz()</function> نگاه بیندازید. همچنین عقب‌"
+"گرد به ما می‌گوید که در این مورد، تابع <function>bazz()</function> توسط "
+"<function>main()</function> فراخوان شده است."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:2000
@@ -3727,7 +3733,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:2066
 msgid "Running a Program with gdb"
-msgstr "اجرای برنامه‌ای با gdb"
+msgstr "اجرای برنامه‌ با gdb"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2068
