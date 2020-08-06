@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
 "PO-Revision-Date: 2020-08-06 18:44+0000\n"
-"Last-Translator: Parsa Samet <qps@irbug.org>\n"
+"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -3501,6 +3501,10 @@ msgid ""
 "way, type <userinput>lldb -c <replaceable>progname</replaceable>.core -- "
 "<replaceable>progname</replaceable></userinput>"
 msgstr ""
+"برای بررسی یک پروندهٔ حافظه، نام آن را بعلاوه خود برنامه مشخص کنید. به جای "
+"اجرای <command>lldb</command> به حالت معمول، بنویسید <userinput>lldb -c "
+"<replaceable>progname</replaceable>.core -- "
+"<replaceable>progname</replaceable></userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1965
@@ -3582,7 +3586,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:2000
 msgid "Attaching to a Running Program with lldb"
-msgstr ""
+msgstr "پیوستن به برنامه‌ای در حال اجرا توسط lldb"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2002
@@ -3593,6 +3597,10 @@ msgid ""
 "program that forks and wanting to trace the child, but the debugger will "
 "only trace the parent."
 msgstr ""
+"یکی از امکانات مهم دیگر در مورد <command>lldb</command> این است که می‌تواند "
+"به برنامه‌ای از پیش در حال اجرا متصل شود. البته، این نیازمند دسترسی کافی "
+"برای انجام است. یک مشکل متداول ورود به برنامه‌ای است که از انشعاب استفاده می‌"
+"کند و فرزند را پیگیری می‌کند، اما اشکال‌زدا تنها فرآیند والد را دنبال می‌کند."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2010
@@ -3600,6 +3608,8 @@ msgid ""
 "To do that, start up another <command>lldb</command>, use <command>ps</"
 "command> to find the process ID for the child, and do"
 msgstr ""
+"برای انجام این کار، یک <command>lldb</command> اجرا کنید، از <command>ps</"
+"command> برای پیدا کردن نشانی فرآیند فرزند استفاده کنید، و بنویسید"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:2014
@@ -3612,7 +3622,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:2016
 msgid "in <command>lldb</command>, and then debug as usual."
-msgstr ""
+msgstr "در <command>lldb</command>، و سپس به‌طور معمول اشکال‌زدایی کنید."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2019 book.translate.xml:2267
@@ -3621,6 +3631,9 @@ msgid ""
 "create the child needs to do something like the following (courtesy of the "
 "<command>gdb</command> info pages):"
 msgstr ""
+"برای اینکه به درستی عمل کند، کدی که از <function>fork</function> برای ایجاد "
+"فرزند استفاده می‌کنم نیاز است کاری مانند زیر انجام دهد (با اجازه از صفحات "
+"اطلاعات <command>gdb</command>):"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:2024 book.translate.xml:2272
@@ -3664,17 +3677,17 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:2044
 msgid "Using gdb"
-msgstr ""
+msgstr "استفاده از gdb"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:2047
 msgid "Starting gdb"
-msgstr ""
+msgstr "اجرای gdb"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2049
 msgid "Start up gdb by typing"
-msgstr ""
+msgstr "gdb را بدین شکل اجرا کنید"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:2051
@@ -3690,6 +3703,8 @@ msgid ""
 "although many people prefer to run it inside <application>Emacs</"
 "application>. To do this, type:"
 msgstr ""
+"هر چند بسیاری ترجیح می‌دهند آن را داخل <application>Emacs</application> اجرا "
+"کنند. برای انجام این کار، بنویسید:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:2056
@@ -3705,11 +3720,14 @@ msgid ""
 "there is a graphical front-end for it (<package>devel/xxgdb</package>) in "
 "the Ports Collection."
 msgstr ""
+"سرانجام، برای آنان که سبک خط فرمانیِ نسخه نوشتاری آن را ناخوش‌آیند می‌یابند، "
+"جلوداری گرافیکی برای آن (به‌عنوان <package>devel/xxgdb</package>) در مجموعه "
+"پورت‌ها وجود دارد."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:2066
 msgid "Running a Program with gdb"
-msgstr ""
+msgstr "اجرای برنامه‌ای با gdb"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2068
@@ -3731,6 +3749,8 @@ msgid ""
 "when <command>gdb</command> starts up means that the program was not "
 "compiled with <option>-g</option>."
 msgstr ""
+"هنگامی که <command>gdb</command> اجرا می‌شود به آن معنی است که برنامه به‌"
+"همراه <option>-g</option> همگردانی نشده است."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2079
