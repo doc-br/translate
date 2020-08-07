@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-07 02:24+0000\n"
+"PO-Revision-Date: 2020-08-07 08:01+0000\n"
 "Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -3743,6 +3743,9 @@ msgid ""
 "<command>gdb</command>. It will work without, but will only display the name "
 "of the function currently running, instead of the source code. A line like:"
 msgstr ""
+"برنامه را با <option>-g</option> همگردانی کنید تا بیشترین استفاده از "
+"<command>gdb</command> ببرید. بدون این هم کار می‌کند، اما به جای کد منبع "
+"تنها نام توابع در حال اجرا را نمایش خواهد داد. سطری مانند:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:2074
@@ -3793,6 +3796,8 @@ msgid ""
 "Here is a simple example of how to spot a mistake in a program with "
 "<command>gdb</command>. This is our program (with a deliberate mistake):"
 msgstr ""
+"این نمونه‌ای برای انکشاف مشکل در یک برنامه توسط <command>gdb</command> است. "
+"این برنامهٔ ماست (با ایرادی تعمدی):"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:2123
@@ -3896,6 +3901,9 @@ msgid ""
 "memory when the program ran, which in this case happened to be "
 "<literal>4231</literal>."
 msgstr ""
+"اما خط <literal>i=5;</literal> را جا انداختیم. از آنجا که <symbol>i</symbol> "
+"را مقداردهی نکردیم، عددی احتمالی در آن فضا از حافظه را به‌هنگام اجرا به خود "
+"گرفت، که در این مورد <literal>4231</literal> بود."
 
 #. (itstool) path: note/para
 #: book.translate.xml:2176
@@ -3921,7 +3929,7 @@ msgid ""
 "Instead of typing <command>break</command> or <command>run</command>, type"
 msgstr ""
 "برای بررسی یک پروندهٔ حافظه، <command>gdb</command> را به‌طور معمول اجرا "
-"کنید. به جای نوشتن <command>break</command>  یا <command>run</command>، "
+"کنید. به جای نوشتن <command>break</command> یا <command>run</command>، "
 "بنویسید"
 
 #. (itstool) path: sect3/screen
