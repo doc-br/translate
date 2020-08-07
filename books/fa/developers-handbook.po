@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-07 08:01+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"PO-Revision-Date: 2020-08-07 09:24+0000\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -3743,8 +3743,8 @@ msgid ""
 "<command>gdb</command>. It will work without, but will only display the name "
 "of the function currently running, instead of the source code. A line like:"
 msgstr ""
-"برنامه را با <option>-g</option> همگردانی کنید تا بیشترین استفاده از "
-"<command>gdb</command> ببرید. بدون این هم کار می‌کند، اما به جای کد منبع "
+"برنامه را با <option>-g</option> همگردانی کنید تا بیشترین بهره را از "
+"<command>gdb</command> ببرید. بدون این نیز کار می‌کند، اما به‌جای کد منبع "
 "تنها نام توابع در حال اجرا را نمایش خواهد داد. سطری مانند:"
 
 #. (itstool) path: sect3/screen
@@ -3764,7 +3764,6 @@ msgstr ""
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2079
-#, fuzzy
 msgid ""
 "At the <command>gdb</command> prompt, type <userinput>break main</"
 "userinput>. This will tell the debugger to skip the preliminary set-up code "
@@ -3773,12 +3772,12 @@ msgid ""
 "will start at the beginning of the set-up code and then get stopped by the "
 "debugger when it calls <function>main()</function>."
 msgstr ""
-"در پیام‌واره <command>gdb</command>، بنویسید <userinput>break main</"
-"userinput>. این به اشکال‌زدا می‌گوید که از کد راه‌اندازی مقدماتیِ برنامهٔ در "
-"حال اجرا جهش کند و از اجرای ابتدای کد برنامه بگذرد. اکنون بنویسید "
-"<userinput>run</userinput> تا برنامه اجرا شود - ای در ابتدای کد راه‌اندازی "
-"اجرا می‌شود و زمانی که <function>main()</function> فراخوانی شود به واسطه "
-"اشکال‌زدا متوقف می‌شود."
+"در پیام‌وارهٔ <command>gdb</command>، بنویسید <userinput>break main</"
+"userinput>. این به اشکال‌زدا می‌گوید که از کد راه‌اندازیِ مقدماتیِ برنامهٔ "
+"در حال اجرا جهش کند و در ابتدای کدِ برنامه اجرا را متوقف سازد. اکنون بنویسید "
+"<userinput>run</userinput> تا برنامه اجرا شود - این در ابتدای کدِ راه‌اندازی "
+"اجرا می‌شود و زمانی‌که <function>main()</function> را فراخوانی می‌کند به "
+"واسطهٔ اشکال‌زدا متوقف می‌شود."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2088
@@ -3875,6 +3874,9 @@ msgid ""
 "literal>? Was it not set to <literal>5</literal> in <function>main()</"
 "function>? Let us move up to <function>main()</function> and have a look."
 msgstr ""
+"یک دقیقه صبر کنید! <symbol>anint</symbol> چگونه به <literal>4231</literal> "
+"رسید؟ آیا در <function>main()</function> روی <literal>5</literal> قرار "
+"نگرفته بود؟ بگذارید برویم به <function>main()</function> تا نگاهی بیندازیم."
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:2153
@@ -3951,7 +3953,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:2210
 msgid "The debugger should display something like this:"
-msgstr "اشکال‌زدا باید چیزی شبیه به این نمایش دهد:"
+msgstr "اشکال‌زدا باید چیزی شبیه به این را نمایش دهد:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:2212
