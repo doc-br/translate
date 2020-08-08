@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-08 16:02+0000\n"
-"Last-Translator: Parsa Samet <qps@irbug.org>\n"
+"PO-Revision-Date: 2020-08-08 23:39+0000\n"
+"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -4254,6 +4254,11 @@ msgid ""
 "then try doing C-x C-f. When you are happy with that, move on to another "
 "menu command."
 msgstr ""
+"خوشبختانه، استفاده و ارتقا ترکیب کلیدها بسیار ساده است، چنانکه در کنار فهرست "
+"اجزا نشان داده شده‌اند. پیشنهاد من به استفاده فهرست اجزا است، بر فرض، برای "
+"باز کردن یک پرونده تا نحوه کارکردش را به درستی درک کنید و با آن احساس راحتی "
+"کنید، سپس C-x C-f را امتحان کنید. زمانی که راضی بودید، بروید به دستور دیگری "
+"از فهرست."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2383
@@ -4265,6 +4270,12 @@ msgid ""
 "commands which contain a particular word in them, with the key binding next "
 "to it."
 msgstr ""
+"اگر به یاد نمی‌آورید که ترکیب خاصی از کلیدها چه انجام می‌دهد، "
+"<guimenuitem>Describe Key</guimenuitem> را از فهرست <guimenu>Help</guimenu> "
+"انتخاب کنید و آن را بنویسید - Emacs به شما می‌گوید که آن چه کار می‌کند. "
+"همچنین می‌توانید از فهرست <guimenuitem>Command Apropos</guimenuitem> برای "
+"پیدا کردن تمام دستوراتی که یک واژه خاص دارند استفاده کنید، به‌همراه ترکیب "
+"کلید مربوطه در کنارش."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2391
@@ -4332,6 +4343,8 @@ msgid ""
 "The best way to learn Emacs Lisp is to download the <link xlink:href=\"ftp://"
 "ftp.gnu.org/old-gnu/emacs/elisp-manual-19-2.4.tar.gz\">Emacs Tutorial</link>"
 msgstr ""
+"بهترین راه برای یادگیری Emacs Lisp دریافت <link xlink:href=\"ftp://ftp.gnu."
+"org/old-gnu/emacs/elisp-manual-19-2.4.tar.gz\">آموزش Emacs</link> است"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2439
@@ -4355,6 +4368,8 @@ msgid ""
 "Unfortunately, there is far too much here to explain it in detail; however "
 "there are one or two points worth mentioning."
 msgstr ""
+"متأسفانه، موارد زیادی برای توضیح جزئیات وجود دارد؛ با این حال چند نکته قابل "
+"ذکر است."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2456
@@ -4412,6 +4427,9 @@ msgid ""
 "We enable Emacs's ability to act as a server, so that if you are doing "
 "something outside Emacs and you want to edit a file, you can just type in"
 msgstr ""
+"ما قابلیت Emacs برای عمل کردن به عنوان یک کارساز را فعال می‌کنیم، پس اگر "
+"بیرون Emacs کاری انجام می‌دهدید و می‌خواهید پرونده‌ای را ویرایش کنید، می‌"
+"توانید تنها بنویسید"
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:2504
@@ -5016,7 +5034,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:2805
 msgid "Extending the Range of Languages Emacs Understands"
-msgstr ""
+msgstr "گسترش دامنهٔ زبان‌هایی که Emacs می‌فهمد"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2808
@@ -5054,7 +5072,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:2827
 msgid "So for example, if the output from the find command was"
-msgstr ""
+msgstr "به‌طور مثال، اگر خروجی دستور find چنین بود"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:2830
@@ -5065,7 +5083,7 @@ msgstr "/usr/ports/lang/whizbang/work/misc/whizbang.el"
 #. (itstool) path: sect2/para
 #: book.translate.xml:2832
 msgid "we would do"
-msgstr ""
+msgstr "چنین می‌کردیم"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:2834
@@ -5091,6 +5109,8 @@ msgid ""
 "Find the <symbol>auto-mode-alist entry</symbol> in <filename>.emacs</"
 "filename> and add a line for whizbang, such as:"
 msgstr ""
+"<symbol>ورودی auto-mode-alist</symbol> را در <filename>.emacs</filename> "
+"پیدا کنید و یک خط برای whizbang اضافه کنید، مانند:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:2847
@@ -5143,6 +5163,9 @@ msgid ""
 "This means that Emacs will always enable <function>font-lock-mode</function> "
 "(ie syntax highlighting) when editing a <filename>.wiz</filename> file."
 msgstr ""
+"این بدان معناست که Emacs همیشه <function>font-lock-mode</function> (به‌گفته‌"
+"ای دیگر مشخص‌سازی قواعد نحوی) را به‌هنگام ویرایش یک پروندهٔ <filename>.wiz</"
+"filename> فعال می‌کند."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2870
@@ -5156,7 +5179,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:2880
 msgid "Further Reading"
-msgstr ""
+msgstr "مطالعهٔ بیشتر"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2882
@@ -5166,6 +5189,9 @@ msgid ""
 "<citerefentry><refentrytitle>development</refentrytitle><manvolnum>7</"
 "manvolnum></citerefentry>."
 msgstr ""
+"برای اطلاعات بیشتر در مورد ایجاد یک محیط توسعه به‌منظور کمک در رفع مشکلات "
+"پروژهٔ FreeBSD، خواهشمند است <citerefentry><refentrytitle>development</refent"
+"rytitle><manvolnum>7</manvolnum></citerefentry> را مشاهده فرمایید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2888
