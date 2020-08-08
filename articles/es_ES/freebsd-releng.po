@@ -4,16 +4,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:01-0300\n"
-"PO-Revision-Date: 2020-06-18 04:17+0000\n"
+"PO-Revision-Date: 2020-08-08 01:56+0000\n"
 "Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
-"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/freebsd-"
-"doc/articles_freebsd-releng/es/>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/articles_freebsd-releng/es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.0.4\n"
+"X-Generator: Weblate 4.1.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -1924,6 +1924,13 @@ msgid ""
 "for a release by specifying a separate configuration file for each "
 "invocation."
 msgstr ""
+"Antes de FreeBSD 9.2-RELEASE, se introdujo <filename>src/release/release.sh</"
+"filename>, que basado en gran medida en <filename>src/release/generate-"
+"release.sh</filename> incluía soporte para especificar archivos de "
+"configuración para anular varias opciones y variables de entorno. El soporte "
+"para los archivos de configuración proporcionaba soporte para construir de "
+"forma cruzada cada arquitectura para una versión especificando un archivo de "
+"configuración separado para cada invocación."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1151
@@ -1931,6 +1938,9 @@ msgid ""
 "As a brief example of using <filename>src/release/release.sh</filename> to "
 "build a single release in <filename class=\"directory\">/scratch</filename>:"
 msgstr ""
+"Como un breve ejemplo del uso de <filename>src/release/release.sh</filename> "
+"para construir una única liberación en <filename class=\"directory\""
+">/scratch</filename>:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:1155
@@ -1945,6 +1955,10 @@ msgid ""
 "build a single, cross-built release using a different target directory, "
 "create a custom <filename>release.conf</filename> containing:"
 msgstr ""
+"Como breve ejemplo del uso de <filename>src/release/release.sh</filename> "
+"para construir una única versión cruzada utilizando un directorio de destino "
+"diferente, cree un <filename>release.conf</filename> personalizado que "
+"contenga:"
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:1162
@@ -1984,7 +1998,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: article.translate.xml:1179
 msgid "The <filename>thermite.sh</filename> Wrapper Script"
-msgstr ""
+msgstr "El Script de Envoltura<filename>thermite.sh</filename>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1182
@@ -1996,6 +2010,13 @@ msgid ""
 "<filename>src/release/release.sh</filename> using a configuration file "
 "specific to that architecture."
 msgstr ""
+"Para que la construcción cruzada del conjunto completo de arquitecturas "
+"soportadas en una rama determinada sea más rápida y fácil, y para reducir "
+"los factores de error humano, se escribió un script de envoltura alrededor "
+"de <filename>src/release/release.sh</filename> para iterar a través de las "
+"diversas combinaciones de arquitecturas e invocar <filename>src/release/"
+"release.sh</filename> utilizando un archivo de configuración específico para "
+"esa arquitectura."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1190
@@ -2051,7 +2072,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: article.translate.xml:1226
 msgid "There are two paths of file sourcing:"
-msgstr ""
+msgstr "Hay dos caminos para la obtención de archivos:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1230
@@ -2059,6 +2080,8 @@ msgid ""
 "<filename>builds-<replaceable>12</replaceable>.conf</filename> -&gt; "
 "<filename>main.conf</filename>"
 msgstr ""
+"<filename>builds-<replaceable>12</replaceable>.conf</filename> -&gt; "
+"<filename>main.conf</filename>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1232
