@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:01-0300\n"
-"PO-Revision-Date: 2020-08-08 01:56+0000\n"
+"PO-Revision-Date: 2020-08-08 03:19+0000\n"
 "Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_freebsd-releng/es/>\n"
@@ -1912,6 +1912,12 @@ msgid ""
 "automate invoking the <citerefentry><refentrytitle>release</"
 "refentrytitle><manvolnum>7</manvolnum></citerefentry> targets."
 msgstr ""
+"Antes de FreeBSD 9.0-RELEASE, <filename>src/release/Makefile</filename> fue "
+"actualizado para soportar <citerefentry><refentrytitle>bsdinstall</refentryti"
+"tle><manvolnum>8</manvolnum></citerefentry>, y el <filename>src/release/"
+"generate-release. sh</filename> se introdujo como un envoltorio para "
+"automatizar la invocación de los objetivos de <citerefentry><refentrytitle>re"
+"lease</refentrytitle><manvolnum>7</manvolnum></citerefentry>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1141
@@ -1994,6 +2000,9 @@ msgid ""
 "manvolnum></citerefentry> and <filename>src/release/release.conf.sample</"
 "filename> for more details and example usage."
 msgstr ""
+"Ver <citerefentry><refentrytitle>release</refentrytitle><manvolnum>7</manvoln"
+"um></citerefentry> y <filename>src/release/release.conf.sample</filename> "
+"para más detalles y ejemplos de uso."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1179
@@ -2027,6 +2036,11 @@ msgid ""
 "used to build <literal>head/</literal> and <literal>stable/<replaceable>12</"
 "replaceable>/</literal> development snapshots."
 msgstr ""
+"El script de envoltura se llama <filename>thermite.sh</filename>, que está "
+"disponible en el repositorio de Subversión de FreeBSD en <literal>svn://svn."
+"freebsd.org/base/user/gjb/thermite/</literal>, además de los archivos de "
+"configuración utilizados para construir <literal>head/</literal> y <literal>"
+"stable/<replaceable>12</replaceable>/</literal> development snapshots."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1198
@@ -2034,6 +2048,8 @@ msgid ""
 "Using <filename>thermite.sh</filename> is covered in <xref linkend=\"releng-"
 "build-snapshot\"/> and <xref linkend=\"releng-build-release\"/>."
 msgstr ""
+"Usando <filename>thermite.sh</filename> está cubierto en <xref linkend"
+"=\"releng-build-snapshot\"/> y <xref linkend=\"releng-build-release\"/>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1200
@@ -2044,6 +2060,11 @@ msgid ""
 "common throughout each architecture, where overrides or special variables "
 "are set and/or overridden in the per-build files."
 msgstr ""
+"Cada arquitectura y kernel individual tiene su propio archivo de "
+"configuración usado por <filename>release.sh</filename>. Cada rama tiene su "
+"propia configuración <filename>defaults-X.conf</filename>, que contiene "
+"entradas comunes en cada arquitectura, donde se establecen y/o anulan las "
+"anulaciones o variables especiales en los archivos por construcción."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1207
@@ -2056,6 +2077,13 @@ msgid ""
 "within the configuration files, mapping to the major version of the "
 "respective branch."
 msgstr ""
+"El esquema de nomenclatura de los archivos de configuración de cada edificio "
+"es en forma de <filename>${revision}-${TARGET_ARCH}-${KERNCONF}-${type}. "
+"conf</filename>, donde las variables en mayúsculas son equivalentes a lo que "
+"<citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> utiliza en el sistema de construcción, y las variables en "
+"minúsculas se establecen dentro de los archivos de configuración, mapeando a "
+"la versión mayor de la rama respectiva."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1215
@@ -2068,6 +2096,13 @@ msgid ""
 "if the respective configuration file exists, which is where the naming "
 "scheme above is relevant."
 msgstr ""
+"Cada rama también tiene su propia configuración <filename>builds-X.conf</"
+"filename>, que es usada por <filename>thermite.sh</filename>. El script "
+"<filename>thermite.sh</filename> itera a través de cada valor ${revision}, "
+"${TARGET_ARCH}, ${KERNCONF}, y ${type}, creando una lista maestra de lo que "
+"hay que construir. Sin embargo, una determinada combinación de la lista sólo "
+"se construirá si existe el respectivo archivo de configuración, que es donde "
+"el esquema de denominación anterior es relevante."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1226
@@ -2086,7 +2121,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: article.translate.xml:1232
 msgid "This controls <filename>thermite.sh</filename> behavior"
-msgstr ""
+msgstr "Esto controla <filename>thermite.sh</filename> el comando"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1237
@@ -2108,6 +2143,9 @@ msgid ""
 "build <citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"Esto controla <filename>release/release.sh</filename> el comando dentro de "
+"la construcción <citerefentry><refentrytitle>chroot</refentrytitle><manvolnum"
+">8</manvolnum></citerefentry>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:1247
