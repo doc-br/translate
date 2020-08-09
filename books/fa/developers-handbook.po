@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-09 12:02+0000\n"
+"PO-Revision-Date: 2020-08-09 14:52+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -4309,6 +4309,11 @@ msgid ""
 "have. Unfortunately, PC's do not have one, so it is usually <keycap>alt</"
 "keycap> (or if you are unlucky, the <keysym>escape</keysym> key)."
 msgstr ""
+"اگر تعجب کرده‌اید که <keysym>Meta</keysym> چیست، این یک کلید ویژه است که "
+"بسیاری از ایستگاه‌کارهای <trademark class=\"registered\">UNIX</trademark> آن "
+"را دارند. متأسفانه، رایانه‌های شخصی فاقد این کلید هستند، از این رو معمولاً "
+"کلید <keycap>alt</keycap> (یا اگر بدشانس باشید، کلید <keysym>escape</keysym>)"
+" معادل آن هست."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2410
@@ -4322,6 +4327,14 @@ msgid ""
 "background, and is only really useful if you are on a system which does not "
 "have virtual terminals)."
 msgstr ""
+"اوه، و برای خروج از Emacs، بزنید <command>C-x C-c</command> (یعنی کلید "
+"<keysym>control</keysym> را نگه دارید، <keysym>x</keysym> را فشار دهید، "
+"<keysym>c</keysym> را فشار دهید و در نهایت کلید <keysym>control</keysym> را "
+"رها کنید). اگر پروندهٔ باز و ذخیره‌نشده دارید، Emacs جهت ذخیرهٔ آنها از شما "
+"خواهد پرسید. (آن بخش از مستندات که ذکر کرده است <command>C-z</command روش "
+"معمول برای خروج از Emacs است را نادیده بگیرید—این کار Emacs را در پس‌زمینه "
+"نگه می‌دارد، و تنها زمانی‌که شما بر روی سامانه‌ای فاقد پایانه‌های مجازی "
+"هستید کاربرد خواهد داشت)."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:2423
@@ -5262,7 +5275,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:2954
 msgid "Secure Programming"
-msgstr ""
+msgstr "برنامه‌نویسی ایمن"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2964
@@ -5272,11 +5285,15 @@ msgid ""
 "some of the new tools available to help programmers avoid writing "
 "exploitable code."
 msgstr ""
+"این فصل به تشریح برخی از مسائل امنیتی که برنامه‌نویسانِ <trademark class="
+"\"registered\">UNIX</trademark> را برای دهه‌ها گرفتار خود کرده است و همچنین "
+"به برخی از ابزارهای جدید که برای کمک به برنامه‌نویسان جهت اجتناب از نوشتن "
+"کدهای قابل بهره‌برداری در دسترس است می‌پردازد."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:2970
 msgid "Secure Design Methodology"
-msgstr ""
+msgstr "روش‌شناسی طراحی ایمن"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2973
