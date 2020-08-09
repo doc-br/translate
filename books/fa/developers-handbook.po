@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-09 14:52+0000\n"
+"PO-Revision-Date: 2020-08-09 16:42+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -4331,7 +4331,7 @@ msgstr ""
 "<keysym>control</keysym> را نگه دارید، <keysym>x</keysym> را فشار دهید، "
 "<keysym>c</keysym> را فشار دهید و در نهایت کلید <keysym>control</keysym> را "
 "رها کنید). اگر پروندهٔ باز و ذخیره‌نشده دارید، Emacs جهت ذخیرهٔ آنها از شما "
-"خواهد پرسید. (آن بخش از مستندات که ذکر کرده است <command>C-z</command روش "
+"خواهد پرسید. (آن بخش از مستندات که ذکر کرده است <command>C-z</command> روش "
 "معمول برای خروج از Emacs است را نادیده بگیرید—این کار Emacs را در پس‌زمینه "
 "نگه می‌دارد، و تنها زمانی‌که شما بر روی سامانه‌ای فاقد پایانه‌های مجازی "
 "هستید کاربرد خواهد داشت)."
@@ -5157,6 +5157,9 @@ msgid ""
 "This means that Emacs will automatically go into <function>whizbang-mode</"
 "function> when you edit a file ending in <filename>.wiz</filename>."
 msgstr ""
+"این بدان معناست که زمانی‌که شما پرونده‌ای را که با <filename>.wiz</filename> "
+"به پایان می‌رسد را ویرایش می‌کنید، Emacs به‌طور خودکار به <function>whizbang-"
+"mode</function> می‌رود."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2857
@@ -5164,6 +5167,8 @@ msgid ""
 "Just below this, you will find the <symbol>font-lock-auto-mode-list</symbol> "
 "entry. Add <function>whizbang-mode</function> to it like so:"
 msgstr ""
+"درست زیر همین، شما مدخل <symbol>font-lock-auto-mode-list</symbol> را پیدا می‌"
+"کنید. بدین شکل <function>whizbang-mode</function> را به آن اضافه کنید:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:2861
@@ -5198,6 +5203,11 @@ msgid ""
 "<function>whizbang-mode hook</function> (see <function>my-scheme-mode-hook</"
 "function> for a simple example that adds <function>auto-indent</function>)."
 msgstr ""
+"و این تمام آن چیزی است که نیاز دارید. اگر کاری دیگری هست که هنگام باز کردن "
+"<filename>.wiz</filename> می‌خواهید به‌طور خودکار انجام گیرد، می‌توانید یک "
+"<function>whizbang-mode hook</function> اضافه کنید (<function>my-scheme-mode-"
+"hook</function> را برای نمونهٔ ساده‌ای که تابع <function>auto-indent</"
+"function> را اضافه می‌کند ببینید)."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:2880
@@ -5222,6 +5232,8 @@ msgid ""
 "Brian Harvey and Matthew Wright <emphasis>Simply Scheme</emphasis> MIT 1994. "
 "ISBN 0-262-08226-8"
 msgstr ""
+"Brian Harvey and Matthew Wright <emphasis>Simply Scheme</emphasis> MIT 1994. "
+"ISBN 0-262-08226-8"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2895
@@ -5229,6 +5241,8 @@ msgid ""
 "Randall Schwartz <emphasis>Learning Perl</emphasis> O'Reilly 1993 ISBN "
 "1-56592-042-2"
 msgstr ""
+"Randall Schwartz <emphasis>Learning Perl</emphasis> O'Reilly 1993 ISBN "
+"1-56592-042-2"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2902
@@ -5236,6 +5250,8 @@ msgid ""
 "Patrick Henry Winston and Berthold Klaus Paul Horn <emphasis>Lisp (3rd "
 "Edition)</emphasis> Addison-Wesley 1989 ISBN 0-201-08319-1"
 msgstr ""
+"Patrick Henry Winston and Berthold Klaus Paul Horn <emphasis>Lisp (3rd "
+"Edition)</emphasis> Addison-Wesley 1989 ISBN 0-201-08319-1"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2909
@@ -5243,6 +5259,8 @@ msgid ""
 "Brian W. Kernighan and Rob Pike <emphasis>The Unix Programming Environment</"
 "emphasis> Prentice-Hall 1984 ISBN 0-13-937681-X"
 msgstr ""
+"Brian W. Kernighan and Rob Pike <emphasis>The Unix Programming Environment</"
+"emphasis> Prentice-Hall 1984 ISBN 0-13-937681-X"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2916
@@ -5250,6 +5268,8 @@ msgid ""
 "Brian W. Kernighan and Dennis M. Ritchie <emphasis>The C Programming "
 "Language (2nd Edition)</emphasis> Prentice-Hall 1988 ISBN 0-13-110362-8"
 msgstr ""
+"Brian W. Kernighan and Dennis M. Ritchie <emphasis>The C Programming "
+"Language (2nd Edition)</emphasis> Prentice-Hall 1988 ISBN 0-13-110362-8"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2923
@@ -5257,6 +5277,8 @@ msgid ""
 "Bjarne Stroustrup <emphasis>The C++ Programming Language</emphasis> Addison-"
 "Wesley 1991 ISBN 0-201-53992-6"
 msgstr ""
+"Bjarne Stroustrup <emphasis>The C++ Programming Language</emphasis> Addison-"
+"Wesley 1991 ISBN 0-201-53992-6"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2930
@@ -5264,6 +5286,8 @@ msgid ""
 "W. Richard Stevens <emphasis>Advanced Programming in the Unix Environment</"
 "emphasis> Addison-Wesley 1992 ISBN 0-201-56317-7"
 msgstr ""
+"W. Richard Stevens <emphasis>Advanced Programming in the Unix Environment</"
+"emphasis> Addison-Wesley 1992 ISBN 0-201-56317-7"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2937
@@ -5271,6 +5295,8 @@ msgid ""
 "W. Richard Stevens <emphasis>Unix Network Programming</emphasis> Prentice-"
 "Hall 1990 ISBN 0-13-949876-1"
 msgstr ""
+"W. Richard Stevens <emphasis>Unix Network Programming</emphasis> Prentice-"
+"Hall 1990 ISBN 0-13-949876-1"
 
 #. (itstool) path: info/title
 #: book.translate.xml:2954
@@ -5305,6 +5331,12 @@ msgid ""
 "code should be reused whenever possible to avoid common mistakes that others "
 "may have already fixed."
 msgstr ""
+"نوشتن برنامه‌های ایمن نیازمند نظرگاهی بسیار دقیق و بدبینانه نسبت به زندگی "
+"است. برنامه‌ها باید با اصل <quote>کمترین امتیاز</quote> اجرا شوند تا هیچ "
+"فرآیندی با بیش از حداقل دسترسی که برای دستیابی به کارکرد خود نیاز دارد اجرا "
+"نشود. کدهای از پیش آزموده شده باید هرزمان که ممکن بود مجدداً مورد استفاده "
+"قرار گیرند تا از اشتباهات رایجی که دیگران احتمالاً از پیش رفع کرده‌اند "
+"اجتناب شود."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2981
