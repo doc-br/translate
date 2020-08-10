@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-10 12:43+0000\n"
+"PO-Revision-Date: 2020-08-10 13:23+0000\n"
 "Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -5530,22 +5530,22 @@ msgstr "<function>realpath</function>(char *path, char resolved_path[])"
 #. (itstool) path: entry/simpara
 #: book.translate.xml:3085
 msgid "May overflow the path buffer"
-msgstr ""
+msgstr "ممکن است میان‌گیر path سرریز شود"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:3088
 msgid "<function>[v]sprintf</function>(char *str, const char *format, ...)"
-msgstr ""
+msgstr "<function>[v]sprintf</function>(char *str, const char *format, ...)"
 
 #. (itstool) path: entry/simpara
 #: book.translate.xml:3090
 msgid "May overflow the str buffer."
-msgstr ""
+msgstr "ممکن است میان‌گیر str سرریز شود."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3096
 msgid "Example Buffer Overflow"
-msgstr ""
+msgstr "سرریز میان‌گیر نمونه"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3098
@@ -5579,6 +5579,27 @@ msgid ""
 "  return 0;\n"
 "}"
 msgstr ""
+"#include &lt;stdio.h&gt;\n"
+"\n"
+"void manipulate(char *buffer) {\n"
+"  char newbuffer[80];\n"
+"  strcpy(newbuffer,buffer);\n"
+"}\n"
+"\n"
+"int main() {\n"
+"  char ch,buffer[4096];\n"
+"  int i=0;\n"
+"\n"
+"  while ((buffer[i++] = getchar()) != '\\n"
+"') {};\n"
+"\n"
+"  i=1;\n"
+"  manipulate(buffer);\n"
+"  i=2;\n"
+"  printf(\"The value of i is : %d\\n"
+"\",i);\n"
+"  return 0;\n"
+"}"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3123
@@ -5590,7 +5611,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:3127
 msgid "[XXX figure here!]"
-msgstr ""
+msgstr "[XXX figure here!]"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3129
@@ -5598,11 +5619,13 @@ msgid ""
 "Obviously more malicious input can be devised to execute actual compiled "
 "instructions (such as exec(/bin/sh))."
 msgstr ""
+"بدیهی است که ورودی‌های مخرب بیشتری می‌توان استفاده کرد که دستورالعمل‌های "
+"همگردانی شده واقعی (مانند exec(/bin/sh)) را اجرا کنند."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3133
 msgid "Avoiding Buffer Overflows"
-msgstr ""
+msgstr "جلوگیری از سرریز میان‌گیر"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:3140
@@ -5681,17 +5704,17 @@ msgstr ""
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:3194
 msgid "<primary>ProPolice</primary>"
-msgstr ""
+msgstr "<primary>ProPolice</primary>"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:3195
 msgid "<primary>StackGuard</primary>"
-msgstr ""
+msgstr "<primary>StackGuard</primary>"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:3196
 msgid "<primary>gcc</primary>"
-msgstr ""
+msgstr "<primary>gcc</primary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3198
@@ -5747,17 +5770,17 @@ msgstr ""
 #. (itstool) path: listitem/simpara
 #: book.translate.xml:3237
 msgid "libsafe"
-msgstr ""
+msgstr "libsafe"
 
 #. (itstool) path: listitem/simpara
 #: book.translate.xml:3238
 msgid "libverify"
-msgstr ""
+msgstr "libverify"
 
 #. (itstool) path: listitem/simpara
 #: book.translate.xml:3239
 msgid "libparanoia"
-msgstr ""
+msgstr "libparanoia"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3242
@@ -5773,12 +5796,12 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:3254
 msgid "SetUID issues"
-msgstr ""
+msgstr "مشکلات SetUID"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:3256
 msgid "<primary>seteuid</primary>"
-msgstr ""
+msgstr "<primary>seteuid</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3258
