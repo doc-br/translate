@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
 "PO-Revision-Date: 2020-08-10 16:58+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -4383,6 +4383,11 @@ msgid ""
 "directory and restart Emacs if it is already running; it will read the "
 "commands from the file and (hopefully) give you a useful basic setup."
 msgstr ""
+"گرچه، هیچ نیازی به دانستن Lisp برای پیکربندی Emacs نیست، چنانکه یک <filename>"
+".emacs</filename> ساده ضمیمه شده است، و برای شروع باید کافی باشد. تنها "
+"کافیست آن را در مسیر خانهٔ خود کپی کنید و Emacs را اگر در حال اجرا است، مجدد "
+"راه‌اندازی کنید؛ Emacs دستورات را از روی پرونده می‌خواند و (امیدوارانه) به "
+"شما تنظیماتی کاربردی و ابتدایی می‌دهد."
 
 #. (itstool) path: sect2/title
 #. (itstool) path: example/title
@@ -4417,6 +4422,11 @@ msgid ""
 "based on the filename, and may not get it right for <filename>.emacs</"
 "filename>."
 msgstr ""
+"در اولین خط، <literal>-*- Emacs-Lisp -*-</literal> هست تا ما بتوانیم خود "
+"<filename>.emacs</filename> را داخل Emacs ویرایش کنیم و تمام امکانات پر زرق "
+"و برق برای ویرایش Emacs Lisp را دریافت کنیم. به‌طور معمول Emacs سعی می‌کند "
+"تا این را بر اساس نام پرونده حدس بزند، و این احتمال هست که در مورد <filename>"
+".emacs</filename> دچار خطا شود."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2471
@@ -4427,6 +4437,11 @@ msgid ""
 "writing, hold the <keysym>control</keysym> key down while you are pressing "
 "the <keysym>tab</keysym> key."
 msgstr ""
+"کلید <keysym>tab</keysym> مقید به نوعی عملکرد ایجاد فرورفتگی در برخی حالات "
+"است، در نتیجه زمانی‌که شما کلید tab را فشار می‌دهید، آن خط جاری از کد را فرو‌"
+" می‌برد. اگر قصد دارید تا یک نویسهٔ <token>tab</token> را در هر متنی که در "
+"حال نوشتنش هستید قرار دهید، زمانی‌که دارید کلید <keysym>tab</keysym> را فشار "
+"می‌دهید، کلید <keysym>control</keysym> را نگه دارید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2481
