@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-11 10:18+0000\n"
+"PO-Revision-Date: 2020-08-11 17:05+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -267,7 +267,7 @@ msgstr "اصول پایه"
 #. (itstool) path: sect1/title
 #: book.translate.xml:176 book.translate.xml:430
 msgid "Introduction"
-msgstr "مقدمه"
+msgstr "پیش درآمد"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:178 book.translate.xml:2956
@@ -5107,6 +5107,11 @@ msgid ""
 "short for <quote>Emacs Lisp</quote>. For example, if whizbang is a FreeBSD "
 "port, we can locate these files by doing"
 msgstr ""
+"اولین کاری که باید انجام گیرد فهم این مسئله است که whizbang همراه با پرونده‌"
+"هایی که به Emcas دربارهٔ زبان بگویند می‌آید یا خیر. این نوع پرونده‌ها به‌طور "
+"معمول با <filename>.el</filename> پایان می‌گیرند، کوتاه‌شدهٔ <quote>Emacs "
+"Lisp</quote>. برای مثال، اگر whizbang یک پورتِ FreeBSD باشد، ما می‌توانیم "
+"بدین شکل این پرونده‌ها را بیابیم"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:2821
@@ -5122,6 +5127,8 @@ msgid ""
 "and install them by copying them into the Emacs site Lisp directory. On "
 "FreeBSD, this is <filename>/usr/local/share/emacs/site-lisp</filename>."
 msgstr ""
+"و آنها را با کپی کردن در مسیر Emacs site Lisp نصب کنیم. در FreeBSD، این مسیر "
+"<filename>/usr/local/share/emacs/site-lisp</filename> هست."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2827
@@ -5156,6 +5163,10 @@ msgid ""
 "Emacs will be able to use the information in <filename>whizbang.el</"
 "filename>."
 msgstr ""
+"سپس، باید بدانیم پرونده‌های منبع whizbang چه افزونه‌ای را دارا هستند. بیایید "
+"فرض بگیریم که تمام آنها با <filename>.wiz</filename> پایان می‌گیرند. ما باید "
+"داده‌ای را به <filename>.emacs</filename> خودمان اضافه کنیم تا مطمئن شویم "
+"Emacs می‌تواند از اطلاعات داخل <filename>whizbang.el</filename> استفاده کند."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2843
@@ -5379,6 +5390,12 @@ msgid ""
 "<trademark class=\"registered\">UNIX</trademark> processes do not execute "
 "synchronously so logical operations are rarely atomic."
 msgstr ""
+"یکی از مشکلات موجود در محیط <trademark class=\"registered\">UNIX</trademark> "
+"سادگی در گمانه‌زنی پیرامون پایداری محیط است. برنامه‌ها هرگز نباید به ورودی "
+"کاربر (در تمام اشکال خود)، منابع سامانه، ارتباط بین پردازشی، یا زمانبندی "
+"رویدادها اعتماد کنند. فرآیندهای <trademark class=\"registered\">UNIX</"
+"trademark> به‌طور همزمان اجرا نمی‌شوند، از این رو عملیات منطقی به‌ندرت تجزیه‌"
+"ناپذیر هستند."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:2989
@@ -5494,6 +5511,8 @@ msgid ""
 "Although stack-based attacks are by far the most common, it would also be "
 "possible to overrun the stack with a heap-based (malloc/free) attack."
 msgstr ""
+"گرچه حملات مبتنی بر پشته با اختلاف رایج‌ترین آنها هستند، اما سرریز کردن پشته "
+"از طریق حملهٔ مبتنی بر هیپ (malloc/free) نیز ممکن است."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3052
@@ -5502,6 +5521,9 @@ msgid ""
 "arrays or pointers as many other languages do. In addition, the standard C "
 "library is filled with a handful of very dangerous functions."
 msgstr ""
+"زبان برنامه‌نویسی C به‌طور خودکار بررسی حدود را بر روی آرایه‌ها یا اشاره‌"
+"گرها چنانکه بسیاری از زبان‌ها انجام می‌دهند، انجام نمی‌دهد. همچنین، کتابخانهٔ"
+" استاندارد C پر است از تعداد انگشت‌شماری از توابع بسیار خطرناک."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:3060
@@ -5580,6 +5602,9 @@ msgid ""
 "the return address and skip the instruction immediately following the "
 "function call. (Inspired by <xref linkend=\"Phrack\"/>)"
 msgstr ""
+"نمونه کد پیش رو حاوی یک سرریز میان‌گیر است که به‌منظور جانویسی نشانی بازگشت "
+"و پرش از دستور‌العمل‌ بلافاصله پس از فراخوانی تابع طراحی شده است. (الهام "
+"گرفته از <xref linkend=\"Phrack\"/>)"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:3103
@@ -5633,6 +5658,8 @@ msgid ""
 "Let us examine what the memory image of this process would look like if we "
 "were to input 160 spaces into our little program before hitting return."
 msgstr ""
+"بگذارید چنانچه قرار بود قبل از آنکه کلید return را بزنیم ۱۶۰ فاصله درون "
+"برنامهٔ کوچک خود وارد کنیم، نمای حافظهٔ این پردازش را بیازماییم."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3127
@@ -5656,17 +5683,17 @@ msgstr "جلوگیری از سرریز میان‌گیر"
 #. (itstool) path: para/indexterm
 #: book.translate.xml:3140
 msgid "<primary>string copy functions</primary> <secondary>strncpy</secondary>"
-msgstr ""
+msgstr "<primary>توابع کپی‌کردن رشته</primary> <secondary>strncpy</secondary>"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:3144
 msgid "<primary>string copy functions</primary> <secondary>strncat</secondary>"
-msgstr ""
+msgstr "<primary>توابع کپی‌کردن رشته</primary> <secondary>strncat</secondary>"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:3156
 msgid "<primary>NUL termination</primary>"
-msgstr ""
+msgstr "<primary>پایانهٔ NUL</primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3135
@@ -5699,23 +5726,23 @@ msgstr ""
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:3172
 msgid "<primary>string copy functions</primary> <secondary>strlcpy</secondary>"
-msgstr ""
+msgstr "<primary>توابع کپی‌کردن رشته</primary> <secondary>strlcpy</secondary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:3177
 msgid "<primary>string copy functions</primary> <secondary>strlcat</secondary>"
-msgstr ""
+msgstr "<primary>توابع کپی‌کردن رشته</primary> <secondary>strlcat</secondary>"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:3182
 msgid "Compiler based run-time bounds checking"
-msgstr ""
+msgstr "بررسی حدود زمان اجرا بر پایهٔ همگردان"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:3184
 msgid ""
 "<primary>bounds checking</primary> <secondary>compiler-based</secondary>"
-msgstr ""
+msgstr "<primary>بررسی حدود</primary> <secondary>بر پایهٔ همگردان</secondary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3187
@@ -5775,12 +5802,12 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:3221
 msgid "Library based run-time bounds checking"
-msgstr ""
+msgstr "بررسی حدود زمان اجرا بر پایهٔ کتابخانه"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:3223
 msgid "<primary>bounds checking</primary> <secondary>library-based</secondary>"
-msgstr ""
+msgstr "<primary>بررسی حدود</primary> <secondary>بر پایهٔ کتابخانه</secondary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3228
