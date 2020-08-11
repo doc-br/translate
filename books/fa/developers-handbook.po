@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-11 17:05+0000\n"
+"PO-Revision-Date: 2020-08-11 18:09+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -5658,8 +5658,8 @@ msgid ""
 "Let us examine what the memory image of this process would look like if we "
 "were to input 160 spaces into our little program before hitting return."
 msgstr ""
-"بگذارید چنانچه قرار بود قبل از آنکه کلید return را بزنیم ۱۶۰ فاصله درون "
-"برنامهٔ کوچک خود وارد کنیم، نمای حافظهٔ این پردازش را بیازماییم."
+"بگذارید بررسی کنیم نمای حافظهٔ این پردازش به چه شکل می‌شد چنانچه قرار بود "
+"۱۶۰ فاصله درون برنامهٔ کوچک خود وارد کنیم، قبل از زدن کلید return."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3127
@@ -5798,6 +5798,8 @@ msgid ""
 "Recompiling your application with ProPolice is an effective means of "
 "stopping most buffer-overflow attacks, but it can still be compromised."
 msgstr ""
+"همگردانی مجدد برنامهٔ خود با ProPolice شیوه‌ای مؤثر برای متوقف کردن بیشتر "
+"حملات سرریز میان‌گیر است، گرچه هنوز هم می‌تواند در معرض خطر قرار گیرد."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:3221
@@ -12959,6 +12961,12 @@ msgid ""
 "<prompt>#</prompt> <userinput>savecore /var/crash /dev/ad0s1b</userinput>\n"
 "<prompt>#</prompt> <userinput>exit</userinput>                  # exit to multi-user"
 msgstr ""
+"<prompt>#</prompt> <userinput>fsck -p</userinput>\n"
+"<prompt>#</prompt> <userinput>mount -a -t ufs</userinput>       # make sure /"
+"var/crash is writable\n"
+"<prompt>#</prompt> <userinput>savecore /var/crash /dev/ad0s1b</userinput>\n"
+"<prompt>#</prompt> <userinput>exit</userinput>                  # exit to "
+"multi-user"
 
 #. (itstool) path: tip/para
 #: book.translate.xml:8471
@@ -13037,12 +13045,15 @@ msgid ""
 "To enter into the debugger and begin getting information from the dump, "
 "start kgdb:"
 msgstr ""
+"برای ورود به محیط اشکال‌زدا و دریافت اطلاعات از روگرفت، kgdb را شروع کنید:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8515
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>kgdb -n <replaceable>N</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>kgdb -n "
+"<replaceable>N</replaceable></userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8517
@@ -13051,6 +13062,9 @@ msgid ""
 "<replaceable>N</replaceable></filename> to examine. To open the most recent "
 "dump use:"
 msgstr ""
+"که <replaceable>N</replaceable> پیشوند "
+"<filename>vmcore.<replaceable>N</replaceable></filename> است. برای باز کردن "
+"روگرفت اخیر وارد کنید:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8521
