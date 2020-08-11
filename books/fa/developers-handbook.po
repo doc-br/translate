@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-10 16:58+0000\n"
+"PO-Revision-Date: 2020-08-11 10:18+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -4463,6 +4463,13 @@ msgid ""
 "feature of all is that <command>C-c C-c</command> will open up the source "
 "file in which the error occurred and jump to the appropriate line."
 msgstr ""
+"Emacs به‌طور پیش تعریف شده تابعی به نام <function>next-error</function> "
+"دارد. در یک پنجرهٔ خروجی همگردانی، این به شما اجازه می‌دهد تا با وارد کردن "
+"<command>M-n</command> از یک خطای همگردانی به خطای دیگر بروید؛ ما یک تابع "
+"مکمل را تعریف می‌کنیم، <function>previous-error</function>، که به شما این "
+"امکان را می‌دهد تا با وارد کردن <command>M-p</command> به خطای پیشین بروید. "
+"بهترین ویژگی این است که <command>C-c C-c</command> پروندهٔ منبعی که خطا در "
+"آن رخ داده است را باز می‌کند و مستقیم سراغ خط مربوطه می‌رود."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2500
@@ -5087,6 +5094,10 @@ msgid ""
 "Scheme), but what happens if a new language called <quote>whizbang</quote> "
 "comes out, full of exciting features?"
 msgstr ""
+"حال، چنانچه تنها بخواهید با زبان‌هایی که از پیش در <filename>.emacs</"
+"filename> در نظر گرفته شده است (C، C++، Perl، Lisp و Scheme) برنامه بنویسید، "
+"بسیار خوب است، اما چه رخ می‌دهد اگر زبان جدیدی به نام <quote>whizbang</"
+"quote> ‌همراه با کلی امکانات هیجان انگیز بیاید؟"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2815
@@ -5424,32 +5435,32 @@ msgstr "<primary>LIFO</primary>"
 #. (itstool) path: para/indexterm
 #: book.translate.xml:3015
 msgid "<primary>process image</primary> <secondary>stack pointer</secondary>"
-msgstr ""
+msgstr "<primary>تصویر پردازش</primary> <secondary>اشاره‌گر پشته</secondary>"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:3024
 msgid "<primary>stack frame</primary>"
-msgstr ""
+msgstr "<primary>چارچوب پشته</primary>"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:3025
 msgid "<primary>stack pointer</primary>"
-msgstr ""
+msgstr "<primary>اشاره‌گر پشته</primary>"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:3034
 msgid "<primary>frame pointer</primary>"
-msgstr ""
+msgstr "<primary>اشاره‌گر چارچوب</primary>"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:3035
 msgid "<primary>process image</primary> <secondary>frame pointer</secondary>"
-msgstr ""
+msgstr "<primary>تصویر پردازش</primary> <secondary>اشاره‌گر چارچوب</secondary>"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:3039
 msgid "<primary>return address</primary>"
-msgstr ""
+msgstr "<primary>نشانی بازگشت</primary>"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:3040
