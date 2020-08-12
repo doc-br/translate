@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-11 18:09+0000\n"
-"Last-Translator: Parsa Samet <qps@irbug.org>\n"
+"PO-Revision-Date: 2020-08-12 13:02+0000\n"
+"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -5504,6 +5504,21 @@ msgid ""
 "variable in a function can overwrite the return address of that function, "
 "potentially allowing a malicious user to execute any code he or she wants."
 msgstr ""
+"بیشتر رایانه‌های امروزی از پشته برای تحویل براهین به رویه‌ها و نگه‌داشت "
+"متغیرهای محلی استفاده می‌کنند. پشته یک میانگیر آخرین ورودی اولین خروجی در "
+"بخش بالایی حافظهٔ یک تصویر پردازش است. زمانی که یک برنامه تابعی را فراخوانی "
+"می‌کند، یک \"قاب پشته\" جدید <_:indexterm-1/> <_:indexterm-2/> ساخته می‌شود. "
+"این \"قاب پشته\" یک ثبات (register) است که موقعیت فعلی <_:indexterm-3/> <_:"
+"indexterm-4/> بالای پشته را نگه می‌دارد. از آنجا که این مقدار به‌طور مداوم "
+"به‌محض گذاشته شدن مقادیر در بالای پشته در حال تغییر است، بسیاری از "
+"پیاده‌سازی‌ها یک \"نشانی قاب\" ارائه می‌دهند که کنار بخش آغازین قاب پشته "
+"قرار می‌گیرد، که مقادیر محلی با سهولت بیشتر به‌واسطه این مقدار می‌توانند "
+"مورد خطاب قرار گیرند. <xref linkend=\"COD\"/> نشانی بازگشتی درخواست‌های تابع "
+"<_:indexterm-5/> <_:indexterm-6/> <_:indexterm-7/> <_:indexterm-8/> نیز در "
+"پشته نگه داشته می‌شود، و این می‌تواند دلیل بهره‌جوهای سرریز پشته باشد، چرا "
+"که سرریز کردن یک متغیر محلی در یک تابع می‌تواند نشانی آن تابع را بازنویسی "
+"کند، که این امر بالقوه به یک کاربر بد اندیش اجازهٔ اجرای هر کدی که بخواهد را "
+"می‌دهد."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3048
@@ -5713,6 +5728,19 @@ msgid ""
 "<function>strcpy</function> when copying a short string into a large buffer "
 "since <function>strncpy</function> NUL fills up the size specified."
 msgstr ""
+"ساده‌ترین راه‌حل برای مشکلات سرریزی پشته این است که همیشه از حافظه محدود و "
+"توابع کپی کردن رشته استفاده کنید. توابع <function>strncpy</function> و "
+"<function>strncat</function> بخشی از کتابخانهٔ استاندارد C هستند. <_:"
+"indexterm-1/> <_:indexterm-2/> این توابع یک مقدار طول به‌عنوان پارامتر "
+"دریافت می‌کند که نباید بزرگتر از اندازهٔ میانگیر مقصد باشد. این توابع سپس به "
+"اندازهٔ آن مقدار بایت از مبدأ به مقصد کپی می‌کنند. با این حال این توابع هم "
+"مشکلاتی دارند. هیچ کدام پایان‌دهی NUL را در صورتی که اندازه میانگیر ورودی به "
+"بزرگی خروجی <_:indexterm-3/> باشد تضمین نمی‌کنند. همچنین پارامتر طول بین "
+"strncpy و strncat به یک شکل استفاده نمی‌شود، از این رو برنامه‌نویسان در خصوص "
+"استفاده درست آنها به سادگی گیج می‌شوند. همچنین به نسبت <function>strcpy</"
+"function> از دست دهی عملکرد قابل توجهی به‌هنگام کپی کردن یک رشته کوتاه به یک "
+"میانگیر بزرگ وجود دارد، چرا که NUL مختص به <function>strncpy</function> کل "
+"اندازه مشخص شده را پر می‌کند."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3166
@@ -5722,6 +5750,10 @@ msgid ""
 "guarantee that they will always null terminate the destination string when "
 "given a non-zero length argument."
 msgstr ""
+"پیاده‌سازی دیگری از کپی کردن حافظه برای مدیریت این مشکلات وجود دارد. توابع "
+"<function>strlcpy</function> و <function>strlcat</function> تضمین می‌کنند که "
+"همیشه رشتهٔ مقصد را به‌هنگام داده شدن برهانی به اندازهٔ غیر صفر، پایان‌دهیِ "
+"پوچ کند."
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:3172
@@ -5973,7 +6005,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:3335
 msgid "A superuser process within a jailed environment has the power to:"
-msgstr ""
+msgstr "یک پردازش ابرکاربر در محیطی زندانی شده قدرت انجام موارد پیش‌رو را دارد:"
 
 #. (itstool) path: listitem/simpara
 #: book.translate.xml:3339
@@ -5983,21 +6015,26 @@ msgid ""
 "<function>setgroups</function>, <function>setreuid</function>, "
 "<function>setregid</function>, <function>setlogin</function>"
 msgstr ""
+"دستکاری کردن اعتبار با <function>setuid</function>، "
+"<function>seteuid</function>، <function>setgid</function>، "
+"<function>setegid</function>، <function>setgroups</function>، "
+"<function>setreuid</function>، <function>setregid</function>، "
+"<function>setlogin</function>"
 
 #. (itstool) path: listitem/simpara
 #: book.translate.xml:3344
 msgid "Set resource limits with <function>setrlimit</function>"
-msgstr ""
+msgstr "تنظیم کردن منابع با <function>setrlimit</function>"
 
 #. (itstool) path: listitem/simpara
 #: book.translate.xml:3345
 msgid "Modify some sysctl nodes (kern.hostname)"
-msgstr ""
+msgstr "ویرایش کردن برخی از گره‌های sysctl (kern.hostname)"
 
 #. (itstool) path: listitem/simpara
 #: book.translate.xml:3347
 msgid "<function>chroot()</function>"
-msgstr ""
+msgstr "<function>chroot()</function>"
 
 #. (itstool) path: listitem/simpara
 #: book.translate.xml:3348
@@ -6005,6 +6042,8 @@ msgid ""
 "Set flags on a vnode: <function>chflags</function>, <function>fchflags</"
 "function>"
 msgstr ""
+"تنظیم کردن نشان بر روی یک vnode: <function>chflags</function>، "
+"<function>fchflags</function>"
 
 #. (itstool) path: listitem/simpara
 #: book.translate.xml:3351
@@ -6012,11 +6051,13 @@ msgid ""
 "Set attributes of a vnode such as file permission, owner, group, size, "
 "access time, and modification time."
 msgstr ""
+"نتظیم کردن صفات یک vnode مانند مجوز پرونده، مالک، گروه، اندازه، زمان دسترسی، "
+"زمان ویرایش."
 
 #. (itstool) path: listitem/simpara
 #: book.translate.xml:3354
 msgid "Bind to privileged ports in the Internet domain (ports &lt; 1024)"
-msgstr ""
+msgstr "اتصال به درگاه‌های مجاز در حوزه اینترنت (ports &lt; 1024)"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3358
@@ -6306,7 +6347,7 @@ msgstr ""
 #: book.translate.xml:3544
 #, no-wrap
 msgid "$set 1"
-msgstr ""
+msgstr "$set 1"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3546
@@ -6322,6 +6363,8 @@ msgstr ""
 #, no-wrap
 msgid "15 \"File not found: %s\\n\""
 msgstr ""
+"15 \"File not found: %s\\n"
+"\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3552
@@ -6339,7 +6382,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:3562
 msgid "Using the Catalog Files from the Source Code"
-msgstr ""
+msgstr "استفاده از پرونده‌های فهرست از کد منبع"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3564
@@ -6408,7 +6451,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:3608
 msgid "A Practical Example"
-msgstr ""
+msgstr "یک مثال کاربردی"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3610
@@ -6416,6 +6459,8 @@ msgid ""
 "The following example will demonstrate an easy solution on how to use NLS "
 "catalogs in a flexible way."
 msgstr ""
+"مثال پیش‌رو راه حلی ساده برای استفاده از فهرست‌های NLS را به‌طریقی انعطاف‌"
+"پذیر نشان می‌دهد."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3613
@@ -6441,6 +6486,17 @@ msgid ""
 "\n"
 "extern char\t\t*nlsstr[];"
 msgstr ""
+"\n"
+"#ifdef WITHOUT_NLS\n"
+"#define getstr(n)\t nlsstr[n]\n"
+"#else\n"
+"#include &lt;nl_types.h&gt;\n"
+"\n"
+"extern nl_catd\t\t catalog;\n"
+"#define getstr(n)\t catgets(catalog, 1, n, nlsstr[n])\n"
+"#endif\n"
+"\n"
+"extern char\t\t*nlsstr[];"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3629
@@ -6469,6 +6525,21 @@ msgid ""
 "/* 2*/  \"some other message\"\n"
 "};"
 msgstr ""
+"\n"
+"#ifndef WITHOUT_NLS\n"
+"#include &lt;nl_types.h&gt;\n"
+"nl_catd\t catalog;\n"
+"#endif\n"
+"\n"
+"/*\n"
+" * Default messages to use when NLS is disabled or no catalog\n"
+" * is found.\n"
+" */\n"
+"char    *nlsstr[] = {\n"
+"        \"\",\n"
+"/* 1*/  \"some random message\",\n"
+"/* 2*/  \"some other message\"\n"
+"};"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3648
@@ -6495,6 +6566,20 @@ msgid ""
 "\tcatclose(catalog);\n"
 "#endif"
 msgstr ""
+"\n"
+"#ifndef WITHOUT_NLS\n"
+"\tcatalog = catopen(\"myapp\", NL_CAT_LOCALE);\n"
+"#endif\n"
+"\n"
+"...\n"
+"\n"
+"printf(getstr(1));\n"
+"\n"
+"...\n"
+"\n"
+"#ifndef WITHOUT_NLS\n"
+"\tcatclose(catalog);\n"
+"#endif"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:3667
@@ -6528,6 +6613,12 @@ msgid ""
 "\terrx(1, \"argument is not a directory\");\n"
 "\t  "
 msgstr ""
+"\n"
+"#include &lt;err.h&gt;\n"
+"...\n"
+"if (!S_ISDIR(st.st_mode))\n"
+"\terrx(1, \"argument is not a directory\");\n"
+"\t  "
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3685
@@ -6550,6 +6641,15 @@ msgid ""
 "}\n"
 "\t  "
 msgstr ""
+"\n"
+"#include &lt;err.h&gt;\n"
+"#include &lt;errno.h&gt;\n"
+"...\n"
+"if (!S_ISDIR(st.st_mode)) {\n"
+"\terrno = ENOTDIR;\n"
+"\terr(1, NULL);\n"
+"}\n"
+"\t  "
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3699
@@ -6581,11 +6681,17 @@ msgid ""
 "\terr(1, NULL);\n"
 "\t  "
 msgstr ""
+"\n"
+"#include &lt;err.h&gt;\n"
+"...\n"
+"if ((p = malloc(size)) == NULL)\n"
+"\terr(1, NULL);\n"
+"\t  "
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3721
 msgid "Making use of <filename>bsd.nls.mk</filename>"
-msgstr ""
+msgstr "استفاده از <filename>bsd.nls.mk</filename>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3723
@@ -6626,6 +6732,14 @@ msgid ""
 "CFLAGS+=\t-DWITHOUT_NLS\n"
 ".endif"
 msgstr ""
+"\n"
+".if !defined(WITHOUT_NLS)\n"
+"NLS=\tes_ES.ISO8859-1\n"
+"NLS+=\thu_HU.ISO8859-2\n"
+"NLS+=\tpt_BR.ISO8859-1\n"
+".else\n"
+"CFLAGS+=\t-DWITHOUT_NLS\n"
+".endif"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3751
