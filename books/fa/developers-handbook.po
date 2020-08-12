@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-12 18:44+0000\n"
+"PO-Revision-Date: 2020-08-12 21:59+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -70,9 +70,9 @@ msgid ""
 "HTML, PDF, PostScript, RTF and so forth) with or without modification, are "
 "permitted provided that the following conditions are met:"
 msgstr ""
-"بازتوزیع و استفاده در منبع (XML DocBook) و قالب‌های 'کامپایل‌شده' (XML، HTML،"
-"PDF، PostScript، RTF و غیره) با یا بدون تغییر، مجاز است مشروط بر آنکه این "
-"شرایط برآورده شوند:"
+"بازتوزیع و استفاده در منبع (XML DocBook) و قالب‌های 'همگردان‌شده' (XML، "
+"HTML،PDF، PostScript، RTF و غیره) با یا بدون تغییر، مجاز است مشروط بر آنکه "
+"این شرایط برآورده شوند:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:75
@@ -5832,6 +5832,13 @@ msgid ""
 "unlikely to succeed, as the attacker would have to also manage to leave the "
 "pseudo-random canaries untouched."
 msgstr ""
+"ProPolice با قرار دادن اعداد شبه تصادفی در نقاط کلیدی پشته قبل از فراخوانی "
+"هرگونه تابع، به محافظت در برابر سرریزهای میان‌گیر مبتنی‌بر پشته و سایر حملات "
+"کمک می‌کند. زمانی‌که یک تابع برمی‌گردد، این <quote>هشدارها</quote> بررسی می‌"
+"شوند و چنانچه دچار تغییر شده باشند، پروندهٔ اجراپذیر به‌سرعت پایان می‌یابد. "
+"از این رو هر تلاشی در راستای تغییر نشانی بازگشت یا سایر متغیرهای ذخیره شده "
+"در پشته به‌منظور اجرای کد مخرب نافرجام خواهد بود، زیرا مهاجم مجبور می‌شود تا "
+"هشدارهای شبه تصادفی را هم دست‌نخورده بگذارد."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3215
@@ -5862,6 +5869,12 @@ msgid ""
 "function>, etc..) and ensure that these functions can never write past the "
 "stack pointer."
 msgstr ""
+"سازوکارهای مبتنی‌بر همگردان برای نرم‌افزار فقط دودویی که قابلیت همگردانی "
+"مجدد را ندارد سراسر بیهوده هستند. در چنین شرایطی چندین کتابخانه هستند که "
+"توابع ناامن کتابخانهٔ C را مجدد پیاده‌سازی می‌کنند "
+"(<function>strcpy</function>، <function>fscanf</function>، <function>getwd</"
+"function> و غیره ...) و اطمینان پیدا می‌کنند که این توابع هرگز نتوانند فراتر "
+"از اشاره‌گر پشته بنویسند."
 
 #. (itstool) path: listitem/simpara
 #: book.translate.xml:3237
@@ -5916,6 +5929,7 @@ msgstr ""
 #: book.translate.xml:3264
 msgid "<primary>user IDs</primary> <secondary>real user ID</secondary>"
 msgstr ""
+"<primary>شناسه‌های کاربری</primary> <secondary>شناسهٔ کاربر حقیقی</secondary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:3268
