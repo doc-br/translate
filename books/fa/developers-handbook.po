@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-13 05:40+0000\n"
+"PO-Revision-Date: 2020-08-13 11:52+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -5901,6 +5901,11 @@ msgid ""
 "LD_PRELOAD and LD_LIBRARY_PATH environment variables can be overwritten/"
 "unset by the user."
 msgstr ""
+"شوربختانه این دست محافظت‌های مبتنی‌بر کتابخانه دارای کاستی‌هایی هستند. این "
+"کتابخانه‌ها تنها در برابر تعداد بسیار کمی از مسائل امنیتی محافظت می‌کنند و "
+"در رفع مشکل اصلی ناتوان هستند. این دفاعیات ممکن است چنانچه برنامه با -fomit-"
+"frame-pointer همگردان شده باشد شکست بخورند. همچنین، متغیرهای محیطی ِ"
+"LD_PRELOAD و LD_LIBRARY_PATH می‌توانند توسط کاربر رونوشت/بازنشانده شوند."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:3254
@@ -5944,6 +5949,9 @@ msgid ""
 "<application>login</application> program sets this when a user initially "
 "logs in and it is seldom changed."
 msgstr ""
+"شناسهٔ کاربر حقیقی تنها توسط فرآیند مرتبط با ابرکاربر قابل تغییر هست. برنامهٔ"
+" <application>login</application> زمانی‌که یک کاربر ابتدا وارد سامانه می‌شود "
+"این را مقرر می‌کند و این به‌ندرت تغییر می‌کند."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3277
