@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-13 14:06+0000\n"
+"PO-Revision-Date: 2020-08-13 17:37+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -5996,6 +5996,17 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> environment, or in "
 "many other creative ways."
 msgstr ""
+"روش سنتی محدود کردنِ یک فرآیند با فراخوان سامانهٔ <function>chroot()</"
+"function> همراه است. این فراخوان سامانه، مسیر ریشه‌ای را که تمام مسیرهای یک "
+"فرآیند و هرگونه فرآیند فرزند برای آن ارجاع داده شده است را تغییر می‌دهد. "
+"برای آنکه این فراخوان موفق شود، فرآیند باید اجازهٔ اجرا (جست‌و‌جو) در مسیری "
+"که بدان ارجاع داده می‌شود را داشته باشد. محیط جدید در واقع تا زمانی‌که شما "
+"به محیط جدید <function>chdir()</function> بدهید ، تأثیر نمی‌پذیرد. همچنین "
+"لازم به اشاره است که یک فرآیند چنانچه دارای امتیاز ریشه باشد به‌آسانی می‌"
+"تواند از محیط chroot خارج شود. این می‌تواند با ساختن گره‌های دستگاه برای "
+"خواندن حافظهٔ هسته، الصاق اشکال‌زدا به فرآیندی خارج از محیطِ <citerefentry><r"
+"efentrytitle>chroot</refentrytitle><manvolnum>8</manvolnum></citerefentry>، "
+"یا بسیاری روش‌های خلاقانهٔ دیگر انجام گیرد."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3306
@@ -6448,6 +6459,8 @@ msgid ""
 "<literal>NL_CAT_LOCALE</literal>, which means that the used catalog file "
 "will be based on <envar>LC_MESSAGES</envar>."
 msgstr ""
+"<literal>NL_CAT_LOCALE</literal>، این بدین معناست که پروندهٔ فهرست استفاده "
+"شده بر مبنای <envar>LC_MESSAGES</envar> قرار خواهد گرفت."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3586
@@ -6455,6 +6468,8 @@ msgid ""
 "<literal>0</literal>, which means that <envar>LANG</envar> has to be used to "
 "open the proper catalog."
 msgstr ""
+"<literal>0</literal>، این بدان معناست که <envar>LANG</envar> باید برای باز "
+"کردن فهرست مناسب مورد استفاده قرار گیرد."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3592
@@ -6485,6 +6500,9 @@ msgid ""
 "<citerefentry><refentrytitle>catclose</refentrytitle><manvolnum>3</"
 "manvolnum></citerefentry>, which has one argument, the catalog id."
 msgstr ""
+"پس از استفاده از پروندهٔ فهرست، باید با فراخوانیِ <citerefentry><refentrytitl"
+"e>catclose</refentrytitle><manvolnum>3</manvolnum></citerefentry> که یک "
+"برهان دارد، شناسهٔ کاتالوگ، بسته شود."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3608
@@ -13222,7 +13240,7 @@ msgstr ""
 #: book.translate.xml:8521
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>kgdb -n last</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>kgdb -n last</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8523
@@ -13238,6 +13256,8 @@ msgstr ""
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>kgdb /boot/kernel/kernel /var/crash/vmcore.0</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>kgdb /boot/kernel/kernel /var/crash/vmcore."
+"0</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8530
@@ -13474,7 +13494,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:8642
 msgid "On-Line Kernel Debugging Using DDB"
-msgstr ""
+msgstr "اشکال‌زدایی برخط هسته با DDB"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8644
