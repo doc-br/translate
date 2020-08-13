@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-13 17:37+0000\n"
+"PO-Revision-Date: 2020-08-14 03:59+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -6479,6 +6479,10 @@ msgid ""
 "<literal>nl_catd</literal>. Please refer to the manual page for a list of "
 "possible returned error codes."
 msgstr ""
+"فراخوان <citerefentry><refentrytitle>catopen</refentrytitle><manvolnum>3</man"
+"volnum></citerefentry> یک شناسهٔ فهرست از نوع <literal>nl_catd</literal> را "
+"بازگردانی می‌کند. برای فهرستی از کدهای خطای احتمالی لطفاً به صفحهٔ راهنما "
+"رجوع کنید."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3596
@@ -6501,8 +6505,8 @@ msgid ""
 "manvolnum></citerefentry>, which has one argument, the catalog id."
 msgstr ""
 "پس از استفاده از پروندهٔ فهرست، باید با فراخوانیِ <citerefentry><refentrytitl"
-"e>catclose</refentrytitle><manvolnum>3</manvolnum></citerefentry> که یک "
-"برهان دارد، شناسهٔ کاتالوگ، بسته شود."
+"e>catclose</refentrytitle><manvolnum>3</manvolnum></citerefentry>، که یک "
+"برهان به نام شناسهٔ فهرست دارد، بسته شود."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3608
@@ -6559,7 +6563,7 @@ msgstr ""
 msgid ""
 "Next, put these lines into the global declaration part of the main source "
 "file:"
-msgstr ""
+msgstr "سپس، این خطوط را در بخش متغیر سراسریِ پروندهٔ منبع اصلی قرار دهید:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:3632
@@ -6602,6 +6606,8 @@ msgstr ""
 msgid ""
 "Next come the real code snippets, which open, read, and close the catalog:"
 msgstr ""
+"سپس نوبت به تکه کدهای واقعی می‌رسد، که فهرست را باز می‌کند، می‌خواند و "
+"می‌بندد:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:3651
@@ -6640,7 +6646,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:3667
 msgid "Reducing Strings to Localize"
-msgstr ""
+msgstr "کاستن رشته‌ها به محلی‌سازی"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3669
@@ -6650,6 +6656,10 @@ msgid ""
 "just avoid duplication and provide consistent error messages for the common "
 "errors that can be encountered by a great many of programs."
 msgstr ""
+"روشی مناسب برای کاستن رشته‌هایی که نیاز به محلی‌سازی دارند با استفاده از "
+"پیام‌های خطای <application>libc</application> وجود دارد. این همچنین برای "
+"اجتناب از تکرار مفید است و پیام‌های خطای یکپارچه‌ای را برای خطاهای رایجی که "
+"ممکن است برنامه‌های بسیاری با آنها مواجه شوند ارائه می‌دهد."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3675
