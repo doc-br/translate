@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-15 16:31+0000\n"
+"PO-Revision-Date: 2020-08-15 18:37+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -6165,6 +6165,9 @@ msgid ""
 "draft that adds event auditing, access control lists, fine grained "
 "privileges, information labeling, and mandatory access control."
 msgstr ""
+"<trademark class=\"registered\">POSIX</trademark> پیش‌نویسی منتشر کرده است "
+"که رسیدگی به رویداد، فهرست‌های نظارت دسترسی، امتیاز‌های بسیار دقیق، برچسب‌"
+"گذاری اطلاعات، و نظارت دسترسی اجباری را اضافه می‌کند."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3375
@@ -6173,6 +6176,9 @@ msgid ""
 "www.trustedbsd.org/\">TrustedBSD</link> project. Some of the initial work "
 "has been committed to FreeBSD-CURRENT (cap_set_proc(3))."
 msgstr ""
+"این یک کار در حال انجام است و تمرکز پروژهٔ <link xlink:href=\"http://www."
+"trustedbsd.org/\">TrustedBSD</link> است. برخی کارهای ابتدایی بر روی FreeBSD-"
+"CURRENT (cap_set_proc(3)) ثبت شده‌اند."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:3383
@@ -6187,11 +6193,15 @@ msgid ""
 "signals, environment variables, resources, IPC, mmaps, the filesystem "
 "working directory, file descriptors, the # of open files, etc."
 msgstr ""
+"یک برنامه هرگز نباید فرض کند که هر چیزی در ارتباط با محیط کاربران عاقلانه "
+"است. این شامل (اما مطمئناً نه محدود به): ورودی کاربر، سیگنال‌ها، متغیرهای "
+"محیطی، منابع، IPC، mmaps، مسیر کاری سامانهٔ پرونده، توصیف‌گرهای پرونده، # در "
+"پرونده‌های باز، و غیره است."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:3391
 msgid "<primary>positive filtering</primary>"
-msgstr ""
+msgstr "<primary>پالایش مثبت</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:3392
@@ -6212,7 +6222,7 @@ msgstr ""
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:3403
 msgid "<primary>Perl Taint mode</primary>"
-msgstr ""
+msgstr "<primary>حالت عیب در Perl</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3405
@@ -6241,17 +6251,17 @@ msgstr ""
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:3423
 msgid "<primary>race conditions</primary> <secondary>signals</secondary>"
-msgstr ""
+msgstr "<primary>حالات تسابق</primary> <secondary>سیگنال‌ها</secondary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:3426
 msgid "<primary>race conditions</primary> <secondary>access checks</secondary>"
-msgstr ""
+msgstr "<primary>حالات تسابق</primary> <secondary>بررسی‌های دسترسی</secondary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:3429
 msgid "<primary>race conditions</primary> <secondary>file opens</secondary>"
-msgstr ""
+msgstr "<primary>حالات تسابق</primary> <secondary>پرونده‌های باز</secondary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3432
