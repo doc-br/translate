@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
 "PO-Revision-Date: 2020-08-15 16:08+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -6048,6 +6048,10 @@ msgid ""
 "specified IP address, and the power of \"root privilege\" in this jail is "
 "severely constrained."
 msgstr ""
+"مفهوم زندان بر روی <function>chroot()</function> و با محدود کردن قدرت "
+"ابرکاربر در ساخت 'کارساز مجازی' گسترش می‌یابد. هنگامی‌که زندان ساخته می‌شود، "
+"تمام ارتباطات شبکه باید از طریق نشانی IP مشخص شده آغاز شوند، و قدرت \"امتیاز "
+"ریشه\" در این زندان به‌شدت محدود می‌شود."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3328
@@ -6058,6 +6062,11 @@ msgid ""
 "<function>suser_xxx()</function>. This function is responsible for "
 "recognizing or denying access to superuser power for imprisoned processes."
 msgstr ""
+"زمانی‌که در زندان هستید، هر آزمونی برای حصول قدرت ابرکاربر در محدودهٔ هسته "
+"توسط فراخوان <function>suser()</function> نافرجام خواهد بود. گرچه، برخی "
+"فراخوان‌ها به <function>suser()</function>، به یک رابط جدید "
+"<function>suser_xxx()</function> تغییر یافته‌اند. این تابع مسئول تشخیص یا "
+"انکار دسترسی به قدرت ابرکاربری برای فرآیندهای محبوس شده است."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3335
@@ -6126,12 +6135,18 @@ msgid ""
 "have a very limited meaning within a jail, but there is no way to specify "
 "exactly what \"very limited\" means."
 msgstr ""
+"<function>Jail</function> یک ابزار بسیار مفید برای راه‌اندازی برنامه‌ها در "
+"یک محیط ایمن است، اما کاستی‌هایی نیز دارد. هم‌اکنون، سازوکارهای IPC به "
+"<function>suser_xxx</function> تبدیل نشده‌اند، از این رو برنامه‌های چون "
+"MySQL نمی‌توانند درون زندان اجرا شوند. دسترسی ابرکاربری می‌تواند مفهومی "
+"بسیار محدود درون زندان داشته باشد، اما هیچ راهی برای تشخیص دقیق مفهوم \"بسیار"
+" محدود\" وجود ندارد."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3367
 msgid ""
 "<trademark class=\"registered\">POSIX</trademark>.1e Process Capabilities"
-msgstr ""
+msgstr "توانایی‌های فرآیند <trademark class=\"registered\">POSIX</trademark>.1e"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:3369
