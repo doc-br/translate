@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-15 18:37+0000\n"
-"Last-Translator: Parsa Samet <qps@irbug.org>\n"
+"PO-Revision-Date: 2020-08-15 20:01+0000\n"
+"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -6218,6 +6218,12 @@ msgid ""
 "on the world wide web. For filenames you need to be extra careful about "
 "paths (\"../\", \"/\"), symbolic links, and shell escape characters."
 msgstr ""
+"هرگز نباید فرض کنید که می‌توانید تمام اشکال ورودی نامعتبری که ممکن است کاربر "
+"عرضه کند را بگیرید. در عوض، برنامه شما باید از فیلتری قطعی برای قبول کردن "
+"مجموعهٔ خاص ورودی‌هایی که شما ایمن می‌دانید استفاده کند. اعتبارسنجی نامناسب "
+"دلیل سوءاستفاده‌های بسیاری بوده است، به‌ویژه اجرانامه‌های CGI بر روی تارِ "
+"جهان‌گستر. برای اسامی پرونده‌ها نیاز به دقت بسیار در مورد مسیرها (\"../\", \""
+"/\")، پیوندهای نمادین، و نویسه‌های رهایی پوسته دارید."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:3403
@@ -6320,7 +6326,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:3475
 msgid "A Call to Unify the I18N Effort"
-msgstr ""
+msgstr "فراخوانی برای متحد کردن اهتمام I18N"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3477
