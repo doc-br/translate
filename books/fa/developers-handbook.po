@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-15 14:09+0000\n"
-"Last-Translator: Parsa Samet <qps@irbug.org>\n"
+"PO-Revision-Date: 2020-08-15 16:08+0000\n"
+"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -6136,12 +6136,12 @@ msgstr ""
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:3369
 msgid "<primary>POSIX.1e Process Capabilities</primary>"
-msgstr ""
+msgstr "<primary>قابلیت‌های پردازش </primary>POSIX.1e"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:3370
 msgid "<primary>TrustedBSD</primary>"
-msgstr ""
+msgstr "<primary>TrustedBSD</primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3372
@@ -6162,7 +6162,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:3383
 msgid "Trust"
-msgstr ""
+msgstr "اعتماد"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3385
@@ -6181,7 +6181,7 @@ msgstr ""
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:3392
 msgid "<primary>data validation</primary>"
-msgstr ""
+msgstr "<primary>اعتبارسنجی داده</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3394
@@ -6213,7 +6213,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:3416
 msgid "Race Conditions"
-msgstr ""
+msgstr "حالات تسابق"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3418
@@ -6255,22 +6255,22 @@ msgstr ""
 #. (itstool) path: chapter/title
 #: book.translate.xml:3455
 msgid "Localization and Internationalization - L10N and I18N"
-msgstr ""
+msgstr "بین‌المللی‌سازی و محلی‌سازی - L10N و I18N"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:3458
 msgid "Programming I18N Compliant Applications"
-msgstr ""
+msgstr "برنامه‌نویسی سازگار با I18N"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:3459
 msgid "<primary>Qt</primary>"
-msgstr ""
+msgstr "<primary>Qt</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:3460
 msgid "<primary>GTK</primary>"
-msgstr ""
+msgstr "<primary>GTK</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3461
@@ -6328,17 +6328,17 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:3496
 msgid "Perl and Python"
-msgstr ""
+msgstr "Perl و Python"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:3497
 msgid "<primary>Perl</primary>"
-msgstr ""
+msgstr "<primary>Perl</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:3500
 msgid "<primary>Python</primary>"
-msgstr ""
+msgstr "<primary>Python</primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3504
@@ -6346,6 +6346,8 @@ msgid ""
 "Perl and Python have I18N and wide character handling libraries. Please use "
 "them for I18N compliance."
 msgstr ""
+"Perl و Python کتابخانه‌های رسیدگی به I18N و نویسه‌های بسیط دارند. خواهشمند "
+"است برای سازگاری با I18N از آنها استفاده کنید."
 
 #. (itstool) path: info/title
 #: book.translate.xml:3510
@@ -6537,6 +6539,9 @@ msgid ""
 "which is included into all source files where localized messages are "
 "necessary:"
 msgstr ""
+"سطور پیش‌رو باید در یک پروندهٔ سرایند مشترک از برنامه قرار بگیرند، چیزی که "
+"در تمامی پرونده‌های منبع در جایی که پیامهای محلی‌سازی شده لازم است شامل "
+"می‌شود:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:3617
@@ -6675,6 +6680,8 @@ msgid ""
 "First, here is an example that does not use <application>libc</application> "
 "error messages:"
 msgstr ""
+"نخست، نمونه‌ای است که از پیام‌های خطای <application>libc</application> "
+"استفاده نمی‌کند:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:3678
@@ -6700,6 +6707,8 @@ msgid ""
 "This can be transformed to print an error message by reading <varname>errno</"
 "varname> and printing an error message accordingly:"
 msgstr ""
+"این می‌تواند برای چاپ یک پیام خطا با خواندن <varname>errno</varname> و نمایش "
+"یک پیام خطا بر این اساس تبدیل شود:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:3689
@@ -6743,6 +6752,8 @@ msgid ""
 "set automatically by a preceding call, so it is not necessary to set it "
 "explicitly:"
 msgstr ""
+"شایان ذکر است مواردی وجود دارد که <varname>errno</varname> به‌طور خودکار "
+"توسط یک فراخوان قبلی تنظیم شده است، پس نیازی به تنظیم مبرهن آن نیست:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:3711
