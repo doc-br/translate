@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-16 15:16+0000\n"
+"PO-Revision-Date: 2020-08-16 17:51+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -6259,7 +6259,7 @@ msgid ""
 "on the relative timing of events. In other words, a programmer incorrectly "
 "assumed that a particular event would always happen before another."
 msgstr ""
-"حالت تسابق رفتار نامعمول برانگیخته از وابستگی نابه‌هنگام به زمان‌بندی نسبی "
+"حالت تسابق، رفتار نامعمول برانگیخته از وابستگی نابه‌هنگام به زمان‌بندی نسبی "
 "رویدادها است. به بیان دیگر، یک برنامه‌نویس به اشتباه می‌پنداشت که یک رویداد "
 "بخصوص همیشه قبل از دیگری روی می‌دهد."
 
@@ -6332,6 +6332,12 @@ msgid ""
 "your application to other languages quickly. Refer to the library specific "
 "I18N documentation for more details."
 msgstr ""
+"برای آنکه برنامهٔ خود را برای زبان‌های دیگر کاربردی‌تر کنید، ما امیدواریم که "
+"شما سازگار با I18N برنامه‌نویسی کنید. همگرادان GNU gcc و کتابخانه‌های GUI "
+"همچون QT و GTK از طریق بررسی ویژهٔ رشته‌ها از I18N پشتیبانی می‌کنند. "
+"سازگارسازی یک برنامه با I18N بسیار آسان است. این اجازه را می‌دهد تا مشارکت‌"
+"کنندگان برنامهٔ شما را به‌سرعت به زبان‌های دیگر پورت کنند. برای جزئیات بیشتر "
+"به مستندات مخصوص کتابخانهٔ I18N رجوع کنید."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3469
@@ -6341,6 +6347,9 @@ msgid ""
 "functions. In addition, please be sure to allow for wide or multibyte "
 "character support."
 msgstr ""
+"برخلاف برداشت‌های رایج، نوشتن کد سازگار با I18N آسان است. به‌طور معمول، تنها "
+"شامل پیچیدن رشته‌های شما با توابع مخصوص کتابخانه است. به‌علاوه، خواهشمند است "
+"از پشتیبانی نویسه‌های بسیط یا چندبایتی اطمینان پیدا کنید."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3475
@@ -6356,6 +6365,10 @@ msgid ""
 "major groups in I18N could congregate into a group effort similar to the "
 "Core Team's responsibility."
 msgstr ""
+"این مسئله که تلاش‌های مستقلِ I18N/L10N برای هر کشور تکرار کارهای یکدیگر است "
+"توجه ما را به خود جلب کرده است. بسیاری از ما در حال اختراع دوباره و ناکارآمد "
+"چرج بوده‌ایم. امیدواریم که گروه‌های بزرگ مختلف در I18N بتوانند در یک گروه "
+"شبیه به وظایف تیم اصلی جمع شوند."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3484
@@ -6365,6 +6378,10 @@ msgid ""
 "the future, we hope to create applications that work in all the languages "
 "out-of-the-box without dirty hacks."
 msgstr ""
+"در حال حاضر، امیدواریم زمانی‌که شما برنامه‌های I18N را می‌نویسید یا پورت "
+"می‌کنید، آن را جداگانه برای آزمایش به فهرست پست‌سپاریِ FreeBSD مرتبط با همان "
+"کشور ارسال کنید. در آینده، امیدواریم برنامه‌هایی بسازیم تا آماده و بدون نیاز "
+"به کثیف‌کاری در تمام زبان‌ها کار کنند."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3490
@@ -6374,6 +6391,10 @@ msgid ""
 "you are an I18N/L10N developer, please send your comments, ideas, questions, "
 "and anything you deem related to it."
 msgstr ""
+"<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-i18n\""
+">فهرست پست‌سپاری بین‌المللی‌سازی FreeBSD</link> ایجاد شده است. اگر شما یک "
+"توسعه‌دهندهٔ I18N/L10N هستید، خواهشمند است نظرات، ایده‌ها، سوالات، و هر آنچه "
+"که به نظرتان مرتبط با آن هست را برای ما ارسال کنید."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3496
@@ -6402,7 +6423,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:3510
 msgid "Localized Messages with POSIX.1 Native Language Support (NLS)"
-msgstr ""
+msgstr "پیام‌های محلی‌شده با پشتیبانی زبان بومی (NLS) POSIX.1"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:3512
@@ -6427,7 +6448,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:3526
 msgid "Organizing Localized Messages into Catalog Files"
-msgstr ""
+msgstr "ساماندهی پیام‌های محلی‌شده درون پرونده‌های فهرست"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3528
