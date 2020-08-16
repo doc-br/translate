@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-15 20:01+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"PO-Revision-Date: 2020-08-16 15:16+0000\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -5394,8 +5394,8 @@ msgstr ""
 "سادگی در گمانه‌زنی پیرامون پایداری محیط است. برنامه‌ها هرگز نباید به ورودی "
 "کاربر (در تمام اشکال خود)، منابع سامانه، ارتباط بین پردازشی، یا زمانبندی "
 "رویدادها اعتماد کنند. فرآیندهای <trademark class=\"registered\">UNIX</"
-"trademark> به‌طور همزمان اجرا نمی‌شوند، از این رو عملیات منطقی به‌ندرت تجزیه‌"
-"ناپذیر هستند."
+"trademark> به‌طور همزمان اجرا نمی‌شوند، از این رو عملیات منطقی به‌ندرت اتمی "
+"هستند."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:2989
@@ -6228,7 +6228,7 @@ msgstr ""
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:3403
 msgid "<primary>Perl Taint mode</primary>"
-msgstr "<primary>حالت عیب در Perl</primary>"
+msgstr "<primary>حالت Taint در Perl</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3405
@@ -6240,6 +6240,12 @@ msgid ""
 "function>, <function>readlink()</function>, <function>getpwxxx()</"
 "function>), and all file input."
 msgstr ""
+"Perl امکان بسیار جالبی به نام \"Taint\" دارد که می‌تواند برای جلوگیری از به‌"
+"کاربردن داده‌های به‌دست آمدهٔ خارج از برنامه توسط اجرانامه‌ها به‌روشی ناامن "
+"مورد استفاده قرار گیرد. این حالت براهین خط فرمان، متغیرهای محیطی، اطلاعات "
+"محلی، نتایج برخی فراخوان‌های سامانه (<function>readdir()</function>, "
+"<function>readlink()</function>, <function>getpwxxx()</function>)، و تمام "
+"ورودی‌های پرونده را بررسی می‌کند."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:3416
@@ -6253,6 +6259,9 @@ msgid ""
 "on the relative timing of events. In other words, a programmer incorrectly "
 "assumed that a particular event would always happen before another."
 msgstr ""
+"حالت تسابق رفتار نامعمول برانگیخته از وابستگی نابه‌هنگام به زمان‌بندی نسبی "
+"رویدادها است. به بیان دیگر، یک برنامه‌نویس به اشتباه می‌پنداشت که یک رویداد "
+"بخصوص همیشه قبل از دیگری روی می‌دهد."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:3423
@@ -6282,6 +6291,16 @@ msgid ""
 "umask before <function>open()</function> to obviate the need for spurious "
 "<function>chmod()</function> calls."
 msgstr ""
+"برخی از علل حالات تسابق شامل سیگنال‌ها، بررسی دسترسی، و پرونده‌های باز "
+"هستند. سیگنال‌ها به‌طور طبیعی رویدادهایی ناهمزمان هستند، از این رو باید "
+"مراقبت‌های ویژه‌ای در قبال آنها انجام گیرد. بررسی دسترسی توسط "
+"<function>access(2)</function> و سپس <function>open(2)</function> آشکارا "
+"غیراتمی است. کاربران می‌توانند پرونده‌ها را در بین دو سلول حرکت دهند. در عوض،"
+" برنامه‌های امتیازدار باید <function>seteuid()</function> کنند و سپس "
+"<function>open()</function> را به‌طور مستقیم فراخوانی کنند. در امتداد همان "
+"خطوط، یک برنامه همیشه باید یک umask مناسب قبل از <function>open()</function> "
+"قرار دهد تا نیازمندی برای فراخوان‌های نامعتبرِ <function>chmod()</function> "
+"را برطرف کند."
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:3455
