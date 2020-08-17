@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-16 17:51+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"PO-Revision-Date: 2020-08-17 16:34+0000\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -2005,7 +2005,7 @@ msgid ""
 "designed to protect the operating system and other programs from rogue "
 "programs."
 msgstr ""
-"این بدین معناست که برنامهٔ شما سعی بر انجام عملیاتی غیرمجاز بر روی حافظه را "
+"این بدان معناست که برنامهٔ شما سعی بر انجام عملیاتی غیرمجاز بر روی حافظه را "
 "داشته است؛ <trademark class=\"registered\">UNIX</trademark> به‌گونه‌ای طراحی "
 "شده است تا از سامانهٔ عامل و سایر برنامه‌ها در مقابل برنامه‌های فریبکار "
 "محافظت کند."
@@ -3129,7 +3129,7 @@ msgid ""
 "option>."
 msgstr ""
 "(بدون هیچ اشاره‌ای به نام پرونده و شماره خطِ کد منبع) هنگامی‌که نقطهٔ گسست "
-"را تعیین می‌کنیم، بدین معناست که برنامه بدون <option>-g</option> همگردان شده "
+"را تعیین می‌کنیم، بدان معناست که برنامه بدون <option>-g</option> همگردان شده "
 "است."
 
 #. (itstool) path: tip/para
@@ -6423,7 +6423,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:3510
 msgid "Localized Messages with POSIX.1 Native Language Support (NLS)"
-msgstr "پیام‌های محلی‌شده با پشتیبانی زبان بومی (NLS) POSIX.1"
+msgstr "پیام‌های بومی‌شده با پشتیبانی زبان بومی (NLS) POSIX.1"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:3512
@@ -6444,6 +6444,11 @@ msgid ""
 "the POSIX.1 NLS functions, which are provided as a part of the FreeBSD base "
 "system."
 msgstr ""
+"فراتر از کارکردهای ابتدایی I18N، مانند پشتیبانی کدگذاری‌های ورودی یا "
+"قراردادهای ملی، شامل جداکننده‌های دهدهی گوناگون، در مرحلهٔ بالاتری از I18N، "
+"بومی‌سازی پیام‌های نوشته شده در خروجی توسط برنامه‌های مختلف ممکن است. یکی از "
+"راه‌های متداول برای انجام آن استفاده از توابع POSIX.1 NLS است، که به‌عنون "
+"بخشی از سامانهٔ پایهٔ FreeBSD ارائه می‌شوند."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3526
@@ -6461,6 +6466,13 @@ msgid ""
 "For instance, the Hungarian messages for ISO8859-2 encoding should be stored "
 "in a file called <filename>hu_HU.ISO8859-2</filename>."
 msgstr ""
+"POSIX.1 NLS بر مبنای پرونده‌های فهرست است، که شامل پیام‌های بومی‌شده در "
+"کدگذاری مورد نظر هست. پیام‌ها در مجموعه‌هایی مرتب شده‌اند و هر پیام توسط یک "
+"عدد صحیح در مجموعهٔ مشمول قابل شناسایی است. پرونده‌های فهرست به‌طور معمول از "
+"روی پرونده‌های بومی که حاوی پیام‌های بومی‌شده برای آنها هستند نام‌گذاری "
+"شده‌اند، به‌همراه افزونهٔ <literal>.msg</literal>. برای مثال، پیام‌های "
+"مجارستانی برای کدگذاری ISO8859-2 باید در پرونده‌ای به نام <filename>hu_HU."
+"ISO8859-2</filename> ذخیره شوند."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3537
@@ -6472,6 +6484,12 @@ msgid ""
 "<literal>$</literal> sign. The <literal>set</literal> keyword is then "
 "followed by the set number. For example:"
 msgstr ""
+"این پرونده‌های فهرست پرونده‌های نوشتاری متداولی هستند که شامل پیام‌های شماره‌"
+"گذاری شده هستند. این امکان وجود دارد تا نکات را با نشانهٔ <literal>$</"
+"literal> شروع کنیم. همچنین حدود تعیین شده توسط نکات ویژه جدا شده‌اند، جایی‌"
+"که واژهٔ کلیدی <literal>set</literal> باید به‌طور مستقیم نشانهٔ <literal>$</"
+"literal> را دنبال کند. سپس واژهٔ کلیدی <literal>set</literal> توسط عدد تعیین "
+"شده همراه می‌شود. برای مثال:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:3544
@@ -6487,6 +6505,10 @@ msgid ""
 "<citerefentry><refentrytitle>printf</refentrytitle><manvolnum>3</manvolnum></"
 "citerefentry> are accepted:"
 msgstr ""
+"ورودی‌های پیام‌ فعلی با شمارهٔ پیام آغاز می‌شوند و با پیام‌های بومی‌شده "
+"همراه می‌شوند. پیراینده‌های شناخته شدهٔ "
+"<citerefentry><refentrytitle>printf</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry> پذیرفته شده‌اند:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:3550
@@ -6815,6 +6837,11 @@ msgid ""
 "was necessary to include <filename>errno.h</filename> in order to directly "
 "access <varname>errno</varname>."
 msgstr ""
+"در این مثال، رشتهٔ سفارشی حذف شده است، از این رو مترجمین هنگام بومی‌سازی "
+"برنامه کار کمتری انجام خواهند داد و کاربران پیام خطای متداول <quote>Not a "
+"directory</quote> را در مواجه با این خطا مشاهده می‌کنند. این پیام احتمالاً "
+"برای آنها آشناتر خواهد بود. لطفاً توجه داشته باشید برشمردن <filename>errno."
+"h</filename> به‌منظور دسترسی مستقیم به <varname>errno</varname> لازم بود."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3707
@@ -6859,6 +6886,12 @@ msgid ""
 "explicitly, it is pulled in from the common Makefiles, such as <filename>bsd."
 "prog.mk</filename> or <filename>bsd.lib.mk</filename>."
 msgstr ""
+"استفاده از پرونده‌های فهرست مستلزم چند قدم تکراری است، مانند همگردانی فهرست‌"
+"ها و نصب آنها در مکان مناسب. برای آنکه این فرآیند ساده‌تر شود، <filename>bsd."
+"nls.mk</filename> تعدادی ماکرو را معرفی می‌کند. برشمردن <filename>bsd.nls."
+"mk</filename> به‌طور صریح ضرورتی ندارد، زیرا از Makefiles های رایج برداشته "
+"می‌شود، مانند <filename>bsd.prog.mk</filename> یا <filename>bsd.lib."
+"mk</filename>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3732
@@ -6917,7 +6950,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:3776
 msgid "Source Tree Guidelines and Policies"
-msgstr ""
+msgstr "رهنمودها و سیاست‌های درخت منبع"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:3779 book.translate.xml:3874
@@ -6969,7 +7002,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:3810
 msgid "<varname>MAINTAINER</varname> on Makefiles"
-msgstr ""
+msgstr "<varname>MAINTAINER</varname> در Makefiles"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:3812
@@ -6992,6 +7025,7 @@ msgstr ""
 #, no-wrap
 msgid "<varname>MAINTAINER</varname>= <replaceable>email-addresses</replaceable>"
 msgstr ""
+"<varname>MAINTAINER</varname>= <replaceable>email-addresses</replaceable>"
 
 #. (itstool) path: tip/para
 #: book.translate.xml:3826
@@ -7019,6 +7053,9 @@ msgid ""
 "to that piece of the code, and in the case of contributed software, for "
 "tracking new versions, as appropriate."
 msgstr ""
+"نگهدارنده مالک و مسئول آن کد است. این بدان معناست که او مسئول رفع اشکال‌ها و "
+"پاسخ‌گویی به مشکلات گزارش شدهٔ مربوط به آن تکه کد است، و در مورد نرم‌"
+"افزارهای اعطا شده، در صورت لزوم، مسئول پیگردی نسخه‌های جدید است."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3850
@@ -7141,7 +7178,7 @@ msgstr ""
 #. (itstool) path: step/title
 #: book.translate.xml:3958
 msgid "Preparing the Tree"
-msgstr ""
+msgstr "آماده‌سازی درخت"
 
 #. (itstool) path: step/para
 #: book.translate.xml:3960
@@ -7174,6 +7211,13 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn propdel -R svn:mergeinfo</userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd vendor/<replaceable>foo</replaceable>/dist/"
+"contrib/<replaceable>foo</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>svn move $(svn list) ../..</userinput>\n"
+"<prompt>%</prompt> <userinput>cd ../..</userinput>\n"
+"<prompt>%</prompt> <userinput>svn remove contrib</userinput>\n"
+"<prompt>%</prompt> <userinput>svn propdel -R svn:mergeinfo</userinput>\n"
+"<prompt>%</prompt> <userinput>svn commit</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:3982
@@ -7208,6 +7252,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn propdel svn:keywords -R .</userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>svn propdel svn:keywords -R .</userinput>\n"
+"<prompt>%</prompt> <userinput>svn commit</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:4004
@@ -7225,6 +7271,12 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn merge --record-only ^/vendor/<replaceable>foo</replaceable>/dist@<replaceable>12345678</replaceable> .</userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd head/contrib/"
+"<replaceable>foo</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>svn merge --record-only ^/vendor/"
+"<replaceable>foo</replaceable>/dist@<replaceable>12345678</replaceable> "
+".</userinput>\n"
+"<prompt>%</prompt> <userinput>svn commit</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:4013
@@ -7236,7 +7288,7 @@ msgstr ""
 #. (itstool) path: step/title
 #: book.translate.xml:4019
 msgid "Importing New Sources"
-msgstr ""
+msgstr "وارد کردن منابع جدید"
 
 #. (itstool) path: step/para
 #: book.translate.xml:4021
@@ -7264,6 +7316,14 @@ msgid ""
 "<prompt>%</prompt> <userinput>cd ../<replaceable>foo-9.9</replaceable></userinput>\n"
 "<prompt>%</prompt> <userinput>find . -type f | cut -c 3- | sort &gt; ../<replaceable>new</replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd vendor/"
+"<replaceable>foo</replaceable>/dist</userinput>\n"
+"<prompt>%</prompt> <userinput>svn list -R | grep -v '/$' | sort &gt; "
+"../<replaceable>old</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>cd ../<replaceable>foo-9."
+"9</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>find . -type f | cut -c 3- | sort &gt; "
+"../<replaceable>new</replaceable></userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:4038
