@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-18 17:57+0000\n"
+"PO-Revision-Date: 2020-08-18 20:39+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -6922,6 +6922,14 @@ msgid ""
 "citerefentry> variable has to be defined in order to build the program "
 "without NLS support."
 msgstr ""
+"تعریف <varname>NLSNAME</varname> به‌طور معمول کافیست، که باید نام فهرست را "
+"به‌عنوان اولین برهانِ <citerefentry><refentrytitle>catopen</refentrytitle><ma"
+"nvolnum>3</manvolnum></citerefentry> ذکر کند و پرونده‌های فهرست را در "
+"<varname>NLS</varname> بدون افزونهٔ <literal>.msg</literal> آنها فهرست کند. "
+"در اینجا مثالی آمده است، که غیرفعال کردن NLS را هنگامی‌که با کدهای نمونه از "
+"قبل استفاده شده باشد ممکن می‌سازد. متغیر <varname>WITHOUT_NLS</varname> "
+"<citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> باید تعریف شود تا برنامه بدون پشتیبانی از NLS ساخته شود."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:3742
@@ -7013,6 +7021,12 @@ msgid ""
 "manvolnum></citerefentry> and <citerefentry><refentrytitle>style.Makefile</"
 "refentrytitle><manvolnum>5</manvolnum></citerefentry>."
 msgstr ""
+"برنامه‌نویسی به سبک همخوان بسیار مهم است، بخصوص با پروژه‌های بزرگی چون "
+"FreeBSD. کد باید سبک برنامه‌نویسی در FreeBSD را که در "
+"<citerefentry><refentrytitle>style</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry> و <citerefentry><refentrytitle>style."
+"Makefile</refentrytitle><manvolnum>5</manvolnum></citerefentry> توضیح داده "
+"شده است دنبال کند."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:3810
@@ -7034,6 +7048,11 @@ msgid ""
 "maintainership to the world by adding a <varname>MAINTAINER</varname> line "
 "to the <filename>Makefile</filename> of the port in question:"
 msgstr ""
+"اگر بخش خاصی از توزیع <filename>src/</filename> در FreeBSD توسط یک شخص یا "
+"گروهی از اشخاص نگهداری می‌شود، این امر از طریق یک ورودی در <filename>src/"
+"MAINTAINERS</filename> برقرار می‌شود. نگهدارنگان پورت‌ها در مجموعه پورت‌ها "
+"حق نگهداری خود را با اضافه کردن خط <varname>MAINTAINER</varname> در "
+"<filename>Makefile</filename> اعلام می‌کنند:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:3823
@@ -7082,6 +7101,11 @@ msgid ""
 "it is suggested that you try to have the changes reviewed by someone else if "
 "at all possible."
 msgstr ""
+"تغییرات اعمال شده بر روی مسیرهایی که نگهدارنده‌ای تعریف‌شده دارند قبل از "
+"آنکه ثبت شوند جهت بازبینی به نگهدارنگان ارسال می‌شوند. تنها درصورتی‌که "
+"نگهدارنده برای مدت غیرقابل قبولی پاسخ ایمیل‌ها را ندهد، ثبت تغییرات بدون "
+"بازبینی توسط نگهدارنده پذیرفته خواهد بود. گرچه، پیشنهاد می‌شود که در صورت "
+"امکان تغییرات را مورد بازبینی شخص دیگری قرار دهید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3861
@@ -7090,6 +7114,9 @@ msgid ""
 "they agree to assume this duty. On the other hand it does not have to be a "
 "committer and it can easily be a group of people."
 msgstr ""
+"بی‌شک اضافه کردن یک شخص یا گروه به‌عنوان نگهدارنده قابل قبول نیست، مگر آنها "
+"این وظیفه را برعهده گیرند. از طرفی لزومی ندارد یک ثبت‌کننده باشد و به‌راحتی "
+"می‌تواند گروهی از مردم باشد."
 
 #. (itstool) path: info/title
 #: book.translate.xml:3871
@@ -7128,6 +7155,11 @@ msgid ""
 "<application>sendmail</application>, <application>gcc</application> and "
 "<application>patch</application>."
 msgstr ""
+"برخی بخش‌های توزیع FreeBSD متشکل از نرم‌افزارهایی است که به‌طور فعال خارج از "
+"پروژهٔ FreeBSD نگهداری می‌شوند. به‌دلایل تاریخی، ما این را نرم‌فزار "
+"<emphasis>اعطا شده</emphasis> می‌نامیم. برخی نمونه‌ها شامل "
+"<application>sendmail</application>، <application>gcc</application> و "
+"<application>patch</application> هستند."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3906
@@ -7136,6 +7168,9 @@ msgid ""
 "with this type of software and all have some number of advantages and "
 "drawbacks. No clear winner has emerged."
 msgstr ""
+"طی سال‌های اخیر، روش‌های گوناگونی در مواجه با اینگونه نرم‌افزارها به‌کار "
+"رفته است و تمامی آنها دارای تعدادی برتری‌ها و ایراداتی هستند. هیچ برنده‌ای "
+"به‌طور مشخص پدیدار نشده است."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3911
@@ -7168,11 +7203,14 @@ msgid ""
 "cosmetic changes are <emphasis>strongly discouraged</emphasis> on files that "
 "are still tracking the vendor branch."
 msgstr ""
+"از آنجا که وارد کردن نسخه‌های بعدی را سخت‌تر می‌کند، تغییرات جزئی، کم اهمیت "
+"و/یا سطحی بر روی پرونده‌هایی که هنوز در حال دنبال کردن شاخهٔ توزیع‌کننده "
+"هستند <emphasis>به‌شدت اجتناب می‌شوند</emphasis>."
 
 #. (itstool) path: info/title
 #: book.translate.xml:3940
 msgid "Vendor Imports with SVN"
-msgstr ""
+msgstr "درون‌بُردهای توزیع‌کننده با SVN"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:3943
@@ -7189,6 +7227,8 @@ msgid ""
 "This section describes the vendor import procedure with "
 "<application>Subversion</application> in details."
 msgstr ""
+"این بخش رویهٔ درون‌بُرد توزیع‌کننده با <application>Subversion</application> "
+"را به تفصیل شرح می‌دهد."
 
 #. (itstool) path: step/title
 #: book.translate.xml:3958
@@ -7202,6 +7242,9 @@ msgid ""
 "will have to flatten and clean up the vendor tree, and bootstrap merge "
 "history in the main tree. If not, you can safely omit this step."
 msgstr ""
+"اگر این اولین درون‌بُرد شما پس از تغییر به <acronym>SVN</acronym> هست، شما "
+"باید درخت توزیع را پالایش و تمیز کنید، و تاریخ ادغام را در درخت اصلی بوت‌"
+"استرپ کنید. اگر چنین نیست، می‌توانید به‌راحتی این مرحله را نادیده بگیرید."
 
 #. (itstool) path: step/para
 #: book.translate.xml:3965
