@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-18 20:39+0000\n"
-"Last-Translator: Parsa Samet <qps@irbug.org>\n"
+"PO-Revision-Date: 2020-08-19 18:41+0000\n"
+"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -7293,6 +7293,8 @@ msgid ""
 "You may want to flatten the tags as well. The procedure is exactly the same. "
 "If you do this, put off the commit until the end."
 msgstr ""
+"ممکن است شما بخواهید برچسب‌ها را هم پالایش و تمیز کنید. روش دقیقاً یکسان "
+"است. اگر این کار را انجام دادید، اعزام را تا آخر به‌تعویق بیندازید."
 
 #. (itstool) path: step/para
 #: book.translate.xml:3995
@@ -7342,6 +7344,8 @@ msgid ""
 "With some shells, the <literal>^</literal> in the above command may need to "
 "be escaped with a backslash."
 msgstr ""
+"با برخی پوسته‌ها، علامت <literal>^</literal> در دستور بالا ممکن است نیاز به "
+"رهایی توسط یک backslash داشته باشد."
 
 #. (itstool) path: step/title
 #: book.translate.xml:4019
@@ -7389,12 +7393,16 @@ msgid ""
 "With these two files, the following command will list removed files (files "
 "only in <filename><replaceable>old</replaceable></filename>):"
 msgstr ""
+"با این دو پرونده، دستور پیش‌رو پرونده‌های حذف شده را فهرست می‌کند (پرونده‌"
+"هایی که تنها در <filename><replaceable>old</replaceable></filename> هستند):"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:4042
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>comm -23 ../<replaceable>old</replaceable> ../<replaceable>new</replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>comm -23 ../<replaceable>old</replaceable> "
+"../<replaceable>new</replaceable></userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:4044
@@ -7402,17 +7410,21 @@ msgid ""
 "While the command below will list added files (files only in "
 "<filename><replaceable>new</replaceable></filename>):"
 msgstr ""
+"در حالی که دستور زیر پرونده‌های اضافه شده را فهرست می‌کند (پرونده‌هایی که "
+"تنها در <filename><replaceable>new</replaceable></filename> هستند):"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:4048
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>comm -13 ../<replaceable>old</replaceable> ../<replaceable>new</replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>comm -13 ../<replaceable>old</replaceable> "
+"../<replaceable>new</replaceable></userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:4050
 msgid "Let us put this together:"
-msgstr ""
+msgstr "بگذارید این را در کنار هم قرار دهیم:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:4052
@@ -7424,6 +7436,15 @@ msgid ""
 "<prompt>%</prompt> <userinput>comm -23 ../<replaceable>old</replaceable> ../<replaceable>new</replaceable> | xargs svn remove</userinput>\n"
 "<prompt>%</prompt> <userinput>comm -13 ../<replaceable>old</replaceable> ../<replaceable>new</replaceable> | xargs svn add</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd vendor/"
+"<replaceable>foo</replaceable>/<replaceable>foo-9.9</replaceable></userinput>"
+"\n"
+"<prompt>%</prompt> <userinput>tar cf - . | tar xf - -C ../dist</userinput>\n"
+"<prompt>%</prompt> <userinput>cd ../dist</userinput>\n"
+"<prompt>%</prompt> <userinput>comm -23 ../<replaceable>old</replaceable> "
+"../<replaceable>new</replaceable> | xargs svn remove</userinput>\n"
+"<prompt>%</prompt> <userinput>comm -13 ../<replaceable>old</replaceable> "
+"../<replaceable>new</replaceable> | xargs svn add</userinput>"
 
 #. (itstool) path: warning/para
 #: book.translate.xml:4059
@@ -7432,11 +7453,14 @@ msgid ""
 "fail. You will have to add the directories, and run it again. Conversely, if "
 "any directories were removed, you will have to remove them manually."
 msgstr ""
+"اگر در توزیع جدید مسیرهای جدیدی وجود داشته باشند، دستور آخر شکست می‌خورد. "
+"ناچار خواهید بود مسیر‌ها را اضافه کنید، و دستور را دوباره اجرا کنید. اگر هم "
+"برعکس، مسیری حذف شده باشد، باید آن‌ها را دستی حذف کنید."
 
 #. (itstool) path: step/para
 #: book.translate.xml:4066
 msgid "Check properties on any new files:"
-msgstr ""
+msgstr "خصایص پرونده‌های جدید را بررسی کنید:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4070
@@ -7444,6 +7468,8 @@ msgid ""
 "All text files should have <literal>svn:eol-style</literal> set to "
 "<literal>native</literal>."
 msgstr ""
+"تمامی پرونده‌های متنی باید <literal>svn:eol-style</literal> را برابر با "
+"<literal>native</literal> داشته باشند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4076
@@ -7452,6 +7478,9 @@ msgid ""
 "<literal>application/octet-stream</literal>, unless there is a more "
 "appropriate media type."
 msgstr ""
+"تمامی پرونده‌های دو-دویی باید <literal>svn:mime-type</literal> را برابر با "
+"<literal>application/octet-stream</literal> داشته باشند، مگر نوع رسانهٔ "
+"مناسب‌تری موجود باشد."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4083
@@ -7459,11 +7488,13 @@ msgid ""
 "Executable files should have <literal>svn:executable</literal> set to "
 "<literal>*</literal>."
 msgstr ""
+"پرونده‌های اجراپذیر باید <literal>svn:executable</literal> را برابر با "
+"<literal>*</literal> داشته باشند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4089
 msgid "There should be no other properties on any file in the tree."
-msgstr ""
+msgstr "هیچ خاصیت دیگری بر روی دیگر پرونده‌های درخت نباید باشد."
 
 #. (itstool) path: note/para
 #: book.translate.xml:4095
@@ -7472,6 +7503,8 @@ msgid ""
 "<command>svn stat</command> and <command>svn diff</command> to make sure "
 "everything is in order."
 msgstr ""
+"آماده اعزام هستید، اما ابتدا باید خروجی <command>svn stat</command> و "
+"<command>svn diff</command> رو بررسی کنید تا از مرتب بودن همه‌چیز مطمئن بشید."
 
 #. (itstool) path: step/para
 #: book.translate.xml:4101
@@ -7485,6 +7518,10 @@ msgstr ""
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>svn copy ^/vendor/<replaceable>foo</replaceable>/dist <replaceable>svn_base</replaceable>/vendor/<replaceable>foo</replaceable>/<replaceable>9.9</replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>svn copy ^/vendor/"
+"<replaceable>foo</replaceable>/dist <replaceable>svn_base</replaceable>/"
+"vendor/<replaceable>foo</replaceable>/<replaceable>9."
+"9</replaceable></userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:4107
@@ -7492,6 +7529,8 @@ msgid ""
 "To get the new tag, you can update your working copy of <filename>vendor/"
 "<replaceable>foo</replaceable></filename>."
 msgstr ""
+"برای به‌دست آوردن برچسب جدید، می‌توانید نسخهٔ کاری خودتان از <filename>"
+"vendor/<replaceable>foo</replaceable></filename> را به روز کنید."
 
 #. (itstool) path: note/para
 #: book.translate.xml:4112
@@ -7521,6 +7560,11 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn update</userinput>\n"
 "<prompt>%</prompt> <userinput>svn merge --accept=postpone ^/vendor/<replaceable>foo</replaceable>/dist</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd head/contrib/"
+"<replaceable>foo</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>svn update</userinput>\n"
+"<prompt>%</prompt> <userinput>svn merge --accept=postpone ^/vendor/"
+"<replaceable>foo</replaceable>/dist</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:4131
@@ -7530,12 +7574,17 @@ msgid ""
 "tree. It is always a good idea to check differences against the vendor "
 "branch:"
 msgstr ""
+"هرگونه تعارضی را حل کنید و اطمینان حاصل کنید که پرونده‌های اضافه یا حذف شده "
+"در درخت vendor به درستی در درخت اصلی اضافه یا حذف شده باشند. همیشه فکر خوبی "
+"است که تفاوت‌ها در شاخه vendor را بررسی کنید:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:4137
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>svn diff --no-diff-deleted --old=^/vendor/<replaceable>foo</replaceable>/dist --new=.</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>svn diff --no-diff-deleted --old=^/vendor/"
+"<replaceable>foo</replaceable>/dist --new=.</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:4139
@@ -7543,6 +7592,9 @@ msgid ""
 "<option>--no-diff-deleted</option> tells <acronym>SVN</acronym> not to check "
 "files that are in the vendor tree but not in the main tree."
 msgstr ""
+"<option>--no-diff-deleted</option> به <acronym>SVN</acronym> می‌گوید که "
+"پرونده‌هایی که در درخت vendor موجود هستند اما در درخت اصلی نیستند را بررسی "
+"نکند."
 
 #. (itstool) path: note/para
 #: book.translate.xml:4144
@@ -7564,7 +7616,7 @@ msgstr ""
 #. (itstool) path: step/title
 #: book.translate.xml:4158
 msgid "Commit"
-msgstr ""
+msgstr "اعزام (commit)"
 
 #. (itstool) path: step/para
 #: book.translate.xml:4160
