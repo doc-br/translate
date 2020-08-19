@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-19 18:41+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"PO-Revision-Date: 2020-08-20 02:31+0000\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -7286,6 +7286,11 @@ msgid ""
 "information, since you are not going to merge anything from the tree you "
 "deleted."
 msgstr ""
+"توجه داشته باشید، بخش <literal>propdel</literal> ضروری است زیرا پس از نسخهٔ 1"
+".5، Subversion به‌طور خودکار <literal>svn:mergeinfo</literal> را به هر مسیری "
+"که شما کپی یا انتقال می‌دهید اضافه می‌کند. در این مورد، شما به این اطلاعات "
+"نیازی نخواهید داشت، از آنجا که نمی‌خواهید چیزی را از درختی که پاک کرده‌اید "
+"ادغام کنید."
 
 #. (itstool) path: note/para
 #: book.translate.xml:3990
@@ -7304,6 +7309,9 @@ msgid ""
 "makes no sense on unmodified vendor code. In some cases, it can be even be "
 "harmful."
 msgstr ""
+"درخت <filename>dist</filename> را بررسی کنید و هر پالایشی که به‌نظر لازم است "
+"را انجام دهید. شاید بخواهید انبساط واژهٔ کلیدی را غیرفعال کنید، زیرا در "
+"کدهای اصلاح‌نشده هیچ منطقی ندارد، حتی می‌تواند زیان‌آور هم باشد."
 
 #. (itstool) path: step/screen
 #: book.translate.xml:4001
@@ -7322,6 +7330,9 @@ msgid ""
 "(in the main tree) to the revision that corresponds to the last change was "
 "made to the vendor tree prior to importing new sources is also needed:"
 msgstr ""
+"بوت‌استرپ از <literal>svn:mergeinfo</literal> بر روی مسیر مورد نظر (در درخت "
+"اصلی) به بازبینی که منطبق با آخرین تغییر است که پیش از وارد کردن منابع جدید "
+"در درخت vendor ایجاد شده نیز مورد نیاز است:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:4009
@@ -7512,6 +7523,8 @@ msgid ""
 "Once you have committed the new vendor release, you should tag it for future "
 "reference. The best and quickest way is to do it directly in the repository:"
 msgstr ""
+"پس از آنکه توزیع vendor جدید را ثبت کردید، لازم است آن را برای ارجاعات بعدی "
+"برچسب‌گذاری کنید. بهترین و سریع‌ترین راه انجام مستقیم آن در مخزن است:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:4105
@@ -7538,11 +7551,14 @@ msgid ""
 "If you choose to do the copy in the checkout instead, do not forget to "
 "remove the generated <literal>svn:mergeinfo</literal> as described above."
 msgstr ""
+"اگر به‌جای آن تصمیم گرفتید تا کپی‌برداری را در وارسی انجام دهید، فراموش "
+"نکنید <literal>svn:mergeinfo</literal> ایجاد شده را همانطورکه در بالا توضیح "
+"داده شد حذف کنید."
 
 #. (itstool) path: step/title
 #: book.translate.xml:4120
 msgid "Merging to <emphasis>-HEAD</emphasis>"
-msgstr ""
+msgstr "ادغام با <emphasis>-HEAD</emphasis>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:4122
@@ -7631,7 +7647,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:4173
 msgid "Encumbered Files"
-msgstr ""
+msgstr "پرونده‌های محدود شده"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:4175
@@ -14246,6 +14262,14 @@ msgid ""
 "Copyright 1996 Free Software Foundation, Inc...\n"
 "<prompt>(kgdb)</prompt> "
 msgstr ""
+"<prompt>%</prompt> <userinput>kgdb kernel</userinput>\n"
+"GDB is free software and you are welcome to distribute copies of it\n"
+" under certain conditions; type \"show copying\" to see the conditions.\n"
+"There is absolutely no warranty for GDB; type \"show warranty\" for details."
+"\n"
+"GDB 4.16 (i386-unknown-freebsd),\n"
+"Copyright 1996 Free Software Foundation, Inc...\n"
+"<prompt>(kgdb)</prompt> "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8886
@@ -14258,7 +14282,7 @@ msgstr ""
 #: book.translate.xml:8889
 #, no-wrap
 msgid "<prompt>(kgdb)</prompt> <userinput>target remote /dev/cuau0</userinput>"
-msgstr ""
+msgstr "<prompt>(kgdb)</prompt> <userinput>target remote /dev/cuau0</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8891
@@ -14275,17 +14299,20 @@ msgid ""
 "Stopped at Debugger+0x35: movb\t$0, edata+0x51bc\n"
 "<prompt>db&gt;</prompt> <userinput>gdb</userinput>"
 msgstr ""
+"Debugger(\"Boot flags requested debugger\")\n"
+"Stopped at Debugger+0x35: movb\t$0, edata+0x51bc\n"
+"<prompt>db&gt;</prompt> <userinput>gdb</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8898
 msgid "DDB will respond with:"
-msgstr ""
+msgstr "DDB چنین پاسخ می‌دهد:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8900
 #, no-wrap
 msgid "Next trap will enter GDB remote protocol mode"
-msgstr ""
+msgstr "Next trap will enter GDB remote protocol mode"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8902
