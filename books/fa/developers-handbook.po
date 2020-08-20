@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
 "PO-Revision-Date: 2020-08-21 23:37+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -7257,6 +7257,13 @@ msgid ""
 "inconvenient. What we really want is to have the vendor source directly in "
 "<filename>vendor/<replaceable>foo</replaceable>/dist</filename>, like this:"
 msgstr ""
+"حین تبدیل <acronym>CVS</acronym> به <acronym>SVN</acronym>، انشعابات vendor "
+"با همان طرح‌بندی درخت اصلی وارد شده بودند. برای مثال، منابع توزیع‌کنندهٔ "
+"<application>foo</application> سر از <filename>vendor/"
+"<replaceable>foo</replaceable>/dist/contrib/<replaceable>foo</replaceable></"
+"filename> در آوردند، گرچه این امر بیهوده و نسبتاً ناخوشایند است. آنچه که ما "
+"واقعاً می‌خواهیم داشتن منبع vendor به‌طور مستقیم در <filename>vendor/"
+"<replaceable>foo</replaceable>/dist</filename> است، مانند:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:3975
@@ -7370,6 +7377,9 @@ msgid ""
 "acronym>, we can keep a full distribution in the vendor tree without "
 "bloating the main tree. Import everything but merge only what is needed."
 msgstr ""
+"یک درخت کامل و تمیز از منابع vendor را آماده کنید. با <acronym>SVN</acronym> "
+"می‌توانیم یک توزیع کامل در درخت vendor نگه داریم، بی‌آنکه درخت اصلی را باد "
+"کنیم. همه چیز را وارد کنید اما فقط آنچه که لازم است را ادغام کنید."
 
 #. (itstool) path: step/para
 #: book.translate.xml:4027
@@ -7379,6 +7389,10 @@ msgid ""
 "should prepare sorted lists of the contents of the vendor tree and of the "
 "sources you are about to import:"
 msgstr ""
+"توجه کنید که شما نیاز دارید هر پرونده‌ای را که از زمان آخرین ورود vendor "
+"اضافه شده‌اند را اضافه کنید، و هر آنچه که حذف شده است را حذف کنید. برای "
+"تسهیل این امر، شما باید فهرست‌های مرتب‌شده‌ای از محتویات درخت vendor و از "
+"منابعی که قرار است وارد کنید را تهیه کنید:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:4033
@@ -7567,6 +7581,9 @@ msgid ""
 "accept=postpone</option> tells <acronym>SVN</acronym> not to handle merge "
 "conflicts yet, because they will be taken care of manually:"
 msgstr ""
+"پس از آنکه درون‌بُرد خود را آماده کردید، زمان ادغام کردن فرا می‌رسد. گزینهٔ "
+"<option>--accept=postpone</option> به <acronym>SVN</acronym> می‌گوید که هنوز "
+"به تداخل‌های ادغام کردن رسیدگی نکند، زیرا آنها به‌طور دستی انجام نمی‌گیرند:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:4127
@@ -7647,7 +7664,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:4173
 msgid "Encumbered Files"
-msgstr "پرونده‌های محدود شده"
+msgstr "پرونده‌های محدود"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:4175
@@ -7666,6 +7683,8 @@ msgid ""
 "Any file which is interpreted or executed by the system CPU(s) and not in "
 "source format is encumbered."
 msgstr ""
+"هر پرونده‌ای که تفسیر شده یا توسط پردازنده(های) سامانه اجرا شده باشد و در "
+"قالب منبع نباشد محدودشده است."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4190
@@ -7679,6 +7698,9 @@ msgid ""
 "not encumbered, unless (1) or (2) apply to it. It must be stored in an "
 "architecture neutral ASCII format (file2c or uuencoding is recommended)."
 msgstr ""
+"پرونده‌ای که شامل داده‌های دودویی قابل بارگیری برای استفاده توسط سخت‌افزار "
+"باشد محدود نیست، مگر (۱) و (۲) روی آن اعمال شود. آن باید درون یک قالب ASCII "
+"معماری خنثی ذخیره شود (file2c یا uuencoding پیشنهاد می‌شود)."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4202
@@ -7687,6 +7709,9 @@ msgid ""
 "\"@@URL_RELPREFIX@@/administration.html#t-core\">Core Team</link> before it "
 "is added to the repository."
 msgstr ""
+"هر پروندهٔ محدودی نیاز به اجازهٔ ویژه از طرف <link xlink:href=\""
+"@@URL_RELPREFIX@@/administration.html#t-core\">تیم اصلی</link> قبل از آنکه "
+"در مخزن اضافه گردد را دارد."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4208
@@ -7694,6 +7719,8 @@ msgid ""
 "Encumbered files go in <filename>src/contrib</filename> or <filename>src/sys/"
 "contrib</filename>."
 msgstr ""
+"پرونده‌های محدود در <filename>src/contrib</filename> یا <filename>src/sys/"
+"contrib</filename> می‌روند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4213
@@ -7701,6 +7728,8 @@ msgid ""
 "The entire module should be kept together. There is no point in splitting "
 "it, unless there is code-sharing with non-encumbered code."
 msgstr ""
+"تمام اجزای ماژول باید کنار یکدیگر قرار گیرند. هیچ فایده‌ای در جداکردن آنها "
+"نیست، مگر آنکه اشتراک‌گذاری کد با کد محدود نشده وجود داشته باشد."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4219
@@ -7708,6 +7737,9 @@ msgid ""
 "Object files are named <filename><replaceable>arch</replaceable>/"
 "<replaceable>filename</replaceable>.o.uu&gt;</filename>."
 msgstr ""
+"پرونده‌های هدف "
+"<filename><replaceable>arch</replaceable>/<replaceable>filename</replaceable>"
+".o.uu&gt;</filename> نام‌گذاری شده‌اند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4224
@@ -7732,6 +7764,11 @@ msgid ""
 "\"@@URL_RELPREFIX@@/administration.html#t-core\">Core Team</link> can, of "
 "course, change their minds later on."
 msgstr ""
+"همیشه باید در <filename>LINT</filename> باشند، گرچه <link xlink:href=\""
+"@@URL_RELPREFIX@@/administration.html#t-core\">تیم اصلی</link> به ازای هر "
+"مورد تصمیم می‌گیرد چنانچه آن باید حذف شود یا خیر. البته <link xlink:href=\""
+"@@URL_RELPREFIX@@/administration.html#t-core\">تیم اصلی</link> مطمئناً می‌"
+"تواند نظر خود را در آینده تغییر دهد."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4243
@@ -7739,16 +7776,17 @@ msgid ""
 "The <firstterm>Release Engineer</firstterm> decides whether or not it goes "
 "into the release."
 msgstr ""
+"<firstterm>مهندس نشر</firstterm> تصمیم می‌گیرد که وارد نسخهٔ نشر بشود یا خیر."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4250
 msgid "User-land files:"
-msgstr ""
+msgstr "پرونده‌های محیط کاربر:"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:4255
 msgid "<primary>core team</primary>"
-msgstr ""
+msgstr "<primary>تیم اصلی</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4254
@@ -7757,6 +7795,9 @@ msgid ""
 "team</link><_:indexterm-1/> decides if the code should be part of "
 "<command>make world</command>."
 msgstr ""
+"<link xlink:href=\"@@URL_RELPREFIX@@/administration.html#t-core\">تیم "
+"اصلی</link><_:indexterm-1/> تصمیم می‌گیرد اگر کد باید بخشی از <command>make "
+"world</command> باشد یا خیر."
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:4262
@@ -7790,6 +7831,8 @@ msgid ""
 "<personname> <firstname>Peter</firstname> <surname>Wemm</surname> </"
 "personname>"
 msgstr ""
+"<personname> <firstname>Peter</firstname> <surname>Wemm</surname> "
+"</personname>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:4298
@@ -7799,6 +7842,9 @@ msgid ""
 "rules. Generally, the resulting numbers will have nothing to do with the "
 "release version of the software."
 msgstr ""
+"اگر دارید پشتیبانی برای کتابخانهٔ مشترک را به یک پورت یا نرم‌افزاری که فاقد "
+"آن است اضافه می‌کنید، شماره‌های نسخه باید قوائد آمده در زیر را دنبال کنند. "
+"به‌طور کلی، شماره‌های بدست‌آمده ربطی به شماره نسخهٔ نرم‌افزار ندارند."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:4304
