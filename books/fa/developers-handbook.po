@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-22 14:46+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"PO-Revision-Date: 2020-08-22 17:20+0000\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -7222,9 +7222,9 @@ msgstr ""
 "افزارهای از این دست مورد استفاده قرار می‌گیرد. افزون بر این، به‌شدت توصیه می‌"
 "شود نرم‌افزارهای اعطا شدهٔ فعلی با گذر زمان بر روی همین نمونه همگرا شوند، "
 "زیرا نسبت به روش قدیمی دارای امتیازات قابل توجهی هست، مانند امکان به‌دست "
-"آوردن تفاوت‌ها نسبت به نسخه‌های <quote>رسمی</quote> منبع توسط همه (حتی بدون "
-"دسترسی مستقیم به مخزن). این کار به‌طور قابل توجهی آسان‌تر از برگرداندن "
-"تغییرات به توسعه‌‌دهندگان اصلی نرم‌افزارهای اعطا شده است."
+"آوردن diff ها نسبت به نسخه‌های <quote>رسمی</quote> منبع توسط همه (حتی بدون "
+"دسترسی مستقیم به مخزن). این کار به‌طور قابل توجهی برگرداندن تغییرات به "
+"توسعه‌‌دهندگان اصلی نرم‌افزارهای اعطا شده را آسان‌تر می‌کند."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3923
@@ -7235,6 +7235,11 @@ msgid ""
 "team and with the general consensus of the other developers. The ability to "
 "maintain the package in the future will be a key issue in the decisions."
 msgstr ""
+"در نهایت، به‌هر حال، این برمی‌گردد به افرادی که در حقیقت کار را انجام می‌"
+"دهند. چنانچه استفاده از این نمونه به‌ویژه برای بسته‌ای که با آن سر و کار "
+"داریم نامناسب باشد، ممکن است تنها با موافقت تیم اصلی و با موافقت عمومی دیگر "
+"توسعه‌دهندگان استثنائاتی برای این قوائد صورت گیرد. امکان حفظ بسته در آینده "
+"یک مسئلهٔ کلیدی در تصمیمات خواهد بود."
 
 #. (itstool) path: note/para
 #: book.translate.xml:3932
@@ -7677,6 +7682,10 @@ msgid ""
 "just remove any left-over cruft, such as FreeBSD version tags, so it no "
 "longer shows up in diffs against the vendor tree."
 msgstr ""
+"با <acronym>SVN2</acronym>، هیچ مفهموی از ماندن یا نماندن در شاخهٔ vendor "
+"وجود ندارد. اگر پرونده‌ای که پیش‌تر اصلاحات بومی داشته است دیگر فاقد آنها "
+"باشد، تنها تکه‌کدهای باقی‌مانده را حدف کنید، مانند برچسب‌های نسخهٔ FreeBSD، "
+"در نتیجه دیگر در diff ها در تقابل با درخت vendor حاضر نمی‌شود."
 
 #. (itstool) path: step/para
 #: book.translate.xml:4151
@@ -7685,6 +7694,9 @@ msgid ""
 "make them now — and test until you are satisfied that everything build and "
 "runs correctly."
 msgstr ""
+"چنانچه هر تغییری برای ساخت world با منابع جدید ضروری باشد، آنها را همین حالا "
+"بسازید — و تا زمانی‌که متقاعد شده‌اید همه‌چیز به‌درستی build و اجرا می‌شود "
+"بیازمایید."
 
 #. (itstool) path: step/title
 #: book.translate.xml:4158
@@ -7716,6 +7728,11 @@ msgid ""
 "The following policies apply to including encumbered files in the FreeBSD "
 "source tree."
 msgstr ""
+"ممکن است گاهی اوقات اضافه کردن یک پروندهٔ محدود در درخت منبع FreeBSD ضروری "
+"باشد. برای مثال، اگر یک دستگاه قبل از آنکه کار کند نیازمند بار‌شدن تکهٔ "
+"کوچکی از کد دودویی در آن باشد، و ما منبع آن کد را نداشته باشیم، سپس گفته می‌"
+"شود که آن پروندهٔ دودویی محدود شده است. سیاست‌های پیش رو بر پرونده‌های محدود "
+"موجود در درخت منبع FreeBSD اعمال می‌شود."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4185
@@ -7842,7 +7859,7 @@ msgstr ""
 #. (itstool) path: para/indexterm
 #: book.translate.xml:4262
 msgid "<primary>release engineering</primary>"
-msgstr ""
+msgstr "<primary>مهندسی نشر</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4261
@@ -7850,6 +7867,8 @@ msgid ""
 "The <link xlink:href=\"@@URL_RELPREFIX@@/administration.html#t-re\">Release "
 "Engineering</link><_:indexterm-1/> decides if it goes into the release."
 msgstr ""
+"<link xlink:href=\"@@URL_RELPREFIX@@/administration.html#t-re\">مهندسی "
+"نشر</link><_:indexterm-1/> تصمیم می‌گیرد اگر جزوی از نسخهٔ نشر شود یا خیر."
 
 #. (itstool) path: info/title
 #: book.translate.xml:4273
@@ -7889,12 +7908,12 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:4304
 msgid "The three principles of shared library building are:"
-msgstr ""
+msgstr "سه اصل ساختمان کتابخانهٔ مشترک چنین هستند:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4308
 msgid "Start from <literal>1.0</literal>"
-msgstr ""
+msgstr "از <literal>1.02</literal> آغاز کنید"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4312
