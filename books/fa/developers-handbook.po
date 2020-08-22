@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-22 17:20+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"PO-Revision-Date: 2020-08-24 04:03+0000\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -6984,15 +6984,16 @@ msgid ""
 "nls.mk</filename>, please refer to the file itself, it is short and easy to "
 "understand."
 msgstr ""
-"به‌طور معمول، پرونده‌های فهرست در زیر مسیر زیرینِ <filename>nls2</filename> "
-"قرار گرفته‌اند و این رفتارِ پیش‌فرضِ <filename>bsd.nls.mk4</filename> است. "
-"گرچه، این امکان هست تا مکان فهرست‌ها را با متغیر <varname>NLSSRCDIR6</"
-"varname> 7<citerefentry>8<refentrytitle>make9</refentrytitle>0<manvolnum>1</m"
-"anvolnum></citerefentry> باطل کرد. نام پیش‌فرض پرونده‌های از پیش همگردان‌شده "
-"نیز همان رویهٔ نام‌گذاری که پیش‌تر ذکر شد را دنبال می‌کند و می‌تواند با قرار "
-"دادن متغیر <varname>NLSNAME</varname> باطل شود. گزینه‌های دیگری نیز برای "
-"تنظیم دقیق پردازش پرونده‌های فهرست وجود دارد اما معمولاً لازم نیست، از این "
-"رو آنها را توضیح نمی‌دهیم. برای اطلاعات بیشتر در مورد <filename>bsd.nls."
+"به‌طور معمول، پرونده‌های فهرست در زیر مسیر زیرینِ <filename>nls</filename> "
+"قرار گرفته‌اند و این رفتارِ پیش‌فرضِ <filename>bsd.nls.mk</filename> است. "
+"گرچه، این امکان هست تا مکان فهرست‌ها را با متغیر <varname>NLSSRCDIR</"
+"varname> "
+"<citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> باطل کرد. نام پیش‌فرض پرونده‌های از پیش همگردان‌شده نیز همان "
+"رویهٔ نام‌گذاری که پیش‌تر ذکر شد را دنبال می‌کند و می‌تواند با قرار دادن "
+"متغیر <varname>NLSNAME</varname> باطل شود. گزینه‌های دیگری نیز برای تنظیم "
+"دقیق پردازش پرونده‌های فهرست وجود دارد اما معمولاً لازم نیست، از این رو آنها "
+"را توضیح نمی‌دهیم. برای اطلاعات بیشتر در مورد <filename>bsd.nls."
 "mk</filename>، لطفاً به خود پرونده رجوع کنید، که کوتاه و آسان‌فهم است."
 
 #. (itstool) path: info/title
@@ -7351,7 +7352,7 @@ msgid ""
 "If you do this, put off the commit until the end."
 msgstr ""
 "ممکن است شما بخواهید برچسب‌ها را هم پالایش و تمیز کنید. روش دقیقاً یکسان "
-"است. اگر این کار را انجام دادید، اعزام را تا آخر به‌تعویق بیندازید."
+"است. اگر این کار را انجام دادید، ثبت را تا آخر به‌تعویق بیندازید."
 
 #. (itstool) path: step/para
 #: book.translate.xml:3995
@@ -7573,8 +7574,8 @@ msgid ""
 "<command>svn stat</command> and <command>svn diff</command> to make sure "
 "everything is in order."
 msgstr ""
-"آماده اعزام هستید، اما ابتدا باید خروجی <command>svn stat</command> و "
-"<command>svn diff</command> رو بررسی کنید تا از مرتب بودن همه‌چیز مطمئن بشید."
+"آمادهٔ ثبت هستید، اما ابتدا باید خروجی <command>svn stat</command> و "
+"<command>svn diff</command> را بررسی کنید تا از مرتب بودن همه‌چیز مطمئن شوید."
 
 #. (itstool) path: step/para
 #: book.translate.xml:4101
@@ -7682,7 +7683,7 @@ msgid ""
 "just remove any left-over cruft, such as FreeBSD version tags, so it no "
 "longer shows up in diffs against the vendor tree."
 msgstr ""
-"با <acronym>SVN2</acronym>، هیچ مفهموی از ماندن یا نماندن در شاخهٔ vendor "
+"با <acronym>SVN</acronym>، هیچ مفهموی از ماندن یا نماندن در شاخهٔ vendor "
 "وجود ندارد. اگر پرونده‌ای که پیش‌تر اصلاحات بومی داشته است دیگر فاقد آنها "
 "باشد، تنها تکه‌کدهای باقی‌مانده را حدف کنید، مانند برچسب‌های نسخهٔ FreeBSD، "
 "در نتیجه دیگر در diff ها در تقابل با درخت vendor حاضر نمی‌شود."
@@ -7701,7 +7702,7 @@ msgstr ""
 #. (itstool) path: step/title
 #: book.translate.xml:4158
 msgid "Commit"
-msgstr "اعزام (commit)"
+msgstr "ثبت (Commit)"
 
 #. (itstool) path: step/para
 #: book.translate.xml:4160
@@ -7712,9 +7713,9 @@ msgid ""
 "surprises. If you do it properly, the tree will move atomically from a "
 "consistent state with the old code to a consistent state with the new code."
 msgstr ""
-"اکنون، شما آمادهٔ اعزام هستید. مطمئن شوید که همه چیز را در یک حرکت انجام "
+"اکنون، شما آمادهٔ ثبت‌کردن هستید. مطمئن شوید که همه چیز را در یک حرکت انجام "
 "دهید. در حالت ایده‌آل، تمامی مراحل را در یک درخت تمیز انجام می‌دادید، که "
-"بتوانید از بالای آن درخت اعزام کنید. این بهترین راه برای جلوگیری از غافلگیری "
+"بتوانید از بالای آن درخت ثبت کنید. این بهترین راه برای جلوگیری از غافلگیری "
 "است. اگر به درستی انجامش دهید، درخت به‌طور خودکار از یک حالت ثابت با کد قدیم "
 "به یک حالت ثابت با کد جدید تغییر خواهد کرد."
 
@@ -7918,7 +7919,7 @@ msgstr "سه اصل ساختمان کتابخانهٔ مشترک چنین هست
 #. (itstool) path: listitem/para
 #: book.translate.xml:4308
 msgid "Start from <literal>1.0</literal>"
-msgstr "از <literal>1.02</literal> آغاز کنید"
+msgstr "از <literal>1.0</literal> آغاز کنید"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4312
@@ -7926,11 +7927,13 @@ msgid ""
 "If there is a change that is backwards compatible, bump minor number (note "
 "that ELF systems ignore the minor number)"
 msgstr ""
+"اگر تغییری وجود دارد که همسازی وارونه باشد، نسخهٔ فرعی را افزایش دهید (توجه "
+"داشته باشید سامانه‌های ELF نسخهٔ فرعی را نادیده می‌گیرد)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4318
 msgid "If there is an incompatible change, bump major number"
-msgstr ""
+msgstr "اگر تغییری ناهمساز باشد، نسخهٔ اصلی را افزایش دهید"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:4323
@@ -7939,6 +7942,9 @@ msgid ""
 "number being bumped, while deleted functions, changed function call syntax, "
 "etc. will force the major version number to change."
 msgstr ""
+"برای مثال، توابع و اِشکال‌زدایی‌های اضافه‌شده موجب بالارفتنِ شماره نسخهٔ "
+"فرعی می‌شوند، درحالی‌که توابع پاک‌شده، قواعد نحوی فراخوان تابع تغییریافته، و "
+"غیره ... شماره نسخهٔ اصلی را مجبور به تغییر می‌کنند."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:4328
@@ -7957,6 +7963,20 @@ msgid ""
 "<replaceable>(anything &gt;= 3)</replaceable>.<replaceable>(highest "
 "available)</replaceable>."
 msgstr ""
+"با شماره‌های نسخهٔ قالب اصلی.فرعی "
+"(<replaceable>x</replaceable>.<replaceable>y</replaceable>) بمانید. "
+"پیوند‌دهندهٔ پویای a.out شماره‌های نسخهٔ قالب "
+"<replaceable>x</replaceable>.<replaceable>y</replaceable>.<replaceable>z</"
+"replaceable> را به‌خوبی مدیریت نمی‌کند. هر شماره نسخه‌ای که پس از "
+"<replaceable>y</replaceable> (برای مثال، رقم سوم) قرار دارد زمانی‌که با "
+"شماره‌های نسخهٔ کتابخانهٔ مشترک مقایسه می‌شود، به‌طور کلی نادیده گرفته می‌"
+"شود تا تصمیم گرفته‌شود کدام کتابخانه را پیوند دهد. با توجه به دو کتابخانهٔ "
+"مشترک که تنها در بازبینی <quote>micro</quote> تفاوت دارند، <command>ld.so</"
+"command> با بالاتر از خود پیوند می‌دهد. از این رو، اگر با <filename>libfoo.so"
+".3.3.3</filename> پیوند می‌دهید، پیوند‌دهنده تنها <literal>3.3</literal> را "
+"در سرآیندها ذخیره می‌کند، و با هر چیزی که با <replaceable>libfoo.so."
+"3</replaceable>.<replaceable>(هرچیزی &gt;= 3)</replaceable>.<replaceable>("
+"بالاترین مقدار موجود)</replaceable> شروع شود پیوند می‌دهد."
 
 #. (itstool) path: note/para
 #: book.translate.xml:4347
@@ -7966,6 +7986,10 @@ msgid ""
 "preference to <filename>libc.so.2.0</filename>, even if the program was "
 "initially linked with <filename>libc.so.2.0</filename>."
 msgstr ""
+"<command>ld.so</command> همیشه از آخرین بازبینی <quote>فرعی</quote> استفاده "
+"می‌کند. برای مثال، <filename>libc.so.2.2</filename> را به‌جای <filename>libc."
+"so.2.0</filename> استفاده می‌کند، حتی اگر این برنامه در ابتدا با "
+"<filename>libc.so.2.0</filename> پیوند یافته باشد."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:4354
@@ -7975,6 +7999,10 @@ msgid ""
 "our <filename>Makefile</filename>s <quote>do the right thing</quote> based "
 "on the type of system."
 msgstr ""
+"افزون بر آن، پیونده‌دهندهٔ پویای ELF هرگز به شماره نسخهٔ فرعی رسیدگی نمی‌"
+"کند. به هر حال، چنانکه <filename>Makefile</filename> های ما <quote>کار درست "
+"را</quote> بر اساس نوع سامانه انجام می‌دهند، هنوز باید شماره نسخهٔ اصلی و "
+"فرعی را تعیین نمود."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:4360
@@ -8045,6 +8073,8 @@ msgid ""
 "Disable <acronym>APM</acronym> and any other kind of clock fiddling "
 "(<acronym>ACPI</acronym> ?)."
 msgstr ""
+"<acronym>APM</acronym> و هرگونه دست‌کاری کردن ساعت (<acronym>ACPI</acronym> "
+"?) را غیرفعال کنید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4408
@@ -8057,6 +8087,13 @@ msgid ""
 "key regeneration, or kill the parent <command>sshd</command> daemon during "
 "the tests."
 msgstr ""
+"وارد حالت تک کاربر شوید. برای مثال، <citerefentry><refentrytitle>cron</refent"
+"rytitle><manvolnum>8</manvolnum></citerefentry>، و دیمِن‌های دیگر تنها باعث "
+"اختلال می‌شوند. دیمِن "
+"<citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> نیز می‌تواند موجب اختلالات شود. اگر دسترسی ssh در حین آزمایش "
+"ضروری است، یا بازسازی کلید SSHv1 را غیرفعال کنید، یا دیمِنِ والدِ "
+"<command>sshd</command> را در حین آزمایشات از بین ببرید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4417
@@ -8076,11 +8113,17 @@ msgid ""
 "manvolnum></citerefentry> with an empty <filename>/etc/syslogd.conf</"
 "filename>, otherwise, do not run it."
 msgstr ""
+"اگر رویدادهای "
+"<citerefentry><refentrytitle>syslog</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry> ساخته شده باشند، <citerefentry><refentrytitle>syslogd</refentry"
+"title><manvolnum>8</manvolnum></citerefentry> را با یک <filename>/etc/syslogd"
+".conf</filename> خالی اجرا کنید، در غیر اینصورت، آن را اجرا نکنید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4428
 msgid "Minimize disk-I/O, avoid it entirely if possible."
 msgstr ""
+"دیسک-I/O را به‌حداقل برسانید، در صورت امکان آن را به‌طور کامل نادیده بگیرید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4432
@@ -8154,6 +8197,11 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> if the disks are not "
 "used for the test."
 msgstr ""
+"سخت‌افزارهایی که استفاده‌ای ندارند را غیرپیکربندی کنید. دیسک‌ها را چنانچه "
+"برای آزمایش مورد استفاده قرار نگرفته‌اند با <citerefentry><refentrytitle>atac"
+"ontrol</refentrytitle><manvolnum>8</manvolnum></citerefentry> و <citerefentry"
+"><refentrytitle>camcontrol</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> جدا کنید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4480
@@ -8161,7 +8209,7 @@ msgid ""
 "Do not configure the network unless it is being tested, or wait until after "
 "the test has been performed to ship the results off to another computer."
 msgstr ""
-"شبکه رو پیکربندی نکنید مگر بناست آزمایش شود، یا برای انتقال نتایج به رایانه‌"
+"شبکه را پیکربندی نکنید مگر آنکه آزمایش شود، یا برای انتقال نتایج به رایانه‌"
 "ای دیگر تا اتمام آزمایش صبر کنید."
 
 #. (itstool) path: listitem/para
@@ -8171,6 +8219,9 @@ msgid ""
 "broadcast traffic. Even though it is hardly noticeable, it will take up CPU "
 "cycles. Multicast has similar caveats."
 msgstr ""
+"اگر قرار باشد سامانه به یک شبکهٔ عمومی متصل گردد، مراقب ضربات ترافیک انتشار "
+"باشید. گرچه به‌سختی قابل مشاهده است، چرخه‌های CPU را اشغال می‌کند. Multicast "
+"دارای هشدارهای مشابه است."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4491
@@ -8178,6 +8229,8 @@ msgid ""
 "Put each file system on its own disk. This minimizes jitter from head-seek "
 "optimizations."
 msgstr ""
+"هر سامانهٔ پرونده را بر روی دیسک مخصوص به خود قرار دهید. این jitter را از "
+"بهینه‌سازی‌های head-seek به‌حداقل می‌رساند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4496
@@ -14468,6 +14521,10 @@ msgid ""
 "    at ../../i386/i386/db_interface.c:257\n"
 "<prompt>(kgdb)</prompt>"
 msgstr ""
+"Remote debugging using /dev/cuau0\n"
+"Debugger (msg=0xf01b0383 \"Boot flags requested debugger\")\n"
+"    at ../../i386/i386/db_interface.c:257\n"
+"<prompt>(kgdb)</prompt>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8912
