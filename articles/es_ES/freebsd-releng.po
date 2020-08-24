@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:01-0300\n"
-"PO-Revision-Date: 2020-08-08 03:19+0000\n"
+"PO-Revision-Date: 2020-08-24 04:03+0000\n"
 "Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_freebsd-releng/es/>\n"
@@ -2155,11 +2155,15 @@ msgid ""
 "<filename>main.conf</filename> configuration files exist to reduce "
 "repetition between the various per-build files."
 msgstr ""
+"Los archivos de configuración <filename>builds-<replaceable>12</replaceable>."
+"conf</filename>, <filename>defaults-<replaceable>12</replaceable>.conf</"
+"filename> y <filename>main.conf</filename> existen para reducir la "
+"repetición entre los diversos archivos de cada construcción."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1258
 msgid "Building FreeBSD Development Snapshots"
-msgstr ""
+msgstr "Construyendo instantáneas del desarrollo de FreeBSD"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1260
@@ -2169,6 +2173,10 @@ msgid ""
 "advantage of with clones and snapshots, ensuring a pristine build "
 "environment."
 msgstr ""
+"Las máquinas de construcción de la versión oficial tienen un diseño de "
+"sistema de archivos específico, que usando <acronym>ZFS</acronym>, "
+"<filename>thermite.sh</filename> se aprovecha mucho con los clones y las "
+"instantáneas, asegurando un ambiente de construcción prístino."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1266
@@ -2212,6 +2220,16 @@ msgid ""
 "snap</filename>, which are then cloned and mounted into the respective build "
 "datasets. This is done to avoid checking out a given tree more than once."
 msgstr ""
+"A medida que <filename>thermite.sh itera a través de la lista maestra de "
+"combinaciones y localiza el archivo de configuración de cada edificio, se "
+"crea un conjunto de datos <acronym>ZFS</acronym> bajo <filename class="
+"\"directory\">/releng</filename>, como <filename class=\"directory\">/releng/"
+"12-amd64-GENERIC-snap</filename>. Los árboles <literal>src/</literal>, "
+"<literal>ports/</literal>, y <literal>doc/</literal> se comprueban para "
+"separar los conjuntos de datos <acronym>ZFS</acronym>, como <filename class="
+"\"directory\">/releng/12-src-snap</filename>, que luego se clonan y se "
+"montan en los respectivos conjuntos de datos de construcción. Esto se hace "
+"para evitar comprobar un árbol dado más de una vez."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1298
@@ -2219,23 +2237,26 @@ msgid ""
 "Assuming these filesystem paths, <filename>thermite.sh</filename> would be "
 "invoked as:"
 msgstr ""
+"Asumiendo estas rutas de sistemas de archivos, <filename>thermite.sh</"
+"filename> sería invocado como:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:1301
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<prompt>%</prompt> <userinput>svn propdel -R svn:mergeinfo <literal>releng/<replaceable>12.0</replaceable>/</literal></userinput>\n"
-#| "<prompt>%</prompt> <userinput>svn commit <literal>releng/<replaceable>12.0</replaceable>/</literal></userinput>\n"
-#| "<prompt>%</prompt> <userinput>svn commit <literal>stable/<replaceable>12</replaceable>/</literal></userinput>"
+#, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cd /releng/scripts-snapshot/scripts</userinput>\n"
 "<prompt>#</prompt> <userinput>./setrev.sh -b <literal>stable/<replaceable>12</replaceable>/</literal></userinput>\n"
 "<prompt>#</prompt> <userinput>./zfs-cleanup.sh -c ./builds-<replaceable>12</replaceable>.conf</userinput>\n"
 "<prompt>#</prompt> <userinput>./thermite.sh -c ./builds-<replaceable>12</replaceable>.conf</userinput>"
 msgstr ""
-"<prompt>%</prompt> <userinput>svn propdel -R svn:mergeinfo <literal>releng/<replaceable>12.0</replaceable>/</literal></userinput>\n"
-"<prompt>%</prompt> <userinput>svn commit <literal>releng/<replaceable>12.0</replaceable>/</literal></userinput>\n"
-"<prompt>%</prompt> <userinput>svn commit <literal>stable/<replaceable>12</replaceable>/</literal></userinput>"
+"<prompt>#</prompt> <userinput>cd /releng/scripts-snapshot/scripts</userinput>"
+"\n"
+"<prompt>#</prompt> <userinput>./setrev.sh -b <literal>stable/"
+"<replaceable>12</replaceable>/</literal></userinput>\n"
+"<prompt>#</prompt> <userinput>./zfs-cleanup.sh -c "
+"./builds-<replaceable>12</replaceable>.conf</userinput>\n"
+"<prompt>#</prompt> <userinput>./thermite.sh -c "
+"./builds-<replaceable>12</replaceable>.conf</userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1306
@@ -2244,6 +2265,10 @@ msgid ""
 "generate development snapshot emails which are sent to the <literal>freebsd-"
 "snapshots@freebsd.org</literal> mailing list:"
 msgstr ""
+"Una vez que se han completado las compilaciones, se dispone de guiones "
+"auxiliares adicionales para generar correos electrónicos de instantáneas de "
+"desarrollo que se envían a la lista de correo <literal>freebsd-"
+"snapshots@freebsd.org</literal>:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:1311
@@ -2252,6 +2277,11 @@ msgid ""
 "<prompt>#</prompt> <userinput>cd /releng/scripts-snapshot/scripts</userinput>\n"
 "<prompt>#</prompt> <userinput>./get-checksums.sh -c ./builds-<replaceable>12</replaceable>.conf | ./generate-email.pl &gt; snapshot-<replaceable>12</replaceable>-mail</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /releng/scripts-snapshot/scripts</userinput>"
+"\n"
+"<prompt>#</prompt> <userinput>./get-checksums.sh -c "
+"./builds-<replaceable>12</replaceable>.conf | ./generate-email.pl &gt; "
+"snapshot-<replaceable>12</replaceable>-mail</userinput>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:1315
@@ -2259,6 +2289,9 @@ msgid ""
 "The generated output should be double-checked for correctness, and the email "
 "itself should be PGP signed, in-line."
 msgstr ""
+"La salida generada debe ser verificada dos veces para comprobar que es "
+"correcta, y el correo electrónico en sí debe ser firmado mediante PGP, en "
+"línea."
 
 #. (itstool) path: note/para
 #: article.translate.xml:1321
@@ -2273,7 +2306,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: article.translate.xml:1330
 msgid "Building FreeBSD Releases"
-msgstr ""
+msgstr "Construyendo versiones de FreeBSD"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1332
@@ -2330,37 +2363,30 @@ msgstr ""
 #: article.translate.xml:1375
 msgid "In preparation for the release build, several files need to be updated:"
 msgstr ""
+"En preparación para la construcción de la liberación, varios archivos "
+"necesitan ser actualizados:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1390
-#, fuzzy
-#| msgid ""
-#| "Update the <varname>BRANCH</varname> value to reflect "
-#| "<literal>PRERELEASE</literal>"
 msgid ""
 "Update the <varname>BRANCH</varname> value to <literal>RELEASE</literal>"
 msgstr ""
-"Actualice el valor de <varname>BRANCH</varname> a <literal>PRERELEASE</"
-"literal>"
+"Actualice el valor de <varname>BRANCH</varname> a <literal>RELEASE</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1395
-#, fuzzy
-#| msgid "<filename>head/UPDATING</filename>"
 msgid "<filename>UPDATING</filename>"
-msgstr "<filename>head/UPDATING</filename>"
+msgstr "<filename>UPDATING</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1396
 msgid "Add the anticipated announcement date"
-msgstr ""
+msgstr "Añada la fecha de anuncio prevista"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1400
-#, fuzzy
-#| msgid "<filename>lib/clang/llvm.build.mk</filename>"
 msgid "<filename>lib/csu/common/crtbrand.c</filename>"
-msgstr "<filename>lib/clang/llvm.build.mk</filename>"
+msgstr "<filename>lib/csu/common/crtbrand.c</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1401
@@ -2368,6 +2394,8 @@ msgid ""
 "Replace <literal>__FreeBSD_version</literal> with the value in <filename>sys/"
 "sys/param.h</filename>"
 msgstr ""
+"Reemplazar <literal>__FreeBSD_version</literal> con el valor en <filename>"
+"sys/sys/param.h</filename>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1409
@@ -2388,11 +2416,16 @@ msgid ""
 "<prompt>%</prompt> <userinput>svn cp ^/<literal>releng/<replaceable>12.0</replaceable>/</literal>@r<replaceable>306420</replaceable> <literal>release/<replaceable>12.0.0</replaceable>/</literal></userinput>\n"
 "<prompt>%</prompt> <userinput>svn commit <literal>release/<replaceable>12.0.0</replaceable>/</literal></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>svn cp ^/<literal>releng/<replaceable>12."
+"0</replaceable>/</literal>@r<replaceable>306420</replaceable> <literal>"
+"release/<replaceable>12.0.0</replaceable>/</literal></userinput>\n"
+"<prompt>%</prompt> <userinput>svn commit <literal>release/<replaceable>12.0."
+"0</replaceable>/</literal></userinput>"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:1428
 msgid "Publishing FreeBSD Installation Media to Project Mirrors"
-msgstr ""
+msgstr "Publicar los medios de instalación de FreeBSD para el Proyecto Mirrors"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1430
@@ -2400,16 +2433,20 @@ msgid ""
 "This section describes the procedure to publish FreeBSD development "
 "snapshots and releases to the Project mirrors."
 msgstr ""
+"Esta sección describe el procedimiento para publicar instantáneas del "
+"desarrollo de FreeBSD y las versiones en los Proyectos Mirrors."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1434
 msgid "Staging FreeBSD Installation Media Images"
-msgstr ""
+msgstr "Poner en marcha las imágenes de los medios de instalación de FreeBSD"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1436
 msgid "Staging FreeBSD snapshots and releases is a two part process:"
 msgstr ""
+"La puesta en marcha de las instantáneas y lanzamientos de FreeBSD es un "
+"proceso de dos partes:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1441
@@ -2417,6 +2454,8 @@ msgid ""
 "Creating the directory structure to match the hierarchy on <systemitem>ftp-"
 "master</systemitem>"
 msgstr ""
+"Creando la estructura del directorio para que coincida con la jerarquía en "
+"<systemitem>ftp-master</systemitem>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1444
@@ -2438,6 +2477,8 @@ msgstr ""
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>make -C /usr/src/release -f Makefile.mirrors EVERYTHINGISFINE=1 ftp-stage</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>make -C /usr/src/release -f Makefile.mirrors "
+"EVERYTHINGISFINE=1 ftp-stage</userinput>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1455
@@ -2481,7 +2522,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: article.translate.xml:1488
 msgid "Publishing FreeBSD Installation Media"
-msgstr ""
+msgstr "Publicación de los soportes de instalación de FreeBSD"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1490
@@ -2502,6 +2543,9 @@ msgid ""
 "archive/tmp</filename> and <filename class=\"directory\">/archive/pub</"
 "filename> must reside on the same logical filesystem."
 msgstr ""
+"Para que esto sea efectivo, tanto <filename class=\"directory\">/archive/"
+"tmp</filename> como <filename class=\"directory\">/archive/pub</filename> "
+"deben residir en el mismo sistema lógico de archivos."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1501
@@ -2521,11 +2565,14 @@ msgid ""
 "As with the staging steps, this requires <literal>root</literal> level "
 "access, as this step must be executed as the <literal>archive</literal> user."
 msgstr ""
+"Al igual que con los pasos de la preparación, esto requiere un acceso de "
+"nivel <literal>root</literal>, ya que este paso debe ser ejecutado como el "
+"usuario <literal>archive</literal>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1513
 msgid "As the <literal>archive</literal> user:"
-msgstr ""
+msgstr "Como el usuario del <literal>archivo</literal>:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:1515
@@ -2535,6 +2582,13 @@ msgid ""
 "<prompt>%</prompt> <userinput>pax -r -w -l . /archive/pub/FreeBSD/<replaceable>snapshots</replaceable></userinput>\n"
 "<prompt>%</prompt> <userinput>/usr/local/bin/rsync -avH /archive/tmp/<replaceable>snapshots</replaceable>/* /archive/pub/FreeBSD/<replaceable>snapshots</replaceable>/</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd /archive/tmp/"
+"<replaceable>snapshots</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>pax -r -w -l . /archive/pub/FreeBSD/"
+"<replaceable>snapshots</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>/usr/local/bin/rsync -avH /archive/tmp/"
+"<replaceable>snapshots</replaceable>/* /archive/pub/FreeBSD/"
+"<replaceable>snapshots</replaceable>/</userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1519
@@ -2542,21 +2596,25 @@ msgid ""
 "Replace <replaceable>snapshots</replaceable> with <replaceable>releases</"
 "replaceable> as appropriate."
 msgstr ""
+"Reemplazar las <replaceable>instantáneas</replaceable> con las "
+"<replaceable>liberaciones</replaceable> según corresponda."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:1526
 msgid "Wrapping up the Release Cycle"
-msgstr ""
+msgstr "Cerrando el ciclo de liberación"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1528
 msgid "This section describes general post-release tasks."
 msgstr ""
+"En esta sección se describen las tareas generales posteriores a la "
+"liberación."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1531
 msgid "Post-Release Errata Notices"
-msgstr ""
+msgstr "Notificaciones de errores posteriores a la liberación"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1533
@@ -2568,6 +2626,13 @@ msgid ""
 "approved prior to the final release, and depending on the scope of the "
 "change in question, may issue an <acronym>EN</acronym>."
 msgstr ""
+"A medida que el ciclo de liberación se aproxima a su conclusión, es común "
+"tener varios <acronym>EN</acronym> (Errata Notice) candidatos para abordar "
+"cuestiones que fueron descubiertas al final del ciclo. Tras la liberación, "
+"el Equipo de Ingeniería de Liberación de FreeBSD y el Equipo de Seguridad de "
+"FreeBSD revisan los cambios que no fueron aprobados antes de la liberación "
+"final, y dependiendo del alcance del cambio en cuestión, pueden emitir un "
+"<acronym>EN."
 
 #. (itstool) path: note/para
 #: article.translate.xml:1542
@@ -2575,6 +2640,8 @@ msgid ""
 "The actual process of issuing <acronym>EN</acronym>s is handled by the "
 "FreeBSD Security Team."
 msgstr ""
+"El proceso de emisión de <acronym>EN</acronym> es manejado por el Equipo de "
+"Seguridad de FreeBSD."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1546
@@ -2586,6 +2653,12 @@ msgid ""
 "<literal>Impact</literal>, and if applicable, <literal>Workaround</literal> "
 "sections."
 msgstr ""
+"Para solicitar un Aviso de Errata(EN) después de que un ciclo de lanzamiento "
+"se haya completado, un desarrollador debe llenar la plantilla <link "
+"xlink:href=\"https://www.freebsd.org/security/errata-template.txt\">Aviso de "
+"Errata</link>, en particular las secciones <literal>Fondo</literal>, "
+"<literal>Descripción del Problema</literal>, <literal>Impacto</literal>, y "
+"si es aplicable, <literal>Trabajo alrededor</literal>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1553
@@ -2594,6 +2667,10 @@ msgid ""
 "a patch against the <literal>releng/</literal> branch or a list of revisions "
 "from the <literal>stable/</literal> branch."
 msgstr ""
+"La plantilla de notificación de errores(Errata Notice) terminada debe ser "
+"enviada por correo electrónico junto con un parche contra la rama <literal>"
+"releng/</literal> o una lista de revisiones de la rama <literal>estable/"
+"</literal>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1558
@@ -2605,11 +2682,18 @@ msgid ""
 "\"releng-wrapup-handoff\"/>, Errata Notice requests should be sent to the "
 "FreeBSD Security Team."
 msgstr ""
+"Para solicitudes de Erratas inmediatamente después de la liberación, la "
+"solicitud debe ser enviada por correo electrónico tanto al Equipo de "
+"Ingeniería de Liberación de FreeBSD como al Equipo de Seguridad de FreeBSD. "
+"Una vez que la rama <literal>releng/</literal> se haya entregado al Equipo "
+"de Seguridad de FreeBSD tal y como se describe en <xref linkend=\"releng-"
+"wrapup-handoff\"/>, las peticiones de Notificación de Erratas(Errata Notice) "
+"deben enviarse al Equipo de Seguridad de FreeBSD."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1566
 msgid "Handoff to the FreeBSD Security Team"
-msgstr ""
+msgstr "Entrega al equipo de seguridad de FreeBSD"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1568
@@ -2619,6 +2703,11 @@ msgid ""
 "from <literal>re</literal> to <literal>(so|security-officer)</literal> for "
 "the <literal>releng/<replaceable>12.0</replaceable>/</literal> branch."
 msgstr ""
+"Aproximadamente dos semanas después del lanzamiento, el Ingeniero de "
+"Lanzamiento actualiza<filename> svnadmin/conf/approvers</filename> cambiando "
+"la columna de aprobadores de <literal>re</literal> a <literal>(so|security-"
+"officer)</literal> para la rama <literal>releng/<replaceable>12."
+"0</replaceable></literal>."
 
 #~ msgid ""
 #~ "Change <literal>% beta.upcoming</literal> from <literal>IGNORE</literal> "
