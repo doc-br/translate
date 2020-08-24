@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-24 20:33+0000\n"
+"PO-Revision-Date: 2020-08-24 23:25+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -8307,6 +8307,10 @@ msgid ""
 "indication if it is going to be worth a long run) and trending and "
 "interaction numbers later on."
 msgstr ""
+"یک الگوی خوب چنین است: <literal>bababa{bbbaaa}*</literal>. این پس از اجرای "
+"اولین 1+1 راهنما می‌دهد (پس ممکن است آزمایش را متوقف کرد چنانچه به‌طور کل "
+"اشتباه شود)، یک انحراف استاندارد پس از اولین 3+3 (نشانه‌ای خوب از اینکه ارزش "
+"اجرای طولانی را داشته باشد) و رویه و شماره‌های برهم‌کنش در ادامه."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4539
@@ -8351,6 +8355,9 @@ msgid ""
 "userspace, likewise debugging. It is easy to let something slip through and "
 "realize later the test was not comparing the same thing."
 msgstr ""
+"مطمئن شوید مراقب بهینه‌سازی مؤلفه‌های هسته و فضای کاربر باشید، همچنین اشکال‌"
+"زدایی. این آسان است که اجازه دهید خطایی رخ دهد و بعد متوجه شوید که آزمایش "
+"همان مورد را مقایسه نمی‌کرده است."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4579
@@ -8367,12 +8374,12 @@ msgstr ""
 #. (itstool) path: section/title
 #: book.translate.xml:4591
 msgid "The FreeBSD Source Tinderbox"
-msgstr ""
+msgstr "Tinderbox منبع در FreeBSD"
 
 #. (itstool) path: section/para
 #: book.translate.xml:4593
 msgid "The source Tinderbox consists of:"
-msgstr ""
+msgstr "Tinderbox منبع متشکل است از:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4597
@@ -8380,6 +8387,8 @@ msgid ""
 "A build script, <filename>tinderbox</filename>, that automates checking out "
 "a specific version of the FreeBSD source tree and building it."
 msgstr ""
+"یک اجرانامهٔ ساخت (build)، <filename>tinderbox</filename>، که روند بررسی یک "
+"نسخهٔ بخصوص از درخت منبع FreeBSD و ساختن آن را خودکار می‌سازد."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4602
@@ -8430,7 +8439,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: book.translate.xml:4632
 msgid "The <filename>index.cgi</filename> Script"
-msgstr ""
+msgstr "اجرانامهٔ <filename>index.cgi</filename>"
 
 #. (itstool) path: section/para
 #: book.translate.xml:4634
@@ -8470,7 +8479,7 @@ msgstr ""
 #: book.translate.xml:4659
 #, no-wrap
 msgid "tinderbox-$config-$branch-$arch-$machine.{brief,full}"
-msgstr ""
+msgstr "tinderbox-$config-$branch-$arch-$machine.{brief,full}"
 
 #. (itstool) path: section/para
 #: book.translate.xml:4661
@@ -14866,6 +14875,8 @@ msgid ""
 "To enable <trademark class=\"registered\">FireWire</trademark> and Dcons "
 "support in the kernel of the <emphasis>target machine</emphasis>:"
 msgstr ""
+"برای فعال‌سازی پشتیبانی <trademark class=\"registered\">FireWire</trademark> "
+"و Dcons در هستهٔ <emphasis>دستگاه هدف</emphasis>:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9007
