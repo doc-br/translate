@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-24 04:03+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"PO-Revision-Date: 2020-08-24 14:59+0000\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -8017,6 +8017,15 @@ msgid ""
 "library version number in the <filename>Makefile</filename> to be updated, "
 "and any subsequent changes will not."
 msgstr ""
+"برای کتابخانه‌های پورت نشده، نیز سیاست ما تغییر شماره نسخهٔ کتابخانه آن هم "
+"تنها یک بار در بین توزیع‌ها است. افزون بر آن، تغییر شماره نسخهٔ کتابخانهٔ "
+"اصلی مشترک تنها یک بار در بین توزیع‌های اصلی سامانهٔ عامل (برای مثال، از 6.0 "
+"به 7.0) نیز جزو سیاست‌های ما است. وقتی شما تغییری در کتابخانهٔ سامانه ایجاد "
+"می‌کنید که نیازمند بالارفتن شمارهٔ نسخه هست، لاگ‌های ثبت <filename>Makefile</"
+"filename> را بررسی کنید. این مسئولیت ثبت‌کننده است که مطمئن شود نخستین تغییر "
+"از این دست از زمان توزیع، سبب شود تا شماره نسخهٔ کتابخانهٔ مشترک واقع در "
+"<filename>Makefile</filename> به‌روزرسانی شود، و هر نوع تغییر متقاعبی چنین "
+"نشود."
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:4381
@@ -8240,6 +8249,10 @@ msgid ""
 "keyboard while the test is running, even <keycap>space</keycap> or "
 "<keycap>back-space</keycap> shows up in the numbers."
 msgstr ""
+"خروجی به سری یا پیشانه‌های VGA را به حداقل برسانید. اجرای خروجی درون پرونده‌"
+"ها jitter کمتری به‌دست می‌دهد. (پیشانه‌های سری به‌راحتی تبدیل به گلوگاه "
+"می‌شوند.) هنگام اجرای آزمایش به صفحه کلید دست نزنید، حتی <keycap>space</"
+"keycap> یا <keycap>back-space</keycap> در شماره‌ها نمایش داده می‌شوند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4504
@@ -8249,6 +8262,10 @@ msgid ""
 "drift will affect the frequency of the quartz crystals in the computer. Rule "
 "of thumb: more than a minute, less than an hour."
 msgstr ""
+"مطمئن شوید آزمایش به‌اندازه کافی طولانی باشد، اما نه خیلی طولانی. اگر خیلی "
+"کوتاه باشد، مشکل از نشان‌گر زمان است. اگر خیلی طولانی باشد، تغییرات در درجه "
+"و خروجی مدار بر روی فرکانس کریستال‌های کوارتز در رایانه تأثیر می‌گذارد. "
+"قانون کلی: بیش از یک دقیقه، کمتر از یک ساعت."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4512
@@ -8259,6 +8276,12 @@ msgid ""
 "output into clock circuits instead of motherboard xtal. Contact Poul-Henning "
 "Kamp <email>phk@FreeBSD.org</email> for more information about this."
 msgstr ""
+"سعی کنید تا درجهٔ اطراف ماشین را تا جای ممکن ثابت نگه دارید. این هم کریستال‌"
+"های کوارتز و هم الگوریتم‌های درایو دیسک را تحت تأثیر می‌گذارد. به‌منظور "
+"دریافت ساعت بسیار دقیق، تزریق ساعت تثبیت‌شده را در نظر بگیرید. برای مثال، یک "
+"OCXO + PLL بگیرید، خروجی را به‌جای برد اصلی xtal داخل مدارهای ساعت تزریق "
+"کنید. برای اطلاعات بیشتر در این مورد با Poul-Henning Kamp <email>phk@FreeBSD."
+"org</email> در تماس باشید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4522
@@ -8269,6 +8292,11 @@ msgid ""
 "after), this makes it possible to spot environmental effects. Do not "
 "interleave 1:1, but 3:3, this makes it possible to spot interaction effects."
 msgstr ""
+"این آزمایش را حداقل سه بار انجام دهید اما بهتر آن است تا بیش از ۲۰ بار هم "
+"برای <quote>قبل</quote> و هم <quote>بعد</quote> از کد اجرا شود. سعی کنید تا "
+"اگر مقدور است آن را تقسیم کنید (برای مثال: ۲۰ بار قبل سپس ۲۰ بار بعد اجرا "
+"نکنید)، این باعث می‌شود تا تأثیرات محیطی را ببینید. به جز 3:3، 1:1 را تقسیم "
+"نکنید، این باعث می‌شود تا اثرات متقابل را ببینید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4530
@@ -14617,6 +14645,8 @@ msgid ""
 "Initialize the remote debugging session (assuming the first serial port is "
 "being used) by:"
 msgstr ""
+"نشست اشکال‌زدایی از راه دور را آغاز کنید (با این نظرداشت که اولین درگاه در "
+"حال استفاده است):"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8889
@@ -14630,6 +14660,8 @@ msgid ""
 "Now, on the target host (the one that entered DDB right before even starting "
 "the device probe), type:"
 msgstr ""
+"حال، در میزبان مورد نظر (همان که درست قبل از آغاز probe دستگاه وارد DDB شد)، "
+"وارد کنید:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8894
@@ -14662,6 +14694,10 @@ msgid ""
 "type <command>s</command> (step). Your hosting GDB will now gain control "
 "over the target kernel:"
 msgstr ""
+"هر زمان بنویسید <command>gdb</command>، حالت بین GDB از راه دور و DDB محلی "
+"تعویض می‌شود. برای آنکه تلهٔ بعدی را بلافاصله تحمیل کنید، کافیست بنویسید "
+"<command>s</command> (step). حال GDB میزبان شما نظارت بر هستهٔ مورد نظر را "
+"بدست می‌گیرد:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8907
@@ -14688,7 +14724,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:8919
 msgid "Debugging a Console Driver"
-msgstr ""
+msgstr "اشکال‌زدایی گردانندهٔ پیشانه"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8921
@@ -14704,7 +14740,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:8931
 msgid "Debugging Deadlocks"
-msgstr ""
+msgstr "اشکال‌زدایی بن‌بست‌ها (Deadlocks)"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8933
@@ -14768,7 +14804,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:8967
 msgid "Kernel debugging with Dcons"
-msgstr ""
+msgstr "اشکال‌زدایی هسته با Dcons"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8969
