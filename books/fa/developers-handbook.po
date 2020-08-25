@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-24 23:25+0000\n"
+"PO-Revision-Date: 2020-08-25 17:16+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -8321,6 +8321,11 @@ msgid ""
 "recommended, if you have forgotten or never learned about standard deviation "
 "and Student's T."
 msgstr ""
+"از <citerefentry><refentrytitle>ministat</refentrytitle><manvolnum>1</manvoln"
+"um></citerefentry> استفاده کنید تا ببینید اگر شماره‌ها مهم هستند. خرید "
+"<quote>Cartoon guide to statistics</quote> ISBN: 0062731025 را در نظر بگیرید،"
+" چنانچه دربارهٔ انحراف معیار و Student's T فراموش کرده‌اید یا هیچ‌وقت یاد "
+"نگرفته‌اید، به‌شدت پیشنهاد می‌شود."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4548
@@ -8337,6 +8342,18 @@ msgid ""
 "Likewise, make sure there are no snapshots lying around unless the benchmark "
 "is a test with snapshots."
 msgstr ""
+"هرگز از "
+"<citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> در پس‌زمینه استفاده نکنید مگر اینکه آزمایش محکی از "
+"<command>fsck</command> در پس‌زمینه باشد. همچنین، <varname>background_fsck</"
+"varname> را در <filename>/etc/rc.conf</filename> غیرفعال کنید مگر اینکه "
+"آزمون محک حداقل 60+<quote><command>fsck</command> runtime</quote> ثانیه پس "
+"از راه‌اندازی (بوت) شروع نشود، زیرا "
+"<citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> فعال می‌شود و بررسی می‌کند اگر <command>fsck</command> نیاز "
+"دارد تا بر روی هر سامانهٔ پرونده‌ای اجرا شود هنگامی‌که <command>fsck</"
+"command> در پس‌زمینه فعال شده است. همچنین، مطمئن شوید برگرفتی وجود نداشته "
+"باشد مگر اینکه محک آزمونی با برگرفت‌ها باشد."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4562
@@ -8370,6 +8387,13 @@ msgid ""
 "citerefentry> parameters default differently in -CURRENT from the way they "
 "ship in production releases."
 msgstr ""
+"هرگز با گزینه‌های هستهٔ <literal>WITNESS</literal> و <literal>INVARIANTS</"
+"literal> در حالت فعال محک نزنید مگر اینکه خود آزمایش مشتاق به محک‌زنی آن "
+"امکانات باشد. <literal>WITNESS</literal> می‌تواند باعث کاهش بیش از ۴۰۰ درصدی "
+"در کارایی شود. همچنین، مؤلفه‌های محیط کاربری "
+"<citerefentry><refentrytitle>malloc</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry> نسبت به حالتی‌که در توزیع‌های تولیدی تحویل داده می‌شوند پیش‌"
+"فرض متفاوتی در -CURRENT دارند."
 
 #. (itstool) path: section/title
 #: book.translate.xml:4591
@@ -8396,6 +8420,9 @@ msgid ""
 "A supervisor script, <filename>tbmaster</filename>, that monitors individual "
 "Tinderbox instances, logs their output, and emails failure notices."
 msgstr ""
+"اجرانامهٔ سرپرست، <filename>tbmaster</filename>، که بر نمونه‌های مستقل "
+"Tinderbox نظارت می‌کند، خروجی آنها را ثبت می‌کند، و هشدارهای خرابی را در "
+"قالب نامهٔ الکترونیکی ارسال می‌کند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4607
@@ -8404,6 +8431,9 @@ msgid ""
 "reads a set of tbmaster logs and presents an easy-to-read <acronym>HTML</"
 "acronym> summary of them."
 msgstr ""
+"یک اجرانامهٔ <acronym>CGI</acronym> تحت عنوان <filename>index.cgi</filename> "
+"که مجموعی از موارد ثبت‌شدهٔ tbmaster را می‌خواند و خلاصه‌ای آسان‌خوان در "
+"قالب <acronym>HTML</acronym> ارائه می‌دهد."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4613
@@ -8411,6 +8441,8 @@ msgid ""
 "A set of build servers that continually test the tip of the most important "
 "FreeBSD code branches."
 msgstr ""
+"مجموعی از کارسازهای build که رأس مهم‌ترین انشعابات کد FreeBSD را به‌طور مکرر "
+"مورد آزمایش قرار می‌دهد."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4617
@@ -8418,6 +8450,8 @@ msgid ""
 "A webserver that keeps a complete set of Tinderbox logs and displays an up-"
 "to-date summary."
 msgstr ""
+"یک کارساز وب که مجموعه‌ای کامل ازموارد ثبت‌شدهٔ Tinderbox را نگه می‌دارد و "
+"خلاصه‌ای به‌روز شده را نمایش می‌دهد."
 
 #. (itstool) path: section/para
 #: book.translate.xml:4622
@@ -8428,6 +8462,11 @@ msgid ""
 "files are kept in <link xlink:href=\"https://www.freebsd.org/cgi/cvsweb.cgi/"
 "projects/tinderbox/\">/projects/tinderbox/</link>."
 msgstr ""
+"اجرانامه‌ها توسط Dag-Erling Smørgrav <email>des@FreeBSD.org</email> نگه‌داری "
+"و توسعه یافته‌اند، و اکنون با Perl نوشته شده‌اند، تغییری در شکل اصلی آنها به‌"
+"عنوان اجرانامه‌های پوسته. تمام اجرانامه‌ها و پرونده‌های پیکربندی در <link "
+"xlink:href=\"https://www.freebsd.org/cgi/cvsweb.cgi/projects/tinderbox/\">/"
+"projects/tinderbox/</link> نگه داشته می‌شوند."
 
 #. (itstool) path: section/para
 #: book.translate.xml:4627
@@ -8435,6 +8474,8 @@ msgid ""
 "For more information about the tinderbox and tbmaster scripts at this stage, "
 "see their respective man pages: tinderbox(1) and tbmaster(1)."
 msgstr ""
+"برای اطلاعات بیشتر در مورد اجرانامه‌های tinderbox و tbmaster در این مرحله، "
+"صفحات راهنمای آنها را ببینید: tinderbox(1) و tbmaster(1)."
 
 #. (itstool) path: section/title
 #: book.translate.xml:4632
@@ -8464,6 +8505,10 @@ msgid ""
 "page indicating it is not an official website is produced, and a "
 "<acronym>URL</acronym> to the official site is provided."
 msgstr ""
+"اجرانامه در قطعهٔ <function>main()</function> با اقدام به تایید این مسئله که "
+"در حال اجرا در وبگاه رسمی Tinderbox است شروع می‌شود. اگر چنین نباشد، صفحه‌ای "
+"به‌نشان رسمی نبودن این وبگاه ایجاد می‌شود، و یک <acronym>URL</acronym> به "
+"وبگاه رسمی ارائه می‌شود."
 
 #. (itstool) path: section/para
 #: book.translate.xml:4652
