@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:05-0300\n"
-"PO-Revision-Date: 2020-07-29 02:50+0000\n"
+"PO-Revision-Date: 2020-08-25 17:16+0000\n"
 "Last-Translator: Hongyou Bai <bhy1924@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate-dev.freebsd.org/"
 "projects/freebsd-doc/boooks_porters-handbook/zh_CN/>\n"
@@ -293,12 +293,18 @@ msgid ""
 "citerefentry> variable in <filename>/etc/make.conf</filename> before getting "
 "into porting."
 msgstr ""
+"在 port 之前，建议在 <filename>/etc/make.conf</filename> 中设置好 <varname>DEVELOPER</"
+"varname> "
+"<citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> 变量。"
 
 #. (itstool) path: note/screen
 #: book.translate.xml:237
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>echo DEVELOPER=yes &gt;&gt; /etc/make.conf</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>echo DEVELOPER=yes &gt;&gt; /etc/make."
+"conf</userinput>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:239
@@ -306,12 +312,12 @@ msgid ""
 "This setting enables the <quote>developer mode</quote> that displays "
 "deprecation warnings and activates some further quality checks on calling "
 "<command>make</command>."
-msgstr ""
+msgstr "该设置启用了<quote>开发者模式</quote>，在使用 <command>make</command> 时将显示警告和质量检查信息。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:245
 msgid "Writing the <filename>Makefile</filename>"
-msgstr ""
+msgstr "编写 <filename>Makefile</filename>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:247
@@ -335,6 +341,17 @@ msgid ""
 "\n"
 ".include &lt;bsd.port.mk&gt;"
 msgstr ""
+"# $FreeBSD$\n"
+"\n"
+"PORTNAME=\toneko\n"
+"DISTVERSION=\t1.1b\n"
+"CATEGORIES=\tgames\n"
+"MASTER_SITES=\tftp://ftp.cs.columbia.edu/archives/X11R5/contrib/\n"
+"\n"
+"MAINTAINER=\tyouremail@example.com\n"
+"COMMENT=\tCat chasing a mouse all over the screen\n"
+"\n"
+".include &lt;bsd.port.mk&gt;"
 
 #. (itstool) path: note/para
 #: book.translate.xml:263
@@ -358,7 +375,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:281
 msgid "Writing the Description Files"
-msgstr ""
+msgstr "编写介绍文件"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:283
@@ -372,7 +389,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:291
 msgid "<filename>pkg-descr</filename>"
-msgstr ""
+msgstr "<filename>pkg-descr</filename>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:293
