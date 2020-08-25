@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-25 17:16+0000\n"
+"PO-Revision-Date: 2020-08-26 07:19+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -8534,6 +8534,10 @@ msgid ""
 "configuration is used to build <literal>RELENG_8</literal> as well as all "
 "still-supported release branches."
 msgstr ""
+"پیکربندی‌هایی که در کارسازهای build رسمیِ Tinderbox استفاده شده‌اند از روی "
+"انشعاباتی که می‌سازند نام‌گذاری می‌شوند. برای مثال، پیکربندی "
+"<literal>releng_8</literal> در کنار انشعابات توزیعی که هنوز پشتیبانی می‌شوند "
+"برای ساخت <literal>RELENG_8</literal> مورد استفاده قرار می‌گیرد."
 
 #. (itstool) path: section/para
 #: book.translate.xml:4667
@@ -8541,6 +8545,8 @@ msgid ""
 "Once all of this startup procedure has been successfully completed, "
 "<function>do_config()</function> is called for each configuration."
 msgstr ""
+"پس از آنکه تمام این مراحل راه‌اندازی با موفقیت انجام شدند، برای هر پیکربندی "
+"<function>do_config()</function> فراخوانده می‌شود."
 
 #. (itstool) path: section/para
 #: book.translate.xml:4671
@@ -8548,6 +8554,8 @@ msgid ""
 "The <function>do_config()</function> function generates <acronym>HTML</"
 "acronym> for a single Tinderbox configuration."
 msgstr ""
+"تابع <function>do_config()</function> یک <acronym>HTML</acronym> برای "
+"پیکربندیِ Tinderbox واحد ایجاد می‌کند."
 
 #. (itstool) path: section/para
 #: book.translate.xml:4675
@@ -8560,55 +8568,57 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:4682
 msgid "For each item:"
-msgstr ""
+msgstr "به‌ازای هر مورد:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4685
 msgid "For each machine within that architecture:"
-msgstr ""
+msgstr "به‌ازای هر دستگاه داخل آن معماری:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4688
 msgid "If a brief log file exists, then:"
-msgstr ""
+msgstr "اگر یک پروندهٔ لاگ مختصر وجود داشته باشد، سپس:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4691
 msgid ""
 "Call <function>success()</function> to determine the outcome of the build."
 msgstr ""
+"<function>success()</function> را فراخوانی کنید تا نتیجهٔ build را تعیین "
+"کنید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4695
 msgid "Output the modification size."
-msgstr ""
+msgstr "اندازهٔ تغییرات را ارائه دهید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4698
 msgid ""
 "Output the size of the brief log file with a link to the log file itself."
-msgstr ""
+msgstr "اندازهٔ پروندهٔ لاگ مختصر را به‌همراه پیوند به خود پرونده ارائه دهید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4702
 msgid "If a full log file also exists, then:"
-msgstr ""
+msgstr "اگر یک پروندهٔ لاگ کامل نیز وجود دارد، سپس:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4706
 msgid ""
 "Output the size of the full log file with a link to the log file itself."
-msgstr ""
+msgstr "اندازهٔ پروندهٔ لاگ کامل را به‌همراه پیوند به خود پرونده ارائه دهید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4714
 msgid "Otherwise:"
-msgstr ""
+msgstr "در غیر اینصورت:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4717
 msgid "No output."
-msgstr ""
+msgstr "خروجی ندارد."
 
 #. (itstool) path: section/para
 #: book.translate.xml:4727
