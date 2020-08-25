@@ -5,16 +5,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:08-0300\n"
-"PO-Revision-Date: 2020-04-04 18:56+0000\n"
+"PO-Revision-Date: 2020-08-25 17:16+0000\n"
 "Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
-"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/freebsd-"
-"doc/articles_releng/es/>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/articles_releng/es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.1.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -40,21 +40,15 @@ msgstr "BSDCon Europe"
 
 #. (itstool) path: personblurb/para
 #: article.translate.xml:20
-#, fuzzy
-#| msgid ""
-#| "I've been involved in the development of FreeBSD based products since "
-#| "1997 at Walnut Creek CDROM, BSDi, and now Wind River Systems. FreeBSD 4.4 "
-#| "was the first official release of FreeBSD that I played a significant "
-#| "part in."
 msgid ""
 "I've been involved in the development of FreeBSD based products since 1997 "
 "at Walnut Creek CDROM, BSDi, and now Wind River Systems. FreeBSD 4.4 was the "
 "first official release of FreeBSD that I played a significant part in."
 msgstr ""
-"He estado colaborando con el desarrollo de productos basados en FreeBSD "
-"desde 1997 en Walnut Creek CDROM, BSDi, y actualmente en Wind River "
-"Systems.  FreeBSD 4.4 ha sido la primera release en la que he tenido el "
-"placer de participar."
+"He estado involucrado en el desarrollo de productos basados en FreeBSD desde "
+"1997 en Walnut Creek CDROM, BSDi, y ahora en Wind River Systems. FreeBSD 4.4 "
+"fue la primera versión oficial de FreeBSD en la que tuve una participación "
+"significativa."
 
 #. (itstool) path: affiliation/address
 #: article.translate.xml:27
@@ -273,7 +267,7 @@ msgstr ""
 #. (itstool) path: quote/buildtarget
 #: article.translate.xml:147
 msgid "buildworld"
-msgstr ""
+msgstr "buildworld"
 
 #. (itstool) path: footnote/simpara
 #: article.translate.xml:148
@@ -386,16 +380,13 @@ msgstr "El proceso de construcción actual."
 #. (itstool) path: listitem/para
 #: article.translate.xml:208
 msgid "How the base release may be extended by third parties."
-msgstr "Cómo la liberación de la base puede ser prorrogada por terceros."
+msgstr "Cómo la liberación de la base puede ser extendida por terceros."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:217
-#, fuzzy
-#| msgid "Some of the lessons learned through the release of FreeBSD 4.4."
 msgid "Some of the lessons learned through the release of FreeBSD 4.4."
 msgstr ""
-"Algunas de las lecciones aprendidas a través del lanzamiento de la versión "
-"FreeBSD 4.4."
+"Algunas de las lecciones aprendidas a través del lanzamiento de FreeBSD 4.4."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:226
@@ -425,7 +416,7 @@ msgstr ""
 "las listas de correo de desarrollo para recordar a los desarrolladores que "
 "sólo tienen 15 días para integrar los nuevos cambios antes de que el código "
 "se congele. Durante este tiempo, muchos desarrolladores realizan lo que se "
-"conoce como <quote>barridos MFC</quote>."
+"conoce como <quote>MFC sweeps</quote>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:246
@@ -536,7 +527,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: article.translate.xml:321
 msgid "Final Release Checklist"
-msgstr ""
+msgstr "Lista de control de liberación final"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:323
@@ -552,7 +543,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: article.translate.xml:328
 msgid "Creating the Release Branch"
-msgstr ""
+msgstr "Creación de la rama de liberación"
 
 #. (itstool) path: note/para
 #: article.translate.xml:331
@@ -626,6 +617,9 @@ msgid ""
 "imageobject> <textobject> <phrase>FreeBSD Development Branch</phrase> </"
 "textobject>"
 msgstr ""
+"<imageobject> <imagedata fileref=\"branches-head\" align=\"center\"/> </"
+"imageobject> <textobject> <phrase>Rama de desarrollo de FreeBSD</phrase> "
+"</textobject>"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -635,7 +629,7 @@ msgstr ""
 #: article.translate.xml:374
 msgctxt "_"
 msgid "external ref='branches-releng3' md5='__failed__'"
-msgstr ""
+msgstr "external ref='branches-releng3' md5='__failed__'"
 
 #. (itstool) path: sect3/mediaobject
 #: article.translate.xml:372
@@ -653,7 +647,7 @@ msgstr ""
 #: article.translate.xml:384
 msgctxt "_"
 msgid "external ref='branches-releng4' md5='__failed__'"
-msgstr ""
+msgstr "external ref='branches-releng4' md5='__failed__'"
 
 #. (itstool) path: sect3/mediaobject
 #: article.translate.xml:382
@@ -671,7 +665,7 @@ msgstr ""
 #: article.translate.xml:394
 msgctxt "_"
 msgid "external ref='branches-releng5' md5='__failed__'"
-msgstr ""
+msgstr "external ref='branches-releng5' md5='__failed__'"
 
 #. (itstool) path: sect3/mediaobject
 #: article.translate.xml:392
@@ -689,7 +683,7 @@ msgstr ""
 #: article.translate.xml:404
 msgctxt "_"
 msgid "external ref='branches-releng6' md5='__failed__'"
-msgstr ""
+msgstr "external ref='branches-releng6' md5='__failed__'"
 
 #. (itstool) path: sect3/mediaobject
 #: article.translate.xml:402
@@ -707,7 +701,7 @@ msgstr ""
 #: article.translate.xml:414
 msgctxt "_"
 msgid "external ref='branches-releng7' md5='__failed__'"
-msgstr ""
+msgstr "external ref='branches-releng7' md5='__failed__'"
 
 #. (itstool) path: sect3/mediaobject
 #: article.translate.xml:412
@@ -725,7 +719,7 @@ msgstr ""
 #: article.translate.xml:424
 msgctxt "_"
 msgid "external ref='branches-releng8' md5='__failed__'"
-msgstr ""
+msgstr "external ref='branches-releng8' md5='__failed__'"
 
 #. (itstool) path: sect3/mediaobject
 #: article.translate.xml:422
@@ -743,7 +737,7 @@ msgstr ""
 #: article.translate.xml:434
 msgctxt "_"
 msgid "external ref='branches-releng9' md5='__failed__'"
-msgstr ""
+msgstr "external ref='branches-releng9' md5='__failed__'"
 
 #. (itstool) path: sect3/mediaobject
 #: article.translate.xml:432
@@ -1099,6 +1093,9 @@ msgid ""
 "documentation source (SGML) into HTML and text documents that will accompany "
 "the release."
 msgstr ""
+"Construcción e instalación de la cadena de herramientas de documentación "
+"necesaria para convertir la fuente de documentación (SGML) en documentos "
+"HTML y de texto que acompañarán a la liberación."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:692
@@ -1267,7 +1264,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: article.translate.xml:820
 msgid "FTP Sites"
-msgstr ""
+msgstr "Sitios FTP"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:822
@@ -1452,7 +1449,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:943
 msgid "Lessons Learned from FreeBSD 4.4"
-msgstr ""
+msgstr "Lecciones aprendidas de FreeBSD 4.4"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:945
@@ -1483,7 +1480,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:967
 msgid "Future Directions"
-msgstr ""
+msgstr "Direcciones futuras"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:969
@@ -1492,6 +1489,10 @@ msgid ""
 "growing userbase. Along these lines we are working very hard to document the "
 "procedures involved in producing FreeBSD releases."
 msgstr ""
+"Es imperativo que nuestras actividades de ingeniería de liberación se "
+"escalen con nuestra creciente base de usuarios. En esta línea estamos "
+"trabajando muy duro para documentar los procedimientos involucrados en la "
+"producción de releases de FreeBSD."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:976
@@ -1564,6 +1565,9 @@ msgid ""
 "\"https://people.FreeBSD.org/~jhb/docs/releng.txt\">https://people.FreeBSD."
 "org/~jhb/docs/releng.txt</uri>"
 msgstr ""
+"Propuesta de ingeniería de liberación de FreeBSD de John Baldwin <uri "
+"xlink:href=\"https://people.FreeBSD.org/~jhb/docs/releng.txt\">https://people"
+".FreeBSD.org/~jhb/docs/releng.txt</uri>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1018
