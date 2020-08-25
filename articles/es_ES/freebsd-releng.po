@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:01-0300\n"
-"PO-Revision-Date: 2020-08-24 04:03+0000\n"
+"PO-Revision-Date: 2020-08-25 17:16+0000\n"
 "Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_freebsd-releng/es/>\n"
@@ -192,7 +192,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:122 article.translate.xml:512
 msgid "Website Changes During the Release Cycle"
-msgstr "Cambios en el sitio web durante el ciclo de lanzamiento."
+msgstr "Cambios en el sitio web durante el ciclo de liberación"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:130
@@ -408,7 +408,7 @@ msgstr "6 agosto, 2016"
 #. (itstool) path: row/entry
 #: article.translate.xml:281
 msgid "Ports release tag:"
-msgstr "Ports release tag:"
+msgstr "Etiqueta de liberación de puertos:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:282 article.translate.xml:287
@@ -433,7 +433,7 @@ msgstr "19 agosto, 2016"
 #. (itstool) path: row/entry
 #: article.translate.xml:296
 msgid "RELEASE announcement:"
-msgstr "Se anuncia la RELEASE"
+msgstr "Anuncio de liberación:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:297
@@ -1539,10 +1539,10 @@ msgid ""
 "in progress. These files are all relative to the top-most level of the "
 "stable branch:"
 msgstr ""
-"En preparación para la congelación del código en la rama <literal>stable</"
-"literal>, varios archivos deben ser actulizados para indicar que el ciclo de "
-"lanzamientos está oficialmente en progreso. Todos estos archivos son "
-"relativos al nivel más alto de la rama stable."
+"En preparación para la congelación del código en una rama <literal>estable</"
+"literal>, varios archivos deben ser actualizados para reflejar que el ciclo "
+"de liberación está oficialmente en curso. Estos archivos son todos relativos "
+"al nivel más alto de la rama estable:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:942 article.translate.xml:1389
@@ -2187,6 +2187,11 @@ msgid ""
 "<literal>RC</literal> build from a releng branch versus a <literal>STABLE</"
 "literal> snapshot from the respective stable branch."
 msgstr ""
+"Los scripts de compilación residen en <filename class=\"directory\">/releng/"
+"scripts-snapshot/scripts</filename> o <filename class=\"directory\">/releng/"
+"scripts-release/scripts</filename> respectivamente, para evitar colisiones "
+"entre una <literal>RC</literal> compilación de una rama releng frente a una "
+"<literal>STABLE</literal> instantánea de la respectiva rama estable."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1273
@@ -2197,6 +2202,11 @@ msgid ""
 "<literal>EVERYTHINGISFINE</literal> variable is defined in <filename>main."
 "conf</filename>."
 msgstr ""
+"Existe un conjunto de datos separado para las imágenes de la construcción "
+"final, <filename class=\"directory\">/snap/ftp</filename>. Este directorio "
+"contiene tanto los directorios de instantáneas como los de versiones. Sólo "
+"se usan si la variable <literal>EVERYTHINGISFINE</literal> está definida en "
+"<filename>main.conf</filename>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:1280
@@ -2206,6 +2216,10 @@ msgid ""
 "environment, accidentally enabling the behavior that depends on it being "
 "defined."
 msgstr ""
+"El nombre de la variable <literal>EVERYTHINGISFINE</literal> fue elegido "
+"para evitar colisionar con una variable que podría ser posiblemente "
+"establecida en el entorno del usuario, permitiendo accidentalmente el "
+"comportamiento que depende de ella ser definida."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1286
@@ -2302,6 +2316,12 @@ msgid ""
 "template currently used can be found <link xlink:href=\"https://svn.freebsd."
 "org/base/user/gjb/thermite/non-release-template-mail.txt\">here</link>."
 msgstr ""
+"Estos scripts de ayuda sólo se aplican a las compilaciones de instantáneas "
+"de desarrollo. Los anuncios durante el ciclo de lanzamiento (excluyendo el "
+"anuncio de lanzamiento final) se crean a partir de una plantilla de correo "
+"electrónico. Una muestra de la plantilla de correo electrónico utilizada "
+"actualmente se puede encontrar <link xlink:href=\"https://svn.freebsd.org/"
+"base/user/gjb/thermite/non-release-template-mail.txt\">aquí</link>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1330
@@ -2319,6 +2339,14 @@ msgid ""
 "must be named with <literal>release</literal> instead of <literal>snap</"
 "literal> as the \"type\", as mentioned above."
 msgstr ""
+"De manera similar a la compilación de instantáneas de desarrollo de FreeBSD, "
+"<filename>thermite.sh</filename> sería invocado de la misma manera. La "
+"diferencia entre las instantáneas de desarrollo y las construcciones de "
+"versiones, <literal>BETA</literal> y <literal>RC</literal> incluida, es que "
+"los archivos de configuración "
+"<citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> deben ser nombrados con <literal>release</literal> en lugar de "
+"<literal>snap</literal> como el \"tipo\", como se mencionó anteriormente."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1340
@@ -2328,6 +2356,11 @@ msgid ""
 "in <filename>defaults-<replaceable>12</replaceable>.conf</filename> and "
 "<filename>builds-<replaceable>12</replaceable>.conf</filename>, respectively."
 msgstr ""
+"Además, el <literal>BUILDTYPE</literal> y <literal>types</literal> deben ser "
+"cambiados de <literal>snap</literal> a <literal>release</literal> en "
+"<filename>default-<replaceable>12</replaceable>.conf</filename> y "
+"<filename>builds-<replaceable>12</replaceable>.conf</filename>, "
+"respectivamente."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1348
@@ -2346,6 +2379,19 @@ msgid ""
 "replaceable>/</literal> or <literal>releng/<replaceable>12.0</replaceable>/</"
 "literal>."
 msgstr ""
+"Cuando se construye <literal>BETA</literal>, <literal>RC</literal>, y el "
+"final <literal>RELEASE</literal>, también se establece estáticamente "
+"<literal>BUILDSVNREV</literal> a la revisión en la rama que refleja el "
+"cambio de nombre, <literal>BUILDDATE</literal> a la fecha en que las "
+"construcciones se inician en formato <literal>YYYYMMDD</literal>. Si los "
+"árboles <literal>doc/</literal> y <literal>ports/</literal> han sido "
+"etiquetados, también establezca <literal>PORTBRANCH</literal> y "
+"<literal>DOCBRANCH</literal> a la ruta de etiqueta relevante en el "
+"repositorio de Subversion, reemplazando <literal>HEAD</literal> con la "
+"última revisión cambiada. También establecer <literal>releasesrc</literal> "
+"en in <filename>builds-<replaceable>12</replaceable>.conf</filename> a la "
+"rama relevante, como <literal>stable/<replaceable>12</replaceable>/</"
+"literal> o <literal>releng/<replaceable>12.0</replaceable>/</literal>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1364
@@ -2358,6 +2404,14 @@ msgid ""
 "<filename>kernel.txz</filename>, etc. are added to <package>misc/freebsd-"
 "release-manifests</package> in the Ports Collection, as well."
 msgstr ""
+"Durante el ciclo de liberación, una copia de <filename>CHECKSUM.SHA512</"
+"filename> y <filename>CHECKSUM.SHA256</filename> para cada arquitectura se "
+"almacenan en el repositorio interno del Equipo de Ingeniería de Liberación "
+"de FreeBSD además de ser incluidas en los diversos correos electrónicos de "
+"anuncio. Cada <filename>MANIFEST</filename> que contiene los hashes de "
+"<filename>base.txz</filename>, <filename>kernel.txz</filename>, etc. se "
+"añaden también a <package>misc/freebsd-release-manifests</package> en la "
+"Colección de Ports."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1375
@@ -2408,6 +2462,14 @@ msgid ""
 "<literal>releng/<replaceable>12.0</replaceable>/</literal> branches, this is "
 "done with <command>svn cp</command>. From the repository root:"
 msgstr ""
+"Después de construir la última rama <literal>RELEASE</literal>, la rama "
+"<literal>releaseg/<replaceable>12.0</replaceable>/</literal> es etiquetada "
+"como <literal>release/<replaceable>12.0.0</replaceable>/</literal> usando la "
+"revisión a partir de la cual se construyó la rama <literal>RELEASE</"
+"literal>. Similar a la creación de las ramas <literal>stable/"
+"<replaceable>12</replaceable>/</literal> y <literal>releng/<replaceable>12."
+"0</replaceable>/</literal>, esto se hace con <command>svn cp</command>. "
+"Desde la raíz del repositorio:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:1416
@@ -2471,6 +2533,18 @@ msgid ""
 "<citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> directly:"
 msgstr ""
+"Si <literal>EVERYTHINGISFINE</literal> está definido en los archivos de "
+"configuración de la construcción, <filename>main. conf</filename> en el caso "
+"de los scripts de construcción referidos arriba, esto ocurre automáticamente "
+"en el "
+"<citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> después de que la construcción se haya completado, creando la "
+"estructura de directorios en <filename class=\"directory\">${DESTDIR}/R/ftp-"
+"stage</filename> con una estructura de rutas que coincida con lo que se "
+"espera en <systemitem>ftp-master</systemitem>. Esto equivale a ejecutar lo "
+"siguiente en el "
+"<citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> directamente:"
 
 #. (itstool) path: listitem/screen
 #: article.translate.xml:1453
@@ -2491,6 +2565,13 @@ msgid ""
 "filename> or <filename class=\"directory\">/snap/ftp/releases</filename> on "
 "the build host, respectively."
 msgstr ""
+"Después de que se construye cada arquitectura, <filename>thermite. sh</"
+"filename> hará <application>rsync</application> el <filename class="
+"\"directory\">${DESTDIR}/R/ftp- stage</filename> de la construcción "
+"<citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> a <filename class=\"directory\">/snap/ftp/snapshots</filename> "
+"o <filename class=\"directory\">/snap/ftp/releases</filename> en el host de "
+"la construcción, respectivamente."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1464
@@ -2499,6 +2580,9 @@ msgid ""
 "systemitem> before moving the files into <filename class=\"directory\">pub/</"
 "filename> to begin propagation to the Project mirrors"
 msgstr ""
+"Copiar los archivos a un directorio de montaje en <systemitem>ftp-master</"
+"systemitem> antes de mover los archivos a <filename class=\"directory\">pub/"
+"</filename> para comenzar la propagación a los espejos del Proyecto"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1469
@@ -2510,6 +2594,13 @@ msgid ""
 "archive/tmp/snapshots</filename> or <filename class=\"directory\">/archive/"
 "tmp/releases</filename>, respectively."
 msgstr ""
+"Una vez que todas las construcciones hayan terminado, <filename class="
+"\"directory\">/snap/ftp/snapshots</filename>, o <filename class=\"directory\""
+">/snap/ftp/releases</filename> para una liberación, es encuestado por "
+"<systemitem>ftp-master</systemitem> usando <application>rsync</application> "
+"a <filename class=\"directory\">/archive/tmp/snapshots</filename> o "
+"<filename class=\"directory\">/archive/tmp/releases</filename>, "
+"respectivamente."
 
 #. (itstool) path: note/para
 #: article.translate.xml:1478
@@ -2518,6 +2609,9 @@ msgid ""
 "infrastructure, this step requires <literal>root</literal> level access, as "
 "this step must be executed as the <literal>archive</literal> user."
 msgstr ""
+"En <systemitem>ftp-master</systemitem> en la infraestructura del Proyecto "
+"FreeBSD, este paso requiere un acceso de nivel <literal>root</literal>, ya "
+"que este paso debe ser ejecutado como el usuario <literal>archive</literal>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1488
@@ -2535,6 +2629,14 @@ msgid ""
 "links from <filename class=\"directory\">/archive/tmp</filename> to "
 "<filename class=\"directory\">/archive/pub/FreeBSD</filename>."
 msgstr ""
+"Una vez que las imágenes son puestas en escena en <filename class=\"directory"
+"\">/archive/tmp/</filename>, están listas para ser hechas públicas "
+"poniéndolas en <filename class=\"directory\">/archive/pub/FreeBSD</"
+"filename>. Con el fin de reducir el tiempo de propagación, "
+"<citerefentry><refentrytitle>pax</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> se utiliza para crear enlaces duros desde <filename class="
+"\"directory\">/archive/tmp</filename> a <filename class=\"directory\">/"
+"archive/pub/FreeBSD</filename>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:1497
@@ -2558,6 +2660,15 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> will replace with a "
 "hard link, increasing the propagation time."
 msgstr ""
+"Sin embargo, hay una advertencia, donde <application>rsync</application> "
+"debe ser usada después de "
+"<citerefentry><refentrytitle>pax</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> para corregir los enlaces simbólicos en <filename class="
+"\"directory\">pub/FreeBSD/<replaceable>snapshots</replaceable>/ISO-IMAGES</"
+"filename> que "
+"<citerefentry><refentrytitle>pax</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> reemplazará con un enlace  duradero, aumentando el tiempo de "
+"propagación."
 
 #. (itstool) path: note/para
 #: article.translate.xml:1508
@@ -2632,7 +2743,7 @@ msgstr ""
 "el Equipo de Ingeniería de Liberación de FreeBSD y el Equipo de Seguridad de "
 "FreeBSD revisan los cambios que no fueron aprobados antes de la liberación "
 "final, y dependiendo del alcance del cambio en cuestión, pueden emitir un "
-"<acronym>EN."
+"<acronym>EN</acronym>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:1542
