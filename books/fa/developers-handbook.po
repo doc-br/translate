@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-26 07:19+0000\n"
+"PO-Revision-Date: 2020-08-26 21:02+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -8519,6 +8519,11 @@ msgid ""
 "This information is derived from the names of the log files matching the "
 "following pattern:"
 msgstr ""
+"سپس، مسیر لاگ ها را بررسی می‌کند تا فهرستی از پیکربندی‌ها، انشعاب‌ها و "
+"معماری‌هایی را که برای آنها پرونده‌های لاگ وجود دارند بدست آورد، و جلوی سخت‌"
+"نویسی (hard-coding) فهرست در اجرانامه و به‌طور بالقوه منتهی شدن به ردیف‌ها و "
+"ستون‌های خالی را بگیرد. این اطلاعات از نام‌های پرونده‌های لاگی که با الگوهای "
+"زیر همخوانی دارند دریافت شده است:"
 
 #. (itstool) path: section/programlisting
 #: book.translate.xml:4659
@@ -8564,6 +8569,9 @@ msgid ""
 "build with the specified configuration, producing a single row of results "
 "for each in the following manner:"
 msgstr ""
+"این کار ابتدا با ایجاد یک ردیف سرآمد انجام می‌شود، سپس روی هر build انشعاب "
+"با پیکربندی بخصوص تکرار می‌شود، و یک ردیف از نتایج برای هر کدام از انشعاب‌ها "
+"طبق روش زیر ایجاد می‌کند:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4682
@@ -8627,6 +8635,9 @@ msgid ""
 "log file for the string <quote>tinderbox run completed</quote> in order to "
 "determine whether the build was successful."
 msgstr ""
+"تابع <function>success()</function> که بالاتر بدان اشاره شد یک پروندهٔ لاگ "
+"مختصر را برای رشتهٔ <quote>tinderbox run completed</quote> بررسی می‌کند تا "
+"موفقیت‌آمیز بودن build را معین کند."
 
 #. (itstool) path: section/para
 #: book.translate.xml:4732
@@ -8634,11 +8645,14 @@ msgid ""
 "Configurations and branches are sorted according to their branch rank. This "
 "is computed as follows:"
 msgstr ""
+"پیکربندی‌ها و انشعاب‌ها با توجه به رتبه‌بندی انشعابشان مرتب می‌شوند. این "
+"چنین محاسبه می‌شود:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4737
 msgid "<literal>HEAD</literal> and <literal>CURRENT</literal> have rank 9999."
 msgstr ""
+"<literal>HEAD</literal> و <literal>CURRENT</literal> دارای مرتبهٔ 9999 هستند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4741
@@ -8646,6 +8660,8 @@ msgid ""
 "<literal>RELENG_<replaceable>x</replaceable></literal> has rank "
 "<replaceable>xx</replaceable>99."
 msgstr ""
+"<literal>RELENG_<replaceable>x</replaceable></literal> دارای مرتبهٔ "
+"<replaceable>xx</replaceable>99 است."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4745
@@ -8653,6 +8669,8 @@ msgid ""
 "<literal>RELENG_<replaceable>x</replaceable>_<replaceable>y</replaceable></"
 "literal> has rank <replaceable>xxyy</replaceable>."
 msgstr ""
+"<literal>RELENG_<replaceable>x</replaceable>_<replaceable>y</replaceable></"
+"literal> دارای مرتبهٔ <replaceable>xxyy</replaceable> است."
 
 #. (itstool) path: section/para
 #: book.translate.xml:4750
@@ -8663,31 +8681,36 @@ msgid ""
 "forked off of it. For instance, for FreeBSD 8, the order from highest to "
 "lowest would be:"
 msgstr ""
+"این بدان معناست که <literal>HEAD</literal> همیشه دارای بالاترین مرتبه است، و "
+"انشعاب‌های <literal>RELENG</literal> به ترتیب شماره رتبه‌بندی می‌شوند، و هر "
+"انشعابِ <literal>STABLE</literal> بالاتر از انشعاب‌های توزیعِ منشعب‌شده از "
+"آن رتبه‌بندی شده‌اند. برای مثال، برای FreeBSD 8، ترتیب از بالاترین به پایین‌"
+"ترین بدین گونه است:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4759
 msgid "<literal>RELENG_8</literal> (branch rank 899)."
-msgstr ""
+msgstr "<literal>RELENG_8</literal> (رتبه انشعاب 899)."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4762
 msgid "<literal>RELENG_8_3</literal> (branch rank 803)."
-msgstr ""
+msgstr "<literal>RELENG_8_3</literal> (رتبه انشعاب 803)."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4766
 msgid "<literal>RELENG_8_2</literal> (branch rank 802)."
-msgstr ""
+msgstr "<literal>RELENG_8_2</literal> (رتبه انشعاب 802)."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4770
 msgid "<literal>RELENG_8_1</literal> (branch rank 801)."
-msgstr ""
+msgstr "<literal>RELENG_8_1</literal> (رتبه انشعاب 801)."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4774
 msgid "<literal>RELENG_8_0</literal> (branch rank 800)."
-msgstr ""
+msgstr "<literal>RELENG_8_0</literal> (رتبه انشعاب 800)."
 
 #. (itstool) path: section/para
 #: book.translate.xml:4779
@@ -8698,11 +8721,15 @@ msgid ""
 "passes since the corresponding build, with every half an hour bringing the "
 "color closer to grey."
 msgstr ""
+"رنگ‌هایی که Tinderbox برای هر خانه در جدول استفاده می‌کند توسط <acronym>CSS</"
+"acronym> تعریف شده‌اند. build های موفق با رنگ سبز نمایش داده می‌شوند؛ build "
+"های ناموفق با رنگ قرمز نمایش داده می‌شوند. رنگ با گذر زمان محو می‌شود از "
+"آنجاکه build مربوطه، هر نیم ساعت رنگ را به خاکستری نزدیک‌تر می‌کند."
 
 #. (itstool) path: section/title
 #: book.translate.xml:4788
 msgid "Official Build Servers"
-msgstr ""
+msgstr "کارسازهای ساخت (build) رسمی"
 
 #. (itstool) path: section/para
 #: book.translate.xml:4790
@@ -8711,16 +8738,19 @@ msgid ""
 "www.sentex.ca\">Sentex Data Communications</link>, who also host the FreeBSD "
 "Netperf Cluster."
 msgstr ""
+"کارسازهای ساخت رسمی Tinderbox توسط <link xlink:href=\"http://www.sentex.ca\""
+">Sentex Data Communications</link> میزبانی می‌شوند، که FreeBSD Netperf "
+"Cluster را نیز میزبانی می‌کنند."
 
 #. (itstool) path: section/para
 #: book.translate.xml:4794
 msgid "Three build servers currently exist:"
-msgstr ""
+msgstr "سه کارساز ساخت در حال حاضر وجود دارند:"
 
 #. (itstool) path: section/para
 #: book.translate.xml:4796
 msgid "<emphasis>freebsd-current.sentex.ca</emphasis> builds:"
-msgstr ""
+msgstr "ساخت‌های <emphasis>freebsd-current.sentex.ca</emphasis>:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4801
@@ -8728,6 +8758,8 @@ msgid ""
 "<literal>HEAD</literal> for amd64, arm, i386, i386/pc98, ia64, mips, "
 "powerpc, powerpc64, and sparc64."
 msgstr ""
+"<literal>HEAD</literal> برای amd64، arm، i386، i386/pc98، ia64، mips، "
+"powerpc، powerpc64، و sparc64."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4806
@@ -8736,11 +8768,14 @@ msgid ""
 "branches for amd64, arm, i386, i386/pc98, ia64, mips, powerpc, powerpc64, "
 "and sparc64."
 msgstr ""
+"<literal>RELENG_9</literal> و انشعاب‌های 9.<replaceable>X</replaceable> "
+"پشتیبانی‌شده برای amd64، arm، i386، i386/pc98، ia64، mips، powerpc، "
+"powerpc64، and sparc64."
 
 #. (itstool) path: section/para
 #: book.translate.xml:4813
 msgid "<emphasis>freebsd-stable.sentex.ca</emphasis> builds:"
-msgstr ""
+msgstr "ساخت‌های <emphasis>freebsd-stable.sentex.ca</emphasis>:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4818
@@ -8748,11 +8783,13 @@ msgid ""
 "<literal>RELENG_8</literal> and supported 8.<replaceable>X</replaceable> "
 "branches for amd64, i386, i386/pc98, ia64, mips, powerpc and sparc64."
 msgstr ""
+"<literal>RELENG_8</literal> و انشعاب‌های 8.<replaceable>X</replaceable> "
+"پشتیبانی‌شده برای amd64، i386، i386/pc98، ia64، mips، powerpc و sparc64."
 
 #. (itstool) path: section/para
 #: book.translate.xml:4824
 msgid "<emphasis>freebsd-legacy.sentex.ca</emphasis> builds:"
-msgstr ""
+msgstr "ساخت‌های <emphasis>freebsd-legacy.sentex.ca</emphasis>:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4829
@@ -8760,6 +8797,8 @@ msgid ""
 "<literal>RELENG_7</literal> and supported 7.<replaceable>X</replaceable> "
 "branches for amd64, i386, i386/pc98, ia64, powerpc, and sparc64."
 msgstr ""
+"<literal>RELENG_7</literal> و انشعاب‌های 7.<replaceable>X</replaceable> "
+"پشتیبانی‌شده برای amd64، i386، i386/pc98، ia64، powerpc و sparc64."
 
 #. (itstool) path: section/title
 #: book.translate.xml:4837
