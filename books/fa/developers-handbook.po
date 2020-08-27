@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-26 21:02+0000\n"
+"PO-Revision-Date: 2020-08-27 16:08+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -8166,6 +8166,20 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> file (i.e.: "
 "<command>dd if=myimage of=/dev/ad0s1h bs=1m</command>)"
 msgstr ""
+"سامانهٔ پروندهٔ خواندن/نوشتن را با "
+"<citerefentry><refentrytitle>newfs</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> مجدد راه‌اندازی کنید و آن را قبل از هر اجرا از "
+"<citerefentry><refentrytitle>tar</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> یا پروندهٔ "
+"<citerefentry><refentrytitle>dump</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> پر کنید. آن را قبل از هر آزمایش قطع کرده و سوار کنید. حاصل، یک "
+"طرح‌بندی سامانهٔ پروندهٔ استوار است. برای یک آزمایش مطمئن این امر بر روی "
+"<filename>/usr/obj</filename> اعمال می‌شود (تنها کافیست با <command>newfs</"
+"command> مجدد راه‌اندازی کنید و آن را سوار کنید). برای بدست آوردن توانایی "
+"بازتولیدِ ۱۰۰ درصدی، سامانهٔ عامل را از پروندهٔ "
+"<citerefentry><refentrytitle>dd</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> پر کنید (برای مثال: <command>dd if=myimage of=/dev/ad0s1h "
+"bs=1m</command>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4457
@@ -8364,6 +8378,11 @@ msgid ""
 "interrupts. To help diagnose odd test results, take a few snapshots of "
 "<command>vmstat -i</command> and look for anything unusual."
 msgstr ""
+"چناچه محک‌زنی به‌طور غیرمنتظره کارایی بدی از خود نشان دهد، چیزهایی چون ظرفیت "
+"وقفهٔ بالا از منبعی نامشخص را بررسی کنید. گزارش شده است که برخی نسخه‌های "
+"<acronym>ACPI</acronym> دچار <quote>رفتارهای نادرست</quote> شده‌اند و وقفه‌"
+"های بسیار زیادی ایجاد می‌کنند. برای تشخیص نتایج غیرعادی آزمایش، تعدادی تصویر "
+"از <command>vmstat -i</command> بگیرید و به‌دنبال هرچیز نامعمولی باشید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4572
@@ -8496,6 +8515,17 @@ msgid ""
 "acronym> script. It conforms to <acronym>XHTML</acronym> standards and is "
 "styled using <acronym>CSS</acronym>."
 msgstr ""
+"اجرانامهٔ <filename>index.cgi</filename> خلاصه‌ای از لاگ‌های tinderbox و "
+"tbmaster در قالب <acronym>HTML</acronym> ایجاد می‌کند. گرچه در اصل بنا بود "
+"تا به‌عنوان اجرانامهٔ <acronym>CGI</acronym> از آن استفاده شود، همانطور که "
+"از نامش پیداست. این اجرانامه می‌تواند توسط خط فرمان یا یک "
+"<citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> job نیز اجرا شود، که در این‌صورت در مسیری که اجرانامه‌ها قرار "
+"دارند به‌دنبال لاگ‌ها می‌گردد. به‌طور خودکار متن را تشخیص می‌دهد، و وقتی‌که "
+"به‌عنوان اجرانامهٔ <acronym>CGI</acronym> اجرا می‌شود سرآیند‌هایی در قالب "
+"<acronym>HTTP</acronym> ایجاد می‌کند. که منطبق بر استانداردهای "
+"<acronym>XHTML</acronym> است و با استفاده از <acronym>CSS</acronym> ظاهرسازی "
+"شده است."
 
 #. (itstool) path: section/para
 #: book.translate.xml:4646
@@ -8803,7 +8833,7 @@ msgstr ""
 #. (itstool) path: section/title
 #: book.translate.xml:4837
 msgid "Official Summary Site"
-msgstr ""
+msgstr "پایگاه خلاصهٔ رسمی"
 
 #. (itstool) path: section/para
 #: book.translate.xml:4839
