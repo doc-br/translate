@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-27 16:08+0000\n"
+"PO-Revision-Date: 2020-08-27 18:15+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -8843,6 +8843,10 @@ msgid ""
 "org</link>, hosted by Dag-Erling Smørgrav <email>des@FreeBSD.org</email> and "
 "set up as follows:"
 msgstr ""
+"خلاصه‌ها و لاگ‌های کارسازهای ساخت (build) رسمی به‌طور برخط در <link "
+"xlink:href=\"http://tinderbox.FreeBSD.org\">http://tinderbox.FreeBSD.org</"
+"link> در دسترس هستند، و توسط Dag-Erling Smørgrav <email>des@FreeBSD.org</"
+"email> میزبانی می‌شوند و بدین ترتیب راه‌اندازی می‌شوند:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4845
@@ -8853,6 +8857,12 @@ msgid ""
 "\"><refentrytitle>rsync</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>."
 msgstr ""
+"یک "
+"<citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> job در فواصل منظم کارسازهای ساخت را بررسی می‌کند و هر پروندهٔ "
+"لاگ جدیدی را به‌کمک <citerefentry vendor=\"ports\""
+"><refentrytitle>rsync</refentrytitle><manvolnum>1</manvolnum></citerefentry> "
+"بارگیری می‌کند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4850
@@ -8860,6 +8870,8 @@ msgid ""
 "Apache is set up to use <filename>index.cgi</filename> as "
 "<literal>DirectoryIndex</literal>."
 msgstr ""
+"Apache به‌گونه‌ای تنظیم شده است تا از <filename>index.cgi</filename> به‌"
+"عنوان <literal>DirectoryIndex</literal> استفاده کند."
 
 #. (itstool) path: part/title
 #: book.translate.xml:4861
