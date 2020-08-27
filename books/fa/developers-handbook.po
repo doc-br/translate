@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-27 18:15+0000\n"
-"Last-Translator: Parsa Samet <qps@irbug.org>\n"
+"PO-Revision-Date: 2020-08-27 23:19+0000\n"
+"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -10186,6 +10186,8 @@ msgid ""
 "We have several ways of dealing with it. One would be to <emphasis>reverse</"
 "emphasis> the values in our code:"
 msgstr ""
+"راه‌های متعددی برای مقابله با این داریم. یکی از این راه‌ها <emphasis>معکوس</"
+"emphasis> کردن مقادیر در کُدمان است:"
 
 #. (itstool) path: sect4/programlisting
 #: book.translate.xml:5695
@@ -10195,6 +10197,10 @@ msgid ""
 "sa.sin_port        = 13 &lt;&lt; 8;\n"
 "sa.sin_addr.s_addr = (((((18 &lt;&lt; 8) | 244) &lt;&lt; 8) | 43) &lt;&lt; 8) | 192;"
 msgstr ""
+"sa.sin_family      = AF_INET;\n"
+"sa.sin_port        = 13 &lt;&lt; 8;\n"
+"sa.sin_addr.s_addr = (((((18 &lt;&lt; 8) | 244) &lt;&lt; 8) | 43) &lt;&lt; 8)"
+" | 192;"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5699
@@ -10242,6 +10248,8 @@ msgid ""
 "Eventually, you figure it out, say a couple of swear words, and start "
 "rewriting your code."
 msgstr ""
+"سرانجام، مشکل را می‌فهمید، مقداری ناسزا می‌گویید، و شروع به بازنویسی کد "
+"می‌کنید."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5731
@@ -10276,7 +10284,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:5752
 msgid "Client Functions"
-msgstr ""
+msgstr "توابع کارخواه"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:5754
@@ -10292,7 +10300,7 @@ msgstr ""
 #. (itstool) path: sect4/title
 #: book.translate.xml:5764
 msgid "<function>connect</function>"
-msgstr ""
+msgstr "<function>connect</function>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5766
@@ -10339,7 +10347,7 @@ msgstr ""
 #. (itstool) path: sect4/title
 #: book.translate.xml:5796
 msgid "Our First Client"
-msgstr ""
+msgstr "اولین کارخواه ما"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5798
@@ -10393,6 +10401,46 @@ msgid ""
 "  return 0;\n"
 "}"
 msgstr ""
+"/*\n"
+" * daytime.c\n"
+" *\n"
+" * Programmed by G. Adam Stanislav\n"
+" */\n"
+"#include &lt;stdio.h&gt;\n"
+"#include &lt;string.h&gt;\n"
+"#include &lt;sys/types.h&gt;\n"
+"#include &lt;sys/socket.h&gt;\n"
+"#include &lt;netinet/in.h&gt;\n"
+"\n"
+"int main() {\n"
+"  register int s;\n"
+"  register int bytes;\n"
+"  struct sockaddr_in sa;\n"
+"  char buffer[BUFSIZ+1];\n"
+"\n"
+"  if ((s = socket(PF_INET, SOCK_STREAM, 0)) &lt; 0) {\n"
+"    perror(\"socket\");\n"
+"    return 1;\n"
+"  }\n"
+"\n"
+"  bzero(&amp;sa, sizeof sa);\n"
+"\n"
+"  sa.sin_family = AF_INET;\n"
+"  sa.sin_port = htons(13);\n"
+"  sa.sin_addr.s_addr = htonl((((((192 &lt;&lt; 8) | 43) &lt;&lt; 8) | 244) "
+"&lt;&lt; 8) | 18);\n"
+"  if (connect(s, (struct sockaddr *)&amp;sa, sizeof sa) &lt; 0) {\n"
+"    perror(\"connect\");\n"
+"    close(s);\n"
+"    return 2;\n"
+"  }\n"
+"\n"
+"  while ((bytes = read(s, buffer, BUFSIZ)) &gt; 0)\n"
+"    write(1, buffer, bytes);\n"
+"\n"
+"  close(s);\n"
+"  return 0;\n"
+"}"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5842
@@ -10400,6 +10448,8 @@ msgid ""
 "Go ahead, enter it in your editor, save it as <filename>daytime.c</"
 "filename>, then compile and run it:"
 msgstr ""
+"بفرمایید، آن را در ویرایشگر خود وارد کنید،به‌عنوان <filename>daytime.c</"
+"filename> ذخیره کنید، سپس آن را همگردانی و اجرا کنید:"
 
 #. (itstool) path: sect4/screen
 #: book.translate.xml:5846
@@ -10411,6 +10461,11 @@ msgid ""
 "52079 01-06-19 02:29:25 50 0 1 543.9 UTC(NIST) *\n"
 "<prompt>%</prompt>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cc -O3 -o daytime daytime.c</userinput>\n"
+"<prompt>%</prompt> <userinput>./daytime</userinput>\n"
+"\n"
+"52079 01-06-19 02:29:25 50 0 1 543.9 UTC(NIST) *\n"
+"<prompt>%</prompt>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5852
@@ -10418,11 +10473,13 @@ msgid ""
 "In this case, the date was June 19, 2001, the time was 02:29:25 "
 "<acronym>UTC</acronym>. Naturally, your results will vary."
 msgstr ""
+"در این مورد، تاریخ ۱۹ ژوئن سال ۲۰۰۱، و زمان ۰۲:۲۹:۲۵ به وقت <acronym>UTC</"
+"acronym> بود. طبیعتاً، نتیجهٔ شما متفاوت خواهد بود."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:5859
 msgid "Server Functions"
-msgstr ""
+msgstr "توابع کارساز"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:5861
@@ -10442,7 +10499,7 @@ msgstr ""
 #. (itstool) path: sect4/title
 #: book.translate.xml:5873
 msgid "<function>bind</function>"
-msgstr ""
+msgstr "<function>bind</function>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5875
@@ -10466,7 +10523,7 @@ msgstr ""
 #: book.translate.xml:5886
 #, no-wrap
 msgid "int bind(int s, const struct sockaddr *addr, socklen_t addrlen);"
-msgstr ""
+msgstr "int bind(int s, const struct sockaddr *addr, socklen_t addrlen);"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5888
@@ -10483,7 +10540,7 @@ msgstr ""
 #: book.translate.xml:5897
 #, no-wrap
 msgid "#define\tINADDR_ANY\t\t(u_int32_t)0x00000000"
-msgstr ""
+msgstr "#define\tINADDR_ANY\t\t(u_int32_t)0x00000000"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5899
@@ -10502,7 +10559,7 @@ msgstr ""
 #: book.translate.xml:5907
 msgctxt "_"
 msgid "external ref='sockets/sainserv' md5='__failed__'"
-msgstr ""
+msgstr "external ref='sockets/sainserv' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: book.translate.xml:5911
@@ -10519,6 +10576,16 @@ msgid ""
 "12 |                 0                 |\n"
 "   +-----------------------------------+"
 msgstr ""
+"        0        1        2       3\n"
+"   +--------+--------+--------+--------+\n"
+" 0 |    0   |   2    |    0   |   13   |\n"
+"   +--------+--------+--------+--------+\n"
+" 4 |                 0                 |\n"
+"   +-----------------------------------+\n"
+" 8 |                 0                 |\n"
+"   +-----------------------------------+\n"
+"12 |                 0                 |\n"
+"   +-----------------------------------+"
 
 #. (itstool) path: sect4/mediaobject
 #: book.translate.xml:5905
@@ -10531,7 +10598,7 @@ msgstr ""
 #. (itstool) path: sect4/title
 #: book.translate.xml:5930
 msgid "<function>listen</function>"
-msgstr ""
+msgstr "<function>listen</function>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5932
@@ -10554,7 +10621,7 @@ msgstr ""
 #: book.translate.xml:5943
 #, no-wrap
 msgid "int listen(int s, int backlog);"
-msgstr ""
+msgstr "int listen(int s, int backlog);"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5945
@@ -10568,7 +10635,7 @@ msgstr ""
 #. (itstool) path: sect4/title
 #: book.translate.xml:5953
 msgid "<function>accept</function>"
-msgstr ""
+msgstr "<function>accept</function>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5955
@@ -10590,7 +10657,7 @@ msgstr ""
 #: book.translate.xml:5963
 #, no-wrap
 msgid "int accept(int s, struct sockaddr *addr, socklen_t *addrlen);"
-msgstr ""
+msgstr "int accept(int s, struct sockaddr *addr, socklen_t *addrlen);"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5965
@@ -10627,7 +10694,7 @@ msgstr ""
 #. (itstool) path: sect4/title
 #: book.translate.xml:5987
 msgid "Our First Server"
-msgstr ""
+msgstr "اولین کارساز ما"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5989
@@ -10636,6 +10703,8 @@ msgid ""
 "Not only do we have more sockets functions to use, but we need to write it "
 "as a daemon."
 msgstr ""
+"اولین کارساز ما تا حدی از اولین کارخواه ما پیچیده‌تر است: نه تنها توابع سوکت "
+"بیشتری برای استفاده داریم، بلکه باید به شکل یک دیمِن آن را بنویسیم."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5994
@@ -10745,6 +10814,95 @@ msgid ""
 "    }\n"
 "}"
 msgstr ""
+"/*\n"
+" * daytimed - a port 13 server\n"
+" *\n"
+" * Programmed by G. Adam Stanislav\n"
+" * June 19, 2001\n"
+" */\n"
+"#include &lt;stdio.h&gt;\n"
+"#include &lt;string.h&gt;\n"
+"#include &lt;time.h&gt;\n"
+"#include &lt;unistd.h&gt;\n"
+"#include &lt;sys/types.h&gt;\n"
+"#include &lt;sys/socket.h&gt;\n"
+"#include &lt;netinet/in.h&gt;\n"
+"\n"
+"#define BACKLOG 4\n"
+"\n"
+"int main() {\n"
+"    register int s, c;\n"
+"    int b;\n"
+"    struct sockaddr_in sa;\n"
+"    time_t t;\n"
+"    struct tm *tm;\n"
+"    FILE *client;\n"
+"\n"
+"    if ((s = socket(PF_INET, SOCK_STREAM, 0)) &lt; 0) {\n"
+"        perror(\"socket\");\n"
+"        return 1;\n"
+"    }\n"
+"\n"
+"    bzero(&amp;sa, sizeof sa);\n"
+"\n"
+"    sa.sin_family = AF_INET;\n"
+"    sa.sin_port   = htons(13);\n"
+"\n"
+"    if (INADDR_ANY)\n"
+"        sa.sin_addr.s_addr = htonl(INADDR_ANY);\n"
+"\n"
+"    if (bind(s, (struct sockaddr *)&amp;sa, sizeof sa) &lt; 0) {\n"
+"        perror(\"bind\");\n"
+"        return 2;\n"
+"    }\n"
+"\n"
+"    switch (fork()) {\n"
+"        case -1:\n"
+"            perror(\"fork\");\n"
+"            return 3;\n"
+"            break;\n"
+"        default:\n"
+"            close(s);\n"
+"            return 0;\n"
+"            break;\n"
+"        case 0:\n"
+"            break;\n"
+"    }\n"
+"\n"
+"    listen(s, BACKLOG);\n"
+"\n"
+"    for (;;) {\n"
+"        b = sizeof sa;\n"
+"\n"
+"        if ((c = accept(s, (struct sockaddr *)&amp;sa, &amp;b)) &lt; 0) {\n"
+"            perror(\"daytimed accept\");\n"
+"            return 4;\n"
+"        }\n"
+"\n"
+"        if ((client = fdopen(c, \"w\")) == NULL) {\n"
+"            perror(\"daytimed fdopen\");\n"
+"            return 5;\n"
+"        }\n"
+"\n"
+"        if ((t = time(NULL)) &lt; 0) {\n"
+"            perror(\"daytimed time\");\n"
+"\n"
+"            return 6;\n"
+"        }\n"
+"\n"
+"        tm = gmtime(&amp;t);\n"
+"        fprintf(client, \"%.4i-%.2i-%.2iT%.2i:%.2i:%.2iZ\\n"
+"\",\n"
+"            tm-&gt;tm_year + 1900,\n"
+"            tm-&gt;tm_mon + 1,\n"
+"            tm-&gt;tm_mday,\n"
+"            tm-&gt;tm_hour,\n"
+"            tm-&gt;tm_min,\n"
+"            tm-&gt;tm_sec);\n"
+"\n"
+"        fclose(client);\n"
+"    }\n"
+"}"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:6093
@@ -10802,6 +10960,7 @@ msgid ""
 "Finally, the daemon starts an endless loop, which performs the following "
 "steps:"
 msgstr ""
+"سرانجام، دیمِن یک حلقه بی‌نهایت را آغاز می‌کند، که مراحل زیر را انجام می‌دهد:"
 
 #. (itstool) path: step/para
 #: book.translate.xml:6136
@@ -10877,6 +11036,32 @@ msgid ""
 "                        |   | Close  |\n"
 "                        |&lt;--------+"
 msgstr ""
+"+-----------------+\n"
+"|  Create Socket  |\n"
+"+-----------------+\n"
+"          |\n"
+"+-----------------+\n"
+"|    Bind Port    |       Daemon Process\n"
+"+-----------------+\n"
+"          |                 +--------+\n"
+"          +-------------+--&gt;|  Init  |\n"
+"          |             |   +--------+\n"
+"+-----------------+     |         |\n"
+"|        Exit     |     |   +--------+\n"
+"+-----------------+     |   | Listen |\n"
+"                        |   +--------+\n"
+"                        |         |\n"
+"                        |   +--------+\n"
+"                        |   | Accept |\n"
+"                        |   +--------+\n"
+"                        |         |\n"
+"                        |   +--------+\n"
+"                        |   | Serve  |\n"
+"                        |   +--------+\n"
+"                        |         |\n"
+"                        |   +--------+\n"
+"                        |   | Close  |\n"
+"                        |&lt;--------+"
 
 #. (itstool) path: sect4/mediaobject
 #: book.translate.xml:6166
@@ -10953,6 +11138,9 @@ msgid ""
 "bind: Permission denied\n"
 "<prompt>%</prompt>"
 msgstr ""
+"<prompt>%</prompt> <userinput>./daytimed</userinput>\n"
+"bind: Permission denied\n"
+"<prompt>%</prompt>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:6256
@@ -10966,7 +11154,7 @@ msgstr ""
 #. (itstool) path: sect4/para
 #: book.translate.xml:6263
 msgid "Try again, this time as the superuser:"
-msgstr ""
+msgstr "دوباره امتحان کنید، این بار به‌عنوان ابرکاربر:"
 
 #. (itstool) path: sect4/screen
 #: book.translate.xml:6265
@@ -10975,11 +11163,13 @@ msgid ""
 "<prompt>#</prompt> <userinput>./daytimed</userinput>\n"
 "<prompt>#</prompt>"
 msgstr ""
+"<prompt>#</prompt> <userinput>./daytimed</userinput>\n"
+"<prompt>#</prompt>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:6268
 msgid "What... Nothing? Let us try again:"
-msgstr ""
+msgstr "عجب... هیچ چیز؟ بگذارید مجدد امتحان کنیم:"
 
 #. (itstool) path: sect4/screen
 #: book.translate.xml:6270
@@ -10990,6 +11180,10 @@ msgid ""
 "bind: Address already in use\n"
 "<prompt>#</prompt>"
 msgstr ""
+"<prompt>#</prompt> <userinput>./daytimed</userinput>\n"
+"\n"
+"bind: Address already in use\n"
+"<prompt>#</prompt>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:6275
@@ -11022,6 +11216,16 @@ msgid ""
 "Connection closed by foreign host.\n"
 "<prompt>%</prompt>"
 msgstr ""
+"<prompt>%</prompt> <userinput>telnet localhost 13</userinput>\n"
+"\n"
+"Trying ::1...\n"
+"telnet: connect to address ::1: Connection refused\n"
+"Trying 127.0.0.1...\n"
+"Connected to localhost.\n"
+"Escape character is '^]'.\n"
+"2001-06-19T21:04:42Z\n"
+"Connection closed by foreign host.\n"
+"<prompt>%</prompt>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:6296
@@ -11057,11 +11261,23 @@ msgid ""
 "Connection closed by foreign host.\n"
 "<prompt>%</prompt>"
 msgstr ""
+"<prompt>%</prompt> <userinput>who</userinput>\n"
+"\n"
+"whizkid          ttyp0   Jun 19 16:59   (216.127.220.143)\n"
+"xxx              ttyp1   Jun 19 16:06   (xx.xx.xx.xx)\n"
+"<prompt>%</prompt> <userinput>telnet 216.127.220.143 13</userinput>\n"
+"\n"
+"Trying 216.127.220.143...\n"
+"Connected to r47.bfm.org.\n"
+"Escape character is '^]'.\n"
+"2001-06-19T21:31:11Z\n"
+"Connection closed by foreign host.\n"
+"<prompt>%</prompt>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:6320
 msgid "Again, it worked. Will it work using the domain name?"
-msgstr ""
+msgstr "باز هم کار کرد. آیا با استفاده از نام دامنه هم کار خواهد کرد؟"
 
 #. (itstool) path: sect4/screen
 #: book.translate.xml:6323
@@ -11076,6 +11292,14 @@ msgid ""
 "Connection closed by foreign host.\n"
 "<prompt>%</prompt>"
 msgstr ""
+"<prompt>%</prompt> <userinput>telnet r47.bfm.org 13</userinput>\n"
+"\n"
+"Trying 216.127.220.143...\n"
+"Connected to r47.bfm.org.\n"
+"Escape character is '^]'.\n"
+"2001-06-19T21:31:40Z\n"
+"Connection closed by foreign host.\n"
+"<prompt>%</prompt>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:6332
@@ -11105,7 +11329,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:6355
 msgid "<function>gethostbyname</function>"
-msgstr ""
+msgstr "<function>gethostbyname</function>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6357
@@ -11125,6 +11349,8 @@ msgid ""
 "struct hostent * gethostbyname(const char *name);\n"
 "struct hostent * gethostbyname2(const char *name, int af);"
 msgstr ""
+"struct hostent * gethostbyname(const char *name);\n"
+"struct hostent * gethostbyname2(const char *name, int af);"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6365
@@ -11199,6 +11425,57 @@ msgid ""
 "  return 0;\n"
 "}"
 msgstr ""
+"/*\n"
+" * daytime.c\n"
+" *\n"
+" * Programmed by G. Adam Stanislav\n"
+" * 19 June 2001\n"
+" */\n"
+"#include &lt;stdio.h&gt;\n"
+"#include &lt;string.h&gt;\n"
+"#include &lt;sys/types.h&gt;\n"
+"#include &lt;sys/socket.h&gt;\n"
+"#include &lt;netinet/in.h&gt;\n"
+"#include &lt;netdb.h&gt;\n"
+"\n"
+"int main(int argc, char *argv[]) {\n"
+"  register int s;\n"
+"  register int bytes;\n"
+"  struct sockaddr_in sa;\n"
+"  struct hostent *he;\n"
+"  char buf[BUFSIZ+1];\n"
+"  char *host;\n"
+"\n"
+"  if ((s = socket(PF_INET, SOCK_STREAM, 0)) &lt; 0) {\n"
+"    perror(\"socket\");\n"
+"    return 1;\n"
+"  }\n"
+"\n"
+"  bzero(&amp;sa, sizeof sa);\n"
+"\n"
+"  sa.sin_family = AF_INET;\n"
+"  sa.sin_port = htons(13);\n"
+"\n"
+"  host = (argc &gt; 1) ? (char *)argv[1] : \"time.nist.gov\";\n"
+"\n"
+"  if ((he = gethostbyname(host)) == NULL) {\n"
+"    herror(host);\n"
+"    return 2;\n"
+"  }\n"
+"\n"
+"  bcopy(he-&gt;h_addr_list[0],&amp;sa.sin_addr, he-&gt;h_length);\n"
+"\n"
+"  if (connect(s, (struct sockaddr *)&amp;sa, sizeof sa) &lt; 0) {\n"
+"    perror(\"connect\");\n"
+"    return 3;\n"
+"  }\n"
+"\n"
+"  while ((bytes = read(s, buf, BUFSIZ)) &gt; 0)\n"
+"    write(1, buf, bytes);\n"
+"\n"
+"  close(s);\n"
+"  return 0;\n"
+"}"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6428
@@ -11234,6 +11511,12 @@ msgid ""
 "2001-06-20T04:02:35Z\n"
 "<prompt>%</prompt>"
 msgstr ""
+"<prompt>%</prompt> <userinput>daytime ; daytime localhost</userinput>\n"
+"\n"
+"\n"
+"52080 01-06-20 04:02:33 50 0 0 390.2 UTC(NIST) *\n"
+"2001-06-20T04:02:35Z\n"
+"<prompt>%</prompt>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6452
@@ -11245,7 +11528,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:6457
 msgid "<function>getservbyname</function>"
-msgstr ""
+msgstr "<function>getservbyname</function>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6459
@@ -11260,7 +11543,7 @@ msgstr ""
 #: book.translate.xml:6464
 #, no-wrap
 msgid "struct servent * getservbyname(const char *name, const char *proto);"
-msgstr ""
+msgstr "struct servent * getservbyname(const char *name, const char *proto);"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6466
@@ -11289,6 +11572,14 @@ msgid ""
 "  }\n"
 "  sa.sin_port = se-&gt;s_port;"
 msgstr ""
+"struct servent *se;\n"
+"  ...\n"
+"  if ((se = getservbyname(\"daytime\", \"tcp\")) == NULL {\n"
+"    fprintf(stderr, \"Cannot determine which port to use.\\n"
+"\");\n"
+"    return 7;\n"
+"  }\n"
+"  sa.sin_port = se-&gt;s_port;"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6482
@@ -11330,7 +11621,7 @@ msgstr ""
 #: book.translate.xml:6508
 msgctxt "_"
 msgid "external ref='sockets/serv2' md5='__failed__'"
-msgstr ""
+msgstr "external ref='sockets/serv2' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: book.translate.xml:6512
@@ -11370,6 +11661,39 @@ msgid ""
 "                                          |      Exit        |\n"
 "                                          +------------------+"
 msgstr ""
+"+-----------------+\n"
+"|  Create Socket  |\n"
+"+-----------------+\n"
+"          |\n"
+"+-----------------+\n"
+"|    Bind Port    |       Daemon Process\n"
+"+-----------------+\n"
+"          |                 +--------+\n"
+"          +-------------+--&gt;|  Init  |\n"
+"          |             |   +--------+\n"
+"+-----------------+     |         |\n"
+"|        Exit     |     |   +--------+\n"
+"+-----------------+     |   | Listen |\n"
+"                        |   +--------+\n"
+"                        |         |\n"
+"                        |   +--------+\n"
+"                        |   | Accept |\n"
+"                        |   +--------+\n"
+"                        |         |       +------------------+\n"
+"                        |         +------&gt;| Close Top Socket |\n"
+"                        |         |       +------------------+\n"
+"                        |   +--------+             |\n"
+"                        |   | Close  |    +------------------+\n"
+"                        |   +--------+    |     Serve        |\n"
+"                        |         |       +------------------+\n"
+"                        |&lt;--------+                |\n"
+"                                          +------------------+\n"
+"                                          | Close Acc Socket |\n"
+"                            +--------+    +------------------+\n"
+"                            | Signal |             |\n"
+"                            +--------+    +------------------+\n"
+"                                          |      Exit        |\n"
+"                                          +------------------+"
 
 #. (itstool) path: sect1/mediaobject
 #: book.translate.xml:6506
