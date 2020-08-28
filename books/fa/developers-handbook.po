@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-28 15:04+0000\n"
+"PO-Revision-Date: 2020-08-29 01:20+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -11777,7 +11777,7 @@ msgstr "داخلی‌های IPv6"
 #. (itstool) path: info/title
 #: book.translate.xml:6615
 msgid "IPv6/IPsec Implementation"
-msgstr ""
+msgstr "پیاده‌سازی IPv6/IPsec"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:6618
@@ -11795,16 +11795,19 @@ msgid ""
 "These functionalities are derived from <link xlink:href=\"http://www.kame."
 "net/\">KAME project</link>"
 msgstr ""
+"این بخش باید داخلی‌های مرتبط با پیاده‌سازی IPv6 و IPsec را توضیح دهد. این "
+"کارکردها از <link xlink:href=\"http://www.kame.net/\">KAME project</link> "
+"مشتق شده‌اند"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:6634
 msgid "IPv6"
-msgstr ""
+msgstr "IPv6"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6637
 msgid "Conformance"
-msgstr ""
+msgstr "انطباق"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6639
@@ -11814,6 +11817,10 @@ msgid ""
 "documents below (<emphasis>NOTE</emphasis>: this is not a complete list - "
 "this is too hard to maintain...)."
 msgstr ""
+"توابع مربوط به IPv6 منطبق با، یا سعی بر تطابق با آخرین مجموعه از مشخصات IPv6 "
+"دارد. برای ارجاعات بعدی برخی مستندات مرتبط را در قسمت پایین فهرست می‌کنیم "
+"(<emphasis>توجه</emphasis>: این یک فهرست کامل نیست - حفظ آن بسیار سخت "
+"است...)."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6645
@@ -11821,6 +11828,8 @@ msgid ""
 "For details please refer to specific chapter in the document, RFCs, manual "
 "pages, or comments in the source code."
 msgstr ""
+"برای جزئیات خواهشمند است به فصل مشخص شده در مستندات، RFC ها، صفحات راهنما، "
+"یا توضیحات موجود در کد منبع رجوع کنید."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6649
@@ -11831,11 +11840,16 @@ msgid ""
 "University of New Hampshire IOL tests (<uri xlink:href=\"http://www.iol.unh."
 "edu/\">http://www.iol.unh.edu/</uri>) in the past, with our past snapshots."
 msgstr ""
+"آزمون‌های انطباق در پروژهٔ TAHI بر روی کیت KAME STABLE اجرا شده‌اند. نتایج "
+"آن در <uri xlink:href=\"http://www.tahi.org/report/KAME/\">http://www.tahi."
+"org/report/KAME/</uri> قابل مشاهده است. ما همچنین در گذشته، با تصاویر گذشتهٔ "
+"خود در آزمون‌های IOL در دانشگاه نیوهمپشر (<uri xlink:href=\"http://www.iol."
+"unh.edu/\">http://www.iol.unh.edu/</uri>) شرکت کردیم."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6656
 msgid "RFC1639: FTP Operation Over Big Address Records (FOOBAR)"
-msgstr ""
+msgstr "RFC1639: FTP Operation Over Big Address Records (FOOBAR)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6660 book.translate.xml:6761
@@ -11843,26 +11857,28 @@ msgid ""
 "RFC2428 is preferred over RFC1639. FTP clients will first try RFC2428, then "
 "RFC1639 if failed."
 msgstr ""
+"RFC2428 به RFC1639 ترجیح داده می‌شود. کارخواهان FTP ابتدا RFC2428 را امتحان "
+"می‌کنند، سپس چنانچه ناموفق بود به سراغ RFC1639 می‌روند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6668
 msgid "RFC1886: DNS Extensions to support IPv6"
-msgstr ""
+msgstr "RFC1886: افزونه‌های سامانهٔ نام دامنه (DNS) برای پشتیبانی از IPv6"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6672
 msgid "RFC1933: Transition Mechanisms for IPv6 Hosts and Routers"
-msgstr ""
+msgstr "RFC1933: سازوکارهای انتقال برای میزبان‌ها و مسیریاب‌های IPv6"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6676
 msgid "IPv4 compatible address is not supported."
-msgstr ""
+msgstr "نشانی سازگار با IPv4 پشتیبانی نمی‌شود."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6679
 msgid "automatic tunneling (described in 4.3 of this RFC) is not supported."
-msgstr ""
+msgstr "تونل‌زنی خودکار (توصیف شده در 4.3 از همین RFC) پشتیبانی نمی‌شود."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6683
@@ -11872,26 +11888,32 @@ msgid ""
 "way, and it covers \"configured tunnel\" described in the spec. See <link "
 "linkend=\"gif\">23.5.1.5</link> in this document for details."
 msgstr ""
+"رابط "
+"<citerefentry><refentrytitle>gif</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> تونل‌های IPv[46]-over-IPv[46] را به روشی عمومی پیاده‌سازی "
+"می‌کند، و \"تونل پیکربندی شده\" را که در مشخصات توصیف شده است پوشش می‌دهد. "
+"<link linkend=\"gif\">23.5.1.5</link> را در همین مستند برای جزئیات بیشتر "
+"ببینید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6693
 msgid "RFC1981: Path MTU Discovery for IPv6"
-msgstr ""
+msgstr "RFC1981: Path MTU Discovery برای IPv6"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6697
 msgid "RFC2080: RIPng for IPv6"
-msgstr ""
+msgstr "RFC2080: RIPng برای IPv6"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6700
 msgid "usr.sbin/route6d support this."
-msgstr ""
+msgstr "usr.sbin/route6d این را پشتیبانی می‌کند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6706
 msgid "RFC2292: Advanced Sockets API for IPv6"
-msgstr ""
+msgstr "RFC2292: رابط‌ برنامه‌نویسی کاربردی سوکت‌های پیشرفته برای IPv6"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6709
@@ -11899,11 +11921,13 @@ msgid ""
 "For supported library functions/kernel APIs, see <filename>sys/netinet6/"
 "ADVAPI</filename>."
 msgstr ""
+"برای رابط‌‌های برنامه‌نویسی کاربردی کتابخانهٔ توابع/هستهٔ پشتیبانی‌شده، "
+"<filename>sys/netinet6/ADVAPI</filename> را ببینید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6716
 msgid "RFC2362: Protocol Independent Multicast-Sparse Mode (PIM-SM)"
-msgstr ""
+msgstr "RFC2362: Protocol Independent Multicast-Sparse Mode (PIM-SM)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6720
@@ -11911,6 +11935,8 @@ msgid ""
 "RFC2362 defines packet formats for PIM-SM. <filename>draft-ietf-pim-ipv6-01."
 "txt</filename> is written based on this."
 msgstr ""
+"RFC2362 قالب‌های بسته برای PIM-SM را مشخص می‌کند. <filename>draft-ietf-pim-"
+"ipv6-01.txt</filename> بر همین اساس نوشته شده است."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6728
