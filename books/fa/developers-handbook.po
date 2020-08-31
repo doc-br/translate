@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-31 16:06+0000\n"
+"PO-Revision-Date: 2020-08-31 21:30+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -12319,6 +12319,12 @@ msgid ""
 "sin6_scope_id is rather vague. If you care about portability of your "
 "application, we suggest you to use advanced API rather than sin6_scope_id."
 msgstr ""
+"برنامه‌های عادی محیط کاربری باید از رابط‌ برنامه‌نویسی کاربردی (API) پیشرفته "
+"(RFC2292) استفاده کنند تا فهرست محدوده، یا فهرست رابط را مشخص کنند. برای "
+"منظور مشابه، عضو sin6_scope_id در ساختار sockaddr_in6 در RFC2553 تعریف شده "
+"است، قوائد معنایی برای sin6_scope_id به‌نسبت مبهم است. اگر به جابجایی‌پذیری "
+"برنامهٔ خود اهمیت می‌دهید، پیشنهاد می‌کنیم از API های پیشرفته به جای "
+"sin6_scope_id استفاده کنید."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7007
@@ -12327,12 +12333,15 @@ msgid ""
 "into 2nd 16bit-word (3rd and 4th byte) in IPv6 address. For example, you may "
 "see something like:"
 msgstr ""
+"در هسته، فهرست رابطی برای نشانی محدود‌شدهٔ link-local داخل دومین کلمهٔ ۱۶-"
+"بیتی (بایت سوم و چهارم) در نشانی IPv6 جاسازی شده است. برای مثال، ممکن است "
+"چیزی مانند این را مشاهده کنید:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:7012
 #, no-wrap
 msgid "\tfe80:1::200:f8ff:fe01:6317"
-msgstr ""
+msgstr "\tfe80:1::200:f8ff:fe01:6317"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7014
@@ -12343,6 +12352,10 @@ msgid ""
 "identify IPv6 link local addresses over multiple interfaces effectively and "
 "with only a little code change."
 msgstr ""
+"در جدول مسیرگزینی و ساختار نشانی رابط (struct in6_ifaddr). نشانی بالا یک "
+"نشانی یونیکست link-local است که متعلق به یک رابط شبکه است که شناسانهٔ رابط "
+"آن ۱ است. فهرست جاسازی شده این امکان را به ما می‌دهد تا نشانی‌های IPv6 link "
+"local را تنها با کمی تغییر در کد نسبت به رابط‌های مختلف شناسایی کنیم."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7021
@@ -12396,7 +12409,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:7058
 msgid "Plug and Play"
-msgstr ""
+msgstr "اتصال و اجرا کردن"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7060
@@ -12411,7 +12424,7 @@ msgstr ""
 #. (itstool) path: sect4/title
 #: book.translate.xml:7069
 msgid "Assignment of link-local, and special addresses"
-msgstr ""
+msgstr "تخصیص link-local، و نشانی‌های ویژه"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:7072
