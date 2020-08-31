@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-31 15:15+0000\n"
+"PO-Revision-Date: 2020-08-31 16:06+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -12255,6 +12255,8 @@ msgid ""
 "neighbor cache handling on medium without link-layer address (we need a "
 "neighbor cache entry for IsRouter bit)"
 msgstr ""
+"رسیدگی به کَش همسایه در حد متوسط بدون نشانی سطح پیوند (برای قسمت IsRouter ما "
+"نیاز به یک ورودی کَش همسایه داریم)"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6965
@@ -12263,6 +12265,9 @@ msgid ""
 "ipngwg mailing list. For more details, see the comments in the source code "
 "and email thread started from (IPng 7155), dated Feb 6 1999."
 msgstr ""
+"برای اولین مورد، ما راه‌حل جایگزین را بر اساس مباحثی که در فهرست پست‌سپاری "
+"IETF ipngwg صورت گرفت پیاده‌سازی کردیم. برای جزئیات بیشتر، توضیحات کد منبع و "
+"بند ایمیلی را که از (IPng 7155) شروع شده است، به تاریخ ۶ فوریه ۱۹۹۹۹، ببینید."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6970
@@ -12288,7 +12293,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:6989
 msgid "Scope Index"
-msgstr ""
+msgstr "فهرست محدوده"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6991
@@ -12299,6 +12304,11 @@ msgid ""
 "ambiguous to the kernel, and kernel will not be able to determine the "
 "outbound interface for a packet."
 msgstr ""
+"IPv6 از نشانی‌های محدود‌شده استفاده می‌کند. در نتیجه، تعیین فهرست محدوده با "
+"یک نشانی IPv6 بسیار مهم است (فهرست رابط برای نشانی link-local)، یا فهرست "
+"سایت برای نشانی site-local). بدون فهرست محدود‌شده، نشانی محدود‌شدهٔ IPv6 "
+"نسبت به هسته مبهم است، و هسته قادر به تعیین رابط بیرونی برای یک بسته نخواهد "
+"بود."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6999
