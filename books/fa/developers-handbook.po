@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-08-31 21:30+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"PO-Revision-Date: 2020-09-01 15:16+0000\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -12450,11 +12450,15 @@ msgid ""
 "automatically, when the interface becomes up (IFF_UP). Also, direct route "
 "for the link-local address is added to routing table."
 msgstr ""
+"نشانی link-local در IPv6 توسط نشانی IEEE802 ایجاد شده است (نشانی مک Ethernet)"
+". زمانی‌که رابط بالا می‌آید (IFF_UP)، هر رابط به‌طور خودکار به یک نشانی link-"
+"local تخصیص داده می‌شود. همچنین، مسیر مستقیم برای نشانی link-local به جدول "
+"مسیرگزینی اضافه شده است."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:7078
 msgid "Here is an output of netstat command:"
-msgstr ""
+msgstr "این یک خروجی از دستور netstat است:"
 
 #. (itstool) path: sect4/screen
 #: book.translate.xml:7080
@@ -12465,6 +12469,11 @@ msgid ""
 "fe80:1::%ed0/64               link#1                    UC          ed0\n"
 "fe80:2::%ep0/64               link#2                    UC          ep0"
 msgstr ""
+"Internet6:\n"
+"Destination                   Gateway                   Flags      Netif "
+"Expire\n"
+"fe80:1::%ed0/64               link#1                    UC          ed0\n"
+"fe80:2::%ep0/64               link#2                    UC          ep0"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:7085
