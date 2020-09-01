@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-01 15:16+0000\n"
+"PO-Revision-Date: 2020-09-01 17:37+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -12485,6 +12485,12 @@ msgid ""
 "will be used as source of link-local address. If it is not suitable for your "
 "usage, you will need to configure the link-local address manually."
 msgstr ""
+"رابط‌هایی که نشانی IEEE802 را دارا نیستند (شبه رابط‌هایی چون رابط‌های تونل، "
+"یا ppp) نشانی IEEE802 را در صورت امکان از سایر رابط‌ها قرض می‌گیرند، مانند "
+"رابط‌های Ethernet. اگر هیچ سخت‌افزار IEEE802 متصل نباشد، یک مقدار شبه تصادفی "
+"به‌عنوان آخرین گزینه، MD5(hostname)، به‌عنوان منبعِ نشانیِ link-local به‌کار "
+"گرفته می‌شود. چنانچه برای مصرف شما مناسب نبود، لازم است تا نشانی link-local "
+"را دستی پیکربندی کنید."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:7094
@@ -12493,6 +12499,9 @@ msgid ""
 "support), link-local address will not be assigned to that interface. See "
 "section 2 for details."
 msgstr ""
+"اگر یک رابط از عهدهٔ رسیدگی به IPv6 بر نیاید (مانند عدم پشتیبانی از "
+"مولتیکست)، نشانی link-local به آن رابط تخصیص داده نمی‌شود. بخش دوم را برای "
+"جزئیات بیشتر ببینید."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:7099
@@ -12508,7 +12517,7 @@ msgstr ""
 #. (itstool) path: sect4/title
 #: book.translate.xml:7110
 msgid "Stateless address autoconfiguration on Hosts"
-msgstr ""
+msgstr "پیکربندی خودکار نشانی بی‌حالت در میزبان‌ها"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:7112
@@ -12519,6 +12528,11 @@ msgid ""
 "ip6.forwarding defines whether this node is router or host (router if it is "
 "1, host if it is 0)."
 msgstr ""
+"در مشخصات IPv6، گره‌ها به دو دسته تقسیم شده‌اند: <emphasis>مسیریاب‌ها</"
+"emphasis> و <emphasis>میزبان‌ها</emphasis>. مسیریاب‌ها بسته‌های خطاب شده به "
+"دیگران را ارسال می‌کنند، میزبان‌ها بسته‌ها را ارسال نمی‌کنند. "
+"net.inet6.ip6.forwarding مسیریاب یا میزبان بودن این گره را معین می‌کند (1 "
+"برای مسیریاب، 0 برای میزبان)."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:7120
@@ -12547,6 +12561,9 @@ msgid ""
 "<citerefentry><refentrytitle>rtadvd</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> daemon."
 msgstr ""
+"برای ایجاد اعلان مسیریاب از یک مسیریاب، از دیمِن "
+"<citerefentry><refentrytitle>rtadvd</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> استفاده کنید."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:7141
@@ -12554,16 +12571,18 @@ msgid ""
 "Note that, IPv6 specification assumes the following items, and nonconforming "
 "cases are left unspecified:"
 msgstr ""
+"توجه داشته باشید، مشخصات IPv6 موارد پیش رو را در نظر می‌گیرد، و موارد "
+"ناسازگار نامعین باقی می‌مانند:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7147
 msgid "Only hosts will listen to router advertisements"
-msgstr ""
+msgstr "تنها میزبان‌ها به اعلان‌های مسیریاب گوش می‌دهند"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7151
 msgid "Hosts have single network interface (except loopback)"
-msgstr ""
+msgstr "میزبان‌ها یک رابط شبکهٔ واحد دارند (به‌جز loopback)"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:7156
@@ -12573,11 +12592,15 @@ msgid ""
 "(nonconforming configuration allowed for those who would like to do some "
 "experiments)."
 msgstr ""
+"از این رو، فعال کردن net.inet6.ip6.accept_rtadv در مسیریاب‌ها یا میزبان چند "
+"رابط غیرعقلانیست. گره‌ای که درست پیکربندی نشده باشد ممکن است به طرز عجیبی "
+"رفتار کند (پیکربندی ناسازگار برای کسانی‌که مایل به انجام چندین آزمایش هستند "
+"مجاز است)."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:7162
 msgid "To summarize the sysctl knob:"
-msgstr ""
+msgstr "برای خلاصه کردن sysctl knob:"
 
 #. (itstool) path: sect4/screen
 #: book.translate.xml:7164
@@ -12595,6 +12618,17 @@ msgid ""
 "\t1\t\t1\t\tinvalid, or experimental\n"
 "\t\t\t\t\t(out-of-scope of spec)"
 msgstr ""
+"\taccept_rtadv\tforwarding\trole of the node\n"
+"\t---\t\t---\t\t---\n"
+"\t0\t\t0\t\thost (to be manually configured)\n"
+"\t0\t\t1\t\trouter\n"
+"\t1\t\t0\t\tautoconfigured host\n"
+"\t\t\t\t\t(spec assumes that host has single\n"
+"\t\t\t\t\tinterface only, autoconfigured host\n"
+"\t\t\t\t\twith multiple interface is\n"
+"\t\t\t\t\tout-of-scope)\n"
+"\t1\t\t1\t\tinvalid, or experimental\n"
+"\t\t\t\t\t(out-of-scope of spec)"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:7176
@@ -12612,6 +12646,8 @@ msgid ""
 "See <link linkend=\"neighbor-discovery\">23.5.1.2</link> in the document for "
 "relationship between DAD and autoconfiguration."
 msgstr ""
+"برای رابطهٔ بین DAD و پیکربندی خودکار <link linkend=\"neighbor-discovery\">23"
+".5.1.2</link> را در مستندات ببینید."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:7191
