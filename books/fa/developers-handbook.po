@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-01 21:53+0000\n"
-"Last-Translator: Parsa Samet <qps@irbug.org>\n"
+"PO-Revision-Date: 2020-09-01 23:43+0000\n"
+"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -9345,7 +9345,7 @@ msgstr ""
 #: book.translate.xml:5154
 msgctxt "_"
 msgid "external ref='sockets/slayers' md5='__failed__'"
-msgstr ""
+msgstr "external ref='sockets/slayers' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: book.translate.xml:5158
@@ -9409,7 +9409,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:5191
 msgid "The Sockets Model"
-msgstr ""
+msgstr "پیکر سوکت‌ها"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5193
@@ -9420,6 +9420,11 @@ msgid ""
 "<emphasis>HTTP file</emphasis>, so to speak. It would then be up to us to "
 "extract the <emphasis><acronym>PNG</acronym> file</emphasis> from it."
 msgstr ""
+"سوکت‌های <acronym>BSD</acronym> بر روی الگوی اساسی <trademark class="
+"\"registered\">UNIX</trademark> ساخته شده‌اند: <emphasis>همه چیز پرونده "
+"است.</emphasis> از این رو، در مثال ما، سوکت‌ها برای ما امکان دریافت یک "
+"<emphasis>پروندهٔ HTTP</emphasis> را برای صحبت فراهم می‌کنند. و سپس، استخراج "
+"<emphasis>پروندهٔ <acronym>PNG</acronym></emphasis> از آن به عهدهٔ ماست."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5200
@@ -9442,7 +9447,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:5215
 msgid "Essential Socket Functions"
-msgstr ""
+msgstr "توابع ضروری سوکت"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5217
@@ -9451,11 +9456,14 @@ msgid ""
 "<emphasis>need</emphasis> four to <quote>open</quote> a socket. And in some "
 "cases we only need two."
 msgstr ""
+"اگرچه FreeBSD توابع متنوعی را برای کار با سوکت‌ها در اختیار می‌گذارد، ما "
+"تنها به چهار تابع برای <quote>باز کردن</quote> یک سوکت <emphasis>نیاز</"
+"emphasis> داریم. و در برخی مواقع هم تنها به دو تابع نیاز داریم."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:5223
 msgid "The Client-Server Difference"
-msgstr ""
+msgstr "تفاوت کارخواه-کارساز"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5225
@@ -9463,16 +9471,18 @@ msgid ""
 "Typically, one of the ends of a socket-based data communication is a "
 "<emphasis>server</emphasis>, the other is a <emphasis>client</emphasis>."
 msgstr ""
+"به‌طور معمول، یکی از دو سر ارتباطات دادهٔ سوکت محور یک <emphasis>کارساز</"
+"emphasis> است و دیگری یک <emphasis>کارخواه</emphasis> است."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:5230
 msgid "The Common Elements"
-msgstr ""
+msgstr "عناصر متداور"
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:5233
 msgid "<function>socket</function>"
-msgstr ""
+msgstr "<function>socket</function>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5235
@@ -9481,12 +9491,15 @@ msgid ""
 "<citerefentry><refentrytitle>socket</refentrytitle><manvolnum>2</manvolnum></"
 "citerefentry>. It is declared this way:"
 msgstr ""
+"یک تابع استفاده شده توسط هر دو، کارخواه‌ها و کارسازها، "
+"<citerefentry><refentrytitle>socket</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> است. بدین ترتیب تعریف می‌شود:"
 
 #. (itstool) path: sect4/programlisting
 #: book.translate.xml:5238
 #, no-wrap
 msgid "int socket(int domain, int type, int protocol);"
-msgstr ""
+msgstr "int socket(int domain, int type, int protocol);"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5240
@@ -9511,6 +9524,8 @@ msgid ""
 "Use <constant>PF_INET</constant> for <acronym>UDP</acronym>, <acronym>TCP</"
 "acronym> and other Internet protocols (<acronym>IP</acronym>v4)."
 msgstr ""
+"از <constant>PF_INET</constant> برای <acronym>UDP</acronym>، <acronym>TCP</"
+"acronym> و دیگر قراردادهای اینترنت (<acronym>IP</acronym>v4) استفاده کنید."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5256
@@ -9550,7 +9565,7 @@ msgstr ""
 #. (itstool) path: note/title
 #: book.translate.xml:5282
 msgid "The Unconnected Socket"
-msgstr ""
+msgstr "سوکت نامتصل"
 
 #. (itstool) path: note/para
 #: book.translate.xml:5284
@@ -9741,6 +9756,8 @@ msgid ""
 "The one used for <acronym>IP</acronym> is <symbol>AF_INET</symbol>. It is a "
 "symbol for the constant <constant>2</constant>."
 msgstr ""
+"حالت استفاده شده برای <acronym>IP</acronym> معادل <symbol>AF_INET</symbol> "
+"است. این یک نماد برای مقدار ثابت <constant>2</constant> است."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5390
@@ -9816,6 +9833,16 @@ msgid ""
 "12 |                 0                 |\n"
 "   +-----------------------------------+"
 msgstr ""
+"        0        1        2       3\n"
+"   +--------+--------+-----------------+\n"
+" 0 |    0   | Family |       Port      |\n"
+"   +--------+--------+-----------------+\n"
+" 4 |             IP Address            |\n"
+"   +-----------------------------------+\n"
+" 8 |                 0                 |\n"
+"   +-----------------------------------+\n"
+"12 |                 0                 |\n"
+"   +-----------------------------------+"
 
 #. (itstool) path: sect4/mediaobject
 #: book.translate.xml:5415
@@ -9894,6 +9921,9 @@ msgid ""
 "<textobject> <_:literallayout-1/> </textobject> <textobject> "
 "<phrase>Specific example of sockaddr_in</phrase> </textobject>"
 msgstr ""
+"<imageobject> <imagedata fileref=\"sockets/sainfill\"/> </imageobject> "
+"<textobject> <_:literallayout-1/> </textobject> <textobject> <phrase>مثال "
+"ویژهٔ sockaddr_in</phrase> </textobject>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5480
@@ -10018,6 +10048,9 @@ msgid ""
 "<textobject> <_:literallayout-1/> </textobject> <textobject> "
 "<phrase>sockaddr_in on an Intel system</phrase> </textobject>"
 msgstr ""
+"<imageobject> <imagedata fileref=\"sockets/sainlsb\"/> </imageobject> "
+"<textobject> <_:literallayout-1/> </textobject> <textobject> "
+"<phrase>sockaddr_in بر روی سامانهٔ Intel</phrase> </textobject>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5540
@@ -10067,6 +10100,9 @@ msgid ""
 "<textobject> <_:literallayout-1/> </textobject> <textobject> "
 "<phrase>sockaddr_in on an MSB system</phrase> </textobject>"
 msgstr ""
+"<imageobject> <imagedata fileref=\"sockets/sainmsb\"/> </imageobject> "
+"<textobject> <_:literallayout-1/> </textobject> <textobject> "
+"<phrase>sockaddr_in بر روی یک سامانهٔ MSB</phrase> </textobject>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5565
@@ -10074,6 +10110,8 @@ msgid ""
 "And on a PDP it might look different yet. But the above two are the most "
 "common ways in use today."
 msgstr ""
+"به همین ترتیب بر روی یک PDP هم ممکن است متفاوت باشد. اما امروزه دو حالت "
+"مذکور در بالا رایج‌ترین حالات به شمار می‌آیند."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5568
@@ -10346,7 +10384,7 @@ msgstr ""
 #: book.translate.xml:5770
 #, no-wrap
 msgid "int connect(int s, const struct sockaddr *name, socklen_t namelen);"
-msgstr ""
+msgstr "int connect(int s, const struct sockaddr *name, socklen_t namelen);"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5772
@@ -10388,6 +10426,9 @@ msgid ""
 "time from <systemitem class=\"ipaddress\">192.43.244.18</systemitem> and "
 "print it to <filename>stdout</filename>."
 msgstr ""
+"اکنون برای نوشتن یک کارخواه بسیار ساده که زمان جاری را از <systemitem class="
+"\"ipaddress\">192.43.244.18</systemitem> می‌گیرد و بر روی <filename>stdout</"
+"filename> چاپ می‌کند به اندازهٔ کافی می‌دانیم."
 
 #. (itstool) path: sect4/programlisting
 #: book.translate.xml:5802
@@ -10539,6 +10580,8 @@ msgid ""
 "Ports are like extensions to a phone line: After you dial a number, you dial "
 "the extension to get to a specific person or department."
 msgstr ""
+"درگاه‌ها مانند پسوندهای یک خط تلفن هستند: بعد اینکه شماره‌ای را می‌گیرید، "
+"برای ارتباط با یک شخص یا یک بخش خاص پسوند آن را شماره‌گیری می‌کنید."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5879
@@ -10648,6 +10691,9 @@ msgid ""
 "The server ensures all of that with the <citerefentry><refentrytitle>listen</"
 "refentrytitle><manvolnum>2</manvolnum></citerefentry> function."
 msgstr ""
+"کارساز از همهٔ آن مراحل توسط تابع "
+"<citerefentry><refentrytitle>listen</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> اطمینان حاصل می‌کند."
 
 #. (itstool) path: sect4/programlisting
 #: book.translate.xml:5943
