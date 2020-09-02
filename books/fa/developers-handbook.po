@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-01 23:43+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"PO-Revision-Date: 2020-09-02 17:47+0000\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -12280,6 +12280,12 @@ msgid ""
 "responsibility to check for and recover from DAD failures. The behavior "
 "should be improved in the near future."
 msgstr ""
+"چنانچه DAD (تشخیص نشانی تکراری) کار نکند، نشانی به‌عنوان \"تکراری\" علامت‌"
+"گذاری می‌شود و پیام در syslog (و معمولاً در پیشانه) ایجاد می‌شود. علامت "
+"\"تکراری\" می‌تواند توسط <citerefentry><refentrytitle>ifconfig</refentrytitle"
+"><manvolnum>8</manvolnum></citerefentry> بررسی شود. این وظیفهٔ سرپرستان است "
+"که شکست‌های DAD را بررسی و از آنها بهبود یابند. این رفتار در آینده باید "
+"اصلاح شود."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6939
@@ -12742,6 +12748,12 @@ msgid ""
 "to perform infinite level of tunneling. <emphasis>Please be warned</"
 "emphasis>."
 msgstr ""
+"در دسترس هستند. از <citerefentry><refentrytitle>gifconfig</refentrytitle><man"
+"volnum>8</manvolnum></citerefentry> برای تخصیص منبع فیزیکی (خارجی) و نشانی "
+"مقصد در رابط‌های gif استفاده کنید. پیکربندی که از یک خانواده نشانی برای "
+"سرآیند‌ IP داخلی و خارجی (v4 در v4، یا v6 در v6) استفاده می‌کند خطرناک است. "
+"پیکربندی رابط‌ها و مسیرگزینی جدول‌ها جهت اجرای بی‌نهایت مرحله تونل‌زنی بسیار "
+"آسان است. <emphasis>لطفاً آگاه باشید</emphasis>."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7220
@@ -12751,6 +12763,10 @@ msgid ""
 "<citerefentry><refentrytitle>gif</refentrytitle><manvolnum>4</manvolnum></"
 "citerefentry> for how to configure."
 msgstr ""
+"gif این امکان را دارد که طوری پیکربندی شود تا دوستدار ECN باشد. <link linkend"
+"=\"ipsec-ecn\">23.5.4.5</link> را برای تونل‌های دوستدار ECN ببینید، و "
+"<citerefentry><refentrytitle>gif</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> برای نحوهٔ پیکربندی آنها."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7223
@@ -12760,6 +12776,10 @@ msgid ""
 "manvolnum></citerefentry> carefully. You will need to remove IPv6 link-local "
 "address automatically assigned to the gif interface."
 msgstr ""
+"چنانچه علاقه‌مند به پیکربندی یک تونل IPv4 در IPv6 به‌همراه رابط gif هستید، "
+"<citerefentry><refentrytitle>gif</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> را با دقت بخوانید. لازم خواهد شد نشانی IPv6 link-local را که "
+"به‌طور خودکار به رابط gif تخصیص داده شده است را حذف کنید."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:7230
@@ -12773,6 +12793,9 @@ msgid ""
 "see below). For a given destination, a source IPv6 address is selected by "
 "the following rule:"
 msgstr ""
+"قانون انتخاب منبع فعلی محدوده‌محور است (برخی استثناها وجود دارد - پایین را "
+"ببینید). برای یک مقصد مشخص، نشانی IPv6 منبع توسط قوانین پیش رو انتخاب شده "
+"است:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7239
@@ -12780,6 +12803,8 @@ msgid ""
 "If the source address is explicitly specified by the user (e.g., via the "
 "advanced API), the specified address is used."
 msgstr ""
+"چناچه نشانی منبع به‌صراحت توسط کاربر تعیین شود (برای مثال، توسط یک API "
+"پیشرفته)، آن نشانی تعیین شده به‌کار برده می‌شود."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7245
@@ -12792,7 +12817,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:7250
 msgid "This is the most typical case."
-msgstr ""
+msgstr "این معمول‌ترین حالت است."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7254
@@ -12800,6 +12825,8 @@ msgid ""
 "If there is no address that satisfies the above condition, choose a global "
 "address assigned to one of the interfaces on the sending node."
 msgstr ""
+"چنانچه هیچ نشانی نباشد که شرط بالا را برآورده سازد، یک نشان جهانی که به یکی "
+"از رابط‌های موجود در گره‌های در حال ارسال اختصاص یافته است را انتخاب کنید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7260
@@ -12861,7 +12888,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:7311
 msgid "Jumbo Payload"
-msgstr ""
+msgstr "بستهٔ دادهٔ Jumbo"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7313
@@ -12883,12 +12910,12 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:7324
 msgid "<literal>options \"LARGE_LOMTU\" #To test jumbo payload</literal>"
-msgstr ""
+msgstr "<literal>options \"LARGE_LOMTU\" #To test jumbo payload</literal>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7327
 msgid "and recompile the new kernel."
-msgstr ""
+msgstr "و هستهٔ جدید را دوباره همگردانی کنید."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7329
@@ -12904,7 +12931,7 @@ msgstr ""
 #: book.translate.xml:7335
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>ping6 -b 70000 -s 68000 ::1</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>ping6 -b 70000 -s 68000 ::1</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7337
@@ -12937,6 +12964,10 @@ msgid ""
 "\t\t(snip)\n"
 "\t\t1 with data size &lt; data length"
 msgstr ""
+"<prompt>%</prompt> <userinput>netstat -s -p ip6</userinput>\n"
+"\t  ip6:\n"
+"\t\t(snip)\n"
+"\t\t1 with data size &lt; data length"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7357
@@ -13377,7 +13408,7 @@ msgstr ""
 #. (itstool) path: sect4/title
 #: book.translate.xml:7658
 msgid "unified tcp and inpcb code"
-msgstr ""
+msgstr "کد tcp و inpcb یکپارچه"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:7660
