@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-02 19:48+0000\n"
+"PO-Revision-Date: 2020-09-03 01:47+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -13341,7 +13341,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:7602
 msgid "Comments on initiating side:"
-msgstr ""
+msgstr "توضیحاتی در باب سمت آغازگر:"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7604
@@ -13515,7 +13515,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:7729
 msgid "sockaddr_storage"
-msgstr ""
+msgstr "sockaddr_storage"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7731
@@ -13542,6 +13542,11 @@ msgid ""
 "\t\t/* and bunch of padding */\n"
 "\t};"
 msgstr ""
+"\tstruct sockaddr_storage {\n"
+"\t\tu_char\t__ss_len;\t/* address length */\n"
+"\t\tu_char\t__ss_family;\t/* address family */\n"
+"\t\t/* and bunch of padding */\n"
+"\t};"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7748
