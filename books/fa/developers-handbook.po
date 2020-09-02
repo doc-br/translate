@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-02 19:27+0000\n"
+"PO-Revision-Date: 2020-09-02 19:48+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -13478,11 +13478,13 @@ msgid ""
 "Wildcard AF_INET6 socket grabs IPv4 connection if and only if the following "
 "conditions are satisfied:"
 msgstr ""
+"سوکت Wildcard AF_INET6 اتصال IPv4 را می‌رباید چنانچه تنها شرایط پیش رو "
+"برآورده شده باشد:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7704
 msgid "there is no AF_INET socket that matches the IPv4 connection"
-msgstr ""
+msgstr "هیچ سوکت AF_INET نباشد که متناسب با اتصال IPv4 باشد"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7709
@@ -13490,16 +13492,18 @@ msgid ""
 "the AF_INET6 socket is configured to accept IPv4 traffic, i.e., "
 "getsockopt(IPV6_BINDV6ONLY) returns 0."
 msgstr ""
+"سوکت AF_INET6 پیکربندی شده باشد تا ترافیک IPv4 را بپذیرد، برای مثال: "
+"getsockopt(IPV6_BINDV6ONLY) مقدار 0 را بازگرداند."
 
 #. (itstool) path: sect5/para
 #: book.translate.xml:7715
 msgid "There is no problem with open/close ordering."
-msgstr ""
+msgstr "مشکلی با ترتیب باز/بسته نیست."
 
 #. (itstool) path: sect5/title
 #: book.translate.xml:7719
 msgid "Initiating Side"
-msgstr ""
+msgstr "سمت آغازگر"
 
 #. (itstool) path: sect5/para
 #: book.translate.xml:7721
