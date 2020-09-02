@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-02 17:47+0000\n"
+"PO-Revision-Date: 2020-09-02 19:27+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -13032,12 +13032,12 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:7406
 msgid "TCP code needs a careful update in bunch of places, of course."
-msgstr ""
+msgstr "البته، کد TCP نیاز به یک به‌روزرسانی محتاطانه در چندین بخش دارد."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:7413
 msgid "Loop Prevention in Header Processing"
-msgstr ""
+msgstr "اجتناب از حلقه در پردازش سرآیند"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7415
@@ -13060,7 +13060,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:7436
 msgid "ICMPv6"
-msgstr ""
+msgstr "ICMPv6"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7438
@@ -13073,7 +13073,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:7445
 msgid "Applications"
-msgstr ""
+msgstr "برنامه‌های کاربردی"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7447
@@ -13081,6 +13081,9 @@ msgid ""
 "For userland programming, we support IPv6 socket API as specified in "
 "RFC2553, RFC2292 and upcoming Internet drafts."
 msgstr ""
+"برای برنامه‌نویسی در محیط کاربری، ما رابط‌ برنامه‌نویسی کاربردی سوکت IPv6 را "
+"همانطور که در RFC2553، RFC2292 و پیش‌نویس‌های اینترنت در آینده مشخص شده است "
+"پشتیبانی می‌کنیم."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7451
@@ -13095,11 +13098,20 @@ msgid ""
 "manvolnum></citerefentry>, etc. These applications are protocol independent. "
 "That is, they automatically chooses IPv4 or IPv6 according to DNS."
 msgstr ""
+"TCP/UDP روی IPv6 در دسترس است و کاملاً پایدار است. می‌توانید از <citerefentry"
+"><refentrytitle>telnet</refentrytitle><manvolnum>1</manvolnum></citerefentry>"
+"، <citerefentry><refentrytitle>ftp</refentrytitle><manvolnum>1</manvolnum></c"
+"iterefentry>، <citerefentry><refentrytitle>rlogin</refentrytitle><manvolnum>1"
+"</manvolnum></citerefentry>، <citerefentry><refentrytitle>rsh</refentrytitle>"
+"<manvolnum>1</manvolnum></citerefentry>، <citerefentry><refentrytitle>ssh</re"
+"fentrytitle><manvolnum>1</manvolnum></citerefentry>، و غیره ... لذت ببرید. "
+"این برنامه‌ها مستقل از قرارداد هستند. از این رو، آنها به‌طور خودکار IPv4 یا "
+"IPv6 را مطابق با DNS انتخاب می‌کنند."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:7459
 msgid "Kernel Internals"
-msgstr ""
+msgstr "داخلی‌های هسته"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7461
@@ -13416,6 +13428,8 @@ msgid ""
 "FreeBSD 4.x uses shared tcp code between IPv4 and IPv6 (from sys/netinet/"
 "tcp*) and separate udp4/6 code. It uses unified inpcb structure."
 msgstr ""
+"FreeBSD 4.x از کد مشترک tcp بین IPv4 و IPv4 (از sys/netinet/tcp*) و کد "
+"جداگانهٔ udp4/6 استفاده می‌کند. از ساختار یکپارچهٔ inpcb استفاده می‌کند."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:7664
@@ -13423,6 +13437,8 @@ msgid ""
 "The platform can be configured to support IPv4 mapped address. Kernel "
 "configuration is summarized as follows:"
 msgstr ""
+"بستر می‌تواند پیکربندی شود تا نشانی‌های نگاشت‌شدهٔ IPv4 را پشتیبانی کند. "
+"پیکربندی هسته بدین شکل خلاصه شده است:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7670
@@ -13435,17 +13451,17 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:7677
 msgid "You can disable it on entire system with sysctl like below."
-msgstr ""
+msgstr "می‌توانید آن را بدین شکل با sysctl در کل سامانه غیرفعال کنید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7680
 msgid "<command>sysctl net.inet6.ip6.mapped_addr=0</command>"
-msgstr ""
+msgstr "<command>sysctl net.inet6.ip6.mapped_addr=0</command>"
 
 #. (itstool) path: sect5/title
 #: book.translate.xml:7686
 msgid "Listening Side"
-msgstr ""
+msgstr "سمت گوش‌دادن"
 
 #. (itstool) path: sect5/para
 #: book.translate.xml:7688
