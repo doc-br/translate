@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-03 01:47+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"PO-Revision-Date: 2020-09-03 12:38+0000\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -12399,10 +12399,9 @@ msgid ""
 "outbound interface for a packet."
 msgstr ""
 "IPv6 از نشانی‌های محدود‌شده استفاده می‌کند. در نتیجه، تعیین فهرست محدوده با "
-"یک نشانی IPv6 بسیار مهم است (فهرست رابط برای نشانی link-local)، یا فهرست "
-"سایت برای نشانی site-local). بدون فهرست محدود‌شده، نشانی محدود‌شدهٔ IPv6 "
-"نسبت به هسته مبهم است، و هسته قادر به تعیین رابط بیرونی برای یک بسته نخواهد "
-"بود."
+"یک نشانی IPv6 بسیار مهم است (فهرست رابط برای نشانی link-local، یا فهرست سایت "
+"برای نشانی site-local). بدون فهرست محدود‌شده، نشانی محدود‌شدهٔ IPv6 نسبت به "
+"هسته مبهم است، و هسته قادر به تعیین رابط بیرونی برای یک بسته نخواهد بود."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6999
@@ -12839,6 +12838,9 @@ msgid ""
 "determined by looking up the routing table) that has the same scope as the "
 "destination address, the address is used."
 msgstr ""
+"چنانچه نشانی به رابط بیرونی تخصیص داده شده باشد (که معمولاً‌ با بررسی جدول "
+"مسیرگزینی معین می‌شود) که همان محدودهٔ نشانی مقصد را داراست، نشانی استفاده "
+"شده است."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7250
@@ -12861,6 +12863,9 @@ msgid ""
 "address is site local scope, choose a site local address assigned to one of "
 "the interfaces on the sending node."
 msgstr ""
+"چنانچه هیچ نشانی نباشد که شرط بالا را برآورده سازد، و نشانی مقصد در محدودهٔ "
+"site local است، یک نشانی site local که به یکی از رابط‌ها در گرهٔ در حال "
+"ارسال تخصیص داده شده است را انتخاب کنید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7267
