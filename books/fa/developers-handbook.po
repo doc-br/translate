@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-03 12:38+0000\n"
+"PO-Revision-Date: 2020-09-03 17:02+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -12838,9 +12838,9 @@ msgid ""
 "determined by looking up the routing table) that has the same scope as the "
 "destination address, the address is used."
 msgstr ""
-"چنانچه نشانی به رابط بیرونی تخصیص داده شده باشد (که معمولاً‌ با بررسی جدول "
-"مسیرگزینی معین می‌شود) که همان محدودهٔ نشانی مقصد را داراست، نشانی استفاده "
-"شده است."
+"چنانچه نشانی‌ای به رابط بیرونی تخصیص داده شده باشد (که معمولاً‌ با بررسی "
+"جدول مسیرگزینی معین می‌شود) که همان محدودهٔ نشانی مقصد را داراست، نشانی "
+"استفاده شده است."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7250
@@ -12853,8 +12853,9 @@ msgid ""
 "If there is no address that satisfies the above condition, choose a global "
 "address assigned to one of the interfaces on the sending node."
 msgstr ""
-"چنانچه هیچ نشانی نباشد که شرط بالا را برآورده سازد، یک نشان جهانی که به یکی "
-"از رابط‌های موجود در گره‌های در حال ارسال اختصاص یافته است را انتخاب کنید."
+"چنانچه هیچ نشانی‌ای نباشد که شرط بالا را برآورده سازد، یک نشانی جهانی که به "
+"یکی از رابط‌های موجود در گره‌های در حال ارسال اختصاص یافته است را انتخاب "
+"کنید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7260
@@ -12863,9 +12864,9 @@ msgid ""
 "address is site local scope, choose a site local address assigned to one of "
 "the interfaces on the sending node."
 msgstr ""
-"چنانچه هیچ نشانی نباشد که شرط بالا را برآورده سازد، و نشانی مقصد در محدودهٔ "
-"site local است، یک نشانی site local که به یکی از رابط‌ها در گرهٔ در حال "
-"ارسال تخصیص داده شده است را انتخاب کنید."
+"چنانچه هیچ نشانی‌ای نباشد که شرط بالا را برآورده سازد، و نشانی مقصد در "
+"محدودهٔ site local است، یک نشانی site local که به یکی از رابط‌ها در گرهٔ در "
+"حال ارسال تخصیص داده شده است را انتخاب کنید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7267
@@ -12874,6 +12875,9 @@ msgid ""
 "address associated with the routing table entry for the destination. This is "
 "the last resort, which may cause scope violation."
 msgstr ""
+"چنانچه هیچ نشانی‌ای نباشد که شرط بالا را برآورده سازد، نشانی‌ای را که مرتبط "
+"با ورودی جدول مسیرگزینیِ مقصد است انتخاب کنید. این آخرین چاره است، که ممکن "
+"است باعث نقض محدوده شود."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7274
@@ -12919,7 +12923,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:7311
 msgid "Jumbo Payload"
-msgstr "بستهٔ دادهٔ Jumbo"
+msgstr "بار Jumbo"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7313
@@ -13016,6 +13020,9 @@ msgid ""
 "have no medium (other than loopback) to test this. Contact us if you need "
 "this."
 msgstr ""
+"TCP/UDP بر روی jumbogram در حال حاضر پشتیبانی نمی‌شود. این بدین خاطر است که "
+"ما هیچ وسیله‌ای (به غیر از loopback) برای آزمودن آن ندارم . چنانچه به چنین "
+"چیزی نیاز داشتید ما را در جریان بگذارید."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7367
@@ -13025,6 +13032,10 @@ msgid ""
 "and this makes it real hard to authenticate inbound packet with jumbo "
 "payload option as well as AH)."
 msgstr ""
+"IPsec با jumbogram ها کار نمی‌کند. این به‌خاطر برخی پیچیدگی‌های مشخصاتی در "
+"پشتیبانی از AH با jumbogram هاست (اندازهٔ سرآیندِ AH طولِ بارِ (payload) را "
+"تحت تاثیر قرار می‌دهد، و این مسئله اعتبارسنجی بستهٔ درونی را با گزینهٔ بارِ "
+"jumbo و همچنین AH بسیار سخت می‌کند)."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7373
@@ -13188,6 +13199,9 @@ msgid ""
 "conforms such requirement. In the following example, \"cce0\" violates the "
 "requirement. (For more information, refer to Section 2.)"
 msgstr ""
+"<command>netstat -s -p ip6</command> به شما می‌گوید گردانندهٔ شما با چنین "
+"نیازمندی‌‌ای انطباق دارد یا خیر. در مثال پیش رو، \"cce0\" نیازمندی را نقض می‌"
+"کند. (برای اطلاعات بیشتر، به بخش ۲ رجوع کنید.)"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:7491
@@ -13201,6 +13215,13 @@ msgid ""
 "                3282 one ext mbuf\n"
 "                0 two or more ext mbuf"
 msgstr ""
+"Mbuf statistics:\n"
+"                317 one mbuf\n"
+"                two or more mbuf::\n"
+"                        lo0 = 8\n"
+"\t\t\tcce0 = 10\n"
+"                3282 one ext mbuf\n"
+"                0 two or more ext mbuf"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7499
@@ -13215,12 +13236,12 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:7506
 msgid "Both IP and IP6 reassemble functions never call m_pullup()."
-msgstr ""
+msgstr "هردو توابعِ جمع‌آوریِ IP و IP6 هرگز m_pullup() را فراخوانی نمی‌کنند."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:7511
 msgid "IPv4 Mapped Address and IPv6 Wildcard Socket"
-msgstr ""
+msgstr "نشانی نگاشت‌شدهٔ IPv4 و سوکت IPv6 Wildcard"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7513
@@ -13228,11 +13249,13 @@ msgid ""
 "RFC2553 describes IPv4 mapped address (3.7) and special behavior of IPv6 "
 "wildcard bind socket (3.8). The spec allows you to:"
 msgstr ""
+"RFC2553 نشانی نگاشت‌شدهٔ IPv4 (3.7) و رفتار مخصوص سوکت IPv6 wildcard bind (3."
+"8) را توضیح می‌دهد. مشخصات این اجازه را می‌دهند تا:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7518
 msgid "Accept IPv4 connections by AF_INET6 wildcard bind socket."
-msgstr ""
+msgstr "ارتباطات IPv4 را توسط سوکت AF_INET6 wildcard bind بپذیرید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7522
@@ -13240,6 +13263,8 @@ msgid ""
 "Transmit IPv4 packet over AF_INET6 socket by using special form of the "
 "address like ::ffff:10.1.1.1."
 msgstr ""
+"بستهٔ IPv4 را از طریق قالب ویژه‌ای از نشانی مانند ::ffff:10.1.1.1 بر روی "
+"سوکت AF_INET6 منتقل کنید."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7527
@@ -13248,6 +13273,9 @@ msgid ""
 "layer should behave. Here we call the former one \"listening side\" and the "
 "latter one \"initiating side\", for reference purposes."
 msgstr ""
+"اما خود مشخصات بسیار پیچیده است و نحوهٔ رفتارکردن لایهٔ سوکت را مشخص نمی‌"
+"کند. در اینجا ما برای اهداف مرجع اولی را \"سمت شنونده\" می‌نامیم و دومی را "
+"\"سمت آغازگر\"."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7532
@@ -13255,11 +13283,13 @@ msgid ""
 "You can perform wildcard bind on both of the address families, on the same "
 "port."
 msgstr ""
+"می‌توانید اتصال wildcard را بر روی هر دو خانوادهٔ نشانی اجر کنید، بر روی یک "
+"پورت."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7535
 msgid "The following table show the behavior of FreeBSD 4.x."
-msgstr ""
+msgstr "جدول پیش رو رفتار FreeBSD 4.x را نشان می‌دهد."
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:7538
@@ -13272,6 +13302,12 @@ msgid ""
 "FreeBSD 4.x     configurable            supported\n"
 "                default: enabled"
 msgstr ""
+"listening side          initiating side\n"
+"                (AF_INET6 wildcard      (connection to ::ffff:10.1.1.1)\n"
+"                socket gets IPv4 conn.)\n"
+"                ---                     ---\n"
+"FreeBSD 4.x     configurable            supported\n"
+"                default: enabled"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7545
@@ -13279,11 +13315,12 @@ msgid ""
 "The following sections will give you more details, and how you can configure "
 "the behavior."
 msgstr ""
+"بخش‌های پیش رو، جزئیات بیشتر و چگونگی پیکربندی رفتار را به شما نشان می‌دهد."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7548
 msgid "Comments on listening side:"
-msgstr ""
+msgstr "توضیحاتی در باب سمت شنونده:"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7550
@@ -13306,6 +13343,8 @@ msgid ""
 "If a server application would like to accept IPv4 and IPv6 connections, "
 "there will be two alternatives."
 msgstr ""
+"اگر یک برنامهٔ کارساز بخواهد ارتباطات IPv4 و IPv6 را بپذیرد، دو گزینه وجود "
+"خواهد داشت."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7566
@@ -13352,6 +13391,9 @@ msgid ""
 "<citerefentry><refentrytitle>setsockopt</refentrytitle><manvolnum>2</"
 "manvolnum></citerefentry> option, IPV6_BINDV6ONLY, used like below."
 msgstr ""
+"به‌منظور برطرف کردن آسان این مسئله، گزینهٔ وابسته به سامانهٔ <citerefentry><r"
+"efentrytitle>setsockopt</refentrytitle><manvolnum>2</manvolnum></citerefentry"
+">، IPV6_BINDV6ONLY، که بدین شکل استفاده می‌شود."
 
 #. (itstool) path: sect3/programlisting
 #. (itstool) path: sect5/programlisting
@@ -13363,11 +13405,17 @@ msgid ""
 "\tsetsockopt(s, IPPROTO_IPV6, IPV6_BINDV6ONLY,\n"
 "\t\t   (char *)&amp;on, sizeof (on)) &lt; 0));"
 msgstr ""
+"\tint on;\n"
+"\n"
+"\tsetsockopt(s, IPPROTO_IPV6, IPV6_BINDV6ONLY,\n"
+"\t\t   (char *)&amp;on, sizeof (on)) &lt; 0));"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7599
 msgid "When this call succeed, then this socket only receive IPv6 packets."
 msgstr ""
+"هنگامی‌که این فراخوان موفق می‌شود، سپس این سوکت تنها بسته‌های IPv6 را دریافت "
+"می‌کند."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7602
