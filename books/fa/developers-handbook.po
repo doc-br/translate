@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-04 20:23+0000\n"
-"Last-Translator: Parsa Samet <qps@irbug.org>\n"
+"PO-Revision-Date: 2020-09-05 05:59+0000\n"
+"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.2.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -8949,7 +8949,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:4912
 msgid "Networking and Diversity"
-msgstr ""
+msgstr "شبکه‌سازی و گوناگونی"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:4914
@@ -9046,7 +9046,7 @@ msgstr ""
 #: book.translate.xml:4977
 msgctxt "_"
 msgid "external ref='sockets/layers' md5='__failed__'"
-msgstr ""
+msgstr "external ref='sockets/layers' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: book.translate.xml:4981
@@ -9863,6 +9863,10 @@ msgid ""
 "bytes 2 and 3, and <varname>sin_addr</varname>, a 32-bit integer "
 "representation of the <acronym>IP</acronym> address, stored in bytes 4-7."
 msgstr ""
+"بخش‌های مهم <varname>sin_family</varname>، در بایت اول ساختار، "
+"<varname>sin_port</varname>، مقداری ۱۶-بیتی در بایت‌های دوم و سوم، و "
+"<varname>sin_addr</varname>، عدد صحیحی ۳۲-بیتی به نیابت نشانی "
+"<acronym>IP</acronym>، ذخیره شده در بایت‌های چهار تا هفت، هستند."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5445
@@ -9932,6 +9936,9 @@ msgid ""
 "<varname>struct in_addr</varname> type, which is defined in "
 "<filename>netinet/in.h</filename>:"
 msgstr ""
+"ضمناً بخش <varname>sin_addr</varname> به‌عنوان عضوی از حالت <varname>struct "
+"in_addr</varname> اعلان می‌شود، که خود در <filename>netinet/in.h</filename> "
+"تعریف شده است:"
 
 #. (itstool) path: sect4/programlisting
 #: book.translate.xml:5485
@@ -10350,6 +10357,8 @@ msgid ""
 "So, regardless of what system your software is compiled on, your data will "
 "end up in the correct order if you use these functions."
 msgstr ""
+"بنابراین، صرف نظر از اینکه برنامهٔ شما بر روی چه سامانه‌ای همگردانی شده است، "
+"اگر از این توابع استفاده کنید دادهٔ شما به ترتیب درست ایجاد خواهد شد."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:5752
@@ -10567,7 +10576,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:5869
 msgid "The sockets interface offers three basic functions to handle this."
-msgstr ""
+msgstr "رابط سوکت‌ها سه تابع اساسی را برای مدیریت این موضوع ارائه می‌دهد."
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:5873
@@ -10669,6 +10678,9 @@ msgid ""
 "<textobject> <_:literallayout-1/> </textobject> <textobject> <phrase>Example "
 "Server sockaddr_in</phrase> </textobject>"
 msgstr ""
+"<imageobject> <imagedata fileref=\"sockets/sainserv\"/> </imageobject> "
+"<textobject> <_:literallayout-1/> </textobject> <textobject> <phrase>نمونهٔ "
+"کارساز sockaddr_in</phrase> </textobject>"
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:5930
@@ -10722,6 +10734,9 @@ msgid ""
 "You have now established a connection with your client. This connection "
 "remains active until either you or your client hang up."
 msgstr ""
+"بعد از اینکه صدای زنگ تلفن را می‌شنوید، تماس را با پاسخ دادن به آن قبول می‌"
+"کنید. اینک شما یک ارتباط با کراخواه خود برقرار کرده‌اید. این ارتباط تا زمانی "
+"که توسط یا شما یا کارخواه شما خاتمه نیابد فعال باقی می‌ماند."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5960
@@ -11224,6 +11239,9 @@ msgid ""
 "(it is customary to end the names of daemons with the letter <constant>d</"
 "constant>). After you have compiled it, try running it:"
 msgstr ""
+"اکنون، پیش بروید و کد منبع فوق را تحت عنوان <filename>daytimed.c</filename> "
+"ذخیره کنید (مرسوم است که نام دیمِن‌ها به حرف <constant>d</constant> ختم شوند)"
+". بعد از اینکه آن را همگردانی کردید، اجرایش کنید:"
 
 #. (itstool) path: sect4/screen
 #: book.translate.xml:6252
@@ -11806,6 +11824,9 @@ msgid ""
 "<textobject> <_:literallayout-1/> </textobject> <textobject> "
 "<phrase>Concurrent Server</phrase> </textobject>"
 msgstr ""
+"<imageobject> <imagedata fileref=\"sockets/serv2\"/> </imageobject> "
+"<textobject> <_:literallayout-1/> </textobject> <textobject> <phrase>کارساز "
+"هم‌رو</phrase> </textobject>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6552
