@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-03 18:50+0000\n"
+"PO-Revision-Date: 2020-09-04 18:05+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -12324,6 +12324,13 @@ msgid ""
 "workaround (note that the code fragment in \"heuristics\" section is not "
 "spec conformant)."
 msgstr ""
+"برخی حلقه‌های گردانندهٔ شبکه بسته‌ها را به خودشان مولتیکست می‌کنند، حتی اگر "
+"به‌گونه‌ای دستور گرفته باشند که چنین نکنند (مخصوصاً در حالت بی‌قاعده). در "
+"چنین مواردی ممکن است که DAD شکست بخورد، زیرا موتور DAD بسته‌های داخلی NS را ("
+"در واقع از خود گره) می‌بیند و آن را به‌نشان تکراری بودن در نظر می‌گیرد. ممکن "
+"است بخواهید به شرط #if که در sys/netinet6/nd6_nbr.c:nd6_dad_timer() به‌عنوان "
+"راه حل جایگزین \"heuristics\" نشانه‌گذاری شده است نگاهی بیندازید (توجه کنید "
+"قطعه کد واقع در بخش \"heuristics\" منطبق با مشخصات نیست)."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6949
@@ -12372,6 +12379,11 @@ msgid ""
 "last sentence in 2nd paragraph - note that the spec misuse the word \"host\" "
 "and \"node\" in several places in the section)."
 msgstr ""
+"قانون تعیین‌کنندگیِ on-link در IPv6 (RFC2461) کاملاً متفاوت از مفروضات در کد "
+"شبکهٔ BSD است. در این لحظه، هیچ قانون تعیین‌کنندگیِ on-link در جایی‌که فهرست "
+"مسیریاب خالی باشد پشتیبانی نمی‌شود (RFC2461، بخش 5.2، آخرین جلمه در پاراگراف "
+"دوم - توجه داشته باشید که مشخصات در برخی قسمت‌ها کلمهٔ \"میزبان\" و \"گره\" "
+"را اشتباه به‌کار می‌برد)."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6978
@@ -12383,6 +12395,13 @@ msgid ""
 "<filename>sys/netinet6/nd6.c</filename>. If there are high demands we may "
 "provide sysctl knob for the variable."
 msgstr ""
+"به‌منظور پیشگیری از حملات احتمالی DoS و حلقه‌های بی‌نهایت، تنها ۱۰ گزینه در "
+"بستهٔ ND در حال حاضر پذیرفته می‌شود. از این رو، چنانچه شما ۲۰ گزینهٔ پیشوند "
+"دارید که به RA الصاق شده‌اند، تنها ۱۰ پیشوند اولیه شناسایی می‌شوند. اگر این "
+"مسئله شما را آزار می‌دهد، لطفاً‌ آن را در فهرست پست‌سپاری FREEBSD-CURRENT "
+"بپرسید و/یا nd6_maxndopt را در <filename>sys/netinet6/nd6.c</filename> تغییر "
+"دهید. چنانچه درخواست‌ها زیاد شوند ممکن است که یک sysctl knob برای متغیر "
+"ارائه کنیم."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6989
@@ -12463,6 +12482,15 @@ msgid ""
 "kernel internal structure. Programs that use these APIs have to be prepared "
 "about differences in kernels anyway."
 msgstr ""
+"دیمِن‌های مسیرگزینی و برنامه‌های پیکربندی، مانند <citerefentry><refentrytitle"
+">route6d</refentrytitle><manvolnum>8</manvolnum></citerefentry> و <citerefent"
+"ry><refentrytitle>ifconfig</refentrytitle><manvolnum>8</manvolnum></citerefen"
+"try>، نیاز خواهند داشت تا فهرست محدودهٔ \"جاسازی شده\" را دستکاری کنند. این "
+"برنامه‌ها سوکت‌های مسیرگزینی و ioctl ها (مانند SIOCGIFADDR_IN6) را استفاده "
+"می‌کنند و رابط‌ برنامه‌نویسی کاربردی هسته نشانی‌های IPv6 را با کلمهٔ ۱۶ بیتی "
+"دوم برمی‌گرداند. رابط‌‌های برنامه‌نویسی کاربردی برای دستکاری ساختار داخلی "
+"هسته هستند. برنامه‌هایی که از این API ها استفاده می‌کنند باید برای تفاوت‌"
+"هایی که در هسته وجود دارند خود رو آماده کنند."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7030
@@ -12487,6 +12515,11 @@ msgid ""
 "interface like \"fe80::1%ne0\". This way you will be able to specify link-"
 "local scoped address without much trouble."
 msgstr ""
+"برخی ابزارهای محیط کاربری از نحو IPv6 عددی توسعه‌یافته پشتیبانی می‌کنند، که "
+"در <filename>draft-ietf-ipngwg-scopedaddr-format-00.txt</filename> مستندسازی "
+"شده است. می‌توانید با استفاده از یک رابط بیرونی مانند \"fe80::1%ne0\" پیوند "
+"بیرونی را مشخص کنید. بدین ترتیب می‌توانید نشانی محدود‌شدهٔ link-local را "
+"بدون دردسر تعیین کنید."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7050
@@ -12498,6 +12531,12 @@ msgid ""
 "The implementation currently assumes 1-to-1 relationship between a link and "
 "an interface, which is stronger than what specs say."
 msgstr ""
+"برای استفاده از این افزونه در برنامهٔ خود، نیاز دارید تا از <citerefentry><re"
+"fentrytitle>getaddrinfo</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry> و <citerefentry><refentrytitle>getnameinfo</refentrytitle><manv"
+"olnum>3</manvolnum></citerefentry> به‌همراه NI_WITHSCOPEID استفاده کنید. "
+"پیاده‌سازی در حال حاضر رابطهٔ ۱-به-۱ را بین یک پیوند و یک رابط در نظر "
+"می‌گیرد، که قوی‌تر از آن چیزی است که مشخصات می‌گویند."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:7058
@@ -12933,6 +12972,11 @@ msgid ""
 "physical interface whose MTU is more than 65,535 is supported, so such "
 "payloads can be seen only on the loopback interface (i.e., lo0)."
 msgstr ""
+"گزینهٔ بار hop-by-hop در Jumbo پیاده‌سازی شده است و می‌توان به‌منظور ارسال "
+"بسته‌های IPv6 با بارهایی طولانی‌تر از ۶۵٫۵۳۵ اکتاو از آن استفاده کرد. اما در "
+"حال حاضر هیچ رابط فیزیکی‌ای که MTU آن بیشتر از ۶۵٫۵۳۵ باشد را پشتیبانی "
+"نمی‌کند، در نتیجه چنین بارهایی را تنها می‌توان در رابط loopback (برای مثال، "
+"lo0) دید."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7319
@@ -12941,6 +12985,9 @@ msgid ""
 "so that the MTU of the loopback interface is more than 65,535 bytes; add the "
 "following to the kernel configuration file:"
 msgstr ""
+"چنانچه می‌خواهید بارهای Jumbo را امتحان کنید، اول باید هستهٔ خود را طوری "
+"پیکربندی کنید تا MTU در رابط loopback بیش از ۶۵٫۵۳۵ بایت باشد؛ خط پیش رو را "
+"به پروندهٔ پیکربندی هسته اضافه کنید:"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7324
@@ -13043,6 +13090,9 @@ msgid ""
 "There are fundamental issues in *BSD support for jumbograms. We would like "
 "to address those, but we need more time to finalize these. To name a few:"
 msgstr ""
+"در پشتیبانی از jumbogram ها در *BSD مسائل اساسی‌ای وجود دارد. دوست داریم "
+"آنها را درست کنیم، اما نیاز به زمان بیشتر جهت نهایی کردن آنها داریم. برخی از "
+"آنها عبارتند از:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7379
@@ -13061,6 +13111,10 @@ msgid ""
 "convert them into larger integral type. It needs a great care, as we may "
 "experience overflow during packet length computation."
 msgstr ""
+"ما به اشتباه از \"int\" برای نگه‌داری طول بسته‌ها در بسیاری از مکان‌ها "
+"استفاده می‌کنیم. لازم است آنها را به حالت انتگرال بزرگتر تبدیل کنیم. نیاز به "
+"مراقبت فراوان دارد، از آنجا که ممکن است هنگام محاسبهٔ طول بسته دچار سرریز "
+"میان‌گیر شویم."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7397
@@ -13429,6 +13483,9 @@ msgid ""
 "(which works on multiple IPv6 kernels), we believe that the following is the "
 "key to the success:"
 msgstr ""
+"توصیه برای افرادی که پیاده‌سازی برنامه انجام می‌دهند‌: برای پیاده‌سازی یک "
+"برنامهٔ قابل‌حملِ IPv6 (که در هسته‌های IPv6 مختلف کار کند)، باور داریم موارد "
+"پیش رو کلید موفقیت هستند:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7611
