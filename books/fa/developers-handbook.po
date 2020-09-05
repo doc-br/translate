@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-05 05:59+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"PO-Revision-Date: 2020-09-06 02:29+0000\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -13458,6 +13458,11 @@ msgid ""
 "reject the connection. You can check the condition by using "
 "IN6_IS_ADDR_V4MAPPED() macro."
 msgstr ""
+"به‌منظور پشتیبانی تنها از ترافیک IPv6 در سوکت پیونده داده شدهٔ قابل حمل "
+"AF_INET6 wildcard، همیشه نشانی همتا را زمانی‌که یک اتصال سمت سوکت شنوندهٔ "
+"AF_INET6 ایجاد می‌شود بررسی کنید. چنانچه نشانی یک نشانی نگاشت‌شدهٔ IPv4 باشد،"
+" ممکن است بخواهید اتصال را رد کنید. می‌توانید وضعیت را با استفاده از ماکروی "
+"IN6_IS_ADDR_V4MAPPED() بررسی کنید."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7590
@@ -13549,6 +13554,9 @@ msgid ""
 "manvolnum></citerefentry>. Ship a minimal working version with your "
 "application and use that as last resort."
 msgstr ""
+"برخی پشته‌های IPv6 با <citerefentry><refentrytitle>getaddrinfo</refentrytitle"
+"><manvolnum>3</manvolnum></citerefentry> پراشکال فرستاده می‌شوند. یک نسخهٔ "
+"سالم و کوچک با برنامهٔ خود بفرستید و از آن به‌عنوان آخرین گزینه استفاده کنید."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7638
@@ -13577,6 +13585,11 @@ msgid ""
 "family. {set,get}sockopt issue goes simpler, DNS issue will be made simpler. "
 "We do not recommend you to rely upon IPv4 mapped address."
 msgstr ""
+"وقتی‌که دارید برنامه‌هایی می‌نویسید که اتصالات بیرونی ایجاد می‌کنند، ماجرا "
+"بسیار ساده‌تر می‌شود اگر AF_INET و AF_INET6 را به‌عنوان دو خانوادهٔ نشانی "
+"کاملاً مستقل در نظر بگیرید. مسئلهٔ {set,get}sockopt ساده‌تر می‌شود، مسئلهٔ "
+"DNS ساده‌تر خواهد شد. تکیه‌بر به نشانی نگاشت‌شدهٔ IPv4 را به شما پیشنهاد "
+"نمی‌دهیم."
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:7658
@@ -13608,6 +13621,9 @@ msgid ""
 "and can initiate connection to IPv4 destination embedded in IPv4 mapped IPv6 "
 "address."
 msgstr ""
+"به‌طور پیش‌فرض، سوکت AF_INET6 اتصالات IPv4 را در شرایط خاصی می‌رباید، و می‌"
+"تواند اتصال به مقصد IPv4 جاسازی شده در نشانی IPv6 نگاشت‌شدهٔ IPv4 را آغاز "
+"کند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7677
@@ -13632,6 +13648,10 @@ msgid ""
 "<citerefentry><refentrytitle>setsockopt</refentrytitle><manvolnum>2</"
 "manvolnum></citerefentry> like below."
 msgstr ""
+"هر سوکت را می‌‌توان پیکربندی کرد تا پیوند AF_INET6 wildcard ویژه (به‌طور پیش‌"
+"فرض فعال) را پشتیبانی کند. می‌توانید بر پایهٔ هر سوکت با <citerefentry><refen"
+"trytitle>setsockopt</refentrytitle><manvolnum>2</manvolnum></citerefentry> "
+"آن را غیر فعال کنید، مانند زیر."
 
 #. (itstool) path: sect5/para
 #: book.translate.xml:7698
@@ -13672,6 +13692,9 @@ msgid ""
 "FreeBSD 4.x supports outgoing connection to IPv4 mapped address (::"
 "ffff:10.1.1.1), if the node is configured to support IPv4 mapped address."
 msgstr ""
+"چنانچه گره به‌گونه‌ای پیکربندی شده باشد تا نشانی نگاشت‌شدهٔ IPv4 را پشتیبانی "
+"کند، FreeBSD 4.x اتصال خروجی به نشانی‌های نگاشت‌شدهٔ IPv4 مانند (::ffff:10.1."
+"1.1) را پشتیبانی می‌کند."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:7729
@@ -13691,7 +13714,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:7739
 msgid "As a result, RFC2553 defines struct sockaddr_storage as follows:"
-msgstr ""
+msgstr "در نتیجه، RFC2553 مقدار struct sockaddr_storage را چنین تعریف می‌کند:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:7742
@@ -13712,7 +13735,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:7748
 msgid "On the contrary, XNET draft defines as follows:"
-msgstr ""
+msgstr "برعکس، پیش‌نویس XNET بدین ترتیب تعریف می‌شود:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:7750
@@ -13724,6 +13747,11 @@ msgid ""
 "\t\t/* and bunch of padding */\n"
 "\t};"
 msgstr ""
+"\tstruct sockaddr_storage {\n"
+"\t\tu_char\tss_len;\t\t/* address length */\n"
+"\t\tu_char\tss_family;\t/* address family */\n"
+"\t\t/* and bunch of padding */\n"
+"\t};"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7756
@@ -13731,13 +13759,15 @@ msgid ""
 "In December 1999, it was agreed that RFC2553bis should pick the latter "
 "(XNET) definition."
 msgstr ""
+"در تاریخ دسامبر ۱۹۹۹، پذیرفته شد که RFC2553bis باید تعریف دومِ (XNET) را "
+"انتخاب کند."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7759
 msgid ""
 "Current implementation conforms to XNET definition, based on RFC2553bis "
 "discussion."
-msgstr ""
+msgstr "پیاده‌سازی فعلی منطبق با تعریف XNET است، برپایهٔ مباحث RFC2553bis."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7762
@@ -13746,6 +13776,9 @@ msgid ""
 "definitions. As an userland programmer, the most portable way of dealing "
 "with it is to:"
 msgstr ""
+"چنانچه به پیاده‌سازی‌های مختلف IPv6 نگاه کنید، می‌توانید هر دو تعاریف را "
+"ببینید. به‌عنوان برنامه‌نویس محیط کاربری، قابل‌حمل‌ترین راه برای مواجه با آن "
+"از این قرار است:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7768
@@ -13753,6 +13786,8 @@ msgid ""
 "ensure ss_family and/or ss_len are available on the platform, by using GNU "
 "autoconf,"
 msgstr ""
+"مطمئن شوید ss_family و/یا ss_len در بستر در دسترس باشند، با استفاده از GNU "
+"autoconf،"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7773
@@ -13760,11 +13795,15 @@ msgid ""
 "have -Dss_family=__ss_family to unify all occurrences (including header "
 "file) into __ss_family, or"
 msgstr ""
+"-Dss_family=__ss_family تمام موارد را در __ss_family یکپارچه کند (شامل "
+"پروندهٔ سرآیند)، یا"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7779
 msgid "never touch __ss_family. cast to sockaddr * and use sa_family like:"
 msgstr ""
+"هرگز __ss_family را دست نزنید. بریزید داخل sockaddr * و sa_family را اینگونه "
+"به‌کار ببرید:"
 
 #. (itstool) path: listitem/programlisting
 #: book.translate.xml:7782
@@ -13773,17 +13812,20 @@ msgid ""
 "\tstruct sockaddr_storage ss;\n"
 "\tfamily = ((struct sockaddr *)&amp;ss)-&gt;sa_family"
 msgstr ""
+"\tstruct sockaddr_storage ss;\n"
+"\tfamily = ((struct sockaddr *)&amp;ss)-&gt;sa_family"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:7791
 msgid "Network Drivers"
-msgstr ""
+msgstr "گرداننده‌های شبکه"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7793
 msgid ""
 "Now following two items are required to be supported by standard drivers:"
 msgstr ""
+"حال نیاز است تا دو مورد پیش رو توسط گرداننده‌های استاندارد پشتیبانی شوند:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7798
@@ -13792,6 +13834,9 @@ msgid ""
 "into MHLEN+1 for all the operating systems in order to make all the drivers "
 "behave as we expect."
 msgstr ""
+"نیازمندی mbuf clustering. در این نسخهٔ پایدار، ما MINCLSIZE را برای تمام "
+"سامانه‌های عامل به MHLEN تغییر دادیم تا تمام گرداننده‌ها را مجاب به رفتاری "
+"کنیم که انتظار داریم."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7805
@@ -13800,6 +13845,9 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> yields no multicast "
 "group for a interface, that interface has to be patched."
 msgstr ""
+"multicast. اگر <citerefentry><refentrytitle>ifmcstat</refentrytitle><manvolnu"
+"m>8</manvolnum></citerefentry> هیچ گروه مولتیکستی برای رابط تولید نکند، آن "
+"رابط باید تصحیح شود."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7811
@@ -13810,6 +13858,11 @@ msgid ""
 "href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-bugs\">FreeBSD "
 "problem reports mailing list</link>."
 msgstr ""
+"اگر هر کدام از گرداننده‌ها نیازمندی‌ها را پشتیبانی نکنند، گرداننده‌ها نمی‌"
+"توانند برای ارتباطات IPv6 و/یا IPsec استفاده شوند. اگر با استفاده از IPv6/"
+"IPsec مشکلی با کارت خود پیدا کردید، سپس، خواهشمند است آن را به <link "
+"xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-bugs\""
+">FreeBSD problem reports mailing list</link> گزارش دهید."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7816
@@ -13817,16 +13870,18 @@ msgid ""
 "(NOTE: In the past we required all PCMCIA drivers to have a call to "
 "in6_ifattach(). We have no such requirement any more)"
 msgstr ""
+"(توجه: در گذشته نیاز داشتیم تمام گرداننده‌های PCMCIA به in6_ifattach() "
+"فراخوان داشته باشند. چنین نیازمندی‌ای دیگر وجود ندارد)"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:7822
 msgid "Translator"
-msgstr ""
+msgstr "مترجم"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7824
 msgid "We categorize IPv4/IPv6 translator into 4 types:"
-msgstr ""
+msgstr "ما مترجم IPv4/IPv6 را به ۴ نوع دسته‌بندی می‌کنیم:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7828
