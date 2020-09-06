@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-06 02:29+0000\n"
+"PO-Revision-Date: 2020-09-06 18:51+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -12526,6 +12526,14 @@ msgid ""
 "\"dentist office\" situation. We believe that specifications need some "
 "improvements for this."
 msgstr ""
+"هنگامی‌که نشانی محدود‌شده را در خط فرمان مشخص می‌کنید، هرگز در قالب تعبیه‌"
+"شده (مانند ff02:1::1 یا fe80:2::fedc) ننویسید. قرار نیست کار کند. همیشه از "
+"قالب استاندارد مانند ff02::1 یا fe80::fedc، به‌همراه گزینهٔ خط فرمان برای "
+"تعیین کردن رابط (مانند <command>ping6 -I ne0 ff02::1</command>) استفاده "
+"کنید. به‌طور کلی، اگر یک دستور گزینه‌ای برای تعیین کردن رابط بیرونی نداشته "
+"باشد، آن دستور آمادهٔ پذیرش نشانی محدود‌شده نیست. این شاید برعکس این فرضیه "
+"باشد که IPv6 وضعیت \"مطب دندانپزشکی\" را پشتیبانی می‌کند. ما باور داریم که "
+"مشخصات نیازمند تعدادی بهسازی برای این منظور هستند."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7042
@@ -12573,6 +12581,11 @@ msgid ""
 "kernel. Router Solicitation (RS) output for endhosts, RS input for routers, "
 "and RA output for routers are implemented in the userland."
 msgstr ""
+"بیشتر پیکربندی‌ خودکارِ (autoconfiguration) نشانیِ بی‌حالت در IPv6 در هسته "
+"پیاده‌سازی شده است. توابع کشف همسایه به‌عنوان یک کل در هسته پیاده‌سازی شده‌"
+"اند. ورودی اعلان مسیریاب (RA) برای میزبان‌ها در هسته پیاده‌سازی شده است. "
+"خروجی درخواست مسیریاب (RS) برای میزبان‌های نهایی، ورودی RS برای مسیریاب‌ها، "
+"و خروجی RA برای مسیریاب‌هایی در محیط کاربری پیاده‌سازی شده‌اند."
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:7069
@@ -13080,6 +13093,10 @@ msgid ""
 "described above, currently no physical interface with such a huge MTU is "
 "supported, so it rarely returns an ICMPv6 error."
 msgstr ""
+"در نتیجه، هسته خطای ICMPv6 را ارسال نمی‌کند مگر آنکه بستهٔ اشتباه واقعاً یک "
+"Jumbo Payload باشد، بدین معنا که اندازهٔ بستهٔ آن بیش از ۶۵٫۵۳۵ بایت است. "
+"همانطور که در بالا توضیح داده شد، در حال حاضر هیچ رابط فیزیکی‌ای با این "
+"اندازه MTU پشتیبانی نمی‌شود، از این رو به‌ندرت خطای ICMPv6 را برمی‌گرداند."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7363
@@ -13186,6 +13203,9 @@ msgid ""
 "error packet against ICMPv6 redirect, to prevent ICMPv6 storm on a network "
 "medium. This is already implemented into the kernel."
 msgstr ""
+"پس از آنکه RFC2463 منتشر شد، IETF ipngwg تصمیم گرفته است تا بستهٔ خطای "
+"ICMPv6 را در مقابل تغییرمسیرِ ICMPv6 نادیده بگیرد، تا از طوفان ICMPv6 در یک "
+"رسانهٔ شبکه‌ای جلوگیری شود. این امکان از قبل در هسته پیاده‌سازی شده است."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:7445
@@ -13890,6 +13910,9 @@ msgid ""
 "transition to make it possible to establish a connection from an IPv6 host "
 "in an IPv6 island to an IPv4 host in the IPv4 ocean."
 msgstr ""
+"<emphasis>مترجم A</emphasis> --- در مراحل ابتدایی انتقال استفاده می‌شود تا "
+"برقراری ارتباط از یک میزبان IPv6 در یک جزیرهٔ IPv6 به یک میزبان IPv4 در "
+"اقیانوس IPv4 را ممکن سازد."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7835
@@ -13898,6 +13921,9 @@ msgid ""
 "transition to make it possible to establish a connection from an IPv4 host "
 "in the IPv4 ocean to an IPv6 host in an IPv6 island."
 msgstr ""
+"<emphasis>مترجم B</emphasis> --- در مراحل ابتدایی انتقال استفاده می‌شود تا "
+"برقراری ارتباط از یک میزبان IPv4 در اقیانوس IPv4 به یک میزبان IPv6 در جزیرهٔ "
+"IPv6 را ممکن سازد."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7842
@@ -13906,6 +13932,9 @@ msgid ""
 "transition to make it possible to establish a connection from an IPv4 host "
 "in an IPv4 island to an IPv6 host in the IPv6 ocean."
 msgstr ""
+"<emphasis>مترجم C</emphasis> --- در مراحل آخر انتقال استفاده می‌شود تا "
+"برقراری ارتباط از یک میزبان IPv4 در یک جزیرهٔ IPv4 به یک میزبان IPv6 در "
+"اقیانوس IPv6 را ممکن سازد."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7849
@@ -13914,33 +13943,36 @@ msgid ""
 "transition to make it possible to establish a connection from an IPv6 host "
 "in the IPv6 ocean to an IPv4 host in an IPv4 island."
 msgstr ""
+"<emphasis>مترجم D</emphasis> --- در مراحل آخر انتقال استفاده می‌شود تا "
+"برقراری ارتباط از یک میزبان IPv6 در اقیانوس IPv6 به یک میزبان IPv4 در جزیرهٔ "
+"IPv4 را ممکن سازد."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:7858
 msgid "IPsec"
-msgstr ""
+msgstr "IPsec"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7860
 msgid "IPsec is mainly organized by three components."
-msgstr ""
+msgstr "IPsec به‌طور کلی توسط سه بخش تشکیل شده است."
 
 #. (itstool) path: listitem/para
 #. (itstool) path: sect3/title
 #: book.translate.xml:7864 book.translate.xml:7877
 msgid "Policy Management"
-msgstr ""
+msgstr "مدیریت خط مشی"
 
 #. (itstool) path: listitem/para
 #. (itstool) path: sect3/title
 #: book.translate.xml:7868 book.translate.xml:7892
 msgid "Key Management"
-msgstr ""
+msgstr "مدیریت کلید"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7872
 msgid "AH and ESP handling"
-msgstr ""
+msgstr "مدیریت AH و ESP"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7879
