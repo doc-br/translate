@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-06 18:51+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"PO-Revision-Date: 2020-09-06 20:44+0000\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -13267,6 +13267,9 @@ msgid ""
 "While ip_forward() calls ip_output(), ip6_forward() directly calls "
 "if_output() since routers must not divide IPv6 packets into fragments."
 msgstr ""
+"در حالی‌که ip_forward() فراخوانیِ ip_output() را انجام می‌دهد، ip6_forward() "
+"مستقیماً if_output() را فراخوانی می‌کند زیرا مسیریاب‌ها نباید بسته‌های IPv6 "
+"را به قطعات تقسیم کنند."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7465
@@ -13998,6 +14001,14 @@ msgid ""
 "<citerefentry><refentrytitle>setkey</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>."
 msgstr ""
+"هسته کد مدیریت خط مشی آزمایشی را پیاده‌سازی می‌کند. دو راه برای مدیریت خط "
+"مشی امنیتی وجود دارد. یکی پیکربندی خط مشی هر سوکت با استفاده از <citerefentry"
+"><refentrytitle>setsockopt</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> است. در این مورد، پیکربندی خط مشی در <citerefentry><refentrytit"
+"le>ipsec_set_policy</refentrytitle><manvolnum>3</manvolnum></citerefentry> "
+"توضیح داده شده است. مورد دیگر پیکربندی خط مشی مبتنی بر فیلترِ بستهٔ هسته با "
+"استفاده از رابط PF_KEY است، توسط <citerefentry><refentrytitle>setkey</refentr"
+"ytitle><manvolnum>8</manvolnum></citerefentry>."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7887
@@ -15872,6 +15883,11 @@ msgid ""
 "<literal>dcons_crom</literal> and <literal>firewire</literal>, modules "
 "should be OK."
 msgstr ""
+"اطمینان حاصل کنید که هستهٔ شما <literal>dcons</literal> "
+"،<literal>dcons_crom</literal> و <literal>firewire</literal> را پشتیبانی "
+"کند. <literal>Dcons</literal> باید به‌طور ثابت با هسته پیوند داشته باشد. "
+"برای <literal>dcons_crom</literal> و <literal>firewire</literal>، ماژول‌ها "
+"باید مناسب باشند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9016
@@ -15880,11 +15896,14 @@ msgid ""
 "<literal>hw.firewire.phydma_enable=1</literal> to <filename>/boot/loader."
 "conf</filename>."
 msgstr ""
+"اطمینان حاصل کنید که <acronym>DMA</acronym> فیزیکی فعال باشد. شاید نیاز باشد "
+"تا <literal>hw.firewire.phydma_enable=1</literal> را به <filename>/boot/"
+"loader.conf</filename> اضافه کنید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9022
 msgid "Add options for debugging."
-msgstr ""
+msgstr "گزینه‌هایی به‌منظور اشکال‌زدایی اضافه کنید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9025
@@ -23372,6 +23391,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>chmod 755 medium</userinput>\n"
 "<prompt>%</prompt> <userinput>./medium</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>chmod 755 medium</userinput>\n"
+"<prompt>%</prompt> <userinput>./medium</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14648
