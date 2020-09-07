@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-06 20:44+0000\n"
+"PO-Revision-Date: 2020-09-07 22:28+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -14016,6 +14016,8 @@ msgid ""
 "The policy entry is not re-ordered with its indexes, so the order of entry "
 "when you add is very significant."
 msgstr ""
+"ورودی خط مشی با فهرست‌های خود مرتب نمی‌شود، در نتیجه ترتیب ورودی که شما "
+"اضافه می‌کنید بسیار مهم است."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7894
@@ -14023,6 +14025,8 @@ msgid ""
 "The key management code implemented in this kit (sys/netkey) is a home-brew "
 "PFKEY v2 implementation. This conforms to RFC2367."
 msgstr ""
+"کد مدیریت کلید که در این کیت (sys/netkey) پیاده‌سازی شده است یک پیاده‌سازیِ "
+"خانگیِ PFKEY v2 است و سازگار با RFC2367 است."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7898
@@ -14033,11 +14037,16 @@ msgid ""
 "use'</command>). The kernel will contact racoon daemon as necessary to "
 "exchange keys."
 msgstr ""
+"دیمِنِ خانگیِ IKE، یعنی \"racoon\" در کیت (kame/kame/racoon) موجود است. "
+"اساساً شما باید racoon را به‌عنوان دیمِن اجرا کنید، سپس خط مشی‌ای راه‌اندازی "
+"کنید که نیازمند کلید باشد (مانند <command>ping -P 'out ipsec esp/transport/"
+"/use'</command>). هسته با دیمِنِ racoon ارتباط برقرار می‌کند تا کلیدها را "
+"تبادل کند."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:7907
 msgid "AH and ESP Handling"
-msgstr ""
+msgstr "مدیریت AH و ESP"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7909
@@ -14061,6 +14070,9 @@ msgid ""
 "extra daisy-chained headers inserted by ESP/AH. Our code takes care of the "
 "case."
 msgstr ""
+"با استفاده از ESP/AH، اندازهٔ قطعه دادهٔ مؤثرِ TCP4/6 تحت تاثیر سرآیند‌های "
+"زنجیره‌وارِ اضافی که توسط ESP/AH وارد شده است قرار می‌گیرد. کد ما به این "
+"مورد رسیدگی می‌کند."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7927
@@ -14070,13 +14082,17 @@ msgid ""
 "to add some algorithm, add wrapper function in {esp,ah}_core.c, and add your "
 "crypto algorithm code into sys/crypto."
 msgstr ""
+"توابع سادهٔ رمزنگاری را می‌توانید در مسیر \"sys/crypto\" پیدا کنید. مبدل ESP/"
+"AH همراه با توابع بسته‌بندی در {esp,ah}_core.c فهرست شده‌اند. اگر می‌خواهید "
+"تعدادی الگوریتم اضافه کنید، تابع بسته‌بندی را در {esp,ah}_core.c اضافه کنید، "
+"و کد الگوریتم رمزنگاری خود را داخل sys/crypto اضافه کنید."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7933
 msgid ""
 "Tunnel mode is partially supported in this release, with the following "
 "restrictions:"
-msgstr ""
+msgstr "حالت تونل تا اندازه‌ای در این نسخه پشتیبانی می‌شود، با این محدودیت‌ها:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7938
@@ -14086,6 +14102,10 @@ msgid ""
 "tunnelifp-&gt;if_output(). Opinion varies if it is better to unify them, or "
 "not."
 msgstr ""
+"تونل IPSec با رابط تونل‌زنی کلیِ GIF ترکیب نشده است. نیاز به مراقبت فراوان "
+"دارد زیرا امکان دارد که یک حلقهٔ بی‌نهایت بین ip_output() و "
+"tunnelifp-&gt;if_output() ایجاد کنیم. نظرات در مورد اینکه آنها را یکی کنیم "
+"یا نه متفاوت است."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7946
@@ -14093,6 +14113,8 @@ msgid ""
 "MTU and Don't Fragment bit (IPv4) considerations need more checking, but "
 "basically works fine."
 msgstr ""
+"ملاحظات MTU و بیت Don't Fragment (IPv4) نیاز به بررسی بیشتری دارند، اما "
+"اساساً درست کار می‌کنند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7951
@@ -14100,11 +14122,13 @@ msgid ""
 "Authentication model for AH tunnel must be revisited. We will need to "
 "improve the policy management engine, eventually."
 msgstr ""
+"طرح اعتباربخشی برای تونل AH باید بازبینی شود. در نهایت، باید موتور مدیریت خط "
+"مشی را بهبود ببخشیم."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:7959
 msgid "Conformance to RFCs and IDs"
-msgstr ""
+msgstr "سازگاری با RFC ها و ID ها"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7961
@@ -14112,13 +14136,14 @@ msgid ""
 "The IPsec code in the kernel conforms (or, tries to conform) to the "
 "following standards:"
 msgstr ""
+"کد IPSec در هسته سازگار (یا، سعی بر سازگاری) با استانداردهای پیش رو است:"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7964
 msgid ""
 "\"old IPsec\" specification documented in <filename>rfc182[5-9].txt</"
 "filename>"
-msgstr ""
+msgstr "مشخصات \"old IPsec\" مستند شده در <filename>rfc182[5-9].txt</filename>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7967
@@ -14131,58 +14156,66 @@ msgid ""
 "(NOTE: IKE specifications, <filename>rfc241[7-9].txt</filename> are "
 "implemented in userland, as \"racoon\" IKE daemon)"
 msgstr ""
+"مشخصات \"new IPsec\" مستند شده در <filename>rfc240[1-6].txt</filename>، "
+"<filename>rfc241[01].txt</filename>، <filename>rfc2451.txt</filename> و "
+"<filename>draft-mcdonald-simple-ipsec-api-01.txt</filename> (پیش‌نویس منقضی "
+"شده است، اما می‌توانید آن را از <link xlink:href=\"ftp://ftp.kame.net/pub/"
+"internet-drafts/\"> ftp://ftp.kame.net/pub/internet-drafts/</link> بگیرید). "
+"(توجه: مشخصات IKE، <filename>rfc241[7-9].txt</filename> در محیط کاربری پیاده‌"
+"سازی شده‌اند، به‌عنوان دیمِنِ IKE یعنی \"racoon\")"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7977
 msgid "Currently supported algorithms are:"
-msgstr ""
+msgstr "الگوریتم‌هایی که در حال حاضر پشتیبانی می‌شوند:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7980 book.translate.xml:8098
 msgid "old IPsec AH"
-msgstr ""
+msgstr "old IPsec AH"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7983 book.translate.xml:8023
 msgid "null crypto checksum (no document, just for debugging)"
-msgstr ""
+msgstr "null crypto checksum (فاقد مستند، فقط برای اشکال‌زدایی)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7987
 msgid ""
 "keyed MD5 with 128bit crypto checksum (<filename>rfc1828.txt</filename>)"
 msgstr ""
+"keyed MD5 with 128bit crypto checksum (<filename>rfc1828.txt</filename>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7991
 msgid "keyed SHA1 with 128bit crypto checksum (no document)"
-msgstr ""
+msgstr "keyed SHA1 with 128bit crypto checksum (فاقد مستند)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7995
 msgid "HMAC MD5 with 128bit crypto checksum (<filename>rfc2085.txt</filename>)"
-msgstr ""
+msgstr "HMAC MD5 with 128bit crypto checksum (<filename>rfc2085.txt</filename>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7999
 msgid "HMAC SHA1 with 128bit crypto checksum (no document)"
-msgstr ""
+msgstr "HMAC SHA1 with 128bit crypto checksum (فاقد مستند)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8006
 msgid "old IPsec ESP"
-msgstr ""
+msgstr "old IPsec ESP"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8009
 msgid ""
 "null encryption (no document, similar to <filename>rfc2410.txt</filename>)"
-msgstr ""
+msgstr "null encryption (فاقد مستند، مشابه <filename>rfc2410.txt</filename>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8013
 msgid "DES-CBC mode (<filename>rfc1829.txt</filename>)"
-msgstr ""
+msgstr "حالت DES-CBC (<filename>rfc1829.txt</filename>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8020
