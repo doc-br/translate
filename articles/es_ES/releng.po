@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:08-0300\n"
-"PO-Revision-Date: 2020-08-25 17:16+0000\n"
+"PO-Revision-Date: 2020-09-07 02:20+0000\n"
 "Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_releng/es/>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.2.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -638,6 +638,9 @@ msgid ""
 "imageobject> <textobject> <phrase>FreeBSD 3.x STABLE Branch</phrase> </"
 "textobject>"
 msgstr ""
+"<imageobject> <imagedata fileref=\"branches-releng3\" align=\"center\"/> </"
+"imageobject> <textobject> <phrase>FreeBSD 3.x STABLE Branch</phrase> "
+"</textobject>"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -656,6 +659,9 @@ msgid ""
 "imageobject> <textobject> <phrase>FreeBSD 4.x STABLE Branch</phrase> </"
 "textobject>"
 msgstr ""
+"<imageobject> <imagedata fileref=\"branches-releng4\" align=\"center\"/> </"
+"imageobject> <textobject> <phrase>FreeBSD 4.x STABLE Branch</phrase> "
+"</textobject>"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -674,6 +680,9 @@ msgid ""
 "imageobject> <textobject> <phrase>FreeBSD 5.x STABLE Branch</phrase> </"
 "textobject>"
 msgstr ""
+"<imageobject> <imagedata fileref=\"branches-releng5\" align=\"center\"/> </"
+"imageobject> <textobject> <phrase>FreeBSD 5.x STABLE Branch</phrase> "
+"</textobject>"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -692,6 +701,9 @@ msgid ""
 "imageobject> <textobject> <phrase>FreeBSD 6.x STABLE Branch</phrase> </"
 "textobject>"
 msgstr ""
+"<imageobject> <imagedata fileref=\"branches-releng6\" align=\"center\"/> </"
+"imageobject> <textobject> <phrase>FreeBSD 6.x STABLE Branch</phrase> "
+"</textobject>"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -710,6 +722,9 @@ msgid ""
 "imageobject> <textobject> <phrase>FreeBSD 7.x STABLE Branch</phrase> </"
 "textobject>"
 msgstr ""
+"<imageobject> <imagedata fileref=\"branches-releng7\" align=\"center\"/> </"
+"imageobject> <textobject> <phrase>FreeBSD 7.x STABLE Branch</phrase> "
+"</textobject>"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -728,6 +743,9 @@ msgid ""
 "imageobject> <textobject> <phrase>FreeBSD 8.x STABLE Branch</phrase> </"
 "textobject>"
 msgstr ""
+"<imageobject> <imagedata fileref=\"branches-releng8\" align=\"center\"/> </"
+"imageobject> <textobject> <phrase>FreeBSD 8.x STABLE Branch</phrase> "
+"</textobject>"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -746,6 +764,9 @@ msgid ""
 "imageobject> <textobject> <phrase>FreeBSD 9.x STABLE Branch</phrase> </"
 "textobject>"
 msgstr ""
+"<imageobject> <imagedata fileref=\"branches-releng9\" align=\"center\"/> </"
+"imageobject> <textobject> <phrase>FreeBSD 9.x STABLE Branch</phrase> "
+"</textobject>"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:444
@@ -758,6 +779,9 @@ msgid ""
 "Before the final release can be tagged, built, and released, the following "
 "files need to be modified to reflect the correct version of FreeBSD:"
 msgstr ""
+"Antes de que la versión final pueda ser etiquetada, construida y liberada, "
+"los siguientes archivos deben ser modificados para reflejar la versión "
+"correcta de FreeBSD:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:452
@@ -855,6 +879,9 @@ msgid ""
 "release (on the release branch) and truncated appropriately (on the stable/"
 "current branch):"
 msgstr ""
+"Las notas de lanzamiento y los archivos de erratas también deben ajustarse a "
+"la nueva versión (en la rama de lanzamiento) y truncarse adecuadamente (en "
+"la rama estable/actual):"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:522
@@ -875,6 +902,8 @@ msgid ""
 "FreeBSD Ports Collection <uri xlink:href=\"https://www.FreeBSD.org/ports"
 "\">https://www.FreeBSD.org/ports</uri>"
 msgstr ""
+"FreeBSD Ports Collection <uri xlink:href=\"https://www.FreeBSD.org/ports\""
+">https://www.FreeBSD.org/ports</uri>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:530
@@ -943,6 +972,8 @@ msgid ""
 "When the final release is ready, the following command will create the "
 "<literal>release/9.2.0</literal> tag."
 msgstr ""
+"Cuando la versión final esté lista, el siguiente comando creará la etiqueta "
+"<literal>release/9.2.0</literal>."
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:583
@@ -956,6 +987,8 @@ msgid ""
 "The Documentation and Ports managers are responsible for tagging their "
 "respective trees with the <literal>tags/RELEASE_9_2_0</literal> tag."
 msgstr ""
+"Los gestores de Documentación y Puertos son responsables de etiquetar sus "
+"respectivos árboles con la etiqueta <literal>tags/RELEASE_9_2_0</literal>."
 
 #. (itstool) path: sidebar/para
 #: article.translate.xml:590
@@ -1103,16 +1136,18 @@ msgid ""
 "Build and installation of the actual documentation (user manuals, tutorials, "
 "release notes, hardware compatibility lists, and so on.)"
 msgstr ""
+"La elaboración e instalación de la documentación real (manuales de usuario, "
+"tutoriales, notas de lanzamiento, listas de compatibilidad de hardware, etc.)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:698
 msgid "Package up distribution tarballs of the binaries and sources."
-msgstr ""
+msgstr "Empaquetar las bases de distribución de los binarios y las fuentes."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:703
 msgid "Create FTP installation hierarchy."
-msgstr ""
+msgstr "Crear una jerarquía de instalación de FTP."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:707
@@ -1152,11 +1187,17 @@ msgid ""
 "consistent ports tree that can be used to create the binary packages that "
 "accompany official FreeBSD releases."
 msgstr ""
+"La colección <link xlink:href=\"https://www.FreeBSD.org/ports\">Ports de "
+"FreeBSD </link> es una colección de más de 24.000 paquetes de software de "
+"terceros disponibles para FreeBSD. El Equipo de Administración de Ports "
+"<email>portmgr@FreeBSD.org</email> es responsable de mantener un árbol de "
+"ports consistente que puede ser usado para crear los paquetes binarios que "
+"acompañan a las versiones oficiales de FreeBSD."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:736
 msgid "Release ISOs"
-msgstr ""
+msgstr "Lanzamiento de las ISO"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:738
@@ -1184,11 +1225,13 @@ msgstr "/stage/cdrom<prompt>#</prompt> <userinput>find . -type f | sed -e 's/^\\
 #: article.translate.xml:753
 msgid "The specific requirements of each CD are outlined below."
 msgstr ""
+"A continuación se exponen los requisitos específicos de cada disco "
+"compacto(CD)."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:757
 msgid "Disc 1"
-msgstr ""
+msgstr "Disco 1"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:759
@@ -1223,7 +1266,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: article.translate.xml:785
 msgid "Disc 2"
-msgstr ""
+msgstr "Disco 2"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:787
@@ -1240,7 +1283,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: article.translate.xml:798
 msgid "Multi-volume Support"
-msgstr ""
+msgstr "Soporte de múltiples volúmenes"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:800
@@ -1304,7 +1347,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: article.translate.xml:842
 msgid "The complete package build for this release."
-msgstr ""
+msgstr "El paquete completo construido para este lanzamiento."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:848
@@ -1318,7 +1361,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: article.translate.xml:850
 msgid "A symlink to <filename>../../../tools</filename>."
-msgstr ""
+msgstr "Un enlace simbólico a <filename>../../../tools</filename>."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:856
@@ -1364,6 +1407,10 @@ msgid ""
 "FreeBSD FTP sites, please see the <link xlink:href=\"@@URL_RELPREFIX@@/doc/"
 "en_US.ISO8859-1/articles/hubs/\">Mirroring FreeBSD</link> article."
 msgstr ""
+"Para más información sobre la arquitectura de espejo de distribución de los "
+"sitios FTP de FreeBSD consulte el artículo <link xlink:href=\""
+"@@URL_RELPREFIX@@/doc/es_US.ISO8859-1/articles/hubs/\">Mirroring "
+"FreeBSD</link>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:880
@@ -1390,7 +1437,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: article.translate.xml:901
 msgid "CD-ROM Replication"
-msgstr ""
+msgstr "Replicación en CD-ROM"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:903
@@ -1398,11 +1445,13 @@ msgid ""
 "Coming soon: Tips for sending FreeBSD ISOs to a replicator and quality "
 "assurance measures to be taken."
 msgstr ""
+"Muy pronto: Consejos para enviar las ISO de FreeBSD a un replicador y las "
+"medidas de garantía de calidad que se deben tomar."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:911
 msgid "Extensibility"
-msgstr ""
+msgstr "Extensibilidad"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:913
@@ -1476,6 +1525,13 @@ msgid ""
 "never been more apparent. This will become even more important as FreeBSD is "
 "ported to new platforms."
 msgstr ""
+"Nuestra comunidad de usuarios ha dejado muy claro que la seguridad y la "
+"estabilidad de una versión de FreeBSD no debería sacrificarse por ningún "
+"plazo o fecha de lanzamiento que se imponga a sí misma. El Proyecto FreeBSD "
+"ha crecido enormemente durante su vida y la necesidad de procedimientos de "
+"ingeniería de liberación estandarizados nunca ha sido más evidente. Esto se "
+"hará aún más importante a medida que FreeBSD se vaya portando a nuevas "
+"plataformas."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:967
