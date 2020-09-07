@@ -5,16 +5,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:01-0300\n"
-"PO-Revision-Date: 2020-04-10 17:23+0000\n"
+"PO-Revision-Date: 2020-09-07 02:04+0000\n"
 "Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
-"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/freebsd-"
-"doc/articles_committers-guide/es/>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/articles_committers-guide/es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.2.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -117,16 +117,12 @@ msgstr ""
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:66 article.translate.xml:68
-#, fuzzy
-#| msgid ""
-#| "$FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml "
-#| "52898 2019-03-28 15:28:01Z mat $"
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml 54315 "
 "2020-07-07 10:11:37Z brueffer $"
 msgstr ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml 53619 "
-"2019-11-21 17:38:49Z jhb $"
+"$FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml 54315 "
+"2020-07-07 10:11:37Z brueffer $"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:71
@@ -467,43 +463,7 @@ msgstr "Generar una clave:"
 
 #. (itstool) path: step/screen
 #: article.translate.xml:253
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<prompt>%</prompt> <userinput>gpg --full-gen-key</userinput>\n"
-#| "gpg (GnuPG) 2.1.8; Copyright (C) 2015 Free Software Foundation, Inc.\n"
-#| "This is free software: you are free to change and redistribute it.\n"
-#| "There is NO WARRANTY, to the extent permitted by law.\n"
-#| "\n"
-#| "Warning: using insecure memory!\n"
-#| "Please select what kind of key you want:\n"
-#| "   (1) RSA and RSA (default)\n"
-#| "   (2) DSA and Elgamal\n"
-#| "   (3) DSA (sign only)\n"
-#| "   (4) RSA (sign only)\n"
-#| "Your selection? <userinput>1</userinput>\n"
-#| "RSA keys may be between 1024 and 4096 bits long.\n"
-#| "What keysize do you want? (2048) <userinput>2048</userinput>  <co xml:id=\"co-pgp-bits\"/>\n"
-#| "Requested keysize is 2048 bits\n"
-#| "Please specify how long the key should be valid.\n"
-#| "         0 = key does not expire\n"
-#| "      &lt;n&gt;  = key expires in n days\n"
-#| "      &lt;n&gt;w = key expires in n weeks\n"
-#| "      &lt;n&gt;m = key expires in n months\n"
-#| "      &lt;n&gt;y = key expires in n years\n"
-#| "Key is valid for? (0) <userinput>3y</userinput>  <co xml:id=\"co-pgp-expire\"/>\n"
-#| "Key expires at Wed Nov  4 17:20:20 2015 MST\n"
-#| "Is this correct? (y/N) <userinput>y</userinput>\n"
-#| "\n"
-#| "GnuPG needs to construct a user ID to identify your key.\n"
-#| "\n"
-#| "Real name: <userinput><replaceable>Chucky Daemon</replaceable></userinput> <co xml:id=\"co-pgp-realname\"/>\n"
-#| "Email address: <userinput><replaceable>notreal@example.com</replaceable></userinput>\n"
-#| "Comment:\n"
-#| "You selected this USER-ID:\n"
-#| "    \"<replaceable>Chucky Daemon &lt;notreal@example.com&gt;</replaceable>\"\n"
-#| "\n"
-#| "Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit? <userinput>o</userinput>\n"
-#| "You need a Passphrase to protect your secret key."
+#, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>gpg --full-gen-key</userinput>\n"
 "gpg (GnuPG) 2.1.8; Copyright (C) 2015 Free Software Foundation, Inc.\n"
@@ -554,27 +514,33 @@ msgstr ""
 "   (4) RSA (sign only)\n"
 "Your selection? <userinput>1</userinput>\n"
 "RSA keys may be between 1024 and 4096 bits long.\n"
-"What keysize do you want? (2048) <userinput>2048</userinput>  <co xml:id=\"co-pgp-bits\"/>\n"
+"What keysize do you want? (2048) <userinput>2048</userinput>  <co xml:id"
+"=\"co-pgp-bits\"/>\n"
 "Requested keysize is 2048 bits\n"
 "Please specify how long the key should be valid.\n"
-"         0 = key does not expire\n"
+"\t 0 = key does not expire\n"
 "      &lt;n&gt;  = key expires in n days\n"
 "      &lt;n&gt;w = key expires in n weeks\n"
 "      &lt;n&gt;m = key expires in n months\n"
 "      &lt;n&gt;y = key expires in n years\n"
-"Key is valid for? (0) <userinput>3y</userinput>  <co xml:id=\"co-pgp-expire\"/>\n"
+"Key is valid for? (0) <userinput>3y</userinput>  <co xml:id=\"co-pgp-expire\""
+"/>\n"
 "Key expires at Wed Nov  4 17:20:20 2015 MST\n"
 "Is this correct? (y/N) <userinput>y</userinput>\n"
 "\n"
 "GnuPG needs to construct a user ID to identify your key.\n"
 "\n"
-"Real name: <userinput><replaceable>Chucky Daemon</replaceable></userinput> <co xml:id=\"co-pgp-realname\"/>\n"
-"Email address: <userinput><replaceable>notreal@example.com</replaceable></userinput>\n"
+"Real name: <userinput><replaceable>Chucky Daemon</replaceable></userinput> "
+"<co xml:id=\"co-pgp-realname\"/>\n"
+"Email address: <userinput><replaceable>notreal@example."
+"com</replaceable></userinput>\n"
 "Comment:\n"
 "You selected this USER-ID:\n"
-"    \"<replaceable>Chucky Daemon &lt;notreal@example.com&gt;</replaceable>\"\n"
+"    \"<replaceable>Chucky Daemon &lt;notreal@example.com&gt;</replaceable>\""
 "\n"
-"Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit? <userinput>o</userinput>\n"
+"\n"
+"Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit? <userinput>o</userinput>"
+"\n"
 "You need a Passphrase to protect your secret key."
 
 #. (itstool) path: callout/para
@@ -1285,10 +1251,6 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:676
-#, fuzzy
-#| msgid ""
-#| "<emphasis>/books/</emphasis> contains the source code for the different "
-#| "books, such as the FreeBSD Handbook."
 msgid ""
 "<emphasis>/books/</emphasis> contains the source code for the different "
 "books, such as the FreeBSD Handbook."
@@ -1298,10 +1260,6 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:682
-#, fuzzy
-#| msgid ""
-#| "<emphasis>/htdocs/</emphasis> contains the source code for the "
-#| "FreeBSD website."
 msgid ""
 "<emphasis>/htdocs/</emphasis> contains the source code for the FreeBSD "
 "website."
@@ -4396,11 +4354,13 @@ msgid ""
 "Do not include <literal>@FreeBSD.org</literal> when entering in your "
 "username."
 msgstr ""
+"No incluyas <literal>@FreeBSD.org</literal> al introducir tu nombre de "
+"usuario."
 
 #. (itstool) path: note/title
 #: article.translate.xml:2291
 msgid "Additional Notes"
-msgstr ""
+msgstr "Notas adicionales"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2295
@@ -4422,11 +4382,15 @@ msgstr ""
 msgid ""
 "Host has various rate limits in place to cut down on brute force attempts."
 msgstr ""
+"El anfitrión tiene varios límites de tasa para reducir los intentos de "
+"fuerza bruta."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:2314
 msgid "Using a Local MTA to Forward Emails to the FreeBSD.org SMTP Service"
 msgstr ""
+"Uso de un MTA local para reenviar correos electrónicos al servicio SMTP de "
+"FreeBSD.org"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:2317
@@ -4434,11 +4398,14 @@ msgid ""
 "It is also possible to use a local <acronym>MTA</acronym> to forward locally "
 "sent emails to the FreeBSD.org SMTP servers."
 msgstr ""
+"También es posible usar un <acronym>MTA</acronym> local para reenviar los "
+"correos electrónicos enviados localmente a los servidores SMTP de FreeBSD."
+"org."
 
 #. (itstool) path: example/title
 #: article.translate.xml:2322
 msgid "Using <application>Postfix</application>"
-msgstr ""
+msgstr "Usando <application>Postfix</application>"
 
 #. (itstool) path: example/para
 #: article.translate.xml:2324
@@ -4459,6 +4426,12 @@ msgid ""
 "smtp_sasl_password_maps = hash:/usr/local/etc/postfix/sasl_passwd\n"
 "smtp_use_tls = yes"
 msgstr ""
+"sender_dependent_relayhost_maps = hash:/usr/local/etc/postfix/"
+"relayhost_maps\n"
+"smtp_sasl_auth_enable = yes\n"
+"smtp_sasl_security_options = noanonymous\n"
+"smtp_sasl_password_maps = hash:/usr/local/etc/postfix/sasl_passwd\n"
+"smtp_use_tls = yes"
 
 #. (itstool) path: example/para
 #: article.translate.xml:2335
@@ -4501,6 +4474,8 @@ msgid ""
 "smtpd_sender_login_maps = hash:/usr/local/etc/postfix/sender_login_maps\n"
 "smtpd_sender_restrictions = reject_known_sender_login_mismatch"
 msgstr ""
+"smtpd_sender_login_maps = hash:/usr/local/etc/postfix/sender_login_maps\n"
+"smtpd_sender_restrictions = reject_known_sender_login_mismatch"
 
 #. (itstool) path: example/para
 #: article.translate.xml:2355
@@ -4619,6 +4594,8 @@ msgid ""
 "All non-trivial changes should be reviewed before they are committed to the "
 "repository."
 msgstr ""
+"Todos los cambios no triviales deben ser revisados antes de que se envíen al "
+"repositorio."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2432
@@ -4634,6 +4611,8 @@ msgid ""
 "The developer responsible for a code change is also responsible for making "
 "all necessary review-related changes."
 msgstr ""
+"El desarrollador responsable de un cambio de código también es responsable "
+"de hacer todos los cambios necesarios relacionados con la revisión."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2445
@@ -4648,7 +4627,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: article.translate.xml:2454
 msgid "Timeouts are not a substitute for review."
-msgstr ""
+msgstr "Los tiempos muertos no sustituyen a la revisión."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2458
@@ -4657,6 +4636,9 @@ msgid ""
 "for larger features. Accepted ways to speed up review times for your patches "
 "are:"
 msgstr ""
+"A veces las revisiones de los códigos tardan más de lo que se espera, "
+"especialmente para las funciones más grandes. Las formas aceptadas de "
+"acelerar los tiempos de revisión de tus parches son:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2464
@@ -4664,6 +4646,8 @@ msgid ""
 "Review other people's patches. If you help out, everybody will be more "
 "willing to do the same for you; goodwill is our currency."
 msgstr ""
+"Revisa los parches de otras personas. Si ayudas, todo el mundo estará más "
+"dispuesto a hacer lo mismo por ti; la buena voluntad es nuestra moneda."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2470
@@ -4680,6 +4664,8 @@ msgid ""
 "Ask for help on mailing lists, IRC, etc. Others may be able to either help "
 "you directly, or suggest a reviewer."
 msgstr ""
+"Pida ayuda en las listas de correo, IRC, etc. Otros pueden ayudarle "
+"directamente o sugerirle un revisor."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2485
@@ -4688,6 +4674,9 @@ msgid ""
 "smaller your patch, the higher the probability that somebody will take a "
 "quick look at it."
 msgstr ""
+"Divide tu parche en múltiples parches más pequeños que se construyen uno "
+"sobre otro. Cuanto más pequeño sea tu parche, mayor es la probabilidad de "
+"que alguien le eche un vistazo rápido."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2490
@@ -4696,6 +4685,9 @@ msgid ""
 "beginning of the effort as breaking large changes into smaller ones is often "
 "difficult after the fact."
 msgstr ""
+"Cuando se hacen grandes cambios, es útil tenerlo en cuenta desde el "
+"principio del proyecto, ya que dividir los grandes cambios en otros más "
+"pequeños suele ser difícil después del hecho."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2497
@@ -4707,6 +4699,12 @@ msgid ""
 "approve a change. This will usually be a committer who works with the code "
 "in question on a regular basis."
 msgstr ""
+"Los desarrolladores deben participar en las revisiones de código como "
+"revisores y revisados. Si alguien tiene la amabilidad de revisar tu código, "
+"deberías devolverle el favor a otra persona. Ten en cuenta que aunque "
+"cualquiera es bienvenido a revisar y dar su opinión sobre un parche, sólo un "
+"experto en la materia puede aprobar un cambio. Normalmente será un "
+"especialista que trabaje con el código en cuestión de forma regular."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2505
@@ -4715,6 +4713,9 @@ msgid ""
 "review by an experienced developer is sufficient when coupled with "
 "appropriate testing."
 msgstr ""
+"En algunos casos, es posible que no se disponga de un experto en la materia. "
+"En esos casos, basta con un examen por parte de un desarrollador "
+"experimentado cuando se combina con las pruebas apropiadas."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:2511
@@ -4797,13 +4798,12 @@ msgstr ""
 
 #. (itstool) path: entry/para
 #: article.translate.xml:2547
-#, fuzzy
 msgid ""
 "Avoid obfuscating the email address of the submitter as this adds additional "
 "work when searching logs."
 msgstr ""
 "Evite confundir la dirección de correo electrónico del remitente, ya que "
-"esto añade trabajo adicional al buscar los registros."
+"esto añade trabajo adicional al buscar en los registros."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2554
@@ -4818,6 +4818,11 @@ msgid ""
 "was submitted to a mailing list for review, and the review was favorable, "
 "then just include the list name."
 msgstr ""
+"El nombre y la dirección de correo electrónico de la persona o personas que "
+"revisaron el cambio; para los desarrolladores, sólo el nombre de usuario en "
+"el clúster de FreeBSD. Si se envió un parche a una lista de correo para su "
+"revisión, y la revisión fue favorable, entonces sólo incluya el nombre de la "
+"lista."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2564
@@ -4841,6 +4846,9 @@ msgid ""
 "While under mentorship, get mentor approval before the commit. Enter the "
 "mentor's username in this field, and note that they are a mentor:"
 msgstr ""
+"Mientras esté bajo la supervisión de un mentor, consiga la aprobación de "
+"éste antes de comprometerse. Ingrese el nombre de usuario del mentor en este "
+"campo, y note que es un mentor:"
 
 #. (itstool) path: entry/screen
 #: article.translate.xml:2578
@@ -4854,6 +4862,9 @@ msgid ""
 "If a team approved these commits then include the team name followed by the "
 "username of the approver in parentheses. For example:"
 msgstr ""
+"Si un equipo aprobó estos compromisos, entonces incluye el nombre del equipo "
+"seguido del nombre de usuario del que lo aprobó entre paréntesis. Por "
+"ejemplo:"
 
 #. (itstool) path: entry/screen
 #: article.translate.xml:2584
@@ -4872,6 +4883,8 @@ msgid ""
 "The name of the project (if any) from which the code was obtained. Do not "
 "use this line for the name of an individual person."
 msgstr ""
+"El nombre del proyecto (si lo hay) del que se obtuvo el código. No utilice "
+"esta línea para el nombre de una persona individual."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2595
@@ -4954,13 +4967,14 @@ msgid ""
 "include one or more references or a description of the issue. If possible, "
 "include a VuXML URL or a CVE ID."
 msgstr ""
+"Si el cambio está relacionado con una vulnerabilidad de seguridad o una "
+"exposición a la seguridad, incluya una o más referencias o una descripción "
+"de la cuestión. Si es posible, incluya una URL de VuXML o un ID de CVE."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2649
-#, fuzzy
-#| msgid "<literal>PR:</literal>"
 msgid "<literal>Event:</literal>"
-msgstr "<literal>PR:</literal>"
+msgstr "<literal>Event:</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2650
@@ -4977,7 +4991,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: article.translate.xml:2663
 msgid "<literal>Differential Revision:</literal>"
-msgstr ""
+msgstr "<literal>Differential Revision:</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2664
@@ -5008,6 +5022,10 @@ msgid ""
 "\t    PR:                    12345\n"
 "\t    Submitted by:\t   John Smith &lt;John.Smith@example.com&gt;"
 msgstr ""
+"...\n"
+"\n"
+"\t    PR:                    12345\n"
+"\t    Submitted by:\t   John Smith &lt;John.Smith@example.com&gt;"
 
 #. (itstool) path: example/title
 #: article.translate.xml:2687
@@ -5030,6 +5048,9 @@ msgid ""
 "\n"
 "\t    Reviewed by:       -arch"
 msgstr ""
+"...\n"
+"\n"
+"\t    Reviewed by:       -arch"
 
 #. (itstool) path: example/title
 #: article.translate.xml:2700
@@ -5051,6 +5072,9 @@ msgid ""
 "\n"
 "\t    Approved by:\t    <replaceable>abc</replaceable> (maintainer)"
 msgstr ""
+"...\n"
+"\n"
+"\t    Approved by:\t    <replaceable>abc</replaceable> (maintainer)"
 
 #. (itstool) path: example/para
 #: article.translate.xml:2710
@@ -5077,6 +5101,9 @@ msgid ""
 "\n"
 "\t    Obtained from:      OpenBSD"
 msgstr ""
+"...\n"
+"\n"
+"\t    Obtained from:      OpenBSD"
 
 #. (itstool) path: example/title
 #: article.translate.xml:2727
@@ -5100,6 +5127,9 @@ msgid ""
 "\n"
 "MFC after:      <replaceable>2 weeks</replaceable>"
 msgstr ""
+"...\n"
+"\n"
+"MFC after:      <replaceable>2 weeks</replaceable>"
 
 #. (itstool) path: example/para
 #: article.translate.xml:2738
@@ -5114,7 +5144,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: article.translate.xml:2746
 msgid "It is often necessary to combine these."
-msgstr ""
+msgstr "A menudo es necesario combinarlos."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2748
@@ -5149,11 +5179,17 @@ msgid ""
 "MFC after:          1 month\n"
 "Relnotes:           yes"
 msgstr ""
+"PR:                 54321\n"
+"Submitted by:       John Smith &lt;John.Smith@example.com&gt;\n"
+"Reviewed by:        -arch\n"
+"Obtained from:      NetBSD\n"
+"MFC after:          1 month\n"
+"Relnotes:           yes"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:2772
 msgid "Preferred License for New Files"
-msgstr ""
+msgstr "Licencia preferida para los nuevos archivos"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2774
@@ -5164,6 +5200,12 @@ msgid ""
 "to help you get started. As a rule, when in doubt, ask. It is much easier to "
 "give advice than to fix the source tree."
 msgstr ""
+"La política de licencia completa del Proyecto FreeBSD puede encontrarse en "
+"<link xlink:href=\"@@URL_RELPREFIX@@/internal/software-license.html\""
+">https://www.FreeBSD.org/internal/software-license.html</link>. El resto de "
+"esta sección está pensada para ayudarte a empezar. Como regla, cuando tenga "
+"dudas, pregunte. Es mucho más fácil dar consejos que arreglar el árbol "
+"fuente."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2779
@@ -5171,6 +5213,8 @@ msgid ""
 "The FreeBSD Project suggests and uses this text as the preferred license "
 "scheme:"
 msgstr ""
+"El Proyecto FreeBSD sugiere y usa este texto como el esquema de licencia "
+"preferido:"
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:2782
@@ -5205,6 +5249,38 @@ msgid ""
 " * [id for your version control system, if any]\n"
 " */"
 msgstr ""
+"/*-\n"
+" * SPDX-License-Identifier: BSD-2-Clause-FreeBSD\n"
+" *\n"
+" * Copyright (c) [year] [your name]\n"
+" *\n"
+" * Redistribution and use in source and binary forms, with or without\n"
+" * modification, are permitted provided that the following conditions\n"
+" * are met:\n"
+" * 1. Redistributions of source code must retain the above copyright\n"
+" *    notice, this list of conditions and the following disclaimer.\n"
+" * 2. Redistributions in binary form must reproduce the above copyright\n"
+" *    notice, this list of conditions and the following disclaimer in the\n"
+" *    documentation and/or other materials provided with the distribution.\n"
+" *\n"
+" * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND\n"
+" * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n"
+" * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR "
+"PURPOSE\n"
+" * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n"
+" * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR "
+"CONSEQUENTIAL\n"
+" * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n"
+" * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n"
+" * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, "
+"STRICT\n"
+" * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY "
+"WAY\n"
+" * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n"
+" * SUCH DAMAGE.\n"
+" *\n"
+" * [id for your version control system, if any]\n"
+" */"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2811
@@ -5297,11 +5373,14 @@ msgid ""
 "will be the date the license was issued by the authors of the software in "
 "question."
 msgstr ""
+"La fecha en que la licencia entra en vigor. A menos que se acuerde lo "
+"contrario, esta será la fecha en que la licencia fue emitida por los autores "
+"del software en cuestión."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2880
 msgid "The license text."
-msgstr ""
+msgstr "El texto de la licencia."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2884
@@ -5309,11 +5388,13 @@ msgid ""
 "A note of any restrictions, limitations or exceptions that apply "
 "specifically to FreeBSD's usage of the licensed material."
 msgstr ""
+"Una nota de cualquier restricción, limitación o excepción que se aplique "
+"específicamente al uso de FreeBSD del material licenciado."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2890
 msgid "Any other relevant information."
-msgstr ""
+msgstr "Cualquier otra información relevante."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2894
@@ -5324,6 +5405,12 @@ msgid ""
 "This receipt will be persistently archived and serve as our permanent record "
 "of the license grant."
 msgstr ""
+"Una vez que el Equipo del Núcleo <email>core@FreeBSD.org</email> esté "
+"satisfecho de que todos los detalles necesarios se han reunido y son "
+"correctos, la secretaria enviará un acuse de recibo firmado por PGP "
+"incluyendo los detalles de la licencia. Este recibo será archivado de forma "
+"persistente y servirá como nuestro registro permanente de la adjudicación de "
+"la licencia."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2900
