@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-07 22:28+0000\n"
+"PO-Revision-Date: 2020-09-08 16:44+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -12674,6 +12674,12 @@ msgid ""
 "interface. Also, ::1/128 and ff01::/32 are automatically added to routing "
 "table, and loopback interface joins node-local multicast group ff01::1."
 msgstr ""
+"هر رابط به نشانی مولتیکست درخواست شده و نشانی‌های مولتیکستِ link-local all-"
+"nodes می‌پیوندد (برای مثال، fe80::1:ff01:6317 و ff02::1، به‌ترتیب، در پیوندی "
+"که رابط بدان متصل شده است). علاوه‌بر نشانی link-local، نشانی‌های loopback "
+"مثل (::1) به رابط loopback تخصیص داده می‌شود. همچنین، ::1/128 و ff01::/32 به‌"
+"طور خودکار به جدول مسیریابی اضافه می‌شوند، و رابط loopback به گروه ff01::1 "
+"مولتیکست node-local می‌پیوندد."
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:7110
@@ -14220,37 +14226,37 @@ msgstr "حالت DES-CBC (<filename>rfc1829.txt</filename>)"
 #. (itstool) path: listitem/para
 #: book.translate.xml:8020
 msgid "new IPsec AH"
-msgstr ""
+msgstr "new IPsec AH"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8027
 msgid "keyed MD5 with 96bit crypto checksum (no document)"
-msgstr ""
+msgstr "keyed MD5 with 96bit crypto checksum (فاقد مستند)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8031
 msgid "keyed SHA1 with 96bit crypto checksum (no document)"
-msgstr ""
+msgstr "keyed SHA1 with 96bit crypto checksum (فاقد مستند)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8035
 msgid "HMAC MD5 with 96bit crypto checksum (<filename>rfc2403.txt</filename>)"
-msgstr ""
+msgstr "HMAC MD5 with 96bit crypto checksum (<filename>rfc2403.txt</filename>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8039
 msgid "HMAC SHA1 with 96bit crypto checksum (<filename>rfc2404.txt</filename>)"
-msgstr ""
+msgstr "HMAC SHA1 with 96bit crypto checksum (<filename>rfc2404.txt</filename>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8046
 msgid "new IPsec ESP"
-msgstr ""
+msgstr "new IPsec ESP"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8049
 msgid "null encryption (<filename>rfc2410.txt</filename>)"
-msgstr ""
+msgstr "null encryption (<filename>rfc2410.txt</filename>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8053
@@ -14258,51 +14264,53 @@ msgid ""
 "DES-CBC with derived IV (<filename>draft-ietf-ipsec-ciph-des-derived-01.txt</"
 "filename>, draft expired)"
 msgstr ""
+"DES-CBC with derived IV (<filename>draft-ietf-ipsec-ciph-des-derived-01."
+"txt</filename>، پیش‌نویس منقضی شده)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8058
 msgid "DES-CBC with explicit IV (<filename>rfc2405.txt</filename>)"
-msgstr ""
+msgstr "DES-CBC with explicit IV (<filename>rfc2405.txt</filename>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8062
 msgid "3DES-CBC with explicit IV (<filename>rfc2451.txt</filename>)"
-msgstr ""
+msgstr "3DES-CBC with explicit IV (<filename>rfc2451.txt</filename>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8066
 msgid "BLOWFISH CBC (<filename>rfc2451.txt</filename>)"
-msgstr ""
+msgstr "BLOWFISH CBC (<filename>rfc2451.txt</filename>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8070
 msgid "CAST128 CBC (<filename>rfc2451.txt</filename>)"
-msgstr ""
+msgstr "CAST128 CBC (<filename>rfc2451.txt</filename>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8074
 msgid "RC5 CBC (<filename>rfc2451.txt</filename>)"
-msgstr ""
+msgstr "RC5 CBC (<filename>rfc2451.txt</filename>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8078
 msgid "each of the above can be combined with:"
-msgstr ""
+msgstr "هر کدام از موارد بالا را می‌توان با موارد زیر ترکیب کرد:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8081
 msgid "ESP authentication with HMAC-MD5(96bit)"
-msgstr ""
+msgstr "اعتباربخشیِ ESP با HMAC-MD5(96bit)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8085
 msgid "ESP authentication with HMAC-SHA1(96bit)"
-msgstr ""
+msgstr "اعتباربخشیِ ESP با HMAC-SHA1(96bit)"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:8094
 msgid "The following algorithms are NOT supported:"
-msgstr ""
+msgstr "الگوریتم‌های پیش رو پشتیبانی نمی‌شوند:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8102
@@ -14310,6 +14318,8 @@ msgid ""
 "HMAC MD5 with 128bit crypto checksum + 64bit replay prevention "
 "(<filename>rfc2085.txt</filename>)"
 msgstr ""
+"HMAC MD5 with 128bit crypto checksum + 64bit replay prevention "
+"(<filename>rfc2085.txt</filename>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8107
@@ -14317,6 +14327,8 @@ msgid ""
 "keyed SHA1 with 160bit crypto checksum + 32bit padding (<filename>rfc1852."
 "txt</filename>)"
 msgstr ""
+"keyed SHA1 with 160bit crypto checksum + 32bit padding (<filename>rfc1852."
+"txt</filename>)"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:8114
