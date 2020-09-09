@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-08 17:35+0000\n"
+"PO-Revision-Date: 2020-09-10 01:07+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -14356,11 +14356,16 @@ msgid ""
 "wide coverage for IPsec crypto algorithms documented in RFC (we cover "
 "algorithms without intellectual property issues only)."
 msgstr ""
+"IPsec (در هسته) و IKE (در محیط کاربری به‌عنوان \"racoon\") در چندین رویداد "
+"آزمایش هم‌کنش‌پذیری آزمایش شده است، و چنان شناخته شده است که با پیاده‌سازی‌"
+"های دیگر به‌خوبی هم‌کنش می‌کند. همچنین، پیاده‌سازی فعلی IPsec به‌عنوان پوششی "
+"کاملاً گسترده برای الگوریتم‌های رمزنگاریِ IPsec در RFC مستند شده است (ما "
+"تنها الگوریتم‌های فاقد مسائل مالکیت معنوی را پوشش می‌دهیم)."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:8124
 msgid "ECN Consideration on IPsec Tunnels"
-msgstr ""
+msgstr "ملاحظهٔ ECN بر روی تونل‌های IPsec"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:8126
@@ -14368,6 +14373,8 @@ msgid ""
 "ECN-friendly IPsec tunnel is supported as described in <filename>draft-ipsec-"
 "ecn-00.txt</filename>."
 msgstr ""
+"تونل IPsec سازگار با ECN پشتیبانی می‌شود چنانکه در <filename>draft-ipsec-"
+"ecn-00.txt</filename> تشریح شده است."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:8129
@@ -14378,6 +14385,11 @@ msgid ""
 "The decapsulation rule is not compatible with ECN, since ECN bit on the "
 "outer IP TOS/traffic class field will be lost."
 msgstr ""
+"تونل IPsec معمولی در RFC2401 تشریح شده است. در کپسوله‌سازی، زمینهٔ IPv4 TOS "
+"(یا، زمینهٔ کلاس ترافیک IPv6) از سرآیند IP داخلی به سرآیند IP بیرونی کپی می‌"
+"شود. در کپسوله‌زدایی، سرآیند IP بیرونی به‌سادگی حذف می‌شود. قانون کپسوله‌"
+"زدایی سازگار با ECN نیست، زیرا بیت ECN در زمینهٔ کلاس ترافیک/TOS نشانی IP "
+"بیرونی از دست می‌رود."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:8136
@@ -14387,6 +14399,10 @@ msgid ""
 "aciri.org/floyd/papers/draft-ipsec-ecn-00.txt\"> http://www.aciri.org/floyd/"
 "papers/draft-ipsec-ecn-00.txt</link>, chapter 3."
 msgstr ""
+"برای آنکه تونل IPsec را سازگار با ECN کنیم، باید روند کپسوله‌سازی و کپسوله‌"
+"زدایی را تغییر دهیم. این در <link xlink:href=\"http://www.aciri.org/floyd/"
+"papers/draft-ipsec-ecn-00.txt\"> http://www.aciri.org/floyd/papers/draft-"
+"ipsec-ecn-00.txt</link>، فصل ۳ تشریح شده است."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:8142
@@ -14394,21 +14410,23 @@ msgid ""
 "IPsec tunnel implementation can give you three behaviors, by setting net."
 "inet.ipsec.ecn (or net.inet6.ipsec6.ecn) to some value:"
 msgstr ""
+"پیاده‌سازی تونل IPsec با تنظیم مقدار net.inet.ipsec.ecn (یا net.inet6.ipsec6."
+"ecn) ممکن است به شما سه رفتار را نشان دهد:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8148
 msgid "RFC2401: no consideration for ECN (sysctl value -1)"
-msgstr ""
+msgstr "RFC2401: هیچ ملاحظه‌ای برای ECN (sysctl value -1) نیست"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8152
 msgid "ECN forbidden (sysctl value 0)"
-msgstr ""
+msgstr "ECN ممنوع (sysctl value 0)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8155
 msgid "ECN allowed (sysctl value 1)"
-msgstr ""
+msgstr "ECN مجاز (sysctl value 1)"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:8159
@@ -14417,12 +14435,16 @@ msgid ""
 "(draft-ipsec-ecn-00 wants per-SA configuration, but it looks too much for "
 "me)."
 msgstr ""
+"توجه داشته باشید که این رفتارها به روش هر گره قابل تنظیم هستند، نه به روش هر "
+"SA (draft-ipsec-ecn-00 خواهان تنظیم کردن به روش هر SA است، اما به‌نظر خیلی "
+"زیاد است)."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:8163
 msgid ""
 "The behavior is summarized as follows (see source code for more detail):"
 msgstr ""
+"این رفتارها بدین شکل خلاصه شده‌اند (کد منبع را برای جزئیات بیشتر ببینید):"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:8166
@@ -14442,11 +14464,30 @@ msgid ""
 "                inner to outer.                 is 1, enable ECN CE bit on\n"
 "                set ECN CE bit to 0.            the inner."
 msgstr ""
+"کپسوله‌سازی                     کپسوله‌زدایی\n"
+"                ---                             ---\n"
+"RFC2401         تمام بیت‌های TOS را               بیت‌های TOS را در بیرون "
+"حذف می‌کند\n"
+"                از داخلی به بیرونی کپی می‌کند.            (بیت‌های درونی TOS "
+"را همان‌طور که هست استفاده می‌کند)\n"
+"\n"
+"ECN ممنوع   بیت‌های TOS را به‌غیر از ECN    بیت‌های TOS در بیرون را حذف می‌"
+"کند\n"
+"                (ماسک‌شده با 0xfc) از درونی   (بیت‌های درونی TOS را همانطور "
+"که هست استفاد می‌کند)\n"
+"                به بیرونی کپی می‌کند.  بیت‌های ECN را روی 0 قرار دهید.\n"
+"\n"
+"ECN مجاز     بیت‌های TOS را به‌غیر از ECN    بیت‌های درونی TOS را با چندین\n"
+"                CE (ماسک‌شده با 0xfe) از      تغییر استفاده کنید.  چنانچه "
+"بیت بیرونی ECN CE\n"
+"                داخلی به بیرونی کپی کنید.                 1 باشد، بیت ECN CE "
+"را در داخل\n"
+"                بیت ECN CE را روی 0 قرار دهید.           فعال کنید."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:8180
 msgid "General strategy for configuration is as follows:"
-msgstr ""
+msgstr "راهبرد کلی برای پیکربندی چنین است:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8183
@@ -14455,6 +14496,9 @@ msgid ""
 "should better configure both end to <quote>ECN allowed</quote> (sysctl value "
 "1)."
 msgstr ""
+"چنانچه هر دو نقطه‌های پایانیِ تونل IPsec قابلیت رفتار سازگار با ECN را داشته "
+"باشند، بهتر است هر دو پایانه را روی <quote>ECN مجاز</quote> (sysctl value 1) "
+"تنظیم کنید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8189
@@ -14462,21 +14506,23 @@ msgid ""
 "if the other end is very strict about TOS bit, use \"RFC2401\" (sysctl value "
 "-1)."
 msgstr ""
+"چنانچه پایانهٔ دیگر در مورد بیت TOS بسیار سخت‌گیرانه است، از \"RFC2401\" ("
+"sysctl value -1) استفاده کنید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8193
 msgid "in other cases, use \"ECN forbidden\" (sysctl value 0)."
-msgstr ""
+msgstr "در سایر موارد، از \"ECN ممنوع\" (sysctl value 0) استفاده کنید."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:8198
 msgid "The default behavior is \"ECN forbidden\" (sysctl value 0)."
-msgstr ""
+msgstr "رفتار پیش‌فرض \"ECN ممنوع\" است (sysctl value 0)."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:8201
 msgid "For more information, please refer to:"
-msgstr ""
+msgstr "برای اطلاعات بیشتر، لطفاً مراجعه کنید به:"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:8203
@@ -14485,6 +14531,9 @@ msgid ""
 "\"> http://www.aciri.org/floyd/papers/draft-ipsec-ecn-00.txt</link>, RFC2481 "
 "(Explicit Congestion Notification), src/sys/netinet6/{ah,esp}_input.c"
 msgstr ""
+"<link xlink:href=\"http://www.aciri.org/floyd/papers/draft-ipsec-ecn-00.txt\""
+"> http://www.aciri.org/floyd/papers/draft-ipsec-ecn-00.txt</link>, RFC2481 ("
+"Explicit Congestion Notification), src/sys/netinet6/{ah,esp}_input.c"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:8208
@@ -14492,11 +14541,12 @@ msgid ""
 "(Thanks goes to Kenjiro Cho <email>kjc@csl.sony.co.jp</email> for detailed "
 "analysis)"
 msgstr ""
+"(با تشکر از Kenjiro Cho <email>kjc@csl.sony.co.jp</email> برای تحلیل بتفصیل)"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:8214
 msgid "Interoperability"
-msgstr ""
+msgstr "هم‌کنش‌پذیری"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:8216
@@ -14505,6 +14555,9 @@ msgid ""
 "interoperability in the past. Note that both ends may have modified their "
 "implementation, so use the following list just for reference purposes."
 msgstr ""
+"در اینجا (چندین) بستر هستند که کدِ KAME هم‌کنش‌پذیریِ IPsec/IKE را در گذشته "
+"آزمایش کرده است. توجه داشته باشید که هردوی پایانه‌ها ممکن است پیاده‌سازی‌شان "
+"را تغییر داده باشند، در نتیجه فهرست پیش رو را فقط برای ارجاع استفاده کنید."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:8221
@@ -14516,11 +14569,17 @@ msgid ""
 "Netscreen, OpenBSD, RedCreek, Routerware, SSH, Secure Computing, Soliton, "
 "Toshiba, VPNet, Yamaha RT100i"
 msgstr ""
+"Altiga، Ashley-laurent (vpcom.com)، Data Fellows (F-Secure)، Ericsson ACC، "
+"FreeS/WAN، HITACHI، IBM <trademark class=\"registered\">AIX</trademark>، "
+"IIJ, Intel، <trademark class=\"registered\">Microsoft</trademark><trademark "
+"class=\"registered\">Windows NT</trademark>، NIST (linux IPsec + plutoplus)، "
+"Netscreen، OpenBSD، RedCreek، Routerware، SSH، Secure Computing، Soliton، "
+"Toshiba، VPNet، Yamaha RT100i"
 
 #. (itstool) path: part/title
 #: book.translate.xml:8236
 msgid "Kernel"
-msgstr ""
+msgstr "هسته"
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:8245
