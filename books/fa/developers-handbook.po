@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
 "PO-Revision-Date: 2020-09-11 10:06+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -12859,6 +12859,12 @@ msgid ""
 "Jim Bound to ipngwg mailing list (look for \"(ipng 6712)\" in the archive) "
 "and it is implemented Jim's update."
 msgstr ""
+"RFC2462 دارای قوانین اعتبارسنجی در برابر گزینهٔ اطلاعات پیشوند RA ورودی، در "
+"5.5.3 (e) است. این بدین منظور است که میزبان‌‌‌ها را از مسیریاب‌های مخرب (یا "
+"بد پیکربندی شده) ای که طول عمر پیشوند بسیار کوتاه را اعلان می‌کنند محافظت ‌"
+"کند. به‌ روز رسانی‌ای توسط Jim Bound در فهرست پست‌سپاریِ ipngwg ایجاد شده "
+"است (\"(ipng 6712)\" را ببینید در بایگانی) و به روز رسانیِ Jim پیاده‌سازی "
+"شده است."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:7184
@@ -14903,6 +14909,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>mkdir /var/crash</userinput>\n"
 "<prompt>#</prompt> <userinput>chmod 700 /var/crash</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>mkdir /var/crash</userinput>\n"
+"<prompt>#</prompt> <userinput>chmod 700 /var/crash</userinput>"
 
 #. (itstool) path: important/para
 #: book.translate.xml:8419
@@ -16096,11 +16104,15 @@ msgid ""
 "Add <literal>dcons_gdb=1</literal> in <filename>/boot/loader.conf</filename> "
 "if you use GDB over <trademark class=\"registered\">FireWire</trademark>."
 msgstr ""
+"چنانچه از GDB بر روی <trademark class=\"registered\">FireWire</trademark> "
+"استفاده می‌کنید، <literal>dcons_gdb=1</literal> را در <filename>/boot/loader."
+"conf</filename> اضافه کنید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9030
 msgid "Enable <literal>dcons</literal> in <filename>/etc/ttys</filename>."
 msgstr ""
+"<literal>dcons</literal> را در <filename>/etc/ttys</filename> فعال کنید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9034
