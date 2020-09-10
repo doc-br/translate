@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-10 01:07+0000\n"
+"PO-Revision-Date: 2020-09-10 17:27+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -14584,7 +14584,7 @@ msgstr "هسته"
 #. (itstool) path: chapter/title
 #: book.translate.xml:8245
 msgid "Building and Installing a FreeBSD Kernel"
-msgstr ""
+msgstr "ساخت و نصب هستهٔ FreeBSD"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:8247
@@ -14593,6 +14593,9 @@ msgid ""
 "To debug the FreeBSD kernel it is required to be able to build one. There "
 "are two known ways to do so:"
 msgstr ""
+"توسعه‌دهندهٔ هسته بودن نیازمند فهم فرآیند ساخت هسته است. برای اشکال‌زدایی "
+"هستهٔ FreeBSD لازم است که بتوانید یکی را بسازید. دو راه برای این منظور وجود "
+"دارد:"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:8251
@@ -14601,6 +14604,9 @@ msgid ""
 "<link xlink:href=\"../handbook/kernelconfig-building.html\">Building and "
 "Installing a Custom Kernel</link> chapter of the FreeBSD Handbook."
 msgstr ""
+"روند پشتیبانی‌شده برای ساخت و نصب یک هسته در فصل <link xlink:href=\"../"
+"handbook/kernelconfig-building.html\">ساخت و نصب یک هستهٔ سفارشی</link> واقع "
+"در کتاب راهنمای FreeBSD مستند شده است."
 
 #. (itstool) path: note/para
 #: book.translate.xml:8257
@@ -14611,11 +14617,15 @@ msgid ""
 "the FreeBSD Handbook. If this is not the case, please read through the above "
 "mentioned chapter to understand how the build process works."
 msgstr ""
+"چنین فرض می‌شود که خوانندهٔ این فصل با اطلاعات توضیح داده شده در فصل <link "
+"xlink:href=\"../handbook/kernelconfig-building.html\">ساخت و نصب یک هستهٔ "
+"سفارشی</link> از کتاب راهنمای FreeBSD آشنا باشد. اگر چنین نیست، خواهشمند است "
+"فصل ذکر شده را مطالعه کنید تا نحوهٔ کارکرد فرآیند ساخت را درک کنید."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:8266
 msgid "Building the Faster but Brittle Way"
-msgstr ""
+msgstr "ساختن از راه سریع‌تر اما شکننده"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8268
@@ -14625,6 +14635,10 @@ msgid ""
 "single option or two were tweaked in the kernel configuration file. On the "
 "other hand, it might lead to unexpected kernel build breakage."
 msgstr ""
+"ساختن هسته به این روش ممکن است به‌هنگام کار بر روی کد هسته مفید باشد و در "
+"واقع ممکن است سریع‌تر از روند مستند شده زمانی‌که تنها یک یا دو گزینه در "
+"پروندهٔ پیکربندی هسته تغییر یافته‌اند باشد. از سوی دیگر، ممکن است منجر به "
+"خراب شدن غیرمنتظرهٔ روند ساخت هسته شود."
 
 #. (itstool) path: step/para
 #: book.translate.xml:8277
@@ -14632,12 +14646,16 @@ msgid ""
 "Run <citerefentry><refentrytitle>config</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> to generate the kernel source code:"
 msgstr ""
+"<citerefentry><refentrytitle>config</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> را اجرا کنید تا کد منبع هسته را تولید کنید:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:8280
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>/usr/sbin/config <replaceable>MYKERNEL</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>/usr/sbin/config "
+"<replaceable>MYKERNEL</replaceable></userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:8284
@@ -14646,17 +14664,22 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> will print the name of "
 "this directory after being run as above."
 msgstr ""
+"مسیر خود را به مسیر ساخت تغییر دهید. دستور "
+"<citerefentry><refentrytitle>config</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> نام این مسیر را پس از اجرا مانند بالا چاپ می‌کند."
 
 #. (itstool) path: step/screen
 #: book.translate.xml:8288
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>cd ../compile/<replaceable>MYKERNEL</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd ../compile/"
+"<replaceable>MYKERNEL</replaceable></userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:8292
 msgid "Compile the kernel:"
-msgstr ""
+msgstr "هسته را همگردانی کنید:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:8294
@@ -14665,22 +14688,24 @@ msgid ""
 "<prompt>#</prompt> <userinput>make depend</userinput>\n"
 "<prompt>#</prompt> <userinput>make</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>make depend</userinput>\n"
+"<prompt>#</prompt> <userinput>make</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:8299
 msgid "Install the new kernel:"
-msgstr ""
+msgstr "هستهٔ جدید را نصب کنید:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:8301
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>make install</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>make install</userinput>"
 
 #. (itstool) path: info/title
 #: book.translate.xml:8315
 msgid "Kernel Debugging"
-msgstr ""
+msgstr "اشکال‌زدایی هسته"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:8317
@@ -14696,6 +14721,7 @@ msgstr ""
 msgid ""
 "<personname><firstname>Jörg</firstname><surname>Wunsch</surname></personname>"
 msgstr ""
+"<personname><firstname>Jörg</firstname><surname>Wunsch</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:8319
@@ -14703,6 +14729,8 @@ msgid ""
 "<personname><firstname>Robert</firstname><surname>Watson</surname></"
 "personname>"
 msgstr ""
+"<personname><firstname>Robert</firstname><surname>Watson</surname></personnam"
+"e>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:8326
