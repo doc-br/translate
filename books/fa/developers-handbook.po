@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-11 10:06+0000\n"
+"PO-Revision-Date: 2020-09-11 18:11+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -12487,7 +12487,7 @@ msgid ""
 msgstr ""
 "IPv6 از نشانی‌های محدود‌شده استفاده می‌کند. در نتیجه، تعیین فهرست محدوده با "
 "یک نشانی IPv6 بسیار مهم است (فهرست رابط برای نشانی link-local، یا فهرست سایت "
-"برای نشانی site-local). بدون فهرست محدود‌شده، نشانی محدود‌شدهٔ IPv6 نسبت به "
+"برای نشانی site-local). بدون فهرست محدوده، نشانی محدود‌شدهٔ IPv6 نسبت به "
 "هسته مبهم است، و هسته قادر به تعیین رابط بیرونی برای یک بسته نخواهد بود."
 
 #. (itstool) path: sect3/para
@@ -13041,6 +13041,15 @@ msgid ""
 "interface. 2001:0DB8:808:1:200:f8ff:fe01:6317 is chosen as the source for "
 "the destination 2001:0DB8:800::1."
 msgstr ""
+"برای مثال، ::1 برای ff01::1 انتخاب شده است، fe80:1::200:f8ff:fe01:6317 برای "
+"fe80:1::2a0:24ff:feab:839b (توجه داشته باشید که فهرست رابط تعبیه شده - "
+"چنانکه در <link linkend=\"ipv6-scope-index\">23.5.1.3</link> توضیح داده شده "
+"است - به ما کمک می‌کند تا نشانی منبع درست را انتخاب کنیم. آن فهرست‌های تعبیه "
+"شده روی خط نخواهند بود). اگر رابط بیرونی دارای نشانی‌های مختلف برای محدوده "
+"باشد، یک منبع به‌منظور پایهٔ طولانی‌ترین تطابق انتخاب می‌شود (قانون سوم). "
+"فرض کنید 2001:0DB8:808:1:200:f8ff:fe01:6317 و 2001:0DB8:9:124:200:f8ff:fe01:"
+"6317 به رابط بیرونی داده شده‌اند. 2001:0DB8:808:1:200:f8ff:fe01:6317 به‌"
+"عنوان منبع برای مقصدِ 2001:0DB8:800::1 انتخاب شده است."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7286
@@ -14919,6 +14928,8 @@ msgid ""
 "sensitive and very likely contains confidential information such as "
 "passwords."
 msgstr ""
+"همچنین، به یاد داشته باشید که محتوای <filename>/var/crash</filename> حساس "
+"است و به‌احتمال بالا شامل اطلاعات محرمانه‌ای مانند رمزها هست."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:8426
@@ -15350,6 +15361,9 @@ msgid ""
 "deleting old <filename>vmcore</filename> files in <filename>/var/crash</"
 "filename> could save a considerable amount of disk space!"
 msgstr ""
+"چنانچه سامانهٔ شما مدام خراب می‌شود و حافظهٔ دیسک شما رو به پایان است، پاک "
+"کردن پرونده‌های قدیمیِ <filename>vmcore</filename> در <filename>/var/crash</"
+"filename> می‌تواند مقدار قابل توجهی از حافظهٔ شما را حفظ کند!"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:8642
@@ -15379,13 +15393,13 @@ msgstr ""
 #: book.translate.xml:8658
 #, no-wrap
 msgid "options KDB"
-msgstr ""
+msgstr "options KDB"
 
 #. (itstool) path: para/programlisting
 #: book.translate.xml:8659
 #, no-wrap
 msgid "options DDB"
-msgstr ""
+msgstr "options DDB"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8656
@@ -15395,6 +15409,11 @@ msgid ""
 "href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/index.html\">The "
 "FreeBSD Handbook</link> for details on configuring the FreeBSD kernel)."
 msgstr ""
+"برای اضافه کردن DDB به هستهٔ خود، گزینه‌های <_:programlisting-1/> <_:"
+"programlisting-2/> را به پروندهٔ پیکربندی خود اضافه کنید، و آن را دوباره "
+"بسازید. (<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
+"handbook/index.html\">کتاب راهنمای FreeBSD</link> را برای جزئیات بیشتر در "
+"مورد پیکربندی هستهٔ FreeBSD ببینید)."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8664
@@ -15419,7 +15438,7 @@ msgstr ""
 #: book.translate.xml:8677
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>sysctl debug.kdb.enter=1</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>sysctl debug.kdb.enter=1</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8679
@@ -15447,18 +15466,18 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:8696
 msgid "To obtain the unattended functionality, add:"
-msgstr ""
+msgstr "برای بدست آوردن عملکرد بی‌اعتنا، این را اضافه کنید به:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:8698
 #, no-wrap
 msgid "options\tKDB_UNATTENDED"
-msgstr ""
+msgstr "options\tKDB_UNATTENDED"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8700
 msgid "to the kernel configuration file and rebuild/reinstall."
-msgstr ""
+msgstr "به پروندهٔ پیکربندی هسته و مجدداً بسازید/نصب کنید."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8702
@@ -15466,12 +15485,14 @@ msgid ""
 "The DDB commands roughly resemble some <command>gdb</command> commands. The "
 "first thing you probably need to do is to set a breakpoint:"
 msgstr ""
+"دستورهای DDB تقریباً شبیه به برخی دستورهای <command>gdb</command> هستند. "
+"اولین کاری که احتمالاً لازم است انجام دهید ایجاد یک نقطهٔ توقف است:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8706
 #, no-wrap
 msgid "<userinput>break function-name address</userinput>"
-msgstr ""
+msgstr "<userinput>break function-name address</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8708
@@ -15486,24 +15507,24 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:8714
 msgid "To exit the debugger and continue execution, type:"
-msgstr ""
+msgstr "به‌منظور خروج از اشکال‌زدا و ادامهٔ اجرا، بنویسید:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8717
 #, no-wrap
 msgid "<userinput>continue</userinput>"
-msgstr ""
+msgstr "<userinput>continue</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8719
 msgid "To get a stack trace of the current thread, use:"
-msgstr ""
+msgstr "برای بدست آوردن رد پشتهٔ بند جاری، از این استفاده کنید:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8721
 #, no-wrap
 msgid "<userinput>trace</userinput>"
-msgstr ""
+msgstr "<userinput>trace</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8723
