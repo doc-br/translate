@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-11 18:11+0000\n"
+"PO-Revision-Date: 2020-09-12 18:07+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -3129,7 +3129,7 @@ msgid ""
 "a breakpoint, this means that the program was not compiled with <option>-g</"
 "option>."
 msgstr ""
-"(بدون هیچ اشاره‌ای به نام پرونده و شماره خطِ کد منبع) هنگامی‌که نقطهٔ گسست "
+"(بدون هیچ اشاره‌ای به نام پرونده و شماره خطِ کد منبع) هنگامی‌که نقطهٔ توقف "
 "را تعیین می‌کنیم، بدان معناست که برنامه بدون <option>-g</option> همگردان شده "
 "است."
 
@@ -13062,6 +13062,13 @@ msgid ""
 "the target address of the corresponding NS's target. In this case we follow "
 "the spec rather than the above longest-match rule."
 msgstr ""
+"توجه داشته باشید که قاعدهٔ بالا در مشخصات IPv6 مستند نشده است. این یک موردِ "
+"\"برای پیاده‌سازی\" محسوب می‌شود. مواردی وجود دارند که ما قاعدهٔ بالا را در "
+"آنها اجرا نمی‌کنیم. یک مثال جلسهٔ TCP متصل است، و ما نشانی نگه داشته شده در "
+"tcb را به‌عنوان منبع استفاده می‌کنیم. مثال دیگر نشانی منبع برای اعلان همسایه "
+"است. تحت مشخصات (RFC2461 7.2.2) منبعِ NA (اعلان همسایه) باید نشانی هدف برای "
+"هدفِ NS (درخواست همسایهٔ) مربوطه باشد. در این مورد ما مشخصات را به‌جای قاعدهٔ"
+" طولانی‌ترین تطابق بالا دنبال می‌کنیم."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7296
@@ -13077,6 +13084,16 @@ msgid ""
 "(NOTE: there is some debate underway in IETF ipngwg on how to use "
 "\"deprecated\" address)."
 msgstr ""
+"برای اتصال‌های جدید (زمانی‌که قاعدهٔ 1 اعمال نمی‌شود)، چنانچه سایر گزینه‌ها "
+"مطرح باشند نشانی‌های منسوخ شده (نشانی‌هایی با طول عمر ترجیح داده شده = 0) به‌"
+"عنوان نشانی منبع انتخاب نمی‌شوند. اگر هیچ گزینهٔ دیگری نباشد، نشانی‌های "
+"منسوخ شده به‌عنوان آخرین گزینه استفاده می‌شوند. چنانچه گزینه‌های مختلف برای "
+"نشانی‌های منسوخ شده وجود دارند، قاعدهٔ محدودهٔ بالا برای انتخاب از بین نشانی‌"
+"های منسوخ شده مورد استفاده قرار می‌گیرد. اگر می‌خواهید استفادهٔ نشانی‌های‌ "
+"منسوخ شده را به هر دلیلی ممنوع کنید، مقدار net.inet6.ip6.use_deprecated را "
+"روی 0 تنظیم کنید. مسائل مرتبط با نشانی منسوخ شده در RFC2462 5.5.4 تشریح شده‌"
+"اند (توجه: در IETF ipngwg بحث‌هایی در مورد چگونگی به‌کار بردن نشانی \"منسوخ "
+"شده\" در جریان است)."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:7311
@@ -13127,6 +13144,11 @@ msgid ""
 "buffer and the -s option specifies the length of the packet, which should be "
 "more than 65,535. For example, type as follows:"
 msgstr ""
+"سپس می‌توانید بارهای jumbo را توسط دستور "
+"<citerefentry><refentrytitle>ping6</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> با گزینه‌های -b و -s مورد آزمون قرار دهید. گزینهٔ -b باید "
+"تعیین شود تا اندازهٔ میان‌گیر سوکت را بزرگ‌تر کند و گزینهٔ -s طول بسته را "
+"تعیین می‌کند، که باید بیشتر از ۶۵٫۵۳۵ باشد. برای مثال، به‌شکل زیر بنویسید:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:7335
@@ -13190,7 +13212,7 @@ msgid ""
 "have no medium (other than loopback) to test this. Contact us if you need "
 "this."
 msgstr ""
-"TCP/UDP بر روی jumbogram در حال حاضر پشتیبانی نمی‌شود. این بدین خاطر است که "
+"TCP/UDP در حال حاضر بر روی jumbogram پشتیبانی نمی‌شود. این بدین خاطر است که "
 "ما هیچ وسیله‌ای (به غیر از loopback) برای آزمودن آن ندارم . چنانچه به چنین "
 "چیزی نیاز داشتید ما را در جریان بگذارید."
 
@@ -15532,11 +15554,13 @@ msgid ""
 "To get a stack trace of an arbitrary thread, specify a process ID or thread "
 "ID as a second argument to <command>trace</command>."
 msgstr ""
+"برای بدست آوردن رد پشتهٔ یک بند دلخواه، شناسهٔ فرآیند یا شناسهٔ نخ را به‌"
+"عنوان دومین برهان در <command>trace</command> تعیین کنید."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8727
 msgid "If you want to remove a breakpoint, use"
-msgstr ""
+msgstr "چنانچه می‌خواهید نقطهٔ توقف را حذف کنید، وارد کنید"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8729
@@ -15545,6 +15569,8 @@ msgid ""
 "<userinput>del</userinput>\n"
 "<userinput>del address-expression</userinput>"
 msgstr ""
+"<userinput>del</userinput>\n"
+"<userinput>del address-expression</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8732
@@ -15553,34 +15579,37 @@ msgid ""
 "deletes the current breakpoint. The second form can remove any breakpoint, "
 "but you need to specify the exact address; this can be obtained from:"
 msgstr ""
+"اولین قالب پس از اصابت نقطهٔ توقف به‌سرعت پذیرفته می‌شود، و نقطهٔ توقف جاری "
+"را حذف می‌کند. دومین قالب می‌تواند هر نقطهٔ توقفی را حذف کند، اما لازم است "
+"که نشانی دقیق را تعیین کنید؛ این امر را می‌توان بدین شکل بدست آورد:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8737
 #, no-wrap
 msgid "<userinput>show b</userinput>"
-msgstr ""
+msgstr "<userinput>show b</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8739
 msgid "or:"
-msgstr ""
+msgstr "یا:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8741
 #, no-wrap
 msgid "<userinput>show break</userinput>"
-msgstr ""
+msgstr "<userinput>show break</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8743
 msgid "To single-step the kernel, try:"
-msgstr ""
+msgstr "برای تک مرحله‌ای کردن هسته، وارد کنید:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8745
 #, no-wrap
 msgid "<userinput>s</userinput>"
-msgstr ""
+msgstr "<userinput>s</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8747
@@ -15588,12 +15617,14 @@ msgid ""
 "This will step into functions, but you can make DDB trace them until the "
 "matching return statement is reached by:"
 msgstr ""
+"این مرحله وارد توابع می‌شود، اما می‌توانید DDB را وادار به ردیابی آنها کنید "
+"تا زمانی‌که عبارت بازگشتِ تطابق‌یافته برسد به:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8750
 #, no-wrap
 msgid "<userinput>n</userinput>"
-msgstr ""
+msgstr "<userinput>n</userinput>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:8753
@@ -15602,6 +15633,9 @@ msgid ""
 "statement; it is like <command>gdb</command>'s <command>finish</command>. "
 "Pressing <keycap>n</keycap> more than once will cause a continue."
 msgstr ""
+"این عبارت از عبارتِ <command>next</command> در <command>gdb</command> متفاوت "
+"است؛ مانند <command>finish</command> در <command>gdb</command> است. فشردن "
+"کلید <keycap>n</keycap> بیش از یکبار باعث ادامه‌دادن می‌شود."
 
 #. (itstool) path: para/screen
 #: book.translate.xml:8761
@@ -15612,6 +15646,10 @@ msgid ""
 "<userinput>x/bc termbuf,10</userinput>\n"
 "<userinput>x/s stringbuf</userinput>"
 msgstr ""
+"<userinput>x/wx 0xf0133fe0,40</userinput>\n"
+"<userinput>x/hd db_symtab_space</userinput>\n"
+"<userinput>x/bc termbuf,10</userinput>\n"
+"<userinput>x/s stringbuf</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8759
@@ -15621,18 +15659,22 @@ msgid ""
 "number after the comma is the object count. To display the next 0x10 items, "
 "simply use:"
 msgstr ""
+"برای بررسی داده‌ها از حافظه، (برای مثال) از: <_:screen-1/> برای دسترسیِ "
+"کلمه/نیم‌کلمه/بایت، و نمایش دستگاه شانزده‌شانزدهی/ده‌دهی/نویسه/رشته استفاده "
+"کنید. عددی که بعد از ویرگول می‌آید هدف شمارش است. برای نمایش مواردِ 0x10 "
+"بعدی، به‌سادگی از این استفاده کنید:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8770
 #, no-wrap
 msgid "<userinput>x ,10</userinput>"
-msgstr ""
+msgstr "<userinput>x ,10</userinput>"
 
 #. (itstool) path: para/screen
 #: book.translate.xml:8774
 #, no-wrap
 msgid "<userinput>x/ia foofunc,10</userinput>"
-msgstr ""
+msgstr "<userinput>x/ia foofunc,10</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8772
