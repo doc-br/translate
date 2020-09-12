@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-12 18:07+0000\n"
+"PO-Revision-Date: 2020-09-12 21:19+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -14808,7 +14808,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:8326
 msgid "Obtaining a Kernel Crash Dump"
-msgstr ""
+msgstr "دست‌یابی به روگرفت خرابی هسته"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8328
@@ -15683,11 +15683,14 @@ msgid ""
 "<function>foofunc</function>, and display them along with their offset from "
 "the beginning of <function>foofunc</function>."
 msgstr ""
+"به همین ترتیب، از <_:screen-1/> برای ناهمگذاریِ راهنمایی‌های ابتداییِ 0x10 "
+"از <function>foofunc</function> استفاده کنید، و آنها را به‌همراه جابجایی‌شان "
+"از ابتدای <function>foofunc</function> نمایش دهید."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8780
 msgid "To modify memory, use the write command:"
-msgstr ""
+msgstr "برای ایجاد تغییر در حافظه، از دستور write استفاده کنید:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8782
@@ -15696,6 +15699,8 @@ msgid ""
 "<userinput>w/b termbuf 0xa 0xb 0</userinput>\n"
 "<userinput>w/w 0xf0010030 0 0</userinput>"
 msgstr ""
+"<userinput>w/b termbuf 0xa 0xb 0</userinput>\n"
+"<userinput>w/w 0xf0010030 0 0</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8785
