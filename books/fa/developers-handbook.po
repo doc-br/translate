@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-12 21:19+0000\n"
+"PO-Revision-Date: 2020-09-13 23:15+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -14847,32 +14847,34 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:8353
 msgid "Several types of kernel crash dumps are available:"
-msgstr ""
+msgstr "برخی از انواع روگرفت‌های خرابی هسته موجود هستند:"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:8356
 msgid "Full memory dumps"
-msgstr ""
+msgstr "روگرفت‌های حافظهٔ کامل"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8359
 msgid "Hold the complete contents of physical memory."
-msgstr ""
+msgstr "محتوای کامل حافظهٔ فیزیکی را نگه می‌دارد."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:8365
 msgid "Minidumps"
-msgstr ""
+msgstr "روگرفت‌های کوچک (Minidumps)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8368
 msgid "Hold only memory pages in use by the kernel (FreeBSD 6.2 and higher)."
 msgstr ""
+"تنها صفحات حافظه‌ای که توسط هسته در حال استفاده هستند را نگه می‌دارد ("
+"FreeBSD 6.2 و بالاتر)."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:8374
 msgid "Textdumps"
-msgstr ""
+msgstr "روگرفت‌های نوشتاری (Textdumps)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8377
@@ -14880,6 +14882,8 @@ msgid ""
 "Hold captured, scripted, or interactive debugger output (FreeBSD 7.1 and "
 "higher)."
 msgstr ""
+"خروجی اشکال‌زدای گرفته‌شده، نوشته‌شده، یا تعاملی را نگه می‌دارد (FreeBSD 7.1 "
+"و بالاتر)."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8383
@@ -14888,11 +14892,14 @@ msgid ""
 "will capture all necessary information present in a full memory dump, as "
 "most problems can be isolated only using kernel state."
 msgstr ""
+"روگرفت‌های کوچک (Minidumps) پس از FreeBSD 7.0 حالت پیش‌فرضِ روگرفت هستند، و "
+"در اکثر موارد تمامی اطلاعات ضروریِ ارائه شده در یک روگرفت کامل را می‌گیرد، "
+"چنانکه بیشتر مشکلات ممکن است تنها با استفاده از حالت هسته مجزا شوند."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:8389
 msgid "Configuring the Dump Device"
-msgstr ""
+msgstr "پیکربندی دستگاه روگرفت"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8391
@@ -14924,6 +14931,9 @@ msgid ""
 "<citerefentry><refentrytitle>swapinfo</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> for a list of swap devices."
 msgstr ""
+"<filename>/etc/fstab</filename> یا <citerefentry><refentrytitle>swapinfo</ref"
+"entrytitle><manvolnum>8</manvolnum></citerefentry> را برای فهرستی از دستگاه‌"
+"های مبادله (swap) بررسی کنید."
 
 #. (itstool) path: important/para
 #: book.translate.xml:8412
@@ -14932,6 +14942,10 @@ msgid ""
 "<citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</"
 "manvolnum></citerefentry> exists before a kernel crash!"
 msgstr ""
+"اطمینان حاصل کنید که مقدار تعیین شدهٔ <varname>dumpdir</varname> در "
+"<citerefentry><refentrytitle>rc."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> قبل از خرابی "
+"هسته وجود داشته باشد!"
 
 #. (itstool) path: important/screen
 #: book.translate.xml:8416
@@ -14956,7 +14970,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:8426
 msgid "Extracting a Kernel Dump"
-msgstr ""
+msgstr "استخراج روگرفت هسته"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8428
@@ -15014,6 +15028,10 @@ msgid ""
 "using the <option>-s</option> flag at the boot prompt, and then perform the "
 "following steps:"
 msgstr ""
+"چنانچه در حال امتحان کردن یک هستهٔ جدید هستید اما نیازمند شروع هستهٔ دیگری "
+"برای راه‌اندازی مجدد سامانهٔ خود هستید، آن را تنها با استفاده از نشانِ "
+"<option>-s</option> در پیام‌وارهٔ راه‌اندازی در حالت تک کاربری راه‌اندازی "
+"کنید، و سپس مراحل زیر را اجرا کنید:"
 
 #. (itstool) path: tip/screen
 #: book.translate.xml:8466
@@ -15710,23 +15728,28 @@ msgid ""
 "expression is the address to write to and the remainder is interpreted as "
 "data to write to successive memory locations."
 msgstr ""
+"پیرایندهٔ "
+"دستور<literal>b</literal>/<literal>h</literal>/<literal>w</literal>) اندازهٔ "
+"داده‌هایی که نوشته می‌شوند را تعیین می‌کند، اولین عبارت پیش رو نشانی‌ای است "
+"که در آن نوشته می‌شود و باقی‌مانده به‌عنوان داده‌ای که در مکان‌های حافظهٔ پی "
+"در پی نوشته می‌شود تفسیر شده است."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8791
 msgid "If you need to know the current registers, use:"
-msgstr ""
+msgstr "چنانچه نیاز به دانستن ثبات‌های جاری دارید، وارد کنید:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8793
 #, no-wrap
 msgid "<userinput>show reg</userinput>"
-msgstr ""
+msgstr "<userinput>show reg</userinput>"
 
 #. (itstool) path: para/screen
 #: book.translate.xml:8797
 #, no-wrap
 msgid "<userinput>p $eax</userinput>"
-msgstr ""
+msgstr "<userinput>p $eax</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8795
@@ -15734,28 +15757,31 @@ msgid ""
 "Alternatively, you can display a single register value by e.g. <_:screen-1/> "
 "and modify it by:"
 msgstr ""
+"همچنین، می‌توانید مقدار یک ثبات را بدین شکل نمایش e.g. <_:screen-1/> و تغییر "
+"دهید:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8801
 #, no-wrap
 msgid "<userinput>set $eax new-value</userinput>"
-msgstr ""
+msgstr "<userinput>set $eax new-value</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8803
 msgid "Should you need to call some kernel functions from DDB, simply say:"
 msgstr ""
+"درصورت نیاز به فراخوانی برخی از توابع هسته توسط DDB، به‌سادگی وارد کنید:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8806
 #, no-wrap
 msgid "<userinput>call func(arg1, arg2, ...)</userinput>"
-msgstr ""
+msgstr "<userinput>call func(arg1, arg2, ...)</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8808
 msgid "The return value will be printed."
-msgstr ""
+msgstr "مقدار بازگشتی چاپ می‌شود."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8810
