@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-14 17:46+0000\n"
+"PO-Revision-Date: 2020-09-14 20:22+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -2079,7 +2079,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:1274
 msgid "Trying to store something in read-only memory, eg"
-msgstr "تلاش برای ذخیرهٔ چیزی در حافظهٔ تنها خواندنی، به‌طور مثال"
+msgstr "تلاش برای ذخیرهٔ چیزی در حافظهٔ فقط خواندنی، به‌طور مثال"
 
 #. (itstool) path: listitem/programlisting
 #: book.translate.xml:1277
@@ -2099,7 +2099,7 @@ msgid ""
 "memory."
 msgstr ""
 "همگردان‌های <trademark class=\"registered\">UNIX</trademark> اغلب راستین‌"
-"نمادهای رشته‌ای چون <literal>\"My string\"</literal> را در قسمت‌های تنها "
+"نمادهای رشته‌ای چون <literal>\"My string\"</literal> را در قسمت‌های فقط "
 "خواندنی حافظه قرار می‌دهند."
 
 #. (itstool) path: listitem/para
@@ -15076,6 +15076,13 @@ msgid ""
 "systems as read-only in single user mode before triggering the crash to "
 "avoid data loss."
 msgstr ""
+"هسته شامل یک گرهٔ "
+"<citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> است که درخواست وحشت هسته می‌کند. این امر می‌تواند استفاده شود "
+"تا درستیِ پیکربندی سامانهٔ شما به‌منظور ذخیرهٔ روگرفت‌های هسته تایید شود. "
+"ممکن است بخواهید پیش از آنکه باعث تسریع خرابی شوید سامانه‌های پروندهٔ موجود "
+"را به‌طور فقط خواندنی در حالت تک کاربری مجدد سوار کنید تا از اتلاف داده‌ها "
+"اجتناب کنید."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:8489
@@ -15105,11 +15112,14 @@ msgid ""
 "<citerefentry><refentrytitle>crashinfo</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>."
 msgstr ""
+"پس از راه‌اندازی مجدد، سامانهٔ شما باید در کنار خلاصه‌ای منطبق از <citerefent"
+"ry><refentrytitle>crashinfo</refentrytitle><manvolnum>8</manvolnum></citerefe"
+"ntry>، یک روگرفت در <filename>/var/crash</filename> ذخیره کند."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:8504
 msgid "Debugging a Kernel Crash Dump with <command>kgdb</command>"
-msgstr ""
+msgstr "اشکال‌زدایی روگرفت خرابی هسته با <command>kgdb</command>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:8507
@@ -15119,6 +15129,10 @@ msgid ""
 "included in the <package>devel/gdb</package>. An older version is also "
 "present in FreeBSD 11 and earlier."
 msgstr ""
+"این بخش "
+"<citerefentry><refentrytitle>kgdb</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> را پوشش می‌دهد. آخرین نسخه در <package>devel/gdb</package> "
+"موجود است. نسخه‌ای قدیمی‌تر نیز در FreeBSD 11 و قبل‌تر در دسترس است."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8512
@@ -15161,6 +15175,11 @@ msgid ""
 "time the dump was generated. If it is not able to locate the correct kernel, "
 "pass the pathname of the kernel and dump as two arguments to kgdb:"
 msgstr ""
+"به‌طور معمول، "
+"<citerefentry><refentrytitle>kgdb</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> باید بتواند هسته‌ای را که در زمان تولید روگرفت در حال اجرا هست "
+"را مکان‌یابی کند. چنانچه نتواند هستهٔ درست را مکان‌یابی کند، نام مسیر هسته و "
+"روگرفت را به‌عنوان دو برهان به kgdb بدهید:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8528
@@ -15176,6 +15195,8 @@ msgid ""
 "You can debug the crash dump using the kernel sources just like you can for "
 "any other program."
 msgstr ""
+"می‌توانید روگرفت خرابی را با استفاده از منابع هسته اشکال‌زدایی کنید، درست "
+"همانطور که برای هر برنامهٔ دیگری می‌توانید."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8533
@@ -15417,6 +15438,9 @@ msgid ""
 "level of user interface, there are some things it cannot do. The most "
 "important ones being breakpointing and single-stepping kernel code."
 msgstr ""
+"با اینکه <command>kgdb</command> به‌عنوان یک اشکال‌زدای برون‌خط سطح بسیار "
+"بالایی از رابط کاربری را ارائه می‌دهد، برخی کارها هستند که در انجام آنها "
+"ناتوان است. مهم‌ترین آنها شامل نقطهٔ توقف و تک مرحله‌ای کردن کد هسته است."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8649
@@ -15807,12 +15831,16 @@ msgid ""
 "parts of the kernel might still be working as expected. Perform one of the "
 "following actions to shut down and reboot your system:"
 msgstr ""
+"حال، دلیل خراب شدن هستهٔ خود را مورد بررسی قرار دادید و می‌توانید سامانه را "
+"مجدد راه‌اندازی کنید. به‌یاد داشته باشید که با توجه به شدت خرابی پیشین، ممکن "
+"است تمام بخش‌های هسته همانطور که انتظار می‌رود کار نکنند. یک کدام از اعمال "
+"پیش رو را انجام دهید تا سامانه را خاموش و مجدد راه‌اندازی کنید:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8820
 #, no-wrap
 msgid "<userinput>panic</userinput>"
-msgstr ""
+msgstr "<userinput>panic</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8822
@@ -15821,12 +15849,16 @@ msgid ""
 "analyze the core on a higher level with <citerefentry><refentrytitle>kgdb</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 msgstr ""
+"این باعث می‌شود تا هستهٔ شما حافظه را روبرداری کند و مجدد راه اندازی شود، در "
+"نتیجه بعدتر می‌توانید حافظه/هسته را توسط "
+"<citerefentry><refentrytitle>kgdb</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> در مرحلهٔ بالاتری بررسی کنید."
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8825
 #, no-wrap
 msgid "<userinput>call boot(0)</userinput>"
-msgstr ""
+msgstr "<userinput>call boot(0)</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8827
@@ -15836,12 +15868,16 @@ msgid ""
 "As long as the disk and filesystem interfaces of the kernel are not damaged, "
 "this could be a good way for an almost clean shutdown."
 msgstr ""
+"ممکن است راه مناسبی برای تمیز خاموش کردن سامانهٔ در حال اجرا باشد، تمام دیسک‌"
+"ها را <function>sync()</function> کنید، در برخی موارد، مجدد راه اندازی کنید. "
+"تا آنجا که رابط‌های دیسک و سامانهٔ پروندهٔ هسته آسیب ندیده باشند، این روش می‌"
+"تواند راه مناسبی برای خاموش کردن تقریباً تمیز باشد."
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8833
 #, no-wrap
 msgid "<userinput>reset</userinput>"
-msgstr ""
+msgstr "<userinput>reset</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8835
@@ -15849,17 +15885,19 @@ msgid ""
 "This is the final way out of disaster and almost the same as hitting the Big "
 "Red Button."
 msgstr ""
+"این آخرین راه برای خروج از فاجعه است و تقریباً مانند فشردن دکمهٔ قرمز بزرگ "
+"است."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8838
 msgid "If you need a short command summary, simply type:"
-msgstr ""
+msgstr "اگر نیاز به خلاصه‌ای کوتاه از دستور دارید، به‌سادگی بنویسید:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8840
 #, no-wrap
 msgid "<userinput>help</userinput>"
-msgstr ""
+msgstr "<userinput>help</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8842
@@ -15869,11 +15907,15 @@ msgid ""
 "citerefentry> manual page ready for a debugging session. Remember that it is "
 "hard to read the on-line manual while single-stepping the kernel."
 msgstr ""
+"به‌شدت پیشنهاد می‌شود که یک نسخهٔ چاپ شده از صفحهٔ راهنمای "
+"<citerefentry><refentrytitle>ddb</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> برای جلسهٔ اشکال‌زدایی داشته باشید. به یاد داشته باشید که "
+"خواندن راهنمای برخط هنگام تک مرحله‌ای کردن هسته سخت است."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:8849
 msgid "On-Line Kernel Debugging Using Remote GDB"
-msgstr ""
+msgstr "اشکال‌زدایی برخط هسته با GDB از راه دور"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8851
@@ -15881,6 +15923,8 @@ msgid ""
 "This feature has been supported since FreeBSD 2.2, and it is actually a very "
 "neat one."
 msgstr ""
+"این امکان از زمان FreeBSD 2.2 پشتیبانی می‌شود، و در واقع یک امکان بسیار "
+"هوشمندانه است."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8854
@@ -23700,6 +23744,8 @@ msgstr ""
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>/usr/local/bin/pinhole -b -i ./medium</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>/usr/local/bin/pinhole -b -i "
+"./medium</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14652
