@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-16 12:51+0000\n"
+"PO-Revision-Date: 2020-09-17 01:46+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -822,10 +822,10 @@ msgstr ""
 "Basic یافت می‌شود. همچنین می‌توان استدلال کرد که پوستهٔ <trademark class="
 "\"registered\">UNIX</trademark> (<command>sh</command>, "
 "<command>csh</command>) خود یک مفسر است، و به‌راستی افراد بسیاری در پوسته "
-"<quote>اجرانامه‌هایی</quote> برای کمک در کارهای <quote>نگهداری</quote> ماشین "
-"خود می‌نویسند. در واقع، بخشی از فلسفه اصلی <trademark class=\"registered\""
-">UNIX</trademark> ارائه بسیاری ابزار کوچک بود که بتوانند با یکدیگر از طریق "
-"اجرانامه‌های پوسته برای انجام کارهای مفید وصل شوند."
+"<quote>اجرانامه‌هایی</quote> برای کمک در کارهای <quote>نگهداری</quote> "
+"دستگاه خود می‌نویسند. در واقع، بخشی از فلسفه اصلی <trademark class="
+"\"registered\">UNIX</trademark> ارائه بسیاری ابزار کوچک بود که بتوانند با "
+"یکدیگر از طریق اجرانامه‌های پوسته برای انجام کارهای مفید وصل شوند."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:509
@@ -1242,8 +1242,8 @@ msgid ""
 "Convert the source code into assembly language—this is very close to machine "
 "code, but still understandable by humans. Allegedly."
 msgstr ""
-"کد منبع را به زبان همگذاری (assembly) تبدیل کنید—بسیار نزدیک به کد ماشین هست،"
-" اما همچنان قابل فهم توسط انسان‌ها. ظاهراً."
+"کد منبع را به زبان همگذاری (assembly) تبدیل کنید—بسیار نزدیک به کد دستگاه "
+"هست، اما همچنان قابل فهم توسط انسان‌ها. ظاهراً."
 
 #. (itstool) path: step/para
 #: book.translate.xml:760
@@ -1251,7 +1251,7 @@ msgid ""
 "Convert the assembly language into machine code—yep, we are talking bits and "
 "bytes, ones and zeros here."
 msgstr ""
-"زبان همگذاری را به کد ماشین تبدیل کنید—بلی، اینجا در مورد بیت و بایت‌ها، و "
+"زبان همگذاری را به کد دستگاه تبدیل کنید—بلی، اینجا در مورد بیت و بایت‌ها، و "
 "صفر و یک‌ها حرف می‌زنیم."
 
 #. (itstool) path: step/para
@@ -1971,7 +1971,7 @@ msgid ""
 "over to find out what went wrong."
 msgstr ""
 "نام <firstterm>core dump</firstterm> به روزهای آغازین <trademark class="
-"\"registered\">UNIX</trademark> برمی‌گردد، زمانی‌که ماشین‌ها از حافظهٔ اصلی "
+"\"registered\">UNIX</trademark> برمی‌گردد، زمانی‌که دستگاه‌ها از حافظهٔ اصلی "
 "برای ذخیره‌کردن داده‌ها استفاده می‌کردند. اساساً، اگر برنامه تحت شرایط به‌"
 "خصوصی از کار می‌ایستاد، سامانه محتوای حافظهٔ اصلی را داخل پرونده‌ای به نام "
 "<filename>core</filename> در دیسک می‌نوشت، که بعدتر برنامه‌نویس می‌توانست با "
@@ -3488,11 +3488,11 @@ msgid ""
 msgstr ""
 "پروندهٔ حافظه در واقع یک پرونده است که هنگام خراب شدن، وضعیت کاملی از فرآیند "
 "را شامل می‌شود. در <quote>روزگاران خوش گذشته</quote>، برنامه‌نویسان مجبور "
-"بودند لیست‌های شانزده‌شانزدهی پرونده‌های حافظه را چاپ کنند و کد ماشین را به "
-"سختی اجرا کنند، اما امروزه زندگی کمی ساده‌تر است. در FreeBSD و دیگر سامانه‌"
-"های 4.4BSD، برای روشن‌سازی این موضوع که پروندهٔ حافظه برای کدام برنامه است، "
-"پروندهٔ حافظه <filename><replaceable>progname</replaceable>.core</filename> "
-"نامیده می‌شود و نه فقط <filename>core</filename>."
+"بودند لیست‌های شانزده‌شانزدهی پرونده‌های حافظه را چاپ کنند و کد دستگاه "
+"(ماشین) را به‌سختی اجرا کنند، اما امروزه زندگی کمی ساده‌تر است. در FreeBSD و "
+"دیگر سامانه‌های 4.4BSD، برای روشن‌سازی این موضوع که پروندهٔ حافظه برای کدام "
+"برنامه است، پروندهٔ حافظه <filename><replaceable>progname</replaceable>."
+"core</filename> نامیده می‌شود و نه فقط <filename>core</filename>."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1959
@@ -13396,6 +13396,11 @@ msgid ""
 "never convert network byte order into host byte order, to save the original "
 "packet."
 msgstr ""
+"ICMPv6 باید تا جای ممکن تا 1280 شامل بستهٔ اصلی باشد. پورت خارج از دسترس "
+"UDP6/IP6، برای مثال، باید تمام سرآیند‌های افزونه‌ و سرآینده‌های *بدون تغییرِ*"
+" UDP6 و IP6 را دارا باشد. در نتیجه، تمامی کارکردهای IP6 به‌غیر از TCP هرگز "
+"ترتیب بایتِ شبکه را به ترتیب بایتِ میزبان تبدیل نمی‌کنند تا بستهٔ اصلی ذخیره "
+"شود."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7472
@@ -13406,6 +13411,11 @@ msgid ""
 "not continuous. TCP/IP6 nor UDP6/IP6 header structures do not exist for "
 "checksum calculation."
 msgstr ""
+"tcp_input()، udp6_input() و icmp6_input() نمی‌توانند چنین فرض کنند که سرآیند "
+"IP6 به‌دلیل سرآیند‌های افزونه،‌ سرآیند‌های انتقال را پشت سر می‌گذارد. در "
+"نتیجه، in6_cksum() پیاده‌سازی شد تا به بسته‌هایی که سرآیند IP6 و سرآیند "
+"انتقال آنها ادامه‌دار نیستند رسیدگی کند. نه ساختار سرآیند TCP/IP6 و نه UDP6/"
+"IP6 برای محاسبهٔ سرجمع وجود ندارند."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7479
@@ -13416,6 +13426,11 @@ msgid ""
 "for 96 - 204 bytes data, however, now such packet data is stored in one "
 "external mbuf."
 msgstr ""
+"برای پردازش آسانِ سرآیند IP6، سرآیند‌های افزونه و سرآیندهای انتقال، گرداننده‌"
+"های شبکه اکنون ملزم به نگهداری بسته‌ها در یک mbuf داخلی یا یک یا تعداد "
+"بیشتری mbuf های بیرونی هستند. یک گردانندهٔ قدیمی و معمولی دو mbuf داخلی را "
+"برای داده‌های 96 - 204 بایتی آماده می‌کند، گرچه، چنین داده‌های بسته‌ای اکنون "
+"در یک mbuf بیرونی ذخیره می‌شوند."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7486
@@ -13457,6 +13472,11 @@ msgid ""
 "the loopback interface. m_pullup() is never called for packets coming from "
 "physical network interfaces."
 msgstr ""
+"هرکدام از توابع ورودی، IP6_EXTHDR_CHECK را در ابتدا فراخوانی می‌کنند تا "
+"بررسی کنند آیا ناحیهٔ بین IP6 و سرآیندش متوالی است یا خیر. IP6_EXTHDR_CHECK "
+"تنها در صورتی m_pullup() را فراخوانی می‌کند که mbuf دارای نشان M_LOOP باشد، "
+"از این رو، بسته از سمت رابط loopback می‌آید. m_pullup() هرگز برای بسته‌هایی "
+"که از سمت رابط‌های شبکهٔ فیزیکی می‌آیند فراخوانی نمی‌شود."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7506
@@ -15616,7 +15636,7 @@ msgid ""
 "To get a stack trace of an arbitrary thread, specify a process ID or thread "
 "ID as a second argument to <command>trace</command>."
 msgstr ""
-"برای بدست آوردن رد پشتهٔ یک بند دلخواه، شناسهٔ فرآیند یا شناسهٔ نخ را به‌"
+"برای بدست آوردن رد پشتهٔ یک بند دلخواه، شناسهٔ فرآیند یا شناسهٔ بند را به‌"
 "عنوان دومین برهان در <command>trace</command> تعیین کنید."
 
 #. (itstool) path: sect1/para
@@ -16079,6 +16099,9 @@ msgid ""
 "access to the source, running it in gud-mode inside an Emacs window (which "
 "gives you an automatic source code display in another Emacs window), etc."
 msgstr ""
+"می‌توانید این جلسه را تقریباً مانند هر جلسهٔ دیگرِ GDB استفاده کنید، از جمله "
+"دسترسی کامل به منبع، اجرای آن در حالت gud درون یک پنجرهٔ Emacs (که به شما یک "
+"کد منبع خودکار در پنجرهٔ Emacs دیگر نمایش می‌دهد)، و غیره ... ."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:8919
@@ -16111,6 +16134,12 @@ msgid ""
 "<command>ps</command> and <command>trace</command> for suspected processes "
 "in the report."
 msgstr ""
+"ممکن است این به‌اصطلاح بن‌بست‌ها (deadlocks) را تجربه کنید، موقعیتی که در آن "
+"یک سامانه انجام دادن کارهای مفید را متوقف می‌سازد. برای ارائهٔ یک گزارش "
+"اشکال مفید در چنین شرایطی، طبق توضیحات آمده در بخش پیشین از "
+"<citerefentry><refentrytitle>ddb</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> استفاده کنید. خروجیِ <command>ps</command> و <command>trace</"
+"command> را برای فرآیندهای مشکوک در گزارش قرار دهید."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8940
@@ -16119,6 +16148,9 @@ msgid ""
 "especially useful if you suspect that a deadlock occurs in the VFS layer. "
 "Add these options to the kernel configuration file."
 msgstr ""
+"اگر ممکن است، تحقیقات بیشتری را مد نظر قرار دهید. اگر مشکوک به رخ دادن بن‌"
+"بست در لایهٔ VFS هستید، رهنمود زیر به‌طور خاص مناسب است. این گزینه‌ها را به "
+"پروندهٔ پیکربندیِ هسته اضافه کنید."
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:8945
@@ -16151,6 +16183,11 @@ msgid ""
 "<command>show alllocks</command>, <command>show lockedvnods</command> and "
 "<command>alltrace</command>."
 msgstr ""
+"هنگامی‌که بن‌بست رخ می‌دهد، افزون‌بر خروجی دستور <command>ps</command>، "
+"اطلاعات به‌دست آمده از <command>show pcpu</command>، <command>show "
+"allpcpu</command>، <command>show locks</command>، <command>show "
+"alllocks</command>، <command>show lockedvnods</command> و <command>alltrace</"
+"command> را ارائه دهید."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8961
@@ -16159,6 +16196,9 @@ msgid ""
 "thread-id</command> to switch to the thread stack, and do a backtrace with "
 "<command>where</command>."
 msgstr ""
+"برای به‌دست آوردن عقب‌گردهای بامعنا برای فرآیندهای بند‌دار، از "
+"<command>thread thread-id</command> برای تعویض به پشتهٔ بند استفاده کنید، و "
+"یک عقب‌گرد توسط <command>where</command> انجام دهید."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:8967
@@ -16209,6 +16249,10 @@ msgid ""
 "to those integrated into motherboards. <acronym>PCI</acronym> cards exist "
 "for desktops, and a cardbus interface can be purchased for laptops."
 msgstr ""
+"دستگاه‌های <trademark class=\"registered\">FireWire</trademark> محدود به "
+"آنهایی که با بردهای اصلی ادغام شده‌اند نیستند. کارت‌های <acronym>PCI</"
+"acronym> برای رومیزی‌ها در دسترس هستند، و می‌توان یک رابط cardbus برای "
+"لپ‌تاپ‌ها سفارش داد."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:8999
@@ -16282,6 +16326,9 @@ msgid ""
 "add <literal>hw.firewire.dcons_crom.force_console=1</literal> to "
 "<filename>loader.conf</filename>."
 msgstr ""
+"در صورت تمایل، برای وادار کردنِ <literal>dcons</literal> به پیشانهٔ سطح بالا،"
+" مقدار <literal>hw.firewire.dcons_crom.force_console=1</literal> را در "
+"<filename>loader.conf</filename> اضافه کنید."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:9041
@@ -16290,6 +16337,10 @@ msgid ""
 "support in <citerefentry><refentrytitle>loader</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> on i386 or amd64:"
 msgstr ""
+"به‌منظور فعال کردن پشتیبانیِ <trademark class=\"registered\">FireWire</"
+"trademark> و Dcons در "
+"<citerefentry><refentrytitle>loader</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> بر روی i386 یا amd64:"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:9044
@@ -16298,12 +16349,18 @@ msgid ""
 "conf</filename> and rebuild <citerefentry><refentrytitle>loader</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>:"
 msgstr ""
+"<literal>LOADER_FIREWIRE_SUPPORT=YES</literal> را در <filename>/etc/make."
+"conf</filename> اضافه کنید و "
+"<citerefentry><refentrytitle>loader</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> را دوباره بسازید:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:9049
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>cd /sys/boot/i386 &amp;&amp; make clean &amp;&amp; make &amp;&amp; make install</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /sys/boot/i386 &amp;&amp; make clean "
+"&amp;&amp; make &amp;&amp; make install</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:9051
@@ -16313,6 +16370,10 @@ msgid ""
 "<literal>boot_multicons=\"YES\"</literal> to <filename>/boot/loader.conf</"
 "filename>."
 msgstr ""
+"برای فعال‌سازی "
+"<citerefentry><refentrytitle>dcons</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> به‌عنوان یک پیشانهٔ سطح پایینِ فعال، <literal>boot_multicons="
+"\"YES\"</literal> را در <filename>/boot/loader.conf</filename> اضافه کنید."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:9055
@@ -16320,6 +16381,8 @@ msgid ""
 "Here are a few configuration examples. A sample kernel configuration file "
 "would contain:"
 msgstr ""
+"در اینجا چند نمونه پیکربندی آمده است. یک نمونه پروندهٔ پیکربندی هستهٔ ساده "
+"شامل:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:9058
@@ -16332,11 +16395,17 @@ msgid ""
 "options GDB\n"
 "options ALT_BREAK_TO_DEBUGGER"
 msgstr ""
+"device dcons\n"
+"device dcons_crom\n"
+"options KDB\n"
+"options DDB\n"
+"options GDB\n"
+"options ALT_BREAK_TO_DEBUGGER"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:9065
 msgid "And a sample <filename>/boot/loader.conf</filename> would contain:"
-msgstr ""
+msgstr "و یک نمونه <filename>/boot/loader.conf</filename> شامل:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:9068
@@ -16348,6 +16417,11 @@ msgid ""
 "hw.firewire.phydma_enable=1\n"
 "hw.firewire.dcons_crom.force_console=1"
 msgstr ""
+"dcons_crom_load=\"YES\"\n"
+"dcons_gdb=1\n"
+"boot_multicons=\"YES\"\n"
+"hw.firewire.phydma_enable=1\n"
+"hw.firewire.dcons_crom.force_console=1"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:9077
@@ -16355,6 +16429,8 @@ msgid ""
 "Enabling <trademark class=\"registered\">FireWire</trademark> and Dcons "
 "support on the host machine"
 msgstr ""
+"فعال‌سازی پشتیبانی <trademark class=\"registered\">FireWire</trademark> و "
+"Dcons در دستگاه میزبان"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:9080
@@ -16362,12 +16438,14 @@ msgid ""
 "To enable <trademark class=\"registered\">FireWire</trademark> support in "
 "the kernel on the <emphasis>host machine</emphasis>:"
 msgstr ""
+"برای فعال‌سازی پشتیبانی <trademark class=\"registered\">FireWire</trademark> "
+"در هسته بر روی <emphasis>دستگاه میزبان</emphasis>:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:9083
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>kldload firewire</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>kldload firewire</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:9085
@@ -16378,6 +16456,11 @@ msgid ""
 "manvolnum></citerefentry> or <command>dmesg</command> to find the "
 "<acronym>EUI64</acronym> of the target machine."
 msgstr ""
+"<acronym>EUI64</acronym> (شناسندهٔ منحصر به‌فرد ۶۴ بیتی) ناظرِ میزبانِ "
+"<trademark class=\"registered\">FireWire</trademark> را دریابید و از <citeref"
+"entry><refentrytitle>fwcontrol</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> یا <command>dmesg</command> برای پیدا کردن <acronym>EUI64</"
+"acronym> در دستگاه هدف استفاده کنید."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:9090
@@ -16385,12 +16468,16 @@ msgid ""
 "Run <citerefentry><refentrytitle>dconschat</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>, with:"
 msgstr ""
+"<citerefentry><refentrytitle>dconschat</refentrytitle><manvolnum>8</manvolnum"
+"></citerefentry> را بدین شکل اجرا کنید:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:9092
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>dconschat -e \\# -br -G 12345 -t <replaceable>00-11-22-33-44-55-66-77</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>dconschat -e \\# -br -G 12345 -t "
+"<replaceable>00-11-22-33-44-55-66-77</replaceable></userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:9094
@@ -16399,12 +16486,16 @@ msgid ""
 "<citerefentry><refentrytitle>dconschat</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> is running:"
 msgstr ""
+"ترکیب‌های کلید پیش رو را زمانی‌که <citerefentry><refentrytitle>dconschat</ref"
+"entrytitle><manvolnum>8</manvolnum></citerefentry> در حال اجراست می‌توان به "
+"کار برد:"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:9101
 msgid ""
 "<keycombo action=\"seq\"> <keycap>~</keycap> <keycap>.</keycap> </keycombo>"
 msgstr ""
+"<keycombo action=\"seq\"> <keycap>~</keycap> <keycap>.</keycap> </keycombo>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:9107
