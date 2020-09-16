@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-14 20:22+0000\n"
+"PO-Revision-Date: 2020-09-16 12:51+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -13165,6 +13165,11 @@ msgid ""
 "specification is followed, but you cannot usually see an ICMPv6 error caused "
 "by this requirement."
 msgstr ""
+"مشخصات IPv6 ایجاب می‌کند که گزینهٔ بارِ Jumbo نباید در بسته‌ای که حامل یک "
+"سرآیند شکننده است استفاده شود. چنانچه این شرط فراهم نشود، یک پیغام مشکل "
+"پارامترِ ICMPv6 باید به فرستنده ارسال شود. مشخصات به دنبال آن می‌آیند، اما "
+"معمولاً نمی‌توانید خطای ICMPv6 که توسط این نیازمندی ایجاد شده باشد را مشاهده "
+"کنید."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7344
@@ -13177,6 +13182,12 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> command with `-s -p "
 "ip6' option:"
 msgstr ""
+"زمانی‌که یک بستهٔ IPv6 دریافت شد، طول چارچوب بررسی می‌شود و با طول تعیین شده "
+"در بخش طول بارِ (payload) سرآیندِ IPv6 یا در مقدارِ گزینهٔ بار Jumbo مقایسه "
+"می‌شود، اگر چیزی باشد. اگر اولی کوتاه‌تر از دومی باشد، بسته حذف می‌شود و "
+"آمار افزایش می‌یابند. می‌توانید آمار را در خروجی دستور <citerefentry><refentr"
+"ytitle>netstat</refentrytitle><manvolnum>8</manvolnum></citerefentry> با "
+"گزینهٔ `-s -p ip6' ببینید:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:7352
@@ -13248,6 +13259,11 @@ msgid ""
 "header + link-layer header. Therefore, it must be expanded to at least "
 "int64_t (u_int32_t is NOT enough)."
 msgstr ""
+"بخش mbuf pkthdr.len در 4.4BSD مانند \"int\" نوشته می‌شود، در نتیجه jumbogram "
+"را با len &gt; 2G در پردازنده‌های با معماری ۳۲ بیت نگه نمی‌دارد. اگر تمایلی "
+"به پشتیبانی صحیح jumbogram داشته باشیم، این بخش باید گسترش یابد تا 4G + "
+"سرآیند IPv6 +‌ سرآیندِ link-layer را نگه دارد. از این رو، باید حداقل به "
+"int64_t گسترش یابد (u_int32_t کافی نیست)."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7389
@@ -13257,9 +13273,9 @@ msgid ""
 "experience overflow during packet length computation."
 msgstr ""
 "ما به اشتباه از \"int\" برای نگه‌داری طول بسته‌ها در بسیاری از مکان‌ها "
-"استفاده می‌کنیم. لازم است آنها را به حالت انتگرال بزرگتر تبدیل کنیم. نیاز به "
-"مراقبت فراوان دارد، از آنجا که ممکن است هنگام محاسبهٔ طول بسته دچار سرریز "
-"میان‌گیر شویم."
+"استفاده می‌کنیم. لازم است آنها را به حالت انتگرال بزرگتر تبدیل کنیم. از آنجا "
+"که ممکن است هنگام محاسبهٔ طول بسته دچار سرریز میان‌گیر شویم، نیاز به مراقبت "
+"فراوان دارد."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7397
@@ -13269,6 +13285,10 @@ msgid ""
 "ip6_input() will perform sanity check on jumbo payload option on input, and "
 "we can safely use mbuf pkthdr.len afterwards."
 msgstr ""
+"ما به‌اشتباه بخش ip6_plen از سرآیند IPv6 را برای طول بار بسته در مکان‌های "
+"مختلف بررسی می‌کنیم. در عوض باید mbuf pkthdr.len را بررسی کنیم. ip6_input() "
+"سلامتی گزینهٔ بارِ jumbo در ورودی را بررسی می‌کند، و پس از آن می‌توانیم با "
+"اطمینان از mbuf pkthdr.len استفاده کنیم."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7406
@@ -14458,11 +14478,11 @@ msgid ""
 "The decapsulation rule is not compatible with ECN, since ECN bit on the "
 "outer IP TOS/traffic class field will be lost."
 msgstr ""
-"تونل IPsec معمولی در RFC2401 تشریح شده است. در کپسوله‌سازی، زمینهٔ IPv4 TOS "
-"(یا، زمینهٔ کلاس ترافیک IPv6) از سرآیند IP داخلی به سرآیند IP بیرونی کپی می‌"
-"شود. در کپسوله‌زدایی، سرآیند IP بیرونی به‌سادگی حذف می‌شود. قانون کپسوله‌"
-"زدایی سازگار با ECN نیست، زیرا بیت ECN در زمینهٔ کلاس ترافیک/TOS نشانی IP "
-"بیرونی از دست می‌رود."
+"تونل IPsec معمولی در RFC2401 تشریح شده است. در کپسوله‌سازی، بخش IPv4 TOS (یا،"
+" بخش کلاس ترافیک IPv6) از سرآیند IP داخلی به سرآیند IP بیرونی کپی می‌شود. در "
+"کپسوله‌زدایی، سرآیند IP بیرونی به‌سادگی حذف می‌شود. قانون کپسوله‌زدایی "
+"سازگار با ECN نیست، زیرا بیت ECN در بخش کلاس ترافیک/TOS نشانی IP بیرونی از "
+"دست می‌رود."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:8136
