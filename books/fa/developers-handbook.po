@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-17 01:46+0000\n"
+"PO-Revision-Date: 2020-09-17 16:46+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -16218,6 +16218,14 @@ msgid ""
 "<citerefentry><refentrytitle>dconschat</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>."
 msgstr ""
+"<citerefentry><refentrytitle>dcons</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> یک گردانندهٔ پیشانهٔ بسیار ساده است که به‌طور مستقیم با هیچ "
+"وسیلهٔ فیزیکی‌ای در ارتباط نیست. فقط نویسه‌ها را از و در یک میان‌گیر در هسته "
+"یا بارکن می‌نویسد و می‌خواند. به‌خاطر طبیعت سادهٔ آن، این امر برای اشکال‌"
+"زدایی هسته بسیار مفید است، مخصوصاً با یک دستگاه <trademark class=\"registered"
+"\">FireWire</trademark>. در حال حاضر، FreeBSD دو روش برای تعامل با میان‌گیر "
+"از خارج از هسته دارد، به‌وسیلهٔ <citerefentry><refentrytitle>dconschat</refen"
+"trytitle><manvolnum>8</manvolnum></citerefentry>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:8978
@@ -16500,7 +16508,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:9107
 msgid "Disconnect"
-msgstr ""
+msgstr "Disconnect"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:9110
@@ -16508,11 +16516,13 @@ msgid ""
 "<keycombo action=\"seq\"> <keycap>~</keycap> <keycombo action=\"simul\"> "
 "<keycap>Ctrl</keycap> <keycap>B</keycap> </keycombo> </keycombo>"
 msgstr ""
+"<keycombo action=\"seq\"> <keycap>~</keycap> <keycombo action=\"simul\"> "
+"<keycap>Ctrl</keycap> <keycap>B</keycap> </keycombo> </keycombo>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:9119
 msgid "ALT BREAK"
-msgstr ""
+msgstr "ALT BREAK"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:9122
@@ -16520,11 +16530,13 @@ msgid ""
 "<keycombo action=\"seq\"> <keycap>~</keycap> <keycombo action=\"simul\"> "
 "<keycap>Ctrl</keycap> <keycap>R</keycap> </keycombo> </keycombo>"
 msgstr ""
+"<keycombo action=\"seq\"> <keycap>~</keycap> <keycombo action=\"simul\"> "
+"<keycap>Ctrl</keycap> <keycap>R</keycap> </keycombo> </keycombo>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:9131
 msgid "RESET target"
-msgstr ""
+msgstr "RESET target"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:9134
@@ -16532,11 +16544,13 @@ msgid ""
 "<keycombo action=\"seq\"> <keycap>~</keycap> <keycombo action=\"simul\"> "
 "<keycap>Ctrl</keycap> <keycap>Z</keycap> </keycombo> </keycombo>"
 msgstr ""
+"<keycombo action=\"seq\"> <keycap>~</keycap> <keycombo action=\"simul\"> "
+"<keycap>Ctrl</keycap> <keycap>Z</keycap> </keycombo> </keycombo>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:9143
 msgid "Suspend dconschat"
-msgstr ""
+msgstr "Suspend dconschat"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:9149
@@ -16545,22 +16559,25 @@ msgid ""
 "<citerefentry><refentrytitle>kgdb</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> with a remote debugging session:"
 msgstr ""
+"<citerefentry><refentrytitle>kgdb</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> را با جلسهٔ‌ اشکال‌زداییِ از راه دور آغاز کنید تا "
+"<acronym>GDB</acronym> از راه دور الصاق شود:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:9152
 #, no-wrap
 msgid "<userinput>kgdb -r :12345 kernel</userinput>"
-msgstr ""
+msgstr "<userinput>kgdb -r :12345 kernel</userinput>"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:9156
 msgid "Some general tips"
-msgstr ""
+msgstr "برخی نکات کلی"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:9158
 msgid "Here are some general tips:"
-msgstr ""
+msgstr "در اینجا چند نکتهٔ کلی هست:"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:9160
@@ -16568,6 +16585,8 @@ msgid ""
 "To take full advantage of the speed of <trademark class=\"registered"
 "\">FireWire</trademark>, disable other slow console drivers:"
 msgstr ""
+"برای بهره‌وری کامل از سرعت <trademark class=\"registered\""
+">FireWire</trademark>، سایر گرداننده‌های پیشانهٔ کند را غیرفعال کنید:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:9163
@@ -16576,6 +16595,8 @@ msgid ""
 "<prompt>#</prompt> conscontrol delete ttyd0\t     # serial console\n"
 "<prompt>#</prompt> conscontrol delete consolectl\t# video/keyboard"
 msgstr ""
+"<prompt>#</prompt> conscontrol delete ttyd0\t     # serial console\n"
+"<prompt>#</prompt> conscontrol delete consolectl\t# video/keyboard"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:9166
@@ -16585,6 +16606,10 @@ msgid ""
 "citerefentry>; this is what you will need to add to your <filename>.emacs</"
 "filename>:"
 msgstr ""
+"حالتی از <acronym>GDB</acronym> برای <citerefentry vendor=\"ports\""
+"><refentrytitle>emacs</refentrytitle><manvolnum>1</manvolnum></citerefentry> "
+"وجود دارد؛ این همان چیزی است که باید در <filename>.emacs</filename> اضافه "
+"کنید:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:9170
@@ -16595,11 +16620,15 @@ msgid ""
 "(xterm-mouse-mode 1)\n"
 "M-x gdba</userinput>"
 msgstr ""
+"<userinput>(setq gud-gdba-command-name \"kgdb -a -a -a -r :12345\")\n"
+"(setq gdb-many-windows t)\n"
+"(xterm-mouse-mode 1)\n"
+"M-x gdba</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:9175
 msgid "And for <acronym>DDD</acronym> (<filename>devel/ddd</filename>):"
-msgstr ""
+msgstr "و برای <acronym>DDD</acronym> (<filename>devel/ddd</filename>):"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:9177
@@ -16610,11 +16639,15 @@ msgid ""
 "# live core debug\n"
 "LANG=C ddd --debugger kgdb kernel /dev/fwmem0.2"
 msgstr ""
+"# remote serial protocol\n"
+"LANG=C ddd --debugger kgdb -r :12345 kernel\n"
+"# live core debug\n"
+"LANG=C ddd --debugger kgdb kernel /dev/fwmem0.2"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9185
 msgid "Dcons with KVM"
-msgstr ""
+msgstr "Dcons با KVM"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9187
