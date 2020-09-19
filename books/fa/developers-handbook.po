@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-17 16:46+0000\n"
+"PO-Revision-Date: 2020-09-19 19:05+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -16659,11 +16659,18 @@ msgid ""
 "the <citerefentry><refentrytitle>dcons</refentrytitle><manvolnum>4</"
 "manvolnum></citerefentry> buffer includes more information."
 msgstr ""
+"می‌توانیم میان‌گیر "
+"<citerefentry><refentrytitle>dcons</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> را به‌طور مستقیم به‌وسیلهٔ <filename>/dev/mem</filename> برای "
+"سامانه‌های زنده، و در روگرفت حافظه برای سامانه‌های خراب شده بخوانیم. اینها "
+"خروجی‌ای شبیه به <command>dmesg -a</command> را به شما می‌دهد، اما میان‌گیر "
+"<citerefentry><refentrytitle>dcons</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> شامل اطلاعات بیشتری است."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:9194
 msgid "Using Dcons with KVM"
-msgstr ""
+msgstr "استفاده از Dcons با KVM"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:9196
@@ -16671,6 +16678,9 @@ msgid ""
 "To use <citerefentry><refentrytitle>dcons</refentrytitle><manvolnum>4</"
 "manvolnum></citerefentry> with <acronym>KVM</acronym>:"
 msgstr ""
+"برای استفاده از "
+"<citerefentry><refentrytitle>dcons</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> با <acronym>KVM</acronym>:"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:9198
@@ -16678,12 +16688,15 @@ msgid ""
 "Dump a <citerefentry><refentrytitle>dcons</refentrytitle><manvolnum>4</"
 "manvolnum></citerefentry> buffer of a live system:"
 msgstr ""
+"از میان‌گیرِ "
+"<citerefentry><refentrytitle>dcons</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> یک سامانهٔ زنده روبرداری کنید:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:9200
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>dconschat -1</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>dconschat -1</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:9202
@@ -16691,17 +16704,20 @@ msgid ""
 "Dump a <citerefentry><refentrytitle>dcons</refentrytitle><manvolnum>4</"
 "manvolnum></citerefentry> buffer of a crash dump:"
 msgstr ""
+"از میان‌گیرِ "
+"<citerefentry><refentrytitle>dcons</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> یک روگرفت خرابی روبرداری کنید:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:9204
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>dconschat -1 -M vmcore.XX</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>dconschat -1 -M vmcore.XX</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:9206
 msgid "Live core debugging can be done via:"
-msgstr ""
+msgstr "اشکال‌زداییِ هستهٔ زنده را می‌توان بدین شکل انجام داد:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:9208
@@ -16710,11 +16726,13 @@ msgid ""
 "<prompt>#</prompt> <userinput>fwcontrol -m target_eui64</userinput>\n"
 "<prompt>#</prompt> <userinput>kgdb kernel /dev/fwmem0.2</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>fwcontrol -m target_eui64</userinput>\n"
+"<prompt>#</prompt> <userinput>kgdb kernel /dev/fwmem0.2</userinput>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:9215
 msgid "Glossary of Kernel Options for Debugging"
-msgstr ""
+msgstr "واژه‌نامهٔ گزینه‌های هسته برای اشکال‌زدایی"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9217
@@ -16722,6 +16740,8 @@ msgid ""
 "This section provides a brief glossary of compile-time kernel options used "
 "for debugging:"
 msgstr ""
+"این بخش واژه‌نامه‌ای مختصر از گزینه‌های هسته در هنگام همگردانی که برای اشکال‌"
+"زدایی استفاده می‌شوند را ارائه می‌دهد:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9222
@@ -16731,6 +16751,10 @@ msgid ""
 "literal>. Little or no performance overhead. By default, the debugger will "
 "be entered on panic instead of an automatic reboot."
 msgstr ""
+"<literal>options KDB</literal>: در چارچوب اشکال‌زداییِ هسته همگردانی می‌کند. "
+"برای <literal>options DDB</literal> و <literal>options GDB</literal> الزامی "
+"است. شامل مقدار کوچک یا بدون هیچ سربارِ (overhead) عملکرد. به‌طور پیش‌فرض، "
+"اشکال‌زدا به‌جای راه‌اندازیِ مجدد خودکار وارد حالت وحشت می‌شود."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9230
@@ -23772,7 +23796,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:14593
 msgid "Scripting"
-msgstr ""
+msgstr "اجرانامه‌نویسی"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14595
@@ -23793,24 +23817,24 @@ msgstr ""
 #: book.translate.xml:14603
 #, no-wrap
 msgid "#! /bin/sh"
-msgstr ""
+msgstr "#! /bin/sh"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14605
 msgid "...or..."
-msgstr ""
+msgstr "...یا..."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:14607
 #, no-wrap
 msgid "#!/bin/sh"
-msgstr ""
+msgstr "#!/bin/sh"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14609
 msgid ""
 "...because the blank space after the <function>#!</function> is optional."
-msgstr ""
+msgstr "...زیرا فضای خالیِ بعد از <function>#!</function> اختیاریست."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14612
@@ -23852,6 +23876,18 @@ msgid ""
 "### Telephoto\n"
 "100, 120, 140"
 msgstr ""
+"#! /usr/local/bin/pinhole -b -i\n"
+"# Find the best pinhole diameter\n"
+"# for the 120 film\n"
+"\n"
+"### Standard\n"
+"80\n"
+"\n"
+"### Wide angle\n"
+"30, 40, 50, 60, 70\n"
+"\n"
+"### Telephoto\n"
+"100, 120, 140"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14639
