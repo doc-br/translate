@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-19 19:05+0000\n"
+"PO-Revision-Date: 2020-09-20 20:07+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -13317,6 +13317,20 @@ msgid ""
 "processed, each such IPsec header must pass each IPsec check. So an "
 "anonymous attacker will not be able to do such an attack.)"
 msgstr ""
+"مشخصات IPv6 این امکان را فراهم می‌کند تا اعداد اختیاریِ سرآیند‌های افزونه "
+"داخل بسته‌ها قرار گیرند. اگر ما کد پردازش بستهٔ IPv6 را همانطور که کد IPv4 "
+"را در BSD پیاده‌سازی کردیم پیاده‌سازی کنیم، ممکن است پشتهٔ هسته به‌علت "
+"زنجیرهٔ فراخوانی توابعِ طولانی سرریز کند. کد sys/netinet6 با دقت طراحی شده "
+"است تا سرریز پشتهٔ هسته رخ ندهد. به‌همین خاطر، کد sys/netinet6 ساختار تغییرِ "
+"قرارداد خودش را تعریف می‌کند، مانند \"struct ip6protosw\" (<filename>"
+"netinet6/ip6protosw.h</filename> را ببینید). چنین به روز رسانی‌ای در قسمت "
+"IPv4 ((sys/netinet) برای سازگاری وجود ندارد، اما تغییر کوچکی در نمونهٔ اصلیِ "
+"its pr_input() آن اضافه شده است. در نتیجه \"struct ipprotosw\" نیز تعریف شده "
+"است. از این رو، اگر بستهٔ IPsec بر روی IPv4 را با تعداد زیادی از سرآیندهای "
+"IPsec دریافت کردید، پشتهٔ هسته ممکن است متوقف شود. IPsec بر روی IPv6 مشکلی "
+"ندارد. (البته، برای تمام آن سرآیندهای IPsec که قرار است پردازش شوند، هرکدام "
+"از سرآیندهای IPsec باید بررسی‌های IPsec را بگذرانند. بنابراین یک حمله‌کنندهٔ "
+"ناشناس نمی‌تواند چنین حمله‌ای را صورت دهد.)"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:7436
@@ -15636,7 +15650,7 @@ msgid ""
 "To get a stack trace of an arbitrary thread, specify a process ID or thread "
 "ID as a second argument to <command>trace</command>."
 msgstr ""
-"برای بدست آوردن رد پشتهٔ یک بند دلخواه، شناسهٔ فرآیند یا شناسهٔ بند را به‌"
+"برای بدست آوردن رد پشتهٔ یک بند اختیاری، شناسهٔ فرآیند یا شناسهٔ بند را به‌"
 "عنوان دومین برهان در <command>trace</command> تعیین کنید."
 
 #. (itstool) path: sect1/para
@@ -16740,8 +16754,8 @@ msgid ""
 "This section provides a brief glossary of compile-time kernel options used "
 "for debugging:"
 msgstr ""
-"این بخش واژه‌نامه‌ای مختصر از گزینه‌های هسته در هنگام همگردانی که برای اشکال‌"
-"زدایی استفاده می‌شوند را ارائه می‌دهد:"
+"این بخش واژه‌نامه‌ای مختصر از گزینه‌های هسته که برای اشکال‌زدایی در هنگام "
+"همگردانی استفاده می‌شوند را ارائه می‌دهد:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9222
@@ -16845,6 +16859,9 @@ msgid ""
 "<literal>options INVARIANTS</literal> require modified data structures or "
 "additional kernel symbols to be defined."
 msgstr ""
+"<literal>options INVARIANT_SUPPORT</literal>: بسیاری از آزمون‌های ارائه شده "
+"در <literal>options INVARIANTS</literal> نیازمند تعریف ساختمان‌های دادهٔ "
+"اصلاح شده یا نمادهای هستهٔ اضافی هستند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9316
@@ -16872,6 +16889,12 @@ msgid ""
 "significantly speed up systems running with WITNESS. This option depends on "
 "<literal>options WITNESS</literal>."
 msgstr ""
+"<literal>options WITNESS_SKIPSPIN</literal>: بررسیِ زمان اجرای ترتیب قفلِ "
+"spinlock را توسط WITNESS غیرفعال می‌کند. از آنجاکه قفل‌های چرخش غالباً در "
+"زمان‌بند به‌دست می‌آیند، و رویدادهای زمان‌بند خیلی اوقات روی می‌دهند، این "
+"گزینه می‌تواند سامانه‌هایی که با WITNESS در حال اجرا هستند را به‌طور قابل "
+"ملاحظه‌ای سرعت ببخشد. این گزینه وابسته به <literal>options WITNESS</literal> "
+"است."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9341
@@ -16882,6 +16905,10 @@ msgid ""
 "simply printing a warning. This option depends on <literal>options WITNESS</"
 "literal>."
 msgstr ""
+"<literal>options WITNESS_KDB</literal>: مقدار پیش‌فرض sysctl <literal>debug."
+"witness.kdb</literal> را به ‌1 تغییر می‌دهد، که باعث می‌شود تا WITNESS زمانی‌"
+"که نقض ترتیب قفل تشخیص داده می‌شود، به‌جای آنکه صرفاً‌ یک هشدار چاپ کند وارد "
+"اشکال‌ز‌دا شود. این گزینه وابسته به <literal>options WITNESS</literal> است."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9349
@@ -16920,16 +16947,18 @@ msgid ""
 "<literal>options DIAGNOSTIC</literal>: enable additional, more expensive "
 "diagnostic tests along the lines of <literal>options INVARIANTS</literal>."
 msgstr ""
+"<literal>options DIAGNOSTIC</literal>: آزمون‌های تشخیص اضافی و هزینه‌برتری "
+"را در امتداد سطور <literal>options INVARIANTS</literal> فعال می‌کند."
 
 #. (itstool) path: part/title
 #: book.translate.xml:9388
 msgid "Architectures"
-msgstr ""
+msgstr "معماری‌ها"
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:9412
 msgid "x86 Assembly Language Programming"
-msgstr ""
+msgstr "برنامه‌نویسیِ زبان همگذاریِ x86"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:9414
@@ -16937,6 +16966,8 @@ msgid ""
 "<emphasis>This chapter was written by G. Adam Stanislav "
 "<email>adam@redprince.net</email>.</emphasis>"
 msgstr ""
+"<emphasis>این فصل توسط G. Adam Stanislav <email>adam@redprince.net</email> "
+"نگاشته شده است.</emphasis>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9420
@@ -16947,6 +16978,11 @@ msgid ""
 "trademark> systems run on different microprocessors, so everything should be "
 "written in C for portability."
 msgstr ""
+"برنامه‌نویسیِ زبان همگذاری (Assembly) در <trademark class=\"registered\""
+">UNIX</trademark> به‌شدت فاقد مستند است. به‌طور کلی چنین فرض می‌شود که هیچ "
+"کس هرگز نمی‌خواهد از آن استفاده کند زیرا سامانه‌های گوناگونِ <trademark "
+"class=\"registered\">UNIX</trademark> بر روی ریزپردازنده‌های مختلفی اجرا "
+"می‌شوند، بنابراین همه‌چیز باید به‌منظور انتقال‌پذیری در C نگاشته شود."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9426
@@ -16957,6 +16993,11 @@ msgid ""
 "such a program is full of conditional statements depending on the system it "
 "is compiled for."
 msgstr ""
+"در واقعیت، انتقال‌پذیریِ C تا حد زیادی یک افسانه است. حتی برنامه‌‌های C "
+"زمانی‌که از یک <trademark class=\"registered\">UNIX</trademark> به دیگری "
+"منتقل می‌شوند نیازمند تغییر هستند، صرف نظر از اینکه هر کدام از آنها بر روی "
+"چه پردازنده‌ای اجرا می‌شوند. معمولاً، چنین برنامه‌ای بسته به سامانه‌ای که "
+"برای آن همگردانی شده است، پر از عبارت‌های شرطی است."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9432
@@ -16966,6 +17007,10 @@ msgid ""
 "language, we still need assembly language programmers: Who else would write "
 "the section of C library that accesses the kernel?"
 msgstr ""
+"حتی اگر باور کنیم که تمام نرم‌افزارِ <trademark class=\"registered\">UNIX</"
+"trademark> باید در C یا برخی زبان‌های سطح بالای دیگر نوشته شود، هنوز به "
+"برنامه‌نویسان زبان اسمبلی نیاز داریم: چه کسی می‌تواند آن بخش از کتابخانهٔ C "
+"را که به هسته دسترسی دارد بنویسد؟"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9437
@@ -16974,6 +17019,9 @@ msgid ""
 "writing <trademark class=\"registered\">UNIX</trademark> programs, "
 "specifically under FreeBSD."
 msgstr ""
+"در این فصل من سعی می‌کنم تا به شما نحوهٔ استفاده از زبان اسمبلی برای نوشتن "
+"برنامه‌های <trademark class=\"registered\">UNIX</trademark> را نشان دهم، به‌"
+"طور مشخص تحت FreeBSD."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9441
@@ -16990,17 +17038,17 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:9450 book.translate.xml:14844
 msgid "Copyright © 2000-2001 G. Adam Stanislav. All rights reserved."
-msgstr ""
+msgstr "حق نشر © ۲۰۰۰-۲۰۰۱ G. Adam Stanislav. تمامی حقوق محفوظ است."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:9455
 msgid "The Tools"
-msgstr ""
+msgstr "ابزارها"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9458
 msgid "The Assembler"
-msgstr ""
+msgstr "همگذار"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9460
@@ -17008,6 +17056,8 @@ msgid ""
 "The most important tool for assembly language programming is the assembler, "
 "the software that converts assembly language code into machine language."
 msgstr ""
+"مهم‌ترین ابزار برای برنامه‌نویسیٰ زبان همگذاری (اسمبلی) همگذار است، نرم‌"
+"افزاری که کد زبان همگذاری را به زبان ماشین تبدیل می‌کند."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9464
@@ -17017,6 +17067,10 @@ msgid ""
 "citerefentry>, which uses the traditional <trademark class=\"registered"
 "\">UNIX</trademark> assembly language syntax. It comes with the system."
 msgstr ""
+"دو نوع همگذار متفاوت برای FreeBSD در دسترس هست. یکی "
+"<citerefentry><refentrytitle>as</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> است، که از قواعد نحویِ سنتیِ زبان اسمبلیِ <trademark class="
+"\"registered\">UNIX</trademark> پیروی می‌کند و به‌همراه سامانه می‌آید."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9470
@@ -17026,6 +17080,9 @@ msgid ""
 "operating systems. It needs to be installed separately, but is completely "
 "free."
 msgstr ""
+"دیگری <application>/usr/ports/devel/nasm</application> است و از قواعد نحوی "
+"Intel پیروی می‌کند. برتری اصلی آن این است که می‌تواند کد را برای سامانه‌های "
+"عامل بسیاری همگذاری کند. و لازم است جداگانه نصب شود، اما کاملاً رایگان است."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9476
