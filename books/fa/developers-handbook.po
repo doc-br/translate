@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-21 03:16+0000\n"
+"PO-Revision-Date: 2020-09-21 18:43+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -17125,16 +17125,19 @@ msgid ""
 "manvolnum></citerefentry> linker comes with FreeBSD. It works with the code "
 "assembled with either assembler."
 msgstr ""
+"پیوند‌ دهندهٔ استاندارد "
+"<citerefentry><refentrytitle>ld</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> با FreeBSD می‌آید و با کد همگذاری شده با هر همگذاری کار می‌کند."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:9497
 msgid "System Calls"
-msgstr ""
+msgstr "فراخوان‌های سامانه"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9500
 msgid "Default Calling Convention"
-msgstr ""
+msgstr "رویهٔ فراخوانیِ پیش‌فرض"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9502
@@ -17145,6 +17148,11 @@ msgid ""
 "<function role=\"opcode\">int 80h</function>, rather than issuing <function "
 "role=\"opcode\">int 80h</function> directly."
 msgstr ""
+"به‌طور پیش‌فرض، هستهٔ FreeBSD از روند فراخوانیِ C استفاده می‌کند. به‌علاوه، "
+"گرچه هسته به‌وسیلهٔ <function role=\"opcode\">int 80h</function> قابل دسترسی "
+"است، فرض بر این است که به جای صدور مستقیمِ <function role=\"opcode\">int "
+"80h</function>، برنامه تابعی را فراخوانی می‌کند که <function role=\"opcode\""
+">int 80h</function> را صادر می‌کند."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9508
@@ -17155,6 +17163,11 @@ msgid ""
 "Because the <trademark class=\"registered\">UNIX</trademark> convention "
 "allows any program written in any language to access the kernel."
 msgstr ""
+"این روند بسیار راحت است، و نسبت به روند <trademark class=\"registered\""
+">Microsoft</trademark> که توسط <acronym><trademark class=\"registered\">MS-"
+"DOS</trademark></acronym> استفاده شده است برتری کامل دارد. چرا؟ زیرا روند "
+"<trademark class=\"registered\">UNIX</trademark> به هر برنامه‌ای که با هر "
+"زبانی نوشته شده است اجازهٔ دسترسی به هسته را می‌دهد."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9514
@@ -17162,6 +17175,8 @@ msgid ""
 "An assembly language program can do that as well. For example, we could open "
 "a file:"
 msgstr ""
+"یک برنامهٔ نوشته شده در زبان همگذاری هم می‌تواند چنین کاری را انجام دهد. "
+"برای مثال، می‌توانیم یک پرونده را باز کنیم:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:9517
@@ -17180,6 +17195,18 @@ msgid ""
 "\tadd\tesp, byte 12\n"
 "\tret"
 msgstr ""
+"kernel:\n"
+"\tint\t80h\t; Call kernel\n"
+"\tret\n"
+"\n"
+"open:\n"
+"\tpush\tdword mode\n"
+"\tpush\tdword flags\n"
+"\tpush\tdword path\n"
+"\tmov\teax, 5\n"
+"\tcall\tkernel\n"
+"\tadd\tesp, byte 12\n"
+"\tret"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9530
@@ -17189,6 +17216,10 @@ msgid ""
 "a different interrupt, or a different way of passing parameters, all you "
 "need to change is the kernel procedure."
 msgstr ""
+"این روش برنامه‌نویسی بسیار تمیز و اتقال‌پذیر است، اگر نیاز به پورت کردن کد "
+"به سامانهٔ <trademark class=\"registered\">UNIX</trademark> دارید که از وقفه‌"
+"ای متفاوت استفاده می‌کند، یا به روش متفاوتی پارامترها را می‌گذراند، تمام "
+"آنچه که نیاز دارید تغییر روش هسته است."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9535
@@ -17198,6 +17229,10 @@ msgid ""
 "combination. We can eliminate it by <function role=\"opcode\">push</"
 "function>ing an extra dword:"
 msgstr ""
+"اما برنامه‌نویسان زبان همگذاری دوست دارند تا تعداد چرخه‌ها را کاهش دهند. "
+"مثال بالا نیازمند یک ترکیب <function role=\"opcode\">call/ret</function> "
+"است. می‌توانیم آن را با <function role=\"opcode\">push</function> کردن یک "
+"مقدار اضافیِ dword از بین ببریم:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:9540
@@ -17212,6 +17247,14 @@ msgid ""
 "\tint\t80h\n"
 "\tadd\tesp, byte 16"
 msgstr ""
+"open:\n"
+"\tpush\tdword mode\n"
+"\tpush\tdword flags\n"
+"\tpush\tdword path\n"
+"\tmov\teax, 5\n"
+"\tpush\teax\t\t; Or any other dword\n"
+"\tint\t80h\n"
+"\tadd\tesp, byte 16"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9549
@@ -17220,11 +17263,14 @@ msgid ""
 "\">EAX</varname> identifies the kernel function, in this case <function role="
 "\"syscall\">open</function>."
 msgstr ""
+"مقدار <constant>5</constant> که ما درون <varname role=\"register\">EAX</"
+"varname> قرار دادیم تابع هسته را تشخیص می‌دهد، در این مورد <function role="
+"\"syscall\">open</function>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9554
 msgid "Alternate Calling Convention"
-msgstr ""
+msgstr "روند فراخوانیِ جایگزین"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9556
@@ -17233,6 +17279,9 @@ msgid ""
 "kernel. For it to work, however, the system must have Linux emulation "
 "installed."
 msgstr ""
+"FreeBSD یک سامانهٔ به‌شدت منعطف است و روش‌های دیگری برای فراخوانیِ هسته "
+"ارائه می‌دهد. گرچه، برای آنکه بتواند کار کند، شبیه‌ساز Linux باید بر روی "
+"سامانه نصب شده باشد."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9560
@@ -20155,7 +20204,7 @@ msgstr ""
 #: book.translate.xml:11688
 #, no-wrap
 msgid "189\tSTD\tPOSIX\t{ int fstat(int fd, struct stat *sb); }"
-msgstr ""
+msgstr "189\tSTD\tPOSIX\t{ int fstat(int fd, struct stat *sb); }"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11690
@@ -20211,7 +20260,7 @@ msgstr ""
 #: book.translate.xml:11722
 #, no-wrap
 msgid "201\tSTD\tBSD\t{ int ftruncate(int fd, int pad, off_t length); }"
-msgstr ""
+msgstr "201\tSTD\tBSD\t{ int ftruncate(int fd, int pad, off_t length); }"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11724
@@ -20352,6 +20401,21 @@ msgid ""
 "\tsystem\tSYS_fstat\n"
 "%endmacro"
 msgstr ""
+"%macro\tsys.mmap\t0\n"
+"\tsystem\tSYS_mmap\n"
+"%endmacro\n"
+"\n"
+"%macro\tsys.munmap\t0\n"
+"\tsystem\tSYS_munmap\n"
+"%endmacro\n"
+"\n"
+"%macro\tsys.ftruncate\t0\n"
+"\tsystem\tSYS_ftruncate\n"
+"%endmacro\n"
+"\n"
+"%macro\tsys.fstat\t0\n"
+"\tsystem\tSYS_fstat\n"
+"%endmacro"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11800
@@ -23867,7 +23931,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:14566
 msgid "Our session might look like this:"
-msgstr ""
+msgstr "ممکن است جلسهٔ ما بدین شکل باشد:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:14568
@@ -23890,6 +23954,22 @@ msgid ""
 "<userinput>That's it! Perfect! Thank you very much!\n"
 "^D</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>pinhole\n"
+"\n"
+"Computer,\n"
+"\n"
+"What size pinhole do I need for the focal length of 150?</userinput>\n"
+"150\t490\t306\t362\t2930\t12\n"
+"<userinput>Hmmm... How about 160?</userinput>\n"
+"160\t506\t316\t362\t3125\t12\n"
+"<userinput>Let's make it 155, please.</userinput>\n"
+"155\t498\t311\t362\t3027\t12\n"
+"<userinput>Ah, let's try 157...</userinput>\n"
+"157\t501\t313\t362\t3066\t12\n"
+"<userinput>156?</userinput>\n"
+"156\t500\t312\t362\t3047\t12\n"
+"<userinput>That's it! Perfect! Thank you very much!\n"
+"^D</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14585
@@ -23964,7 +24044,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:14624
 msgid "The script might look something like this:"
-msgstr ""
+msgstr "ممکن است که اجرانامه چیزی شبیه به این باشد:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:14626
@@ -24025,6 +24105,8 @@ msgid ""
 "<trademark class=\"registered\">UNIX</trademark> will interpret that last "
 "command as:"
 msgstr ""
+"<trademark class=\"registered\">UNIX</trademark> آخرین دستور را بدین شکل "
+"تفسیر می‌کند:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:14650
@@ -24037,7 +24119,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:14652
 msgid "It will run that command and display:"
-msgstr ""
+msgstr "آن دستور را اجرا می‌کند و خروجی زیر را نمایش می‌دهد:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:14654
@@ -24053,6 +24135,15 @@ msgid ""
 "120\t438\t274\t256\t2344\t11\n"
 "140\t473\t296\t256\t2734\t11"
 msgstr ""
+"80\t358\t224\t256\t1562\t11\n"
+"30\t219\t137\t128\t586\t9\n"
+"40\t253\t158\t181\t781\t10\n"
+"50\t283\t177\t181\t977\t10\n"
+"60\t310\t194\t181\t1172\t10\n"
+"70\t335\t209\t181\t1367\t10\n"
+"100\t400\t250\t256\t1953\t11\n"
+"120\t438\t274\t256\t2344\t11\n"
+"140\t473\t296\t256\t2734\t11"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14664
