@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-23 00:47+0000\n"
+"PO-Revision-Date: 2020-09-23 18:36+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -13596,6 +13596,16 @@ msgid ""
 "1999 and it looks that there is no concrete consensus (means, up to "
 "implementers). You may want to check the mailing list archives."
 msgstr ""
+"چنین به‌نظر می‌رسد که RFC2553 در مسئلهٔ پیوندِ wildcard حرف زیادی برای گفتن "
+"ندارد، مخصوصاً در مسئلهٔ فضای درگاه (پورت)، حالت شکست و ارتباط بین پیوندِ "
+"AF_INET/INET6 wildcard. ممکن است چندین تفسیر متفاوت برای این RFC وجود داشته "
+"باشد که با آن سازگار باشد اما رفتار متفاوتی دارد. در نتیجه، برای پیاده‌سازی "
+"برنامهٔ انتقال‌پذیر نباید هیچ فرضی در مورد رفتار هسته داشته باشید. استفاده "
+"از <citerefentry><refentrytitle>getaddrinfo</refentrytitle><manvolnum>3</manv"
+"olnum></citerefentry> امن‌ترین روش است. مسائل مربوط به فضای شمارهٔ درگاه و "
+"پیوند wildcard به‌تفصیل در فهرست پست‌سپاریِ ipv6imp مورخ مارس ۱۹۹۹ تشریح شده "
+"است، و به‌نظر می‌رسد که هیچ اجماع مشخصی وجود ندارد (یعنی، تا پیاده‌سازها). "
+"شاید بخواهید بایگانیِ فهرست پست‌سپاری را نگاه بیندازید."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7563
@@ -13619,6 +13629,16 @@ msgid ""
 "socket with proper address family. IPv4 connections will be accepted by "
 "AF_INET socket, and IPv6 connections will be accepted by AF_INET6 socket."
 msgstr ""
+"یکی دارد از سوکت AF_INET و AF_INET6 استفاده می‌کند (شما به دو سوکت نیاز "
+"خواهید داشت). <citerefentry><refentrytitle>getaddrinfo</refentrytitle><manvol"
+"num>3</manvolnum></citerefentry> را به‌‌همراه AI_PASSIVE into ai_flags، و "
+"<citerefentry><refentrytitle>socket</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> و "
+"<citerefentry><refentrytitle>bind</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> را برای تمام نشانی‌های برگشتی استفاده کنید. با باز کردن سوکت‌"
+"های مختلف، می‌توانید اتصال‌های سوکت‌ را با خانوادهٔ نشانیِ مناسب بپذیرید. "
+"اتصال‌های IPv4 توسط سوکتِ AF_INET، و اتصال‌های IPv6 توسط سوکت AF_INET6 "
+"پذیرفته می‌شوند."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7575
@@ -15510,7 +15530,7 @@ msgstr ""
 "چنانچه به اشکال‌زداییِ هسته در سطح پایین نیاز دارید، اشکال‌زدای برخطی به نام "
 "DDB وجود دارد که تنظیم کردن نقاط توقف، تک مرحله‌ای کردن توابع هسته، آزمایش و "
 "تغییر متغیرهای هسته، و ... را ممکن می‌سازد. هرچند، نمی‌تواند به پرونده‌های "
-"منبع هست دسترسی پیدا کند، و تنها به نمادهای ثابت و جهانی دسترسی دارد، نه به "
+"منبع هسته دسترسی پیدا کند، و تنها به نمادهای ثابت و جهانی دسترسی دارد، نه به "
 "اطلاعات کامل اشکال‌زدایی مانند <command>kgdb</command>."
 
 #. (itstool) path: para/programlisting
@@ -15549,6 +15569,12 @@ msgid ""
 "this, exit the loader's boot menu and enter <command>boot -d</command> at "
 "the loader prompt."
 msgstr ""
+"هنگامی‌که هستهٔ DDB شما در حال اجرا است، روش‌های دیگری برای ورود به DDB است. "
+"اولین و ابتدایی‌ترین روش، استفاده از نشانِ boot، یعنی <option>-d</option> "
+"است. هسته در حالت اشکال‌زدایی آغاز می‌شود و پیش از هر کاوش‌کردنِ (probing) "
+"دستگاهی وارد DDB می‌شود. از این رو حتی می‌توانید توابعِ probe/attach در "
+"دستگاه را اشکال‌زدایی کنید. برای استفاده از آن، از صفحهٔ بوتِ بارکن (loader) "
+"خارج شوید و <command>boot -d</command> را در پیام‌وارهٔ بارکن بنویسید."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8672
@@ -15997,6 +16023,13 @@ msgid ""
 "other one is the target machine that simply runs a similar copy of the very "
 "same kernel (but stripped of the debugging information)."
 msgstr ""
+"GDB مدت‌هاست که <emphasis>اشکال‌زدایی از راه دور</emphasis> را پشتیبانی می‌"
+"کند. این امر با استفاده از یک قرارداد بسیار ساده در کنار خط سریال صورت می‌"
+"گیرد. برخلاف سایر روش‌هایی که در بالا تشریح شده است، شما برای انجام آن نیاز "
+"به دو دستگاه دارید. یکی میزبانی است که محیط اشکال‌زدایی را فراهم می‌کند، "
+"شامل تمام منابع، و یک نسخه از دودوییِ هسته با تمام نمادها درونش می‌شود، و "
+"دیگری دستگاه هدفی است که یک نسخهٔ مشابه از همان هسته را اجرا می‌کند (اما "
+"فاقد اطلاعات اشکال‌زدایی)."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8863
@@ -16059,8 +16092,8 @@ msgid ""
 "Now, on the target host (the one that entered DDB right before even starting "
 "the device probe), type:"
 msgstr ""
-"حال، در میزبان مورد نظر (همان که درست قبل از آغاز probe دستگاه وارد DDB شد)، "
-"وارد کنید:"
+"حال، در میزبان مورد نظر (همان که درست قبل از آغاز کاوشِ (probe) دستگاه وارد "
+"DDB شد)، وارد کنید:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8894
@@ -17300,6 +17333,13 @@ msgid ""
 "stack but in <varname role=\"register\">EBX, ECX, EDX, ESI, EDI, EBP</"
 "varname>:"
 msgstr ""
+"Linux یک سامانهٔ شبه <trademark class=\"registered\">UNIX</trademark> است، "
+"هرچند، هستهٔ آن از همان رویهٔ فراخوانِ سامانهٔ <acronym><trademark class="
+"\"registered\">MS-DOS</trademark></acronym> برای منتقل کردن پارامترها در "
+"ثبات‌ها پیروی می‌کند. با رویهٔ <trademark class=\"registered\""
+">UNIX</trademark>، شمارهٔ تابع در <varname role=\"register\">EAX</varname> "
+"قرار می‌گیرد. پارامترها، هرچند، در <varname role=\"register\">EBX, ECX, EDX, "
+"ESI, EDI, EBP</varname> منتقل شده‌اند نه در پشته:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:9567
@@ -17312,6 +17352,12 @@ msgid ""
 "\tmov\tedx, mode\n"
 "\tint\t80h"
 msgstr ""
+"open:\n"
+"\tmov\teax, 5\n"
+"\tmov\tebx, path\n"
+"\tmov\tecx, flags\n"
+"\tmov\tedx, mode\n"
+"\tint\t80h"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9574
@@ -17323,6 +17369,12 @@ msgid ""
 "\"opcode\">pop</function> them later. This makes your code bulkier and "
 "slower. Nevertheless, FreeBSD gives you a choice."
 msgstr ""
+"این رویه در مقابل روش <trademark class=\"registered\">UNIX</trademark> یک "
+"عیب بزرگ دارد، حداقل تا جایی که به برنامه‌نویسی زبان همگذاری (اسمبلی) مربوط "
+"می‌شود. هر وقت شما فراخوانی تابع را انجام می‌دهید باید ثبات‌ها را <function "
+"role=\"opcode\">push</function> کنید، سپس آنها را <function role=\"opcode\""
+">pop</function> کنید. این امر کد شما را بزرگتر و کندتر می‌کند. با این حال، "
+"FreeBSD به شما حق انتخاب می‌دهد."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9582
@@ -17331,17 +17383,22 @@ msgid ""
 "it. After your program is assembled and linked, you need to brand the "
 "executable:"
 msgstr ""
+"اگر شما رویهٔ Linux را انتخاب کردید، باید سامانه را متوجه آن کنید. پس از "
+"آنکه برنامهٔ شما همگذاری و پیوند داده شد، نیاز دارید تا اجراپذیر را نشانه‌"
+"گذاری کنید:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9586
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>brandelf -t Linux <replaceable>filename</replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>brandelf -t Linux "
+"<replaceable>filename</replaceable></userinput>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9590
 msgid "Which Convention Should You Use?"
-msgstr ""
+msgstr "از کدام رویه باید استفاده کنید؟"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9592
@@ -17352,6 +17409,10 @@ msgid ""
 "executable, and you do not impose the installation of the Linux emulation "
 "package on the target system."
 msgstr ""
+"اگر مخصوص FreeBSD کد می‌زنید، باید همیشه از رویهٔ‌ <trademark class="
+"\"registered\">UNIX</trademark> استفاده کنید: این روش سریع‌تر است، می‌توانید "
+"متغیر‌های جهانی را در ثبات‌ها ذخیره کنید، نیاز نیست تا اجراپذیر را نشانه‌"
+"گذاری کنید، و نصب بستهٔ شبیه‌ساز Linux را بر روی سامانهٔ هدف تحمیل نمی‌کنید."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9598
@@ -17361,11 +17422,15 @@ msgid ""
 "possible. I will show you how you can accomplish that after I have explained "
 "the basics."
 msgstr ""
+"اگر می‌خواهید کد انتقال‌پذیری بسازید که بتواند در Linux هم اجرا شود، احتمالاً"
+" هنوز بخواهید به ‌کاربران FreeBSD تا آنجا که ممکن است یک کد بهینه تحویل "
+"دهید. پس از آنکه مبانی را توضیح دادم، به شما نشان خواهم داد که چطور می‌"
+"توانید این کار را انجام دهید."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9605
 msgid "Call Numbers"
-msgstr ""
+msgstr "شماره‌های فراخوانی"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9607
