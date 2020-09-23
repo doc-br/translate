@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-23 18:36+0000\n"
+"PO-Revision-Date: 2020-09-24 03:22+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -13653,6 +13653,16 @@ msgid ""
 "returned. (should be IPv6 unspecified addr). You can accept either of IPv4 "
 "and IPv6 packet via this one socket."
 msgstr ""
+"راه دیگر این است که از سوکت پیوندِ AF_INET6 wildcard استفاده کنید. <citerefen"
+"try><refentrytitle>getaddrinfo</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry> را با AI_PASSIVE داخل ai_flags و با AF_INET6 داخل ai_family "
+"استفاده کنید، و نام میزبان اولین برهان را بر روی NULL تنظیم کنید. و "
+"<citerefentry><refentrytitle>socket</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> و "
+"<citerefentry><refentrytitle>bind</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> را بر روی نشانی بازگشتی تنظیم کنید. (باید نشانی نامعینِ IPv6 "
+"باشد). می‌توانید هر کدام از بسته‌های IPv4 و IPv6 را به‌وسیلهٔ همین سوکت "
+"بپذیرید."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7583
@@ -13736,6 +13746,15 @@ msgid ""
 "manvolnum></citerefentry> and <citerefentry><refentrytitle>getnameinfo</"
 "refentrytitle><manvolnum>3</manvolnum></citerefentry>.)"
 msgstr ""
+"از <citerefentry><refentrytitle>getaddrinfo</refentrytitle><manvolnum>3</manv"
+"olnum></citerefentry> و <citerefentry><refentrytitle>getnameinfo</refentrytit"
+"le><manvolnum>3</manvolnum></citerefentry> در سراسر سامانه استفاده کنید. "
+"هرگز از gethostby*()، getaddrby*()، inet_*() یا getipnodeby*() استفاده "
+"نکنید. (برای به روز رسانی و آگاه کردن برنامه‌های موجود به IPv6، گاهی اوقات "
+"getipnodeby*() کاربردی خواهد بود. اما اگر امکان دارد، سعی کنید کد را به‌گونه‌"
+"ای بازنویسی کنید تا از <citerefentry><refentrytitle>getaddrinfo</refentrytitl"
+"e><manvolnum>3</manvolnum></citerefentry> و <citerefentry><refentrytitle>getn"
+"ameinfo</refentrytitle><manvolnum>3</manvolnum></citerefentry> استفاده کند.)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7625
@@ -13781,6 +13800,19 @@ msgid ""
 "refentrytitle><manvolnum>3</manvolnum></citerefentry>, when you get the time "
 "to do it."
 msgstr ""
+"چناچه علاقه‌مند به استفاده از سوکت AF_INET6 برای ارتباطات بیرونیِ IPv4 و "
+"IPv6 هستید، لازم است تا از <citerefentry><refentrytitle>getipnodebyname</refe"
+"ntrytitle><manvolnum>3</manvolnum></citerefentry> استفاده کنید. هنگامی‌که می‌"
+"خواهید برنامهٔ فعلیِ خود را به روز رسانی کنید تا با هزینهٔ کم نسبت به IPv6 "
+"آگاه شود، این روش ممکن است انتخاب شود. اما خواهشمند است توجه داشته باشید که "
+"این یک راه حل موقت است، زیرا خودِ <citerefentry><refentrytitle>getipnodebynam"
+"e</refentrytitle><manvolnum>3</manvolnum></citerefentry> پیشنهاد نمی‌شود "
+"چنانکه به نشانی‌های محدود شدهٔ IPv6 رسیدگی نمی‌کند. برای تفکیک‌پذیری نامِ "
+"IPv6، <citerefentry><refentrytitle>getaddrinfo</refentrytitle><manvolnum>3</m"
+"anvolnum></citerefentry> رابط‌ برنامه‌نویسی کاربردیِ ترجیحی است. پس زمانی‌که "
+"فرصت انجامش را پیدا کردید، باید برنامهٔ خود را بازنویسی کنید تا از <citerefen"
+"try><refentrytitle>getaddrinfo</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry> استفاده کند."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7650
@@ -17439,11 +17471,14 @@ msgid ""
 "<varname role=\"register\">EAX</varname>. Of course, you need to know what "
 "the number is."
 msgstr ""
+"به‌منظور آگاه ساختن هسته نسبت به سرویس سامانه‌ای که شما فراخوانی می‌کنید، "
+"شمارهٔ آن را درون <varname role=\"register\">EAX</varname> قرار دهید. البته، "
+"باید خود شماره را بدانید."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:9612
 msgid "The <filename>syscalls</filename> File"
-msgstr ""
+msgstr "پروندهٔ <filename>syscalls</filename>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:9614
@@ -17452,6 +17487,9 @@ msgid ""
 "syscalls</command> finds this file in several different formats, all "
 "produced automatically from <filename>syscalls.master</filename>."
 msgstr ""
+"شماره‌ها در <filename>syscalls</filename> فهرست شده‌اند. <command>locate "
+"syscalls</command> این پرونده را در قالب‌های مختلف پیدا می‌کند، تمام ‌آنها "
+"به‌طور خودکار توسط <filename>syscalls.master</filename> تولید شده‌اند."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:9619
@@ -20298,7 +20336,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:11704
 msgid "Changing the File Size"
-msgstr ""
+msgstr "تغییر اندازهٔ پرونده"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11706
@@ -20445,6 +20483,10 @@ msgid ""
 "%define\tSYS_fstat\t189\n"
 "%define\tSYS_ftruncate\t201"
 msgstr ""
+"%define\tSYS_mmap\t197\n"
+"%define\tSYS_munmap\t73\n"
+"%define\tSYS_fstat\t189\n"
+"%define\tSYS_ftruncate\t201"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11782
@@ -24069,6 +24111,8 @@ msgid ""
 "You have probably seen <application>shell</application> <emphasis>scripts</"
 "emphasis> that start with:"
 msgstr ""
+"شما احتمالاً <emphasis>اجرانامه‌های</emphasis><application>shell</"
+"application> که بدین شکل شروع می‌شوند را دیده‌اید:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:14603
