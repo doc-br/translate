@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:08-0300\n"
-"PO-Revision-Date: 2020-09-07 02:20+0000\n"
+"PO-Revision-Date: 2020-09-23 18:36+0000\n"
 "Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_releng/es/>\n"
@@ -313,6 +313,10 @@ msgid ""
 "citerefentry> compressed, and contain a 10GB sparse filesystem when attached "
 "to a virtual machine."
 msgstr ""
+"Las imágenes de la máquina virtual son de aproximadamente 150MB "
+"<citerefentry><refentrytitle>xz</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> comprimidos, y contienen un sistema de archivos dispersos de "
+"10GB cuando se adjuntan a una máquina virtual."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:165
@@ -511,6 +515,15 @@ msgid ""
 "ensure that all of the different components required for a successful "
 "release are available."
 msgstr ""
+"Poco después de que se inicia la congelación del código, se construye una "
+"imagen <emphasis>BETA1</emphasis> y se libera para su prueba generalizada. "
+"Durante la congelación de código, al menos una imagen beta o candidata a ser "
+"liberada cada dos semanas hasta que la liberación final esté lista. Durante "
+"los días anteriores a la liberación final, el equipo de ingeniería de "
+"liberación está en constante comunicación con el equipo de seguridad, los "
+"encargados de la documentación y los encargados de los puertos para asegurar "
+"que todos los diferentes componentes requeridos para una liberación exitosa "
+"estén disponibles."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:308
@@ -568,12 +581,12 @@ msgstr ""
 #: article.translate.xml:345
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>svn log -v $FSVN/stable/9</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>svn log -v $FSVN/stable/9</userinput>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:347
 msgid "The next step is to create the <emphasis>release branch</emphasis>"
-msgstr ""
+msgstr "El siguiente paso es crear la <emphasis>rama de liberación</emphasis>"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:350
@@ -584,13 +597,13 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: article.translate.xml:352
 msgid "This branch can be checked out:"
-msgstr ""
+msgstr "Esta rama puede ser revisada:"
 
 #. (itstool) path: sect3/screen
 #: article.translate.xml:354
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>svn co $FSVN/releng/9.2 src</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>svn co $FSVN/releng/9.2 src</userinput>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:357
@@ -771,7 +784,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: article.translate.xml:444
 msgid "Bumping up the Version Number"
-msgstr ""
+msgstr "Aumentar el número de versión"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:446
@@ -964,7 +977,7 @@ msgstr "<filename>src/share/misc/bsd-family-tree</filename>"
 #. (itstool) path: sect3/title
 #: article.translate.xml:578
 msgid "Creating the Release Tag"
-msgstr ""
+msgstr "Creación de la etiqueta de liberación"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:580
@@ -1061,6 +1074,9 @@ msgid ""
 "After running these commands, all prepared release files are available in "
 "<filename>/local3/release/R</filename> directory."
 msgstr ""
+"Después de ejecutar estos comandos, todos los archivos de liberación "
+"preparados están disponibles en el directorio <filename>/local3/release/"
+"R</filename>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:639
@@ -1068,6 +1084,8 @@ msgid ""
 "The release <filename>Makefile</filename> can be broken down into several "
 "distinct steps."
 msgstr ""
+"La liberación <filename>Makefile</filename> puede ser dividida en varios "
+"pasos distintos."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:644
@@ -1082,6 +1100,9 @@ msgid ""
 "Checkout from Subversion of a clean version of the system source, "
 "documentation, and ports into the release build hierarchy."
 msgstr ""
+"Comprobación de la Subversión de una versión limpia de la fuente del "
+"sistema, la documentación y los puertos en la jerarquía de construcción de "
+"la liberación."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:656
@@ -1105,12 +1126,12 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: article.translate.xml:673
 msgid "Build of Kerberos-related binaries."
-msgstr ""
+msgstr "Construcción de binarios relacionados con Kerberos."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:677
 msgid "Build <filename>GENERIC</filename> kernel."
-msgstr ""
+msgstr "Construir el núcleo <filename>GENERIC</filename>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:681
@@ -1118,6 +1139,8 @@ msgid ""
 "Creation of a staging directory tree where the binary distributions will be "
 "built and packaged."
 msgstr ""
+"Creación de un árbol de directorios de etapas donde se construirán y "
+"empaquetarán las distribuciones binarias."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:686
@@ -1154,6 +1177,8 @@ msgstr "Crear una jerarquía de instalación de FTP."
 msgid ""
 "<emphasis>(optionally)</emphasis> Create ISO images for CDROM/DVD media."
 msgstr ""
+"<emphasis>(opcionalmente)</emphasis> Crear imágenes ISO para medios CDROM/"
+"DVD."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:712
@@ -1162,6 +1187,9 @@ msgid ""
 "<citerefentry><refentrytitle>release</refentrytitle><manvolnum>7</"
 "manvolnum></citerefentry>."
 msgstr ""
+"Para más información sobre la infraestructura de construcción de la versión, "
+"por favor vea la <citerefentry><refentrytitle>realse</refentrytitle><manvolnu"
+"m>7</manvolnum></citerefentry>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:716
@@ -1302,7 +1330,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:817
 msgid "Distribution"
-msgstr ""
+msgstr "Distribución"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:820
@@ -1334,6 +1362,7 @@ msgstr ""
 msgid ""
 "The installable FTP directory as output from <command>make release</command>."
 msgstr ""
+"El directorio FTP instalable como salida de <command>make release</command>."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:840
@@ -1467,11 +1496,22 @@ msgid ""
 "innovation in the form of advanced installation and administration tools, "
 "for example, but we cannot be expected to answer questions about it."
 msgstr ""
+"Aunque FreeBSD forma un sistema operativo completo, no hay nada que le "
+"obligue a usar el sistema exactamente como lo hemos empaquetado para su "
+"distribución. Hemos intentado diseñar el sistema para que sea lo más "
+"extensible posible, de modo que pueda servir como una plataforma sobre la "
+"que se puedan construir otros productos comerciales. La única <quote>regla</"
+"quote> que tenemos sobre esto es que si va a distribuir FreeBSD con cambios "
+"no triviales, ¡le animamos a documentar sus mejoras! La comunidad de FreeBSD "
+"sólo puede ayudar a apoyar a los usuarios del software que proporcionamos. "
+"Ciertamente alentamos la innovación en la forma de instalación avanzada y "
+"herramientas de administración, por ejemplo, pero no se puede esperar que "
+"respondamos a preguntas sobre ello."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:927
 msgid "Scripting <command>bsdinstall</command>"
-msgstr ""
+msgstr "Secuencia de comando <command>bsdinstall</command>"
 
 #. (itstool) path: footnote/simpara
 #: article.translate.xml:934
@@ -1494,6 +1534,12 @@ msgid ""
 "class=\"registered\">Intel</trademark> PXE <_:footnote-1/> to bootstrap "
 "systems from the network."
 msgstr ""
+"La herramienta de instalación y configuración del sistema FreeBSD, <citerefen"
+"try><refentrytitle>bsdinstall</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>, puede ser programada para proporcionar instalaciones "
+"automatizadas para grandes sitios. Esta funcionalidad puede ser usada en "
+"conjunto con <trademark class=\"registered\">Intel</trademark> PXE <_:"
+"footnote-1/> para arrancar sistemas de la red."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:943
@@ -1613,6 +1659,9 @@ msgid ""
 "www.NetBSD.org/developers/releng/index.html\">http://www.NetBSD.org/"
 "developers/releng/index.html</uri>"
 msgstr ""
+"Documentación del desarrollador de NetBSD: Ingeniería de Liberación <uri "
+"xlink:href=\"http://www.NetBSD.org/developers/releng/index.html\">http://www."
+"NetBSD.org/developers/releng/index.html</uri>"
 
 #. (itstool) path: footnote/simpara
 #: article.translate.xml:1046
