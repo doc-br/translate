@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-25 03:44+0000\n"
+"PO-Revision-Date: 2020-09-26 17:10+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -14270,6 +14270,15 @@ msgid ""
 "off the ESP/AH header on packet reception, since we will never use the "
 "received packet in \"as is\" form."
 msgstr ""
+"ماژول IPsec به‌عنوان \"hooks\" در پردازش استاندارد IPv4/IPv6 پیاده‌سازی شده "
+"است. هنگام ارسال بسته، ip{,6}_output() با بررسی برای یافتن یک SPD (Security "
+"Policy Database) منطبق بررسی می‌کند اگر پردازش ESP/AH لازم است یا خیر. اگر "
+"ESP/AH مورد نیاز باشد، {esp,ah}{4,6}_output() فراخوان می‌شود و mbuf طبق آن "
+"به ‌روز می‌شود. هنگام دریافت بسته، {esp,ah}4_input() بر اساس شمارهٔ قرارداد "
+"فراخوان می‌شود، برای مثال، (*inetsw[proto])(). {esp,ah}4_input() اصالت بسته "
+"را بررسی/رمزگشایی می‌کند، و سرآیند زنجیره‌وار و لایه‌گذاریِ ESP/AH را از بین "
+"می‌برد. از میان‌بردن سرآیند ESP/AH در پذیرش بسته امن است، زیرا هرگز بستهٔ "
+"دریافتی را \"چنان که هست\" استفاده نمی‌کنیم."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7923
@@ -17646,6 +17655,9 @@ msgid ""
 "termed a file descriptor. It returns <varname>-1</varname> on failure, and "
 "sets <varname>errno</varname> to indicate the error."
 msgstr ""
+"اگر موفقیت آمیز بود، <function>open()</function> یک عدد صحیح غیرمنفی را به‌"
+"عنوان توصیف‌گر پرونده برمی‌گرداند. در صورت شکست <varname>-1</varname> را "
+"بر‌می‌گرداند و <varname>errno</varname> را تعیین می‌کند تا خطا را مشخص کند."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9692
@@ -17654,6 +17666,9 @@ msgid ""
 "\">UNIX</trademark> and FreeBSD will immediately ask the puzzling question: "
 "Where is <varname>errno</varname> and how do I get to it?"
 msgstr ""
+"برنامه‌نویس زبان همگذاریِ تازه وارد به <trademark class=\"registered\">UNIX</"
+"trademark> و FreeBSD به‌سرعت سوال گیج‌کننده را می‌پرسد: <varname>errno</"
+"varname> کجاست و چطور آن را دریافت کنم؟"
 
 #. (itstool) path: note/para
 #: book.translate.xml:9697
@@ -17661,11 +17676,13 @@ msgid ""
 "The information presented in the manual pages applies to C programs. The "
 "assembly language programmer needs additional information."
 msgstr ""
+"اطلاعات ارائه شده در صفحات راهنما در مورد برنامه‌های C صدق می‌کنند. برنامه‌"
+"نویس زبان همگذاری نیازمند به اطلاعات اضافی است."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9704
 msgid "Where Are the Return Values?"
-msgstr ""
+msgstr "مقادیر بازگشتی کجا هستند؟"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9706
@@ -17676,6 +17693,11 @@ msgid ""
 "value in <varname role=\"register\">EAX</varname>. If it is not there, you "
 "need further research."
 msgstr ""
+"متأسفانه، بستگی دارد ... برای بیشتر فراخوانی‌های سامانه‌ داخل <varname role="
+"\"register\">EAX</varname> قرار دارد، اما نه برای همه. یک قانون کلی، هنگامی‌"
+"که برای اولین بار در حال کار با یک فراخوان سامانه هستید، به دنبال مقدار "
+"بازگشتی در <varname role=\"register\">EAX</varname> باشید. اگر آنجا نباشد، "
+"به جستجوی بیشتری نیاز دارید."
 
 #. (itstool) path: note/para
 #: book.translate.xml:9713
@@ -17685,6 +17707,10 @@ msgid ""
 "All others I have worked with use <varname role=\"register\">EAX</varname>. "
 "But I have not worked with them all yet."
 msgstr ""
+"من از یک فراخوان سامانه خبر دارم که مقدار را در <varname role=\"register\""
+">EDX</varname>: <function role=\"syscall\">SYS_fork</function> برمی‌گرداند. "
+"سایر فراخوان‌های سامانه‌ای که باهاشون کار کردم از <varname role=\"register\""
+">EAX</varname> استفاده می‌کنند. اما هنوز با همهٔ آنها کار نکرده‌ام."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:9720
@@ -17693,16 +17719,19 @@ msgid ""
 "<application>libc</application> source code and see how it interfaces with "
 "the kernel."
 msgstr ""
+"اگر نمی‌توانید پاسخ را در اینجا یا هرجای دیگر پیدا کنید، کد منبعِ "
+"<application>libc</application> را مطالعه کنید و نحوهٔ کارکرد رابط‌های آن با "
+"هسته را مشاهده کنید."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9727
 msgid "Where Is <varname>errno</varname>?"
-msgstr ""
+msgstr "<varname>errno</varname> کجاست؟"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9729
 msgid "Actually, nowhere..."
-msgstr ""
+msgstr "در واقع، هیچ کجا ..."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9731
@@ -17712,6 +17741,10 @@ msgid ""
 "directly, the error code is returned in <varname role=\"register\">EAX</"
 "varname>, the same register the proper return value generally ends up in."
 msgstr ""
+"<varname>errno</varname> بخشی از زبان C هست، نه هستهٔ <trademark class="
+"\"registered\">UNIX</trademark>. هنگام دسترسی مستقیم به سرویس‌های هسته، کد "
+"خطا در <varname role=\"register\">EAX</varname> برگردانده می‌شود، همان ثباتی "
+"که به‌طور کلی مقدار بازگشتیِ مناسب به آن منتهی می‌شود."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9736
@@ -17719,11 +17752,14 @@ msgid ""
 "This makes perfect sense. If there is no error, there is no error code. If "
 "there is an error, there is no return value. One register can contain either."
 msgstr ""
+"با عقل جور در می‌آید. اگر هیچ خطایی نباشد، یعنی هیچ کد خطایی وجود ندارد. اگر "
+"خطایی باشد، یعنی هیچ مقدار بازگشتی‌ای وجود ندارد. یک ثبات می‌تواند هر دو را "
+"شامل شود."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9742
 msgid "Determining an Error Occurred"
-msgstr ""
+msgstr "تعیین خطای رخ داده"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9744
@@ -17731,6 +17767,8 @@ msgid ""
 "When using the standard FreeBSD calling convention, the <varname role="
 "\"register\">carry flag</varname> is cleared upon success, set upon failure."
 msgstr ""
+"هنگام استفاده از رویهٔ استاندارد فراخوانیِ FreeBSD، <varname role=\"register"
+"\">carry flag</varname> در صورت موفقیت پاک می‌شود، در صورت شکست تعیین می‌شود."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9748
@@ -17740,11 +17778,14 @@ msgid ""
 "return value. In case of an error, the value is negative, i.e., <varname>-"
 "errno</varname>."
 msgstr ""
+"هنگام استفاده از حالت شبیه‌ساز Linux، در صورت موفقیت، مقدار علامت دار در "
+"<varname role=\"register\">EAX</varname> غیر منفی است، و شامل مقدار بازگشتی "
+"است. در صورت خطا، مقدار منفی است، برای مثال، <varname>-errno</varname>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:9756
 msgid "Creating Portable Code"
-msgstr ""
+msgstr "ایجاد کد انتقال‌پذیر"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9758
@@ -17755,6 +17796,11 @@ msgid ""
 "language libraries that can be assembled for such different operating "
 "systems as <trademark class=\"registered\">Windows</trademark> and FreeBSD."
 msgstr ""
+"انتقال‌پذیری به‌طور کلی جزو قدرت‌های زبان همگذاری نیست. با این حال، نوشتن "
+"برنامه‌های اسمبلی برای بسترهای گوناگون ممکن است، مخصوصاً‌ با "
+"<application>nasm</application>. من کتابخانه‌های اسمبلی‌ای نوشته‌ام که می‌"
+"توان برای سامانه‌های عامل مختلفی مانند <trademark class=\"registered\""
+">Windows</trademark> و FreeBSD همگذاری کرد."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9765
@@ -17762,6 +17808,8 @@ msgid ""
 "It is all the more possible when you want your code to run on two platforms "
 "which, while different, are based on similar architectures."
 msgstr ""
+"این امکان وجود دارد که بخواهید کدتان را بر روی دو بستر اجرا کنید، که در عین "
+"تفاوت، بر مبنای یک معماری هستند."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9769
@@ -17772,11 +17820,15 @@ msgid ""
 "programmer's perspective): The calling convention, the function numbers, and "
 "the way of returning values."
 msgstr ""
+"برای مثال، FreeBSD یک <trademark class=\"registered\">UNIX</trademark> است، "
+"Linux یک شبه <trademark class=\"registered\">UNIX</trademark> است. من تنها "
+"سه تفاوت در میان آنها را ذکر کردم (از دیدگاه یک برنامه‌نویس زبان اسمبلی): "
+"رویهٔ فراخوانی، شماره‌های توابع، و نحوهٔ برگرداندن مقدارها."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9775
 msgid "Dealing with Function Numbers"
-msgstr ""
+msgstr "کار با شماره‌های توابع"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9777
@@ -17786,6 +17838,9 @@ msgid ""
 "code, use constants which you have declared differently depending on the "
 "target architecture:"
 msgstr ""
+"در بسیاری موارد شماره‌های توابع یکی هستند. گرچه، حتی زمانی‌که نیستند، کنار "
+"آمدن با این مشکل آسان است:‌ به جای استفاده از شماره‌‌ها در کد خود، از مقادیر "
+"ثابتی که بسته به معماری هدف، متفاوت اعلان کرده‌اید استفاده کنید:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:9783
@@ -17797,11 +17852,16 @@ msgid ""
 "%define\tSYS_execve\t59\n"
 "%endif"
 msgstr ""
+"%ifdef\tLINUX\n"
+"%define\tSYS_execve\t11\n"
+"%else\n"
+"%define\tSYS_execve\t59\n"
+"%endif"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9791
 msgid "Dealing with Conventions"
-msgstr ""
+msgstr "کار با رویه‌ها"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9793
