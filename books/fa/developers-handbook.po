@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-28 16:32+0000\n"
+"PO-Revision-Date: 2020-09-29 03:31+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -18058,11 +18058,15 @@ msgid ""
 "something other than calling the kernel, so usually you will only need a few "
 "such conditional sections in your code."
 msgstr ""
+"در آن صورت، شما نیاز است تا دو نگاه‌دارنده برای آن فراخوان‌های سامانهٔ ویژه "
+"بنویسید، و از همگذاریِ شرطی استفاده کنید. خوشبختانه، بیشتر کد شما کاری به "
+"غیر از فراخوانی تابع انجام می‌دهد، پس معمولاً تنها به چند بخش‌ شرطی در کدتان "
+"نیاز خواهید داشت."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9860
 msgid "Using a Library"
-msgstr ""
+msgstr "استفاده از کتابخانه"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9862
@@ -18071,6 +18075,10 @@ msgid ""
 "library of system calls. Create a separate library for FreeBSD, a different "
 "one for Linux, and yet other libraries for more operating systems."
 msgstr ""
+"می‌توانید با نوشتن کتابخانه برای فراخوان‌های سامانه، از مسائل انتقال‌پذیری "
+"در کد اصلیِ خود به‌طور کلی اجتناب کنید. یک کتابخانهٔ جداگانه برای FreeBSD "
+"ایجاد کنید، یکی برای Linux، و حتی کتابخانه‌های دیگری برای سامانه‌های عامل "
+"بیشتر."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9867
@@ -18082,6 +18090,12 @@ msgid ""
 "FreeBSD library can be very simple, as many seemingly different functions "
 "can be just labels to the same code:"
 msgstr ""
+"در کتابخانهٔ خود، یک تابع جداگانه (یا روش، اگر اصطلاحات سنتی زبان همگذاری را "
+"ترجیح می‌دهید) برای هر فراخوان سامانه بنویسید. از رویهٔ فراخوانیِ‌ C برای "
+"قبول کردن پارامترها استفاده کنید. اما از <varname role=\"register\">EAX</"
+"varname> هم برای قبول کردن شمارهٔ فراخوان استفاده کنید. در آن صورت، کتابخانهٔ"
+" FreeBSD شما می‌تواند بسیار ساده باشد، همانطور که بسیاری از توابع به‌ظاهر "
+"متفاوت می‌توانند برچسبی با همان کد باشند:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:9875
@@ -18093,6 +18107,11 @@ msgid ""
 "\tint\t80h\n"
 "\tret"
 msgstr ""
+"sys.open:\n"
+"sys.close:\n"
+"[etc...]\n"
+"\tint\t80h\n"
+"\tret"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9881
@@ -18100,6 +18119,8 @@ msgid ""
 "Your Linux library will require more different functions. But even here you "
 "can group system calls using the same number of parameters:"
 msgstr ""
+"کتابخانهٔ Linux شما نیازمند دو تابع متفاوت است. اما حتی در اینجا نیز می‌"
+"توانید فراخوان‌های تابع را با استفاده از همان تعداد پارامترها گروه‌بندی کنید:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:9885
@@ -18127,6 +18148,27 @@ msgid ""
 "\tstc\n"
 "\tret"
 msgstr ""
+"sys.exit:\n"
+"sys.close:\n"
+"[etc... one-parameter functions]\n"
+"\tpush\tebx\n"
+"\tmov\tebx, [esp+12]\n"
+"\tint\t80h\n"
+"\tpop\tebx\n"
+"\tjmp\tsys.return\n"
+"\n"
+"...\n"
+"\n"
+"sys.return:\n"
+"\tor\teax, eax\n"
+"\tjs\tsys.err\n"
+"\tclc\n"
+"\tret\n"
+"\n"
+"sys.err:\n"
+"\tneg\teax\n"
+"\tstc\n"
+"\tret"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9907
@@ -18153,7 +18195,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:9925
 msgid "Using an Include File"
-msgstr ""
+msgstr "استفاده از پروندهٔ Include"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9927
@@ -18161,6 +18203,9 @@ msgid ""
 "If you are releasing your software as (or with) source code, you can use "
 "macros and place them in a separate file, which you include in your code."
 msgstr ""
+"چنانچه برنامهٔ خود را به‌عنوان (یا به‌همراه) کد منبع عرضه می‌کنید، می‌توانید "
+"از ماکروها استفاده کنید و آنها در یک پروندهٔ جدا قرار دهید، که در کدتان قرار "
+"می‌دهید."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9931
@@ -18169,6 +18214,9 @@ msgid ""
 "external object file is necessary, yet your code is portable without any "
 "need to edit the code."
 msgstr ""
+"پورت‌کنندگان برنامهٔ شما به‌سادگی یک پروندهٔ جدید include می‌نویسند. هیچ "
+"کتابخانه یا پروندهٔ هدفی لازم نیست، با این حال کد شما بدون نیاز به هیچ "
+"ویرایشی انتقال‌پذیر است."
 
 #. (itstool) path: note/para
 #: book.translate.xml:9936
@@ -18177,6 +18225,9 @@ msgid ""
 "include file <filename>system.inc</filename>, and add to it whenever we deal "
 "with a new system call."
 msgstr ""
+"این روشی است که ما در طی این فصل از آن استفاده می‌کنیم. پروندهٔ include خود "
+"را <filename>system.inc</filename> نام‌گذاری می‌کنیم، و هر زمان که در مشغول "
+"به کار با یک فراخوان سامانهٔ جدید هستیم به آن اضافه می‌کنیم."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9941
@@ -18184,6 +18235,8 @@ msgid ""
 "We can start our <filename>system.inc</filename> by declaring the standard "
 "file descriptors:"
 msgstr ""
+"می‌توانیم <filename>system.inc</filename> خود را با اعلان توصیف‌گرهای پروندهٔ"
+" استاندارد آغاز کنیم:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:9944
@@ -18193,6 +18246,9 @@ msgid ""
 "%define\tstdout\t1\n"
 "%define\tstderr\t2"
 msgstr ""
+"%define\tstdin\t0\n"
+"%define\tstdout\t1\n"
+"%define\tstderr\t2"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9948
