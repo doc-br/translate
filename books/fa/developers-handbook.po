@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-29 03:31+0000\n"
+"PO-Revision-Date: 2020-09-30 02:15+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -15175,6 +15175,15 @@ msgid ""
 "crash</filename> after a dump is saved. This symbolic link can be used to "
 "locate the name of the most recent dump."
 msgstr ""
+"در صورتی‌که پرونده‌ای به نام <filename>vmcore.0</filename> از پیش در "
+"<filename>/var/crash</filename> (یا هر آنچه که در مقدار <varname>dumpdir</"
+"varname> باشد) وجود داشته باشد، هسته برای جلوگیری از بازنویسیِ یک "
+"<filename>vmcore</filename> موجود، اعداد دنباله‌دار را برای هر خرابی افزایش "
+"می‌دهد (برای مثال، <filename>vmcore.1</filename>). <citerefentry><refentrytit"
+"le>savecore</refentrytitle><manvolnum>8</manvolnum></citerefentry> پس از "
+"ذخیرهٔ روگرفت، همیشه یک پیوند نمایدن به نام <filename>vmcore.last</filename> "
+"در <filename>/var/crash</filename> می‌سازد. این پیوند نمادین را می‌توان برای "
+"یافتن نام روگرفت اخیر به‌کار برد."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8452
@@ -18253,7 +18262,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:9948
 msgid "Next, we create a symbolic name for each system call:"
-msgstr ""
+msgstr "سپس، یک نام نمایدن برای هر کدام از فراخوان‌های سامانه ایجاد می‌کنیم:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:9950
@@ -18266,6 +18275,12 @@ msgid ""
 "%define\tSYS_write\t4\n"
 "; [etc...]"
 msgstr ""
+"%define\tSYS_nosys\t0\n"
+"%define\tSYS_exit\t1\n"
+"%define\tSYS_fork\t2\n"
+"%define\tSYS_read\t3\n"
+"%define\tSYS_write\t4\n"
+"; [etc...]"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9957
@@ -18273,6 +18288,8 @@ msgid ""
 "We add a short, non-global procedure with a long name, so we do not "
 "accidentally reuse the name in our code:"
 msgstr ""
+"ما یک روش کوتاه و غیرجهانی با نامی بلند اضافه می‌کنیم، در نتیجه به‌طور "
+"تصادفی از همان نام در کدمان استفادهٔ مجدد نمی‌کنیم:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:9960
@@ -18284,11 +18301,17 @@ msgid ""
 "\tint\t80h\n"
 "\tret"
 msgstr ""
+"section\t.text\n"
+"align 4\n"
+"access.the.bsd.kernel:\n"
+"\tint\t80h\n"
+"\tret"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9966
 msgid "We create a macro which takes one argument, the syscall number:"
 msgstr ""
+"یک ماکرو ایجاد می‌کنیم که تنها یک برهان می‌پذیرد، شمارهٔ فراخوان سامانه:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:9969
@@ -18299,12 +18322,18 @@ msgid ""
 "\tcall\taccess.the.bsd.kernel\n"
 "%endmacro"
 msgstr ""
+"%macro\tsystem\t1\n"
+"\tmov\teax, %1\n"
+"\tcall\taccess.the.bsd.kernel\n"
+"%endmacro"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9974
 msgid ""
 "Finally, we create macros for each syscall. These macros take no arguments."
 msgstr ""
+"در انتها، برای هر فراخوان سامانه یک ماکرو می‌سازیم. این ماکروها هیچ برهانی "
+"را نمی‌پذیرند."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:9977
@@ -18328,6 +18357,23 @@ msgid ""
 "\n"
 "; [etc...]"
 msgstr ""
+"%macro\tsys.exit\t0\n"
+"\tsystem\tSYS_exit\n"
+"%endmacro\n"
+"\n"
+"%macro\tsys.fork\t0\n"
+"\tsystem\tSYS_fork\n"
+"%endmacro\n"
+"\n"
+"%macro\tsys.read\t0\n"
+"\tsystem\tSYS_read\n"
+"%endmacro\n"
+"\n"
+"%macro\tsys.write\t0\n"
+"\tsystem\tSYS_write\n"
+"%endmacro\n"
+"\n"
+"; [etc...]"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9995
@@ -18335,11 +18381,14 @@ msgid ""
 "Go ahead, enter it into your editor and save it as <filename>system.inc</"
 "filename>. We will add more to it as we discuss more syscalls."
 msgstr ""
+"ادامه دهید، آن را در ویرایش‌گر خود وارد کنید و به‌عنوان <filename>system."
+"inc</filename> ذخیره کنید. در آینده که پیرامون فراخوان‌های سامانهٔ بیشتری "
+"بحث می‌کنیم، موارد بیشتری را به آن اضافه می‌کنیم."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:10002
 msgid "Our First Program"
-msgstr ""
+msgstr "نخستین برنامهٔ ما"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10004
@@ -18347,6 +18396,8 @@ msgid ""
 "We are now ready for our first program, the mandatory <application>Hello, "
 "World!</application>"
 msgstr ""
+"ما اکنون برای نخستین برنامهٔ خود آماده‌ایم، برنامهٔ الزامیِ "
+"<application>Hello, World!</application>"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:10007
@@ -18369,6 +18420,22 @@ msgid ""
 "15:\tpush\tdword 0\n"
 "16:\tsys.exit"
 msgstr ""
+"1:\t%include\t'system.inc'\n"
+" 2:\n"
+" 3:\tsection\t.data\n"
+" 4:\thello\tdb\t'Hello, World!', 0Ah\n"
+" 5:\thbytes\tequ\t$-hello\n"
+" 6:\n"
+" 7:\tsection\t.text\n"
+" 8:\tglobal\t_start\n"
+" 9:\t_start:\n"
+"10:\tpush\tdword hbytes\n"
+"11:\tpush\tdword hello\n"
+"12:\tpush\tdword stdout\n"
+"13:\tsys.write\n"
+"14:\n"
+"15:\tpush\tdword 0\n"
+"16:\tsys.exit"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10024
@@ -18376,6 +18443,8 @@ msgid ""
 "Here is what it does: Line 1 includes the defines, the macros, and the code "
 "from <filename>system.inc</filename>."
 msgstr ""
+"آنچه که انجام می‌دهد بدین شرح است: خط 1 شامل تعریف‌ها (defines)، ماکروها، و "
+"کدهای <filename>system.inc</filename> است."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10027
@@ -18385,6 +18454,10 @@ msgid ""
 "constant>). Line 5 creates a constant that contains the length of the string "
 "from line 4 in bytes."
 msgstr ""
+"خط 3 تا 5 شامل داده‌هاست: خط 3 بخش/تکهٔ داده‌ها را آغاز می‌کند. خط 4 شامل "
+"رشتهٔ \"Hello, World!\" و به‌دنبال آن خط جدیدِ (<constant>0Ah</constant>) "
+"است. خط 5 یک مقدار ثابت که شامل طول رشتهٔ خط چهارم در بایت‌هاست را ایجاد "
+"می‌کند."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10033
@@ -18394,6 +18467,11 @@ msgid ""
 "start at the point labeled <varname>_start</varname> (or, more precisely, "
 "the linker expects that). This label has to be global."
 msgstr ""
+"خط‌های 7 تا 16 شامل کد هستند. توجه داشته باشید که FreeBSD از قالب پروندهٔ "
+"<emphasis>elf</emphasis> برای اجراپذیرهای خود استفاده می‌کند، که هر برنامه "
+"را ملزم به آغاز در نقطهٔ برچسب‌گذاری شدهٔ <varname>_start</varname> می‌کند "
+"(یا، به‌طور دقیق‌تر، پیوند دهنده چنین انتظاری دارد). این برچسب باید جهانی "
+"باشد."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10039
@@ -18401,6 +18479,9 @@ msgid ""
 "Lines 10-13 ask the system to write <varname>hbytes</varname> bytes of the "
 "<varname>hello</varname> string to <varname>stdout</varname>."
 msgstr ""
+"سطرهای 10 تا 13 از سامانه درخواست می‌کنند تا بایت‌های <varname>hbytes</"
+"varname> از رشتهٔ <varname>hello</varname> را در <varname>stdout</varname> "
+"بنویسند."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10043
@@ -18409,6 +18490,10 @@ msgid ""
 "<constant>0</constant>. The <function role=\"syscall\">SYS_exit</function> "
 "syscall never returns, so the code ends there."
 msgstr ""
+"سطرهای 15 تا 16 از سامانه دروخواست می‌کنند تا برنامه را با مقدار بازگشتیِ "
+"<constant>0</constant> به پایان برساند. فراخوان سامانهٔ‌ <function role="
+"\"syscall\">SYS_exit</function> هرگز برنمی‌گرداند، از این رو کد همینجا به "
+"پایان می‌رسد."
 
 #. (itstool) path: note/para
 #: book.translate.xml:10048
@@ -18427,7 +18512,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:10060
 msgid "Assembling the Code"
-msgstr ""
+msgstr "همگذاریِ کد"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10062
@@ -18436,16 +18521,19 @@ msgid ""
 "named <filename>hello.asm</filename>. You need <application>nasm</"
 "application> to assemble it."
 msgstr ""
+"کدها را (به‌غیر از شمارهٔ سطرها) در یک ویرایشگر بنویسید، و آنها را در یک "
+"پرونده به نام <filename>hello.asm</filename> ذخیره کنید. به "
+"<application>nasm</application> برای همگذآری آن نیاز دارید."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:10067
 msgid "Installing <application>nasm</application>"
-msgstr ""
+msgstr "نصب <application>nasm</application>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10069
 msgid "If you do not have <application>nasm</application>, type:"
-msgstr ""
+msgstr "چنانچه <application>nasm</application> را ندارید، بنویسید:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:10072
@@ -18458,6 +18546,13 @@ msgid ""
 "<prompt>#</prompt> <userinput>exit</userinput>\n"
 "<prompt>%</prompt>"
 msgstr ""
+"<prompt>%</prompt> <userinput>su</userinput>\n"
+"Password:<userinput><replaceable>your root password</replaceable></userinput>"
+"\n"
+"<prompt>#</prompt> <userinput>cd /usr/ports/devel/nasm</userinput>\n"
+"<prompt>#</prompt> <userinput>make install</userinput>\n"
+"<prompt>#</prompt> <userinput>exit</userinput>\n"
+"<prompt>%</prompt>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10079
