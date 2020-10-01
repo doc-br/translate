@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
 "PO-Revision-Date: 2020-10-02 02:25+0000\n"
-"Last-Translator: Parsa Samet <qps@irbug.org>\n"
+"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -9227,6 +9227,11 @@ msgid ""
 "acronym> format as opposed to <acronym>GIF</acronym>, or <acronym>JPEG</"
 "acronym>, or some other image format?"
 msgstr ""
+"آوخ، اگر تمام چیزی که ما دریافت کردیم پروندهٔ <acronym>PNG</acronym> بود، "
+"نرم‌افزار ما با مشکل سختی مواجه می‌شد: از کجا باید می‌دانست که داده نمایانگر "
+"یک تصویر است، و نه مقداری متن، و شاید یک صدا، و نه چیزی دیگر؟ دومی، چطور "
+"باید بداند که تصویر یک <acronym>PNG</acronym> است و نه "
+"<acronym>GIF</acronym>، یا <acronym>JPEG</acronym>، یا گونه‌ای دیگر از تصویر؟"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5049
@@ -9236,6 +9241,11 @@ msgid ""
 "image, and that it uses the <acronym>PNG</acronym> protocol. It can also "
 "tell us some other things, but let us stay focused on protocol layers here."
 msgstr ""
+"برای بدست آوردن این اطلاعات، ما از قراردادی دیگر استفاده می‌کنیم: "
+"<acronym>HTTP</acronym>. این قرارداد می‌تواند دقیقاً به ما بگوید که داده "
+"نمایانگر یک تصویر است، و از قرارداد <acronym>PNG</acronym> استفاده می‌کند. "
+"می‌تواند چیزهای دیگری هم به ما بگوید، اما اکنون بیایید بر روی لایه‌های "
+"قرارداد متمرکز بمانیم."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5055
@@ -9244,6 +9254,9 @@ msgid ""
 "wrapped in the <acronym>HTTP</acronym> protocol. How did we get it from the "
 "server?"
 msgstr ""
+"بسیار خوب، حال مقداری دادهٔ پیچیده شده در قرارداد <acronym>PNG</acronym>، "
+"پیچیده شده در قرارداد <acronym>HTTP</acronym> داریم. چطور این را از کارساز "
+"گرفتیم؟"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5060
@@ -9253,6 +9266,9 @@ msgid ""
 "talk about Ethernet, simply because it is easier to explain the rest that "
 "way."
 msgstr ""
+"بدین شکل، با استفاده از <acronym>TCP/IP</acronym> بر روی اِتِرنِت. صحیح، این "
+"سه قرارداد دیگر است. به جای ادامهٔ از داخل به بیرون، اکنون می‌خواهم در مورد "
+"اترنت صحبت کنم، چرا که ساده‌تر از مابقی می‌توان توضیحش داد."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5065
@@ -9264,6 +9280,11 @@ msgid ""
 "<emphasis>address</emphasis>. No two Ethernet <acronym>NIC</acronym>s in the "
 "world have the same address."
 msgstr ""
+"اترنت یک سامانهٔ جالب برای ارتباط رایانه‌ها در یک <emphasis>شبکهٔ محلی</"
+"emphasis> (<acronym>LAN</acronym>) است. هر رایانه یک <emphasis>کارت شبکه</"
+"emphasis> (<acronym>NIC</acronym>) دارد، که یک <acronym>ID</acronym> ۴۸-بیتی "
+"منحصر به فرد به عنوان <emphasis>نشانی</emphasis> خود دارد. هیچ دو "
+"<acronym>NIC</acronym> در دنیا یک نشانی مشترک ندارند."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5074
@@ -9277,6 +9298,12 @@ msgid ""
 "the network interface cards will pay attention to it, the rest will ignore "
 "it."
 msgstr ""
+"این <acronym>NIC</acronym> ها همه با یکدیگر مرتبط هستند. هر زمان که یک "
+"رایانه می‌خواهد با رایانه‌ای دیگر در یک اترنت <acronym>LAN</acronym> صحبت "
+"کند، پیامی بر روی شبکه ارسال می‌کند. تمام <acronym>NIC</acronym> ها پیام را "
+"می‌بینند. اما به‌عنوان بخشی از <emphasis>قرارداد</emphasis> اترنت، داده حاوی "
+"نشانیِ <acronym>NIC</acronym> مقصد (میان دیگران) است. بنابراین، تنها یکی از "
+"تمام کارت شبکه‌ها به آن توجه می‌کند، مابقی آن را نادیده می‌گیرند."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5084
@@ -9287,6 +9314,10 @@ msgid ""
 "(which may not even be Ethernet based) connected with our own network via "
 "the Internet."
 msgstr ""
+"اما همهٔ رایانه‌ها به یک شبکه وصل نیستند. اینکه ما داده را از طریق اترنت "
+"دریافت کردیم به این معنا نیست که خاستگاه آن شبکه محلی خودمان است. می‌تواند "
+"از شبکهٔ دیگری (که حتی ممکن است مبتنی بر اترنت نباشد) که به واسطهٔ اینترنت "
+"با ما ارتباط دارد به سمت ما آمده باشد."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5091
@@ -9298,6 +9329,11 @@ msgid ""
 "receive the data, only that we will know where it came from <emphasis>if</"
 "emphasis> we do receive it."
 msgstr ""
+"تمامی داده‌ها بر روی اینترنت به واسطهٔ <acronym>IP</acronym> منتقل می‌شوند، "
+"که مخفف <emphasis>قرارداد اینترنت</emphasis> است. نقش اساسی آن آگاه ساختن ما "
+"از خاستگاه یک داده در دنیا و مقصد آن است. این <emphasis>تضمین</emphasis> نمی‌"
+"کند که ما داده را دریافت می‌کنیم، تنها اینکه می‌دانیم داده از کجا آمده است "
+"را تضمین می‌کند، البته <emphasis>اگر</emphasis> که دریافتش کنیم."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5099
@@ -9307,6 +9343,10 @@ msgid ""
 "sent it to us. So, we can receive the center of our image before we receive "
 "the upper left corner and after the lower right, for example."
 msgstr ""
+"حتی اگر داده را دریافت کنیم، <acronym>IP</acronym> تضمینی نمی‌کند که تکه‌های "
+"مختلف را به همان ترتیب که از رایانهٔ دیگر ارسال شده است دریافت کنیم. "
+"بنابراین، به‌طور مثال می‌توانیم مرکز تصویر را قبل از گوشهٔ بالا سمت چپ و بعد "
+"از پایین سمت راست تصویر دریافت کنیم."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5105
@@ -9330,6 +9370,12 @@ msgid ""
 "acronym> protocol, which was wrapped into the <acronym>Ethernet</acronym> "
 "protocol."
 msgstr ""
+"در مجموع، <emphasis>پنج</emphasis> قرارداد مختلف استفاده شد تا یک رایانه "
+"رایانه‌ای دیگر از ظاهر یک تصویر مطلع سازد. ما داده را پیچیده شده در قرارداد "
+"<acronym>PNG</acronym> دریافت کردیم، که خود پیچیده شده در قرارداد "
+"<acronym>HTTP</acronym> بود، که آن پیچیده شده در قرارداد <acronym>TCP</"
+"acronym> بود، که پیچیده شده در قرارداد <acronym>IP</acronym> بود، که آن هم "
+"پیچیده شده در قرارداد <acronym>اترنت</acronym> بود."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5118
@@ -9340,6 +9386,11 @@ msgid ""
 "acronym> protocol over the modem which used one (or several) of the various "
 "modem protocols, et cetera, et cetera, et cetera..."
 msgstr ""
+"اوه،‌راستی، احتمالاً چند قراداد دیگر هم جایی در مسیر درگیر بودند. برای مثال، "
+"اگر <acronym>LAN</acronym> ما به اینترنت توسط یک تماس dial-up وصل شده بود، "
+"از قرارداد <acronym>PPP</acronym> بر روی مُودم استفاده می‌کرد که خود از یکی ("
+"یا چندتا) از قراردادهای مختلف مرتبط با مودم استفاده می‌کرد، و غیره، و غیره، "
+"و غیره..."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5125
@@ -9359,6 +9410,11 @@ msgid ""
 "case Ethernet and possibly <acronym>PPP</acronym>, etc). Nor do you need to "
 "handle the Internet Protocol, or the Transmission Control Protocol."
 msgstr ""
+"خوشبختانه، شما بنا <emphasis>نیست</emphasis> تماما این فرآیند را مدیریت "
+"کنید. شما <emphasis>بناست</emphasis> بخشی از آن را مدیریت کنید، اما نه همهٔ "
+"آن را. به‌طور مشخص، شما نیازی نیست نگران ارتباط فیزیکی (در این مثال اترنت و "
+"احتمالاً <acronym>PPP</acronym>، و غیره) باشید. همچنین نیاز نیست قرارداد "
+"اینترنت، یا قرارداد هدایت انتقال را مدیریت کنید."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5137
@@ -9367,6 +9423,9 @@ msgid ""
 "other computer. Well, you do have to <emphasis>ask</emphasis> for it, but "
 "that is almost as simple as opening a file."
 msgstr ""
+"به‌گفته‌ای دیگر، برای دریافت داده از رایانه‌ای دیگر شما نیاز نیست هیچ کاری "
+"کنید. در حقیقت، شما باید برای آن <emphasis>تقاضا</emphasis> کنید، اما این به "
+"سادگی باز کردن یک پرونده است."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5142
@@ -9375,6 +9434,9 @@ msgid ""
 "with it. In our case, you would need to understand the <acronym>HTTP</"
 "acronym> protocol and the <acronym>PNG</acronym> file structure."
 msgstr ""
+"به محض اینکه داده را دریافت کنید، دیگر به شما مربوط است که بفهمید با آن چه "
+"باید کنید. در مثال ما، شما نیاز به درک قرارداد <acronym>HTTP</acronym> و "
+"ساختار پروندهٔ <acronym>PNG</acronym> دارید."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5147
@@ -9384,6 +9446,9 @@ msgid ""
 "longer concerned about it. The sockets interface takes care of this gray "
 "area for us:"
 msgstr ""
+"برای استفاده از یک تشبیه، تمام قراردادهای اینترنت به یک فضای خاکستری بدل "
+"می‌شوند: نه به این دلیل که نمی‌فهمیم چطور کار می‌کنند، بلکه به این دلیل که "
+"دیگر نگرانشان نیستیم. سوکت‌ها از این فضاهای خاکستری برایمان مراقبت می‌کنند:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -9444,6 +9509,9 @@ msgid ""
 "<textobject> <_:literallayout-1/> </textobject> <textobject> <phrase>Sockets "
 "Covered Protocol Layers</phrase> </textobject>"
 msgstr ""
+"<imageobject> <imagedata fileref=\"sockets/slayers\"/> </imageobject> "
+"<textobject> <_:literallayout-1/> </textobject> <textobject> <phrase>لایه‌"
+"های قراردادی تحت پوشش سوکت‌ها</phrase> </textobject>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5183
@@ -9453,6 +9521,10 @@ msgid ""
 "emphasis> it from another process, nor how to <emphasis>send</emphasis> it "
 "to another process."
 msgstr ""
+"ما تنها لازم است قراردادهایی که به ما از نحوهٔ چگونه <emphasis>تفسیر کردن "
+"داده</emphasis> می‌گویند را بدانیم، نه چگونه <emphasis>دریافت کردن</"
+"emphasis> آن از فرآیندی دیگر را، و نه حتی چگونه <emphasis>ارسال کردن</"
+"emphasis> آن به فرآیند دیگری را."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:5191
@@ -9482,6 +9554,10 @@ msgid ""
 "<function>open()</function> C function. Instead, we need to take several "
 "steps to <quote>opening</quote> a socket."
 msgstr ""
+"به دلیل پیچیدگی اینترنت، ما نمی‌توانیم تنها از فراخوان سیستمیِ <function "
+"role=\"syscall\">open</function>، یا تابع <function>open()</function> در "
+"زبان C استفاده کنیم. بلکه، به طی کردن چندین مرحله برای <quote>باز کردن</"
+"quote> یک سوکت نیاز داریم."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5205
@@ -9565,6 +9641,10 @@ msgid ""
 "some are vendor specific, others are very common. They are declared in "
 "<filename>sys/socket.h</filename>."
 msgstr ""
+"برهان <varname>domain</varname> به سامانه می‌گوید که شما از کدام "
+"<emphasis>protocol family</emphasis> می‌خواهید استفاده کنید. تعداد زیادی از "
+"آنها موجود است، برخی سازمان-محور هستند، و مابقی مشترک. آنها در <filename>sys/"
+"socket.h</filename> تعریف شده‌اند."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5252
@@ -9601,6 +9681,9 @@ msgid ""
 "<acronym>IP</acronym>), or even network interfaces (e.g., the Ethernet), you "
 "would need to specify <constant>SOCK_RAW</constant>."
 msgstr ""
+"اگر می‌خواستید قراردادهای لایه پایین را مدیریت کنید (مانند "
+"<acronym>IP</acronym>)، یا حتی رابط‌های شبکه را (به‌طور مثال اترنت)، نیاز به "
+"تعریف <constant>SOCK_RAW</constant> داشتید."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5276
@@ -10826,6 +10909,9 @@ msgid ""
 "(remember the <varname>backlog</varname> variable we passed to "
 "<function>listen</function>?) until we <function>close</function> it."
 msgstr ""
+"چه بر سر سوکت سابق می‌آید؟ به استماع برای درخواست‌های بیشتر ادامه می‌دهد ("
+"متغیر <varname>backlog</varname> را که به تابع <function>listen</function> "
+"دادیم به یاد دارید؟) تا ما آن را <function>close</function> کنیم."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5980
