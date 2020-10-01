@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-09-30 02:15+0000\n"
+"PO-Revision-Date: 2020-10-02 02:25+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -6941,10 +6941,10 @@ msgid ""
 msgstr ""
 "تعریف <varname>NLSNAME</varname> به‌طور معمول کافیست، که باید نام فهرست را "
 "به‌عنوان اولین برهانِ <citerefentry><refentrytitle>catopen</refentrytitle><ma"
-"nvolnum>3</manvolnum></citerefentry> ذکر کند و پرونده‌های فهرست را در "
-"<varname>NLS</varname> بدون افزونهٔ <literal>.msg</literal> آنها فهرست کند. "
-"در اینجا مثالی آمده است، که غیرفعال کردن NLS را هنگامی‌که با کدهای نمونه از "
-"قبل استفاده شده باشد ممکن می‌سازد. متغیر <varname>WITHOUT_NLS</varname> "
+"nvolnum>3</manvolnum></citerefentry> ذکر کند و پرونده‌های فهرست را بدون "
+"پسوندِ <literal>.msg</literal> آنها در <varname>NLS</varname> فهرست کند. در "
+"اینجا مثالی آمده است که غیرفعال کردن NLS را هنگامی‌که از قبل با کدهای نمونه "
+"استفاده شده باشد ممکن می‌سازد. متغیر <varname>WITHOUT_NLS</varname> "
 "<citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> باید تعریف شود تا برنامه بدون پشتیبانی از NLS ساخته شود."
 
@@ -10637,8 +10637,8 @@ msgid ""
 "Ports are like extensions to a phone line: After you dial a number, you dial "
 "the extension to get to a specific person or department."
 msgstr ""
-"درگاه‌ها مانند پسوندهای یک خط تلفن هستند: بعد اینکه شماره‌ای را می‌گیرید، "
-"برای ارتباط با یک شخص یا یک بخش خاص پسوند آن را شماره‌گیری می‌کنید."
+"درگاه‌ها مانند پسوندهای خط تلفن هستند: بعد از اینکه شماره‌ای را می‌گیرید، "
+"برای ارتباط با یک شخص یا بخش خاص پسوند آن را شماره‌گیری می‌کنید."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5879
@@ -12036,7 +12036,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:6668
 msgid "RFC1886: DNS Extensions to support IPv6"
-msgstr "RFC1886: افزونه‌های سامانهٔ نام دامنه (DNS) برای پشتیبانی از IPv6"
+msgstr "RFC1886: پسوندهای سامانهٔ نام دامنه (DNS) برای پشتیبانی از IPv6"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6672
@@ -12148,7 +12148,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:6758
 msgid "RFC2428: FTP Extensions for IPv6 and NATs"
-msgstr "RFC2428: افزونه‌های FTP برای IPv6 و NAT ها"
+msgstr "RFC2428: پسوندهای FTP برای IPv6 و NAT ها"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6769
@@ -12237,7 +12237,7 @@ msgstr "RFC2464: انتقال بسته‌های IPv6 بر روی شبکه‌ها
 #. (itstool) path: listitem/para
 #: book.translate.xml:6842
 msgid "RFC2553: Basic Socket Interface Extensions for IPv6"
-msgstr "RFC2553: افزونه‌های رابط سوکت پایه‌ای برای IPv6"
+msgstr "RFC2553: پسوندهای رابط سوکت پایه‌ای برای IPv6"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6846
@@ -12343,8 +12343,8 @@ msgid ""
 "<filename>draft-ietf-ipngwg-scopedaddr-format-00.txt</filename>: An "
 "Extension of Format for IPv6 Scoped Addresses"
 msgstr ""
-"<filename>draft-ietf-ipngwg-scopedaddr-format-00.txt</filename>: افزونهٔ "
-"قالب برای نشانی‌های محدود IPv6"
+"<filename>draft-ietf-ipngwg-scopedaddr-format-00.txt</filename>: پسوند قالب "
+"برای نشانی‌های محدود IPv6"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6923
@@ -12608,8 +12608,8 @@ msgid ""
 "The implementation currently assumes 1-to-1 relationship between a link and "
 "an interface, which is stronger than what specs say."
 msgstr ""
-"برای استفاده از این افزونه در برنامهٔ خود، نیاز دارید تا از <citerefentry><re"
-"fentrytitle>getaddrinfo</refentrytitle><manvolnum>3</manvolnum></"
+"برای استفاده از این پسوند در برنامهٔ خود، نیاز دارید تا از <citerefentry><ref"
+"entrytitle>getaddrinfo</refentrytitle><manvolnum>3</manvolnum></"
 "citerefentry> و <citerefentry><refentrytitle>getnameinfo</refentrytitle><manv"
 "olnum>3</manvolnum></citerefentry> به‌همراه NI_WITHSCOPEID استفاده کنید. "
 "پیاده‌سازی در حال حاضر رابطهٔ ۱-به-۱ را بین یک پیوند و یک رابط در نظر "
@@ -13318,7 +13318,7 @@ msgid ""
 "processed, each such IPsec header must pass each IPsec check. So an "
 "anonymous attacker will not be able to do such an attack.)"
 msgstr ""
-"مشخصات IPv6 این امکان را فراهم می‌کند تا اعداد اختیاریِ سرآیند‌های افزونه "
+"مشخصات IPv6 این امکان را فراهم می‌کند تا اعداد اختیاریِ سرآیند‌های پسوند "
 "داخل بسته‌ها قرار گیرند. اگر ما کد پردازش بستهٔ IPv6 را همانطور که کد IPv4 "
 "را در BSD پیاده‌سازی کردیم پیاده‌سازی کنیم، ممکن است پشتهٔ هسته به‌علت "
 "زنجیرهٔ فراخوانی توابعِ طولانی سرریز کند. کد sys/netinet6 با دقت طراحی شده "
@@ -13411,11 +13411,11 @@ msgid ""
 "never convert network byte order into host byte order, to save the original "
 "packet."
 msgstr ""
-"ICMPv6 باید تا جای ممکن تا 1280 شامل بستهٔ اصلی باشد. پورت خارج از دسترس "
-"UDP6/IP6، برای مثال، باید تمام سرآیند‌های افزونه‌ و سرآینده‌های *بدون تغییرِ*"
-" UDP6 و IP6 را دارا باشد. در نتیجه، تمامی کارکردهای IP6 به‌غیر از TCP هرگز "
-"ترتیب بایتِ شبکه را به ترتیب بایتِ میزبان تبدیل نمی‌کنند تا بستهٔ اصلی ذخیره "
-"شود."
+"ICMPv6 باید تا جای ممکن تا 1280 شامل بستهٔ اصلی باشد. برای مثال، درگاه خارج "
+"از دسترسِ UDP6/IP6، باید تمام سرآیند‌های پسوند و سرآیند‌های *بدون تغییرِ* "
+"UDP6 و IP6 را دارا باشد. در نتیجه، تمامی کارکردهای IP6 به‌غیر از TCP هرگز "
+"ترتیب بایتِ شبکه را به ترتیب بایتِ میزبان تبدیل نمی‌کنند تا بستهٔ اصلی را "
+"ذخیره کند."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:7472
@@ -13427,7 +13427,7 @@ msgid ""
 "checksum calculation."
 msgstr ""
 "tcp_input()، udp6_input() و icmp6_input() نمی‌توانند چنین فرض کنند که سرآیند "
-"IP6 به‌دلیل سرآیند‌های افزونه،‌ سرآیند‌های انتقال را پشت سر می‌گذارد. در "
+"IP6 به‌دلیل سرآیند‌های پسوند،‌ سرآیند‌های انتقال را پشت سر می‌گذارد. در "
 "نتیجه، in6_cksum() پیاده‌سازی شد تا به بسته‌هایی که سرآیند IP6 و سرآیند "
 "انتقال آنها ادامه‌دار نیستند رسیدگی کند. نه ساختار سرآیند TCP/IP6 و نه UDP6/"
 "IP6 برای محاسبهٔ سرجمع وجود ندارند."
@@ -15175,13 +15175,13 @@ msgid ""
 "crash</filename> after a dump is saved. This symbolic link can be used to "
 "locate the name of the most recent dump."
 msgstr ""
-"در صورتی‌که پرونده‌ای به نام <filename>vmcore.0</filename> از پیش در "
-"<filename>/var/crash</filename> (یا هر آنچه که در مقدار <varname>dumpdir</"
-"varname> باشد) وجود داشته باشد، هسته برای جلوگیری از بازنویسیِ یک "
+"در صورتی‌که از پیش پرونده‌ای به نام <filename>vmcore.0</filename> در "
+"<filename>/var/crash</filename> (یا هر مقداری که به <varname>dumpdir</"
+"varname> داده شده باشد) وجود داشته باشد، هسته برای جلوگیری از بازنویسیِ یک "
 "<filename>vmcore</filename> موجود، اعداد دنباله‌دار را برای هر خرابی افزایش "
 "می‌دهد (برای مثال، <filename>vmcore.1</filename>). <citerefentry><refentrytit"
 "le>savecore</refentrytitle><manvolnum>8</manvolnum></citerefentry> پس از "
-"ذخیرهٔ روگرفت، همیشه یک پیوند نمایدن به نام <filename>vmcore.last</filename> "
+"ذخیرهٔ روگرفت، همیشه یک پیوند نمادین به نام <filename>vmcore.last</filename> "
 "در <filename>/var/crash</filename> می‌سازد. این پیوند نمادین را می‌توان برای "
 "یافتن نام روگرفت اخیر به‌کار برد."
 
@@ -15200,6 +15200,16 @@ msgid ""
 "<varname>dumpdir</varname> named <filename>core.txt.<replaceable>N</"
 "replaceable></filename>."
 msgstr ""
+"ابزار <citerefentry><refentrytitle>crashinfo</refentrytitle><manvolnum>8</man"
+"volnum></citerefentry> یک پروندهٔ نوشتاری ایجاد می‌کند که شامل چکیده‌ای از "
+"اطلاعات از یک روگرفت حافظهٔ کامل یا روگرفت کوچک است. اگر <varname>dumpdev</"
+"varname> درون <citerefentry><refentrytitle>rc."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> تنظیم شده باشد، <"
+"citerefentry><refentrytitle>crashinfo</refentrytitle><manvolnum>8</manvolnum>"
+"</citerefentry> به‌طور خودکار پس از <citerefentry><refentrytitle>savecore</re"
+"fentrytitle><manvolnum>8</manvolnum></citerefentry> فراخوانده می‌شود. خروجی "
+"در یک پرونده در <varname>dumpdir</varname> به نام <filename>core."
+"txt.<replaceable>N</replaceable></filename> ذخیره می‌شود."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:8461
@@ -15241,6 +15251,13 @@ msgid ""
 "Also, do not forget to specify the correct path to your swap device as it is "
 "likely different than <filename>/dev/ad0s1b</filename>!"
 msgstr ""
+"این روش به <citerefentry><refentrytitle>savecore</refentrytitle><manvolnum>8<"
+"/manvolnum></citerefentry> دستور می‌دهد تا روگرفت هسته را از <filename>/dev/"
+"ad0s1b</filename> استخراج کند و محتوای آن را در <filename>/var/crash</"
+"filename> بگذارد. اطمینان حاصل کنید که مسیر مقصد، یعنی <filename>/var/crash</"
+"filename> دارای فضای کافی برای روگرفت باشد. همچنین، فراموش نکنید تا مسیر "
+"درست را برای دستگاه swap خود تعیین کنید چنانکه احتمال دارد متفاوت از "
+"<filename>/dev/ad0s1b</filename> باشد!"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:8481
@@ -16431,6 +16448,21 @@ msgid ""
 "<citerefentry><refentrytitle>dcons</refentrytitle><manvolnum>4</manvolnum></"
 "citerefentry> buffer is accessible even when the system crashes."
 msgstr ""
+"بیشتر نظارت‌کنندگانِ میزبانِ <trademark class=\"registered\">FireWire</"
+"trademark> (IEEE1394) بر مبنای مشخصات <acronym>OHCI</acronym> هستند که "
+"دسترسی فیزیکی به حافظهٔ میزبان را پشتیبانی می‌کند. این بدان معناست که هنگامی‌"
+"که نظارت‌کنندهٔ میزبان آغاز شده است، ما می‌توانیم بدون کمک‌گیری از نرم‌افزار "
+"(هسته)، به حافظهٔ میزبان دسترسی پیدا کنیم. می‌توانیم این امکان را برای تعامل "
+"با "
+"<citerefentry><refentrytitle>dcons</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> به‌کار گیریم. "
+"<citerefentry><refentrytitle>dcons</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> کارکردی مشابه پیشانهٔ سریال ارائه می‌دهد. دو درگاه سریال را "
+"شبیه‌سازی می‌کند، یکی برای پیشانه و <acronym>DDB</acronym>، دیگری برای "
+"<acronym>GDB</acronym>. زیرا دسترسی حافظهٔ از راه دور به‌طور کامل توسط سخت‌"
+"افزار مدیریت می‌شود، میان‌گیرِ "
+"‌<citerefentry><refentrytitle>dcons</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> حتی زمانی‌که سامانه از کار افتاده باشد نیز دسترسی‌پذیر است."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8993
@@ -18235,8 +18267,8 @@ msgid ""
 "with a new system call."
 msgstr ""
 "این روشی است که ما در طی این فصل از آن استفاده می‌کنیم. پروندهٔ include خود "
-"را <filename>system.inc</filename> نام‌گذاری می‌کنیم، و هر زمان که در مشغول "
-"به کار با یک فراخوان سامانهٔ جدید هستیم به آن اضافه می‌کنیم."
+"را <filename>system.inc</filename> نام‌گذاری می‌کنیم، و هر زمان که در حال "
+"کار با یک فراخوان سامانهٔ جدید هستیم در آن اضافه می‌کنیم."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9941
@@ -18522,8 +18554,8 @@ msgid ""
 "application> to assemble it."
 msgstr ""
 "کدها را (به‌غیر از شمارهٔ سطرها) در یک ویرایشگر بنویسید، و آنها را در یک "
-"پرونده به نام <filename>hello.asm</filename> ذخیره کنید. به "
-"<application>nasm</application> برای همگذآری آن نیاز دارید."
+"پرونده به نام <filename>hello.asm</filename> ذخیره کنید. برای همگذآری آن به "
+"<application>nasm</application> نیاز دارید."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:10067
@@ -20868,7 +20900,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:11782
 msgid "We add the macros for their use:"
-msgstr ""
+msgstr "ماکروها را برای استفادهٔ آنها اضافه می‌کنیم:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11784
