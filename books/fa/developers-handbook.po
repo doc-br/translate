@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-03 16:20+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"PO-Revision-Date: 2020-10-03 19:47+0000\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -2442,8 +2442,8 @@ msgid ""
 "rule for working out when <filename>foo.c</filename> needs to be re-compiled."
 msgstr ""
 "خط وابستگی در اینجا متشکل از نام برنامه (شناخته شده به‌عنوان "
-"<firstterm>target</firstterm>)، به همراه دونقطه، بعد فاصله خالی، و سپس نام "
-"پروندهٔ منبع است. زمانی که <command>make</command> این خط را می‌خواند، می‌"
+"<firstterm>target</firstterm>)، به همراه دونقطه، سپس فاصلهٔ خالی، و سپس نام "
+"پروندهٔ منبع است. زمانی‌که <command>make</command> این خط را می‌خواند، می‌"
 "بیند که آیا <filename>foo</filename> وجود دارد؛ اگر باشد، زمان آخرین تغییر "
 "<filename>foo</filename> و <filename>foo.c</filename> را مقایسه می‌کند. اگر "
 "<filename>foo</filename> وجود نداشته باشد، یا قدیمی‌تر از <filename>foo.c</"
@@ -18697,6 +18697,9 @@ msgid ""
 "<userinput>make install</userinput> if you do not want to keep "
 "<application>nasm</application> source code."
 msgstr ""
+"چنانچه قصد نگه داشتن کد منبع <application>nasm</application> را ندارید، می‌"
+"توانید به جای وارد کردنِ <userinput>make install</userinput> وارد کنید "
+"<userinput>make install clean</userinput>."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10084
@@ -18704,6 +18707,8 @@ msgid ""
 "Either way, FreeBSD will automatically download <application>nasm</"
 "application> from the Internet, compile it, and install it on your system."
 msgstr ""
+"در هر صورت، FreeBSD به‌طور خودکار <application>nasm</application> را از "
+"اینترنت بارگیری می‌کند، آن را همگردانی کنید، و بر روی سامانهٔ خود نصب کنید."
 
 #. (itstool) path: note/para
 #: book.translate.xml:10089
@@ -18712,11 +18717,15 @@ msgid ""
 "application> from its <link xlink:href=\"https://sourceforge.net/projects/"
 "nasm\">home page</link>. You can still use it to assemble FreeBSD code."
 msgstr ""
+"اگر سامانهٔ شما FreeBSD نیست، لازم است تا <application>nasm</application> را "
+"از <link xlink:href=\"https://sourceforge.net/projects/nasm\">صفحهٔ اصلی</"
+"link> آن دریافت کنید. گرچه هنوز امکان همگذاری کد FreeBSD به‌وسیلهٔ آن ممکن "
+"است."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10095
 msgid "Now you can assemble, link, and run the code:"
-msgstr ""
+msgstr "حال می‌توانید کد را همگذاری، پیوند و اجرا کنید:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:10097
@@ -18747,6 +18756,10 @@ msgid ""
 "filename>, processes it somehow, then writes the result to <filename>stdout</"
 "filename>."
 msgstr ""
+"نوع متداولی از برنامهٔ <trademark class=\"registered\">UNIX</trademark> "
+"فیلتر است —برنامه‌ای که داده‌ها را از <filename>stdin</filename> می‌خواند، "
+"آن را به نحوی پردازش می‌کند، سپس نتیجه را در <filename>stdout</filename> "
+"می‌نویسد."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10114
@@ -18756,6 +18769,10 @@ msgid ""
 "This filter will convert each byte of its input into a hexadecimal number "
 "followed by a blank space."
 msgstr ""
+"در این فصل، یک فیلتر ساده ایجاد می‌کنیم، و نحوهٔ خواندن از <filename>stdin</"
+"filename> و نوشتن در <filename>stdout</filename> را یاد خواهیم گرفت. این "
+"فیلتر هر بایت از ورودی خود را به‌همراه فضایی خالی به یک شمارهٔ شانزده‌"
+"شانزدهی تبدیل می‌کند."
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:10120
@@ -18851,6 +18868,11 @@ msgid ""
 "will write the two hexadecimal digits (the first byte also is where we will "
 "read the input). The third byte is a space."
 msgstr ""
+"در بخش داده‌ها آرایه‌ای به نام <varname>hex</varname> می‌سازیم. این بخش شامل "
+"۱۶ رقم شانزده‌شانزدهی به ترتیب صعودیست. این آرایه با میان‌گیری همراه می‌شود "
+"که ما برای ورودی و خروجی استفاده می‌کنیم. دو بایت نخست میان‌گیر ابتدا بر روی "
+"<constant>0</constant> تنظیم می‌شوند. در اینجا دو رقم شانزده‌شانزدهی را می‌"
+"نویسیم (همچنین نخستین بایت محل خوانده ورودی است). بایت سوم شامل یک فضاست."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10169
@@ -18858,6 +18880,8 @@ msgid ""
 "The code section consists of four parts: Reading the byte, converting it to "
 "a hexadecimal number, writing the result, and eventually exiting the program."
 msgstr ""
+"بخش کد شامل چهار قسمت است: خواندن بایت، تبدیل آن به یک عدد شانزده‌شانزدهی، "
+"نوشتن نتیجه، و در انتها خروج از برنامه."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10173
