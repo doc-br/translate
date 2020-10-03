@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-03 19:47+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"PO-Revision-Date: 2020-10-03 23:26+0000\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -15519,6 +15519,15 @@ msgid ""
 "problem, make sure that your patch winds its way into the source tree via a "
 "problem report, mailing lists, or by being able to commit it!"
 msgstr ""
+"این روگرفت از جانب یک هستهٔ 5.2-BETA است و خرابی از عمق خود هسته می‌آید. "
+"خروجیِ زیر تغییر داده شده است تا شامل شمارهٔ سطرها در سمت چپ باشد. اولین رد، "
+"اشاره‌گر دستور را بررسی می‌کند و یک عقب‌گرد (backtrace) بدست می‌آورد. نشانی‌"
+"ای که در سطر 41 برای دستور <command>list</command> به‌کار رفته است اشاره‌گر "
+"دستور است و در سطر 17 می‌توان آن را یافت. چنانچه خودتان توان اشکال‌زدایی "
+"مشکل را ندارید، بیشتر توسعه‌دهندگان حداقل خواهانِ ارسال این اطلاعات به آنها "
+"هستند. چنانچه، در هر صورت، خودتان مشکل را برطرف کردید، اطمینان پیدا کنید که "
+"اصلاح شما راه خود را از طریق گزارش مشکل به درخت منبع یا فهرست‌های پست‌سپاری "
+"پیدا کند، یا امکان ثبت (commit) آن وجود داشته باشد!"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8545
@@ -18901,6 +18910,14 @@ msgid ""
 "<constant>0</constant>, we jump to <varname>.done</varname>, otherwise we "
 "continue."
 msgstr ""
+"برای خواندن بایت، از سامانه درخواست خواندن یک بایت از <filename>stdin</"
+"filename> را می‌کنیم، و آن را در نخستین بایت <varname>buffer</varname> ذخیره "
+"می‌کنیم. سامانه تعداد بایت‌های خوانده شده در <varname role=\"register\">EAX</"
+"varname> را برمی‌گرداند. این عدد هنگام دریافت داده‌ها <constant>1</constant> "
+"است، یا هنگامی‌که هیچ دادهٔ ورودی‌ای وجود نداشته باشد <constant>0</constant> "
+"است. در نتیجه، مقدار <varname role=\"register\">EAX</varname> را بررسی می‌"
+"کنیم. اگر <constant>0</constant> باشد، ما به <varname>.done</varname> پرش "
+"می‌کنیم، در غیر اینصورت ادامه می‌دهیم."
 
 #. (itstool) path: note/para
 #: book.translate.xml:10184
@@ -26670,12 +26687,16 @@ msgid ""
 "Because 120 is a medium size film, we may name this file "
 "<application>medium</application>."
 msgstr ""
+"برای اینکه چون 120 یک فیلم با اندازهٔ متوسط است، ممکن است این پرونده را "
+"<application>medium</application> نام‌گذاری کنیم."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14642
 msgid ""
 "We can set its permissions to execute, and run it as if it were a program:"
 msgstr ""
+"می‌توانیم مجوزهای اجرانامه را به‌گونه‌ای تنظیم کنیم تا اجرا شود، و آن را "
+"مانند یک برنامه اجرا کنیم:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:14645
