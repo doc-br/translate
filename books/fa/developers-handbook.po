@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-03 23:26+0000\n"
+"PO-Revision-Date: 2020-10-04 17:36+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -15849,6 +15849,16 @@ msgid ""
 "is not the default since there are a lot of serial adapters around that "
 "gratuitously generate a BREAK condition, for example when pulling the cable."
 msgstr ""
+"همچنین، اگر در پیشانهٔ سامانه هستید، می‌توانید از میان‌بر در صفحهٔ کلیدتان "
+"استفاده کنید. ترتیب پیش‌فرض break-to-debugger، <keycombo action=\"simul\""
+"><keycap>Ctrl</keycap><keycap>Alt</keycap><keycap>ESC</keycap></keycombo> "
+"است. برای syscon ها، این ترتیب را می‌توان بازتخصیص کرد و برخی طرح‌ها نیز "
+"برای همین کار موجود هستند، در نتیجه مطمئن شوید ترتیب درست برای این منظور را "
+"بشناسید. گزینه‌ای برای پیشانه‌های سریال در دسترس است که امکان استفاده از خط "
+"سریالِ BREAK در خط پیشانه برای ورود به DDB را می‌دهد (<literal>options "
+"BREAK_TO_DEBUGGER</literal> در پروندهٔ پیکربندی هسته). این روش پیش‌فرض نیست "
+"زیرا سازوارگرهای سریال بسیاری وجود دارند که به‌رایگان یک شرط BREAK ایجاد "
+"می‌کنند، برای مثال در هنگام کشیدن کابل."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8692
@@ -15857,11 +15867,14 @@ msgid ""
 "is configured to use it. For this reason, it is not wise to configure a "
 "kernel with DDB for a machine running unattended."
 msgstr ""
+"روش سوم از این قرار است که چنانچه هسته بدین منظور پیکربندی شده باشد، هر کدام "
+"از شروط وحشت به DDB انشعاب کنند. به‌همین دلیل، پیکربندی هسته با DDB برای "
+"دستگاهی‌که در حالت اجرای بی‌متصدی است عاقلانه نیست."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8696
 msgid "To obtain the unattended functionality, add:"
-msgstr "برای بدست آوردن عملکرد بی‌اعتنا، این را اضافه کنید به:"
+msgstr "برای بدست آوردن عملکرد بی‌متصدی، این را اضافه کنید به:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:8698
