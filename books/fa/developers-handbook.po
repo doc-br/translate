@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-04 17:36+0000\n"
+"PO-Revision-Date: 2020-10-04 18:38+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -15911,6 +15911,11 @@ msgid ""
 "for other numbers). Simple expressions are allowed, for example: "
 "<literal>function-name + 0x103</literal>."
 msgstr ""
+"اعداد به‌طور پیش‌فرض شانزده‌شانزدهی هستند، اما جهت متمایز کردن آنها از نام "
+"نمادها؛ اعداد شانزده‌شانزدهی‌ای که با حروف <literal>a-f</literal> آغاز می‌"
+"شوند باید قبل از <literal>0x</literal> بیایند (این امر برای سایر اعداد "
+"اختیاریست). گزاره‌های ساده مجاز هستند، برای مثال: <literal>function-name + "
+"0x103</literal>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8714
@@ -17366,6 +17371,13 @@ msgid ""
 "However, once the chapter is finished, any assembly language programmer will "
 "be able to write programs for FreeBSD quickly and efficiently."
 msgstr ""
+"این فصل مبانی زبان همگذاری (اسمبلی) را توضیح نمی‌دهد. منابع بسیاری برای آن "
+"منظور وجود دارند (برای درسی کاملاً‌ برخط در زبان اسمبلی، <link xlink:href="
+"\"http://webster.cs.ucr.edu/\">Art of Assembly Language</link> از Randall "
+"Hyde را ببینید؛ یا اگر ترجیحتان بر کتاب چاپی است، نگاهی به Assembly Language "
+"Step-by-Step (ISBN: 0471375233) نوشتهٔ Jeff Duntemann بیندازید). هرچند، همین‌"
+"که این فصل به پایان رسد، هر برنامه‌نویس زبان اسمبلی قادر به نوشتن سریع و "
+"بهینهٔ برنامه‌های FreeBSD خواهد شد."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9450 book.translate.xml:14844
@@ -18950,6 +18962,13 @@ msgid ""
 "upper four bits (nibble) separately from the lower four bits. We store the "
 "result in the first two bytes of the buffer."
 msgstr ""
+"تبدیل شانزده‌شانزدهی هنگامی‌که بیت‌های باقی‌ماندهٔ <varname role=\"register\""
+">EAX</varname> را به صفر تغییر می‌دهد، بایت را توسط <varname>buffer</"
+"varname> در <varname role=\"register\">EAX</varname>، یا در واقع تنها در "
+"<varname role=\"register\">AL</varname> می‌خواند. همچنین بایت را در <varname "
+"role=\"register\">EDX</varname> کپی می‌کنیم زیرا نیازمند به تبدیل چهار بیت "
+"بالایی (nibble) به‌طور جداگانه از چهار بیت پایینی هستیم. نتیجه را در دو بایت "
+"نخست میان‌گیر ذخیره می‌کنیم."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10196
@@ -18958,6 +18977,9 @@ msgid ""
 "two hexadecimal digits and the blank space, to <filename>stdout</filename>. "
 "We then jump back to the beginning of the program and process the next byte."
 msgstr ""
+"سپس، از سامانه درخواست نوشتن سه بایت از میان‌گیر را می‌کنیم، برای مثال، دو "
+"رقم شانزده‌شانزدهی و یک فضای خالی، برای <filename>stdout</filename>. سپس "
+"برگردید به ابتدای برنامه و بایت بعدی را پردازش کنید."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10201
