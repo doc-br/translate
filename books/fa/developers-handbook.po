@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
 "PO-Revision-Date: 2020-10-05 06:14+0000\n"
-"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
+"Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -19004,6 +19004,9 @@ msgid ""
 "returning a zero, which is the traditional value meaning the program was "
 "successful."
 msgstr ""
+"همین‌که هیچ ورودی‌ای باقی نماند، از سامانه درخواست خروج به برنامه‌مان را می "
+"دهیم، مقدار صفر را برمی‌گرداند که مقدار مرسوم است، بدین معنا که برنامه با "
+"موفقیت اجرا شده است."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10205
@@ -19013,6 +19016,10 @@ msgid ""
 "control key and type <userinput>D</userinput> while holding the control key "
 "down):"
 msgstr ""
+"ادامه دهید، و کد را در یک پرونده تحت عنوان <filename>hex.asm</filename> "
+"ذخیره کنید، سپس عبارت پیش رو را وارد کنید (<userinput>^D</userinput> به‌"
+"معنای فشردن کلید control و وارد کردن <userinput>D</userinput> هنگام نگاه "
+"داشتن کلید control است):"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:10211
@@ -19044,6 +19051,12 @@ msgid ""
 "\">UNIX</trademark> does not use the cr/lf convention, but a \"new line\" "
 "convention, which is <constant>0A</constant> in hexadecimal."
 msgstr ""
+"اگر از <acronym><trademark class=\"registered\">MS-DOS</trademark></acronym> "
+"به سمت <trademark class=\"registered\">UNIX</trademark> کوچ می‌کنید، ممکن "
+"است تعجب کنید چرا هر خط به جای <constant>0D 0A</constant> با <constant>0A</"
+"constant> به پایان می‌رسد. این بدین خاطر است که <trademark class=\"registered"
+"\">UNIX</trademark> از قرارداد cr/lf استفاده نمی‌کند، که معادل <constant>0A</"
+"constant> در شانزده‌شانزدهی است."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10227
@@ -19053,6 +19066,10 @@ msgid ""
 "of the line. We can modify it to print a new line instead of a space after "
 "each <constant>0A</constant>:"
 msgstr ""
+"آیا می‌توانیم این مسئله را بهبود ببخشیم؟ خوب، به یک دلیل، کمی گیج‌کننده است "
+"زیرا همین‌که خطی از نوشته را تبدیل کردیم، ورودی ما دیگر از ابتدای خط شروع "
+"نمی‌شود. می‌توانیم آن را تغییر دهیم تا بعد از هر <constant>0A</constant>، به "
+"جای چاپ کردن یک فضا، یک خط جدید چاپ کند:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:10233
@@ -19165,6 +19182,12 @@ msgid ""
 "trademark>, <trademark class=\"registered\">UNIX</trademark> system calls do "
 "not modify the value of any register they do not use to return a value in."
 msgstr ""
+"ما فضای داخل ثبات <varname role=\"register\">CL</varname> را ذخیره کرده‌ایم. "
+"می‌توانیم این کار را به‌طور ایمن انجام دهیم، برخلاف <trademark class="
+"\"registered\">Microsoft</trademark><trademark class=\"registered\""
+">Windows</trademark>، فراخوان‌های سامانهٔ <trademark class=\"registered\""
+">UNIX</trademark> مقدار هیچ ثباتی را که برای بازگرداندن مقدار استفاده نمی‌"
+"کنند تغییر نمی‌دهند."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10287
@@ -19175,6 +19198,12 @@ msgid ""
 "have also added the <varname>.hex</varname> label so we can either have a "
 "blank space or a new line as the third byte of the <varname>buffer</varname>."
 msgstr ""
+"این بدان معناست که ما تنها باید یک‌بار <varname role=\"register\">CL</"
+"varname> را تنظیم کنیم. از این رو، برچسب جدیدی به نام <varname>.loop</"
+"varname> اضافه کرده‌ایم و برای بایت بعدی به جای <varname>_start</varname>، "
+"سراغ آن می‌رویم. همچنین برچسب <varname>.hex</varname> را اضافه کرده‌ایم در "
+"نتیجه می‌توانیم یا یک فضای خالی یا خطی جدید به‌عنوان بایت سومِ "
+"<varname>buffer</varname> داشته باشیم."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10294
@@ -19218,7 +19247,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:10312
 msgid "Buffered Input and Output"
-msgstr ""
+msgstr "ورودی و خروجی میان‌گیردار"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10314
