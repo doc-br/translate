@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-04 18:38+0000\n"
-"Last-Translator: Parsa Samet <qps@irbug.org>\n"
+"PO-Revision-Date: 2020-10-05 06:14+0000\n"
+"Last-Translator: Faraz Vahedi <kfv@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
 "Language: fa\n"
@@ -9737,6 +9737,9 @@ msgid ""
 "modem to the phone line. We have neither told the modem to make a call, nor "
 "to answer if the phone rings."
 msgstr ""
+"این تعمدی است: برای استفاده از تمثیلی تلفنی، ما تنها مودم را به خط تلفن وصل "
+"کرده‌ایم. ما نه به آن گفته‌ایم که تماس برقرار کند و نه گفته‌ایم در صورت زنگ "
+"پاسخ دهد."
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:5298
@@ -9752,6 +9755,10 @@ msgid ""
 "<varname>struct sockaddr</varname>. This structure is declared in the same "
 "file:"
 msgstr ""
+"توابع مختلف خانوادهٔ سوکت‌ها نشانی (یا با استفاده از اصطلاحات C، اشاره‌گر) "
+"منطقهٔ کوچکی از حافظه را می‌خواهند. تعاریف مختلف C در <filename>sys/socket."
+"h</filename> به آن به‌عنوان <varname>struct sockaddr</varname> اشاره می‌"
+"کنند. این ساختار در همان پرونده تعریف می‌شود:"
 
 #. (itstool) path: sect4/programlisting
 #: book.translate.xml:5307
@@ -9787,6 +9794,10 @@ msgid ""
 "<constant>14</constant> bytes, with the comment hinting there can be more "
 "than <constant>14</constant> of them."
 msgstr ""
+"خواهشمند است به <emphasis>ابهام</emphasis> در تعریف بخش "
+"<varname>sa_data</varname>، به‌عنوان آرایه‌ای از <constant>۱۴</constant> "
+"بایت، با توضیحی در اشاره به اینکه در آنجا می‌تواند بیش از <constant>۱۴</"
+"constant> مقدار باشد، توجه بفرمایید."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5324
@@ -9798,6 +9809,11 @@ msgid ""
 "communications, of which the Internet (or, more precisely, <acronym>IP</"
 "acronym>) is only one."
 msgstr ""
+"این ابهام کاملاً حساب‌شده است. سوکت‌ها یک رابط بسیار قدرتمند هستند. گرچه "
+"اکثر مردم احتمالاً فکر می‌کنند چیزی بیش‌تر از رابط اینترنت نیست و بیشتر "
+"برنامه‌ها امروزه بدان خاطر از آن استفاده می‌کنند، سوکت‌ها می‌توانند برای "
+"<emphasis>هر</emphasis> نوع از ارتباطات بین‌پردازشی استفاده شوند، که اینترنت "
+"(یا، به‌گفته‌ای دقیق‌تر، <acronym>IP</acronym>) فقط یک نمونه است."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5333
@@ -24288,7 +24304,7 @@ msgstr ""
 #. (itstool) path: step/para
 #: book.translate.xml:13261
 msgid "Send the digit to the output."
-msgstr ""
+msgstr "ارسال رقم به خروجی."
 
 #. (itstool) path: step/para
 #: book.translate.xml:13265
@@ -24296,11 +24312,13 @@ msgid ""
 "Append the digit to a buffer we will use later to produce the packed decimal "
 "we can send to the <acronym>FPU</acronym>."
 msgstr ""
+"اضافه کردن رقم به یک میانگیر که دیرتر برای تولید مقدار ده‌دهیِ بسته‌بندی شده‌"
+"ای که می‌توانیم به <acronym>FPU</acronym> ارسال کنیم استفاده خواهیم کرد."
 
 #. (itstool) path: step/para
 #: book.translate.xml:13271
 msgid "Increase the counter."
-msgstr ""
+msgstr "افزایش شمارنده."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:13275
@@ -24459,7 +24477,7 @@ msgstr ""
 #. (itstool) path: step/para
 #: book.translate.xml:13383
 msgid "Initialize a counter to <constant>0</constant>."
-msgstr ""
+msgstr "مقداردهی شمارنده با <constant>0</constant>."
 
 #. (itstool) path: step/para
 #: book.translate.xml:13388
@@ -24467,11 +24485,13 @@ msgid ""
 "While the number is greater than or equal to <constant>10000</constant>, "
 "divide it by <constant>10</constant> and increase the counter."
 msgstr ""
+"در حالی که عدد بزرگ‌تر یا مساوی با <constant>10000</constant> باشد، تقسیم آن "
+"بر <constant>10</constant> و افزایش شمارنده."
 
 #. (itstool) path: step/para
 #: book.translate.xml:13395
 msgid "Output the result."
-msgstr ""
+msgstr "نمایش نتیجه."
 
 #. (itstool) path: step/para
 #: book.translate.xml:13399
@@ -24479,6 +24499,8 @@ msgid ""
 "While the counter is greater than <constant>0</constant>, output "
 "<constant>0</constant> and decrease the counter."
 msgstr ""
+"در حالی که شمارنده بزرگ‌تر از <constant>0</constant> است، نمایش <constant>0</"
+"constant> و کاهش شمارنده."
 
 #. (itstool) path: note/para
 #: book.translate.xml:13406
