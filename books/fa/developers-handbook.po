@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-05 06:14+0000\n"
+"PO-Revision-Date: 2020-10-06 03:03+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -17136,6 +17136,15 @@ msgid ""
 "into the kernel but want the system to come back up unless you're on-hand to "
 "use the debugger for diagnostics, use this option."
 msgstr ""
+"<literal>options KDB_UNATTENDED</literal>: مقدار پیش‌فرض <literal>debug."
+"debugger_on_panic</literal> sysctl را به 0 تغییر می‌دهد، که بر ورود اشکال‌"
+"زدا به وحشت نظارت می‌کند. هنگامی‌که <literal>options KDB</literal> در هسته "
+"همگردانی نشده باشد، به‌طور پیش‌فرض هنگام وقوع وحشت باز‌راه‌اندازی می‌شود؛ "
+"هنگامی‌که در هسته همگردانی شده باشد، پیش‌فرض خروج به اشکال‌زداست، مگر آنکه "
+"<literal>options KDB_UNATTENDED</literal> همگردانی شده باشد. چنانچه می‌"
+"خواهید اشکال‌زدای هسته را در هسته همگردانی کنید اما می‌خواهید سامانه بالا "
+"بیاید از همین گزینه استفاده کنید، مگر آنکه برای استفاده از اشکال‌زدا به‌"
+"منظور عیب‌شناسی در دسترس باشید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9243
@@ -19243,6 +19252,9 @@ msgid ""
 "system call for every single byte twice (once to read it, another time to "
 "write the output)."
 msgstr ""
+"به‌نظر بهتر شد. اما این کد کاملاً‌ ناکارآمد است! ما برای هر یک بایت دوبار "
+"فراخوان سامانه را ایجاد می‌کنیم (یک‌بار برای خواندنش، بار دیگر برای نوشتن "
+"خروجی)."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:10312
@@ -19256,6 +19268,9 @@ msgid ""
 "We create an input buffer and read a whole sequence of bytes at one time. "
 "Then we fetch them one by one from the buffer."
 msgstr ""
+"می‌توانیم کاراییِ کدمان را با میان‌گیریِ ورودی و خروجی‌مان بهبود ببخشیم. یک "
+"میان‌گیر ورودی می‌سازیم و ترتیبی کامل از بایت‌ها را به‌یکباره می‌خوانیم. سپس "
+"آنها را یک به یک از میان‌گیر می‌گیریم."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10319
@@ -19264,6 +19279,9 @@ msgid ""
 "At that time we ask the kernel to write the contents of the buffer to "
 "<filename>stdout</filename>."
 msgstr ""
+"همچنین یک میان‌گیر خروجی می‌سازیم و تا زمانی‌که کامل شود خروجی‌مان را در آن "
+"نگاه می‌داریم. در آن زمان از هسته درخواست می‌کنیم تا محتوای میان‌گیر را در "
+"<filename>stdout</filename> بنویسد."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10324
@@ -19274,6 +19292,12 @@ msgid ""
 "output buffer, but never be sent out. Do not forget that, or you will be "
 "wondering why some of your output is missing."
 msgstr ""
+"برنامه زمانی پایان می پذیرد که دیگر هیچ ورودی‌ای نباشد. گرچه هنوز نیاز داریم "
+"تا برای بار آخر از هسته بخواهیم که محتوای میان‌گیر خروجی‌مان را در "
+"<filename>stdout</filename> بنویسد، در غیر اینصورت برخی از خروجی‌هایمان به "
+"میان‌گیر خروجی می‌رسند، اما هرگز به بیرون ارسال نمی‌شوند. این مسئله را "
+"فراموش نکنید، در غیر اینصورت متعجب می‌شوید چرا برخی از خروجی‌های شما گم "
+"شده‌اند."
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:10331
@@ -19476,6 +19500,11 @@ msgid ""
 "function> instead of <function role=\"opcode\">db</function>. It simply "
 "reserves the requested size of uninitialized memory for our use."
 msgstr ""
+"ما اکنون یک بخش سوم در کد منبع داریم، به نام <varname>.bss</varname>. این "
+"بخش جزو پروندهٔ اجراپذیر ما نیست، و در نتیجه، امکان اجرا شدن را ندارد. از "
+"<function role=\"opcode\">resb</function> به جای <function role=\"opcode\""
+">db</function> استفاده می‌کنیم. این امر به‌سادگی اندازهٔ درخواستیِ حافظهٔ "
+"اجرانشده را برای استفاده‌مان حفظ می‌کند."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10432
