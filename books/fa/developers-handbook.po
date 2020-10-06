@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-06 03:03+0000\n"
+"PO-Revision-Date: 2020-10-06 17:07+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -17156,6 +17156,12 @@ msgid ""
 "to gather basic debugging information on the serial or firewire console "
 "while still rebooting to recover."
 msgstr ""
+"<literal>options KDB_TRACE</literal>: مقدار پیش‌فرض <literal>debug."
+"trace_on_panic</literal> sysctl را بر روی 1 تنظیم می‌کند، که بر چاپ خودکار "
+"رد پشته توسط اشکال‌زدا در حالت وحشت نظارت می‌کند. مخصوصاً‌ اگر با "
+"<literal>options KDB_UNATTENDED</literal> اجرا شود، می‌تواند برای جمع‌آوری "
+"اطلاعات پایه‌ایِ اشکال‌زدایی در سریال یا پیشانهٔ firewire در هنگام بازراه‌"
+"اندازی مفید باشد."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9253
@@ -17171,6 +17177,16 @@ msgid ""
 "kernel at run-time. Many bugs can be fully diagnosed using only DDB output. "
 "This option depends on <literal>options KDB</literal>."
 msgstr ""
+"<literal>options DDB</literal>: برای پشتیبانی از اشکال‌زدای پیشانه، DDB، "
+"همگردانی ‌کنید. این اشکال‌زدای تعاملی بر روی هر پیشانهٔ سطح پایین فعال در "
+"سامانه اجرا می‌شود، که شامل پیشانهٔ ویدیو، پیشانهٔ سریال، یا پیشانهٔ "
+"firewire می‌شود. امکانات پایه‌ایِ اشکال‌زداییِ یکپارچه شده را ارائه می‌دهد، "
+"مانند ردیابی پشته، فهرست‌بندی بند، روبرداری از حالت قفل، حالت VM، حالت "
+"سامانهٔ پرونده، و مدیریت حافظهٔ هسته. DDB نیازی به اجرای نرم‌افزار در دستگاه "
+"دوم یا امکان تولید روگرفت حافظه یا نمادهای اشکال‌زداییِ هستهٔ کامل ندارد، و "
+"عیب‌شناسیِ دقیق از هسته را در هنگام اجرا فراهم می‌سازد. بسیاری از اشکال‌ها "
+"را می‌توان به‌وسیلهٔ خروجی DDB عیب‌شناسی کرد. این گزینه وابسته به "
+"<literal>options KDB</literal> است."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9268
@@ -19517,6 +19533,12 @@ msgid ""
 "convention of passing them in the registers: We can keep the registers for "
 "our own use."
 msgstr ""
+"ما از این واقعیت که سامانه ثبات‌ها را تغییر نمی‌دهد بهره می‌بریم: از ثبات‌"
+"هایی استفاده می‌کنیم که، در غیر اینصورت، باید متغییرهای جهانیِ ذخیره شده در "
+"بخش <varname>.data</varname> باشند. به‌همین دلیل رویهٔ <trademark class="
+"\"registered\">UNIX</trademark> برای واردکردنِ پارامترها به فراخوان‌های "
+"سامانه در پشته برتر از رویهٔ Microsoft برای واردکردن آنها به ثبات‌ها است: می‌"
+"توانیم ثبات‌ها را برای استفادهٔ خودمان نگاه داریم."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10441
@@ -19527,11 +19549,17 @@ msgid ""
 "\">ECX</varname> to keep count of the number of bytes in the two buffers, so "
 "we know when to dump the output to, or read more input from, the system."
 msgstr ""
+"ما از <varname role=\"register\">EDI</varname> و <varname role=\"register\""
+">ESI</varname> به‌عنوان اشاره‌گر به بایت بعدی‌ای که از آن یا در آن خوانده می‌"
+"شود استفاده می‌کنیم. از <varname role=\"register\">EBX</varname> و <varname "
+"role=\"register\">ECX</varname> برای حفظ شماره بایت‌ها در دو میان‌گیر "
+"استفاده می‌کنیم، در نتیجه می‌دانیم چه زمانی خروجی را روبرداری کنیم، یا ورودیِ"
+" بیشتری از سامانه بخوانیم."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10447
 msgid "Let us see how it works now:"
-msgstr "بیایید ببینیم اکنون چطور کار می‌کند:"
+msgstr "اکنون بیایید ببینیم چطور کار می‌کند:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:10449
@@ -19564,6 +19592,11 @@ msgid ""
 "<constant>0A</constant>. I have marked the three lines with &gt; (do not "
 "copy the &gt; in your <filename>hex.asm</filename>)."
 msgstr ""
+"آنچه انتظار داشتید نیست؟ برنامه تا زمانی‌که ما <userinput>^D</userinput> را "
+"فشردیم خروجی را چاپ نکرد. درست کردنش آسان است، هر زمان که سطر جدیدی را به "
+"<constant>0A</constant> تبدیل کردیم، سه سطر کد برای نگاشتن خروجی اضافه می‌"
+"کنیم. من این سه سطر را با &gt; نشانه‌گذاری کرده‌ام (&gt; را در <filename>hex."
+"asm</filename> کپی نکنید)."
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:10466
@@ -19780,11 +19813,14 @@ msgid ""
 "will discuss—and fix—it later, when I talk about the <link linkend=\"x86-"
 "buffered-dark-side\">dark side of buffering</link>."
 msgstr ""
+"این حرکت به سمت ورودی/خروجی  میان‌گیردار دارای خطری پنهان است. بعدتر در این "
+"باب بحث خواهم کرد و آن را درست می‌کنم، زمانی‌که درمورد <link linkend=\"x86"
+"-buffered-dark-side\">قسمت تاریک میان‌گیری</link> صحبت می‌کنم."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:10584
 msgid "How to Unread a Character"
-msgstr ""
+msgstr "چگونه یک نویسه را نخوانیم"
 
 #. (itstool) path: warning/para
 #: book.translate.xml:10587
