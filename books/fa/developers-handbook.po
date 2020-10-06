@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-06 17:07+0000\n"
+"PO-Revision-Date: 2020-10-06 22:51+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -19830,6 +19830,9 @@ msgid ""
 "\"x86-command-line\">skip to the next section</link>, and perhaps read this "
 "later."
 msgstr ""
+"این موضوع ممکن است تاحدی سطح بالا باشد، و بیشتر مورد توجه برنامه‌نویسان آشنا "
+"با نظریهٔ همگردان‌هاست. اگر خواستید، می‌توانید <link linkend=\"x86-command-"
+"line\">به بخش بعدی بروید</link>، و این قسمت را بعدتر بخوانید."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10593
@@ -19840,6 +19843,10 @@ msgid ""
 "certain value, it is part of the token currently being processed. Otherwise, "
 "it is not."
 msgstr ""
+"با اینکه برنامهٔ سادهٔ ما به آن نیاز ندارد، فیلترهای پیشرفته‌تر معمولاً نیاز "
+"به تدبیر دارند. به بیان دیگر، ممکن است بخواهند نویسهٔ بعدی را ببینند (یا حتی "
+"چندین نویسه‌). اگر نویسهٔ بعدی دارای مقدار مشخصی هست، این بخشی از نشانه‌ایست "
+"که در حال پردازش است. در غیر اینصورت چنین نیست."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10600
@@ -19850,6 +19857,10 @@ msgid ""
 "processing. If it is followed by white space, or some other value, then it "
 "is not part of the current token."
 msgstr ""
+"برای مثال، ممکن است شما جریان ورودیِ رشتهٔ نوشتاری را تجزیه کنید (برای مثال، "
+"هنگام پیاده‌سازیِ همگردان یک زبان):‌ چنانچه یک نویسه توسط نویسه‌ای دیگر، یا "
+"شاید یک رقم دنبال شود، این بخشی از نشانه‌ایست که شما در حال پردازش هستید. "
+"چنانچه با یک فضای سفید، یا مقدار‌ دیگری دنبال شود، بخشی از نشانهٔ جاری نیست."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10607
@@ -19857,6 +19868,8 @@ msgid ""
 "This presents an interesting problem: How to return the next character back "
 "to the input stream, so it can be read again later?"
 msgstr ""
+"این مسئلهٔ جالبی را ارائه می‌دهد: چگونه نویسهٔ بعدی را به جریان ورودی "
+"بازگردانیم، تا بعدتر امکان خواندن آن باشد؟"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10611
@@ -19866,6 +19879,10 @@ msgid ""
 "it is set, fetch the byte from that variable instead of the input buffer, "
 "and reset the flag. But, of course, that slows us down."
 msgstr ""
+"یک راه‌حل احتمالی ذخیرهٔ آن در یک متغیر نویسه، و سپس تنظیم نشان است. می‌"
+"توانیم <function>getchar</function> را تغییر دهیم تا نشان را بررسی کند، و "
+"اگر تنظیم شد، بایت را به جای میان‌گیر ورودی، از آن متغیر بگیریم، و نشان را "
+"مجدد تنظیم کنیم. اما، البته این کار سرعت ما را کند می‌کند."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10618
@@ -25038,6 +25055,8 @@ msgid ""
 "It is common to create certain constants from scratch instead of loading "
 "them from the memory. That is what we are doing with <constant>-5</constant>:"
 msgstr ""
+"ساخت برخی مقدارهای ثابت از ابتدا به جای بارگیری آنها از حافظه امری رایج است. "
+"این همان کاریست که با <constant>-5</constant> انجام می‌دهیم:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:13710
@@ -25063,6 +25082,8 @@ msgid ""
 "We can generalize all these optimizations into one rule: <emphasis>Keep "
 "repeat values on the stack!</emphasis>"
 msgstr ""
+"می‌توانیم تمام این بهینه‌سازی‌ها را در قالب یک حکم تعمیم دهیم: "
+"<emphasis>مقدارهای تکراری را در پشته نگاه دار!</emphasis>"
 
 #. (itstool) path: tip/para
 #: book.translate.xml:13721
@@ -25074,11 +25095,17 @@ msgid ""
 "class=\"registered\">PostScript</trademark> will help you master the "
 "<acronym>FPU</acronym>."
 msgstr ""
+"<emphasis><trademark class=\"registered\">PostScript</trademark></emphasis> "
+"یک زبان برنامه‌نویسیِ پشته‌محور است. کتاب‌های بیشتری با موضوع <trademark "
+"class=\"registered\">PostScript</trademark> نسبت به زبان اسمبلیِ "
+"<acronym>FPU</acronym> در دسترس است: مهارت در <trademark class=\"registered\""
+">PostScript</trademark> به شما کمک می‌کند تا در <acronym>FPU</acronym> مهارت "
+"پیدا کنید."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:13731
 msgid "<application>pinhole</application>—The Code"
-msgstr ""
+msgstr "<application>pinhole</application>—کد"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:13733
@@ -26490,6 +26517,8 @@ msgid ""
 "The code follows the same format as all the other filters we have seen "
 "before, with one subtle exception:"
 msgstr ""
+"این کد همانند تمام فیلترهایی که از پیش دیده‌ایم، همان قالب همیشگی را دنبال "
+"می‌کند، با یک استثنای جزئی:"
 
 #. (itstool) path: blockquote/para
 #: book.translate.xml:14435
