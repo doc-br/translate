@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-06 22:51+0000\n"
+"PO-Revision-Date: 2020-10-08 00:46+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -19893,6 +19893,11 @@ msgid ""
 "procedure and see if you can find a nice and fast solution before reading "
 "the next paragraph. Then come back here and see my own solution."
 msgstr ""
+"زبان C یک تابعِ <function>ungetc()</function> برای همین مقصود دارد. آیا راهی "
+"سریع برای پیاده‌سازی آن در کدمان هست؟ من از شما می‌خواهم که به‌ بالاتر رجوع "
+"کنید و نگاهی به روند <function>getchar</function> بیندازید و ببینید می‌"
+"توانید قبل از خواندن بند بعدی راه‌حلی خوب و سریع پیدا کنید یا خیر. سپس "
+"برگردید به همینجا و راه‌حل من را ببینید."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10626
@@ -19900,6 +19905,8 @@ msgid ""
 "The key to returning a character back to the stream is in how we are getting "
 "the characters to start with:"
 msgstr ""
+"نکتهٔ اصلی در برگرداندن یک نویسه به جریان در نحوهٔ دریافت کردن نویسه‌ها برای "
+"شروع است:"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10629
@@ -19908,6 +19915,9 @@ msgid ""
 "\"register\">EBX</varname>. If it is zero, we call the <function>read</"
 "function> procedure."
 msgstr ""
+"ابتدا مقدار <varname role=\"register\">EBX</varname> را میازماییم تا خالی "
+"بودن میان‌گیر را بررسی می‌کنیم. اگر صفر باشد، روش <function>read</function> "
+"را فراخوانی می‌کنیم."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10634
@@ -19917,6 +19927,10 @@ msgid ""
 "varname>. The <function role=\"opcode\">lodsb</function> instruction is "
 "effectively identical to:"
 msgstr ""
+"اگر نویسهٔ دسترس‌پذیری داشته باشیم، از <function role=\"opcode\">lodsb</"
+"function> استفاده می‌کنیم، سپس مقدار <varname role=\"register\">EBX</"
+"varname> را می‌کاهیم. راهنمای <function role=\"opcode\">lodsb</function> در "
+"واقع شبیه است به:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:10638
@@ -26527,6 +26541,9 @@ msgid ""
 "do, something we took for granted in the <emphasis>character–oriented</"
 "emphasis> filters."
 msgstr ""
+"ما دیگر چنین فرض نمی‌کنیم که پایان ورودی نشان‌دهندهٔ پایان کارهایی است که "
+"باید انجام داد، چیزی که در فیلترهای <emphasis>character–oriented</emphasis> "
+"فرض مسلم می‌گرفتیم."
 
 #. (itstool) path: blockquote/para
 #: book.translate.xml:14440
@@ -26534,16 +26551,18 @@ msgid ""
 "This filter does not process characters. It processes a <emphasis>language</"
 "emphasis> (albeit a very simple one, consisting only of numbers)."
 msgstr ""
+"این فیلتر نویسه‌ها را پردازش نمی‌کند. یک <emphasis>زبان</emphasis> را پردازش "
+"می‌کند (هرچند بسیار ساده، تنها شامل اعداد است)."
 
 #. (itstool) path: blockquote/para
 #: book.translate.xml:14444
 msgid "When we have no more input, it can mean one of two things:"
-msgstr ""
+msgstr "هنگامی‌که دیگر هیچ ورودی‌ای نداریم، می تواند دو مفهوم داشته باشد:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:14449
 msgid "We are done and can quit. This is the same as before."
-msgstr ""
+msgstr "کار ما تمام شده است و می‌توانیم خارج شویم. این همانند قبل است."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:14454
@@ -26553,6 +26572,9 @@ msgid ""
 "convert the contents of that buffer into a number and write the last line of "
 "our output."
 msgstr ""
+"آخرین نویسه‌ای که خوانده‌ایم یک رقم است. ما آن را در انتهای میان‌گیرِ تبدیلِ "
+"<acronym>ASCII</acronym> به شناور ذخیره کرده‌ایم. اکنون باید محتوای آن میان‌"
+"گیر را به عدد تبدیل کنیم و آخرین سطر از خروجی‌مان را بنویسیم."
 
 #. (itstool) path: blockquote/para
 #: book.translate.xml:14463
@@ -26564,6 +26586,12 @@ msgid ""
 "\">carry flag</varname> <emphasis>set</emphasis> whenever there is no more "
 "input."
 msgstr ""
+"به همین دلیل، <function>getchar</function> و رویه‌های <function>read</"
+"function> را تغییر می‌دهیم تا هر زمان که نویسهٔ دیگری را از ورودی می‌گیریم "
+"با <varname role=\"register\">carry flag</varname><emphasis>clear</emphasis> "
+"بازگشت داده شوند، یا <varname role=\"register\">carry "
+"flag</varname><emphasis>set</emphasis> برای زمانی‌که دیگر هیچ ورودی‌ای وجود "
+"ندارد."
 
 #. (itstool) path: blockquote/para
 #: book.translate.xml:14472
