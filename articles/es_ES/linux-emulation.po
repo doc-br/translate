@@ -1,17 +1,19 @@
 # Sergio Carlavilla <carlavilla@mailbox.org>, 2019. #zanata
+# Juan David Jaramillo Ortiz <juanda097@protonmail.ch>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:08-0300\n"
-"PO-Revision-Date: 2019-08-17 08:20+0000\n"
-"Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
-"Language-Team: Spanish (Spain)\n"
+"PO-Revision-Date: 2020-10-09 08:07+0000\n"
+"Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/articles_linux-emulation/es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 4.6.2\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.2.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -127,14 +129,12 @@ msgstr ""
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:54 article.translate.xml:56
-#, fuzzy
-#| msgid ""
-#| "$FreeBSD: head/en_US.ISO8859-1/articles/linux-emulation/article.xml 51904 "
-#| "2018-06-23 14:55:54Z bcr $"
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/linux-emulation/article.xml 53664 "
 "2019-12-07 16:24:22Z carlavilla $"
-msgstr "$FreeBSD$"
+msgstr ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/linux-emulation/article.xml 53664 "
+"2019-12-07 16:24:22Z carlavilla $"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:59
@@ -933,6 +933,17 @@ msgid ""
 "\n"
 "| 0);"
 msgstr ""
+"int clone_flags = (CLONE_VM | CLONE_FS | CLONE_FILES | CLONE_SIGNAL\n"
+"\n"
+" | CLONE_SETTLS | CLONE_PARENT_SETTID\n"
+"\n"
+"| CLONE_CHILD_CLEARTID | CLONE_SYSVSEM\n"
+"#if __ASSUME_NO_CLONE_DETACHED == 0\n"
+"\n"
+"| CLONE_DETACHED\n"
+"#endif\n"
+"\n"
+"| 0);"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:689
@@ -1544,6 +1555,9 @@ msgid ""
 "if (__predict_true(p-&gt;p_sysent != &amp;elf_<trademark class=\"registered\">Linux</trademark>_sysvec))\n"
 "\t  return;"
 msgstr ""
+"if (__predict_true(p-&gt;p_sysent != &amp;elf_<trademark class=\"registered\""
+">Linux</trademark>_sysvec))\n"
+"\t  return;"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1146
@@ -1560,7 +1574,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: article.translate.xml:1156
 msgid "VFS"
-msgstr ""
+msgstr "VFS"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1158
@@ -1599,7 +1613,7 @@ msgstr ""
 #. (itstool) path: sect4/title
 #: article.translate.xml:1184
 msgid "vn_fullpath"
-msgstr ""
+msgstr "vn_fullpath"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1186
@@ -1795,6 +1809,11 @@ msgid ""
 "\tAUE_CLOSE NOPROTO\t{ int close(int fd); }\n"
 "..."
 msgstr ""
+"...\n"
+"\tAUE_FORK STD\t\t{ int linux_fork(void); }\n"
+"...\n"
+"\tAUE_CLOSE NOPROTO\t{ int close(int fd); }\n"
+"..."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1324
@@ -1832,6 +1851,11 @@ msgid ""
 "#define LINUX_SYS_close 6\n"
 "..."
 msgstr ""
+"...\n"
+"#define LINUX_SYS_linux_fork 2\n"
+"...\n"
+"#define LINUX_SYS_close 6\n"
+"..."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1353
@@ -1848,6 +1872,9 @@ msgid ""
 "  register_t dummy;\n"
 "};"
 msgstr ""
+"struct linux_fork_args {\n"
+"  register_t dummy;\n"
+"};"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1361
@@ -1863,6 +1890,9 @@ msgid ""
 "{ 0, (sy_call_t *)linux_fork, AUE_FORK, NULL, 0, 0 }, /* 2 = linux_fork */\n"
 "{ AS(close_args), (sy_call_t *)close, AUE_CLOSE, NULL, 0, 0 }, /* 6 = close */"
 msgstr ""
+"{ 0, (sy_call_t *)linux_fork, AUE_FORK, NULL, 0, 0 }, /* 2 = linux_fork */\n"
+"{ AS(close_args), (sy_call_t *)close, AUE_CLOSE, NULL, 0, 0 }, /* 6 = close "
+"*/"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1368
@@ -2054,6 +2084,25 @@ msgid ""
 "  }\n"
 "}"
 msgstr ""
+"static int\n"
+"translate_traps(int signal, int trap_code)\n"
+"{\n"
+"\n"
+"  if (signal != SIGBUS)\n"
+"    return signal;\n"
+"\n"
+"  switch (trap_code) {\n"
+"\n"
+"    case T_PROTFLT:\n"
+"    case T_TSSFLT:\n"
+"    case T_DOUBLEFLT:\n"
+"    case T_PAGEFLT:\n"
+"      return SIGSEGV;\n"
+"\n"
+"    default:\n"
+"      return signal;\n"
+"  }\n"
+"}"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1512
@@ -2258,6 +2307,18 @@ msgid ""
 "  LIST_ENTRY(linux_emuldata) threads; /* list of linux threads */\n"
 "};"
 msgstr ""
+"struct linux_emuldata {\n"
+"  pid_t pid;\n"
+"\n"
+"  int *child_set_tid; /* in clone(): Child.s TID to set on clone */\n"
+"  int *child_clear_tid;/* in clone(): Child.s TID to clear on exit */\n"
+"\n"
+"  struct linux_emuldata_shared *shared;\n"
+"\n"
+"  int pdeath_signal; /* parent death signal */\n"
+"\n"
+"  LIST_ENTRY(linux_emuldata) threads; /* list of linux threads */\n"
+"};"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1657
@@ -2285,6 +2346,14 @@ msgid ""
 "  LIST_HEAD(, linux_emuldata) threads; /* head of list of linux threads */\n"
 "};"
 msgstr ""
+"struct linux_emuldata_shared {\n"
+"\n"
+"  int refs;\n"
+"\n"
+"  pid_t group_pid;\n"
+"\n"
+"  LIST_HEAD(, linux_emuldata) threads; /* head of list of linux threads */\n"
+"};"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1679
@@ -2701,6 +2770,9 @@ msgid ""
 "....\n"
 "pthread_mutex_unlock(&amp;mutex);"
 msgstr ""
+"pthread_mutex_lock(&amp;mutex);\n"
+"....\n"
+"pthread_mutex_unlock(&amp;mutex);"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:2021
@@ -2796,7 +2868,7 @@ msgstr ""
 #. (itstool) path: sect4/title
 #: article.translate.xml:2081
 msgid "FUTEX_WAKE"
-msgstr ""
+msgstr "FUTEX_WAKE"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:2083
@@ -2808,7 +2880,7 @@ msgstr ""
 #. (itstool) path: sect4/title
 #: article.translate.xml:2090
 msgid "FUTEX_FD"
-msgstr ""
+msgstr "FUTEX_FD"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:2092
@@ -2863,27 +2935,27 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: article.translate.xml:2132
 msgid "<literal>FUTEX_OP_SET</literal>"
-msgstr ""
+msgstr "<literal>FUTEX_OP_SET</literal>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2135
 msgid "<literal>FUTEX_OP_ADD</literal>"
-msgstr ""
+msgstr "<literal>FUTEX_OP_ADD</literal>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2138
 msgid "<literal>FUTEX_OP_OR</literal>"
-msgstr ""
+msgstr "<literal>FUTEX_OP_OR</literal>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2141
 msgid "<literal>FUTEX_OP_AND</literal>"
-msgstr ""
+msgstr "<literal>FUTEX_OP_AND</literal>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2144
 msgid "<literal>FUTEX_OP_XOR</literal>"
-msgstr ""
+msgstr "<literal>FUTEX_OP_XOR</literal>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:2149
@@ -2921,6 +2993,14 @@ msgid ""
 "  TAILQ_HEAD(lf_waiting_paroc, waiting_proc) f_waiting_proc;\n"
 "};"
 msgstr ""
+"struct futex {\n"
+"  void *f_uaddr;\n"
+"  int f_refcount;\n"
+"\n"
+"  LIST_ENTRY(futex) f_list;\n"
+"\n"
+"  TAILQ_HEAD(lf_waiting_paroc, waiting_proc) f_waiting_proc;\n"
+"};"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:2178
@@ -2940,11 +3020,19 @@ msgid ""
 "  TAILQ_ENTRY(waiting_proc) wp_list;\n"
 "};"
 msgstr ""
+"struct waiting_proc {\n"
+"\n"
+"  struct thread *wp_t;\n"
+"\n"
+"  struct futex *wp_new_futex;\n"
+"\n"
+"  TAILQ_ENTRY(waiting_proc) wp_list;\n"
+"};"
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:2191
 msgid "futex_get / futex_put"
-msgstr ""
+msgstr "futex_get / futex_put"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:2193
@@ -2959,7 +3047,7 @@ msgstr ""
 #. (itstool) path: sect4/title
 #: article.translate.xml:2203
 msgid "futex_sleep"
-msgstr ""
+msgstr "futex_sleep"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:2205
@@ -2981,7 +3069,7 @@ msgstr ""
 #. (itstool) path: sect4/title
 #: article.translate.xml:2221
 msgid "futex_wake"
-msgstr ""
+msgstr "futex_wake"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:2223
@@ -3000,7 +3088,7 @@ msgstr ""
 #. (itstool) path: sect4/title
 #: article.translate.xml:2237
 msgid "futex_wake_op"
-msgstr ""
+msgstr "futex_wake_op"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:2239
@@ -3035,6 +3123,8 @@ msgid ""
 "oldval = *uaddr2\n"
 "*uaddr2 = oldval OP oparg"
 msgstr ""
+"oldval = *uaddr2\n"
+"*uaddr2 = oldval OP oparg"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:2264
@@ -3105,6 +3195,13 @@ msgid ""
 "openat(AT_FDWCWD, bah\\, flags, mode)\t/* opens /tmp/bah */\n"
 "openat(stdio, bah\\, flags, mode)\t/* returns error because stdio is not a directory */"
 msgstr ""
+"file descriptor 123 = /tmp/foo/, current working directory = /tmp/\n"
+"\n"
+"openat(123, /tmp/bah\\, flags, mode)\t/* opens /tmp/bah */\n"
+"openat(123, bah\\, flags, mode)\t\t/* opens /tmp/foo/bah */\n"
+"openat(AT_FDWCWD, bah\\, flags, mode)\t/* opens /tmp/bah */\n"
+"openat(stdio, bah\\, flags, mode)\t/* returns error because stdio is not a "
+"directory */"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:2318
@@ -3139,7 +3236,7 @@ msgstr ""
 #. (itstool) path: sect4/title
 #: article.translate.xml:2350
 msgid "Implementation"
-msgstr ""
+msgstr "Implementación"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:2352
@@ -3171,7 +3268,7 @@ msgstr ""
 #: article.translate.xml:2376
 #, no-wrap
 msgid "openat() --&gt; kern_openat() --&gt; vn_open() -&gt; namei()"
-msgstr ""
+msgstr "openat() --&gt; kern_openat() --&gt; vn_open() -&gt; namei()"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:2378
@@ -3234,12 +3331,12 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:2435
 msgid "Conclusion"
-msgstr ""
+msgstr "Conclusión"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:2438
 msgid "Results"
-msgstr ""
+msgstr "Resultados"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:2440
@@ -3284,7 +3381,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: article.translate.xml:2474
 msgid "Future work"
-msgstr ""
+msgstr "Trabajo futuro"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:2476
@@ -3327,7 +3424,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: article.translate.xml:2504
 msgid "Team"
-msgstr ""
+msgstr "Equipo"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:2506
@@ -3337,47 +3434,47 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: article.translate.xml:2511
 msgid "John Baldwin <email>jhb@FreeBSD.org</email>"
-msgstr ""
+msgstr "John Baldwin <email>jhb@FreeBSD.org</email>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2514
 msgid "Konstantin Belousov <email>kib@FreeBSD.org</email>"
-msgstr ""
+msgstr "Konstantin Belousov <email>kib@FreeBSD.org</email>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2517
 msgid "Emmanuel Dreyfus"
-msgstr ""
+msgstr "Emmanuel Dreyfus"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2520
 msgid "Scot Hetzel"
-msgstr ""
+msgstr "Scot Hetzel"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2523
 msgid "Jung-uk Kim <email>jkim@FreeBSD.org</email>"
-msgstr ""
+msgstr "Jung-uk Kim <email>jkim@FreeBSD.org</email>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2526
 msgid "Alexander Leidinger <email>netchild@FreeBSD.org</email>"
-msgstr ""
+msgstr "Alexander Leidinger <email>netchild@FreeBSD.org</email>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2529
 msgid "Suleiman Souhlal <email>ssouhlal@FreeBSD.org</email>"
-msgstr ""
+msgstr "Suleiman Souhlal <email>ssouhlal@FreeBSD.org</email>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2532
 msgid "Li Xiao"
-msgstr ""
+msgstr "Li Xiao"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2535
 msgid "David Xu <email>davidxu@FreeBSD.org</email>"
-msgstr ""
+msgstr "David Xu <email>davidxu@FreeBSD.org</email>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:2539
@@ -3401,9 +3498,9 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: article.translate.xml:2554
 msgid "<uri xlink:href=\"https://tldp.org\">https://tldp.org</uri>"
-msgstr ""
+msgstr "<uri xlink:href=\"https://tldp.org\">https://tldp.org</uri>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2557
 msgid "<uri xlink:href=\"https://www.kernel.org\">https://www.kernel.org</uri>"
-msgstr ""
+msgstr "<uri xlink:href=\"https://www.kernel.org\">https://www.kernel.org</uri>"
