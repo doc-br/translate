@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-09 20:25+0000\n"
+"PO-Revision-Date: 2020-10-09 22:21+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -19994,6 +19994,9 @@ msgid ""
 "last character we have read with <function>getchar</function>, but not on "
 "anything we have read before that."
 msgstr ""
+"همیشه می‌توانیم بر درست کار کردن <function>ungetc</function> بر روی آخرین "
+"نویسه‌ای که با <function>getchar</function> خوانده‌ایم تکیه کنیم، اما نه بر "
+"هر آنچه که قبل از آن خوانده‌ایم."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10674
@@ -20044,6 +20047,8 @@ msgid ""
 "You also need to modify your <function>ungetc</function> to pass the value "
 "of the byte to unget in <varname role=\"register\">AL</varname>:"
 msgstr ""
+"شما همچنین باید <function>ungetc</function> را تغییر دهید تا مقدار بایت‌ها "
+"را در <varname role=\"register\">AL</varname> به unget منتقل کند:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:10697
@@ -20068,6 +20073,9 @@ msgid ""
 "times in a row safely (the first call will still be within the buffer, the "
 "remaining 16 may be either within the buffer or within the \"spare\")."
 msgstr ""
+"با این تغییر، می‌توانید <function>ungetc</function> را با اطمینان ۱۷ بار پشت "
+"سر هم فراخوانی کنید (اولین فراخوان هنوز درون میان‌گیر خواهد بود، ۱۶ تای باقی "
+"ماند ممکن است یا داخل میان‌گیر باشند یا داخل \"spare\")."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:10712
