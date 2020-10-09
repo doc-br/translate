@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-09 22:21+0000\n"
+"PO-Revision-Date: 2020-10-10 05:21+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -20089,6 +20089,9 @@ msgid ""
 "read the names of an input and output file from its command line, i.e., if "
 "it can process the command line arguments. But... Where are they?"
 msgstr ""
+"برنامهٔ <application>hex</application> ما چنانچه بتواند نام‌ پرونده‌های "
+"ورودی و خروجی را از طریق خط فرمان خود بخواند، مفیدتر خواهد بود، برای مثال "
+"اگر بتواند براهین خط فرمان را پردازش کند. اما ... آنها کجا هستند؟"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10719
@@ -26669,6 +26672,13 @@ msgid ""
 "function>s the return value from the stack, and jumps to the address that "
 "was stored there."
 msgstr ""
+"خوب، به کجا برمی‌گردد؟‌ هنگامی‌که یک برنامه از آپ‌کد <function role=\"opcode"
+"\">call</function> استفاده می‌کند، ریزپردازنده نشانی بازگشت را <function "
+"role=\"opcode\">push</function> می‌کند، برای مثال آن را در بالای پشته ذخیره "
+"می‌کند (نه پشتهٔ <acronym>FPU</acronym>، پشتهٔ سامانه، که در حافظه قرار دارد)"
+". هنگامی‌که یک برنامه از آپ‌کد <function role=\"opcode\">ret</function> "
+"استفاده می کند، ریزپردازنده مقدار بازگشتی را از پشته <function role=\"opcode"
+"\">pop</function> می‌کند، و سراغ نشانی‌ای که در آنجا ذخیره شده بود می‌رود."
 
 #. (itstool) path: blockquote/para
 #: book.translate.xml:14503
