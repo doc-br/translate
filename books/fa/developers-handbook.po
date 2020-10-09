@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-09 15:28+0000\n"
+"PO-Revision-Date: 2020-10-09 16:04+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -20001,6 +20001,8 @@ msgid ""
 "If your program reads more than one byte ahead, you have at least two "
 "choices:"
 msgstr ""
+"اگر برنامهٔ شما بیش از یک بایت جلوتر را می‌خواند، حداقل دو انتخاب پیش رو "
+"دارید:"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10677
@@ -26623,6 +26625,10 @@ msgid ""
 "fetches a character from the input buffer, <emphasis>clears</emphasis> the "
 "<varname role=\"register\">carry flag</varname> and returns."
 msgstr ""
+"جادوی آن در <function>read</function> است. هرزمان که ورودی بیشتری از سامانه "
+"دریافت می‌کند، به <function>getchar</function> برمی‌گردد، که یک نویسه از "
+"میان‌گیر ورودی می‌گیرد، <varname role=\"register\">carry flag</varname> را "
+"<emphasis>تمیز می‌کند</emphasis> و برمی‌گردد."
 
 #. (itstool) path: blockquote/para
 #: book.translate.xml:14485
@@ -26634,6 +26640,12 @@ msgid ""
 "varname>, <emphasis>sets</emphasis> the <varname role=\"register\">carry "
 "flag</varname>, and returns."
 msgstr ""
+"اما هنگامی‌که <function>read</function> دیگر هیچ ورودی‌ای از سامانه دریافت "
+"نمی‌کند، به هیچ وجه به <function>getchar</function> <emphasis>برنمی‌گردد</"
+"emphasis>. در عوض، آپ‌کد <function role=\"opcode\">add esp, byte 4</"
+"function> مقدار <constant>4</constant> را به <varname role=\"register\">ESP</"
+"varname> اضافه می‌کند، <varname role=\"register\">carry flag</varname> را "
+"<emphasis>تنظیم می‌کند</emphasis>، و برمی‌گردد."
 
 #. (itstool) path: blockquote/para
 #: book.translate.xml:14493
