@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-10 20:49+0000\n"
+"PO-Revision-Date: 2020-10-11 03:49+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -20665,11 +20665,16 @@ msgid ""
 "Some are set by the system, others by you, yet others by the "
 "<application>shell</application>, or any program that loads another program."
 msgstr ""
+"یکی از مفاهیم مهم در <trademark class=\"registered\">UNIX</trademark> محیط "
+"است، که توسط <emphasis>environment variables</emphasis> تعریف می‌شود. برخی "
+"توسط سامانه تنظیم می‌شوند، باقی توسط شما، برخی توسط "
+"<application>shell</application>، یا هر برنامه‌ای که هر برنامهٔ دیگری را بار "
+"می‌کند."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11012
 msgid "How to Find Environment Variables"
-msgstr ""
+msgstr "چگونه متغیرهای محیطی را بیابیم"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11014
@@ -20716,7 +20721,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:11045
 msgid "CGI: a Quick Overview"
-msgstr ""
+msgstr "CGI: مروری سریع"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11047
@@ -20725,6 +20730,9 @@ msgid ""
 "tutorial\">detailed <acronym>CGI</acronym> tutorial</link> on my web site, "
 "but here is a very quick overview of <acronym>CGI</acronym>:"
 msgstr ""
+"من یک <link xlink:href=\"http://www.whizkidtech.redprince.net/cgi-bin/"
+"tutorial\">مفصل <acronym>CGI</acronym> آموزهٔ</link> در پایگاه وب خود دارم، "
+"اما این یک مرور سریع در باب <acronym>CGI</acronym> است:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11054
@@ -20732,6 +20740,8 @@ msgid ""
 "The web server communicates with the <acronym>CGI</acronym> program by "
 "setting <emphasis>environment variables</emphasis>."
 msgstr ""
+"کارساز با تنظیم کردن <emphasis>متغیرهای محلی</emphasis> با برنامهٔ "
+"<acronym>CGI</acronym> ارتباط برقرار می‌کند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11060
@@ -20739,13 +20749,15 @@ msgid ""
 "The <acronym>CGI</acronym> program sends its output to <filename>stdout</"
 "filename>. The web server reads it from there."
 msgstr ""
+"برنامهٔ <acronym>CGI</acronym> خروجی‌اش را به <filename>stdout</filename> می‌"
+"فرستد. کارساز آن (خروجی) را از آنجا (stdout) می‌خواند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11066
 msgid ""
 "It must start with an <acronym>HTTP</acronym> header followed by two blank "
 "lines."
-msgstr ""
+msgstr "باید با سرایند <acronym>HTTP</acronym> و ‌همراهش دو سطر خالی، آغاز شود."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11071
