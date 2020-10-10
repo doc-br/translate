@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-10 05:21+0000\n"
+"PO-Revision-Date: 2020-10-10 19:09+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -15890,7 +15890,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:8696
 msgid "To obtain the unattended functionality, add:"
-msgstr "برای بدست آوردن عملکرد بی‌متصدی، این را اضافه کنید به:"
+msgstr "برای بدست آوردن عملکرد بی‌متصدی، این را:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:8698
@@ -15901,7 +15901,7 @@ msgstr "options\tKDB_UNATTENDED"
 #. (itstool) path: sect1/para
 #: book.translate.xml:8700
 msgid "to the kernel configuration file and rebuild/reinstall."
-msgstr "به پروندهٔ پیکربندی هسته و مجدداً بسازید/نصب کنید."
+msgstr "به پروندهٔ پیکربندی هسته اضافه کنید و مجدداً بسازید/نصب کنید."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8702
@@ -17203,6 +17203,17 @@ msgid ""
 "scriptable. This option is not required to run GDB on a kernel core dump. "
 "This option depends on <literal>options KDB</literal>."
 msgstr ""
+"<literal>options GDB</literal>: برای پشتیبانی اشکال‌زدای از راه دور، GDB، "
+"همگردانی کنید، که می‌تواند با کابل‌های سریالی یا firewire کار کند. هنگامی‌که "
+"اشکال‌زدا وارد می‌شود، ممکن است GDB الصاق شود تا محتوای ساختمان را بررسی کند،"
+" ردهای پشته را ایجاد کند، و غیره. دسترسی به برخی حالت‌های هسته‌ نسبت به DDB "
+"سخت‌تر است، که قادر به ایجاد خلاصه‌های کاربردی از حالت هسته به‌طور خودکار "
+"است، مانند اشکال‌زدایی خودکار walking lock یا ساختمان‌های مدیریت حافظهٔ "
+"هسته. دستگاه دومی برای اجرای اشکال‌زدا لازم است. از سوی دیگر، GDB اطلاعات "
+"منبع هسته و اعلان‌های اشکال‌زداییِ کامل را ترکیب می‌کند، و از تعاریف ساختمان "
+"داده‌های کامل و متغیرهای محلی آگاه است، و قابل اجراست. این گزینه برای اجرای "
+"GDB بر روی روگرفت حافظهٔ هسته لازم است. این گزینه وابسته به <literal>options "
+"KDB</literal> است."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9285
@@ -19952,6 +19963,12 @@ msgid ""
 "we have to do is decrease the value of <varname role=\"register\">ESI</"
 "varname> and increase the value of <varname role=\"register\">EBX</varname>:"
 msgstr ""
+"بایتی که گرفتیم تا دفعهٔ بعد که <function>read</function> فراخوانی شود در "
+"میان‌گیر باقی می‌ماند. ما نمی‌دانیم که این امر چه زمان اتفاق میفتد، اما می‌"
+"دانیم که تا فراخوانی بعدی به <function>getchar</function> اتفاق نخواهد "
+"افتاد. یعنی، برای \"بازگشت\" بایتی که آخرین بار خوانده شده (last-read byte) "
+"به جریان، تمام آنچه که باید انجام دهیم کاهش مقدار <varname role=\"register\""
+">ESI</varname> و افزایش مقدار <varname role=\"register\">EBX</varname> است:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:10649
@@ -19976,6 +19993,10 @@ msgid ""
 "will work most of the time, but not all the time (and will be tough to "
 "debug). Why?"
 msgstr ""
+"اما مراقب باشید! چنانچه look-ahead ما حداکثر یک نویسه در لحظه باشد در انجام "
+"آن کاملاً محفوظیم. اگر بیش از یک نویسهٔ بعدی را بررسی کنیم و "
+"<function>ungetc</function> را چند بار پشت سر هم فراخونی کنیم، بیشتر مواقع "
+"کار خواهد کرد، اما نه همیشه (و اشکال‌زدایی آن دشوار خواهد بود). چرا؟"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10661
@@ -20103,6 +20124,12 @@ msgid ""
 "<varname>[esp+offset]</varname>, or by simply <function role=\"opcode\">pop</"
 "function>ping it."
 msgstr ""
+"قبل از آنکه یک سامانهٔ <trademark class=\"registered\">UNIX</trademark> "
+"برنامه‌ای را آغاز کند، برخی داده‌های پشته را <function role=\"opcode\">push</"
+"function> می‌کند، سپس به برچسبِ <varname>_start</varname> برنامه جهش می‌کند. "
+"بله، گفتم جهش، نه فراخوانی. این یعنی که داده‌ها با خواندنِ "
+"<varname>[esp+offset]</varname>، یا <function role=\"opcode\">pop</function> "
+"کردن آنها قابل دسترس هستند."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10725
@@ -20111,6 +20138,8 @@ msgid ""
 "arguments. It is traditionally called <varname>argc</varname>, for "
 "\"argument count.\""
 msgstr ""
+"مقداری که بالای پشته قرار دارد شامل تعداد براهین خط فرمان است. به‌طور عرفی "
+"<varname>argc</varname> نام دارد، برای \"شمار براهین\" (argument count)."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10729
