@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-11 03:49+0000\n"
+"PO-Revision-Date: 2020-10-12 00:13+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -20052,6 +20052,11 @@ msgid ""
 "your code, and create a small \"spare\" buffer right before your input "
 "buffer, something like this:"
 msgstr ""
+"چنانچه آن گزینه موجود نیست، ابتدا بیشترین تعداد نویسه‌هایی که برنامهٔ شما "
+"باید به جریان ورودی بازگرداند را تعیین کنید. تعداد را کمی افزایش دهید، برای "
+"اطمینان، ترجیحاً‌ به ۱۶ برابر آن—در نتیجه بهتر تراز می‌شود. سپس قسمت "
+"<varname>.bss</varname> از کدتان را تغییر دهید، و یک میان‌گیر کوچک \"spare\" "
+"درست پیش از میان‌گیر ورودی‌تان ایجاد کنید، چیزی مانند این:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:10689
@@ -20157,6 +20162,13 @@ msgid ""
 "of the actual arguments. The arguments themselves are NUL-terminated "
 "character strings."
 msgstr ""
+"پس از آن به براهین خط فرمان می‌رسیم، تمام <varname>argc</varname> ها. این "
+"براهین معمولاً به‌عنوان <varname>argv</varname> شناخته می‌شوند، برای "
+"\"argument value(s).\" از این رو، ما <varname>argv[0]</varname>، "
+"<varname>argv[1]</varname>، <varname>...</varname>، <varname>argv[argc-1]</"
+"varname> را می‌گیریم. اینها براهین اصلی نیستند، بلکه اشاره‌گرهای براهین، "
+"مانند نشانی‌های حافظهٔ براهین اصلی هستند. خود براهین رشته‌های NUL-terminated "
+"هستند."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10739
@@ -20165,6 +20177,8 @@ msgid ""
 "simply a <constant>0</constant>. There is more, but this is enough for our "
 "purposes right now."
 msgstr ""
+"فهرست <varname>argv</varname> با یک اشاره‌گر NULL همراه می‌شود، که یک "
+"<constant>0</constant> است. موارد بیشتری هست، اما فعلاً برای اهداف ما کافیست."
 
 #. (itstool) path: note/para
 #: book.translate.xml:10744
@@ -20174,6 +20188,10 @@ msgid ""
 "each argument is in a separate string. The second difference is that there "
 "is no practical limit on how many arguments there can be."
 msgstr ""
+"اگر از سمت محیط برنامه‌نویسی <acronym><trademark class=\"registered\">MS-"
+"DOS</trademark></acronym> آمده‌اید، تفاوت اصلی در این است که هر برهان در یک "
+"رشتهٔ جداگانه قرار دارد. تفاوت دوم در این است که هیچ محدودیت عملی‌ای برای "
+"تعداد براهینی که می‌توان داشت وجود ندارد."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10751
@@ -20531,6 +20549,9 @@ msgid ""
 "<varname>fd.in</varname> and <varname>fd.out</varname>. We store the input "
 "and output file descriptors here."
 msgstr ""
+"اکنون در قسمت <varname>.data</varname> دو متغیر داریم، <varname>fd.in</"
+"varname> و <varname>fd.out</varname>. ما توصیف‌گرهای پروندهٔ ورودی و خروجی "
+"را در اینجا ذخیره می‌کنیم."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10922
@@ -20539,6 +20560,9 @@ msgid ""
 "<varname>stdin</varname> and <varname>stdout</varname> with <varname>[fd."
 "in]</varname> and <varname>[fd.out]</varname>."
 msgstr ""
+"در قسمت <varname>.text</varname>، ارجاعات به <varname>stdin</varname> و "
+"<varname>stdout</varname> را به ترتیب با <varname>[fd.in]</varname> و "
+"<varname>[fd.out]</varname> جایگزین کرده‌ایم."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10927
@@ -20757,7 +20781,8 @@ msgstr ""
 msgid ""
 "It must start with an <acronym>HTTP</acronym> header followed by two blank "
 "lines."
-msgstr "باید با سرایند <acronym>HTTP</acronym> و ‌همراهش دو سطر خالی، آغاز شود."
+msgstr ""
+"باید با سرایند <acronym>HTTP</acronym> و ‌به همراهش دو سطر خالی، آغاز شود."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11071
@@ -20765,6 +20790,8 @@ msgid ""
 "It then prints the <acronym>HTML</acronym> code, or whatever other type of "
 "data it is producing."
 msgstr ""
+"سپس کد <acronym>HTML</acronym>، یا هر نوع داده‌ای که تولید می‌کند را چاپ "
+"می‌کند."
 
 #. (itstool) path: note/para
 #: book.translate.xml:11077
@@ -20773,11 +20800,15 @@ msgid ""
 "others vary, depending on the web server. That makes <application>webvars</"
 "application> quite a useful diagnostic tool."
 msgstr ""
+"در حالی‌که برخی <emphasis>متغیرهای محلی</emphasis> از نام‌های استاندارد "
+"استفاده می کنند، سایر آنها متفاوت‌اند، که این امر بستگی به کارسازمان دارد. "
+"این می‌تواند <application>webvars</application> را به یک ابزار عیب‌شناسی "
+"بسیار مفید تبدیل کند."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:11086
 msgid "The Code"
-msgstr ""
+msgstr "کد"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11088
@@ -20787,12 +20818,17 @@ msgid ""
 "up. It then must read the <emphasis>environment variables</emphasis> one by "
 "one and send them out as part of the <acronym>HTML</acronym> page."
 msgstr ""
+"برنامهٔ <application>webvars</application> ما، سپس، باید سرایند "
+"<acronym>HTTP</acronym> را همراه با برخی (mark-up) نشانه‌گذاری‌های "
+"<acronym>HTML</acronym> ارسال کند. سپس باید <emphasis>متغیرهای محیطی</"
+"emphasis> را یک به یک بخواند و آنها را به‌عنوان بخشی از صفحهٔ <acronym>HTML</"
+"acronym> ارسال کند."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11095
 msgid ""
 "The code follows. I placed comments and explanations right inside the code:"
-msgstr ""
+msgstr "این کد در پایین آمده است. من توضیحات را مستقیم درون کد قرار داده‌ام:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:11098
@@ -21176,11 +21212,13 @@ msgid ""
 "This code produces a 1,396-byte executable. Most of it is data, i.e., the "
 "<acronym>HTML</acronym> mark-up we need to send out."
 msgstr ""
+"این کد یک اجراپذیر ۱۳۹۶ بایتی تولید می‌کند. بیشتر آن داده است، مانند "
+"نشانه‌گذاریِ <acronym>HTML</acronym> که نیاز به ارسال آنها داریم."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11284
 msgid "Assemble and link it as usual:"
-msgstr ""
+msgstr "آن را مانند همیشه همگذاری و پیوند دهید:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:11286
