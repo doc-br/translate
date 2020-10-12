@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-12 00:13+0000\n"
+"PO-Revision-Date: 2020-10-13 00:01+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -18295,10 +18295,10 @@ msgid ""
 "something other than calling the kernel, so usually you will only need a few "
 "such conditional sections in your code."
 msgstr ""
-"در آن صورت، شما نیاز است تا دو نگاه‌دارنده برای آن فراخوان‌های سامانهٔ ویژه "
-"بنویسید، و از همگذاریِ شرطی استفاده کنید. خوشبختانه، بیشتر کد شما کاری به "
-"غیر از فراخوانی تابع انجام می‌دهد، پس معمولاً تنها به چند بخش‌ شرطی در کدتان "
-"نیاز خواهید داشت."
+"در آن صورت، شما باید دو مدیر مختلف برای آن فراخوان‌های سامانهٔ ویژه بنویسید، "
+"و از همگذاریِ شرطی استفاده کنید. خوشبختانه، بیشتر کد شما کاری به غیر از "
+"فراخوانی تابع انجام می‌دهد، پس معمولاً تنها به چند بخش‌ شرطی در کدتان نیاز "
+"خواهید داشت."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9860
@@ -20572,6 +20572,10 @@ msgid ""
 "constant>. The error handler is before <varname>_start</varname> so we are "
 "within a short distance from where the errors occur."
 msgstr ""
+"قسمت <varname>.text</varname> اکنون با یک مدیر خطای ساده آغاز می‌شود، که هیچ "
+"کاری جز خروج از برنامه با مقدار بازگشتی <constant>1</constant> انجام نمی‌"
+"دهد. مدیر خطا قبل از <varname>_start</varname> قرار دارد، در نتیجه ما در "
+"فاصلهٔ کوتاهی از محل بروز خطا هستیم."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10933
@@ -20580,6 +20584,9 @@ msgid ""
 "First, we remove <varname>argc</varname> and <varname>argv[0]</varname> from "
 "the stack: They are of no interest to us (in this program, that is)."
 msgstr ""
+"طبیعتاً، اجرای برنامه در <varname>_start</varname> آغاز می‌شود. ابتدا، "
+"<varname>argc</varname> و <varname>argv[0]</varname> را از پشته حذف می‌کنیم: "
+"ما هیچ علاقه‌ای به آنها نداریم (در این برنامه، چنین است)."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10939
@@ -20593,6 +20600,14 @@ msgid ""
 "to open the input file (e.g., it does not exist), we jump to the error "
 "handler and quit."
 msgstr ""
+"ما <varname>argv[1]</varname> را در <varname role=\"register\">ECX</varname> "
+"پاپ (pop) می‌کنیم. این ثبات به‌طور خاص مناسب اشاره‌گرهاست، زیرا می‌توانیم "
+"اشاره‌گرهای NULL را با <function role=\"opcode\">jecxz</function> سامان‌دهی "
+"کنیم. اگر <varname>argv[1]</varname> مقدار NULL نباشد، سعی می‌کنیم پرونده‌ای "
+"که در نخستین برهان ذکر شده است را باز کنیم. در غیر این‌صورت، برنامه را مانند "
+"قبل ادامه می‌دهیم: خواندن از <varname>stdin</varname>، نوشتن در "
+"<varname>stdout</varname>. اگر نتوانیم پروندهٔ ورودی را باز کنیم (برای مثال، "
+"وجود نداشته باشد)، به سامان‌ده خطا پرش می‌کنیم و خارج می‌شویم."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10949
@@ -20602,6 +20617,11 @@ msgid ""
 "varname>. If we fail to open the output file (e.g., it exists and we do not "
 "have the write permission), we, again, jump to the error handler."
 msgstr ""
+"اگر همه چیز خوب پیش رفت، حال برهان دوم را بررسی می‌کنیم. اگر آنجا باشد، "
+"پروندهٔ خروجی را باز می‌کنیم. در غیر اینصورت، خروجی را به <varname>stdout</"
+"varname> ارسال می‌کنیم. اگر نتوانیم پروندهٔ خروجی را باز کنیم (برای مثال، "
+"خروج کند و اجازهٔ نوشتن نداشته باشیم)، مجدد، به سامان‌دهِ خطا می‌رویم (پرش "
+"می‌کنیم)."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10955
@@ -20629,8 +20649,7 @@ msgstr ""
 #: book.translate.xml:10967
 msgid "Have our error handler print a message to <varname>stderr</varname>."
 msgstr ""
-"از نگاه‌دارندهٔ خطای ما بخواهید تا پیامی را در <varname>stderr</varname> چاپ "
-"کند."
+"از مدیر خطای ما بخواهید تا پیامی را در <varname>stderr</varname> چاپ کند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10972
@@ -20638,7 +20657,7 @@ msgid ""
 "Add error handlers to the <function>read</function> and <function>write</"
 "function> functions."
 msgstr ""
-"نگاه‌دارنده‌های خطا را در توابع <function>read</function> و <function>write</"
+"مدیران خطا را در توابع <function>read</function> و <function>write</"
 "function> اضافه کنید."
 
 #. (itstool) path: listitem/para
@@ -21318,6 +21337,8 @@ msgid ""
 "It would be nice to have a <application>ftuc</application>, i.e., "
 "<emphasis>fast tuc</emphasis>, and use it like this:"
 msgstr ""
+"خوب می‌شود اگر یک <application>ftuc</application> داشته باشید، برای مثال، "
+"<emphasis>fast tuc</emphasis>، و بدین شکل از آن استفاده کنید:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:11341
@@ -21366,26 +21387,28 @@ msgid ""
 "A text file converter, then, must be able to handle any possible line "
 "endings:"
 msgstr ""
+"یک مبدل پروندهٔ نوشتاری، سپس، باید بتواند به هر نوع پایان سطر احتمالی رسیدگی "
+"کند:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11366
 msgid "carriage return / line feed"
-msgstr ""
+msgstr "carriage return / line feed"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11370
 msgid "carriage return"
-msgstr ""
+msgstr "carriage return"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11374
 msgid "line feed / carriage return"
-msgstr ""
+msgstr "line feed / carriage return"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11378
 msgid "line feed"
-msgstr ""
+msgstr "line feed"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:11382
@@ -21393,11 +21416,14 @@ msgid ""
 "It should also handle files that use some kind of a combination of the above "
 "(e.g., carriage return followed by several line feeds)."
 msgstr ""
+"همچنین باید بتواند به پرونده‌هایی که از نوع خاصی از ترکیب‌های بالا استفاده "
+"می‌کنند نیز رسیدگی کند (برای مثال، carriage return به‌همراه تعدادی line "
+"feed)."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11387
 msgid "Finite State Machine"
-msgstr ""
+msgstr "دستگاه حالت متناهی"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11389
@@ -21648,7 +21674,7 @@ msgstr ""
 msgid ""
 "Another approach is by using an array of function pointers, something like "
 "this:"
-msgstr ""
+msgstr "روشی دیگر استفاده از یک آرایه از اشاره‌گرهای تابع است، چیزی مانند این:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11577
@@ -21662,6 +21688,8 @@ msgid ""
 "Yet another is to have <varname>state</varname> be a function pointer, set "
 "to point at the appropriate function:"
 msgstr ""
+"با این‌حال روش دیگر داشتن <varname>state</varname> به‌عنوان یک اشاره‌گر تابع "
+"است، که برای اشاره کردن به تابع مورد نظر تنظیم شود:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11583
@@ -22567,7 +22595,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:12053
 msgid "One-Pointed Mind"
-msgstr ""
+msgstr "ذهن تک هدفی"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:12055
@@ -22575,6 +22603,8 @@ msgid ""
 "As a student of Zen, I like the idea of a one-pointed mind: Do one thing at "
 "a time, and do it well."
 msgstr ""
+"به‌عنوان یک دانش‌آموز ذن، ایدهٔ ذهن تک هدفی را دوست دارم: یک کار را در لحظه "
+"انجام دهید، و آن را به‌خوبی انجام دهید."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:12058
@@ -22617,6 +22647,7 @@ msgid ""
 "I will illustrate this principle with a specific real-life example I was "
 "faced with recently:"
 msgstr ""
+"من این اصل را با یک مثال واقعی که چندی پیش با آن برخورد کردم نشان می‌دهم:"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12080
@@ -26790,6 +26821,11 @@ msgid ""
 "longer remembers it was <function>getchar</function> that <function role="
 "\"opcode\">call</function>ed <function>read</function>."
 msgstr ""
+"»اما از آنجا که مقدار <constant>4</constant> را به <varname role=\"register\""
+">ESP</varname> اضافه کرده‌ایم (که ثبات اشاره‌گر پشته است)، ما به‌طور مؤثر یک "
+"مورد جزئیِ <emphasis>فراموشی</emphasis> به ریزپردازنده داده‌ایم: دیگر به یاد "
+"نخواهد آورد که این <function>getchar</function> بود که تابع <function>read</"
+"function> را <function role=\"opcode\">فرواخوانی</function> کرد."
 
 #. (itstool) path: blockquote/para
 #: book.translate.xml:14509
