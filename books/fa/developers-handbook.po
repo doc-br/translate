@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-13 00:01+0000\n"
+"PO-Revision-Date: 2020-10-14 05:25+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -17226,6 +17226,13 @@ msgid ""
 "reliable at getting into the debugger, and is generally recommended. This "
 "option has little or no performance impact."
 msgstr ""
+"<literal>options BREAK_TO_DEBUGGER</literal>، <literal>options "
+"ALT_BREAK_TO_DEBUGGER</literal>: به سیگنال توقف (break) یا سیگنال متناوب "
+"(alternative) در پیشانه اجازهٔ ورود به اشکال‌زدا می‌دهد. اگر سامانه بدون "
+"وحشت دچار تعلیق شود، این روش مناسب برای دسترسی به اشکال‌زداست. به‌علت قفل "
+"شدن هستهٔ فعلی، یک سیگنال توقف تولید شده در پیشانهٔ سریال به‌طور قابل توجهی "
+"در ورود به اشکال‌زدا اطمینان‌پذیرتر است، و عموماً پیشنهاد می‌شود. این گزینه "
+"تأثیر کم یا اصلاً هیچ تأثیری ندارد."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9296
@@ -20630,6 +20637,9 @@ msgid ""
 "output files before exiting, and, as mentioned, we use <varname>[fd.in]</"
 "varname> and <varname>[fd.out]</varname>."
 msgstr ""
+"باقی کد همانند قبل است، با این استثنا که پرونده‌های ورودی و خروجی را قبل از "
+"خروج می‌بندیم، و، همانطور که اشاره شد، از <varname>[fd.in]</varname> و "
+"<varname>[fd.out]</varname> استفاده می‌کنیم."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10960
@@ -20729,6 +20739,12 @@ msgid ""
 "array of pointers to <emphasis>environment variables</emphasis>. This is "
 "often referred to as <varname>env</varname>."
 msgstr ""
+"پیش‌تر گفتم که هنگامی‌که یک برنامه شروع به اجرا می‌کند، پشته شامل "
+"<varname>argc</varname> به‌همراه آرایهٔ NULL-terminated "
+"<varname>argv</varname>، به‌همراه چیزی دیگر است. \"چیزی دیگر\" "
+"<emphasis>محیط</emphasis> است، یا، دقیق‌تر، یک آرایهٔ NULL-terminated از "
+"اشاره‌گرها به <emphasis>متغیرهای محیطی</emphasis>. از آن اغلب به‌عنوان "
+"<varname>env</varname> یاد می‌شود."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11023
@@ -20738,6 +20754,10 @@ msgid ""
 "(<constant>0</constant>). In this case, there is no <varname>\"envc\"</"
 "varname>—we figure out where the array ends by searching for the final NULL."
 msgstr ""
+"معماری <varname>env</varname> همانند <varname>argv</varname> است، فهرستی از "
+"نشانی‌های حافظه به‌همراه یک NULL (<constant>0</constant>). در این مورد، "
+"<varname>\"envc\"</varname> وجود ندارد—ما از طریق جست‌و‌جو برای NULL پایانی "
+"متوجه محل پایان یافتن آرایه می‌شویم."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11029
@@ -20746,6 +20766,9 @@ msgid ""
 "sometimes the <varname>=value</varname> part may be missing. We need to "
 "account for that possibility."
 msgstr ""
+"متغیرها معمولاً در قالب <varname>name=value</varname> می‌آیند، اما گاهی ممکن "
+"است قسمت <varname>=value</varname> وجود نداشته نباشد. ما باید آن احتمال را "
+"در نظر بگیریم."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11036
@@ -20760,6 +20783,9 @@ msgid ""
 "application> command does. But I thought it would be more interesting to "
 "write a simple assembly language CGI utility."
 msgstr ""
+"می‌توانم فقط چند کد که محیط را همانند دستور <trademark class=\"registered\""
+">UNIX</trademark><application>env</application> چاپ می‌کنند به شما نشان "
+"بدهم. اما فکر کردم نوشتن یک ابزار CGI سادهٔ زبان اسمبلی جالب‌تر باشد."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:11045
@@ -21257,6 +21283,10 @@ msgid ""
 "in a special <filename>cgi-bin</filename> directory, or perhaps rename it "
 "with a <filename>.cgi</filename> extension."
 msgstr ""
+"به‌منظور استفاده از آن، باید <filename>webvars</filename> را در کارساز خود "
+"بارگذاری کنید. بسته به چگونگی تنظیم کارساز شما، شاید مجبور شوید آن را در یک "
+"مسیر ویژهٔ <filename>cgi-bin</filename> ذخیره کنید، یا شاید آن را با یک "
+"پسوند <filename>.cgi</filename> تغییر نام دهید."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11295
@@ -21270,6 +21300,14 @@ msgid ""
 "name <userinput>asm</userinput> and password <userinput>programmer</"
 "userinput>."
 msgstr ""
+"سپس باید از مرورگر خود برای مشاهدهٔ خروجی آن استفاده کنید. برای دیدن خروجی "
+"آن در کارساز من، لطفاً‌ بروید به <link xlink:href=\"http://www.int80h.org/"
+"webvars/\"><filename>http://www.int80h.org/webvars/</filename></link>. اگر "
+"در مورد متغیرهای محیطی اضافیِ موجود در مسیر وب محافظت شده با رمز کجکاو هستید،"
+" بروید به <link xlink:href=\"http://www.int80h.org/private/\""
+"><filename>http://www.int80h.org/private/</filename></link>، از "
+"<userinput>asm</userinput> به‌عنوان نام و <userinput>programmer</userinput> "
+"به‌عنوان رمز استفاده کنید."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:11306
@@ -21285,6 +21323,11 @@ msgid ""
 "to files. We will examine some of it in this section, and end up with a nice "
 "file conversion utility."
 msgstr ""
+"ما از قبل برخی کارهای پرونده را انجام داده‌ایم: می‌دانیم چگونه آنها را باز و "
+"بسته کنیم، چگونه آنها را به‌وسیلهٔ میان‌گیرها بخوانیم و بنویسیم. اما در مورد "
+"پرونده‌ها <trademark class=\"registered\">UNIX</trademark> کارکردهای بسیار "
+"بیشتری ارائه می‌دهد. ما بخشی از آنها را در این بخش می‌سنجیم، و با یک ابزار "
+"تبدیل پروندهٔ خوب به پایان می‌رسانیم."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:11314
@@ -21293,6 +21336,9 @@ msgid ""
 "It always makes programming easier when we know from the start what the end "
 "product is supposed to do."
 msgstr ""
+"در واقع، بیایید از پایان شروع کنیم، یعنی، با ابزار تبدیل پرونده. آگاهی "
+"ابتدایی نسبت به این امر که محصول پایانی قرار است چه کند برنامه‌نویسی را "
+"همیشه آسان‌تر می‌کند."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:11319
@@ -26839,6 +26885,14 @@ msgid ""
 "which <function role=\"opcode\">ret</function>urned with the <varname role="
 "\"register\">carry flag</varname> set!"
 msgstr ""
+"و از آنجا که <function>getchar</function> هرگز هیچ چیز را قبل از <function "
+"role=\"opcode\">فراخوانی</function> کردن <function>read</function> <function "
+"role=\"opcode\">push</function> نکرد، بالای پشته اکنون شامل نشانی بازگشت به "
+"هرچیز یا هرکسی است که <function>getchar</function> را <function role=\"opcode"
+"\">فراخوانی</function> کرده است. تا آنجا که شامل فراخوان می‌شود، او "
+"<function>getchar</function> را <function role=\"opcode\">فراخوانی</"
+"function> کرده است، که با <varname role=\"register\">carry flag</varname> بر "
+"روی آن <function role=\"opcode\">بازگشت</function> داده می‌شود!"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14517
@@ -26847,6 +26901,8 @@ msgid ""
 "the middle of a Lilliputian conflict between the Big–Endians and the Little–"
 "Endians."
 msgstr ""
+"به‌غیر از آن، جریان <function>bcdload</function> وسط یک اختلاف لی‌لی‌پوتی "
+"مابین اندین‌های بزرگ و اندین‌های کوچک گرفتار شده است."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14521
@@ -26855,6 +26911,8 @@ msgid ""
 "text is stored in the big–endian order, but the <emphasis>packed decimal</"
 "emphasis> is little–endian."
 msgstr ""
+"معرف متنی یک عدد را به آن عدد تبدیل می‌کند: متن به ترتیبِ اندین بزرگ ذخیره "
+"شده است، اما <emphasis>ده‌دهی بسته‌بندی شده</emphasis> اندین کوچک است."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14526
