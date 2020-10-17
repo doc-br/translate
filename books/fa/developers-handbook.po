@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-14 05:25+0000\n"
+"PO-Revision-Date: 2020-10-18 08:03+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -3616,8 +3616,7 @@ msgid ""
 "command> to find the process ID for the child, and do"
 msgstr ""
 "برای انجام این کار، یک <command>lldb</command> دیگر اجرا کنید، از "
-"<command>ps</command> برای پیدا کردن نشانی فرآیند فرزند استفاده کنید، و "
-"بنویسید"
+"<command>ps</command> برای پیدا کردن نشانی فرآیند فرزند استفاده کنید، و"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:2014
@@ -3630,7 +3629,8 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:2016
 msgid "in <command>lldb</command>, and then debug as usual."
-msgstr "در <command>lldb</command>، و سپس به‌طور معمول اشکال‌زدایی کنید."
+msgstr ""
+"را در <command>lldb</command> بنویسید، و سپس به‌طور معمول اشکال‌زدایی کنید."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2019 book.translate.xml:2267
@@ -3728,9 +3728,9 @@ msgid ""
 "there is a graphical front-end for it (<package>devel/xxgdb</package>) in "
 "the Ports Collection."
 msgstr ""
-"سرانجام، برای آنان که سبک خط فرمانیِ نسخه نوشتاری آن را ناخوش‌آیند می‌یابند، "
-"جلوداری گرافیکی برای آن (به‌عنوان <package>devel/xxgdb</package>) در مجموعه "
-"پورت‌ها وجود دارد."
+"سرانجام، برای آنان که سبک خط فرمانیِ نسخهٔ متنی آن را ناخوشایند می‌یابند، "
+"جلودار گرافیکی‌ای برای آن (به‌عنوان <package>devel/xxgdb</package>) در "
+"مجموعه پورت‌ها وجود دارد."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:2066
@@ -6486,7 +6486,7 @@ msgid ""
 "<literal>$</literal> sign. The <literal>set</literal> keyword is then "
 "followed by the set number. For example:"
 msgstr ""
-"این پرونده‌های فهرست پرونده‌های نوشتاری متداولی هستند که شامل پیام‌های شماره‌"
+"این پرونده‌های فهرست پرونده‌های متنیِ متداولی هستند که شامل پیام‌های شماره‌"
 "گذاری شده هستند. این امکان وجود دارد تا نکات را با نشانهٔ <literal>$</"
 "literal> شروع کنیم. همچنین حدود تعیین شده توسط نکات ویژه جدا شده‌اند، جایی‌"
 "که واژهٔ کلیدی <literal>set</literal> باید به‌طور مستقیم نشانهٔ <literal>$</"
@@ -15140,7 +15140,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:8374
 msgid "Textdumps"
-msgstr "روگرفت‌های نوشتاری (Textdumps)"
+msgstr "روگرفت‌های متنی (Textdumps)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8377
@@ -15327,7 +15327,7 @@ msgid ""
 "replaceable></filename>."
 msgstr ""
 "ابزار <citerefentry><refentrytitle>crashinfo</refentrytitle><manvolnum>8</man"
-"volnum></citerefentry> یک پروندهٔ نوشتاری ایجاد می‌کند که شامل چکیده‌ای از "
+"volnum></citerefentry> یک پروندهٔ متنی ایجاد می‌کند که شامل چکیده‌ای از "
 "اطلاعات از یک روگرفت حافظهٔ کامل یا روگرفت کوچک است. اگر <varname>dumpdev</"
 "varname> درون <citerefentry><refentrytitle>rc."
 "conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> تنظیم شده باشد، <"
@@ -19110,9 +19110,9 @@ msgid ""
 "each <constant>0A</constant>:"
 msgstr ""
 "آیا می‌توانیم این مسئله را بهبود ببخشیم؟ خوب، به یک دلیل، کمی گیج‌کننده است "
-"زیرا همین‌که خطی از نوشته را تبدیل کردیم، ورودی ما دیگر از ابتدای خط شروع "
-"نمی‌شود. می‌توانیم آن را تغییر دهیم تا بعد از هر <constant>0A</constant>، به "
-"جای چاپ کردن یک فضا، یک خط جدید چاپ کند:"
+"زیرا همین‌که خطی از متن را تبدیل کردیم، ورودی ما دیگر از ابتدای خط شروع نمی‌"
+"شود. می‌توانیم آن را تغییر دهیم تا بعد از هر <constant>0A</constant>، به جای "
+"چاپ کردن یک فضا، یک خط جدید چاپ کند:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:10233
@@ -19875,7 +19875,7 @@ msgid ""
 "processing. If it is followed by white space, or some other value, then it "
 "is not part of the current token."
 msgstr ""
-"برای مثال، ممکن است شما جریان ورودیِ رشتهٔ نوشتاری را تجزیه کنید (برای مثال، "
+"برای مثال، ممکن است شما جریان ورودیِ رشتهٔ متنی را تجزیه کنید (برای مثال، "
 "هنگام پیاده‌سازیِ همگردان یک زبان):‌ چنانچه یک نویسه توسط نویسه‌ای دیگر، یا "
 "شاید یک رقم دنبال شود، این بخشی از نشانه‌ایست که شما در حال پردازش هستید. "
 "چنانچه با یک فضای سفید، یا مقدار‌ دیگری دنبال شود، بخشی از نشانهٔ جاری نیست."
@@ -21354,6 +21354,16 @@ msgid ""
 "a <trademark class=\"registered\">UNIX</trademark> text file to a "
 "<acronym>DOS</acronym> text file."
 msgstr ""
+"یکی از اولین برنامه‌هایی که برای <trademark class=\"registered\">UNIX</"
+"trademark> نوشتم <link xlink:href=\"ftp://ftp.int80h.org/unix/tuc/\""
+"><application>tuc</application></link> بود، یک تبدیل‌کنندهٔ متن به پروندهٔ "
+"<trademark class=\"registered\">UNIX</trademark> است. این برنامه یک پروندهٔ "
+"متنی را از سایر سامانه‌های عامل به یک پروندهٔ متنی <trademark class="
+"\"registered\">UNIX</trademark> تبدیل می‌کند. به بیان دیگر، از پایان‌سطرهای "
+"مختلف به رویهٔ نوسطر در <trademark class=\"registered\">UNIX</trademark> "
+"تغییر می‌دهد. خروجی را در یک پروندهٔ متمایز ذخیره می‌کند. به‌طور اختیاری، یک "
+"پروندهٔ متنیِ <trademark class=\"registered\">UNIX</trademark> را به پروندهٔ "
+"متنیِ <acronym>DOS</acronym> تبدیل می‌کند."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:11327
@@ -21364,6 +21374,11 @@ msgid ""
 "it would just overwrite the file instead of me having to send the output to "
 "a different file. Most of the time, I end up using it like this:"
 msgstr ""
+"من به‌طور گسترده از <application>tuc</application> استفاده کرده‌ام، اما فقط "
+"برای تبدیل از سایر <acronym>OS</acronym> ها به <trademark class=\"registered"
+"\">UNIX</trademark>، نه برعکسش. همیشه آرزو داشتم به جای آنکه مجبور به ارسال "
+"خروجی به یک پروندهٔ جدا باشم، فقط خودش پرونده را بازنویسی کند. بیشتر مواقع، "
+"آن را بدین شکل استفاده می‌کنم:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:11334
@@ -21401,6 +21416,9 @@ msgid ""
 "assembly language (the original <application>tuc</application> is in C), and "
 "study various file-oriented kernel services in the process."
 msgstr ""
+"در این فصل، سپس، <application>ftuc</application> را در زبان اسمبلی خواهیم "
+"نوشت (در اصل با C نوشته شده است)، و سرویس‌های هستهٔ پرونده محور مخلتف را در "
+"این فرآیند بررسی می‌کنیم."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:11348
@@ -21408,6 +21426,8 @@ msgid ""
 "At first sight, such a file conversion is very simple: All you have to do is "
 "strip the carriage returns, right?"
 msgstr ""
+"در نگاه اول، چنین تبدیل پرونده‌ای بسیار ساده است: تمام آنچه که باید انجام "
+"دهید حذف سرسطرها (carriage returns) است، صحیح؟"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:11351
@@ -21416,6 +21436,9 @@ msgid ""
 "(at least with <acronym>MS DOS</acronym> text files), but will fail "
 "occasionally."
 msgstr ""
+"اگر پاسخ شما مثبت است، دوباره فکر کنید:‌این روش اکثر مواقع کار خواهد کرد ("
+"حداقل با پرونده‌های متنی <acronym>MS DOS</acronym>)، اما گهگاه کار نخواهد "
+"کرد."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:11355
@@ -21426,6 +21449,10 @@ msgid ""
 "several blank lines into a single carriage return followed by several line "
 "feeds. And so on."
 msgstr ""
+"مشکل این است که همهٔ پرونده‌های متنیِ غیر <trademark class=\"registered\""
+">UNIX</trademark> سطرهایشان را با توالی سرسطر / نوسطر به‌پایان نمی‌رسانند. "
+"برخی سرسطر را بدون نوسطر استفاده می‌کنند. باقی چندین سطر خالی را به‌همراه "
+"تعدادی نوسطر در یک سرسطر ترکیب می‌کنند. و غیره."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:11361
@@ -21433,7 +21460,7 @@ msgid ""
 "A text file converter, then, must be able to handle any possible line "
 "endings:"
 msgstr ""
-"یک مبدل پروندهٔ نوشتاری، سپس، باید بتواند به هر نوع پایان سطر احتمالی رسیدگی "
+"یک مبدل پروندهٔ متنی، سپس، باید بتواند به هر نوع پایان سطر احتمالی رسیدگی "
 "کند:"
 
 #. (itstool) path: listitem/para
@@ -21874,6 +21901,8 @@ msgid ""
 "When we are finished working with a memory-mapped file, we unmap it with the "
 "<function role=\"syscall\">munmap</function> syscall:"
 msgstr ""
+"هنگامی‌که کار ما با پروندهٔ memory-mapped تمام شد، نگاشت آن را با فراخوان "
+"سامانهٔ <function role=\"syscall\">munmap</function> لغو می‌کنیم:"
 
 #. (itstool) path: tip/para
 #: book.translate.xml:11665
@@ -22681,6 +22710,10 @@ msgid ""
 "programs for that part of the problem that you do not have an existing "
 "solution for."
 msgstr ""
+"هنگام نگاشتن نرم‌افزار <trademark class=\"registered\">UNIX</trademark> خود، "
+"به‌طور کلی بررسی برنامه‌های موجود به‌منظور حل کردن بخش‌هایی از مشکل شما، و "
+"نگاشتن برنامهٔ خود تنها برای همان بخش از مشکل که هیچ چاره‌ای برایش ندارید "
+"ایدهٔ خوبی‌ست."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:12075
@@ -22733,17 +22766,17 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:12104
 msgid "Remove the first line from the file;"
-msgstr ""
+msgstr "سطر نخست را از پرونده حذف کنید؛"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:12108
 msgid "Change all unquoted commas to a different character;"
-msgstr ""
+msgstr "تمام ویرگول‌های نقل قول نشده را به یک نویسهٔ متفاوت تغییر دهید؛"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:12113
 msgid "Remove all quotation marks."
-msgstr ""
+msgstr "تمام نشان‌های نقل قول را حذف کنید."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12117
@@ -22752,6 +22785,9 @@ msgid ""
 "first line from the file, but doing so in my own program was very easy, so I "
 "decided to do it and reduce the size of the pipeline."
 msgstr ""
+"به‌طور دقیق بگویم، می‌توانستم از <application>sed</application> برای حذف سطر "
+"نخست از پرونده استفاده کنم، اما انجام آن در برنامهٔ خودم بسیار آسان‌تر بود، "
+"در نتیجه تصمیم گرفتم تا همین کار را انجام دهم و اندازهٔ pipeline را کاهش دهم."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12122
@@ -22761,6 +22797,10 @@ msgid ""
 "would take a lot longer, and I could not reuse it to extract some other "
 "field from some other database."
 msgstr ""
+"به هر حال، نگاشتن برنامه‌ای چون این ۲۰ دقیقه از وقت من را گرفت. نگاشتن "
+"برنامه‌ای که یازدهمین رشته از پروندهٔ <acronym>CSV</acronym> را استخراج کند "
+"زمان بیشتری خواهد برد، و من نمی‌توانم از آن برای استخراج رشته‌‌ای دیگر از "
+"پایگاه داده‌ای دیگر استفادهٔ مجدد کنم."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12128
@@ -22768,21 +22808,23 @@ msgid ""
 "This time I decided to let it do a little more work than a typical tutorial "
 "program would:"
 msgstr ""
+"این بار تصمیم گرفتم بگذارم کمی بیشتر از یک برنامهٔ آموزشی معمولی کار انجام "
+"دهد:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:12133
 msgid "It parses its command line for options;"
-msgstr ""
+msgstr "خط فرمان خود را برای گزینه‌ها تجزیه می‌کند؛"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:12137
 msgid "It displays proper usage if it finds wrong arguments;"
-msgstr ""
+msgstr "در صورت پیدا کردن براهین غلط، کاربرد صحیح را نمایش می‌دهد؛"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:12142
 msgid "It produces meaningful error messages."
-msgstr ""
+msgstr "پیغام‌های خطای معنادار ایجاد می‌کند."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12146
@@ -22848,13 +22890,15 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:12181
 msgid "To get the 11th field of each record, I can now do:"
-msgstr ""
+msgstr "برای گرفتن یازدهمین رشته از هر پیشینه، می‌توانم چنین کنم:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:12183
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>csv '-t;' <replaceable>data.csv</replaceable> | awk '-F;' '{print $11}'</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>csv '-t;' <replaceable>data.csv</replaceable> |"
+" awk '-F;' '{print $11}'</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12185
@@ -22866,11 +22910,17 @@ msgid ""
 "<varname role=\"register\">EDX</varname>, so a check for its sign will give "
 "us a quick decision what to do."
 msgstr ""
+"این کد گزینه‌ها را (به‌غیر از توصیف‌گرهای پرونده) در <varname role=\"register"
+"\">EDX</varname> ذخیره می‌کند: ویرگول در <varname role=\"register\""
+">DH</varname>، جداکنندهٔ جدید در <varname role=\"register\">DL</varname>، و "
+"نشان گزینهٔ <parameter>-p</parameter> در بالاترین بیت از <varname role="
+"\"register\">EDX</varname>، از این رو بررسی برای علامت آن در تصمیم گیری سریع "
+"به ما کمک می‌کند."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12193
 msgid "Here is the code:"
-msgstr ""
+msgstr "کد این است:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12195
@@ -26911,8 +26961,8 @@ msgid ""
 "text is stored in the big–endian order, but the <emphasis>packed decimal</"
 "emphasis> is little–endian."
 msgstr ""
-"معرف متنی یک عدد را به آن عدد تبدیل می‌کند: متن به ترتیبِ اندین بزرگ ذخیره "
-"شده است، اما <emphasis>ده‌دهی بسته‌بندی شده</emphasis> اندین کوچک است."
+"معرف متنی یک عدد را به آن عدد تبدیل می‌کند: متن به ترتیبِ اِندیَن بزرگ ذخیره "
+"شده است، اما <emphasis>ده‌دهی بسته‌بندی شده</emphasis> اِندیَن کوچک است."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14526
@@ -26923,6 +26973,11 @@ msgid ""
 "setting of the <emphasis>direction flag</emphasis> while <function>std</"
 "function> is active."
 msgstr ""
+"برای رفع این نزاع، ما از ابتدا از کد دستورِ <function>std</function> استفاده "
+"می‌کنیم. بعدتر آن را با <function>cld</function> لغو می‌کنیم: این کاملاً مهم "
+"است که ما هنگام فعال بودن <function>std</function>، هرچیزی که ممکن است "
+"وابسته به تنظیمات پیش‌فرض <emphasis>نشان جهت</emphasis> باشد را "
+"<function>call</function> نکنیم."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14533
@@ -26930,6 +26985,8 @@ msgid ""
 "Everything else in this code should be quit eclear, providing you have read "
 "the entire chapter that precedes it."
 msgstr ""
+"هر چیز دیگری که در این کد است باید کاملاً واضح باشد، مشروط بر آنکه فصل قبل "
+"از آن را کامل خوانده باشید."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14537
@@ -26938,11 +26995,14 @@ msgid ""
 "thought and only a little coding. Once we have thought through every tiny "
 "detail, the code almost writes itself."
 msgstr ""
+"این یک مثال کلاسیک از این ضرب‌المثل است که برنامه‌نویسی نیازمند مقدار زیادی "
+"فکر و تنها کمی کد زدن است. همین‌که تمام جزئیات ریز را در نظر گرفتیم، کد "
+"تقریباً‌ خودش را می‌نویسد."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:14544
 msgid "Using <application>pinhole</application>"
-msgstr ""
+msgstr "استفاده از <application>pinhole</application>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14546
