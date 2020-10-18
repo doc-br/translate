@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-18 08:03+0000\n"
+"PO-Revision-Date: 2020-10-18 22:09+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.2.2\n"
+"X-Generator: Weblate 4.3\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -9822,6 +9822,9 @@ msgid ""
 "protocols sockets will handle as <emphasis>address families</emphasis>, and "
 "lists them right before the definition of <varname>sockaddr</varname>:"
 msgstr ""
+"<filename>sys/socket.h</filename> به انواع گوناگونی از سوکت‌های قراردادهایی "
+"اشاره دارد که مانند <emphasis>خانواده‌های نشانی</emphasis> ساماندهی می‌شوند، "
+"و آنها را درست پیش از تعریف <varname>sockaddr</varname> فهرست می‌کند:"
 
 #. (itstool) path: sect4/programlisting
 #: book.translate.xml:5339
@@ -9938,6 +9941,10 @@ msgid ""
 "decides how exactly the vaguely named bytes of <varname>sa_data</varname> "
 "will be used."
 msgstr ""
+"این <emphasis>خانوادهٔ نشانی</emphasis> آمده در رشتهٔ‌ <varname>sockaddr</"
+"varname> در <varname>sa_family</varname> است که در نحوهٔ استفاده از بایت‌های "
+"<varname>sa_data</varname> که به‌طور مبهم نام‌گذاری شده‌اند تصمیم‌گیری "
+"می‌کند."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5396
@@ -9947,6 +9954,10 @@ msgid ""
 "found in <filename>netinet/in.h</filename>, wherever <varname>sockaddr</"
 "varname> is expected:"
 msgstr ""
+"به‌طور خاص، هر زمان که <emphasis>خانوادهٔ نشانی</emphasis> <symbol>AF_INET</"
+"symbol> باشد، می‌توانیم از <varname>struct sockaddr_in</varname> موجود در "
+"<filename>netinet/in.h</filename> استفاده کنیم، هر کجا که <varname>sockaddr</"
+"varname> انتظار می‌رود:"
 
 #. (itstool) path: sect4/programlisting
 #: book.translate.xml:5402
@@ -10052,6 +10063,15 @@ msgid ""
 "\">192.43.244.18</systemitem>, which is the time server of US federal "
 "government (<systemitem class=\"fqdomainname\">time.nist.gov</systemitem>)."
 msgstr ""
+"حال، بگذارید سعی کنیم آن را پر کنیم. بیایید فرض کنیم در حال نوشتن یک کارخواه "
+"برای قرارداد <emphasis>daytime</emphasis> هستیم، که به‌سادگی اعلام می‌کند که "
+"کارساز آن رشتهٔ متنی‌ای می‌نویسد که داده‌ و زمان جاری را به درگاه شماره ۱۳ "
+"نشان می‌دهد. می‌خواهیم از <acronym>TCP/IP</acronym> استفاده کنیم، در نتیجه "
+"باید <constant>AF_INET</constant> را در رشتهٔ خانوادهٔ نشانی تعیین کنیم. "
+"<constant>AF_INET</constant> به‌عنوان <constant>2</constant> تعریف می‌شود. "
+"اجازه دهید از نشانی <systemitem class=\"ipaddress\">192.43.244.18</"
+"systemitem> استفاده کنیم، که کارساز زمان حکومت فدرال ایالات متحده آمریکا است "
+"(<systemitem class=\"fqdomainname\">time.nist.gov</systemitem>)."
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -10141,6 +10161,10 @@ msgid ""
 "convenient notation of expressing a 32-bit integer by listing all of its 8-"
 "bit bytes, starting with the <emphasis>most significant</emphasis> one."
 msgstr ""
+"<systemitem class=\"ipaddress\">192.43.244.18</systemitem> تنها یک نماد "
+"مناسب جهت نشان دادن عدد صحیح‌ ۳۲ بیتی است، که با فهرست کردن تمام بایت‌های ۸ "
+"بیتی خود به این مهم می‌رسد، و با <emphasis>مهم‌ترین</emphasis> آن آغاز "
+"می‌شود."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5500
@@ -10150,6 +10174,10 @@ msgid ""
 "entity, but as a sequence of 2 bytes. Similarly, it stores 32-bit integers "
 "as a sequence of 4 bytes."
 msgstr ""
+"تاکنون، <varname>sockaddr</varname> را به‌مثابه یک امر انتزاعی در نظر گرفته‌"
+"ایم. رایانهٔ ما اعداد صحیح <varname>کوتاه</varname> را به‌صورت یک دادهٔ ۱۶ "
+"بیتی ذخیره نمی‌کند، بلکه آنها را به‌شکل توالی‌ای از ۲ بایت ذخیره می‌کند. به‌"
+"همین شکل، اعداد صحیح ۳۲ بیتی را به‌صورت توالی‌ای از ۴ بایت ذخیره می‌کند."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5506
@@ -10299,6 +10327,10 @@ msgid ""
 "in assembly language). Alas, you cannot get away with it that easily when "
 "coding for sockets."
 msgstr ""
+"به‌طور معمول، برای نوشتن کد انتقال‌پذیر، برنامه‌نویسان وانمود می‌کنند این "
+"تفاوت‌ها وجود ندارند. و با آنها کنار می‌آیند (به‌غیر از زمانی‌که در زبان "
+"اسمبلی کد می‌زنند). متأسفانه، هنگام کد زدن برای سوکت‌ها نمی‌توانید از این "
+"تفاوت‌ها چشم‌پوشی کنید."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5574
@@ -10313,6 +10345,9 @@ msgid ""
 "(<acronym>MSB</acronym>) or <emphasis>least significant byte</emphasis> "
 "(<acronym>LSB</acronym>) first."
 msgstr ""
+"زیرا هنگام ارتباط با سایر رایانه‌ها، معمولاً‌ نمی‌دانید اگر ابتدا دادهٔ "
+"<emphasis>مهم‌ترین بایت</emphasis> (<acronym>MSB</acronym>) یا <emphasis>کم "
+"اهمیت‌ترین بایت</emphasis> (<acronym>LSB</acronym>) را ذخیره می‌کند."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5582
@@ -10340,6 +10375,14 @@ msgid ""
 "<varname>sa_len</varname> and use 2 bytes for <varname>sa_family</varname>, "
 "and expect the data in whatever order is native to the computer)."
 msgstr ""
+"گرچه آن جواب ممکن است ابتدا شما را متعجب کند، به‌یاد داشه باشید که رابط سوکت‌"
+"های عمومی تنها رشته‌های <varname>sa_len</varname> و <varname>sa_family</"
+"varname> از ساختمان <varname>sockaddr</varname> را می‌شناسد. نیازی به نگرانی "
+"دربارهٔ‌ ترتیب بایت نیست (البته، در FreeBSD رشتهٔ <varname>sa_family</"
+"varname> تنها یک ۱ بایت است، اما بسیاری از سامانه‌های <trademark class="
+"\"registered\">UNIX</trademark> فاقد <varname>sa_len</varname> هستند و از ۲ "
+"بایت برای <varname>sa_family</varname> استفاده می‌کنند، و انتظار دارند که "
+"داده در هر ترتیبی که باشد آشنا با رایانه است)."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5599
@@ -10348,6 +10391,9 @@ msgid ""
 "sockets goes. Depending on the <emphasis>address family</emphasis>, sockets "
 "just forwards that data to its destination."
 msgstr ""
+"اما باقی داده تا آنجا که سوکت‌ها بتوانند فقط <varname>sa_data[14]</varname> "
+"است. بسته به <emphasis>خانوادهٔ نشانی</emphasis>، سوکت‌ها آن داده را به "
+"مقصدش ارسال می‌کند."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5604
@@ -10365,6 +10411,9 @@ msgid ""
 "Similarly, we enter the <acronym>IP</acronym> address to tell everyone on "
 "the way where to send our data to. Sockets, again, only forwards it as data."
 msgstr ""
+"به همین ترتیب، نشانی <acronym>IP</acronym> را وارد می‌کنیم تا به همهٔ کسانی‌"
+"که در مسیر هستند مکان مورد نظر برای ارسال داده‌هایمان را بگوییم. سوکت‌ها، "
+"دوباره، آن را تنها به‌صورت داده ارسال می‌کنند."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5616
@@ -10374,6 +10423,10 @@ msgid ""
 "used by our computer and a conventional byte order to send the data in to "
 "the other computer."
 msgstr ""
+"به‌همین خاطر، ما (<emphasis>برنامه‌نویسان</emphasis>، نه "
+"<emphasis>سوکت‌ها</emphasis>) بین ترتیب بایتی که توسط رایانه‌هایمان استفاده "
+"می‌شود و ترتیب قراردادی بایتی که برای ارسال داده‌ به سایر رایانه‌ها استفاده "
+"می‌شود تمایز قائل شده‌ایم."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5622
@@ -10381,6 +10434,8 @@ msgid ""
 "We will call the byte order our computer uses the <emphasis>host byte order</"
 "emphasis>, or just the <emphasis>host order</emphasis>."
 msgstr ""
+"ما ترتیب بایتی که رایانهٔ ما به‌کار می‌برد را <emphasis>ترتیب بایت "
+"میزبان</emphasis>، یا فقط <emphasis>ترتیب میزبان</emphasis> می‌نامیم."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5626
@@ -10390,6 +10445,10 @@ msgid ""
 "refer to as the <emphasis>network byte order</emphasis>, or simply the "
 "<emphasis>network order</emphasis>."
 msgstr ""
+"قراردادی برای ارسال دادهٔ چندبایتی به‌وسیلهٔ "
+"<acronym>IP</acronym><emphasis><acronym>MSB</acronym> first</emphasis> وجود "
+"دارد. این قرارداد را، <emphasis>ترتیب بایت شبکه</emphasis>، یا به عبارت ساده "
+"<emphasis>ترتیب شبکه</emphasis> می‌نامیم."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5633
@@ -10397,6 +10456,8 @@ msgid ""
 "Now, if we compiled the above code for an Intel based computer, our "
 "<emphasis>host byte order</emphasis> would produce:"
 msgstr ""
+"حال، چنانچه کد بالا را همگردانی کنیم، <emphasis>ترتیب بایت میزبان</emphasis> "
+"ما چنین چیزی تولید می‌کند:"
 
 #. (itstool) path: sect4/mediaobject
 #: book.translate.xml:5637
@@ -10405,6 +10466,9 @@ msgid ""
 "<textobject> <_:literallayout-1/> </textobject> <textobject> <phrase>Host "
 "byte order on an Intel system</phrase> </textobject>"
 msgstr ""
+"<imageobject> <imagedata fileref=\"sockets/sainlsb\"/> </imageobject> "
+"<textobject> <_:literallayout-1/> </textobject> <textobject> <phrase>Host "
+"byte order on an Intel system</phrase> </textobject>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5660
@@ -10412,6 +10476,8 @@ msgid ""
 "But the <emphasis>network byte order</emphasis> requires that we store the "
 "data <acronym>MSB</acronym> first:"
 msgstr ""
+"اما <emphasis>ترتیب بایت شبکه</emphasis> مستلزم آن است که ما ابتدا دادهٔ "
+"<acronym>MSB</acronym> را ذخیره کنیم:"
 
 #. (itstool) path: sect4/mediaobject
 #: book.translate.xml:5664
@@ -10420,6 +10486,9 @@ msgid ""
 "<textobject> <_:literallayout-1/> </textobject> <textobject> <phrase>Network "
 "byte order</phrase> </textobject>"
 msgstr ""
+"<imageobject> <imagedata fileref=\"sockets/sainmsb\"/> </imageobject> "
+"<textobject> <_:literallayout-1/> </textobject> <textobject> <phrase>Network "
+"byte order</phrase> </textobject>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5687
@@ -10427,6 +10496,8 @@ msgid ""
 "Unfortunately, our <emphasis>host order</emphasis> is the exact opposite of "
 "the <emphasis>network order</emphasis>."
 msgstr ""
+"متأسفانه، <emphasis>ترتیب میزبان</emphasis> ما دقیقاً نقطه مقابل "
+"<emphasis>ترتیب شبکه</emphasis> است."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5691
@@ -21523,6 +21594,9 @@ msgid ""
 "<emphasis>finite state machine</emphasis> is useful in software design as "
 "well."
 msgstr ""
+"به همین خاطر، تمام نرم‌افزار اساساً دنباله‌ای از راهنماهای حالت برای "
+"ریزپردازنده‌هاست. با این وجود، مفهوم <emphasis>دستگاه حالت متناهی</emphasis> "
+"در طراحی نرم‌افزار نیز مفید است."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11410
@@ -21531,6 +21605,10 @@ msgid ""
 "emphasis> with three possible states. We could call them states 0-2, but it "
 "will make our life easier if we give them symbolic names:"
 msgstr ""
+"تبدیل‌کنندهٔ‌ پروندهٔ متنی ما می‌تواند به‌صورت یک <emphasis>دستگاه حالت "
+"متناهی</emphasis> با سه حالت ممکن طراحی شود. ما می‌توانستیم آنها را حالات "
+"صفر تا دو بنامیم، اما اگر به آنها نام‌های نمادین بدهیم زندگی ما را آسان‌تر "
+"می‌کند:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11417
