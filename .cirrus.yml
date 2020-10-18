@@ -4,7 +4,7 @@ freebsd_instance:
 task:
   name: pt_BR
   env:
-    SVVNREV: 54372
+    SVVNREV: 54608
     DOCLANG: pt_BR.ISO8859-1
   setup_script:
     - pkg install -y docproj git
