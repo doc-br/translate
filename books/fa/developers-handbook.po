@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-20 13:46+0000\n"
+"PO-Revision-Date: 2020-10-20 14:06+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -21708,6 +21708,8 @@ msgid ""
 "returns in a row. We discard the input, we output a line feed, and leave the "
 "state unchanged."
 msgstr ""
+"اگر ورودی یک سرسطر باشد، ما دو (یا بیشتر) سرسطر پشت سر هم دریافت کرده‌ایم. "
+"ورودی را حذف می‌کنیم، یک نوسطر ایجاد می‌کنیم، و حالت را تغییر نمی‌دهیم."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11472
@@ -21717,6 +21719,10 @@ msgid ""
 "above – if we tried to combine them, we would be outputting two line feeds "
 "instead of one."
 msgstr ""
+"اگر ورودی یک نوسطر باشد، نوسطر را ایجاد می‌کنیم و حالت را به "
+"<symbol>ordinary</symbol> تغییر می‌دهیم. توجه داشته باشید که این همانند مورد "
+"بالا نیست - اگر سعی می‌کردیم آنها را ترکیب کنیم، به‌جای یک نوسطر دو نوسطر "
+"ایجاد می‌کردیم."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11480
