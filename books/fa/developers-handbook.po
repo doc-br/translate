@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-18 22:09+0000\n"
+"PO-Revision-Date: 2020-10-20 11:30+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -10404,6 +10404,11 @@ msgid ""
 "is expecting from us. Either way, sockets only has to forward the port "
 "number as data. It does not interpret it in any way."
 msgstr ""
+"در واقع، زمانی‌که شمارهٔ یک درگاه را وارد می‌کنیم، به این دلیل است که می‌"
+"خواهیم رایانهٔ دیگر بداند ما کدام سرویس را می‌خواهیم. و، زمانی‌که کارساز "
+"باشیم، شمارهٔ درگاه را می‌خوانیم و می‌دانیم رایانهٔ دیگر انتظار کدام سرویس "
+"را از ما دارد. در هر صورت، سوکت‌ تنها کافیست شماره درگاه را به‌عنوان داده "
+"ارسال کند. به‌هر حال آن را تفسیر نخواهد کرد."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5612
@@ -10529,6 +10534,10 @@ msgid ""
 "the way to do it (e.g., when programming in assembly language). In most "
 "cases, however, it can cause a problem."
 msgstr ""
+"با این کار همگردانمان را <emphasis>فریب می‌دهیم</emphasis> تا داده‌ها را در "
+"<emphasis>ترتیب بایت شبکه</emphasis> ذخیره کند. در برخی موارد، این درست‌ترین "
+"راه انجام آن است (برای مثال، هنگام برنامه‌نویسی با زبان اسمبلی). در اکثر "
+"موارد، می‌تواند باعث مشکل شود."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5706
@@ -10538,6 +10547,10 @@ msgid ""
 "your constants in reverse and force them to the <emphasis>network byte "
 "order</emphasis>. It works well."
 msgstr ""
+"فرض کنید، برنامه‌ای مبتنی بر سوکت‌ها به زبان C نوشته‌اید. می‌دانید که قرار "
+"است بر روی <trademark class=\"registered\">Pentium</trademark> اجرا شود، در "
+"نتیجه تمام مقادیر ثابت خود را به‌طور وارونه وارد می‌کنید و آنها را در "
+"<emphasis>ترتیب بایت شبکه</emphasis> تحمیل می‌کنید. به‌خوبی کار می‌کند."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5712
@@ -10549,6 +10562,12 @@ msgid ""
 "recompile all your software. All of your software continues to perform well, "
 "except the one program you wrote."
 msgstr ""
+"سپس، یک روزی، <trademark class=\"registered\">Pentium</trademark> قدیمی و "
+"قابل اعتماد شما تبدیل به یک <trademark class=\"registered\">Pentium</"
+"trademark> قدیمی و از کار افتاده می‌شود. آن را با سامانه‌ای که "
+"<emphasis>ترتیب میزبانش</emphasis> مانند <emphasis>ترتیب شبکه</emphasis> است "
+"جایگزین می‌کنید. باید تمام نرم‌افزارتان را مجدد همگردانی کنید. تمام نرم‌"
+"افزار شما به‌خوبی کار می‌کند، به‌جز برنامه‌ای که نوشتید."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5719
