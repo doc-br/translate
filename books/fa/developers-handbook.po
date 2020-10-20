@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-20 14:06+0000\n"
+"PO-Revision-Date: 2020-10-20 16:43+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -10579,6 +10579,12 @@ msgid ""
 "the other traditional ceremonies of trying to figure out why something that "
 "has worked so well is suddenly not working at all."
 msgstr ""
+"از آن موقع فراموش کرده‌اید که تمام مقادیر ثابت خود را بر خلاف "
+"<emphasis>ترتیب میزبان</emphasis> مجبور کرده‌اید. شما زمان زیادی را صرف کندن "
+"موهای سرتان کرده‌اید، نام تمام خدایانی ‌که تابحال شنیده‌اید را نام برده‌اید ("
+"و چندتایی را از خودتان ساختید)، با چوب لاستیکی به مانیتور خود ضربه زده‌اید، "
+"و تمامی تشریفات سنتی برای فهمیدن علت خرابی ناگهانی چیزی که داشت به‌درستی کار "
+"می‌کرد را به جا می‌آورید."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5728
@@ -10603,6 +10609,17 @@ msgid ""
 "<citerefentry><refentrytitle>ntohl</refentrytitle><manvolnum>3</manvolnum></"
 "citerefentry> C functions to go the other way."
 msgstr ""
+"خوشبختانه، شما اولین کسی نیستید که با این مشکل مواجه شده است. شخص دیگری "
+"<citerefentry><refentrytitle>htons</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry> و "
+"<citerefentry><refentrytitle>htonl</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry> از توابع C را برای تبدیل <varname>short</varname> و "
+"<varname>long</varname> به ترتیب از <emphasis>ترتیب بایت میزبان</emphasis> "
+"به <emphasis>ترتیب بایت شبکه</emphasis> ساخته‌ است، و توابع "
+"<citerefentry><refentrytitle>ntohs</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry> و "
+"<citerefentry><refentrytitle>ntohl</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry> را هم برای راه دیگری ساخته است."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5740
@@ -10611,6 +10628,9 @@ msgid ""
 "do nothing. On <emphasis><acronym>LSB</acronym>-first</emphasis> systems "
 "they convert values to the proper order."
 msgstr ""
+"در سامانه‌های <emphasis><acronym>MSB</acronym>-first</emphasis> این توابع "
+"هیچ کاری نمی‌کنند. در سامانه‌های <emphasis><acronym>LSB</acronym>-first</"
+"emphasis> آنها مقادیر را به ترتیب مناسب تبدیل می‌کنند."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5745
@@ -10636,6 +10656,11 @@ msgid ""
 "<emphasis>address</emphasis>), then, after someone answers, asking for the "
 "person in charge of wingdings (the <emphasis>port</emphasis>)."
 msgstr ""
+"معمولاً، اتصال به کارساز توسط کارخواه صورت می‌گیرد. کارخواه کارساز مورد نظرش "
+"را می‌شناسد: نشانی <acronym>IP</acronym>، و <emphasis>درگاهی</emphasis> که "
+"کارساز در آن هست را می‌داند. همانند برداشتن تلفن و گرفتن شماره است "
+"(<emphasis>نشانی</emphasis>)، سپس، پس از آنکه شخصی پاسخ داد، سراغ شخصی که "
+"مسئول رویداد است را می‌گیرید (<emphasis>درگاه</emphasis>)."
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:5764
@@ -10649,6 +10674,9 @@ msgid ""
 "port on a remote system. It uses <citerefentry><refentrytitle>connect</"
 "refentrytitle><manvolnum>2</manvolnum></citerefentry>:"
 msgstr ""
+"همین که کارخواه یک سوکت ساخت، نیاز دارد آن را به یک درگاه مشخص در سامانهٔ از "
+"راه دور متصل کند. از <citerefentry><refentrytitle>connect</refentrytitle><man"
+"volnum>2</manvolnum></citerefentry> استفاده می‌کند:"
 
 #. (itstool) path: sect4/programlisting
 #: book.translate.xml:5770
@@ -10665,6 +10693,11 @@ msgid ""
 "extensively. Finally, <varname>namelen</varname> informs the system how many "
 "bytes are in our <varname>sockaddr</varname> structure."
 msgstr ""
+"برهان <varname>s</varname> یک سوکت است، برای مثال، مقدار بازگشتی توسط تابع "
+"<function>socket</function>. <varname>name</varname> اشاره‌گری به "
+"<varname>sockaddr</varname> است، ساختاری که به‌طور مفصل از آن صحبت کردیم. در "
+"پایان، <varname>namelen</varname> سامانه را از تعداد بایت‌های موجود در "
+"ساختار <varname>sockaddr</varname> ما آگاه می‌سازد."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5780
@@ -10673,6 +10706,9 @@ msgid ""
 "constant>. Otherwise it returns <constant>-1</constant> and stores the error "
 "code in <varname>errno</varname>."
 msgstr ""
+"چنانچه <function>connect</function> موفقیت آمیز باشد، مقدار <constant>0</"
+"constant> را برمی‌گرداند. در غیر اینصورت مقدار <constant>-1</constant> را "
+"برمی‌گرداند و کد خطا را در <varname>errno</varname> ذخیره می‌کند."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5785
@@ -10683,6 +10719,11 @@ msgid ""
 "may not have a server listening at the specified port. Or it may outright "
 "<emphasis>refuse</emphasis> any request for specific code."
 msgstr ""
+"دلایل بسیاری برای کار نکردن تابع <function>connect</function> وجود دارد. "
+"برای مثال، در تلاش برای اتصال به اینترنت، نشانی <acronym>IP</acronym> ممکن "
+"است وجود نداشته باشد، یا ممکن است پایین باشد، یا بسیار شلوغ، یا ممکن است "
+"کارساز در درگاه معینی گوش ندهد. یا ممکن است هرگونه درخواست کد خاص را به طور "
+"کامل <emphasis>رد کند</emphasis>."
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:5796
@@ -23648,6 +23689,8 @@ msgid ""
 "all the other filters we have written so far, so I am only going to show you "
 "its inner loop:"
 msgstr ""
+"نوشتن چنین فیلتری بسیار ساده است. اکثر آن شبیه به تمام فیلترهایی است که "
+"تابحال نوشته‌ایم، در نتیجه من فقط حلقه‌های درونی آن را نشان شما خواهم داد:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:12506
@@ -23671,6 +23714,8 @@ msgid ""
 "Because this filter works with raw data, it is unlikely to be used "
 "interactively."
 msgstr ""
+"چنانکه این فیلتر با داده‌های خام کار می‌کند، بعید است از آن به‌صورت تعاملی "
+"استفاده شود."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12515
