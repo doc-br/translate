@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-20 11:30+0000\n"
+"PO-Revision-Date: 2020-10-20 13:46+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -21650,6 +21650,8 @@ msgid ""
 "Our program will start in the <symbol>ordinary</symbol> state. During this "
 "state, the program action depends on its input as follows:"
 msgstr ""
+"برنامهٔ ما در حالت <symbol>ordinary</symbol> شروع می‌شود. در حین این حالت، "
+"اعمال برنامه وابسته به ورودی آن است، مانند زیر:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11435
@@ -21657,6 +21659,8 @@ msgid ""
 "If the input is anything other than a carriage return or line feed, the "
 "input is simply passed on to the output. The state remains unchanged."
 msgstr ""
+"اگر ورودی چیزی جز سرسطر یا نوسطر باشد، به‌سادگی به خروجی منتقل می‌شود. حالت "
+"بدون تغییر می‌ماند."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11441
@@ -21664,6 +21668,8 @@ msgid ""
 "If the input is a carriage return, the state is changed to <symbol>cr</"
 "symbol>. The input is then discarded, i.e., no output is made."
 msgstr ""
+"اگر ورودی یک سرسطر باشد، حالت به <symbol>cr</symbol> تغییر می‌کند. سپس ورودی "
+"حذف می‌شود، برای مثال، هیچ خروجی‌ای ایجاد نشده است."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11447
@@ -21671,6 +21677,8 @@ msgid ""
 "If the input is a line feed, the state is changed to <symbol>lf</symbol>. "
 "The input is then discarded."
 msgstr ""
+"اگر ورودی یک نوسطر باشد، حالت به <symbol>lf</symbol> تغییر می‌کند. سپس ورودی "
+"حذف می‌شود."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11452
@@ -21679,6 +21687,9 @@ msgid ""
 "input was a carriage return, which was unprocessed. What our software does "
 "in this state again depends on the current input:"
 msgstr ""
+"هر زمان که ما در حالت <symbol>cr</symbol> هستیم، به این خاطر است که آخرین "
+"ورودی یک سرسطر بوده است، که پردازش نشده است. آنچه که نرم‌افزار ما در این "
+"حالت انجام می‌دهد دوباره به ورودی فعلی بستگی است:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11459
@@ -21687,6 +21698,8 @@ msgid ""
 "line feed, then output the input, then change the state to <symbol>ordinary</"
 "symbol>."
 msgstr ""
+"اگر ورودی چیز به‌غیر از یک سرسطر یا نوسطر باشد، یک نوسطر ایجاد کنید، سپس "
+"ورودی را ایجاد کنید، سپس حالت را به <symbol>ordinary</symbol> تغییر دهید."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11465
