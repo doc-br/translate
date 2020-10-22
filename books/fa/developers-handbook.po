@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-22 01:21+0000\n"
+"PO-Revision-Date: 2020-10-22 16:12+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -11020,6 +11020,11 @@ msgid ""
 "you make sure your call waiting is activated, so you can hear the phone ring "
 "even while you are talking to someone."
 msgstr ""
+"در ادامهٔ قیاس تلفن دفتر، پس از آنکه موقعیت تلفن اضافی‌ای که در آن قرار "
+"دارید را به گردانندهٔ مرکزی تلفن اعلام کردید، اکنون وارد دفترتان می‌شوید، و "
+"مطمئن می‌شوید که تلفتنتان وصل و صدای زنگش روشن است. همچنین، مطمئن می‌شوید "
+"انتظار تماستان فعال است، در نتیجه می‌توانید زنگ تلفن را حتی زمانی‌که در حال "
+"مکالمه هستید نیز بشنوید."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5940
@@ -11045,6 +11050,9 @@ msgid ""
 "In other words, it determines the maximum size of the queue of pending "
 "connections."
 msgstr ""
+"در اینجا، هنگامی‌که شما مشغول پردازش آخرین درخواست هستید، متغیر "
+"<varname>backlog</varname> به سوکت‌ها می‌گوید چه تعداد درخواست ورودی را "
+"بپذیرد. به بیان دیگر، اندازه حداکثری صف‌ اتصالات معلق را اندازه‌گیری می‌کند."
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:5953
@@ -11086,6 +11094,9 @@ msgid ""
 "necessary because in this case it is the socket that fills out "
 "<varname>addr</varname>, the <varname>sockaddr_in</varname> structure."
 msgstr ""
+"توجه داشته باشید که این بار <varname>addrlen</varname> یک اشاره‌گر است. این "
+"لازم است زیرا در این مورد سوکت است که <varname>addr</varname> را پر می‌کند، "
+"ساختار <varname>sockaddr_in</varname>."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5970
@@ -11094,6 +11105,9 @@ msgid ""
 "returns a <emphasis>new socket</emphasis>. You will use this new socket to "
 "communicate with the client."
 msgstr ""
+"مقدار بازگشتی یک عدد صحیح است. در واقع، <function>accept</function> یک "
+"<emphasis>سوکت جدید</emphasis> را برمی‌گرداند. شما این سوکت جدید را برای "
+"ارتباط با کارخواه به‌کار خواهید برد."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5975
@@ -11113,6 +11127,9 @@ msgid ""
 "We cannot pass it to <function>listen</function> again, trying to accept "
 "additional connections."
 msgstr ""
+"اکنون، سوکت جدید تنها برای ارتباطات استفاده می‌شود. به‌طور کامل متصل شده "
+"است. نمی‌توانیم آن را دوباره به <function>listen</function> بدهیم، و سعی "
+"کنیم اتصالات جدید را بپذیریم."
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:5987
@@ -11136,6 +11153,10 @@ msgid ""
 "binding the port. The main process then exits and returns control to the "
 "<application>shell</application> (or whatever program invoked it)."
 msgstr ""
+"بهترین راه برای رسیدن به این مهم، ساخت یک <emphasis>فرایند فرزند</emphasis> "
+"پس از پیوست دادن درگاه است. سپس فرایند اصلی خارج شده و نظارت را به "
+"<application>shell</application> برمی‌گرداند (یا هر برنامه‌ای که آن را "
+"فراخوانده است)."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:6000
@@ -11143,6 +11164,9 @@ msgid ""
 "The child calls <function>listen</function>, then starts an endless loop, "
 "which accepts a connection, serves it, and eventually closes its socket."
 msgstr ""
+"فرایند فرزند <function>listen</function> را فراخوانی می‌کند، سپس حلقه‌ای "
+"نامتناهی را آغاز می‌کند، که اتصال را می‌پذیرد، به آن رسیدگی می‌کند، و نهایت "
+"سوکت آن را می‌بندد."
 
 #. (itstool) path: sect4/programlisting
 #: book.translate.xml:6004
@@ -17502,6 +17526,10 @@ msgid ""
 "<command>show lockedvnods</command> in DDB. This option has a measurable "
 "performance impact."
 msgstr ""
+"<literal>options DEBUG_VFS_LOCKS</literal>: نقاط اکتساب قفل را برای قفل‌های "
+"lockmgr/vnode ردگیری می‌کند، مقدار اطلاعاتی که توسط <command>show "
+"lockedvnods</command> در DDB نمایش داده می‌شود را بسط می‌دهد. این گزینه اثری "
+"سنجش‌پذیر بر روی کارکرد دارد."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9365
@@ -17514,6 +17542,14 @@ msgid ""
 "manvolnum></citerefentry>. This option has a significant performance impact, "
 "but can be very helpful in debugging kernel memory corruption bugs."
 msgstr ""
+"<literal>options DEBUG_MEMGUARD</literal>: یک جایگزین برای تخصیص دهندهٔ "
+"حافظهٔ هستهٔ "
+"<citerefentry><refentrytitle>malloc</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry> است که از سامانهٔ ماشین مجازی (VM) برای تشخیص خواندن‌ها و "
+"نوشتن‌ها از حافظهٔ تخیصی پس از آزادی استفاده می‌کند. جزئیات را می‌توان در <ci"
+"terefentry><refentrytitle>memguard</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry> یافت. این گزینه تأثیر قابل توجهی بر روی کارایی دارد، اما می‌"
+"تواند در اشکال‌زدایی اشکال‌های خرابی حافظهٔ هسته بسیار کاربردی باشد."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9374
@@ -21838,6 +21874,10 @@ msgid ""
 "<symbol>ordinary</symbol>. This is exactly the same action as in the "
 "<symbol>cr</symbol> state upon receiving the same kind of input."
 msgstr ""
+"چنانچه ورودی چیزی به‌غیر از سرسطر یا نوسطر باشد، ما یک نوسطر ایجاد می‌کنیم، "
+"سپس ورودی را ایجاد می‌کنیم، سپس حالت را به <symbol>ordinary</symbol> تغییر "
+"می‌دهیم. این دقیقاً همان عملی است که هنگام دریافت ورودی مشابه در حالت "
+"<symbol>cr</symbol> وجود دارد."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11500
