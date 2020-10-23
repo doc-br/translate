@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-10-18 10:51-0300\n"
-"PO-Revision-Date: 2020-07-27 10:43+0000\n"
+"PO-Revision-Date: 2020-10-23 15:19+0000\n"
 "Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
-"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/freebsd-"
-"doc/boooks_faq/es/>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/boooks_faq/es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.3\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -246,16 +246,12 @@ msgstr ""
 
 #. (itstool) path: info/releaseinfo
 #: book.translate.xml:143
-#, fuzzy
-#| msgid ""
-#| "$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 54295 2020-06-25 "
-#| "18:58:26Z gjb $"
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 54391 2020-08-03 07:36:20Z "
 "blackend $"
 msgstr ""
-"$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 54295 2020-06-25 18:58:26Z "
-"gjb $"
+"$FreeBSD: head/en_US.ISO8859-1/books/faq/book.xml 54391 2020-08-03 07:36:20Z "
+"blackend $"
 
 #. (itstool) path: abstract/para
 #: book.translate.xml:146
@@ -1121,25 +1117,15 @@ msgstr ""
 
 #. (itstool) path: question/para
 #: book.translate.xml:667
-#, fuzzy
-#| msgid ""
-#| "Is the documentation available in other formats, such as plain text "
-#| "(ASCII), or <trademark class=\"registered\">PostScript</trademark>?"
 msgid ""
 "Is the documentation available in other formats, such as plain text (ASCII), "
 "or PDF?"
 msgstr ""
 "¿Esta la documentación disponible en otros formatos, tales como texto plano "
-"(ASCII), o <trademark class=\"registered\">PostScript</trademark>?"
+"(ASCII), o PDF?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:672
-#, fuzzy
-#| msgid ""
-#| "Yes. The documentation is available in a number of different formats and "
-#| "compression schemes on the FreeBSD FTP site, in the <link xlink:href="
-#| "\"https://download.freebsd.org/ftp/doc/\">/pub/FreeBSD/doc/</link> "
-#| "directory."
 msgid ""
 "Yes. The documentation is available in a number of different formats and "
 "compression schemes on the FreeBSD FTP site, in the <link xlink:href="
@@ -1147,7 +1133,7 @@ msgid ""
 msgstr ""
 "Sí, La documentación está disponible en varios formatos y esquemas de "
 "compresión en el sitio FTP de FreeBSD, en el directorio <link xlink:href="
-"\"https://download.freebsd.org/ftp/doc/\">/pub/FreeBSD/doc/</link>."
+"\"https://download.freebsd.org/ftp/doc/\">/ftp/doc/</link>."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:677
@@ -1491,21 +1477,14 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:910
-#, fuzzy
-#| msgid ""
-#| "So the <trademark class=\"registered\">PostScript</trademark> version of "
-#| "the Handbook, compressed using <literal>bzip2</literal> will be stored in "
-#| "a file called <filename>book.ps.bz2</filename> in the <filename>handbook/"
-#| "</filename> directory."
 msgid ""
 "So the PDF version of the Handbook, compressed using <literal>bzip2</"
 "literal> will be stored in a file called <filename>book.pdf.bz2</filename> "
 "in the <filename>handbook/</filename> directory."
 msgstr ""
-"Asi la versión <trademark class=\"registered\">PostScript</trademark> del "
-"manual, comprimida usando <literal>bzip2</literal> sera guardada en un "
-"archivo llamado <filename>book.ps.bz2</filename> en el directorio "
-"<filename>handbook/</filename>."
+"Asi la versión PDF del manual, comprimida usando <literal>bzip2</literal> "
+"sera guardada en un archivo llamado <filename>book.pdf</filename> en el "
+"directorio <filename>handbook/</filename>."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:920
@@ -3808,19 +3787,15 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2273
-#, fuzzy
-#| msgid ""
-#| "Use Subversion if custom patches to the ports tree are needed. Refer to "
-#| "<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
-#| "svn.html\">Using Subversion</link> for details."
 msgid ""
 "Use Subversion if custom patches to the ports tree are needed or if running "
 "FreeBSD-CURRENT. Refer to <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US."
 "ISO8859-1/books/handbook/svn.html\">Using Subversion</link> for details."
 msgstr ""
-"Use Subversion si necesita parches personalizados para el árbol de ports. "
-"Vea <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/"
-"svn.html\">Usando Subversion</link> para más detalles."
+"Use Subversion si necesita parches personalizados para el árbol de ports o "
+"si está ejecutando FreeBSD-CURRENT. Vea <link xlink:href=\"@@URL_RELPREFIX@@/"
+"doc/en_US.ISO8859-1/books/handbook/svn.html\">Usando Subversion</link> para "
+"más detalles."
 
 #. (itstool) path: question/para
 #: book.translate.xml:2284
