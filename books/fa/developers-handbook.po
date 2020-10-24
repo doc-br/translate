@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-23 00:46+0000\n"
+"PO-Revision-Date: 2020-10-24 19:52+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -10832,7 +10832,7 @@ msgid ""
 "Go ahead, enter it in your editor, save it as <filename>daytime.c</"
 "filename>, then compile and run it:"
 msgstr ""
-"بفرمایید، آن را در ویرایشگر خود وارد کنید،به‌عنوان <filename>daytime.c</"
+"بفرمایید، آن را در ویرایشگر خود وارد کنید، به‌عنوان <filename>daytime.c</"
 "filename> ذخیره کنید، سپس آن را همگردانی و اجرا کنید:"
 
 #. (itstool) path: sect4/screen
@@ -11384,6 +11384,14 @@ msgid ""
 "constant. As long as it is a zero, they will optimize the entire conditional "
 "statement out of the code."
 msgstr ""
+"مقدار آن <constant>0</constant> است. از آنجا که ما از <function>bzero</"
+"function> در تمام ساختمان خود استفاده کرده‌ایم، تنظیم کردن دوبارهٔ‌ آن به "
+"<constant>0</constant> بیهوده است. اما اگر کدمان را به سامانهٔ دیگری که "
+"<symbol>INADDR_ANY</symbol> ممکن است در آن صفر نباشد پورت کنیم، لازم است آن "
+"را به <varname>sa.sin_addr.s_addr</varname> تخصیص دهیم. بیشتر همگردان‌های C "
+"آنقدر هوشمند هستند که <symbol>INADDR_ANY</symbol> را به‌عنوان یک مقدار ثابت "
+"تشخیص دهند. تا زمانی‌که صفر باشد، آنها تمام حکم شرطی را خارج از کد بهینه‌"
+"سازی می‌کنند."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:6113
@@ -11395,6 +11403,13 @@ msgid ""
 "calls <function>close</function>, then it returns <constant>0</constant> to "
 "inform its own parent it had terminated successfully."
 msgstr ""
+"پس از آنکه <function>bind</function> را با موفقیت فراخوانی کردیم، آماده‌ایم "
+"تا به یک <emphasis>daemon</emphasis> تبدیل شویم: از <function>fork</"
+"function> برای ساختن یک فرایند فرزند استفاده می‌کنیم. در هر دو، یعنی والد و "
+"فرزند، سوکت ما متغیر <varname>s</varname> هست. فرایند والد به آن نیاز نخواهد "
+"داشت، از این رو <function>close</function> را فراخوانی می‌کند، سپس "
+"<constant>0</constant> را برمی‌گرداند تا به والد خود اطلاع دهد که با موفقیت "
+"از بین رفته است."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:6123
@@ -11405,6 +11420,11 @@ msgid ""
 "not a protocol many clients request all the time, and because it can process "
 "each request instantly anyway."
 msgstr ""
+"در این هنگام، فرایند فرزند به کار خود در پس‌زمینه ادامه می‌دهد. "
+"<function>listen</function> را فراخوانی می‌کند و backlog آن را بر روی "
+"<constant>4</constant> تنظیم می‌کند. در اینجا به مقدار بزرگی نیاز ندارد زیرا "
+"<emphasis>روزهنگام</emphasis> قراردادی نیست که بسیاری از کارخواهان تمام وقت "
+"درخواستش را بکنند، و چون‌که می‌تواند هر درخواست را به‌سرعت پردازش کند."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:6131
@@ -11434,6 +11454,10 @@ msgid ""
 "varname> pointer. This will allow the use of <function>fprintf</function> "
 "later on."
 msgstr ""
+"از تابع <function>fdopen</function> در C برای تبدیل <emphasis>توصیف‌گر "
+"پرونده</emphasis> سطح پایین به یک اشاره‌گر <varname>FILE</varname> به‌سبک C "
+"استفاده می‌کند. این امر بعدتر امکان استفاده از <function>fprintf</function> "
+"را فراهم می‌سازد."
 
 #. (itstool) path: step/para
 #: book.translate.xml:6153
@@ -11443,6 +11467,10 @@ msgid ""
 "It then uses <function>fclose</function> to close the file. That will "
 "automatically close the socket as well."
 msgstr ""
+"زمان را بررسی می‌کند، و آن را در قالب <emphasis><acronym>ISO</acronym> 8601</"
+"emphasis> در <varname>client</varname><quote>file</quote> چاپ می‌کند. سپس از "
+"<function>fclose</function> برای بستن پرونده استفاده می‌کند، که به‌طور "
+"خودکار سوکت را نیز می‌بندد."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:6163
@@ -11543,6 +11571,13 @@ msgid ""
 "sends out some data and closes the connection. The entire operation may take "
 "nanoseconds, and it is finished."
 msgstr ""
+"این روندنما برای <emphasis>کارسازهای پی‌در‌پی</emphasis> مناسب است، برای "
+"مثال، کارسازهایی که می‌توانند به یک کارخواه در لحظه خدمت‌رسانی کنند، همانند "
+"آنچه که با کارساز <emphasis>روزهنگام</emphasis> خود می‌کردیم. این تنها زمانی‌"
+"كه هیچ <quote>مکالمهٔ</quote> حقیقی‌ای بین کارخواه و کارساز در جریان نباشد "
+"ممکن است. هنگامی‌که کارساز اتصالی به کارخواه تشخیص داد، تعدادی داده ارسال می‌"
+"کند و اتصال را می‌بندد. تمام عملیات ممکن است طی چند نانوثانیه اتفاق بیفتد، و "
+"تمام می‌شود."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:6216
@@ -11552,6 +11587,10 @@ msgid ""
 "only one <emphasis>process</emphasis> active: Our server does not take up "
 "much memory and other system resources."
 msgstr ""
+"برتری این روندنما در این است که به‌غیر از لحظه‌ای کوتاه پس از "
+"<function>fork</function> کردن والد و پیش از خروجش، همیشه تنها یک "
+"<emphasis>فرایند</emphasis> فعال وجود دارد: کارساز ما حافظه و سایر منابع "
+"سامانهٔ زیادی را نمی گیرد."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:6223
@@ -11561,6 +11600,10 @@ msgid ""
 "place in the flow of the program to set up any <function>signal</function> "
 "handlers, open any files we may need, etc."
 msgstr ""
+"توجه داشته باشید که ما <emphasis>دیمِن مقداردهی اولیه</emphasis> را در "
+"روندنمای خود اضافه کرده‌ایم. نیازی به مقداردهی دیمن خودمان نبود، اما این "
+"مکان خوبی برای تنظیم هرگونه سامان‌ده <function>signal</function>، باز کردن "
+"هر پرونده‌ای که ممکن است نیاز داشته باشیم، و غیره در روندنما است."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:6230
@@ -11571,6 +11614,11 @@ msgid ""
 "something you design specifically for your own server, and just <quote>plug "
 "it into the rest.</quote>"
 msgstr ""
+"تقریباً‌ تمام مواردی که در روندنما موجود هستند را می‌توان به‌واقع در بسیاری "
+"از کارسازهای گوناگون به‌کار برد. ورودی <emphasis>serve</emphasis> یک "
+"استثناست. ما به آن به‌عنوان یک <emphasis><quote>جعبه سیاه</quote></emphasis> "
+"نگاه می‌کنیم، برای مثال، چیزی که به‌طور خاص برای کارساز خود طراحی می‌کنید، و "
+"فقط <quote>آن را به باقی متصل می‌کنید.</quote>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:6238
@@ -11664,6 +11712,8 @@ msgid ""
 "Fine, we know it is running in the background. But is it working? How do we "
 "know it is a proper <emphasis>daytime</emphasis> server? Simple:"
 msgstr ""
+"بسیار خوب، ما می‌دانیم که در پس‌زمینه در اجرا است. اما آیا کار می‌کند؟‌ چطور "
+"بدانیم یک کارساز <emphasis>روزهنگام</emphasis> مناسب است؟ به‌سادگی:"
 
 #. (itstool) path: sect4/screen
 #: book.translate.xml:6285
@@ -21728,6 +21778,17 @@ msgid ""
 "some output. When all the bytes of the op code are fetched, the "
 "microprocessor produces some output, or changes the value of a register, etc."
 msgstr ""
+"این مشکل با استفاده از روشی به‌ نام <emphasis>دستگاه حالت متناهی</emphasis> "
+"به‌سادگی حل می‌شود، که در اصل توسط طراحان مدارهای الکترونیکی دیجیتال توسعه "
+"یافته است. یک <emphasis>دستگاه حالت متناهی</emphasis> یک مدار دیجیتال است که "
+"خروجی آن نه تنها به ورودی آن، بلکه به ورودی‌های سابقش نیز وابسته است، برای "
+"مثال، در حالت خودش. ریزپردازنده مثالی از یک <emphasis>دستگاه حالت متناهی</"
+"emphasis> است: کد زبان اسمبلی ما در زبان ماشینی همگذاری شده است که برخی "
+"کدهای زبان اسمبلی ایجاد یک تک بایت زبان ماشین را می‌کند، زمانی‌که سایر کدها "
+"چندین بایت ایجاد می‌کنند. هنگامی که ریزپردازنده بایت‌ها را یک به یک از حافظه "
+"می‌گیرد، برخی از آنها به‌جای ایجاد چند خروجی، حالت آن را تغییر می‌دهند. "
+"هنگامی‌که تمام بایت‌های کد دستور (op code) گرفته شدند، ریزپردازنده تعدادی "
+"خروجی ایجاد می‌کند، یا مقدار یک ثبات را تغییر می‌دهد، یا غیره ."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11405
@@ -21911,6 +21972,11 @@ msgid ""
 "application>, just to discover that occasionally it strips the last line "
 "ending."
 msgstr ""
+"<emphasis>دستگاه حالت متناهی</emphasis> فوق برای تمام پرونده کار می‌کند، اما "
+"این احتمال را می‌دهد که انتهای سطر پایانی نادیده گرفته ‌شود. این امر هرزمان "
+"که پرونده با یک سرسطر یا نوسطر پایان بپذیرد اتفاق میفتد. در هنگام نوشتن "
+"<application>tuc</application> به آن فکر نکردم، که متوجه شدم گاهی اوقات "
+"پایان آخرین سطر را حذف می‌کند."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11522
@@ -21919,6 +21985,8 @@ msgid ""
 "processed. If the state is not <symbol>ordinary</symbol>, we simply need to "
 "output one last line feed."
 msgstr ""
+"این مسئله به‌آسانی با بررسی حالت پس از پردازش تمام پرونده رفع می‌شود. اگر "
+"حالت <symbol>ordinary</symbol> نباشد، ما تنها باید آخرین نوسطر را ایجاد کنیم."
 
 #. (itstool) path: note/para
 #: book.translate.xml:11528
@@ -22051,7 +22119,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:11602
 msgid "Memory Mapped Files"
-msgstr ""
+msgstr "پرونده‌های حافظه نگاشت‌شده"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11604
@@ -23757,7 +23825,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:12486
 msgid "The Dark Side of Buffering"
-msgstr ""
+msgstr "نیمهٔ تاریک میان‌گیری"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12488
@@ -23824,7 +23892,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:12520
 msgid "Here is what might happen:"
-msgstr ""
+msgstr "آنچه که ممکن است روی دهد:"
 
 #. (itstool) path: step/para
 #: book.translate.xml:12524
@@ -23832,11 +23900,13 @@ msgid ""
 "The image editor will load our filter using the C function "
 "<function>popen()</function>."
 msgstr ""
+"ویرایشگر تصویر فیلتر ما را با استفاده از تابع <function>popen()</function> "
+"در C بارگیری می‌کند."
 
 #. (itstool) path: step/para
 #: book.translate.xml:12529
 msgid "It will read the first row of pixels from a bitmap or pixmap."
-msgstr ""
+msgstr "اولین ردیف از پیکسل‌ها را از یک bitmap یا pixmap می‌خواند."
 
 #. (itstool) path: step/para
 #: book.translate.xml:12534
@@ -23844,6 +23914,8 @@ msgid ""
 "It will write the first row of pixels to the <emphasis>pipe</emphasis> "
 "leading to the <varname>fd.in</varname> of our filter."
 msgstr ""
+"اولین ردیف از پیکسل‌ها را در <emphasis>pipe</emphasis> منتهی به <varname>fd."
+"in</varname> فیلتر ما می‌نویسد."
 
 #. (itstool) path: step/para
 #: book.translate.xml:12540
@@ -23851,12 +23923,16 @@ msgid ""
 "Our filter will read each pixel from its input, turn it to a negative, and "
 "write it to its output buffer."
 msgstr ""
+"فیلتر ما هر پیکسل را از ورودی خود می‌خواند، آن را به یک نگاتیو تبدیل می‌کند، "
+"و در میان‌گیر ورودی‌اش می‌نویسد."
 
 #. (itstool) path: step/para
 #: book.translate.xml:12546
 msgid ""
 "Our filter will call <function>getchar</function> to fetch the next pixel."
 msgstr ""
+"فیلتر ما <function>getchar</function> را فراخوانی می‌کند تا پیکسل بعدی را "
+"بگیرد."
 
 #. (itstool) path: step/para
 #: book.translate.xml:12551
@@ -23864,6 +23940,8 @@ msgid ""
 "<function>getchar</function> will find an empty input buffer, so it will "
 "call <function>read</function>."
 msgstr ""
+"<function>getchar</function> یک میان‌گیر ورودی خالی پیدا می‌کند، از این رو "
+"<function>read</function> را فراخوانی می‌کند."
 
 #. (itstool) path: step/para
 #: book.translate.xml:12557
@@ -23871,6 +23949,8 @@ msgid ""
 "<function>read</function> will call the <function role=\"syscall\">SYS_read</"
 "function> system call."
 msgstr ""
+"تابع <function>read</function> فراخوان سامانهٔ <function role=\"syscall\""
+">SYS_read</function> را فراخوانی می‌کند."
 
 #. (itstool) path: step/para
 #: book.translate.xml:12562
@@ -23878,6 +23958,8 @@ msgid ""
 "The <emphasis>kernel</emphasis> will suspend our filter until the image "
 "editor sends more data to the pipe."
 msgstr ""
+"<emphasis>هسته</emphasis> فیلتر ما را تا زمانی‌که ویرایشگر تصویر داده‌های "
+"بیشتری به pipe ارسال کند تعلیق می‌کند."
 
 #. (itstool) path: step/para
 #: book.translate.xml:12568
