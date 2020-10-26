@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-26 18:37+0000\n"
+"PO-Revision-Date: 2020-10-26 21:11+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -22151,6 +22151,9 @@ msgid ""
 "worked for us before, i.e., to read from an input file and to write to an "
 "output file."
 msgstr ""
+"از آنجه که برنامهٔ ما در یک پروندهٔ واحد کار می‌کند، نمی‌توانیم از روشی که "
+"پیش‌تر به ما جواب داده است استفاده کنیم، برای مثال، خواندن از یک پروندهٔ "
+"ورودی و نوشتن در یک پروندهٔ خروجی."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11608
@@ -22177,6 +22180,9 @@ msgid ""
 "physical or virtual. The FreeBSD system allows us to use up to a half of it "
 "for file mapping."
 msgstr ""
+"ریزپردازنده‌های ۳۲ بیتی اینتل می‌توانند تا ۴ گیگابایت از حافظه دسترسی داشته "
+"باشند - فیزیکی یا مجازی. سامانهٔ FreeBSD به ما این امکان را می‌دهد تا نیمی "
+"از آن را برای نگاشت پرونده استفاده کنیم."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11625
@@ -22187,6 +22193,11 @@ msgid ""
 "it will simply display a message suggesting we use the original "
 "<application>tuc</application> instead."
 msgstr ""
+"به‌خاطر سادگی، ما در این آموزه تنها پرونده‌هایی را که به‌طور کامل می‌توانند "
+"در حافظه نگاشته شوند را تبدیل می‌کنیم. احتمالاً پرونده‌های متنی بسیاری وجود "
+"ندارند که اندازه‌شان از ۲ گیگابایت فراتر رود. اگر برنامهٔ ما با یکی از آنها "
+"برخورد کند، پیامی نمایش می‌دهد که پیشنهاد می‌دهد به جای آن از "
+"<application>tuc</application> اصلی استفاده کنیم."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11632
@@ -22210,6 +22221,8 @@ msgid ""
 "The <filename>syscalls.master</filename> lists the <acronym><trademark class="
 "\"registered\">POSIX</trademark></acronym> version like this:"
 msgstr ""
+"<filename>syscalls.master</filename> نسخهٔ <acronym><trademark class="
+"\"registered\">POSIX</trademark></acronym> را بدین شکل فهرست می‌کند:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11647
@@ -22229,6 +22242,11 @@ msgid ""
 "<citerefentry><refentrytitle>mmap</refentrytitle><manvolnum>2</manvolnum></"
 "citerefentry> describes the C version."
 msgstr ""
+"این نسبت به آنچه که "
+"<citerefentry><refentrytitle>mmap</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> می‌گوید تفاوت نسبی دارد. به این خاطر که "
+"<citerefentry><refentrytitle>mmap</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> نسخهٔ C را توضیح می‌دهد."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11656
@@ -22238,6 +22256,10 @@ msgid ""
 "after <function role=\"opcode\">push</function>ing a 64-bit argument. In "
 "this case, <varname>off_t</varname> is a 64-bit value."
 msgstr ""
+"تفاوت در برهان <varname>long pad</varname> است، که در نسخهٔ C موجود نیست، "
+"فراخوان‌های سامانهٔ FreeBSD یک پَد ۳۲ بیتی بعد از <function role=\"opcode\""
+">push</function> کردن یک برهان ۶۴ بیتی اضافه می‌کنند. در این مورد، "
+"<varname>off_t</varname> یک مقدار ۶۴ بیتی است."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11661
@@ -22255,11 +22277,15 @@ msgid ""
 "W. Richard Stevens' <link xlink:href=\"http://www.int80h.org/cgi-bin/isbn?"
 "isbn=0130810819\">Unix Network Programming, Volume 2, Chapter 12</link>."
 msgstr ""
+"برای مطالعهٔ عمیق <function role=\"syscall\">mmap</function>، به <link "
+"xlink:href=\"http://www.int80h.org/cgi-bin/isbn?isbn=0130810819\">Unix "
+"Network Programming, Volume 2, Chapter 12</link> از W. Richard Stevens "
+"مراجعه کنید."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11672
 msgid "Determining File Size"
-msgstr ""
+msgstr "تعیین اندازهٔ پرونده"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11674
@@ -22268,6 +22294,9 @@ msgid ""
 "bytes of the file to map into the memory, and because we want to map the "
 "entire file, we need to determine the size of the file."
 msgstr ""
+"از آنجا که باید تعداد بایت‌هایی که درون حافظه نگاشت می‌کنیم را به <function "
+"role=\"syscall\">mmap</function> اعلام کنیم، و چون می‌خواهیم تمام پرونده را "
+"نگاشت کنیم، باید اندازهٔ پرونده را تعیین کنیم."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11678
@@ -22276,6 +22305,9 @@ msgid ""
 "all the information about an open file that the system can give us. That "
 "includes the file size."
 msgstr ""
+"می‌توانیم از فراخوان سامانهٔ <function role=\"syscall\">fstat</function> "
+"برای بدست آوردن تمام اطلاعات مربوط به پروندهٔ بازی که سامانه می‌تواند به ما "
+"بدهد استفاده کنیم. این اطلاعات شامل اندازهٔ پرونده می‌شود."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11682
@@ -22286,6 +22318,11 @@ msgid ""
 "(syscall 189). Naturally, we will use the <acronym><trademark class="
 "\"registered\">POSIX</trademark></acronym> version:"
 msgstr ""
+"دوباره، <filename>syscalls.master</filename> دو نسخه از <function role="
+"\"syscall\">fstat</function> را فهرست می‌کند، یک نسخهٔ سنتی (syscall 62)، و "
+"یک نسخهٔ <acronym><trademark class=\"registered\">POSIX</trademark></"
+"acronym> (syscall 189). به‌طور طبیعی، از نسخهٔ <acronym><trademark class="
+"\"registered\">POSIX</trademark></acronym> استفاده می‌کنیم:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11688
@@ -22301,6 +22338,9 @@ msgid ""
 "file. It will fill out the contents of the <varname remap=\"structname"
 "\">stat</varname> structure."
 msgstr ""
+"این یک فراخوان بسیار مستقیم است: ما آن را به نشانی یک ساختمان <varname remap="
+"\"structname\">stat</varname> و یک توصیف‌گر پروندهٔ باز منتقل می‌کنیم. "
+"محتوای ساختمان <varname remap=\"structname\">stat</varname> را پر می‌کند."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11695
@@ -22311,6 +22351,11 @@ msgid ""
 "set the carry flag indicating an error. After I changed the code to allocate "
 "the structure on the stack, everything was working fine."
 msgstr ""
+"من، هرچند، لازم است خاطر نشان کنم که سعی کرده‌ام ساختمان <varname remap="
+"\"structname\">stat</varname> را در قسمت <varname>.bss</varname> تعریف کنم، "
+"و <function role=\"syscall\">fstat</function> آن را دوست نداشت: نشان رقم "
+"نقلی‌ای را تعیین می‌کند که نشان‌گر خطاست . پس از آنکه کد را برای تخصیص "
+"ساختمان در پشته تغییر دادم، همه چیز به‌درستی کار می‌کرد."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11704
