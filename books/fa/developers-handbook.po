@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-24 19:52+0000\n"
+"PO-Revision-Date: 2020-10-26 18:37+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.3\n"
+"X-Generator: Weblate 4.3.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -21996,6 +21996,10 @@ msgid ""
 "circuit (a \"chip\") to do the conversion for us. Of course, doing so would "
 "be considerably more expensive than writing an assembly language program."
 msgstr ""
+"اکنون که الگوریتم خود را به‌عنوان یک <emphasis>دستگاه حالت متناهی</emphasis> "
+"معرفی کرده‌ایم، می‌توانیم به آسانی یک مدار الکترونیکی دیجیتال اختصاصی (یک "
+"\"تراشه\") طراحی کنیم تا کار تبدیل را برای ما انجام دهد. البته، انجام آن "
+"بسیار هزینه‌بر تر از نوشتن یک برنامه‌ در زبان همگذاری است."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:11538
@@ -22011,6 +22015,11 @@ msgid ""
 "the end of the program, the counter will tell us what size we need to set "
 "the file to."
 msgstr ""
+"از آنجا که برنامهٔ تبدیل‌کنندهٔ پروندهٔ ما ممکن است دو نویسه را در یک نویسه "
+"ترکیب کند، ما به یک شمارندهٔ‌ خروجی نیاز داریم. آن را در <constant>0</"
+"constant> آغاز می‌کنیم، و هر زمان که نویسه‌ای را به خروجی ارسال می‌کنیم آن "
+"را افزایش می‌دهیم. در پایان برنامه، شمارنده اندازه‌ای که باید پرونده را در "
+"آن تنظیم کرد به ما می‌گوید."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11550
@@ -22024,6 +22033,9 @@ msgid ""
 "is analyzing the problem and expressing it as a <emphasis>finite state "
 "machine</emphasis>. That accomplished, the software almost writes itself."
 msgstr ""
+"مشکل‌ترین بخش کار با یک <emphasis>دستگاه حالت متناهی</emphasis> تجزیه و "
+"تحلیل مشکل و معرفی آن به‌عنوان یک <emphasis>دستگاه حالت متناهی</emphasis> "
+"است. با رسیدن به این مقصود، نرم‌افزار تقریباً‌ خودش را می‌نویسد."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11557
@@ -22032,6 +22044,9 @@ msgid ""
 "is to use a <function role=\"statement\">switch</function> statement which "
 "chooses what function should be run. For example,"
 msgstr ""
+"در یک زبان سطح بالا، مانند C، چندین رویکرد اصلی وجود دارد. یکی استفاده از "
+"عبارت <function role=\"statement\">switch</function> است که انتخاب می‌کند "
+"کدام تابع باید اجرا شود. برای مثال،"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11561
@@ -22099,6 +22114,9 @@ msgid ""
 "of the right procedure in <varname role=\"register\">EBX</varname>, and then "
 "just issue:"
 msgstr ""
+"این روشی‌ست که ما در برنامهٔ خودمان استفاده می‌کنیم زیرا استفاده از آن در "
+"زبان همگذاری بسیار آسان است، و همچنین بسیار سریع. نشانی روش صحیح را در "
+"<varname role=\"register\">EBX</varname> نگه می‌داریم، و سپس می‌نویسیم:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11591
@@ -22115,6 +22133,11 @@ msgid ""
 "because with the caching modern microprocessors do, either way may be "
 "equally fast."
 msgstr ""
+"این روش احتمالاً سریع‌تر از سخت‌کد کردن نشانی در کد است زیرا ریزپردازنده "
+"نیازی به گرفتن نشانی از حافظه ندارد—از پیش در یکی از ثبات‌هایش ذخیره شده "
+"است. من گفتم <emphasis>احتمالاً</emphasis> زیرا با ذخیره‌سازی‌ای که "
+"ریزپردازنده‌های امروزی انجام می‌دهند، هر دو روش ممکن است به یک اندازه سریع "
+"باشند."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11602
