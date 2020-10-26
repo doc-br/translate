@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-26 21:11+0000\n"
+"PO-Revision-Date: 2020-10-26 23:31+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -22370,6 +22370,10 @@ msgid ""
 "since we are placing our output into the same file we read the input from, "
 "we may have to change the size of the file."
 msgstr ""
+"از آنجا که برنامهٔ ما ممکن است توالی سرسطر / نوسطر را درون نوسطرهای مستقیم "
+"ترکیب ‌کند، ممکن است خروجی ما کوچک‌تر از ورودی‌مان باشد. گرچه، از آنجا که "
+"خروجی خود را در همان پرونده‌ای که ورودی را از آن می‌خوانیم قرار می‌دهیم، "
+"ممکن است مجبور به تغییر اندازهٔ پرونده باشیم."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11712
@@ -22379,6 +22383,11 @@ msgid ""
 "\"syscall\">ftruncate</function> system call can be used to both truncate "
 "the file (make it smaller) and to grow it."
 msgstr ""
+"فراخوان سامانهٔ <function role=\"syscall\">ftruncate</function> این امکان را "
+"به ما می‌دهد تا دقیقاً همین کار را انجام دهیم. با وجود اسم نسبتاً‌ "
+"گمراه‌کننده‌اش، فراخوان سامانهٔ <function role=\"syscall\">ftruncate</"
+"function> را می‌توان هم برای کوتاه کردن (کوچک‌تر کردن آن) و هم بزرگ کردن آن "
+"به کار برد."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11718
