@@ -2,12 +2,13 @@
 # Edson Brandi <ebrandi@FreeBSD.org>, 2019. #zanata
 # Edson Brandi <ebrandi@freebsd.org>, 2019.
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2019, 2020.
+# Alexandre Liberato <psybox@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-08-01 12:53+0000\n"
-"Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
+"PO-Revision-Date: 2020-10-28 08:58+0000\n"
+"Last-Translator: Alexandre Liberato <psybox@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate-dev.freebsd.org/"
 "projects/freebsd-doc/boooks_design-44bsd/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -15,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.3.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -139,6 +140,11 @@ msgid ""
 "Chapter 4. The system multiplexes separate virtual-address spaces for each "
 "process; this memory management is discussed in Chapter 5."
 msgstr ""
+"Processos constituem uma thread de controle em um endereço de memória. "
+"Mecanismos para criação, finalização, e outras formas de controle de "
+"processos são descritos no Capítulo 4. O sistema multiplexa separados "
+"espaços de endereços virtuais para cada processo; esse gerenciamento de "
+"memória é discutido no Capítulo 5."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:74
@@ -152,6 +158,15 @@ msgid ""
 "subject of Chapter 9. Terminals are used to access the system; their "
 "operation is the subject of Chapter 10."
 msgstr ""
+"A interface do usuário para o sistema de arquivos e dispositivos é similar; "
+"aspectos comuns são discutidos no Capítulo 6. O sistema de arquivos é um "
+"conjunto de arquivos nomeados, organizados em uma hierarquia de árvore-"
+"estruturada de diretórios, e de operações para manipulá-los, como "
+"apresentado no Capítulo 7. Arquivos residem em uma mídia física como discos. "
+"4.4BSD suporta diversas organizações de dados no disco, como mostrado em "
+"frente no Capítulo 8. Acesso a arquivos em máquinas remotas é o assunto do "
+"capítulo 9. Terminais são usados para acessar o sistema; a operação deles é "
+"o assunto do Capítulo 10."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:93
@@ -167,6 +182,16 @@ msgid ""
 "facility. Chapter 13 describes a particular networking implementation in "
 "detail."
 msgstr ""
+"Mecanismos de comunicação providos por sistemas tradicionais UNIX incluem "
+"confiáveis bytes streams simplex entre processos relacionados (veja pipes, "
+"Seção 11.1), e notificação de eventos excepcionais (veja signals, Seção 4.7)"
+". 4.4BSD também possui um mecanismo geral de comunicação interprocessual. "
+"Esse mecanismo, descrito no Capítulo 11, usa mecanismos de acessos distintos "
+"daqueles do sistema de arquivos, mas, uma  vez que uma conexão é realizada, "
+"um processo pode acessá-la como se fosse um pipe. Existe um framework geral "
+"de rede, discutido no capítulo 12, que é normalmente usado como uma camada "
+"de base para o mecanismo IPC. O Capítulo 13 descreve uma implementação de "
+"rede particular em detalhe."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:115
