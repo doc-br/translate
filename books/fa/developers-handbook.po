@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-28 19:42+0000\n"
+"PO-Revision-Date: 2020-10-29 02:11+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -23192,6 +23192,11 @@ msgid ""
 "standard format for sharing data among people who may be using different "
 "database software."
 msgstr ""
+"لازم بود یازدهمین رشته از هر ثبتی را از پایگاه داده‌ای که از یک وبسایت "
+"بارگیری کردم را استخراج کنم. پایگاه داده یک پروندهٔ <acronym>CSV</acronym> "
+"بود، برای مثال، فهرستی از <emphasis>مقادیر جدا شده توسط ویرگول</emphasis>. "
+"این قالب نسبتاً‌ استاندارد برای اشتراک‌گذاری داده‌ها بین کسانی است که ممکن "
+"است از نرم‌افزارهای پایگاه‌دادهٔ متفاوتی استفاده کنند."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12087
@@ -23200,6 +23205,9 @@ msgid ""
 "commas. The rest of the file contains the data listed line by line, with "
 "values separated by commas."
 msgstr ""
+"اولین سطر از پرونده شامل فهرستی از رشته‌های گوناگون جدا شده توسط ویرگول است. "
+"باقی پرونده شامل داده‌ای است که به‌همراه مقادیر جدا شده‌ توسط ویرگول، سطر به "
+"سطر فهرست شده است."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12092
@@ -23208,6 +23216,10 @@ msgid ""
 "because several lines contained a quoted comma, <application>awk</"
 "application> was extracting the wrong field from those lines."
 msgstr ""
+"<application>awk</application> را با استفاده از ویرگول به‌عنوان جداکننده "
+"امتحان کردم. اما از آنجا که چندین سطر شامل ویروگول نقل قول شده بودند، "
+"<application>awk</application> در حال استخراج رشته‌های اشتباه از آن سطرها "
+"بود."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12097
@@ -24899,7 +24911,7 @@ msgstr ""
 #. (itstool) path: step/para
 #: book.translate.xml:13104
 msgid "<emphasis>Otherwise</emphasis>, it should use the default."
-msgstr ""
+msgstr "<emphasis>در غیر اینصورت</emphasis>، باید از حالت پیش‌فرض استفاده کند."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:13109
@@ -24931,6 +24943,8 @@ msgid ""
 "It may crash the program because we have not designed it to handle huge "
 "numbers."
 msgstr ""
+"ممکن است برنامه را خراب کند زیرا آن را به گونه‌ای طراحی نکرده‌ایم تا اعداد "
+"بزرگ را سامان‌دهی کند."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:13127
@@ -25148,6 +25162,9 @@ msgid ""
 "zero digit, we will initialize a counter to <constant>0</constant> and start "
 "taking three steps:"
 msgstr ""
+"برای این کار، ما به‌سادگی صفرهای ابتدایی را نادیده می‌گیریم. همین که یک رقم "
+"غیر صفر پیدا کردیم، یک شمارنده را به <constant>0</constant> مقداردهی می‌کنیم "
+"و شروع به انجام سه مرحلهٔ زیر می‌کنیم:"
 
 #. (itstool) path: step/para
 #: book.translate.xml:13261
