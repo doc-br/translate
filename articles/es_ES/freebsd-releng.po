@@ -4,16 +4,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-10-18 10:50-0300\n"
-"PO-Revision-Date: 2020-08-25 17:16+0000\n"
+"PO-Revision-Date: 2020-10-28 19:13+0000\n"
 "Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
-"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/freebsd-"
-"doc/articles_freebsd-releng/es/>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/articles_freebsd-releng/es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.3.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -81,16 +81,12 @@ msgstr ""
 
 #. (itstool) path: info/pubdate
 #: article.translate.xml:61
-#, fuzzy
-#| msgid ""
-#| "$FreeBSD: head/en_US.ISO8859-1/articles/freebsd-releng/article.xml 53242 "
-#| "2019-07-09 23:59:30Z jhb $"
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/freebsd-releng/article.xml 54556 "
 "2020-09-30 15:54:17Z gjb $"
 msgstr ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/freebsd-releng/article.xml 53242 "
-"2019-07-09 23:59:30Z jhb $"
+"$FreeBSD: head/en_US.ISO8859-1/articles/freebsd-releng/article.xml 54556 "
+"2020-09-30 15:54:17Z gjb $"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:64
@@ -2830,20 +2826,18 @@ msgid ""
 "When a release reaches End-of-Life, references to that release should be "
 "removed and/or updated on the website:"
 msgstr ""
+"Cuando un lanzamiento llega al final de la vida, las referencias a ese "
+"lanzamiento deben ser eliminadas y/o actualizadas en el sitio web:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1594
 msgid "File"
-msgstr ""
+msgstr "Archivo"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1601
-#, fuzzy
-#| msgid ""
-#| "<filename>en_US.ISO8859-1/htdocs/releases/12.0R/schedule.xml</filename>"
 msgid "<filename>head/en_US.ISO8859-1/htdocs/index.xsl</filename>"
-msgstr ""
-"<filename>en_US.ISO8859-1/htdocs/releases/12.0R/schedule.xml</filename>"
+msgstr "<filename>head/en_US.ISO8859-1/htdocs/index.xsl</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1602 article.translate.xml:1633
@@ -2854,12 +2848,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1608
-#, fuzzy
-#| msgid ""
-#| "<filename>en_US.ISO8859-1/htdocs/releases/12.0R/schedule.xml</filename>"
 msgid "<filename>head/en_US.ISO8859-1/htdocs/releases/index.xml</filename>"
-msgstr ""
-"<filename>en_US.ISO8859-1/htdocs/releases/12.0R/schedule.xml</filename>"
+msgstr "<filename>head/en_US.ISO8859-1/htdocs/releases/index.xml</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1609
@@ -2870,12 +2860,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1615
-#, fuzzy
-#| msgid ""
-#| "<filename>en_US.ISO8859-1/htdocs/releases/12.0R/schedule.xml</filename>"
 msgid "<filename>head/en_US.ISO8859-1/htdocs/releng/index.xml</filename>"
-msgstr ""
-"<filename>en_US.ISO8859-1/htdocs/releases/12.0R/schedule.xml</filename>"
+msgstr "<filename>head/en_US.ISO8859-1/htdocs/releng/index.xml</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1616
@@ -2883,20 +2869,18 @@ msgid ""
 "Update the appropriate releng branch to refelect the branch is no longer "
 "supported."
 msgstr ""
+"La actualización de la rama de releng apropiado para refelejar la rama ya no "
+"es soportada."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1621
-#, fuzzy
-#| msgid ""
-#| "<filename>en_US.ISO8859-1/htdocs/security/errata-template.txt</filename>"
 msgid "<filename>head/en_US.ISO8859-1/htdocs/security/security.xml</filename>"
-msgstr ""
-"<filename>en_US.ISO8859-1/htdocs/security/errata-template.txt</filename>"
+msgstr "<filename>head/en_US.ISO8859-1/htdocs/security/security.xml</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1622
 msgid "Remove the branch from the supported branch list."
-msgstr ""
+msgstr "Eliminar la rama de la lista de ramas soportadas."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1627
@@ -2910,7 +2894,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: article.translate.xml:1628
 msgid "Remove the URLs for the release."
-msgstr ""
+msgstr "Elimina los URL para la liberación."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1632
@@ -2933,17 +2917,14 @@ msgstr ""
 #. (itstool) path: row/entry
 #: article.translate.xml:1640 article.translate.xml:1646
 msgid "Remove references to the release and releng branch."
-msgstr ""
+msgstr "Elimine las referencias a la rama de liberación y releng."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1645
-#, fuzzy
-#| msgid ""
-#| "<filename>en_US.ISO8859-1/htdocs/security/errata-template.txt</filename>"
 msgid ""
 "<filename>head/en_US.ISO8859-1/htdocs/security/errata-template.txt</filename>"
 msgstr ""
-"<filename>en_US.ISO8859-1/htdocs/security/errata-template.txt</filename>"
+"<filename>head/en_US.ISO8859-1/htdocs/security/errata-template.txt</filename>"
 
 #~ msgid ""
 #~ "Change <literal>% beta.upcoming</literal> from <literal>IGNORE</literal> "
