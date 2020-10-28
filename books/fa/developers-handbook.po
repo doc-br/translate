@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-27 21:03+0000\n"
+"PO-Revision-Date: 2020-10-28 19:13+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -11662,6 +11662,11 @@ msgid ""
 "superuser (otherwise, anyone could start a daemon pretending to serve a "
 "commonly used port, while causing a security breach)."
 msgstr ""
+"در اینجا چه اتفاقی افتاد؟ همانطور که به یاد خواهید داشت، قرارداد "
+"<emphasis>روزهنگام</emphasis> از درگاه ۱۳ استفاده می‌کند. اما تمام درگاه‌های "
+"زیر ۱۰۲۴ به ابرکاربر اختصاص داده شده‌اند (در غیر اینصورت، هر شخص می‌توانست "
+"دیمنی آغاز کند که تظاهر به خدمت رسانی به یک درگاه معمولی را کند، در حالی‌که "
+"باعث نقض امنیتی می‌شود)."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:6263
@@ -11830,6 +11835,10 @@ msgid ""
 "daemon has closed the socket. This shows us that, indeed, using "
 "<function>fclose(client);</function> in our code works as advertised."
 msgstr ""
+"در ضمن، <application>telnet</application> پیام <emphasis>اتصال توسط میزبان "
+"خارجی بسته شد</emphasis> را پس از آنکه دیمِن ما سوکت را بست چاپ می‌کند. این "
+"به ما نشان می دهد که در واقع، استفاده از <function>fclose(client);</"
+"function> در کدمان همانگونه که اعلان شده بود کار می‌کند."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:6344
@@ -11846,6 +11855,12 @@ msgid ""
 "our software is more flexible if it allows the user to enter the "
 "<acronym>IP</acronym> address, or even the domain name."
 msgstr ""
+"کتابخانهٔ C در FreeBSD شامل توابع کمکی بسیاری برای برنامه‌نویسی سوکت‌هاست. "
+"برای مثال، در کارخواه نمونهٔ خودمان نشانی <systemitem class=\"fqdomainname\""
+">time.nist.gov</systemitem><acronym>IP</acronym> را کدنویسی سخت کرده‌ایم. "
+"اما نشانی <acronym>IP</acronym> را همیشه نمی‌دانیم. حتی اگر هم بدانیم، نرم‌"
+"افزارمان در صورتی‌که اجازهٔ ورود کاربر به نشانی <acronym>IP</acronym>، یا "
+"حتی نام دامنه را بدهد، منعطف‌تر است."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:6355
@@ -11862,6 +11877,12 @@ msgid ""
 "refentrytitle><manvolnum>3</manvolnum></citerefentry> functions, declared in "
 "<filename>netdb.h</filename>."
 msgstr ""
+"زمانی‌که هیچ امکانی برای انتقال نام دامنه به‌طور مستقیم به هر کدام از توابع "
+"سوکت‌ها وجود ندارد، کتابخانهٔ‌ C در FreeBSD با توابع "
+"<refentrytitle>gethostbyname</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry> و <citerefentry><refentrytitle>gethostbyname2</refentrytitle><m"
+"anvolnum>3</manvolnum></citerefentry> همراه می‌شود، که در <filename>netdb.h</"
+"filename> تعریف شده است."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:6362
@@ -11882,6 +11903,11 @@ msgid ""
 "of the correct address, already stored in the <emphasis>network byte order</"
 "emphasis>."
 msgstr ""
+"هر دو یک اشاره‌گر به ساختمان <varname>hostent</varname> بازمی‌گردانند، به‌"
+"همراه اطلاعات بسیاری در مورد دامنه. برای اهداف ما، رشتهٔ "
+"<varname>h_addr_list[0]</varname> از ساختمان به بایت‌های نشانی صحیح "
+"<varname>h_length</varname> اشاره می‌کند، که از پیش در <emphasis>ترتیب بایت "
+"شبکه</emphasis> ذخیره شده است."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6372
@@ -12012,6 +12038,14 @@ msgid ""
 "even if its <acronym>IP</acronym> address changes in the future, we will "
 "still find it."
 msgstr ""
+"اکنون می‌توانیم یک نام دامنه (یا یک نشانی <acronym>IP</acronym>، با هر دو "
+"روش کار می‌کند) در خط فرمان وارد کنیم، و برنامه سعی می‌کند به کارساز "
+"<emphasis>روزهنگام</emphasis> خود متصل شود. در غیر اینصورت، به <systemitem "
+"class=\"fqdomainname\">time.nist.gov</systemitem> پیش‌فرض می‌شود. هرچند، حتی "
+"در این مورد به جای سخت کد کردن <systemitem class=\"ipaddress\">192.43.244."
+"18</systemitem> از <function>gethostbyname</function> استفاده می‌کنیم. در "
+"اینصورت، حتی اگر نشانی <acronym>IP</acronym> آن در آینده تغییر کند، ما آن را "
+"پیدا خواهیم کرد."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6439
@@ -12022,6 +12056,11 @@ msgid ""
 "the second time from your own system. You can then compare the results and "
 "see how exact your system clock is:"
 msgstr ""
+"از آنجا که هیچ زمانی را صرف گرفتن زمان از کارساز محلی شما نمی‌کند، می‌توانید "
+"<application>daytime</application> را دو بار پشت سر هم اجرا کنید: بار اول "
+"برای گرفتن زمان از <systemitem class=\"fqdomainname\">time.nist."
+"gov</systemitem>، بار دوم برای گرفتن از سامانهٔ خودتان. سپس می‌توانید نتایج "
+"را مقایسه کنید و دقت ساعت سامانهٔ خود را ببینید:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:6445
@@ -12047,6 +12086,8 @@ msgid ""
 "As you can see, my system was two seconds ahead of the <acronym>NIST</"
 "acronym> time."
 msgstr ""
+"همانطور که مشاهده می‌کنید، سامانهٔ من دو ثانیه جلوتر از زمان <acronym>NIST</"
+"acronym> بود."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:6457
@@ -12061,6 +12102,10 @@ msgid ""
 "manvolnum></citerefentry> function, also declared in <filename>netdb.h</"
 "filename> comes in very handy in those cases:"
 msgstr ""
+"گاهی ممکن است از درگاهی که یک سرویس خاص از آن استفاده می‌کند مطمئن نباشید. "
+"تابع <citerefentry><refentrytitle>getservbyname</refentrytitle><manvolnum>3</"
+"manvolnum></citerefentry>، که نیز در <filename>netdb.h</filename> تعریف شده "
+"است در چنین مواردی مفید است:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:6464
@@ -12075,6 +12120,8 @@ msgid ""
 "varname>, which contains the proper port, already in <emphasis>network byte "
 "order</emphasis>."
 msgstr ""
+"ساختمان <varname>servent</varname> شامل <varname>s_port</varname> است، که "
+"شامل درگاه مناسب است، و از پیش در <emphasis>ترتیب بایت شبکه</emphasis> است."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6470
@@ -12082,6 +12129,8 @@ msgid ""
 "Had we not known the correct port for the <emphasis>daytime</emphasis> "
 "service, we could have found it this way:"
 msgstr ""
+"چنانچه درگاه مناسب برای سرویس <emphasis>روزهنگام</emphasis> را نمی‌دانستیم، "
+"می‌توانستیم آن را با این روش بیابیم:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:6474
@@ -12120,7 +12169,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:6496
 msgid "Concurrent Servers"
-msgstr ""
+msgstr "کارسازهای هم‌رو"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6498
@@ -12130,11 +12179,16 @@ msgid ""
 "<emphasis>chat server</emphasis> may be serving a specific client for hours—"
 "it cannot wait till it stops serving a client before it serves the next one."
 msgstr ""
+"بر خلاف کارساز پی‌در‌پی، یک <emphasis>کارساز هم‌رو</emphasis> باید بتواند به "
+"بیش از یک کارخواه به‌طور همزمان خدمت‌رسانی کند. برای مثال، یک "
+"<emphasis>کارساز چت</emphasis> ممکن است برای ساعت‌ها به یک کارخواه خاص خدمت‌"
+"رسانی کند—قبل از آنکه به کارخواه بعدی خدمت‌ کند نمی‌تواند منتظر بماند تا "
+"خدمت‌رسانی به یک کارخواه را متوقف سازد."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6504
 msgid "This requires a significant change in our flowchart:"
-msgstr ""
+msgstr "این نیازمند تغییری چشم‌گیر در روندنمایمان است:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -23968,6 +24022,9 @@ msgid ""
 "<function>write</function> before each call to <function>read</function>, "
 "chances are it will lock up."
 msgstr ""
+"اما می‌توان نرم‌افزار دستکاری تصویر را فراخوانی کرد. و، به جز آنکه "
+"<function>write</function> را قبل از هر فراخوان به <function>read</function> "
+"فراخوانی کند، احتمال قفل شدن آن وجود دارد."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12520
