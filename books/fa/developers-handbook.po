@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-30 17:55+0000\n"
+"PO-Revision-Date: 2020-10-30 22:52+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -22900,6 +22900,9 @@ msgid ""
 "combines the various existing programs by piping the output of one program "
 "to the input of another."
 msgstr ""
+"کاربر عادی <trademark class=\"registered\">UNIX</trademark> سپس برنامه‌های "
+"خود را اساساً‌ با نوشتن اجرانامهٔ پوسته‌ای که برنامه‌های پیشین را با پایپ "
+"کردن خروجی برنامه‌ای به ورودی برنامه‌ای دیگر ترکیب می‌کند، همگذاری می‌کند."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:12068
@@ -22973,6 +22976,10 @@ msgid ""
 "\"registered\">UNIX</trademark> spirit, I only needed to write a simple "
 "filter that would do the following:"
 msgstr ""
+"از این رو، باید نرم‌افزار خودم را برای استخراج رشتهٔ یازدهم از پروندهٔ "
+"<acronym>CSV</acronym> می‌نوشتم. گرچه، با توجه به روحیهٔ <trademark class="
+"\"registered\">UNIX</trademark>، تنها لازم بود تا فیلتر ساده‌ای بنویسم که "
+"مراحل زیر را انجام دهد:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:12104
@@ -24179,7 +24186,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:12786
 msgid "The Pinhole"
-msgstr ""
+msgstr "Pinhole"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12788
@@ -24232,7 +24239,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:12823
 msgid "The F–Number"
-msgstr ""
+msgstr "ضریب اف"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12825
@@ -24252,7 +24259,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:12836
 msgid "The f–number is easy to calculate:"
-msgstr ""
+msgstr "محاسبهٔ ضریب اف آسان است:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:12838
@@ -24288,7 +24295,7 @@ msgstr "t * (B / A)²"
 #. (itstool) path: sect3/title
 #: book.translate.xml:12858
 msgid "Normalized F–Number"
-msgstr ""
+msgstr "ضریب اف عادی شده"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12860
@@ -24348,18 +24355,20 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:12903
 msgid "Designing the Pinhole Software"
-msgstr ""
+msgstr "طراحی نرم‌افزار Pinhole"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12905
 msgid ""
 "We are now ready to decide what exactly we want our pinhole software to do."
 msgstr ""
+"ما اکنون آماده‌ایم تا تصمیم بگیریم دقیقاً چه انتظاری از نرم‌افزار Pinhole "
+"خود داریم."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:12909
 msgid "Processing Program Input"
-msgstr ""
+msgstr "پردازش ورودی برنامه"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12911
@@ -24387,6 +24396,8 @@ msgid ""
 "One program, <application>ftuc</application> used the state machine to "
 "consider at most two input bytes at a time."
 msgstr ""
+"یک برنامه، <application>ftuc</application> از دستگاه حالت برای در نظر گرفتن "
+"حداکثر دو بایت ورودی در لحظه استفاده کرد."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12931
@@ -24394,6 +24405,8 @@ msgid ""
 "But our <application>pinhole</application> program cannot just work with "
 "individual characters, it has to deal with larger syntactic units."
 msgstr ""
+"گرثه برنامهٔ <application>pinhole</application> ما نمی‌تواند فقط با نویسه‌"
+"های جداگانه کار کند، باید با واحدهای نحوی بزرگتر سر و کار داشته باشد."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12935
@@ -24468,7 +24481,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:12980
 msgid "There is no reason for the computer to spit out a number of complaints:"
-msgstr ""
+msgstr "هیچ دلیلی برای شکایت کردن رایانه وجود ندارد:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:12983
@@ -24528,7 +24541,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:13018
 msgid "Offering Options"
-msgstr ""
+msgstr "گزینه‌های پیشنهادی"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:13020
@@ -24551,7 +24564,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:13033
 msgid "Why have two ways of choosing?"
-msgstr ""
+msgstr "چرا دو روش برای انتخاب داریم؟"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:13035
@@ -24610,7 +24623,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:13075
 msgid "This type of choice is usually done with command line parameters."
-msgstr ""
+msgstr "این نوع انتخاب معمولاً‌ توسط پارامترهای خط فرمان صورت می‌گیرد."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:13078
@@ -24628,6 +24641,8 @@ msgid ""
 "Given this system, the program may find conflicting options, and handle them "
 "this way:"
 msgstr ""
+"با توجه به این سامانه، برنامه ممکن است گزینه‌هایی متعارض پیدا کند، و بدین "
+"شکل به آنها رسیدگی کند:"
 
 #. (itstool) path: step/para
 #: book.translate.xml:13091
@@ -24655,6 +24670,8 @@ msgid ""
 "We also need to decide what <emphasis>format</emphasis> our <constant>PC</"
 "constant> option should have."
 msgstr ""
+"همچنین لازم است <emphasis>قالبی</emphasis> که گزینهٔ <constant>PC</constant> "
+"ما باید دارا باشد را انتخاب کنیم."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:13113
@@ -24663,6 +24680,8 @@ msgid ""
 "format for the environment variable, and <parameter>-p0.04</parameter> for "
 "the command line."
 msgstr ""
+"در ابتدا، به‌نظر استفاده از قالب <varname>PINHOLE=0.04</varname> برای متغیر "
+"محلی امری بدیهیست، و همچنین <parameter>-p0.04</parameter> برای خط فرمان."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:13118
@@ -24696,6 +24715,7 @@ msgid ""
 "Or, we might say, <emphasis>\"Tough! The user should know better.\"\"</"
 "emphasis>"
 msgstr ""
+"یا ممکن است بگوییم، <emphasis>\"سخت است! کاربر باید بهتر بداند.\"</emphasis>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:13135
@@ -27235,6 +27255,10 @@ msgid ""
 "perform <emphasis>textual queries</emphasis>. We do not <emphasis>have to</"
 "emphasis>, but we <emphasis>can</emphasis>."
 msgstr ""
+"از آنجا که تصمیم گرفته‌ایم برنامه هر نوع ورودی به‌جز اعداد را "
+"<emphasis>نادیده</emphasis> بگیرد (و حتی آنهایی که داخل توضیحات هستند)، در "
+"واقع می‌توانیم <emphasis>جست‌و‌جوی متنی</emphasis> انجام دهیم. "
+"<emphasis>مجبور نیستیم</emphasis>، اما <emphasis>می‌توانیم</emphasis>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14553
@@ -27242,6 +27266,8 @@ msgid ""
 "In my humble opinion, forming a textual query, instead of having to follow a "
 "very strict syntax, makes software much more user friendly."
 msgstr ""
+"به نظر حقیرانهٔ من، تشکیل یک جست‌و‌جوی متنی، به‌ جای آنکه مجبور به پیروی از "
+"قواعد نحوی بسیار محدود باشیم، برنامه را بسیار کاربرپسندتر می‌کند."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14557
