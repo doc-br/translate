@@ -6,8 +6,8 @@ msgstr ""
 "POT-Creation-Date: 2020-06-06 11:08-0300\n"
 "PO-Revision-Date: 2020-10-09 08:07+0000\n"
 "Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
-"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
-"freebsd-doc/articles_linux-emulation/es/>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/freebsd-"
+"doc/articles_linux-emulation/es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1555,8 +1555,7 @@ msgid ""
 "if (__predict_true(p-&gt;p_sysent != &amp;elf_<trademark class=\"registered\">Linux</trademark>_sysvec))\n"
 "\t  return;"
 msgstr ""
-"if (__predict_true(p-&gt;p_sysent != &amp;elf_<trademark class=\"registered\""
-">Linux</trademark>_sysvec))\n"
+"if (__predict_true(p-&gt;p_sysent != &amp;elf_<trademark class=\"registered\">Linux</trademark>_sysvec))\n"
 "\t  return;"
 
 #. (itstool) path: sect3/para
@@ -1891,8 +1890,7 @@ msgid ""
 "{ AS(close_args), (sy_call_t *)close, AUE_CLOSE, NULL, 0, 0 }, /* 6 = close */"
 msgstr ""
 "{ 0, (sy_call_t *)linux_fork, AUE_FORK, NULL, 0, 0 }, /* 2 = linux_fork */\n"
-"{ AS(close_args), (sy_call_t *)close, AUE_CLOSE, NULL, 0, 0 }, /* 6 = close "
-"*/"
+"{ AS(close_args), (sy_call_t *)close, AUE_CLOSE, NULL, 0, 0 }, /* 6 = close */"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1368
@@ -3200,8 +3198,7 @@ msgstr ""
 "openat(123, /tmp/bah\\, flags, mode)\t/* opens /tmp/bah */\n"
 "openat(123, bah\\, flags, mode)\t\t/* opens /tmp/foo/bah */\n"
 "openat(AT_FDWCWD, bah\\, flags, mode)\t/* opens /tmp/bah */\n"
-"openat(stdio, bah\\, flags, mode)\t/* returns error because stdio is not a "
-"directory */"
+"openat(stdio, bah\\, flags, mode)\t/* returns error because stdio is not a directory */"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:2318
@@ -3503,4 +3500,5 @@ msgstr "<uri xlink:href=\"https://tldp.org\">https://tldp.org</uri>"
 #. (itstool) path: listitem/para
 #: article.translate.xml:2557
 msgid "<uri xlink:href=\"https://www.kernel.org\">https://www.kernel.org</uri>"
-msgstr "<uri xlink:href=\"https://www.kernel.org\">https://www.kernel.org</uri>"
+msgstr ""
+"<uri xlink:href=\"https://www.kernel.org\">https://www.kernel.org</uri>"
