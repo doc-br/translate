@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-10-30 22:52+0000\n"
+"PO-Revision-Date: 2020-11-01 22:01+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -12014,6 +12014,14 @@ msgid ""
 "services</filename>, your software will find its port without you having to "
 "rewrite the code."
 msgstr ""
+"شما معمولاً درگاه را می‌شناسید. اما اگر مشغول توسعه‌دهی قراردادی جدید هستید، "
+"ممکن است آن را در درگاهی غیر رسمی بیازمایید. یک روز، قرارداد و درگاهش را ثبت "
+"می‌کنید (اگر نه جای دیگر، حداقل در <filename>/etc/services</filename>، که "
+"همانجاست که تابع <function>getservbyname</function> به‌دنبالش می‌گردد). به "
+"جای بازگرداندن پیام خطا در کد بالا، تنها از شمارهٔ درگاه موقت استفاده کنید. "
+"هنگامی‌که قرارداد را در <filename>/etc/services</filename> قرار دادید، نرم‌"
+"افزارتان درگاه خود را بدون آنکه شما نیازی به بازنویسی کد داشته باشید پیدا "
+"خواهد کرد."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:6496
@@ -18526,6 +18534,14 @@ msgid ""
 "other programmers, by simply writing a new library without any changes to "
 "your code."
 msgstr ""
+"روش کتابخانه ممکن است در ابتدا به‌نظر نامناسب باشد زیرا شما را ملزم به ایجاد "
+"پرونده‌ای جدا می‌كند که کدتان بدان وابسته باشد. اما مزایای بسیاری دارد: برای "
+"مثال، تنها کافیست یکبار بنویسیدش و برای تمام برنامه‌هایتان از آن استفاده "
+"کنید. حتی می‌توانید به سایر برنامه‌نویسان زبان اسمبلی اجازهٔ استفاده از آن "
+"را بدهید، یا شاید از چیزی که شخص دیگری نوشته است استفاده کنید. اما احتمالا ً‌"
+"بزرگترین مزیت کتابخانه آن است که کد شما امکان پورت شدن به سایر سامانه‌ها را "
+"دارد، حتی توسط سایر برنامه‌نویسان، از طریق نوشتن کتابخانه‌ای جدید بدون ایجاد "
+"هیچ تغییری در کد شما."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9917
@@ -18535,6 +18551,10 @@ msgid ""
 "main program. Here, again, all porters have to do is create a new object "
 "file to link with your main program."
 msgstr ""
+"اگر ایدهٔ داشتن کتابخانه را دوست ندارید، حداقل می‌توانید تمام فراخوان‌های "
+"سامانهٔ خود را درون یک پروندهٔ‌ زبان اسمبلی مجزا قرار دهید و آن را با برنامهٔ"
+" اصلی خود پیوند دهید. در اینجا، دوباره، تمام آنچه که پورت‌کنندگان باید انجام "
+"دهند ساخت یک پروندهٔ هدف برای پیوند‌دهی با برنامهٔ اصلی است."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9925
@@ -24038,7 +24058,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:12690
 msgid "The Packed Decimal Format"
-msgstr ""
+msgstr "قالب ده‌دهی بسته‌بندی شده"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12692
@@ -24047,6 +24067,9 @@ msgid ""
 "memory to represent 18 digits. The number represented there is always an "
 "<emphasis>integer</emphasis>."
 msgstr ""
+"قالب <emphasis>ده‌دهی بسته‌بندی شده</emphasis> از ۱۰ بایت (۸۰ بیت) از حافظه "
+"برای نمایش ۱۸ رقم استفاده می‌کند. عدد نشان داده شده در آنجا همیشه یک "
+"<emphasis>عدد صحیح</emphasis> است."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:12698
