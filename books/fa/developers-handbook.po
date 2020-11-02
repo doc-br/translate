@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-11-01 23:41+0000\n"
+"PO-Revision-Date: 2020-11-02 12:08+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -24106,6 +24106,9 @@ msgid ""
 "<emphasis>nibble</emphasis> (4 bits), the <emphasis>less significant digit</"
 "emphasis> in the low <emphasis>nibble</emphasis>."
 msgstr ""
+"<emphasis>بیت با ارزش‌تر</emphasis> در <emphasis>نیم بایت</emphasis> بالا (۴ "
+"بیت)، <emphasis>رقم کم ارزش‌تر</emphasis> در <emphasis>نیم بایت</emphasis> "
+"پایین."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12717
@@ -24113,6 +24116,8 @@ msgid ""
 "That said, you might think that <constant>-1234567</constant> would be "
 "stored in the memory like this (using hexadecimal notation):"
 msgstr ""
+"به‌علاوه، ممکن است فکر کنید که <constant>-1234567</constant> بدین شکل در "
+"حافظه ذخیره می‌شود (با استفاده از نماد شانزده‌شانزدهی):"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:12721
@@ -24126,11 +24131,13 @@ msgid ""
 "Alas it is not! As with everything else of Intel make, even the "
 "<emphasis>packed decimal</emphasis> is <emphasis>little–endian</emphasis>."
 msgstr ""
+"افسوس که اینگونه نیست! مانند هر آنچه که Intel می‌سازد، حتی <emphasis>ده‌دهی "
+"بسته‌بندی شده</emphasis> یک <emphasis>اِندین کوچک</emphasis> است."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12727
 msgid "That means our <constant>-1234567</constant> is stored like this:"
-msgstr ""
+msgstr "این یعنی <constant>-1234567</constant> بدین شکل ذخیره می‌شود:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:12730
@@ -24142,6 +24149,8 @@ msgstr "67 45 23 01 00 00 00 00 00 80"
 #: book.translate.xml:12732
 msgid "Remember that, or you will be pulling your hair out in desperation!"
 msgstr ""
+"این را به خاطر داشته باشید، در غیر اینصورت موهای خود را از سر ناامیدی بیرون "
+"می‌کشید!"
 
 #. (itstool) path: note/para
 #: book.translate.xml:12736
