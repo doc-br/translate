@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-11-04 16:53+0000\n"
+"PO-Revision-Date: 2020-11-04 20:05+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -12152,6 +12152,13 @@ msgid ""
 "socket</emphasis>, i.e., the one opened by the top process right at the "
 "beginning."
 msgstr ""
+"ما <emphasis>serve</emphasis> را از <emphasis>فرایند دیمن</emphasis> به "
+"<emphasis>فرایند کارساز</emphasis> خودش منتقل کردیم. گرچه، از آنجا که هر "
+"فرایند فرزند تمام پرونده‌های باز را به ارث می‌برد (و با یک سوکت همانند یک "
+"پرونده برخورد می‌شود)، فرایند جدید نه تنها <emphasis><quote>accepted "
+"handle،</quote></emphasis> برای مثال، سوکتی که با فراخوان <function>accept</"
+"function> بازگشت داده شده، بلکه همچنین <emphasis>top socket</emphasis>، برای "
+"مثال، همان که توسط فرایند برتر در ابتدا باز شده است، را به ارث می‌برد."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6562
@@ -12163,6 +12170,12 @@ msgid ""
 "<function>close</function> it—otherwise, it will run out of available "
 "<emphasis>file descriptors</emphasis> sooner or later."
 msgstr ""
+"هرچند، <emphasis>فرایند کارساز</emphasis> به این سوکت نیازی ندارد و باید آن "
+"را به سرعت <function>close</function> کند. به همین ترتیب، <emphasis>فرایند "
+"دیمن</emphasis> دیگر نیازی به <emphasis>سوکت پذیرفته‌شده</emphasis> ندارد، و "
+"نه تنها باید، بلکه <emphasis>باید</emphasis> آن را <function> close</"
+"function> کند—در غیر اینصورت، دیر یا زود <emphasis>توصیف‌گرهای پروندهٔ</"
+"emphasis> موجود به پایان می‌رسند."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6571
@@ -12171,6 +12184,9 @@ msgid ""
 "close the <emphasis>accepted socket</emphasis>. Instead of returning to "
 "<function>accept</function>, it now exits."
 msgstr ""
+"پس از آنکه <emphasis>فرایند کارساز</emphasis> به خدمت‌رسانی خود پایان داد، "
+"باید <emphasis>سوکت پذیرفته‌شده</emphasis> را ببندد. به‌جای بازگشت به "
+"<function>accept</function>، اکنون خارج می‌شود."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6576
@@ -12184,6 +12200,14 @@ msgid ""
 "<function>wait</function>, its children will become <emphasis>zombies</"
 "emphasis>—no longer functional but still roaming around."
 msgstr ""
+"تحت <trademark class=\"registered\">UNIX</trademark>، یک فرایند به‌طور حقیقی "
+"<emphasis>خروج</emphasis> نمی‌کند. در عوض، به والد خود <emphasis>برمی‌گردد</"
+"emphasis>. معمولاً، یک فرایند فرزند <function>منتظر</function> فرایند‌های "
+"فرزند خود می‌ماند، و مقدار بازگشتی را بدست می‌آورد. گرچه، <emphasis>فرایند "
+"دیمن</emphasis> ما نمی‌تواند به‌سادگی متوقف شود و منتظر بماند. این امر می‌"
+"تواند تمام هدف ساختن فرایندهای اضافی را زیر سوال برد. اما چنانچه هرگز "
+"<function>منتظر</function> نماند، فرزندان آن تبدیل به <emphasis>زامبی</"
+"emphasis> می‌شوند—فاقد کارکرد اما هنوز مشغول پرسه‌زنی در اطراف."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6587
@@ -18860,6 +18884,15 @@ msgid ""
 "application> terminal, or an actual file, or even the input of another "
 "program. Which one it is, is for the system to figure out."
 msgstr ""
+"اگر از پیش‌زمینهٔ زبان اسمبلیِ <acronym><trademark class=\"registered\">MS-"
+"DOS</trademark></acronym> به <trademark class=\"registered\">UNIX</"
+"trademark> آمده‌اید، ممکن است به نوشتن مستقیم در سخت‌افزار ویدیو عادت کرده "
+"باشید. در FreeBSD یا هر <trademark class=\"registered\">UNIX</trademark> "
+"دیگری، هرگز نیاز به نگرانی در این مورد نیست. تا جایی که به شما مربوط می‌شود، "
+"در حال نوشتن در پرونده‌ای به نام <filename>stdout</filename> هستید. این ممکن "
+"است صفحهٔ ویدیو باشد، یا یک پایانهٔ <application>telnet</application>، یا "
+"پرونده‌ای حقیقی، یا حتی ورودی برنامه‌ای دیگر. هرکدام که باشد، فهم آن برای "
+"سامانه است."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:10060
