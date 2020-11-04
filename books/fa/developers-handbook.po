@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-11-04 20:05+0000\n"
+"PO-Revision-Date: 2020-11-04 21:02+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -12218,6 +12218,11 @@ msgid ""
 "processed, so the daemon can remove the zombie return values from the system "
 "and release the system resources they are taking up."
 msgstr ""
+"از این رو، <emphasis>فرایند دیمن</emphasis> باید در فاز <emphasis>initialize "
+"daemon</emphasis> خود <emphasis>signal handlers</emphasis> را قرار دهد. "
+"حداقل یک سیگنال <symbol>SIGCHLD</symbol> باید پردازش شود، تا دیمن بتواند "
+"مقادیر بازگشتی زامبی را از سامانه حذف کند و منابع سامانه‌ای که اشغال می‌کنند "
+"را آزاد کند."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6594
@@ -12229,6 +12234,12 @@ msgid ""
 "This allows us to change settings without having to kill and restart these "
 "servers."
 msgstr ""
+"به همین خاطر روندنمای ما اکنون شامل یک جعبهٔ <emphasis>process signals</"
+"emphasis> است، که به هیچ جعبهٔ دیگری متصل نیست. در ضمن، بسیاری از کارسازها "
+"نیز <symbol>SIGHUP</symbol> را پردازش می‌کنند، و معمولاً‌ به‌عنوان سیگنالی "
+"از ابرکابری تفسیر می‌کنند که باید پرونده‌های پیکربندی‌شان را بازخوانی کنند. "
+"این به ما اجازه می‌دهد تا تنظیمات را تغییر دهیم، بدون آنکه مجبور به از بین "
+"بردن و باز‌راه اندازی این کارسازها باشیم."
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:6611
