@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-11-04 21:02+0000\n"
+"PO-Revision-Date: 2020-11-08 18:07+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.3.1\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -22095,6 +22095,18 @@ msgid ""
 "<acronym><trademark class=\"registered\">POSIX</trademark></acronym> "
 "version, which is what we will use."
 msgstr ""
+"اگر نسخهٔ خود از <filename>syscalls.master</filename> را بیازمایید، با دو "
+"فراخوان سامانهٔ جداگانه به نام <function role=\"syscall\">mmap</function> "
+"مواجه می‌شوید. این به خاطر سیر تکاملی <trademark class=\"registered\">UNIX</"
+"trademark> است: یک فراخوان سامانهٔ سنتی داشتیم، <acronym>BSD</"
+"acronym><function role=\"syscall\">mmap</function> فراخون سامانهٔ 71. آن "
+"فراخوان توسط <acronym><trademark class=\"registered\">POSIX</trademark></"
+"acronym><function role=\"syscall\">mmap</function>، فراخوان سامانهٔ 197 "
+"جایگزین شد. سامانهٔ FreeBSD از هر دوی آنها پشتیبانی می‌کند زیرا برنامه‌های "
+"قدیمی به‌وسیلهٔ نسخهٔ اصلی <acronym>BSD</acronym> نگاشته شده‌اند. اما نرم‌"
+"افزار جدید از نسخهٔ <acronym><trademark class=\"registered\""
+">POSIX</trademark></acronym> استفاده می‌کند، که همان چیزیست که استفاده "
+"می‌کنیم."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11644
@@ -22943,6 +22955,14 @@ msgid ""
 "certain size, <function role=\"syscall\">mmap</function> will just fill the "
 "memory with zeros, and then copy them to the file overwriting its contents."
 msgstr ""
+"این برنامه را در پرونده‌های ذخیره شده بر روی دیسک فرمت شده توسط "
+"<acronym><trademark class=\"registered\">MS-DOS</trademark></acronym> یا "
+"<trademark class=\"registered\">Windows</trademark> استفاده نکنید. به نظر می‌"
+"رسد که هنگام استفاده از <function role=\"syscall\">mmap</function> در این "
+"رانه‌هایی که تحت FreeBSD وصل شده‌اند اشکال نامحسوسی در کد FreeBSD وجود داشته "
+"باشد: اگر پرونده فراتر از اندازهٔ مشخصی باشد، <function role=\"syscall\""
+">mmap</function> تنها حافظه را با صفرها پر می‌کند، و سپس آنها رادر پرونده‌ "
+"کپی می‌کند و محتویاتش را بازنویسی می‌کند."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:12053
@@ -22968,6 +22988,12 @@ msgid ""
 "\"registered\">UNIX</trademark> program does only one thing, and it does it "
 "well."
 msgstr ""
+"این، در واقع بسیار شبیه به نحوهٔ کارکرد <trademark class=\"registered\""
+">UNIX</trademark> است. هنگامی‌که یک برنامهٔ عادی در <trademark class="
+"\"registered\">Windows</trademark> سعی دارد تا هر کار قابل تصوری را انجام "
+"دهد (و در نتیجه، مملو از اشکال است)، یک برنامهٔ عادی در <trademark class="
+"\"registered\">UNIX</trademark> تنها یک کار را انجام می‌دهد، و آن را به‌"
+"درستی انجام دهد."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:12063
@@ -23157,6 +23183,11 @@ msgid ""
 "will replace all at signs (useful if you want to split a list of email "
 "addresses to their user names and domains)."
 msgstr ""
+"من نیازی به گزینهٔ <parameter>-c</parameter> نداشتم، گرچه در آینده ممکن است "
+"چاره‌ساز باشد. این امکان را به من می‌دهد تا اعلام کنم به‌جای ویرگول جدا شده "
+"با یک چیز دیگر، نویسهٔ دیگری می‌خواهم. برای مثال، <parameter>-c@</parameter> "
+"همهٔ at sign ها را جایگزین می‌کند (چنانچه بخواهید از نشانی‌های ایمیل، فهرستی "
+"شامل نام‌های کاربری و دامنه‌هایشان را ایجاد کنید)."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12165
@@ -23165,6 +23196,9 @@ msgid ""
 "not delete it. By default, we delete the first line because in a "
 "<acronym>CSV</acronym> file it contains the field names rather than data."
 msgstr ""
+"گزینهٔ <parameter>-p</parameter> سطر نخست را حفظ می‌کند، برای مثال، آن را "
+"حذف نمی‌کند. به‌طور پیش‌فرض، سطر نخست را حذف می‌کنیم زیرا در یک پروندهٔ "
+"<acronym>CSV</acronym> به‌جای داده، شامل اسامی رشته است."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12170
@@ -23174,6 +23208,10 @@ msgid ""
 "filename> and <filename>stdout</filename>, so this is a regular <trademark "
 "class=\"registered\">UNIX</trademark> filter."
 msgstr ""
+"گزینه‌های <parameter>-i</parameter> و <parameter>-o</parameter> این امکان را "
+"می‌دهند تا ورودی و خروجی پرونده‌ها را تعیین کنم. پیش‌فرض‌ها شامل "
+"<filename>stdin</filename> و <filename>stdout</filename> هستند، پس این یک "
+"فیلتر عادیِ <trademark class=\"registered\">UNIX</trademark> است."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12176
@@ -23182,6 +23220,9 @@ msgid ""
 "ifilename</parameter> are accepted. I also made sure that only one input and "
 "one output files may be specified."
 msgstr ""
+"اطمینان پیدا کردم که هر دو <parameter>-i filename</parameter> و "
+"<parameter>-ifilename</parameter> پذیرفته می‌شوند. همچنین مطمئن شدم که تنها "
+"یک پروندهٔ ورودی و یک پروندهٔ خروجی تعیین گردند."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12181
@@ -23772,6 +23813,10 @@ msgid ""
 "whenever I am outputting a line feed. Yet, the code can be used "
 "interactively."
 msgstr ""
+"بیشتر آن از پروندهٔ بالا، <filename>hex.asm</filename>، آمده است. اما یک "
+"تفاوت مهم وجود دارد: من هر زمان که نوسطری ایجاد می‌کنم، دیگر "
+"<function>write</function> را فراخوانی نمی‌کنم. با این‌حال، امکان استفادهٔ "
+"تعاملی از کد وجود دارد."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12472
@@ -24310,6 +24355,10 @@ msgid ""
 "<emphasis>pinholes</emphasis> are used, both as a tool to study how cameras "
 "work, and to achieve a special kind of image."
 msgstr ""
+"اما، به‌طور دقیق بگویم، عدسی لازم نیست: دوربین‌های اصلی از یک "
+"<emphasis>روزنه</emphasis> استفاده می‌کردند نه یک عدسی. حتی امروزه، "
+"<emphasis>روزنه‌‌ها</emphasis> مورد استفاده قرار می‌گیرند، هر دو به‌منظور "
+"مطالعهٔ چگونگی کارکرد دوربین‌ها، و برای دست‌یابی به نوع خاصی از تصویر."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12795
@@ -24331,6 +24380,8 @@ msgid ""
 "<emphasis>focal length</emphasis>, which is the distance of the pinhole from "
 "the film."
 msgstr ""
+"این قطر روزنهٔ ایده‌آل تابعی از جذر <emphasis>فاصلهٔ کنونی</emphasis> است، "
+"که فاصلهٔ روزنه از فیلم است."
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:12808
