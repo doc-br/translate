@@ -4,13 +4,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-11-09 07:02+0000\n"
+"Last-Translator: Hongyou Bai <bhy1924@gmail.com>\n"
+"Language-Team: Chinese (Simplified) <https://translate-dev.freebsd.org/"
+"projects/freebsd-doc/boooks_developers-handbook/zh_CN/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -20,12 +23,12 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:32
 msgid "FreeBSD Developers' Handbook"
-msgstr ""
+msgstr "FreeBSD 开发者手册"
 
 #. (itstool) path: info/author
 #: book.translate.xml:35
 msgid "<orgname>The FreeBSD Documentation Project</orgname>"
-msgstr ""
+msgstr "<orgname>FreeBSD 文档计划</orgname>"
 
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
@@ -34,6 +37,8 @@ msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/books/developers-handbook/book.xml 54255 "
 "2020-06-15 08:13:08Z bcr $"
 msgstr ""
+"$FreeBSD: head/en_US.ISO8859-1/books/developers-handbook/book.xml 54255 "
+"2020-06-15 08:13:08Z bcr $"
 
 #. (itstool) path: info/copyright
 #: book.translate.xml:39
@@ -45,11 +50,17 @@ msgid ""
 "<year>2016</year> <year>2017</year> <year>2018</year> <year>2019</year> "
 "<year>2020</year> <holder>The FreeBSD Documentation Project</holder>"
 msgstr ""
+"<year>2000</year> <year>2001</year> <year>2002</year> <year>2003</year> "
+"<year>2004</year> <year>2005</year> <year>2006</year> <year>2007</year> "
+"<year>2008</year> <year>2009</year> <year>2010</year> <year>2011</year> "
+"<year>2012</year> <year>2013</year> <year>2014</year> <year>2015</year> "
+"<year>2016</year> <year>2017</year> <year>2018</year> <year>2019</year> "
+"<year>2020</year> <holder>FreeBSD 文档计划</holder>"
 
 #. (itstool) path: legalnotice/title
 #: book.translate.xml:66
 msgid "Copyright"
-msgstr ""
+msgstr "版权"
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:68
@@ -58,6 +69,8 @@ msgid ""
 "HTML, PDF, PostScript, RTF and so forth) with or without modification, are "
 "permitted provided that the following conditions are met:"
 msgstr ""
+"允许在源文件（XML "
+"DocBook）和以“已编译”（XML，HTML，PDF，PostScript，RTF等）格式重新分发和使用（无论是否经过修改），但必须满足以下条件："
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:75
@@ -65,7 +78,7 @@ msgid ""
 "Redistributions of source code (XML DocBook) must retain the above copyright "
 "notice, this list of conditions and the following disclaimer as the first "
 "lines of this file unmodified."
-msgstr ""
+msgstr "源代码形式 (XML DocBook) 的重新分发必须保留上述版权声明、且此条件列表和以下免责声明作为此文件的第一行, 而不进行改动。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:81
@@ -75,6 +88,8 @@ msgid ""
 "notice, this list of conditions and the following disclaimer in the "
 "documentation and/or other materials provided with the distribution."
 msgstr ""
+"以编译形式重新分发（转换为其他DTD，转换为PDF，PostScript，RTF和其他格式）必须在随分发提供的文档和/或其他材料中复制上述版权声明，此条件"
+"列表和以下免责声明。"
 
 #. (itstool) path: important/para
 #: book.translate.xml:90
@@ -91,11 +106,16 @@ msgid ""
 "ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF "
 "THE POSSIBILITY OF SUCH DAMAGE."
 msgstr ""
+"本文档由 FREEBSD DOCUMENTATION PROJECT “按现状条件” "
+"提供，并在此明示不提供任何明示或暗示的保障，包括但不限于对商业适销性、对特定目的的适用性的暗示保障。任何情况下，FREEBSD "
+"DOCUMENTATION PROJECT 均不对任何直接、间接、偶然、特殊、惩罚性的，或必然的损失（包括但不限于替代商品或服务的采购、使用、数据或利益的"
+"损失或营业中断）负责，无论是如何导致的并以任何有责任逻辑的，无论是否是在本文档使用以外以任何方式产生的契约、严格责任或是民事侵权行为（包括疏忽或其它）中的"
+"， 即使已被告知发生该损失的可能性。"
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:107
 msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
-msgstr ""
+msgstr "FreeBSD 是 FreeBSD 基金会的注册商标。"
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:109
@@ -104,6 +124,8 @@ msgid ""
 "Quicktime, and TrueType are trademarks of Apple Inc., registered in the U.S. "
 "and other countries."
 msgstr ""
+"Apple、Airport、FireWire、Imac、iMac、iPad、Mac、Macintosh、mac OS、QuickTime 和 "
+"TrueType 是苹果公司在美国和其他国家注册的商标。"
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:114
@@ -112,6 +134,8 @@ msgid ""
 "International Business Machines Corporation in the United States, other "
 "countries, or both."
 msgstr ""
+"IBM，AIX，OS/2，PowerPC，PS/2，S/390 和 ThinkPad 是 International Business Machines "
+"Corporation 在美国或其他国家的商标。"
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:118
@@ -119,6 +143,7 @@ msgid ""
 "IEEE, POSIX, and 802 are registered trademarks of Institute of Electrical "
 "and Electronics Engineers, Inc. in the United States."
 msgstr ""
+"IEEE，POSIX 和 802 是 Institute of Electrical and Electronics, Inc. 在美国的注册商标。"
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:121
@@ -127,11 +152,13 @@ msgid ""
 "and Xeon are trademarks or registered trademarks of Intel Corporation or its "
 "subsidiaries in the United States and other countries."
 msgstr ""
+"Intel，Celeron，Centrino，Core，EtherExpress，i386，i486，Itanium，Pentium 和 Xeon 是 "
+"Intel Corporation 及其子公司在美国和其他国家的注册商标。"
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:125
 msgid "Linux is a registered trademark of Linus Torvalds."
-msgstr ""
+msgstr "Linux 是 Linus Torvalds 的注册商标。"
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:127
@@ -140,6 +167,8 @@ msgid ""
 "NT are either registered trademarks or trademarks of Microsoft Corporation "
 "in the United States and/or other countries."
 msgstr ""
+"微软、智能鼠标、MS-DOS、Outlook、Windows、Windows Media和 Windows NT "
+"是微软公司在美国和其他国家的注册商标或商标。"
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:131
@@ -148,6 +177,8 @@ msgid ""
 "Open Group are trademarks of The Open Group in the United States and other "
 "countries."
 msgstr ""
+"Motif，OSF/1 是 The Open Group 在美国和其他国家的注册商标。IT DialTone 和 The Open Group 是 "
+"The Open Group 在美国和其他国家的商标。"
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:135
@@ -157,6 +188,9 @@ msgid ""
 "registered trademarks of Sun Microsystems, Inc. in the United States and "
 "other countries."
 msgstr ""
+"Sun，Sun Microsystems，Java，Java Virtual "
+"Machine，JDK，JRE，JSP，JVM，Netra，OpenJDK，Solaris，StarOffice，SunOS 和 VirtualBox "
+"是 Sun Microsystems Inc. 在美国和其他国家的注册商标。"
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:140
@@ -167,6 +201,8 @@ msgid ""
 "designations have been followed by the <quote>™</quote> or the <quote>®</"
 "quote> symbol."
 msgstr ""
+"制造商和销售商为区分其产品而使用的许多名称都被认作商标。如果这些标识出现在本文档中, 并且 FreeBSD 项目知道商标声明, 则在这些名称之后增加 "
+"<quote>™</quote> 或 <quote>®</quote> 标记。"
 
 #. (itstool) path: abstract/para
 #: book.translate.xml:151
@@ -178,6 +214,9 @@ msgid ""
 "\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc\">FreeBSD "
 "documentation project mailing list</link>."
 msgstr ""
+"欢迎阅读 FreeBSD 开发者手册。本手册由许多志愿者共同完成，并<emphasis>不断更新</emphasis>。有些章节不完善，部分已有章节亟待更"
+"新。如果你有兴趣参与撰写文档，发送邮件到<link xlink:href=\"http://lists.FreeBSD.org/mailman/"
+"listinfo/freebsd-doc\">FreeBSD 文档计划邮件列表</link>。"
 
 #. (itstool) path: abstract/para
 #: book.translate.xml:157
@@ -190,17 +229,22 @@ msgid ""
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/mirrors-ftp.html"
 "\">mirror sites</link>."
 msgstr ""
+"本文档最新版本可从 <link xlink:href=\"@@URL_RELPREFIX@@/index.html\">FreeBSD World "
+"Wide Web server</link>获得。您还可以从<link xlink:href=\"https://download.freebsd."
+"org/ftp/doc/\">FreeBSD FTP server</link> 或任意一个 <link xlink:href=\""
+"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/mirrors-ftp.html\""
+">镜像站点</link>获取本文档的压缩文件其他格式文件。"
 
 #. (itstool) path: part/title
 #: book.translate.xml:167
 msgid "Basics"
-msgstr ""
+msgstr "基础"
 
 #. (itstool) path: info/title
 #. (itstool) path: sect1/title
 #: book.translate.xml:176 book.translate.xml:430
 msgid "Introduction"
-msgstr ""
+msgstr "介绍"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:178 book.translate.xml:2956
@@ -208,6 +252,8 @@ msgid ""
 "<personname><firstname>Murray</firstname><surname>Stokely</surname></"
 "personname><contrib>Contributed by </contrib>"
 msgstr ""
+"<personname><firstname>Murray</firstname><surname>Stokely</surname></"
+"personname><contrib>撰稿人 </contrib>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:179
@@ -215,11 +261,13 @@ msgid ""
 "<personname><firstname>Jeroen</firstname><surname>Ruigrok van der Werven</"
 "surname></personname>"
 msgstr ""
+"<personname><firstname>Jeroen</firstname><surname>Ruigrok van der "
+"Werven</surname></personname>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:185
 msgid "Developing on FreeBSD"
-msgstr ""
+msgstr "在 FreeBSD 上编程"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:187
@@ -227,7 +275,7 @@ msgid ""
 "So here we are. System all installed and you are ready to start programming. "
 "But where to start? What does FreeBSD provide? What can it do for me, as a "
 "programmer?"
-msgstr ""
+msgstr "系统安装完毕后，你可以开始编程了。但从哪里开始呢？FreeBSD 提供了什么？作为一个程序员，它能为我做什么？"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:191
@@ -238,6 +286,8 @@ msgid ""
 "this chapter might be aimed toward the beginning programmer; indeed, it "
 "could serve useful for the programmer unfamiliar with the FreeBSD platform."
 msgstr ""
+"这些都是本章试图回答的一些问题。当然，编程和其他行业一样，有不同的熟练程度。对一些人来说，它是一种爱好，对另一些人来说，它是他们的职业。这一章的信息可能是"
+"针对初学者的，事实上，对于不熟悉 FreeBSD 平台的程序员来说，这一章的信息也是有用的。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:200
