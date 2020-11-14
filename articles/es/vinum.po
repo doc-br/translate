@@ -4,13 +4,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:08-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-11-15 08:34+0000\n"
+"Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/articles_vinum/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -193,7 +196,7 @@ msgstr ""
 #: article.translate.xml:156
 msgctxt "_"
 msgid "external ref='vinum-concat' md5='__failed__'"
-msgstr ""
+msgstr "external ref='vinum-concat' md5='__failed__'"
 
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:161
@@ -246,7 +249,7 @@ msgstr ""
 #: article.translate.xml:197
 msgctxt "_"
 msgid "external ref='vinum-striped' md5='__failed__'"
-msgstr ""
+msgstr "external ref='vinum-striped' md5='__failed__'"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:204
@@ -339,7 +342,7 @@ msgstr ""
 #: article.translate.xml:268
 msgctxt "_"
 msgid "external ref='vinum-raid5-org' md5='__failed__'"
-msgstr ""
+msgstr "external ref='vinum-raid5-org' md5='__failed__'"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:273
@@ -539,12 +542,12 @@ msgstr ""
 #. (itstool) path: row/entry
 #: article.translate.xml:417 article.translate.xml:427
 msgid "yes"
-msgstr ""
+msgstr "si"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:418 article.translate.xml:426
 msgid "no"
-msgstr ""
+msgstr "no"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:419
@@ -561,7 +564,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: article.translate.xml:425
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:428
@@ -608,6 +611,10 @@ msgid ""
 "      plex org concat\n"
 "        sd length 512m drive a"
 msgstr ""
+"    drive a device /dev/da3h\n"
+"    volume myvol\n"
+"      plex org concat\n"
+"        sd length 512m drive a"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:464
@@ -682,6 +689,22 @@ msgid ""
 "\n"
 "  S myvol.p0.s0           State: up       PO:        0  B Size:      512 MB"
 msgstr ""
+"\n"
+"<prompt>#</prompt> gvinum -&gt; <userinput>create config1</userinput>\n"
+"Configuration summary\n"
+"Drives:         1 (4 configured)\n"
+"Volumes:        1 (4 configured)\n"
+"Plexes:         1 (8 configured)\n"
+"Subdisks:       1 (16 configured)\n"
+"\n"
+"  D a                     State: up       Device /dev/da3h      Avail: 2061/"
+"2573 MB (80%)\n"
+"\n"
+"  V myvol                 State: up       Plexes:       1 Size:      512 MB\n"
+"\n"
+"  P myvol.p0            C State: up       Subdisks:     1 Size:      512 MB\n"
+"\n"
+"  S myvol.p0.s0           State: up       PO:        0  B Size:      512 MB"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:527
@@ -705,7 +728,7 @@ msgstr ""
 #: article.translate.xml:537
 msgctxt "_"
 msgid "external ref='vinum-simple-vol' md5='__failed__'"
-msgstr ""
+msgstr "external ref='vinum-simple-vol' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:542
@@ -750,6 +773,12 @@ msgid ""
 "\t  plex org concat\n"
 "\t    sd length 512m drive b"
 msgstr ""
+"\tdrive b device /dev/da4h\n"
+"\tvolume mirror\n"
+"      plex org concat\n"
+"        sd length 512m drive a\n"
+"\t  plex org concat\n"
+"\t    sd length 512m drive b"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:572
@@ -784,6 +813,34 @@ msgid ""
 "\tS mirror.p0.s0          State: up       PO:        0  B Size:        512 MB\n"
 "\tS mirror.p1.s0          State: empty    PO:        0  B Size:        512 MB"
 msgstr ""
+"\n"
+"\tDrives:         2 (4 configured)\n"
+"\tVolumes:        2 (4 configured)\n"
+"\tPlexes:         3 (8 configured)\n"
+"\tSubdisks:       3 (16 configured)\n"
+"\n"
+"\tD a                     State: up       Device /dev/da3h       Avail: 1549/"
+"2573 MB (60%)\n"
+"\tD b                     State: up       Device /dev/da4h       Avail: 2061/"
+"2573 MB (80%)\n"
+"\n"
+"    V myvol                 State: up       Plexes:       1 Size:        512 "
+"MB\n"
+"    V mirror                State: up       Plexes:       2 Size:        512 "
+"MB\n"
+"\n"
+"    P myvol.p0            C State: up       Subdisks:     1 Size:        512 "
+"MB\n"
+"    P mirror.p0           C State: up       Subdisks:     1 Size:        512 "
+"MB\n"
+"    P mirror.p1           C State: initializing     Subdisks:     1 Size:"
+"        512 MB\n"
+"\n"
+"    S myvol.p0.s0           State: up       PO:        0  B Size:        512 "
+"MB\n"
+"\tS mirror.p0.s0          State: up       PO:        0  B Size:        512 "
+"MB\n"
+"\tS mirror.p1.s0          State: empty    PO:        0  B Size:        512 MB"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:598
@@ -803,7 +860,7 @@ msgstr ""
 #: article.translate.xml:608
 msgctxt "_"
 msgid "external ref='vinum-mirrored-vol' md5='__failed__'"
-msgstr ""
+msgstr "external ref='vinum-mirrored-vol' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:613
@@ -842,6 +899,14 @@ msgid ""
 "\t  sd length 128m drive c\n"
 "\t  sd length 128m drive d"
 msgstr ""
+"        drive c device /dev/da5h\n"
+"\tdrive d device /dev/da6h\n"
+"\tvolume stripe\n"
+"\tplex org striped 512k\n"
+"\t  sd length 128m drive a\n"
+"\t  sd length 128m drive b\n"
+"\t  sd length 128m drive c\n"
+"\t  sd length 128m drive d"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:640
@@ -883,6 +948,51 @@ msgid ""
 "    S striped.p0.s2         State: up       PO:     1024 kB Size:        128 MB\n"
 "    S striped.p0.s3         State: up       PO:     1536 kB Size:        128 MB"
 msgstr ""
+"\n"
+"\tDrives:         4 (4 configured)\n"
+"\tVolumes:        3 (4 configured)\n"
+"\tPlexes:         4 (8 configured)\n"
+"\tSubdisks:       7 (16 configured)\n"
+"\n"
+"    D a                     State: up       Device /dev/da3h        Avail: "
+"1421/2573 MB (55%)\n"
+"    D b                     State: up       Device /dev/da4h        Avail: "
+"1933/2573 MB (75%)\n"
+"    D c                     State: up       Device /dev/da5h        Avail: "
+"2445/2573 MB (95%)\n"
+"    D d                     State: up       Device /dev/da6h        Avail: "
+"2445/2573 MB (95%)\n"
+"\n"
+"    V myvol                 State: up       Plexes:       1 Size:        512 "
+"MB\n"
+"    V mirror                State: up       Plexes:       2 Size:        512 "
+"MB\n"
+"    V striped               State: up       Plexes:       1 Size:        512 "
+"MB\n"
+"\n"
+"    P myvol.p0            C State: up       Subdisks:     1 Size:        512 "
+"MB\n"
+"    P mirror.p0           C State: up       Subdisks:     1 Size:        512 "
+"MB\n"
+"    P mirror.p1           C State: initializing     Subdisks:     1 Size:"
+"        512 MB\n"
+"    P striped.p1            State: up       Subdisks:     1 Size:        512 "
+"MB\n"
+"\n"
+"    S myvol.p0.s0           State: up       PO:        0  B Size:        512 "
+"MB\n"
+"    S mirror.p0.s0          State: up       PO:        0  B Size:        512 "
+"MB\n"
+"    S mirror.p1.s0          State: empty    PO:        0  B Size:        512 "
+"MB\n"
+"    S striped.p0.s0         State: up       PO:        0  B Size:        128 "
+"MB\n"
+"    S striped.p0.s1         State: up       PO:      512 kB Size:        128 "
+"MB\n"
+"    S striped.p0.s2         State: up       PO:     1024 kB Size:        128 "
+"MB\n"
+"    S striped.p0.s3         State: up       PO:     1536 kB Size:        128 "
+"MB"
 
 #. (itstool) path: figure/title
 #: article.translate.xml:675
@@ -897,7 +1007,7 @@ msgstr ""
 #: article.translate.xml:680
 msgctxt "_"
 msgid "external ref='vinum-striped-vol' md5='__failed__'"
-msgstr ""
+msgstr "external ref='vinum-striped-vol' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:685
@@ -939,6 +1049,19 @@ msgid ""
 "        sd length 102480k drive a\n"
 "        sd length 102480k drive b"
 msgstr ""
+"\tvolume raid10\n"
+"      plex org striped 512k\n"
+"        sd length 102480k drive a\n"
+"        sd length 102480k drive b\n"
+"        sd length 102480k drive c\n"
+"        sd length 102480k drive d\n"
+"        sd length 102480k drive e\n"
+"      plex org striped 512k\n"
+"        sd length 102480k drive c\n"
+"        sd length 102480k drive d\n"
+"        sd length 102480k drive e\n"
+"        sd length 102480k drive a\n"
+"        sd length 102480k drive b"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:714
@@ -967,7 +1090,7 @@ msgstr ""
 #: article.translate.xml:729
 msgctxt "_"
 msgid "external ref='vinum-raid10-vol' md5='__failed__'"
-msgstr ""
+msgstr "external ref='vinum-raid10-vol' md5='__failed__'"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:737
@@ -1048,6 +1171,16 @@ msgid ""
 "        sd length 100m drive drive3\n"
 "        sd length 100m drive drive4"
 msgstr ""
+"\tdrive drive1 device /dev/sd1h\n"
+"\tdrive drive2 device /dev/sd2h\n"
+"\tdrive drive3 device /dev/sd3h\n"
+"\tdrive drive4 device /dev/sd4h\n"
+"    volume s64 setupstate\n"
+"      plex org striped 64k\n"
+"        sd length 100m drive drive1\n"
+"        sd length 100m drive drive2\n"
+"        sd length 100m drive drive3\n"
+"        sd length 100m drive drive4"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:796
@@ -1077,6 +1210,21 @@ msgid ""
 "    crwxr-xr--  1 root  wheel   91, 0x20200002 Apr 13 16:46 s64.p0.s2\n"
 "    crwxr-xr--  1 root  wheel   91, 0x20300002 Apr 13 16:46 s64.p0.s3"
 msgstr ""
+"\tdrwxr-xr-x  2 root  wheel       512 Apr 13\n"
+"16:46 plex\n"
+"\tcrwxr-xr--  1 root  wheel   91,   2 Apr 13 16:46 s64\n"
+"\tdrwxr-xr-x  2 root  wheel       512 Apr 13 16:46 sd\n"
+"\n"
+"    /dev/vinum/plex:\n"
+"    total 0\n"
+"    crwxr-xr--  1 root  wheel   25, 0x10000002 Apr 13 16:46 s64.p0\n"
+"\n"
+"    /dev/vinum/sd:\n"
+"    total 0\n"
+"    crwxr-xr--  1 root  wheel   91, 0x20000002 Apr 13 16:46 s64.p0.s0\n"
+"    crwxr-xr--  1 root  wheel   91, 0x20100002 Apr 13 16:46 s64.p0.s1\n"
+"    crwxr-xr--  1 root  wheel   91, 0x20200002 Apr 13 16:46 s64.p0.s2\n"
+"    crwxr-xr--  1 root  wheel   91, 0x20300002 Apr 13 16:46 s64.p0.s3"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:815
