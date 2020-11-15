@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-10-18 10:50-0300\n"
-"PO-Revision-Date: 2020-04-18 19:38+0000\n"
+"PO-Revision-Date: 2020-11-15 19:59+0000\n"
 "Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate-dev.freebsd.org/"
 "projects/freebsd-doc/articles_linux-users/pt_BR/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -52,16 +52,12 @@ msgstr "<year>2008</year> <holder>Projeto de Documentação do FreeBSD</holder>"
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:15 article.translate.xml:17
-#, fuzzy
-#| msgid ""
-#| "$FreeBSD: head/en_US.ISO8859-1/articles/linux-users/article.xml 52142 "
-#| "2018-08-16 16:43:18Z bcr $"
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/linux-users/article.xml 54379 "
 "2020-07-28 07:41:21Z bcr $"
 msgstr ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/linux-users/article.xml 52142 "
-"2018-08-16 16:43:18Z bcr $"
+"$FreeBSD: head/en_US.ISO8859-1/articles/linux-users/article.xml 54379 "
+"2020-07-28 07:41:21Z bcr $"
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:20
@@ -359,13 +355,6 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:160
-#, fuzzy
-#| msgid ""
-#| "The FreeBSD Ports Collection is a framework of <filename>Makefiles</"
-#| "filename> and patches specifically customized for installing applications "
-#| "from source on FreeBSD. When installing a port, the system will fetch the "
-#| "source code, apply any required patches, compile the code, and install "
-#| "the application and any required dependencies."
 msgid ""
 "The FreeBSD Ports Collection is a framework of <filename>Makefile</"
 "filename>s and patches specifically customized for installing applications "
@@ -373,8 +362,8 @@ msgid ""
 "source code, apply any required patches, compile the code, and install the "
 "application and any required dependencies."
 msgstr ""
-"A árvore de ports do FreeBSD é um framework de <filename>Makefiles</"
-"filename> e patches customizados especificamente para a instalação através "
+"A árvore de ports do FreeBSD é um framework de <filename>Makefile</"
+"filename>s e patches customizados especificamente para a instalação através "
 "do código fonte no FreeBSD. Quando um port é instalado, o sistema irá buscar "
 "o código fonte, aplicar qualquer patch que seja necessário, compilar o "
 "código, instalar a aplicação e qualquer outra dependência da qual ela "
@@ -382,15 +371,6 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:167
-#, fuzzy
-#| msgid ""
-#| "The Ports Collection, sometimes referred to as the ports tree, can be "
-#| "installed to <filename>/usr/ports</filename> using "
-#| "<citerefentry><refentrytitle>portsnap</refentrytitle><manvolnum>8</"
-#| "manvolnum></citerefentry>. Detailed instructions for installing the Ports "
-#| "Collection can be found in <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US."
-#| "ISO8859-1/books/handbook/ports-using.html\">section 5.5</link> of the "
-#| "FreeBSD Handbook."
 msgid ""
 "The Ports Collection, sometimes referred to as the ports tree, can be "
 "installed to <filename>/usr/ports</filename> using "
@@ -402,12 +382,13 @@ msgid ""
 "FreeBSD Handbook."
 msgstr ""
 "A Coleção de Ports, algumas vezes referenciada como a árvore de ports, pode "
-"ser instalada em <filename>/usr/ports</filename> usando o comando "
-"<citerefentry><refentrytitle>portsnap</refentrytitle><manvolnum>8</"
-"manvolnum></citerefentry>. Instruções detalhadas para instalação da Coleção "
-"de Ports podem ser encontradas na <link xlink:href=\"@@URL_RELPREFIX@@/doc/"
-"en_US.ISO8859-1/books/handbook/ports-using.html\">seção 5.5</link> do "
-"Handbook do FreeBSD."
+"ser instalada em <filename>/usr/ports</filename> usando o comando <citerefent"
+"ry><refentrytitle>portsnap</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> (se estiver rodando FreeBSD 11.4 ou 12.1) ou Subversion (se "
+"estiver rodando FreeBSD-CURRENT). Instruções detalhadas para instalação da "
+"Coleção de Ports podem ser encontradas na <link xlink:href=\""
+"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/ports-using.html\""
+">seção 5.5</link> do Handbook do FreeBSD."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:175
