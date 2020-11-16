@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-11-13 16:18+0000\n"
+"PO-Revision-Date: 2020-11-17 00:22+0000\n"
 "Last-Translator: Parsa Samet <qps@irbug.org>\n"
 "Language-Team: Persian <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_developers-handbook/fa/>\n"
@@ -23840,6 +23840,11 @@ msgid ""
 "sees its input buffer is empty. It flushes its output and reads the next "
 "line."
 msgstr ""
+"راه حل جدیدی که اکنون استفاده می‌کنم چنین است که هر زمان که میان‌گیر ورودی "
+"خالی است، <function>write</function> را فراخوانی می‌کنم. با این کار، هنگام "
+"اجرا در حالت تعاملی، برنامه یک سطر از صفحه کلید کاربر می‌خواند، آن را پردازش "
+"می‌کند، و می‌بیند که میان‌گیر ورودی‌اش خالی است. خروجی‌اش را پاک می‌کند و "
+"سطر بعدی را می‌خواند."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:12486
@@ -24026,7 +24031,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:12601
 msgid "Using the <acronym>FPU</acronym>"
-msgstr ""
+msgstr "استفاده از <acronym>FPU</acronym>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:12603
@@ -24282,7 +24287,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:12751
 msgid "Excursion to Pinhole Photography"
-msgstr "گشتی در عکس برداری Pinhole (سوراخ سوزنی)"
+msgstr "گشتی در عکس برداری Pinhole (روزنه)"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12753
@@ -24300,9 +24305,9 @@ msgid ""
 "camera</emphasis>, so, we need some background in <emphasis>pinhole "
 "photography</emphasis> before we can continue."
 msgstr ""
-"فیلتر بعدی ما هر زمان که می‌خواهیم یک <emphasis>دوربین سوراخ سوزنی</"
-"emphasis> بسازیم کمکمان خواهد کرد، از این رو، پیس از آنکه ادامه دهیم، نیاز "
-"به اندکی پیش‌زمینه در <emphasis>عکس‌برداری سوراخ سوزنی</emphasis> داریم."
+"فیلتر بعدی ما هر زمان که می‌خواهیم یک <emphasis>دوربین روزنه‌ای</emphasis> "
+"بسازیم کمکمان خواهد کرد، از این رو، پیش از آنکه ادامه دهیم، نیاز به اندکی "
+"پیش‌زمینه در <emphasis>عکس‌برداری روزنه‌ای</emphasis> داریم."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:12763
@@ -24371,6 +24376,9 @@ msgid ""
 "Or <emphasis>blurred</emphasis>. There is an ideal size for a pinhole: If it "
 "is either larger or smaller, the image loses its sharpness."
 msgstr ""
+"تصویر ایجاد شده توسط <emphasis>روزنه</emphasis> به یک اندازه واضح است. یا "
+"<emphasis>تار</emphasis> است. اندازهٔ ایده‌آلی برای روزنه وجود دارد: اگر "
+"بزرگتر یا کوچکتر باشد، تصویر وضوح خود را از دست می‌دهد."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:12802
@@ -24524,15 +24532,15 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:12903
 msgid "Designing the Pinhole Software"
-msgstr "طراحی نرم‌افزار Pinhole"
+msgstr "طراحی نرم‌افزار روزنه"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12905
 msgid ""
 "We are now ready to decide what exactly we want our pinhole software to do."
 msgstr ""
-"ما اکنون آماده‌ایم تا تصمیم بگیریم دقیقاً چه انتظاری از نرم‌افزار Pinhole "
-"خود داریم."
+"ما اکنون آماده‌ایم تا تصمیم بگیریم دقیقاً چه انتظاری از نرم‌افزار روزنهٔ خود "
+"داریم."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:12909
@@ -24574,8 +24582,8 @@ msgid ""
 "But our <application>pinhole</application> program cannot just work with "
 "individual characters, it has to deal with larger syntactic units."
 msgstr ""
-"گرثه برنامهٔ <application>pinhole</application> ما نمی‌تواند فقط با نویسه‌"
-"های جداگانه کار کند، باید با واحدهای نحوی بزرگتر سر و کار داشته باشد."
+"گرچه برنامهٔ <application>pinhole</application> (روزنهٔ) ما نمی‌تواند فقط با "
+"نویسه‌های جداگانه کار کند، باید با واحدهای نحوی بزرگتر سر و کار داشته باشد."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12935
@@ -24916,7 +24924,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:13157
 msgid "The Output"
-msgstr ""
+msgstr "خروجی"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:13159
