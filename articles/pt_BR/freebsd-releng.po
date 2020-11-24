@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-10-18 10:50-0300\n"
-"PO-Revision-Date: 2020-11-22 14:18+0000\n"
+"PO-Revision-Date: 2020-11-24 10:46+0000\n"
 "Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate-dev.freebsd.org/"
 "projects/freebsd-doc/articles_freebsd-releng/pt_BR/>\n"
@@ -146,7 +146,7 @@ msgstr ""
 "o código produzido na branch <literal>head/</literal>, existem algumas "
 "circunstâncias especiais em que uma fusão imediata pode ser necessária, tal "
 "como uma correção de segurança crítica ou uma correção de bug que inibe "
-"diretamente o processo de compilação  de uma release."
+"diretamente o processo de compilação de uma release."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:89
@@ -529,7 +529,7 @@ msgstr ""
 "Por exemplo, a aplicação da tag de release da Coleção de Ports é originada "
 "da branch trimestral ativa no momento da última fase do <literal>RC</"
 "literal>. Isso em parte define qual branch trimestral é usada, quando a "
-"aplicação da tag  pode acontecer e qual revisão da árvore de ports é usada "
+"aplicação da tag pode acontecer e qual revisão da árvore de ports é usada "
 "para a construção final de uma <literal>RELEASE</literal>."
 
 #. (itstool) path: sect1/para
@@ -1640,7 +1640,7 @@ msgstr ""
 "explícita da Equipe de Engenharia de Release do FreeBSD. Isto é reforçado "
 "por hooks de pré-commit no repositório Subversion editando <filename>base/"
 "svnadmin/conf/approvers</filename> para incluir uma expressão regular que "
-"coincida com a  branch <literal>stable/<replaceable>12</replaceable>/</"
+"coincida com a branch <literal>stable/<replaceable>12</replaceable>/</"
 "literal> para a release:"
 
 #. (itstool) path: sect2/programlisting
@@ -2628,7 +2628,7 @@ msgid ""
 "filename> must reside on the same logical filesystem."
 msgstr ""
 "Para que isto seja efetivo, tanto o <filename class=\"directory\">/archive/"
-"tmp</filename> quanto o  <filename class=\"directory\">/archive/pub</"
+"tmp</filename> quanto o <filename class=\"directory\">/archive/pub</"
 "filename> devem residir no mesmo sistema de arquivos lógico."
 
 #. (itstool) path: sect2/para
@@ -2658,8 +2658,8 @@ msgid ""
 "access, as this step must be executed as the <literal>archive</literal> user."
 msgstr ""
 "Assim como nas etapas de preparação, isto requer acesso em nível de "
-"<literal>root</literal>, já que essa etapa deve ser executada como o "
-"usuário  <literal>archive</literal>."
+"<literal>root</literal>, já que essa etapa deve ser executada como o usuário "
+"<literal>archive</literal>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1513
