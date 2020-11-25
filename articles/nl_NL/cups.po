@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:07-0300\n"
-"PO-Revision-Date: 2020-11-25 11:41+0000\n"
+"PO-Revision-Date: 2020-11-25 17:18+0000\n"
 "Last-Translator: Hans Drexler <drexler@klaan.nl>\n"
 "Language-Team: Dutch <https://translate-dev.freebsd.org/projects/freebsd-doc/"
 "articles_cups/nl_NL/>\n"
@@ -108,6 +108,7 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:53
+#, fuzzy
 msgid ""
 "<application>CUPS</application> uses the Internet Printing Protocol "
 "(<acronym>IPP</acronym>) as the basis for managing print jobs and queues. "
@@ -122,6 +123,19 @@ msgid ""
 "\">Linux</trademark>, <trademark class=\"registered\">Mac OS</trademark> X, "
 "or <trademark class=\"registered\">Windows</trademark>."
 msgstr ""
+"<application>CUPS</application> gebruikt het Internet Printing Protocol "
+"(<acronym>IPP</acronym>) als basis voor beheer van printopdrachten and "
+"wachtrijen. De Line Printer Daemon (<acronym>LPD</acronym>), Server Message "
+"Block (<acronym>SMB</acronym>), en AppSocket (ook bekend als JetDirect) "
+"protocollen worden ook ondersteund met beperkingen. <application>CUPS</"
+"application> voegt netwerk printer-browsing en PostScript Printer "
+"Description (<acronym>PPD</acronym>) gebaseerde printer opties toe om real-"
+"world afdrukoplossingen voor <trademark class=\"registered\">UNIX</"
+"trademark> te ondersteunen. Het resultaat is dat <application>CUPS</"
+"application> ideaal geschikt is voor delen en toegang tot printers in "
+"gemengde omgevingen met FreeBSD, <trademark class=\"registered\">Linux</"
+"trademark>, <trademark class=\"registered\">Mac OS</trademark> X, of "
+"<trademark class=\"registered\">Windows</trademark>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:67
@@ -161,11 +175,16 @@ msgid ""
 "application> configuration files can be found in the directory <filename>/"
 "usr/local/etc/cups</filename>."
 msgstr ""
+"Andere optionele, maar aangeraden, packages zijn <package>print/gutenprint</"
+"package> en <package>print/hplip</package>, die beide drivers en utilities "
+"voor diverse printers toevoegen. Na installatie vind u de <application>CUPS</"
+"application> configuratiebestanden in de directory <filename>/usr/local/etc/"
+"cups</filename>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:89
 msgid "Configuring the CUPS Print Server"
-msgstr ""
+msgstr "Configuratie van de CUPS Print Server"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:91
@@ -177,10 +196,16 @@ msgid ""
 "and to associate printers with the <systemitem class=\"groupname\">cups</"
 "systemitem> user group:"
 msgstr ""
+"Na installatie moeten een aantal bestanden worden bewerkt om de "
+"<application>CUPS</application> server te configureren. Ten eerste, creëer "
+"of wijzig, zoals nodig, het bestand <filename>/etc/devfs.rules</filename> en "
+"voeg de volgende informatie toe om de juiste rechten toe te wijzen aan alle "
+"printer devices en om de printers te verbinden met de <systemitem class="
+"\"groupname\">cups</systemitem> gebruikersgroep:"
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:98
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "[system=10]\n"
 "add path 'unlpt*' mode 0660 group cups\n"
@@ -188,9 +213,17 @@ msgid ""
 "add path 'lpt*' mode 0660 group cups\n"
 "add path 'usb/<replaceable>X</replaceable>.<replaceable>Y</replaceable>.<replaceable>Z</replaceable>' mode 0660 group cups"
 msgstr ""
+"[system=10]\n"
+"add path 'unlpt*' mode 0660 group cups\n"
+"add path 'ulpt*' mode 0660 group cups\n"
+"add path 'lpt*' mode 0660 group cups\n"
+"add path 'usb/"
+"<replaceable>X</replaceable>.<replaceable>Y</replaceable>.<replaceable>Z</"
+"replaceable>' mode 0660 group cups"
 
 #. (itstool) path: note/para
 #: article.translate.xml:105
+#, fuzzy
 msgid ""
 "Note that <replaceable>X</replaceable>, <replaceable>Y</replaceable>, and "
 "<replaceable>Z</replaceable> should be replaced with the target USB device "
@@ -201,11 +234,21 @@ msgid ""
 "<replaceable>Y</replaceable></filename> lists the printer device, which is a "
 "symbolic link to a USB device in <filename>/dev/usb</filename>."
 msgstr ""
+"Merk op dat <replaceable>X</replaceable>, <replaceable>Y</replaceable>, en "
+"<replaceable>Z</replaceable> moeten worden vervangen door het USB device "
+"genoemd in de <filename>/dev/usb</filename> directory dat overeenkomt met de "
+"printer. Om het correcte device te vinden, bekijk de uitvoer van "
+"<citerefentry><refentrytitle>dmesg</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>, op de plek waar "
+"<filename>ugen<replaceable>X</replaceable>.<replaceable>Y</replaceable></"
+"filename> lists the printer device, die een symbolische link is naar een USB "
+"device in <filename>/dev/usb</filename>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:116
 msgid "Next, add two lines to <filename>/etc/rc.conf</filename> as follows:"
 msgstr ""
+"Voeg vervolgens 2 regels toe aan <filename>/etc/rc.conf</filename> zoals dit:"
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:119
@@ -214,16 +257,23 @@ msgid ""
 "cupsd_enable=\"YES\"\n"
 "devfs_system_ruleset=\"system\""
 msgstr ""
+"cupsd_enable=\"YES\"\n"
+"devfs_system_ruleset=\"system\""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:122
+#, fuzzy
 msgid ""
 "These two entries will start the <application>CUPS</application> print "
 "server on boot and invoke the local devfs rule created above, respectively."
 msgstr ""
+"Deze twee regels zullen respectievelijk de <application>CUPS</application> "
+"print server starten bij het opstarten en de lokale devfs regel hierboven "
+"gemaakt aanroepen."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:126
+#, fuzzy
 msgid ""
 "In order to enable <application>CUPS</application> printing under certain "
 "<trademark class=\"registered\">Microsoft</trademark> <trademark class="
@@ -231,12 +281,17 @@ msgid ""
 "uncommented in <filename>/usr/local/etc/cups/mime.types</filename> and "
 "<filename>/usr/local/etc/cups/mime.convs</filename>:"
 msgstr ""
+"Om <application>CUPS</application> printen onder zekere <trademark class="
+"\"registered\">Microsoft</trademark> <trademark class=\"registered\""
+">Windows</trademark> clients mogelijk te maken, verwijder de "
+"commentaartekens vann de regel hieronder in <filename>/usr/local/etc/cups/"
+"mime.types</filename> en <filename>/usr/local/etc/cups/mime.convs</filename>:"
 
 #. (itstool) path: sect1/programlisting
 #: article.translate.xml:132
 #, no-wrap
 msgid "application/octet-stream"
-msgstr ""
+msgstr "application/octet-stream"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:134
