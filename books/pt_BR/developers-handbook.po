@@ -2,12 +2,13 @@
 # Edson Brandi <ebrandi@FreeBSD.org>, 2019. #zanata
 # Edson Brandi <ebrandi@freebsd.org>, 2019.
 # Danilo G. Baio <dbaio@FreeBSD.org>, 2019, 2020.
+# Wendell Borges <perlporter@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: 2020-02-23 18:16+0000\n"
-"Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
+"PO-Revision-Date: 2020-12-01 16:15+0000\n"
+"Last-Translator: Wendell Borges <perlporter@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate-dev.freebsd.org/"
 "projects/freebsd-doc/boooks_developers-handbook/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -15,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.11.2\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -10389,11 +10390,9 @@ msgstr ""
 
 #. (itstool) path: sect4/programlisting
 #: book.translate.xml:5238
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "int socket(int domain, int type, int protocol);"
-msgstr ""
-"\n"
-"int socket(int domain, int type, int protocol);\n"
+msgstr "int socket(int domain, int type, int protocol);"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5240
@@ -10541,7 +10540,7 @@ msgstr ""
 
 #. (itstool) path: sect4/programlisting
 #: book.translate.xml:5307
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "/*\n"
 " * Structure used by kernel to store most\n"
@@ -10554,7 +10553,6 @@ msgid ""
 "};\n"
 "#define\tSOCK_MAXADDRLEN\t255\t\t/* longest possible addresses */"
 msgstr ""
-"\n"
 "/*\n"
 " * Structure used by kernel to store most\n"
 " * addresses.\n"
@@ -10564,7 +10562,7 @@ msgstr ""
 "\tsa_family_t\tsa_family;\t/* address family */\n"
 "\tchar\t\tsa_data[14];\t/* actually longer; address value */\n"
 "};\n"
-"#define\tSOCK_MAXADDRLEN\t255\t\t/* longest possible addresses */\n"
+"#define\tSOCK_MAXADDRLEN\t255\t\t/* longest possible addresses */"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5318
@@ -10613,7 +10611,7 @@ msgstr ""
 
 #. (itstool) path: sect4/programlisting
 #: book.translate.xml:5339
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "/*\n"
 " * Address families.\n"
@@ -10662,7 +10660,6 @@ msgid ""
 "#define\tAF_BLUETOOTH\t36\t\t/* Bluetooth sockets */\n"
 "#define\tAF_MAX\t\t37"
 msgstr ""
-"\n"
 "/*\n"
 " * Address families.\n"
 " */\n"
@@ -10708,8 +10705,7 @@ msgstr ""
 "#define\tAF_SCLUSTER\t34\t\t/* Sitara cluster protocol */\n"
 "#define\tAF_ARP\t\t35\n"
 "#define\tAF_BLUETOOTH\t36\t\t/* Bluetooth sockets */\n"
-"#define\tAF_MAX\t\t37\n"
-"\n"
+"#define\tAF_MAX\t\t37"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5386
@@ -10751,7 +10747,7 @@ msgstr ""
 
 #. (itstool) path: sect4/programlisting
 #: book.translate.xml:5402
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "/*\n"
 " * Socket address, internet style.\n"
@@ -10764,7 +10760,6 @@ msgid ""
 "\tchar\tsin_zero[8];\n"
 "};"
 msgstr ""
-"\n"
 "/*\n"
 " * Socket address, internet style.\n"
 " */\n"
@@ -10774,7 +10769,7 @@ msgstr ""
 "\tin_port_t\tsin_port;\n"
 "\tstruct\tin_addr sin_addr;\n"
 "\tchar\tsin_zero[8];\n"
-"};\n"
+"};"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5413
@@ -10933,7 +10928,7 @@ msgstr ""
 
 #. (itstool) path: sect4/programlisting
 #: book.translate.xml:5485
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "/*\n"
 " * Internet address (a structure for historical reasons)\n"
@@ -10942,13 +10937,12 @@ msgid ""
 "\tin_addr_t s_addr;\n"
 "};"
 msgstr ""
-"\n"
 "/*\n"
 " * Internet address (a structure for historical reasons)\n"
 " */\n"
 "struct in_addr {\n"
 "\tin_addr_t s_addr;\n"
-"};\n"
+"};"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5492
@@ -11532,11 +11526,9 @@ msgstr ""
 
 #. (itstool) path: sect4/programlisting
 #: book.translate.xml:5770
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "int connect(int s, const struct sockaddr *name, socklen_t namelen);"
-msgstr ""
-"\n"
-"int connect(int s, const struct sockaddr *name, socklen_t namelen);\n"
+msgstr "int connect(int s, const struct sockaddr *name, socklen_t namelen);"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5772
@@ -11603,7 +11595,7 @@ msgstr ""
 
 #. (itstool) path: sect4/programlisting
 #: book.translate.xml:5802
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "/*\n"
 " * daytime.c\n"
@@ -11645,7 +11637,6 @@ msgid ""
 "  return 0;\n"
 "}"
 msgstr ""
-"\n"
 "/*\n"
 " * daytime.c\n"
 " *\n"
@@ -11672,7 +11663,8 @@ msgstr ""
 "\n"
 "  sa.sin_family = AF_INET;\n"
 "  sa.sin_port = htons(13);\n"
-"  sa.sin_addr.s_addr = htonl((((((192 &lt;&lt; 8) | 43) &lt;&lt; 8) | 244) &lt;&lt; 8) | 18);\n"
+"  sa.sin_addr.s_addr = htonl((((((192 &lt;&lt; 8) | 43) &lt;&lt; 8) | 244) "
+"&lt;&lt; 8) | 18);\n"
 "  if (connect(s, (struct sockaddr *)&amp;sa, sizeof sa) &lt; 0) {\n"
 "    perror(\"connect\");\n"
 "    close(s);\n"
@@ -11684,7 +11676,7 @@ msgstr ""
 "\n"
 "  close(s);\n"
 "  return 0;\n"
-"}\n"
+"}"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5842
@@ -11788,11 +11780,9 @@ msgstr ""
 
 #. (itstool) path: sect4/programlisting
 #: book.translate.xml:5886
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "int bind(int s, const struct sockaddr *addr, socklen_t addrlen);"
-msgstr ""
-"\n"
-"int bind(int s, const struct sockaddr *addr, socklen_t addrlen);\n"
+msgstr "int bind(int s, const struct sockaddr *addr, socklen_t addrlen);"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5888
@@ -11815,11 +11805,9 @@ msgstr ""
 
 #. (itstool) path: sect4/programlisting
 #: book.translate.xml:5897
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "#define\tINADDR_ANY\t\t(u_int32_t)0x00000000"
-msgstr ""
-"\n"
-"#define\tINADDR_ANY\t\t(u_int32_t)0x00000000\n"
+msgstr "#define\tINADDR_ANY\t\t(u_int32_t)0x00000000"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5899
@@ -11919,11 +11907,9 @@ msgstr ""
 
 #. (itstool) path: sect4/programlisting
 #: book.translate.xml:5943
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "int listen(int s, int backlog);"
-msgstr ""
-"\n"
-"int listen(int s, int backlog);\n"
+msgstr "int listen(int s, int backlog);"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:5945
