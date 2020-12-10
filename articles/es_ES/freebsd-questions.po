@@ -2,31 +2,35 @@
 # Sergio Carlavilla <carlavilla@mailbox.org>, 2019. #zanata
 # juanda-097 <juanda097@protonmail.ch>, 2020.
 # Juan David Jaramillo Ortiz <juanda097@protonmail.ch>, 2020.
+# Aaron H Farías Martinez <timido@ubuntu.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:07-0300\n"
-"PO-Revision-Date: 2020-05-02 04:13+0000\n"
-"Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
-"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/freebsd-"
-"doc/articles_freebsd-questions/es/>\n"
+"PO-Revision-Date: 2020-12-11 11:03+0000\n"
+"Last-Translator: Aaron H Farías Martinez <timido@ubuntu.com>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/articles_freebsd-questions/es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Sergio Carlavilla carlavilla@FreeBSD.org, 2019"
+msgstr ""
+"Sergio Carlavilla carlavilla@FreeBSD.org, 2019\n"
+"Aaron H Farias Martinez Timido@Ubuntu.com, 2020"
 
 #. (itstool) path: info/title
 #: article.translate.xml:5
 msgid "How to get Best Results from the FreeBSD-questions Mailing List"
 msgstr ""
-"Cómo obtener los Mejores Resultados de la Lista de Correo FreeBSD-questions"
+"Cómo obtener los mejores resultados de la lista de correo de preguntas de "
+"FreeBSD"
 
 #. (itstool) path: affiliation/address
 #: article.translate.xml:14
@@ -52,7 +56,7 @@ msgstr ""
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:21
 msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
-msgstr "FreeBSD is a registered trademark of the FreeBSD Foundation."
+msgstr "FreeBSD es una marca registrada de FreeBSD Foundation."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:23
@@ -61,9 +65,9 @@ msgid ""
 "NT are either registered trademarks or trademarks of Microsoft Corporation "
 "in the United States and/or other countries."
 msgstr ""
-"Microsoft, IntelliMouse, MS-DOS, Outlook, Windows, Windows Media and Windows "
-"NT are either registered trademarks or trademarks of Microsoft Corporation "
-"in the United States and/or other countries."
+"Microsoft, IntelliMouse, MS-DOS, Outlook, Windows, Windows Media y Windows "
+"NT son marcas comerciales registradas o marcas comerciales de Microsoft "
+"Corporation en los Estados Unidos y / o en otros países."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:27
@@ -72,15 +76,16 @@ msgid ""
 "Open Group are trademarks of The Open Group in the United States and other "
 "countries."
 msgstr ""
-"Motif, OSF/1, and UNIX are registered trademarks and IT DialTone and The "
-"Open Group are trademarks of The Open Group in the United States and other "
-"countries."
+"Motif, OSF / 1 y UNIX son marcas comerciales registradas y IT DialTone y The "
+"Open Group son marcas comerciales de The Open Group en los Estados Unidos y "
+"otros países."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:31
 msgid "QUALCOMM and Eudora are registered trademarks of QUALCOMM Incorporated."
 msgstr ""
-"QUALCOMM and Eudora are registered trademarks of QUALCOMM Incorporated."
+"QUALCOMM y Eudora son marcas comerciales registradas de QUALCOMM "
+"Incorporated."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:33
@@ -91,11 +96,11 @@ msgid ""
 "designations have been followed by the <quote>™</quote> or the <quote>®</"
 "quote> symbol."
 msgstr ""
-"Many of the designations used by manufacturers and sellers to distinguish "
-"their products are claimed as trademarks. Where those designations appear in "
-"this document, and the FreeBSD Project was aware of the trademark claim, the "
-"designations have been followed by the <quote>™</quote> or the <quote>®</"
-"quote> symbol."
+"Muchas de las designaciones utilizadas por los fabricantes y vendedores para "
+"distinguir sus productos se reclaman como marcas comerciales. Cuando esas "
+"designaciones aparecen en este documento, y el Proyecto FreeBSD estaba al "
+"tanto del reclamo de marca registrada, las designaciones han sido seguidas "
+"por el <quote>™</quote> or the <quote>®</quote> symbol."
 
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
@@ -115,9 +120,9 @@ msgid ""
 "will maximize the chance that the reader will receive useful replies."
 msgstr ""
 "Este documento proporciona información útil para las personas que buscan "
-"preparar un correo electrónico para la lista de correo FreeBSD-questions. Se "
-"dan consejos y sugerencias que maximizarán la posibilidad de que el lector "
-"reciba respuestas útiles."
+"preparar un correo electrónico para la lista de correo de preguntas de "
+"FreeBSD. Se dan consejos y sugerencias que maximizarán la posibilidad de que "
+"el lector reciba respuestas útiles."
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:51
@@ -188,13 +193,14 @@ msgid ""
 "claims, but for the most part these viewpoints come from a sense of "
 "frustration."
 msgstr ""
-"Inevitablemente hay cierta fricción, que se deriva de los diferentes puntos "
-"de vista de los dos grupos. Los recién llegados acusan a los hackers de ser "
-"arrogantes, malhumorados y de poca ayuda, mientras que los hackers acusan a "
-"los recién llegados de ser estúpidos, incapaces de leer textos sencillos en "
-"español y esperar que todo les sea entregado en bandeja de plata. Por "
-"supuesto, hay cierta verdad en ambas afirmaciones, pero en su mayor parte "
-"estos puntos de vista provienen de un sentimiento de frustración."
+"Inevitablemente, existe cierta fricción, que se deriva de los diferentes "
+"puntos de vista de los dos grupos. Los recién llegados acusan a los piratas "
+"informáticos de ser arrogantes, engreídos e inútiles, mientras que los "
+"piratas informáticos acusan a los recién llegados de ser estúpidos, "
+"incapaces de leer un inglés sencillo y esperar que todo les sea entregado en "
+"bandeja de plata. Por supuesto, hay un elemento de verdad en ambas "
+"afirmaciones, pero en su mayor parte estos puntos de vista provienen de una "
+"sensación de frustración."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:89
@@ -205,9 +211,9 @@ msgid ""
 "look at how to answer one."
 msgstr ""
 "En este documento, me gustaría hacer algo para aliviar esta frustración y "
-"ayudar a todos a obtener mejores resultados de FreeBSD-questions. En la "
-"siguiente sección, recomendaré cómo enviar una pregunta; después, veremos "
-"cómo responderla."
+"ayudar a todos a obtener mejores resultados de las preguntas de FreeBSD. En "
+"la siguiente sección, recomiendo cómo enviar una pregunta; después de eso, "
+"veremos cómo responder a una."
 
 #. (itstool) path: sect1/title
 #. (itstool) id: article.translate.xml#subscribe
@@ -325,42 +331,43 @@ msgid ""
 "unsubscribe or change your account options.  There is also a button on\n"
 "your options page that will email your current password to you."
 msgstr ""
-"¡Bienvenido a la lista de correo de freebsd-questions@freebsd.org!\n"
+"Bienvenida a la\n"
+"      freebsd-questions@freebsd.org lista de correo!\n"
 "\n"
-"      Para mandar un mensaje a esta lista, envíelo a:\n"
+"Para publicar en esta lista, envíe su correo electrónico a:\n"
 "\n"
 "  freebsd-questions@freebsd.org\n"
 "\n"
-"Puede obtener información general sobre la lista en:\n"
+"La información general sobre la lista de correo está en:\n"
 "\n"
 "  https://lists.freebsd.org/mailman/listinfo/freebsd-questions\n"
 "\n"
-"Si alguna vez desea anular su subscripción o cambiar las opciones\n"
-"de la misma (p.ej.: cambiarse a modo resumido o no, cambiar su clave,\n"
-"etc.), consulte la página de su subscripción en:\n"
+"Si alguna vez desea darse de baja o cambiar sus opciones (por ejemplo, "
+"cambie a\n"
+"o desde el modo resumen, cambie su contraseña, etc.), visite su\n"
+"página de suscripción en:\n"
 "\n"
 "https://lists.freebsd.org/mailman/options/freebsd-questions/grog%40lemsi.de\n"
 "\n"
-"También puede realizar estos cambios por medio de correo electrónico,\n"
-"enviando un mensaje a:\n"
+"También puede realizar dichos ajustes por correo electrónico enviando un "
+"mensaje a:\n"
 "\n"
 "  freebsd-questions-request@freebsd.org\n"
 "\n"
-"indicando la palabra \"help\" en el asunto (no ponga las comillas) o en\n"
-"el cuerpo del mensaje. Se le devolverá un mensaje con instrucciones.\n"
+"con la palabra 'ayuda' en el tema o cuerpo (no incluya la\n"
+"citas), y recibirá un mensaje con instrucciones.\n"
 "\n"
-"Tiene que saber su clave para poder cambiar sus opciones (incluido el\n"
-"cambio de la propia clave) o para anular su subscripción. Su clave es:\n"
+"Debe conocer su contraseña para cambiar sus opciones (incluido el cambio\n"
+"la contraseña, en sí) o para darse de baja. Está:\n"
 "\n"
 "  12345\n"
 "\n"
-"Normalmente, Mailman le recordará mensualmente las claves que tenga\n"
-"en las listas de distribución de freebsd.org, aunque si lo\n"
-"prefiere, puede inhabilitar este comportamiento. El recordatorio\n"
-"también incluirá instrucciones sobre cómo anular su subscripción o\n"
-"cómo cambiar los parámetros de subscripción. En la página de opciones\n"
-"hay un botón que le enviará un mensaje de correo electrónico con su\n"
-"clave."
+"Normalmente, Mailman le recordará su lista de correo de freebsd.org\n"
+"contraseñas una vez al mes, aunque puede desactivar esto si\n"
+"preferir. Este recordatorio también incluirá instrucciones sobre cómo\n"
+"darse de baja o cambiar las opciones de su cuenta. También hay un botón en\n"
+"su página de opciones que le enviará por correo electrónico su contraseña "
+"actual."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:171
@@ -380,9 +387,9 @@ msgid ""
 "A confirmation message will be sent to you from <application>mailman</"
 "application>; follow the included instructions to finish unsubscribing."
 msgstr ""
-"Se le enviará un mensaje de confirmación de <application>mailman</"
-"application>; siga las instrucciones incluidas para terminar de darse de "
-"baja."
+"Se le enviará un mensaje de confirmación de <application> "
+"mailman</application>; siga las instrucciones incluidas para finalizar la "
+"cancelación de la suscripción"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:180
@@ -484,7 +491,7 @@ msgstr ""
 #. (itstool) id: article.translate.xml#before
 #: article.translate.xml:235
 msgid "Before Submitting a Question"
-msgstr "Antes de Enviar una Pregunta"
+msgstr "Antes de enviar una pregunta"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:237
@@ -492,8 +499,8 @@ msgid ""
 "You can (and should) do some things yourself before asking a question on one "
 "of the mailing lists:"
 msgstr ""
-"Usted puede (y debe) hacer algunas cosas antes de realizar una pregunta en "
-"una de las listas de correo:"
+"Puede (y debe) hacer algunas cosas usted mismo antes de hacer una pregunta "
+"en una de las listas de correo:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:242
@@ -506,11 +513,11 @@ msgid ""
 "posted to the mailing lists."
 msgstr ""
 "Intente resolver el problema por su cuenta. Si publica una pregunta que "
-"demuestra que ha intentado resolver el problema, generalmente atraerá una "
-"atención más positiva de las personas que la lean. Tratar de resolver el "
-"problema por sí mismo también mejorará su comprensión de FreeBSD y, "
-"eventualmente, le permitirá utilizar su conocimiento para ayudar a otros "
-"respondiendo las preguntas publicadas en las listas de correo."
+"muestra que ha intentado resolver el problema, su pregunta generalmente "
+"atraerá una atención más positiva de las personas que la lean. Intentar "
+"resolver el problema usted mismo también mejorará su comprensión de FreeBSD, "
+"y eventualmente le permitirá usar su conocimiento para ayudar a otros "
+"respondiendo preguntas publicadas en las listas de correo."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:253
@@ -591,14 +598,15 @@ msgid ""
 "rest of this document, we will look at how to get the most out of your "
 "question to FreeBSD-questions."
 msgstr ""
-"Recuerde que a nadie le pagan por responder una pregunta de FreeBSD. Lo "
-"hacen por su propia voluntad. Puede influir positivamente enviando una "
-"pregunta bien formulada y con la mayor cantidad de información relevante "
-"posible. Puede influir negativamente si envía una pregunta incompleta, "
-"ilegible o grosera. Es posible enviar un mensaje a FreeBSD-questions y no "
-"obtener una respuesta incluso siguiendo estas reglas. Y es muy posible no "
-"obtener respuesta si no las sigue. En el resto de este documento, veremos "
-"cómo sacar el máximo provecho de una pregunta a FreeBSD-questions."
+"Recuerde que a nadie se le paga por responder una pregunta de FreeBSD. Lo "
+"hacen por su propia voluntad. Puede influir positivamente en este libre "
+"albedrío enviando una pregunta bien formulada que proporcione tanta "
+"información relevante como sea posible. Puede influir negativamente en este "
+"libre albedrío enviando una pregunta incompleta, ilegible o grosera. Es "
+"perfectamente posible enviar un mensaje a FreeBSD-questions y no obtener una "
+"respuesta incluso si sigue estas reglas. Es mucho más posible no obtener una "
+"respuesta si no la recibe. En el resto de este documento, veremos cómo "
+"aprovechar al máximo su pregunta sobre FreeBSD-questions."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:301
@@ -626,10 +634,10 @@ msgid ""
 "language, and we try to make allowances for that, but it is really painful "
 "to try to read a message written full of typos or without any line breaks."
 msgstr ""
-"¡Formatee su mensaje para que sea legible y, POR FAVOR, NO GRITE!!!!!. Somos "
-"conscientes de que muchas personas no hablan inglés como primer idioma, y "
-"damos un margen, pero es realmente doloroso tratar de leer un mensaje lleno "
-"de errores tipográficos o sin saltos de línea."
+"Formatee su mensaje para que sea legible, y POR FAVOR NO GRITE !!!!!. "
+"Apreciamos que mucha gente no hable inglés como su primer idioma, y tratamos "
+"de hacer concesiones por eso, pero es realmente doloroso intentar leer un "
+"mensaje escrito lleno de errores tipográficos o sin saltos de línea."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:319
@@ -639,11 +647,11 @@ msgid ""
 "people see of you, and if it is poorly formatted, one line per paragraph, "
 "badly spelt, or full of errors, it will give people a poor impression of you."
 msgstr ""
-"No subestime el efecto que un mensaje de correo mal formateado tiene, no "
-"sólo en la lista de correo FreeBSD-questions. Su mensaje de correo "
-"electrónico es lo que todas las personas ven de usted, y si está mal "
-"formateado, una línea por párrafo, mal escrito o lleno de errores, esto dará "
-"a la gente una mala impresión de usted."
+"No subestime el efecto que tiene un mensaje de correo mal formateado, no "
+"solo en la lista de correo de preguntas de FreeBSD. Su mensaje de correo es "
+"todo lo que la gente ve de usted, y si está mal formateado, una línea por "
+"párrafo, mal escrito o lleno de errores, le dará a la gente una mala "
+"impresión de usted."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:326
@@ -688,8 +696,8 @@ msgid ""
 "Try not to use <acronym>MIME</acronym>: a lot of people use mailers which do "
 "not get on very well with <acronym>MIME</acronym>."
 msgstr ""
-"Trate de no usar <acronym>MIME</acronym>: muchas personas usan correos que "
-"no se llevan muy bien con <acronym>MIME</acronym>."
+"Trate de no usar <acronym> MIME </acronym>: mucha gente usa mailers que no "
+"se llevan muy bien con <acronym> MIME </acronym>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:355
@@ -701,12 +709,13 @@ msgid ""
 "before the first answer, they may assume they missed it and not bother to "
 "look."
 msgstr ""
-"Asegúrese de que su hora y zona horaria están configuradas correctamente. "
-"Esto puede parecer un poco tonto, ya que su mensaje sigue llegando, pero "
-"muchas de las personas a las que envía el mensaje reciben varios cientos de "
-"mensajes al día. Con frecuencia ordenan los mensajes entrantes por asunto y "
-"por fecha, y si su mensaje no llega antes de la primera respuesta, pueden "
-"asumir que lo perdieron y no se molestarán en mirar."
+"Asegúrese de que su hora y zona horaria estén configuradas correctamente. "
+"Esto puede parecer un poco tonto, ya que su mensaje todavía llega, pero "
+"muchas de las personas a las que está tratando de llegar reciben varios "
+"cientos de mensajes al día. Con frecuencia clasifican los mensajes entrantes "
+"por asunto y por fecha, y si su mensaje no llega antes de la primera "
+"respuesta, es posible que asuman que se lo perdieron y no se molestan en "
+"mirar."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:365
@@ -715,10 +724,10 @@ msgid ""
 "message tends to scare people off, and secondly, it is more difficult to get "
 "all the people who can answer all the questions to read the message."
 msgstr ""
-"No incluya preguntas que no están relacionadas en el mismo mensaje. En "
-"primer lugar, un mensaje largo tiende a asustar a la gente y, en segundo "
-"lugar, es más difícil conseguir que todas las personas que puedan responder "
-"a la pregunta lean el mensaje."
+"No incluya preguntas no relacionadas en el mismo mensaje. En primer lugar, "
+"un mensaje largo tiende a asustar a la gente y, en segundo lugar, es más "
+"difícil conseguir que todas las personas que pueden responder a todas las "
+"preguntas lean el mensaje."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:372
@@ -726,9 +735,9 @@ msgid ""
 "Specify as much information as possible. This is a difficult area, and we "
 "need to expand on what information you need to submit, but here is a start:"
 msgstr ""
-"Especifique la mayor cantidad de información posible. Es un área difícil, y "
-"necesitamos ampliar la información que necesita enviar, pero aquí un "
-"comienzo:"
+"Especifique la mayor cantidad de información posible. Esta es un área "
+"difícil y necesitamos ampliar la información que necesita enviar, pero aquí "
+"hay un comienzo:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:378
@@ -738,10 +747,10 @@ msgid ""
 "also specify the date of the sources, though of course you should not be "
 "sending questions about -CURRENT to FreeBSD-questions."
 msgstr ""
-"En casi todos los casos, es importante conocer la versión de FreeBSD que se "
-"está ejecutando. En el caso particular de FreeBSD-CURRENT, también debe "
-"especificar la fecha del código fuente, aunque, obviamente, usted no debe "
-"enviar preguntas sobre -CURRENT a FreeBSD-questions."
+"En casi todos los casos, es importante conocer la versión de FreeBSD que "
+"está ejecutando. Este es particularmente el caso de FreeBSD-CURRENT, donde "
+"también debe especificar la fecha de las fuentes, aunque por supuesto no "
+"debe enviar preguntas sobre -CURRENT a FreeBSD-questions."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:387
@@ -798,8 +807,8 @@ msgid ""
 "the boards installed in your machine."
 msgstr ""
 "Si tiene dificultades para instalar FreeBSD, díganos qué hardware tiene. En "
-"particular, es importante conocer las IRQ y las direcciones de I/O de las "
-"tarjetas instaladas en su máquina."
+"particular, es importante conocer las IRQ y las direcciones de E / S de las "
+"placas instaladas en su máquina."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:420
@@ -810,8 +819,9 @@ msgid ""
 "log file?"
 msgstr ""
 "Si tiene dificultades para ejecutar PPP, describa la configuración. ¿Qué "
-"versión de PPP usa? ¿Qué tipo de autenticación tiene? ¿Tiene una dirección "
-"IP estática o dinámica? ¿Qué tipo de mensajes recibe en el archivo de log?"
+"versión de PPP usas? ¿Qué tipo de autenticación tienes? ¿Tiene una dirección "
+"IP estática o dinámica? ¿Qué tipo de mensajes recibe en el archivo de "
+"registro?"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:430
@@ -863,13 +873,13 @@ msgid ""
 "not going to get one from this forum. Resending the same message again and "
 "again will only make you unpopular."
 msgstr ""
-"Si hace todo esto y no obtiene una respuesta, puede haber otras razones. Por "
-"ejemplo, el problema es tan complicado que nadie sabe la respuesta, o la "
-"persona que sabía la respuesta estaba offline. Si no obtiene respuesta "
-"después de, por ejemplo, una semana, puede ser útil reenviar el mensaje. Sin "
-"embargo, si no recibe respuesta a su segundo mensaje, es probable que no "
-"reciba respuesta de este foro. Reenviar el mismo mensaje una y otra vez solo "
-"le hará impopular."
+"Si hace todo esto y aún no obtiene una respuesta, podría haber otras "
+"razones. Por ejemplo, el problema es tan complicado que nadie sabe la "
+"respuesta, o la persona que sí sabe la respuesta estaba fuera de línea. Si "
+"no recibe una respuesta después de, digamos, una semana, podría ser útil "
+"volver a enviar el mensaje. Sin embargo, si no obtiene una respuesta a su "
+"segundo mensaje, probablemente no obtendrá una de este foro. Reenviar el "
+"mismo mensaje una y otra vez solo te hará impopular."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:461
@@ -878,9 +888,9 @@ msgid ""
 "(yes, it is the same one in each case). You choose which of these two "
 "questions you would be more prepared to answer:"
 msgstr ""
-"Para resumir, supongamos que conoce la respuesta a la siguiente pregunta "
-"(sí, es la misma en cada caso). Usted elija cuál de estas dos preguntas "
-"estaría más preparado para responder:"
+"En resumen, supongamos que conoce la respuesta a la siguiente pregunta (sí, "
+"es la misma en cada caso). Usted elige cuál de estas dos preguntas estaría "
+"más preparado para responder:"
 
 #. (itstool) path: example/title
 #: article.translate.xml:467
@@ -897,11 +907,13 @@ msgid ""
 "anythign sho difficult to install, it jst wont work whatever I try\n"
 "so why don't you guys tell me what I doing wrong."
 msgstr ""
-"Asunto: ¿¿¡¿¡¡AYUDA!!?!??\n"
-"No puedo conseguir que el maldito sistema\n"
-"FereBSD funcioned y soi realmente bueno en sto, \n"
-"pero nunca he visto nada tan dificil de instlar, simplmente no funciona \n"
-"intente lo que intente, así que, por qué no me dicen que estoy haciendo mal"
+"Asunto: AYUDA!!?! ??\n"
+"Simplemente no puedo conseguir golpes malditos y tontos del sistema FereBSD "
+"para\n"
+"funcionó, y soy muy bueno en este tsuff, pero nunca he visto\n"
+"cualquier cosa que sea difícil de instalar, no funcionará, haga lo que "
+"intente\n"
+"Entonces, ¿por qué no me dicen qué estoy haciendo mal?"
 
 #. (itstool) path: example/title
 #: article.translate.xml:477
@@ -934,7 +946,7 @@ msgstr ""
 #. (itstool) id: article.translate.xml#followup
 #: article.translate.xml:491
 msgid "How to Follow up to a Question"
-msgstr "Cómo dar Seguimiento a una Pregunta"
+msgstr "Cómo dar seguimiento a una pregunta"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:493
@@ -943,8 +955,8 @@ msgid ""
 "already sent. The best way to do this is to reply to your original message. "
 "This has three advantages:"
 msgstr ""
-"A menudo, deseará enviar información adicional a una pregunta que ya haya "
-"enviado. La mejor manera de hacerlo es responder a su mensaje original. Esto "
+"A menudo, querrá enviar información adicional a una pregunta que ya ha "
+"enviado. La mejor forma de hacerlo es responder a su mensaje original. Esto "
 "tiene tres ventajas:"
 
 #. (itstool) path: listitem/para
@@ -953,7 +965,7 @@ msgid ""
 "You include the original message text, so people will know what you are "
 "talking about. Do not forget to trim unnecessary text out, though."
 msgstr ""
-"Incluye el texto del mensaje original, para que la gente sepa de qué está "
+"Incluyes el texto del mensaje original, para que la gente sepa de qué estás "
 "hablando. Sin embargo, no olvide recortar el texto innecesario."
 
 #. (itstool) path: listitem/para
@@ -963,9 +975,9 @@ msgid ""
 "did you not?). Many mailers will sort messages by subject. This helps group "
 "messages together."
 msgstr ""
-"El texto en el asunto sigue siendo el mismo (recordó poner uno, ¿no es "
-"así?). Muchos servicios de correo ordenarán los mensajes por asunto. Esto "
-"ayuda a agrupar los mensajes."
+"El texto en la línea de asunto permanece igual (se acordó de poner uno, ¿no "
+"es así?). Muchos remitentes clasifican los mensajes por asunto. Esto ayuda a "
+"agrupar los mensajes."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:513
@@ -989,7 +1001,7 @@ msgstr "Cómo Responder a una Pregunta"
 #. (itstool) path: sect1/para
 #: article.translate.xml:524
 msgid "Before you answer a question to FreeBSD-questions, consider:"
-msgstr "Antes de responder una pregunta en FreeBSD-questions, considere:"
+msgstr "Antes de responder una pregunta a FreeBSD-questions, considere:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:529
@@ -997,8 +1009,8 @@ msgid ""
 "A lot of the points on submitting questions also apply to answering "
 "questions. Read them."
 msgstr ""
-"Muchas de las directrices utilizadas cuando se está escribiendo una pregunta "
-"también son válidas para responderlas. Léalas."
+"Muchos de los puntos sobre el envío de preguntas también se aplican a la "
+"respuesta a preguntas. Léelos."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:534
@@ -1007,7 +1019,7 @@ msgid ""
 "to sort your incoming mail by subject: then (hopefully) you will see the "
 "question followed by any answers, all together."
 msgstr ""
-"¿Alguien ha respondido ya la pregunta? La forma más fácil de verificar esto "
+"¿Alguien ya ha respondido la pregunta? La forma más fácil de verificar esto "
 "es ordenar su correo entrante por asunto: luego (con suerte) verá la "
 "pregunta seguida de las respuestas, todas juntas."
 
@@ -1018,9 +1030,9 @@ msgid ""
 "should not send another answer. But it makes sense to read all the other "
 "answers first."
 msgstr ""
-"Si alguien ha respondido, esto no significa que automáticamente usted no "
-"deba enviar otra respuesta. Pero tiene sentido leer las otras respuestas "
-"primero."
+"Si alguien ya la ha respondido, no significa automáticamente que no deba "
+"enviar otra respuesta. Pero tiene sentido leer primero todas las demás "
+"respuestas."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:546
@@ -1050,12 +1062,12 @@ msgid ""
 "else answers, and you are not too sure either, you can always ask for more "
 "information."
 msgstr ""
-"¿Seguro que entiende la pregunta? Con mucha frecuencia, la persona que hace "
-"la pregunta está confundida o no se expresa muy bien. Incluso con la mejor "
-"comprensión del sistema, es fácil enviar una respuesta que no responde la "
-"pregunta. Esto no ayuda: dejará a la persona que formuló la pregunta más "
+"¿Está seguro de que comprende la pregunta? Con mucha frecuencia, la persona "
+"que hace la pregunta se confunde o no se expresa muy bien. Incluso con la "
+"mejor comprensión del sistema, es fácil enviar una respuesta que no responde "
+"a la pregunta. Esto no ayuda: dejará a la persona que envió la pregunta más "
 "frustrada o confundida que nunca. Si nadie más responde y usted tampoco está "
-"seguro, siempre puede pedir más información."
+"muy seguro, siempre puede solicitar más información."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:569
@@ -1097,9 +1109,9 @@ msgid ""
 "do not overdo it. It should still be possible for somebody who did not read "
 "the original message to understand what you are talking about."
 msgstr ""
-"Incluya texto relevante del mensaje original. Reduzca al mínimo, pero no "
-"exagere. El contenido original restante todavía debería permitir a alguien "
-"que no leyó el mensaje original entender de lo que usted está hablando."
+"Incluya texto relevante del mensaje original. Córtelo al mínimo, pero no se "
+"exceda. Aún debe ser posible que alguien que no haya leído el mensaje "
+"original entienda de lo que estás hablando."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:597
@@ -1125,9 +1137,9 @@ msgid ""
 "It is very difficult to read a thread of responses where each reply comes "
 "before the text to which it replies."
 msgstr ""
-"Coloque su respuesta en el lugar correcto (después del texto al que "
-"responde). Es muy difícil leer un hilo de respuestas donde cada respuesta "
-"aparece antes del texto al que responde."
+"Pon tu respuesta en el lugar correcto (después del texto al que responde). "
+"Es muy difícil leer un hilo de respuestas donde cada respuesta viene antes "
+"del texto al que responde."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:614
@@ -1166,7 +1178,8 @@ msgid ""
 "not answer."
 msgstr ""
 "En tales casos, es apropiado decir lo que hizo y por qué lo hizo, pero trate "
-"de no ser grosero. Si no puede responder sin ser grosero, no conteste."
+"de no ser grosero. Si encuentra que no puede responder sin ser grosero, no "
+"responda."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:634
@@ -1175,6 +1188,6 @@ msgid ""
 "to the submitter, not to the list. You can just send him this message in "
 "reply, if you like."
 msgstr ""
-"Si solo desea responder a un mensaje debido a su formato incorrecto, solo "
-"responda al remitente, no a la lista. Puede simplemente enviarle este "
-"mensaje como respuesta, si lo desea."
+"Si solo desea responder a un mensaje debido a su formato incorrecto, "
+"simplemente responda al remitente, no a la lista. Puede enviarle este "
+"mensaje en respuesta, si lo desea."
