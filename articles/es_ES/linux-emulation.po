@@ -1,24 +1,27 @@
 # Sergio Carlavilla <carlavilla@mailbox.org>, 2019. #zanata
 # Juan David Jaramillo Ortiz <juanda097@protonmail.ch>, 2020.
+# Aaron H Farías Martinez <timido@ubuntu.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:08-0300\n"
-"PO-Revision-Date: 2020-10-09 08:07+0000\n"
-"Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
-"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/freebsd-"
-"doc/articles_linux-emulation/es/>\n"
+"PO-Revision-Date: 2020-12-13 00:04+0000\n"
+"Last-Translator: Aaron H Farías Martinez <timido@ubuntu.com>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/articles_linux-emulation/es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2.2\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Sergio Carlavilla carlavilla@FreeBSD.org, 2019"
+msgstr ""
+"Sergio Carlavilla carlavilla@FreeBSD.org, 2019\n"
+"Aaron H Farias Martinez Timido@ubuntu.com,2020"
 
 #. (itstool) path: info/title
 #: article.translate.xml:7
@@ -54,9 +57,9 @@ msgid ""
 "trademarks or trademarks of Adobe Systems Incorporated in the United States "
 "and/or other countries."
 msgstr ""
-"Adobe, Acrobat, Acrobat Reader, Flash and PostScript are either registered "
-"trademarks or trademarks of Adobe Systems Incorporated in the United States "
-"and/or other countries."
+"Adobe, Acrobat, Acrobat Reader, Flash y PostScript son marcas comerciales "
+"registradas o marcas comerciales de Adobe Systems Incorporated en los "
+"Estados Unidos y / o en otros países."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:26
@@ -65,24 +68,24 @@ msgid ""
 "International Business Machines Corporation in the United States, other "
 "countries, or both."
 msgstr ""
-"IBM, AIX, OS/2, PowerPC, PS/2, S/390, and ThinkPad are trademarks of "
-"International Business Machines Corporation in the United States, other "
-"countries, or both."
+"IBM, AIX, OS / 2, PowerPC, PS / 2, S / 390 y ThinkPad son marcas comerciales "
+"de International Business Machines Corporation en los Estados Unidos, otros "
+"países o ambos."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:30
 msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
-msgstr "FreeBSD is a registered trademark of the FreeBSD Foundation."
+msgstr "FreeBSD es una marca registrada de FreeBSD Foundation."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:32
 msgid "Linux is a registered trademark of Linus Torvalds."
-msgstr "Linux is a registered trademark of Linus Torvalds."
+msgstr "Linux es una marca registrada de Linus Torvalds."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:34
 msgid "NetBSD is a registered trademark of the NetBSD Foundation."
-msgstr "NetBSD is a registered trademark of the NetBSD Foundation."
+msgstr "NetBSD es una marca registrada de NetBSD Foundation."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:36
@@ -90,13 +93,13 @@ msgid ""
 "RealNetworks, RealPlayer, and RealAudio are the registered trademarks of "
 "RealNetworks, Inc."
 msgstr ""
-"RealNetworks, RealPlayer, and RealAudio are the registered trademarks of "
+"RealNetworks, RealPlayer y RealAudio son marcas comerciales registradas de "
 "RealNetworks, Inc."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:39
 msgid "Oracle is a registered trademark of Oracle Corporation."
-msgstr "Oracle is a registered trademark of Oracle Corporation."
+msgstr "Oracle es una marca registrada de Oracle Corporation."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:41
@@ -107,9 +110,9 @@ msgid ""
 "other countries."
 msgstr ""
 "Sun, Sun Microsystems, Java, Java Virtual Machine, JDK, JRE, JSP, JVM, "
-"Netra, OpenJDK, Solaris, StarOffice, SunOS and VirtualBox are trademarks or "
-"registered trademarks of Sun Microsystems, Inc. in the United States and "
-"other countries."
+"Netra, OpenJDK, Solaris, StarOffice, SunOS y VirtualBox son marcas "
+"comerciales o marcas comerciales registradas de Sun Microsystems, Inc. en "
+"los Estados Unidos y otros países."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:46
@@ -120,11 +123,11 @@ msgid ""
 "designations have been followed by the <quote>™</quote> or the <quote>®</"
 "quote> symbol."
 msgstr ""
-"Many of the designations used by manufacturers and sellers to distinguish "
-"their products are claimed as trademarks. Where those designations appear in "
-"this document, and the FreeBSD Project was aware of the trademark claim, the "
-"designations have been followed by the <quote>™</quote> or the <quote>®</"
-"quote> symbol."
+"Muchas de las designaciones utilizadas por los fabricantes y vendedores para "
+"distinguir sus productos se reclaman como marcas comerciales. Cuando esas "
+"designaciones aparecen en este documento, y el Proyecto FreeBSD estaba al "
+"tanto del reclamo de marca registrada, las designaciones han sido seguidas "
+"por el <quote>™</quote> o el <quote>®</quote> símbolo."
 
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
@@ -190,6 +193,10 @@ msgid ""
 "this thesis deals with: the emulation of the <trademark class=\"registered"
 "\">Linux</trademark> kernel in the FreeBSD operating system."
 msgstr ""
+"Naturalmente, la necesidad de poder correr <trademark class=\"registered\""
+">Linux</trademark> binarios en un sistema FreeBSD y esto es de lo que trata "
+"esta tesis: la emulación del<trademark class=\"registered\">Linux</"
+"trademark>kernel en el sistema operativo FreeBSD."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:103
@@ -200,11 +207,16 @@ msgid ""
 "\"registered\">Linux</trademark> 2.6 facilities. This thesis is written as a "
 "part of this project."
 msgstr ""
+"Durante el verano de 2006, Google Inc. patrocinó un proyecto que se centró "
+"en ampliar la<trademark class=\"registered\">Linux</trademark> capa de "
+"emulación (el llamado Linuxulator) en FreeBSD para incluir <trademark class="
+"\"registered\">Linux</trademark> 2.6 instalaciones. Esta tesis está escrita "
+"como parte de este proyecto."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:110
 msgid "A look inside…"
-msgstr ""
+msgstr "Una mirada al interior …"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:112
@@ -217,11 +229,18 @@ msgid ""
 "trademark> on <trademark class=\"registered\">UNIX</trademark> emulation "
 "could be done in general."
 msgstr ""
+"En esta sección vamos a describir cada sistema operativo en cuestión. Cómo "
+"manejan las llamadas al sistema, los trapframes, etc., todas las cosas de "
+"bajo nivel. También describimos la forma en que entienden los<trademark "
+"class=\"registered\">UNIX</trademark>primitivas como qué es un PID, qué es "
+"un hilo, etc. En la tercera subsección hablamos de cómo<trademark class="
+"\"registered\">UNIX</trademark> en <trademark class=\"registered\">UNIX</"
+"trademark>la emulación se podría hacer en general."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:120
 msgid "What is <trademark class=\"registered\">UNIX</trademark>"
-msgstr ""
+msgstr "Que es<trademark class=\"registered\">UNIX</trademark>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:122
@@ -252,7 +271,7 @@ msgstr ""
 #: article.translate.xml:143 article.translate.xml:312
 #: article.translate.xml:491
 msgid "Technical details"
-msgstr ""
+msgstr "Detalles técnicos"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:145
@@ -266,11 +285,20 @@ msgid ""
 "\"registered\">UNIX</trademark> API to the user space. The most important "
 "ones are covered below."
 msgstr ""
+"Cada programa en ejecución constituye un proceso que representa un estado "
+"del cálculo. El proceso en ejecución se divide entre el espacio del núcleo y "
+"el espacio del usuario. Algunas operaciones solo se pueden realizar desde el "
+"espacio del kernel (que se ocupa de hardware, etc.), pero el proceso debería "
+"pasar la mayor parte de su vida en el espacio del usuario. El kernel es "
+"donde se lleva a cabo la gestión de los procesos, el hardware y los detalles "
+"de bajo nivel. El kernel proporciona un estándar unificado<trademark class="
+"\"registered\">UNIX</trademark>API al espacio de usuario. Los más "
+"importantes se tratan a continuación."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:156
 msgid "Communication between kernel and user space process"
-msgstr ""
+msgstr "Comunicación entre el kernel y el proceso de espacio de usuario"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:159
@@ -288,6 +316,19 @@ msgid ""
 "space to the kernel-space in various ways (implementation dependant). "
 "Syscalls are synchronous."
 msgstr ""
+"Común <trademark class=\"registered\">UNIX</trademark> La API define una "
+"llamada al sistema como una forma de emitir comandos desde un proceso de "
+"espacio de usuario al kernel. La implementación más común es usar una "
+"interrupción o una instrucción especializada (piense en "
+"<literal>SYSENTER</literal><literal>SYSCALL</literal>instrucciones para ia32)"
+". Las llamadas al sistema se definen mediante un número. Por ejemplo, en "
+"FreeBSD, el número de llamada al sistema 85 es "
+"el<citerefentry>swapon</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry>syscall y el número de syscall 132 es "
+"<citerefentry><refentrytitle>mkfifo</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> Algunas llamadas al sistema necesitan parámetros, que se pasan "
+"del espacio del usuario al espacio del kernel de varias formas (según la "
+"implementación). Las llamadas al sistema son sincrónicas."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:172
@@ -298,11 +339,16 @@ msgid ""
 "or can result in a reaction like sending a <firstterm>signal</firstterm> "
 "(division by zero)."
 msgstr ""
+"Otra forma posible de comunicarse es mediante un<firstterm>trap</"
+"firstterm>Las trampas ocurren de forma asincrónica después de que ocurre "
+"algún evento (división por cero, falla de página, etc.). Una trampa puede "
+"ser transparente para un proceso (error de página) o puede resultar en una "
+"reacción como enviar una<firstterm>signal</firstterm> (división por cero)."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:181
 msgid "Communication between processes"
-msgstr ""
+msgstr "Comunicación entre procesos"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:183
@@ -313,11 +359,16 @@ msgid ""
 "supplied routine, some result in a predefined action that cannot be altered "
 "or ignored."
 msgstr ""
+"Hay otras API (System V IPC, memoria compartida, etc.) pero la API más "
+"importante es la señal. Las señales son enviadas por procesos o por el "
+"kernel y recibidas por procesos. Algunas señales pueden ser ignoradas o "
+"manejadas por una rutina proporcionada por el usuario, otras dan como "
+"resultado una acción predefinida que no se puede alterar ni ignorar."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:192
 msgid "Process management"
-msgstr ""
+msgstr "Gestión de proceso"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:194
@@ -339,7 +390,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: article.translate.xml:208
 msgid "Thread management"
-msgstr ""
+msgstr "Gestión de subprocesos"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:210
@@ -352,16 +403,24 @@ msgid ""
 "thread group in one process and managing the threading in userspace (1:N "
 "threading). Comparing main features of each approach:"
 msgstr ""
+"Tradicional<trademark class=\"registered\">UNIX</trademark>no define ninguna "
+"API ni implementación para subprocesos, mientras que<trademark class="
+"\"registered\">POSIX</trademark>define su API de subprocesos, pero la "
+"implementación no está definida. Tradicionalmente, había dos formas de "
+"implementar subprocesos. Manejarlos como procesos separados (subprocesos 1: "
+"1) o envolver todo el grupo de subprocesos en un proceso y administrar el "
+"subproceso en el espacio de usuario (subprocesos 1: N). Comparación de las "
+"principales características de cada enfoque:"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:219
 msgid "1:1 threading"
-msgstr ""
+msgstr "Roscado 1: 1"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:223
 msgid "- heavyweight threads"
-msgstr ""
+msgstr "- hilos de peso pesado"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:226
@@ -369,21 +428,23 @@ msgid ""
 "- the scheduling cannot be altered by the user (slightly mitigated by the "
 "<trademark class=\"registered\">POSIX</trademark> API)"
 msgstr ""
+"- la programación no puede ser alterada por el usuario (levemente mitigado "
+"por el<trademark class=\"registered\">POSIX</trademark>API)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:230
 msgid "+ no syscall wrapping necessary"
-msgstr ""
+msgstr "+ no es necesario envolver syscall"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:233
 msgid "+ can utilize multiple CPUs"
-msgstr ""
+msgstr "+ puede utilizar varias CPU"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:237
 msgid "1:N threading"
-msgstr ""
+msgstr "1: N roscado"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:241
@@ -393,22 +454,22 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: article.translate.xml:244
 msgid "+ scheduling can be easily altered by the user"
-msgstr ""
+msgstr "+ el usuario puede modificar fácilmente la programación"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:248
 msgid "- syscalls must be wrapped"
-msgstr ""
+msgstr "- las llamadas al sistema deben estar envueltas"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:251
 msgid "- cannot utilize more than one CPU"
-msgstr ""
+msgstr "- no puede utilizar más de una CPU"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:258
 msgid "What is FreeBSD?"
-msgstr ""
+msgstr "¿Qué es FreeBSD?"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:260
@@ -423,6 +484,16 @@ msgid ""
 "FreeBSD for its liberal license. Another group created the NetBSD operating "
 "system with different goals in mind. We will focus on FreeBSD."
 msgstr ""
+"El proyecto FreeBSD es uno de los sistemas operativos de código abierto más "
+"antiguos disponibles actualmente para uso diario. Es un descendiente directo "
+"del genuino<trademark class=\"registered\">UNIX</trademark>por lo que podría "
+"afirmarse que es un verdadero<trademark class=\"registered\">UNIX</"
+"trademark>aunque los problemas de licencias no lo permiten. El inicio del "
+"proyecto se remonta a principios de la década de 1990 cuando un equipo de "
+"usuarios de BSD parchó el sistema operativo 386BSD. Basado en este patchkit, "
+"surgió un nuevo sistema operativo llamado FreeBSD por su licencia liberal. "
+"Otro grupo creó el sistema operativo NetBSD con diferentes objetivos en "
+"mente. Nos centraremos en FreeBSD."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:271
@@ -437,16 +508,25 @@ msgid ""
 "of December 2006 and 7-CURRENT development, the following emulation "
 "functionalities are supported:"
 msgstr ""
+"FreeBSD es un moderno<trademark class=\"registered\">UNIX</trademark>sistema "
+"operativo basado en todas las características de<trademark class=\"registered"
+"\">UNIX</trademark>Multitarea preventiva, instalaciones multiusuario, redes "
+"TCP / IP, protección de memoria, soporte de multiprocesamiento simétrico, "
+"memoria virtual con VM fusionada y caché de búfer, todo está ahí. Una de las "
+"características interesantes y extremadamente útiles es la capacidad de "
+"emular otros<trademark class=\"registered\">UNIX</trademark>como los "
+"sistemas operativos. A diciembre de 2006 y al desarrollo 7-CURRENT, se "
+"admiten las siguientes funcionalidades de emulación:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:283
 msgid "FreeBSD/i386 emulation on FreeBSD/amd64"
-msgstr ""
+msgstr "Emulación FreeBSD/i386 en FreeBSD/amd64"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:286
 msgid "FreeBSD/i386 emulation on FreeBSD/ia64"
-msgstr ""
+msgstr "Emulación FreeBSD/i386 en FreeBSD/ia64"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:289
@@ -454,21 +534,23 @@ msgid ""
 "<trademark class=\"registered\">Linux</trademark>-emulation of <trademark "
 "class=\"registered\">Linux</trademark> operating system on FreeBSD"
 msgstr ""
+"<trademark class=\"registered\">Linux</trademark>emulación de<trademark "
+"class=\"registered\">Linux</trademark>sistema operativo en FreeBSD"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:293
 msgid "NDIS-emulation of Windows networking drivers interface"
-msgstr ""
+msgstr "Emulación NDIS de la interfaz de controladores de red de Windows"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:297
 msgid "NetBSD-emulation of NetBSD operating system"
-msgstr ""
+msgstr "Emulación NetBSD del sistema operativo NetBSD"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:300
 msgid "PECoff-support for PECoff FreeBSD executables"
-msgstr ""
+msgstr "Soporte PECoff para ejecutables PECoff FreeBSD"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:303
@@ -476,6 +558,8 @@ msgid ""
 "SVR4-emulation of System V revision 4 <trademark class=\"registered\">UNIX</"
 "trademark>"
 msgstr ""
+"Emulación SVR4 de System V revisión 4<trademark class=\"registered\""
+">UNIX</trademark>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:307
@@ -484,6 +568,10 @@ msgid ""
 "trademark> layer and various FreeBSD-on-FreeBSD layers. Others are not "
 "supposed to work properly nor be usable these days."
 msgstr ""
+"Las emulaciones desarrolladas activamente son las<trademark class="
+"\"registered\">Linux</trademark>layer y varias capas FreeBSD-on-FreeBSD. Se "
+"supone que otros no funcionan correctamente ni se pueden utilizar en estos "
+"días."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:314
@@ -497,11 +585,20 @@ msgid ""
 "exists there but the concept is similar on other architectures. The "
 "information was taken from [1] and the source code."
 msgstr ""
+"FreeBSD es el sabor tradicional de<trademark class=\"registered\">UNIX</"
+"trademark>en el sentido de dividir la ejecución de procesos en dos mitades: "
+"espacio de kernel y ejecución de espacio de usuario. Hay dos tipos de "
+"entrada de proceso al kernel: una llamada al sistema y una trampa. Solo hay "
+"una forma de regresar. En las secciones siguientes describiremos las tres "
+"puertas hacia / desde el kernel. La descripción completa se aplica a la "
+"arquitectura i386 ya que el Linuxulator solo existe allí, pero el concepto "
+"es similar en otras arquitecturas. La información se tomó de [1] y el código "
+"fuente."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:326
 msgid "System entries"
-msgstr ""
+msgstr "Entradas del sistema"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:328
@@ -517,11 +614,23 @@ msgid ""
 "System entries are handled by trap handlers, where we can access both the "
 "kernel-space and the user-space at once."
 msgstr ""
+"FreeBSD tiene una abstracción llamada cargador de clases de ejecución, que "
+"es una cuña en el<citerefentry><refentrytitle>execve</refentrytitle><manvolnu"
+"m>2</manvolnum></citerefentry>syscall. Esto emplea una "
+"estructura<literal>sysentvec</literal>que describe una ABI ejecutable. "
+"Contiene cosas como tabla de traducción de errno, tabla de traducción de "
+"señales, varias funciones para satisfacer las necesidades de llamadas al "
+"sistema (reparación de pila, volcado de núcleos, etc.). Cada ABI que el "
+"kernel de FreeBSD desee admitir debe definir esta estructura, ya que se usa "
+"más adelante en el código de procesamiento de llamadas al sistema y en otros "
+"lugares. Las entradas del sistema son manejadas por controladores de "
+"trampas, donde podemos acceder tanto al espacio del núcleo como al espacio "
+"del usuario a la vez."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:343 article.translate.xml:502
 msgid "Syscalls"
-msgstr ""
+msgstr "llamadas al sistema"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:345
@@ -530,6 +639,10 @@ msgid ""
 "literal> with register <varname>%eax</varname> set to a desired syscall "
 "number with arguments passed on the stack."
 msgstr ""
+"Las llamadas al sistema en FreeBSD se emiten ejecutando "
+"interrupt<literal>0x80</literal>con registro<varname>%eax</"
+"varname>establecido en un número de llamada al sistema deseado con "
+"argumentos pasados en la pila."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:350
@@ -558,7 +671,7 @@ msgstr ""
 #: article.translate.xml:376 article.translate.xml:548
 #: article.translate.xml:1482
 msgid "Traps"
-msgstr ""
+msgstr "trampas"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:378
@@ -572,11 +685,19 @@ msgid ""
 "might send a signal to the process and/or exit to userland using "
 "<literal>userret()</literal>."
 msgstr ""
+"El manejo de trampas en FreeBSD es similar al manejo de llamadas al sistema. "
+"Siempre que ocurre una trampa, se llama a un manejador de ensamblador. Se "
+"elige entre todas las trampas, todas las trampas con regs presionadas o "
+"trampa de llamadas dependiendo del tipo de trampa. Este controlador prepara "
+"argumentos para una llamada a una función C<literal>trap()</literal>("
+"definido en<filename>sys/i386/i386/trap.c</filename>, que luego procesa la "
+"trampa ocurrida. Después del procesamiento, puede enviar una señal al "
+"proceso y / o salir al área de usuario usando<literal>userret()</literal>."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:391 article.translate.xml:558
 msgid "Exits"
-msgstr ""
+msgstr "Salida"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:393
@@ -586,11 +707,15 @@ msgid ""
 "trap or via a syscall. This restores the program status from the stack and "
 "returns to the userspace."
 msgstr ""
+"Las salidas del kernel al espacio de usuario ocurren usando la rutina del "
+"ensamblador<literal>doreti</literal>independientemente de si se ingresó al "
+"kernel mediante una trampa o mediante una llamada al sistema. Esto restaura "
+"el estado del programa de la pila y vuelve al espacio de usuario."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:401 article.translate.xml:569
 msgid "<trademark class=\"registered\">UNIX</trademark> primitives"
-msgstr ""
+msgstr "<trademark class=\"registered\">UNIX</trademark>primitivos"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:403
@@ -641,11 +766,24 @@ msgid ""
 "implemented but it was removed recently because it caused serious slowdown "
 "and made the code more difficult to deal with)."
 msgstr ""
+"Como se indicó anteriormente, hay dos implementaciones de subprocesamiento "
+"en FreeBSD. La biblioteca M: N divide el trabajo entre el espacio del kernel "
+"y el espacio de usuario. Thread es una entidad que se programa en el kernel, "
+"pero puede representar varios subprocesos del espacio de usuario. Los "
+"subprocesos del espacio de usuario M se asignan a los subprocesos del núcleo "
+"N, lo que ahorra recursos y mantiene la capacidad de explotar el paralelismo "
+"de multiprocesador. Se puede obtener más información sobre la implementación "
+"en la página del manual o en [1]. La biblioteca 1: 1 mapea directamente un "
+"subproceso de usuario a un subproceso del kernel, lo que simplifica "
+"enormemente el esquema. Ninguno de estos diseños implementa un mecanismo de "
+"equidad (se implementó un mecanismo de este tipo, pero se eliminó "
+"recientemente porque causaba una grave desaceleración y hacía que el código "
+"fuera más difícil de manejar)."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:454
 msgid "What is <trademark class=\"registered\">Linux</trademark>"
-msgstr ""
+msgstr "Que es <trademark class=\"registered\">Linux</trademark>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:456
@@ -658,6 +796,13 @@ msgid ""
 "trademark> is being associated with its fast development pace, full hardware "
 "support and benevolent dictator model of organization."
 msgstr ""
+"<trademark class=\"registered\">Linux</trademark> es una <trademark class="
+"\"registered\">UNIX</trademark>como el kernel desarrollado originalmente por "
+"Linus Torvalds, y al que ahora contribuyen una multitud masiva de "
+"programadores de todo el mundo. Desde sus meros inicios hasta hoy, con un "
+"amplio apoyo de empresas como IBM o Google, <trademark class=\"registered\""
+">Linux</trademark>se asocia con su rápido ritmo de desarrollo, soporte "
+"completo de hardware y modelo de organización de dictador benevolente."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:464
@@ -669,6 +814,13 @@ msgid ""
 "memory, networking, basically everything is there. There are also highly "
 "advanced features like virtualization etc."
 msgstr ""
+"<trademark class=\"registered\">Linux</trademark>El desarrollo comenzó en "
+"1991 como un proyecto de aficionados en la Universidad de Helsinki en "
+"Finlandia. Desde entonces ha obtenido todas las características de un "
+"moderno<trademark class=\"registered\">UNIX</trademark>como SO: "
+"multiprocesamiento, soporte multiusuario, memoria virtual, redes, "
+"básicamente todo está ahí. También hay funciones muy avanzadas como "
+"virtualización, etc."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:471
@@ -680,6 +832,12 @@ msgid ""
 "trademark> can only be obtained in a binary form so recompilation for other "
 "operating systems is impossible."
 msgstr ""
+"Desde 2006 <trademark class=\"registered\">Linux</trademark>parece ser el "
+"sistema operativo de código abierto más utilizado con el apoyo de "
+"proveedores de software independientes como Oracle, RealNetworks, Adobe, "
+"etc. La mayor parte del software comercial distribuido para<trademark class="
+"\"registered\">Linux</trademark>solo se puede obtener en forma binaria, por "
+"lo que la recopilación para otros sistemas operativos es imposible."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:478
@@ -698,7 +856,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: article.translate.xml:488
 msgid "More information can be obtained from [3]."
-msgstr ""
+msgstr "Se puede obtener más información en [3]."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:493
@@ -711,6 +869,14 @@ msgid ""
 "\">Linux</trademark> 2.6 on the <trademark>i386</trademark> architecture. "
 "This information was taken from [2]."
 msgstr ""
+"<trademark class=\"registered\">Linux</trademark>Sigue lo "
+"tradicional<trademark class=\"registered\">UNIX</trademark> esquema de "
+"dividir la ejecución de un proceso en dos mitades: el kernel y el espacio de "
+"usuario. El kernel se puede ingresar de dos maneras: a través de una trampa "
+"o mediante una llamada al sistema. La devolución se gestiona de una sola "
+"forma. La descripción adicional se aplica a<trademark class=\"registered\""
+">Linux</trademark> 2.6 sobre el<trademark>i386</trademark> arquitectura. "
+"Esta información se tomó de [2]."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:504
