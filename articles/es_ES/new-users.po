@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:08-0300\n"
-"PO-Revision-Date: 2020-12-11 11:03+0000\n"
+"PO-Revision-Date: 2020-12-13 00:04+0000\n"
 "Last-Translator: Aaron H Farías Martinez <timido@ubuntu.com>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_new-users/es/>\n"
@@ -18,7 +18,9 @@ msgstr ""
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Sergio Carlavilla carlavilla@FreeBSD.org, 2019"
+msgstr ""
+"Sergio Carlavilla carlavilla@FreeBSD.org, 2019\n"
+"Aaron H Farias Martinez timido@ubuntu.com, 2020"
 
 #. (itstool) path: info/title
 #: article.translate.xml:7
@@ -52,7 +54,7 @@ msgstr "1997-08-15"
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:24
 msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
-msgstr "FreeBSD is a registered trademark of the FreeBSD Foundation."
+msgstr "FreeBSD es una marca registrada de FreeBSD Foundation."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:26
@@ -61,9 +63,9 @@ msgid ""
 "International Business Machines Corporation in the United States, other "
 "countries, or both."
 msgstr ""
-"IBM, AIX, OS/2, PowerPC, PS/2, S/390, and ThinkPad are trademarks of "
-"International Business Machines Corporation in the United States, other "
-"countries, or both."
+"IBM, AIX, OS / 2, PowerPC, PS / 2, S / 390 y ThinkPad son marcas comerciales "
+"de International Business Machines Corporation en los Estados Unidos, otros "
+"países o ambos."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:30
@@ -72,9 +74,9 @@ msgid ""
 "NT are either registered trademarks or trademarks of Microsoft Corporation "
 "in the United States and/or other countries."
 msgstr ""
-"Microsoft, IntelliMouse, MS-DOS, Outlook, Windows, Windows Media and Windows "
-"NT are either registered trademarks or trademarks of Microsoft Corporation "
-"in the United States and/or other countries."
+"Microsoft, IntelliMouse, MS-DOS, Outlook, Windows, Windows Media y Windows "
+"NT son marcas comerciales registradas o marcas comerciales de Microsoft "
+"Corporation en los Estados Unidos y / o en otros países."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:34
@@ -83,9 +85,9 @@ msgid ""
 "Open Group are trademarks of The Open Group in the United States and other "
 "countries."
 msgstr ""
-"Motif, OSF/1, and UNIX are registered trademarks and IT DialTone and The "
-"Open Group are trademarks of The Open Group in the United States and other "
-"countries."
+"Motif, OSF / 1 y UNIX son marcas comerciales registradas y IT DialTone y The "
+"Open Group son marcas comerciales de The Open Group en los Estados Unidos y "
+"otros países."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:38
@@ -96,18 +98,21 @@ msgid ""
 "designations have been followed by the <quote>™</quote> or the <quote>®</"
 "quote> symbol."
 msgstr ""
-"Many of the designations used by manufacturers and sellers to distinguish "
-"their products are claimed as trademarks. Where those designations appear in "
-"this document, and the FreeBSD Project was aware of the trademark claim, the "
-"designations have been followed by the <quote>™</quote> or the <quote>®</"
-"quote> symbol."
+"Muchas de las designaciones utilizadas por los fabricantes y vendedores para "
+"distinguir sus productos se reclaman como marcas comerciales. Cuando esas "
+"designaciones aparecen en este documento, y el Proyecto FreeBSD estaba al "
+"tanto del reclamo de marca registrada, las designaciones han sido seguidas "
+"por el <quote>™</quote> or the <quote>®</quote> symbol."
 
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:46
+#, fuzzy
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/new-users/article.xml 52136 "
 "2018-08-16 13:55:09Z bcr $"
-msgstr "$FreeBSD$"
+msgstr ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/new-users/article.xml 52136 2018-08-"
+"16 13:55:09Z bcr $"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:49
@@ -123,7 +128,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:56
 msgid "Logging in and Getting Out"
-msgstr "Iniciar y cerrar sesión"
+msgstr "Iniciar sesión y salir"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:58
@@ -448,7 +453,7 @@ msgstr "<command>ls -l</command>"
 #. (itstool) path: listitem/para
 #: article.translate.xml:211
 msgid "Lists the files in long format—size, date, permissions."
-msgstr "Lista los archivos en el formato extendido—tamaño, fecha y permisos."
+msgstr "Muestra los archivos en formato largo: tamaño, fecha, permisos."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:217
@@ -508,6 +513,7 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:255
+#, fuzzy
 msgid "<command>cat <replaceable>filename</replaceable></command>"
 msgstr "<command>cat <replaceable>filename</replaceable></command>"
 
@@ -567,6 +573,7 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:293
+#, fuzzy
 msgid "<command>apropos <replaceable>text</replaceable></command>"
 msgstr "<command>apropos <replaceable>text</replaceable></command>"
 
@@ -581,6 +588,7 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:304
+#, fuzzy
 msgid "<command>man <replaceable>text</replaceable></command>"
 msgstr "<command>man <replaceable>text</replaceable></command>"
 
@@ -608,6 +616,7 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:323
+#, fuzzy
 msgid "<command>which <replaceable>text</replaceable></command>"
 msgstr "<command>which <replaceable>text</replaceable></command>"
 
@@ -622,6 +631,7 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:333
+#, fuzzy
 msgid "<command>locate <replaceable>text</replaceable></command>"
 msgstr "<command>locate <replaceable>text</replaceable></command>"
 
@@ -635,6 +645,7 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:343
+#, fuzzy
 msgid "<command>whatis <replaceable>text</replaceable></command>"
 msgstr "<command>whatis <replaceable>text</replaceable></command>"
 
@@ -651,6 +662,7 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:355
+#, fuzzy
 msgid "<command>whereis <replaceable>text</replaceable></command>"
 msgstr "<command>whereis <replaceable>text</replaceable></command>"
 
@@ -712,7 +724,7 @@ msgstr ""
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:388
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>periodic daily</userinput>\n"
 "<lineannotation>output omitted</lineannotation>\n"
@@ -820,7 +832,7 @@ msgstr ""
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:441
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>cp rc.conf rc.conf.orig</userinput>"
 msgstr "<prompt>#</prompt> <userinput>cp rc.conf rc.conf.orig</userinput>"
 
@@ -839,7 +851,7 @@ msgstr ""
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:451
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>mv rc.conf rc.conf.orig</userinput>\n"
 "<prompt>#</prompt> <userinput>cp rc.conf.orig rc.conf</userinput>"
@@ -849,6 +861,7 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:455
+#, fuzzy
 msgid ""
 "because <command>mv</command> preserves the original date and owner of the "
 "file. You can now edit <filename>rc.conf</filename>. If you want the "
@@ -857,9 +870,9 @@ msgid ""
 msgstr ""
 "porque el comando <command>mv</command> conserva la fecha original y el "
 "propietario del archivo. Ahora puede editar <filename>rc.conf</filename>. Si "
-"desea recuperar el original, entonces utilice el comando <userinput>mv rc."
-"conf rc.conf.myedit</userinput> (suponiendo que desea conservar la versión "
-"que ha editado) y luego:"
+"desea recuperar el original, entonces utilice el comando <userinput>mv "
+"rc.conf rc.conf.myedit</userinput> (suponiendo que desea conservar la "
+"versión que ha editado) y luego:"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:463
@@ -879,9 +892,11 @@ msgstr "Para editar un fichero, escriba"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:471
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>vi <replaceable>filename</replaceable></userinput>"
-msgstr "<prompt>#</prompt> <userinput>vi <replaceable>filename</replaceable></userinput>"
+msgstr ""
+"<prompt>#</prompt> <userinput>vi "
+"<replaceable>filename</replaceable></userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:474
@@ -895,6 +910,7 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:480
+#, fuzzy
 msgid "<command>x</command>"
 msgstr "<command>x</command>"
 
@@ -905,6 +921,7 @@ msgstr "borra la letra que se encuentre en la posición del cursor"
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:488
+#, fuzzy
 msgid "<command>dd</command>"
 msgstr "<command>dd</command>"
 
@@ -916,6 +933,7 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:497
+#, fuzzy
 msgid "<command>i</command>"
 msgstr "<command>i</command>"
 
@@ -926,6 +944,7 @@ msgstr "inserta texto en la posición del cursor"
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:505
+#, fuzzy
 msgid "<command>a</command>"
 msgstr "<command>a</command>"
 
@@ -1017,6 +1036,7 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:573
+#, fuzzy
 msgid "<keycombo><keycap>Ctrl</keycap><keycap>L</keycap></keycombo>"
 msgstr "<keycombo><keycap>Ctrl</keycap><keycap>L</keycap></keycombo>"
 
@@ -1108,7 +1128,7 @@ msgstr "<command>df</command>"
 #. (itstool) path: listitem/para
 #: article.translate.xml:636
 msgid "shows file space and mounted systems."
-msgstr "muestra el espacio en disco y los sistemas de archivos montados"
+msgstr "muestra el espacio en disco y los sistemas de archivos montados."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:641
@@ -1124,16 +1144,19 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:650
+#, fuzzy
 msgid "<command>rm <replaceable>filename</replaceable> </command>"
 msgstr "<command>rm <replaceable>filename</replaceable> </command>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:657
+#, fuzzy
 msgid "remove <replaceable>filename</replaceable>."
 msgstr "remove <replaceable>filename</replaceable>."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:662
+#, fuzzy
 msgid "<command>rm -R <replaceable>dir</replaceable> </command>"
 msgstr "<command>rm -R <replaceable>dir</replaceable> </command>"
 
@@ -1167,6 +1190,7 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:688
+#, fuzzy
 msgid "<command>passwd</command>"
 msgstr "<command>passwd</command>"
 
@@ -1181,6 +1205,7 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:696
+#, fuzzy
 msgid "<command>man hier</command>"
 msgstr "<command>man hier</command>"
 
@@ -1201,13 +1226,15 @@ msgid ""
 msgstr ""
 "Utilice el comando <command>find</command> para buscar <filename>filename</"
 "filename> en el directorio <filename>/usr</filename> o en cualquier de sus "
-"subdirectorios con:"
+"subdirectorios con"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:709
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>find /usr -name \"<replaceable>filename</replaceable>\"</userinput>"
-msgstr "<prompt>%</prompt> <userinput>find /usr -name \"<replaceable>filename</replaceable>\"</userinput>"
+msgstr ""
+"<prompt>%</prompt> <userinput>find /usr -name \""
+"<replaceable>filename</replaceable>\"</userinput>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:712
@@ -1227,6 +1254,7 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:720
+#, fuzzy
 msgid ""
 "An excellent book that explains <trademark class=\"registered\">UNIX</"
 "trademark> commands and utilities is Abrahams &amp; Larson, <citetitle>Unix "
@@ -1347,11 +1375,11 @@ msgid ""
 msgstr ""
 "A continuación, utilice el comando <command>cd</command> para acceder al "
 "subdirectorio <filename>/usr/local/kermit</filename>, el cual contieneel "
-"archivo <filename>Makefile</filename>. Escriba:"
+"archivo <filename>Makefile</filename>. Escriba"
 
 #. (itstool) path: informalexample/screen
 #: article.translate.xml:779
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>make all install</userinput>"
 msgstr "<prompt>#</prompt> <userinput>make all install</userinput>"
 
@@ -1480,16 +1508,16 @@ msgid ""
 "<filename>.tcshrc</filename> as an alias with:"
 msgstr ""
 "En las primeras versiones de FreeBSD, y también en muchas otras versiones de "
-"<trademark class=\"registered\">UNIX</trademark>, puede ser peligroso "
-"cambiar la shell del usuario <systemitem class=\"username\">root</"
-"systemitem> a otra que no sea <command>sh</command> o <command>csh</"
-"command>; es posible que no tenga una shell funcional cuando el sistema "
-"entre en modo single user. La solución es usar el comando <command>su -m</"
-"command> para convertirse en el usuario <systemitem class=\"username\">root</"
-"systemitem>, que le dará acceso a la shell <command>tcsh</command> como "
-"<systemitem class=\"username\">root</systemitem>, porque la shell es parte "
-"del entorno. Puede hacer esto permanente añadiendolo a su archivo <filename>."
-"tcshrc</filename> como un alias, de la siguiente forma:"
+"<trademark class=\"registered\">UNIX</trademark> puede ser peligroso cambiar "
+"la shell del usuario <systemitem class=\"username\">root</systemitem> a otra "
+"que no sea <command>sh</command> o <command>csh</command>; es posible que no "
+"tenga una shell funcional cuando el sistema entre en modo single user. La "
+"solución es usar el comando <command>su -m</command> para convertirse en el "
+"usuario <systemitem class=\"username\">root</systemitem>, que le dará acceso "
+"a la shell <command>tcsh</command> como <systemitem class=\"username\">root</"
+"systemitem>, porque la shell es parte del entorno. Puede hacer esto "
+"permanente añadiendolo a su archivo <filename>.tcshrc</filename> como un "
+"alias, de la siguiente forma:"
 
 #. (itstool) path: note/programlisting
 #: article.translate.xml:854
@@ -1537,6 +1565,7 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:877
+#, fuzzy
 msgid "set prompt = \"%h %t %~ %# \""
 msgstr "set prompt = \"%h %t %~ %# \""
 
@@ -1619,7 +1648,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:919
 msgid "Comments Welcome"
-msgstr "Se aceptan sugerencias"
+msgstr "Comentarios Bienvenidos"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:921
@@ -1636,5 +1665,6 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:927
+#, fuzzy
 msgid "Annelise Anderson, <email>andrsn@andrsn.stanford.edu</email>"
 msgstr "Annelise Anderson, <email>andrsn@andrsn.stanford.edu</email>"
