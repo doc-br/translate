@@ -4,39 +4,46 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:04-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-12-13 00:05+0000\n"
+"Last-Translator: Aaron H Farías Martinez <timido@ubuntu.com>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/boooks_developers-handbook/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr ""
+msgstr "Aaron H Farias Martinez Timido@ubuntu.com, 2020,"
 
 #. (itstool) path: info/title
 #: book.translate.xml:32
 msgid "FreeBSD Developers' Handbook"
-msgstr ""
+msgstr "Manual para desarrolladores de FreeBSD"
 
 #. (itstool) path: info/author
 #: book.translate.xml:35
 msgid "<orgname>The FreeBSD Documentation Project</orgname>"
-msgstr ""
+msgstr "<orgname>El proyecto de documentación de FreeBSD</orgname>"
 
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: book.translate.xml:37 book.translate.xml:148
+#, fuzzy
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/books/developers-handbook/book.xml 54255 "
 "2020-06-15 08:13:08Z bcr $"
 msgstr ""
+"$FreeBSD: head/en_US.ISO8859-1/books/developers-handbook/book.xml 54255 "
+"2020-06-15 08:13:08Z bcr $"
 
 #. (itstool) path: info/copyright
 #: book.translate.xml:39
+#, fuzzy
 msgid ""
 "<year>2000</year> <year>2001</year> <year>2002</year> <year>2003</year> "
 "<year>2004</year> <year>2005</year> <year>2006</year> <year>2007</year> "
@@ -45,11 +52,17 @@ msgid ""
 "<year>2016</year> <year>2017</year> <year>2018</year> <year>2019</year> "
 "<year>2020</year> <holder>The FreeBSD Documentation Project</holder>"
 msgstr ""
+"<year>2000</year> <year>2001</year> <year>2002</year> <year>2003</year> "
+"<year>2004</year> <year>2005</year> <year>2006</year> <year>2007</year> "
+"<year>2008</year> <year>2009</year> <year>2010</year> <year>2011</year> "
+"<year>2012</year> <year>2013</year> <year>2014</year> <year>2015</year> "
+"<year>2016</year> <year>2017</year> <year>2018</year> <year>2019</year> "
+"<year>2020</year> <holder>The FreeBSD Documentation Project</holder>"
 
 #. (itstool) path: legalnotice/title
 #: book.translate.xml:66
 msgid "Copyright"
-msgstr ""
+msgstr "derechos de autor"
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:68
@@ -58,6 +71,9 @@ msgid ""
 "HTML, PDF, PostScript, RTF and so forth) with or without modification, are "
 "permitted provided that the following conditions are met:"
 msgstr ""
+"Se permite la redistribución y el uso en fuentes (XML DocBook) y formularios "
+"'compilados' (XML, HTML, PDF, PostScript, RTF, etc.) con o sin modificación, "
+"siempre que se cumplan las siguientes condiciones:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:75
@@ -66,6 +82,10 @@ msgid ""
 "notice, this list of conditions and the following disclaimer as the first "
 "lines of this file unmodified."
 msgstr ""
+"Las redistribuciones de código fuente (XML DocBook) deben conservar el aviso "
+"de derechos de autor anterior, esta lista de condiciones y el siguiente "
+"descargo de responsabilidad como las primeras líneas de este archivo sin "
+"modificar."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:81
@@ -75,6 +95,11 @@ msgid ""
 "notice, this list of conditions and the following disclaimer in the "
 "documentation and/or other materials provided with the distribution."
 msgstr ""
+"Las redistribuciones en forma compilada (transformadas a otras DTD, "
+"convertidas a PDF, PostScript, RTF y otros formatos) deben reproducir el "
+"aviso de derechos de autor anterior, esta lista de condiciones y la "
+"siguiente exención de responsabilidad en la documentación y / u otros "
+"materiales proporcionados con la distribución."
 
 #. (itstool) path: important/para
 #: book.translate.xml:90
@@ -91,11 +116,22 @@ msgid ""
 "ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF "
 "THE POSSIBILITY OF SUCH DAMAGE."
 msgstr ""
+"ESTA DOCUMENTACIÓN ES PROPORCIONADA POR FREEBSD DOCUMENTATION PROJECT \"TAL "
+"CUAL\" Y CUALQUIER GARANTÍA EXPRESA O IMPLÍCITA, INCLUYENDO, PERO NO "
+"LIMITADO A, LAS GARANTÍAS IMPLÍCITAS DE COMERCIABILIDAD E IDONEIDAD PARA UN "
+"PROPÓSITO EN PARTICULAR SE RECHAZA. EN NINGÚN CASO EL PROYECTO DE "
+"DOCUMENTACIÓN FREEBSD SERÁ RESPONSABLE DE NINGÚN DAÑO DIRECTO, INDIRECTO, "
+"INCIDENTAL, ESPECIAL, EJEMPLAR O CONSECUENTE (INCLUYENDO, PERO NO LIMITADO "
+"A, LA ADQUISICIÓN DE BIENES O SERVICIOS SUSTITUTOS; PÉRDIDA DE USO, DATOS O "
+"BENEFICIOS; O INTERRUPCIÓN COMERCIAL) SIN EMBARGO Y SOBRE CUALQUIER TEORÍA "
+"DE RESPONSABILIDAD, YA SEA POR CONTRATO, RESPONSABILIDAD ESTRICTA O AGRAVIO ("
+"INCLUYENDO NEGLIGENCIA O DE OTRA MANERA) QUE SURJA DE CUALQUIER MANERA DEL "
+"USO DE ESTA DOCUMENTACIÓN, AUNQUE SE INDIQUE LA POSIBILIDAD DE DICHO DAÑO."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:107
 msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
-msgstr ""
+msgstr "FreeBSD es una marca registrada de FreeBSD Foundation."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:109
@@ -104,6 +140,9 @@ msgid ""
 "Quicktime, and TrueType are trademarks of Apple Inc., registered in the U.S. "
 "and other countries."
 msgstr ""
+"Apple, AirPort, FireWire, iMac, iPhone, iPad, Mac, Macintosh, Mac OS, "
+"Quicktime y TrueType son marcas comerciales de Apple Inc., registradas en "
+"EE. UU. Y en otros países."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:114
@@ -112,6 +151,9 @@ msgid ""
 "International Business Machines Corporation in the United States, other "
 "countries, or both."
 msgstr ""
+"IBM, AIX, OS / 2, PowerPC, PS / 2, S / 390 y ThinkPad son marcas comerciales "
+"de International Business Machines Corporation en los Estados Unidos, otros "
+"países o ambos."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:118
@@ -119,6 +161,8 @@ msgid ""
 "IEEE, POSIX, and 802 are registered trademarks of Institute of Electrical "
 "and Electronics Engineers, Inc. in the United States."
 msgstr ""
+"IEEE, POSIX y 802 son marcas comerciales registradas de Institute of "
+"Electrical and Electronics Engineers, Inc. en los Estados Unidos."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:121
@@ -127,11 +171,14 @@ msgid ""
 "and Xeon are trademarks or registered trademarks of Intel Corporation or its "
 "subsidiaries in the United States and other countries."
 msgstr ""
+"Intel, Celeron, Centrino, Core, EtherExpress, i386, i486, Itanium, Pentium y "
+"Xeon son marcas comerciales o marcas comerciales registradas de Intel "
+"Corporation o sus subsidiarias en los Estados Unidos y otros países."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:125
 msgid "Linux is a registered trademark of Linus Torvalds."
-msgstr ""
+msgstr "Linux es una marca registrada de Linus Torvalds."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:127
@@ -140,6 +187,9 @@ msgid ""
 "NT are either registered trademarks or trademarks of Microsoft Corporation "
 "in the United States and/or other countries."
 msgstr ""
+"Microsoft, IntelliMouse, MS-DOS, Outlook, Windows, Windows Media y Windows "
+"NT son marcas comerciales registradas o marcas comerciales de Microsoft "
+"Corporation en los Estados Unidos y / o en otros países."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:131
@@ -148,6 +198,9 @@ msgid ""
 "Open Group are trademarks of The Open Group in the United States and other "
 "countries."
 msgstr ""
+"Motif, OSF / 1 y UNIX son marcas comerciales registradas y IT DialTone y The "
+"Open Group son marcas comerciales de The Open Group en los Estados Unidos y "
+"otros países."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:135
@@ -157,6 +210,10 @@ msgid ""
 "registered trademarks of Sun Microsystems, Inc. in the United States and "
 "other countries."
 msgstr ""
+"Sun, Sun Microsystems, Java, Java Virtual Machine, JDK, JRE, JSP, JVM, "
+"Netra, OpenJDK, Solaris, StarOffice, SunOS y VirtualBox son marcas "
+"comerciales o marcas comerciales registradas de Sun Microsystems, Inc. en "
+"los Estados Unidos y otros países."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:140
@@ -167,6 +224,11 @@ msgid ""
 "designations have been followed by the <quote>™</quote> or the <quote>®</"
 "quote> symbol."
 msgstr ""
+"Muchas de las designaciones utilizadas por los fabricantes y vendedores para "
+"distinguir sus productos se reclaman como marcas comerciales. Cuando esas "
+"designaciones aparecen en este documento, y el Proyecto FreeBSD estaba al "
+"tanto del reclamo de marca registrada, las designaciones han sido seguidas "
+"por el<quote>™</quote> o el <quote></quote> símbolo."
 
 #. (itstool) path: abstract/para
 #: book.translate.xml:151
@@ -178,6 +240,12 @@ msgid ""
 "\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc\">FreeBSD "
 "documentation project mailing list</link>."
 msgstr ""
+"Bienvenido al Manual para desarrolladores. Este manual es un  "
+"<emphasis>trabajo en progreso/emphasis> y es obra de muchas personas. Muchas "
+"secciones aún no existen y algunas de las que existen deben actualizarse. Si "
+"está interesado en ayudar con este proyecto, envíe un correo electrónico a "
+"<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc\"> "
+"Lista de correo del proyecto de documentación de FreeBSD</link>."
 
 #. (itstool) path: abstract/para
 #: book.translate.xml:157
@@ -194,13 +262,13 @@ msgstr ""
 #. (itstool) path: part/title
 #: book.translate.xml:167
 msgid "Basics"
-msgstr ""
+msgstr "Basicos"
 
 #. (itstool) path: info/title
 #. (itstool) path: sect1/title
 #: book.translate.xml:176 book.translate.xml:430
 msgid "Introduction"
-msgstr ""
+msgstr "Introducción"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:178 book.translate.xml:2956
@@ -208,18 +276,23 @@ msgid ""
 "<personname><firstname>Murray</firstname><surname>Stokely</surname></"
 "personname><contrib>Contributed by </contrib>"
 msgstr ""
+"<personname><firstname>Murray</firstname><surname>Stokely</surname></"
+"personname><contrib>Contribuido por</contrib>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:179
+#, fuzzy
 msgid ""
 "<personname><firstname>Jeroen</firstname><surname>Ruigrok van der Werven</"
 "surname></personname>"
 msgstr ""
+"<personname><firstname>Jeroen</firstname><surname>Ruigrok van der "
+"Werven</surname></personname>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:185
 msgid "Developing on FreeBSD"
-msgstr ""
+msgstr "Desarrollando en FreeBSD"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:187
@@ -228,6 +301,9 @@ msgid ""
 "But where to start? What does FreeBSD provide? What can it do for me, as a "
 "programmer?"
 msgstr ""
+"Aqui estamos. El sistema está todo instalado y está listo para comenzar a "
+"programar. ¿Pero por dónde empezar? ¿Qué proporciona FreeBSD? ¿Qué puede "
+"hacer por mí, como programador?"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:191
@@ -238,11 +314,17 @@ msgid ""
 "this chapter might be aimed toward the beginning programmer; indeed, it "
 "could serve useful for the programmer unfamiliar with the FreeBSD platform."
 msgstr ""
+"Estas son algunas preguntas a las que este capítulo intenta responder. Por "
+"supuesto, la programación tiene diferentes niveles de competencia como "
+"cualquier otro oficio. Para algunos es un hobby, para otros es su profesión. "
+"La información de este capítulo puede estar dirigida al programador "
+"principiante; de hecho, podría ser útil para el programador que no esté "
+"familiarizado con la plataforma FreeBSD."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:200
 msgid "The BSD Vision"
-msgstr ""
+msgstr "La visión de BSD"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:202
@@ -251,16 +333,20 @@ msgid ""
 "operating system package possible, with due respect to the original software "
 "tools ideology as well as usability, performance and stability."
 msgstr ""
+"Para producir lo mejor<trademark class=\"registered\">UNIX</trademark>como "
+"paquete de sistema operativo posible, con el debido respeto a la ideología "
+"de las herramientas de software originales, así como a la usabilidad, el "
+"rendimiento y la estabilidad."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:209
 msgid "Architectural Guidelines"
-msgstr ""
+msgstr "Directrices arquitectónicas"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:211
 msgid "Our ideology can be described by the following guidelines"
-msgstr ""
+msgstr "Nuestra ideología se puede describir mediante las siguientes pautas"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:217
@@ -268,6 +354,8 @@ msgid ""
 "Do not add new functionality unless an implementor cannot complete a real "
 "application without it."
 msgstr ""
+"No agregue nueva funcionalidad a menos que un implementador no pueda "
+"completar una aplicación real sin ella."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:222
@@ -276,6 +364,10 @@ msgid ""
 "Do not serve all the world's needs; rather, make the system extensible so "
 "that additional needs can be met in an upwardly compatible fashion."
 msgstr ""
+"Es tan importante decidir qué no es un sistema como decidir qué es. No "
+"atienda todas las necesidades del mundo; más bien, hacer que el sistema sea "
+"extensible para que las necesidades adicionales puedan satisfacerse de una "
+"manera compatible hacia arriba."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:230
@@ -283,6 +375,8 @@ msgid ""
 "The only thing worse than generalizing from one example is generalizing from "
 "no examples at all."
 msgstr ""
+"Lo único peor que generalizar a partir de un ejemplo es generalizar a partir "
+"de ningún ejemplo."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:235
@@ -290,6 +384,8 @@ msgid ""
 "If a problem is not completely understood, it is probably best to provide no "
 "solution at all."
 msgstr ""
+"Si un problema no se comprende completamente, probablemente sea mejor no "
+"proporcionar ninguna solución."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:240
@@ -297,11 +393,13 @@ msgid ""
 "If you can get 90 percent of the desired effect for 10 percent of the work, "
 "use the simpler solution."
 msgstr ""
+"Si puede obtener el 90 por ciento del efecto deseado para el 10 por ciento "
+"del trabajo, use la solución más simple."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:245
 msgid "Isolate complexity as much as possible."
-msgstr ""
+msgstr "Aísle la complejidad tanto como sea posible."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:249
@@ -309,6 +407,8 @@ msgid ""
 "Provide mechanism, rather than policy. In particular, place user interface "
 "policy in the client's hands."
 msgstr ""
+"Proporcionar un mecanismo, en lugar de una política. En particular, ponga la "
+"política de interfaz de usuario en manos del cliente."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:254
@@ -318,7 +418,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:258
 msgid "The Layout of <filename>/usr/src</filename>"
-msgstr ""
+msgstr "El diseño de<filename>/usr/src</filename>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:261
@@ -327,36 +427,41 @@ msgid ""
 "The source code is normally installed in <filename>/usr/src</filename> which "
 "contains the following subdirectories:"
 msgstr ""
+"El código fuente completo de FreeBSD está disponible en nuestro repositorio "
+"público. El código fuente normalmente se instala en<filename>/usr/src</"
+"filename>que contiene los siguientes subdirectorios:"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:271
 msgid "Directory"
-msgstr ""
+msgstr "Directorio"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:272
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:278
+#, fuzzy
 msgid "<filename>bin/</filename>"
-msgstr ""
+msgstr "<filename>bin/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:279
 msgid "Source for files in <filename>/bin</filename>"
-msgstr ""
+msgstr "Fuente de archivos en<filename>/bin/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:284
+#, fuzzy
 msgid "<filename>cddl/</filename>"
-msgstr ""
+msgstr "<filename>cddl/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:285
 msgid "Utilities covered by the Common Development and Distribution License"
-msgstr ""
+msgstr "Utilidades cubiertas por la licencia de distribución y desarrollo común"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:290
@@ -366,182 +471,201 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:291
 msgid "Source for files from contributed software"
-msgstr ""
+msgstr "Fuente de archivos del software contribuido"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:296
+#, fuzzy
 msgid "<filename>crypto/</filename>"
-msgstr ""
+msgstr "<filename>crypto/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:297
 msgid "Cryptographical sources"
-msgstr ""
+msgstr "Fuentes criptográficas"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:301
+#, fuzzy
 msgid "<filename>etc/</filename>"
-msgstr ""
+msgstr "<filename>etc/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:302
 msgid "Source for files in <filename>/etc</filename>"
-msgstr ""
+msgstr "Fuente de archivos en<filename>/etc</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:306
+#, fuzzy
 msgid "<filename>gnu/</filename>"
-msgstr ""
+msgstr "<filename>gnu/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:307
 msgid "Utilities covered by the GNU Public License"
-msgstr ""
+msgstr "Utilidades cubiertas por la licencia pública GNU"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:312
+#, fuzzy
 msgid "<filename>include/</filename>"
-msgstr ""
+msgstr "<filename>include/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:313
 msgid "Source for files in <filename>/usr/include</filename>"
-msgstr ""
+msgstr "Fuente de archivos en<filename>/usr/include</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:317
+#, fuzzy
 msgid "<filename>kerberos5/</filename>"
-msgstr ""
+msgstr "<filename>kerberos5</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:318
 msgid "Source for Kerberos version 5"
-msgstr ""
+msgstr "Fuente de la versión 5 de Kerberos"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:322
+#, fuzzy
 msgid "<filename>lib/</filename>"
-msgstr ""
+msgstr "<filename>lib/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:323
 msgid "Source for files in <filename>/usr/lib</filename>"
-msgstr ""
+msgstr "Fuente de archivos en<filename>/usr/lib</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:327
+#, fuzzy
 msgid "<filename>libexec/</filename>"
-msgstr ""
+msgstr "<filename>libexec/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:328
 msgid "Source for files in <filename>/usr/libexec</filename>"
-msgstr ""
+msgstr "Fuente de los archivos en<filename>/usr/libexec</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:332
+#, fuzzy
 msgid "<filename>release/</filename>"
-msgstr ""
+msgstr "<filename>release/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:333
 msgid "Files required to produce a FreeBSD release"
-msgstr ""
+msgstr "Archivos necesarios para producir una versión de FreeBSD"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:338
+#, fuzzy
 msgid "<filename>rescue/</filename>"
-msgstr ""
+msgstr "<filename>rescue/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:339
 msgid "Build system for the <filename>/rescue</filename> utilities"
 msgstr ""
+"Sistema de compilación para las utilidades<filename>/rescue</filename> "
+"utilidades"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:345
+#, fuzzy
 msgid "<filename>sbin/</filename>"
-msgstr ""
+msgstr "<filename>sbin/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:346
 msgid "Source for files in <filename>/sbin</filename>"
-msgstr ""
+msgstr "Fuente de archivos en<filename>/sbin</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:350
+#, fuzzy
 msgid "<filename>secure/</filename>"
-msgstr ""
+msgstr "<filename>secure/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:351
 msgid "Contributed cryptographic sources"
-msgstr ""
+msgstr "Fuentes criptográficas contribuidas"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:355
+#, fuzzy
 msgid "<filename>share/</filename>"
-msgstr ""
+msgstr "<filename>share/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:356
 msgid "Source for files in <filename>/usr/share</filename>"
-msgstr ""
+msgstr "Fuente de archivos en<filename>/usr/share</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:360
+#, fuzzy
 msgid "<filename>sys/</filename>"
-msgstr ""
+msgstr "<filename>sys/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:361
 msgid "Kernel source files"
-msgstr ""
+msgstr "Archivos de origen del kernel"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:365
+#, fuzzy
 msgid "<filename>tests/</filename>"
-msgstr ""
+msgstr "<filename>tests/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:366
 msgid "The FreeBSD test suite"
-msgstr ""
+msgstr "El conjunto de pruebas de FreeBSD"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:370
+#, fuzzy
 msgid "<filename>tools/</filename>"
-msgstr ""
+msgstr "<filename>tools/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:371
 msgid "Tools used for maintenance and testing of FreeBSD"
-msgstr ""
+msgstr "Herramientas utilizadas para el mantenimiento y las pruebas de FreeBSD"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:376
+#, fuzzy
 msgid "<filename>usr.bin/</filename>"
-msgstr ""
+msgstr "<filename>usr.bin/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:377
 msgid "Source for files in <filename>/usr/bin</filename>"
-msgstr ""
+msgstr "Fuente de archivos en<filename>/usr/bin</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:381
+#, fuzzy
 msgid "<filename>usr.sbin/</filename>"
-msgstr ""
+msgstr "<filename>usr.sbin/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:382
 msgid "Source for files in <filename>/usr/sbin</filename>"
-msgstr ""
+msgstr "Fuente de archivos en <filename>/usr/sbin</filename>"
 
 #. (itstool) path: info/title
 #: book.translate.xml:398
 msgid "Programming Tools"
-msgstr ""
+msgstr "Herramientas de programación"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:401
@@ -549,19 +673,24 @@ msgid ""
 "<personname> <firstname>James</firstname> <surname>Raynard</surname> </"
 "personname> <contrib>Contributed by </contrib>"
 msgstr ""
+"<personname> <firstname>James</firstname> <surname>Raynard</surname> </"
+"personname> <contrib>Contribuido por</contrib>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:408
+#, fuzzy
 msgid ""
 "<personname> <firstname>Murray</firstname> <surname>Stokely</surname> </"
 "personname>"
 msgstr ""
+"<personname> <firstname>Murray</firstname> <surname>Stokely</surname> "
+"</personname>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:418 book.translate.xml:2962 book.translate.xml:4885
 #: book.translate.xml:9418
 msgid "Synopsis"
-msgstr ""
+msgstr "Sinopsis"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:420
@@ -573,6 +702,13 @@ msgid ""
 "the chapter assumes little or no previous programming knowledge, although it "
 "is hoped that most programmers will find something of value in it."
 msgstr ""
+"Este capítulo es una introducción al uso de algunas de las herramientas de "
+"programación suministradas con FreeBSD, aunque gran parte de él será "
+"aplicable a muchas otras versiones de <trademark class=\"registered\">UNIX</"
+"trademark> Lo hace <emphasis>no</emphasis> Intente describir la codificación "
+"en detalle. La mayor parte del capítulo asume poco o ningún conocimiento "
+"previo de programación, aunque se espera que la mayoría de los programadores "
+"encuentren algo de valor en él."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:432
@@ -589,6 +725,18 @@ msgid ""
 "heritage, so it is possible to write applications that will compile and run "
 "with little or no modification on a wide range of platforms."
 msgstr ""
+"FreeBSD ofrece un excelente entorno de desarrollo. Los compiladores para C y "
+"C ++ y un ensamblador vienen con el sistema básico, sin mencionar el clásico "
+"<trademark class=\"registered\">UNIX</trademark> herramientas "
+"como<command>sed</command> y <command>awk</command>. Si eso no es "
+"suficiente, hay muchos más compiladores e intérpretes en la colección de "
+"Ports. La siguiente sección,<link linkend=\"tools-programming\">Introducción "
+"a la programación</link>, enumera algunas de las opciones disponibles. "
+"FreeBSD es muy compatible con estándares como<acronym><trademark class="
+"\"registered\">POSIX</trademark></acronym> y <acronym>ANSI</acronym> C, "
+"también con su propia herencia BSD, por lo que es posible escribir "
+"aplicaciones que se compilen y se ejecuten con poca o ninguna modificación "
+"en una amplia gama de plataformas."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:445
@@ -600,6 +748,12 @@ msgid ""
 "document should give you enough of the basics to be able to make some sense "
 "of the documentation."
 msgstr ""
+"Sin embargo, todo este poder puede ser bastante abrumador al principio si "
+"nunca ha escrito programas en un<trademark class=\"registered\">UNIX</"
+"trademark>plataforma antes. Este documento tiene como objetivo ayudarlo a "
+"comenzar a trabajar, sin profundizar demasiado en temas más avanzados. La "
+"intención es que este documento le brinde lo suficiente de los conceptos "
+"básicos para que pueda entender la documentación."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:452
@@ -608,11 +762,14 @@ msgid ""
 "although it does assume a basic competence with using <trademark class="
 "\"registered\">UNIX</trademark> and a willingness to learn!"
 msgstr ""
+"La mayor parte del documento requiere poco o ningún conocimiento de "
+"programación, aunque asume una competencia básica en el uso de <trademark "
+"class=\"registered\">UNIX</trademark>y ganas de aprender!"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:459
 msgid "Introduction to Programming"
-msgstr ""
+msgstr "Introducción a la programación"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:461
@@ -627,11 +784,21 @@ msgid ""
 "understand in an unambiguous way, commands are usually written in one or "
 "other languages specially designed for the purpose."
 msgstr ""
+"Un programa es un conjunto de instrucciones que le dicen a la computadora "
+"que haga varias cosas; a veces, la instrucción que debe realizar depende de "
+"lo que sucedió cuando realizó una instrucción anterior. Esta sección ofrece "
+"una descripción general de las dos formas principales en las que puede dar "
+"estas instrucciones, o <quote>commands</quote>como se les suele llamar. Una "
+"forma usa un<firstterm>interpreter</firstterm>, la otra "
+"a<firstterm>compiler</firstterm>. Como los lenguajes humanos son demasiado "
+"difíciles de entender para una computadora de forma inequívoca, los comandos "
+"suelen estar escritos en uno u otros lenguajes especialmente diseñados para "
+"tal fin."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:474
 msgid "Interpreters"
-msgstr ""
+msgstr "Intérpretes"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:476
@@ -643,6 +810,12 @@ msgid ""
 "goes wrong, many interpreters will drop you into a debugger to help you "
 "track down the problem."
 msgstr ""
+"Con un intérprete, el lenguaje viene como un entorno, donde usted escribe "
+"comandos en un indicador y el entorno los ejecuta por usted. Para programas "
+"más complicados, puede escribir los comandos en un archivo y hacer que el "
+"intérprete cargue el archivo y ejecute los comandos en él. Si algo sale mal, "
+"muchos intérpretes lo enviarán a un depurador para ayudarlo a localizar el "
+"problema."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:484
@@ -656,6 +829,15 @@ msgid ""
 "view, interpreters can use up a lot of memory, and generally do not generate "
 "code as efficiently as compilers."
 msgstr ""
+"La ventaja de esto es que puede ver los resultados de sus comandos de "
+"inmediato y los errores se pueden corregir fácilmente. La mayor desventaja "
+"se produce cuando desea compartir sus programas con alguien. Deben tener el "
+"mismo intérprete, o usted debe tener alguna forma de dárselo, y ellos "
+"necesitan entender cómo usarlo. ¡Además, es posible que los usuarios no "
+"aprecien ser arrojados a un depurador si presionan la tecla incorrecta! "
+"Desde el punto de vista del rendimiento, los intérpretes pueden consumir "
+"mucha memoria y, por lo general, no generan código con tanta eficacia como "
+"los compiladores."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:495
@@ -671,11 +853,21 @@ msgid ""
 "to provide lots of small utility programs that could be linked together in "
 "shell scripts to perform useful tasks."
 msgstr ""
+"En mi opinión, los lenguajes interpretados son la mejor forma de empezar si "
+"no has hecho programación antes. Este tipo de entorno se encuentra "
+"típicamente con lenguajes como Lisp, Smalltalk, Perl y Basic. También se "
+"podría argumentar que<trademark class=\"registered\">UNIX</trademark> shell ("
+"<command> sh</command>,<command>csh</command>) es en sí mismo un intérprete, "
+"y muchas personas escriben shell <quote>scripts</quote> Para ayudar con "
+"varios <quote>housekeeping</quote> tareas en su máquina. De hecho, parte del "
+"original <trademark class=\"registered\">UNIX</trademark> La filosofía era "
+"proporcionar una gran cantidad de pequeños programas de utilidad que "
+"pudieran vincularse en scripts de shell para realizar tareas útiles."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:509
 msgid "Interpreters Available with FreeBSD"
-msgstr ""
+msgstr "Intérpretes disponibles con FreeBSD"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:511
@@ -684,6 +876,9 @@ msgid ""
 "Collection, with a brief discussion of some of the more popular interpreted "
 "languages."
 msgstr ""
+"Aquí hay una lista de intérpretes que están disponibles en FreeBSD Ports "
+"Collection, con una breve discusión de algunos de los lenguajes "
+"interpretados más populares."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:515
@@ -693,11 +888,16 @@ msgid ""
 "en_US.ISO8859-1/books/handbook/ports-using.html\">Ports section</link> of "
 "the handbook."
 msgstr ""
+"Las instrucciones sobre cómo obtener e instalar aplicaciones de Ports "
+"Collection se pueden encontrar en el <link xlink:href=\"@@URL_RELPREFIX@@/"
+"doc/en_US.ISO8859-1/books/handbook/ports-using.html\">Sección de puertos</"
+"link> del manual."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:521
+#, fuzzy
 msgid "<acronym>BASIC</acronym>"
-msgstr ""
+msgstr "<acronym>BASIC</acronym>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:524
@@ -708,6 +908,12 @@ msgid ""
 "been the first programming language for many programmers. It is also the "
 "foundation for Visual Basic."
 msgstr ""
+"Abreviatura de Código de instrucción simbólica multiusos para principiantes. "
+"Desarrollado en la década de 1950 para enseñar a los estudiantes "
+"universitarios a programar y provisto de cada computadora personal que se "
+"precie en la década de 1980,<acronym>BASIC</acronym> ha sido el primer "
+"lenguaje de programación para muchos programadores. También es la base de "
+"Visual Basic."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:532
@@ -716,11 +922,16 @@ msgid ""
 "<package>lang/bwbasic</package> and the Phil Cockroft's Basic Interpreter "
 "(formerly Rabbit Basic) is available as <package>lang/pbasic</package>."
 msgstr ""
+"El intérprete básico de Bywater se puede encontrar en la colección de "
+"puertos como<package>lang/bwbasic</package> y el intérprete básico de Phil "
+"Cockroft (anteriormente Rabbit Basic) está disponible como <package>lang/"
+"pbasic</package>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:541
+#, fuzzy
 msgid "Lisp"
-msgstr ""
+msgstr "Lisp"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:544
@@ -731,6 +942,11 @@ msgid ""
 "is short for <quote>List Processing</quote>. It is very popular in "
 "<acronym>AI</acronym> (Artificial Intelligence) circles."
 msgstr ""
+"Un lenguaje que se desarrolló a finales de la década de 1950 como "
+"alternativa a la<quote>calculo de números</quote> idiomas que eran populares "
+"en ese momento. En lugar de basarse en números, Lisp se basa en listas; de "
+"hecho, el nombre es la abreviatura de<quote>List Processing</quote>. Es muy "
+"popular en <acronym>AI</acronym> (Inteligencia artificial) círculos."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:552
@@ -738,6 +954,8 @@ msgid ""
 "Lisp is an extremely powerful and sophisticated language, but can be rather "
 "large and unwieldy."
 msgstr ""
+"Lisp es un lenguaje extremadamente poderoso y sofisticado, pero puede ser "
+"bastante extenso y difícil de manejar."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:555
@@ -751,11 +969,21 @@ msgid ""
 "Lisp constructs in a few hundred lines of C code, <package>lang/cmucl</"
 "package> and <package>lang/slisp</package> are available respectively."
 msgstr ""
+"Varias implementaciones de Lisp que pueden ejecutarse en <trademarkclass="
+"\"registered\">UNIX</trademark> Los sistemas están disponibles en la "
+"colección de puertos para FreeBSD. GNU Common Lisp se puede encontrar como </"
+"package> CLISP de Bruno Haible y Michael Stoll está disponible como <package>"
+"lang/clisp</package>. Para CMUCL, que también incluye un compilador "
+"altamente optimizado, o implementaciones Lisp más simples como SLisp, que "
+"implementa la mayoría de las construcciones Common Lisp en unos pocos "
+"cientos de líneas de código C, <package>lang/cmucl</package> y <package>lang/"
+"slip</package> están disponibles respectivamente."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:571
+#, fuzzy
 msgid "Perl"
-msgstr ""
+msgstr "Perl"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:574
@@ -763,6 +991,9 @@ msgid ""
 "Very popular with system administrators for writing scripts; also often used "
 "on World Wide Web servers for writing <acronym>CGI</acronym> scripts."
 msgstr ""
+"Muy popular entre los administradores de sistemas para escribir scripts; "
+"también se utiliza a menudo en servidores World Wide Web para "
+"escribir<acronym>CGI</acronym> scripts."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:578
@@ -770,11 +1001,13 @@ msgid ""
 "Perl is available in the Ports Collection as <package>lang/perl5.24</"
 "package> for all FreeBSD releases."
 msgstr ""
+"Perl está disponible en la colección de puertos como <package>lang/perl5.24</"
+"package> para todas las versiones de FreeBSD."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:585
 msgid "Scheme"
-msgstr ""
+msgstr "Esquema"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:588
@@ -784,6 +1017,11 @@ msgid ""
 "a first language, while it has a high enough level of abstraction to be used "
 "in research work."
 msgstr ""
+"Un dialecto de Lisp que es bastante más compacto y limpio que Common Lisp. "
+"Popular en las universidades, ya que es lo suficientemente simple como para "
+"enseñar a los estudiantes universitarios como primer idioma, mientras que "
+"tiene un nivel de abstracción lo suficientemente alto como para ser "
+"utilizado en trabajos de investigación."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:594
@@ -793,11 +1031,15 @@ msgid ""
 "<package>lang/mit-scheme</package> and the SCM Scheme Interpreter in "
 "<package>lang/scm</package>."
 msgstr ""
+"El esquema está disponible en Ports Collection como <package>lang/elk</"
+"package> para el intérprete de esquemas de Elk. El intérprete de esquemas "
+"del MIT se puede encontrar en <package>lang/mit-scheme</package> Y el "
+"intérprete del esquema SCM en <package>lang/scm</package>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:605
 msgid "Icon"
-msgstr ""
+msgstr "Iconos"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:608
@@ -806,11 +1048,15 @@ msgid ""
 "strings and structures. The version of Icon for FreeBSD can be found in the "
 "Ports Collection as <package>lang/icon</package>."
 msgstr ""
+"Icon es un lenguaje de alto nivel con amplias facilidades para procesar "
+"cadenas y estructuras. La versión de Icon para FreeBSD se puede encontrar en "
+"la Colección de Ports como<package>lang/icon</package>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:617
+#, fuzzy
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:620
@@ -820,6 +1066,10 @@ msgid ""
 "tool to work with when teaching programming to smaller age groups, as it "
 "makes creation of elaborate geometric shapes an easy task."
 msgstr ""
+"Logo es un lenguaje fácil de aprender y se ha utilizado como lenguaje de "
+"programación introductorio en varios cursos. Es una excelente herramienta "
+"para trabajar cuando se enseña programación a grupos de menor edad, ya que "
+"hace que la creación de formas geométricas elaboradas sea una tarea fácil."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:627
@@ -827,11 +1077,14 @@ msgid ""
 "The latest version of Logo for FreeBSD is available from the Ports "
 "Collection in <package>lang/logo</package>."
 msgstr ""
+"La última versión de Logo para FreeBSD está disponible en la Colección de "
+"Ports en<package>lang/logo</package>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:634
+#, fuzzy
 msgid "Python"
-msgstr ""
+msgstr "Python"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:637
@@ -843,6 +1096,12 @@ msgid ""
 "complex applications (Perl and Tcl are two other languages that are popular "
 "for such tasks)."
 msgstr ""
+"Python es un lenguaje interpretado orientado a objetos. Sus defensores "
+"argumentan que es uno de los mejores lenguajes para comenzar a programar, ya "
+"que es relativamente fácil de comenzar, pero no está limitado en comparación "
+"con otros lenguajes interpretados populares que se utilizan para el "
+"desarrollo de aplicaciones grandes y complejas (Perl y Tcl son otros dos "
+"lenguajes que son populares para tales tareas)."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:646
@@ -850,11 +1109,14 @@ msgid ""
 "The latest version of Python is available from the Ports Collection in "
 "<package>lang/python</package>."
 msgstr ""
+"La última versión de Python está disponible en la colección de puertos en "
+"<package>lang/python</package>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:653
+#, fuzzy
 msgid "Ruby"
-msgstr ""
+msgstr "Ruby"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:656
@@ -864,6 +1126,10 @@ msgid ""
 "when writing code, and the ability to easily develop and maintain large, "
 "complex programs."
 msgstr ""
+"Ruby es un intérprete, puro lenguaje de programación orientado a objetos. Se "
+"ha vuelto muy popular debido a su sintaxis fácil de entender, flexibilidad "
+"al escribir código y la capacidad de desarrollar y mantener fácilmente "
+"programas grandes y complejos."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:662
@@ -871,11 +1137,13 @@ msgid ""
 "Ruby is available from the Ports Collection as <package>lang/ruby25</"
 "package>."
 msgstr ""
+"Ruby está disponible en Ports Collection como <package>lang/ruby25</package>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:668
+#, fuzzy
 msgid "Tcl and Tk"
-msgstr ""
+msgstr "Tcl and Tk"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:671
@@ -885,6 +1153,11 @@ msgid ""
 "be used both for quickly writing small, prototype applications, or (when "
 "combined with Tk, a GUI toolkit) fully-fledged, featureful programs."
 msgstr ""
+"Tcl es un lenguaje interpretado e integrable, que se ha vuelto ampliamente "
+"utilizado y popular principalmente debido a su portabilidad para muchas "
+"plataformas. Se puede usar tanto para escribir rápidamente aplicaciones "
+"pequeñas como prototipos o (cuando se combina con Tk, un conjunto de "
+"herramientas de GUI) programas completos y con funciones."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:678
@@ -892,16 +1165,18 @@ msgid ""
 "Various versions of Tcl are available as ports for FreeBSD. The latest "
 "version, Tcl 8.5, can be found in <package>lang/tcl87</package>."
 msgstr ""
+"Varias versiones de Tcl están disponibles como puertos para FreeBSD. La "
+"última versión, Tcl 8.5, se puede encontrar en<package>lang/tcl87</package>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:687
 msgid "Compilers"
-msgstr ""
+msgstr "Compiladores"
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:695
 msgid "If you run it in the shell, you may get a core dump."
-msgstr ""
+msgstr "Si lo ejecuta en el shell, puede obtener un volcado de memoria."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:689
@@ -913,6 +1188,12 @@ msgid ""
 "shell command prompt or in a debugger to see if it works properly.<_:"
 "footnote-1/>"
 msgstr ""
+"Los compiladores son bastante diferentes. En primer lugar, escribe su código "
+"en un archivo (o archivos) usando un editor. A continuación, ejecuta el "
+"compilador y comprueba si acepta su programa. Si no se compiló, apriete los "
+"dientes y vuelva al editor; si se compiló y le proporcionó un programa, "
+"puede ejecutarlo en un símbolo del sistema de shell o en un depurador para "
+"ver si funciona correctamente.<_:footnote-1/>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:698
@@ -928,6 +1209,16 @@ msgid ""
 "just give them a copy of the executable, assuming they have the same "
 "operating system as you."
 msgstr ""
+"Obviamente, esto no es tan directo como usar un intérprete. Sin embargo, le "
+"permite hacer muchas cosas que son muy difíciles o incluso imposibles con un "
+"intérprete, como escribir código que interactúe estrechamente con el sistema "
+"operativo, ¡o incluso escribir su propio sistema operativo! También es útil "
+"si necesita escribir código muy eficiente, ya que el compilador puede "
+"tomarse su tiempo y optimizar el código, lo que no sería aceptable en un "
+"intérprete. Además, distribuir un programa escrito para un compilador suele "
+"ser más sencillo que uno escrito para un intérprete; puede simplemente "
+"darles una copia del ejecutable, asumiendo que tienen el mismo sistema "
+"operativo que usted."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:711
@@ -940,11 +1231,18 @@ msgid ""
 "application> for this purpose. Using <application>Emacs</application> as an "
 "IDE is discussed in <xref linkend=\"emacs\"/>."
 msgstr ""
+"Dado que el ciclo editar-compilar-ejecutar-depurar es bastante tedioso "
+"cuando se utilizan programas separados, muchos fabricantes comerciales de "
+"compiladores han producido entornos de desarrollo integrados<acronym>IDE</"
+"acronym>s para abreviar). FreeBSD no incluye un IDE en el sistema base, pero "
+"<package>devel/kdevelop</package> está disponible en la Colección Ports y "
+"muchos usan <application>Emacs</application> como un IDE se analiza en<xref "
+"linkend=\"emacs\"/>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:725
 msgid "Compiling with <command>cc</command>"
-msgstr ""
+msgstr "Compilando con<command>cc</command>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:727
@@ -957,6 +1255,13 @@ msgid ""
 "usually well covered in the documentation and on-line help for the "
 "interpreter."
 msgstr ""
+"Esta sección trata de la <application>gcc</application> y "
+"<application>clang</application>compiladores para C y C ++, ya que vienen "
+"con el sistema base FreeBSD. Comenzando con FreeBSD 10.X<command>clang</"
+"command> se instala como <command>cc</command>. Los detalles de la "
+"producción de un programa con un intérprete varían considerablemente entre "
+"intérpretes y, por lo general, están bien cubiertos en la documentación y la "
+"ayuda en línea para el intérprete."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:736
@@ -965,6 +1270,10 @@ msgid ""
 "something that will (hopefully!) run on FreeBSD. This usually involves "
 "several steps, each of which is done by a separate program."
 msgstr ""
+"Una vez que haya escrito su obra maestra, el siguiente paso es convertirla "
+"en algo que (¡con suerte!) Se ejecutará en FreeBSD. Por lo general, esto "
+"implica varios pasos, cada uno de los cuales se realiza mediante un programa "
+"separado."
 
 #. (itstool) path: step/para
 #: book.translate.xml:743
@@ -972,6 +1281,8 @@ msgid ""
 "Pre-process your source code to remove comments and do other tricks like "
 "expanding macros in C."
 msgstr ""
+"Procese previamente su código fuente para eliminar comentarios y hacer otros "
+"trucos como expandir macros en C."
 
 #. (itstool) path: step/para
 #: book.translate.xml:748
@@ -979,6 +1290,8 @@ msgid ""
 "Check the syntax of your code to see if you have obeyed the rules of the "
 "language. If you have not, it will complain!"
 msgstr ""
+"Verifique la sintaxis de su código para ver si ha obedecido las reglas del "
+"lenguaje. Si no es así, ¡se quejará!"
 
 #. (itstool) path: step/para
 #: book.translate.xml:754
@@ -986,6 +1299,9 @@ msgid ""
 "Convert the source code into assembly language—this is very close to machine "
 "code, but still understandable by humans. Allegedly."
 msgstr ""
+"Convierta el código fuente en lenguaje ensamblador; esto es muy parecido al "
+"código de máquina, pero aún así lo pueden entender los humanos. "
+"Presuntamente."
 
 #. (itstool) path: step/para
 #: book.translate.xml:760
@@ -993,6 +1309,8 @@ msgid ""
 "Convert the assembly language into machine code—yep, we are talking bits and "
 "bytes, ones and zeros here."
 msgstr ""
+"Convierta el lenguaje ensamblador en código de máquina; sí, estamos hablando "
+"de bits y bytes, unos y ceros aquí."
 
 #. (itstool) path: step/para
 #: book.translate.xml:766
@@ -1001,6 +1319,9 @@ msgid ""
 "consistent way. For example, if you have called a non-existent function, it "
 "will complain."
 msgstr ""
+"Compruebe que ha utilizado elementos como funciones y variables globales de "
+"forma coherente. Por ejemplo, si ha llamado a una función que no existe, se "
+"quejará."
 
 #. (itstool) path: step/para
 #: book.translate.xml:773
@@ -1008,6 +1329,8 @@ msgid ""
 "If you are trying to produce an executable from several source code files, "
 "work out how to fit them all together."
 msgstr ""
+"Si está intentando producir un ejecutable a partir de varios archivos de "
+"código fuente, averigüe cómo encajarlos todos juntos."
 
 #. (itstool) path: step/para
 #: book.translate.xml:779
@@ -1015,11 +1338,13 @@ msgid ""
 "Work out how to produce something that the system's run-time loader will be "
 "able to load into memory and run."
 msgstr ""
+"Descubra cómo producir algo que el cargador en tiempo de ejecución del "
+"sistema pueda cargar en la memoria y ejecutar."
 
 #. (itstool) path: step/para
 #: book.translate.xml:785
 msgid "Finally, write the executable on the filesystem."
-msgstr ""
+msgstr "Finalmente, escriba el ejecutable en el sistema de archivos."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:789
@@ -1029,6 +1354,10 @@ msgid ""
 "Sometimes step 1 is referred to as <firstterm>pre-processing</firstterm> and "
 "steps 3-4 as <firstterm>assembling</firstterm>."
 msgstr ""
+"La palabra <firstterm>compiling</firstterm> se utiliza a menudo para "
+"referirse a los pasos 1 a 4; los otros se denominan <firstterm>linking</"
+"firstterm>. A veces, el paso 1 se denomina <firstterm>preprocesamiento</"
+"firstterm> y los pasos 3-4 como <firstterm>assembling</firstterm>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:795
@@ -1037,12 +1366,16 @@ msgid ""
 "command> is a front end that manages calling all these programs with the "
 "right arguments for you; simply typing"
 msgstr ""
+"Afortunadamente, casi todos estos detalles te están ocultos, ya "
+"que<command>cc</command> es una interfaz que gestiona la llamada a todos "
+"estos programas con los argumentos adecuados para usted; simplemente "
+"escribiendo"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:800
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>cc foobar.c</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>cc foobar.c</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:802
@@ -1050,12 +1383,15 @@ msgid ""
 "will cause <filename>foobar.c</filename> to be compiled by all the steps "
 "above. If you have more than one file to compile, just do something like"
 msgstr ""
+"causará <filename>foobar.c</filename> para ser compilado por todos los pasos "
+"anteriores. Si tiene más de un archivo para compilar, simplemente haga algo "
+"como"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:806
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>cc foo.c bar.c</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>cc foo.c bar.c</userinput>"
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:812
@@ -1063,6 +1399,8 @@ msgid ""
 "In case you did not know, a binary sort is an efficient way of sorting "
 "things into order and a bubble sort is not."
 msgstr ""
+"En caso de que no lo supiera, una ordenación binaria es una forma eficiente "
+"de ordenar las cosas y una ordenación de burbujas no lo es."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:808
@@ -1072,6 +1410,10 @@ msgid ""
 "into an infinite loop, or using a bubble sort when you meant to use a binary "
 "sort.<_:footnote-1/>"
 msgstr ""
+"Tenga en cuenta que la verificación de sintaxis es solo eso: verificar la "
+"sintaxis. No comprobará los errores lógicos que pueda haber cometido, como "
+"poner el programa en un bucle infinito o usar una clasificación de burbujas "
+"cuando pretendía utilizar una clasificación binaria.<_:footnote-1/>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:816
@@ -1080,16 +1422,20 @@ msgid ""
 "in the manual page. Here are a few of the most important ones, with examples "
 "of how to use them."
 msgstr ""
+"Hay muchísimas opciones para <command>cc</command>,  que están todos en la "
+"página del manual. Estos son algunos de los más importantes, con ejemplos de "
+"cómo usarlos."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:823
+#, fuzzy
 msgid "<option>-o <replaceable>filename</replaceable></option>"
-msgstr ""
+msgstr "<option>-o <replaceable>filename</replaceable></option>"
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:830
 msgid "The reasons for this are buried in the mists of history."
-msgstr ""
+msgstr "Las razones de esto están enterradas en las brumas de la historia."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:828
@@ -1098,19 +1444,27 @@ msgid ""
 "command> will produce an executable called <filename>a.out</filename>.<_:"
 "footnote-1/>"
 msgstr ""
+"El nombre de salida del archivo. Si no usa esta opción, <command>cc</"
+"command> producirá un ejecutable llamado <filename>a.out</filename>.<_:"
+"footnote-1/>"
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:835
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>cc foobar.c</userinput>               <lineannotation>executable is a.out</lineannotation>\n"
 "<prompt>%</prompt> <userinput>cc -o foobar foobar.c</userinput>     <lineannotation>executable is foobar</lineannotation>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cc foobar.c</userinput>               "
+"<lineannotation>executable is a.out</lineannotation>\n"
+"<prompt>%</prompt> <userinput>cc -o foobar foobar.c</userinput>     "
+"<lineannotation>executable is foobar</lineannotation>"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:842
+#, fuzzy
 msgid "<option>-c</option>"
-msgstr ""
+msgstr "<option>-c</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:845
@@ -1119,12 +1473,15 @@ msgid ""
 "just want to check the syntax, or if you are using a <filename>Makefile</"
 "filename>."
 msgstr ""
+"Simplemente compile el archivo, no lo vincule. Útil para programas de "
+"juguete en los que solo desea verificar la sintaxis, o si está utilizando "
+"un<filename>Makefile</filename>."
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:850
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>cc -c foobar.c</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>cc -c foobar.c</userinput>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:853
@@ -1133,11 +1490,15 @@ msgid ""
 "called <filename>foobar.o</filename>. This can be linked together with other "
 "object files into an executable."
 msgstr ""
+"Esto producirá un <firstterm>object file</firstterm> (no un ejecutable) "
+"llamado<filename>foobar.o</filename>. Esto se puede vincular junto con otros "
+"archivos de objeto en un ejecutable."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:862
+#, fuzzy
 msgid "<option>-g</option>"
-msgstr ""
+msgstr "<option>-g</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:865
@@ -1152,12 +1513,21 @@ msgid ""
 "<quote>release version</quote> without <option>-g</option> when you are "
 "satisfied it works properly."
 msgstr ""
+"Cree una versión de depuración del ejecutable. Esto hace que el compilador "
+"coloque información en el ejecutable sobre qué línea de qué archivo fuente "
+"corresponde a qué llamada de función. Un depurador puede utilizar esta "
+"información para mostrar el código fuente mientras recorre el programa, que "
+"es <emphasis>muy</emphasis> útil; la desventaja es que toda esta información "
+"adicional hace que el programa sea mucho más grande. Normalmente, compila "
+"con <option>-g</option> mientras desarrolla un programa y luego compila "
+"un<quote>release version</quote> sin <option>-g</option> Cuando esté "
+"satisfecho funciona correctamente."
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:879
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>cc -g foobar.c</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>cc -g foobar.c</userinput>"
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:886
@@ -1167,16 +1537,21 @@ msgid ""
 "Producing a debug version called <filename>foobar</filename> is left as an "
 "exercise for the reader!"
 msgstr ""
+"Tenga en cuenta que no usamos el <option>-o</option> bandera para "
+"especificar el nombre del ejecutable, por lo que obtendremos un ejecutable "
+"llamado <filename>a.out</filename>. Produciendo una versión de depuración "
+"llamada <filename>foobar</filename> Se deja como ejercicio para el lector!"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:882
 msgid "This will produce a debug version of the program. <_:footnote-1/>"
-msgstr ""
+msgstr "Esto producirá una versión de depuración del programa. <_:footnote-1/>"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:896
+#, fuzzy
 msgid "<option>-O</option>"
-msgstr ""
+msgstr "<option>-O</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:899
@@ -1186,17 +1561,22 @@ msgid ""
 "You can add a number after the <option>-O</option> to specify a higher level "
 "of optimization, but this often exposes bugs in the compiler's optimizer."
 msgstr ""
+"Cree una versión optimizada del ejecutable. El compilador realiza varios "
+"trucos inteligentes para intentar producir un ejecutable que se ejecute más "
+"rápido de lo normal. Puede agregar un número después del<option>-O</"
+"option>para especificar un nivel más alto de optimización, pero esto a "
+"menudo expone errores en el optimizador del compilador."
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:907
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>cc -O -o foobar foobar.c</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>cc -O -o foobar foobar.c</userinput>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:910
 msgid "This will produce an optimized version of <filename>foobar</filename>."
-msgstr ""
+msgstr "Esto producirá una versión optimizada de <filename>foobar</filename>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:916
@@ -1206,11 +1586,16 @@ msgid ""
 "as the <acronym>ANSI</acronym> standard, though strictly speaking it is an "
 "<acronym>ISO</acronym> standard."
 msgstr ""
+"Las siguientes tres banderas forzarán <command>cc</command> para comprobar "
+"que su código cumple con la norma internacional pertinente, a menudo "
+"denominada<acronym>ANSI</acronym> estándar, aunque estrictamente hablando es "
+"un <acronym>ISO</acronym> estándar."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:924
+#, fuzzy
 msgid "<option>-Wall</option>"
-msgstr ""
+msgstr "<option>-Wall</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:927
@@ -1219,11 +1604,15 @@ msgid ""
 "are worthwhile. Despite the name, it will not enable all the warnings "
 "<command>cc</command> is capable of."
 msgstr ""
+"Habilite todas las advertencias que los autores de <command>cc</command> "
+"creo que valen la pena. A pesar del nombre, no habilitará todas las "
+"advertencias. <command>cc</command> es capaz de."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:935
+#, fuzzy
 msgid "<option>-ansi</option>"
-msgstr ""
+msgstr "<option>-ansi</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:938
@@ -1232,11 +1621,15 @@ msgid ""
 "provided by <command>cc</command>. Despite the name, it does not guarantee "
 "strictly that your code will comply to the standard."
 msgstr ""
+"Apague la mayoría, pero no todos, de los <acronym>ANSI</acronym> Funciones "
+"de C proporcionadas por <command>cc</command>. A pesar del nombre, no "
+"garantiza estrictamente que su código cumpla con el estándar."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:947
+#, fuzzy
 msgid "<option>-pedantic</option>"
-msgstr ""
+msgstr "<option>-pedantic</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:950
@@ -1244,6 +1637,8 @@ msgid ""
 "Turn off <emphasis>all</emphasis> <command>cc</command>'s non-<acronym>ANSI</"
 "acronym> C features."
 msgstr ""
+"Apagar<emphasis>all</emphasis>.<command>cc</command>'s no <acronym>ANSI</"
+"acronym> c características."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:957
@@ -1254,6 +1649,12 @@ msgid ""
 "standard is to allow people to write code that will work with any compiler "
 "on any system. This is known as <firstterm>portable code</firstterm>."
 msgstr ""
+"Sin estas opciones, <command>cc</command> le permitirá utilizar algunas de "
+"sus extensiones no estándar del estándar. Algunos de estos son muy útiles, "
+"pero no funcionarán con otros compiladores; de hecho, uno de los principales "
+"objetivos del estándar es permitir que la gente escriba código que funcione "
+"con cualquier compilador en cualquier sistema. Esto se conoce como "
+"<firstterm>portable code</firstterm>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:965
@@ -1262,12 +1663,18 @@ msgid ""
 "otherwise you may have to completely rewrite the program later to get it to "
 "work somewhere else—and who knows what you may be using in a few years time?"
 msgstr ""
+"Por lo general, debe intentar hacer que su código sea lo más portátil "
+"posible, ya que de lo contrario tendrá que volver a escribir el programa por "
+"completo más adelante para que funcione en otro lugar, y ¿quién sabe qué "
+"estará usando dentro de unos años?"
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:971
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>cc -Wall -ansi -pedantic -o foobar foobar.c</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cc -Wall -ansi -pedantic -o foobar foobar."
+"c</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:974
@@ -1275,16 +1682,21 @@ msgid ""
 "This will produce an executable <filename>foobar</filename> after checking "
 "<filename>foobar.c</filename> for standard compliance."
 msgstr ""
+"Esto producirá un ejecutable <filename>foobar</filename> después de revisar "
+"<filename>foobar.c</filename> para el cumplimiento de estándares."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:980
+#, fuzzy
 msgid "<option>-l<replaceable>library</replaceable></option>"
-msgstr ""
+msgstr "<option>-l<replaceable>library</replaceable></option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:983
 msgid "Specify a function library to be used at link time."
 msgstr ""
+"Especifique una biblioteca de funciones que se utilizará en el momento del "
+"enlace."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:986
@@ -1294,6 +1706,10 @@ msgid ""
 "in a separate library from the standard C one and you have to tell the "
 "compiler to add it."
 msgstr ""
+"El ejemplo más común de esto es cuando se compila un programa que usa "
+"algunas de las funciones matemáticas en C. A diferencia de la mayoría de las "
+"otras plataformas, estas están en una biblioteca separada de la C estándar y "
+"debe decirle al compilador que la agregue."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:992
@@ -1306,18 +1722,28 @@ msgid ""
 "option>. A common <quote>gotcha</quote> with the math library is that it has "
 "to be the last library on the command line."
 msgstr ""
+"La regla es que si se llama a la biblioteca "
+"<filename>lib<replaceable>something</replaceable>.un</filename>, das "
+"<command>cc</command> el argumento "
+"<option>-l<replaceable>algo</replaceable></option>. Por ejemplo la librería "
+"de matemática es <filename>libm.a</filename>, para usted de<command>cc</"
+"command> con el argumento <option>-lm</option>.  Un común<quote>gotcha</"
+"quote> con la biblioteca matemática es que tiene que ser la última "
+"biblioteca en la línea de comandos."
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:1004 book.translate.xml:1047
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>cc -o foobar foobar.c -lm</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>cc -o foobar foobar.c -lm</userinput>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1007
 msgid ""
 "This will link the math library functions into <filename>foobar</filename>."
 msgstr ""
+"Esto vinculará las funciones de la biblioteca matemática en "
+"<filename>foobar</filename>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1010
@@ -1325,12 +1751,14 @@ msgid ""
 "If you are compiling C++ code, use <command>c++</command>. <command>c++</"
 "command> can also be invoked as <command>clang++</command> on FreeBSD."
 msgstr ""
+"Si está compilando código C ++, use <command>c++</command>.<command>c++</"
+"command> también se puede invocar como <command>clang++</command> en FreeBSD."
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:1015
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>c++ -o foobar foobar.cc</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>c++ -o foobar foobar.cc</userinput>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1018
@@ -1338,11 +1766,13 @@ msgid ""
 "This will both produce an executable <filename>foobar</filename> from the C+"
 "+ source file <filename>foobar.cc</filename>."
 msgstr ""
+"Esto producirá un ejecutable <filename>foobar</filename> desde el archivo "
+"fuente de C ++ <filename>foobar.cc</filename>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1026
 msgid "Common <command>cc</command> Queries and Problems"
-msgstr ""
+msgstr "Común <command>cc</command> Consultas y problemas"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1031
@@ -1350,12 +1780,15 @@ msgid ""
 "I am trying to write a program which uses the <function>sin()</function> "
 "function and I get an error like this. What does it mean?"
 msgstr ""
+"Estoy tratando de escribir un programa que use el <function>sin()</function> "
+"función y obtengo un error como este. Qué significa eso?"
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:1036
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "/var/tmp/cc0143941.o: Undefined symbol `_sin' referenced from text segment"
 msgstr ""
+"/var/tmp/cc0143941.o: Undefined symbol `_sin' referenced from text segment"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1041
@@ -1363,6 +1796,9 @@ msgid ""
 "When using mathematical functions like <function>sin()</function>, you have "
 "to tell <command>cc</command> to link in the math library, like so:"
 msgstr ""
+"Cuando se utilizan funciones matemáticas como <function>sin()</function>, "
+"tienes que decir<command>cc</command> para vincular en la biblioteca de "
+"matemáticas, así:"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1054
@@ -1370,10 +1806,12 @@ msgid ""
 "All right, I wrote this simple program to practice using <option>-lm</"
 "option>. All it does is raise 2.1 to the power of 6."
 msgstr ""
+"Muy bien, escribí este sencillo programa para practicar el uso <option>-lm</"
+"option>. Todo lo que hace es elevar 2.1 a la potencia de 6."
 
 #. (itstool) path: informalexample/programlisting
 #: book.translate.xml:1059
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "#include &lt;stdio.h&gt;\n"
 "\n"
@@ -1385,35 +1823,48 @@ msgid ""
 "\treturn 0;\n"
 "}"
 msgstr ""
+"#include &lt;stdio.h&gt;\n"
+"\n"
+"int main() {\n"
+"\tfloat f;\n"
+"\n"
+"\tf = pow(2.1, 6);\n"
+"\tprintf(\"2.1 ^ 6 = %f\\n"
+"\", f);\n"
+"\treturn 0;\n"
+"}"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1070
 msgid "and I compiled it as:"
-msgstr ""
+msgstr "y lo compilé como:"
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:1073
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>cc temp.c -lm</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>cc temp.c -lm</userinput>"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1076
 msgid "like you said I should, but I get this when I run it:"
-msgstr ""
+msgstr "como dijiste que debería, pero obtengo esto cuando lo ejecuto:"
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:1080
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>./a.out</userinput>\n"
 "2.1 ^ 6 = 1023.000000"
 msgstr ""
+"<prompt>%</prompt> <userinput>./a.out</userinput>\n"
+"2.1 ^ 6 = 1023.000000"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1084
 msgid "This is <emphasis>not</emphasis> the right answer! What is going on?"
 msgstr ""
+"Esto es <emphasis>no</emphasis> ¡la respuesta correcta! Que esta pasando?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1089
@@ -1422,11 +1873,14 @@ msgid ""
 "a prototype for it. If it has not, it assumes the function returns an "
 "<type>int</type>, which is definitely not what you want here."
 msgstr ""
+"Cuando el compilador ve que llamas a una función, verifica si ya ha visto un "
+"prototipo para ella. Si no lo ha hecho, asume que la función devuelve un "
+"<type>int</type>, que definitivamente no es lo que quieres aquí."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1099
 msgid "So how do I fix this?"
-msgstr ""
+msgstr "Entonces, ¿cómo soluciono esto?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1103
@@ -1435,10 +1889,13 @@ msgid ""
 "filename>. If you include this file, the compiler will be able to find the "
 "prototype and it will stop doing strange things to your calculation!"
 msgstr ""
+"Los prototipos de las funciones matemáticas están en <filename>math.h</"
+"filename>. Si incluye este archivo, el compilador podrá encontrar el "
+"prototipo y dejará de hacer cosas extrañas en su cálculo!"
 
 #. (itstool) path: informalexample/programlisting
 #: book.translate.xml:1110
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "#include &lt;math.h&gt;\n"
 "#include &lt;stdio.h&gt;\n"
@@ -1446,19 +1903,26 @@ msgid ""
 "int main() {\n"
 "..."
 msgstr ""
+"#include &lt;math.h&gt;\n"
+"#include &lt;stdio.h&gt;\n"
+"\n"
+"int main() {\n"
+"..."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1117
 msgid "After recompiling it as you did before, run it:"
-msgstr ""
+msgstr "Después de volver a compilarlo como lo hizo antes, ejecútelo:"
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:1121
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>./a.out</userinput>\n"
 "2.1 ^ 6 = 85.766121"
 msgstr ""
+"<prompt>%</prompt> <userinput>./a.out</userinput>\n"
+"2.1 ^ 6 = 85.766121"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1125
@@ -1467,6 +1931,9 @@ msgid ""
 "emphasis> include <filename>math.h</filename> and remember to link in the "
 "math library."
 msgstr ""
+"Si está utilizando alguna de las funciones matemáticas, <emphasis>siempre</"
+"emphasis>incluya <filename>math.h</filename> y recuerde vincular en la "
+"biblioteca de matemáticas."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1134
@@ -1474,6 +1941,9 @@ msgid ""
 "I compiled a file called <filename>foobar.c</filename> and I cannot find an "
 "executable called <filename>foobar</filename>. Where has it gone?"
 msgstr ""
+"Compilé un archivo llamado <filename>foobar.c</filename> y no puedo "
+"encontrar un ejecutable llamado <filename>foobar</filename>. ¿A dónde se ha "
+"ido?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1141
@@ -1482,12 +1952,15 @@ msgid ""
 "filename> unless you tell it differently. Use the <option>-o "
 "<replaceable>filename</replaceable></option> option:"
 msgstr ""
+"Recuerde, <command>cc</command> Llamará al ejecutable <filename>a.out</"
+"filename> a no ser que lo digas de otra manera. Utilizar el "
+"<option>-o<replaceable>filename</replaceable></option>opción:"
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:1148
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>cc -o foobar foobar.c</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>cc -o foobar foobar.c</userinput>"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1155
@@ -1497,6 +1970,10 @@ msgid ""
 "command> at the command prompt it tells me there is no such file. Why can it "
 "not find it?"
 msgstr ""
+"OK, tengo un ejecutable llamado <filename>foobar</filename>, Puedo verlo "
+"cuando corro <command>ls</command>, pero cuando escribo <command>foobar</"
+"command> en el símbolo del sistema me dice que no existe tal archivo. ¿Por "
+"qué no puede encontrarlo?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1164
@@ -1507,6 +1984,12 @@ msgid ""
 "tell it to. Type <command>./foobar</command>, which means <quote>run the "
 "file called <filename>foobar</filename> in the current directory.</quote>"
 msgstr ""
+"diferente a <trademark class=\"registered\">MS-DOS</trademark>,<trademark "
+"class=\"registered\">UNIX</trademark> no busca en el directorio actual "
+"cuando intenta averiguar qué ejecutable desea que se ejecute, a menos que "
+"usted se lo indique. Tipo <command>./foobar</command>, que significa <quote> "
+"ejecutar el archivo llamado <filename>foobar</filename> en el directorio "
+"actual.</quote>"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1175
@@ -1514,6 +1997,8 @@ msgid ""
 "I called my executable <filename>test</filename>, but nothing happens when I "
 "run it. What is going on?"
 msgstr ""
+"Llamé a mi ejecutable <filename>test</filename>, pero no pasa nada cuando lo "
+"ejecuto. Que esta pasando?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1181
@@ -1523,17 +2008,21 @@ msgid ""
 "shell is picking that one up before it gets to checking the current "
 "directory. Either type:"
 msgstr ""
+"Más <trademark class=\"registered\">UNIX</trademark> los sistemas tienen un "
+"programa llamado <command>test</command> en <filename>/usr/bin</filename> y "
+"el shell lo está recogiendo antes de comprobar el directorio actual. "
+"Cualquiera de los tipos:"
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:1187
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>./test</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>./test</userinput>"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1190
 msgid "or choose a better name for your program!"
-msgstr ""
+msgstr "¡o elija un nombre mejor para su programa!"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1196
@@ -1542,6 +2031,9 @@ msgid ""
 "was an error and it said something about <errorname>core dumped</errorname>. "
 "What does that mean?"
 msgstr ""
+"Compilé mi programa y pareció funcionar bien al principio, luego hubo un "
+"error y dijo algo sobre<errorname>core dumped</errorname>. Que significa "
+"esto?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1203
@@ -1553,16 +2045,25 @@ msgid ""
 "file called <filename>core</filename>, which the programmer could then pore "
 "over to find out what went wrong."
 msgstr ""
+"El nombre <firstterm>core dump</firstterm> se remonta a los primeros días de "
+"<trademark class=\"registered\">UNIX</trademark>, cuando las máquinas usaban "
+"memoria central para almacenar datos. Básicamente, si el programa fallaba "
+"bajo ciertas condiciones, el sistema escribiría el contenido de la memoria "
+"central en el disco en un archivo llamado <filename>core</filename>, que el "
+"programador podría entonces estudiar detenidamente para averiguar qué salió "
+"mal."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1215
 msgid "Fascinating stuff, but what I am supposed to do now?"
-msgstr ""
+msgstr "Cosas fascinantes, pero ¿qué se supone que debo hacer ahora?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1220
 msgid "Use a debugger to analyze the core (see <xref linkend=\"debugging\"/>)."
 msgstr ""
+"Utilice un depurador para analizar el núcleo (consulte <xref linkend="
+"\"debugging\"/>)."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1227
@@ -1570,6 +2071,8 @@ msgid ""
 "When my program dumped core, it said something about a "
 "<errorname>segmentation fault</errorname>. What is that?"
 msgstr ""
+"Cuando mi programa descargó el núcleo, dijo algo sobre un <errorname>Fallo "
+"de segmentación</errorname>. que es eso"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1233
@@ -1579,37 +2082,45 @@ msgid ""
 "designed to protect the operating system and other programs from rogue "
 "programs."
 msgstr ""
+"Esto básicamente significa que su programa intentó realizar algún tipo de "
+"operación ilegal en la memoria;<trademark class=\"registered\">UNIX</"
+"trademark> está diseñado para proteger el sistema operativo y otros "
+"programas de programas fraudulentos."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1238
 msgid "Common causes for this are:"
-msgstr ""
+msgstr "Las causas comunes de esto son:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1242
 msgid "Trying to write to a <symbol>NULL</symbol> pointer, eg"
-msgstr ""
+msgstr "Tratando de escribir a un <symbol>NULL</symbol> puntero, p. ej"
 
 #. (itstool) path: listitem/programlisting
 #: book.translate.xml:1245
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "char *foo = NULL;\n"
 "strcpy(foo, \"bang!\");"
 msgstr ""
+"char *foo = NULL;\n"
+"strcpy(foo, \"bang!\");"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1250
 msgid "Using a pointer that has not been initialized, eg"
-msgstr ""
+msgstr "Usando un puntero que no ha sido inicializado, p. Ej"
 
 #. (itstool) path: listitem/programlisting
 #: book.translate.xml:1253
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "char *foo;\n"
 "strcpy(foo, \"bang!\");"
 msgstr ""
+"char *foo;\n"
+"strcpy(foo, \"bang!\");"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1256
@@ -1620,32 +2131,41 @@ msgid ""
 "point somewhere inside your own program and corrupt one of your data "
 "structures, causing the program to fail mysteriously."
 msgstr ""
+"El puntero tendrá un valor aleatorio que, con suerte, apuntará a un área de "
+"memoria que no está disponible para su programa y el kernel matará su "
+"programa antes de que pueda causar algún daño. Si no tiene suerte, apuntará "
+"a algún lugar dentro de su propio programa y dañará una de sus estructuras "
+"de datos, lo que hará que el programa falle misteriosamente."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1266
 msgid "Trying to access past the end of an array, eg"
-msgstr ""
+msgstr "Intentando acceder más allá del final de una matriz, p. Ej"
 
 #. (itstool) path: listitem/programlisting
 #: book.translate.xml:1269
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "int bar[20];\n"
 "bar[27] = 6;"
 msgstr ""
+"int bar[20];\n"
+"bar[27] = 6;"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1274
 msgid "Trying to store something in read-only memory, eg"
-msgstr ""
+msgstr "Intentando almacenar algo en la memoria de solo lectura, p. Ej"
 
 #. (itstool) path: listitem/programlisting
 #: book.translate.xml:1277
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "char *foo = \"My string\";\n"
 "strcpy(foo, \"bang!\");"
 msgstr ""
+"char *foo = \"My string\";\n"
+"strcpy(foo, \"bang!\");"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1280
@@ -1654,6 +2174,9 @@ msgid ""
 "literals like <literal>\"My string\"</literal> into read-only areas of "
 "memory."
 msgstr ""
+"<trademark class=\"registered\">UNIX</trademark> Los compiladores suelen "
+"poner cadenas literales como <literal>\"My string\"</literal> en áreas de "
+"memoria de solo lectura."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1286
@@ -1661,28 +2184,35 @@ msgid ""
 "Doing naughty things with <function>malloc()</function> and "
 "<function>free()</function>, eg"
 msgstr ""
+"Haciendo cosas malas con <function>malloc()</function> y <function>free()</"
+"function>, Ejemplo"
 
 #. (itstool) path: listitem/programlisting
 #: book.translate.xml:1290
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "char bar[80];\n"
 "free(bar);"
 msgstr ""
+"char bar[80];\n"
+"free(bar);"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1293
 msgid "or"
-msgstr ""
+msgstr "o"
 
 #. (itstool) path: listitem/programlisting
 #: book.translate.xml:1295
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "char *foo = malloc(27);\n"
 "free(foo);\n"
 "free(foo);"
 msgstr ""
+"char *foo = malloc(27);\n"
+"free(foo);\n"
+"free(foo);"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1301
@@ -1692,6 +2222,10 @@ msgid ""
 "others, which is why programs that ran well on one system can crash when you "
 "try them on an another."
 msgstr ""
+"Cometer uno de estos errores no siempre conducirá a un error, pero siempre "
+"son una mala práctica. Algunos sistemas y compiladores son más tolerantes "
+"que otros, por lo que los programas que se ejecutaron bien en un sistema "
+"pueden fallar cuando los prueba en otro."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1311
@@ -1701,6 +2235,10 @@ msgid ""
 "this means a hardware problem, but the computer still seems to be working. "
 "Is this true?"
 msgstr ""
+"A veces, cuando recibo un volcado de memoria, dice<errorname>error de bus</"
+"errorname>. Dice en mi <trademark class=\"registered\">UNIX</trademark> "
+"libro que esto significa un problema de hardware, pero la computadora "
+"todavía parece estar funcionando. ¿Es esto cierto?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1319
@@ -1709,6 +2247,9 @@ msgid ""
 "problem…). This is usually another way of saying that you accessed memory in "
 "a way you should not have."
 msgstr ""
+"No, afortunadamente no (a menos que, por supuesto, realmente tenga un "
+"problema de hardware ...). Esta suele ser otra forma de decir que accedió a "
+"la memoria de una manera que no debería."
 
 #. (itstool) path: question/para
 #: book.translate.xml:1328
@@ -1717,28 +2258,33 @@ msgid ""
 "can make it happen when I want to. Can I do this, or do I have to wait until "
 "there is an error?"
 msgstr ""
+"Parece que este negocio central de dumping podría ser bastante útil, si "
+"puedo hacerlo cuando quiera. ¿Puedo hacer esto o tengo que esperar hasta que "
+"haya un error?"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1335
 msgid "Yes, just go to another console or xterm, do"
-msgstr ""
+msgstr "Sí, simplemente vaya a otra consola o xterm, haga"
 
 #. (itstool) path: answer/screen
 #: book.translate.xml:1337
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>ps</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>ps</userinput>"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1339
 msgid "to find out the process ID of your program, and do"
-msgstr ""
+msgstr "para averiguar el ID de proceso de su programa y hacer"
 
 #. (itstool) path: answer/screen
 #: book.translate.xml:1342
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>kill -ABRT <replaceable>pid</replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>kill -ABRT "
+"<replaceable>pid</replaceable></userinput>"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1344
@@ -1746,6 +2292,8 @@ msgid ""
 "where <parameter><replaceable>pid</replaceable></parameter> is the process "
 "ID you looked up."
 msgstr ""
+"donde <parameter><replaceable>pid</replaceable></parameter> es el proceso SI "
+"miraste hacia arriba."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1348
@@ -1754,6 +2302,9 @@ msgid ""
 "instance. If your program happens to trap <symbol>SIGABRT</symbol>, there "
 "are several other signals which have a similar effect."
 msgstr ""
+"Esto es útil si su programa se ha atascado en un bucle infinito, por "
+"ejemplo. Si su programa atrapa <symbol>SIGABRT</symbol>, hay varias otras "
+"señales que tienen un efecto similar."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1353
@@ -1763,6 +2314,11 @@ msgid ""
 "<citerefentry><refentrytitle>abort</refentrytitle><manvolnum>3</manvolnum></"
 "citerefentry> to learn more."
 msgstr ""
+"Alternativamente, puede crear un volcado de memoria desde el interior de su "
+"programa, llamando al <function>abort()</function> función. Consulte la "
+"página del manual de "
+"<citerefentry><refentrytitle>aborte</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry> aprender más."
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1358
@@ -1772,16 +2328,22 @@ msgid ""
 "See the manual page of <citerefentry><refentrytitle>gcore</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> for more information."
 msgstr ""
+"Si desea crear un volcado de memoria desde fuera de su programa, pero no "
+"desea que el proceso termine, puede utilizar el<command>gcore</"
+"command>programa. Consulte la página del manual de "
+"<citerefentry><refentrytitle>gcore</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> para mas información."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1370
+#, fuzzy
 msgid "Make"
-msgstr ""
+msgstr "Make"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1373
 msgid "What is <command>make</command>?"
-msgstr ""
+msgstr "Que es <command>make</command>?"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1375
@@ -1789,12 +2351,14 @@ msgid ""
 "When you are working on a simple program with only one or two source files, "
 "typing in"
 msgstr ""
+"Cuando está trabajando en un programa simple con solo uno o dos archivos "
+"fuente, escribiendo"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:1378
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>cc file1.c file2.c</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>cc file1.c file2.c</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1380
@@ -1802,6 +2366,8 @@ msgid ""
 "is not too bad, but it quickly becomes very tedious when there are several "
 "files—and it can take a while to compile, too."
 msgstr ""
+"no es tan malo, pero rápidamente se vuelve muy tedioso cuando hay varios "
+"archivos, y la compilación también puede llevar un tiempo."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1384
@@ -1809,12 +2375,17 @@ msgid ""
 "One way to get around this is to use object files and only recompile the "
 "source file if the source code has changed. So we could have something like:"
 msgstr ""
+"Una forma de evitar esto es usar archivos de objeto y solo recompilar el "
+"archivo fuente si el código fuente ha cambiado. Entonces podríamos tener "
+"algo como:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:1388
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>cc file1.o file2.o</userinput> … <userinput>file37.c</userinput> …"
 msgstr ""
+"<prompt>%</prompt> <userinput>cc file1.o file2.o</userinput> … "
+"<userinput>file37.c</userinput> …"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1390
@@ -1823,6 +2394,9 @@ msgid ""
 "since the last time we compiled. This may speed up the compilation quite a "
 "bit, but does not solve the typing problem."
 msgstr ""
+"si hubiéramos cambiado <filename>file37.c</filename>, pero no ninguno de los "
+"demás, desde la última vez que compilamos. Esto puede acelerar bastante la "
+"compilación, pero no resuelve el problema de escritura."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1395
@@ -1830,6 +2404,9 @@ msgid ""
 "Or we could write a shell script to solve the typing problem, but it would "
 "have to re-compile everything, making it very inefficient on a large project."
 msgstr ""
+"O podríamos escribir un script de shell para resolver el problema de "
+"mecanografía, pero tendría que volver a compilar todo, haciéndolo muy "
+"ineficiente en un proyecto grande."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1399
@@ -1838,6 +2415,9 @@ msgid ""
 "working in a team with other people who forget to tell us when they have "
 "changed one of their source files that we use?"
 msgstr ""
+"¿Qué sucede si tenemos cientos de archivos fuente por ahí? ¿Qué sucede si "
+"estamos trabajando en equipo con otras personas que se olvidan de "
+"informarnos cuando han cambiado uno de los archivos fuente que usamos?"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1404
@@ -1847,6 +2427,11 @@ msgid ""
 "file needs compiling. Now all we need now is a program that can understand "
 "these rules, as it is a bit too complicated for the shell."
 msgstr ""
+"Quizás podríamos unir las dos soluciones y escribir algo como un script de "
+"shell que contenga algún tipo de regla mágica que indique cuándo es "
+"necesario compilar un archivo fuente. Ahora todo lo que necesitamos ahora es "
+"un programa que pueda entender estas reglas, ya que es un poco complicado "
+"para el shell."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1410
@@ -1861,6 +2446,16 @@ msgid ""
 "<emphasis>how</emphasis> to re-compile the source file, making it a much "
 "more powerful tool."
 msgstr ""
+"Este programa se llama <command>make</command>. se lee en un archivo, "
+"llamado <firstterm>makefile</firstterm>, eso le dice cómo los diferentes "
+"archivos dependen unos de otros, y determina qué archivos necesitan ser "
+"recompilados y cuáles no. Por ejemplo, una regla podría decir algo como "
+"<quote>if<filename>fromboz.o</filename> es más viejo que <filename>fromboz."
+"c</filename>, eso significa que alguien debe haber cambiado <filename>fromboz"
+".c</filename>, por lo que debe volver a compilarse.</quote> El archivo MAKE "
+"también tiene reglas que indican make <emphasis>como</emphasis> para volver "
+"a compilar el archivo fuente, convirtiéndolo en una herramienta mucho más "
+"poderosa."
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:1428
@@ -1868,6 +2463,9 @@ msgid ""
 "They do not use the <filename>MAKEFILE</filename> form as block capitals are "
 "often used for documentation files like <filename>README</filename>."
 msgstr ""
+"Ellos no usan el <filename>MAKEFILE</filename> formulario como mayúsculas en "
+"bloque se utilizan a menudo para archivos de documentación como "
+"<filename>README</filename>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1422
@@ -1878,29 +2476,37 @@ msgid ""
 "<filename>Makefile</filename>, as this puts it near the top of a directory "
 "listing, where it can easily be seen.<_:footnote-1/>"
 msgstr ""
+"Los archivos Makefiles se guardan normalmente en el mismo directorio que la "
+"fuente a la que se aplican y se pueden llamar<filename>makefile</filename>, "
+"<filename>Makefile</filename> or <filename>MAKEFILE</filename>. La mayoría "
+"de los programadores usan el nombre  <filename>Makefile</filename>, ya que "
+"esto lo coloca cerca de la parte superior de una lista de directorio, donde "
+"se puede ver fácilmente .<_:footnote-1/>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1435
 msgid "Example of Using <command>make</command>"
-msgstr ""
+msgstr "Ejemplo de uso<command>make</command>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1437
 msgid "Here is a very simple make file:"
-msgstr ""
+msgstr "Aquí hay un archivo make muy simple:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:1439
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "foo: foo.c\n"
 "\tcc -o foo foo.c"
 msgstr ""
+"foo: foo.c\n"
+"\tcc -o foo foo.c"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1442
 msgid "It consists of two lines, a dependency line and a creation line."
-msgstr ""
+msgstr "Consta de dos líneas, una línea de dependencia y una línea de creación."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1445
@@ -1915,6 +2521,15 @@ msgid ""
 "at the creation line to find out what to do. In other words, this is the "
 "rule for working out when <filename>foo.c</filename> needs to be re-compiled."
 msgstr ""
+"La línea de dependencia aquí consiste en el nombre del programa (conocido "
+"como <firstterm>target</firstterm>, seguido de dos puntos, luego un espacio "
+"en blanco y luego el nombre del archivo de origen. Cuando <command>make</"
+"command> lee esta línea, busca ver si <filename>foo</filename> existe; si "
+"existe, compara el tiempo <filename>foo</filename> no existe o tiene más de "
+"<filename>foo.c</filename> fue modificado si <filename>foo</filename> no "
+"existe o es mas antiguo que <filename>foo.c</filename> , luego mira la línea "
+"de creación para saber qué hacer. En otras palabras, esta es la regla para "
+"hacer ejercicio cuando<filename>foo.c</filename> necesita ser recompilado."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1458
@@ -1926,6 +2541,12 @@ msgid ""
 "executes this command to create it. In other words, this is the rule which "
 "tells make how to re-compile <filename>foo.c</filename>."
 msgstr ""
+"La línea de creación comienza con un <token>tab</token> (presione "
+"<keycap>tab</keycap> y luego el comando que escribirías para crear "
+"<filename>foo</filename> si lo estuviera haciendo en un símbolo del sistema. "
+"<filename>foo</filename> está desactualizado o no existe, <command>make</"
+"command> luego ejecuta este comando para crearlo. En otras palabras, esta es "
+"la regla que le dice a make cómo volver a compilar<filename>foo.c</filename>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1467
@@ -1944,10 +2565,12 @@ msgid ""
 "Another useful property of makefiles is that the targets do not have to be "
 "programs. For instance, we could have a make file that looks like this:"
 msgstr ""
+"Otra propiedad útil de los archivos MAKE es que los destinos no tienen que "
+"ser programas. Por ejemplo, podríamos tener un archivo make con este aspecto:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:1480
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "foo: foo.c\n"
 "\tcc -o foo foo.c\n"
@@ -1955,22 +2578,29 @@ msgid ""
 "install:\n"
 "\tcp foo /home/me"
 msgstr ""
+"foo: foo.c\n"
+"\tcc -o foo foo.c\n"
+"\n"
+"install:\n"
+"\tcp foo /home/me"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1486
 msgid "We can tell make which target we want to make by typing:"
-msgstr ""
+msgstr "Podemos saber qué objetivo queremos hacer escribiendo:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:1489
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>make <replaceable>target</replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>make "
+"<replaceable>target</replaceable></userinput>"
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:1494 book.translate.xml:1503 book.translate.xml:1506
 msgid "install"
-msgstr ""
+msgstr "instalar"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1491
@@ -1979,11 +2609,16 @@ msgid ""
 "others. For example, if we type <userinput>make foo</userinput> with the "
 "makefile above, make will ignore the <_:buildtarget-1/> target."
 msgstr ""
+"<command>make</command> entonces solo mirará ese objetivo e ignorará "
+"cualquier otro. Por ejemplo, si escribimos  <userinput>make foo</"
+"userinput>make foo</userinput> Con el archivo de arriba, make ignorará el  "
+"<_:buildtarget-1/> target."
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:1501
+#, fuzzy
 msgid "foo"
-msgstr ""
+msgstr "foo"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1497
@@ -1994,6 +2629,11 @@ msgid ""
 "buildtarget-1/> target, re-compile <filename>foo</filename> if necessary, "
 "and then stop without going on to the <_:buildtarget-2/> target."
 msgstr ""
+"Si solo escribimos <userinput>make</userinput> por sí solo, make siempre "
+"mirará al primer objetivo y luego se detendrá sin mirar a los demás. "
+"Entonces, si escribimos <userinput>make</userinput>  aquí, solo irá al <_:"
+"buildtarget-1/> target re-compile <filename>foo</filename> si es necesario, "
+"y luego deténgase sin pasar al <_:buildtarget-2/> target."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1506
@@ -2006,6 +2646,13 @@ msgid ""
 "the application can be installed in the correct directory when it has been "
 "correctly compiled."
 msgstr ""
+"Note que el  <_:buildtarget-1/> target ¡en realidad no depende de nada! Esto "
+"significa que el comando en la siguiente línea siempre se ejecuta cuando "
+"intentamos hacer ese objetivo escribiendo <userinput>make install</"
+"userinput>. en este caso, copiará <filename>foo</filename>  en el directorio "
+"de inicio del usuario. Esto lo utilizan a menudo los archivos MAKE de la "
+"aplicación, de modo que la aplicación se pueda instalar en el directorio "
+"correcto cuando se haya compilado correctamente."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1516
@@ -2018,11 +2665,18 @@ msgid ""
 "command> is very useful here—it changes the date on a file without you "
 "having to edit it."
 msgstr ""
+"Este es un tema un poco confuso para tratar de explicar. Si no entiendes muy "
+"bien cómo <command>make</command> funciona, lo mejor que puedes hacer es "
+"escribir un programa simple como <quote>Hola Mundo</quote><command> y un "
+"archivo make como el de arriba y experimenta. Luego, progrese para usar más "
+"de un archivo fuente o hacer que el archivo fuente incluya un archivo de "
+"encabezado. <command>touch</command> es muy útil aquí: cambia la fecha en un "
+"archivo sin tener que editarlo."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1527
 msgid "Make and include-files"
-msgstr ""
+msgstr "Crear e incluir archivos"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1529
@@ -2031,16 +2685,23 @@ msgid ""
 "Some of these files are system-include files, some of them are from the "
 "project you are now working on:"
 msgstr ""
+"El código C a menudo comienza con una lista de archivos para incluir, por "
+"ejemplo, stdio.h. Algunos de estos archivos son archivos de inclusión del "
+"sistema, algunos de ellos son del proyecto en el que está trabajando ahora:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:1534
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "#include &lt;stdio.h&gt;\n"
 "#include \"foo.h\"\n"
 "\n"
 "int main(...."
 msgstr ""
+"#include &lt;stdio.h&gt;\n"
+"#include \"foo.h\"\n"
+"\n"
+"int main(...."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1539
@@ -2049,12 +2710,15 @@ msgid ""
 "filename> is changed, you have to add it in your <filename>Makefile</"
 "filename>:"
 msgstr ""
+"Para asegurarse de que este archivo se vuelva a compilar en el momento "
+"<filename>foo.h</filename> ha cambiado, tienes que añadirlo en tu "
+"<filename>Makefile</filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:1543
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "foo: foo.c foo.h"
-msgstr ""
+msgstr "foo: foo.c foo.h"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1545
@@ -2067,19 +2731,29 @@ msgid ""
 "files and to produce a list of include-files and their dependencies: "
 "<option>-MM</option>."
 msgstr ""
+"En el momento en que su proyecto se haga más grande y tenga más y más "
+"archivos de inclusión propios para mantener, será una molestia realizar un "
+"seguimiento de todos los archivos de inclusión y los archivos que dependen "
+"de él. Si cambia un archivo de inclusión pero se olvida de recompilar todos "
+"los archivos que dependen de él, los resultados serán devastadores. "
+"<command>clang</command> tiene una opción para analizar sus archivos y "
+"producir una lista de archivos de inclusión y sus dependencias: "
+"<option>-MM</option>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1554
 msgid "If you add this to your Makefile:"
-msgstr ""
+msgstr "Si agrega esto a su Makefile:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:1556
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "depend:\n"
 "\tcc -E -MM *.c &gt; .depend"
 msgstr ""
+"depend:\n"
+"\tcc -E -MM *.c &gt; .depend"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1559
@@ -2088,12 +2762,15 @@ msgid ""
 "filename> will appear with a list of object-files, C-files and the include-"
 "files:"
 msgstr ""
+"y correr <userinput>make depend</userinput>, el archivo <filename>.depend</"
+"filename> aparecerá con una lista de archivos objeto, archivos C y archivos "
+"de inclusión:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:1563
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "foo.o: foo.c foo.h"
-msgstr ""
+msgstr "foo.o: foo.c foo.h"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1565
@@ -2102,6 +2779,9 @@ msgid ""
 "command> all files depending on <filename>foo.h</filename> will be "
 "recompiled."
 msgstr ""
+"Si cambias <filename>foo.h</filename>, la próxima vez que corras "
+"<command>make</command> todos los archivos dependiendo de <filename>foo.h</"
+"filename> Será recompilado."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1569
@@ -2109,11 +2789,13 @@ msgid ""
 "Do not forget to run <command>make depend</command> each time you add an "
 "include-file to one of your files."
 msgstr ""
+"No te olvides de correr <command>make depend</command> cada vez que agrega "
+"un archivo de inclusión a uno de sus archivos."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1574
 msgid "FreeBSD Makefiles"
-msgstr ""
+msgstr "Makefiles de FreeBSD"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1576
@@ -2123,16 +2805,25 @@ msgid ""
 "very good example of this is the FreeBSD ports system. Here is the essential "
 "part of a typical ports <filename>Makefile</filename>:"
 msgstr ""
+"Los archivos Makefiles pueden ser bastante complicados de escribir. "
+"Afortunadamente, los sistemas basados en BSD como FreeBSD vienen con algunos "
+"muy poderosos como parte del sistema. Un muy buen ejemplo de esto es el "
+"sistema de puertos FreeBSD. Aquí está la parte esencial de un puerto típico. "
+"<filename>Makefile</filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:1583
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "MASTER_SITES=   ftp://freefall.cdrom.com/pub/FreeBSD/LOCAL_PORTS/\n"
 "DISTFILES=      scheme-microcode+dist-7.3-freebsd.tgz\n"
 "\n"
 ".include &lt;bsd.port.mk&gt;"
 msgstr ""
+"MASTER_SITES=   ftp://freefall.cdrom.com/pub/FreeBSD/LOCAL_PORTS/\n"
+"DISTFILES=      scheme-microcode+dist-7.3-freebsd.tgz\n"
+"\n"
+".include &lt;bsd.port.mk&gt;"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1588
@@ -2140,6 +2831,8 @@ msgid ""
 "Now, if we go to the directory for this port and type <userinput>make</"
 "userinput>, the following happens:"
 msgstr ""
+"Ahora, si vamos al directorio de este puerto y escribimos <userinput>make</"
+"userinput>, sucede lo siguiente:"
 
 #. (itstool) path: step/para
 #: book.translate.xml:1593
@@ -2147,6 +2840,8 @@ msgid ""
 "A check is made to see if the source code for this port is already on the "
 "system."
 msgstr ""
+"Se realiza una verificación para ver si el código fuente de este puerto ya "
+"está en el sistema."
 
 #. (itstool) path: step/para
 #: book.translate.xml:1598
@@ -2154,6 +2849,8 @@ msgid ""
 "If it is not, an FTP connection to the URL in <symbol>MASTER_SITES</symbol> "
 "is set up to download the source."
 msgstr ""
+"Si no es así, una conexión FTP a la URL en <symbol>MASTER_SITES</symbol> "
+"está configurado para descargar la fuente."
 
 #. (itstool) path: step/para
 #: book.translate.xml:1604
@@ -2162,6 +2859,9 @@ msgid ""
 "known, good, copy of the source. This is to make sure that the source was "
 "not corrupted while in transit."
 msgstr ""
+"La suma de verificación de la fuente se calcula y se compara con una copia "
+"buena conocida de la fuente. Esto es para asegurarse de que la fuente no se "
+"corrompió mientras estaba en tránsito."
 
 #. (itstool) path: step/para
 #: book.translate.xml:1611
@@ -2169,6 +2869,8 @@ msgid ""
 "Any changes required to make the source work on FreeBSD are applied—this is "
 "known as <firstterm>patching</firstterm>."
 msgstr ""
+"Se aplican todos los cambios necesarios para que la fuente funcione en "
+"FreeBSD; esto se conoce como <firstterm>patching</firstterm>."
 
 #. (itstool) path: step/para
 #: book.translate.xml:1617
@@ -2180,6 +2882,12 @@ msgid ""
 "trademark> features are present—this is where they are given the information "
 "in the FreeBSD ports scenario)."
 msgstr ""
+"Se realiza cualquier configuración especial necesaria para la fuente. ("
+"Muchos <trademark class=\"registered\">UNIX</trademark> distribuciones de "
+"programas tratan de averiguar qué versión de <trademark class=\"registered\""
+">UNIX</trademark> se están compilando y qué opcional <trademark class="
+"\"registered\">UNIX</trademark> características están presentes — aquí es "
+"donde se les da la información en el escenario de puertos FreeBSD)."
 
 #. (itstool) path: step/para
 #: book.translate.xml:1626
@@ -2188,6 +2896,10 @@ msgid ""
 "directory where the source was unpacked and do <command>make</command>—the "
 "program's own make file has the necessary information to build the program."
 msgstr ""
+"Se compila el código fuente del programa. En efecto, cambiamos al directorio "
+"donde se descomprimió la fuente y hacemos <command>make</command> —El propio "
+"archivo make del programa tiene la información necesaria para construir el "
+"programa."
 
 #. (itstool) path: step/para
 #: book.translate.xml:1634
@@ -2199,12 +2911,21 @@ msgid ""
 "<database>package database</database>, so that the port can easily be "
 "uninstalled later if we change our mind about it."
 msgstr ""
+"Ahora tenemos una versión compilada del programa. Si lo deseamos, podemos "
+"probarlo ahora; cuando nos sintamos seguros del programa, podemos escribir "
+"<userinput>make install</userinput>. Esto hará que el programa y los "
+"archivos de apoyo que necesite se copien en la ubicación correcta; una "
+"entrada también se convierte en <database>package database</database>, para "
+"que el puerto se pueda desinstalar fácilmente más tarde si cambiamos de "
+"opinión al respecto."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1645
 msgid ""
 "Now I think you will agree that is rather impressive for a four line script!"
 msgstr ""
+"¡Ahora creo que estará de acuerdo en que es bastante impresionante para un "
+"guión de cuatro líneas!"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1648
@@ -2217,6 +2938,14 @@ msgid ""
 "handling any errors that may occur) and anyone can get access to that just "
 "by putting a single line in their own make file!"
 msgstr ""
+"El secreto está en la última línea, que dice <command>make</command> para "
+"buscar en el archivo make del sistema llamado <filename>bsd.port.mk</"
+"filename>. Es fácil pasar por alto esta línea, pero aquí es de donde vienen "
+"todas las cosas inteligentes: alguien ha escrito un archivo MAKE que dice "
+"<command>make</command> para hacer todas las cosas anteriores (más un par de "
+"otras cosas que no mencioné, incluido el manejo de cualquier error que pueda "
+"ocurrir) y cualquiera puede acceder a eso simplemente poniendo una sola "
+"línea en su propio archivo make!"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1658
@@ -2226,11 +2955,16 @@ msgid ""
 "a bit of practice with makefiles, as they are very complicated (and if you "
 "do look at them, make sure you have a flask of strong coffee handy!)"
 msgstr ""
+"Si desea echar un vistazo a estos archivos MAKE del sistema, están en "
+"<filename>/usr/share/mk</filename>, pero probablemente sea mejor esperar "
+"hasta que haya tenido un poco de práctica con los archivos MAKE, ya que son "
+"muy complicados (y si los mira, ¡asegúrese de tener un frasco de café fuerte "
+"a la mano!)"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1667
 msgid "More Advanced Uses of <command>make</command>"
-msgstr ""
+msgstr "Usos más avanzados de <command>make</command>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1669
@@ -2242,6 +2976,12 @@ msgid ""
 "hopefully this introduction will have given you a base from which you can do "
 "this."
 msgstr ""
+"<command>Make</command> es una herramienta muy poderosa y puede hacer mucho "
+"más de lo que muestra el simple ejemplo anterior. Desafortunadamente, "
+"existen varias versiones diferentes de <command>make</command>, y todos "
+"difieren considerablemente. La mejor manera de aprender lo que pueden hacer "
+"es probablemente leer la documentación; con suerte, esta introducción le "
+"habrá proporcionado una base desde la cual puede hacer esto."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1677
@@ -2250,17 +2990,20 @@ msgid ""
 "make</application>; there is a tutorial for it in <filename>/usr/share/doc/"
 "psd/12.make</filename>. To view it, do"
 msgstr ""
+"La versión de make que viene con FreeBSD es la <application>Berkeley "
+"make</application>;  hay un tutorial para ello en <filename>/usr/share/doc/"
+"psd/12.make</filename>. para verlo hacer,"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:1682
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>zmore paper.ascii.gz</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>zmore paper.ascii.gz</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1684
 msgid "in that directory."
-msgstr ""
+msgstr "en ese directorio."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1686
@@ -2271,6 +3014,11 @@ msgid ""
 "automatically have been installed as <command>gmake</command>. It is also "
 "available as a port and package in its own right."
 msgstr ""
+"muchas aplicaciones en los puertos usan<application>GNU make</application>, "
+"que tiene un muy buen conjunto de<quote>info</quote> páginas. Si ha "
+"instalado alguno de estos puertos, <application>GNU make</application> se "
+"habrá instalado automáticamente como <command>gmake</command>. También está "
+"disponible como puerto y paquete por derecho propio."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1693
@@ -2279,12 +3027,16 @@ msgid ""
 "have to edit <filename>dir</filename> in the <filename>/usr/local/info</"
 "filename> directory to add an entry for it. This involves adding a line like"
 msgstr ""
+"Para ver las páginas de información de <application>GNU make</application>, "
+"tendrás que editar <filename>dir</filename> en el <filename>/usr/local/info</"
+"filename> directorio para agregarle una entrada. Esto implica agregar una "
+"línea como"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:1699
 #, no-wrap
 msgid " * Make: (make).                 The GNU Make utility."
-msgstr ""
+msgstr " * Make: (make).                 La utilidad GNU Make."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1701
@@ -2293,16 +3045,19 @@ msgid ""
 "userinput> and then select <guimenuitem>make</guimenuitem> from the menu (or "
 "in <application>Emacs</application>, do <userinput>C-h i</userinput>)."
 msgstr ""
+"al archivo. Una vez que haya hecho esto, puede escribir<userinput>info</"
+"userinput> y luego seleccione <guimenuitem>make</guimenuitem> del menú (o en "
+"<application>Emacs</application>, haga <userinput>C-h i</userinput>)."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1710
 msgid "Debugging"
-msgstr ""
+msgstr "Depuración"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1713
 msgid "Introduction to Available Debuggers"
-msgstr ""
+msgstr "Introducción a los depuradores disponibles"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1715
@@ -2316,6 +3071,14 @@ msgid ""
 "kernel, though that is a little trickier than the user applications we will "
 "be discussing in this section."
 msgstr ""
+"El uso de un depurador permite ejecutar el programa en circunstancias más "
+"controladas. Por lo general, es posible recorrer el programa una línea a la "
+"vez, inspeccionar el valor de las variables, cambiarlas, decirle al "
+"depurador que se ejecute hasta cierto punto y luego se detenga, y así "
+"sucesivamente. También es posible adjuntar a un programa que ya se está "
+"ejecutando o cargar un archivo principal para investigar por qué el programa "
+"falló. Incluso es posible depurar el kernel, aunque eso es un poco más "
+"complicado que las aplicaciones de usuario que discutiremos en esta sección."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1726
@@ -2324,6 +3087,10 @@ msgid ""
 "does not cover specialized topics such as debugging the kernel. For more "
 "information about that, refer to <xref linkend=\"kerneldebug\"/>."
 msgstr ""
+"Esta sección está destinada a ser una introducción rápida al uso de "
+"depuradores y no cubre temas especializados como la depuración del kernel. "
+"Para obtener más información al respecto, consulte <xref linkend="
+"\"kerneldebug\"/>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1731
@@ -2335,6 +3102,12 @@ msgid ""
 "<userinput>help</userinput> command, as well as <link xlink:href=\"https://"
 "lldb.llvm.org/\">a web tutorial and documentation</link>."
 msgstr ""
+"El depurador estándar proporcionado con FreeBSD 12.1 se llama <command>lldb</"
+"command> (<application>LLVM debugger</application>). Como forma parte de la "
+"instalación estándar de esa versión, no es necesario hacer nada especial "
+"para utilizarlo. Tiene una buena ayuda de comando, accesible a través del "
+"<userinput>help</userinput> comando, tanto como <link xlink:href=\"https"
+"://lldb.llvm.org/\">tutorial y documentación web</link>."
 
 #. (itstool) path: note/para
 #: book.translate.xml:1741
@@ -2344,6 +3117,10 @@ msgid ""
 "using.html\">from ports or packages</link> as <package>devel/llvm</package>. "
 "This will install the default version of lldb (currently 9.0)."
 msgstr ""
+"El <command>lldb</command> command está disponible para FreeBSD 11.3 <link "
+"xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/ports-using"
+".html\"> desde puertos o paquetes</link>como <package>devel/llvm</"
+"package>.Esto instalará la versión predeterminada de lldb (actualmente 9.0)."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1748
@@ -2357,6 +3134,14 @@ msgid ""
 "package> there as well. It has quite good on-line help, as well as a set of "
 "info pages."
 msgstr ""
+"El otro depurador disponible con FreeBSD se llama command>gdb</command> ("
+"<application>GNU debugger</application>). A diferencia de lldb, no se "
+"instala por defecto en FreeBSD 12.1; para usarlo, <link xlink:href=\""
+"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/ports-using.html\""
+">install</link> <package>devel/gdb</package> desde puertos o paquetes. La "
+"versión instalada por defecto en FreeBSD 11.3 es antigua; en su lugar, "
+"instala <package>devel/gdb</package> ahí también. Tiene una ayuda en línea "
+"bastante buena, así como un conjunto de páginas de información."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1758
@@ -2367,32 +3152,40 @@ msgid ""
 "command> as <command>lldb</command> is unsupported by <application>Emacs</"
 "application>. Otherwise, try both and see which one you prefer."
 msgstr ""
+"Cuál usar es en gran parte una cuestión de gustos. Si está familiarizado con "
+"uno solo, use ese. Personas familiarizadas con ninguno o ambos pero que "
+"quieran usar uno desde adentro<application>Emacs</application>necesitará "
+"usar<command>gdb</command> como <command>lldb</command> no es compatible con "
+"<application>Emacs</application>. De lo contrario, pruebe ambos y vea cuál "
+"prefiere."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1768
 msgid "Using lldb"
-msgstr ""
+msgstr "Usando lldb"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:1771
 msgid "Starting lldb"
-msgstr ""
+msgstr "Iniciando lldb"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1773
 msgid "Start up lldb by typing"
-msgstr ""
+msgstr "Inicie lldb escribiendo"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:1775
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>lldb -- <replaceable>progname</replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>lldb -- "
+"<replaceable>progname</replaceable></userinput>"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:1779
 msgid "Running a Program with lldb"
-msgstr ""
+msgstr "Ejecutando un programa con lldb"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1781
@@ -2402,12 +3195,16 @@ msgid ""
 "name of the function currently running, instead of the source code. If it "
 "displays a line like:"
 msgstr ""
+"Compile el programa con <option>-g</option> para aprovechar al máximo el uso "
+"<command>lldb</command>.Funcionará sin él, pero solo mostrará el nombre de "
+"la función que se está ejecutando actualmente, en lugar del código fuente. "
+"Si muestra una línea como:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:1787
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "Breakpoint 1: where = temp`main, address = …"
-msgstr ""
+msgstr "Breakpoint 1: where = temp`main, address = …"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1789
@@ -2416,6 +3213,9 @@ msgid ""
 "a breakpoint, this means that the program was not compiled with <option>-g</"
 "option>."
 msgstr ""
+"(sin una indicación del nombre de archivo del código fuente y el número de "
+"línea) al establecer un punto de interrupción, esto significa que el "
+"programa no se compiló con <option>-g</option>."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:1794
@@ -2423,6 +3223,9 @@ msgid ""
 "Most <command>lldb</command> commands have shorter forms that can be used "
 "instead. The longer forms are used here for clarity."
 msgstr ""
+"Más<command>lldb</command> Los comandos tienen formas más cortas que se "
+"pueden utilizar en su lugar. Las formas más largas se utilizan aquí para "
+"mayor claridad."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1799
@@ -2435,6 +3238,13 @@ msgid ""
 "code and then get stopped by the debugger when it calls <function>main()</"
 "function>."
 msgstr ""
+"En el <command>lldb</command> mensaje, escriba<userinput>breakpoint set -n "
+"main</userinput> Esto le indicará al depurador que no muestre el código de "
+"configuración preliminar en el programa que se está ejecutando y que detenga "
+"la ejecución al comienzo del código del programa. Ahora escribe "
+"<userinput>process launch</userinput> para iniciar realmente el programa: "
+"comenzará al comienzo del código de configuración y luego será detenido por "
+"el depurador cuando llame <function>main()</function>."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1809
@@ -2446,6 +3256,11 @@ msgid ""
 "<userinput>up</userinput> and <userinput>down</userinput> to take a quick "
 "look at the caller."
 msgstr ""
+"Para recorrer el programa una línea a la vez, escriba <userinput>thread step-"
+"over</userinput>. Cuando el programa llegue a una llamada de función, "
+"ingrese a ella escribiendo <userinput>thread step-"
+"in</userinput>up</userinput>y<userinput>down</userinput> para echar un "
+"vistazo rápido a la persona que llama."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1818
@@ -2453,10 +3268,12 @@ msgid ""
 "Here is a simple example of how to spot a mistake in a program with "
 "<command>lldb</command>. This is our program (with a deliberate mistake):"
 msgstr ""
+"Aquí hay un ejemplo simple de cómo detectar un error en un programa con "
+"<command>lldb</command>. Este es nuestro programa (con un error deliberado):"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:1822 book.translate.xml:2099
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "#include &lt;stdio.h&gt;\n"
 "\n"
@@ -2475,6 +3292,24 @@ msgid ""
 "\treturn anint;\n"
 "}"
 msgstr ""
+"#include &lt;stdio.h&gt;\n"
+"\n"
+"int bazz(int anint);\n"
+"\n"
+"main() {\n"
+"\tint i;\n"
+"\n"
+"\tprintf(\"This is my program\\n"
+"\");\n"
+"\tbazz(i);\n"
+"\treturn 0;\n"
+"}\n"
+"\n"
+"int bazz(int anint) {\n"
+"\tprintf(\"You gave me %d\\n"
+"\", anint);\n"
+"\treturn anint;\n"
+"}"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1839 book.translate.xml:2116
@@ -2483,11 +3318,14 @@ msgid ""
 "it to a function <function>bazz()</function> which prints out the number we "
 "gave it."
 msgstr ""
+"Este programa establece <symbol>i</symbol> ser - estar <literal>5</literal> "
+"y lo pasa a una función <function>bazz()</function> que imprime el número "
+"que le dimos."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1844 book.translate.xml:2121
 msgid "Compiling and running the program displays"
-msgstr ""
+msgstr "Compilar y ejecutar las pantallas del programa"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:1846
@@ -2498,15 +3336,19 @@ msgid ""
 "This is my program\n"
 "anint = -5360"
 msgstr ""
+"<prompt>%</prompt> <userinput>cc -g -o temp temp.c</userinput>\n"
+"<prompt>%</prompt> <userinput>./temp</userinput>\n"
+"Este es Mi programa\n"
+"anint = -5360"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1851
 msgid "That is not what was expected! Time to see what is going on!"
-msgstr ""
+msgstr "¡Eso no es lo que se esperaba! ¡Es hora de ver qué está pasando!"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:1854
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>lldb -- temp</userinput>\n"
 "(lldb) target create \"temp\"\n"
@@ -2551,6 +3393,62 @@ msgid ""
 "   16\t}\n"
 "(lldb)"
 msgstr ""
+"<prompt>%</prompt> <userinput>lldb -- temp</userinput>\n"
+"(lldb) target create \"temp\"\n"
+"Current executable set to 'temp' (x86_64).\n"
+"(lldb) <userinput>breakpoint set -n main</userinput>\t\t\t\t"
+"<lineannotation>Skip the set-up code</lineannotation>\n"
+"Breakpoint 1: where = temp`main + 15 at temp.c:8:2, address = "
+"0x00000000002012ef\t<lineannotation>lldb puts breakpoint at "
+"main()</lineannotation>\n"
+"(lldb) <userinput>process launch</userinput>\t\t\t\t\t<lineannotation>Run as "
+"far as main()</lineannotation>\n"
+"Process 9992 launching\n"
+"Process 9992 launched: '/home/pauamma/tmp/temp' (x86_64)\t"
+"<lineannotation>Program starts running</lineannotation>\n"
+"\n"
+"Process 9992 stopped\n"
+"* thread #1, name = 'temp', stop reason = breakpoint 1.1\t"
+"<lineannotation>lldb stops at main()</lineannotation>\n"
+"    frame #0: 0x00000000002012ef temp`main at temp.c:8:2\n"
+"   5\tmain() {\n"
+"   6\t\tint i;\n"
+"   7\n"
+"-&gt; 8\t\tprintf(\"This is my program\\n"
+"\");\t\t\t<lineannotation>Indicates the line where it "
+"stopped</lineannotation>\n"
+"   9\t\tbazz(i);\n"
+"   10\t\treturn 0;\n"
+"   11\t}\n"
+"(lldb) <userinput>thread step-over</userinput>\t\t\t<lineannotation>Go to "
+"next line</lineannotation>\n"
+"This is my program\t\t\t\t\t\t<lineannotation>Program prints "
+"out</lineannotation>\n"
+"Process 9992 stopped\n"
+"* thread #1, name = 'temp', stop reason = step over\n"
+"    frame #0: 0x0000000000201300 temp`main at temp.c:9:7\n"
+"   6\t\tint i;\n"
+"   7\n"
+"   8\t\tprintf(\"This is my program\\n"
+"\");\n"
+"-&gt; 9\t\tbazz(i);\n"
+"   10\t\treturn 0;\n"
+"   11\t}\n"
+"   12\n"
+"(lldb) <userinput>thread step-in</userinput>\t\t\t<lineannotation>step into "
+"bazz()</lineannotation>\n"
+"Process 9992 stopped\n"
+"* thread #1, name = 'temp', stop reason = step in\n"
+"    frame #0: 0x000000000020132b temp`bazz(anint=-5360) at temp.c:14:29\t"
+"<lineannotation>lldb displays stack frame</lineannotation>\n"
+"   11\t}\n"
+"   12\n"
+"   13\tint bazz(int anint) {\n"
+"-&gt; 14\t\tprintf(\"You gave me %d\\n"
+"\", anint);\n"
+"   15\t\treturn anint;\n"
+"   16\t}\n"
+"(lldb)"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1897
@@ -2559,10 +3457,14 @@ msgid ""
 "literal>? Was it not set to <literal>5</literal> in <function>main()</"
 "function>? Let us move up to <function>main()</function> and have a look."
 msgstr ""
+"¡Espera un minuto! Como lo hizo <symbol>anint</symbol>llegar a ser "
+"<literal>-5360</literal>? ¿No estaba configurado para <literal>5</literal> "
+"en <function>main()</function>? pasemos a <function>main()</function> y echa "
+"un vistazo."
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:1903
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "(lldb) <userinput>up</userinput>\t\t<lineannotation>Move up call stack</lineannotation>\n"
 "frame #1: 0x000000000020130b temp`main at temp.c:9:2\t\t<lineannotation>lldb displays stack frame</lineannotation>\n"
@@ -2576,6 +3478,22 @@ msgid ""
 "(lldb) <userinput>frame variable i</userinput>\t\t\t<lineannotation>Show us the value of i</lineannotation>\n"
 "(int) i = -5360\t\t\t\t\t\t\t<lineannotation>lldb displays -5360</lineannotation>"
 msgstr ""
+"(lldb) <userinput>up</userinput>\t\t<lineannotation>Move up call "
+"stack</lineannotation>\n"
+"frame #1: 0x000000000020130b temp`main at temp.c:9:2\t\t<lineannotation>lldb "
+"displays stack frame</lineannotation>\n"
+"   6\t\tint i;\n"
+"   7\n"
+"   8\t\tprintf(\"This is my program\\n"
+"\");\n"
+"-&gt; 9\t\tbazz(i);\n"
+"   10\t\treturn 0;\n"
+"   11\t}\n"
+"   12\n"
+"(lldb) <userinput>frame variable i</userinput>\t\t\t<lineannotation>Show us "
+"the value of i</lineannotation>\n"
+"(int) i = -5360\t\t\t\t\t\t\t<lineannotation>lldb displays "
+"-5360</lineannotation>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1915 book.translate.xml:2158
@@ -2583,10 +3501,12 @@ msgid ""
 "Oh dear! Looking at the code, we forgot to initialize <symbol>i</symbol>. We "
 "meant to put"
 msgstr ""
+"¡Oh querido! Mirando el código, olvidamos inicializar <symbol>i</symbol>. "
+"Nosotros queríamos poner"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:1918 book.translate.xml:2161
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<lineannotation>…</lineannotation>\n"
 "main() {\n"
@@ -2596,6 +3516,14 @@ msgid ""
 "\tprintf(\"This is my program\\n\");\n"
 "<lineannotation>…</lineannotation>"
 msgstr ""
+"<lineannotation>…</lineannotation>\n"
+"main() {\n"
+"\tint i;\n"
+"\n"
+"\ti = 5;\n"
+"\tprintf(\"This is my program\\n"
+"\");\n"
+"<lineannotation>…</lineannotation>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1926
@@ -2605,6 +3533,10 @@ msgid ""
 "memory when the program ran, which in this case happened to be "
 "<literal>-5360</literal>."
 msgstr ""
+"Pero nosotros dejamos el <literal>i=5;</literal> Fuera de la linea. Como no "
+"inicializamos <symbol>i</symbol>, tenía cualquier número que estuviera en "
+"esa área de memoria cuando se ejecutó el programa, que en este caso resultó "
+"ser <literal>-5360</literal>."
 
 #. (itstool) path: note/para
 #: book.translate.xml:1933
@@ -2617,11 +3549,19 @@ msgid ""
 "area where the program stores information about the arguments passed to "
 "functions and where to go when it returns from a function call.)"
 msgstr ""
+"El <command>lldb</command> comando muestra el marco de la pila cada vez que "
+"entramos o salimos de una función, incluso si estamos usando <userinput>up</"
+"userinput> y <userinput>abajo</userinput> para moverse por la pila de "
+"llamadas. Esto muestra el nombre de la función y los valores de sus "
+"argumentos, lo que nos ayuda a realizar un seguimiento de dónde estamos y "
+"qué está pasando. (La pila es un área de almacenamiento donde el programa "
+"almacena información sobre los argumentos pasados a las funciones y adónde "
+"ir cuando regresa de una llamada de función)."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:1947
 msgid "Examining a Core File with lldb"
-msgstr ""
+msgstr "Examinar un archivo principal con lldb"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1949 book.translate.xml:2191
@@ -2634,6 +3574,15 @@ msgid ""
 "replaceable>.core</filename> instead of just <filename>core</filename>, to "
 "make it clearer which program a core file belongs to."
 msgstr ""
+"Un archivo principal es básicamente un archivo que contiene el estado "
+"completo del proceso cuando se bloqueó. En <quote> los buenos viejos "
+"tiempos</quote>, los programadores tenían que imprimir listas hexadecimales "
+"de archivos centrales y sudar con los manuales de código de máquina, pero "
+"ahora la vida es un poco más fácil. Por cierto, en FreeBSD y otros sistemas "
+"4.4BSD, un archivo central se llama "
+"<filename><replaceable>progname</replaceable>.core</filename> en lugar de "
+"solo <filename>core</filename>, para que quede más claro a qué programa "
+"pertenece un archivo principal."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1959
@@ -2643,21 +3592,35 @@ msgid ""
 "way, type <userinput>lldb -c <replaceable>progname</replaceable>.core -- "
 "<replaceable>progname</replaceable></userinput>"
 msgstr ""
+"Para examinar un archivo principal, especifique el nombre del archivo "
+"principal además del programa en sí. En lugar de empezar <command>lldb</"
+"command> de la forma habitual, escriba<userinput>lldb -c "
+"<replaceable>progname</replaceable>.core -- "
+"<replaceable>progname</replaceable></userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1965
 msgid "The debugger will display something like this:"
-msgstr ""
+msgstr "El depurador mostrará algo como esto:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:1967
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>lldb -c <filename><replaceable>progname</replaceable>.core</filename> -- <filename><replaceable>progname</replaceable></filename></userinput>\n"
 "(lldb) target create \"<filename><replaceable>progname</replaceable></filename>\" --core \"<filename><replaceable>progname</replaceable></filename>.core\"\n"
 "Core file '/home/pauamma/tmp/<filename><replaceable>progname</replaceable>.core</filename>' (x86_64) was loaded.\n"
 "(lldb)"
 msgstr ""
+"<prompt>%</prompt> <userinput>lldb -c "
+"<filename><replaceable>progname</replaceable>.core</filename> -- "
+"<filename><replaceable>progname</replaceable></filename></userinput>\n"
+"(lldb) target create \""
+"<filename><replaceable>progname</replaceable></filename>\" --core \""
+"<filename><replaceable>progname</replaceable></filename>.core\"\n"
+"Core file '/home/pauamma/tmp/<filename><replaceable>progname</replaceable>."
+"core</filename>' (x86_64) was loaded.\n"
+"(lldb)"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1972
@@ -2669,10 +3632,17 @@ msgid ""
 "<userinput>thread backtrace all</userinput>. This will also show how the "
 "function where the program dumped core was called."
 msgstr ""
+"En este caso, el programa se llamó "
+"<filename><replaceable>progname</replaceable></filename>, entonces el "
+"archivo principal se llama <filename><replaceable>progname</replaceable>."
+"core</filename>. El depurador no muestra por qué se bloqueó el programa o "
+"dónde. Para esto, use <userinput>thread backtrace all </userinput>. Esto "
+"también mostrará cómo se llamó a la función en la que el programa descargó "
+"el núcleo."
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:1982
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "(lldb) <userinput>thread backtrace all</userinput>\n"
 "* thread #1, name = '<filename><replaceable>progname</replaceable></filename>', stop reason = signal SIGSEGV\n"
@@ -2681,6 +3651,19 @@ msgid ""
 "    frame #2: 0x000000000020110f <filename><replaceable>progname</replaceable></filename>`_start(ap=&lt;unavailable&gt;, cleanup=&lt;unavailable&gt;) at crt1.c:76:7\n"
 "(lldb)"
 msgstr ""
+"(lldb) <userinput>thread backtrace all</userinput>\n"
+"* thread #1, name = '<filename><replaceable>progname</replaceable></"
+"filename>', stop reason = signal SIGSEGV\n"
+"  * frame #0: 0x0000000000201347 "
+"<filename><replaceable>progname</replaceable></filename>`bazz(anint=5) at "
+"temp2.c:17:10\n"
+"    frame #1: 0x0000000000201312 "
+"<filename><replaceable>progname</replaceable></filename>`main at temp2.c:10:"
+"2\n"
+"    frame #2: 0x000000000020110f <filename><replaceable>progname</replaceable"
+"></filename>`_start(ap=&lt;unavailable&gt;, cleanup=&lt;unavailable&gt;) at "
+"crt1.c:76:7\n"
+"(lldb)"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:1989
@@ -2692,11 +3675,17 @@ msgid ""
 "says that in this case, <function>bazz()</function> was called from "
 "<function>main()</function>."
 msgstr ""
+"<literal>SIGSEGV</literal> indica que el programa intentó acceder a la "
+"memoria (ejecutar código o leer / escribir datos por lo general) en una "
+"ubicación que no le pertenece, pero no da ningún dato específico. Para eso, "
+"mire el código fuente en la línea 10 del archivo temp2.c, en "
+"<function>bazz()</function>. El backtrace también dice que en este caso, "
+"<function>bazz()</function> fue llamado desde <function>main()</function>."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:2000
 msgid "Attaching to a Running Program with lldb"
-msgstr ""
+msgstr "Adjuntar a un programa en ejecución con lldb"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2002
@@ -2707,6 +3696,11 @@ msgid ""
 "program that forks and wanting to trace the child, but the debugger will "
 "only trace the parent."
 msgstr ""
+"Una de las características más bonitas de <command>lldb</command> es que se "
+"puede adjuntar a un programa que ya se está ejecutando. Por supuesto, eso "
+"requiere permisos suficientes para hacerlo. Un problema común es pasar por "
+"un programa que se bifurca y querer rastrear al hijo, pero el depurador solo "
+"rastreará al padre."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2010
@@ -2714,17 +3708,21 @@ msgid ""
 "To do that, start up another <command>lldb</command>, use <command>ps</"
 "command> to find the process ID for the child, and do"
 msgstr ""
+"Para hacer eso, inicie otro <command>lldb</command>, use <command>ps</"
+"command> para encontrar el ID de proceso del niño y hacer"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:2014
 #, no-wrap
 msgid "(lldb) <userinput>process attach -p <replaceable>pid</replaceable></userinput>"
 msgstr ""
+"(lldb) <userinput>proceso adjunto -p "
+"<replaceable>pid</replaceable></userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2016
 msgid "in <command>lldb</command>, and then debug as usual."
-msgstr ""
+msgstr "en <command>lldb</command>, y luego depurar como de costumbre."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2019 book.translate.xml:2267
@@ -2733,10 +3731,13 @@ msgid ""
 "create the child needs to do something like the following (courtesy of the "
 "<command>gdb</command> info pages):"
 msgstr ""
+"Para que eso funcione bien, el código que llama <function>fork</function> "
+"para crear el niño necesita hacer algo como lo siguiente (cortesía del "
+"<command>gdb</command> paginas de información):"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:2024 book.translate.xml:2272
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<lineannotation>…</lineannotation>\n"
 "if ((pid = fork()) &lt; 0)\t\t/* _Always_ check this */\n"
@@ -2750,6 +3751,17 @@ msgid ""
 "} else {\t\t\t/* parent */\n"
 "\t<lineannotation>…</lineannotation>"
 msgstr ""
+"<lineannotation>…</lineannotation>\n"
+"if ((pid = fork()) &lt; 0)\t\t/* _Always_ check this */\n"
+"\terror();\n"
+"else if (pid == 0) {\t\t/* child */\n"
+"\tint PauseMode = 1;\n"
+"\n"
+"\twhile (PauseMode)\n"
+"\t\tsleep(10);\t/* Wait until someone attaches to us */\n"
+"\t<lineannotation>…</lineannotation>\n"
+"} else {\t\t\t/* parent */\n"
+"\t<lineannotation>…</lineannotation>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2036
@@ -2758,27 +3770,33 @@ msgid ""
 "symbol> to <literal>0</literal> with <userinput>expr PauseMode = 0</"
 "userinput> and wait for the <function>sleep()</function> call to return."
 msgstr ""
+"Ahora todo lo que se necesita es adjuntar al niño, establecer "
+"<symbol>PauseMode</symbol> a <literal>0 </literal> con <userinput> expr "
+"PauseMode = 0</userinput> y esperar por <function>sleep()</function> llamar "
+"para volver."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:2044
 msgid "Using gdb"
-msgstr ""
+msgstr "usando gdb"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:2047
 msgid "Starting gdb"
-msgstr ""
+msgstr "Iniciando gdb"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2049
 msgid "Start up gdb by typing"
-msgstr ""
+msgstr "Inicie gdb escribiendo"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:2051
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>gdb <replaceable>progname</replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>gdb "
+"<replaceable>progname</replaceable></userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2053
@@ -2786,12 +3804,15 @@ msgid ""
 "although many people prefer to run it inside <application>Emacs</"
 "application>. To do this, type:"
 msgstr ""
+"aunque mucha gente prefiere correrlo por dentro <application>Emacs</"
+"application>. Para hacer esto, escriba:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:2056
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<userinput>M-x gdb RET <replaceable>progname</replaceable> RET</userinput>"
 msgstr ""
+"<userinput>M-x gdb RET <replaceable>progname</replaceable> RET</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2058
@@ -2800,11 +3821,14 @@ msgid ""
 "there is a graphical front-end for it (<package>devel/xxgdb</package>) in "
 "the Ports Collection."
 msgstr ""
+"Finalmente, para aquellos que encuentran desagradable su estilo de símbolo "
+"del sistema basado en texto, hay una interfaz gráfica para él. <package>"
+"devel/xxgdb</package> en la Colección de Puertos."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:2066
 msgid "Running a Program with gdb"
-msgstr ""
+msgstr "Ejecutando un programa con gdb"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2068
@@ -2813,12 +3837,16 @@ msgid ""
 "<command>gdb</command>. It will work without, but will only display the name "
 "of the function currently running, instead of the source code. A line like:"
 msgstr ""
+"Compile el programa con <option>-g</option> para aprovechar al máximo el uso "
+"<command>gdb</command>. Funcionará sin él, pero solo mostrará el nombre de "
+"la función que se está ejecutando actualmente, en lugar del código fuente. "
+"Una línea como:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:2074
 #, no-wrap
 msgid "… (no debugging symbols found) …"
-msgstr ""
+msgstr "… (No se encontraron símbolos de depuración)…"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2076
@@ -2826,6 +3854,8 @@ msgid ""
 "when <command>gdb</command> starts up means that the program was not "
 "compiled with <option>-g</option>."
 msgstr ""
+"cuando<command>gdb</command> se inicia significa que el programa no se "
+"compiló con <option>-g</option>."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2079
@@ -2837,6 +3867,13 @@ msgid ""
 "will start at the beginning of the set-up code and then get stopped by the "
 "debugger when it calls <function>main()</function>."
 msgstr ""
+"en el <command>gdb</command> mensaje, escriba<userinput>break main</"
+"userinput>. Esto le indicará al depurador que omita el código de "
+"configuración preliminar en el programa que se está ejecutando y que detenga "
+"la ejecución al comienzo del código del programa. Ahora "
+"escribe<userinput>run</userinput> para iniciar el programa: se iniciará al "
+"principio del código de configuración y luego el depurador lo detendrá "
+"cuando llame <function>main()</function>."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2088
@@ -2847,6 +3884,11 @@ msgid ""
 "<command>up</command> and <command>down</command> to take a quick look at "
 "the caller."
 msgstr ""
+"para recorrer el programa una línea a la vez, presione <command>n</command>. "
+"Cuando esté en una llamada de función, ingrese presionando <command>s</"
+"command>. Una vez en una llamada de función, regrese de ella presionando "
+"<command>f</command>, o use <command>up</command> y <command> down</command> "
+"para echar un vistazo rápido a la persona que llama."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2095
@@ -2854,6 +3896,8 @@ msgid ""
 "Here is a simple example of how to spot a mistake in a program with "
 "<command>gdb</command>. This is our program (with a deliberate mistake):"
 msgstr ""
+"Aquí hay un ejemplo simple de cómo detectar un error en un programa con "
+"<command>gdb</command>. Este es nuestro programa (con un error deliberado):"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:2123
@@ -2864,15 +3908,19 @@ msgid ""
 "This is my program\n"
 "anint = 4231"
 msgstr ""
+"<prompt>%</prompt> <userinput>cc -g -o temp temp.c</userinput>\n"
+"<prompt>%</prompt> <userinput>./temp</userinput>\n"
+"Este es mi programa. \n"
+"anint = 4231"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2128
 msgid "That was not what we expected! Time to see what is going on!"
-msgstr ""
+msgstr "¡Eso no era lo que esperábamos! ¡Es hora de ver qué está pasando!"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:2131
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>gdb temp</userinput>\n"
 "GDB is free software and you are welcome to distribute copies of it\n"
@@ -2891,6 +3939,33 @@ msgid ""
 "bazz (anint=4231) at temp.c:17\t\t\t<lineannotation>gdb displays stack frame</lineannotation>\n"
 "(gdb)"
 msgstr ""
+"<prompt>%</prompt> <userinput>gdb temp</userinput>\n"
+"GDB is free software and you are welcome to distribute copies of it\n"
+" under certain conditions; type \"show copying\" to see the conditions.\n"
+"There is absolutely no warranty for GDB; type \"show warranty\" for details."
+"\n"
+"GDB 4.13 (i386-unknown-freebsd), Copyright 1994 Free Software Foundation, "
+"Inc.\n"
+"(gdb) <userinput>break main</userinput>\t\t\t\t<lineannotation>Skip the set-"
+"up code</lineannotation>\n"
+"Breakpoint 1 at 0x160f: file temp.c, line 9.\t<lineannotation>gdb puts "
+"breakpoint at main()</lineannotation>\n"
+"(gdb) <userinput>run</userinput>\t\t\t\t\t<lineannotation>Run as far as "
+"main()</lineannotation>\n"
+"Starting program: /home/james/tmp/temp\t\t<lineannotation>Program starts "
+"running</lineannotation>\n"
+"\n"
+"Breakpoint 1, main () at temp.c:9\t\t<lineannotation>gdb stops at "
+"main()</lineannotation>\n"
+"(gdb) <userinput>n</userinput>\t\t\t\t\t\t<lineannotation>Go to next "
+"line</lineannotation>\n"
+"This is my program\t\t\t\t<lineannotation>Program prints out</lineannotation>"
+"\n"
+"(gdb) <userinput>s</userinput>\t\t\t\t\t\t<lineannotation>step into "
+"bazz()</lineannotation>\n"
+"bazz (anint=4231) at temp.c:17\t\t\t<lineannotation>gdb displays stack "
+"frame</lineannotation>\n"
+"(gdb)"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2148
@@ -2899,16 +3974,27 @@ msgid ""
 "literal>? Was it not set to <literal>5</literal> in <function>main()</"
 "function>? Let us move up to <function>main()</function> and have a look."
 msgstr ""
+"¡Espera un minuto! Como lo hizo <symbol>anint</symbol> llegar a ser "
+"<literal>4231</literal>? no estaba configurado para <literal>5</literal> en "
+"<function>main()</function>? Subamos a <function>main()</function> y echa un "
+"vistazo."
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:2153
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "(gdb) <userinput>up</userinput>\t\t\t\t\t<lineannotation>Move up call stack</lineannotation>\n"
 "#1  0x1625 in main () at temp.c:11\t\t<lineannotation>gdb displays stack frame</lineannotation>\n"
 "(gdb) <userinput>p i</userinput>\t\t\t\t\t<lineannotation>Show us the value of i</lineannotation>\n"
 "$1 = 4231\t\t\t\t\t<lineannotation>gdb displays 4231</lineannotation>"
 msgstr ""
+"(gdb) <userinput>up</userinput>\t\t\t\t\t<lineannotation>Move up call "
+"stack</lineannotation>\n"
+"#1  0x1625 in main () at temp.c:11\t\t<lineannotation>gdb displays stack "
+"frame</lineannotation>\n"
+"(gdb) <userinput>p i</userinput>\t\t\t\t\t<lineannotation>Show us the value "
+"of i</lineannotation>\n"
+"$1 = 4231\t\t\t\t\t<lineannotation>gdb displays 4231</lineannotation>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2169
@@ -2918,6 +4004,10 @@ msgid ""
 "memory when the program ran, which in this case happened to be "
 "<literal>4231</literal>."
 msgstr ""
+"Pero nosotros dejamos el <literal>i=5;</literal>Fuera de la linea. Como no "
+"inicializamos <symbol>i</symbol>, tenía cualquier número que estuviera en "
+"esa área de memoria cuando se ejecutó el programa, que en este caso resultó "
+"ser <literal>4231</literal>."
 
 #. (itstool) path: note/para
 #: book.translate.xml:2176
@@ -2930,11 +4020,19 @@ msgid ""
 "program stores information about the arguments passed to functions and where "
 "to go when it returns from a function call.)"
 msgstr ""
+"El <command>gdb</command> comando muestra el marco de la pila cada vez que "
+"entramos o salimos de una función, incluso si estamos usando <command>up</"
+"command> y <command>down</command> para moverse por la pila de llamadas. "
+"Esto muestra el nombre de la función y los valores de sus argumentos, lo que "
+"nos ayuda a realizar un seguimiento de dónde estamos y qué está pasando. (La "
+"pila es un área de almacenamiento donde el programa almacena información "
+"sobre los argumentos pasados a las funciones y adónde ir cuando regresa de "
+"una llamada de función.)"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:2189
 msgid "Examining a Core File with gdb"
-msgstr ""
+msgstr "Examinar un archivo principal con gdb"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2201
@@ -2942,12 +4040,16 @@ msgid ""
 "To examine a core file, start up <command>gdb</command> in the usual way. "
 "Instead of typing <command>break</command> or <command>run</command>, type"
 msgstr ""
+"Para examinar un archivo principal, inicie <command>gdb</command> de la "
+"forma habitual. En lugar de escribir <command>break</command> o "
+"<command>run</command>, escriba"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:2205
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "(gdb) <userinput>core <replaceable>progname</replaceable>.core</userinput>"
 msgstr ""
+"(gdb) <userinput>core <replaceable>progname</replaceable>.core</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2207
@@ -2955,15 +4057,17 @@ msgid ""
 "If the core file is not in the current directory, type <userinput>dir /path/"
 "to/core/file</userinput> first."
 msgstr ""
+"Si el archivo principal no está en el directorio actual, escriba "
+"<userinput>dir /path/to/core/file</userinput> primero."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2210
 msgid "The debugger should display something like this:"
-msgstr ""
+msgstr "El depurador debería mostrar algo como esto:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:2212
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>gdb <filename><replaceable>progname</replaceable></filename></userinput>\n"
 "GDB is free software and you are welcome to distribute copies of it\n"
@@ -2977,6 +4081,22 @@ msgid ""
 "#0  0x164a in bazz (anint=0x5) at temp.c:17\n"
 "(gdb)"
 msgstr ""
+"<prompt>%</prompt> <userinput>gdb "
+"<filename><replaceable>progname</replaceable></filename></userinput>\n"
+"GDB is free software and you are welcome to distribute copies of it\n"
+" under certain conditions; type \"show copying\" to see the conditions.\n"
+"There is absolutely no warranty for GDB; type \"show warranty\" for details."
+"\n"
+"GDB 4.13 (i386-unknown-freebsd), Copyright 1994 Free Software Foundation, "
+"Inc.\n"
+"(gdb) <userinput>core <filename><replaceable>progname</replaceable>."
+"core</filename></userinput>\n"
+"Core was generated by "
+"`<filename><replaceable>progname</replaceable></filename>'.\n"
+"Program terminated with signal 11, Segmentation fault.\n"
+"Cannot access memory at address 0x7020796d.\n"
+"#0  0x164a in bazz (anint=0x5) at temp.c:17\n"
+"(gdb)"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2224
@@ -2987,6 +4107,12 @@ msgid ""
 "that the program crashed due to trying to access an area in memory that was "
 "not available to it in a function called <function>bazz</function>."
 msgstr ""
+"En este caso, el programa se llamó "
+"<filename><replaceable>progname</replaceable></filename>,entonces el archivo "
+"principal se llama <filename><replaceable>progname</replaceable>.core</"
+"filename>. Podemos ver que el programa se bloqueó debido a intentar acceder "
+"a un área en la memoria que no estaba disponible en una función llamada "
+"<function>bazz</function>."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2232
@@ -2996,10 +4122,14 @@ msgid ""
 "program. <command>bt</command> causes <command>gdb</command> to print out a "
 "back-trace of the call stack:"
 msgstr ""
+"A veces es útil poder ver cómo se llamó a una función, ya que el problema "
+"podría haber ocurrido en un nivel superior en la pila de llamadas en un "
+"programa complejo. <command>bt</command> causas <command>gdb</command> para "
+"imprimir un seguimiento de la pila de llamadas:"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:2238
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "(gdb) <userinput>bt</userinput>\n"
 "#0  0x164a in bazz (anint=0x5) at temp.c:17\n"
@@ -3007,6 +4137,11 @@ msgid ""
 "#2  0x162c in main () at temp.c:11\n"
 "(gdb)"
 msgstr ""
+"(gdb) <userinput>bt</userinput>\n"
+"#0  0x164a in bazz (anint=0x5) at temp.c:17\n"
+"#1  0xefbfd888 in end ()\n"
+"#2  0x162c in main () at temp.c:11\n"
+"(gdb)"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2244
@@ -3015,11 +4150,14 @@ msgid ""
 "this case, the <function>bazz()</function> function was called from "
 "<function>main()</function>."
 msgstr ""
+"la <function>end()</function>se llama a la función cuando un programa falla; "
+"en este caso, el<function>bazz()</function> la función fue llamada desde "
+"<function>main()</function>."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:2250
 msgid "Attaching to a Running Program with gdb"
-msgstr ""
+msgstr "Adjuntar a un programa en ejecución con gdb"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2252
@@ -3030,6 +4168,11 @@ msgid ""
 "program that forks and wanting to trace the child, but the debugger will "
 "only trace the parent."
 msgstr ""
+"Una de las características más bonitas de <command>gdb</command> es que se "
+"puede adjuntar a un programa que ya se está ejecutando. Por supuesto, eso "
+"requiere permisos suficientes para hacerlo. Un problema común es pasar por "
+"un programa que se bifurca y querer rastrear al hijo, pero el depurador solo "
+"rastreará al padre."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2259
@@ -3037,17 +4180,19 @@ msgid ""
 "To do that, start up another <command>gdb</command>, use <command>ps</"
 "command> to find the process ID for the child, and do"
 msgstr ""
+"Para hacer eso, inicie otro <command>gdb</command>, use <command>ps</"
+"command> para encontrar el ID de proceso del niño y hacer"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:2263
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "(gdb) <userinput>attach <replaceable>pid</replaceable></userinput>"
-msgstr ""
+msgstr "(gdb) <userinput>attach <replaceable>pid</replaceable></userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2265
 msgid "in <command>gdb</command>, and then debug as usual."
-msgstr ""
+msgstr "en <command>gdb</command>, y luego depurar como de costumbre."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:2284
@@ -3056,16 +4201,20 @@ msgid ""
 "symbol> to <literal>0</literal>, and wait for the <function>sleep()</"
 "function> call to return!"
 msgstr ""
+"Ahora todo lo que se necesita es adjuntar al niño, "
+"establecer<symbol>PauseMode</symbol>a<literal>0</literal>, y esperar para la "
+"<function>sleep()</function> llamar para regresar!"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:2292
 msgid "Using Emacs as a Development Environment"
-msgstr ""
+msgstr "Usando Emacs como entorno de desarrollo"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:2295
+#, fuzzy
 msgid "Emacs"
-msgstr ""
+msgstr "Emacs"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2297
@@ -3075,6 +4224,11 @@ msgid ""
 "developers and sysadmins do in fact spend practically all their time working "
 "inside Emacs, leaving it only to log out."
 msgstr ""
+"Emacs es un editor altamente personalizable; de hecho, ha sido personalizado "
+"hasta el punto en que se parece más a un sistema operativo que a un editor. "
+"Muchos desarrolladores y administradores de sistemas pasan prácticamente "
+"todo su tiempo trabajando dentro de Emacs, dejándolo solo para cerrar la "
+"sesión."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2304
@@ -3082,6 +4236,8 @@ msgid ""
 "It is impossible even to summarize everything Emacs can do here, but here "
 "are some of the features of interest to developers:"
 msgstr ""
+"Es imposible incluso resumir todo lo que Emacs puede hacer aquí, pero aquí "
+"están algunas de las características de interés para los desarrolladores:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2310
@@ -3090,32 +4246,37 @@ msgid ""
 "regular expressions (patterns), jumping to start/end of block expression, "
 "etc, etc."
 msgstr ""
+"Editor muy potente, que permite buscar y reemplazar tanto en cadenas como en "
+"expresiones regulares (patrones), saltar al inicio / final de la expresión "
+"de bloque, etc., etc."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2316
 msgid "Pull-down menus and online help."
-msgstr ""
+msgstr "Menús desplegables y ayuda en línea."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2320
 msgid "Language-dependent syntax highlighting and indentation."
-msgstr ""
+msgstr "Resaltado y sangría de sintaxis dependientes del idioma."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2325
 msgid "Completely customizable."
-msgstr ""
+msgstr "Totalmente personalizable."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2329
 msgid "You can compile and debug programs within Emacs."
-msgstr ""
+msgstr "Puede compilar y depurar programas dentro de Emacs."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2334
 msgid ""
 "On a compilation error, you can jump to the offending line of source code."
 msgstr ""
+"En caso de error de compilación, puede saltar a la línea de código fuente "
+"infractora."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2339
@@ -3124,6 +4285,9 @@ msgid ""
 "reading GNU hypertext documentation, including the documentation on Emacs "
 "itself."
 msgstr ""
+"Interfaz amigable para el<command>info</command> programa utilizado para "
+"leer la documentación de hipertexto GNU, incluida la documentación sobre "
+"Emacs."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2345
@@ -3131,11 +4295,13 @@ msgid ""
 "Friendly front-end to <command>gdb</command>, allowing you to look at the "
 "source code as you step through your program."
 msgstr ""
+"Interfaz amigable para <command>gdb</command>, permitiéndole ver el código "
+"fuente mientras recorre su programa."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2351
 msgid "And doubtless many more that have been overlooked."
-msgstr ""
+msgstr "Y sin duda muchas más que se han pasado por alto."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2353
@@ -3143,6 +4309,8 @@ msgid ""
 "Emacs can be installed on FreeBSD using the <package>editors/emacs</package> "
 "port."
 msgstr ""
+"Emacs se puede instalar en FreeBSD usando el <package>editors/emacs</"
+"package> puerto."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2357
@@ -3154,6 +4322,12 @@ msgid ""
 "<guimenuitem>Emacs Tutorial</guimenuitem> from the <guimenu>Help</guimenu> "
 "menu.)"
 msgstr ""
+"Una vez que esté instalado, inícielo y haga <literal>C-h t</literal> para "
+"leer un tutorial de Emacs, eso significa mantener presionado "
+"<keycap>control</keycap>, presione <keycap>h</keycap>, Deja ir "
+"<keycap>control</keycap>, y luego apretar <keycap>t</keycap>. ("
+"Alternativamente, puede usar el mouse para seleccionar <guimenuitem>Emacs "
+"Tutorial</guimenuitem> desde el <guimenu>Help</guimenu> menu.)"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2365
@@ -3167,6 +4341,14 @@ msgid ""
 "any case, Emacs has far too many useful functions for them to all fit on the "
 "menu bars."
 msgstr ""
+"Aunque Emacs tiene menús, vale la pena aprender las combinaciones de teclas, "
+"ya que es mucho más rápido cuando está editando algo presionar un par de "
+"teclas que tratar de encontrar el mouse y luego hacer clic en el lugar "
+"correcto. Y, cuando hable con usuarios experimentados de Emacs, encontrará "
+"que a menudo lanzan expresiones como <quote><literal>M-x replace-s RET foo "
+"RET bar RET</literal></quote> por lo que es útil saber qué significan. Y en "
+"cualquier caso, Emacs tiene demasiadas funciones útiles para que todas "
+"quepan en las barras de menú."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2376
@@ -3177,6 +4359,11 @@ msgid ""
 "then try doing C-x C-f. When you are happy with that, move on to another "
 "menu command."
 msgstr ""
+"Afortunadamente, es bastante fácil recoger las combinaciones de teclas, ya "
+"que se muestran junto al elemento del menú. Mi consejo es usar el elemento "
+"del menú para, digamos, abrir un archivo hasta que comprenda cómo funciona y "
+"se sienta seguro con él, luego intente hacer C-x C-f. Cuando esté satisfecho "
+"con eso, pase a otro comando de menú."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2383
@@ -3188,6 +4375,12 @@ msgid ""
 "commands which contain a particular word in them, with the key binding next "
 "to it."
 msgstr ""
+"Si no recuerda lo que hace una combinación particular de teclas, "
+"seleccione<guimenuitem>Describe la clave</guimenuitem>desde el<guimenu>Help</"
+"guimenu> y escríbalo — Emacs le dirá lo que hace. También puede utilizar el "
+"<guimenuitem>Command Apropos</guimenuitem> elemento de menú para encontrar "
+"todos los comandos que contienen una palabra en particular, con el enlace de "
+"teclas al lado."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2391
@@ -3211,6 +4404,11 @@ msgid ""
 "have. Unfortunately, PC's do not have one, so it is usually <keycap>alt</"
 "keycap> (or if you are unlucky, the <keysym>escape</keysym> key)."
 msgstr ""
+"Si te preguntas que demonios <keysm>Meta</keysym> es decir, es una clave "
+"especial que muchos <trademark class=\"registered\">UNIX</trademark> las "
+"estaciones de trabajo tienen. Desafortunadamente, las PC no tienen una, por "
+"lo que generalmente es <keycap>alt</keycap> (o si tienes mala suerte, el "
+"<keysym>escape</keysym> key)."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2410
@@ -3228,7 +4426,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:2423
 msgid "Configuring Emacs"
-msgstr ""
+msgstr "Configurando Emacs"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2425
@@ -3236,6 +4434,8 @@ msgid ""
 "Emacs does many wonderful things; some of them are built in, some of them "
 "need to be configured."
 msgstr ""
+"Emacs hace muchas cosas maravillosas; algunos de ellos están integrados, "
+"algunos de ellos deben configurarse."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2428
@@ -3246,6 +4446,12 @@ msgid ""
 "something like Common Lisp. Emacs Lisp has many features of Common Lisp, "
 "although it is considerably smaller (and thus easier to master)."
 msgstr ""
+"En lugar de usar un lenguaje de macros propietario para la configuración, "
+"Emacs usa una versión de Lisp especialmente adaptada para editores, conocida "
+"como Emacs Lisp. Trabajar con Emacs Lisp puede ser muy útil si desea "
+"continuar y aprender algo como Common Lisp. Emacs Lisp tiene muchas "
+"características de Common Lisp, aunque es considerablemente más pequeño (y "
+"por lo tanto más fácil de dominar)."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2436
@@ -3253,6 +4459,9 @@ msgid ""
 "The best way to learn Emacs Lisp is to download the <link xlink:href=\"ftp://"
 "ftp.gnu.org/old-gnu/emacs/elisp-manual-19-2.4.tar.gz\">Emacs Tutorial</link>"
 msgstr ""
+"La mejor manera de aprender Emacs Lisp es descargar el <link xlink:href=\"ftp"
+"://ftp.gnu.org/old-gnu/emacs/elisp-manual-19-2.4.tar.gz\">Emacs "
+"Tutorial</link>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2439
@@ -3263,12 +4472,17 @@ msgid ""
 "directory and restart Emacs if it is already running; it will read the "
 "commands from the file and (hopefully) give you a useful basic setup."
 msgstr ""
+"Sin embargo, no es necesario conocer ningún Lisp para comenzar a configurar "
+"Emacs, ya que he incluido un ejemplo <filename>.emacs</filename>, que "
+"debería ser suficiente para empezar. Simplemente cópielo en su directorio "
+"personal y reinicie Emacs si ya se está ejecutando; leerá los comandos del "
+"archivo y (con suerte) le dará una configuración básica útil."
 
 #. (itstool) path: sect2/title
 #. (itstool) path: example/title
 #: book.translate.xml:2448 book.translate.xml:2516
 msgid "A Sample <filename>.emacs</filename>"
-msgstr ""
+msgstr "Una muestra <filename>.emacs</filename>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2450
@@ -3276,6 +4490,8 @@ msgid ""
 "Unfortunately, there is far too much here to explain it in detail; however "
 "there are one or two points worth mentioning."
 msgstr ""
+"Desafortunadamente, hay demasiado aquí para explicarlo en detalle; sin "
+"embargo, hay uno o dos puntos que vale la pena mencionar."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2456
@@ -3283,6 +4499,8 @@ msgid ""
 "Everything beginning with a <literal>;</literal> is a comment and is ignored "
 "by Emacs."
 msgstr ""
+"Todo comenzando con un <literal>;</literal> es un comentario y Emacs lo "
+"ignora."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2461
@@ -3293,6 +4511,11 @@ msgid ""
 "based on the filename, and may not get it right for <filename>.emacs</"
 "filename>."
 msgstr ""
+"En la primera línea, el <literal>-*- Emacs-Lisp -*-</literal>es para que "
+"podamos editar<filename>.emacs</filename> dentro de Emacs y obtenga todas "
+"las funciones sofisticadas para editar Emacs Lisp. Emacs generalmente "
+"intenta adivinar esto basándose en el nombre del archivo, y puede que no lo "
+"haga bien para <filename>.emacs</filename>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2471
@@ -3310,6 +4533,8 @@ msgid ""
 "This file supports syntax highlighting for C, C++, Perl, Lisp and Scheme, by "
 "guessing the language from the filename."
 msgstr ""
+"Este archivo admite el resaltado de sintaxis para C, C ++, Perl, Lisp y "
+"Scheme, adivinando el idioma del nombre del archivo."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2487
@@ -3322,6 +4547,14 @@ msgid ""
 "feature of all is that <command>C-c C-c</command> will open up the source "
 "file in which the error occurred and jump to the appropriate line."
 msgstr ""
+"Emacs ya tiene una función predefinida llamada <function>next-error</"
+"function>. En una ventana de salida de compilación, esto le permite pasar de "
+"un error de compilación al siguiente haciendo <command>M-n</command>; "
+"Nosotros definimos una función complementaria, <function>previous-error</"
+"function>, que te permite ir a un error anterior haciendo <command>M-p</"
+"command>. La mejor característica de todas es que <command>C-c C-c</command> "
+"abrirá el archivo de origen en el que se produjo el error y saltará a la "
+"línea correspondiente."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2500
@@ -3329,12 +4562,17 @@ msgid ""
 "We enable Emacs's ability to act as a server, so that if you are doing "
 "something outside Emacs and you want to edit a file, you can just type in"
 msgstr ""
+"Habilitamos la capacidad de Emacs para actuar como servidor, de modo que si "
+"está haciendo algo fuera de Emacs y desea editar un archivo, simplemente "
+"escriba"
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:2504
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>emacsclient <replaceable>filename</replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>emacsclient "
+"<replaceable>filename</replaceable></userinput>"
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:2507
@@ -3343,11 +4581,14 @@ msgid ""
 "<literal>emacsclient</literal> so this happens every time they need to edit "
 "a file."
 msgstr ""
+"Muchos usuarios de Emacs establecen su <envar>EDITOR</envar> entorno a "
+"<literal>emacsclient</literal> por lo que esto sucede cada vez que necesitan "
+"editar un archivo."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2506
 msgid "and then you can edit the file in your Emacs!<_:footnote-1/>"
-msgstr ""
+msgstr "y luego puede editar el archivo en su Emacs!<_:footnote-1/>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:2518
@@ -3637,11 +4878,300 @@ msgid ""
 ";; All done\n"
 "(message \"All done, %s%s\" (user-login-name) \".\")"
 msgstr ""
+";; - * - Emacs-Lisp - * -\n"
+"\n"
+";; Este archivo está diseñado para ser reevaluado; usar la variable por "
+"primera vez\n"
+";; para evitar problemas con esto.\n"
+"(defvar la primera vez t\n"
+"   \"Bandera que significa que esta es la primera vez que se ha evaluado ."
+"emacs\")\n"
+"\n"
+";; Meta\n"
+"(global-set-key \"\\M- \" 'set-mark-command)\n"
+"(global-set-key \"\\M-\\C-h\" 'backward-kill-word)\n"
+"(global-set-key \"\\M-\\C-r\" 'query-replace)\n"
+"(global-set-key \"\\M-r\" 'replace-string)\n"
+"(global-set-key \"\\M-g\" 'goto-line)\n"
+"(global-set-key \"\\M-h\" 'help-command)\n"
+"\n"
+";; Function keys\n"
+"(global-set-key [f1] 'manual-entry)\n"
+"(global-set-key [f2] 'info)\n"
+"(global-set-key [f3] 'repeat-complex-command)\n"
+"(global-set-key [f4] 'advertised-undo)\n"
+"(global-set-key [f5] 'eval-current-buffer)\n"
+"(global-set-key [f6] 'buffer-menu)\n"
+"(global-set-key [f7] 'other-window)\n"
+"(global-set-key [f8] 'find-file)\n"
+"(global-set-key [f9] 'save-buffer)\n"
+"(global-set-key [f10] 'next-error)\n"
+"(global-set-key [f11] 'compile)\n"
+"(global-set-key [f12] 'grep)\n"
+"(global-set-key [C-f1] 'compile)\n"
+"(global-set-key [C-f2] 'grep)\n"
+"(global-set-key [C-f3] 'next-error)\n"
+"(global-set-key [C-f4] 'previous-error)\n"
+"(global-set-key [C-f5] 'display-faces)\n"
+"(global-set-key [C-f8] 'dired)\n"
+"(global-set-key [C-f10] 'kill-compilation)\n"
+"\n"
+";; Keypad bindings\n"
+"(global-set-key [up] \"\\C-p\")\n"
+"(global-set-key [down] \"\\C-n\")\n"
+"(global-set-key [left] \"\\C-b\")\n"
+"(global-set-key [right] \"\\C-f\")\n"
+"(global-set-key [home] \"\\C-a\")\n"
+"(global-set-key [end] \"\\C-e\")\n"
+"(global-set-key [prior] \"\\M-v\")\n"
+"(global-set-key [next] \"\\C-v\")\n"
+"(global-set-key [C-up] \"\\M-\\C-b\")\n"
+"(global-set-key [C-down] \"\\M-\\C-f\")\n"
+"(global-set-key [C-left] \"\\M-b\")\n"
+"(global-set-key [C-right] \"\\M-f\")\n"
+"(global-set-key [C-home] \"\\M-&lt;\")\n"
+"(global-set-key [C-end] \"\\M-&gt;\")\n"
+"(global-set-key [C-prior] \"\\M-&lt;\")\n"
+"(global-set-key [C-next] \"\\M-&gt;\")\n"
+"\n"
+";; Mouse\n"
+"(global-set-key [mouse-3] 'imenu)\n"
+"\n"
+";; Misc\n"
+"(global-set-key [C-tab] \"\\C-q\\t\")\t; Control tab quotes a tab.\n"
+"(setq backup-by-copying-when-mismatch t)\n"
+"\n"
+";; Treat 'y' or &lt;CR&gt; as yes, 'n' as no.\n"
+"(fset 'yes-or-no-p 'y-or-n-p)\n"
+"(define-key query-replace-map [return] 'act)\n"
+"(define-key query-replace-map [?\\C-m] 'act)\n"
+"\n"
+";; Load packages\n"
+"(require 'desktop)\n"
+"(require 'tar-mode)\n"
+"\n"
+";; Pretty diff mode\n"
+"(autoload 'ediff-buffers \"ediff\" \"Intelligent Emacs interface to diff\" t)"
+"\n"
+"(autoload 'ediff-files \"ediff\" \"Intelligent Emacs interface to diff\" t)\n"
+"(autoload 'ediff-files-remote \"ediff\"\n"
+"  \"Intelligent Emacs interface to diff\")\n"
+"\n"
+"(if first-time\n"
+"    (setq auto-mode-alist\n"
+"\t  (append '((\"\\\\.cpp$\" . c++-mode)\n"
+"\t\t    (\"\\\\.hpp$\" . c++-mode)\n"
+"\t\t    (\"\\\\.lsp$\" . lisp-mode)\n"
+"\t\t    (\"\\\\.scm$\" . scheme-mode)\n"
+"\t\t    (\"\\\\.pl$\" . perl-mode)\n"
+"\t\t    ) auto-mode-alist)))\n"
+"\n"
+";; Auto font lock mode\n"
+"(defvar font-lock-auto-mode-list\n"
+"  (list 'c-mode 'c++-mode 'c++-c-mode 'emacs-lisp-mode 'lisp-mode 'perl-mode "
+"'scheme-mode)\n"
+"  \"List of modes to always start in font-lock-mode\")\n"
+"\n"
+"(defvar font-lock-mode-keyword-alist\n"
+"  '((c++-c-mode . c-font-lock-keywords)\n"
+"    (perl-mode . perl-font-lock-keywords))\n"
+"  \"Associations between modes and keywords\")\n"
+"\n"
+"(defun font-lock-auto-mode-select ()\n"
+"  \"Automatically select font-lock-mode if the current major mode is in font-"
+"lock-auto-mode-list\"\n"
+"  (if (memq major-mode font-lock-auto-mode-list)\n"
+"      (progn\n"
+"\t(font-lock-mode t))\n"
+"    )\n"
+"  )\n"
+"\n"
+"(global-set-key [M-f1] 'font-lock-fontify-buffer)\n"
+"\n"
+";; New dabbrev stuff\n"
+";(require 'new-dabbrev)\n"
+"(setq dabbrev-always-check-other-buffers t)\n"
+"(setq dabbrev-abbrev-char-regexp \"\\\\sw\\\\|\\\\s_\")\n"
+"(add-hook 'emacs-lisp-mode-hook\n"
+"\t  '(lambda ()\n"
+"\t     (set (make-local-variable 'dabbrev-case-fold-search) nil)\n"
+"\t     (set (make-local-variable 'dabbrev-case-replace) nil)))\n"
+"(add-hook 'c-mode-hook\n"
+"\t  '(lambda ()\n"
+"\t     (set (make-local-variable 'dabbrev-case-fold-search) nil)\n"
+"\t     (set (make-local-variable 'dabbrev-case-replace) nil)))\n"
+"(add-hook 'text-mode-hook\n"
+"\t  '(lambda ()\n"
+"\t     (set (make-local-variable 'dabbrev-case-fold-search) t)\n"
+"\t     (set (make-local-variable 'dabbrev-case-replace) t)))\n"
+"\n"
+";; C++ and C mode...\n"
+"(defun my-c++-mode-hook ()\n"
+"  (setq tab-width 4)\n"
+"  (define-key c++-mode-map \"\\C-m\" 'reindent-then-newline-and-indent)\n"
+"  (define-key c++-mode-map \"\\C-ce\" 'c-comment-edit)\n"
+"  (setq c++-auto-hungry-initial-state 'none)\n"
+"  (setq c++-delete-function 'backward-delete-char)\n"
+"  (setq c++-tab-always-indent t)\n"
+"  (setq c-indent-level 4)\n"
+"  (setq c-continued-statement-offset 4)\n"
+"  (setq c++-empty-arglist-indent 4))\n"
+"\n"
+"(defun my-c-mode-hook ()\n"
+"  (setq tab-width 4)\n"
+"  (define-key c-mode-map \"\\C-m\" 'reindent-then-newline-and-indent)\n"
+"  (define-key c-mode-map \"\\C-ce\" 'c-comment-edit)\n"
+"  (setq c-auto-hungry-initial-state 'none)\n"
+"  (setq c-delete-function 'backward-delete-char)\n"
+"  (setq c-tab-always-indent t)\n"
+";; BSD-ish indentation style\n"
+"  (setq c-indent-level 4)\n"
+"  (setq c-continued-statement-offset 4)\n"
+"  (setq c-brace-offset -4)\n"
+"  (setq c-argdecl-indent 0)\n"
+"  (setq c-label-offset -4))\n"
+"\n"
+";; Perl mode\n"
+"(defun my-perl-mode-hook ()\n"
+"  (setq tab-width 4)\n"
+"  (define-key c++-mode-map \"\\C-m\" 'reindent-then-newline-and-indent)\n"
+"  (setq perl-indent-level 4)\n"
+"  (setq perl-continued-statement-offset 4))\n"
+"\n"
+";; Scheme mode...\n"
+"(defun my-scheme-mode-hook ()\n"
+"  (define-key scheme-mode-map \"\\C-m\" 'reindent-then-newline-and-indent))\n"
+"\n"
+";; Emacs-Lisp mode...\n"
+"(defun my-lisp-mode-hook ()\n"
+"  (define-key lisp-mode-map \"\\C-m\" 'reindent-then-newline-and-indent)\n"
+"  (define-key lisp-mode-map \"\\C-i\" 'lisp-indent-line)\n"
+"  (define-key lisp-mode-map \"\\C-j\" 'eval-print-last-sexp))\n"
+"\n"
+";; Add all of the hooks...\n"
+"(add-hook 'c++-mode-hook 'my-c++-mode-hook)\n"
+"(add-hook 'c-mode-hook 'my-c-mode-hook)\n"
+"(add-hook 'scheme-mode-hook 'my-scheme-mode-hook)\n"
+"(add-hook 'emacs-lisp-mode-hook 'my-lisp-mode-hook)\n"
+"(add-hook 'lisp-mode-hook 'my-lisp-mode-hook)\n"
+"(add-hook 'perl-mode-hook 'my-perl-mode-hook)\n"
+"\n"
+";; Complement to next-error\n"
+"(defun previous-error (n)\n"
+"  \"Visit previous compilation error message and corresponding source code.\""
+"\n"
+"  (interactive \"p\")\n"
+"  (next-error (- n)))\n"
+"\n"
+";; Misc...\n"
+"(transient-mark-mode 1)\n"
+"(setq mark-even-if-inactive t)\n"
+"(setq visible-bell nil)\n"
+"(setq next-line-add-newlines nil)\n"
+"(setq compile-command \"make\")\n"
+"(setq suggest-key-bindings nil)\n"
+"(put 'eval-expression 'disabled nil)\n"
+"(put 'narrow-to-region 'disabled nil)\n"
+"(put 'set-goal-column 'disabled nil)\n"
+"(if (&gt;= emacs-major-version 21)\n"
+"\t(setq show-trailing-whitespace t))\n"
+"\n"
+";; Elisp archive searching\n"
+"(autoload 'format-lisp-code-directory \"lispdir\" nil t)\n"
+"(autoload 'lisp-dir-apropos \"lispdir\" nil t)\n"
+"(autoload 'lisp-dir-retrieve \"lispdir\" nil t)\n"
+"(autoload 'lisp-dir-verify \"lispdir\" nil t)\n"
+"\n"
+";; Font lock mode\n"
+"(defun my-make-face (face color &amp;optional bold)\n"
+"  \"Create a face from a color and optionally make it bold\"\n"
+"  (make-face face)\n"
+"  (copy-face 'default face)\n"
+"  (set-face-foreground face color)\n"
+"  (if bold (make-face-bold face))\n"
+"  )\n"
+"\n"
+"(if (eq window-system 'x)\n"
+"    (progn\n"
+"      (my-make-face 'blue \"blue\")\n"
+"      (my-make-face 'red \"red\")\n"
+"      (my-make-face 'green \"dark green\")\n"
+"      (setq font-lock-comment-face 'blue)\n"
+"      (setq font-lock-string-face 'bold)\n"
+"      (setq font-lock-type-face 'bold)\n"
+"      (setq font-lock-keyword-face 'bold)\n"
+"      (setq font-lock-function-name-face 'red)\n"
+"      (setq font-lock-doc-string-face 'green)\n"
+"      (add-hook 'find-file-hooks 'font-lock-auto-mode-select)\n"
+"\n"
+"      (setq baud-rate 1000000)\n"
+"      (global-set-key \"\\C-cmm\" 'menu-bar-mode)\n"
+"      (global-set-key \"\\C-cms\" 'scroll-bar-mode)\n"
+"      (global-set-key [backspace] 'backward-delete-char)\n"
+"\t\t\t\t\t;      (global-set-key [delete] 'delete-char)\n"
+"      (standard-display-european t)\n"
+"      (load-library \"iso-transl\")))\n"
+"\n"
+";; X11 or PC using direct screen writes\n"
+"(if window-system\n"
+"    (progn\n"
+"      ;;      (global-set-key [M-f1] 'hilit-repaint-command)\n"
+"      ;;      (global-set-key [M-f2] [?\\C-u M-f1])\n"
+"      (setq hilit-mode-enable-list\n"
+"\t    '(not text-mode c-mode c++-mode emacs-lisp-mode lisp-mode\n"
+"\t\t  scheme-mode)\n"
+"\t    hilit-auto-highlight nil\n"
+"\t    hilit-auto-rehighlight 'visible\n"
+"\t    hilit-inhibit-hooks nil\n"
+"\t    hilit-inhibit-rebinding t)\n"
+"      (require 'hilit19)\n"
+"      (require 'paren))\n"
+"  (setq baud-rate 2400)\t\t\t; For slow serial connections\n"
+"  )\n"
+"\n"
+";; TTY type terminal\n"
+"(if (and (not window-system)\n"
+"\t (not (equal system-type 'ms-dos)))\n"
+"    (progn\n"
+"      (if first-time\n"
+"\t  (progn\n"
+"\t    (keyboard-translate ?\\C-h ?\\C-?)\n"
+"\t    (keyboard-translate ?\\C-? ?\\C-h)))))\n"
+"\n"
+";; Under UNIX\n"
+"(if (not (equal system-type 'ms-dos))\n"
+"    (progn\n"
+"      (if first-time\n"
+"\t  (server-start))))\n"
+"\n"
+";; Add any face changes here\n"
+"(add-hook 'term-setup-hook 'my-term-setup-hook)\n"
+"(defun my-term-setup-hook ()\n"
+"  (if (eq window-system 'pc)\n"
+"      (progn\n"
+";;\t(set-face-background 'default \"red\")\n"
+"\t)))\n"
+"\n"
+";; Restore the \"desktop\" - do this as late as possible\n"
+"(if first-time\n"
+"    (progn\n"
+"      (desktop-load-default)\n"
+"      (desktop-read)))\n"
+"\n"
+";; Indicate that this file has been read at least once\n"
+"(setq first-time nil)\n"
+"\n"
+";; No need to debug anything now\n"
+"\n"
+"(setq debug-on-error nil)\n"
+"\n"
+";; All done\n"
+"(message \"All done, %s%s\" (user-login-name) \".\")"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:2805
 msgid "Extending the Range of Languages Emacs Understands"
-msgstr ""
+msgstr "Ampliando la gama de lenguajes que comprende Emacs"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2808
@@ -3651,6 +5181,10 @@ msgid ""
 "Scheme), but what happens if a new language called <quote>whizbang</quote> "
 "comes out, full of exciting features?"
 msgstr ""
+"Ahora, todo esto está muy bien si solo desea programar en los idiomas que ya "
+"se ofrecen en <filename>.emacs</filename> (C, C ++, Perl, Lisp y Scheme), "
+"pero ¿qué sucede si un nuevo lenguaje llamado <quote>whizbang</quote> sale, "
+"lleno de características interesantes?"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2815
@@ -3660,12 +5194,18 @@ msgid ""
 "short for <quote>Emacs Lisp</quote>. For example, if whizbang is a FreeBSD "
 "port, we can locate these files by doing"
 msgstr ""
+"Lo primero que debe hacer es averiguar si whizbang viene con algún archivo "
+"que le diga a Emacs sobre el idioma. Estos suelen terminar en <filename>.el</"
+"filename>, corto para <quote>Emacs Lisp</quote>.Por ejemplo, si whizbang es "
+"un puerto FreeBSD, podemos localizar estos archivos haciendo"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:2821
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>find /usr/ports/lang/whizbang -name \"*.el\" -print</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>find /usr/ports/lang/whizbang -name \"*.el\" "
+"-print</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2823
@@ -3673,28 +5213,32 @@ msgid ""
 "and install them by copying them into the Emacs site Lisp directory. On "
 "FreeBSD, this is <filename>/usr/local/share/emacs/site-lisp</filename>."
 msgstr ""
+"e instalarlos copiándolos en el directorio Lisp del sitio de Emacs. En "
+"FreeBSD, esto es <filename>/usr/local/share/emacs/site-lisp</filename>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2827
 msgid "So for example, if the output from the find command was"
-msgstr ""
+msgstr "Entonces, por ejemplo, si la salida del comando de búsqueda fue"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:2830
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "/usr/ports/lang/whizbang/work/misc/whizbang.el"
-msgstr ""
+msgstr "/usr/ports/lang/whizbang/work/misc/whizbang.el"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2832
 msgid "we would do"
-msgstr ""
+msgstr "Nosotros hariamos"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:2834
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>cp /usr/ports/lang/whizbang/work/misc/whizbang.el /usr/local/share/emacs/site-lisp</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cp /usr/ports/lang/whizbang/work/misc/"
+"whizbang.el /usr/local/share/emacs/site-lisp</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2836
@@ -3705,6 +5249,11 @@ msgid ""
 "Emacs will be able to use the information in <filename>whizbang.el</"
 "filename>."
 msgstr ""
+"A continuación, debemos decidir qué extensión tienen los archivos de origen "
+"de whizbang. Digamos por el bien del argumento que todos terminan en "
+"<filename>.wiz</filename>.Necesitamos agregar una entrada a nuestro "
+"<filename>.emacs</filename> para asegurarse de que Emacs pueda usar la "
+"información en <filename>whizbang.el</filename>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2843
@@ -3712,10 +5261,12 @@ msgid ""
 "Find the <symbol>auto-mode-alist entry</symbol> in <filename>.emacs</"
 "filename> and add a line for whizbang, such as:"
 msgstr ""
+"Encuentra el <symbol>auto-mode-alist entry</symbol>en<filename>.emacs</"
+"filename> y agregue una línea para whizbang, como:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:2847
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<lineannotation>…</lineannotation>\n"
 "(\"\\\\.lsp$\" . lisp-mode)\n"
@@ -3723,6 +5274,11 @@ msgid ""
 "(\"\\\\.scm$\" . scheme-mode)\n"
 "<lineannotation>…</lineannotation>"
 msgstr ""
+"<lineannotation>…</lineannotation>\n"
+"(\"\\\\.lsp$\" . lisp-mode)\n"
+"(\"\\\\.wiz$\" . whizbang-mode)\n"
+"(\"\\\\.scm$\" . scheme-mode)\n"
+"<lineannotation>…</lineannotation>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2853
@@ -3730,6 +5286,8 @@ msgid ""
 "This means that Emacs will automatically go into <function>whizbang-mode</"
 "function> when you edit a file ending in <filename>.wiz</filename>."
 msgstr ""
+"Esto significa que Emacs entrará automáticamente en <function>whizbang-mode</"
+"function> cuando edita un archivo que termina en <filename>.wiz</filename>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2857
@@ -3737,16 +5295,23 @@ msgid ""
 "Just below this, you will find the <symbol>font-lock-auto-mode-list</symbol> "
 "entry. Add <function>whizbang-mode</function> to it like so:"
 msgstr ""
+"Justo debajo de esto, encontrará el <symbol>font-lock-auto-mode-list</"
+"symbol> entrada. agregada <function>whizbang-</function>mode a él así:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:2861
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 ";; Auto font lock mode\n"
 "(defvar font-lock-auto-mode-list\n"
 "  (list 'c-mode 'c++-mode 'c++-c-mode 'emacs-lisp-mode 'whizbang-mode 'lisp-mode 'perl-mode 'scheme-mode)\n"
 "  \"List of modes to always start in font-lock-mode\")"
 msgstr ""
+";; Auto font lock mode\n"
+"(defvar font-lock-auto-mode-list\n"
+"  (list 'c-mode 'c++-mode 'c++-c-mode 'emacs-lisp-mode 'whizbang-mode 'lisp-"
+"mode 'perl-mode 'scheme-mode)\n"
+"  \"List of modes to always start in font-lock-mode\")"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2866
@@ -3754,6 +5319,9 @@ msgid ""
 "This means that Emacs will always enable <function>font-lock-mode</function> "
 "(ie syntax highlighting) when editing a <filename>.wiz</filename> file."
 msgstr ""
+"Esto significa que Emacs siempre habilitará <function>font-lock-mode</"
+"function> (es decir, resaltado de sintaxis) al editar un <filename>."
+"wiz</filename>archivo."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2870
@@ -3763,11 +5331,16 @@ msgid ""
 "<function>whizbang-mode hook</function> (see <function>my-scheme-mode-hook</"
 "function> for a simple example that adds <function>auto-indent</function>)."
 msgstr ""
+"Y eso es todo lo que se necesita. Si hay algo más que desee que se haga "
+"automáticamente al abrir<filename>.wiz</filename>. usted puede agregar a "
+"<function>whizbang-mode hook</function> (mire <function>my-scheme-mode-hook</"
+"function> para un ejemplo simple que agrega <function>auto-"
+"indent</function>)."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:2880
 msgid "Further Reading"
-msgstr ""
+msgstr "Otras lecturas"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2882
@@ -3777,67 +5350,94 @@ msgid ""
 "<citerefentry><refentrytitle>development</refentrytitle><manvolnum>7</"
 "manvolnum></citerefentry>."
 msgstr ""
+"Para obtener información sobre cómo configurar un entorno de desarrollo para "
+"contribuir con arreglos a FreeBSD, consulte <citerefentry><refentrytitle>deve"
+"lopment</refentrytitle><manvolnum>7</manvolnum></citerefentry>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2888
+#, fuzzy
 msgid ""
 "Brian Harvey and Matthew Wright <emphasis>Simply Scheme</emphasis> MIT 1994. "
 "ISBN 0-262-08226-8"
 msgstr ""
+"Brian Harvey and Matthew Wright <emphasis>Simply Scheme</emphasis> MIT 1994. "
+"ISBN 0-262-08226-8"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2895
+#, fuzzy
 msgid ""
 "Randall Schwartz <emphasis>Learning Perl</emphasis> O'Reilly 1993 ISBN "
 "1-56592-042-2"
 msgstr ""
+"Randall Schwartz <emphasis>Learning Perl</emphasis> O'Reilly 1993 ISBN "
+"1-56592-042-2"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2902
+#, fuzzy
 msgid ""
 "Patrick Henry Winston and Berthold Klaus Paul Horn <emphasis>Lisp (3rd "
 "Edition)</emphasis> Addison-Wesley 1989 ISBN 0-201-08319-1"
 msgstr ""
+"Patrick Henry Winston and Berthold Klaus Paul Horn <emphasis>Lisp (3rd "
+"Edition)</emphasis> Addison-Wesley 1989 ISBN 0-201-08319-1"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2909
+#, fuzzy
 msgid ""
 "Brian W. Kernighan and Rob Pike <emphasis>The Unix Programming Environment</"
 "emphasis> Prentice-Hall 1984 ISBN 0-13-937681-X"
 msgstr ""
+"Brian W. Kernighan and Rob Pike <emphasis>The Unix Programming Environment</"
+"emphasis> Prentice-Hall 1984 ISBN 0-13-937681-X"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2916
+#, fuzzy
 msgid ""
 "Brian W. Kernighan and Dennis M. Ritchie <emphasis>The C Programming "
 "Language (2nd Edition)</emphasis> Prentice-Hall 1988 ISBN 0-13-110362-8"
 msgstr ""
+"Brian W. Kernighan and Dennis M. Ritchie <emphasis>The C Programming "
+"Language (2nd Edition)</emphasis> Prentice-Hall 1988 ISBN 0-13-110362-8"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2923
+#, fuzzy
 msgid ""
 "Bjarne Stroustrup <emphasis>The C++ Programming Language</emphasis> Addison-"
 "Wesley 1991 ISBN 0-201-53992-6"
 msgstr ""
+"Bjarne Stroustrup <emphasis>The C++ Programming Language</emphasis> Addison-"
+"Wesley 1991 ISBN 0-201-53992-6"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2930
+#, fuzzy
 msgid ""
 "W. Richard Stevens <emphasis>Advanced Programming in the Unix Environment</"
 "emphasis> Addison-Wesley 1992 ISBN 0-201-56317-7"
 msgstr ""
+"W. Richard Stevens <emphasis>Advanced Programming in the Unix Environment</"
+"emphasis> Addison-Wesley 1992 ISBN 0-201-56317-7"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2937
+#, fuzzy
 msgid ""
 "W. Richard Stevens <emphasis>Unix Network Programming</emphasis> Prentice-"
 "Hall 1990 ISBN 0-13-949876-1"
 msgstr ""
+"W. Richard Stevens <emphasis>Unix Network Programming</emphasis> Prentice-"
+"Hall 1990 ISBN 0-13-949876-1"
 
 #. (itstool) path: info/title
 #: book.translate.xml:2954
 msgid "Secure Programming"
-msgstr ""
+msgstr "Programación segura"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2964
@@ -3847,11 +5447,15 @@ msgid ""
 "some of the new tools available to help programmers avoid writing "
 "exploitable code."
 msgstr ""
+"Este capítulo describe algunos de los problemas de seguridad que han plagado "
+"<trademark class=\"registered\">UNIX</trademark> programadores durante "
+"décadas y algunas de las nuevas herramientas disponibles para ayudar a los "
+"programadores a evitar escribir código explotable."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:2970
 msgid "Secure Design Methodology"
-msgstr ""
+msgstr "Metodología de diseño seguro"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2973
@@ -3863,6 +5467,12 @@ msgid ""
 "code should be reused whenever possible to avoid common mistakes that others "
 "may have already fixed."
 msgstr ""
+"Escribir aplicaciones seguras requiere una perspectiva de la vida muy "
+"escrutadora y pesimista. Las aplicaciones deben ejecutarse con el principio "
+"de <quote>privilegios mínimos</quote>de modo que ningún proceso se ejecute "
+"nunca con más del acceso mínimo que necesita para cumplir su función. El "
+"código previamente probado debe reutilizarse siempre que sea posible para "
+"evitar errores comunes que otros ya hayan solucionado."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2981
@@ -20285,5 +21895,6 @@ msgstr ""
 
 #. (itstool) path: biblioentry/citetitle
 #: book.translate.xml:14923
+#, fuzzy
 msgid "strlcpy and strlcat -- consistent, safe string copy and concatenation."
-msgstr ""
+msgstr "strlcpy and strlcat -- consistent, safe string copy and concatenation."
