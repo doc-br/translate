@@ -4,39 +4,46 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-11-16 21:29-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-12-13 00:05+0000\n"
+"Last-Translator: Aaron H Farías Martinez <timido@ubuntu.com>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/boooks_porters-handbook/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr ""
+msgstr "Aaron H Farias Martinez Timido@ubuntu.com 2020,"
 
 #. (itstool) path: info/title
 #: book.translate.xml:39
 msgid "FreeBSD Porter's Handbook"
-msgstr ""
+msgstr "Manual de FreeBSD Porter"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:42
 msgid "<orgname>The FreeBSD Documentation Project</orgname>"
-msgstr ""
+msgstr "<orgname>El Proyecto de Documentación de FreeBSD</orgname>"
 
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: book.translate.xml:47 book.translate.xml:135
+#, fuzzy
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/books/porters-handbook/book.xml 53742 "
 "2020-01-03 04:51:06Z linimon $"
 msgstr ""
+"$FreeBSD: head/en_US.ISO8859-1/books/porters-handbook/book.xml 53742 2020-01-"
+"03 04:51:06Z linimon $"
 
 #. (itstool) path: info/copyright
 #: book.translate.xml:49
+#, fuzzy
 msgid ""
 "<year>2000</year> <year>2001</year> <year>2002</year> <year>2003</year> "
 "<year>2004</year> <year>2005</year> <year>2006</year> <year>2007</year> "
@@ -46,11 +53,18 @@ msgid ""
 "<year>2020</year> <holder role=\"mailto:doc@FreeBSD.org\">The FreeBSD "
 "Documentation Project</holder>"
 msgstr ""
+"<year>2000</year> <year>2001</year> <year>2002</year> <year>2003</year> "
+"<year>2004</year> <year>2005</year> <year>2006</year> <year>2007</year> "
+"<year>2008</year> <year>2009</year> <year>2010</year> <year>2011</year> "
+"<year>2012</year> <year>2013</year> <year>2014</year> <year>2015</year> "
+"<year>2016</year> <year>2017</year> <year>2018</year> <year>2019</year> "
+"<year>2020</year> <holder role=\"mailto:doc@FreeBSD.org\">The FreeBSD "
+"Documentation Project</holder>"
 
 #. (itstool) path: legalnotice/title
 #: book.translate.xml:77
 msgid "Copyright"
-msgstr ""
+msgstr "Derechos de autor"
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:79
@@ -59,6 +73,9 @@ msgid ""
 "HTML, PDF, PostScript, RTF and so forth) with or without modification, are "
 "permitted provided that the following conditions are met:"
 msgstr ""
+"Se permite la redistribución y el uso en fuentes (XML DocBook) y formularios "
+"'compilados' (XML, HTML, PDF, PostScript, RTF, etc.) con o sin modificación, "
+"siempre que se cumplan las siguientes condiciones:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:86
@@ -67,6 +84,10 @@ msgid ""
 "notice, this list of conditions and the following disclaimer as the first "
 "lines of this file unmodified."
 msgstr ""
+"Las redistribuciones del código fuente (XML DocBook) deben conservar el "
+"aviso de derechos de autor anterior, esta lista de condiciones y el "
+"siguiente descargo de responsabilidad como las primeras líneas de este "
+"archivo sin modificar."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:92
@@ -76,6 +97,11 @@ msgid ""
 "notice, this list of conditions and the following disclaimer in the "
 "documentation and/or other materials provided with the distribution."
 msgstr ""
+"Las redistribuciones en forma compilada (transformadas a otras DTD, "
+"convertidas a PDF, PostScript, RTF y otros formatos) deben reproducir el "
+"aviso de derechos de autor anterior, esta lista de condiciones y la "
+"siguiente exención de responsabilidad en la documentación y / u otros "
+"materiales proporcionados con la distribución."
 
 #. (itstool) path: important/para
 #: book.translate.xml:101
@@ -92,11 +118,22 @@ msgid ""
 "ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF "
 "THE POSSIBILITY OF SUCH DAMAGE."
 msgstr ""
+"ESTA DOCUMENTACIÓN ES PROPORCIONADA POR FREEBSD DOCUMENTATION PROJECT \"TAL "
+"CUAL\" Y CUALQUIER GARANTÍA EXPRESA O IMPLÍCITA, INCLUYENDO, PERO NO "
+"LIMITADO A, LAS GARANTÍAS IMPLÍCITAS DE COMERCIABILIDAD E IDONEIDAD PARA UN "
+"PROPÓSITO EN PARTICULAR SE RECHAZA. EN NINGÚN CASO EL PROYECTO DE "
+"DOCUMENTACIÓN FREEBSD SERÁ RESPONSABLE DE NINGÚN DAÑO DIRECTO, INDIRECTO, "
+"INCIDENTAL, ESPECIAL, EJEMPLAR O CONSECUENTE (INCLUYENDO, PERO NO LIMITADO "
+"A, LA ADQUISICIÓN DE BIENES O SERVICIOS SUSTITUTOS; PÉRDIDA DE USO, DATOS O "
+"BENEFICIOS; O INTERRUPCIÓN COMERCIAL) SIN EMBARGO Y SOBRE CUALQUIER TEORÍA "
+"DE RESPONSABILIDAD, YA SEA POR CONTRATO, RESPONSABILIDAD ESTRICTA O AGRAVIO ("
+"INCLUYENDO NEGLIGENCIA O DE OTRA MANERA) QUE SURJA DE CUALQUIER MANERA DEL "
+"USO DE ESTA DOCUMENTACIÓN, AUNQUE SE INDIQUE LA POSIBILIDAD DE DICHO DAÑO."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:118
 msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
-msgstr ""
+msgstr "FreeBSD es una marca registrada de FreeBSD Foundation."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:120
@@ -104,6 +141,8 @@ msgid ""
 "UNIX is a registered trademark of The Open Group in the United States and "
 "other countries."
 msgstr ""
+"UNIX es una marca registrada de The Open Group en Estados Unidos y otros "
+"países."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:122
@@ -113,6 +152,10 @@ msgid ""
 "registered trademarks of Sun Microsystems, Inc. in the United States and "
 "other countries."
 msgstr ""
+"Sun, Sun Microsystems, Java, Java Virtual Machine, JDK, JRE, JSP, JVM, "
+"Netra, OpenJDK, Solaris, StarOffice, SunOS y VirtualBox son marcas "
+"comerciales o marcas comerciales registradas de Sun Microsystems, Inc. en "
+"los Estados Unidos y otros países."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:127
@@ -123,6 +166,11 @@ msgid ""
 "designations have been followed by the <quote>™</quote> or the <quote>®</"
 "quote> symbol."
 msgstr ""
+"Muchas de las designaciones utilizadas por los fabricantes y vendedores para "
+"distinguir sus productos se reclaman como marcas comerciales. Cuando esas "
+"designaciones aparecen en este documento, y el Proyecto FreeBSD estaba al "
+"tanto del reclamo de marca registrada, las designaciones han sido seguidas "
+"por el<quote>™</quote> o el <quote>®</quote> símbolo."
 
 #. (itstool) path: chapter/title
 #. (itstool) path: sect2/title
@@ -130,7 +178,7 @@ msgstr ""
 #: book.translate.xml:146 book.translate.xml:11323 book.translate.xml:15198
 #: book.translate.xml:15688 book.translate.xml:20500
 msgid "Introduction"
-msgstr ""
+msgstr "Introducción"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:148
@@ -140,6 +188,10 @@ msgid ""
 "is primarily a volunteer effort. It is important to keep this in mind when "
 "reading this document."
 msgstr ""
+"La colección de puertos de FreeBSD es la forma en que casi todo el mundo "
+"instala aplicaciones (\"puertos\") en FreeBSD. Como todo lo demás sobre "
+"FreeBSD, es principalmente un esfuerzo voluntario. Es importante tener esto "
+"en cuenta al leer este documento."
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:153
@@ -147,16 +199,21 @@ msgid ""
 "In FreeBSD, anyone may submit a new port, or volunteer to maintain an "
 "existing unmaintained port. No special commit privilege is needed."
 msgstr ""
+"En FreeBSD, cualquiera puede enviar un nuevo puerto o ofrecerse como "
+"voluntario para mantener un puerto existente sin mantenimiento. No se "
+"necesitan privilegios especiales de confirmación."
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:168
 msgid "Making a New Port"
-msgstr ""
+msgstr "Hacer un puerto nuevo"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:170
 msgid "Interested in making a new port, or upgrading existing ports? Great!"
 msgstr ""
+"¿Está interesado en crear un nuevo puerto o actualizar los puertos "
+"existentes? ¡Excelente!"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:173
@@ -165,6 +222,9 @@ msgid ""
 "upgrade an existing port, read this, then read <xref linkend=\"port-upgrading"
 "\"/>."
 msgstr ""
+"Lo que sigue son algunas pautas para crear un nuevo puerto para FreeBSD. "
+"Para actualizar un puerto existente, lea esto y luego lea<xref linkend"
+"=\"port-upgrading\"/>."
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:177
@@ -176,6 +236,13 @@ msgid ""
 "questions can be sent to the <link xlink:href=\"http://lists.FreeBSD.org/"
 "mailman/listinfo/freebsd-ports\">FreeBSD ports mailing list</link>."
 msgstr ""
+"Cuando este documento no sea lo suficientemente detallado, consulte "
+"<filename>/usr/ports/Mk/bsd.port.mk</filename>, que está incluido en todos "
+"los puertos <filename>Makefile</filename>s. Incluso aquellos que no piratean "
+"<filename>Makefile</filename>s diariamente se puede obtener mucho "
+"conocimiento de ella. Además, se pueden enviar preguntas específicas al "
+"<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports\""
+">Lista de correo de puertos de FreeBSD/link>."
 
 #. (itstool) path: note/para
 #: book.translate.xml:185
@@ -192,6 +259,20 @@ msgid ""
 "correct value by typing <command>:set tabstop=4</command> once the file has "
 "been loaded."
 msgstr ""
+"Solo una fracción de las variables "
+"(<varname><replaceable>VAR</replaceable></varname>) que pueden anularse se "
+"mencionan en este documento. La mayoría (si no todos) están documentados al "
+"comienzo de <filename>/usr/ports/Mk/bsd.port.mk</filename>; los otros "
+"probablemente deberían serlo. Tenga en cuenta que este archivo utiliza una "
+"configuración de pestaña no estándar:<application>Emacs</application>y "
+"<application>Vim</application> reconocerá la configuración al cargar el "
+"archivo. Ambos "
+"<citerefentry><refentrytitle>vi</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> y "
+"<citerefentry><refentrytitle>ex</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> se puede configurar para usar el valor correcto "
+"escribiendo<command> :set tabstop=4</command> una vez que se ha cargado el "
+"archivo."
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:199
@@ -200,11 +281,14 @@ msgid ""
 "href=\"https://wiki.freebsd.org/WantedPorts\">list of requested ports</link> "
 "and see if you can work on one (or more)."
 msgstr ""
+"¿Busca algo fácil para empezar? Eche un vistazo a <link xlink:href=\"https"
+"://wiki.freebsd.org/WantedPorts\">lista de puertos solicitados</link> y vea "
+"si puede trabajar en uno (o más)."
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:214
 msgid "Quick Porting"
-msgstr ""
+msgstr "Portación rápida"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:216
@@ -213,6 +297,9 @@ msgid ""
 "where this quick method is not adequate, the full <quote>Slow Porting</"
 "quote> process is described in <xref linkend=\"slow-porting\"/>."
 msgstr ""
+"Esta sección describe cómo crear rápidamente un nuevo puerto. Para "
+"aplicaciones donde este método rápido no es adecuado, el <quote>portabilidad "
+"lenta</quote>El proceso se describe en<xref linkend=\"slow-porting\"/>."
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:221
@@ -220,6 +307,8 @@ msgid ""
 "First, get the original tarball and put it into <varname>DISTDIR</varname>, "
 "which defaults to <filename>/usr/ports/distfiles</filename>."
 msgstr ""
+"Primero, obtenga el tarball original y colóquelo en<varname>DISTDIR</"
+"varname>, que por defecto es <filename>/usr/ports/distfiles</filename>."
 
 #. (itstool) path: note/para
 #: book.translate.xml:226
@@ -229,6 +318,10 @@ msgid ""
 "FreeBSD system. If anything had to be changed, refer to <xref linkend=\"slow-"
 "porting\"/>."
 msgstr ""
+"Estos pasos asumen que el software se compiló de inmediato. En otras "
+"palabras, no se requirió absolutamente ningún cambio para que la aplicación "
+"funcione en un sistema FreeBSD. Si tuviera que cambiar algo, consulte<xref "
+"linkend=\"slow-porting\"/>."
 
 #. (itstool) path: note/para
 #: book.translate.xml:233
@@ -238,12 +331,17 @@ msgid ""
 "citerefentry> variable in <filename>/etc/make.conf</filename> before getting "
 "into porting."
 msgstr ""
+"Se recomienda configurar el <varname>DEVELOPER</varname>.<citerefentry><refen"
+"trytitle>make</refentrytitle><manvolnum>1</manvolnum></citerefentry>variable "
+"in<filename>/etc/make.conf</filename> antes de realizar la portabilidad."
 
 #. (itstool) path: note/screen
 #: book.translate.xml:237
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>echo DEVELOPER=yes &gt;&gt; /etc/make.conf</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>echo DEVELOPER=yes &gt;&gt; /etc/make."
+"conf</userinput>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:239
@@ -252,21 +350,24 @@ msgid ""
 "deprecation warnings and activates some further quality checks on calling "
 "<command>make</command>."
 msgstr ""
+"Este ajuste habilita <quote>developer mode </quote> que muestra advertencias "
+"de obsolescencia y activa algunos controles de calidad adicionales en las "
+"llamadas <command>make</command>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:245
 msgid "Writing the <filename>Makefile</filename>"
-msgstr ""
+msgstr "Escribiendo el <filename>Makefile</filename>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:247
 msgid ""
 "The minimal <filename>Makefile</filename> would look something like this:"
-msgstr ""
+msgstr "El mínimo <filename>Makefile</filename> se vería algo como esto:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:250
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "# $FreeBSD$\n"
 "\n"
@@ -280,6 +381,17 @@ msgid ""
 "\n"
 ".include &lt;bsd.port.mk&gt;"
 msgstr ""
+"# $FreeBSD$\n"
+"\n"
+"PORTNAME=\toneko\n"
+"DISTVERSION=\t1.1b\n"
+"CATEGORIES=\tgames\n"
+"MASTER_SITES=\tftp://ftp.cs.columbia.edu/archives/X11R5/contrib/\n"
+"\n"
+"MAINTAINER=\tyouremail@example.com\n"
+"COMMENT=\tCat chasing a mouse all over the screen\n"
+"\n"
+".include &lt;bsd.port.mk&gt;"
 
 #. (itstool) path: note/para
 #: book.translate.xml:263
@@ -289,6 +401,10 @@ msgid ""
 "date it was created. This additional information has been declared obsolete, "
 "and is being phased out."
 msgstr ""
+"en algunos casos, el <filename>Makefile</filename> de un puerto existente "
+"puede contener líneas adicionales en el encabezado, como el nombre del "
+"puerto y la fecha en que se creó. Esta información adicional ha sido "
+"declarada obsoleta y está siendo eliminada."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:270
@@ -299,11 +415,16 @@ msgid ""
 "ports tree. A more detailed example is shown in the <link linkend=\"porting-"
 "samplem\">sample Makefile</link> section."
 msgstr ""
+"Trate de averiguarlo. No se preocupe por el contenido del "
+"<literal>$FreeBSD$</literal> línea, se completará automáticamente por "
+"<application>Subversion</application> cuando el puerto se importa a nuestro "
+"árbol de puertos principal. Un ejemplo más detallado se muestra en el <link "
+"linkend=\"porting-samplem\">sample Makefile</link> sección."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:281
 msgid "Writing the Description Files"
-msgstr ""
+msgstr "Escribir los archivos de descripción"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:283
@@ -313,11 +434,16 @@ msgid ""
 "<filename>pkg-plist</filename>. Their <filename>pkg-</filename> prefix "
 "distinguishes them from other files."
 msgstr ""
+"Hay dos archivos de descripción que se requieren para cualquier puerto, ya "
+"sea que estén empaquetados o no. Son <filename>pkg-descr</filename> y "
+"<filename>pkg-plist</filename>. su <filename>pkg-</filename> El prefijo los "
+"distingue de otros archivos."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:291
+#, fuzzy
 msgid "<filename>pkg-descr</filename>"
-msgstr ""
+msgstr "<filename>pkg-descr</filename>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:293
@@ -325,6 +451,8 @@ msgid ""
 "This is a longer description of the port. One to a few paragraphs concisely "
 "explaining what the port does is sufficient."
 msgstr ""
+"Esta es una descripción más extensa del puerto. Uno o unos pocos párrafos "
+"explicando de forma concisa lo que hace el puerto es suficiente."
 
 #. (itstool) path: note/para
 #: book.translate.xml:298
@@ -336,6 +464,12 @@ msgid ""
 "example, manpages have justified spacing, which looks particularly bad with "
 "monospaced fonts."
 msgstr ""
+"Esto es <emphasis>no</emphasis> un manual o una descripción detallada sobre "
+"cómo utilizar o compilar el puerto!<emphasis>Tenga cuidado al copiar desde "
+"el<filename>README</filename>o página de manual</emphasis>. Con demasiada "
+"frecuencia, no son una descripción concisa del puerto o están en un formato "
+"extraño. Por ejemplo, las páginas de manual tienen espacios justificados, lo "
+"que se ve particularmente mal con fuentes monoespaciadas."
 
 #. (itstool) path: note/para
 #: book.translate.xml:307
@@ -345,6 +479,10 @@ msgid ""
 "varname></link> line from the Makefile. It must explain in more depth what "
 "the port is all about."
 msgstr ""
+"Por otro lado, el contenido de <filename>pkg-descr</filename> Debe ser más "
+"largo que el<link linkend=\"makefile-comment\""
+"><varname>COMENTARIO</varname></link> línea del Makefile. Debe explicar con "
+"más profundidad de qué se trata el puerto."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:313
@@ -357,6 +495,14 @@ msgid ""
 "implementation languages help users decide whether this port will work for "
 "them."
 msgstr ""
+"Un bien escrito <filename>pkg-descr</filename> describe el puerto lo "
+"suficientemente completo como para que los usuarios no tengan que consultar "
+"la documentación o visitar el sitio web para comprender qué hace el "
+"software, cómo puede ser útil o qué características particularmente "
+"interesantes tiene. La mención de ciertos requisitos, como un conjunto de "
+"herramientas gráficas, dependencias pesadas, entorno de ejecución o "
+"lenguajes de implementación, ayuda a los usuarios a decidir si este puerto "
+"funcionará para ellos."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:322
@@ -367,6 +513,11 @@ msgid ""
 "the URI is the root of the website or directory, it must be terminated with "
 "a slash."
 msgstr ""
+"incluir una URL a la página de inicio oficial de la WWE. Anteponer "
+"<emphasis>one</emphasis> de los sitios web (elija el más común) con "
+"<literal>WWW:</literal> (seguido de un solo espacio) para que las "
+"herramientas automatizadas funcionen correctamente. Si el URI es la raíz del "
+"sitio web o directorio, debe terminar con una barra."
 
 #. (itstool) path: note/para
 #: book.translate.xml:330
@@ -375,11 +526,14 @@ msgid ""
 "Internet first to see if the official site moved, was renamed, or is hosted "
 "elsewhere."
 msgstr ""
+"Si la página web enumerada para un puerto no está disponible, intente buscar "
+"en Internet primero para ver si el sitio oficial se movió, se cambió de "
+"nombre o está alojado en otro lugar."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:335
 msgid "This example shows how <filename>pkg-descr</filename> looks:"
-msgstr ""
+msgstr "Este ejemplo muestra cómo <filename>pkg-descr</filename> mira:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:338
@@ -392,11 +546,19 @@ msgid ""
 "\n"
 "WWW: http://www.oneko.org/"
 msgstr ""
+"Este es un puerto de oneko, en el que un gato persigue a un pobre ratón por "
+"todas partes.\n"
+"la pantalla.\n"
+" :\n"
+"(etc.)\n"
+"\n"
+"WWW: http://www.oneko.org/"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:347
+#, fuzzy
 msgid "<filename>pkg-plist</filename>"
-msgstr ""
+msgstr "<filename>pkg-plist</filename>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:349
@@ -406,15 +568,19 @@ msgid ""
 "files listed here. The pathnames are relative to the installation prefix "
 "(usually <filename>/usr/local</filename>)."
 msgstr ""
+"este archivo enumera todos los archivos instalados por el puerto. También se "
+"llama <quote>packing list</quote> porque el paquete se genera empaquetando "
+"los archivos enumerados aquí. Los nombres de ruta son relativos al prefijo "
+"de instalación (generalmente <filename>/usr/local</filename>)."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:355
 msgid "Here is a small example:"
-msgstr ""
+msgstr "He aquí un pequeño ejemplo:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:357
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "bin/oneko\n"
 "man/man1/oneko.1.gz\n"
@@ -423,6 +589,12 @@ msgid ""
 "lib/X11/oneko/cat2.xpm\n"
 "lib/X11/oneko/mouse.xpm"
 msgstr ""
+"bin/oneko\n"
+"man/man1/oneko.1.gz\n"
+"lib/X11/app-defaults/Oneko\n"
+"lib/X11/oneko/cat1.xpm\n"
+"lib/X11/oneko/cat2.xpm\n"
+"lib/X11/oneko/mouse.xpm"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:364
@@ -431,6 +603,9 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> manual page for "
 "details on the packing list."
 msgstr ""
+"Referirse a <citerefentry><refentrytitle>pkg-"
+"create</refentrytitle><manvolnum>8</manvolnum></citerefentry> página de "
+"manual para obtener detalles sobre la lista de empaque."
 
 #. (itstool) path: note/para
 #: book.translate.xml:368
@@ -439,6 +614,9 @@ msgid ""
 "alphabetically. It will make verifying changes when upgrading the port much "
 "easier."
 msgstr ""
+"Se recomienda mantener todos los nombres de archivo de este archivo "
+"ordenados alfabéticamente. Hará que la verificación de los cambios al "
+"actualizar el puerto sea mucho más fácil."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:374
@@ -447,6 +625,10 @@ msgid ""
 "installs a large numbers of files, <link linkend=\"plist-autoplist"
 "\">creating the packing list automatically</link> might save time."
 msgstr ""
+"Crear una lista de empaque manualmente puede ser una tarea muy tediosa. Si "
+"el puerto instala una gran cantidad de archivos, <link linkend=\"plist-"
+"autoplist\">creando la lista de empaque automáticamente</link>podría ahorrar "
+"tiempo."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:380
@@ -458,10 +640,16 @@ msgid ""
 "filename> in the above <filename>oneko</filename> port by adding these lines "
 "to the <filename>Makefile</filename>:"
 msgstr ""
+"Solo hay un caso cuando<filename>pkg-plist</filename> se puede omitir de un "
+"puerto. Si el puerto instala solo un puñado de archivos, indíquelos en "
+"<varname>PLIST_FILES</varname>,dentro del puerto <filename>Makefile</"
+"filename>. Por ejemplo, podríamos arreglárnoslas sin <filename>pkg-plist</"
+"filename> en lo anterior <filename>oneko</filename> puerto agregando estas "
+"líneas al <filename>Makefile</filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:389
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "PLIST_FILES=\tbin/oneko \\\n"
 "\t\tman/man1/oneko.1.gz \\\n"
@@ -470,6 +658,12 @@ msgid ""
 "\t\tlib/X11/oneko/cat2.xpm \\\n"
 "\t\tlib/X11/oneko/mouse.xpm"
 msgstr ""
+"PLIST_FILES=\tbin/oneko \\\n"
+"\t\tman/man1/oneko.1.gz \\\n"
+"\t\tlib/X11/app-defaults/Oneko \\\n"
+"\t\tlib/X11/oneko/cat1.xpm \\\n"
+"\t\tlib/X11/oneko/cat2.xpm \\\n"
+"\t\tlib/X11/oneko/mouse.xpm"
 
 #. (itstool) path: note/para
 #: book.translate.xml:397
@@ -480,6 +674,11 @@ msgid ""
 "tree. Listing files in <varname>PLIST_FILES</varname> in the "
 "<filename>Makefile</filename> makes that search more difficult."
 msgstr ""
+"Uso de <varname>PLIST_FILES</varname> no debe abusarse. Al buscar el origen "
+"de un archivo, la gente suele intentar <application>grep</application> a "
+"través de<filename>pkg-plist</filename>archivos en el árbol de puertos. "
+"Listado de archivos en <varname>PLIST_FILES</varname> en "
+"el<filename>Makefile</filename> hace que la búsqueda sea más difícil."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:407
@@ -488,6 +687,9 @@ msgid ""
 "of <filename>${PREFIX}</filename> during installation, refer to <xref "
 "linkend=\"plist-dir-cleaning\"/> for more information."
 msgstr ""
+"Si un puerto necesita crear un directorio vacío o crea directorios fuera de "
+"<filename>${PREFIX}</filename>durante la instalación, consulte<xref linkend"
+"=\"plist-dir-cleaning\"/> para más información."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:414
@@ -502,9 +704,9 @@ msgstr ""
 
 #. (itstool) path: tip/programlisting
 #: book.translate.xml:418
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "PLIST_FILES=\t\"@sample ${ETCDIR}/oneko.conf.sample\""
-msgstr ""
+msgstr "PLIST_FILES=\t\"@sample ${ETCDIR}/oneko.conf.sample\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:421
@@ -517,7 +719,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:429
 msgid "Creating the Checksum File"
-msgstr ""
+msgstr "Creación del archivo de suma de comprobación"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:431
@@ -531,7 +733,7 @@ msgstr ""
 #. (itstool) path: chapter/title
 #: book.translate.xml:438 book.translate.xml:18725
 msgid "Testing the Port"
-msgstr ""
+msgstr "Probando el puerto"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:440
@@ -539,6 +741,9 @@ msgid ""
 "Make sure that the port rules do exactly what is desired, including "
 "packaging up the port. These are the important points to verify:"
 msgstr ""
+"Asegúrese de que las reglas del puerto hagan exactamente lo que se desea, "
+"incluido el empaquetado del puerto. Estos son los puntos importantes a "
+"verificar:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:446
@@ -552,13 +757,13 @@ msgstr ""
 msgid ""
 "<filename>pkg-plist</filename> contains everything that is installed by the "
 "port."
-msgstr ""
+msgstr "<filename>pkg-plist</filename> contiene todo lo que instala el puerto."
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:457 book.translate.xml:745 book.translate.xml:6677
 #: book.translate.xml:6730 book.translate.xml:8954 book.translate.xml:9889
 msgid "install"
-msgstr ""
+msgstr "instalar"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:456
@@ -566,11 +771,14 @@ msgid ""
 "The port can be installed using the <_:buildtarget-1/> target. This verifies "
 "that the install script works correctly."
 msgstr ""
+"El puerto se puede instalar usando el <_:buildtarget-1/> target. esto "
+"verifica que el script de instalación funcione correctamente."
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:463
+#, fuzzy
 msgid "deinstall"
-msgstr ""
+msgstr "deinstall"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:462
@@ -578,12 +786,16 @@ msgid ""
 "The port can be deinstalled properly using the <_:buildtarget-1/> target. "
 "This verifies that the deinstall script works correctly."
 msgstr ""
+"El puerto se puede desinstalar correctamente utilizando el <_:buildtarget-1/"
+"> target. Esto verifica que el script de desinstalación funcione "
+"correctamente."
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:469 book.translate.xml:667 book.translate.xml:668
 #: book.translate.xml:671 book.translate.xml:6819
+#, fuzzy
 msgid "fetch"
-msgstr ""
+msgstr "fetch"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:468
@@ -592,6 +804,9 @@ msgid ""
 "target phase. This is important for package builders, such as <package role="
 "\"port\">ports-mgmt/poudriere</package>."
 msgstr ""
+"El puerto solo tiene acceso a los recursos de red durante el <_:"
+"buildtarget-1/> target phase. Esto es importante para los creadores de "
+"paquetes, como <package role=\"port\">ports-mgmt/poudriere</package>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:474
@@ -605,7 +820,7 @@ msgstr ""
 #. (itstool) path: procedure/title
 #: book.translate.xml:482
 msgid "Recommended Test Ordering"
-msgstr ""
+msgstr "Pedido de prueba recomendado"
 
 #. (itstool) path: step/para
 #: book.translate.xml:485
@@ -614,33 +829,37 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: book.translate.xml:489
+#, fuzzy
 msgid "<command>make stage-qa</command>"
-msgstr ""
+msgstr "<command>make stage-qa</command>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:493
+#, fuzzy
 msgid "<command>make package</command>"
-msgstr ""
+msgstr "<command>make package</command>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:497
+#, fuzzy
 msgid "<command>make install</command>"
-msgstr ""
+msgstr "<command>make install</command>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:501
+#, fuzzy
 msgid "<command>make deinstall</command>"
-msgstr ""
+msgstr "<command>make deinstall</command>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:505
 msgid "<command>make package</command> (as user)"
-msgstr ""
+msgstr "<command>make package</command> (Como usuario)"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:509
 msgid "Make certain no warnings are shown in any of the stages."
-msgstr ""
+msgstr "Asegúrese de que no se muestren advertencias en ninguna de las etapas."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:512
@@ -655,7 +874,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:521
 msgid "Checking the Port with <command>portlint</command>"
-msgstr ""
+msgstr "Comprobando el puerto con <command>portlint</command>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:524
@@ -677,7 +896,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:542
 msgid "Submitting the New Port"
-msgstr ""
+msgstr "Envío del puerto nuevo"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:544
@@ -685,6 +904,8 @@ msgid ""
 "Before submitting the new port, read the <link linkend=\"porting-dads\">DOs "
 "and DON'Ts</link> section."
 msgstr ""
+"Antes de enviar el nuevo puerto, lea la <link linkend=\"porting-dads\""
+">normas</link>sección."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:548
@@ -692,6 +913,9 @@ msgid ""
 "Once happy with the port, the only thing remaining is to put it in the main "
 "FreeBSD ports tree and make everybody else happy about it too."
 msgstr ""
+"Una vez satisfecho con el puerto, lo único que queda es ponerlo en el árbol "
+"principal de puertos de FreeBSD y hacer que todos los demás estén contentos "
+"con él también."
 
 #. (itstool) path: important/para
 #: book.translate.xml:553
@@ -725,12 +949,16 @@ msgstr ""
 
 #. (itstool) path: example/screen
 #: book.translate.xml:572
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>svn add .</userinput>\n"
 "<prompt>%</prompt> <userinput>cd ../..</userinput>\n"
 "<prompt>%</prompt> <userinput>svn diff <replaceable>games/oneko</replaceable> &gt; <replaceable>oneko.diff</replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>svn add .</userinput>\n"
+"<prompt>%</prompt> <userinput>cd ../..</userinput>\n"
+"<prompt>%</prompt> <userinput>svn diff <replaceable>games/oneko</"
+"replaceable> &gt; <replaceable>oneko.diff</replaceable></userinput>"
 
 #. (itstool) path: important/para
 #: book.translate.xml:577
@@ -739,6 +967,9 @@ msgid ""
 "the ports tree, please generate the <filename>.diff</filename> from the base "
 "of your ports tree."
 msgstr ""
+"Para que sea más fácil para los confirmadores aplicar el parche en su copia "
+"de trabajo del árbol de ports, genere el <filename>.diff</filename> desde la "
+"base de su árbol de puertos."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:584
@@ -762,6 +993,13 @@ msgid ""
 "quote> for new ports. Using this scheme makes it easier and faster to begin "
 "the work of committing the new port."
 msgstr ""
+"Dar una buena descripción en el resumen del informe del problema facilita "
+"mucho el trabajo de los encargados de la confirmación del puerto. Preferimos "
+"algo como <quote>Nuevo "
+"puerto:<replaceable>category</replaceable>/<replaceable>portname</"
+"replaceable>.<replaceable>breve descripción del puerto</replaceable></quote> "
+"para nuevos puertos. El uso de este esquema hace que sea más fácil y rápido "
+"comenzar el trabajo de confirmar el nuevo puerto."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:604
@@ -771,6 +1009,11 @@ msgid ""
 "search form of the Problem Report database can be searched at <link xlink:"
 "href=\"https://bugs.freebsd.org/bugzilla/query.cgi\"/>."
 msgstr ""
+"Después de enviar el puerto, tenga paciencia. El tiempo necesario para "
+"incluir un nuevo puerto en FreeBSD puede variar desde unos pocos días hasta "
+"unos meses. Se puede buscar un formulario de búsqueda simple de la base de "
+"datos de informes de problemas en <link xlink:href=\"https://bugs.freebsd."
+"org/bugzilla/query.cgi\"/>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:609
@@ -779,6 +1022,10 @@ msgid ""
 "select <emphasis>Open</emphasis> and <emphasis>Ports &amp; Packages</"
 "emphasis> in the search form, then click <guibutton>[ Search ]</guibutton>."
 msgstr ""
+"Para obtener una lista de<emphasis>open</emphasis>puertos<acronym>PR</acronym"
+">s,select<emphasis>Open</emphasis> Y<emphasis>Puertos&amp;Packages</"
+"emphasis>en el formulario de búsqueda, luego haga clic en<guibutton>[ Search "
+"]</guibutton>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:614
@@ -788,6 +1035,11 @@ msgid ""
 "href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/contributors/contrib-"
 "additional.html\">Additional FreeBSD Contributors</link> and other files."
 msgstr ""
+"Después de mirar el nuevo puerto, responderemos si es necesario y lo "
+"confirmaremos en el árbol. El nombre del remitente también se agregará a la "
+"lista de <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/"
+"contributors/contrib-additional.html\">Colaboradores adicionales de FreeBSD</"
+"link> y otros archivos."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:619
@@ -797,11 +1049,15 @@ msgid ""
 "citerefentry> file. Using the previous example with the <literal>oneko</"
 "literal> port above."
 msgstr ""
+"También es posible enviar puertos usando un "
+"<citerefentry><refentrytitle>shar</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> archivo. Usando el ejemplo anterior con el<literal>oneko</"
+"literal> puerto de arriba."
 
 #. (itstool) path: example/title
 #: book.translate.xml:623
 msgid "Creating a <filename>.shar</filename> for a New Port"
-msgstr ""
+msgstr "Creando un <filename>.shar</filename> para un puerto nuevo"
 
 #. (itstool) path: example/para
 #: book.translate.xml:625
@@ -809,14 +1065,19 @@ msgid ""
 "go to the directory above where the port directory is located, and use "
 "<command>tar</command> to create the shar archive:"
 msgstr ""
+"vaya al directorio de arriba donde se encuentra el directorio del puerto, y "
+"use <command>tar</command> para crear el archivo shar:"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:629
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>cd ..</userinput>\n"
 "<prompt>%</prompt> <userinput>tar cf <replaceable>oneko</replaceable>.shar --format shar <replaceable>oneko</replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd ..</userinput>\n"
+"<prompt>%</prompt> <userinput>tar cf <replaceable>oneko</replaceable>.shar --"
+"format shar <replaceable>oneko</replaceable></userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:632
@@ -824,11 +1085,13 @@ msgid ""
 "<filename>oneko.shar</filename> can then be submitted in the same way as "
 "<filename>oneko.diff</filename> above."
 msgstr ""
+"<filename>oneko.shar</filename> luego puede enviarse de la misma manera que "
+"<filename>oneko.diff</filename> encima."
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:645
 msgid "Slow Porting"
-msgstr ""
+msgstr "Portación lenta"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:647
@@ -837,11 +1100,14 @@ msgid ""
 "get it to work. In this section, we will explain, step by step, how to "
 "modify it to get it to work with the ports paradigm."
 msgstr ""
+"Bien, no fue tan simple, y el puerto requirió algunas modificaciones para "
+"que funcionara. En esta sección, explicaremos, paso a paso, cómo modificarlo "
+"para que funcione con el paradigma de los puertos."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:653
 msgid "How Things Work"
-msgstr ""
+msgstr "Como funcionan las cosas"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:655
@@ -851,6 +1117,10 @@ msgid ""
 "mk</filename> in another window while reading this really helps to "
 "understand it."
 msgstr ""
+"Primero, esta es la secuencia de eventos que ocurre cuando el usuario "
+"escribe por primera vez <command>make</command> en el directorio del puerto. "
+"Teniendo<filename>bsd.port.mk</filename> en otra ventana mientras lee esto "
+"realmente ayuda a entenderlo."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:661
@@ -858,6 +1128,8 @@ msgid ""
 "But do not worry, not many people understand exactly how <filename>bsd.port."
 "mk</filename> is working... <emphasis>:-)</emphasis>"
 msgstr ""
+"Pero no se preocupe, no mucha gente entiende exactamente cómo <filename>bsd."
+"port.mk</filename> está trabajando... <emphasis>:-)</emphasis>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:667
@@ -878,7 +1150,7 @@ msgstr ""
 #: book.translate.xml:684 book.translate.xml:785 book.translate.xml:791
 #: book.translate.xml:6797 book.translate.xml:6840
 msgid "extract"
-msgstr ""
+msgstr "extraer"
 
 #. (itstool) path: step/para
 #: book.translate.xml:684
@@ -888,12 +1160,17 @@ msgid ""
 "unpacks it into a temporary subdirectory specified by <varname>WRKDIR</"
 "varname> (defaults to <filename>work</filename>)."
 msgstr ""
+"El  <_:buildtarget-1/> target se ejecuta el objetivo. Busca el archivo de "
+"distribución del puerto (normalmente un tarball comprimido) en "
+"<varname>DISTDIR</varname> y lo descomprime en un subdirectorio temporal "
+"especificado por <varname>WRKDIR</varname>  (predeterminado en "
+"<filename>work</filename>)."
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:693 book.translate.xml:5084 book.translate.xml:6867
 #: book.translate.xml:25141
 msgid "patch"
-msgstr ""
+msgstr "parche"
 
 #. (itstool) path: step/para
 #: book.translate.xml:693
@@ -911,7 +1188,7 @@ msgstr ""
 #: book.translate.xml:9352 book.translate.xml:11812 book.translate.xml:23540
 #: book.translate.xml:23542
 msgid "configure"
-msgstr ""
+msgstr "configurar"
 
 #. (itstool) path: step/para
 #: book.translate.xml:703
@@ -919,11 +1196,13 @@ msgid ""
 "The <_:buildtarget-1/> target is run. This can do any one of many different "
 "things."
 msgstr ""
+"El <_:buildtarget-1/> target se ejecuta el objetivo. Esto puede hacer una de "
+"muchas cosas diferentes."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:708
 msgid "If it exists, <filename>scripts/configure</filename> is run."
-msgstr ""
+msgstr "Si existe, <filename>scripts/configure</filename> es correr."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:713
@@ -931,12 +1210,14 @@ msgid ""
 "If <varname>HAS_CONFIGURE</varname> or <varname>GNU_CONFIGURE</varname> is "
 "set, <filename>WRKSRC/configure</filename> is run."
 msgstr ""
+"Si <varname>HAS_CONFIGURE</varname> o <varname>GNU_CONFIGURE</varname> Está "
+"establecido, <filename>WRKSRC/configure</filename> es correr."
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:721 book.translate.xml:5086 book.translate.xml:6676
 #: book.translate.xml:25143
 msgid "build"
-msgstr ""
+msgstr "construir"
 
 #. (itstool) path: step/para
 #: book.translate.xml:721
@@ -949,7 +1230,7 @@ msgstr ""
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:728 book.translate.xml:740
 msgid "stage"
-msgstr ""
+msgstr "etapa"
 
 #. (itstool) path: step/para
 #: book.translate.xml:728
@@ -963,7 +1244,7 @@ msgstr ""
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:737 book.translate.xml:747
 msgid "package"
-msgstr ""
+msgstr "paquete"
 
 #. (itstool) path: step/para
 #: book.translate.xml:737
@@ -982,13 +1263,15 @@ msgstr ""
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:754
+#, fuzzy
 msgid "pre-<replaceable>something</replaceable>"
-msgstr ""
+msgstr "pre-<replaceable>something</replaceable>"
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:756
+#, fuzzy
 msgid "post-<replaceable>something</replaceable>"
-msgstr ""
+msgstr "post-<replaceable>something</replaceable>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:752
@@ -1004,7 +1287,7 @@ msgstr ""
 #: book.translate.xml:3910 book.translate.xml:4298 book.translate.xml:8671
 #: book.translate.xml:23276
 msgid "post-extract"
-msgstr ""
+msgstr "post-extracción"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:761
@@ -1021,14 +1304,15 @@ msgstr ""
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:775 book.translate.xml:780
+#, fuzzy
 msgid "do-<replaceable>something</replaceable>"
-msgstr ""
+msgstr "do-<replaceable>something</replaceable>"
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:778 book.translate.xml:790 book.translate.xml:1242
 #: book.translate.xml:8667 book.translate.xml:20704
 msgid "do-extract"
-msgstr ""
+msgstr "extraer"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:774
@@ -1043,7 +1327,7 @@ msgstr ""
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:793
 msgid "post-deinstall"
-msgstr ""
+msgstr "post-desinstalación"
 
 #. (itstool) path: note/para
 #: book.translate.xml:784
@@ -1064,11 +1348,14 @@ msgid ""
 "better understood, let us go through the recommended steps to create the "
 "perfect port."
 msgstr ""
+"Ahora que lo que sucede cuando el usuario escribe <command>make install</"
+"command> se entiende mejor, veamos los pasos recomendados para crear el "
+"puerto perfecto."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:803
 msgid "Getting the Original Sources"
-msgstr ""
+msgstr "Obtener las fuentes originales"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:805
@@ -1078,6 +1365,11 @@ msgid ""
 "filename>) and copy it into <varname>DISTDIR</varname>. Always use "
 "<emphasis>mainstream</emphasis> sources when and where possible."
 msgstr ""
+"Obtenga las fuentes originales (normalmente) como un tarball "
+"comprimido(<filename>foo.tar."
+"gz</filename>o<filename><replaceable>foo</replaceable>.tar.bz2</filename>) y "
+"copiarlo en <varname>DISTDIR</varname>.Siempre usa<emphasis>mainstream</"
+"emphasis> fuentes cuando y donde sea posible."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:812
@@ -1091,6 +1383,14 @@ msgid ""
 "nightmare for everyone involved. See <xref linkend=\"makefile-master_sites\"/"
 "> for details."
 msgstr ""
+"Establecer el variable <varname>MASTER_SITES</varname> para reflejar dónde "
+"reside el tarball original. Existen definiciones taquigráficas para la "
+"mayoría de los sitios principales en <filename>bsd.sites.mk</filename>. "
+"Utilice estos sitios, y las definiciones asociadas, si es posible, para "
+"ayudar a evitar el problema de tener la misma información repetida muchas "
+"veces en la base de origen. Como estos sitios tienden a cambiar con el "
+"tiempo, esto se convierte en una pesadilla de mantenimiento para todos los "
+"involucrados. Ver <xref linkend=\"makefile-master_sites\"/> para detalles."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:823
@@ -1099,6 +1399,10 @@ msgid ""
 "find sites that have irritatingly non-standard formats, put a copy on a "
 "reliable FTP or HTTP server (for example, a home page)."
 msgstr ""
+"Si no hay un sitio FTP / HTTP que esté bien conectado a la red, o solo puede "
+"encontrar sitios que tienen formatos irritantes que no son estándar, coloque "
+"una copia en un servidor FTP o HTTP confiable (por ejemplo, una página de "
+"inicio)."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:829
@@ -1141,7 +1445,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:862
 msgid "Modifying the Port"
-msgstr ""
+msgstr "Modificar el puerto"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:864
@@ -1153,6 +1457,13 @@ msgid ""
 "the deletion, addition, or modification of files has to be doable using an "
 "automated script or patch file when the port is finished."
 msgstr ""
+"Desempaquete una copia del tarball en un directorio privado y realice los "
+"cambios necesarios para que el puerto se compile correctamente bajo la "
+"versión actual de FreeBSD. Mantener <emphasis>pista cuidadosa</emphasis> de "
+"pasos, ya que serán necesarios para automatizar el proceso en breve. Todo, "
+"incluida la eliminación, adición o modificación de archivos, tiene que ser "
+"factible mediante un script automatizado o un archivo de parche una vez "
+"finalizado el puerto."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:873
@@ -1164,6 +1475,12 @@ msgid ""
 "<quote>plug-and-play</quote> as possible for the end-user while using a "
 "minimum of disk space."
 msgstr ""
+"Si el puerto requiere una interacción / personalización significativa del "
+"usuario para compilar o instalar, eche un vistazo a uno de los clásicos de "
+"Larry Wall. <application>Configure</application> guiones y quizás hacer algo "
+"similar. El objetivo de la nueva colección de puertos es hacer que cada "
+"puerto sea <quote>plug-and-play</quote> como sea posible para el usuario "
+"final mientras utiliza un mínimo de espacio en disco."
 
 #. (itstool) path: note/para
 #: book.translate.xml:883
@@ -1172,11 +1489,14 @@ msgid ""
 "contributed to the FreeBSD ports collection are assumed to be covered by the "
 "standard BSD copyright conditions."
 msgstr ""
+"A menos que se indique explícitamente, se supone que los archivos de parche, "
+"scripts y otros archivos creados y contribuidos a la colección de ports de "
+"FreeBSD están cubiertos por las condiciones de copyright estándar de BSD."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:891
 msgid "Patching"
-msgstr ""
+msgstr "Parchar"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:893
@@ -1189,12 +1509,22 @@ msgid ""
 "original file before making any changes using a <filename>.orig</filename> "
 "suffix."
 msgstr ""
+"En la preparación del puerto, los archivos que se han agregado o cambiado se "
+"pueden grabar con "
+"<citerefentry><refentrytitle>diff</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>para luego alimentar "
+"a<citerefentry><refentrytitle>patch</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>. Hacer esto con un archivo típico implica guardar una copia "
+"del archivo original antes de realizar cualquier cambio usando un <filename>."
+"orig</filename> sufijo."
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:899
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>cp <replaceable>file</replaceable> <replaceable>file</replaceable>.orig</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cp <replaceable>file</replaceable> "
+"<replaceable>file</replaceable>.orig</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:901
@@ -1203,6 +1533,10 @@ msgid ""
 "directory. Use <command>make makepatch</command> to generate updated patch "
 "files in the <filename>files</filename> directory."
 msgstr ""
+"Una vez realizados todos los cambios, <command>cd</command>volver al "
+"directorio del puerto. Utilizar<command>make makepatch</command> para "
+"generar archivos de parche actualizados en el "
+"<filename>archivos</filename>directorio."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:907
@@ -1211,11 +1545,14 @@ msgid ""
 "the build and avoid patching build files. See <xref linkend=\"binary-alias\"/"
 "> for more information."
 msgstr ""
+"Use <varname>BINARY_ALIAS</varname> para sustituir los comandos codificados "
+"durante la compilación y evitar parchear los archivos de compilación. Ver "
+"<xref linkend=\"binary-alias\"/> para más información."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:914
 msgid "General Rules for Patching"
-msgstr ""
+msgstr "Reglas generales para parchear"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:916
@@ -1227,6 +1564,13 @@ msgid ""
 "the directory where the distfile is extracted. Use <command>make -V WRKSRC</"
 "command> to see the actual path. The patch names are to follow these rules:"
 msgstr ""
+"Los archivos de parche se almacenan "
+"en<varname>PATCHDIR</varname>,generalmente<filename>files/</filename>, desde "
+"donde se aplicarán automáticamente. Todos los parches deben ser relativos a "
+"<varname>WRKSRC</varname>. Típicamente <varname>WRKSRC</varname> es un "
+"subdirectorio de <varname>WRKDIR</varname>,el directorio donde se extrae el "
+"archivo dist. Utilizar <command>make -V WRKSRC</command> para ver el camino "
+"real. Los nombres de los parches deben seguir estas reglas:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:928
@@ -1236,6 +1580,10 @@ msgid ""
 "filename> making changes to <filename>${WRKSRC}/foobar.c</filename> makes "
 "them fragile and difficult to debug."
 msgstr ""
+"Evite que más de un parche modifique el mismo archivo. Por ejemplo, tener "
+"ambos <filename>patch-foobar.c</filename>y<filename>patch-foobar.c2</"
+"filename> haciendo cambios a<filename>${WRKSRC}/foobar.c</filename> Los hace "
+"frágiles y difíciles de depurar."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:937
@@ -1258,6 +1606,9 @@ msgid ""
 "is named appropriately. For example, <filename>patch-add-missing-stdlib.h</"
 "filename>."
 msgstr ""
+"Un parche puede modificar varios archivos si los cambios están relacionados "
+"y el parche tiene el nombre apropiado. Por ejemplo, <filename>patch-add-"
+"missing-stdlib.h</filename>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:960
@@ -1279,6 +1630,14 @@ msgid ""
 "but makes it hard to find out what exactly caused the problem and what was "
 "changed at all."
 msgstr ""
+"Minimice la cantidad de cambios de espacios en blanco no funcionales en los "
+"parches. Es común en el mundo del código abierto que los proyectos compartan "
+"grandes cantidades de una base de código, pero obedecen diferentes estilos y "
+"reglas de sangría. Cuando tome una parte funcional de un proyecto para "
+"arreglar áreas similares en otro, tenga cuidado: el parche resultante puede "
+"estar lleno de cambios no funcionales. No solo aumenta el tamaño del "
+"repositorio de puertos, sino que hace que sea difícil averiguar qué causó "
+"exactamente el problema y qué se modificó."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:978
@@ -1286,11 +1645,13 @@ msgid ""
 "If a file must be deleted, do it in the <_:buildtarget-1/> target rather "
 "than as part of the patch."
 msgstr ""
+"Si es necesario eliminar un archivo, hágalo en el <_:buildtarget-1/> "
+"objetivo en lugar de como parte del parche."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:985
 msgid "Manual Patch Generation"
-msgstr ""
+msgstr "Generación manual de parches"
 
 #. (itstool) path: note/para
 #: book.translate.xml:988
@@ -1299,6 +1660,10 @@ msgid ""
 "as described earlier in this section is the preferred method. However, "
 "manual patching may be required occasionally."
 msgstr ""
+"La creación manual de parches no suele ser necesaria. La generación "
+"automática de parches como se describe anteriormente en esta sección es el "
+"método preferido. Sin embargo, es posible que se requieran parches manuales "
+"de vez en cuando."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:994
@@ -1373,7 +1738,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:1043
 msgid "Simple Automatic Replacements"
-msgstr ""
+msgstr "Reemplazos automáticos simples"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1045
@@ -1386,11 +1751,13 @@ msgstr ""
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:1050
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "post-patch:\n"
 "\t@${REINPLACE_CMD} -e 's|/usr/local|${PREFIX}|g' ${WRKSRC}/Makefile"
 msgstr ""
+"post-patch:\n"
+"\t@${REINPLACE_CMD} -e 's|/usr/local|${PREFIX}|g' ${WRKSRC}/Makefile"
 
 #. (itstool) path: important/para
 #: book.translate.xml:1054
@@ -1401,6 +1768,12 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> to replace static "
 "content."
 msgstr ""
+"Solo use "
+"<citerefentry><refentrytitle>sed</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>para reemplazar el contenido variable. Debe utilizar archivos "
+"de parche en lugar "
+"de<citerefentry><refentrytitle>sed</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> para reemplazar el contenido estático."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1059
@@ -1411,25 +1784,33 @@ msgid ""
 "convert all files from CR/LF to just LF, add this entry to the port "
 "<filename>Makefile</filename>:"
 msgstr ""
+"con bastante frecuencia, el software que se transfiere utiliza la convención "
+"CR / LF en los archivos de origen. Esto puede causar problemas con más "
+"parches, advertencias del compilador o ejecución de scripts (como<literal>/"
+"bin/sh^M no encontrado</literal>.)Para convertir rápidamente todos los "
+"archivos de CR / LF a solo LF, agregue esta entrada al "
+"puerto<filename>Makefile</filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:1066
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "USES=\tdos2unix"
-msgstr ""
+msgstr "USES=\tdos2unix"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1068
 msgid "A list of specific files to convert can be given:"
-msgstr ""
+msgstr "Se puede proporcionar una lista de archivos específicos para convertir:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:1070
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "USES=\tdos2unix\n"
 "DOS2UNIX_FILES=\tutil.c util.h"
 msgstr ""
+"USES=\tdos2unix\n"
+"DOS2UNIX_FILES=\tutil.c util.h"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1073
@@ -1445,11 +1826,13 @@ msgstr ""
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:1081
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "USES=\tdos2unix\n"
 "DOS2UNIX_REGEX=\t.*\\.([ch]|cpp)"
 msgstr ""
+"USES=\tdos2unix\n"
+"DOS2UNIX_REGEX=\t.*\\.([ch]|cpp)"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1084
@@ -1460,11 +1843,13 @@ msgstr ""
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:1088
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "USES=\tdos2unix\n"
 "DOS2UNIX_GLOB=\t*.c *.cpp *.h"
 msgstr ""
+"USES=\tdos2unix\n"
+"DOS2UNIX_GLOB=\t*.c *.cpp *.h"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1092
@@ -1473,19 +1858,24 @@ msgid ""
 "are multiple distfiles and several contain files which require line-ending "
 "conversion."
 msgstr ""
+"Se puede configurar el directorio base para la conversión. Esto es útil "
+"cuando hay varios archivos dist y varios contienen archivos que requieren "
+"conversión de final de línea."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:1096
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "USES=\tdos2unix\n"
 "DOS2UNIX_WRKSRC=\t${WRKDIR}"
 msgstr ""
+"USES=\tdos2unix\n"
+"DOS2UNIX_WRKSRC=\t${WRKDIR}"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1101
 msgid "Patching Conditionally"
-msgstr ""
+msgstr "Parcheo condicional"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1103
@@ -1495,15 +1885,19 @@ msgid ""
 "specified by placing the full paths to the patch files in "
 "<varname>EXTRA_PATCHES</varname>."
 msgstr ""
+"Algunos puertos necesitan parches que solo se aplican para versiones "
+"específicas de FreeBSD o cuando una opción en particular está habilitada o "
+"deshabilitada. Los parches condicionales se especifican colocando las rutas "
+"completas a los archivos de parche en<varname>EXTRA_PATCHES</varname>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:1110
 msgid "Applying a Patch for a Specific FreeBSD Version"
-msgstr ""
+msgstr "Aplicación de un parche para una versión específica de FreeBSD"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:1112
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 ".include &lt;bsd.port.options.mk&gt;\n"
 "\n"
@@ -1514,11 +1908,19 @@ msgid ""
 "\n"
 ".include &lt;bsd.port.mk&gt;"
 msgstr ""
+".include &lt;bsd.port.options.mk&gt;\n"
+"\n"
+"# Patch in the iconv const qualifier before this\n"
+".if ${OPSYS} == FreeBSD &amp;&amp; ${OSVERSION} &lt; 1100069\n"
+"EXTRA_PATCHES=\t${PATCHDIR}/extra-patch-fbsd10\n"
+".endif\n"
+"\n"
+".include &lt;bsd.port.mk&gt;"
 
 #. (itstool) path: example/title
 #: book.translate.xml:1123
 msgid "Optionally Applying a Patch"
-msgstr ""
+msgstr "Aplicación opcional de un parche"
 
 #. (itstool) path: example/para
 #: book.translate.xml:1125
@@ -1533,18 +1935,22 @@ msgstr ""
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:1135
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "OPTIONS_DEFINE=\t  FOO BAR\n"
 "FOO_EXTRA_PATCHES=  ${PATCHDIR}/extra-patch-foo\n"
 "BAR_EXTRA_PATCHES_OFF=\t${PATCHDIR}/extra-patch-bar.c \\\n"
 "\t\t${PATCHDIR}/extra-patch-bar.h"
 msgstr ""
+"OPTIONS_DEFINE=\t  FOO BAR\n"
+"FOO_EXTRA_PATCHES=  ${PATCHDIR}/extra-patch-foo\n"
+"BAR_EXTRA_PATCHES_OFF=\t${PATCHDIR}/extra-patch-bar.c \\\n"
+"\t\t${PATCHDIR}/extra-patch-bar.h"
 
 #. (itstool) path: example/title
 #: book.translate.xml:1142
 msgid "Using <varname>EXTRA_PATCHES</varname> With a Directory"
-msgstr ""
+msgstr "Usando <varname>EXTRA_PATCHES</varname> Con un Directorio"
 
 #. (itstool) path: example/para
 #: book.translate.xml:1145
@@ -1554,6 +1960,10 @@ msgid ""
 "directory, and it will automatically apply all files named <filename>patch-"
 "<replaceable>*</replaceable></filename> in it."
 msgstr ""
+"En algún momento, hay muchos parches que se necesitan para una función, en "
+"este caso, es posible señalar<varname>EXTRA_PATCHES</varname> a un "
+"directorio, y aplicará automáticamente todos los archivos "
+"llamados<filename>patch-<replaceable>*</replaceable></filename> en eso."
 
 #. (itstool) path: example/para
 #: book.translate.xml:1152
@@ -1561,28 +1971,36 @@ msgid ""
 "Create a subdirectory in <filename>${PATCHDIR}</filename>, and move the "
 "patches in it. For example:"
 msgstr ""
+"Cree un subdirectorio en <filename>${PATCHDIR}</filename>, y mueva los "
+"parches en él. Por ejemplo:"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:1156
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>ls -l <replaceable>files/foo-patches</replaceable></userinput>\n"
 "-rw-r--r--  1 root  wheel    350 Jan 16 01:27 patch-Makefile.in\n"
 "-rw-r--r--  1 root  wheel   3084 Jan 18 15:37 patch-configure"
 msgstr ""
+"<prompt>%</prompt> <userinput>ls -l <replaceable>files/foo-"
+"patches</replaceable></userinput>\n"
+"-rw-r--r--  1 root  wheel    350 Jan 16 01:27 patch-Makefile.in\n"
+"-rw-r--r--  1 root  wheel   3084 Jan 18 15:37 patch-configure"
 
 #. (itstool) path: example/para
 #: book.translate.xml:1160
 msgid "Then add this to the <filename>Makefile</filename>:"
-msgstr ""
+msgstr "Luego agregue esto al <filename>Makefile</filename>:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:1162
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "OPTIONS_DEFINE=\tFOO\n"
 "FOO_EXTRA_PATCHES=\t${PATCHDIR}/foo-patches"
 msgstr ""
+"OPTIONS_DEFINE=\tFOO\n"
+"FOO_EXTRA_PATCHES=\t${PATCHDIR}/foo-patches"
 
 #. (itstool) path: example/para
 #: book.translate.xml:1165
@@ -1590,11 +2008,13 @@ msgid ""
 "The framework will then use all the files named <filename>patch-"
 "<replaceable>*</replaceable></filename> in that directory."
 msgstr ""
+"El marco luego usará todos los archivos nombrados "
+"<filename>patch-<replaceable>*</replaceable></filename> en ese directorio."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1173
 msgid "Configuring"
-msgstr ""
+msgstr "Configurando"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1175
@@ -1609,7 +2029,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:1185
 msgid "Handling User Input"
-msgstr ""
+msgstr "Manejo de la entrada del usuario"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1187
@@ -1635,7 +2055,7 @@ msgstr ""
 #. (itstool) path: chapter/title
 #: book.translate.xml:1213
 msgid "Configuring the Makefile"
-msgstr ""
+msgstr "Configurar el Makefile"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:1215
@@ -1653,11 +2073,13 @@ msgid ""
 "Consider these problems in sequence during the design of the new "
 "<filename>Makefile</filename>:"
 msgstr ""
+"Considere estos problemas en secuencia durante el diseño del nuevo "
+"<filename>Makefile</filename>:"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1227
 msgid "The Original Source"
-msgstr ""
+msgstr "La fuente original"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1229
@@ -1681,7 +2103,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:1247
 msgid "Naming"
-msgstr ""
+msgstr "Nombrar"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1249
@@ -1689,12 +2111,14 @@ msgid ""
 "The first part of the port's <filename>Makefile</filename> names the port, "
 "describes its version number, and lists it in the correct category."
 msgstr ""
+"La primera parte del puerto <filename>Makefile</filename> names the port, "
+"describes its version number, and lists it in the correct category."
 
 #. (itstool) path: sect2/title
 #. (itstool) path: row/entry
 #: book.translate.xml:1254 book.translate.xml:1980
 msgid "<varname>PORTNAME</varname>"
-msgstr ""
+msgstr "<varname>PORTNAME</varname>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1256
@@ -1703,6 +2127,9 @@ msgid ""
 "as the base for the FreeBSD package, and for <link linkend=\"makefile-"
 "distname\"><varname>DISTNAME</varname></link>."
 msgstr ""
+"Conjunto <varname>PORTNAME</varname> al nombre base del software. Se utiliza "
+"como base para el paquete FreeBSD y para <link linkend=\"makefile-distname\""
+"><varname>DISTNAME</varname></link>."
 
 #. (itstool) path: important/para
 #: book.translate.xml:1261
@@ -1714,6 +2141,12 @@ msgid ""
 "pkgnameprefix-suffix\"><varname>PKGNAMEPREFIX</varname> or "
 "<varname>PKGNAMESUFFIX</varname></link>."
 msgstr ""
+"El nombre del paquete debe ser único en todo el árbol de puertos. Asegúrese "
+"de que el <varname>PORTNAME</varname> no está ya en uso por un puerto "
+"existente, y que ningún otro puerto ya tiene el mismo <varname>PKGBASE</"
+"varname>. Si el nombre ya se ha utilizado, agregue<link linkend=\"porting-"
+"pkgnameprefix-suffix\"><varname>PKGNAMEPREFIX</varname> o "
+"<varname>PKGNAMESUFFIX</varname></link>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1271
@@ -1721,12 +2154,15 @@ msgid ""
 "Versions, <varname>DISTVERSION</varname> <emphasis>or</emphasis> "
 "<varname>PORTVERSION</varname>"
 msgstr ""
+"Versiones, <varname>DISTVERSION</varname>.<emphasis>o</emphasis>.<varname>POR"
+"TVERSION</varname>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1274
 msgid ""
 "Set <varname>DISTVERSION</varname> to the version number of the software."
 msgstr ""
+"conjunto <varname>DISTVERSION</varname> al número de versión del software."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1277
@@ -1752,6 +2188,9 @@ msgid ""
 "compatible with how <varname>DISTVERSION</varname> translates in "
 "<varname>PORTVERSION</varname>."
 msgstr ""
+"de vez en cuando, algún software utilizará un esquema de versión que no es "
+"compatible con <varname>DISTVERSION</varname>se traduce "
+"en<varname>PORTVERSION</varname>."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:1296
@@ -1761,6 +2200,11 @@ msgid ""
 "option> argument to check if the new version is greater or lesser than "
 "before. See <xref linkend=\"makefile-versions-ex-pkg-version\"/>."
 msgstr ""
+"Al actualizar un puerto, es posible utilizar <citerefentry><refentrytitle"
+">pkg-"
+"version</refentrytitle><manvolnum>8</manvolnum></citerefentry>'s<option>-t</"
+"option> argumento para comprobar si la nueva versión es mayor o menor que "
+"antes. Ver <xref linkend=\"makefile-versions-ex-pkg-version\"/>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:1303
@@ -1768,6 +2212,9 @@ msgid ""
 "Using <citerefentry><refentrytitle>pkg-version</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> to Compare Versions."
 msgstr ""
+"Usando <citerefentry><refentrytitle>pkg-"
+"version</refentrytitle><manvolnum>8</manvolnum></citerefentry> para comparar "
+"versiones."
 
 #. (itstool) path: example/para
 #: book.translate.xml:1305
@@ -1780,7 +2227,7 @@ msgstr ""
 
 #. (itstool) path: example/screen
 #: book.translate.xml:1311
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>pkg version -t 1.2 1.3</userinput>\n"
 "&lt; <co xml:id=\"makefile-versions-tip-co1\"/>\n"
@@ -1795,11 +2242,23 @@ msgid ""
 "<prompt>%</prompt> <userinput>pkg version -t 1.2 1.2p1</userinput>\n"
 "&lt; <co xml:id=\"makefile-versions-tip-co6\"/>"
 msgstr ""
+"<prompt>%</prompt> <userinput>pkg version -t 1.2 1.3</userinput>\n"
+"&lt; <co xml:id=\"makefile-versions-tip-co1\"/>\n"
+"<prompt>%</prompt> <userinput>pkg version -t 1.2 1.2</userinput>\n"
+"= <co xml:id=\"makefile-versions-tip-co2\"/>\n"
+"<prompt>%</prompt> <userinput>pkg version -t 1.2 1.2.0</userinput>\n"
+"= <co xml:id=\"makefile-versions-tip-co3\"/>\n"
+"<prompt>%</prompt> <userinput>pkg version -t 1.2 1.2.p1</userinput>\n"
+"&gt; <co xml:id=\"makefile-versions-tip-co4\"/>\n"
+"<prompt>%</prompt> <userinput>pkg version -t 1.2.a1 1.2.b1</userinput>\n"
+"&lt; <co xml:id=\"makefile-versions-tip-co5\"/>\n"
+"<prompt>%</prompt> <userinput>pkg version -t 1.2 1.2p1</userinput>\n"
+"&lt; <co xml:id=\"makefile-versions-tip-co6\"/>"
 
 #. (itstool) path: callout/para
 #: book.translate.xml:1326
 msgid "<literal>1.2</literal> is before <literal>1.3</literal>."
-msgstr ""
+msgstr "<literal>1.2</literal> es antes <literal>1.3</literal>."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:1331
@@ -1807,6 +2266,8 @@ msgid ""
 "<literal>1.2</literal> and <literal>1.2</literal> are equal as they have the "
 "same version."
 msgstr ""
+"<literal>1.2</literal>y<literal>1.2</literal> son iguales ya que tienen la "
+"misma versión."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:1336
@@ -1814,6 +2275,8 @@ msgid ""
 "<literal>1.2</literal> and <literal>1.2.0</literal> are equal as nothing "
 "equals zero."
 msgstr ""
+"<literal>1.2</literal>y<literal>1.2.0</literal> son iguales ya que nada es "
+"igual a cero."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:1341
@@ -1821,6 +2284,8 @@ msgid ""
 "<literal>1.2</literal> is after <literal>1.2.p1</literal> as <literal>.p1</"
 "literal>, think <quote>pre-release 1</quote>."
 msgstr ""
+"<literal>1.2</literal> es despues <literal>1.2.p1</literal>como<literal>.p1</"
+"literal>, piense <quote>pre-release1</quote>."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:1347
@@ -1829,6 +2294,9 @@ msgid ""
 "<quote>alpha</quote> and <quote>beta</quote>, and <literal>a</literal> is "
 "before <literal>b</literal>."
 msgstr ""
+"<literal>1.2.a1</literal> es antes <literal>1.2.b1</literal>, piense, "
+"<quote>alpha</quote> y <quote>beta</quote>, y <literal>a</literal> es antes "
+"<literal>b</literal>."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:1354
@@ -1867,48 +2335,56 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1387
+#, fuzzy
 msgid "0.7.1d"
-msgstr ""
+msgstr "0.7.1d"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1388
+#, fuzzy
 msgid "0.7.1.d"
-msgstr ""
+msgstr "0.7.1.d"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1392
+#, fuzzy
 msgid "10Alpha3"
-msgstr ""
+msgstr "10Alpha3"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1393
+#, fuzzy
 msgid "10.a3"
-msgstr ""
+msgstr "10.a3"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1397
+#, fuzzy
 msgid "3Beta7-pre2"
-msgstr ""
+msgstr "3Beta7-pre2"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1398
+#, fuzzy
 msgid "3.b7.p2"
-msgstr ""
+msgstr "3.b7.p2"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1402
+#, fuzzy
 msgid "8:f_17"
-msgstr ""
+msgstr "8:f_17"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:1403
+#, fuzzy
 msgid "8f.17"
-msgstr ""
+msgstr "8f.17"
 
 #. (itstool) path: example/title
 #: book.translate.xml:1410
 msgid "Using <varname>DISTVERSION</varname>"
-msgstr ""
+msgstr "Usando<varname>DISTVERSION</varname>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:1412
@@ -1916,21 +2392,25 @@ msgid ""
 "When the version only contains numbers separated by dots, dashes or "
 "underscores, use <varname>DISTVERSION</varname>."
 msgstr ""
+"Cuando la versión solo contiene números separados por puntos, guiones o "
+"guiones bajos, utilice <varname>DISTVERSION</varname>."
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:1416
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "PORTNAME=   nekoto\n"
 "DISTVERSION=\t1.2-4"
 msgstr ""
+"PORTNAME=   nekoto\n"
+"DISTVERSION=\t1.2-4"
 
 #. (itstool) path: example/para
 #: book.translate.xml:1419
 msgid ""
 "It will generate a <varname>PORTVERSION</varname> of <literal>1.2.4</"
 "literal>."
-msgstr ""
+msgstr "Generará un <varname>PORTVERSION</varname>de<literal>1.2.4</literal>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:1424
@@ -1938,6 +2418,8 @@ msgid ""
 "Using <varname>DISTVERSION</varname> When the Version Starts with a Letter "
 "or a Prefix"
 msgstr ""
+"Usando <varname>DISTVERSION</varname> Cuando la versión comienza con una "
+"letra o un prefijo"
 
 #. (itstool) path: example/para
 #: book.translate.xml:1427
@@ -1946,20 +2428,27 @@ msgid ""
 "is not part of the version, use <varname>DISTVERSIONPREFIX</varname>, "
 "<varname>DISTVERSION</varname>, and <varname>DISTVERSIONSUFFIX</varname>."
 msgstr ""
+"Cuando la versión comienza o termina con una letra, un prefijo o un sufijo "
+"que no es parte de la versión, use "
+"<varname>DISTVERSIONPREFIX</varname>,<varname>DISTVERSION</varname>, y "
+"<varname>DISTVERSIONSUFFIX</varname>."
 
 #. (itstool) path: example/para
 #: book.translate.xml:1433
 msgid "If the version is <literal>v1.2-4</literal>:"
-msgstr ""
+msgstr "Si la versión es <literal>v1.2-4</literal>:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:1435
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "PORTNAME=   nekoto\n"
 "DISTVERSIONPREFIX=  v\n"
 "DISTVERSION=\t1_2_4"
 msgstr ""
+"PORTNAME=   nekoto\n"
+"DISTVERSIONPREFIX=  v\n"
+"DISTVERSION=\t1_2_4"
 
 #. (itstool) path: example/para
 #: book.translate.xml:1439
@@ -1968,15 +2457,21 @@ msgid ""
 "their name in their versions. For example, the version could be "
 "<literal>nekoto-1.2-4</literal>:"
 msgstr ""
+"Algunas veces, los proyectos que utilizan <application>GitHub</application> "
+"usarán su nombre en sus versiones. Por ejemplo, la versión podría ser "
+"<literal>nekoto-1.2-4</literal>:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:1444
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "PORTNAME=   nekoto\n"
 "DISTVERSIONPREFIX=  nekoto-\n"
 "DISTVERSION=\t1.2_4"
 msgstr ""
+"PORTNAME=   nekoto\n"
+"DISTVERSIONPREFIX=  nekoto-\n"
+"DISTVERSION=\t1.2_4"
 
 #. (itstool) path: example/para
 #: book.translate.xml:1448
@@ -1984,30 +2479,40 @@ msgid ""
 "Those projects also sometimes use some string at the end of the version, for "
 "example, <literal>1.2-4_RELEASE</literal>:"
 msgstr ""
+"Esos proyectos también usan a veces alguna cadena al final de la versión, "
+"por ejemplo, <literal>1.2-4_RELEASE</literal>:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:1452
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "PORTNAME=   nekoto\n"
 "DISTVERSION=\t1.2-4\n"
 "DISTVERSIONSUFFIX=  _RELEASE"
 msgstr ""
+"PORTNAME=   nekoto\n"
+"DISTVERSION=\t1.2-4\n"
+"DISTVERSIONSUFFIX=  _RELEASE"
 
 #. (itstool) path: example/para
 #: book.translate.xml:1456
 msgid "Or they do both, for example, <literal>nekoto-1.2-4_RELEASE</literal>:"
 msgstr ""
+"O hacen ambas cosas, por ejemplo, <literal>nekoto-1.2-4_RELEASE</literal>:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:1459
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "PORTNAME=   nekoto\n"
 "DISTVERSIONPREFIX=  nekoto-\n"
 "DISTVERSION=\t1.2-4\n"
 "DISTVERSIONSUFFIX=  _RELEASE"
 msgstr ""
+"PORTNAME=   nekoto\n"
+"DISTVERSIONPREFIX=  nekoto-\n"
+"DISTVERSION=\t1.2-4\n"
+"DISTVERSIONSUFFIX=  _RELEASE"
 
 #. (itstool) path: example/para
 #: book.translate.xml:1464
@@ -2016,6 +2521,9 @@ msgid ""
 "varname> will not be used while constructing <varname>PORTVERSION</varname>, "
 "but only used in <varname>DISTNAME</varname>."
 msgstr ""
+"<varname>DISTVERSIONPREFIX</varname>y<varname>DISTVERSIONSUFFIX</varname> no "
+"se utilizará durante la construcción <varname>PORTVERSION</varname>,pero "
+"solo se usa en<varname>DISTNAME</varname>."
 
 #. (itstool) path: example/para
 #: book.translate.xml:1469
@@ -2023,6 +2531,7 @@ msgid ""
 "All will generate a <varname>PORTVERSION</varname> of <literal>1.2.4</"
 "literal>."
 msgstr ""
+"Todo generará un <varname>PORTVERSION</varname>de<literal>1.2.4</literal>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:1474
@@ -2031,6 +2540,9 @@ msgid ""
 "Meaning <quote>alpha</quote>, <quote>beta</quote>, or <quote>pre-release</"
 "quote>"
 msgstr ""
+"Usando <varname>DISTVERSION</varname> Cuando la versión contiene letras "
+"significado <quote>alpha</quote>,<quote>beta</quote>, o <quote>pre-"
+"release</quote>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:1478
@@ -2040,22 +2552,30 @@ msgid ""
 "<quote>pre-release</quote>, which is, before the version without the "
 "letters, use <varname>DISTVERSION</varname>."
 msgstr ""
+"Cuando la versión contiene números separados por puntos, guiones o guiones "
+"bajos, y las letras se utilizan para significar "
+"<quote>alpha</quote>,<quote>beta</quote> o <quote>pre-release</quote>, que "
+"es, antes de la versión sin las letras, use <varname>DISTVERSION</varname>."
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:1485
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "PORTNAME=   nekoto\n"
 "DISTVERSION=\t1.2-pre4"
 msgstr ""
+"PORTNAME=   nekoto\n"
+"DISTVERSION=\t1.2-pre4"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:1488
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "PORTNAME=   nekoto\n"
 "DISTVERSION=\t1.2p4"
 msgstr ""
+"PORTNAME=   nekoto\n"
+"DISTVERSION=\t1.2p4"
 
 #. (itstool) path: example/para
 #: book.translate.xml:1491
@@ -2065,14 +2585,20 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> can be used to check "
 "that fact:"
 msgstr ""
+"Ambos generarán un <varname>PORTVERSION</varname> de <literal>1.2.p4</"
+"literal>que es anterior a 1.2.<citerefentry><refentrytitle>pkg-"
+"version</refentrytitle><manvolnum>8</manvolnum></citerefentry> se puede "
+"utilizar para comprobar ese hecho:"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:1495
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>pkg version -t 1.2.p4 1.2</userinput>\n"
 "&lt;"
 msgstr ""
+"<prompt>%</prompt> <userinput>pkg version -t 1.2.p4 1.2</userinput>\n"
+"&lt;"
 
 #. (itstool) path: example/title
 #: book.translate.xml:1500
@@ -2080,6 +2606,8 @@ msgid ""
 "Not Using <varname>DISTVERSION</varname> When the Version Contains Letters "
 "Meaning \"Patch Level\""
 msgstr ""
+"No usando <varname>DISTVERSION</varname> Cuando la versión contiene letras "
+"que significan \"Nivel de parche\""
 
 #. (itstool) path: example/para
 #: book.translate.xml:1503
@@ -2089,14 +2617,20 @@ msgid ""
 "<quote>patch level</quote>, and meaning after the version without the "
 "letters, use <varname>PORTVERSION</varname>."
 msgstr ""
+"Cuando la versión contiene letras que no están destinadas a "
+"<quote>alpha</quote>,<quote>brys</quote>, o <quote>pre</quote>, pero mas en "
+"un <quote>patch level</quote>, y significado después de la versión sin las "
+"letras, use <varname>PORTVERSION</varname>."
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:1509
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "PORTNAME=   nekoto\n"
 "PORTVERSION=\t1.2p4"
 msgstr ""
+"PORTNAME=   nekoto\n"
+"PORTVERSION=\t1.2p4"
 
 #. (itstool) path: example/para
 #: book.translate.xml:1512
@@ -2110,13 +2644,17 @@ msgstr ""
 
 #. (itstool) path: example/screen
 #: book.translate.xml:1518
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>pkg version -t 1.2 1.2.p4</userinput>\n"
 "&gt; <co xml:id=\"makefile-versions-ex4-co1\"/>\n"
 "<prompt>%</prompt> <userinput>pkg version -t 1.2 1.2p4</userinput>\n"
 "&lt; <co xml:id=\"makefile-versions-ex4-co2\"/>"
 msgstr ""
+"<prompt>%</prompt> <userinput>pkg version -t 1.2 1.2.p4</userinput>\n"
+"&gt; <co xml:id=\"makefile-versions-ex4-co1\"/>\n"
+"<prompt>%</prompt> <userinput>pkg version -t 1.2 1.2p4</userinput>\n"
+"&lt; <co xml:id=\"makefile-versions-ex4-co2\"/>"
 
 #. (itstool) path: callout/para
 #: book.translate.xml:1525
@@ -2131,6 +2669,8 @@ msgid ""
 "<literal>1.2</literal> is before <literal>1.2p4</literal>, which is what was "
 "needed."
 msgstr ""
+"<literal>1.2</literal> es antes <literal>1.2p4</literal>, que es lo que se "
+"necesitaba."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1538
@@ -2140,11 +2680,16 @@ msgid ""
 "<varname>DISTNAME</varname> when the distribution file does not contain the "
 "version itself, see <xref linkend=\"makefile-distname\"/>."
 msgstr ""
+"Para algunos ejemplos más avanzados de configuración <varname>PORTVERSION</"
+"varname>, cuando el control de versiones del software no es realmente "
+"compatible con FreeBSD, o <varname>DISTNAME</varname> cuando el archivo de "
+"distribución no contiene la versión en sí, consulte <xref linkend=\"makefile-"
+"distname\"/>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1546
 msgid "<varname>PORTREVISION</varname> and <varname>PORTEPOCH</varname>"
-msgstr ""
+msgstr "<varname>PORTREVISION</varname>y<varname>PORTEPOCH</varname>"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:1550
