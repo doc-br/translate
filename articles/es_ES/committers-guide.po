@@ -1,20 +1,21 @@
 # Edson Brandi <ebrandi@FreeBSD.org>, 2019. #zanata
 # Sergio Carlavilla <carlavilla@mailbox.org>, 2019. #zanata
 # Juan David Jaramillo Ortiz <juanda097@protonmail.ch>, 2020.
+# Aaron H Farías Martinez <timido@ubuntu.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-11-16 21:26-0300\n"
-"PO-Revision-Date: 2020-09-07 02:20+0000\n"
-"Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
-"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/freebsd-"
-"doc/articles_committers-guide/es/>\n"
+"PO-Revision-Date: 2020-12-14 01:04+0000\n"
+"Last-Translator: Aaron H Farías Martinez <timido@ubuntu.com>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/articles_committers-guide/es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2.2\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -5718,7 +5719,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:3125
 msgid "Documentation Engineering Team <email>doceng@FreeBSD.org</email>"
-msgstr ""
+msgstr "Equipo de ingeniería de documentación<email>doceng@FreeBSD.org</email>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3128
@@ -5739,6 +5740,7 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:3144
+#, fuzzy
 msgid ""
 "Glen Barber <email>gjb@FreeBSD.org</email>, Konstantin Belousov "
 "<email>kib@FreeBSD.org</email>, Bryan Drewery <email>bdrewery@FreeBSD.org</"
@@ -5747,6 +5749,12 @@ msgid ""
 "org</email> Hiroki Sato <email>hrs@FreeBSD.org</email>, Gleb Smirnoff "
 "<email>glebius@FreeBSD.org</email>"
 msgstr ""
+"Glen Barber <email>gjb@FreeBSD.org</email>, Konstantin Belousov "
+"<email>kib@FreeBSD.org</email>, Bryan Drewery <email>bdrewery@FreeBSD.org</"
+"email>, Marc Fonvieille <email>blackend@FreeBSD.org</email>, Xin Li "
+"<email>delphij@FreeBSD.org</email>, Colin Percival <email>cperciva@FreeBSD."
+"org</email> Hiroki Sato <email>hrs@FreeBSD.org</email>, Gleb Smirnoff "
+"<email>glebius@FreeBSD.org</email>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3147
@@ -5762,8 +5770,9 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:3159
+#, fuzzy
 msgid "Gordon Tetlow <email>gordon@FreeBSD.org</email>"
-msgstr ""
+msgstr "Gordon Tetlow <email>gordon@FreeBSD.org</email>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3162
@@ -5775,8 +5784,9 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:3170
+#, fuzzy
 msgid "Garrett Wollman <email>wollman@FreeBSD.org</email>"
-msgstr ""
+msgstr "Garrett Wollman <email>wollman@FreeBSD.org</email>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3173
@@ -5786,11 +5796,15 @@ msgid ""
 "someone to talk to. Garrett is also very knowledgeable on the various "
 "standards applicable to FreeBSD."
 msgstr ""
+"Si necesita asesoramiento sobre aspectos internos oscuros de la red o no "
+"está seguro de algún cambio potencial en el subsistema de red que tiene en "
+"mente, Garrett es alguien con quien hablar. Garrett también está muy bien "
+"informado sobre los diversos estándares aplicables a FreeBSD."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:3182
 msgid "FreeBSD committer's mailing list"
-msgstr ""
+msgstr "Lista de correo de confirmadores de FreeBSD"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3185
@@ -5808,7 +5822,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:3196
 msgid "FreeBSD developers mailing list"
-msgstr ""
+msgstr "Lista de correo de desarrolladores de FreeBSD"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3199
@@ -5817,6 +5831,9 @@ msgid ""
 "forum for the committers <quote>community</quote> issues. Examples are Core "
 "voting, announcements, etc."
 msgstr ""
+"Todos los confirmadores están suscritos a -developers. Esta lista fue creada "
+"para ser un foro para los confirmadores.<quote>comunidad</quote> cuestiones. "
+"Algunos ejemplos son votaciones centrales, anuncios, etc."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3204
@@ -5827,6 +5844,12 @@ msgid ""
 "Frank discussions of work in progress are not suitable for open publication "
 "and may harm FreeBSD."
 msgstr ""
+"La lista de correo de desarrolladores de FreeBSD es para uso exclusivo de "
+"los confirmadores de FreeBSD. Para desarrollar FreeBSD, los confirmadores "
+"deben tener la capacidad de discutir abiertamente los asuntos que se "
+"resolverán antes de que se anuncien públicamente. Las discusiones francas "
+"sobre el trabajo en progreso no son adecuadas para la publicación abierta y "
+"pueden dañar FreeBSD."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3211
@@ -5838,6 +5861,13 @@ msgid ""
 "Repeated or flagrant violations may result in permanent revocation of commit "
 "privileges."
 msgstr ""
+"Se espera que todos los confirmadores de FreeBSD no publiquen ni reenvíen "
+"mensajes de la lista de correo de desarrolladores de FreeBSD fuera de la "
+"membresía de la lista sin el permiso de todos los autores. Los infractores "
+"serán eliminados de la lista de correo de desarrolladores de FreeBSD, lo que "
+"resultará en la suspensión de los privilegios de confirmación. Las "
+"violaciones repetidas o flagrantes pueden resultar en la revocación "
+"permanente de los privilegios de compromiso."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3220
@@ -5856,7 +5886,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:3237
 msgid "SSH Quick-Start Guide"
-msgstr ""
+msgstr "Guía de inicio rápido de SSH"
 
 #. (itstool) path: step/para
 #: article.translate.xml:3241
@@ -5916,6 +5946,8 @@ msgid ""
 "Test with a simple remote command: <command>ssh freefall.FreeBSD.org ls /"
 "usr</command>."
 msgstr ""
+"Prueba con un simple comando remoto:<command>ssh freefall.FreeBSD.org  ls "
+"/usr</command>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:3288
@@ -5946,6 +5978,8 @@ msgid ""
 "<trademark class=\"registered\">Coverity</trademark> Availability for "
 "FreeBSD Committers"
 msgstr ""
+"<trademark class=\"registered\">Coverity</trademark> Disponibilidad para "
+"Committers FreeBSD"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:3301
@@ -5977,11 +6011,15 @@ msgid ""
 "details and usage information, by posting any questions to the mailing list "
 "of the FreeBSD developers."
 msgstr ""
+"Finalmente, todos los desarrolladores de FreeBSD que van a usar <trademark "
+"class=\"registered\">Coverity</trademark> Siempre se les anima a solicitar "
+"más detalles e información de uso, publicando cualquier pregunta en la lista "
+"de correo de los desarrolladores de FreeBSD."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:3322
 msgid "The FreeBSD Committers' Big List of Rules"
-msgstr ""
+msgstr "La gran lista de reglas de los Committers de FreeBSD"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:3324
@@ -5998,17 +6036,18 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: article.translate.xml:3335 article.translate.xml:3442
 msgid "Respect other committers."
-msgstr ""
+msgstr "Respeta a los demás comprometidos."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3339 article.translate.xml:3488
 msgid "Respect other contributors."
-msgstr ""
+msgstr "Respetar a otros contribuyentes."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3343 article.translate.xml:3508
 msgid "Discuss any significant change <emphasis>before</emphasis> committing."
 msgstr ""
+"Discutir cualquier cambio significativo<emphasis>antes</emphasis> de cometer."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3348
@@ -6017,6 +6056,9 @@ msgid ""
 "field in <filename>Makefile</filename> or in <filename>MAINTAINER</filename> "
 "in the top-level directory)."
 msgstr ""
+"Respete los mantenedores existentes (si se enumeran en el "
+"<varname>MAINTAINER</varname>campo en<filename>Makefile</filename>o en "
+"<filename>MAINTAINER</filename> en el directorio de nivel superior)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3356 article.translate.xml:3553
@@ -6025,6 +6067,10 @@ msgid ""
 "requested by a maintainer. Security related changes may override a "
 "maintainer's wishes at the Security Officer's discretion."
 msgstr ""
+"Cualquier cambio en disputa debe ser anulado en espera de la resolución de "
+"la disputa si lo solicita un mantenedor. Los cambios relacionados con la "
+"seguridad pueden anular los deseos del mantenedor a discreción del oficial "
+"de seguridad."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3363
@@ -6037,11 +6083,18 @@ msgid ""
 "the same authority over the FreeBSD-STABLE branch as outlined for the "
 "maintainer in rule #5."
 msgstr ""
+"Los cambios van a FreeBSD-CURRENT antes de FreeBSD-STABLE a menos que el "
+"ingeniero de versiones lo permita específicamente o que no sean aplicables a "
+"FreeBSD-CURRENT. Cualquier cambio no trivial o no urgente que sea aplicable "
+"también debe permitirse que permanezca en FreeBSD-CURRENT durante al menos 3 "
+"días antes de fusionarse para que se puedan realizar las pruebas "
+"suficientes. El ingeniero de versiones tiene la misma autoridad sobre la "
+"rama FreeBSD-STABLE que se describe para el mantenedor en la regla # 5."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3374 article.translate.xml:3613
 msgid "Do not fight in public with other committers; it looks bad."
-msgstr ""
+msgstr "No luche en público con otros cometer; se ve mal."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3379
@@ -6050,16 +6103,19 @@ msgid ""
 "<literal>developers</literal> mailing lists in a timely manner so you know "
 "when a code freeze is in effect."
 msgstr ""
+"Respete todos los códigos congelados y lea el <literal>committers</literal> "
+"y <literal>desarrolladores</literal> listas de correo de manera oportuna "
+"para que sepa cuándo está en vigencia una congelación de código."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3386 article.translate.xml:3662
 msgid "When in doubt on any procedure, ask first!"
-msgstr ""
+msgstr "En caso de duda sobre cualquier procedimiento, ¡pregunte primero!"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3390 article.translate.xml:3677
 msgid "Test your changes before committing them."
-msgstr ""
+msgstr "Pruebe sus cambios antes de realizarlos."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3394 article.translate.xml:3697
@@ -6067,6 +6123,8 @@ msgid ""
 "Do not commit to contributed software without <emphasis>explicit</emphasis> "
 "approval from the respective maintainers."
 msgstr ""
+"No se comprometa con el software contribuido sin <emphasis>explícito</"
+"emphasis> aprobación de los respectivos mantenedores."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:3400
@@ -6094,6 +6152,32 @@ msgid ""
 "disregard requests for review if they feel their original decision to be the "
 "right one."
 msgstr ""
+"Como se señaló, romper algunas de estas reglas puede ser motivo de "
+"suspensión o, en caso de reincidencia, eliminación permanente de los "
+"privilegios de cometer. Los miembros individuales del núcleo tienen el poder "
+"de suspender temporalmente los privilegios de confirmación hasta que el "
+"núcleo en su conjunto tenga la oportunidad de revisar el problema. En caso "
+"de <quote>emergencia</quote> (un confirmador que daña el repositorio), los "
+"meisters del repositorio también pueden realizar una suspensión temporal. "
+"Solo una mayoría de 2/3 del núcleo tiene la autoridad para suspender los "
+"privilegios de confirmación durante más de una semana o para eliminarlos "
+"permanentemente. Esta regla no existe para que el núcleo se convierta en un "
+"grupo de dictadores crueles que pueden deshacerse de los responsables de "
+"manera tan casual como las latas de refresco vacías, sino para darle al "
+"proyecto una especie de mecha de seguridad. Si alguien está fuera de "
+"control, es importante poder lidiar con esto de inmediato en lugar de quedar "
+"paralizado por el debate. En todos los casos, un cometer cuyos privilegios "
+"se suspenden o revocan tiene derecho a una <quote>audición</quote> por "
+"núcleo, determinándose en ese momento la duración total de la suspensión. Un "
+"remitente cuyos privilegios estén suspendidos también puede solicitar una "
+"revisión de la decisión después de 30 días y cada 30 días a partir de "
+"entonces (a menos que el período total de suspensión sea inferior a 30 días)"
+". Un remitente cuyos privilegios hayan sido revocados por completo puede "
+"solicitar una revisión después de que haya transcurrido un período de 6 "
+"meses. Esta política de revisión es <emphasis>estrictamente informal</"
+"emphasis> y, en todos los casos, core se reserva el derecho de actuar o "
+"ignorar las solicitudes de revisión si sienten que su decisión original es "
+"la correcta."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:3428
@@ -6105,11 +6189,18 @@ msgid ""
 "only kick in when it acts as a group, not on an individual basis. As "
 "individuals, the core team members are all committers first and core second."
 msgstr ""
+"En todos los demás aspectos de la operación del proyecto, el núcleo es un "
+"subconjunto de confirmadores y está vinculado por el<emphasis>mismas reglas</"
+"emphasis>. El hecho de que alguien esté en el núcleo no significa que tenga "
+"una dispensación especial para salir de cualquiera de las líneas pintadas "
+"aquí; núcleo<quote>poderes especiales</quote> solo se activa cuando actúa "
+"como grupo, no de forma individual. Como individuos, los miembros del equipo "
+"central son todos comprometidos primero y segundo central."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:3438
 msgid "Details"
-msgstr ""
+msgstr "Detalles"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3444
@@ -6122,6 +6213,14 @@ msgid ""
 "still have to <emphasis>treat</emphasis> other committers with respect at "
 "all times, on public forums and in private email."
 msgstr ""
+"Esto significa que debe tratar a los demás confirmadores como los "
+"desarrolladores de grupos de pares que son. A pesar de nuestros ocasionales "
+"intentos de demostrar lo contrario, uno no llega a cometer un delito siendo "
+"estúpido y nada irrita más que ser tratado de esa manera por uno de sus "
+"compañeros. Si siempre sentimos respeto por los demás o no (y todos tienen "
+"días libres), todavía tenemos que <emphasis>treat</emphasis> otros "
+"committers con respeto en todo momento, en foros públicos y en correos "
+"privados."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3455
@@ -6132,6 +6231,11 @@ msgid ""
 "harmoniously together is just not worth the trade-off by any conceivable "
 "stretch of the imagination."
 msgstr ""
+"Poder trabajar juntos a largo plazo es el mayor activo de este proyecto, uno "
+"mucho más importante que cualquier conjunto de cambios en el código, y "
+"convertir los argumentos sobre el código en problemas que afectan nuestra "
+"capacidad a largo plazo para trabajar juntos en armonía simplemente no vale "
+"la pena. -abandonado por cualquier tramo concebible de la imaginación."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3462
@@ -6151,6 +6255,20 @@ msgid ""
 "into account if it is volunteered by the committers involved in the "
 "complaint."
 msgstr ""
+"Para cumplir con esta regla, no envíe correos electrónicos cuando esté "
+"enojado o se comporte de una manera que pueda parecer a los demás como una "
+"confrontación innecesaria. Primero cálmate, luego piensa en cómo comunicarte "
+"de la manera más efectiva para convencer a las otras personas de que tu lado "
+"del argumento es correcto, no desahogues un poco para sentirte mejor en el "
+"corto plazo a costa de una guerra de llamas a largo plazo. No solo esto es "
+"muy malo <quote>economía energética</quote>, pero las demostraciones "
+"repetidas de agresión pública que perjudican nuestra capacidad para trabajar "
+"bien juntos serán tratadas severamente por el liderazgo del proyecto y "
+"pueden resultar en la suspensión o terminación de sus privilegios de "
+"compromiso. El liderazgo del proyecto tendrá en cuenta tanto las "
+"comunicaciones públicas como las privadas que se le presenten. No buscará la "
+"divulgación de comunicaciones privadas, pero la tendrá en cuenta si es "
+"voluntaria por parte de los autores de la denuncia."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3481
@@ -6159,6 +6277,9 @@ msgid ""
 "slightest, but unity comes first. No amount of code or good advice is worth "
 "trading that away."
 msgstr ""
+"Todo esto nunca es una opción de la que disfrute en lo más mínimo el "
+"liderazgo del proyecto, pero la unidad es lo primero. Ninguna cantidad de "
+"código o buen consejo vale la pena cambiarlo."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3490
@@ -6172,6 +6293,15 @@ msgid ""
 "contributions are as valid and as important as your own. After all, you made "
 "many contributions before you became a committer. Always remember that."
 msgstr ""
+"No siempre fuiste un comprometido. Hubo un tiempo en que contribuiste. "
+"Recuerda eso en todo momento. Recuerde lo que fue tratar de obtener ayuda y "
+"atención. No olvides que tu trabajo como colaborador fue muy importante para "
+"ti. Recuerda cómo fue. No desanime, menosprecie o menosprecie a los "
+"contribuyentes. Trátelos con respeto. Son nuestros comprometidos en espera. "
+"Son tan importantes para el proyecto como los comprometidos. Sus "
+"contribuciones son tan válidas e importantes como las suyas. Después de "
+"todo, hizo muchas contribuciones antes de convertirse en un comprometido. "
+"Siempre recuerda eso."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3502
@@ -6179,6 +6309,8 @@ msgid ""
 "Consider the points raised under <xref linkend=\"respect\"/> and apply them "
 "also to contributors."
 msgstr ""
+"Considere los puntos planteados bajo <xref linkend=\"respect\"/> Y "
+"aplicarlos también a los contribuyentes."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3511
@@ -6195,16 +6327,28 @@ msgid ""
 "emphasis> by those changes. The very best way of making sure that things are "
 "on the right track is to have code reviewed by one or more other committers."
 msgstr ""
+"El repositorio no es donde los cambios se envían inicialmente para su "
+"corrección o se discuten, eso ocurre primero en las listas de correo o "
+"mediante el uso del servicio Phabricator. El compromiso solo ocurrirá una "
+"vez que se haya alcanzado algo parecido al consenso. Esto no significa que "
+"se requiera permiso antes de corregir todos los errores de sintaxis obvios o "
+"errores ortográficos de la página del manual, solo que es bueno desarrollar "
+"una idea de cuándo un cambio propuesto no es tan obvio y requiere algunos "
+"comentarios primero. A la gente realmente no le importan los cambios "
+"radicales si el resultado es claramente mejor que lo que tenían antes, "
+"simplemente no les gusta ser <emphasis>sorprendido</emphasis> por esos "
+"cambios. La mejor manera de asegurarse de que todo va por buen camino es "
+"hacer que el código sea revisado por uno o más confirmadores."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3528
 msgid "When in doubt, ask for review!"
-msgstr ""
+msgstr "En caso de duda, ¡solicite una revisión!"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3532
 msgid "Respect existing maintainers if listed."
-msgstr ""
+msgstr "Respete los mantenedores existentes si están incluidos."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3534
@@ -6241,6 +6385,19 @@ msgid ""
 "argument so that we can get immediately on to the topic of figuring out "
 "whether it was bogus or not."
 msgstr ""
+"Esto puede ser difícil de aceptar en tiempos de conflicto (cuando cada parte "
+"está convencida de que tienen razón, por supuesto), pero un sistema de "
+"control de versiones hace innecesario tener una disputa en curso cuando es "
+"mucho más fácil simplemente revertir la disputa cambie, calme a todos "
+"nuevamente y luego intente averiguar cuál es la mejor manera de proceder. Si "
+"el cambio resulta ser lo mejor después de todo, se puede recuperar "
+"fácilmente. Si resulta que no es así, entonces los usuarios no tenían que "
+"vivir con el falso cambio en el árbol mientras todos debatían afanosamente "
+"sus méritos. Personas <emphasis>muy</emphasis> Rara vez piden retrocesos en "
+"el repositorio, ya que la discusión generalmente expone cambios malos o "
+"controvertidos incluso antes de que ocurra la confirmación, pero en "
+"ocasiones tan raras, el retroceso debe hacerse sin argumentos para que "
+"podamos pasar inmediatamente al tema de resolver si era falso o no."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3578
@@ -6252,6 +6409,13 @@ msgid ""
 "merging so that it can be given sufficient testing. The release engineer has "
 "the same authority over the FreeBSD-STABLE branch as outlined in rule #5."
 msgstr ""
+"Los cambios van a FreeBSD-CURRENT antes de FreeBSD-STABLE a menos que el "
+"ingeniero de versiones lo permita específicamente o que no sean aplicables a "
+"FreeBSD-CURRENT. Cualquier cambio no trivial o no urgente que sea aplicable "
+"también debe permitirse que permanezca en FreeBSD-CURRENT durante al menos 3 "
+"días antes de fusionarse para que se puedan realizar las pruebas "
+"suficientes. El ingeniero de versiones tiene la misma autoridad sobre la "
+"rama FreeBSD-STABLE como se describe en la regla # 5."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3587
@@ -6271,6 +6435,21 @@ msgid ""
 "to make further testing unnecessary (spelling fixes to manual pages, obvious "
 "bug/typo fixes, etc.) In other words, apply common sense."
 msgstr ""
+"Este es otro <quote>no discutas sobre eso</quote> problema, ya que es el "
+"ingeniero de versiones el responsable en última instancia (y recibe una "
+"paliza) si un cambio resulta ser malo. Respete esto y brinde al ingeniero de "
+"versiones su total cooperación cuando se trata de la rama FreeBSD-STABLE. El "
+"manejo de FreeBSD-STABLE puede parecer con frecuencia demasiado conservador "
+"para el observador casual, pero también tenga en cuenta el hecho de que se "
+"supone que el conservadurismo es el sello distintivo de FreeBSD-STABLE y que "
+"se aplican reglas diferentes a las de FreeBSD-CURRENT. Tampoco tiene sentido "
+"que FreeBSD-CURRENT sea un campo de pruebas si los cambios se fusionan con "
+"FreeBSD-STABLE inmediatamente. Los cambios necesitan la oportunidad de ser "
+"probados por los desarrolladores de FreeBSD-CURRENT, así que deje pasar un "
+"tiempo antes de fusionarse, a menos que la corrección de FreeBSD-STABLE sea "
+"crítica, urgente o tan obvia como para hacer innecesarias más pruebas "
+"corrección de errores / errores tipográficos, etc.) En otras palabras, "
+"aplique el sentido común."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3606
@@ -6305,6 +6484,28 @@ msgid ""
 "party to resolve the dispute. All parties involved must then agree to be "
 "bound by the decision reached by this third party."
 msgstr ""
+"Este proyecto tiene una imagen pública que defender y esa imagen es muy "
+"importante para todos nosotros, especialmente si queremos seguir atrayendo "
+"nuevos miembros. Habrá ocasiones en las que, a pesar de los mejores intentos "
+"de autocontrol de todos, se pierden los ánimos y se intercambian palabras de "
+"enojo. Lo mejor que se puede hacer en tales casos es minimizar los efectos "
+"de esto hasta que todos se hayan enfriado nuevamente. No transmita palabras "
+"de enojo en público y no reenvíe correspondencia privada u otras "
+"comunicaciones privadas a listas de correo públicas, alias de correo, "
+"canales de mensajería instantánea o sitios de redes sociales. Lo que la "
+"gente dice cara a cara a menudo tiene mucho menos contenido de azúcar que lo "
+"que dirían en público y, por lo tanto, tales comunicaciones no tienen cabida "
+"allí; solo sirven para inflamar una situación que ya es mala. Si la persona "
+"que envía un flame-o-gramo al menos tuvo la gracia de enviarlo en privado, "
+"entonces tenga la gracia de mantenerlo en privado. Si siente que otro "
+"desarrollador lo está tratando injustamente y le está causando angustia, "
+"plantee el asunto con el núcleo en lugar de hacerlo público. Core hará todo "
+"lo posible para jugar a los pacificadores y hacer que las cosas vuelvan a la "
+"cordura. En los casos en que la disputa implique un cambio en la base de "
+"código y los participantes no parezcan estar llegando a un acuerdo amistoso, "
+"el núcleo puede designar a un tercero de mutuo acuerdo para resolver la "
+"disputa. Todas las partes involucradas deben aceptar quedar vinculadas por "
+"la decisión tomada por este tercero."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3646
@@ -6324,6 +6525,13 @@ msgid ""
 "commit privileges suspended until they get back from the FreeBSD Happy "
 "Reeducation Camp we run in Greenland."
 msgstr ""
+"Realizar cambios no aprobados durante una congelación de código es un gran "
+"error y se espera que los confirmadores se mantengan actualizados sobre lo "
+"que está sucediendo antes de saltar después de una larga ausencia y "
+"comprometer 10 megabytes de material acumulado. A las personas que abusen de "
+"esto de forma regular se les suspenderán sus privilegios de compromiso hasta "
+"que regresen del Happy Reeducation Camp de FreeBSD que llevamos a cabo en "
+"Groenlandia."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3664
@@ -6336,6 +6544,12 @@ msgid ""
 "quote> We already know you are an intelligent person; otherwise, you would "
 "not be a committer."
 msgstr ""
+"Se cometen muchos errores porque alguien tiene prisa y simplemente asume que "
+"sabe la forma correcta de hacer algo. Si no lo ha hecho antes, es muy "
+"probable que no sepa realmente la forma en que hacemos las cosas y realmente "
+"necesite preguntar primero o se avergonzará por completo en público. No hay "
+"vergüenza en preguntar <quote>¿Cómo diablos hago esto?</quote> Ya sabemos "
+"que eres una persona inteligente; de lo contrario, no sería un consumador."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3679
@@ -6352,6 +6566,18 @@ msgid ""
 "architectures are added to the FreeBSD supported platforms list, the "
 "appropriate shared testing resources will be made available."
 msgstr ""
+"Esto puede parecer obvio, pero si realmente fuera tan obvio, probablemente "
+"no veríamos tantos casos de personas que claramente no lo hacen. Si sus "
+"cambios son en el kernel, asegúrese de que aún puede compilar tanto GENERIC "
+"como LINT. Si sus cambios están en cualquier otro lugar, asegúrese de que "
+"aún puede hacer mundo. Si sus cambios son en una rama, asegúrese de que la "
+"prueba se realice con una máquina que ejecute ese código. Si tiene un cambio "
+"que también puede romper otra arquitectura, asegúrese de probar en todas las "
+"arquitecturas compatibles. por favor refiérase a <link xlink:href=\"https"
+"://www.FreeBSD.org/internal/\">Página interna de FreeBSD</link> para obtener "
+"una lista de los recursos disponibles. A medida que se agregan otras "
+"arquitecturas a la lista de plataformas compatibles con FreeBSD, los "
+"recursos de prueba compartidos apropiados estarán disponibles."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3701
@@ -6360,6 +6586,9 @@ msgid ""
 "<filename>src/crypto</filename>, or <filename>src/sys/contrib</filename> "
 "trees."
 msgstr ""
+"El software contribuido es todo lo que <filename>src/"
+"contrib</filename>,<filename>src/crypto</filename>, o <filename>src/sys/"
+"contrib</filename> arboles."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3706
@@ -6370,6 +6599,12 @@ msgid ""
 "patches upstream to the vendor. Patches may be committed to FreeBSD first "
 "with permission of the maintainer."
 msgstr ""
+"Los árboles mencionados anteriormente son para software contribuido "
+"generalmente importado a una sucursal de un proveedor. Cometer algo allí "
+"puede causar dolores de cabeza innecesarios al importar versiones más nuevas "
+"del software. En general, considere enviar parches en sentido ascendente al "
+"proveedor. Los parches se pueden enviar a FreeBSD primero con el permiso del "
+"desarrollador."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3714
@@ -6382,6 +6617,14 @@ msgid ""
 "merge thereafter more difficult: such patches need to be manually re-"
 "verified every import."
 msgstr ""
+"Las razones para modificar el software ascendente van desde querer un "
+"control estricto sobre una dependencia estrechamente acoplada hasta la falta "
+"de portabilidad en la distribución del código del repositorio canónico. "
+"Independientemente de la razón, el esfuerzo por minimizar la carga de "
+"mantenimiento de la horquilla es útil para los compañeros de mantenimiento. "
+"Evite realizar cambios triviales o estéticos en los archivos, ya que hace "
+"que cada combinación a partir de entonces sea más difícil: dichos parches "
+"deben volver a verificarse manualmente en cada importación."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3724
@@ -6391,11 +6634,16 @@ msgid ""
 "<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-arch"
 "\">FreeBSD architecture and design mailing list</link> and ask."
 msgstr ""
+"Si una pieza de software en particular carece de un mantenedor, se le anima "
+"a asumir la propiedad. Si no está seguro del correo electrónico de "
+"mantenimiento actual <link xlink:href=\"http://lists.FreeBSD.org/mailman/"
+"listinfo/freebsd-arch\">Lista de correo de arquitectura y diseño de FreeBSD</"
+"link> y pregunte."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:3733
 msgid "Policy on Multiple Architectures"
-msgstr ""
+msgstr "Política sobre arquitecturas múltiples"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:3735
@@ -6405,6 +6653,10 @@ msgid ""
 "operating system. In an effort to make it easier to keep FreeBSD portable "
 "across the platforms we support, core has developed this mandate:"
 msgstr ""
+"FreeBSD ha agregado varios puertos de arquitectura nueva durante los ciclos "
+"de lanzamiento recientes y realmente ya no es un <trademark>i386</trademark> "
+"sistema operativo céntrico. En un esfuerzo por facilitar la portabilidad de "
+"FreeBSD en las plataformas que apoyamos, core ha desarrollado este mandato:"
 
 #. (itstool) path: blockquote/para
 #: article.translate.xml:3742
@@ -6415,6 +6667,12 @@ msgid ""
 "the primary reference platforms, before it may be committed to the source "
 "tree."
 msgstr ""
+"Nuestra plataforma de referencia de 32 bits es i386 y nuestra plataforma de "
+"referencia de 64 bits es amd64. El trabajo de diseño importante (incluidos "
+"los cambios importantes de API y ABI) debe demostrar su valía en al menos "
+"una plataforma de 32 bits y al menos una de 64 bits, preferiblemente las "
+"plataformas de referencia primarias, antes de que se pueda comprometer con "
+"el árbol de origen."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:3750
@@ -6425,6 +6683,11 @@ msgid ""
 "different DMA and cache implementations, hardware page tables versus "
 "software TLB management etc."
 msgstr ""
+"Se eligieron las plataformas i386 y amd64 debido a que están más disponibles "
+"para los desarrolladores y como representantes de diseños de sistemas y "
+"procesadores más diversos: big versus little endian, archivo de registro "
+"versus pila de registro, diferentes implementaciones de caché y DMA, tablas "
+"de páginas de hardware versus administración de TLB de software etc."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:3757
@@ -6432,6 +6695,8 @@ msgid ""
 "We will continue to re-evaluate this policy as cost and availability of the "
 "64-bit platforms change."
 msgstr ""
+"Continuaremos reevaluando esta política a medida que cambien el costo y la "
+"disponibilidad de las plataformas de 64 bits."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:3760
@@ -6443,11 +6708,18 @@ msgid ""
 "feature support on architectures at release-time are more strict than the "
 "rules for changes during the development process."
 msgstr ""
+"Los desarrolladores también deben conocer nuestra Política de niveles para "
+"el soporte a largo plazo de arquitecturas de hardware. Las reglas aquí están "
+"destinadas a proporcionar una guía durante el proceso de desarrollo y son "
+"distintas de los requisitos para las características y arquitecturas "
+"enumeradas en esa sección. Las reglas de nivel para el soporte de "
+"características en arquitecturas en el momento del lanzamiento son más "
+"estrictas que las reglas de cambios durante el proceso de desarrollo."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:3771
 msgid "Other Suggestions"
-msgstr ""
+msgstr "Otras sugerencias"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:3773
@@ -6457,6 +6729,10 @@ msgid ""
 "correct by running <command>make lint</command> and <package>textproc/igor</"
 "package>."
 msgstr ""
+"Al realizar cambios en la documentación, utilice un corrector ortográfico "
+"antes de realizar la confirmación. Para todos los documentos XML, verifique "
+"que las directivas de formato sean correctas ejecutando <command>make "
+"lint</command>y<package>textproc/igor</package>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:3779
@@ -6466,6 +6742,10 @@ msgid ""
 "cross references and file references are correct and that the man page has "
 "all of the appropriate <varname>MLINK</varname>s installed."
 msgstr ""
+"Para páginas de manual, ejecute <package>sysutils/manck</package>y<package>"
+"textproc/igor</package> sobre la página del manual para verificar que todas "
+"las referencias cruzadas y las referencias de archivos sean correctas y que "
+"la página del manual tenga todos los <varname>MLINK</varname>s instalado."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:3786
@@ -6479,11 +6759,21 @@ msgid ""
 "Instead, make any style or whitespace changes in separate commits that are "
 "clearly labeled as such in the commit message."
 msgstr ""
+"No mezcle arreglos de estilo con nuevas funciones. Una corrección de estilo "
+"es cualquier cambio que no modifica la funcionalidad del código. La "
+"combinación de los cambios confunde el cambio de funcionalidad al solicitar "
+"diferencias entre las revisiones, lo que puede ocultar cualquier error "
+"nuevo. No incluya cambios de espacio en blanco con cambios de contenido en "
+"las confirmaciones de <filename>doc</filename>. El desorden adicional en las "
+"diferencias hace que el trabajo de los traductores sea mucho más difícil. En "
+"su lugar, realice cambios de estilo o espacios en blanco en confirmaciones "
+"separadas que estén claramente etiquetadas como tales en el mensaje de "
+"confirmación."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:3799
 msgid "Deprecating Features"
-msgstr ""
+msgstr "Funciones obsoletas"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:3801
@@ -6491,6 +6781,8 @@ msgid ""
 "When it is necessary to remove functionality from software in the base "
 "system, follow these guidelines whenever possible:"
 msgstr ""
+"Cuando sea necesario eliminar la funcionalidad del software en el sistema "
+"base, siga estas pautas siempre que sea posible:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3807
@@ -6499,6 +6791,9 @@ msgid ""
 "option, utility, or interface is deprecated. Use of the deprecated feature "
 "generates a warning."
 msgstr ""
+"En la página del manual y posiblemente en las notas de la versión se "
+"menciona que la opción, utilidad o interfaz está obsoleta. El uso de la "
+"función obsoleta genera una advertencia."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3814
@@ -6506,6 +6801,8 @@ msgid ""
 "The option, utility, or interface is preserved until the next major (point "
 "zero) release."
 msgstr ""
+"La opción, utilidad o interfaz se conserva hasta la próxima versión "
+"principal (punto cero)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3819
@@ -6514,16 +6811,19 @@ msgid ""
 "now obsolete. It is also generally a good idea to note its removal in the "
 "release notes."
 msgstr ""
+"La opción, utilidad o interfaz se elimina y ya no se documenta. Ahora está "
+"obsoleto. También es generalmente una buena idea anotar su eliminación en "
+"las notas de la versión."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:3828
 msgid "Privacy and Confidentiality"
-msgstr ""
+msgstr "Privacidad y confidencialidad"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3832
 msgid "Most FreeBSD business is done in public."
-msgstr ""
+msgstr "La mayoría de los negocios de FreeBSD se realizan en público."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3834
@@ -6532,11 +6832,16 @@ msgid ""
 "can anyone use the source code, but that most of the development process is "
 "open to public scrutiny."
 msgstr ""
+"FreeBSD es un <emphasis>abierto</emphasis> proyecto. Lo que significa que no "
+"solo cualquiera puede usar el código fuente, sino que la mayor parte del "
+"proceso de desarrollo está abierto al escrutinio público."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3841
 msgid "Certain sensitive matters must remain private or held under embargo."
 msgstr ""
+"Ciertos asuntos delicados deben permanecer privados o mantenidos bajo "
+"embargo."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3844
@@ -6548,6 +6853,12 @@ msgid ""
 "collaborators or has a specific time limit. Mostly though, it is a matter of "
 "not releasing private communications."
 msgstr ""
+"Lamentablemente, no puede haber una transparencia total. Como desarrollador "
+"de FreeBSD, tendrá un cierto grado de acceso privilegiado a la información. "
+"En consecuencia, se espera que respete ciertos requisitos de "
+"confidencialidad. A veces la necesidad de confidencialidad proviene de "
+"colaboradores externos o tiene un límite de tiempo específico. Sin embargo, "
+"sobre todo, se trata de no liberar comunicaciones privadas."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3855
@@ -6555,6 +6866,8 @@ msgid ""
 "The Security Officer has sole control over the release of security "
 "advisories."
 msgstr ""
+"El oficial de seguridad tiene el control exclusivo sobre la publicación de "
+"avisos de seguridad."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3858
@@ -6568,12 +6881,24 @@ msgid ""
 "advisories. He may request help under condition of confidentiality from any "
 "developer with relevant knowledge to prepare security fixes."
 msgstr ""
+"Donde hay problemas de seguridad que afectan a muchos sistemas operativos "
+"diferentes, FreeBSD frecuentemente depende del acceso temprano para poder "
+"preparar avisos para el lanzamiento coordinado. A menos que se pueda confiar "
+"en que los desarrolladores de FreeBSD mantendrán la seguridad, dicho acceso "
+"temprano no estará disponible. El oficial de seguridad es responsable de "
+"controlar el acceso previo al lanzamiento a la información sobre "
+"vulnerabilidades y de programar el lanzamiento de todos los avisos. Puede "
+"solicitar ayuda bajo condición de confidencialidad de cualquier "
+"desarrollador con conocimientos relevantes para preparar soluciones de "
+"seguridad."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3872
 msgid ""
 "Communications with Core are kept confidential for as long as necessary."
 msgstr ""
+"Las comunicaciones con Core se mantienen confidenciales durante el tiempo "
+"que sea necesario."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3875
@@ -6584,6 +6909,12 @@ msgid ""
 "sensitive details. Records of some particularly sensitive subjects may not "
 "be reported on at all and will be retained only in Core's private archives."
 msgstr ""
+"Las comunicaciones al núcleo inicialmente se tratarán de forma confidencial. "
+"Sin embargo, con el tiempo, la mayor parte del negocio de Core se resumirá "
+"en informes básicos mensuales o trimestrales. Se tendrá cuidado de no hacer "
+"públicos los detalles sensibles. Es posible que los registros de algunos "
+"temas particularmente sensibles no se informen en absoluto y se conservarán "
+"solo en los archivos privados de Core."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3885
@@ -6591,6 +6922,8 @@ msgid ""
 "Non-disclosure Agreements may be required for access to certain commercially "
 "sensitive data."
 msgstr ""
+"Es posible que se requieran acuerdos de no divulgación para acceder a "
+"ciertos datos comercialmente sensibles."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3888
@@ -6599,11 +6932,15 @@ msgid ""
 "Non-Disclosure Agreement. The FreeBSD Foundation legal staff must be "
 "consulted before any binding agreements are entered into."
 msgstr ""
+"El acceso a ciertos datos comercialmente sensibles solo puede estar "
+"disponible bajo un Acuerdo de confidencialidad. Se debe consultar al "
+"personal legal de la Fundación FreeBSD antes de celebrar cualquier acuerdo "
+"vinculante."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3895
 msgid "Private communications must not be made public without permission."
-msgstr ""
+msgstr "Las comunicaciones privadas no deben hacerse públicas sin permiso."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3898
@@ -6614,6 +6951,12 @@ msgid ""
 "mailing list, or posting it to a forum or website that can be accessed by "
 "other than the original correspondents."
 msgstr ""
+"Más allá de los requisitos específicos anteriores, existe una expectativa "
+"general de no publicar comunicaciones privadas entre desarrolladores sin el "
+"consentimiento de todas las partes involucradas. Pida permiso antes de "
+"reenviar un mensaje a una lista de correo pública o publicarlo en un foro o "
+"sitio web al que puedan acceder otras personas que no sean los "
+"corresponsales originales."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3908
@@ -6621,6 +6964,8 @@ msgid ""
 "Communications on project-only or restricted access channels must be kept "
 "private."
 msgstr ""
+"Las comunicaciones en canales de acceso restringido o solo para proyectos "
+"deben mantenerse privadas."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3911
@@ -6630,11 +6975,15 @@ msgid ""
 "access IRC channels are considered private communications. Permission is "
 "required to publish material from these sources."
 msgstr ""
+"De manera similar a las comunicaciones personales, ciertos canales de "
+"comunicación internos, incluidas las listas de correo de FreeBSD Committer y "
+"los canales de IRC de acceso restringido, se consideran comunicaciones "
+"privadas. Se requiere permiso para publicar material de estas fuentes."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3920
 msgid "Core may approve publication."
-msgstr ""
+msgstr "Core puede aprobar la publicación."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3922
@@ -6644,11 +6993,15 @@ msgid ""
 "may approve release of such private matters that merit more general "
 "publication."
 msgstr ""
+"Cuando no sea práctico obtener permiso debido a la cantidad de "
+"corresponsales o cuando el permiso para publicar se niegue sin razón, Core "
+"puede aprobar la divulgación de tales asuntos privados que merecen una "
+"publicación más general."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:3933
 msgid "Support for Multiple Architectures"
-msgstr ""
+msgstr "Soporte para múltiples arquitecturas"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:3935
@@ -6665,11 +7018,24 @@ msgid ""
 "architectures while remaining strong in a few key architectures that are "
 "seen as the FreeBSD <quote>target audience</quote>."
 msgstr ""
+"FreeBSD es un sistema operativo altamente portátil destinado a funcionar en "
+"muchos tipos diferentes de arquitecturas de hardware. Mantener una "
+"separación limpia del código dependiente de la máquina (MD) y el código "
+"independiente de la máquina (MI), así como minimizar el código MD, es una "
+"parte importante de nuestra estrategia para permanecer ágiles con respecto a "
+"las tendencias actuales de hardware. Cada nueva arquitectura de hardware "
+"soportada por FreeBSD aumenta sustancialmente el costo del mantenimiento del "
+"código, el soporte de la cadena de herramientas y la ingeniería de "
+"versiones. También aumenta drásticamente el costo de las pruebas efectivas "
+"de los cambios del kernel. Como tal, existe una fuerte motivación para "
+"diferenciar entre clases de soporte para varias arquitecturas mientras se "
+"mantiene fuerte en algunas arquitecturas clave que se ven como FreeBSD "
+"<quote>Público objetivo</quote>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:3950
 msgid "Statement of General Intent"
-msgstr ""
+msgstr "Declaración de intención general"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:3952
@@ -6686,6 +7052,18 @@ msgid ""
 "terms of the real-world maintenance cost associated with additional platform "
 "support."
 msgstr ""
+"El proyecto FreeBSD apunta a \"estaciones de trabajo comerciales listas para "
+"usar (COTS) de calidad de producción, servidores y sistemas integrados de "
+"alta gama\". Al mantener un enfoque en un conjunto estrecho de arquitecturas "
+"de interés en estos entornos, el Proyecto FreeBSD puede mantener altos "
+"niveles de calidad, estabilidad y rendimiento, así como minimizar la carga "
+"en varios equipos de soporte en el proyecto, como el equipo de puertos, "
+"equipo de documentación, oficial de seguridad y equipos de ingenieros de "
+"liberación. La diversidad en el soporte de hardware amplía las opciones para "
+"los consumidores de FreeBSD al ofrecer nuevas características y "
+"oportunidades de uso, pero estos beneficios siempre deben considerarse "
+"cuidadosamente en términos del costo de mantenimiento del mundo real "
+"asociado con el soporte de plataforma adicional."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:3966
@@ -6700,11 +7078,21 @@ msgid ""
 "As a result, a platform target might be assigned to different tiers on "
 "concurrent stable branches."
 msgstr ""
+"El Proyecto FreeBSD diferencia los objetivos de la plataforma en cuatro "
+"niveles. Cada nivel incluye una lista de garantías en las que los "
+"consumidores pueden confiar, así como las obligaciones del Proyecto y los "
+"desarrolladores para cumplir con esas garantías. Estas listas definen las "
+"garantías mínimas para cada nivel. El Proyecto y los desarrolladores pueden "
+"proporcionar niveles adicionales de soporte más allá de las garantías "
+"mínimas para un nivel determinado, pero dicho soporte adicional no está "
+"garantizado. Cada objetivo de plataforma se asigna a un nivel específico "
+"para cada rama estable. Como resultado, un destino de plataforma podría "
+"asignarse a diferentes niveles en ramas estables concurrentes."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:3980
 msgid "Platform Targets"
-msgstr ""
+msgstr "Objetivos de plataforma"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:3982
@@ -6720,6 +7108,19 @@ msgid ""
 "an ABI may be defined by specifications such as the layout of C++ exception "
 "objects or calling conventions for C functions."
 msgstr ""
+"El soporte para una plataforma de hardware consta de dos componentes: el "
+"soporte del kernel y las interfaces binarias de aplicaciones (ABI) del área "
+"de usuario. El soporte de la plataforma del kernel incluye las cosas "
+"necesarias para ejecutar un kernel FreeBSD en una plataforma de hardware, "
+"como la administración de memoria virtual dependiente de la máquina y los "
+"controladores de dispositivo. Una ABI de área de usuario especifica una "
+"interfaz para que los procesos de usuario interactúen con un núcleo de "
+"FreeBSD y bibliotecas del sistema base. Una ABI de área de usuario incluye "
+"interfaces de llamada al sistema, el diseño y la semántica de las "
+"estructuras de datos públicas y el diseño y la semántica de los argumentos "
+"que se pasan a las subrutinas. Algunos componentes de una ABI pueden "
+"definirse mediante especificaciones como el diseño de objetos de excepción "
+"de C ++ o convenciones de llamada para funciones de C."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:3996
@@ -6729,6 +7130,10 @@ msgid ""
 "data structures and the layout and semantics of arguments to public "
 "functions within the kernel itself."
 msgstr ""
+"Un kernel de FreeBSD también usa una ABI (a veces denominada interfaz "
+"binaria del kernel (KBI)) que incluye la semántica y los diseños de las "
+"estructuras de datos públicas y el diseño y la semántica de los argumentos "
+"de las funciones públicas dentro del propio kernel."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4002
@@ -6740,6 +7145,13 @@ msgid ""
 "generally shares certain properties with the kernel ABI such as the C "
 "calling convention, sizes of basic types, etc."
 msgstr ""
+"Un kernel de FreeBSD puede admitir múltiples ABI de usuario. Por ejemplo, el "
+"kernel amd64 de FreeBSD es compatible con las ABI de área de usuario amd64 e "
+"i386 de FreeBSD, así como con las ABI de área de usuario de Linux x86_64 e "
+"i386. Un kernel de FreeBSD debería admitir un <quote>nativo</quote> ABI como "
+"ABI predeterminado. El nativo <quote>ABI</quote> generalmente comparte "
+"ciertas propiedades con la ABI del kernel, como la convención de llamadas de "
+"C, tamaños de tipos básicos, etc."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4010
@@ -6747,11 +7159,14 @@ msgid ""
 "Tiers are defined for both kernels and userland ABIs. In the common case, a "
 "platform's kernel and FreeBSD ABIs are assigned to the same tier."
 msgstr ""
+"Los niveles se definen tanto para los núcleos como para las ABI del área de "
+"usuario. En el caso común, el kernel de una plataforma y las ABI de FreeBSD "
+"se asignan al mismo nivel."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:4016
 msgid "Tier 1: Fully-Supported Architectures"
-msgstr ""
+msgstr "Nivel 1: Arquitecturas totalmente compatibles"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4018
@@ -6762,6 +7177,12 @@ msgid ""
 "all aspects of the FreeBSD operating system, including installation and "
 "development environments."
 msgstr ""
+"Las plataformas de nivel 1 son las plataformas FreeBSD más maduras. Están "
+"respaldados por el oficial de seguridad, la ingeniería de liberación y los "
+"equipos de administración del puerto. Se espera que las arquitecturas de "
+"nivel 1 sean de calidad de producción con respecto a todos los aspectos del "
+"sistema operativo FreeBSD, incluidos los entornos de instalación y "
+"desarrollo."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4025
@@ -6769,6 +7190,8 @@ msgid ""
 "The FreeBSD Project provides the following guarantees to consumers of Tier 1 "
 "platforms:"
 msgstr ""
+"El Proyecto FreeBSD ofrece las siguientes garantías a los consumidores de "
+"plataformas Tier 1:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4030
@@ -6776,6 +7199,8 @@ msgid ""
 "Official FreeBSD release images will be provided by the release engineering "
 "team."
 msgstr ""
+"Las imágenes oficiales de lanzamiento de FreeBSD serán proporcionadas por el "
+"equipo de ingenieros de lanzamiento."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4034
@@ -6783,6 +7208,8 @@ msgid ""
 "Binary updates and source patches for Security Advisories and Errata Notices "
 "will be provided for supported releases."
 msgstr ""
+"Se proporcionarán actualizaciones binarias y parches de origen para avisos "
+"de seguridad y avisos de erratas para las versiones compatibles."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4039
@@ -6790,6 +7217,8 @@ msgid ""
 "Source patches for Security Advisories will be provided for supported "
 "branches."
 msgstr ""
+"Se proporcionarán parches de origen para avisos de seguridad para las "
+"sucursales admitidas."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4043
@@ -6797,6 +7226,9 @@ msgid ""
 "Binary updates and source patches for cross-platform Security Advisories "
 "will typically be provided at the time of the announcement."
 msgstr ""
+"Las actualizaciones binarias y los parches de origen para los avisos de "
+"seguridad multiplataforma se proporcionarán normalmente en el momento del "
+"anuncio."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4048
@@ -6807,6 +7239,13 @@ msgid ""
 "default install. If compatibility shims are not provided for an ABI change, "
 "the lack of shims will be clearly documented in the release notes."
 msgstr ""
+"Los cambios en las ABI del área de usuario generalmente incluirán ajustes de "
+"compatibilidad para garantizar el funcionamiento correcto de los binarios "
+"compilados en cualquier rama estable donde la plataforma sea de nivel 1. Es "
+"posible que estos ajustes no estén habilitados en la instalación "
+"predeterminada. Si no se proporcionan calzas de compatibilidad para un "
+"cambio de ABI, la falta de calzas se documentará claramente en las notas de "
+"la versión."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4057
@@ -6816,6 +7255,10 @@ msgid ""
 "oldest supported release on the branch. Note that not all parts of the "
 "kernel ABI are protected."
 msgstr ""
+"Los cambios en ciertas partes de la ABI del kernel incluirán ajustes de "
+"compatibilidad para garantizar el funcionamiento correcto de los módulos del "
+"kernel compilados con la versión compatible más antigua de la rama. Tenga en "
+"cuenta que no todas las partes de la ABI del kernel están protegidas."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4064
@@ -6824,6 +7267,9 @@ msgid ""
 "ports team. For embedded architectures, these packages may be cross-built "
 "from a different architecture."
 msgstr ""
+"El equipo de ports proporcionará paquetes binarios oficiales para software "
+"de terceros. Para las arquitecturas integradas, estos paquetes pueden "
+"construirse de forma cruzada a partir de una arquitectura diferente."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4070
@@ -6831,6 +7277,8 @@ msgid ""
 "Most relevant ports should either build or have the appropriate filters to "
 "prevent inappropriate ones from building."
 msgstr ""
+"Los puertos más relevantes deberían construir o tener los filtros apropiados "
+"para evitar que se construyan otros inapropiados."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4075
@@ -6838,6 +7286,9 @@ msgid ""
 "New features which are not inherently platform-specific will be fully "
 "functional on all Tier 1 architectures."
 msgstr ""
+"Las nuevas características que no son inherentemente específicas de la "
+"plataforma serán completamente funcionales en todas las arquitecturas de "
+"Nivel 1."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4080
@@ -6846,6 +7297,10 @@ msgid ""
 "stable branches may be removed in newer major versions. Such removals will "
 "be clearly documented in the release notes."
 msgstr ""
+"Las características y las correcciones de compatibilidad utilizadas por los "
+"binarios compilados contra ramas estables más antiguas pueden eliminarse en "
+"versiones principales más recientes. Dichas eliminaciones se documentarán "
+"claramente en las notas de la versión."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4086
@@ -6853,11 +7308,13 @@ msgid ""
 "Tier 1 platforms should be fully documented. Basic operations will be "
 "documented in the FreeBSD Handbook."
 msgstr ""
+"Las plataformas de nivel 1 deben estar completamente documentadas. Las "
+"operaciones básicas se documentarán en el manual de FreeBSD."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4090
 msgid "Tier 1 platforms will be included in the source tree."
-msgstr ""
+msgstr "Las plataformas de nivel 1 se incluirán en el árbol de fuentes."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4094
@@ -6866,6 +7323,10 @@ msgid ""
 "an external toolchain. If an external toolchain is required, official binary "
 "packages for an external toolchain will be provided."
 msgstr ""
+"Las plataformas de nivel 1 deben ser autohospedables, ya sea a través de la "
+"cadena de herramientas en árbol o una cadena de herramientas externa. Si se "
+"requiere una cadena de herramientas externa, se proporcionarán paquetes "
+"binarios oficiales para una cadena de herramientas externa."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4101
@@ -6873,6 +7334,8 @@ msgid ""
 "To maintain maturity of Tier 1 platforms, the FreeBSD Project will maintain "
 "the following resources to support development:"
 msgstr ""
+"Para mantener la madurez de las plataformas de Nivel 1, el Proyecto FreeBSD "
+"mantendrá los siguientes recursos para apoyar el desarrollo:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4107
@@ -6882,6 +7345,10 @@ msgid ""
 "substitute an emulator available in the FreeBSD.org cluster for actual "
 "hardware."
 msgstr ""
+"Cree y pruebe el soporte de automatización, ya sea en el clúster de "
+"FreeBSD.org o en alguna otra ubicación fácilmente disponible para todos los "
+"desarrolladores. Las plataformas integradas pueden sustituir un emulador "
+"disponible en el clúster de FreeBSD.org por hardware real."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4114 article.translate.xml:4213
@@ -6889,6 +7356,8 @@ msgid ""
 "Inclusion in the <userinput>make universe</userinput> and <userinput>make "
 "tinderbox</userinput> targets."
 msgstr ""
+"Inclusión en el <userinput>make universe</userinput> y <userinput>make "
+"tinderbox</userinput>objetivos."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4118
@@ -6896,6 +7365,8 @@ msgid ""
 "Dedicated hardware in one of the FreeBSD clusters for package building "
 "(either natively or via qemu-user)."
 msgstr ""
+"Hardware dedicado en uno de los clústeres de FreeBSD para la construcción de "
+"paquetes (ya sea de forma nativa o mediante qemu-user)."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4124
@@ -6903,6 +7374,8 @@ msgid ""
 "Collectively, developers are required to provide the following to maintain "
 "the Tier 1 status of a platform:"
 msgstr ""
+"En conjunto, los desarrolladores deben proporcionar lo siguiente para "
+"mantener el estado de Nivel 1 de una plataforma:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4129
@@ -6910,6 +7383,8 @@ msgid ""
 "Changes to the source tree should not knowingly break the build of a Tier 1 "
 "platform."
 msgstr ""
+"Los cambios en el árbol de fuentes no deben romper conscientemente la "
+"construcción de una plataforma de Nivel 1."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4133
@@ -6917,6 +7392,8 @@ msgid ""
 "Tier 1 architectures must have a mature, healthy ecosystem of users and "
 "active developers."
 msgstr ""
+"Las arquitecturas de nivel 1 deben tener un ecosistema maduro y saludable de "
+"usuarios y desarrolladores activos."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4137
@@ -6926,6 +7403,11 @@ msgid ""
 "systems are commonly available for the platform in question, or it can mean "
 "cross-builds hosted on some other Tier 1 architecture."
 msgstr ""
+"Los desarrolladores deberían poder crear paquetes en sistemas de Nivel 1 no "
+"integrados y comúnmente disponibles. Esto puede significar compilaciones "
+"nativas si los sistemas no integrados están comúnmente disponibles para la "
+"plataforma en cuestión, o puede significar compilaciones cruzadas alojadas "
+"en alguna otra arquitectura de Nivel 1."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4145
@@ -6934,6 +7416,10 @@ msgid ""
 "compatibility for existing binaries should be provided via use of symbol "
 "versioning or shared library version bumps."
 msgstr ""
+"Los cambios no pueden romper la ABI del área de usuario. Si se requiere un "
+"cambio de ABI, la compatibilidad de ABI para binarios existentes debe "
+"proporcionarse mediante el uso de versiones de símbolos o cambios de versión "
+"de biblioteca compartida."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4151
@@ -6942,11 +7428,15 @@ msgid ""
 "kernel ABI. If a kernel ABI change is required, the change should be "
 "modified to preserve functionality of existing kernel modules."
 msgstr ""
+"Los cambios combinados en ramas estables no pueden romper las partes "
+"protegidas de la ABI del kernel. Si se requiere un cambio de ABI del kernel, "
+"el cambio debe modificarse para preservar la funcionalidad de los módulos "
+"del kernel existentes."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:4160
 msgid "Tier 2: Developmental and Niche Architectures"
-msgstr ""
+msgstr "Nivel 2: Arquitecturas de desarrollo y de nicho"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4162
@@ -6955,6 +7445,9 @@ msgid ""
 "not supported by the security officer, release engineering, and port "
 "management teams."
 msgstr ""
+"Las plataformas de nivel 2 son plataformas FreeBSD funcionales, pero menos "
+"maduras. No cuentan con el apoyo del oficial de seguridad, la ingeniería de "
+"liberación y los equipos de administración del puerto."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4166
@@ -6965,6 +7458,12 @@ msgid ""
 "continue to maintain the system in a Production Quality state diminishes. "
 "Well-supported niche architectures may also be Tier 2."
 msgstr ""
+"Las plataformas de nivel 2 pueden ser candidatas a plataformas de nivel 1 "
+"que aún se encuentran en desarrollo activo. Las arquitecturas que llegan al "
+"final de su vida útil también pueden pasar del estado de Nivel 1 al estado "
+"de Nivel 2 a medida que disminuye la disponibilidad de recursos para "
+"continuar manteniendo el sistema en un estado de Calidad de producción. Las "
+"arquitecturas de nicho bien soportadas también pueden ser de Nivel 2."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4173
@@ -6972,6 +7471,8 @@ msgid ""
 "The FreeBSD Project provides the following guarantees to consumers of Tier 2 "
 "platforms:"
 msgstr ""
+"El Proyecto FreeBSD proporciona las siguientes garantías a los consumidores "
+"de plataformas Tier 2:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4178
@@ -6981,6 +7482,10 @@ msgid ""
 "includes support for basic packages such as ports-mgmt/pkg, but there is no "
 "guarantee that arbitrary ports will be buildable or functional."
 msgstr ""
+"La infraestructura de puertos debe incluir soporte básico para arquitecturas "
+"de Nivel 2 suficiente para soportar la construcción de puertos y paquetes. "
+"Esto incluye soporte para paquetes básicos como ports-mgmt / pkg, pero no "
+"hay garantía de que los puertos arbitrarios sean compilables o funcionales."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4186
@@ -6988,11 +7493,14 @@ msgid ""
 "New features which are not inherently platform-specific should be feasible "
 "on all Tier 2 architectures if not implemented."
 msgstr ""
+"Las nuevas características que no son inherentemente específicas de la "
+"plataforma deberían ser factibles en todas las arquitecturas de Nivel 2 si "
+"no se implementan."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4191
 msgid "Tier 2 platforms will be included in the source tree."
-msgstr ""
+msgstr "Las plataformas de nivel 2 se incluirán en el árbol de fuentes."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4195
@@ -7001,6 +7509,10 @@ msgid ""
 "an external toolchain. If an external toolchain is required, official binary "
 "packages for an external toolchain will be provided."
 msgstr ""
+"Las plataformas de nivel 2 deben autohospedarse a través de la cadena de "
+"herramientas en árbol o una cadena de herramientas externa. Si se requiere "
+"una cadena de herramientas externa, se proporcionarán paquetes binarios "
+"oficiales para una cadena de herramientas externa."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4201
@@ -7008,6 +7520,8 @@ msgid ""
 "Tier 2 platforms should provide functional kernels and userlands even if an "
 "official release distribution is not provided."
 msgstr ""
+"Las plataformas de nivel 2 deben proporcionar kernels funcionales y áreas de "
+"usuario incluso si no se proporciona una distribución de lanzamiento oficial."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4207
@@ -7015,6 +7529,8 @@ msgid ""
 "To maintain maturity of Tier 2 platforms, the FreeBSD Project will maintain "
 "the following resources to support development:"
 msgstr ""
+"Para mantener la madurez de las plataformas Tier 2, el Proyecto FreeBSD "
+"mantendrá los siguientes recursos para apoyar el desarrollo:"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4218
@@ -7022,6 +7538,8 @@ msgid ""
 "Collectively, developers are required to provide the following to maintain "
 "the Tier 2 status of a platform:"
 msgstr ""
+"En conjunto, los desarrolladores deben proporcionar lo siguiente para "
+"mantener el estado de Nivel 2 de una plataforma:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4223
@@ -7029,12 +7547,16 @@ msgid ""
 "Changes to the source tree should not knowingly break the build of a Tier 2 "
 "platform."
 msgstr ""
+"Los cambios en el árbol de fuentes no deberían romper a sabiendas la "
+"construcción de una plataforma de Nivel 2."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4227
 msgid ""
 "Tier 2 architectures must have an active ecosystem of users and developers."
 msgstr ""
+"Las arquitecturas de nivel 2 deben tener un ecosistema activo de usuarios y "
+"desarrolladores."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4231
@@ -7043,6 +7565,9 @@ msgid ""
 "broken gratuitously. Significant userland ABI changes should be restricted "
 "to major versions."
 msgstr ""
+"Si bien se permite que los cambios rompan la ABI del área de usuario, la ABI "
+"no debe romperse gratuitamente. Los cambios significativos en la ABI del "
+"área de usuario deben restringirse a las versiones principales."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4237
@@ -7050,11 +7575,14 @@ msgid ""
 "New features that are not yet implemented on Tier 2 architectures should "
 "provide a means of disabling them on those architectures."
 msgstr ""
+"Las nuevas funciones que aún no se han implementado en las arquitecturas de "
+"nivel 2 deberían proporcionar un medio para desactivarlas en esas "
+"arquitecturas."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:4245
 msgid "Tier 3: Experimental Architectures"
-msgstr ""
+msgstr "Nivel 3: Arquitecturas experimentales"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4247
@@ -7063,6 +7591,9 @@ msgid ""
 "<emphasis>not</emphasis> supported by the security officer, release "
 "engineering, and port management teams."
 msgstr ""
+"Las plataformas de nivel 3 tienen al menos soporte parcial de FreeBSD. "
+"Son<emphasis>no</emphasis> apoyado por el oficial de seguridad, la "
+"ingeniería de liberación y los equipos de gestión del puerto."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4252
@@ -7072,6 +7603,12 @@ msgid ""
 "unlikely to see broad future use. Initial support for Tier 3 platforms may "
 "exist in a separate repository rather than the main source repository."
 msgstr ""
+"Las plataformas de nivel 3 son arquitecturas en las primeras etapas de "
+"desarrollo, para plataformas de hardware no convencionales, o que se "
+"consideran sistemas heredados con pocas probabilidades de tener un uso "
+"amplio en el futuro. El soporte inicial para las plataformas de Nivel 3 "
+"puede existir en un repositorio separado en lugar del repositorio de origen "
+"principal."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4259
@@ -7081,16 +7618,22 @@ msgid ""
 "platforms may not always be buildable, nor are any kernel or userland ABIs "
 "considered stable."
 msgstr ""
+"El Proyecto FreeBSD no ofrece garantías a los consumidores de plataformas "
+"Tier 3 y no se compromete a mantener los recursos para apoyar el desarrollo. "
+"Es posible que las plataformas de nivel 3 no siempre sean compilables, ni "
+"ningún núcleo o ABI de área de usuario se considera estable."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:4267
 msgid "Tier 4: Unsupported Architectures"
-msgstr ""
+msgstr "Nivel 4: arquitecturas no admitidas"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4269
 msgid "Tier 4 platforms are not supported in any form by the project."
 msgstr ""
+"Las plataformas de nivel 4 no son compatibles de ninguna forma con el "
+"proyecto."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4272
@@ -7100,11 +7643,16 @@ msgid ""
 "source and ports trees. Note that ports support should remain as long as the "
 "platform is supported in a branch supported by ports."
 msgstr ""
+"Todos los sistemas no clasificados de otra manera son sistemas de Nivel 4. "
+"Cuando una plataforma pasa al Nivel 4, todo el soporte para la plataforma se "
+"elimina de los árboles de origen y puertos. Tenga en cuenta que la "
+"compatibilidad con puertos debe permanecer siempre que la plataforma sea "
+"compatible con una rama admitida por puertos."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:4280
 msgid "Policy on Changing the Tier of an Architecture"
-msgstr ""
+msgstr "Política sobre el cambio de nivel de una arquitectura"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:4282
@@ -7115,26 +7663,32 @@ msgid ""
 "platform to be promoted to a higher tier, any missing support guarantees "
 "must be satisfied before the promotion is completed."
 msgstr ""
+"Los sistemas solo se pueden mover de un nivel a otro con la aprobación del "
+"equipo central de FreeBSD, que tomará esa decisión en colaboración con el "
+"oficial de seguridad, la ingeniería de versiones y los equipos de "
+"administración de puertos. Para que una plataforma sea promovida a un nivel "
+"superior, las garantías de soporte que falten deben cumplirse antes de que "
+"se complete la promoción."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:4292
 msgid "Ports Specific FAQ"
-msgstr ""
+msgstr "Preguntas frecuentes sobre puertos específicos"
 
 #. (itstool) path: qandadiv/title
 #: article.translate.xml:4296
 msgid "Adding a New Port"
-msgstr ""
+msgstr "Agregar un puerto nuevo"
 
 #. (itstool) path: question/para
 #: article.translate.xml:4300
 msgid "How do I add a new port?"
-msgstr ""
+msgstr "¿Cómo agrego un nuevo puerto?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4304
 msgid "First, please read the section about repository copies."
-msgstr ""
+msgstr "Primero, lea la sección sobre copias del repositorio."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4307
@@ -7155,7 +7709,7 @@ msgstr ""
 #. (itstool) path: question/para
 #: article.translate.xml:4323
 msgid "Any other things I need to know when I add a new port?"
-msgstr ""
+msgstr "¿Alguna otra cosa que deba saber cuando agregue un nuevo puerto?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4328
@@ -7163,10 +7717,12 @@ msgid ""
 "Check the port, preferably to make sure it compiles and packages correctly. "
 "This is the recommended sequence:"
 msgstr ""
+"Verifique el puerto, preferiblemente para asegurarse de que se compila y "
+"empaqueta correctamente. Esta es la secuencia recomendada:"
 
 #. (itstool) path: answer/screen
 #: article.translate.xml:4332
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>make install</userinput>\n"
 "<prompt>#</prompt> <userinput>make package</userinput>\n"
@@ -7176,6 +7732,14 @@ msgid ""
 "<prompt>#</prompt> <userinput>make reinstall</userinput>\n"
 "<prompt>#</prompt> <userinput>make package</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>make install</userinput>\n"
+"<prompt>#</prompt> <userinput>make package</userinput>\n"
+"<prompt>#</prompt> <userinput>make deinstall</userinput>\n"
+"<prompt>#</prompt> <userinput>pkg add <replaceable>package you built "
+"above</replaceable></userinput>\n"
+"<prompt>#</prompt> <userinput>make deinstall</userinput>\n"
+"<prompt>#</prompt> <userinput>make reinstall</userinput>\n"
+"<prompt>#</prompt> <userinput>make package</userinput>"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4340
@@ -7184,6 +7748,9 @@ msgid ""
 "handbook/index.html\">Porters Handbook</link> contains more detailed "
 "instructions."
 msgstr ""
+"el <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
+"porters-handbook/index.html\">Manual de porteadores</link> contiene "
+"instrucciones más detalladas."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4344
@@ -7193,6 +7760,11 @@ msgid ""
 "the port. You do not necessarily have to eliminate all warnings but make "
 "sure you have fixed the simple ones."
 msgstr ""
+"Use <citerefentry vendor=\"ports\""
+"><refentrytitle>portlint</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> para comprobar la sintaxis del puerto. No necesariamente tiene "
+"que eliminar todas las advertencias, pero asegúrese de haber solucionado las "
+"simples."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4349
@@ -7202,6 +7774,11 @@ msgid ""
 "doc/en_US.ISO8859-1/articles/contributors/contrib-additional.html"
 "\">Additional Contributors</link> section of the FreeBSD Contributors List."
 msgstr ""
+"Si el puerto proviene de un remitente que no ha contribuido al proyecto "
+"antes, agregue el nombre de esa persona al <link xlink:href=\""
+"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/contributors/contrib-"
+"additional.html\">Colaboradores adicionales</link> de la lista de "
+"colaboradores de FreeBSD."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4355
@@ -7210,16 +7787,19 @@ msgid ""
 "<literal>Issue Resolved</literal> and the resolution as <literal>Fixed</"
 "literal>."
 msgstr ""
+"Cierre el PR si el puerto entró como PR. Para cerrar un PR, cambie el estado "
+"a <literal>Problema resuelto</literal> y la resolución "
+"como<literal>Fixed</literal>."
 
 #. (itstool) path: qandadiv/title
 #: article.translate.xml:4364
 msgid "Removing an Existing Port"
-msgstr ""
+msgstr "Eliminar un puerto existente"
 
 #. (itstool) path: question/para
 #: article.translate.xml:4368
 msgid "How do I remove an existing port?"
-msgstr ""
+msgstr "¿Cómo elimino un puerto existente?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4372
@@ -7227,16 +7807,21 @@ msgid ""
 "First, please read the section about repository copies. Before you remove "
 "the port, you have to verify there are no other ports depending on it."
 msgstr ""
+"Primero, lea la sección sobre copias del repositorio. Antes de eliminar el "
+"puerto, debe verificar que no haya otros puertos que dependan de él."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4378
 msgid "Make sure there is no dependency on the port in the ports collection:"
 msgstr ""
+"Asegúrese de que no haya dependencia del puerto en la colección de puertos:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4383
 msgid "The port's PKGNAME appears in exactly one line in a recent INDEX file."
 msgstr ""
+"El PKGNAME del puerto aparece exactamente en una línea en un archivo INDEX "
+"reciente."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4388
@@ -7244,6 +7829,8 @@ msgid ""
 "No other ports contains any reference to the port's directory or PKGNAME in "
 "their Makefiles"
 msgstr ""
+"Ningún otro puerto contiene ninguna referencia al directorio del puerto o "
+"PKGNAME en sus Makefiles"
 
 #. (itstool) path: tip/para
 #: article.translate.xml:4393
@@ -7251,17 +7838,21 @@ msgid ""
 "When using <application>Git</application>, consider using <command>git grep</"
 "command>, it is much faster than <command>grep -r</command>."
 msgstr ""
+"Cuando usas <application>Git</application>, Considere usar <command>git "
+"grep</command>, es mucho más rápido que <command>grep -r</command>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4403
 msgid "Then, remove the port:"
-msgstr ""
+msgstr "Luego, quita el puerto:"
 
 #. (itstool) path: step/para
 #: article.translate.xml:4407
 msgid ""
 "Remove the port's files and directory with <command>svn remove</command>."
 msgstr ""
+"Elimine los archivos y el directorio del puerto con <command>svn "
+"remove</command>."
 
 #. (itstool) path: step/para
 #: article.translate.xml:4412
@@ -7269,11 +7860,13 @@ msgid ""
 "Remove the <varname>SUBDIR</varname> listing of the port in the parent "
 "directory <filename>Makefile</filename>."
 msgstr ""
+"Quitar el <varname>SUBDIR</varname> listado del puerto en el directorio "
+"principal <filename>Makefile</filename>."
 
 #. (itstool) path: step/para
 #: article.translate.xml:4418 article.translate.xml:4671
 msgid "Add an entry to <filename>ports/MOVED</filename>."
-msgstr ""
+msgstr "Agregar una entrada a <filename>ports/MOVED</filename>."
 
 #. (itstool) path: step/para
 #: article.translate.xml:4423
@@ -7282,11 +7875,14 @@ msgid ""
 "adjust them accordingly. In particular, check for previous packages with the "
 "new name which version could include the new port."
 msgstr ""
+"Buscar entradas en <filename>ports/security/vuxml/vuln.xml</filename> y "
+"ajústelos en consecuencia. En particular, verifique los paquetes anteriores "
+"con el nuevo nombre cuya versión podría incluir el nuevo puerto."
 
 #. (itstool) path: step/para
 #: article.translate.xml:4431
 msgid "Remove the port from <filename>ports/LEGAL</filename> if it is there."
-msgstr ""
+msgstr "Quite el puerto de <filename>ports/LEGAL</filename> si está ahí."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4439
@@ -7302,17 +7898,17 @@ msgstr ""
 #. (itstool) path: qandadiv/title
 #: article.translate.xml:4450
 msgid "Re-adding a Deleted Port"
-msgstr ""
+msgstr "Volver a agregar un puerto eliminado"
 
 #. (itstool) path: question/para
 #: article.translate.xml:4454
 msgid "How do I re-add a deleted port?"
-msgstr ""
+msgstr "¿Cómo vuelvo a agregar un puerto eliminado?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4458
 msgid "This is essentially the reverse of deleting a port."
-msgstr ""
+msgstr "Esto es esencialmente lo contrario de eliminar un puerto."
 
 #. (itstool) path: important/para
 #: article.translate.xml:4462
@@ -7346,6 +7942,9 @@ msgid ""
 "revision where it was removed is <literal>269874</literal>, use "
 "<literal>269873</literal>."
 msgstr ""
+"Elija la revisión que está justo antes de la eliminación. Por ejemplo, si la "
+"revisión donde se eliminó es<literal>269874</literal>, "
+"use<literal>269873</literal>."
 
 #. (itstool) path: step/para
 #: article.translate.xml:4484
@@ -7353,6 +7952,9 @@ msgid ""
 "It is also possible to specify a date. In that case, pick a date that is "
 "before the removal but after the last commit to the port."
 msgstr ""
+"También es posible especificar una fecha. En ese caso, elija una fecha "
+"anterior a la eliminación, pero posterior a la última confirmación del "
+"puerto."
 
 #. (itstool) path: step/screen
 #: article.translate.xml:4488
@@ -7369,6 +7971,10 @@ msgid ""
 "because the distfiles are no longer available, either volunteer to host the "
 "distfiles, or find someone else to do so."
 msgstr ""
+"Realice los cambios necesarios para que el puerto vuelva a funcionar. Si se "
+"eliminó porque los archivos dist ya no están disponibles, ofrézcase como "
+"voluntario para alojar los archivos dist o busque a otra persona para que lo "
+"haga."
 
 #. (itstool) path: step/para
 #: article.translate.xml:4501
@@ -7377,6 +7983,9 @@ msgid ""
 "process, use <command>svn add</command> or <command>svn remove</command> to "
 "make sure all the files in the port will be committed."
 msgstr ""
+"si se han agregado o eliminado algunos archivos durante el proceso de "
+"resurrección, utilice <command>svn add </command>o <command>svn remove</"
+"command> para asegurarse de que se confirmarán todos los archivos del puerto."
 
 #. (itstool) path: step/para
 #: article.translate.xml:4509
@@ -7384,22 +7993,27 @@ msgid ""
 "Restore the <varname>SUBDIR</varname> listing of the port in the parent "
 "directory <filename>Makefile</filename>, keeping the entries sorted."
 msgstr ""
+"Restaurar el <varname>SUBDIR</varname> listado del puerto en el directorio "
+"principal<filename>Makefile</filename>, manteniendo las entradas ordenadas."
 
 #. (itstool) path: step/para
 #: article.translate.xml:4516
 msgid "Delete the port entry from <filename>ports/MOVED</filename>."
-msgstr ""
+msgstr "Eliminar la entrada del puerto de <filename>ports/MOVED</filename>."
 
 #. (itstool) path: step/para
 #: article.translate.xml:4521
 msgid ""
 "If the port had an entry in <filename>ports/LEGAL</filename>, restore it."
 msgstr ""
+"Si el puerto tuviera una entrada en <filename>ports/LEGAL</filename>, "
+"restaurarlo."
 
 #. (itstool) path: step/para
 #: article.translate.xml:4526
 msgid "<command>svn commit</command> these changes, preferably in one step."
 msgstr ""
+"<command>svn commit</command> estos cambios, preferiblemente en un solo paso."
 
 #. (itstool) path: tip/para
 #: article.translate.xml:4532
@@ -7409,16 +8023,20 @@ msgid ""
 "attempts to handle all except the <filename>ports/LEGAL</filename> step "
 "automatically."
 msgstr ""
+"El <command>addport</command> guión mencionado en <xref linkend=\"ports-qa-"
+"adding\"/> ahora detecta cuando el puerto para agregar ha existido "
+"previamente e intenta manejar todos excepto el <filename>ports/LEGAL</"
+"filename>paso automáticamente."
 
 #. (itstool) path: qandadiv/title
 #: article.translate.xml:4543
 msgid "Repository Copies"
-msgstr ""
+msgstr "Copias de repositorio"
 
 #. (itstool) path: question/para
 #: article.translate.xml:4547
 msgid "When do we need a repository copy?"
-msgstr ""
+msgstr "¿Cuándo necesitamos una copia del repositorio?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4551
@@ -7430,6 +8048,12 @@ msgid ""
 "filename> (different versions) and <filename>x11-wm/windowmaker*</filename> "
 "(English-only and internationalized version)."
 msgstr ""
+"Cuando desee agregar un puerto que esté relacionado con cualquier puerto que "
+"ya esté en el árbol en un directorio separado, debe hacer una copia del "
+"repositorio. aquí <wordasword>related</wordasword> significa que es una "
+"versión diferente o una versión ligeramente modificada. Ejemplos son "
+"<filename>print/ghostscript*</filename> (diferentes versiones) y <filename>"
+"x11-wm/windowmaker*</filename> (Versión solo en inglés e internacionalizada)."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4560
@@ -7438,26 +8062,32 @@ msgid ""
 "when the name of a directory must be changed because the authors renamed "
 "their software even though it is a descendant of a port already in a tree."
 msgstr ""
+"Otro ejemplo es cuando un puerto se mueve de un subdirectorio a otro, o "
+"cuando el nombre de un directorio debe cambiarse porque los autores "
+"cambiaron el nombre de su software a pesar de que es un descendiente de un "
+"puerto que ya está en un árbol."
 
 #. (itstool) path: question/para
 #: article.translate.xml:4570
 msgid "What do I need to do?"
-msgstr ""
+msgstr "¿Que necesito hacer?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4574
 msgid "With Subversion, a repo copy can be done by any committer:"
 msgstr ""
+"Con Subversion, cualquier confirmador puede realizar una copia del "
+"repositorio:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4579
 msgid "Doing a repo copy:"
-msgstr ""
+msgstr "Haciendo una copia de repositorio:"
 
 #. (itstool) path: step/para
 #: article.translate.xml:4583
 msgid "Verify that the target directory does not exist."
-msgstr ""
+msgstr "Verifique que el directorio de destino no exista."
 
 #. (itstool) path: step/para
 #: article.translate.xml:4588
@@ -7465,6 +8095,8 @@ msgid ""
 "Use <command>svn up</command> to make certain the original files, "
 "directories, and checkout information is current."
 msgstr ""
+"Use<command>svn up</command> para asegurarse de que los archivos, "
+"directorios e información de pago originales estén actualizados."
 
 #. (itstool) path: step/para
 #: article.translate.xml:4594
@@ -7472,6 +8104,8 @@ msgid ""
 "Use <command>svn move</command> or <command>svn copy</command> to do the "
 "repo copy."
 msgstr ""
+"Use<command>svn move</command> o <command>svn copy</command> para hacer la "
+"copia del repositorio."
 
 #. (itstool) path: step/para
 #: article.translate.xml:4600
@@ -7497,6 +8131,10 @@ msgid ""
 "parent directory <filename>Makefile</filename>. You can run <command>make "
 "checksubdirs</command> in the parent directory to check this."
 msgstr ""
+"Agregue el nuevo subdirectorio al <varname>SUBDIR</varname> listado en el "
+"directorio principal<filename>Makefile</filename>. Usted puede correr "
+"<command>make checksubdirs</command> en el directorio principal para "
+"comprobarlo."
 
 #. (itstool) path: step/para
 #: article.translate.xml:4632
@@ -7504,6 +8142,8 @@ msgid ""
 "If the port changed categories, modify the <varname>CATEGORIES</varname> "
 "line of the port's <filename>Makefile</filename> accordingly"
 msgstr ""
+"Si el puerto cambió de categoría, modifique el <varname>CATEGORÍAS</varname> "
+"línea del puerto<filename>Makefile</filename> en consecuencia"
 
 #. (itstool) path: step/para
 #: article.translate.xml:4638
@@ -7511,16 +8151,18 @@ msgid ""
 "Add an entry to <filename>ports/MOVED</filename>, if you remove the original "
 "port."
 msgstr ""
+"Agregar una entrada a <filename>ports/MOVED</filename>, si quita el puerto "
+"original."
 
 #. (itstool) path: step/para
 #: article.translate.xml:4644
 msgid "Commit all changes on one commit."
-msgstr ""
+msgstr "Confirme todos los cambios en una confirmación."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4650
 msgid "When removing a port:"
-msgstr ""
+msgstr "Al eliminar un puerto:"
 
 #. (itstool) path: step/para
 #: article.translate.xml:4654
@@ -7531,11 +8173,17 @@ msgid ""
 "dependencies enabled by compile-time options. A full <command>grep -r</"
 "command> of the ports collection is recommended."
 msgstr ""
+"Realice una verificación exhaustiva de la colección de puertos para detectar "
+"cualquier dependencia en la ubicación/nombre del puerto anterior y "
+"actualícelas. Corriendo <command>grep</command>en<filename>INDEX</filename> "
+"no es suficiente porque algunos puertos tienen dependencias habilitadas por "
+"las opciones de tiempo de compilación. Una completa <command>grep -r</"
+"command> de la colección de puertos se recomienda."
 
 #. (itstool) path: step/para
 #: article.translate.xml:4666
 msgid "Remove the old port and the old <varname>SUBDIR</varname> entry."
-msgstr ""
+msgstr "Quite el puerto viejo y el viejo <varname>SUBDIR</varname> entrada."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4678
@@ -7543,6 +8191,8 @@ msgid ""
 "After repo moves (<quote>rename</quote> operations where a port is copied "
 "and the old location is removed):"
 msgstr ""
+"Después de los movimientos de repositorio (<quote>rename</quote> operaciones "
+"donde se copia un puerto y se elimina la ubicación anterior):"
 
 #. (itstool) path: step/para
 #: article.translate.xml:4684
@@ -7550,16 +8200,18 @@ msgid ""
 "Follow the same steps that are outlined in the previous two entries, to "
 "activate the new location of the port and remove the old one."
 msgstr ""
+"Siga los mismos pasos que se describen en las dos entradas anteriores, para "
+"activar la nueva ubicación del puerto y eliminar la antigua."
 
 #. (itstool) path: qandadiv/title
 #: article.translate.xml:4697
 msgid "Ports Freeze"
-msgstr ""
+msgstr "Congelación de puertos"
 
 #. (itstool) path: question/para
 #: article.translate.xml:4701
 msgid "What is a <quote>ports freeze</quote>?"
-msgstr ""
+msgstr "Que es un <quote>puertos congelados</quote>?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4705
@@ -7571,6 +8223,13 @@ msgid ""
 "practice is no longer used, as the packages for the releases are built from "
 "the current stable, quarterly branch."
 msgstr ""
+"Un <quote>Congelación de puertos</quote> era un estado restringido en el que "
+"se colocaba el árbol de ports antes de un lanzamiento. Se utilizó para "
+"garantizar una mayor calidad de los paquetes enviados con una versión. Suele "
+"durar un par de semanas. Durante ese tiempo, se solucionaron los problemas "
+"de compilación y se compilaron los paquetes de lanzamiento. Esta práctica ya "
+"no se utiliza, ya que los paquetes para las versiones se crean a partir de "
+"la rama trimestral estable actual."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4714
@@ -7578,11 +8237,13 @@ msgid ""
 "For more information on how to merge commits to the quarterly branch, see "
 "<xref linkend=\"ports-qa-misc-request-mfh\"/>."
 msgstr ""
+"Para obtener más información sobre cómo fusionar confirmaciones en la rama "
+"trimestral, consulte<xref linkend=\"ports-qa-misc-request-mfh\"/>."
 
 #. (itstool) path: qandadiv/title
 #: article.translate.xml:4721
 msgid "Quarterly Branches"
-msgstr ""
+msgstr "Sucursales trimestrales"
 
 #. (itstool) path: question/para
 #: article.translate.xml:4725
@@ -7590,6 +8251,8 @@ msgid ""
 "What is the procedure to request authorization for merging a commit to the "
 "quarterly branch?"
 msgstr ""
+"¿Cuál es el procedimiento para solicitar autorización para fusionar un "
+"compromiso con la sucursal trimestral?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4730
@@ -7597,12 +8260,14 @@ msgid ""
 "When doing the commit, add the branch name to the <literal>MFH:</literal> "
 "line, for example:"
 msgstr ""
+"Al realizar la confirmación, agregue el nombre de la rama al <literal>MFH:</"
+"literal> linea, por ejemplo:"
 
 #. (itstool) path: answer/programlisting
 #: article.translate.xml:4733
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "MFH:\t<replaceable>2014Q1</replaceable>"
-msgstr ""
+msgstr "MFH:\t<replaceable>2014Q1</replaceable>"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4735
@@ -7612,6 +8277,10 @@ msgid ""
 "<email>portmgr@FreeBSD.org</email>. They will then decide if the commit can "
 "be merged and answer with the procedure."
 msgstr ""
+"Notificará automáticamente al equipo de seguridad de puertos <email>ports-"
+"secteam@FreeBSD.org</email> y el equipo de gestión de puertos "
+"<email>portmgr@FreeBSD.org</email>. Luego decidirán si la confirmación se "
+"puede fusionar y responderán con el procedimiento."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4740
@@ -7621,6 +8290,11 @@ msgid ""
 "<email>portmgr@FreeBSD.org</email> with the revision number and a small "
 "description of why the commit needs to be merged."
 msgstr ""
+"Si la confirmación ya se ha realizado, envíe un correo electrónico al equipo "
+"de seguridad de puertos <email>ports-secteam@FreeBSD.org</email> y el equipo "
+"de gestión de puertos<email>portmgr@FreeBSD.org</email> con el número de "
+"revisión y una pequeña descripción de por qué la confirmación debe "
+"fusionarse."
 
 #. (itstool) path: tip/para
 #: article.translate.xml:4746
@@ -7629,14 +8303,19 @@ msgid ""
 "couple of words on the <literal>MFH</literal> line, so that the reviewing "
 "team can skip this commit and save time. For example:"
 msgstr ""
+"Si el MFH está cubierto por una aprobación general, explique por qué con un "
+"par de palabras en el <literal>MFH</literal> línea, para que el equipo de "
+"revisión pueda omitir este compromiso y ahorrar tiempo. Por ejemplo:"
 
 #. (itstool) path: tip/programlisting
 #: article.translate.xml:4752
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "MFH:  <replaceable>2014Q1 (runtime fix)</replaceable>\n"
 "MFH:  <replaceable>2014Q1 (browser blanket)</replaceable>"
 msgstr ""
+"MFH:  <replaceable>2014Q1 (runtime fix)</replaceable>\n"
+"MFH:  <replaceable>2014Q1 (browser blanket)</replaceable>"
 
 #. (itstool) path: tip/para
 #: article.translate.xml:4755
@@ -7644,11 +8323,13 @@ msgid ""
 "The list of blanket approvals is available in <xref linkend=\"ports-qa-"
 "blanket\"/>."
 msgstr ""
+"La lista de aprobaciones generales está disponible en <xref linkend=\"ports-"
+"qa-blanket\"/>."
 
 #. (itstool) path: question/para
 #: article.translate.xml:4763
 msgid "Are there any changes that can be merged without asking for approval?"
-msgstr ""
+msgstr "¿Hay cambios que se puedan fusionar sin solicitar aprobación?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4768
@@ -7656,6 +8337,8 @@ msgid ""
 "The following blanket approvals for merging to the quarterly branches are in "
 "effect:"
 msgstr ""
+"Están vigentes las siguientes aprobaciones generales para la fusión con las "
+"sucursales trimestrales:"
 
 #. (itstool) path: note/para
 #: article.translate.xml:4772
@@ -7663,12 +8346,16 @@ msgid ""
 "This blanket approval also applies to direct commits for ports that have "
 "been removed from <literal>head</literal>."
 msgstr ""
+"Esta aprobación general también se aplica a las confirmaciones directas para "
+"los puertos que se han eliminado de <literal>head</literal>."
 
 #. (itstool) path: important/para
 #: article.translate.xml:4778
 msgid ""
 "These fixes <emphasis>must</emphasis> be tested on the quarterly branch."
 msgstr ""
+"Estas correcciones <emphasis>debe</emphasis> ser probado en la sucursal "
+"trimestral."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4785
@@ -7676,6 +8363,8 @@ msgid ""
 "Fixes that do not result in a change in contents of the resulting package. "
 "For example:"
 msgstr ""
+"Correcciones que no dan como resultado un cambio en el contenido del paquete "
+"resultante. Por ejemplo:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4790
@@ -7683,6 +8372,8 @@ msgid ""
 "<filename>pkg-descr</filename>: <literal>WWW:</literal> URL updates "
 "(existing 404, moved or incorrect)"
 msgstr ""
+"<filename>pkg-descr</filename>:<literal>WWW:</literal> Actualizaciones de "
+"URL (404 existente, movida o incorrecta)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4798
@@ -7690,6 +8381,8 @@ msgid ""
 "Build, runtime or packaging fixes, if the quarterly branch version is "
 "currently broken."
 msgstr ""
+"Correcciones de compilación, tiempo de ejecución o empaquetado, si la "
+"versión de la rama trimestral no funciona actualmente."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4803
@@ -7697,6 +8390,8 @@ msgid ""
 "Missing dependencies (detected, linked against but not registered via "
 "<varname><replaceable>*</replaceable>_DEPENDS</varname>)."
 msgstr ""
+"Faltan dependencias (detectadas, vinculadas pero no registradas a través de "
+"<varname><replaceable>*</replaceable>_DEPENDS</varname>)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4809
@@ -7705,6 +8400,9 @@ msgid ""
 "porters-handbook/uses-shebangfix.html\">shebangs</link>, stripping installed "
 "libraries and binaries, and plist fixes."
 msgstr ""
+"Arreglando <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
+"porters-handbook/uses-shebangfix.html\">shebangs</link>, eliminar las "
+"bibliotecas y binarios instalados y las correcciones de plist."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4815
@@ -7713,6 +8411,10 @@ msgid ""
 "<varname>PORTREVISION</varname> bumps and no changes to enabled features. "
 "for example, adding a patch fixing a buffer overflow."
 msgstr ""
+"Backport de correcciones de seguridad y confiabilidad que solo dan como "
+"resultado <varname>PORTREVISION</varname> golpes y sin cambios en las "
+"funciones habilitadas. por ejemplo, agregar un parche que corrija un "
+"desbordamiento del búfer."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4822
@@ -7720,16 +8422,19 @@ msgid ""
 "Minor version changes that do nothing but fix security or crash-related "
 "issues."
 msgstr ""
+"Cambios menores en la versión que no hacen más que solucionar problemas de "
+"seguridad o relacionados con fallas."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4827
 msgid "Adding/fixing <varname>CONFLICTS</varname>."
-msgstr ""
+msgstr "Agregar/arreglar<varname>CONFLICTS</varname>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:4832
 msgid "Web Browsers, browser plugins, and their required dependencies."
 msgstr ""
+"Navegadores web, complementos de navegador y sus dependencias necesarias."
 
 #. (itstool) path: important/para
 #: article.translate.xml:4838
@@ -7738,11 +8443,17 @@ msgid ""
 "explicit approval of either Ports Security Team <email>ports-secteam@FreeBSD."
 "org</email> or Ports Management Team <email>portmgr@FreeBSD.org</email>."
 msgstr ""
+"Los compromisos que no están cubiertos por estas aprobaciones generales "
+"siempre requieren la aprobación explícita de cualquiera de los equipos de "
+"seguridad de puertos<email>ports-secteam@FreeBSD.org</email> o equipo de "
+"gestión de puertos <email>portmgr@FreeBSD.org</email>."
 
 #. (itstool) path: question/para
 #: article.translate.xml:4847
 msgid "What is the procedure for merging commits to the quarterly branch?"
 msgstr ""
+"¿Cuál es el procedimiento para fusionar compromisos con la sucursal "
+"trimestral?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4852
@@ -7750,10 +8461,13 @@ msgid ""
 "A script is provided to automate merging a specific commit: <filename>ports/"
 "Tools/scripts/mfh</filename>. It is used as follows:"
 msgstr ""
+"Se proporciona un script para automatizar la fusión de una confirmación "
+"específica: <filename>ports/Tools/scripts/mfh</filename>. Se utiliza de la "
+"siguiente manera:"
 
 #. (itstool) path: answer/screen
 #: article.translate.xml:4856
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh 380362</userinput>\n"
 " U   2015Q1\n"
@@ -7814,6 +8528,69 @@ msgid ""
 "   Merged /head:r380362\n"
 "Do you want to commit? (no = start a shell) [y/n]"
 msgstr ""
+"<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh 380362</userinput>"
+"\n"
+" U   2015Q1\n"
+"Checked out revision 380443.\n"
+"A    2015Q1/security\n"
+"Updating '2015Q1/security/rubygem-sshkit':\n"
+"A    2015Q1/security/rubygem-sshkit\n"
+"A    2015Q1/security/rubygem-sshkit/Makefile\n"
+"A    2015Q1/security/rubygem-sshkit/distinfo\n"
+"A    2015Q1/security/rubygem-sshkit/pkg-descr\n"
+"Updated to revision 380443.\n"
+"--- Merging r380362 into '2015Q1':\n"
+"U    2015Q1/security/rubygem-sshkit/Makefile\n"
+"U    2015Q1/security/rubygem-sshkit/distinfo\n"
+"--- Recording mergeinfo for merge of r380362 into '2015Q1':\n"
+" U   2015Q1\n"
+"--- Recording mergeinfo for merge of r380362 into '2015Q1/security':\n"
+" G   2015Q1/security\n"
+"--- Eliding mergeinfo from '2015Q1/security':\n"
+" U   2015Q1/security\n"
+"--- Recording mergeinfo for merge of r380362 into '2015Q1/security/rubygem-"
+"sshkit':\n"
+" G   2015Q1/security/rubygem-sshkit\n"
+"--- Eliding mergeinfo from '2015Q1/security/rubygem-sshkit':\n"
+" U   2015Q1/security/rubygem-sshkit\n"
+" M      2015Q1\n"
+"M       2015Q1/security/rubygem-sshkit/Makefile\n"
+"M       2015Q1/security/rubygem-sshkit/distinfo\n"
+"Index: 2015Q1/security/rubygem-sshkit/Makefile\n"
+"===================================================================\n"
+"--- 2015Q1/security/rubygem-sshkit/Makefile     (revision 380443)\n"
+"+++ 2015Q1/security/rubygem-sshkit/Makefile     (working copy)\n"
+"@@ -2,7 +2,7 @@\n"
+" # $FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml "
+"54676 2020-11-07 14:49:16Z 0mp $\n"
+"\n"
+" PORTNAME=      sshkit\n"
+"-PORTVERSION=   1.6.1\n"
+"+PORTVERSION=   1.7.0\n"
+" CATEGORIES=    security rubygems\n"
+" MASTER_SITES=  RG\n"
+"\n"
+"Index: 2015Q1/security/rubygem-sshkit/distinfo\n"
+"===================================================================\n"
+"--- 2015Q1/security/rubygem-sshkit/distinfo     (revision 380443)\n"
+"+++ 2015Q1/security/rubygem-sshkit/distinfo     (working copy)\n"
+"@@ -1,2 +1,2 @@\n"
+"-SHA256 (rubygem/sshkit-1.6.1.gem) = "
+"8ca67e46bb4ea50fdb0553cda77552f3e41b17a5aa919877d93875dfa22c03a7\n"
+"-SIZE (rubygem/sshkit-1.6.1.gem) = 135680\n"
+"+SHA256 (rubygem/sshkit-1.7.0.gem) = "
+"90effd1813363bae7355f4a45ebc8335a8ca74acc8d0933ba6ee6d40f281a2cf\n"
+"+SIZE (rubygem/sshkit-1.7.0.gem) = 136192\n"
+"Index: 2015Q1\n"
+"===================================================================\n"
+"--- 2015Q1      (revision 380443)\n"
+"+++ 2015Q1      (working copy)\n"
+"\n"
+"Property changes on: 2015Q1\n"
+"___________________________________________________________________\n"
+"Modified: svn:mergeinfo\n"
+"   Merged /head:r380362\n"
+"Do you want to commit? (no = start a shell) [y/n]"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4915
@@ -7822,6 +8599,9 @@ msgid ""
 "open your text editor with the commit message all prepared and then commit "
 "the merge."
 msgstr ""
+"En ese punto, el script abrirá un shell para que arregle las cosas o abrirá "
+"su editor de texto con el mensaje de confirmación todo preparado y luego "
+"confirmará la fusión."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4920
@@ -7831,14 +8611,20 @@ msgid ""
 "login name is different than your FreeBSD cluster account, you need a few "
 "lines in your <filename>~/.ssh/config</filename>:"
 msgstr ""
+"La secuencia de comandos asume que puede conectarse a <literal>repo.FreeBSD."
+"org</literal>con <application>SSH</application> directamente, por lo que si "
+"su nombre de inicio de sesión local es diferente de su cuenta de clúster de "
+"FreeBSD, necesita algunas líneas en su <filename>~/.ssh/config</filename>:"
 
 #. (itstool) path: answer/programlisting
 #: article.translate.xml:4927
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Host *.freebsd.org\n"
 "    User <replaceable>freebsd-login</replaceable>"
 msgstr ""
+"Host *.freebsd.org\n"
+"    User <replaceable>freebsd-login</replaceable>"
 
 #. (itstool) path: tip/para
 #: article.translate.xml:4931
@@ -7852,12 +8638,23 @@ msgid ""
 "<emphasis>must</emphasis> be edited to show what is actually being done with "
 "the new commit."
 msgstr ""
+"El script también puede fusionar más de una revisión a la vez. Si ha habido "
+"otras actualizaciones en el puerto desde que se creó la sucursal que no se "
+"han fusionado porque no estaban relacionadas con la seguridad. Agregar las "
+"diferentes revisiones <emphasis>en el orden en que fueron cometidos</"
+"emphasis>en el <command>mfh</command> línea. El nuevo mensaje de registro de "
+"confirmaciones contendrá los mensajes de registro combinados de todas las "
+"confirmaciones originales. Estos mensajes<emphasis>debe</emphasis> ser "
+"editado para mostrar lo que realmente se está haciendo con la nueva "
+"confirmación."
 
 #. (itstool) path: tip/screen
 #: article.translate.xml:4943
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh r407208 r407713 r407722 r408567 r408943 r410728</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh r407208 r407713 "
+"r407722 r408567 r408943 r410728</userinput>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:4947
@@ -7867,6 +8664,10 @@ msgid ""
 "specifying the branch is discouraged. To be safe, the script will give a "
 "warning if the quarterly branch is not the latest:"
 msgstr ""
+"El script mfh también puede tomar un primer argumento opcional, la rama "
+"donde se realiza la fusión. Solo se admite la última rama trimestral, por lo "
+"que no se recomienda especificar la rama. Para estar seguro, el script dará "
+"una advertencia si la rama trimestral no es la más reciente:"
 
 #. (itstool) path: note/screen
 #: article.translate.xml:4954
@@ -7875,16 +8676,20 @@ msgid ""
 "<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh 2016Q1 r407208 r407713</userinput>\n"
 "/!\\ The latest branch is 2016Q2, do you really want to commit to 2016Q1? [y/n]"
 msgstr ""
+"<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh 2016Q1 r407208 "
+"r407713</userinput>\n"
+"/!\\ la última sucursal es el segundo trimestre de 2016, ¿de verdad quieres "
+"comprometerte con el primer trimestre de 2016? [s/n]"
 
 #. (itstool) path: qandadiv/title
 #: article.translate.xml:4962
 msgid "Creating a New Category"
-msgstr ""
+msgstr "Crear una nueva categoría"
 
 #. (itstool) path: question/para
 #: article.translate.xml:4966
 msgid "What is the procedure for creating a new category?"
-msgstr ""
+msgstr "¿Cuál es el procedimiento para crear una nueva categoría?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:4971
@@ -7901,6 +8706,8 @@ msgstr ""
 #: article.translate.xml:4980
 msgid "Perform any needed moves. (This only applies to physical categories.)"
 msgstr ""
+"Realice los movimientos necesarios. (Esto solo se aplica a las categorías "
+"físicas.)"
 
 #. (itstool) path: step/para
 #: article.translate.xml:4985
@@ -7908,16 +8715,18 @@ msgid ""
 "Update the <varname>VALID_CATEGORIES</varname> definition in <filename>ports/"
 "Mk/bsd.port.mk</filename>."
 msgstr ""
+"Actualizar el <varname>VALID_CATEGORIES</varname>definición en<filename>"
+"ports/Mk/bsd.port.mk</filename>."
 
 #. (itstool) path: step/para
 #: article.translate.xml:4991
 msgid "Assign the PR back to you."
-msgstr ""
+msgstr "Asignar el PR de nuevo a usted."
 
 #. (itstool) path: question/para
 #: article.translate.xml:4999
 msgid "What do I need to do to implement a new physical category?"
-msgstr ""
+msgstr "¿Qué debo hacer para implementar una nueva categoría física?"
 
 #. (itstool) path: step/para
 #: article.translate.xml:5006
@@ -7925,11 +8734,13 @@ msgid ""
 "Upgrade each moved port's <filename>Makefile</filename>. Do not connect the "
 "new category to the build yet."
 msgstr ""
+"Actualizar cada puerto movido<filename>Makefile</filename>. No conecte la "
+"nueva categoría a la compilación todavía."
 
 #. (itstool) path: step/para
 #: article.translate.xml:5010
 msgid "To do this, you will need to:"
-msgstr ""
+msgstr "Para hacer esto, necesitará:"
 
 #. (itstool) path: step/para
 #: article.translate.xml:5014
@@ -7938,6 +8749,10 @@ msgid ""
 "exercise, remember?) The new category is listed <emphasis>first</emphasis>. "
 "This will help to ensure that the <varname>PKGORIGIN</varname> is correct."
 msgstr ""
+"Cambiar el puerto <varname>CATEGORÍAS</varname> (este era el objetivo del "
+"ejercicio, ¿recuerdas?) La nueva categoría aparece <emphasis>primero</"
+"emphasis>. Esto ayudará a asegurar que el <varname>PKGORIGIN</varname> es "
+"correcto."
 
 #. (itstool) path: step/para
 #: article.translate.xml:5024
@@ -7947,6 +8762,11 @@ msgid ""
 "<command>make describe</command> over the entire ports hierarchy, catching "
 "any errors here will save you having to re-run that step later on."
 msgstr ""
+"corra con <command>make describe</command>. Desde el nivel superior "
+"<command>make index</command> que ejecutará en unos pocos pasos es una "
+"iteración de <command>make describe</command> en toda la jerarquía de "
+"puertos, detectar cualquier error aquí le evitará tener que volver a "
+"ejecutar ese paso más adelante."
 
 #. (itstool) path: step/para
 #: article.translate.xml:5035
@@ -7955,6 +8775,9 @@ msgid ""
 "<citerefentry vendor=\"ports\"><refentrytitle>portlint</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 msgstr ""
+"Si quiere ser realmente minucioso, ahora puede ser un buen momento para "
+"ejecutar <citerefentry vendor=\"ports\"><refentrytitle>portlint</refentrytitl"
+"e><manvolnum>1</manvolnum></citerefentry>."
 
 #. (itstool) path: step/para
 #: article.translate.xml:5043
@@ -8002,16 +8825,20 @@ msgid ""
 "filename> to connect the new category to the build and also commit the "
 "<filename>Makefile</filename> changes for the old category or categories."
 msgstr ""
+"Una vez hecho esto, puede confirmar la actualización<filename>ports/"
+"Makefile</filename> para conectar la nueva categoría a la compilación y "
+"también confirmar el <filename>Makefile</filename>cambios para la categoría "
+"o categorías antiguas."
 
 #. (itstool) path: step/para
 #: article.translate.xml:5092
 msgid "Add appropriate entries to <filename>ports/MOVED</filename>."
-msgstr ""
+msgstr "Agregue entradas apropiadas a <filename>ports/MOVED</filename>."
 
 #. (itstool) path: step/para
 #: article.translate.xml:5097
 msgid "Update the documentation by modifying:"
-msgstr ""
+msgstr "Actualice la documentación modificando:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:5101 article.translate.xml:5149
@@ -8020,6 +8847,9 @@ msgid ""
 "handbook/makefile-categories.html#PORTING-CATEGORIES\">list of categories</"
 "link> in the Porter's Handbook"
 msgstr ""
+"el <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
+"porters-handbook/makefile-categories.html#PORTING-CATEGORIES\">lista de "
+"categorías</link> en el manual del portero"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:5107
@@ -8028,6 +8858,9 @@ msgid ""
 "now displayed by sub-groups, as specified in <filename>doc/en_US.ISO8859-1/"
 "htdocs/ports/categories.descriptions</filename>."
 msgstr ""
+"<filename>doc/en_US.ISO8859-1/htdocs/ports</filename>. Tenga en cuenta que "
+"ahora se muestran por subgrupos, como se especifica en <filename>doc/en_US."
+"ISO8859-1/htdocs/ports/categories.descriptions</filename>"
 
 #. (itstool) path: step/para
 #: article.translate.xml:5114
@@ -8035,6 +8868,8 @@ msgid ""
 "(Note: these are in the docs, not the ports, repository). If you are not a "
 "docs committer, you will need to submit a PR for this."
 msgstr ""
+"(Nota: estos están en los documentos, no en los puertos, repositorio). Si no "
+"es un confirmador de documentos, deberá enviar un PR para esto."
 
 #. (itstool) path: step/para
 #: article.translate.xml:5120
@@ -8043,6 +8878,9 @@ msgid ""
 "problems with the new ports, should the old ports be deleted from their "
 "previous locations in the repository."
 msgstr ""
+"Solo una vez que se haya hecho todo lo anterior, y ya no se informe de "
+"problemas con los nuevos puertos, los puertos antiguos deben eliminarse de "
+"sus ubicaciones anteriores en el repositorio."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:5127
@@ -8053,11 +8891,16 @@ msgid ""
 "ISO8859-1/htdocs/ports/categories</filename> and the automated rebuild of "
 "<filename>INDEX</filename>."
 msgstr ""
+"no es necesario actualizar manualmente el <link xlink:href=\""
+"@@URL_RELPREFIX@@/ports/index.html\">puertos páginas web</link> para "
+"reflejar la nueva categoría. Esto se hace automáticamente mediante el cambio "
+"a <filename>en_US.ISO8859-1/htdocs/ports/categories</filename> y la "
+"reconstrucción automatizada de<filename>INDEX</filename>."
 
 #. (itstool) path: question/para
 #: article.translate.xml:5139
 msgid "What do I need to do to implement a new virtual category?"
-msgstr ""
+msgstr "¿Qué debo hacer para implementar una nueva categoría virtual?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:5144
@@ -8065,17 +8908,20 @@ msgid ""
 "This is much simpler than a physical category. Only a few modifications are "
 "needed:"
 msgstr ""
+"Esto es mucho más simple que una categoría física. Solo se necesitan algunas "
+"modificaciones:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:5155
+#, fuzzy
 msgid "<filename>en_US.ISO8859-1/htdocs/ports/categories</filename>"
-msgstr ""
+msgstr "<filename>en_US.ISO8859-1/htdocs/ports/categories</filename>"
 
 #. (itstool) path: qandadiv/title
 #. (itstool) path: sect1/title
 #: article.translate.xml:5163 article.translate.xml:5478
 msgid "Miscellaneous Questions"
-msgstr ""
+msgstr "Preguntas misceláneas"
 
 #. (itstool) path: question/para
 #: article.translate.xml:5167
@@ -8083,11 +8929,15 @@ msgid ""
 "Are there changes that can be committed without asking the maintainer for "
 "approval?"
 msgstr ""
+"¿Hay cambios que se puedan confirmar sin pedir la aprobación del encargado "
+"del mantenimiento?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:5172
 msgid "Blanket approval for most ports applies to these types of fixes:"
 msgstr ""
+"La aprobación general para la mayoría de los puertos se aplica a estos tipos "
+"de arreglos:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:5177
@@ -8097,11 +8947,18 @@ msgid ""
 "new <varname>USES</varname> macros, enabling verbose builds, and switching "
 "to new ports system syntaxes."
 msgstr ""
+"La mayoría de la infraestructura cambia en un puerto (es decir, se "
+"moderniza, pero no se cambia la funcionalidad). Por ejemplo, las cubiertas "
+"de la manta se convierten en nuevas <varname>USES</varname> macros, "
+"permitiendo compilaciones detalladas y cambiando a nuevas sintaxis del "
+"sistema de puertos."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:5186
 msgid "Trivial and <emphasis>tested</emphasis> build and runtime fixes."
 msgstr ""
+"Trivial y <emphasis>probado</emphasis> correcciones de compilación y tiempo "
+"de ejecución."
 
 #. (itstool) path: important/para
 #: article.translate.xml:5192
@@ -8111,11 +8968,15 @@ msgid ""
 "<email>security-officer@FreeBSD.org</email>. No unauthorized commits may "
 "ever be made to ports maintained by those groups."
 msgstr ""
+"Las excepciones a esto son todo lo mantenido por el equipo de gestión de "
+"puertos. <email>portmgr@FreeBSD.org</email>, o el equipo de oficiales de "
+"seguridad <email>security-officer@FreeBSD.org</email>. Nunca se pueden "
+"realizar confirmaciones no autorizadas en puertos mantenidos por esos grupos."
 
 #. (itstool) path: question/para
 #: article.translate.xml:5203
 msgid "How do I know if my port is building correctly or not?"
-msgstr ""
+msgstr "¿Cómo sé si mi puerto se está construyendo correctamente o no?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:5208
@@ -8124,6 +8985,9 @@ msgid ""
 "maintainer will receive an email from <literal>pkg-fallout@FreeBSD.org</"
 "literal>."
 msgstr ""
+"Los paquetes se crean varias veces a la semana. Si falla un puerto, el "
+"mantenedor recibirá un correo electrónico de <literal>pkg-fallout@FreeBSD."
+"org</literal>."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:5212
@@ -8132,12 +8996,16 @@ msgid ""
 "regression) are aggregated at <link xlink:href=\"https://pkg-status.freebsd."
 "org/\">pkg-status.FreeBSD.org</link>."
 msgstr ""
+"Los informes de todas las compilaciones de paquetes (oficiales, "
+"experimentales y sin regresión) se agregan en <link xlink:href=\"https://pkg-"
+"status.freebsd.org/\">pkg-status.FreeBSD.org</link>."
 
 #. (itstool) path: question/para
 #: article.translate.xml:5220
 msgid ""
 "I added a new port. Do I need to add it to the <filename>INDEX</filename>?"
 msgstr ""
+"Agregué un nuevo puerto. ¿Necesito agregarlo al <filename>INDEX</filename>?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:5225
@@ -8146,11 +9014,14 @@ msgid ""
 "command>, or a pre-generated version can be downloaded with <command>make "
 "fetchindex</command>."
 msgstr ""
+"No. El archivo se puede generar ejecutando <command>make index</command>, o "
+"se puede descargar una versión pregenerada con <command>make "
+"fetchindex</command>."
 
 #. (itstool) path: question/para
 #: article.translate.xml:5234
 msgid "Are there any other files I am not allowed to touch?"
-msgstr ""
+msgstr "¿Hay otros archivos que no pueda tocar?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:5239
@@ -8162,6 +9033,13 @@ msgid ""
 "bsd.port*.mk</filename> so do not commit changes to those files unless you "
 "want to face their wrath."
 msgstr ""
+"Cualquier archivo directamente debajo <filename>ports</filename>, o "
+"cualquier archivo de un subdirectorio que comience con una letra mayúscula "
+"(<filename>Mk/</filename>,<filename>Herramientas/</filename>, etc.). En "
+"particular, el equipo de gestión de puertos <email>portmgr@FreeBSD.org</"
+"email> Es muy protector de<filename>ports/Mk/bsd.port*mk</filename> por lo "
+"tanto, no realice cambios en esos archivos a menos que desee enfrentar su "
+"ira."
 
 #. (itstool) path: question/para
 #: article.translate.xml:5252
@@ -8169,6 +9047,9 @@ msgid ""
 "What is the proper procedure for updating the checksum for a port distfile "
 "when the file changes without a version change?"
 msgstr ""
+"¿Cuál es el procedimiento adecuado para actualizar la suma de comprobación "
+"de un archivo distfile de puerto cuando el archivo cambia sin un cambio de "
+"versión?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:5258
@@ -8182,6 +9063,15 @@ msgid ""
 "servers; otherwise the author or maintainer should be contacted to find out "
 "why the distfile has changed."
 msgstr ""
+"Cuando la suma de comprobación de un archivo de distribución se actualiza "
+"debido a que el autor actualizó el archivo sin cambiar la revisión del "
+"puerto, el mensaje de confirmación incluye un resumen de las diferencias "
+"relevantes entre el archivo dist original y el nuevo para garantizar que el "
+"archivo dist no haya sido dañado o alterado maliciosamente. . Si la versión "
+"actual del puerto ha estado en el árbol de puertos por un tiempo, una copia "
+"del antiguo archivo dist estará disponible en los servidores ftp; de lo "
+"contrario, se debe contactar al autor o al encargado del mantenimiento para "
+"averiguar por qué ha cambiado el archivo dist."
 
 #. (itstool) path: question/para
 #: article.translate.xml:5274
@@ -8189,6 +9079,8 @@ msgid ""
 "How can an experimental test build of the ports tree (<emphasis>exp-run</"
 "emphasis>) be requested?"
 msgstr ""
+"¿Cómo se puede construir una prueba experimental del árbol de puertos? "
+"(<emphasis>exp-run</emphasis>) ser solicitado?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:5279
@@ -8196,6 +9088,9 @@ msgid ""
 "An exp-run must be completed before patches with a significant ports impact "
 "are committed. The patch can be against the ports tree or the base system."
 msgstr ""
+"Se debe completar una ejecución de exp antes de que se comprometan los "
+"parches con un impacto significativo en los puertos. El parche puede ser "
+"contra el árbol de puertos o el sistema base."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:5283
@@ -8204,6 +9099,9 @@ msgid ""
 "and the submitter is required to fix detected problems (<emphasis>fallout</"
 "emphasis>) before commit."
 msgstr ""
+"Las compilaciones de paquetes completos se realizarán con los parches "
+"proporcionados por el remitente, y el remitente debe solucionar los "
+"problemas detectados. (<emphasis>fallout</emphasis> antes de comprometerse."
 
 #. (itstool) path: step/para
 #: article.translate.xml:5290
@@ -8211,16 +9109,19 @@ msgid ""
 "Go to the <link xlink:href=\"https://bugs.freebsd.org/submit\">Bugzilla new "
 "<acronym>PR</acronym> page</link>."
 msgstr ""
+"Ve a la <link xlink:href=\"https://bugs.freebsd.org/submit\">Bugzilla nuevo "
+"<acronym>PR</acronym> pagina</link>."
 
 #. (itstool) path: step/para
 #: article.translate.xml:5295
 msgid "Select the product your patch is about."
-msgstr ""
+msgstr "Seleccione el producto de su parche."
 
 #. (itstool) path: step/para
 #: article.translate.xml:5299
 msgid "Fill in the bug report as normal. Remember to attach the patch."
 msgstr ""
+"Complete el informe de error como de costumbre. Recuerda colocar el parche."
 
 #. (itstool) path: step/para
 #: article.translate.xml:5304
@@ -8230,6 +9131,10 @@ msgid ""
 "available. If it already says <quote>Hide Advanced Fields</quote>, no need "
 "to do anything."
 msgstr ""
+"Si arriba dice <quote>Mostrar campos avanzados</quote>Haz click en eso. "
+"Ahora dirá<quote>Ocultar campos avanzados</quote>. Habrá muchos campos "
+"nuevos disponibles. Si ya dice <quote>Ocultar campos avanzados</quote>, No "
+"necesito hacer cualquier cosa."
 
 #. (itstool) path: step/para
 #: article.translate.xml:5313
@@ -8238,11 +9143,14 @@ msgid ""
 "<literal>?</literal>. As for all other fields, hovering the mouse over any "
 "field shows more details."
 msgstr ""
+"en el <quote>Flags</quote> Sección, establecer el <quote>exp-run</quote> Uno "
+"para<literal>?</literal>. Como para todos los demás campos, al pasar el "
+"mouse sobre cualquier campo se muestran más detalles."
 
 #. (itstool) path: step/para
 #: article.translate.xml:5320
 msgid "Submit. Wait for the build to run."
-msgstr ""
+msgstr "Enviar. Espere a que se ejecute la compilación."
 
 #. (itstool) path: step/para
 #: article.translate.xml:5324
@@ -8250,11 +9158,13 @@ msgid ""
 "Ports Management Team <email>portmgr@FreeBSD.org</email> will reply with a "
 "possible fallout."
 msgstr ""
+"Equipo de gestión de puertos <email>portmgr@FreeBSD.org</email> responderá "
+"con una posible secuela."
 
 #. (itstool) path: step/para
 #: article.translate.xml:5329
 msgid "Depending on the fallout:"
-msgstr ""
+msgstr "Dependiendo de las consecuencias:"
 
 #. (itstool) path: step/para
 #: article.translate.xml:5333
@@ -8262,6 +9172,8 @@ msgid ""
 "If there is no fallout, the procedure stops here, and the change can be "
 "committed, pending any other approval required."
 msgstr ""
+"Si no hay consecuencias, el procedimiento se detiene aquí y el cambio se "
+"puede confirmar, pendiente de cualquier otra aprobación requerida."
 
 #. (itstool) path: step/para
 #: article.translate.xml:5341
@@ -8269,6 +9181,9 @@ msgid ""
 "If there is fallout, it <emphasis>must</emphasis> be fixed, either by fixing "
 "the ports directly in the ports tree, or adding to the submitted patch."
 msgstr ""
+"Si hay consecuencias, <emphasis>debe</emphasis> ser corregido, ya sea "
+"arreglando los puertos directamente en el árbol de puertos o agregándolos al "
+"parche enviado."
 
 #. (itstool) path: step/para
 #: article.translate.xml:5349
@@ -8276,11 +9191,14 @@ msgid ""
 "When this is done, go back to step 6 saying the fallout was fixed and wait "
 "for the exp-run to be run again. Repeat as long as there are broken ports."
 msgstr ""
+"Una vez hecho esto, vuelva al paso 6 y diga que las consecuencias se han "
+"solucionado y espere a que se vuelva a ejecutar el exp-run. Repita mientras "
+"haya puertos rotos."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:5366
 msgid "Issues Specific to Developers Who Are Not Committers"
-msgstr ""
+msgstr "Problemas específicos para desarrolladores que no son comprometidos"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:5369
@@ -8290,16 +9208,21 @@ msgid ""
 "(except things specific to commits and the mailing list memberships that go "
 "with them). In particular, we recommend that you read:"
 msgstr ""
+"Algunas personas que tienen acceso a las máquinas FreeBSD no tienen bits de "
+"confirmación. Casi todo este documento también se aplicará a estos "
+"desarrolladores (excepto los aspectos específicos de las confirmaciones y "
+"las membresías de la lista de correo que las acompañan). En particular, le "
+"recomendamos que lea:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:5377
 msgid "<link linkend=\"admin\">Administrative Details</link>"
-msgstr ""
+msgstr "<link linkend=\"admin\">Detalles administrativos</link>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:5382
 msgid "<link linkend=\"conventions-everyone\">Conventions</link>"
-msgstr ""
+msgstr "<link linkend=\"conventions-everyone\">Convenciones</link>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:5385
@@ -8308,27 +9231,33 @@ msgid ""
 "(<filename>doc/en_US.ISO8859-1/articles/contributors/contrib.additional.xml</"
 "filename>), if you are not already listed there."
 msgstr ""
+"Consigue que tu mentor te agregue a la <quote>Colaboradores adicionales</"
+"quote> (<filename>doc/en_US.ISO8859-1/articles/contributors/contrib."
+"additional.xml</filename>), si aún no está en la lista."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:5393
 msgid "<link linkend=\"developer.relations\">Developer Relations</link>"
 msgstr ""
+"<link linkend=\"developer.relations\">Relaciones con el desarrollador</link>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:5398
 msgid "<link linkend=\"ssh.guide\">SSH Quick-Start Guide</link>"
-msgstr ""
+msgstr "<link linkend=\"ssh.guide\">Guía de inicio rápido de SSH</link>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:5403
 msgid ""
 "<link linkend=\"rules\">The FreeBSD Committers' Big List of Rules</link>"
 msgstr ""
+"<link linkend=\"rules\"> La gran lista de reglas de los Committers de "
+"FreeBSD</link>"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:5411
 msgid "Information About Google Analytics"
-msgstr ""
+msgstr "Información sobre Google Analytics"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:5413
@@ -8338,11 +9267,16 @@ msgid ""
 "The information collected is valuable to the FreeBSD Documentation Project, "
 "to identify various problems on the FreeBSD website."
 msgstr ""
+"A partir del 12 de diciembre de 2012, se habilitó Google Analytics en el "
+"sitio web del Proyecto FreeBSD para recopilar estadísticas de uso anónimas "
+"con respecto al uso del sitio. La información recopilada es valiosa para el "
+"Proyecto de documentación de FreeBSD, para identificar varios problemas en "
+"el sitio web de FreeBSD."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:5420
 msgid "Google Analytics General Policy"
-msgstr ""
+msgstr "Política general de Google Analytics"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:5422
@@ -8370,6 +9304,11 @@ msgid ""
 "most frequently used web browsers when viewing FreeBSD web pages to ensure "
 "page rendering speeds are acceptable.</quote>"
 msgstr ""
+"Las solicitudes de datos de Google Analytics deben incluir un propósito "
+"específico. Por ejemplo, una razón válida para solicitar acceso sería "
+"<quote>para ver los navegadores web más utilizados al visualizar páginas web "
+"de FreeBSD para garantizar que las velocidades de reproducción de la página "
+"sean aceptables.</quote>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:5440
@@ -8386,6 +9325,10 @@ msgid ""
 "would be needed for a timeframe covering a span of 3 weeks, or if the "
 "request would be one-time only."
 msgstr ""
+"Todas las solicitudes deben incluir el período de tiempo durante el cual se "
+"requerirían los datos. Por ejemplo, debe indicarse explícitamente si los "
+"datos solicitados serían necesarios para un período de tiempo que abarque un "
+"período de 3 semanas, o si la solicitud sería única."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:5450
@@ -8393,36 +9336,40 @@ msgid ""
 "Any request for Google Analytics data without a clear, reasonable reason "
 "beneficial to the FreeBSD Project will be rejected."
 msgstr ""
+"Se rechazará cualquier solicitud de datos de Google Analytics sin una razón "
+"clara y razonable que beneficie al Proyecto FreeBSD."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:5456
 msgid "Data Available Through Google Analytics"
-msgstr ""
+msgstr "Datos disponibles a través de Google Analytics"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:5458
 msgid "A few examples of the types of Google Analytics data available include:"
 msgstr ""
+"Algunos ejemplos de los tipos de datos de Google Analytics disponibles "
+"incluyen:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:5463
 msgid "Commonly used web browsers"
-msgstr ""
+msgstr "Navegadores web de uso común"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:5467
 msgid "Page load times"
-msgstr ""
+msgstr "Tiempos de carga de la página"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:5471
 msgid "Site access by language"
-msgstr ""
+msgstr "Acceso al sitio por idioma"
 
 #. (itstool) path: question/para
 #: article.translate.xml:5483
 msgid "How do I add a new file to a branch?"
-msgstr ""
+msgstr "¿Cómo agrego un nuevo archivo a una rama?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:5487
@@ -8457,7 +9404,7 @@ msgstr ""
 #. (itstool) path: question/para
 #: article.translate.xml:5517
 msgid "Where are the mailing list archives stored?"
-msgstr ""
+msgstr "¿Dónde se almacenan los archivos de la lista de correo?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:5521
@@ -8465,12 +9412,14 @@ msgid ""
 "The mailing lists are archived under <filename>/local/mail</filename> on "
 "<systemitem class=\"fqdomainname\">freefall.FreeBSD.org</systemitem>."
 msgstr ""
+"Las listas de correo se archivan bajo <filename>/local/mail</filename>en "
+"<systemitem class=\"fqdomainname\">freefall.FreeBSD.org</systemitem>."
 
 #. (itstool) path: question/para
 #: article.translate.xml:5528
 msgid ""
 "I would like to mentor a new committer. What process do I need to follow?"
-msgstr ""
+msgstr "Me gustaría ser mentor de un nuevo committer. ¿Qué proceso debo seguir?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:5533
@@ -8478,16 +9427,19 @@ msgid ""
 "See the <link xlink:href=\"https://www.freebsd.org/internal/new-account.html"
 "\">New Account Creation Procedure</link> document on the internal pages."
 msgstr ""
+"Ver el <link xlink:href=\"https://www.freebsd.org/internal/new-account.html\""
+">Procedimiento de creación de una nueva cuenta</link> documento en las "
+"páginas internas."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:5542
 msgid "Benefits and Perks for FreeBSD Committers"
-msgstr ""
+msgstr "Beneficios y ventajas para los confirmadores de FreeBSD"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:5545
 msgid "Recognition"
-msgstr ""
+msgstr "Reconocimiento"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:5547
@@ -8496,11 +9448,15 @@ msgid ""
 "In addition, getting a chance to work with some of the best people that "
 "every engineer would dream of meeting is a great perk!"
 msgstr ""
+"El reconocimiento como ingeniero de software competente es el valor más "
+"duradero. Además, tener la oportunidad de trabajar con algunas de las "
+"mejores personas con las que todo ingeniero soñaría conocer es una gran "
+"ventaja!"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:5554
 msgid "FreeBSD Mall"
-msgstr ""
+msgstr "Centro comercial FreeBSD"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:5556
@@ -8508,11 +9464,15 @@ msgid ""
 "FreeBSD committers can get a free 4-CD or DVD set at conferences from <link "
 "xlink:href=\"http://www.freebsdmall.com\">FreeBSD Mall, Inc.</link>."
 msgstr ""
+"Los confirmadores de FreeBSD pueden obtener un juego de 4 CD o DVD gratis en "
+"conferencias de <link xlink:href=\"http://www.freebsdmall.com\">FreeBSD "
+"Mall, Inc.</link>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:5563
+#, fuzzy
 msgid "<acronym>IRC</acronym>"
-msgstr ""
+msgstr "<acronym>IRC</acronym>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:5565
@@ -8524,11 +9484,19 @@ msgid ""
 "cloak, send an email to <email>irc@FreeBSD.org</email> with your requested "
 "hostmask and NickServ account name."
 msgstr ""
+"Además, los desarrolladores pueden solicitar una máscara de host encubierta "
+"para su cuenta en la red IRC de Freenode en forma de <literal>freebsd/"
+"developer/</literal><replaceable>nombre de caída "
+"libre</replaceable>o<literal>freebsd/developer/</literal><replaceable>nombre "
+"con NickServ</replaceable>.Para solicitar una capa, envíe un correo "
+"electrónico a<email>irc@FreeBSD.org</email> con la máscara de host "
+"solicitada y el nombre de la cuenta NickServ."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:5577
+#, fuzzy
 msgid "<systemitem class=\"domainname\">Gandi.net</systemitem>"
-msgstr ""
+msgstr "<systemitem class=\"domainname\">Gandi.net</systemitem>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:5579
@@ -8536,6 +9504,8 @@ msgid ""
 "Gandi provides website hosting, cloud computing, domain registration, and "
 "X.509 certificate services."
 msgstr ""
+"Gandi ofrece servicios de alojamiento de sitios web, computación en la nube, "
+"registro de dominio y certificados X.509."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:5582
@@ -8544,3 +9514,7 @@ msgid ""
 "<email>non-profit@gandi.net</email> using your <literal>@freebsd.org</"
 "literal> mail address, and indicate your Gandi handle."
 msgstr ""
+"Gandi ofrece un descuento de tarifa electrónica a todos los desarrolladores "
+"de FreeBSD. Enviar correo a<email>non-profit@gandi.net</email>usando "
+"tu<literal>@freebsd.org</literal> dirección de correo electrónico e indique "
+"su nombre de usuario de Gandi."
