@@ -1,23 +1,27 @@
 # Edson Brandi <ebrandi@FreeBSD.org>, 2019. #zanata
 # Sergio Carlavilla <carlavilla@mailbox.org>, 2019. #zanata
+# Aaron H Farías Martinez <timido@ubuntu.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:08-0300\n"
-"PO-Revision-Date: 2019-09-01 11:16+0000\n"
-"Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
-"Language-Team: Spanish (Spain)\n"
+"PO-Revision-Date: 2020-12-14 01:04+0000\n"
+"Last-Translator: Aaron H Farías Martinez <timido@ubuntu.com>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/articles_pr-guidelines/es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 4.6.2\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Sergio Carlavilla carlavilla@FreeBSD.org, 2019"
+msgstr ""
+"Sergio Carlavilla carlavilla@FreeBSD.org, 2019\n"
+"Aaron H Farias Martinez timido@ubuntu.com,2020"
 
 #. (itstool) path: info/title
 #: article.translate.xml:5
@@ -27,7 +31,7 @@ msgstr "Guía para el manejo de informes de problemas"
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:9
 msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
-msgstr "FreeBSD is a registered trademark of the FreeBSD Foundation."
+msgstr "FreeBSD es una marca registrada de FreeBSD Foundation."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:11
@@ -38,19 +42,22 @@ msgid ""
 "designations have been followed by the <quote>™</quote> or the <quote>®</"
 "quote> symbol."
 msgstr ""
-"Many of the designations used by manufacturers and sellers to distinguish "
-"their products are claimed as trademarks. Where those designations appear in "
-"this document, and the FreeBSD Project was aware of the trademark claim, the "
-"designations have been followed by the <quote>™</quote> or the <quote>®</"
-"quote> symbol."
+"Muchas de las designaciones utilizadas por los fabricantes y vendedores para "
+"distinguir sus productos se reclaman como marcas comerciales. Cuando esas "
+"designaciones aparecen en este documento, y el Proyecto FreeBSD estaba al "
+"tanto del reclamo de marca registrada, las designaciones han sido seguidas "
+"por el <quote>™</quote> o el <quote>®</quote> símbolo."
 
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:19 article.translate.xml:21
+#, fuzzy
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/pr-guidelines/article.xml 51348 "
 "2017-12-30 22:56:56Z eadler $"
-msgstr "$FreeBSD$"
+msgstr ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/pr-guidelines/article.xml 51348 "
+"2017-12-30 22:56:56Z eadler $"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:24
@@ -241,7 +248,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: article.translate.xml:133
 msgid "A small example on when to change PR state"
-msgstr "Un pequeño ejemplo de cuándo cambiar el estado de un PR."
+msgstr "Un pequeño ejemplo de cuándo cambiar el estado de un PR"
 
 #. (itstool) path: example/para
 #: article.translate.xml:135
@@ -265,7 +272,7 @@ msgstr "Un informe de problemas puede estar en uno de los siguientes estados:"
 #. (itstool) path: glossentry/glossterm
 #: article.translate.xml:148
 msgid "open"
-msgstr "open"
+msgstr "Abrir"
 
 #. (itstool) path: glossdef/para
 #: article.translate.xml:150
@@ -275,7 +282,7 @@ msgstr "Estado inicial; el problema ha sido indicado y necesita ser revisado."
 #. (itstool) path: glossentry/glossterm
 #: article.translate.xml:156
 msgid "analyzed"
-msgstr "analyzed"
+msgstr "analizar"
 
 #. (itstool) path: glossdef/para
 #: article.translate.xml:158
@@ -285,7 +292,7 @@ msgstr "El problema ha sido revisado y se está buscando una solución."
 #. (itstool) path: glossentry/glossterm
 #: article.translate.xml:164
 msgid "feedback"
-msgstr "feedback"
+msgstr "retroalimentación"
 
 #. (itstool) path: glossdef/para
 #: article.translate.xml:166
@@ -314,7 +321,7 @@ msgstr ""
 #. (itstool) path: glossentry/glossterm
 #: article.translate.xml:181
 msgid "suspended"
-msgstr "suspended"
+msgstr "suspendido"
 
 #. (itstool) path: glossdef/para
 #: article.translate.xml:183
@@ -336,7 +343,7 @@ msgstr ""
 #. (itstool) path: glossentry/glossterm
 #: article.translate.xml:195
 msgid "closed"
-msgstr "closed"
+msgstr "cerrado"
 
 #. (itstool) path: glossdef/para
 #: article.translate.xml:197
