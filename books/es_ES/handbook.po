@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-11-16 21:29-0300\n"
-"PO-Revision-Date: 2020-12-11 11:03+0000\n"
+"PO-Revision-Date: 2020-12-14 01:05+0000\n"
 "Last-Translator: Aaron H Farías Martinez <timido@ubuntu.com>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/es/>\n"
@@ -1215,8 +1215,9 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:1527
+#, fuzzy
 msgid "<literal>Monospace</literal>"
-msgstr ""
+msgstr "<literal>Monospace</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1530
@@ -1232,14 +1233,17 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:1538
+#, fuzzy
 msgid "<application>Bold</application>"
-msgstr ""
+msgstr "<application>Bold</application>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1541
 msgid ""
 "A <keycap>bold</keycap> font is used for applications, commands, and keys."
 msgstr ""
+"un <keycap>bold</keycap> La fuente se utiliza para aplicaciones, comandos y "
+"teclas."
 
 #. (itstool) path: preface/bridgehead
 #. (itstool) id: book.translate.xml#preface-conv-commands
@@ -1260,10 +1264,13 @@ msgstr ""
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1556
+#, fuzzy
 msgid ""
 "<keycombo action=\"simul\"> <keycap>Ctrl</keycap> <keycap>Alt</keycap> "
 "<keycap>Del</keycap></keycombo>"
 msgstr ""
+"<keycombo action=\"simul\"> <keycap>Ctrl</keycap> <keycap>Alt</keycap> "
+"<keycap>Del</keycap></keycombo>"
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1562
@@ -1285,11 +1292,15 @@ msgstr ""
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1569
+#, fuzzy
 msgid ""
 "<keycombo action=\"simul\"> <keycap>Ctrl</keycap> <keycap>X</keycap> </"
 "keycombo>, <keycombo action=\"simul\"> <keycap>Ctrl</keycap> <keycap>S</"
 "keycap></keycombo>"
 msgstr ""
+"<keycombo action=\"simul\"> <keycap>Ctrl</keycap> <keycap>X</keycap> </"
+"keycombo>, <keycombo action=\"simul\"> <keycap>Ctrl</keycap> "
+"<keycap>S</keycap></keycombo>"
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1578
@@ -1320,9 +1331,11 @@ msgstr ""
 
 #. (itstool) path: preface/screen
 #: book.translate.xml:1592
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>E:\\&gt;</prompt> <userinput>tools\\fdimage floppies\\kern.flp A:</userinput>"
 msgstr ""
+"<prompt>E:\\&gt;</prompt> <userinput>tools\\fdimage floppies\\kern.flp "
+"A:</userinput>"
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1594
@@ -1342,9 +1355,9 @@ msgstr ""
 
 #. (itstool) path: preface/screen
 #: book.translate.xml:1600
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>dd if=kern.flp of=/dev/fd0</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>dd if=kern.flp of=/dev/fd0</userinput>"
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1602
@@ -1360,9 +1373,9 @@ msgstr ""
 
 #. (itstool) path: preface/screen
 #: book.translate.xml:1607
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>top</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>top</userinput>"
 
 #. (itstool) path: preface/bridgehead
 #. (itstool) id: book.translate.xml#preface-acknowledgements
@@ -1532,10 +1545,8 @@ msgstr "Cómo se relaciona FreeBSD con otros sistemas operativos de computadora.
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1710
-#, fuzzy
-#| msgid "XFree86 is a trademark of The XFree86 Project, Inc."
 msgid "The history of the FreeBSD Project."
-msgstr "XFree86 is a trademark of The XFree86 Project, Inc."
+msgstr "La historia del Proyecto FreeBSD."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1714
@@ -1830,10 +1841,13 @@ msgstr "<primary>NAT</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1877
+#, fuzzy
 msgid ""
 "Firewalls<_:indexterm-1/> and NAT<_:indexterm-2/> (<quote>IP masquerading</"
 "quote>) gateways"
 msgstr ""
+"Firewalls<_:indexterm-1/> and NAT<_:indexterm-2/> (<quote>IP "
+"masquerading</quote>) gateways"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:1887
@@ -1950,14 +1964,16 @@ msgstr ""
 #. (itstool) path: para/indexterm
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:1964 book.translate.xml:12396
+#, fuzzy
 msgid "<primary>GNOME</primary>"
-msgstr ""
+msgstr "<primary>GNOME</primary>"
 
 #. (itstool) path: para/indexterm
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:1967 book.translate.xml:12481
+#, fuzzy
 msgid "<primary>KDE</primary>"
-msgstr ""
+msgstr "<primary>KDE</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1960
@@ -2059,8 +2075,9 @@ msgstr ""
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2042
+#, fuzzy
 msgid "<primary>Apple</primary>"
-msgstr ""
+msgstr "<primary>Apple</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2041
@@ -2090,8 +2107,9 @@ msgstr ""
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2060
+#, fuzzy
 msgid "<primary>Citrix</primary>"
-msgstr ""
+msgstr "<primary>Citrix</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2059
@@ -2129,8 +2147,9 @@ msgstr ""
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2082
+#, fuzzy
 msgid "<primary>Quest KACE</primary>"
-msgstr ""
+msgstr "<primary>Quest KACE</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2080
@@ -2147,8 +2166,9 @@ msgstr ""
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2091
+#, fuzzy
 msgid "<primary>iXsystems</primary>"
-msgstr ""
+msgstr "<primary>iXsystems</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2090
@@ -2165,8 +2185,9 @@ msgstr ""
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2101
+#, fuzzy
 msgid "<primary>Juniper</primary>"
-msgstr ""
+msgstr "<primary>Juniper</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2100
@@ -2191,8 +2212,9 @@ msgstr ""
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2116
+#, fuzzy
 msgid "<primary>McAfee</primary>"
-msgstr ""
+msgstr "<primary>McAfee</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2115
@@ -2207,8 +2229,9 @@ msgstr ""
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2125
+#, fuzzy
 msgid "<primary>NetApp</primary>"
-msgstr ""
+msgstr "<primary>NetApp</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2124
@@ -2225,8 +2248,9 @@ msgstr ""
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2135
+#, fuzzy
 msgid "<primary>Netflix</primary>"
-msgstr ""
+msgstr "<primary>Netflix</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2134
@@ -2247,8 +2271,9 @@ msgstr ""
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2148
+#, fuzzy
 msgid "<primary>Sandvine</primary>"
-msgstr ""
+msgstr "<primary>Sandvine</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2147
@@ -2265,8 +2290,9 @@ msgstr ""
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2158
+#, fuzzy
 msgid "<primary>Sony</primary>"
-msgstr ""
+msgstr "<primary>Sony</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2157
@@ -2279,8 +2305,9 @@ msgstr ""
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2166
+#, fuzzy
 msgid "<primary>Sophos</primary>"
-msgstr ""
+msgstr "<primary>Sophos</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2165
@@ -2298,8 +2325,9 @@ msgstr ""
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2178
+#, fuzzy
 msgid "<primary>Spectra Logic</primary>"
-msgstr ""
+msgstr "<primary>Spectra Logic</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2176
@@ -2314,8 +2342,9 @@ msgstr ""
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2186
+#, fuzzy
 msgid "<primary>Stormshield</primary>"
-msgstr ""
+msgstr "<primary>Stormshield</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2185
@@ -2353,8 +2382,9 @@ msgstr ""
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2210
+#, fuzzy
 msgid "<primary>Verisign</primary>"
-msgstr ""
+msgstr "<primary>Verisign</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2209
@@ -2373,8 +2403,9 @@ msgstr ""
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2223
+#, fuzzy
 msgid "<primary>Voxer</primary>"
-msgstr ""
+msgstr "<primary>Voxer</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2222
@@ -2396,8 +2427,9 @@ msgstr ""
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2238
+#, fuzzy
 msgid "<primary>Fudo Security</primary>"
-msgstr ""
+msgstr "<primary>Fudo Security</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2236
@@ -2462,8 +2494,9 @@ msgstr ""
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2278
+#, fuzzy
 msgid "<primary>GhostBSD</primary>"
-msgstr ""
+msgstr "<primary>GhostBSD</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2277
@@ -2482,8 +2515,9 @@ msgstr ""
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2288
+#, fuzzy
 msgid "<primary>mfsBSD</primary>"
-msgstr ""
+msgstr "<primary>mfsBSD</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2287
@@ -2497,8 +2531,9 @@ msgstr ""
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2296
+#, fuzzy
 msgid "<primary>NAS4Free</primary>"
-msgstr ""
+msgstr "<primary>NAS4Free</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2295
@@ -2513,8 +2548,9 @@ msgstr ""
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2304
+#, fuzzy
 msgid "<primary>OPNsense</primary>"
-msgstr ""
+msgstr "<primary>OPNsense</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2303
@@ -2535,8 +2571,9 @@ msgstr ""
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2316
+#, fuzzy
 msgid "<primary>TrueOS</primary>"
-msgstr ""
+msgstr "<primary>TrueOS</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2315
@@ -2553,8 +2590,9 @@ msgstr ""
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2326
+#, fuzzy
 msgid "<primary>FuryBSD</primary>"
-msgstr ""
+msgstr "<primary>FuryBSD</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2325
@@ -2574,8 +2612,9 @@ msgstr ""
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2338
+#, fuzzy
 msgid "<primary>MidnightBSD</primary>"
-msgstr ""
+msgstr "<primary>MidnightBSD</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2337
@@ -2593,8 +2632,9 @@ msgstr ""
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2349
+#, fuzzy
 msgid "<primary>pfSense</primary>"
-msgstr ""
+msgstr "<primary>pfSense</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2348
@@ -2609,8 +2649,9 @@ msgstr ""
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2358
+#, fuzzy
 msgid "<primary>ZRouter</primary>"
-msgstr ""
+msgstr "<primary>ZRouter</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2357
@@ -2663,28 +2704,32 @@ msgstr "Una breve historia de FreeBSD"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:2385
+#, fuzzy
 msgid "<primary>386BSD Patchkit</primary>"
-msgstr ""
+msgstr "<primary>386BSD Patchkit</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:2386
+#, fuzzy
 msgid "<primary>Hubbard, Jordan</primary>"
-msgstr ""
+msgstr "<primary>Hubbard, Jordan</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:2387
+#, fuzzy
 msgid "<primary>Williams, Nate</primary>"
-msgstr ""
+msgstr "<primary>Williams, Nate</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:2388
+#, fuzzy
 msgid "<primary>Grimes, Rod</primary>"
-msgstr ""
+msgstr "<primary>Grimes, Rod</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:2389
 msgid "<primary>FreeBSD Project</primary> <secondary>history</secondary>"
-msgstr ""
+msgstr "<primary>Proyecto FreeBSD</primary> <secondary>historia</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2394
@@ -2699,8 +2744,9 @@ msgstr ""
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:2399 book.translate.xml:2439
+#, fuzzy
 msgid "<primary>386BSD</primary>"
-msgstr ""
+msgstr "<primary>386BSD</primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2400
@@ -2717,8 +2763,9 @@ msgstr ""
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:2406
+#, fuzzy
 msgid "<primary>Jolitz, Bill</primary>"
-msgstr ""
+msgstr "<primary>Jolitz, Bill</primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2407
@@ -2741,13 +2788,15 @@ msgstr ""
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:2417
+#, fuzzy
 msgid "<primary>Greenman, David</primary>"
-msgstr ""
+msgstr "<primary>Greenman, David</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:2418
+#, fuzzy
 msgid "<primary>Walnut Creek CDROM</primary>"
-msgstr ""
+msgstr "<primary>Walnut Creek CDROM</primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2420
@@ -2781,18 +2830,21 @@ msgstr ""
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:2436
+#, fuzzy
 msgid "<primary>4.3BSD-Lite</primary>"
-msgstr ""
+msgstr "<primary>4.3BSD-Lite</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:2437 book.translate.xml:2452
+#, fuzzy
 msgid "<primary>Net/2</primary>"
-msgstr ""
+msgstr "<primary>Net/2</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:2438 book.translate.xml:2451
+#, fuzzy
 msgid "<primary>U.C. Berkeley</primary>"
-msgstr ""
+msgstr "<primary>U.C. Berkeley</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:2440 book.translate.xml:9106
@@ -2818,13 +2870,15 @@ msgstr ""
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:2450
+#, fuzzy
 msgid "<primary>Novell</primary>"
-msgstr ""
+msgstr "<primary>Novell</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:2453
+#, fuzzy
 msgid "<primary>AT&amp;T</primary>"
-msgstr ""
+msgstr "<primary>AT&amp;T</primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2454
@@ -2857,6 +2911,17 @@ msgid ""
 "the release was a significant success and was followed by the more robust "
 "and easier to install FreeBSD 2.0.5 release in June of 1995."
 msgstr ""
+"FreeBSD luego se dedicó a la ardua tarea de reinventarse literalmente a sí "
+"mismo a partir de un conjunto completamente nuevo y bastante incompleto de "
+"bits 4.4BSD-Lite. los <quote>Lite</quote> Las versiones fueron ligeras en "
+"parte porque el CSRG de Berkeley había eliminado grandes fragmentos de "
+"código necesarios para construir un sistema en ejecución de arranque (debido "
+"a varios requisitos legales) y el hecho de que el puerto de Intel de 4.4 "
+"estaba muy incompleto. El proyecto tardó hasta noviembre de 1994 para hacer "
+"esta transición, y en diciembre lanzó FreeBSD 2.0 al mundo. A pesar de ser "
+"todavía más que un poco tosco, el lanzamiento fue un éxito significativo y "
+"fue seguido por el lanzamiento de FreeBSD 2.0.5, más robusto y fácil de "
+"instalar en junio de 1995."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2485
@@ -2893,11 +2958,13 @@ msgid ""
 "<personname> <firstname>Jordan</firstname> <surname>Hubbard</surname> </"
 "personname> <contrib>Contributed by </contrib>"
 msgstr ""
+"<personname> <firstname>Jordan</firstname> <surname>Hubbard</surname> </"
+"personname> <contrib>Contribuido por </contrib>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:2510
 msgid "<primary>FreeBSD Project</primary> <secondary>goals</secondary>"
-msgstr ""
+msgstr "<primary>Proyecto FreeBSD</primary> <secondary>metas</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2514
@@ -2930,13 +2997,14 @@ msgstr "<primary>Licencia pública general GNU (GPL)</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:2529
+#, fuzzy
 msgid "<primary>GNU Lesser General Public License (LGPL)</primary>"
-msgstr ""
+msgstr "<primary>GNU Lesser General Public License (LGPL)</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:2532
 msgid "<primary>BSD Copyright</primary>"
-msgstr ""
+msgstr "<primary>Derechos de autor BSD</primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2533
@@ -2964,16 +3032,21 @@ msgstr "El modelo de desarrollo de FreeBSD"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2548
+#, fuzzy
 msgid ""
 "<personname> <firstname>Satoshi</firstname> <surname>Asami</surname> </"
 "personname> <contrib>Contributed by </contrib>"
 msgstr ""
+"<personname> <firstname>Satoshi</firstname> <surname>Asami</surname> </"
+"personname> <contrib>Contributed by </contrib>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:2558
 msgid ""
 "<primary>FreeBSD Project</primary> <secondary>development model</secondary>"
 msgstr ""
+"<primary>Proyecto FreeBSD</primary> <secondary>modelo de "
+"desarrollol</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2563
@@ -3024,13 +3097,15 @@ msgstr "Los repositorios SVN<anchor xml:id=\"development-cvs-repository\"/>"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2586
+#, fuzzy
 msgid "<primary>CVS</primary>"
-msgstr ""
+msgstr "<primary>CVS</primary>"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2590
+#, fuzzy
 msgid "<primary>CVS Repository</primary>"
-msgstr ""
+msgstr "<primary>CVS Repository</primary>"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2594
@@ -3040,18 +3115,21 @@ msgstr "<primary>Sistema de versiones concurrentes</primary><see>CVS</see>"
 #. (itstool) path: para/indexterm
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:2599 book.translate.xml:45952 book.translate.xml:65535
+#, fuzzy
 msgid "<primary>Subversion</primary>"
-msgstr ""
+msgstr "<primary>Subversion</primary>"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2603
+#, fuzzy
 msgid "<primary>Subversion Repository</primary>"
-msgstr ""
+msgstr "<primary>Subversion Repository</primary>"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2607
+#, fuzzy
 msgid "<primary>SVN</primary> <see>Subversion</see>"
-msgstr ""
+msgstr "<primary>SVN</primary> <see>Subversion</see>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2585
@@ -3080,8 +3158,9 @@ msgstr "La lista de confirmadores<anchor xml:id=\"development-committers\"/>"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2638
+#, fuzzy
 msgid "<primary>committers</primary>"
-msgstr ""
+msgstr "<primary>committers</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2637
@@ -3104,8 +3183,9 @@ msgstr "El equipo central de FreeBSD<anchor xml:id=\"development-core\"/>"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2658
+#, fuzzy
 msgid "<primary>core team</primary>"
-msgstr ""
+msgstr "<primary>core team</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2657
@@ -3178,8 +3258,9 @@ msgstr ""
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2702
+#, fuzzy
 msgid "<primary>contributors</primary>"
-msgstr ""
+msgstr "<primary>contributors</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2700
@@ -3354,6 +3435,8 @@ msgid ""
 "<personname> <firstname>Allan</firstname> <surname>Jude</surname> </"
 "personname> <contrib>Updated for root-on-ZFS by </contrib>"
 msgstr ""
+"<personname> <firstname>Allan</firstname> <surname>Jude</surname> </"
+"personname> <contrib>Actualizado para root-on-ZFS por </contrib>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:2860
@@ -3587,8 +3670,9 @@ msgstr "Estos son los requisitos del procesador para cada arquitectura:"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:2991
+#, fuzzy
 msgid "amd64"
-msgstr ""
+msgstr "amd64"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2993
@@ -3611,8 +3695,9 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:3006
+#, fuzzy
 msgid "i386"
-msgstr ""
+msgstr "i386"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3008
@@ -3644,8 +3729,9 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:3027
+#, fuzzy
 msgid "powerpc"
-msgstr ""
+msgstr "powerpc"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3029
@@ -3665,8 +3751,9 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:3040
+#, fuzzy
 msgid "sparc64"
-msgstr ""
+msgstr "sparc64"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3042
@@ -3685,6 +3772,9 @@ msgid ""
 "processor. A dedicated disk is required as it is not possible to share a "
 "disk with another operating system at this time."
 msgstr ""
+"<acronym>SMP</acronym> es compatible con todos los sistemas con más de 1 "
+"procesador. Se requiere un disco dedicado ya que no es posible compartir un "
+"disco con otro sistema operativo en este momento."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:3056
@@ -3722,6 +3812,14 @@ msgid ""
 "sure it contains all of the needed files. Once the installer formats the "
 "system's disk, all data stored on that disk will be lost."
 msgstr ""
+"Antes de instalar cualquier sistema operativo, <emphasis>siempre</emphasis> "
+"primero haga una copia de seguridad de todos los datos importantes. No "
+"guarde la copia de seguridad en el sistema que se está instalando. En su "
+"lugar, guarde los datos en un disco extraíble como un <acronym>USB</acronym> "
+"unidad, otro sistema en la red o un servicio de respaldo en línea. Pruebe la "
+"copia de seguridad antes de comenzar la instalación para asegurarse de que "
+"contenga todos los archivos necesarios. Una vez que el instalador formatee "
+"el disco del sistema, se perderán todos los datos almacenados en ese disco."
 
 #. (itstool) path: step/title
 #: book.translate.xml:3081
@@ -3842,8 +3940,9 @@ msgstr "Información de red requerida"
 #. (itstool) path: listitem/para
 #. (itstool) path: row/entry
 #: book.translate.xml:3157 book.translate.xml:54175
+#, fuzzy
 msgid "<acronym>IP</acronym> address"
-msgstr ""
+msgstr "<acronym>IP</acronym> address"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3161
@@ -3853,7 +3952,7 @@ msgstr "Máscara de subred"
 #. (itstool) path: listitem/para
 #: book.translate.xml:3165
 msgid "<acronym>IP</acronym> address of default gateway"
-msgstr ""
+msgstr "<acronym>IP</acronym> dirección de la puerta de enlace predeterminada"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3170
@@ -3866,6 +3965,7 @@ msgid ""
 "<acronym>IP</acronym> addresses of the network's <acronym>DNS</acronym> "
 "servers"
 msgstr ""
+"<acronym>IP</acronym>direcciones de la red<acronym>DNS</acronym> servidores"
 
 #. (itstool) path: step/title
 #: book.translate.xml:3181
@@ -3893,6 +3993,10 @@ msgid ""
 "\"@@URL_RELPREFIX@@/releases/index.html\">https://www.freebsd.org/releases/"
 "index.html</link>)."
 msgstr ""
+"La información y las erratas de todas las versiones se pueden encontrar en "
+"la sección de información de la versión del sitio web de FreeBSD  (<link "
+"xlink:href=\"@@URL_RELPREFIX@@/releases/index.html\">https://www.freebsd.org/"
+"releases/index.html</link>)."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3200
@@ -3945,6 +4049,10 @@ msgid ""
 "<acronym>UEFI</acronym> (Unified Extensible Firmware Interface). The names "
 "of these files include the string <filename>uefi</filename>."
 msgstr ""
+"Se incluyen archivos de instalación adicionales para computadoras que "
+"arrancan con <acronym>UEFI</acronym> (Interfase Extensible de Firmware "
+"Unificado). Los nombres de estos archivos incluyen la "
+"cadena<filename>uefi</filename>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3228
@@ -3960,6 +4068,12 @@ msgid ""
 "complete the FreeBSD installation. This file should be burned to a "
 "<acronym>CD</acronym> using a <acronym>CD</acronym> burning application."
 msgstr ""
+"<literal>-bootonly.iso</literal>: Este es el archivo de instalación más "
+"pequeño ya que solo contiene el instalador. Se requiere una conexión a "
+"Internet que funcione durante la instalación, ya que el instalador "
+"descargará los archivos que necesita para completar la instalación de "
+"FreeBSD. Este archivo debe grabarse en un <acronym>CD</acronym> usando "
+"a<acronym>CD</acronym> aplicación de grabación."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3242
@@ -3968,6 +4082,10 @@ msgid ""
 "install FreeBSD, its source, and the Ports Collection. It should be burned "
 "to a <acronym>CD</acronym> using a <acronym>CD</acronym> burning application."
 msgstr ""
+"<literal>-disc1.iso</literal>: Este archivo contiene todos los archivos "
+"necesarios para instalar FreeBSD, su fuente y la colección de puertos. Debe "
+"quemarse a un <acronym>CD</acronym> usando a <acronym>CD</acronym> "
+"aplicación de grabación."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3250
@@ -3979,6 +4097,13 @@ msgid ""
 "requiring a connection to the Internet. This file should be burned to a "
 "<acronym>DVD</acronym> using a <acronym>DVD</acronym> burning application."
 msgstr ""
+"<literal>-dvd1.iso</literal>: Este archivo contiene todos los archivos "
+"necesarios para instalar FreeBSD, su fuente y la colección de puertos. "
+"También contiene un conjunto de paquetes binarios populares para instalar un "
+"administrador de ventanas y algunas aplicaciones para que se pueda instalar "
+"un sistema completo desde los medios sin requerir una conexión a Internet. "
+"Este archivo debe grabarse en un <acronym>DVD</acronym>usando a<acronym>DVD</"
+"acronym> aplicación de grabación."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3261
@@ -3987,6 +4112,10 @@ msgid ""
 "to install FreeBSD, its source, and the Ports Collection. It should be "
 "burned to a <acronym>USB</acronym> stick using the instructions below."
 msgstr ""
+"<literal>-memstick.img</literal>: Este archivo contiene todos los archivos "
+"necesarios para instalar FreeBSD, su fuente y la colección de puertos. Debe "
+"quemarse a un <acronym>USB</acronym> adhiérase siguiendo las instrucciones a "
+"continuación."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3269
@@ -4016,6 +4145,10 @@ msgid ""
 "SHA256</filename>. The checksums must match exactly. If the checksums do not "
 "match, the image file is corrupt and must be downloaded again."
 msgstr ""
+"Compare la suma de comprobación calculada con la que se muestra en "
+"<filename>CHECKSUM.SHA256</filename>. las sumas de comprobación deben "
+"coincidir exactamente. Si las sumas de comprobación no coinciden, el archivo "
+"de imagen está dañado y debe descargarse de nuevo."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:3292
@@ -4076,9 +4209,12 @@ msgstr ""
 
 #. (itstool) path: step/screen
 #: book.translate.xml:3332
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>dd if=<replaceable>FreeBSD-12.1-RELEASE-amd64-memstick.img</replaceable> of=/dev/<replaceable>da0</replaceable> bs=1M conv=sync</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>dd if=<replaceable>FreeBSD-12.1-RELEASE-"
+"amd64-memstick.img</replaceable> of=/dev/<replaceable>da0</replaceable> "
+"bs=1M conv=sync</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:3334
@@ -4101,6 +4237,7 @@ msgstr ""
 msgid ""
 "Using <trademark class=\"registered\">Windows</trademark> to Write the Image"
 msgstr ""
+"Usando <trademark class=\"registered\">Windows</trademark> escribir la imagen"
 
 #. (itstool) path: warning/para
 #: book.translate.xml:3351
@@ -4206,7 +4343,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:3420
 msgid "Booting on <trademark>i386</trademark> and amd64"
-msgstr ""
+msgstr "Arrancando en <trademark>i386</trademark> y amd64"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3422
