@@ -4,56 +4,72 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-12-15 06:05+0000\n"
+"Last-Translator: Aaron H Farías Martinez <timido@ubuntu.com>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/boooks_design-44bsd/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr ""
+msgstr "Aaron H Farias Martinez timido@ubuntu.com, 2020"
 
 #. (itstool) path: info/title
 #: book.translate.xml:6
 msgid "The Design and Implementation of the 4.4BSD Operating System"
-msgstr ""
+msgstr "El diseño e implementación del sistema operativo 4.4BSD"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:10
+#, fuzzy
 msgid ""
 "<personname><firstname>Marshall</firstname><othername>Kirk</"
 "othername><surname>McKusick</surname></personname>"
 msgstr ""
+"<personname><firstname>Marshall</firstname><othername>Kirk</othername><surnam"
+"e>McKusick</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:12
+#, fuzzy
 msgid ""
 "<personname><firstname>Keith</firstname><surname>Bostic</surname></"
 "personname>"
 msgstr ""
+"<personname><firstname>Keith</firstname><surname>Bostic</surname></personname"
+">"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:14
+#, fuzzy
 msgid ""
 "<personname><firstname>Michael</firstname><othername>J.</"
 "othername><surname>Karels</surname></personname>"
 msgstr ""
+"<personname><firstname>Michael</firstname><othername>J.</othername><surname>K"
+"arels</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:16
+#, fuzzy
 msgid ""
 "<personname><firstname>John</firstname><othername>S.</"
 "othername><surname>Quarterman</surname></personname>"
 msgstr ""
+"<personname><firstname>John</firstname><othername>S.</othername><surname>Quar"
+"terman</surname></personname>"
 
 #. (itstool) path: info/copyright
 #: book.translate.xml:19
+#, fuzzy
 msgid "<year>1996</year> <holder>Addison-Wesley Longman, Inc</holder>"
-msgstr ""
+msgstr "<year>1996</year> <holder>Addison-Wesley Longman, Inc</holder>"
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:27
@@ -75,20 +91,23 @@ msgstr ""
 
 #. (itstool) path: info/releaseinfo
 #: book.translate.xml:44
+#, fuzzy
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/books/design-44bsd/book.xml 44677 2014-04-28 "
 "19:36:49Z wblock $"
 msgstr ""
+"$FreeBSD: head/en_US.ISO8859-1/books/design-44bsd/book.xml 44677 2014-04-28 "
+"19:36:49Z wblock $"
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:48
 msgid "Design Overview of 4.4BSD"
-msgstr ""
+msgstr "Descripción general del diseño de 4.4BSD"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:51
 msgid "4.4BSD Facilities and the Kernel"
-msgstr ""
+msgstr "4.4 Instalaciones de BSD y el núcleo"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:53
@@ -97,6 +116,10 @@ msgid ""
 "communications, and system startup. This section outlines where each of "
 "these four basic services is described in this book."
 msgstr ""
+"El kernel 4.4BSD proporciona cuatro facilidades básicas: procesos, un "
+"sistema de archivos, comunicaciones e inicio del sistema. Esta sección "
+"describe dónde se describe cada uno de estos cuatro servicios básicos en "
+"este libro."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:63
@@ -106,6 +129,11 @@ msgid ""
 "Chapter 4. The system multiplexes separate virtual-address spaces for each "
 "process; this memory management is discussed in Chapter 5."
 msgstr ""
+"Los procesos constituyen un hilo de control en un espacio de direcciones. "
+"Los mecanismos para crear, terminar y controlar de otro modo los procesos se "
+"describen en el Capítulo 4. El sistema multiplexa espacios separados de "
+"direcciones virtuales para cada proceso; esta gestión de la memoria se "
+"analiza en el Capítulo 5."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:74
@@ -119,6 +147,15 @@ msgid ""
 "subject of Chapter 9. Terminals are used to access the system; their "
 "operation is the subject of Chapter 10."
 msgstr ""
+"La interfaz de usuario para el sistema de archivos y los dispositivos es "
+"similar; los aspectos comunes se analizan en el Capítulo 6. El sistema de "
+"archivos es un conjunto de archivos con nombre, organizados en una jerarquía "
+"de directorios estructurada en árbol, y de operaciones para manipularlos, "
+"como se presenta en el Capítulo 7. Los archivos residen en medios físicos "
+"como discos. 4.4BSD soporta varias organizaciones de datos en el disco, como "
+"se establece en el Capítulo 8. El acceso a archivos en máquinas remotas es "
+"el tema del Capítulo 9. Los terminales se utilizan para acceder al sistema; "
+"su funcionamiento es el tema del Capítulo 10."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:93
@@ -134,6 +171,17 @@ msgid ""
 "facility. Chapter 13 describes a particular networking implementation in "
 "detail."
 msgstr ""
+"Los mecanismos de comunicación proporcionados por los sistemas UNIX "
+"tradicionales incluyen flujos de bytes confiables simplex entre procesos "
+"relacionados (ver canalizaciones, Sección 11.1) y notificación de eventos "
+"excepcionales (ver señales, Sección 4.7). 4.4BSD también tiene una función "
+"general de comunicación entre procesos. Esta función, descrita en el "
+"Capítulo 11, utiliza mecanismos de acceso distintos de los del sistema de "
+"archivos, pero, una vez que se establece una conexión, un proceso puede "
+"acceder a ella como si fuera una tubería. Existe un marco general de redes, "
+"que se analiza en el Capítulo 12, que normalmente se utiliza como capa "
+"subyacente a la función IPC. El Capítulo 13 describe en detalle una "
+"implementación de red particular."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:115
@@ -141,6 +189,9 @@ msgid ""
 "Any real operating system has operational issues, such as how to start it "
 "running. Startup and operational issues are described in Chapter 14."
 msgstr ""
+"Cualquier sistema operativo real tiene problemas operativos, como cómo "
+"ponerlo en funcionamiento. Los problemas operativos y de inicio se describen "
+"en el Capítulo 14."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:122
@@ -150,11 +201,15 @@ msgid ""
 "historical developments. Finally, we shall give the reasons for many major "
 "design decisions."
 msgstr ""
+"Las secciones 2.3 a 2.14 presentan material introductorio relacionado con "
+"los capítulos 3 al 14. Definiremos términos, mencionaremos las llamadas al "
+"sistema básico y exploraremos los desarrollos históricos. Finalmente, "
+"daremos las razones de muchas decisiones importantes de diseño."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:129
 msgid "The Kernel"
-msgstr ""
+msgstr "El Kernel"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:131
@@ -220,17 +275,21 @@ msgid ""
 "detailed design and implementation of these services as they appear in "
 "4.4BSD."
 msgstr ""
+"Las secciones 2.3 y 2.4 describen los servicios proporcionados por el kernel "
+"4.4BSD y dan una descripción general del diseño de este último. Los "
+"capítulos posteriores describen el diseño detallado y la implementación de "
+"estos servicios tal como aparecen en 4.4BSD."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:208
 msgid "Kernel Organization"
-msgstr ""
+msgstr "Organización del Kernel"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:210
 msgid ""
 "In this section, we view the organization of the 4.4BSD kernel in two ways:"
-msgstr ""
+msgstr "En esta sección, vemos la organización del kernel 4.4BSD de dos formas:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:215
@@ -238,6 +297,8 @@ msgid ""
 "As a static body of software, categorized by the functionality offered by "
 "the modules that make up the kernel"
 msgstr ""
+"Como un cuerpo de software estático, categorizado por la funcionalidad que "
+"ofrecen los módulos que componen el kernel"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:221
@@ -245,6 +306,8 @@ msgid ""
 "By its dynamic operation, categorized according to the services provided to "
 "users"
 msgstr ""
+"Por su funcionamiento dinámico, categorizado según los servicios prestados a "
+"los usuarios"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:226
@@ -253,6 +316,9 @@ msgid ""
 "applications access through system calls. In 4.4BSD, this software has been "
 "organized according to the following:"
 msgstr ""
+"La mayor parte del kernel implementa los servicios del sistema a los que "
+"acceden las aplicaciones a través de llamadas al sistema. En 4.4BSD, este "
+"software se ha organizado de la siguiente manera:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:232
@@ -260,11 +326,13 @@ msgid ""
 "Basic kernel facilities: timer and system-clock handling, descriptor "
 "management, and process management"
 msgstr ""
+"Facilidades básicas del kernel: manejo de temporizadores y relojes del "
+"sistema, manejo de descriptores y manejo de procesos"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:238
 msgid "Memory-management support: paging and swapping"
-msgstr ""
+msgstr "Soporte de administración de memoria: paginación e intercambio"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:243
@@ -272,6 +340,8 @@ msgid ""
 "Generic system interfaces: the I/O, control, and multiplexing operations "
 "performed on descriptors"
 msgstr ""
+"Interfaces genéricas del sistema: las operaciones de E / S, control y "
+"multiplexación realizadas en descriptores"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:249
@@ -279,6 +349,8 @@ msgid ""
 "The filesystem: files, directories, pathname translation, file locking, and "
 "I/O buffer management"
 msgstr ""
+"El sistema de archivos: archivos, directorios, traducción de nombre de ruta, "
+"bloqueo de archivos y gestión del búfer de E/S"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:255
@@ -286,11 +358,13 @@ msgid ""
 "Terminal-handling support: the terminal-interface driver and terminal line "
 "disciplines"
 msgstr ""
+"Soporte de manejo de terminales: el controlador de interfaz de terminal y la "
+"disciplina de línea de terminal"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:261
 msgid "Interprocess-communication facilities: sockets"
-msgstr ""
+msgstr "Instalaciones de comunicación entre procesos: sockets"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:266
@@ -298,331 +372,374 @@ msgid ""
 "Support for network communication: communication protocols and generic "
 "network facilities, such as routing"
 msgstr ""
+"Soporte para comunicación de red: protocolos de comunicación e instalaciones "
+"de red genéricas, como enrutamiento"
 
 #. (itstool) path: table/title
 #: book.translate.xml:273
 msgid "Machine-independent software in the 4.4BSD kernel"
-msgstr ""
+msgstr "Software independiente de la máquina en el kernel 4.4BSD"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:277 book.translate.xml:457
 msgid "Category"
-msgstr ""
+msgstr "Categoría"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:278 book.translate.xml:458
 msgid "Lines of code"
-msgstr ""
+msgstr "Líneas de código"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:279 book.translate.xml:459
 msgid "Percentage of kernel"
-msgstr ""
+msgstr "Porcentaje de kernel"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:285
 msgid "total machine independent"
-msgstr ""
+msgstr "total independiente de la máquina"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:286
+#, fuzzy
 msgid "162,617"
-msgstr ""
+msgstr "162,617"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:287
+#, fuzzy
 msgid "80.4"
-msgstr ""
+msgstr "80.4"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:293
 msgid "headers"
-msgstr ""
+msgstr "encabezados"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:294
+#, fuzzy
 msgid "9,393"
-msgstr ""
+msgstr "9,393"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:295
+#, fuzzy
 msgid "4.6"
-msgstr ""
+msgstr "4.6"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:299
 msgid "initialization"
-msgstr ""
+msgstr "inicialización"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:300
+#, fuzzy
 msgid "1,107"
-msgstr ""
+msgstr "1,107"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:301
+#, fuzzy
 msgid "0.6"
-msgstr ""
+msgstr "0.6"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:305
 msgid "kernel facilities"
-msgstr ""
+msgstr "instalaciones del kernel"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:306
+#, fuzzy
 msgid "8,793"
-msgstr ""
+msgstr "8,793"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:307
+#, fuzzy
 msgid "4.4"
-msgstr ""
+msgstr "4.4"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:311
 msgid "generic interfaces"
-msgstr ""
+msgstr "interfaces genéricas"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:312
+#, fuzzy
 msgid "4,782"
-msgstr ""
+msgstr "4,782"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:313
+#, fuzzy
 msgid "2.4"
-msgstr ""
+msgstr "2.4"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:317
 msgid "interprocess communication"
-msgstr ""
+msgstr "comunicación entre procesos"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:318
+#, fuzzy
 msgid "4,540"
-msgstr ""
+msgstr "4,540"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:319 book.translate.xml:349
+#, fuzzy
 msgid "2.2"
-msgstr ""
+msgstr "2.2"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:323
 msgid "terminal handling"
-msgstr ""
+msgstr "manejo terminal"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:324
+#, fuzzy
 msgid "3,911"
-msgstr ""
+msgstr "3,911"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:325
+#, fuzzy
 msgid "1.9"
-msgstr ""
+msgstr "1.9"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:329 book.translate.xml:491
 msgid "virtual memory"
-msgstr ""
+msgstr "memoria virtual"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:330
+#, fuzzy
 msgid "11,813"
-msgstr ""
+msgstr "11,813"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:331
+#, fuzzy
 msgid "5.8"
-msgstr ""
+msgstr "5.8"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:335
 msgid "vnode management"
-msgstr ""
+msgstr "gestión de vnode"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:336
+#, fuzzy
 msgid "7,954"
-msgstr ""
+msgstr "7,954"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:337
+#, fuzzy
 msgid "3.9"
-msgstr ""
+msgstr "3.9"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:341
 msgid "filesystem naming"
-msgstr ""
+msgstr "nombre del sistema de archivos"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:342
+#, fuzzy
 msgid "6,550"
-msgstr ""
+msgstr "6,550"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:343
+#, fuzzy
 msgid "3.2"
-msgstr ""
+msgstr "3.2"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:347
 msgid "fast filestore"
-msgstr ""
+msgstr "almacén de archivos rápido"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:348
+#, fuzzy
 msgid "4,365"
-msgstr ""
+msgstr "4,365"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:353
 msgid "log-structure filestore"
-msgstr ""
+msgstr "almacén de archivos de estructura de registro"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:354
+#, fuzzy
 msgid "4,337"
-msgstr ""
+msgstr "4,337"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:355 book.translate.xml:367
+#, fuzzy
 msgid "2.1"
-msgstr ""
+msgstr "2.1"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:359
 msgid "memory-based filestore"
-msgstr ""
+msgstr "almacén de archivos basado en memoria"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:360
+#, fuzzy
 msgid "645"
-msgstr ""
+msgstr "645"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:361
+#, fuzzy
 msgid "0.3"
-msgstr ""
+msgstr "0.3"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:365
+#, fuzzy
 msgid "cd9660 filesystem"
-msgstr ""
+msgstr "cd9660 filesystem"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:366
+#, fuzzy
 msgid "4,177"
-msgstr ""
+msgstr "4,177"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:371
 msgid "miscellaneous filesystems (10)"
-msgstr ""
+msgstr "diversos sistemas de archivos (10)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:372
+#, fuzzy
 msgid "12,695"
-msgstr ""
+msgstr "12,695"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:373
+#, fuzzy
 msgid "6.3"
-msgstr ""
+msgstr "6.3"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:377
 msgid "network filesystem"
-msgstr ""
+msgstr "sistema de archivos de red"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:378
+#, fuzzy
 msgid "17,199"
-msgstr ""
+msgstr "17,199"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:379
+#, fuzzy
 msgid "8.5"
-msgstr ""
+msgstr "8.5"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:383
 msgid "network communication"
-msgstr ""
+msgstr "red de comunicacion"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:384
+#, fuzzy
 msgid "8,630"
-msgstr ""
+msgstr "8,630"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:385
+#, fuzzy
 msgid "4.3"
-msgstr ""
+msgstr "4.3"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:389
 msgid "internet protocols"
-msgstr ""
+msgstr "protocolos de internet"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:390
+#, fuzzy
 msgid "11,984"
-msgstr ""
+msgstr "11,984"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:391
+#, fuzzy
 msgid "5.9"
-msgstr ""
+msgstr "5.9"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:395
 msgid "ISO protocols"
-msgstr ""
+msgstr "Protocolos ISO"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:396
+#, fuzzy
 msgid "23,924"
-msgstr ""
+msgstr "23,924"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:397
+#, fuzzy
 msgid "11.8"
-msgstr ""
+msgstr "11.8"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:401
 msgid "X.25 protocols"
-msgstr ""
+msgstr "Protocolos X.25"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:402
+#, fuzzy
 msgid "10,626"
-msgstr ""
+msgstr "10,626"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:403
+#, fuzzy
 msgid "5.3"
-msgstr ""
+msgstr "5.3"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:407
 msgid "XNS protocols"
-msgstr ""
+msgstr "Protocolos XNS"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:408
+#, fuzzy
 msgid "5,192"
-msgstr ""
+msgstr "5,192"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:409
+#, fuzzy
 msgid "2.6"
-msgstr ""
+msgstr "2.6"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:415
@@ -630,6 +747,8 @@ msgid ""
 "Most of the software in these categories is machine independent and is "
 "portable across different hardware architectures."
 msgstr ""
+"La mayor parte del software de estas categorías es independiente de la "
+"máquina y es portátil a través de diferentes arquitecturas de hardware."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:418
@@ -641,146 +760,169 @@ msgid ""
 "dependent function that is located in the machine-dependent code. The "
 "software that is machine dependent includes"
 msgstr ""
+"Los aspectos del kernel que dependen de la máquina están aislados del código "
+"principal. En particular, ninguno de los códigos independientes de la "
+"máquina contiene código condicional para una arquitectura específica. Cuando "
+"se necesita una acción dependiente de la arquitectura, el código "
+"independiente de la máquina llama a una función dependiente de la "
+"arquitectura que se encuentra en el código dependiente de la máquina. El "
+"software que depende de la máquina incluye"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:429
 msgid "Low-level system-startup actions"
-msgstr ""
+msgstr "Acciones de inicio del sistema de bajo nivel"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:433
 msgid "Trap and fault handling"
-msgstr ""
+msgstr "Manejo de trampas y fallas"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:437
 msgid "Low-level manipulation of the run-time context of a process"
 msgstr ""
+"Manipulación de bajo nivel del contexto de tiempo de ejecución de un proceso"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:442
 msgid "Configuration and initialization of hardware devices"
-msgstr ""
+msgstr "Configuración e inicialización de dispositivos hardware"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:446
 msgid "Run-time support for I/O devices"
-msgstr ""
+msgstr "Soporte en tiempo de ejecución para dispositivos de E/S"
 
 #. (itstool) path: table/title
 #: book.translate.xml:451
 msgid "Machine-dependent software for the HP300 in the 4.4BSD kernel"
-msgstr ""
+msgstr "Software dependiente de la máquina para la HP300 en el kernel 4.4BSD"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:465
 msgid "total machine dependent"
-msgstr ""
+msgstr "total dependiente de la máquina"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:466
+#, fuzzy
 msgid "39,634"
-msgstr ""
+msgstr "39,634"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:467
+#, fuzzy
 msgid "19.6"
-msgstr ""
+msgstr "19.6"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:473
 msgid "machine dependent headers"
-msgstr ""
+msgstr "encabezados dependientes de la máquina"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:474
+#, fuzzy
 msgid "1,562"
-msgstr ""
+msgstr "1,562"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:475
+#, fuzzy
 msgid "0.8"
-msgstr ""
+msgstr "0.8"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:479
 msgid "device driver headers"
-msgstr ""
+msgstr "encabezados del controlador de dispositivo"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:480
+#, fuzzy
 msgid "3,495"
-msgstr ""
+msgstr "3,495"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:481
+#, fuzzy
 msgid "1.7"
-msgstr ""
+msgstr "1.7"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:485
 msgid "device driver source"
-msgstr ""
+msgstr "fuente del controlador del dispositivo"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:486
+#, fuzzy
 msgid "17,506"
-msgstr ""
+msgstr "17,506"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:487
+#, fuzzy
 msgid "8.7"
-msgstr ""
+msgstr "8.7"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:492
+#, fuzzy
 msgid "3,087"
-msgstr ""
+msgstr "3,087"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:493 book.translate.xml:505
+#, fuzzy
 msgid "1.5"
-msgstr ""
+msgstr "1.5"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:497
 msgid "other machine dependent"
-msgstr ""
+msgstr "Otro dependiente de la máquina"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:498
+#, fuzzy
 msgid "6,287"
-msgstr ""
+msgstr "6,287"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:499
+#, fuzzy
 msgid "3.1"
-msgstr ""
+msgstr "3.1"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:503
 msgid "routines in assembly language"
-msgstr ""
+msgstr "rutinas en lenguaje ensamblador"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:504
+#, fuzzy
 msgid "3,014"
-msgstr ""
+msgstr "3,014"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:509
 msgid "HP/UX compatibility"
-msgstr ""
+msgstr "Compatibilidad HP/UX"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:510
+#, fuzzy
 msgid "4,683"
-msgstr ""
+msgstr "4,683"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:511
+#, fuzzy
 msgid "2.3"
-msgstr ""
+msgstr "2.3"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:517
@@ -794,6 +936,15 @@ msgid ""
 "dependent software, excluding HP/UX and device support, accounts for a "
 "minuscule 6.9 percent of the kernel."
 msgstr ""
+"<xref linkend=\"table-mach-indep\"/> resume el software independiente de la "
+"máquina que constituye el kernel 4.4BSD para la HP300. Los números en la "
+"columna 2 son para líneas de código fuente C, archivos de encabezado y "
+"lenguaje ensamblador. Prácticamente todo el software del kernel está escrito "
+"en lenguaje de programación C; menos del 2 por ciento está escrito en "
+"lenguaje ensamblador. Como las estadísticas en <xref linkend=\"table-mach-"
+"dep\"/> show, el software dependiente de la máquina, excluyendo HP/UX y la "
+"compatibilidad con dispositivos, representa un minúsculo 6,9 por ciento del "
+"kernel."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:531
@@ -810,11 +961,23 @@ msgid ""
 "place in the kernel -- it is scattered throughout, and it usually appears in "
 "places logically associated with what is being initialized."
 msgstr ""
+"Solo una pequeña parte del kernel se dedica a inicializar el sistema. Este "
+"código se utiliza cuando el sistema está <emphasis>bootstrapped</emphasis> "
+"en funcionamiento y es responsable de configurar el entorno de hardware y "
+"software del kernel (consulte el Capítulo 14). Algunos sistemas operativos ("
+"especialmente aquellos con memoria física limitada) descartan o "
+"<emphasis>overlay</emphasis>  el software que realiza estas funciones "
+"después de que se haya ejecutado ese software. El núcleo 4.4BSD no recupera "
+"la memoria utilizada por el código de inicio porque ese espacio de memoria "
+"es apenas el 0,5 por ciento de los recursos del núcleo utilizados en una "
+"máquina típica. Además, el código de inicio no aparece en un solo lugar del "
+"kernel; está disperso por todas partes y, por lo general, aparece en lugares "
+"asociados lógicamente con lo que se está inicializando."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:553
 msgid "Kernel Services"
-msgstr ""
+msgstr "Servicios de kernel"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:555
@@ -836,6 +999,24 @@ msgid ""
 "process waits, but will usually return from the system call before the "
 "kernel buffer is written to the disk."
 msgstr ""
+"El límite entre el código de nivel de kernel y de usuario es reforzado por "
+"las instalaciones de protección de hardware proporcionadas por el hardware "
+"subyacente. El kernel opera en un espacio de direcciones separado que es "
+"inaccesible para los procesos del usuario. Las operaciones privilegiadas, "
+"como iniciar E / S y detener la unidad central de procesamiento (CPU), solo "
+"están disponibles para el kernel. Las aplicaciones solicitan servicios del "
+"kernel con <emphasis>llamadas al sistema</emphasis> Las llamadas al sistema "
+"se utilizan para hacer que el kernel ejecute operaciones complicadas, como "
+"escribir datos en el almacenamiento secundario, y operaciones simples, como "
+"devolver la hora actual del día. Aparecen todas las llamadas al sistema "
+"<emphasis>sincrónico</emphasis> a las aplicaciones: la aplicación no se "
+"ejecuta mientras el núcleo realiza las acciones asociadas con una llamada al "
+"sistema. El kernel puede finalizar algunas operaciones asociadas con una "
+"llamada al sistema después de haber regresado. Por ejemplo, un "
+"<emphasis>escriba</emphasis> La llamada al sistema copiará los datos que se "
+"escribirán desde el proceso del usuario a un búfer del núcleo mientras el "
+"proceso espera, pero normalmente regresará de la llamada al sistema antes de "
+"que el búfer del núcleo se escriba en el disco."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:582
@@ -856,6 +1037,23 @@ msgid ""
 "<emphasis>errno</emphasis>, and the function that executed the system call "
 "returns the value -1."
 msgstr ""
+"Una llamada al sistema generalmente se implementa como una trampa de "
+"hardware que cambia el modo de ejecución de la CPU y la asignación actual "
+"del espacio de direcciones. Los parámetros proporcionados por los usuarios "
+"en las llamadas al sistema son validados por el kernel antes de ser "
+"utilizados. Dicha verificación asegura la integridad del sistema. Todos los "
+"parámetros que se pasan al kernel se copian en el espacio de direcciones del "
+"kernel, para garantizar que los parámetros validados no se modifiquen como "
+"un efecto secundario de la llamada al sistema. Los resultados de las "
+"llamadas al sistema son devueltos por el kernel, ya sea en registros de "
+"hardware o copiando sus valores a direcciones de memoria especificadas por "
+"el usuario. Al igual que los parámetros que se pasan al kernel, las "
+"direcciones utilizadas para la devolución de resultados deben validarse para "
+"garantizar que formen parte del espacio de direcciones de una aplicación. Si "
+"el kernel encuentra un error al procesar una llamada al sistema, devuelve un "
+"código de error al usuario. Para el lenguaje de programación C, este código "
+"de error se almacena en la variable global <emphasis>errno</emphasis>, y la "
+"función que ejecutó la llamada al sistema devuelve el valor -1."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:607
@@ -867,11 +1065,18 @@ msgid ""
 "makes most state changes, such as suspending a process while another is "
 "running, invisible to the processes involved."
 msgstr ""
+"Las aplicaciones de usuario y el kernel operan de forma independiente entre "
+"sí. 4.4BSD no almacena bloques de control de E/S u otras estructuras de "
+"datos relacionadas con el sistema operativo en el espacio de direcciones de "
+"la aplicación. A cada aplicación de nivel de usuario se le proporciona un "
+"espacio de direcciones independiente en el que se ejecuta. El kernel realiza "
+"la mayoría de los cambios de estado, como suspender un proceso mientras se "
+"está ejecutando otro, invisible para los procesos involucrados."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:620
 msgid "Process Management"
-msgstr ""
+msgstr "Gestión de proceso"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:622
@@ -889,6 +1094,21 @@ msgid ""
 "kernel to identify a process when reporting status changes to a user, and by "
 "a user when referencing a process in a system call."
 msgstr ""
+"4.4BSD admite un entorno multitarea. Cada tarea o hilo de ejecución se "
+"denomina proceso de <emphasis>process</emphasis>. El <emphasis>contexto</"
+"emphasis> de un proceso 4.4BSD consiste en el estado a nivel de usuario, "
+"incluido el contenido de su espacio de direcciones y el entorno de tiempo de "
+"ejecución, y el estado a nivel de kernel, que incluye parámetros de "
+"programación, controles de recursos e información de identificación. El "
+"contexto incluye todo lo que utiliza el kernel para proporcionar servicios "
+"para el proceso. Los usuarios pueden crear procesos, controlar la ejecución "
+"de los procesos y recibir notificaciones cuando cambia el estado de "
+"ejecución de los procesos. A cada proceso se le asigna un valor único, "
+"denominado<emphasis>identificador de proceso</emphasis>  (PID). Este valor "
+"lo usa el kernel para identificar un proceso cuando informa cambios de "
+"estado a un usuario y un usuario cuando hace referencia a un proceso en una "
+"llamada al sistema.\n"
+"Español."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:645
@@ -900,11 +1120,18 @@ msgid ""
 "and the process's system state managed by the kernel. Important components "
 "of the kernel state are described in Chapter 4."
 msgstr ""
+"El kernel crea un proceso duplicando el contexto de otro proceso. El nuevo "
+"proceso se denomina <emphasis>proceso hijo</emphasis>del "
+"original<emphasis>proceso padre</emphasis> el contexto duplicado en la "
+"creación del proceso incluye tanto el estado de ejecución del proceso a "
+"nivel de usuario como el estado del sistema del proceso administrado por el "
+"kernel. Los componentes importantes del estado del kernel se describen en el "
+"Capítulo 4."
 
 #. (itstool) path: figure/title
 #: book.translate.xml:657
 msgid "Process lifecycle"
-msgstr ""
+msgstr "Ciclo de vida del proceso"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -912,13 +1139,14 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:661
+#, fuzzy
 msgctxt "_"
 msgid "external ref='fig1' md5='__failed__'"
-msgstr ""
+msgstr "external ref='fig1' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: book.translate.xml:665
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "+----------------+               wait               +----------------+\n"
 "| parent process |---------------------------------&gt;| parent process |---&gt;\n"
@@ -930,6 +1158,17 @@ msgid ""
 "|  child process |-------&gt;|  child process |-------&gt;| zombie process |\n"
 "+----------------+        +----------------+        +----------------+"
 msgstr ""
+"+----------------+               wait               +----------------+\n"
+"| parent process |---------------------------------&gt;| parent process "
+"|---&gt;\n"
+"+----------------+                                  +----------------+\n"
+"        |                                                   ^\n"
+"        | fork                                              |\n"
+"        V                                                   |\n"
+"+----------------+ execve +----------------+  wait  +----------------+\n"
+"|  child process |-------&gt;|  child process |-------&gt;| zombie process |"
+"\n"
+"+----------------+        +----------------+        +----------------+"
 
 #. (itstool) path: figure/mediaobject
 #: book.translate.xml:659
@@ -965,6 +1204,15 @@ msgid ""
 "system -- either a binary-executable file or a file that causes the "
 "execution of a specified interpreter program to process its contents."
 msgstr ""
+"Aunque hay ocasiones en las que se pretende que el nuevo proceso sea una "
+"copia del padre, la carga y ejecución de un programa diferente es una acción "
+"más útil y típica. Un proceso puede superponerse a sí mismo con la imagen de "
+"memoria de otro programa, pasando a la imagen recién creada un conjunto de "
+"parámetros, utilizando la llamada al sistema <emphasis>execve</emphasis>. Un "
+"parámetro es el nombre de un archivo cuyo contenido está en un formato "
+"reconocido por el sistema, ya sea un archivo ejecutable binario o un archivo "
+"que hace que la ejecución de un programa de interpretación específico "
+"procese su contenido."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:710
@@ -976,6 +1224,12 @@ msgid ""
 "or use an intermediate file. Interprocess communication is discussed "
 "extensively in Chapter 11."
 msgstr ""
+"Un proceso puede terminar ejecutando un <emphasis>salir</emphasis> llamada "
+"al sistema, enviando 8 bits de estado de salida a su padre. Si un proceso "
+"desea comunicar más de un byte de información con su padre, debe configurar "
+"un canal de comunicación entre procesos utilizando tuberías o sockets, o "
+"utilizar un archivo intermedio. La comunicación entre procesos se analiza "
+"ampliamente en el Capítulo 11."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:722
@@ -998,6 +1252,8 @@ msgid ""
 "The details of how the kernel creates and destroys processes are given in "
 "Chapter 5."
 msgstr ""
+"Los detalles de cómo el kernel crea y destruye procesos se dan en el "
+"Capítulo 5."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:746
@@ -1009,11 +1265,18 @@ msgid ""
 "scheduling priority, but are still obligated to share the underlying CPU "
 "resources according to the kernel's scheduling policy."
 msgstr ""
+"Los procesos están programados para su ejecución de acuerdo con un "
+"<emphasis>proceso parámetro. Esta prioridad es administrada por un algoritmo "
+"de programación basado en kernel. Los usuarios pueden influir en la "
+"programación de un proceso especificando un parámetro "
+"(<emphasis>nice</emphasis>) que pondera la prioridad de programación "
+"general, pero aún están obligados a compartir los recursos de CPU "
+"subyacentes de acuerdo con la política de programación del kernel."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:759
 msgid "Signals"
-msgstr ""
+msgstr "Señales"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:761
@@ -1030,6 +1293,17 @@ msgid ""
 "a global variable). If the handler returns, the signal is unblocked and can "
 "be generated (and caught) again."
 msgstr ""
+"El sistema define un conjunto de <emphasis>signals</emphasis> que se puede "
+"entregar a un proceso. Las señales en 4.4BSD se modelan a partir de las "
+"interrupciones de hardware. Un proceso puede especificar una subrutina a "
+"nivel de usuario para ser un <emphasis>handler</emphasis> al que se debe "
+"enviar una señal. Cuando se genera una señal, se bloquea para que no vuelva "
+"a ocurrir mientras se está <emphasis>caught</emphasis> por el manejador. La "
+"captura de una señal implica guardar el contexto del proceso actual y crear "
+"uno nuevo en el que ejecutar el controlador. Luego, la señal se envía al "
+"controlador, que puede abortar el proceso o regresar al proceso en ejecución "
+"(quizás después de establecer una variable global). Si el manejador regresa, "
+"la señal se desbloquea y se puede generar (y capturar) nuevamente."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:780
@@ -1041,6 +1315,12 @@ msgid ""
 "<emphasis>core file</emphasis> that contains the current memory image of the "
 "process for use in postmortem debugging."
 msgstr ""
+"Alternativamente, un proceso puede especificar que una señal debe ser "
+"<emphasis>ignored</emphasis>, o que se debe tomar una acción predeterminada, "
+"según lo determine el kernel. La acción predeterminada de ciertas señales es "
+"terminar el proceso. Esta terminación puede ir acompañada de la creación de "
+"un <emphasis>core file</emphasis>  que contiene la imagen de memoria actual "
+"del proceso para su uso en la depuración post mortem."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:789
@@ -1049,6 +1329,9 @@ msgid ""
 "<emphasis>SIGKILL</emphasis>, which kills runaway processes, and the job-"
 "control signal <emphasis>SIGSTOP</emphasis>."
 msgstr ""
+"Algunas señales no se pueden captar ni ignorar. Estas señales incluyen "
+"<emphasis>SIGKILL</emphasis>,que mata los procesos fuera de control, y la "
+"señal de control del trabajo<emphasis>SIGSTOP</emphasis>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:797
@@ -1061,6 +1344,14 @@ msgid ""
 "signal stack, the space allocated for each coroutine must be expanded by the "
 "amount of space required to catch a signal."
 msgstr ""
+"Un proceso puede optar por que las señales se envíen en una pila especial "
+"para que sean posibles manipulaciones sofisticadas de la pila de software. "
+"Por ejemplo, un lenguaje que admita corrutinas debe proporcionar una pila "
+"para cada corrutina. El sistema de tiempo de ejecución del lenguaje puede "
+"asignar estas pilas dividiendo la pila única proporcionada por 4.4BSD. Si el "
+"núcleo no admite una pila de señales separada, el espacio asignado para cada "
+"corrutina debe expandirse por la cantidad de espacio requerida para captar "
+"una señal."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:808
@@ -1072,6 +1363,13 @@ msgid ""
 "Mechanisms are provided so that processes can protect critical sections of "
 "code against the occurrence of specified signals."
 msgstr ""
+"Todas las señales tienen lo mismo <emphasis>prioridad</emphasis>. Si hay "
+"varias señales pendientes simultáneamente, el orden en el que se envían las "
+"señales a un proceso es específico de la implementación. Los manejadores de "
+"señales se ejecutan con la señal que provocó el bloqueo de su invocación, "
+"pero aún pueden ocurrir otras señales. Se proporcionan mecanismos para que "
+"los procesos puedan proteger secciones críticas de código contra la "
+"aparición de señales específicas."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:816
@@ -1079,11 +1377,13 @@ msgid ""
 "The detailed design and implementation of signals is described in Section "
 "4.7."
 msgstr ""
+"El diseño detallado y la implementación de señales se describen en la "
+"Sección 4.7."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:821
 msgid "Process Groups and Sessions"
-msgstr ""
+msgstr "Grupos de procesos y sesiones"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:823
@@ -1096,6 +1396,14 @@ msgid ""
 "its descendents. Creating a new process group is easy; the value of a new "
 "process group is ordinarily the process identifier of the creating process."
 msgstr ""
+"Los procesos se organizan en <emphasis>process groups</emphasis>. Los grupos "
+"de procesos se utilizan para controlar el acceso a terminales y para "
+"proporcionar un medio de distribuir señales a colecciones de procesos "
+"relacionados. Un proceso hereda su grupo de procesos de su proceso padre. El "
+"kernel proporciona mecanismos para permitir que un proceso altere su grupo "
+"de procesos o el grupo de procesos de sus descendientes. Crear un nuevo "
+"grupo de procesos es fácil; el valor de un nuevo grupo de procesos es "
+"normalmente el identificador de proceso del proceso de creación."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:835
@@ -1109,6 +1417,15 @@ msgid ""
 "such a job by forking a process for each stage of the pipeline, then putting "
 "all those processes into a separate process group."
 msgstr ""
+"El grupo de procesos en un grupo de procesos a veces se denomina un "
+"<emphasis>job</emphasis> y es manipulado por software de sistema de alto "
+"nivel, como el shell. Un tipo común de trabajo creado por un shell es un "
+"<emphasis>pipeline</emphasis> de varios procesos conectados por tuberías, de "
+"modo que la salida del primer proceso es la entrada del segundo, la salida "
+"del segundo es la entrada del tercero, y así sucesivamente. El caparazón "
+"crea un trabajo de este tipo mediante la bifurcación de un proceso para cada "
+"etapa de la tubería y luego coloca todos esos procesos en un grupo de "
+"procesos separado."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:848
@@ -1118,6 +1435,11 @@ msgid ""
 "software interrupts affecting the group, causing the group to suspend or "
 "resume execution, or to be interrupted or terminated."
 msgstr ""
+"Un proceso de usuario puede enviar una señal a cada proceso en un grupo de "
+"procesos, así como a un solo proceso. Un proceso en un grupo de procesos "
+"específico puede recibir interrupciones de software que afecten al grupo, "
+"haciendo que el grupo suspenda o reanude la ejecución, o que se interrumpa o "
+"finalice."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:854
@@ -1135,6 +1457,18 @@ msgid ""
 "called <emphasis>job control</emphasis> and is described, with process "
 "groups, in Section 4.8."
 msgstr ""
+"Un terminal tiene asignado un identificador de grupo de procesos. Este "
+"identificador normalmente se establece en el identificador de un grupo de "
+"procesos asociado con el terminal. Un shell de control de trabajos puede "
+"crear varios grupos de procesos asociados con el mismo terminal; la terminal "
+"es la <emphasis>controlando terminal</emphasis> para cada proceso en estos "
+"grupos. Un proceso puede leer de un descriptor para su terminal de control "
+"solo si el identificador del grupo de procesos del terminal coincide con el "
+"del proceso. Si los identificadores no coinciden, el proceso se bloqueará si "
+"intenta leer desde el terminal. Al cambiar el identificador de grupo de "
+"procesos del terminal, un shell puede arbitrar un terminal entre varios "
+"trabajos diferentes. Este arbitraje se llama <emphasis>job control</"
+"emphasis> y se describe, con grupos de procesos, en la Sección 4.8."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:873
@@ -1145,11 +1479,16 @@ msgid ""
 "daemon process and its children, and to collect together a user's login "
 "shell and the jobs that that shell spawns."
 msgstr ""
+"Así como un conjunto de procesos relacionados se puede recopilar en un grupo "
+"de procesos, un conjunto de grupos de procesos se puede recopilar en un "
+"<emphasis>session</emphasis>. Los usos principales de las sesiones son crear "
+"un entorno aislado para un proceso daemon y sus hijos, y recopilar el shell "
+"de inicio de sesión de un usuario y los trabajos que genera ese shell."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:884
 msgid "Memory Management"
-msgstr ""
+msgstr "Gestión de la memoria"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:886
@@ -1168,6 +1507,22 @@ msgid ""
 "when debugging takes place. The initial contents of the segments of a child "
 "process are duplicates of the segments of a parent process."
 msgstr ""
+"Cada proceso tiene su propio espacio de direcciones privadas. El espacio de "
+"direcciones se divide inicialmente en tres segmentos lógicos: "
+"<emphasis>text</emphasis>,<emphasis>data</emphasis>, y <emphasis>stack</"
+"emphasis>. El segmento de texto es de solo lectura y contiene las "
+"instrucciones de máquina de un programa. Los segmentos de datos y de pila "
+"son tanto legibles como de escritura. El segmento de datos contiene las "
+"porciones de datos inicializadas y no inicializadas de un programa, mientras "
+"que el segmento de pila contiene la pila de tiempo de ejecución de la "
+"aplicación. En la mayoría de las máquinas, el núcleo amplía automáticamente "
+"el segmento de la pila a medida que se ejecuta el proceso. Un proceso puede "
+"expandir o contraer su segmento de datos al realizar una llamada al sistema, "
+"mientras que un proceso puede cambiar el tamaño de su segmento de texto solo "
+"cuando el contenido del segmento se superpone con datos del sistema de "
+"archivos o cuando se realiza la depuración. El contenido inicial de los "
+"segmentos de un proceso hijo son duplicados de los segmentos de un proceso "
+"padre."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:907
@@ -1186,11 +1541,26 @@ msgid ""
 "to processes. A process may, however, advise the system about expected "
 "future memory utilization as a performance aid."
 msgstr ""
+"No es necesario que todo el contenido de un espacio de direcciones de "
+"proceso sea residente para que se ejecute un proceso. Si un proceso hace "
+"referencia a una parte de su espacio de direcciones que no reside en la "
+"memoria principal, el sistema<emphasis>pages</emphasis> la información "
+"necesaria en la memoria. Cuando los recursos del sistema son escasos, el "
+"sistema utiliza un enfoque de dos niveles para mantener los recursos "
+"disponibles. Si hay una cantidad modesta de memoria disponible, el sistema "
+"quitará recursos de memoria a los procesos si estos recursos no se han "
+"utilizado recientemente. Si hubiera una grave escasez de recursos, el "
+"sistema recurrirá a <emphasis>swapping</emphasis> todo el contexto de un "
+"proceso al almacenamiento secundario. los <emphasis>demand paging</emphasis> "
+"y <emphasis>swapping</emphasis> realizadas por el sistema son efectivamente "
+"transparentes a los procesos. Sin embargo, un proceso puede informar al "
+"sistema sobre la utilización de memoria futura esperada como ayuda para el "
+"rendimiento."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:930
 msgid "BSD Memory-Management Design Decisions"
-msgstr ""
+msgstr "Decisiones de diseño de gestión de memoria BSD"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:932
@@ -1205,6 +1575,16 @@ msgid ""
 "4.2BSD was shipped without the <emphasis>mmap</emphasis> interface, because "
 "of pressure to make other features, such as networking, available."
 msgstr ""
+"El soporte de grandes espacios de direcciones dispersos, archivos mapeados y "
+"memoria compartida era un requisito para 4.2BSD. Se especificó una interfaz, "
+"llamada <emphasis>mmap</emphasis>, que permitía a los procesos no "
+"relacionados solicitar un mapeo compartido de un archivo en sus espacios de "
+"direcciones. Si varios procesos mapearon el mismo archivo en sus espacios de "
+"direcciones, los cambios en la porción del archivo de un espacio de "
+"direcciones por un proceso se reflejarían en el área mapeada por los otros "
+"procesos, así como en el archivo mismo. Finalmente, 4.2BSD se envió sin el "
+"<emphasis>mmap</emphasis> interfaz, debido a la presión para hacer "
+"disponibles otras funciones, como redes."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:947
@@ -1216,6 +1596,12 @@ msgid ""
 "\"biblio-mckusick-1\"/>. Several of the companies have implemented the "
 "revised interface <xref linkend=\"biblio-gingell\"/>."
 msgstr ""
+"Un mayor desarrollo de la <emphasis>mmap</emphasis> La interfaz continuó "
+"durante el trabajo en 4.3BSD. Más de 40 empresas y grupos de investigación "
+"participaron en los debates que llevaron a la arquitectura revisada que se "
+"describe en el Manual de arquitectura de software de Berkeley. <xref linkend"
+"=\"biblio-mckusick-1\"/>. Varias de las empresas han implementado la "
+"interfaz revisada <xref linkend=\"biblio-gingell\"/>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:957
@@ -1234,6 +1620,21 @@ msgid ""
 "to support the tightly coupled multiprocessors that are becoming "
 "increasingly common and important today."
 msgstr ""
+"Una vez más, la presión del tiempo impidió que 4.3BSD proporcionara una "
+"implementación de la interfaz. Aunque este último podría haberse integrado "
+"en el sistema de memoria virtual 4.3BSD existente, los desarrolladores "
+"decidieron no incluirlo porque esa implementación tenía casi 10 años. "
+"Además, el diseño original de la memoria virtual se basaba en la suposición "
+"de que las memorias de las computadoras eran pequeñas y caras, mientras que "
+"los discos estaban conectados localmente, eran rápidos, grandes y "
+"económicos. Por lo tanto, el sistema de memoria virtual fue diseñado para "
+"ser frugal con el uso de memoria a expensas de generar tráfico de disco "
+"adicional. Además, la implementación de 4.3BSD estaba plagada de "
+"dependencias de hardware de administración de memoria VAX que impedían su "
+"portabilidad a otras arquitecturas de computadora. Por último, el sistema de "
+"memoria virtual no fue diseñado para admitir los multiprocesadores "
+"estrechamente acoplados que son cada vez más comunes e importantes en la "
+"actualidad."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:979
@@ -1254,6 +1655,23 @@ msgid ""
 "prevents any changes that they make from being visible to other processes "
 "mapping the file or being written back to the file itself."
 msgstr ""
+"Los intentos de mejorar gradualmente la antigua implementación parecían "
+"condenados al fracaso. Un diseño completamente nuevo, por otro lado, podría "
+"aprovechar grandes memorias, conservar transferencias de disco y tener el "
+"potencial de ejecutarse en multiprocesadores. En consecuencia, el sistema de "
+"memoria virtual fue reemplazado por completo en 4.4BSD. El sistema de "
+"memoria virtual 4.4BSD se basa en el sistema Mach 2.0 VM <xref linkend"
+"=\"biblio-tevanian\"/>. con actualizaciones de Mach 2.5 y Mach 3.0. Cuenta "
+"con un soporte eficiente para compartir, una clara separación de las "
+"características independientes y dependientes de la máquina, así como "
+"soporte multiprocesador (actualmente sin usar). Los procesos pueden asignar "
+"archivos en cualquier lugar de su espacio de direcciones. Pueden compartir "
+"partes de su espacio de direcciones haciendo un mapeo compartido del mismo "
+"archivo. Los cambios realizados por un proceso son visibles en el espacio de "
+"direcciones del otro proceso y también se escriben en el archivo. Los "
+"procesos también pueden solicitar asignaciones privadas de un archivo, lo "
+"que evita que los cambios que realicen sean visibles para otros procesos que "
+"asignan el archivo o que se vuelvan a escribir en el propio archivo."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1004
@@ -1266,6 +1684,13 @@ msgid ""
 "the process memory into the kernel. The 4.4BSD kernel always copies the data "
 "for several reasons:"
 msgstr ""
+"Otro problema con el sistema de memoria virtual es la forma en que la "
+"información se pasa al kernel cuando se realiza una llamada al sistema. "
+"4.4BSD siempre copia los datos del espacio de direcciones del proceso en un "
+"búfer en el kernel. Para operaciones de lectura o escritura que transfieren "
+"grandes cantidades de datos, realizar la copia puede llevar mucho tiempo. "
+"Una alternativa a la copia es reasignar la memoria del proceso al kernel. El "
+"kernel 4.4BSD siempre copia los datos por varias razones:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1017
@@ -1273,6 +1698,8 @@ msgid ""
 "Often, the user data are not page aligned and are not a multiple of the "
 "hardware page length."
 msgstr ""
+"A menudo, los datos del usuario no están alineados con la página y no son un "
+"múltiplo de la longitud de la página del hardware."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1022
@@ -1281,6 +1708,9 @@ msgid ""
 "reference that page. Some programs depend on the data remaining in the "
 "buffer even after those data have been written."
 msgstr ""
+"Si la página se quita del proceso, ya no podrá hacer referencia a esa "
+"página. Algunos programas dependen de los datos que quedan en el búfer "
+"incluso después de que se hayan escrito."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1029
@@ -1293,6 +1723,15 @@ msgid ""
 "modify. Unfortunately, the typical process will immediately try to write new "
 "data to its output buffer, forcing the data to be copied anyway."
 msgstr ""
+"Si al proceso se le permite mantener una copia de la página (como está en la "
+"semántica 4.4BSD actual), la página debe hacerse <emphasis>copy-on-write</"
+"emphasis>. Una página de copia en escritura es aquella que está protegida "
+"contra la escritura al convertirse en solo lectura. Si el proceso intenta "
+"modificar la página, el kernel tiene un error de escritura. El kernel luego "
+"hace una copia de la página que el proceso puede modificar. "
+"Desafortunadamente, el proceso típico intentará inmediatamente escribir "
+"nuevos datos en su búfer de salida, lo que obligará a copiar los datos de "
+"todos modos."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1044
@@ -1302,6 +1741,11 @@ msgid ""
 "purged selectively. The cache purges are often slow. The net effect is that "
 "remapping is slower than copying for blocks of data less than 4 to 8 Kbyte."
 msgstr ""
+"Cuando las páginas se reasignan a nuevas direcciones de memoria virtual, la "
+"mayoría del hardware de administración de memoria requiere que la caché de "
+"traducción de direcciones del hardware se purgue de forma selectiva. Las "
+"purgas de caché suelen ser lentas. El efecto neto es que la reasignación es "
+"más lenta que la copia de bloques de datos de menos de 4 a 8 Kbyte."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1053
@@ -1311,11 +1755,15 @@ msgid ""
 "<emphasis>mmap</emphasis> interface provides a way for both of these tasks "
 "to be done without copying."
 msgstr ""
+"Los mayores incentivos para el mapeo de memoria son las necesidades de "
+"acceder a archivos grandes y pasar grandes cantidades de datos entre "
+"procesos. los <emphasis>mmap</emphasis> La interfaz proporciona una forma de "
+"realizar ambas tareas sin realizar copias."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1063
 msgid "Memory Management Inside the Kernel"
-msgstr ""
+msgstr "Gestión de la memoria dentro del kernel"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1065
@@ -1331,6 +1779,18 @@ msgid ""
 "allocated on the stack even if there was space. An example is protocol-"
 "control blocks that remain throughout the duration of a network connection."
 msgstr ""
+"El kernel a menudo realiza asignaciones de memoria que son necesarias solo "
+"durante la duración de una única llamada al sistema. En un proceso de "
+"usuario, dicha memoria a corto plazo se asignaría en la pila de tiempo de "
+"ejecución. Debido a que el kernel tiene una pila de tiempo de ejecución "
+"limitada, no es factible asignarle bloques de memoria de tamaño moderado. En "
+"consecuencia, dicha memoria debe asignarse mediante un mecanismo más "
+"dinámico. Por ejemplo, cuando el sistema debe traducir un nombre de ruta, "
+"debe asignar un búfer de 1 Kbyte para contener el nombre. Otros bloques de "
+"memoria deben ser más persistentes que una sola llamada al sistema y, por lo "
+"tanto, no se podrían asignar en la pila incluso si hubiera espacio. Un "
+"ejemplo son los bloques de control de protocolo que permanecen durante la "
+"duración de una conexión de red."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1081
@@ -1348,11 +1808,24 @@ msgid ""
 "free routine takes a pointer to the storage being freed, but does not "
 "require the size of the piece of memory being freed."
 msgstr ""
+"Las demandas de asignación de memoria dinámica en el kernel han aumentado a "
+"medida que se han agregado más servicios. Un asignador de memoria "
+"generalizado reduce la complejidad de escribir código dentro del kernel. Por "
+"lo tanto, el núcleo 4.4BSD tiene un único asignador de memoria que puede ser "
+"utilizado por cualquier parte del sistema. Tiene una interfaz similar a las "
+"rutinas de la biblioteca C <emphasis>malloc</emphasis> y <emphasis>free</"
+"emphasis> que proporcionan asignación de memoria a programas de aplicación "
+"<xref linkend=\"biblio-mckusick-2\"/>. Al igual que la interfaz de la "
+"biblioteca C, la rutina de asignación toma un parámetro que especifica el "
+"tamaño de memoria que se necesita. El rango de tamaños para las solicitudes "
+"de memoria no está restringido; sin embargo, la memoria física está asignada "
+"y no paginada. La rutina libre toma un puntero al almacenamiento que se "
+"libera, pero no requiere el tamaño de la pieza de memoria que se libera."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1105
 msgid "I/O System"
-msgstr ""
+msgstr "Sistema de E/S"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1107
@@ -1362,6 +1835,10 @@ msgid ""
 "methods</emphasis> and no <emphasis>control blocks</emphasis> in a typical "
 "UNIX user process."
 msgstr ""
+"El modelo básico del sistema de E/S de UNIX es una secuencia de bytes a la "
+"que se puede acceder de forma aleatoria o secuencial. No existen "
+"<emphasis>access methods</emphasis> y no<emphasis>control blocks</emphasis> "
+"en un proceso de usuario típico de UNIX."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1116
@@ -1379,11 +1856,25 @@ msgid ""
 "stream I/O system or with the System V, Release 3 STREAMS, both of which can "
 "be accessed as traditional I/O streams.)"
 msgstr ""
+"Los diferentes programas esperan varios niveles de estructura, pero el "
+"núcleo no impone una estructura a la E/S. Por ejemplo, la convención para "
+"archivos de texto son líneas de caracteres ASCII separadas por un carácter "
+"de nueva línea (el carácter de avance de línea ASCII), pero el núcleo no "
+"sabe nada sobre esta convención. Para los propósitos de la mayoría de los "
+"programas, el modelo se simplifica aún más para ser un flujo de bytes de "
+"datos o un <emphasis>I/O stream</emphasis>. Es este único formulario de "
+"datos común el que hace que el enfoque basado en herramientas característico "
+"de UNIX funcione. <xref linkend=\"biblio-kernighan\"/>. Un flujo de E / S de "
+"un programa se puede alimentar como entrada a casi cualquier otro programa. ("
+"Este tipo de flujo de E / S tradicional de UNIX no debe confundirse con el "
+"sistema de E / S de flujo de la octava edición o con los STREAMS de System "
+"V, versión 3, a los cuales se puede acceder como flujos de E/S "
+"tradicionales)."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1142
 msgid "Descriptors and I/O"
-msgstr ""
+msgstr "Descriptores y E/S"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1144
@@ -1408,6 +1899,10 @@ msgid ""
 "kinds of objects can be represented by descriptors: files, pipes, and "
 "sockets."
 msgstr ""
+"Los descriptores representan objetos subyacentes admitidos por el kernel y "
+"se crean mediante llamadas al sistema específicas para el tipo de objeto. En "
+"4.4BSD, se pueden representar tres tipos de objetos mediante descriptores: "
+"archivos, tuberías y sockets."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1175
@@ -1453,6 +1948,9 @@ msgid ""
 "In systems before 4.2BSD, pipes were implemented using the filesystem; when "
 "sockets were introduced in 4.2BSD, pipes were reimplemented as sockets."
 msgstr ""
+"En los sistemas anteriores a 4.2BSD, las tuberías se implementaron "
+"utilizando el sistema de archivos; cuando se introdujeron los enchufes en "
+"4.2BSD, las tuberías se volvieron a implementar como enchufes."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1234
@@ -1479,6 +1977,14 @@ msgid ""
 "<emphasis>lseek</emphasis> system call. Ordinary files permit random access, "
 "and some devices do, as well. Pipes and sockets do not."
 msgstr ""
+"Cada descriptor válido tiene asociado un <emphasis>file offset</emphasis> en "
+"bytes desde el principio del objeto. Las operaciones de lectura y escritura "
+"comienzan en este desplazamiento, que se actualiza después de cada "
+"transferencia de datos. Para los objetos que permiten el acceso aleatorio, "
+"el desplazamiento del archivo también se puede establecer con el "
+"<emphasis>lseek</emphasis> llamada al sistema. Los archivos ordinarios "
+"permiten el acceso aleatorio, y algunos dispositivos también lo hacen. Las "
+"tuberías y los enchufes no."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1263
@@ -1489,11 +1995,16 @@ msgid ""
 "cleanup actions, such as final deletion of a file or deallocation of a "
 "socket."
 msgstr ""
+"Cuando un proceso termina, el kernel recupera todos los descriptores que "
+"estaban en uso por ese proceso. Si el proceso contenía la referencia final a "
+"un objeto, se notifica al administrador del objeto para que pueda realizar "
+"las acciones de limpieza necesarias, como la eliminación final de un archivo "
+"o la desasignación de un socket."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1272
 msgid "Descriptor Management"
-msgstr ""
+msgstr "Gestión de descriptores"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1274
@@ -1536,6 +2047,16 @@ msgid ""
 "emphasis>. Pipelines can be arbitrarily long series of processes connected "
 "by pipes."
 msgstr ""
+"Las tuberías permiten que la salida de un programa se introduzca en otro "
+"programa sin tener que volver a escribir o incluso volver a vincular ninguno "
+"de los programas. En lugar de configurar el descriptor 1 (salida estándar) "
+"del programa fuente para escribir en el terminal, se configura para ser el "
+"descriptor de entrada de una tubería. De manera similar, el descriptor 0 ("
+"entrada estándar) del programa de sumidero está configurado para hacer "
+"referencia a la salida de la tubería, en lugar del teclado del terminal. El "
+"conjunto resultante de dos procesos y la tubería de conexión se conoce como "
+"<emphasis>pipeline</emphasis>. Las Pipelines pueden ser series "
+"arbitrariamente largas de procesos conectados por tuberías."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1320
@@ -1559,7 +2080,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:1353
 msgid "Devices"
-msgstr ""
+msgstr "Dispositivos"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1355
@@ -1574,6 +2095,16 @@ msgid ""
 "much as possible, and even in the kernel most of them are segregated in the "
 "device drivers."
 msgstr ""
+"Los dispositivos de hardware tienen nombres de archivo y el usuario puede "
+"acceder a ellos a través de las mismas llamadas al sistema que se utilizan "
+"para los archivos normales. El kernel puede distinguir un <emphasis>device "
+"special file</emphasis> o <emphasis>special file</emphasis>, y puede "
+"determinar a qué dispositivo se refiere, pero la mayoría de los procesos no "
+"necesitan hacer esta determinación. Se accede a los terminales, impresoras y "
+"unidades de cinta como si fueran flujos de bytes, como archivos de disco "
+"4.4BSD. Por lo tanto, las dependencias y peculiaridades de los dispositivos "
+"se mantienen en el kernel tanto como sea posible, e incluso en el kernel la "
+"mayoría de ellas están segregadas en los controladores de dispositivos."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1369
@@ -1600,6 +2131,13 @@ msgid ""
 "latter to be read and written in a totally random byte-addressed fashion, "
 "like regular files. Filesystems are created on block devices."
 msgstr ""
+"Los dispositivos estructurados o en bloque se caracterizan por discos y "
+"cintas magnéticas, e incluyen la mayoría de los dispositivos de acceso "
+"aleatorio. El kernel admite acciones de almacenamiento en búfer de tipo "
+"lectura-modificación-escritura en dispositivos estructurados orientados a "
+"bloques para permitir que estos últimos se lean y escriban de forma "
+"totalmente aleatoria con direcciones de bytes, como archivos normales. Los "
+"sistemas de archivos se crean en dispositivos de bloque."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1399
@@ -1609,6 +2147,11 @@ msgid ""
 "plotters, and unbuffered magnetic tapes and disks. Unstructured devices "
 "typically support large block I/O transfers."
 msgstr ""
+"Los dispositivos no estructurados son aquellos dispositivos que no admiten "
+"una estructura de bloques. Los dispositivos no estructurados familiares son "
+"las líneas de comunicación, los trazadores de trama y las cintas y discos "
+"magnéticos sin búfer. Los dispositivos no estructurados suelen admitir "
+"transferencias de I/O de bloques grandes."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1405
@@ -1635,8 +2178,9 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1428
+#, fuzzy
 msgid "Socket IPC"
-msgstr ""
+msgstr "Socket IPC"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1430
@@ -1654,6 +2198,19 @@ msgid ""
 "between sockets can be set up by two unrelated processes, possibly residing "
 "on different machines."
 msgstr ""
+"El kernel 4.2BSD introdujo un mecanismo IPC más flexible que las pipes, "
+"basado en <emphasis>sockets</emphasis>. Un socket es un punto final de "
+"comunicación al que se refiere un descriptor, como un archivo o una tubería. "
+"Dos procesos pueden crear cada uno un socket y luego conectar esos dos "
+"extremos para producir un flujo de bytes confiable. Una vez conectados, los "
+"descriptores de los sockets pueden ser leídos o escritos por procesos, tal "
+"como lo haría este último con una tubería. La transparencia de los sockets "
+"permite al núcleo redirigir la salida de un proceso a la entrada de otro "
+"proceso que reside en otra máquina. Una diferencia importante entre tuberías "
+"y enchufes es que las tuberías requieren un proceso principal común para "
+"configurar el canal de comunicaciones. Se puede establecer una conexión "
+"entre sockets mediante dos procesos no relacionados, que posiblemente "
+"residen en máquinas diferentes."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1448
@@ -1669,6 +2226,17 @@ msgid ""
 "required by the POSIX.1 standard. Their functionality is a subset of the "
 "socket interface."
 msgstr ""
+"System V proporciona comunicación entre procesos locales a través de FIFO ("
+"también conocido como <emphasis>named pipes</emphasis>). Los FIFO aparecen "
+"como un objeto en el sistema de archivos que los procesos no relacionados "
+"pueden abrir y enviar datos de la misma manera en que se comunicarían a "
+"través de una tubería. Por lo tanto, los FIFO no requieren un padre común "
+"para configurarlos; se pueden conectar después de que un par de procesos "
+"estén en funcionamiento. A diferencia de los sockets, los FIFO solo se "
+"pueden utilizar en una máquina local; no se pueden utilizar para comunicarse "
+"entre procesos en diferentes máquinas. Los FIFO se implementan en 4.4BSD "
+"solo porque son requeridos por el estándar POSIX.1. Su funcionalidad es un "
+"subconjunto de la interfaz de socket."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1470
@@ -1726,6 +2294,18 @@ msgid ""
 "memory copying in such cases often would more than double the running time "
 "of the affected application."
 msgstr ""
+"Esta función permite que los búferes de diferentes partes de un espacio de "
+"direcciones de proceso se escriban de forma atómica, sin necesidad de "
+"copiarlos en un solo búfer contiguo. Las escrituras atómicas son necesarias "
+"en el caso de que la abstracción subyacente se base en registros, como las "
+"unidades de cinta que generan un bloque de cinta en cada solicitud de "
+"escritura. También es conveniente poder leer una sola solicitud en varios "
+"búferes diferentes (como un encabezado de registro en un lugar y los datos "
+"en otro). Aunque una aplicación puede simular la capacidad de dispersar "
+"datos leyendo los datos en un búfer grande y luego copiando los fragmentos a "
+"sus destinos previstos, el costo de la copia de memoria a memoria en tales "
+"casos a menudo duplicaría el tiempo de ejecución del archivo. aplicación "
+"afectada."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1543
@@ -1743,7 +2323,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:1568
 msgid "Multiple Filesystem Support"
-msgstr ""
+msgstr "Soporte para múltiples sistemas de archivos"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1570
@@ -1760,17 +2340,19 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:1583
 msgid "Local disk-based filesystems"
-msgstr ""
+msgstr "Sistemas de archivos locales basados en disco"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1587
 msgid "Files imported using a variety of remote filesystem protocols"
 msgstr ""
+"Archivos importados utilizando una variedad de protocolos de sistemas de "
+"archivos remotos"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1591
 msgid "Read-only CD-ROM filesystems"
-msgstr ""
+msgstr "Sistemas de archivos de CD-ROM de solo lectura"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1597
@@ -1778,6 +2360,8 @@ msgid ""
 "Filesystems providing special-purpose interfaces -- for example, the "
 "<filename>/proc</filename> filesystem"
 msgstr ""
+"Los sistemas de archivos que proporcionan interfaces de propósito especial, "
+"por ejemplo, el <filename>/proc</filename>sistema de archivos"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1603
@@ -1788,11 +2372,17 @@ msgid ""
 "Section 6.5; its ancillary support routines are described in Section 6.6; "
 "several of the special-purpose filesystems are described in Section 6.7."
 msgstr ""
+"Algunas variantes de 4.4BSD, como FreeBSD, permiten que los sistemas de "
+"archivos se carguen dinámicamente cuando los sistemas de archivos son "
+"referenciados por primera vez por el <emphasis>mount</emphasis> llamada al "
+"sistema. La interfaz vnode se describe en la Sección 6.5; sus rutinas de "
+"soporte auxiliar se describen en la Sección 6.6; varios de los sistemas de "
+"archivos de propósito especial se describen en la Sección 6.7."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1618
 msgid "Filesystems"
-msgstr ""
+msgstr "Sistemas de archivos"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1620
@@ -1805,6 +2395,14 @@ msgid ""
 "in the file itself, but the filesystem stores a small amount of ownership, "
 "protection, and usage information with each file."
 msgstr ""
+"Un archivo normal es una matriz lineal de bytes y se puede leer y escribir a "
+"partir de cualquier byte del archivo. El kernel no distingue límites de "
+"registro en archivos normales, aunque muchos programas reconocen que los "
+"caracteres de avance de línea distinguen los extremos de las líneas, y otros "
+"programas pueden imponer otra estructura. No se guarda información "
+"relacionada con el sistema sobre un archivo en el archivo en sí, pero el "
+"sistema de archivos almacena una pequeña cantidad de información de "
+"propiedad, protección y uso con cada archivo."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1629
@@ -1821,7 +2419,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:1643
 msgid "A small filesystem"
-msgstr ""
+msgstr "Un pequeño sistema de archivos"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -1829,13 +2427,14 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:1647
+#, fuzzy
 msgctxt "_"
 msgid "external ref='fig2' md5='__failed__'"
-msgstr ""
+msgstr "external ref='fig2' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: book.translate.xml:1651
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "                                    +-------+\n"
 "                                    |       |\n"
@@ -1860,6 +2459,28 @@ msgid ""
 "+-------+   |       |               |       |   +-------+\n"
 "            +-------+               +-------+"
 msgstr ""
+"                                    +-------+\n"
+"                                    |       |\n"
+"                                    +-------+\n"
+"                                   /         \\\n"
+"                              usr /           \\ vmunix\n"
+"                                |/             \\|\n"
+"                        +-------+               +-------+\n"
+"                        |       |               |       |\n"
+"                        +-------+               +-------+\n"
+"                       /    |    \\\n"
+"                staff /     |     \\ bin\n"
+"                    |/      | tmp  \\|\n"
+"            +-------+       V       +-------+\n"
+"            |       |   +-------+   |       |\n"
+"            +-------+   |       |   +-------+\n"
+"           /    |    \\  +-------+  /    |    \\\n"
+" mckusick /     |     \\|         |/     |     \\ ls\n"
+"        |/      | karels                | vi   \\|\n"
+"+-------+       V                       V       +-------+\n"
+"|       |   +-------+               +-------+   |       |\n"
+"+-------+   |       |               |       |   +-------+\n"
+"            +-------+               +-------+"
 
 #. (itstool) path: figure/mediaobject
 #: book.translate.xml:1645
@@ -1879,6 +2500,13 @@ msgid ""
 "directories. A filesystem may include not only plain files and directories, "
 "but also references to other objects, such as devices and sockets."
 msgstr ""
+"uno pequeño se muestra en <xref linkend=\"fig-small-fs\"/>. Los directorios "
+"pueden contener subdirectorios y no existe una limitación inherente a la "
+"profundidad con la que puede ocurrir el anidamiento de directorios. Para "
+"proteger la coherencia del sistema de archivos, el kernel no permite que los "
+"procesos escriban directamente en directorios. Un sistema de archivos puede "
+"incluir no solo archivos y directorios sin formato, sino también referencias "
+"a otros objetos, como dispositivos y sockets."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1689
@@ -1957,6 +2585,15 @@ msgid ""
 "directories as easily as they can regular files. Thus, a user can build "
 "arbitrarily complex subhierarchies."
 msgstr ""
+"Las utilidades del sistema y las bases de datos se guardan en ciertos "
+"directorios conocidos. Parte de la jerarquía bien definida incluye un "
+"directorio que contiene el <emphasis>home directory</emphasis>para cada "
+"usuario, por ejemplo, <filename>/usr/staff/mckusick</filename> y <filename>/"
+"usr/staff/karels</filename> en la Fig. 2.2. Cuando los usuarios inician "
+"sesión, el directorio de trabajo actual de su shell se establece en el "
+"directorio de inicio. Dentro de sus directorios personales, los usuarios "
+"pueden crear directorios tan fácilmente como archivos normales. Por tanto, "
+"un usuario puede construir subjerarquías arbitrariamente complejas."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1783
@@ -1974,6 +2611,20 @@ msgid ""
 "filesystem mounted on it are converted transparently by the kernel into "
 "references to the root directory of the mounted filesystem."
 msgstr ""
+"el usuario normalmente conoce un solo sistema de archivos, pero el sistema "
+"puede saber que este sistema de archivos virtual está realmente compuesto "
+"por varios sistemas de archivos físicos, cada uno en un dispositivo "
+"diferente. Un sistema de archivos físico no puede abarcar varios "
+"dispositivos de hardware. Dado que la mayoría de los dispositivos de disco "
+"físico se dividen en varios dispositivos lógicos, puede haber más de un "
+"sistema de archivos por dispositivo físico, pero no habrá más de uno por "
+"dispositivo lógico. Un sistema de archivos, el sistema de archivos que ancla "
+"todos los nombres de ruta absolutos, se llama <emphasis>root filesystem</"
+"emphasis>, y está siempre disponible. Otros pueden montarse; es decir, "
+"pueden integrarse en la jerarquía de directorios del sistema de archivos "
+"raíz. Las referencias a un directorio que tiene un sistema de archivos "
+"montado en él son convertidas de forma transparente por el kernel en "
+"referencias al directorio raíz del sistema de archivos montado."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1802
@@ -2008,6 +2659,9 @@ msgid ""
 "would not be left half-constructed, as could happen when a series of link "
 "operations were used."
 msgstr ""
+"La operación podría hacerse atómica. Si el sistema fallaba, el directorio no "
+"quedaría a medio construir, como podría suceder cuando se usaran una serie "
+"de operaciones de enlace."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1847
@@ -2016,6 +2670,9 @@ msgid ""
 "and directories need to be specified atomically so that they can be "
 "serialized."
 msgstr ""
+"Cuando se ejecuta un sistema de archivos en red, la creación y eliminación "
+"de archivos y directorios deben especificarse atómicamente para que puedan "
+"serializarse."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1853
@@ -2028,6 +2685,14 @@ msgid ""
 "delete directories only if explicit directory create and delete requests "
 "were presented."
 msgstr ""
+"Cuando se admiten sistemas de archivos que no son UNIX, como un sistema de "
+"archivos MS-DOS, en otra partición del disco, es posible que el otro sistema "
+"de archivos no admita operaciones de enlace. Aunque otros sistemas de "
+"archivos pueden admitir el concepto de directorios, probablemente no "
+"crearían ni eliminarían los directorios con enlaces, como lo hace el sistema "
+"de archivos UNIX. En consecuencia, podían crear y eliminar directorios solo "
+"si se presentaban solicitudes explícitas de creación y eliminación de "
+"directorios."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1865
@@ -2069,6 +2734,10 @@ msgid ""
 "of shortening empty directories is that it reduces the time spent in the "
 "kernel searching them when names are being created or deleted."
 msgstr ""
+"Una vez que el sistema de archivos tuvo la capacidad de acortar archivos, el "
+"kernel aprovechó esa capacidad para acortar grandes directorios vacíos. La "
+"ventaja de acortar los directorios vacíos es que reduce el tiempo que pasa "
+"en el kernel buscándolos cuando se crean o eliminan nombres."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1913
@@ -2079,21 +2748,26 @@ msgid ""
 "protection of files. These three levels specify the accessibility of a file "
 "to"
 msgstr ""
+"A los archivos recién creados se les asigna el identificador de usuario del "
+"proceso que los creó y el identificador de grupo del directorio en el que "
+"fueron creados. Se proporciona un mecanismo de control de acceso de tres "
+"niveles para la protección de archivos. Estos tres niveles especifican la "
+"accesibilidad de un archivo para"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1922
 msgid "The user who owns the file"
-msgstr ""
+msgstr "El usuario propietario del archivo"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1925
 msgid "The group that owns the file"
-msgstr ""
+msgstr "El grupo propietario del archivo"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1928
 msgid "Everyone else"
-msgstr ""
+msgstr "Todos los demas"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1932
@@ -2101,6 +2775,8 @@ msgid ""
 "Each level of access has separate indicators for read permission, write "
 "permission, and execute permission."
 msgstr ""
+"Cada nivel de acceso tiene indicadores separados para permiso de lectura, "
+"permiso de escritura y permiso de ejecución."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1935
@@ -2156,7 +2832,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:2004
 msgid "Filestores"
-msgstr ""
+msgstr "Almacenes de archivos"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2006
@@ -2167,6 +2843,12 @@ msgid ""
 "the data will be stored. 4.4BSD has a single implementation to provide these "
 "semantics."
 msgstr ""
+"Las operaciones definidas para los sistemas de archivos locales se dividen "
+"en dos partes. Todos los sistemas de archivos locales tienen en común la "
+"denominación jerárquica, el bloqueo, las cuotas, la gestión de atributos y "
+"la protección. Estas características son independientes de cómo se "
+"almacenarán los datos. 4.4BSD tiene una implementación única para "
+"proporcionar esta semántica."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2012
@@ -2176,11 +2858,15 @@ msgid ""
 "storage media is the responsibility of the filestore. 4.4BSD supports three "
 "different filestore layouts:"
 msgstr ""
+"La otra parte del sistema de archivos local es la organización y gestión de "
+"los datos en los medios de almacenamiento. La distribución del contenido de "
+"los archivos en el medio de almacenamiento es responsabilidad del almacén de "
+"archivos. 4.4BSD admite tres diseños de almacén de archivos diferentes:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2020
 msgid "The traditional Berkeley Fast Filesystem"
-msgstr ""
+msgstr "El tradicional sistema de archivos rápido de Berkeley"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2023
@@ -2188,11 +2874,13 @@ msgid ""
 "The log-structured filesystem, based on the Sprite operating-system design "
 "<xref linkend=\"biblio-rosenblum\"/>"
 msgstr ""
+"El sistema de archivos estructurado por registros, basado en el diseño del "
+"sistema operativo Sprite <xref linkend=\"biblio-rosenblum\"/>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2028
 msgid "A memory-based filesystem"
-msgstr ""
+msgstr "Un sistema de archivos basado en memoria"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2032
@@ -2201,6 +2889,9 @@ msgid ""
 "these differences are indistinguishable to the processes using the "
 "filestores."
 msgstr ""
+"Aunque las organizaciones de estos almacenes de archivos son completamente "
+"diferentes, estas diferencias son indistinguibles de los procesos que "
+"utilizan los almacenes de archivos."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2036
@@ -2211,6 +2902,12 @@ msgid ""
 "expected to accessed together are moved into different cylinder groups. "
 "Thus, files written at the same time may be placed far apart on the disk."
 msgstr ""
+"El Fast Filesystem organiza los datos en grupos de cilindros. Los archivos a "
+"los que es probable que se acceda juntos, según sus ubicaciones en la "
+"jerarquía del sistema de archivos, se almacenan en el mismo grupo de "
+"cilindros. Los archivos a los que no se espera acceder juntos se mueven a "
+"diferentes grupos de cilindros. Por tanto, los archivos escritos al mismo "
+"tiempo pueden colocarse muy separados en el disco."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2045
@@ -2222,6 +2919,13 @@ msgid ""
 "garbage-collection process that runs when the filesystem becomes full and "
 "additional free space is needed."
 msgstr ""
+"El sistema de archivos estructurado por registros organiza los datos como un "
+"registro. Todos los datos que se escriben en cualquier momento se recopilan "
+"y escriben en la misma ubicación del disco. Los datos nunca se sobrescriben; "
+"en su lugar, se escribe una nueva copia del archivo que reemplaza a la "
+"anterior. Los archivos antiguos se recuperan mediante un proceso de "
+"recolección de basura que se ejecuta cuando el sistema de archivos se llena "
+"y se necesita espacio libre adicional."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2053
@@ -2232,11 +2936,17 @@ msgid ""
 "keep the storage packed as compactly as possible to minimize the usage of "
 "virtual-memory resources."
 msgstr ""
+"El sistema de archivos basado en memoria está diseñado para almacenar datos "
+"en la memoria virtual. Se utiliza para sistemas de archivos que necesitan "
+"admitir datos rápidos pero temporales, como <filename>/tmp</filename>. El "
+"objetivo del sistema de archivos basado en memoria es mantener el "
+"almacenamiento empaquetado lo más compacto posible para minimizar el uso de "
+"recursos de memoria virtual."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:2063
 msgid "Network Filesystem"
-msgstr ""
+msgstr "Sistema de archivos de red"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2065
@@ -2248,6 +2958,13 @@ msgid ""
 "locally do not experience the network delays on each keystroke, so they have "
 "a more responsive environment."
 msgstr ""
+"Inicialmente, la red se utilizó para transferir datos de una máquina a otra. "
+"Más tarde, evolucionó para permitir a los usuarios iniciar sesión de forma "
+"remota en otra máquina. El siguiente paso lógico fue llevar los datos al "
+"usuario, en lugar de que el usuario vaya a los datos, y así nacieron los "
+"sistemas de archivos de red. Los usuarios que trabajan localmente no "
+"experimentan retrasos en la red en cada pulsación de tecla, por lo que "
+"tienen un entorno más receptivo."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2075
@@ -2274,6 +2991,14 @@ msgid ""
 "filesystems lies in maintaining cache consistency between the server and its "
 "many clients."
 msgstr ""
+"Cuando el cliente local realiza una operación en un sistema de archivos "
+"remoto, la solicitud se empaqueta y se envía al servidor. El servidor "
+"realiza la operación solicitada y devuelve la información solicitada o un "
+"error que indica por qué se rechazó la solicitud. Para obtener un "
+"rendimiento razonable, el cliente debe almacenar en caché los datos a los "
+"que se accede con frecuencia. La complejidad de los sistemas de archivos "
+"remotos radica en mantener la coherencia de la caché entre el servidor y sus "
+"muchos clientes."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2101
@@ -2286,11 +3011,18 @@ msgid ""
 "specification <xref linkend=\"biblio-macklem\"/>. The NFS protocol is "
 "described in Chapter 9."
 msgstr ""
+"Aunque se han desarrollado muchos protocolos de sistemas de archivos remotos "
+"a lo largo de los años, el más generalizado en uso entre los sistemas UNIX "
+"es el sistema de archivos de red (NFS), cuyo protocolo y la implementación "
+"más utilizada fueron realizados por Sun Microsystems. El kernel 4.4BSD "
+"admite el protocolo NFS, aunque la implementación se realizó "
+"independientemente de la especificación del protocolo. <xref linkend"
+"=\"biblio-macklem\"/>. El protocolo NFS se describe en el Capítulo 9."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:2121
 msgid "Terminals"
-msgstr ""
+msgstr "Terminales"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2123
@@ -2303,6 +3035,14 @@ msgid ""
 "rate, and according to a set of software-controllable parameters, such as "
 "parity checking."
 msgstr ""
+"Los terminales admiten las operaciones de E / S del sistema estándar, así "
+"como una colección de operaciones específicas del terminal para controlar la "
+"edición de caracteres de entrada y los retrasos de salida. En el nivel más "
+"bajo se encuentran los controladores de dispositivos terminales que "
+"controlan los puertos de terminales de hardware. La entrada del terminal se "
+"maneja de acuerdo con las características de comunicación subyacentes, como "
+"la velocidad en baudios, y de acuerdo con un conjunto de parámetros "
+"controlables por software, como la verificación de paridad."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2133
@@ -2314,6 +3054,13 @@ msgid ""
 "to provide standard line-oriented editing functions, and input is presented "
 "to a process on a line-by-line basis."
 msgstr ""
+"En capas por encima de los controladores de dispositivos terminales hay "
+"disciplinas de línea que proporcionan varios grados de procesamiento de "
+"caracteres. La disciplina de línea predeterminada se selecciona cuando se "
+"utiliza un puerto para un inicio de sesión interactivo. La disciplina de "
+"línea se ejecuta en <emphasis>canonical mode</emphasis>; la entrada se "
+"procesa para proporcionar funciones de edición estándar orientadas a líneas "
+"y la entrada se presenta a un proceso línea por línea."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2143
@@ -2338,6 +3085,12 @@ msgid ""
 "noncanonical mode; all other characters would be passed through to the "
 "process uninterpreted."
 msgstr ""
+"Es posible configurar el terminal en miles de combinaciones entre estos dos "
+"extremos. Por ejemplo, un editor de pantalla que quisiera recibir las "
+"interrupciones del usuario de forma asincrónica podría habilitar los "
+"caracteres especiales que generan señales y habilitan el control del flujo "
+"de salida, pero de lo contrario se ejecutan en modo no canónico; todos los "
+"demás personajes pasarían al proceso sin ser interpretados."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2167
@@ -2345,6 +3098,8 @@ msgid ""
 "On output, the terminal handler provides simple formatting services, "
 "including"
 msgstr ""
+"En la salida, el controlador de terminal proporciona servicios de formato "
+"simples, que incluyen"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2173
@@ -2352,16 +3107,18 @@ msgid ""
 "Converting the line-feed character to the two-character carriage-return-line-"
 "feed sequence"
 msgstr ""
+"Conversión del carácter de avance de línea a la secuencia de dos caracteres "
+"de avance de línea de retorno de carro"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2178
 msgid "Inserting delays after certain standard control characters"
-msgstr ""
+msgstr "Insertar retrasos después de ciertos caracteres de control estándar"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2182
 msgid "Expanding tabs"
-msgstr ""
+msgstr "Pestañas desplegables"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2186
@@ -2371,6 +3128,10 @@ msgid ""
 "character that is the character's value offset from the ASCII ``@'' "
 "character)."
 msgstr ""
+"Mostrar caracteres ASCII no gráficos repetidos como una secuencia de dos "
+"caracteres de la forma `` ^ C '' (es decir, el carácter de intercalación "
+"ASCII seguido por el carácter ASCII que es el valor del carácter desplazado "
+"del carácter ASCII `` @ '')."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2200
@@ -2378,11 +3139,13 @@ msgid ""
 "Each of these formatting services can be disabled individually by a process "
 "through control requests."
 msgstr ""
+"Cada uno de estos servicios de formato puede desactivarse individualmente "
+"mediante un proceso mediante solicitudes de control."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:2206
 msgid "Interprocess Communication"
-msgstr ""
+msgstr "Comunicación entre procesos"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2208
@@ -2418,6 +3181,11 @@ msgid ""
 "when creating a socket, or may allow the system to select a protocol that is "
 "appropriate for the type of socket being created."
 msgstr ""
+"Cada socket tiene asociado un <emphasis>communication protocol</emphasis>. "
+"Este protocolo proporciona la semántica requerida por el socket según el "
+"tipo de este último. Las aplicaciones pueden solicitar un protocolo "
+"específico al crear un socket, o pueden permitir que el sistema seleccione "
+"un protocolo que sea apropiado para el tipo de socket que se está creando."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2251
@@ -2427,6 +3195,10 @@ msgid ""
 "created. Binding a name to a socket in the local domain causes a file to be "
 "created in the filesystem."
 msgstr ""
+"Los sockets pueden tener direcciones vinculadas a ellos. La forma y el "
+"significado de las direcciones de socket dependen del dominio de "
+"comunicación en el que se crea el socket. Al vincular un nombre a un socket "
+"en el dominio local, se crea un archivo en el sistema de archivos."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2257
@@ -2439,6 +3211,14 @@ msgid ""
 "emphasis>. The local domain, for example, uses this facility to pass "
 "descriptors between processes."
 msgstr ""
+"Los datos normales transmitidos y recibidos a través de sockets no están "
+"tipificados. Los problemas de representación de datos son responsabilidad de "
+"las bibliotecas creadas sobre las instalaciones de comunicación entre "
+"procesos. Además de transportar datos normales, los dominios de comunicación "
+"pueden admitir la transmisión y recepción de datos especialmente "
+"mecanografiados, denominados <emphasis>access rights</emphasis>. El dominio "
+"local, por ejemplo, utiliza esta función para pasar descriptores entre "
+"procesos."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2266
@@ -2468,11 +3248,22 @@ msgid ""
 "interface was used as the basis for Microsoft's Winsock networking interface "
 "for Windows."
 msgstr ""
+"Otro beneficio es que la nueva interfaz es altamente portátil. Poco después "
+"de que Berkeley dispusiera de una versión de prueba, un proveedor de UNIX "
+"transfirió la interfaz de socket a System III (aunque AT&amp;T no admitió la "
+"interfaz de socket hasta el lanzamiento de System V Release 4, y en su lugar "
+"decidió utilizar el mecanismo de transmisión de la octava edición). La "
+"interfaz de socket también fue adaptada para funcionar en muchas placas "
+"Ethernet por proveedores, como Excelan e Interlan, que estaban vendiendo en "
+"el mercado de PC, donde las máquinas eran demasiado pequeñas para funcionar "
+"en red en el procesador principal. Más recientemente, la interfaz de socket "
+"se utilizó como base para la interfaz de red Winsock de Microsoft para "
+"Windows."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:2300
 msgid "Network Communication"
-msgstr ""
+msgstr "Red de comunicacion"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2302
@@ -2485,6 +3276,14 @@ msgid ""
 "protocols, and interfaces to the network interface drivers for the use of "
 "the various network protocols."
 msgstr ""
+"Algunos de los dominios de comunicación admitidos por <emphasis>socket</"
+"emphasis> El mecanismo de IPC proporciona acceso a los protocolos de red. "
+"Estos protocolos se implementan como una capa de software separada "
+"lógicamente debajo del software de socket en el kernel. El kernel "
+"proporciona muchos servicios auxiliares, como administración de búfer, "
+"enrutamiento de mensajes, interfaces estandarizadas para los protocolos e "
+"interfaces para los controladores de interfaz de red para el uso de varios "
+"protocolos de red."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2313
@@ -2503,11 +3302,26 @@ msgid ""
 "continue to operate using the old protocol over the same physical network as "
 "is used by newer applications running with a newer network protocol."
 msgstr ""
+"En el momento en que se implementó 4.2BSD, había muchos protocolos de red en "
+"uso o en desarrollo, cada uno con sus propias fortalezas y debilidades. No "
+"hubo un protocolo o conjunto de protocolos claramente superior. Al admitir "
+"múltiples protocolos, 4.2BSD podría proporcionar interoperabilidad y uso "
+"compartido de recursos entre el diverso conjunto de máquinas que estaba "
+"disponible en el entorno de Berkeley. La compatibilidad con varios "
+"protocolos también prevé cambios futuros. Es probable que los protocolos de "
+"hoy diseñados para Ethernets de 10 a 100 Mbit por segundo sean inadecuados "
+"para las redes de fibra óptica de 1 a 10 Gbit por segundo del mañana. En "
+"consecuencia, la capa de comunicación de red está diseñada para admitir "
+"múltiples protocolos. Se agregan nuevos protocolos al kernel sin que se vea "
+"afectado el soporte de los protocolos más antiguos. Las aplicaciones más "
+"antiguas pueden seguir funcionando utilizando el protocolo antiguo en la "
+"misma red física que utilizan las aplicaciones más nuevas que se ejecutan "
+"con un protocolo de red más nuevo."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:2335
 msgid "Network Implementation"
-msgstr ""
+msgstr "Implementación de red"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2337
@@ -2522,6 +3336,16 @@ msgid ""
 "TCP/IP implementation have also been widely adopted. The TCP/IP "
 "implementation is described in detail in Chapter 13."
 msgstr ""
+"El primer conjunto de protocolos implementado en 4.2BSD fue el Protocolo de "
+"control de transmisión / Protocolo de Internet (TCP / IP) de DARPA. El CSRG "
+"eligió TCP / IP como la primera red que se incorporó en el marco IPC de "
+"socket, porque una implementación basada en 4.1BSD estaba disponible "
+"públicamente de un proyecto patrocinado por DARPA en Bolt, Beranek y Newman "
+"(BBN). Esa fue una elección influyente: la implementación de 4.2BSD es la "
+"razón principal del uso extremadamente extendido de este conjunto de "
+"protocolos. También se han adoptado ampliamente mejoras posteriores en el "
+"rendimiento y la capacidad de la implementación de TCP / IP. La "
+"implementación de TCP / IP se describe en detalle en el Capítulo 13."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2363
@@ -2531,6 +3355,10 @@ msgid ""
 "University. This suite was needed to connect isolated machines that could "
 "not communicate using TCP/IP."
 msgstr ""
+"El lanzamiento de 4.3BSD agregó la suite de protocolos Xerox Network Systems "
+"(XNS), en parte basándose en el trabajo realizado en la Universidad de "
+"Maryland y en la Universidad de Cornell. Esta suite era necesaria para "
+"conectar máquinas aisladas que no podían comunicarse mediante TCP / IP."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2373
@@ -2545,11 +3373,21 @@ msgid ""
 "greatly expanded routing capabilities of 4.4BSD include arbitrary levels of "
 "routing with variable-length addresses and network masks."
 msgstr ""
+"El lanzamiento de 4.4BSD agregó el conjunto de protocolos ISO debido a la "
+"creciente visibilidad de este último tanto dentro como fuera de los Estados "
+"Unidos. Debido a la semántica algo diferente definida para los protocolos "
+"ISO, se requirieron algunos cambios menores en la interfaz de socket para "
+"acomodar esta semántica. Los cambios se realizaron de modo que fueran "
+"invisibles para los clientes de otros protocolos existentes. Los protocolos "
+"ISO también requirieron una amplia adición a las tablas de enrutamiento de "
+"dos niveles proporcionadas por el kernel en 4.3BSD. Las capacidades de "
+"enrutamiento muy ampliadas de 4.4BSD incluyen niveles arbitrarios de "
+"enrutamiento con direcciones de longitud variable y máscaras de red."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:2393
 msgid "System Operation"
-msgstr ""
+msgstr "Operación del sistema"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2395
@@ -2564,6 +3402,17 @@ msgid ""
 "script starts the general system services and brings up the system to full "
 "multiuser operation."
 msgstr ""
+"Los mecanismos de arranque se utilizan para iniciar la ejecución del "
+"sistema. Primero, el kernel 4.4BSD debe cargarse en la memoria principal del "
+"procesador. Una vez cargado, debe pasar por una fase de inicialización para "
+"configurar el hardware en un estado conocido. A continuación, el kernel debe "
+"realizar la configuración automática, un proceso que busca y configura los "
+"periféricos que están conectados al procesador. El sistema comienza a "
+"ejecutarse en modo de usuario único mientras un script de inicio realiza "
+"verificaciones de disco e inicia la verificación de contabilidad y cuotas. "
+"Finalmente, la secuencia de comandos de inicio inicia los servicios "
+"generales del sistema y lleva el sistema a una operación multiusuario "
+"completa."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2409
@@ -2574,64 +3423,87 @@ msgid ""
 "validation is done. When the login validation is successful, a login shell "
 "is created from which the user can run additional processes."
 msgstr ""
+"Durante la operación multiusuario, los procesos esperan solicitudes de "
+"inicio de sesión en las líneas de terminal y los puertos de red que se han "
+"configurado para el acceso de los usuarios. Cuando se detecta una solicitud "
+"de inicio de sesión, se genera un proceso de inicio de sesión y se realiza "
+"la validación del usuario. Cuando la validación de inicio de sesión es "
+"exitosa, se crea un shell de inicio de sesión desde el cual el usuario puede "
+"ejecutar procesos adicionales."
 
 #. (itstool) path: bibliography/title
 #: book.translate.xml:2420
 msgid "References"
-msgstr ""
+msgstr "Referencias"
 
 #. (itstool) path: biblioentry/abbrev
 #: book.translate.xml:2423
+#, fuzzy
 msgid "Accetta et al, 1986"
-msgstr ""
+msgstr "Accetta et al, 1986"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2429
+#, fuzzy
 msgid ""
 "<personname><firstname>M. </firstname><surname>Accetta</surname></personname>"
 msgstr ""
+"<personname><firstname>M. </firstname><surname>Accetta</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2430
+#, fuzzy
 msgid ""
 "<personname><firstname>R.</firstname><surname>Baron</surname></personname>"
 msgstr ""
+"<personname><firstname>R.</firstname><surname>Baron</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2431
+#, fuzzy
 msgid ""
 "<personname><firstname>W.</firstname><surname>Bolosky</surname></personname>"
 msgstr ""
+"<personname><firstname>W.</firstname><surname>Bolosky</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2432
+#, fuzzy
 msgid ""
 "<personname><firstname>D.</firstname><surname>Golub</surname></personname>"
 msgstr ""
+"<personname><firstname>D.</firstname><surname>Golub</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2433
+#, fuzzy
 msgid ""
 "<personname><firstname>R.</firstname><surname>Rashid</surname></personname>"
 msgstr ""
+"<personname><firstname>R.</firstname><surname>Rashid</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #. (itstool) path: biblioentry/author
 #: book.translate.xml:2434 book.translate.xml:2704
+#, fuzzy
 msgid ""
 "<personname><firstname>A.</firstname><surname>Tevanian</surname></personname>"
 msgstr ""
+"<personname><firstname>A.</firstname><surname>Tevanian</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2435
+#, fuzzy
 msgid ""
 "<personname><firstname>M.</firstname><surname>Young</surname></personname>"
 msgstr ""
+"<personname><firstname>M.</firstname><surname>Young</surname></personname>"
 
 #. (itstool) path: biblioset/pagenums
 #: book.translate.xml:2438
+#, fuzzy
 msgid "93-113"
-msgstr ""
+msgstr "93-113"
 
 #. (itstool) path: biblioentry/biblioset
 #: book.translate.xml:2425
@@ -2639,16 +3511,18 @@ msgid ""
 "<citetitle>Mach: A New Kernel Foundation for UNIX Development\"</citetitle> "
 "<_:authorgroup-1/> <_:pagenums-2/>"
 msgstr ""
+"<citetitle>Mach: Una nueva base de kernel para el desarrollo de UNIX\"</"
+"citetitle> <_:authorgroup-1/> <_:pagenums-2/>"
 
 #. (itstool) path: biblioset/publishername
 #: book.translate.xml:2443 book.translate.xml:2487 book.translate.xml:2511
 msgid "USENIX Association"
-msgstr ""
+msgstr "Asociación USENIX"
 
 #. (itstool) path: biblioset/pubdate
 #: book.translate.xml:2444
 msgid "June 1986"
-msgstr ""
+msgstr "Junio de 1986"
 
 #. (itstool) path: biblioentry/biblioset
 #: book.translate.xml:2441 book.translate.xml:2509
@@ -2656,76 +3530,98 @@ msgid ""
 "<citetitle>USENIX Association Conference Proceedings</citetitle> <_:"
 "publishername-1/> <_:pubdate-2/>"
 msgstr ""
+"<citetitle>Actas de la conferencia de la Asociación USENIX</citetitle> <_:"
+"publishername-1/> <_:pubdate-2/>"
 
 #. (itstool) path: biblioentry/abbrev
 #: book.translate.xml:2449
+#, fuzzy
 msgid "Cheriton, 1988"
-msgstr ""
+msgstr "Cheriton, 1988"
 
 #. (itstool) path: biblioset/author
 #: book.translate.xml:2454
+#, fuzzy
 msgid ""
 "<personname><firstname>D. R.</firstname><surname>Cheriton</surname></"
 "personname>"
 msgstr ""
+"<personname><firstname>D. "
+"R.</firstname><surname>Cheriton</surname></personname>"
 
 #. (itstool) path: biblioset/pagenums
 #: book.translate.xml:2456
+#, fuzzy
 msgid "314-333"
-msgstr ""
+msgstr "314-333"
 
 #. (itstool) path: biblioentry/biblioset
 #: book.translate.xml:2451
+#, fuzzy
 msgid ""
 "<citetitle>The V Distributed System</citetitle> <_:author-1/> <_:pagenums-2/>"
 msgstr ""
+"<citetitle>The V Distributed System</citetitle> <_:author-1/> <_:pagenums-2/>"
 
 #. (itstool) path: biblioset/pubdate
 #. (itstool) path: biblioentry/pubdate
 #: book.translate.xml:2462 book.translate.xml:2631
 msgid "March 1988"
-msgstr ""
+msgstr "Marzo 1988"
 
 #. (itstool) path: biblioentry/biblioset
 #: book.translate.xml:2459
+#, fuzzy
 msgid "<citetitle>Comm ACM, 31, 3</citetitle> <_:pubdate-1/>"
-msgstr ""
+msgstr "<citetitle>Comm ACM, 31, 3</citetitle> <_:pubdate-1/>"
 
 #. (itstool) path: biblioentry/abbrev
 #: book.translate.xml:2467
+#, fuzzy
 msgid "Ewens et al, 1985"
-msgstr ""
+msgstr "Ewens et al, 1985"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2473
+#, fuzzy
 msgid ""
 "<personname><firstname>P.</firstname><surname>Ewens</surname></personname>"
 msgstr ""
+"<personname><firstname>P.</firstname><surname>Ewens</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2475
+#, fuzzy
 msgid ""
 "<personname><firstname>D. R.</firstname><surname>Blythe</surname></"
 "personname>"
 msgstr ""
+"<personname><firstname>D. "
+"R.</firstname><surname>Blythe</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2477
+#, fuzzy
 msgid ""
 "<personname><firstname>M.</firstname><surname>Funkenhauser</surname></"
 "personname>"
 msgstr ""
+"<personname><firstname>M.</firstname><surname>Funkenhauser</surname></personn"
+"ame>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2479
+#, fuzzy
 msgid ""
 "<personname><firstname>R. C.</firstname><surname>Holt</surname></personname>"
 msgstr ""
+"<personname><firstname>R. C.</firstname><surname>Holt</surname></personname>"
 
 #. (itstool) path: biblioset/pagenums
 #: book.translate.xml:2482
+#, fuzzy
 msgid "247-254"
-msgstr ""
+msgstr "247-254"
 
 #. (itstool) path: biblioentry/biblioset
 #: book.translate.xml:2469
@@ -2733,11 +3629,13 @@ msgid ""
 "<citetitle>Tunis: A Distributed Multiprocessor Operating System</citetitle> "
 "<_:authorgroup-1/> <_:pagenums-2/>"
 msgstr ""
+"<citetitle>Tunis: Un sistema operativo multiprocesador distribuido</"
+"citetitle> <_:authorgroup-1/> <_:pagenums-2/>"
 
 #. (itstool) path: biblioset/pubdate
 #: book.translate.xml:2488
 msgid "June 1985"
-msgstr ""
+msgstr "Junio de 1985"
 
 #. (itstool) path: biblioentry/biblioset
 #: book.translate.xml:2485 book.translate.xml:2580
@@ -2745,34 +3643,44 @@ msgid ""
 "<citetitle>USENIX Assocation Conference Proceedings</citetitle> <_:"
 "publishername-1/> <_:pubdate-2/>"
 msgstr ""
+"<citetitle>Actas de la conferencia de la Asociación USENIX</citetitle> <_:"
+"publishername-1/> <_:pubdate-2/>"
 
 #. (itstool) path: biblioentry/abbrev
 #: book.translate.xml:2493
+#, fuzzy
 msgid "Gingell et al, 1987"
-msgstr ""
+msgstr "Gingell et al, 1987"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2499
+#, fuzzy
 msgid ""
 "<personname><firstname>R.</firstname><surname>Gingell</surname></personname>"
 msgstr ""
+"<personname><firstname>R.</firstname><surname>Gingell</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2501
+#, fuzzy
 msgid ""
 "<personname><firstname>J.</firstname><surname>Moran</surname></personname>"
 msgstr ""
+"<personname><firstname>J.</firstname><surname>Moran</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2503
+#, fuzzy
 msgid ""
 "<personname><firstname>W.</firstname><surname>Shannon</surname></personname>"
 msgstr ""
+"<personname><firstname>W.</firstname><surname>Shannon</surname></personname>"
 
 #. (itstool) path: biblioset/pagenums
 #: book.translate.xml:2506
+#, fuzzy
 msgid "81-94"
-msgstr ""
+msgstr "81-94"
 
 #. (itstool) path: biblioentry/biblioset
 #: book.translate.xml:2495
@@ -2780,70 +3688,88 @@ msgid ""
 "<citetitle>Virtual Memory Architecture in SunOS</citetitle> <_:authorgroup-1/"
 "> <_:pagenums-2/>"
 msgstr ""
+"<citetitle>Arquitectura de memoria virtual en SunOS</citetitle> <_:"
+"authorgroup-1/> <_:pagenums-2/>"
 
 #. (itstool) path: biblioset/pubdate
 #: book.translate.xml:2512
 msgid "June 1987"
-msgstr ""
+msgstr "Junio de 1987"
 
 #. (itstool) path: biblioentry/abbrev
 #: book.translate.xml:2517
+#, fuzzy
 msgid "Kernighan &amp; Pike, 1984"
-msgstr ""
+msgstr "Kernighan &amp; Pike, 1984"
 
 #. (itstool) path: biblioentry/citetitle
 #: book.translate.xml:2519
 msgid "The UNIX Programming Environment"
-msgstr ""
+msgstr "El entorno de programación UNIX"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2522
+#, fuzzy
 msgid ""
 "<personname><firstname>B. W.</firstname><surname>Kernighan</surname></"
 "personname>"
 msgstr ""
+"<personname><firstname>B. "
+"W.</firstname><surname>Kernighan</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2524
+#, fuzzy
 msgid ""
 "<personname><firstname>R.</firstname><surname>Pike</surname></personname>"
 msgstr ""
+"<personname><firstname>R.</firstname><surname>Pike</surname></personname>"
 
 #. (itstool) path: publisher/publishername
 #: book.translate.xml:2528
+#, fuzzy
 msgid "Prentice-Hall"
-msgstr ""
+msgstr "Prentice-Hall"
 
 #. (itstool) path: publisher/address
 #: book.translate.xml:2529
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "\n"
 "\t  <city>Englewood Cliffs</city>\n"
 "\t  <state>NJ</state>\n"
 "\t"
 msgstr ""
+"\n"
+"\t  <city>Englewood Cliffs</city>\n"
+"\t  <state>NJ</state>\n"
+"\t"
 
 #. (itstool) path: biblioentry/pubdate
 #: book.translate.xml:2535
+#, fuzzy
 msgid "1984"
-msgstr ""
+msgstr "1984"
 
 #. (itstool) path: biblioentry/abbrev
 #: book.translate.xml:2539
+#, fuzzy
 msgid "Macklem, 1994"
-msgstr ""
+msgstr "Macklem, 1994"
 
 #. (itstool) path: biblioset/author
 #: book.translate.xml:2544
+#, fuzzy
 msgid ""
 "<personname><firstname>R.</firstname><surname>Macklem</surname></personname>"
 msgstr ""
+"<personname><firstname>R.</firstname><surname>Macklem</surname></personname>"
 
 #. (itstool) path: biblioset/pagenums
 #: book.translate.xml:2546
+#, fuzzy
 msgid "6:1-14"
-msgstr ""
+msgstr "6:1-14"
 
 #. (itstool) path: biblioentry/biblioset
 #: book.translate.xml:2541
@@ -2851,26 +3777,34 @@ msgid ""
 "<citetitle>The 4.4BSD NFS Implementation</citetitle> <_:author-1/> <_:"
 "pagenums-2/>"
 msgstr ""
+"<citetitle>La implementación 4.4BSD NFS</citetitle> <_:author-1/> <_:"
+"pagenums-2/>"
 
 #. (itstool) path: publisher/publishername
 #: book.translate.xml:2553 book.translate.xml:2612
+#, fuzzy
 msgid "O'Reilly &amp; Associates, Inc."
-msgstr ""
+msgstr "O'Reilly &amp; Associates, Inc."
 
 #. (itstool) path: publisher/address
 #: book.translate.xml:2554 book.translate.xml:2613
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "\n"
 "\t    <city>Sebastopol</city>\n"
 "\t    <state>CA</state>\n"
 "\t  "
 msgstr ""
+"\n"
+"\t    <city>Sebastopol</city>\n"
+"\t    <state>CA</state>\n"
+"\t  "
 
 #. (itstool) path: biblioset/pubdate
 #: book.translate.xml:2560 book.translate.xml:2619
+#, fuzzy
 msgid "1994"
-msgstr ""
+msgstr "1994"
 
 #. (itstool) path: biblioentry/biblioset
 #: book.translate.xml:2549
@@ -2878,30 +3812,40 @@ msgid ""
 "<citetitle>4.4BSD System Manager's Manual</citetitle> <_:publisher-1/> <_:"
 "pubdate-2/>"
 msgstr ""
+"<citetitle>4.4 Manual del administrador del sistema BSD</citetitle> <_:"
+"publisher-1/> <_:pubdate-2/>"
 
 #. (itstool) path: biblioentry/abbrev
 #: book.translate.xml:2565
+#, fuzzy
 msgid "McKusick &amp; Karels, 1988"
-msgstr ""
+msgstr "McKusick &amp; Karels, 1988"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2572 book.translate.xml:2594
+#, fuzzy
 msgid ""
 "<personname><firstname>M. K.</firstname><surname>McKusick</surname></"
 "personname>"
 msgstr ""
+"<personname><firstname>M. "
+"K.</firstname><surname>McKusick</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2574 book.translate.xml:2596
+#, fuzzy
 msgid ""
 "<personname><firstname>M. J.</firstname><surname>Karels</surname></"
 "personname>"
 msgstr ""
+"<personname><firstname>M. "
+"J.</firstname><surname>Karels</surname></personname>"
 
 #. (itstool) path: biblioset/pagenums
 #: book.translate.xml:2577
+#, fuzzy
 msgid "295-304"
-msgstr ""
+msgstr "295-304"
 
 #. (itstool) path: biblioentry/biblioset
 #: book.translate.xml:2567
@@ -2909,45 +3853,56 @@ msgid ""
 "<citetitle>Design of a General Purpose Memory Allocator for the 4.3BSD UNIX "
 "Kernel</citetitle> <_:authorgroup-1/> <_:pagenums-2/>"
 msgstr ""
+"<citetitle>Diseño de un asignador de memoria de propósito general para el "
+"kernel UNIX 4.3BSD</citetitle> <_:authorgroup-1/> <_:pagenums-2/>"
 
 #. (itstool) path: biblioset/publishername
 #: book.translate.xml:2582
 msgid "USENIX Assocation"
-msgstr ""
+msgstr "Asociación USENIX"
 
 #. (itstool) path: biblioset/pubdate
 #: book.translate.xml:2583
 msgid "June 1998"
-msgstr ""
+msgstr "Junio de 1998"
 
 #. (itstool) path: biblioentry/abbrev
 #: book.translate.xml:2588
+#, fuzzy
 msgid "McKusick et al, 1994"
-msgstr ""
+msgstr "McKusick et al, 1994"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2598
+#, fuzzy
 msgid ""
 "<personname><firstname>S. J.</firstname><surname>Leffler</surname></"
 "personname>"
 msgstr ""
+"<personname><firstname>S. "
+"J.</firstname><surname>Leffler</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2600
+#, fuzzy
 msgid ""
 "<personname><firstname>W. N.</firstname><surname>Joy</surname></personname>"
 msgstr ""
+"<personname><firstname>W. N.</firstname><surname>Joy</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2602
+#, fuzzy
 msgid ""
 "<personname><firstname>R. S.</firstname><surname>Faber</surname></personname>"
 msgstr ""
+"<personname><firstname>R. S.</firstname><surname>Faber</surname></personname>"
 
 #. (itstool) path: biblioset/pagenums
 #: book.translate.xml:2605
+#, fuzzy
 msgid "5:1-42"
-msgstr ""
+msgstr "5:1-42"
 
 #. (itstool) path: biblioentry/biblioset
 #: book.translate.xml:2590
@@ -2955,6 +3910,8 @@ msgid ""
 "<citetitle>Berkeley Software Architecture Manual, 4.4BSD Edition</citetitle> "
 "<_:authorgroup-1/> <_:pagenums-2/>"
 msgstr ""
+"<citetitle>Manual de arquitectura de software de Berkeley, edición 4.4BSD</"
+"citetitle> <_:authorgroup-1/> <_:pagenums-2/>"
 
 #. (itstool) path: biblioentry/biblioset
 #: book.translate.xml:2608
@@ -2962,52 +3919,66 @@ msgid ""
 "<citetitle>4.4BSD Programmer's Supplementary Documents</citetitle> <_:"
 "publisher-1/> <_:pubdate-2/>"
 msgstr ""
+"<citetitle>4.4 Documentos suplementarios del programador de BSD</citetitle> "
+"<_:publisher-1/> <_:pubdate-2/>"
 
 #. (itstool) path: biblioentry/abbrev
 #: book.translate.xml:2624
+#, fuzzy
 msgid "Ritchie, 1988"
-msgstr ""
+msgstr "Ritchie, 1988"
 
 #. (itstool) path: biblioentry/citetitle
 #: book.translate.xml:2626
 msgid "Early Kernel Design"
-msgstr ""
+msgstr "Diseño de kernel temprano"
 
 #. (itstool) path: biblioentry/subtitle
 #: book.translate.xml:2627
 msgid "private communication"
-msgstr ""
+msgstr "comunicación privada"
 
 #. (itstool) path: biblioentry/author
 #: book.translate.xml:2629
+#, fuzzy
 msgid ""
 "<personname><firstname>D. M.</firstname><surname>Ritchie</surname></"
 "personname>"
 msgstr ""
+"<personname><firstname>D. "
+"M.</firstname><surname>Ritchie</surname></personname>"
 
 #. (itstool) path: biblioentry/abbrev
 #: book.translate.xml:2635
+#, fuzzy
 msgid "Rosenblum &amp; Ousterhout, 1992"
-msgstr ""
+msgstr "Rosenblum &amp; Ousterhout, 1992"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2642
+#, fuzzy
 msgid ""
 "<personname><firstname>M.</firstname><surname>Rosenblum</surname></"
 "personname>"
 msgstr ""
+"<personname><firstname>M.</firstname><surname>Rosenblum</surname></personname"
+">"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2644
+#, fuzzy
 msgid ""
 "<personname><firstname>K.</firstname><surname>Ousterhout</surname></"
 "personname>"
 msgstr ""
+"<personname><firstname>K.</firstname><surname>Ousterhout</surname></personnam"
+"e>"
 
 #. (itstool) path: biblioset/pagenums
 #: book.translate.xml:2647
+#, fuzzy
 msgid "26-52"
-msgstr ""
+msgstr "26-52"
 
 #. (itstool) path: biblioentry/biblioset
 #: book.translate.xml:2637
@@ -3015,16 +3986,18 @@ msgid ""
 "<citetitle>The Design and Implementation of a Log-Structured File System</"
 "citetitle> <_:authorgroup-1/> <_:pagenums-2/>"
 msgstr ""
+"<citetitle>El diseño e implementación de un sistema de archivos estructurado "
+"por registros</citetitle> <_:authorgroup-1/> <_:pagenums-2/>"
 
 #. (itstool) path: biblioset/publishername
 #: book.translate.xml:2653
 msgid "Association for Computing Machinery"
-msgstr ""
+msgstr "Asociación para Maquinaria de Computación"
 
 #. (itstool) path: biblioset/pubdate
 #: book.translate.xml:2654
 msgid "February 1992"
-msgstr ""
+msgstr "Febrero 1992"
 
 #. (itstool) path: biblioentry/biblioset
 #: book.translate.xml:2650
@@ -3032,85 +4005,114 @@ msgid ""
 "<citetitle>ACM Transactions on Computer Systems, 10, 1</citetitle> <_:"
 "publishername-1/> <_:pubdate-2/>"
 msgstr ""
+"<citetitle>Transacciones ACM en sistemas informáticos, 10, 1</citetitle> <_:"
+"publishername-1/> <_:pubdate-2/>"
 
 #. (itstool) path: biblioentry/abbrev
 #: book.translate.xml:2659
+#, fuzzy
 msgid "Rozier et al, 1988"
-msgstr ""
+msgstr "Rozier et al, 1988"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2665
+#, fuzzy
 msgid ""
 "<personname><firstname>M.</firstname><surname>Rozier</surname></personname>"
 msgstr ""
+"<personname><firstname>M.</firstname><surname>Rozier</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2667
+#, fuzzy
 msgid ""
 "<personname><firstname>V.</firstname><surname>Abrossimov</surname></"
 "personname>"
 msgstr ""
+"<personname><firstname>V.</firstname><surname>Abrossimov</surname></personnam"
+"e>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2669
+#, fuzzy
 msgid ""
 "<personname><firstname>F.</firstname><surname>Armand</surname></personname>"
 msgstr ""
+"<personname><firstname>F.</firstname><surname>Armand</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2671
+#, fuzzy
 msgid ""
 "<personname><firstname>I.</firstname><surname>Boule</surname></personname>"
 msgstr ""
+"<personname><firstname>I.</firstname><surname>Boule</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2673
+#, fuzzy
 msgid ""
 "<personname><firstname>M.</firstname><surname>Gien</surname></personname>"
 msgstr ""
+"<personname><firstname>M.</firstname><surname>Gien</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2675
+#, fuzzy
 msgid ""
 "<personname><firstname>M.</firstname><surname>Guillemont</surname></"
 "personname>"
 msgstr ""
+"<personname><firstname>M.</firstname><surname>Guillemont</surname></personnam"
+"e>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2677
+#, fuzzy
 msgid ""
 "<personname><firstname>F.</firstname><surname>Herrmann</surname></personname>"
 msgstr ""
+"<personname><firstname>F.</firstname><surname>Herrmann</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2679
+#, fuzzy
 msgid ""
 "<personname><firstname>C.</firstname><surname>Kaiser</surname></personname>"
 msgstr ""
+"<personname><firstname>C.</firstname><surname>Kaiser</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2681
+#, fuzzy
 msgid ""
 "<personname><firstname>S.</firstname><surname>Langlois</surname></personname>"
 msgstr ""
+"<personname><firstname>S.</firstname><surname>Langlois</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2683
+#, fuzzy
 msgid ""
 "<personname><firstname>P.</firstname><surname>Leonard</surname></personname>"
 msgstr ""
+"<personname><firstname>P.</firstname><surname>Leonard</surname></personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2685
+#, fuzzy
 msgid ""
 "<personname><firstname>W.</firstname><surname>Neuhauser</surname></"
 "personname>"
 msgstr ""
+"<personname><firstname>W.</firstname><surname>Neuhauser</surname></personname"
+">"
 
 #. (itstool) path: biblioset/pagenums
 #: book.translate.xml:2688
+#, fuzzy
 msgid "305-370"
-msgstr ""
+msgstr "305-370"
 
 #. (itstool) path: biblioentry/biblioset
 #: book.translate.xml:2661
@@ -3118,21 +4120,25 @@ msgid ""
 "<citetitle>Chorus Distributed Operating Systems</citetitle> <_:authorgroup-1/"
 "> <_:pagenums-2/>"
 msgstr ""
+"<citetitle>Sistemas operativos distribuidos Chorus</citetitle> <_:"
+"authorgroup-1/> <_:pagenums-2/>"
 
 #. (itstool) path: biblioset/pubdate
 #: book.translate.xml:2693
 msgid "Fall 1988"
-msgstr ""
+msgstr "Otoño de 1988"
 
 #. (itstool) path: biblioentry/biblioset
 #: book.translate.xml:2691
 msgid "<citetitle>USENIX Computing Systems, 1, 4</citetitle> <_:pubdate-1/>"
 msgstr ""
+"<citetitle>Sistemas informáticos USENIX, 1, 4</citetitle> <_:pubdate-1/>"
 
 #. (itstool) path: biblioentry/abbrev
 #: book.translate.xml:2698
+#, fuzzy
 msgid "Tevanian, 1987"
-msgstr ""
+msgstr "Tevanian, 1987"
 
 #. (itstool) path: biblioentry/citetitle
 #: book.translate.xml:2700
@@ -3140,28 +4146,34 @@ msgid ""
 "Architecture-Independent Virtual Memory Management for Parallel and "
 "Distributed Environments: The Mach Approach"
 msgstr ""
+"Gestión de memoria virtual independiente de la arquitectura para entornos "
+"paralelos y distribuidos: el enfoque Mach"
 
 #. (itstool) path: biblioentry/subtitle
 #: book.translate.xml:2702
 msgid "Technical Report CMU-CS-88-106,"
-msgstr ""
+msgstr "Informe técnico CMU-CS-88-106,"
 
 #. (itstool) path: publisher/publishername
 #: book.translate.xml:2707
 msgid "Department of Computer Science, Carnegie-Mellon University"
-msgstr ""
+msgstr "Departamento de Ciencias de la Computación, Universidad Carnegie-Mellon"
 
 #. (itstool) path: publisher/address
 #: book.translate.xml:2710
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "\n"
 "\t  <city>Pittsburgh</city>\n"
 "\t  <state>PA</state>\n"
 "\t"
 msgstr ""
+"\n"
+"\t  <city>Pittsburgh</city>\n"
+"\t  <state>PA</state>\n"
+"\t"
 
 #. (itstool) path: biblioentry/pubdate
 #: book.translate.xml:2716
 msgid "December 1987"
-msgstr ""
+msgstr "Diciembre 1987"
