@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-11-16 21:29-0300\n"
-"PO-Revision-Date: 2020-12-15 06:05+0000\n"
+"PO-Revision-Date: 2020-12-15 12:09+0000\n"
 "Last-Translator: Aaron H Farías Martinez <timido@ubuntu.com>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_porters-handbook/es/>\n"
@@ -5518,6 +5518,14 @@ msgid ""
 "link> so we can discuss it first. Too often, new ports are imported to the "
 "wrong category only to be moved right away."
 msgstr ""
+"Si la categoría no está claramente definida, escriba un comentario a tal "
+"efecto en el <link xlink:href=\"https://bugs.freebsd.org/submit/\""
+">presentación del puerto</link> en la base de datos de errores para que "
+"podamos discutirlo antes de importarlo. Como confirmador, envíe una nota al "
+"<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports\""
+">FreeBSD ports mailing list</link> para que podamos discutirlo primero. Con "
+"demasiada frecuencia, los nuevos puertos se importan a la categoría "
+"incorrecta solo para moverse de inmediato."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:2970
@@ -5586,6 +5594,14 @@ msgid ""
 "that would fit this category, list them too.) If you are the maintainer and/"
 "or submitter, respectively, mention that as it may help the case."
 msgstr ""
+"Proponer la nueva categoría en <link xlink:href=\"http://lists.FreeBSD.org/"
+"mailman/listinfo/freebsd-ports\">Lista de correo de puertos de FreeBSD</"
+"link>. Incluya una justificación detallada para la nueva categoría, "
+"incluyendo por qué las categorías existentes no son suficientes y la lista "
+"de puertos existentes que se propone mover. (Si hay nuevos puertos "
+"pendientes en <application>Bugzilla</application> que encajarían en esta "
+"categoría, enumerelos también.) Si usted es el encargado de mantenimiento y/"
+"o el remitente, respectivamente, mencione eso ya que puede ayudar en el caso."
 
 #. (itstool) path: step/para
 #: book.translate.xml:3015
@@ -5659,6 +5675,10 @@ msgid ""
 "articles/committers-guide/article.html#PORTS\">outlined in the Committer's "
 "Guide</link>."
 msgstr ""
+"Si se aprueba ese RP, un consignatario deberá seguir el resto del "
+"procedimiento que se <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US."
+"ISO8859-1/articles/committers-guide/article.html#PORTS\">descrito en la Guía "
+"del commitador</link>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3067
@@ -5734,6 +5754,18 @@ msgid ""
 "<varname>WRKSRC</varname>, which defaults to <filename>work/${DISTNAME}</"
 "filename>."
 msgstr ""
+"<varname>DISTNAME</varname> es el nombre del puerto como lo llaman los "
+"autores del software. <varname>DISTNAME</varname> predeterminado a "
+"<literal>${PORTNAME}-${DISTVERSIONPREFIX}${DISTVERSION}${DISTVERSIONSUFFIX}</"
+"literal>, and if not set, <varname>DISTVERSION</varname> predeterminado a "
+"<literal>${PORTVERSION}</literal>  así que pase<varname>DISTNAME</varname> "
+"solo si es necesario. <varname>DISTNAME</varname> solo se usa en dos "
+"lugares. Primero, la lista de archivos de distribución "
+"(<varname>DISTFILES</varname>) predeterminado a "
+"<literal>${DISTNAME}</literal><literal>${EXTRACT_SUFX}</literal>. En segundo "
+"lugar, se espera que el archivo de distribución se extraiga en un "
+"subdirectorio llamado <varname>WRKSRC</varname>,que por defecto es <filename>"
+"work/${DISTNAME}</filename>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3115
@@ -5744,6 +5776,12 @@ msgid ""
 "varname>, and <varname>DISTVERSIONSUFFIX</varname>. <varname>PORTVERSION</"
 "varname> will be derived from <varname>DISTVERSION</varname> automatically."
 msgstr ""
+"Algunos nombres de distribución de proveedores que no encajan en el "
+"<literal>${PORTNAME}-${PORTVERSION}</literal>-El esquema se puede manejar "
+"automáticamente configurando <varname>DISTVERSIONPREFIX</varname>, "
+"<varname>DISTVERSION</varname>, y <varname>DISTVERSIONSUFFIX</varname>. "
+"<varname>PORTVERSION</varname> Será derivado de <varname>DISTVERSION</"
+"varname> automático."
 
 #. (itstool) path: important/para
 #: book.translate.xml:3125
@@ -5753,6 +5791,10 @@ msgid ""
 "derive a correct <varname>PORTVERSION</varname>, do not use "
 "<varname>DISTVERSION</varname>."
 msgstr ""
+"Solo uno de <varname>PORTVERSION</varname> y <varname>DISTVERSION</varname> "
+"se puede configurar a la vez. Si <varname>DISTVERSION</varname> No deriva un "
+"correcto <varname>PORTVERSION</varname>, no utilice "
+"<varname>DISTVERSION</varname>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3132
@@ -5763,6 +5805,12 @@ msgid ""
 "<varname>PORTVERSION</varname> to the computed version based on the variable "
 "you created, and set <varname>DISTNAME</varname> accordingly."
 msgstr ""
+"Si el esquema de versión ascendente se puede derivar en un esquema de "
+"versión compatible con puertos, establezca alguna variable en la versión "
+"ascendente, <emphasis>no haga</emphasis> use <varname>DISTVERSION</varname> "
+"como el nombre de la variable. Conjunto <varname>PORTVERSION</varname> a la "
+"versión calculada según la variable que creó, y establezca "
+"<varname>DISTNAME</varname> en consecuencia."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3141
@@ -5772,11 +5820,15 @@ msgid ""
 "and set <varname>DISTNAME</varname> with <varname>PORTNAME</varname> with "
 "the verbatim upstream version."
 msgstr ""
+"Si el esquema de versión ascendente no se puede convertir fácilmente en un "
+"valor compatible con puertos, establezca <varname>PORTVERSION</varname> a un "
+"valor razonable, y establezca <varname>DISTNAME</varname> con "
+"<varname>PORTNAME</varname> con la versión original textual."
 
 #. (itstool) path: example/title
 #: book.translate.xml:3148
 msgid "Deriving <varname>PORTVERSION</varname> Manually"
-msgstr ""
+msgstr "Derivando <varname>PORTVERSION</varname> Manual"
 
 #. (itstool) path: example/para
 #: book.translate.xml:3151
@@ -5791,6 +5843,16 @@ msgid ""
 "<varname>PORTVERSION</varname> is manually derived from an "
 "<varname>ISCVERSION</varname> variable to output <literal>9.9.9p1</literal>."
 msgstr ""
+"<application>BIND9</application> utiliza un esquema de versión que no es "
+"compatible con las versiones de los puertos (tiene <literal>-</literal> en "
+"sus versiones) y no se puede derivar utilizando <varname>DISTVERSION</"
+"varname> porque después de la versión 9.9.9, lanzará un <quote>patchlevels</"
+"quote> en forma de <literal>9.9.9-P1</literal>. DISTVERSION traduciría eso "
+"en <literal>9.9.9.p1</literal>, que, en el esquema de versiones de los "
+"puertos, significa 9.9.9 pre-release 1, que es anterior a 9.9.9 y no "
+"posterior. Entonces <varname>PORTVERSION</varname>Se deriva manualmente de "
+"un  <varname>ISCVERSION</varname> variable a la salida <literal>9.9."
+"9p1</literal>."
 
 #. (itstool) path: example/para
 #: book.translate.xml:3164
@@ -5800,6 +5862,10 @@ msgid ""
 "<citerefentry><refentrytitle>pkg-version</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>:"
 msgstr ""
+"El orden en el que el framework de puertos y el paquete ordenarán las "
+"versiones se verifica usando el <literal>-t</literal> argumento de "
+"<citerefentry><refentrytitle>pkg-"
+"version</refentrytitle><manvolnum>8</manvolnum></citerefentry>:"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:3168
@@ -5822,6 +5888,9 @@ msgid ""
 "<literal>-t</literal> is greater than the second argument. <literal>9.9.9</"
 "literal> is after <literal>9.9.9.p1</literal>."
 msgstr ""
+"El <literal>&gt;</literal> signo significa que el primer argumento pasado a "
+"<literal>-t</literal> es mayor que el segundo argumento. <literal>9.9.9</"
+"literal> es despues <literal>9.9.9.p1</literal>."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:3183
@@ -5830,6 +5899,9 @@ msgid ""
 "<literal>-t</literal> is less than the second argument. <literal>9.9.9</"
 "literal> is before <literal>9.9.9p1</literal>."
 msgstr ""
+"El <literal>&lt;</literal> signo significa que el primer argumento pasado a "
+"<literal>-t</literal> es menor que el segundo argumento. <literal>9.9.9</"
+"literal> es antes <literal>9.9.9p1</literal>."
 
 #. (itstool) path: example/para
 #: book.translate.xml:3190
@@ -5837,6 +5909,8 @@ msgid ""
 "In the port <filename>Makefile</filename>, for example <package role=\"port"
 "\">dns/bind99</package>, it is achieved by:"
 msgstr ""
+"En el puerto <filename>Makefile</filename>,por ejemplo <package role=\"port\""
+">dns/bind99</package>, se logra mediante:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3194
@@ -5882,6 +5956,8 @@ msgid ""
 "Define upstream version in <varname>ISCVERSION</varname>, with a comment "
 "saying <emphasis>why</emphasis> it is needed."
 msgstr ""
+"Defina la versión anterior en <varname>ISCVERSION</varname>, con un "
+"comentario que diga <emphasis>porque</emphasis> es necesario."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:3217
@@ -5889,6 +5965,8 @@ msgid ""
 "Use <varname>ISCVERSION</varname> to get a ports-compatible "
 "<varname>PORTVERSION</varname>."
 msgstr ""
+"Use <varname>ISCVERSION</varname>para obtener un puerto compatible "
+"<varname>PORTVERSION</varname>."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:3222
@@ -5896,17 +5974,21 @@ msgid ""
 "Use <varname>ISCVERSION</varname> directly to get the correct <acronym>URL</"
 "acronym> for fetching the distribution file."
 msgstr ""
+"Use <varname>ISCVERSION</varname> Directamente para obtener el correcto "
+"<acronym>URL</acronym> para recuperar el archivo de distribución."
 
 #. (itstool) path: callout/para
 #: book.translate.xml:3228
 msgid ""
 "Use <varname>ISCVERSION</varname> directly to name the distribution file."
 msgstr ""
+"Use <varname>ISCVERSION</varname> directamente para nombrar el archivo de "
+"distribución."
 
 #. (itstool) path: example/title
 #: book.translate.xml:3235
 msgid "Derive <varname>DISTNAME</varname> from <varname>PORTVERSION</varname>"
-msgstr ""
+msgstr "Derivar <varname>DISTNAME</varname> de <varname>PORTVERSION</varname>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:3238
@@ -5923,6 +6005,8 @@ msgid ""
 "In <package role=\"port\">comms/kermit</package>, only the last element of "
 "the version is present in the distribution file:"
 msgstr ""
+"En <package role=\"port\">comms/kermit</package>, solo el último elemento de "
+"la versión está presente en el archivo de distribución:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3245
@@ -6029,6 +6113,14 @@ msgid ""
 "<varname>DISTNAME</varname> and <varname>WRKSRC</varname> (and possibly "
 "<varname>EXTRACT_SUFX</varname>)."
 msgstr ""
+"<varname>PKGNAMEPREFIX</varname> y <varname>PKGNAMESUFFIX</varname> no "
+"afecta <varname>DISTNAME</varname>. También tenga en cuenta que si "
+"<varname>WRKSRC</varname> es igual a <filename>${WRKDIR}/${DISTNAME}</"
+"filename> mientras que el archivo fuente original tiene un nombre diferente "
+"a <literal>${PORTNAME}-${PORTVERSION}${EXTRACT_SUFX}</literal>, salir "
+"<varname>DISTNAME</varname> solo - definiendo solo <varname>DISTFILES</"
+"varname> es más fácil que ambos <varname>DISTNAME</varname> y "
+"<varname>WRKSRC</varname> (y posiblemente<varname>EXTRACT_SUFX</varname>)."
 
 #. (itstool) path: sect2/title
 #. (itstool) path: listitem/para
@@ -6080,12 +6172,20 @@ msgid ""
 "ports do not have any distribution files, so <varname>MASTER_SITES</varname> "
 "does not need to be set."
 msgstr ""
+"<varname>MASTER_SITES</varname>no debe estar en blanco. Debe apuntar al "
+"sitio real que aloja los archivos de distribución. No puede apuntar a "
+"archivos web ni a los sitios de caché de archivos de distribución de "
+"FreeBSD. La única excepción a esta regla son los puertos que no tienen "
+"archivos de distribución. Por ejemplo, los metapuertos no tienen archivos de "
+"distribución, por lo que <varname>MASTER_SITES</varname> no es necesario "
+"configurarlo."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:3337
 msgid ""
 "Using <varname>MASTER_SITE_<replaceable>*</replaceable></varname> Variables"
 msgstr ""
+"Usando <varname>MASTER_SITE_<replaceable>*</replaceable></varname> Variables"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3341
@@ -6095,6 +6195,10 @@ msgid ""
 "(<literal>PERL_CPAN</literal>). <varname>MASTER_SITES</varname> can use them "
 "directly:"
 msgstr ""
+"Las abreviaturas de atajos están disponibles para archivos populares como "
+"SourceForge (<literal>SOURCEFORGE</literal>), GNU (<literal>GNU</literal>), "
+"or Perl CPAN (<literal>PERL_CPAN</literal>). <varname>MASTER_SITES</varname> "
+"puede usarlos directamente:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:3348
@@ -6129,6 +6233,10 @@ msgid ""
 "mk</filename></link>. New entries are added often, so make sure to check the "
 "latest version of this file before submitting a port."
 msgstr ""
+"Estos valores y variables se definen en <link xlink:href=\"https://svnweb."
+"freebsd.org/ports/head/Mk/bsd.sites.mk?view=markup\"><filename>Mk/bsd.sites."
+"mk</filename></link>. A menudo se agregan nuevas entradas, así que asegúrese "
+"de verificar la última versión de este archivo antes de enviar un puerto."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:3362
@@ -6137,6 +6245,9 @@ msgid ""
 "variable, the shorthand <literal><replaceable>FOO</replaceable></literal> "
 "can be used. For example, use:"
 msgstr ""
+"Para cualquier <varname>MASTER_SITE_<replaceable>FOO</replaceable></varname> "
+"variable, la taquigrafía<literal><replaceable>FOO</replaceable></literal> "
+"puede ser usado. Por ejemplo, use:"
 
 #. (itstool) path: tip/programlisting
 #: book.translate.xml:3368
@@ -6162,6 +6273,8 @@ msgid ""
 "Some <varname>MASTER_SITE_<replaceable>*</replaceable></varname> names are "
 "quite long, and for ease of use, shortcuts have been defined:"
 msgstr ""
+"Algunos <varname>MASTER_SITE_<replaceable>*</replaceable></varname> los "
+"nombres son bastante largos y, para facilitar su uso, se han definido atajos:"
 
 #. (itstool) path: table/title
 #: book.translate.xml:3383
@@ -6169,11 +6282,14 @@ msgid ""
 "Shortcuts for <varname>MASTER_SITE_<replaceable>*</replaceable></varname> "
 "Macros"
 msgstr ""
+"Atajos para <varname>MASTER_SITE_<replaceable>*</replaceable></varname> "
+"Macros"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:3390 book.translate.xml:3468
+#, fuzzy
 msgid "Macro"
-msgstr ""
+msgstr "Macro"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:3391
@@ -6277,6 +6393,11 @@ msgid ""
 "<literal>Stardict</literal>, of version <literal>1.2.3</literal>, and hosted "
 "on SourceForge, adding this line:"
 msgstr ""
+"Varios <quote>magic</quote> Existen macros para sitios populares con una "
+"estructura de directorio predecible. Para estos, solo use la abreviatura y "
+"el sistema elegirá un subdirectorio automáticamente. Para un puerto llamado "
+"<literal>Stardict</literal>,de versión <literal>1.2.3</literal>, y alojado "
+"en SourceForge, agregando esta línea:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:3447
@@ -6290,6 +6411,8 @@ msgid ""
 "infers a subdirectory named <literal>/project/stardict/stardict/1.2.3</"
 "literal>. If the inferred directory is incorrect, it can be overridden:"
 msgstr ""
+"infiere un subdirectorio llamado <literal>/project/stardict/stardict/1.2.3</"
+"literal>. Si el directorio inferido es incorrecto, se puede anular:"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:3454
@@ -6586,6 +6709,11 @@ msgid ""
 "varname> and <varname>MASTER_SITES</varname> automatically. These variables "
 "are available:"
 msgstr ""
+"Si el archivo de distribución proviene de una confirmación o etiqueta "
+"específica en <link xlink:href=\"https://github.com\">GitHub</link> para el "
+"que no hay un archivo publicado oficialmente, existe una manera fácil de "
+"configurar el <varname>DISTNAME</varname> y <varname>MASTER_SITES</varname> "
+"automáticamente. Estas variables están disponibles:"
 
 #. (itstool) path: table/title
 #: book.translate.xml:3625
@@ -6703,6 +6831,14 @@ msgid ""
 "literal><replaceable>subdir</replaceable> part is optional. It is helpful "
 "when there is more than one GitHub project from which to fetch."
 msgstr ""
+"<varname>GH_TUPLE</varname> permite poner <varname>GH_ACCOUNT</varname>, "
+"<varname>GH_PROJECT</varname>, <varname>GH_TAGNAME</varname>, y "
+"<varname>GH_SUBDIR</varname> en una sola variable. El formato es <replaceable"
+">account</replaceable><literal>:</literal><replaceable>proyecto</replaceable>"
+"<literal>:</literal><replaceable>tagname</replaceable><literal>:</literal><re"
+"placeable>grupo</replaceable><literal>/</literal><replaceable>subdir</"
+"replaceable>. El <literal>/</literal><replaceable>subdir</replaceable> parte "
+"es opcional. Es útil cuando hay más de un proyecto de GitHub del que extraer."
 
 #. (itstool) path: important/para
 #: book.translate.xml:3689
@@ -6726,6 +6862,10 @@ msgid ""
 "xlink:href=\"https://github.com/freebsd/pkg\"/>, The <filename>Makefile</"
 "filename> would end up looking like this (slightly stripped for the example):"
 msgstr ""
+"Al intentar hacer un puerto para la versión <literal>1.2.7</literal> de "
+"<application>pkg</application> Del usuario de FreeBSD en github, en <link "
+"xlink:href=\"https://github.com/freebsd/pkg\"/>, El<filename>Makefile</"
+"filename> terminaría luciendo así (ligeramente despojado para el ejemplo):"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3702
@@ -6750,6 +6890,9 @@ msgid ""
 "<literal>GH GHC</literal> and <varname>WRKSRC</varname> to <literal>"
 "${WRKDIR}/pkg-1.2.7</literal>."
 msgstr ""
+"Tendrá automáticamente <varname>MASTER_SITES</varname> ajustado a "
+"<literal>GH GHC</literal> y <varname>WRKSRC</varname> a "
+"<literal>${WRKDIR}/pkg-1.2.7</literal>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:3715
@@ -6764,6 +6907,10 @@ msgid ""
 "xlink:href=\"https://github.com/freebsd/pkg\"/>, the <filename>Makefile</"
 "filename> ends up looking like this (slightly stripped for the example):"
 msgstr ""
+"Al intentar hacer un puerto para la versión de vanguardia de "
+"<application>pkg</application> Del usuario de FreeBSD en github, en <link "
+"xlink:href=\"https://github.com/freebsd/pkg\"/>, el <filename>Makefile</"
+"filename> termina luciendo así (ligeramente despojado para el ejemplo):"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3724
@@ -6792,6 +6939,9 @@ msgid ""
 "<literal>GH GHC</literal> and <varname>WRKSRC</varname> to <literal>"
 "${WRKDIR}/pkg-6dbb17b</literal>."
 msgstr ""
+"Tendrá automáticamente <varname>MASTER_SITES</varname> ajustado a "
+"<literal>GH GHC</literal> y <varname>WRKSRC</varname> a <literal>${WRKDIR"
+"}/pkg-6dbb17b</literal>."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:3738
@@ -6800,6 +6950,10 @@ msgid ""
 "<varname>GH_TAGNAME</varname>, not the date the <filename>Makefile</"
 "filename> is edited, or the date the commit is made."
 msgstr ""
+"<literal>20140411</literal> es la fecha del compromiso a la que se hace "
+"referencia en <varname>GH_TAGNAME</varname>, no la fecha en que "
+"<filename>Makefile</filename> se edita o la fecha en que se realiza la "
+"confirmación."
 
 #. (itstool) path: example/title
 #: book.translate.xml:3746
@@ -6807,6 +6961,7 @@ msgid ""
 "Use of <varname>USE_GITHUB</varname> with <varname>DISTVERSIONPREFIX</"
 "varname>"
 msgstr ""
+"uso de <varname>USE_GITHUB</varname> con <varname>DISTVERSIONPREFIX</varname>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:3749
@@ -6817,6 +6972,11 @@ msgid ""
 "cases, it is possible to use <varname>DISTVERSIONPREFIX</varname> or "
 "<varname>DISTVERSIONSUFFIX</varname>:"
 msgstr ""
+"De vez en cuando, <varname>GH_TAGNAME</varname> es una ligera variación de "
+"<varname>DISTVERSION</varname>. Por ejemplo, si la versión es <literal>1.0."
+"2</literal>, la etiqueta es <literal>v1.0.2</literal>. En esos casos, es "
+"posible utilizar <varname>DISTVERSIONPREFIX</varname> o "
+"<varname>DISTVERSIONSUFFIX</varname>:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3756
@@ -6859,6 +7019,14 @@ msgid ""
 "replaceable><replaceable>DD</replaceable></literal> represents the date the "
 "commit referenced in <varname>GH_TAGNAME</varname>."
 msgstr ""
+"Si nunca hubo una versión anterior, no invente una como <literal>0.1</"
+"literal> o <literal>1.0</literal>. Crea el puerto con un "
+"<varname>DISTVERSION</varname> de <literal>g<replaceable>YYYY</replaceable><r"
+"eplaceable>MM</replaceable><replaceable>DD</replaceable></literal>, donde "
+"<literal>g</literal> es para <application>Git</application>, y <literal><repl"
+"aceable>YYYY</replaceable><replaceable>MM</replaceable><replaceable>DD</repla"
+"ceable></literal>representa la fecha en que se hace referencia a la "
+"confirmación en <varname>GH_TAGNAME</varname>."
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3783
@@ -6884,6 +7052,11 @@ msgid ""
 "ex-pkg-version\"/> for details on <citerefentry><refentrytitle>pkg-version</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>):"
 msgstr ""
+"Esto crea un esquema de control de versiones que aumenta con el tiempo y que "
+"aún está antes de la versión. <literal>0</literal> (mire <xref linkend"
+"=\"makefile-versions-ex-pkg-version\"/> para obtener detalles sobre "
+"<citerefentry><refentrytitle>pkg-"
+"version</refentrytitle><manvolnum>8</manvolnum></citerefentry>):"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:3794
@@ -6901,6 +7074,8 @@ msgid ""
 "Which means using <varname>PORTEPOCH</varname> will not be needed in case "
 "upstream decides to cut versions in the future."
 msgstr ""
+"Lo que significa usar <varname>PORTEPOCH</varname> no será necesario en caso "
+"de que upstream decida cortar versiones en el futuro."
 
 #. (itstool) path: example/title
 #: book.translate.xml:3803
@@ -6919,19 +7094,27 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> to find out the "
 "version to use:"
 msgstr ""
+"Si la versión actual del software utiliza un <application>Git</application> "
+"etiqueta, y el puerto debe actualizarse a una versión intermedia más nueva, "
+"sin etiqueta, use <citerefentry><refentrytitle>git-"
+"describe</refentrytitle><manvolnum>1</manvolnum></citerefentry> para "
+"averiguar la versión a utilizar:"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:3811
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>git describe --tags <replaceable>f0038b1</replaceable></userinput>\n"
 "v0.7.3-14-gf0038b1"
 msgstr ""
+"<prompt>%</prompt> <userinput>git describe --tags "
+"<replaceable>f0038b1</replaceable></userinput>\n"
+"v0.7.3-14-gf0038b1"
 
 #. (itstool) path: example/para
 #: book.translate.xml:3814
 msgid "<literal>v0.7.3-14-gf0038b1</literal> can be split into three parts:"
-msgstr ""
+msgstr "<literal>v0.7.3-14-gf0038b1</literal> se puede dividir en tres partes:"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:3819
@@ -6976,6 +7159,9 @@ msgid ""
 "quote>, and the <literal>f0038b1</literal> is the commit hash that this "
 "reference points to."
 msgstr ""
+"El <literal>-g</literal> significa <quote><application>Git</application></"
+"quote>, y el <literal>f0038b1</literal> es el hash de confirmación al que "
+"apunta esta referencia."
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:3850
@@ -7062,6 +7248,9 @@ msgid ""
 "distribution files from different places in GitHub. It works in a way very "
 "similar to <xref linkend=\"porting-master-sites-n\"/>."
 msgstr ""
+"El <varname>USE_GITHUB</varname> framework también admite la obtención de "
+"múltiples archivos de distribución de diferentes lugares en GitHub. Funciona "
+"de una manera muy similar a <xref linkend=\"porting-master-sites-n\"/>."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3890
@@ -7073,6 +7262,12 @@ msgid ""
 "it is the same as the default as listed in <xref linkend=\"makefile-"
 "master_sites-github-description\"/>."
 msgstr ""
+"Se agregan varios valores a <varname>GH_ACCOUNT</varname>, "
+"<varname>GH_PROJECT</varname>, y <varname>GH_TAGNAME</varname>. A cada valor "
+"diferente se le asigna un grupo. El valor principal puede no tener grupo o "
+"el <literal>:DEFAULT</literal> grupo. Se puede omitir un valor si es el "
+"mismo que el predeterminado como se indica en <xref linkend=\"makefile-"
+"master_sites-github-description\"/>."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3899
@@ -7095,6 +7290,13 @@ msgid ""
 "during <_:buildtarget-1/>, or add to <varname>CONFIGURE_ARGS</varname>, or "
 "whatever is needed so that the software builds correctly."
 msgstr ""
+"Para cada grupo, un <varname>${WRKSRC_<replaceable>grupo</replaceable>}</"
+"varname> ayyudante Se crea la variable, que contiene el directorio en el que "
+"se extrajo el archivo. los "
+"<varname>${WRKSRC_<replaceable>grupo</replaceable>}</varname> Las variables "
+"se pueden utilizar para mover directorios durante <_:buildtarget-1/>, o "
+"agregar a <varname>CONFIGURE_ARGS</varname>, o lo que sea necesario para que "
+"el software se compile correctamente."
 
 #. (itstool) path: caution/para
 #: book.translate.xml:3915 book.translate.xml:4303
@@ -7104,6 +7306,10 @@ msgid ""
 "distribution file. It is used as a unique key and using it more than once "
 "will overwrite the previous values."
 msgstr ""
+"El <literal>:<replaceable>group</replaceable></literal> parte "
+"<emphasis>debe</emphasis> ser usado para  <emphasis>solo uno </emphasis> "
+"archivo de distribución. Se utiliza como clave única y su uso más de una vez "
+"sobrescribirá los valores anteriores."
 
 #. (itstool) path: note/para
 #: book.translate.xml:3924 book.translate.xml:4312
@@ -7113,6 +7319,10 @@ msgid ""
 "restrictions on group names outlined in <xref linkend=\"porting-master-sites-"
 "n\"/>"
 msgstr ""
+"Como esto es solo azúcar sintáctico arriba <varname>DISTFILES</varname> y "
+"<varname>MASTER_SITES</varname>, los nombres de los grupos deben adherirse a "
+"las restricciones sobre los nombres de los grupos descritas en <xref linkend"
+"=\"porting-master-sites-n\"/>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3931
@@ -7138,6 +7348,9 @@ msgid ""
 "filename> must set <varname>DISTFILES</varname> in its <link linkend="
 "\"porting-order-portname\">top block</link>. The definition should be:"
 msgstr ""
+"Cuando usas <literal>USE_GITHUB=nodefault</literal>, el <filename>Makefile</"
+"filename> debe conjuntar <varname>DISTFILES</varname>en su <link linkend"
+"=\"porting-order-portname\">top block</link>. La definición debería ser:"
 
 #. (itstool) path: important/programlisting
 #: book.translate.xml:3944 book.translate.xml:4332
@@ -7203,6 +7416,15 @@ msgid ""
 "<filename>bar-foo-icons-1.0_GH0.tar.gz</filename>, and <filename>bar-foo-"
 "contrib-fa579bc_GH0.tar.gz</filename>."
 msgstr ""
+"Esto buscará tres archivos de distribución de github. El predeterminado "
+"proviene de <filename>foo/foo</filename> y es versión <literal>1.0.2</"
+"literal>. El segundo, con el <literal>iconos</literal> grupo, viene de "
+"<filename>bar/foo-icons</filename> y está en versión <literal>1.0</"
+"literal>.El tercero proviene de <filename>bar/foo-contrib</filename> y usa "
+"el <application>Git</application> commit <literal>fa579bc</literal>. Los "
+"archivos de distribución se denominan <filename>foo-foo-1.0.2_GH0.tar.gz</"
+"filename>, <filename>bar-foo-icons-1.0_GH0.tar.gz</filename>, y <filename"
+">bar-foo-contrib-fa579bc_GH0.tar.gz</filename>."
 
 #. (itstool) path: example/para
 #: book.translate.xml:3983
@@ -7218,6 +7440,16 @@ msgid ""
 "${WRKSRC_contrib}</varname> and contains <literal>${WRKDIR}/foo-contrib-"
 "fa579bc</literal>."
 msgstr ""
+"Todos los archivos de distribución se extraen en <varname>${WRKDIR}</"
+"varname> en sus respectivos subdirectorios. El archivo predeterminado "
+"todavía se extrae en <varname>${WRKSRC}</varname>, en este caso, "
+"<filename>${WRKDIR}/foo-1.0.2</filename>. Cada archivo de distribución "
+"adicional se extrae en <varname>${WRKSRC_<replaceable>grupo</replaceable>}</"
+"varname>. Aquí, para el <literal>icons</literal> grupo, se llama "
+"<varname>${WRKSRC_icons}</varname> y contiene <filename>${WRKDIR}/foo-icons-1"
+".0</filename>. El archivo con el <literal>contrib</literal> el grupo se "
+"llama <varname>${WRKSRC_contrib}</varname> y contiene <literal>${WRKDIR}/foo-"
+"contrib-fa579bc</literal>."
 
 #. (itstool) path: example/para
 #: book.translate.xml:3997
@@ -7228,6 +7460,11 @@ msgid ""
 "<filename>ext</filename> exists, but that <filename>ext/icons</filename> "
 "does not already exist. Then it does this:"
 msgstr ""
+"El sistema de compilación del software espera encontrar los íconos en un "
+"<filename>ext/icons</filename> subdirectorio en sus fuentes, por lo que "
+"<varname>GH_SUBDIR</varname> es  usado. <varname>GH_SUBDIR</varname> se "
+"asegura de que <filename>ext</filename> existe, pero eso <filename>ext/"
+"icons</filename> no existe ya. Entonces hace esto:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:4005
@@ -7245,6 +7482,8 @@ msgid ""
 "Use of <varname>USE_GITHUB</varname> with Multiple Distribution Files Using "
 "<varname>GH_TUPLE</varname>"
 msgstr ""
+"Uso de <varname>USE_GITHUB</varname> con varios archivos de distribución "
+"utilizando <varname>GH_TUPLE</varname>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:4014
@@ -7284,6 +7523,9 @@ msgid ""
 "literal>. Some redundant information is present with <varname>GH_TUPLE</"
 "varname> because grouping is not possible."
 msgstr ""
+"La agrupación se utilizó en el ejemplo anterior con "
+"<literal>bar:icons,contrib</literal>. Alguna información redundante está "
+"presente con <varname>GH_TUPLE</varname> porque la agrupación no es posible."
 
 #. (itstool) path: example/title
 #: book.translate.xml:4033
@@ -7464,6 +7706,12 @@ msgid ""
 "<literal>v3.4.0</literal>. Both can be used interchangeably, but when a tag "
 "is available, use it."
 msgstr ""
+"Si bien obtener la información de GitHub parece más sencillo, la información "
+"que se encuentra usando <command>git submodule status</command> "
+"proporcionará información más significativa. Por ejemplo, aqui, <literal>lib/"
+"wxsqlite3</literal>'s commit hash <literal>fb66eb2</literal>corresponden a "
+"las <literal>v3.4.0</literal>. Ambos se pueden usar indistintamente, pero "
+"cuando haya una etiqueta disponible, úsela."
 
 #. (itstool) path: example/para
 #: book.translate.xml:4115
@@ -7611,6 +7859,10 @@ msgid ""
 "examples in <xref linkend=\"makefile-master_sites-gitlab-multiple\"/> for "
 "more information."
 msgstr ""
+"Cuando el software necesita un archivo de distribución adicional para ser "
+"extraído dentro <varname>${WRKSRC}</varname>, esta variable se puede "
+"utilizar. Vea los ejemplos en <xref linkend=\"makefile-master_sites-gitlab-"
+"multiple\"/> para más información."
 
 #. (itstool) path: row/entry
 #. (itstool) path: listitem/para
@@ -7651,6 +7903,11 @@ msgid ""
 "glib\"/>, The <filename>Makefile</filename> would end up looking like this "
 "for fetching the distribution files:"
 msgstr ""
+"Al intentar hacer un puerto para la versión <literal>1.14</literal> de "
+"<application>libsignon-glib</application> Del usuario de cuentas-sso en "
+"gitlab.com, en <link xlink:href=\"https://gitlab.com/accounts-sso/libsignon-"
+"glib\"/>, El <filename>Makefile</filename> terminaría luciendo así para "
+"obtener los archivos de distribución:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:4221
@@ -7679,6 +7936,10 @@ msgid ""
 "e90302e342bfd27bc8c9132ab9d0ea3d8723fd03-"
 "e90302e342bfd27bc8c9132ab9d0ea3d8723fd03</literal>."
 msgstr ""
+"Tendrá automáticamente <varname>MASTER_SITES</varname> ajustado a <link "
+"xlink:href=\"https://gitlab.com\">gitlab.com</link> and <varname>WRKSRC</"
+"varname> a <literal>${WRKDIR}/libsignon-glib-e90302e342bfd27bc8c9132ab9d0ea3d"
+"8723fd03-e90302e342bfd27bc8c9132ab9d0ea3d8723fd03</literal>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:4235
@@ -7694,6 +7955,11 @@ msgid ""
 "example.com</literal>, the <filename>Makefile</filename> ends up looking "
 "like this for fetching distribution files:"
 msgstr ""
+"Un uso más completo de lo anterior si el puerto no tiene versiones y "
+"<application>foobar</application> from the foo user on project bar on a self "
+"hosted <application>GitLab</application> site <literal>https://gitlab.example"
+".com</literal>, el <filename>Makefile</filename> termina luciendo así para "
+"obtener archivos de distribución:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:4244
@@ -7726,6 +7992,10 @@ msgid ""
 "bar-9c1669ce60c3f4f5eb43df874d7314483fb3f8a6-9c1669ce60c3f4f5eb43df874d7314483fb3f8a6</"
 "literal>."
 msgstr ""
+"Tendrá <varname>MASTER_SITES</varname> ajustado a \"<literal>https://gitlab."
+"example.com</literal>\" y <varname>WRKSRC</varname> de  <literal>${WRKDIR"
+"}/bar-9c1669ce60c3f4f5eb43df874d7314483fb3f8a6-9c1669ce60c3f4f5eb43df874d7314"
+"483fb3f8a6</literal>."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:4258
@@ -7734,6 +8004,10 @@ msgid ""
 "<varname>GL_COMMIT</varname>, not the date the <filename>Makefile</filename> "
 "is edited, or the date the commit to the FreeBSD ports tree is made."
 msgstr ""
+"<literal>20170906</literal> es la fecha del compromiso a la que se hace "
+"referencia en <varname>GL_COMMIT</varname>, no la fecha en que "
+"<filename>Makefile</filename> se edita, o la fecha en que se realiza el "
+"compromiso con el árbol de ports de FreeBSD."
 
 #. (itstool) path: note/para
 #: book.translate.xml:4265
@@ -7758,6 +8032,12 @@ msgid ""
 "a way very similar to <xref linkend=\"porting-master-sites-n\"/> and <xref "
 "linkend=\"makefile-master_sites-gitlab-multiple\"/>."
 msgstr ""
+"El <varname>USE_GITLAB</varname> framework también admite la obtención de "
+"múltiples archivos de distribución de diferentes lugares desde "
+"<application>GitLab</application> y <application>GitLab</application> sitios "
+"alojados. Funciona de una manera muy similar a <xref linkend=\"porting-"
+"master-sites-n\"/> y <xref linkend=\"makefile-master_sites-gitlab-multiple\""
+"/>."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:4279
@@ -7767,6 +8047,10 @@ msgid ""
 "<varname>GL_COMMIT</varname>. Each different value is assigned a group. "
 "<xref linkend=\"makefile-master_sites-gitlab-description\"/>."
 msgstr ""
+"Se agregan varios valores a <varname>GL_SITE</varname>, <varname>GL_ACCOUNT</"
+"varname>, <varname>GL_PROJECT</varname> y <varname>GL_COMMIT</varname>. A "
+"cada valor diferente se le asigna un grupo. <xref linkend=\"makefile-"
+"master_sites-gitlab-description\"/>."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:4287
@@ -7775,6 +8059,9 @@ msgid ""
 "distribution files. It helps keep the site, account, project, commit, and "
 "group information at the same place."
 msgstr ""
+"<varname>GL_TUPLE</varname>  también se puede utilizar cuando hay muchos "
+"archivos de distribución. Ayuda a mantener la información del sitio, la "
+"cuenta, el proyecto, el compromiso y el grupo en el mismo lugar."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:4319
@@ -7798,6 +8085,9 @@ msgid ""
 "filename> must set <varname>DISTFILES</varname> in its <link linkend="
 "\"porting-order-portname\">top block</link>. The definition should be:"
 msgstr ""
+"Cuando usas <literal>USE_GITLAB=nodefault</literal>, el <filename>Makefile</"
+"filename> debe establecer <varname>DISTFILES</varname> en su <link linkend"
+"=\"porting-order-portname\">top block</link>. La definición debería ser:"
 
 #. (itstool) path: example/title
 #: book.translate.xml:4337
@@ -7867,6 +8157,21 @@ msgid ""
 "filename>, and <filename>bar-foo-"
 "contrib-9e4dd76ad9b38f33fdb417a4c01935958d5acd2a_GL0.tar.gz</filename>."
 msgstr ""
+"Esto buscará dos archivos de distribución de gitlab.com y uno de "
+"<literal>gitlab.example.com</literal> hosting <application>GitLab</"
+"application>. El predeterminado proviene de <filename>https://gitlab.com/foo/"
+"foo</filename> y comprometerse es "
+"<literal>c189207a55da45305c884fe2b50e086fcad4724b</literal>. El segundo, con "
+"el <literal>icons</literal> grupo, viene de <filename>https://gitlab.example."
+"com:9434/gitlab/bar/foo-icons</filename> y comprometerse es "
+"<literal>ae7368cab1ca7ca754b38d49da064df87968ffe4</literal>. The third one "
+"comes from <filename>https://gitlab.com/bar/foo-contrib</filename> y se "
+"compromete <literal>9e4dd76ad9b38f33fdb417a4c01935958d5acd2a</literal>. Los "
+"archivos de distribución se denominan <filename>foo-foo-"
+"c189207a55da45305c884fe2b50e086fcad4724b_GL0.tar.gz</filename>, <filename"
+">bar-foo-icons-ae7368cab1ca7ca754b38d49da064df87968ffe4_GL0.tar.gz</"
+"filename>, y <filename>bar-foo-contrib-"
+"9e4dd76ad9b38f33fdb417a4c01935958d5acd2a_GL0.tar.gz</filename>."
 
 #. (itstool) path: example/para
 #: book.translate.xml:4373
@@ -7886,6 +8191,20 @@ msgid ""
 "contrib-9e4dd76ad9b38f33fdb417a4c01935958d5acd2a-9e4dd76ad9b38f33fdb417a4c01935958d5acd2a</"
 "literal>."
 msgstr ""
+"Todos los archivos de distribución se extraen en <varname>${WRKDIR}</"
+"varname> en sus respectivos subdirectorios. El archivo predeterminado "
+"todavía se extrae en <varname>${WRKSRC}</varname>, en este caso, "
+"<filename>${WRKDIR}/foo-c189207a55da45305c884fe2b50e086fcad4724b-"
+"c189207a55da45305c884fe2b50e086fcad4724b</filename>. Cada archivo de "
+"distribución adicional se extrae en  "
+"<varname>${WRKSRC_<replaceable>group</replaceable>}</varname>. Aquí, para el "
+"<literal>iconos</literal> grupo, se llama <varname>${WRKSRC_icons}</varname> "
+"y contiene <filename>${WRKDIR}/foo-icons-ae7368cab1ca7ca754b38d49da064df87968"
+"ffe4-ae7368cab1ca7ca754b38d49da064df87968ffe4</filename>. El archivo con el  "
+"<literal>contrib</literal> el grupo se llama <varname>${WRKSRC_contrib}</"
+"varname> y contiene <literal>${WRKDIR}/foo-contrib-"
+"9e4dd76ad9b38f33fdb417a4c01935958d5acd2a-"
+"9e4dd76ad9b38f33fdb417a4c01935958d5acd2a</literal>."
 
 #. (itstool) path: example/para
 #: book.translate.xml:4387
@@ -7896,6 +8215,11 @@ msgid ""
 "<filename>ext</filename> exists, but that <filename>ext/icons</filename> "
 "does not already exist. Then it does this:"
 msgstr ""
+"El sistema de compilación del software espera encontrar los íconos en un "
+"<filename>ext/icons</filename> subdirectorio en sus fuentes, por lo que "
+"<varname>GL_SUBDIR</varname> es usado. <varname>GL_SUBDIR</varname> se "
+"asegura de que <filename>ext</filename> existe, pero eso <filename>ext/"
+"icons</filename> no existe ya. Entonces hace esto:"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:4395
@@ -8005,6 +8329,12 @@ msgid ""
 "these are set then <varname>EXTRACT_SUFX</varname> defaults to <literal>.tar."
 "gz</literal>."
 msgstr ""
+"El <literal>USES=tar[:<replaceable>xxx</replaceable>]</literal>, "
+"<literal>USES=lha</literal> o <literal>USES=zip</literal> automatically "
+"conjunto <varname>EXTRACT_SUFX</varname> a las extensiones de archivos más "
+"comunes según sea necesario, consulte <xref linkend=\"usa\"/> para más "
+"detalles. Si ninguno de estos está configurado entonces "
+"<varname>EXTRACT_SUFX</varname> predeterminado a <literal>.tar.gz</literal>."
 
 #. (itstool) path: note/para
 #: book.translate.xml:4448
@@ -8056,6 +8386,8 @@ msgid ""
 "If not explicitly set, <varname>DISTFILES</varname> defaults to <literal>"
 "${DISTNAME}${EXTRACT_SUFX}</literal>."
 msgstr ""
+"Si no se establece explícitamente, <varname>DISTFILES</varname> "
+"predeterminado a <literal>${DISTNAME}${EXTRACT_SUFX}</literal>."
 
 #. (itstool) path: sect2/title
 #. (itstool) path: listitem/para
@@ -8072,6 +8404,10 @@ msgid ""
 "document—list the filenames that must be extracted in <varname>EXTRACT_ONLY</"
 "varname>."
 msgstr ""
+"si solo algunos de los <varname>DISTFILES</varname>deben extraerse (por "
+"ejemplo, uno de ellos es el código fuente, mientras que otro es un documento "
+"sin comprimir) enumere los nombres de archivo que deben extraerse "
+"<varname>EXTRACT_ONLY</varname>."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:4482
@@ -8089,6 +8425,8 @@ msgid ""
 "When none of the <varname>DISTFILES</varname> need to be uncompressed, set "
 "<varname>EXTRACT_ONLY</varname> to the empty string."
 msgstr ""
+"Cuando ninguno de los <varname>DISTFILES</varname> necesita estar "
+"descomprimido, configurar <varname>EXTRACT_ONLY</varname>a la cuerda vacía."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:4489
@@ -8099,8 +8437,9 @@ msgstr "EXTRACT_ONLY="
 #. (itstool) path: sect2/title
 #. (itstool) path: listitem/para
 #: book.translate.xml:4493 book.translate.xml:8529
+#, fuzzy
 msgid "<varname>PATCHFILES</varname>"
-msgstr ""
+msgstr "<varname>PATCHFILES</varname>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4495
@@ -8111,6 +8450,11 @@ msgid ""
 "URL of the directory that contains them (the format is the same as "
 "<varname>MASTER_SITES</varname>)."
 msgstr ""
+"Si el puerto requiere algunos parches adicionales que están disponibles "
+"<acronym>FTP</acronym> o <acronym>HTTP</acronym>, conjunto "
+"<varname>PATCHFILES</varname> a los nombres de los archivos y "
+"<varname>PATCH_SITES</varname> a la URL del directorio que los contiene (el "
+"formato es el mismo que <varname>MASTER_SITES</varname>)."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4502
@@ -8121,6 +8465,12 @@ msgid ""
 "pathnames in the patch have an extra <literal>foozolix-1.0/</literal> in "
 "front of the filenames, then set <literal>PATCH_DIST_STRIP=-p1</literal>."
 msgstr ""
+"Si el parche no es relativo a la parte superior del árbol de origen (es "
+"decir, <varname>WRKSRC</varname>) porque contiene algunos nombres de ruta "
+"adicionales, establezca <varname>PATCH_DIST_STRIP</varname> en consecuencia. "
+"Por ejemplo, si todas las rutas del parche tienen un extra "
+"<literal>foozolix-1.0/</literal> delante de los nombres de archivo, luego "
+"establezca <literal>PATCH_DIST_STRIP=-p1</literal>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4510
@@ -8129,6 +8479,10 @@ msgid ""
 "automatically if the filenames end with <filename>.Z</filename>, <filename>."
 "gz</filename>, <filename>.bz2</filename> or <filename>.xz</filename>."
 msgstr ""
+"No se preocupe si los parches están comprimidos; se descomprimirán "
+"automáticamente si los nombres de archivo terminan con <filename>.Z</"
+"filename>, <filename>.gz</filename>, <filename>.bz2</filename> o <filename>."
+"xz</filename>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4515
@@ -8142,6 +8496,15 @@ msgid ""
 "<emphasis>not</emphasis> copy patch files into <filename>${PATCHDIR}</"
 "filename>. That directory may not be writable."
 msgstr ""
+"Si el parche se distribuye con otros archivos, como documentación, en un "
+"tarball comprimido, usando <varname>PATCHFILES</varname> no es posible. Si "
+"ese es el caso, agregue el nombre y la ubicación del parche tarball a "
+"<varname>DISTFILES</varname> y <varname>MASTER_SITES</varname>. Entonces, "
+"usa <varname>EXTRA_PATCHES</varname> para apuntar a esos archivos y "
+"<filename>bsd.port.mk</filename> los aplicará automáticamente. En "
+"particular, haz <emphasis>no</emphasis>copiar archivos de parche en  "
+"<filename>${PATCHDIR}</filename>. ese directorio puede no tener permisos de "
+"escritura."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:4529
@@ -8230,6 +8593,12 @@ msgid ""
 "Here, <literal>n</literal> can be any word containing <literal>[0-9a-zA-Z_]</"
 "literal> and denote a group designation. For example:"
 msgstr ""
+"Primero un poco de historia. OpenBSD tiene una característica interesante "
+"dentro <varname>DISTFILES</varname> y <varname>PATCHFILES</varname> que "
+"permite que los archivos y parches se corrijan con <literal>:n</literal> "
+"identificadores. Aquí, <literal>n</literal> puede ser cualquier palabra que "
+"contenga <literal>[0-9a-zA-Z_]</literal> y denotar una designación de grupo. "
+"Por ejemplo:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:4573
@@ -8245,6 +8614,10 @@ msgid ""
 "<varname>MASTER_SITES</varname> and <filename>beta</filename> with "
 "<varname>MASTER_SITES1</varname>."
 msgstr ""
+"En OpenBSD, archivo de distribución <filename>alpha</filename> se asociará "
+"con la variable <varname>MASTER_SITES0</varname> En lugar de nuestro común "
+"<varname>MASTER_SITES</varname> y <filename>beta</filename> con "
+"<varname>MASTER_SITES1</varname>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4582
@@ -8265,6 +8638,13 @@ msgid ""
 "It would be such a waste to check all of them if the maintainer knew this "
 "beforehand, would it not? Not a good start for that lovely weekend!"
 msgstr ""
+"Solo imagina 2 archivos en <varname>DISTFILES</varname> y 20 sitios en "
+"<varname>MASTER_SITES</varname>, los sitios lentos como el infierno donde "
+"<filename>beta</filename> es llevado por todos los sitios en "
+"<varname>MASTER_SITES</varname>, y <filename>alpha</filename> solo se puede "
+"encontrar en el sitio 20. Sería un desperdicio revisarlos todos si el "
+"encargado del mantenimiento supiera esto de antemano, ¿no es así? ¡No es un "
+"buen comienzo para ese hermoso fin de semana!"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4594
@@ -8274,6 +8654,10 @@ msgid ""
 "meister</quote> would appreciate the relief to network strain that this "
 "would bring."
 msgstr ""
+"Ahora que tienes la idea, imagina más <varname>DISTFILES</varname> y más "
+"<varname>MASTER_SITES</varname>. Seguramente nuestro <quote>distfiles survey "
+"meister</quote> agradecería el alivio a la tensión de la red que esto "
+"traería."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4600
@@ -8294,6 +8678,13 @@ msgid ""
 "names containing dashes, <citerefentry><refentrytitle>sh</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> is not."
 msgstr ""
+"Los nombres de grupo no pueden tener guiones en ellos. (<literal>-</literal>)"
+", de hecho, no pueden tener ningún personaje fuera del "
+"<literal>[a-zA-Z0-9_]</literal> rango. Esto es porque, mientras "
+"<citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> está bien con nombres de variables que contengan guiones, "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> no es."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:4613
@@ -8343,6 +8734,10 @@ msgid ""
 "<varname>MASTER_SITES</varname> is then followed by a colon, and the group "
 "that indicates which distribution files are downloaded from this site."
 msgstr ""
+"Para respaldar esto, cada entrada en <varname>DISTFILES</varname> puede ir "
+"seguido de dos puntos y un <quote>Nombre del grupo</quote>. Cada sitio "
+"listado en <varname>MASTER_SITES</varname> es luego seguido de dos puntos y "
+"el grupo que indica qué archivos de distribución se descargan de este sitio."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:4638
@@ -8353,6 +8748,11 @@ msgid ""
 "<filename>Makefile</filename> would include lines like <xref linkend=\"ports-"
 "master-sites-n-example-simple-use-one-file-per-site\"/>."
 msgstr ""
+"Por ejemplo, considere una aplicación con la fuente dividida en dos "
+"partes,<filename>source1.tar.gz</filename> y <filename>source2.tar.gz</"
+"filename>, que debe descargarse de dos sitios diferentes. El puerto "
+"<filename>Makefile</filename> incluiría líneas como <xref linkend=\"ports-"
+"master-sites-n-example-simple-use-one-file-per-site\"/>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:4646
@@ -8386,6 +8786,12 @@ msgid ""
 "<xref linkend=\"ports-master-sites-n-example-simple-use-more-than-one-file-"
 "per-site\"/>."
 msgstr ""
+"Varios archivos de distribución pueden tener el mismo grupo. Continuando con "
+"el ejemplo anterior, suponga que hay un tercer archivo dist, "
+"<filename>source3.tar.gz</filename>, que se descarga de <systemitem>ftp."
+"example2.com</systemitem>. El <filename>Makefile</filename> entonces se "
+"escribiría como <xref linkend=\"ports-master-sites-n-example-simple-use-more-"
+"than-one-file-per-site\"/>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:4665
@@ -8438,6 +8844,11 @@ msgid ""
 "string but we will limit it to <literal>[a-zA-Z_][0-9a-zA-Z_]+</literal> for "
 "now."
 msgstr ""
+"Los elementos pueden fijarse con <literal>:<replaceable>n</replaceable></"
+"literal> dónde <replaceable>n</replaceable> es <literal>[^:,]+</literal>, es "
+"decir, <replaceable>n</replaceable> conceptualmente podría ser cualquier "
+"cadena alfanumérica pero la limitaremos a <literal>[a-zA-Z_][0-9a-zA-Z_]+</"
+"literal>  por ahora."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4696
@@ -8458,6 +8869,13 @@ msgid ""
 "<literal>DEFAULT</literal> is a special purpose word (check item <xref "
 "linkend=\"porting-master-sites-n-DEFAULT-group\"/>)."
 msgstr ""
+"Sin embargo, estas palabras no se pueden utilizar con fines de posfijo ya "
+"que tienen un significado especial: <literal>default</literal>, "
+"<literal>todo</literal> y <literal>TODO</literal> (se utilizan internamente "
+"en el artículo <xref linkend=\"porting-master-sites-n-what-changes-in-port-"
+"targets\"/>). además, <literal>DEFAULT</literal> es una palabra de propósito "
+"especial (marque el elemento <xref linkend=\"porting-master-sites-n-DEFAULT-"
+"group\"/>)."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4710
@@ -8571,6 +8989,10 @@ msgid ""
 "<varname>MASTER_SORT_AWK</varname>. All groups within <varname>MASTER_SITES</"
 "varname> and <varname>PATCH_SITES</varname> are sorted as well."
 msgstr ""
+"Todos los sitios dentro de un grupo determinado se ordenan según "
+"<varname>MASTER_SORT_AWK</varname>. Todos los grupos dentro "
+"<varname>MASTER_SITES</varname> y <varname>PATCH_SITES</varname> también se "
+"ordenan."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4773
@@ -8580,6 +9002,11 @@ msgid ""
 "varname>, <varname>PATCH_SITE_SUBDIR</varname>, <varname>DISTFILES</"
 "varname>, and <varname>PATCHFILES</varname> according to this syntax:"
 msgstr ""
+"La semántica de grupo se puede utilizar en cualquiera de las variables "
+"<varname>MASTER_SITES</varname>, <varname>PATCH_SITES</varname>, "
+"<varname>MASTER_SITE_SUBDIR</varname>, <varname>PATCH_SITE_SUBDIR</varname>, "
+"<varname>DISTFILES</varname>, y <varname>PATCHFILES</varname> de acuerdo con "
+"esta sintaxis:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4784
@@ -8604,6 +9031,25 @@ msgid ""
 "\"ports-master-sites-n-example-detailed-use-complete-example-master-sites\"/"
 ">."
 msgstr ""
+"todos  <varname>MASTER_SITES</varname>, <varname>PATCH_SITES</varname>, "
+"<varname>MASTER_SITE_SUBDIR</varname> y <varname>PATCH_SITE_SUBDIR</varname> "
+"los elementos deben terminar con la barra inclinada <literal>/</literal> "
+"personaje. Si algún elemento pertenece a algún grupo, el sufijo de grupo "
+"<literal>:<replaceable>n</replaceable></literal> debe venir justo después "
+"del terminador <literal>/</literal>. El <literal>MASTER_SITES:n</literal> El "
+"mecanismo se basa en la existencia del terminador. <literal>/</literal> para "
+"evitar elementos confusos donde un <literal>:n</literal> es una parte válida "
+"del elemento con ocurrencias donde <literal>:n</literal> denota grupo "
+"<literal>n</literal>. Por motivos de compatibilidad, dado que <literal>/</"
+"literal> Terminator no era necesario antes en ambos "
+"<varname>MASTER_SITE_SUBDIR</varname> y <varname>PATCH_SITE_SUBDIR</varname> "
+"elementos, del carácter inmediatamente precedente sufijo no es un "
+"<literal>/</literal> luego <literal>:n</literal> se considerará una parte "
+"válida del elemento en lugar de un sufijo de grupo, incluso si un elemento "
+"tiene un sufijo <literal>:n</literal>. Ver ambos <xref linkend=\"ports-"
+"master-sites-n-example-detailed-use-master-site-subdir\"/> y <xref linkend"
+"=\"ports-master-sites-n-example-detailed-use-complete-example-master-sites\""
+"/>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:4814
@@ -8628,7 +9074,7 @@ msgstr "Directorios dentro del grupo <literal>DEFAULT</literal> &gt;- old:n"
 #. (itstool) path: listitem/para
 #: book.translate.xml:4828
 msgid "Directories within group <literal>NEW</literal> -&gt; new"
-msgstr ""
+msgstr "Directorios dentro del grupo <literal>NEW</literal> -&gt; nuevo"
 
 #. (itstool) path: example/title
 #: book.translate.xml:4836
@@ -8891,6 +9337,12 @@ msgid ""
 "the aforementioned syntax rules, especially as shown in item <xref linkend="
 "\"porting-master-sites-n-group-semantics\"/>."
 msgstr ""
+"Todos los puertos actuales siguen siendo los mismos. los "
+"<literal>MASTER_SITES:n</literal> El código de característica solo se activa "
+"si hay elementos con el sufijo <literal>:<replaceable>n</replaceable></"
+"literal> elementos similares de acuerdo con las reglas de sintaxis "
+"mencionadas anteriormente, especialmente como se muestra en el elemento "
+"<xref linkend=\"porting-master-sites-n-group-semantics\"/>."
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:5082
@@ -8933,6 +9385,10 @@ msgid ""
 "obvious exceptions of <_:buildtarget-6/>, <_:buildtarget-7/>, <_:"
 "buildtarget-8/> and <_:buildtarget-9/>."
 msgstr ""
+"Los destinos del puerto siguen siendo los mismos: <_:buildtarget-1/>, <_:"
+"buildtarget-2/>, <_:buildtarget-3/>, <_:buildtarget-4/>, <_:buildtarget-5/>, "
+"etc. Con las obvias excepciones de <_:buildtarget-6/>, <_:buildtarget-7/>, "
+"<_:buildtarget-8/> y <_:buildtarget-9/>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5094
@@ -8945,6 +9401,13 @@ msgid ""
 "varname>. Check <xref linkend=\"ports-master-sites-n-example-detailed-use-"
 "complete-example-master-sites\"/>."
 msgstr ""
+"<_:buildtarget-1/>: despliega la nueva agrupación postfixed "
+"<varname>DISTFILES</varname> y <varname>PATCHFILES</varname> con sus "
+"elementos de grupo coincidentes dentro de ambos <varname>MASTER_SITES</"
+"varname> y <varname>PATCH_SITES</varname> que utilizan elementos de grupo "
+"coincidentes en ambos <varname>MASTER_SITE_SUBDIR</varname> y "
+"<varname>PATCH_SITE_SUBDIR</varname>. verificar <xref linkend=\"ports-master-"
+"sites-n-example-detailed-use-complete-example-master-sites\"/>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5107
@@ -8952,11 +9415,14 @@ msgid ""
 "<_:buildtarget-1/>: works like old <_:buildtarget-2/> with the exception "
 "that it groups just like <_:buildtarget-3/>."
 msgstr ""
+"<_:buildtarget-1/>: funciona como viejo <_:buildtarget-2/> con la excepción "
+"de que se agrupa como <_:buildtarget-3/>."
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:5119
+#, fuzzy
 msgid "master-sites-default"
-msgstr ""
+msgstr "master-sites-default"
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:5120
@@ -8972,6 +9438,10 @@ msgid ""
 "fact, they execute targets <_:buildtarget-3/> and <_:buildtarget-4/> "
 "respectively."
 msgstr ""
+"<_:buildtarget-1/> y <_:buildtarget-2/>: (incompatible con versiones "
+"anteriores) solo devuelve los elementos del grupo <literal>DEFECTO</literal>;"
+" De hecho, ellos ejecutan objetivos. <_:buildtarget-3/> y <_:buildtarget-4/> "
+"respectivamente."
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:5124 book.translate.xml:5162 book.translate.xml:5174
