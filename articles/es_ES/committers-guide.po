@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-11-16 21:26-0300\n"
-"PO-Revision-Date: 2020-12-14 01:04+0000\n"
+"PO-Revision-Date: 2020-12-15 06:04+0000\n"
 "Last-Translator: Aaron H Farías Martinez <timido@ubuntu.com>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_committers-guide/es/>\n"
@@ -4355,6 +4355,10 @@ msgid ""
 "<literal><replaceable>yourusername</replaceable>/mail</literal> principal is "
 "preferred, as it is only valid for authenticating to mail resources."
 msgstr ""
+"para la autenticación, puede utilizar su nombre de usuario y contraseña de "
+"FreeBSD Kerberos (consulte <xref linkend=\"kerberos-ldap\"/>). El "
+"<literal><replaceable>yourusername</replaceable>mail</literal> Se prefiere "
+"principal, ya que solo es válido para autenticarse en los recursos de correo."
 
 #. (itstool) path: note/para
 #: article.translate.xml:2285
@@ -4377,6 +4381,9 @@ msgid ""
 "replaceable>@FreeBSD.org</literal>. If you are authenticated as one user, "
 "you are not permitted to send mail from another."
 msgstr ""
+"Solo aceptará correo de "
+"<literal><replaceable>yourusername</replaceable>@FreeBSD.org</literal>. Si "
+"está autenticado como un usuario, no se le permite enviar correo desde otro."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2303
@@ -4384,6 +4391,8 @@ msgid ""
 "A header will be appended with the SASL username: (<literal>Authenticated "
 "sender: <replaceable>username</replaceable></literal>)."
 msgstr ""
+"Se agregará un encabezado con el nombre de usuario SASL: (<literal>Remitente "
+"autenticado:<replaceable>usuario</replaceable></literal>)."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2308
@@ -4423,6 +4432,10 @@ msgid ""
 "should be forwarded to the FreeBSD.org servers, add this to your "
 "<filename>main.cf</filename>:"
 msgstr ""
+"Para decirle a una instancia de Postfix local que cualquier cosa desde "
+"<literal><replaceable>usuario</replaceable>@FreeBSD.org</literal> debe ser "
+"reenviado a los servidores de FreeBSD.org, agregue esto a su <filename>main."
+"cf</filename>:"
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2330
@@ -4446,12 +4459,15 @@ msgid ""
 "Create <filename>/usr/local/etc/postfix/relayhost_maps</filename> with the "
 "following content:"
 msgstr ""
+"Crear <filename>/usr/local/etc/postfix/relayhost_maps</filename> con el "
+"siguiente contenido:"
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2340
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<replaceable>yourusername</replaceable>@FreeBSD.org  [smtp.freebsd.org]:587"
 msgstr ""
+"<replaceable>yourusername</replaceable>@FreeBSD.org  [smtp.freebsd.org]:587"
 
 #. (itstool) path: example/para
 #: article.translate.xml:2342
@@ -4459,12 +4475,16 @@ msgid ""
 "Create <filename>/usr/local/etc/postfix/sasl_passwd</filename> with the "
 "following content:"
 msgstr ""
+"Crear <filename>/usr/local/etc/postfix/sasl_passwd</filename> con el "
+"siguiente contenido:"
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2346
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "[smtp.freebsd.org]:587          <replaceable>yourusername</replaceable>:<replaceable>yourpassword</replaceable>"
 msgstr ""
+"[smtp.freebsd.org]:587          <replaceable>yourusername</replaceable>:<repl"
+"aceable>yourpassword</replaceable>"
 
 #. (itstool) path: example/para
 #: article.translate.xml:2348
@@ -4473,6 +4493,9 @@ msgid ""
 "from sending e-mails from your address. To achieve this, add this to your "
 "<filename>main.cf</filename>:"
 msgstr ""
+"Si otras personas utilizan el servidor de correo electrónico, es posible que "
+"desee evitar que envíen correos electrónicos desde su dirección. Para lograr "
+"esto, agregue esto a su <filename>main.cf</filename>:"
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2353
@@ -4490,12 +4513,16 @@ msgid ""
 "Create <filename>/usr/local/etc/postfix/sender_login_maps</filename> with "
 "the following content:"
 msgstr ""
+"Crear <filename>/usr/local/etc/postfix/sender_login_maps</filename> con el "
+"siguiente contenido:"
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2360
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<replaceable>yourusername</replaceable>@FreeBSD.org <replaceable>yourlocalusername</replaceable>"
 msgstr ""
+"<replaceable>yourusername</replaceable>@FreeBSD.org "
+"<replaceable>yourlocalusername</replaceable>"
 
 #. (itstool) path: example/para
 #: article.translate.xml:2362
@@ -4504,6 +4531,9 @@ msgid ""
 "acronym> username used to connect to the local instance of "
 "<application>Postfix</application>."
 msgstr ""
+"Donde <replaceable>yourlocalusername</replaceable> es el <acronym>SASL</"
+"acronym> nombre de usuario utilizado para conectarse a la instancia local de "
+"<application>Postfix</application>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:2372
@@ -4589,11 +4619,18 @@ msgid ""
 "completion. If the committer is unable to satisfy their mentor of readiness "
 "by a year and a half their commit bit may be converted to project membership."
 msgstr ""
+"Los nuevos comprometidos deben tener como objetivo completar suficientes "
+"compromisos para que su mentor se sienta cómodo librándolos de la tutoría "
+"durante el primer año. Si todavía están bajo tutoría, el organismo de "
+"gestión apropiado (core, doceng o portmgr) debe intentar asegurarse de que "
+"no haya barreras que impidan la finalización. Si el confirmador no puede "
+"satisfacer a su mentor de preparación por un año y medio, su bit de "
+"compromiso puede convertirse en membresía del proyecto."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:2426
 msgid "Pre-Commit Review"
-msgstr ""
+msgstr "Revisión previa al compromiso"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2428
@@ -4605,6 +4642,12 @@ msgid ""
 "review policies, but these guidelines generally apply to commits requiring "
 "review:"
 msgstr ""
+"La revisión de código es una forma de aumentar la calidad del software. Las "
+"siguientes pautas se aplican a los compromisos con <literal>head</literal> "
+"(-CURRENT) rama de la <literal>src</literal> repositorio. Otras ramas y "
+"el<literal>ports</literal> y <literal>docs</literal> Los árboles tienen sus "
+"propias políticas de revisión, pero estas pautas generalmente se aplican a "
+"los compromisos que requieren revisión:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2437
@@ -4622,6 +4665,10 @@ msgid ""
 "in <application>Phabricator</application>, or by another mechanism. Where "
 "possible, reviews should be public."
 msgstr ""
+"Las revisiones pueden realizarse por correo electrónico, en "
+"<application>Bugzilla</application>, en<application>Phabricator</"
+"application>, o por otro mecanismo. Siempre que sea posible, las revisiones "
+"deben ser públicas."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2449
@@ -4641,6 +4688,11 @@ msgid ""
 "So long as it is explicit, this can take whatever form makes sense for the "
 "review method."
 msgstr ""
+"La revisión del código puede ser un proceso iterativo, que continúa hasta "
+"que el parche está listo para ser comprometido. Específicamente, una vez que "
+"se envía un parche para su revisión, debe recibir una <quote>looks good</"
+"quote> antes de que se comprometa. Siempre que sea explícito, esto puede "
+"tomar cualquier forma que tenga sentido para el método de revisión."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2464
@@ -4675,6 +4727,10 @@ msgid ""
 "urgent, the common courtesy ping rate is one week. Remember that you are "
 "asking for valuable time from other professional developers."
 msgstr ""
+"Haga ping al parche. Si es urgente, proporcione las razones por las que es "
+"importante para usted obtener este parche y hacer ping cada dos días. Si no "
+"es urgente, la tasa de ping de cortesía común es de una semana. Recuerde que "
+"está pidiendo un tiempo valioso a otros desarrolladores profesionales."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2489
@@ -4826,7 +4882,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: article.translate.xml:2564
 msgid "<literal>Reviewed by:</literal>"
-msgstr ""
+msgstr "<literal>Revisado por:</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2565
@@ -4845,7 +4901,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: article.translate.xml:2574
 msgid "<literal>Approved by:</literal>"
-msgstr ""
+msgstr "<literal>Aprobado por:</literal>"
 
 #. (itstool) path: entry/para
 #: article.translate.xml:2575
@@ -4857,6 +4913,13 @@ msgid ""
 "release all commits <emphasis>must</emphasis> be approved by the release "
 "engineering team."
 msgstr ""
+"El nombre y la dirección de correo electrónico de la persona o personas que "
+"aprobaron el cambio; para los desarrolladores, solo el nombre de usuario en "
+"el clúster de FreeBSD. Es habitual obtener una aprobación previa para una "
+"confirmación si se trata de un área del árbol en la que normalmente no se "
+"compromete. Además, durante el período previo a una nueva versión, todas las "
+"confirmaciones <emphasis>debe</emphasis> ser aprobado por el equipo de "
+"ingeniería de versiones."
 
 #. (itstool) path: entry/para
 #: article.translate.xml:2584
@@ -4873,6 +4936,8 @@ msgstr ""
 #, no-wrap
 msgid "Approved by: <userinput><replaceable>username-of-mentor</replaceable> <literal>(mentor)</literal></userinput>"
 msgstr ""
+"Aprobado por: <userinput><replaceable>nombre de usuario del "
+"mentor</replaceable>.<literal>(mentor)</literal></userinput>"
 
 #. (itstool) path: entry/para
 #: article.translate.xml:2590
@@ -4889,11 +4954,13 @@ msgstr ""
 #, no-wrap
 msgid "Approved by: <userinput><literal>re</literal> (<replaceable>username</replaceable>)</userinput>"
 msgstr ""
+"Aprobado por: <userinput><literal>re</literal> "
+"(<replaceable>username</replaceable>)</userinput>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2598
 msgid "<literal>Obtained from:</literal>"
-msgstr ""
+msgstr "<literal>Obtenido de:</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2599
@@ -4907,7 +4974,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: article.translate.xml:2605
 msgid "<literal>Sponsored by:</literal>"
-msgstr ""
+msgstr "<literal>Patrocinado por:</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2606
@@ -4922,11 +4989,21 @@ msgid ""
 "Cindy's work. Other authors were either not sponsored or chose not to list "
 "sponsorship."
 msgstr ""
+"Organizaciones patrocinadoras de este cambio, si las hubiera. Separe varias "
+"organizaciones con comas. Si solo se patrocinó una parte del trabajo, o se "
+"proporcionaron diferentes cantidades de patrocinio a diferentes autores, dé "
+"el crédito correspondiente entre paréntesis después del nombre de cada "
+"patrocinador. Por ejemplo, <literal>Example.com (alice, refactorización de "
+"código), Wormulon (bob), Momcorp (cindy)</literal> muestra que Alice fue "
+"patrocinada por Example.com para hacer la refactorización de código, "
+"mientras que Wormulon patrocinó el trabajo de Bob y Momcorp patrocinó el "
+"trabajo de Cindy. Otros autores no recibieron patrocinio o optaron por no "
+"incluir el patrocinio."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2621
 msgid "<literal>MFC after:</literal>"
-msgstr ""
+msgstr "<literal>MFC después:</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2622
@@ -4935,11 +5012,15 @@ msgid ""
 "specify the number of days, weeks, or months after which an <acronym>MFC</"
 "acronym> is planned."
 msgstr ""
+"Para recibir un recordatorio por correo electrónico <acronym>MFC</acronym> "
+"en una fecha posterior, especifique el número de días, semanas o meses "
+"después del cual <acronym>MFC</acronym> es planeado."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2629
+#, fuzzy
 msgid "<literal>MFC to:</literal>"
-msgstr ""
+msgstr "<literal>MFC to:</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2630
@@ -4947,11 +5028,13 @@ msgid ""
 "If the commit should be merged to a subset of stable branches, specify the "
 "branch names."
 msgstr ""
+"Si la confirmación debe fusionarse con un subconjunto de ramas estables, "
+"especifique los nombres de las ramas."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2635
 msgid "<literal>MFC with:</literal>"
-msgstr ""
+msgstr "<literal>MFC con:</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2636
@@ -4960,11 +5043,15 @@ msgid ""
 "<acronym>MFC</acronym> commit (for example, where this commit corrects a bug "
 "in the previous change), specify the corresponding revision number."
 msgstr ""
+"Si el compromiso debe fusionarse con uno anterior en un solo <acronym>MFC</"
+"acronym> commit (por ejemplo, donde este commit corrige un error en el "
+"cambio anterior), especifique el número de revisión correspondiente."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2644
+#, fuzzy
 msgid "<literal>Relnotes:</literal>"
-msgstr ""
+msgstr "<literal>Relnotes:</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2645
@@ -4972,11 +5059,13 @@ msgid ""
 "If the change is a candidate for inclusion in the release notes for the next "
 "release from the branch, set to <literal>yes</literal>."
 msgstr ""
+"Si el cambio es un candidato para su inclusión en las notas de la versión "
+"para la próxima versión de la rama, establézcalo en <literal>si</literal>."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2651
 msgid "<literal>Security:</literal>"
-msgstr ""
+msgstr "<literal>Seguridad:</literal>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2652
@@ -5005,6 +5094,14 @@ msgid ""
 "<literal>Sponsored by:</literal> line for this as that is meant for "
 "organizations sponsoring certain features or developers working on them."
 msgstr ""
+"La descripción del evento en el que se realizó esta confirmación. Si se "
+"trata de un evento recurrente, agregue el año o incluso el mes. Por ejemplo, "
+"esto podría ser <literal>FooBSDcon 2019</literal>. la idea detrás de esta "
+"línea es dar reconocimiento a conferencias, tertulias y otros tipos de "
+"encuentros y demostrar que es útil tenerlos. No utilice "
+"el<literal>Patrocinado por:</literal> para esto, ya que está destinado a "
+"organizaciones que patrocinan ciertas funciones o desarrolladores que "
+"trabajan en ellas."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:2673
@@ -5018,11 +5115,14 @@ msgid ""
 "line</emphasis>. For example: <literal>https://reviews.freebsd.org/D1708</"
 "literal>."
 msgstr ""
+"La URL completa de la revisión de Phabricator. Esta línea <emphasis>debe ser "
+"la última línea</emphasis>. Por ejemplo:<literal>https://reviews.freebsd.org/"
+"D1708</literal>."
 
 #. (itstool) path: example/title
 #: article.translate.xml:2684
 msgid "Commit Log for a Commit Based on a PR"
-msgstr ""
+msgstr "Registro de compromiso para un compromiso basado en un PR"
 
 #. (itstool) path: example/para
 #: article.translate.xml:2686
@@ -5030,6 +5130,9 @@ msgid ""
 "The commit is based on a patch from a PR submitted by John Smith. The commit "
 "message <quote>PR</quote> and <quote>Submitted by</quote> fields are filled.."
 msgstr ""
+"La confirmación se basa en un parche de un PR enviado por John Smith. El "
+"mensaje de confirmación <quote>PR</quote> y <quote>Presentado por</quote> "
+"los campos están llenos .."
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2690
@@ -5048,7 +5151,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: article.translate.xml:2697
 msgid "Commit Log for a Commit Needing Review"
-msgstr ""
+msgstr "Confirmar registro para una confirmación que necesita revisión"
 
 #. (itstool) path: example/para
 #: article.translate.xml:2699
@@ -5057,6 +5160,9 @@ msgid ""
 "appropriate mailing list (in this case, <literal>freebsd-arch</literal>) and "
 "the changes have been approved."
 msgstr ""
+"Se está cambiando el sistema de memoria virtual. Después de publicar los "
+"parches en la lista de correo correspondiente (en este caso, <literal"
+">freebsd-arch</literal>) y los cambios han sido aprobados."
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2704
@@ -5073,7 +5179,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: article.translate.xml:2710
 msgid "Commit Log for a Commit Needing Approval"
-msgstr ""
+msgstr "Registro de compromiso para un compromiso que necesita aprobación"
 
 #. (itstool) path: example/para
 #: article.translate.xml:2712
@@ -5081,6 +5187,8 @@ msgid ""
 "Commit a port, after working with the listed MAINTAINER, who said to go "
 "ahead and commit."
 msgstr ""
+"Confirmar un puerto, después de trabajar con el MAINTAINER enumerado, quien "
+"dijo seguir adelante y comprometerse."
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2716
@@ -5100,16 +5208,18 @@ msgid ""
 "Where <replaceable>abc</replaceable> is the account name of the person who "
 "approved."
 msgstr ""
+"Donde <replaceable>abc</replaceable> es el nombre de la cuenta de la persona "
+"que aprobó."
 
 #. (itstool) path: example/title
 #: article.translate.xml:2725
 msgid "Commit Log for a Commit Bringing in Code from OpenBSD"
-msgstr ""
+msgstr "Commit Log para una confirmación que trae código desde OpenBSD"
 
 #. (itstool) path: example/para
 #: article.translate.xml:2728
 msgid "Committing some code based on work done in the OpenBSD project."
-msgstr ""
+msgstr "Confirmar código basado en el trabajo realizado en el proyecto OpenBSD."
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2731
@@ -5129,6 +5239,8 @@ msgid ""
 "Commit Log for a Change to FreeBSD-CURRENT with a Planned Commit to FreeBSD-"
 "STABLE to Follow at a Later Date."
 msgstr ""
+"Commit Log para un cambio en FreeBSD-CURRENT con un compromiso planificado "
+"en FreeBSD-STABLE para seguir en una fecha posterior."
 
 #. (itstool) path: example/para
 #: article.translate.xml:2740
@@ -5136,6 +5248,8 @@ msgid ""
 "Committing some code which will be merged from FreeBSD-CURRENT into the "
 "FreeBSD-STABLE branch after two weeks."
 msgstr ""
+"Confirmando un código que se fusionará de FreeBSD-CURRENT en la rama FreeBSD-"
+"STABLE después de dos semanas."
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2744
@@ -5158,6 +5272,11 @@ msgid ""
 "<literal>week</literal>, <literal>weeks</literal>, <literal>month</literal>, "
 "<literal>months</literal>."
 msgstr ""
+"Donde <replaceable>2</replaceable> es el número de días, semanas o meses "
+"después de los cuales <acronym>MFC</acronym> esta planeado. "
+"los<replaceable>semanas</replaceable> la opción puede ser<literal>dia</litera"
+"l>,<literal>dias</literal>,<literal>semana</literal>,<literal>semanas</litera"
+"l>,<literal>mes</literal>,<literal>meses</literal>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2756
@@ -5174,17 +5293,24 @@ msgid ""
 "developer opts to <acronym>MFC</acronym> after one month to allow adequate "
 "testing."
 msgstr ""
+"Considere la situación en la que un usuario ha enviado un PR que contiene "
+"código del proyecto NetBSD. Al mirar el PR, el desarrollador ve que no es un "
+"área del árbol en el que normalmente trabajan, por lo que el cambio lo "
+"revisa el <literal>arch</literal> lista de correo. Dado que el cambio es "
+"complejo, el desarrollador opta por <acronym>MFC</acronym> después de un mes "
+"para permitir las pruebas adecuadas."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2766
 msgid ""
 "The extra information to include in the commit would look something like"
 msgstr ""
+"La información adicional para incluir en la confirmación sería algo así como"
 
 #. (itstool) path: example/title
 #: article.translate.xml:2770
 msgid "Example Combined Commit Log"
-msgstr ""
+msgstr "Ejemplo de registro de confirmación combinado"
 
 #. (itstool) path: example/programlisting
 #: article.translate.xml:2772
@@ -5306,6 +5432,12 @@ msgid ""
 "consider removing it. In fact, please consider using the above license for "
 "your code."
 msgstr ""
+"El proyecto FreeBSD desaconseja rotundamente la denominada \"cláusula "
+"publicitaria\" en el nuevo código. Debido a la gran cantidad de "
+"contribuyentes al proyecto FreeBSD, cumplir con esta cláusula para muchos "
+"proveedores comerciales se ha vuelto difícil. Si tiene código en el árbol "
+"con la cláusula publicitaria, considere eliminarlo. De hecho, considere usar "
+"la licencia anterior para su código."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2829
@@ -5317,6 +5449,12 @@ msgid ""
 "causes to those wishing to utilize this code, typically from unintended "
 "consequences from a poorly worded license."
 msgstr ""
+"El proyecto FreeBSD desaconseja licencias completamente nuevas y variaciones "
+"de las licencias estándar. Las nuevas licencias requieren la aprobación del "
+"Core Team <email>core@FreeBSD.org</email> residir en el repositorio "
+"principal. Cuantas más licencias diferentes se utilicen en el árbol, más "
+"problemas ocasionará a quienes deseen utilizar este código, por lo general "
+"debido a las consecuencias no deseadas de una licencia mal redactada."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2837
@@ -5328,6 +5466,13 @@ msgid ""
 "similar to the BSD license. GPL, APSL, CDDL, etc, licensed software must not "
 "be compiled into GENERIC."
 msgstr ""
+"La política del proyecto dicta que el código de algunas licencias que no "
+"sean BSD debe colocarse solo en secciones específicas del repositorio y, en "
+"algunos casos, la compilación debe ser condicional o incluso deshabilitada "
+"de forma predeterminada. Por ejemplo, el núcleo GENÉRICO debe compilarse "
+"únicamente bajo licencias idénticas o sustancialmente similares a la "
+"licencia BSD. GPL, APSL, CDDL, etc., el software con licencia no debe "
+"compilarse en GENERIC."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2845
@@ -5337,11 +5482,16 @@ msgid ""
 "intellectual property has serious consequences. Any questions or concerns "
 "should immediately be brought to the attention of the core team."
 msgstr ""
+"Se recuerda a los desarrolladores que en el código abierto, conseguir \"abrir"
+"\" correctamente es tan importante como conseguir \"fuente\" correcta, ya "
+"que el manejo inadecuado de la propiedad intelectual tiene graves "
+"consecuencias. Cualquier pregunta o inquietud debe comunicarse "
+"inmediatamente con el equipo central."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:2853
 msgid "Keeping Track of Licenses Granted to the FreeBSD Project"
-msgstr ""
+msgstr "Seguimiento de las licencias concedidas al proyecto FreeBSD"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2856
@@ -5354,6 +5504,13 @@ msgid ""
 "a 2-clause BSD license rather than the regular Open Font License he normally "
 "uses."
 msgstr ""
+"Existen varios software o datos en los repositorios donde el proyecto "
+"FreeBSD ha recibido una licencia especial para poder usarlos. Un ejemplo son "
+"las fuentes Terminus para su uso con "
+"<citerefentry><refentrytitle>vt</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry>. Aquí, el autor Dimitar Zhekov nos ha permitido usar la fuente "
+"\"Terminus BSD Console\" bajo una licencia BSD de 2 cláusulas en lugar de la "
+"licencia de fuente abierta regular que usa normalmente."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2864
@@ -5365,12 +5522,21 @@ msgid ""
 "developers involved in arranging such a license grant, please send details "
 "to the Core Team <email>core@FreeBSD.org</email> including:"
 msgstr ""
+"Es evidente que es sensato mantener un registro de dichas concesiones de "
+"licencias. Con ese fin, el Core Team <email>core@FreeBSD.org</email> ha "
+"decidido mantener un archivo de ellos. Siempre que se conceda una licencia "
+"especial al proyecto FreeBSD, requerimos el equipo central "
+"<email>core@FreeBSD.org</email> ser notificado. Cualquier desarrollador "
+"involucrado en la organización de dicha concesión de licencia, envíe los "
+"detalles al equipo central. <email>core@FreeBSD.org</email>incluyendo:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2873
 msgid ""
 "Contact details for people or organizations granting the special license."
 msgstr ""
+"Datos de contacto de personas u organizaciones que otorgan la licencia "
+"especial."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2878
@@ -5379,6 +5545,9 @@ msgid ""
 "grant including the revision numbers where any specially licensed material "
 "was committed."
 msgstr ""
+"Qué archivos, directorios, etc. de los repositorios están cubiertos por la "
+"concesión de licencia, incluidos los números de revisión donde se "
+"comprometió cualquier material con licencia especial."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2884
@@ -5457,6 +5626,16 @@ msgid ""
 "ports, contact the listed <varname>MAINTAINER</varname> in the "
 "<filename>Makefile</filename>."
 msgstr ""
+"Cuando trabaje directamente en su propio código o en un código que ya está "
+"bien establecido como su responsabilidad, entonces probablemente haya poca "
+"necesidad de verificar con otros confirmadores antes de saltar con un "
+"compromiso. Trabajando en un error en un área del sistema que está "
+"claramente huérfana (y hay algunas áreas de este tipo, para nuestra "
+"vergüenza), se aplica lo mismo. Cuando modifique partes del sistema que se "
+"mantienen, formal o informalmente, considere solicitar una revisión tal como "
+"lo haría un desarrollador antes de convertirse en un committer. Para "
+"puertos, comuníquese con el <varname>MAINTAINER</varname> en "
+"el<filename>Makefile</filename>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2932
@@ -5470,6 +5649,15 @@ msgid ""
 "unanswered or the committer otherwise indicates a lack of interest in the "
 "area affected, go ahead and commit it."
 msgstr ""
+"Para determinar si se mantiene un área del árbol, consulte el archivo "
+"MAINTAINERS en la raíz del árbol. Si no aparece nadie, escanee el historial "
+"de revisiones para ver quién ha realizado cambios en el pasado. Puede "
+"encontrar un script de ejemplo que enumera a cada persona que se ha "
+"comprometido con un archivo determinado junto con el número de "
+"confirmaciones que ha realizado cada persona en el <systemitem>freefall</"
+"systemitem> a <filename>~eadler/bin/whodid</filename>. Si las consultas "
+"quedan sin respuesta o el autor de la confirmación indica de otro modo una "
+"falta de interés en el área afectada, continúe y confíe."
 
 #. (itstool) path: important/para
 #: article.translate.xml:2944
@@ -5491,6 +5679,12 @@ msgid ""
 "the matter is settled. Remember, with a version control system we can always "
 "change it back."
 msgstr ""
+"Si hay alguna duda sobre un compromiso por cualquier motivo, hágalo revisar "
+"antes de realizar el compromiso. Es mejor tenerlo flameado en ese mismo "
+"momento que cuando es parte del repositorio. Si un compromiso da lugar a que "
+"surja una controversia, puede ser aconsejable considerar volver a respaldar "
+"el cambio hasta que se resuelva el asunto. Recuerde, con un sistema de "
+"control de versiones siempre podemos volver a cambiarlo."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2958
@@ -5501,6 +5695,11 @@ msgid ""
 "to destroy hard work, personal image, or FreeBSD, but basically because they "
 "have a different outlook on the world. Different is good."
 msgstr ""
+"No impugne las intenciones de los demás. Si ven una solución diferente a un "
+"problema, o incluso un problema diferente, probablemente no sea porque sean "
+"estúpidos, porque tienen una paternidad cuestionable o porque están tratando "
+"de destruir el trabajo duro, la imagen personal o FreeBSD, sino básicamente "
+"porque tienen una perspectiva diferente del mundo. Diferente es bueno."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2966
@@ -5509,6 +5708,9 @@ msgid ""
 "shortcomings it may have, and be open to seeing their solution, or even "
 "their vision of the problem, with an open mind."
 msgstr ""
+"Honestamente en desacuerdo. Argumente su posición desde sus méritos, sea "
+"honesto acerca de cualquier deficiencia que pueda tener y esté abierto a ver "
+"su solución, o incluso su visión del problema, con una mente abierta."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2971
@@ -5518,6 +5720,10 @@ msgid ""
 "not beat up others for your mistake. Do not waste time on embarrassment or "
 "recrimination, just fix the problem and move on."
 msgstr ""
+"Acepta la corrección. Todos somos falibles. Cuando haya cometido un error, "
+"discúlpese y siga con su vida. No se castigue a sí mismo, y ciertamente no "
+"golpee a otros por su error. No pierda el tiempo en vergüenza o "
+"recriminación, simplemente solucione el problema y siga adelante."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2977
@@ -5526,11 +5732,15 @@ msgid ""
 "software is supposed to excel is in the number of eyeballs applied to it; "
 "this does not apply if nobody will review code."
 msgstr ""
+"Pedir ayuda. Busque (y proporcione) revisiones de pares. Una de las formas "
+"en que se supone que el software de código abierto sobresale es en la "
+"cantidad de ojos que se le aplican; esto no se aplica si nadie revisa el "
+"código."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:2984
 msgid "If in Doubt..."
-msgstr ""
+msgstr "Si tienes dudas ..."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2986
@@ -5538,6 +5748,9 @@ msgid ""
 "When unsure about something, whether it be a technical issue or a project "
 "convention be sure to ask. If you stay silent you will never make progress."
 msgstr ""
+"Cuando no esté seguro de algo, ya sea un problema técnico o una convención "
+"del proyecto, asegúrese de preguntar. Si te quedas en silencio, nunca "
+"progresarás."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2990
@@ -5546,31 +5759,41 @@ msgid ""
 "the temptation to email the individual person that knows the answer. This "
 "way everyone will be able to learn from the question and the answer."
 msgstr ""
+"Si se relaciona con un problema técnico, pregunte en las listas de correo "
+"públicas. Evite la tentación de enviar un correo electrónico a la persona "
+"que conoce la respuesta. De esta manera, todos podrán aprender de la "
+"pregunta y la respuesta."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:2995
 msgid "For project specific or administrative questions ask, in order:"
 msgstr ""
+"Para preguntas administrativas o específicas del proyecto, pregunte, en "
+"orden:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3000
 msgid "Your mentor or former mentor."
-msgstr ""
+msgstr "Tu mentor o ex mentor."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3004
 msgid "An experienced committer on IRC, email, etc."
-msgstr ""
+msgstr "Un cometer experimentado en IRC, correo electrónico, etc."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3008
 msgid "Any team with a \"hat\", as they can give you a definitive answer."
 msgstr ""
+"Cualquier equipo con \"sombrero\", ya que pueden darte una respuesta "
+"definitiva."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3013
 msgid "If still not sure, ask on FreeBSD developers mailing list."
 msgstr ""
+"Si aún no está seguro, pregunte en la lista de correo de desarrolladores de "
+"FreeBSD."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:3017
@@ -5579,6 +5802,9 @@ msgid ""
 "spelled out the answer to your question, document it, as others will have "
 "the same question."
 msgstr ""
+"Una vez que se responda su pregunta, si nadie le indicó la documentación que "
+"detalla la respuesta a su pregunta, documente, ya que otros tendrán la misma "
+"pregunta."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:3023
@@ -5594,6 +5820,11 @@ msgid ""
 "if you take time to close any PRs associated with your commits, if "
 "appropriate."
 msgstr ""
+"El proyecto FreeBSD utiliza <application>Bugzilla</application> para "
+"rastrear errores y solicitudes de cambio. Asegúrese de cerrarlo si confirma "
+"una solución o sugerencia que se encuentra en la base de datos de relaciones "
+"públicas. También se considera bueno si se toma el tiempo para cerrar "
+"cualquier RP asociado con sus confirmaciones, si corresponde."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:3032
@@ -5603,11 +5834,15 @@ msgid ""
 "<systemitem class=\"domainname\">FreeBSD.org</systemitem> account by "
 "following these steps:"
 msgstr ""
+"Comprometidos con no <systemitem class=\"domainname\">FreeBSD.org</"
+"systemitem> Las cuentas de Bugzilla pueden tener la cuenta anterior "
+"fusionada con la <systemitem class=\"domainname\">FreeBSD.org</systemitem> "
+"cuenta siguiendo estos pasos:"
 
 #. (itstool) path: step/para
 #: article.translate.xml:3040
 msgid "Log in using your old account."
-msgstr ""
+msgstr "Inicie sesión con su cuenta anterior."
 
 #. (itstool) path: step/para
 #: article.translate.xml:3044
@@ -5616,6 +5851,9 @@ msgid ""
 "<literal>Bug Tracker</literal> as the Component. In bug description list "
 "accounts you wish to be merged."
 msgstr ""
+"Abra un nuevo error. Escoger <literal>Services</literal> como el Producto, "
+"y<literal>Bug Tracker</literal> como Componente. En la lista de descripción "
+"de errores, las cuentas que desea fusionar."
 
 #. (itstool) path: step/para
 #: article.translate.xml:3051
@@ -5626,6 +5864,11 @@ msgid ""
 "password for your <systemitem class=\"domainname\">FreeBSD.org</systemitem> "
 "account."
 msgstr ""
+"Iniciar sesión usando <systemitem class=\"domainname\">FreeBSD.org</"
+"systemitem> cuenta y publique un comentario en el error recién abierto para "
+"confirmar la propiedad. Ver <xref linkend=\"kerberos-ldap\"/> para obtener "
+"más detalles sobre cómo generar o establecer una contraseña para su "
+"<systemitem class=\"domainname\">FreeBSD.org</systemitem>cuenta."
 
 #. (itstool) path: step/para
 #: article.translate.xml:3057
@@ -5633,11 +5876,14 @@ msgid ""
 "If there are more than two accounts to merge, post comments from each of "
 "them."
 msgstr ""
+"Si hay más de dos cuentas para fusionar, publique comentarios de cada una de "
+"ellas."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:3062
 msgid "You can find out more about <application>Bugzilla</application> at:"
 msgstr ""
+"Puede obtener más información sobre <application>Bugzilla</application> en:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3067
@@ -5645,18 +5891,24 @@ msgid ""
 "<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/pr-"
 "guidelines/index.html\">FreeBSD Problem Report Handling Guidelines</link>"
 msgstr ""
+"<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/"
+"pr-guidelines/index.html\">Pautas de manejo de informes de problemas de "
+"FreeBSD</link>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3072
+#, fuzzy
 msgid ""
 "<link xlink:href=\"@@URL_RELPREFIX@@/support.html\">https://www.FreeBSD.org/"
 "support.html</link>"
 msgstr ""
+"<link xlink:href=\"@@URL_RELPREFIX@@/support.html\">https://www.FreeBSD.org/"
+"support.html</link>"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:3078
 msgid "Phabricator"
-msgstr ""
+msgstr "Fabricador"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:3080
@@ -5666,6 +5918,10 @@ msgid ""
 "\"https://wiki.freebsd.org/CodeReview\">CodeReview</link> wiki page for "
 "details."
 msgstr ""
+"El proyecto FreeBSD utiliza <link xlink:href=\"https://reviews.freebsd.org\""
+">Phabricator</link> para solicitudes de revisión de código. Ver el<link "
+"xlink:href=\"https://wiki.freebsd.org/CodeReview\">CodeReview</link> wiki "
+"page for details."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:3084
@@ -5675,6 +5931,10 @@ msgid ""
 "<systemitem class=\"domainname\">FreeBSD.org</systemitem> account by "
 "following these steps:"
 msgstr ""
+"Comprometidos con no <systemitem class=\"domainname\">FreeBSD.org</"
+"systemitem> Las cuentas de Phabricator pueden cambiar el nombre de la cuenta "
+"anterior a la <systemitem class=\"domainname\">FreeBSD.org</systemitem> "
+"cuenta siguiendo estos pasos:"
 
 #. (itstool) path: step/para
 #: article.translate.xml:3092
@@ -5682,6 +5942,8 @@ msgid ""
 "Change your <application>Phabricator</application> account email to your "
 "<systemitem class=\"domainname\">FreeBSD.org</systemitem> email."
 msgstr ""
+"Cambiar tu <application>Fabricador</application>cuenta de correo electrónico "
+"a su<systemitem class=\"domainname\">FreeBSD.org</systemitem> correo."
 
 #. (itstool) path: step/para
 #: article.translate.xml:3097
@@ -5695,6 +5957,15 @@ msgid ""
 "example, <literal>https://reviews.freebsd.org/p/<replaceable>bob_example."
 "com</replaceable>/</literal>"
 msgstr ""
+"Abra un nuevo error en nuestro rastreador de errores con su <systemitem "
+"class=\"domainname\">FreeBSD.org</systemitem> cuenta, mire <xref linkend="
+"\"bugzilla\"/> para más información. Escoger<literal>Services</literal> como "
+"el Producto, y <literal>revisión de código</literal> como Componente. En la "
+"descripción del error, solicite que su<application>Phabricator</application> "
+"cambiar el nombre de la cuenta y proporcionar un enlace a "
+"su<application>Phabricator</application> usuario. Por ejemplo, "
+"<literal>https://reviews.freebsd.org/p/<replaceable>bob_example."
+"com</replaceable></literal>"
 
 #. (itstool) path: important/para
 #: article.translate.xml:3110
@@ -5702,11 +5973,13 @@ msgid ""
 "<application>Phabricator</application> accounts cannot be merged, please do "
 "not open a new account."
 msgstr ""
+"<application>Phabricator</application> las cuentas no se pueden fusionar, no "
+"abra una nueva cuenta."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:3116
 msgid "Who's Who"
-msgstr ""
+msgstr "Quien es Quien"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:3118
@@ -5715,6 +5988,9 @@ msgid ""
 "teams whom you will probably get to know in your role as a committer. "
 "Briefly, and by no means all-inclusively, these are:"
 msgstr ""
+"Además de los meisters del repositorio, hay otros miembros y equipos del "
+"proyecto FreeBSD a los que probablemente conocerá en su rol de committer. "
+"Brevemente, y de ninguna manera todo incluido, estos son:"
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:3125
@@ -5737,6 +6013,19 @@ msgid ""
 "<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/fdp-primer/"
 "index.html\">Documentation Project Primer</link>."
 msgstr ""
+"doceng es el grupo responsable de la infraestructura de construcción de "
+"documentación, la aprobación de nuevos confirmadores de documentación y la "
+"garantía de que el sitio web de FreeBSD y la documentación en el sitio FTP "
+"estén actualizados con respecto a la <application>subversion</application> "
+"árbol. No es un organismo de resolución de conflictos. La gran mayoría de la "
+"discusión relacionada con la documentación tiene lugar en el <link "
+"xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc\">Lista "
+"de correo del proyecto de documentación de FreeBSD</link>. Más detalles "
+"sobre el equipo doceng se pueden encontrar en su<link xlink:href=\"https"
+"://www.FreeBSD.org/internal/doceng.html\">charter</link>. Los confirmadores "
+"interesados en contribuir a la documentación deben familiarizarse con el "
+"<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/fdp-primer/"
+"index.html\">Documentation Project Primer</link>."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:3144
@@ -5767,6 +6056,14 @@ msgid ""
 "CURRENT to FreeBSD-STABLE (whatever values those may have at any given "
 "time), these are the people to talk to about it."
 msgstr ""
+"Estos son los miembros del equipo de ingeniería de versiones "
+"<email>re@FreeBSD.org</email>. este equipo es responsable de establecer los "
+"plazos de publicación y controlar el proceso de publicación. Durante la "
+"congelación del código, los ingenieros de versiones tienen la autoridad "
+"final sobre todos los cambios en el sistema para cualquier rama que tenga el "
+"estado de versión pendiente. Si hay algo que desee fusionar de FreeBSD-"
+"CURRENT a FreeBSD-STABLE (independientemente de los valores que puedan tener "
+"en un momento dado), estas son las personas con las que hablar al respecto."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:3159
@@ -5781,6 +6078,9 @@ msgid ""
 "\">FreeBSD Security Officer</link> and oversees the Security Officer Team "
 "<email>security-officer@FreeBSD.org</email>."
 msgstr ""
+"Gordon Tetlow es el <link xlink:href=\"@@URL_RELPREFIX@@/security/\">Oficial "
+"de seguridad de FreeBSD</link> y supervisa el equipo de oficiales de "
+"seguridad <email>security-officer@FreeBSD.org</email>."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:3170
@@ -5818,6 +6118,14 @@ msgid ""
 "replies to this list when they are short and are directly related to a "
 "commit."
 msgstr ""
+"<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/svn-src-all\""
+">svn-src-all</link>, <link xlink:href=\"http://lists.FreeBSD.org/mailman/"
+"listinfo/svn-ports-all\">svn-ports-all</link> and <link xlink:href=\"http"
+"://lists.FreeBSD.org/mailman/listinfo/svn-doc-all\">svn-doc-all</link> son "
+"las listas de correo que utiliza el sistema de control de versiones para "
+"enviar mensajes de confirmación. <emphasis>Never</emphasis> enviar correo "
+"electrónico directamente a estas listas. Solo envíe respuestas a esta lista "
+"cuando sean breves y estén directamente relacionadas con una confirmación."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:3196
@@ -5882,6 +6190,16 @@ msgid ""
 "FreeBSD developers mailing list. Doing so can greatly diminish the benefits "
 "of this list."
 msgstr ""
+"Esta lista es <emphasis>no</emphasis> destinado a ser un lugar para "
+"revisiones de código o para cualquier discusión técnica. De hecho, usarlo "
+"como tal perjudica al Proyecto FreeBSD ya que da la sensación de una lista "
+"cerrada donde las decisiones generales que afectan a toda la comunidad que "
+"usa FreeBSD se toman sin ser <quote>abrir</quote>. Último, pero no menos "
+"importante <emphasis>nunca, nunca, envíe un correo electrónico a la lista de "
+"correo de desarrolladores de FreeBSD y CC: / BCC: otra lista de FreeBSD</"
+"emphasis>. Nunca, nunca envíe por correo electrónico otra lista de correo "
+"electrónico de FreeBSD y CC: / BCC: la lista de correo de desarrolladores de "
+"FreeBSD. Hacerlo puede disminuir en gran medida los beneficios de esta lista."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:3237
@@ -5903,6 +6221,16 @@ msgid ""
 "<citerefentry><refentrytitle>ssh-agent</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> for details."
 msgstr ""
+"Si no desea ingresar su contraseña cada vez que "
+"use<citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>, y usas claves para autenticarte, <citerefentry><refentrytitle"
+">ssh-agent</refentrytitle><manvolnum>1</manvolnum></citerefentry> está ahí "
+"para su conveniencia. Si quieres usar <citerefentry><refentrytitle>ssh-"
+"agent</refentrytitle><manvolnum>1</manvolnum></citerefentry>, asegúrese de "
+"ejecutarlo antes de ejecutar otras aplicaciones. Los usuarios de X, por "
+"ejemplo, suelen hacer esto desde su <filename>.xsession</filename> or "
+"<filename>.xinitrc</filename>. See <citerefentry><refentrytitle>ssh-"
+"agent</refentrytitle><manvolnum>1</manvolnum></citerefentry> para detalles."
 
 #. (itstool) path: step/para
 #: article.translate.xml:3253
@@ -5911,6 +6239,9 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>. The key pair will "
 "wind up in your <filename>$HOME/.ssh/</filename> directory."
 msgstr ""
+"Genere un par de claves usando <citerefentry><refentrytitle>ssh-"
+"keygen</refentrytitle><manvolnum>1</manvolnum></citerefentry>. El par de "
+"claves terminará en tu <filename>$HOME/.ssh/</filename> directory."
 
 #. (itstool) path: important/para
 #: article.translate.xml:3259
@@ -5918,6 +6249,8 @@ msgid ""
 "Only <acronym>ECDSA</acronym>, <acronym>Ed25519</acronym> or <acronym>RSA</"
 "acronym> keys are supported."
 msgstr ""
+"Solo  <acronym>ECDSA</acronym>, <acronym>Ed25519</acronym> o <acronym>RSA</"
+"acronym> las claves son compatibles."
 
 #. (itstool) path: step/para
 #: article.translate.xml:3266
@@ -5928,6 +6261,12 @@ msgid ""
 "be put into <filename><replaceable>yourlogin</replaceable></filename> in "
 "<filename>/etc/ssh-keys/</filename> on <systemitem>freefall</systemitem>."
 msgstr ""
+"Envíe su clave pública (<filename>$HOME/.ssh/id_ecdsa.pub</filename>, "
+"<filename>$HOME/.ssh/id_ed25519.pub</filename>, or <filename>$HOME/.ssh/"
+"id_rsa.pub</filename>)a la persona que lo establece como un consignatario "
+"para que pueda ser puesto en <filename><replaceable>yourlogin</replaceable></"
+"filename> in <filename>/etc/ssh-keys/</filename> on "
+"<systemitem>freefall</systemitem>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:3279
@@ -5939,6 +6278,13 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>). Use <command>ssh-add "
 "-d</command> to remove keys stored in the agent."
 msgstr ""
+"Ahora <citerefentry><refentrytitle>ssh-"
+"add</refentrytitle><manvolnum>1</manvolnum></citerefentry> se puede utilizar "
+"para la autenticación una vez por sesión. Solicita la contraseña de la clave "
+"privada y luego la almacena en el agente de autenticación. "
+"(<citerefentry><refentrytitle>ssh-"
+"agent</refentrytitle><manvolnum>1</manvolnum></citerefentry>). Use <command"
+">ssh-add -d</command> Para eliminar claves almacenadas en el agente."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:3285
@@ -5962,6 +6308,16 @@ msgid ""
 "<citerefentry><refentrytitle>scp</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>."
 msgstr ""
+"For more informacion, mire <package>security/openssh-portable</package>, "
+"<citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>, <citerefentry><refentrytitle>ssh-"
+"add</refentrytitle><manvolnum>1</manvolnum></citerefentry>, "
+"<citerefentry><refentrytitle>ssh-"
+"agent</refentrytitle><manvolnum>1</manvolnum></citerefentry>, "
+"<citerefentry><refentrytitle>ssh-"
+"keygen</refentrytitle><manvolnum>1</manvolnum></citerefentry>, and <citerefen"
+"try><refentrytitle>scp</refentrytitle><manvolnum>1</manvolnum></citerefentry>"
+"."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:3293
@@ -5971,6 +6327,10 @@ msgid ""
 "citerefentry> keys, see <uri xlink:href=\"https://wiki.freebsd.org/"
 "clusteradm/ssh-keys\">this article</uri>."
 msgstr ""
+"Para obtener información sobre cómo agregar, cambiar o eliminar "
+"<citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> keys, see <uri xlink:href=\"https://wiki.freebsd.org/"
+"clusteradm/ssh-keys\">Este artículo</uri>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:3299
@@ -5990,6 +6350,12 @@ msgid ""
 "<application>Coverity</application> runs, can sign up at <uri xlink:href="
 "\"http://scan.coverity.com/\">Coverity Scan</uri>."
 msgstr ""
+"Todos los desarrolladores de FreeBSD pueden obtener acceso a "
+"<application>Coverity</application> resultados del análisis de todo el "
+"software FreeBSD Project. Todos los que estén interesados en obtener acceso "
+"a los resultados del análisis del automatizado <application>Coverity</"
+"application> corre, puede registrarse en <uri xlink:href=\"http://scan."
+"coverity.com/\">Coverity Scan</uri>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:3308
@@ -6002,6 +6368,13 @@ msgid ""
 "this page, you will have to ask someone to add you to the appropriate Wiki "
 "access list."
 msgstr ""
+"La wiki de FreeBSD incluye una mini-guía para desarrolladores que estén "
+"interesados en trabajar con <trademark class=\"registered\">Coverity</"
+"trademark> analysis reports: <uri xlink:href=\"https://wiki.freebsd.org/"
+"CoverityPrevent\">https://wiki.freebsd.org/CoverityPrevent</uri>. Tenga en "
+"cuenta que esta mini-guía solo es legible por los desarrolladores de "
+"FreeBSD, por lo que si no puede acceder a esta página, tendrá que pedirle a "
+"alguien que lo agregue a la lista de acceso Wiki correspondiente."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:3315
@@ -6032,6 +6405,13 @@ msgid ""
 "perception of it. This guide expands on the parts of the <emphasis>Code of "
 "Conduct</emphasis> specific to committers."
 msgstr ""
+"Se espera que todos los involucrados en el proyecto FreeBSD cumplan con las "
+"<emphasis>Código de Conducta</emphasis> disponible en <link xlink:href=\""
+"@@URL_RELPREFIX@@/internal/code-of-conduct.html\">https://www.FreeBSD.org/"
+"internal/code-of-conduct.html</link>. Como comprometidos, ustedes forman la "
+"cara pública del proyecto, y su comportamiento tiene un impacto vital en la "
+"percepción pública del mismo. Esta guía amplía las partes del "
+"<emphasis>Código de Conducta</emphasis> específico para los committers."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3335 article.translate.xml:3442
@@ -6367,6 +6747,21 @@ msgid ""
 "is not clear, look at the repository logs for the files in question and see "
 "if someone has been working recently or predominantly in that area."
 msgstr ""
+"Muchas partes de FreeBSD no <quote>owned</quote> en el sentido de que "
+"cualquier individuo específico saltará y gritará si comete un cambio en "
+"<quote>su</quote> área, pero todavía vale la pena comprobar primero. Una "
+"convención que usamos es poner una línea de mantenedor en el "
+"<filename>Makefile</filename> para cualquier paquete o subárbol que esté "
+"siendo mantenido activamente por una o más personas; ver <link xlink:href=\""
+"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/developers-handbook/policies."
+"html\">https://www.FreeBSD.org/doc/en_US.ISO8859-1/books/developers-handbook/"
+"policies.html</link> para obtener documentación sobre esto. Cuando las "
+"secciones de código tienen varios mantenedores, los compromisos con las "
+"áreas afectadas por un mantenedor deben ser revisados por al menos otro "
+"mantenedor. En los casos en que <quote>maintainer-ship</quote> Si algo no "
+"está claro, mire los registros del repositorio de los archivos en cuestión y "
+"vea si alguien ha estado trabajando recientemente o predominantemente en esa "
+"área."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3558
@@ -6459,6 +6854,11 @@ msgid ""
 "<email>security-officer@FreeBSD.org</email>, or in some cases, by a member "
 "of the Release Engineering Team <email>re@FreeBSD.org</email>."
 msgstr ""
+"Cambios en las ramas de seguridad (por ejemplo, <literal>releng/9."
+"3</literal>) debe ser aprobado por un miembro del equipo de oficiales de "
+"seguridad <email>security-officer@FreeBSD.org</email>, o en algunos casos, "
+"por un miembro del equipo de ingeniería de versiones <email>re@FreeBSD."
+"org</email>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3616
@@ -6514,6 +6914,9 @@ msgid ""
 "<literal>developers</literal> mailing list on a timely basis so you know "
 "when a code freeze is in effect."
 msgstr ""
+"Respete todos los códigos congelados y lea el <literal>comprometidos</"
+"literal> y <literal>desarrolladores</literal> lista de correo de manera "
+"oportuna para que sepa cuándo está en vigencia una congelación de código."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:3651
@@ -7705,6 +8108,17 @@ msgid ""
 "please also CC Chris Rees <email>crees@FreeBSD.org</email>, the current "
 "maintainer."
 msgstr ""
+"La forma más sencilla de agregar un nuevo puerto es <command>addport</"
+"command> script ubicado en el <filename>ports/Tools/scripts</filename> "
+"directorio. Agrega un puerto del directorio especificado, determinando la "
+"categoría automáticamente desde el puerto <filename>Makefile</filename>. "
+"También agrega una entrada a la categoría del puerto. <filename>Makefile</"
+"filename>. Fue escrito por Michael Haro <email>mharo@FreeBSD.org</email>, "
+"Will Andrews <email>will@FreeBSD.org</email>, and Renato Botelho "
+"<email>garga@FreeBSD.org</email>. Al enviar preguntas sobre este script al "
+"<link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports\""
+">Lista de correo de puertos de FreeBSD</link>, please also CC Chris Rees "
+"<email>crees@FreeBSD.org</email>, el mantenedor actual."
 
 #. (itstool) path: question/para
 #: article.translate.xml:4323
@@ -7894,6 +8308,12 @@ msgid ""
 "freebsd-ports\">FreeBSD ports mailing list</link>, please also CC Chris Rees "
 "<email>crees@FreeBSD.org</email>, the current maintainer."
 msgstr ""
+"Alternativamente, puede utilizar el <command>rmport</command> script, from "
+"<filename>ports/Tools/scripts</filename>. este guión fue escrito por Vasil "
+"Dimov <email>vd@FreeBSD.org</email>. Al enviar preguntas sobre este script "
+"al <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-"
+"ports\">lista de correo de puertos de freeBSD</link>, por favor también un "
+"CC a Chris Rees<email>crees@FreeBSD.org</email>, el mantenedor actual."
 
 #. (itstool) path: qandadiv/title
 #: article.translate.xml:4450
@@ -7917,6 +8337,9 @@ msgid ""
 "If they are unclear, or are not working, ask for help, do not just "
 "<command>svn add</command> the port."
 msgstr ""
+"No utilice <command>svn add</command> para agregar el puerto. Sigue estos "
+"pasos. Si no están claros o no funcionan, pida ayuda, no se limite a "
+"<command>svn add</command> el puerto."
 
 #. (itstool) path: step/para
 #: article.translate.xml:4470
@@ -7926,14 +8349,23 @@ msgid ""
 "the port on <link xlink:href=\"http://www.freshports.org/\">freshports</"
 "link>, and then copy the last living revision of the port:"
 msgstr ""
+"Averigüe cuándo se eliminó el puerto. Utilizar este <link xlink:href=\"https"
+"://people.FreeBSD.org/~crees/removed_ports/index.xml\">list</link>, o busque "
+"el puerto en <link xlink:href=\"http://www.freshports.org/\">freshports</"
+"link>, y luego copie la última revisión viva del puerto:"
 
 #. (itstool) path: step/screen
 #: article.translate.xml:4476
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>cd /usr/ports/<replaceable>category</replaceable></userinput>\n"
 "<prompt>%</prompt> <userinput>svn cp 'svn+ssh://repo.freebsd.org/ports/head/<replaceable>category</replaceable>/<replaceable>portname</replaceable>/@<replaceable>XXXXXX</replaceable>' <replaceable>portname</replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd /usr/ports/"
+"<replaceable>category</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>svn cp 'svn+ssh://repo.freebsd.org/ports/head/<"
+"replaceable>category</replaceable>/<replaceable>portname</replaceable>/@<repl"
+"aceable>XXXXXX</replaceable>' <replaceable>portname</replaceable></userinput>"
 
 #. (itstool) path: step/para
 #: article.translate.xml:4479
@@ -7958,11 +8390,17 @@ msgstr ""
 
 #. (itstool) path: step/screen
 #: article.translate.xml:4488
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>cd /usr/ports/<replaceable>category</replaceable></userinput>\n"
 "<prompt>%</prompt> <userinput>svn cp 'svn+ssh://repo.freebsd.org/ports/head/<replaceable>category</replaceable>/<replaceable>portname</replaceable>/@{<replaceable>YYYY-MM-DD</replaceable>}' <replaceable>portname</replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd /usr/ports/"
+"<replaceable>category</replaceable></userinput>\n"
+"<prompt>%</prompt> <userinput>svn cp 'svn+ssh://repo.freebsd.org/ports/head/<"
+"replaceable>category</replaceable>/<replaceable>portname</replaceable>/@{<rep"
+"laceable>YYYY-MM-DD</replaceable>}' "
+"<replaceable>portname</replaceable></userinput>"
 
 #. (itstool) path: step/para
 #: article.translate.xml:4493
@@ -8123,6 +8561,19 @@ msgid ""
 "changing <varname>PKGNAMEPREFIX</varname> or <varname>PKGNAMESUFFIX</"
 "varname> suffices."
 msgstr ""
+"Actualice el puerto copiado a la nueva versión. Recuerde agregar o cambiar "
+"el <varname>PKGNAMEPREFIX</varname> or <varname>PKGNAMESUFFIX</varname> por "
+"lo que no hay puertos duplicados con el mismo nombre. En algunos casos "
+"raros, puede ser necesario cambiar el <varname>PORTNAME</varname> en lugar "
+"de agregar <varname>PKGNAMEPREFIX</varname> or <varname>PKGNAMESUFFIX</"
+"varname>, pero esto solo se hace cuando es realmente necesario, por ejemplo, "
+"usar un puerto existente como base para un programa muy similar con un "
+"nombre diferente, o actualizar un puerto a una nueva versión ascendente que "
+"realmente cambia el nombre de la distribución, como la transición desde "
+"<filename>textproc/libxml</filename> a <filename>textproc/libxml2</"
+"filename>.En la mayoría de los casos, agregar o cambiar "
+"<varname>PKGNAMEPREFIX</varname> or <varname>PKGNAMESUFFIX</varname> "
+"suffices."
 
 #. (itstool) path: step/para
 #: article.translate.xml:4624
@@ -8701,6 +9152,12 @@ msgid ""
 "<email>portmgr@FreeBSD.org</email>, it is their decision whether or not to "
 "approve it. If they do, it is their responsibility to:"
 msgstr ""
+"Por favor mira <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/"
+"books/porters-handbook/makefile-categories.html#proposing-categories\"> "
+"Proponer una nueva categoría</link> en el Manual de Porter. Una vez que se "
+"ha seguido ese procedimiento y se ha asignado el RP al Equipo de Gestión de "
+"Puertos <email>portmgr@FreeBSD.org</email>, es su decisión aprobarlo o no. "
+"Si lo hacen, es su responsabilidad:"
 
 #. (itstool) path: step/para
 #: article.translate.xml:4980
@@ -8791,6 +9248,15 @@ msgid ""
 "vendor=\"ports\"><refentrytitle>portupgrade</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> fail."
 msgstr ""
+"Compruebe que el <varname>PKGORIGIN</varname>s  son correctos. El sistema de "
+"puertos utiliza cada puerto <varname>CATEGORIES</varname> entrada para crear "
+"su <varname>PKGORIGIN</varname>, que se utiliza para conectar los paquetes "
+"instalados al directorio del puerto desde el que se crearon. Si esta entrada "
+"es incorrecta, herramientas de puerto comunes como <citerefentry><refentrytit"
+"le>pkg_version</refentrytitle><manvolnum>1</manvolnum></citerefentry> and "
+"<citerefentry vendor=\"puertos\""
+"><refentrytitle>portupgrade</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> fail."
 
 #. (itstool) path: step/para
 #: article.translate.xml:5052
@@ -8803,6 +9269,14 @@ msgid ""
 "not forget to look at the <varname>PKGORIGIN</varname>s of any slave ports "
 "of the ports you just moved!"
 msgstr ""
+"Para hacer esto, usa el <filename>chkorigin.sh</filename> tool: <command>env "
+"PORTSDIR=<replaceable>/path/to/ports</replaceable> sh -e <replaceable>/path/"
+"to/ports</replaceable>/Tools/scripts/chkorigin.sh</command>. Esto comprobará "
+"<emphasis>every</emphasis> port en el árbol de ports, incluso aquellos que "
+"no están conectados a la compilación, por lo que puede ejecutarlo "
+"directamente después de la operación de movimiento. Sugerencia: no olvide "
+"mirar el <varname>PKGORIGIN</varname>s  de cualquier puerto esclavo de los "
+"puertos que acaba de mover!"
 
 #. (itstool) path: step/para
 #: article.translate.xml:5067
@@ -8817,6 +9291,15 @@ msgid ""
 "systems; however, it is a necessary step to prevent problems for other "
 "people."
 msgstr ""
+"En su propio sistema local, pruebe los cambios propuestos: primero, comente "
+"los <varname>SUBDIR</varname> entradas en las 'categorías' de los puertos "
+"antiguos <filename>Makefile</filename>s; luego habilite la construcción de "
+"la nueva categoría en<filename>ports/Makefile</filename>. Corra "
+"<command>make checksubdirs</command> in the affected category directories to "
+"check the <varname>SUBDIR</varname> entradas. A continuación, en el<filename>"
+"ports/</filename> directorio, ejecutar<command>make index</command>. Esto "
+"puede llevar más de 40 minutos incluso en sistemas modernos; sin embargo, es "
+"un paso necesario para prevenir problemas a otras personas."
 
 #. (itstool) path: step/para
 #: article.translate.xml:5084
@@ -9287,6 +9770,12 @@ msgid ""
 "information, please see the <link xlink:href=\"https://www.FreeBSD.org/"
 "privacy.html\">FreeBSD Privacy Policy</link>."
 msgstr ""
+"El Proyecto FreeBSD se toma muy en serio la privacidad de los visitantes. "
+"Como tal, el sitio web del Proyecto FreeBSD honra la <quote>No rastrear</"
+"quote> header <emphasis>before</emphasis> obteniendo el código de "
+"seguimiento de Google. Para obtener más información, consulte el <link "
+"xlink:href=\"https://www.FreeBSD.org/privacy.html\">Política de privacidad "
+"de FreeBSD</link>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:5430
@@ -9295,6 +9784,10 @@ msgid ""
 "access must be requested, voted on by the Documentation Engineering Team "
 "<email>doceng@FreeBSD.org</email>, and explicitly granted."
 msgstr ""
+"El acceso a Google Analytics es <emphasis>no</emphasis>Permitido "
+"arbitrariamente: el acceso debe ser solicitado, votado por el Equipo de "
+"Ingeniería de Documentación <email>doceng@FreeBSD.org</email>, Y "
+"explícitamente concedido."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:5434
@@ -9316,6 +9809,8 @@ msgid ""
 "Conversely, <quote>to see what web browsers are most frequently used</quote> "
 "(without stating <emphasis>why</emphasis>) would be rejected."
 msgstr ""
+"Por el contrario, <quote>para ver qué navegadores web se utilizan con más "
+"frecuencia</quote> (sin decir <emphasis>porque</emphasis>) sería rechazado."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:5444
@@ -9382,6 +9877,14 @@ msgid ""
 "linkend=\"subversion-primer\">Subversion Primer</link> for details on how to "
 "perform an MFC."
 msgstr ""
+"para agregar un archivo a una rama, simplemente realice el pago o actualice "
+"la rama a la que desea agregar y luego agregue el archivo usando la "
+"operación de agregar como lo haría normalmente. Esto funciona bien para "
+"<literal>doc</literal> y <literal>ports</literal> trees. The <literal>src</"
+"literal> árbol utiliza SVN y requiere más cuidado debido a la "
+"<literal>mergeinfo</literal> propiedades. Ver el<link linkend=\"subversion-"
+"primer\">Subversion Primer</link> para obtener detalles sobre cómo realizar "
+"un MFC."
 
 #. (itstool) path: question/para
 #: article.translate.xml:5502
@@ -9389,6 +9892,8 @@ msgid ""
 "How do I access <systemitem class=\"fqdomainname\">people.FreeBSD.org</"
 "systemitem> to put up personal or project information?"
 msgstr ""
+"Como accedo <systemitem class=\"fqdomainname\">people.FreeBSD.org</"
+"systemitem> poner información personal o del proyecto?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:5507
@@ -9400,6 +9905,11 @@ msgid ""
 "<uri xlink:href=\"https://people.FreeBSD.org/\">https://people.FreeBSD.org/</"
 "uri>."
 msgstr ""
+"<systemitem class=\"fqdomainname\">people.FreeBSD.org</systemitem> Es lo "
+"mismo  <systemitem class=\"fqdomainname\">freefall.FreeBSD.org</systemitem>. "
+"solo cree un <filename>public_html</filename> directorio. todo lo que "
+"coloque en ese directorio será visible automáticamente bajo <uri xlink:href="
+"\"https://people.FreeBSD.org/\">https://people.FreeBSD.org/</uri>."
 
 #. (itstool) path: question/para
 #: article.translate.xml:5517
