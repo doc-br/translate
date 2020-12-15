@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-07-26 09:01-0300\n"
-"PO-Revision-Date: 2020-12-11 11:03+0000\n"
+"PO-Revision-Date: 2020-12-15 06:04+0000\n"
 "Last-Translator: Aaron H Farías Martinez <timido@ubuntu.com>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_building-products/es/>\n"
@@ -21,7 +21,9 @@ msgstr ""
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Manuel Megías joramsinkin@hotmail.com, 2018"
+msgstr ""
+"Manuel Megías joramsinkin@hotmail.com, 2018\n"
+"Aaron H Farias Martinez timido@ubuntu.com, 2020"
 
 #. (itstool) path: info/title
 #: article.translate.xml:4
@@ -48,7 +50,7 @@ msgstr ""
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:14
 msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
-msgstr "FreeBSD is a registered trademark of the FreeBSD Foundation."
+msgstr "FreeBSD es una marca registrada de FreeBSD Fundación."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:16
@@ -59,11 +61,11 @@ msgid ""
 "designations have been followed by the <quote>™</quote> or the <quote>®</"
 "quote> symbol."
 msgstr ""
-"Many of the designations used by manufacturers and sellers to distinguish "
-"their products are claimed as trademarks. Where those designations appear in "
-"this document, and the FreeBSD Project was aware of the trademark claim, the "
-"designations have been followed by the <quote>™</quote> or the <quote>®</"
-"quote> symbol."
+"Muchas de las designaciones utilizadas por los fabricantes y vendedores para "
+"distinguir sus productos se reclaman como marcas comerciales. Cuando esas "
+"designaciones aparecen en este documento, y el Proyecto FreeBSD estaba al "
+"tanto del reclamo de marca registrada, las designaciones han sido seguidas "
+"por el <quote>™</quote> o el <quote>®</quote> símbolo."
 
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
@@ -128,13 +130,13 @@ msgid ""
 "devices, to personal computers. Portions of FreeBSD have also been used in "
 "commercial shrink-wrapped software (see <xref linkend=\"freebsd-intro\"/>)."
 msgstr ""
-"FreeBSD es hoy en día bien conocido como un sistema operativo de servidor de "
-"alto rendimiento. Está desplegado en millones de servidores web y hosts de "
-"Internet en todo el mundo. El código de FreeBSD también forma una parte "
-"integral de muchos productos, desde dispositivos como routers de red, "
-"cortafuegos y dispositivos de almacenamiento, hasta ordenadores personales. "
-"Partes de FreeBSD también han sido usadas en software comercial  (ver <xref "
-"linkend=\"freebsd-intro\"/>."
+"FreeBSD hoy es conocido como un sistema operativo de servidor de alto "
+"rendimiento. Se implementa en millones de servidores web y hosts conectados "
+"a Internet en todo el mundo. El código FreeBSD también forma parte integral "
+"de muchos productos, que van desde dispositivos como enrutadores de red, "
+"cortafuegos y dispositivos de almacenamiento, hasta computadoras personales. "
+"También se han utilizado partes de FreeBSD en software comercial empaquetado "
+"(ver <xref linkend=\"freebsd-intro\"/>)."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:61
@@ -179,24 +181,25 @@ msgid ""
 "time, and that the information in this article should therefore be taken as "
 "indicative rather than normative."
 msgstr ""
-"El autor cree que las características del proyecto FreeBSD enumeradas en "
-"este artículo eran sustancialmente ciertas en el momento en que el artículo "
-"fue concebido y escrito (2005). Sin embargo, el lector debe tener en cuenta "
-"que las prácticas y procesos utilizados por las comunidades de código "
-"abierto pueden cambiar con el tiempo y que, por lo tanto, la información "
-"contenida en este artículo debe tomarse como indicativa y no como normativa."
+"El autor cree que las características del Proyecto FreeBSD enumeradas en "
+"este artículo eran sustancialmente verdaderas en el momento en que se "
+"concibió y escribió el artículo (2005). Sin embargo, el lector debe tener en "
+"cuenta que las prácticas y los procesos utilizados por las comunidades de "
+"código abierto pueden cambiar con el tiempo y que, por lo tanto, la "
+"información de este artículo debe tomarse como indicativa en lugar de "
+"normativa."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:84
 msgid "Target Audience"
-msgstr "Público al que va dirigido"
+msgstr "Público objetivo"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:85
 msgid ""
 "This document would be of interest to the following broad groups of people:"
 msgstr ""
-"Este documento puede ser de interés para los siguientes amplios grupos de "
+"Este documento sería de interés para los siguientes grupos amplios de "
 "personas:"
 
 #. (itstool) path: listitem/simpara
@@ -208,7 +211,7 @@ msgid ""
 msgstr ""
 "Los responsables de la toma de decisiones en las empresas de productos que "
 "buscan formas de mejorar la calidad de sus productos, reducir su tiempo de "
-"lanzamiento al mercado y reducir los costes de ingeniería a largo plazo."
+"comercialización y reducir los costes de ingeniería a largo plazo."
 
 #. (itstool) path: listitem/simpara
 #: article.translate.xml:95
@@ -216,8 +219,8 @@ msgid ""
 "Technology consultants looking for best-practices in leveraging <quote>open-"
 "source</quote>."
 msgstr ""
-"Consultores de tecnología que buscan las mejores prácticas para sacar "
-"partido al <quote> código abierto </quote>."
+"Consultores de tecnología que buscan las mejores prácticas para aprovechar "
+"<quote> código abierto </quote>."
 
 #. (itstool) path: listitem/simpara
 #: article.translate.xml:99
@@ -225,7 +228,7 @@ msgid ""
 "Industry observers interested in understanding the dynamics of open-source "
 "projects."
 msgstr ""
-"Observadores de la industria interesados en entender la dinámica de los "
+"Observadores de la industria interesados en comprender la dinámica de los "
 "proyectos de código abierto."
 
 #. (itstool) path: listitem/simpara
@@ -234,18 +237,18 @@ msgid ""
 "Software developers seeking to use FreeBSD and looking for ways to "
 "contribute back."
 msgstr ""
-"Desarrolladores de software que quieren usar FreeBSD y buscan formas de "
-"contribuir a él."
+"Los desarrolladores de software que buscan usar FreeBSD y buscan formas de "
+"contribuir."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:110
 msgid "Article Goals"
-msgstr "Metas del proyecto"
+msgstr "Objetivos del artículo"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:111
 msgid "After reading this article you should have:"
-msgstr "Después de leer este artículo deberías tener:"
+msgstr "Después de leer este artículo, debería tener:"
 
 #. (itstool) path: listitem/simpara
 #: article.translate.xml:114
@@ -261,8 +264,7 @@ msgstr ""
 msgid ""
 "An understanding of its development model and release engineering processes."
 msgstr ""
-"Comprensión de su modelo de desarrollo y de los procesos de ingeniería de "
-"lanzamiento."
+"Comprensión de su modelo de desarrollo y procesos de ingeniería de versiones."
 
 #. (itstool) path: listitem/simpara
 #: article.translate.xml:122
@@ -382,10 +384,10 @@ msgid ""
 "<citation>McKu1999-1</citation>, fosters high-quality work. Some features in "
 "FreeBSD define the state of the art."
 msgstr ""
-"La cultura del proyecto FreeBSD, heredada del Computer Science Research "
-"Group de la Universidad de California, Berkeley <citation>McKu1999-1</"
-"citation>, fomenta el trabajo de alta calidad. Algunas características de "
-"FreeBSD definen el  estado actual."
+"La cultura del proyecto FreeBSD, heredada del Grupo de Investigación en "
+"Ciencias de la Computación de la Universidad de California, Berkeley "
+"<citation> McKu1999-1 </citation>, fomenta el trabajo de alta calidad. "
+"Algunas características de FreeBSD definen el estado del arte."
 
 #. (itstool) path: sect1/simpara
 #: article.translate.xml:194
@@ -438,12 +440,12 @@ msgid ""
 "benefit from new hardware support being added by the FreeBSD project "
 "upstream, and from the testing that the base system receives."
 msgstr ""
-"Como un sistema operativo integrado (por ejemplo, para un router OEM y un "
-"dispositivo de cortafuegos). En este modelo, las organizaciones emplean  un "
-"kernel personalizado de FreeBSD  y el programa  junto con una capa de "
-"gestión propia para su dispositivo. Los OEMs se benefician del nuevo soporte "
-"de hardware añadido por el proyecto FreeBSD y de las pruebas que recibe el "
-"sistema base."
+"Como un sistema operativo integrado (por ejemplo, para un enrutador OEM y un "
+"dispositivo de firewall). En este modelo, las organizaciones utilizan un "
+"kernel FreeBSD personalizado y un programa de aplicación junto con una capa "
+"de gestión propietaria para su dispositivo. Los OEM se benefician del nuevo "
+"soporte de hardware que agrega el proyecto FreeBSD en sentido ascendente y "
+"de las pruebas que recibe el sistema base."
 
 #. (itstool) path: listitem/simpara
 #: article.translate.xml:222
@@ -461,9 +463,9 @@ msgid ""
 "storage and networking devices, running on a separate processor "
 "<quote>blade</quote>."
 msgstr ""
-"Como un entorno compatible con Unix para las funciones de gestión de "
-"dispositivos de almacenamiento y de red de gama alta, que se ejecutan en un  "
-"<quote>blade</quote> separado de procesador."
+"Como entorno compatible con Unix para las funciones de gestión de "
+"dispositivos de red y almacenamiento de alta gama, que se ejecutan en un "
+"procesador independiente <quote>blade</quote>."
 
 #. (itstool) path: listitem/simpara
 #: article.translate.xml:230
