@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:08-0300\n"
-"PO-Revision-Date: 2020-12-13 00:04+0000\n"
+"PO-Revision-Date: 2020-12-18 02:42+0000\n"
 "Last-Translator: Aaron H Farías Martinez <timido@ubuntu.com>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_linux-emulation/es/>\n"
@@ -161,6 +161,26 @@ msgid ""
 "\"registered\">Linux</trademark> 2.6 emulation the default emulation layer "
 "in FreeBSD."
 msgstr ""
+"Esta tesis de maestría trata sobre la actualización del <trademark class="
+"\"registered\">Linux</trademark> capa de emulación (la llamada "
+"<firstterm>Linuxulator</firstterm>). La tarea consistía en actualizar la "
+"capa para que coincidiera con la funcionalidad de <trademark class="
+"\"registered\">Linux</trademark> 2.6. Como implementación de referencia, el "
+"<trademark class=\"registered\">Linux</trademark>Se eligió el kernel 2.6.16. "
+"El concepto se basa libremente en la implementación de NetBSD. La mayor "
+"parte del trabajo se realizó en el verano de 2006 como parte del programa "
+"para estudiantes de Google Summer of Code. El foco estaba en traer el "
+"<firstterm>NPTL</firstterm> (new <trademark class=\"registered\">POSIX</"
+"trademark> biblioteca de hilos) en la capa de emulación, "
+"incluyendo<firstterm>TLS</firstterm> (hilo de almacenamiento local), "
+"<firstterm>futexes</firstterm> (mutex rápidos del espacio de usuario), "
+"<firstterm>PID destrozar</firstterm>, y algunas otras cosas menores. Se "
+"identificaron y solucionaron muchos pequeños problemas en el proceso. Mi "
+"trabajo se integró en el repositorio de fuentes principal de FreeBSD y se "
+"enviará en la próxima versión 7.0R. Nosotros, el equipo de desarrollo de la "
+"emulación, estamos trabajando para hacer <trademark class=\"registered\""
+">Linux</trademark> 2.6 emulación la capa de emulación predeterminada en "
+"FreeBSD."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:82
@@ -184,6 +204,20 @@ msgid ""
 "programs available for <trademark class=\"registered\">Linux</trademark> "
 "that lack support for FreeBSD."
 msgstr ""
+"En los últimos años, el código abierto <trademark class=\"registered\">UNIX</"
+"trademark> Los sistemas operativos basados en la tecnología comenzaron a "
+"implementarse ampliamente en servidores y máquinas cliente. Entre estos "
+"sistemas operativos me gustaría señalar dos: FreeBSD, por su herencia BSD, "
+"base de código probado en el tiempo y muchas características interesantes y "
+"<trademark class=\"registered\">Linux</trademark> por su amplia base de "
+"usuarios, una entusiasta comunidad de desarrolladores abierta y el apoyo de "
+"grandes empresas. FreeBSD tiende a usarse en máquinas de clase servidor que "
+"sirven para tareas de red de trabajo pesado con menos uso en máquinas de "
+"clase de escritorio para usuarios normales. Mientras <trademark class="
+"\"registered\">Linux</trademark> tiene el mismo uso en los servidores, pero "
+"los usuarios domésticos lo utilizan mucho más. Esto conduce a una situación "
+"en la que hay muchos programas binarios disponibles para <trademark class="
+"\"registered\">Linux</trademark> que carecen de soporte para FreeBSD."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:98
@@ -265,6 +299,26 @@ msgid ""
 "migrated to the aforementioned systems. Let us summarize typical <trademark "
 "class=\"registered\">UNIX</trademark> characteristics."
 msgstr ""
+"<trademark class=\"registered\">UNIX</trademark>es un sistema operativo con "
+"una larga historia que ha influido en casi todos los demás sistemas "
+"operativos actualmente en uso. A partir de la década de 1960, su desarrollo "
+"continúa hasta la actualidad (aunque en diferentes proyectos). <trademark "
+"class=\"registered\">UNIX</trademark> El desarrollo pronto se bifurcó en dos "
+"formas principales: las familias BSD y System III/V. Se influenciaron "
+"mutuamente al cultivar un <trademark class=\"registered\">UNIX</trademark> "
+"estándar. Entre las contribuciones originadas en BSD podemos nombrar memoria "
+"virtual, redes TCP/IP, FFS y muchas otras. La rama System V contribuyó a las "
+"primitivas de comunicación entre procesos de SysV, copia en escritura, etc.. "
+"<trademark class=\"registered\">UNIX</trademark> en sí ya no existe, pero "
+"sus ideas han sido utilizadas por muchos otros sistemas operativos en todo "
+"el mundo, formando así el llamado <trademark class=\"registered\""
+">UNIX</trademark>-como los sistemas operativos. En estos días los más "
+"influyentes son<trademark class=\"registered\">Linux</trademark>, Solaris y "
+"posiblemente (hasta cierto punto) FreeBSD. Hay en la empresa <trademark "
+"class=\"registered\">UNIX</trademark> derivados (AIX, HP-UX, etc.), pero "
+"estos se han migrado cada vez más a los sistemas antes mencionados. "
+"Resumamos los típicos<trademark class=\"registered\">UNIX</trademark> "
+"caracteristicas."
 
 #. (itstool) path: sect2/title
 #. (itstool) path: sect3/title
@@ -386,6 +440,20 @@ msgid ""
 "citerefentry> syscall. Every process is identified by a unique number called "
 "PID. Every process has a defined parent (identified by its PID)."
 msgstr ""
+"Las instancias de kernel se procesan primero en el sistema (llamado init). "
+"Cada proceso en ejecución puede crear su copia idéntica utilizando el "
+"<citerefentry><refentrytitle>fork</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> syscall. Se introdujeron algunas versiones ligeramente "
+"modificadas de esta llamada al sistema, pero la semántica básica es la "
+"misma. Cada proceso en ejecución puede transformarse en algún otro proceso "
+"utilizando el "
+"<citerefentry><refentrytitle>exec</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry> syscall. Se introdujeron algunas modificaciones de esta "
+"llamada al sistema, pero todas tienen el mismo propósito básico. Los "
+"procesos terminan sus vidas llamando al "
+"<citerefentry><refentrytitle>exit</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> syscall. Cada proceso está identificado por un número único "
+"llamado PID. Cada proceso tiene un padre definido (identificado por su PID)."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:208
@@ -449,7 +517,7 @@ msgstr "1: N roscado"
 #. (itstool) path: listitem/para
 #: article.translate.xml:241
 msgid "+ lightweight threads"
-msgstr ""
+msgstr "+ hilos ligeros"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:244
@@ -665,6 +733,24 @@ msgid ""
 "literal>, <literal>struct syscall args *</literal> arguments where the "
 "second parameter is a pointer to the copied in structure of parameters."
 msgstr ""
+"Cuando un proceso emite una interrupción <literal>0x80</literal>, el "
+"<literal>int0x80</literal>Se emite el controlador de capturas syscall ("
+"definido en <filename>sys/i386/i386/exception.s</filename>), que prepara "
+"argumentos (es decir, los copia en la pila) para una llamada a una función C "
+"<citerefentry><refentrytitle>syscall</refentrytitle><manvolnum>2</manvolnum><"
+"/citerefentry> (definido en <filename>sys/i386/i386/trap.c</filename>), que "
+"procesa el pasado en trampilla. El procesamiento consiste en preparar el "
+"syscall (dependiendo del <literal>sysvec</literal> entrada), Al determinar "
+"si la llamada al sistema es de 32 bits o de 64 bits (cambia el tamaño de los "
+"parámetros), los parámetros se copian, incluida la llamada al sistema. A "
+"continuación, la función syscall real se ejecuta con el procesamiento del "
+"código de retorno (casos especiales para <literal>ERESTART</literal> y "
+"<literal>EJUSTRETURN</literal> errores). Finalmente un <literal>userret()</"
+"literal> está programado, cambiando el proceso de nuevo al ritmo de los "
+"usuarios. Los parámetros del controlador de llamada al sistema real se pasan "
+"en forma de<literal>struct thread *td</literal>, <literal>struct syscall "
+"args *</literal> argumentos donde el segundo parámetro es un puntero a la "
+"estructura de parámetros copiada."
 
 #. (itstool) path: sect4/title
 #. (itstool) path: sect2/title
@@ -730,6 +816,16 @@ msgid ""
 "<citerefentry><refentrytitle>getpid</refentrytitle><manvolnum>2</manvolnum></"
 "citerefentry> call."
 msgstr ""
+"El sistema operativo FreeBSD se adhiere al tradicional <trademark class="
+"\"registered\">UNIX</trademark> esquema, donde cada proceso tiene un número "
+"de identificación único, el llamado <firstterm>PID</firstterm> ("
+"Identificacion de proceso). Los números PID se asignan de forma lineal o "
+"aleatoria desde <literal>0</literal> a <literal>PID_MAX</literal>. La "
+"asignación de números PID se realiza mediante una búsqueda lineal del "
+"espacio PID. Cada hilo en un proceso recibe el mismo número PID como "
+"resultado de la "
+"<citerefentry><refentrytitle>getpid</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> llamada."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:413
@@ -750,6 +846,24 @@ msgid ""
 "threading library as pthread's thread ID but handling of this is internal to "
 "the library and cannot be relied on."
 msgstr ""
+"Actualmente hay dos formas de implementar subprocesos en FreeBSD. La primera "
+"forma es el subproceso M: N seguido del modelo de subprocesamiento 1: 1. La "
+"biblioteca predeterminada utilizada es el subproceso M: "
+"N(<literal>libpthread</literal>) y puede cambiar en tiempo de ejecución a "
+"subprocesos 1: 1 (<literal>libthr</literal>). el plan es cambiar pronto a la "
+"biblioteca 1: 1 por defecto. Aunque esas dos bibliotecas usan las mismas "
+"primitivas del kernel, se accede a ellas a través de diferentes API (s). La "
+"biblioteca M: N usa la <literal>kse_*</literal> familia de llamadas al "
+"sistema, mientras que la biblioteca 1: 1 utiliza la <literal>thr_*</literal> "
+"familia de llamadas al sistema. Debido a esto, no existe un concepto general "
+"de ID de hilo compartido entre el kernel y el espacio de usuario. Por "
+"supuesto, ambas bibliotecas de subprocesos implementan la API de ID de "
+"subprocesos pthread. Cada hilo del kernel (como lo describe <literal>struct "
+"thread</literal>) tiene un identificador td tid pero no es directamente "
+"accesible desde el área de usuario y solo sirve a las necesidades del "
+"kernel. También se usa para la biblioteca de subprocesos 1: 1 como ID de "
+"subproceso de pthread, pero el manejo de esto es interno a la biblioteca y "
+"no se puede confiar en él."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:434
@@ -852,6 +966,16 @@ msgid ""
 "in 2.6.C.D, where C represents major version, where new features are added "
 "or changed while D is a minor version for bugfixes only."
 msgstr ""
+"La mayoría de los <trademark class=\"registered\">Linux</trademark> el "
+"desarrollo ocurre en un <application>Git</application> sistema de control de "
+"versiones.<application>Git</application> es un sistema distribuido, por lo "
+"que no hay una fuente central de <trademark class=\"registered\">Linux</"
+"trademark>código, pero algunas ramas se consideran prominentes y oficiales. "
+"El esquema de número de versión implementado por <trademark class="
+"\"registered\">Linux</trademark> consta de cuatro números A.B.C.D. "
+"Actualmente, el desarrollo ocurre en 2.6.C.D, donde C representa la versión "
+"principal, donde se agregan o cambian nuevas características, mientras que D "
+"es una versión secundaria solo para corrección de errores."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:488
@@ -895,36 +1019,51 @@ msgid ""
 "\">Linux</trademark> calling convention expects parameters to the syscall to "
 "be passed via registers as shown here:"
 msgstr ""
+"Syscalls en <trademark class=\"registered\">Linux</trademark> se realizan ("
+"en el espacio de usuario) usando <literal>syscallX</literal> macros donde X "
+"sustituye a un número que representa el número de parámetros de la llamada "
+"al sistema dada. Esta macro se traduce en un código que se carga "
+"<varname>%eax</varname> registrarse con un número de syscall y ejecutar "
+"interrumpir <literal>0x80</literal>. Después de que se llame a este retorno "
+"de llamada al sistema, que traduce los valores de retorno negativos en "
+"positivos<literal>errno</literal> valores y conjuntos <literal>res</literal> "
+"a <literal>-1</literal> en caso de un error. Siempre que la interrupción "
+"<literal>0x80</literal>se llama el proceso ingresa al kernel en el "
+"controlador de trampas de llamadas del sistema. Esta rutina guarda todos los "
+"registros en la pila y llama a la entrada de llamada al sistema "
+"seleccionada. Tenga en cuenta que el <trademark class=\"registered\">Linux</"
+"trademark> la convención de llamada espera que los parámetros a la llamada "
+"al sistema se pasen a través de registros como se muestra aquí:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:523
 msgid "parameter -&gt; <varname>%ebx</varname>"
-msgstr ""
+msgstr "parámetro -&gt; <varname>%ebx</varname>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:526
 msgid "parameter -&gt; <varname>%ecx</varname>"
-msgstr ""
+msgstr "parámetro -&gt; <varname>%ecx</varname>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:529
 msgid "parameter -&gt; <varname>%edx</varname>"
-msgstr ""
+msgstr "parámetro -&gt; <varname>%edx</varname>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:532
 msgid "parameter -&gt; <varname>%esi</varname>"
-msgstr ""
+msgstr "parámetro -&gt; <varname>%esi</varname>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:535
 msgid "parameter -&gt; <varname>%edi</varname>"
-msgstr ""
+msgstr "parámetro -&gt; <varname>%edi</varname>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:538
 msgid "parameter -&gt; <varname>%ebp</varname>"
-msgstr ""
+msgstr "parámetro -&gt; <varname>%ebp</varname>"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:542
@@ -933,6 +1072,9 @@ msgid ""
 "\">Linux</trademark> uses different calling convention (most notably the "
 "<literal>clone</literal> syscall)."
 msgstr ""
+"Hay algunas excepciones a esto, donde <trademark class=\"registered\">Linux</"
+"trademark> utiliza una convención de llamada diferente (más notablemente la "
+"<literal>clone</literal> syscall)."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:550
@@ -941,6 +1083,9 @@ msgid ""
 "filename> and most of these handlers live in <filename>arch/i386/kernel/"
 "entry.S</filename>, where handling of the traps happens."
 msgstr ""
+"Los manipuladores de trampas se introducen en <filename>arch/i386/kernel/"
+"traps.c</filename>y la mayoría de estos manipuladores viven en <filename>"
+"arch/i386/kernel/entry.S</filename>, donde ocurre el manejo de las trampas."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:560
@@ -952,6 +1097,12 @@ msgid ""
 "is applied and finally the registers are restored from the stack and the "
 "process returns to the userspace."
 msgstr ""
+"El retorno del syscall es administrado por syscall "
+"<citerefentry><refentrytitle>exit</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry>, que verifica si el proceso tiene trabajo sin terminar, luego "
+"verifica si usamos selectores proporcionados por el usuario. Si esto sucede, "
+"se aplica la corrección de la pila y finalmente se restauran los registros "
+"de la pila y el proceso vuelve al espacio de usuario."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:571
@@ -971,72 +1122,95 @@ msgid ""
 "the cloning process regarding thread implementation. The semantic is a bit "
 "fuzzy as there is no single flag telling the syscall to create a thread."
 msgstr ""
+"En la versión 2.6, el <trademark class=\"registered\">Linux</trademark> "
+"sistema operativo redefinió algunos de los tradicionales <trademark class="
+"\"registered\">UNIX</trademark> primitivas, en particular PID, TID e hilo. "
+"PID se define para no ser único para cada proceso, por lo que para algunos "
+"procesos (subprocesos) <citerefentry><refentrytitle>getppid</refentrytitle><m"
+"anvolnum>2</manvolnum></citerefentry> devuelve el mismo valor. TID "
+"proporciona la identificación única del proceso. Esto es porque "
+"<firstterm>NPTL</firstterm> (New <trademark class=\"registered\">POSIX</"
+"trademark> Thread Library) define los subprocesos como procesos normales ("
+"llamados subprocesos 1: 1). Generando un nuevo proceso en <trademark class="
+"\"registered\">Linux</trademark> 2.6 sucede usando el <literal>clone</"
+"literal> syscall (las variantes de la bifurcación se vuelven a implementar "
+"usándolo). Esta llamada al sistema de clonación define un conjunto de "
+"indicadores que afectan el comportamiento del proceso de clonación con "
+"respecto a la implementación del hilo. La semántica es un poco difusa ya que "
+"no hay una sola bandera que le diga al syscall que cree un hilo."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:588
 msgid "Implemented clone flags are:"
-msgstr ""
+msgstr "Las banderas de clonación implementadas son:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:592
 msgid "<literal>CLONE_VM</literal> - processes share their memory space"
 msgstr ""
+"<literal>CLONE_VM</literal> - los procesos comparten su espacio de memoria"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:596
 msgid "<literal>CLONE_FS</literal> - share umask, cwd and namespace"
-msgstr ""
+msgstr "<literal>CLONE_FS</literal> - compartir umask, cwd y espacio de nombres"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:600
 msgid "<literal>CLONE_FILES</literal> - share open files"
-msgstr ""
+msgstr "<literal>CLONE_FILES</literal> - compartir archivos abiertos"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:604
 msgid ""
 "<literal>CLONE_SIGHAND</literal> - share signal handlers and blocked signals"
 msgstr ""
+"<literal>CLONE_SIGHAND</literal> - compartir manejadores de señales y "
+"señales bloqueadas"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:608
 msgid "<literal>CLONE_PARENT</literal> - share parent"
-msgstr ""
+msgstr "<literal>CLONE_PARENT</literal> - Compartir padre"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:612
 msgid "<literal>CLONE_THREAD</literal> - be thread (further explanation below)"
 msgstr ""
+"<literal>CLONE_THREAD</literal> - ser hilo (más explicación a continuación)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:616
 msgid "<literal>CLONE_NEWNS</literal> - new namespace"
-msgstr ""
+msgstr "<literal>CLONE_NEWNS</literal> - nuevo espacio de nombres"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:620
 msgid "<literal>CLONE_SYSVSEM</literal> - share SysV undo structures"
 msgstr ""
+"<literal>CLONE_SYSVSEM</literal> - compartir estructuras de deshacer SysV"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:624
 msgid "<literal>CLONE_SETTLS</literal> - setup TLS at supplied address"
 msgstr ""
+"<literal>CLONE_SETTLS</literal> - configurar TLS en la dirección "
+"proporcionada"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:628
 msgid "<literal>CLONE_PARENT_SETTID</literal> - set TID in the parent"
-msgstr ""
+msgstr "<literal>CLONE_PARENT_SETTID</literal> - Establecer TID en el padre"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:632
 msgid "<literal>CLONE_CHILD_CLEARTID</literal> - clear TID in the child"
-msgstr ""
+msgstr "<literal>CLONE_CHILD_CLEARTID</literal> - TID claro en el niño"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:636
 msgid "<literal>CLONE_CHILD_SETTID</literal> - set TID in the child"
-msgstr ""
+msgstr "<literal>CLONE_CHILD_SETTID</literal> - Establecer TID en el niño"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:641
@@ -1052,6 +1226,17 @@ msgid ""
 "<literal>CLONE_*_*TID</literal> set of flags sets/clears user supplied "
 "address to TID or 0."
 msgstr ""
+"<literal>CLONE_PARENT</literal> establece el padre real en el padre de la "
+"persona que llama. Esto es útil para subprocesos porque si el subproceso A "
+"crea el subproceso B, queremos que el subproceso B sea parental al padre de "
+"todo el grupo de subprocesos. <literal>CLONE_THREAD</literal> hace "
+"exactamente lo mismo que <literal>CLONE_PARENT</literal>, <literal>CLONE_VM</"
+"literal> y <literal>CLONE_SIGHAND</literal>, reescribe el PID para que sea "
+"el mismo que el PID de la persona que llama, configura la señal de salida "
+"como ninguna y entra en el grupo de hilos. <literal>CLONE_SETTLS</literal> "
+"configura entradas GDT para el manejo de TLS. los <literal>CLONE_*_*TID</"
+"literal> conjunto de banderas establece/borra la dirección proporcionada por "
+"el usuario a TID o 0."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:655
@@ -1064,6 +1249,14 @@ msgid ""
 "this partition is good for as glibc does not use that so only hand-written "
 "use of the clone permits a programmer to access this features."
 msgstr ""
+"Como puede ver el <literal>CLONE_THREAD</literal> hace la mayor parte del "
+"trabajo y no parece encajar muy bien en el esquema. La intención original no "
+"está clara (incluso para los autores, según los comentarios en el código), "
+"pero creo que originalmente había una bandera de subprocesamiento, que luego "
+"se dividió entre muchas otras banderas, pero esta separación nunca se "
+"terminó por completo. Tampoco está claro para qué sirve esta partición, ya "
+"que glibc no la usa, por lo que solo el uso escrito a mano del clon permite "
+"al programador acceder a estas funciones."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:666
@@ -1074,6 +1267,11 @@ msgid ""
 "<literal>CLONE_THREAD</literal> is passed in) also parent is shared for all "
 "processes forming this threaded program."
 msgstr ""
+"Para los programas sin subprocesos, el PID y el TID son los mismos. Para los "
+"programas con subprocesos, el PID y el TID del primer subproceso son iguales "
+"y cada subproceso creado comparte el mismo PID y se le asigna un TID único ("
+"porque <literal>CLONE_THREAD</literal> se pasa) también el padre se comparte "
+"para todos los procesos que forman este programa enhebrado."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:674
@@ -1082,6 +1280,9 @@ msgid ""
 "refentrytitle><manvolnum>3</manvolnum></citerefentry> in NPTL defines the "
 "clone flags like this:"
 msgstr ""
+"El código que implementa <citerefentry><refentrytitle>pthread_create</refentr"
+"ytitle><manvolnum>3</manvolnum></citerefentry> en NPTL define las banderas "
+"de clonación como esta:"
 
 #. (itstool) path: sect4/programlisting
 #: article.translate.xml:677
@@ -1114,23 +1315,25 @@ msgstr ""
 #. (itstool) path: sect4/para
 #: article.translate.xml:689
 msgid "The <literal>CLONE_SIGNAL</literal> is defined like"
-msgstr ""
+msgstr "El <literal>CLONE_SIGNAL</literal> se define como"
 
 #. (itstool) path: sect4/programlisting
 #: article.translate.xml:692
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "#define CLONE_SIGNAL (CLONE_SIGHAND | CLONE_THREAD)"
-msgstr ""
+msgstr "#define CLONE_SIGNAL (CLONE_SIGHAND | CLONE_THREAD)"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:694
 msgid "the last 0 means no signal is sent when any of the threads exits."
 msgstr ""
+"el último 0 significa que no se envía ninguna señal cuando alguno de los "
+"hilos sale."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:701
 msgid "What is emulation"
-msgstr ""
+msgstr "Que es la emulacion"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:703
@@ -1144,6 +1347,15 @@ msgid ""
 "point units emulation etc.) and operating system emulation (either in kernel "
 "of the operating system or as a userspace program)."
 msgstr ""
+"Según una definición de diccionario, la emulación es la capacidad de un "
+"programa o dispositivo para imitar otro programa o dispositivo. Esto se "
+"logra proporcionando la misma reacción a un estímulo dado que el objeto "
+"emulado. En la práctica, el mundo del software ve principalmente tres tipos "
+"de emulación: un programa utilizado para emular una máquina (QEMU, varios "
+"emuladores de consola de juegos, etc.), emulación de software de una "
+"instalación de hardware (emuladores OpenGL, emulación de unidades de punto "
+"flotante, etc.) y operación emulación del sistema (ya sea en el núcleo del "
+"sistema operativo o como un programa de espacio de usuario)."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:714
@@ -1157,6 +1369,14 @@ msgid ""
 "porting an operating system to a new (non-existent) platform. Sometimes it "
 "is just cheaper to emulate."
 msgstr ""
+"La emulación se usa generalmente en un lugar donde usar el componente "
+"original no es factible ni posible en absoluto. Por ejemplo, alguien podría "
+"querer usar un programa desarrollado para un sistema operativo diferente al "
+"que usa. Entonces la emulación es útil. A veces no hay otra forma que usar "
+"la emulación, por ejemplo, cuando el dispositivo de hardware que intenta "
+"utilizar no existe (todavía / más), no hay otra forma que la emulación. Esto "
+"sucede a menudo cuando se traslada un sistema operativo a una plataforma "
+"nueva (inexistente). A veces es más barato emular."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:725
@@ -1182,6 +1402,27 @@ msgid ""
 "one on the less powerful we have to emulate the missing features with full "
 "emulation described above."
 msgstr ""
+"Desde el punto de vista de la implementación, hay dos enfoques principales "
+"para la implementación de la emulación. Puede emular todo, aceptando "
+"posibles entradas del objeto original, manteniendo el estado interno y "
+"emitiendo la salida correcta según el estado y / o la entrada. Este tipo de "
+"emulación no requiere condiciones especiales y básicamente se puede "
+"implementar en cualquier lugar para cualquier dispositivo / programa. El "
+"inconveniente es que implementar tal emulación es bastante difícil, requiere "
+"mucho tiempo y es propenso a errores. En algunos casos, podemos utilizar un "
+"enfoque más simple. Imagine que desea emular una impresora que imprime de "
+"izquierda a derecha en una impresora que imprime de derecha a izquierda. Es "
+"obvio que no hay necesidad de una capa de emulación compleja, pero basta con "
+"invertir el texto impreso. A veces, el entorno de emulación es muy similar "
+"al emulado, por lo que solo se necesita una capa fina de traducción para "
+"proporcionar una emulación completamente funcional. Como puede ver, esto es "
+"mucho menos exigente de implementar, por lo que consume menos tiempo y es "
+"propenso a errores que el enfoque anterior. Pero la condición necesaria es "
+"que los dos entornos sean lo suficientemente similares. El tercer enfoque "
+"combina los dos anteriores. La mayoría de las veces los objetos no brindan "
+"las mismas capacidades, por lo que en el caso de emular el más poderoso en "
+"el menos poderoso, tenemos que emular las características faltantes con la "
+"emulación completa descrita anteriormente."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:751
@@ -1193,6 +1434,13 @@ msgid ""
 "\">UNIX</trademark> API consists of a set of syscalls, which are usually "
 "self contained and do not affect some global kernel state."
 msgstr ""
+"Esta tesis de maestría trata sobre la emulación de <trademark class="
+"\"registered\">UNIX</trademark> en <trademark class=\"registered\">UNIX</"
+"trademark>, que es exactamente el caso, donde solo una fina capa de "
+"traducción es suficiente para proporcionar una emulación completa. los "
+"<trademark class=\"registered\">UNIX</trademark> La API consta de un "
+"conjunto de llamadas al sistema, que normalmente son independientes y no "
+"afectan al estado global del kernel."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:758
@@ -1200,6 +1448,9 @@ msgid ""
 "There are a few syscalls that affect inner state but this can be dealt with "
 "by providing some structures that maintain the extra state."
 msgstr ""
+"Hay algunas llamadas al sistema que afectan el estado interno, pero esto se "
+"puede solucionar proporcionando algunas estructuras que mantienen el estado "
+"adicional."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:762
@@ -1211,6 +1462,12 @@ msgid ""
 "as the original game console but its an acceptable compromise between price "
 "and comfort."
 msgstr ""
+"Ninguna emulación es perfecta y las emulaciones tienden a carecer de algunas "
+"partes, pero esto no suele causar inconvenientes graves. Imagina un emulador "
+"de consola de juegos que emula todo menos la salida de música. No hay duda "
+"de que los juegos son jugables y se puede usar el emulador. Puede que no sea "
+"tan cómodo como la consola de juegos original, pero es un compromiso "
+"aceptable entre precio y comodidad."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:770
@@ -1230,16 +1487,32 @@ msgid ""
 "shared among all <trademark class=\"registered\">UNIX</trademark>es, which "
 "exist todays."
 msgstr ""
+"Lo mismo ocurre con el <trademark class=\"registered\">UNIX</trademark> API. "
+"La mayoría de los programas pueden vivir con un conjunto muy limitado de "
+"llamadas al sistema funcionando. Esas llamadas al sistema tienden a ser las "
+"más antiguas (<citerefentry><refentrytitle>leer</refentrytitle><manvolnum>2</"
+"manvolnum></citerefentry>/<citerefentry><refentrytitle>write</refentrytitle><"
+"manvolnum>2</manvolnum></citerefentry>, "
+"<citerefentry><refentrytitle>fork</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> family, "
+"<citerefentry><refentrytitle>señal</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry> handling, "
+"<citerefentry><refentrytitle>salida</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry>, "
+"<citerefentry><refentrytitle>socket</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> API), por lo que es fácil de emular porque su semántica se "
+"comparte entre todos <trademark class=\"registered\">UNIX</trademark>es, que "
+"existen hoy."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:781
 msgid "Emulation"
-msgstr ""
+msgstr "Emulación"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:784
 msgid "How emulation works in FreeBSD"
-msgstr ""
+msgstr "Cómo funciona la emulación en FreeBSD"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:786
@@ -1252,6 +1525,13 @@ msgid ""
 "<citerefentry><refentrytitle>execve</refentrytitle><manvolnum>2</manvolnum></"
 "citerefentry> is about to execute a binary it examines its type."
 msgstr ""
+"Como se dijo anteriormente, FreeBSD admite la ejecución de binarios de "
+"varios otros <trademark class=\"registered\">UNIX</trademark>es. esto "
+"funciona porque FreeBSD tiene una abstracción llamada cargador de clases de "
+"ejecución. Esto encaja en el<citerefentry><refentrytitle>execve</refentrytitl"
+"e><manvolnum>2</manvolnum></citerefentry>syscall, así que cuando "
+"<citerefentry><refentrytitle>execve</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> está a punto de ejecutar un binario examina su tipo."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:792
@@ -1265,6 +1545,15 @@ msgid ""
 "this information, the operating system can accurately determine what type of "
 "binary the given file is."
 msgstr ""
+"Básicamente, existen dos tipos de binarios en FreeBSD. Scripts de texto tipo "
+"shell que se identifican por <literal>#!</literal> como sus dos primeros "
+"personajes y normal (typically <firstterm>ELF</firstterm>) binarios, que son "
+"una representación de un objeto ejecutable compilado. La gran mayoría (se "
+"podría decir que todos) de los binarios en FreeBSD son del tipo ELF. Los "
+"archivos ELF contienen un encabezado, que especifica la ABI del sistema "
+"operativo para este archivo ELF. Al leer esta información, el sistema "
+"operativo puede determinar con precisión qué tipo de binario es el archivo "
+"dado."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:803
@@ -1279,6 +1568,17 @@ msgid ""
 "some global one. This effectively provides a very elegant and easy way of "
 "supporting execution of various binary formats."
 msgstr ""
+"Cada OS ABI debe estar registrado en el kernel de FreeBSD. Esto también se "
+"aplica a la ABI del sistema operativo nativo de FreeBSD. Así que cuando "
+"<citerefentry><refentrytitle>execve</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> ejecuta un binario, itera a través de la lista de API "
+"registradas y cuando encuentra la correcta, comienza a usar la información "
+"contenida en la descripción de la ABI del sistema operativo (su tabla "
+"syscall,<literal>errno</literal> tabla de traducción, etc.). Entonces, cada "
+"vez que el proceso llama a una llamada al sistema, utiliza su propio "
+"conjunto de llamadas al sistema en lugar de una global. Esto proporciona "
+"efectivamente una forma muy elegante y fácil de soportar la ejecución de "
+"varios formatos binarios."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:814
@@ -1290,6 +1590,13 @@ msgid ""
 "when a process exits there is a handler called that possibly cleans up "
 "whatever the subsystem needs to be cleaned."
 msgstr ""
+"La naturaleza de la emulación de diferentes sistemas operativos (y también "
+"algunos otros subsistemas) llevó a los desarrolladores a invitar a un "
+"mecanismo de eventos de controlador. Hay varios lugares en el kernel, donde "
+"se llama a una lista de controladores de eventos. Cada subsistema puede "
+"registrar un controlador de eventos y se los llama en consecuencia. Por "
+"ejemplo, cuando un proceso sale, se llama a un controlador que posiblemente "
+"limpia lo que sea que el subsistema necesite limpiarse."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:823
@@ -1299,11 +1606,15 @@ msgid ""
 "necessary to implement the <trademark class=\"registered\">Linux</trademark> "
 "emulation layer."
 msgstr ""
+"Esas sencillas instalaciones proporcionan básicamente todo lo que se "
+"necesita para la infraestructura de emulación y, de hecho, son básicamente "
+"las únicas cosas necesarias para implementar el <trademark class=\"registered"
+"\">Linux</trademark> capa de emulación."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:830
 msgid "Common primitives in the FreeBSD kernel"
-msgstr ""
+msgstr "Primitivas comunes en el kernel de FreeBSD"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:832
@@ -1311,16 +1622,19 @@ msgid ""
 "Emulation layers need some support from the operating system. I am going to "
 "describe some of the supported primitives in the FreeBSD operating system."
 msgstr ""
+"Las capas de emulación necesitan soporte del sistema operativo. Voy a "
+"describir algunas de las primitivas soportadas en el sistema operativo "
+"FreeBSD."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:837
 msgid "Locking primitives"
-msgstr ""
+msgstr "Bloqueo de primitivos"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:839
 msgid "Contributed by: Attilio Rao <email>attilio@FreeBSD.org</email>"
-msgstr ""
+msgstr "Contribuido por: Attilio Rao <email>attilio@FreeBSD.org</email>"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:841
@@ -1329,6 +1643,9 @@ msgid ""
 "rather huge number of different primitives in a way that the better one can "
 "be used for every particular, appropriate situation."
 msgstr ""
+"El conjunto de primitivas de sincronización de FreeBSD se basa en la idea de "
+"suministrar un número bastante grande de primitivas diferentes de manera que "
+"se pueda utilizar la mejor para cada situación particular y apropiada."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:846
@@ -1336,21 +1653,23 @@ msgid ""
 "To a high level point of view you can consider three kinds of "
 "synchronization primitives in the FreeBSD kernel:"
 msgstr ""
+"Desde un punto de vista de alto nivel, puede considerar tres tipos de "
+"primitivas de sincronización en el kernel de FreeBSD:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:852
 msgid "atomic operations and memory barriers"
-msgstr ""
+msgstr "operaciones atómicas y barreras de memoria"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:855
 msgid "locks"
-msgstr ""
+msgstr "Cerraduras"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:858
 msgid "scheduling barriers"
-msgstr ""
+msgstr "barreras de programación"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:862
@@ -1359,11 +1678,14 @@ msgid ""
 "really check the linked manpage (where possible) for more detailed "
 "explanations."
 msgstr ""
+"A continuación hay descripciones de las 3 familias. Para cada bloqueo, "
+"debería consultar la página de manual vinculada (cuando sea posible) para "
+"obtener explicaciones más detalladas."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:867
 msgid "Atomic operations and memory barriers"
-msgstr ""
+msgstr "Operaciones atómicas y barreras de memoria"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:869
@@ -1391,11 +1713,36 @@ msgid ""
 "barriers as well) should ideally only be used for building front-ending "
 "locks (as mutexes)."
 msgstr ""
+"Las operaciones atómicas se implementan a través de un conjunto de funciones "
+"que realizan aritmética simple sobre operandos de memoria de forma atómica "
+"con respecto a eventos externos (interrupciones, apropiación, etc.). Las "
+"operaciones atómicas pueden garantizar la atomicidad solo en tipos de datos "
+"pequeños (en el orden de magnitud del <literal>.long.</literal>tipo de datos "
+"de arquitectura C), por lo que rara vez se debe usar directamente en el "
+"código de nivel final, si no solo para operaciones muy simples (como la "
+"configuración de banderas en un mapa de bits, por ejemplo). De hecho, es "
+"bastante simple y común escribir una semántica incorrecta basada solo en "
+"operaciones atómicas (generalmente referidas como sin bloqueo). El kernel de "
+"FreeBSD ofrece una forma de realizar operaciones atómicas junto con una "
+"barrera de memoria. Las barreras de memoria garantizarán que ocurra una "
+"operación atómica siguiendo un orden específico con respecto a otros accesos "
+"a la memoria. Por ejemplo, si necesitamos que ocurra una operación atómica "
+"justo después de que se completen todas las demás escrituras pendientes (en "
+"términos de instrucciones que reordenan las actividades de búfer), "
+"necesitamos usar explícitamente una barrera de memoria junto con esta "
+"operación atómica. Por lo tanto, es sencillo entender por qué las barreras "
+"de memoria juegan un papel clave para la construcción de bloqueos de nivel "
+"superior (como refcounts, mutexes, etc.). Para obtener una explicación "
+"detallada sobre las operaciones atómicas, consulte "
+"<citerefentry><refentrytitle>atomic</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry>. Sin embargo, está lejos de señalar que las operaciones "
+"atómicas (y las barreras de memoria también) deberían idealmente usarse solo "
+"para construir bloqueos frontales (como mutex)."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:900
 msgid "Refcounts"
-msgstr ""
+msgstr "Recuentos"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:902
@@ -1409,11 +1756,20 @@ msgid ""
 "manpage discussing refcount does not exist currently, just check "
 "<filename>sys/refcount.h</filename> for an overview of the existing API."
 msgstr ""
+"Los refcounts son interfaces para manejar contadores de referencia. Se "
+"implementan a través de operaciones atómicas y están destinadas a usarse "
+"solo en casos, donde el contador de referencia es lo único que debe "
+"protegerse, por lo que incluso algo como un spin-mutex está en desuso. El "
+"uso de la interfaz refcount para estructuras, donde ya se usa un mutex, a "
+"menudo es incorrecto, ya que probablemente deberíamos cerrar el contador de "
+"referencia en algunas rutas ya protegidas. Actualmente no existe una página "
+"de manual que discuta refcount, solo verifique <filename>sys/refcount.h</"
+"filename> para obtener una descripción general de la API existente."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:916
 msgid "Locks"
-msgstr ""
+msgstr "Cerraduras"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:918
@@ -1424,31 +1780,37 @@ msgid ""
 "acquire the lock). FreeBSD's locking scheme presents three different "
 "behaviors for contenders:"
 msgstr ""
+"El kernel de FreeBSD tiene enormes clases de bloqueos. Cada bloqueo está "
+"definido por algunas propiedades peculiares, pero probablemente la más "
+"importante es el evento vinculado a los titulares de la competencia (o en "
+"otros términos, el comportamiento de los hilos que no pueden adquirir el "
+"bloqueo). El esquema de bloqueo de FreeBSD presenta tres comportamientos "
+"diferentes para los contendientes:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:927
 msgid "spinning"
-msgstr ""
+msgstr "hilado"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:930
 msgid "blocking"
-msgstr ""
+msgstr "bloqueo"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:933
 msgid "sleeping"
-msgstr ""
+msgstr "dormir"
 
 #. (itstool) path: note/para
 #: article.translate.xml:938
 msgid "numbers are not casual"
-msgstr ""
+msgstr "los números no son casuales"
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:943
 msgid "Spinning locks"
-msgstr ""
+msgstr "Cerraduras giratorias"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:945
@@ -1462,11 +1824,22 @@ msgid ""
 "CPUs, etc.), spin locks are intended to protect very small paths of code, or "
 "ideally not to be used at all if not explicitly requested (explained later)."
 msgstr ""
+"Las cerraduras giratorias permiten a los camareros girar hasta que no pueden "
+"adquirir la cerradura. Un asunto importante con el que se trata es cuando un "
+"hilo compite en un bloqueo de giro si no está programado. Dado que el kernel "
+"de FreeBSD es preventivo, esto expone el bloqueo de giro al riesgo de "
+"interbloqueos que pueden resolverse simplemente deshabilitando las "
+"interrupciones mientras se adquieren. Por esta y otras razones (como la "
+"falta de soporte de propagación de prioridad, deficiencias en los esquemas "
+"de equilibrio de carga entre las CPU, etc.), los bloqueos de giro están "
+"destinados a proteger rutas de código muy pequeñas o, idealmente, no deben "
+"usarse en absoluto si no se solicitan explícitamente ( explicado más "
+"adelante)."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:959
 msgid "Blocking"
-msgstr ""
+msgstr "Bloqueo"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:961
@@ -1478,11 +1851,18 @@ msgid ""
 "interface and are intended to be the most used kind of locks in the kernel, "
 "if no particular conditions are met."
 msgstr ""
+"Las cerraduras de bloque permiten que los camareros sean desprogramados y "
+"bloqueados hasta que el propietario de la cerradura no la deje caer y "
+"despierte a uno o más contendientes. Para evitar problemas de inanición, las "
+"cerraduras de bloqueo se propagan prioritariamente de los camareros al "
+"propietario. Los bloqueos de bloqueo deben implementarse a través de la "
+"interfaz del torniquete y están destinados a ser el tipo de bloqueo más "
+"utilizado en el núcleo, si no se cumplen condiciones particulares."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:972
 msgid "Sleeping"
-msgstr ""
+msgstr "Dormir"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:974
@@ -1494,6 +1874,13 @@ msgid ""
 "implemented through the <citerefentry><refentrytitle>sleepqueue</"
 "refentrytitle><manvolnum>9</manvolnum></citerefentry> interface."
 msgstr ""
+"Las cerraduras para dormir permiten que los camareros se desagreguen y se "
+"duerman hasta que el soporte de la cerradura no se caiga y despierte a uno o "
+"más camareros. Dado que los bloqueos de suspensión están destinados a "
+"proteger grandes rutas de código y atender eventos asincrónicos, no realizan "
+"ningún tipo de propagación de prioridad. Deben implementarse a través del <ci"
+"terefentry><refentrytitle>sleepqueue</refentrytitle><manvolnum>9</manvolnum><"
+"/citerefentry> interfaz."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:982
@@ -1510,32 +1897,54 @@ msgid ""
 "smaller paths than sleep lock (these rules are not about atomic operations "
 "or scheduling barriers, however)."
 msgstr ""
+"El orden utilizado para adquirir cerraduras es muy importante, no solo por "
+"la posibilidad de interbloqueo debido a las inversiones de orden de "
+"cerradura, sino incluso porque la adquisición de cerraduras debe seguir "
+"reglas específicas vinculadas a la naturaleza de las cerraduras. Si echa un "
+"vistazo a la tabla de arriba, la regla práctica es que si un hilo tiene un "
+"candado de nivel n (donde el nivel es el número listado cerca del tipo de "
+"candado) no está permitido adquirir un candado de niveles superiores , ya "
+"que esto rompería la semántica especificada para una ruta. Por ejemplo, si "
+"un hilo tiene un bloqueo de bloqueo (nivel 2), se le permite adquirir un "
+"bloqueo de giro (nivel 1) pero no un bloqueo de suspensión (nivel 3), ya que "
+"los bloqueos de bloqueo están destinados a proteger rutas más pequeñas que "
+"el bloqueo de suspensión ( Sin embargo, estas reglas no se refieren a "
+"operaciones atómicas o barreras de programación)."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:997
 msgid "This is a list of lock with their respective behaviors:"
-msgstr ""
+msgstr "Esta es una lista de bloqueo con sus respectivos comportamientos:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1002
+#, fuzzy
 msgid ""
 "spin mutex - spinning - <citerefentry><refentrytitle>mutex</"
 "refentrytitle><manvolnum>9</manvolnum></citerefentry>"
 msgstr ""
+"spin mutex - spinning - <citerefentry><refentrytitle>mutex</refentrytitle><ma"
+"nvolnum>9</manvolnum></citerefentry>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1005
+#, fuzzy
 msgid ""
 "sleep mutex - blocking - <citerefentry><refentrytitle>mutex</"
 "refentrytitle><manvolnum>9</manvolnum></citerefentry>"
 msgstr ""
+"sleep mutex - blocking - <citerefentry><refentrytitle>mutex</refentrytitle><m"
+"anvolnum>9</manvolnum></citerefentry>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1008
+#, fuzzy
 msgid ""
 "pool mutex - blocking - <citerefentry><refentrytitle>mtx_pool</"
 "refentrytitle><manvolnum>9</manvolnum></citerefentry>"
 msgstr ""
+"pool mutex - blocking - <citerefentry><refentrytitle>mtx_pool</refentrytitle>"
+"<manvolnum>9</manvolnum></citerefentry>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1011
@@ -1544,13 +1953,19 @@ msgid ""
 "refentrytitle><manvolnum>9</manvolnum></citerefentry> pause tsleep msleep "
 "msleep spin msleep rw msleep sx"
 msgstr ""
+"dormir familia - dormir - "
+"<citerefentry><refentrytitle>sleep</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry> pause tsleep msleep msleep spin msleep rw msleep sx"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1015
+#, fuzzy
 msgid ""
 "condvar - sleeping - <citerefentry><refentrytitle>condvar</"
 "refentrytitle><manvolnum>9</manvolnum></citerefentry>"
 msgstr ""
+"condvar - sleeping - <citerefentry><refentrytitle>condvar</refentrytitle><man"
+"volnum>9</manvolnum></citerefentry>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1018
@@ -1558,27 +1973,38 @@ msgid ""
 "rwlock - blocking - <citerefentry><refentrytitle>rwlock</"
 "refentrytitle><manvolnum>9</manvolnum></citerefentry>"
 msgstr ""
+"rwlock - bloqueo - <citerefentry><refentrytitle>rwlock</refentrytitle><manvol"
+"num>9</manvolnum></citerefentry>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1021
+#, fuzzy
 msgid ""
 "sxlock - sleeping - <citerefentry><refentrytitle>sx</"
 "refentrytitle><manvolnum>9</manvolnum></citerefentry>"
 msgstr ""
+"sxlock - sleeping - <citerefentry><refentrytitle>sx</refentrytitle><manvolnum"
+">9</manvolnum></citerefentry>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1024
+#, fuzzy
 msgid ""
 "lockmgr - sleeping - <citerefentry><refentrytitle>lockmgr</"
 "refentrytitle><manvolnum>9</manvolnum></citerefentry>"
 msgstr ""
+"lockmgr - sleeping - <citerefentry><refentrytitle>lockmgr</refentrytitle><man"
+"volnum>9</manvolnum></citerefentry>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1027
+#, fuzzy
 msgid ""
 "semaphores - sleeping - <citerefentry><refentrytitle>sema</"
 "refentrytitle><manvolnum>9</manvolnum></citerefentry>"
 msgstr ""
+"semaphores - sleeping - <citerefentry><refentrytitle>sema</refentrytitle><man"
+"volnum>9</manvolnum></citerefentry>"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1031
@@ -1587,11 +2013,14 @@ msgid ""
 "to handle recursion, but currently recursion is only supported by mutexes "
 "and lockmgrs."
 msgstr ""
+"Entre estos bloqueos, solo los mutex, sxlocks, rwlocks y lockmgrs están "
+"destinados a manejar la recursividad, pero actualmente la recursividad solo "
+"es compatible con mutexes y lockmgrs."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1038
 msgid "Scheduling barriers"
-msgstr ""
+msgstr "Barreras de programación"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1040
@@ -1599,21 +2028,26 @@ msgid ""
 "Scheduling barriers are intended to be used in order to drive scheduling of "
 "threading. They consist mainly of three different stubs:"
 msgstr ""
+"Las barreras de programación están destinadas a utilizarse para impulsar la "
+"programación del enhebrado. Consisten principalmente en tres stubs "
+"diferentes:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1046
 msgid "critical sections (and preemption)"
-msgstr ""
+msgstr "secciones críticas (y preferencia)"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1049
+#, fuzzy
 msgid "sched_bind"
-msgstr ""
+msgstr "sched_bind"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1052
+#, fuzzy
 msgid "sched_pin"
-msgstr ""
+msgstr "sched_pin"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1056
@@ -1624,11 +2058,16 @@ msgid ""
 "<citerefentry><refentrytitle>witness</refentrytitle><manvolnum>4</"
 "manvolnum></citerefentry>)."
 msgstr ""
+"Generalmente, estos deben usarse solo en un contexto particular e incluso si "
+"a menudo pueden reemplazar bloqueos, deben evitarse porque no permiten el "
+"diagnóstico de problemas eventuales simples con herramientas de depuración "
+"de bloqueo (como <citerefentry><refentrytitle>testigo</refentrytitle><manvoln"
+"um>4</manvolnum></citerefentry>)."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1064
 msgid "Critical sections"
-msgstr ""
+msgstr "Secciones críticas"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1066
@@ -1648,11 +2087,27 @@ msgid ""
 "can often replace a lock effectively but should be used carefully in order "
 "to not lose the whole advantage that preemption brings."
 msgstr ""
+"El kernel de FreeBSD se ha hecho preventivo básicamente para tratar con "
+"hilos de interrupción. De hecho, para evitar una latencia de interrupción "
+"alta, los subprocesos de prioridad de tiempo compartido pueden ser "
+"reemplazados por subprocesos de interrupción (de esta manera, no necesitan "
+"esperar para ser programados como vistas previas de la ruta normal). La "
+"preferencia, sin embargo, introduce nuevos puntos de carrera que también "
+"deben manejarse. A menudo, para hacer frente a la preferencia, lo más "
+"sencillo es desactivarla por completo. Una sección crítica define un "
+"fragmento de código (delimitado por el par de funciones <citerefentry><refent"
+"rytitle>critical_enter</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry> y <citerefentry><refentrytitle>critical_exit</refentrytitle><ma"
+"nvolnum>9</manvolnum></citerefentry>, donde se garantiza que la preferencia "
+"no ocurrirá (hasta que el código protegido se ejecute por completo). Esto a "
+"menudo puede reemplazar un candado de manera efectiva, pero debe usarse con "
+"cuidado para no perder toda la ventaja que brinda la preferencia."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1085
+#, fuzzy
 msgid "sched_pin/sched_unpin"
-msgstr ""
+msgstr "sched_pin/sched_unpin"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1087
@@ -1666,11 +2121,20 @@ msgid ""
 "threads will not change those data. The latter condition will determine a "
 "critical section as a too strong condition for our code."
 msgstr ""
+"Otra forma de lidiar con la preferencia es <function>sched_pin()</function> "
+"interfaz. Si un fragmento de código está cerrado en el "
+"<function>sched_pin()</function> y <function>sched_unpin()</function> par de "
+"funciones, se garantiza que el subproceso respectivo, incluso si puede ser "
+"reemplazado, siempre se ejecutará en la misma CPU. La fijación es muy eficaz "
+"en el caso particular cuando tenemos que acceder a datos por CPU y asumimos "
+"que otros hilos no cambiarán esos datos. La última condición determinará una "
+"sección crítica como una condición demasiado fuerte para nuestro código."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1101
+#, fuzzy
 msgid "sched_bind/sched_unbind"
-msgstr ""
+msgstr "sched_bind/sched_unbind"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1103
@@ -1685,11 +2149,21 @@ msgid ""
 "scheduler structures, they need to be enclosed in <function>sched_lock</"
 "function> acquisition/releasing when used."
 msgstr ""
+"<function>sched_bind</function> es una API que se utiliza para vincular un "
+"hilo a una CPU en particular durante todo el tiempo que ejecuta el código, "
+"hasta que <function>sched_unbind</function>la llamada a la función no la "
+"desvincula. Esta función tiene un papel clave en situaciones en las que no "
+"puede confiar en el estado actual de las CPU (por ejemplo, en las primeras "
+"etapas del arranque), ya que desea evitar que su hilo migre en CPU "
+"inactivas. Ya que <function>sched_bind</function> y<function>sched_unbind</"
+"function> manipular las estructuras internas del programador, es necesario "
+"incluirlas en <function>sched_lock</function> adquisición/liberación cuando "
+"se usa."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1120
 msgid "Proc structure"
-msgstr ""
+msgstr "Estructura de proceso"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1122
@@ -1702,6 +2176,13 @@ msgid ""
 "layer specific data. This <literal>proc</literal> entry is protected by the "
 "proc mutex."
 msgstr ""
+"Varias capas de emulación a veces requieren algunos datos adicionales por "
+"proceso. Puede administrar estructuras separadas (una lista, un árbol, etc.) "
+"que contienen estos datos para cada proceso, pero esto tiende a ser lento y "
+"consume memoria. Para solucionar este problema el FreeBSD <literal>proc</"
+"literal> estructura contiene <literal>p_emuldata</literal>,que es un puntero "
+"vacío a algunos datos específicos de la capa de emulación. Esta "
+"<literal>proc</literal> La entrada está protegida por proc mutex."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1133
@@ -1713,6 +2194,13 @@ msgid ""
 "structure for the given ABI is stored we can effectively determine whether "
 "the process belongs to our emulation layer. The code typically looks like:"
 msgstr ""
+"El FreeBSD <literal>proc</literal> structure contains a <literal>p_sysent</"
+"literal>entrada que identifica qué ABI está ejecutando este proceso. De "
+"hecho, es un puntero al <literal>sysentvec</literal> descrito arriba. "
+"Entonces, al comparar este puntero con la dirección donde el "
+"<literal>sysentvec</literal> Si se almacena la estructura para la ABI dada, "
+"podemos determinar efectivamente si el proceso pertenece a nuestra capa de "
+"emulación. El código normalmente se ve así:"
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:1143
@@ -1735,6 +2223,13 @@ msgid ""
 "nor A.OUT <trademark class=\"registered\">Linux</trademark> processes on "
 "i386."
 msgstr ""
+"Como puede ver, utilizamos eficazmente la <literal>__predict_true</literal> "
+"modificador para colapsar el caso más común (proceso FreeBSD) a una "
+"operación de retorno simple preservando así el alto rendimiento. Este código "
+"debería convertirse en una macro porque actualmente no es muy flexible, es "
+"decir, no admitimos <trademark class=\"registered\">Linux</trademark>64 "
+"emulación ni A.OUT<trademark class=\"registered\">Linux</trademark> procesos "
+"en i386."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1156
@@ -1753,11 +2248,22 @@ msgid ""
 "an ordinary file. A file handler contains a pointer to its vnode. More then "
 "one file handler can point to the same vnode."
 msgstr ""
+"el subsistema FreeBSD VFS es muy complejo pero es <trademark class="
+"\"registered\">Linux</trademark> La capa de emulación utiliza solo un "
+"pequeño subconjunto a través de una API bien definida. Puede operar en "
+"vnodes o controladores de archivos. Vnode representa un vnode virtual, es "
+"decir, la representación de un nodo en VFS. Otra representación es un "
+"controlador de archivos, que representa un archivo abierto desde la "
+"perspectiva de un proceso. Un manejador de archivos puede representar un "
+"socket o un archivo ordinario. Un controlador de archivos contiene un "
+"puntero a su vnode. Más de un controlador de archivos puede apuntar al mismo "
+"vnode."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1170
+#, fuzzy
 msgid "namei"
-msgstr ""
+msgstr "namei"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1172
@@ -1774,9 +2280,23 @@ msgid ""
 "suppressed. This routine is used all over the kernel and its performance is "
 "very critical."
 msgstr ""
+"La "
+"<citerefentry><refentrytitle>namei</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry> La rutina es un punto de entrada central para la búsqueda y "
+"traducción de nombres de rutas. Atraviesa la ruta punto por punto desde el "
+"punto de inicio hasta el punto final utilizando la función de búsqueda, que "
+"es interna de VFS. los "
+"<citerefentry><refentrytitle>namei</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry> syscall puede hacer frente a enlaces simbólicos, rutas "
+"absolutas y relativas. Cuando se busca un camino usando "
+"<citerefentry><refentrytitle>namei</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry> se ingresa en la caché de nombres. Este comportamiento se "
+"puede suprimir. Esta rutina se utiliza en todo el kernel y su rendimiento es "
+"muy crítico."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1184
+#, fuzzy
 msgid "vn_fullpath"
 msgstr "vn_fullpath"
 
@@ -1791,11 +2311,18 @@ msgid ""
 "structures), it does not work with hardlinks, etc. This routine is used in "
 "several places in the Linuxulator."
 msgstr ""
+"La <citerefentry><refentrytitle>vn_fullpath</refentrytitle><manvolnum>9</manv"
+"olnum></citerefentry> La función hace el mejor esfuerzo para atravesar la "
+"caché de nombres de VFS y devuelve una ruta para un vnode dado (bloqueado). "
+"Este proceso no es confiable pero funciona bien para los casos más comunes. "
+"La falta de confiabilidad se debe a que se basa en la caché VFS (no "
+"atraviesa las estructuras medias), no funciona con enlaces duros, etc. Esta "
+"rutina se usa en varios lugares del Linuxulator."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1197
 msgid "Vnode operations"
-msgstr ""
+msgstr "Operaciones de vnode"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1201
@@ -1803,6 +2330,8 @@ msgid ""
 "<function>fgetvp</function> - given a thread and a file descriptor number it "
 "returns the associated vnode"
 msgstr ""
+"<function>fgetvp</function> - dado un hilo y un número de descriptor de "
+"archivo, devuelve el vnode asociado"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1206
@@ -1810,11 +2339,13 @@ msgid ""
 "<citerefentry><refentrytitle>vn_lock</refentrytitle><manvolnum>9</"
 "manvolnum></citerefentry> - locks a vnode"
 msgstr ""
+"<citerefentry><refentrytitle>vn_lock</refentrytitle><manvolnum>9</manvolnum><"
+"/citerefentry> - bloquea un vnode"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1209
 msgid "<function>vn_unlock</function> - unlocks a vnode"
-msgstr ""
+msgstr "<function>vn_unlock</function> - desbloquea un vnode"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1213
@@ -1822,6 +2353,8 @@ msgid ""
 "<citerefentry><refentrytitle>VOP_READDIR</refentrytitle><manvolnum>9</"
 "manvolnum></citerefentry> - reads a directory referenced by a vnode"
 msgstr ""
+"<citerefentry><refentrytitle>VOP_READDIR</refentrytitle><manvolnum>9</manvoln"
+"um></citerefentry> - lee un directorio al que hace referencia un vnode"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1217
@@ -1830,6 +2363,9 @@ msgid ""
 "manvolnum></citerefentry> - gets attributes of a file or a directory "
 "referenced by a vnode"
 msgstr ""
+"<citerefentry><refentrytitle>VOP_GETATTR</refentrytitle><manvolnum>9</manvoln"
+"um></citerefentry> - obtiene atributos de un archivo o directorio al que "
+"hace referencia un vnode"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1221
@@ -1837,6 +2373,8 @@ msgid ""
 "<citerefentry><refentrytitle>VOP_LOOKUP</refentrytitle><manvolnum>9</"
 "manvolnum></citerefentry> - looks up a path to a given directory"
 msgstr ""
+"<citerefentry><refentrytitle>VOP_LOOKUP</refentrytitle><manvolnum>9</manvolnu"
+"m></citerefentry> - busca una ruta a un directorio determinado"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1225
@@ -1844,6 +2382,8 @@ msgid ""
 "<citerefentry><refentrytitle>VOP_OPEN</refentrytitle><manvolnum>9</"
 "manvolnum></citerefentry> - opens a file referenced by a vnode"
 msgstr ""
+"<citerefentry><refentrytitle>VOP_OPEN</refentrytitle><manvolnum>9</manvolnum>"
+"</citerefentry> - abre un archivo referenciado por un vnode"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1229
@@ -1851,6 +2391,8 @@ msgid ""
 "<citerefentry><refentrytitle>VOP_CLOSE</refentrytitle><manvolnum>9</"
 "manvolnum></citerefentry> - closes a file referenced by a vnode"
 msgstr ""
+"<citerefentry><refentrytitle>VOP_CLOSE</refentrytitle><manvolnum>9</manvolnum"
+"></citerefentry> - cierra un archivo al que hace referencia un vnode"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1233
@@ -1858,6 +2400,8 @@ msgid ""
 "<citerefentry><refentrytitle>vput</refentrytitle><manvolnum>9</manvolnum></"
 "citerefentry> - decrements the use count for a vnode and unlocks it"
 msgstr ""
+"<citerefentry><refentrytitle>vput</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry> - disminuye el recuento de uso de un vnode y lo desbloquea"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1237
@@ -1865,6 +2409,8 @@ msgid ""
 "<citerefentry><refentrytitle>vrele</refentrytitle><manvolnum>9</manvolnum></"
 "citerefentry> - decrements the use count for a vnode"
 msgstr ""
+"<citerefentry><refentrytitle>vrele</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry> - disminuye el recuento de uso de un vnode"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1241
@@ -1872,11 +2418,13 @@ msgid ""
 "<citerefentry><refentrytitle>vref</refentrytitle><manvolnum>9</manvolnum></"
 "citerefentry> - increments the use count for a vnode"
 msgstr ""
+"<citerefentry><refentrytitle>vref</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry> - incrementa el recuento de uso de un vnode"
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1248
 msgid "File handler operations"
-msgstr ""
+msgstr "Operaciones del controlador de archivos"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1252
@@ -1884,22 +2432,28 @@ msgid ""
 "<function>fget</function> - given a thread and a file descriptor number it "
 "returns associated file handler and references it"
 msgstr ""
+"<function>fget</function> - dado un hilo y un número de descriptor de "
+"archivo, devuelve el controlador de archivo asociado y lo hace referencia"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1257
 msgid "<function>fdrop</function> - drops a reference to a file handler"
 msgstr ""
+"<function>fdrop</function> - suelta una referencia a un controlador de "
+"archivos"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1261
 msgid "<function>fhold</function> - references a file handler"
 msgstr ""
+"<function>fhold</function> - hace referencia a un controlador de archivos"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:1271
 msgid ""
 "<trademark class=\"registered\">Linux</trademark> emulation layer -MD part"
 msgstr ""
+"<trademark class=\"registered\">Linux</trademark> capa de emulación-parte MD"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1273
@@ -1913,11 +2467,20 @@ msgid ""
 "next part is the machine independent part of the Linuxulator. This section "
 "only covers i386 and ELF handling. A.OUT is obsolete and untested."
 msgstr ""
+"Esta sección trata de la implementación de <trademark class=\"registered\""
+">Linux</trademark> capa de emulación en el sistema operativo FreeBSD. "
+"Primero describe la parte dependiente de la máquina hablando de cómo y dónde "
+"se implementa la interacción entre el área de usuario y el kernel. Habla de "
+"llamadas al sistema, señales, ptrace, trampas, reparación de pila. Esta "
+"parte trata sobre i386, pero está escrito en general, por lo que otras "
+"arquitecturas no deberían diferir mucho. La siguiente parte es la parte "
+"independiente de la máquina del Linuxulator. Esta sección solo cubre el "
+"manejo de i386 y ELF. A.OUT es obsoleto y no se ha probado."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1284
 msgid "Syscall handling"
-msgstr ""
+msgstr "Manejo de llamadas al sistema"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1286
@@ -1929,11 +2492,19 @@ msgid ""
 "calls linux prepsyscall routine for the <trademark class=\"registered"
 "\">Linux</trademark> ABI."
 msgstr ""
+"El manejo de syscall está escrito principalmente en <filename>linux_sysvec."
+"c</filename>, que cubre la mayoría de las rutinas señaladas en la "
+"<literal>sysentvec</literal> estructura. Cuando una <trademark class="
+"\"registered\">Linux</trademark> proceso que se ejecuta en FreeBSD emite una "
+"llamada al sistema, la rutina general de llamada al sistema llama a la "
+"rutina prepsyscall de linux para <trademark class=\"registered\">Linux</"
+"trademark> ABI."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1294
+#, fuzzy
 msgid "<trademark class=\"registered\">Linux</trademark> prepsyscall"
-msgstr ""
+msgstr "<trademark class=\"registered\">Linux</trademark> prepsyscall"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1296
@@ -1950,11 +2521,22 @@ msgid ""
 "fix by inserting a dummy parameter in the <function>linux_clone</function> "
 "prototype."
 msgstr ""
+"<trademark class=\"registered\">Linux</trademark>pasa argumentos a las "
+"llamadas al sistema a través de registros (es por eso que está limitado a 6 "
+"parámetros en i386) mientras que FreeBSD usa la pila. los <trademark class="
+"\"registered\">Linux</trademark> La rutina prepsyscall debe copiar los "
+"parámetros de los registros a la pila. El orden de los registros es: "
+"<varname>%ebx</varname>, <varname>%ecx</varname>, <varname>%edx</varname>, "
+"<varname>%esi</varname>, <varname>%edi</varname>, <varname>%ebp</varname>. "
+"El problema es que esto es cierto solo para <emphasis>most</emphasis> de las "
+"llamadas al sistema. Algunos (más notablemente <function>clone</function>) "
+"usa un orden diferente pero afortunadamente es fácil de arreglar insertando "
+"un parámetro ficticio en el <function>linux_clone</function> prototipo."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1311
 msgid "Syscall writing"
-msgstr ""
+msgstr "Escritura de syscall"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1313
@@ -1963,10 +2545,12 @@ msgid ""
 "various flags in <filename>syscalls.master</filename>. The form of the file "
 "is:"
 msgstr ""
+"Cada syscall implementada en Linuxulator debe tener su prototipo con varios "
+"indicadores en <filename>syscalls.master</filename>. La forma del archivo es:"
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:1318
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "...\n"
 "\tAUE_FORK STD\t\t{ int linux_fork(void); }\n"
@@ -1995,6 +2579,18 @@ msgid ""
 "message about the syscall not being implemented and returning "
 "<literal>ENOSYS</literal>)."
 msgstr ""
+"La primera columna representa el número de llamada al sistema. La segunda "
+"columna es para el soporte de auditoría. La tercera columna representa el "
+"tipo de llamada al sistema. Es bien <literal>STD</literal>, <literal>OBSOL</"
+"literal>, <literal>NOPROTO</literal> y <literal>UNIMPL</literal>. "
+"<literal>STD</literal> es una llamada al sistema estándar con prototipo "
+"completo e implementación. <literal>OBSOL</literal> es Obsoleto y define "
+"solo el prototipo.. <literal>NOPROTO</literal> significa que la llamada al "
+"sistema se implementa en otro lugar, así que no anteponga el prefijo ABI, "
+"etc. <literal>UNIMPL</literal> Significa que el syscall será sustituido por "
+"el <function>nosys</function> syscall (una syscall que simplemente imprime "
+"un mensaje sobre la no implementación del syscall y que regresa "
+"<literal>ENOSYS</literal>)."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1340
@@ -2005,10 +2601,15 @@ msgid ""
 "filename> contains definitions of syscall names and their numerical value, e."
 "g.:"
 msgstr ""
+"Desde <filename>syscalls.master</filename> un script genera tres archivos: "
+"<filename>linux_syscall.h</filename>, <filename>linux_proto.h</filename> y "
+"<filename>linux_sysent.c</filename>. El <filename>linux_syscall.h</filename> "
+"contiene definiciones de nombres de llamadas al sistema y su valor numérico, "
+"por ejemplo:"
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:1347
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "...\n"
 "#define LINUX_SYS_linux_fork 2\n"
@@ -2028,10 +2629,12 @@ msgid ""
 "The <filename>linux_proto.h</filename> contains structure definitions of "
 "arguments to every syscall, e.g.:"
 msgstr ""
+"El <filename>linux_proto.h</filename> contiene definiciones de estructura de "
+"argumentos para cada llamada al sistema, por ejemplo:"
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:1357
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "struct linux_fork_args {\n"
 "  register_t dummy;\n"
@@ -2047,16 +2650,22 @@ msgid ""
 "And finally, <filename>linux_sysent.c</filename> contains structure "
 "describing the system entry table, used to actually dispatch a syscall, e.g.:"
 msgstr ""
+"Y finalmente, <filename>linux_sysent.c</filename> contiene una estructura "
+"que describe la tabla de entrada del sistema, utilizada para enviar una "
+"llamada al sistema, por ejemplo:"
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:1365
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "{ 0, (sy_call_t *)linux_fork, AUE_FORK, NULL, 0, 0 }, /* 2 = linux_fork */\n"
 "{ AS(close_args), (sy_call_t *)close, AUE_CLOSE, NULL, 0, 0 }, /* 6 = close */"
 msgstr ""
 "{ 0, (sy_call_t *)linux_fork, AUE_FORK, NULL, 0, 0 }, /* 2 = linux_fork */\n"
-"{ AS(close_args), (sy_call_t *)close, AUE_CLOSE, NULL, 0, 0 }, /* 6 = close */"
+"{ AS(close_args), (sy_call_t *)close, AUE_CLOSE, NULL, 0, 0 }, /* 6 = close "
+"*/\n"
+"{ AS(close_args), (sy_call_t *)close, AUE_CLOSE, NULL, 0, 0 }, /* 6 = close "
+"*/"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1368
@@ -2071,11 +2680,21 @@ msgid ""
 "<citerefentry><refentrytitle>close</refentrytitle><manvolnum>2</manvolnum></"
 "citerefentry> in the kernel."
 msgstr ""
+"Como puedes ver <function>linux_fork</function> se implementa en el propio "
+"Linuxulator, por lo que la definición es de <literal>STD</literal> type y no "
+"tiene argumento, que es exhibido por la estructura de argumento ficticia. "
+"Por otra parte <function>close</function> es solo un alias de FreeBSD real "
+"<citerefentry><refentrytitle>cierre</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> por lo que no tiene una estructura de argumentos linux "
+"asociada y en la tabla de entrada del sistema no tiene el prefijo linux, ya "
+"que llama al real "
+"<citerefentry><refentrytitle>cierre</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> en el kernel."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1380
 msgid "Dummy syscalls"
-msgstr ""
+msgstr "Llamadas al sistema ficticias"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1382
@@ -2092,11 +2711,22 @@ msgid ""
 "name of the syscall that was called in order to know what syscalls are more "
 "important to implement."
 msgstr ""
+"El <trademark class=\"registered\">Linux</trademark> La capa de emulación no "
+"está completa, ya que algunas llamadas al sistema no se implementan "
+"correctamente y otras no se implementan en absoluto. La capa de emulación "
+"emplea una función para marcar llamadas al sistema no implementadas con "
+"el<literal>DUMMY</literal> macro. Estas definiciones ficticias residen en "
+"<filename>linux_dummy.c</filename>en forma de <literal>DUMMY(syscall);</"
+"literal>, que luego se traduce a varios archivos auxiliares de syscall y la "
+"implementación consiste en imprimir un mensaje diciendo que este syscall no "
+"está implementado. los <literal>UNIMPL</literal> prototype no se utiliza "
+"porque queremos poder identificar el nombre de la llamada al sistema que se "
+"llamó para saber qué llamadas al sistema son más importantes de implementar."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1399
 msgid "Signal handling"
-msgstr ""
+msgstr "Manejo de señales"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1401
@@ -2106,11 +2736,17 @@ msgid ""
 "\"registered\">Linux</trademark> compatibility layer defines "
 "<function>linux_sendsig</function> routine for this purpose."
 msgstr ""
+"El manejo de señales se realiza generalmente en el kernel de FreeBSD para "
+"todas las compatibilidades binarias con una llamada a una capa dependiente "
+"de la compatibilidad. <trademark class=\"registered\">Linux</trademark> la "
+"capa de compatibilidad define <function>linux_sendsig</function> rutina para "
+"este propósito."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1408
+#, fuzzy
 msgid "<trademark class=\"registered\">Linux</trademark> sendsig"
-msgstr ""
+msgstr "<trademark class=\"registered\">Linux</trademark> sendsig"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1410
@@ -2126,11 +2762,22 @@ msgid ""
 "copies out the signal context to the userspace and prepares context for the "
 "actual signal handler to run."
 msgstr ""
+"Esta rutina comprueba primero si la señal se ha instalado con un "
+"<literal>SA_SIGINFO</literal> en cuyo caso llama <function>linux_rt_sendsig</"
+"function> rutina en su lugar. Además, asigna (o reutiliza un contexto de "
+"manejador de señal ya existente), luego crea una lista de argumentos para el "
+"manejador de señal. Traduce el número de señal basado en la tabla de "
+"traducción de señales, asigna un manejador, traduce sigset. Luego guarda "
+"contexto para el <function>sigreturn</function> rutina (varios registros, "
+"número de trampa traducido y máscara de señal). Finalmente, copia el "
+"contexto de la señal al espacio de usuario y prepara el contexto para que se "
+"ejecute el manejador de señal real."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1425
+#, fuzzy
 msgid "linux_rt_sendsig"
-msgstr ""
+msgstr "linux_rt_sendsig"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1427
@@ -2142,11 +2789,18 @@ msgid ""
 "could not be merged with a benefit of less code duplication and possibly "
 "even faster execution."
 msgstr ""
+"Esta rutina es similar a <function>linux_sendsig</function> solo la "
+"preparación del contexto de la señal es diferente. Agregando "
+"<literal>siginfo</literal>, <literal>ucontext</literal>, y algo <trademark "
+"class=\"registered\">POSIX</trademark> partes. Podría valer la pena "
+"considerar si esas dos funciones no se pueden combinar con el beneficio de "
+"una menor duplicación de código y posiblemente una ejecución aún más rápida."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1438
+#, fuzzy
 msgid "linux_sigreturn"
-msgstr ""
+msgstr "linux_sigreturn"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1440
@@ -2155,11 +2809,16 @@ msgid ""
 "security checks and restores the original process context. It also unmasks "
 "the signal in process signal mask."
 msgstr ""
+"Esta llamada al sistema se utiliza para la devolución del controlador de "
+"señales. Realiza algunas comprobaciones de seguridad y restaura el contexto "
+"del proceso original. También desenmascara la señal en la máscara de señal "
+"de proceso."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1448
+#, fuzzy
 msgid "Ptrace"
-msgstr ""
+msgstr "Ptrace"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1450
@@ -2178,6 +2837,22 @@ msgid ""
 "\"registered\">UNIX</trademark>-wide standard implemented in most <trademark "
 "class=\"registered\">UNIX</trademark>es around the world."
 msgstr ""
+"Muchos <trademark class=\"registered\">UNIX</trademark> derivados "
+"implementan el "
+"<citerefentry><refentrytitle>ptrace</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> syscall para permitir varias funciones de seguimiento y "
+"depuración. Esta función permite que el proceso de rastreo obtenga diversa "
+"información sobre el proceso rastreado, como volcados de registros, "
+"cualquier memoria del espacio de direcciones del proceso, etc. y también "
+"rastrear el proceso como en el paso de una instrucción o entre entradas del "
+"sistema (syscalls y trampas). "
+"<citerefentry><refentrytitle>ptrace</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry>también le permite configurar diversa información en el proceso "
+"de seguimiento (registros, etc.). "
+"<citerefentry><refentrytitle>ptrace</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> es a <trademark class=\"registered\">UNIX</trademark>-amplio "
+"estándar implementado en la mayoría <trademark class=\"registered\">UNIX</"
+"trademark>es alrededor del mundo."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1461
@@ -2202,6 +2877,27 @@ msgid ""
 "must be done to preserve <trademark class=\"registered\">Linux</trademark> "
 "semantics."
 msgstr ""
+"<trademark class=\"registered\">Linux</trademark> emulación en FreeBSD "
+"implementa la "
+"<citerefentry><refentrytitle>ptrace</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> instalación en <filename>linux_ptrace.c</filename>. Las "
+"rutinas para convertir registros entre <trademark class=\"registered\""
+">Linux</trademark> Y FreeBSD y el actual "
+"<citerefentry><refentrytitle>ptrace</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> syscall emulación syscall. El syscall es un bloque de "
+"conmutadores largo que implementa su contraparte en FreeBSD para cada<citeref"
+"entry><refentrytitle>ptrace</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> mando. los "
+"<citerefentry><refentrytitle>ptrace</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> los comandos son en su mayoría iguales entre <trademark class="
+"\"registered\">Linux</trademark> y FreeBSD, por lo que normalmente solo se "
+"necesita una pequeña modificación. Por ejemplo, <literal>PT_GETREGS</"
+"literal> en <trademark class=\"registered\">Linux</trademark> opera con "
+"datos directos, mientras que FreeBSD usa un puntero a los datos, por lo que "
+"después de realizar un (nativo) "
+"<citerefentry><refentrytitle>ptrace</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> syscall, se debe realizar una copia para conservar <trademark "
+"class=\"registered\">Linux</trademark> semántica."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1474
@@ -2213,6 +2909,13 @@ msgid ""
 "manvolnum></citerefentry> consumer) in the Linuxulator environment. Also "
 "<literal>PT_SYSCALL</literal> is not implemented."
 msgstr ""
+"La "
+"<citerefentry><refentrytitle>ptrace</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> La implementación en Linuxulator tiene algunas debilidades "
+"conocidas. Ha habido pánico al usar <command>strace</command> (el cual es un "
+"<citerefentry><refentrytitle>ptrace</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> consumidor) en el entorno Linuxulator. también "
+"<literal>PT_SYSCALL</literal> no está implementado."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1484
@@ -2223,10 +2926,16 @@ msgid ""
 "\">Linux</trademark> and FreeBSD differs in opinion on what a trap is so "
 "this is dealt with here. The code is actually very short:"
 msgstr ""
+"Siempre que un <trademark class=\"registered\">Linux</trademark> proceso que "
+"se ejecuta en la capa de emulación trampas la trampa en sí se maneja de "
+"forma transparente con la única excepción de la traducción de trampas. "
+"<trademark class=\"registered\">Linux</trademark> y FreeBSD difiere de "
+"opinión sobre lo que es una trampa, así que esto se trata aquí. El código es "
+"realmente muy corto:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:1490
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "static int\n"
 "translate_traps(int signal, int trap_code)\n"
@@ -2271,7 +2980,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: article.translate.xml:1512
 msgid "Stack fixup"
-msgstr ""
+msgstr "Reparación de pila"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1514
@@ -2284,11 +2993,20 @@ msgid ""
 "and adjusts the stack of the user space process to point right after those "
 "tags. So RTLD works in a smart way."
 msgstr ""
+"El editor de enlaces en tiempo de ejecución de RTLD espera las llamadas "
+"etiquetas AUX en la pila durante una <function>execve</function>por lo que "
+"se debe realizar una reparación para garantizar esto. Por supuesto, cada "
+"sistema RTLD es diferente, por lo que la capa de emulación debe proporcionar "
+"su propia rutina de reparación de la pila para hacer esto. Linuxulator "
+"también. los <function>elf_linux_fixup</function> simplemente copia las "
+"etiquetas AUX a la pila y ajusta la pila del proceso de espacio de usuario "
+"para que apunte justo después de esas etiquetas. Entonces RTLD funciona de "
+"manera inteligente."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1526
 msgid "A.OUT support"
-msgstr ""
+msgstr "soporte A.OUT"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1528
@@ -2304,12 +3022,25 @@ msgid ""
 "for loading <trademark class=\"registered\">Linux</trademark> A.OUT binaries "
 "is in <filename>imgact_linux.c</filename> file."
 msgstr ""
+"La <trademark class=\"registered\">Linux</trademark> La capa de emulación en "
+"i386 también admite <trademark class=\"registered\">Linux</trademark>A.OUT "
+"binarios. Prácticamente todo lo descrito en las secciones anteriores debe "
+"implementarse para la compatibilidad con A.OUT (además de la traducción de "
+"trampas y el envío de señales). El soporte para los binarios A.OUT ya no se "
+"mantiene, especialmente la emulación 2.6 no funciona con él, pero esto no "
+"causa ningún problema, ya que la base de linux en los puertos probablemente "
+"no soporte los binarios A.OUT en absoluto. Este soporte probablemente se "
+"eliminará en el futuro. La mayoría de las cosas necesarias para "
+"cargar<trademark class=\"registered\">Linux</trademark> A.OUT binarios está "
+"en <filename>imgact_linux.c</filename> archivo."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:1543
 msgid ""
 "<trademark class=\"registered\">Linux</trademark> emulation layer -MI part"
 msgstr ""
+"<trademark class=\"registered\">Linux</trademark> capa de emulación - parte "
+"MI"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1545
@@ -2320,11 +3051,16 @@ msgid ""
 "implementation (on i386) and futexes. Then we talk briefly about some "
 "syscalls."
 msgstr ""
+"Esta sección habla de la parte independiente de la máquina del Linuxulator. "
+"Cubre la infraestructura de emulación necesaria para <trademark class="
+"\"registered\">Linux</trademark> 2.6 emulación, la implementación del "
+"almacenamiento local de subprocesos (TLS) (en i386) y futexes. Luego "
+"hablamos brevemente sobre algunas llamadas al sistema."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1552
 msgid "Description of NPTL"
-msgstr ""
+msgstr "Descripción de NPTEL"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1554
@@ -2343,6 +3079,20 @@ msgid ""
 "synchronization, kernel resource consumption, etc.) so to overcome these "
 "problems a new threading system was developed and named NPTL."
 msgstr ""
+"Una de las principales áreas de progreso en el desarrollo de <trademark "
+"class=\"registered\">Linux</trademark> 2.6 estaba enhebrando. Antes de 2.6, "
+"el <trademark class=\"registered\">Linux</trademark> El soporte de "
+"subprocesos se implementó en el <application>linuxthreads</application> "
+"biblioteca. La biblioteca fue una implementación parcial de <trademark class="
+"\"registered\">POSIX</trademark> enhebrado. El subproceso se implementó "
+"usando procesos separados para cada subproceso usando el <function>clone</"
+"function> syscall para permitirles compartir el espacio de direcciones (y "
+"otras cosas). La principal debilidad de este enfoque era que cada hilo tenía "
+"un PID diferente, el manejo de la señal estaba roto (desde la perspectiva de "
+"los pthreads), etc. Además, el rendimiento no era muy bueno (uso de "
+"<literal>SIGUSR</literal> señales para sincronización de subprocesos, "
+"consumo de recursos del kernel, etc.), por lo que para superar estos "
+"problemas se desarrolló un nuevo sistema de subprocesos denominado NPTL."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1570
@@ -2355,6 +3105,14 @@ msgid ""
 "performance and standards conformance. NPTL is a standard threading library "
 "in <trademark class=\"registered\">Linux</trademark> systems these days."
 msgstr ""
+"La biblioteca NPTL se centró en dos cosas, pero apareció una tercera, por lo "
+"que generalmente se considera parte de NPTL. Esas dos cosas fueron la "
+"incrustación de subprocesos en una estructura de proceso y funciones. La "
+"tercera cosa adicional fue TLS, que no es requerido directamente por NPTL, "
+"pero toda la biblioteca de usuario de NPTL depende de ello. Esas mejoras "
+"dieron como resultado un rendimiento y una conformidad con los estándares "
+"mucho mejores. NPTL es una biblioteca de subprocesos estándar en <trademark "
+"class=\"registered\">Linux</trademark> sistemas en estos días."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1579
@@ -2364,6 +3122,10 @@ msgid ""
 "<trademark class=\"registered\">Linux</trademark> threads. Further sections "
 "describe each of these areas."
 msgstr ""
+"La implementación de FreeBSD Linuxulator se acerca a la NPTL en tres áreas "
+"principales. TLS, futexes y PID mangling, que está destinado a simular el "
+"<trademark class=\"registered\">Linux</trademark> hilos. Más secciones "
+"describen cada una de estas áreas."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1586
@@ -2371,6 +3133,8 @@ msgid ""
 "<trademark class=\"registered\">Linux</trademark> 2.6 emulation "
 "infrastructure"
 msgstr ""
+"<trademark class=\"registered\">Linux</trademark> 2.6 infraestructura de "
+"emulación"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1588
@@ -2378,11 +3142,13 @@ msgid ""
 "These sections deal with the way <trademark class=\"registered\">Linux</"
 "trademark> threads are managed and how we simulate that in FreeBSD."
 msgstr ""
+"Estas secciones tratan sobre la forma <trademark class=\"registered\">Linux</"
+"trademark> se administran los hilos y cómo lo simulamos en FreeBSD."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1592
 msgid "Runtime determining of 2.6 emulation"
-msgstr ""
+msgstr "Determinación del tiempo de ejecución de la emulación 2.6"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1594
@@ -2403,6 +3169,24 @@ msgid ""
 "citerefentry> should not be changed when running any <trademark class="
 "\"registered\">Linux</trademark> binary as it might harm things."
 msgstr ""
+"En <trademark class=\"registered\">Linux</trademark>La capa de emulación en "
+"FreeBSD admite la configuración de tiempo de ejecución de la versión "
+"emulada. Esto se hace a través de "
+"<citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>, a saber <literal>compat.linux.osrelease</literal>. "
+"configurando esto "
+"<citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>afecta el comportamiento en tiempo de ejecución de la capa de "
+"emulación. Cuando se establece en 2.6.x, establece el valor de "
+"<literal>linux_use_linux26</literal> mientras que el ajuste a otra cosa lo "
+"mantiene desarmado. Esta variable (más las variables por prisión del mismo "
+"tipo) determina si la infraestructura 2.6 (principalmente manipulación de "
+"PID) se usa en el código o no. La configuración de la versión se realiza en "
+"todo el sistema y esto afecta a todos<trademark class=\"registered\">Linux</"
+"trademark> procesos. los<citerefentry><refentrytitle>sysctl</refentrytitle><m"
+"anvolnum>8</manvolnum></citerefentry>no debe cambiarse al ejecutar cualquier "
+"<trademark class=\"registered\">Linux</trademark>binario, ya que podría "
+"dañar las cosas."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1611
@@ -2410,6 +3194,8 @@ msgid ""
 "<trademark class=\"registered\">Linux</trademark> processes and thread "
 "identifiers"
 msgstr ""
+"<trademark class=\"registered\">Linux</trademark> identificadores de "
+"procesos e hilos"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1613
@@ -2422,6 +3208,14 @@ msgid ""
 "The TGID identifies a thread group in other words a process. For single-"
 "threaded process the PID equals the TGID."
 msgstr ""
+"La semántica de <trademark class=\"registered\">Linux</trademark> Los "
+"subprocesos son un poco confusos y utilizan una nomenclatura completamente "
+"diferente a la de FreeBSD. Un proceso en <trademark class=\"registered\""
+">Linux</trademark> consiste en un <literal>estructura de la tarea</literal> "
+"incrustando dos campos identificadores: PID y TGID. PID es <emphasis>no</"
+"emphasis> un ID de proceso pero es un ID de hilo. El TGID identifica un "
+"grupo de subprocesos, en otras palabras, un proceso. Para procesos de un "
+"solo subproceso, el PID es igual al TGID."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1622
@@ -2436,6 +3230,15 @@ msgid ""
 "and task information elsewhere and it is really not very consistent and "
 "looks error-prone."
 msgstr ""
+"El hilo en NPTL es solo un proceso ordinario que tiene TGID no igual a PID y "
+"tiene un líder de grupo que no es igual a él (y VM compartida, etc., por "
+"supuesto). Todo lo demás sucede de la misma manera que en un proceso "
+"ordinario. No hay separación de un estado compartido a alguna estructura "
+"externa como en FreeBSD. Esto crea cierta duplicación de información y una "
+"posible inconsistencia de datos. los <trademark class=\"registered\">Linux</"
+"trademark> el kernel parece utilizar task -&gt;; información de grupo en "
+"algunos lugares e información de tareas en otros lugares y en realidad no es "
+"muy consistente y parece propensa a errores."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1633
@@ -2444,6 +3247,9 @@ msgid ""
 "syscall with a specific set of flags (more in the next subsection). The NPTL "
 "implements strict 1:1 threading."
 msgstr ""
+"cada hilo NPTL se crea mediante una llamada ala <function>clone</function> "
+"syscall con un conjunto específico de indicadores (más en la siguiente "
+"subsección). La NPTL implementa un subproceso estricto 1: 1."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1638
@@ -2453,6 +3259,10 @@ msgid ""
 "specific structure attached to the process. The structure attached to the "
 "process looks like:"
 msgstr ""
+"En FreeBSD emulamos hilos NPTL con procesos FreeBSD ordinarios que comparten "
+"espacio VM, etc. y la gimnasia PID simplemente se imita en la estructura "
+"específica de emulación adjunta al proceso. La estructura adjunta al proceso "
+"se ve así:"
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:1644
@@ -2496,10 +3306,19 @@ msgid ""
 "varname> pointer is used to link this structure to the list of threads. The "
 "<literal>linux_emuldata_shared</literal> structure looks like:"
 msgstr ""
+"El PID se usa para identificar el proceso FreeBSD que adjunta esta "
+"estructura. los <function>child_se_tid</function> y "
+"<function>child_clear_tid</function> se utilizan para la copia de "
+"direcciones TID cuando un proceso sale y se crea. los <varname>shared</"
+"varname> puntero apunta a una estructura compartida entre subprocesos. los "
+"<varname>pdeath_signal</varname> La variable identifica la señal de muerte "
+"del padre y la <varname>threads</varname>El puntero se utiliza para vincular "
+"esta estructura a la lista de subprocesos. los "
+"<literal>linux_emuldata_shared</literal> estructura se parece a:"
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:1670
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "struct linux_emuldata_shared {\n"
 "\n"
@@ -2528,6 +3347,11 @@ msgid ""
 "process ( = thread group). The <varname>threads</varname> pointer is the "
 "head of the list of threads in the process."
 msgstr ""
+"La <varname>refs</varname> es un contador de referencia que se utiliza para "
+"determinar cuándo podemos liberar la estructura para evitar pérdidas de "
+"memoria. los <varname>group_pid</varname> es identificar PID (= TGID) de "
+"todo el proceso (= grupo de subprocesos). los  <varname>threads</varname> "
+"puntero es el encabezado de la lista de subprocesos en el proceso."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1686
@@ -2535,12 +3359,15 @@ msgid ""
 "The <literal>linux_emuldata</literal> structure can be obtained from the "
 "process using <function>em_find</function>. The prototype of the function is:"
 msgstr ""
+"El <literal>linux_emuldata</literal> La estructura se puede obtener del "
+"proceso utilizando <function>em_find</function>. el prototipo de la función "
+"es:"
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:1691
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "struct linux_emuldata *em_find(struct proc *, int locked);"
-msgstr ""
+msgstr "struct linux_emuldata *em_find(struct proc *, int locked);"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1693
@@ -2550,11 +3377,15 @@ msgid ""
 "accepted values are <literal>EMUL_DOLOCK</literal> and "
 "<literal>EMUL_DOUNLOCK</literal>. More about locking later."
 msgstr ""
+"Aqui, <varname>proc</varname> es el proceso del que queremos la estructura "
+"emuldata y el parámetro bloqueado determina si queremos bloquear o no. Los "
+"valores aceptados son<literal>EMUL_DOLOCK</literal> y "
+"<literal>EMUL_DOUNLOCK</literal>. Más sobre bloquear más tarde."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1702
 msgid "PID mangling"
-msgstr ""
+msgstr "Destrucción de PID"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1704
@@ -2569,6 +3400,16 @@ msgid ""
 "literal>. The PID member of <literal>linux_emuldata structure</literal> is a "
 "FreeBSD PID."
 msgstr ""
+"Debido a la vista diferente descrita, saber qué ID de proceso e ID de "
+"subproceso es entre FreeBSD y <trademark class=\"registered\">Linux</"
+"trademark> tenemos que traducir la vista de alguna manera. Lo hacemos "
+"mediante la manipulación de PID. Esto significa que falsificamos lo que es "
+"un PID (= TGID) y TID (= PID) entre el kernel y el área de usuario. La regla "
+"general es que en el kernel (en Linuxulator) PID = PID y TGID = compartido "
+"-&gt; pid de grupo y al área de usuario presentamos <literal>PID = shared "
+"-&gt; group_pid</literal> y <literal>TID = proc -&gt; p_pid</literal>. El "
+"miembro PID de<literal>linux_emuldata structure</literal> es un PID de "
+"FreeBSD."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1716
@@ -2577,11 +3418,15 @@ msgid ""
 "TGID respectively. In copyout of TIDs in <function>child_clear_tid</"
 "function> and <function>child_set_tid</function> we copy out FreeBSD PID."
 msgstr ""
+"Lo anterior afecta principalmente a las llamadas al sistema getpid, getppid, "
+"gettid. Donde usamos PID / TGID respectivamente. En copia de TID en "
+"<function>child_clear_tid</function> y<function>child_set_tid</function> "
+"copiamos FreeBSD PID."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1724
 msgid "Clone syscall"
-msgstr ""
+msgstr "Clonar syscall"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1726
@@ -2590,14 +3435,19 @@ msgid ""
 "<trademark class=\"registered\">Linux</trademark>. The syscall prototype "
 "looks like this:"
 msgstr ""
+"La <function>clone</function> syscall es la forma en que se crean los hilos "
+"en <trademark class=\"registered\">Linux</trademark>. El prototipo de "
+"syscall se ve así:"
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:1730
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "int linux_clone(l_int flags, void *stack, void *parent_tidptr, int dummy,\n"
 "void * child_tidptr);"
 msgstr ""
+"int linux_clone(l_int flags, void *stack, void *parent_tidptr, int dummy,\n"
+"void * child_tidptr);"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1733
@@ -2621,6 +3471,27 @@ msgid ""
 "varname> parameter is used as an address for copying out PID once the "
 "process has finished forking and when the process exits."
 msgstr ""
+"El <varname>flags</varname> El parámetro le dice al syscall cómo exactamente "
+"se deben clonar los procesos. Como se describió anteriormente, <trademark "
+"class=\"registered\">Linux</trademark> puede crear procesos compartiendo "
+"varias cosas de forma independiente, por ejemplo, dos procesos pueden "
+"compartir descriptores de archivo pero no VM, etc. Último byte del "
+"<varname>flags</varname> El parámetro es la señal de salida del proceso "
+"recién creado. los <varname>stack</varname> parameter if non-<literal>NULL</"
+"literal> dice dónde está la pila de subprocesos y si está <literal>NULL</"
+"literal> se supone que debemos copiar al escribir la pila del proceso de "
+"llamada (es decir, hacer lo normal "
+"<citerefentry><refentrytitle>fork</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> lo hace la rutina). los <varname>parent_tidptr</varname> El "
+"parámetro se usa como una dirección para copiar el PID del proceso (es "
+"decir, el ID del hilo) una vez que el proceso está suficientemente "
+"instanciado pero aún no se puede ejecutar. los <varname>tonto</varname> El "
+"parámetro está aquí debido a la muy extraña convención de llamada de esta "
+"llamada al sistema en i386. Utiliza los registros directamente y no deja que "
+"el compilador lo haga, lo que resulta en la necesidad de una llamada al "
+"sistema ficticia. los <varname>child_tidptr</varname> El parámetro se "
+"utiliza como dirección para copiar PID una vez que el proceso ha terminado "
+"de bifurcarse y cuando el proceso finaliza."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1755
@@ -2650,6 +3521,33 @@ msgid ""
 "process is put on a run queue and copying out its PID to the parent process "
 "via <function>clone</function> return value is done."
 msgstr ""
+"La propia llamada al sistema procede estableciendo los indicadores "
+"correspondientes en función de los indicadores pasados. Por ejemplo, "
+"<literal>CLONE_VM</literal> mapas a RFMEM (compartir VM), etc. La única nit "
+"aquí es <literal>CLONE_FS</literal> y <literal>CLONE_FILES</literal>porque "
+"FreeBSD no permite configurar esto por separado, por lo que lo falsificamos "
+"al no configurar RFFDG (copia de la tabla fd y otra información fs) si "
+"alguno de estos está definido. Esto no causa ningún problema, porque esos "
+"indicadores siempre se colocan juntos. Después de configurar las banderas, "
+"el proceso se bifurca utilizando el <function>fork1</function> rutina, el "
+"proceso está instrumentado para que no se ponga en una cola de ejecución, es "
+"decir, no se establezca como ejecutable. Una vez finalizada la bifurcación, "
+"posiblemente volvamos a hacer el proceso recién creado para emular "
+"<literal>CLONE_PARENT</literal> semántica. La siguiente parte es crear los "
+"datos de emulación. Hilos en <trademark class=\"registered\">Linux</"
+"trademark> no envía una señal a sus padres, por lo que establecemos la señal "
+"de salida en 0 para deshabilitar esto. Después de esa configuración de "
+"<varname>child_set_tid</varname> and <varname>child_clear_tid</varname> se "
+"realiza habilitando la funcionalidad más adelante en el código. En este "
+"punto copiamos el PID a la dirección especificada por "
+"<varname>parent_tidptr</varname>. la configuración de la pila de procesos se "
+"realiza simplemente reescribiendo el marco del hilo <varname>%esp</varname> "
+"registrar (<varname>%rsp</varname> en amd64). La siguiente parte es "
+"configurar TLS para el proceso recién creado. Después de este "
+"<citerefentry><refentrytitle>vfork</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> semantics podría ser emulado y finalmente el proceso recién "
+"creado se coloca en una cola de ejecución y copia su PID al proceso padre a "
+"través de <function>clone</function> el valor de retorno está hecho."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1786
@@ -2664,11 +3562,22 @@ msgid ""
 "<citerefentry><refentrytitle>vfork</refentrytitle><manvolnum>2</manvolnum></"
 "citerefentry> syscalls."
 msgstr ""
+"El <function>clone</function> syscall es capaz y de hecho se usa para emular "
+"el clásico "
+"<citerefentry><refentrytitle>fork</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> y "
+"<citerefentry><refentrytitle>vfork</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> syscalls. Glibc más nuevo en un caso de usos del kernel 2.6 "
+"<function>clonar</function> para implementar "
+"<citerefentry><refentrytitle>fork</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> y "
+"<citerefentry><refentrytitle>vfork</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> syscalls."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1794
 msgid "Locking"
-msgstr ""
+msgstr "Cierre"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1796
@@ -2683,21 +3592,33 @@ msgid ""
 "subsystem locking we can coalesce some locks and that is why the em find "
 "offers the non-locking access."
 msgstr ""
+"el bloqueo se implementa para ser por subsistema porque no esperamos mucha "
+"contención sobre estos. Hay dos candados:<literal>emul_lock</literal> "
+"utilizado para proteger la manipulación de <literal>linux_emuldata</literal> "
+"y <literal>emul_shared_lock</literal> usado para manipular "
+"<literal>linux_emuldata_shared</literal>. El <literal>emul_lock</literal> es "
+"un mutex de bloqueo que no se puede dormir mientras "
+"<literal>emul_shared_lock</literal> es un bloqueo dormible <literal>sx_lock</"
+"literal>. Debido al bloqueo por subsistema, podemos fusionar algunos "
+"bloqueos y es por eso que em find ofrece acceso sin bloqueo."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1812
+#, fuzzy
 msgid "TLS"
-msgstr ""
+msgstr "TLS"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1814
 msgid "This section deals with TLS also known as thread local storage."
 msgstr ""
+"Esta sección trata sobre TLS, también conocido como almacenamiento local de "
+"subprocesos."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1818
 msgid "Introduction to threading"
-msgstr ""
+msgstr "Introducción al subproceso"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1820
@@ -2745,11 +3666,54 @@ msgid ""
 "\"registered\">Linux</trademark> pays this unnecessary price for context "
 "switches."
 msgstr ""
+"Los subprocesos en ciencias de la computación son entidades dentro de un "
+"proceso que se pueden programar de forma independiente entre sí. Los "
+"subprocesos del proceso comparten datos de todo el proceso (descriptores de "
+"archivo, etc.) pero también tienen su propia pila para sus propios datos. A "
+"veces existe la necesidad de datos de todo el proceso específicos para un "
+"hilo dado. Imagina un nombre del hilo en ejecución o algo así. Lo "
+"tradicional <trademark class=\"registered\">UNIX</trademark> API de "
+"subprocesos, <application>pthreads</application> proporciona una forma de "
+"hacerlo a través de <citerefentry><refentrytitle>pthread_key_create</refentry"
+"title><manvolnum>3</manvolnum></citerefentry>, <citerefentry><refentrytitle>p"
+"thread_setspecific</refentrytitle><manvolnum>3</manvolnum></citerefentry> y <"
+"citerefentry><refentrytitle>pthread_getspecific</refentrytitle><manvolnum>3</"
+"manvolnum></citerefentry> donde un hilo puede crear una clave para los datos "
+"locales del hilo y usar <citerefentry><refentrytitle>pthread_getspecific</ref"
+"entrytitle><manvolnum>3</manvolnum></citerefentry> o <citerefentry><refentryt"
+"itle>pthread_getspecific</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry> para manipular esos datos. Puede ver fácilmente que esta no es "
+"la forma más cómoda de lograrlo. Entonces, varios productores de "
+"compiladores C / C ++ introdujeron una mejor manera. Definieron un nuevo "
+"hilo de palabra clave modificadora que especifica que una variable es "
+"específica del hilo. También se desarrolló un nuevo método para acceder a "
+"tales variables (al menos en i386). los <application>pthreads</application> "
+"El método tiende a implementarse en el espacio de usuario como una tabla de "
+"búsqueda trivial. El rendimiento de esta solución no es muy bueno. Por lo "
+"tanto, el nuevo método usa (en i386) registros de segmento para direccionar "
+"un segmento, donde el área TLS se almacena, por lo que el acceso real de una "
+"variable de subproceso es simplemente agregar el registro de segmento a la "
+"dirección, por lo que se direcciona a través de ella. Los registros de "
+"segmento suelen ser <varname>%gs</varname> and <varname>%fs</varname> "
+"actuando como selectores de segmento. Cada hilo tiene su propia área donde "
+"se almacenan los datos locales del hilo y el segmento se debe cargar en cada "
+"cambio de contexto. Este método es muy rápido y se utiliza casi "
+"exclusivamente en todo el i386. <trademark class=\"registered\">UNIX</"
+"trademark> mundo. Tanto FreeBSD como <trademark class=\"registered\">Linux</"
+"trademark> implementar este enfoque y produce muy buenos resultados. El "
+"único inconveniente es la necesidad de volver a cargar el segmento en cada "
+"cambio de contexto que puede ralentizar los cambios de contexto. FreeBSD "
+"intenta evitar esta sobrecarga usando solo 1 descriptor de segmento para "
+"esto mientras <trademark class=\"registered\">Linux</trademark> utiliza 3. "
+"Lo interesante es que casi nada utiliza más de 1 descriptor (solo "
+"<application>Wine</application> parece usar 2) entonces<trademark class="
+"\"registered\">Linux</trademark> paga este precio innecesario por los "
+"cambios de contexto."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1864
 msgid "Segments on i386"
-msgstr ""
+msgstr "Segmentos en i386"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1866
@@ -2763,12 +3727,20 @@ msgid ""
 "us suppose we have a segment which base address is 0x1234 and length and "
 "this code:"
 msgstr ""
+"La arquitectura i386 implementa los llamados segmentos. Un segmento es una "
+"descripción de un área de la memoria. La dirección base (parte inferior) del "
+"área de memoria, el final de la misma (techo), tipo, protección, etc. Se "
+"puede acceder a la memoria descrita por un segmento utilizando registros de "
+"selector de segmento (<varname>%cs</varname>, <varname>%ds</varname>, "
+"<varname>%ss</varname>, <varname>%es</varname>, <varname>%fs</varname>, "
+"<varname>%gs</varname>). Por ejemplo, supongamos que tenemos un segmento "
+"cuya dirección base es 0x1234 y longitud y este código:"
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:1877
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "mov %edx,%gs:0x10"
-msgstr ""
+msgstr "mov %edx,%gs:0x10"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1879
@@ -2782,12 +3754,22 @@ msgid ""
 "The LDT can store more types of segments. LDT can be per process. Both "
 "tables define up to 8191 entries."
 msgstr ""
+"Esto cargará el contenido del <varname>%edx</varname> registrarse en la "
+"ubicación de memoria 0x1244. Algunos registros de segmento tienen un uso "
+"especial, por ejemplo <varname>%cs</varname> se utiliza para el segmento de "
+"código y<varname>%ss</varname>se utiliza para el segmento de pila pero "
+"<varname>%fs</varname> y <varname>%gs</varname> generalmente no se utilizan. "
+"Los segmentos se almacenan en una tabla GDT global o en una tabla LDT local. "
+"Se accede a LDT a través de una entrada en el GDT. El LDT puede almacenar "
+"más tipos de segmentos. LDT puede ser por proceso. Ambas tablas definen "
+"hasta 8191 entradas."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1893
 msgid ""
 "Implementation on <trademark class=\"registered\">Linux</trademark> i386"
 msgstr ""
+"Implementación en <trademark class=\"registered\">Linux</trademark> i386"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1895
@@ -2806,16 +3788,30 @@ msgid ""
 "number of the entry. We exploit this in the emulation and in fact depend on "
 "it."
 msgstr ""
+"Hay dos formas principales de configurar TLS en <trademark class=\"registered"
+"\">Linux</trademark>. se puede configurar al clonar un proceso usando el "
+"<function>clone</function> syscall o puede llamar <function>set_thread_area</"
+"function>. Cuando pasa un proceso <literal>CLONE_SETTLS</literal>bandera a "
+"<function>clonar</function>, el kernel espera la memoria apuntada por el "
+"<varname>%esi</varname> registrar un<trademark class=\"registered\">Linux</"
+"trademark> representación en el espacio de usuario de un segmento, que se "
+"traduce a la representación de máquina de un segmento y se carga en una "
+"ranura GDT. La ranura GDT se puede especificar con un número o se puede usar "
+"-1, lo que significa que el sistema debe elegir la primera ranura libre. En "
+"la práctica, la gran mayoría de los programas utilizan solo una entrada TLS "
+"y no se preocupa por el número de la entrada. Aprovechamos esto en la "
+"emulación y de hecho dependemos de ello."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1913
 msgid "Emulation of <trademark class=\"registered\">Linux</trademark> TLS"
-msgstr ""
+msgstr "Emulation of <trademark class=\"registered\">Linux</trademark> TLS"
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1916
+#, fuzzy
 msgid "i386"
-msgstr ""
+msgstr "i386"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1918
@@ -2851,11 +3847,44 @@ msgid ""
 "<trademark class=\"registered\">Linux</trademark> emulation layer does not "
 "add any overhead over plain FreeBSD."
 msgstr ""
+"La carga de TLS para el hilo actual se realiza llamando "
+"<function>set_thread_area</function>mientras carga TLS para un segundo "
+"proceso en <function>clone</function>se hace en el bloque separado en "
+"<function>clone</function>. Esas dos funciones son muy similares. La única "
+"diferencia es la carga real del segmento GDT, que ocurre en el siguiente "
+"cambio de contexto para el proceso recién creado mientras "
+"<function>set_thread_area</function>debe cargar esto directamente. El código "
+"básicamente hace esto. Copia el <trademark class=\"registered\">Linux</"
+"trademark> descriptor de segmento de formulario del área de usuario. El "
+"código busca el número del descriptor, pero debido a que este difiere entre "
+"FreeBSD y <trademark class=\"registered\">Linux</trademark> lo fingimos un "
+"poco. Solo admitimos índices de 6, 3 y -1. El 6 es genuino <trademark class="
+"\"registered\">Linux</trademark> número, 3 es uno genuino de FreeBSD y -1 "
+"significa autoselección. Luego establecemos el número de descriptor en "
+"constante 3 y lo copiamos en el espacio de usuario. Confiamos en el proceso "
+"del espacio de usuario utilizando el número del descriptor, pero esto "
+"funciona la mayor parte del tiempo (nunca he visto un caso en el que esto no "
+"haya funcionado) ya que el proceso del espacio de usuario normalmente pasa "
+"en 1. Luego, convertimos el descriptor del <trademark class=\"registered\""
+">Linux</trademark>formulario a un formulario dependiente de la máquina (es "
+"decir, formulario independiente del sistema operativo) y cópielo en el "
+"descriptor de segmento definido de FreeBSD. Finalmente podemos cargarlo. "
+"Asignamos el descriptor a los subprocesos PCB (bloque de control de proceso) "
+"y cargamos el <varname>%gs</varname> segmento usando<function>load_gs</"
+"function>. Esta carga debe hacerse en un tramo crítico para que nada nos "
+"interrumpa. los <literal>CLONE_SETTLS</literal> El caso funciona exactamente "
+"así, solo la carga usando <function>load_gs</function> no se realiza. El "
+"segmento utilizado para esto (segmento número 3) se comparte para este uso "
+"entre los procesos FreeBSD y <trademark class=\"registered\">Linux</"
+"trademark> procesos para que el <trademark class=\"registered\">Linux</"
+"trademark> La capa de emulación no agrega ninguna sobrecarga sobre FreeBSD "
+"simple."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:1955
+#, fuzzy
 msgid "amd64"
-msgstr ""
+msgstr "amd64"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1957
@@ -2867,16 +3896,25 @@ msgid ""
 "Apart from this the TLS loading is exactly the same just the segment numbers "
 "are different and the descriptor format and the loading differs slightly."
 msgstr ""
+"La implementación de amd64 es similar a la de i386, pero inicialmente no se "
+"utilizó un descriptor de segmento de 32 bits para este propósito (por lo "
+"tanto, ni siquiera los usuarios nativos de TLS de 32 bits funcionaron), por "
+"lo que tuvimos que agregar dicho segmento e implementar su carga en cada "
+"cambio de contexto (cuando un se establece el uso de señalización de bandera "
+"de 32 bits). Aparte de esto, la carga de TLS es exactamente la misma, solo "
+"que los números de segmento son diferentes y el formato del descriptor y la "
+"carga difieren ligeramente."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1971
+#, fuzzy
 msgid "Futexes"
-msgstr ""
+msgstr "Futexes"
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1974
 msgid "Introduction to synchronization"
-msgstr ""
+msgstr "Introducción a la sincronización"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1976
@@ -2901,6 +3939,29 @@ msgid ""
 "user), this is in-kernel stuff but it shows clearly how important the "
 "performance of synchronization primitives is."
 msgstr ""
+"Los subprocesos necesitan algún tipo de sincronización y <trademark class="
+"\"registered\">POSIX</trademark> proporciona algunos de ellos: mutex para "
+"exclusión mutua, bloqueos de lectura y escritura para exclusión mutua con "
+"una proporción sesgada de lecturas y escrituras y variables de condición "
+"para señalar un cambio de estado. Es interesante notar que<trademark class="
+"\"registered\">POSIX</trademark> La API de subprocesos carece de soporte "
+"para semáforos. Esas implementaciones de rutinas de sincronización dependen "
+"en gran medida del tipo de soporte de subprocesos que tenemos. En el modelo "
+"puro 1: M (espacio de usuario), la implementación se puede realizar "
+"únicamente en el espacio de usuario y, por lo tanto, es muy rápida (las "
+"variables de condición probablemente terminarán implementándose mediante "
+"señales, es decir, no rápido) y simple. En el modelo 1: 1, la situación "
+"también es bastante clara: los subprocesos deben sincronizarse utilizando "
+"las instalaciones del kernel (lo cual es muy lento porque se debe realizar "
+"una llamada al sistema). El escenario mixto M: N simplemente combina el "
+"primer y segundo enfoque o se basa únicamente en el kernel. La "
+"sincronización de subprocesos es una parte vital de la programación "
+"habilitada para subprocesos y su rendimiento puede afectar mucho al programa "
+"resultante. Pruebas de rendimiento recientes en el sistema operativo FreeBSD "
+"mostraron que una implementación mejorada de sx_lock produjo un 40% de "
+"aceleración en <firstterm>ZFS</firstterm> (un usuario pesado de sx), esto es "
+"algo dentro del kernel pero muestra claramente cuán importante es el "
+"rendimiento de las primitivas de sincronización."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:2000
@@ -2910,11 +3971,15 @@ msgid ""
 "lock. Because of this, the most well written threaded programs show little "
 "locks contention."
 msgstr ""
+"Los programas con subprocesos deben escribirse con la menor contención "
+"posible sobre los bloqueos. De lo contrario, en lugar de hacer un trabajo "
+"útil, el hilo solo espera un bloqueo. Debido a esto, los programas con "
+"subprocesos mejor escritos muestran poca contención de bloqueos."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:2008
 msgid "Futexes introduction"
-msgstr ""
+msgstr "Introducción a los futexes"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:2010
@@ -2925,6 +3990,12 @@ msgid ""
 "sequence could be performed as two atomic increase/decrease mutex reference "
 "counter, which is very fast, as presented by the following example:"
 msgstr ""
+"<trademark class=\"registered\">Linux</trademark> implementa subprocesos 1: "
+"1, es decir, tiene que usar primitivas de sincronización en el kernel. Como "
+"se indicó anteriormente, los programas con subprocesos bien escritos tienen "
+"poca contención de bloqueo. Entonces, una secuencia típica podría realizarse "
+"como dos contadores de referencia mutex de aumento/disminución atómicos, que "
+"es muy rápido, como se presenta en el siguiente ejemplo:"
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:2017
@@ -2944,6 +4015,8 @@ msgid ""
 "1:1 threading forces us to perform two syscalls for those mutex calls, which "
 "is very slow."
 msgstr ""
+"El subproceso 1: 1 nos obliga a realizar dos llamadas al sistema para esas "
+"llamadas mutex, lo cual es muy lento."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:2024
@@ -2954,22 +4027,31 @@ msgid ""
 "typical case takes place without any kernel intervention. This yields "
 "reasonably fast and flexible synchronization primitives implementation."
 msgstr ""
+"La solución <trademark class=\"registered\">Linux</trademark> 2.6 "
+"implementos se llama futexes. Los futexes implementan la verificación de "
+"contención en el espacio de usuario y llaman a las primitivas del núcleo "
+"solo en caso de contención. Por tanto, el caso típico tiene lugar sin "
+"ninguna intervención del núcleo. Esto produce una implementación de "
+"primitivas de sincronización razonablemente rápida y flexible."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:2033
+#, fuzzy
 msgid "Futex API"
-msgstr ""
+msgstr "Futex API"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:2035
 msgid "The futex syscall looks like this:"
-msgstr ""
+msgstr "La llamada al sistema futex se ve así:"
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:2037
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "int futex(void *uaddr, int op, int val, struct timespec *timeout, void *uaddr2, int val3);"
 msgstr ""
+"int futex(void *uaddr, int op, int val, struct timespec *timeout, void *"
+"uaddr2, int val3);"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:2039
@@ -2978,46 +4060,56 @@ msgid ""
 "userspace, <varname>op</varname> is an operation we are about to perform and "
 "the other parameters have per-operation meaning."
 msgstr ""
+"En este ejemplo <varname>uaddr</varname>es una dirección del mutex en el "
+"espacio de usuario, <varname>op</varname> es una operación que estamos a "
+"punto de realizar y los demás parámetros tienen un significado por operación."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:2044
 msgid "Futexes implement the following operations:"
-msgstr ""
+msgstr "Los Futexes implementan las siguientes operaciones:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2048
+#, fuzzy
 msgid "<literal>FUTEX_WAIT</literal>"
-msgstr ""
+msgstr "<literal>FUTEX_WAIT</literal>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2051
+#, fuzzy
 msgid "<literal>FUTEX_WAKE</literal>"
-msgstr ""
+msgstr "<literal>FUTEX_WAKE</literal>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2054
+#, fuzzy
 msgid "<literal>FUTEX_FD</literal>"
-msgstr ""
+msgstr "<literal>FUTEX_FD</literal>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2057
+#, fuzzy
 msgid "<literal>FUTEX_REQUEUE</literal>"
-msgstr ""
+msgstr "<literal>FUTEX_REQUEUE</literal>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2060
+#, fuzzy
 msgid "<literal>FUTEX_CMP_REQUEUE</literal>"
-msgstr ""
+msgstr "<literal>FUTEX_CMP_REQUEUE</literal>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2063
+#, fuzzy
 msgid "<literal>FUTEX_WAKE_OP</literal>"
-msgstr ""
+msgstr "<literal>FUTEX_WAKE_OP</literal>"
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:2068
+#, fuzzy
 msgid "FUTEX_WAIT"
-msgstr ""
+msgstr "FUTEX_WAIT"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:2070
@@ -3028,6 +4120,12 @@ msgid ""
 "the argument <varname>timeout</varname> is non-zero it specifies the maximum "
 "time for the sleeping, otherwise the sleeping is infinite."
 msgstr ""
+"Esta operación verifica que en la dirección <varname>uaddr</varname> el "
+"valor <varname>val</varname> está escrito. Si no, <literal>EWOULDBLOCK</"
+"literal> se devuelve, de lo contrario, el hilo se pone en cola en el futex y "
+"se suspende. Si el argumento <varname>timeout</varname> es distinto de cero, "
+"especifica el tiempo máximo para dormir; de lo contrario, el sueño es "
+"infinito."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:2081
@@ -3040,6 +4138,8 @@ msgid ""
 "This operation takes a futex at <varname>uaddr</varname> and wakes up "
 "<varname>val</varname> first futexes queued on this futex."
 msgstr ""
+"Esta operación toma un futex en <varname>uaddr</varname> y se despierta "
+"<varname>val</varname> Primeros futexes en cola en este futex."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:2090
@@ -3049,12 +4149,13 @@ msgstr "FUTEX_FD"
 #. (itstool) path: sect4/para
 #: article.translate.xml:2092
 msgid "This operations associates a file descriptor with a given futex."
-msgstr ""
+msgstr "Esta operación asocia un descriptor de archivo con un futex dado."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:2097
+#, fuzzy
 msgid "FUTEX_REQUEUE"
-msgstr ""
+msgstr "FUTEX_REQUEUE"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:2099
@@ -3063,11 +4164,15 @@ msgid ""
 "<varname>uaddr</varname>, wakes them up, and takes <varname>val2</varname> "
 "next threads and requeues them on futex at <varname>uaddr2</varname>."
 msgstr ""
+"Esta operación toma <varname>val</varname> hilos en cola en futex en "
+"<varname>uaddr</varname>, Los despierta y toma<varname>val2</varname> "
+"siguientes hilos y los coloca en futex en <varname>uaddr2</varname>."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:2107
+#, fuzzy
 msgid "FUTEX_CMP_REQUEUE"
-msgstr ""
+msgstr "FUTEX_CMP_REQUEUE"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:2109
@@ -3075,11 +4180,14 @@ msgid ""
 "This operation does the same as <literal>FUTEX_REQUEUE</literal> but it "
 "checks that <varname>val3</varname> equals to <varname>val</varname> first."
 msgstr ""
+"Esta operación hace lo mismo que <literal>FUTEX_REQUEUE</literal>pero "
+"comprueba que <varname>val3</varname> igual a <varname>val</varname> primero."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:2116
+#, fuzzy
 msgid "FUTEX_WAKE_OP"
-msgstr ""
+msgstr "FUTEX_WAKE_OP"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:2118
@@ -3090,11 +4198,16 @@ msgid ""
 "varname> and if the atomic operation returned a positive number it wakes up "
 "<varname>val2</varname> threads on futex at <varname>uaddr2</varname>."
 msgstr ""
+"Esta operación realiza una operación atómica en <varname>val3</varname> (que "
+"contiene algún otro valor codificado) y<varname>uaddr</varname>. Entonces se "
+"despierta <varname>val</varname> hilos en futex en <varname>uaddr</varname> "
+"y si la operación atómica devolvió un número positivo, se despierta "
+"<varname>val2</varname> hilos en futex en<varname>uaddr2</varname>."
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:2127
 msgid "The operations implemented in <literal>FUTEX_WAKE_OP</literal>:"
-msgstr ""
+msgstr "Las operaciones implementadas en <literal>FUTEX_WAKE_OP</literal>:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2132
@@ -3129,11 +4242,15 @@ msgid ""
 "varname> parameter for operations <literal>FUTEX_REQUEUE</literal>, "
 "<literal>FUTEX_CMP_REQUEUE</literal> and <literal>FUTEX_WAKE_OP</literal>."
 msgstr ""
+"No hay <varname>val2</varname> parámetro en el prototipo futex. los "
+"<varname>val2</varname> es tomado de la <varname>struct timespec *timeout</"
+"varname> parámetro para operaciones <literal>FUTEX_REQUEUE</literal>, "
+"<literal>FUTEX_CMP_REQUEUE</literal> y <literal>FUTEX_WAKE_OP</literal>."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:2161
 msgid "Futex emulation in FreeBSD"
-msgstr ""
+msgstr "Emulación Futex en FreeBSD"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:2163
@@ -3143,6 +4260,9 @@ msgid ""
 "<filename>linux_futex.h</filename> files. The <literal>futex</literal> "
 "structure looks like:"
 msgstr ""
+"La emulación futex en FreeBSD se toma de NetBSD y nosotros la ampliamos. Se "
+"coloca en <filename>linux_futex.c</filename> and <filename>linux_futex.h</"
+"filename> archivos. la <literal>futex</literal> estructura se parece a:"
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:2169
@@ -3169,7 +4289,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: article.translate.xml:2178
 msgid "And the structure <literal>waiting_proc</literal> is:"
-msgstr ""
+msgstr "Y la estructura <literal>waiting_proc</literal> es:"
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:2181
@@ -3207,6 +4327,11 @@ msgid ""
 "function> function, which decreases a reference counter of the futex and if "
 "the refcount reaches zero it is released."
 msgstr ""
+"Un futex se obtiene utilizando el <function>futex_get</function>función, que "
+"busca en una lista lineal de futexes y devuelve el encontrado o crea un "
+"nuevo futex. Al liberar un futex del uso, lo llamamos <function>futex_put</"
+"function> función, que disminuye un contador de referencia del futex y si el "
+"refcount llega a cero se libera."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:2203
@@ -3229,6 +4354,18 @@ msgid ""
 "<varname>wp_new_futex</varname> set so we sleep on it. This way the actual "
 "requeueing is done in this function."
 msgstr ""
+"Cuando un futex pone en cola un hilo para dormir, crea un "
+"<literal>working_proc</literal> estructura y coloca esta estructura en la "
+"lista dentro de la estructura futex, entonces solo realiza una "
+"<citerefentry><refentrytitle>tsleep</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry> suspender el hilo. El tiempo de sueño se puede agotar. Después "
+"<citerefentry><refentrytitle>tsleep</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry> devuelve (el hilo se despertó o se agotó el tiempo de espera) "
+"el <literal>working_proc</literal> La estructura se elimina de la lista y se "
+"destruye. Todo esto se hace en el <function>futex_sleep</function>función. "
+"Si nos despertaran de <function>futex_wake</function> Nosotros tenemos "
+"<varname>wp_new_futex</varname> establecido para que podamos dormir en él. "
+"De esta manera, la puesta en cola real se realiza en esta función.."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:2221
@@ -3248,6 +4385,16 @@ msgid ""
 "new futex for requeueing. If so, we requeue up to n2 threads on the new "
 "futex. This cooperates with <function>futex_sleep</function>."
 msgstr ""
+"Despertar un hilo durmiendo en un futex se realiza en el "
+"<function>futex_wake</function> función. Primero en esta función imitamos el "
+"extraño <trademark class=\"registered\">Linux</trademark> comportamiento, "
+"donde despierta N subprocesos para todas las operaciones, la única excepción "
+"es que las operaciones REQUEUE se realizan en N + 1 subprocesos. Pero esto "
+"generalmente no hace ninguna diferencia ya que estamos despertando todos los "
+"hilos. A continuación, en la función en el bucle, activamos n subprocesos, "
+"después de esto, verificamos si hay un nuevo futex para poner en cola. Si es "
+"así, ponemos en cola hasta n2 subprocesos en el nuevo futex. Esto coopera "
+"con <function>futex_sleep</function>."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:2237
@@ -3265,11 +4412,19 @@ msgid ""
 "condition holds we wake up <varname>val2</varname> (i.e. <varname>timeout</"
 "varname>) waiter on the second futex."
 msgstr ""
+"La <literal>FUTEX_WAKE_OP</literal> El funcionamiento es bastante "
+"complicado. Primero obtenemos dos futexes en direcciones<varname>uaddr</"
+"varname> and <varname>uaddr2</varname> luego realizamos la operación atómica "
+"usando <varname>val3</varname> and <varname>uaddr2</varname>. Then "
+"<varname>val</varname> los camareros en el primer futex se despiertan y si "
+"la condición de operación atómica se mantiene, nos despertamos "
+"<varname>val2</varname> (es decir. <varname>timeout</varname>) camarero en "
+"el segundo futex."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:2252
 msgid "futex atomic operation"
-msgstr ""
+msgstr "operación atómica futex"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:2254
@@ -3279,6 +4434,10 @@ msgid ""
 "itself, comparing value, operation argument, and comparing argument. The "
 "pseudocode for the operation is like this one:"
 msgstr ""
+"La operación atómica toma dos parámetros <varname>encoded_op</varname> y "
+"<varname>uaddr</varname>. La operación codificada codifica la operación en "
+"sí, comparando valor, argumento de operación y argumento de comparación. El "
+"pseudocódigo para la operación es como este:"
 
 #. (itstool) path: sect4/programlisting
 #: article.translate.xml:2261
@@ -3298,11 +4457,16 @@ msgid ""
 "handles page faults and if no page fault occurs <varname>oldval</varname> is "
 "compared to <varname>cmparg</varname> argument with cmp comparator."
 msgstr ""
+"Y esto se hace de forma atómica. Primero una copia del número en "
+"<varname>uaddr</varname> se realiza y se hace la operación. El código maneja "
+"fallas de página y si no ocurre ninguna falla de página <varname>oldval</"
+"varname> se compara con <varname>cmparg</varname> argumento con comparador "
+"cmp."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:2273
 msgid "Futex locking"
-msgstr ""
+msgstr "Bloqueo futex"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:2275
@@ -3312,11 +4476,15 @@ msgid ""
 "function>). Every operation is performed locked from the start to the very "
 "end."
 msgstr ""
+"La implementación de Futex utiliza dos listas de bloqueo que "
+"protegen<function>sx_lock</function> y cerraduras globales (ya sea gigante u "
+"otra <function>sx_lock</function>). Cada operación se realiza bloqueada "
+"desde el principio hasta el final."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:2285
 msgid "Various syscalls implementation"
-msgstr ""
+msgstr "Implementación de varias llamadas al sistema"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:2287
@@ -3325,11 +4493,14 @@ msgid ""
 "mentioning because their implementation is not obvious or those syscalls are "
 "interesting from other point of view."
 msgstr ""
+"En esta sección voy a describir algunas llamadas al sistema más pequeñas que "
+"vale la pena mencionar porque su implementación no es obvia o esas llamadas "
+"al sistema son interesantes desde otro punto de vista."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:2293
 msgid "*at family of syscalls"
-msgstr ""
+msgstr "*en familia de llamadas al sistema"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:2295
@@ -3347,6 +4518,19 @@ msgid ""
 "<literal>AT_FDCWD</literal>. So for example the <function>openat</function> "
 "syscall can be like this:"
 msgstr ""
+"Durante el desarrollo de <trademark class=\"registered\">Linux</"
+"trademark>2.6.16 kernel, se agregaron las llamadas al sistema * at. Esas "
+"llamadas al sistema (<function>openat</function>por ejemplo) funcionan "
+"exactamente como sus contrapartes at-less con la ligera excepción de "
+"<varname>dirfd</varname> parámetro. Este parámetro cambia donde está el "
+"archivo dado, en el que se va a realizar la llamada al sistema. Cuando el "
+"<varname>filename</varname> el parámetro es absoluto <varname>dirfd</"
+"varname> se ignora pero cuando la ruta al archivo es relativa, se trata de "
+"la obra. los <varname>dirfd</varname> El parámetro es un directorio relativo "
+"al que se comprueba la ruta relativa. los <varname>dirfd</varname> parámetro "
+"es un descriptor de archivo de algún directorio o <literal>AT_FDCWD</"
+"literal>. Entonces, por ejemplo, el <function>openat</function> syscall "
+"puede ser así:"
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:2311
@@ -3379,6 +4563,16 @@ msgid ""
 "<function>openat</function> syscall. This also enables user to implement per-"
 "thread working directories."
 msgstr ""
+"Esta infraestructura es necesaria para evitar carreras al abrir archivos "
+"fuera del directorio de trabajo. Imagine que un proceso consta de dos "
+"subprocesos, el subproceso A y el subproceso B. Problemas del subproceso A "
+"<literal>abrir(./tmp/foo/bah., flags, mode)</literal> y antes de regresar se "
+"reemplaza y se ejecuta el hilo B. El hilo B no se preocupa por las "
+"necesidades del hilo A y cambia el nombre o elimina<filename>/tmp/foo/</"
+"filename>. Tenemos una carrera. Para evitar esto podemos abrir <filename>/"
+"tmp/foo</filename> and use it as <varname>dirfd</varname>para "
+"<function>openat</function>syscall. Esto también permite al usuario "
+"implementar directorios de trabajo por subproceso."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:2332
@@ -3395,6 +4589,17 @@ msgid ""
 "refentrytitle><manvolnum>9</manvolnum></citerefentry> routine and simple "
 "wrapping layer."
 msgstr ""
+"<trademark class=\"registered\">Linux</trademark> familia de *at syscalls "
+"contiene: <function>linux_openat</function>, <function>linux_mkdirat</"
+"function>, <function>linux_mknodat</function>, <function>linux_fchownat</"
+"function>, <function>linux_futimesat</function>, <function>linux_fstatat64</"
+"function>, <function>linux_unlinkat</function>, <function>linux_renameat</"
+"function>, <function>linux_linkat</function>, <function>linux_symlinkat</"
+"function>, <function>linux_readlinkat</function>, <function>linux_fchmodat</"
+"function> and <function>linux_faccessat</function>. Todos estos se "
+"implementan utilizando el modificado "
+"<citerefentry><refentrytitle>namei</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry> capa de envoltura rutinaria y simple."
 
 #. (itstool) path: sect4/title
 #: article.translate.xml:2350
@@ -3426,6 +4631,29 @@ msgid ""
 "citerefentry> is not used directly but via a trace of different functions on "
 "various levels. For example the <function>openat</function> goes like this:"
 msgstr ""
+"La implementación se realiza alterando el "
+"<citerefentry><refentrytitle>namei</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry> rutina (descrita arriba) para tomar un parámetro adicional "
+"<varname>dirfd</varname> en su <literal>nameidata</literal>estructura, que "
+"especifica el punto de inicio de la búsqueda de nombre de ruta en lugar de "
+"utilizar el directorio de trabajo actual cada vez. La resolución de "
+"<varname>dirfd</varname> desde el número de descriptor de archivo hasta un "
+"vnode se realiza en nativo *en syscalls. Cuando <varname>dirfd</varname> is "
+"<literal>AT_FDCWD</literal> el <varname>dvp</varname> entrada en "
+"<literal>nameidata</literal> la estructura es <literal>NULL</literal> pero "
+"cuando <varname>dirfd</varname> es un número diferente, obtenemos un archivo "
+"para este descriptor de archivo, verificamos si este archivo es válido y si "
+"hay un vnode adjunto, obtenemos un vnode. Luego verificamos que este vnode "
+"sea un directorio. En el actual "
+"<citerefentry><refentrytitle>namei</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry> rutina simplemente sustituimos el <varname>dvp</varname> vnode "
+"para <varname>dp</varname> variable en el "
+"<citerefentry><refentrytitle>namei</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry> función, que determina el punto de partida. los "
+"<citerefentry><refentrytitle>namei</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry> no se utiliza directamente, sino a través de un rastro de "
+"diferentes funciones en varios niveles. Por ejemplo el <function>openat</"
+"function> va así:"
 
 #. (itstool) path: sect4/programlisting
 #: article.translate.xml:2376
@@ -3443,11 +4671,18 @@ msgid ""
 "implementation enables FreeBSD to implement their own *at syscalls. This is "
 "being discussed right now."
 msgstr ""
+"Por esta razón <function>kern_open</function> y <function>vn_open</function> "
+"debe modificarse para incorporar el adicional <varname>dirfd</varname> "
+"parámetro. No se crea una capa de compatibilidad para aquellos porque no hay "
+"muchos usuarios de esta y los usuarios se pueden convertir fácilmente. Esta "
+"implementación general permite a FreeBSD implementar su propio *en llamadas "
+"al sistema. Esto se está discutiendo ahora mismo."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:2390
+#, fuzzy
 msgid "Ioctl"
-msgstr ""
+msgstr "Ioctl"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:2392
@@ -3475,11 +4710,36 @@ msgid ""
 "to use <trademark class=\"registered\">Linux</trademark> ioctls even in the "
 "native FreeBSD drivers because of the easy porting of applications."
 msgstr ""
+"La interfaz ioctl es bastante frágil debido a su generalidad. Tenemos que "
+"tener en cuenta que los dispositivos difieren entre <trademark class="
+"\"registered\">Linux</trademark> y FreeBSD, por lo que se debe tener cuidado "
+"para que la emulación de ioctl funcione correctamente. El manejo de ioctl se "
+"implementa en <filename>linux_ioctl.c</filename>, donde "
+"<function>linux_ioctl</function> la función está definida. Esta función "
+"simplemente itera sobre conjuntos de manejadores ioctl para encontrar un "
+"manejador que implemente un comando dado. El syscall ioctl tiene tres "
+"parámetros, el descriptor de archivo, el comando y un argumento. El comando "
+"es un número de 16 bits, que en teoría se divide en 8 bits altos que "
+"determinan la clase del comando ioctl y 8 bits bajos, que son el comando "
+"real dentro del conjunto dado. La emulación aprovecha esta división. "
+"Implementamos controladores para cada conjunto, como "
+"<function>sound_handler</function> o <function>disk_handler</function>.Cada "
+"controlador tiene un comando máximo y un comando mínimo definido, que se "
+"utiliza para determinar qué controlador se utiliza. Hay leves problemas con "
+"este enfoque porque <trademark class=\"registered\">Linux</trademark> no usa "
+"la división de conjuntos de manera consistente, por lo que a veces los "
+"ioctls de un conjunto diferente están dentro de un conjunto al que no "
+"deberían pertenecer (ioctls genéricos SCSI dentro del conjunto cdrom, etc.). "
+"FreeBSD actualmente no implementa muchos <trademark class=\"registered\""
+">Linux</trademark>ioctls (en comparación con NetBSD, por ejemplo) pero el "
+"plan es portarlos de NetBSD. La tendencia es usar <trademark class="
+"\"registered\">Linux</trademark> ioctls incluso en los controladores nativos "
+"de FreeBSD debido a la fácil migración de las aplicaciones."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:2422
 msgid "Debugging"
-msgstr ""
+msgstr "Depuración"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:2424
@@ -3490,6 +4750,11 @@ msgid ""
 "LMSG and ARGS macros. Those are used for altering a printable string for "
 "uniform debugging messages."
 msgstr ""
+"Cada llamada al sistema debería ser depurable. Para ello introducimos una "
+"pequeña infraestructura. Tenemos la función ldebug, que indica si una "
+"llamada al sistema determinada debe depurarse (configurable mediante un "
+"sysctl). Para imprimir tenemos macros LMSG y ARGS. Se utilizan para alterar "
+"una cadena imprimible para mensajes de depuración uniformes."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:2435
@@ -3517,6 +4782,19 @@ msgid ""
 "committed enabling some further testing of the emulation layer and giving us "
 "some more hints where we should put our effort in implementing missing stuff."
 msgstr ""
+"En abril de 2007 el <trademark class=\"registered\">Linux</trademark> La "
+"capa de emulación es capaz de emular la <trademark class=\"registered\""
+">Linux</trademark> 2.6.16 kernel bastante bien. Los problemas restantes se "
+"refieren a futexes, inacabados * en la familia de llamadas al sistema, "
+"entrega de señales problemáticas, falta<function>epoll</function> y "
+"<function>inotify</function> y probablemente algunos errores que aún no "
+"hemos descubierto. A pesar de esto, somos capaces de ejecutar básicamente "
+"todos los <trademark class=\"registered\">Linux</trademark> programas "
+"incluidos en FreeBSD Ports Collection con Fedora Core 4 en 2.6.16 y hay "
+"algunos informes rudimentarios de éxito con Fedora Core 6 en 2.6.16. Fedora "
+"Core 6 linux_base se comprometió recientemente para permitir algunas pruebas "
+"adicionales de la capa de emulación y darnos algunas pistas más sobre dónde "
+"deberíamos poner nuestro esfuerzo en implementar las cosas que faltan."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:2455
@@ -3531,6 +4809,15 @@ msgid ""
 "<function>epoll</function> facility which is not directly related to the "
 "<trademark class=\"registered\">Linux</trademark> kernel 2.6."
 msgstr ""
+"Somos capaces de ejecutar las aplicaciones más utilizadas como <package>www/"
+"linux-firefox</package>, <package>net-im/skype</package> y algunos juegos de "
+"la colección Ports. Algunos de los programas exhiben un mal comportamiento "
+"en la emulación 2.6, pero esto está actualmente bajo investigación y es de "
+"esperar que se solucione pronto. La única gran aplicación que se sabe que no "
+"funciona es la <trademark class=\"registered\">Linux</trademark> "
+"<trademark>Java</trademark> Kit de desarrollo y esto se debe al requisito de "
+"<function>epoll</function> instalación que no está directamente relacionada "
+"con la <trademark class=\"registered\">Linux</trademark> kernel 2.6."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:2466
@@ -3540,6 +4827,10 @@ msgid ""
 "Once this is done we can switch to Fedora Core 6 linux_base, which is the "
 "ultimate plan."
 msgstr ""
+"Esperamos habilitar la emulación 2.6.16 por defecto algún tiempo después del "
+"lanzamiento de FreeBSD 7.0 al menos para exponer las partes de la emulación "
+"2.6 para pruebas más amplias. Una vez hecho esto, podemos cambiar a Fedora "
+"Core 6 linux_base, que es el plan definitivo."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:2474
@@ -3554,6 +4845,10 @@ msgid ""
 "and possibly implement the <function>epoll</function> and <function>inotify</"
 "function> facilities."
 msgstr ""
+"El trabajo futuro debe centrarse en solucionar los problemas restantes con "
+"futexes, implementar el resto de la familia de llamadas al sistema * at, "
+"arreglar la entrega de señal y posiblemente implementar el <function>epoll</"
+"function> y <function>inotify</function> instalaciones."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:2482
@@ -3563,6 +4858,10 @@ msgid ""
 "Core 6 the default linux_base because our currently used Fedora Core 4 is "
 "not supported any more."
 msgstr ""
+"Esperamos poder ejecutar los programas más importantes sin problemas pronto, "
+"por lo que podremos cambiar a la emulación 2.6 por defecto y hacer que "
+"Fedora Core 6 sea la linux_base predeterminada porque nuestro Fedora Core 4 "
+"que usamos actualmente ya no es compatible."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:2488
@@ -3572,6 +4871,10 @@ msgid ""
 "really tested. DragonflyBSD has expressed some interest in porting the 2.6 "
 "improvements."
 msgstr ""
+"El otro objetivo posible es compartir nuestro código con NetBSD y "
+"DragonflyBSD. NetBSD tiene algo de soporte para la emulación 2.6 pero está "
+"lejos de estar terminado y no se ha probado realmente. DragonflyBSD ha "
+"expresado cierto interés en portar las mejoras 2.6."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:2494
@@ -3583,6 +4886,12 @@ msgid ""
 "Some performance improvements can also be made, finer grained locking and "
 "others."
 msgstr ""
+"Generalmente, como <trademark class=\"registered\">Linux</trademark> "
+"desarrolla nos gustaría mantenernos al día con su desarrollo, implementando "
+"syscalls recién agregadas. El empalme viene a la mente primero. Algunas "
+"llamadas al sistema ya implementadas también están muy paralizadas, por "
+"ejemplo <function>mremap</function> y otros. También se pueden realizar "
+"algunas mejoras de rendimiento, bloqueo de grano más fino y otros."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:2504
@@ -3592,7 +4901,7 @@ msgstr "Equipo"
 #. (itstool) path: sect2/para
 #: article.translate.xml:2506
 msgid "I cooperated on this project with (in alphabetical order):"
-msgstr ""
+msgstr "Colaboré en este proyecto con (en orden alfabético):"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2511
@@ -3645,11 +4954,13 @@ msgid ""
 "I would like to thank all those people for their advice, code reviews and "
 "general support."
 msgstr ""
+"Me gustaría agradecer a todas esas personas por sus consejos, revisiones de "
+"código y apoyo general."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:2545
 msgid "Literatures"
-msgstr ""
+msgstr "Literaturas"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2549
@@ -3657,6 +4968,8 @@ msgid ""
 "Marshall Kirk McKusick - George V. Nevile-Neil. Design and Implementation of "
 "the FreeBSD operating system. Addison-Wesley, 2005."
 msgstr ""
+"Marshall Kirk McKusick - George V. Nevile-Neil. Diseño e implementación del "
+"sistema operativo FreeBSD. Addison-Wesley, 2005."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:2554
