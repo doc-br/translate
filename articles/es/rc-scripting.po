@@ -1,11 +1,12 @@
 # FreeBSD$
 # Juan David Jaramillo Ortiz <juanda097@protonmail.ch>, 2020.
+# Aaron H Farías Martinez <timido@ubuntu.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:08-0300\n"
-"PO-Revision-Date: 2020-11-15 08:34+0000\n"
-"Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
+"PO-Revision-Date: 2020-12-18 13:32+0000\n"
+"Last-Translator: Aaron H Farías Martinez <timido@ubuntu.com>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_rc-scripting/es/>\n"
 "Language: es\n"
@@ -18,12 +19,12 @@ msgstr ""
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr ""
+msgstr "Aaron H Farias Martinez Timido@ubuntu.com, 2020"
 
 #. (itstool) path: info/title
 #: article.translate.xml:4
 msgid "Practical rc.d scripting in BSD"
-msgstr ""
+msgstr "Scripting práctico rc.d en BSD"
 
 #. (itstool) path: affiliation/address
 #: article.translate.xml:8
@@ -33,10 +34,13 @@ msgstr "<email>yar@FreeBSD.org</email>"
 
 #. (itstool) path: info/author
 #: article.translate.xml:7
+#, fuzzy
 msgid ""
 "<personname><firstname>Yar</firstname><surname>Tikhiy</surname></"
 "personname><affiliation> <_:address-1/> </affiliation>"
 msgstr ""
+"<personname><firstname>Yar</firstname><surname>Tikhiy</surname></"
+"personname><affiliation> <_:address-1/> </affiliation>"
 
 #. (itstool) path: info/copyright
 #: article.translate.xml:11
@@ -50,12 +54,12 @@ msgstr ""
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:20
 msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
-msgstr ""
+msgstr "FreeBSD es una marca registrada de FreeBSD Foundation."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:22
 msgid "NetBSD is a registered trademark of the NetBSD Foundation."
-msgstr ""
+msgstr "NetBSD es una marca registrada de NetBSD Foundation."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:24
@@ -66,14 +70,22 @@ msgid ""
 "designations have been followed by the <quote>™</quote> or the <quote>®</"
 "quote> symbol."
 msgstr ""
+"Muchas de las designaciones utilizadas por los fabricantes y vendedores para "
+"distinguir sus productos se reclaman como marcas comerciales. Cuando esas "
+"designaciones aparecen en este documento, y el Proyecto FreeBSD conocía el "
+"reclamo de marca registrada, las designaciones han sido seguidas por el "
+"<quote>™</quote> o el <quote>®</quote> símbolo."
 
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:32 article.translate.xml:34
+#, fuzzy
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/rc-scripting/article.xml 44709 "
 "2014-04-29 21:39:27Z wblock $"
 msgstr ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/rc-scripting/article.xml 44709 "
+"2014-04-29 21:39:27Z wblock $"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:37
@@ -86,6 +98,14 @@ msgid ""
 "examination should provide reference points for further study of the design "
 "and efficient application of <filename>rc.d</filename>."
 msgstr ""
+"Los principiantes pueden tener dificultades para relacionar los hechos de la "
+"documentación formal en el BSD <filename>rc.d</filename> marco con las "
+"tareas prácticas de <filename>rc.d</filename> secuencias de comandos. En "
+"este artículo, consideramos algunos casos típicos de complejidad creciente, "
+"mostrar <filename>rc.d</filename> características adecuadas para cada caso y "
+"comentar cómo funcionan. Dicho examen debe proporcionar puntos de referencia "
+"para un estudio más detallado del diseño y la aplicación eficiente de "
+"<filename>rc.d</filename>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:50
@@ -104,6 +124,16 @@ msgid ""
 "needed to customize it. With few exceptions, <filename>/etc/rc</filename> "
 "had to be modified, and true hackers liked it."
 msgstr ""
+"El BSD histórico tenía un guión de inicio monolítico, <filename>/etc/rc</"
+"filename>.Fue invocado por "
+"<citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> en el momento del arranque del sistema y realizó todas las "
+"tareas de la zona de usuario necesarias para la operación de múltiples "
+"usuarios: comprobar y montar sistemas de archivos, configurar la red, "
+"iniciar demonios, etc. La lista precisa de tareas no es la misma en todos "
+"los sistemas; los administradores necesitaban personalizarlo. Con pocas "
+"excepciones, <filename>/etc/rc</filename> tuvo que ser modificado, y a los "
+"verdaderos hackers les gustó."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:62
@@ -119,6 +149,17 @@ msgid ""
 "additional actions. In a few words, the single script failed to fulfil what "
 "scripts are for: to make the system admin's life easier."
 msgstr ""
+"El verdadero problema con el enfoque monolítico era que no proporcionaba "
+"control sobre los componentes individuales a partir de <filename>/etc/rc</"
+"filename>. Por ejemplo, <filename>/etc/rc</filename> no se pudo reiniciar un "
+"solo demonio. El administrador del sistema tuvo que encontrar el proceso del "
+"demonio a mano, matarlo, esperar hasta que realmente saliera y luego "
+"examinar <filename>/etc/rc</filename> para las banderas, y finalmente "
+"escriba la línea de comando completa para iniciar el demonio nuevamente. La "
+"tarea se volvería aún más difícil y propensa a errores si el servicio a "
+"reiniciar consistiera en más de un demonio o exigiera acciones adicionales. "
+"En pocas palabras, el único script no cumplió con el propósito de los "
+"scripts: facilitar la vida del administrador del sistema."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:76
@@ -138,6 +179,21 @@ msgid ""
 "modular</quote> approach became even more of a drag than the monolithic "
 "<filename>/etc/rc</filename> had been."
 msgstr ""
+"Más tarde hubo un intento de dividir algunas partes de <filename>/etc/rc</"
+"filename>con el fin de iniciar los subsistemas más importantes por separado. "
+"El ejemplo notorio fue <filename>/etc/netstart</filename>para sacar a "
+"relucir el networking. Permitió acceder a la red desde el modo de usuario "
+"único, pero no se integró bien en el proceso de inicio automático porque "
+"algunas partes de su código debían intercalarse con acciones esencialmente "
+"no relacionadas con la red. Por eso<filename>/etc/netstart</filename> mutado "
+"en <filename>/etc/rc.network</filename>. Este último ya no era un guión "
+"ordinario; se compone de grandes, enredados "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> funciones llamadas desde <filename>/etc/rc</filename> en "
+"diferentes etapas del inicio del sistema. Sin embargo, a medida que las "
+"tareas de inicio se volvieron diversas y sofisticadas, el <quote>quasi-"
+"modular</quote> enfoque se convirtió en un lastre incluso más que el "
+"monolítico <filename>/etc/rc</filename> había sido."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:94
@@ -153,6 +209,16 @@ msgid ""
 "components of the <filename>rc.d</filename> system and see how the "
 "individual scripts are invoked."
 msgstr ""
+"Sin un marco limpio y bien diseñado, los scripts de inicio tuvieron que "
+"hacer todo lo posible para satisfacer las necesidades de los sistemas "
+"operativos basados en BSD en rápido desarrollo. Por fin se hizo evidente que "
+"se necesitan más pasos en el camino hacia una estructura fina y extensible. "
+"<filename>rc</filename> sistema. Así BSD<filename>rc.d</filename> nació. Sus "
+"padres reconocidos fueron Luke Mewburn y la comunidad NetBSD. Posteriormente "
+"se importó a FreeBSD. Su nombre se refiere a la ubicación de los scripts del "
+"sistema para servicios individuales, que se encuentra en <filename>/etc/rc."
+"d</filename>. Pronto conoceremos más componentes de la <filename>rc.d</"
+"filename> sistema y ver cómo se invocan los scripts individuales."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:107
@@ -184,6 +250,34 @@ msgid ""
 "filename>, too, because the proper order for the shutdown sequence is "
 "opposite to that of startup."
 msgstr ""
+"Las ideas básicas detrás de BSD <filename>rc.d</filename> son <emphasis>fina "
+"modularidad</emphasis> Y <emphasis>reutilización de código</emphasis>. "
+"<emphasis>Fina modularidad</emphasis> Significa que cada básico "
+"<quote>servicio</quote> como un demonio del sistema o una tarea de inicio "
+"primitiva, obtiene su propia "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> script capaz de iniciar el servicio, detenerlo, recargarlo, "
+"verificar su estado. Una acción particular se elige mediante el argumento de "
+"la línea de comandos del script. los <filename>/etc/rc</filename> El script "
+"todavía impulsa el inicio del sistema, pero ahora simplemente invoca los "
+"scripts más pequeños uno por uno con el <option>start</option> argumento. "
+"También es fácil realizar tareas de apagado ejecutando el mismo conjunto de "
+"scripts con el <option>stop</option> argumento, que es hecho por <filename>/"
+"etc/rc.shutdown</filename>. Tenga en cuenta lo cerca que sigue la forma Unix "
+"de tener un conjunto de pequeñas herramientas especializadas, cada una "
+"cumpliendo su tarea lo mejor posible. <emphasis>Reutilización de código</"
+"emphasis> significa que las operaciones comunes se implementan como "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> funciones y recogidas en <filename>/etc/rc.subr</filename>. "
+"Ahora, un script típico puede tener solo unas pocas líneas de "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> código. Finalmente, una parte importante de la <filename>rc.d</"
+"filename> marco es <citerefentry><refentrytitle>rcorder</refentrytitle><manvo"
+"lnum>8</manvolnum></citerefentry>, que ayuda <filename>/etc/rc</"
+"filename>para ejecutar los pequeños scripts de forma ordenada con respecto a "
+"las dependencias entre ellos. Puede ayudar <filename>/etc/rc.shutdown</"
+"filename>, también, porque el orden correcto para la secuencia de apagado es "
+"opuesto al de inicio."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:133
@@ -203,6 +297,20 @@ msgid ""
 "refer to them for more formal and complete documentation while reading this "
 "article."
 msgstr ""
+"El BSD <filename>rc.d</filename> el diseño se describe en <link linkend="
+"\"lukem\">el artículo original de Luke Mewburn</link>, y el <filename>rc.d</"
+"filename> Los componentes están documentados con gran detalle en <link "
+"linkend=\"manpages\">las respectivas páginas del manual</link>.Sin embargo, "
+"puede que no parezca obvio para un <filename>rc.d</filename> novato cómo "
+"unir las numerosas partes y piezas para crear un guión con estilo para una "
+"tarea en particular. Por lo tanto, este artículo intentará un enfoque "
+"diferente para describir <filename>rc.d</filename>.Mostrará qué funciones "
+"deben usarse en varios casos típicos y por qué. Tenga en cuenta que este no "
+"es un documento de instrucciones porque nuestro objetivo no es dar recetas "
+"listas para usar, sino mostrar algunas entradas fáciles al <filename>rc.d</"
+"filename> reino. Este artículo tampoco sustituye a las páginas del manual "
+"correspondientes. No dude en consultarlos para obtener documentación más "
+"formal y completa mientras lee este artículo."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:151
@@ -215,6 +323,13 @@ msgid ""
 "in <citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>."
 msgstr ""
+"Hay requisitos previos para comprender este artículo. En primer lugar, debe "
+"estar familiarizado con el "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> lenguaje de secuencias de comandos para dominar <filename>rc."
+"d</filename>. Además, debe saber cómo realiza el sistema las tareas de "
+"inicio y apagado del área de usuario, que se describe en <citerefentry><refen"
+"trytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:158
@@ -224,11 +339,16 @@ msgid ""
 "branches of BSD <filename>rc.d</filename> not only share the same design but "
 "also stay similar in their aspects visible to script authors."
 msgstr ""
+"Este artículo se centra en la rama FreeBSD de <filename>rc.d</filename>. Sin "
+"embargo, también puede ser útil para los desarrolladores de NetBSD, porque "
+"las dos ramas de BSD <filename>rc.d</filename> no solo comparten el mismo "
+"diseño, sino que también son similares en sus aspectos visibles para los "
+"autores de guiones."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:167
 msgid "Outlining the task"
-msgstr ""
+msgstr "Delineando la tarea"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:169
@@ -237,11 +357,15 @@ msgid ""
 "In order to write a well-tempered <filename>rc.d</filename> script for a "
 "system service, we should be able to answer the following questions first:"
 msgstr ""
+"Un poco de consideración antes de empezar <envar>$EDITOR</envar> no Dolera. "
+"Para escribir un buen temperamento <filename>rc.d</filename> script para un "
+"servicio del sistema, deberíamos poder responder las siguientes preguntas "
+"primero:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:177
 msgid "Is the service mandatory or optional?"
-msgstr ""
+msgstr "¿El servicio es obligatorio u opcional?"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:181
@@ -249,11 +373,13 @@ msgid ""
 "Will the script serve a single program, e.g., a daemon, or perform more "
 "complex actions?"
 msgstr ""
+"¿El script servirá a un solo programa, por ejemplo, un demonio, o realizará "
+"acciones más complejas?"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:186
 msgid "Which other services will our service depend on, and vice versa?"
-msgstr ""
+msgstr "¿De qué otros servicios dependerá nuestro servicio y viceversa?"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:191
@@ -261,17 +387,21 @@ msgid ""
 "From the examples that follow we will see why it is important to know the "
 "answers to these questions."
 msgstr ""
+"De los ejemplos que siguen veremos por qué es importante conocer las "
+"respuestas a estas preguntas."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:196
 msgid "A dummy script"
-msgstr ""
+msgstr "Un guión ficticio"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:198
 msgid ""
 "The following script just emits a message each time the system boots up:"
 msgstr ""
+"El siguiente script simplemente emite un mensaje cada vez que se inicia el "
+"sistema:"
 
 #. (itstool) path: informalexample/programlisting
 #: article.translate.xml:202
@@ -312,7 +442,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: article.translate.xml:219
 msgid "Things to note are:"
-msgstr ""
+msgstr "Las cosas a tener en cuenta son:"
 
 #. (itstool) path: callout/para
 #: article.translate.xml:223
@@ -325,12 +455,19 @@ msgid ""
 "citerefentry>.) For example, a system admin can run our script manually, "
 "from the command line:"
 msgstr ""
+"Un guión interpretado debe comenzar con la magia <quote>shebang</quote> "
+"línea. Esa línea especifica el programa intérprete del guión. Debido a la "
+"línea shebang, el script puede invocarse exactamente como un programa "
+"binario siempre que tenga el bit de ejecución establecido. (Ver <citerefentry"
+"><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></citerefentry>."
+") Por ejemplo, un administrador del sistema puede ejecutar nuestro script "
+"manualmente, desde la línea de comando:"
 
 #. (itstool) path: callout/screen
 #: article.translate.xml:232
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>/etc/rc.d/dummy start</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>/etc/rc.d/dummy start</userinput>"
 
 #. (itstool) path: note/para
 #: article.translate.xml:235
@@ -345,6 +482,15 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> script in the "
 "appropriate <filename>rc.d</filename> directory."
 msgstr ""
+"Para ser adecuadamente gestionado por el <filename>rc.d</filename> "
+"framework, sus scripts deben estar escritos en el "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> idioma. Si tiene un servicio o puerto que utiliza una utilidad "
+"de control binario o una rutina de inicio escrita en otro idioma, instale "
+"ese elemento en <filename>/usr/sbin</filename> (para el sistema) o "
+"<filename>/usr/local/sbin</filename>(para puertos) y llámalo desde un "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> guión en el apropiado<filename>rc.d</filename> directorio."
 
 #. (itstool) path: tip/para
 #: article.translate.xml:247
@@ -356,6 +502,13 @@ msgid ""
 "<function>run_rc_script</function>, then study the implementation of "
 "<function>run_rc_script</function> in <filename>/etc/rc.subr</filename>."
 msgstr ""
+"Si desea conocer los detalles de por qué <filename>rc.d</filename> Los "
+"guiones deben estar escritos en el "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>idioma, mira como <filename>/etc/rc</filename> Los invoca "
+"mediante <function>run_rc_script</function>, luego estudiar la "
+"implementación de <function>run_rc_script</function> en <filename>/etc/rc."
+"subr</filename>."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:258
