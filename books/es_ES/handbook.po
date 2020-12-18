@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-11-16 21:29-0300\n"
-"PO-Revision-Date: 2020-12-14 01:05+0000\n"
+"PO-Revision-Date: 2020-12-18 02:42+0000\n"
 "Last-Translator: Aaron H Farías Martinez <timido@ubuntu.com>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/es/>\n"
@@ -949,6 +949,13 @@ msgid ""
 "\">Oracle</trademark></application> and <application><trademark class="
 "\"registered\">Mathematica</trademark></application>."
 msgstr ""
+"Describe el <trademark class=\"registered\">Linux</trademark> "
+"características de compatibilidad de FreeBSD. También proporciona "
+"instrucciones de instalación detalladas para muchos <trademark class="
+"\"registered\">Linux</trademark> aplicaciones como <application><trademark "
+"class=\"registered\">Oracle</trademark></application> y "
+"<application><trademark class=\"registered\""
+">Matemática</trademark></application>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1273
@@ -1328,6 +1335,12 @@ msgid ""
 "in a modern <trademark class=\"registered\">Microsoft</trademark> <trademark "
 "class=\"registered\">Windows</trademark> environment."
 msgstr ""
+"Ejemplos que comienzan con <filename>C:\\&gt;</filename> indicar un "
+"<trademark class=\"registered\">MS-DOS</trademark> mando. A menos que se "
+"indique lo contrario, estos comandos pueden ejecutarse desde un "
+"<quote>Command Prompt</quote> ventana en un moderno <trademark class="
+"\"registered\">Microsoft</trademark> <trademark class=\"registered\""
+">Windows</trademark> medio ambiente."
 
 #. (itstool) path: preface/screen
 #: book.translate.xml:1592
@@ -1857,7 +1870,7 @@ msgstr "<primary> servidores FTP</primary>"
 #. (itstool) path: listitem/para
 #: book.translate.xml:1887
 msgid "FTP servers<_:indexterm-1/>"
-msgstr ""
+msgstr "Servidores FTP<_:indexterm-1/>"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:1894
@@ -1936,6 +1949,11 @@ msgid ""
 "network? FreeBSD can easily turn that unused PC sitting in the corner into "
 "an advanced router with sophisticated packet-filtering capabilities."
 msgstr ""
+"<emphasis>Redes:</emphasis> ¿Necesita un nuevo enrutador?<_:indexterm-1/> Un "
+"servidor de nombres (DNS)?<_:indexterm-2/> ¿Un firewall para mantener a las "
+"personas fuera de su red interna? FreeBSD puede convertir fácilmente esa PC "
+"sin usar que está en la esquina en un enrutador avanzado con sofisticadas "
+"capacidades de filtrado de paquetes."
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:1948
@@ -1955,11 +1973,21 @@ msgid ""
 "FreeBSD makes an excellent foundation for building embedded routers, "
 "firewalls, and other devices."
 msgstr ""
+"<emphasis>Embedded:</emphasis> FreeBSD es una excelente plataforma para "
+"construir sistemas integrados. <_:indexterm-1/> Con apoyo para el <trademark "
+"class=\"registered\">ARM</trademark>, <trademark class=\"registered\">MIPS</"
+"trademark> y <trademark class=\"registered\">PowerPC</trademark> "
+"plataformas, junto con una pila de red robusta, características de "
+"vanguardia y el permisivo <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US."
+"ISO8859-1/books/faq/introduction.html#bsd-license-restrictions\">BSD "
+"license</link>FreeBSD constituye una base excelente para construir "
+"enrutadores, firewalls y otros dispositivos integrados."
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:1961
+#, fuzzy
 msgid "<primary>X Window System</primary>"
-msgstr ""
+msgstr "<primary>X Window System</primary>"
 
 #. (itstool) path: para/indexterm
 #. (itstool) path: sect2/indexterm
@@ -1986,6 +2014,15 @@ msgid ""
 "FreeBSD can even boot <quote>diskless</quote> from a central server, making "
 "individual workstations even cheaper and easier to administer."
 msgstr ""
+"<_:indexterm-1/> <_:indexterm-2/> <_:indexterm-3/> <emphasis>Desktop:</"
+"emphasis> freeBSD hace una buena elección para una solución de escritorio "
+"económica usando el servidor X11 disponible gratuitamente. FreeBSD ofrece "
+"una opción entre muchos entornos de escritorio de código abierto, incluido "
+"el estándar <application>GNOME</application> y <application>KDE</"
+"application> interfaces gráficas de usuario. FreeBSD puede incluso arrancar "
+"<quote>diskless</quote> desde un servidor central, lo que hace que las "
+"estaciones de trabajo individuales sean aún más baratas y fáciles de "
+"administrar."
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:1986
@@ -2043,6 +2080,15 @@ msgid ""
 "\">Rambler</link>, <link xlink:href=\"http://www.yahoo.com/\">Yahoo!</link>, "
 "and <link xlink:href=\"http://www.yandex.ru/\">Yandex</link>."
 msgstr ""
+"FreeBSD ha sido conocido por sus capacidades de servicio web; los sitios que "
+"se ejecutan en FreeBSD incluyen <link xlink:href=\"https://news.ycombinator."
+"com/\">Noticias de Hacker</link>, <link xlink:href=\"http://www.netcraft.com/"
+"\">Netcraft</link>, <link xlink:href=\"http://www.163.com/\">NetEase</link>, "
+"<link xlink:href=\"https://signup.netflix.com/openconnect\">Netflix</link>, "
+"<link xlink:href=\"http://www.sina.com/\">Sina</link>, <link xlink:href="
+"\"http://www.sony.co.jp/\">Sony Japan</link>, <link xlink:href=\"http://www."
+"rambler.ru/\">Rambler</link>, <link xlink:href=\"http://www.yahoo.com/\""
+">Yahoo!</link>, y <link xlink:href=\"http://www.yandex.ru/\">Yandex</link>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2022
@@ -2072,6 +2118,10 @@ msgid ""
 "infrastructure, including possibly one of the largest SVN repositories in "
 "the world with over 1.4 million commits, on FreeBSD."
 msgstr ""
+"<link xlink:href=\"http://www.apache.org/\">Apache</link> <_:indexterm-1/> -"
+"Apache Software Foundation ejecuta la mayor parte de su infraestructura de "
+"cara al público, incluido posiblemente uno de los repositorios SVN más "
+"grandes del mundo con más de 1,4 millones de confirmaciones, en FreeBSD."
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2042
@@ -2104,6 +2154,9 @@ msgid ""
 "IronPort network security and anti-spam appliances run a modified FreeBSD "
 "kernel."
 msgstr ""
+"<link xlink:href=\"http://www.cisco.com/\">Cisco</link> <_:indexterm-1/> - "
+"Los dispositivos de seguridad de red y anti-spam de IronPort ejecutan un "
+"kernel FreeBSD modificado."
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2060
@@ -2896,6 +2949,19 @@ msgid ""
 "product. Under the terms of that agreement, the project was allowed one last "
 "release before the deadline, that release being FreeBSD 1.1.5.1."
 msgstr ""
+"Alrededor de este tiempo, algunas nubes de tormenta bastante inesperadas se "
+"formaron en el horizonte cuando Novell y U.C. Berkeley resolvió su larga "
+"demanda sobre el estatus legal de la cinta Berkeley Net / 2. Una condición "
+"de ese asentamiento era U.C. La concesión de Berkeley de que gran parte de "
+"Net/2 <quote>encumbered</quote> código y propiedad de Novell, quien a su vez "
+"lo había adquirido de AT&amp;T algún tiempo antes. Lo que Berkeley obtuvo a "
+"cambio fue Novell <quote>blessing</quote>que la versión 4.4BSD-Lite, cuando "
+"finalmente se lance, se declararía libre de cargas y se recomendaría "
+"encarecidamente a todos los usuarios de Net / 2 existentes que se cambiaran. "
+"Esto incluía FreeBSD, y el proyecto se dio hasta finales de julio de 1994 "
+"para dejar de enviar su propio producto basado en Net/2. Según los términos "
+"de ese acuerdo, se permitió al proyecto una última versión antes de la fecha "
+"límite, siendo esa versión FreeBSD 1.1.5.1."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2471
@@ -3150,6 +3216,23 @@ msgid ""
 "literal> repository and <link linkend=\"ports-using\">Using the Ports "
 "Collection</link> for details on obtaining the FreeBSD Ports Collection."
 msgstr ""
+"<_:indexterm-1/> <_:indexterm-2/> <_:indexterm-3/> <_:indexterm-4/> <_:"
+"indexterm-5/> <_:indexterm-6/>Durante varios años, el árbol de fuentes "
+"central de FreeBSD fue mantenido por <link xlink:href=\"http://www.nongnu."
+"org/cvs/\">CVS</link> (Concurrente Versions System), una herramienta de "
+"control de código fuente disponible gratuitamente. En junio de 2008, el "
+"proyecto pasó a utilizar <link xlink:href=\"http://subversion.tigris.org\""
+">SVN</link> (Subversion). El cambio se consideró necesario, ya que las "
+"limitaciones técnicas impuestas por <application>CVS</application> wse "
+"estaban volviendo obvios debido a la rápida expansión del árbol de fuentes y "
+"la cantidad de historia ya almacenada. Los repositorios Documentation "
+"Project y Ports Collection también se movieron de <application>CVS</"
+"application> a <application>SVN</application> en mayo de 2012 y julio de "
+"2012, respectivamente. por favor refiérase a <link linkend=\"synching\""
+">Obtener la fuente</link> sección para obtener más información sobre cómo "
+"obtener FreeBSD <literal>src/</literal> repositorio y <link linkend=\"ports-"
+"using\">Uso de la colección de puertos</link> para obtener detalles sobre "
+"cómo obtener la colección de puertos de FreeBSD."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:2634
@@ -3175,6 +3258,16 @@ msgid ""
 "mailing lists, IRC channels, or forums can be used to help verify that an "
 "issue is actually a bug."
 msgstr ""
+"La <firstterm>committers</firstterm> <_:indexterm-1/> son las personas que "
+"tienen<emphasis>write</emphasis> acceso al árbol de Subversion, y están "
+"autorizados a realizar modificaciones a la fuente FreeBSD (el término "
+"<quote>committer</quote> viene de <command>commit</command>, el comando de "
+"control de fuente que se usa para traer nuevos cambios al repositorio). "
+"Cualquiera puede enviar un error al <link xlink:href=\"https://bugs.FreeBSD."
+"org/submit/\">Base de datos de errores</link>. Antes de enviar un informe de "
+"error, las listas de correo de FreeBSD, los canales de IRC o los foros se "
+"pueden utilizar para ayudar a verificar que un problema es realmente un "
+"error."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:2654
@@ -3270,6 +3363,10 @@ msgid ""
 "<_:indexterm-1/> is a long and growing one, so why not join it by "
 "contributing something back to FreeBSD today?"
 msgstr ""
+"<citetitle><link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/"
+"contributors/article.html\">la lista de colaboradores de FreeBSD</link></"
+"citetitle> <_:indexterm-1/> es uno largo y creciente, así que ¿por qué no "
+"unirse a él contribuyendo con algo a FreeBSD hoy?"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2707
@@ -3381,11 +3478,15 @@ msgstr "El manual de FreeBSD"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2771
+#, fuzzy
 msgid ""
 "<link xlink:href=\"file://localhost/usr/local/share/doc/freebsd/handbook/"
 "index.html\"><filename>/usr/local/share/doc/freebsd/handbook/index.html</"
 "filename></link>"
 msgstr ""
+"<link xlink:href=\"file://localhost/usr/local/share/doc/freebsd/handbook/"
+"index.html\"><filename>/usr/local/share/doc/freebsd/handbook/index."
+"html</filename></link>"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:2776
@@ -3394,11 +3495,15 @@ msgstr "Preguntas frecuentes de FreeBSD"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2779
+#, fuzzy
 msgid ""
 "<link xlink:href=\"file://localhost/usr/local/share/doc/freebsd/faq/index."
 "html\"><filename>/usr/local/share/doc/freebsd/faq/index.html</filename></"
 "link>"
 msgstr ""
+"<link xlink:href=\"file://localhost/usr/local/share/doc/freebsd/faq/index."
+"html\"><filename>/usr/local/share/doc/freebsd/faq/index."
+"html</filename></link>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2784
@@ -3421,13 +3526,18 @@ msgid ""
 "<personname> <firstname>Gavin</firstname> <surname>Atkinson</surname> </"
 "personname> <contrib>Updated for bsdinstall by </contrib>"
 msgstr ""
+"<personname> <firstname>Gavin</firstname> <surname>Atkinson</surname> </"
+"personname> <contrib>actualizado para bsdinstall por </contrib>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2837
+#, fuzzy
 msgid ""
 "<personname> <firstname>Warren</firstname> <surname>Block</surname> </"
 "personname>"
 msgstr ""
+"<personname> <firstname>Warren</firstname> <surname>Block</surname> "
+"</personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2846
@@ -3487,6 +3597,16 @@ msgid ""
 "microsoft.com/en-us/azure/virtual-machines/linux/freebsd-intro-on-azure"
 "\">Azure Documentation</link>."
 msgstr ""
+"Imágenes de máquinas virtuales disponibles en Amazon <link xlink:href=\"https"
+"://aws.amazon.com/marketplace/pp/B07L6QV354\">AWS Mercado</link>, <link "
+"xlink:href=\"https://azuremarketplace.microsoft.com/en-us/marketplace/"
+"apps?search=freebsd&amp;page=1\">Microsoft Azure Marketplace</link>, y <link "
+"xlink:href=\"https://console.cloud.google.com/marketplace/details/"
+"freebsd-cloud/freebsd-12\">Google Cloud Platform</link>,para ejecutarse en "
+"sus respectivos servicios de alojamiento. Para obtener más información sobre "
+"la implementación de FreeBSD en Azure, consulte el capítulo correspondiente "
+"en el<link xlink:href=\"https://docs.microsoft.com/en-us/azure/"
+"virtual-machines/linux/freebsd-intro-on-azure\">Azure Documentación</link>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2890
@@ -3682,6 +3802,10 @@ msgid ""
 "<acronym>Intel64</acronym>. Other manufacturers sometimes call it "
 "<acronym>x86-64</acronym>."
 msgstr ""
+"Este es el tipo de procesador de escritorio y portátil más común, utilizado "
+"en la mayoría de los sistemas modernos. <trademark class=\"registered\""
+">Intel</trademark> lo llama <acronym>Intel64</acronym>. Otros fabricantes a "
+"veces lo llaman <acronym>x86-64</acronym>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2998
@@ -3692,6 +3816,11 @@ msgid ""
 "<trademark class=\"registered\">Intel</trademark> <trademark>Core</"
 "trademark> 2 and later processors."
 msgstr ""
+"Ejemplos de procesadores compatibles con amd64 incluyen: <trademark>AMD "
+"Athlon</trademark>64, <trademark>AMD Opteron</trademark>, multi-core "
+"<trademark class=\"registered\">Intel</trademark> <trademark>Xeon</"
+"trademark>, y <trademark class=\"registered\">Intel</trademark> "
+"<trademark>Core</trademark> 2 y procesadores posteriores."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:3006
@@ -3726,6 +3855,13 @@ msgid ""
 "GB and allow it to be used by the system. However, using <acronym>PAE</"
 "acronym> places constraints on device drivers and other features of FreeBSD."
 msgstr ""
+"FreeBSD aprovechará las extensiones de direcciones físicas "
+"(<acronym>PAE</acronym>) apoyo en <acronym>CPU</acronym>s con esta "
+"característica. Un núcleo con el <acronym>PAE</acronym> La función "
+"habilitada detectará la memoria por encima de 4 GB y permitirá que la "
+"utilice el sistema. Sin embargo, usando<acronym>PAE</acronym> impone "
+"restricciones a los controladores de dispositivos y otras características de "
+"FreeBSD."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:3027
@@ -3741,6 +3877,10 @@ msgid ""
 "built-in <acronym>USB</acronym> are supported. <acronym>SMP</acronym> is "
 "supported on machines with multiple <acronym>CPU</acronym>s."
 msgstr ""
+"Todo Nuevo Mundo <acronym>ROM</acronym> <trademark class=\"registered\""
+">Apple</trademark> <trademark class=\"registered\">Mac</trademark> sistemas "
+"con incorporado<acronym>USB</acronym> son compatibles. <acronym>SMP</"
+"acronym> es compatible con máquinas con múltiples <acronym>CPU</acronym>s."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3034
@@ -3852,6 +3992,19 @@ msgid ""
 "partitioning a disk. Common <acronym>GPT</acronym> implementations allow up "
 "to 128 partitions per disk, eliminating the need for logical partitions."
 msgstr ""
+"En las arquitecturas i386 y amd64, los discos se pueden dividir en varias "
+"particiones utilizando uno de los dos esquemas de partición. Un tradicional "
+"<firstterm>Registro de arranque principal</firstterm> "
+"(<acronym>MBR</acronym>) sostiene una tabla de partición que define hasta "
+"cuatro <firstterm>primary partitions</firstterm>. Por razones históricas, "
+"FreeBSD llama a estas particiones primarias <firstterm>slices</firstterm>. "
+"Una de estas particiones primarias se puede convertir en un "
+"<firstterm>partición extendida</firstterm> que contiene "
+"múltiples<firstterm>particiones lógicas</firstterm>. El <firstterm>GUID "
+"Tabla de particiones</firstterm> (<acronym>GPT</acronym>)es un método más "
+"nuevo y sencillo de particionar un disco. Común <acronym>GPT</acronym> las "
+"implementaciones permiten hasta 128 particiones por disco, eliminando la "
+"necesidad de particiones lógicas."
 
 #. (itstool) path: step/para
 #: book.translate.xml:3105
@@ -3862,6 +4015,12 @@ msgid ""
 "deleting existing data, use a partition resizing tool to shrink an existing "
 "partition and create a new partition using the freed space."
 msgstr ""
+"El cargador de arranque FreeBSD requiere un primario o <acronym>GPT</"
+"acronym> dividir. Si todos los <acronym>GPT</acronym> las particiones ya "
+"están en uso, hay que liberar una para FreeBSD. Para crear una partición sin "
+"eliminar los datos existentes, use una herramienta de cambio de tamaño de "
+"partición para reducir una partición existente y crear una nueva partición "
+"usando el espacio liberado."
 
 #. (itstool) path: step/para
 #: book.translate.xml:3113
@@ -3876,6 +4035,15 @@ msgid ""
 "partition editor. <application>GParted</application> is also included with "
 "many other Linux live <acronym>CD</acronym> distributions."
 msgstr ""
+"Una variedad de herramientas de cambio de tamaño de particiones gratuitas y "
+"comerciales se enumeran en <link xlink:href=\"http://en.wikipedia.org/wiki/"
+"List_of_disk_partitioning_software\">http://en.wikipedia.org/wiki/"
+"List_of_disk_partitioning_software</link>. <application>GParted Live</"
+"application> (<link xlink:href=\"http://gparted.sourceforge.net/livecd.php\""
+">http://gparted.sourceforge.net/livecd.php</link>) es una vida libre "
+"<acronym>CD</acronym> which includes the <application>GParted</application> "
+"Editor de particiones. <application>GParted</application> también se incluye "
+"con muchos otros Linux live <acronym>CD</acronym> distribuciones."
 
 #. (itstool) path: warning/para
 #: book.translate.xml:3123
@@ -3931,6 +4099,11 @@ msgid ""
 "available, the following network information for the system must be obtained "
 "from the local network administrator or Internet service provider:"
 msgstr ""
+"Si la red tiene un <acronym>DHCP</acronym> servidor, se puede utilizar para "
+"proporcionar una configuración de red automática. Si <acronym>DHCP</acronym> "
+"no está disponible, la siguiente información de red para el sistema debe "
+"obtenerse del administrador de red local o del proveedor de servicios de "
+"Internet:"
 
 #. (itstool) path: orderedlist/title
 #: book.translate.xml:3154
@@ -3940,9 +4113,8 @@ msgstr "Información de red requerida"
 #. (itstool) path: listitem/para
 #. (itstool) path: row/entry
 #: book.translate.xml:3157 book.translate.xml:54175
-#, fuzzy
 msgid "<acronym>IP</acronym> address"
-msgstr "<acronym>IP</acronym> address"
+msgstr "<acronym>IP</acronym> dirección"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3161
@@ -3984,6 +4156,15 @@ msgid ""
 "errata before installing to make sure that there are no problems that might "
 "affect the installation."
 msgstr ""
+"Aunque el Proyecto FreeBSD se esfuerza por garantizar que cada versión de "
+"FreeBSD sea lo más estable posible, ocasionalmente se introducen errores en "
+"el proceso. En muy raras ocasiones, esos errores afectan el proceso de "
+"instalación. A medida que estos problemas se descubren y solucionan, se "
+"anotan en la Errata de FreeBSD (<link xlink:href=\"@@URL_RELPREFIX@@/"
+"releases/12.1R/errata.html\">https://www.freebsd.org/releases/12.1R/errata."
+"html</link>) en el sitio web de FreeBSD. Verifique la errata antes de "
+"instalar para asegurarse de que no haya problemas que puedan afectar la "
+"instalación."
 
 #. (itstool) path: step/para
 #: book.translate.xml:3193
@@ -4031,6 +4212,14 @@ msgid ""
 "file to a <acronym>DVD</acronym>, and boot the system with the <acronym>DVD</"
 "acronym> inserted."
 msgstr ""
+"Los archivos de instalación de FreeBSD están disponibles en <link xlink:href="
+"\"@@URL_RELPREFIX@@/where.html#download\">www.freebsd.org/where."
+"html#download</link>. El nombre de cada archivo de instalación incluye la "
+"versión de lanzamiento de FreeBSD, la arquitectura y el tipo de archivo. Por "
+"ejemplo, para instalar FreeBSD 12.1 en un sistema amd64 desde "
+"un<acronym>DVD</acronym>, descargar <filename>FreeBSD-12.1-RELEASE-amd64-dvd1"
+".iso</filename>, grabar este archivo en un <acronym>DVD</acronym>, e inicie "
+"el sistema con el <acronym>DVD</acronym> insertado."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3218
@@ -4126,6 +4315,11 @@ msgid ""
 "file to a <acronym>USB</acronym> stick as shown in <xref linkend="
 "\"bsdinstall-usb\"/>."
 msgstr ""
+"<literal>-mini-memstick.img</literal>: Como <literal>-bootonly.iso</"
+"literal>, no incluye archivos de instalación, pero los descarga según sea "
+"necesario. Se requiere una conexión a Internet que funcione durante la "
+"instalación. Escriba este archivo en un <acronym>USB</acronym> pegar como se "
+"muestra en <xref linkend=\"bsdinstall-usb\"/>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3278
@@ -4137,6 +4331,12 @@ msgid ""
 "citerefentry> for this, used as <command>sha256 <replaceable>imagefilename</"
 "replaceable></command>. Other operating systems have similar programs."
 msgstr ""
+"Después de descargar el archivo de imagen, descargue <filename>CHECKSUM."
+"SHA256</filename> desde el mismo directorio. Calcule un <firstterm>checksum</"
+"firstterm> para el archivo de imagen. FreeBSD proporciona<citerefentry><refen"
+"trytitle>sha256</refentrytitle><manvolnum>1</manvolnum></citerefentry> para "
+"esto, usado como <command>sha256 <replaceable>imagefilename</replaceable></"
+"command>. Otros sistemas operativos tienen programas similares."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3286
@@ -4164,6 +4364,11 @@ msgid ""
 "for writing the <filename>*.img</filename> to a <acronym>USB</acronym> "
 "stick. This section describes two of these utilities."
 msgstr ""
+"El <filename>*.img</filename> file is an <emphasis>image</emphasis> del "
+"contenido completo de una tarjeta de memoria. Eso <emphasis>cannot</"
+"emphasis> copiarse al dispositivo de destino como un archivo. Hay varias "
+"aplicaciones disponibles para escribir <filename>*.img</filename> a un "
+"<acronym>USB</acronym> palo. Esta sección describe dos de estas utilidades."
 
 #. (itstool) path: important/para
 #: book.translate.xml:3303
@@ -4206,6 +4411,16 @@ msgid ""
 "image to the first <acronym>USB</acronym> device on an existing FreeBSD "
 "system."
 msgstr ""
+"El <citerefentry><refentrytitle>dd</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> La utilidad de línea de comandos está disponible en BSD, "
+"<trademark class=\"registered\">Linux</trademark>, and <trademark class="
+"\"registered\">Mac OS</trademark> sistemas. Para grabar la imagen usando "
+"<command>dd</command>, introduzca el <acronym>USB</acronym> pegar y "
+"determinar el nombre de su dispositivo. Luego, especifique el nombre del "
+"archivo de instalación descargado y el nombre del dispositivo para el "
+"<acronym>USB</acronym> palo. Este ejemplo graba la imagen de instalación de "
+"amd64 en la primera <acronym>USB</acronym> dispositivo en un sistema FreeBSD "
+"existente."
 
 #. (itstool) path: step/screen
 #: book.translate.xml:3332
@@ -4231,6 +4446,19 @@ msgid ""
 "force all writes to complete, use <citerefentry><refentrytitle>sync</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 msgstr ""
+"Si este comando falla, verifique que el <acronym>USB</acronym> stick no está "
+"montado y que el nombre del dispositivo es para el disco, no para una "
+"partición. Algunos sistemas operativos pueden requerir que este comando se "
+"ejecute con "
+"<citerefentry><refentrytitle>sudo</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>. El "
+"<citerefentry><refentrytitle>dd</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> la sintaxis varía ligeramente en diferentes plataformas; por "
+"ejemplo, <trademark class=\"registered\">Mac OS</trademark> requiere una "
+"minúscula <option>bs=1m</option>. Systems like <trademark class=\"registered"
+"\">Linux</trademark> podría almacenar en búfer las escrituras. Para forzar "
+"que se completen todas las escrituras, use <citerefentry><refentrytitle>sync<"
+"/refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 
 #. (itstool) path: procedure/title
 #: book.translate.xml:3348
@@ -4254,6 +4482,8 @@ msgid ""
 "Obtaining <application>Image Writer for <trademark class=\"registered"
 "\">Windows</trademark></application>"
 msgstr ""
+"Obtención <application>Image Escritor para <trademark class=\"registered\""
+">Windows</trademark></application>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:3360
@@ -4264,6 +4494,12 @@ msgid ""
 "sourceforge.net/projects/win32diskimager/\">https://sourceforge.net/projects/"
 "win32diskimager/</uri> and extract it into a folder."
 msgstr ""
+"<application> Escritor de imágenes para <trademark class=\"registered\""
+">Windows</trademark></application> es una aplicación gratuita que puede "
+"escribir correctamente un archivo de imagen en una tarjeta de memoria. "
+"Descárgalo desde <uri xlink:href=\"https://sourceforge.net/projects/"
+"win32diskimager/\">https://sourceforge.net/projects/win32diskimager/</uri> y "
+"extraerlo en una carpeta."
 
 #. (itstool) path: step/title
 #: book.translate.xml:3368
@@ -4282,6 +4518,16 @@ msgid ""
 "are open in other windows. When everything is ready, click "
 "<guibutton>[ Write ]</guibutton> to write the image file to the memory stick."
 msgstr ""
+"Haga doble clic en el <application>Win32DiskImager</application> icono para "
+"iniciar el programa. Verifique que la letra de la unidad que se muestra "
+"debajo <computeroutput>Dispositivo</computeroutput> es la unidad con la "
+"tarjeta de memoria. Haga clic en el icono de la carpeta y seleccione la "
+"imagen que desee escribir en la tarjeta de memoria. Hacer clic <guibutton>[ "
+"Save ]</guibutton> para aceptar el nombre del archivo de imagen. Verifique "
+"que todo esté correcto y que no haya carpetas en la tarjeta de memoria "
+"abiertas en otras ventanas. Cuando todo esté listo, haz clic <guibutton>[ "
+"Write ]</guibutton> para escribir el archivo de imagen en la tarjeta de "
+"memoria."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3385
@@ -4339,6 +4585,14 @@ msgid ""
 "and insert the media at the first opportunity. How to configure the system "
 "to boot from the inserted media depends upon the architecture."
 msgstr ""
+"Esta sección describe cómo arrancar el sistema desde el medio de instalación "
+"que se preparó siguiendo las instrucciones de <xref linkend=\"bsdinstall-"
+"installation-media\"/>. Cuando utilice una memoria USB de arranque, conecte "
+"el <acronym>USB</acronym> pegar antes de encender la computadora. Al "
+"arrancar desde <acronym>CD</acronym> or <acronym>DVD</acronym>, Encienda la "
+"computadora e inserte el medio en la primera oportunidad. Cómo configurar el "
+"sistema para que arranque desde el medio insertado depende de la "
+"arquitectura."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3420
@@ -4356,6 +4610,14 @@ msgid ""
 "<acronym>BIOS</acronym>. Typically, the key is either <keycap>F10</keycap>, "
 "<keycap>F11</keycap>, <keycap>F12</keycap>, or <keycap>Escape</keycap>."
 msgstr ""
+"Estas arquitecturas proporcionan una <acronym>BIOS</acronym> menú para "
+"seleccionar el dispositivo de arranque. Dependiendo del medio de instalación "
+"que se utilice, seleccione el <acronym>CD</acronym>/<acronym>DVD</acronym> o "
+"<acronym>USB</acronym> dispositivo como el primer dispositivo de arranque. "
+"La mayoría de los sistemas también proporcionan una clave para seleccionar "
+"el dispositivo de arranque durante el inicio sin tener que ingresar el "
+"<acronym>BIOS</acronym>. Normalmente, la clave es <keycap>F10</keycap>, "
+"<keycap>F11</keycap>, <keycap>F12</keycap>, o <keycap>Escapar</keycap>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3433
@@ -4382,6 +4644,9 @@ msgid ""
 "The <acronym>BIOS</acronym> changes were incorrect or not saved. Double-"
 "check that the right boot device is selected as the first boot device."
 msgstr ""
+"<acronym>BIOS</acronym> los cambios fueron incorrectos o no se guardaron. "
+"Verifique que el dispositivo de inicio correcto esté seleccionado como el "
+"primer dispositivo de inicio."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3450
@@ -4391,11 +4656,15 @@ msgid ""
 "\"http://www.plop.at/en/bootmanagers.html\"/>) can be used to boot the "
 "system from the selected media."
 msgstr ""
+"Este sistema es demasiado antiguo para admitir el arranque desde el medio "
+"elegido. En este caso, el <application>Plop Boot Manager</application> ("
+"<link xlink:href=\"http://www.plop.at/en/bootmanagers.html\"/>) se puede "
+"utilizar para iniciar el sistema desde el medio seleccionado."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3460
 msgid "Booting on <trademark class=\"registered\">PowerPC</trademark>"
-msgstr ""
+msgstr "Arrancando en <trademark class=\"registered\">PowerPC</trademark>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3462
@@ -4408,12 +4677,20 @@ msgid ""
 "keycap> </keycombo> on non-<trademark class=\"registered\">Apple</trademark> "
 "keyboards. At the <prompt>0 &gt;</prompt> prompt, enter"
 msgstr ""
+"En la mayoría de las máquinas, mantener <keycap>C</keycap> en el teclado "
+"durante el arranque se iniciará desde el <acronym>CD</acronym>. De lo "
+"contrario, mantén <keycombo action=\"simul\"> <keycap>Command</keycap> "
+"<keycap>Opción</keycap> <keycap>O</keycap> <keycap>F</keycap> </keycombo>, "
+"or <keycombo action=\"simul\"> <keycap>Windows</keycap> <keycap>Alt</keycap> "
+"<keycap>O</keycap> <keycap>F</keycap> </keycombo> on non-<trademark class="
+"\"registered\">Apple</trademark> keyboards. At the <prompt>0 &gt;</prompt> "
+"prompt, enter"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:3478
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<userinput>boot cd:,\\ppc\\loader cd:0</userinput>"
-msgstr ""
+msgstr "<userinput>boot cd:,\\ppc\\loader cd:0</userinput>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3482
@@ -4440,10 +4717,12 @@ msgstr "Menú del cargador de arranque de FreeBSD"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:3492
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='bsdinstall/bsdinstall-newboot-loader-menu' md5='__failed__'"
 msgstr ""
+"external ref='bsdinstall/bsdinstall-newboot-loader-menu' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3497
@@ -4468,6 +4747,10 @@ msgid ""
 "process. If the boot timer has been paused, press <keycap>1</keycap>, upper- "
 "or lower-case <keycap>B</keycap>, or <keycap>Enter</keycap>."
 msgstr ""
+"<literal>Arranque multiusuario</literal>: Esto continuará con el proceso de "
+"arranque de FreeBSD. Si el temporizador de arranque se ha detenido, "
+"presione<keycap>1</keycap>,mayúsculas o minúsculas <keycap>B</keycap>, o "
+"<keycap>Enter</keycap>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3515
@@ -4477,6 +4760,10 @@ msgid ""
 "\"/>. Press <keycap>2</keycap> or the upper- or lower-case <keycap>S</"
 "keycap> to enter this mode."
 msgstr ""
+"<literal>Arranque único usuario</literal>: Este modo se puede utilizar para "
+"arreglar una instalación de FreeBSD existente como se describe en <xref "
+"linkend=\"boot-singleuser\"/>. Presione <keycap>2</keycap>o las mayúsculas o "
+"minúsculas <keycap>S</keycap> para entrar en este modo."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3523
@@ -4486,16 +4773,21 @@ msgid ""
 "prompt is described in <xref linkend=\"boot-loader\"/>. Press <keycap>3</"
 "keycap> or <keycap>Esc</keycap> to boot into this prompt."
 msgstr ""
+"<literal>Escape al indicador del cargador</literal>: Esto iniciará el "
+"sistema en un mensaje de reparación que contiene una cantidad limitada de "
+"comandos de bajo nivel. Este mensaje se describe en <xref linkend=\"boot-"
+"loader\"/>. presione<keycap>3</keycap> or <keycap>Esc</keycap> para arrancar "
+"en este indicador."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3532
 msgid "<literal>Reboot</literal>: Reboots the system."
-msgstr ""
+msgstr "<literal>Reboot</literal>: Reinicia el sistema."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3536
 msgid "<literal>Kernel</literal>: Loads a different kernel."
-msgstr ""
+msgstr "<literal>Kernel</literal>: Carga un kernel diferente."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3541
@@ -4503,6 +4795,9 @@ msgid ""
 "<literal>Configure Boot Options</literal>: Opens the menu shown in, and "
 "described under, <xref linkend=\"bsdinstall-boot-options-menu\"/>."
 msgstr ""
+"<literal>Configurar opciones de arranque</literal>: Abre el menú que se "
+"muestra en y se describe en, <xref linkend=\"bsdinstall-boot-options-menu\""
+"/>."
 
 #. (itstool) path: figure/title
 #: book.translate.xml:3547
@@ -4515,9 +4810,10 @@ msgstr "Menú de opciones de arranque de FreeBSD"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:3551
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-boot-options-menu' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-boot-options-menu' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3556
@@ -4539,6 +4835,11 @@ msgid ""
 "these options until they are modified. Several options can be toggled using "
 "this menu:"
 msgstr ""
+"La siguiente sección se usa para alternar las opciones disponibles para "
+"<literal>En</literal> o <literal>Off</literal> presionando el número o "
+"carácter resaltado de la opción. El sistema siempre se iniciará utilizando "
+"la configuración de estas opciones hasta que se modifiquen. Se pueden "
+"alternar varias opciones usando este menú:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3570
@@ -4546,6 +4847,8 @@ msgid ""
 "<literal>ACPI Support</literal>: If the system hangs during boot, try "
 "toggling this option to <literal>Off</literal>."
 msgstr ""
+"<literal>Soporte ACPI</literal>:Si el sistema se cuelga durante el arranque, "
+"intente alternar esta opción para <literal>Apagado</literal>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3576
@@ -4554,6 +4857,10 @@ msgid ""
 "with <literal>ACPI Support</literal> set to <literal>Off</literal>, try "
 "setting this option to <literal>On</literal>."
 msgstr ""
+"<literal>modo seguro</literal>: Si el sistema aún se bloquea durante el "
+"arranque incluso con <literal>ACPI Support</literal>ajustado a "
+"<literal>Apagado</literal>, intente configurar esta opción para "
+"<literal>On</literal>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3583
@@ -4563,6 +4870,11 @@ msgid ""
 "singleuser\"/>. Once the problem is fixed, set it back to <literal>Off</"
 "literal>."
 msgstr ""
+"<literal>Usuario unico</literal>: Alternar esta opción para "
+"<literal>Prendido</literal> para arreglar una instalación de FreeBSD "
+"existente como se describe en <xref linkend=\"boot-singleuser\"/>. Una vez "
+"que se solucione el problema, vuelva a configurarlo "
+"<literal>Apagado</literal>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3591
@@ -4571,6 +4883,9 @@ msgid ""
 "see more detailed messages during the boot process. This can be useful when "
 "troubleshooting a piece of hardware."
 msgstr ""
+"<literal>Verboso</literal>: Alternar esta opción para <literal>Prendido</"
+"literal> para ver mensajes más detallados durante el proceso de arranque. "
+"Esto puede resultar útil para solucionar problemas de una pieza de hardware."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3598
@@ -4582,6 +4897,13 @@ msgid ""
 "loads the installation program. Once the boot is complete, the welcome menu "
 "shown in <xref linkend=\"bsdinstall-choose-mode\"/> will be displayed."
 msgstr ""
+"Después de hacer las selecciones necesarias, presione <keycap>1</keycap> o "
+"<keycap>Backspace</keycap> para volver al menú de inicio principal, luego "
+"presione <keycap>Enter</keycap> para continuar arrancando en FreeBSD. "
+"Aparecerán una serie de mensajes de arranque mientras FreeBSD realiza sus "
+"sondeos de dispositivos de hardware y carga el programa de instalación. Una "
+"vez que se completa el arranque, el menú de bienvenida que se muestra en "
+"<xref linkend=\"bsdinstall-choose-mode\"/> será mostrado."
 
 #. (itstool) path: figure/title
 #: book.translate.xml:3607
@@ -4594,9 +4916,10 @@ msgstr "Menú de bienvenida"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:3611
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-choose-mode' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-choose-mode' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3616
@@ -4611,6 +4934,16 @@ msgid ""
 "try out FreeBSD before installing it. The live version is described in <xref "
 "linkend=\"using-live-cd\"/>."
 msgstr ""
+"Presione <keycap>Enter</keycap> para seleccionar el valor predeterminado de "
+"<guibutton>[ Install ]</guibutton> para ingresar al instalador. El resto de "
+"este capítulo describe cómo utilizar este instalador. De lo contrario, use "
+"las flechas derecha o izquierda o la letra coloreada para seleccionar el "
+"elemento de menú deseado. los <guibutton>[ Shell ]</guibutton> se puede "
+"utilizar para acceder a un shell de FreeBSD con el fin de utilizar las "
+"utilidades de la línea de comandos para preparar los discos antes de la "
+"instalación. los <guibutton>[ Live CD ]</guibutton> La opción se puede "
+"utilizar para probar FreeBSD antes de instalarlo. La versión en vivo se "
+"describe en <xref linkend=\"using-live-cd\"/>."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:3629
@@ -4621,11 +4954,17 @@ msgid ""
 "command> and use the space bar to scroll through the messages. When "
 "finished, type <command>exit</command> to return to the welcome menu."
 msgstr ""
+"Para revisar los mensajes de arranque, incluida la sonda del dispositivo de "
+"hardware, presione las mayúsculas o minúsculas <keycap>S</keycap> y luego "
+"<keycap>Enter</keycap> para acceder a un caparazón. En el indicador de "
+"shell, escriba <command>mas /var/run/dmesg.boot</command> y use la barra "
+"espaciadora para desplazarse por los mensajes. Cuando termine, escriba "
+"<command>exit</command> para volver al menú de bienvenida."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:3642
 msgid "Using <application>bsdinstall</application>"
-msgstr ""
+msgstr "Usando <application></application>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3644
@@ -4637,6 +4976,12 @@ msgid ""
 "press <keycap>Enter</keycap> to save the selection and move onto the next "
 "screen."
 msgstr ""
+"Esta sección muestra el orden de los <application>bsdinstall</application> "
+"menús y el tipo de información que se solicitará antes de instalar el "
+"sistema. Use las teclas de flecha para resaltar una opción de menú, luego "
+"<keycap>Espacio</keycap> para seleccionar o anular la selección de ese "
+"elemento del menú. Cuando termine, presione <keycap>Enter</keycap> para "
+"guardar la selección y pasar a la siguiente pantalla."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3653
@@ -4649,6 +4994,9 @@ msgid ""
 "Before starting the process, <application>bsdinstall</application> will load "
 "the keymap files as show in <xref linkend=\"bsdinstall-keymap-loading\"/>."
 msgstr ""
+"Antes de iniciar el proceso, <application>bsdinstall</application>cargará "
+"los archivos de mapa de teclas como se muestra en <xref linkend=\"bsdinstall-"
+"keymap-loading\"/>."
 
 #. (itstool) path: figure/title
 #: book.translate.xml:3660
@@ -4661,9 +5009,10 @@ msgstr "Carga del mapa de teclas"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:3664
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-keymap-loading' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-keymap-loading' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3669
@@ -4674,6 +5023,12 @@ msgid ""
 "mapping of the keyboard attached to the system. Press <keycap>Enter</keycap> "
 "to save the selection."
 msgstr ""
+"Después de que se hayan cargado los mapas de teclas <application>bsdinstall</"
+"application>muestra el menú que se muestra en <xref linkend=\"bsdinstall-"
+"keymap-10\"/>. Utilice las flechas hacia arriba y hacia abajo para "
+"seleccionar el mapa de teclas que mejor represente el mapa del teclado "
+"conectado al sistema. prensa <keycap>Enter</keycap> para guardar la "
+"selección."
 
 #. (itstool) path: figure/title
 #: book.translate.xml:3677
@@ -4686,9 +5041,10 @@ msgstr "Menú de selección de mapa de teclas"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:3681
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-keymap-10' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-keymap-10' md5='__failed__'"
 
 #. (itstool) path: note/para
 #: book.translate.xml:3686
@@ -4697,6 +5053,10 @@ msgid ""
 "keymap. If the choice of keymap is not clear, <guimenuitem>United States of "
 "America ISO-8859-1</guimenuitem> is also a safe option."
 msgstr ""
+"Prensado <keycap>Esc</keycap> saldrá de este menú y utilizará el mapa de "
+"teclas predeterminado. Si la elección del mapa de teclas no está clara, "
+"<guimenuitem>Estados Unidos de América ISO-8859-1</guimenuitem> también es "
+"una opción segura."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3691
@@ -4705,6 +5065,9 @@ msgid ""
 "and ensure it is correct before proceeding as shown in <xref linkend="
 "\"bsdinstall-keymap-testing\"/>."
 msgstr ""
+"Además, al seleccionar un mapa de teclas diferente, el usuario puede probar "
+"el mapa de teclas y asegurarse de que sea correcto antes de continuar como "
+"se muestra en <xref linkend=\"bsdinstall-keymap-testing\"/>."
 
 #. (itstool) path: figure/title
 #: book.translate.xml:3696
@@ -4717,9 +5080,10 @@ msgstr "Menú de prueba del mapa de teclas"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:3700
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-keymap-testing' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-keymap-testing' md5='__failed__'"
 
 #. (itstool) path: sect2/title
 #. (itstool) path: figure/title
@@ -4733,6 +5097,8 @@ msgid ""
 "The next <application>bsdinstall</application> menu is used to set the "
 "hostname for the newly installed system."
 msgstr ""
+"El siguiente <application>bsdinstall</application> El menú se utiliza para "
+"establecer el nombre de host del sistema recién instalado."
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -4740,9 +5106,10 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:3719
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-config-hostname' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-config-hostname' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3724
@@ -4751,6 +5118,9 @@ msgid ""
 "qualified hostname, such as <systemitem class=\"fqdomainname\">machine3."
 "example.com</systemitem>."
 msgstr ""
+"escriba un nombre de host que sea único para la red. Debe ser un nombre de "
+"host completo, como <systemitem class=\"fqdomainname\">machine3.example."
+"com</systemitem>."
 
 #. (itstool) path: sect2/title
 #. (itstool) path: figure/title
@@ -4764,6 +5134,8 @@ msgid ""
 "Next, <application>bsdinstall</application> will prompt to select optional "
 "components to install."
 msgstr ""
+"Próximo, <application>bsdinstall</application> le pedirá que seleccione "
+"componentes opcionales para instalar."
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -4771,9 +5143,10 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:3739
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-config-components' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-config-components' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3744
@@ -4910,9 +5283,10 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:3828
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-netinstall-files' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-netinstall-files' md5='__failed__'"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:3836
@@ -4938,9 +5312,10 @@ msgstr "Opciones de particionamiento"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:3846
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-zfs-partmenu' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-zfs-partmenu' md5='__failed__'"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3851
@@ -5023,18 +5398,21 @@ msgstr "<primary> diseño de partición </primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:3889
+#, fuzzy
 msgid "<primary><filename>/etc</filename></primary>"
-msgstr ""
+msgstr "<primary><filename>/etc</filename></primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:3892
+#, fuzzy
 msgid "<primary><filename>/var</filename></primary>"
-msgstr ""
+msgstr "<primary><filename>/var</filename></primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:3895
+#, fuzzy
 msgid "<primary><filename>/usr</filename></primary>"
-msgstr ""
+msgstr "<primary><filename>/usr</filename></primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3899
@@ -5213,9 +5591,10 @@ msgstr "Selección de varios discos"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:3990
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-part-guided-disk' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-part-guided-disk' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3995
@@ -5245,9 +5624,10 @@ msgstr "Seleccionar todo el disco o la partición"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4009
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-part-entire-part' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-part-entire-part' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4014
@@ -5271,9 +5651,10 @@ msgstr "Confirmación"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4024
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-ufs-warning' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-ufs-warning' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4029
@@ -5302,10 +5683,12 @@ msgstr "Seleccionar esquema de partición"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4041 book.translate.xml:4115
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='bsdinstall/bsdinstall-part-manual-partscheme' md5='__failed__'"
 msgstr ""
+"external ref='bsdinstall/bsdinstall-part-manual-partscheme' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4046
@@ -5337,9 +5720,10 @@ msgstr "Revisar particiones creadas"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4061
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-part-review' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-part-review' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4066
@@ -5370,10 +5754,12 @@ msgstr "Confirmación final"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4081
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='bsdinstall/bsdinstall-final-confirmation' md5='__failed__'"
 msgstr ""
+"external ref='bsdinstall/bsdinstall-final-confirmation' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4086
@@ -5405,10 +5791,12 @@ msgstr "Crear particiones manualmente"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4100
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='bsdinstall/bsdinstall-part-manual-create' md5='__failed__'"
 msgstr ""
+"external ref='bsdinstall/bsdinstall-part-manual-create' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4105
@@ -5457,8 +5845,9 @@ msgstr "Descripción"
 #. (itstool) path: glossentry/glossterm
 #. (itstool) path: glossentry/acronym
 #: book.translate.xml:4139 book.translate.xml:65535
+#, fuzzy
 msgid "APM"
-msgstr ""
+msgstr "APM"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4140
@@ -5473,8 +5862,9 @@ msgstr ""
 #. (itstool) path: glossentry/glossterm
 #. (itstool) path: glossentry/acronym
 #: book.translate.xml:4144 book.translate.xml:65535
+#, fuzzy
 msgid "BSD"
-msgstr ""
+msgstr "BSD"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4145
@@ -5490,8 +5880,9 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4153
+#, fuzzy
 msgid "GPT"
-msgstr ""
+msgstr "GPT"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4154
@@ -5506,8 +5897,9 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4158
+#, fuzzy
 msgid "MBR"
-msgstr ""
+msgstr "MBR"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4159
@@ -5521,8 +5913,9 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4163
+#, fuzzy
 msgid "VTOC8"
-msgstr ""
+msgstr "VTOC8"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4164
@@ -5549,10 +5942,12 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4181
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='bsdinstall/bsdinstall-part-manual-addpart' md5='__failed__'"
 msgstr ""
+"external ref='bsdinstall/bsdinstall-part-manual-addpart' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4186
@@ -5613,6 +6008,11 @@ msgid ""
 "filename>. See <xref linkend=\"bsdinstall-part-manual-splitfs\"/> for an "
 "example."
 msgstr ""
+"Se pueden crear múltiples particiones del sistema de archivos y algunas "
+"personas prefieren un diseño tradicional con particiones separadas para "
+"<filename>/</filename>, <filename>/var</filename>, <filename>/tmp</"
+"filename>, y <filename>/usr</filename>. Mire <xref linkend=\"bsdinstall-part-"
+"manual-splitfs\"/> para un ejemplo."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4222
@@ -5756,74 +6156,88 @@ msgstr "Etiqueta"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4300
+#, fuzzy
 msgid "<literal>freebsd-boot</literal>"
-msgstr ""
+msgstr "<literal>freebsd-boot</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4301
+#, fuzzy
 msgid "<literal>512K</literal>"
-msgstr ""
+msgstr "<literal>512K</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4305 book.translate.xml:4319 book.translate.xml:4326
 #: book.translate.xml:4333
+#, fuzzy
 msgid "<literal>freebsd-ufs</literal>"
-msgstr ""
+msgstr "<literal>freebsd-ufs</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4306 book.translate.xml:4320
+#, fuzzy
 msgid "<literal>2G</literal>"
-msgstr ""
+msgstr "<literal>2G</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4307 book.translate.xml:7367
+#, fuzzy
 msgid "<filename>/</filename>"
-msgstr ""
+msgstr "<filename>/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4308
+#, fuzzy
 msgid "<literal>exrootfs</literal>"
-msgstr ""
+msgstr "<literal>exrootfs</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4312
+#, fuzzy
 msgid "<literal>freebsd-swap</literal>"
-msgstr ""
+msgstr "<literal>freebsd-swap</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4313
+#, fuzzy
 msgid "<literal>4G</literal>"
-msgstr ""
+msgstr "<literal>4G</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4315
+#, fuzzy
 msgid "<literal>exswap</literal>"
-msgstr ""
+msgstr "<literal>exswap</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4321
+#, fuzzy
 msgid "<filename>/var</filename>"
-msgstr ""
+msgstr "<filename>/var</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4322
+#, fuzzy
 msgid "<literal>exvarfs</literal>"
-msgstr ""
+msgstr "<literal>exvarfs</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4327
+#, fuzzy
 msgid "<literal>1G</literal>"
-msgstr ""
+msgstr "<literal>1G</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4328
+#, fuzzy
 msgid "<filename>/tmp</filename>"
-msgstr ""
+msgstr "<filename>/tmp</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4329
+#, fuzzy
 msgid "<literal>extmpfs</literal>"
-msgstr ""
+msgstr "<literal>extmpfs</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4334
@@ -5832,13 +6246,15 @@ msgstr "aceptar el valor predeterminado (resto del disco)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4336
+#, fuzzy
 msgid "<filename>/usr</filename>"
-msgstr ""
+msgstr "<filename>/usr</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4337
+#, fuzzy
 msgid "<literal>exusrfs</literal>"
-msgstr ""
+msgstr "<literal>exusrfs</literal>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4344
@@ -5879,9 +6295,10 @@ msgstr "<acronym> ZFS </acronym> Menú de particiones"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4363
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-zfs-menu' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-zfs-menu' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4368
@@ -6045,9 +6462,10 @@ msgstr "<acronym> ZFS </acronym> Tipo de grupo"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4465
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-zfs-vdev_type' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-zfs-vdev_type' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4470
@@ -6152,9 +6570,10 @@ msgstr "Selección de disco"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4525
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-zfs-disk_select' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-zfs-disk_select' md5='__failed__'"
 
 #. (itstool) path: figure/title
 #: book.translate.xml:4531
@@ -6167,9 +6586,10 @@ msgstr "Selección invalida"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4535
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-zfs-vdev_invalid' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-zfs-vdev_invalid' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4540
@@ -6194,10 +6614,12 @@ msgstr "Volver a explorar dispositivos"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4550
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='bsdinstall/bsdinstall-zfs-rescan-devices' md5='__failed__'"
 msgstr ""
+"external ref='bsdinstall/bsdinstall-zfs-rescan-devices' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4555
@@ -6223,9 +6645,10 @@ msgstr "Analizando un disco"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4566
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-zfs-disk_info' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-zfs-disk_info' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4571
@@ -6243,7 +6666,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4578
 msgid "Pool Name"
-msgstr ""
+msgstr "Nombre de la piscina"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -6251,9 +6674,10 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4582
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-zfs-pool-name' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-zfs-pool-name' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4587
@@ -6280,9 +6704,10 @@ msgstr "Importe de intercambio"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4598
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-zfs-swap-amount' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-zfs-swap-amount' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4603
@@ -6309,9 +6734,10 @@ msgstr "Última oportunidad"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4615
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-zfs-warning' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-zfs-warning' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4620
@@ -6335,9 +6761,10 @@ msgstr "Contraseña de cifrado del disco"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4630
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-zfs-geli_password' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-zfs-geli_password' md5='__failed__'"
 
 #. (itstool) path: figure/title
 #: book.translate.xml:4636
@@ -6350,10 +6777,12 @@ msgstr "Inicializando el cifrado"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4640
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='bsdinstall/bsdinstall-zfs-init-encription' md5='__failed__'"
 msgstr ""
+"external ref='bsdinstall/bsdinstall-zfs-init-encription' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4645
@@ -6426,9 +6855,10 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4686
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-distfile-fetching' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-distfile-fetching' md5='__failed__'"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:4691
@@ -6452,10 +6882,12 @@ msgstr "Verificación de archivos de distribución"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4700
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='bsdinstall/bsdinstall-distfile-verifying' md5='__failed__'"
 msgstr ""
+"external ref='bsdinstall/bsdinstall-distfile-verifying' md5='__failed__'"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:4705
@@ -6474,10 +6906,12 @@ msgstr "Extraer archivos de distribución"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4713
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='bsdinstall/bsdinstall-distfile-extracting' md5='__failed__'"
 msgstr ""
+"external ref='bsdinstall/bsdinstall-distfile-extracting' md5='__failed__'"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:4718
@@ -6525,9 +6959,10 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4744
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-post-root-passwd' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-post-root-passwd' md5='__failed__'"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:4751
@@ -6571,9 +7006,10 @@ msgstr "Seleccione una región"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4769
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-timezone-region' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-timezone-region' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4774
@@ -6595,9 +7031,10 @@ msgstr "Seleccione un país"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4782
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-timezone-country' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-timezone-country' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4787
@@ -6619,9 +7056,10 @@ msgstr "Seleccione una zona del horario"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4795
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-timezone-zone' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-timezone-zone' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4800
@@ -6643,9 +7081,10 @@ msgstr "Confirmar zona de horario"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4808
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-timezone-confirm' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-timezone-confirm' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4813
@@ -6663,9 +7102,10 @@ msgstr "Seleccione fecha"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4821
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-timezone-date' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-timezone-date' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4826
@@ -6690,9 +7130,10 @@ msgstr "Selección de horario"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4837
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-timezone-time' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-timezone-time' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4842
@@ -6733,9 +7174,10 @@ msgstr "Seleccionar servicios adicionales para habilitar"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4862
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-config-services' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-config-services' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4867
@@ -6855,9 +7297,10 @@ msgstr "Selección de opciones de seguridad reforzada"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:4935
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-hardening' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-hardening' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4940
@@ -7058,9 +7501,10 @@ msgstr "Agregar cuentas de usuario"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:5047
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-adduser1' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-adduser1' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5052
@@ -7085,9 +7529,10 @@ msgstr "Ingrese la información del usuario"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:5060
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-adduser2' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-adduser2' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5065
@@ -7264,9 +7709,10 @@ msgstr "Salir de la gestión de usuarios y grupos"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:5171
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-adduser3' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-adduser3' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5176
@@ -7309,10 +7755,12 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:5196
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='bsdinstall/bsdinstall-finalconfiguration' md5='__failed__'"
 msgstr ""
+"external ref='bsdinstall/bsdinstall-finalconfiguration' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5201
@@ -7413,11 +7861,14 @@ msgstr "Configuración manual"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:5248
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='bsdinstall/bsdinstall-final-modification-shell' "
 "md5='__failed__'"
 msgstr ""
+"external ref='bsdinstall/bsdinstall-final-modification-shell' "
+"md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5253
@@ -7445,9 +7896,10 @@ msgstr "Completar la instalación"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:5266
+#, fuzzy
 msgctxt "_"
 msgid "external ref='bsdinstall/bsdinstall-mainexit' md5='__failed__'"
-msgstr ""
+msgstr "external ref='bsdinstall/bsdinstall-mainexit' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5271
@@ -7502,6 +7954,15 @@ msgid ""
 "<command>less /var/run/dmesg.boot</command> from a command prompt. Press "
 "<keycap>q</keycap> to return to the command line after viewing."
 msgstr ""
+"Los mensajes que aparecieron durante el arranque se pueden revisar "
+"presionando <keycap>Scroll-Lock</keycap> para activar el búfer de retroceso. "
+"los <keycap>PgUp</keycap>, <keycap>PgDn</keycap>, y las teclas de flecha se "
+"pueden utilizar para desplazarse hacia atrás por los mensajes. Cuando "
+"termine, presione <keycap>Scroll-Lock</keycap> nuevamente para desbloquear "
+"la pantalla y regresar a la consola. Para revisar estos mensajes una vez que "
+"el sistema ha estado activo durante algún tiempo, escriba <command>less /var/"
+"run/dmesg.boot</command>desde un símbolo del sistema. prensa <keycap>q</"
+"keycap> para volver a la línea de comandos después de ver."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5303
@@ -7512,6 +7973,11 @@ msgid ""
 "Subsequent boots will be faster. The fingerprints of the keys will be "
 "displayed, as seen in this example:"
 msgstr ""
+"Si <application>sshd</application> was enabled in <xref linkend=\"bsdinstall-"
+"config-serv\"/>, el primer arranque puede ser un poco más lento ya que el "
+"sistema generará el <acronym>RSA</acronym> y <acronym>DSA</acronym>llaves. "
+"Las siguientes botas serán más rápidas. Se mostrarán las huellas digitales "
+"de las teclas, como se ve en este ejemplo:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:5309
@@ -7623,6 +8089,15 @@ msgid ""
 "now</command> and the system will shut down cleanly, and if the hardware "
 "supports it, turn itself off."
 msgstr ""
+"El apagado correcto de una computadora FreeBSD ayuda a proteger los datos y "
+"el hardware contra daños. <emphasis>¡No apague la alimentación antes de que "
+"el sistema se haya apagado correctamente!</emphasis> Si el usuario es "
+"miembro del <systemitem class=\"groupname\">rueda</systemitem> grupo, "
+"conviértase en superusuario escribiendo <command>su</command> en la línea de "
+"comando e ingresando el <systemitem class=\"username\">root</systemitem> "
+"contraseña. Luego, escriba <command>shutdown -p now</command> y el sistema "
+"se apagará limpiamente y, si el hardware lo admite, se apagará "
+"automáticamente."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:5365
@@ -7654,11 +8129,14 @@ msgstr "Elija una interfaz de red"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:5378
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='bsdinstall/bsdinstall-configure-network-interface' "
 "md5='__failed__'"
 msgstr ""
+"external ref='bsdinstall/bsdinstall-configure-network-interface' "
+"md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5383
@@ -7684,10 +8162,12 @@ msgstr "Búsqueda de puntos de acceso inalámbricos"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:5393
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='bsdinstall/bsdinstall-configure-wireless-scan' md5='__failed__'"
 msgstr ""
+"external ref='bsdinstall/bsdinstall-configure-wireless-scan' md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5398
@@ -7701,6 +8181,15 @@ msgid ""
 "check for problems with antenna connections or try moving the computer "
 "closer to the access point. Rescan after each change is made."
 msgstr ""
+"Las redes inalámbricas se identifican mediante un identificador de conjunto "
+"de servicios (<acronym>SSID</acronym>), un nombre corto y único dado a cada "
+"red. <acronym>SSIDs</acronym> que se encuentran durante el escaneo, seguidos "
+"de una descripción de los tipos de cifrado disponibles para esa red. Si el "
+"deseado<acronym>SSID</acronym> no aparece en la lista, seleccione "
+"<guibutton>[ Rescan ]</guibutton> para escanear de nuevo. Si la red deseada "
+"aún no aparece, verifique si hay problemas con las conexiones de la antena o "
+"intente acercar la computadora al punto de acceso. Vuelva a escanear después "
+"de cada cambio."
 
 #. (itstool) path: figure/title
 #: book.translate.xml:5410
@@ -7713,11 +8202,14 @@ msgstr "Elegir una red inalámbrica"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:5414
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='bsdinstall/bsdinstall-configure-wireless-accesspoints' "
 "md5='__failed__'"
 msgstr ""
+"external ref='bsdinstall/bsdinstall-configure-wireless-accesspoints' "
+"md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5419
@@ -7729,6 +8221,13 @@ msgid ""
 "also known as the Pre-Shared Key (<acronym>PSK</acronym>). For security "
 "reasons, the characters typed into the input box are displayed as asterisks."
 msgstr ""
+"A continuación, ingrese la información de cifrado para conectarse a la red "
+"inalámbrica seleccionada. <acronym>WPA2</acronym> Se recomienda "
+"encarecidamente el cifrado como tipos de cifrado más antiguos, como "
+"<acronym>WEP</acronym>, ofrecen poca seguridad. Si la red usa <acronym>WPA2</"
+"acronym>, ingrese la contraseña, también conocida como la clave "
+"precompartida(<acronym>PSK</acronym>). Por razones de seguridad, los "
+"caracteres escritos en el cuadro de entrada se muestran como asteriscos."
 
 #. (itstool) path: figure/title
 #: book.translate.xml:5429
@@ -7741,11 +8240,14 @@ msgstr "Configuración de WPA2"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:5433
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='bsdinstall/bsdinstall-configure-wireless-wpa2setup' "
 "md5='__failed__'"
 msgstr ""
+"external ref='bsdinstall/bsdinstall-configure-wireless-wpa2setup' "
+"md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5438
@@ -7767,11 +8269,14 @@ msgstr "Escoger<acronym>IPv4</acronym>Redes"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:5447
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='bsdinstall/bsdinstall-configure-network-interface-ipv4' "
 "md5='__failed__'"
 msgstr ""
+"external ref='bsdinstall/bsdinstall-configure-network-interface-ipv4' "
+"md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5452
@@ -7828,11 +8333,14 @@ msgstr "Elija <acronym> IPv4 </acronym> <acronym> DHCP </acronym> Configuración
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:5480
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='bsdinstall/bsdinstall-configure-network-interface-ipv4-dhcp' "
 "md5='__failed__'"
 msgstr ""
+"external ref='bsdinstall/bsdinstall-configure-network-interface-ipv4-dhcp' "
+"md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5485
@@ -7856,11 +8364,14 @@ msgstr "<acronym> IPv4 </acronym> Configuración estática"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:5494
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='bsdinstall/bsdinstall-configure-network-interface-ipv4-static' "
 "md5='__failed__'"
 msgstr ""
+"external ref='bsdinstall/bsdinstall-configure-network-interface-ipv4-static' "
+"md5='__failed__'"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5501
@@ -7909,11 +8420,14 @@ msgstr "Elija redes IPv6"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:5529
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='bsdinstall/bsdinstall-configure-network-interface-ipv6' "
 "md5='__failed__'"
 msgstr ""
+"external ref='bsdinstall/bsdinstall-configure-network-interface-ipv6' "
+"md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5534
@@ -7957,11 +8471,14 @@ msgstr "Elija la configuración IPv6 SLAAC"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:5553
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='bsdinstall/bsdinstall-configure-network-interface-slaac' "
 "md5='__failed__'"
 msgstr ""
+"external ref='bsdinstall/bsdinstall-configure-network-interface-slaac' "
+"md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5558
@@ -7985,11 +8502,14 @@ msgstr "Configuración estática de IPv6"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:5567
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='bsdinstall/bsdinstall-configure-network-interface-ipv6-static' "
 "md5='__failed__'"
 msgstr ""
+"external ref='bsdinstall/bsdinstall-configure-network-interface-ipv6-static' "
+"md5='__failed__'"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5574
@@ -8048,11 +8568,14 @@ msgstr "Configuración DNS"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:5605
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='bsdinstall/bsdinstall-configure-network-ipv4-dns' "
 "md5='__failed__'"
 msgstr ""
+"external ref='bsdinstall/bsdinstall-configure-network-ipv4-dns' "
+"md5='__failed__'"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5610
@@ -8078,10 +8601,12 @@ msgstr "Elegir un Mirror"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:5621
+#, fuzzy
 msgctxt "_"
 msgid ""
 "external ref='bsdinstall/bsdinstall-netinstall-mirrorselect' md5='__failed__'"
 msgstr ""
+"external ref='bsdinstall/bsdinstall-netinstall-mirrorselect' md5='__failed__'"
 
 #. (itstool) path: sect1/title
 #. (itstool) path: sect2/title
@@ -8193,9 +8718,9 @@ msgstr ""
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:5680
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<userinput>set hint.acpi.0.disabled=\"1\"</userinput>"
-msgstr ""
+msgstr "<userinput>set hint.acpi.0.disabled=\"1\"</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5682
@@ -8355,18 +8880,18 @@ msgstr "Consolas y terminales virtuales"
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:5805
 msgid "<primary>virtual consoles</primary>"
-msgstr ""
+msgstr "<primary>consolas virtuales</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:5808 book.translate.xml:47922
 msgid "<primary>terminals</primary>"
-msgstr ""
+msgstr "<primary>terminales</primary>"
 
 #. (itstool) path: sect1/indexterm
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:5811 book.translate.xml:23522
 msgid "<primary>console</primary>"
-msgstr ""
+msgstr "<primary>consola</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5815
@@ -8381,12 +8906,15 @@ msgstr ""
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:5820
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "FreeBSD/amd64 (pc3.example.org) (ttyv0)\n"
 "\n"
 "login:"
 msgstr ""
+"FreeBSD/amd64 (pc3.example.org) (ttyv0)\n"
+"\n"
+"login:"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5824
@@ -8507,6 +9035,19 @@ msgid ""
 "<keycap>Ctrl</keycap><keycap>Alt</keycap><keycap>F1</keycap> </keycombo> to "
 "return to a text-based virtual console."
 msgstr ""
+"Las combinaciones de teclas "
+"<keycombo><keycap>Alt</keycap><keycap>F1</keycap></keycombo> mediante "
+"<keycombo><keycap>Alt</keycap><keycap>F8</keycap></keycombo>han sido "
+"reservados por FreeBSD para cambiar entre consolas virtuales. Utilizar "
+"<keycombo><keycap>Alt</keycap><keycap>F1</keycap></keycombo> para cambiar a "
+"la consola del sistema (<filename>ttyv0</filename>), "
+"<keycombo><keycap>Alt</keycap><keycap>F2</keycap></keycombo>para acceder a "
+"la primera consola virtual (<filename>ttyv1</filename>), "
+"<keycombo><keycap>Alt</keycap><keycap>F3</keycap></keycombo> para acceder a "
+"la segunda consola virtual (<filename>ttyv2</filename>), y así. Cuando usas "
+"<application>Xorg</application> como consola gráfica, la combinación se "
+"convierte en <keycombo> <keycap>Ctrl</keycap><keycap>Alt</keycap><keycap>F1</"
+"keycap> </keycombo> para volver a una consola virtual basada en texto."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5895
@@ -8536,6 +9077,15 @@ msgid ""
 "refentrytitle><manvolnum>4</manvolnum></citerefentry> for a more technical "
 "description of the FreeBSD console and its keyboard drivers."
 msgstr ""
+"Referirse a <citerefentry><refentrytitle>kbdcontrol</refentrytitle><manvolnum"
+">1</manvolnum></citerefentry>, <citerefentry><refentrytitle>vidcontrol</refen"
+"trytitle><manvolnum>1</manvolnum></citerefentry>, "
+"<citerefentry><refentrytitle>atkbd</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry>, <citerefentry><refentrytitle>syscons</refentrytitle><manvolnum"
+">4</manvolnum></citerefentry>, y "
+"<citerefentry><refentrytitle>vt</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> para una descripción más técnica de la consola FreeBSD y sus "
+"controladores de teclado."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5907
@@ -8548,7 +9098,7 @@ msgstr ""
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:5911
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "# name    getty                         type  status comments\n"
 "#\n"
@@ -8563,6 +9113,18 @@ msgid ""
 "ttyv7   \"/usr/libexec/getty Pc\"         xterm   on  secure\n"
 "ttyv8   \"/usr/X11R6/bin/xdm -nodaemon\"  xterm   off secure"
 msgstr ""
+"# name    getty                         type  status comments\n"
+"#\n"
+"ttyv0   \"/usr/libexec/getty Pc\"         xterm   on  secure\n"
+"# Virtual terminals\n"
+"ttyv1   \"/usr/libexec/getty Pc\"         xterm   on  secure\n"
+"ttyv2   \"/usr/libexec/getty Pc\"         xterm   on  secure\n"
+"ttyv3   \"/usr/libexec/getty Pc\"         xterm   on  secure\n"
+"ttyv4   \"/usr/libexec/getty Pc\"         xterm   on  secure\n"
+"ttyv5   \"/usr/libexec/getty Pc\"         xterm   on  secure\n"
+"ttyv6   \"/usr/libexec/getty Pc\"         xterm   on  secure\n"
+"ttyv7   \"/usr/libexec/getty Pc\"         xterm   on  secure\n"
+"ttyv8   \"/usr/X11R6/bin/xdm -nodaemon\"  xterm   off secure"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5925
@@ -8718,9 +9280,9 @@ msgstr ""
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:6001
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>kldload vesa</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>kldload vesa</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6003
@@ -8737,9 +9299,9 @@ msgstr ""
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:6007
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>vidcontrol -i mode</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>vidcontrol -i mode</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6009
@@ -8758,9 +9320,9 @@ msgstr ""
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:6014
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>vidcontrol MODE_279</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>vidcontrol MODE_279</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6016
@@ -8773,9 +9335,9 @@ msgstr ""
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:6020
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "allscreens_flags=\"MODE_279\""
-msgstr ""
+msgstr "allscreens_flags=\"MODE_279\""
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:6037
@@ -8857,7 +9419,7 @@ msgstr "Cuentas del sistema"
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6082
 msgid "<primary>accounts</primary> <secondary>system</secondary>"
-msgstr ""
+msgstr "<primary>cuentas</primary> <secondary>systema</secondary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6087
@@ -8876,6 +9438,8 @@ msgid ""
 "<primary>accounts</primary> <secondary><systemitem class=\"username"
 "\">daemon</systemitem></secondary>"
 msgstr ""
+"<primary>cuentas</primary> <secondary><systemitem class=\"username\""
+">demonio</systemitem></secondary>"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6096
@@ -8883,6 +9447,8 @@ msgid ""
 "<primary>accounts</primary> <secondary><systemitem class=\"username"
 "\">operator</systemitem></secondary>"
 msgstr ""
+"<primary>cuentas</primary> <secondary><systemitem class=\"username\""
+">operador</systemitem></secondary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6101
@@ -8893,6 +9459,11 @@ msgid ""
 "\"username\">news</systemitem>, and <systemitem class=\"username\">www</"
 "systemitem>."
 msgstr ""
+"Ejemplos de cuentas del sistema son <systemitem class=\"username\">daemon</"
+"systemitem>, <systemitem class=\"username\">operador</systemitem>, "
+"<systemitem class=\"username\">bind</systemitem>, <systemitem class="
+"\"username\">Noticias</systemitem>, y <systemitem class=\"username\""
+">www</systemitem>."
 
 #. (itstool) path: warning/para
 #: book.translate.xml:6109
@@ -8913,6 +9484,8 @@ msgid ""
 "<primary>accounts</primary> <secondary><systemitem class=\"username"
 "\">nobody</systemitem></secondary>"
 msgstr ""
+"<primary>cuentas</primary> <secondary><systemitem class=\"username\""
+">nadie</systemitem></secondary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6121
@@ -8937,7 +9510,7 @@ msgstr "Cuentas de usuario"
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6132
 msgid "<primary>accounts</primary> <secondary>user</secondary>"
-msgstr ""
+msgstr "<primary>cuentas</primary> <secondary>usuario</secondary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6137
@@ -9008,7 +9581,7 @@ msgstr "Cada cuenta tiene una contraseña asociada."
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:6176
 msgid "User ID (<acronym>UID</acronym>)"
-msgstr ""
+msgstr "ID de usuario (<acronym>UID</acronym>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6179
@@ -9029,7 +9602,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:6190
 msgid "Group ID (<acronym>GID</acronym>)"
-msgstr ""
+msgstr "Identificación del grupo (<acronym>GID</acronym>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6193
@@ -9141,6 +9714,13 @@ msgid ""
 "username</replaceable></filename>. Each user stores their personal files and "
 "subdirectories in their own home directory."
 msgstr ""
+"El directorio de inicio es la ruta completa a un directorio en el sistema. "
+"Este es el directorio de inicio del usuario cuando el usuario inicia sesión. "
+"Una convención común es colocar todos los directorios de inicio del usuario "
+"en <filename><replaceable>/home/username</replaceable></filename> o "
+"<filename><replaceable>/usr/home/username</replaceable></filename>. Cada "
+"usuario almacena sus archivos personales y subdirectorios en su propio "
+"directorio de inicio."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:6271
@@ -9167,7 +9747,7 @@ msgstr "La cuenta de superusuario"
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6287
 msgid "<primary>accounts</primary> <secondary>superuser (root)</secondary>"
-msgstr ""
+msgstr "<primary>cuentas</primary> <secondary>superusuario (root)</secondary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6292
@@ -9259,7 +9839,7 @@ msgstr "Instalar un programa como superusuario"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6336
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>configure</userinput>\n"
 "<prompt>%</prompt> <userinput>make</userinput>\n"
@@ -9269,6 +9849,13 @@ msgid ""
 "<prompt>#</prompt> <userinput>exit</userinput>\n"
 "<prompt>%</prompt>"
 msgstr ""
+"<prompt>%</prompt> <userinput>configure</userinput>\n"
+"<prompt>%</prompt> <userinput>make</userinput>\n"
+"<prompt>%</prompt> <userinput>su -</userinput>\n"
+"Password:\n"
+"<prompt>#</prompt> <userinput>make install</userinput>\n"
+"<prompt>#</prompt> <userinput>exit</userinput>\n"
+"<prompt>%</prompt>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6345
@@ -9296,7 +9883,7 @@ msgstr "Administrar cuentas"
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:6358
 msgid "<primary>accounts</primary> <secondary>modifying</secondary>"
-msgstr ""
+msgstr "<primary>cuentas</primary> <secondary>modificando</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6363
@@ -9330,10 +9917,13 @@ msgstr "Resumen"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6384
+#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>adduser</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>adduser</refentrytitle><manvolnum>8</manvolnum><"
+"/citerefentry>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6385
@@ -9343,10 +9933,13 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6390
+#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>rmuser</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>rmuser</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6391
@@ -9355,10 +9948,13 @@ msgstr "La aplicación de línea de comandos recomendada para eliminar usuarios.
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6396
+#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>chpass</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>chpass</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6397
@@ -9369,10 +9965,13 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6402
+#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6403
@@ -9383,10 +9982,13 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6408
+#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>"
 msgstr ""
+"<citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></cite"
+"refentry>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6409
@@ -9398,29 +10000,33 @@ msgstr ""
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6417
+#, fuzzy
 msgid "<command>adduser</command>"
-msgstr ""
+msgstr "<command>adduser</command>"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6419
+#, fuzzy
 msgid "<primary>accounts</primary> <secondary>adding</secondary>"
-msgstr ""
+msgstr "<primary>accounts</primary> <secondary>adding</secondary>"
 
 #. (itstool) path: sect3/indexterm
 #. (itstool) path: sect4/indexterm
 #: book.translate.xml:6423 book.translate.xml:44112
+#, fuzzy
 msgid "<primary><command>adduser</command></primary>"
-msgstr ""
+msgstr "<primary><command>adduser</command></primary>"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6426
+#, fuzzy
 msgid "<primary><filename>/usr/share/skel</filename></primary>"
-msgstr ""
+msgstr "<primary><filename>/usr/share/skel</filename></primary>"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6429
 msgid "<primary>skeleton directory</primary>"
-msgstr ""
+msgstr "<primary>directorio esqueleto</primary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6433
@@ -9552,18 +10158,20 @@ msgstr ""
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6497
+#, fuzzy
 msgid "<command>rmuser</command>"
-msgstr ""
+msgstr "<command>rmuser</command>"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6499
+#, fuzzy
 msgid "<primary><command>rmuser</command></primary>"
-msgstr ""
+msgstr "<primary><command>rmuser</command></primary>"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6502
 msgid "<primary>accounts</primary> <secondary>removing</secondary>"
-msgstr ""
+msgstr "<primary>cuentas</primary> <secondary>remover</secondary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6507
@@ -9693,13 +10301,15 @@ msgstr ""
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6579
+#, fuzzy
 msgid "<command>chpass</command>"
-msgstr ""
+msgstr "<command>chpass</command>"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6581
+#, fuzzy
 msgid "<primary><command>chpass</command></primary>"
-msgstr ""
+msgstr "<primary><command>chpass</command></primary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6585
@@ -9710,6 +10320,12 @@ msgid ""
 "The superuser can use this utility to change additional account information "
 "for any user."
 msgstr ""
+"Cualquier usuario puede usar "
+"<citerefentry><refentrytitle>chpass</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> para cambiar su shell predeterminado y la información personal "
+"asociada con su cuenta de usuario. El superusuario puede utilizar esta "
+"utilidad para cambiar información adicional de la cuenta de cualquier "
+"usuario."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6590
@@ -9719,6 +10335,11 @@ msgid ""
 "citerefentry> displays an editor containing user information. When the user "
 "exits from the editor, the user database is updated with the new information."
 msgstr ""
+"Cuando se pasa sin opciones, aparte de un nombre de usuario opcional, "
+"<citerefentry><refentrytitle>chpass</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> muestra un editor que contiene información del usuario. Cuando "
+"el usuario sale del editor, la base de datos del usuario se actualiza con la "
+"nueva información."
 
 #. (itstool) path: note/para
 #: book.translate.xml:6596
@@ -9726,6 +10347,8 @@ msgid ""
 "This utility will prompt for the user's password when exiting the editor, "
 "unless the utility is run as the superuser."
 msgstr ""
+"Esta utilidad solicitará la contraseña del usuario al salir del editor, a "
+"menos que la utilidad se ejecute como superusuario."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6601
@@ -9737,11 +10360,17 @@ msgid ""
 "available for editing. This is shown in <xref linkend=\"users-modifying-"
 "chpass-ru\"/>."
 msgstr ""
+"En <xref linkend=\"users-modifying-chpass-su\"/>, the superuser has typed "
+"<command>chpass jru</command> y ahora está viendo los campos que se pueden "
+"cambiar para este usuario. Si <systemitem class=\"username\">jru</"
+"systemitem> ejecuta este comando en su lugar, solo los últimos seis campos "
+"se mostrarán y estarán disponibles para su edición. Esto se muestra en <xref "
+"linkend=\"users-modifying-chpass-ru\"/>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:6610
 msgid "Using <command>chpass</command> as Superuser"
-msgstr ""
+msgstr "Usando <command>chpass</command> como superusuario"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6613
@@ -9763,11 +10392,26 @@ msgid ""
 "Home Phone:\n"
 "Other information:"
 msgstr ""
+"#Cambio de la información de la base de datos de usuarios para jru.\n"
+"Iniciar sesión: jru\n"
+"Contraseña: *\n"
+"Uid [#]: 1001\n"
+"Gid [# o nombre]: 1001\n"
+"Cambiar [mes día año]:\n"
+"Caducidad [mes día año]:\n"
+"Clase:\n"
+"Directorio de inicio: / inicio / jru\n"
+"Shell: / usr / local / bin / zsh\n"
+"Nombre completo: J. Usuario aleatorio\n"
+"Localización de la oficina:\n"
+"Telefono de oficina:\n"
+"Teléfono de casa:\n"
+"Otra información:"
 
 #. (itstool) path: example/title
 #: book.translate.xml:6631
 msgid "Using <command>chpass</command> as Regular User"
-msgstr ""
+msgstr "Usando <command>chpass</command> como usuario regular"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6634
@@ -9781,6 +10425,13 @@ msgid ""
 "Home Phone:\n"
 "Other information:"
 msgstr ""
+"#Cambio de la información de la base de datos de usuarios para jru.\n"
+"Shell: /usr/local/bin/zsh\n"
+"Nombre completo: J. Usuario aleatorio\n"
+"Localización de la oficina:\n"
+"Telefono de oficina:\n"
+"Teléfono de casa:\n"
+"Otra información:"
 
 #. (itstool) path: note/para
 #: book.translate.xml:6644
@@ -9798,21 +10449,38 @@ msgid ""
 "the command is not necessary. How to configure NIS is covered in <xref "
 "linkend=\"network-servers\"/>."
 msgstr ""
+"Los comandos "
+"<citerefentry><refentrytitle>chfn</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> y "
+"<citerefentry><refentrytitle>chsh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> son enlaces a "
+"<citerefentry><refentrytitle>chpass</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>, como son <citerefentry><refentrytitle>ypchpass</refentrytitle>"
+"<manvolnum>1</manvolnum></citerefentry>, "
+"<citerefentry><refentrytitle>ypchfn</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>, y "
+"<citerefentry><refentrytitle>ypchsh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>. Ya que <acronym>NIS</acronym> El soporte es automático, "
+"especificando el <literal>yp</literal> antes del comando no es necesario. "
+"Cómo configurar NIS se trata en <xref linkend=\"network-servers\"/>."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6654
+#, fuzzy
 msgid "<command>passwd</command>"
-msgstr ""
+msgstr "<command>passwd</command>"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6656
+#, fuzzy
 msgid "<primary><command>passwd</command></primary>"
-msgstr ""
+msgstr "<primary><command>passwd</command></primary>"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6659
+#, fuzzy
 msgid "<primary>accounts</primary> <secondary>changing password</secondary>"
-msgstr ""
+msgstr "<primary>accounts</primary> <secondary>changing password</secondary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6664
@@ -9823,11 +10491,16 @@ msgid ""
 "will prompt for the user's original password before a new password can be "
 "set:"
 msgstr ""
+"Cualquier usuario puede cambiar fácilmente su contraseña usando "
+"<citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>. para evitar cambios accidentales o no autorizados, este "
+"comando solicitará la contraseña original del usuario antes de que se pueda "
+"establecer una nueva contraseña:"
 
 #. (itstool) path: example/title
 #: book.translate.xml:6670
 msgid "Changing Your Password"
-msgstr ""
+msgstr "Cambiando tu contraseña"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6672
@@ -9841,6 +10514,13 @@ msgid ""
 "passwd: updating the database...\n"
 "passwd: done"
 msgstr ""
+"<prompt>%</prompt> <userinput>passwd</userinput>\n"
+"Cambio de contraseña local para jru.\n"
+"Contraseña anterior:\n"
+"Nueva contraseña:\n"
+"Reescriba nueva contraseña:\n"
+"passwd: actualizando la base de datos ...\n"
+"passwd: hecho"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6681
@@ -9851,11 +10531,17 @@ msgid ""
 "will not prompt for the user's current password. This allows the password to "
 "be changed when a user cannot remember the original password."
 msgstr ""
+"El superusuario puede cambiar la contraseña de cualquier usuario "
+"especificando el nombre de usuario al ejecutar<citerefentry><refentrytitle>pa"
+"sswd</refentrytitle><manvolnum>1</manvolnum></citerefentry>. Cuando esta "
+"utilidad se ejecuta como superusuario, no solicitará la contraseña actual "
+"del usuario. Esto permite cambiar la contraseña cuando un usuario no puede "
+"recordar la contraseña original."
 
 #. (itstool) path: example/title
 #: book.translate.xml:6689
 msgid "Changing Another User's Password as the Superuser"
-msgstr ""
+msgstr "Cambiar la contraseña de otro usuario como superusuario"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6692
@@ -9868,6 +10554,12 @@ msgid ""
 "passwd: updating the database...\n"
 "passwd: done"
 msgstr ""
+"<prompt>#</prompt> <userinput>passwd jru</userinput>\n"
+"Cambio de contraseña local para jru.\n"
+"Nueva contraseña:\n"
+"Reescriba nueva contraseña:\n"
+"passwd: actualizando la base de datos ...\n"
+"passwd: hecho"
 
 #. (itstool) path: note/para
 #: book.translate.xml:6701
@@ -9878,17 +10570,26 @@ msgid ""
 "<citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>, so <acronym>NIS</acronym> works with either command."
 msgstr ""
+"Al igual que con "
+"<citerefentry><refentrytitle>chpass</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>, <citerefentry><refentrytitle>yppasswd</refentrytitle><manvolnu"
+"m>1</manvolnum></citerefentry>es un enlace a "
+"<citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>, entonces <acronym>NIS</acronym> funciona con cualquier "
+"comando."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6708
+#, fuzzy
 msgid "<command>pw</command>"
-msgstr ""
+msgstr "<command>pw</command>"
 
 #. (itstool) path: sect3/indexterm
 #. (itstool) path: sect4/indexterm
 #: book.translate.xml:6710 book.translate.xml:44135
+#, fuzzy
 msgid "<primary><command>pw</command></primary>"
-msgstr ""
+msgstr "<primary><command>pw</command></primary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6714
@@ -9901,26 +10602,36 @@ msgid ""
 "suitable for use in shell scripts, but new users may find it more "
 "complicated than the other commands presented in this section."
 msgstr ""
+"El <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> La utilidad puede crear, eliminar, modificar y mostrar "
+"usuarios y grupos. Funciona como una interfaz para los archivos de grupo y "
+"usuario del sistema. "
+"<citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> tiene un conjunto muy poderoso de opciones de línea de "
+"comandos que lo hacen adecuado para su uso en scripts de shell, pero los "
+"nuevos usuarios pueden encontrarlo más complicado que los otros comandos "
+"presentados en esta sección."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:6725
 msgid "Managing Groups"
-msgstr ""
+msgstr "Administrar grupos"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:6727
 msgid "<primary>groups</primary>"
-msgstr ""
+msgstr "<primary>grupos</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:6730
+#, fuzzy
 msgid "<primary><filename>/etc/groups</filename></primary>"
-msgstr ""
+msgstr "<primary><filename>/etc/groups</filename></primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:6733
 msgid "<primary>accounts</primary> <secondary>groups</secondary>"
-msgstr ""
+msgstr "<primary>cuentas</primary> <secondary>grupos</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6738
@@ -9931,6 +10642,12 @@ msgid ""
 "what the process is allowed to do. Most of the time, the <acronym>GID</"
 "acronym> of a user or process usually means the first group in the list."
 msgstr ""
+"Un grupo es una lista de usuarios. Un grupo se identifica por su nombre de "
+"grupo y <acronym>GID</acronym>. En FreeBSD, el kernel usa el <acronym>UID</"
+"acronym> de un proceso, y la lista de grupos a los que pertenece, para "
+"determinar qué puede hacer el proceso. La mayor parte del tiempo, "
+"<acronym>GID</acronym> de un usuario o proceso generalmente significa el "
+"primer grupo de la lista."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6745
@@ -9943,6 +10660,13 @@ msgid ""
 "refer to <citerefentry><refentrytitle>group</refentrytitle><manvolnum>5</"
 "manvolnum></citerefentry>."
 msgstr ""
+"El nombre del grupo a <acronym>GID</acronym> el mapeo está listado en "
+"<filename>/etc/group</filename>. Este es un archivo de texto sin formato con "
+"cuatro campos delimitados por dos puntos. El primer campo es el nombre del "
+"grupo, el segundo es la contraseña cifrada, el tercero la<acronym>GID</"
+"acronym>, y el cuarto la lista de miembros delimitada por comas. Para "
+"obtener una descripción más completa de la sintaxis, consulte <citerefentry><"
+"refentrytitle>grupo</refentrytitle><manvolnum>5</manvolnum></citerefentry>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6753
@@ -9953,6 +10677,12 @@ msgid ""
 "edit groups. For example, to add a group called <systemitem class=\"groupname"
 "\">teamtwo</systemitem> and then confirm that it exists:"
 msgstr ""
+"El superusuario puede modificar <filename>/etc/group</filename> usando un "
+"editor de texto. Alternativamente, "
+"<citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> se puede utilizar para agregar y editar grupos. Por ejemplo, "
+"para agregar un grupo llamado <systemitem class=\"groupname\">teamtwo</"
+"systemitem> y luego confirme que existe:"
 
 #. (itstool) path: example/title
 #: book.translate.xml:6760
@@ -9960,15 +10690,20 @@ msgid ""
 "Adding a Group Using <citerefentry><refentrytitle>pw</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 msgstr ""
+"Agregar un grupo usando <citerefentry><refentrytitle>pw</refentrytitle><manvo"
+"lnum>8</manvolnum></citerefentry>"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6762
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>pw groupadd teamtwo</userinput>\n"
 "<prompt>#</prompt> <userinput>pw groupshow teamtwo</userinput>\n"
 "teamtwo:*:1100:"
 msgstr ""
+"<prompt>#</prompt> <userinput>pw groupadd teamtwo</userinput>\n"
+"<prompt>#</prompt> <userinput>pw groupshow teamtwo</userinput>\n"
+"teamtwo:*:1100:"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6767
@@ -9979,6 +10714,11 @@ msgid ""
 "add <systemitem class=\"username\">jru</systemitem> as a member of "
 "<systemitem class=\"groupname\">teamtwo</systemitem>."
 msgstr ""
+"En este ejemplo, <literal>1100</literal> es el <acronym>GID</acronym> de "
+"<systemitem class=\"groupname\">teamtwo</systemitem>. Ahora mismo, "
+"<systemitem class=\"groupname\">teamtwo</systemitem> no tiene miembros. Este "
+"comando agregará <systemitem class=\"username\">jru</systemitem> como "
+"miembro de <systemitem class=\"groupname\">teamtwo</systemitem>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:6776
@@ -9986,15 +10726,20 @@ msgid ""
 "Adding User Accounts to a New Group Using <citerefentry><refentrytitle>pw</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 msgstr ""
+"Agregar cuentas de usuario a un nuevo grupo usando <citerefentry><refentrytit"
+"le>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6779
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>pw groupmod teamtwo -M jru</userinput>\n"
 "<prompt>#</prompt> <userinput>pw groupshow teamtwo</userinput>\n"
 "teamtwo:*:1100:jru"
 msgstr ""
+"<prompt>#</prompt> <userinput>pw groupmod teamtwo -M jru</userinput>\n"
+"<prompt>#</prompt> <userinput>pw groupshow teamtwo</userinput>\n"
+"teamtwo:*:1100:jru"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6784
@@ -10012,6 +10757,20 @@ msgid ""
 "to a group, it only manipulates <filename>/etc/group</filename> and does not "
 "attempt to read additional data from <filename>/etc/passwd</filename>."
 msgstr ""
+"El argumento para <option>-M</option>es una lista delimitada por comas de "
+"usuarios que se agregarán a un grupo nuevo (vacío) o para reemplazar a los "
+"miembros de un grupo existente. Para el usuario, esta pertenencia a un grupo "
+"es diferente (y además) del grupo principal del usuario que aparece en el "
+"archivo de contraseñas. Esto significa que el usuario no aparecerá como "
+"miembro cuando use <option>groupshow</option> con "
+"<citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>, pero aparecerá cuando se consulte la información a través de "
+"<citerefentry><refentrytitle>id</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> o una herramienta similar. Cuando "
+"<citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> se usa para agregar un usuario a un grupo, solo manipula "
+"<filename>/etc/group</filename> y no intenta leer datos adicionales de "
+"<filename>/etc/passwd</filename>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:6798
@@ -10019,15 +10778,20 @@ msgid ""
 "Adding a New Member to a Group Using <citerefentry><refentrytitle>pw</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 msgstr ""
+"Agregar un nuevo miembro a un grupo usando <citerefentry><refentrytitle>pw</r"
+"efentrytitle><manvolnum>8</manvolnum></citerefentry>"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6800
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>pw groupmod teamtwo -m db</userinput>\n"
 "<prompt>#</prompt> <userinput>pw groupshow teamtwo</userinput>\n"
 "teamtwo:*:1100:jru,db"
 msgstr ""
+"<prompt>#</prompt> <userinput>pw groupmod teamtwo -m db</userinput>\n"
+"<prompt>#</prompt> <userinput>pw groupshow teamtwo</userinput>\n"
+"teamtwo:*:1100:jru,db"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6805
@@ -10037,6 +10801,10 @@ msgid ""
 "these users are appended to the group and do not replace existing users in "
 "the group."
 msgstr ""
+"En este ejemplo, el argumento para <option>-m</option> es una lista "
+"delimitada por comas de usuarios que se agregarán al grupo. A diferencia del "
+"ejemplo anterior, estos usuarios se agregan al grupo y no reemplazan a los "
+"usuarios existentes en el grupo."
 
 #. (itstool) path: example/title
 #: book.translate.xml:6812
@@ -10044,14 +10812,19 @@ msgid ""
 "Using <citerefentry><refentrytitle>id</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> to Determine Group Membership"
 msgstr ""
+"Usando "
+"<citerefentry><refentrytitle>id</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> para determinar la pertenencia al grupo"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6814
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>id jru</userinput>\n"
 "uid=1001(jru) gid=1001(jru) groups=1001(jru), 1100(teamtwo)"
 msgstr ""
+"<prompt>%</prompt> <userinput>id jru</userinput>\n"
+"uid=1001(jru) gid=1001(jru) groups=1001(jru), 1100(teamtwo)"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6818
@@ -10060,6 +10833,9 @@ msgid ""
 "of the groups <systemitem class=\"groupname\">jru</systemitem> and "
 "<systemitem class=\"groupname\">teamtwo</systemitem>."
 msgstr ""
+"En este ejemplo, <systemitem class=\"username\">jru</systemitem>es miembro "
+"de los grupos <systemitem class=\"groupname\">jru</systemitem> y <systemitem "
+"class=\"groupname\">teamtwo</systemitem>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6823
@@ -10070,16 +10846,22 @@ msgid ""
 "<citerefentry><refentrytitle>group</refentrytitle><manvolnum>5</manvolnum></"
 "citerefentry>."
 msgstr ""
+"Para obtener más información sobre este comando y el formato de <filename>/"
+"etc/group</filename>, Referirse a "
+"<citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> y <citerefentry><refentrytitle>grupo</refentrytitle><manvolnum>"
+"5</manvolnum></citerefentry>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:6830
 msgid "Permissions"
-msgstr ""
+msgstr "Permisos"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:6832
+#, fuzzy
 msgid "<primary>UNIX</primary>"
-msgstr ""
+msgstr "<primary>UNIX</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6836
@@ -10091,6 +10873,12 @@ msgid ""
 "improperly access the files used by the operating system or owned by other "
 "users."
 msgstr ""
+"En FreeBSD, cada archivo y directorio tiene un conjunto de permisos asociado "
+"y hay varias utilidades disponibles para ver y modificar estos permisos. Es "
+"necesario comprender cómo funcionan los permisos para asegurarse de que los "
+"usuarios puedan acceder a los archivos que necesitan y no puedan acceder de "
+"forma incorrecta a los archivos utilizados por el sistema operativo o "
+"propiedad de otros usuarios."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6844
@@ -10099,6 +10887,9 @@ msgid ""
 "trademark> permissions used in FreeBSD. For finer grained file system access "
 "control, refer to <xref linkend=\"fs-acl\"/>."
 msgstr ""
+"Esta sección discute el tradicional <trademark class=\"registered\">UNIX</"
+"trademark> permisos usados en FreeBSD. Para obtener un control de acceso al "
+"sistema de archivos más detallado, consulte <xref linkend=\"fs-acl\"/>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6848
@@ -10115,6 +10906,18 @@ msgid ""
 "literal> has an on value of <literal>2</literal> and <literal>x</literal> "
 "has an on value of <literal>1</literal>."
 msgstr ""
+"En <trademark class=\"registered\">UNIX</trademark>, los permisos básicos se "
+"asignan mediante tres tipos de acceso: lectura, escritura y ejecución. Estos "
+"tipos de acceso se utilizan para determinar el acceso al archivo para el "
+"propietario, el grupo y otros (todos los demás) del archivo. Los permisos de "
+"lectura, escritura y ejecución se pueden representar como letras<literal>r</"
+"literal>, <literal>w</literal>, y <literal>x</literal>. También se pueden "
+"representar como números binarios, ya que cada permiso está activado o "
+"desactivado. (<literal>0</literal>). Cuando se representa como un número, el "
+"orden siempre se lee como <literal>rwx</literal>, donde <literal>r</literal> "
+"tiene un valor de <literal>4</literal>, <literal>w</literal> tiene un valor "
+"de <literal>2</literal> y <literal>x</literal> tiene un valor de "
+"<literal>1</literal>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6863
@@ -10123,182 +10926,204 @@ msgid ""
 "reading the <quote>Directory Listing</quote> column, a <literal>-</literal> "
 "is used to represent a permission that is set to off."
 msgstr ""
+"La tabla 4.1 resume las posibles posibilidades numéricas y alfabéticas. Al "
+"leer el <quote>Directory Listing</quote> columna, una <literal>-</literal> "
+"se utiliza para representar un permiso desactivado."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:6868
 msgid "<primary>permissions</primary>"
-msgstr ""
+msgstr "<primary>permisos</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:6871
 msgid "<primary>file permissions</primary>"
-msgstr ""
+msgstr "<primary>permisos de archivo</primary>"
 
 #. (itstool) path: table/title
 #: book.translate.xml:6876
 msgid "<trademark class=\"registered\">UNIX</trademark> Permissions"
-msgstr ""
+msgstr "<trademark class=\"registered\">UNIX</trademark> Permisos"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6881
 msgid "Value"
-msgstr ""
+msgstr "Valor"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6882
 msgid "Permission"
-msgstr ""
+msgstr "Permiso"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6883
 msgid "Directory Listing"
-msgstr ""
+msgstr "Lista de directorios"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6889
+#, fuzzy
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6890
 msgid "No read, no write, no execute"
-msgstr ""
+msgstr "No leer, no escribir, no ejecutar"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6891
+#, fuzzy
 msgid "<literal>---</literal>"
-msgstr ""
+msgstr "<literal>---</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6895 book.translate.xml:47620 book.translate.xml:47642
 #: book.translate.xml:47732
+#, fuzzy
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6896
 msgid "No read, no write, execute"
-msgstr ""
+msgstr "No leer, no escribir, ejecutar"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6897
+#, fuzzy
 msgid "<literal>--x</literal>"
-msgstr ""
+msgstr "<literal>--x</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6901 book.translate.xml:47512 book.translate.xml:47522
 #: book.translate.xml:47594 book.translate.xml:47604 book.translate.xml:47684
 #: book.translate.xml:47686
+#, fuzzy
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6902
 msgid "No read, write, no execute"
-msgstr ""
+msgstr "No leer, no escribir, ejecutar"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6903
+#, fuzzy
 msgid "<literal>-w-</literal>"
-msgstr ""
+msgstr "<literal>-w-</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6907 book.translate.xml:47514 book.translate.xml:47520
 #: book.translate.xml:47596 book.translate.xml:47602 book.translate.xml:47692
 #: book.translate.xml:47694
+#, fuzzy
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6908
 msgid "No read, write, execute"
-msgstr ""
+msgstr "No leer, no escribir, ejecutar"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6909
+#, fuzzy
 msgid "<literal>-wx</literal>"
-msgstr ""
+msgstr "<literal>-wx</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6913 book.translate.xml:47528 book.translate.xml:47538
 #: book.translate.xml:47610 book.translate.xml:47618 book.translate.xml:47636
 #: book.translate.xml:47644 book.translate.xml:47700 book.translate.xml:47708
 #: book.translate.xml:47750
+#, fuzzy
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6914
 msgid "Read, no write, no execute"
-msgstr ""
+msgstr "No leer, no escribir, ejecutar"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6915
+#, fuzzy
 msgid "<literal>r--</literal>"
-msgstr ""
+msgstr "<literal>r--</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6919 book.translate.xml:47530 book.translate.xml:47536
 #: book.translate.xml:47626 book.translate.xml:47628 book.translate.xml:47716
 #: book.translate.xml:47742
+#, fuzzy
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6920
 msgid "Read, no write, execute"
-msgstr ""
+msgstr "No leer, no escribir, ejecutar"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6921
+#, fuzzy
 msgid "<literal>r-x</literal>"
-msgstr ""
+msgstr "<literal>r-x</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6925 book.translate.xml:47546 book.translate.xml:47560
 #: book.translate.xml:47612 book.translate.xml:47634 book.translate.xml:47702
 #: book.translate.xml:47724
+#, fuzzy
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6926
 msgid "Read, write, no execute"
-msgstr ""
+msgstr "No leer, no escribir, ejecutar"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6927
+#, fuzzy
 msgid "<literal>rw-</literal>"
-msgstr ""
+msgstr "<literal>rw-</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6931 book.translate.xml:47504 book.translate.xml:47506
 #: book.translate.xml:47650 book.translate.xml:47660 book.translate.xml:47718
 #: book.translate.xml:47740
+#, fuzzy
 msgid "7"
-msgstr ""
+msgstr "7"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6932
 msgid "Read, write, execute"
-msgstr ""
+msgstr "No leer, no escribir, ejecutar"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6933
+#, fuzzy
 msgid "<literal>rwx</literal>"
-msgstr ""
+msgstr "<literal>rwx</literal>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:6939
+#, fuzzy
 msgid ""
 "<primary><citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry></primary>"
 msgstr ""
+"<primary><citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvoln"
+"um></citerefentry></primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:6942
 msgid "<primary>directories</primary>"
-msgstr ""
+msgstr "<primary>directorios</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6946
@@ -10309,10 +11134,16 @@ msgid ""
 "permissions for the owner, group, and everyone else. For example, an "
 "<command>ls -l</command> in an arbitrary directory may show:"
 msgstr ""
+"Use the <option>-l</option> argumento para "
+"<citerefentry><refentrytitle>Es</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> para ver una lista larga de directorios que incluye una "
+"columna de información sobre los permisos de un archivo para el propietario, "
+"el grupo y todos los demás. Por ejemplo, un <command>ls -l</command> en un "
+"directorio arbitrario puede mostrar:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:6952
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>ls -l</userinput>\n"
 "total 530\n"
@@ -10320,6 +11151,11 @@ msgid ""
 "-rw-r--r--  1 root  wheel     512 Sep  5 12:31 otherfile\n"
 "-rw-r--r--  1 root  wheel    7680 Sep  5 12:31 email.txt"
 msgstr ""
+"<prompt>%</prompt> <userinput>ls -l</userinput>\n"
+"total 530\n"
+"-rw-r--r--  1 root  wheel     512 Sep  5 12:31 myfile\n"
+"-rw-r--r--  1 root  wheel     512 Sep  5 12:31 otherfile\n"
+"-rw-r--r--  1 root  wheel    7680 Sep  5 12:31 email.txt"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6958
@@ -10338,6 +11174,21 @@ msgid ""
 "above, the permissions for this file would be <literal>644</literal>, where "
 "each digit represents the three parts of the file's permission."
 msgstr ""
+"El primer carácter (más a la izquierda) de la primera columna indica si este "
+"archivo es un archivo normal, un directorio, un dispositivo de caracteres "
+"especiales, un conector o cualquier otro dispositivo de pseudoarchivo "
+"especial. En este ejemplo, el <literal>-</literal> indica un archivo normal. "
+"Los siguientes tres personajes, <literal>rw-</literal> en este ejemplo, "
+"otorgue los permisos para el propietario del archivo. Los siguientes tres "
+"personajes, <literal>r--</literal>, otorgue los permisos para el grupo al "
+"que pertenece el archivo. Los últimos tres personajes, <literal>r--</"
+"literal>, otorgue los permisos para el resto del mundo. Un guión significa "
+"que el permiso está desactivado. En este ejemplo, los permisos se establecen "
+"para que el propietario pueda leer y escribir en el archivo, el grupo pueda "
+"leer el archivo y el resto del mundo solo pueda leer el archivo. Según la "
+"tabla anterior, los permisos para este archivo serían <literal>644</"
+"literal>, donde cada dígito representa las tres partes del permiso del "
+"archivo."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6975
@@ -10346,6 +11197,10 @@ msgid ""
 "hardware devices as a file that programs can open, read, and write data to. "
 "These special device files are stored in <filename>/dev/</filename>."
 msgstr ""
+"¿Cómo controla el sistema los permisos en los dispositivos? FreeBSD trata la "
+"mayoría de los dispositivos de hardware como un archivo en el que los "
+"programas pueden abrir, leer y escribir datos. Estos archivos de "
+"dispositivos especiales se almacenan en <filename>/dev/</filename>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6980
@@ -10358,6 +11213,14 @@ msgid ""
 "citerefentry>. This also means that it is possible to access the files "
 "within that directory, subject to the permissions on the files themselves."
 msgstr ""
+"Los directorios también se tratan como archivos. Tienen permisos de lectura, "
+"escritura y ejecución. El bit ejecutable de un directorio tiene un "
+"significado ligeramente diferente al de los archivos. Cuando un directorio "
+"está marcado como ejecutable, significa que es posible cambiar a ese "
+"directorio usando "
+"<citerefentry><refentrytitle>cd</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>. Esto también significa que es posible acceder a los archivos "
+"dentro de ese directorio, sujeto a los permisos de los propios archivos."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6989
@@ -10367,6 +11230,10 @@ msgid ""
 "necessary to have write <emphasis>and</emphasis> execute permissions to the "
 "directory containing the file."
 msgstr ""
+"Para realizar una lista de directorios, el permiso de lectura debe "
+"establecerse en el directorio. Para borrar un archivo cuyo nombre se conoce, "
+"es necesario tener escritura <emphasis>y</emphasis> ejecutar permisos al "
+"directorio que contiene el archivo."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6995
@@ -10377,11 +11244,16 @@ msgid ""
 "<citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>."
 msgstr ""
+"Hay más bits de permisos, pero se utilizan principalmente en circunstancias "
+"especiales, como binarios setuid y directorios fijos. Para obtener más "
+"información sobre los permisos de archivos y cómo configurarlos, consulte <ci"
+"terefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></cite"
+"refentry>."
 
 #. (itstool) path: info/title
 #: book.translate.xml:7002
 msgid "Symbolic Permissions"
-msgstr ""
+msgstr "Permisos simbólicos"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:7005 book.translate.xml:7140 book.translate.xml:7191
@@ -10392,11 +11264,13 @@ msgid ""
 "<personname> <firstname>Tom</firstname> <surname>Rhodes</surname> </"
 "personname> <contrib>Contributed by </contrib>"
 msgstr ""
+"<personname> <firstname>Tom</firstname> <surname>Rhodes</surname> </"
+"personname> <contrib>Contribuido por </contrib>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:7015
 msgid "<primary>permissions</primary> <secondary>symbolic</secondary>"
-msgstr ""
+msgstr "<primary>permisos</primary> <secondary>simbólico</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7020
@@ -10405,158 +11279,174 @@ msgid ""
 "permissions to files or directories. Symbolic permissions use the syntax of "
 "(who) (action) (permissions), where the following values are available:"
 msgstr ""
+"Los permisos simbólicos utilizan caracteres en lugar de valores octales para "
+"asignar permisos a archivos o directorios. Los permisos simbólicos utilizan "
+"la sintaxis de (quién) (acción) (permisos), donde están disponibles los "
+"siguientes valores:"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7030 book.translate.xml:23471
 msgid "Option"
-msgstr ""
+msgstr "Opciones"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7031
 msgid "Letter"
-msgstr ""
+msgstr "Letra"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7032
 msgid "Represents"
-msgstr ""
+msgstr "Representa"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7038 book.translate.xml:7044 book.translate.xml:7050
 #: book.translate.xml:7056
 msgid "(who)"
-msgstr ""
+msgstr "(quién)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7039
+#, fuzzy
 msgid "u"
-msgstr ""
+msgstr "u"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7040
 msgid "User"
-msgstr ""
+msgstr "Usuario"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7045
+#, fuzzy
 msgid "g"
-msgstr ""
+msgstr "g"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7046
 msgid "Group owner"
-msgstr ""
+msgstr "Propietario del grupo"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7051
+#, fuzzy
 msgid "o"
-msgstr ""
+msgstr "o"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7052
 msgid "Other"
-msgstr ""
+msgstr "Otro"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7057
+#, fuzzy
 msgid "a"
-msgstr ""
+msgstr "a"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7058
 msgid "All (<quote>world</quote>)"
-msgstr ""
+msgstr "Todo (<quote>mundo</quote>)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7062 book.translate.xml:7068 book.translate.xml:7074
 msgid "(action)"
-msgstr ""
+msgstr "(acción)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7063 book.translate.xml:31798 book.translate.xml:39593
+#, fuzzy
 msgid "+"
-msgstr ""
+msgstr "+"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7064
 msgid "Adding permissions"
-msgstr ""
+msgstr "Agregar permisos"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7069 book.translate.xml:31803 book.translate.xml:39598
+#, fuzzy
 msgid "-"
-msgstr ""
+msgstr "-"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7070
 msgid "Removing permissions"
-msgstr ""
+msgstr "Eliminando permisos"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7075
+#, fuzzy
 msgid "="
-msgstr ""
+msgstr "="
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7076
 msgid "Explicitly set permissions"
-msgstr ""
+msgstr "Permisos establecidos explícitamente"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7080 book.translate.xml:7086 book.translate.xml:7092
 #: book.translate.xml:7098 book.translate.xml:7104
 msgid "(permissions)"
-msgstr ""
+msgstr "(permisos)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7081
+#, fuzzy
 msgid "r"
-msgstr ""
+msgstr "r"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7082
 msgid "Read"
-msgstr ""
+msgstr "Leer"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7087
+#, fuzzy
 msgid "w"
-msgstr ""
+msgstr "w"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7088
 msgid "Write"
-msgstr ""
+msgstr "Escribir"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7093
+#, fuzzy
 msgid "x"
-msgstr ""
+msgstr "x"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7094
 msgid "Execute"
-msgstr ""
+msgstr "Ejecutar"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7099
+#, fuzzy
 msgid "t"
-msgstr ""
+msgstr "t"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7100
 msgid "Sticky bit"
-msgstr ""
+msgstr "Poco pegajoso"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7105
+#, fuzzy
 msgid "s"
-msgstr ""
+msgstr "s"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7106
 msgid "Set UID or GID"
-msgstr ""
+msgstr "Establecer UID o GID"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7112
@@ -10566,12 +11456,17 @@ msgid ""
 "instead of numbers. For example, the following command would block other "
 "users from accessing <replaceable>FILE</replaceable>:"
 msgstr ""
+"Estos valores se utilizan con "
+"<citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>, pero con letras en lugar de números. Por ejemplo, el "
+"siguiente comando bloquearía el acceso de otros "
+"usuarios<replaceable>ARCHIVO</replaceable>:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:7117
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>%</prompt> <userinput>chmod go= FILE</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>chmod go= FILE</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7119
@@ -10581,17 +11476,24 @@ msgid ""
 "and <quote>world</quote> write permission on <replaceable>FILE</"
 "replaceable>, and adds the execute permissions for everyone:"
 msgstr ""
+"Se puede proporcionar una lista separada por comas cuando se deba realizar "
+"más de un conjunto de cambios en un archivo. Por ejemplo, el siguiente "
+"comando elimina el grupo y <quote>world</quote> escribir permiso en "
+"<replaceable>ARCHIVO</replaceable>, Y agrega los permisos de ejecución para "
+"todos:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:7126
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>chmod go-w,a+x <replaceable>FILE</replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>chmod go-w,a+x "
+"<replaceable>ARCHIVO</replaceable></userinput>"
 
 #. (itstool) path: info/title
 #: book.translate.xml:7137
 msgid "FreeBSD File Flags"
-msgstr ""
+msgstr "Banderas de archivos FreeBSD"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7150
@@ -10602,6 +11504,11 @@ msgid ""
 "\"username\">root</systemitem> can be prevented from removing or altering "
 "files."
 msgstr ""
+"Además de los permisos de archivo, FreeBSD admite el uso de <quote>file "
+"flags</quote>. Estos indicadores agregan un nivel adicional de seguridad y "
+"control sobre los archivos, pero no sobre los directorios. Con banderas de "
+"archivo, incluso <systemitem class=\"username\">root</systemitem> Se puede "
+"evitar que se eliminen o alteren archivos."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7157
@@ -10611,12 +11518,16 @@ msgid ""
 "enable the system undeletable flag on the file <filename>file1</filename>, "
 "issue the following command:"
 msgstr ""
+"Las banderas de archivo se modifican usando <citerefentry><refentrytitle>chfl"
+"ags</refentrytitle><manvolnum>1</manvolnum></citerefentry>. Por ejemplo, "
+"para habilitar la marca no borrable del sistema en el archivo "
+"<filename>file1</filename>, emita el siguiente comando:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:7162
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>chflags sunlink file1</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>chflags sunlink file1</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7164
@@ -10624,12 +11535,14 @@ msgid ""
 "To disable the system undeletable flag, put a <quote>no</quote> in front of "
 "the <option>sunlink</option>:"
 msgstr ""
+"Para deshabilitar la marca de indeleble del sistema, coloque un <quote>no</"
+"quote> en frente de <option>sunlink</option>:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:7168
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>chflags nosunlink file1</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>chflags nosunlink file1</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7170
@@ -10638,18 +11551,20 @@ msgid ""
 "<citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>:"
 msgstr ""
+"Para ver las banderas de un archivo, use <option>-lo</option> con <citerefent"
+"ry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></citerefentry>:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:7173
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>ls -lo file1</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>ls -lo file1</userinput>"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:7175
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "-rw-r--r--  1 trhodes  trhodes  sunlnk 0 Mar  1 05:54 file1"
-msgstr ""
+msgstr "-rw-r--r--  1 trhodes  trhodes  sunlnk 0 Mar  1 05:54 file1"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7177
@@ -10661,6 +11576,12 @@ msgid ""
 "<citerefentry><refentrytitle>chflags</refentrytitle><manvolnum>2</"
 "manvolnum></citerefentry> for more information."
 msgstr ""
+"Varias marcas de archivo solo pueden ser agregadas o eliminadas por el "
+"<systemitem class=\"username\">root</systemitem> usuario. En otros casos, el "
+"propietario del archivo puede establecer sus marcas de archivo. Referirse a <"
+"citerefentry><refentrytitle>chflags</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> y <citerefentry><refentrytitle>chflags</refentrytitle><manvolnu"
+"m>2</manvolnum></citerefentry> para más información."
 
 #. (itstool) path: info/title
 #: book.translate.xml:7186
@@ -10668,6 +11589,8 @@ msgid ""
 "The <literal>setuid</literal>, <literal>setgid</literal>, and "
 "<literal>sticky</literal> Permissions"
 msgstr ""
+"El <literal>setuid</literal>, <literal>setgid</literal>, y "
+"<literal>pegajoso</literal> Permisos"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7201
@@ -10677,6 +11600,10 @@ msgid ""
 "<literal>setuid</literal>, <literal>setgid</literal>, and <literal>sticky</"
 "literal> permissions."
 msgstr ""
+"Además de los permisos ya discutidos, hay otras tres configuraciones "
+"específicas que todos los administradores deben conocer. Ellos son las "
+"<literal>setuid</literal>, <literal>setgid</literal>, y <literal>sticky</"
+"literal> permisos."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7207
@@ -10686,6 +11613,11 @@ msgid ""
 "normal users. To understand them, the difference between the real user ID "
 "and effective user ID must be noted."
 msgstr ""
+"Estos ajustes son importantes para algunos <trademark class=\"registered\""
+">UNIX</trademark> operaciones, ya que proporcionan una funcionalidad que "
+"normalmente no se otorga a los usuarios normales. Para comprenderlos, debe "
+"tenerse en cuenta la diferencia entre el ID de usuario real y el ID de "
+"usuario efectivo."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7212
@@ -10699,6 +11631,15 @@ msgid ""
 "class=\"username\">root</systemitem> user. This allows users to change their "
 "passwords without seeing a <errorname>Permission Denied</errorname> error."
 msgstr ""
+"El ID de usuario real es el <acronym>UID</acronym> quién es el propietario o "
+"quien inicia el proceso. El efectivo <acronym>UID</acronym> es el ID de "
+"usuario con el que se ejecuta el proceso. Como ejemplo, "
+"<citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> se ejecuta con el ID de usuario real cuando un usuario cambia "
+"su contraseña. Sin embargo, para actualizar la base de datos de contraseñas, "
+"el comando se ejecuta como el ID efectivo del<systemitem class=\"username\""
+">root</systemitem> usuario. Esto permite a los usuarios cambiar sus "
+"contraseñas sin ver un <errorname>Permiso denegado</errorname> error."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7222
@@ -10706,12 +11647,14 @@ msgid ""
 "The setuid permission may be set by prefixing a permission set with the "
 "number four (4) as shown in the following example:"
 msgstr ""
+"El permiso setuid puede establecerse anteponiendo un conjunto de permisos "
+"con el número cuatro (4) como se muestra en el siguiente ejemplo:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:7226
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>chmod 4755 suidexample.sh</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>chmod 4755 suidexample.sh</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7228
@@ -10719,12 +11662,14 @@ msgid ""
 "The permissions on <filename><replaceable>suidexample.sh</replaceable></"
 "filename> now look like the following:"
 msgstr ""
+"Los permisos en <filename><replaceable>suidexample.sh</replaceable></"
+"filename> ahora tiene el siguiente aspecto:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:7232
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "-rwsr-xr-x   1 trhodes  trhodes    63 Aug 29 06:36 suidexample.sh"
-msgstr ""
+msgstr "-rwsr-xr-x   1 trhodes  trhodes    63 Aug 29 06:36 suidexample.sh"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7234
@@ -10735,6 +11680,11 @@ msgid ""
 "<citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>."
 msgstr ""
+"Tenga en cuenta que un <literal>s</literal> ahora es parte del conjunto de "
+"permisos designado para el propietario del archivo, reemplazando el bit "
+"ejecutable. Esto permite a las utilidades que necesitan permisos elevados, "
+"como <citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvoln"
+"um></citerefentry>."
 
 #. (itstool) path: note/para
 #: book.translate.xml:7240
@@ -10745,6 +11695,11 @@ msgid ""
 "completely reliable as a <literal>nosuid</literal> wrapper may be able to "
 "circumvent it."
 msgstr ""
+"El <literal>nosuid</literal> "
+"<citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> hará que dichos binarios fallen silenciosamente sin alertar al "
+"usuario. Esa opción no es completamente confiable como <literal>nosuid</"
+"literal> el envoltorio puede evitarlo."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7247
@@ -10755,11 +11710,16 @@ msgid ""
 "<citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>:"
 msgstr ""
+"Para ver esto en tiempo real, abra dos terminales. En uno, escriba "
+"<command>passwd</command> como usuario normal. Mientras espera una nueva "
+"contraseña, consulte la tabla de procesos y mire la información del usuario "
+"para <citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvoln"
+"um></citerefentry>:"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7253
 msgid "In terminal A:"
-msgstr ""
+msgstr "En la terminal A:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:7255
@@ -10768,25 +11728,29 @@ msgid ""
 "Changing local password for trhodes\n"
 "Old Password:"
 msgstr ""
+"Cambio de contraseña local para trhodes\n"
+"Contraseña anterior:"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7258
 msgid "In terminal B:"
-msgstr ""
+msgstr "En la terminal B:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:7260
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>ps aux | grep passwd</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>ps aux | grep passwd</userinput>"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:7262
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "trhodes  5232  0.0  0.2  3420  1608   0  R+    2:10AM   0:00.00 grep passwd\n"
 "root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd"
 msgstr ""
+"trhodes  5232  0.0  0.2  3420  1608   0  R+    2:10AM   0:00.00 grep passwd\n"
+"root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7265
@@ -10795,6 +11759,10 @@ msgid ""
 "manvolnum></citerefentry> is run as a normal user, it is using the effective "
 "<acronym>UID</acronym> of <systemitem class=\"username\">root</systemitem>."
 msgstr ""
+"A pesar de que "
+"<citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> Se ejecuta como un usuario normal, está utilizando el efectivo "
+"<acronym>UID</acronym> de <systemitem class=\"username\">root</systemitem>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7269
@@ -10805,6 +11773,11 @@ msgid ""
 "be granted the permissions based on the group that owns the file, not the "
 "user who started the process."
 msgstr ""
+"El <literal>setgid</literal> El permiso realiza la misma función que el "
+"<literal>setuid</literal> permiso; excepto que altera la configuración del "
+"grupo. Cuando una aplicación o utilidad se ejecuta con esta configuración, "
+"se le otorgarán los permisos según el grupo que posee el archivo, no el "
+"usuario que inició el proceso."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7276
@@ -10813,12 +11786,16 @@ msgid ""
 "<citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> with a leading two (2):"
 msgstr ""
+"Para configurar el <literal>setgid</literal> permiso en un archivo, "
+"proporcionar "
+"<citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> con dos (2) principales:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:7279
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>chmod 2755 sgidexample.sh</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>chmod 2755 sgidexample.sh</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7281
@@ -10826,12 +11803,14 @@ msgid ""
 "In the following listing, notice that the <literal>s</literal> is now in the "
 "field designated for the group permission settings:"
 msgstr ""
+"En la siguiente lista, observe que el <literal>s</literal> ahora está en el "
+"campo designado para la configuración de permisos de grupo:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:7285
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "-rwxr-sr-x   1 trhodes  trhodes    44 Aug 31 01:49 sgidexample.sh"
-msgstr ""
+msgstr "-rwxr-sr-x   1 trhodes  trhodes    44 Aug 31 01:49 sgidexample.sh"
 
 #. (itstool) path: note/para
 #: book.translate.xml:7288
@@ -10842,6 +11821,12 @@ msgid ""
 "<citerefentry><refentrytitle>setuid</refentrytitle><manvolnum>2</manvolnum></"
 "citerefentry> system calls."
 msgstr ""
+"En estos ejemplos, aunque el script de shell en cuestión es un archivo "
+"ejecutable, no se ejecutará con una <acronym>EUID</acronym> o identificación "
+"de usuario efectiva. Esto se debe a que los scripts de shell pueden no "
+"acceder al "
+"<citerefentry><refentrytitle>setuid</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> llamadas al sistema."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7295
@@ -10851,6 +11836,10 @@ msgid ""
 "special permission, the <literal>sticky bit</literal>, can strengthen the "
 "security of a system."
 msgstr ""
+"El <literal>setuid</literal> y <literal>setgid</literal> Los bits de permiso "
+"pueden reducir la seguridad del sistema, al permitir permisos elevados. El "
+"tercer permiso especial, el <literal>poco pegajoso</literal>,puede "
+"fortalecer la seguridad de un sistema."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7301
@@ -10861,12 +11850,18 @@ msgid ""
 "own the file. To utilize this permission, prefix the permission set with a "
 "one (1):"
 msgstr ""
+"Cuando el <literal>poco pegajoso</literal> está configurado en un "
+"directorio, solo permite la eliminación de archivos por parte del "
+"propietario del archivo. Esto es útil para evitar la eliminación de archivos "
+"en directorios públicos, como<filename>/tmp</filename>, por usuarios que no "
+"son propietarios del archivo. Para utilizar este permiso, anteponga el "
+"conjunto de permisos con uno (1):"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:7308
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>chmod 1777 /tmp</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>chmod 1777 /tmp</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7310
@@ -10874,28 +11869,30 @@ msgid ""
 "The <literal>sticky bit</literal> permission will display as a <literal>t</"
 "literal> at the very end of the permission set:"
 msgstr ""
+"El <literal>sticky bit</literal> el permiso se mostrará como un <literal>t</"
+"literal> al final del conjunto de permisos:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:7314
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>ls -al / | grep tmp</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>ls -al / | grep tmp</userinput>"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:7316
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "drwxrwxrwt  10 root  wheel         512 Aug 31 01:49 tmp"
-msgstr ""
+msgstr "drwxrwxrwt  10 root  wheel         512 Aug 31 01:49 tmp"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:7322
 msgid "Directory Structure"
-msgstr ""
+msgstr "Estructura de directorios"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:7324
 msgid "<primary>directory hierarchy</primary>"
-msgstr ""
+msgstr "<primary>jerarquía de directorios</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7328
@@ -10908,6 +11905,13 @@ msgid ""
 "other file systems that are mounted during the transition to multi-user "
 "operation."
 msgstr ""
+"La jerarquía de directorios de FreeBSD es fundamental para obtener una "
+"comprensión general del sistema. El directorio más importante es root o, "
+"<quote>/</quote>. Este directorio es el primero que se monta en el momento "
+"del arranque y contiene el sistema base necesario para preparar el sistema "
+"operativo para la operación de múltiples usuarios. El directorio raíz "
+"también contiene puntos de montaje para otros sistemas de archivos que se "
+"montan durante la transición a la operación multiusuario."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7337
@@ -10925,6 +11929,20 @@ msgid ""
 "citerefentry> unless their entry includes <option>noauto</option>. Details "
 "can be found in <xref linkend=\"disks-fstab\"/>."
 msgstr ""
+"Un punto de montaje es un directorio donde se pueden injertar sistemas de "
+"archivos adicionales en un sistema de archivos principal (generalmente el "
+"sistema de archivos raíz). Esto se describe con más detalle en <xref linkend"
+"=\"disk-organization\"/>. Los puntos de montaje estándar incluyen <filename>/"
+"usr/</filename>, <filename>/var/</filename>, <filename>/tmp/</filename>, "
+"<filename>/mnt/</filename>, y <filename>/cdrom/</filename>. Estos "
+"directorios generalmente se refieren a entradas en <filename>/etc/fstab</"
+"filename>. Este archivo es una tabla de varios sistemas de archivos y puntos "
+"de montaje y es leído por el sistema. La mayoría de los sistemas de archivos "
+"en <filename>/etc/fstab</filename> se montan automáticamente en el momento "
+"del arranque desde el script "
+"<citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> a menos que su entrada incluya <option>noauto</option>. Los "
+"detalles se pueden encontrar en <xref linkend=\"disks-fstab\"/>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7352
@@ -10934,44 +11952,56 @@ msgid ""
 "citerefentry>. The following table provides a brief overview of the most "
 "common directories."
 msgstr ""
+"Una descripción completa de la jerarquía del sistema de archivos está "
+"disponible en "
+"<citerefentry><refentrytitle>hier</refentrytitle><manvolnum>7</manvolnum></"
+"citerefentry>. La siguiente tabla proporciona una breve descripción de los "
+"directorios más comunes."
 
 #. (itstool) path: row/entry
 #. (itstool) path: sect3/title
 #: book.translate.xml:7361 book.translate.xml:11314
 msgid "Directory"
-msgstr ""
+msgstr "Directorio"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7368
 msgid "Root directory of the file system."
-msgstr ""
+msgstr "Directorio raíz del sistema de archivos."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7372
+#, fuzzy
 msgid "<filename>/bin/</filename>"
-msgstr ""
+msgstr "<filename>/bin/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7373
 msgid ""
 "User utilities fundamental to both single-user and multi-user environments."
 msgstr ""
+"Utilidades de usuario fundamentales para entornos de usuario único y "
+"multiusuario."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7378
+#, fuzzy
 msgid "<filename>/boot/</filename>"
-msgstr ""
+msgstr "<filename>/boot/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7379
 msgid ""
 "Programs and configuration files used during operating system bootstrap."
 msgstr ""
+"Programas y archivos de configuración utilizados durante el arranque del "
+"sistema operativo."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7384
+#, fuzzy
 msgid "<filename>/boot/defaults/</filename>"
-msgstr ""
+msgstr "<filename>/boot/defaults/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7385
@@ -10980,11 +12010,15 @@ msgid ""
 "<citerefentry><refentrytitle>loader.conf</refentrytitle><manvolnum>5</"
 "manvolnum></citerefentry> for details."
 msgstr ""
+"Archivos de configuración de arranque predeterminados. Referirse a "
+"<citerefentry><refentrytitle>loader."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> para detalles."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7390
+#, fuzzy
 msgid "<filename>/dev/</filename>"
-msgstr ""
+msgstr "<filename>/dev/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7391
@@ -10992,21 +12026,26 @@ msgid ""
 "Device nodes. Refer to <citerefentry><refentrytitle>intro</"
 "refentrytitle><manvolnum>4</manvolnum></citerefentry> for details."
 msgstr ""
+"Nodos de dispositivo. Referirse a "
+"<citerefentry><refentrytitle>intro</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> para detalles."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7396
+#, fuzzy
 msgid "<filename>/etc/</filename>"
-msgstr ""
+msgstr "<filename>/etc/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7397
 msgid "System configuration files and scripts."
-msgstr ""
+msgstr "Archivos de configuración del sistema y scripts."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7401
+#, fuzzy
 msgid "<filename>/etc/defaults/</filename>"
-msgstr ""
+msgstr "<filename>/etc/defaults/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7402
@@ -11015,11 +12054,15 @@ msgid ""
 "<citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> for details."
 msgstr ""
+"Archivos de configuración del sistema predeterminados. Referirse a "
+"<citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> para detalles."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7407
+#, fuzzy
 msgid "<filename>/etc/mail/</filename>"
-msgstr ""
+msgstr "<filename>/etc/mail/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7408
@@ -11028,11 +12071,15 @@ msgid ""
 "<citerefentry><refentrytitle>sendmail</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>."
 msgstr ""
+"Archivos de configuración para agentes de transporte de correo como <citerefe"
+"ntry><refentrytitle>sendmail</refentrytitle><manvolnum>8</manvolnum></citeref"
+"entry>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7413
+#, fuzzy
 msgid "<filename>/etc/periodic/</filename>"
-msgstr ""
+msgstr "<filename>/etc/periodic/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7414
@@ -11042,11 +12089,17 @@ msgid ""
 "citerefentry>. Refer to <citerefentry><refentrytitle>periodic</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> for details."
 msgstr ""
+"Scripts que se ejecutan diariamente, semanalmente y mensualmente, a través "
+"de "
+"<citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>. Referirse a <citerefentry><refentrytitle>periódico</refentryti"
+"tle><manvolnum>8</manvolnum></citerefentry> para detalles."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7420
+#, fuzzy
 msgid "<filename>/etc/ppp/</filename>"
-msgstr ""
+msgstr "<filename>/etc/ppp/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7421
@@ -11054,11 +12107,14 @@ msgid ""
 "<citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> configuration files."
 msgstr ""
+"<citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> Archivos de configuración."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7425
+#, fuzzy
 msgid "<filename>/mnt/</filename>"
-msgstr ""
+msgstr "<filename>/mnt/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7426
@@ -11066,11 +12122,14 @@ msgid ""
 "Empty directory commonly used by system administrators as a temporary mount "
 "point."
 msgstr ""
+"Directorio vacío que suelen utilizar los administradores del sistema como "
+"punto de montaje temporal."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7431
+#, fuzzy
 msgid "<filename>/proc/</filename>"
-msgstr ""
+msgstr "<filename>/proc/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7432
@@ -11080,11 +12139,16 @@ msgid ""
 "<citerefentry><refentrytitle>mount_procfs</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> for details."
 msgstr ""
+"Sistema de archivos de proceso. Referirse a "
+"<citerefentry><refentrytitle>procfs</refentrytitle><manvolnum>5</manvolnum></"
+"citerefentry>, <citerefentry><refentrytitle>mount_procfs</refentrytitle><manv"
+"olnum>8</manvolnum></citerefentry> para detalles."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7437
+#, fuzzy
 msgid "<filename>/rescue/</filename>"
-msgstr ""
+msgstr "<filename>/rescue/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7438
@@ -11093,11 +12157,15 @@ msgid ""
 "<citerefentry><refentrytitle>rescue</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>."
 msgstr ""
+"Programas vinculados estáticamente para la recuperación de emergencia como "
+"se describe en <citerefentry><refentrytitle>rescue</refentrytitle><manvolnum>"
+"8</manvolnum></citerefentry>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7443
+#, fuzzy
 msgid "<filename>/root/</filename>"
-msgstr ""
+msgstr "<filename>/root/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7444
@@ -11105,11 +12173,14 @@ msgid ""
 "Home directory for the <systemitem class=\"username\">root</systemitem> "
 "account."
 msgstr ""
+"Directorio de inicio para el <systemitem class=\"username\">root</"
+"systemitem> cuenta."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7450
+#, fuzzy
 msgid "<filename>/sbin/</filename>"
-msgstr ""
+msgstr "<filename>/sbin/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7451
@@ -11117,11 +12188,14 @@ msgid ""
 "System programs and administration utilities fundamental to both single-user "
 "and multi-user environments."
 msgstr ""
+"Programas del sistema y utilidades de administración fundamentales para "
+"entornos de usuario único y multiusuario."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7457
+#, fuzzy
 msgid "<filename>/tmp/</filename>"
-msgstr ""
+msgstr "<filename>/tmp/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7458
@@ -11134,71 +12208,88 @@ msgid ""
 "filename>; refer to <citerefentry><refentrytitle>mdmfs</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> for details."
 msgstr ""
+"Archivos temporales que suelen ser <emphasis>not</emphasis> conservado a "
+"través de un reinicio del sistema. Un sistema de archivos basado en memoria "
+"a menudo se monta en <filename>/tmp</filename>. Esto se puede automatizar "
+"utilizando las variables relacionadas con tmpmfs de "
+"<citerefentry><refentrytitle>rc."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> o con una "
+"entrada en <filename>/etc/fstab</filename>; Referirse a "
+"<citerefentry><refentrytitle>mdmfs</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> para detalles."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7468
+#, fuzzy
 msgid "<filename>/usr/</filename>"
-msgstr ""
+msgstr "<filename>/usr/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7469
 msgid "The majority of user utilities and applications."
-msgstr ""
+msgstr "La mayoría de utilidades y aplicaciones de usuario."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7474
+#, fuzzy
 msgid "<filename>/usr/bin/</filename>"
-msgstr ""
+msgstr "<filename>/usr/bin/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7475
 msgid "Common utilities, programming tools, and applications."
-msgstr ""
+msgstr "Utilidades, herramientas de programación y aplicaciones comunes."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7480
+#, fuzzy
 msgid "<filename>/usr/include/</filename>"
-msgstr ""
+msgstr "<filename>/usr/include/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7481
 msgid "Standard C include files."
-msgstr ""
+msgstr "Archivos de inclusión estándar C."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7485
+#, fuzzy
 msgid "<filename>/usr/lib/</filename>"
-msgstr ""
+msgstr "<filename>/usr/lib/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7486
 msgid "Archive libraries."
-msgstr ""
+msgstr "Bibliotecas de archivo."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7491
+#, fuzzy
 msgid "<filename>/usr/libdata/</filename>"
-msgstr ""
+msgstr "<filename>/usr/libdata/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7492
 msgid "Miscellaneous utility data files."
-msgstr ""
+msgstr "Archivos de datos de servicios diversos."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7496
+#, fuzzy
 msgid "<filename>/usr/libexec/</filename>"
-msgstr ""
+msgstr "<filename>/usr/libexec/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7497
 msgid "System daemons and system utilities executed by other programs."
 msgstr ""
+"Demonios del sistema y utilidades del sistema ejecutadas por otros programas."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7502
+#, fuzzy
 msgid "<filename>/usr/local/</filename>"
-msgstr ""
+msgstr "<filename>/usr/local/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7503
@@ -11212,11 +12303,21 @@ msgid ""
 "usr/local/share</filename>, and the ports documentation is in "
 "<filename>share/doc/<replaceable>port</replaceable></filename>."
 msgstr ""
+"Bibliotecas y ejecutables locales. También se utiliza como destino "
+"predeterminado para el marco de puertos de FreeBSD. Dentro <filename>/usr/"
+"local</filename>, el diseño general esbozado por "
+"<citerefentry><refentrytitle>hier</refentrytitle><manvolnum>7</manvolnum></"
+"citerefentry> por <filename>/usr</filename> debería ser usado. Las "
+"excepciones son el directorio man, que está directamente debajo <filename>/"
+"usr/local</filename> en lugar de debajo<filename>/usr/local/share</"
+"filename>, y la documentación de los puertos está en <filename>share/doc/"
+"<replaceable>puerto</replaceable></filename>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7516
+#, fuzzy
 msgid "<filename>/usr/obj/</filename>"
-msgstr ""
+msgstr "<filename>/usr/obj/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7517
@@ -11224,51 +12325,59 @@ msgid ""
 "Architecture-specific target tree produced by building the <filename>/usr/"
 "src</filename> tree."
 msgstr ""
+"Árbol de destino específico de la arquitectura producido al construir el "
+"<filename>/usr/src</filename> árbol."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7523
+#, fuzzy
 msgid "<filename>/usr/ports/</filename>"
-msgstr ""
+msgstr "<filename>/usr/ports/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7524
 msgid "The FreeBSD Ports Collection (optional)."
-msgstr ""
+msgstr "La colección de puertos de FreeBSD (opcional)."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7528
+#, fuzzy
 msgid "<filename>/usr/sbin/</filename>"
-msgstr ""
+msgstr "<filename>/usr/sbin/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7529
 msgid "System daemons and system utilities executed by users."
 msgstr ""
+"Demonios del sistema y utilidades del sistema ejecutadas por los usuarios."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7534
+#, fuzzy
 msgid "<filename>/usr/share/</filename>"
-msgstr ""
+msgstr "<filename>/usr/share/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7535
 msgid "Architecture-independent files."
-msgstr ""
+msgstr "Archivos independientes de la arquitectura."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7539
+#, fuzzy
 msgid "<filename>/usr/src/</filename>"
-msgstr ""
+msgstr "<filename>/usr/src/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7540
 msgid "BSD and/or local source files."
-msgstr ""
+msgstr "BSD y/o archivos de origen local."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7544
+#, fuzzy
 msgid "<filename>/var/</filename>"
-msgstr ""
+msgstr "<filename>/var/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7545
@@ -11281,41 +12390,53 @@ msgid ""
 "filename>; refer to <citerefentry><refentrytitle>mdmfs</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> for details."
 msgstr ""
+"Archivos de registro, temporales, transitorios y de cola multipropósito. Un "
+"sistema de archivos basado en memoria a veces se monta en <filename>/var</"
+"filename>. Esto se puede automatizar utilizando las variables relacionadas "
+"con varmfs en <citerefentry><refentrytitle>rc."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> o con una "
+"entrada en <filename>/etc/fstab</filename>; Referirse a "
+"<citerefentry><refentrytitle>mdmfs</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> para detalles."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7556
+#, fuzzy
 msgid "<filename>/var/log/</filename>"
-msgstr ""
+msgstr "<filename>/var/log/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7557
 msgid "Miscellaneous system log files."
-msgstr ""
+msgstr "Varios archivos de registro del sistema."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7561
+#, fuzzy
 msgid "<filename>/var/mail/</filename>"
-msgstr ""
+msgstr "<filename>/var/mail/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7562
 msgid "User mailbox files."
-msgstr ""
+msgstr "Archivos de buzón de usuario."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7566
+#, fuzzy
 msgid "<filename>/var/spool/</filename>"
-msgstr ""
+msgstr "<filename>/var/spool/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7567
 msgid "Miscellaneous printer and mail system spooling directories."
-msgstr ""
+msgstr "Varios directorios de spooling de impresoras y sistemas de correo."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7572
+#, fuzzy
 msgid "<filename>/var/tmp/</filename>"
-msgstr ""
+msgstr "<filename>/var/tmp/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7573
@@ -11323,21 +12444,25 @@ msgid ""
 "Temporary files which are usually preserved across a system reboot, unless "
 "<filename>/var</filename> is a memory-based file system."
 msgstr ""
+"Archivos temporales que generalmente se conservan al reiniciar el sistema, a "
+"menos que <filename>/var</filename> es un sistema de archivos basado en "
+"memoria."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7580
+#, fuzzy
 msgid "<filename>/var/yp/</filename>"
-msgstr ""
+msgstr "<filename>/var/yp/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7581
 msgid "NIS maps."
-msgstr ""
+msgstr "Mapas NIS."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:7589
 msgid "Disk Organization"
-msgstr ""
+msgstr "Organización del disco"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7591
@@ -11348,6 +12473,12 @@ msgid ""
 "FreeBSD does not use the extension of a file to determine whether the file "
 "is a program, document, or some other form of data."
 msgstr ""
+"La unidad de organización más pequeña que utiliza FreeBSD para buscar "
+"archivos es el nombre del archivo. Los nombres de archivo distinguen entre "
+"mayúsculas y minúsculas, lo que significa que<filename>readme.txt</filename> "
+"y <filename>README.TXT</filename> son dos archivos separados. FreeBSD no usa "
+"la extensión de un archivo para determinar si el archivo es un programa, "
+"documento o alguna otra forma de datos."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7598
@@ -11357,6 +12488,10 @@ msgid ""
 "directories, allowing a hierarchy of directories within one another in order "
 "to organize data."
 msgstr ""
+"Los archivos se almacenan en directorios. Un directorio puede no contener "
+"archivos o puede contener varios cientos de archivos. Un directorio también "
+"puede contener otros directorios, lo que permite una jerarquía de "
+"directorios entre sí para organizar los datos."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7604
@@ -11373,6 +12508,17 @@ msgid ""
 "the path. For example, one would not type <filename>c:\\foo\\bar\\readme."
 "txt</filename> on FreeBSD."
 msgstr ""
+"Se hace referencia a los archivos y directorios dando el nombre del archivo "
+"o directorio, seguido de una barra diagonal, <literal>/</literal>, seguido "
+"de cualquier otro nombre de directorio que sea necesario. Por ejemplo, si el "
+"directorio<filename>foo</filename> contiene un directorio <filename>bar</"
+"filename> que contiene el archivo <filename>readme.txt</filename>, el nombre "
+"completo, o <firstterm>path</firstterm>, al archivo es <filename>foo/bar/"
+"readme.txt</filename>. Tenga en cuenta que esto es diferente de <trademark "
+"class=\"registered\">Windows</trademark> que usa <literal>\\</literal> para "
+"separar los nombres de archivos y directorios. FreeBSD no utiliza letras de "
+"unidad u otros nombres de unidad en la ruta. Por ejemplo, uno no escribiría "
+"<filename>c:\\foo\\bar\\readme.txt</filename> en FreeBSD."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7619
@@ -11386,6 +12532,15 @@ msgid ""
 "many disks are on the FreeBSD system, every directory appears to be part of "
 "the same disk."
 msgstr ""
+"Los directorios y archivos se almacenan en un sistema de archivos. Cada "
+"sistema de archivos contiene exactamente un directorio en el nivel superior, "
+"llamado <firstterm>root directory</firstterm> para ese sistema de archivos. "
+"Este directorio raíz puede contener otros directorios. Un sistema de "
+"archivos se designa como <firstterm>sistema de archivos raíz</firstterm> o "
+"<literal>/</literal>. Todos los demás sistemas de archivos son "
+"<firstterm>mounted</firstterm> bajo el sistema de archivos raíz. No importa "
+"cuántos discos haya en el sistema FreeBSD, cada directorio parece ser parte "
+"del mismo disco."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7630
@@ -11396,6 +12551,12 @@ msgid ""
 "<literal>A2</literal> (and likewise <literal>B1</literal>, <literal>B2</"
 "literal> and <literal>C1</literal>, <literal>C2</literal>)."
 msgstr ""
+"Considere tres sistemas de archivos, llamados <literal>A</literal>, "
+"<literal>B</literal>, y <literal>C</literal>. Cada sistema de archivos tiene "
+"un directorio raíz, que contiene otros dos directorios, llamados "
+"<literal>A1</literal>, <literal>A2</literal> (y igualmente <literal>B1</"
+"literal>, <literal>B2</literal> y <literal>C1</literal>, "
+"<literal>C2</literal>)."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7637
@@ -11406,6 +12567,11 @@ msgid ""
 "two subdirectories, <literal>A1</literal> and <literal>A2</literal>. The "
 "directory tree looks like this:"
 msgstr ""
+"LLamar <literal>A</literal> el sistema de archivos raíz. Si "
+"<citerefentry><refentrytitle>Es</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> se utiliza para ver el contenido de este directorio, mostrará "
+"dos subdirectorios, <literal>A1</literal> y <literal>A2</literal>. El árbol "
+"de directorios se ve así:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -11413,13 +12579,14 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:7645
+#, fuzzy
 msgctxt "_"
 msgid "external ref='basics/example-dir1' md5='__failed__'"
-msgstr ""
+msgstr "external ref='basics/example-dir1' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: book.translate.xml:7649
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 " /\n"
 " |\n"
@@ -11427,6 +12594,11 @@ msgid ""
 " |\n"
 " `--- A2"
 msgstr ""
+" /\n"
+" |\n"
+" +--- A1\n"
+" |\n"
+" `--- A2"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7657
@@ -11436,6 +12608,11 @@ msgid ""
 "literal>, the root directory of <literal>B</literal> replaces <literal>A1</"
 "literal>, and the directories in <literal>B</literal> appear accordingly:"
 msgstr ""
+"Un sistema de archivos debe estar montado en un directorio de otro sistema "
+"de archivos. Al montar el sistema de archivos <literal>B</literal> en el "
+"directorio <literal>A1</literal>,el directorio raíz de <literal>B</literal> "
+"reemplaza <literal>A1</literal>, y los directorios en <literal>B</literal> "
+"aparecer en consecuencia:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -11443,13 +12620,14 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:7666
+#, fuzzy
 msgctxt "_"
 msgid "external ref='basics/example-dir2' md5='__failed__'"
-msgstr ""
+msgstr "external ref='basics/example-dir2' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: book.translate.xml:7670
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 " /\n"
 " |\n"
@@ -11461,6 +12639,15 @@ msgid ""
 " |\n"
 " `--- A2"
 msgstr ""
+" /\n"
+" |\n"
+" +--- A1\n"
+" |     |\n"
+" |     +--- B1\n"
+" |     |\n"
+" |     `--- B2\n"
+" |\n"
+" `--- A2"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7682
@@ -11472,6 +12659,12 @@ msgid ""
 "<literal>B</literal> is <firstterm>unmounted</firstterm> from <literal>A</"
 "literal>."
 msgstr ""
+"Cualquier archivo que esté en el <literal>B1</literal> o <literal>B2</"
+"literal> se puede acceder a los directorios con la ruta <filename>/A1/B1</"
+"filename> o <filename>/A1/B2</filename> según sea necesario. Cualquier "
+"archivo que estuviera en <filename>/A1</filename> se han ocultado "
+"temporalmente. Reaparecerán si<literal>B</literal> es <firstterm>desmontado</"
+"firstterm> de <literal>A</literal>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7691
@@ -11479,6 +12672,8 @@ msgid ""
 "If <literal>B</literal> had been mounted on <literal>A2</literal> then the "
 "diagram would look like this:"
 msgstr ""
+"Si <literal>B</literal> había sido montado en <literal>A2</literal> entonces "
+"el diagrama se vería así:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -11486,13 +12681,14 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:7697
+#, fuzzy
 msgctxt "_"
 msgid "external ref='basics/example-dir3' md5='__failed__'"
-msgstr ""
+msgstr "external ref='basics/example-dir3' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: book.translate.xml:7701
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 " /\n"
 " |\n"
@@ -11504,6 +12700,15 @@ msgid ""
 "       |\n"
 "       `--- B2"
 msgstr ""
+" /\n"
+" |\n"
+" +--- A1\n"
+" |\n"
+" `--- A2\n"
+"       |\n"
+"       +--- B1\n"
+"       |\n"
+"       `--- B2"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7713
@@ -11511,6 +12716,8 @@ msgid ""
 "and the paths would be <filename>/A2/B1</filename> and <filename>/A2/B2</"
 "filename> respectively."
 msgstr ""
+"y los caminos serían <filename>/A2/B1</filename> y <filename>/A2/B2</"
+"filename> respectivamente."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7718
@@ -11520,6 +12727,10 @@ msgid ""
 "<literal>B1</literal> directory in the <literal>B</literal> file system, "
 "leading to this arrangement:"
 msgstr ""
+"Los sistemas de archivos se pueden montar uno encima del otro. Continuando "
+"con el último ejemplo, el <literal>C</literal> El sistema de archivos se "
+"puede montar en la parte superior del <literal>B1</literal> directorio en el "
+"<literal>B</literal> sistema de archivos, lo que lleva a esta disposición:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -11527,13 +12738,14 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:7726
+#, fuzzy
 msgctxt "_"
 msgid "external ref='basics/example-dir4' md5='__failed__'"
-msgstr ""
+msgstr "external ref='basics/example-dir4' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: book.translate.xml:7730
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 " /\n"
 " |\n"
@@ -11549,6 +12761,19 @@ msgid ""
 "       |\n"
 "       `--- B2"
 msgstr ""
+" /\n"
+" |\n"
+" +--- A1\n"
+" |\n"
+" `--- A2\n"
+"       |\n"
+"       +--- B1\n"
+"       |     |\n"
+"       |     +--- C1\n"
+"       |     |\n"
+"       |     `--- C2\n"
+"       |\n"
+"       `--- B2"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7746
@@ -11556,6 +12781,8 @@ msgid ""
 "Or <literal>C</literal> could be mounted directly on to the <literal>A</"
 "literal> file system, under the <literal>A1</literal> directory:"
 msgstr ""
+"O <literal>C</literal> se puede montar directamente en el <literal>A</"
+"literal> sistema de archivos, bajo el <literal>A1</literal> directorio:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -11563,13 +12790,14 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:7752
+#, fuzzy
 msgctxt "_"
 msgid "external ref='basics/example-dir5' md5='__failed__'"
-msgstr ""
+msgstr "external ref='basics/example-dir5' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: book.translate.xml:7756
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 " /\n"
 " |\n"
@@ -11585,6 +12813,19 @@ msgid ""
 "       |\n"
 "       `--- B2"
 msgstr ""
+" /\n"
+" |\n"
+" +--- A1\n"
+" |     |\n"
+" |     +--- C1\n"
+" |     |\n"
+" |     `--- C2\n"
+" |\n"
+" `--- A2\n"
+"       |\n"
+"       +--- B1\n"
+"       |\n"
+"       `--- B2"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7772
@@ -11593,11 +12834,14 @@ msgid ""
 "create any others. There are some drawbacks to this approach, and one "
 "advantage."
 msgstr ""
+"Es completamente posible tener un gran sistema de archivos raíz y no es "
+"necesario crear ningún otro. Hay algunos inconvenientes en este enfoque y "
+"una ventaja."
 
 #. (itstool) path: itemizedlist/title
 #: book.translate.xml:7777
 msgid "Benefits of Multiple File Systems"
-msgstr ""
+msgstr "Beneficios de varios sistemas de archivos"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7780
@@ -11611,6 +12855,16 @@ msgid ""
 "firstterm>/<firstterm>guid</firstterm> bits on executables stored on the "
 "file system from taking effect, possibly improving security."
 msgstr ""
+"Los diferentes sistemas de archivos pueden tener diferentes "
+"<firstterm>opciones de montaje</firstterm>. Por ejemplo, el sistema de "
+"archivos raíz puede montarse como de solo lectura, lo que hace imposible que "
+"los usuarios eliminen o editen un archivo crítico sin darse cuenta. Separar "
+"sistemas de archivos en los que el usuario puede escribir, como "
+"<filename>/home</filename>, de otros sistemas de archivos permite que se "
+"monten <firstterm>nosuid</firstterm>. Esta opción evita "
+"<firstterm>suid</firstterm>/<firstterm>guid</firstterm> los bits en "
+"ejecutables almacenados en el sistema de archivos entren en vigor, "
+"posiblemente mejorando la seguridad."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7794
@@ -11621,6 +12875,12 @@ msgid ""
 "optimization to one that contains fewer, larger files. By having one big "
 "file system this optimization breaks down."
 msgstr ""
+"FreeBSD optimiza automáticamente el diseño de archivos en un sistema de "
+"archivos, dependiendo de cómo se utilice el sistema de archivos. Por lo "
+"tanto, un sistema de archivos que contiene muchos archivos pequeños que se "
+"escriben con frecuencia tendrá una optimización diferente a uno que contenga "
+"menos archivos más grandes. Al tener un gran sistema de archivos, esta "
+"optimización se rompe."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7803
@@ -11630,11 +12890,16 @@ msgid ""
 "splitting data over multiple file systems it is more likely that the system "
 "will still come up, making it easier to restore from backup as necessary."
 msgstr ""
+"Los sistemas de archivos de FreeBSD son robustos si se pierde energía. Sin "
+"embargo, una pérdida de energía en un punto crítico aún podría dañar la "
+"estructura del sistema de archivos. Al dividir los datos en varios sistemas "
+"de archivos, es más probable que el sistema siga funcionando, lo que "
+"facilita la restauración desde la copia de seguridad según sea necesario."
 
 #. (itstool) path: itemizedlist/title
 #: book.translate.xml:7813
 msgid "Benefit of a Single File System"
-msgstr ""
+msgstr "Beneficio de un único sistema de archivos"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7816
@@ -11645,6 +12910,12 @@ msgid ""
 "up, recreating the file system with the new size, and then restoring the "
 "backed up data."
 msgstr ""
+"Los sistemas de archivos tienen un tamaño fijo. Si crea un sistema de "
+"archivos cuando instala FreeBSD y le da un tamaño específico, puede "
+"descubrir más adelante que necesita hacer la partición más grande. Esto no "
+"se logra fácilmente sin realizar una copia de seguridad, volver a crear el "
+"sistema de archivos con el nuevo tamaño y luego restaurar los datos de la "
+"copia de seguridad."
 
 #. (itstool) path: important/para
 #: book.translate.xml:7824
@@ -11654,6 +12925,10 @@ msgid ""
 "it possible to increase the size of file system on the fly, removing this "
 "limitation."
 msgstr ""
+"FreeBSD presenta la "
+"<citerefentry><refentrytitle>growfs</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> comando, que hace posible aumentar el tamaño del sistema de "
+"archivos sobre la marcha, eliminando esta limitación."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7831
@@ -11667,6 +12942,15 @@ msgid ""
 "file systems are often described by either their typical mount point in the "
 "file system hierarchy, or the letter of the partition they are contained in."
 msgstr ""
+"Los sistemas de archivos están contenidos en particiones. Esto no tiene el "
+"mismo significado que el uso común del término partición (por ejemplo, "
+"<trademark class=\"registered\">MS-DOS</trademark> partición), debido a "
+"FreeBSD's <trademark class=\"registered\">UNIX</trademark> patrimonio. Cada "
+"partición está identificada por una letra de <literal>a</literal> a través "
+"de<literal>h</literal>. Cada partición puede contener solo un sistema de "
+"archivos, lo que significa que los sistemas de archivos a menudo se "
+"describen por su punto de montaje típico en la jerarquía del sistema de "
+"archivos o por la letra de la partición en la que están contenidos."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7841
@@ -11678,46 +12962,55 @@ msgid ""
 "used to the swap space, and moves it back in (moving something else out) "
 "when it needs it."
 msgstr ""
+"FreeBSD también usa espacio en disco para <firstterm>swap space</"
+"firstterm>Para proveer <firstterm>memoria virtual</firstterm>. Esto permite "
+"que su computadora se comporte como si tuviera mucha más memoria de la que "
+"realmente tiene. Cuando FreeBSD se queda sin memoria, mueve algunos de los "
+"datos que no se están utilizando actualmente al espacio de intercambio y los "
+"vuelve a colocar (sacando algo más) cuando los necesita."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7850
 msgid "Some partitions have certain conventions associated with them."
-msgstr ""
+msgstr "Algunas particiones tienen ciertas convenciones asociadas."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7860
 msgid "Partition"
-msgstr ""
+msgstr "Partición"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7861
 msgid "Convention"
-msgstr ""
+msgstr "Convención"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7867
+#, fuzzy
 msgid "<literal>a</literal>"
-msgstr ""
+msgstr "<literal>a</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7868
 msgid "Normally contains the root file system."
-msgstr ""
+msgstr "Normalmente contiene el sistema de archivos raíz."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7872
+#, fuzzy
 msgid "<literal>b</literal>"
-msgstr ""
+msgstr "<literal>b</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7873
 msgid "Normally contains swap space."
-msgstr ""
+msgstr "Normalmente contiene espacio de intercambio."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7877
+#, fuzzy
 msgid "<literal>c</literal>"
-msgstr ""
+msgstr "<literal>c</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7878
@@ -11727,11 +13020,16 @@ msgid ""
 "the <literal>c</literal> partition. A file system would not normally be "
 "created on this partition."
 msgstr ""
+"Normalmente del mismo tamaño que el segmento adjunto. Esto permite que las "
+"utilidades que necesitan trabajar en todo el corte, como un escáner de "
+"bloques defectuoso, funcionen en el <literal>c</literal> dividir. "
+"Normalmente, no se crearía un sistema de archivos en esta partición."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7886
+#, fuzzy
 msgid "<literal>d</literal>"
-msgstr ""
+msgstr "<literal>d</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7887
@@ -11740,6 +13038,9 @@ msgid ""
 "with it, although that is now gone and <literal>d</literal> may work as any "
 "normal partition."
 msgstr ""
+"Partición <literal>d</literal> solía tener un significado especial asociado "
+"con él, aunque ahora se ha ido y <literal>d</literal> puede funcionar como "
+"cualquier partición normal."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7896
@@ -11749,21 +13050,25 @@ msgid ""
 "to 4. These are then divided into partitions, which contain file systems, "
 "and are labeled using letters."
 msgstr ""
+"Los discos en FreeBSD se dividen en porciones, referidas en <trademark class="
+"\"registered\">Windows</trademark> como particiones, que están numeradas del "
+"1 al 4. Luego se dividen en particiones, que contienen sistemas de archivos, "
+"y se etiquetan con letras."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:7901
 msgid "<primary>slices</primary>"
-msgstr ""
+msgstr "<primary>rodajas</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:7904 book.translate.xml:32268 book.translate.xml:32364
 msgid "<primary>partitions</primary>"
-msgstr ""
+msgstr "<primary>particiones</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:7907
 msgid "<primary>dangerously dedicated</primary>"
-msgstr ""
+msgstr "<primary>Peligrosamente dedicado</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7911
@@ -11777,6 +13082,15 @@ msgid ""
 "the first SATA disk. These devices are used by file systems that expect to "
 "occupy a slice."
 msgstr ""
+"Los números de sector siguen al nombre del dispositivo, con el prefijo "
+"<literal>s</literal>, comenzando en 1. "
+"Entonces<quote>da0<emphasis>s1</emphasis></quote> es el primer segmento de "
+"la primera unidad SCSI. Solo puede haber cuatro cortes físicos en un disco, "
+"pero puede haber cortes lógicos dentro de los cortes físicos del tipo "
+"apropiado. Estos cortes extendidos se numeran a partir de 5, por lo que "
+"<quote>ada0<emphasis>s5</emphasis></quote> es el primer segmento extendido "
+"del primer disco SATA. Estos dispositivos son utilizados por sistemas de "
+"archivos que esperan ocupar un segmento."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7921
@@ -11790,6 +13104,15 @@ msgid ""
 "emphasis></quote> is the fifth partition in the third slice of the second "
 "SATA disk drive."
 msgstr ""
+"Rebanadas, <quote>dangerously dedicated</quote> unidades físicas y otras "
+"unidades contienen <firstterm>particiones</firstterm>, que se representan "
+"como letras de <literal>a</literal> a <literal>h</literal>. Esta letra se "
+"adjunta al nombre del dispositivo, por lo que "
+"<quote>da0<emphasis>a</emphasis></quote> es el <literal>a</literal> "
+"partición en la primera <literal>da</literal> conducir, que es "
+"<quote>Peligrosamente dedicado</quote>. <quote>ada1s3<emphasis>e</emphasis></"
+"quote> es la quinta partición en el tercer segmento de la segunda unidad de "
+"disco SATA."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7934
@@ -11799,6 +13122,11 @@ msgid ""
 "disk it is. Unlike slices, disk numbering starts at 0. Common codes are "
 "listed in <xref linkend=\"disks-naming\"/>."
 msgstr ""
+"Finalmente, se identifica cada disco del sistema. El nombre de un disco "
+"comienza con un código que indica el tipo de disco y luego un número que "
+"indica de qué disco es. A diferencia de los cortes, la numeración de discos "
+"comienza en 0. Los códigos comunes se enumeran en <xref linkend=\"disks-"
+"naming\"/>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7940
@@ -11807,6 +13135,9 @@ msgid ""
 "the slice number, and then the partition letter. Examples are shown in <xref "
 "linkend=\"basics-disk-slice-part\"/>."
 msgstr ""
+"Cuando se refiera a una partición, incluya el nombre del disco, <literal>s</"
+"literal>, el número de corte y luego la letra de partición. Se muestran "
+"ejemplos en <xref linkend=\"basics-disk-slice-part\"/>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7945
@@ -11814,6 +13145,8 @@ msgid ""
 "<xref linkend=\"basics-concept-disk-model\"/> shows a conceptual model of a "
 "disk layout."
 msgstr ""
+"<xref linkend=\"basics-concept-disk-model\"/> muestra un modelo conceptual "
+"de un diseño de disco."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7948
@@ -11822,31 +13155,35 @@ msgid ""
 "the slice to be used for FreeBSD, create a file system or swap space in each "
 "partition, and decide where each file system will be mounted."
 msgstr ""
+"Al instalar FreeBSD, configure las porciones de disco, cree particiones "
+"dentro de la porción que se usarán para FreeBSD, cree un sistema de archivos "
+"o espacio de intercambio en cada partición y decida dónde se montará cada "
+"sistema de archivos."
 
 #. (itstool) path: table/title
 #: book.translate.xml:7954
 msgid "Disk Device Names"
-msgstr ""
+msgstr "Nombres de dispositivos de disco"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7962
 msgid "Drive Type"
-msgstr ""
+msgstr "Tipo de unidad"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7963
 msgid "Drive Device Name"
-msgstr ""
+msgstr "Nombre del dispositivo de unidad"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7969
 msgid "<acronym>SATA</acronym> and <acronym>IDE</acronym> hard drives"
-msgstr ""
+msgstr "<acronym>SATA</acronym> y <acronym>IDE</acronym> unidades de disco duro"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7971
 msgid "<literal>ada</literal> or <literal>ad</literal>"
-msgstr ""
+msgstr "<literal>ada</literal> o <literal>ad</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7976
@@ -11854,11 +13191,14 @@ msgid ""
 "<acronym>SCSI</acronym> hard drives and <acronym>USB</acronym> storage "
 "devices"
 msgstr ""
+"<acronym>SCSI</acronym> discos duros y <acronym>USB</acronym> dispositivos "
+"de almacenamiento"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7978
+#, fuzzy
 msgid "<literal>da</literal>"
-msgstr ""
+msgstr "<literal>da</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7982
@@ -11866,36 +13206,41 @@ msgid ""
 "<acronym>SATA</acronym> and <acronym>IDE</acronym> <acronym>CD-ROM</acronym> "
 "drives"
 msgstr ""
+"<acronym>SATA</acronym> y <acronym>IDE</acronym> <acronym>CD-ROM</acronym> "
+"drives"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7984
 msgid "<literal>cd</literal> or <literal>acd</literal>"
-msgstr ""
+msgstr "<literal>cd</literal> o <literal>acd</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7989
+#, fuzzy
 msgid "<acronym>SCSI</acronym> <acronym>CD-ROM</acronym> drives"
-msgstr ""
+msgstr "<acronym>SCSI</acronym> <acronym>CD-ROM</acronym> drives"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7991
+#, fuzzy
 msgid "<literal>cd</literal>"
-msgstr ""
+msgstr "<literal>cd</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7995
 msgid "Floppy drives"
-msgstr ""
+msgstr "Unidades de disquete"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7996
+#, fuzzy
 msgid "<literal>fd</literal>"
-msgstr ""
+msgstr "<literal>fd</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8000
 msgid "Assorted non-standard <acronym>CD-ROM</acronym> drives"
-msgstr ""
+msgstr "Surtido no estándar <acronym>CD-ROM</acronym> discos"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8002
@@ -11903,31 +13248,35 @@ msgid ""
 "<literal>mcd</literal> for Mitsumi <acronym>CD-ROM</acronym> and "
 "<literal>scd</literal> for Sony <acronym>CD-ROM</acronym> devices"
 msgstr ""
+"<literal>mcd</literal> Para Mitsumi <acronym>CD-ROM</acronym> y "
+"<literal>scd</literal> Para Sony <acronym>CD-ROM</acronym> dispositivos"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8008
 msgid "<acronym>SCSI</acronym> tape drives"
-msgstr ""
+msgstr "<acronym>SCSI</acronym> unidades de cinta"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8009
+#, fuzzy
 msgid "<literal>sa</literal>"
-msgstr ""
+msgstr "<literal>sa</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8013
 msgid "<acronym>IDE</acronym> tape drives"
-msgstr ""
+msgstr "<acronym>IDE</acronym> unidades de cinta"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8014
+#, fuzzy
 msgid "<literal>ast</literal>"
-msgstr ""
+msgstr "<literal>ast</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8018
 msgid "RAID drives"
-msgstr ""
+msgstr "Unidades RAID"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8019
