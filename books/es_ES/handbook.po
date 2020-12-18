@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-11-16 21:29-0300\n"
-"PO-Revision-Date: 2020-12-18 02:42+0000\n"
+"PO-Revision-Date: 2020-12-18 13:32+0000\n"
 "Last-Translator: Aaron H Farías Martinez <timido@ubuntu.com>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_handbook/es/>\n"
@@ -13289,26 +13289,34 @@ msgid ""
 "<literal>twed</literal> for <trademark class=\"registered\">3ware</"
 "trademark> RAID."
 msgstr ""
+"Ejemplos incluyen <literal>aacd</literal> para <trademark class=\"registered"
+"\">Adaptec</trademark> AdvancedRAID, <literal>mlxd</literal> y "
+"<literal>mlyd</literal> para <trademark class=\"registered\">Mylex</"
+"trademark>, <literal>amrd</literal> for AMI <trademark class=\"registered\""
+">MegaRAID</trademark>, <literal>idad</literal> para Compaq Smart RAID, "
+"<literal>twed</literal> para <trademark class=\"registered\">3ware</"
+"trademark> RAID."
 
 #. (itstool) path: example/title
 #: book.translate.xml:8031
 msgid "Sample Disk, Slice, and Partition Names"
-msgstr ""
+msgstr "Ejemplos de nombres de discos, sectores y particiones"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8040
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8041 book.translate.xml:63079
 msgid "Meaning"
-msgstr ""
+msgstr "Significado"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8047
+#, fuzzy
 msgid "<literal>ada0s1a</literal>"
-msgstr ""
+msgstr "<literal>ada0s1a</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8048
@@ -13317,11 +13325,15 @@ msgid ""
 "literal>) on the first <acronym>SATA</acronym> disk (<literal>ada0</"
 "literal>)."
 msgstr ""
+"La primera partición (<literal>a</literal>) en la primera rebanada "
+"(<literal>s1</literal>) en la primera <acronym>SATA</acronym> disco "
+"(<literal>ada0</literal>)."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8055
+#, fuzzy
 msgid "<literal>da1s2e</literal>"
-msgstr ""
+msgstr "<literal>da1s2e</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8056
@@ -13329,11 +13341,13 @@ msgid ""
 "The fifth partition (<literal>e</literal>) on the second slice (<literal>s2</"
 "literal>) on the second SCSI disk (<literal>da1</literal>)."
 msgstr ""
+"La quinta partición (<literal>e</literal>) en la segunda rebanada "
+"(<literal>s2</literal>) en el segundo disco SCSI (<literal>da1</literal>)."
 
 #. (itstool) path: example/title
 #: book.translate.xml:8066
 msgid "Conceptual Model of a Disk"
-msgstr ""
+msgstr "Modelo conceptual de un disco"
 
 #. (itstool) path: example/para
 #: book.translate.xml:8068
@@ -13347,6 +13361,14 @@ msgid ""
 "installation. This example FreeBSD installation has four data partitions and "
 "a swap partition."
 msgstr ""
+"Este diagrama muestra la vista de FreeBSD del primer <acronym>SATA</acronym> "
+"disco conectado al sistema. Suponga que el disco tiene un tamaño de 250 GB y "
+"contiene un segmento de 80 GB y un segmento de 170 GB (<trademark class="
+"\"registered\">MS-DOS</trademark> particiones). La primera rebanada contiene "
+"una <trademark class=\"registered\">Windows</trademark> <acronym>NTFS</"
+"acronym> sistema de archivos, <filename>C:</filename>, y el segundo segmento "
+"contiene una instalación de FreeBSD. Este ejemplo de instalación de FreeBSD "
+"tiene cuatro particiones de datos y una partición de intercambio."
 
 #. (itstool) path: example/para
 #: book.translate.xml:8078
@@ -13358,6 +13380,12 @@ msgid ""
 "<literal>c</literal> refers to the entire slice, and so is not used for "
 "ordinary partitions."
 msgstr ""
+"Cada una de las cuatro particiones contiene un sistema de archivos. Dividir "
+"<literal>a</literal> se utiliza para el sistema de archivos raíz, "
+"<literal>d</literal> para <filename>/var/</filename>, <literal>e</literal> "
+"para <filename>/tmp/</filename>, y <literal>f</literal> para <filename>/usr/"
+"</filename>. Letra de partición <literal>c</literal> se refiere a todo el "
+"segmento, por lo que no se utiliza para particiones normales."
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -13365,14 +13393,15 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: book.translate.xml:8088
+#, fuzzy
 msgctxt "_"
 msgid "external ref='basics/disk-layout' md5='__failed__'"
-msgstr ""
+msgstr "external ref='basics/disk-layout' md5='__failed__'"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:8095
 msgid "Mounting and Unmounting File Systems"
-msgstr ""
+msgstr "Montaje y desmontaje de sistemas de archivos"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8097
@@ -13383,11 +13412,16 @@ msgid ""
 "which may have their own branches, such as <filename>/usr/local</filename>, "
 "and so on."
 msgstr ""
+"El sistema de archivos se visualiza mejor como un árbol, enraizado, por así "
+"decirlo, en <filename>/</filename>. <filename>/dev</filename>, "
+"<filename>/usr</filename>, y los otros directorios en el directorio raíz son "
+"ramas, que pueden tener sus propias ramas, como <filename>/usr/local</"
+"filename>, y así."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:8106
 msgid "<primary>root file system</primary>"
-msgstr ""
+msgstr "<primary>sistema de archivos raíz</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8110
@@ -13399,6 +13433,12 @@ msgid ""
 "system is not a good idea, so splitting <filename>/var</filename> from "
 "<filename>/</filename> is often favorable."
 msgstr ""
+"Hay varias razones para alojar algunos de estos directorios en sistemas de "
+"archivos separados. <filename>/var</filename> contiene los directorios "
+"<filename>log/</filename>, <filename>spool/</filename>, y varios tipos de "
+"archivos temporales y, como tales, pueden llenarse. Llenar el sistema de "
+"archivos raíz no es una buena idea, por lo que dividir <filename>/var</"
+"filename> desde <filename>/</filename> es a menudo favorable."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8121
@@ -13408,17 +13448,23 @@ msgid ""
 "separate virtual disks, such as Network File System mounts, described in "
 "<xref linkend=\"network-nfs\"/>, or CDROM drives."
 msgstr ""
+"Otra razón común para contener ciertos árboles de directorios en otros "
+"sistemas de archivos es si se van a alojar en discos físicos separados o si "
+"son discos virtuales separados, como los montajes del Sistema de archivos de "
+"red, descritos en <xref linkend=\"network-nfs\"/>, o unidades de CDROM."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:8128
 msgid "The <filename>fstab</filename> File"
-msgstr ""
+msgstr "El <filename>fstab</filename>Archivo"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:8130
 msgid ""
 "<primary>file systems</primary> <secondary>mounted with fstab</secondary>"
 msgstr ""
+"<primary>sistemas de archivos</primary> <secondary>montado con "
+"fstab</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8135
@@ -13428,38 +13474,49 @@ msgid ""
 "entries containing <option>noauto</option>. This file contains entries in "
 "the following format:"
 msgstr ""
+"Durante el proceso de arranque (<xref linkend=\"boot\"/>), sistemas de "
+"archivos enumerados en <filename>/etc/fstab</filename> se montan "
+"automáticamente a excepción de las entradas que contienen <option>noauto</"
+"option>. Este archivo contiene entradas en el siguiente formato:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:8141
 #, no-wrap
 msgid "<replaceable>device</replaceable>       <replaceable>/mount-point</replaceable> <replaceable>fstype</replaceable>     <replaceable>options</replaceable>      <replaceable>dumpfreq</replaceable>     <replaceable>passno</replaceable>"
 msgstr ""
+"<replaceable>dispositivo</replaceable>       <replaceable>/punto de montaje</"
+"replaceable> <replaceable>fstype</replaceable>     <replaceable>opciones</"
+"replaceable>      <replaceable>dumpfreq</replaceable>     "
+"<replaceable>passno</replaceable>"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:8145
 msgid "<literal>device</literal>"
-msgstr ""
+msgstr "<literal>dispositivo</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8147
 msgid ""
 "An existing device name as explained in <xref linkend=\"disks-naming\"/>."
 msgstr ""
+"Un nombre de dispositivo existente como se explica en <xref linkend=\"disks-"
+"naming\"/>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:8153
 msgid "<literal>mount-point</literal>"
-msgstr ""
+msgstr "<literal>punto de montaje</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8156
 msgid "An existing directory on which to mount the file system."
-msgstr ""
+msgstr "Un directorio existente en el que montar el sistema de archivos."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:8162
+#, fuzzy
 msgid "<literal>fstype</literal>"
-msgstr ""
+msgstr "<literal>fstype</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8165
@@ -13468,11 +13525,15 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>. The default FreeBSD "
 "file system is <literal>ufs</literal>."
 msgstr ""
+"El tipo de sistema de archivos al que pasar "
+"<citerefentry><refentrytitle>montar</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>. El sistema de archivos predeterminado de FreeBSD es "
+"<literal>ufs</literal>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:8172
 msgid "<literal>options</literal>"
-msgstr ""
+msgstr "<literal>opciones</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8175
@@ -13484,11 +13545,19 @@ msgid ""
 "<citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>."
 msgstr ""
+"Ya sea <option>rw</option> para sistemas de archivos de lectura y escritura, "
+"o <option>ro</option> para sistemas de archivos de solo lectura, seguido de "
+"cualquier otra opción que pueda ser necesaria. Una opción común es "
+"<option>noauto</option>para sistemas de archivos que normalmente no se "
+"montan durante la secuencia de inicio. Otras opciones se enumeran en <citeref"
+"entry><refentrytitle>montar</refentrytitle><manvolnum>8</manvolnum></citerefe"
+"ntry>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:8186
+#, fuzzy
 msgid "<literal>dumpfreq</literal>"
-msgstr ""
+msgstr "<literal>dumpfreq</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8189
@@ -13497,11 +13566,16 @@ msgid ""
 "manvolnum></citerefentry> to determine which file systems require dumping. "
 "If the field is missing, a value of zero is assumed."
 msgstr ""
+"Usado por "
+"<citerefentry><refentrytitle>dump</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> para determinar qué sistemas de archivos requieren volcado. Si "
+"falta el campo, se asume un valor de cero."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:8196
+#, fuzzy
 msgid "<literal>passno</literal>"
-msgstr ""
+msgstr "<literal>passno</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8199
@@ -13515,6 +13589,16 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> will attempt to check "
 "file systems in parallel if possible."
 msgstr ""
+"Determina el orden en el que se deben comprobar los sistemas de archivos. "
+"Los sistemas de archivos que deben omitirse deben tener su <literal>passno</"
+"literal> puesto a cero. El sistema de archivos raíz debe comprobarse antes "
+"que todo lo demás y debe tener su<literal>passno</literal> establecido en "
+"uno. Los otros sistemas de archivos deben establecerse en valores superiores "
+"a uno. Si más de un sistema de archivos tiene el mismo <literal>passno</"
+"literal>, "
+"<citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> intentará comprobar los sistemas de archivos en paralelo si es "
+"posible."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8213
@@ -13523,6 +13607,10 @@ msgid ""
 "manvolnum></citerefentry> for more information on the format of <filename>/"
 "etc/fstab</filename> and its options."
 msgstr ""
+"Referirse a "
+"<citerefentry><refentrytitle>fstab</refentrytitle><manvolnum>5</manvolnum></"
+"citerefentry> para obtener más información sobre el formato de <filename>/"
+"etc/fstab</filename> y sus opciones."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:8218
@@ -13530,11 +13618,13 @@ msgid ""
 "Using <citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"Usando <citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvol"
+"num></citerefentry>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:8220
 msgid "<primary>file systems</primary> <secondary>mounting</secondary>"
-msgstr ""
+msgstr "<primary>sistemas de archivos</primary> <secondary>montaje</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8225
@@ -13543,12 +13633,17 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>. The most basic syntax "
 "is as follows:"
 msgstr ""
+"Los sistemas de archivos se montan utilizando "
+"<citerefentry><refentrytitle>montar</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>. La sintaxis más básica es la siguiente:"
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:8229
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>mount <replaceable>device</replaceable> <replaceable>mountpoint</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>montar <replaceable>dispositivo</replaceable> "
+"<replaceable>montar</replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8232
@@ -13557,17 +13652,21 @@ msgid ""
 "<citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>, The most commonly used options include:"
 msgstr ""
+"Este comando proporciona muchas opciones que se describen en <citerefentry><r"
+"efentrytitle>montaje</refentrytitle><manvolnum>8</manvolnum></citerefentry>, "
+"Las opciones más utilizadas incluyen:"
 
 #. (itstool) path: variablelist/title
 #: book.translate.xml:8236
 msgid "Mount Options"
-msgstr ""
+msgstr "Opciones de montaje"
 
 #. (itstool) path: varlistentry/term
 #. (itstool) path: row/entry
 #: book.translate.xml:8239 book.translate.xml:23478
+#, fuzzy
 msgid "<option>-a</option>"
-msgstr ""
+msgstr "<option>-a</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8242
@@ -13576,11 +13675,15 @@ msgid ""
 "those marked as <quote>noauto</quote>, excluded by the <option>-t</option> "
 "flag, or those that are already mounted."
 msgstr ""
+"Monte todos los sistemas de archivos enumerados en <filename>/etc/fstab</"
+"filename>, excepto los marcados como <quote>noauto</quote>, excluido por "
+"el<option>-t</option> bandera, o las que ya están montadas."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:8251
+#, fuzzy
 msgid "<option>-d</option>"
-msgstr ""
+msgstr "<option>-d</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8255
@@ -13590,11 +13693,16 @@ msgid ""
 "<citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> is actually trying to do."
 msgstr ""
+"Haga todo excepto la llamada al sistema de montaje real. Esta opción es útil "
+"junto con la <option>-v</option> bandera para determinar qué <citerefentry><r"
+"efentrytitle>montaje</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>en realidad está tratando de hacer."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:8263 book.translate.xml:26586
+#, fuzzy
 msgid "<option>-f</option>"
-msgstr ""
+msgstr "<option>-f</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8266
@@ -13603,11 +13711,15 @@ msgid ""
 "write access when downgrading a file system's mount status from read-write "
 "to read-only."
 msgstr ""
+"Forzar el montaje de un sistema de archivos sucio (peligroso) o la "
+"revocación del acceso de escritura al degradar el estado de montaje de un "
+"sistema de archivos de lectura-escritura a solo lectura."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:8274
+#, fuzzy
 msgid "<option>-r</option>"
-msgstr ""
+msgstr "<option>-r</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8277
@@ -13615,11 +13727,14 @@ msgid ""
 "Mount the file system read-only. This is identical to using <option>-o ro</"
 "option>."
 msgstr ""
+"Monte el sistema de archivos en modo de solo lectura. Esto es idéntico a "
+"usar <option>-o ro</option>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:8283
+#, fuzzy
 msgid "<option>-t</option> <replaceable>fstype</replaceable>"
-msgstr ""
+msgstr "<option>-t</option> <replaceable>fstype</replaceable>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8287
@@ -13628,37 +13743,43 @@ msgid ""
 "type, if <option>-a</option> is included. <quote>ufs</quote> is the default "
 "file system type."
 msgstr ""
+"Monte el tipo de sistema de archivos especificado o monte solo sistemas de "
+"archivos del tipo dado, si <option>-a</option> es incluido. <quote>ufs</"
+"quote> es el tipo de sistema de archivos predeterminado."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:8295
+#, fuzzy
 msgid "<option>-u</option>"
-msgstr ""
+msgstr "<option>-u</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8298
 msgid "Update mount options on the file system."
-msgstr ""
+msgstr "Actualice las opciones de montaje en el sistema de archivos."
 
 #. (itstool) path: varlistentry/term
 #. (itstool) path: row/entry
 #: book.translate.xml:8303 book.translate.xml:23495
+#, fuzzy
 msgid "<option>-v</option>"
-msgstr ""
+msgstr "<option>-v</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8306
 msgid "Be verbose."
-msgstr ""
+msgstr "Sea prolijo."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:8311
+#, fuzzy
 msgid "<option>-w</option>"
-msgstr ""
+msgstr "<option>-w</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8314
 msgid "Mount the file system read-write."
-msgstr ""
+msgstr "Monte el sistema de archivos de lectura y escritura."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8319
@@ -13666,11 +13787,14 @@ msgid ""
 "The following options can be passed to <option>-o</option> as a comma-"
 "separated list:"
 msgstr ""
+"Las siguientes opciones se pueden pasar a <option>-o</option> como una lista "
+"separada por comas:"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:8324
+#, fuzzy
 msgid "nosuid"
-msgstr ""
+msgstr "nosuid"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8327
@@ -13678,6 +13802,8 @@ msgid ""
 "Do not interpret setuid or setgid flags on the file system. This is also a "
 "useful security option."
 msgstr ""
+"No interprete los indicadores setuid o setgid en el sistema de archivos. "
+"Esta también es una opción de seguridad útil."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:8336
@@ -13685,11 +13811,13 @@ msgid ""
 "Using <citerefentry><refentrytitle>umount</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"Usando <citerefentry><refentrytitle>umount</refentrytitle><manvolnum>8</manvo"
+"lnum></citerefentry>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:8338
 msgid "<primary>file systems</primary> <secondary>unmounting</secondary>"
-msgstr ""
+msgstr "<primary>sistema de archivos</primary> <secondary>desmontar</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8343
@@ -13699,6 +13827,10 @@ msgid ""
 "one parameter which can be a mountpoint, device name, <option>-a</option> or "
 "<option>-A</option>."
 msgstr ""
+"Para desmontar un sistema de archivos, utilice <citerefentry><refentrytitle>d"
+"esmontar</refentrytitle><manvolnum>8</manvolnum></citerefentry>. Este "
+"comando toma un parámetro que puede ser un punto de montaje, el nombre del "
+"dispositivo, <option>-a</option> o <option>-A</option>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8347
@@ -13707,6 +13839,10 @@ msgid ""
 "option> for verbosity. Be warned that <option>-f</option> is not generally a "
 "good idea as it might crash the computer or damage data on the file system."
 msgstr ""
+"Todas las formas toman <option>-f</option>forzar el desmontaje, y "
+"<option>-v</option> para verbosidad. Ser advertido que <option>-f</option> "
+"Por lo general, no es una buena idea, ya que podría bloquear la computadora "
+"o dañar los datos del sistema de archivos."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8352
@@ -13716,11 +13852,15 @@ msgid ""
 "Note that <option>-A</option> does not attempt to unmount the root file "
 "system."
 msgstr ""
+"Para desmontar todos los sistemas de archivos montados, o solo los tipos de "
+"sistemas de archivos enumerados después <option>-t</option>, use <option>-a</"
+"option> o <option>-A</option>.Tenga en cuenta que <option>-A</option> no "
+"intenta desmontar el sistema de archivos raíz."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:8361
 msgid "Processes and Daemons"
-msgstr ""
+msgstr "Procesos y demonios"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8363
@@ -13730,6 +13870,10 @@ msgid ""
 "starts at least one new process and there are a number of system processes "
 "that are run by FreeBSD."
 msgstr ""
+"FreeBSD es un sistema operativo multitarea. Cada programa que se ejecuta en "
+"un momento determinado se denomina <firstterm>process</firstterm>. Cada "
+"comando en ejecución inicia al menos un proceso nuevo y hay una serie de "
+"procesos del sistema que se ejecutan en FreeBSD."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8369
@@ -13745,6 +13889,18 @@ msgid ""
 "citerefentry> which is always the first process to start at boot time and "
 "which always has a <acronym>PID</acronym> of <literal>1</literal>."
 msgstr ""
+"Cada proceso está identificado de forma única por un número llamado "
+"<firstterm>identificacion de proceso</firstterm> (<acronym>PID</acronym>). "
+"Al igual que los archivos, cada proceso tiene un propietario y un grupo, y "
+"los permisos de propietario y grupo se utilizan para determinar qué archivos "
+"y dispositivos puede abrir el proceso. La mayoría de los procesos también "
+"tienen un proceso principal que los inició. Por ejemplo, el shell es un "
+"proceso, y cualquier comando iniciado en el shell es un proceso que tiene al "
+"shell como proceso padre. La excepción es un proceso especial llamado "
+"<citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> que es siempre el primer proceso que se inicia en el momento "
+"del arranque y que siempre tiene un<acronym>PID</acronym> de "
+"<literal>1</literal>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8381
@@ -13758,6 +13914,15 @@ msgid ""
 "invisibly performs useful tasks. This is why the BSD mascot is the cheerful-"
 "looking daemon with sneakers and a pitchfork."
 msgstr ""
+"Algunos programas no están diseñados para ejecutarse con la entrada continua "
+"del usuario y desconectarse del terminal a la primera oportunidad. Por "
+"ejemplo, un servidor web responde a las solicitudes web, en lugar de la "
+"entrada del usuario. Los servidores de correo son otro ejemplo de este tipo "
+"de aplicación. Estos tipos de programas se conocen como <firstterm>demonios</"
+"firstterm>. el término demonio proviene de la mitología griega y representa "
+"una entidad que no es ni buena ni mala, y que realiza tareas útiles de "
+"manera invisible. Es por eso que la mascota de BSD es el demonio de aspecto "
+"alegre con zapatillas y una horquilla."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8392
@@ -13771,11 +13936,21 @@ msgid ""
 "main mail daemon for the <application>Sendmail</application> application is "
 "<command>sendmail</command>, and not <literal>maild</literal>."
 msgstr ""
+"Existe una convención para nombrar programas que normalmente se ejecutan "
+"como demonios con un final <quote>d</quote>. Por ejemplo, <application>BIND</"
+"application> es el dominio de nombres de Internet de Berkeley, pero el "
+"programa real que se ejecuta es<command>llamado</command>. El "
+"<application>Apache</application> el programa del servidor web es "
+"<command>httpd</command> y el demonio de spooling de impresora de línea "
+"es<command>lpd</command>. Esta es solo una convención de nomenclatura. Por "
+"ejemplo, el demonio de correo principal para <application>Sendmail</"
+"application> la aplicación es <command>sendmail</command>, y no "
+"<literal>maild</literal>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:8406
 msgid "Viewing Processes"
-msgstr ""
+msgstr "Procesos de visualización"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8408
@@ -13792,6 +13967,18 @@ msgid ""
 "use <citerefentry><refentrytitle>top</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>."
 msgstr ""
+"Para ver los procesos que se ejecutan en el sistema, utilice "
+"<citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> o "
+"<citerefentry><refentrytitle>top</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>. Para mostrar una lista estática de los procesos actualmente "
+"en ejecución, <acronym>PID</acronym>s, cuánta memoria están usando y el "
+"comando con el que comenzaron, use "
+"<citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>. Para mostrar todos los procesos en ejecución y actualizar la "
+"pantalla cada pocos segundos en Para ver interactivamente lo que está "
+"haciendo la computadora, use <citerefentry><refentrytitle>top</refentrytitle>"
+"<manvolnum>1</manvolnum></citerefentry>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8416
@@ -13800,16 +13987,24 @@ msgid ""
 "manvolnum></citerefentry> only shows the commands that are running and owned "
 "by the user. For example:"
 msgstr ""
+"Por defecto, "
+"<citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> solo muestra los comandos que se ejecutan y son propiedad del "
+"usuario. Por ejemplo:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:8419
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>ps</userinput>\n"
 " PID TT  STAT    TIME COMMAND\n"
 "8203  0  Ss   0:00.59 /bin/csh\n"
 "8895  0  R+   0:00.00 ps"
 msgstr ""
+"<prompt>%</prompt> <userinput>ps</userinput>\n"
+" PID TT  STAT    TIME COMMAND\n"
+"8203  0  Ss   0:00.59 /bin/csh\n"
+"8895  0  R+   0:00.00 ps"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8424
@@ -13827,6 +14022,20 @@ msgid ""
 "before they need to spend time on the CPU. Finally, <literal>COMMAND</"
 "literal> is the command that was used to start the program."
 msgstr ""
+"La salida de "
+"<citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> está organizado en varias columnas. los <literal>PID</"
+"literal>La columna muestra el ID del proceso. <acronym>PID</acronym>s se "
+"asignan comenzando en 1, van hasta 99999 y luego vuelven al principio. Sin "
+"embargo, un <acronym>PID</acronym>no se reasigna si ya está en uso. los "
+"<literal>TT</literal>La columna muestra el tty en el que se está ejecutando "
+"el programa y <literal>STAT</literal> muestra el estado del programa. "
+"<literal>TIME</literal> es la cantidad de tiempo que el programa ha estado "
+"ejecutándose en la CPU. Por lo general, este no es el tiempo transcurrido "
+"desde que se inició el programa, ya que la mayoría de los programas pasan "
+"mucho tiempo esperando que sucedan cosas antes de tener que dedicar tiempo a "
+"la CPU. Finalmente, <literal>COMMAND</literal> es el comando que se utilizó "
+"para iniciar el programa."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8439
@@ -13841,6 +14050,17 @@ msgid ""
 "command line for each process, rather than truncating it once it gets too "
 "long to fit on the screen."
 msgstr ""
+"Hay varias opciones diferentes disponibles para cambiar la información que "
+"se muestra. Uno de los conjuntos más útiles es <literal>auxww</literal>, "
+"donde <option>una</option> muestra información sobre todos los procesos en "
+"ejecución de todos los usuarios,<option>u</option>muestra el nombre de "
+"usuario y el uso de memoria del propietario del proceso, <option>x</option> "
+"muestra información sobre los procesos del demonio, y <option>ww</option> "
+"causas "
+"<citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> para mostrar la línea de comando completa para cada proceso, "
+"en lugar de truncarlo una vez que sea demasiado largo para caber en la "
+"pantalla."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8450
@@ -13848,10 +14068,13 @@ msgid ""
 "The output from <citerefentry><refentrytitle>top</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> is similar:"
 msgstr ""
+"La salida de "
+"<citerefentry><refentrytitle>top</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> es similar:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:8452
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>top</userinput>\n"
 "last pid:  9609;  load averages:  0.56,  0.45,  0.36              up 0+00:20:03  10:21:46\n"
@@ -13874,6 +14097,33 @@ msgid ""
 " 2338 dru           1  20    0   440M 84532K select  1   0:06  0.00% kwin\n"
 " 1427 dru           5  22    0   605M 86412K select  1   0:05  0.00% kdeinit4"
 msgstr ""
+"<prompt>%</prompt> <userinput>top</userinput>\n"
+"last pid:  9609;  load averages:  0.56,  0.45,  0.36              up 0+00:20:"
+"03  10:21:46\n"
+"107 processes: 2 running, 104 sleeping, 1 zombie\n"
+"CPU:  6.2% user,  0.1% nice,  8.2% system,  0.4% interrupt, 85.1% idle\n"
+"Mem: 541M Active, 450M Inact, 1333M Wired, 4064K Cache, 1498M Free\n"
+"ARC: 992M Total, 377M MFU, 589M MRU, 250K Anon, 5280K Header, 21M Other\n"
+"Swap: 2048M Total, 2048M Free\n"
+"\n"
+"  PID USERNAME    THR PRI NICE   SIZE    RES STATE   C   TIME   WCPU "
+"COMMAND\n"
+"  557 root          1 -21  r31   136M 42296K select  0   2:20  9.96% Xorg\n"
+" 8198 dru           2  52    0   449M 82736K select  3   0:08  5.96% "
+"kdeinit4\n"
+" 8311 dru          27  30    0  1150M   187M uwait   1   1:37  0.98% "
+"firefox\n"
+"  431 root          1  20    0 14268K  1728K select  0   0:06  0.98% moused\n"
+" 9551 dru           1  21    0 16600K  2660K CPU3    3   0:01  0.98% top\n"
+" 2357 dru           4  37    0   718M   141M select  0   0:21  0.00% "
+"kdeinit4\n"
+" 8705 dru           4  35    0   480M    98M select  2   0:20  0.00% "
+"kdeinit4\n"
+" 8076 dru           6  20    0   552M   113M uwait   0   0:12  0.00% soffice."
+"bin\n"
+" 2623 root          1  30   10 12088K  1636K select  3   0:09  0.00% powerd\n"
+" 2338 dru           1  20    0   440M 84532K select  1   0:06  0.00% kwin\n"
+" 1427 dru           5  22    0   605M 86412K select  1   0:05  0.00% kdeinit4"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8473
@@ -13888,6 +14138,16 @@ msgid ""
 "module has been loaded, an <literal>ARC</literal> line indicates how much "
 "data was read from the memory cache instead of from disk."
 msgstr ""
+"La salida se divide en dos secciones. El encabezado (las primeras cinco o "
+"seis líneas) muestra el <acronym>PID</acronym> del último proceso que se "
+"ejecutó, los promedios de carga del sistema (que son una medida de qué tan "
+"ocupado está el sistema), el tiempo de actividad del sistema (tiempo desde "
+"el último reinicio) y la hora actual. Las otras cifras del encabezado se "
+"refieren a cuántos procesos se están ejecutando, cuánta memoria y espacio de "
+"intercambio se ha utilizado y cuánto tiempo pasa el sistema en diferentes "
+"estados de la CPU. Si el <acronym>ZFS</acronym> se ha cargado el módulo del "
+"sistema de archivos, un <literal>ARC</literal> La línea indica cuántos datos "
+"se leyeron desde la memoria caché en lugar de desde el disco."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8485
@@ -13902,6 +14162,17 @@ msgid ""
 "size. Total size is how much memory the application has needed and the "
 "resident size is how much it is actually using now."
 msgstr ""
+"Debajo del encabezado hay una serie de columnas que contienen información "
+"similar a la salida de "
+"<citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>, Como el <acronym>PID</acronym>, nombre de usuario, cantidad "
+"de tiempo de CPU y el comando que inició el proceso. Por defecto, "
+"<citerefentry><refentrytitle>top</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> también muestra la cantidad de espacio de memoria que ocupa el "
+"proceso. Esto se divide en dos columnas: una para el tamaño total y otra "
+"para el tamaño de los residentes. El tamaño total es la cantidad de memoria "
+"que la aplicación ha necesitado y el tamaño residente es la cantidad que "
+"realmente está usando ahora."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8495
@@ -13910,11 +14181,14 @@ msgid ""
 "citerefentry> automatically updates the display every two seconds. A "
 "different interval can be specified with <option>-s</option>."
 msgstr ""
+"<citerefentry><refentrytitle>top</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> actualiza automáticamente la pantalla cada dos segundos. Se "
+"puede especificar un intervalo diferente con <option>-s</option>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:8501
 msgid "Killing Processes"
-msgstr ""
+msgstr "Procesos para matar"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8503
@@ -13929,6 +14203,16 @@ msgid ""
 "\"username\">root</systemitem> user, who can send signals to anyone's "
 "processes."
 msgstr ""
+"Una forma de comunicarse con cualquier proceso o demonio en ejecución es "
+"enviar un <firstterm>signal</firstterm> usando "
+"<citerefentry><refentrytitle>matar</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>. Hay varias señales diferentes; algunos tienen un significado "
+"específico, mientras que otros se describen en la documentación de la "
+"aplicación. Un usuario solo puede enviar una señal a un proceso de su "
+"propiedad y enviar una señal al proceso de otra persona resultará en un "
+"error de permiso denegado. La excepción es la <systemitem class=\"username\""
+">root</systemitem> usuario, que puede enviar señales a los procesos de "
+"cualquier persona."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8513
@@ -13942,6 +14226,15 @@ msgid ""
 "has elapsed, it will be sent the <quote>Alarm</quote> signal "
 "(<literal>SIGALRM</literal>)."
 msgstr ""
+"El sistema operativo también puede enviar una señal a un proceso. Si una "
+"aplicación está mal escrita e intenta acceder a la memoria que no debería, "
+"FreeBSD enviará al proceso el <quote>Violación de segmentación</quote> señal "
+"(<literal>SIGSEGV</literal>). Si se ha escrito una solicitud para utilizar "
+"la  "
+"<citerefentry><refentrytitle>alarma</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry> llamada al sistema para ser alertado después de que haya "
+"transcurrido un período de tiempo, se enviará el <quote>Alarm</quote> señal "
+"(<literal>SIGALRM</literal>)."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8523
@@ -13953,6 +14246,13 @@ msgid ""
 "In some cases, a process may ignore <literal>SIGTERM</literal> if it is in "
 "the middle of some task that cannot be interrupted."
 msgstr ""
+"Se pueden usar dos señales para detener un proceso: <literal>SIGTERM</"
+"literal> y <literal>SIGKILL</literal>. <literal>SIGTERM</literal>es la forma "
+"educada de matar un proceso, ya que el proceso puede leer la señal, cerrar "
+"cualquier archivo de registro que pueda tener abierto e intentar terminar lo "
+"que está haciendo antes de cerrarse. En algunos casos, un proceso puede "
+"ignorar <literal>SIGTERM</literal> si está en medio de alguna tarea que no "
+"se pueda interrumpir."
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:8535
@@ -13964,6 +14264,12 @@ msgid ""
 "typically after two minutes. As soon as this time out occurs the process "
 "will be killed."
 msgstr ""
+"Hay algunas tareas que no se pueden interrumpir. Por ejemplo, si el proceso "
+"está intentando leer desde un archivo que está en otra computadora en la "
+"red, y la otra computadora no está disponible, se dice que el proceso es "
+"<quote>interrumpirle</quote>. Finalmente, el proceso expirará, generalmente "
+"después de dos minutos. Tan pronto como se produzca este tiempo de espera, "
+"el proceso se terminará."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8532
@@ -13972,6 +14278,9 @@ msgid ""
 "<literal>SIGKILL</literal> to a process will usually stop that process there "
 "and then. <_:footnote-1/>."
 msgstr ""
+"<literal>SIGKILL</literal> no puede ser ignorado por un proceso. Enviando "
+"un<literal>SIGKILL</literal> a un proceso normalmente lo detendrá allí "
+"mismo. <_:footnote-1/>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8544
@@ -13980,6 +14289,10 @@ msgid ""
 "literal>, and <literal>SIGUSR2</literal>. Since these are general purpose "
 "signals, different applications will respond differently."
 msgstr ""
+"Otras señales de uso común son "
+"<literal>SIGHUP</literal>,<literal>SIGUSR1</literal>y<literal>SIGUSR2</"
+"literal>. dado que estas son señales de propósito general, diferentes "
+"aplicaciones responderán de manera diferente."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8549
@@ -13992,11 +14305,19 @@ msgid ""
 "documentation for the daemon to determine if <literal>SIGHUP</literal> will "
 "achieve the desired results."
 msgstr ""
+"Por ejemplo, después de cambiar el archivo de configuración de un servidor "
+"web, se debe indicar al servidor web que vuelva a leer su configuración. "
+"Reiniciando <command>httpd</command> daría lugar a un breve período de "
+"interrupción en el servidor web. En su lugar, envíe el demonio "
+"<literal>SIGHUP</literal> señal. Tenga en cuenta que los diferentes demonios "
+"tendrán un comportamiento diferente, así que consulte la documentación del "
+"demonio para determinar si <literal>SIGHUP</literal> logrará los resultados "
+"deseados."
 
 #. (itstool) path: procedure/title
 #: book.translate.xml:8560
 msgid "Sending a Signal to a Process"
-msgstr ""
+msgstr "Enviar una señal a un proceso"
 
 #. (itstool) path: procedure/para
 #: book.translate.xml:8562
@@ -14010,6 +14331,15 @@ msgid ""
 "citerefentry> will re-read this configuration file when it is sent a "
 "<literal>SIGHUP</literal>."
 msgstr ""
+"Este ejemplo muestra cómo enviar una señal a "
+"<citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>. El "
+"<citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> el archivo de configuración es <filename>etc/inetd.conf</"
+"filename>, y "
+"<citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> volverá a leer este archivo de configuración cuando se le "
+"envíe un <literal>SIGHUP</literal>."
 
 #. (itstool) path: step/para
 #: book.translate.xml:8569
@@ -14020,14 +14350,21 @@ msgid ""
 "<citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> is 198:"
 msgstr ""
+"Encuentra el <acronym>PID</acronym> del proceso para enviar la señal al uso "
+"<citerefentry><refentrytitle>pgrep</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>. En este ejemplo, el <acronym>PID</acronym> para "
+"<citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> es 198:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:8573
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>pgrep -l inetd</userinput>\n"
 "198  inetd -wW"
 msgstr ""
+"<prompt>%</prompt> <userinput>pgrep -l inetd</userinput>\n"
+"198  inetd -wW"
 
 #. (itstool) path: step/para
 #: book.translate.xml:8579
@@ -14040,15 +14377,27 @@ msgid ""
 "citerefentry> to become <systemitem class=\"username\">root</systemitem> "
 "first."
 msgstr ""
+"Use "
+"<citerefentry><refentrytitle>kill</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> para enviar la señal. Porque "
+"<citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> es propiedad de <systemitem class=\"username\">root</"
+"systemitem>, use "
+"<citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> convertirse <systemitem class=\"username\">root</systemitem> "
+"primero."
 
 #. (itstool) path: step/screen
 #: book.translate.xml:8586
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>%</prompt> <userinput>su</userinput>\n"
 "<prompt>Password:</prompt>\n"
 "<prompt>#</prompt> <userinput>/bin/kill -s HUP 198</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>su</userinput>\n"
+"<prompt>Password:</prompt>\n"
+"<prompt>#</prompt> <userinput>/bin/kill -s HUP 198</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:8590
@@ -14064,11 +14413,21 @@ msgid ""
 "in the error <errorname>kill: <replaceable>PID</replaceable>: No such "
 "process</errorname>."
 msgstr ""
+"Me gusta más <trademark class=\"registered\">UNIX</trademark> comandos, "
+"<citerefentry><refentrytitle>matar</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> no imprimirá ningún resultado si tiene éxito. Si se envía una "
+"señal a un proceso que no es propiedad de ese usuario, el mensaje "
+"<errorname>kill: <replaceable>PID</replaceable>: operación no permitida</"
+"errorname> será mostrado. Escribiendo mal <acronym>PID</acronym> enviará la "
+"señal al proceso incorrecto, lo que podría tener resultados negativos, o "
+"enviará la señal a un <acronym>PID</acronym>que no está en uso actualmente, "
+"lo que genera el error <errorname>kill: <replaceable>PID</replaceable>: No "
+"hay tal proceso</errorname>."
 
 #. (itstool) path: note/title
 #: book.translate.xml:8603
 msgid "Why Use <command>/bin/kill</command>?"
-msgstr ""
+msgstr "Porque Usar <command>/bin/kill</command>?"
 
 #. (itstool) path: note/para
 #: book.translate.xml:8605
@@ -14079,6 +14438,12 @@ msgid ""
 "for specifying the name of the signal to send. Rather than try to learn all "
 "of them, it can be simpler to specify <command>/bin/kill</command>."
 msgstr ""
+"Muchas shells proporcionan <command>kill</command> como un comando "
+"incorporado, lo que significa que el shell enviará la señal directamente, en "
+"lugar de ejecutar <filename>/bin/kill</filename>. Tenga en cuenta que "
+"diferentes shells tienen una sintaxis diferente para especificar el nombre "
+"de la señal a enviar. En lugar de intentar aprenderlos todos, puede ser más "
+"sencillo especificar <command>/bin/kill</command>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8617
@@ -14086,6 +14451,8 @@ msgid ""
 "When sending other signals, substitute <literal>TERM</literal> or "
 "<literal>KILL</literal> with the name of the signal."
 msgstr ""
+"Al enviar otras señales, sustituya <literal>TÉRMINO</literal>o<literal>KILL</"
+"literal> con el nombre de la señal."
 
 #. (itstool) path: important/para
 #: book.translate.xml:8622
@@ -14098,21 +14465,31 @@ msgid ""
 "<citerefentry><refentrytitle>kill</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> <emphasis>before</emphasis> pressing <keycap>Return</keycap>."
 msgstr ""
+"Matar un proceso aleatorio en el sistema es una mala idea. En particular, <ci"
+"terefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citer"
+"efentry>,<acronym>PID</acronym> 1, es especial. Corriendo <command>/bin/kill "
+"-s KILL 1</command> es una forma rápida y no recomendada de apagar el "
+"sistema.<emphasis>Siempre</emphasis> revisa los argumentos para<citerefentry>"
+"<refentrytitle>kill</refentrytitle><manvolnum>1</manvolnum></citerefentry>.<e"
+"mphasis>ante</emphasis>apretando<keycap>Regreso</keycap>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:8634
+#, fuzzy
 msgid "Shells"
-msgstr ""
+msgstr "Shells"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:8636
+#, fuzzy
 msgid "<primary>shells</primary>"
-msgstr ""
+msgstr "<primary>shells</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:8639
+#, fuzzy
 msgid "<primary>command line</primary>"
-msgstr ""
+msgstr "<primary>command line</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8643
@@ -14128,6 +14505,17 @@ msgid ""
 "manvolnum></citerefentry>). Other shells are available from the FreeBSD "
 "Ports Collection, such as <command>zsh</command> and <command>bash</command>."
 msgstr ""
+"una <firstterm>shell</firstterm> proporciona una interfaz de línea de "
+"comandos para interactuar con el sistema operativo. Un shell recibe comandos "
+"del canal de entrada y los ejecuta. Muchos shells proporcionan funciones "
+"integradas para ayudar con las tareas diarias, como la administración de "
+"archivos, el agrupamiento de archivos, la edición de la línea de comandos, "
+"las macros de comandos y las variables de entorno. FreeBSD viene con varios "
+"shells, incluido el shell Bourne (<citerefentry><refentrytitle>sh</refentryti"
+"tle><manvolnum>1</manvolnum></citerefentry>) y el shell C extendido <citerefe"
+"ntry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentr"
+"y>). Otras shells están disponibles en FreeBSD Ports Collection, como "
+"<command>zsh</command>y<command>bash</command>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8654
@@ -14140,6 +14528,13 @@ msgid ""
 "may or may not work with a user's preferred working environment, which is "
 "why there is a choice of which shell to use."
 msgstr ""
+"La cáscara que se utiliza es realmente una cuestión de gustos. Un "
+"programador de C puede sentirse más cómodo con un shell similar a C como "
+"<citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>. Una <trademark class=\"registered\">Linux</trademark> El "
+"usuario podría preferir<command>bash</command>. cada shell tiene propiedades "
+"únicas que pueden funcionar o no con el entorno de trabajo preferido de un "
+"usuario, por lo que se puede elegir qué shell usar."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8661
@@ -14151,6 +14546,13 @@ msgid ""
 "delete <filename>foobar</filename>, the user might type <command>rm foo</"
 "command> and press <keycap>Tab</keycap> to complete the filename."
 msgstr ""
+"Una característica común del shell es la finalización del nombre de archivo. "
+"Después de que un usuario escribe las primeras letras de un comando o nombre "
+"de archivo y presiona <keycap>Tab</keycap>, el shell completa el resto del "
+"comando o nombre de archivo. Considere dos archivos llamados "
+"<filename>foobar</filename>y<filename>football</filename>. Para borrar "
+"<filename>foobar</filename>, El usuario puede escribir <command>rm foo</"
+"command>y presione <keycap>Tab</keycap> para completar el nombre del archivo."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8670
