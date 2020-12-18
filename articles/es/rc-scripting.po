@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:08-0300\n"
-"PO-Revision-Date: 2020-12-18 13:32+0000\n"
+"PO-Revision-Date: 2020-12-19 16:05+0000\n"
 "Last-Translator: Aaron H Farías Martinez <timido@ubuntu.com>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_rc-scripting/es/>\n"
@@ -526,6 +526,20 @@ msgid ""
 "manvolnum></citerefentry> in <filename>rc.d</filename> scripts. We are not "
 "going to be an exception."
 msgstr ""
+"En <filename>/etc/rc.subr</filename>,un numero de "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> las funciones se definen para un <filename>rc.d</"
+"filename>script para usar. Las funciones están documentadas en "
+"<citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry>. Si bien es "
+"teóricamente posible escribir un <filename>rc.d</filename> script sin usar "
+"<citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry>,sus funciones "
+"resultan extremadamente útiles y facilitan el trabajo en un orden de "
+"magnitud. Así que no es de extrañar que todo el mundo recurra a "
+"<citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> in <filename>rc."
+"d</filename> scripts. No vamos a ser una excepción."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:269
@@ -538,6 +552,13 @@ msgid ""
 "manvolnum></citerefentry> has an opportunity to learn the functions. The "
 "preferred style is to source <filename>/etc/rc.subr</filename> first of all."
 msgstr ""
+"un <filename>rc.d</filename> script debe <quote>source</quote> <filename>/"
+"etc/rc.subr</filename> (incluirlo usando<quote><command>.</command></quote>) "
+"<emphasis>antes</emphasis> de llamarlo <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> funciona para "
+"que <citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> tiene la oportunidad de aprender las funciones. El estilo "
+"preferido es fuente <filename>/etc/rc.subr</filename> ante todo."
 
 #. (itstool) path: note/para
 #: article.translate.xml:278
@@ -545,6 +566,8 @@ msgid ""
 "Some useful functions related to networking are provided by another include "
 "file, <filename>/etc/network.subr</filename>."
 msgstr ""
+"Algunas funciones útiles relacionadas con las redes son proporcionadas por "
+"otro archivo de inclusión, <filename>/etc/network.subr</filename>."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:285
@@ -557,6 +580,13 @@ msgid ""
 "<citerefentry><refentrytitle>rc.subr</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> functions."
 msgstr ""
+"<anchor xml:id=\"name-var\"/>La variable obligatoria <envar>name</envar> "
+"especifica el nombre de nuestro script. Es requerido por "
+"<citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry>. Es decir, cada "
+"<filename>rc.d</filename> script <emphasis>must</emphasis> set <envar>name</"
+"envar> antes de que llame <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> funciones."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:292
@@ -565,6 +595,9 @@ msgid ""
 "all. We will use it in a number of places while developing the script. For a "
 "start, let us give the same name to the script file, too."
 msgstr ""
+"Ahora es el momento adecuado para elegir un nombre único para nuestro script "
+"de una vez por todas. Lo usaremos en varios lugares mientras desarrollamos "
+"el guión. Para empezar, démosle también el mismo nombre al archivo de script."
 
 #. (itstool) path: note/para
 #: article.translate.xml:298
@@ -580,6 +613,16 @@ msgid ""
 "be able to tell the language syntax from style conventions and use both of "
 "them wisely."
 msgstr ""
+"El estilo actual de <filename>rc.d</filename> la secuencia de comandos "
+"consiste en encerrar los valores asignados a las variables entre comillas "
+"dobles. Tenga en cuenta que es solo una cuestión de estilo que no siempre es "
+"aplicable. Puede omitir con seguridad las citas de las palabras simples "
+"sin<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> metacaracteres en ellos, mientras que en ciertos casos "
+"necesitará comillas simples para evitar cualquier interpretación del valor "
+"por <citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>. Un programador debería poder distinguir la sintaxis del "
+"lenguaje de las convenciones de estilo y utilizar ambas con prudencia."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:312
@@ -599,6 +642,22 @@ msgid ""
 "manvolnum></citerefentry> provides default methods for the standard "
 "arguments."
 msgstr ""
+"La idea principal detrás<citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> es eso un "
+"<filename>rc.d</filename>La secuencia de comandos proporciona controladores "
+"o métodos para <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> invocar. En "
+"particular, <option>start</option>, <option>stop</option>, y otros "
+"argumentos a un <filename>rc.d</filename>El script se maneja de esta manera. "
+"Un método es un "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> expresión almacenada en una variable llamada "
+"<envar><replaceable>argument</replaceable>_cmd</envar>, dónde "
+"<replaceable>argument</replaceable>corresponde a lo que se puede especificar "
+"en la línea de comandos del script. Veremos luego como "
+"<citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> proporciona "
+"métodos predeterminados para los argumentos estándar."
 
 #. (itstool) path: note/para
 #: article.translate.xml:326
@@ -607,6 +666,9 @@ msgid ""
 "use <envar>${name}</envar> wherever appropriate. Thus a number of lines can "
 "be just copied from one script to another."
 msgstr ""
+"Para hacer el código en <filename>rc.d</filename> más uniforme, es común "
+"usar <envar>${name}</envar> donde sea apropiado. Por tanto, se pueden copiar "
+"varias líneas de un script a otro."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:334
@@ -618,6 +680,12 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> expression if we want "
 "it to do nothing."
 msgstr ""
+"Debemos tener en cuenta que <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> proporciona "
+"métodos predeterminados para los argumentos estándar. En consecuencia, "
+"debemos anular un método estándar con un no-op "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> expresión si queremos que no haga nada."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:341
@@ -625,6 +693,8 @@ msgid ""
 "The body of a sophisticated method can be implemented as a function. It is a "
 "good idea to make the function name meaningful."
 msgstr ""
+"El cuerpo de un método sofisticado se puede implementar como una función. Es "
+"una buena idea hacer que el nombre de la función sea significativo."
 
 #. (itstool) path: important/para
 #: article.translate.xml:346
@@ -635,6 +705,12 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> or another common "
 "include file."
 msgstr ""
+"Se recomienda encarecidamente agregar el prefijo <envar>${name}</envar> a "
+"los nombres de todas las funciones definidas en nuestro script para que "
+"nunca entren en conflicto con las funciones de "
+"<citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> u otro archivo "
+"de inclusión común."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:355
@@ -650,6 +726,17 @@ msgid ""
 "<citerefentry><refentrytitle>rc.subr</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> itself."
 msgstr ""
+"Esta llamada a <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> cargas "
+"<citerefentry><refentrytitle>rc."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> variables. "
+"Nuestro script aún no los usa, pero aún se recomienda cargar "
+"<citerefentry><refentrytitle>rc."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>porque puede "
+"haber <citerefentry><refentrytitle>rc."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> control de "
+"variables <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> sí mismo."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:363
@@ -659,11 +746,16 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> machinery to perform "
 "the requested action using the variables and methods our script has provided."
 msgstr ""
+"Por lo general, este es el último comando de una <filename>rc.d</filename> "
+"script. Invoca el<citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> maquinaria para "
+"realizar la acción solicitada utilizando las variables y métodos que ha "
+"proporcionado nuestro script."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:372
 msgid "A configurable dummy script"
-msgstr ""
+msgstr "Un script ficticio configurable"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:374
@@ -683,6 +775,23 @@ msgid ""
 "other hand, a mandatory <filename>rc.d</filename> script can have "
 "configuration variables. We will do both things in the same script though:"
 msgstr ""
+"Ahora agreguemos algunos controles a nuestro script ficticio. Como podrias "
+"saber, <filename>rc.d</filename> slos scripts se controlan con "
+"<citerefentry><refentrytitle>rc."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>.Por suerte, "
+"<citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> hides all the "
+"complications from nos. El siguiente script usa "
+"<citerefentry><refentrytitle>rc."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> via "
+"<citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> para ver si está "
+"habilitado en primer lugar y obtener un mensaje para mostrar en el momento "
+"del arranque. De hecho, estas dos tareas son independientes. Por un lado, "
+"un<filename>rc.d</filename> El script solo puede admitir habilitar y "
+"deshabilitar su servicio. Por otro lado, una obligación<filename>rc.d</"
+"filename> El script puede tener variables de configuración. Sin embargo, "
+"haremos ambas cosas en el mismo script:"
 
 #. (itstool) path: informalexample/programlisting
 #: article.translate.xml:388
@@ -733,7 +842,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: article.translate.xml:410
 msgid "What changed in this example?"
-msgstr ""
+msgstr "¿Qué cambió en este ejemplo?"
 
 #. (itstool) path: callout/para
 #: article.translate.xml:414
@@ -741,6 +850,8 @@ msgid ""
 "The variable <envar>rcvar</envar> specifies the name of the ON/OFF knob "
 "variable."
 msgstr ""
+"La variable <envar>rcvar</envar> especifica el nombre de la variable del "
+"mando ON/OFF."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:419
@@ -749,6 +860,10 @@ msgid ""
 "before any <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</"
 "manvolnum></citerefentry> variables are accessed."
 msgstr ""
+"Ahora <function>load_rc_config</function> se invoca anteriormente en el "
+"script, antes de cualquier <citerefentry><refentrytitle>rc."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> se accede a las "
+"variables."
 
 #. (itstool) path: note/para
 #: article.translate.xml:424
@@ -765,6 +880,18 @@ msgid ""
 "are to be called by <function>run_rc_command</function>, which is invoked "
 "<emphasis>after</emphasis> <function>load_rc_config</function>."
 msgstr ""
+"Mientras examina <filename>rc.d</filename> scripts, tenga en cuenta "
+"que<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> difiere la evaluación de expresiones en una función hasta que "
+"se llama a esta última. Por tanto, no es un error invocar "
+"<function>load_rc_config</function> tan tarde como justo antes "
+"<function>run_rc_command</function> y todavía acceder "
+"<citerefentry><refentrytitle>rc."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> variables de las "
+"funciones de método exportadas a <function>un_rc_command</function>.esto se "
+"debe a que las funciones del método deben ser llamadas por "
+"<function>run_rc_command</function>, que se "
+"invoca<emphasis>despues</emphasis><function>load_rc_config</function>."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:440
@@ -778,6 +905,16 @@ msgid ""
 "script that should provide a default setting for the knob. The canonical "
 "approach to the latter case is shown in the example."
 msgstr ""
+"Una advertencia será emitida por <function>run_rc_command</function> Si "
+"<envar>rcvar</envar> sí mismo está configurado, pero la variable de mando "
+"indicada no está configurada. Si tu <filename>rc.d</filename> El script es "
+"para el sistema base, debe agregar una configuración predeterminada para la "
+"perilla <filename>/etc/defaults/rc.conf</filename> y documentarlo en "
+"<citerefentry><refentrytitle>rc."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>. De lo "
+"contrario, es su script el que debería proporcionar una configuración "
+"predeterminada para la perilla. El enfoque canónico del último caso se "
+"muestra en el ejemplo."
 
 #. (itstool) path: note/para
 #: article.translate.xml:451
@@ -793,12 +930,23 @@ msgid ""
 "<envar>dummy_enable</envar> is <literal>OFF</literal>. The following command "
 "will run the <option>start</option> method in spite of the setting:"
 msgstr ""
+"Puedes hacer <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> actuar como si "
+"la perilla estuviera en <literal>ON</literal>,independientemente de su "
+"configuración actual, anteponiendo el argumento al script con <literal>one</"
+"literal> or <literal>force</literal>,como en <option>onestart</option> o "
+"<option>forcestop</option>. Tenga en cuenta que <literal>force</literal> "
+"tiene otros efectos peligrosos que veremos a continuación, mientras que "
+"<literal>uno</literal> simplemente anula la perilla ON / OFF. Por ejemplo, "
+"suponga que <envar>dummy_enable</envar> is <literal>OFF</literal>. El "
+"siguiente comando ejecutará el <option>start</option> método a pesar de la "
+"configuración:"
 
 #. (itstool) path: note/screen
 #: article.translate.xml:464
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<prompt>#</prompt> <userinput>/etc/rc.d/dummy onestart</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>/etc/rc.d/dummy onestart</userinput>"
 
 #. (itstool) path: callout/para
 #: article.translate.xml:469
@@ -811,6 +959,14 @@ msgid ""
 "manvolnum></citerefentry> variables can control an <filename>rc.d</filename> "
 "script."
 msgstr ""
+"Ahora, el mensaje que se mostrará en el momento del arranque ya no está "
+"codificado en el script. Está especificado por un "
+"<citerefentry><refentrytitle>rc."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> variable "
+"nombrada <envar>dummy_msg</envar>. Este es un ejemplo trivial de cómo "
+"<citerefentry><refentrytitle>rc."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>las variables "
+"pueden controlar un <filename>rc.d</filename> script."
 
 #. (itstool) path: important/para
 #: article.translate.xml:476
@@ -821,6 +977,11 @@ msgid ""
 "<envar>${name}_</envar>. For example: <envar>dummy_mode</envar>, "
 "<envar>dummy_state_file</envar>, and so on."
 msgstr ""
+"Los nombres de todos <citerefentry><refentrytitle>rc."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> variables "
+"utilizadas exclusivamente por nuestro script<emphasis>must</emphasis> tienen "
+"el mismo prefijo: <envar>${name}_</envar>. Por ejemplo: <envar>dummy_mode</"
+"envar>, <envar>dummy_state_file</envar>, y así."
 
 #. (itstool) path: note/para
 #: article.translate.xml:484
@@ -831,6 +992,12 @@ msgid ""
 "with the <citerefentry><refentrytitle>rc.subr</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> namespace."
 msgstr ""
+"Si bien es posible utilizar un nombre más corto internamente, por ejemplo, "
+"simplemente <envar>msg</envar>, agregando el prefijo único<envar>${name}_</"
+"envar> a todos los nombres globales introducidos por nuestro script nos "
+"salvará de posibles colisiones con el <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> espacio de "
+"nombres."
 
 #. (itstool) path: note/para
 #: article.translate.xml:490
@@ -842,6 +1009,14 @@ msgid ""
 "instead. On the other hand, <filename>rc.d</filename> scripts for ports "
 "should provide the defaults as shown in the example."
 msgstr ""
+"Como una regla, <filename>rc.d</filename> Los scripts del sistema base no "
+"necesitan proporcionar valores predeterminados para su "
+"<citerefentry><refentrytitle>rc."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>variables porque "
+"los valores predeterminados deben establecerse en <filename>/etc/defaults/rc."
+"conf</filename> en lugar. Por otra parte,<filename>rc.d</filename> Los "
+"scripts para los puertos deben proporcionar los valores predeterminados como "
+"se muestra en el ejemplo."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:501
@@ -850,6 +1025,10 @@ msgid ""
 "to emit a variable message. Use of a shell function is overkill here, since "
 "it only runs a single command; an equally valid alternative is:"
 msgstr ""
+"Aquí usamos <envar>dummy_msg</envar> para controlar realmente nuestro "
+"script, es decir, para emitir un mensaje variable. El uso de una función de "
+"shell es excesivo aquí, ya que solo ejecuta un comando; una alternativa "
+"igualmente válida es:"
 
 #. (itstool) path: callout/programlisting
 #: article.translate.xml:506
@@ -860,7 +1039,7 @@ msgstr "start_cmd=\"echo \\\"$dummy_msg\\\"\""
 #. (itstool) path: sect1/title
 #: article.translate.xml:512
 msgid "Startup and shutdown of a simple daemon"
-msgstr ""
+msgstr "Inicio y cierre de un demonio simple"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:514
@@ -872,6 +1051,13 @@ msgid ""
 "us assume now that we need to write an <filename>rc.d</filename> script for "
 "such a daemon called <command>mumbled</command>. Here it is:"
 msgstr ""
+"Dijimos antes que <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> podría "
+"proporcionar métodos predeterminados. Obviamente, estos valores "
+"predeterminados no pueden ser demasiado generales. Son adecuados para el "
+"caso común de iniciar y cerrar un programa demonio simple. Supongamos ahora "
+"que necesitamos escribir un<filename>rc.d</filename> script para un demonio "
+"llamado <command>mumbled</command>. Aquí está:"
 
 #. (itstool) path: informalexample/programlisting
 #: article.translate.xml:522
@@ -907,6 +1093,8 @@ msgid ""
 "Pleasingly simple, isn't it? Let us examine our little script. The only new "
 "thing to note is as follows:"
 msgstr ""
+"Agradablemente simple, ¿no? Examinemos nuestro pequeño script. Lo único "
+"nuevo a tener en cuenta es lo siguiente:"
 
 #. (itstool) path: callout/para
 #: article.translate.xml:540
@@ -920,6 +1108,15 @@ msgid ""
 "option>, <option>stop</option>, <option>restart</option>, <option>poll</"
 "option>, and <option>status</option>."
 msgstr ""
+"El <envar>command</envar> variable es significativa para "
+"<citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry>. Si está "
+"configurado, <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> actuará de "
+"acuerdo con el escenario de servir un demonio convencional. En particular, "
+"se proporcionarán los métodos predeterminados para tales argumentos: "
+"<option>start</option>, <option>stop</option>, <option>restart</option>, "
+"<option>poll</option>, and <option>status</option>."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:548
@@ -940,6 +1137,23 @@ msgid ""
 "envar> is effectively set to the same value. This enables our script to kill "
 "the daemon and to check if it is running in the first place."
 msgstr ""
+"El demonio se iniciará ejecutando <envar>$command</envar> con banderas de "
+"línea de comandos especificadas por<envar>$mumbled_flags</envar>.Por tanto, "
+"todos los datos de entrada para el <option>start</option> están disponibles "
+"en las variables establecidas por nuestro script. diferente a <option>start</"
+"option>, otros métodos pueden requerir información adicional sobre el "
+"proceso iniciado. Por ejemplo, <option>parar</option> Debe conocer el PID "
+"del proceso para finalizarlo. En el caso presente, "
+"<citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry>examinará la "
+"lista de todos los procesos, buscando un proceso con su nombre igual "
+"a<envar>$procname</envar>. Este último es otra variable de significado para "
+"<citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry>, y su valor "
+"predeterminado es el de <envar>command</envar>. En otras palabras, cuando "
+"establecemos <envar>comando</envar>, <envar>procname</envar> se establece "
+"efectivamente en el mismo valor. Esto permite que nuestro script elimine el "
+"demonio y verifique si se está ejecutando en primer lugar."
 
 #. (itstool) path: note/para
 #: article.translate.xml:567
@@ -953,6 +1167,15 @@ msgid ""
 "subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> know the actual "
 "name of the process if <envar>$command</envar> is a script."
 msgstr ""
+"Algunos programas son de hecho scripts ejecutables. El sistema ejecuta dicho "
+"script iniciando su intérprete y pasándole el nombre del script como un "
+"argumento de línea de comandos. Esto se refleja en la lista de procesos, que "
+"pueden confundir <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry>. Además, debe "
+"configurar <envar>command_interpreter</envar> "
+"dejar<citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> conocer el "
+"nombre real del proceso si <envar>$command</envar> es un script."
 
 #. (itstool) path: note/para
 #: article.translate.xml:576
@@ -968,6 +1191,16 @@ msgid ""
 "manvolnum></citerefentry> that arranges <envar>${name}_program</envar> to "
 "override <envar>command</envar>."
 msgstr ""
+"Para cada <filename>rc.d</filename> Script, hay un opcional "
+"<citerefentry><refentrytitle>rc."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> Variable que "
+"tiene prioridad sobre <envar>command</envar>. Su nombre se construye de la "
+"siguiente manera: <envar>${name}_program</envar>, donde <envar>name</envar> "
+"es la variable obligatoria que discutimos <link linkend=\"name-var\""
+">earlier</link>. Por ejemplo, en este caso será<envar>mumbled_program</"
+"envar>. Es <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> que "
+"arregla<envar>${name}_program</envar> para anular <envar>command</envar>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:587
@@ -983,6 +1216,17 @@ msgid ""
 "together with <envar>command</envar> became an idiom of <filename>rc.d</"
 "filename> scripting."
 msgstr ""
+"Por supuesto, "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> te permitirá establecer <envar>${name}_program</envar> from "
+"<citerefentry><refentrytitle>rc."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> o el propio "
+"script incluso si<envar>command</envar> es desarmado. En ese caso, las "
+"propiedades especiales de<envar>${name}_program</envar> se pierden y se "
+"convierte en una variable ordinaria que su script puede utilizar para sus "
+"propios fines. Sin embargo, el uso exclusivo de <envar>${name}_program</"
+"envar> se desaconseja porque usarlo junto con <envar>command</envar> se "
+"convirtió en un modismo de <filename>rc.d</filename> scripting."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:599
@@ -991,11 +1235,14 @@ msgid ""
 "<citerefentry><refentrytitle>rc.subr</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>."
 msgstr ""
+"Para obtener información más detallada sobre los métodos predeterminados, "
+"consulte <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:606
 msgid "Startup and shutdown of an advanced daemon"
-msgstr ""
+msgstr "Inicio y cierre de un demonio avanzado"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:608
@@ -1005,6 +1252,11 @@ msgid ""
 "may need some of their aspects tweaked. Now we will learn how to tune the "
 "default methods to our needs."
 msgstr ""
+"Agreguemos un poco de carne a los huesos del guión anterior y hagámoslo más "
+"complejo y característico. Los métodos predeterminados pueden hacer un buen "
+"trabajo para nosotros, pero es posible que necesitemos algunos de sus "
+"aspectos ajustados. Ahora aprenderemos cómo ajustar los métodos "
+"predeterminados a nuestras necesidades."
 
 #. (itstool) path: informalexample/programlisting
 #: article.translate.xml:615
@@ -1129,6 +1381,11 @@ msgid ""
 "<command>eval</command> for its actual execution, input and output "
 "redirections can be specified in <envar>command_args</envar>."
 msgstr ""
+"Argumentos adicionales a <envar>$command</envar> se puede pasar en "
+"<envar>command_args</envar>. se agregarán a la línea de comando después "
+"<envar>$mumbled_flags</envar>.Dado que la línea de comando final se pasa a "
+"<command>eval</command> para su ejecución real, las redirecciones de entrada "
+"y salida se pueden especificar en <envar>command_args</envar>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:679
@@ -1143,6 +1400,16 @@ msgid ""
 "envar>. Another way is to modify <envar>rc_flags</envar> <link linkend=\"rc-"
 "flags\">as shown later</link>."
 msgstr ""
+"<emphasis>Never</emphasis>incluir opciones discontinuas, como <option>-X</"
+"option> o <option>--foo</option>, en <envar>command_args</envar>. Los "
+"contenidos de <envar>command_args</envar> aparecerá al final de la línea de "
+"comando final, por lo que es probable que sigan los argumentos presentes en "
+"<envar>${name}_flags</envar>; pero la mayoría de los comandos no reconocerán "
+"las opciones discontinuas después de los argumentos ordinarios. Una mejor "
+"forma de pasar opciones adicionales a <envar>$command</envar> Es agregarlos "
+"al principio de <envar>${name}_flags</envar>. Otra forma es "
+"modificar<envar>rc_flags</envar> <link linkend=\"rc-flags\">como se muestra "
+"más adelante</link>."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:695
@@ -1153,6 +1420,12 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> where it can find the "
 "pidfile for its default methods to use."
 msgstr ""
+"Un demonio de buena educación debe crear un <emphasis>pidfile</emphasis> "
+"para que su proceso se pueda encontrar de manera más fácil y confiable. La "
+"variable <envar>pidfile</envar>,Si está configurado, dice "
+"<citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> donde puede "
+"encontrar el archivo pid para utilizar sus métodos predeterminados."
 
 #. (itstool) path: note/para
 #: article.translate.xml:703
@@ -1162,6 +1435,11 @@ msgid ""
 "already running before starting it. This check can be skipped by using the "
 "<option>faststart</option> argument."
 msgstr ""
+"De hecho, <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> también usará el "
+"archivo pid para ver si el demonio ya se está ejecutando antes de iniciarlo. "
+"Esta verificación se puede omitir utilizando el <option>faststart</option> "
+"argumento."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:711
@@ -1175,6 +1453,15 @@ msgid ""
 "in detail in <citerefentry><refentrytitle>rc.subr</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 msgstr ""
+"Si el demonio no se puede ejecutar a menos que existan ciertos archivos, "
+"simplemente enumerelos en <envar>required_files</envar>, y "
+"<citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> comprobará que "
+"esos archivos existen antes de iniciar el demonio. Tambien hay "
+"<envar>required_dirs</envar> y <envar>required_vars</envar> para directorios "
+"y variables de entorno, respectivamente. Todos ellos se describen en detalle "
+"en <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:720
@@ -1184,6 +1471,10 @@ msgid ""
 "the prerequisite checks by using <option>forcestart</option> as the argument "
 "to the script."
 msgstr ""
+"El método predeterminado de <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> se puede obligar "
+"a omitir las comprobaciones de requisitos previos utilizando "
+"<option>forcestart</option> como argumento del script."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:728
@@ -1195,6 +1486,13 @@ msgid ""
 "default is <symbol>SIGTERM</symbol>, but this can be changed by setting "
 "<envar>sig_stop</envar> appropriately."
 msgstr ""
+"Podemos personalizar las señales para enviar al demonio en caso de que "
+"difieran de las conocidas. En particular,<envar>sig_reload</envar> "
+"especifica la señal que hace que el demonio recargue su configuración; es "
+"<symbol>SIGHUP</symbol> por defecto. Se envía otra señal para detener el "
+"proceso del demonio; el valor predeterminado es <symbol>SIGTERM</symbol>, "
+"pero esto se puede cambiar configurando <envar>sig_stop</envar> "
+"adecuadamente."
 
 #. (itstool) path: note/para
 #: article.translate.xml:738
@@ -1206,6 +1504,14 @@ msgid ""
 "manvolnum></citerefentry> can recognize the <literal>SIG</literal> prefix, "
 "but the versions from other OS types may not."
 msgstr ""
+"Los nombres de las señales deben especificarse para "
+"<citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> sin el "
+"<literal>SIG</literal> prefijo, como se muestra en el ejemplo. La versión "
+"FreeBSD de "
+"<citerefentry><refentrytitle>kill</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> puede reconocer el<literal>SIG</literal> prefijo, pero es "
+"posible que las versiones de otros tipos de sistemas operativos no."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:747
@@ -1218,6 +1524,13 @@ msgid ""
 "citerefentry> commands are invoked before and after the respective method, "
 "as it is evident from their names."
 msgstr ""
+"Es fácil realizar tareas adicionales antes o después de los métodos "
+"predeterminados. Para cada comando-argumento soportado por nuestro script, "
+"podemos definir<envar><replaceable>argumento</replaceable>_precmd</envar> "
+"and <envar><replaceable>argument</replaceable>_postcmd</envar>. Estos "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> los comandos se invocan antes y después del método respectivo, "
+"como se desprende de sus nombres."
 
 #. (itstool) path: note/para
 #: article.translate.xml:757
@@ -1232,6 +1545,15 @@ msgid ""
 "<envar><replaceable>argument</replaceable>_cmd</envar> lets us logically "
 "separate the checks from the action."
 msgstr ""
+"Anulando un método predeterminado con un personalizado "
+"<envar><replaceable>argument</replaceable>_cmd</envar> todavía no nos impide "
+"hacer uso de <envar><replaceable>argument</replaceable>_precmd</envar> or "
+"<envar><replaceable>argument</replaceable>_postcmd</envar> si es necesario. "
+"En particular, el primero es bueno para verificar las condiciones "
+"sofisticadas y personalizadas que deben cumplirse antes de ejecutar el "
+"comando en sí. Utilizando <envar><replaceable>argument</replaceable>_precmd</"
+"envar> junto con <envar><replaceable>argument</replaceable>_cmd</envar> nos "
+"permite separar lógicamente los controles de la acción."
 
 #. (itstool) path: note/para
 #: article.translate.xml:770
@@ -1242,6 +1564,12 @@ msgid ""
 "makes the real job is a good style in most cases, but never let style limit "
 "your understanding of what is going on behind the curtain."
 msgstr ""
+"No olvide que puede abarrotar cualquier "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> expresiones en los métodos, pre y post comandos que defina. "
+"Invocar simplemente una función que hace el trabajo real es un buen estilo "
+"en la mayoría de los casos, pero nunca deje que el estilo limite su "
+"comprensión de lo que sucede detrás de la cortina."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:780
@@ -1250,6 +1578,10 @@ msgid ""
 "as <emphasis>commands</emphasis> to our script, we need to list them in "
 "<envar>extra_commands</envar> and provide methods to handle them."
 msgstr ""
+"Si quisiéramos implementar argumentos personalizados, que también se pueden "
+"considerar como <emphasis>commands</emphasis> a nuestro script, debemos "
+"incluirlos en <envar>extra_commands</envar> Y proporcionar métodos para "
+"manejarlos."
 
 #. (itstool) path: note/para
 #: article.translate.xml:787
@@ -1262,6 +1594,14 @@ msgid ""
 "all. So we need to ask explicitly that the builtin functionality be "
 "provided. We can do so via <envar>extra_commands</envar>."
 msgstr ""
+"El <option>reload</option>comando es especial. Por un lado, tiene un método "
+"preestablecido en <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry>. Por otra "
+"parte,<option>reload</option> no se ofrece de forma predeterminada. La razón "
+"es que no todos los demonios usan el mismo mecanismo de recarga y algunos no "
+"tienen nada que recargar. Por lo tanto, debemos pedir explícitamente que se "
+"proporcione la funcionalidad incorporada. Podemos hacerlo a través de "
+"<envar>extra_commands</envar>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:796
@@ -1274,6 +1614,13 @@ msgid ""
 "to it. The signal is preset to <symbol>SIGHUP</symbol> but can be customized "
 "via <envar>sig_reload</envar> if necessary."
 msgstr ""
+"¿Qué obtenemos del método predeterminado para <option>reload</option>? Muy a "
+"menudo, los demonios recargan su configuración al recibir una señal, por lo "
+"general, <symbol>SIGHUP</symbol>.Por lo tanto <citerefentry><refentrytitle>rc"
+".subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> intenta "
+"recargar el demonio enviándole una señal. La señal está preconfigurada para "
+"<symbol>SIGHUP</symbol> pero se puede personalizar a través de "
+"<envar>sig_reload</envar> si necesario."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:808
@@ -1284,6 +1631,11 @@ msgid ""
 "<option>xyzzy</option> is just inlined while that for <option>plugh</option> "
 "is implemented as the <function>mumbled_plugh</function> function."
 msgstr ""
+"Nuestro script admite dos comandos no estándar, <option>plugh</option> y "
+"<option>xyzzy</option>. Los vimos enumerados en <envar>extra_commands</"
+"envar>, y ahora es el momento de proporcionarles métodos. El método para "
+"<option>xyzzy</option> está en línea mientras que para <option>plugh</"
+"option> se implementa como el <function>mumbled_plugh</function> función."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:816
@@ -1295,6 +1647,12 @@ msgid ""
 "<citerefentry><refentrytitle>devd.conf</refentrytitle><manvolnum>5</"
 "manvolnum></citerefentry>."
 msgstr ""
+"Los comandos no estándar no se invocan durante el inicio o el apagado. Por "
+"lo general, son para conveniencia del administrador del sistema. También se "
+"pueden utilizar desde otros subsistemas, por ejemplo, "
+"<citerefentry><refentrytitle>devd</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> si se especifica en <citerefentry><refentrytitle>devd."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:821
@@ -1304,14 +1662,22 @@ msgid ""
 "manvolnum></citerefentry> when the script is invoked without arguments. For "
 "example, here is the usage line from the script under study:"
 msgstr ""
+"La lista completa de comandos disponibles se puede encontrar en la línea de "
+"uso impresa por <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> cuando se invoca "
+"el script sin argumentos. Por ejemplo, aquí está la línea de uso del script "
+"en estudio:"
 
 #. (itstool) path: callout/screen
 #: article.translate.xml:826
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>/etc/rc.d/mumbled</userinput>\n"
 "Usage: /etc/rc.d/mumbled [fast|force|one](start|stop|restart|rcvar|reload|plugh|xyzzy|status|poll)"
 msgstr ""
+"<prompt>#</prompt> <userinput>/etc/rc.d/mumbled</userinput>\n"
+"Usage: /etc/rc.d/mumbled "
+"[fast|force|one](start|stop|restart|rcvar|reload|plugh|xyzzy|status|poll)"
 
 #. (itstool) path: callout/para
 #: article.translate.xml:831
@@ -1325,6 +1691,15 @@ msgid ""
 "<citerefentry><refentrytitle>rc.subr</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>, as shown in the example."
 msgstr ""
+"Un script puede invocar sus propios comandos estándar o no estándar si es "
+"necesario. Esto puede parecer similar a las funciones de llamada, pero "
+"sabemos que los comandos y las funciones del shell no siempre son lo mismo. "
+"Por ejemplo, <command>xyzzy</command> no se implementa como una función "
+"aquí. Además, puede haber un comando previo y posterior, que deben invocarse "
+"de manera ordenada. Entonces, la forma correcta para que un script ejecute "
+"su propio comando es mediante <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry>, como se muestra "
+"en el ejemplo."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:843
@@ -1340,6 +1715,18 @@ msgid ""
 "or <literal>0</literal>, case insensitive; it prints a warning message if "
 "the variable contains anything else, i.e., junk."
 msgstr ""
+"Una práctica función llamada <function>checkyesno</function> es "
+"proporcionado por <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry>.Toma un nombre "
+"de variable como argumento y devuelve un código de salida cero si y solo si "
+"la variable se establece en <literal>SI</literal>, o <literal>VERDAD</"
+"literal>, o <literal>PRENDER</literal>, o <literal>1</literal>, no distingue "
+"entre mayúsculas y minúsculas; de lo contrario, se devuelve un código de "
+"salida distinto de cero. En el último caso, la función prueba que la "
+"variable esté configurada como <literal>NO</literal>, <literal>FALSO</"
+"literal>, <literal>APAGAR</literal>, o <literal>0</literal>, no distingue "
+"entre mayúsculas y minúsculas; imprime un mensaje de advertencia si la "
+"variable contiene algo más, es decir, basura."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:856
@@ -1348,6 +1735,10 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> a zero exit code means "
 "true and a non-zero exit code means false."
 msgstr ""
+"Tenga en cuenta que para "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> un código de salida cero significa verdadero y un código de "
+"salida distinto de cero significa falso."
 
 #. (itstool) path: important/para
 #: article.translate.xml:860
@@ -1356,20 +1747,26 @@ msgid ""
 "name</emphasis>. Do not pass the expanded <emphasis>value</emphasis> of a "
 "variable to it; it will not work as expected."
 msgstr ""
+"La <function>checkyesno</function> function takes a <emphasis>variable name</"
+"emphasis>. No pase el expandido <emphasis>value</emphasis> de una variable a "
+"él; no funcionará como se esperaba."
 
 #. (itstool) path: important/para
 #: article.translate.xml:865
 msgid "The following is the correct usage of <function>checkyesno</function>:"
-msgstr ""
+msgstr "El siguiente es el uso correcto de <function>checkyesno</function>:"
 
 #. (itstool) path: important/programlisting
 #: article.translate.xml:868
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "if checkyesno mumbled_enable; then\n"
 "        foo\n"
 "fi"
 msgstr ""
+"if checkyesno mumbled_enable; then\n"
+"        foo\n"
+"fi"
 
 #. (itstool) path: important/para
 #: article.translate.xml:872
@@ -1377,15 +1774,20 @@ msgid ""
 "On the contrary, calling <function>checkyesno</function> as shown below will "
 "not work — at least not as expected:"
 msgstr ""
+"Al contrario, llamando <function>checkyesno</function> como se muestra a "
+"continuación no funcionará, al menos no como se esperaba:"
 
 #. (itstool) path: important/programlisting
 #: article.translate.xml:876
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "if checkyesno \"${mumbled_enable}\"; then\n"
 "        foo\n"
 "fi"
 msgstr ""
+"if checkyesno \"${mumbled_enable}\"; then\n"
+"        foo\n"
+"fi"
 
 #. (itstool) path: callout/para
 #: article.translate.xml:883
@@ -1394,6 +1796,9 @@ msgid ""
 "$command</envar> by modifying <envar>rc_flags</envar> in <envar>"
 "$start_precmd</envar>."
 msgstr ""
+"<anchor xml:id=\"rc-flags\"/>Podemos afectar las banderas que se pasarán a "
+"<envar>$command</envar> modificando<envar>rc_flags</envar> en "
+"<envar>$start_precmd</envar>."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:889
@@ -1405,6 +1810,13 @@ msgid ""
 "<function>info</function>, <function>warn</function>, and <function>err</"
 "function>. The latter function then exits the script with the code specified."
 msgstr ""
+"En ciertos casos, es posible que necesitemos emitir un mensaje importante "
+"que debe ir a <application>syslog</application> también. Esto se puede hacer "
+"fácilmente con lo siguiente <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> funciones: "
+"<function>debug</function>, <function>info</function>, <function>warn</"
+"function>, y <function>err</function>. La última función sale del script con "
+"el código especificado."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:899
@@ -1415,6 +1827,12 @@ msgid ""
 "turn, <envar><replaceable>argument</replaceable>_postcmd</envar> will not be "
 "invoked unless the main method returns a zero exit code."
 msgstr ""
+"Los códigos de salida de los métodos y sus pre-comandos no solo se ignoran "
+"por defecto. Si <envar><replaceable>argument</replaceable>_precmd</envar> "
+"devuelve un código de salida distinto de cero, el método principal no se "
+"ejecutará. En turno, <envar><replaceable>argument</replaceable>_postcmd</"
+"envar> no se invocará a menos que el método principal devuelva un código de "
+"salida cero."
 
 #. (itstool) path: note/para
 #: article.translate.xml:909
@@ -1424,11 +1842,16 @@ msgid ""
 "those exit codes and invoke all commands anyway by prefixing an argument "
 "with <literal>force</literal>, as in <option>forcestart</option>."
 msgstr ""
+"sin embargo, <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> se le puede "
+"indicar desde la línea de comando que ignore esos códigos de salida e "
+"invoque todos los comandos de todos modos al anteponer un argumento con "
+"<literal>force</literal>, como en <option>forcestart</option>."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:920
 msgid "Connecting a script to the rc.d framework"
-msgstr ""
+msgstr "Conectando un script al framework rc.d"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:922
@@ -1445,6 +1868,18 @@ msgid ""
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/porters-handbook/rc-scripts."
 "html\">in the Porter's Handbook</link>."
 msgstr ""
+"Una vez que se ha escrito un script, debe integrarse en <filename>rc.d</"
+"filename>. El paso crucial es instalar el script en <filename>/etc/rc.d</"
+"filename> (para el sistema base) o <filename>/usr/local/etc/rc.d</filename> ("
+"para puertos). Ambos &lt;<filename>bsd.prog.mk</filename>&gt; and "
+"&lt;<filename>bsd.port.mk</filename>&gt; proporcione ganchos convenientes "
+"para eso, y por lo general no tiene que preocuparse por la propiedad y el "
+"modo adecuados. Los scripts del sistema deben instalarse desde <filename>src/"
+"etc/rc.d</filename> a través de <filename>Makefile</filename>encontrado "
+"allí. Los scripts de puerto se pueden instalar usando <varname>USE_RC_SUBR</"
+"varname>como se describe <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US."
+"ISO8859-1/books/porters-handbook/rc-scripts.html\">en el manual del "
+"portero</link>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:936
@@ -1456,6 +1891,13 @@ msgid ""
 "demand nothing, it can hardly start before the basic filesystems have been "
 "checked and mounted."
 msgstr ""
+"Sin embargo, debemos considerar de antemano el lugar de nuestro script en la "
+"secuencia de inicio del sistema. Es probable que el servicio manejado por "
+"nuestro script dependa de otros servicios. Por ejemplo, un demonio de red no "
+"puede funcionar sin las interfaces de red y el enrutamiento en "
+"funcionamiento. Incluso si un servicio parece no exigir nada, difícilmente "
+"puede iniciarse antes de que se hayan verificado y montado los sistemas de "
+"archivos básicos."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:944
@@ -1470,6 +1912,15 @@ msgid ""
 "emphasis> the files so that each file can speak for itself only. A file can "
 "specify the following information:"
 msgstr ""
+"Nosotros mencionamos <citerefentry><refentrytitle>rcorder</refentrytitle><man"
+"volnum>8</manvolnum></citerefentry> ya. Ahora es el momento de examinarlo de "
+"cerca. En una palabra, <citerefentry><refentrytitle>rcorder</refentrytitle><m"
+"anvolnum>8</manvolnum></citerefentry> toma un conjunto de archivos, examina "
+"su contenido e imprime una lista ordenada por dependencia de archivos del "
+"conjunto a <varname>stdout</varname>. El punto es mantener la información de "
+"dependencia <emphasis>inside</emphasis> los archivos para que cada archivo "
+"pueda hablar por sí solo. Un archivo puede especificar la siguiente "
+"información:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:955
@@ -1477,12 +1928,15 @@ msgid ""
 "the names of the <quote>conditions</quote> (which means services to us) it "
 "<emphasis>provides</emphasis>;"
 msgstr ""
+"los nombres de la <quote>conditions</quote> (Lo que significa servicios para "
+"nosotros) <emphasis>provides</emphasis>;"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:960
 msgid ""
 "the names of the <quote>conditions</quote> it <emphasis>requires</emphasis>;"
 msgstr ""
+"los nombres de la <quote>conditions</quote> it <emphasis>requiere</emphasis>;"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:965
@@ -1490,6 +1944,8 @@ msgid ""
 "the names of the <quote>conditions</quote> this file should run "
 "<emphasis>before</emphasis>;"
 msgstr ""
+"los nombres de la <quote>conditions</quote> este archivo debería ejecutarse "
+"<emphasis>ante</emphasis>;"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:970
@@ -1499,6 +1955,11 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> can be instructed via "
 "options to include or omit the files having particular keywords listed.)"
 msgstr ""
+"adicional <emphasis>keywords</emphasis> que se puede utilizar para "
+"seleccionar un subconjunto de todo el conjunto de archivos (<citerefentry><re"
+"fentrytitle>rcorder</refentrytitle><manvolnum>8</manvolnum></citerefentry> "
+"puede recibir instrucciones a través de opciones para incluir u omitir los "
+"archivos que tienen palabras clave específicas enumeradas)."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:977
@@ -1514,6 +1975,18 @@ msgid ""
 "simplify their processing. See <citerefentry><refentrytitle>rcorder</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> for details."
 msgstr ""
+"No es de extrañar que <citerefentry><refentrytitle>rcorder</refentrytitle><ma"
+"nvolnum>8</manvolnum></citerefentry> solo puede manejar archivos de texto "
+"con una sintaxis cercana a la de "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>. Es decir, líneas especiales entendidas por <citerefentry><refe"
+"ntrytitle>rcorder</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>parece "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> comentarios. La sintaxis de estas líneas especiales es "
+"bastante rígida para simplificar su procesamiento. Ver <citerefentry><refentr"
+"ytitle>rcorder</refentrytitle><manvolnum>8</manvolnum></citerefentry> para "
+"detalles."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:984
@@ -1526,6 +1999,13 @@ msgid ""
 "<citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</"
 "manvolnum></citerefentry>."
 msgstr ""
+"Además de usar<citerefentry><refentrytitle>rcorder</refentrytitle><manvolnum>"
+"8</manvolnum></citerefentry> líneas especiales, un script puede insistir en "
+"su dependencia de otro servicio simplemente iniciándolo a la fuerza. Esto "
+"puede ser necesario cuando el otro servicio es opcional y no se inicia por "
+"sí solo porque el administrador del sistema lo ha desactivado por error en "
+"<citerefentry><refentrytitle>rc."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:990
@@ -1533,6 +2013,8 @@ msgid ""
 "With this general knowledge in mind, let us consider the simple daemon "
 "script enhanced with dependency stuff:"
 msgstr ""
+"Con este conocimiento general en mente, consideremos el script demonio "
+"simple mejorado con cosas de dependencia:"
 
 #. (itstool) path: informalexample/programlisting
 #: article.translate.xml:994
@@ -1595,7 +2077,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: article.translate.xml:1022
 msgid "As before, detailed analysis follows:"
-msgstr ""
+msgstr "Como antes, sigue un análisis detallado:"
 
 #. (itstool) path: callout/para
 #: article.translate.xml:1026
@@ -1604,6 +2086,9 @@ msgid ""
 "provides. Now other scripts can record a dependency on our script by those "
 "names."
 msgstr ""
+"Esa línea declara los nombres de <quote>conditions</quote> nuestro script "
+"proporciona. Ahora, otros scripts pueden registrar una dependencia de "
+"nuestro script con esos nombres."
 
 #. (itstool) path: note/para
 #: article.translate.xml:1031
@@ -1612,6 +2097,9 @@ msgid ""
 "prevents us from listing several conditions there, e.g., for compatibility "
 "reasons."
 msgstr ""
+"Por lo general, un script especifica una sola condición proporcionada. Sin "
+"embargo, nada nos impide enumerar varias condiciones allí, por ejemplo, por "
+"razones de compatibilidad."
 
 #. (itstool) path: note/para
 #: article.translate.xml:1036
@@ -1619,6 +2107,8 @@ msgid ""
 "In any case, the name of the main, or the only, <literal>PROVIDE:</literal> "
 "condition should be the same as <envar>${name}</envar>."
 msgstr ""
+"En cualquier caso, el nombre del principal, o el único, <literal>PROVIDE:</"
+"literal> la condición debe ser la misma que <envar>${name}</envar>."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:1043
@@ -1630,6 +2120,12 @@ msgid ""
 "<filename>DAEMON</filename> and <filename>cleanvar</filename>, but before "
 "that providing <filename>LOGIN</filename>."
 msgstr ""
+"Entonces nuestro script indica qué <quote>conditions</quote> proporcionado "
+"por otros scripts de los que depende. Según las líneas, nuestro script "
+"pregunta <citerefentry><refentrytitle>rcorder</refentrytitle><manvolnum>8</ma"
+"nvolnum></citerefentry> para ponerlo después del script(s) que proporcionan "
+"<filename>DAEMON</filename> y <filename>cleanvar</filename>, pero antes de "
+"eso proporcionando <filename>LOGIN</filename>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:1051
@@ -1643,6 +2139,14 @@ msgid ""
 "system security will benefit from the firewall being ready before there is "
 "any network traffic."
 msgstr ""
+"La <literal>BEFORE:</literal> No se debe abusar de la línea para evitar una "
+"lista de dependencias incompleta en el otro script. El caso apropiado para "
+"usar <literal>ANTES:</literal> es cuando el otro script no se preocupa por "
+"el nuestro, pero nuestro script puede hacer mejor su tarea si se ejecuta "
+"antes que el otro. Un ejemplo típico de la vida real son las interfaces de "
+"red frente al firewall: si bien las interfaces no dependen del firewall para "
+"hacer su trabajo, la seguridad del sistema se beneficiará de que el firewall "
+"esté listo antes de que haya tráfico de red."
 
 #. (itstool) path: note/para
 #: article.translate.xml:1063
@@ -1654,6 +2158,12 @@ msgid ""
 "list and purposes can be found in <citerefentry><refentrytitle>rc</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 msgstr ""
+"Además de las condiciones correspondientes a un solo servicio cada una, "
+"existen metacondiciones y sus <quote>placeholder</quote> scripts se utiliza "
+"para garantizar que ciertos grupos de operaciones se realicen antes que "
+"otros. Estos se denotan por <filename><replaceable>UPPERCASE</replaceable></"
+"filename> nombres. Su lista y propósitos se pueden encontrar en <citerefentry"
+"><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:1072
@@ -1671,6 +2181,19 @@ msgid ""
 "unavailable. In certain cases, we can help it as discussed <link linkend="
 "\"forcedep\">below.</link>"
 msgstr ""
+"Tenga en cuenta que poner un nombre de servicio en el<literal>REQUIERE:</"
+"literal> line no garantiza que el servicio se esté ejecutando realmente para "
+"cuando se inicie nuestro script. El servicio requerido puede fallar al "
+"iniciarse o simplemente estar deshabilitado en "
+"<citerefentry><refentrytitle>rc."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>. Obviamente, <cit"
+"erefentry><refentrytitle>rcorder</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>no puede rastrear tales detalles, y "
+"<citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> tampoco haré eso. En consecuencia, la aplicación iniciada por "
+"nuestro script debería poder hacer frente a cualquier servicio requerido que "
+"no esté disponible. En ciertos casos, podemos ayudarlo como se discutió "
+"<link linkend=\"forcedep\">abajo.</link>"
 
 #. (itstool) path: callout/para
 #: article.translate.xml:1086
@@ -1687,6 +2210,18 @@ msgid ""
 "manvolnum></citerefentry> will pick only those having a keyword from the "
 "keep list (unless empty) and not having a keyword from the skip list."
 msgstr ""
+"<anchor xml:id=\"keywords\"/>Como recordamos del texto anterior, <citerefentr"
+"y><refentrytitle>rcorder</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> Las palabras clave se pueden utilizar para seleccionar u "
+"omitir algunos guiones. A saber, cualquiera <citerefentry><refentrytitle>rcor"
+"der</refentrytitle><manvolnum>8</manvolnum></citerefentry> El consumidor "
+"puede especificar a través de <option>-k</option> y <option>-s</option> "
+"opciones qué palabras clave están en el <quote>keep list</quote> and "
+"<quote>omitir lista</quote>, respectivamente. De todos los archivos que se "
+"ordenarán por dependencia, <citerefentry><refentrytitle>rcorder</refentrytitl"
+"e><manvolnum>8</manvolnum></citerefentry> seleccionará solo aquellos que "
+"tengan una palabra clave de la lista de conservación (a menos que estén "
+"vacíos) y que no tengan una palabra clave de la lista de omisión."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:1096
@@ -1697,11 +2232,17 @@ msgid ""
 "scripts define the standard list of FreeBSD <filename>rc.d</filename> "
 "keywords and their meanings as follows:"
 msgstr ""
+"En FreeBSD, <citerefentry><refentrytitle>rcorder</refentrytitle><manvolnum>8<"
+"/manvolnum></citerefentry> es usado por <filename>/etc/rc</filename> y "
+"<filename>/etc/rc.shutdown</filename>. Estos dos scripts definen la lista "
+"estándar de FreeBSD <filename>rc.d</filename> palabras clave y sus "
+"significados de la siguiente manera:"
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:1104
+#, fuzzy
 msgid "<literal>nojail</literal>"
-msgstr ""
+msgstr "<literal>nojail</literal>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1107
@@ -1711,11 +2252,16 @@ msgid ""
 "automatic startup and shutdown procedures will ignore the script if inside a "
 "jail."
 msgstr ""
+"El servicio no es para "
+"<citerefentry><refentrytitle>jail</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> medio ambiente. Los procedimientos automáticos de inicio y "
+"apagado ignorarán el script si se encuentra dentro de una cárcel."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:1114
+#, fuzzy
 msgid "<literal>nostart</literal>"
-msgstr ""
+msgstr "<literal>nostart</literal>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1117
@@ -1725,11 +2271,16 @@ msgid ""
 "<literal>shutdown</literal> keyword, this can be used to write scripts that "
 "do something only at system shutdown."
 msgstr ""
+"El servicio debe iniciarse manualmente o no iniciarse en absoluto. El "
+"procedimiento de inicio automático ignorará el script. En conjunción con el "
+"<literal>shutdown</literal> palabra clave, esto se puede utilizar para "
+"escribir scripts que hacen algo solo cuando se apaga el sistema."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:1127
+#, fuzzy
 msgid "<literal>shutdown</literal>"
-msgstr ""
+msgstr "<literal>shutdown</literal>"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:1130
@@ -1737,6 +2288,8 @@ msgid ""
 "This keyword is to be listed <emphasis>explicitly</emphasis> if the service "
 "needs to be stopped before system shutdown."
 msgstr ""
+"Esta palabra clave debe aparecer en la lista <emphasis>explicitly</emphasis> "
+"si es necesario detener el servicio antes de apagar el sistema."
 
 #. (itstool) path: note/para
 #: article.translate.xml:1135
@@ -1752,6 +2305,17 @@ msgid ""
 "stopped before their prerequisites, <filename>/etc/rc.shutdown</filename> "
 "runs the scripts in reverse dependency order."
 msgstr ""
+"Cuando el sistema se va a apagar, <filename>/etc/rc.shutdown</"
+"filename>carreras. Asume que la mayoría <filename>rc.d</filename> Los "
+"scripts no tienen nada que ver en ese momento. Por lo tanto <filename>/etc/rc"
+".shutdown</filename>invoca selectivamente <filename>rc.d</filename> scripts "
+"con el <literal>shutdown</literal> palabra clave, ignorando efectivamente el "
+"resto de los guiones. Para un apagado aún más rápido, <filename>/etc/rc."
+"shutdown</filename> pasa el <option>faststop</option> comando a los scripts "
+"que ejecuta para que omitan las comprobaciones preliminares, por ejemplo, la "
+"comprobación del archivo pid. Dado que los servicios dependientes deben "
+"detenerse antes de cumplir con sus requisitos previos, <filename>/etc/rc."
+"shutdown</filename> ejecuta los scripts en orden inverso de dependencia."
 
 #. (itstool) path: note/para
 #: article.translate.xml:1152
@@ -1767,6 +2331,17 @@ msgid ""
 "needs considerable time or special actions to shut down cleanly. A typical "
 "example of such a service is a database engine."
 msgstr ""
+"Si escribes un verdadero <filename>rc.d</filename> script, debe considerar "
+"si es relevante al momento de apagar el sistema. Por ejemplo, si su script "
+"hace su trabajo en respuesta a la <option>start</option>comando solamente, "
+"entonces no necesita incluir esta palabra clave. Sin embargo, si su "
+"secuencia de comandos administra un servicio, probablemente sea una buena "
+"idea detenerlo antes de que el sistema pase a la etapa final de la secuencia "
+"de apagado descrita en "
+"<citerefentry><refentrytitle>halt</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>. En particular, un servicio debe detenerse explícitamente si "
+"necesita un tiempo considerable o acciones especiales para cerrarse "
+"limpiamente. Un ejemplo típico de tal servicio es un motor de base de datos."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:1173
@@ -1776,6 +2351,10 @@ msgid ""
 "the hierarchy of configuration variables for your <filename>rc.d</filename> "
 "scripts if they are interdependent."
 msgstr ""
+"<anchor xml:id=\"forcedep\"/>Para empezar,<function>force_depend</function> "
+"debe usarse con mucho cuidado. Generalmente es mejor revisar la jerarquía de "
+"variables de configuración para su <filename>rc.d</filename> scripts Si "
+"ellos son interdependientes."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:1179
@@ -1796,11 +2375,27 @@ msgid ""
 "will be emitted by <function>force_depend</function> because it should be "
 "invoked only if a misconfiguration has been detected."
 msgstr ""
+"Si todavía no puedes prescindir <function>force_depend</function>, el "
+"ejemplo ofrece un modismo de cómo invocarlo condicionalmente. En el ejemplo, "
+"nuestro <command>mumbled</command> daemon requiere que otro, <command>frotz</"
+"command>, be started in advance. However, <command>frotz</command> is "
+"optional, too; and <citerefentry><refentrytitle>rcorder</refentrytitle><manvo"
+"lnum>8</manvolnum></citerefentry> no sabe nada de esos detalles. "
+"Afortunadamente, nuestro script tiene acceso a todos "
+"<citerefentry><refentrytitle>rc."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>variables. "
+"Si<envar>frotz_enable</envar> es cierto, esperamos lo mejor y confiamos en "
+"<filename>rc.d</filename> haber comenzado <command>frotz</command>. De lo "
+"contrario, verificamos a la fuerza el estado de <command>frotz</command>. "
+"Finalmente, reforzamos nuestra dependencia de <command>frotz</command> si se "
+"encuentra que no se está ejecutando. Un mensaje de advertencia será emitido "
+"por <function>force_depend</function> porque solo debe invocarse si se ha "
+"detectado una configuración incorrecta."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:1201
 msgid "Giving more flexibility to an rc.d script"
-msgstr ""
+msgstr "Dar más flexibilidad a un script rc.d"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1203
@@ -1822,6 +2417,25 @@ msgid ""
 "respective <filename>rc.d</filename> script calls for an extra argument, the "
 "interface name."
 msgstr ""
+"Cuando se invoca durante el inicio o el apagado, un <filename>rc.d</"
+"filename> script se supone que actúa sobre todo el subsistema del que es "
+"responsable. Ejemplo., <filename>/etc/rc.d/netif</filename> debe iniciar o "
+"detener todas las interfaces de red descritas por "
+"<citerefentry><refentrytitle>rc."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>. Cualquiera de "
+"las tareas se puede indicar de forma única mediante un único argumento de "
+"comando, como <option>start</option> o <option>stop</option>. Entre el "
+"inicio y el apagado, <filename>rc.d</filename> Los scripts ayudan al "
+"administrador a controlar el sistema en ejecución, y es cuando surge la "
+"necesidad de mayor flexibilidad y precisión. Por ejemplo, el administrador "
+"puede querer agregar la configuración de una nueva interfaz de red "
+"a<citerefentry><refentrytitle>rc."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> y luego "
+"iniciarlo sin interferir con el funcionamiento de las interfaces existentes. "
+"La próxima vez, es posible que el administrador deba cerrar una única "
+"interfaz de red. En el espíritu de la línea de comando, el respectivo "
+"<filename>rc.d</filename> script pide un argumento adicional, el nombre de "
+"la interfaz."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1221
@@ -1831,6 +2445,11 @@ msgid ""
 "number of arguments to script's methods (within the system limits). Due to "
 "that, the changes in the script itself can be minimal."
 msgstr ""
+"Por suerte, <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> permite pasar "
+"cualquier número de argumentos a los métodos del script (dentro de los "
+"límites del sistema). Debido a eso, los cambios en el propio script pueden "
+"ser mínimos."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1225
@@ -1846,6 +2465,17 @@ msgid ""
 "that it is for the main script to decide which arguments are to be passed to "
 "its methods."
 msgstr ""
+"Como puedo<citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> obtenga acceso a "
+"los argumentos adicionales de la línea de comandos. ¿Debería agarrarlos "
+"directamente? De ninguna manera. En primer lugar, un "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> La función no tiene acceso a los parámetros posicionales de su "
+"llamador, pero <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> es solo un saco "
+"de tales funciones. En segundo lugar, la buena forma de <filename>rc.d</"
+"filename> dicta que corresponde al script principal decidir qué argumentos "
+"se deben pasar a sus métodos."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1235
@@ -1859,6 +2489,14 @@ msgid ""
 "so what is <envar>$2</envar> in the original command line will be presented "
 "as <envar>$1</envar> to the method, and so on."
 msgstr ""
+"Entonces, el enfoque adoptado por <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> es como sigue: "
+"<function>run_rc_command</function> pasa todos sus argumentos, excepto el "
+"primero, al método respectivo literalmente. El primer argumento, omitido, es "
+"el nombre del método en sí.: <option>start</option>, <option>stop</"
+"option>,etc. Será desplazado por <function>run_rc_command</function>, "
+"entonces que es <envar>$2</envar> en la línea de comando original se "
+"presentará como <envar>$1</envar> al método, y así sucesivamente."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1244
@@ -1866,10 +2504,13 @@ msgid ""
 "To illustrate this opportunity, let us modify the primitive dummy script so "
 "that its messages depend on the additional arguments supplied. Here we go:"
 msgstr ""
+"Para ilustrar esta oportunidad, modifiquemos el script ficticio primitivo "
+"para que sus mensajes dependan de los argumentos adicionales proporcionados. "
+"Aquí vamos:"
 
 #. (itstool) path: informalexample/programlisting
 #: article.translate.xml:1249
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "#!/bin/sh\n"
 "\n"
@@ -1909,11 +2550,48 @@ msgid ""
 "load_rc_config $name\n"
 "run_rc_command \"$@\"<co xml:id=\"rcng-args-all\"/>"
 msgstr ""
+"#!/bin/sh\n"
+"\n"
+". /etc/rc.subr\n"
+"\n"
+"name=\"dummy\"\n"
+"start_cmd=\"${name}_start\"\n"
+"stop_cmd=\":\"\n"
+"kiss_cmd=\"${name}_kiss\"\n"
+"extra_commands=\"kiss\"\n"
+"\n"
+"dummy_start()\n"
+"{\n"
+"        if [ $# -gt 0 ]; then<co xml:id=\"rcng-args-start\"/>\n"
+"                echo \"Greeting message: $*\"\n"
+"        else\n"
+"                echo \"Nothing started.\"\n"
+"        fi\n"
+"}\n"
+"\n"
+"dummy_kiss()\n"
+"{\n"
+"        echo -n \"A ghost gives you a kiss\"\n"
+"        if [ $# -gt 0 ]; then<co xml:id=\"rcng-args-kiss\"/>\n"
+"                echo -n \" and whispers: $*\"\n"
+"        fi\n"
+"        case \"$*\" in\n"
+"        *[.!?])\n"
+"                echo\n"
+"                ;;\n"
+"        *)\n"
+"                echo .\n"
+"                ;;\n"
+"        esac\n"
+"}\n"
+"\n"
+"load_rc_config $name\n"
+"run_rc_command \"$@\"<co xml:id=\"rcng-args-all\"/>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1288
 msgid "What essential changes can we notice in the script?"
-msgstr ""
+msgstr "¿Qué cambios esenciales podemos notar en el script?"
 
 #. (itstool) path: callout/para
 #: article.translate.xml:1292
@@ -1925,6 +2603,13 @@ msgid ""
 "manvolnum></citerefentry> as one string in the next line — note <envar>$*</"
 "envar> within the double quotes. Here is how the script can be invoked now:"
 msgstr ""
+"Todos los argumentos que escribe después <option>start</option>pueden "
+"terminar como parámetros posicionales para el método respectivo. Podemos "
+"usarlos de cualquier manera de acuerdo con nuestra tarea, habilidades y "
+"fantasía. En el ejemplo actual, simplemente los pasamos todos "
+"a<citerefentry><refentrytitle>echo</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> como una cadena en la siguiente línea - nota <envar>$*</envar> "
+"entre las comillas dobles. Así es como se puede invocar el script ahora:"
 
 #. (itstool) path: callout/screen
 #: article.translate.xml:1300
@@ -1935,6 +2620,11 @@ msgid ""
 "<prompt>#</prompt> <userinput>/etc/rc.d/dummy start Hello world!</userinput>\n"
 "Greeting message: Hello world!"
 msgstr ""
+"<prompt>#</prompt> <userinput>/etc/rc.d/dummy start</userinput>\n"
+"No empezó nada.\n"
+"<prompt>#</prompt> <userinput>/etc/rc.d/dummy start Hello world!</userinput>"
+"\n"
+"Mensaje de bienvenida: ¡Hola mundo!"
 
 #. (itstool) path: callout/para
 #: article.translate.xml:1307
@@ -1944,6 +2634,10 @@ msgid ""
 "take advantage of the extra arguments not less than <option>start</option> "
 "does. E.g.:"
 msgstr ""
+"Lo mismo se aplica a cualquier método que proporcione nuestro script, no "
+"solo a uno estándar. Hemos agregado un método personalizado llamado "
+"<option>kiss</option>, y puede aprovechar los argumentos adicionales no "
+"menos de <option>start</option> hace Ejemplo.:"
 
 #. (itstool) path: callout/screen
 #: article.translate.xml:1313
@@ -1954,6 +2648,11 @@ msgid ""
 "<prompt>#</prompt> <userinput>/etc/rc.d/dummy kiss Once I was Etaoin Shrdlu...</userinput>\n"
 "A ghost gives you a kiss and whispers: Once I was Etaoin Shrdlu..."
 msgstr ""
+"<prompt>#</prompt> <userinput>/etc/rc.d/dummy kiss</userinput>\n"
+"Un fantasma te da un beso.\n"
+"<prompt>#</prompt> <userinput>/etc/rc.d/dummy kiss Once I was Etaoin "
+"Shrdlu...</userinput>\n"
+"Un fantasma te da un beso y susurra: Una vez fui Etaoin Shrdlu ..."
 
 #. (itstool) path: callout/para
 #: article.translate.xml:1320
@@ -1962,6 +2661,10 @@ msgid ""
 "substitute <literal>\"$@\"</literal> for <literal>\"$1\"</literal> in the "
 "last line of our script, where we invoke <function>run_rc_command</function>."
 msgstr ""
+"Si solo queremos pasar todos los argumentos adicionales a cualquier método, "
+"simplemente podemos sustituir <literal>\"$@\"</literal> para <literal>\"$1\""
+"</literal> en la última línea de nuestro script, donde invocamos "
+"<function>run_rc_command</function>."
 
 #. (itstool) path: important/para
 #: article.translate.xml:1326
@@ -1975,6 +2678,15 @@ msgid ""
 "until you fully understand them because their misuse will result in buggy "
 "and insecure scripts."
 msgstr ""
+"Un <citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> El programador trató de comprender la sutil diferencia entre "
+"<envar>$*</envar> y <envar>$@</envar> como las formas de designar todos los "
+"parámetros posicionales. Para su discusión en profundidad, consulte un buen "
+"manual sobre "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> scripting. <emphasis>no haga</emphasis> use las expresiones "
+"hasta que las entienda completamente porque su mal uso resultará en scripts "
+"con errores e inseguros."
 
 #. (itstool) path: note/para
 #: article.translate.xml:1337
@@ -1984,11 +2696,15 @@ msgid ""
 "arguments with embedded whitespace may not be processed correctly. The bug "
 "stems from <envar>$*</envar> misuse."
 msgstr ""
+"Actualmente <function>run_rc_command</function> puede tener un error que le "
+"impide mantener los límites originales entre argumentos. Es decir, es "
+"posible que los argumentos con espacios en blanco incrustados no se procesen "
+"correctamente. El error proviene de <envar>$*</envar> mal uso."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:1348
 msgid "Further reading"
-msgstr ""
+msgstr "Otras lecturas"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1350
@@ -1999,6 +2715,12 @@ msgid ""
 "design decisions. It provides insight on the whole <filename>rc.d</filename> "
 "framework and its place in a modern BSD operating system."
 msgstr ""
+"<anchor xml:id=\"lukem\"/><link xlink:href=\"http://www.mewburn.net/luke/"
+"papers/rc.d.pdf\">El artículo original de Luke Mewburn</link> ofrece una "
+"descripción general de <filename>rc.d</filename> y justificación detallada "
+"de sus decisiones de diseño. Proporciona información sobre el conjunto "
+"<filename>rc.d</filename> framework y su lugar en un sistema operativo BSD "
+"moderno."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1357
@@ -2013,6 +2735,15 @@ msgid ""
 "without studying the manual pages and referring to them while writing your "
 "own scripts."
 msgstr ""
+"<anchor xml:id=\"manpages\"/>The manual pages "
+"<citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>, <citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry>, and <citerefentr"
+"y><refentrytitle>rcorder</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> document the <filename>rc.d</filename> componentes con gran "
+"detalle. No puede utilizar completamente el <filename>rc.d</filename>poder "
+"sin estudiar las páginas del manual y consultarlas mientras escribe sus "
+"propios scripts."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:1364
@@ -2025,3 +2756,11 @@ msgid ""
 "filename> scripts were not written by angels, so they might suffer from bugs "
 "and suboptimal design decisions. Now you can improve them!"
 msgstr ""
+"La principal fuente de ejemplos prácticos de la vida real es <filename>/etc/"
+"rc.d</filename> en un sistema en vivo. Su contenido es fácil y agradable de "
+"leer porque la mayoría de las esquinas están ocultas en el fondo. "
+"<citerefentry><refentrytitle>rc."
+"subr</refentrytitle><manvolnum>8</manvolnum></citerefentry>. Sin embargo, "
+"tenga en cuenta que el <filename>/etc/rc.d</filename> scripts no fueron "
+"escritas por ángeles, por lo que podrían sufrir errores y decisiones de "
+"diseño subóptimas. ¡Ahora puedes mejorarlos!"
