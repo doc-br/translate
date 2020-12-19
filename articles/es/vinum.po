@@ -1,11 +1,12 @@
 # FreeBSD$
 # Juan David Jaramillo Ortiz <juanda097@protonmail.ch>, 2020.
+# Fernando  Apesteguía <fernando.apesteguia@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:08-0300\n"
-"PO-Revision-Date: 2020-11-15 08:34+0000\n"
-"Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
+"PO-Revision-Date: 2020-12-20 19:04+0000\n"
+"Last-Translator: Fernando  Apesteguía <fernando.apesteguia@gmail.com>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_vinum/es/>\n"
 "Language: es\n"
@@ -23,7 +24,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: article.translate.xml:16
 msgid "The <filename>vinum</filename> Volume Manager"
-msgstr ""
+msgstr "El Gestor de Volúmenes <filename>vinum</filename>"
 
 #. (itstool) path: authorgroup/author
 #: article.translate.xml:19
@@ -31,11 +32,13 @@ msgid ""
 "<personname> <firstname>Greg</firstname> <surname>Lehey</surname> </"
 "personname> <contrib>Originally written by </contrib>"
 msgstr ""
+"<contrib>Escrito originalmente por </contrib><personname> <firstname>Greg</"
+"firstname> <surname>Lehey</surname> </personname>"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:30
 msgid "Synopsis"
-msgstr ""
+msgstr "Sinopsis"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:32
@@ -47,6 +50,12 @@ msgid ""
 "capacity. Various solutions to these problems have been proposed and "
 "implemented."
 msgstr ""
+"Independientemente del tipo de disco, siempre hay problemas potenciales. Los "
+"discos pueden ser muy pequeños, muy lentos, o muy poco fiables para cumplir "
+"con los requisitos del sistema. Aunque los discos crecen, también lo hacen "
+"los requisitos de almacenamiento. A menudo se necesita un sistema de "
+"ficheros que es mayor que la capacidad del disco. Se han propuesto e "
+"implementado varias soluciones a estos problemas."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:40
@@ -61,6 +70,16 @@ msgid ""
 "<acronym>RAID</acronym>-0, <acronym>RAID</acronym>-1, and <acronym>RAID</"
 "acronym>-5 models, both individually and in combination."
 msgstr ""
+"Un método es mediante el uso de múltiples, y a veces reduntantes, discos. "
+"Además de soportar varias tarjetas y controladores hardware de sistemas de "
+"Arrays Redundantes de Discos Independientes <acronym>RAID</acronym> , el "
+"sistema base de FreeBSD incluye el gestor de volúmenes <filename>vinum</"
+"filename> , un controlador de dispositivos de bloques que implementa "
+"unidades virtuales de disco y que aborda estos tres problemas. "
+"<filename>vinum</filename> proporciona más flexibilidad, rendimiento, y "
+"fiabilidad que el almacenamiento de disco tradicional e implementa los "
+"modelos <acronym>RAID</acronym>-0, <acronym>RAID</acronym>-1, y "
+"<acronym>RAID</acronym>-5 , tanto individualmente como combinados."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:53
@@ -69,6 +88,9 @@ msgid ""
 "disk storage, and an introduction to the <filename>vinum</filename> volume "
 "manager."
 msgstr ""
+"Este capítulo proporciona una visión general de los problemas potenciales "
+"del almacenamiento tradicional en disco, y una introducción al gestor de "
+"volúmenes <filename>vinum</filename>."
 
 #. (itstool) path: note/para
 #: article.translate.xml:58
