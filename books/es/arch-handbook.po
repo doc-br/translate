@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-12-15 06:05+0000\n"
+"PO-Revision-Date: 2020-12-19 16:05+0000\n"
 "Last-Translator: Aaron H Farías Martinez <timido@ubuntu.com>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_arch-handbook/es/>\n"
@@ -183,6 +183,13 @@ msgid ""
 "the <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc"
 "\">FreeBSD documentation project mailing list</link>."
 msgstr ""
+"Bienvenido al manual de arquitectura de FreeBSD. Este manual es un "
+"<emphasis>trabajo en progreso</emphasis> y es obra de muchas personas. "
+"Muchas secciones aún no existen y algunas de las que existen deben "
+"actualizarse. Si está interesado en ayudar con este proyecto, envíe un "
+"correo electrónico a <link xlink:href=\"http://lists.FreeBSD.org/mailman/"
+"listinfo/freebsd-doc\">Lista de correo del proyecto de documentación de "
+"FreeBSD</link>."
 
 #. (itstool) path: abstract/para
 #: book.translate.xml:236
@@ -195,6 +202,13 @@ msgid ""
 "\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/mirrors-ftp.html"
 "\">mirror sites</link>."
 msgstr ""
+"La última versión de este documento siempre está disponible en el <link "
+"xlink:href=\"@@URL_RELPREFIX@@/index.html\">servidor de la World Wide Web "
+"freeBSD</link>. También se puede descargar en una variedad de formatos y "
+"opciones de compresión desde el <link xlink:href=\"https://download.freebsd."
+"org/ftp/doc/\">servidor FTP freeBSD</link>o uno de los numerosos <link "
+"xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/mirrors-ftp"
+".html\">sitios espejo</link>."
 
 #. (itstool) path: part/title
 #: book.translate.xml:246
@@ -322,6 +336,22 @@ msgid ""
 "filename> multi-boot loader stored in the very first sector. That boot code "
 "starts the FreeBSD three-stage boot process."
 msgstr ""
+"el proceso de arranque es una actividad extremadamente dependiente de la "
+"máquina. No solo se debe escribir código para cada arquitectura de "
+"computadora, sino que también puede haber varios tipos de arranque en la "
+"misma arquitectura. Por ejemplo, una lista de directorio de <filename>/usr/"
+"src/sys/boot</filename> revela una gran cantidad de código dependiente de la "
+"arquitectura. Hay un directorio para cada una de las diversas arquitecturas "
+"compatibles. En el x86 específico <filename>i386</filename> directorio, hay "
+"subdirectorios para diferentes estándares de arranque como <filename>mbr</"
+"filename> (Registro de arranque principal), <filename>gpt</filename> "
+"(<acronym>GUID</acronym>Tabla de particiones), y <filename>efi</filename> ("
+"Interfaz de firmware extensible). Cada estándar de arranque tiene sus "
+"propias convenciones y estructuras de datos. El siguiente ejemplo muestra "
+"cómo arrancar una computadora x86 desde una <acronym>MBR</acronym> disco "
+"duro con FreeBSD <filename>boot0</filename> cargador de arranque múltiple "
+"almacenado en el primer sector. Ese código de arranque inicia el proceso de "
+"arranque de tres etapas de FreeBSD."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:335
@@ -334,6 +364,14 @@ msgid ""
 "sequence. The last stage, <filename>loader</filename>, is responsible for "
 "loading the FreeBSD kernel. Each stage is examined in the following sections."
 msgstr ""
+"La clave para comprender este proceso es que se trata de una serie de etapas "
+"de complejidad creciente. Estas etapas son<filename>boot1</filename>, "
+"<filename>boot2</filename>, y <filename>loader</filename> (Mire "
+"<citerefentry><refentrytitle>boot</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> para más detalles). El sistema de arranque ejecuta cada etapa "
+"en secuencia. La última etapa <filename>loader</filename>, es responsable de "
+"cargar el kernel de FreeBSD. Cada etapa se examina en las siguientes "
+"secciones."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:344
@@ -484,6 +522,24 @@ msgid ""
 "provided by the <acronym>BIOS</acronym>, and the <acronym>BIOS</acronym> "
 "itself works in legacy, 16-bit code."
 msgstr ""
+"Cuando la computadora se enciende, los registros del procesador se "
+"establecen en algunos valores predefinidos. Uno de los registros es el "
+"<emphasis>puntero de instrucción</emphasis>registro, y su valor después de "
+"un encendido está bien definido: es un valor de 32 bits de "
+"<literal>0xfffffff0</literal>. El registro de puntero de instrucción ("
+"también conocido como Contador de programa) apunta al código que debe "
+"ejecutar el procesador. Otro registro importante es el <literal>cr0</"
+"literal> Registro de control de 32 bits, y su valor justo después de un "
+"reinicio es <literal>0</literal>. Uno de <literal>cr0</literal>'sbits, el "
+"bit PE (protección habilitada), indica si el procesador está funcionando en "
+"modo protegido de 32 bits o en modo real de 16 bits. Dado que este bit se "
+"borra en el momento del arranque, el procesador arranca en modo real de 16 "
+"bits. El modo real significa, entre otras cosas, que las direcciones "
+"lineales y físicas son idénticas. La razón por la que el procesador no se "
+"inicia inmediatamente en el modo protegido de 32 bits es la compatibilidad "
+"con versiones anteriores. En particular, el proceso de arranque se basa en "
+"los servicios proporcionados por el <acronym>BIOS</acronym>, y el "
+"<acronym>BIOS</acronym> sí mismo funciona en código heredado de 16 bits."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:426
@@ -493,6 +549,10 @@ msgid ""
 "memory address. The computer's hardware translates this address so that it "
 "points to a <acronym>BIOS</acronym> memory block."
 msgstr ""
+"El valor de <literal>0xfffffff0</literal>es un poco menos de 4 GB, por lo "
+"que, a menos que la máquina tenga 4 GB de memoria física, no puede apuntar a "
+"una dirección de memoria válida. El hardware de la computadora traduce esta "
+"dirección para que apunte a un <acronym>BIOS</acronym> bloque de memoria."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:432
@@ -505,6 +565,14 @@ msgid ""
 "the <acronym>BIOS</acronym>'s memory. Usually this address contains a jump "
 "instruction to the <acronym>BIOS</acronym>'s POST routines."
 msgstr ""
+"El <acronym>BIOS</acronym> (Basic Input Output System) es un chip en la "
+"placa base que tiene una cantidad relativamente pequeña de memoria de solo "
+"lectura(<acronym>ROM</acronym>). Esta memoria contiene varias rutinas de "
+"bajo nivel que son específicas del hardware suministrado con la placa base. "
+"El procesador primero saltará a la dirección 0xfffffff0, que realmente "
+"reside en el <acronym>BIOS</acronym>'s memoria. Por lo general, esta "
+"dirección contiene una instrucción de salto al <acronym>BIOS</acronym>'s "
+"Rutinas POSTERIORES"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:442
@@ -517,6 +585,14 @@ msgid ""
 "boot device, allowing booting from a floppy, <acronym>CD-ROM</acronym>, hard "
 "disk, or other devices."
 msgstr ""
+"El <acronym>POST</acronym> (Power On Self Test) es un conjunto de rutinas "
+"que incluyen la verificación de la memoria, la verificación del bus del "
+"sistema y otras inicializaciones de bajo nivel para que el <acronym>CPU</"
+"acronym> puede configurar la computadora correctamente. El paso importante "
+"de esta etapa es determinar el dispositivo de arranque. Moderno "
+"<acronym>BIOS</acronym> Las implementaciones permiten la selección de un "
+"dispositivo de arranque, lo que permite arrancar desde un disquete,<acronym"
+">CD-ROM</acronym>, disco duro u otros dispositivos."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:451
@@ -533,6 +609,18 @@ msgid ""
 "<acronym>MBR</acronym>, or Master Boot Record. The remaining sectors on the "
 "first track are never used."
 msgstr ""
+"La última cosa en el <acronym>POST</acronym> is the <literal>INT 0x19</"
+"literal>instrucción. los <literal>INT 0x19</literal> El controlador lee 512 "
+"bytes del primer sector del dispositivo de arranque en la memoria en la "
+"dirección <literal>0x7c00</literal>. El termino <emphasis>first sector</"
+"emphasis>se origina en la arquitectura del disco duro, donde la placa "
+"magnética se divide en una serie de pistas cilíndricas. Las pistas están "
+"numeradas y cada pista se divide en un número (generalmente 64) de sectores. "
+"Los números de pista comienzan en 0, pero los números de sector comienzan en "
+"1. La pista 0 es la más externa de la placa magnética, y el sector 1, el "
+"primer sector, tiene un propósito especial. También se llama <acronym>MBR</"
+"acronym>, o Registro de arranque maestro. Los sectores restantes de la "
+"primera pista nunca se utilizan."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:466
@@ -542,6 +630,10 @@ msgid ""
 "the <acronym>BIOS</acronym> to address <literal>0x7c00</literal> so it "
 "starts executing."
 msgstr ""
+"Este sector es nuestro punto de partida de la secuencia de arranque. Como "
+"veremos, este sector contiene una copia de nuestro <filename>boot0</"
+"filename>programa. Un salto lo hace el <acronym>BIOS</acronym> la dirección "
+"<literal>0x7c00</literal> por lo que comienza a ejecutarse."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:474
@@ -572,6 +664,21 @@ msgid ""
 "<filename>boot0</filename> <emphasis>is</emphasis> the <acronym>MBR</"
 "acronym>."
 msgstr ""
+"Después de recibir el control del <acronym>BIOS</acronym> en la dirección de "
+"memoria <literal>0x7c00</literal>, <filename>boot0</filename> comienza a "
+"ejecutar. Es la primera pieza de código bajo el control de FreeBSD. La tarea "
+"de <filename>boot0</filename> es bastante simple: escanee la tabla de "
+"particiones y deje que el usuario elija desde qué partición arrancar. La "
+"tabla de particiones es una estructura de datos estándar especial incrustada "
+"en el <acronym>MBR</acronym> (por lo tanto incrustado en "
+"<filename>boot0</filename>) describiendo las cuatro PC estándar "
+"<quote>particiones</quote> <_:footnote-1/>. <filename>boot0</filename> "
+"resides in the filesystem as <filename>/boot/boot0</filename>.Es un archivo "
+"pequeño de 512 bytes, y es exactamente lo que el procedimiento de "
+"instalación de FreeBSD escribió en el disco duro. <acronym>MBR</acronym>si "
+"eliges el <quote>bootmanager</quote> opción en el momento de la instalación. "
+"En efecto,<filename>boot0</filename> <emphasis>es</emphasis> el "
+"<acronym>MBR</acronym>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:498
@@ -583,6 +690,12 @@ msgid ""
 "<filename>sys/boot/i386/boot0/boot0.S</filename> - which is an awesome piece "
 "of code written by Robert Nordier."
 msgstr ""
+"Como se mencionó anteriormente, el <literal>INT 0x19</literal>instrucción "
+"causa el <literal>INT 0x19</literal> controlador para cargar un "
+"<acronym>MBR</acronym> (<filename>boot0</filename>) en la memoria en la "
+"dirección <literal>0x7c00</literal>. El archivo fuente para <filename>boot0</"
+"filename>puede encontrarse en <filename>sys/boot/i386/boot0/boot0.S</"
+"filename> - que es un código increíble escrito por Robert Nordier."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:506
@@ -595,6 +708,14 @@ msgid ""
 "(slice) is bootable or not. Exactly one record must have that flag set, "
 "otherwise <filename>boot0</filename>'s code will refuse to proceed."
 msgstr ""
+"Una estructura especial a partir de offset <literal>0x1be</literal> en el "
+"<acronym>MBR</acronym> se llama el <emphasis>tabla de partición</"
+"emphasis>.Tiene cuatro registros de 16 bytes cada uno, "
+"llamados<emphasis>registros de partición</emphasis>, que representan cómo se "
+"particiona el disco duro o, en la terminología de FreeBSD, se divide. Un "
+"byte de esos 16 dice si una partición (segmento) es de arranque o no. "
+"Exactamente un registro debe tener ese indicador establecido, de lo "
+"contrario<filename>boot0</filename>'s el código se negará a continuar."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:516
@@ -633,6 +754,15 @@ msgid ""
 "sectors of the partition. The partition table ends with the special "
 "signature <literal>0xaa55</literal>."
 msgstr ""
+"Un descriptor de registro de partición contiene información sobre dónde "
+"reside exactamente la partición en la unidad. Ambos "
+"descriptores,<acronym>LBA</acronym> y <acronym>CHS</acronym>, describen la "
+"misma información, pero de diferentes formas:<acronym>LBA</acronym> ("
+"Direccionamiento de bloque lógico) tiene el sector inicial para la partición "
+"y la longitud de la partición, mientras que <acronym>CHS</acronym> (Cylinder "
+"Head Sector) tiene coordenadas para el primer y último sector de la "
+"partición. La tabla de particiones termina con la firma especial "
+"<literal>0xaa55</literal>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:547
@@ -645,6 +775,14 @@ msgid ""
 "which is embedded in the <acronym>MBR</acronym> itself. For these reasons, "
 "be very careful when modifying <filename>boot0.S</filename>."
 msgstr ""
+"El <acronym>MBR</acronym> debe caber en 512 bytes, un solo sector de disco. "
+"Este programa utiliza bajo nivel <quote>tricks</quote> como aprovechar los "
+"efectos secundarios de ciertas instrucciones y reutilizar los valores de "
+"registro de operaciones anteriores para aprovechar al máximo la menor "
+"cantidad de instrucciones posibles. También se debe tener cuidado al "
+"manipular la tabla de partición, que está incrustada en el <acronym>MBR</"
+"acronym> sí mismo. Por estas razones, tenga mucho cuidado al "
+"modificar<filename>boot0.S</filename>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:557
@@ -658,6 +796,15 @@ msgid ""
 "practice this means that <filename>boot0</filename> must be loaded to memory "
 "address <literal>0x600</literal> in order to function properly."
 msgstr ""
+"Tenga en cuenta que el <filename>boot0.S</filename>el archivo fuente está "
+"ensamblado <quote>como es</quote>: las instrucciones se traducen una por una "
+"a binario, sin información adicional (no <acronym>ELF</acronym>formato de "
+"archivo, por ejemplo). Este tipo de control de bajo nivel se logra en el "
+"momento del enlace mediante indicadores de control especiales que se pasan "
+"al enlazador. Por ejemplo, la sección de texto del programa está configurada "
+"para ubicarse en la dirección <literal>0x600</literal>. En la práctica, esto "
+"significa que <filename>boot0</filename> debe cargarse en la dirección de "
+"memoria <literal>0x600</literal> para que funcione correctamente."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:568
@@ -675,6 +822,19 @@ msgid ""
 "the text section at address <literal>0x600</literal>, and to build the "
 "output file <quote>as is</quote> (strip out any file formatting):"
 msgstr ""
+"Vale la pena mirar el <filename>Makefile</filename> para <filename>boot0</"
+"filename> (<filename>sys/boot/i386/boot0/Makefile</filename>), ya que define "
+"algunos de los comportamientos en tiempo de ejecución de<filename>boot0</"
+"filename>.Por ejemplo, si un terminal conectado al puerto serie (COM1) se "
+"utiliza para I/O, la macro <literal>SIO</literal> debe ser definido "
+"(<literal>-DSIO</literal>). <literal>-DPXE</literal> permite el arranque a "
+"través <acronym>PXE</acronym> presionando <keycap>F6</keycap>. Además, el "
+"programa define un conjunto de <emphasis>flags</emphasis> que permiten una "
+"mayor modificación de su comportamiento. Todo esto se ilustra en la "
+"<filename>Makefile</filename>. Por ejemplo, mire las directivas del "
+"vinculador que ordenan al vinculador que inicie la sección de texto en la "
+"dirección<literal>0x600</literal>, y para construir el archivo de salida "
+"<quote>como es</quote> (elimine cualquier formato de archivo):"
 
 #. (itstool) path: figure/title
 #: book.translate.xml:587
@@ -700,6 +860,8 @@ msgid ""
 "Let us now start our study of the <acronym>MBR</acronym>, or "
 "<filename>boot0</filename>, starting where execution begins."
 msgstr ""
+"Comencemos ahora nuestro estudio de la <acronym>MBR</acronym>, o "
+"<filename>boot0</filename>, comenzando donde comienza la ejecución."
 
 #. (itstool) path: note/para
 #: book.translate.xml:599
@@ -766,6 +928,14 @@ msgid ""
 "the stack pointer register (<literal>%sp</literal>) to address "
 "<literal>0x7c00</literal>, so we have a working stack."
 msgstr ""
+"Este primer bloque de código es el punto de entrada del programa. Es donde "
+"el <acronym>BIOS</acronym>control de transferencias. Primero, se asegura de "
+"que las operaciones de cadena aumenten automáticamente sus operandos de "
+"puntero (el <literal>cld</literal> instrucción) <_:footnote-1/>. Entonces, "
+"como no hace ninguna suposición sobre el estado de los registros de "
+"segmento, los inicializa. Finalmente, establece el registro de puntero de "
+"pila (<literal>%sp</literal>) to address <literal>0x7c00</literal>, por lo "
+"que tenemos una pila de trabajo."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:631
@@ -828,6 +998,27 @@ msgid ""
 "+<literal>512</literal>= <literal>0x7e00</literal>; we have thus completed "
 "the code <emphasis>relocation</emphasis>."
 msgstr ""
+"Porque <filename>boot0</filename> es cargado por el <acronym>BIOS</"
+"acronym>dirigirse <literal>0x7C00</literal>,se copia a sí mismo para abordar "
+"<literal>0x600</literal> y luego transfiere el control allí (recuerde que "
+"estaba vinculado para ejecutar en la dirección<literal>0x600</literal>). La "
+"dirección de origen, <literal>0x7c00</literal>,se copia para "
+"registrarse<literal>%si</literal>.La dirección de destino, <literal>0x600</"
+"literal>, registrarse <literal>%di</literal>. El número de bytes para "
+"copiar, <literal>512</literal> (el tamaño del programa), se copia para "
+"registrar <literal>%cx</literal>.A continuación, el <literal>rep</literal> "
+"instrucción repite la instrucción que sigue, es decir, <literal>movsb</"
+"literal>, el número de veces dictado por el <literal>%cx</literal> register. "
+"The <literal>movsb</literal> instruction copies the byte pointed to by "
+"<literal>%si</literal> a la dirección apuntada por <literal>%di</literal>. "
+"Esto se repite otras 511 veces. En cada repetición, tanto el registro de "
+"origen como el de destino, <literal>%si</literal> y <literal>%di</"
+"literal>,se incrementan en uno. Por lo tanto, una vez completada la copia de "
+"512 bytes, <literal>%di</literal>tiene el valor "
+"<literal>0x600</literal>+<literal>512</literal>= <literal>0x800</literal>, y "
+"<literal>%si</literal> tiene el valor "
+"<literal>0x7c00</literal>+<literal>512</literal>= <literal>0x7e00</literal>; "
+"así hemos completado el código <emphasis>relocation</emphasis>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:676
@@ -849,6 +1040,23 @@ msgid ""
 "the relocated code. Note that until this jump to the relocated code, any "
 "reference to an absolute address was avoided."
 msgstr ""
+"A continuación, el registro de destino <literal>%di</literal>se copia a "
+"<literal>%bp</literal>. <literal>%bp</literal> obtiene el valor "
+"<literal>0x800</literal>. El valor <literal>16</literal> se copia a "
+"<literal>%cl</literal> en preparación para una nueva operación de cadena ("
+"como nuestra anterior<literal>movsb</literal>). Ahora, <literal>stosb</"
+"literal> se ejecuta 16 veces. Esta instrucción copia un<literal>0</literal> "
+"valor a la dirección apuntada por el registro de destino (<literal>%di</"
+"literal>, cual es <literal>0x800</literal>),y lo incrementa. Esto se repite "
+"otras 15 veces, así que <literal>%di</literal> termina con valor "
+"<literal>0x810</literal>. Efectivamente, esto borra el rango de "
+"direcciones<literal>0x800</literal>-<literal>0x80f</literal>. Este rango se "
+"utiliza como una tabla de particiones (falsa) para escribir el <acronym>MBR</"
+"acronym> volver al disco. Finalmente, el campo de sector para el "
+"<acronym>CHS</acronym> el direccionamiento de esta partición falsa recibe el "
+"valor 1 y se realiza un salto a la función principal desde el código "
+"reubicado. Tenga en cuenta que hasta este salto al código reubicado, se "
+"evitó cualquier referencia a una dirección absoluta."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:697
@@ -893,6 +1101,19 @@ msgid ""
 "that the <acronym>BIOS</acronym> provided a valid drive number, so we jump "
 "to <literal>save_curdrive</literal>."
 msgstr ""
+"Este código prueba el <literal>SETDRV</literal> bit (<literal>0x20</literal>)"
+"en el <emphasis>flags</emphasis> variable. Recuerda ese registro "
+"<literal>%bp</literal> apunta a la ubicación de la dirección <literal>0x800</"
+"literal>, para que la prueba se haga al <emphasis>flags</emphasis> variable "
+"en la dirección <literal>0x800</literal>-<literal>69</literal>= "
+"<literal>0x7bb</literal>. Este es un ejemplo del tipo de modificaciones que "
+"se pueden realizar <filename>boot0</filename>. El <literal>SETDRV</literal> "
+"La bandera no está configurada de forma predeterminada, pero se puede "
+"configurar en el <filename>Makefile</filename>. Cuando se establece, el "
+"número de unidad almacenado en el <acronym>MBR</acronym> se utiliza en lugar "
+"del proporcionado por el <acronym>BIOS</acronym>. Asumimos los valores "
+"predeterminados, y que el <acronym>BIOS</acronym> proporcionó un número de "
+"unidad válido, así que saltamos a<literal>save_curdrive</literal>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:727
@@ -1040,6 +1261,12 @@ msgid ""
 "<filename>boot0</filename> prints the current drive to screen. The user may "
 "command <filename>boot0</filename> to scan partitions on another drive later."
 msgstr ""
+"El siguiente bloque prueba para otras unidades. Al inicio, el <acronym>BIOS</"
+"acronym> escribe el número de unidades presentes en la computadora para "
+"abordar <literal>0x475</literal>. Si hay otras unidades presentes, "
+"<filename>boot0</filename> imprime la unidad actual en la pantalla. El "
+"usuario puede ordenar <filename>boot0</filename> para escanear particiones "
+"en otra unidad más tarde."
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:806
@@ -1176,6 +1403,37 @@ msgid ""
 "<literal>int 0x16</literal>, argument <literal>1</literal> in <literal>%ah</"
 "literal>."
 msgstr ""
+"Se solicita una interrupción con número <literal>0x1a</literal> y argumento "
+"<literal>0</literal> en registro <literal>%ah</literal>. El <acronym>BIOS</"
+"acronym> tiene un conjunto predefinido de servicios, solicitados por "
+"aplicaciones como interrupciones generadas por software a través del "
+"<literal>int</literal>instrucción y recepción de argumentos en registros (en "
+"este caso, <literal>%ah</literal>). Aquí, en particular, estamos solicitando "
+"el número de tics del reloj desde la última medianoche; este valor es "
+"calculado por el <acronym>BIOS</acronym> a través de <acronym>RTC</acronym> ("
+"Reloj en tiempo real). Este reloj se puede programar para trabajar en "
+"frecuencias que oscilan entre 2 Hz y 8192 Hz. los <acronym>BIOS</acronym> lo "
+"establece en 18,2 Hz al inicio. Cuando se satisface la solicitud, el "
+"resultado devuelve un resultado de 32 bits. <acronym>BIOS</acronym>en "
+"registros <literal>%cx</literal> y <literal>%dx</literal> (lbytes inferiores "
+"en <literal>%dx</literal>). Este resultado (el <literal>%dx</literal> parte) "
+"se copia para registrar <literal>%di</literal>, y el valor de la "
+"<varname>TICKS</varname>se agrega variable a <literal>%di</literal>. Esta "
+"variable reside en<filename>boot0</filename>en offset <literal>_TICKS</"
+"literal> (un valor negativo) desde el registro <literal>%bp</literal> (que, "
+"recordemos, apunta a <literal>0x800</literal>). El valor predeterminado de "
+"esta variable es <literal>0xb6</literal> (182 en decimal). Ahora, la idea es "
+"que <filename>boot0</filename> solicita constantemente el tiempo del "
+"<acronym>BIOS</acronym>, y cuando el valor regresó en el "
+"registro<literal>%dx</literal> es mayor que el valor almacenado en "
+"<literal>%di</literal>, se acabó el tiempo y se realizará la selección "
+"predeterminada. Dado que el RTC marca 18,2 veces por segundo, esta condición "
+"se cumplirá después de 10 segundos (este comportamiento predeterminado se "
+"puede cambiar en el <filename>Makefile</filename>). Hasta que este tiempo "
+"haya pasado, <filename>boot0</filename> Continuamente pregunta el "
+"<acronym>BIOS</acronym> para cualquier entrada de usuario; esto se hace a "
+"través de <literal>int 0x16</literal>, argumento <literal>1</literal> en "
+"<literal>%ah</literal>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:895
@@ -1289,6 +1547,11 @@ msgid ""
 "address <literal>0x7c00</literal>. Execution control was passed to that "
 "location."
 msgstr ""
+"El <acronym>BIOS</acronym> Hizo alguna inicialización de hardware temprana, "
+"incluida la <acronym>POST</acronym>. El <acronym>MBR</acronym> "
+"(<filename>boot0</filename>) se cargó desde el sector de disco absoluto uno "
+"a la dirección <literal>0x7c00</literal>. El control de ejecución se pasó a "
+"esa ubicación."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:965
@@ -1299,6 +1562,11 @@ msgid ""
 "first disk sector from the FreeBSD slice to address <literal>0x7c00</"
 "literal>. Execution control was passed to that location."
 msgstr ""
+"<filename>boot0</filename> se trasladó a la ubicación donde estaba vinculado "
+"para ejecutar (<literal>0x600</literal>), seguido de un salto para continuar "
+"la ejecución en el lugar apropiado. Finalmente, <filename>boot0</filename> "
+"cargó el primer sector del disco desde el segmento FreeBSD a la dirección "
+"<literal>0x7c00</literal>.El control de ejecución se pasó a esa ubicación."
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:989
@@ -1309,6 +1577,11 @@ msgid ""
 "<emphasis>is</emphasis> written to the beginning of the FreeBSD slice and "
 "read at boot time."
 msgstr ""
+"Hay un archivo <filename>/boot/boot1</filename>, pero no está escrito al "
+"principio del segmento de FreeBSD. En cambio, está concatenado "
+"con<filename>boot2</filename> formar <filename>boot</filename>, donde "
+"<emphasis>es</emphasis> escrito al principio del segmento de FreeBSD y leído "
+"en el momento del arranque."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:975
@@ -1333,6 +1606,27 @@ msgid ""
 "filename> loads the first sector of the FreeBSD slice (512 bytes), it is "
 "actually loading <filename>boot1</filename> and transferring control to it."
 msgstr ""
+"<filename>boot1</filename> es el siguiente paso en la secuencia de carga de "
+"arranque. Es la primera de tres etapas de arranque. Tenga en cuenta que nos "
+"hemos ocupado exclusivamente de sectores de disco. De hecho, "
+"el<acronym>BIOS</acronym>carga el primer sector absoluto, mientras "
+"<filename>boot0</filename> carga el primer sector del segmento FreeBSD. "
+"Ambas cargas son para abordar <literal>0x7c00</literal>. Conceptualmente, "
+"podemos pensar que estos sectores de disco contienen los "
+"archivos<filename>boot0</filename> y <filename>boot1</filename>, "
+"respectivamente, pero en realidad esto no es del todo cierto para "
+"<filename>boot1</filename>. Estrictamente hablando, a diferencia de "
+"<filename>boot0</filename>, <filename>boot1</filename>no es parte de los "
+"bloques de arranque <_:footnote-1/>.En cambio, un solo archivo completo, "
+"<filename>boot</filename> (<filename>/boot/boot</filename>),es lo que "
+"finalmente se escribe en el disco. Este archivo es una combinación de "
+"<filename>boot1</filename>, <filename>boot2</filename> y el <literal>Boot "
+"Extender</literal> (o <acronym>BTX</acronym>). This single file is greater "
+"in size than a single sector (greater than 512 bytes). por suerte, "
+"<filename>boot1</filename>ocupa <emphasis>exactamente</emphasis> los "
+"primeros 512 bytes de este único archivo, así que cuando <filename>boot0</"
+"filename>carga el primer sector del segmento FreeBSD (512 bytes), en "
+"realidad está cargando <filename>boot1</filename> y transferirle el control."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1009
@@ -1344,6 +1638,12 @@ msgid ""
 "<filename>loader</filename>, is also a client of the <acronym>BTX</acronym> "
 "server."
 msgstr ""
+"La principal tarea de<filename>boot1</filename> es cargar la siguiente etapa "
+"de arranque. Esta próxima etapa es algo más compleja. Está compuesto por un "
+"servidor llamado <quote>Extensor de arranque</quote>, o <acronym>BTX</"
+"acronym>,Y un cliente, llamado <filename>boot2</filename>.Como veremos, la "
+"última etapa de arranque, <filename>loader</filename>, también es cliente de "
+"la <acronym>BTX</acronym> servidor."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1017
@@ -1424,6 +1724,12 @@ msgid ""
 "effectively where it was loaded in the first place. The reason for this "
 "relocation will be discussed shortly."
 msgstr ""
+"Al igual que <filename>boot0</filename>, este código se "
+"reubica<filename>boot1</filename>,esta vez a la dirección de memoria "
+"<literal>0x700</literal>. Sin embargo, a diferencia de <filename>boot0</"
+"filename>, no salta ahí. <filename>boot1</filename>está vinculado para "
+"ejecutarse en la dirección <literal>0x7c00</literal>, efectivamente donde se "
+"cargó en primer lugar. El motivo de esta reubicación se discutirá en breve."
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:1062
@@ -1434,6 +1740,10 @@ msgid ""
 "acronym> loaded it, and did not pass this information), so it assumes "
 "nothing."
 msgstr ""
+"En realidad, pasamos un puntero a la entrada del segmento en el registro "
+"<literal>%si</literal>. sin embargo, <filename>boot1</filename> no asume que "
+"fue cargado por <filename>boot0</filename> (Tal vez algún otro <acronym>MBR</"
+"acronym> lo cargó y no pasó esta información), por lo que no asume nada."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1058
@@ -1444,6 +1754,12 @@ msgid ""
 "so <filename>boot1</filename> must rescan the partition table to find where "
 "the FreeBSD slice starts. Therefore it rereads the <acronym>MBR</acronym>:"
 msgstr ""
+"Luego viene un bucle que busca el segmento de FreeBSD. A pesar de que "
+"<filename>boot0</filename> cargado <filename>boot1</filename>del segmento de "
+"FreeBSD, no se le pasó información sobre esto <_:footnote-1/>, entonces "
+"<filename>boot1</filename> debe volver a escanear la tabla de particiones "
+"para encontrar dónde comienza el segmento de FreeBSD. Por tanto, vuelve a "
+"leer el<acronym>MBR</acronym>:"
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:1075
@@ -1475,6 +1791,17 @@ msgid ""
 "address holds a <quote>fake partition</quote> to be used by <literal>nread</"
 "literal>. The following is the data in the fake partition:"
 msgstr ""
+"En el código anterior, regístrese <literal>%dl</literal>mantiene información "
+"sobre el dispositivo de arranque. Esto es transmitido por el <acronym>BIOS</"
+"acronym>y conservado por el <acronym>MBR</acronym>. Números <literal>0x80</"
+"literal>y mayor nos dice que estamos tratando con un disco duro, por lo que "
+"se hace una llamada a <literal>nread</literal>, donde el <acronym>MBR</"
+"acronym> es leído. Argumentos para <literal>nread</literal> se pasan a "
+"través <literal>%si</literal> y <literal>%dh</literal>. La dirección de "
+"memoria en la etiqueta <literal>part4</literal>se copia a<literal>%si</"
+"literal>. Esta dirección de memoria tiene un <quote>partición falsa</quote> "
+"para ser usado por <literal>nread</literal>.Los siguientes son los datos en "
+"la partición falsa:"
 
 #. (itstool) path: figure/title
 #: book.translate.xml:1098 book.translate.xml:1392 book.translate.xml:1405
@@ -1561,6 +1888,18 @@ msgid ""
 "<literal>xread.1</literal>. This mechanism will be discussed in the next "
 "section."
 msgstr ""
+"Recall that <literal>%si</literal> apunta a la partición falsa. La palabra "
+"<_:footnote-1/> en offset <literal>0x8</literal>se copia para registrarse "
+"<literal>%ax</literal> y palabra en offset <literal>0xa</literal> to "
+"<literal>%cx</literal>.Ellos son interpretados por el <acronym>BIOS</"
+"acronym> como el valor inferior de 4 bytes que indica el LBA a leer (se "
+"supone que los cuatro bytes superiores son cero). Registrarse <literal>%bx</"
+"literal> contiene la dirección de memoria donde el <acronym>MBR</acronym> se "
+"cargará. La instrucción empujando <literal>%cs</literal> en la pila es muy "
+"interesante. En este contexto, no logra nada. Sin embargo, como veremos en "
+"breve, <filename>boot2</filename>, en conjunción con el <acronym>BTX</"
+"acronym>servidor, también usa <literal>xread.1</literal>. Este mecanismo se "
+"discutirá en la siguiente sección."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1148
@@ -1569,6 +1908,9 @@ msgid ""
 "literal> function, which actually calls the <acronym>BIOS</acronym> asking "
 "for the disk sector:"
 msgstr ""
+"El código en <literal>xread.1</literal>además llama al <literal>read</"
+"literal> función, que en realidad llama a la <acronym>BIOS</acronym> "
+"preguntando por el sector del disco:"
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:1155
@@ -1674,6 +2016,12 @@ msgid ""
 "literal> holds the partition number. We assume that a FreeBSD slice is "
 "found, so we continue execution at <literal>main.5</literal>:"
 msgstr ""
+"Si se identifica un segmento de FreeBSD, la ejecución continúa en "
+"<literal>main.5</literal>. Tenga en cuenta que cuando se encuentra un "
+"segmento de FreeBSD <literal>%si</literal>apunta a la entrada apropiada en "
+"la tabla de particiones, y <literal>%dh</literal> contiene el número de "
+"partición. Suponemos que se encuentra un segmento de FreeBSD, por lo que "
+"continuamos la ejecución en <literal>main.5</literal>:"
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:1211
@@ -1719,6 +2067,16 @@ msgid ""
 "but <filename>/boot/boot</filename>. Let us look at the size of these files "
 "in the filesystem:"
 msgstr ""
+"Recuerde que en este punto, regístrese <literal>%si</literal> apunta a la "
+"entrada del segmento FreeBSD en el <acronym>MBR</acronym>tabla de "
+"particiones, por lo que una llamada a <literal>nread</literal> leerá "
+"efectivamente los sectores al comienzo de esta partición. El argumento pasó "
+"en el registro <literal>%dh</literal> dice <literal>nread</literal>para leer "
+"16 sectores de disco. Recuerde que los primeros 512 bytes, o el primer "
+"sector del segmento FreeBSD, coincide con el <filename>boot1</filename> "
+"programa. Recuerde también que el archivo escrito al principio del segmento "
+"FreeBSD no es <filename>/boot/boot1</filename>, pero <filename>/boot/boot</"
+"filename>. Veamos el tamaño de estos archivos en el sistema de archivos:"
 
 #. (itstool) path: sect1/screen
 #. (itstool) id: book.translate.xml#boot-boot1-filesize
@@ -1753,6 +2111,21 @@ msgid ""
 "filename> into a single <filename>boot</filename> is merely <command>cat "
 "boot1 boot2 &gt; boot</command>."
 msgstr ""
+"Ambos <filename>boot0</filename> y <filename>boot1</filename> Son 512 bytes "
+"cada uno, por lo que encajan <emphasis>exacto</emphasis> en un sector de "
+"disco. <filename>boot2</filename> Es mucho más grande, sosteniendo tanto el "
+"<acronym>BTX</acronym> Servidor y el <filename>boot2</filename>cliente. "
+"Finalmente, un archivo llamado simplemente <filename>boot</filename>es 512 "
+"bytes más grande que <filename>boot2</filename>. este archivo es una "
+"concatenación de <filename>boot1</filename> y <filename>boot2</filename>. "
+"Como ya se señaló, <filename>boot0</filename> es el archivo escrito en el "
+"primer sector del disco absoluto (el <acronym>MBR</acronym>), y "
+"<filename>boot</filename>es el archivo escrito en el primer sector del "
+"segmento FreeBSD; <filename>boot1</filename> y <filename>boot2</filename> "
+"son <emphasis>no</emphasis> escrito en el disco. El comando utilizado para "
+"concatenar <filename>boot1</filename> y <filename>boot2</filename> en un "
+"solo <filename>boot</filename> es simplemente <command>cat boot1 boot2 &gt; "
+"boot</command>."
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:1271
@@ -1772,6 +2145,14 @@ msgid ""
 "about how <filename>boot</filename> is formed from <filename>boot1</"
 "filename> and <filename>boot2</filename> in the next section."
 msgstr ""
+"entonces <filename>boot1</filename> ocupa exactamente los primeros 512 bytes "
+"de<filename>boot</filename> y, porque <filename>boot</filename> se escribe "
+"en el primer sector del segmento FreeBSD, <filename>boot1</filename> encaja "
+"exactamente en este primer sector. Porque <literal>nread</literal> lee los "
+"primeros 16 sectores del segmento de FreeBSD, lee efectivamente todo "
+"el<filename>boot</filename> archivo <_:footnote-1/>. Veremos más detalles "
+"sobre cómo <filename>boot</filename>está formado por <filename>boot1</"
+"filename> y <filename>boot2</filename> en la siguiente sección."
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:1287
@@ -1797,6 +2178,14 @@ msgid ""
 "<literal>0x8e00</literal>-<literal>0x8fff</literal>) is used to store the "
 "<emphasis>bsdlabel</emphasis> <_:footnote-1/>."
 msgstr ""
+"Recordar que <literal>nread</literal> usa dirección de memoria "
+"<literal>0x8c00</literal> como el búfer de transferencia para mantener los "
+"sectores leídos. Esta dirección se elige convenientemente. De hecho, "
+"porque<filename>boot1</filename>pertenece a los primeros 512 bytes, termina "
+"en el rango de direcciones <literal>0x8c00</literal>-<literal>0x8dff</"
+"literal>. Tlos 512 bytes que siguen (rango "
+"<literal>0x8e00</literal>-<literal>0x8fff</literal>) se utiliza para "
+"almacenar el <emphasis>bsdlabel</emphasis> <_:footnote-1/>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1291
@@ -1814,6 +2203,19 @@ msgid ""
 "execute in a segment starting at <literal>0xa000</literal>. We explore this "
 "in detail in the following section."
 msgstr ""
+"Comenzando en la dirección <literal>0x9000</literal> es el comienzo de la "
+"<acronym>BTX</acronym> servidor, e inmediatamente sigue el <filename>boot2</"
+"filename> cliente. los <acronym>BTX</acronym> El servidor actúa como un "
+"núcleo y se ejecuta en modo protegido en el nivel más privilegiado. En "
+"contraste, el <acronym>BTX</acronym> clients (<filename>boot2</filename>, "
+"por ejemplo), ejecutar en modo de usuario. Veremos cómo se logra esto en la "
+"siguiente sección. El código después de la llamada a <literal>nread</"
+"literal>localiza el comienzo de <filename>boot2</filename> en el búfer de "
+"memoria y lo copia en la dirección de memoria <literal>0xc000</literal>. "
+"Esto es porque el <acronym>BTX</acronym> el servidor organiza  "
+"<filename>boot2</filename> para ejecutar en un segmento que comienza en "
+"<literal>0xa000</literal>. Exploramos esto en detalle en la siguiente "
+"sección."
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:1310
@@ -1831,6 +2233,9 @@ msgid ""
 "above 1MB <_:footnote-1/> and concludes with a jump to the starting point of "
 "the <acronym>BTX</acronym> server:"
 msgstr ""
+"El último bloque de código de <filename>boot1</filename> permite el acceso a "
+"la memoria por encima de 1 MB <_:footnote-1/> Y concluye con un salto al "
+"punto de partida del <acronym>BTX</acronym> servidor:"
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:1318
@@ -1906,6 +2311,9 @@ msgid ""
 "acronym>, or <filename>boot0</filename>), to address <literal>0x7c00</"
 "literal> and jumps there."
 msgstr ""
+"El <acronym>BIOS</acronym> carga el sector absoluto uno (el <acronym>MBR</"
+"acronym>, o <filename>boot0</filename>),dirigirse <literal>0x7c00</literal> "
+"y salta allí."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1360
@@ -1915,6 +2323,11 @@ msgid ""
 "first sector of the FreeBSD slice (which consists of <filename>boot1</"
 "filename>) into address <literal>0x7c00</literal> and jumps over there."
 msgstr ""
+"<filename>boot0</filename> se traslada a <literal>0x600</literal>, la "
+"dirección a la que estaba vinculado para ejecutar, y salta allí. Luego lee "
+"el primer sector del segmento FreeBSD (que consta de "
+"<filename>boot1</filename>) en dirección <literal>0x7c00</literal> y salta "
+"por allí."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1369
@@ -1928,6 +2341,14 @@ msgid ""
 "<literal>0x9010</literal>, the entry point of the <acronym>BTX</acronym> "
 "server."
 msgstr ""
+"<filename>boot1</filename> carga los primeros 16 sectores del segmento "
+"FreeBSD en la dirección<literal>0x8c00</literal>. Estos 16 sectores, o 8192 "
+"bytes, es el archivo completo <filename>boot</filename>. El archivo es una "
+"concatenación de <filename>boot1</filename> y <filename>boot2</filename>. "
+"<filename>boot2</filename>, a su vez, contiene el<acronym>BTX</acronym> "
+"Servidor y el <filename>boot2</filename> cliente. Finalmente, se da un salto "
+"para abordar <literal>0x9010</literal>,el punto de entrada de la "
+"<acronym>BTX</acronym> servidor."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1382
@@ -1939,6 +2360,12 @@ msgid ""
 "Makefile</filename>). Let us look at the rule that creates the "
 "<filename>boot</filename> file:"
 msgstr ""
+"Antes de estudiar el <acronym>BTX</acronym>Servidor en detalle, revisemos "
+"más a fondo cómo el único, todo en uno <filename>boot</filename>se crea el "
+"archivo. La manera <filename>boot</filename>se construye se define en "
+"su<filename>Makefile</filename> (<filename>/usr/src/sys/boot/i386/boot2/"
+"Makefile</filename>). Veamos la regla que crea el <filename>boot</filename> "
+"archivo:"
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:1394
@@ -1958,6 +2385,10 @@ msgid ""
 "called <filename>boot</filename>. The rules for creating <filename>boot1</"
 "filename> are also quite simple:"
 msgstr ""
+"Esto nos dice que <filename>boot1</filename> y <filename>boot2</filename> "
+"son necesarios, y la regla simplemente los concatena para producir un solo "
+"archivo llamado <filename>boot</filename>. The rules for creating "
+"<filename>boot1</filename> también son bastante simples:"
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:1407
@@ -1993,6 +2424,21 @@ msgid ""
 "<literal>-O binary</literal> indicates the output format, that is, a simple, "
 "unformatted binary file."
 msgstr ""
+"Para aplicar la regla para crear <filename>boot1</filename>, <filename>boot1."
+"out</filename> debe resolverse. Esto, a su vez, depende de la existencia de "
+"<filename>boot1.o</filename>. Este último archivo es simplemente el "
+"resultado de ensamblar nuestro familiar <filename>boot1.S</filename>, sin "
+"vincular. Ahora, la regla para crear <filename>boot1.out</filename> Está "
+"aplicado. Esto nos dice que <filename>boot1.o</filename> debe estar "
+"vinculado con <literal>start</literal> como su punto de entrada, y "
+"comenzando en la dirección <literal>0x7c00</literal>. Finalmente, "
+"<filename>boot1</filename> se crea a partir de<filename>boot1.out</filename> "
+"aplicando la regla apropiada. Esta regla es la <filename>objcopy</filename> "
+"comando aplicado a <filename>boot1.out</filename>. Tenga en cuenta las "
+"banderas pasadas a <filename>objcopy</filename>: <literal>-S</literal> le "
+"dice que elimine toda la información simbólica y de reubicación;<literal>-O "
+"binary</literal> indica el formato de salida, es decir, un archivo binario "
+"simple y sin formato."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1433
@@ -2145,6 +2591,18 @@ msgid ""
 "filename>'s relocated code. This function is now accessible from within the "
 "<filename>boot2</filename> client."
 msgstr ""
+"Recordar que <filename>boot1</filename> Fue reubicado (es decir, copiado de "
+"<literal>0x7c00</literal> a <literal>0x700</literal>). Esta reubicación "
+"ahora tendrá sentido, porque como veremos, la <acronym>BTX</acronym> "
+"servidor recupera algo de memoria, incluido el espacio donde "
+"<filename>boot1</filename> se cargó originalmente. sin embargo, el "
+"<acronym>BTX</acronym>el servidor necesita acceso a <filename>boot1</"
+"filename>'s <literal>xread</literal>función; esta función, según la salida "
+"de <filename>boot2.h</filename>, está en la ubicación <literal>0x725</"
+"literal>. De hecho, el <acronym>BTX</acronym> servidor utiliza el "
+"<literal>xread</literal> función de <filename>boot1</filename>'s código "
+"reubicado. Esta función ahora es accesible desde el <filename>boot2</"
+"filename> cliente."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1519
@@ -2172,6 +2630,30 @@ msgid ""
 "a file <filename>boot2.ldr</filename> is created as a 512-byte file full of "
 "zeros. This space is reserved for the bsdlabel."
 msgstr ""
+"Luego construimos <filename>boot2.s</filename> de archivos <filename>boot2."
+"h</filename>, <filename>boot2.c</filename> y <filename>/usr/src/sys/boot/"
+"common/ufsread.c</filename>. La regla para esto es compilar el código en "
+"<filename>boot2.c</filename> (que incluye <filename>boot2.h</filename> y "
+"<filename>ufsread.c</filename>) en código ensamblador. Teniendo "
+"<filename>boot2.s</filename>,la siguiente regla se ensambla <filename>boot2."
+"s</filename>, creando el archivo de objeto <filename>boot2.o</filename>. La "
+"siguiente regla indica al vinculador que vincule varios archivos "
+"(<filename>crt0.o</filename>, <filename>boot2.o</filename> y <filename>sio."
+"o</filename>). Tenga en cuenta que el archivo de salida, <filename>boot2."
+"out</filename>, está vinculado para ejecutarse en la dirección "
+"<literal>0x2000</literal>. Recordar que <filename>boot2</filename> se "
+"ejecutará en modo de usuario, dentro de un segmento de usuario especial "
+"configurado por el <acronym>BTX</acronym> servidor. Este segmento comienza "
+"en <literal>0xa000</literal>. Además, recuerda que el <filename>boot2</"
+"filename> Una porcion de <filename>boot</filename> fue copiado a la "
+"dirección <literal>0xc000</literal>, that is, offset <literal>0x2000</"
+"literal> from the start of the user segment, so <filename>boot2</filename> "
+"funcionará correctamente cuando le transfiramos el control. próximo, "
+"<filename>boot2.bin</filename> se crea a partir de <filename>boot2.out</"
+"filename> eliminando sus símbolos e información de formato; boot2.bin es un "
+"<emphasis>raw</emphasis> binario. Ahora, tenga en cuenta que un archivo  "
+"<filename>boot2.ldr</filename> se crea como un archivo de 512 bytes lleno de "
+"ceros. Este espacio está reservado para bsdlabel."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1548
@@ -2187,6 +2669,16 @@ msgid ""
 "details can be found in <filename>/usr/src/sys/boot/i386/btx/btx/Makefile</"
 "filename>."
 msgstr ""
+"Ahora que tenemos archivos <filename>boot1</filename>, <filename>boot2.bin</"
+"filename> y <filename>boot2.ldr</filename>, Solo el <acronym>BTX</acronym> "
+"falta el servidor antes de crear el todo en uno <filename>boot</filename> "
+"archivo. los <acronym>BTX</acronym> el servidor está ubicado en <filename>/"
+"usr/src/sys/boot/i386/btx/btx</filename>; tiene lo suyo<filename>Makefile</"
+"filename> con su propio conjunto de reglas para la construcción. Lo "
+"importante a tener en cuenta es que también se compila como un "
+"<emphasis>raw</emphasis> binario, y que está vinculado para ejecutarse en la "
+"dirección<literal>0x9000</literal>. Los detalles se pueden encontrar en "
+"<filename>/usr/src/sys/boot/i386/btx/btx/Makefile</filename>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1562
@@ -2204,6 +2696,20 @@ msgid ""
 "actually written to the beginning of the FreeBSD slice during installation. "
 "Let us now proceed to study the <acronym>BTX</acronym> server program."
 msgstr ""
+"Tener los archivos que componen el  <filename>boot</filename> programa, el "
+"paso final es <emphasis>merge</emphasis> ellos. Esto se hace mediante un "
+"programa especial llamado <filename>btxld</filename> (fuente ubicada en "
+"<filename>/usr/src/usr.sbin/btxld</filename>). Algunos argumentos de este "
+"programa incluyen el nombre del archivo de salida (<filename>boot</filename>)"
+", su punto de entrada (<literal>0x2000</literal>)y su formato de archivo ("
+"binario sin formato). Los diversos archivos finalmente se fusionan con esta "
+"utilidad en el archivo <filename>boot</filename>, que consiste en "
+"<filename>boot1</filename>, <filename>boot2</filename>, El "
+"<literal>bsdlabel</literal> y el <acronym>BTX</acronym> servidor. Este "
+"archivo, que ocupa exactamente 16 sectores, o 8192 bytes, es lo que "
+"realmente se escribe al comienzo del segmento de FreeBSD durante la "
+"instalación. Procedamos ahora a estudiar el<acronym>BTX</acronym> programa "
+"de servidor."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1581
@@ -2258,6 +2764,11 @@ msgid ""
 "<emphasis>most</emphasis> privileged level when executing the <acronym>BTX</"
 "acronym> server."
 msgstr ""
+"Un <literal>Task-State Segment (TSS)</literal> es creado. Esto es necesario "
+"porque el procesador funciona en el <emphasis>menos</emphasis> Nivel "
+"privilegiado al ejecutar el cliente.(<filename>boot2</filename>),pero en el "
+"<emphasis>most</emphasis> nivel privilegiado al ejecutar el <acronym>BTX</"
+"acronym> servidor."
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:1619
@@ -2275,6 +2786,9 @@ msgid ""
 "(descriptors) are provided for supervisor code and data, user code and data, "
 "and real-mode code and data. <_:footnote-1/>"
 msgstr ""
+"La <acronym>GDT</acronym> (Tabla de descriptores globales) está configurada. "
+"Se proporcionan entradas (descriptores) para código y datos de supervisor, "
+"código y datos de usuario, y código y datos en modo real. <_:footnote-1/>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1625
@@ -2286,6 +2800,13 @@ msgid ""
 "header at address range <literal>0x9000-0x900f</literal>, right before its "
 "entry point. This header is defined as follows:"
 msgstr ""
+"Comencemos ahora a estudiar la implementación real. Recordar que "
+"<filename>boot1</filename> dio un salto para abordar <literal>0x9010</"
+"literal>, el <acronym>BTX</acronym> punto de entrada del servidor. Antes de "
+"estudiar la ejecución del programa allí, tenga en cuenta que <acronym>BTX</"
+"acronym> el servidor tiene un encabezado especial en el rango de direcciones "
+"<literal>0x9000-0x900f</literal>, justo antes de su punto de entrada. Este "
+"encabezado se define de la siguiente manera:"
 
 #. (itstool) path: figure/title
 #: book.translate.xml:1634 book.translate.xml:1665 book.translate.xml:1694
@@ -2338,6 +2859,14 @@ msgid ""
 "field in the <acronym>BTX</acronym> header is a pointer to the client's "
 "(<filename>boot2</filename>) entry point. This field is patched at link time."
 msgstr ""
+"Tenga en cuenta que los dos primeros bytes son <literal>0xeb</literal> y "
+"<literal>0xe</literal>. En la arquitectura IA-32, estos dos bytes se "
+"interpretan como un salto relativo más allá del encabezado hacia el punto de "
+"entrada, por lo que en teoría, <filename>boot1</filename> podría saltar aquí "
+"(address <literal>0x9000</literal>) en lugar de dirección <literal>0x9010</"
+"literal>. Tenga en cuenta que el último campo de la <acronym>BTX</acronym> "
+"encabezado es un puntero al cliente (<filename>boot2</filename>) punto de "
+"entrada. Este campo se parchea en el momento del enlace."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1661
@@ -2387,6 +2916,13 @@ msgid ""
 "effectively cleared (IA-32 requires that bit 2 of the EFLAGS register always "
 "be 1)."
 msgstr ""
+"Este código deshabilita las interrupciones, configura una pila de trabajo ("
+"comenzando en la dirección <literal>0x1800</literal>) y borra las banderas "
+"en el registro EFLAGS. Tenga en cuenta que el <literal>popfl</literal> La "
+"instrucción saca una palabra doble (4 bytes) de la pila y la coloca en el "
+"registro EFLAGS. Porque el valor realmente reventado es <literal>2</"
+"literal>, el registro EFLAGS se borra efectivamente (IA-32 requiere que el "
+"bit 2 del registro EFLAGS sea siempre 1)."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1689
@@ -2395,6 +2931,9 @@ msgid ""
 "<literal>0x5e00-0x8fff</literal>. This range is where the various data "
 "structures will be created:"
 msgstr ""
+"Nuestro siguiente bloque de código se borra (se establece en "
+"<literal>0</literal>)el rango de memoria <literal>0x5e00-0x8fff</literal>. "
+"Este rango es donde se crearán las diversas estructuras de datos:"
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:1696
@@ -2426,6 +2965,12 @@ msgid ""
 "emphasis> copy is still in memory, and the <acronym>BTX</acronym> server "
 "will make use of it."
 msgstr ""
+"Recordar que <filename>boot1</filename> se cargó originalmente para abordar "
+"<literal>0x7c00</literal>, entonces, con esta inicialización de memoria, esa "
+"copia desapareció efectivamente. Sin embargo, también recuerde que "
+"<filename>boot1</filename> fue reubicado a <literal>0x700</literal>, y "
+"<emphasis>la</emphasis> copia todavía está en la memoria, y el <acronym>BTX</"
+"acronym> servidor hará uso de él."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1713
@@ -2447,10 +2992,29 @@ msgid ""
 "shortly. However, the <acronym>BTX</acronym> server sets up a mechanism to "
 "effectively use the handlers provided by the <acronym>BIOS</acronym>:"
 msgstr ""
+"A continuación, el modo real <acronym>IVT</acronym> (La tabla de vectores de "
+"interrupción se actualiza. los <acronym>IVT</acronym> es una matriz de pares "
+"de segmento / desplazamiento para manejadores de excepciones e "
+"interrupciones. los<acronym>BIOS</acronym> normalmente mapea interrupciones "
+"de hardware para interrumpir vectores <literal>0x8</literal> a <literal>0xf</"
+"literal> y <literal>0x70</literal> a <literal>0x77</literal> pero, como se "
+"verá, el controlador de interrupción programable 8259A, el chip que controla "
+"el mapeo real de interrupciones de hardware a vectores de interrupción, está "
+"programado para reasignar estos vectores de interrupción desde "
+"<literal>0x8-0xf</literal> a <literal>0x20-0x27</literal> y de "
+"<literal>0x70-0x77</literal> a <literal>0x28-0x2f</literal>. Por lo tanto, "
+"se proporcionan manejadores de interrupciones para vectores de "
+"interrupciones. <literal>0x20-0x2f</literal>. La razón por la "
+"<acronym>BIOS</acronym>-siempre que los controladores no se utilicen "
+"directamente es porque funcionan en modo real de 16 bits, pero no en modo "
+"protegido de 32 bits. El modo de procesador cambiará en breve al modo "
+"protegido de 32 bits. sin embargo, el <acronym>BTX</acronym> servidor "
+"establece un mecanismo para utilizar de forma eficaz los controladores "
+"proporcionados por la <acronym>BIOS</acronym>:"
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:1737
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "/*\n"
 " * Update real mode IDT for reflecting hardware interrupts.\n"
@@ -2466,16 +3030,17 @@ msgid ""
 "\t\tloop init.0\t\t\t# Next IRQ"
 msgstr ""
 "/*\n"
-" * Update real mode IDT for reflecting hardware interrupts.\n"
+" * Actualice el IDT en modo real para reflejar las interrupciones de "
+"hardware.\n"
 " */\n"
-"\t\tmov $intr20,%bx\t\t\t# Address first handler\n"
-"\t\tmov $0x10,%cx\t\t\t# Number of handlers\n"
-"\t\tmov $0x20*4,%di\t\t\t# First real mode IDT entry\n"
-"init.0:\t\tmov %bx,(%di)\t\t\t# Store IP\n"
-"\t\tinc %di\t\t\t\t# Address next\n"
-"\t\tinc %di\t\t\t\t#  entry\n"
-"\t\tstosw\t\t\t\t# Store CS\n"
-"\t\tadd $4,%bx\t\t\t# Next handler\n"
+"\t\tmov $intr20,%bx\t\t\t# Dirección del primer manejador\n"
+"\t\tmov $0x10,%cx\t\t\t# Número de manipuladores\n"
+"\t\tmov $0x20*4,%di\t\t\t# Primera entrada IDT en modo real\n"
+"init.0:\t\tmov %bx,(%di)\t\t\t# IP de la tienda\n"
+"\t\tinc %di\t\t\t\t# Dirección siguiente\n"
+"\t\tinc %di\t\t\t\t#  entrada\n"
+"\t\tstosw\t\t\t\t#  Almacenar CS\n"
+"\t\tadd $4,%bx\t\t\t# Siguiente controlador\n"
 "\t\tloop init.0\t\t\t# Next IRQ"
 
 #. (itstool) path: sect1/para
@@ -2490,10 +3055,19 @@ msgid ""
 "complex, because segments in protected mode are different than in real mode, "
 "and various protection mechanisms apply:"
 msgstr ""
+"El siguiente bloque crea el <acronym>IDT</acronym> (Tabla de descriptores de "
+"interrupciones). los <acronym>IDT</acronym> es análogo, en modo protegido, "
+"al <acronym>IVT</acronym> en modo real. Eso es el <acronym>IDT</acronym> "
+"describe los diversos manejadores de excepciones e interrupciones que se "
+"utilizan cuando el procesador se ejecuta en modo protegido. En esencia, "
+"también consta de una matriz de pares de segmento / desplazamiento, aunque "
+"la estructura es algo más compleja, porque los segmentos en modo protegido "
+"son diferentes a los del modo real, y se aplican varios mecanismos de "
+"protección:"
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:1765
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "/*\n"
 " * Create IDT.\n"
@@ -2523,27 +3097,27 @@ msgstr ""
 "/*\n"
 " * Create IDT.\n"
 " */\n"
-"\t\tmov $0x5e00,%di\t\t\t# IDT's address\n"
-"\t\tmov $idtctl,%si\t\t\t# Control string\n"
-"init.1:\t\tlodsb\t\t\t\t# Get entry\n"
-"\t\tcbw\t\t\t\t#  count\n"
-"\t\txchg %ax,%cx\t\t\t#  as word\n"
-"\t\tjcxz init.4\t\t\t# If done\n"
-"\t\tlodsb\t\t\t\t# Get segment\n"
-"\t\txchg %ax,%dx\t\t\t#  P:DPL:type\n"
-"\t\tlodsw\t\t\t\t# Get control\n"
-"\t\txchg %ax,%bx\t\t\t#  set\n"
-"\t\tlodsw\t\t\t\t# Get handler offset\n"
-"\t\tmov $SEL_SCODE,%dh\t\t# Segment selector\n"
-"init.2:\t\tshr %bx\t\t\t\t# Handle this int?\n"
+"\t\tmov $0x5e00,%di\t\t\t#Dirección de IDT\n"
+"\t\tmov $idtctl,%si\t\t\t# Cadena de control\n"
+"init.1:\t\tlodsb\t\t\t\t# Obtener entrada\n"
+"\t\tcbw\t\t\t\t#  contar\n"
+"\t\txchg %ax,%cx\t\t\t#  como palabra\n"
+"\t\tjcxz init.4\t\t\t# Si esta hecho\n"
+"\t\tlodsb\t\t\t\t# Obtener segmento\n"
+"\t\txchg %ax,%dx\t\t\t#  P:DPL:tipo\n"
+"\t\tlodsw\t\t\t\t# Toma el control\n"
+"\t\txchg %ax,%bx\t\t\t#  conjunto\n"
+"\t\tlodsw\t\t\t\t# Obtener compensación de controlador\n"
+"\t\tmov $SEL_SCODE,%dh\t\t# Selector de segmento\n"
+"init.2:\t\tshr %bx\t\t\t\t# Maneja este int?\n"
 "\t\tjnc init.3\t\t\t# No\n"
-"\t\tmov %ax,(%di)\t\t\t# Set handler offset\n"
-"\t\tmov %dh,0x2(%di)\t\t#  and selector\n"
-"\t\tmov %dl,0x5(%di)\t\t# Set P:DPL:type\n"
-"\t\tadd $0x4,%ax\t\t\t# Next handler\n"
-"init.3:\t\tlea 0x8(%di),%di\t\t# Next entry\n"
-"\t\tloop init.2\t\t\t# Till set done\n"
-"\t\tjmp init.1\t\t\t# Continue"
+"\t\tmov %ax,(%di)\t\t\t# Establecer compensación de controlador\n"
+"\t\tmov %dh,0x2(%di)\t\t#  y selector\n"
+"\t\tmov %dl,0x5(%di)\t\t# Conjunto P:DPL:tipo\n"
+"\t\tadd $0x4,%ax\t\t\t# Siguiente controlador\n"
+"init.3:\t\tlea 0x8(%di),%di\t\t# Entrada siguiente\n"
+"\t\tloop init.2\t\t\t#Hasta que esté listo\n"
+"\t\tjmp init.1\t\t\t# Seguir"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1791
@@ -2573,6 +3147,33 @@ msgid ""
 "<emphasis>always</emphasis> handled adequately, regardless of the actual "
 "privileges involved."
 msgstr ""
+"Cada entrada en el <literal>IDT</literal> tiene 8 bytes de longitud. Además "
+"de la información de segmento / desplazamiento, también describen el tipo de "
+"segmento, el nivel de privilegio y si el segmento está presente en la "
+"memoria o no. La construcción es tal que interrumpen los vectores de "
+"<literal>0</literal> a <literal>0xf</literal> (excepciones) son manejados "
+"por función <literal>intx00</literal>; vector <literal>0x10</literal> ("
+"también una excepción) es manejado por <literal>intx10</literal>;"
+"interrupciones de hardware, que luego se configuran para comenzar en el "
+"vector de interrupción <literal>0x20</literal>todo el camino para "
+"interrumpir el vector <literal>0x2f</literal>, son manejados por función "
+"<literal>intx20</literal>. Por último, interrumpir el vector <literal>0x30</"
+"literal>, que se usa para llamadas al sistema, es manejado por "
+"<literal>intx30</literal>, y vectors <literal>0x31</literal> y "
+"<literal>0x32</literal>son manejados por <literal>intx31</literal>.Cabe "
+"señalar que solo los descriptores para vectores de interrupción "
+"<literal>0x30</literal>, <literal>0x31</literal> y <literal>0x32</"
+"literal>reciben el nivel de privilegio 3, el mismo nivel de privilegio que "
+"el <filename>boot2</filename> cliente, lo que significa que el cliente puede "
+"ejecutar una interrupción generada por software a estos vectores a través "
+"del <literal>int</literal> instrucción sin fallar (esta es la forma "
+"<filename>boot2</filename>utilizar los servicios proporcionados por el  "
+"<acronym>BTX</acronym> servidor). Además, tenga en cuenta que  "
+"<emphasis>only</emphasis>Las interrupciones generadas por software están "
+"protegidas contra la ejecución de código en niveles de privilegios menores. "
+"Las interrupciones generadas por hardware y las excepciones generadas por el "
+"procesador son <emphasis>siempre</emphasis> manejado adecuadamente, "
+"independientemente de los privilegios reales involucrados."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1821
@@ -2587,6 +3188,16 @@ msgid ""
 "3, but the <acronym>BTX</acronym> server does in privilege level 0, a "
 "<acronym>TSS</acronym> must be defined:"
 msgstr ""
+"El siguiente paso es inicializar el <acronym>TSS</acronym> (Segmento tarea-"
+"estado). los <acronym>TSS</acronym>es una característica de hardware que "
+"ayuda al sistema operativo o al software ejecutivo a implementar la "
+"funcionalidad multitarea mediante la abstracción de procesos. La "
+"arquitectura IA-32 exige la creación y uso de <emphasis>al menos </emphasis> "
+"uno <acronym>TSS</acronym>si se utilizan instalaciones multitarea o se "
+"definen diferentes niveles de privilegios. Porque el <filename>boot2</"
+"filename> El cliente se ejecuta en el nivel de privilegio 3, pero "
+"el<acronym>BTX</acronym> servidor hace en el nivel de privilegio 0, un  "
+"<acronym>TSS</acronym> debe definirse:"
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:1836
@@ -2643,7 +3254,7 @@ msgstr ""
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:1862
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "/*\n"
 " * Bring up the system.\n"
@@ -2662,20 +3273,20 @@ msgid ""
 "\t\tmovw %cx,%ss\t\t\t#  stack"
 msgstr ""
 "/*\n"
-" * Bring up the system.\n"
+" * Trae el sistema.\n"
 " */\n"
-"\t\tmov $0x2820,%bx\t\t\t# Set protected mode\n"
-"\t\tcallw setpic\t\t\t#  IRQ offsets\n"
-"\t\tlidt idtdesc\t\t\t# Set IDT\n"
-"\t\tlgdt gdtdesc\t\t\t# Set GDT\n"
-"\t\tmov %cr0,%eax\t\t\t# Switch to protected\n"
-"\t\tinc %ax\t\t\t\t#  mode\n"
+"\t\tmov $0x2820,%bx\t\t\t# Establecer modo protegido\n"
+"\t\tcallw setpic\t\t\t#  Compensaciones de IRQ\n"
+"\t\tlidt idtdesc\t\t\t# Establecer IDT\n"
+"\t\tlgdt gdtdesc\t\t\t# Establecer GDT\n"
+"\t\tmov %cr0,%eax\t\t\t# Cambiar a protegido\n"
+"\t\tinc %ax\t\t\t\t#  modo\n"
 "\t\tmov %eax,%cr0\t\t\t#\n"
-"\t\tljmp $SEL_SCODE,$init.8\t\t# To 32-bit code\n"
+"\t\tljmp $SEL_SCODE,$init.8\t\t# A código de 32 bits\n"
 "\t\t.code32\n"
-"init.8:\t\txorl %ecx,%ecx\t\t\t# Zero\n"
-"\t\tmovb $SEL_SDATA,%cl\t\t# To 32-bit\n"
-"\t\tmovw %cx,%ss\t\t\t#  stack"
+"init.8:\t\txorl %ecx,%ecx\t\t\t# Cero\n"
+"\t\tmovb $SEL_SDATA,%cl\t\t# A 32-bit\n"
+"\t\tmovw %cx,%ss\t\t\t#  apilar"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1879
@@ -2701,6 +3312,28 @@ msgid ""
 "<literal>%ss</literal> register. This data segment also has a privilege "
 "level of <literal>0</literal>."
 msgstr ""
+"Primero, se hace una llamada a <literal>setpic</literal> para programar el "
+"8259A <acronym>PIC</acronym> (Controlador de interrupción programable). Este "
+"chip está conectado a múltiples fuentes de interrupción de hardware. Al "
+"recibir una interrupción de un dispositivo, envía una señal al procesador "
+"con el vector de interrupción apropiado. Esto se puede personalizar para que "
+"las interrupciones específicas se asocien con vectores de interrupción "
+"específicos, como se explicó antes. A continuación, el <acronym>IDTR</"
+"acronym> (Registro de tabla de descriptores de interrupción) y<acronym>GDTR</"
+"acronym> (Registro de tabla de descriptor global) se cargan con las "
+"instrucciones <literal>lidt</literal> y <literal>lgdt</literal>, "
+"respectivamente. Estos registros se cargan con la dirección base y la "
+"dirección límite para el  <acronym>IDT</acronym> y <acronym>GDT</acronym>. "
+"Las siguientes tres instrucciones establecen el bit de habilitación de "
+"protección (PE) del<literal>%cr0</literal>Registrarse. Esto cambia "
+"efectivamente el procesador al modo protegido de 32 bits. A continuación, se "
+"realiza un salto de longitud para <literal>init.8</literal> utilizando el "
+"selector de segmento SEL_SCODE, que selecciona el segmento de código de "
+"supervisor. El procesador se está ejecutando efectivamente en CPL 0, el "
+"nivel más privilegiado, después de este salto. Finalmente, el segmento de "
+"datos del supervisor se selecciona para la pila asignando el selector de "
+"segmento SEL_SDATA to the <literal>%ss</literal> registrar. Este segmento de "
+"datos también tiene un nivel de privilegio de <literal>0</literal>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1904
@@ -2710,10 +3343,15 @@ msgid ""
 "created earlier, and setting the User Mode environment before passing "
 "execution control to the <filename>boot2</filename> client."
 msgstr ""
+"Nuestro último bloque de código es responsable de cargar el <acronym>TR</"
+"acronym> (Registro de tareas) con el selector de segmento para el "
+"<acronym>TSS</acronym> que creamos anteriormente y configuramos el entorno "
+"de modo de usuario antes de pasar el control de ejecución al<filename>boot2</"
+"filename> cliente."
 
 #. (itstool) path: figure/programlisting
 #: book.translate.xml:1913
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "/*\n"
 " * Launch user task.\n"
@@ -2749,33 +3387,33 @@ msgstr ""
 "/*\n"
 " * Launch user task.\n"
 " */\n"
-"\t\tmovb $SEL_TSS,%cl\t\t# Set task\n"
-"\t\tltr %cx\t\t\t\t#  register\n"
-"\t\tmovl $0xa000,%edx\t\t# User base address\n"
-"\t\tmovzwl %ss:BDA_MEM,%eax\t\t# Get free memory\n"
-"\t\tshll $0xa,%eax\t\t\t# To bytes\n"
-"\t\tsubl $ARGSPACE,%eax\t\t# Less arg space\n"
-"\t\tsubl %edx,%eax\t\t\t# Less base\n"
-"\t\tmovb $SEL_UDATA,%cl\t\t# User data selector\n"
-"\t\tpushl %ecx\t\t\t# Set SS\n"
-"\t\tpushl %eax\t\t\t# Set ESP\n"
-"\t\tpush $0x202\t\t\t# Set flags (IF set)\n"
-"\t\tpush $SEL_UCODE\t\t\t# Set CS\n"
-"\t\tpushl btx_hdr+0xc\t\t# Set EIP\n"
-"\t\tpushl %ecx\t\t\t# Set GS\n"
-"\t\tpushl %ecx\t\t\t# Set FS\n"
-"\t\tpushl %ecx\t\t\t# Set DS\n"
-"\t\tpushl %ecx\t\t\t# Set ES\n"
-"\t\tpushl %edx\t\t\t# Set EAX\n"
-"\t\tmovb $0x7,%cl\t\t\t# Set remaining\n"
+"\t\tmovb $SEL_TSS,%cl\t\t# Establecer tarea\n"
+"\t\tltr %cx\t\t\t\t#  registrar\n"
+"\t\tmovl $0xa000,%edx\t\t# Dirección base de usuario\n"
+"\t\tmovzwl %ss:BDA_MEM,%eax\t\t# Obtenga memoria libre\n"
+"\t\tshll $0xa,%eax\t\t\t# A bytes\n"
+"\t\tsubl $ARGSPACE,%eax\t\t# Menos espacio arg\n"
+"\t\tsubl %edx,%eax\t\t\t# Menos base\n"
+"\t\tmovb $SEL_UDATA,%cl\t\t# Selector de datos de usuario\n"
+"\t\tpushl %ecx\t\t\t# Establecer SS\n"
+"\t\tpushl %eax\t\t\t# Establecer ESP\n"
+"\t\tpush $0x202\t\t\t# Establecer flags (IF set)\n"
+"\t\tpush $SEL_UCODE\t\t\t# Establecer CS\n"
+"\t\tpushl btx_hdr+0xc\t\t# Establecer EIP\n"
+"\t\tpushl %ecx\t\t\t# Establecer GS\n"
+"\t\tpushl %ecx\t\t\t# Establecer FS\n"
+"\t\tpushl %ecx\t\t\t# Establecer DS\n"
+"\t\tpushl %ecx\t\t\t# Establecer ES\n"
+"\t\tpushl %edx\t\t\t# Establecer EAX\n"
+"\t\tmovb $0x7,%cl\t\t\t# Establecer restante\n"
 "init.9:\t\tpush $0x0\t\t\t#  general\n"
-"\t\tloop init.9\t\t\t#  registers\n"
-"\t\tpopa\t\t\t\t#  and initialize\n"
-"\t\tpopl %es\t\t\t# Initialize\n"
-"\t\tpopl %ds\t\t\t#  user\n"
-"\t\tpopl %fs\t\t\t#  segment\n"
-"\t\tpopl %gs\t\t\t#  registers\n"
-"\t\tiret\t\t\t\t# To user mode"
+"\t\tloop init.9\t\t\t#  registros\n"
+"\t\tpopa\t\t\t\t# e inicializar\n"
+"\t\tpopl %es\t\t\t# Inicializar\n"
+"\t\tpopl %ds\t\t\t#  usuario\n"
+"\t\tpopl %fs\t\t\t#  segmento\n"
+"\t\tpopl %gs\t\t\t#  registros\n"
+"\t\tiret\t\t\t\t# Al modo de usuario"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1945
@@ -2816,6 +3454,44 @@ msgid ""
 "segment (<literal>%ss</literal>). Now, execution continues at "
 "<literal>boot0</literal>'s entry point."
 msgstr ""
+"Tenga en cuenta que el entorno del cliente incluye un selector de segmento "
+"de pila y un puntero de pila (registra <literal>%ss</literal> y "
+"<literal>%esp</literal>). De hecho, una vez que el <acronym>TR</acronym> se "
+"carga con el selector de segmento de pila apropiado (instrucción "
+"<literal>ltr</literal>), el puntero de la pila se calcula y se inserta en la "
+"pila junto con el selector de segmento de la pila. A continuación, el valor "
+"<literal>0x202</literal> se empuja hacia la pila; es el valor que obtendrá "
+"EFLAGS cuando el control se pase al cliente. Además, se presionan el "
+"selector de segmento de código del modo de usuario y el punto de entrada del "
+"cliente. Recuerde que este punto de entrada está parcheado en el "
+"<acronym>BTX</acronym> encabezado en el momento del enlace. Finalmente, los "
+"selectores de segmento (almacenados en el registro <literal>%ecx</literal>) "
+"para los registros de segmento <literal>%gs, %fs, %ds and %es</literal> se "
+"colocan en la pila, junto con el valor en <literal>%edx</literal> "
+"(<literal>0xa000</literal>). Tenga en cuenta los diversos valores que se han "
+"introducido en la pila (aparecerán en breve). A continuación, los valores de "
+"los registros de propósito general restantes también se insertan en la pila ("
+"tenga en cuenta el<literal>loop</literal> que empuja el valor <literal>0</"
+"literal> siete veces). Ahora, los valores comenzarán a salir de la pila. "
+"Primero el <literal>popa</literal>La instrucción emerge de la pila con los "
+"últimos siete valores insertados. Se almacenan en los registros de propósito "
+"general en orden <literal>%edi, %esi, %ebp, %ebx, %edx, %ecx, %eax</"
+"literal>. Luego, los diversos selectores de segmento presionados se "
+"introducen en los distintos registros de segmento. Aún quedan cinco valores "
+"en la pila. Se reventan cuando el <literal>iret</literal> se ejecuta la "
+"instrucción. Esta instrucción primero muestra el valor que fue empujado "
+"desde el<acronym>BTX</acronym> encabezamiento. Este valor es un puntero a "
+"<filename>boot2</filename>'s punto de entrada. Se coloca en el registro "
+"<literal>%eip</literal>, el registro de puntero de instrucción. A "
+"continuación, el selector de segmento para el segmento de código de usuario "
+"se abre y se copia para registrar <literal>%cs</literal>. Recuerde que el "
+"nivel de privilegio de este segmento es 3, el nivel menos privilegiado. Esto "
+"significa que debemos proporcionar valores para la pila de este nivel de "
+"privilegio. Esta es la razón por la que el procesador, además de extraer aún "
+"más el valor del registro EFLAGS, hace dos salidas más de la pila. Estos "
+"valores van al puntero de la pila(<literal>%esp</literal>) y el segmento de "
+"pila (<literal>%ss</literal>).Ahora, la ejecución continúa en "
+"<literal>boot0</literal>'s punto de entrada."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1991
@@ -2827,6 +3503,13 @@ msgid ""
 "<literal>0x2000</literal>, the <emphasis>actual</emphasis> memory addressed "
 "is <literal>0xa000+0x2000=0xc000</literal>."
 msgstr ""
+"Es importante tener en cuenta cómo se define el segmento de código de "
+"usuario. Este segmento <emphasis>dirección base</emphasis>se establece en "
+"<literal>0xa000</literal>. Esto significa que las direcciones de memoria de "
+"códigos son <emphasis>relative</emphasis>para direccionar 0xa000; si el "
+"código que se está ejecutando se obtiene de la dirección <literal>0x2000</"
+"literal>, la <emphasis>actual</emphasis> la memoria dirigida es "
+"<literal>0xa000+0x2000=0xc000</literal>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:2002
@@ -2845,6 +3528,15 @@ msgid ""
 "drive number for boot device, physical memory available, <literal>envp</"
 "literal> pointer etc. The definition for it is:"
 msgstr ""
+"<literal>boot2</literal> define una estructura importante, <literal>struct "
+"bootinfo</literal>.Esta estructura es inicializada por <literal>boot2</"
+"literal>y se pasa al cargador, y luego al kernel. Algunos nodos de estas "
+"estructuras están establecidos por <literal>boot2</literal>, el resto por el "
+"cargador. Esta estructura, entre otra información, contiene el nombre de "
+"archivo del kernel, <acronym>BIOS</acronym> geometría del disco duro, "
+"<acronym>BIOS</acronym> número de unidad para el dispositivo de arranque, "
+"memoria física disponible, <literal>envp</literal> puntero, etc. La "
+"definición es:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:2015
@@ -2912,6 +3604,19 @@ msgid ""
 "header, loading the content of <filename>/boot/loader</filename> into "
 "memory, and passing the execution to the loader's entry:"
 msgstr ""
+"<literal>boot2</literal> entra en un bucle infinito esperando la entrada del "
+"usuario, luego llama <function>load()</function>.Si el usuario no presiona "
+"nada, el ciclo se interrumpe por un tiempo de espera, por lo "
+"que<function>load()</function> cargará el archivo predeterminado (<filename>/"
+"boot/loader</filename>). Funciones <function>ino_t lookup(char *filename)</"
+"function> y <function>int xfsread(ino_t inode, void *buf, size_t nbyte)</"
+"function> se utilizan para leer el contenido de un archivo en la memoria. "
+"<filename>/boot/loader</filename>es un <acronym>ELF</acronym> Binario, pero "
+"donde el <acronym>ELF</acronym> El encabezado está precedido por <filename>a."
+"out</filename>'s <literal>struct exec</literal> estructura. "
+"<function>load()</function>escanea el encabezado ELF del cargador, cargando "
+"el contenido de <filename>/boot/loader</filename> en la memoria y pasar la "
+"ejecución a la entrada del cargador:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:2055
@@ -2941,6 +3646,12 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>. The underlying "
 "mechanisms and <acronym>BTX</acronym> were discussed above."
 msgstr ""
+"<application>loader</application> es un <acronym>BTX</acronym> cliente "
+"también. No lo describiré aquí en detalle, hay una página de manual completa "
+"escrita por Mike Smith, "
+"<citerefentry><refentrytitle>loader</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>. Los mecanismos subyacentes y <acronym>BTX</acronym> se "
+"discutieron anteriormente."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2070
@@ -2953,14 +3664,15 @@ msgstr ""
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:2074
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<filename>sys/boot/common/boot.c:</filename>\n"
 "    /* Call the exec handler from the loader matching the kernel */\n"
 "    module_formats[km-&gt;m_loader]-&gt;l_exec(km);"
 msgstr ""
 "<filename>sys/boot/common/boot.c:</filename>\n"
-"    /* Call the exec handler from the loader matching the kernel */\n"
+"    /* Llame al controlador ejecutivo desde el cargador que coincida con el "
+"kernel */\n"
 "    module_formats[km-&gt;m_loader]-&gt;l_exec(km);"
 
 #. (itstool) path: sect1/title
@@ -3038,7 +3750,7 @@ msgstr ""
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:2108
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<filename>sys/i386/i386/locore.s:</filename>\n"
 "\t.text\n"
@@ -3053,7 +3765,7 @@ msgstr ""
 "\t.text\n"
 "/**********************************************************************\n"
 " *\n"
-" * This is where the bootblocks start us, set the ball rolling...\n"
+" *Aquí es donde empiezan los bootblocks, ponen la bola en movimiento..\n"
 " *\n"
 " */\n"
 "NON_GPROF_ENTRY(btext)"
@@ -3069,7 +3781,7 @@ msgstr ""
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:2121
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<filename>sys/i386/i386/locore.s:</filename>\n"
 "/* Don't trust what the BIOS gives for eflags. */\n"
@@ -3090,8 +3802,9 @@ msgstr ""
 "\tpopfl\n"
 "\n"
 "/*\n"
-" * Don't trust what the BIOS gives for %fs and %gs.  Trust the bootstrap\n"
-" * to set %cs, %ds, %es and %ss.\n"
+" * No confíe en lo que ofrece la BIOS para% fs y% gs. Confía en el "
+"bootstrap\n"
+" *establecer %cs, %ds, %es and %ss.\n"
 " */\n"
 "\tmov\t%ds, %ax\n"
 "\tmov\t%ax, %fs\n"
@@ -3105,6 +3818,10 @@ msgid ""
 "function>, which are also defined in <filename>locore.s</filename>. Here is "
 "a description of what they do:"
 msgstr ""
+"btext llama a las rutinas <function>recover_bootinfo()</function>, "
+"<function>identify_cpu()</function>, <function>create_pagetables()</"
+"function>, que también se definen en <filename>locore.s</filename>. Aquí hay "
+"una descripción de lo que hacen:"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:2145
@@ -3186,7 +3903,7 @@ msgstr "Luego, habilitando la paginación:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:2182
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "/* Now enable paging */\n"
 "\tmovl\tR(_IdlePTD), %eax\n"
@@ -3197,10 +3914,10 @@ msgid ""
 msgstr ""
 "/* Now enable paging */\n"
 "\tmovl\tR(_IdlePTD), %eax\n"
-"\tmovl\t%eax,%cr3\t\t\t/* load ptd addr into mmu */\n"
-"\tmovl\t%cr0,%eax\t\t\t/* get control word */\n"
-"\torl\t$CR0_PE|CR0_PG,%eax\t\t/* enable paging */\n"
-"\tmovl\t%eax,%cr0\t\t\t/* and let's page NOW! */"
+"\tmovl\t%eax,%cr3\t\t\t/* cargar ptd addr en mmu */\n"
+"\tmovl\t%cr0,%eax\t\t\t/* obtener palabra de control */\n"
+"\torl\t$CR0_PE|CR0_PG,%eax\t\t/*habilitar paginación */\n"
+"\tmovl\t%eax,%cr0\t\t\t/*y busquemos AHORA! */"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2189
@@ -3214,7 +3931,7 @@ msgstr ""
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:2193
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "\tpushl\t$begin\t\t\t\t/* jump to high virtualized address */\n"
 "\tret\n"
@@ -3222,11 +3939,12 @@ msgid ""
 "/* now running relocated at KERNBASE where the system is linked to run */\n"
 "begin:"
 msgstr ""
-"\tpushl\t$begin\t\t\t\t/* jump to high virtualized address */\n"
+"\tpushl\t$begin\t\t\t\t/* saltar a alta dirección virtualizada */\n"
 "\tret\n"
 "\n"
-"/* now running relocated at KERNBASE where the system is linked to run */\n"
-"begin:"
+"/* ahora se está ejecutando reubicado en KERNBASE donde el sistema está "
+"vinculado para ejecutar * /\n"
+"empezar:"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2199
@@ -3239,10 +3957,17 @@ msgid ""
 "kernel never returns from <function>mi_startup()</function>, and by calling "
 "it, the kernel finishes booting:"
 msgstr ""
+"La función <function>init386()</function> se llama con un puntero a la "
+"primera página física libre, después de eso <function>mi_startup()</"
+"function>. <function>init386</function> es una función de inicialización "
+"dependiente de la arquitectura, y <function>mi_startup()</function> es una "
+"arquitectura independiente (el prefijo 'mi_' significa Machine Independent). "
+"El kernel nunca regresa de <function>mi_startup()</function>, y al llamarlo, "
+"el kernel termina de arrancar:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:2208
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<filename>sys/i386/i386/locore.s:</filename>\n"
 "\tmovl\tphysfree, %esi\n"
@@ -3253,10 +3978,10 @@ msgid ""
 msgstr ""
 "<filename>sys/i386/i386/locore.s:</filename>\n"
 "\tmovl\tphysfree, %esi\n"
-"\tpushl\t%esi\t\t\t\t/* value of first for init386(first) */\n"
-"\tcall\t_init386\t\t\t/* wire 386 chip for unix operation */\n"
-"\tcall\t_mi_startup\t\t\t/* autoconfiguration, mountroot etc */\n"
-"\thlt\t\t/* never returns to here */"
+"\tpushl\t%esi\t\t\t\t/* valor de primero para init386 (primero) */\n"
+"\tcall\t_init386\t\t\t/*chip de alambre 386 para operación Unix */\n"
+"\tcall\t_mi_startup\t\t\t/* autoconfiguración, mountroot, etc. */\n"
+"\thlt\t\t/* nunca vuelve a aqui*/"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:2216
@@ -3368,6 +4093,10 @@ msgid ""
 "functions, <function>init_param1()</function> and <function>init_param2()</"
 "function>, that are called from <function>init386()</function>:"
 msgstr ""
+"<function>init_param1()</function>se define en <filename>sys/kern/subr_param."
+"c</filename>. Ese archivo tiene varios sysctls y dos funciones, "
+"<function>init_param1()</function> y <function>init_param2()</function>,que "
+"son llamados desde <function>init386()</function>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:2283
@@ -3387,6 +4116,7 @@ msgid ""
 "TUNABLE_&lt;typename&gt;_FETCH is used to fetch the value from the "
 "environment:"
 msgstr ""
+"TUNABLE_&lt;typename&gt;_FETCH se utiliza para obtener el valor del entorno:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:2290
@@ -3406,6 +4136,10 @@ msgid ""
 "maxswzone, kern.maxbcache, kern.maxtsiz, kern.dfldsiz, kern.maxdsiz, kern."
 "dflssiz, kern.maxssiz, kern.sgrowsiz</literal>."
 msgstr ""
+"Sysctl <literal>kern.hz</literal>es el tic del reloj del sistema. Además, "
+"estos sysctls están configurados por <function>init_param1()</function>: "
+"<literal>kern.maxswzone, kern.maxbcache, kern.maxtsiz, kern.dfldsiz, "
+"kern.maxdsiz, kern.dflssiz, kern.maxssiz, kern.sgrowsiz</literal>."
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:2299
@@ -3444,7 +4178,7 @@ msgstr ""
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:2319
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<filename>sys/i386/i386/machdep.c:</filename>\n"
 "union descriptor gdt[NGDT * MAXCPU];\t/* global descriptor table */\n"
@@ -3470,27 +4204,29 @@ msgid ""
 "#define GBIOSARGS_SEL\t14\t/* BIOS interface (Arguments) */"
 msgstr ""
 "<filename>sys/i386/i386/machdep.c:</filename>\n"
-"union descriptor gdt[NGDT * MAXCPU];\t/* global descriptor table */\n"
+"union descriptor gdt[NGDT * MAXCPU];\t/* tabla de descriptores globales*/\n"
 "\n"
 "<filename>sys/i386/include/segments.h:</filename>\n"
 "/*\n"
-" * Entries in the Global Descriptor Table (GDT)\n"
+" * Entradas en la tabla de descriptores globales (GDT)\n"
 " */\n"
-"#define\tGNULL_SEL\t0\t/* Null Descriptor */\n"
-"#define\tGCODE_SEL\t1\t/* Kernel Code Descriptor */\n"
-"#define\tGDATA_SEL\t2\t/* Kernel Data Descriptor */\n"
-"#define\tGPRIV_SEL\t3\t/* SMP Per-Processor Private Data */\n"
-"#define\tGPROC0_SEL\t4\t/* Task state process slot zero and up */\n"
-"#define\tGLDT_SEL\t5\t/* LDT - eventually one per process */\n"
-"#define\tGUSERLDT_SEL\t6\t/* User LDT */\n"
-"#define\tGTGATE_SEL\t7\t/* Process task switch gate */\n"
-"#define\tGBIOSLOWMEM_SEL\t8\t/* BIOS low memory access (must be entry 8) */\n"
-"#define\tGPANIC_SEL\t9\t/* Task state to consider panic from */\n"
-"#define GBIOSCODE32_SEL\t10\t/* BIOS interface (32bit Code) */\n"
-"#define GBIOSCODE16_SEL\t11\t/* BIOS interface (16bit Code) */\n"
-"#define GBIOSDATA_SEL\t12\t/* BIOS interface (Data) */\n"
-"#define GBIOSUTIL_SEL\t13\t/* BIOS interface (Utility) */\n"
-"#define GBIOSARGS_SEL\t14\t/* BIOS interface (Arguments) */"
+"#define\tGNULL_SEL\t0\t/* Descriptor nulo */\n"
+"#define\tGCODE_SEL\t1\t/*Descriptor de código de kernel */\n"
+"#define\tGDATA_SEL\t2\t/* Descriptor de datos del kernel */\n"
+"#define\tGPRIV_SEL\t3\t/* Datos privados por procesador SMP */\n"
+"#define\tGPROC0_SEL\t4\t/* Ranura de proceso de estado de tarea cero y "
+"superior */\n"
+"#define\tGLDT_SEL\t5\t/* LDT - eventualmente uno por proceso */\n"
+"#define\tGUSERLDT_SEL\t6\t/* Usuario LDT */\n"
+"#define\tGTGATE_SEL\t7\t/* Puerta de conmutación de tareas de proceso */\n"
+"#define\tGBIOSLOWMEM_SEL\t8\t/* Acceso de memoria baja al BIOS (debe ser la "
+"entrada 8) */\n"
+"#define\tGPANIC_SEL\t9\t/* Estado de la tarea para considerar el pánico */\n"
+"#define GBIOSCODE32_SEL\t10\t/* Interfaz BIOS (código de 32 bits) */\n"
+"#define GBIOSCODE16_SEL\t11\t/* Interfaz BIOS (código de 16 bits) */\n"
+"#define GBIOSDATA_SEL\t12\t/* Interfaz BIOS (datos) */\n"
+"#define GBIOSUTIL_SEL\t13\t/* Interfaz BIOS (utilidad) */\n"
+"#define GBIOSARGS_SEL\t14\t/* Interfaz BIOS (argumentos) */"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2342
@@ -3507,9 +4243,8 @@ msgstr ""
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:2347
-#, fuzzy
 msgid "<primary>Interrupt Descriptor Table (IDT)</primary>"
-msgstr "<primary>Interrupt Descriptor Table (IDT)</primary>"
+msgstr "<primary>Tabla de descriptores de interrupciones (IDT)</primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2349
@@ -3537,7 +4272,7 @@ msgstr ""
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:2361
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<filename>sys/i386/i386/machdep.c:</filename>\n"
 "static struct gate_descriptor idt0[NIDT];\n"
@@ -3545,7 +4280,8 @@ msgid ""
 msgstr ""
 "<filename>sys/i386/i386/machdep.c:</filename>\n"
 "static struct gate_descriptor idt0[NIDT];\n"
-"struct gate_descriptor *idt = &amp;idt0[0];\t/* interrupt descriptor table */"
+"struct gate_descriptor *idt = &amp;idt0[0];\t/* tabla de descriptores de "
+"interrupciones */"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2365
@@ -3576,6 +4312,10 @@ msgid ""
 "<function>_Xint0x80_syscall</function>, which is in the kernel code segment "
 "and will be executed with supervisor privileges."
 msgstr ""
+"Entonces, cuando una aplicación de usuario emite el <literal>INT 0x80</"
+"literal> instrucción, el control se transferirá a la función "
+"<function>_Xint0x80_syscall</function>, que está en el segmento de código "
+"del kernel y se ejecutará con privilegios de supervisor."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2379
@@ -3668,6 +4408,10 @@ msgid ""
 "structure that describes a kernel process. It is always present while the "
 "kernel is running, therefore it is declared as global:"
 msgstr ""
+"A continuación, el bloque de control de procesos de proc0(<literal>struct "
+"pcb</literal>) se inicializa la estructura. proc0 es un <literal>struct "
+"proc</literal> estructura que describe un proceso del kernel. Siempre está "
+"presente mientras se ejecuta el kernel, por lo tanto, se declara como global:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:2418
@@ -3687,6 +4431,10 @@ msgid ""
 "process's information specific to the i386 architecture, such as registers "
 "values."
 msgstr ""
+"La estructura <literal>struct pcb</literal>es parte de una estructura proc. "
+"Se define en <filename>/usr/include/machine/pcb.h</filename> y tiene "
+"información de un proceso específica para la arquitectura i386, como "
+"registros de valores."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:2429
@@ -3797,6 +4545,11 @@ msgid ""
 "<literal>struct sysinit</literal> structure declaration with another "
 "<literal>DATA_SET</literal> macro call:"
 msgstr ""
+"Echemos un vistazo a qué es exactamente la macro <literal>SYSINIT()</"
+"literal> hace. Se expande a un<literal>C_SYSINIT()</literal> macro. la "
+"<literal>C_SYSINIT()</literal>macro luego se expande a una estática "
+"<literal>struct sysinit</literal> declaración de estructura con "
+"otra<literal>DATA_SET</literal> llamada macro:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:2474
@@ -3828,6 +4581,8 @@ msgid ""
 "The <literal>DATA_SET()</literal> macro expands to a <literal>MAKE_SET()</"
 "literal>, and that macro is the point where all the sysinit magic is hidden:"
 msgstr ""
+"El <literal>DATA_SET()</literal> Macro se expande a un <literal>MAKE_SET()</"
+"literal>, y esa macro es el punto donde se esconde toda la magia de sysinit:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:2488
@@ -3901,6 +4656,15 @@ msgid ""
 "32-bit value, will be appended to the existing section, so forming an array "
 "of 32-bit pointers."
 msgstr ""
+"El primero <literal>__asm</literal>La instrucción creará una sección ELF "
+"dentro del ejecutable del kernel. Esto sucederá en el momento del enlace del "
+"kernel. La sección tendrá el nombre<literal>.set.sysinit_set</literal>. El "
+"contenido de esta sección es un valor de 32 bits, la dirección de la "
+"estructura publish_sys_init, y eso es lo que el segundo <literal>__asm</"
+"literal> es. El tercero <literal>__asm</literal> instrucción marca el final "
+"de una sección. Si antes se produjo una directiva con el mismo nombre de "
+"sección, el contenido, es decir, el valor de 32 bits, se agregará a la "
+"sección existente, formando una matriz de punteros de 32 bits."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2526
@@ -3951,6 +4715,11 @@ msgid ""
 "compiled into the kernel. The other sections such as <literal>.set."
 "sysctl_set</literal> represent other linker sets."
 msgstr ""
+"Este volcado de pantalla muestra que el tamaño de la sección ."
+"set.sysinit_set es 0x664 bytes, por lo que <literal>0x664/sizeof(void *)</"
+"literal> Los objetos sysinit se compilan en el kernel. Las otras secciones "
+"como <literal>.set.sysctl_set</literal> representan otros conjuntos de "
+"enlazadores."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2550
@@ -3959,6 +4728,9 @@ msgid ""
 "content of <literal>.set.sysinit_set</literal> section will be "
 "<quote>collected</quote> into that variable:"
 msgstr ""
+"Definiendo una variable de tipo <literal>struct linker_set</literal> el "
+"contenido de<literal>.set.sysinit_set</literal> la sección será "
+"<quote>collected</quote> en esa variable:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:2555
@@ -4008,10 +4780,14 @@ msgid ""
 "<function>mi_startup()</function> function sorts them and calls each. The "
 "very last object is the system scheduler:"
 msgstr ""
+"Volviendo al <function>mi_startup()</function> discusión, debe quedar claro "
+"ahora, cómo se están organizando los objetos sysinit. "
+"los<function>mi_startup()</function> la función los ordena y llama a cada "
+"uno. El último objeto es el programador del sistema:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:2577
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<filename>/usr/include/sys/kernel.h:</filename>\n"
 "enum sysinit_sub_id {\n"
@@ -4025,12 +4801,12 @@ msgid ""
 msgstr ""
 "<filename>/usr/include/sys/kernel.h:</filename>\n"
 "enum sysinit_sub_id {\n"
-"\tSI_SUB_DUMMY\t\t= 0x0000000,\t/* not executed; for linker*/\n"
-"\tSI_SUB_DONE\t\t= 0x0000001,\t/* processed*/\n"
-"\tSI_SUB_CONSOLE\t\t= 0x0800000,\t/* console*/\n"
-"\tSI_SUB_COPYRIGHT\t= 0x0800001,\t/* first use of console*/\n"
+"\tSI_SUB_DUMMY\t\t= 0x0000000,\t/* sin ejecutar; para enlazador*/\n"
+"\tSI_SUB_DONE\t\t= 0x0000001,\t/* procesada*/\n"
+"\tSI_SUB_CONSOLE\t\t= 0x0800000,\t/* consola*/\n"
+"\tSI_SUB_COPYRIGHT\t= 0x0800001,\t/* primer uso de la consola*/\n"
 "...\n"
-"\tSI_SUB_RUN_SCHEDULER\t= 0xfffffff\t/* scheduler: no return*/\n"
+"\tSI_SUB_RUN_SCHEDULER\t= 0xfffffff\t/*Planificador: sin retorno*/\n"
 "};"
 
 #. (itstool) path: sect2/para
@@ -4042,6 +4818,11 @@ msgid ""
 "loop, and it represents a process with PID 0, the swapper process. The proc0 "
 "structure, mentioned before, is used to describe it."
 msgstr ""
+"El objeto sysinit del programador del sistema se define en el archivo "
+"<filename>sys/vm/vm_glue.c</filename>, y el punto de entrada para ese objeto "
+"es <function>scheduler()</function>. Esa función es en realidad un bucle "
+"infinito y representa un proceso con PID 0, el proceso de intercambio. La "
+"estructura proc0, mencionada anteriormente, se usa para describirlo."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2594
@@ -4105,6 +4886,14 @@ msgid ""
 "first, then <filename>/sbin/oinit</filename>, <filename>/sbin/init.bak</"
 "filename>, and finally <filename>/stand/sysinstall</filename>:"
 msgstr ""
+"El <function>create_init()</function> asigna un nuevo proceso llamando "
+"<function>fork1()</function>, pero no lo marca como ejecutable. Cuando el "
+"planificador programa la ejecución de este nuevo proceso, "
+"<function>start_init()</function> sera llamado. Esa función se define en "
+"<filename>init_main.c</filename>. Intenta cargar y ejecutar el "
+"<filename>init</filename> binario, sondeo <filename>/sbin/init</filename> "
+"primero luego <filename>/sbin/oinit</filename>, <filename>/sbin/init.bak</"
+"filename>, y finalmente <filename>/stand/sysinstall</filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:2628
@@ -4275,6 +5064,10 @@ msgid ""
 "<citerefentry><refentrytitle>mutex</refentrytitle><manvolnum>9</manvolnum></"
 "citerefentry>."
 msgstr ""
+"El tipo de mutex en términos de <constant>MTX_*</constant>banderas. El "
+"significado de cada bandera está relacionado con su significado como se "
+"documenta en <citerefentry><refentrytitle>mutex</refentrytitle><manvolnum>9</"
+"manvolnum></citerefentry>."
 
 #. (itstool) path: varlistentry/term
 #. (itstool) path: row/entry
@@ -4985,6 +5778,10 @@ msgid ""
 "<literal>METHOD</literal>, <literal>STATICMETHOD</literal>, and "
 "<literal>DEFAULT</literal>."
 msgstr ""
+"Dentro de esta plantilla se utilizan las siguientes palabras clave: "
+"<literal>#include</literal>, <literal>INTERFACE</literal>, <literal>CODE</"
+"literal>, <literal>METHOD</literal>, <literal>STATICMETHOD</literal>, y "
+"<literal>DEFAULT</literal>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3130
@@ -5133,8 +5930,9 @@ msgstr "Crear una clase"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:3205
+#, fuzzy
 msgid "<primary>Kernel Objects</primary> <secondary>class</secondary>"
-msgstr ""
+msgstr "<primary>Kernel Objects</primary> <secondary>class</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3208
@@ -5183,6 +5981,12 @@ msgid ""
 "varname> and using <function>kobj_class_compile_static();</function> "
 "otherwise, <function>kobj_class_compile()</function> should be used."
 msgstr ""
+"La clase debe ser <quote>compiled</quote>. Dependiendo del estado del "
+"sistema en el momento de inicializar la clase, una caché asignada "
+"estáticamente, <quote>ops table</quote> tiene que ser utilizado. Esto se "
+"puede lograr declarando un <varname remap=\"structname\">struct kobj_ops</"
+"varname> y usando <function>kobj_class_compile_static();</function> de otra "
+"manera,<function>kobj_class_compile()</function> debería ser usado."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3237
@@ -5289,6 +6093,10 @@ msgid ""
 "when a class is no longer being used <function>kobj_class_free()</function> "
 "may be called on it."
 msgstr ""
+"Cuando un objeto asignado a través <function>kobj_create()</function> ya no "
+"es necesario<function>kobj_delete()</function> puede ser llamado en él, y "
+"cuando una clase ya no se usa<function>kobj_class_free()</function> puede "
+"ser llamado en él."
 
 #. (itstool) path: info/title
 #: book.translate.xml:3301
@@ -5363,6 +6171,21 @@ msgid ""
 "<application>jail</application>, utilize certain system calls, or inflict "
 "any damage on the host environment."
 msgstr ""
+"En la mayoría<trademark class=\"registered\">UNIX</trademark> systems, "
+"<literal>root</literal> tiene poder omnipotente. Esto promueve la "
+"inseguridad. Si un atacante ganó <literal>root</literal> en un sistema, "
+"tendría todas las funciones al alcance de la mano. En FreeBSD hay sysctls "
+"que diluyen el poder de <literal>root</literal>, para minimizar el daño "
+"causado por un atacante. Específicamente, una de estas funciones se llama "
+"<literal>secure levels</literal>. De manera similar, otra función que está "
+"presente desde FreeBSD 4.0 en adelante, es una utilidad llamada "
+"<citerefentry><refentrytitle>jail</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>. <application>Jail</application> crea un entorno y establece "
+"ciertas restricciones en los procesos que se bifurcan dentro del "
+"<application>jail</application>. Por ejemplo, un proceso encarcelado no "
+"puede afectar procesos fuera del <application>jail</application>,utilizar "
+"determinadas llamadas al sistema o infligir algún daño en el entorno del "
+"host."
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:3339
@@ -5377,6 +6200,17 @@ msgid ""
 "on how to set up a jail see the <link xlink:href=\"@@URL_RELPREFIX@@/doc/"
 "en_US.ISO8859-1/books/handbook/jails.html\">handbook entry on jails</link>."
 msgstr ""
+"<application>Jail</application> se está convirtiendo en el nuevo modelo de "
+"seguridad. Las personas están ejecutando servidores potencialmente "
+"vulnerables como <application>Apache</application>, <application>BIND</"
+"application>, y <application>sendmail</application>dentro de las cárceles, "
+"de modo que si un atacante gana <literal>root</literal> dentro de "
+"<application>jail</application>,es sólo una molestia y no una devastación. "
+"Este artículo se centra principalmente en los aspectos internos (código "
+"fuente) de<application>jail</application>. Para obtener información sobre "
+"cómo configurar una cárcel, consulte el <link xlink:href=\"@@URL_RELPREFIX@@/"
+"doc/en_US.ISO8859-1/books/handbook/jails.html\">entrada del manual sobre "
+"cárceles</link>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:3352
@@ -5394,6 +6228,14 @@ msgid ""
 "the userland program and then how <application>jail</application> is "
 "implemented within the kernel."
 msgstr ""
+"<application>Jail</application> consta de dos reinos: el programa de "
+"usuario, "
+"<citerefentry><refentrytitle>jail</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>,y el código implementado dentro del kernel: el "
+"<citerefentry><refentrytitle>jail</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> llamada al sistema y restricciones asociadas. Hablaré del "
+"programa Userland y luego cómo <application>jail</application> se implementa "
+"dentro del kernel."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3362
@@ -5402,8 +6244,9 @@ msgstr "Código de usuario"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:3364
+#, fuzzy
 msgid "<primary>Jail</primary> <secondary>Userland Program</secondary>"
-msgstr ""
+msgstr "<primary>Jail</primary> <secondary>Userland Program</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3367
@@ -5414,6 +6257,11 @@ msgid ""
 "the <application>jail</application>, hostname, IP address, and the command "
 "to be executed."
 msgstr ""
+"La fuente de la tierra del usuario <application>jail</application> Se "
+"encuentra en <filename>/usr/src/usr.sbin/jail</filename>, que consta de un "
+"archivo, <filename>jail.c</filename>.El programa toma estos argumentos: la "
+"ruta del <application>jail</application>, nombre de host, dirección IP y el "
+"comando que se ejecutará."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:3375
@@ -5427,6 +6275,9 @@ msgid ""
 "declaration of an important structure <literal>struct jail j;</literal> "
 "which was included from <filename>/usr/include/sys/jail.h</filename>."
 msgstr ""
+"En <filename>jail.c</filename>, lo primero que notaría es la declaración de "
+"una estructura importante <literal>struct jail j;</literal> que fue incluido "
+"de <filename>/usr/include/sys/jail.h</filename>."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3382
@@ -5510,6 +6361,14 @@ msgid ""
 "order and then stores it in <literal>j</literal> (the <literal>jail</"
 "literal> structure)."
 msgstr ""
+"Uno de los argumentos pasados al "
+"<citerefentry><refentrytitle>jail</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> programa es una dirección IP con la que <application>jail</"
+"application> se puede acceder a través de la red. "
+"<citerefentry><refentrytitle>jail</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> traduce la dirección IP dada en orden de bytes del host y "
+"luego la almacena en <literal>j</literal> (the <literal>jail</literal> "
+"structure)."
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:3421
@@ -5542,6 +6401,15 @@ msgid ""
 "host byte order by <citerefentry><refentrytitle>ntohl</"
 "refentrytitle><manvolnum>3</manvolnum></citerefentry>."
 msgstr ""
+"La <citerefentry><refentrytitle>inet_aton</refentrytitle><manvolnum>3</manvol"
+"num></citerefentry> función \"interpreta la cadena de caracteres "
+"especificada como una dirección de Internet, colocando la dirección en la "
+"estructura proporcionada\". los <literal>ip_number</literal> miembro en el "
+"<literal>jail</literal> La estructura se establece solo cuando la dirección "
+"IP colocada en el<literal>en</literal> estructura por <citerefentry><refentry"
+"title>inet_aton</refentrytitle><manvolnum>3</manvolnum></citerefentry>se "
+"traduce al orden de bytes del host por <citerefentry><refentrytitle>ntohl</re"
+"fentrytitle><manvolnum>3</manvolnum></citerefentry>."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:3439
@@ -5556,6 +6424,10 @@ msgid ""
 "command given using <citerefentry><refentrytitle>execv</"
 "refentrytitle><manvolnum>3</manvolnum></citerefentry>."
 msgstr ""
+"finalmente, el programa userland encarcela el proceso. <application>Jail</"
+"application> ahora se convierte en un proceso encarcelado y luego ejecuta el "
+"comando dado usando <citerefentry><refentrytitle>execv</refentrytitle><manvol"
+"num>3</manvolnum></citerefentry>."
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:3446
@@ -5582,6 +6454,11 @@ msgid ""
 "executed. I will now discuss how <application>jail</application> is "
 "implemented within the kernel."
 msgstr ""
+"Como puede ver, el <literal>jail()</literal> se llama a la función, y su "
+"argumento es el <literal>jail</literal> estructura que se ha llenado con los "
+"argumentos dados al programa. Finalmente, se ejecuta el programa que "
+"especifique. Ahora discutiré como <application>jail</application> es "
+"implementado dentro del kernel."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3462
@@ -5591,7 +6468,7 @@ msgstr "Espacio Kernel"
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:3464
 msgid "<primary>Jail</primary> <secondary>Kernel Architecture</secondary>"
-msgstr ""
+msgstr "<primary>Jail</primary> <secondary>Arquitectura del núcleo</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3467
@@ -5601,6 +6478,11 @@ msgid ""
 "refentrytitle><manvolnum>2</manvolnum></citerefentry> system call, "
 "appropriate sysctls, and networking functions are defined."
 msgstr ""
+"Ahora veremos el archivo. <filename>/usr/src/sys/kern/kern_jail.c</"
+"filename>. Este es el archivo donde "
+"<citerefentry><refentrytitle>jail</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> Se definen la llamada al sistema, los sysctls apropiados y las "
+"funciones de red."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:3473
@@ -5705,6 +6587,11 @@ msgid ""
 "recognized by their name. For example, the name of the first sysctl is "
 "<literal>security.jail.set_hostname_allowed</literal>."
 msgstr ""
+"El usuario puede acceder a cada uno de estos sysctls a través del "
+"<citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> programa. En todo el kernel, estos sysctls específicos se "
+"reconocen por su nombre. Por ejemplo, el nombre del primer sysctl es "
+"<literal>security.jail.set_hostname_allowed</literal>."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:3524
@@ -5730,6 +6617,18 @@ msgid ""
 "refentrytitle><manvolnum>2</manvolnum></citerefentry> system call was given "
 "a <literal>jail</literal> structure as its own argument."
 msgstr ""
+"Como todas las llamadas al sistema, el "
+"<citerefentry><refentrytitle>jail</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> la llamada al sistema toma dos argumentos, <literal>struct "
+"thread *td</literal> y <literal>struct jail_args *uap</literal>. "
+"<literal>td</literal> es un puntero al<literal>hilo</literal> estructura que "
+"describe el hilo de llamada. En este contexto,<literal>uap</literal> es un "
+"puntero a la estructura en la que un puntero al <literal>jail</literal> "
+"estructura pasada por el usuario <filename>jail.c</filename> Está contenido. "
+"Cuando describí el programa de usuario antes, vio que el "
+"<citerefentry><refentrytitle>jail</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> La llamada al sistema recibió una <literal>jail</literal> "
+"estructura como su propio argumento."
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:3539
@@ -5841,6 +6740,11 @@ msgid ""
 "<literal>prison</literal> structure and copies data between the "
 "<literal>jail</literal> and <literal>prison</literal> structure."
 msgstr ""
+"El "
+"<citerefentry><refentrytitle>jail</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> La llamada al sistema luego asigna memoria para un "
+"<literal>prisión</literal>estructura y copia datos entre <literal>cárcel</"
+"literal> y <literal>prison</literal> estructura."
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:3592
@@ -5879,6 +6783,10 @@ msgid ""
 "manvolnum></citerefentry>, which implements the function to put a process "
 "into the <application>jail</application>."
 msgstr ""
+"A continuación, analizaremos otra importante llamada al sistema. <citerefentr"
+"y><refentrytitle>jail_attach</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry>,que implementa la función para poner un proceso en el "
+"<application>jail</application>."
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:3608
@@ -5936,6 +6844,23 @@ msgid ""
 "member in the <literal>proc</literal> structure, there is a pointer to the "
 "<literal>prison</literal> structure(<literal>cr_prison</literal>)."
 msgstr ""
+"En FreeBSD, cada hilo visible del núcleo se identifica por su "
+"<literal>thread</literal> estructura, mientras que los procesos se describen "
+"por su <literal>proc</literal> estructuras. Puede encontrar las definiciones "
+"de <literal>hilo</literal> y <literal>proc</literal>estructura en<filename>/"
+"usr/include/sys/proc.h</filename>. Por ejemplo, el <literal>td</literal> "
+"argumento en cualquier llamada al sistema es en realidad un puntero al hilo "
+"de llamada <literal>hilo</literal> estructura, como se dijo antes. los "
+"<literal>td_proc</literal> miembro en el<literal>hilo</literal> estructura "
+"apuntada por <literal>td</literal>es un puntero al <literal>proc</literal> "
+"estructura que representa el proceso que contiene el hilo representado por "
+"<literal>td</literal>. El <literal>proc</literal> La estructura contiene "
+"miembros que pueden describir la identidad del propietario "
+"(<literal>p_ucred</literal>),los límites de recursos del "
+"proceso(<literal>p_limit</literal>), y así. En el <literal>ucred</"
+"literal>estructura apuntada por <literal>p_ucred</literal> miembro en el "
+"<literal>proc</literal>estructura, hay un puntero a la <literal>prisión</"
+"literal> estructura(<literal>cr_prison</literal>)."
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:3646
@@ -6003,6 +6928,29 @@ msgid ""
 "<literal>ucred</literal> structure, therefore it has a jailed "
 "<literal>ucred</literal> structure."
 msgstr ""
+"En <filename>kern_jail.c</filename>, la función <literal>jail()</literal> "
+"luego llama a la función <literal>jail_attach()</literal> con un dado "
+"<literal>jid</literal>. Y <literal>jail_attach()</literal> función de "
+"llamadas <literal>change_root()</literal>para cambiar el directorio raíz del "
+"proceso de llamada. los <literal>jail_attach()</literal>Luego crea un nuevo "
+"<literal>ucred</literal> estructura, y adjunta la recién "
+"creada<literal>ucred</literal> estructura al proceso de llamada después de "
+"haber adjuntado con éxito el <literal>prison</literal> estructura a la "
+"<literal>ucred</literal> estructura. A partir de ese momento, el proceso de "
+"llamada se reconoce como encarcelado. Cuando la rutina del kernel "
+"<literal>jailed()</literal> se llama en el kernel con el recién creado "
+"<literal>ucred</literal> estructura como argumento, devuelve 1 para indicar "
+"que la credencial está conectada con un <application>carcel</application>.El "
+"proceso antepasado público de todo el proceso se bifurcó dentro del "
+"<application>jail</application>,es el proceso que se ejecuta "
+"<citerefentry><refentrytitle>jail</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>, como llama el "
+"<citerefentry><refentrytitle>jail</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> llamada al sistema. Cuando un programa se ejecuta mediante "
+"<citerefentry><refentrytitle>execve</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry>, hereda la propiedad encarcelada de sus padres <literal>ucred</"
+"literal>estructura, por lo tanto tiene un encarcelado<literal>ucred</"
+"literal> structure."
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:3690
@@ -6159,6 +7107,24 @@ msgid ""
 "the jailed environment. The difference between a message and a signal is "
 "that the message only consists of the signal number."
 msgstr ""
+"System V IPC se basa en mensajes. Los procesos pueden enviarse entre sí "
+"estos mensajes que les indican cómo actuar. Las funciones que se ocupan de "
+"los mensajes son:<citerefentry><refentrytitle>msgctl</refentrytitle><manvolnu"
+"m>3</manvolnum></citerefentry>, "
+"<citerefentry><refentrytitle>msgget</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry>, "
+"<citerefentry><refentrytitle>msgsnd</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry> y "
+"<citerefentry><refentrytitle>msgrcv</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry>. Anteriormente, mencioné que había ciertos sistemas que se "
+"podían activar o desactivar para afectar el comportamiento de "
+"<application>jail</application>. Uno de estos sistemas fue <literal>security."
+"jail.sysvipc_allowed</literal>. De forma predeterminada, este sysctl se "
+"establece en 0. Si se establece en 1, anularía todo el propósito de tener "
+"un<application>jail</application>; Usuarios privilegiados de la "
+"<application>jail</application>podría afectar procesos fuera del entorno "
+"encarcelado. La diferencia entre un mensaje y una señal es que el mensaje "
+"solo consta del número de la señal."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3767
@@ -6270,6 +7236,9 @@ msgid ""
 "literal> does the specified <literal>cmd</literal> on the semaphore queue "
 "indicated by <literal>semid</literal>."
 msgstr ""
+"<literal>semctl(semid, semnum, cmd, ...)</literal>: <literal>semctl</"
+"literal> hace lo especificado <literal>cmd</literal> en la cola de semáforo "
+"indicada por <literal>semid</literal>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3824
@@ -6277,6 +7246,8 @@ msgid ""
 "<literal>semget(key, nsems, flag)</literal>: <literal>semget</literal> "
 "creates an array of semaphores, corresponding to <literal>key</literal>."
 msgstr ""
+"<literal>semget(key, nsems, flag)</literal>: <literal>semget</literal> crea "
+"una matriz de semáforos, correspondiente a <literal>key</literal>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3828
@@ -6293,12 +7264,14 @@ msgid ""
 "performs a group of operations indicated by <literal>array</literal>, to the "
 "set of semaphores identified by <literal>semid</literal>."
 msgstr ""
+"<literal>semop(semid, array, nops)</literal>: <literal>semop</literal> "
+"realiza un grupo de operaciones indicadas por <literal>array</literal>, al "
+"conjunto de semáforos identificados por <literal>semid</literal>."
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:3839
-#, fuzzy
 msgid "<primary>shared memory</primary>"
-msgstr "<primary>shared memory</primary>"
+msgstr "<primary>memoria compartida</primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3841
@@ -6357,6 +7330,9 @@ msgid ""
 "attaches a shared memory region identified by <literal>shmid</literal> to "
 "the address space of a process."
 msgstr ""
+"<literal>shmat(shmid, addr, flag)</literal>: <literal>shmat</literal> "
+"adjunta una región de memoria compartida identificada por <literal>shmid</"
+"literal> al espacio de direcciones de un proceso."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3869
@@ -6364,6 +7340,8 @@ msgid ""
 "<literal>shmdt(addr)</literal>: <literal>shmdt</literal> detaches the shared "
 "memory region previously attached at <literal>addr</literal>."
 msgstr ""
+"<literal>shmdt(addr)</literal>: <literal>shmdt</literal>separa la región de "
+"memoria compartida previamente adjunta en <literal>addr</literal>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3878
@@ -6495,6 +7473,21 @@ msgid ""
 "address that does not belong to the <application>jail</application> in which "
 "the calling process exists."
 msgstr ""
+"Hay ciertos protocolos que son muy comunes, como TCP, UDP, IP e ICMP. IP e "
+"ICMP están en el mismo nivel: la capa de red 2. Hay ciertas precauciones que "
+"se toman para evitar que un proceso encerrado vincule un protocolo a una "
+"determinada dirección solo si el <literal>nam</literal> el parámetro está "
+"configurado. <literal>nam</literal>Es un puntero a un <literal>sockaddr</"
+"literal> estructura, que describe la dirección a la que enlazar el servicio. "
+"Una definición más exacta es que <literal>sockaddr</literal> \"se puede "
+"utilizar como plantilla para hacer referencia a la etiqueta de "
+"identificación y la longitud de cada dirección \". En la función "
+"<literal>in_pcbbind_setup()</literal>, <literal>sin</literal> Es un puntero "
+"a un <literal>sockaddr_in</literal> estructura, que contiene el puerto, la "
+"dirección, la longitud y la familia de dominio del socket que se va a "
+"vincular. Básicamente, esto no permite ningún proceso de <application>jail</"
+"application>para poder especificar la dirección que no pertenece al "
+"<application>jail</application>en el que existe el proceso de llamada."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:3950
@@ -6583,6 +7576,14 @@ msgid ""
 "code, if it is indeed an IP address not belonging to the <application>jail</"
 "application>, the protocol is not allowed to bind to that address."
 msgstr ""
+"Quizás se pregunte qué función <literal>prison_ip()</literal> hace. "
+"<literal>prison_ip()</literal> es dados tres argumentos, un puntero a la "
+"credencial (representado por <literal>cred</literal>), cualquier indicador y "
+"una dirección IP. Devuelve 1 si la dirección IP NO pertenece a la "
+"<application>jail</application> o 0 en caso contrario. Como puede ver en el "
+"código, si de hecho es una dirección IP que no pertenece al "
+"<application>jail</application>, no se permite que el protocolo se vincule a "
+"esa dirección."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:3996
@@ -6788,15 +7789,13 @@ msgstr ""
 #. (itstool) path: chapter/indexterm
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:4104 book.translate.xml:15529
-#, fuzzy
 msgid "<primary>kernel modules</primary>"
-msgstr "<primary>kernel modules</primary>"
+msgstr "<primary>módulos del kernel</primary>"
 
 #. (itstool) path: chapter/indexterm
 #: book.translate.xml:4107
-#, fuzzy
 msgid "<primary>kernel linker</primary>"
-msgstr "<primary>kernel linker</primary>"
+msgstr "<primary>enlazador de kernel</primary>"
 
 #. (itstool) path: chapter/para
 #: book.translate.xml:4111
@@ -6847,9 +7846,8 @@ msgstr "Operación SYSINIT"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:4143
-#, fuzzy
 msgid "<primary>linker sets</primary>"
-msgstr "<primary>linker sets</primary>"
+msgstr "<primary>conjuntos de enlazadores</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:4145
@@ -7031,6 +8029,13 @@ msgid ""
 "needs to be run just barely before the SYSINIT's that handle tuning kernel "
 "parameters."
 msgstr ""
+"Tenga en cuenta que <literal>SI_SUB_FOO</literal> y <literal>SI_ORDER_FOO</"
+"literal> Necesito estar en el <literal>sysinit_sub_id</literal> y "
+"<literal>sysinit_elem_order</literal> enum es como se mencionó "
+"anteriormente. Utilice los existentes o agregue los suyos propios a la "
+"enumeración. También puede usar matemáticas para ajustar el orden en el que "
+"se ejecutará un SYSINIT. Este ejemplo muestra un SYSINIT que debe ejecutarse "
+"justo antes de los SYSINIT que manejan los parámetros del kernel de ajuste."
 
 #. (itstool) path: example/title
 #: book.translate.xml:4248
@@ -7073,6 +8078,9 @@ msgid ""
 "<literal>SYSINIT()</literal> macro except that it adds the SYSINIT data to "
 "SYSINIT's shutdown data set."
 msgstr ""
+"El <literal>SYSUNINIT()</literal>macro se comporta de manera similar a la "
+"<literal>SYSINIT()</literal> macro excepto que agrega los datos de SYSINIT "
+"al conjunto de datos de cierre de SYSINIT."
 
 #. (itstool) path: example/title
 #: book.translate.xml:4271
@@ -7463,7 +8471,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:4531
 msgid "<function>mac_syscall()</function> multiplex system call"
-msgstr ""
+msgstr "<function>mac_syscall()</function> llamada al sistema multiplex"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4535
@@ -7713,6 +8721,21 @@ msgid ""
 "prior to boot). Likewise, de-registration may fail if a policy is flagged as "
 "not unloadable."
 msgstr ""
+"MAC Framework mantiene dos listas de políticas activas: una lista estática y "
+"una lista dinámica. Las listas difieren solo con respecto a su semántica de "
+"bloqueo: no se requiere un recuento de referencias elevado para hacer uso de "
+"la lista estática. Cuando se cargan los módulos del kernel que contienen "
+"políticas de MAC Framework, el módulo de políticas utilizará "
+"<literal>SYSINIT</literal> para invocar una función de registro; cuando se "
+"descarga un módulo de políticas, <literal>SYSINIT</literal> también invocará "
+"una función de cancelación de registro. El registro puede fallar si un "
+"módulo de política se carga más de una vez, si no hay suficientes recursos "
+"disponibles para el registro (por ejemplo, la política puede requerir "
+"etiquetado y el estado de etiquetado insuficiente puede estar disponible), o "
+"es posible que no se cumplan otros requisitos previos de la política ("
+"algunas políticas solo se puede cargar antes del arranque). Del mismo modo, "
+"la cancelación del registro puede fallar si una póliza está marcada como no "
+"descargable."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:4678
@@ -7846,6 +8869,25 @@ msgid ""
 "is the process credential, which must be manually dereferenced to access the "
 "credential label. This may change in future revisions of the MAC Framework."
 msgstr ""
+"Las etiquetas en memoria se almacenan en bloques asignados <varname remap="
+"\"structname\">etiqueta de estructura</varname>, que consiste en una matriz "
+"de uniones de longitud fija, cada una con un <literal>void *</"
+"literal>Puntero y un <literal>largo</literal>. A las políticas que se "
+"registren para el almacenamiento de etiquetas se les asignará un "
+"identificador de \"ranura\", que se puede utilizar para eliminar la "
+"referencia al almacenamiento de etiquetas. La semántica del almacenamiento "
+"se deja enteramente en manos del módulo de políticas: los módulos se "
+"proporcionan con una variedad de puntos de entrada asociados con el ciclo de "
+"vida del objeto del kernel, incluida la inicialización, asociación / "
+"creación y destrucción. Con estas interfaces, es posible implementar el "
+"recuento de referencias y otros modelos de almacenamiento. Los módulos de "
+"políticas generalmente no requieren acceso directo a la estructura del "
+"objeto para recuperar una etiqueta, ya que MAC Framework generalmente pasa "
+"tanto un puntero al objeto como un puntero directo a la etiqueta del objeto "
+"en los puntos de entrada. La principal excepción a esta regla es la "
+"credencial del proceso, que debe eliminarse manualmente para acceder a la "
+"etiqueta de la credencial. Esto puede cambiar en futuras revisiones del MAC "
+"Framework."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4757
@@ -7898,6 +8940,20 @@ msgid ""
 "needed. As a result, the extended attribute need not be directly accessed "
 "with every access control check."
 msgstr ""
+"En el caso de las etiquetas del sistema de archivos, se proporciona un "
+"soporte especial para el almacenamiento persistente de etiquetas de "
+"seguridad en atributos extendidos. Donde están disponibles, las "
+"transacciones de atributos extendidos se utilizan para permitir "
+"actualizaciones compuestas consistentes de etiquetas de seguridad en vnodes; "
+"actualmente, este soporte solo está presente en el sistema de archivos UFS2. "
+"Los autores de políticas pueden optar por implementar etiquetas de objetos "
+"del sistema de archivos de múltiples etiquetas utilizando uno (o más) "
+"atributos extendidos. Por razones de eficiencia, la etiqueta "
+"vnode(<literal>v_label</literal>) es un caché de cualquier etiqueta en disco;"
+" las políticas pueden cargar valores en la caché cuando se crea una "
+"instancia del vnode y actualizar la caché según sea necesario. Como "
+"resultado, no es necesario acceder directamente al atributo extendido con "
+"cada verificación de control de acceso."
 
 #. (itstool) path: note/para
 #: book.translate.xml:4791
@@ -7941,6 +8997,20 @@ msgid ""
 "by user library functions to perform memory allocation and error handling, "
 "simplifying user applications that must manage labels."
 msgstr ""
+"Las llamadas de gestión de etiquetas aceptan una estructura de descripción "
+"de etiquetas, <varname remap=\"structname\">estructura mac</varname>, que "
+"contiene una serie de elementos de etiqueta MAC. Cada elemento contiene un "
+"nombre de cadena de caracteres y un valor de cadena de caracteres. A cada "
+"póliza se le dará la oportunidad de reclamar un nombre de elemento en "
+"particular, permitiendo que las pólizas expongan múltiples elementos "
+"independientes si lo desea. Los módulos de políticas realizan la "
+"internalización y externalización entre las etiquetas del kernel y las "
+"etiquetas proporcionadas por el usuario a través de puntos de entrada, lo "
+"que permite una variedad de semánticas. Las llamadas al sistema de "
+"administración de etiquetas generalmente están envueltas por las funciones "
+"de la biblioteca del usuario para realizar la asignación de memoria y el "
+"manejo de errores, lo que simplifica las aplicaciones de usuario que deben "
+"administrar las etiquetas.."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4820
@@ -7956,6 +9026,8 @@ msgid ""
 "<function>mac_get_proc()</function> may be used to retrieve the label of the "
 "current process."
 msgstr ""
+"<function>mac_get_proc()</function> se puede utilizar para recuperar la "
+"etiqueta del proceso actual."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4830
@@ -7963,6 +9035,8 @@ msgid ""
 "<function>mac_set_proc()</function> may be used to request a change in the "
 "label of the current process."
 msgstr ""
+"<function>mac_set_proc()</function>se puede utilizar para solicitar un "
+"cambio en la etiqueta del proceso actual."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4836
@@ -7970,6 +9044,9 @@ msgid ""
 "<function>mac_get_fd()</function> may be used to retrieve the label of an "
 "object (file, socket, pipe, ...) referenced by a file descriptor."
 msgstr ""
+"<function>mac_get_fd()</function>se puede utilizar para recuperar la "
+"etiqueta de un objeto (archivo, conector, tubería, ...) referenciado por un "
+"descriptor de archivo."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4842
@@ -7977,6 +9054,9 @@ msgid ""
 "<function>mac_get_file()</function> may be used to retrieve the label of an "
 "object referenced by a file system path."
 msgstr ""
+"<function>mac_get_file()</function>se puede utilizar para recuperar la "
+"etiqueta de un objeto al que hace referencia una ruta del sistema de "
+"archivos."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4848
@@ -7984,6 +9064,9 @@ msgid ""
 "<function>mac_set_fd()</function> may be used to request a change in the "
 "label of an object (file, socket, pipe, ...) referenced by a file descriptor."
 msgstr ""
+"<function>mac_set_fd()</function> se puede utilizar para solicitar un cambio "
+"en la etiqueta de un objeto (archivo, conector, tubería, ...) referenciado "
+"por un descriptor de archivo."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4854
@@ -7991,6 +9074,9 @@ msgid ""
 "<function>mac_set_file()</function> may be used to request a change in the "
 "label of an object referenced by a file system path."
 msgstr ""
+"<function>mac_set_file()</function>se puede utilizar para solicitar un "
+"cambio en la etiqueta de un objeto al que hace referencia una ruta del "
+"sistema de archivos."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4860
@@ -7999,6 +9085,10 @@ msgid ""
 "system calls without modifying the system call table; it accepts a target "
 "policy name, operation number, and opaque argument for use by the policy."
 msgstr ""
+"<function>mac_syscall()</function> permite que los módulos de políticas "
+"creen nuevas llamadas al sistema sin modificar la tabla de llamadas al "
+"sistema; acepta un nombre de política de destino, un número de operación y "
+"un argumento opaco para que lo utilice la política."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4868
@@ -8017,6 +9107,10 @@ msgid ""
 "if it is the final entry in the path, so may be used to retrieve the label "
 "on a symlink."
 msgstr ""
+"<function>mac_get_link()</function> is identical to "
+"<function>mac_get_file()</function>, solo que no seguirá un enlace simbólico "
+"si es la entrada final en la ruta, por lo que se puede usar para recuperar "
+"la etiqueta en un enlace simbólico."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4881
@@ -8026,6 +9120,10 @@ msgid ""
 "if it is the final entry in a path, so may be used to manipulate the label "
 "on a symlink."
 msgstr ""
+"<function>mac_set_link()</function> Es idéntico a <function>mac_set_file()</"
+"function>, solo que no seguirá un enlace simbólico si es la entrada final en "
+"una ruta, por lo que se puede usar para manipular la etiqueta en un enlace "
+"simbólico."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4889
@@ -8035,6 +9133,11 @@ msgid ""
 "process label to when beginning execution of a new program. This change in "
 "label on execution is referred to as a \"transition\"."
 msgstr ""
+"<function>mac_execve()</function> Es idéntico al <function>execve()</"
+"function> llamada al sistema, solo que también acepta una etiqueta "
+"solicitada para establecer la etiqueta del proceso al comenzar la ejecución "
+"de un nuevo programa. Este cambio de etiqueta en la ejecución se denomina "
+"\"transición\"."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4898
@@ -8042,6 +9145,9 @@ msgid ""
 "<function>mac_get_peer()</function>, actually implemented via a socket "
 "option, retrieves the label of a remote peer on a socket, if available."
 msgstr ""
+"<function>mac_get_peer()</function>, implementado realmente a través de una "
+"opción de socket, recupera la etiqueta de un par remoto en un socket, si "
+"está disponible."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4904
@@ -8050,6 +9156,9 @@ msgid ""
 "<literal>SIOCSIFMAC</literal> network interface ioctls permit the labels on "
 "network interfaces to be retrieved and set."
 msgstr ""
+"Además de estas llamadas al sistema, el<literal>SIOCSIGMAC</literal> y "
+"<literal>SIOCSIFMAC</literal> ioctls de interfaz de red permiten recuperar y "
+"configurar las etiquetas de las interfaces de red."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:4913
@@ -8144,6 +9253,11 @@ msgid ""
 "handle the policy, and optionally requests the allocation of label state by "
 "the framework."
 msgstr ""
+"Los módulos se pueden declarar utilizando el <function>MAC_POLICY_SET()</"
+"function>macro, que nombra la política, proporciona una referencia al vector "
+"de punto de entrada MAC, proporciona indicadores de tiempo de carga que "
+"determinan cómo el marco de políticas debe manejar la política y, "
+"opcionalmente, solicita la asignación del estado de la etiqueta por el marco."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:4967
@@ -8198,6 +9312,25 @@ msgid ""
 "changed, but in the mean time, policies should be careful about what kernel "
 "primitives they invoke so as to avoid lock ordering or sleeping problems."
 msgstr ""
+"El vector de punto de entrada de la política "
+"MAC,<varname>mac_<replaceable>policy</replaceable>_ops</varname> en este "
+"ejemplo, asocia funciones definidas en el módulo con puntos de entrada "
+"específicos. Puede encontrar una lista completa de los puntos de entrada "
+"disponibles y sus prototipos en la sección de referencia del punto de "
+"entrada MAC. De especial interés durante el registro del módulo son los "
+"<symbol>.mpo_destroy</symbol> y <symbol>.mpo_init</symbol> puntos de "
+"entrada.<symbol>.mpo_init</symbol> se invocará una vez que una política se "
+"registre con éxito en el marco del módulo, pero antes de que cualquier otro "
+"punto de entrada se active. Esto permite que la política realice cualquier "
+"asignación e inicialización específica de la política, como la "
+"inicialización de datos o bloqueos. <symbol>.mpo_destroy</symbol> se "
+"invocará cuando se descargue un módulo de políticas para permitir la "
+"liberación de cualquier memoria asignada y la destrucción de bloqueos. "
+"Actualmente, estos dos puntos de entrada se invocan con el mutex de la lista "
+"de políticas MAC retenido para evitar que se invoquen otros puntos de "
+"entrada: esto se cambiará, pero mientras tanto, las políticas deben tener "
+"cuidado con las primitivas del kernel que invocan para evitar Bloqueo de "
+"pedidos o problemas para dormir."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5001
@@ -8218,9 +9351,8 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:5011
-#, fuzzy
 msgid "Policy Flags"
-msgstr "Policy Flags"
+msgstr "Indicadores de política"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5013
@@ -8315,6 +9447,15 @@ msgid ""
 "is loaded before the network subsystem is active (i.e., the policy is not "
 "being loaded late), then all Mbufs are guaranteed to have label storage."
 msgstr ""
+"Políticas que utilizan <literal>MPC_LOADTIME_FLAG_LABELMBUFS</literal> sin "
+"el <literal>MPC_LOADTIME_FLAG_NOTLATE</literal> el conjunto de banderas debe "
+"poder manejar correctamente <literal>NULL</literal>Los punteros de etiqueta "
+"Mbuf pasaron a puntos de entrada. Esto es necesario ya que los Mbufs en "
+"vuelo sin almacenamiento de etiquetas pueden persistir después de que se "
+"haya cargado una política que habilita el etiquetado Mbuf. Si una política "
+"se carga antes de que el subsistema de red esté activo (es decir, la "
+"política no se carga tarde), entonces se garantiza que todos los Mbufs "
+"tienen almacenamiento de etiquetas."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:5080
@@ -8706,6 +9847,8 @@ msgid ""
 "Modules must currently perform the <function>copyin()</function> of the "
 "syscall data on their own."
 msgstr ""
+"Los módulos deben realizar actualmente el <function>copyin()</function>de "
+"los datos de syscall por sí mismos."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:5279
@@ -8715,10 +9858,13 @@ msgstr "<function>mpo_thread_userret</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:5282
+#, fuzzy
 msgid ""
 "<funcdef>void <function>mpo_thread_userret</function></funcdef> "
 "<paramdef>struct thread *<parameter>td</parameter></paramdef>"
 msgstr ""
+"<funcdef>void <function>mpo_thread_userret</function></funcdef> "
+"<paramdef>struct thread *<parameter>td</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:5310
@@ -8744,6 +9890,24 @@ msgid ""
 "the AST being performed may be complex and interlaced in multithreaded "
 "applications."
 msgstr ""
+"Este punto de entrada permite que los módulos de políticas realicen eventos "
+"relacionados con MAC cuando un hilo regresa al espacio del usuario, a través "
+"de un retorno de llamada al sistema, retorno de trampa o de otra manera. "
+"Esto es necesario para las políticas que tienen etiquetas de proceso "
+"flotantes, ya que no siempre es posible adquirir el bloqueo del proceso en "
+"puntos arbitrarios de la pila durante el procesamiento de llamadas al "
+"sistema; Las etiquetas de proceso pueden representar datos de autenticación "
+"tradicionales, información del historial de procesos u otros datos. Para "
+"emplear este mecanismo, los cambios previstos en la etiqueta de credenciales "
+"del proceso pueden almacenarse en el <literal>p_label</literal>protegido por "
+"un bloqueo de giro por política y, a continuación, establezca el "
+"<literal>TDF_ASTPENDING</literal> bandera y por proceso "
+"<literal>PS_MACPENDM</literal>bandera para programar una llamada al punto de "
+"entrada userret. Desde este punto de entrada, la política puede crear una "
+"credencial de reemplazo con menos preocupación por el contexto de bloqueo. "
+"Se advierte a los redactores de políticas que el orden de eventos "
+"relacionado con la programación de un AST y el AST que se está realizando "
+"puede ser complejo y entrelazado en aplicaciones multiproceso."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:5340
@@ -8787,9 +9951,8 @@ msgstr ""
 #: book.translate.xml:13364 book.translate.xml:13442 book.translate.xml:13528
 #: book.translate.xml:13596 book.translate.xml:13665 book.translate.xml:13737
 #: book.translate.xml:13925
-#, fuzzy
 msgid "<parameter>label</parameter>"
-msgstr "<parameter>label</parameter>"
+msgstr "<parameter>etiqueta</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:5374 book.translate.xml:5458 book.translate.xml:5500
@@ -8936,6 +10099,17 @@ msgid ""
 "permitted to fail resulting in the failure to allocate the IP fragment "
 "reassembly queue."
 msgstr ""
+"Inicialice la etiqueta en una cola de reensamblaje de fragmentos de IP "
+"recién instanciada. los <parameter>flag</parameter>El campo puede ser uno de "
+"<symbol>M_WAITOK</symbol> y <symbol>M_NOWAIT</symbol>, y debe emplearse para "
+"evitar realizar un sueño "
+"<citerefentry><refentrytitle>malloc</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry> durante esta llamada de inicialización. La asignación de la "
+"cola de reensamblado de fragmentos de IP ocurre con frecuencia en entornos "
+"sensibles al rendimiento, y la implementación debe tener cuidado para evitar "
+"operaciones inactivas o de larga duración. Se permite que este punto de "
+"entrada falle, lo que provocará que no se asigne la cola de reensamblado del "
+"fragmento IP."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:5569
@@ -8973,6 +10147,16 @@ msgid ""
 "be careful to avoid sleeping or long-lived operations. This entry point is "
 "permitted to fail resulting in the failure to allocate the mbuf header."
 msgstr ""
+"Inicialice la etiqueta en un encabezado de paquete mbuf recién instanciado "
+"(<parameter>mbuf</parameter>). El <parameter>flag</parameter> El campo puede "
+"ser uno de <symbol>M_WAITOK</symbol> y <symbol>M_NOWAIT</symbol>,y debe "
+"emplearse para evitar realizar un sueño "
+"<citerefentry><refentrytitle>malloc</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry> durante esta llamada de inicialización. La asignación de Mbuf "
+"ocurre con frecuencia en entornos sensibles al rendimiento y la "
+"implementación debe tener cuidado para evitar operaciones inactivas o de "
+"larga duración. Se permite que este punto de entrada falle, lo que provocará "
+"que no se asigne el encabezado mbuf."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:5627
@@ -9120,6 +10304,12 @@ msgid ""
 "sleeping <citerefentry><refentrytitle>malloc</refentrytitle><manvolnum>9</"
 "manvolnum></citerefentry> during this initialization call."
 msgstr ""
+"Inicialice una etiqueta para un socket recién instanciado. los "
+"<parameter>flag</parameter> El campo puede ser uno de <symbol>M_WAITOK</"
+"symbol> y <symbol>M_NOWAIT</symbol>, y debe emplearse para evitar realizar "
+"un sueño "
+"<citerefentry><refentrytitle>malloc</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry> durante esta llamada de inicialización."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:5814
@@ -9148,6 +10338,12 @@ msgid ""
 "sleeping <citerefentry><refentrytitle>malloc</refentrytitle><manvolnum>9</"
 "manvolnum></citerefentry> during this initialization call."
 msgstr ""
+"Inicialice la etiqueta del par para un socket recién instanciado. los "
+"<parameter>flag</parameter> El campo puede ser uno de <symbol>M_WAITOK</"
+"symbol> y <symbol>M_NOWAIT</symbol>, y debe emplearse para evitar realizar "
+"un sueño "
+"<citerefentry><refentrytitle>malloc</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry> durante esta llamada de inicialización."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:5865
@@ -9250,7 +10446,7 @@ msgstr ""
 #: book.translate.xml:6025 book.translate.xml:6069 book.translate.xml:6113
 #: book.translate.xml:6157 book.translate.xml:6201
 msgid "Label being destroyed"
-msgstr ""
+msgstr "Etiqueta destruida"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6031
@@ -9259,18 +10455,25 @@ msgid ""
 "should free any internal storage associated with <parameter>label</"
 "parameter> so that it may be destroyed."
 msgstr ""
+"Destruye la etiqueta de una credencial. En este punto de entrada, un módulo "
+"de políticas debería liberar cualquier almacenamiento interno asociado "
+"con<parameter>label</parameter> para que sea destruida."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6038
+#, fuzzy
 msgid "<function>mpo_destroy_devfsdirent_label</function>"
-msgstr ""
+msgstr "<function>mpo_destroy_devfsdirent_label</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:6041
+#, fuzzy
 msgid ""
 "<funcdef>void <function>mpo_destroy_devfsdirent_label</function></funcdef> "
 "<paramdef>struct label *<parameter>label</parameter></paramdef>"
 msgstr ""
+"<funcdef>void <function>mpo_destroy_devfsdirent_label</function></funcdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6075
@@ -9279,18 +10482,25 @@ msgid ""
 "should free any internal storage associated with <parameter>label</"
 "parameter> so that it may be destroyed."
 msgstr ""
+"Destruye la etiqueta en una entrada devfs. En este punto de entrada, un "
+"módulo de políticas debería liberar cualquier almacenamiento interno "
+"asociado con<parameter>label</parameter> para que sea destruida."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6082
+#, fuzzy
 msgid "<function>mpo_destroy_ifnet_label</function>"
-msgstr ""
+msgstr "<function>mpo_destroy_ifnet_label</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:6085
+#, fuzzy
 msgid ""
 "<funcdef>void <function>mpo_destroy_ifnet_label</function></funcdef> "
 "<paramdef>struct label *<parameter>label</parameter></paramdef>"
 msgstr ""
+"<funcdef>void <function>mpo_destroy_ifnet_label</function></funcdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6119
@@ -9299,18 +10509,25 @@ msgid ""
 "module should free any internal storage associated with <parameter>label</"
 "parameter> so that it may be destroyed."
 msgstr ""
+"Destruye la etiqueta en una interfaz eliminada. En este punto de entrada, un "
+"módulo de políticas debería liberar cualquier almacenamiento interno "
+"asociado con <parameter>label</parameter> para que sea destruida."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6126
+#, fuzzy
 msgid "<function>mpo_destroy_ipq_label</function>"
-msgstr ""
+msgstr "<function>mpo_destroy_ipq_label</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:6129
+#, fuzzy
 msgid ""
 "<funcdef>void <function>mpo_destroy_ipq_label</function></funcdef> "
 "<paramdef>struct label *<parameter>label</parameter></paramdef>"
 msgstr ""
+"<funcdef>void <function>mpo_destroy_ipq_label</function></funcdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6163
@@ -9319,18 +10536,25 @@ msgid ""
 "module should free any internal storage associated with <parameter>label</"
 "parameter> so that it may be destroyed."
 msgstr ""
+"Destruye la etiqueta en una cola de fragmentos de IP. En este punto de "
+"entrada, un módulo de políticas debería liberar cualquier almacenamiento "
+"interno asociado con <parameter>etiqueta</parameter>para que sea destruida."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6170
+#, fuzzy
 msgid "<function>mpo_destroy_mbuf_label</function>"
-msgstr ""
+msgstr "<function>mpo_destroy_mbuf_label</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:6173
+#, fuzzy
 msgid ""
 "<funcdef>void <function>mpo_destroy_mbuf_label</function></funcdef> "
 "<paramdef>struct label *<parameter>label</parameter></paramdef>"
 msgstr ""
+"<funcdef>void <function>mpo_destroy_mbuf_label</function></funcdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6207
@@ -9339,23 +10563,30 @@ msgid ""
 "should free any internal storage associated with <parameter>label</"
 "parameter> so that it may be destroyed."
 msgstr ""
+"Destruye la etiqueta en un encabezado mbuf. En este punto de entrada, un "
+"módulo de políticas debería liberar cualquier almacenamiento interno "
+"asociado con <parameter>label</parameter>para que sea destruida."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6214 book.translate.xml:6258
+#, fuzzy
 msgid "<function>mpo_destroy_mount_label</function>"
-msgstr ""
+msgstr "<function>mpo_destroy_mount_label</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:6217
+#, fuzzy
 msgid ""
 "<funcdef>void <function>mpo_destroy_mount_label</function></funcdef> "
 "<paramdef>struct label *<parameter>label</parameter></paramdef>"
 msgstr ""
+"<funcdef>void <function>mpo_destroy_mount_label</function></funcdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6245 book.translate.xml:6291
 msgid "Mount point label being destroyed"
-msgstr ""
+msgstr "La etiqueta del punto de montaje se está destruyendo"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6251
@@ -9364,19 +10595,26 @@ msgid ""
 "should free the internal storage associated with <parameter>mntlabel</"
 "parameter> so that they may be destroyed."
 msgstr ""
+"Destruye las etiquetas en un punto de montaje. En este punto de entrada, un "
+"módulo de políticas debería liberar el almacenamiento interno asociado con "
+"<parameter>mntlabel</parameter> Para que ellos puedan ser destruidos."
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:6261
+#, fuzzy
 msgid ""
 "<funcdef>void <function>mpo_destroy_mount_label</function></funcdef> "
 "<paramdef>struct label *<parameter>mntlabel</parameter></paramdef> "
 "<paramdef>struct label *<parameter>fslabel</parameter></paramdef>"
 msgstr ""
+"<funcdef>void <function>mpo_destroy_mount_label</function></funcdef> "
+"<paramdef>struct label *<parameter>mntlabel</parameter></paramdef> "
+"<paramdef>struct label *<parameter>fslabel</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6296
 msgid "File system label being destroyed&gt;"
-msgstr ""
+msgstr "Etiqueta del sistema de archivos destruida&gt;"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6302
@@ -9385,23 +10623,31 @@ msgid ""
 "should free the internal storage associated with <parameter>mntlabel</"
 "parameter> and <parameter>fslabel</parameter> so that they may be destroyed."
 msgstr ""
+"Destruye las etiquetas en un punto de montaje. En este punto de entrada, un "
+"módulo de políticas debería liberar el almacenamiento interno asociado con "
+"<parameter>mntlabel</parameter> y <parameter>fslabel</parameter>Para que "
+"ellos puedan ser destruidos."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6310
+#, fuzzy
 msgid "<function>mpo_destroy_socket_label</function>"
-msgstr ""
+msgstr "<function>mpo_destroy_socket_label</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:6313
+#, fuzzy
 msgid ""
 "<funcdef>void <function>mpo_destroy_socket_label</function></funcdef> "
 "<paramdef>struct label *<parameter>label</parameter></paramdef>"
 msgstr ""
+"<funcdef>void <function>mpo_destroy_socket_label</function></funcdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6341
 msgid "Socket label being destroyed"
-msgstr ""
+msgstr "Etiqueta de enchufe destruida"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6347
@@ -9410,28 +10656,36 @@ msgid ""
 "free any internal storage associated with <parameter>label</parameter> so "
 "that it may be destroyed."
 msgstr ""
+"Destruye la etiqueta de un enchufe. En este punto de entrada, un módulo de "
+"políticas debería liberar cualquier almacenamiento interno asociado con "
+"<parameter>label</parameter>para que sea destruida."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6354
+#, fuzzy
 msgid "<function>mpo_destroy_socket_peer_label</function>"
-msgstr ""
+msgstr "<function>mpo_destroy_socket_peer_label</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:6357
+#, fuzzy
 msgid ""
 "<funcdef>void <function>mpo_destroy_socket_peer_label</function></funcdef> "
 "<paramdef>struct label *<parameter>peerlabel</parameter></paramdef>"
 msgstr ""
+"<funcdef>void <function>mpo_destroy_socket_peer_label</function></funcdef> "
+"<paramdef>struct label *<parameter>peerlabel</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6384
+#, fuzzy
 msgid "<parameter>peerlabel</parameter>"
-msgstr ""
+msgstr "<parameter>peerlabel</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6385
 msgid "Socket peer label being destroyed"
-msgstr ""
+msgstr "Se destruye la etiqueta del par de socket"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6391
@@ -9440,23 +10694,30 @@ msgid ""
 "should free any internal storage associated with <parameter>label</"
 "parameter> so that it may be destroyed."
 msgstr ""
+"Destruye la etiqueta del par en un enchufe. En este punto de entrada, un "
+"módulo de políticas debería liberar cualquier almacenamiento interno "
+"asociado con <parameter>label</parameter> para que sea destruida."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6398
+#, fuzzy
 msgid "<function>mpo_destroy_pipe_label</function>"
-msgstr ""
+msgstr "<function>mpo_destroy_pipe_label</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:6401
+#, fuzzy
 msgid ""
 "<funcdef>void <function>mpo_destroy_pipe_label</function></funcdef> "
 "<paramdef>struct label *<parameter>label</parameter></paramdef>"
 msgstr ""
+"<funcdef>void <function>mpo_destroy_pipe_label</function></funcdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6429
 msgid "Pipe label"
-msgstr ""
+msgstr "Etiqueta de tubería"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6435
@@ -9465,23 +10726,30 @@ msgid ""
 "free any internal storage associated with <parameter>label</parameter> so "
 "that it may be destroyed."
 msgstr ""
+"Destruye la etiqueta de una tubería. En este punto de entrada, un módulo de "
+"políticas debería liberar cualquier almacenamiento interno asociado con "
+"<parameter>label</parameter> para que sea destruida."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6442
+#, fuzzy
 msgid "<function>mpo_destroy_proc_label</function>"
-msgstr ""
+msgstr "<function>mpo_destroy_proc_label</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:6445
+#, fuzzy
 msgid ""
 "<funcdef>void <function>mpo_destroy_proc_label</function></funcdef> "
 "<paramdef>struct label *<parameter>label</parameter></paramdef>"
 msgstr ""
+"<funcdef>void <function>mpo_destroy_proc_label</function></funcdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6472 book.translate.xml:6515
 msgid "Process label"
-msgstr ""
+msgstr "Etiqueta de proceso"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6478
@@ -9490,18 +10758,25 @@ msgid ""
 "free any internal storage associated with <parameter>label</parameter> so "
 "that it may be destroyed."
 msgstr ""
+"Destruye la etiqueta de un proceso. En este punto de entrada, un módulo de "
+"políticas debería liberar cualquier almacenamiento interno asociado con "
+"<parameter>label</parameter>para que sea destruida."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6485
+#, fuzzy
 msgid "<function>mpo_destroy_vnode_label</function>"
-msgstr ""
+msgstr "<function>mpo_destroy_vnode_label</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:6488
+#, fuzzy
 msgid ""
 "<funcdef>void <function>mpo_destroy_vnode_label</function></funcdef> "
 "<paramdef>struct label *<parameter>label</parameter></paramdef>"
 msgstr ""
+"<funcdef>void <function>mpo_destroy_vnode_label</function></funcdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6521
@@ -9510,24 +10785,33 @@ msgid ""
 "free any internal storage associated with <parameter>label</parameter> so "
 "that it may be destroyed."
 msgstr ""
+"Destruye la etiqueta en un vnode. En este punto de entrada, un módulo de "
+"políticas debería liberar cualquier almacenamiento interno asociado con "
+"<parameter>label</parameter>para que sea destruida."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6528
+#, fuzzy
 msgid "<function>mpo_copy_mbuf_label</function>"
-msgstr ""
+msgstr "<function>mpo_copy_mbuf_label</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:6531
+#, fuzzy
 msgid ""
 "<funcdef>void <function>mpo_copy_mbuf_label</function></funcdef> "
 "<paramdef>struct label *<parameter>src</parameter></paramdef> "
 "<paramdef>struct label *<parameter>dest</parameter></paramdef>"
 msgstr ""
+"<funcdef>void <function>mpo_copy_mbuf_label</function></funcdef> "
+"<paramdef>struct label *<parameter>src</parameter></paramdef> "
+"<paramdef>struct label *<parameter>dest</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6560 book.translate.xml:6609 book.translate.xml:6658
+#, fuzzy
 msgid "<parameter>src</parameter>"
-msgstr ""
+msgstr "<parameter>src</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6561 book.translate.xml:6610 book.translate.xml:6659
