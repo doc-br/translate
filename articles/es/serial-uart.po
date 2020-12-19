@@ -4,41 +4,47 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:08-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-12-19 16:05+0000\n"
+"Last-Translator: Aaron H Farías Martinez <timido@ubuntu.com>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/articles_serial-uart/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr ""
+msgstr "Aaron H Farias Martinez Timido@ubuntu.com 2020,"
 
 #. (itstool) path: info/title
 #: article.translate.xml:4
 msgid "Serial and UART Tutorial"
-msgstr ""
+msgstr "Tutorial serial y UART"
 
 #. (itstool) path: affiliation/address
 #: article.translate.xml:9
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "<email>uhclem@FreeBSD.org</email>"
-msgstr ""
+msgstr "<email>uhclem@FreeBSD.org</email>"
 
 #. (itstool) path: authorgroup/author
 #: article.translate.xml:8
+#, fuzzy
 msgid ""
 "<personname><firstname>Frank</firstname><surname>Durda</surname></"
 "personname><affiliation> <_:address-1/> </affiliation>"
 msgstr ""
+"<personname><firstname>Frank</firstname><surname>Durda</surname></"
+"personname><affiliation> <_:address-1/> </affiliation>"
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:14
 msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
-msgstr ""
+msgstr "FreeBSD es una marca registrada de FreeBSD Foundation."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:16
@@ -47,6 +53,9 @@ msgid ""
 "NT are either registered trademarks or trademarks of Microsoft Corporation "
 "in the United States and/or other countries."
 msgstr ""
+"Microsoft, IntelliMouse, MS-DOS, Outlook, Windows, Windows Media y Windows "
+"NT son marcas comerciales registradas o marcas comerciales de Microsoft "
+"Corporation en los Estados Unidos y/o en otros países."
 
 #. (itstool) path: legalnotice/para
 #: article.translate.xml:20
@@ -57,24 +66,32 @@ msgid ""
 "designations have been followed by the <quote>™</quote> or the <quote>®</"
 "quote> symbol."
 msgstr ""
+"Muchas de las designaciones utilizadas por los fabricantes y vendedores para "
+"distinguir sus productos se reclaman como marcas comerciales. Cuando esas "
+"designaciones aparecen en este documento, y el Proyecto FreeBSD conocía el "
+"reclamo de marca registrada, las designaciones han sido seguidas por el "
+"<quote>™</quote> o por el <quote>®</quote> símbolo."
 
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:28 article.translate.xml:30
+#, fuzzy
 msgid ""
 "$FreeBSD: head/en_US.ISO8859-1/articles/serial-uart/article.xml 44692 "
 "2014-04-29 02:46:48Z wblock $"
 msgstr ""
+"$FreeBSD: head/en_US.ISO8859-1/articles/serial-uart/article.xml 44692 "
+"2014-04-29 02:46:48Z wblock $"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:33
 msgid "This article talks about using serial hardware with FreeBSD."
-msgstr ""
+msgstr "Este artículo habla sobre el uso de hardware serie con FreeBSD."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:38
 msgid "The UART: What it is and how it works"
-msgstr ""
+msgstr "La UART: qué es y cómo funciona"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:40
@@ -82,6 +99,8 @@ msgid ""
 "<emphasis>Copyright © 1996 Frank Durda IV <email>uhclem@FreeBSD.org</email>, "
 "All Rights Reserved. 13 January 1996.</emphasis>"
 msgstr ""
+"<emphasis>Copyright © 1996 Frank Durda IV <email>uhclem@FreeBSD.org</"
+"email>,Todos los derechos reservados. 13 de enero de 1996.</emphasis>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:43
@@ -92,6 +111,11 @@ msgid ""
 "fashion. At the destination, a second UART re-assembles the bits into "
 "complete bytes."
 msgstr ""
+"El controlador del Receptor / Transmisor Asíncrono Universal (UART) es el "
+"componente clave del subsistema de comunicaciones en serie de una "
+"computadora. El UART toma bytes de datos y transmite los bits individuales "
+"de forma secuencial. En el destino, un segundo UART vuelve a ensamblar los "
+"bits en bytes completos."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:50
@@ -99,6 +123,8 @@ msgid ""
 "Serial transmission is commonly used with modems and for non-networked "
 "communication between computers, terminals and other devices."
 msgstr ""
+"La transmisión en serie se usa comúnmente con módems y para la comunicación "
+"no en red entre computadoras, terminales y otros dispositivos."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:54
@@ -110,26 +136,31 @@ msgid ""
 "literal> if it supports Synchronous communications. Both forms are described "
 "below."
 msgstr ""
+"Hay dos formas principales de transmisión en serie: sincrónica y "
+"asincrónica. Dependiendo de los modos admitidos por el hardware, el nombre "
+"del subsistema de comunicación generalmente incluirá un <literal>A</"
+"literal>si admite comunicaciones asincrónicas y un <literal>S</literal> si "
+"admite comunicaciones síncronas. Ambas formas se describen a continuación."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:62
 msgid "Some common acronyms are:"
-msgstr ""
+msgstr "Algunos acrónimos comunes son:"
 
 #. (itstool) path: blockquote/para
 #: article.translate.xml:65
 msgid "UART Universal Asynchronous Receiver/Transmitter"
-msgstr ""
+msgstr "Receptor/transmisor asíncrono universal UART"
 
 #. (itstool) path: blockquote/para
 #: article.translate.xml:69
 msgid "USART Universal Synchronous-Asynchronous Receiver/Transmitter"
-msgstr ""
+msgstr "Receptor/transmisor síncrono-asíncrono universal USART"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:74
 msgid "Synchronous Serial Transmission"
-msgstr ""
+msgstr "Transmisión en serie sincrónica"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:76
@@ -145,6 +176,17 @@ msgid ""
 "be more costly if extra wiring and circuits are required to share a clock "
 "signal between the sender and receiver."
 msgstr ""
+"La transmisión en serie síncrona requiere que el remitente y el receptor "
+"compartan un reloj entre sí, o que el remitente proporcione una señal "
+"estroboscópica u otra señal de tiempo para que el receptor sepa "
+"cuándo<quote>leer</quote> el siguiente bit de datos. En la mayoría de las "
+"formas de comunicación síncrona en serie, si no hay datos disponibles en un "
+"instante dado para transmitir, se debe enviar un carácter de relleno en su "
+"lugar para que los datos siempre se transmitan. La comunicación síncrona "
+"suele ser más eficiente porque solo se transmiten bits de datos entre el "
+"emisor y el receptor, y la comunicación síncrona puede ser más costosa si se "
+"requiere cableado y circuitos adicionales para compartir una señal de reloj "
+"entre el emisor y el receptor."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:90
@@ -157,6 +199,14 @@ msgid ""
 "for each bit of the word. In the PC industry, these are known as Parallel "
 "devices."
 msgstr ""
+"Una forma de transmisión síncrona se utiliza con impresoras y dispositivos "
+"de disco fijo en la que los datos se envían por un conjunto de cables "
+"mientras que un reloj o luz estroboscópica se envía por un cable diferente. "
+"Las impresoras y los dispositivos de disco fijo normalmente no son "
+"dispositivos en serie porque la mayoría de los estándares de interfaz de "
+"disco fijo envían una palabra completa de datos para cada reloj o señal "
+"estroboscópica utilizando un cable separado para cada bit de la palabra. En "
+"la industria de las PC, estos se conocen como dispositivos paralelos."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:99
@@ -165,11 +215,14 @@ msgid ""
 "Synchronous operations. This mode is described here for comparison purposes "
 "only."
 msgstr ""
+"El hardware de comunicaciones en serie estándar de la PC no admite "
+"operaciones síncronas. Este modo se describe aquí solo con fines "
+"comparativos."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:105
 msgid "Asynchronous Serial Transmission"
-msgstr ""
+msgstr "Transmisión en serie asíncrona"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:107
@@ -180,6 +233,11 @@ msgid ""
 "added to each word which are used to synchronize the sending and receiving "
 "units."
 msgstr ""
+"La transmisión asíncrona permite que los datos se transmitan sin que el "
+"remitente tenga que enviar una señal de reloj al receptor. En cambio, el "
+"remitente y el receptor deben acordar los parámetros de temporización de "
+"antemano y se agregan bits especiales a cada palabra que se utilizan para "
+"sincronizar las unidades de envío y recepción."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:114
@@ -194,6 +252,15 @@ msgid ""
 "the days of mechanical teleprinters and is easily met by modern electronic "
 "equipment.)"
 msgstr ""
+"Cuando se le da una palabra a la UART para transmisiones asincrónicas, se "
+"agrega un bit llamado \"Bit de inicio\" al comienzo de cada palabra que se "
+"va a transmitir. El bit de inicio se utiliza para alertar al receptor de que "
+"se va a enviar una palabra de datos y para forzar la sincronización del "
+"reloj del receptor con el del transmisor. Estos dos relojes deben ser lo "
+"suficientemente precisos como para que la frecuencia no se desvíe más del "
+"10% durante la transmisión de los bits restantes en la palabra. (Este "
+"requisito se estableció en la época de las teleimpresoras mecánicas y se "
+"cumple fácilmente con los equipos electrónicos modernos.)"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:126
@@ -209,6 +276,16 @@ msgid ""
 "literal> after one second has passed, then it will wait two seconds and then "
 "examine the value of the next bit, and so on."
 msgstr ""
+"Después del bit de inicio, se envían los bits individuales de la palabra de "
+"datos, enviando primero el bit menos significativo (LSB). Cada bit de la "
+"transmisión se transmite durante exactamente la misma cantidad de tiempo que "
+"todos los demás bits, y el receptor <quote>looks</quote> en el cable "
+"aproximadamente a la mitad del período asignado a cada bit para determinar "
+"si el bit es un<literal>1</literal> o un <literal>0</literal>. Por ejemplo, "
+"si se necesitan dos segundos para enviar cada bit, el receptor examinará la "
+"señal para determinar si es un <literal>1</literal> o un <literal>0</"
+"literal> después de que haya pasado un segundo, esperará dos segundos y "
+"luego examinará el valor del siguiente bit, y así sucesivamente."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:140
@@ -217,6 +294,9 @@ msgid ""
 "value of the bit. The sender only knows when the clock says to begin "
 "transmitting the next bit of the word."
 msgstr ""
+"El remitente no sabe cuando el receptor ha <quote>looked</quote> al valor "
+"del bit. El remitente solo sabe cuándo el reloj dice que debe comenzar a "
+"transmitir el siguiente bit de la palabra."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:145
@@ -226,6 +306,10 @@ msgid ""
 "receiver to perform simple error checking. Then at least one Stop Bit is "
 "sent by the transmitter."
 msgstr ""
+"Cuando se ha enviado toda la palabra de datos, el transmisor puede agregar "
+"un bit de paridad que genera el transmisor. El receptor puede utilizar el "
+"bit de paridad para realizar una comprobación de errores sencilla. Entonces, "
+"el transmisor envía al menos un bit de parada."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:151
@@ -239,6 +323,15 @@ msgid ""
 "that the sender and receiver clocks were not running at the same speed, or "
 "that the signal was interrupted."
 msgstr ""
+"Cuando el receptor ha recibido todos los bits de la palabra de datos, puede "
+"comprobar los bits de paridad (tanto el emisor como el receptor deben estar "
+"de acuerdo sobre si se utilizará un bit de paridad), y luego el receptor "
+"busca un bit de parada. Si el bit de parada no aparece cuando se supone que "
+"debe hacerlo, la UART considera que la palabra completa está distorsionada y "
+"notificará un error de encuadre al procesador host cuando se lea la palabra "
+"de datos. La causa habitual de un error de encuadre es que los relojes del "
+"emisor y del receptor no funcionaban a la misma velocidad o que la señal se "
+"interrumpió."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:162
@@ -247,6 +340,10 @@ msgid ""
 "automatically discards the Start, Parity and Stop bits. If the sender and "
 "receiver are configured identically, these bits are not passed to the host."
 msgstr ""
+"Independientemente de si los datos se recibieron correctamente o no, la UART "
+"descarta automáticamente los bits de inicio, paridad y parada. Si el "
+"remitente y el receptor están configurados de manera idéntica, estos bits no "
+"se pasan al host."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:167
@@ -254,6 +351,9 @@ msgid ""
 "If another word is ready for transmission, the Start Bit for the new word "
 "can be sent as soon as the Stop Bit for the previous word has been sent."
 msgstr ""
+"Si hay otra palabra lista para la transmisión, el bit de inicio para la "
+"nueva palabra se puede enviar tan pronto como se haya enviado el bit de "
+"parada para la palabra anterior."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:171
@@ -261,11 +361,13 @@ msgid ""
 "Because asynchronous data is <quote>self synchronizing</quote>, if there is "
 "no data to transmit, the transmission line can be idle."
 msgstr ""
+"Porque los datos asincrónicos son <quote>self synchronizing</quote>,si no "
+"hay datos para transmitir, la línea de transmisión puede estar inactiva."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:177
 msgid "Other UART Functions"
-msgstr ""
+msgstr "Otras funciones de UART"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:179
@@ -281,11 +383,22 @@ msgid ""
 "or lowering one more of these extra signals. The function of each of these "
 "additional signals is defined in the EIA RS232-C standard."
 msgstr ""
+"Además del trabajo básico de convertir datos de paralelo a serie para la "
+"transmisión y de serie a paralelo en la recepción, un UART generalmente "
+"proporcionará circuitos adicionales para señales que se pueden usar para "
+"indicar el estado de los medios de transmisión y para regular el flujo. de "
+"datos en caso de que el dispositivo remoto no esté preparado para aceptar "
+"más datos. Por ejemplo, cuando el dispositivo conectado a la UART es un "
+"módem, el módem puede informar la presencia de un operador en la línea "
+"telefónica mientras que la computadora puede indicarle al módem que se "
+"reinicie o que no tome llamadas subiendo o bajando uno. más de estas señales "
+"adicionales. La función de cada una de estas señales adicionales se define "
+"en el estándar EIA RS232-C."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:195
 msgid "The RS232-C and V.24 Standards"
-msgstr ""
+msgstr "Los estándares RS232-C y V.24"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:197
@@ -295,11 +408,15 @@ msgid ""
 "CCITT standard named V.24 that mirrors the specifications included in RS232-"
 "C."
 msgstr ""
+"En la mayoría de los sistemas informáticos, el UART está conectado a "
+"circuitos que generan señales que cumplen con la especificación EIA RS232-C. "
+"También hay un estándar CCITT llamado V.24 que refleja las especificaciones "
+"incluidas en RS232-C."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:204
 msgid "RS232-C Bit Assignments (Marks and Spaces)"
-msgstr ""
+msgstr "Asignaciones de bits RS232-C (marcas y espacios)"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:206
@@ -310,6 +427,11 @@ msgid ""
 "<quote>Marking</quote>, or transmitting continuous <literal>1</literal> "
 "values."
 msgstr ""
+"En RS232-C, un valor de <literal>1</literal>se llama un <literal>Mark</"
+"literal> y un valor de <literal>0</literal> se llama un <literal>Space</"
+"literal>. entonces una línea de comunicación está inactiva, se dice que la "
+"línea está <quote>Marking</quote>, o transmitiendo continuo <literal>1</"
+"literal> valores."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:213
@@ -321,6 +443,13 @@ msgid ""
 "This guarantees that sender and receiver can resynchronize their clocks "
 "regardless of the content of the data bits that are being transmitted."
 msgstr ""
+"El bit de inicio siempre tiene un valor de <literal>0</literal> (un espacio)"
+". El bit de parada siempre tiene un valor de <literal>1</literal>(una marca)"
+". Esto significa que siempre habrá una transición de Marca (1) a Espacio (0) "
+"en la línea al comienzo de cada palabra, incluso cuando se transmiten varias "
+"palabras una tras otra. Esto garantiza que el remitente y el receptor puedan "
+"resincronizar sus relojes independientemente del contenido de los bits de "
+"datos que se están transmitiendo."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:223
@@ -329,6 +458,10 @@ msgid ""
 "multiple (including zero) of the bit rate of the communication link, but "
 "most UARTs are designed this way for simplicity."
 msgstr ""
+"El tiempo de inactividad entre los bits de parada y de inicio no tiene que "
+"ser un múltiplo exacto (incluido cero) de la tasa de bits del enlace de "
+"comunicación, pero la mayoría de los UART están diseñados de esta manera "
+"para simplificar."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:228
@@ -342,11 +475,20 @@ msgid ""
 "VDC, but these values are still acceptable to a RS232-C receiver, provided "
 "that the cable lengths are short."
 msgstr ""
+"En RS232-C, la señal de \"Marcado\" (un <literal>1</literal>) está "
+"representado por un voltaje entre -2 VCC y -12 VCC, y una señal de "
+"\"espaciado\" (un <literal>0</literal>) está representado por un voltaje "
+"entre 0 y +12 VCC. Se supone que el transmisor envía +12 VCC o -12 VCC, y se "
+"supone que el receptor debe permitir alguna pérdida de voltaje en cables "
+"largos. Algunos transmisores en dispositivos de baja potencia (como "
+"computadoras portátiles) a veces usan solo +5 VCC y -5 VCC, pero estos "
+"valores aún son aceptables para un receptor RS232-C, siempre que la longitud "
+"del cable sea corta."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:242
 msgid "RS232-C Break Signal"
-msgstr ""
+msgstr "Señal de ruptura RS232-C"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:244
@@ -356,6 +498,10 @@ msgid ""
 "there is no electricity present on the data circuit, the line is considered "
 "to be sending <literal>Break</literal>."
 msgstr ""
+"RS232-C también especifica una señal llamada <literal>Break</literal>,que es "
+"causado por el envío de valores de espaciado continuos (sin bits de inicio o "
+"parada). Cuando no hay electricidad presente en el circuito de datos, se "
+"considera que la línea está enviando <literal>Break</literal>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:251
@@ -365,6 +511,11 @@ msgid ""
 "UARTs can distinguish between a Framing Error and a Break, but if the UART "
 "cannot do this, the Framing Error detection can be used to identify Breaks."
 msgstr ""
+"En <literal>Break</literal> La señal debe tener una duración superior al "
+"tiempo que se tarda en enviar un byte completo más los bits de inicio, "
+"parada y paridad. La mayoría de los UART pueden distinguir entre un error de "
+"encuadre y una ruptura, pero si el UART no puede hacer esto, la detección de "
+"errores de encuadre se puede utilizar para identificar rupturas."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:258
@@ -375,6 +526,12 @@ msgid ""
 "no current flowed. This was used to allow a location with urgent news to "
 "interrupt some other location that was currently sending information."
 msgstr ""
+"En los días de las teleimpresoras, cuando numerosas impresoras en todo el "
+"país estaban conectadas en serie (como los servicios de noticias), cualquier "
+"unidad podía causar una <literal>Break</literal> abriendo temporalmente todo "
+"el circuito para que no fluya corriente. Esto se utilizó para permitir que "
+"una ubicación con noticias urgentes interrumpiera alguna otra ubicación que "
+"estaba enviando información en ese momento."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:266
@@ -388,6 +545,14 @@ msgid ""
 "used as an Attention or Interrupt signal and sometimes is accepted as a "
 "substitute for the ASCII CONTROL-C character."
 msgstr ""
+"En los sistemas modernos hay dos tipos de señales de interrupción. Si la "
+"interrupción dura más de 1,6 segundos, se considera una \"interrupción del "
+"módem\" y algunos módems pueden programarse para terminar la conversación y "
+"colgar o ingresar al modo de comando de los módems cuando el módem detecta "
+"esta señal. Si la ruptura es menor de 1,6 segundos, significa una ruptura de "
+"datos y depende de la computadora remota responder a esta señal. A veces, "
+"esta forma de interrupción se utiliza como señal de atención o interrupción "
+"y, a veces, se acepta como sustituto del carácter ASCII CONTROL-C."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:278
@@ -395,6 +560,8 @@ msgid ""
 "Marks and Spaces are also equivalent to <quote>Holes</quote> and <quote>No "
 "Holes</quote> in paper tape systems."
 msgstr ""
+"Las marcas y los espacios también son equivalentes a <quote>Holes</quote> y "
+"<quote>No Holes</quote> en sistemas de cinta de papel."
 
 #. (itstool) path: note/para
 #: article.translate.xml:283
@@ -404,11 +571,15 @@ msgid ""
 "capable of generating the continuous Spacing signal in response to a special "
 "command from the host processor."
 msgstr ""
+"Las rupturas no se pueden generar a partir de cinta de papel o de cualquier "
+"otro valor de byte, ya que los bytes siempre se envían con el bit de inicio "
+"y parada. El UART generalmente es capaz de generar la señal de espaciado "
+"continua en respuesta a un comando especial del procesador host."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:292
 msgid "RS232-C DTE and DCE Devices"
-msgstr ""
+msgstr "Dispositivos RS232-C DTE y DCE"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:294
@@ -421,6 +592,13 @@ msgid ""
 "The DCE device receives signals on the pins that the DTE device transmits "
 "on, and vice versa."
 msgstr ""
+"La especificación RS232-C define dos tipos de equipos: el equipo terminal de "
+"datos (DTE) y el equipo portador de datos (DCE). Por lo general, el "
+"dispositivo DTE es el terminal (o computadora) y el DCE es un módem. Al otro "
+"lado de la línea telefónica en el otro extremo de una conversación, el módem "
+"receptor también es un dispositivo DCE y la computadora que está conectada a "
+"ese módem es un dispositivo DTE. El dispositivo DCE recibe señales en los "
+"pines en los que transmite el dispositivo DTE, y viceversa."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:304
@@ -433,6 +611,13 @@ msgid ""
 "control signals so that each device will see what it thinks are DCE (or DTE) "
 "signals from the other device."
 msgstr ""
+"Cuando dos dispositivos que son DTE o ambos DCE deben conectarse juntos sin "
+"un módem o un traductor de medios similar entre ellos, se debe utilizar un "
+"módem NULL. El módem NULL reorganiza eléctricamente el cableado de modo que "
+"la salida del transmisor se conecte a la entrada del receptor en el otro "
+"dispositivo y viceversa. Se realizan traducciones similares en todas las "
+"señales de control para que cada dispositivo vea lo que cree que son señales "
+"DCE (o DTE) del otro dispositivo."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:314
@@ -441,11 +626,14 @@ msgid ""
 "symmetrical. The DTE device generates fewer signals for the DCE device than "
 "the DTE device receives from the DCE."
 msgstr ""
+"El número de señales generadas por los dispositivos DTE y DCE no es "
+"simétrico. El dispositivo DTE genera menos señales para el dispositivo DCE "
+"que las que recibe el dispositivo DTE del DCE."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:321
 msgid "RS232-C Pin Assignments"
-msgstr ""
+msgstr "Asignaciones de pines RS232-C"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:323
@@ -454,6 +642,9 @@ msgid ""
 "twenty-five pin connector (usually a DB25) and defines the purpose of most "
 "of the pins in that connector."
 msgstr ""
+"La especificación EIA RS232-C (y el equivalente de ITU, V.24) requiere un "
+"conector de veinticinco pines (generalmente un DB25) y define el propósito "
+"de la mayoría de los pines en ese conector."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:328
@@ -464,6 +655,11 @@ msgid ""
 "this transmission mode is not supported by the UART that IBM selected for "
 "use in the IBM PC."
 msgstr ""
+"En la computadora personal IBM y sistemas similares, se proporciona un "
+"subconjunto de señales RS232-C a través de conectores de nueve clavijas (DB9)"
+". Las señales que no están incluidas en el conector de la PC se refieren "
+"principalmente al funcionamiento síncrono, y este modo de transmisión no es "
+"compatible con la UART que IBM seleccionó para su uso en la PC de IBM."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:335
@@ -473,6 +669,10 @@ msgid ""
 "DB25 connector for the parallel printer interface which causes some "
 "confusion.)"
 msgstr ""
+"Dependiendo del fabricante de la computadora, se puede usar un conector "
+"DB25, DB9 o ambos tipos de conector para comunicaciones RS232-C. (El IBM PC "
+"también usa un conector DB25 para la interfaz de impresora paralela, lo que "
+"causa cierta confusión.)"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:341
@@ -480,42 +680,44 @@ msgid ""
 "Below is a table of the RS232-C signal assignments in the DB25 and DB9 "
 "connectors."
 msgstr ""
+"A continuación se muestra una tabla de las asignaciones de señales RS232-C "
+"en los conectores DB25 y DB9."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:348
 msgid "DB25 RS232-C Pin"
-msgstr ""
+msgstr "Pin DB25 RS232-C"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:348
 msgid "DB9 IBM PC Pin"
-msgstr ""
+msgstr "Pin DB9 IBM PC"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:349
 msgid "EIA Circuit Symbol"
-msgstr ""
+msgstr "Símbolo de circuito EIA"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:350
 msgid "CCITT Circuit Symbol"
-msgstr ""
+msgstr "Símbolo de circuito CCITT"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:350
 msgid "Common Name"
-msgstr ""
+msgstr "Nombre común"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:351
 msgid "Signal Source"
-msgstr ""
+msgstr "Fuente de señal"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:352 article.translate.xml:1177
 #: article.translate.xml:1489
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:358 article.translate.xml:429
@@ -528,8 +730,9 @@ msgstr ""
 #: article.translate.xml:1639 article.translate.xml:1654
 #: article.translate.xml:1660 article.translate.xml:1667
 #: article.translate.xml:1668
+#, fuzzy
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:359 article.translate.xml:363
@@ -550,55 +753,64 @@ msgstr ""
 #: article.translate.xml:579 article.translate.xml:589
 #: article.translate.xml:599 article.translate.xml:600
 #: article.translate.xml:602
+#, fuzzy
 msgid "-"
-msgstr ""
+msgstr "-"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:360
+#, fuzzy
 msgid "AA"
-msgstr ""
+msgstr "AA"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:361
+#, fuzzy
 msgid "101"
-msgstr ""
+msgstr "101"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:362
+#, fuzzy
 msgid "PG/FG"
-msgstr ""
+msgstr "PG/FG"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:364
 msgid "Frame/Protective Ground"
-msgstr ""
+msgstr "Marco/Tierra de protección"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:368 article.translate.xml:379
 #: article.translate.xml:1485
+#, fuzzy
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:369 article.translate.xml:378
 #: article.translate.xml:1061
+#, fuzzy
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:370
+#, fuzzy
 msgid "BA"
-msgstr ""
+msgstr "BA"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:371
+#, fuzzy
 msgid "103"
-msgstr ""
+msgstr "103"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:372
+#, fuzzy
 msgid "TD"
-msgstr ""
+msgstr "TD"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:373 article.translate.xml:393
@@ -606,28 +818,32 @@ msgstr ""
 #: article.translate.xml:543 article.translate.xml:553
 #: article.translate.xml:563 article.translate.xml:583
 #: article.translate.xml:593
+#, fuzzy
 msgid "DTE"
-msgstr ""
+msgstr "DTE"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:374
 msgid "Transmit Data"
-msgstr ""
+msgstr "Dato transmitido"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:380
+#, fuzzy
 msgid "BB"
-msgstr ""
+msgstr "BB"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:381
+#, fuzzy
 msgid "104"
-msgstr ""
+msgstr "104"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:382
+#, fuzzy
 msgid "RD"
-msgstr ""
+msgstr "RD"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:383 article.translate.xml:403
@@ -636,483 +852,557 @@ msgstr ""
 #: article.translate.xml:503 article.translate.xml:513
 #: article.translate.xml:523 article.translate.xml:573
 #: article.translate.xml:603
+#, fuzzy
 msgid "DCE"
-msgstr ""
+msgstr "DCE"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:384
 msgid "Receive Data"
-msgstr ""
+msgstr "Recibir datos"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:388 article.translate.xml:549
 #: article.translate.xml:1353
+#, fuzzy
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:389 article.translate.xml:418
 #: article.translate.xml:1338
+#, fuzzy
 msgid "7"
-msgstr ""
+msgstr "7"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:390
+#, fuzzy
 msgid "CA"
-msgstr ""
+msgstr "CA"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:391
+#, fuzzy
 msgid "105"
-msgstr ""
+msgstr "105"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:392
+#, fuzzy
 msgid "RTS"
-msgstr ""
+msgstr "RTS"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:394
 msgid "Request to Send"
-msgstr ""
+msgstr "Petición para enviar"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:398 article.translate.xml:419
+#, fuzzy
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:399 article.translate.xml:428
 #: article.translate.xml:1359
+#, fuzzy
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:400
+#, fuzzy
 msgid "CB"
-msgstr ""
+msgstr "CB"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:401
+#, fuzzy
 msgid "106"
-msgstr ""
+msgstr "106"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:402
+#, fuzzy
 msgid "CTS"
-msgstr ""
+msgstr "CTS"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:404
 msgid "Clear to Send"
-msgstr ""
+msgstr "Claro para enviar"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:408 article.translate.xml:409
 #: article.translate.xml:1339
+#, fuzzy
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:410
+#, fuzzy
 msgid "CC"
-msgstr ""
+msgstr "CC"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:411
+#, fuzzy
 msgid "107"
-msgstr ""
+msgstr "107"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:412
+#, fuzzy
 msgid "DSR"
-msgstr ""
+msgstr "DSR"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:414
 msgid "Data Set Ready"
-msgstr ""
+msgstr "Conjunto de datos listo"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:420
+#, fuzzy
 msgid "AV"
-msgstr ""
+msgstr "AV"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:421
+#, fuzzy
 msgid "102"
-msgstr ""
+msgstr "102"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:422
+#, fuzzy
 msgid "SG/GND"
-msgstr ""
+msgstr "SG/GND"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:424
 msgid "Signal Ground"
-msgstr ""
+msgstr "Tierra de señal"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:430
+#, fuzzy
 msgid "CF"
-msgstr ""
+msgstr "CF"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:431
+#, fuzzy
 msgid "109"
-msgstr ""
+msgstr "109"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:432
+#, fuzzy
 msgid "DCD/CD"
-msgstr ""
+msgstr "DCD/CD"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:434
 msgid "Data Carrier Detect"
-msgstr ""
+msgstr "Detección de portador de datos"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:438 article.translate.xml:569
+#, fuzzy
 msgid "9"
-msgstr ""
+msgstr "9"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:444 article.translate.xml:454
 #: article.translate.xml:464
 msgid "Reserved for Test"
-msgstr ""
+msgstr "Reservado para prueba"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:448
+#, fuzzy
 msgid "10"
-msgstr ""
+msgstr "10"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:458
+#, fuzzy
 msgid "11"
-msgstr ""
+msgstr "11"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:468
+#, fuzzy
 msgid "12"
-msgstr ""
+msgstr "12"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:470
+#, fuzzy
 msgid "CI"
-msgstr ""
+msgstr "CI"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:471
+#, fuzzy
 msgid "122"
-msgstr ""
+msgstr "122"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:472
+#, fuzzy
 msgid "SRLSD"
-msgstr ""
+msgstr "SRLSD"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:474
 msgid "Sec. Recv. Line Signal Detector"
-msgstr ""
+msgstr "Segundo. Recv. Detector de señal de línea"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:478
+#, fuzzy
 msgid "13"
-msgstr ""
+msgstr "13"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:480
+#, fuzzy
 msgid "SCB"
-msgstr ""
+msgstr "SCB"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:481
+#, fuzzy
 msgid "121"
-msgstr ""
+msgstr "121"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:482
+#, fuzzy
 msgid "SCTS"
-msgstr ""
+msgstr "SCTS"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:484
 msgid "Secondary Clear to Send"
-msgstr ""
+msgstr "Secundario claro para enviar"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:488 article.translate.xml:1365
+#, fuzzy
 msgid "14"
-msgstr ""
+msgstr "14"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:490
+#, fuzzy
 msgid "SBA"
-msgstr ""
+msgstr "SBA"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:491
+#, fuzzy
 msgid "118"
-msgstr ""
+msgstr "118"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:492
+#, fuzzy
 msgid "STD"
-msgstr ""
+msgstr "STD"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:494
 msgid "Secondary Transmit Data"
-msgstr ""
+msgstr "Datos de transmisión secundarios"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:498
+#, fuzzy
 msgid "15"
-msgstr ""
+msgstr "15"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:500
+#, fuzzy
 msgid "DB"
-msgstr ""
+msgstr "DB"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:501
+#, fuzzy
 msgid "114"
-msgstr ""
+msgstr "114"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:502 article.translate.xml:592
+#, fuzzy
 msgid "TSET"
-msgstr ""
+msgstr "TSET"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:504 article.translate.xml:594
 msgid "Trans. Sig. Element Timing"
-msgstr ""
+msgstr "Trans. Sig. Tiempo de elemento"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:508
+#, fuzzy
 msgid "16"
-msgstr ""
+msgstr "16"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:510
+#, fuzzy
 msgid "SBB"
-msgstr ""
+msgstr "SBB"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:511
+#, fuzzy
 msgid "119"
-msgstr ""
+msgstr "119"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:512
+#, fuzzy
 msgid "SRD"
-msgstr ""
+msgstr "SRD"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:514
 msgid "Secondary Received Data"
-msgstr ""
+msgstr "Datos secundarios recibidos"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:518
+#, fuzzy
 msgid "17"
-msgstr ""
+msgstr "17"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:520
+#, fuzzy
 msgid "DD"
-msgstr ""
+msgstr "DD"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:521
+#, fuzzy
 msgid "115"
-msgstr ""
+msgstr "115"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:522
+#, fuzzy
 msgid "RSET"
-msgstr ""
+msgstr "RSET"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:524
 msgid "Receiver Signal Element Timing"
-msgstr ""
+msgstr "Temporalización del elemento de señal del receptor"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:528
+#, fuzzy
 msgid "18"
-msgstr ""
+msgstr "18"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:531
+#, fuzzy
 msgid "141"
-msgstr ""
+msgstr "141"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:532
+#, fuzzy
 msgid "LOOP"
-msgstr ""
+msgstr "LOOP"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:534
 msgid "Local Loopback"
-msgstr ""
+msgstr "Loopback local"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:538 article.translate.xml:1067
+#, fuzzy
 msgid "19"
-msgstr ""
+msgstr "19"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:540
+#, fuzzy
 msgid "SCA"
-msgstr ""
+msgstr "SCA"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:541
+#, fuzzy
 msgid "120"
-msgstr ""
+msgstr "120"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:542
+#, fuzzy
 msgid "SRS"
-msgstr ""
+msgstr "SRS"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:544
 msgid "Secondary Request to Send"
-msgstr ""
+msgstr "Solicitud secundaria para enviar"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:548
+#, fuzzy
 msgid "20"
-msgstr ""
+msgstr "20"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:550
+#, fuzzy
 msgid "CD"
-msgstr ""
+msgstr "CD"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:551
+#, fuzzy
 msgid "108.2"
-msgstr ""
+msgstr "108.2"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:552
+#, fuzzy
 msgid "DTR"
-msgstr ""
+msgstr "DTR"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:554
 msgid "Data Terminal Ready"
-msgstr ""
+msgstr "Terminal de datos listo"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:558
+#, fuzzy
 msgid "21"
-msgstr ""
+msgstr "21"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:562
+#, fuzzy
 msgid "RDL"
-msgstr ""
+msgstr "RDL"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:564
 msgid "Remote Digital Loopback"
-msgstr ""
+msgstr "Bucle de retorno digital remoto"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:568
+#, fuzzy
 msgid "22"
-msgstr ""
+msgstr "22"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:570
+#, fuzzy
 msgid "CE"
-msgstr ""
+msgstr "CE"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:571
+#, fuzzy
 msgid "125"
-msgstr ""
+msgstr "125"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:572
+#, fuzzy
 msgid "RI"
-msgstr ""
+msgstr "RI"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:574
 msgid "Ring Indicator"
-msgstr ""
+msgstr "Indicador de anillo"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:578 article.translate.xml:1073
+#, fuzzy
 msgid "23"
-msgstr ""
+msgstr "23"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:580
+#, fuzzy
 msgid "CH"
-msgstr ""
+msgstr "CH"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:581
+#, fuzzy
 msgid "111"
-msgstr ""
+msgstr "111"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:582
+#, fuzzy
 msgid "DSRS"
-msgstr ""
+msgstr "DSRS"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:584
 msgid "Data Signal Rate Selector"
-msgstr ""
+msgstr "Selector de velocidad de señal de datos"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:588
+#, fuzzy
 msgid "24"
-msgstr ""
+msgstr "24"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:590
+#, fuzzy
 msgid "DA"
-msgstr ""
+msgstr "DA"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:591
+#, fuzzy
 msgid "113"
-msgstr ""
+msgstr "113"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:598
+#, fuzzy
 msgid "25"
-msgstr ""
+msgstr "25"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:601
+#, fuzzy
 msgid "142"
-msgstr ""
+msgstr "142"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:604
 msgid "Test Mode"
-msgstr ""
+msgstr "Modo de prueba"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:613
 msgid "Bits, Baud and Symbols"
-msgstr ""
+msgstr "Bits, baudios y símbolos"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:615
@@ -1121,6 +1411,10 @@ msgid ""
 "Because of advances in modem communication technology, this term is "
 "frequently misused when describing the data rates in newer devices."
 msgstr ""
+"Baud es una medida de la velocidad de transmisión en la comunicación "
+"asíncrona. Debido a los avances en la tecnología de comunicaciones por "
+"módem, este término se utiliza con frecuencia de manera incorrecta al "
+"describir las velocidades de datos en los dispositivos más nuevos."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:620
@@ -1134,6 +1428,15 @@ msgid ""
 "bits per second from one place to another can normally only move 30 7-bit "
 "words if Parity is used and one Start and Stop bit are present."
 msgstr ""
+"Tradicionalmente, una velocidad en baudios representa la cantidad de bits "
+"que realmente se envían a través de los medios, no la cantidad de datos que "
+"realmente se mueven de un dispositivo DTE a otro. El recuento en baudios "
+"incluye los bits de sobrecarga Start, Stop y Parity que son generados por el "
+"UART emisor y eliminados por el UART receptor. Esto significa que las "
+"palabras de datos de siete bits en realidad necesitan 10 bits para "
+"transmitirse por completo. Por lo tanto, un módem capaz de mover 300 bits "
+"por segundo de un lugar a otro normalmente solo puede mover 30 palabras de 7 "
+"bits si se usa la paridad y hay un bit de inicio y parada."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:632
@@ -1142,6 +1445,10 @@ msgid ""
 "falls to 27.27 words per second, because it now takes 11 bits to send the "
 "eight-bit words, and the modem still only sends 300 bits per second."
 msgstr ""
+"Si se utilizan palabras de datos de 8 bits y también se utilizan bits de "
+"paridad, la velocidad de datos cae a 27,27 palabras por segundo, porque "
+"ahora se necesitan 11 bits para enviar las palabras de ocho bits, y el módem "
+"aún envía solo 300 bits por segundo."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:637
@@ -1159,6 +1466,20 @@ msgid ""
 "a serial format and then sends them to the receiving UART in the remote "
 "computer, who then strips the Start, Stop and Parity bits."
 msgstr ""
+"La fórmula para convertir bytes por segundo en una velocidad en baudios y "
+"viceversa era simple hasta que aparecieron los módems correctores de "
+"errores. Estos módems reciben el flujo de bits en serie del UART en la "
+"computadora host (incluso cuando se utilizan módems internos, los datos "
+"todavía se serializan con frecuencia) y vuelven a convertir los bits en "
+"bytes. Luego, estos bytes se combinan en paquetes y se envían a través de la "
+"línea telefónica utilizando un método de transmisión sincrónica. Esto "
+"significa que los bits de parada, inicio y paridad agregados por el UART en "
+"el DTE (la computadora) fueron eliminados por el módem antes de la "
+"transmisión por el módem emisor. Cuando estos bytes son recibidos por el "
+"módem remoto, el módem remoto agrega bits de inicio, parada y paridad a las "
+"palabras, los convierte a un formato serial y luego los envía al UART "
+"receptor en la computadora remota, quien luego quita el inicio, parada y "
+"bits de paridad."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:653
@@ -1169,6 +1490,12 @@ msgid ""
 "with the correct checksum. This checking is handled by the modems, and the "
 "DTE devices are usually unaware that the process is occurring."
 msgstr ""
+"La razón por la que se realizan todas estas conversiones adicionales es para "
+"que los dos módems puedan realizar la corrección de errores, lo que "
+"significa que el módem receptor puede pedirle al módem emisor que reenvíe un "
+"bloque de datos que no se recibió con la suma de comprobación correcta. Esta "
+"verificación es manejada por los módems, y los dispositivos DTE generalmente "
+"ignoran que el proceso está ocurriendo."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:661
@@ -1182,6 +1509,14 @@ msgid ""
 "that the receiving modem can use to do error-correction without impacting "
 "the transmission speed of the real data."
 msgstr ""
+"Al dividir los bits de inicio, parada y paridad, los bits de datos "
+"adicionales que los dos módems deben compartir entre sí para realizar la "
+"corrección de errores se ocultan en su mayoría de la velocidad de "
+"transmisión efectiva vista por el equipo DTE emisor y receptor. Por ejemplo, "
+"si un módem envía diez palabras de 7 bits a otro módem sin incluir los bits "
+"de inicio, parada y paridad, el módem emisor podrá agregar 30 bits de su "
+"propia información que el módem receptor puede utilizar para corregir "
+"errores. sin afectar la velocidad de transmisión de los datos reales."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:672
@@ -1192,6 +1527,11 @@ msgid ""
 "receiving modem will expand the data back to its original content and pass "
 "that data to the receiving DTE."
 msgstr ""
+"El uso del término baudios se confunde aún más con los módems que realizan "
+"compresión. Una sola palabra de 8 bits pasada a través de la línea "
+"telefónica podría representar una docena de palabras que se transmitieron al "
+"módem emisor. El módem receptor expandirá los datos a su contenido original "
+"y pasará esos datos al DTE receptor."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:679
@@ -1202,6 +1542,12 @@ msgid ""
 "the speed between the DTE and DCE is higher than the DCE to DCE speed "
 "because of the use of compression by the modems."
 msgstr ""
+"Los módems modernos también incluyen búferes que permiten que la velocidad a "
+"la que los bits se mueven a través de la línea telefónica (DCE a DCE) sea "
+"diferente a la velocidad a la que se mueven los bits entre el DTE y el DCE "
+"en ambos extremos de la conversación. Normalmente, la velocidad entre el DTE "
+"y el DCE es mayor que la velocidad de DCE a DCE debido al uso de compresión "
+"por los módems."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:687
@@ -1216,6 +1562,16 @@ msgid ""
 "connection is made between two systems with a wired connection, or if a "
 "modem is in use that is not performing error-correction or compression."
 msgstr ""
+"Debido a que el número de bits necesarios para describir un byte varió "
+"durante el viaje entre las dos máquinas más las diferentes velocidades de "
+"bits por segundo que se utilizan en los enlaces DTE-DCE y DCE-DCE, el uso "
+"del término Baudios para describir la velocidad de comunicación general "
+"causa problemas y puede tergiversar la verdadera velocidad de transmisión. "
+"Por lo tanto, Bits por segundo (bps) es el término correcto para describir "
+"la velocidad de transmisión observada en la interfaz DCE a DCE y Baudios o "
+"Bits por segundo son términos aceptables para usar cuando se realiza una "
+"conexión entre dos sistemas con una conexión cableada, o si se está "
+"utilizando un módem que no realiza la corrección de errores o la compresión."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:700
@@ -1229,11 +1585,20 @@ msgid ""
 "system provides. Modems operating at 28,800 and higher speeds have variable "
 "Symbol rates, but the technique is the same."
 msgstr ""
+"Los módems modernos de alta velocidad (2400, 9600, 14,400 y 19,200bps) en "
+"realidad todavía funcionan a 2400 baudios o menos, o más exactamente, a 2400 "
+"símbolos por segundo. El módem de alta velocidad puede codificar más bits de "
+"datos en cada símbolo utilizando una técnica llamada Constellation Stuffing, "
+"razón por la cual la tasa efectiva de bits por segundo del módem es mayor, "
+"pero el módem continúa funcionando dentro del ancho de banda de audio "
+"limitado que el teléfono proporciona el sistema. Los módems que funcionan a "
+"28.800 y velocidades superiores tienen velocidades de símbolo variables, "
+"pero la técnica es la misma."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:713
 msgid "The IBM Personal Computer UART"
-msgstr ""
+msgstr "La computadora personal de IBM UART"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:715
@@ -1244,11 +1609,16 @@ msgid ""
 "continued to use the INS8250 or improved versions of the National "
 "Semiconductor UART family."
 msgstr ""
+"Comenzando con la computadora personal IBM original, IBM seleccionó el UART "
+"National Semiconductor INS8250 para su uso en el Adaptador Serial / Paralelo "
+"de IBM PC. Las generaciones posteriores de computadoras compatibles de IBM y "
+"otros proveedores continuaron utilizando el INS8250 o versiones mejoradas de "
+"la familia UART de National Semiconductor."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:723
 msgid "National Semiconductor UART Family Tree"
-msgstr ""
+msgstr "Árbol genealógico de National Semiconductor UART"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:725
@@ -1256,10 +1626,12 @@ msgid ""
 "There have been several versions and subsequent generations of the INS8250 "
 "UART. Each major version is described below."
 msgstr ""
+"Ha habido varias versiones y generaciones posteriores del INS8250 UART. Cada "
+"versión principal se describe a continuación."
 
 #. (itstool) path: sect3/programlisting
 #: article.translate.xml:730
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "INS8250  -&gt; INS8250B\n"
 "  \\\n"
@@ -1272,11 +1644,22 @@ msgid ""
 "                         \\\n"
 "                          \\-&gt; NS16550 -&gt; NS16550A -&gt; PC16550D"
 msgstr ""
+"INS8250  -&gt; INS8250B\n"
+"  \\\n"
+"   \\\n"
+"    \\-&gt; INS8250A -&gt; INS82C50A\n"
+"             \\\n"
+"              \\\n"
+"               \\-&gt; NS16450 -&gt; NS16C450\n"
+"                        \\\n"
+"                         \\\n"
+"                          \\-&gt; NS16550 -&gt; NS16550A -&gt; PC16550D"
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:743
+#, fuzzy
 msgid "INS8250"
-msgstr ""
+msgstr "INS8250"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:746
@@ -1285,6 +1668,9 @@ msgid ""
 "for this part was the INS8250 ACE (Asynchronous Communications Element) and "
 "it is made from NMOS technology."
 msgstr ""
+"Esta pieza se utilizó en el IBM PC original y el IBM PC / XT. El nombre "
+"original de esta pieza era INS8250 ACE (Elemento de comunicaciones "
+"asincrónicas) y está fabricado con tecnología NMOS."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:751
@@ -1295,11 +1681,18 @@ msgid ""
 "the BIOS dependent on the flaws being present, so subsequent parts like the "
 "8250A, 16450 or 16550 could not be used in the original IBM PC or IBM PC/XT."
 msgstr ""
+"El 8250 utiliza ocho puertos de E / S y tiene un búfer de envío de un byte y "
+"un búfer de recepción de un byte. Este UART original tiene varias "
+"condiciones de carrera y otros defectos. El BIOS de IBM original incluye "
+"código para solucionar estos defectos, pero esto hizo que el BIOS dependiera "
+"de los defectos presentes, por lo que las partes posteriores como el 8250A, "
+"16450 o 16550 no se pudieron usar en el IBM PC o IBM PC / XT original."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:763
+#, fuzzy
 msgid "INS8250-B"
-msgstr ""
+msgstr "INS8250-B"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:766
@@ -1307,11 +1700,14 @@ msgid ""
 "This is the slower speed of the INS8250 made from NMOS technology. It "
 "contains the same problems as the original INS8250."
 msgstr ""
+"Esta es la velocidad más lenta del INS8250 fabricado con tecnología NMOS. "
+"Contiene los mismos problemas que el INS8250 original."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:773
+#, fuzzy
 msgid "INS8250A"
-msgstr ""
+msgstr "INS8250A"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:776
@@ -1322,11 +1718,17 @@ msgid ""
 "the corrections in the chip, this part could not be used with a BIOS "
 "compatible with the INS8250 or INS8250B."
 msgstr ""
+"Una versión mejorada del INS8250 que usa tecnología XMOS con varios defectos "
+"funcionales corregidos. El INS8250A fue utilizado inicialmente en "
+"computadoras clonadas por proveedores que usaban <quote>clean</quote> "
+"Diseños de BIOS. Debido a las correcciones en el chip, esta parte no se pudo "
+"usar con un BIOS compatible con INS8250 o INS8250B."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:788
+#, fuzzy
 msgid "INS82C50A"
-msgstr ""
+msgstr "INS82C50A"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:791
@@ -1334,11 +1736,14 @@ msgid ""
 "This is a CMOS version (low power consumption) of the INS8250A and has "
 "similar functional characteristics."
 msgstr ""
+"Esta es una versión CMOS (bajo consumo de energía) del INS8250A y tiene "
+"características funcionales similares."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:798
+#, fuzzy
 msgid "NS16450"
-msgstr ""
+msgstr "NS16450"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:801
@@ -1347,21 +1752,26 @@ msgid ""
 "designs. IBM used this part in the IBM AT and updated the IBM BIOS to no "
 "longer rely on the bugs in the INS8250."
 msgstr ""
+"Igual que NS8250A con mejoras para que pueda usarse con diseños de bus de "
+"CPU más rápidos. IBM usó esta parte en IBM AT y actualizó el BIOS de IBM "
+"para no depender más de los errores en el INS8250."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:809
+#, fuzzy
 msgid "NS16C450"
-msgstr ""
+msgstr "NS16C450"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:812
 msgid "This is a CMOS version (low power consumption) of the NS16450."
-msgstr ""
+msgstr "Esta es una versión CMOS (bajo consumo de energía) del NS16450."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:818
+#, fuzzy
 msgid "NS16550"
-msgstr ""
+msgstr "NS16550"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:821
@@ -1369,11 +1779,14 @@ msgid ""
 "Same as NS16450 with a 16-byte send and receive buffer but the buffer design "
 "was flawed and could not be reliably be used."
 msgstr ""
+"Igual que NS16450 con un búfer de envío y recepción de 16 bytes, pero el "
+"diseño del búfer era defectuoso y no se podía utilizar de forma fiable."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:828
+#, fuzzy
 msgid "NS16550A"
-msgstr ""
+msgstr "NS16550A"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:831
@@ -1383,22 +1796,29 @@ msgid ""
 "mainly due to its ability to reliably handle higher data rates on operating "
 "systems with sluggish interrupt response times."
 msgstr ""
+"Igual que NS16550 con los defectos del búfer corregidos. El 16550A y sus "
+"sucesores se han convertido en el diseño UART más popular en la industria de "
+"las PC, principalmente debido a su capacidad para manejar de manera "
+"confiable velocidades de datos más altas en sistemas operativos con tiempos "
+"de respuesta de interrupción lentos."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:841
+#, fuzzy
 msgid "NS16C552"
-msgstr ""
+msgstr "NS16C552"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:844
 msgid ""
 "This component consists of two NS16C550A CMOS UARTs in a single package."
-msgstr ""
+msgstr "Este componente consta de dos UART CMOS NS16C550A en un solo paquete."
 
 #. (itstool) path: varlistentry/term
 #: article.translate.xml:850
+#, fuzzy
 msgid "PC16550D"
-msgstr ""
+msgstr "PC16550D"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:853
@@ -1406,11 +1826,13 @@ msgid ""
 "Same as NS16550A with subtle flaws corrected. This is revision D of the "
 "16550 family and is the latest design available from National Semiconductor."
 msgstr ""
+"Igual que NS16550A con sutiles defectos corregidos. Esta es la revisión D de "
+"la familia 16550 y es el último diseño disponible de National Semiconductor."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:863
 msgid "The NS16550AF and the PC16550D are the same thing"
-msgstr ""
+msgstr "El NS16550AF y el PC16550D son lo mismo"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:865
@@ -1422,6 +1844,13 @@ msgid ""
 "two digits are the week in that year when the part was packaged. If you have "
 "a NS16550AFN, it is probably a few years old.)"
 msgstr ""
+"National reorganizó su sistema de numeración de piezas hace unos años y el "
+"NS16550AFN ya no existe con ese nombre. (Si tiene un NS16550AFN, mire el "
+"código de fecha en la parte, que es un número de cuatro dígitos que "
+"generalmente comienza con un nueve. Los primeros dos dígitos del número son "
+"el año y los últimos dos dígitos son la semana en ese año en el que se "
+"empaquetó la pieza. Si tiene un NS16550AFN, probablemente tenga algunos "
+"años.)"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:874
@@ -1430,6 +1859,9 @@ msgid ""
 "letters depending on the package material and its shape. (A description of "
 "the numbering system can be found below.)"
 msgstr ""
+"Los nuevos números son como PC16550DV, con pequeñas diferencias en las "
+"letras del sufijo según el material del paquete y su forma. (Puede encontrar "
+"una descripción del sistema de numeración a continuación.)"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:879
@@ -1441,6 +1873,12 @@ msgid ""
 "as $5(US) in volume) as much as the NS16550AFN because they are readily "
 "available."
 msgstr ""
+"Es importante comprender que en algunas tiendas, puede pagar $ 15 (EE. UU.) "
+"Por un NS16550AFN fabricado en 1990 y en el siguiente contenedor están las "
+"nuevas piezas PC16550DN con pequeñas reparaciones que National ha realizado "
+"desde que la pieza AFN estaba en producción, la PC16550DN probablemente se "
+"fabricó en los últimos seis meses y cuesta la mitad (tan bajo como $ 5 (EE."
+"UU.) en volumen) que el NS16550AFN porque están fácilmente disponibles."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:888
@@ -1449,11 +1887,15 @@ msgid ""
 "probably continue to increase until more people discover and accept that the "
 "PC16550DN really has the same function as the old part number."
 msgstr ""
+"A medida que el suministro de chips NS16550AFN sigue disminuyendo, el precio "
+"probablemente seguirá aumentando hasta que más personas descubran y acepten "
+"que el PC16550DN realmente tiene la misma función que el número de pieza "
+"anterior."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:895
 msgid "National Semiconductor Part Numbering System"
-msgstr ""
+msgstr "Sistema nacional de numeración de piezas de semiconductores"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:897
@@ -1461,6 +1903,8 @@ msgid ""
 "The older NS<replaceable>nnnnnrqp</replaceable> part numbers are now of the "
 "format PC<replaceable>nnnnnrgp</replaceable>."
 msgstr ""
+"El mayor NS <replaceable>nnnnnrqp</replaceable> los números de pieza ahora "
+"tienen el formato PC<replaceable>nnnnnrgp</replaceable>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:901
@@ -1468,57 +1912,67 @@ msgid ""
 "The <replaceable>r</replaceable> is the revision field. The current revision "
 "of the 16550 from National Semiconductor is <literal>D</literal>."
 msgstr ""
+"El <replaceable>r</replaceable> es el campo de revisión. La revisión actual "
+"del 16550 de National Semiconductor es <literal>D</literal>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:905
 msgid ""
 "The <replaceable>p</replaceable> is the package-type field. The types are:"
 msgstr ""
+"El <replaceable>p</replaceable> es el campo de tipo de paquete. Los tipos "
+"son:"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:912
+#, fuzzy
 msgid "\"F\""
-msgstr ""
+msgstr "\"F\""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:913
+#, fuzzy
 msgid "QFP"
-msgstr ""
+msgstr "QFP"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:914
 msgid "(quad flat pack) L lead type"
-msgstr ""
+msgstr "(paquete plano cuádruple) Tipo de cable L"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:918
+#, fuzzy
 msgid "\"N\""
-msgstr ""
+msgstr "\"N\""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:919
+#, fuzzy
 msgid "DIP"
-msgstr ""
+msgstr "DIP"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:920
 msgid "(dual inline package) through hole straight lead type"
-msgstr ""
+msgstr "(paquete en línea dual) tipo de cable recto con orificio pasante"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:925
+#, fuzzy
 msgid "\"V\""
-msgstr ""
+msgstr "\"V\""
 
 #. (itstool) path: row/entry
 #: article.translate.xml:926
+#, fuzzy
 msgid "LPCC"
-msgstr ""
+msgstr "LPCC"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:927
 msgid "(lead plastic chip carrier) J lead type"
-msgstr ""
+msgstr "(portador de chips de plástico de plomo) Tipo de cable J"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:933
@@ -1529,6 +1983,11 @@ msgid ""
 "part but not as high as Military Specification (Milspec) component. This is "
 "an optional field."
 msgstr ""
+"El <replaceable>g</replaceable> es el campo de grado de producto. Si una "
+"<literal>I</literal> precede a la letra del tipo de paquete, indica una "
+"<quote>industrial</quote> pieza de grado, que tiene especificaciones más "
+"altas que una pieza estándar pero no tan altas como el componente de "
+"Especificación Militar (Milspec). Este campo es opcional."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:941
@@ -1536,11 +1995,13 @@ msgid ""
 "So what we used to call a NS16550AFN (DIP Package) is now called a PC16550DN "
 "or PC16550DIN."
 msgstr ""
+"Entonces, lo que solíamos llamar NS16550AFN (paquete DIP) ahora se llama "
+"PC16550DN o PC16550DIN."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:947
 msgid "Other Vendors and Similar UARTs"
-msgstr ""
+msgstr "Otros proveedores y UART similares"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:949
@@ -1551,6 +2012,12 @@ msgid ""
 "including Western Digital and Intel. Other vendors reverse-engineered the "
 "part or produced emulations that had similar behavior."
 msgstr ""
+"A lo largo de los años, otros proveedores de chips han autorizado o copiado "
+"el 8250, 8250A, 16450 y 16550. En el caso de 8250, 8250A y 16450, el "
+"circuito exacto (el <quote>megacell</quote>) fue licenciada a muchos "
+"proveedores, incluidos Western Digital e Intel. Otros proveedores realizaron "
+"ingeniería inversa de la pieza o produjeron emulaciones que tenían un "
+"comportamiento similar."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:957
@@ -1564,6 +2031,15 @@ msgid ""
 "effective use of the extra buffering present in the emulated UART unless "
 "special drivers are used."
 msgstr ""
+"En los módems internos, el diseñador del módem emulará frecuentemente el "
+"8250A / 16450 con el microprocesador del módem, y el UART emulado con "
+"frecuencia tendrá un búfer oculto que consta de varios cientos de bytes. "
+"Debido al tamaño del búfer, estas emulaciones pueden ser tan confiables como "
+"un 16550A en su capacidad para manejar datos de alta velocidad. Sin embargo, "
+"la mayoría de los sistemas operativos seguirán informando que el UART es "
+"solo un 8250A o 16450, y es posible que no hagan un uso eficaz del "
+"almacenamiento en búfer adicional presente en el UART emulado a menos que se "
+"utilicen controladores especiales."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:968
@@ -1573,6 +2049,11 @@ msgid ""
 "product will compare favorably in market comparisons even though the "
 "effective performance may be lowered by this action."
 msgstr ""
+"Algunos fabricantes de módems se ven impulsados por las fuerzas del mercado "
+"a abandonar un diseño que tiene cientos de bytes de búfer y, en su lugar, "
+"utilizan un UART 16550A para que el producto se compare favorablemente en "
+"las comparaciones del mercado, aunque esta acción pueda reducir el "
+"rendimiento efectivo."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:974
@@ -1581,6 +2062,9 @@ msgid ""
 "on them are identical in performance. There are differences, and in some "
 "cases, outright flaws in most of these 16550A clones."
 msgstr ""
+"Un error común es que todas las partes con <quote>16550A</quote> escrito en "
+"ellos son idénticos en rendimiento. Existen diferencias y, en algunos casos, "
+"fallas absolutas en la mayoría de estos clones 16550A."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:979
@@ -1594,6 +2078,15 @@ msgid ""
 "most computer and modem makers want to buy but are sometimes unwilling to "
 "pay the price required to get the genuine part."
 msgstr ""
+"Cuando se desarrolló el NS16550, National Semiconductor obtuvo varias "
+"patentes sobre el diseño y también limitaron las licencias, lo que dificulta "
+"que otros proveedores proporcionen un chip con características similares. "
+"Debido a las patentes, los diseños y emulaciones de ingeniería inversa "
+"tenían que evitar infringir las reclamaciones cubiertas por las patentes. "
+"Posteriormente, estas copias casi nunca funcionan exactamente igual que las "
+"NS16550A o PC16550D, que son las piezas que la mayoría de los fabricantes de "
+"computadoras y módems quieren comprar pero que a veces no están dispuestos a "
+"pagar el precio requerido para obtener la pieza original."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:991
@@ -1611,6 +2104,20 @@ msgid ""
 "criteria means that if a different operating system is used, problems could "
 "appear due to subtle differences between the clones and genuine components."
 msgstr ""
+"Algunas de las diferencias en las partes del clon 16550A no son importantes, "
+"mientras que otras pueden evitar que el dispositivo se use con un sistema "
+"operativo o controlador determinado. Estas diferencias pueden aparecer "
+"cuando se utilizan otros controladores o cuando ocurren combinaciones "
+"particulares de eventos que no fueron bien probados o considerados en el "
+"<trademark class=\"registered\">Windows</trademark> conductor. Esto se debe "
+"a que la mayoría de los proveedores de módems y fabricantes de clones 16550 "
+"utilizan los controladores de Microsoft de <trademark class=\"registered\""
+">Windows</trademark> Para grupos de trabajo 3.11 y el <trademark class="
+"\"registered\">Microsoft</trademark> <trademark class=\"registered\">MS-DOS</"
+"trademark> utilidad como las principales pruebas de compatibilidad con el "
+"NS16550A. Este criterio demasiado simplista significa que si se usa un "
+"sistema operativo diferente, podrían aparecer problemas debido a diferencias "
+"sutiles entre los clones y los componentes genuinos."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1005
@@ -1622,6 +2129,13 @@ msgid ""
 "competition, so the program will report major as well as extremely subtle "
 "differences in behavior in the part being tested."
 msgstr ""
+"National Semiconductor ha puesto a disposición un programa llamado "
+"<application>COMTEST</application> que realiza pruebas de compatibilidad "
+"independientes de los controladores del sistema operativo. Debe recordarse "
+"que el propósito de este tipo de programa es demostrar las fallas en los "
+"productos de la competencia, por lo que el programa reportará diferencias "
+"importantes y extremadamente sutiles en el comportamiento de la parte que se "
+"está probando."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1014
@@ -1633,6 +2147,13 @@ msgid ""
 "Because these tests were performed in 1994, they may not reflect the current "
 "performance of the given product from a vendor."
 msgstr ""
+"En una serie de pruebas realizadas por el autor de este documento en 1994, "
+"se probaron con COMTEST componentes fabricados por National Semiconductor, "
+"TI, StarTech y CMD, así como megacélulas y emulaciones integradas en módems "
+"internos. A continuación se enumera un recuento de diferencias para algunos "
+"de estos componentes. Debido a que estas pruebas se realizaron en 1994, es "
+"posible que no reflejen el rendimiento actual del producto dado de un "
+"proveedor."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1023
@@ -1642,32 +2163,38 @@ msgid ""
 "COMTEST was modified so that it would not abort no matter how many "
 "differences were encountered."
 msgstr ""
+"Cabe señalar que COMTEST normalmente aborta cuando se detecta un número "
+"excesivo o ciertos tipos de problemas. Como parte de esta prueba, COMTEST se "
+"modificó para que no abortara sin importar cuántas diferencias se "
+"encontraran."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1033
 msgid "Vendor"
-msgstr ""
+msgstr "Vendedor"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1034
 msgid "Part Number"
-msgstr ""
+msgstr "Número de pieza"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1035
 msgid "Errors (aka \"differences\" reported)"
-msgstr ""
+msgstr "Errores (también conocidos como \"diferencias\" informadas)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1041 article.translate.xml:1047
 #: article.translate.xml:1053
+#, fuzzy
 msgid "National"
-msgstr ""
+msgstr "National"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1042
+#, fuzzy
 msgid "(PC16550DV)"
-msgstr ""
+msgstr "(PC16550DV)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1043 article.translate.xml:1049
@@ -1681,78 +2208,92 @@ msgstr ""
 #: article.translate.xml:1530 article.translate.xml:1640
 #: article.translate.xml:1646 article.translate.xml:1647
 #: article.translate.xml:1653 article.translate.xml:1661
+#, fuzzy
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1048
+#, fuzzy
 msgid "(NS16550AFN)"
-msgstr ""
+msgstr "(NS16550AFN)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1054
+#, fuzzy
 msgid "(NS16C552V)"
-msgstr ""
+msgstr "(NS16C552V)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1059
+#, fuzzy
 msgid "TI"
-msgstr ""
+msgstr "TI"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1060
+#, fuzzy
 msgid "(TL16550AFN)"
-msgstr ""
+msgstr "(TL16550AFN)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1065
+#, fuzzy
 msgid "CMD"
-msgstr ""
+msgstr "CMD"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1066
+#, fuzzy
 msgid "(16C550PE)"
-msgstr ""
+msgstr "(16C550PE)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1071
+#, fuzzy
 msgid "StarTech"
-msgstr ""
+msgstr "StarTech"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1072
+#, fuzzy
 msgid "(ST16C550J)"
-msgstr ""
+msgstr "(ST16C550J)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1077
+#, fuzzy
 msgid "Rockwell"
-msgstr ""
+msgstr "Rockwell"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1078
 msgid "Reference modem with internal 16550 or an emulation (RC144DPi/C3000-25)"
 msgstr ""
+"Módem de referencia con 16550 interno o una emulación (RC144DPi / C3000-25)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1080
+#, fuzzy
 msgid "117"
-msgstr ""
+msgstr "117"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1084
+#, fuzzy
 msgid "Sierra"
-msgstr ""
+msgstr "Sierra"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1085
 msgid "Modem with an internal 16550 (SC11951/SC11351)"
-msgstr ""
+msgstr "Módem con 16550 interno (SC11951 / SC11351)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1087
+#, fuzzy
 msgid "91"
-msgstr ""
+msgstr "91"
 
 #. (itstool) path: note/para
 #: article.translate.xml:1094
@@ -1767,6 +2308,16 @@ msgid ""
 "are official erratas that describe bugs in the A, B and C revisions of the "
 "parts, so this bias in COMTEST must be taken into account."
 msgstr ""
+"Hasta la fecha, el autor de este documento no ha encontrado partes no "
+"nacionales que reporten cero diferencias usando el programa COMTEST. También "
+"debe tenerse en cuenta que National ha tenido cinco versiones del 16550 a lo "
+"largo de los años y las piezas más nuevas se comportan un poco diferente al "
+"clásico NS16550AFN que se considera el punto de referencia para la "
+"funcionalidad. COMTEST parece hacer la vista gorda a las diferencias dentro "
+"de la línea de productos de National y no informa errores en las partes de "
+"National (a excepción del 16550 original) incluso cuando hay erratas "
+"oficiales que describen errores en las revisiones A, B y C de las partes. , "
+"por lo que este sesgo en COMTEST debe tenerse en cuenta."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1108
@@ -1782,6 +2333,17 @@ msgid ""
 "error-correction and compression capabilities. This means that the "
 "differences related to five- and six-bit character modes can be discounted."
 msgstr ""
+"Es importante entender que un simple recuento de diferencias de COMTEST no "
+"revela mucho sobre qué diferencias son importantes y cuáles no. Por ejemplo, "
+"aproximadamente la mitad de las diferencias informadas en los dos módems "
+"enumerados anteriormente que tienen UART internos se deben a que los UART "
+"clonados no admiten modos de caracteres de cinco y seis bits. Todos los UART "
+"16550, 16450 y 8250 reales admiten estos modos y COMTEST verifica la "
+"funcionalidad de estos modos, por lo que se informan más de cincuenta "
+"diferencias. Sin embargo, casi ningún módem moderno admite caracteres de "
+"cinco o seis bits, particularmente aquellos con capacidad de corrección de "
+"errores y compresión. Esto significa que se pueden descartar las diferencias "
+"relacionadas con los modos de caracteres de cinco y seis bits."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1122
@@ -1797,6 +2359,17 @@ msgid ""
 "never affect the operation of a properly written driver) could have dozens "
 "of differences reported."
 msgstr ""
+"Muchas de las diferencias de los informes COMTEST tienen que ver con la "
+"sincronización. En muchos de los diseños de clones, cuando el host lee desde "
+"un puerto, es posible que los bits de estado en algún otro puerto no se "
+"actualicen en la misma cantidad de tiempo (algunos más rápido, otros más "
+"lento) que un<emphasis>real</emphasis> NS16550AFN y COMTEST buscan estas "
+"diferencias. Esto significa que el número de diferencias puede ser engañoso "
+"en el sentido de que un dispositivo puede tener solo una o dos diferencias "
+"pero son extremadamente serias, y algún otro dispositivo que actualiza los "
+"registros de estado más rápido o más lento que la parte de referencia (eso "
+"probablemente nunca afectaría la operación de un controlador escrito "
+"correctamente) podría tener decenas de diferencias reportadas."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1135
@@ -1805,6 +2378,9 @@ msgid ""
 "presence of potentially incompatible components that might cause problems or "
 "have to be handled as a special case."
 msgstr ""
+"COMTEST se puede utilizar como una herramienta de detección para alertar al "
+"administrador de la presencia de componentes potencialmente incompatibles "
+"que pueden causar problemas o deben manejarse como un caso especial."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1140
@@ -1814,17 +2390,22 @@ msgid ""
 "so that the modem will not echo any of the test characters. If you forget to "
 "do this, COMTEST will report at least this one difference:"
 msgstr ""
+"Si ejecuta COMTEST en un 16550 que está en un módem o hay un módem conectado "
+"al puerto serie, primero debe emitir un ATE0 &amp;W comando al módem para "
+"que el módem no repita ninguno de los caracteres de prueba. Si olvida hacer "
+"esto, COMTEST informará al menos esta diferencia:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:1147
 #, no-wrap
 msgid "Error (6)...Timeout interrupt failed: IIR = c1  LSR = 61"
 msgstr ""
+"Error (6) ... Error de interrupción de tiempo de espera: IIR = c1 LSR = 61"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1151
 msgid "8250/16450/16550 Registers"
-msgstr ""
+msgstr "8250/16450/16550 registros"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1153
@@ -1838,6 +2419,14 @@ msgid ""
 "systems. The most common conflict is with video adapters that provide IBM "
 "8514 emulation."
 msgstr ""
+"El UART 8250/16450/16550 ocupa ocho direcciones de puertos de E / S "
+"contiguas. En IBM PC, hay dos ubicaciones definidas para estos ocho puertos "
+"y se conocen colectivamente como <filename>COM1</filename> y <filename>COM2</"
+"filename>. Los creadores de clones de PC y tarjetas complementarias han "
+"creado dos áreas adicionales conocidas como <filename>COM3</filename> y "
+"<filename>COM4</filename>, pero estos puertos COM adicionales entran en "
+"conflicto con otro hardware en algunos sistemas. El conflicto más común es "
+"con los adaptadores de video que proporcionan emulación IBM 8514."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1162
@@ -1848,6 +2437,11 @@ msgid ""
 "no standardized IRQ. <filename>COM4</filename> is located from 0x2e8 to "
 "0x2ef and has no standardized IRQ."
 msgstr ""
+"<filename>COM1</filename> se ubica de 0x3f8 a 0x3ff y normalmente usa IRQ 4. "
+"<filename>COM2</filename> se ubica de 0x2f8 a 0x2ff y normalmente usa IRQ 3. "
+"<filename>COM3</filename> se ubica de 0x3e8 a 0x3ef y no tiene IRQ "
+"estandarizada.<filename>COM4</filename> está ubicado de 0x2e8 a 0x2ef y no "
+"tiene IRQ estandarizado."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1168
@@ -1855,32 +2449,37 @@ msgid ""
 "A description of the I/O ports of the 8250/16450/16550 UART is provided "
 "below."
 msgstr ""
+"A continuación se proporciona una descripción de los puertos de E / S del "
+"UART 8250/16450/16550."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1175
+#, fuzzy
 msgid "I/O Port"
-msgstr ""
+msgstr "I/O Port"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1176
 msgid "Access Allowed"
-msgstr ""
+msgstr "Acceso permitido"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1183 article.translate.xml:1192
 #: article.translate.xml:1201
+#, fuzzy
 msgid "+0x00"
-msgstr ""
+msgstr "+0x00"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1184
+#, fuzzy
 msgid "write (DLAB==0)"
-msgstr ""
+msgstr "write (DLAB==0)"
 
 #. (itstool) path: entry/para
 #: article.translate.xml:1185
 msgid "Transmit Holding Register (THR)."
-msgstr ""
+msgstr "Transmitir registro de retención (THR)."
 
 #. (itstool) path: entry/para
 #: article.translate.xml:1186
@@ -1888,16 +2487,19 @@ msgid ""
 "Information written to this port are treated as data words and will be "
 "transmitted by the UART."
 msgstr ""
+"La información escrita en este puerto se trata como palabras de datos y será "
+"transmitida por UART."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1193
+#, fuzzy
 msgid "read (DLAB==0)"
-msgstr ""
+msgstr "read (DLAB==0)"
 
 #. (itstool) path: entry/para
 #: article.translate.xml:1194
 msgid "Receive Buffer Register (RBR)."
-msgstr ""
+msgstr "Recibir registro de búfer (RBR)."
 
 #. (itstool) path: entry/para
 #: article.translate.xml:1194
@@ -1905,16 +2507,19 @@ msgid ""
 "Any data words received by the UART form the serial link are accessed by the "
 "host by reading this port."
 msgstr ""
+"El host accede a todas las palabras de datos recibidas por el UART desde el "
+"enlace en serie leyendo este puerto."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1202 article.translate.xml:1213
+#, fuzzy
 msgid "write/read (DLAB==1)"
-msgstr ""
+msgstr "write/read (DLAB==1)"
 
 #. (itstool) path: entry/para
 #: article.translate.xml:1203
 msgid "Divisor Latch LSB (DLL)"
-msgstr ""
+msgstr "Divisor Latch LSB (DLL)"
 
 #. (itstool) path: entry/para
 #: article.translate.xml:1203
@@ -1923,16 +2528,20 @@ msgid ""
 "master clock is 1.8432MHz) and the resulting clock will determine the baud "
 "rate of the UART. This register holds bits 0 thru 7 of the divisor."
 msgstr ""
+"Este valor se dividirá del reloj de entrada maestro (en la PC IBM, el reloj "
+"maestro es 1.8432MHz) y el reloj resultante determinará la velocidad en "
+"baudios del UART. Este registro contiene los bits 0 a 7 del divisor."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1212 article.translate.xml:1223
+#, fuzzy
 msgid "+0x01"
-msgstr ""
+msgstr "+0x01"
 
 #. (itstool) path: entry/para
 #: article.translate.xml:1214
 msgid "Divisor Latch MSB (DLH)"
-msgstr ""
+msgstr "Pestillo divisor MSB (DLH)"
 
 #. (itstool) path: entry/para
 #: article.translate.xml:1214
@@ -1941,16 +2550,20 @@ msgid ""
 "master clock is 1.8432MHz) and the resulting clock will determine the baud "
 "rate of the UART. This register holds bits 8 thru 15 of the divisor."
 msgstr ""
+"Este valor se dividirá del reloj de entrada maestro (en la PC IBM, el reloj "
+"maestro es 1.8432MHz) y el reloj resultante determinará la velocidad en "
+"baudios del UART. Este registro contiene los bits 8 a 15 del divisor."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1224
+#, fuzzy
 msgid "write/read (DLAB==0)"
-msgstr ""
+msgstr "write/read (DLAB==0)"
 
 #. (itstool) path: entry/para
 #: article.translate.xml:1232
 msgid "Interrupt Enable Register (IER)"
-msgstr ""
+msgstr "Registro de habilitación de interrupciones (IER)"
 
 #. (itstool) path: entry/para
 #: article.translate.xml:1233
@@ -1963,14 +2576,24 @@ msgid ""
 "and then poll the enabled interrupt categories (usually all categories have "
 "interrupts enabled) to determine the true cause(s) of the interrupt."
 msgstr ""
+"El UART 8250/16450/16550 clasifica eventos en una de cuatro categorías. Cada "
+"categoría se puede configurar para generar una interrupción cuando ocurra "
+"cualquiera de los eventos. El UART 8250/16450/16550 genera una única señal "
+"de interrupción externa independientemente de cuántos eventos en las "
+"categorías habilitadas hayan ocurrido. Depende del procesador principal "
+"responder a la interrupción y luego sondear las categorías de interrupciones "
+"habilitadas (generalmente todas las categorías tienen interrupciones "
+"habilitadas) para determinar la (s) verdadera (s) causa (s) de la "
+"interrupción."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1248 article.translate.xml:1325
 #: article.translate.xml:1436 article.translate.xml:1566
 #: article.translate.xml:1691 article.translate.xml:1765
 #: article.translate.xml:1846
+#, fuzzy
 msgid "Bit 7"
-msgstr ""
+msgstr "Bit 7"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1249 article.translate.xml:1254
@@ -1980,39 +2603,43 @@ msgstr ""
 #: article.translate.xml:1692 article.translate.xml:1697
 #: article.translate.xml:1702
 msgid "Reserved, always 0."
-msgstr ""
+msgstr "Reservado, siempre 0."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1253 article.translate.xml:1330
 #: article.translate.xml:1442 article.translate.xml:1578
 #: article.translate.xml:1696 article.translate.xml:1773
 #: article.translate.xml:1852
+#, fuzzy
 msgid "Bit 6"
-msgstr ""
+msgstr "Bit 6"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1258 article.translate.xml:1369
 #: article.translate.xml:1448 article.translate.xml:1587
 #: article.translate.xml:1701 article.translate.xml:1781
 #: article.translate.xml:1858
+#, fuzzy
 msgid "Bit 5"
-msgstr ""
+msgstr "Bit 5"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1263 article.translate.xml:1374
 #: article.translate.xml:1453 article.translate.xml:1594
 #: article.translate.xml:1706 article.translate.xml:1790
 #: article.translate.xml:1864
+#, fuzzy
 msgid "Bit 4"
-msgstr ""
+msgstr "Bit 4"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1268 article.translate.xml:1379
 #: article.translate.xml:1458 article.translate.xml:1602
 #: article.translate.xml:1718 article.translate.xml:1796
 #: article.translate.xml:1870
+#, fuzzy
 msgid "Bit 3"
-msgstr ""
+msgstr "Bit 3"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1269
@@ -2021,14 +2648,18 @@ msgid ""
 "UART to generate an interrupt when a change occurs on one or more of the "
 "status lines."
 msgstr ""
+"Habilite la interrupción del estado del módem (EDSSI). Establecer este bit "
+"en \"1\" permite que la UART genere una interrupción cuando ocurre un cambio "
+"en una o más de las líneas de estado."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1276 article.translate.xml:1387
 #: article.translate.xml:1464 article.translate.xml:1611
 #: article.translate.xml:1727 article.translate.xml:1804
 #: article.translate.xml:1878
+#, fuzzy
 msgid "Bit 2"
-msgstr ""
+msgstr "Bit 2"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1277
@@ -2037,14 +2668,18 @@ msgid ""
 "causes the UART to generate an interrupt when the an error (or a BREAK "
 "signal) has been detected in the incoming data."
 msgstr ""
+"Habilitar interrupción del estado de la línea del receptor (ELSI) La "
+"configuración de este bit en \"1\" hace que el UART genere una interrupción "
+"cuando se detecte un error (o una señal BREAK) en los datos entrantes."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1284 article.translate.xml:1396
 #: article.translate.xml:1469 article.translate.xml:1621
 #: article.translate.xml:1734 article.translate.xml:1810
 #: article.translate.xml:1886
+#, fuzzy
 msgid "Bit 1"
-msgstr ""
+msgstr "Bit 1"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1285
@@ -2053,14 +2688,19 @@ msgid ""
 "to \"1\" causes the UART to generate an interrupt when the UART has room for "
 "one or more additional characters that are to be transmitted."
 msgstr ""
+"Habilitar interrupción vacía del registro de retención del transmisor (ETBEI)"
+" Al establecer este bit en \"1\", la UART genera una interrupción cuando la "
+"UART tiene espacio para uno o más caracteres adicionales que se van a "
+"transmitir."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1293 article.translate.xml:1405
 #: article.translate.xml:1537 article.translate.xml:1627
 #: article.translate.xml:1741 article.translate.xml:1820
 #: article.translate.xml:1894
+#, fuzzy
 msgid "Bit 0"
-msgstr ""
+msgstr "Bit 0"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1294
@@ -2071,16 +2711,22 @@ msgid ""
 "expired (stale data), or a single character has been received when the FIFO "
 "is disabled."
 msgstr ""
+"Habilitar interrupción de datos recibidos disponibles (ERBFI) Establecer "
+"este bit en \"1\" hace que el UART genere una interrupción cuando el UART ha "
+"recibido suficientes caracteres para exceder el nivel de activación del "
+"FIFO, o el temporizador FIFO ha expirado (datos obsoletos), o se ha recibido "
+"un solo carácter cuando el FIFO está desactivado."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1307 article.translate.xml:1417
+#, fuzzy
 msgid "+0x02"
-msgstr ""
+msgstr "+0x02"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1308
 msgid "write"
-msgstr ""
+msgstr "escribir"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1319
@@ -2088,16 +2734,18 @@ msgid ""
 "FIFO Control Register (FCR) (This port does not exist on the 8250 and 16450 "
 "UART.)"
 msgstr ""
+"Registro de control FIFO (FCR) (este puerto no existe en el UART 8250 y "
+"16450.)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1326
 msgid "Receiver Trigger Bit #1"
-msgstr ""
+msgstr "Bit de disparo del receptor n. ° 1"
 
 #. (itstool) path: entry/para
 #: article.translate.xml:1331
 msgid "Receiver Trigger Bit #0"
-msgstr ""
+msgstr "Bit de disparo del receptor #0"
 
 #. (itstool) path: entry/para
 #: article.translate.xml:1332
@@ -2105,11 +2753,13 @@ msgid ""
 "These two bits control at what point the receiver is to generate an "
 "interrupt when the FIFO is active."
 msgstr ""
+"Estos dos bits controlan en qué punto el receptor debe generar una "
+"interrupción cuando el FIFO está activo."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1340
 msgid "How many words are received before an interrupt is generated"
-msgstr ""
+msgstr "Cuántas palabras se reciben antes de que se genere una interrupción"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1380
@@ -2117,6 +2767,9 @@ msgid ""
 "DMA Mode Select. If Bit 0 is set to \"1\" (FIFOs enabled), setting this bit "
 "changes the operation of the -RXRDY and -TXRDY signals from Mode 0 to Mode 1."
 msgstr ""
+"Selección del modo DMA. Si el bit 0 se establece en \"1\" (FIFO habilitado), "
+"la configuración de este bit cambia el funcionamiento de las señales -RXRDY "
+"y -TXRDY del modo 0 al modo 1."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1388
@@ -2125,6 +2778,10 @@ msgid ""
 "the FIFO are discarded. Any word currently being transmitted will be sent "
 "intact. This function is useful in aborting transfers."
 msgstr ""
+"Transmitir reinicio FIFO. Cuando se escribe un \"1\" en este bit, se "
+"descarta el contenido del FIFO. Cualquier palabra que se esté transmitiendo "
+"actualmente se enviará intacta. Esta función es útil para cancelar "
+"transferencias."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1397
@@ -2133,6 +2790,9 @@ msgid ""
 "the FIFO are discarded. Any word currently being assembled in the shift "
 "register will be received intact."
 msgstr ""
+"Receptor FIFO Reset. Cuando se escribe un \"1\" en este bit, se descarta el "
+"contenido del FIFO. Cualquier palabra que se esté ensamblando actualmente en "
+"el registro de desplazamiento se recibirá intacta."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1406
@@ -2141,31 +2801,35 @@ msgid ""
 "enabled. Any contents in the holding register, shift registers or FIFOs are "
 "lost when FIFOs are enabled or disabled."
 msgstr ""
+"16550 FIFO habilitado. Cuando se establece, tanto la transmisión FIFO como "
+"la recepción están habilitadas. Cualquier contenido en el registro de "
+"retención, registros de desplazamiento o FIFO se pierde cuando los FIFO "
+"están habilitados o deshabilitados."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1418
 msgid "read"
-msgstr ""
+msgstr "leer"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1431
 msgid "Interrupt Identification Register"
-msgstr ""
+msgstr "Registro de identificación de interrupciones"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1437 article.translate.xml:1443
 msgid "FIFOs enabled. On the 8250/16450 UART, this bit is zero."
-msgstr ""
+msgstr "FIFO habilitados. En el UART 8250/16450, este bit es cero."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1459
 msgid "Interrupt ID Bit #2. On the 8250/16450 UART, this bit is zero."
-msgstr ""
+msgstr "Bit de ID de interrupción # 2. En el UART 8250/16450, este bit es cero."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1465
 msgid "Interrupt ID Bit #1"
-msgstr ""
+msgstr "Bit de ID de interrupción # 1"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1470
@@ -2178,56 +2842,66 @@ msgid ""
 "current interrupt must be resolved before any new interrupts will be "
 "generated. (This is a limitation of the PC architecture.)"
 msgstr ""
+"Bit de ID de interrupción # 0.Estos tres bits se combinan para informar la "
+"categoría de evento que causó la interrupción que está en curso. Estas "
+"categorías tienen prioridades, por lo que si ocurren varias categorías de "
+"eventos al mismo tiempo, la UART informará primero los eventos más "
+"importantes y el anfitrión debe resolver los eventos en el orden en que se "
+"informan. Todos los eventos que causaron la interrupción actual deben "
+"resolverse antes de que se generen nuevas interrupciones. (Esta es una "
+"limitación de la arquitectura de la PC.)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1488
 msgid "Priority"
-msgstr ""
+msgstr "Prioridad"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1496
 msgid "First"
-msgstr ""
+msgstr "Primero"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1497
 msgid "Received Error (OE, PE, BI, or FE)"
-msgstr ""
+msgstr "Error recibido (OE, PE, BI o FE)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1505 article.translate.xml:1513
 msgid "Second"
-msgstr ""
+msgstr "Segundo"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1506
 msgid "Received Data Available"
-msgstr ""
+msgstr "Datos recibidos disponibles"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1514
 msgid "Trigger level identification (Stale data in receive buffer)"
 msgstr ""
+"Identificación del nivel de activación (datos obsoletos en el búfer de "
+"recepción)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1522
 msgid "Third"
-msgstr ""
+msgstr "Tercero"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1523
 msgid "Transmitter has room for more words (THRE)"
-msgstr ""
+msgstr "El transmisor tiene espacio para más palabras (TRES)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1531
 msgid "Fourth"
-msgstr ""
+msgstr "Cuarto"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1532
 msgid "Modem Status Change (-CTS, -DSR, -RI, or -DCD)"
-msgstr ""
+msgstr "Cambio de estado del módem (-CTS, -DSR, -RI o -DCD)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1538
@@ -2235,23 +2909,26 @@ msgid ""
 "Interrupt Pending Bit. If this bit is set to \"0\", then at least one "
 "interrupt is pending."
 msgstr ""
+"Interrumpir bit pendiente. Si este bit se establece en \"0\", al menos una "
+"interrupción está pendiente."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1547
+#, fuzzy
 msgid "+0x03"
-msgstr ""
+msgstr "+0x03"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1548 article.translate.xml:1678
 #: article.translate.xml:1752 article.translate.xml:1833
 #: article.translate.xml:1906
 msgid "write/read"
-msgstr ""
+msgstr "escribe/Lee"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1561
 msgid "Line Control Register (LCR)"
-msgstr ""
+msgstr "Registro de control de línea (LCR)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1567
@@ -2262,6 +2939,12 @@ msgid ""
 "Registers. Setting this bit, loading the Divisor Registers, and clearing "
 "DLAB should be done with interrupts disabled."
 msgstr ""
+"Bit de acceso de pestillo de divisor (DLAB). Cuando se establece, el acceso "
+"al registro de transmisión / recepción de datos (THR / RBR) y al registro de "
+"habilitación de interrupciones (IER) está deshabilitado. Cualquier acceso a "
+"estos puertos ahora se redirige a los registros de bloqueo del divisor. El "
+"establecimiento de este bit, la carga de los registros de divisores y el "
+"borrado de DLAB deben realizarse con las interrupciones desactivadas."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1579
@@ -2270,6 +2953,9 @@ msgid ""
 "Spacing until this bit is set to \"0\". This overrides any bits of "
 "characters that are being transmitted."
 msgstr ""
+"Establecer descanso. Cuando se establece en \"1\", el transmisor comienza a "
+"transmitir espaciado continuo hasta que este bit se establece en \"0\". Esto "
+"anula los bits de caracteres que se transmiten."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1588
@@ -2277,6 +2963,8 @@ msgid ""
 "Stick Parity. When parity is enabled, setting this bit causes parity to "
 "always be \"1\" or \"0\", based on the value of Bit 4."
 msgstr ""
+"Stick Parity. Cuando la paridad está habilitada, establecer este bit hace "
+"que la paridad sea siempre \"1\" o \"0\", según el valor del Bit 4."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1595
@@ -2285,6 +2973,9 @@ msgid ""
 "this bit causes even parity to be transmitted and expected. Otherwise, odd "
 "parity is used."
 msgstr ""
+"Selección de paridad uniforme (EPS). Cuando la paridad está habilitada y el "
+"Bit 5 es \"0\", la configuración de este bit hace que se transmita y espere "
+"una paridad uniforme. De lo contrario, se utiliza la paridad impar."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1603
@@ -2293,6 +2984,9 @@ msgid ""
 "last bit of the data and the Stop Bit. The UART will also expect parity to "
 "be present in the received data."
 msgstr ""
+"Habilitación de paridad (PEN). Cuando se establece en \"1\", se inserta un "
+"bit de paridad entre el último bit de los datos y el bit de parada. El UART "
+"también esperará que haya paridad en los datos recibidos."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1612
@@ -2302,6 +2996,11 @@ msgid ""
 "data words, 2 Stop Bits are transmitted and expected. When this bit is set "
 "to \"0\", one Stop Bit is used on each data word."
 msgstr ""
+"Número de bits de parada (STB). Si se establece en \"1\" y se utilizan "
+"palabras de datos de 5 bits, se transmiten 1,5 bits de parada y se esperan "
+"en cada palabra de datos. Para palabras de datos de 6, 7 y 8 bits, se "
+"transmiten y esperan 2 bits de parada. Cuando este bit se establece en \"0\""
+", se utiliza un bit de parada en cada palabra de datos."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1622
