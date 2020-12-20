@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:10-0300\n"
-"PO-Revision-Date: 2020-12-19 16:05+0000\n"
+"PO-Revision-Date: 2020-12-20 19:05+0000\n"
 "Last-Translator: Aaron H Farías Martinez <timido@ubuntu.com>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/boooks_arch-handbook/es/>\n"
@@ -10816,17 +10816,18 @@ msgstr "<parameter>src</parameter>"
 #. (itstool) path: row/entry
 #: book.translate.xml:6561 book.translate.xml:6610 book.translate.xml:6659
 msgid "Source label"
-msgstr ""
+msgstr "Etiqueta de origen"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6565 book.translate.xml:6614 book.translate.xml:6663
+#, fuzzy
 msgid "<parameter>dest</parameter>"
-msgstr ""
+msgstr "<parameter>dest</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6566 book.translate.xml:6615 book.translate.xml:6664
 msgid "Destination label"
-msgstr ""
+msgstr "Etiqueta de destino"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6572 book.translate.xml:6621 book.translate.xml:6670
@@ -10834,40 +10835,54 @@ msgid ""
 "Copy the label information in <parameter>src</parameter> into "
 "<parameter>dest</parameter>."
 msgstr ""
+"Copie la información de la etiqueta en <parameter>src</parameter> dentro "
+"<parameter>dest</parameter>."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6577
+#, fuzzy
 msgid "<function>mpo_copy_pipe_label</function>"
-msgstr ""
+msgstr "<function>mpo_copy_pipe_label</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:6580
+#, fuzzy
 msgid ""
 "<funcdef>void <function>mpo_copy_pipe_label</function></funcdef> "
 "<paramdef>struct label *<parameter>src</parameter></paramdef> "
 "<paramdef>struct label *<parameter>dest</parameter></paramdef>"
 msgstr ""
+"<funcdef>void <function>mpo_copy_pipe_label</function></funcdef> "
+"<paramdef>struct label *<parameter>src</parameter></paramdef> "
+"<paramdef>struct label *<parameter>dest</parameter></paramdef>"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6626
+#, fuzzy
 msgid "<function>mpo_copy_vnode_label</function>"
-msgstr ""
+msgstr "<function>mpo_copy_vnode_label</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:6629
+#, fuzzy
 msgid ""
 "<funcdef>void <function>mpo_copy_vnode_label</function></funcdef> "
 "<paramdef>struct label *<parameter>src</parameter></paramdef> "
 "<paramdef>struct label *<parameter>dest</parameter></paramdef>"
 msgstr ""
+"<funcdef>void <function>mpo_copy_vnode_label</function></funcdef> "
+"<paramdef>struct label *<parameter>src</parameter></paramdef> "
+"<paramdef>struct label *<parameter>dest</parameter></paramdef>"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6675
+#, fuzzy
 msgid "<function>mpo_externalize_cred_label</function>"
-msgstr ""
+msgstr "<function>mpo_externalize_cred_label</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:6678
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_externalize_cred_label</function></funcdef> "
 "<paramdef>struct label *<parameter>label</parameter></paramdef> "
@@ -10875,46 +10890,55 @@ msgid ""
 "<paramdef>struct sbuf *<parameter>sb</parameter></paramdef> <paramdef>int "
 "<parameter>*claimed</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_externalize_cred_label</function></funcdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef> "
+"<paramdef>char *<parameter>element_name</parameter></paramdef> "
+"<paramdef>struct sbuf *<parameter>sb</parameter></paramdef> <paramdef>int "
+"<parameter>*claimed</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6711 book.translate.xml:6788 book.translate.xml:6865
 #: book.translate.xml:6942 book.translate.xml:7018 book.translate.xml:7095
 msgid "Label to be externalized"
-msgstr ""
+msgstr "Etiqueta a externalizar"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6715 book.translate.xml:6792 book.translate.xml:6869
 #: book.translate.xml:6946 book.translate.xml:7022 book.translate.xml:7099
 #: book.translate.xml:7176 book.translate.xml:7251 book.translate.xml:7326
 #: book.translate.xml:7401 book.translate.xml:7476
+#, fuzzy
 msgid "<parameter>element_name</parameter>"
-msgstr ""
+msgstr "<parameter>element_name</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6716 book.translate.xml:6793 book.translate.xml:6870
 #: book.translate.xml:6947 book.translate.xml:7023 book.translate.xml:7100
 msgid "Name of the policy whose label should be externalized"
-msgstr ""
+msgstr "Nombre de la política cuya etiqueta se debe externalizar"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6720 book.translate.xml:6797 book.translate.xml:6874
 #: book.translate.xml:6951 book.translate.xml:7027 book.translate.xml:7104
+#, fuzzy
 msgid "<parameter>sb</parameter>"
-msgstr ""
+msgstr "<parameter>sb</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6721 book.translate.xml:6798 book.translate.xml:6875
 #: book.translate.xml:6952 book.translate.xml:7028 book.translate.xml:7105
 msgid "String buffer to be filled with a text representation of label"
 msgstr ""
+"Búfer de cadenas para rellenar con una representación de texto de la etiqueta"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6726 book.translate.xml:6803 book.translate.xml:6880
 #: book.translate.xml:6957 book.translate.xml:7033 book.translate.xml:7110
 #: book.translate.xml:7186 book.translate.xml:7261 book.translate.xml:7336
 #: book.translate.xml:7411 book.translate.xml:7486
+#, fuzzy
 msgid "<parameter>claimed</parameter>"
-msgstr ""
+msgstr "<parameter>claimed</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6727 book.translate.xml:6804 book.translate.xml:6881
@@ -10923,6 +10947,8 @@ msgid ""
 "Should be incremented when <parameter>element_data</parameter> can be filled "
 "in."
 msgstr ""
+"Debería incrementarse cuando <parameter>element_data</parameter> se puede "
+"completar."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6736 book.translate.xml:6813 book.translate.xml:6890
@@ -10940,6 +10966,19 @@ msgid ""
 "<parameter>element_data</parameter>, <varname>*claimed</varname> should be "
 "incremented."
 msgstr ""
+"Producir una etiqueta externalizada basada en la estructura de etiqueta "
+"pasada. Una etiqueta externalizada consiste en una representación de texto "
+"del contenido de la etiqueta que se puede utilizar con aplicaciones de "
+"usuario y leer por el usuario. Actualmente, todas las políticas' "
+"<function>exteriorizar</function>se llamarán los puntos de entrada, por lo "
+"que la implementación debe verificar el contenido de "
+"<parameter>element_name</parameter> antes de intentar completar "
+"<parameter>sb</parameter>. Si <parameter>element_name</parameter> no "
+"coincide con el nombre de su póliza, simplemente devuélvalo <returnvalue>0</"
+"returnvalue>. Solo devuelve un valor distinto de cero si se produce un error "
+"al externalizar los datos de la etiqueta. Una vez que la política se "
+"completa <parameter>element_data</parameter>, <varname>*reclamado</varname> "
+"Debe ser incrementado."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6752
@@ -11149,10 +11188,21 @@ msgid ""
 "reassembly. A typical labeled object will have the following life cycle of "
 "entry points:"
 msgstr ""
+"El marco MAC utiliza esta clase de puntos de entrada para permitir que las "
+"políticas mantengan la información de la etiqueta en los objetos del kernel. "
+"Para cada objeto de núcleo etiquetado de interés para una política MAC, se "
+"pueden registrar puntos de entrada para eventos relevantes del ciclo de "
+"vida. Todos los objetos implementan ganchos de inicialización, creación y "
+"destrucción. Algunos objetos también implementarán el reetiquetado, "
+"permitiendo que los procesos de usuario cambien las etiquetas de los "
+"objetos. Algunos objetos también implementarán eventos específicos del "
+"objeto, como eventos de etiqueta asociados con el reensamblaje de IP. Un "
+"objeto etiquetado típico tendrá el siguiente ciclo de vida de puntos de "
+"entrada:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:7526
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "Label initialization          o\n"
 "(object-specific wait)         \\\n"
@@ -11164,6 +11214,15 @@ msgid ""
 "                                         \\\n"
 "Label destruction                         o"
 msgstr ""
+"Label initialization          o\n"
+"(object-specific wait)         \\\n"
+"Label creation                  o\n"
+"                                 \\\n"
+"Relabel events,                   o--&lt;--.\n"
+"Various object-specific,          |     |\n"
+"Access control events             ~--&gt;--o\n"
+"                                         \\\n"
+"Label destruction                         o"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7536
@@ -11173,6 +11232,11 @@ msgid ""
 "allocated to a policy will be zeroed by default, so some policies may not "
 "need to perform initialization."
 msgstr ""
+"La inicialización de etiquetas permite que las políticas asignen memoria y "
+"establezcan valores iniciales para etiquetas sin contexto para el uso del "
+"objeto. La ranura de etiqueta asignada a una política se pondrá a cero de "
+"forma predeterminada, por lo que es posible que algunas políticas no "
+"necesiten realizar la inicialización."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7542
@@ -11190,6 +11254,20 @@ msgid ""
 "kernel; in addition, creation calls are not permitted to fail so a failure "
 "to allocate memory cannot be reported."
 msgstr ""
+"La creación de etiquetas ocurre cuando la estructura del kernel está "
+"asociada con un objeto del kernel real. Por ejemplo, los Mbufs pueden "
+"asignarse y permanecer sin usar en un grupo hasta que sean necesarios. La "
+"asignación de mbuf hace que tenga lugar la inicialización de la etiqueta en "
+"el mbuf, pero la creación de mbuf ocurre cuando el mbuf está asociado con un "
+"datagrama. Normalmente, se proporcionará contexto para un evento de "
+"creación, incluidas las circunstancias de la creación y las etiquetas de "
+"otros objetos relevantes en el proceso de creación. Por ejemplo, cuando se "
+"crea un mbuf a partir de un socket, el socket y su etiqueta se presentarán a "
+"las políticas registradas además del nuevo mbuf y su etiqueta. Se "
+"desaconseja la asignación de memoria en los eventos de creación, ya que "
+"puede ocurrir en puertos del kernel sensibles al rendimiento; Además, no se "
+"permite que fallen las llamadas de creación, por lo que no se puede informar "
+"de una falla en la asignación de memoria."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7558
@@ -11201,11 +11279,20 @@ msgid ""
 "<symbol>MAC_UPDATE_IPQ</symbol> entry point as a result of the acceptance of "
 "an additional mbuf to that queue."
 msgstr ""
+"Los eventos específicos de objetos generalmente no se incluyen en las otras "
+"clases amplias de eventos de etiqueta, pero generalmente brindan la "
+"oportunidad de modificar o actualizar la etiqueta de un objeto en función de "
+"un contexto adicional. Por ejemplo, la etiqueta en una cola de reensamblado "
+"de fragmentos de IP puede actualizarse durante la <symbol>MAC_UPDATE_IPQ</"
+"symbol> punto de entrada como resultado de la aceptación de un mbuf "
+"adicional a esa cola."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7566
 msgid "Access control events are discussed in detail in the following section."
 msgstr ""
+"Los eventos de control de acceso se analizan en detalle en la siguiente "
+"sección."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7569
@@ -11214,6 +11301,10 @@ msgid ""
 "with a label during its association with an object so that the kernel data "
 "structures supporting the object may be reused or released."
 msgstr ""
+"La destrucción de etiquetas permite que las políticas liberen el "
+"almacenamiento o el estado asociado con una etiqueta durante su asociación "
+"con un objeto, de modo que las estructuras de datos del núcleo que soportan "
+"el objeto se puedan reutilizar o liberar."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7574
@@ -11225,19 +11316,28 @@ msgid ""
 "<symbol>MAC_INTERNALIZE</symbol>, which accepts a user label to be converted "
 "to an in-kernel representation."
 msgstr ""
+"Además de las etiquetas asociadas con objetos específicos del kernel, existe "
+"una clase adicional de etiquetas: etiquetas temporales. Estas etiquetas se "
+"utilizan para almacenar información actualizada enviada por procesos de "
+"usuario. Estas etiquetas se inicializan y destruyen como con otros tipos de "
+"etiquetas, pero el evento de creación es <symbol>MAC_INTERNALIZE</symbol>, "
+"que acepta una etiqueta de usuario para convertirla en una representación en "
+"el kernel."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:7583
 msgid "File System Object Labeling Event Operations"
-msgstr ""
+msgstr "Operaciones de eventos de etiquetado de objetos del sistema de archivos"
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:7586
+#, fuzzy
 msgid "<function>mpo_associate_vnode_devfs</function>"
-msgstr ""
+msgstr "<function>mpo_associate_vnode_devfs</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:7589
+#, fuzzy
 msgid ""
 "<funcdef>void <function>mpo_associate_vnode_devfs</function></funcdef> "
 "<paramdef>struct mount *<parameter>mp</parameter></paramdef> "
@@ -11247,42 +11347,54 @@ msgid ""
 "<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
 "<paramdef>struct label *<parameter>vlabel</parameter></paramdef>"
 msgstr ""
+"<funcdef>void <function>mpo_associate_vnode_devfs</function></funcdef> "
+"<paramdef>struct mount *<parameter>mp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>fslabel</parameter></paramdef> "
+"<paramdef>struct devfs_dirent *<parameter>de</parameter></paramdef> "
+"<paramdef>struct label *<parameter>delabel</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>vlabel</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7626 book.translate.xml:7705 book.translate.xml:7775
 #: book.translate.xml:7972 book.translate.xml:8144 book.translate.xml:11699
+#, fuzzy
 msgid "<parameter>mp</parameter>"
-msgstr ""
+msgstr "<parameter>mp</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7627 book.translate.xml:7973
 msgid "Devfs mount point"
-msgstr ""
+msgstr "Punto de montaje de Devfs"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7632
 msgid "Devfs file system label (<varname>mp-&gt;mnt_fslabel</varname>)"
 msgstr ""
+"Etiqueta del sistema de archivos devfs "
+"(<varname>mp-&gt;mnt_fslabel</varname>)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7637 book.translate.xml:7988
+#, fuzzy
 msgid "<parameter>de</parameter>"
-msgstr ""
+msgstr "<parameter>de</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7638
 msgid "Devfs directory entry"
-msgstr ""
+msgstr "Entrada de directorio devfs"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7642 book.translate.xml:7993
+#, fuzzy
 msgid "<parameter>delabel</parameter>"
-msgstr ""
+msgstr "<parameter>delabel</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7643
 msgid "Policy label associated with <parameter>de</parameter>"
-msgstr ""
+msgstr "Etiqueta de política asociada con <parameter>de</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7648 book.translate.xml:7715 book.translate.xml:7785
@@ -11297,20 +11409,22 @@ msgstr ""
 #: book.translate.xml:13359 book.translate.xml:13437 book.translate.xml:13523
 #: book.translate.xml:13591 book.translate.xml:13660 book.translate.xml:13732
 #: book.translate.xml:13920 book.translate.xml:14202 book.translate.xml:14393
+#, fuzzy
 msgid "<parameter>vp</parameter>"
-msgstr ""
+msgstr "<parameter>vp</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7649
 msgid "vnode associated with <parameter>de</parameter>"
-msgstr ""
+msgstr "vnode asociado con <parameter>de</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7654 book.translate.xml:7720 book.translate.xml:7790
 #: book.translate.xml:8081 book.translate.xml:8331 book.translate.xml:10588
 #: book.translate.xml:14207 book.translate.xml:14398
+#, fuzzy
 msgid "<parameter>vlabel</parameter>"
-msgstr ""
+msgstr "<parameter>vlabel</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7655 book.translate.xml:7721 book.translate.xml:7791
@@ -11318,7 +11432,7 @@ msgstr ""
 #: book.translate.xml:12563 book.translate.xml:12752 book.translate.xml:12826
 #: book.translate.xml:12908
 msgid "Policy label associated with <parameter>vp</parameter>"
-msgstr ""
+msgstr "Etiqueta de política asociada con <parameter>vp</parameter>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:7662
@@ -11327,14 +11441,19 @@ msgid ""
 "vnode based on the devfs directory entry passed in <parameter>de</parameter> "
 "and its label."
 msgstr ""
+"Rellena la etiqueta (<parameter>vlabel</parameter>) para un vnode devfs "
+"recién creado basado en la entrada del directorio devfs pasada en "
+"<parameter>de</parameter> y su etiqueta."
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:7669
+#, fuzzy
 msgid "<function>mpo_associate_vnode_extattr</function>"
-msgstr ""
+msgstr "<function>mpo_associate_vnode_extattr</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:7672
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_associate_vnode_extattr</function></funcdef> "
 "<paramdef>struct mount *<parameter>mp</parameter></paramdef> "
@@ -11342,21 +11461,26 @@ msgid ""
 "<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
 "<paramdef>struct label *<parameter>vlabel</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_associate_vnode_extattr</function></funcdef> "
+"<paramdef>struct mount *<parameter>mp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>fslabel</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>vlabel</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7706 book.translate.xml:7776 book.translate.xml:8056
 msgid "File system mount point"
-msgstr ""
+msgstr "Punto de montaje del sistema de archivos"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7711 book.translate.xml:7781 book.translate.xml:8061
 msgid "File system label"
-msgstr ""
+msgstr "Etiqueta del sistema de archivos"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7716 book.translate.xml:7786
 msgid "Vnode to label"
-msgstr ""
+msgstr "Vnode para etiquetar"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:7728
@@ -11368,14 +11492,22 @@ msgid ""
 "parameter>. In the event of an error, an appropriate value for "
 "<varname>errno</varname> should be returned."
 msgstr ""
+"Intente recuperar la etiqueta para <parameter>vp</parameter> de los "
+"atributos extendidos del sistema de archivos. Tras el éxito, el valor "
+"<literal>0</literal> es regresado. Si no se admite la recuperación de "
+"atributos extendidos, una alternativa aceptada es copiar <parameter>fslabel</"
+"parameter> into <parameter>vlabel</parameter>. En caso de error, un valor "
+"apropiado para <varname>errno</varname> debe ser devuelto."
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:7740
+#, fuzzy
 msgid "<function>mpo_associate_vnode_singlelabel</function>"
-msgstr ""
+msgstr "<function>mpo_associate_vnode_singlelabel</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:7743
+#, fuzzy
 msgid ""
 "<funcdef>void <function>mpo_associate_vnode_singlelabel</function></funcdef> "
 "<paramdef>struct mount *<parameter>mp</parameter></paramdef> "
@@ -11383,6 +11515,11 @@ msgid ""
 "<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
 "<paramdef>struct label *<parameter>vlabel</parameter></paramdef>"
 msgstr ""
+"<funcdef>void <function>mpo_associate_vnode_singlelabel</function></funcdef> "
+"<paramdef>struct mount *<parameter>mp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>fslabel</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>vlabel</parameter></paramdef>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:7798
@@ -11391,45 +11528,57 @@ msgid ""
 "label for <parameter>vp</parameter> based on the file system label, "
 "<parameter>fslabel</parameter>."
 msgstr ""
+"En sistemas de archivos que no son de etiquetas múltiples, este punto de "
+"entrada se llama para establecer la etiqueta de política para <parameter>vp</"
+"parameter>basado en la etiqueta del sistema de archivos , "
+"<parameter>fslabel</parameter>."
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:7805
+#, fuzzy
 msgid "<function>mpo_create_devfs_device</function>"
-msgstr ""
+msgstr "<function>mpo_create_devfs_device</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:7808
+#, fuzzy
 msgid ""
 "<funcdef>void <function>mpo_create_devfs_device</function></funcdef> "
 "<paramdef>dev_t <parameter>dev</parameter></paramdef> <paramdef>struct "
 "devfs_dirent *<parameter>devfs_dirent</parameter></paramdef> "
 "<paramdef>struct label *<parameter>label</parameter></paramdef>"
 msgstr ""
+"<funcdef>void <function>mpo_create_devfs_device</function></funcdef> "
+"<paramdef>dev_t <parameter>dev</parameter></paramdef> <paramdef>struct "
+"devfs_dirent *<parameter>devfs_dirent</parameter></paramdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7838
+#, fuzzy
 msgid "<parameter>dev</parameter>"
-msgstr ""
+msgstr "<parameter>dev</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7839
 msgid "Device corresponding with <parameter>devfs_dirent</parameter>"
-msgstr ""
+msgstr "Dispositivo correspondiente con <parameter>devfs_dirent</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7844 book.translate.xml:7911 book.translate.xml:8387
+#, fuzzy
 msgid "<parameter>devfs_dirent</parameter>"
-msgstr ""
+msgstr "<parameter>devfs_dirent</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7845
 msgid "Devfs directory entry to be labeled."
-msgstr ""
+msgstr "Se etiquetará la entrada del directorio devfs."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7850
 msgid "Label for <parameter>devfs_dirent</parameter> to be filled in."
-msgstr ""
+msgstr "Etiqueta para <parameter>devfs_dirent</parameter> para ser llenado."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:7857
@@ -11438,14 +11587,20 @@ msgid ""
 "This call will be made when the device file system is mounted, regenerated, "
 "or a new device is made available."
 msgstr ""
+"Complete la etiqueta en un devfs_dirent que se está creando para el "
+"dispositivo pasado. Esta llamada se realizará cuando el sistema de archivos "
+"del dispositivo esté montado, regenerado o cuando haya un nuevo dispositivo "
+"disponible."
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:7864
+#, fuzzy
 msgid "<function>mpo_create_devfs_directory</function>"
-msgstr ""
+msgstr "<function>mpo_create_devfs_directory</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:7867
+#, fuzzy
 msgid ""
 "<funcdef>void <function>mpo_create_devfs_directory</function></funcdef> "
 "<paramdef>char *<parameter>dirname</parameter></paramdef> <paramdef>int "
@@ -11453,31 +11608,38 @@ msgid ""
 "*<parameter>devfs_dirent</parameter></paramdef> <paramdef>struct label "
 "*<parameter>label</parameter></paramdef>"
 msgstr ""
+"<funcdef>void <function>mpo_create_devfs_directory</function></funcdef> "
+"<paramdef>char *<parameter>dirname</parameter></paramdef> <paramdef>int "
+"<parameter>dirnamelen</parameter></paramdef> <paramdef>struct devfs_dirent "
+"*<parameter>devfs_dirent</parameter></paramdef> <paramdef>struct label "
+"*<parameter>label</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7900
+#, fuzzy
 msgid "<parameter>dirname</parameter>"
-msgstr ""
+msgstr "<parameter>dirname</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7901
 msgid "Name of directory being created"
-msgstr ""
+msgstr "Nombre del directorio que se está creando"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7905 book.translate.xml:14459
+#, fuzzy
 msgid "<parameter>namelen</parameter>"
-msgstr ""
+msgstr "<parameter>namelen</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7906
 msgid "Length of string <parameter>dirname</parameter>"
-msgstr ""
+msgstr "Longitud de la cuerda <parameter>dirname</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7912
 msgid "Devfs directory entry for directory being created."
-msgstr ""
+msgstr "Entrada de directorio devfs para el directorio que se está creando."
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:7919
@@ -11486,14 +11648,20 @@ msgid ""
 "This call will be made when the device file system is mounted, regenerated, "
 "or a new device requiring a specific directory hierarchy is made available."
 msgstr ""
+"Complete la etiqueta en un devfs_dirent que se está creando para el "
+"directorio pasado. Esta llamada se realizará cuando el sistema de archivos "
+"del dispositivo esté montado, regenerado o cuando esté disponible un nuevo "
+"dispositivo que requiera una jerarquía de directorios específica."
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:7927
+#, fuzzy
 msgid "<function>mpo_create_devfs_symlink</function>"
-msgstr ""
+msgstr "<function>mpo_create_devfs_symlink</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:7930
+#, fuzzy
 msgid ""
 "<funcdef>void <function>mpo_create_devfs_symlink</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
@@ -11503,6 +11671,13 @@ msgid ""
 "<paramdef>struct devfs_dirent *<parameter>de</parameter></paramdef> "
 "<paramdef>struct label *<parameter>delabel</parameter></paramdef>"
 msgstr ""
+"<funcdef>void <function>mpo_create_devfs_symlink</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct mount *<parameter>mp</parameter></paramdef> "
+"<paramdef>struct devfs_dirent *<parameter>dd</parameter></paramdef> "
+"<paramdef>struct label *<parameter>ddlabel</parameter></paramdef> "
+"<paramdef>struct devfs_dirent *<parameter>de</parameter></paramdef> "
+"<paramdef>struct label *<parameter>delabel</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7967 book.translate.xml:8050 book.translate.xml:8139
@@ -11531,8 +11706,9 @@ msgstr ""
 #: book.translate.xml:14059 book.translate.xml:14132 book.translate.xml:14251
 #: book.translate.xml:14294 book.translate.xml:14342 book.translate.xml:14388
 #: book.translate.xml:14449
+#, fuzzy
 msgid "<parameter>cred</parameter>"
-msgstr ""
+msgstr "<parameter>cred</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7968 book.translate.xml:8051 book.translate.xml:8140
@@ -11562,37 +11738,38 @@ msgstr ""
 #: book.translate.xml:14295 book.translate.xml:14343 book.translate.xml:14389
 #: book.translate.xml:14450
 msgid "Subject credential"
-msgstr ""
+msgstr "Credencial de sujeto"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7977
 msgid "<parameter>dd</parameter>"
-msgstr ""
+msgstr "<parameter>dd</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7978
 msgid "Link destination"
-msgstr ""
+msgstr "Destino del enlace"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7982
+#, fuzzy
 msgid "<parameter>ddlabel</parameter>"
-msgstr ""
+msgstr "<parameter>ddlabel</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7983
 msgid "Label associated with <parameter>dd</parameter>"
-msgstr ""
+msgstr "Etiqueta asociada con <parameter>dd</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7989
 msgid "Symlink entry"
-msgstr ""
+msgstr "Entrada de enlace simbólico"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7994
 msgid "Label associated with <parameter>de</parameter>"
-msgstr ""
+msgstr "Etiqueta asociada con <parameter>de</parameter>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:8001
@@ -11601,14 +11778,20 @@ msgid ""
 "<citerefentry vendor=\"current\"><refentrytitle>devfs</"
 "refentrytitle><manvolnum>5</manvolnum></citerefentry> symbolic link entry."
 msgstr ""
+"Rellena la etiqueta (<parameter>delabel</parameter>) para un recién creado "
+"<citerefentry vendor=\"current\""
+"><refentrytitle>devfs</refentrytitle><manvolnum>5</manvolnum></citerefentry> "
+"entrada de enlace simbólico."
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:8006
+#, fuzzy
 msgid "<function>mpo_create_vnode_extattr</function>"
-msgstr ""
+msgstr "<function>mpo_create_vnode_extattr</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:8009
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_create_vnode_extattr</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
@@ -11620,24 +11803,34 @@ msgid ""
 "<paramdef>struct label *<parameter>vlabel</parameter></paramdef> "
 "<paramdef>struct componentname *<parameter>cnp</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_create_vnode_extattr</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct mount *<parameter>mp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>fslabel</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>dvp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>dlabel</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>vlabel</parameter></paramdef> "
+"<paramdef>struct componentname *<parameter>cnp</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8055
 msgid "<parameter>mount</parameter>"
-msgstr ""
+msgstr "<parameter>montar</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8065 book.translate.xml:11895 book.translate.xml:11957
 #: book.translate.xml:12019 book.translate.xml:12101 book.translate.xml:12481
 #: book.translate.xml:12809 book.translate.xml:12891 book.translate.xml:13034
 #: book.translate.xml:13165
+#, fuzzy
 msgid "<parameter>dvp</parameter>"
-msgstr ""
+msgstr "<parameter>dvp</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8066 book.translate.xml:12102
 msgid "Parent directory vnode"
-msgstr ""
+msgstr "Directorio principal vnode"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8070 book.translate.xml:11900 book.translate.xml:11962
@@ -12246,6 +12439,11 @@ msgid ""
 "refentrytitle><manvolnum>2</manvolnum></citerefentry> socket, "
 "<parameter>oldsocket</parameter>."
 msgstr ""
+"Etiquetar un socket, <parameter>newsocket</parameter>, newly "
+"<citerefentry><refentrytitle>accept</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry>ed, basado en el "
+"<citerefentry><refentrytitle>listen</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> socket, <parameter>oldsocket</parameter>."
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:8679
@@ -13136,6 +13334,18 @@ msgid ""
 "otherwise matching IP fragments if policy does not permit them to be "
 "reassembled based on the label or other information."
 msgstr ""
+"Determine si un encabezado mbuf que contiene un datagrama IP "
+"(<parameter>fragment</parameter>) el fragmento coincide con la etiqueta de "
+"la cola de reensamblado del fragmento de IP pasada "
+"(<parameter>ipq</parameter>). Regreso (<returnvalue>1</returnvalue>) para "
+"una coincidencia exitosa, o (<returnvalue>0</returnvalue>) sin partido. Esta "
+"llamada se realiza cuando la pila de IP intenta encontrar una cola de "
+"reensamblado de fragmentos existente para un fragmento recién recibido; si "
+"esto falla, se puede crear una nueva cola de reensamblado de fragmentos para "
+"el fragmento. Las políticas pueden utilizar este punto de entrada para "
+"evitar el reensamblaje de fragmentos de IP que de otro modo coincidirían si "
+"la política no permite que se vuelvan a ensamblar en función de la etiqueta "
+"u otra información."
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:9756
@@ -13176,6 +13386,9 @@ msgid ""
 "on the passed update label, <parameter>newlabel</parameter>, and the passed "
 "subject credential, <parameter>cred</parameter>."
 msgstr ""
+"Actualizar la etiqueta de la interfaz de red, <parameter>ifnet</parameter>, "
+"basado en la etiqueta de actualización pasada, <parameter>newlabel</"
+"parameter>,y la credencial de sujeto aprobada, <parameter>cred</parameter>."
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:9823
@@ -13221,6 +13434,9 @@ msgid ""
 "parameter>) based on the acceptance of the passed IP fragment mbuf header "
 "(<parameter>mbuf</parameter>)."
 msgstr ""
+"Actualizar la etiqueta en una cola de reensamblaje de fragmentos de IP "
+"(<parameter>ipq</parameter>) basado en la aceptación del encabezado mbuf del "
+"fragmento IP pasado (<parameter>mbuf</parameter>)."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:9891
@@ -13276,6 +13492,12 @@ msgid ""
 "created <type>struct ucred</type>. This call should not be confused with a "
 "process forking or creation event."
 msgstr ""
+"Establezca la etiqueta de una credencial de sujeto recién creada a partir de "
+"la credencial de sujeto aprobada. Esta llamada se realizará cuando "
+"<citerefentry><refentrytitle>crcopy</refentrytitle><manvolnum>9</manvolnum></"
+"citerefentry>se invoca en un recién creado <type>struct ucred</type>. Esta "
+"llamada no debe confundirse con un proceso de bifurcación o un evento de "
+"creación."
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:9946
@@ -13324,7 +13546,7 @@ msgstr "Nueva credencial de sujeto para ser etiquetada"
 #. (itstool) path: row/entry
 #: book.translate.xml:9994 book.translate.xml:10067
 msgid "File to execute"
-msgstr ""
+msgstr "Archivo para ejecutar"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:10006
@@ -13341,20 +13563,38 @@ msgid ""
 "unimplemented if they implement <function>mpo_create_cred</function>, even "
 "if they do not implement <function>mpo_execve_will_transition</function>."
 msgstr ""
+"Actualizar la etiqueta de una credencial de sujeto recién creada "
+"(<parameter>new</parameter>) de la credencial de sujeto existente "
+"aprobada(<parameter>old</parameter>) basado en una transición de etiqueta "
+"causada por la ejecución del vnode pasado(<parameter>vp</parameter>). Esta "
+"llamada ocurre cuando un proceso ejecuta el vnode pasado y una de las "
+"políticas devuelve un éxito de la <function>mpo_execve_will_transition</"
+"function> punto de entrada. Las políticas pueden optar por implementar esta "
+"llamada simplemente invocando <function>mpo_create_cred</function> y pasar "
+"las dos credenciales de sujeto para no implementar un evento de transición. "
+"Las políticas no deben dejar este punto de entrada sin implementar si "
+"implementan <function>mpo_create_cred</function>,Incluso si ellos no "
+"implementan <function>mpo_execve_will_transition</function>."
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:10025
+#, fuzzy
 msgid "<function>mpo_execve_will_transition</function>"
-msgstr ""
+msgstr "<function>mpo_execve_will_transition</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:10028
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_execve_will_transition</function></funcdef> "
 "<paramdef>struct ucred *<parameter>old</parameter></paramdef> "
 "<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
 "<paramdef>struct label *<parameter>vnodelabel</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_execve_will_transition</function></funcdef> "
+"<paramdef>struct ucred *<parameter>old</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>vnodelabel</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10060
@@ -13362,6 +13602,8 @@ msgid ""
 "Subject credential prior to <citerefentry><refentrytitle>execve</"
 "refentrytitle><manvolnum>2</manvolnum></citerefentry>"
 msgstr ""
+"Credencial de sujeto antes de <citerefentry><refentrytitle>execve</refentryti"
+"tle><manvolnum>2</manvolnum></citerefentry>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:10079
@@ -13374,23 +13616,35 @@ msgid ""
 "an unexpected invocation of <function>mpo_execve_transition</function>, as "
 "that call may happen as a result of another policy requesting a transition."
 msgstr ""
+"Determine si la política querrá realizar un evento de transición como "
+"resultado de la ejecución del vnode pasado por la credencial de sujeto "
+"pasada. Regreso <returnvalue>1</returnvalue>si se requiere una transición, "
+"<returnvalue>0</returnvalue> Si no. Incluso si una póliza regresa "
+"<returnvalue>0</returnvalue>, debe comportarse correctamente en presencia de "
+"una invocación inesperada de <function>mpo_execve_transition</function>, ya "
+"que esa llamada puede ocurrir como resultado de otra política que solicite "
+"una transición."
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:10092
+#, fuzzy
 msgid "<function>mpo_create_proc0</function>"
-msgstr ""
+msgstr "<function>mpo_create_proc0</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:10095
+#, fuzzy
 msgid ""
 "<funcdef>void <function>mpo_create_proc0</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef>"
 msgstr ""
+"<funcdef>void <function>mpo_create_proc0</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10123 book.translate.xml:10165
 msgid "Subject credential to be filled in"
-msgstr ""
+msgstr "Credencial de sujeto a completar"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:10129
@@ -13398,52 +13652,67 @@ msgid ""
 "Create the subject credential of process 0, the parent of all kernel "
 "processes."
 msgstr ""
+"Cree la credencial de sujeto del proceso 0, el padre de todos los procesos "
+"del kernel."
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:10134
+#, fuzzy
 msgid "<function>mpo_create_proc1</function>"
-msgstr ""
+msgstr "<function>mpo_create_proc1</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:10137
+#, fuzzy
 msgid ""
 "<funcdef>void <function>mpo_create_proc1</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef>"
 msgstr ""
+"<funcdef>void <function>mpo_create_proc1</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:10171
 msgid ""
 "Create the subject credential of process 1, the parent of all user processes."
 msgstr ""
+"Cree la credencial de sujeto del proceso 1, el padre de todos los procesos "
+"de usuario."
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:10176
+#, fuzzy
 msgid "<function>mpo_relabel_cred</function>"
-msgstr ""
+msgstr "<function>mpo_relabel_cred</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:10179
+#, fuzzy
 msgid ""
 "<funcdef>void <function>mpo_relabel_cred</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
 "<paramdef>struct label *<parameter>newlabel</parameter></paramdef>"
 msgstr ""
+"<funcdef>void <function>mpo_relabel_cred</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct label *<parameter>newlabel</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10214
 msgid "Label update to apply to <parameter>cred</parameter>"
-msgstr ""
+msgstr "Actualización de etiqueta para aplicar <parameter>cred</parameter>"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:10221
 msgid "Update the label on a subject credential from the passed update label."
 msgstr ""
+"Actualice la etiqueta en una credencial de sujeto de la etiqueta de "
+"actualización pasada."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:10229
 msgid "Access Control Checks"
-msgstr ""
+msgstr "Verificaciones de control de acceso"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10231
@@ -13463,41 +13732,62 @@ msgid ""
 "implemented by the <function>error_select()</function> function in "
 "<filename>kern_mac.c</filename>:"
 msgstr ""
+"Los puntos de entrada de control de acceso permiten que los módulos de "
+"políticas influyan en las decisiones de control de acceso tomadas por el "
+"núcleo. Generalmente, aunque no siempre, los argumentos para un punto de "
+"entrada de control de acceso incluirán una o más credenciales de "
+"autorización, información (posiblemente incluida una etiqueta) para "
+"cualquier otro objeto involucrado en la operación. Un punto de entrada de "
+"control de acceso puede devolver 0 para permitir la operación, o un "
+"<citerefentry><refentrytitle>errno</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry>valor de error. Los resultados de invocar el punto de entrada a "
+"través de varios módulos de política registrados se compondrán de la "
+"siguiente manera: si todos los módulos permiten que la operación sea "
+"exitosa, se devolverá el éxito. Si uno o los módulos devuelven una falla, se "
+"devolverá una falla. Si más de un módulo devuelve un error, el valor de "
+"errno para devolver al usuario se seleccionará utilizando la siguiente "
+"prioridad, implementada por el <function>error_select()</function> function "
+"en <filename>kern_mac.c</filename>:"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10252
 msgid "Most precedence"
-msgstr ""
+msgstr "Mayor precedencia"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10253
+#, fuzzy
 msgid "<errorcode>EDEADLK</errorcode>"
-msgstr ""
+msgstr "<errorcode>EDEADLK</errorcode>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10258
+#, fuzzy
 msgid "<errorcode>EINVAL</errorcode>"
-msgstr ""
+msgstr "<errorcode>EINVAL</errorcode>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10263
+#, fuzzy
 msgid "<errorcode>ESRCH</errorcode>"
-msgstr ""
+msgstr "<errorcode>ESRCH</errorcode>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10268
+#, fuzzy
 msgid "EACCES"
-msgstr ""
+msgstr "EACCES"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10272
 msgid "Least precedence"
-msgstr ""
+msgstr "Precedencia mínima"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10273
+#, fuzzy
 msgid "EPERM"
-msgstr ""
+msgstr "EPERM"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10279
@@ -13508,14 +13798,21 @@ msgid ""
 "following order: kernel failures, invalid arguments, object not present, "
 "access not permitted, other."
 msgstr ""
+"Si ninguno de los valores de error devueltos por todos los módulos se "
+"enumeran en la tabla de precedencia, se devolverá un valor seleccionado "
+"arbitrariamente del conjunto. En general, las reglas dan prioridad a los "
+"errores en el siguiente orden: fallas del kernel, argumentos inválidos, "
+"objeto no presente, acceso no permitido, otros."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:10287
+#, fuzzy
 msgid "<function>mpo_check_bpfdesc_receive</function>"
-msgstr ""
+msgstr "<function>mpo_check_bpfdesc_receive</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:10290
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_bpfdesc_receive</function></funcdef> "
 "<paramdef>struct bpf_d *<parameter>bpf_d</parameter></paramdef> "
@@ -13523,21 +13820,26 @@ msgid ""
 "<paramdef>struct ifnet *<parameter>ifnet</parameter></paramdef> "
 "<paramdef>struct label *<parameter>ifnetlabel</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_bpfdesc_receive</function></funcdef> "
+"<paramdef>struct bpf_d *<parameter>bpf_d</parameter></paramdef> "
+"<paramdef>struct label *<parameter>bpflabel</parameter></paramdef> "
+"<paramdef>struct ifnet *<parameter>ifnet</parameter></paramdef> "
+"<paramdef>struct label *<parameter>ifnetlabel</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10324
 msgid "Subject; BPF descriptor"
-msgstr ""
+msgstr "Tema; Descriptor de BPF"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10329
 msgid "Policy label for <parameter>bpf_d</parameter>"
-msgstr ""
+msgstr "Etiqueta de política para <parameter>bpf_d</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10335 book.translate.xml:11454
 msgid "Object; network interface"
-msgstr ""
+msgstr "Objeto; interfaz de red"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10347
@@ -13548,18 +13850,27 @@ msgid ""
 "varname> value for failure Suggested failure: <errorcode>EACCES</errorcode> "
 "for label mismatches, <errorcode>EPERM</errorcode> for lack of privilege."
 msgstr ""
+"Determina si el marco MAC debe permitir que los datagramas de la interfaz "
+"pasada se entreguen a los búferes del descriptor BPF pasado. Regreso "
+"(<returnvalue>0</returnvalue>) para el éxito, o un <varname>errno</varname> "
+"valor por error Error sugerido: <errorcode>EACCES</errorcode> para etiquetas "
+"no coincidentes, <errorcode>EPERM</errorcode> por falta de privilegio."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:10357
+#, fuzzy
 msgid "<function>mpo_check_kenv_dump</function>"
-msgstr ""
+msgstr "<function>mpo_check_kenv_dump</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:10360
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_kenv_dump</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_kenv_dump</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10394
@@ -13568,30 +13879,38 @@ msgid ""
 "environment (see <citerefentry><refentrytitle>kenv</"
 "refentrytitle><manvolnum>2</manvolnum></citerefentry>)."
 msgstr ""
+"Determine si se debe permitir que el sujeto recupere el entorno del kernel (c"
+"onsulte<citerefentry><refentrytitle>kenv</refentrytitle><manvolnum>2</manvoln"
+"um></citerefentry>)."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:10399
+#, fuzzy
 msgid "<function>mpo_check_kenv_get</function>"
-msgstr ""
+msgstr "<function>mpo_check_kenv_get</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:10402
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_kenv_get</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
 "<paramdef>char *<parameter>name</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_kenv_get</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>char *<parameter>name</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10435 book.translate.xml:10484 book.translate.xml:10532
 #: book.translate.xml:12411 book.translate.xml:13453 book.translate.xml:14454
 msgid "<parameter>name</parameter>"
-msgstr ""
+msgstr "<parameter>nombre</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10436 book.translate.xml:10485 book.translate.xml:10533
 msgid "Kernel environment variable name"
-msgstr ""
+msgstr "Nombre de la variable de entorno del kernel"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10442
@@ -13599,19 +13918,26 @@ msgid ""
 "Determine whether the subject should be allowed to retrieve the value of the "
 "specified kernel environment variable."
 msgstr ""
+"Determine si se debe permitir que el sujeto recupere el valor de la variable "
+"de entorno del kernel especificada."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:10448
+#, fuzzy
 msgid "<function>mpo_check_kenv_set</function>"
-msgstr ""
+msgstr "<function>mpo_check_kenv_set</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:10451
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_kenv_set</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
 "<paramdef>char *<parameter>name</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_kenv_set</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>char *<parameter>name</parameter></paramdef>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10491
@@ -13619,19 +13945,26 @@ msgid ""
 "Determine whether the subject should be allowed to set the specified kernel "
 "environment variable."
 msgstr ""
+"Determine si el sujeto debe poder establecer la variable de entorno del "
+"kernel especificada."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:10496
+#, fuzzy
 msgid "<function>mpo_check_kenv_unset</function>"
-msgstr ""
+msgstr "<function>mpo_check_kenv_unset</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:10499
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_kenv_unset</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
 "<paramdef>char *<parameter>name</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_kenv_unset</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>char *<parameter>name</parameter></paramdef>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10539
@@ -13639,11 +13972,14 @@ msgid ""
 "Determine whether the subject should be allowed to unset the specified "
 "kernel environment variable."
 msgstr ""
+"Determine si al sujeto se le debe permitir desarmar la variable de entorno "
+"del kernel especificada."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:10544
+#, fuzzy
 msgid "<function>mpo_check_kld_load</function>"
-msgstr ""
+msgstr "<function>mpo_check_kld_load</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:10547
@@ -13657,12 +13993,12 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:10584
 msgid "Kernel module vnode"
-msgstr ""
+msgstr "Módulo de kernel vnode"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10589 book.translate.xml:14208 book.translate.xml:14399
 msgid "Label associated with <parameter>vp</parameter>"
-msgstr ""
+msgstr "Etiqueta asociada con <parameter>vp</parameter>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10596
@@ -13670,18 +14006,24 @@ msgid ""
 "Determine whether the subject should be allowed to load the specified module "
 "file."
 msgstr ""
+"Determine si se debe permitir que el sujeto cargue el archivo de módulo "
+"especificado."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:10601
+#, fuzzy
 msgid "<function>mpo_check_kld_stat</function>"
-msgstr ""
+msgstr "<function>mpo_check_kld_stat</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:10604
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_kld_stat</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_kld_stat</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10638
@@ -13689,32 +14031,40 @@ msgid ""
 "Determine whether the subject should be allowed to retrieve a list of loaded "
 "kernel module files and associated statistics."
 msgstr ""
+"Determine si se debe permitir que el sujeto recupere una lista de los "
+"archivos del módulo del kernel cargados y las estadísticas asociadas."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:10644
+#, fuzzy
 msgid "<function>mpo_check_kld_unload</function>"
-msgstr ""
+msgstr "<function>mpo_check_kld_unload</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:10647
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_kld_unload</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_kld_unload</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10681
 msgid ""
 "Determine whether the subject should be allowed to unload a kernel module."
-msgstr ""
+msgstr "Determine si se debe permitir al sujeto descargar un módulo del kernel."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:10686
+#, fuzzy
 msgid "<function>mpo_check_pipe_ioctl</function>"
-msgstr ""
+msgstr "<function>mpo_check_pipe_ioctl</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:10689
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_pipe_ioctl</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
@@ -13723,30 +14073,43 @@ msgid ""
 "<paramdef>unsigned long <parameter>cmd</parameter></paramdef> <paramdef>void "
 "*<parameter>data</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_pipe_ioctl</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct pipe *<parameter>pipe</parameter></paramdef> "
+"<paramdef>struct label *<parameter>pipelabel</parameter></paramdef> "
+"<paramdef>unsigned long <parameter>cmd</parameter></paramdef> <paramdef>void "
+"*<parameter>data</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10739
+#, fuzzy
 msgid "<parameter>cmd</parameter>"
-msgstr ""
+msgstr "<parameter>cmd</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10740
+#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>ioctl</refentrytitle><manvolnum>2</manvolnum></"
 "citerefentry> command"
 msgstr ""
+"<citerefentry><refentrytitle>ioctl</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> command"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10744
 msgid "<parameter>data</parameter>"
-msgstr ""
+msgstr "<parameter>datos</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10745
+#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>ioctl</refentrytitle><manvolnum>2</manvolnum></"
 "citerefentry> data"
 msgstr ""
+"<citerefentry><refentrytitle>ioctl</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> data"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10751
@@ -13755,20 +14118,29 @@ msgid ""
 "<citerefentry><refentrytitle>ioctl</refentrytitle><manvolnum>2</manvolnum></"
 "citerefentry> call."
 msgstr ""
+"Determine si se debe permitir que el sujeto realice el "
+"<citerefentry><refentrytitle>ioctl</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> llamada."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:10756
+#, fuzzy
 msgid "<function>mpo_check_pipe_poll</function>"
-msgstr ""
+msgstr "<function>mpo_check_pipe_poll</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:10759
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_pipe_poll</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
 "<paramdef>struct pipe *<parameter>pipe</parameter></paramdef> "
 "<paramdef>struct label *<parameter>pipelabel</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_pipe_poll</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct pipe *<parameter>pipe</parameter></paramdef> "
+"<paramdef>struct label *<parameter>pipelabel</parameter></paramdef>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10808
@@ -13776,20 +14148,28 @@ msgid ""
 "Determine whether the subject should be allowed to poll <parameter>pipe</"
 "parameter>."
 msgstr ""
+"Determinar si se debe permitir que el sujeto realice una encuesta "
+"<parameter>pipe</parameter>."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:10813
+#, fuzzy
 msgid "<function>mpo_check_pipe_read</function>"
-msgstr ""
+msgstr "<function>mpo_check_pipe_read</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:10816
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_pipe_read</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
 "<paramdef>struct pipe *<parameter>pipe</parameter></paramdef> "
 "<paramdef>struct label *<parameter>pipelabel</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_pipe_read</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct pipe *<parameter>pipe</parameter></paramdef> "
+"<paramdef>struct label *<parameter>pipelabel</parameter></paramdef>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10865
@@ -13797,14 +14177,18 @@ msgid ""
 "Determine whether the subject should be allowed read access to "
 "<parameter>pipe</parameter>."
 msgstr ""
+"Determine si el sujeto debe tener acceso de lectura a "
+"<parameter>pipe</parameter>."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:10870
+#, fuzzy
 msgid "<function>mpo_check_pipe_relabel</function>"
-msgstr ""
+msgstr "<function>mpo_check_pipe_relabel</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:10873
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_pipe_relabel</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
@@ -13812,11 +14196,16 @@ msgid ""
 "<paramdef>struct label *<parameter>pipelabel</parameter></paramdef> "
 "<paramdef>struct label *<parameter>newlabel</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_pipe_relabel</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct pipe *<parameter>pipe</parameter></paramdef> "
+"<paramdef>struct label *<parameter>pipelabel</parameter></paramdef> "
+"<paramdef>struct label *<parameter>newlabel</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:10923
 msgid "Label update to <parameter>pipelabel</parameter>"
-msgstr ""
+msgstr "Actualización de etiqueta a <parameter>pipelabel</parameter>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10930
@@ -13824,20 +14213,28 @@ msgid ""
 "Determine whether the subject should be allowed to relabel <parameter>pipe</"
 "parameter>."
 msgstr ""
+"Determinar si se debe permitir que el sujeto se vuelva a etiquetar "
+"<parameter>pipe</parameter>."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:10935
+#, fuzzy
 msgid "<function>mpo_check_pipe_stat</function>"
-msgstr ""
+msgstr "<function>mpo_check_pipe_stat</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:10938
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_pipe_stat</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
 "<paramdef>struct pipe *<parameter>pipe</parameter></paramdef> "
 "<paramdef>struct label *<parameter>pipelabel</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_pipe_stat</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct pipe *<parameter>pipe</parameter></paramdef> "
+"<paramdef>struct label *<parameter>pipelabel</parameter></paramdef>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10987
@@ -13845,20 +14242,28 @@ msgid ""
 "Determine whether the subject should be allowed to retrieve statistics "
 "related to <parameter>pipe</parameter>."
 msgstr ""
+"Determinar si se debe permitir al sujeto recuperar estadísticas relacionadas "
+"con <parameter>pipe</parameter>."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:10993
+#, fuzzy
 msgid "<function>mpo_check_pipe_write</function>"
-msgstr ""
+msgstr "<function>mpo_check_pipe_write</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:10996
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_pipe_write</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
 "<paramdef>struct pipe *<parameter>pipe</parameter></paramdef> "
 "<paramdef>struct label *<parameter>pipelabel</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_pipe_write</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct pipe *<parameter>pipe</parameter></paramdef> "
+"<paramdef>struct label *<parameter>pipelabel</parameter></paramdef>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11045
@@ -13866,14 +14271,18 @@ msgid ""
 "Determine whether the subject should be allowed to write to <parameter>pipe</"
 "parameter>."
 msgstr ""
+"Determinar si se debe permitir al sujeto escribir a "
+"<parameter>pipe</parameter>."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:11050
+#, fuzzy
 msgid "<function>mpo_check_socket_bind</function>"
-msgstr ""
+msgstr "<function>mpo_check_socket_bind</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:11053
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_socket_bind</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
@@ -13881,29 +14290,37 @@ msgid ""
 "<paramdef>struct label *<parameter>socketlabel</parameter></paramdef> "
 "<paramdef>struct sockaddr *<parameter>sockaddr</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_socket_bind</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct socket *<parameter>socket</parameter></paramdef> "
+"<paramdef>struct label *<parameter>socketlabel</parameter></paramdef> "
+"<paramdef>struct sockaddr *<parameter>sockaddr</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11092
 msgid "Socket to be bound"
-msgstr ""
+msgstr "Socket para estar vinculado"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11102 book.translate.xml:11164
+#, fuzzy
 msgid "<parameter>sockaddr</parameter>"
-msgstr ""
+msgstr "<parameter>sockaddr</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11103 book.translate.xml:11165
 msgid "Address of <parameter>socket</parameter>"
-msgstr ""
+msgstr "Dirección de <parameter>socket</parameter>"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:11112
+#, fuzzy
 msgid "<function>mpo_check_socket_connect</function>"
-msgstr ""
+msgstr "<function>mpo_check_socket_connect</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:11115
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_socket_connect</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
@@ -13911,11 +14328,16 @@ msgid ""
 "<paramdef>struct label *<parameter>socketlabel</parameter></paramdef> "
 "<paramdef>struct sockaddr *<parameter>sockaddr</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_socket_connect</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct socket *<parameter>socket</parameter></paramdef> "
+"<paramdef>struct label *<parameter>socketlabel</parameter></paramdef> "
+"<paramdef>struct sockaddr *<parameter>sockaddr</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11154
 msgid "Socket to be connected"
-msgstr ""
+msgstr "Socket para conectar"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11172
@@ -13927,25 +14349,37 @@ msgid ""
 "Suggested failure: <errorcode>EACCES</errorcode> for label mismatches, "
 "<errorcode>EPERM</errorcode> for lack of privilege."
 msgstr ""
+"Determine si la credencial del sujeto(<parameter>cred</parameter>) puede "
+"conectar el socket pasado (<parameter>socket</parameter>) a la dirección de "
+"socket pasada (<parameter>sockaddr</parameter>). Retornar <returnvalue>0</"
+"returnvalue>para el éxito, o un <varname>errno</varname> valor por fracaso. "
+"Fallo sugerido: <errorcode>EACCES</errorcode>para etiquetas no coincidentes, "
+"<errorcode>EPERM</errorcode> por falta de privilegio."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:11183
+#, fuzzy
 msgid "<function>mpo_check_socket_receive</function>"
-msgstr ""
+msgstr "<function>mpo_check_socket_receive</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:11186
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_socket_receive</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
 "<paramdef>struct socket *<parameter>so</parameter></paramdef> "
 "<paramdef>struct label *<parameter>socketlabel</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_socket_receive</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct socket *<parameter>so</parameter></paramdef> "
+"<paramdef>struct label *<parameter>socketlabel</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11228 book.translate.xml:11286
 msgid "Policy label associated with <parameter>so</parameter>"
-msgstr ""
+msgstr "Etiqueta de política asociada con <parameter>so</parameter>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11235
@@ -13953,20 +14387,28 @@ msgid ""
 "Determine whether the subject should be allowed to receive information from "
 "the socket <parameter>so</parameter>."
 msgstr ""
+"Determinar si el sujeto debe poder recibir información del "
+"socket.<parameter>entonces</parameter>."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:11241
+#, fuzzy
 msgid "<function>mpo_check_socket_send</function>"
-msgstr ""
+msgstr "<function>mpo_check_socket_send</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:11244
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_socket_send</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
 "<paramdef>struct socket *<parameter>so</parameter></paramdef> "
 "<paramdef>struct label *<parameter>socketlabel</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_socket_send</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct socket *<parameter>so</parameter></paramdef> "
+"<paramdef>struct label *<parameter>socketlabel</parameter></paramdef>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11293
@@ -13974,34 +14416,43 @@ msgid ""
 "Determine whether the subject should be allowed to send information across "
 "the socket <parameter>so</parameter>."
 msgstr ""
+"Determinar si el sujeto debe poder enviar información a través del "
+"socket.<parameter>entonces</parameter>."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:11299
+#, fuzzy
 msgid "<function>mpo_check_cred_visible</function>"
-msgstr ""
+msgstr "<function>mpo_check_cred_visible</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:11302
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_cred_visible</function></funcdef> "
 "<paramdef>struct ucred *<parameter>u1</parameter></paramdef> "
 "<paramdef>struct ucred *<parameter>u2</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_cred_visible</function></funcdef> "
+"<paramdef>struct ucred *<parameter>u1</parameter></paramdef> "
+"<paramdef>struct ucred *<parameter>u2</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11331
+#, fuzzy
 msgid "<parameter>u1</parameter>"
-msgstr ""
+msgstr "<parameter>u1</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11336
+#, fuzzy
 msgid "<parameter>u2</parameter>"
-msgstr ""
+msgstr "<parameter>u2</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11337
 msgid "Object credential"
-msgstr ""
+msgstr "Credencial de objeto"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11343
@@ -14015,28 +14466,45 @@ msgid ""
 "visibility. This call may be made in a number of situations, including inter-"
 "process status sysctl's used by <command>ps</command>, and in procfs lookups."
 msgstr ""
+"Determine si la credencial del sujeto <parameter>u1</parameter> pueden "
+"<quote>ver</quote> otros sujetos con la credencial de sujeto aprobada "
+"<parameter>u2</parameter>. Retornar <returnvalue>0</returnvalue> para el "
+"éxito, o un <varname>errno</varname>valor por fracaso. Fallo "
+"sugerido:<errorcode>EACCES</errorcode> para las discrepancias de etiquetas, "
+"<errorcode>EPERM</errorcode>por falta de privilegio, o <errorcode>ESRCH</"
+"errorcode>para ocultar la visibilidad. Esta llamada se puede realizar en "
+"varias situaciones, incluidas las sysctl de estado entre procesos utilizados "
+"por <command>ps</command>, y en búsquedas de procfs."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:11358 book.translate.xml:14098
+#, fuzzy
 msgid "<function>mpo_check_socket_visible</function>"
-msgstr ""
+msgstr "<function>mpo_check_socket_visible</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:11361
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_socket_visible</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
 "<paramdef>struct socket *<parameter>socket</parameter></paramdef> "
 "<paramdef>struct label *<parameter>socketlabel</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_socket_visible</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct socket *<parameter>socket</parameter></paramdef> "
+"<paramdef>struct label *<parameter>socketlabel</parameter></paramdef>"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:11412
+#, fuzzy
 msgid "<function>mpo_check_ifnet_relabel</function>"
-msgstr ""
+msgstr "<function>mpo_check_ifnet_relabel</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:11415
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_ifnet_relabel</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
@@ -14044,16 +14512,23 @@ msgid ""
 "<paramdef>struct label *<parameter>ifnetlabel</parameter></paramdef> "
 "<paramdef>struct label *<parameter>newlabel</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_ifnet_relabel</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct ifnet *<parameter>ifnet</parameter></paramdef> "
+"<paramdef>struct label *<parameter>ifnetlabel</parameter></paramdef> "
+"<paramdef>struct label *<parameter>newlabel</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11459
 msgid "Existing policy label for <parameter>ifnet</parameter>"
-msgstr ""
+msgstr "Etiqueta de política existente para <parameter>ifnet</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11465
 msgid "Policy label update to later be applied to <parameter>ifnet</parameter>"
 msgstr ""
+"Actualización de la etiqueta de la política para aplicarla posteriormente "
+"<parameter>ifnet</parameter>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11472
@@ -14061,14 +14536,18 @@ msgid ""
 "Determine whether the subject credential can relabel the passed network "
 "interface to the passed label update."
 msgstr ""
+"Determine si la credencial del sujeto puede volver a etiquetar la interfaz "
+"de red pasada a la actualización de la etiqueta pasada."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:11477
+#, fuzzy
 msgid "<function>mpo_check_socket_relabel</function>"
-msgstr ""
+msgstr "<function>mpo_check_socket_relabel</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:11480
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_socket_relabel</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
@@ -14076,16 +14555,23 @@ msgid ""
 "<paramdef>struct label *<parameter>socketlabel</parameter></paramdef> "
 "<paramdef>struct label *<parameter>newlabel</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_socket_relabel</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct socket *<parameter>socket</parameter></paramdef> "
+"<paramdef>struct label *<parameter>socketlabel</parameter></paramdef> "
+"<paramdef>struct label *<parameter>newlabel</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11524
 msgid "Existing policy label for <parameter>socket</parameter>"
-msgstr ""
+msgstr "Etiqueta de política existente para <parameter>socket</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11530
 msgid "Label update to later be applied to <parameter>socketlabel</parameter>"
 msgstr ""
+"Actualización de etiqueta para aplicarla posteriormente "
+"<parameter>socketlabel</parameter>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11537
@@ -14093,24 +14579,33 @@ msgid ""
 "Determine whether the subject credential can relabel the passed socket to "
 "the passed label update."
 msgstr ""
+"Determine si la credencial del sujeto puede volver a etiquetar el socket "
+"pasado a la actualización de la etiqueta pasada."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:11542
+#, fuzzy
 msgid "<function>mpo_check_cred_relabel</function>"
-msgstr ""
+msgstr "<function>mpo_check_cred_relabel</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:11545
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_cred_relabel</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
 "<paramdef>struct label *<parameter>newlabel</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_cred_relabel</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct label *<parameter>newlabel</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11580
 msgid "Label update to later be applied to <parameter>cred</parameter>"
 msgstr ""
+"Actualización de etiqueta para aplicarla posteriormente "
+"<parameter>cred</parameter>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11587
@@ -14118,14 +14613,18 @@ msgid ""
 "Determine whether the subject credential can relabel itself to the passed "
 "label update."
 msgstr ""
+"Determine si la credencial del sujeto se puede volver a etiquetar a la "
+"actualización de etiqueta pasada."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:11593
+#, fuzzy
 msgid "<function>mpo_check_vnode_relabel</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_relabel</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:11596
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_vnode_relabel</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
@@ -14133,6 +14632,11 @@ msgid ""
 "<paramdef>struct label *<parameter>vnodelabel</parameter></paramdef> "
 "<paramdef>struct label *<parameter>newlabel</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_vnode_relabel</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>vnodelabel</parameter></paramdef> "
+"<paramdef>struct label *<parameter>newlabel</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11636 book.translate.xml:11826 book.translate.xml:12020
@@ -14142,12 +14646,14 @@ msgstr ""
 #: book.translate.xml:13524 book.translate.xml:13592 book.translate.xml:13661
 #: book.translate.xml:13921
 msgid "Object; vnode"
-msgstr ""
+msgstr "Objeto; vnode"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11648
 msgid "Policy label update to later be applied to <parameter>vp</parameter>"
 msgstr ""
+"Actualización de la etiqueta de la política para aplicarla posteriormente "
+"<parameter>vp</parameter>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11655
@@ -14155,35 +14661,44 @@ msgid ""
 "Determine whether the subject credential can relabel the passed vnode to the "
 "passed label update."
 msgstr ""
+"Determine si la credencial del sujeto puede volver a etiquetar el vnode "
+"pasado a la actualización de etiqueta pasada."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:11660
+#, fuzzy
 msgid "<function>mpo_check_mount_stat</function>"
-msgstr ""
+msgstr "<function>mpo_check_mount_stat</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:11663
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_mount_stat</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
 "<paramdef>struct mount *<parameter>mp</parameter></paramdef> "
 "<paramdef>struct label *<parameter>mountlabel</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_mount_stat</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct mount *<parameter>mp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>mountlabel</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11700
 msgid "Object; file system mount"
-msgstr ""
+msgstr "Objeto; montaje del sistema de archivos"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11704
+#, fuzzy
 msgid "<parameter>mountlabel</parameter>"
-msgstr ""
+msgstr "<parameter>mountlabel</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11705
 msgid "Policy label for <parameter>mp</parameter>"
-msgstr ""
+msgstr "Etiqueta de política para <parameter>mp</parameter>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11713
@@ -14200,29 +14715,46 @@ msgid ""
 "<citerefentry><refentrytitle>getfsstat</refentrytitle><manvolnum>2</"
 "manvolnum></citerefentry> is invoked."
 msgstr ""
+"Determine si la credencial del sujeto puede ver los resultados de una "
+"estadística realizada en el sistema de archivos. Regreso <returnvalue>0</"
+"returnvalue> para el éxito, o un <varname>errno</varname> valor por fracaso. "
+"Fallo sugerido: <errorcode>EACCES</errorcode> para etiquetas no coincidentes "
+"o <errorcode>EPERM</errorcode> por falta de privilegio. Esta llamada se "
+"puede realizar en varias situaciones, incluso durante las invocaciones de "
+"<citerefentry><refentrytitle>statfs</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> y llamadas relacionadas, así como para determinar qué sistemas "
+"de archivos excluir de las listas de sistemas de archivos, como cuándo<citere"
+"fentry><refentrytitle>getfsstat</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry>se invoca."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:11727
+#, fuzzy
 msgid "<function>mpo_check_proc_debug</function>"
-msgstr ""
+msgstr "<function>mpo_check_proc_debug</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:11730
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_proc_debug</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
 "<paramdef>struct proc *<parameter>proc</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_proc_debug</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct proc *<parameter>proc</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11765 book.translate.xml:13802 book.translate.xml:13859
+#, fuzzy
 msgid "<parameter>proc</parameter>"
-msgstr ""
+msgstr "<parameter>proc</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11766 book.translate.xml:13803 book.translate.xml:13860
 msgid "Object; process"
-msgstr ""
+msgstr "Objeto; proceso"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11772
@@ -14238,14 +14770,27 @@ msgid ""
 "refentrytitle><manvolnum>2</manvolnum></citerefentry> APIs, as well as for "
 "some types of procfs operations."
 msgstr ""
+"Determine si la credencial del sujeto puede depurar el proceso aprobado. "
+"Regreso <returnvalue>0</returnvalue> para el éxito, o un <varname>errno</"
+"varname> valor por fracaso. Fallo sugerido: <errorcode>EACCES</errorcode> "
+"por falta de coincidencia de etiquetas, <errorcode>EPERM</errorcode> por "
+"falta de privilegio, o <errorcode>ESRCH</errorcode> para ocultar la "
+"visibilidad del objetivo. Esta llamada se puede realizar en varias "
+"situaciones, incluido el uso del "
+"<citerefentry><refentrytitle>ptrace</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> y "
+"<citerefentry><refentrytitle>ktrace</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> API, así como para algunos tipos de operaciones procfs."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:11785
+#, fuzzy
 msgid "<function>mpo_check_vnode_access</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_access</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:11788
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_vnode_access</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
@@ -14253,18 +14798,27 @@ msgid ""
 "<paramdef>struct label *<parameter>label</parameter></paramdef> "
 "<paramdef>int <parameter>flags</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_vnode_access</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef> "
+"<paramdef>int <parameter>flags</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11836 book.translate.xml:13534
+#, fuzzy
 msgid "<parameter>flags</parameter>"
-msgstr ""
+msgstr "<parameter>flags</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11837
+#, fuzzy
 msgid ""
 "<citerefentry><refentrytitle>access</refentrytitle><manvolnum>2</manvolnum></"
 "citerefentry> flags"
 msgstr ""
+"<citerefentry><refentrytitle>access</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> flags"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11843
@@ -14278,20 +14832,35 @@ msgid ""
 "value for failure. Suggested failure: <errorcode>EACCES</errorcode> for "
 "label mismatches or <errorcode>EPERM</errorcode> for lack of privilege."
 msgstr ""
+"Determinar cómo las invocaciones de<citerefentry><refentrytitle>acceso</refen"
+"trytitle><manvolnum>2</manvolnum></citerefentry> y las llamadas relacionadas "
+"por la credencial del sujeto deben regresar cuando se realizan en el vnode "
+"pasado usando los indicadores de acceso pasados. Por lo general, esto "
+"debería implementarse utilizando la misma semántica utilizada "
+"en<function>mpo_check_vnode_open</function>. Regreso <returnvalue>0</"
+"returnvalue> para el éxito, o un <varname>errno</varname> valor por fracaso. "
+"Fallo sugerido:<errorcode>EACCES</errorcode> para etiquetas no coincidentes "
+"o <errorcode>EPERM</errorcode> por falta de privilegio."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:11856
+#, fuzzy
 msgid "<function>mpo_check_vnode_chdir</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_chdir</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:11859
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_vnode_chdir</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
 "<paramdef>struct vnode *<parameter>dvp</parameter></paramdef> "
 "<paramdef>struct label *<parameter>dlabel</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_vnode_chdir</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>dvp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>dlabel</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11896
@@ -14299,12 +14868,15 @@ msgid ""
 "Object; vnode to <citerefentry><refentrytitle>chdir</"
 "refentrytitle><manvolnum>2</manvolnum></citerefentry> into"
 msgstr ""
+"Objeto; vnode a "
+"<citerefentry><refentrytitle>chdir</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> dentro"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11901 book.translate.xml:12025 book.translate.xml:12107
 #: book.translate.xml:13040 book.translate.xml:13171
 msgid "Policy label for <parameter>dvp</parameter>"
-msgstr ""
+msgstr "Etiqueta de política para <parameter>dvp</parameter>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11908
@@ -14315,32 +14887,43 @@ msgid ""
 "failure: <errorcode>EACCES</errorcode> for label mismatch, or "
 "<errorcode>EPERM</errorcode> for lack of privilege."
 msgstr ""
+"Determine si la credencial del sujeto puede cambiar el directorio de trabajo "
+"del proceso al vnode pasado. Regreso <returnvalue>0</returnvalue> para el "
+"éxito, o un <varname>errno</varname> valor por fracaso. Fallo sugerido: "
+"<errorcode>EACCES</errorcode> si la etiqueta no coincide, o "
+"<errorcode>EPERM</errorcode> por falta de privilegio."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:11918
+#, fuzzy
 msgid "<function>mpo_check_vnode_chroot</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_chroot</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:11921
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_vnode_chroot</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
 "<paramdef>struct vnode *<parameter>dvp</parameter></paramdef> "
 "<paramdef>struct label *<parameter>dlabel</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_vnode_chroot</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>dvp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>dlabel</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11958 book.translate.xml:12482 book.translate.xml:12810
 #: book.translate.xml:12892
 msgid "Directory vnode"
-msgstr ""
+msgstr "Directorio vnode"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11963 book.translate.xml:12487 book.translate.xml:12815
 #: book.translate.xml:12897
 msgid "Policy label associated with <parameter>dvp</parameter>"
-msgstr ""
+msgstr "Etiqueta de política asociada con <parameter>dvp</parameter>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11970
@@ -14349,14 +14932,19 @@ msgid ""
 "<citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>2</manvolnum></"
 "citerefentry> into the specified directory (<parameter>dvp</parameter>)."
 msgstr ""
+"Determine si se debe permitir que el sujeto "
+"<citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> en el directorio especificado (<parameter>dvp</parameter>)."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:11976
+#, fuzzy
 msgid "<function>mpo_check_vnode_create</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_create</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:11979
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_vnode_create</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
@@ -14365,21 +14953,28 @@ msgid ""
 "<paramdef>struct componentname *<parameter>cnp</parameter></paramdef> "
 "<paramdef>struct vattr *<parameter>vap</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_vnode_create</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>dvp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>dlabel</parameter></paramdef> "
+"<paramdef>struct componentname *<parameter>cnp</parameter></paramdef> "
+"<paramdef>struct vattr *<parameter>vap</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12031
 msgid "Component name for <parameter>dvp</parameter>"
-msgstr ""
+msgstr "Nombre de componente para <parameter>dvp</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12036
+#, fuzzy
 msgid "<parameter>vap</parameter>"
-msgstr ""
+msgstr "<parameter>vap</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12037
 msgid "vnode attributes for <parameter>vap</parameter>"
-msgstr ""
+msgstr "atributos de vnode para <parameter>vap</parameter>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12044
@@ -14395,14 +14990,27 @@ msgid ""
 "<citerefentry><refentrytitle>mkfifo</refentrytitle><manvolnum>2</manvolnum></"
 "citerefentry>, and others."
 msgstr ""
+"Determine si la credencial del sujeto puede crear un vnode con el directorio "
+"principal pasado, la información del nombre pasado y la información del "
+"atributo pasada. Regreso <returnvalue>0</returnvalue> o el éxito, o un "
+"<varname>errno</varname>valor por fracaso. Fallo sugerido: "
+"<errorcode>EACCES</errorcode> si la etiqueta no coincide, o "
+"<errorcode>EPERM</errorcode> por falta de privilegio. Esta llamada se puede "
+"realizar en varias situaciones, incluso como resultado de llamadas a "
+"<citerefentry><refentrytitle>open</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> con <symbol>O_CREAT</symbol>, "
+"<citerefentry><refentrytitle>mkfifo</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry>, y otros."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:12057
+#, fuzzy
 msgid "<function>mpo_check_vnode_delete</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_delete</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:12060
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_vnode_delete</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
@@ -14412,11 +15020,18 @@ msgid ""
 "*<parameter>label</parameter></paramdef> <paramdef>struct componentname "
 "*<parameter>cnp</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_vnode_delete</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>dvp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>dlabel</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>vp</parameter></paramdef> <paramdef>void "
+"*<parameter>label</parameter></paramdef> <paramdef>struct componentname "
+"*<parameter>cnp</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12113
 msgid "Object; vnode to delete"
-msgstr ""
+msgstr "Objeto; vnode para eliminar"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12131
@@ -14434,14 +15049,29 @@ msgid ""
 "function> to authorize deletion of objects as a result of being the target "
 "of a rename."
 msgstr ""
+"Determine si la credencial del sujeto puede eliminar un vnode del directorio "
+"principal y la información del nombre transmitida. Regreso <returnvalue>0</"
+"returnvalue> para el éxito, o un <varname>errno</varname>valor por fracaso. "
+"Fallo sugerido: <errorcode>EACCES</errorcode> si la etiqueta no coincide, o "
+"<errorcode>EPERM</errorcode> por falta de privilegio. Esta llamada se puede "
+"realizar en varias situaciones, incluso como resultado de llamadas a "
+"<citerefentry><refentrytitle>unlink</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> y "
+"<citerefentry><refentrytitle>rmdir</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry>. Las políticas que implementan este punto de entrada también "
+"deben implementar<function>mpo_check_rename_to</function> para autorizar la "
+"eliminación de objetos como resultado de ser el objetivo de un cambio de "
+"nombre."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:12147
+#, fuzzy
 msgid "<function>mpo_check_vnode_deleteacl</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_deleteacl</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:12150
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_vnode_deleteacl</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
@@ -14449,16 +15079,22 @@ msgid ""
 "<paramdef>struct label *<parameter>label</parameter></paramdef> "
 "<paramdef>acl_type_t <parameter>type</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_vnode_deleteacl</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef> "
+"<paramdef>acl_type_t <parameter>type</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12201 book.translate.xml:12333 book.translate.xml:13370
+#, fuzzy
 msgid "<parameter>type</parameter>"
-msgstr ""
+msgstr "<parameter>type</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12202 book.translate.xml:12334 book.translate.xml:13371
 msgid "ACL type"
-msgstr ""
+msgstr "Tipo de ACL"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12208
@@ -14469,25 +15105,36 @@ msgid ""
 "<errorcode>EACCES</errorcode> for label mismatch, or <errorcode>EPERM</"
 "errorcode> for lack of privilege."
 msgstr ""
+"Determine si la credencial del sujeto puede eliminar la ACL del tipo pasado "
+"del vnode pasado. Regreso <returnvalue>0</returnvalue> para el éxito, o un "
+"<varname>errno</varname> valor por fracaso. Fallo sugerido: "
+"<errorcode>EACCES</errorcode> si la etiqueta no coincide, o "
+"<errorcode>EPERM</errorcode> por falta de privilegio."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:12218
+#, fuzzy
 msgid "<function>mpo_check_vnode_exec</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_exec</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:12221
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_vnode_exec</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
 "<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
 "<paramdef>struct label *<parameter>label</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_vnode_exec</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12258
 msgid "Object; vnode to execute"
-msgstr ""
+msgstr "Objeto; vnode para ejecutar"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12270
@@ -14499,14 +15146,22 @@ msgid ""
 "<errorcode>EACCES</errorcode> for label mismatch, or <errorcode>EPERM</"
 "errorcode> for lack of privilege."
 msgstr ""
+"Determine si la credencial del sujeto puede ejecutar el vnode pasado. La "
+"determinación del privilegio de ejecución se realiza por separado de las "
+"decisiones sobre cualquier evento de transición. Regreso <returnvalue>0</"
+"returnvalue>para el éxito, o un<varname>errno</varname> valor por fracaso. "
+"Fallo sugerido: <errorcode>EACCES</errorcode> si la etiqueta no coincide, o "
+"<errorcode>EPERM</errorcode> por falta de privilegio."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:12281
+#, fuzzy
 msgid "<function>mpo_check_vnode_getacl</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_getacl</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:12284
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_vnode_getacl</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
@@ -14514,6 +15169,11 @@ msgid ""
 "<paramdef>struct label *<parameter>label</parameter></paramdef> "
 "<paramdef>acl_type_t <parameter>type</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_vnode_getacl</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef> "
+"<paramdef>acl_type_t <parameter>type</parameter></paramdef>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12340
@@ -14524,14 +15184,21 @@ msgid ""
 "<errorcode>EACCES</errorcode> for label mismatch, or <errorcode>EPERM</"
 "errorcode> for lack of privilege."
 msgstr ""
+"Determine si la credencial del sujeto puede recuperar la ACL del tipo pasado "
+"del vnode pasado. Regreso <returnvalue>0</returnvalue>para el éxito, o un "
+"<varname>errno</varname>valor por fracaso. Fallo sugerido: "
+"<errorcode>EACCES</errorcode> si la etiqueta no coincide, o<errorcode>EPERM</"
+"errorcode>por falta de privilegio."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:12350
+#, fuzzy
 msgid "<function>mpo_check_vnode_getextattr</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_getextattr</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:12353
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_vnode_getextattr</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
@@ -14541,26 +15208,35 @@ msgid ""
 "<paramdef>const char *<parameter>name</parameter></paramdef> "
 "<paramdef>struct uio *<parameter>uio</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_vnode_getextattr</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef> "
+"<paramdef>int <parameter>attrnamespace</parameter></paramdef> "
+"<paramdef>const char *<parameter>name</parameter></paramdef> "
+"<paramdef>struct uio *<parameter>uio</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12406 book.translate.xml:13448
+#, fuzzy
 msgid "<parameter>attrnamespace</parameter>"
-msgstr ""
+msgstr "<parameter>attrnamespace</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12407 book.translate.xml:13449
 msgid "Extended attribute namespace"
-msgstr ""
+msgstr "Espacio de nombres de atributo extendido"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12412 book.translate.xml:13454
 msgid "Extended attribute name"
-msgstr ""
+msgstr "Nombre de atributo extendido"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12416 book.translate.xml:13458
+#, fuzzy
 msgid "<parameter>uio</parameter>"
-msgstr ""
+msgstr "<parameter>uio</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12417 book.translate.xml:13459
@@ -14568,6 +15244,8 @@ msgid ""
 "I/O structure pointer; see <citerefentry><refentrytitle>uio</"
 "refentrytitle><manvolnum>9</manvolnum></citerefentry>"
 msgstr ""
+"I/O puntero de estructura; ver <citerefentry><refentrytitle>uio</refentrytitl"
+"e><manvolnum>9</manvolnum></citerefentry>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12423
@@ -14580,14 +15258,24 @@ msgid ""
 "Suggested failure: <errorcode>EACCES</errorcode> for label mismatch, or "
 "<errorcode>EPERM</errorcode> for lack of privilege."
 msgstr ""
+"Determine si la credencial del sujeto puede recuperar el atributo extendido "
+"con el espacio de nombres pasado y el nombre del vnode pasado. Las políticas "
+"que implementan el etiquetado utilizando atributos extendidos pueden estar "
+"interesadas en el manejo especial de operaciones en esos atributos "
+"extendidos. Regreso <returnvalue>0</returnvalue> para el éxito, o un "
+"<varname>errno</varname>valor por fracaso. Fallo sugerido: "
+"<errorcode>EACCES</errorcode> si la etiqueta no coincide, o "
+"<errorcode>EPERM</errorcode> por falta de privilegio."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:12436
+#, fuzzy
 msgid "<function>mpo_check_vnode_link</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_link</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:12439
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_vnode_link</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
@@ -14597,16 +15285,23 @@ msgid ""
 "<paramdef>struct label *<parameter>label</parameter></paramdef> "
 "<paramdef>struct componentname *<parameter>cnp</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_vnode_link</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>dvp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>dlabel</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef> "
+"<paramdef>struct componentname *<parameter>cnp</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12493
 msgid "Link destination vnode"
-msgstr ""
+msgstr "Vnode de destino del enlace"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12504
 msgid "Component name for the link being created"
-msgstr ""
+msgstr "Nombre del componente para el enlace que se está creando"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12511
@@ -14615,14 +15310,18 @@ msgid ""
 "vnode <parameter>vp</parameter> with the name specified by <parameter>cnp</"
 "parameter>."
 msgstr ""
+"Determinar si el sujeto debe poder crear un enlace al vnode. <parameter>vp</"
+"parameter> con el nombre especificado por <parameter>cnp</parameter>."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:12517
+#, fuzzy
 msgid "<function>mpo_check_vnode_mmap</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_mmap</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:12520
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_vnode_mmap</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
@@ -14630,16 +15329,22 @@ msgid ""
 "<paramdef>struct label *<parameter>label</parameter></paramdef> "
 "<paramdef>int <parameter>prot</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_vnode_mmap</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef> "
+"<paramdef>int <parameter>prot</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12558
 msgid "Vnode to map"
-msgstr ""
+msgstr "Vnode al mapa"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12568 book.translate.xml:12629 book.translate.xml:12686
+#, fuzzy
 msgid "<parameter>prot</parameter>"
-msgstr ""
+msgstr "<parameter>prot</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12569
@@ -14647,6 +15352,8 @@ msgid ""
 "Mmap protections (see <citerefentry><refentrytitle>mmap</"
 "refentrytitle><manvolnum>2</manvolnum></citerefentry>)"
 msgstr ""
+"Protecciones Mmap (ver<citerefentry><refentrytitle>mmap</refentrytitle><manvo"
+"lnum>2</manvolnum></citerefentry>)"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12575
@@ -14655,14 +15362,18 @@ msgid ""
 "<parameter>vp</parameter> with the protections specified in <parameter>prot</"
 "parameter>."
 msgstr ""
+"Determine si el sujeto debe poder mapear el vnode <parameter>vp</"
+"parameter>con las protecciones especificadas en <parameter>prot</parameter>."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:12581
+#, fuzzy
 msgid "<function>mpo_check_vnode_mmap_downgrade</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_mmap_downgrade</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:12584
+#, fuzzy
 msgid ""
 "<funcdef>void <function>mpo_check_vnode_mmap_downgrade</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
@@ -14670,29 +15381,37 @@ msgid ""
 "<paramdef>struct label *<parameter>label</parameter></paramdef> "
 "<paramdef>int *<parameter>prot</parameter></paramdef>"
 msgstr ""
+"<funcdef>void <function>mpo_check_vnode_mmap_downgrade</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef> "
+"<paramdef>int *<parameter>prot</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12617
 msgid "See <xref linkend=\"mac-mpo-check-vnode-mmap\"/>."
-msgstr ""
+msgstr "Mire <xref linkend=\"mac-mpo-check-vnode-mmap\"/>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12630
 msgid "Mmap protections to be downgraded"
-msgstr ""
+msgstr "Las protecciones de Mmap se degradarán"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12636
 msgid "Downgrade the mmap protections based on the subject and object labels."
 msgstr ""
+"Reduzca las protecciones de mmap según las etiquetas de sujeto y objeto."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:12641
+#, fuzzy
 msgid "<function>mpo_check_vnode_mprotect</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_mprotect</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:12644
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_vnode_mprotect</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
@@ -14700,16 +15419,21 @@ msgid ""
 "<paramdef>struct label *<parameter>label</parameter></paramdef> "
 "<paramdef>int <parameter>prot</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_vnode_mprotect</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef> "
+"<paramdef>int <parameter>prot</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12682
 msgid "Mapped vnode"
-msgstr ""
+msgstr "Vnode mapeado"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12687
 msgid "Memory protections"
-msgstr ""
+msgstr "Protecciones de memoria"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12693
@@ -14717,14 +15441,19 @@ msgid ""
 "Determine whether the subject should be allowed to set the specified memory "
 "protections on memory mapped from the vnode <parameter>vp</parameter>."
 msgstr ""
+"Determine si se debe permitir que el sujeto establezca las protecciones de "
+"memoria especificadas en la memoria asignada desde el vnode "
+"<parameter>vp</parameter>."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:12699
+#, fuzzy
 msgid "<function>mpo_check_vnode_poll</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_poll</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:12702
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_vnode_poll</function></funcdef> "
 "<paramdef>struct ucred *<parameter>active_cred</parameter></paramdef> "
@@ -14732,26 +15461,33 @@ msgid ""
 "<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
 "<paramdef>struct label *<parameter>label</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_vnode_poll</function></funcdef> "
+"<paramdef>struct ucred *<parameter>active_cred</parameter></paramdef> "
+"<paramdef>struct ucred *<parameter>file_cred</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12735
+#, fuzzy
 msgid "<parameter>active_cred</parameter>"
-msgstr ""
+msgstr "<parameter>active_cred</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12740
+#, fuzzy
 msgid "<parameter>file_cred</parameter>"
-msgstr ""
+msgstr "<parameter>file_cred</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12741
 msgid "Credential associated with the <type>struct file</type>"
-msgstr ""
+msgstr "Credencial asociada a la <type>struct file</type>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12747
 msgid "Polled vnode"
-msgstr ""
+msgstr "Vnode encuestado"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12759
@@ -14759,14 +15495,17 @@ msgid ""
 "Determine whether the subject should be allowed to poll the vnode "
 "<parameter>vp</parameter>."
 msgstr ""
+"Determine si el sujeto debe poder sondear el vnode <parameter>vp</parameter>."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:12764
+#, fuzzy
 msgid "<function>mpo_check_vnode_rename_from</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_rename_from</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:12767
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_vnode_rename_from</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
@@ -14776,11 +15515,18 @@ msgid ""
 "<paramdef>struct label *<parameter>label</parameter></paramdef> "
 "<paramdef>struct componentname *<parameter>cnp</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_vnode_rename_from</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>dvp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>dlabel</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef> "
+"<paramdef>struct componentname *<parameter>cnp</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12821
 msgid "Vnode to be renamed"
-msgstr ""
+msgstr "Vnode para ser renombrado"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12839
@@ -14788,14 +15534,18 @@ msgid ""
 "Determine whether the subject should be allowed to rename the vnode "
 "<parameter>vp</parameter> to something else."
 msgstr ""
+"Determine si el sujeto debe poder cambiar el nombre del vnode <parameter>vp</"
+"parameter>a otra cosa."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:12845
+#, fuzzy
 msgid "<function>mpo_check_vnode_rename_to</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_rename_to</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:12848
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_vnode_rename_to</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
@@ -14806,16 +15556,25 @@ msgid ""
 "<paramdef>int <parameter>samedir</parameter></paramdef> <paramdef>struct "
 "componentname *<parameter>cnp</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_vnode_rename_to</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>dvp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>dlabel</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef> "
+"<paramdef>int <parameter>samedir</parameter></paramdef> <paramdef>struct "
+"componentname *<parameter>cnp</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12903
 msgid "Overwritten vnode"
-msgstr ""
+msgstr "Vnode sobrescrito"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12913
+#, fuzzy
 msgid "<parameter>samedir</parameter>"
-msgstr ""
+msgstr "<parameter>samedir</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12914
@@ -14823,11 +15582,13 @@ msgid ""
 "Boolean; <literal>1</literal> if the source and destination directories are "
 "the same"
 msgstr ""
+"Booleano; <literal>1</literal> si los directorios de origen y destino son "
+"los mismos"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12920
 msgid "Destination component name"
-msgstr ""
+msgstr "Nombre del componente de destino"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12926
@@ -14838,20 +15599,31 @@ msgid ""
 "existing file to overwrite, <parameter>vp</parameter> and <parameter>label</"
 "parameter> will be NULL."
 msgstr ""
+"Determine si se debe permitir que el sujeto cambie el nombre al nodo v "
+"<parameter>vp</parameter>, en el directorio <parameter>dvp</parameter>, o al "
+"nombre representado por <parameter>cnp</parameter>. Si no hay ningún archivo "
+"para sobrescribir, <parameter>vp</parameter> y <parameter>etiqueta</"
+"parameter> Será Nulo."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:12935
+#, fuzzy
 msgid "<function>mpo_check_socket_listen</function>"
-msgstr ""
+msgstr "<function>mpo_check_socket_listen</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:12938
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_socket_listen</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
 "<paramdef>struct socket *<parameter>socket</parameter></paramdef> "
 "<paramdef>struct label *<parameter>socketlabel</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_socket_listen</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct socket *<parameter>socket</parameter></paramdef> "
+"<paramdef>struct label *<parameter>socketlabel</parameter></paramdef>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12987
@@ -14861,14 +15633,21 @@ msgid ""
 "varname> value for failure. Suggested failure: <errorcode>EACCES</errorcode> "
 "for label mismatch, or <errorcode>EPERM</errorcode> for lack of privilege."
 msgstr ""
+"Determine si la credencial del sujeto puede escuchar en el socket pasado. "
+"Regreso<returnvalue>0</returnvalue> para el éxito, o un <varname>errno</"
+"varname> valor por fracaso. Fallo sugerido: <errorcode>EACCES</errorcode> si "
+"la etiqueta no coincide, o <errorcode>EPERM</errorcode> por falta de "
+"privilegio."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:12996
+#, fuzzy
 msgid "<function>mpo_check_vnode_lookup</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_lookup</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:12999
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_vnode_lookup</function></funcdef> "
 "<paramdef>struct ucred *<parameter/>cred</paramdef> <paramdef>struct vnode "
@@ -14876,11 +15655,16 @@ msgid ""
 "paramdef> <paramdef>struct componentname *<parameter>cnp</parameter></"
 "paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_vnode_lookup</function></funcdef> "
+"<paramdef>struct ucred *<parameter/>cred</paramdef> <paramdef>struct vnode *<"
+"parameter/>dvp</paramdef> <paramdef>struct label *<parameter/>dlabel</"
+"paramdef> <paramdef>struct componentname "
+"*<parameter>cnp</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13046
 msgid "Component name being looked up"
-msgstr ""
+msgstr "Se busca el nombre del componente"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:13052
@@ -14891,14 +15675,21 @@ msgid ""
 "failure: <errorcode>EACCES</errorcode> for label mismatch, or "
 "<errorcode>EPERM</errorcode> for lack of privilege."
 msgstr ""
+"Determine si la credencial del sujeto puede realizar una búsqueda en el "
+"directorio pasado vnode para el nombre pasado. Regreso <returnvalue>0</"
+"returnvalue> para el éxito, o un <varname>errno</varname> valor por fracaso. "
+"Fallo sugerido: <errorcode>EACCES</errorcode> si la etiqueta no coincide, o "
+"<errorcode>EPERM</errorcode> por falta de privilegio."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:13062
+#, fuzzy
 msgid "<function>mpo_check_vnode_open</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_open</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:13065
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_vnode_open</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
@@ -14906,11 +15697,17 @@ msgid ""
 "<paramdef>struct label *<parameter>label</parameter></paramdef> "
 "<paramdef>int <parameter>acc_mode</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_vnode_open</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef> "
+"<paramdef>int <parameter>acc_mode</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13113
+#, fuzzy
 msgid "<parameter>acc_mode</parameter>"
-msgstr ""
+msgstr "<parameter>acc_mode</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13114
@@ -14918,6 +15715,8 @@ msgid ""
 "<citerefentry><refentrytitle>open</refentrytitle><manvolnum>2</manvolnum></"
 "citerefentry> access mode"
 msgstr ""
+"<citerefentry><refentrytitle>open</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> acceso modo"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:13120
@@ -14928,25 +15727,36 @@ msgid ""
 "<errorcode>EACCES</errorcode> for label mismatch, or <errorcode>EPERM</"
 "errorcode> for lack of privilege."
 msgstr ""
+"Determine si la credencial del sujeto puede realizar una operación abierta "
+"en el vnode pasado con el modo de acceso pasado. Regreso <returnvalue>0</"
+"returnvalue> para el éxito, o un valor errno para el fracaso. Fallo sugerido:"
+" <errorcode>EACCES</errorcode>si la etiqueta no coincide, o "
+"<errorcode>EPERM</errorcode> por falta de privilegio."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:13129
+#, fuzzy
 msgid "<function>mpo_check_vnode_readdir</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_readdir</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:13132
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_vnode_readdir</function></funcdef> "
 "<paramdef>struct ucred *<parameter/>cred</paramdef> <paramdef>struct vnode "
 "*<parameter/>dvp</paramdef> <paramdef>struct label *<parameter/>dlabel</"
 "paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_vnode_readdir</function></funcdef> "
+"<paramdef>struct ucred *<parameter/>cred</paramdef> <paramdef>struct vnode *<"
+"parameter/>dvp</paramdef> <paramdef>struct label *<parameter/"
+">dlabel</paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13166
 msgid "Object; directory vnode"
-msgstr ""
+msgstr "Objeto; directorio vnode"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:13178
@@ -14957,20 +15767,31 @@ msgid ""
 "Suggested failure: <errorcode>EACCES</errorcode> for label mismatch, or "
 "<errorcode>EPERM</errorcode> for lack of privilege."
 msgstr ""
+"Determine si la credencial del sujeto puede realizar una <function>readdir</"
+"function> operación en el directorio pasado vnode. Regreso <returnvalue>0</"
+"returnvalue>para el éxito, o un <varname>errno</varname> valor por fracaso. "
+"Fallo sugerido: <errorcode>EACCES</errorcode> si la etiqueta no coincide, o "
+"<errorcode>EPERM</errorcode> por falta de privilegio."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:13188
+#, fuzzy
 msgid "<function>mpo_check_vnode_readlink</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_readlink</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:13191
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_vnode_readlink</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
 "<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
 "<paramdef>struct label *<parameter>label</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_vnode_readlink</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:13240
@@ -14984,20 +15805,34 @@ msgid ""
 "call by the user process, or as a result of an implicit <function>readlink</"
 "function> during a name lookup by the process."
 msgstr ""
+"Determine si la credencial del sujeto puede realizar una <function>readlink</"
+"function> operación en el enlace simbólico vnode. Regreso <returnvalue>0</"
+"returnvalue> para el éxito, o un<varname>errno</varname> valor por fracaso. "
+"Fallo sugerido: <errorcode>EACCES</errorcode> si la etiqueta no coincide, o "
+"<errorcode>EPERM</errorcode> por falta de privilegio. Esta llamada se puede "
+"realizar en varias situaciones, incluida una <function>readlink</function> "
+"llamada por el proceso del usuario, o como resultado de un implícito "
+"<function>readlink</function> durante una búsqueda de nombre por el proceso."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:13254
+#, fuzzy
 msgid "<function>mpo_check_vnode_revoke</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_revoke</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:13257
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_vnode_revoke</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
 "<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
 "<paramdef>struct label *<parameter>label</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_vnode_revoke</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:13306
@@ -15008,14 +15843,21 @@ msgid ""
 "<errorcode>EACCES</errorcode> for label mismatch, or <errorcode>EPERM</"
 "errorcode> for lack of privilege."
 msgstr ""
+"Determine si la credencial del sujeto puede revocar el acceso al vnode "
+"pasado. Regreso <returnvalue>0</returnvalue> para el éxito, o un "
+"<varname>errno</varname> valor por fracaso. Fallo "
+"sugerido:<errorcode>EACCES</errorcode> si la etiqueta no coincide, o "
+"<errorcode>EPERM</errorcode> por falta de privilegio."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:13316
+#, fuzzy
 msgid "<function>mpo_check_vnode_setacl</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_setacl</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:13319
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_vnode_setacl</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
@@ -15024,16 +15866,24 @@ msgid ""
 "<paramdef>acl_type_t <parameter>type</parameter></paramdef> <paramdef>struct "
 "acl *<parameter>acl</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_vnode_setacl</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef> "
+"<paramdef>acl_type_t <parameter>type</parameter></paramdef> <paramdef>struct "
+"acl *<parameter>acl</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13375
+#, fuzzy
 msgid "<parameter>acl</parameter>"
-msgstr ""
+msgstr "<parameter>acl</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13376
+#, fuzzy
 msgid "ACL"
-msgstr ""
+msgstr "ACL"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:13382
@@ -15044,14 +15894,20 @@ msgid ""
 "<errorcode>EACCES</errorcode> for label mismatch, or <errorcode>EPERM</"
 "errorcode> for lack of privilege."
 msgstr ""
+"por falta de privilegio.por falta de privilegio. <returnvalue>0</"
+"returnvalue> para el éxito, o un <varname>errno</varname>valor por fracaso. "
+"Fallo sugerido:<errorcode>EACCES</errorcode> si la etiqueta no coincide, o "
+"<errorcode>EPERM</errorcode> por falta de privilegio."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:13392
+#, fuzzy
 msgid "<function>mpo_check_vnode_setextattr</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_setextattr</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:13395
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_vnode_setextattr</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
@@ -15061,6 +15917,13 @@ msgid ""
 "<paramdef>const char *<parameter>name</parameter></paramdef> "
 "<paramdef>struct uio *<parameter>uio</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_vnode_setextattr</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef> "
+"<paramdef>int <parameter>attrnamespace</parameter></paramdef> "
+"<paramdef>const char *<parameter>name</parameter></paramdef> "
+"<paramdef>struct uio *<parameter>uio</parameter></paramdef>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:13465
@@ -15077,14 +15940,28 @@ msgid ""
 "value for failure. Suggested failure: <errorcode>EACCES</errorcode> for "
 "label mismatch, or <errorcode>EPERM</errorcode> for lack of privilege."
 msgstr ""
+"Determine si la credencial del sujeto puede establecer el atributo extendido "
+"de nombre pasado y espacio de nombres pasado en el vnode pasado. Las "
+"políticas que implementan etiquetas de seguridad respaldadas en atributos "
+"extendidos pueden querer proporcionar protecciones adicionales para esos "
+"atributos. Además, las políticas deben evitar tomar decisiones basadas en "
+"los datos referenciados de <parameter>uio</parameter>,ya que existe una "
+"condición de carrera potencial entre esta verificación y la operación real. "
+"los <parameter>uio</parameter> tambien puede ser <literal>NULL</literal> si "
+"se está realizando una operación de eliminación. Regreso <returnvalue>0</"
+"returnvalue> para el éxito, o un <varname>errno</varname> valor por fracaso. "
+"Fallo sugerido:<errorcode>EACCES</errorcode> si la etiqueta no coincide, o "
+"<errorcode>EPERM</errorcode> por falta de privilegio."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:13483
+#, fuzzy
 msgid "<function>mpo_check_vnode_setflags</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_setflags</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:13486
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_vnode_setflags</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
@@ -15092,6 +15969,11 @@ msgid ""
 "<paramdef>struct label *<parameter>label</parameter></paramdef> "
 "<paramdef>u_long <parameter>flags</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_vnode_setflags</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef> "
+"<paramdef>u_long <parameter>flags</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13535
@@ -15099,6 +15981,8 @@ msgid ""
 "File flags; see <citerefentry><refentrytitle>chflags</"
 "refentrytitle><manvolnum>2</manvolnum></citerefentry>"
 msgstr ""
+"Banderas de archivo; ver <citerefentry><refentrytitle>chflags</refentrytitle>"
+"<manvolnum>2</manvolnum></citerefentry>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:13541
@@ -15109,14 +15993,21 @@ msgid ""
 "<errorcode>EACCES</errorcode> for label mismatch, or <errorcode>EPERM</"
 "errorcode> for lack of privilege."
 msgstr ""
+"Determine si la credencial del sujeto puede establecer las marcas pasadas en "
+"el vnode pasado. Regreso <returnvalue>0</returnvalue> para el éxito, o un "
+"<varname>errno</varname>valor por fracaso. Fallo sugerido: "
+"<errorcode>EACCES</errorcode> si la etiqueta no coincide, o "
+"<errorcode>EPERM</errorcode> por falta de privilegio."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:13551
+#, fuzzy
 msgid "<function>mpo_check_vnode_setmode</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_setmode</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:13554
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_vnode_setmode</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
@@ -15124,11 +16015,17 @@ msgid ""
 "<paramdef>struct label *<parameter>label</parameter></paramdef> "
 "<paramdef>mode_t <parameter>mode</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_vnode_setmode</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef> "
+"<paramdef>mode_t <parameter>mode</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13602
+#, fuzzy
 msgid "<parameter>mode</parameter>"
-msgstr ""
+msgstr "<parameter>mode</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13603
@@ -15136,6 +16033,8 @@ msgid ""
 "File mode; see <citerefentry><refentrytitle>chmod</"
 "refentrytitle><manvolnum>2</manvolnum></citerefentry>"
 msgstr ""
+"Modo de archivo; ver <citerefentry><refentrytitle>chmod</refentrytitle><manvo"
+"lnum>2</manvolnum></citerefentry>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:13609
@@ -15146,14 +16045,21 @@ msgid ""
 "<errorcode>EACCES</errorcode> for label mismatch, or <errorcode>EPERM</"
 "errorcode> for lack of privilege."
 msgstr ""
+"Determine si la credencial del sujeto puede establecer el modo pasado en el "
+"vnode pasado. Regreso <returnvalue>0</returnvalue> para el éxito, o un "
+"<varname>errno</varname> valor por fracaso. Fallo sugerido: "
+"<errorcode>EACCES</errorcode> si la etiqueta no coincide, o "
+"<errorcode>EPERM</errorcode> por falta de privilegio."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:13619
+#, fuzzy
 msgid "<function>mpo_check_vnode_setowner</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_setowner</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:13622
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_vnode_setowner</function></funcdef> "
 "<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
@@ -15162,26 +16068,34 @@ msgid ""
 "<paramdef>uid_t <parameter>uid</parameter></paramdef> <paramdef>gid_t "
 "<parameter>gid</parameter></paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_vnode_setowner</function></funcdef> "
+"<paramdef>struct ucred *<parameter>cred</parameter></paramdef> "
+"<paramdef>struct vnode *<parameter>vp</parameter></paramdef> "
+"<paramdef>struct label *<parameter>label</parameter></paramdef> "
+"<paramdef>uid_t <parameter>uid</parameter></paramdef> <paramdef>gid_t "
+"<parameter>gid</parameter></paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13671
+#, fuzzy
 msgid "<parameter>uid</parameter>"
-msgstr ""
+msgstr "<parameter>uid</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13672
 msgid "User ID"
-msgstr ""
+msgstr "ID de usuario"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13676
+#, fuzzy
 msgid "<parameter>gid</parameter>"
-msgstr ""
+msgstr "<parameter>gid</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13677
 msgid "Group ID"
-msgstr ""
+msgstr "Identificación del grupo"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:13683
@@ -15193,14 +16107,23 @@ msgid ""
 "Suggested failure: <errorcode>EACCES</errorcode> for label mismatch, or "
 "<errorcode>EPERM</errorcode> for lack of privilege."
 msgstr ""
+"Determine si la credencial del sujeto puede establecer el uid pasado y gid "
+"pasado como uid de archivo y gid de archivo en el vnode pasado. Los ID "
+"pueden configurarse en (<literal>-1</literal>)para no solicitar ninguna "
+"actualización. Regreso <returnvalue>0</returnvalue> para el éxito, o un "
+"<varname>errno</varname> valor por fracaso. Fallo "
+"sugerido:<errorcode>EACCES</errorcode> si la etiqueta no coincide, o "
+"<errorcode>EPERM</errorcode>por falta de privilegio."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:13694
+#, fuzzy
 msgid "<function>mpo_check_vnode_setutimes</function>"
-msgstr ""
+msgstr "<function>mpo_check_vnode_setutimes</function>"
 
 #. (itstool) path: funcsynopsis/funcprototype
 #: book.translate.xml:13697
+#, fuzzy
 msgid ""
 "<funcdef>int <function>mpo_check_vnode_setutimes</function></funcdef> "
 "<paramdef>struct ucred *<parameter/>cred</paramdef> <paramdef>struct vnode "
@@ -15208,16 +16131,22 @@ msgid ""
 "paramdef> <paramdef>struct timespec <parameter/>atime</paramdef> "
 "<paramdef>struct timespec <parameter/>mtime</paramdef>"
 msgstr ""
+"<funcdef>int <function>mpo_check_vnode_setutimes</function></funcdef> "
+"<paramdef>struct ucred *<parameter/>cred</paramdef> <paramdef>struct vnode *<"
+"parameter/>vp</paramdef> <paramdef>struct label *<parameter/>label</"
+"paramdef> <paramdef>struct timespec <parameter/>atime</paramdef> "
+"<paramdef>struct timespec <parameter/>mtime</paramdef>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13733
 msgid "Object; vp"
-msgstr ""
+msgstr "Objeto; vp"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13743
+#, fuzzy
 msgid "<parameter>atime</parameter>"
-msgstr ""
+msgstr "<parameter>atime</parameter>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13744
@@ -15225,6 +16154,8 @@ msgid ""
 "Access time; see <citerefentry><refentrytitle>utimes</"
 "refentrytitle><manvolnum>2</manvolnum></citerefentry>"
 msgstr ""
+"Tiempo de acceso; ver <citerefentry><refentrytitle>utimes</refentrytitle><man"
+"volnum>2</manvolnum></citerefentry>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13748
