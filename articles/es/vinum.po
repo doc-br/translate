@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:08-0300\n"
-"PO-Revision-Date: 2020-12-23 17:05+0000\n"
+"PO-Revision-Date: 2020-12-27 11:37+0000\n"
 "Last-Translator: Fernando  Apesteguía <fernando.apesteguia@gmail.com>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_vinum/es/>\n"
@@ -124,7 +124,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: article.translate.xml:76
 msgid "Access Bottlenecks"
-msgstr ""
+msgstr "Cuellos de botella de acceso"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:78
@@ -134,6 +134,11 @@ msgid ""
 "sessions and have multiple 100 Mbit/s connections to the outside world, well "
 "beyond the sustained transfer rate of most disks."
 msgstr ""
+"Los sistemas modernos necesitan frecuentemente acceder a los datos de una "
+"forma altamente concurrente. Por ejemplo, grandes servidores de FTP o HTTP "
+"pueden mantener miles de sesiones concurrents y tener conexiones de 100 Mbit/"
+"s al mundo exterior, mucho más que la tasa de transferencia mantenida de la "
+"mayoría de los discos."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:84
@@ -146,6 +151,14 @@ msgid ""
 "that a transfer places on the subsystem, or the time for which a transfer "
 "occupies the drives involved in the transfer."
 msgstr ""
+"Las unidades de disco actuales pueden transferir datos secuencialmente hasta "
+"unos 70 MB/s, pero este valor tiene poca importancia en un entorno en el que "
+"muchos procesos independientes acceden a un dispositivo, y donde solo pueden "
+"conseguir una fracción de esos valores. En tales casos, es más interesante "
+"ver el problema desde el punto de vista del subsistema de disco. El "
+"parámetro importante es la carga que una transferencia supone en el "
+"subsistema, o el tiempo para el cual la transferencia ocupa los dispositivos "
+"involucrados en la misma."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:94
@@ -155,6 +168,10 @@ msgid ""
 "These actions can be considered to be atomic as it does not make any sense "
 "to interrupt them."
 msgstr ""
+"En cualquier transferencia de disco, la unidad debe primero posicionar el "
+"cabecal, esperar a que el primer sector pase bajo la cabeza de lectura, y "
+"después realizar la transferencia. Estas acciones pueden considerarse "
+"atómicas y que no tiene sentido interrumpirlas."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:100
@@ -167,6 +184,14 @@ msgid ""
 "positioning time. In such a case, the effective transfer rate drops to a "
 "little over 1 MB/s and is clearly highly dependent on the transfer size."
 msgstr ""
+"<anchor xml:id=\"vinum-latency\"/>Considera una transferencia típica de unos "
+"10 kB: la generación actual de discos de alto rendimiento pueden situar los "
+"cabezales en unos 3.5 ms de media. Los discos más rápidos giran a 15,000 "
+"rpm, así que la latencia rotacional media (media revolución) es 2 ms. A 70 "
+"MB/s, la propia transferencia tarda unos 150 μs, casi nada comparado con el "
+"tiempo de posicionamiento. En ese caso, la tasa efectiva de transferencia "
+"cae hasta un poco más de 1 MB/s y depende claramente del tamaño de la "
+"transferencia."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:111
@@ -177,6 +202,11 @@ msgid ""
 "positioning and transferring independently, so the effective throughput "
 "increases by a factor close to the number of disks used."
 msgstr ""
+"La solución obvia y tradicional a este cuello de botella es <quote>más "
+"agujas</quote>: en lugar de usar un gran disco, usar varios discos pequeños "
+"con el mismo espacio de almacenamiento agregado. Cada disco es capaz de "
+"posicionar y transferir de forma independiente, así que el rendimiento "
+"efectivo aumenta en un factor próximo al número de discos utilizados."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:118
@@ -186,11 +216,16 @@ msgid ""
 "is no way to ensure that the requests are evenly distributed across the "
 "drives. Inevitably the load on one drive will be higher than on another."
 msgstr ""
+"La mejora de rendimiento real es menor que el número de discos involucrados. "
+"Aunque cada dispositivo es capaz de transferir en paralelo, no hay forma de "
+"asegurar que las peticiones se distribuyen de forma equilibrada entre los "
+"dispositivos. Inevitablemente la carga en un dispositivo será mayor que en "
+"otro."
 
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:124
 msgid "<primary>disk concatenation</primary>"
-msgstr ""
+msgstr "<primary>concatenación de discos</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:127
@@ -215,11 +250,26 @@ msgid ""
 "illustrates the sequence in which storage units are allocated in a "
 "concatenated organization."
 msgstr ""
+"El reparto equitativo de la carga en los discos depende fuertemente de la "
+"forma en la que los datos se comparten entre los dispositivos. En la "
+"siguiente discusión, es conveniente pensar en el almacenamiento de disco "
+"como un número grande de sectores que son direccionables mediante un número, "
+"parecido a las páginas de un libro. El método más obvio es dividir el disco "
+"virtual en grupos de sectores consecutivos del tamaño de los discos físicos "
+"individuales y almacenarlos de este modo, como coger un libro grande y "
+"romperlo en secciones pequeñas. Este método se llama "
+"<emphasis>concatenacion</emphasis> y tiene la ventaja de que los discos no "
+"requieren tener ninguna relación específica de tamaño entre ellos. Funciona "
+"bien cuando los accesos al disco virtual se reparten equitativamente en su "
+"espacio de direcciones. Cuando el acceso se concentra en un área más "
+"pequeña, la mejora es menos acentuada. <xref linkend=\"vinum-concat\"/> "
+"ilustra una secuencia en la que las unidades de almacenamiento están "
+"asignadas en una organización concatenada."
 
 #. (itstool) path: figure/title
 #: article.translate.xml:152
 msgid "Concatenated Organization"
-msgstr ""
+msgstr "Organización Concatenada"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -234,7 +284,7 @@ msgstr "external ref='vinum-concat' md5='__failed__'"
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:161
 msgid "<primary>disk striping</primary>"
-msgstr ""
+msgstr "<primary>divisiones de disco</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:164
@@ -244,7 +294,7 @@ msgstr ""
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:168
 msgid "<primary><acronym>RAID</acronym></primary>"
-msgstr ""
+msgstr "<primary><acronym>RAID</acronym></primary>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:172
@@ -256,6 +306,13 @@ msgid ""
 "repeats until the disks are full. This mapping is called <emphasis>striping</"
 "emphasis> or <acronym>RAID-0</acronym>."
 msgstr ""
+"Un mapeo alternativo es dividir el espacio de direcciones en componentes más "
+"pequeños del mismos tamaño y almacenarlos secuencialmente en distintos "
+"dispositivos. Por ejemplo, los primeros 256 sectores podrían ser almacenados "
+"en el primer disco, los 256 sectores siguientes en el siguiente disco, etc. "
+"Después de rellenar el último disco, el proceso se repite hasta que los "
+"discos están llenos. Este mapeo se llama <emphasis>striping</emphasis> o "
+"<acronym>RAID-0</acronym>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:181
@@ -268,11 +325,18 @@ msgid ""
 "linkend=\"vinum-striped\"/> illustrates the sequence in which storage units "
 "are allocated in a striped organization."
 msgstr ""
+"<acronym>RAID</acronym> ofrece varias formas de tolerancia a fallos, aunque "
+"<acronym>RAID-0</acronym> es algo engañoso ya que no provee redundancia. El "
+"striping requiere algo más de esfuerzo para localizar el dato, y puede "
+"ocasionar carga de E/S adicional cuando una transferencia está repartida por "
+"múltiples discos, pero también puede proporcionar una carga más constante "
+"entre los discos. <xref linkend=\"vinum-striped\"/> ilustra la secuencia en "
+"la que las unidades de discos están asignadas en una organización striped."
 
 #. (itstool) path: figure/title
 #: article.translate.xml:193
 msgid "Striped Organization"
-msgstr ""
+msgstr "Organización Striped"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -287,7 +351,7 @@ msgstr "external ref='vinum-striped' md5='__failed__'"
 #. (itstool) path: sect1/title
 #: article.translate.xml:204
 msgid "Data Integrity"
-msgstr ""
+msgstr "Integridad de los Datos"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:206
@@ -298,11 +362,17 @@ msgid ""
 "the results can be catastrophic and replacing a failed disk drive and "
 "restoring data can result in server downtime."
 msgstr ""
+"El último problema con los discos es que no son fiables. Aunque la "
+"fiabilidad se ha incrementado tremendamente en los últimos años, las "
+"unidades de disco todavía son el componente central de un servidor más "
+"propensos a fallar. Cuando lo hacen, los resultados pueden ser catastróficas "
+"y reemplazar una unidad de disco que ha fallado y restaurar los datos puede "
+"resultar en tiempo de parada del servidor."
 
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:213
 msgid "<primary>disk mirroring</primary>"
-msgstr ""
+msgstr "<primary>mirroring de disco</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:216
@@ -312,7 +382,7 @@ msgstr ""
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:219
 msgid "<primary><acronym>RAID</acronym>-1</primary>"
-msgstr ""
+msgstr "<primary><acronym>RAID</acronym>-1</primary>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:222
@@ -323,16 +393,23 @@ msgid ""
 "be satisfied from either, so if one drive fails, the data is still available "
 "on the other drive."
 msgstr ""
+"Una aproximación a este problema es el <emphasis>mirroring</emphasis>, o "
+"<acronym>RAID-1</acronym>, que mantiene dos copias de los datos en distinto "
+"hardware físico. Cualquier escritura en el volúmen escribe en ambos discos; "
+"una lectura puede ser resuelta por cualquiera, así que si un disco falla, "
+"los datos todavía están disponibles en la otra unidad."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:230
 msgid "Mirroring has two problems:"
-msgstr ""
+msgstr "El Mirroring tiene dos problemas:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:234
 msgid "It requires twice as much disk storage as a non-redundant solution."
 msgstr ""
+"Requiere el doble de espacio de almacenamiento que una solución sin "
+"redundancia."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:239
@@ -341,11 +418,14 @@ msgid ""
 "of a non-mirrored volume. Reads do not suffer from a performance penalty and "
 "can even be faster."
 msgstr ""
+"Las escrituras deben realizarse en las dos unidades, de forma que utilizan "
+"el doble de ancho de banda que un volúmen sin mirroring. Las lecturas no "
+"sufren penalización en lectura e incluso pueden ser más rápidas."
 
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:246
 msgid "<primary><acronym>RAID</acronym>-5</primary>"
-msgstr ""
+msgstr "<primary><acronym>RAID</acronym>-5</primary>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:248
@@ -361,11 +441,22 @@ msgid ""
 "acronym>, the location of this parity block changes from one stripe to the "
 "next. The numbers in the data blocks indicate the relative block numbers."
 msgstr ""
+"Una solución alternativa es la<emphasis>paridad</emphasis>, implementada en "
+"los niveles <acronym>RAID</acronym> 2, 3, 4 y 5. De estos, <acronym>RAID-5</"
+"acronym> es el más interesante. Como está implementado en <filename>vinum</"
+"filename>, es una variante en una organización striped que dedica un bloque "
+"en cada sección para guardar la paridad de los otros bloques. Tal como está "
+"implementado en <filename>vinum</filename>, un <acronym>RAID-5</acronym> "
+"plex es similar a un striped plex, excepto que implementa <acronym>RAID-5</"
+"acronym> al incluir un bloque de paridad en cada sección. Según lo requerido "
+"por <acronym>RAID-5</acronym>, la localización de este bloque de paridad "
+"cambia de una sección a la siguiente. Los números en los bloques de datos "
+"indican los números de bloque relativos."
 
 #. (itstool) path: figure/title
 #: article.translate.xml:264
 msgid "<acronym>RAID</acronym>-5 Organization"
-msgstr ""
+msgstr "Organización <acronym>RAID</acronym>-5"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -388,11 +479,19 @@ msgid ""
 "accessible drives continues normally, but a read from the failed drive is "
 "recalculated from the corresponding block from all the remaining drives."
 msgstr ""
+"Comparado con el mirroring, <acronym>RAID-5</acronym> tiene la ventaja de "
+"que requiere mucho menos espacio de almacenamiento. El acceso de lectura es "
+"similar a una organización striped, pero el acceso de escritura es "
+"significativamente más lento, aproximadamente el 25% del rendimiento de "
+"lectura. Si una unidad falla, el array puede seguir operando en un modo "
+"degradado donde una lectura de una de las unidades que quedan accesibles "
+"continua normalmente, pero una lectura de una unidad que ha fallado es "
+"recalculada a partir de los bloques correspondientes del resto de unidades."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:285
 msgid "<filename>vinum</filename> Objects"
-msgstr ""
+msgstr "Objetos <filename>vinum</filename>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:287
