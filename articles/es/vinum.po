@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:08-0300\n"
-"PO-Revision-Date: 2020-12-27 11:37+0000\n"
+"PO-Revision-Date: 2020-12-29 01:50+0000\n"
 "Last-Translator: Fernando  Apesteguía <fernando.apesteguia@gmail.com>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_vinum/es/>\n"
@@ -499,6 +499,8 @@ msgid ""
 "In order to address these problems, <filename>vinum</filename> implements a "
 "four-level hierarchy of objects:"
 msgstr ""
+"Para abordar estos problemas, <filename>vinum</filename> implementa una "
+"jerarquía de objetos en cuatro niveles:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:293
@@ -508,6 +510,11 @@ msgid ""
 "class=\"registered\">UNIX</trademark> disk drive, though there are some "
 "minor differences. For one, they have no size limitations."
 msgstr ""
+"El objeto más visible es el disco virtual, llamado <emphasis>volumen</"
+"emphasis>. Volúmenes tienen esencialmente las mismas propiedades que una "
+"unidad de disco <trademark class=\"registered\">UNIX</trademark> aunque hay "
+"algunas pequeñas diferencias. Una de ellas, que no tienen limitación de "
+"tamaño."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:301
@@ -517,6 +524,11 @@ msgid ""
 "redundancy. Think of plexes as individual disks in a mirrored array, each "
 "containing the same data."
 msgstr ""
+"Los volúmenes se componen de <emphasis>plexes</emphasis>, cada uno de los "
+"cuales representa el espacio de direcciones total de un volumen. Este nivel "
+"en la jerarquía proporciona redundancia. Piensa en los plexes como en discos "
+"individuales en un array replicado en espejo, cada uno conteniendo los "
+"mismos datos."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:309
@@ -532,6 +544,16 @@ msgid ""
 "called <emphasis>subdisks</emphasis>, which are used as building blocks for "
 "plexes."
 msgstr ""
+"Puesto que <filename>vinum</filename> dentro del framework de almacenamiento "
+"de disco de <trademark class=\"registered\">UNIX</trademark>, sería posible "
+"utilizar particiones <trademark class=\"registered\">UNIX</trademark> como "
+"bloques de construción para plexes multi-disco. En realidad, esto resulta "
+"demasiado poco flexible ya que los discos <trademark class=\"registered\""
+">UNIX</trademark> sólo pueden tener un número limitado de particiones. En su "
+"lugar, <filename>vinum</filename> subdivide una única partición <trademark "
+"class=\"registered\">UNIX</trademark>, la <emphasis>drive</emphasis>, en "
+"areas contiguas llamadas <emphasis>subdiscos</emphasis>, los cuales se "
+"utilizan como bloques de construcción de plexes."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:321
@@ -543,6 +565,12 @@ msgid ""
 "for storing configuration and state information, the entire drive is "
 "available for data storage."
 msgstr ""
+"Los subdiscos residen en <emphasis>unidades</emphasis> <filename>vinum</"
+"filename>, actualmente particiones <trademark class=\"registered\">UNIX</"
+"trademark>. Las unidades <filename>vinum</filename> pueden tener cualquier "
+"número de subdiscos. Con la excepción de una pequeña área al comienzo de la "
+"unidad, que es utilizada para almacenar información de estado y "
+"configuración, la unidad entera está disponible para almacenamiento de datos."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:331
@@ -550,11 +578,13 @@ msgid ""
 "The following sections describe the way these objects provide the "
 "functionality required of <filename>vinum</filename>."
 msgstr ""
+"Las secciones siguientes describen el modo en el que estos objetos "
+"proporcionan la funcionalidad requerida por <filename>vinum</filename>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:336
 msgid "Volume Size Considerations"
-msgstr ""
+msgstr "Consideraciones sobre el Tamaño del Volumen"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:338
@@ -563,11 +593,14 @@ msgid ""
 "<filename>vinum</filename> configuration. As a result, the size of an "
 "individual drive does not limit the size of a plex or a volume."
 msgstr ""
+"Plexes pueden incluir múltiples subdiscos repartidos por todas las unidades "
+"en la configuración de <filename>vinum</filename>. Como resultado, el tamaño "
+"de una unidad individual no limita el tamaño de un plex o un volumen."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:345
 msgid "Redundant Data Storage"
-msgstr ""
+msgstr "Almacenamiento de Datos Redundante"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:347
@@ -576,6 +609,9 @@ msgid ""
 "to a volume. Each plex is a representation of the data in a volume. A volume "
 "may contain between one and eight plexes."
 msgstr ""
+"<filename>vinum</filename> implementa mirroring adjuntando varios plexes a "
+"un volumen. Cada plex es una representación de los datos en un volumen. Un "
+"volumen puede contener entre uno y ocho plexes."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:352
@@ -586,11 +622,17 @@ msgid ""
 "the failure of a drive). As long as at least one plex can provide the data "
 "for the complete address range of the volume, the volume is fully functional."
 msgstr ""
+"Aunque un plex representa los datos completos de un volumen, es posible que "
+"algunas partes de esta representación falten físicamente, bien por diseño ("
+"no definiendo un subdisco para algunas partes del plex) o por accidente ("
+"como resultado del fallo de una unidad). Mientras un plex pueda proveer los "
+"datos para el rango completo de direcciones del volumen, este es plenamente "
+"funcional."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:362
 msgid "Which Plex Organization?"
-msgstr ""
+msgstr "¿Qué Organización Plex?"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:364
@@ -598,6 +640,8 @@ msgid ""
 "<filename>vinum</filename> implements both concatenation and striping at the "
 "plex level:"
 msgstr ""
+"<filename>vinum</filename> implementa tanto concatenación como striping a "
+"nivel de plex:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:369
@@ -611,6 +655,14 @@ msgid ""
 "are most susceptible to hot spots, where one disk is very active and others "
 "are idle."
 msgstr ""
+"Un <emphasis>plex concatenado</emphasis> usa el espacio de direcciones de "
+"cada subdisco por turnos. Los plexes concatenados son los más flexibles ya "
+"que pueden contener cualquier número de subdiscos, y los subidscos pueden "
+"ser de distintas longitudes. El plex se puede extender añadiendo subdiscos "
+"adicioinales. Requieren menos tiempo de <acronym>CPU</acronym> que los "
+"striped plexes, aunqu la diferencia en sobrecarga de <acronym>CPU</acronym> "
+"casi no se nota. Por otro lado, son más susceptibles a los puntos calientes, "
+"en donde un disco está muy activo y los otros ociosos."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:382
@@ -623,6 +675,14 @@ msgid ""
 "component drives. Extending a plex by adding new subdisks is so complicated "
 "that <filename>vinum</filename> does not implement it."
 msgstr ""
+"Un <emphasis>striped plex</emphasis> reparte los datos entre los distintos "
+"subdiscos. Los subdiscos deben tener todos el mismo tamaño y debe haber al "
+"menos dos subdiscos para poder distinguirlo de un plex concatenado. La mayor "
+"ventaja de los striped plexes is que reducen los puntos calientes. "
+"Escogiendo un tamaño óptimo de stripe, alrededor de 256 kB, la carga se "
+"puede repartir equitativamente entre las unidades. Extender un plex "
+"añadiendo nuevos subdiscos es tan complicado que <filename>vinum</filename> "
+"no lo implementa."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:395
@@ -630,46 +690,48 @@ msgid ""
 "<xref linkend=\"vinum-comparison\"/> summarizes the advantages and "
 "disadvantages of each plex organization."
 msgstr ""
+"<xref linkend=\"vinum-comparison\"/> resume las ventajas y desventajas de "
+"cada organización plex."
 
 #. (itstool) path: table/title
 #: article.translate.xml:399
 msgid "<filename>vinum</filename> Plex Organizations"
-msgstr ""
+msgstr "Organizaciones Plex en <filename>vinum</filename>"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:405
 msgid "Plex type"
-msgstr ""
+msgstr "Tipo de plex"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:406
 msgid "Minimum subdisks"
-msgstr ""
+msgstr "Subdiscos mínimos"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:407
 msgid "Can add subdisks"
-msgstr ""
+msgstr "Puede añadir subdiscos"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:408
 msgid "Must be equal size"
-msgstr ""
+msgstr "Deben tener el mismo tamaño"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:409
 msgid "Application"
-msgstr ""
+msgstr "Aplicación"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:415
 msgid "concatenated"
-msgstr ""
+msgstr "concatenado"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:416
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:417 article.translate.xml:427
@@ -687,11 +749,13 @@ msgid ""
 "Large data storage with maximum placement flexibility and moderate "
 "performance"
 msgstr ""
+"Almacenamiento de grandes cantidades de datos con máxima flexibilidad de "
+"colocación y rendimiento moderado"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:424
 msgid "striped"
-msgstr ""
+msgstr "striped"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:425
@@ -701,12 +765,12 @@ msgstr "2"
 #. (itstool) path: row/entry
 #: article.translate.xml:428
 msgid "High performance in combination with highly concurrent access"
-msgstr ""
+msgstr "Alto rendimiento combinado con acceso altamente concurrente"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:438
 msgid "Some Examples"
-msgstr ""
+msgstr "Algunos Ejemplos"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:440
@@ -721,11 +785,21 @@ msgid ""
 "each state change, so that a restart accurately restores the state of each "
 "<filename>vinum</filename> object."
 msgstr ""
+"<filename>vinum</filename> mantiene una <emphasis>base de datos de "
+"configuración</emphasis> la cual describe los objetos que son conocidos a un "
+"sistema individual. Inicialmente, el usuario crea la base de datos de "
+"configuración a partir de uno o más ficheros de configuración utilizando "
+"<citerefentry><refentrytitle>gvinum</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>. <filename>vinum</filename> almacena una copia de su base de "
+"datos de configuración en cada <emphasis>dispositivo</emphasis> de disco "
+"bajo su control. Esta base de datos se actualiza con cada cambio de estado, "
+"de forma que un reinicio reestablece de forma precisa el estado de cada "
+"objeto de <filename>vinum</filename>."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:453
 msgid "The Configuration File"
-msgstr ""
+msgstr "El Fichero de Configuración"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:455
@@ -733,6 +807,8 @@ msgid ""
 "The configuration file describes individual <filename>vinum</filename> "
 "objects. The definition of a simple volume might be:"
 msgstr ""
+"El fichero de configuración describe objetos de <filename>vinum</filename> "
+"individuales. La definición de un volumen sencillo podría ser:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:459
@@ -751,7 +827,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: article.translate.xml:464
 msgid "This file describes four <filename>vinum</filename> objects:"
-msgstr ""
+msgstr "Este fichero describe cuatro objetos <filename>vinum</filename>:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:469
@@ -762,6 +838,11 @@ msgid ""
 "separation of symbolic names from device names allows disks to be moved from "
 "one location to another without confusion."
 msgstr ""
+"La línea <emphasis>unidad</emphasis> describe una partición de disco "
+"(<emphasis>unidad</emphasis>) y su localización relativa al hardware que hay "
+"debajo. Se le da el nombre simbólico <emphasis>a</emphasis>. La separación "
+"entre los nombres simbólicos y los nombres de dispositvo permite mover "
+"discos de un lugar a otro sin confusión."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:478
@@ -769,6 +850,8 @@ msgid ""
 "The <emphasis>volume</emphasis> line describes a volume. The only required "
 "attribute is the name, in this case <emphasis>myvol</emphasis>."
 msgstr ""
+"La línea <emphasis>volumen</emphasis> describe un volumen. El único atributo "
+"requerido es el nombre, en este caso <emphasis>myvol</emphasis>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:484
@@ -780,6 +863,13 @@ msgid ""
 "emphasis>, where <emphasis>x</emphasis> is the number of the plex in the "
 "volume. Thus this plex will be called <emphasis>myvol.p0</emphasis>."
 msgstr ""
+"La línea <emphasis>plex</emphasis> define un lex. El único parámetro "
+"requerido es la organiación, en este caso <emphasis>concat</emphasis>. El "
+"nombre no es necesario ya que el sistema genera uno automáticamente a partir "
+"del nombre del volumen añadiendo el sufijo <emphasis>."
+"p</emphasis><emphasis>x</emphasis>, donde <emphasis>x</emphasis> es el "
+"número del plex en el volumen. Por lo tanto este plex se llamará "
+"<emphasis>myvol.p0</emphasis>."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:496
@@ -792,6 +882,13 @@ msgid ""
 "of the subdisk in the plex. Thus <filename>vinum</filename> gives this "
 "subdisk the name <emphasis>myvol.p0.s0</emphasis>."
 msgstr ""
+"La línea <emphasis>sd</emphasis> describe un subdisco. La especificación "
+"mínima incluye el nombre de la unidad en la que almacenarlo, y la longitud "
+"del subdisco. El bombre no es necesario ya que el systema asigna un nombre "
+"automáticamente derivado del nombre del plex añadiendo el sufijo <emphasis>."
+"s</emphasis><emphasis>x</emphasis>, donde <emphasis>x</emphasis> es el "
+"número del subdisco en el plex. Por lo tanto <filename>vinum</filename> "
+"asigna a este subdisco el nombre <emphasis>myvol.p0.s0</emphasis>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:508
@@ -800,6 +897,9 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> produces the following "
 "output:"
 msgstr ""
+"Después de procesar este fichero, "
+"<citerefentry><refentrytitle>gvinum</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> produce la siguiente salida:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:511
@@ -846,11 +946,15 @@ msgid ""
 "citerefentry>. It is represented graphically in <xref linkend=\"vinum-simple-"
 "vol\"/>."
 msgstr ""
+"Esta salida muestra el formato de lista abreviada de "
+"<citerefentry><refentrytitle>gvinum</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>. Está representado gráficamente en <xref linkend=\"vinum-"
+"simple-vol\"/>."
 
 #. (itstool) path: figure/title
 #: article.translate.xml:532
 msgid "A Simple <filename>vinum</filename> Volume"
-msgstr ""
+msgstr "Un Volumen <filename>vinum</filename> Sencillo"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -869,6 +973,9 @@ msgid ""
 "the plexes, which in turn contains the subdisks. In this example, the volume "
 "contains one plex, and the plex contains one subdisk."
 msgstr ""
+"Esta imagen, y las que siguen, representa un volumen, el cual contiene "
+"plexes, que a su vez contienen subdiscos. En este ejemplo, el volumen "
+"contiene u nplex, y el plex contiene un subdisco."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:547
@@ -879,11 +986,17 @@ msgid ""
 "from a conventional disk partition. The following sections illustrate "
 "various more interesting configuration methods."
 msgstr ""
+"Este volumen en particular no tiene ninguna ventaja sobre una partición de "
+"disco convencional. Contiene un solo plex, así que no es redundante. El plex "
+"contiene un solo subdisco, así que no hay diferencia en la asignación de "
+"almacenamiento respecto a una particion de disco convencional. Las "
+"siguientes secciones ilustran varios métodos de configuración más "
+"interesantes."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:557
 msgid "Increased Resilience: Mirroring"
-msgstr ""
+msgstr "Resilencia Incrementada: Mirroring"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:559
@@ -893,6 +1006,11 @@ msgid ""
 "are on different drives, so that a drive failure will not take down both "
 "plexes. The following configuration mirrors a volume:"
 msgstr ""
+"La resilencia de un volumen puede ser incrementada mediante mirroring. "
+"Cuando se diseña un volumen en espejo, es importante asegurar que los "
+"subdiscos de cada plex están en diferentes unidades, de forma que el fallo "
+"de una unidad no arrastre ambos plexes. La siguiente configuración hace "
+"mirror de un volumen:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:565
@@ -920,6 +1038,10 @@ msgid ""
 "of all objects in its configuration database. After processing this "
 "definition, the configuration looks like:"
 msgstr ""
+"En este ejemplo, no ha sido necesario especificar la definición de la unidad "
+"<emphasis>a</emphasis> de nuevo, ya que <filename>vinum</filename> hace un "
+"seguimiento de todos los objetos en su base de datos de configuración. "
+"Después de procesar esta definición, la configuración tiene este aspecto:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:578
@@ -978,11 +1100,12 @@ msgstr ""
 #: article.translate.xml:598
 msgid "<xref linkend=\"vinum-mirrored-vol\"/> shows the structure graphically."
 msgstr ""
+"<xref linkend=\"vinum-mirrored-vol\"/> muestra la estructura gráficamente."
 
 #. (itstool) path: figure/title
 #: article.translate.xml:603
 msgid "A Mirrored <filename>vinum</filename> Volume"
-msgstr ""
+msgstr "Un Volumen <filename>vinum</filename> en Espejo"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -1000,11 +1123,13 @@ msgid ""
 "In this example, each plex contains the full 512 MB of address space. As in "
 "the previous example, each plex contains only a single subdisk."
 msgstr ""
+"En este ejemplo, cada plex contiene los 512 MB del espacio de direcciones "
+"completo. Como en el ejemplo anterior, cada plex contiene solo un subdisco."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:619
 msgid "Optimizing Performance"
-msgstr ""
+msgstr "Optimizando el Rendimiento"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:621
@@ -1017,6 +1142,14 @@ msgid ""
 "drives as possible. The following configuration shows a volume with a plex "
 "striped across four disk drives:"
 msgstr ""
+"El volumen en espejo del ejemplo anterior is más resistente a fallos que un "
+"volumen que no esté en espejo, pero su rendimiento es menor ya que cada "
+"escritura en el volumen requiere una escritura en ambas unidades, usando una "
+"mayor porción del ancho de banda total del disco. Las consideraciones de "
+"rendimiento requieren una aproximación diferente: en lugar de replicar en "
+"espejo, los datos son segmentados en tantas unidades de disco como sea "
+"posible. La siguiente configuración muestra un volumen con un plex "
+"segmentado en cuatro discos:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:631
@@ -1047,6 +1180,9 @@ msgid ""
 "to <filename>vinum</filename>. After processing this definition, the "
 "configuration looks like:"
 msgstr ""
+"Como antes, no es necesario definiir las unidades que ya son conocidas por "
+"<filename>vinum</filename>. Después de procesar esta definición, la "
+"configuración tiene este aspecto:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:645
@@ -1129,7 +1265,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: article.translate.xml:675
 msgid "A Striped <filename>vinum</filename> Volume"
-msgstr ""
+msgstr "Un Volumen <filename>vinum</filename> Segmentado"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -1148,11 +1284,15 @@ msgid ""
 "darkness of the stripes indicates the position within the plex address "
 "space, where the lightest stripes come first and the darkest last."
 msgstr ""
+"Este volumen está representado en <xref linkend=\"vinum-striped-vol\"/>. El "
+"color oscuro de los segmentos indican la posición dentro del espacio de "
+"direcciones del plex, donde los segmentos más claros aparecen primero y los "
+"más oscuros últimos."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:692
 msgid "Resilience and Performance"
-msgstr ""
+msgstr "Resiliencia y Rendimiento"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:694
@@ -1162,6 +1302,10 @@ msgid ""
 "performance compared to standard <trademark class=\"registered\">UNIX</"
 "trademark> partitions. A typical configuration file might be:"
 msgstr ""
+"<anchor xml:id=\"vinum-resilience\"/>Con suficiente hardware, es posible "
+"construir volumenes que muestren resilencia aumentada y remdimiento "
+"aumentado comparado con particiones <trademark class=\"registered\">UNIX</"
+"trademark> estándar. Una configuración típica podría ser:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:700
@@ -1202,17 +1346,23 @@ msgid ""
 "first plex. This helps to ensure that writes do not go to the same subdisks "
 "even if a transfer goes over two drives."
 msgstr ""
+"Los subdiscos del segundo plex están desplazados en dos unidades respecto a "
+"aquellos en el primer flex. Esto ayuda a garantizar que las escrituras no "
+"van al mismo subdisco incluso si la transferencia se realiza sobre dos "
+"unidades."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:719
 msgid ""
 "<xref linkend=\"vinum-raid10-vol\"/> represents the structure of this volume."
 msgstr ""
+"<xref linkend=\"vinum-raid10-vol\"/> representa la estructura de este "
+"volumen."
 
 #. (itstool) path: figure/title
 #: article.translate.xml:724
 msgid "A Mirrored, Striped <filename>vinum</filename> Volume"
-msgstr ""
+msgstr "Un Volumen <filename>vinum</filename> Segmentado en Espejo"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -1227,7 +1377,7 @@ msgstr "external ref='vinum-raid10-vol' md5='__failed__'"
 #. (itstool) path: sect1/title
 #: article.translate.xml:737
 msgid "Object Naming"
-msgstr ""
+msgstr "Nombrado de Objetos"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:739
@@ -1237,6 +1387,10 @@ msgid ""
 "recommended as it does not bring a significant advantage and it can cause "
 "confusion."
 msgstr ""
+"<filename>vinum</filename> asigna nombres por defecto a los plexes y los "
+"subdiscos, aunque pueden ser modificados. Modificar los nombres por defecto "
+"no está recomendado ya que no porporciona una ventaja significativa y puede "
+"provocar confusión."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:745
@@ -1246,6 +1400,11 @@ msgid ""
 "plexes, and subdisks may be up to 64 characters long, and the names of "
 "drives may be up to 32 characters long."
 msgstr ""
+"Los nombres pueden contener cualquier carácter que no sea blanco, pero se "
+"recomienda restringirlos a letras, dígitos y al carácter subrayado. Los "
+"nombres de los volúmens, plexes y subdiscos pueden tener hasta 64 caracteres "
+"de longitud, y los nombres de unidades pueden ser de hasta 32 caracteres de "
+"longitud."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:751
@@ -1255,6 +1414,10 @@ msgid ""
 "configuration shown above would cause <filename>vinum</filename> to create "
 "the following device nodes:"
 msgstr ""
+"A los objetos<filename>vinum</filename> se les asignan nodos de dispositivo "
+"en la jerarquía <filename class=\"directory\">/dev/gvinum</filename>. La "
+"configuración que se muestra arriba haría que <filename>vinum</filename> "
+"creara los siguientes nodos de dispositivo:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:758
