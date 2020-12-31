@@ -1,11 +1,11 @@
 # FreeBSD$
 # Juan David Jaramillo Ortiz <juanda097@protonmail.ch>, 2020.
-# Fernando  Apesteguía <fernando.apesteguia@gmail.com>, 2020.
+# Fernando  Apesteguía <fernando.apesteguia@gmail.com>, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-06-06 11:08-0300\n"
-"PO-Revision-Date: 2020-12-30 05:23+0000\n"
+"PO-Revision-Date: 2021-01-01 17:05+0000\n"
 "Last-Translator: Fernando  Apesteguía <fernando.apesteguia@gmail.com>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_vinum/es/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr ""
+msgstr "Fernando Apesteguía fernape@FreeBSD.org"
 
 #. (itstool) path: info/title
 #: article.translate.xml:16
@@ -32,8 +32,8 @@ msgid ""
 "<personname> <firstname>Greg</firstname> <surname>Lehey</surname> </"
 "personname> <contrib>Originally written by </contrib>"
 msgstr ""
-"<contrib>Escrito originalmente por </contrib><personname> <firstname>Greg</"
-"firstname> <surname>Lehey</surname> </personname>"
+"<personname> <firstname>Greg</firstname> <surname>Lehey</surname> </"
+"personname><contrib>Escrito originalmente por </contrib>"
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:30
@@ -230,7 +230,7 @@ msgstr "<primary>concatenación de discos</primary>"
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:127
 msgid "<primary>Vinum</primary> <secondary>concatenation</secondary>"
-msgstr ""
+msgstr "<primary>Vinum</primary><secondary>concatenación</secondary>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:132
@@ -284,12 +284,12 @@ msgstr "external ref='vinum-concat' md5='__failed__'"
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:161
 msgid "<primary>disk striping</primary>"
-msgstr "<primary>divisiones de disco</primary>"
+msgstr "<primary>segmentado de disco</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:164
 msgid "<primary>Vinum</primary> <secondary>striping</secondary>"
-msgstr ""
+msgstr "<primary>Vinum</primary> <secondary>segmentado</secondary>"
 
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:168
@@ -311,7 +311,7 @@ msgstr ""
 "dispositivos. Por ejemplo, los primeros 256 sectores podrían ser almacenados "
 "en el primer disco, los 256 sectores siguientes en el siguiente disco, etc. "
 "Después de rellenar el último disco, el proceso se repite hasta que los "
-"discos están llenos. Este mapeo se llama <emphasis>striping</emphasis> o "
+"discos están llenos. Este mapeo se llama <emphasis>segmentado</emphasis> o "
 "<acronym>RAID-0</acronym>."
 
 #. (itstool) path: sect1/para
@@ -327,16 +327,16 @@ msgid ""
 msgstr ""
 "<acronym>RAID</acronym> ofrece varias formas de tolerancia a fallos, aunque "
 "<acronym>RAID-0</acronym> es algo engañoso ya que no provee redundancia. El "
-"striping requiere algo más de esfuerzo para localizar el dato, y puede "
+"segmentado requiere algo más de esfuerzo para localizar el dato, y puede "
 "ocasionar carga de E/S adicional cuando una transferencia está repartida por "
 "múltiples discos, pero también puede proporcionar una carga más constante "
 "entre los discos. <xref linkend=\"vinum-striped\"/> ilustra la secuencia en "
-"la que las unidades de discos están asignadas en una organización striped."
+"la que las unidades de discos están asignadas en una organización segmentada."
 
 #. (itstool) path: figure/title
 #: article.translate.xml:193
 msgid "Striped Organization"
-msgstr "Organización Striped"
+msgstr "Organización Segmentada"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -372,12 +372,12 @@ msgstr ""
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:213
 msgid "<primary>disk mirroring</primary>"
-msgstr "<primary>mirroring de disco</primary>"
+msgstr "<primary>disco en espejo</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:216
 msgid "<primary>vinum</primary> <secondary>mirroring</secondary>"
-msgstr ""
+msgstr "<primary>vinum</primary> <secondary>configuración en espejo</secondary>"
 
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:219
@@ -402,7 +402,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: article.translate.xml:230
 msgid "Mirroring has two problems:"
-msgstr "El Mirroring tiene dos problemas:"
+msgstr "La configuración en espejo tiene dos problemas:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:234
@@ -419,8 +419,8 @@ msgid ""
 "can even be faster."
 msgstr ""
 "Las escrituras deben realizarse en las dos unidades, de forma que utilizan "
-"el doble de ancho de banda que un volúmen sin mirroring. Las lecturas no "
-"sufren penalización en lectura e incluso pueden ser más rápidas."
+"el doble de ancho de banda que un volúmen sin espejo. Las lecturas no sufren "
+"penalización en lectura e incluso pueden ser más rápidas."
 
 #. (itstool) path: sect1/indexterm
 #: article.translate.xml:246
@@ -444,14 +444,14 @@ msgstr ""
 "Una solución alternativa es la<emphasis>paridad</emphasis>, implementada en "
 "los niveles <acronym>RAID</acronym> 2, 3, 4 y 5. De estos, <acronym>RAID-5</"
 "acronym> es el más interesante. Como está implementado en <filename>vinum</"
-"filename>, es una variante en una organización striped que dedica un bloque "
-"en cada sección para guardar la paridad de los otros bloques. Tal como está "
-"implementado en <filename>vinum</filename>, un <acronym>RAID-5</acronym> "
-"plex es similar a un striped plex, excepto que implementa <acronym>RAID-5</"
-"acronym> al incluir un bloque de paridad en cada sección. Según lo requerido "
-"por <acronym>RAID-5</acronym>, la localización de este bloque de paridad "
-"cambia de una sección a la siguiente. Los números en los bloques de datos "
-"indican los números de bloque relativos."
+"filename>, es una variante en una organización segmentada que dedica un "
+"bloque en cada segmento para guardar la paridad de los otros bloques. Tal "
+"como está implementado en <filename>vinum</filename>, un <acronym>RAID-5</"
+"acronym> plex es similar a un plex segmentado, excepto que implementa "
+"<acronym>RAID-5</acronym> al incluir un bloque de paridad en cada segmento. "
+"Según lo requerido por <acronym>RAID-5</acronym>, la localización de este "
+"bloque de paridad cambia de un segmento al siguiente. Los números en los "
+"bloques de datos indican los números de bloque relativos."
 
 #. (itstool) path: figure/title
 #: article.translate.xml:264
@@ -479,14 +479,15 @@ msgid ""
 "accessible drives continues normally, but a read from the failed drive is "
 "recalculated from the corresponding block from all the remaining drives."
 msgstr ""
-"Comparado con el mirroring, <acronym>RAID-5</acronym> tiene la ventaja de "
-"que requiere mucho menos espacio de almacenamiento. El acceso de lectura es "
-"similar a una organización striped, pero el acceso de escritura es "
-"significativamente más lento, aproximadamente el 25% del rendimiento de "
-"lectura. Si una unidad falla, el array puede seguir operando en un modo "
-"degradado donde una lectura de una de las unidades que quedan accesibles "
-"continua normalmente, pero una lectura de una unidad que ha fallado es "
-"recalculada a partir de los bloques correspondientes del resto de unidades."
+"Comparado con la configuración en espejo, <acronym>RAID-5</acronym> tiene la "
+"ventaja de que requiere mucho menos espacio de almacenamiento. El acceso de "
+"lectura es similar a una organización segmentaada, pero el acceso de "
+"escritura es significativamente más lento, aproximadamente el 25% del "
+"rendimiento de lectura. Si una unidad falla, el array puede seguir operando "
+"en un modo degradado donde una lectura de una de las unidades que quedan "
+"accesibles continua normalmente, pero una lectura de una unidad que ha "
+"fallado es recalculada a partir de los bloques correspondientes del resto de "
+"unidades."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:285
@@ -609,9 +610,9 @@ msgid ""
 "to a volume. Each plex is a representation of the data in a volume. A volume "
 "may contain between one and eight plexes."
 msgstr ""
-"<filename>vinum</filename> implementa mirroring adjuntando varios plexes a "
-"un volumen. Cada plex es una representación de los datos en un volumen. Un "
-"volumen puede contener entre uno y ocho plexes."
+"<filename>vinum</filename> implementa configuraciones en espejo adjuntando "
+"varios plexes a un volumen. Cada plex es una representación de los datos en "
+"un volumen. Un volumen puede contener entre uno y ocho plexes."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:352
@@ -640,7 +641,7 @@ msgid ""
 "<filename>vinum</filename> implements both concatenation and striping at the "
 "plex level:"
 msgstr ""
-"<filename>vinum</filename> implementa tanto concatenación como striping a "
+"<filename>vinum</filename> implementa tanto concatenación como segmentado a "
 "nivel de plex:"
 
 #. (itstool) path: listitem/para
@@ -660,9 +661,9 @@ msgstr ""
 "que pueden contener cualquier número de subdiscos, y los subidscos pueden "
 "ser de distintas longitudes. El plex se puede extender añadiendo subdiscos "
 "adicioinales. Requieren menos tiempo de <acronym>CPU</acronym> que los "
-"striped plexes, aunqu la diferencia en sobrecarga de <acronym>CPU</acronym> "
-"casi no se nota. Por otro lado, son más susceptibles a los puntos calientes, "
-"en donde un disco está muy activo y los otros ociosos."
+"plexes segmentados, aunque la diferencia en sobrecarga de <acronym>CPU</"
+"acronym> casi no se nota. Por otro lado, son más susceptibles a los puntos "
+"calientes, en donde un disco está muy activo y los otros ociosos."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:382
@@ -675,12 +676,12 @@ msgid ""
 "component drives. Extending a plex by adding new subdisks is so complicated "
 "that <filename>vinum</filename> does not implement it."
 msgstr ""
-"Un <emphasis>striped plex</emphasis> reparte los datos entre los distintos "
-"subdiscos. Los subdiscos deben tener todos el mismo tamaño y debe haber al "
-"menos dos subdiscos para poder distinguirlo de un plex concatenado. La mayor "
-"ventaja de los striped plexes is que reducen los puntos calientes. "
-"Escogiendo un tamaño óptimo de stripe, alrededor de 256 kB, la carga se "
-"puede repartir equitativamente entre las unidades. Extender un plex "
+"Un <emphasis>plex segmentado</emphasis> reparte los datos entre los "
+"distintos subdiscos. Los subdiscos deben tener todos el mismo tamaño y debe "
+"haber al menos dos subdiscos para poder distinguirlo de un plex concatenado. "
+"La mayor ventaja de los plexes segmentados es que reducen los puntos "
+"calientes. Escogiendo un tamaño óptimo de segmento, alrededor de 256 kB, la "
+"carga se puede repartir equitativamente entre las unidades. Extender un plex "
 "añadiendo nuevos subdiscos es tan complicado que <filename>vinum</filename> "
 "no lo implementa."
 
@@ -755,7 +756,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: article.translate.xml:424
 msgid "striped"
-msgstr "striped"
+msgstr "segmentado"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:425
@@ -996,7 +997,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: article.translate.xml:557
 msgid "Increased Resilience: Mirroring"
-msgstr "Resilencia Incrementada: Mirroring"
+msgstr "Resilencia Incrementada: Configuración en Espejo"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:559
@@ -1006,11 +1007,11 @@ msgid ""
 "are on different drives, so that a drive failure will not take down both "
 "plexes. The following configuration mirrors a volume:"
 msgstr ""
-"La resilencia de un volumen puede ser incrementada mediante mirroring. "
-"Cuando se diseña un volumen en espejo, es importante asegurar que los "
-"subdiscos de cada plex están en diferentes unidades, de forma que el fallo "
-"de una unidad no arrastre ambos plexes. La siguiente configuración hace "
-"mirror de un volumen:"
+"La resilencia de un volumen puede ser incrementada mediante una "
+"configuración en espejo. Cuando se diseña un volumen en espejo, es "
+"importante asegurar que los subdiscos de cada plex están en diferentes "
+"unidades, de forma que el fallo de una unidad no arrastre ambos plexes. La "
+"siguiente configuración crea un espejo de un volumen:"
 
 #. (itstool) path: sect2/programlisting
 #: article.translate.xml:565
@@ -2016,6 +2017,14 @@ msgid ""
 "booted from a <quote>Fixit</quote> media, or in a two-step process where, in "
 "a mirror, the disk that is not been currently booted is manipulated first."
 msgstr ""
+"Si ya hay en el dispositivo una partición <literal>a</literal> de un sistema "
+"raíz pre-<filename>vinum</filename>, se debería renombrar a algo diferente "
+"de forma que se mantenga accesible (por si acaso), pero ya no será utilizado "
+"como arranque por defecto del sistema. Un sistema de ficheros raíz que está "
+"actualmente montado no puede ser renombrado, así que esto se debe ejecutar "
+"arrancando desde un medio <quote>Fixit</quote>, o en un proceso de dos pasos "
+"donde, en una configuración en espejo, el disco que no está siendo "
+"arrancando es manipulado primero."
 
 #. (itstool) path: step/para
 #: article.translate.xml:1061
@@ -2030,6 +2039,16 @@ msgid ""
 "literal> values should be chosen to match the actual file system, though "
 "they are fairly unimportant within this context."
 msgstr ""
+"El desplazamiento de la partición <filename>vinum</filename> en este "
+"dispositivo (si lo hay) se debe añadir al desplazamiento del subdisco del "
+"volumen raíz respectivo en este dispositvo.El valor resultante será el valor "
+"del <literal>offset</literal> para la nueva partición <literal>a</literal>. "
+"El valor de <literal>size</literal> para esta partición se tomará de forma "
+"literal del cálculo anterior. El <literal>fstype</literal> debería ser "
+"<literal>4.2BSD</literal>. Los valores <literal>fsize</literal>, "
+"<literal>bsize</literal>, y <literal>cpg</literal> deberían ser esogidos "
+"para que coincidan con el sistema de ficheros real, aunque no son realmente "
+"importantes en este contexto."
 
 #. (itstool) path: step/para
 #: article.translate.xml:1076
@@ -2040,6 +2059,11 @@ msgid ""
 "<filename>vinum</filename> partition has properly been marked using the "
 "<literal>vinum</literal> fstype."
 msgstr ""
+"De ese modo, se establecerá una nueva partición <literal>a</literal> que "
+"solapa la partición <filename>vinum</filename> en este "
+"dispositivo.<command>bsdlabel</command> solo permitirá este solapamiento si "
+"la partición <filename>vinum</filename> ha sido adecuadamente marcada "
+"utilizando el fstype <literal>vinum</literal>."
 
 #. (itstool) path: step/para
 #: article.translate.xml:1086
@@ -2048,12 +2072,17 @@ msgid ""
 "one replica of the root volume. It is highly recommendable to verify the "
 "result using a command like:"
 msgstr ""
+"Ahora existe una falsa partición <literal>a</literal> en cada dispositivo "
+"que tiene una réplica del volumen raíz. Es altamente recomendable verificar "
+"el resultado usando un comando como:"
 
 #. (itstool) path: step/screen
 #: article.translate.xml:1091
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>fsck -n /dev/<replaceable>devname</replaceable>a</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>fsck -n /dev/"
+"<replaceable>devname</replaceable>a</userinput>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1095
@@ -2065,6 +2094,12 @@ msgid ""
 "<filename>/etc/fstab</filename> and <filename>/boot/loader.conf</filename> "
 "need to be taken care of."
 msgstr ""
+"Debería recordarse que todos los ficheros que contienen información de "
+"control deben ser relativos al sistema de ficherso raíz en el volumen "
+"<filename>vinum</filename> que, cuando se establece un nuevo volumen raíz "
+"<filename>vinum</filename>, podría no coincidir con el sistema de ficheros "
+"raíz que está actualmente activo. Así que en concreto, hay que tener cuidado "
+"con <filename>/etc/fstab</filename> y <filename>/boot/loader.conf</filename>."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1104
@@ -2075,17 +2110,23 @@ msgid ""
 "all devices have been announced, the prominent notice that shows the success "
 "of this setup is a message like:"
 msgstr ""
+"En el siguiente reinicio, el código de arranque debería averiguar la "
+"información de control apropiada en el nuevo sistema de ficheros raíz "
+"<filename>vinum</filename>, y actuar en consecuencia. Al final del proceso "
+"de inicialización del kernel, después de que todos los dispositivos han sido "
+"anunciados, el aviso destacado que muestra el éxito de esta configuración es "
+"un mensaje como este:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:1111
 #, no-wrap
 msgid "Mounting root from ufs:/dev/gvinum/root"
-msgstr ""
+msgstr "Mounting root from ufs:/dev/gvinum/root"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1115
 msgid "Example of a <filename>vinum</filename>-based Root Setup"
-msgstr ""
+msgstr "Ejemplo de una Configuración Raíz basada en <filename>vinum</filename>"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1118
@@ -2093,6 +2134,9 @@ msgid ""
 "After the <filename>vinum</filename> root volume has been set up, the output "
 "of <command>gvinum l -rv root</command> could look like:"
 msgstr ""
+"Después de que el volumen raíz <filename>vinum</filename> ha sido "
+"configurado, la salida de <command>gvinum l -rv root</command> podría ser "
+"como:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:1122
@@ -2111,6 +2155,18 @@ msgid ""
 "\t\tPlex root.p1 at offset 0 (0  B)\n"
 "\t\tDrive disk1 (/dev/da1h) at offset 135680 (132 kB)"
 msgstr ""
+"...\n"
+"Subdisk root.p0.s0:\n"
+"\t\tSize:        125829120 bytes (120 MB)\n"
+"\t\tState: up\n"
+"\t\tPlex root.p0 at offset 0 (0  B)\n"
+"\t\tDrive disk0 (/dev/da0h) at offset 135680 (132 kB)\n"
+"\n"
+"Subdisk root.p1.s0:\n"
+"\t\tSize:        125829120 bytes (120 MB)\n"
+"\t\tState: up\n"
+"\t\tPlex root.p1 at offset 0 (0  B)\n"
+"\t\tDrive disk1 (/dev/da1h) at offset 135680 (132 kB)"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1135
@@ -2122,11 +2178,18 @@ msgid ""
 "<filename class=\"devicefile\">/dev/da1h</filename>, containing the second "
 "replica of this root volume, has a symmetric setup."
 msgstr ""
+"Los valores en los que fijarse son <literal>135680</literal> para el offset, "
+"en relación a la partición <filename class=\"devicefile\">/dev/da0h</"
+"filename>. Esto se traduce en 256 bloques de disco de 512 bytes en términos "
+"de <command>bsdlabel</command>. De igual modo, el tamaño de este volumen "
+"raíz es 245760 bloques de 512 bytes. <filename class=\"devicefile\">/dev/"
+"da1h</filename>, al contener la segunda réplica de este volumen raíz, tiene "
+"una configuración asimétrica."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1144
 msgid "The bsdlabel for these devices might look like:"
-msgstr ""
+msgstr "El bsdlabel para estos dispositivos podría parecerse a:"
 
 #. (itstool) path: sect2/screen
 #: article.translate.xml:1146
@@ -2139,6 +2202,13 @@ msgid ""
 "  c: 71771688        0    unused        0     0         # (Cyl.    0 - 4467*)\n"
 "  h: 71771672       16     vinum                        # (Cyl.    0*- 4467*)"
 msgstr ""
+"...\n"
+"8 partitions:\n"
+"#        size   offset    fstype   [fsize bsize bps/cpg]\n"
+"  a:   245760      281    4.2BSD     2048 16384     0   # (Cyl.    0*- 15*)\n"
+"  c: 71771688        0    unused        0     0         # (Cyl.    0 - 4467*)"
+"\n"
+"  h: 71771672       16     vinum                        # (Cyl.    0*- 4467*)"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1153
@@ -2153,6 +2223,15 @@ msgid ""
 "<literal>h</literal> partition containing all the <filename>vinum</filename> "
 "data for this device."
 msgstr ""
+"Se puede observar que el parámetro<literal>size</literal> para la partición "
+"falsa <literal>a</literal> coincide con el valor esbozado arriba, mientras "
+"que el parámetro <literal>offset</literal> es la suma del ofset dentro de la "
+"partición <filename>vinum</filename> <literal>h</literal>, y el offset de "
+"esta partición dentro del dispositivo o rebanada. Esta es una configuración "
+"típica que es necesaria para evitar el problema descrito en <xref linkend"
+"=\"vinum-root-panic\"/>. La partición <literal>a</literal> entera está "
+"completamente dentro de la partición <literal>h</literal> que contiene todos "
+"los datos <filename>vinum</filename> para este dispositivo."
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1165
@@ -2161,21 +2240,25 @@ msgid ""
 "filename> and there is no leftover pre-<filename>vinum</filename> root "
 "partition."
 msgstr ""
+"En el ejemplo de arriba, el dispositivo entero está dedicado a "
+"<filename>vinum</filename> y no hay una partición raíz pre-<filename>vinum</"
+"filename> restante."
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1171
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Solución de problemas"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1173
 msgid "The following list contains a few known pitfalls and solutions."
 msgstr ""
+"La siguiente lista contiene unos pocos problemas conocidos y sus soluciones."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1177
 msgid "System Bootstrap Loads, but System Does Not Boot"
-msgstr ""
+msgstr "El Sistema de Arranque Carga, pero el Sistema No Arranca"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1180
@@ -2186,6 +2269,11 @@ msgid ""
 "typing <command>show</command> and manipulated using <command>set</command> "
 "or <command>unset</command>."
 msgstr ""
+"Si por algún motivo el sistema con continúa con el arranque, el proceso de "
+"arranque se puede interrumpir presionando<keycap>espacio</keycap> durante el "
+"aviso de 10 segundos. La variable del cargador <literal>vinum.autostart</"
+"literal> puede examinarse tecleando <command>show</command> y manipularse "
+"usando <command>set</command> o <command>unset</command>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1188
@@ -2193,6 +2281,9 @@ msgid ""
 "If the <filename>vinum</filename> kernel module was not yet in the list of "
 "modules to load automatically, type <command>load geom_vinum</command>."
 msgstr ""
+"Si el módulo del kernel de <filename>vinum</filename> no estaba en la lista "
+"de módulos que son cargados automáticamente, teclea <command>load "
+"geom_vinum</command>."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1192
@@ -2204,6 +2295,13 @@ msgid ""
 "mounted read-only. That way, even if only one plex of a multi-plex volume "
 "has been mounted, no data inconsistency between plexes is being risked."
 msgstr ""
+"Cuando está listo, el proceso de arranque puede continuar tecleando "
+"<command>boot -as</command> <option>-as</option> solicita al kernel que "
+"pregunte por el sistema de ficheros raíz a montar (<option>-a</option>) y "
+"hacer que el proceso de arranque pare en modo de usuario único "
+"(<option>-s</option>), donde el sistema de ficheros raíz está montado como "
+"solo lectura. De ese modo, incluso si sólo ha sido montado un plex de un "
+"volumen multi-plex, no hay riesgo de inconsistencia de datos entre plexes."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1202
@@ -2222,11 +2320,25 @@ msgid ""
 "plex(es) of the <filename>vinum</filename> root volume since these plexes "
 "would otherwise carry inconsistent data."
 msgstr ""
+"En el prompt en el que se pregunta por el sistema de ficheros raíz a montar, "
+"se puede introducir cualquier dispositivo que contiene un sistema de "
+"ficheros raíz válido. Si <filename>/etc/fstab</filename> está configurado "
+"correctamente, el valor por defecto debería ser algo como <literal>ufs:/dev/"
+"gvinum/root</literal>. Una opción alternativa típica sería algo como "
+"<literal>ufs:da0d</literal> que podría contener una hipotética partición de "
+"un sistema de ficheros raíz pre-<filename>vinum</filename>. Ha que tener "
+"cuidado si se introduce uno de los alias de las particiones <literal>a</"
+"literal>, que en realidad referencia los subdiscos del dispositivo raíz "
+"<filename>vinum</filename>, porque en una configuración en espejo, esto sólo "
+"montaría un trozo del dispositivo raíz en espejo. Si este sistema de "
+"ficheros se va a montar como lectura-escritura posteriormente, es necesario "
+"eliminar el otro plex(es) del volumen raíz <filename>vinum</filename> puesto "
+"que de otro modo los plexes tendrían datos inconsistentes."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1224
 msgid "Only Primary Bootstrap Loads"
-msgstr ""
+msgstr "Sólo Carga la Configuración de Arranque Primaria"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1226
@@ -2241,11 +2353,21 @@ msgid ""
 "partition containing the previous root file system that has been moved away "
 "from <literal>a</literal>."
 msgstr ""
+"Si <filename>/boot/loader</filename> falla al cargar, pero la configuración "
+"de arranque primaria todavía carga (visible mediante un sólo guién en la "
+"columna de la izquierda de la pantalla justo después de que comience el "
+"proceso de arranque), se puede intentar interrumpir el arranque primario "
+"presionando <keycap>space</keycap>. Esto hará que el proceso de arranque se "
+"pare en <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/"
+"handbook/boot.html#boot-boot1\">stage two</link>. Aquí se puede intentar "
+"arrancar desde una partición alternativa, como la partición que contiene sl "
+"sistema de ficheros raíz anterior que ha sido movido desde "
+"<literal>a</literal>."
 
 #. (itstool) path: sect3/title
 #: article.translate.xml:1239
 msgid "Nothing Boots, the Bootstrap Panics"
-msgstr ""
+msgstr "Nada Arrnca, el Proceso de Arranque entra en Pánico"
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1242
@@ -2259,6 +2381,15 @@ msgid ""
 "offset 0 within a slice or disk that was meant to be bootable, the "
 "<filename>vinum</filename> setup will trash the bootstrap."
 msgstr ""
+"Esta situación ocurrirá si el código de arranque ha sido destruido por la "
+"instalación de <filename>vinum</filename>. Desafortunadamente, "
+"<filename>vinum</filename> deja por accidente sólo 4KB libres al comienzo de "
+"su partición antes de empezar a escribir la informaciíon de cabecera de "
+"<filename>vinum</filename>. Sin embargo, los códigos de arranque de las "
+"fases uno y dos más bsdlabel requieren 8 KB. Así que si una partición "
+"<filename>vinum</filename> empezó en un offset 0 dentro de una rebanada o "
+"disco que se pretendía que fuera arrancable, la configuración de "
+"<filename>vinum</filename> se llevará por delante el código de arranque."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:1254
@@ -2277,3 +2408,16 @@ msgid ""
 "least 4 KB, in order to have the <filename>vinum</filename> header and the "
 "system bootstrap no longer collide."
 msgstr ""
+"De forma similar, si se ha recuperado de la situación anterior, arrancando "
+"desde un medio <quote>Fixit</quote>, y el código de arranque ha sido "
+"reinstalado utilizando <command>bsdlabel -B</command> como se describe en "
+"<link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/boot."
+"html#boot-boot1\"/>, el código de arranque destruirá la cabecera "
+"<filename>vinum</filename>, y <filename>vinum</filename> ya no podrá "
+"encontrar su(s) disco(s). Aunque ningún volúmen <filename>vinum</filename> o "
+"datos de configuración de <filename>vinum</filename> serán destruidos, y "
+"sería posible recuperar todos los datos introduciendo de nuevo exactamente "
+"los mismos datos de configuración de <filename>vinum</filename> la situación "
+"es difícil de arreglar. Es necesario mover la partición <filename>vinum</"
+"filename> entera al menos 4 KB, para que la cabecera <filename>vinum</"
+"filename> y el código de arranque del sistema ya no colisionen."
