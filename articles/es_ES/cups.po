@@ -5,11 +5,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-06-06 11:07-0300\n"
+"POT-Creation-Date: 2021-01-09 10:57-0300\n"
 "PO-Revision-Date: 2020-12-13 00:04+0000\n"
 "Last-Translator: Aaron H Farías Martinez <timido@ubuntu.com>\n"
-"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
-"freebsd-doc/articles_cups/es/>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/freebsd-"
+"doc/articles_cups/es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -71,12 +71,8 @@ msgstr ""
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:31 article.translate.xml:33
-msgid ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/cups/article.xml 53872 2020-02-06 "
-"19:30:04Z carlavilla $"
+msgid "$FreeBSD$"
 msgstr ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/cups/article.xml 53872 2020-02-06 "
-"19:30:04Z carlavilla $"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:36
@@ -544,11 +540,18 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:255
+#, fuzzy
+#| msgid ""
+#| "If one has an older version of <trademark class=\"registered\">Windows</"
+#| "trademark> without native <acronym>IPP</acronym> printing support, then "
+#| "the general means of connecting to a <application>CUPS</application> "
+#| "printer is to use <package>net/samba410</package> and <application>CUPS</"
+#| "application> together, which is a topic outside the scope of this chapter."
 msgid ""
 "If one has an older version of <trademark class=\"registered\">Windows</"
 "trademark> without native <acronym>IPP</acronym> printing support, then the "
 "general means of connecting to a <application>CUPS</application> printer is "
-"to use <package>net/samba410</package> and <application>CUPS</application> "
+"to use <package>net/samba413</package> and <application>CUPS</application> "
 "together, which is a topic outside the scope of this chapter."
 msgstr ""
 "Si dispone de una versión antigua de <trademark class=\"registered"
@@ -767,3 +770,10 @@ msgstr ""
 "    Order deny,allow\n"
 "  &lt;/Limit&gt;\n"
 "&lt;/Policy&gt;"
+
+#~ msgid ""
+#~ "$FreeBSD: head/en_US.ISO8859-1/articles/cups/article.xml 53872 2020-02-06 "
+#~ "19:30:04Z carlavilla $"
+#~ msgstr ""
+#~ "$FreeBSD: head/en_US.ISO8859-1/articles/cups/article.xml 53872 2020-02-06 "
+#~ "19:30:04Z carlavilla $"

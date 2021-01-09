@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-06-06 11:07-0300\n"
+"POT-Creation-Date: 2021-01-09 10:57-0300\n"
 "PO-Revision-Date: 2020-11-25 17:18+0000\n"
 "Last-Translator: Hans Drexler <drexler@klaan.nl>\n"
 "Language-Team: Dutch <https://translate-dev.freebsd.org/projects/freebsd-doc/"
@@ -62,13 +62,8 @@ msgstr ""
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:31 article.translate.xml:33
-#, fuzzy
-msgid ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/cups/article.xml 53872 2020-02-06 "
-"19:30:04Z carlavilla $"
+msgid "$FreeBSD$"
 msgstr ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/cups/article.xml 53872 2020-02-06 "
-"19:30:04Z carlavilla $"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:36
@@ -101,8 +96,8 @@ msgid ""
 "\">UNIX</trademark> vendors and users."
 msgstr ""
 "<application>CUPS</application>, het Common UNIX Printing System, voorziet "
-"in een portabele afdrukvoorziening voor <trademark class=\"registered\""
-">UNIX</trademark>-gebaseerde bedrijfssystemen. Het is ontwikkeld door Easy "
+"in een portabele afdrukvoorziening voor <trademark class=\"registered"
+"\">UNIX</trademark>-gebaseerde bedrijfssystemen. Het is ontwikkeld door Easy "
 "Software Products om een standaard afdrukoplossing te promoten voor alle "
 "<trademark class=\"registered\">UNIX</trademark> fabrikanten en gebruikers."
 
@@ -217,9 +212,7 @@ msgstr ""
 "add path 'unlpt*' mode 0660 group cups\n"
 "add path 'ulpt*' mode 0660 group cups\n"
 "add path 'lpt*' mode 0660 group cups\n"
-"add path 'usb/"
-"<replaceable>X</replaceable>.<replaceable>Y</replaceable>.<replaceable>Z</"
-"replaceable>' mode 0660 group cups"
+"add path 'usb/<replaceable>X</replaceable>.<replaceable>Y</replaceable>.<replaceable>Z</replaceable>' mode 0660 group cups"
 
 #. (itstool) path: note/para
 #: article.translate.xml:105
@@ -239,10 +232,9 @@ msgstr ""
 "genoemd in de <filename>/dev/usb</filename> directory dat overeenkomt met de "
 "printer. Om het correcte device te vinden, bekijk de uitvoer van "
 "<citerefentry><refentrytitle>dmesg</refentrytitle><manvolnum>8</manvolnum></"
-"citerefentry>, op de plek waar "
-"<filename>ugen<replaceable>X</replaceable>.<replaceable>Y</replaceable></"
-"filename> lists the printer device, die een symbolische link is naar een USB "
-"device in <filename>/dev/usb</filename>."
+"citerefentry>, op de plek waar <filename>ugen<replaceable>X</replaceable>."
+"<replaceable>Y</replaceable></filename> lists the printer device, die een "
+"symbolische link is naar een USB device in <filename>/dev/usb</filename>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:116
@@ -282,8 +274,8 @@ msgid ""
 "<filename>/usr/local/etc/cups/mime.convs</filename>:"
 msgstr ""
 "Om <application>CUPS</application> printen onder zekere <trademark class="
-"\"registered\">Microsoft</trademark> <trademark class=\"registered\""
-">Windows</trademark> clients mogelijk te maken, verwijder de "
+"\"registered\">Microsoft</trademark> <trademark class=\"registered"
+"\">Windows</trademark> clients mogelijk te maken, verwijder de "
 "commentaartekens vann de regel hieronder in <filename>/usr/local/etc/cups/"
 "mime.types</filename> en <filename>/usr/local/etc/cups/mime.convs</filename>:"
 
@@ -464,7 +456,7 @@ msgid ""
 "If one has an older version of <trademark class=\"registered\">Windows</"
 "trademark> without native <acronym>IPP</acronym> printing support, then the "
 "general means of connecting to a <application>CUPS</application> printer is "
-"to use <package>net/samba410</package> and <application>CUPS</application> "
+"to use <package>net/samba413</package> and <application>CUPS</application> "
 "together, which is a topic outside the scope of this chapter."
 msgstr ""
 
@@ -579,3 +571,11 @@ msgid ""
 "  &lt;/Limit&gt;\n"
 "&lt;/Policy&gt;"
 msgstr ""
+
+#, fuzzy
+#~ msgid ""
+#~ "$FreeBSD: head/en_US.ISO8859-1/articles/cups/article.xml 53872 2020-02-06 "
+#~ "19:30:04Z carlavilla $"
+#~ msgstr ""
+#~ "$FreeBSD: head/en_US.ISO8859-1/articles/cups/article.xml 53872 2020-02-06 "
+#~ "19:30:04Z carlavilla $"
