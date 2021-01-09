@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-06-06 11:08-0300\n"
+"POT-Creation-Date: 2021-01-09 10:57-0300\n"
 "PO-Revision-Date: 2019-11-04 00:20+0000\n"
 "Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.eastus.cloudapp.azure."
@@ -152,12 +152,8 @@ msgstr ""
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:110 article.translate.xml:112
-msgid ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/solid-state/article.xml 44923 "
-"2014-05-23 17:36:54Z bcr $"
+msgid "$FreeBSD$"
 msgstr ""
-"$FreeBSD: head/pt_BR.ISO8859-1/articles/solid-state/pt_BR.po 52241 "
-"2018-09-09 12:48:32Z ebrandi $"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:115
@@ -290,10 +286,21 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:180
+#, fuzzy
+#| msgid ""
+#| "All embedded FreeBSD systems that use flash memory as system disk will be "
+#| "interested in memory disks and memory filesystems. Because of the limited "
+#| "number of writes that can be done to flash memory, the disk and the "
+#| "filesystems on the disk will most likely be mounted read-only. In this "
+#| "environment, filesystems such as <filename>/tmp</filename> and <filename>/"
+#| "var</filename> are mounted as memory filesystems to allow the system to "
+#| "create logs and update counters and temporary files. Memory filesystems "
+#| "are a critical component to a successful solid state FreeBSD "
+#| "implementation."
 msgid ""
 "All embedded FreeBSD systems that use flash memory as system disk will be "
-"interested in memory disks and memory filesystems. Because of the limited "
-"number of writes that can be done to flash memory, the disk and the "
+"interested in memory disks and memory filesystems. As a result of the "
+"limited number of writes that can be done to flash memory, the disk and the "
 "filesystems on the disk will most likely be mounted read-only. In this "
 "environment, filesystems such as <filename>/tmp</filename> and <filename>/"
 "var</filename> are mounted as memory filesystems to allow the system to "
@@ -478,8 +485,13 @@ msgstr "Construindo um sistema de arquivos a partir do zero"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:269
+#, fuzzy
+#| msgid ""
+#| "Because ATA compatible compact-flash cards are seen by FreeBSD as normal "
+#| "IDE hard drives, you could theoretically install FreeBSD from the network "
+#| "using the kern and mfsroot floppies or from a CD."
 msgid ""
-"Because ATA compatible compact-flash cards are seen by FreeBSD as normal IDE "
+"Since ATA compatible compact-flash cards are seen by FreeBSD as normal IDE "
 "hard drives, you could theoretically install FreeBSD from the network using "
 "the kern and mfsroot floppies or from a CD."
 msgstr ""
@@ -489,11 +501,19 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:274
+#, fuzzy
+#| msgid ""
+#| "However, even a small installation of FreeBSD using normal installation "
+#| "procedures can produce a system in size of greater than 200 megabytes. "
+#| "Because most people will be using smaller flash memory devices (128 "
+#| "megabytes is considered fairly large - 32 or even 16 megabytes is common) "
+#| "an installation using normal mechanisms is not possible—there is simply "
+#| "not enough disk space for even the smallest of conventional installations."
 msgid ""
 "However, even a small installation of FreeBSD using normal installation "
-"procedures can produce a system in size of greater than 200 megabytes. "
-"Because most people will be using smaller flash memory devices (128 "
-"megabytes is considered fairly large - 32 or even 16 megabytes is common) an "
+"procedures can produce a system in size of greater than 200 megabytes. Most "
+"people will be using smaller flash memory devices (128 megabytes is "
+"considered fairly large - 32 or even 16 megabytes is common), so an "
 "installation using normal mechanisms is not possible—there is simply not "
 "enough disk space for even the smallest of conventional installations."
 msgstr ""
@@ -874,14 +894,23 @@ msgstr "install"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:464
+#, fuzzy
+#| msgid ""
+#| "To make it possible to enter a ports directory and successfully run "
+#| "<command>make</command> <_:buildtarget-1/>, we must create a packages "
+#| "directory on a non-memory filesystem that will keep track of our packages "
+#| "across reboots. Because it is necessary to mount your filesystems as read-"
+#| "write for the installation of a package anyway, it is sensible to assume "
+#| "that an area on the flash media can also be used for package information "
+#| "to be written to."
 msgid ""
 "To make it possible to enter a ports directory and successfully run "
 "<command>make</command> <_:buildtarget-1/>, we must create a packages "
 "directory on a non-memory filesystem that will keep track of our packages "
-"across reboots. Because it is necessary to mount your filesystems as read-"
-"write for the installation of a package anyway, it is sensible to assume "
-"that an area on the flash media can also be used for package information to "
-"be written to."
+"across reboots. As it is necessary to mount your filesystems as read-write "
+"for the installation of a package anyway, it is sensible to assume that an "
+"area on the flash media can also be used for package information to be "
+"written to."
 msgstr ""
 "Para tornar possível entrar em um diretório do ports e executar com sucesso "
 "o comando <command>make</command> <_:buildtarget-1/>, devemos criar um "
@@ -1031,3 +1060,10 @@ msgid ""
 msgstr ""
 "<prompt>#</prompt> <userinput>rm -rf <replaceable>apache_log_dir</replaceable></userinput>\n"
 "<prompt>#</prompt> <userinput>ln -s /var/log/apache <replaceable>apache_log_dir</replaceable></userinput>"
+
+#~ msgid ""
+#~ "$FreeBSD: head/en_US.ISO8859-1/articles/solid-state/article.xml 44923 "
+#~ "2014-05-23 17:36:54Z bcr $"
+#~ msgstr ""
+#~ "$FreeBSD: head/pt_BR.ISO8859-1/articles/solid-state/pt_BR.po 52241 "
+#~ "2018-09-09 12:48:32Z ebrandi $"
