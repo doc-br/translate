@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-06-06 11:08-0300\n"
+"POT-Creation-Date: 2021-01-09 10:57-0300\n"
 "PO-Revision-Date: 2019-08-19 07:23+0000\n"
 "Last-Translator: Sergio Carlavilla <carlavilla@mailbox.org>\n"
 "Language-Team: Spanish (Spain)\n"
@@ -76,10 +76,8 @@ msgstr ""
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:38 article.translate.xml:40
-msgid ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/ldap-auth/article.xml 47080 "
-"2015-07-25 16:21:53Z bcr $"
-msgstr "$FreeBSD$"
+msgid "$FreeBSD$"
+msgstr ""
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:43
@@ -1261,14 +1259,23 @@ msgstr "Advertencias"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:618
+#, fuzzy
+#| msgid ""
+#| "Unfortunately, as of the time this was written FreeBSD did not support "
+#| "changing user passwords with <citerefentry><refentrytitle>passwd</"
+#| "refentrytitle><manvolnum>1</manvolnum></citerefentry>. Because of this, "
+#| "most administrators are left to implement a solution themselves. I "
+#| "provide some examples here. Note that if you write your own password "
+#| "change script, there are some security issues you should be made aware "
+#| "of; see <xref linkend=\"security-passwd\"/>"
 msgid ""
 "Unfortunately, as of the time this was written FreeBSD did not support "
 "changing user passwords with <citerefentry><refentrytitle>passwd</"
-"refentrytitle><manvolnum>1</manvolnum></citerefentry>. Because of this, most "
-"administrators are left to implement a solution themselves. I provide some "
-"examples here. Note that if you write your own password change script, there "
-"are some security issues you should be made aware of; see <xref linkend="
-"\"security-passwd\"/>"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>. As a result of this, "
+"most administrators are left to implement a solution themselves. I provide "
+"some examples here. Note that if you write your own password change script, "
+"there are some security issues you should be made aware of; see <xref "
+"linkend=\"security-passwd\"/>"
 msgstr ""
 "Desafortunadamente, al momento de escribir esto, FreeBSD no soporta el "
 "cambio de contraseñas de usuario con <citerefentry><refentrytitle>passwd</"
@@ -1986,3 +1993,8 @@ msgstr ""
 "<emphasis>certificado</emphasis>, no la clave!) a cada cliente y "
 "especifíquelo en la directiva <literal>TLSCACertificateFile</literal> en el "
 "archivo <filename>ldap.conf</filename>."
+
+#~ msgid ""
+#~ "$FreeBSD: head/en_US.ISO8859-1/articles/ldap-auth/article.xml 47080 "
+#~ "2015-07-25 16:21:53Z bcr $"
+#~ msgstr "$FreeBSD$"
