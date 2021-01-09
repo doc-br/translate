@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-06-06 11:09-0300\n"
+"POT-Creation-Date: 2021-01-09 10:57-0300\n"
 "PO-Revision-Date: 2020-04-18 19:38+0000\n"
 "Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate-dev.freebsd.org/"
@@ -103,12 +103,8 @@ msgstr ""
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:38 article.translate.xml:40
-msgid ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/vm-design/article.xml 43184 "
-"2013-11-13 07:52:45Z hrs $"
+msgid "$FreeBSD$"
 msgstr ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/vm-design/article.xml 43184 "
-"2013-11-13 07:52:45Z hrs $"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:43
@@ -1371,12 +1367,18 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: article.translate.xml:662
+#, fuzzy
+#| msgid ""
+#| "Why do we interleave our swap space instead of just tack swap areas onto "
+#| "the end and do something fancier? Because it is a whole lot easier to "
+#| "allocate linear swaths of an address space and have the result "
+#| "automatically be interleaved across multiple disks than it is to try to "
+#| "put that sophistication elsewhere."
 msgid ""
 "Why do we interleave our swap space instead of just tack swap areas onto the "
-"end and do something fancier? Because it is a whole lot easier to allocate "
-"linear swaths of an address space and have the result automatically be "
-"interleaved across multiple disks than it is to try to put that "
-"sophistication elsewhere."
+"end and do something fancier? It is a whole lot easier to allocate linear "
+"swaths of an address space and have the result automatically be interleaved "
+"across multiple disks than it is to try to put that sophistication elsewhere."
 msgstr ""
 "Por que nós intercalamos nosso espaço de swap em vez de apenas colocar as "
 "áreas de swap no final e fazer algo mais sofisticado? Porque é muito mais "
@@ -1844,3 +1846,10 @@ msgstr ""
 "atribuir páginas verdadeiramente contíguas de memória física a páginas "
 "contíguas de memória virtual, basta certificar-se de atribuir páginas "
 "contíguas do ponto de vista do desempenho e da operação do cache."
+
+#~ msgid ""
+#~ "$FreeBSD: head/en_US.ISO8859-1/articles/vm-design/article.xml 43184 "
+#~ "2013-11-13 07:52:45Z hrs $"
+#~ msgstr ""
+#~ "$FreeBSD: head/en_US.ISO8859-1/articles/vm-design/article.xml 43184 "
+#~ "2013-11-13 07:52:45Z hrs $"
