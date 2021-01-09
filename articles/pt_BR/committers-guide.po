@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-11-16 21:26-0300\n"
+"POT-Creation-Date: 2021-01-09 10:56-0300\n"
 "PO-Revision-Date: 2020-11-22 13:50+0000\n"
 "Last-Translator: Danilo G. Baio <dbaio@FreeBSD.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate-dev.freebsd.org/"
@@ -125,12 +125,10 @@ msgstr ""
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:67 article.translate.xml:69
-msgid ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml 54676 "
-"2020-11-07 14:49:16Z 0mp $"
-msgstr ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml 54676 "
-"2020-11-07 14:49:16Z 0mp $"
+#, fuzzy
+#| msgid "FreeBSD Mall"
+msgid "$FreeBSD$"
+msgstr "FreeBSD Mall"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:72
@@ -2403,8 +2401,14 @@ msgstr "Preparando o Alvo de Mesclagem (Merge Target)"
 
 #. (itstool) path: sect4/para
 #: article.translate.xml:1275
+#, fuzzy
+#| msgid ""
+#| "Because of the mergeinfo propagation issues described earlier, it is very "
+#| "important to never merge changes into a sparse working copy. Always use a "
+#| "full checkout of the branch being merged into. For instance, when merging "
+#| "from HEAD to 7, use a full checkout of stable/7:"
 msgid ""
-"Because of the mergeinfo propagation issues described earlier, it is very "
+"Due to the mergeinfo propagation issues described earlier, it is very "
 "important to never merge changes into a sparse working copy. Always use a "
 "full checkout of the branch being merged into. For instance, when merging "
 "from HEAD to 7, use a full checkout of stable/7:"
@@ -6262,15 +6266,14 @@ msgid ""
 "citerefentry>."
 msgstr ""
 "Para obter mais informações, consulte <package>security/openssh-portable</"
-"package>, "
-"<citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum></"
-"citerefentry>, <citerefentry><refentrytitle>ssh-"
-"add</refentrytitle><manvolnum>1</manvolnum></citerefentry>, "
-"<citerefentry><refentrytitle>ssh-"
-"agent</refentrytitle><manvolnum>1</manvolnum></citerefentry>, "
-"<citerefentry><refentrytitle>ssh-"
-"keygen</refentrytitle><manvolnum>1</manvolnum></citerefentry>, e <citerefentr"
-"y><refentrytitle>scp</refentrytitle><manvolnum>1</manvolnum></citerefentry>."
+"package>, <citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>, <citerefentry><refentrytitle>ssh-add</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>, "
+"<citerefentry><refentrytitle>ssh-agent</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>, <citerefentry><refentrytitle>ssh-keygen</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>, e "
+"<citerefentry><refentrytitle>scp</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:3293
@@ -8833,8 +8836,126 @@ msgstr ""
 
 #. (itstool) path: answer/screen
 #: article.translate.xml:4856
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh 380362</userinput>\n"
+#| " U   2015Q1\n"
+#| "Checked out revision 380443.\n"
+#| "A    2015Q1/security\n"
+#| "Updating '2015Q1/security/rubygem-sshkit':\n"
+#| "A    2015Q1/security/rubygem-sshkit\n"
+#| "A    2015Q1/security/rubygem-sshkit/Makefile\n"
+#| "A    2015Q1/security/rubygem-sshkit/distinfo\n"
+#| "A    2015Q1/security/rubygem-sshkit/pkg-descr\n"
+#| "Updated to revision 380443.\n"
+#| "--- Merging r380362 into '2015Q1':\n"
+#| "U    2015Q1/security/rubygem-sshkit/Makefile\n"
+#| "U    2015Q1/security/rubygem-sshkit/distinfo\n"
+#| "--- Recording mergeinfo for merge of r380362 into '2015Q1':\n"
+#| " U   2015Q1\n"
+#| "--- Recording mergeinfo for merge of r380362 into '2015Q1/security':\n"
+#| " G   2015Q1/security\n"
+#| "--- Eliding mergeinfo from '2015Q1/security':\n"
+#| " U   2015Q1/security\n"
+#| "--- Recording mergeinfo for merge of r380362 into '2015Q1/security/rubygem-sshkit':\n"
+#| " G   2015Q1/security/rubygem-sshkit\n"
+#| "--- Eliding mergeinfo from '2015Q1/security/rubygem-sshkit':\n"
+#| " U   2015Q1/security/rubygem-sshkit\n"
+#| " M      2015Q1\n"
+#| "M       2015Q1/security/rubygem-sshkit/Makefile\n"
+#| "M       2015Q1/security/rubygem-sshkit/distinfo\n"
+#| "Index: 2015Q1/security/rubygem-sshkit/Makefile\n"
+#| "===================================================================\n"
+#| "--- 2015Q1/security/rubygem-sshkit/Makefile     (revision 380443)\n"
+#| "+++ 2015Q1/security/rubygem-sshkit/Makefile     (working copy)\n"
+#| "@@ -2,7 +2,7 @@\n"
+#| " # $FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml 54676 2020-11-07 14:49:16Z 0mp $\n"
+#| "\n"
+#| " PORTNAME=      sshkit\n"
+#| "-PORTVERSION=   1.6.1\n"
+#| "+PORTVERSION=   1.7.0\n"
+#| " CATEGORIES=    security rubygems\n"
+#| " MASTER_SITES=  RG\n"
+#| "\n"
+#| "Index: 2015Q1/security/rubygem-sshkit/distinfo\n"
+#| "===================================================================\n"
+#| "--- 2015Q1/security/rubygem-sshkit/distinfo     (revision 380443)\n"
+#| "+++ 2015Q1/security/rubygem-sshkit/distinfo     (working copy)\n"
+#| "@@ -1,2 +1,2 @@\n"
+#| "-SHA256 (rubygem/sshkit-1.6.1.gem) = 8ca67e46bb4ea50fdb0553cda77552f3e41b17a5aa919877d93875dfa22c03a7\n"
+#| "-SIZE (rubygem/sshkit-1.6.1.gem) = 135680\n"
+#| "+SHA256 (rubygem/sshkit-1.7.0.gem) = 90effd1813363bae7355f4a45ebc8335a8ca74acc8d0933ba6ee6d40f281a2cf\n"
+#| "+SIZE (rubygem/sshkit-1.7.0.gem) = 136192\n"
+#| "Index: 2015Q1\n"
+#| "===================================================================\n"
+#| "--- 2015Q1      (revision 380443)\n"
+#| "+++ 2015Q1      (working copy)\n"
+#| "\n"
+#| "Property changes on: 2015Q1\n"
+#| "___________________________________________________________________\n"
+#| "Modified: svn:mergeinfo\n"
+#| "   Merged /head:r380362\n"
+#| "Do you want to commit? (no = start a shell) [y/n]"
 msgid ""
+"<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh 380362</userinput>\n"
+" U   2015Q1\n"
+"Checked out revision 380443.\n"
+"A    2015Q1/security\n"
+"Updating '2015Q1/security/rubygem-sshkit':\n"
+"A    2015Q1/security/rubygem-sshkit\n"
+"A    2015Q1/security/rubygem-sshkit/Makefile\n"
+"A    2015Q1/security/rubygem-sshkit/distinfo\n"
+"A    2015Q1/security/rubygem-sshkit/pkg-descr\n"
+"Updated to revision 380443.\n"
+"--- Merging r380362 into '2015Q1':\n"
+"U    2015Q1/security/rubygem-sshkit/Makefile\n"
+"U    2015Q1/security/rubygem-sshkit/distinfo\n"
+"--- Recording mergeinfo for merge of r380362 into '2015Q1':\n"
+" U   2015Q1\n"
+"--- Recording mergeinfo for merge of r380362 into '2015Q1/security':\n"
+" G   2015Q1/security\n"
+"--- Eliding mergeinfo from '2015Q1/security':\n"
+" U   2015Q1/security\n"
+"--- Recording mergeinfo for merge of r380362 into '2015Q1/security/rubygem-sshkit':\n"
+" G   2015Q1/security/rubygem-sshkit\n"
+"--- Eliding mergeinfo from '2015Q1/security/rubygem-sshkit':\n"
+" U   2015Q1/security/rubygem-sshkit\n"
+" M      2015Q1\n"
+"M       2015Q1/security/rubygem-sshkit/Makefile\n"
+"M       2015Q1/security/rubygem-sshkit/distinfo\n"
+"Index: 2015Q1/security/rubygem-sshkit/Makefile\n"
+"===================================================================\n"
+"--- 2015Q1/security/rubygem-sshkit/Makefile     (revision 380443)\n"
+"+++ 2015Q1/security/rubygem-sshkit/Makefile     (working copy)\n"
+"@@ -2,7 +2,7 @@\n"
+" # $FreeBSD$\n"
+"\n"
+" PORTNAME=      sshkit\n"
+"-PORTVERSION=   1.6.1\n"
+"+PORTVERSION=   1.7.0\n"
+" CATEGORIES=    security rubygems\n"
+" MASTER_SITES=  RG\n"
+"\n"
+"Index: 2015Q1/security/rubygem-sshkit/distinfo\n"
+"===================================================================\n"
+"--- 2015Q1/security/rubygem-sshkit/distinfo     (revision 380443)\n"
+"+++ 2015Q1/security/rubygem-sshkit/distinfo     (working copy)\n"
+"@@ -1,2 +1,2 @@\n"
+"-SHA256 (rubygem/sshkit-1.6.1.gem) = 8ca67e46bb4ea50fdb0553cda77552f3e41b17a5aa919877d93875dfa22c03a7\n"
+"-SIZE (rubygem/sshkit-1.6.1.gem) = 135680\n"
+"+SHA256 (rubygem/sshkit-1.7.0.gem) = 90effd1813363bae7355f4a45ebc8335a8ca74acc8d0933ba6ee6d40f281a2cf\n"
+"+SIZE (rubygem/sshkit-1.7.0.gem) = 136192\n"
+"Index: 2015Q1\n"
+"===================================================================\n"
+"--- 2015Q1      (revision 380443)\n"
+"+++ 2015Q1      (working copy)\n"
+"\n"
+"Property changes on: 2015Q1\n"
+"___________________________________________________________________\n"
+"Modified: svn:mergeinfo\n"
+"   Merged /head:r380362\n"
+"Do you want to commit? (no = start a shell) [y/n]"
+msgstr ""
 "<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh 380362</userinput>\n"
 " U   2015Q1\n"
 "Checked out revision 380443.\n"
@@ -8882,70 +9003,6 @@ msgid ""
 "-SHA256 (rubygem/sshkit-1.6.1.gem) = 8ca67e46bb4ea50fdb0553cda77552f3e41b17a5aa919877d93875dfa22c03a7\n"
 "-SIZE (rubygem/sshkit-1.6.1.gem) = 135680\n"
 "+SHA256 (rubygem/sshkit-1.7.0.gem) = 90effd1813363bae7355f4a45ebc8335a8ca74acc8d0933ba6ee6d40f281a2cf\n"
-"+SIZE (rubygem/sshkit-1.7.0.gem) = 136192\n"
-"Index: 2015Q1\n"
-"===================================================================\n"
-"--- 2015Q1      (revision 380443)\n"
-"+++ 2015Q1      (working copy)\n"
-"\n"
-"Property changes on: 2015Q1\n"
-"___________________________________________________________________\n"
-"Modified: svn:mergeinfo\n"
-"   Merged /head:r380362\n"
-"Do you want to commit? (no = start a shell) [y/n]"
-msgstr ""
-"<prompt>%</prompt> <userinput>/usr/ports/Tools/scripts/mfh 380362</userinput>"
-"\n"
-" U   2015Q1\n"
-"Checked out revision 380443.\n"
-"A    2015Q1/security\n"
-"Updating '2015Q1/security/rubygem-sshkit':\n"
-"A    2015Q1/security/rubygem-sshkit\n"
-"A    2015Q1/security/rubygem-sshkit/Makefile\n"
-"A    2015Q1/security/rubygem-sshkit/distinfo\n"
-"A    2015Q1/security/rubygem-sshkit/pkg-descr\n"
-"Updated to revision 380443.\n"
-"--- Merging r380362 into '2015Q1':\n"
-"U    2015Q1/security/rubygem-sshkit/Makefile\n"
-"U    2015Q1/security/rubygem-sshkit/distinfo\n"
-"--- Recording mergeinfo for merge of r380362 into '2015Q1':\n"
-" U   2015Q1\n"
-"--- Recording mergeinfo for merge of r380362 into '2015Q1/security':\n"
-" G   2015Q1/security\n"
-"--- Eliding mergeinfo from '2015Q1/security':\n"
-" U   2015Q1/security\n"
-"--- Recording mergeinfo for merge of r380362 into '2015Q1/security/rubygem-"
-"sshkit':\n"
-" G   2015Q1/security/rubygem-sshkit\n"
-"--- Eliding mergeinfo from '2015Q1/security/rubygem-sshkit':\n"
-" U   2015Q1/security/rubygem-sshkit\n"
-" M      2015Q1\n"
-"M       2015Q1/security/rubygem-sshkit/Makefile\n"
-"M       2015Q1/security/rubygem-sshkit/distinfo\n"
-"Index: 2015Q1/security/rubygem-sshkit/Makefile\n"
-"===================================================================\n"
-"--- 2015Q1/security/rubygem-sshkit/Makefile     (revision 380443)\n"
-"+++ 2015Q1/security/rubygem-sshkit/Makefile     (working copy)\n"
-"@@ -2,7 +2,7 @@\n"
-" # $FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml "
-"54676 2020-11-07 14:49:16Z 0mp $\n"
-"\n"
-" PORTNAME=      sshkit\n"
-"-PORTVERSION=   1.6.1\n"
-"+PORTVERSION=   1.7.0\n"
-" CATEGORIES=    security rubygems\n"
-" MASTER_SITES=  RG\n"
-"\n"
-"Index: 2015Q1/security/rubygem-sshkit/distinfo\n"
-"===================================================================\n"
-"--- 2015Q1/security/rubygem-sshkit/distinfo     (revision 380443)\n"
-"+++ 2015Q1/security/rubygem-sshkit/distinfo     (working copy)\n"
-"@@ -1,2 +1,2 @@\n"
-"-SHA256 (rubygem/sshkit-1.6.1.gem) = "
-"8ca67e46bb4ea50fdb0553cda77552f3e41b17a5aa919877d93875dfa22c03a7\n"
-"-SIZE (rubygem/sshkit-1.6.1.gem) = 135680\n"
-"+SHA256 (rubygem/sshkit-1.7.0.gem) = "
-"90effd1813363bae7355f4a45ebc8335a8ca74acc8d0933ba6ee6d40f281a2cf\n"
 "+SIZE (rubygem/sshkit-1.7.0.gem) = 136192\n"
 "Index: 2015Q1\n"
 "===================================================================\n"
@@ -9311,7 +9368,7 @@ msgstr "<filename>en_US.ISO8859-1/htdocs/ports/categories</filename>"
 
 #. (itstool) path: qandadiv/title
 #. (itstool) path: sect1/title
-#: article.translate.xml:5163 article.translate.xml:5478
+#: article.translate.xml:5163 article.translate.xml:5484
 msgid "Miscellaneous Questions"
 msgstr "Perguntas Diversas"
 
@@ -9351,8 +9408,15 @@ msgstr ""
 "Trivialidades e correções <emphasis>testadas</emphasis> de compilação e "
 "execução."
 
+#. (itstool) path: listitem/para
+#: article.translate.xml:5191
+msgid ""
+"Documentations or metadata changes to ports, like <filename>pkg-descr</"
+"filename> or <varname>COMMENT</varname>."
+msgstr ""
+
 #. (itstool) path: important/para
-#: article.translate.xml:5192
+#: article.translate.xml:5198
 msgid ""
 "Exceptions to this are anything maintained by the Ports Management Team "
 "<email>portmgr@FreeBSD.org</email>, or the Security Officer Team "
@@ -9365,12 +9429,12 @@ msgstr ""
 "commit não autorizado pode ser feito em ports mantidos por esses grupos."
 
 #. (itstool) path: question/para
-#: article.translate.xml:5203
+#: article.translate.xml:5209
 msgid "How do I know if my port is building correctly or not?"
 msgstr "Como sei se meu port está sendo compilado corretamente ou não?"
 
 #. (itstool) path: answer/para
-#: article.translate.xml:5208
+#: article.translate.xml:5214
 msgid ""
 "The packages are built multiple times each week. If a port fails, the "
 "maintainer will receive an email from <literal>pkg-fallout@FreeBSD.org</"
@@ -9380,7 +9444,7 @@ msgstr ""
 "mantenedor receberá um email de <literal>pkg-fallout@FreeBSD.org</literal>."
 
 #. (itstool) path: answer/para
-#: article.translate.xml:5212
+#: article.translate.xml:5218
 msgid ""
 "Reports for all the package builds (official, experimental, and non-"
 "regression) are aggregated at <link xlink:href=\"https://pkg-status.freebsd."
@@ -9391,14 +9455,14 @@ msgstr ""
 "freebsd.org/\">pkg-status.FreeBSD.org</link>."
 
 #. (itstool) path: question/para
-#: article.translate.xml:5220
+#: article.translate.xml:5226
 msgid ""
 "I added a new port. Do I need to add it to the <filename>INDEX</filename>?"
 msgstr ""
 "Eu adicionei um novo port. Preciso adicioná-lo ao <filename>INDEX</filename>?"
 
 #. (itstool) path: answer/para
-#: article.translate.xml:5225
+#: article.translate.xml:5231
 msgid ""
 "No. The file can either be generated by running <command>make index</"
 "command>, or a pre-generated version can be downloaded with <command>make "
@@ -9409,12 +9473,12 @@ msgstr ""
 "fetchindex</command>."
 
 #. (itstool) path: question/para
-#: article.translate.xml:5234
+#: article.translate.xml:5240
 msgid "Are there any other files I am not allowed to touch?"
 msgstr "Existem outros arquivos que não tenho permissão para tocar?"
 
 #. (itstool) path: answer/para
-#: article.translate.xml:5239
+#: article.translate.xml:5245
 msgid ""
 "Any file directly under <filename>ports/</filename>, or any file under a "
 "subdirectory that starts with an uppercase letter (<filename>Mk/</filename>, "
@@ -9431,7 +9495,7 @@ msgstr ""
 "nesses arquivos, a menos que você queira enfrentar a sua ira."
 
 #. (itstool) path: question/para
-#: article.translate.xml:5252
+#: article.translate.xml:5258
 msgid ""
 "What is the proper procedure for updating the checksum for a port distfile "
 "when the file changes without a version change?"
@@ -9440,7 +9504,7 @@ msgstr ""
 "um port quando o arquivo é alterado sem uma alteração de versão?"
 
 #. (itstool) path: answer/para
-#: article.translate.xml:5258
+#: article.translate.xml:5264
 msgid ""
 "When the checksum for a distribution file is updated due to the author "
 "updating the file without changing the port revision, the commit message "
@@ -9461,7 +9525,7 @@ msgstr ""
 "para descobrir por que o distfile foi alterado."
 
 #. (itstool) path: question/para
-#: article.translate.xml:5274
+#: article.translate.xml:5280
 msgid ""
 "How can an experimental test build of the ports tree (<emphasis>exp-run</"
 "emphasis>) be requested?"
@@ -9470,7 +9534,7 @@ msgstr ""
 "emphasis>) pode ser solicitada?"
 
 #. (itstool) path: answer/para
-#: article.translate.xml:5279
+#: article.translate.xml:5285
 msgid ""
 "An exp-run must be completed before patches with a significant ports impact "
 "are committed. The patch can be against the ports tree or the base system."
@@ -9480,7 +9544,7 @@ msgstr ""
 "ports ou o sistema base."
 
 #. (itstool) path: answer/para
-#: article.translate.xml:5283
+#: article.translate.xml:5289
 msgid ""
 "Full package builds will be done with the patches provided by the submitter, "
 "and the submitter is required to fix detected problems (<emphasis>fallout</"
@@ -9491,7 +9555,7 @@ msgstr ""
 "(<emphasis>fallout</emphasis>) antes de fazer o commit."
 
 #. (itstool) path: step/para
-#: article.translate.xml:5290
+#: article.translate.xml:5296
 msgid ""
 "Go to the <link xlink:href=\"https://bugs.freebsd.org/submit\">Bugzilla new "
 "<acronym>PR</acronym> page</link>."
@@ -9500,18 +9564,18 @@ msgstr ""
 "de <acronym>PR</acronym> do Bugzilla</link>."
 
 #. (itstool) path: step/para
-#: article.translate.xml:5295
+#: article.translate.xml:5301
 msgid "Select the product your patch is about."
 msgstr "Selecione o produto ao qual seu patch se aplica."
 
 #. (itstool) path: step/para
-#: article.translate.xml:5299
+#: article.translate.xml:5305
 msgid "Fill in the bug report as normal. Remember to attach the patch."
 msgstr ""
 "Preencha o relatório de erros normalmente. Lembre-se de anexar o patch."
 
 #. (itstool) path: step/para
-#: article.translate.xml:5304
+#: article.translate.xml:5310
 msgid ""
 "If at the top it says <quote>Show Advanced Fields</quote> click on it. It "
 "will now say <quote>Hide Advanced Fields</quote>. Many new fields will be "
@@ -9524,7 +9588,7 @@ msgstr ""
 "não precisa fazer nada."
 
 #. (itstool) path: step/para
-#: article.translate.xml:5313
+#: article.translate.xml:5319
 msgid ""
 "In the <quote>Flags</quote> section, set the <quote>exp-run</quote> one to "
 "<literal>?</literal>. As for all other fields, hovering the mouse over any "
@@ -9535,12 +9599,12 @@ msgstr ""
 "qualquer campo mostrará mais detalhes."
 
 #. (itstool) path: step/para
-#: article.translate.xml:5320
+#: article.translate.xml:5326
 msgid "Submit. Wait for the build to run."
 msgstr "Envie. Aguarde a build ser executada."
 
 #. (itstool) path: step/para
-#: article.translate.xml:5324
+#: article.translate.xml:5330
 msgid ""
 "Ports Management Team <email>portmgr@FreeBSD.org</email> will reply with a "
 "possible fallout."
@@ -9549,12 +9613,12 @@ msgstr ""
 "responderá com uma possível fallout."
 
 #. (itstool) path: step/para
-#: article.translate.xml:5329
+#: article.translate.xml:5335
 msgid "Depending on the fallout:"
 msgstr "Dependendo do fallout:"
 
 #. (itstool) path: step/para
-#: article.translate.xml:5333
+#: article.translate.xml:5339
 msgid ""
 "If there is no fallout, the procedure stops here, and the change can be "
 "committed, pending any other approval required."
@@ -9564,7 +9628,7 @@ msgstr ""
 "necessária."
 
 #. (itstool) path: step/para
-#: article.translate.xml:5341
+#: article.translate.xml:5347
 msgid ""
 "If there is fallout, it <emphasis>must</emphasis> be fixed, either by fixing "
 "the ports directly in the ports tree, or adding to the submitted patch."
@@ -9574,7 +9638,7 @@ msgstr ""
 "enviado."
 
 #. (itstool) path: step/para
-#: article.translate.xml:5349
+#: article.translate.xml:5355
 msgid ""
 "When this is done, go back to step 6 saying the fallout was fixed and wait "
 "for the exp-run to be run again. Repeat as long as there are broken ports."
@@ -9584,12 +9648,12 @@ msgstr ""
 "necessário enquanto houver ports quebrados."
 
 #. (itstool) path: sect1/title
-#: article.translate.xml:5366
+#: article.translate.xml:5372
 msgid "Issues Specific to Developers Who Are Not Committers"
 msgstr "Problemas Específicos para Desenvolvedores Que Não São Committers"
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:5369
+#: article.translate.xml:5375
 msgid ""
 "A few people who have access to the FreeBSD machines do not have commit "
 "bits. Almost all of this document will apply to these developers as well "
@@ -9602,17 +9666,17 @@ msgstr ""
 "que os acompanham). Em particular, recomendamos que você leia:"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:5377
+#: article.translate.xml:5383
 msgid "<link linkend=\"admin\">Administrative Details</link>"
 msgstr "<link linkend=\"admin\">Detalhes Administrativos</link>"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:5382
+#: article.translate.xml:5388
 msgid "<link linkend=\"conventions-everyone\">Conventions</link>"
 msgstr "<link linkend=\"conventions-everyone\">Convenções</link>"
 
 #. (itstool) path: note/para
-#: article.translate.xml:5385
+#: article.translate.xml:5391
 msgid ""
 "Get your mentor to add you to the <quote>Additional Contributors</quote> "
 "(<filename>doc/en_US.ISO8859-1/articles/contributors/contrib.additional.xml</"
@@ -9623,19 +9687,19 @@ msgstr ""
 "additional.xml</filename>), se você ainda não estiver listado há."
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:5393
+#: article.translate.xml:5399
 msgid "<link linkend=\"developer.relations\">Developer Relations</link>"
 msgstr ""
 "<link linkend=\"developer.relations\">Relações entre os Desenvolvedores</"
 "link>"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:5398
+#: article.translate.xml:5404
 msgid "<link linkend=\"ssh.guide\">SSH Quick-Start Guide</link>"
 msgstr "<link linkend=\"ssh.guide\">Guia de início rápido do SSH</link>"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:5403
+#: article.translate.xml:5409
 msgid ""
 "<link linkend=\"rules\">The FreeBSD Committers' Big List of Rules</link>"
 msgstr ""
@@ -9643,12 +9707,12 @@ msgstr ""
 "link>"
 
 #. (itstool) path: sect1/title
-#: article.translate.xml:5411
+#: article.translate.xml:5417
 msgid "Information About Google Analytics"
 msgstr "Informações sobre o Google Analytics"
 
 #. (itstool) path: sect1/para
-#: article.translate.xml:5413
+#: article.translate.xml:5419
 msgid ""
 "As of December 12, 2012, Google Analytics was enabled on the FreeBSD Project "
 "website to collect anonymized usage statistics regarding usage of the site. "
@@ -9661,12 +9725,12 @@ msgstr ""
 "do FreeBSD, para identificar vários problemas no site do FreeBSD."
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:5420
+#: article.translate.xml:5426
 msgid "Google Analytics General Policy"
 msgstr "Política Geral do Google Analytics"
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:5422
+#: article.translate.xml:5428
 msgid ""
 "The FreeBSD Project takes visitor privacy very seriously. As such, the "
 "FreeBSD Project website honors the <quote>Do Not Track</quote> header "
@@ -9681,7 +9745,7 @@ msgstr ""
 "privacy.html\">Política de Privacidade do FreeBSD</link>."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:5430
+#: article.translate.xml:5436
 msgid ""
 "Google Analytics access is <emphasis>not</emphasis> arbitrarily allowed — "
 "access must be requested, voted on by the Documentation Engineering Team "
@@ -9692,7 +9756,7 @@ msgstr ""
 "de Documentação <email>doceng@FreeBSD.org</email> e explicitamente concedido."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:5434
+#: article.translate.xml:5440
 msgid ""
 "Requests for Google Analytics data must include a specific purpose. For "
 "example, a valid reason for requesting access would be <quote>to see the "
@@ -9706,7 +9770,7 @@ msgstr ""
 "renderização da página sejam aceitáveis.</quote>"
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:5440
+#: article.translate.xml:5446
 msgid ""
 "Conversely, <quote>to see what web browsers are most frequently used</quote> "
 "(without stating <emphasis>why</emphasis>) would be rejected."
@@ -9715,7 +9779,7 @@ msgstr ""
 "quote> (sem declarar <emphasis>por que</emphasis>) seria rejeitado."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:5444
+#: article.translate.xml:5450
 msgid ""
 "All requests must include the timeframe for which the data would be "
 "required. For example, it must be explicitly stated if the requested data "
@@ -9728,7 +9792,7 @@ msgstr ""
 "período de 3 semanas, ou se o pedido seria para acessar apenas uma vez."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:5450
+#: article.translate.xml:5456
 msgid ""
 "Any request for Google Analytics data without a clear, reasonable reason "
 "beneficial to the FreeBSD Project will be rejected."
@@ -9737,38 +9801,38 @@ msgstr ""
 "que beneficie o Projeto FreeBSD será rejeitado."
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:5456
+#: article.translate.xml:5462
 msgid "Data Available Through Google Analytics"
 msgstr "Dados disponíveis por meio do Google Analytics"
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:5458
+#: article.translate.xml:5464
 msgid "A few examples of the types of Google Analytics data available include:"
 msgstr ""
 "Alguns exemplos dos tipos de dados do Google Analytics disponíveis incluem:"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:5463
+#: article.translate.xml:5469
 msgid "Commonly used web browsers"
 msgstr "Navegadores Web comumente usados"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:5467
+#: article.translate.xml:5473
 msgid "Page load times"
 msgstr "Tempos de carregamento de páginas"
 
 #. (itstool) path: listitem/para
-#: article.translate.xml:5471
+#: article.translate.xml:5477
 msgid "Site access by language"
 msgstr "Acesso ao site por idioma"
 
 #. (itstool) path: question/para
-#: article.translate.xml:5483
+#: article.translate.xml:5489
 msgid "How do I add a new file to a branch?"
 msgstr "Como adiciono um novo arquivo a uma branch?"
 
 #. (itstool) path: answer/para
-#: article.translate.xml:5487
+#: article.translate.xml:5493
 msgid ""
 "To add a file onto a branch, simply checkout or update to the branch you "
 "want to add to and then add the file using the add operation as you normally "
@@ -9787,7 +9851,7 @@ msgstr ""
 "primer\"> Subversion Primer</link> para detalhes sobre como executar um MFC."
 
 #. (itstool) path: question/para
-#: article.translate.xml:5502
+#: article.translate.xml:5508
 msgid ""
 "How do I access <systemitem class=\"fqdomainname\">people.FreeBSD.org</"
 "systemitem> to put up personal or project information?"
@@ -9796,7 +9860,7 @@ msgstr ""
 "systemitem> para colocar informações pessoais ou de projeto?"
 
 #. (itstool) path: answer/para
-#: article.translate.xml:5507
+#: article.translate.xml:5513
 msgid ""
 "<systemitem class=\"fqdomainname\">people.FreeBSD.org</systemitem> is the "
 "same as <systemitem class=\"fqdomainname\">freefall.FreeBSD.org</"
@@ -9813,12 +9877,12 @@ msgstr ""
 "\">https://people.FreeBSD.org/</uri>."
 
 #. (itstool) path: question/para
-#: article.translate.xml:5517
+#: article.translate.xml:5523
 msgid "Where are the mailing list archives stored?"
 msgstr "Onde estão armazenados os arquivos da lista de discussão?"
 
 #. (itstool) path: answer/para
-#: article.translate.xml:5521
+#: article.translate.xml:5527
 msgid ""
 "The mailing lists are archived under <filename>/local/mail</filename> on "
 "<systemitem class=\"fqdomainname\">freefall.FreeBSD.org</systemitem>."
@@ -9827,7 +9891,7 @@ msgstr ""
 "<systemitem class=\"fqdomainname\">freefall.FreeBSD.org</systemitem>."
 
 #. (itstool) path: question/para
-#: article.translate.xml:5528
+#: article.translate.xml:5534
 msgid ""
 "I would like to mentor a new committer. What process do I need to follow?"
 msgstr ""
@@ -9835,7 +9899,7 @@ msgstr ""
 "seguir?"
 
 #. (itstool) path: answer/para
-#: article.translate.xml:5533
+#: article.translate.xml:5539
 msgid ""
 "See the <link xlink:href=\"https://www.freebsd.org/internal/new-account.html"
 "\">New Account Creation Procedure</link> document on the internal pages."
@@ -9845,17 +9909,17 @@ msgstr ""
 "internas."
 
 #. (itstool) path: sect1/title
-#: article.translate.xml:5542
+#: article.translate.xml:5548
 msgid "Benefits and Perks for FreeBSD Committers"
 msgstr "Benefícios e vantagens para os Commiters do FreeBSD"
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:5545
+#: article.translate.xml:5551
 msgid "Recognition"
 msgstr "Reconhecimento"
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:5547
+#: article.translate.xml:5553
 msgid ""
 "Recognition as a competent software engineer is the longest lasting value. "
 "In addition, getting a chance to work with some of the best people that "
@@ -9866,12 +9930,12 @@ msgstr ""
 "pessoas que todos os engenheiros sonham em conhecer é um grande privilégio!"
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:5554
+#: article.translate.xml:5560
 msgid "FreeBSD Mall"
 msgstr "FreeBSD Mall"
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:5556
+#: article.translate.xml:5562
 msgid ""
 "FreeBSD committers can get a free 4-CD or DVD set at conferences from <link "
 "xlink:href=\"http://www.freebsdmall.com\">FreeBSD Mall, Inc.</link>."
@@ -9881,12 +9945,12 @@ msgstr ""
 "em conferências."
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:5563
+#: article.translate.xml:5569
 msgid "<acronym>IRC</acronym>"
 msgstr "<acronym>IRC</acronym>"
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:5565
+#: article.translate.xml:5571
 msgid ""
 "In addition, developers may request a cloaked hostmask for their account on "
 "the Freenode IRC network in the form of <literal>freebsd/developer/</"
@@ -9903,12 +9967,12 @@ msgstr ""
 "com o nome da sua hostmask solicitada e nome da conta no NickServ."
 
 #. (itstool) path: sect2/title
-#: article.translate.xml:5577
+#: article.translate.xml:5583
 msgid "<systemitem class=\"domainname\">Gandi.net</systemitem>"
 msgstr "<systemitem class=\"domainname\">Gandi.net</systemitem>"
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:5579
+#: article.translate.xml:5585
 msgid ""
 "Gandi provides website hosting, cloud computing, domain registration, and "
 "X.509 certificate services."
@@ -9917,7 +9981,7 @@ msgstr ""
 "domínio e serviços de certificados X.509."
 
 #. (itstool) path: sect2/para
-#: article.translate.xml:5582
+#: article.translate.xml:5588
 msgid ""
 "Gandi offers an E-rate discount to all FreeBSD developers. Send mail to "
 "<email>non-profit@gandi.net</email> using your <literal>@freebsd.org</"
@@ -9927,6 +9991,13 @@ msgstr ""
 "Envie e-mail para <email>non-profit@gandi.net</email> usando o seu endereço "
 "de e-mail <literal>@freebsd.org</literal> e indique o seu identificador no "
 "Gandi."
+
+#~ msgid ""
+#~ "$FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml "
+#~ "54676 2020-11-07 14:49:16Z 0mp $"
+#~ msgstr ""
+#~ "$FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/article.xml "
+#~ "54676 2020-11-07 14:49:16Z 0mp $"
 
 #~ msgid "Bruce Evans <email>bde@FreeBSD.org</email>"
 #~ msgstr "Bruce Evans <email>bde@FreeBSD.org</email>"
