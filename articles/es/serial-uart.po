@@ -3,11 +3,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-06-06 11:08-0300\n"
+"POT-Creation-Date: 2021-01-09 10:57-0300\n"
 "PO-Revision-Date: 2020-12-19 16:05+0000\n"
 "Last-Translator: Aaron H Farías Martinez <timido@ubuntu.com>\n"
-"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
-"freebsd-doc/articles_serial-uart/es/>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/freebsd-"
+"doc/articles_serial-uart/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -75,13 +75,8 @@ msgstr ""
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:28 article.translate.xml:30
-#, fuzzy
-msgid ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/serial-uart/article.xml 44692 "
-"2014-04-29 02:46:48Z wblock $"
+msgid "$FreeBSD$"
 msgstr ""
-"$FreeBSD: head/en_US.ISO8859-1/articles/serial-uart/article.xml 44692 "
-"2014-04-29 02:46:48Z wblock $"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:33
@@ -99,8 +94,8 @@ msgid ""
 "<emphasis>Copyright © 1996 Frank Durda IV <email>uhclem@FreeBSD.org</email>, "
 "All Rights Reserved. 13 January 1996.</emphasis>"
 msgstr ""
-"<emphasis>Copyright © 1996 Frank Durda IV <email>uhclem@FreeBSD.org</"
-"email>,Todos los derechos reservados. 13 de enero de 1996.</emphasis>"
+"<emphasis>Copyright © 1996 Frank Durda IV <email>uhclem@FreeBSD.org</email>,"
+"Todos los derechos reservados. 13 de enero de 1996.</emphasis>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:43
@@ -357,9 +352,13 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:171
+#, fuzzy
+#| msgid ""
+#| "Because asynchronous data is <quote>self synchronizing</quote>, if there "
+#| "is no data to transmit, the transmission line can be idle."
 msgid ""
-"Because asynchronous data is <quote>self synchronizing</quote>, if there is "
-"no data to transmit, the transmission line can be idle."
+"As asynchronous data is <quote>self synchronizing</quote>, if there is no "
+"data to transmit, the transmission line can be idle."
 msgstr ""
 "Porque los datos asincrónicos son <quote>self synchronizing</quote>,si no "
 "hay datos para transmitir, la línea de transmisión puede estar inactiva."
@@ -443,13 +442,13 @@ msgid ""
 "This guarantees that sender and receiver can resynchronize their clocks "
 "regardless of the content of the data bits that are being transmitted."
 msgstr ""
-"El bit de inicio siempre tiene un valor de <literal>0</literal> (un espacio)"
-". El bit de parada siempre tiene un valor de <literal>1</literal>(una marca)"
-". Esto significa que siempre habrá una transición de Marca (1) a Espacio (0) "
-"en la línea al comienzo de cada palabra, incluso cuando se transmiten varias "
-"palabras una tras otra. Esto garantiza que el remitente y el receptor puedan "
-"resincronizar sus relojes independientemente del contenido de los bits de "
-"datos que se están transmitiendo."
+"El bit de inicio siempre tiene un valor de <literal>0</literal> (un "
+"espacio). El bit de parada siempre tiene un valor de <literal>1</"
+"literal>(una marca). Esto significa que siempre habrá una transición de "
+"Marca (1) a Espacio (0) en la línea al comienzo de cada palabra, incluso "
+"cuando se transmiten varias palabras una tras otra. Esto garantiza que el "
+"remitente y el receptor puedan resincronizar sus relojes independientemente "
+"del contenido de los bits de datos que se están transmitiendo."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:223
@@ -656,10 +655,11 @@ msgid ""
 "use in the IBM PC."
 msgstr ""
 "En la computadora personal IBM y sistemas similares, se proporciona un "
-"subconjunto de señales RS232-C a través de conectores de nueve clavijas (DB9)"
-". Las señales que no están incluidas en el conector de la PC se refieren "
-"principalmente al funcionamiento síncrono, y este modo de transmisión no es "
-"compatible con la UART que IBM seleccionó para su uso en la PC de IBM."
+"subconjunto de señales RS232-C a través de conectores de nueve clavijas "
+"(DB9). Las señales que no están incluidas en el conector de la PC se "
+"refieren principalmente al funcionamiento síncrono, y este modo de "
+"transmisión no es compatible con la UART que IBM seleccionó para su uso en "
+"la PC de IBM."
 
 #. (itstool) path: sect3/para
 #: article.translate.xml:335
@@ -1406,10 +1406,16 @@ msgstr "Bits, baudios y símbolos"
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:615
+#, fuzzy
+#| msgid ""
+#| "Baud is a measurement of transmission speed in asynchronous "
+#| "communication. Because of advances in modem communication technology, "
+#| "this term is frequently misused when describing the data rates in newer "
+#| "devices."
 msgid ""
 "Baud is a measurement of transmission speed in asynchronous communication. "
-"Because of advances in modem communication technology, this term is "
-"frequently misused when describing the data rates in newer devices."
+"Due to advances in modem communication technology, this term is frequently "
+"misused when describing the data rates in newer devices."
 msgstr ""
 "Baud es una medida de la velocidad de transmisión en la comunicación "
 "asíncrona. Debido a los avances en la tecnología de comunicaciones por "
@@ -1551,8 +1557,20 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:687
+#, fuzzy
+#| msgid ""
+#| "Because the number of bits needed to describe a byte varied during the "
+#| "trip between the two machines plus the differing bits-per-seconds speeds "
+#| "that are used present on the DTE-DCE and DCE-DCE links, the usage of the "
+#| "term Baud to describe the overall communication speed causes problems and "
+#| "can misrepresent the true transmission speed. So Bits Per Second (bps) is "
+#| "the correct term to use to describe the transmission rate seen at the DCE "
+#| "to DCE interface and Baud or Bits Per Second are acceptable terms to use "
+#| "when a connection is made between two systems with a wired connection, or "
+#| "if a modem is in use that is not performing error-correction or "
+#| "compression."
 msgid ""
-"Because the number of bits needed to describe a byte varied during the trip "
+"As the number of bits needed to describe a byte varied during the trip "
 "between the two machines plus the differing bits-per-seconds speeds that are "
 "used present on the DTE-DCE and DCE-DCE links, the usage of the term Baud to "
 "describe the overall communication speed causes problems and can "
@@ -1711,12 +1729,19 @@ msgstr "INS8250A"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:776
+#, fuzzy
+#| msgid ""
+#| "An improved version of the INS8250 using XMOS technology with various "
+#| "functional flaws corrected. The INS8250A was used initially in PC clone "
+#| "computers by vendors who used <quote>clean</quote> BIOS designs. Because "
+#| "of the corrections in the chip, this part could not be used with a BIOS "
+#| "compatible with the INS8250 or INS8250B."
 msgid ""
 "An improved version of the INS8250 using XMOS technology with various "
 "functional flaws corrected. The INS8250A was used initially in PC clone "
-"computers by vendors who used <quote>clean</quote> BIOS designs. Because of "
-"the corrections in the chip, this part could not be used with a BIOS "
-"compatible with the INS8250 or INS8250B."
+"computers by vendors who used <quote>clean</quote> BIOS designs. Due to the "
+"corrections in the chip, this part could not be used with a BIOS compatible "
+"with the INS8250 or INS8250B."
 msgstr ""
 "Una versión mejorada del INS8250 que usa tecnología XMOS con varios defectos "
 "funcionales corregidos. El INS8250A fue utilizado inicialmente en "
@@ -2021,12 +2046,22 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:957
+#, fuzzy
+#| msgid ""
+#| "In internal modems, the modem designer will frequently emulate the "
+#| "8250A/16450 with the modem microprocessor, and the emulated UART will "
+#| "frequently have a hidden buffer consisting of several hundred bytes. "
+#| "Because of the size of the buffer, these emulations can be as reliable as "
+#| "a 16550A in their ability to handle high speed data. However, most "
+#| "operating systems will still report that the UART is only a 8250A or "
+#| "16450, and may not make effective use of the extra buffering present in "
+#| "the emulated UART unless special drivers are used."
 msgid ""
 "In internal modems, the modem designer will frequently emulate the "
 "8250A/16450 with the modem microprocessor, and the emulated UART will "
-"frequently have a hidden buffer consisting of several hundred bytes. Because "
-"of the size of the buffer, these emulations can be as reliable as a 16550A "
-"in their ability to handle high speed data. However, most operating systems "
+"frequently have a hidden buffer consisting of several hundred bytes. Due to "
+"the size of the buffer, these emulations can be as reliable as a 16550A in "
+"their ability to handle high speed data. However, most operating systems "
 "will still report that the UART is only a 8250A or 16450, and may not make "
 "effective use of the extra buffering present in the emulated UART unless "
 "special drivers are used."
@@ -2068,10 +2103,20 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:979
+#, fuzzy
+#| msgid ""
+#| "When the NS16550 was developed, the National Semiconductor obtained "
+#| "several patents on the design and they also limited licensing, making it "
+#| "harder for other vendors to provide a chip with similar features. Because "
+#| "of the patents, reverse-engineered designs and emulations had to avoid "
+#| "infringing the claims covered by the patents. Subsequently, these copies "
+#| "almost never perform exactly the same as the NS16550A or PC16550D, which "
+#| "are the parts most computer and modem makers want to buy but are "
+#| "sometimes unwilling to pay the price required to get the genuine part."
 msgid ""
 "When the NS16550 was developed, the National Semiconductor obtained several "
 "patents on the design and they also limited licensing, making it harder for "
-"other vendors to provide a chip with similar features. Because of the "
+"other vendors to provide a chip with similar features. As a result of the "
 "patents, reverse-engineered designs and emulations had to avoid infringing "
 "the claims covered by the patents. Subsequently, these copies almost never "
 "perform exactly the same as the NS16550A or PC16550D, which are the parts "
@@ -2111,8 +2156,8 @@ msgstr ""
 "particulares de eventos que no fueron bien probados o considerados en el "
 "<trademark class=\"registered\">Windows</trademark> conductor. Esto se debe "
 "a que la mayoría de los proveedores de módems y fabricantes de clones 16550 "
-"utilizan los controladores de Microsoft de <trademark class=\"registered\""
-">Windows</trademark> Para grupos de trabajo 3.11 y el <trademark class="
+"utilizan los controladores de Microsoft de <trademark class=\"registered"
+"\">Windows</trademark> Para grupos de trabajo 3.11 y el <trademark class="
 "\"registered\">Microsoft</trademark> <trademark class=\"registered\">MS-DOS</"
 "trademark> utilidad como las principales pruebas de compatibilidad con el "
 "NS16550A. Este criterio demasiado simplista significa que si se usa un "
@@ -2139,12 +2184,20 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: article.translate.xml:1014
+#, fuzzy
+#| msgid ""
+#| "In a series of tests performed by the author of this document in 1994, "
+#| "components made by National Semiconductor, TI, StarTech, and CMD as well "
+#| "as megacells and emulations embedded in internal modems were tested with "
+#| "COMTEST. A difference count for some of these components is listed below. "
+#| "Because these tests were performed in 1994, they may not reflect the "
+#| "current performance of the given product from a vendor."
 msgid ""
 "In a series of tests performed by the author of this document in 1994, "
 "components made by National Semiconductor, TI, StarTech, and CMD as well as "
 "megacells and emulations embedded in internal modems were tested with "
 "COMTEST. A difference count for some of these components is listed below. "
-"Because these tests were performed in 1994, they may not reflect the current "
+"Since these tests were performed in 1994, they may not reflect the current "
 "performance of the given product from a vendor."
 msgstr ""
 "En una serie de pruebas realizadas por el autor de este documento en 1994, "
@@ -2399,8 +2452,7 @@ msgstr ""
 #: article.translate.xml:1147
 #, no-wrap
 msgid "Error (6)...Timeout interrupt failed: IIR = c1  LSR = 61"
-msgstr ""
-"Error (6) ... Error de interrupción de tiempo de espera: IIR = c1 LSR = 61"
+msgstr "Error (6) ... Error de interrupción de tiempo de espera: IIR = c1 LSR = 61"
 
 #. (itstool) path: sect2/title
 #: article.translate.xml:1151
@@ -2688,10 +2740,10 @@ msgid ""
 "to \"1\" causes the UART to generate an interrupt when the UART has room for "
 "one or more additional characters that are to be transmitted."
 msgstr ""
-"Habilitar interrupción vacía del registro de retención del transmisor (ETBEI)"
-" Al establecer este bit en \"1\", la UART genera una interrupción cuando la "
-"UART tiene espacio para uno o más caracteres adicionales que se van a "
-"transmitir."
+"Habilitar interrupción vacía del registro de retención del transmisor "
+"(ETBEI) Al establecer este bit en \"1\", la UART genera una interrupción "
+"cuando la UART tiene espacio para uno o más caracteres adicionales que se "
+"van a transmitir."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1293 article.translate.xml:1405
@@ -2824,7 +2876,8 @@ msgstr "FIFO habilitados. En el UART 8250/16450, este bit es cero."
 #. (itstool) path: row/entry
 #: article.translate.xml:1459
 msgid "Interrupt ID Bit #2. On the 8250/16450 UART, this bit is zero."
-msgstr "Bit de ID de interrupción # 2. En el UART 8250/16450, este bit es cero."
+msgstr ""
+"Bit de ID de interrupción # 2. En el UART 8250/16450, este bit es cero."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1465
@@ -2999,8 +3052,8 @@ msgstr ""
 "Número de bits de parada (STB). Si se establece en \"1\" y se utilizan "
 "palabras de datos de 5 bits, se transmiten 1,5 bits de parada y se esperan "
 "en cada palabra de datos. Para palabras de datos de 6, 7 y 8 bits, se "
-"transmiten y esperan 2 bits de parada. Cuando este bit se establece en \"0\""
-", se utiliza un bit de parada en cada palabra de datos."
+"transmiten y esperan 2 bits de parada. Cuando este bit se establece en "
+"\"0\", se utiliza un bit de parada en cada palabra de datos."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1622
@@ -3291,10 +3344,10 @@ msgid ""
 "In addition to these <quote>dumb</quote> UARTs, many vendors produce "
 "intelligent serial communication boards. This type of design usually "
 "provides a microprocessor that interfaces with several UARTs, processes and "
-"buffers the data, and then alerts the main PC processor when necessary. "
-"Because the UARTs are not directly accessed by the PC processor in this type "
-"of communication system, it is not necessary for the vendor to use UARTs "
-"that are compatible with the 8250, 16450, or the 16550 UART. This leaves the "
+"buffers the data, and then alerts the main PC processor when necessary. As "
+"the UARTs are not directly accessed by the PC processor in this type of "
+"communication system, it is not necessary for the vendor to use UARTs that "
+"are compatible with the 8250, 16450, or the 16550 UART. This leaves the "
 "designer free to components that may have better performance characteristics."
 msgstr ""
 
@@ -3999,3 +4052,11 @@ msgid ""
 "Change the terminal type as appropriate. For modems, <userinput>dialup</"
 "userinput> or <userinput>unknown</userinput> is fine."
 msgstr ""
+
+#, fuzzy
+#~ msgid ""
+#~ "$FreeBSD: head/en_US.ISO8859-1/articles/serial-uart/article.xml 44692 "
+#~ "2014-04-29 02:46:48Z wblock $"
+#~ msgstr ""
+#~ "$FreeBSD: head/en_US.ISO8859-1/articles/serial-uart/article.xml 44692 "
+#~ "2014-04-29 02:46:48Z wblock $"
