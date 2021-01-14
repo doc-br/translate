@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-01-09 10:57-0300\n"
-"PO-Revision-Date: 2021-01-11 08:57+0000\n"
+"PO-Revision-Date: 2021-01-14 23:59+0000\n"
 "Last-Translator: Fernando  Apesteguía <fernando.apesteguia@gmail.com>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_vm-design/es/>\n"
@@ -194,7 +194,26 @@ msgstr ""
 "gente como un sistema operativo<quote>viejo</quote>, aquellos de nosotros "
 "que trabajamos en él solemos verlo más como una base de "
 "código</quote>madura</quote> la cual tiene varios componentes modificados, "
-"extendidos, o reemplazados con código moderno. WIP!!!"
+"extendidos, o reemplazados con código moderno. Ha evolucionado, y FreeBSD "
+"está a la vanguardia independientemente de cómo de viejo sea parte del "
+"código. Es impoprtante hacer esta distinción y que mucha gente pasa por "
+"alto. El mayor error que puede cometer un programador es no aprender de la "
+"historia, y es precisamente este error el que han cometido muchos otros "
+"sistemas operativos modernos. <trademark class=\"registered\">Windows NT</"
+"trademark> es el mejor ejemplo, y las consecuencias han sido nefastas. Linux "
+"también comete este error hasta cierto punto—lo suficiente para que nosotros "
+"la gente de BSD hagamos pequeñas bromas de vez en cuando, por lo menos. El "
+"problema de Linux es simplemente la falta de experiencia y de una historia "
+"contra la que comparar ideas, un problema que está siendo tratado "
+"rápidamente por la comunidad Linux de la misma forma que ha sido tratado en "
+"la comunidad BSD—mediante el desarrollo continuo de código. La gente de "
+"<trademark class=\"registered\">Windows NT</trademark>, por otro lado, "
+"repiten los mismos errores solucionados por <trademark class=\"registered\""
+">UNIX</trademark> hace décadas y pasan años arreglándolos. Una y otra vez. "
+"Sufren un caso severo de  <quote>no diseñado aquí</quote> y <quote>siempre "
+"tenemos la razón porque nuestro departamento de marketing así lo dice</"
+"quote>. Tengo poca tolerancia hacia cualquiera que no puede aprender de la "
+"historia."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:99
@@ -207,6 +226,15 @@ msgid ""
 "system resources begin to get stressed. As I describe FreeBSD's VM/Swap "
 "subsystem the reader should always keep two points in mind:"
 msgstr ""
+"Mucha de la aparente complejidad del diseño de FreeBSD, especialmente en el "
+"subsistema de Memoria Virtual/Intercambio, es un resultado directo de tener "
+"que resolver serios problemas de rendimiento que ocurren bajo condiciones "
+"variadas. Estos problemas no se deben aun mal diseño algorítimico sino que "
+"surgen de factores ambientales. En cualquier comparación directa entre "
+"plataformas, estos problemas se hacen más evidentes cuando los recursos del "
+"sistema empiezan a sufrir estrés. Como describo en el subsistema de Memoria "
+"Virtual/Intercambio de FreeBSD el lector siempre debería tener en mente dos "
+"puntos:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:110
@@ -216,6 +244,10 @@ msgid ""
 "performance optimizations add a little bloat to the code in order to make "
 "the critical path perform better."
 msgstr ""
+"El aspecto más importante del diseño de rendimiento es lo que se conoce como "
+"<quote>Optimización del Camino Crítico</quote>. Es común que las "
+"optimizaciones de rendimiento inflen algo el código con el fin de mejorar el "
+"rendimiento del camino crítico."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:117
@@ -226,6 +258,12 @@ msgid ""
 "tends to be easier to adapt to changing conditions and the heavily-optimized "
 "design winds up having to be thrown away."
 msgstr ""
+"Un diseño sólido, generalizado tiene mejor rendimiento a largo plazo que un "
+"diseño altamente optimizado. Mientras que un diseño generalizado puede "
+"terminar siendo más lento que un diseño altamente optimizado cuando se "
+"implementan inicialmente, el diseño generalizado tiende a ser más fácil de "
+"adaptar a condiciones cambiantes y el diseño altamente optimizado termina "
+"siendo desechado."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:126
@@ -237,11 +275,18 @@ msgid ""
 "that was ten times as fast. Today, the fallibility of that argument is "
 "obvious — as are the parallels to algorithmic design and code generalization."
 msgstr ""
+"Cualquier base de código que sobrevivirá y será mantenible durante años debe "
+"por lo tanto ser diseñada adecuadamente desde el comienzo incluso si tiene "
+"algo de coste en rendimiento. Hace veinte años la gente todavía discutía si "
+"la programación en ensamblador era mejor que programar en un lenguaje de "
+"alto nivel porque producía código que era diez veces más rápido. Hoy, la "
+"falibilidad de ese argumento es obvio — de modo paralelo al diseño "
+"algorítmico y la generalización de código."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:136
 msgid "VM Objects"
-msgstr ""
+msgstr "Objetos de Memoria Virtual"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:138
@@ -259,6 +304,21 @@ msgid ""
 "them. The fork system call adds an entirely new dimension to the VM "
 "management problem on top of the complexity already given."
 msgstr ""
+"La mejor manera de empezar describiendo el sistema de Memoria Virtual de "
+"FreeBSD is mirarlo desde la perspectiva de un proceso de usuario. Cada "
+"proceso de usuario ve una espacio de direcciones de Memoria Vritual único, "
+"privado y contiguo que contiene diversos tipos de objetos de memoria. Estos "
+"objetos tienen diversas características. Código de programa y datos de "
+"programa son de forma efectiva un solo fichero mapeado en memoria (el "
+"fichero binario que se está ejecutando), pero el código del programa es de "
+"solo lectura mientras que los datos de programa son copy-on-write. El BSS "
+"del programa es sólo memoria asignada y rellenada con ceros bajo demanda, "
+"llamada rellenado de página cero bajo demanda. Ficheros arbitrarios pueden "
+"ser mapeados en memoria en el espacio de direcciones también, que es como "
+"funciona el mecanismo de librerías compartidas. Dichos mapeos pueden "
+"requerir modificaciones para permanecer privados al proceso que los realiza. "
+"La llamada al sistema fork añade una nueva dimensión a al problema de la "
+"gestión de la Memoria Virtual a añadir a la complejidad ya existente."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:152
@@ -274,6 +334,18 @@ msgid ""
 "system may no longer free it, because there is no longer any way to restore "
 "it later on."
 msgstr ""
+"Una página de datos binarios de un programa (que es una página copy-on-write "
+"básica) ilustra esta complejidad. Un programa binario contiene una sección "
+"de datos preinicializados que es inicialmente mapeado directamente por el "
+"fichero del programa. Cuando un programa se carga en el espacio de "
+"direcciones de Memoria Virtual del proceso, este área es inicialmente "
+"mapeado en memoria y respaldado por el programa binario mismo, permitiendo "
+"al sistema de Memoria Virtual liberar/reutilizar la página y después "
+"cargarla de nuevo desde el binario. Sin embargo, en el momento en que un "
+"proceso modifica estos datos, el sistema de Memoria Virtual debe hacer una "
+"copia privada para ese proceso. Puesto que la copia privada ha sido "
+"modificada, el sistema de Memoria Virtual podría no ser capaz de liberarla, "
+"porque no hay forma de restaurarla posteriormente."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:163
@@ -292,6 +364,21 @@ msgid ""
 "since each process (parent and child) expects their own personal post-fork "
 "modifications to remain private to themselves and not effect the other."
 msgstr ""
+"Notarás inmediatamente que lo que originalmente era un simple mapeo de un "
+"fichero se ha convertido en algo más complejo. Los datos pueden ser "
+"modificados página a página mientras que el mapeo de ficheros engloba varias "
+"páginas a la vez. La complejidad aumenta más cuando un proceso se bifurca. "
+"Cuando un proceso se bifurca, el resultado son dos procesos—cada uno con su "
+"propio espacio de direcciones privado que incluye cualquier modificación "
+"hecha por el proceso original antes de la llamada a <function>fork()</"
+"function>. Sería tonto para el sistema de Memoria Virtual hacer una copia "
+"completa de los datos en el momento de llamar a <function>fork()</function> "
+"porque es bastante posible que al menos uno de los dos procesos solamente "
+"necesite leer de esa página a partir de este momento, permitiendo así que se "
+"use la página original. Lo que era una página privada se ha convertido en "
+"una página copy-on-write de nuevo, puesto que cada proceso (padre y hijo) "
+"espera que sus propias modificaciones personales después del fork "
+"permanezcan privadas para ellos y que afecten al otro."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:178
@@ -308,6 +395,18 @@ msgid ""
 "When the process starts, the VM system creates an object layer, let's call "
 "this A:"
 msgstr ""
+"FreeBSD gestinoa todo esto con un modelo de Objetos de Memoria Virtual en "
+"capas. El fichero del programa binario original termina siendo la capa de "
+"Objetos de Memoria Virtual más baja. Una capa copy-on-write se sitúa encima "
+"de ella para mantener aquellas páginas que han sido copiadas del fichero "
+"original. Si el programa modifica una página de datos que pertenece al "
+"fichero original el sistema de Memoria Virtual genera un fallo de página y "
+"hace una copia de la página en la capa superior. Cuando un proceso bifurca, "
+"se empujan nuevas capas de Objetos de Memoria Virtual. Esto puede cobrar más "
+"sentido con un ejemplo bastante básico. Un <function>fork()</function> es "
+"una operación común para cualquier sistema *BSD, así que este ejemplo "
+"considerará un programa que arranca, y bifurca. Cuando el proceso arranca, "
+"el sistema de Memoria Virtual crea una capa de objetos, llamémosla A:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -338,6 +437,9 @@ msgid ""
 "literallayout-1/> </textobject> <textobject> <phrase>A picture</phrase> </"
 "textobject>"
 msgstr ""
+"<imageobject> <imagedata fileref=\"fig1\"/> </imageobject> <textobject> <_:"
+"literallayout-1/> </textobject> <textobject> <phrase>Figura A</phrase> "
+"</textobject>"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:206
@@ -348,6 +450,12 @@ msgid ""
 "system therefore creates a second layer, B, that will be physically backed "
 "by swap space:"
 msgstr ""
+"A representa el fichero—las páginas pueden ser paginadas hacia o desde el "
+"medio físico del fichero según sea necesario. Paginar desde el disco es "
+"razonable para un programa, pero en realidad no queremos paginar de vuelta y "
+"sobrescribir el ejecutable. Por tanto, el sistema de Memoria Virtual crea "
+"una segunda capa, B, que estará respaldada físicamente por espacio de "
+"intercambio:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -357,7 +465,7 @@ msgstr ""
 #: article.translate.xml:214
 msgctxt "_"
 msgid "external ref='fig2' md5='__failed__'"
-msgstr ""
+msgstr "external ref='fig2' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: article.translate.xml:218
@@ -383,6 +491,11 @@ msgid ""
 "swap device. When the program forks, the VM system creates two new object "
 "layers—C1 for the parent, and C2 for the child—that rest on top of B:"
 msgstr ""
+"En la primera escritura a una página después de esto, se crea una nueva "
+"página en B, y su contenido es inicizalizado desde A. Todas las páginas en B "
+"pueden ser paginadas a o desde el dispositivo de intercambio. Cuando el "
+"programa bifurca, el sistema de Memoria Virtual crea dos capas de objetos "
+"nuevas—C1 para el padre, y C2 para el hijo—que descansan sobre B:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -392,7 +505,7 @@ msgstr ""
 #: article.translate.xml:234
 msgctxt "_"
 msgid "external ref='fig3' md5='__failed__'"
-msgstr ""
+msgstr "external ref='fig3' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: article.translate.xml:238
