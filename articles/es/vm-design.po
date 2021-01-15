@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-01-09 10:57-0300\n"
-"PO-Revision-Date: 2021-01-15 16:56+0000\n"
+"PO-Revision-Date: 2021-01-15 20:06+0000\n"
 "Last-Translator: Fernando  Apesteguía <fernando.apesteguia@gmail.com>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_vm-design/es/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Fernando Apesteguía ffernape@FreeBSD.org, 2021"
+msgstr "Fernando Apesteguía fernape@FreeBSD.org, 2021"
 
 #. (itstool) path: info/title
 #: article.translate.xml:6
@@ -719,6 +719,16 @@ msgid ""
 "only when it is actually needed. However, the swap management structure has "
 "had problems historically:"
 msgstr ""
+"Las páginas de datos privadas se crean como páginas copy-on-write o rellenas "
+"con ceros. Cuando se hace un cambio, y por lo tanto una copia, el objeto de "
+"respaldo original (normalmente un fichero) ya no puede ser utilizado para "
+"guardar una copia de la página cuando el sistema de Memoria Virtual necesita "
+"reutilizarla para otros fines. Aquí es donde aparece el Intercambio. El "
+"Intercambio se asigna para crear almacenamiento de respaldo para memoria que "
+"de otra forma no la tendría. FreeBSD asigna la estructura de gestión del "
+"intercambio para un Objeto de Memoria Virtual solo cuando se necesita "
+"realmente. Sin embargo históricamente, la estructura de gestión del "
+"intercambio ha tenido problemas:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:343
@@ -729,6 +739,12 @@ msgid ""
 "fragmentation problem when large objects are mapped, or processes with large "
 "runsizes (RSS) fork."
 msgstr ""
+"En FreeBSD 3.X la estructura de gestión de intercambio preasigna un array "
+"que engloba todo el objeto que requiere almacenamiento de respaldo de "
+"intercambio—incluso si solo unas pocas páginas de ese objeto están "
+"respaldadas en el área de intercambio. Esto crea un problema de "
+"fragmentación de la memoria del núcleo cuando se mapean objetos grandes, o "
+"cuando procesos con tamaños de ejecución grandes (RSS) bifurcan."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:352
@@ -738,6 +754,11 @@ msgid ""
 "Since the <quote>list of holes</quote> is a linear list, the swap allocation "
 "and freeing performance is a non-optimal O(n)-per-page."
 msgstr ""
+"Además, para llevar la cuenta del espacio de intercambio, una <quote>lista "
+"de huecos</quote> es mantenida en la memoria del núcleo, y esta tiende a "
+"fragmentarse de forma severa también. Puesto que la <quote>lista de huecos</"
+"quote> es una lista lineal, el rendimiento de asignación y liberación de "
+"intercambio es de un orden subóptimo de O(n) por página."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:360
@@ -745,6 +766,9 @@ msgid ""
 "It requires kernel memory allocations to take place during the swap freeing "
 "process, and that creates low memory deadlock problems."
 msgstr ""
+"Requiere que se lleven a cabo asignaciones de memoria del núcleo durante el "
+"proceso de liberación de espacio de intercambio, y eso crea problemas de "
+"bloqueo por baja memoria."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:366
@@ -752,6 +776,8 @@ msgid ""
 "The problem is further exacerbated by holes created due to the interleaving "
 "algorithm."
 msgstr ""
+"El problema se exacerba debido a los huecos creados por el algoritmo de "
+"entrelazado."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:371
@@ -759,6 +785,8 @@ msgid ""
 "Also, the swap block map can become fragmented fairly easily resulting in "
 "non-contiguous allocations."
 msgstr ""
+"Además, el mapa de bloques de intercambio se puede fragmentar fácilmente "
+"dando como resultado asignaciones no contiguas."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:376
@@ -766,6 +794,9 @@ msgid ""
 "Kernel memory must also be allocated on the fly for additional swap "
 "management structures when a swapout occurs."
 msgstr ""
+"La memoria del núcleo se debe asignar al vuelo para las estructuras "
+"adicionales de gestión de intercambio cuando se escribe en el área de "
+"intercambio."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:381
@@ -773,6 +804,8 @@ msgid ""
 "It is evident from that list that there was plenty of room for improvement. "
 "For FreeBSD 4.X, I completely rewrote the swap subsystem:"
 msgstr ""
+"De esa lista se hace evidente que había mucho margen de mejora. Para FreeBSD "
+"4.X, reescribí completamente el subsistema de intercambio:"
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:387
@@ -780,6 +813,9 @@ msgid ""
 "Swap management structures are allocated through a hash table rather than a "
 "linear array giving them a fixed allocation size and much finer granularity."
 msgstr ""
+"Las estructuras de gestión de intercambio se asignan mediante una tabla has "
+"en lugar de un array lineal dándoles un tamaño de asignación fijo y mucha "
+"mayor granularidad."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:393
@@ -789,6 +825,10 @@ msgid ""
 "structure with free-space hinting in the radix node structures. This "
 "effectively makes swap allocation and freeing an O(1) operation."
 msgstr ""
+"En lugar de utilizar una lista enlazada linear para llevar la cuenta de las "
+"reservas de espacio de intercambio, ahora usa un mapa de bits de bloques de "
+"intercambio dispuestos en una estructura tipo árbol radix con anotaciones "
+"sobre el espacio libre en las estructuras de nodos del radix."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:401
@@ -799,6 +839,12 @@ msgid ""
 "avoid allocating kernel memory at such times in order to avoid potential "
 "deadlocks."
 msgstr ""
+"El mapa de bits entero para el árbol radix también se preasigna para evitar "
+"tener que asignar memoria del núcleo durante operaciones de intercambio con "
+"un nivel crítico de memoria baja. Después de todo, el sistema tiende a "
+"utilizar intercambio cuando está bajo en memoria de forma que deberíamos "
+"evitar asignar memoria del núcleo en esas situaciones para evitar "
+"potenciales bloqueos."
 
 #. (itstool) path: listitem/para
 #: article.translate.xml:410
@@ -806,6 +852,8 @@ msgid ""
 "To reduce fragmentation the radix tree is capable of allocating large "
 "contiguous chunks at once, skipping over smaller fragmented chunks."
 msgstr ""
+"Para reducir la fragmentación el árbol radix es capaz de asignar de una sola "
+"vez grandes trozos contiguos, saltándose pequeños trozos fragmentados."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:416
@@ -815,11 +863,16 @@ msgid ""
 "in order to further guarantee contiguous allocations or at least locality of "
 "reference, but I ensured that such an addition could be made."
 msgstr ""
+"No realicé el paso final de tener un <quote>puntero de anotaciones para las "
+"asignaciones</quote> que recorrería una porción del espacio de intercambio "
+"según se hicieran las asignaciones para así garantizar asignaciones "
+"contiguas o al menos localidad de referencia, pero aseguré que esa condición "
+"no podría darse."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:424
 msgid "When to free a page"
-msgstr ""
+msgstr "Cuando liberar una página"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:426
@@ -832,6 +885,15 @@ msgid ""
 "VM system may be forced to unnecessarily retrieve pages from disk, seriously "
 "degrading system performance."
 msgstr ""
+"Como el sistema de Memoria Virtual usa toda la memoria disponible para "
+"cachear disco, normalmente hay pocas páginas que estén realmente libres. El "
+"sistema de Memoria Virtual depende de su habilidad para adecuadamente "
+"escoger las páginas que no están en uso para reutilizarlas en nuevas "
+"asignaciones. Seleccionar las páginas óptimas para liberar es posiblemente "
+"la función más importante que cualquier sistema de Memoria Virtual puede "
+"realizar porque si la elección no es buena, el sistema de Memoria Virtual "
+"puede verse forzada a recuperar páginas de disco innecesariamente, "
+"degradando seriamente el rendimiento del sistema."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:434
@@ -843,6 +905,13 @@ msgid ""
 "sure that the right page is chosen. This is why FreeBSD tends to outperform "
 "other systems when memory resources become stressed."
 msgstr ""
+"¿Cuánto trabajo extra estamos dispuestos a sufrir en el camino crítico para "
+"evitar liberar la página equivocada? Cada decisión errónea que hacemos "
+"costará cientos de miles de ciclos de CPU y una parada notable de los "
+"procesos afectados, así que estamos dispuestos a soportar una cantidad "
+"significativa de trabajo extra para estar seguros que se escoge la página "
+"adecuada. Por esto es por lo que FreeBSD tiende a superar en rendimiento a "
+"otros sistemas cuando se estresan los recursos de memoria."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:442
@@ -851,6 +920,10 @@ msgid ""
 "memory pages. To acquire this history, the system takes advantage of a page-"
 "used bit feature that most hardware page tables have."
 msgstr ""
+"El algoritmo que determina la página libre se construye en base al histórico "
+"de uso de las páginas de memoria. Para adquirir este histórico, el sistema "
+"se aprovecha de la característica del bit de página utilizada que la mayoría "
+"del hardware de tablas de página posee."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:446
@@ -864,11 +937,20 @@ msgid ""
 "up some pages, checking this history becomes the cornerstone of determining "
 "the best candidate page to reuse."
 msgstr ""
+"En cualquier caso, el bit de página utilizada se blanquea y en algún momento "
+"posterior el sistema de Memoria Virtual se encuentra con la página de nuevo "
+"y vee que el bit de página utilizada ha sido marcado. Esto indica que la "
+"página todavía se está utilizando activamente. Si el bit está blanqueado eso "
+"indica que la página no se usa activamente. Mediante el chequeo periódico de "
+"este bit, se desarrollo (en forma de contador) un histórico de uso . Cuando "
+"posteriormente el sistema de Memoria Virtual necesita liberar algunas "
+"páginas, examinar este histórico se convierte en la piedra de toque para "
+"determinar la mejor página candidata para reutilizar."
 
 #. (itstool) path: sidebar/title
 #: article.translate.xml:456
 msgid "What if the hardware has no page-used bit?"
-msgstr ""
+msgstr "¿Qué ocurre si el hardware no tiene bit de página utilizada?"
 
 #. (itstool) path: sidebar/para
 #: article.translate.xml:458
@@ -882,6 +964,15 @@ msgid ""
 "than reusing the page for some other purpose only to find that a process "
 "needs it back and then have to go to disk."
 msgstr ""
+"Para esas plataformas que no tienen esta característica, el sistema en "
+"realidad emula un bit de página utilizada. Desmapea o protege una página, "
+"forzando un fallo de página si ésta es accedida de nuevo. Cuando se maneja "
+"el fallo de página, el sistema simplemente marca la página como usada y "
+"desprotege la página de forma que puede ser utilizada. Aunque realizar este "
+"fallo de página tan solo para determinar si una página está siendo usada "
+"puede parecer una proposición cara, es mucho menos cara que reutilizar la "
+"página para otro propósito para darse cuenta después de que otro proceso la "
+"necesita y tener que ir al disco."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:469
@@ -905,6 +996,26 @@ msgid ""
 "will be reused in an LRU (least-recently used) fashion when the system needs "
 "to allocate new memory."
 msgstr ""
+"FreeBSD utiliza varias colas de páginas para refinar aún más la selección de "
+"páginas a reutilizar así como para determinar cuando se deben llevar las "
+"páginas sucias a su almacenamiento de respaldo. Puesto que las tablas de "
+"páginas en FreeBSD son entidades dinámicas, cuesta virtualmente nada "
+"desmapear una página del espacio de direcciones de cualquier proceso que la "
+"esté usando. Cuando se ha escogido una página candidata basándose en el "
+"contador de página utilizada, esto es precisamente lo que se hace. El "
+"sistema debe distinguier entre páginas limpias que pueden en teoría ser "
+"liberadas en cualquier momento, y páginas sucias que deben ser escritas "
+"primero en el almacenamiento de respaldo antes de ser reutilizadas. Cuando "
+"se encuentra una página candidata se mueve a la cola inactiva si está sucia, "
+"o a la cola de caché si está limpia. In algoritmo separado que se bajas en "
+"el ratio de páginas sucias respecto de las limpias determina cuándo se "
+"tienen que escribir a disco las páginas sucias de la cola inactiva. Una vez "
+"hecho esto, las páginas escritas se mueven de la cola inactiva a la cola de "
+"caché. En este punto, las páginas en la cola de caché todavía pueden ser "
+"reactivadas por un fallo de Memoria Virtual con un coste relativamente bajo. "
+"Sin embargo, las páginas de la cola de caché se consideran como "
+"<quote>inmediatamente liberables</quote> y serán reutilizadas de modo LRU ("
+"Usada Menos Recientemente) cuando el sistema necesita asignar nueva memoria."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:489
@@ -919,6 +1030,16 @@ msgid ""
 "effort to maintain the various page queues at the levels determined to be "
 "the most effective."
 msgstr ""
+"Es importante señalar que el sistema de Memoria Virtual de FreeBSD intenta "
+"separar páginas limpias y sucias para expresar la razón de evitar la "
+"escritura innecesaria de páginas sucias (que come ancho de banda de E/S), y "
+"tampoco mueve de forma gratuita páginas entre distintas colas de páginas "
+"cuando el sistema de memoria no está bajo estrés. Este es el motivo por el "
+"que verás algunos sistemas con contadores de cola de caché muy bajos y "
+"contadores de cola de páginas activa altos cuando se ejecuta el comando "
+"<command>systat -vm</command>. Según el sistema de Memeoria Virtual va "
+"sufriendo más estrés, hace un gran esfuerzo por mantener varias colas de "
+"páginas en los niveles que determina que son más efectivos."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:499
@@ -930,11 +1051,18 @@ msgid ""
 "core and leaving less memory available for cache and process pages. I do not "
 "know whether this is still true today."
 msgstr ""
+"Durante años ha circulado una leyenda urbana acerca de que Linux hacía un "
+"mejor trabajo que FreeBSD evitando escribir en intercambio, pero de hecho "
+"esto no es cierto. Lo que ocurría en realidad era que FreeBSD estaba "
+"llevando a intercambio de forma proactiva páginas no utilizadas para hacer "
+"sitio para más caché de disco mientras que Linux estaba manteniendo las "
+"páginas sin utilizar y dejando menos memoria disponible para la caché y para "
+"páginas de procesos. No sé si esto sigue siendo cierto a día de hoy."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:509
 msgid "Pre-Faulting and Zeroing Optimizations"
-msgstr ""
+msgstr "Optimizaciones de Prefallo y de Rellenado con Ceros"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:511
@@ -959,6 +1087,29 @@ msgid ""
 "code faults (which were pre-faulted in already). Pre-copying pages on exec "
 "or fork is an area that could use more study."
 msgstr ""
+"Realizar un fallo de Memoria Virtual no es costoso y la página subyacente ya "
+"está cargada y simplemente puede ser mapeada en el proceso, pero puede ser "
+"costoso si hay muchas de ellas de forma regular. Un buen ejemplo de esto es "
+"ejecutar un programa como "
+"<citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> o "
+"<citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> una y otra vez. Si el programa binario está mapeado en la "
+"memoria pero no lo está en la tabla de páginas, entonces todas las páginas "
+"que serán accedidas por el programa generarán un fallo cada vez que el "
+"programa se ejecute. Esto es innecesario cuando las páginas en cuestión ya "
+"están en la Caché de Memoria Virtual, de modo que FreeBSD intentará pre-"
+"poblar las tablas de páginas de un proceso con aquellas páginas que ya están "
+"en la Caché de Memoria Virtual. Algo que FreeBSD no hace todavía es un pre-"
+"copy-on-write de ciertas páginas al hacer exec. Por ejemplo, si ejecutas el "
+"programa "
+"<citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> mientras ejecutas <command>vmstat 1</command> notarás que "
+"siempre produce un cierto número de fallos de página, incluso cuando lo "
+"ejecutas una y otra vez. Estos son fallos de página de rellenados de ceros, "
+"no fallos de código de programa (que ya han sido pre-fallados). Realizar una "
+"pre-copia de páginas en un exec o fork es un área en el que ser sujeto de "
+"más estudio."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:529
@@ -976,11 +1127,27 @@ msgid ""
 "away the memory caches. This is an excellent example of adding complexity to "
 "the VM system in order to optimize the critical path."
 msgstr ""
+"Un gran porcentaje de los fallos de página que se producen son fallos de "
+"rellenado de ceros. Habitualmente puedes verlo observando la salida del "
+"comando<command>vmstat -s</command>. Esto ocurre cuando un proceso accede a "
+"páginas de su área de BSS. Se espera que el área de BSS esté inicializada a "
+"cero pero el sistema de Memoria Virtual no se molesta en asignar ninguna "
+"memoria en absoluto hasta el momento en el que el proceso accede de verdad. "
+"Cuando se produce un fallo el sistema de Memoria Virtual no solo debe "
+"asignar una nueva página, tiene que inicializarla a cero también. Para "
+"optimizar la operación de rellenado de ceros el sistema de Memoria Virtual "
+"tiene la capacidad de pre-inicializar páginas a cero y marcarlas como tal, y "
+"solicitar páginas pre-inicializadas a cero cuando ocurre un fallo de "
+"rellenado de ceros. La pre-inicialización a cero ocurren cuando la CPU está "
+"ociosa pero el número de páginas que el sistema pre-inicializa a cero está "
+"limitado para evitar destrozar las cachés de memoria. Este es un ejemplo "
+"excelente de cómo añadir complejidad al sistema de Memoria Virtual para "
+"optimizar el camino crítico."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:545
 msgid "Page Table Optimizations"
-msgstr ""
+msgstr "Optimizaciones de la Tabla de Páginas"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:547
@@ -1004,6 +1171,27 @@ msgid ""
 "that can occur in a news system because it may run out of <literal>pv_entry</"
 "literal> structures."
 msgstr ""
+"Las optimizaciones de la tabla de páginas constituyen la parte más "
+"controvertida del diseño de la Memoria Virtual de FreeBSD y ha mostrado "
+"cierta tensión con la llegada de uso serio de <function>mmap()</function>. "
+"Creo que esto en realidad es una característica de la mayor parte de los "
+"BSDS aunque no estoy seguro de cuándo se introdujo por primera vez. Hay dos "
+"optimizaciones principales. La primar es que las tablas de páginas hardware "
+"no contienen un estado persistente sino que pueden descartarse en cualquier "
+"momento con solo un pequeño sobre coste en la gestión. La segunda es que "
+"cada entrada en la tabla de páginas activas en el sistema tiene una "
+"estructura <literal>pv_entry</literal> que lo gobierna la cual está enlazada "
+"a la estructura <literal>vm_page</literal>. FreeBSD puede simplemente iterar "
+"sobre esos mapeos que se sabe que existen mientras Linux tiene que comprobar "
+"todas las tablas de páginas que <emphasis>podrían</emphasis>  contener un "
+"mapeo específico para ver si es así, lo que puede provocar un sobre coste de "
+"O(n^2) en algunas situaciones. Por esto FreeBSD tiene a tomar mejores "
+"decisiones sobre qué páginas reutilizar o intercambiar cuando la memoria "
+"está bajo estrés, resultando en un mejor rendimiento bajo carga. Sin "
+"embargo, FreeBSD requiere ajustes del núcleo para acomodar situaciones con "
+"grandes espacios de direcciones  compartidos como los que pueden darse en "
+"sistemas nuevos porque podría agotar las estructuras "
+"<literal>pv_entry</literal>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:567
@@ -1019,11 +1207,22 @@ msgid ""
 "also runs non-optimally when trying to determine whether a page can be "
 "reused or not."
 msgstr ""
+"Tanto Linux como FreeBSD necesitan trabajar en este área. FreeBSD trata de "
+"maximizar la ventaja de un potencialmente escado modelo de mapeo activo (no "
+"todos los procesos necesitan mapear todas las páginas de una biblioteca "
+"compartida por ejemplo), mientras que Linux trata de simplificar sus "
+"algoritmos. FreeBSD en general tiene la venta del rendimiento a costa de "
+"gastar algo más de memoria extra, pero FreeBSD se desmorona en el caso donde "
+"un fichero grande está compartido de forma masiva entre cientos de procesos. "
+"Linux, por otro lado, se desmorona en el caso donde muchos procesos mapean "
+"pocas porciones de la misma biblioteca compartida y también se ejecuta de "
+"forma no-óptima cuando intenta determinar si una página puede ser "
+"reutilizada o no."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:580
 msgid "Page Coloring"
-msgstr ""
+msgstr "Coloreado de Páginas"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:582
@@ -1043,6 +1242,18 @@ msgid ""
 "performance. This is true even with multi-way set-associative caches (though "
 "the effect is mitigated somewhat)."
 msgstr ""
+"Terminaremos con las optimizaciones de coloreado de páginas. El coloreado de "
+"páginas es una optimización de rendimiento diseñada para asegurar que el "
+"acceso a páginas contiguas en memoria virtual hacen el mejor uso posible de "
+"la caché del procesador. Hace mucho tiempo (es decir, más de 10 años) las "
+"cachés de los procesadores solían mapear memoria virtual en lugar de memoria "
+"física. Esto produjo un gran número de problemas que incluyen tener que "
+"limpiar la caché en cada cambio de contexto en algunos casos, y problemas "
+"con los alias de datos en la caché. De hecho, si no tienes cuidado, páginas "
+"contiguas en memoria virtual podrían terminar utilizando la misma página en "
+"la caché del procesador—llevando a desechar prematuramente datos cacheables "
+"y reduciendo el rendimiento de la CPU. Esto es cierto incluso en cachés "
+"asociativas multi direccionales (aunque el efecto se mitiga algo)."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:598
