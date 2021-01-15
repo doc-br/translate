@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-01-09 10:57-0300\n"
-"PO-Revision-Date: 2021-01-14 23:59+0000\n"
+"PO-Revision-Date: 2021-01-15 07:42+0000\n"
 "Last-Translator: Fernando  Apesteguía <fernando.apesteguia@gmail.com>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_vm-design/es/>\n"
@@ -543,6 +543,19 @@ msgid ""
 "current address space is usually replaced by a new address space "
 "representing a new file. In this case, the C2 layer is destroyed:"
 msgstr ""
+"En este caso, digamos que una página en B es modificada por el proceso padre "
+"original. El proceso recibirá un fallo de copy-on-write y duplicará la "
+"página en C1, dejando la página original en B sin tocar. Ahora, digamos que "
+"la misma página en B es modificada por el proceso hijo. El proceso recibirá "
+"un fallo de copy-on-write y duplicará la página en C2. La página original en "
+"B está ahora completamente oculta ya que tanto C1 como C2 tienen una copia y "
+"B podría teóricamente ser destruida si no representa un fichero "
+"<quote>real</quote>; sin embargo, este tipo de optimización no es trivial de "
+"hacer porque es muy fina. FreeBSD no hace esta optimización. Ahora, supón ("
+"como suele ser el caso) que el proceso hijo hace un <function>exec()</"
+"function>. Su espacio de direcciones actual es habitualmente remplazado por "
+"un nuevo espacio de direcciones que representa un nuevo fichero. En este "
+"caso, la capa C2 es destruida:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -552,7 +565,7 @@ msgstr ""
 #: article.translate.xml:264
 msgctxt "_"
 msgid "external ref='fig4' md5='__failed__'"
-msgstr ""
+msgstr "external ref='fig4' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: article.translate.xml:268
@@ -584,6 +597,12 @@ msgid ""
 "we can recover the dead pages when either of the processes exit or "
 "<function>exec()</function>."
 msgstr ""
+"En este caso, el número de hijos de B ha bajado a uno, y todos los accesos a "
+"B van ahora a través de C1. Esto significa que B y C1 pueden colapsarse "
+"juntas. Cualquier página en B que también existe en C1 se borran de B "
+"durante el colapso. Por lo tanto, incluso aunque la optimización en el paso "
+"anterior no se pudo hacer, podemos recuperar las páginas muertas bien cuando "
+"el proceso sale o cuando llama a <function>exec()</function>."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:285
@@ -598,6 +617,16 @@ msgid ""
 "the page and the original page in B is no longer accessible by anyone. That "
 "page in B can be freed."
 msgstr ""
+"Este modelo crea un número de problemas potenciales. El primero es que "
+"puedes terminar con una pila de Objetos de Memoria Virtual relativamente "
+"profunda que puede tener un coste de tiempo de escaneo y de memoria cuando "
+"recibes un fallo. Capas muy profundas pueden ocurrir cuando los procesos se "
+"bifurcan y se bifurcan de nuevo (en el padre o en el hijo). El segundo "
+"problema es que puedes terminar con páginas muertas, inaccesibles en lo "
+"profundo de la pila de Objetos de Memoria Virtual. En nuestro último ejemplo "
+"si tanto los el proceso padre como el hijo modifican la misma página, ambos "
+"obtienen su propia copia privada de la página y la página original en B ya "
+"no es accesible por nadie. Esa página en B puede ser liberada."
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:295
