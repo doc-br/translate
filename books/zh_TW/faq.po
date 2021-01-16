@@ -1,11 +1,12 @@
 # FreeBSD$
 # rcyu <raycherng@gmail.com>, 2020.
+# Cycatz <thesummernightcat@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-01-09 10:58-0300\n"
-"PO-Revision-Date: 2020-12-29 01:50+0000\n"
-"Last-Translator: rcyu <raycherng@gmail.com>\n"
+"PO-Revision-Date: 2021-01-16 16:05+0000\n"
+"Last-Translator: Cycatz <thesummernightcat@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate-dev.freebsd.org/"
 "projects/freebsd-doc/boooks_faq/zh_TW/>\n"
 "Language: zh_TW\n"
@@ -964,7 +965,7 @@ msgstr ""
 msgid ""
 "Is the documentation available in other formats, such as plain text (ASCII), "
 "or PDF?"
-msgstr ""
+msgstr "文件是否支援其他的檔案格式，例如純文本或是 pdf ？"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:672
@@ -1573,7 +1574,7 @@ msgstr ""
 #. (itstool) path: question/para
 #: book.translate.xml:1105
 msgid "Which file do I download to get FreeBSD?"
-msgstr ""
+msgstr "我應該下載哪個檔案以取得 FreeBSD 呢？"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1109
@@ -2034,12 +2035,12 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:1482
 msgid "Architectures and Processors"
-msgstr ""
+msgstr "架構與處理器"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1487
 msgid "Does FreeBSD support architectures other than the x86?"
-msgstr ""
+msgstr "FreeBSD 是否支援除了 x86 以外的架構？"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1492
@@ -3184,7 +3185,7 @@ msgstr ""
 #. (itstool) path: question/para
 #: book.translate.xml:2424
 msgid "I would like to customize my kernel. Is it difficult?"
-msgstr ""
+msgstr "我想要自訂我的核心。這會很困難嗎？"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2429
@@ -3892,7 +3893,7 @@ msgstr ""
 #. (itstool) path: answer/para
 #: book.translate.xml:2963
 msgid "and mount it:"
-msgstr ""
+msgstr "然後掛載："
 
 #. (itstool) path: answer/screen
 #: book.translate.xml:2965
@@ -4027,7 +4028,7 @@ msgstr ""
 msgid ""
 "How do I let ordinary users mount CD-ROMs, DVDs, USB drives, and other "
 "removable media?"
-msgstr ""
+msgstr "如何讓一般使用者掛載 CD-ROMs, DVDs, USB 隨身碟等其他可移除的媒體？"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:3086
@@ -4737,7 +4738,7 @@ msgstr ""
 #. (itstool) path: answer/para
 #: book.translate.xml:3637
 msgid "Recompile and install the kernel."
-msgstr ""
+msgstr "重新編譯然後安裝核心。"
 
 #. (itstool) path: question/para
 #: book.translate.xml:3643
@@ -5545,7 +5546,7 @@ msgstr ""
 msgid ""
 "For security reasons, the default setting is to not allow a machine to "
 "remotely open a window."
-msgstr ""
+msgstr "基於安全考量，預設設定不允許機器從遠端開啟視窗。"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4270
@@ -5553,6 +5554,7 @@ msgid ""
 "To enable this feature, start <application>X</application> with the optional "
 "<option>-listen_tcp</option> argument:"
 msgstr ""
+"要開啟這個功能，開啟 <option>-listen_tcp</option> 參數來啟動 <application>X</application> ："
 
 #. (itstool) path: answer/screen
 #: book.translate.xml:4274
@@ -5563,7 +5565,7 @@ msgstr ""
 #. (itstool) path: question/para
 #: book.translate.xml:4280
 msgid "What is a virtual console and how do I make more?"
-msgstr ""
+msgstr "什麼是虛擬終端機以及如何新增更多？"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4285
@@ -5578,7 +5580,7 @@ msgid ""
 "When the system starts, it will display a login prompt on the monitor after "
 "displaying all the boot messages. Type in your login name and password to "
 "start working on the first virtual console."
-msgstr ""
+msgstr "當系統啟動時，螢幕上的啟動訊息顯示完畢後會顯示登入提示訊息。輸入你的登入名稱以及密碼以開始使用第一個虛擬終端機。"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4296
@@ -5657,12 +5659,12 @@ msgstr ""
 #. (itstool) path: answer/para
 #: book.translate.xml:4345
 msgid "The easiest way to activate the virtual consoles is to reboot."
-msgstr ""
+msgstr "啟動虛擬終端機最簡單的方式就是重新開機。"
 
 #. (itstool) path: question/para
 #: book.translate.xml:4352
 msgid "How do I access the virtual consoles from X?"
-msgstr ""
+msgstr "如何從 X 中存取虛擬終端機 ？"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4356
@@ -5696,7 +5698,7 @@ msgstr ""
 #. (itstool) path: question/para
 #: book.translate.xml:4376
 msgid "How do I start <application>XDM</application> on boot?"
-msgstr ""
+msgstr "如何在開機時啟動 <application>XDM</application> ？"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4381
@@ -7949,7 +7951,7 @@ msgstr ""
 msgid ""
 "Make sure that the following line is included in the kernel configuration "
 "file:"
-msgstr ""
+msgstr "確認這行程式碼有被加入到核心設定檔："
 
 #. (itstool) path: step/programlisting
 #: book.translate.xml:6154
@@ -7960,7 +7962,7 @@ msgstr ""
 #. (itstool) path: step/para
 #: book.translate.xml:6158
 msgid "Change to the <filename>/usr/src</filename> directory:"
-msgstr ""
+msgstr "切換到 <filename>/usr/src</filename> 目錄底下："
 
 #. (itstool) path: step/screen
 #: book.translate.xml:6161
@@ -7971,7 +7973,7 @@ msgstr ""
 #. (itstool) path: step/para
 #: book.translate.xml:6165
 msgid "Compile the kernel:"
-msgstr ""
+msgstr "編譯核心："
 
 #. (itstool) path: step/screen
 #: book.translate.xml:6167
@@ -8123,7 +8125,7 @@ msgstr ""
 #. (itstool) path: question/para
 #: book.translate.xml:6287
 msgid "How can I increase or reduce the kernel address space on i386?"
-msgstr ""
+msgstr "如何在 i1386 架構上增加或減少核心的定址空間？"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:6292
@@ -8138,7 +8140,7 @@ msgstr ""
 msgid ""
 "Add the following line to the kernel configuration file to increase "
 "available space and rebuild the kernel:"
-msgstr ""
+msgstr "加入這行程式碼到核心設定檔以增加可用空間，然後重新編譯核心："
 
 #. (itstool) path: answer/programlisting
 #: book.translate.xml:6302
