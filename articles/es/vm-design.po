@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-01-09 10:57-0300\n"
-"PO-Revision-Date: 2021-01-15 20:06+0000\n"
+"PO-Revision-Date: 2021-01-17 17:50+0000\n"
 "Last-Translator: Fernando  Apesteguía <fernando.apesteguia@gmail.com>\n"
 "Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
 "freebsd-doc/articles_vm-design/es/>\n"
@@ -1037,7 +1037,7 @@ msgstr ""
 "cuando el sistema de memoria no está bajo estrés. Este es el motivo por el "
 "que verás algunos sistemas con contadores de cola de caché muy bajos y "
 "contadores de cola de páginas activa altos cuando se ejecuta el comando "
-"<command>systat -vm</command>. Según el sistema de Memeoria Virtual va "
+"<command>systat -vm</command>. Según el sistema de Memoria Virtual va "
 "sufriendo más estrés, hace un gran esfuerzo por mantener varias colas de "
 "páginas en los niveles que determina que son más efectivos."
 
@@ -1272,11 +1272,26 @@ msgid ""
 "makes VM memory as deterministic as physical memory in regards to cache "
 "performance."
 msgstr ""
+"El código de asignación de memoria de FreeBSD implementa optimizaciones de "
+"coloreado de páginas, lo que significa que el código se asignación de "
+"memoria intentará localizar páginas libres que son contiguas desde el punto "
+"de vista de la caché. Por ejemplo, si la página 16 de memoria física está "
+"asignada a la página 0 de la memoria virtual del proceso y la caché puede "
+"mantener 4 páginas, el código de coloreado de páginas no asignará la página "
+"20 de memoria física a la página 1 de la memoria virtual de un proceso. En "
+"su lugar, asignaría la página 21 de memoria física. El código de coloreado "
+"de páginas intenta evitar la asignación de la página 20 porque esto mapea "
+"sobre la misma memoria cacheada que la página 16 y resultaría en un cacheo "
+"no óptimo. Este código añade una significativa complejidad al subsistema de "
+"asignación de memoria de la Memoria Virtual como puedes imaginar, pero el "
+"resultado merece la pena. El Coloreado de Páginas hace que la memoria de la "
+"Memoria Virtual sea tan determinista como la memoria física en términos de "
+"rendimiento de caché."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:615
 msgid "Conclusion"
-msgstr ""
+msgstr "Conclusión"
 
 #. (itstool) path: sect1/para
 #: article.translate.xml:617
@@ -1289,11 +1304,20 @@ msgid ""
 "improvements to the FreeBSD VM system in the last several years, and work is "
 "ongoing."
 msgstr ""
+"La Memoria Virtual en lo sistemas operativos modernos deben afrontar "
+"diversas situaciones de forma eficiente y para muchos patrones de uso "
+"distintos. La aproximación modular y algorítmica que históricamente ha "
+"tomado BSD nos permite estudiar y entender la implementación actual así como "
+"reemplazar piezas de código relativamente grandes de forma también "
+"relativamente limpia. Ha habido una serie de mejoras en el sistema e Memoria "
+"Virtual de FreeBSD en los últimos años, y el trabajo continua."
 
 #. (itstool) path: sect1/title
 #: article.translate.xml:627
 msgid "Bonus QA session by Allen Briggs <email>briggs@ninthwonder.com</email>"
 msgstr ""
+"Sesión extra de Preguntas y Respuestas por Allen Briggs "
+"<email>briggs@ninthwonder.com</email>"
 
 #. (itstool) path: question/para
 #: article.translate.xml:633
@@ -1301,6 +1325,8 @@ msgid ""
 "What is <quote>the interleaving algorithm</quote> that you refer to in your "
 "listing of the ills of the FreeBSD 3.X swap arrangements?"
 msgstr ""
+"¿Qué es el <quote>algoritmo de entrelazado</quote> al que hiciste referencia "
+"en la lista de problemas del sistema de intercambio de FreeBSD 3.X?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:639
@@ -1313,12 +1339,21 @@ msgid ""
 "FreeBSD's address space representation for that swap area will be "
 "interleaved in blocks of 16 pages:"
 msgstr ""
+"FreeBSD utiliza un entrelazado de intercambio fijo con un valor por defecto "
+"de 4. Esto significa que FreeBSD reserva espacio para cuatro áreas de "
+"intercambio incluso si solo tienes una, dos o tres. Puesto que el espacio de "
+"intercambio está entrelazado el espacio lienal de direcciones que representa "
+"las <quote>cuatro áreas de intercambio</quote> estará fragmentado si en "
+"realidad no tienes cuatro áreas de intercambio. Por ejemplo, si tienes dos "
+"áreas de intercambio A y B la representación del espacio de direcciones en "
+"FreeBSD para ese área de intercambio estará entrelazada en bloques de 16 "
+"páginas:"
 
 #. (itstool) path: answer/literallayout
 #: article.translate.xml:648
 #, no-wrap
 msgid "A B C D A B C D A B C D A B C D"
-msgstr ""
+msgstr "A B C D A B C D A B C D A B C D"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:650
@@ -1333,6 +1368,16 @@ msgid ""
 "account for because C and D are holes, so the list node cannot be combined "
 "with the next A-B sequence."
 msgstr ""
+"FreeBSD 3.X utiliza una aproximación de <quote>lista secuencial de regiones "
+"libres</quote> para contabilizar las áreas de intercambio libres. La idea es "
+"que grandes bloques de espacio lineal libre puede ser representado con un "
+"único nodo en la lista (<filename>kern/subr_rlist.c</filename>). Pero debido "
+"a la fragmentación la lista termina estando completamente fragmentada. En el "
+"ejemplo superior, espacio de intercambio completamente sin utilizar hará que "
+"A y B se muestren como <quote>libre</quote> y C y D como <quote>todo "
+"asignado</quote>. Cada secuencia A-B requiere un nodo en la lista para ser "
+"contabilizado porque C y D son huecos, así que el nodo de la lista no puede "
+"ser combinado junto con la siguiente secuencia A-B."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:662
@@ -1342,6 +1387,11 @@ msgid ""
 "swaths of an address space and have the result automatically be interleaved "
 "across multiple disks than it is to try to put that sophistication elsewhere."
 msgstr ""
+"¿Por qué entrelazamos nuestro espacio de intercambio en lugar de mover las "
+"áreas hacia el final y hacer algo más interesante? Es mucho más fácil "
+"asignar rondas lineales de un espacio de direcciones y luego entrelazar "
+"automáticamente el resultado en múltiples discos en lugar de tratar de poner "
+"toda esa sofisticación en otro lado."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:668
@@ -1355,6 +1405,15 @@ msgid ""
 "lead to a deadlock if the system is trying to pageout pages in a low-memory "
 "situation."
 msgstr ""
+"La fragmentación causa otros problemas. Al utilizar una lista lineal en 3.X, "
+"y tener una cantidad tan grande de fragmentación, asignar y liberar "
+"intercambio termina siendo un algoritmo O(N) en lugar de un algoritmo O(1). "
+"Junto con otros factores (mucho acceso al intercambio) y empiezas a tener "
+"niveles de sobrecarga de orden O(N^2) y O(N^3), lo que es malo. El sistema "
+"3.X puede necesitar además asignar Memoria Virtual del Núcleo durante una "
+"operación de intercambio para crear un nuevo nodo en la lista lo que puede "
+"producir un bloqueo si el sistema está intentando desalojar páginas en una "
+"situación de memoria baja."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:678
@@ -1367,6 +1426,14 @@ msgid ""
 "a sequential list gives us nearly O(1) performance no matter how fragmented "
 "the tree becomes."
 msgstr ""
+"En 4.X no utilizamos una lista secuencial. En su lugar utilizamos un árbol "
+"radix y mapas de bits de bloques de intercambio en lugar de nodos de listas "
+"por rangos. Sufrimos la penalización de preasignar todos los mapas de bits "
+"necesarios para todo el área de intercambio pero esto al final desaprovecha "
+"menos memroia debido al uso de un mapa de bits (un bit por bloque) en lugar "
+"de una lista enlazada de nodos. El uso del árbol radix en lugar de una lista "
+"secuencia nos proporciona un rendimiento de casi O(1) independientemente de "
+"cómo de fragmentado esté el árbol."
 
 #. (itstool) path: question/para
 #: article.translate.xml:691
@@ -1376,11 +1443,16 @@ msgid ""
 "in <command>systat -vm</command>? Do the systat stats roll the active and "
 "dirty pages together for the active queue count?"
 msgstr ""
+"¿Cómo se relaciona la separación de páginas limpias y sucias (inactivas) con "
+"la situación donde puedes ver contadores bajos de la lista de cache y "
+"contadores altos de la lista activa en <command>systat -vm</command>? ¿Las "
+"estadísticas de systat cuentan las páginas activas y las sucias de forma "
+"conjunta en el contador de la cola activa?"
 
 #. (itstool) path: question/para
 #: article.translate.xml:697
 msgid "I do not get the following:"
-msgstr ""
+msgstr "No entiendo lo siguiente:"
 
 #. (itstool) path: blockquote/para
 #: article.translate.xml:700
@@ -1393,6 +1465,14 @@ msgid ""
 "counts and high active queue counts when doing a <command>systat -vm</"
 "command> command."
 msgstr ""
+"Es importante señalar que el sistema de Memoria Virtual de FreeBSD intenta "
+"separar páginas limpias y sucias para expresar la razón de evitar la "
+"escritura innecesaria de páginas sucias (que come ancho de banda de E/S), y "
+"tampoco mueve de forma gratuita páginas entre distintas colas de páginas "
+"cuando el sistema de memoria no está bajo estrés. Este es el motivo por el "
+"que verás algunos sistemas con contadores de cola de caché muy bajos y "
+"contadores de cola de páginas activa altos cuando se ejecuta el comando "
+"<command>systat -vm</command>."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:712
@@ -1401,6 +1481,10 @@ msgid ""
 "<quote>reality</quote>. Our goal is to separate the pages but the reality is "
 "that if we are not in a memory crunch, we do not really have to."
 msgstr ""
+"Sí, eso es confuso. La relación es <quote>objetivo</quote> versus "
+"<quote>realidad</quote>. Nuestro objeto es separar las páginas pero la "
+"realidad es que si no estamos en una crisis de memoria, en realidad no "
+"necesitamos hacerlo."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:717
@@ -1411,6 +1495,11 @@ msgid ""
 "inactive queue) when the system is not being stressed, even if they are not "
 "being used."
 msgstr ""
+"Esto significa que FreeBSD no intentará demasiado fuerte separar las páginas "
+"sucias (cola inactiva) de las limpias (cola de caché ) cuando el sistema no "
+"está bajo estrés, ni intentará desactivar páginas (cola activa &gt; cola "
+"inactiva) cuando el sistema no está bajo estrés, incluso si no están siendo "
+"utilizadas."
 
 #. (itstool) path: question/para
 #: article.translate.xml:727
@@ -1422,6 +1511,12 @@ msgid ""
 "some program data. Or are you implying that FreeBSD does do pre-COW for the "
 "program data?"
 msgstr ""
+"En el ejemplo de <citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1<"
+"/manvolnum></citerefentry>/<command>vmstat 1</command>, algunos de los "
+"fallos de página no serían fallos de páginas de datos (COW del fichero del "
+"ejecutable a una página privada)? Es decir, esperaría algunos fallos de "
+"página fueran de rellenado de ceros y otros de datos de programa. ¿O te "
+"refieres a que FreeBSD hace pre-COW para los datos de programa?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:735
@@ -1432,6 +1527,11 @@ msgid ""
 "program data or zero-fill, but it <emphasis>does</emphasis> pre-map pages "
 "that exist in its cache."
 msgstr ""
+"Un fallo COW puede ser de rellenado de ceros o de datos de programa. El "
+"mecanismo es el mismo en cualquier caso porque el los datos de respaldo del "
+"programa ya estarán en la caché. De hecho estoy mezclando los dos. FreeBSD "
+"no hace pre-COW de los datos de programa o de rellenado de ceros, pero "
+"<emphasis>sí</emphasis> premapea páginas que existen en la caché."
 
 #. (itstool) path: question/para
 #: article.translate.xml:746
@@ -1442,6 +1542,11 @@ msgid ""
 "McKusick, Bostic, Karel, Quarterman)? Specifically, what kind of operation/"
 "reaction would require scanning the mappings?"
 msgstr ""
+"En la sección de optimizaciones de la tabla de páginas, puedes dar algo más "
+"de detalle acerca de <literal>pv_entry</literal> y <literal>vm_page</"
+"literal> (o debería vm_page ser <literal>vm_pmap</literal>—como en 4.4, cf. "
+"pp. 180-181 de McKusick, Bostic, Karel, Quarterman)? Específicamente, ¿qué "
+"tipo de operación/reacción requeriría un escaneo de los mapas?"
 
 #. (itstool) path: question/para
 #: article.translate.xml:753
@@ -1449,6 +1554,8 @@ msgid ""
 "How does Linux do in the case where FreeBSD breaks down (sharing a large "
 "file mapping over many processes)?"
 msgstr ""
+"¿Qué tal lo hace Linux en el caso en el que FreeBSD se desmorona (compartir "
+"un mapeo de un fichero grande entre muchos procesos)?"
 
 #. (itstool) path: answer/para
 #: article.translate.xml:758
@@ -1460,6 +1567,12 @@ msgid ""
 "by a single <literal>vm_page</literal> structure and three "
 "<literal>pv_entry</literal> structures."
 msgstr ""
+"Un <literal>vm_page</literal> representa una tupla (objeto,indice#). Un "
+"<literal>pv_entry</literal> representa una entrada de la tabla de páginas "
+"hardware (pte). Si tienes cinco procesos compartiendo la misma página física "
+"y la tabla de páginas de tres de esos procesos mapean la página, ésta será "
+"representada mediante una sola estructura <literal>vm_page</literal> y tres "
+"estructuras <literal>pv_entry</literal>."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:766
@@ -1472,6 +1585,14 @@ msgid ""
 "<literal>pv_entry</literal>'s associated with that <literal>vm_page</"
 "literal> to remove or modify the pte's from their page tables."
 msgstr ""
+"Las estructuras <literal>pv_entry</literal> sólo representan páginas "
+"mapeadas por la MMU (una <literal>pv_entry</literal> representa una pte). "
+"Esto significa que cuando necesitamos eliminar todas las referencias "
+"hardware a la <literal>vm_page</literal> (para reutilizar la página para "
+"otra cosa, pasarla a disco, borrarla, marcarla como sucia y demás) podemos "
+"simplemente escanear la lista enlazada de estructuras <literal>pv_entry</"
+"literal> asociadas con esa <literal>vm_page</literal> y eliminar o modificar "
+"la pte de sus tablas de páginas."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:776
@@ -1491,6 +1612,22 @@ msgid ""
 "blowing away the L1 cache line for that offset, which can lead to better "
 "performance."
 msgstr ""
+"En Linux no existe dicha lista enlazada. Para eliminar todos los mapeos de "
+"tablas de páginas hardware para una <literal>vm_page</literal> linux debe "
+"acceder a cada objeto de Memoria Virtual que <emphasis>podría</emphasis> "
+"haber mapeado la página. Por ejemplo, si tienes 50 procesos todos mapeando "
+"la misma biblioteca compartida y quieres eliminar la página X de esa "
+"biblioteca, necesitas acceder a la tabla de páginas de cada uno de esos 50 "
+"procesos incluso si sólo 10 de ellos han mapeado la página. Así que Linux "
+"está favoreciendo la simplicidad en el diseño por el rendimiento. Muchos "
+"algoritmos de Memoria Virtual que son O(1) o (una N pequeña) en FreeBSD "
+"terminan siendo O(N), O(N^2), o peor en Linux. Puesto que los pte que "
+"representan una página concreta en un objeto suelen estar en el mismo "
+"desplazamiento en todas las tablas de páginas en las que están mapeadas, "
+"reducir el número de accesos a las tablas de páginas en el mismo "
+"desplazamiento del pte evitará por lo general que se destruya la línea de "
+"caché L1 para ese desplazamiento, lo que puede conllevar un mejor "
+"rendimiento."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:793
@@ -1499,6 +1636,9 @@ msgid ""
 "order to increase performance (to limit page table accesses to "
 "<emphasis>only</emphasis> those pte's that need to be modified)."
 msgstr ""
+"FreeBSD tiene más complejidad (el esquema de <literal>pv_entry</literal>) "
+"para mejorar el rendimiento (para limitar los accesos a la tabla de páginas "
+"<emphasis>sólo</emphasis> a aquellos pte que necesitan ser modificados)."
 
 #. (itstool) path: answer/para
 #: article.translate.xml:798
