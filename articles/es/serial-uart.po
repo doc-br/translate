@@ -1,19 +1,19 @@
 # FreeBSD$
-# Aaron H Farías Martinez <timido@ubuntu.com>, 2020.
+# Aaron H Farías Martinez <timido@ubuntu.com>, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-01-09 10:57-0300\n"
-"PO-Revision-Date: 2020-12-19 16:05+0000\n"
+"PO-Revision-Date: 2021-01-22 10:46+0000\n"
 "Last-Translator: Aaron H Farías Martinez <timido@ubuntu.com>\n"
-"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/freebsd-"
-"doc/articles_serial-uart/es/>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
+"freebsd-doc/articles_serial-uart/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -75,8 +75,9 @@ msgstr ""
 #. (itstool) path: info/pubdate
 #. (itstool) path: info/releaseinfo
 #: article.translate.xml:28 article.translate.xml:30
+#, fuzzy
 msgid "$FreeBSD$"
-msgstr ""
+msgstr "$FreeBSD$"
 
 #. (itstool) path: abstract/para
 #: article.translate.xml:33
@@ -3058,52 +3059,54 @@ msgstr ""
 #. (itstool) path: row/entry
 #: article.translate.xml:1622
 msgid "Word Length Select Bit #1 (WLSB1)"
-msgstr ""
+msgstr "Bit de selección de longitud de palabra n. ° 1 (WLSB1)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1628
 msgid "Word Length Select Bit #0 (WLSB0)"
-msgstr ""
+msgstr "Bit de selección de longitud de palabra # 0 (WLSB0)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1633
 msgid "Together these bits specify the number of bits in each data word."
 msgstr ""
+"Juntos, estos bits especifican el número de bits en cada palabra de datos."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1641
 msgid "Word Length"
-msgstr ""
+msgstr "Longitud de palabra"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1648
 msgid "5 Data Bits"
-msgstr ""
+msgstr "5 bits de datos"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1655
 msgid "6 Data Bits"
-msgstr ""
+msgstr "6 bits de datos"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1662
 msgid "7 Data Bits"
-msgstr ""
+msgstr "7 bits de datos"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1669
 msgid "8 Data Bits"
-msgstr ""
+msgstr "8 bits de datos"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1677
+#, fuzzy
 msgid "+0x04"
-msgstr ""
+msgstr "+0x04"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1686
 msgid "Modem Control Register (MCR)"
-msgstr ""
+msgstr "Registro de control de módem (MCR)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1707
@@ -3114,6 +3117,11 @@ msgid ""
 "inputs. CTS is connected to RTS, DTR is connected to DSR, OUT1 is connected "
 "to RI, and OUT 2 is connected to DCD."
 msgstr ""
+"Activar bucle invertido. Cuando se establece en \"1\", el transmisor y el "
+"receptor UART se conectan internamente para permitir operaciones de "
+"diagnóstico. Además, las salidas de control del módem UART están conectadas "
+"a las entradas de control del módem UART. CTS está conectado a RTS, DTR está "
+"conectado a DSR, OUT1 está conectado a RI y OUT 2 está conectado a DCD."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1719
@@ -3122,6 +3130,10 @@ msgid ""
 "the IBM PC serial adapter (and most clones), OUT 2 is used to tri-state "
 "(disable) the interrupt signal from the 8250/16450/16550 UART."
 msgstr ""
+"OUT 2. Una salida auxiliar que el procesador anfitrión puede establecer alta "
+"o baja. En el adaptador en serie de IBM PC (y en la mayoría de los clones), "
+"OUT 2 se usa para tri-estado (deshabilitar) la señal de interrupción del "
+"8250/16450/16550 UART."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1728
@@ -3129,6 +3141,8 @@ msgid ""
 "OUT 1. An auxiliary output that the host processor may set high or low. This "
 "output is not used on the IBM PC serial adapter."
 msgstr ""
+"OUT 1. Una salida auxiliar que el procesador principal puede establecer alta "
+"o baja. Esta salida no se utiliza en el adaptador serie IBM PC."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1735
@@ -3136,6 +3150,8 @@ msgid ""
 "Request to Send (RTS). When set to \"1\", the output of the UART -RTS line "
 "is Low (Active)."
 msgstr ""
+"Solicitud de envío (RTS). Cuando se establece en \"1\", la salida de la "
+"línea UART -RTS es Baja (Activa)."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1742
@@ -3143,16 +3159,19 @@ msgid ""
 "Data Terminal Ready (DTR). When set to \"1\", the output of the UART -DTR "
 "line is Low (Active)."
 msgstr ""
+"Terminal de datos listo (DTR). Cuando se establece en \"1\", la salida de la "
+"línea UART -DTR es Baja (Activa)."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1751
+#, fuzzy
 msgid "+0x05"
-msgstr ""
+msgstr "+0x05"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1760
 msgid "Line Status Register (LSR)"
-msgstr ""
+msgstr "Registro de estado de línea (LSR)"
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1766
@@ -3161,6 +3180,9 @@ msgid ""
 "is set to \"1\" when any of the bytes in the FIFO have one or more of the "
 "following error conditions: PE, FE, or BI."
 msgstr ""
+"Error en el receptor FIFO. En el UART 8250/16450, este bit es cero. Este bit "
+"se establece en \"1\" cuando cualquiera de los bytes del FIFO tiene una o "
+"más de las siguientes condiciones de error: PE, FE o BI."
 
 #. (itstool) path: row/entry
 #: article.translate.xml:1774
