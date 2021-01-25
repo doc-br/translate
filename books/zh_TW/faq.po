@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2021-01-09 10:58-0300\n"
-"PO-Revision-Date: 2021-01-16 16:05+0000\n"
+"PO-Revision-Date: 2021-01-25 19:22+0000\n"
 "Last-Translator: Cycatz <thesummernightcat@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate-dev.freebsd.org/"
 "projects/freebsd-doc/boooks_faq/zh_TW/>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -1653,7 +1653,7 @@ msgstr ""
 #. (itstool) path: question/para
 #: book.translate.xml:1162
 msgid "What do I do if the install image does not boot?"
-msgstr ""
+msgstr "如果安裝映像檔不能啟動該怎麼辦？"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1167
@@ -2134,7 +2134,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:1566
 msgid "Keyboards and Mice"
-msgstr ""
+msgstr "鍵盤與滑鼠"
 
 #. (itstool) path: question/para
 #: book.translate.xml:1571
@@ -2219,7 +2219,7 @@ msgstr ""
 #. (itstool) path: question/para
 #: book.translate.xml:1638
 msgid "My mouse has a fancy wheel and buttons. Can I use them in FreeBSD?"
-msgstr ""
+msgstr "我的滑鼠有很酷炫的滾輪與按鍵，我可以在 FreeBSD 中使用它們嗎？"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1643
@@ -2288,10 +2288,11 @@ msgstr ""
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1690
+#, fuzzy
 msgid ""
 "Some sound cards set their output volume to 0 at every boot. Run the "
 "following command every time the machine boots:"
-msgstr ""
+msgstr "有些音效卡會在每次開機時將輸出音量設定為 0 ，在每次機器開機時運行底下命令："
 
 #. (itstool) path: answer/screen
 #: book.translate.xml:1694
@@ -2302,7 +2303,7 @@ msgstr ""
 #. (itstool) path: question/para
 #: book.translate.xml:1700
 msgid "Does FreeBSD support power management on my laptop?"
-msgstr ""
+msgstr "FreeBSD 是否支援筆記型電腦的電源管理？"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1705
@@ -2589,7 +2590,7 @@ msgstr ""
 #. (itstool) path: question/para
 #: book.translate.xml:1948
 msgid "Why do full screen applications on remote machines misbehave?"
-msgstr ""
+msgstr "為什麼有些在遠端機器上的全螢幕程式會出現異常行為？"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1953
@@ -2631,6 +2632,7 @@ msgid ""
 "Why does it take so long to connect to my computer via <command>ssh</"
 "command> or <command>telnet</command>?"
 msgstr ""
+"為什麼使用 <command>ssh</command> or <command>telnet</command> 連上我的電腦需要那麼久的時間？"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:1985
@@ -3250,6 +3252,8 @@ msgid ""
 "For more information see <citerefentry><refentrytitle>src.conf</"
 "refentrytitle><manvolnum>5</manvolnum></citerefentry>."
 msgstr ""
+"你可以參考 <citerefentry><refentrytitle>src."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 以獲得更多資訊。"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2477
@@ -3403,12 +3407,12 @@ msgstr ""
 #. (itstool) path: chapter/title
 #: book.translate.xml:2597
 msgid "Disks, File Systems, and Boot Loaders"
-msgstr ""
+msgstr "硬碟、檔案系統與啟動程式"
 
 #. (itstool) path: question/para
 #: book.translate.xml:2602
 msgid "How can I add my new hard disk to my FreeBSD system?"
-msgstr ""
+msgstr "如何在 FreeBSD 中增加新硬碟？"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:2607
@@ -5817,7 +5821,7 @@ msgstr ""
 #. (itstool) path: question/para
 #: book.translate.xml:4461
 msgid "Why does my PS/2 mouse misbehave under X?"
-msgstr ""
+msgstr "為什麼我的 PS/2 滑鼠在 X 中運作不正常？"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4465
@@ -5844,7 +5848,7 @@ msgstr ""
 #. (itstool) path: question/para
 #: book.translate.xml:4482
 msgid "How do I reverse the mouse buttons?"
-msgstr ""
+msgstr "如何將滑鼠按鈕順序反轉？"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4486
@@ -5853,6 +5857,8 @@ msgid ""
 "<filename>~/.xinitrc</filename> or <filename>~/.xsession</filename> to make "
 "it happen automatically."
 msgstr ""
+"輸入 <command>xmodmap -e \"pointer = 3 2 1\"</command> 這行指令，並且添加到 <filename>~/."
+"xinitrc</filename> 或是 <filename>~/.xsession</filename> 中以使設定自動生效。"
 
 #. (itstool) path: question/para
 #: book.translate.xml:4496
@@ -5870,7 +5876,7 @@ msgstr ""
 #. (itstool) path: question/para
 #: book.translate.xml:4510
 msgid "Can I use the <keycap>Windows</keycap> keys on my keyboard in X?"
-msgstr ""
+msgstr "我可以在 X 中使用鍵盤上的 <keycap>Windows</keycap> 鍵嗎？"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4515
@@ -5879,6 +5885,9 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> to define which "
 "functions the keys should perform."
 msgstr ""
+"答案是可以的，你可以使用 <citerefentry vendor=\"xfree86\""
+"><refentrytitle>xmodmap</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> 來定義這些鍵的功能。"
 
 #. (itstool) path: answer/para
 #: book.translate.xml:4518
